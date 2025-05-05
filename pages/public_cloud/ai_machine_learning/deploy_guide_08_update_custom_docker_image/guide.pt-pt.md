@@ -34,7 +34,7 @@ When updating a Docker image, we have two options:
 
 > [!primary]
 >
-> In this tutorial, we will assume that you have already an app which is running on an Docker image, and an updated version of this image. The two previous possibilities (existing tag and new one) will be explained.
+> In this tutorial, we will assume that you already have an app that is running on a Docker image, and an updated version of this image. The two previous possibilities (existing tag and new one) will be explained.
 >
 
 ### Updating our app's image

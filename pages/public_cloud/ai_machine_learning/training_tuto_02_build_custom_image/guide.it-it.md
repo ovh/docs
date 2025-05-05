@@ -10,7 +10,7 @@ This tutorial covers the process of **building your own job image** for specific
 
 ## Requirements
 
--   Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+-   Access to the [OVHcloud Control Panel](/links/manager)
 -   A **Public Cloud** project
 -   A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
@@ -24,7 +24,7 @@ In order to be launched, your AI Training job **has to be containerised** inside
 
 Inside your Docker image, you are free to install almost anything and everything as long as you follow the guidelines below.
 
-AI Training accept images from **public** or **private** repositories. Find more information about using public & private registries [in this documentation](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+AI Training accepts images from **public** or **private** repositories. Find more information about using public & private registries [in this documentation](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 
 ## Guidelines to follow
 
@@ -130,7 +130,7 @@ ADD . /workspace
 
 > [!warning]
 >
->This command could allow you to load your dataset within your Docker image. However, this would increase its size considerably. A best practice is to put data outside, such as [Object Storage](https://www.ovhcloud.com/it/public-cloud/object-storage/) then link it to the AI Training job during its launch.
+>This command could allow you to load your dataset within your Docker image. However, this would increase its size considerably. A best practice is to put data outside, such as [Object Storage](/links/public-cloud/public-cloudobject-storage/) then link it to the AI Training job during its launch.
 >
 
 ### Give the OVHcloud user access to the home directory
@@ -150,7 +150,7 @@ As mentioned, the home directory for the "OVHcloud" user (with UID 42420) will b
 
 > [!warning]
 >
->Depending on the models and frameworks you use, other folders may be created during training at the root of your environment. This can be the case for folders like `/runs` or `/logs`. In this case, do not forget to give access rights to these folders as well: `RUN chown -R 42420:42420 /runs /logs`
+>Depending on the models and frameworks you use, other folders may be created during training at the root of your environment. This can be the case for folders like `/runs` or `/logs`. In this case, do not forget to give access rights to these folders as well: `RUN chown -R 42420:42420 /runs /logs`.
 >
 
 **To summarize**, this is what our `Dockerfile` looks like for now:
@@ -248,7 +248,7 @@ CMD ["python", "/workspace/main.py", "--arg1", "value1", "--arg2", "value2"]
 
 ### Other useful commands
 
-Instead of adding all project's file by using `ADD . /workspace`, you might be interested in using the `COPY` instruction, which can be better and safer for copying files and directories from our local directory to our Docker image.
+Instead of adding all the project's files by using `ADD . /workspace`, you might be interested in using the `COPY` instruction, which can be better and safer for copying files and directories from our local directory to our Docker image.
 
 For example, if we want to add the file `example.py` to the home directory of our image:
 
@@ -258,7 +258,7 @@ COPY example.py /workspace/example.py
 
 > [!primary]
 >
-> For more information about `Dockerfiles` we recommand you to refer to their [official documentation](https://docs.docker.com/engine/reference/builder/)
+> For more information about `Dockerfiles` we recommend you to refer to their [official documentation](https://docs.docker.com/engine/reference/builder/).
 
 ### Final Dockerfile overview
 
@@ -371,7 +371,7 @@ If you want more concrete examples, feel free to look at the different `Dockerfi
 - Discover [how to build a custom Docker image to deploy a **Streamlit** app](/pages/public_cloud/ai_machine_learning/deploy_tuto_01_streamlit).
 - You can imagine deploying a Docker image for data processing and training tasks. Refer to this [tutorial](/pages/public_cloud/ai_machine_learning/training_tuto_06_models_comparaison_weights_and_biases).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

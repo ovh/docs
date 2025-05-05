@@ -23,15 +23,15 @@ This tutorial covers the process of building your own Docker image for AI Deploy
 
 ## Quick overview
 
-AI Deploy main goal is to simplify AI models or applications deployment, release them in production, with resiliency and security, in a few seconds.
+AI Deploy's main goal is to simplify AI models or applications deployment and release them in production, with resiliency and security, in a few seconds.
 Each application is linked to compute resources such as CPUs or GPUs, and can be accessed through an HTTP Endpoint provided by AI Deploy for each app.
 
-In order to be deployed, your model or application **has to be containerised**, inside a Docker image. Containers provide isolation but also flexibility for your deployments.
+In order to be deployed, your model or application **has to be containerised** inside a Docker image. Containers provide isolation but also flexibility for your deployments.
 The Docker images that you build can be deployed locally, with OVHcloud AI Deploy but also with cloud competitors such as AWS or GCP.
 
-Inside your Docker image, you are free to install almost anything and everything as long as you follow guidelines below.
+Inside your Docker image, you are free to install almost anything and everything as long as you follow the guidelines below.
 
-AI Deploy accept images from **public** or **private** repositories. In short, we can summarize AI deploy with the following schema:
+AI Deploy accepts images from **public** or **private** repositories. In short, we can summarize AI deploy with the following schema:
 
 ![image](images/ai_deploy_concept.png){.thumbnail}
 
@@ -140,11 +140,11 @@ Be careful, **if you write data directly in your working directory, it will be l
 
 Sometimes, instead of hardcoding a variable inside a Dockerfile, it is much more powerful to pass variables during deployment. Docker provides this option natively through the `--env` argument, and OVHcloud AI tools follow the same logic.
 
-During AI Deploy app creation, you will be able to pass environment variables via CLI, API or UI in the control panel. In your Dockerfile, you can gather theses variables with the `ENV` value.
+During AI Deploy app creation, you will be able to pass environment variables via CLI, API or UI in the control panel. In your Dockerfile, you can gather these variables with the `ENV` value.
 
 For example, you can launch a new app with two variables like this:
 
-```
+```{.console}
 ovhai run app <my_docker_image> -e LANGUAGE=english TOKEN=12345678
 ```
 

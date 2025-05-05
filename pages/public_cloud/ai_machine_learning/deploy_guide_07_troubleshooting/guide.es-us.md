@@ -10,7 +10,7 @@ This page gives you a few hints on how to debug your apps if you encounter some 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [**Public Cloud** project](/pages/public_cloud/compute/create_a_public_cloud_project)
 
 ## Instructions
@@ -69,7 +69,7 @@ If you are using `ovhai CLI`, you can get more details about your command with t
 
 #### My deployment is in error
 
-While a deployment in `FAILED` state is due to a problem on the image, repository, etc., an app in `ERROR` state can occur when AI Deploy in encountering an issue.
+While a deployment in the `FAILED` state is due to a problem with the image, repository, etc., an app in the `ERROR` state can occur when AI Deploy is encountering an issue.
 
 Try redeploying your app, and modify the targeted datacenter for example. 
 As in the previous answer, when using our CLI you can get more details about your command with the `ovhai debug` command, and `ovhai app logs <app_ID>` to download logs history.
@@ -79,7 +79,7 @@ If the issue persists, please contact our support teams.
 #### My Deployment seems very long
 
 When AI Deploy initializes your app, the Docker image is pulled (downloaded) in our infrastructure and replicated over the replicas, if any. 
-The larger the Docker image is, the longer it will take to be deployed on AI Deploy side.
+The larger the Docker image is, the longer it will take to be deployed on the AI Deploy side.
 
 Also, since we pull the data from a registry of your choice, if this particular registry is experiencing some issues or is restricted in terms of bandwidth or throughput, it may cause some slowness.
 
@@ -99,7 +99,7 @@ Find more information on the official documentation about [scaling strategies](/
 
 If your app does not scale:
 
-- Check if you deployed your app with manual or autoscaling.
+- Check if you deployed your app with static scaling or autoscaling.
 - Verify triggers (CPU or RAM usage) and their value. By default the value is at 75%.
 - Open the Monitoring dashboard of your app (Grafana dashboard is provided for each app) and check if the threshold has been reached. 
 - Refer to the following load-testing tutorial which also provides a dashboard example to follow your scaling: [AI Deploy - How to load test your application with Locust](/pages/public_cloud/ai_machine_learning/deploy_tuto_10_locust).
@@ -160,7 +160,7 @@ If you selected a restricted access, don't forget to [generate an applicative to
 By design, AI Deploy links your app to one HTTP endpoint and one port (default is 8080). If you need more than one port, best practice is to split your deployment in multiple apps.
 If you cannot afford it, you can tweak your HTTP endpoint as follows: `https://<unique_id>-<specific_port>.app.<region>.ai.cloud.ovh.net`.
 
-For example, your default app URL, starting with the app's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.gra.gra.ai.cloud.ovh.net`. If you want to access the port `9000`, you will have to append the port number to your app's URL, after the app's unique ID: `https://00000000-0000-0000-0000-000000000000-9000.app.gra.ai.cloud.ovh.net`
+For example, your default app URL, starting with the app's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.app.gra.ai.cloud.ovh.net`. If you want to access the port `9000`, you will have to append the port number to your app's URL, after the app's unique ID: `https://00000000-0000-0000-0000-000000000000-9000.app.gra.ai.cloud.ovh.net`
 
 This way, you will be routed to this specific port, even after the app has been launched.
 
@@ -188,4 +188,4 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

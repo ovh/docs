@@ -10,7 +10,7 @@ This guide covers the process of starting a simple interactive notebook leveragi
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+-   access to the [OVHcloud Control Panel](/links/manager)
 -   an **AI Training project** created inside a **public cloud** project
 -   a [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 
@@ -18,17 +18,17 @@ This guide covers the process of starting a simple interactive notebook leveragi
 
 ### Step 1 - Begin as classic job submission
 
-Follow the same steps as a classic job submission described [here](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) until you reach the [Step 5 - Providing a Docker image](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job#step-5-providing-a-docker-image).
+Follow the same steps as a classic job submission described [here](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) until you reach [Step 5 - Providing a Docker image](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job#step-5-providing-a-docker-image).
 
 ### Step 2 - Select the notebook corresponding to your needs
 
 A `job` is basically a Docker container that is run within the OVHcloud infrastructure.
 
-Notebooks are `daemon jobs`, meaning that they will run indefinitely until the user request an interuption.
+Notebooks are `daemon jobs`, meaning that they will run indefinitely until the user requests an interruption.
 
-AI Training offers several notebooks images with different configurations. You can choose the configuration that best suits your needs among them.
+AI Training offers several notebook images with different configurations. You can choose the configuration that best suits your needs among them.
 
-Currently the following configurations are available :
+Currently, the following configurations are available:
 
 -   **PyTorch** : An OVHcloud preset image including JupyterLab notebook, Visual Studio Code IDE and `pytorch` libraries
 -   **Tensorflow 2** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `tensorflow 2` libraries
@@ -42,55 +42,55 @@ Once your image is chosen, click `Next`{.action}.
 
 ### Step 3 - Continue as a classic job submission
 
-Continue to follow the same steps as a classic job submission described [here](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) until you reach the [Step 10 - Consulting your job](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job#step-10-consulting-your-job).
+Continue to follow the same steps as a classic job submission described [here](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) until you reach [Step 10 - Consulting your job](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job#step-10-consulting-your-job).
 
 > [!warning]
-> If you want to be able to save your notebook files on your object storage we strongly advise to plug a **read** and **write** volume on your job before submitting. That volume will be synchronized with your object storage at the end of the job.
+> If you want to be able to save your notebook files on your object storage, we strongly advise to plug a **read** and **write** volume on your job before submitting. That volume will be synchronized with your object storage at the end of the job.
 
 ### Step 4 - Access notebook URL
 
-Once your job is `In progress`, in the job description panel you should see the `access url` link. Click on it and you will be redirected on your job url.
+Once your job is `In progress`, in the job description panel, you should see the `Access` link. Click on it and you will be redirected on your job URL.
 
 ![image](images/02_http_access_url.png){.thumbnail}
 
 ### Step 5 - Login as an AI Training user
 
-If your are not authenticated as a AI Training user you should see a screen asking your username and password.
+If your are not authenticated as an AI Training user, you should see a screen asking for your username and password.
 
 > [!primary]
-> If you have never created a user for AI Training yet you can follow the instruction [here](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+> If you have not created a user for AI Training yet, you can follow the instruction [here](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 
-Fill the field and click `Login`{.action}.
+Fill the fields and click `Login`{.action}.
 
 ![image](images/03_login_form.png){.thumbnail}
 
 ### Step 6 - Use your notebook
 
-In most provided preset images you can choose which editor you prefer between JupyterLab and VisualStudio code.
+In most provided preset images, you can choose which editor you prefer between JupyterLab and VisualStudio code.
 
 ![image](images/04_jupyter_vs_vscode.png){.thumbnail}
 
-Just select the one that you want to use and you will be redirected to the corresponding one.
+Just select the one that you want to use, and you will be redirected to the corresponding one.
 
 ![image](images/05_jupyter.png){.thumbnail}
 
-By default the home directory of your job is located under `/workspace`. It means that you will have **read** and **write** access on that directory as well as your **read** and **write** mounted volumes.
+By default, the home directory of your job is located under `/workspace`. It means that you will have **read** and **write** access to that directory as well as your **read** and **write** mounted volumes.
 
 > [!warning]
 >
-> If you are missing a library or a configuration, you can add it directly in command line in the **console** of the notebook as long as you don't need priviledge access (root access). Example : `pip install <...>`
+> If you are missing a library or a configuration, you can add it directly in command line of the notebook's **console** as long as you don't need privileged access (root access). Example: `pip install <...>`
 >
-> For installing specific libraries that require priviledge access you will have to build your own notebook image and use it as **custom image** at [step 2](./#step-2-select-the-notebook-corresponding-to-your-needs) instead of **preset image**. More information about creating your own docker image can be found [here](/pages/public_cloud/ai_machine_learning/training_tuto_02_build_custom_image)
+> For installing specific libraries that require privileged access, you will have to build your own notebook image and use it as a **custom image** at [step 2](./#step-2-select-the-notebook-corresponding-to-your-needs) instead of a **preset image**. More information about creating your own Docker image can be found [here](/pages/public_cloud/ai_machine_learning/training_tuto_02_build_custom_image).
 
 > [!primary]
 >
-> If you open a **console** tab in your notebook and type `nvidia-smi` you will see the available GPUs that you can use on your notebook.
+> If you open a **console** tab in your notebook and type `nvidia-smi`, you will see the available GPUs that you can use on your notebook.
 >
 > ![image](images/09_nvidia_smi.png){.thumbnail}
 
 ### Step 7 - Stop your notebook
 
-Once you are done working with your notebook don't forget to stop it.
+Once you are done working with your notebook, don't forget to stop it.
 
 You can do it by selecting `Stop`{.action} in the action menu.
 
@@ -100,13 +100,13 @@ Then `confirm`{.action} your choice.
 
 ![image](images/07_confirm_stop.png){.thumbnail}
 
-After some time your job should go in `interrupted` state meaning that the job has been stopped.
+After some time, your job should go into an `Interrupted` state meaning that the job has been stopped.
 
 ![image](images/08_interrupted.png){.thumbnail}
 
 > [!primary]
 >
-> Before going into `interrupted` state, your job may run through `finalizing` state. During this phase all data inside `read & write volumes` are saved inside their linked containers in your object storage.
+> Before going into the `Interrupted` state, your job may run through the `Finalizing` state. During this phase, all data inside `read & write volumes` are saved inside their linked containers in your object storage.
 
 ## Feedback
 
@@ -114,4 +114,4 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project. 

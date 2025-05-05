@@ -17,11 +17,11 @@ OVHcloud AI Deploy service provides easiness in AI models and application deploy
 
 ## Introduction
 
-AI Deploy is linked to a Public Cloud project. The whole project is billed at the end of the month, with pay-as-you-go. This means you will only pay for what you consume, based on the compute resources you use (CPus and GPUs) and their running time. At this time, we do not support a "pay per call" pricing.
+AI Deploy is linked to a Public Cloud project. The whole project is billed at the end of the month, with pay-as-you-go. This means you will only pay for what you consume, based on the compute resources you use (CPUs and GPUs) and their running time. At this time, we do not support a "pay per call" pricing.
 
 ## AI Deploy apps lifecycle
 
-OVHcloud AI deploy allows deployment of Docker images, and each deployment is called an `app`. 
+OVHcloud AI Deploy allows deployment of Docker images, and each deployment is called an `app`. 
 During its lifetime, the app will go through the following status:
 
 - `QUEUED`: the app deployment request is about to be processed.
@@ -99,10 +99,10 @@ We deploy one AI Deploy app, with 2 x GPUs and we keep it running for 10 hours t
 
 We receive thousands of calls: it's included (no pay per call provided, you pay running compute).
 
-- compute resources per replica : 2 x GPU NVIDIA V100s (1,95€ / hour)
-- scaling : fixed
-- replicas : 1 only
-- amount of calls : unlimited
+- compute resources per replica: 2 x GPU NVIDIA V100s (1,95€ / hour)
+- scaling: fixed
+- replicas: 1 only
+- amount of calls: unlimited
 - duration: 10 hours then deleted
 
 Price calculation for compute: 10 (hours) x 2 (GPU) x 1 (replica) x 1,93€ (price / GPU) = **39 euros**, billed at the end of the month.
@@ -114,9 +114,9 @@ We start 15 x AI Deploy apps in parallel, each of them with one vCPU.
 We receive thousands of calls: it's included (no pay per call provided, you pay running compute).
 
 - compute resources per app with fixed scaling: 1 x vCPU (0,03€ /hour /cpu)
-- scaling : fixed
-- replica : 1 only
-- amount of calls : unlimited
+- scaling: fixed
+- replica: 1 only
+- amount of calls: unlimited
 - duration: 5 hours then deleted
 
 Price calculation for compute: 15 (app) x 5 (hours) x 1 (CPU) x 0,03€ (price / CPU) = **2,25 euros**, billed at the end of the month.
@@ -127,9 +127,9 @@ We start 1 x AI Deploy app with autoscaling configured to 1 replica minimum, and
 
 We receive thousands of calls: it's included (no pay per call provided, you pay running compute).
 
-- compute resources per replica : 1 x GPU (1,93€ /hour /gpu)
-- scaling : auto-scaling, from 1 to 3 replicas
-- amount of calls : unlimited
+- compute resources per replica: 1 x GPU (1,93€ /hour /gpu)
+- scaling: auto-scaling, from 1 to 3 replicas
+- amount of calls: unlimited
 - duration: 5 hours with 1 replica running, then a peak with 1 hour at 3 replicas, then stopped and deleted.
 
 Price calculation for compute will vary over time due to auto-scaling: 
