@@ -123,6 +123,7 @@ La structure de base d'une règle de réplication dans le fichier JSON de config
       "Status": "Enabled"|"Disabled",
       "Destination": {
         "Bucket": "arn:aws:s3:::<your_bucket_name>",
+        "StorageClass": "STANDARD"|"STANDARD_IA"|"EXPRESS_ONEZONE"
       },
       "DeleteMarkerReplication": {
         "Status": "Enabled"|"Disabled"
@@ -144,6 +145,7 @@ La structure de base d'une règle de réplication dans le fichier JSON de config
 | Destination | Conteneur d'informations sur la destination de réplication et ses configurations. | Oui |
 | DeleteMarkerReplication | Indique si les opérations de suppression doivent être répliquées. | Oui |
 | Bucket | Le bucket de destination (pour effectuer une réplication vers plusieurs destinations, vous devez créer plusieurs règles de réplication). | Oui |
+| StorageClass            | La classe de stockage de destination. Par défaut, OVHcloud Object Storage utilise la classe de stockage de l'objet source pour créer la copie de l'objet.<br><br>Veuillez noter que **toutes les classes de stockage ne sont pas disponibles dans toutes les régions**, c'est-à-dire que certaines classes de stockage ne sont pas prises en charge dans certaines régions telles que EXPRESS_ONEZONE qui n'est pas prise en charge dans les régions 3AZ. Pour en savoir plus sur les classes de stockage disponibles dans chaque région, consultez [notre documentation](/pages/storage_and_backup/object_storage/s3_location/).              | Oui      |
 | And | Vous pouvez appliquer plusieurs critères de sélection dans le filtre. | Non |
 
 ### Réplication des marqueurs de suppression (Delete marker replication)
