@@ -201,7 +201,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 _<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
 
 > [!warning]
-> Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités et opérations d'API seront disponibles.
+> Contrairement à AWS, Express One Zone est traité comme une classe de stockage régulière par OVHcloud et toutes nos fonctionnalités compatibles S3 prises en charge et leurs opérations d'API associées sont disponibles.
 
 ### Rétrocompatibilité des points de terminaison
 
