@@ -1,7 +1,7 @@
 ---
 title: Using the vSphere SDK
 excerpt: Find out how to implement and use the vSphere SDK
-updated: 2020-11-18
+updated: 2025-05-21
 ---
 
 ## Objective
@@ -12,47 +12,51 @@ Actions within your infrastructure can be automated using the vSphere SDK.
 
 ## Instructions
 
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A virtual machine created with one of our [OVF templates](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+
+
+> [!warning]
+> The code examples below were created using Python 2.7. Please note that you may need to adjust your commands accordingly if your environment uses Debian 12. In this case, we recommend that you download the latest version of Python 3.
+>
+
 ### Python
 
 #### Setting up the environment
 
-##### OS
-
 This example uses a VM installed with Debian 9, deployed from [templates available for your Managed Bare Metal infrastructure](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
 
-##### Requirements
+To begin, it is necessary to install these packages:
 
-It is necessary to install these packages:
-
-```
+```bash
 apt-get install python git python-pip
 ```
 
-##### vSphere SDK
+#### vSphere SDK
 
 Download the vSphere SDK with the following command:
 
-```
+```bash
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
 
-The directory "/vsphere-automation-sdk-python" will be created. Switch to this folder to perform the installation command:
+The directory `/vsphere-automation-sdk-python` will be created. Switch to this folder to perform the installation command:
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
 In this example, it is the following command:
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
 ```
 
 Once the SDK is installed, you can make use of scripts.
 
-#### Script example
+### Script example
 
-##### Connection
+#### Connection
 
 This example tests the connection and disconnection to vCenter. It will also help to verify if everything is properly installed.
 
@@ -85,7 +89,7 @@ print("Disconnecting..")
 vconnect()
 ```
 
-##### Listing the VMs of a Managed Bare Metal infrastructure
+#### Listing the VMs of a Managed Bare Metal infrastructure
 
 This example lists all VMs of a Managed Bare Metal infrastructure.
 
@@ -134,29 +138,23 @@ vconnect()
 
 #### Setting up the environment
 
-##### OS
-
 This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Managed Bare Metal infrastructure](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
 
-##### Requirements
+To begin, it is necessary to install these packages:
 
-It is necessary to install these packages:
-
-```
+```bash
 apt-get install lib32z1 lib32ncurses5 uuid uuid-dev libssl-dev perl-doc libxml-libxml-perl libcrypt-ssleay-perl libsoap-lite-perl libdata-compare-perl libmodule-build-perl libuuid-perl libsocket6-perl libnet-inet6glue-perl libarchive-zip-perl
-
 ```
 
-```
+```bash
 cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List::MoreUtils
-
 ```
 
-##### vSphere SDK
+#### vSphere SDK
 
 Download the vSphere SDK using this link: 
 
-[https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67](https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67)
+<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
 
 Make sure to download the version that is compatible with your operating system.
 
@@ -164,17 +162,17 @@ In this example the file downloaded is: "VMware-vSphere-Perl-SDK-6.7.0-8156551.x
 
 Extract the file you just downloaded using this command:
 
-```
+```bash
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
 Start the installer using the following commands:
 
-```
+```bash
 cd vmware-vsphere-cli-distrib
 ```
 
-```
+```bash
 ./vmware-install.pl
 ```
 
@@ -184,9 +182,9 @@ After the installation, additional modules will be installed. Hit `Enter`{.actio
 
 In order to complete the installation, you will need to select a directory in which the SDK will install. By default, the directory is "/usr/bin".
 
-#### Script example
+### Script example
 
-##### Connection
+#### Connection
 
 This example tests the connection and disconnection to vCenter. It will also help to verify if everything is properly installed.
 
@@ -209,7 +207,7 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-##### Listing the VMs of a Managed Bare Metal infrastructure
+#### Listing the VMs of a Managed Bare Metal infrastructure
 
 This example lists all VMs of a Managed Bare Metal infrastructure.
 
@@ -241,23 +239,23 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-##### Using samples
+#### Using samples
 
 In this example, a script that is already created and present in the directory "vmware-vsphere-cli-distrib/apps/vm/" is called.
 
 Here is a list of the scripts already available in this directory:
 
-```
+```bash
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
 
 To create a snapshot "test" of the VM "Debian1", use this command (replacing the example placeholders with your credentials):
 
-```
+```bash
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
 ```
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

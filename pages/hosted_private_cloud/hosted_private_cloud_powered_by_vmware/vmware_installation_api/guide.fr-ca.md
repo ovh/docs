@@ -1,14 +1,24 @@
 ---
 title: Utilisation SDK vSphere
-excerpt: Utilisation et mise en place du SDK vSphere
-updated: 2020-07-13
+excerpt: Découvrez comment implémenter et utiliser le SDK vSphere
+updated: 2025-05-21
 ---
 
 ## Objectif
 
-Il est possible d'automatiser les actions au sein de votre infrastructure en utilisant le SDK vSphere.
+Les actions au sein de votre infrastructure peuvent être automatisées grâce au SDK vSphere.
 
-**Ce guide explique la mise en place et l'utilisation dans différents langages.**
+**Ce guide explique la mise en œuvre et l'utilisation dans différents langages de programmation.**
+
+## Prérequis
+
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Une machine virtuelle créée avec l’un de nos [templates OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+- Une infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
+
+> [!warning]
+> Les exemples de code ci-dessous ont été créés en utilisant Python 2.7. Veuillez noter que vous devrez peut-être ajuster vos commandes en conséquence si votre environnement utilise Debian 12. Dans ce cas, nous vous recommandons de télécharger la dernière version de Python 3.
+>
 
 ## En pratique
 
@@ -16,41 +26,38 @@ Il est possible d'automatiser les actions au sein de votre infrastructure en uti
 
 #### Mise en place de l'environnement
 
-##### OS
-
 Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 
-##### Prérequis
+Pour commencer, il est nécessaire d'installer ces packages :
 
-Il est nécessaire d'installer les paquets suivants : 
-
-```
+```bash
 apt-get install python git python-pip
 ```
-##### SDK vSphere
+#### SDK vSphere
 
 Téléchargez le SDK vSphere avec la commande suivante : 
 
-```
+```bash
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
-Le répertoire « /vsphere-automation-sdk-python » sera créé, rendez vous dans ce dossier pour effectuer la commande d'installation : 
 
-```
+Le répertoire `/vsphere-automation-sdk-python` sera créé. Basculez vers ce dossier pour exécuter la commande d'installation :
+
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
-Dans cet exemple, il s'agira de la commande suivante : 
+Dans cet exemple, il s'agit de la commande suivante : 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
 ```
 
-Le SDK est à présent installé, nous pouvons maintenant réaliser quelques scripts.
+Une fois le SDK installé, vous pouvez utiliser des scripts.
 
-#### Exemple de script
+### Exemple de script
 
-##### Connexion
+#### Connexion
 
 Dans ce premier exemple, nous testons la connexion et la déconnexion au vCenter. Cela permettra également de voir si tout s'est bien installé : 
 
@@ -65,7 +72,7 @@ from pyVmomi import vim
  
  
 def vconnect():
-    s = ssl.SSLContext(ssl.PROTOCOL_TLS)
+    s = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
     s.verify_mode = ssl.CERT_NONE
  
     service_instance = connect.SmartConnect(host="pcc-149-202-xxx-xxx.ovh.com",
@@ -83,9 +90,9 @@ print("Disconnecting..")
 vconnect()
 ```
 
-##### Lister les VM présentes dans un Private Cloud
+#### Lister les VM présentes dans un Managed Bare Metal
 
-Dans cet exemple, nous allons lister toutes les VM présentes sur le Private Cloud :
+Dans cet exemple, nous allons lister toutes les VM présentes sur le Managed Bare Metal :
 
 ```python
 #!/usr/bin/env python
@@ -98,7 +105,7 @@ from pyVmomi import vim
  
  
 def vconnect():
-    s = ssl.SSLContext(ssl.PROTOCOL_TLS)
+    s = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
     s.verify_mode = ssl.CERT_NONE
  
     service_instance = connect.SmartConnect(host="pcc-149-202-xxx-xxx.ovh.com",
@@ -132,49 +139,44 @@ vconnect()
 
 #### Mise en place de l'environnement
 
-##### OS
-
 Ici nous utilisons une VM installée sur Ubuntu 18.04, déployée depuis [les templates mis à disposition sur votre Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 
-##### Prérequis
+Pour commencer, il est nécessaire d'installer ces packages :
 
-Il est nécessaire d'installer les paquets suivants : 
-
-```
+```bash
 apt-get install lib32z1 lib32ncurses5 uuid uuid-dev libssl-dev perl-doc libxml-libxml-perl libcrypt-ssleay-perl libsoap-lite-perl libdata-compare-perl libmodule-build-perl libuuid-perl libsocket6-perl libnet-inet6glue-perl libarchive-zip-perl
-
 ```
 
-```
+```bash
 cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List::MoreUtils
 
 ```
 
-##### SDK vSphere
+#### SDK vSphere
 
 Téléchargez le SDK vSphere disponible sur ce lien : 
 
-[https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67](https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67)
+<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
 
 Téléchargez la version compatible avec votre système d'exploitation.
 
-Dans cet exemple, nous téléchargerons "VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz"
+Dans cet exemple, le fichier téléchargé est : « VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz »
 
 Décompressez le ficher que vous venez de télécharger en utilisant la commande :
 
-```
+```bash
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
-Et démarrez l'installeur en utilisant la commande suivante : 
+Lancez le programme d'installation à l'aide des commandes suivantes : 
 
-```
+```bash
 cd vmware-vsphere-cli-distrib
 ```
 
 Puis : 
 
-```
+```bash
 ./vmware-install.pl
 ```
 
@@ -182,11 +184,11 @@ Après avoir lu les conditions, acceptez-les et continuez en cliquant sur `Entr�
 
 A la suite de l'installation, d'autres modules vont être installés, cliquez sur `Entrée`{.action} pour continuer l'installation.
 
-Afin de terminer l'installation, vous devez choisir un répertoire dans lequel le SDK s'installera. Par défaut, le répertoire est « /usr/bin ».
+Afin de terminer l'installation, vous devrez sélectionner un répertoire dans lequel le SDK va s'installer. Par défaut, le répertoire est « /usr/bin »
 
-#### Exemple de script
+### Exemple de script
 
-##### Connexion
+#### Connexion
 
 Dans ce premier exemple, nous testons la connexion et la déconnexion au vCenter. Cela permettra également de voir si tout s'est bien installé : 
 
@@ -209,9 +211,9 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-##### Lister les VM présentes dans un Private Cloud
+#### Lister les VM présentes dans un Managed Bare Metal
 
-Dans cet exemple, nous allons lister toutes les VM présentes sur le Private Cloud :
+Dans cet exemple, nous allons lister toutes les VM présentes sur le Managed Bare Metal :
 
 ```perl
 #!/usr/bin/perl
@@ -241,13 +243,13 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-##### Utilisation des samples
+#### Utilisation des samples
 
-Dans cet exemple, nous allons utiliser un script déjà crée et présent dans le répertoire « vmware-vsphere-cli-distrib/apps/vm/ ».
+Dans cet exemple, nous allons utiliser un script déjà crée et présent dans le répertoire `vmware-vsphere-cli-distrib/apps/vm/`.
 
 Voici la liste des scripts déjà disponibles dans ce répertoire :
 
-```
+```bash
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
@@ -255,7 +257,7 @@ Nous allons créer un snapshot « test » sur la VM « Debian1 »
 
 Pour cela, tapez la commande suivante :
 
-```
+```bash
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
 ```
 

@@ -1,14 +1,24 @@
 ---
 title: Utilizzare SDK vSphere
 excerpt: Come installare e utilizzare il Software Development Kit di vSphere
-updated: 2020-11-18
+updated: 2025-05-21
 ---
 
 ## Obiettivo
 
 Per automatizzare le azioni all’interno della propria infrastruttura è possibile utilizzare il Software Development Kit (SDK) offerto da vSphere.
 
-**Questa guida ti mostra come installare e utilizzare questo strumento utilizzando diversi linguaggi.**
+**Questa guida ti mostra come implementare e utilizzare i diversi linguaggi di programmazione.**
+
+## Prerequisiti
+
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+- Una macchina virtuale creata con uno dei nostri [templates OVF](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+
+
+> [!warning]
+> Gli esempi di codice seguenti sono stati creati utilizzando Python 2.7. Se l'ambiente utilizzato utilizza Debian 12, potrebbe essere necessario modificare i comandi di conseguenza. In questo caso, ti consigliamo di scaricare l’ultima versione di Python 3.
+>
 
 ## Procedura
 
@@ -16,41 +26,40 @@ Per automatizzare le azioni all’interno della propria infrastruttura è possib
 
 #### Configura l’ambiente
 
-##### OS
+In questo esempio viene utilizzata una VM installata con Debian 9, implementata a partire da [templates disponibili per la tua infrastruttura Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
 
-In questa guida utilizzeremo una VM installata su Debian 9, creata a partire dai [template disponibili sul servizio Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
 
-##### Prerequisiti
+Per iniziare, è necessario installare questi pacchetti:
 
-Installa i seguenti pacchetti: 
-
-```
+```bash
 apt-get install python git python-pip
 ```
-##### SDK vSphere
+
+#### SDK vSphere
 
 Scarica SDK vSphere utilizzando il comando: 
 
-```
+```bash
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
-Viene creata la directory “/vsphere-automation-sdk-python”. Accedi a questa cartella per eseguire il comando di installazione: 
 
-```
+Viene creata la directory `/vsphere-automation-sdk-python`. Accedi a questa cartella per eseguire il comando di installazione: 
+
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
 Nel nostro esempio, sarà il comando: 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
 ```
 
 A questo punto SDK è installato ed è possibile utilizzarlo negli script.
 
-#### Esempio di script
+### Esempio di script
 
-##### Connessione
+#### Connessione
 
 Questo primo esempio mostra come testare login e logout al vCenter e verificare che tutto sia correttamente installato: 
 
@@ -83,7 +92,7 @@ print("Disconnecting..")
 vconnect()
 ```
 
-##### Visualizza la lista delle VM presenti nel Managed Bare Metal
+#### Visualizza la lista delle VM presenti nel Managed Bare Metal
 
 In questo esempio, recupereremo la lista di tutte le macchine virtuali presenti sul Managed Bare Metal:
 
@@ -132,29 +141,23 @@ vconnect()
 
 #### Configura l’ambiente
 
-##### OS
-
 In questo esempio utilizziamo una VM installata su Ubuntu 18.04, creata a partire dai [template disponibili sul servizio Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
-
-##### Prerequisiti
 
 Installa i seguenti pacchetti: 
 
-```
+```bash
 apt-get install lib32z1 lib32ncurses5 uuid uuid-dev libssl-dev perl-doc libxml-libxml-perl libcrypt-ssleay-perl libsoap-lite-perl libdata-compare-perl libmodule-build-perl libuuid-perl libsocket6-perl libnet-inet6glue-perl libarchive-zip-perl
-
 ```
 
-```
+```bash
 cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List::MoreUtils
-
 ```
 
-##### SDK vSphere
+#### SDK vSphere
 
 Accedi alla pagina disponibile al link: 
 
-[https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67](https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67)
+<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
 
 Scarica la versione di SDK vSphere compatibile con il sistema operativo utilizzato.
 
@@ -162,19 +165,19 @@ Nel nostro esempio, il file scaricato è "VMware-vSphere-Perl-SDK-6.7.0-8156551.
 
 Estrai l’archivio eseguendo il comando
 
-```
+```bash
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
 e avvia l’installazione con il comando 
 
-```
+```bash
 cd vmware-vsphere-cli-distrib
 ```
 
 A questo punto esegui:  
 
-```
+```bash
 ./vmware-install.pl
 ```
 
@@ -182,11 +185,11 @@ Leggi e accetta le condizioni contrattuali e clicca su `Enter`{.action} per cont
 
 Alla fine dell’operazione verranno installati ulteriori moduli. Clicca su `Enter`{.action} per continuare l’installazione.
 
-Per completare la procedura, scegli la cartella su cui installare SDK (di default è la directory “ /usr/bin”).
+Per completare la procedura, scegli la cartella su cui installare SDK (di default è la directory “/usr/bin”).
 
-#### Esempio di script
+### Esempio di script
 
-##### Connessione
+#### Connessione
 
 Questo primo esempio mostra come testare login e logout al vCenter e verificare che tutto sia correttamente installato: 
 
@@ -209,7 +212,7 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-##### Visualizza la lista delle VM presenti nel Managed Bare Metal
+#### Visualizza la lista delle VM presenti nel Managed Bare Metal
 
 In questo esempio, recupereremo la lista di tutte le macchine virtuali presenti sul Managed Bare Metal:
 
@@ -241,22 +244,23 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-##### Utilizza i samples
+#### Utilizza i samples
 
-In questo esempio utilizzeremo uno script già creato, contenuto nella cartella “vmware-vsphere-cli-distrib/apps/vm/”.
+In questo esempio utilizzeremo uno script già creato, contenuto nella cartella `vmware-vsphere-cli-distrib/apps/vm/`.
 
 Ecco la lista degli script già disponibili in questa directory:
 
-```
+```bash
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
+
 Creiamo lo Snapshot “test” della VM “Debian1” con il comando:
 
-```
+```bash
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
 ```
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

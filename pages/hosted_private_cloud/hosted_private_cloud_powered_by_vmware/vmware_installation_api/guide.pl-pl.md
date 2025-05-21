@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z SDK vSphere
 excerpt: Dowiedz się, jak uruchomić SDK vSphere i jak z niego korzystać
-updated: 2020-07-13
+updated: 2025-05-21
 ---
 
 ## Wprowadzenie
@@ -10,47 +10,55 @@ Działania w infrastrukturze można zautomatyzować przy użyciu SDK vSphere.
 
 **Z tego przewodnika dowiesz się, jak go uruchomić i jak z niego korzystać w różnych językach.**
 
+## Wymagania początkowe
+
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Maszyna wirtualna utworzona w jednym z naszych [szablonów OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+- Infrastruktura [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
+
+> [!warning]
+> Poniższe przykłady kodu zostały utworzone przy użyciu Python 2.7. Pamiętaj, że może być konieczne odpowiednie dostosowanie Twoich zamówień, jeśli Twoje środowisko korzysta z Debiana 12. W takim przypadku zalecamy pobranie najnowszej wersji Pythona 3.
+>
+
 ## W praktyce
 
 ### Python
 
-#### Uruchamianie środowiska
-
-##### System operacyjny
+#### Wdrożenie środowiska
 
 Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Debian 9 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 
-##### Wymagania początkowe
-
 Zainstalowanie następujących pakietów: 
 
-```
+```bash
 apt-get install python git python-pip
 ```
-##### SDK vSphere
+
+#### SDK vSphere
 
 Pobierz SDK vSphere za pomocą następującego polecenia: 
 
-```
+```bash
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
-Zostanie utworzony folder „/vsphere-automation-sdk-python”. Przejdź do tego folderu, aby wykonać polecenie instalacji: 
 
-```
+Zostanie utworzony folder `/vsphere-automation-sdk-python`. Przejdź do tego folderu, aby wykonać polecenie instalacji: 
+
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
 W tym przykładzie mówimy o następującym poleceniu: 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
 ```
 
 Zestaw SDK został zainstalowany. Możemy teraz wykonać kilka skryptów.
 
-#### Przykładowy skrypt
+### Przykładowy skrypt
 
-##### Logowanie
+#### Logowanie
 
 W pierwszym przykładzie testujemy logowanie do vCenter i wylogowywanie się z niego. Dzięki temu upewnimy się też, czy wszystko zostało prawidłowo zainstalowane: 
 
@@ -65,7 +73,7 @@ from pyVmomi import vim
  
  
 def vconnect():
-    s = ssl.SSLContext(ssl.PROTOCOL_TLS)
+    s = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
     s.verify_mode = ssl.CERT_NONE
  
     service_instance = connect.SmartConnect(host="pcc-149-202-xxx-xxx.ovh.com",
@@ -83,9 +91,9 @@ print("Disconnecting..")
 vconnect()
 ```
 
-##### Wyświetlenie listy maszyn wirtualnych w usłudze Private Cloud
+#### Wyświetlenie listy maszyn wirtualnych w usłudze Managed Bare Metal
 
-W tym przykładzie wyświetlimy listę wszystkich maszyn wirtualnych obecnych w usłudze Private Cloud:
+W tym przykładzie wyświetlimy listę wszystkich maszyn wirtualnych obecnych w usłudze Managed Bare Metal:
 
 ```python
 #!/usr/bin/env python
@@ -98,7 +106,7 @@ from pyVmomi import vim
  
  
 def vconnect():
-    s = ssl.SSLContext(ssl.PROTOCOL_TLS)
+    s = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
     s.verify_mode = ssl.CERT_NONE
  
     service_instance = connect.SmartConnect(host="pcc-149-202-xxx-xxx.ovh.com",
@@ -130,51 +138,45 @@ vconnect()
 
 ### Perl
 
-#### Uruchamianie środowiska
-
-##### System operacyjny
+#### Wdrożenie środowiska
 
 Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Ubuntu 18.04 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 
-##### Wymagania początkowe
-
 Zainstalowanie następujących pakietów: 
 
-```
+```bash
 apt-get install lib32z1 lib32ncurses5 uuid uuid-dev libssl-dev perl-doc libxml-libxml-perl libcrypt-ssleay-perl libsoap-lite-perl libdata-compare-perl libmodule-build-perl libuuid-perl libsocket6-perl libnet-inet6glue-perl libarchive-zip-perl
-
 ```
 
-```
+```bash
 cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List::MoreUtils
-
 ```
 
-##### SDK vSphere
+#### SDK vSphere
 
 Pobierz zestaw SDK vSphere dostępny pod tym linkiem: 
 
-[https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67](https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67)
+<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
 
 Pobierz wersję kompatybilną z Twoim systemem operacyjnym.
 
-W tym przykładzie pobieramy „VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz”
+W tym przykładzie pobieramy “VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz”
 
 Rozpakuj pobrany plik przy użyciu polecenia:
 
-```
+```bash
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
 Uruchom instalator przy użyciu następującego polecenia: 
 
-```
+```bash
 cd vmware-vsphere-cli-distrib
 ```
 
 Następnie: 
 
-```
+```bash
 ./vmware-install.pl
 ```
 
@@ -182,11 +184,11 @@ Po przeczytaniu warunków zaakceptuj je i kliknij `Enter`{.action}, aby kontynuo
 
 Następnie zostaną zainstalowane pozostałe moduły. Kliknij `Enter`{.action}, aby kontynuować instalację.
 
-Aby zakończyć instalację, wybierz folder, w którym zostanie zainstalowany zestaw SDK. Domyślnie jest to folder „/usr/bin”.
+Aby zakończyć instalację, wybierz folder, w którym zostanie zainstalowany zestaw SDK. Domyślnie jest to folder “/usr/bin”.
 
-#### Przykładowy skrypt
+### Przykładowy skrypt
 
-##### Logowanie
+#### Logowanie
 
 W pierwszym przykładzie testujemy logowanie do vCenter i wylogowywanie się z niego. Dzięki temu upewnimy się też, czy wszystko zostało prawidłowo zainstalowane: 
 
@@ -209,9 +211,9 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-##### Wyświetlenie listy maszyn wirtualnych w usłudze Private Cloud
+#### Wyświetlenie listy maszyn wirtualnych w usłudze Managed Bare Metal
 
-W tym przykładzie wyświetlimy listę wszystkich maszyn wirtualnych obecnych w usłudze Private Cloud:
+W tym przykładzie wyświetlimy listę wszystkich maszyn wirtualnych obecnych w usłudze Managed Bare Metal:
 
 ```perl
 #!/usr/bin/perl
@@ -241,24 +243,24 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-##### Używanie próbek
+#### Używanie próbek
 
-W tym przykładzie użyjemy już utworzonego skryptu, znajdującego się w folderze „vmware-vsphere-cli-distrib/apps/vm/”.
+W tym przykładzie użyjemy już utworzonego skryptu, znajdującego się w folderze `vmware-vsphere-cli-distrib/apps/vm/`.
 
 Oto lista skryptów dostępnych już w tym folderze:
 
-```
+```bash
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
-Utworzymy snapshot „test” na maszynie wirtualnej „Debian1”
+Utworzymy snapshot “test” na maszynie wirtualnej “Debian1”
 
 W tym celu wpisz następujące polecenie:
 
-```
+```bash
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
 ```
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).
