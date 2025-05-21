@@ -125,6 +125,7 @@ The basic structure of a replication rule within the configuration JSON file is 
       "Status": "Enabled"|"Disabled",
       "Destination": {
         "Bucket": "arn:aws:s3:::<your_bucket_name>",
+        "StorageClass": "STANDARD"|"STANDARD_IA"|"EXPRESS_ONEZONE"
       },
       "DeleteMarkerReplication": {
         "Status": "Enabled"|"Disabled"
@@ -146,6 +147,7 @@ The basic structure of a replication rule within the configuration JSON file is 
 | Destination             | A container for information about the replication destination and its configurations.                                    | Yes      |
 | DeleteMarkerReplication | Tells if delete operations should be replicated.                                                                         | Yes      |
 | Bucket                  | The destination bucket (to replicate to multiple destinations, you must create multiple replication rules).              | Yes      |
+| StorageClass            | The destination storage class. By default, OVHcloud Object Storage uses the storage class of the source object to create the object replica.<br><br> Please note that **not all storage classes are available in all regions** i.e some storage classes are not supported in some regions such as EXPRESS_ONEZONE which is not supported in 3AZ regions. To learn more about the available storage classes in each region check [our documentation](/pages/storage_and_backup/object_storage/s3_location/).              | Yes      |
 | And                     | You can apply multiple selection criteria in the filter.                                                                 | No       |
 
 ### Delete marker replication
@@ -239,9 +241,9 @@ You can obtain a token by [contacting our support team](https://help.ovhcloud.co
 $AWS s3api put-bucket-replication --replication-configuration "file://path_to_replication_conf_file" --bucket bucket_name --token $TOKEN
 ```
 
-#### Example of replication configuration
+### Examples of replication configuration
 
-Simple replication between 2 buckets:
+#### Simple replication between 2 buckets
 
 ```json
 {
