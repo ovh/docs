@@ -16,6 +16,10 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 >This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
+> [!primary]
+> OVHcloud offer an [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) system allowing to delegate access to other customer accounts
+> IAM policies allow to define fine grained access while keeping tracability of the actions
+
 ## Definition
 
 There are three different contact types:

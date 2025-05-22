@@ -144,6 +144,16 @@ A popup window will ask you to confirm the deletion.
 
 <a name="create-users"></a>
 
+#### Policies targeting other OVHcloud customer account
+
+Access policies can target other OVHcloud customer account
+The targeted account of this policy will be able to manage the rights recieved that way on his own policies, but will never be able to override the rights set on the access policy
+
+For example an account **xx1111-ovh** giving rights on `vps:apiovh:ips/*` to account **xx2222-ovh**.
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to his own users, but will never be able to give the right `vps:apiovh:reboot`
+
+Access to the support will still be reserved to the owner of the resource
+
 ### Managing identities
 
 To manage the identities available for policies, go to the `Identity, Security & Operations`{.action} menu, then to the `Identities`{.action} section.
