@@ -12,12 +12,12 @@ Aktionen in Ihrer Infrastruktur können mithilfe des vSphere SDK automatisiert w
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Eine virtuelle Maschine, die mit einem unserer [OVF-Templates](/pages/bare_metal_cloud/managed_bare_metal/ovf_template) erstellt wurde.
 
 
 > [!warning]
-> Die folgenden Codebeispiele wurden mit Python 2.7 erstellt. Bitte beachten Sie, dass Sie Ihre Bestellungen möglicherweise anpassen müssen, wenn Ihre Umgebung Debian 12 verwendet. In diesem Fall empfehlen wir Ihnen, die neueste Version von Python 3 herunterzuladen.
+> Die folgenden Codebeispiele wurden mit Python 2.7 erstellt. Beachten Sie, dass Sie Ihren Code möglicherweise anpassen müssen, wenn Ihre Umgebung Debian 12 verwendet. In diesem Fall empfehlen wir Ihnen, die neueste Version von Python 3 herunterzuladen.
 >
 
 ## In der praktischen Anwendung
@@ -26,7 +26,7 @@ Aktionen in Ihrer Infrastruktur können mithilfe des vSphere SDK automatisiert w
 
 #### Umgebung einrichten
 
-Dieses Beispiel verwendet eine mit Debian 9 installierte VM, die aus [Templates für Ihre Managed Bare Metal Infrastruktur verfügbar](/pages/bare_metal_cloud/managed_bare_metal/ovf_template) bereitgestellt wird.
+Dieses Beispiel verwendet eine mit Debian 9 installierte VM, die aus [Templates für Ihre Managed Bare Metal Infrastruktur](/pages/bare_metal_cloud/managed_bare_metal/ovf_template) bereitgestellt wird.
 
 Folgende Pakete müssen installiert werden: 
 
@@ -48,7 +48,7 @@ Das Verzeichnis `/vsphere-automation-sdk-python` wird erstellt. Wechseln Sie zu 
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
-In diesem Beispiel ist dies der folgende Befehl:
+Im vorliegenden Beispiel handelt es sich um folgenden Befehl: 
 
 ```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
@@ -260,4 +260,4 @@ perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien -
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer [User Community](/links/community).
+Treten Sie unserer [User Community](/links/community) bei.
