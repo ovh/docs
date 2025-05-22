@@ -10,6 +10,10 @@ La plupart des services créés chez OVHcloud sont gérés par plusieurs contact
 
 **Apprenez comment gérer les contacts de vos services OVHcloud.**
 
+> [!primary]
+> OVHcloud met à disposition un système de gestion de [politique d'accès IAM](/pages/account_and_service_management/account_information/iam-policy-ui/) permettant de déléguer des accès à d'autres comptes clients.
+> Les politiques d'accès IAM permettent de définir des permissions d'accès granulaires tout en gardant la traçabilité des actions
+
 ## Définition
 
 Trois types de contacts existent:

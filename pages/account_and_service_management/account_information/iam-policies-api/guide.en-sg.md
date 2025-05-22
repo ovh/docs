@@ -288,6 +288,16 @@ Check it via `GET /iam/policy`:
 
 The policies have been created successfully. Now, "***user1***" can **carry out reboots and create snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***". "***user2***" can **execute any vps action except for the deletion of snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
+#### Policies targeting other OVHcloud customer account
+
+Access policies can target other OVHcloud customer account
+The targeted account of this policy will be able to manage the rights recieved that way on his own policies, but will never be able to override the rights set on the access policy
+
+For example an account **xx1111-ovh** giving rights on `vps:apiovh:ips/*` to account **xx2222-ovh**.
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to his own users, but will never be able to give the right `vps:apiovh:reboot`
+
+Access to the support will still be reserved to the owner of the resource
+
 ### Identities
 
 Policies apply to users, which can be accounts, users or user groups.
