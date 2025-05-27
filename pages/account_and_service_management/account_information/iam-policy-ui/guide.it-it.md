@@ -1,7 +1,7 @@
 ---
 title: Come utilizzare le politiche IAM dallo Spazio Cliente
 excerpt: Come assegnare diritti di accesso specifici agli utenti da un account OVHcloud
-updated: 2025-05-15
+updated: 2025-06-06
 ---
 
 ## Obiettivo
@@ -147,9 +147,13 @@ Una finestra contestuale ti chiederà di confermare l'eliminazione.
 
 ### Gestione delle identità
 
-Per gestire le identità disponibili per le politiche, accedi al menu `Identità, Sicurezza e Operazioni`{.action}, poi alla sezione `Identità`{.action}.
+Le policy di accesso possono essere indirizzate ad altri account cliente.
+L'account destinatario di questa politica potrà gestire i diritti ricevuti nelle proprie politiche di accesso, ma non potrà mai oltrepassare i diritti definiti nella politica di accesso.
 
-Visualizza i dettagli della gestione degli utenti nella [documentazione dedicata](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+Ad esempio un account **xx1111-ovh** con diritti `vps:apiovh:ips/*` all’account **xx2222-ovh**.
+L’account **xx2222-ovh** potrà assegnare il diritto `vps:apiovh:ips/delete` ai propri utenti, ma non potrà mai assegnare il diritto `vps:apiovh:reboot`.
+
+L'accesso al supporto resterà riservato all'account proprietario della risorsa.
 
 ### Gestione dei gruppi di risorse
 
