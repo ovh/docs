@@ -32,7 +32,7 @@ This gives you better visibility, reduces the need for API calls, and helps ensu
 
 > [!info]
 >
-> This feature only applies if you want OVHcloud to licence your Windows VMs via SPLA.
+> This feature only applies if you want OVHcloud to license your Windows VMs via SPLA.
 > If you bring your own licence (BYOL), you do not need to activate anything in the [OVHcloud Control Panel](/links/manager).
 
 #### Check your Windows licence usage in the Control Panel
@@ -61,7 +61,7 @@ There are two scenarios:
     → No action required in the interface.
 
 - **Case 2: You want OVHcloud to licence the VM**
-    → The VM must be activated in the [OVHcloud Control Panel](/links/manager) for it to be billed properly.
+    → The VM licence must be activated in the [OVHcloud Control Panel](/links/manager) for it to be billed properly.
 
 #### Activate a Windows licence from the OVHcloud Control Panel
 
@@ -80,7 +80,11 @@ There are two scenarios:
 > 
 > The VM is now declared and licensed by OVHcloud. It will appear in your billing and compliance tracking.
 
-### List virtual machines with a licence
+### Manage licences using the OVHcloud API
+
+If you prefer to automate or integrate Windows licence management into your workflows, you can use the [API OVHcloud](https://api.ovh.com/){.external}. to list, assign, update or remove licences on your virtual machines.
+
+#### List virtual machines with a licence
 
 You can quickly check which virtual machines in your infrastructure are licensed via the OVHcloud API:
 
@@ -102,7 +106,7 @@ You can quickly check which virtual machines in your infrastructure are licensed
 ]
 ```
 
-### Verify the licence of a virtual machine
+#### Verify the licence of a virtual machine
 
 You can check the licence currently associated with one of your virtual machines via the OVHcloud API:
 
@@ -123,7 +127,7 @@ If no licence is attached to it, the `license` field value will be `null`.
 }
 ```
 
-### Update the licence of a virtual machine
+#### Update the licence of a virtual machine
 
 You can update the licence associated with one of your virtual machines via the OVHcloud API:
 
@@ -142,7 +146,7 @@ You can update the licence associated with one of your virtual machines via the 
 >
 > You can resolve this by changing the VM settings or you can choose to ignore this error by passing the option `bypassGuestOsFamilyCheck`.
 
-### Unlicense a virtual machine
+#### Unlicense a virtual machine
 
 You can delete the licence associated with one of your virtual machines via the OVHcloud API:
 

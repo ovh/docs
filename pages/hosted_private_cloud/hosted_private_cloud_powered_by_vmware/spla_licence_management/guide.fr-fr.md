@@ -60,7 +60,7 @@ Deux cas de figure sont possibles :
     → Aucune action n'est requise dans l'interface.
 
 - **Cas n° 2 : vous souhaitez qu’OVHcloud fournisse une licence pour la VM**
-    → La VM doit être activée depuis l’[espace client OVHcloud](/links/manager) pour être correctement facturée.
+    → La licence de la VM doit être activée depuis l’[espace client OVHcloud](/links/manager) pour être correctement facturée.
     
 #### Activer une licence Windows depuis l'espace client
 
@@ -79,7 +79,11 @@ Deux cas de figure sont possibles :
 >
 > La VM est désormais déclarée et licenciée par OVHcloud. Elle sera prise en compte dans votre facturation et dans le suivi de conformité.
 
-### Lister les machines virtuelles avec une licence
+### Gérer les licences via l’API OVHcloud
+
+Si vous souhaitez automatiser la gestion des licences Windows ou l’intégrer à vos processus, vous pouvez utiliser l’[API OVHcloud](https://api.ovh.com/){.external} pour lister, attribuer, mettre à jour ou supprimer les licences de vos machines virtuelles.
+
+#### Lister les machines virtuelles avec une licence
 
 Vous pouvez vérifier rapidement quelles machines virtuelles de votre infrastructure possèdent une licence depuis l'API OVHcloud.
 
@@ -101,7 +105,7 @@ Vous pouvez vérifier rapidement quelles machines virtuelles de votre infrastruc
 ]
 ```
 
-### Vérifier la licence d'une machine virtuelle
+#### Vérifier la licence d'une machine virtuelle
 
 Vous pouvez vérifier la licence actuellement associé à une de vos machines virtuelles depuis l'API OVHcloud.
 Si aucune licence n'est attachée à celle-ci, le champ `license` aura la valeur `null`.
@@ -121,7 +125,7 @@ Si aucune licence n'est attachée à celle-ci, le champ `license` aura la valeur
 }
 ```
 
-### Mettre à jour la licence d'une machine virtuelle
+#### Mettre à jour la licence d'une machine virtuelle
 
 Vous pouvez mettre à jour la licence associée à une de vos machines virtuelles depuis l'API OVHcloud :
 
@@ -140,7 +144,7 @@ Vous pouvez mettre à jour la licence associée à une de vos machines virtuelle
 >
 > Vous pouvez résoudre ce problème en modifiant les réglages de la machine virtuelle ou vous pouvez choisir d'ignorer cette erreur en passant l'option `bypassGuestOsFamilyCheck`.
 
-### Supprimer la licence d'une machine virtuelle
+#### Supprimer la licence d'une machine virtuelle
 
 Vous pouvez supprimer la licence associée à une de vos machines virtuelles depuis l'API OVHcloud :
 
