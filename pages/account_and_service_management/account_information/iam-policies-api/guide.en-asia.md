@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud API
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2024-08-21
+updated: 2024-06-06
 ---
 
 ## Objective
@@ -290,13 +290,13 @@ The policies have been created successfully. Now, "***user1***" can **carry out 
 
 #### Policies targeting other OVHcloud customer account
 
-Access policies can target other OVHcloud customer account
-The targeted account of this policy will be able to manage the rights recieved that way on his own policies, but will never be able to override the rights set on the access policy
+Access policies can target other OVHcloud customer account.
+The targeted account of this policy will be able to manage the rights recieved that way on his own policies, but will never be able to override the rights set on the access policy.
 
 For example an account **xx1111-ovh** giving rights on `vps:apiovh:ips/*` to account **xx2222-ovh**.
-Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to his own users, but will never be able to give the right `vps:apiovh:reboot`
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to his own users, but will never be able to give the right `vps:apiovh:reboot`.
 
-Access to the support will still be reserved to the owner of the resource
+Access to the support will still be reserved to the owner of the resource.
 
 ### Identities
 

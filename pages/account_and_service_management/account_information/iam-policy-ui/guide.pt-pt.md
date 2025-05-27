@@ -1,7 +1,7 @@
 ---
 title: Como utilizar as políticas IAM a partir do seu Espaço Cliente
 excerpt: Descubra como dar direitos de acesso específicos aos utilizadores a partir de uma conta OVHcloud
-updated: 2025-05-12
+updated: 2025-06-06
 ---
 
 ## Objetivo
@@ -147,9 +147,13 @@ Uma janela contextual irá pedir-lhe que confirme a eliminação.
 
 ### Gestão das identidades
 
-As identidades disponíveis para as políticas são geridas através do separador `Identidades`{.action}.
+As políticas de acesso podem visar outras contas de clientes.
+A conta destinatária desta política poderá gerir os direitos assim recebidos nas suas próprias políticas de acesso, mas nunca poderá ultrapassar os direitos definidos na política de acesso.
 
-Encontre os detalhes da gestão dos utilizadores na [documentação dedicada](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+Por exemplo, uma conta **xx111-ovh** que atribui direitos `vps:apiovh:ips/*` à conta **xx2222-ovh**.
+A conta **xx2222-ovh** poderá dar o direito `vps:apiovh:ips/delete` aos seus próprios utilizadores, mas nunca poderá dar o direito `vps:apiovh:reboot`.
+
+O acesso ao suporte ficará reservado à conta proprietária do recurso.
 
 ### Gestão dos grupos de recursos
 

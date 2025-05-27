@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie kontaktami swoich usług
 excerpt: 'Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud'
-updated: 2025-04-28
+updated: 2025-06-06
 ---
 
 ## Wprowadzenie
@@ -16,6 +16,10 @@ Większość usług tworzonych w OVHcloud jest zarządzana przez wiele kontaktó
 >
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
+
+> [!primary]
+> OVHcloud oferuje system [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) umożliwiający delegowanie dostępu do innych kont klientów.
+> Reguły IAM umożliwiają zdefiniowanie precyzyjnego dostępu z zachowaniem identyfikowalności operacji.
 
 ## Definicja
 

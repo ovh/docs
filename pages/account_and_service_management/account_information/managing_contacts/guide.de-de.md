@@ -1,13 +1,13 @@
 ---
 title: 'Die Kontakte Ihrer Dienste verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten'
-updated: 2025-04-28
+updated: 2025-06-06
 ---
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister]((/links/partner)) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
 ## Ziel
@@ -17,8 +17,8 @@ Die meisten OVHcloud Dienste werden mithilfe mehrerer Kontakte verwaltet. Jedem 
 **Diese Anleitung erklärt, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten.**
 
 > [!primary]
-> OVHcloud offer an [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) system allowing to delegate access to other customer accounts
-> IAM policies allow to define fine grained access while keeping tracability of the actions
+> OVHcloud bietet ein [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/)-System an, mit dem der Zugriff auf andere Kundenkonten delegiert werden kann.
+> IAM-Richtlinien ermöglichen die Definition eines detaillierten Zugriffs bei gleichzeitiger Nachvollziehbarkeit der Aktionen.
 
 ## Definition
 
