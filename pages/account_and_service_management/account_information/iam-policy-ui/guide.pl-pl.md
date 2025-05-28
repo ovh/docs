@@ -145,7 +145,7 @@ W oknie podręcznym zostanie wyświetlona prośba o potwierdzenie usunięcia hos
 
 <a name="create-users"></a>
 
-### Zarządzanie tożsamością
+#### Polityki kierowane do innego konta klienta OVHcloud
 
 Polityka dostępu może być skierowana do innego konta klienta OVHcloud.
 Konto docelowe tych zasad będzie mogło zarządzać prawami uzyskanymi w ten sposób zgodnie z jego własnymi zasadami, ale nigdy nie będzie mogło zastąpić praw ustawionych w zasadach dostępu.
@@ -154,6 +154,12 @@ Na przykład konto **xx111-ovh** dające uprawnienia na koncie "vps:apiovh:ips/*
 Konto **xx222-ovh** będzie mogło przyznać prawo `vps:apiovh:ip/delete` swoim użytkownikom, ale nigdy nie będzie mogło przyznać prawa `vps:apiovh:reboot`.
 
 Dostęp do pomocy technicznej będzie zawsze zarezerwowany dla właściciela zasobu.
+
+### Zarządzanie tożsamością
+
+Aby zarządzać tożsamościami dostępnymi dla polityk, przejdź do menu `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie do sekcji `Tożsamości`{.action}.
+
+Szczegóły zarządzania użytkownikami znajdziesz w [dokumentacji dedykowanej](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
 ### Zarządzanie grupami zasobów
 

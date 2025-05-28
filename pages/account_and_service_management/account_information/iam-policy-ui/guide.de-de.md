@@ -145,9 +145,15 @@ In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen
 
 <a name="create-users"></a>
 
-### Verwaltung von Identitäten
+#### Richtlinien für andere OVHcloud Kunden-Accounts
 
 Um die für Richtlinien verfügbaren Identitäten zu verwalten, gehen Sie zum Menü `Identität, Sicherheit und Operationen`{.action} und danach zum Abschnitt `Identitäten`{.action}.
+
+Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+
+### Verwaltung von Identitäten
+
+Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Identitäten`{.action} verwaltet.
 
 Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

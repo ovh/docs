@@ -145,7 +145,7 @@ Aparecerá una ventana emergente en la que deberá confirmar la eliminación.
 
 <a name="create-users"></a>
 
-### Gestión de identidades
+#### Casos de políticas dirigidas a otras cuentas de cliente de OVHcloud
 
 Las directivas de acceso pueden dirigirse a otras cuentas de cliente.
 La cuenta receptora de esta política podrá gestionar los derechos así recibidos en sus propias políticas de acceso, pero nunca podrá sobrepasar los derechos tal como se definen en la política de acceso.
@@ -154,6 +154,12 @@ Por ejemplo, una cuenta **xx111-ovh** que concede permisos `vps:apiovh:ips/*` a 
 La cuenta **xx222-ovh** podrá conceder el derecho `vps:apiovh:ips/delete` a sus propios usuarios, pero no podrá conceder el derecho `vps:apiovh:reboot`.
 
 El acceso al soporte quedará reservado a la cuenta propietaria del recurso.
+
+### Gestión de identidades
+
+Para gestionar las identidades disponibles para las políticas, acceda al menú `Identidad, Seguridad y Operaciones`{.action} y, a continuación, a la sección `Identidades`{.action}.
+
+Para más información sobre la gestión de usuarios, consulte la [documentación dedicada](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
 ### Gestión de grupos de recursos
 
