@@ -156,7 +156,7 @@ Access to the support will still be reserved to the owner of the resource.
 
 ### Managing identities
 
-The identities available for policies are managed via the `Identities`{.action} section on `Identity, Security & Operations`{.action}.
+To manage the identities available for policies, go to the `Identity, Security and Operations`{.action} menu, then to the `Identities`{.action} section.
 
 Details about user management are available in the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

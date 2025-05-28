@@ -157,7 +157,7 @@ L'accès au support restera réservé au compte propriétaire de la ressource.
 
 ### Gestion des identités
 
-Les identités disponibles pour les politiques sont gérées via la section `Identités`{.action} dans `Identité, Sécurité & Opérations`{.action}.
+Pour gérer les identités disponibles pour les politiques, accédez au menu `Identité, Sécurité et Opérations`{.action}, puis à la section `Identités`{.action}.
 
 Retrouvez les détails de la gestion des utilisateurs dans la [documentation dédiée](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

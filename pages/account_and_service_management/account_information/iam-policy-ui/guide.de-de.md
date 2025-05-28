@@ -145,7 +145,7 @@ In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen
 
 <a name="create-users"></a>
 
-### Verwaltung von Identitäten
+#### Richtlinien für andere OVHcloud Kunden-Accounts
 
 Zugriffsrichtlinien können auf andere OVHcloud-Kundenkonten abzielen.
 Das Zielkonto dieser Richtlinie kann die auf diese Weise erhaltenen Rechte in seinen eigenen Richtlinien verwalten, aber niemals die in der Zugriffsrichtlinie festgelegten Rechte außer Kraft setzen.
@@ -154,6 +154,12 @@ Zum Beispiel ein Account **xx1111-ovh**, der Rechte auf `vps:apiovh:ips/*` an Ac
 Account **xx2222-ovh** wird seinen eigenen Nutzern das Recht `vps:apiovh:ips/delete` geben können, aber niemals das Recht `vps:apiovh:reboot`.
 
 Der Zugriff auf den Support bleibt weiterhin dem Eigentümer der Ressource vorbehalten.
+
+### Verwaltung von Identitäten
+
+Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Identitäten`{.action} verwaltet.
+
+Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
 ### Verwaltung von Ressourcengruppen
 
