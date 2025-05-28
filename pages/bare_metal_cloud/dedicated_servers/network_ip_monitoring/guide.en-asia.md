@@ -1,7 +1,7 @@
 ---
 title: What are the IP addresses of the OVHcloud monitoring?
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
-updated: 2025-01-14
+updated: 2025-05-21
 ---
 
 ## Objective
@@ -35,8 +35,10 @@ Reverse|IP|Protocol|
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
-|---|---|---|
+|netmon-lim-probe|51.38.117.56|icmp|
+|netmon-sbg-probe|51.38.25.100|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
+|---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa is the server ip)|icmp|
 ||xxx.xxx.xxx.251 (xxx.xxx.xxx.aaa is the server ip)|icmp + Port monitored by the monitoring service|
 
@@ -50,7 +52,7 @@ Reverse|IP|Protocol|
 
 ### Server monitoring
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
+Log in to the [OVHcloud Control Panel](/links/manager) and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab (section **Service status**).
 
@@ -68,6 +70,6 @@ Click on `Confirm`{.action} to update your monitoring configuration.
 
 ## Go further
 
-[Configure the Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+[Configure the Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 Join our [community of users](/links/community).

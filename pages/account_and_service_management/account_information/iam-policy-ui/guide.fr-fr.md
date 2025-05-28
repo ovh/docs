@@ -53,7 +53,7 @@ Cliquez directement sur [Créer une politique](#create-policy) ou sur [Créer de
 >
 > Les clients ne sont pas autorisés à modifier ou supprimer ces politiques.
 
-Si vous avez déjà créé des politiques ou des utilisateurs, le menu affiche dans le premier onglet `Mes politiques` la liste de toutes les politiques en cours créées sur votre compte OVHcloud. L'onglet `Politiques OVHcloud` liste les politiques non modifiables créées automatiquement par OVHcloud
+Si vous avez déjà créé des politiques ou des utilisateurs, vous les retrouverez dans le premier onglet `Mes politiques`{.action}. L'onglet `Politiques OVHcloud`{.action} regroupe les politiques non modifiables créées automatiquement par OVHcloud.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -157,7 +157,7 @@ L'accès au support restera réservé au compte propriétaire de la ressource.
 
 ### Gestion des identités
 
-Pour gérer les identités disponibles pour les politiques, accédez au menu `Identité, Sécurité et Opérations`{.action}, puis à la section `Identités`{.action}.
+Pour gérer les identités disponibles pour les politiques, accédez au menu `Identité, Sécurité & Opérations`{.action}, puis à la section `Identités`{.action}.
 
 Retrouvez les détails de la gestion des utilisateurs dans la [documentation dédiée](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
@@ -167,7 +167,7 @@ Les politiques peuvent cibler des groupes de ressources (au lieu de cibler des r
 
 #### Créer un groupe de ressources
 
-Pour créer un groupe de ressources, accédez à l’onglet dédié de la section `Politiques`{.action} :
+Pour créer un groupe de ressources, accédez à la section `Politiques`{.action} puis cliquez sur l'onglet `Groupe de ressources`{.action} :
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 

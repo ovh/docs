@@ -18,7 +18,7 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 
 ## Requisitos
 
-- Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
+- Tener una [instancia de Public Cloud](/links/public-cloud/compute) en su cuenta de OVHcloud
 - Tener acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
@@ -86,12 +86,12 @@ Podrá acceder a sus datos desde la carpeta `/mnt`.
 
 ### Desactivar el modo de rescate
 
-Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `Salir del modo de rescate`{.action}.
+Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `Abandonar el modo de rescate`{.action}.
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
 
 > [!warning]
-> Si el botón `Salir del modo de rescate`{.action} no aparece una vez que la instancia esté en modo de rescate, le recomendamos que actualice la pestaña.
+> Si el botón `Abandonar el modo de rescate`{.action} no aparece una vez que la instancia esté en modo de rescate, le recomendamos que actualice la pestaña.
 >
 
 ### Activar el modo rescate utilizando la API de OpenStack
@@ -112,4 +112,4 @@ nova unrescue INSTANCE_ID
 
 [Cómo sustituir un par de claves SSH en una instancia](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

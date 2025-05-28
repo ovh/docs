@@ -1,7 +1,7 @@
 ---
 title: 'Migrar um endereço de e-mail MX Plan para uma conta Zimbra OVHcloud'
 excerpt: 'Saiba como migrar um endereço de e-mail MX Plan para uma conta Zimbra OVHcloud'
-updated: 2025-03-05
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -55,26 +55,32 @@ Utilize a ferramenta de migração [**O**VH **M**ail **M**igrator](https://omm.o
 
 Aceda a [OVH Mail Migrator](https://omm.ovh.net/){.external}.
 
-Na página <https://omm.ovh.net/>, no separador `Migração`{.action}, clique em `Nova migração`{.action}.
+Na página <https://omm.ovh.net/>, no separador `Migration`{.action}, clique em `New migration`{.action}.
 
 ![omm](images/omm-migration-create01.png){.thumbnail}
 
 #### Etapa 2: Introduza as informações de migração
 
-|Informação|Descrição|
-|---|---|
-|Tipo de servidor|Selecione o tipo de servidor correspondente às suas contas. Se um deles for um endereço OVHcloud (**Hosted by OVHcloud (Autodetect)**), isso permite-lhe preencher automaticamente as informações, exceto a palavra-passe. Selecione `Zimbra` para o tipo de servidor de destino.|
-|URL do servidor|Introduza o endereço do servidor onde as suas contas estão alojadas. Este campo pode ser preenchido automaticamente aquando da escolha do tipo de servidor.
-|Login source|Introduza o endereço de e-mail completo (`contact@mydomain.ovh`).|
-|Login destination|Introduza o endereço de e-mail completo (`contact2@mydomain.ovh`).|
-|Conta de administrador com delegação|Este campo só é apresentado para determinados tipos de servidores.|
-|Palavra-passe|Introduza a palavra-passe do endereço de e-mail em questão.|
+**Account**
 
-- **Opções** : selecione os elementos que pretende migrar. Alguns conteúdos podem não estar disponíveis, dependendo do tipo de servidor que escolheu anteriormente.
+- **Source Account**:
+    - **Server type**: Selecione `Hosted by OVHcloud (Autodetect)`, esta opção permite preencher automaticamente as informações, exceto a palavra-passe.
+    - **Server URL**: Este campo é preenchido automaticamente.
+    - **Login**: Introduza o endereço de e-mail completo da conta a migrar (por exemplo: `contact@mydomain.ovh`).
+    - **Password**: Insira a palavra-passe do e-mail em questão.
+- **Destination Account**:
+    - **Server type**: Selecione `Zimbra` para o tipo de servidor de destino.
+    - **Server URL**: Insira o endereço do servidor Zimbra <https://zimbra1.mail.ovh.net>.
+    - **Login**: Introduza o endereço de e-mail completo da conta Zimbra de destino (por exemplo:`contact2@mydomain.ovh`).
+    - **Password**: Insira a palavra-passe do endereço de e-mail da conta Zimbra de destino.
 
-- **Informação** : introduza um endereço de e-mail para receber notificações sobre o progresso da migração.
+**Opções**
 
-- Selecione a caixa na parte inferior da página para aceitar os termos e condições OMM.
+Selecione os itens que pretende migrar. Alguns conteúdos podem não estar disponíveis, dependendo do tipo de servidor que escolheu anteriormente.
+
+**Informações**
+
+Introduza um endereço de e-mail para ser notificado sobre o progresso da migração. Selecione a caixa na parte inferior da página para aceitar os termos e condições OMM.
 
 ![omm](images/omm-migration-create02.png){.thumbnail}
 
@@ -87,15 +93,15 @@ Verifique que todas as informações estão corretas e clique em `Iniciar a migr
 Pode aceder ao estado de monitorização de uma migração única de duas formas:
 
 - A partir do e-mail recebido com notificação sobre o progresso da migração.
-- A partir da página <https://omm.ovh.net/>. No separador `Migração`{.action}, clique em `Acompanhar/Sincronizar`{.action}. Introduza o `Identificador de migração`{.action}, assim como o `Conta source`{.action} em causa.
+- A partir da página <https://omm.ovh.net/>: No separador `Migration`{.action}, clique em `Track/Synchronize`{.action}. Introduza o identificador de migração (`Migration ID`{.action}), bem como a conta de origem (`Source account`{.action}) em causa.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 
 A nova página que vai aparecer permite-lhe acompanhar o progresso da sua migração. Será notificado se o processo irá iniciar, estiver em curso ou estiver concluído. Dependendo da situação, existem várias formas de interação:
 
-- `Interromper o processo`{.action} : permite anular a migração. Os elementos já migrados serão conservados na conta de destino.
-- `Eliminar os elementos migrados`{.action} : permite eliminar os elementos já migrados para a conta de destino. Você pode apagar itens de um ponto de sincronização específico.
-- `Sincronizar`{.action} : permite recuperar novos elementos não migrados numa anterior sincronização entre a conta de origem e a conta de destino. Essa ação é considerada uma migração dos itens em falta da conta de destino em comparação com a conta de origem.
+- `Stop the process`{.action}: Permite anular a migração. Os elementos já migrados serão conservados na conta de destino.
+- `Delete migrated elements`{.action}: Permite eliminar os elementos já migrados para a conta de destino. Você pode apagar itens de um ponto de sincronização específico.
+- `Synchronize`{.action}: Permite recuperar novos elementos não migrados numa anterior sincronização entre a conta de origem e a conta de destino. Essa ação é considerada uma migração dos itens em falta da conta de destino em comparação com a conta de origem.
 
 Para realizar uma migração por ficheiro ou múltiplo, consulte as secções " Migração por ficheiro " e " Realizar e seguir uma migração múltipla (modo projeto) " do nosso guia " [Migrar contas de e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) ".
 

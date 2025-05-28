@@ -1,7 +1,7 @@
 ---
 title: Passwort einer Webhosting-Datenbank ändern
 excerpt: Erfahren Sie hier, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
-updated: 2022-01-26
+updated: 2025-05-23
 ---
 
 ## Ziel 
@@ -50,13 +50,11 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.ac
 
 ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Klicken Sie anschließend auf den Tab `FTP-SSH`{.action} und greifen Sie auf den Speicherplatz mit den Dateien und Ordnern Ihrer Seite (*FTP-Bereich*) zu, indem Sie auf den `FTP-Explorer`{.action} klicken.
+Gehen Sie dann in dieser [Anleitung](/pages/web_cloud/web_hosting/ftp_connection) zu dem Bereich, der die Dateien und Ordner Ihrer Website enthält (*FTP-Bereich*).
 
 > [!primary]
 >
 > Wenn Sie das Passwort Ihres FTP-Speicherplatzes ändern möchten, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/ftp_change_password).
->
-> Wenn Sie sich mit einer anderen Methode verbinden möchten, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
 Öffnen Sie das oben identifizierte `Wurzelverzeichnis`.

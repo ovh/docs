@@ -1,8 +1,17 @@
 ---
 title: How to fill the job submit form in the Data Processing page from the OVHcloud Manager
 excerpt: Find out how to fill the job submit form from the Data Processing page in the OVHcloud Manager
-updated: 2020-03-06
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 

@@ -1,7 +1,7 @@
 ---
 title: Quali sono gli indirizzi IP del monitoring OVHcloud?
 excerpt: Qui trovi gli indirizzi IP da inserire durante l'installazione del firewall, in modo che il monitoring OVHcloud continui a funzionare sul tuo server.
-updated: 2025-01-14
+updated: 2025-05-21
 ---
 
 ## Obiettivo
@@ -35,6 +35,8 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
+|netmon-lim-probe|51.38.117.56|icmp|
+|netmon-sbg-probe|51.38.25.100|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa è l'IP del server)|icmp|
@@ -49,7 +51,7 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 
 ### Attiva o disattiva il monitoring
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona la scheda `Bare Metal Cloud`{.action}. Seleziona il server nel menu a tendina **Server dedicati**.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona la scheda `Bare Metal Cloud`{.action}. Seleziona il server nel menu a tendina **Server dedicati**.
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action}. L'opzione si trova nella sezione `Stato dei servizi`.
 
@@ -67,6 +69,6 @@ Clicca su `Conferma`{.action} per aggiornare la tua configurazione di sorveglian
 
 ## Per saperne di più
 
-[Configurare il Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+[Configurare il Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 Contatta la nostra [Community di utenti](/links/community).

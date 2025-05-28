@@ -21,7 +21,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 
 ## Requisitos
 
-- Ter um serviço [de alojamento web OVHcloud](/links/web/hosting){.external} compatível.
+- Ter um serviço [de alojamento web OVHcloud](/links/web/hosting-multisite){.external} compatível.
 - Dispor de um ou vários [domínios](/links/web/domains){.external}.
 - Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.

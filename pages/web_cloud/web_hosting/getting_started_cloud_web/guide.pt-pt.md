@@ -1,7 +1,7 @@
 ---
 title: "Alojamento Cloud Web: primeira utilização"
 excerpt: "Saiba como começar num plano de alojamento Cloud Web"
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -42,11 +42,13 @@ As linguagens atualmente disponíveis são:
 - Python
 - Ruby
 
-Para aceder aos motores de execução do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer){.external} vá à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento Cloud Web em causa. Por fim, clique no separador `Motores de execução`{.action}.
+Para aceder aos motores de execução do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer), aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action} na barra à esquerda e, a seguir, em `Alojamentos`{.action}. Escolha o nome do alojamento Cloud Web em causa e aceda ao separador `Motores de execução`{.action}.
 
 Será automaticamente criado um motor durante a instalação do alojamento. É indicado como `Escolha padrão` no quadro que se apresenta. Para modificar um motor já parametrizado, clique nos três pontos à direita deste último e, a seguir, em `Modificar`{.action}. 
 
-Também pode adicionar motores de execução suplementares consoante o seu serviço [Cloud Web](/links/web/hosting-cloud-web-offer){.external}. Para isso, basta clicar em `Ações`{.action} e, a seguir, em `Adicionar um motor de execução`{.action}. Repare que o número máximo de motores de execução depende do serviço [Cloud Web](/links/web/hosting-cloud-web-offer){.external} que subscreveu.
+Se dispõe da oferta [Cloud Web](/links/web/hosting-cloud-web-offer) com 2 vCores, pode adicionar um segundo motor de execução à sua oferta (máximo de 2 motores de execução diferentes por oferta) clicando no botão `Ações`{.action} e, depois em `Adicionar um motor de execução`{.action}.
+
+Para verificar que dispõe de 2 vCores com o seu alojamento Cloud Web, aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento Cloud Web em causa. Na página que vai aparecer, na caixa **Subscrição** e sob a menção `Plano`, verifique se a referência `Cloud Web 3`{.action} está indicada.
 
 Assim, antes de prosseguir, certifique-se de que dispõe do ou dos motores de execução necessários ao seu projeto.
 
@@ -195,8 +197,8 @@ Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](
 
 [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

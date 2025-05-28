@@ -14,7 +14,7 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 
 ## Prérequis
 
-- Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+- Une [instance Public Cloud](/links/public-cloud/compute) dans votre compte OVHcloud
 - Avoir accès à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique

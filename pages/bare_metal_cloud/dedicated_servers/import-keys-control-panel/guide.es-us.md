@@ -30,7 +30,7 @@ Si aún no ha creado ningún par de llaves SSH, consulte nuestras guías:
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en el nombre de la cuenta en la parte superior derecha y abra `Catálogo de productos`{.action}.
 
-![products and services](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
+![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
 En la sección `Mis servicios` del área de cliente, haga clic en `Llaves SSH`{.action}.
 

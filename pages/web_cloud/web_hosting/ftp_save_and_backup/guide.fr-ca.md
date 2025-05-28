@@ -1,7 +1,7 @@
 ---
 title: "Restaurer l'espace de stockage de son hébergement web"
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
-updated: 2023-12-04
+updated: 2025-05-23
 ---
 
 ## Objectif
@@ -127,11 +127,7 @@ Dans un premier temps, définissez le logiciel ou l'interface que vous allez uti
 
 - **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-- **utiliser l'interface du FTP Explorer** : vous devrez au préalable accéder à cette dernière via votre [espace client OVHcloud](/links/manager){.external}. Une fois connecté, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `FTP Explorer`{.action}.
-
 Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape suivante.
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### Étape 2 : se connecter à la sauvegarde
 
@@ -153,9 +149,7 @@ Vous devrez compléter votre nom d'utilisateur (ou « login ») FTP principal d'
 
 Prenez soin de remplacer l’information générique « utilisateurftp » par votre propre nom d'utilisateur FTP principal. Conservez cependant le suffixe définissant la date de sauvegarde à laquelle vous souhaitez accéder.
 
-La méthode pour vous connecter à votre espace de stockage diffère selon l'interface ou le logiciel utilisé. Vous trouverez ci-dessous une image présentant la connexion depuis l'interface de FTP Explorer.
-
-![backupftp](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
+La méthode pour vous connecter à votre espace de stockage diffère selon l'interface ou le logiciel utilisé.
 
 #### Étape 3 : récupérer le ou les fichiers souhaités
 
@@ -165,9 +159,7 @@ Avant de passer à l'étape suivante, assurez-vous d'avoir récupéré tous les 
 
 > [!success]
 >
-> Si vous utilisez l'interface du **FTP Explorer**, n'hésitez pas à consulter la [page d'aide](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} pour réaliser correctement la récupération de vos fichiers. Cette page est également accessible via le bouton `Aide`{.action} situé en bas de l'interface de connexion au **FTP Explorer**.
->
-> Si vous utilisez un autre logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
+> Si vous utilisez un logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
 >
 
 #### Étape 4 : restaurer le ou les fichiers souhaités
@@ -178,9 +170,7 @@ Une fois connecté, il ne vous reste plus qu'à restaurer le ou les fichiers sou
 
 > [!success]
 >
-> Si vous utilisez l'interface du **FTP Explorer**, n'hésitez pas à consulter la [page d'aide](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} pour réaliser correctement la restauration de vos fichiers. Cette page est également accessible via le bouton `Aide`{.action} situé en bas de l'interface de connexion au **FTP Explorer**.
->
-> Si vous utilisez un autre logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
+> Si vous utilisez un logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
 >
 
 ## Aller plus loin

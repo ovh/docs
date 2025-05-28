@@ -266,4 +266,4 @@ Certbot renova automaticamente os certificados. Não é necessária outra etapa.
 
 ## Quer saber mais?
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

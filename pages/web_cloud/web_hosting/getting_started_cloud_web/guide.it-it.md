@@ -1,7 +1,7 @@
 ---
 title: "Iniziare a utilizzare un hosting Cloud Web"
 excerpt: "Questa guida ti mostra come eseguire le prime operazioni su un Cloud Web"
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Obiettivo
@@ -42,11 +42,13 @@ I linguaggi di programmazione disponibili sono:
 - Python
 - Ruby
 
-Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l’accesso allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella barra dei servizi a sinistra e scegli il nome del tuo Cloud Web. Infine, posizionati sulla scheda `Programma d’esecuzione`{.action}.
+Per accedere al programma d’esecuzione del tuo hosting [Cloud Web](/links/web/hosting-cloud-web-offer), effettua l’accesso allo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Web Cloud`{.action} nel menu a sinistra e poi su `Hosting`{.action}. Seleziona il nome dell’hosting Cloud Web interessato e seleziona la scheda `Programma d’esecuzione`{.action}.
 
-Nel momento in cui installi il tuo hosting, un programma viene utilizzato automaticamente e inserito come `Opzione predefinita`. Per modificare il programma d’esecuzione già configurato, clicca sui 3 puntini a destra, poi su `Modifica`{.action}. 
+Nel momento in cui installi il tuo hosting, un programma viene utilizzato automaticamente e inserito come `Opzione predefinita`. Per modificare il programma d’esecuzione già configurato, clicca sui 3 puntini a destra, poi su `Modificare`{.action}. 
 
-In base alla tua soluzione di [Cloud Web](/links/web/hosting-cloud-web-offer) puoi anche aggiungere programmi d’esecuzione aggiuntivi cliccando su `Azioni`{.action} > `Aggiungi un programma d’esecuzione`{.action}. Ti ricordiamo che il numero massimo di programmi d’esecuzione dipende dalla soluzione Cloud Web che hai ordinato.
+Se disponi dell’offerta [Cloud Web](/links/web/hosting-cloud-web-offer) con 2 vCore, puoi aggiungere un secondo programma d’esecuzione alla tua offerta (massimo 2 programmi d’esecuzione diversi per offerta) cliccando sul pulsante `Azioni`{.action} e poi su `Aggiungi un programma d’esecuzione`{.action}
+
+Per verificare di disporre di 2 vCore con il tuo hosting Cloud Web, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella barra dei servizi a sinistra, poi seleziona il nome dell’hosting Cloud Web in questione. Nella nuova pagina, nel riquadro **Abbonamento** e sotto la voce `Piano`, verifica che il nome `Cloud Web 3`{.action} sia indicato.
 
 Da questo momento, prima di proseguire, assicurati di disporre del programma o più programmi d’esecuzione necessari al tuo progetto.
 
@@ -54,7 +56,7 @@ Da questo momento, prima di proseguire, assicurati di disporre del programma o p
 
 ### Step 3: crea alcune variabili d’ambiente (facoltativo)
 
-Se hai intenzione di distribuire il tuo progetto più volte in ambienti diversi (ad es. sviluppo, test, produzione, ecc...), è necessario fornire delle variabili in modo che il tuo codice risponda di conseguenza. Per questo, Cloud Web propone la definizione delle variabili d’ambiente accessibili al codice del tuo sito o della tua applicazione Web.
+Se hai intenzione di distribuire il tuo progetto più volte in ambienti diversi (ad es. sviluppo, test, produzione, ecc.), è necessario fornire delle variabili in modo che il tuo codice risponda di conseguenza. Per questo, Cloud Web propone la definizione delle variabili d’ambiente accessibili al codice del tuo sito o della tua applicazione Web.
 
 Per esempio, questo consente di non definire file “.env” nel framework PHP Laravel come indicato nella documentazione del framework: <https://laravel.com/docs/5.6/configuration>.
 
@@ -113,7 +115,7 @@ Per realizzare l’installazione del tuo progetto ci sono due possibilità. Ripe
 
 #### 5.1. Utilizza i nostri moduli in 1 click
 
-Questa soluzione ti permette di usufruire di un CMS pronto all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone 4 moduli in 1 click che permettono di installare un CMS in modo semplice e veloce. Per saperne di più accedi alla pagina [Crea il tuo sito con i moduli in 1 click](/links/web/hosting-website){.external}.
+Questa soluzione ti permette di usufruire di un CMS pronto all’uso e personalizzabile (tema, contenuti, ecc.). OVHcloud propone 4 moduli in 1 click che permettono di installare un CMS in modo semplice e veloce. Per saperne di più accedi alla pagina [Crea il tuo sito con i moduli in 1 click](/links/web/hosting-website){.external}.
 
 Se vuoi optare per l’utilizzo di uno dei nostri moduli, sempre dopo aver selezionato il Cloud Web dallo Spazio Cliente, seleziona la scheda `CMS in 1 click`{.action}, poi su `Aggiungi un modulo`{.action}. A questo punto puoi dare avvio a un’installazione in modalità “semplice” (non personalizzabile) o in modalità “avanzata” (possibilità di personalizzare alcuni elementi).
 
@@ -191,7 +193,7 @@ Per maggiori informazioni su questo servizio, consulta la nostra guida [Guida al
 
 [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} (in inglese)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

@@ -32,7 +32,7 @@ In seguito allo sviluppo della tua attività o semplicemente all’evoluzione de
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), alla sezione `Public Cloud`{.action}, seleziona il tuo progetto. Clicca sulle `istanze`{.action} nel menu a sinistra. 
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), alla sezione `Public Cloud`{.action}, seleziona il tuo progetto. Nel menu di sinistra, clicca su `Istanze`{.action}.
 
 Clicca sui tre puntini `...`{.action} a destra dell'istanza e seleziona `Modifica`{.action}.
 
@@ -49,7 +49,7 @@ Nella nuova scheda, fai scorrere la pagina fino alla sezione **Modello** per sel
 > Solo **le istanze flessibili** possono essere aggiornate e retrogradate mantenendo una dimensione di disco fissa di 50 GB.
 >
 
-Se il tuo disco è uguale o inferiore a 50 GB, puoi passare a un'`istanza flessibile`{.action} se vuoi.
+Se il tuo disco è uguale o inferiore a 50 GB, puoi passare a un'`Istanza Flexible`{.action} se vuoi.
 
 > [!warning]
 > Attenzione: nel caso di un'istanza di tipo *flex*, non è possibile passare verso un'istanza classica attraverso lo Spazio Cliente. Per maggiori informazioni, consulta la nostra guida [Passare da un’istanza flex a un’istanza classica](/pages/public_cloud/compute/revert_a_flex_instance).

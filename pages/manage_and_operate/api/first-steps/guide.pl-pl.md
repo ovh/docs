@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z API OVHcloud'
 excerpt: 'Dowiedz się, jak korzystać z API OVHcloud'
-updated: 2024-06-07
+updated: 2025-05-13
 ---
 
 > [!primary]
@@ -205,28 +205,38 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### Tworzenie listy i usuwanie kluczy
 
-Aktualnie w Panelu klienta nie ma opcji wyświetlania i usuwania kluczy. Możesz to zrobić za pomocą portalu API:
+Do wyświetlania i odwoływania kluczy możesz użyć [portalu API](/links/api) lub [panelu klienta OVHcloud](/links/manager):
 
-- Wystaw identyfikatory kluczy z następującym wywołaniem:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application
->
-
-- Pobierz informacje na temat klucza z następującego połączenia:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application/{applicationId}
->
-
-- Odwołanie klucza za pomocą następującego wywołania:
-
-> [!api]
->
-> @api {v1} /me DELETE /me/api/application/{applicationId}
->
+> [!tabs]
+> Poprzez portal API OVHcloud
+>>
+>> - Wyświetl identyfikatory kluczy, korzystając z następującego wywołania:
+>>
+>> > [!API]
+>> >
+>> > @api {v1} /me GET /me/api/application
+>> >
+>>
+>> - Uzyskaj szczegóły klucza za pomocą następującego wywołania:
+>>
+>> > [!API]
+>> >
+>> > @api {v1} /me GET /me/api/application/{applicationId}
+>> >
+>>
+>> - Unieważnij klucz za pomocą następującego wywołania:
+>>
+>> > [!API]
+>> >
+>> > @api {v1} /me DELETE /me/api/application/{applicationId}
+>> >
+>>
+> W Panelu klienta OVHcloud
+>>
+>> Przejdź do menu `Tożsamość, bezpieczeństwo i operacje`{.action} a następnie `Klucze API`{.action}.
+>>
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
+>>
 
 ## Sprawdź również <a name="gofurther"></a>
 

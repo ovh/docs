@@ -31,7 +31,7 @@ If you have not created a key pair yet, consult our guides first:
 
 Log in to the [OVHcloud Control Panel](/links/manager), click on the account name at the top right and open `Products and services`{.action}.
 
-![products and services](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
+![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
 In the Control Panel section `My services`, click `SSH keys`{.action}.
 

@@ -1,7 +1,7 @@
 ---
 title: Technical capabilities
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Managed Bare Metal'
-updated: 2020-10-27
+updated: 2025-05-20
 ---
 
 ## Objective
@@ -22,13 +22,14 @@ updated: 2020-10-27
 | Max. number of hosts per PCC | Limits of hosts per vCenter | range **Hosts**: 340 hosts, 70 zpools<br>range **Hybrid**: 241 hosts, 120 zpools<br>range **BigDS**: 76 hosts, 205 zpools |
 | Max. number of VMs per SDDC | VMs managed by the same vCenter | 25000 |
 | Max. number of VMs per host | VMs hosted on the same physical host | 1024 |
-| Max. number of IPs per PCC |  Max. number of Public IPs assignable and usable per vCenter | 1 x /23 |
+| Max. number of IPs per PCC | Max. number of Public IPs assignable and usable per vCenter | 1 x /23 |
 | vCPUs, RAM and disk consumed by regular vCenter | Resources assigned to vCenter (VCSA) | 4 vCPU, 16GB RAM, 290GB Disk |
 | vCPUs, RAM and disk consumed by regular vROPS | Resources assigned to vROPS | 4 vCPU, 16GB RAM |
 | Max. number of IPSec VPN Tunnels | Max. number of VPN tunnels per edge | 512 compact edge<br>1600 large edge<br>4096 quad large edge<br>6000 extra large edge |
 | Max. number of vRack per vDC | Max. number of private networks per virtual data centre | 1 |
 | Max. number of L2 VPN Clients | Number of VPN clients to connect | 5 |
+| TPM (Trusted Platform Module) | Possibility to secure VMs using TPM by protecting encryption keys | Not supported |
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

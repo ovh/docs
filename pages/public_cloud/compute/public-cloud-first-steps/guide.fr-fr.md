@@ -593,7 +593,7 @@ passwd: password updated successfully
 
 <a name="remote-password"></a>
 
-#### 6.1.2 : Activation de la connexion à distance par mot de passe (optionnel)
+##### 6.1.2 : Activation de la connexion à distance par mot de passe (optionnel)
 
 > [!warning]
 >

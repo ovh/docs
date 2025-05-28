@@ -1,18 +1,18 @@
 ---
 title: 'Zmiana strefy rozgłaszania bloku IP w sieci vRack'
 excerpt: 'Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack'
-updated: 2019-03-12
+updated: 2025-05-14
 ---
 
 ## Wprowadzenie
 
-Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](/links/bare-metal/bare-metal){.external} OVHcloud.
+Rozwiązanie [vRack](/links/network/vrack) umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](/links/network/vrack) OVHcloud.
 
 **Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack.**
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
+- Posiadanie usługi [vRack](/links/network/vrack)
 - [Konfiguracja bloku adresów IP w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 - Posiadanie zaawansowanej wiedzy w zakresie sieci
 
@@ -23,7 +23,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 
 ## W praktyce
 
-### Krok 1: weryfikacja aktualnej strefy rozgłaszania
+### Etap 1: weryfikacja aktualnej strefy rozgłaszania
 
 Rozpocznij operację, sprawdzając aktualną strefę rozgłaszania odpowiedniego bloku IP. W tym celu wykonaj “traceroute” w adresie IP bloku. Przetestuj dowolnie wybrany przez Ciebie adres.
 
@@ -50,24 +50,26 @@ Kliknij link <https://api.ovh.com/console/> i zaloguj się za pomocą identyfika
 > @api {v1} /vrack GET /vrack
 > 
 
-To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](/links/manager){.external}, aby ją odszukać. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action}, następnie `Network`{.action} i następnie "vRack". 
+To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](/links/manager), aby ją odszukać. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action}, następnie `Network`{.action} i następnie "vRack". 
 
 > [!api]
 >
-> @api {v1} /vrack POST /vrack/{serviceName}/ip/{ip}/announceInZone#POST
+> @api {v1} /vrack POST /vrack/{serviceName}/ip
 > 
 
 To zapytanie API umożliwia zmianę strefy rozgłaszania bloku IP. Wypełnij teraz wymagane pola:
 
 |Pole|Opis |
 |---|---|
-|serviceName|Wprowadź nazwę odpowiedniej usługi vRack.|
-|ip|Wprowadź nazwę odpowiedniego bloku IP. Pamiętaj, aby nie wpisywać adresu IP przetestowanego w poprzednim kroku, tylko odpowiedni blok IP. Przykład: `1.2.3.4/27`.|
-|strefa|Wybierz nową strefę rozgłaszania bloku IP. Pamiętaj, aby nie wpisywać strefy pobranej na poprzednim etapie.|
+|serviceName|Wprowadź nazwę odpowiedniej usługi vRack. Przykład: `pn-12345`.|
+|block|Wprowadź nazwę odpowiedniego bloku IP. Pamiętaj, aby nie wpisywać adresu IP przetestowanego w poprzednim kroku, tylko odpowiedni blok IP. Przykład: `192.0.2.0/24`.|
+|region|Wybierz nową strefę rozgłaszania bloku IP. Pamiętaj, aby nie wpisywać strefy pobranej na poprzednim etapie. Przykład: `bexxx.gra-d1-a75.fr.eu`.|
+
+![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 
 Na koniec wykonaj zapytanie API, aby zmienić strefę rozgłaszania.
 
-### Krok 3: sprawdzanie nowej strefy rozgłaszania
+### Etap 3: sprawdzanie nowej strefy rozgłaszania
 
 Po zmianie strefy rozgłaszania ponownie wykonaj "traceroute" na adresie IP używanym podczas etapu 1 w celu jego weryfikacji.
 

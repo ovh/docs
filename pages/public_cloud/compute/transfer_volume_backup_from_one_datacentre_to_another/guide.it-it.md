@@ -4,13 +4,9 @@ excerpt: "Scopri come trasferire un backup di volume da una Region OpenStack ad 
 updated: 2024-01-11
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
-In alcuni casi potrebbe essere necessario spostare volumi aggiuntivi da una Region OpenStack a un'altra, perché è disponibile una nuova Region o perché si desidera migrare da [OVHcloud Labs](https://labs.ovh.com/){.external} al [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}.
+In alcuni casi potrebbe essere necessario spostare volumi aggiuntivi da una Region OpenStack a un'altra, perché è disponibile una nuova Region o perché si desidera migrare da [OVHcloud Labs](https://labs.ovh.com/) al [Public Cloud](https://www.ovhcloud.com/it/public-cloud/).
 
 **Questa guida ti mostra come migrare un backup di un volume da una Region OpenStack ad un'altra.**
 
@@ -192,6 +188,6 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Per saperne di più
 
-[Trasferire il backup di un’istanza da una Region OpenStack ad un’altra ](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
+[Scaricare e trasferire il backup di un’istanza da una Region OpenStack ad un’altra](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

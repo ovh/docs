@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
-updated: 2024-07-16
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -236,8 +236,6 @@ Se for caso disso, consulte as instruções descritas na nossa documentação ["
 #### 3.2 - Recuperar ou criar o ficheiro ".ovhconfig"
 
 Quando estiver conectado ao [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), visualizará o conjunto dos ficheiros alojados atualmente no seu espaço de armazenamento FTP. Fique posicionado na raiz do seu alojamento (que pode ser simbolizado por um "/"). Deverá encontrar o ficheiro ".ovhconfig".
-
-![ovhconfig](/pages/assets/screens/other/web-tools/net2ftp/ovhconfig-file.png){.thumbnail}
 
 A partir daí, existem duas possibilidades:
 

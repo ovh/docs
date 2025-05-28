@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Getting started
 excerpt: Discover AI Endpoints, the secure serverless platform by OVHcloud for developers to access top AI models with easy-to-use APIs. No AI expertise needed.
-updated: 2025-05-05
+updated: 2025-05-21
 ---
 
 > [!primary]
@@ -127,25 +127,17 @@ This will take you to a dedicated page with several options for interacting with
 
 ### Revoke your API access key
 
-To revoke one of your API keys, you can use the following commands in your terminal:
+To maintain security and control over your API access, it is essential to **revoke keys that are no longer needed**.
 
-Set a shell variable with the key you want to revoke:
+To revoke one of your API access keys, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `AI Endpoints`{.action} underneath **AI & Machine Learning** in the left-hand menu, then on then `API key`{.action} management section.
 
-```bash
-ACCESS_KEY=<YOUR_KEY_HERE>
-```
+On the **AI key management** page, you will see a table listing all your generated API access keys, including their **name**, **description**, and **expiry date**. Find the key you want to revoke and click the three dots `...`{.action} button next to its details. This will open a menu where you can select `Delete`{.action}. Confirm this action to complete the revocation.
 
-Then you can use the following command to call the API Key revoke endpoint:
+![AI Endpoints access key cancellation](images/api-access-key-revoke.png){.thumbnail}
 
-```bash
-curl -vvv 'https://kepler.ai.cloud.ovh.net/v1/oauth/ovh/revoke' -H 'Content-Type: application/json' -X POST --data "{\"oauth2Token\": \"${ACCESS_KEY}\"}"
-```
+**Verification**
 
-This will revoke the specified access key.
-
-Alternatively, you can also revoke your API key using the `Revoke API key`{.action} button from the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) website. However, please note that this button will only allow you to revoke the most recently created API key.
-
-Once done, you can confirm its deletion by trying to send a request using your revoked API key.
+After revoking an API key, you can verify that it is no longer valid by attempting to use it for an API request. The API should return an error message indicating that the credentials are invalid, such as `403 Forbidden: Authentication Failed`.
 
 ### Model rate limit
 

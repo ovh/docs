@@ -14,7 +14,7 @@ max-width:400px!important;
 
 Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collaborative open source offrant toutes les fonctionnalités nécessaires à une utilisation professionnelle. Retrouvez sur cette page les informations nécessaires à la configuration de vos comptes e-mail Zimbra sur votre logiciel de messagerie préféré.
 
-**Découvrez comment configurer votre logiciel de messagerie pour consulter les e-mails de votre comtpe Zimbra**
+**Découvrez comment configurer votre logiciel de messagerie pour consulter les e-mails de votre compte Zimbra**
 
 ## Prérequis
 

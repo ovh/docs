@@ -49,7 +49,7 @@ W nowej zakładce przewiń stronę do sekcji **Model**, aby wybrać wybrany mode
 > Tylko **elastyczne instancje** mogą być aktualizowane i podświetlane, zachowując stały rozmiar dysku 50 GB.
 >
 
-Jeśli Twój dysk jest równy lub mniejszy niż 50 GB, możesz przejść do elastycznej `instancji`{.action}.
+Jeśli twój dysk ma 50 GB lub mniej, możesz przełączyć się na `Elastyczna instancja`{.action}, jeśli chcesz.
 
 > [!warning]
 > Uwaga: w przypadku edycji instancji typu *flex* nie można przejść na instancję klasyczną w Panelu klienta. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [Zmiana instancji flex na instancję klasyczną](/pages/public_cloud/compute/revert_a_flex_instance).

@@ -46,7 +46,7 @@ Cliquez sur `Suivant`{.action}.
 
 ![CLONE](images/en11clonestor.png){.thumbnail}
 
-Sélectionnez les options nécessaire pour le clone.
+Sélectionnez les options nécessaires pour le clone.
 
 - Personnaliser le système d'exploitation lancera sysprep lors de la première utilisation de la VM.
 - Personnaliser le matériel de cette machine virtuelle permet de modifier les caractéristiques techniques de la VM (taille de disque, RAM, éléments réseau...).

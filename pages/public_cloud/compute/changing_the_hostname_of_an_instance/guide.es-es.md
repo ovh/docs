@@ -28,7 +28,7 @@ El módulo **cloud-init** permite configurar una [instancia de Public Cloud](htt
 
 ### Desactivar el módulo cloud-init
 
-> [!primario]
+> [!primary]
 >
 > Para los propósitos de esta guía, usaremos el editor de archivos **vi**, ya que está presente por defecto en las distribuciones Linux. Por supuesto, puedes utilizar el editor que prefieras.
 >

@@ -24,7 +24,7 @@ No entanto, pode ligar-se à sua instância através do modo rescue da OVHcloud,
 
 ## Requisitos
 
-- Uma [instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
+- Uma [instância Public Cloud](/links/public-cloud/compute) na sua conta OVHcloud
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções

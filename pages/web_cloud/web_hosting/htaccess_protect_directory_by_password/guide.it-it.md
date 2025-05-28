@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteggere una directory o l'interfaccia di amministrazione del tuo sito web con file .htaccess e .htpasswd"
 excerpt: "Questa guida ti mostra come proteggere una directory o l'accesso alla gestione del tuo sito Web tramite un'autenticazione con i file .htaccess e .htpasswd"
-updated: 2024-04-17
+updated: 2025-05-23
 ---
 
 ## Obiettivo
@@ -69,11 +69,7 @@ Accedi a [lo spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 Crea un file "crypt.php" in questa "cartella root".
 
-![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
-
 Apri o crea la cartella per essere protetta dal tuo sito Web. Nel nostro esempio, si tratterà della cartella "admin". Crea in questa directory un file ".htpasswd" e un file ".htaccess".
-
-![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 Per utilizzare correttamente i file ".htaccess" e ".htpasswd", è necessario conoscere e rispettare queste regole: 
 

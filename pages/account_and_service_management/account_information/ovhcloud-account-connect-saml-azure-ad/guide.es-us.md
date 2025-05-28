@@ -1,7 +1,7 @@
 ---
 title: Activar las conexiones SSO de Entra ID con su cuenta OVHcloud
 excerpt: "Esta guía explica cómo asociar su Entra ID (antes Azure Active Directory) a su cuenta de OVHcloud utilizando SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Objetivo
@@ -203,17 +203,13 @@ La adición de su aplicación Entra ID como proveedor de identidad aprobado se r
 
 #### Creación de confianza en OVHcloud
 
-En la barra lateral, haga clic en `Identidad, seguridad y operaciones`{.action} y, a continuación, en `Identity & Access Management`{.action}.
+En la barra lateral, haga clic en `Identidad, Seguridad y operaciones`{.action} y luego en `Identidades`{.action}.
 
 ![Acceso al menú IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-A continuación, haga clic en la pestaña `Identidades`{.action} para acceder a la gestión de los usuarios locales.
+Haga clic en la pestaña `SSO`{.action} y en el botón `Conexión SSO`{.action}.
 
 ![Acceso al menú IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Haga clic en el botón `Conexión SSO`{.action}.
-
-![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Rellene el campo **Nombre de Atributo de Usuario** con el nombre de reclamación de la aplicación de identificación inicial **UPN** y en el campo **Nombre de Atributo de Grupo** con el valor del nombre de reclamación de **groups** guardado antes.
 
@@ -239,11 +235,11 @@ Para solucionar el problema, compruebe el atributo "Group" devuelto por la aplic
 
 ![Entra ID Group etapa 2](images/azure_ad_group_2.png){.thumbnail}
 
-Para añadirlo, haga clic en el botón `Declarar un grupo`{.action}.
+Para añadir un grupo, acceda a la sección `Identidades`{.action} y, a continuación, a la pestaña `Grupos de usuarios`{.action}. Luego, haga clic en el botón `Declarar un grupo`{.action} :
 
 ![Grupos de gestión de usuarios de Ovhcloud etapa 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Complete los campos y haga clic en el botón `Aceptar`{.action}.
+Introduzca el nombre del grupo, seleccione el rol asociado y haga clic en el botón `Confirmar`{.action}.
 
 ![Grupos de gestión de usuarios del paso 2 de Ovhcloud](images/ovhcloud_sso_menu_2.png){.thumbnail}
 
@@ -251,7 +247,7 @@ El grupo creado debe aparecer en la lista.
 
 ![Grupos de gestión de usuarios Ovhcloud etapa 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
 
-Atención: Si otorga el privilegio `Ninguno`, será necesario asignar permisos a este grupo a través de las [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+Atención: Si otorga el rol `Ninguno`, será necesario asignar permisos a este grupo a través de las [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 ### Conexión mediante SSO
 

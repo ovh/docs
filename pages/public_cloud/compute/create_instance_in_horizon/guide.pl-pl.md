@@ -122,7 +122,7 @@ Wstępnie zbudowane *flavor* są dostępne dla Ciebie. Wybierz *flavor* w zakła
 Aby uzyskać więcej informacji, zapoznaj się z [tym przewodnikiem](/pages/public_cloud/compute/setup_security_group).
 
 
-**Key Pairs (Para kluczy)**
+**Key Pair (Para kluczy)**
 
 > [!warning] 
 > 
@@ -156,7 +156,7 @@ Aby uzyskać więcej informacji na temat tworzenia klucza SSH, zapoznaj się z [
 >> Jeśli wolisz zaimportować klucz SSH utworzony wcześniej, kliknij przycisk `Import Key Pair`{.action}.
 >>
 >> **Key Pair Name:** Wprowadź nazwę dla klucza.<br>
->> **Key Type (Typ klucza):** Kliknij strzałkę rozwijaną` i wybierz `SSH Key`.<br>
+>> **Key Type (Typ klucza):** Kliknij `strzałkę w dół`{.action} i wybierz `SSH Key`{.action}.<br>
 >> **Load Public Key from a file (Załaduj klucz publiczny z pliku):** Kliknij `Browse`{.action}, aby określić lokalizację klucza publicznego na komputerze.<br>
 >> **Public Key:** Skopiuj i wklej tutaj klucz publiczny.<br>
 >> Kliknij przycisk `Import Key Pair`{.action}, aby zaimportować klucz.<br><br>
@@ -180,4 +180,4 @@ Uwaga: te opcje nie są wymagane do utworzenia podstawowej instancji. Jeśli chc
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

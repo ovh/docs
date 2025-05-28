@@ -1,7 +1,7 @@
 ---
 title: Włącz połączenia Entra ID SSO z Twoim kontem OVHcloud
 excerpt: "Dowiedz się, jak powiązać identyfikator Entra ID (dawniej Azure Active Directory) z kontem OVHcloud przy użyciu protokołu SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Wprowadzenie
@@ -203,17 +203,13 @@ Aplikacja Entra ID zostaje dodana jako zatwierdzony dostawca danych w Panelu [kl
 
 #### Zaufanie OVHcloud
 
-Na pasku bocznym kliknij `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie `Zarządzanie tożsamością i dostępem (IAM)`{.action}.
+Na pasku bocznym kliknij `Tożsamość, bezpieczeństwo i operacje`{.action} a następnie `Tożsamości`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
+Następnie kliknij zakładkę `SSO`{.action} i kliknij przycisk `Logowanie SSO`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Następnie kliknij przycisk `Logowanie SSO`{.action}.
-
-![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Uzupełnij pole **Nazwa atrybutu użytkownika** nazwą oświadczenia aplikacji identyfikatora wewnętrznego **UPN** oraz w polu **Nazwa atrybutu grupy** wartością nazwy oświadczenia **groups**, która została wcześniej zapisana.
 
@@ -239,11 +235,11 @@ Aby rozwiązać tę sytuację, sprawdź atrybut "Group" zwrócony przez aplikacj
 
 ![Etap 2 Entra ID Group](images/azure_ad_group_2.png){.thumbnail}
 
-Dodaj plik, klikając przycisk `Declarer grupy`{.action}.
+Aby dodać grupę, przejdź do sekcji `Tożsamości`{.action} i następnie do zakładki `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action}:
 
 ![Grupy zarządzania użytkownikami Ovhcloud etap 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Uzupełnij pola, następnie kliknij przycisk `Zatwierdź`{.action}.
+Wpisz nazwę grupy i wybierz przypisaną rolę, a następnie kliknij na `Zatwierdź`{.action}.
 
 ![Grupy zarządzania użytkownikami Ovhcloud etap 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 

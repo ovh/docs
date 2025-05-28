@@ -6,7 +6,7 @@ updated: 2024-01-11
 
 ## Objective
 
-It may become necessary to move additional volumes from one OpenStack region to another, either because you would prefer to move to a newly-available OpenStack region, or because you want to migrate from [OVHcloud Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud](https://www.ovhcloud.com/en/public-cloud/compute/){.external}.
+It may become necessary to move additional volumes from one OpenStack region to another, either because you would prefer to move to a newly-available OpenStack region, or because you want to migrate from [OVHcloud Labs](https://labs.ovh.com/) (formerly RunAbove) to the [Public Cloud](/links/public-cloud/compute).
 
 **This guide will show you how to transfer a volume backup from one OpenStack region to another.**
 
@@ -14,7 +14,7 @@ It may become necessary to move additional volumes from one OpenStack region to 
 
 In order to do the transfer, you will need an environment with:
 
-- OpenStack CLI. Use [our guide to know how to prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api){.external}.
+- OpenStack CLI. Use [our guide to know how to prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 - Connectivity to OVHCloud OpenStack APIs.
 - Available storage that matches the volume's disk size (for temporary backup storage).
 
@@ -190,6 +190,6 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Go further
 
-[Transferring an instance backup from one OpenStack region to another](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}
+[Downloading and transferring an instance backup from one OpenStack region to another](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
 
 Join our [community of users](/links/community).

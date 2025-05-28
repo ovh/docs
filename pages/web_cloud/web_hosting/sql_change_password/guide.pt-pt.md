@@ -1,7 +1,7 @@
 ---
 title: Alterar a palavra-passe da base de dados de um alojamento web
 excerpt: Saiba como alterar a palavra-passe de uma base de dados criada num serviço de alojamento web
-updated: 2022-01-26
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -51,13 +51,11 @@ Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.actio
 
 ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-A seguir, clique no separador `FTP-SSH`{.action} e aceda ao espaço que contém os ficheiros e as pastas do seu site (*espaço FTP*) clicando no botão `Explorador FTP`{.action}.
+De seguida, aceda ao espaço que contém os ficheiros e as pastas do seu site (*espaço FTP*) consultando este [guia](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
 > Se pretender alterar a palavra-passe do seu espaço FTP, consulte este [guia](/pages/web_cloud/web_hosting/ftp_change_password).
->
-> Para aceder através de outro método, consulte este [guia](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
 Abra a `Pasta raiz` identificada acima.

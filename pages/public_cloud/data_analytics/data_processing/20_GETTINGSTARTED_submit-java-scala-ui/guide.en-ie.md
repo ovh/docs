@@ -1,8 +1,17 @@
 ---
 title: Submitting a Java/Scala job to Data Processing platform using OVHcloud Control Panel
 excerpt: Find out how to create a cluster and run your Apache Spark Java/Scala job with Data Processing platform using the OVHcloud Control Panel
-updated: 2020-05-04
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 

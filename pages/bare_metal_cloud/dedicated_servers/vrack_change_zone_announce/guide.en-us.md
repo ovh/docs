@@ -1,18 +1,18 @@
 ---
 title: 'Change the announcement of an IP block in vRack'
 excerpt: 'Learn how to change the announcement of an IP block in vRack'
-updated: 2019-03-12
+updated: 2025-05-14
 ---
 
 ## Objective
 
-The [vRack](https://www.ovh.com/world/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](/links/bare-metal/bare-metal){.external}.
+The [vRack](/links/network/vrack) is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](/links/bare-metal/bare-metal).
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 
 ## Requirements:
 
-- A [vRack](https://www.ovh.com/world/solutions/vrack/){.external}
+- A [vRack](/links/network/vrack)
 - A [configured block of IP addresses in the vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 - Basic network knowledge
 
@@ -39,31 +39,34 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-In this example, the tested IP address is currently announced to **Roubaix**. This is visible in the last completed hop: 'l1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms.'
+In this example, the tested IP address is currently announced to **Roubaix**. This is visible in the last completed hop: 'vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms.'
 
 ### Step 2: Change the announcement zone of the IP block
 
-Go to <https://ca.api.ovh.com/console/>, then sign in with your OVHcloud customer ID. Use the API below to change the announcement of the IP block.
+Go to <https://ca.api.ovh.com/console/>, then sign in with your OVHcloud customer ID. Use the API call below to change the announcement of the IP block.
 
 > [!api]
 >
 > @api {v1} /vrack GET /vrack
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](/links/manager){.external}. TTo do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](/links/manager). To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
 
 > [!api]
 >
-> @api {v1} /vrack POST /vrack/{serviceName}/ip/{ip}/announceInZone#POST
+> @api {v1} /vrack POST /vrack/{serviceName}/ip
 > 
 
-This API makes it possible to change the announcement of an IP block. Fill in the requested fields:
+This API call makes it possible to change the announcement of an IP block. Fill in the requested fields:
 
 |Field|Description|
 |---|---|
-|serviceName|Fill in the name of the concerned vRack service.|
-|ip|Fill in the name of the concerned IP block. Be sure not to fill in the IP block, not the IP address that you tested in the previous step.  For example: `1.2.3.4/27`.|
-|zone|Select the new announcement zone of the IP block. Be sure this is not the same zone as retrieved in the previous step.|
+|serviceName|Fill in the name of the concerned vRack service. For example: `pn-12345`.|
+|block|Fill in the name of the concerned IP block. Be sure to fill in the IP block, not the IP address that you tested in the previous step.  For example: `192.0.2.0/24`.|
+|region|Select the new announcement zone (region) of the IP block. Be sure this is not the same zone as retrieved in the previous step. For example: `bexxx.gra-d1-a75.fr.eu`|
+
+
+![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 
 Finally, run the API to change the announcement.
 

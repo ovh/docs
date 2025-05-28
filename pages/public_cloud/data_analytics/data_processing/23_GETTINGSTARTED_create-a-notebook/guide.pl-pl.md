@@ -1,8 +1,17 @@
 ---
 title: Notebooks for Apache Spark - Getting started
 excerpt: Learn how to create Notebooks for Apache Spark
-updated: 2023-04-26
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 > [!primary]
 >

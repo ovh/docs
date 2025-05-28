@@ -1,7 +1,7 @@
 ---
 title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state (EN)'
 excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend to store your Terraform state'
-updated: 2024-10-29
+updated: 2025-05-14
 ---
 
 ## Objective
@@ -17,10 +17,36 @@ In this tutorial you will:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud Instance](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
+- A [Public Cloud Instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - [Terraform CLI](https://www.terraform.io/downloads){.external} installed
 
 ## Before you begin
+
+> [!warning]
+>
+> **AWS CLI and SDK compatibility warning:**
+>
+> Recently, Amazon Web Services (AWS) implemented a change that strengthens checksums when using the S3 API. These new integrity checks are currently being integrated into our platform. The following headers are not supported:
+>
+> - `x-amz-content-sha256 with value STREAMING-UNSIGNED-PAYLOAD-TRAILER`
+> - `x-amz-sdk-checksum-algorithm with value CRC32`
+>
+> Until our Object Storage service is updated, we recommend that you use the maximum supported versions of the CLI, SDK and other AWS tools below:
+>
+> - boto3 1.35.99
+> - legacy aws cli 1.36.40
+> - aws cli 2.22.35
+> - aws-sdk-go 1.72.3
+> - aws-sdk-java 2.29.52
+> - aws-sdk-js-v3 3.726.1
+> - aws-sdk-net 3.7.962.0
+> - aws-sdk-php 3.336.15
+> - aws-sdk-ruby 1.177.0
+>
+> Find out more [here](https://docs.aws.amazon.com/fr_fr/sdkref/latest/guide/feature-dataintegrity.html){.external}.
+>
+> Follow OVHcloud related updates [here](https://public-cloud.status-ovhcloud.com/incidents/491vx956zx6b).
+> 
 
 * You should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following the [detailed installation instructions](https://www.terraform.io/docs/cli/index.html){.external} or with the tool [tfenv](https://github.com/tfutils/tfenv){.external}.
 

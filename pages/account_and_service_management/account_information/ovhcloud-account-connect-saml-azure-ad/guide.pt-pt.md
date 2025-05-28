@@ -1,7 +1,7 @@
 ---
 title: Ativar as ligações Entra ID SSO com a sua conta OVHcloud
 excerpt: "Saiba como associar o seu Entra ID (anteriormente Azure Active Directory) à sua conta OVHcloud utilizando SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Objetivo
@@ -203,17 +203,13 @@ A adição da sua aplicação Entra ID como fornecedor de identidade aprovado é
 
 #### Criar confiança na OVHcloud
 
-Na barra lateral, clique em `Identidade, Segurança e Operações` {.action} e, a seguir, em `Identity & Access Management`{.action}.
+Na barra lateral, clique em `Identidade, Segurança e Operações`{.action} e, a seguir, em `Identidades`{.action}.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-De seguida, clique no separador `Identidades`{.action} para aceder à gestão dos utilizadores locais.
+Clique no separador `SSO`{.action} e no botão `Ligação SSO`{.action}.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-A seguir, clique no botão `Ligação SSO`{.action}.
-
-![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Complete o campo **Nome de Atributo de utilizador** com a aplicação Entra ID **UPN** nome do pedido e no campo **Nome de atributo de grupo** com o valor de nome de pedido **groups** guardado antes.
 
@@ -239,11 +235,11 @@ Para resolver esta situação, verifique o atributo "Group" devolvido pela sua a
 
 ![Entra ID Group etapa 2](images/azure_ad_group_2.png){.thumbnail}
 
-Adicione-o clicando no botão `Declarar um grupo`{.action}.
+Para adicionar um grupo, aceda à secção `Identidades`{.action} e aceda ao separador `Grupos de utilizadores`{.action}. De seguida, clique no botão `Declarar um grupo`{.action} :
 
 ![Grupos de gestão de utilizadores Ovhcloud etapa 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Preencha os campos e clique no botão `Validar`{.action}.
+Introduza o nome do grupo e selecione o privilégio associado e clique no botão `Validar`{.action}.
 
 ![Grupos de gestão de utilizadores Ovhcloud etapa 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 

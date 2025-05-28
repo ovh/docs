@@ -1,7 +1,7 @@
 ---
 title: "Hosting - sprawdzanie statystyk i logów strony www"
 excerpt: "Dowiedz się, jak sprawdzić statystyki i logi Twojej strony WWW dzięki rozwiązaniu hostingowemu"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Wprowadzenie 
@@ -12,8 +12,8 @@ Dostęp do logów i statystyk Twojej strony WWW jest zawarty w wybranej przez Ci
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu](/links/web/hosting){.external}.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie kompatybilnego [hostingu](/links/web/hosting).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -74,6 +74,10 @@ Dostępne są różne rodzaje logów:
 - **Logs out** : zawierają historię różnych zapytań zewnętrznych (połączenia wychodzące TCP) zrealizowanych z poziomu hostingu www do infrastruktur zdalnych.
 - **Logs SSH** : te logi przedstawiają różne połączenia / polecenia zrealizowane za pomocą protokołu SSH.
 - **Logs CRON** : znajdziesz tutaj wyniki wykonywania zaplanowanych zadań [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) na Twoim hostingu.
+
+> [!success]
+>
+> Aby wyświetlić statystyki i/lub logi usługi CDN, zapoznaj się z naszym przewodnikiem: „[Hosting WWW - Sprawdzanie statystyk i logów CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)”.
 
 ### Statystyki dotyczące infrastruktury <a name="infra-stats"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: O que fazer em caso de página "403 forbidden"?
 excerpt: Descubra como repor o seu site online quando apresenta uma página "403 forbidden"
-updated: 2023-06-09
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -115,14 +115,12 @@ Se o seu alojamento foi encerrado há mais de duas semanas, contacte um [fornece
 > Para mais informações sobre os [passos 2 e 3](#step-2) anteriores, consulte o nosso manual sobre [ações a realizar em caso de pirataria do seu website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Etapa 4: reativar o alojamento web <a name="reactivate-web-hosting"></a>
+### Etapa 4: reativar o alojamento com o FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
 > Recomendamos que realize uma auditoria de segurança **antes** da reabertura do alojamento. Qualquer envio de código malicioso a partir do seu alojamento pode implicar a sua responsabilidade jurídica.
 >
-
-#### Reativar o alojamento com o FileZilla
 
 > [!primary]
 >
@@ -155,28 +153,6 @@ Se o comando acima não funcionar, pode tentar este outro comando:
 ```
 SITE CHMOD 705 .
 ```
-
-#### Reativar o alojamento com o Explorador FTP "net2ftp"
-
-Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action} e clique em `Alojamentos`{.action } e em `FTP-SSH`{.action}.
-
-Carregue no botão `Explorador FTP`{.action} e ligue-se ao seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
-
-Clique no botão `Avançado`{.action} e, a seguir, no botão `Go`{.action} junto de "Send arbitrary FTP commands to the FTP server".
-
-![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
-
-Na parte superior da página, insira o seguinte comando:
-
-```
-SITE CHMOD 705 /
-```
-
-Clique no botão que representa um "V" verde.
-
-![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
-
-Uma resposta **"200 Permissions changed on /"** confirma que a operação foi bem realizada. Para o verificar, tente novamente aceder ao seu site.
 
 > [!warning]
 >

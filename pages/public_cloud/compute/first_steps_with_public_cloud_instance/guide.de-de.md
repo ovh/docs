@@ -28,13 +28,13 @@ Loggen Sie sich in [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den
 
 Klicken Sie im linken Menü auf `Instanzen`{.action}. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Diese Seite zeigt alle Ihre Public Cloud Instanzen und einige ihrer Eigenschaften an:
 
 - Die ID der Instanz (erforderlich für bestimmte API-Aufrufe)
 - Standort des Rechenzentrums, d.h. Region der Instanz
-- Der Instanz-Typ
+- Das Modell der Instanz
 - Das Image, d.h. das auf der Instanz installierte Betriebssystem
 - IPv4-Adresse der Instanz
 - Die private Adresse, die derzeit an die Instanz angehängt ist
@@ -147,4 +147,4 @@ Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitu
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

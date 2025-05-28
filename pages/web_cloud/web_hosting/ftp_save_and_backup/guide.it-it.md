@@ -1,7 +1,7 @@
 ---
 title: "Ripristinare i dati dello spazio di storage di un hosting Web"
 excerpt: "Questa guida ti mostra come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud"
-updated: 2023-12-04
+updated: 2025-05-23
 ---
 
 ## Obiettivo
@@ -127,11 +127,7 @@ Per prima cosa, definisci quale software o interfaccia utilizzerai per accedere 
 
 - **Cyberduck**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra [guida all’utilizzo di Cyberduck (MAC)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}, tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
 
-- **FTP Explorer**: questa interfaccia è disponibile nello [Spazio Cliente OVHcloud](/links/manager){.external}: seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `FTP - SSH`{.action} e poi sul pulsante `FTP Explorer`{.action}.
-
 A questo punto, prosegui con lo step successivo.
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### 2. Accedere al backup
 
@@ -153,9 +149,7 @@ Una volta effettuato il login, dovrai aggiungere al tuo nome utente FTP il suffi
 
 Sostituisci l’informazione generica “utenteftp” con il tuo nome utente FTP principale, conservando il suffisso che indica la data del backup che intendi ripristinare.
 
-Il metodo di accesso allo spazio di storage differisce in base all’interfaccia o al software utilizzato. L’immagine qui sotto, ad esempio, ti mostra l’interfaccia di connessione di FTP Explorer.
-
-![backupftp](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
+Il metodo di accesso allo spazio di storage differisce in base all’interfaccia o al software utilizzato.
 
 #### 3. Recuperare i file
 
@@ -165,9 +159,7 @@ Prima di passare allo step successivo, assicurati di aver recuperato tutti i fil
 
 > [!success]
 >
-> Se utilizzi l'interfaccia di **FTP Explorer**, consulta la [pagina della Guida](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} per effettuare correttamente il recupero dei tuoi file. Per accedere a questa pagina, clicca sul pulsante `Help Guide`{.action} nella parte inferiore dell’interfaccia di connessione al **FTP Explorer**.
->
-> Se utilizzi un altro software per accedere allo spazio di storage FTP, ti consigliamo di consultare la documentazione ufficiale del tuo client per effettuare correttamente le operazioni.
+> Se utilizzi un client per accedere allo spazio di storage FTP, per effettuare questa operazione è necessario consultare la documentazione ufficiale del client.
 >
 
 #### 4. Ripristinare i file
@@ -178,9 +170,7 @@ A questo punto non ti resta che ripristinare i file: recuperali esplorando il co
 
 > [!success]
 >
-> Se utilizzi l’interfaccia di **FTP Explorer**, consulta la [pagina della Guida](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} per effettuare correttamente il ripristino dei tuoi file. Per accedere a questa pagina, clicca sul pulsante `Help Guide`{.action} nella parte inferiore dell’interfaccia di connessione al **FTP Explorer**.
->
-> Se utilizzi un altro software per accedere allo spazio di storage FTP, ti consigliamo di consultare la documentazione ufficiale del tuo client per effettuare correttamente le operazioni.
+> Se utilizzi un client per accedere allo spazio di storage FTP, per effettuare questa operazione è necessario consultare la documentazione ufficiale del client.
 >
 
 ## Per saperne di più

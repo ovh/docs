@@ -24,13 +24,13 @@ Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`
 
 Click on `Instances`{.action} the left-hand menu. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 This page lists all your Public Cloud instances and some of their properties:
 
 - The instance ID, needed for certain API calls
 - The location of the data centre i.e. the region of the instance
-- The instance model
+- The instance template
 - The image i.e. the OS installed on the instance
 - The IPv4 address of the instance
 - The private address currently attached to the instance

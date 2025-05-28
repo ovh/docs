@@ -150,17 +150,17 @@ Pour supprimer un objet chiffré avec SSE-C et aws-cli, procédez comme suit :
 $ aws s3 rm s3://<bucket_name>/encrypt_magic
 ```
 
-#### URLs présignées et SSE-C
+#### Presigned URLs et SSE-C
 
-Les URL pré-signées, qui peuvent être utilisées pour des opérations telles que l'envoi d'un nouvel objet, la récupération d'un objet existant ou des métadonnées d'un objet, prennent en charge le SSE-C comme suit :
+Les URLs présignées (*presigned URLs*), qui peuvent être utilisées pour des opérations telles que l'envoi d'un nouvel objet, la récupération d'un objet existant ou des métadonnées d'un objet, prennent en charge le SSE-C comme suit :
 
-- Lorsque vous créez une URL pré-signée, vous devez spécifier l'algorithme en utilisant l'en-tête `x-amz-server-side-encryption-customer-algorithm` dans le calcul de la signature.
+- Lorsque vous créez une *presigned URL*, vous devez spécifier l'algorithme en utilisant l'en-tête `x-amz-server-side-encryption-customer-algorithm` dans le calcul de la signature.
 
-- Lorsque vous utilisez l'URL pré-signée pour envoyer un nouvel objet, récupérer un objet existant ou récupérer uniquement les métadonnées d'un objet, vous devez fournir tous les en-têtes de chiffrement dans votre application client.
+- Lorsque vous utilisez la *presigned URL* pour envoyer un nouvel objet, récupérer un objet existant ou récupérer uniquement les métadonnées d'un objet, vous devez fournir tous les en-têtes de chiffrement dans votre application client.
 
 > [!primary]
 >
-> Vous pouvez donc utiliser l'URL pré-signée pour les objets SSE-C uniquement par programmation, car en plus de l'URL pré-signée, vous devez également inclure des en-têtes HTTP spécifiques aux objets SSE-C.
+> Vous pouvez donc utiliser la *presigned URL* pour les objets SSE-C uniquement par programmation, car en plus de la *presigned URL*, vous devez également inclure des en-têtes HTTP spécifiques aux objets SSE-C.
 
 ### SSE-OMK - Chiffrement côté serveur avec clés gérées par OVHcloud
 

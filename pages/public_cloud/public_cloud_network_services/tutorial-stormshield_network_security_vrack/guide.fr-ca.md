@@ -263,7 +263,7 @@ Dans cet exemple, le pare-feu virtuel agira comme une passerelle sécurisée pou
 
 ![SNS EVA vrack](images/gateway-2.png){.thumbnail}
 
-- [Créez une règle NAT](https://documentation.stormshield.eu/SNS/v4/fr/Content/SNS_for_Cloud_-_VMWare_NSX/NAT-Rules.htm){.external} similaire à celle-ci :
+- [Créez une règle NAT](https://documentation.stormshield.eu/SNS/v4/fr/Content/User_Configuration_Manual_SNS_v4/Filtering_and_NAT/NAT_tab.htm){.external} similaire à celle-ci :
 
 ![SNS EVA vrack](images/gateway-3.png){.thumbnail}
 

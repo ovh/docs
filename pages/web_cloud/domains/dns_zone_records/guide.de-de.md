@@ -108,7 +108,7 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >>
 > **SPF**
 >> **S**ender **P**olicy **F**ramework <br><br>
->> Damit kann potenzieller Identitätsmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHCloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben.
+>> Damit kann potenzieller Identitätsmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHcloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben.
 >>
 >> Weitere Informationen finden Sie in der Anleitung zum "[SPF-Eintrag](/pages/web_cloud/domains/dns_zone_spf)".
 >>

@@ -14,7 +14,7 @@ In diesem Fall können Sie Ihre Instanz mithilfe des Rescue-Modus neu konfigurie
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/compute).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -108,4 +108,4 @@ nova unrescue INSTANCE_ID
 
 [SSH-Schlüsselpaar einer Instanz ersetzen](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

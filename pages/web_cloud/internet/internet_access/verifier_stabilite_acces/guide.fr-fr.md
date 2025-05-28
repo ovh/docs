@@ -72,13 +72,13 @@ Vous retrouvez, dans l'encadré orange ci-dessus, les informations d'un log de r
 - State : L'état de connexion, ici fonctionnel car `OK`. À noter qu'un refus d'authentification donnera `KO` ainsi que, le plus souvent, un message `wrong login or password`;
 - Login : L'identifiant PPPoE de votre accès.
 
-La seconde partie, telle qu'affichée dans l'encadré orange, est l'effet miroir sur les équipements OVHCloud qui finalisent l'authentification.
+La seconde partie, telle qu'affichée dans l'encadré orange, est l'effet miroir sur les équipements OVHcloud qui finalisent l'authentification.
 
 Une reconnexion génère donc deux logs. Sont stockés 50 logs au maximum, donc un total de 25 reconnexions.
 
 ### Vérifier la stabilité de votre accès
 
-Grâce aux logs de l'exemple ci-dessus, nous pouvons déduire que si cet accès répond toujours à une requête de *ping* le 28/05/2021 et que la dernière reconnexion sur les équipements OVHCloud est datée du 22/05/2021, alors la session PPPoE est montée depuis 6 jours environ.
+Grâce aux logs de l'exemple ci-dessus, nous pouvons déduire que si cet accès répond toujours à une requête de *ping* le 28/05/2021 et que la dernière reconnexion sur les équipements OVHcloud est datée du 22/05/2021, alors la session PPPoE est montée depuis 6 jours environ.
 
 Il n'y a donc pas eu de coupure sur l'accès concerné pendant cet intervalle. En effet, la moindre reconnexion suite, par exemple, à un redémarrage du modem, aurait généré des logs radius de reconnexion sur nos équipements.
 

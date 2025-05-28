@@ -37,7 +37,7 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ### Accessing the IAM menu
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Policies`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then on `Policies`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Click [Create a policy](#create-policy) or [Create users](#create-users) directl
 >
 > Customers are not allowed to edit or delete these policies.
 
-If you have already created policies or users, the menu displays on the first tab `My policies` a list of all the current policies created on your OVHcloud account. The tab `OVHcloud policies` display the non-modifiable policies automaticaly created by OVHcloud
+If you have already created policies or users, you will find them in the first tab `My policies`{.action}. The `OVHcloud Policies`{.action} tab groups non-editable policies created automatically by OVHcloud.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -156,7 +156,7 @@ Access to the support will still be reserved to the owner of the resource.
 
 ### Managing identities
 
-To manage the identities available for policies, go to the `Identity, Security and Operations`{.action} menu, then to the `Identities`{.action} section.
+To manage the identities available for policies, go to the `Identity, Security & Operations`{.action} menu, then to the `Identities`{.action} section.
 
 Details about user management are available in the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
@@ -166,7 +166,7 @@ Policies can target resource groups instead of resources. These resource groups 
 
 #### Creating a resource group
 
-To create a resource group, access the dedicated tab of the `Policies`{.action} section:
+To create a resource group, go to the `Policies`{.action} section, then click the `Resource group`{.action} tab:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 

@@ -120,7 +120,7 @@ Estão disponíveis *flavors* pré-construídos para si, selecione o *flavor* à
 
 Para obter mais informações, consulte [este manual](/pages/public_cloud/compute/setup_security_group).
 
-**Key Pairs (Par de chaves)**
+**Key Pair (Par de chaves)**
 
 > [!warning]
 > 
@@ -152,13 +152,13 @@ Para mais informações sobre a criação de uma chave SSH, consulte [este manua
 >>
 > **Import Key Pair (Importar um par de chaves)**
 >>
->> Se preferir importar uma chave SSH criada anteriormente, clique no botão "Importação de Chave Pair"{.action}.
+>> Se preferir importar uma chave SSH criada anteriormente, clique no botão `Import Key Pair`{.action}.
 >>
 >> **Key Pair Name:** Introduza um nome para a sua chave.<br>
 >> **Key Type (Tipo de chave):** Clique na `seta suspensa`{.action} e selecione `SSH Key`{.action}.<br>
 >> **Load Public Key from a file (Carregar chave pública de um ficheiro):** Clique em `Browse`{.action} para especificar a localização da chave pública no seu computador.<br>
 >> **Chave pública:** Copie e cole a sua chave pública aqui.<br>
->> Clique em ‘Importação Chave Pair`{.action} para importar a chave.<br><br>
+>> Clique em `Import Key Pair`{.action} para importar a chave.<br><br>
 >>![import key pair](images/import-ssh-key.png){.thumbnail}<br>
 >>
 >> Quando a operação for concluída, a chave importada será automaticamente selecionada. Clique em `Launch Instance`{.action} para iniciar a criação da sua instância.<br><br>
@@ -179,4 +179,4 @@ Atenção: estas opções não são obrigatórias para a criação de uma instâ
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

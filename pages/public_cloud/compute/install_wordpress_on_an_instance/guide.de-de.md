@@ -15,7 +15,7 @@ Dieses Tutorial enthält die Grundschritte für die manuelle Installation von Wo
 > [!warning]
 > In diesem Tutorial erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchzuführenden Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
-> Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Ihre Fragen in der [OVHcloud Community](/links/community). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 ## Voraussetzungen
@@ -254,7 +254,6 @@ Beziehen Sie nun das Zertifikat für Ihren Domainnamen sowie dessen Subdomain "w
 ```bash
 debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
-```
 
 Geben Sie eine gültige E-Mail-Adresse ein und akzeptieren Sie die Nutzungsbedingungen.
 
@@ -262,4 +261,4 @@ Certbot verlängert die Zertifikate automatisch; es sind keine weitereren Schrit
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -1,7 +1,7 @@
 ---
 title: "Logowanie do przestrzeni dyskowej FTP hostingu"
 excerpt: "Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud"
-updated: 2024-05-20
+updated: 2025-05-23
 ---
 
 ## Wprowadzenie 
@@ -79,26 +79,7 @@ W tym momencie dysponujesz wszystkimi elementami pozwalającymi na zalogowanie s
 
 Połączenie z przestrzenią dyskową FTP można wykonać na kilka sposobów. Przejdź do opisu operacji, której chcesz użyć.
 
-- [1. Logowanie przez "FTP Explorer"](#ftpexplorer): pozwala na dostęp do Twojej przestrzeni dyskowej FTP z poziomu przeglądarki internetowej.
-
-- [2. Połączenie przez program FTP](#ftpsoftware): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przy użyciu programu (takiego jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) lub [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
-Najpierw zainstaluj wybrany program/klient FTP na komputerze.
-
-- [3. Połączenie przez dostęp SSH](#ssh): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przez SSH. Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](/links/web/hosting){.external} **Pro** lub **Performance**.
-
-#### 1. Logowanie przez FTP Explorer <a name="ftpexplorer"></a>
-
-Aby zalogować się do Twojej przestrzeni dyskowej FTP za pomocą "FTP Explorer", zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}.
-
-W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}. Wybierz odpowiedni hosting, przejdź do zakładki `FTP - SSH`{.action} i kliknij na przycisk `FTP Explorer`{.action}.
-
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
-
-Na nowej stronie, która się pojawi, wprowadź Twój identyfikator FTP oraz hasło, a następnie zaloguj się. Jeśli wprowadzone dane są poprawne, Twoja przestrzeń dyskowa się wyświetla.
-
-![ftpconnect](/pages/assets/screens/other/web-tools/net2ftp/login-interface.png){.thumbnail}
-
-#### 2. Logowanie przez program FTP <a name="ftpsoftware"></a>
+#### 1. Logowanie przez program FTP <a name="ftpsoftware"></a>
 
 Po zainstalowaniu na komputerze odpowiedniego oprogramowania FTP (takiego jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) lub [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), uruchom je. 
 
@@ -120,7 +101,9 @@ Poniżej znajduje się przypomnienie informacji, które należy wprowadzić:
 
 Jeśli wprowadzone dane są poprawne, program, którego używasz wyświetla zawartość Twojej przestrzeni dyskowej FTP. Może pojawić się komunikat (zwany również "statusem") w celu potwierdzenia, że zawartość została wyświetlona poprawnie za pomocą programu FTP.
 
-#### 3. Logowanie przez SSH <a name="ssh"></a>
+#### 2. Logowanie przez SSH <a name="ssh"></a>
+
+Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](/links/web/hosting){.external} **Pro** lub **Performance**.
 
 Aby zalogować się przez SSH, użyj terminala, aby połączyć się bezpośrednio z przestrzenią dyskową FTP za pomocą wierszy poleceń. 
 
@@ -146,7 +129,7 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 W powyższej komendzie zastąp:
 
-- wartość `sshlogin` przez główny login FTP opisany w [etap 2.2](#ftpsoftware) (lub przez login FTP z dostępem SSH);
+- wartość `sshlogin` przez główny login FTP opisany w [etap 2.1](#ftpsoftware) (lub przez login FTP z dostępem SSH);
 - `XXX` przez cyfry odpowiadające numerowi klastra, w którym znajduje się Twój hosting.
 
 Po wysłaniu polecenia zostaniesz poproszony o wpisanie hasła użytkownika SSH.

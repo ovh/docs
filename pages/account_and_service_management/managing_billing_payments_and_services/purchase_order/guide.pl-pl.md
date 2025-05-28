@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Wprowadzenie
 
-Niniejszy przewodnik wyjaśnia, jak interpretować numer zamówienia lub polecenie Purchase (PO) zastosowane do fakturowania OVHCloud.
+Niniejszy przewodnik wyjaśnia, jak interpretować numer zamówienia lub polecenie Purchase (PO) zastosowane do fakturowania OVHcloud.
 
 ## W praktyce
 

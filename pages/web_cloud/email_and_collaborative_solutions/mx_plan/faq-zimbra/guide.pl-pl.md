@@ -155,7 +155,7 @@ Można jednak nadal korzystać z interfejsu OWA [poprzez migrację kont e-mail d
 
 /// details | Czy mogę zrezygnować z usługi MX Plan?
 
-Aby anulować ofertę w sekcji „Moje usługi” w przestrzeni OVHCloud, zapoznaj się z sekcją Plan MX w naszym przewodniku „[Jak anulować usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan)”.
+Aby anulować ofertę w sekcji „Moje usługi” w przestrzeni OVHcloud, zapoznaj się z sekcją Plan MX w naszym przewodniku „[Jak anulować usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan)”.
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: Welche IP-Adressen nutzt das OVHcloud Monitoring?
 excerpt: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
-updated: 2025-01-14
+updated: 2025-05-21
 ---
 
 ## Ziel
@@ -35,6 +35,8 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
+|netmon-lim-probe|51.38.117.56|icmp|
+|netmon-sbg-probe|51.38.25.100|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.xxx.aaa ist die IP des Servers)|icmp|
@@ -69,6 +71,6 @@ Klicken Sie auf `Bestätigen`{.action}, um Ihre Monitoring-Konfiguration zu aktu
 
 ## Weiterführende Informationen
 
-[Konfiguration der Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+[Konfiguration der Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 Treten Sie unserer [User Community](/links/community) bei.

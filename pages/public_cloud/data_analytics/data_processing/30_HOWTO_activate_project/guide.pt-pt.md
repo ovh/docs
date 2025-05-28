@@ -1,8 +1,17 @@
 ---
 title: How to activate the Data Processing service for your cloud project
 excerpt: Find out how to activate the Data Processing service for your cloud project and what are its implications 
-updated: 2020-03-06
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 

@@ -12,8 +12,8 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 
 ## Prerequisiti
 
-- Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Aver creato un’istanza [Public Cloud](/links/public-cloud/compute) nel tuo account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -106,4 +106,4 @@ nova unrescue INSTANCE_ID
 
 [Come sostituire una coppia di chiavi SSH su un’istanza](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

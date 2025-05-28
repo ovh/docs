@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 As instâncias Public Cloud são fáceis de implementar e gerir. No entanto, enquanto membro do ecossistema Public Cloud da OVHcloud, as instâncias oferecem numerosas opções de configuração e podem ser adaptadas a diferentes casos de utilização. As instruções seguintes incluem todas as etapas necessárias (e também as etapas opcionais) para criar uma instância na Área de Cliente OVHcloud e aceder à distância.  
@@ -119,11 +115,11 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cl
 
 ![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Abra o `Chaves SSH`{.action} no menu à esquerda em **Parâmetros**. Clique no botão `Adicionar uma chave SSH`{.action}.
+Abra o `Chaves SSH`{.action} no menu à esquerda em **Parâmetros**. Clique no botão `Adicionar chave SSH`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
-Na nova janela, introduza um nome para a chave. Preencha o campo `Chave` com a sua cadeia de chave pública, por exemplo, a criada na [etapa 1](#create-ssh). Confirme clicando em `Add`{.action} Adicionar {.action}.
+Na nova janela, introduza um nome para a chave. Preencha o campo `Chave` com a sua cadeia de chave pública, por exemplo, a criada na [etapa 1](#create-ssh). Confirme clicando em `Adicionar`{.action}.
 
 ![add key](images/24-addkey.png){.thumbnail}
 

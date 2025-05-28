@@ -1,7 +1,7 @@
 ---
 title: "Usuwanie powtarzających się błędów podczas korzystania z programu FTP"
 excerpt: "Odnajdziesz tutaj najczęstsze nieprawidłowości związane z Twoim oprogramowaniem FTP"
-updated: 2022-01-05
+updated: 2025-05-23
 ---
 
 ## Wprowadzenie 
@@ -81,7 +81,7 @@ Link jest domyślnie zainstalowany na hostingu OVHcloud. Wyświetla się go:
 
 ![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
-Jeśli nie korzystałeś z funkcji "[Moduł za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" do tworzenia Twojej strony WWW, powinieneś użyć oprogramowania [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-logowanie-przez-ftp-explorer) dostępnego w [Panelu klienta OVHcloud](/links/manager), aby ręcznie usunąć stronę "Strona w budowie".
+Jeśli do utworzenia witryny nie została użyta funkcja "[Moduł za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules)", musisz [zalogować się do przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection), aby ręcznie usunąć stronę "Strona w budowie".
 
 ## Sprawdź również <a name="go-further"></a>
 

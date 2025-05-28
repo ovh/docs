@@ -4,13 +4,9 @@ excerpt: "Cómo transferir una copia de seguridad de un volumen de una región d
 updated: 2024-01-11
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
-
 ## Objetivo
 
-Es posible que necesite mover volúmenes adicionales de una región de OpenStack a otra, bien porque haya una nueva región disponible, bien porque quiera migrar de [OVHcloud Labs](https://labs.ovh.com/){.external} al [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external}.
+Es posible que necesite mover volúmenes adicionales de una región de OpenStack a otra, bien porque haya una nueva región disponible, bien porque quiera migrar de [OVHcloud Labs](https://labs.ovh.com/) al [Public Cloud](/links/public-cloud/compute).
 
 **Descubra cómo transferir una copia de seguridad de un volumen de una región de OpenStack a otra.**
 
@@ -195,4 +191,6 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+[Descargar y transferir la copia de seguridad de una instancia de una región de OpenStack a otra](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

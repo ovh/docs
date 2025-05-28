@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Consultar las estadísticas y logs de un sitio web"
 excerpt: "Descubra cómo consultar las estadísticas y los logs de un sitio web en un plan de hosting"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -12,8 +12,8 @@ El acceso a los logs y a las estadísticas de su sitio web está incluido en su 
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](/links/web/hosting){.external} compatible.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un [plan de hosting](/links/web/hosting) compatible.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -74,6 +74,10 @@ Los diferentes tipos de logs están a su disposición:
 - **Logs out**: contienen el historial de las diferentes peticiones externas (conexiones salientes TCP) realizadas desde su alojamiento web hacia infraestructuras remotas.
 - **Logs SSH** : Estos logs indican las diferentes conexiones/comandos realizados con el protocolo SSH.
 - **Logs CRON**: consulte aquí los resultados de la ejecución de sus tareas planificadas [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) en su alojamiento web.
+
+> [!success]
+>
+> Para consultar las estadísticas y/o los logs de la CDN, consulte nuestra guía dedicada: "[Web hosting - Consultar estadísticas y logs CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
 ### Estadísticas de la infraestructura <a name="infra-stats"></a>
 

@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objetivo
 
-Este guia explica-lhe a noção de Número de encomenda ou Purchase Order (PO) aplicado à faturação OVHCloud.
+Este guia explica-lhe a noção de Número de encomenda ou Purchase Order (PO) aplicado à faturação OVHcloud.
 
 ## Instruções
 

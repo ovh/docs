@@ -28,7 +28,7 @@ Next, click on the `Compute`{.action} menu on the left side and select `Instance
 
 In the pop-up window, enter the required information:
 
-Snapshot Name: Set a name for the snapshot and click on `Create Snapshot`{.action}.
+* Snapshot Name: Set a name for the snapshot and click on `Create Snapshot`{.action}.
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
@@ -58,7 +58,7 @@ In the pop-up window, a number of options need to be selected to complete the re
 >> Select the flavor you want. Make sure you select a flavor whose resources are equal to or greater than the size of the image (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Network**
+> **Networks**
 >>
 >> Select a public network (Ext-Net) to attach to the instance.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>

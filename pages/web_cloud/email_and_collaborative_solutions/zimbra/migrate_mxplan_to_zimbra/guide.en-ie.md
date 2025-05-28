@@ -1,7 +1,7 @@
 ---
 title: 'How to migrate an MX Plan email address to an OVHcloud Zimbra account'
 excerpt: 'Find out how to migrate an MX Plan email address to an OVHcloud Zimbra account'
-updated: 2025-03-05
+updated: 2025-05-22
 ---
 
 ## Objective
@@ -61,20 +61,26 @@ On the <https://omm.ovh.net/> page, in the `Migration`{.action} tab, click `New 
 
 #### Step 2: Enter the migration information
 
-|Information|Description|
-|---|---|
-|Server Type|Select the server type for your accounts. If one of them is an OVHcloud address (**Hosted by OVHcloud (Autodetect)**), this allows you to fill in the information automatically, with the exception of the password. Select `Zimbra` for the destination server type.|
-|Server URL|Enter the address of the server where your accounts are hosted. This field can be filled in automatically when you choose the server type.|
-|Source login|Enter the full email address (`contact@mydomain.ovh`).|
-|Destination login|Enter the full email address (`contact2@mydomain.ovh`).|
-|Administrator account with delegation|This field appears only with certain server types.|
-|Password|Enter the password for the email account concerned.|
+**Account**
 
-- **Options**: Select the elements you want to migrate. Some content may be unavailable, depending on the server type you have chosen.
+- **Source Account**:
+    - **Server type**: Selecting `Hosted by OVHcloud (Autodetect)` allows you to automatically fill in the information, with the exception of the password.
+    - **Server URL**: This field is filled in automatically.
+    - **Login**: Enter the full email address of the account to be migrated (e.g.: `contact@mydomain.ovh`).
+    - **Password**: Enter the password for the email account concerned.
+- **Destination Account**:
+    - **Server type**: Select `Zimbra` for the destination server type.
+    - **Server URL**: Enter the Zimbra server address <https://zimbra1.mail.ovh.net>.
+    - **Login**: Enter the full email address of the target Zimbra account (e.g.: `contact2@mydomain.ovh`).
+    - **Password**: Enter the password for the target Zimbra account.
 
-- **Information**: Enter an email address to be notified about the migration progress.
+**Options**
 
-- Check the box at the bottom of the page to accept the OMM terms and conditions.
+Select the items you want to migrate. Some content may be unavailable, depending on the server type you have chosen.
+
+**Information**
+
+Enter an email address to be notified about the migration progress. Select the checkbox at the bottom of the page to accept the OMM terms and conditions.
 
 ![omm](images/omm-migration-create02.png){.thumbnail}
 
@@ -94,7 +100,7 @@ There are two ways to track a single migration:
 On the page that opens, you can track the progress of your migration. You will see a message indicating whether the process will begin, is in progress, or has been completed. Depending on this status, there are several possible interactions:
 
 - `Stop the process`{.action}: Allows you to cancel the migration. Items that have already been migrated will remain in the destination account.
--`Delete migrated elements`{.action}: Enables you to delete elements that have already been migrated to the destination account. You can clear items from a specific synchronization point.
+- `Delete migrated elements`{.action}: Enables you to delete elements that have already been migrated to the destination account. You can clear items from a specific synchronization point.
 - `Synchronize`{.action}: Used to retrieve new elements that were not migrated during a previous synchronization between the source account and the destination account. We consider this action as a migration of the missing elements on the destination account from the source account.
 
 To migrate by file or multiple files, please read the “Migrate by file” and “Migrate and track multiple migrations (project mode)” sections of our guide on [Migrating email accounts via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).

@@ -1,7 +1,7 @@
 ---
 title: "Restaurar o espaço de armazenamento do alojamento web"
 excerpt: "Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web"
-updated: 2023-12-04
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -127,11 +127,7 @@ Em primeiro lugar, deve decidir qual o programa ou interface que vai utilizar pa
 
 - **Cyberduck**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do Cyberduck (MAC)”](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Este manual não substitui a documentação oficial do editor.
 
-- **FTP Explorer**: deverá aceder previamente através da [Área de Cliente OVHcloud](/links/manager){.external}. Para aceder, basta iniciar sessão, clicar em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecionar o alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
-
 Assim que estiver pronto para continuar a operação, avance para o passo seguinte.
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### 2 - Ligar-se à cópia de segurança
 
@@ -153,9 +149,7 @@ Deverá adicionar um sufixo ao seu nome de utilizador (ou “login”) FTP princ
 
 Substitua a informação genérica “utilizadorftp” pelo seu nome de utilizador FTP principal. Mantenha o sufixo que define a cópia de segurança à qual pretende aceder.
 
-A forma de se ligar ao espaço de armazenamento varia em função da interface ou do programa que utiliza. Abaixo, poderá ver uma imagem da janela de ligação da interface FTP Explorer.
-
-![backupftp](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
+A forma de se ligar ao espaço de armazenamento varia em função da interface ou do programa que utiliza.
 
 #### 3 - Recuperar os ficheiros
 
@@ -165,9 +159,7 @@ Antes de avançar para o passo seguinte, certifique-se de que recuperou todos os
 
 > [!success]
 >
-> Se utilizar a interface do **FTP Explorer**, não hesite em consultar a [página de ajuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para realizar corretamente a recuperação dos seus ficheiros. Esta página também está acessível através do botão `Help Guide`{.action} situado na parte inferior da interface de ligação ao **FTP Explorer**.
->
-> Se utilizar outro software para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
+> Se utilizar um programma para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
 >
 
 #### 4 - Restaurar os ficheiros
@@ -178,9 +170,7 @@ Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pel
 
 > [!success]
 >
-> Se utilizar a interface do **FTP Explorer**, não hesite em consultar a [página de ajuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para realizar corretamente o restauro dos seus ficheiros. Esta página também está acessível através do botão `Help Guide`{.action} situado na parte inferior da interface de ligação ao **FTP Explorer**.
->
-> Se utilizar outro software para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
+> Se utilizar um programma para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
 >
 
 ## Quer saber mais?

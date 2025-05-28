@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Environnement, version PHP, « .ovhconfig »"
 excerpt: "Découvrez comment modifier l'environnement d'exécution, la version PHP, le pare-feu applicatif, le moteur, le mode et le « .ovhconfig » d'un hébergement web"
-updated: 2024-07-16
+updated: 2025-05-23
 ---
 
 ## Objectif
@@ -236,8 +236,6 @@ Concernant le mot de passe de l'utilisateur FTP, reportez-vous aux instructions 
 #### 3.2 - Récupérer ou créer le fichier « .ovhconfig »
 
 Une fois connecté à votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection), vous visualisez l'ensemble des fichiers actuellement hébergés sur ce dernier. Restez positionné sur la racine de votre hébergement (que l'on peut symboliser par un « / »). Vous devriez y trouver le fichier « .ovhconfig ».
-
-![ovhconfig](/pages/assets/screens/other/web-tools/net2ftp/ovhconfig-file.png){.thumbnail}
 
 Dès lors, deux possibilités :
 

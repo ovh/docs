@@ -58,7 +58,7 @@ Oto główne zalety automatycznego odnawiania:
 
 #### Odnowienie ręczne
 
-Jeśli nie chcesz automatycznego odnawiania i tym samym automatycznego pobrania środków, możesz zmienić typ odnowienia na **manuel**.
+Jeśli nie chcesz automatycznego odnawiania i tym samym automatycznego pobrania środków, możesz zmienić typ odnowienia na **manual**.
 
 Tryb odnowienia może być przydatny:
 

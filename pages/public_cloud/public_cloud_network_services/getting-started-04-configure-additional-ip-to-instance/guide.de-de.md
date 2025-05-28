@@ -53,7 +53,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 |NETWORK_INTERFACE|Name des Netzwerkinterfaces|*eth*, *ens3*|
 |ID|ID der Additional IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
 
-> [!PRIMARY]
+> [!primary]
 >
 > Für die Konfiguration einer Additional IP auf einer Public Cloud Instanz ist kein Gateway oder Subnetzmaske erforderlich.
 >

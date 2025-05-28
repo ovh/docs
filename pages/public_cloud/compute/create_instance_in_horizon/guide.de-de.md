@@ -121,7 +121,7 @@ Es sind Vorlagen in Form von *flavors* verfügbar. Wählen Sie im Tab `Available
 
 Weitere Informationen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/setup_security_group).
 
-**Key Pairs**
+**Key Pair**
 
 > [!warning] 
 >
@@ -181,4 +181,4 @@ Achtung, diese Optionen sind für die Erstellung einer Instanz nicht zwingend er
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

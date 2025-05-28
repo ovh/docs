@@ -121,7 +121,7 @@ A questo punto completa i campi con le informazioni richieste aiutandoti, se nec
 
 Per maggiori informazioni, consulta [questa guida](/pages/public_cloud/compute/setup_security_group).
 
-**Key Pairs (Coppia di chiavi)**
+**Key Pair (Coppia di chiavi)**
 
 > [!warning] 
 >
@@ -178,4 +178,4 @@ Attenzione: queste opzioni non sono obbligatorie per la creazione di un’istanz
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

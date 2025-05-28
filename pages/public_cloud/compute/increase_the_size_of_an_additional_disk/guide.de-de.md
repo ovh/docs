@@ -26,7 +26,7 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) in Ihrem Public Cloud Projekt.
+- Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/compute) in Ihrem Public Cloud Projekt.
 - Sie haben eine [zusätzliche Disk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem Projekt erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
@@ -44,7 +44,7 @@ In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzlich
 
 Um sicherzustellen, dass Sie die Größe Ihrer Disk rechtzeitig ändern, ist es wichtig, die Datenträgernutzung regelmäßig zu prüfen. Im Folgenden finden Sie entsprechende Kommandozeilentools für Windows und Linux, mit denen Sie den Speicherplatz anzeigen und im Voraus planen können, wann ein Upgrade erforderlich ist.
 
-> [!tab]
+> [!tabs]
 > Windows
 >> /// details | **Verwenden der Eingabeaufforderung**
 >>
@@ -234,6 +234,7 @@ Das skalierte Volume beinhaltet nun den zusätzlichen Speicherplatz.
 ## Weiterführende Informationen
 
 [Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Typ des Block Storage-Volumes ändern](/pages/public_cloud/compute/switch_volume_type)
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -1,5 +1,5 @@
 ---
-title: "Automating the deployment of your website on your VPS via GitLab CI/CD"
+title: "Automating the deployment of your website on your VPS via GitLab CI/CD (EN)"
 excerpt: "Find out how to deploy and automate your website’s code via GitLab CI/CD on an OVHcloud VPS"
 updated: 2025-01-28
 ---

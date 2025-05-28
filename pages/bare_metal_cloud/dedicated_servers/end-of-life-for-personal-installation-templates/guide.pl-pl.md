@@ -42,7 +42,7 @@ Personal templates decommissioning will be done in 2 steps:
 - Customers will no longer be able to access their personal templates.
 - All data related to personal templates will be deleted.
 
-Please note that customers will still have the email from the 17th of June 2025 with technical documentation based on their personal templates data to help them migrate to the new API call.
+Please note that customers will still have the email from the 19th of May 2025 with technical documentation based on their personal templates data to help them migrate to the new API call.
 
 ## Instructions <a name="instructions"></a>
 

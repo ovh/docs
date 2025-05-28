@@ -28,7 +28,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a `Public C
 
 En el menú de la izquierda, haga clic en `Instancias`{.action}. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Esta página lista todas sus instancias de Public Cloud y algunas de sus propiedades:
 
@@ -147,4 +147,4 @@ Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pag
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

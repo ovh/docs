@@ -12,7 +12,7 @@ Eseguire un test della velocità dei tuoi dischi è necessario per confrontare l
 
 ## Prerequisiti
 
-- Disporre di una [istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}
+- Disporre di una [istanza Public Cloud](/links/public-cloud/compute)
 - Avere un accesso amministrativo (sudo) alla tua istanza tramite SSH (Linux) o RDP (Windows).
 
 ## Procedura
@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > È necessario adattare l'argomento --numjobs al numero di CPU della tua istanza.
 >
-> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 >
 
 ### Analizzare i dati
@@ -145,7 +145,7 @@ Possiamo vedere che le prestazioni del disco supplementare sono di circa 3052 IO
 
 Il comando necessario per verificare la velocità del disco è `fio`. Non è presente di default sul tuo server.
 
-Per installare `fio`, connettiti alla tua istanza tramite RDP e scarica questo binario: [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
+Per installare `fio`, connettiti alla tua istanza tramite RDP e scarica questo binario: [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
 
 ### Testare la velocità del disco
 
@@ -159,7 +159,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > È necessario adattare l'argomento --numjobs al numero di CPU della tua istanza.
 >
-> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 >
 
 ### Analizza i dati
@@ -218,4 +218,4 @@ A questo punto accedi al disco aggiuntivo tramite powershell ed esegui lo stesso
 
 [Crea e configura un disco aggiuntivo sulla tua istanza](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
   
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

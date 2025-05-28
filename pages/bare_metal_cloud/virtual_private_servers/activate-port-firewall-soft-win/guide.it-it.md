@@ -23,7 +23,7 @@ Per proteggere in modo ottimale il tuo sistema, il server Windows Server dispone
 
 ## Prerequisiti
 
-- Un server [VPS](https://www.ovhcloud.com/it/vps/) Windows sul tuo account OVHcloud
+- Un server [VPS](/links/bare-metal/vps) Windows sul tuo account OVHcloud
 - Avere accesso amministratore al server tramite un desktop remoto Windows 
 
 ## Procedura
@@ -114,4 +114,4 @@ Successivamente, è possibile apportare modifiche al livello di sicurezza della 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

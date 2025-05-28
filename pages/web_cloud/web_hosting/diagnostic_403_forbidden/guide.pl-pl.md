@@ -1,7 +1,7 @@
 ---
 title: Co zrobić w przypadku strony "403 forbidden"?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę "403 forbidden"
-updated: 2023-06-09
+updated: 2025-05-23
 ---
 
 ## Wprowadzenie 
@@ -115,14 +115,12 @@ Jeśli Twój hosting został zamknięty ponad dwa tygodnie temu, skontaktuj się
 > Jeśli potrzebujesz więcej informacji na temat [etapów 2 i 3](#step-2), zapoznaj się z naszym tutorial [działań, które należy wykonać w przypadku włamania na Twojej stronie internetowej](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 > 
 
-### Etap 4: reaktywacja hostingu <a name="reactivate-web-hosting"></a>
+### Etap 4: Reaktywuj Twój hosting za pomocą FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
 > Zalecamy przeprowadzenie audytu bezpieczeństwa **przed** ponownym otwarciem hostingu. Każda złośliwa operacja wykonywana z poziomu Twojego hostingu może wiązać się z Twoją odpowiedzialnością prawną.
 >
-
-#### Reaktywuj Twój hosting za pomocą FileZilla
 
 > [!primary]
 >
@@ -155,28 +153,6 @@ Jeśli powyższe polecenie nie działa, możesz spróbować tego innego poleceni
 ```
 STRONA CHMOD 705.
 ```
-
-#### Włącz ponownie hosting FTP Explorer "net2ftp"
-
-W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.action}, następnie `Hosting`{.action} i kliknij zakładkę `FTP-SSH`{.action} odpowiedniego hostingu.
-
-Naciśnij przycisk `FTP Explorer`{.action} i zaloguj się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection).
-
-Kliknij przycisk `Zaawansowane`{.action}, a następnie przycisk `Go`{.action} obok przycisku "Send arbitrary FTP commands to the FTP server".
-
-![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
-
-W górnej części strony wprowadź poniższe polecenie:
-
-```
-SITE CHMOD 705 /
-```
-
-Następnie kliknij zielony przycisk "V".
-
-![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
-
-Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została prawidłowo wykonana. Aby to sprawdzić, spróbuj ponownie wejść na Twoją stronę.
 
 > [!warning]
 >

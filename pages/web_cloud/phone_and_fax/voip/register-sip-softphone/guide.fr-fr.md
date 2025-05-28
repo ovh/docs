@@ -1,31 +1,36 @@
 ---
-title: 'Tutoriel - Utiliser une ligne SIP OVHcloud sur un softphone'
-excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur un softphone tel que Linphone ou Zoiper'
-updated: 2025-04-28
+title: 'Ligne SIP - Configuration sur un softphone / téléphone personnel'
+excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur un softphone tel que Linphone ou Zoiper ou sur votre téléphone personnel'
+updated: 2025-05-16
 ---
+
+> [!success]
+> Vous recherchez une solution de téléphonie fixe professionnelle flexible, que vous pouvez utiliser aussi bien en déplacement et au bureau ?<br>
+> Découvrez [Softcall](https://www.ovhcloud.com/fr/phone/softphone/) », notre service softphone !<br>
+> Retrouvez plus d'informations sur notre guide « [Installer et configurer Softcall](/pages/web_cloud/phone_and_fax/voip/installer_configurer_softcall) ».
 
 ## Objectif
 
-OVHcloud propose des lignes SIP sans matériel pouvant être enregistrées sur des téléphones compatibles SIP ou des *softphones* (logiciels de téléphonie).
+OVHcloud propose des lignes SIP sans matériel pouvant être enregistrées sur des téléphones compatibles SIP ou des *softphones*<sup>1</sup> (logiciels de téléphonie). Vous pouvez également les enregistrer sur votre propre téléphone compatible SIP.
 
-Le softphone est une application ou un logiciel qui vous permet d'enregistrer votre ligne SIP et de l'utiliser depuis un ordinateur, un smartphone ou une tablette.
+<sup>1</sup> : _Le softphone est une application ou un logiciel qui vous permet d'enregistrer votre ligne SIP et de l'utiliser depuis un ordinateur, un smartphone ou une tablette._
 
-**Découvrez comment enregistrer et utiliser votre ligne SIP OVHcloud sur un softphone.**
+**Découvrez comment enregistrer et utiliser votre ligne SIP OVHcloud sur un softphone ou sur votre téléphone personnel.**
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone OVHcloud associé.
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 
 > [!primary]
-> Une ligne SIP **fournie avec un téléphone OVHcloud** ne peut pas être enregistrée sur un softphone. Si c'est le cas de votre ligne et que vous souhaitez utiliser un softphone, nous vous invitons à [commander une ligne SIP supplémentaire](/links/telecom/telephonie-voip), fournie sans téléphone OVHcloud.
+> Une ligne SIP **fournie avec un téléphone OVHcloud** ne peut pas être enregistrée sur un softphone ou sur votre propre téléphone personnel. Si c'est le cas de votre ligne et que vous souhaitez utiliser un softphone ou votre propre téléphone, nous vous invitons à [commander une ligne SIP supplémentaire](/links/telecom/telephonie-voip), fournie sans téléphone OVHcloud.
 >
 
 ## En pratique
@@ -70,9 +75,9 @@ Si vous ne connaissez pas votre mot de passe SIP ou que vous ne l'avez jamais mo
 > [!success]
 > Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://keepass.info/){.external} afin de sauvegarder en toute sécurité votre mot de passe SIP.
 
-### Étape 2 : enregistrer la ligne SIP sur le softphone
+### Étape 2 : enregistrer la ligne SIP
 
-Une fois vos identifiants connus, vous pouvez procéder à l'enregistrement de votre ligne sur le softphone de votre choix.
+Une fois vos identifiants connus, vous pouvez procéder à l'enregistrement de votre ligne sur votre propre téléphone ou sur le softphone de votre choix.
 
 De nombreuses logiciels de ce type sont disponibles. Nous vous proposons de suivre des méthodes pour deux d'entre eux, **Linphone** et **Zoiper**.<br>
 Cliquez sur les liens ci-dessous pour lire les tutoriels :

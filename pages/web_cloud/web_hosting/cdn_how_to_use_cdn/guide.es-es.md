@@ -1,7 +1,7 @@
 ---
 title: "Acelerar un sitio web utilizando la CDN"
 excerpt: "Descubra cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -88,7 +88,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **Dev-mode** : permite desactivar la caché durante el desarrollo del sitio web.
 
-- **Brotli** :  tipo de compresión que permite optimizar el tamaño de los archivos en caché.
+- **Brotli** : tipo de compresión que permite optimizar el tamaño de los archivos en caché.
 
 - **Regla de caché**: Cree hasta 5 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. ([seguir el siguiente paso](#cacherules)). 
 
@@ -193,7 +193,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 	?>
 	```
 
-- **Móvil redirect**:  Redirija automáticamente a los visitantes "Móvil" hacia un sitio web optimizado. A elegir: redirigir sistemáticamente hacia la raíz de otro sitio web, o conservar la URL sustituyendo únicamente el dominio (o el subdominio).
+- **Móvil redirect**: Redirija automáticamente a los visitantes "Móvil" hacia un sitio web optimizado. A elegir: redirigir sistemáticamente hacia la raíz de otro sitio web, o conservar la URL sustituyendo únicamente el dominio (o el subdominio).
 
 - **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada. 
 
@@ -230,13 +230,13 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 
 * **Nombre de regla**: Asigne un nombre a la regla.
 * **Tipo de recurso**: Elija entre las siguientes opciones:
-    * **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: css
-    * **Carpeta**:  Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
-    * **Expresión regular personalizada**: y se aplica a todas las URI de su sitio web.
+    * **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: CSS.
+    * **Carpeta**: Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
+    * **Expresión regular personalizada**: Se aplica a todos los URI de su sitio web.
     * **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
 * **Recursos**: defina los atributos en función del tipo de recurso elegido.
 * **Duración**: Indique el tiempo de cacheado del recurso seleccionado.
-* **Clasificación**:  Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
+* **Clasificación**: Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
 
 A continuación, haga clic en el botón `Crear la regla`{.action}.
 
@@ -246,42 +246,9 @@ Las reglas aparecen en una lista. Puede modificar una regla haciendo clic en `..
 
 Una vez que haya configurado las reglas y opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
 
-### Ver las estadísticas de la CDN
+### Ver las estadísticas y los logs de la CDN
 
-Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
-
-> [!tabs]
-> **Etapa 1**
->>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Etapa 3**
->>
->> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
->>
-> **Etapa 4**
->>
->> En la sección `Estadísticas de visitas`, haga clic en el botón `Ver las estadísticas`{.action}.
->>
-> **Etapa 5**
->>
->> Será redirigido a la herramienta **OVHcloud Web Statistics**. En esta herramienta, haga clic en el formulario titulado `Selección del dominio`{.action} situado en la parte superior de la página y seleccione un dominio para el que esté activa la CDN.
->>
-> **Etapa 6**
->>
->> En la columna derecha, haga clic en la pestaña `Caché`{.action}.
->>
->> Ya puede consultar las estadísticas de la CDN para su dominio.
->>
->> Si lo necesita, consulte nuestra guía "[Web hosting - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics)" para más información.
+Para consultar las estadísticas y/o los logs de la CDN, consulte nuestra guía dedicada: "[Web hosting - Consultar estadísticas y logs CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
 ### ¿Cómo guardar en caché los archivos en la CDN?
 

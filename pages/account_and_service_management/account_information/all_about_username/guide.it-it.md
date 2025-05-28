@@ -1,7 +1,7 @@
 ---
 title: 'Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali'
 excerpt: "Scopri come ottimizzare la sicurezza del tuo account OVHcloud, gestire le tue informazioni personali e delegare l'accesso al tuo account."
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Obiettivo
@@ -96,6 +96,10 @@ Per modificare l’indirizzo che hai inserito come contatto principale, è neces
 Inserisci il codice nel campo `Codice di conferma` e conferma l'operazione.
 
 ![identificativo cliente](images/nichandle08.png){.thumbnail}
+
+> [!primary]
+>
+> Il `Codice di conferma` permette esclusivamente di accelerare la modifica dell’indirizzo email principale. Se il vecchio indirizzo email non è raggiungibile e non puoi recuperare il codice, la modifica verrà comunque effettuata automaticamente **25** ore dopo la richiesta.
 
 #### Modifica il tipo di account
 

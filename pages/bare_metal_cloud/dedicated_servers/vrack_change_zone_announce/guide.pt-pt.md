@@ -1,18 +1,18 @@
 ---
 title: 'Alterar o anúncio de um bloco IP no vRack'
 excerpt: 'Saiba como alterar o anúncio de um bloco IP no vRack'
-updated: 2019-03-12
+updated: 2025-05-14
 ---
 
 ## Objectivo
 
-O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](/links/bare-metal/bare-metal){.external} da OVHcloud.
+O [vRack](/links/network/vrack) é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](/links/bare-metal/bare-metal) da OVHcloud.
 
 **Saiba como definir uma zona de anúncio de um bloco IP no vRack.**
 
 ## Requisitos
 
-- Ter um [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
+- Ter um [vRack](/links/network/vrack).
 - Ter [configurado um bloco de endereços IP no vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
 - Ter conhecimentos avançados de rede.
 
@@ -50,20 +50,22 @@ Aceda à ligação <https://api.ovh.com/console/> e conecte-se com o seu ID de c
 > @api {v1} /vrack GET /vrack
 > 
 
-Esta API permite recuperar a lista dos serviços vRack. Caso não consigo identificar o serviço afetado através destas referências, consulte a [Área de Cliente de OVHcloud](/links/manager){.external} para o consultar. Para isso, aceda à secção `Bare Metal Cloud`{.action}, depois `Network`{.action} e selecione “vRack”. 
+Esta API permite recuperar a lista dos serviços vRack. Caso não consigo identificar o serviço afetado através destas referências, consulte a [Área de Cliente de OVHcloud](/links/manager) para o consultar. Para isso, aceda à secção `Bare Metal Cloud`{.action}, depois `Network`{.action} e selecione “vRack”. 
 
 > [!api]
 >
-> @api {v1} /vrack POST /vrack/{serviceName}/ip/{ip}/announceInZone#POST
+> @api {v1} /vrack POST /vrack/{serviceName}/ip
 > 
 
 Esta API permite alterar o anúncio de um bloco IP. Preencha os campos necessários:
 
 |Campo|Descrição|
 |---|---|
-|serviceName|Indique o nome do serviço vRack em questão.|
-|ip|Indique o nome do bloco IP em questão. Tenha em conta que não deve indicar o endereço IP que testou na etapa anterior, mas sim o bloco IP em questão. Por exemplo: `1.2.3.4/27`.|
-|zona|Seleciona a nova zona de anúncio do bloco IP. Certifique-se de que não indica a mesma zona que aquela que recuperou na etapa anterior.|
+|serviceName|Indique o nome do serviço vRack em questão. Por exemplo: `pn-12345`.|
+|block|Indique o nome do bloco IP em questão. Tenha em conta que não deve indicar o endereço IP que testou na etapa anterior, mas sim o bloco IP em questão. Por exemplo: `192.0.2.0/24`.|
+|region|Seleciona a nova zona de anúncio do bloco IP. Certifique-se de que não indica a mesma zona que aquela que recuperou na etapa anterior. Por exemplo: `bexxx.gra-d1-a75.fr.eu`.|
+
+![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 
 Por fim, execute a API para alterar o anúncio.
 

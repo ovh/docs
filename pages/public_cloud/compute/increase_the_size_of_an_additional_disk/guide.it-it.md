@@ -26,7 +26,7 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, aggiungi spazio 
 
 ## Prerequisiti
 
-- Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo progetto Public Cloud.
+- Aver creato un’istanza [Public Cloud](/links/public-cloud/compute) nel tuo progetto Public Cloud.
 - Disporre di un [disco aggiuntivo](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Avere accesso amministrativo (sudo) alla tua istanza via SSH (Linux) o RDP (Windows).
@@ -234,6 +234,7 @@ Il volume ridimensionato include lo spazio disco aggiuntivo.
 ## Per saperne di più
 
 [Crea e configura un disco aggiuntivo sulla tua istanza](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Modifica il tipo di volume di Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

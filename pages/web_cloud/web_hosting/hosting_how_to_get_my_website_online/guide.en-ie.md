@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2024-03-21
+updated: 2025-05-23
 ---
 
 ## Objective
@@ -63,9 +63,7 @@ To obtain the server address or username to allow you to access your storage spa
 
 ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
-Once you are in possession of all the elements, you have three different options for connecting to your storage space:
-
-- **Use OVHcloud’s FTP Explorer.** This enables you to access your storage space via your browser. To use it, stay in the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
+Once you are in possession of all the elements, you have two different options for connecting to your storage space:
 
 - **Use FTP-compatible software.** You will need to install an FTP-compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact its publisher if you encounter any difficulties when using it.
 

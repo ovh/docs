@@ -1,6 +1,6 @@
 ---
 title: Suspendre ou mettre en pause une instance
-updated: 2025-04-28
+updated: 2025-05-26
 ---
 
 ## Objectif
@@ -16,7 +16,7 @@ Dans le cadre de la configuration d’une infrastructure hautement disponible, v
 ## Prérequis
 
 - Avoir créé une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) au forfait **horaire**.
-- Être connecté à l’[espace client OVHcloud](/links/manager){.external} ou à l’interface [Horizon.](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Être connecté à l’[espace client OVHcloud](/links/manager) ou à l’interface [Horizon.](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Avoir des connaissances de l’[API Openstack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) et des [variables Openstack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 ## En pratique
@@ -36,7 +36,27 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
 |[Arrêter (*suspend*)](#stop-suspend-instance)|Stocke l’état de la VM sur le disque, les ressources dédiées à l’instance sont toujours réservées.|Vous serez toujours facturé au même prix pour votre instance.|
 |[Pause](#pause-instance)|Stocke l’état de la VM dans la mémoire RAM, une instance en pause reste « gelée ».|Vous serez toujours facturé au même prix pour votre instance.|
 
-### Suspendre (shelve) une instance <a name="shelve-instance"></a>
+### Sommaire
+
+- [Suspendre (shelve) une instance](#shelve-instance)
+    - [Depuis l’espace client OVHcloud](#control-panel)
+    - [Depuis l’interface Horizon](#horizon)
+    - [Depuis les API Openstack/Nova](#openstack-nova)
+-[Réactiver (*unshelve*) une instance](#unshelve-instance)
+    - [Depuis l’espace client OVHcloud](#control-panel-unshelve)
+    - [Depuis l’interface Horizon](#horizon-unshelve)
+    - [Depuis les API Openstack/Nova](#openstack-nova-unshelve)
+- [Arrêter (suspend) une instance](#stop-suspend-instance)
+    - [Depuis l’espace client OVHcloudl](#stop-control-panel)
+    - [Depuis l’interface Horizon](#stop-horizon)
+    - [Depuis les API Openstack/Nova](#stop-openstack-nova)
+- [Mettre en pause une instance](#pause-instance)
+    - [Depuis l’interface Horizon](#pause-horizon)
+    - [Depuis les API Openstack/Nova](#pause-openstack-nova)
+
+<a name="shelve-instance"></a>
+
+### Suspendre (shelve) une instance 
 
 > [!alert]
 > Attention, la suspension d'une instance de type IOPS ou T1/T2-180 entraînera la perte des données sur les disques NVMe en passthrough.
@@ -45,17 +65,19 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
 
 Cette option vous permettra de libérer les ressources dédiées à votre instance Public Cloud, mais l’adresse IP sera conservée. Les données sur votre disque local seront stockées dans un snapshot créé automatiquement une fois l’instance suspendue. Les données stockées en mémoire et ailleurs ne seront pas sauvegardées.
 
+<a name="control-panel"></a>
+
 #### Depuis l’espace client OVHcloud
 
 Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Instances`{.action} dans le menu de gauche.
 
 Cliquez sur le bouton `...`{.action} à droite de l’instance que vous souhaitez suspendre puis cliquez sur `Suspendre`{.action}.
 
-![suspension instance](images/suspend_an_instance_2024.png){.thumbnail}
+![suspension instance](images/suspend_an_instance.png){.thumbnail}
 
 Dans la fenêtre qui s’affiche, prenez connaissance des informations données et cliquez sur `Confirmer`{.action}.
 
-![confirmer la suspension](images/confirm_suspension.png){.thumbnail}
+![confirmer la suspension](images/suspend_an_instance_2024.png){.thumbnail}
 
 Une fois la procédure terminée, votre instance aura le statut « Suspendue ».
 
@@ -64,6 +86,8 @@ Une fois la procédure terminée, votre instance aura le statut « Suspendue ».
 Le snapshot sera ensuite disponible dans la rubrique `Instance Backup`{.action} de la section **Compute** du menu gauche de l'espace Public Cloud. Un snapshot nommé *xxxxx-shelved* est alors visible :
 
 ![onglet snapshot](images/shelved_backup.png){.thumbnail}
+
+<a name="horizon"></a>
 
 #### Depuis l’interface Horizon
 
@@ -89,6 +113,8 @@ Pour visualiser le snapshot, dans le menu `Compute`{.action}, cliquez sur `Image
 
 ![snapshot](images/snapshothorizon.png){.thumbnail}
 
+<a name="openstack-nova"></a>
+
 #### Depuis les API Openstack/Nova
 
 Avant de poursuivre, Il est recommandé de consulter ces guides :
@@ -99,14 +125,16 @@ Avant de poursuivre, Il est recommandé de consulter ces guides :
 Une fois votre environnement prêt, saisissez ce qui suit dans la ligne de commande :
 
 ```bash
-openstack server shelve <UUID server>
+~$ openstack server shelve <UUID server>
 
 =====================================
 
-nova shelve <UUID server> 
+~$ nova shelve <UUID server> 
 ```
 
-### Réactiver une instance
+<a name="unshelve-instance"></a>
+
+### Réactiver (*unshelve*) une instance
 
 Cette option vous permettra de réactiver votre instance pour continuer à l’utiliser. Veuillez noter qu’une fois cette opération effectuée, la facturation reprendra normalement.
 
@@ -116,6 +144,8 @@ Cette option vous permettra de réactiver votre instance pour continuer à l’u
 >
 > OVHcloud met à votre disposition des services dont la responsabilité vous incombe. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d’assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. En cas de difficultés ou de doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner).
 >
+
+<a name="control-panel-unshelve"></a>
 
 #### Depuis l’espace client OVHcloud 
 
@@ -129,6 +159,8 @@ Dans la fenêtre qui s’affiche, prenez connaissance des informations et clique
 
 Une fois la procédure terminée, votre instance aura le statut « Activée ».
 
+<a name="horizon-unshelve"></a>
+
 #### Depuis l’interface Horizon
 
 Cliquez sur le menu `Compute`{.action} dans le menu de gauche et sélectionnez `Instances`{.action}. Sélectionnez `Resume Instance`{.action} dans la liste déroulante correspondant à l’instance.
@@ -136,6 +168,8 @@ Cliquez sur le menu `Compute`{.action} dans le menu de gauche et sélectionnez `
 ![unshelve instance](images/unshelveinstancehorizon.png){.thumbnail}
 
 Une fois la procédure terminée, votre instance aura le statut *Active*.
+
+<a name="openstack-nova-unshelve"></a>
 
 #### Depuis les API Openstack/Nova
 
@@ -149,9 +183,13 @@ Une fois votre environnement prêt, saisissez la commande ci-dessous dans la lig
 ~$ nova unshelve <UUID server>
 ```
 
-### Arrêter (suspend) une instance <a name="stop-suspend-instance"></a>
+<a name="stop-suspend-instance"></a>
+
+### Arrêter (suspend) une instance
 
 Cette option vous permettra d'arrêter votre instance. L’état de la VM est stocké sur le disque, tandis que la mémoire est écrite sur le disque.
+
+<a name="stop-control-panel"></a>
 
 #### Depuis l’espace client OVHcloud
 
@@ -165,7 +203,9 @@ Dans la fenêtre qui s’affiche, prenez connaissance des informations et clique
 
 Une fois le processus terminé, votre instance aura le statut « Éteinte ».
 
-Pour redémarrer l’instance, effectuez les même démarches que celles indiquées précédemment. Cliquez sur le bouton `...`{.action} à droite de l’instance et sélectionnez `Démarrer`{.action}. Dans certains cas, il peut être nécessaire de procéder à un redémarrage à froid.
+Pour **redémarrer** l’instance, effectuez les même démarches que celles indiquées précédemment. Cliquez sur le bouton `...`{.action} à droite de l’instance et sélectionnez `Démarrer`{.action}. Dans certains cas, il peut être nécessaire de procéder à un redémarrage à froid.
+
+<a name="stop-horizon"></a>
 
 #### Depuis l’interface Horizon 
 
@@ -175,7 +215,9 @@ Dans l’interface Horizon, cliquez sur le menu `Compute`{.action} à gauche pui
 
 Un message de confirmation s’affiche indiquant que l’instance est suspendue.
 
-Pour redémarrer l’instance, effectuez les mêmes opérations que ci-dessus. Dans la liste déroulante correspondant à l’instance, sélectionnez `Resume Instance`{.action}.
+Pour **redémarrer** l’instance, effectuez les mêmes opérations que ci-dessus. Dans la liste déroulante correspondant à l’instance, sélectionnez `Resume Instance`{.action}.
+
+<a name="stop-openstack-nova"></a>
 
 #### Depuis les API Openstack/Nova
 
@@ -189,7 +231,7 @@ Une fois votre environnement prêt, saisissez la commande ci-dessous dans la lig
 ~$ nova suspend <UUID server>
 ```
 
-Pour redémarrer l’instance, saisissez la commande ci-dessous dans la ligne de commande :
+Pour **redémarrer** l’instance, saisissez la commande ci-dessous dans la ligne de commande :
 
 ```bash
 ~$ openstack server unsuspend <UUID server>
@@ -199,9 +241,13 @@ Pour redémarrer l’instance, saisissez la commande ci-dessous dans la ligne de
 ~$ nova unsuspend <UUID server>
 ```
 
-### Mettre en pause une instance <a name="pause-instance"></a>
+<a name="pause-instance"></a>
 
-Cette action est réalisable uniquement à partir de l’interface Horizon ou via les API Openstack/Nova. Elle vous permet de mettre en veille ou « geler » votre instance.
+### Mettre en pause une instance
+
+Cette action est réalisable **uniquement** à partir de l’interface Horizon ou via les API Openstack/Nova. Elle vous permet de mettre en veille ou « geler » votre instance.
+
+<a name="pause-horizon"></a>
 
 #### Depuis l’interface Horizon
 
@@ -211,7 +257,9 @@ Dans l’interface Horizon, cliquez sur le menu `Compute`{.action} à gauche pui
 
 Le message de confirmation apparait indiquant la mise en pause de l’instance.
 
-Pour réactiver l’instance, effectuez les même démarches que celles indiquées précédemment. Dans la liste déroulante correspondant à l’instance, sélectionnez `Resume Instance`{.action}.
+Pour **réactiver** l’instance, effectuez les même démarches que celles indiquées précédemment. Dans la liste déroulante correspondant à l’instance, sélectionnez `Resume Instance`{.action}.
+
+<a name="pause-openstack-nova"></a>
 
 #### Depuis les API Openstack/Nova
 
@@ -225,7 +273,7 @@ Une fois votre environnement prêt, saisissez la commande ci-dessous dans la lig
 ~$ nova pause <UUID server>
 ```
 
-Pour annuler cette action, saisissez la commande ci-dessous dans la ligne de commande :
+Pour **réactiver** l’instance, saisissez la commande ci-dessous dans la ligne de commande :
 
 ```bash
 ~$ openstack server unpause <UUID server>

@@ -37,7 +37,7 @@ Por exemplo, podemos criar uma política para dar a um utilizador chamado John, 
 
 ### Aceder ao menu IAM
 
-Na barra lateral, clique em `Identidade, Segurança e Operações` {.action} e, a seguir, em `Identity & Access Management`{.action}.
+Na barra lateral, clique em `Identidade, Segurança e Operações`{.action} e, a seguir, em `Políticas`{.action}.
 
 ![Acesso ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Clique diretamente em [Criar uma política](#create-policy) ou em [Criar utiliza
 >
 > Os clientes não podem alterar ou eliminar estas políticas.
 
-Se já tiver criado políticas ou utilizadores, o menu apresenta a lista de todas as políticas em curso criadas na sua conta OVHcloud.
+Se já tiver criado políticas ou utilizadores, estes serão apresentados no primeiro separador `As minhas políticas`{.action}. O separador `Políticas da OVHcloud`{.action} agrupa as políticas não alteráveis criadas automaticamente pela OVHcloud.
 
 ![Acesso ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -167,7 +167,7 @@ As políticas podem visar grupos de recursos (em vez de visarem diretamente recu
 
 #### Criar um grupo de recursos
 
-Para criar um grupo de recursos, aceda ao separador dedicado do menu IAM:
+Para criar um grupo de recursos, aceda à secção `Políticas`{.action} e clique no separador `Grupos de recursos`{.action} :
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 

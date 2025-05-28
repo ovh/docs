@@ -1,7 +1,7 @@
 ---
 title: MySQL - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
-updated: 2022-03-08
+updated: 2025-05-16
 ---
 
 ## Objective
@@ -35,10 +35,10 @@ In order to do so, we will need to set up our PHP environment with MySQL drivers
 
 ### Setup your PHP environment
 
-To interact with your MySQL instance with PHP, your development environment needs to be configured with :
+To interact with your MySQL instance with PHP, your development environment needs to be configured with:
 
 - A compatible version of PHP;
-- MySQLi PHP extension;
+- MySQLi, PDO and OpenSSL PHP extensions installed and activated in `php.ini`;
 
 Please follow the official [MySQL Drivers and Plugin](https://www.php.net/manual/en/set.mysqlinfo.php){.external} to get the latest information.
 
@@ -99,7 +99,7 @@ $dbname = "defaultdb";
 $port = "20184";
 $options = array(
   PDO::MYSQL_ATTR_SSL_CA => '/<path to>/ca.pem',
-  PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => true
+  PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false
 );
 
 try {

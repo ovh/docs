@@ -8,7 +8,7 @@ updated: 2023-11-06
 
 Wenn Sie über ein OVHcloud Webhosting verfügen, können Sie auf einen Speicherplatz zugreifen, mit dem Sie Ihre Website verwalten können. Der Zugriff auf diesen Speicherplatz ist über SFTP möglich. Sie können sich über einen Client anmelden, aber auch die integrierte Entwicklungsumgebung (Integrated Development Environment - IDE) von Visual Studio Code verwenden, um die Ordner und Dateien Ihrer Website zu verwalten.
 
-> [!PRIMARY]
+> [!primary]
 >
 > Wenn Sie Ihre Website ohne Visual Studio Code verwalten möchten, können Sie den FileZilla FTP-Client installieren. Weitere Informationen finden Sie in unserer Anleitung „[FileZilla mit Ihrem OVHcloud Hosting verwenden](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)“. Wenn Sie sich via SSH mit Ihrer Website verbinden möchten, lesen Sie unsere Dokumentation „[SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting)“.
 >

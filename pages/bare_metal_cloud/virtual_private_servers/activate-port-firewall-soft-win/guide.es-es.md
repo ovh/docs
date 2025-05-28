@@ -23,7 +23,7 @@ Para proteger de forma óptima su sistema, su servidor con Windows Server dispon
 
 ## Requisitos
 
-- Un servidor [VPS](https://www.ovhcloud.com/es-es/vps/) con Windows en su cuenta de OVHcloud.
+- Un servidor [VPS](/links/bare-metal/vps) con Windows en su cuenta de OVHcloud.
 - Tener acceso de administrador al servidor a través de un escritorio remoto con Windows. 
 
 ## Procedimiento
@@ -114,4 +114,4 @@ A continuación, podrá realizar cambios en la seguridad de la nueva regla cread
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

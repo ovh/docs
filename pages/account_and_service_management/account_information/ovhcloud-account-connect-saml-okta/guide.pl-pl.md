@@ -1,7 +1,7 @@
 ---
 title: "Włącz połączenia Okta SSO z Twoim kontem OVHcloud"
 excerpt: "Dowiedz się, jak powiązać usługę Okta z kontem OVHcloud przy użyciu SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Wprowadzenie
@@ -80,17 +80,13 @@ Twoja usługa Okta jest od tej pory zaufana w OVHcloud jako dostawca usług. Nas
 
 Aby dodać Okta jako zaufanego dostawcę tożsamości, należy dostarczyć metadane dostawcy tożsamości w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Na pasku bocznym kliknij `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie `Zarządzanie tożsamością i dostępem (IAM)`{.action}.
+Na pasku bocznym kliknij pozycję `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie na `Tożsamości`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
+Następnie kliknij zakładkę `SSO`{.action} i kliknij przycisk `Logowanie SSO`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Kliknij przycisk `Logowanie SSO`{.action}.
-
-![Połączenie SSO OVHcloud etap 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Wpisz metadane XML usługi Okta. Uzupełnij pole "Nazwa atrybutu użytkownika" wartością `Name` i pole "Nazwa atrybutu grupy" wartością `Group`. Kliknij na `Zatwierdź`{.action}.
 
@@ -120,7 +116,7 @@ Twoja usługa Okta jest teraz uważana za zaufanego dostawcę tożsamości. Jedn
 
 Należy teraz przypisać **roles** grupom użytkowników Okta w OVHcloud. W przeciwnym razie Twoje konto OVHcloud nie wie, co użytkownik może zrobić i domyślnie nie przyznaje mu żadnych uprawnień.
 
-W Panelu klienta dodaj grupę klikając przycisk `Zgłoś grupę`{.action} i wypełniając pola:
+Aby dodać grupę z poziomu [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Tożsamości`{.action} i w zakładce `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action} i wypełnij pola:
 
 - **Group name**: Nazwa grupy w Okta
 - **Role**: Poziom praw przyznanych tej grupie

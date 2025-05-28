@@ -1,12 +1,12 @@
 ---
 title: "Aumentare la velocità di un sito Web con la CDN"
 excerpt: "Questa guida ti mostra come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Obiettivo
 
-Per accelerare la velocità di caricamento del tuo sito Web e migliorare così l’esperienza utente, la tecnica più efficace consiste nell’attivare la CDN (Content Delivery Network), che consente di conservare in cache i file che non richiedono un continuo aggiornamento (cosiddetti "statici"), come le immagini, i css e i javascript nei server più vicini ai tuoi utenti.
+Per accelerare la velocità di caricamento del tuo sito Web e migliorare così l’esperienza utente, la tecnica più efficace consiste nell’attivare la CDN (Content Delivery Network), che consente di conservare in cache i file che non richiedono un continuo aggiornamento (cosiddetti "statici"), come le immagini, i CSS e i JavaScript nei server più vicini ai tuoi utenti.
 
 **Questa guida ti mostra come gestire l’opzione CDN del tuo hosting Web.**
 
@@ -16,7 +16,7 @@ Per accelerare la velocità di caricamento del tuo sito Web e migliorare così l
 
 La CDN (Content Delivery Network) è letteralmente una rete dedicata alla consegna dei contenuti  e per visualizzare il contenuto del tuo sito Web utilizza vari server sparsi in tutto il mondo.  Più i server vicini ai tuoi utenti, maggiore sarà la velocità di caricamento del tuo sito Web sui loro dispositivi.
 
-Per funzionare correttamente, ciascun server salva nella memoria cache una parte del tuo sito Web. In generale, ti consigliamo di includere i file cosiddetti "statici": le immagini, i file javascript e css che garantiscono il buon funzionamento del tuo server, ma che vengono modificati molto raramente.
+Per funzionare correttamente, ciascun server salva nella memoria cache una parte del tuo sito Web. In generale, ti consigliamo di includere i file cosiddetti "statici": le immagini, i file JavaScript e CSS che garantiscono il buon funzionamento del tuo server, ma che vengono modificati molto raramente.
 
 ## Prerequisiti
 
@@ -192,7 +192,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 	?>
 	```
 
-- **Mobile redirect**:  Reindirizza automaticamente i visitatori "Mobile" verso un sito Web ottimizzato. A scelta: reindirizzare sistematicamente verso la radice di un altro sito Web, o conservare l'URL sostituendo solo il dominio (o sottodominio).
+- **Mobile redirect**: Reindirizza automaticamente i visitatori "Mobile" verso un sito Web ottimizzato. A scelta: reindirizzare sistematicamente verso la radice di un altro sito Web, o conservare l'URL sostituendo solo il dominio (o sottodominio).
 
 - **Purga avanzata**: Personalizza lo spurgo scegliendo gli elementi della cache da svuotare: tutto il sito, una cartella, un'URI, un'estensione di file o tramite un'espressione regolare personalizzata. 
 
@@ -229,13 +229,13 @@ Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.actio
 
 * **Regola**: Assegna un nome alla tua regola.
 * **Tipo di risorsa**: Scegli tra le seguenti opzioni:
-    * **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: css
-    * **Cartella**:  Inserisci un percorso valido per una delle cartelle presenti nella directory di root del tuo sito web.
-    * **Espressione regolare personalizzata**: e si applica a tutti gli URI del tuo sito Web.
+    * **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: CSS.
+    * **Cartella**: Inserisci un percorso valido per una delle cartelle presenti nella directory di root del tuo sito web.
+    * **Espressione regolare personalizzata**: E si applica a tutti gli URI del tuo sito Web.
     * **URI**: Indica la sottounità di risorse del tuo sito Web, tramite il percorso che conduce all'URL.
 * **Risorsa**: definisci gli attributi in funzione del tipo di risorsa scelta.
 * **Durata**: Indica la durata di messa in cache della risorsa scelta.
-* **Classificazione**:  Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
+* **Classificazione**: Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
 
 Una volta effettuate le scelte, clicca sul pulsante `Crea la regola`{.action}.
 
@@ -245,42 +245,9 @@ Le regole figurano in un elenco. Per modificare una regola, clicca sui tre punti
 
 Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
-### Visualizza le statistiche della CDN
+### Visualizzare le statistiche e i log della CDN
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
-
-> [!tabs]
-> **Step 1**
->>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Step 3**
->>
->> Nella nuova pagina clicca sulla scheda `Statistiche e log`{.action}.
->>
-> **Step 4**
->>
->> Nella sezione `Statistiche delle visite`, clicca sul pulsante `Visualizza le statistiche`{.action}.
->>
-> **Step 5**
->>
->> Sei reindirizzato allo strumento **OVHcloud Web Statistics**. Con questo strumento, clicca sul form intitolato `Selezione del dominio`{.action} situato nella parte superiore della pagina e seleziona un dominio con la CDN attiva.
->>
-> **Step 6**
->>
->> Nella colonna di destra, clicca sulla scheda `Cache`{.action}.
->>
->> Visualizzi le statistiche della CDN per il tuo dominio.
->>
->> In caso di necessità, consulta la nostra guida "[Hosting Web - Consultare le statistiche e i log di un sito Web](/pages/web_cloud/web_hosting/logs_and_statistics)" per maggiori informazioni.
+Per visualizzare le statistiche e/o i log della CDN, consulta la nostra guida dedicata: "[Hosting Web - Consulta le statistiche e i log della CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
 ### In che modo è possibile conservare in cache i file nella CDN?
 
@@ -298,7 +265,7 @@ Se non utilizzi un CMS, puoi usufruire della cache della CDN. Per farlo, è nece
 3. Header set Cache-Control "max-age=604800, public"
 4. </FilesMatch>
 5. 
-6. # Cache dei javascript e CSS per 1 mese
+6. # Cache dei JavaScript e CSS per 1 mese
 7. <FilesMatch "\.(js|css)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
@@ -391,7 +358,7 @@ L’assenza dell’intestazione "*X-CDN*" indica che il traffico del tuo sito We
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

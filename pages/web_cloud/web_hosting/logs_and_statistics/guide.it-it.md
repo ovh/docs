@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Consultare le statistiche e i log di un sito Web"
 excerpt: "Questa guida ti mostra come consultare le statistiche e i log del tuo sito Web grazie alla tua soluzione di hosting Web"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Obiettivo
@@ -12,8 +12,8 @@ L’accesso ai log e alle statistiche del sito Web è incluso nella soluzione di
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Disporre di un piano di [hosting Web](/links/web/hosting) attivo.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
@@ -75,6 +75,10 @@ Diversi tipi di log sono a tua disposizione:
 - **Log SSH**: questi log indicano le diverse connessioni / comandi effettuati con il protocollo SSH.
 - **Logs CRON**: visualizza qui i risultati dell’esecuzione delle operazioni pianificate [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) sul tuo hosting Web.
 
+> [!success]
+>
+> Per visualizzare le statistiche e/o i log della CDN, consulta la nostra guida dedicata: "[Hosting Web - Consulta le statistiche e i log della CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
+
 ### Statistiche dell'infrastruttura <a name="infra-stats"></a>
 
 In questa sezione sono riportate le attività dell’infrastruttura del tuo hosting Web, per visualizzare il consumo delle risorse messe a disposizione.
@@ -84,7 +88,7 @@ In questa sezione sono riportate le attività dell’infrastruttura del tuo host
 Dal menu a comparsa in alto a sinistra è possibile visualizzare diversi tipi di grafici:
 
 - **Comandi FTP**: indica i comandi principali (upload, download, login, delete) effettuati utilizzando il protocollo FTP sul tuo hosting Web.
-- **Richieste HTTP**: indica il numero e il codice restituito delle richieste HTTP eseguite sul tuo hosting Web. Il tutto distinguendo i diversi codici HTTP (2xx/3xx, 4xx e 5xx). Se necessario, è possibile recuperare la lista dei codici HTTP e il loro significato effettuando una ricerca direttamente tramite un motore di ricerca (Google, Yahoo!, bing, ecc...).
+- **Richieste HTTP**: indica il numero e il codice restituito delle richieste HTTP eseguite sul tuo hosting Web. Il tutto distinguendo i diversi codici HTTP (2xx/3xx, 4xx e 5xx). Se necessario, è possibile recuperare la lista dei codici HTTP e il loro significato effettuando una ricerca direttamente tramite un motore di ricerca (Google, Yahoo!, bing, ecc.).
 - **Connessioni in uscita**: richieste inviate dal vostro sito web verso un sito web esterno.
 - **Utilizzo della CPU**: livello di consumo del processore sull’istanza di hosting Web.
 - **Superamento del plafond di risorse**: indica i momenti in cui l’hosting Web supera la quota assegnata.
@@ -126,7 +130,7 @@ Nella nuova pagina, recupera l’URL che trovi nella barra degli indirizzi del t
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

@@ -1,7 +1,7 @@
 ---
 title: MySQL - Configure your MySQL instance to accept incoming connections
 excerpt: Find out how to configure your MySQL instance to accept incoming connections
-updated: 2022-03-08
+updated: 2025-05-19
 ---
 
 ## Objective
@@ -40,11 +40,11 @@ GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES,
 GRANT REPLICATION_APPLIER,ROLE_ADMIN ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
 ```
 
-![User table](images/mysql_07_prepare_for_incoming_connections-20220308112922280.png){.thumbnail}
+![User table](images/users_and_roles.png){.thumbnail}
 
 You can add more users by clicking on the button `Add user`{.action}.
 
-![Add user](images/mysql_07_prepare_for_incoming_connections-20220308111540905.png){.thumbnail}
+![Add user](images/add_user.png){.thumbnail}
 
 Enter a username then click `Create User`{.action}.
 
@@ -56,13 +56,15 @@ Enter a username then click `Create User`{.action}.
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your database.
 
-In this step, select the `Authorised IPs`{.action} tab. IP addresses must be authorised here before they can connect to your database.
+Fill in the IP address or CIDR block to whitelist and click the `+`{.action} button.
 
-Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new window in which you can add single IP addresses or blocks to allow access to the database.
 
-![Add an IP](images/ip_authorize.png){.thumbnail}
+![Add an IP](images/add_ip_1.png){.thumbnail}
 
-You can edit and retract database access via the `...`{.action} button in the IP table.
+Validate the changes by clicking the `Save changes`{.action} button.
+
+![Add an IP](images/add_ip_2.png){.thumbnail}
+
 
 > [!primary]
 >
@@ -71,17 +73,17 @@ You can edit and retract database access via the `...`{.action} button in the IP
 
 #### Collect required information
 
-Select the `General information`{.action} tab to find the required login credentials in the `Login informations` section.
+Select the `Dashboard`{.action} tab to find the required login credentials in the `Connection information` section.
 
-![Login information tab](images/mysql_04_connect_php-20220124153927876.png){.thumbnail}
+![Login information tab](images/connection_information.png){.thumbnail}
 
 Select the `Databases`{.action} tab to get the database name.
 
-![Databases tab](images/mysql_04_connect_php-20220124154604558.png){.thumbnail}
+![Databases tab](images/databases.png){.thumbnail}
 
 Select the `Users`{.action} tab to get the username.
 
-![User table](images/mysql_07_prepare_for_incoming_connections-20220308112922280.png){.thumbnail}
+![User table](images/user.png){.thumbnail}
 
 ## Go further
 

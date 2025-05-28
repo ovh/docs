@@ -1,14 +1,15 @@
 ---
 title: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
 excerpt: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
-updated: 2024-10-17
+updated: 2025-05-20
 ---
 
 Produkty objęte ogłoszeniami o zakończeniu sprzedaży i wycofaniu z eksploatacji to usługi bazy danych SQL Web Hosting dostępne poprzez sieć Web Hosting. Więcej informacji znajdziesz w [Polityka wycofania zarządzanych baz danych](/pages/web_cloud/web_cloud_databases/eol-policy).
 
 |Wersja DBMS|Powiadomienie o zakończeniu cyklu życia|Zakończenie sprzedaży|Zakończenie obsługi|
 |---|---|---|---|
-|MySQL 8.0|Do określenia|Do określenia|Do określenia|
+|MySQL 8.0|2025-05-20|2025-09-30|2026-04-01|
+|MySQL 8.4|Do określenia|Do określenia|Do określenia|
 
 > [!primary]
 >

@@ -1,7 +1,7 @@
 ---
 title: Cambiar la contraseña de la base de datos de un alojamiento web
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
-updated: 2022-01-26
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -51,13 +51,11 @@ En el [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.
 
 ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-A continuación, abra la pestaña `FTP-SSH`{.action} y acceda al espacio que contiene los archivos y carpetas de su sitio web (*espacio FTP*) haciendo clic en el botón `Explorador FTP`{.action}.
+Acceda al espacio que contiene los archivos y carpetas de su sitio web (*espacio FTP*) consultando esta [guía](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
 > Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](/pages/web_cloud/web_hosting/ftp_change_password).
->
-> Si desea conectarse por otro método, consulte esta [guía](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
 Abra la `Carpeta raíz` anteriormente indicada.

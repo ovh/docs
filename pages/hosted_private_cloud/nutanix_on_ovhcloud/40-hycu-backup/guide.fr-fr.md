@@ -1,7 +1,7 @@
 ---
 title: Configurer HYCU Backup
 excerpt: "Installation de la sauvegarde HYCU Backup sur un cluster Nutanix"
-updated: 2025-01-31
+updated: 2025-05-14
 ---
 
 <style>
@@ -229,9 +229,9 @@ Cliquez sur `Cluster Details`{.action}.
 
 ![Configure ISCSI 03](images/00-configureiscsi03.png){.thumbnail}
 
-Saisissez `une adresse IP locale non utilisée`{.action} dans **Virtual IP** et cliquez sur `Save`{.action}.
+Saisissez `une adresse IP locale non utilisée`{.action} dans le champ **Data Services IP** et cliquez sur `Save`{.action}.
 
-![Configure ISCSI 04](images/00-configureiscsi04.png){.thumbnail}
+![Configure ISCSI 04](images/00-configureiscsi04b.png){.thumbnail}
 
 Vérifiez votre choix et cliquez sur `Yes`{.action}.
 

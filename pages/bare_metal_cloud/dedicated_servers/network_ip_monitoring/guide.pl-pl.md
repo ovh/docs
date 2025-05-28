@@ -1,7 +1,7 @@
 ---
 title: Jakie są adresy IP monitoringu OVHcloud?
 excerpt: W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze.
-updated: 2025-01-14
+updated: 2025-05-21
 ---
 
 ## Wprowadzenie
@@ -35,6 +35,8 @@ Aby wdrożyć restrykcyjny firewall, zwłaszcza w zakresie ICMP i nadal korzysta
 |netmon-syd-probe|139.99.187.247/32|icmp|
 |netmon-tor-probe|72.251.7.222/32|icmp|
 |netmon-eri-probe|51.195.135.163/32|icmp|
+|netmon-lim-probe|51.38.117.56|icmp|
+|netmon-sbg-probe|51.38.25.100|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.xxx.250 (z adresem IP serwera xxx.xxx.xxx.aaa)|icmp|
@@ -49,7 +51,7 @@ Aby wdrożyć restrykcyjny firewall, zwłaszcza w zakresie ICMP i nadal korzysta
 
 ### Włącz lub wyłącz monitoring
 
-Po pierwsze, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i wybierz kartę `Bare Metal Cloud`{.action}. Wybierz odpowiedni serwer z rozwijanego menu `Serwery dedykowane`{.action}.
+Po pierwsze, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz kartę `Bare Metal Cloud`{.action}. Wybierz odpowiedni serwer z rozwijanego menu `Serwery dedykowane`{.action}.
 
 Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action}. Wariant ten znajduje się w sekcji `Status usług`.
 
@@ -67,6 +69,6 @@ Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania
 
 ## Sprawdź również
 
-[Konfiguracja zapory sieciowej Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+[Konfiguracja zapory sieciowej Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 Dołącz do [grona naszych użytkowników](/links/community).

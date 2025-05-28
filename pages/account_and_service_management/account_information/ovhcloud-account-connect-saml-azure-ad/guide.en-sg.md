@@ -1,7 +1,7 @@
 ---
 title: Enabling Entra ID SSO connections with your OVHcloud account
 excerpt: "Find out how to associate your Entra ID (formerly Azure Active Directory) to your OVHcloud account using SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Objective
@@ -203,17 +203,13 @@ Adding your Entra ID application as a trusted identity provider is done in the [
 
 #### Establish OVHcloud trust
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Identities`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then on `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Then click on the `SSO`{.action} tab and on the `SSO connection`{.action} button.
+Then click the `SSO`{.action} tab and click the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Click on the `SSO connection`{.action} button.
-
-![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Fill in the field **User Attribute Name** with the Entra ID application **UPN** claim name and enter the **groups** claim name value saved before into the field **Group Attribute Name**. 
 
@@ -239,11 +235,11 @@ To resolve this, check the "Group" attribute that your Entra ID application retu
 
 ![Entra ID Group step 2](images/azure_ad_group_2.png){.thumbnail}
 
-Add it on the section `Identities`{.action} and on the tab `User groups`{.action} by clicking on the `Declare a group`{.action} button and filling in the fields:
+To add a group, go to the `Identities`{.action} section, then to the `User groups`{.action} tab. Then click the `Declare a group`{.action}:
 
 ![Ovhcloud user management groups step 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Fill in the fields, then click on the `Confirm`{.action} button.
+Enter the group name and select the associated role, then click on `Confirm`{.action}.
 
 ![Ovhcloud user management groups step 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 
@@ -251,7 +247,7 @@ The created group should appear on the list.
 
 ![Ovhcloud user management groups step 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
 
-Warning: if you give the `NONE` privilege, you will need to assign permissions to this group via the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui).
+Warning: if you give the `NONE` role, you will need to assign permissions to this group via the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 ### Connect via SSO
 

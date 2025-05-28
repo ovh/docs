@@ -374,4 +374,4 @@ Para um processo mais automatizado, a OVHcloud propõe igualmente a solução SS
 
 [Como proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

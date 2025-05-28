@@ -1,7 +1,7 @@
 ---
 title: "Mettere online un sito Internet su un hosting Web"
 excerpt: "Questa guide ti mostra come pubblicare un sito su un hosting Web OVHcloud"
-updated: 2024-03-21
+updated: 2025-05-23
 ---
 
 ## Obiettivo
@@ -72,9 +72,7 @@ In questa interfaccia sono disponibili le informazioni di accesso allo spazio di
 
 Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
-Una volta recuperati i dati potrai connetterti allo spazio di storage in tre modi diversi, utilizzando: 
-
-- **FTP Explorer di OVHcloud**: ti consente di effettuare l’accesso direttamente dal browser. Per utilizzarlo, clicca sul pulsante `FTP Explorer`{.action} nella scheda `FTP - SSH`{.action}.
+Una volta recuperati i dati potrai connetterti allo spazio di storage in due modi diversi, utilizzando: 
 
 - **software compatibile con il protocollo FTP**: sarà necessario installare sul tuo computer un software compatibile con il protocollo FTP (ad esempio, FileZilla). Per informazioni sul suo utilizzo, contatta l’editor del software scelto.
 

@@ -362,7 +362,7 @@ sudo blkid
 
 Abra `/etc/fstab` com um editor de texto:
 
-```
+```bash
 sudo nano /etc/fstab
 ```
 

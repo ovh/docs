@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2024-03-21
+updated: 2025-05-23
 ---
 
 ## Sumário
@@ -71,9 +71,7 @@ Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojam
 
 Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web_cloud/web_hosting/ftp_connection). Caso tenha perdido a palavra-passe, consulte o manual [“Alterar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
 
-Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pode ser realizado de três formas:
-
-- **Utilizar o FTP Explorer da OVHcloud**: permite-lhe aceder ao espaço de armazenamento a partir do navegador. Para o utilizar, ainda no separador `FTP - SSH`{.action}, clique no botão `Explorador FTP`{.action}.
+Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pode ser realizado de dois formas:
 
 - **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível como o FileZilla. Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização.
 

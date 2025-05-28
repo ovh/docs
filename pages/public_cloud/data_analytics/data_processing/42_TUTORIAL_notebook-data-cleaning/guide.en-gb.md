@@ -1,8 +1,17 @@
 ---
 title: Notebooks for Apache Spark - Data cleaning
 excerpt: Data cleaning of 2 CSV datasets with aggregation into a single clean Parquet file
-updated: 2023-03-14
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 > [!primary]
 >

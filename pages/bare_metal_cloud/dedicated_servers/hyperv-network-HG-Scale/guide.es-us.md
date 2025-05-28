@@ -1,7 +1,7 @@
 ---
 title: 'Configurar la red en Windows Server con Hyper-V'
 excerpt: 'Cómo configurar la red en Windows Server con Hyper-V'
-updated: 2024-08-07
+updated: 2025-05-16
 ---
 
 > [!primary]
@@ -12,9 +12,11 @@ updated: 2024-08-07
 
 **Esta guía explica cómo configurar la red en Windows Server con Hyper-V.**
 
-### Gamas High Grade y SCALE
+### Gamas High Grade y Scale
 
-En las gamas High Grade & SCALE, no es posible el funcionamiento de las Additional IP en modo *bridged* (a través de MAC Virtuales). Por lo tanto, es necesario configurar las Additional IP en modo enrutado o a través del vRack.
+A partir de mayo de 2025, las direcciones MAC virtuales pueden utilizarse para hacer funcionar las direcciones Additional IP en modo *bridged* en los servidores de las gamas High Grade y Scale.
+
+Si desea utilizar direcciones MAC virtuales para configurar la red con Hyper-V en los servidores de las gamas High Grade o Scale, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ### Gama Advance
 

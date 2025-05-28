@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mails OVHcloud
-excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails'
-updated: 2025-04-07
+excerpt: "Retrouvez les questions les plus fréquemment posées sur les e-mails"
+updated: 2025-05-21
 ---
 
 <style>
@@ -64,6 +64,7 @@ OVHcloud propose actuellement 4 offres e-mail. Pour comprendre leurs spécificit
 >>
 
 > [!success]
+>
 > Sauf précision, les questions abordées ci-dessous concernent l'ensemble des offres e-mail OVHcloud.
 
 /// details | Quelles sont les différences entre les technologies e-mail utilisées par les offres **MX Plan** ?
@@ -90,7 +91,7 @@ La technologie e-mail utilisée pour votre offre MX Plan est caractérisée par 
 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 1. Cliquez sur `MX Plan`{.action}.
 1. Sélectionnez le domaine concerné.
-1. Depuis l'onglet `Informations Générales`{.action}, sélectionnez par défaut.
+1. Depuis l'onglet `Informations Générales`{.action}, sélectionné par défaut.
 1. Relevez la technologie utilisée sous la mention **Webmail**.
 
 ![MX plan](images/technology-email.png){.thumbnail .w-500}
@@ -124,21 +125,22 @@ Le **mot de passe** doit respecter les règles suivantes :
 
 Ci-dessous vous retrouverez les principales raisons d'une absence de réception de vos e-mails.
 
-1. **Logiciel de messagerie** : Un défaut de réception e-mail est souvent lié à la configuration de votre adresse e-mail sur votre logiciel de messagerie (Outlook, Mail de macOS, Thunderbird, etc.). Pour le vérifier, connectez-vous sur le [webmail](/links/web/email). Si vous constatez des e-mails dans votre boite de réception sur le webmail qui ne sont pas présents sur votre logiciel de messagerie, le phénomène provient bien de votre configuration logicielle. Pour plus d'information à ce sujet, consulter notre page [Envoi ou réception des e-mails impossible](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Configuration DNS** : Votre offre e-mail est attachée à un nom de domaine. Dans sa zone DNS, les enregistrements MX désignent les serveurs de réception e-mail. Si vous avez récemment modifié vos serveurs DNS ou votre zone DNS, ces enregistrements MX peuvent avoir été "coupés". Ce qui expliquerait une coupure dans la réception des e-mails.Pour plus d'information à ce sujet, consulter notre page [Envoi ou réception des e-mails impossible](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Quota e-mail dépassé** : Si le quota de stockage de votre compte e-mail est atteint, il n'est plus possible de recevoir des e-mails et votre expéditeur reçoit un message d'erreur indiquant que votre compte e-mail est plein. Gérer l'espace de stockage d'un compte e-mail Pour plus d'information à ce sujet, consulter notre page [Gérer l'espace de stockage d'un compte e-mail ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota).
+1. **Logiciel de messagerie** : Un défaut de réception e-mail est souvent lié à la configuration de votre adresse e-mail sur votre logiciel de messagerie (Outlook, Mail de macOS, Thunderbird, etc.). Pour le vérifier, connectez-vous sur le [webmail](/links/web/email). Si vous constatez des e-mails dans votre boite de réception sur le webmail qui ne sont pas présents sur votre logiciel de messagerie, le phénomène provient bien de votre configuration logicielle. Pour plus d'information à ce sujet, consulter notre page « [Envoi ou réception des e-mails impossible](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced) ».
+1. **Configuration DNS** : Votre offre e-mail est attachée à un nom de domaine. Dans sa zone DNS, les enregistrements MX désignent les serveurs de réception e-mail. Si vous avez récemment modifié vos serveurs DNS ou votre zone DNS, ces enregistrements MX peuvent avoir été « coupés ». Ce qui expliquerait une coupure dans la réception des e-mails.Pour plus d'information à ce sujet, consulter notre page « [Envoi ou réception des e-mails impossible](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced) ».
+1. **Quota e-mail dépassé** : Si le quota de stockage de votre compte e-mail est atteint, il n'est plus possible de recevoir des e-mails et votre expéditeur reçoit un message d'erreur indiquant que votre compte e-mail est plein. Gérer l'espace de stockage d'un compte e-mail Pour plus d'information à ce sujet, consulter notre page « [Gérer l'espace de stockage d'un compte e-mail ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ».
 1. **Règles de boite de réception** : Il est possible qu'une règle de boite de réception puisse empêcher la livraison d'un e-mail dans votre boite de réception ou le rediriger vers le dossier SPAM. Consultez vos règles depuis votre logiciel de messagerie (Outlook, Mail de macOS, Thunderbird, etc.) ou depuis le [webmail](/links/web/email).
-1. **Incident ou maintenance** : Consulter notre page [Web Cloud status](https://web-cloud.status-ovhcloud.com/) pour vérifier si une opération n'est pas en cours sur votre service e-mail.
+1. **Incident ou maintenance** : Consulter notre page « [Web Cloud status](https://web-cloud.status-ovhcloud.com/) » pour vérifier si une opération n'est pas en cours sur votre service e-mail.
 
 > [!primary]
+>
 > **Trucs et Astuces** : Si la connexion à votre webmail est impossible, votre mot de passe est peut-être erroné. Vérifiez-le et, si nécessaire, nous vous invitons à le modifier depuis votre [espace client OVHcloud](/links/manager) et à renouveler votre connexion.
 
 ///
 
 /// details | Que faire si je ne parviens pas à envoyer mes e-mails ?
 
-1. **Logiciel de messagerie** : Un défaut d'envoi peut être lié à la configuration de votre adresse e-mail sur votre logiciel de messagerie (Outlook, Mail de macOS, Thunderbird, etc.). Pour le vérifier, connectez-vous sur le [webmail](/links/web/email). Si vous constatez que vous parvenez à envoyer des e-mails depuis le webmail, le phénomène provient bien de votre configuration logicielle. Pour plus d'information à ce sujet, consultez notre page [Envoi ou réception des e-mails impossible](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Code erreur** : Lorsque vous envoyez un message et que le serveur destinataire le refuse, celui-ci vous renvoie généralement un message d'erreur comprenant un code erreur. Analysez le message d'erreur, il pourra vous en préciser la raison (quota maximal du compte e-mail atteint, adresse e-mail du destinataire inexistante, etc.). Pour plus d'information à ce sujet, consulter notre page [Envoi ou réception des e-mails impossible](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
+1. **Logiciel de messagerie** : Un défaut d'envoi peut être lié à la configuration de votre adresse e-mail sur votre logiciel de messagerie (Outlook, Mail de macOS, Thunderbird, etc.). Pour le vérifier, connectez-vous sur le [webmail](/links/web/email). Si vous constatez que vous parvenez à envoyer des e-mails depuis le webmail, le phénomène provient bien de votre configuration logicielle. Pour plus d'information à ce sujet, consultez notre page « [Envoi ou réception des e-mails impossible](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced) ».
+1. **Code erreur** : Lorsque vous envoyez un message et que le serveur destinataire le refuse, celui-ci vous renvoie généralement un message d'erreur comprenant un code erreur. Analysez le message d'erreur, il pourra vous en préciser la raison (quota maximal du compte e-mail atteint, adresse e-mail du destinataire inexistante, etc.). Pour plus d'information à ce sujet, consulter notre page « [Envoi ou réception des e-mails impossible](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced) ».
 1. **Taille de l'e-mail** : Que ça soit votre fournisseur e-mail ou le serveur destinataire, il existe une limite de taille pour un e-mail. Nous vous conseillons de transmettre principalement des images ou fichiers pdf avec une taille faible. Pour les fichiers volumineux, il est préférable d'utiliser des outils de transfert de fichier tel que [plik.ovh](https://plik.ovh/).
 
 ///
@@ -150,20 +152,20 @@ Ci-dessous vous retrouverez les principales raisons d'une absence de réception 
 
 Il permet aux serveurs qui reçoivent des e-mails de s’assurer que ces derniers ont bien été envoyés depuis un serveur de confiance. Ce protocole est devenu indispensable pour légitimer les échanges d'e-mails. En effet, sans enregistrement SPF sur le nom de domaine de votre service e-mail, vos e-mails risquent d'être considérés comme indésirables par vos destinataires.
 
-Pour savoir comment configurer un enregistrement SPF sur votre service e-mail, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement SPF](pages/web_cloud/domains/dns_zone_spf).
+Pour savoir comment configurer un enregistrement SPF sur votre service e-mail, consultez notre guide « [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) ».
 
 **DKIM (DomainKeys Identified Mail)**
 
 Il permet de signer les e-mails pour éviter l'usurpation d'identité. Cette signature fonctionne sur le principe du hachage combiné à une cryptographie asymétrique. Ce protocole est complémentaire au SPF. Le SPF intervient sur la légitimité du nom de domaine alors que le DKIM s'assure que chaque e-mail est signé par le bon service e-mail lors de l'envoi. Il devient également une référence en termes de sécurité e-mail. Certains services e-mail peuvent également considérer un e-mail comme indésirable s’il n'est pas protégé par une signature DKIM.
 
-Pour savoir comment configurer un enregistrement DKIM sur votre service e-mail, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement DKIM](pages/web_cloud/domains/dns_zone_dkim).
+Pour savoir comment configurer un enregistrement DKIM sur votre service e-mail, consultez notre guide « [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) ».
 
 ///
 
 
 /// details | Comment configurer mon adresse e-mail et l'utiliser avec le webmail ?
 
-Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de Mac, etc.
+Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de macOS, etc.
 Pour ce faire nous vous mettons à disposition des guides afin d'effectuer la mise en place de votre adresse. Vous pouvez les retrouver sur [cette page](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 > [!tabs]
@@ -271,10 +273,10 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 
 /// details | Comment limiter la réception de spams ?
 
-Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MX Plan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception.
-Pour ce faire, connectez-vous à votre [espace client OVHcloud](/links/manager), puis dans la rubrique `E-mail`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`{.action}, cliquez sur le bouton d'action.
+Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelés « Filtres » sur l'offre MX Plan). Ils auront pour but de supprimer des e-mails ou de les déplacer dans le dossier « courriers indésirables » dès leur réception.
+Pour ce faire, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action} et cliquez sur `MX Plan`{.action}. Sélectionnez le domaine concerné, cliquez ensuite sur l'onglet `Emails`{.action}, puis dans la colonne `Filtres`, cliquez sur l'icône « Gestion des filtres du compte ».
 
-Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](/links/web/email). Vous pouvez consulter le guide suivant pour plus de détails : « [Règles de boîte de réception depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) ».
+Si la colonne `Filtres` n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](/links/web/email). Vous pouvez consulter le guide suivant pour plus de détails : « [Règles de boîte de réception depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) ».
 
 **Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à ouvrir une demande d'assistance dans votre [espace client OVHcloud](/links/manager) afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
 

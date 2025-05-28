@@ -1,73 +1,77 @@
 ---
-title: 'Securing your OVHcloud infrastructure with Stormshield Network Security'
-excerpt: 'Find out how to secure your OVHcloud infrastructure with Stormshield Network Security deployed on Public Cloud'
-updated: 2024-12-19
+title: OVHcloud Infrastruktur mit Stormshield Network Security sichern
+excerpt: Erfahren Sie hier, wie Sie Ihre OVHcloud Infrastruktur mit Stormshield Network Security in der Public Cloud absichern können
+updated: 2024-05-12
 ---
 
-## Objective
+## Ziel
 
-In today's rapidly evolving digital landscape, securing cloud infrastructures has become a top priority for organizations of all sizes. As businesses increasingly rely on cloud solutions for their operations, ensuring the protection of sensitive data and maintaining network integrity are critical tasks. Stormshield SNS EVA (Stormshield Elastic Virtual Appliance) is a comprehensive security solution designed to protect cloud environments from a wide range of threats. 
+Da Unternehmen zunehmend auf Cloud-Lösungen angewiesen sind, hat die Absicherung von Cloud-Infrastrukturen oberste Priorität beim Schutz sensibler Daten und der Aufrechterhaltung der Netzwerkintegrität. Stormshield SNS EVA (Elastic Virtual Appliance) ist eine umfassende Sicherheitslösung, die Cloud-Umgebungen vor einer Vielzahl von Bedrohungen schützt.
 
-This guide provides step-by-step instructions for deploying and configuring SNS EVA on the OVHcloud Public Cloud with vRack and public IP routing, covering key features such as network firewalls, IPSec VPNs, and SSL/TLS VPNs. By following this guide, you will enhance the security of your OVHcloud Public Cloud infrastructure and ensure safe and secure operations.
+In dieser Anleitung erhalten Sie Schritt-für-Schritt-Anweisungen zum Deployment und zur Konfiguration von SNS EVA auf der OVHcloud Public Cloud mit vRack und öffentlichem IP-Routing. Sie decken die wichtigsten Funktionen wie Netzwerk-Firewalls, IPsec-VPNs und SSL/TLS-VPNs ab. Indem Sie dieses Tutorial anwenden, erhöhen Sie die Sicherheit Ihrer OVHcloud Public Cloud Infrastruktur und gewährleisten die Sicherheit Ihrer Operationen.
 
-**This guide explains how to secure your OVHcloud infrastructure with Stormshield Network Security deployed on Public Cloud.**
+**Diese Anleitung erklärt, wie Sie Ihre OVHcloud Infrastruktur mit Stormshield Network Security in der Public Cloud absichern.**
 
 > [!warning]
-> This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
+> In diesem Tutorial erläutern wir die Verwendung von OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Möglicherweise müssen Sie bestimmte Anweisungen an Ihre Umgebung oder individuelle Bedürfnisse anpassen.
 >
-> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
+> Wir empfehlen, bei Schwierigkeiten bezüglich der Umsetzung einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
-## Requirements
+## Voraussetzungen
 
-- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
-- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
-- Basic networking knowledge
-- A Stormshield account on the [Stormshield website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}
-- Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
-- An [Additional IP address](/links/network/additional-ip) for ensuring network failover and high availability setup.
-- Stormshield Elastic Virtual Appliance licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained through [third-party partners or resellers](https://www.stormshield.com/partner/partner-finder/){.external}, as you will need to provide it during the installation and configuration process.
+- Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
+- Sie haben Grundkenntnisse in Networking.
+- Sie haben auf der [Stormshield-Website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external} einen Stormshield-Account erstellt.
+- Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
+- Sie haben eine [Additional IP-Adresse](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
+- Sie haben eine Stormshield Elastic Virtual Appliance Lizenz (**B**ring **Y**our **O**wn **L**icence) von [Partnern oder Drittanbietern](https://www.stormshield.com/partner/partner-finder/){.external} erworben. Diese ist zur Installation und Konfiguration erforderlich.
 
-## Instructions
+## In der praktischen Anwendung
 
-In addition to the installation and configuration of Stormshield Network Security, this tutorial offers different use cases based on your needs:
+Zusätzlich zur Installation und Konfiguration von Stormshield Network Security werden in diesem Tutorial verschiedene Anwendungsbeispiele vorgestellt:
 
-- [Install and configure Stormshield Network Security on your Public Cloud environment](#step1)
-- [Use case 1: configure Stormshield Network Security to be used as a gateway](#step2)
-- [Use case 2: configure a NAT to access a private HTTP service from outside](#step3)
-- [Use case 3: IPsec tunnel (site-to-site)](#step4)
-- [Use case 4: SSL/TLS VPN (client-to-site)](#step5)
+- [Installieren und Konfigurieren von Stormshield Network Security in Ihrer Public Cloud-Umgebung](#step1)
+- [Anwendungsfall 1: Konfigurieren von Stormshield Network Security zur Verwendung als Gateway](#step2)
+- [Anwendungsfall 2: Konfigurieren von NAT (**N**etwork **A**ddress **T**ranslation) für den Zugriff auf einen externen privaten HTTP-Dienst](#step3)
+- [Anwendungsfall 3: IPsec-Tunnel (Site-to-Site)](#step4)
+- [Anwendungsfall 4: SSL/TLS VPN (Client-to-Site)](#step5)
 
-### Install and configure Stormshield Network Security on your Public Cloud environment <a name="step1"></a>
+<a name="step1"></a>
+
+### Installieren und konfigurieren Sie Stormshield Network Security auf Ihrer Public Cloud Umgebung
 
 > [!primary]
-> In this tutorial, the installation and configuration of Stormshield SNS EVA is done primarily via the command line. Open a terminal to execute the instructions.
+> In dieser Anleitung erfolgt die Installation und Konfiguration von Stormshield SNS EVA hauptsächlich über die Befehlszeile. Öffnen Sie ein Terminal, um die Anweisungen auszuführen.
 >
-> Please note that all sections related to « High Availability » or « stormshield-2 » are optional as well as using vRack network with Additional IP. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. In a minimal version, it can also work with just one instance if that is sufficient for your needs.
+> Beachten Sie, dass alle Abschnitte zu "High Availability" oder "Stormshield-2" optional sind und die Verwendung des vRack Netzwerks mit Additional IP ebenfalls optional ist. Es wird veranschaulicht, wie das System mit zwei Instanzen im Aktiv/Passiv Modus für hohe Verfügbarkeit eingerichtet wird. In einer minimalen Version kann es auch mit einer einzigen Instanz arbeiten, wenn dies Ihren Bedürfnissen genügt.
 
 > [!primary]
-> In this scenario, we will use a two virtual machines setup for the security appliance to achieve High Availability (HA), and an additional VM for management. This setup ensures failover protection and continuous service availability. For more examples and detailed guidance on scalability options, please refer to the [Stormshield documentation](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-EN.htm){.external}.
+> In diesem Szenario verwenden wir zwei virtuelle Maschinen, die für die Sicherheitsanwendung konfiguriert sind, um hohe Verfügbarkeit (HA) zu erreichen, sowie einen zusätzliche virtuelle Maschine für die Verwaltung der Sicherheitsanwendung. Diese Konfiguration gewährleistet den Schutz vor Ausfällen und die kontinuierliche Verfügbarkeit des Dienstes. Weitere Beispiele und ausführliche Hilfe zu den Skalierungsoptionen finden Sie in der [Stormshield-Dokumentation](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-EN.htm){.external}.
 
-#### Configure your vRack
+#### vRack konfigurieren
 
-In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your Additional IP block to the same vRack, you can enable your SNS EVA instances to communicate securely, while keeping full control over IP address management. Private vRack network also allows you to secure Baremetal Cloud servers or Private Cloud VMs with security appliances deployed on top of Public Cloud.
+In diesem Schritt konfigurieren wir das vRack, ein privates virtuelles Netzwerk, das von OVHcloud bereitgestellt wird. Mit dem vRack können Sie mehrere Instanzen oder Server in einer Public Cloud Umgebung untereinander verbinden, was die Isolierung des Netzwerks und gleichzeitig eine sichere Kommunikation gewährleistet.
 
-**Add your Public Cloud project and your Additional IP block to the same vRack.**
+Indem Sie Ihr Public Cloud Projekt und Ihren Additional IP Block zum selben vRack hinzufügen und Routing für öffentliche IP-Adressen einrichten, erlauben Sie Ihren EVA SNS Instanzen Instanzen eine sichere Kommunikation, während Sie gleichzeitig die volle Kontrolle über die Verwaltung der IP-Adressen behalten. Das private Netzwerk vRack erlaubt Ihnen auch die Absicherung von Bare Metal Servern oder Private Cloud VMs mit in der Public Cloud bereitgestellten Sicherheitsanwendungen.
 
-For example purposes in this guide, the IP block is `147.135.161.152/29`.<br>
-We use the first usable IP `147.135.161.153` for the first SNS EVA instance and temporarily use the second usable IP `147.135.161.154` for the second SNS EVA instance.<br>
-The gateway address is `147.135.161.158`.
+**Public Cloud Projekt und Additional IP Block zum selben vRack hinzufügen.**
 
-Please refer to the guide [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) for more information.
+Für dieses Beispiel ist der IP-Block `147.135.161.152/29`.  
+Wir verwenden die erste verwendbare IP `147.135.161.153` für die erste Instanz von SNS EVA und vorübergehend die zweite verwendbare IP `147.135.161.154` für die zweite SNS EVA.  
+Die Gateway-Adresse lautet `147.135.161.158`.
 
-Below is the architecture that we are going to set up.
+Weitere Informationen finden Sie in der Anleitung "[IP-Block in einem vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)".
+
+Hier sehen Sie die Architektur, die wir implementieren werden.
 
 ![SNS EVA vrack](images/stormshield-ha-vrack.png){.thumbnail}
 
-#### Configure OpenStack networking
+### Netzwerk OpenStack konfigurieren
 
-Create the private network for the SNS EVA external interfaces:
+Erstellen Sie das private Netzwerk für externe SNS EVA Interfaces:
 
 ```bash
 openstack network create --provider-network-type vrack --provider-segment 0 --disable-port-security stormshield-ext
@@ -77,7 +81,7 @@ openstack network create --provider-network-type vrack --provider-segment 0 --di
 openstack subnet create --network stormshield-ext --subnet-range 192.168.1.0/29 --dhcp stormshield-ext
 ```
 
-Create the private network for the SNS EVA internal interfaces:
+Erstellen Sie das private Netzwerk für die internen Interfaces des EVA SNS:
 
 ```bash
 openstack network create --provider-network-type vrack --provider-segment 200 --disable-port-security stormshield-vlan200
@@ -87,7 +91,7 @@ openstack network create --provider-network-type vrack --provider-segment 200 --
 openstack subnet create --network stormshield-vlan200 --subnet-range 10.200.0.0/16 --dhcp --dns-nameserver <dns_address_ip> stormshield-vlan200
 ```
 
-Create the private network for the SNS HA (**H**igh **A**vailability) interfaces:
+Erstellen Sie das private Netzwerk für die SNS HA Interfaces (**H**igh **A**vailability):
 
 ```bash
 openstack network create --provider-network-type vrack --provider-segment 199 --disable-port-security stormshield-ha
@@ -97,17 +101,17 @@ openstack network create --provider-network-type vrack --provider-segment 199 --
 openstack subnet create --network stormshield-ha --subnet-range 192.168.2.0/29 --dhcp --gateway none stormshield-ha
 ```
 
-#### Deploy the SNS EVA instances
+#### EVA SNS Instanzen deployen
 
-Go to the `download` section of the [official Stormshield website](https://documentation.stormshield.eu/SNS/v4/fr/Content/PAYG_Deployment_Guide/Downloading_installation_file.htm){.external}. Log in to your Stormshield account and follow the instructions to download the Stormshield OpenStack image.
+Gehen Sie in den Bereich `Download` auf der [offiziellen Website von Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/PAYG_Deployment_Guide/Downloading_installation_file.htm){.external}. Melden Sie sich mit Ihrem Stormshield-Account an, und folgen Sie den Anweisungen zum Herunterladen des Stormshield OpenStack Images.
 
-Go to the folder where you have downloaded your SNS EVA Openstack image and upload the image (in this tutorial, we use the image `utm-SNS-EVA-4.8.3-openstack.qcow2`):
+Gehen Sie in den Ordner, in den Sie Ihr OpenStack EVA SNS Image hochgeladen haben, und importieren Sie das Image (für diese Anleitung verwenden wir das Image `utm-SNS-EVA-4.8.3-openstack.qcow2`):
 
 ```bash
 openstack image create --disk-format raw --container-format bare --file ./utm-SNS-EVA-4.8.3-openstack.qcow2 stormshield-SNS-EVA-4.7.6
 ```
 
-Create the SNS EVA instances (in this example, we called them `stormshield-1` and `stormshield-2`):
+Erstellen Sie die EVA SNS Instanzen (in diesem Beispiel haben wir sie `stormshield-1` und `stormshield-2` genannt):
 
 ```bash
 openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-1
@@ -118,7 +122,7 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --netwo
 ```
 
 > [!primary]
-> For performance reasons we suggest using listed VM flavors for given SNS EVA licence types:
+> Zur Optimierung der Performance empfehlen wir die folgenden EVA SNS-Lizenztypen für unsere VM-Versionen:
 >
 > - EVA1: B3-8 / B3-16
 > - EVA2: B3-16 / B3-32
@@ -127,27 +131,31 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --netwo
 > - EVAU: B3-128 / B3-256
 >
 
-#### Configure the SNS EVA instances
+### SNS EVA Instanzen konfigurieren
 
-Log into the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the relevant Public Cloud project. In the left menu, click on `Instances`{.action} under the **Compute** tab, then find your two SNS EVA instances.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.  Klicken Sie im linken Menü auf `Instanzen`{.action} unter **Compute** und finden Sie Ihre beiden SNS EVA Instanzen.
 
-Access the VNC console for both SNS EVA instances and configure the keyboard layout and the password.
+Greifen Sie für beide EVA SNS-Instanzen auf die VNC-Konsole zu, und konfigurieren Sie das Tastaturlayout und das Kennwort.
 
-Configure the default gateway on the first SNS EVA with our IP block gateway:
+Konfigurieren Sie das Standard-Gateway auf der ersten EVA SNS mit unserem IP-Block-Gateway:
+
+```bash
+vi /usr/Firewall/ConfigFiles/object
+```
 
 ```console
-vi /usr/Firewall/ConfigFiles/object
-
 [Host]
 Firewall_out_router=147.135.161.158,resolve=static
 ...
 ```
 
-Configure the external network interface on the first SNS EVA instance with the first usable IP address of our IP block and the internal network interface with the `10.200.0.1` IP address:
+Konfigurieren Sie das externe Netzwerk-Interface auf dem ersten EVA SNS mit der ersten verwendbaren IP-Adresse unseres IP-Blocks und das interne Netzwerk-Interface mit der IP-Adresse `10.200.0.1`:
+
+```bash
+vi /usr/Firewall/ConfigFiles/network
+```
 
 ```console
-vi /usr/Firewall/ConfigFiles/network
-
 ...
 [ethernet0]
 ...
@@ -161,261 +169,270 @@ Mask=255.255.0.0
 ...
 ```
 
-Apply the new network configuration:
+Neue Netzwerkkonfiguration anwenden:
 
 ```bash
 ennetwork
 ```
 
-Do the same configuration for the second SNS EVA instance but with the second IP address `147.135.161.154` of our IP block for the external interface instead of `147.135.161.153`.
+Führen Sie dieselbe Konfiguration für das zweite EVA SNS aus, jedoch mit der zweiten IP-Adresse `147.135.161.154` unseres IP-Blocks für die externe Schnittstelle anstelle von `147.135.161.153`.
 
-Add a different licence on both SNS EVA instances by following the [official documentation](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}.
+Fügen Sie eine andere Lizenz für die beiden EVA SNS Instanzen hinzu, indem Sie die [offizielle Dokumentation](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external} befolgen.
 
-Create a firewall rule similar to this on both SNS EVA intances in the web GUI:
+Erstellen Sie eine Firewall-Regel auf beiden EVA SNS in der Web-GUI:
 
 ![SNS EVA vrack](images/ha-filter.png){.thumbnail}
 
-On the first SNS EVA instance, create a group of firewalls (`Configuration` > `System` > `High Availability`). For the IP address, check which IP was assigned to the HA interface by the OpenStack DHCP.
+Erstellen Sie auf dem ersten EVA SNS eine Firewall-Gruppe (`Configuration` > `System` > `High Availability`). Überprüfen Sie bezüglich der IP-Adresse, welche IP vom OpenStack DHCP dem HA Interface zugewiesen wurde.
 
 ![SNS EVA vrack](images/ha-1.png){.thumbnail}
 
 ![SNS EVA vrack](images/ha-2.png){.thumbnail}
 
-When the configuration of the HA is finished on the first SNS EVA, join the group of firewalls on the second one:
+Wenn die HA Konfiguration auf dem ersten EVA SNS abgeschlossen ist, treten Sie der Firewall-Gruppe auf dem zweiten SNS EVA bei:
 
 ![SNS EVA vrack](images/ha-3.png){.thumbnail}
 
 ![SNS EVA vrack](images/ha-4.png){.thumbnail}
 
-The second SNS EVA external interface will now use the same IP address as the first SNS EVA. Therefore the `147.135.161.154` IP address can be used for something else now.
+Die zweite externe Schnittstelle des EVA SNS verwendet nun dieselbe IP-Adresse wie die erste. Daher kann die IP-Adresse `147.135.161.154` nun für andere Zwecke verwendet werden.
 
-If everything is configured properly, after the reboot of the second SNS EVA, you should see something similar to this in the Health Indicators of the HA Link:
+Wenn alles korrekt konfiguriert ist, sollten Sie nach dem Neustart des zweiten EVA SNS in den Health Indicators des HA Links beispielhaft Folgendes sehen:
 
 ![SNS EVA vrack](images/ha-5.png){.thumbnail}
 
-#### Configure and secure the SNS EVA management
+### Konfiguration und Absicherung der Verwaltung des EVA SNS
 
 > [!tabs]
-> **Step 1**
+> **Schritt 1**
 >>
->> Get your public IP:
+>> Rufen Sie Ihre öffentliche IP-Adresse ab:
 >>
 >> ```console
 >> curl ipinfo.io/ip
 >> <ip_address>
 >> ```
 >>
-> **Step 2**
+> **Schritt 2**
 >>
->> Create a host object for your public IP:
+>> Erstellen Sie ein Host-Objekt für Ihre öffentliche IP-Adresse:
 >>
 >>![SNS EVA vrack](images/configure-management-1.png){.thumbnail}
 >>
-> **Step 3**
+> **Schritt 3**
 >>
->>  Restrict access to the GUI to your public IP and enable SSH:
+>> Beschränken Sie den Zugriff auf die GUI auf Ihre öffentliche IP-Adresse und aktivieren Sie SSH:
 >>
 >> ![SNS EVA vrack](images/configure-management-2.png){.thumbnail}
 >>
-> **Step 4**
+> **Schritt 4**
 >>
->> Restrict SSH access to your public IP:
+>> Schränken Sie den SSH-Zugriff auf Ihre öffentliche IP-Adresse ein:
 >>
 >> ![SNS EVA vrack](images/configure-management-3.png){.thumbnail}
 
-#### Re-synchronize the HA configuration
+### HA-Konfiguration neu synchronisieren
 
-The synchronization between the two SNS EVA instances is crucial to ensure that both firewalls are always up to date with the same configuration. This can be done through the SSH command line or directly via the graphical user interface (GUI).
+Die Synchronisierung zwischen den beiden EVA SNS Instanzen ist entscheidend, um sicherzustellen, dass beide Firewalls immer auf dem neuesten Stand der Konfiguration sind. Dies kann über die SSH-Befehlszeile oder direkt über die grafische Benutzeroberfläche (GUI) erfolgen.
 
 > [!primary]
-> For this example, we use the SSH command line solution. If you prefer to use the GUI for synchronization, refer to the « High Availability screen » section in the [Stormshield SNS EVA documentation](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/High_Availability/High_availability_screen.htm){.external} for detailed steps.
+> In diesem Beispiel verwenden wir die Befehlszeilenlösung über SSH. Wenn Sie die GUI zur Synchronisierung bevorzugen, finden Sie in der [Stormshield SNS EVA-Dokumentation](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/High_Availability/High_availability_screen.htm){.external} ausführliche Schritte.
 
-At this point, the two SNS EVA instances should not be in sync anymore as we configured a large number of parameters on the first instance that the second is not aware of.
+Zu diesem Zeitpunkt sind die beiden SNS EVA Instanzen nicht mehr synchron, da wir eine große Anzahl von Parametern auf der ersten Instanz konfiguriert haben, die der zweiten Instanz nicht bekannt ist.
 
-Log in to the active SNS EVA instance using SSH:
+Verbinden Sie sich via SSH mit der aktiven SNS EVA Instanz:
 
 ```bash
 ssh admin@<ip_address>
 ```
 
-Synchronize the two SNS EVA:
+Synchronisieren Sie die beiden EVA SNS:
+
 
 ```bash
 hasync
 ```
 
-You need to do this each time you update the configuration.
+Dieser Vorgang ist bei jeder Aktualisierung der Konfiguration erforderlich.
 
-### Use cases configuration
+### Anwendungsfall-Konfigurationen
 
-After deploying SNS Elastic Virtual Appliance firewall, it can be used in multiple advanced security scenarios such as IPsec VPN, SSL/TLS VPN, network gateways (IN or OUT) as described below.
-Thanks to the vRack private network, listed VLANs can also be used outside the Public Cloud environment: across Bare Metal or Private Cloud products.
+Nach der Bereitstellung der EVA SNS-Firewall kann sie in mehreren erweiterten Sicherheitsszenarien wie IPsec VPN, SSL/TLS VPN, Netzwerk-Gateways (IN oder OUT) verwendet werden, wie unten beschrieben.  
+Dank des privaten vRack Netzwerks können die aufgeführten VLANs auch außerhalb der Public Cloud Umgebung verwendet werden: bei Bare Metal oder Private Cloud Produkten.
 
-#### Use case 1: Configure Stormshield Network Security to be used as a gateway <a name="step2"></a>
+<a name="step2"></a>
 
-In this example, the virtual firewall will act as a secure gateway for private instances (or any other server) within the VLAN200 of the given vRack network. Such traffic can be a subject for URL filtering on the firewall.
+#### Anwendungsfall 1: Konfigurieren von Stormshield Network Security zur Verwendung als Gateway
 
-![SNS EVA vrack](images/stormshield-gateway.png){.thumbnail}
+In diesem Beispiel fungiert die virtuelle Firewall als sicheres Gateway für private Instanzen (oder andere Server) innerhalb des VLAN200 des jeweiligen vRack-Netzwerks. Für diese Art von Datenverkehr kann eine URL-Filterung in der Firewall durchgeführt werden.
 
-- Create a network object for the VLAN200 by following this [part of the official Stormshield documentation](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external}.
+![SNS EVA vRack](images/stormshield-gateway.png){.thumbnail}
 
-- [Create a new filter rule](https://documentation.stormshield.com/SNS/v4/en/Content/HowTo_-_IPSec_VPN_-_Authentication_by_certificate/Setup-Main-Site-30-Creating-Filtering-policy.htm){.external} similar to this one to allow the traffic coming from VLAN200 to go out: 
+- Erstellen Sie ein Netzwerkobjekt für das VLAN200 gemäß [diesem Teil der offiziellen Stormshield-Dokumentation](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external}.
+
+- [Erstellen Sie eine neue Filterregel](https://documentation.stormshield.com/SNS/v4/en/Content/HowTo_-_IPSec_VPN_-_Authentication_by_certificate/Setup-Main-Site-30-Creating-Filtering-policy.htm){.external}, die es ermöglicht, dass der Datenverkehr vom VLAN200 ausgeht:
 
 ![SNS EVA vrack](images/gateway-2.png){.thumbnail}
 
-- [Create a NAT rule](https://documentation.stormshield.eu/SNS/v4/en/Content/SNS_for_Cloud_-_VMWare_NSX/NAT-Rules.htm){.external} similar to this one:
+- [Erstellen Sie eine NAT-Regel](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Filtering_and_NAT/NAT_tab.htm){.external} ähnlich dieser:
 
 ![SNS EVA vrack](images/gateway-3.png){.thumbnail}
 
-Synchronize the two HA SNS EVA instances:
+Synchronisieren Sie die beiden HA SNS EVA Instanzen:
 
 ```bash
 ssh admin@<ip_address>
 hasyn
 ```
 
-##### Verify if an instance can reach the Internet from VLAN200
+##### Überprüfen, ob eine Instanz vom VLAN200 aus das Internet erreichen kann
 
-[Import your SSH public key](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external}:
+[Importieren Sie Ihren öffentlichen SSH-Schlüssel](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external}:
 
 ```bash
 openstack keypair create --public-key ~/.ssh/id_rsa.pub <name>
 ```
 
-Create an instance on VLAN200:
+Erstellen Sie eine Instanz im VLAN200:
 
 ```bash
 openstack server create --flavor b2-7 --image "Ubuntu 22.04" --network stormshield-vlan200 --key-name <name> ubuntu-webserver
 ```
 
-Log-in via SSH to the SNS EVA instance:
+Verbinden Sie sich via SSH mit der SNS EVA Instanz:
 
 ```bash
 ssh -A admin@<instance_ip>
 ```
 
-From the SNS EVA instance, log-in via SSH to the Ubuntu webserver. Check which IP was assigned to your Ubuntu webserver instance by the OpenStack DHCP:
+Verbinden Sie sich via SSH mit dem Ubuntu Webserver. Überprüfen Sie, welche IP-Adresse Ihrer Ubuntu Webserver-Instanz vom OpenStack DHCP zugewiesen wurde:
 
 ```bash
 ssh ubuntu@<ip_address>
 ```
 
-Test if you can reach a public website:
+Testen Sie, ob Sie eine öffentliche Website erreichen können:
 
 ```bash
-curl -I https://www.ovh.com/manager/
+curl -I https://www.ovh.de/
 HTTP/2 200
 ```
 
-#### Use case 2: Configure a NAT to access a private HTTP service from the outside <a name="step3"></a>
+<a name="step3"></a>
 
-In this example, the Internet should be able to reach the private web server installed in VLAN200. The aim of this configuration is to protect the web server with a network firewall.
+#### Anwendungsfall 2: Konfigurieren Sie NAT, um von außen auf einen privaten HTTP-Dienst zuzugreifen
+
+In diesem Beispiel sollte das Internet den privaten Webserver erreichen können, der auf VLAN200 installiert ist. Zweck dieser Konfiguration ist es, den Webserver mit einer Netzwerk-Firewall zu schützen.
 
 ![SNS EVA vrack](images/stormshield-nat-http.png){.thumbnail}
 
 > [!tabs]
-> **Step 1**
+> **Schritt 1**
 >>
->> Install Nginx on the ubuntu-webserver instance:
+>> Installieren Sie Nginx auf der Ubuntu Webserver-Instanz:
 >>
 >> ```bash
 >> sudo apt-get update
 >> sudo apt-get install -y nginx
 >> ```
 >>
-> **Step 2**
+> **Schritt 2**
 >>
->> Create a host object for the ubuntu-webserver:
+>> Erstellen Sie ein Host-Objekt für die Ubuntu Webserver-Instanz:
 >>
 >>![SNS EVA vrack](images/nat-1.png){.thumbnail}
 >>
-> **Step 3**
+> **Schritt 3**
 >>
->> Create a NAT rule like this one:
+>> Erstellen Sie eine NAT-Regel nach diesem Beispiel:
 >>
 >> ![SNS EVA vrack](images/nat-2.png){.thumbnail}
 >>
-> **Step 4**
+> **Schritt 4**
 >>
->> Create a filter rule like this one:
+>> Erstellen Sie eine Filterregel nach diesem Beispiel:
 >>
 >> ![SNS EVA vrack](images/nat-3.png){.thumbnail}
 >>
 
-Test to access the website from outside:
+Testen Sie den externen Zugriff auf die Website:
 
 ```bash
 curl -I http://<ip_address>
 HTTP/1.1 200 OK
 ```
 
-Synchronize the two HA SNS EVA instances:
+Synchronisieren Sie die beiden HA SNS EVA Instanzen:
 
 ```bash
 ssh admin@<ip_address>
 hasyn
 ```
 
-#### Use case 3: IPsec tunnel (site-to-site) <a name="step4"></a>
+<a name="step4"></a>
 
-In this example, IPsec tunnel is configured to interconnect two different PCI regions: SBG7 (network VLAN200) and GRA11 (network VLAN201), but any of these sites could be a remote site such as an office or datacentre.
+#### Anwendungsfall 3: IPsec-Tunnel (Site-to-Site)
 
-![SNS EVA vrack](images/stormshield-ipsec.png){.thumbnail}
+In diesem Beispiel ist der IPsec-Tunnel so konfiguriert, dass zwei verschiedene PCI-Regionen miteinander verbunden werden: SBG7 (VLAN200 Netzwerk) und GRA11 (VLAN201 Netzwerk), aber jeder dieser Standorte kann ein Remote-Standort wie ein Desktop oder ein Rechenzentrum sein.
 
-Re-do all the steps in another region using the VLAN 201 instead of the VLAN 200 and different IP ranges for the stormshield-ext and stormshield-ha subnet.
+![SNS EVA vRack](images/stormshield-ipsec.png){.thumbnail}
 
-##### **Configure the first site**
+Wiederholen Sie alle Schritte in einer anderen Region mit VLAN 201 anstelle von VLAN 200 und mit verschiedenen IP-Adressbereichen für die Subnetze stormshield-ext und stormshield-ha.
 
-- [Add a host object](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external} for the remote SNS EVA and add a network object for the VLAN201 remote private network.
+##### **Ersten Standort konfigurieren**
 
-- [Create a standard site-to-site tunnel](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/Encryption_policy-Tunnels_tab-Site_to_Site-Creating.htm){.external}.
+- [Host-Objekt hinzufügen](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external} für Remote-EVA-SNS und ein Netzwerk-Objekt für das private VLAN201-Remote-Netzwerk hinzufügen.
+
+- [Standortübergreifenden Standorttunnel erstellen](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/Encryption_policy-Tunnels_tab-Site_to_Site-Creating.htm){.external}.
 
 > [!tabs]
-> **Step 1**
+> **Schritt 1**
 >>
->> Add the local and the remote private network:
+>> Fügen Sie das private LAN und das private Remote-Netzwerk hinzu:
 >>
 >>![SNS EVA vrack](images/ipsec-3.png){.thumbnail}
 >>
-> **Step 2**
+> **Schritt 2**
 >>
->> Create the remote gateway:
+>> Remote-Gateway erstellen:
 >>
 >>![SNS EVA vrack](images/ipsec-4.png){.thumbnail}
 >>
-> **Step 3**
+> **Schritt 3**
 >>
->> Choose a pre-shared key:
+>> Wählen Sie einen vorinstallierten Schlüssel aus:
 >>
 >>![SNS EVA vrack](images/ipsec-5.png){.thumbnail}
 >>
-> **Step 4**
+> **Schritt 4**
 >>
->> Create and activate the tunnel:
+>> rstellen und aktivieren Sie den Tunnel:
 >>
 >>![SNS EVA vrack](images/ipsec-7.png){.thumbnail}
 >>
-> **Step 5**
+> **Schritt 5**
 >>
->> Add a filter rule like this one to allow traffic through the tunnel:
+>> Fügen Sie eine Filterregel wie diese hinzu, um den Datenverkehr durch den Tunnel zuzulassen:
 >>
 >>![SNS EVA vrack](images/ipsec-8.png){.thumbnail}
 >>
 
-Synchronize the two HA SNS EVA instances:
+Synchronisieren Sie die beiden HA SNS EVA Instanzen:
+
+
 
 ```bash
 ssh admin@<ip_address>
 hasync
 ```
 
-##### **Configure the second site**
+##### **Zweiten Standort konfigurieren**
 
-Do exactly the same as for the first site, but use VLAN200 for the remote private network and the appropriate IP address for the OVH_REMOTE_FW.
+Gehen Sie genauso vor wie beim ersten Standort, aber verwenden Sie VLAN200 für das private Remote-Netzwerk und die entsprechende IP-Adresse für OVH_REMOTE_FW.
 
-##### **Test the IPsec VPN tunnel**
+##### **Testen Sie den IPsec-VPN-Tunnel**
 
-From the first site private webserver instance:
+Von der ersten Instanz des privaten Webservers der Seite:
 
 ```console
 ssh -A admin@<ip_address>
@@ -426,7 +443,7 @@ PING <ip_address>(<ip_address>) 56(84) bytes of data.
 64 bytes from <ip_address>: icmp_seq=2 ttl=64 time=14.0 ms
 ```
 
-From the second site private webserver instance:
+Von der zweiten Instanz des privaten Webservers der Seite:
 
 ```console
 ssh -A admin@<ip_address>
@@ -437,112 +454,114 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 64 bytes from <ip_address>: icmp_seq=3 ttl=64 time=16.4 ms
 ```
 
-#### Use case 4: SSL/TLS VPN (client-to-site) <a name="step5"></a>
+<a name="step5"></a>
 
-In this example, a remote OpenVPN client will connect to the private network inside VLAN200.
+#### Anwendungsfall 4: SSL/TLS VPN (Client-to-Site)
+
+In diesem Beispiel stellt ein Remote OpenVPN Client eine Verbindung mit dem privaten Netzwerk innerhalb von VLAN200 her.
 
 ![SNS EVA vrack](images/stormshield-ssl-vpn.png){.thumbnail}
 
-##### **Configuring the LDAP directory**
+##### **Konfigurieren des LDAP Directory**
 
-- [Create an internal LDAP directory](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Directory_configuration/Creating_an_internal_LDAP.htm){.external} to manage the VPN users.
+- [Erstellen Sie ein internes LDAP-Verzeichnis](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Directory_configuration/Creating_an_internal_LDAP.htm){.external}, um VPN-Benutzer zu verwalten.
 
-In a production scenario, this LDAP/AD should be remote and not local.
+In einem Produktionsszenario muss dieses LDAP/AD *remote* und nicht lokal sein.
 
 ![SNS EVA vrack](images/ssl-vpn-1.png){.thumbnail}
 
-- Create the user directory:
+- Benutzerverzeichnis erstellen:
 
 ![SNS EVA vrack](images/ssl-vpn-2.png){.thumbnail}
 
-- Add a user to our local directory:
+- Fügen Sie einen Benutzer zu unserem lokalen Verzeichnis hinzu:
 
 ![SNS EVA vrack](images/ssl-vpn-3.png){.thumbnail}
 
-- Choose a password for the new user:
+- Wählen Sie ein Passwort für den neuen Benutzer aus:
 
 ![SNS EVA vrack](images/ssl-vpn-4.png){.thumbnail}
 
-##### **Configuring VPN network objects**
+##### **VPN-Netzwerk-Oobjekte konfigurieren**
 
-Create two network objects for the SSL VPN client.
+Erstellen Sie zwei Netzwerk-Objekte für den SSL VPN Client.
 
-UDP client network:
+UDP Client-Netzwerk:
 
 ![SNS EVA vrack](images/ssl-vpn-5.png){.thumbnail}
 
-TCP client network:
+TCP Client-Netzwerk:
 
 ![SNS EVA vrack](images/ssl-vpn-6.png){.thumbnail}
 
-##### **SSL VPN server configuration**
+##### **Konfiguration des SSL VPN Servers**
 
-Configure the SSL VPN server:
+Konfigurieren Sie den SSL VPN Server:
 
 ![SNS EVA vrack](images/ssl-vpn-7.png){.thumbnail}
 
-##### **Managing user permissions**
+##### **Verwaltung der Benutzerrechte**
 
-Add permission to your user to use the SSL VPN server (`Configuration` > `Users` > `Access privileges` > `Detailed Access` > `Add`)
+Fügen Sie Ihrem Benutzer die Berechtigung zur Verwendung des SSL VPN Servers hinzu (`Configuration` > `Users` > `Access privileges` > `Detailed Access` > `Add`).
 
-Search your user:
+Suchen Sie nach Ihrem Benutzer:
 
 ![SNS EVA vrack](images/ssl-vpn-8.png){.thumbnail}
 
-Allow SSL VPN:
+SSL VPN erlauben:
 
 ![SNS EVA vrack](images/ssl-vpn-9.png){.thumbnail}
 
-##### **Configuring filter rules**
+##### **Filterregeln konfigurieren**
 
-Add a filter rule like this one to let VPN client access the VLAN200:
+Fügen Sie eine Filterregel wie diese hinzu, um dem VPN-Client den Zugriff auf das VLAN200 zu ermöglichen:
 
 ![SNS EVA vrack](images/ssl-vpn-10.png){.thumbnail}
 
-##### **Synchronization of SNS EVA instances**
+##### **Synchronisierung der SNS Instanzen**
 
-Synchronize the two HA SNS EVA instances:
+Synchronisieren Sie die beiden HA SNS EVA Instanzen:
 
 ```bash
 ssh admin@<ip_address>
 hasync
 ```
 
-##### **Test the SSL/TLS VPN**
+##### **SSL/TLS VPN testen**
 
 > [!primary]
-> To test SSL/TLS connectivity, you can use any device with OpenVPN installed. This example includes testing an OpenVPN client on top of an OpenStack instance in another region.
+> Um die SSL/TLS Konnektivität zu testen, verwenden Sie ein Gerät, auf dem OpenVPN installiert ist. In diesem Beispiel wird ein OpenVPN-Client über einer OpenStack Instanz in einer anderen Region getestet.
 >
-> In this example, we use the OpenVPN client, but you can also use the [Stormshield packaged version](https://vpn.stormshield.eu/){.external}.
+> In diesem Beispiel verwenden wir den OpenVPN Client. Sie können auch die [Stormshield Paketversion](https://vpn.stormshield.eu/){.external} verwenden.
 
-Download the VPN configuration file (`Configuration` > `VPN` > `SSL VPN` > `Advanced configuration` > `Export the configuration file`).
+Laden Sie die VPN-Konfigurationsdatei herunter (`Configuration` > `VPN` > `SSL VPN` > `Advanced configuration` > `Export the configuration file`).
 
-Create a public OpenVPN client instance in the region of your choice:
+Erstellen Sie eine öffentliche OpenVPN Client Instanz in der Region Ihrer Wahl:
 
 ```bash
 openstack server create --flavor b2-7 --image "Ubuntu 22.04" --network Ext-Net --key-name sguyenne ubuntu-vpn-client
 ```
 
-Check the IP assigned to the instance and copy the configuration file to it:
+Überprüfen Sie die der Instanz zugewiesene IP-Adresse und übertragen Sie die Konfigurationsdatei:
 
 ```bash
 scp ~/Download/openvpn_mobile_client.ovpn ubuntu@<ip_address>:~
 ```
 
-Connect to the instance:
+Verbinden Sie sich mit der Instanz:
 
 ```bash
 ssh ubuntu@<ip_address>
 ```
 
-Install the OpenVPN client:
+Installieren Sie den OpenVPN Client:
 
 ```bash
 sudo apt-get update
 sudo apt-get install -y openvpn
 ```
 
-Connect to the VPN:
+Verbindung zum VPN herstellen:
 
 ```bash
 sudo openvpn --config openvpn_mobile_client.ovpn 
@@ -550,19 +569,23 @@ Enter Auth Username: address@stormshield.ovh
 🔐 Enter Auth Password: ******************
 ```
 
-Test to ping the webserver private instance:
+Test mit Ping zur privaten Webserver-Instanz:
 
-```console
+```bash
 ssh ubuntu@<ip_address>
 ping <ip_address>
+```
 
+```console
 PING <ip_address> (<ip_address>) 56(84) bytes of data.
 64 bytes from <ip_address>: icmp_seq=1 ttl=64 time=14.1 ms
 64 bytes from <ip_address>: icmp_seq=2 ttl=64 time=13.1 ms
 ```
 
-## Go further <a name="gofurther"></a>
+<a name="gofurther"></a>
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+## Weiterführende Informationen
 
-Join our [community of users](/links/community).
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+Treten Sie unserer [User Community](/links/community) bei.

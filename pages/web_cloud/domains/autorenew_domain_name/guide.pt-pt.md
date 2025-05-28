@@ -58,7 +58,7 @@ Estas são as principais vantagens da renovação automática:
 
 #### A renovação manual
 
-Se não deseja renovações automáticas e, portanto, débitos diretos, pode modificar o tipo de renovação passando-o para **manuel**.
+Se não deseja renovações automáticas e, portanto, débitos diretos, pode modificar o tipo de renovação passando-o para **manual**.
 
 Este modo de renovação pode ser útil:
 

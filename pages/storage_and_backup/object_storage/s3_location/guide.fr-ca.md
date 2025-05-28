@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-11-25
+updated: 2025-05-14
 ---
 
 <style>
@@ -9,7 +9,7 @@ td:nth-of-type(2) {
 }
 </style>
 
-Nous avons conçu les classes de stockage Object Storage pour qu’elles soient **compatibles avec S3 \***, considérée comme une référence sur le marché du stockage objet. Vous pouvez donc utiliser l'Object Storage avec la plupart des outils de gestion de données via les points de terminaison définis par région et non par classe de stockage.
+Nous avons conçu les classes de stockage Object Storage pour qu’elles soient **compatibles avec S3<sup>1</sup**, considérée comme une référence sur le marché du stockage objet. Vous pouvez donc utiliser l'Object Storage avec la plupart des outils de gestion de données via les points de terminaison définis par région et non par classe de stockage.
 
 ## Object Storage
 
@@ -137,26 +137,28 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud avant le 17/06/2024</th>
-        <th>Mapping OVHcloud à partir du 17/06/2024</th>
+        <th>OVHcloud mapping actuel</th>
+        <th>OVHcloud mapping à partir du 04-06-2025</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
-        <td rowspan=9>Standard</td>
+        <td>High Performance</td>
         <td>High Performance</td>
     </tr>
     <tr>
         <td>STANDARD</td>
         <td rowspan=8>Standard</td>
-    </tr>
-    <tr>
-        <td>Par défaut *</td>
-    </tr>
-    <tr>
-         <td>STANDARD_IA</td>     
+        <td rowspan=3>Standard</td>
     </tr>
     <tr>
         <td>INTELLIGENT_TIERING</td>
+    </tr>
+    <tr>
+        <td>defaut<sup>2</sup></td>
+    </tr>
+    <tr>
+        <td>STANDARD_IA</td>
+        <td rowspan=5>Standard Infrequent Access<sup>3</sup></td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
@@ -172,14 +174,15 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
     </tr>
 </table>
 
-_* La classe de stockage par défaut sur le point de terminaison **io** sera Standard, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau Standard._
+_<sup>2</sup> :La classe de stockage par défaut sur le point de terminaison **io** sera Standard, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau Standard._
+_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **io** est le suivant :
 
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud à partir du 17/06/2024</th>
+        <th>OVHcloud</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
@@ -189,18 +192,21 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
         <td>STANDARD</td>
         <td>Standard</td>
     </tr>
+    <tr>
+        <td>STANDARD_IA</td>
+        <td>Standard Infrequent Access<sup>3</sup></td>
+    </tr>
 </table>
+
+_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
 
 > [!warning]
 > Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités et opérations d'API seront disponibles.
 
-![Schema 1](images/io-mapping-v2.png)
+### Rétrocompatibilité des points de terminaison
 
 > [!warning]
-> - La classe de stockage ne sera plus définie au niveau de la création du bucket, mais au niveau de l'upload d'objets individuels.
 > - Le point de terminaison **perf** sera maintenu à des fins de rétrocompatibilité uniquement, afin de permettre aux outils qui ne prennent pas en charge la récente classe de stockage Express_One_Zone d'AWS de continuer à fonctionner sur notre object storage. Nous vous encourageons donc fortement à migrer vers le point de terminaison **io** cible chaque fois que cela est possible.
-
-### Rétrocompatibilité des points de terminaison
 
 Bien que le point de terminaison **io** soit le point de terminaison préféré pour accéder au service OVHcloud Object Storage, le point de terminaison **historique** `https://s3.<region>.perf.cloud.ovh.net` sera toujours maintenu à des fins de rétrocompatibilité pour les outils et les applications qui ne prennent pas en charge la dernière classe de stockage AWS Express One Zone. Ce point de terminaison historique sera également en mesure de prendre en charge tous les buckets et tous les objets dans les classes de stockage Standard et High Performance et prendra en charge toutes les opérations, y compris `listBucket`.
 
@@ -209,23 +215,24 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud avant le 17/06/2024</th>
-        <th>Mapping OVHcloud à partir du 17/06/2024</th>
+        <th>OVHcloud mapping actuel</th>
+        <th>OVHcloud mapping à partir du 04-06-2025</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
-        <td rowspan=9>High Performance</td>
+        <td rowspan=3>High Performance</td>
         <td rowspan=3>High Performance</td>
     </tr>
     <tr>
         <td>STANDARD</td>
     </tr>
     <tr>
-        <td>Par défaut *</td>
+        <td>default<sup>4</sup></td>
     </tr>
     <tr>
          <td>STANDARD_IA</td>
         <td rowspan=6>Standard</td>
+        <td rowspan=3>Standard</td>
     </tr>
     <tr>
         <td>INTELLIGENT_TIERING</td>
@@ -235,6 +242,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
     <tr>
         <td>GLACIER_IR</td>
+        <td rowspan=3>Standard Infrequent Access<sup>3</sup></td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -244,14 +252,14 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
 </table>
 
-_* Le niveau de stockage par défaut sur le point de terminaison **perf** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau High Performance._
+_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
+_<sup>4</sup> : Le niveau de stockage par défaut sur le point de terminaison **perf** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau High Performance._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **perf** est le suivant :
-
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud à partir du 10/06/2024</th>
+        <th>OVHcloud</th>
     </tr>
     <tr>
         <td>STANDARD</td> 
@@ -261,9 +269,13 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
         <td>STANDARD_IA</td>
         <td>Standard</td>
     </tr>
+    <tr>
+        <td>GLACIER_IR</td>
+        <td>Standard Infrequent Access<sup>3</sup></td>
+    </tr>
 </table>
 
-![Schema 2](images/perf-mapping-v2.png)
+_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
 
 ## Object Storage Swift
 
@@ -277,4 +289,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+_<sup>1</sup : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit._

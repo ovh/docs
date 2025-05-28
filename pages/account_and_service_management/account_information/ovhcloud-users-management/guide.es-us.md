@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar los usuarios'
 excerpt: 'Cómo añadir usuarios desde su cuenta de OVHcloud'
-updated: 2025-04-28
+updated: 2025-05-16
 ---
 
 ## Objetivo
@@ -32,7 +32,7 @@ Los usuarios locales son uno de los tipos de identidad que pueden configurarse e
 
 #### Añadir un usuario
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Acceder a mi cuenta`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager). En la barra lateral, haga clic en `Identidad, seguridad y operaciones`{.action} y, a continuación, en `Identidades`{.action}.
 
 En el recuadro **Atajos**, haga clic en la pestaña `Gestionar mis usuarios`{.action}.
 
@@ -86,7 +86,7 @@ La modificación del usuario permite actualizar su dirección de correo electró
 
 #### Añadir un grupo
 
-En la pestaña `Identidades`{.action}, haga clic en `Declarar un grupo`{.action}.
+Para añadir un grupo, acceda a la sección `Identidades`{.action} y, a continuación, a la pestaña `Grupos de usuarios`{.action}. A continuación, haga clic en el botón `Declarar un grupo`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

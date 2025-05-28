@@ -1,7 +1,7 @@
 ---
 title: "Lokale Benutzer auf einem OVHcloud Kunden-Account erstellen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten"
-updated: 2025-04-28
+updated: 2025-05-16
 ---
 
 ## Ziel
@@ -32,11 +32,7 @@ Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud Kunden-Ac
 
 #### Benutzer hinzufügen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
-
-Klicken Sie in der Randleiste **Shortcuts** auf den Tab `Meine Benutzer verwalten`{.action}.
-
-Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action}, dann auf `Identitäten`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -62,7 +58,7 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 | DEFAULT (Eingeschränkter Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **ausschließlich** Benutzerverwaltung. |
 | ADMIN (Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **einschließlich** Benutzerverwaltung. |
 
-Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen getrennt mit einem “/”.
+Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen, getrennt mit einem “/”.
 
 Beispiel: **1234-567-89/johnsmith**.
 
@@ -86,7 +82,7 @@ Durch Bearbeiten des Benutzers können Sie dessen E-Mail-Adresse, Rechte und die
 
 #### Gruppe hinzufügen
 
-Klicken Sie im Tab `Identitäten`{.action} auf `Gruppe deklarieren`{.action}.
+Um eine Gruppe hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

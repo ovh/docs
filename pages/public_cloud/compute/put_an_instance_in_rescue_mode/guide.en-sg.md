@@ -14,7 +14,7 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 
 ## Requirements
 
-- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- A [Public Cloud instance](/links/public-cloud/compute) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

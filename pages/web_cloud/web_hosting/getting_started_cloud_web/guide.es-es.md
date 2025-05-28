@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos con un hosting Cloud Web"
 excerpt: "Descubra cómo empezar con un alojamiento Cloud Web"
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -42,11 +42,15 @@ Los lenguajes disponibles actualmente son:
 - Python
 - Ruby
 
-Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
+Para acceder a los motores de ejecución de su hosting [Cloud Web](/links/web/hosting-cloud-web-offer), conéctese al [área de cliente de OVHcloud](/links/manager). Haga clic en `Web Cloud`{.action} en la columna izquierda y seleccione `Alojamientos`{.action}. Seleccione el alojamiento Cloud Web correspondiente y abra la pestaña `Motores de ejecución`{.action}.
 
 Al instalar el alojamiento, se crea automáticamente un motor, que aparece en la tabla como **Opción por defecto**. Para cambiar de motor, haga clic en el botón `...`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}. 
 
-Según el plan [Cloud Web](/links/web/hosting-cloud-web-offer) del que disponga, también puede añadir motores de ejecución adicionales haciendo clic en el botón `Acciones`{.action} y seleccionando `Añadir un motor de ejecución`{.action}. Tenga en cuenta que el número máximo de motores de ejecución depende del plan Cloud Web que tenga contratado. Por lo tanto, asegúrese de disponer del motor o motores de ejecución necesarios para su proyecto antes de continuar.
+Si dispone del plan [Cloud Web](/links/web/hosting-cloud-web-offer) con 2 vCores, puede añadir un segundo motor de ejecución a su plan (máximo 2 motores de ejecución diferentes por plan) haciendo clic en el botón `Acciones`{.action} y luego en `Añadir un motor de ejecución`{.action}.
+
+Para comprobar que dispone de 2 vCores con su hosting Cloud Web, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. En la página que aparece, en el recuadro **Suscripción** y bajo la indicación `Solución`, compruebe que la referencia `Cloud Web 3`{.action} aparece en ella.
+
+Por lo tanto, asegúrese de disponer del motor o motores de ejecución necesarios para su proyecto antes de continuar.
 
 ![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/edit-runtime.png){.thumbnail}
 

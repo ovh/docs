@@ -1,12 +1,12 @@
 ---
 title: "Guia de utilização do acelerador CDN num alojamento web"
 excerpt: "Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Objetivo
 
-Se deseja melhorar a experiência dos seus utilizadores acelerando o seu site, a técnica mais eficaz é ativar um CDN (Content Delivery Network). Este último permite colocar em cache os ficheiros estáticos tais como as imagens, os css e os javascript, nos servidores mais próximos dos seus clientes.
+Se deseja melhorar a experiência dos seus utilizadores acelerando o seu site, a técnica mais eficaz é ativar um CDN (Content Delivery Network). Este último permite colocar em cache os ficheiros estáticos tais como as imagens, os CSS e os JavaScript, nos servidores mais próximos dos seus clientes.
 
 **Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN.**
 
@@ -16,7 +16,7 @@ Se deseja melhorar a experiência dos seus utilizadores acelerando o seu site, a
 
 O CDN (Content Delivery Network) é literalmente uma rede dedicada à disponibilização de conteúdos. Utiliza vários servidores implementados em todo o mundo para apresentar o seu website. Quanto mais próximos esses servidores estiverem dos seus utilizadores, mais rápido será o seu website para eles.
 
-Para funcionar, cada servidor guarda na sua memória cache uma parte do seu website. Geralmente, é aconselhável incluir os ficheiros ditos estáticos: as imagens, os ficheiros javascript e css que permitem o bom funcionamento do seu site, mas que são modificados muito raramente.
+Para funcionar, cada servidor guarda na sua memória cache uma parte do seu website. Geralmente, é aconselhável incluir os ficheiros ditos estáticos: as imagens, os ficheiros JavaScript e CSS que permitem o bom funcionamento do seu site, mas que são modificados muito raramente.
 
 ## Requisitos
 
@@ -53,7 +53,7 @@ Assinale a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Va
 
 > [!warning]
 > 
-> No caso de um nome de domínio externo na OVHcloud adicionado à opção multisite no alojamento Web, deve mencionar o endereço IP do CDN do seu alojamento na zona DNS do nome do domínio.<br>
+> No caso de um nome de domínio externo na OVHcloud adicionado à opção multisite no alojamento Web, deve mencionar o endereço IP do CDN do seu alojamento na zona DNS do nome do domínio.
 > Consulte a [lista de endereços IP dos clusters e alojamento Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) para encontrar o endereço IP específico do CDN do seu cluster.
 
 **Porque não posso beneficiar do IP geolocalizado com a opção CDN?**
@@ -109,7 +109,7 @@ Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.acti
 
 - **Duração**: indique a duração da colocação em cache do recurso selecionado.
 
-- **Classificação**:  Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
+- **Classificação**: Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
 
 Depois de escolher, clique no botão `Criar a regra`{.action}.
 
@@ -191,7 +191,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 	?>
 	```
 
-- **Móvel redirect**:  Reencaminhe automaticamente os visitantes "Mobile" para um website otimizado. À escolha: reencaminhar sistematicamente para a raiz de outro website, ou conservar o URL substituindo apenas o domínio (ou subdomínio).
+- **Móvel redirect**: Reencaminhe automaticamente os visitantes "Mobile" para um website otimizado. À escolha: reencaminhar sistematicamente para a raiz de outro website, ou conservar o URL substituindo apenas o domínio (ou subdomínio).
 
 - **Purga avançada**: Personalize a sua purga escolhendo os elementos da cache a esvaziar: todo o site, pasta, URI, extensão de ficheiros ou através de uma expressão personalizada e regular. 
 
@@ -228,13 +228,13 @@ Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.acti
 
 * **Nome da regra**: Atribua um nome à sua regra.
 * **Tipo de recurso**: Escolha entre as opções seguintes:
-    * **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: css
-    * **Pasta**:  Introduza um caminho válido para uma das pastas presentes no diretório raiz do seu website.
+    * **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: CSS.
+    * **Pasta**: Introduza um caminho válido para uma das pastas presentes no diretório raiz do seu website.
     * **Expressão regular personalizada**: Aplica-se a todas as URI do seu website.
     * **URI**: Indique o subconjunto de recursos do seu website através do seu caminho no URL.
 * **Recurso**: defina os atributos em função do tipo de recurso escolhido.
 * **Duração**: Indique a duração de implementação de cache do recurso selecionado.
-* **Classificação**:  Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
+* **Classificação**: Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
 
 Depois de escolher, clique no botão `Criar a regra`{.action}.
 
@@ -242,44 +242,13 @@ As regras aparecem numa lista. Pode alterar uma regra clicando em `...`{.action}
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-cache-rules.png){.thumbnail}
 
+### Visualizar as estatísticas e os logs da CDN
+
 Depois de configurar as regras e selecionar as opções, clique em `Aplicar configuração`{.action} e, a seguir, em `Validar a configuração`{.action} na janela seguinte.
 
 ### Visualizar as estatísticas do CDN
 
-Para aceder às estatísticas do CDN, efetue as seguintes ações:
-
-> [!tabs]
-> **Etapa 1**
->>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Etapa 3**
->>
->> Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
->>
-> **Etapa 4**
->>
->> Na parte `Estatísticas de visitas`, clique no botão `Ver as estatísticas`{.action}.
->>
-> **Etapa 5**
->>
->> Será redirecionado para a ferramenta **OVHcloud Web Statistics**. Nesta ferramenta, clique no formulário intitulado `Seleção do domínio`{.action}, situado no topo da página, e escolha um domínio para o qual a CDN está ativa.
->>
-> **Etapa 6**
->>
->> Na coluna da direita, clique no separador `Cache`{.action}.
->>
->> Visualize agora as estatísticas da CDN para o seu domínio.
->>
->> Se necessário, consulte o guia "[Alojamento web - Consultar as estatísticas e logs de um website](/pages/web_cloud/web_hosting/logs_and_statistics)" para mais informações.
+Para consultar as estatísticas e/ou os logs do CDN, consulte o nosso guia dedicado: "[Alojamento Web - Consultar as estatísticas e logs CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
 ### Como colocar em cache os meus ficheiros no CDN?
 
@@ -297,7 +266,7 @@ Mesmo que não utilize um CMS, poderá beneficiar da cache do CDN. Para isso, de
 3. Header set Cache-Control "max-age=604800, public"
 4. </FilesMatch>
 5. 
-6. # Cache dos javascript e CSS durante 1 mês
+6. # Cache dos JavaScript e CSS durante 1 mês
 7. <FilesMatch "\.(js|css)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
@@ -390,8 +359,8 @@ A ausência da menção "*X-CDN*" indica que não passou através do CDN.
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

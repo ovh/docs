@@ -80,7 +80,7 @@ Partition type
 Select (default p):
 ```
 
-```
+```bash
 Partition number (1-4, default 1): 
 
 First sector (2048-104857599, default 2048):

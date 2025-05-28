@@ -424,7 +424,7 @@ ping6 proof.ovh.net
 
 - **Para un sistema Windows**, utilice el siguiente comando:
 
-```
+```powershell
 ipconfig
 
 Windows IP Configuration

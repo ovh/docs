@@ -1,7 +1,7 @@
 ---
 title: "What do I do if I have a 403 forbidden page?"
 excerpt: "Find out how to get your website back online if it displays a 403 forbidden page"
-updated: 2023-06-09
+updated: 2025-05-23
 ---
 
 ## Objective
@@ -115,14 +115,12 @@ If your hosting plan was closed more than two weeks ago, please contact a [speci
 > If you would like more details on the previous [steps 2 and 3](#step-2), please refer to our tutorial on [what to do if your website is hacked](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Step 4: Reactivate your web hosting plan <a name="reactivate-web-hosting"></a>
+### Step 4: Reactivating your web hosting with FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
 > We recommend that you carry out a security audit **before** reopening your web hosting plan. Any malicious actions originating from your web hosting plan may result in your being held legally responsible.
 >
-
-#### Reactivating your web hosting with FileZilla
 
 > [!primary]
 >
@@ -155,28 +153,6 @@ If the above command does not work, you can try this command:
 ```
 SITE CHMOD 705.
 ```
-
-#### Reactivating your hosting via your web browser with the FTP Explorer ("net2ftp")
-
-In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then open `Hosting plans`{.action} and switch to the `FTP-SSH`{.action} tab of the web hosting plan concerned.
-
-Click on the button `FTP Explorer`{.action} and log in to your [FTP storage](/pages/web_cloud/web_hosting/ftp_connection).
-
-Click on the `Advanced`{.action} button and then click the `Go`{.action} button next to "Send arbitrary FTP commands to the FTP server".
-
-![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
-
-At the top of the page, enter the command below:
-
-```
-SITE CHMOD 705 /
-```
-
-Then click on the green "check mark" button.
-
-![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
-
-The response "**200 Permissions changed on /**" confirms that the change was successful. To check, try accessing your site again.
 
 > [!warning]
 >

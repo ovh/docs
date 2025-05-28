@@ -1,18 +1,18 @@
 ---
 title: "Modifier l'annonce d'un bloc IP dans le vRack"
 excerpt: "Apprenez à modifier l'annonce d'un bloc IP dans le vRack"
-updated: 2019-03-12
+updated: 2025-05-14
 ---
 
 ## Objectif
 
-Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external} est un réseau privé vous permettant de configurer l’adressage entre deux ou plusieurs [serveurs dédiés](/links/bare-metal/bare-metal){.external} OVHcloud.
+Le [vRack](/links/network/vrack) est un réseau privé vous permettant de configurer l’adressage entre deux ou plusieurs [serveurs dédiés](/links/bare-metal/bare-metal) OVHcloud.
 
 **Apprenez à définir une zone d'annonce d'un bloc IP dans le vRack.**
 
 ## Prérequis :
 
-- Posséder un [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
+- Posséder un [vRack](/links/network/vrack).
 - Avoir [configuré un bloc d’adresses IP dans le vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
 - Disposer de connaissances avancées en réseau.
 
@@ -54,16 +54,18 @@ Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez p
 
 > [!api]
 >
-> @api {v1} /vrack POST /vrack/{serviceName}/ip/{ip}/announceInZone#POST
+> @api {v1} /vrack POST /vrack/{serviceName}/ip
 > 
 
 Cette API permet de modifier l'annonce d'un bloc IP. Complétez alors les champs demandés :
 
 |Champ|Description|
 |---|---|
-|serviceName|Renseignez le nom du service vRack concerné.|
-|ip|Renseignez le nom du bloc IP concerné. Prenez soin de ne pas renseigner l'adresse IP que vous avez testée lors de l'étape précécente, mais bien le bloc IP concerné. Par exemple : `1.2.3.4/27`.|
-|zone|Sélectionnez la nouvelle zone d'annonce du bloc IP. Prenez soin de ne pas renseigner la même zone que celle récupérée lors de l'étape précédente.|
+|serviceName|Renseignez le nom du service vRack concerné. Par exemple : `pn-12345`.|
+|block|Renseignez le nom du bloc IP concerné. Prenez soin de ne pas renseigner l'adresse IP que vous avez testée lors de l'étape précécente, mais bien le bloc IP concerné. Par exemple : `192.0.2.0/24`.|
+|region|Sélectionnez la nouvelle zone (region) d'annonce du bloc IP. Prenez soin de ne pas renseigner la même zone que celle récupérée lors de l'étape précédente. Par exemple : `bexxx.gra-d1-a75.fr.eu`.|
+
+![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 
 Exécutez finalement l'API pour modifier l'annonce.
 

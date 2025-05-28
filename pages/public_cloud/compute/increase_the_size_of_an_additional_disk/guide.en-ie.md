@@ -232,6 +232,7 @@ The resized volume now includes the additional disk space.
 ## Go further
 
 [Creating and configuring an additional disk on an instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Change your Block Storage volume type](/pages/public_cloud/compute/switch_volume_type)
 
 Join our [community of users](/links/community).

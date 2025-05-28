@@ -1,7 +1,7 @@
 ---
 title: "Przywracanie plików z kopii zapasowej OVHcloud"
 excerpt: "Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu"
-updated: 2023-12-04
+updated: 2025-05-23
 ---
 
 ## Wprowadzenie 
@@ -127,11 +127,7 @@ Na wstępie określ program lub interfejs, którego będziesz używał do łącz
 
 - **program Cyberduck**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik [Korzystanie z programu Cyberduck na Twoim hostingu](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}, w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
 
-- **interfejs FTP Explorer**: zaloguj się do interfejsu w [Panelu klienta](/links/manager){.external}. Po zalogowaniu, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action}.
-
 Kiedy jesteś gotowy do rozpoczęcia operacji, przejdź do następnego etapu.
-
-![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### Etap 2: logowanie do kopii zapasowej przestrzeni dyskowej
 
@@ -153,9 +149,7 @@ Uzupełnij Twoją nazwę głównego użytkownika („login”) FTP sufiksem wska
 
 Pamiętaj, aby zastąpić informację ogólną „uzytkownikftp” Twoją nazwą głównego użytkownika FTP. Zachowaj natomiast sufiks określający datę kopii zapasowej, do której chcesz uzyskać dostęp.
 
-Metoda logowania do Twojej przestrzeni dyskowej jest różna w zależności od używanego interfejsu lub programu. Poniżej obrazek przedstawiający logowanie do przestrzeni przez interfejs FTP Explorer. 
-
-![kopia zapasowa](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
+Metoda logowania do Twojej przestrzeni dyskowej jest różna w zależności od używanego interfejsu lub programu.
 
 #### Etap 3: pobieranie wybranego pliku lub plików
 
@@ -165,9 +159,7 @@ Zanim przejdziesz do kolejnego etapu, upewnij się, że pobrałeś wszystkie pli
 
 > [!success]
 >
-> Jeśli korzystasz z interfejsu **FTP Explorer**, sprawdź [stronę pomocy](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external}, aby poprawnie wykonać odzyskiwanie plików. Strona ta jest również dostępna poprzez przycisk `Help Guide`{.action} na dole interfejsu logowania do **FTP Explorer**.
->
-> Jeśli do logowania się do przestrzeni dyskowej FTP używasz innego oprogramowania, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc poprawnie wykonywać operacje.
+> Jeśli do logowania się do przestrzeni dyskowej FTP używasz programu, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc prawidłowo przeprowadzić operacje.
 >
 
 #### Etap 4: przywracanie wybranego pliku lub plików
@@ -177,10 +169,8 @@ Kiedy masz już plik lub pliki, zaloguj się ponownie do przestrzeni dyskowej. N
 Po zalogowaniu wgraj wybrany plik lub pliki. W tym celu przejrzyj zawartość Twojego komputera, następnie wybierz pliki i zastąp nimi stare pliki.
 
 > [!success]
->
-> Jeśli korzystasz z interfejsu **FTP Explorer**, sprawdź [stronę pomocy](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external}, aby poprawnie wykonać przywracanie plików. Strona ta jest również dostępna poprzez przycisk `Help Guide`{.action} na dole interfejsu logowania do **FTP Explorer**.
->
-> Jeśli do logowania się do przestrzeni dyskowej FTP używasz innego oprogramowania, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc poprawnie wykonywać operacje.
+> 
+> Jeśli do logowania się do przestrzeni dyskowej FTP używasz programu, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc prawidłowo przeprowadzić operacje.
 >
 
 ## Sprawdź również

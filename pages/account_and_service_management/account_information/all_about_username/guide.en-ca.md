@@ -1,7 +1,7 @@
 ---
 title: 'Securing my OVHcloud account and managing my personal information'
 excerpt: 'Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account'
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Objective
@@ -96,6 +96,10 @@ If you would like to change your primary contact email address, you will need to
 Next, enter the code into the `Validation code` section, and click `Confirm`{.action}.
 
 ![NIC handle](images/nichandle08.png){.thumbnail}
+
+> [!primary]
+>
+> The `Validation code` only accelerates the change of the primary email address. If the old email address cannot be accessed and you cannot retrieve this code, the modification will still be carried out automatically **25** hours after the request.
 
 #### Changing the account type
 

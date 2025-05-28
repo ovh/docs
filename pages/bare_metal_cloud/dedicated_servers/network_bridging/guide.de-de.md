@@ -1,7 +1,7 @@
 ---
-title: Network Bridge einrichten
+title: Konfiguration von Additional IPs im Bridge-Modus auf Ihren virtuellen Maschinen
 excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang für Ihre virtuellen Maschinen konfigurieren
-updated: 2024-12-13
+updated: 2025-05-16
 ---
 
 > [!primary]
@@ -24,9 +24,9 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 >
 > Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 >
-> Diese Anleitung gilt nicht für Server der Reihen [Scale](https://www.ovhcloud.com/de/bare-metal/scale/) und [High Grade](https://www.ovhcloud.com/de/bare-metal/high-grade/).
+> Seit Mai 2025 gilt diese Anleitung auch für Server der Reihen [Scale](https://www.ovhcloud.com/de/bare-metal/scale/) und [High Grade](https://www.ovhcloud.com/de/bare-metal/high-grade/).
 >
-> Weitere Informationen finden Sie in den folgenden Anleitungen: [Netzwerk auf Proxmox VE auf den High Grade & SCALE-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) und [Netzwerk auf Windows Server mit Hyper-V auf den High Grade & SCALE-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
+> Additional IPs können auch im Routing-Modus oder im vRack konfiguriert werden. Weitere Informationen finden Sie unter: [Netzwerk auf Proxmox VE auf den High Grade & Scale-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) und [Netzwerk auf Windows Server mit Hyper-V auf den High Grade & Scale-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
 ## In der praktischen Anwendung
 

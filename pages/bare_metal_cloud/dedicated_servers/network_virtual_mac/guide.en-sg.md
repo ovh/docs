@@ -1,7 +1,7 @@
 ---
 title: Assigning a Virtual MAC to an Additional IP
 excerpt: This guide will show you how to create a virtual MAC address and assign it to an Additional IP address.
-updated: 2024-12-13
+updated: 2025-05-16
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 >
 > - Third generation Advance servers (powered by EPYC 4004 Series processors) support 32 different vMACs.
 >
-> - This feature will be available on the Scale and High Grade ranges during 2025.
+> - As of May 2025, this feature is available on the Scale and High Grade ranges.
 > 
 
 > [!primary]

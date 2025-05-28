@@ -1,7 +1,7 @@
 ---
 title: 'Desplegar una instancia GPU'
 excerpt: 'Cómo desplegar una instancia GPU en Linux o Windows'
-updated: 2025-04-28
+updated: 2025-05-28
 ---
 
 > [!primary]
@@ -62,6 +62,8 @@ sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install cuda
+sudo apt-get install -y cuda-drivers
+sudo apt-get install linux-headers-$(uname -r)
 sudo reboot
 ```
 

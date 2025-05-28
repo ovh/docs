@@ -1,7 +1,7 @@
 ---
 title: 'First Steps with the OVHcloud APIs'
 excerpt: 'Learn how to use OVHcloud APIs'
-updated: 2024-06-07
+updated: 2025-05-13
 ---
 
 ## Objective
@@ -201,28 +201,38 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### List and revoke your keys
 
-There is currently no Control Panel option to list and revoke your keys. The API portal can be used to do that :
+To list and revoke keys, you can use the [API portal](/links/api) or the [OVHcloud Control Panel](/links/manager):
 
-- List the keys IDs with the following call:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application
->
-
-- Get key details with the following call:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application/{applicationId}
->
-
-- Revoke a key with the following call:
-
-> [!api]
->
-> @api {v1} /me DELETE /me/api/application/{applicationId}
->
+> [!tabs]
+> Using the API portal
+>>
+>> - List the keys IDs with the following call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application
+>> >
+>>
+>> - Get key details with the following call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application/{applicationId}
+>> >
+>>
+>> - Revoke a key with the following call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me DELETE /me/api/application/{applicationId}
+>> >
+>>
+> Using the OVHcloud Control Panel
+>>
+>> Go to the `Identity, Security & Operations`{.action} menu, then `API keys`{.action}.
+>>
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
+>>
 
 ## Go further <a name="gofurther"></a>
 

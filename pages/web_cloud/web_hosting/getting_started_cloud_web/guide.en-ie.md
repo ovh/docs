@@ -1,7 +1,7 @@
 ---
 title: "Getting started with a Cloud Web hosting plan"
 excerpt: "Find out how to get started with a Cloud Web hosting plan"
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Objective
@@ -42,11 +42,13 @@ The languages currently available are:
 - Python
 - Ruby
 
-To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
+To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager). Click `Web Cloud`{.action} in the services bar on the left-hand side, then click `Hosting plans`{.action}. Select the name of the Cloud Web hosting plan concerned, and go to the `Runtime software`{.action} tab.
 
 When you set up your hosting plan, a runtime software application will be created automatically. It is included as the `Default choice` in the table that appears. To modify a runtime software that has already been set, click on the three dots next to it, then `Modify`{.action}. 
 
-Depending on which [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan you have chosen, you can also add additional runtime software applications by clicking the `Actions`{.action} button, then `Add a runtime software application`{.action}. Please note that the maximum number of runtime software applications will vary, depending on which [Cloud Web](/links/web/hosting-cloud-web-offer) solution you have ordered.
+If you have the [Cloud Web](/links/web/hosting-cloud-web-offer) offer with 2 vCores, you can add a second runtime environment (maximum 2 different runtime environments per service) by clicking on the `Actions`{.action} button, then on `Add a runtime software application`{.action}.
+
+To check that you have 2 vCores with your Cloud Web hosting plan, log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. In the box **Plan** and under `Service plan`, check that the reference `Cloud Web 3`{.action} is present.
 
 Once you have done this, please ensure that you have the runtime software application (or applications) required for your project before you continue:
 

@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Entra ID SSO avec votre compte OVHcloud
 excerpt: "Découvrez comment associer votre Entra ID (anciennement Azure Active Directory) à votre compte OVHcloud en utilisant SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Objectif
@@ -203,15 +203,13 @@ L'ajout de votre application Entra ID en tant que fournisseur d'identité approu
 
 #### Établir la confiance OVHcloud
 
-Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identitées`{.action}.
+Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identités`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Cliquez ensuite sur l'onglet `SSO`{.action}. et le bouton `Connexion SSO`{.action}.
+Cliquez ensuite sur l'onglet `SSO`{.action} et sur le bouton `Connexion SSO`{.action}.
 
-Cliquez alors sur le bouton `Connexion SSO`{.action}.
-
-![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
+![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Complétez le champ **Nom d'attribut d'utilisateur** avec la valeur de claim d'applications Entra ID **UPN** et le champ **Nom d'attribut de groupe** avec la valeur de claim **groups** enregistrée précédemment.
 
@@ -231,17 +229,17 @@ L'ajout de votre application Entra ID en tant que fournisseur d'identité est do
 > En effet, votre compte OVHcloud vérifie si l'utilisateur authentifié appartient à un groupe existant sur le compte.
 >
 
-Pour résoudre cette situation, vérifiez l'attribut «Group» retourné par votre application Entra ID : le champ **Object Id**.
+Pour résoudre cette situation, vérifiez l'attribut « Group » retourné par votre application Entra ID : le champ **Object Id**.
 
 #### Déclaration des groupes OVHcloud
 
 ![Entra ID Group étape 2](images/azure_ad_group_2.png){.thumbnail}
 
-Ajoutez-le dans la section `Identitées`{.action} et dans l'onglet `Groupes d'utilisateurs`{.action} en cliquant sur le bouton `Déclarer un groupe`{.action} et en remplissant les champs :
+Pour ajouter un groupe, rendez-vous dans la section `Identités`{.action} puis dans l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action} :
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Complétez les champs, puis cliquez sur le bouton `Valider`{.action}.
+Renseignez le nom du groupe et sélectionnez le privilège associé, puis cliquez sur le bouton `Valider`{.action}.
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 

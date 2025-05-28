@@ -1,103 +1,110 @@
 ---
-title: 'Securing your OVHcloud infrastructure with Ubika WAAP Gateway'
-excerpt: 'Find out how to secure your OVHcloud infrastructure with Ubika WAAP Gateway deployed on Public Cloud'
-updated: 2024-10-23
+title: OVHcloud Infrastruktur mit Ubika WAAP Gateway sichern
+excerpt: Erfahren Sie hier, wie Sie Ihre OVHcloud Infrastruktur mit Ubika WAAP Gateway in der Public Cloud absichern können
+updated: 2024-05-12
 ---
 
-## Objective
+## Ziel
 
-In today’s digital age, web application security is critical for protecting cloud infrastructures from sophisticated cyber threats. As businesses increasingly adopt cloud solutions, ensuring that web applications and APIs are secure is essential for maintaining data integrity and preventing breaches.
-**U**bika **W**AAP **G**ateway (UWG) offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats.
+Da Unternehmen zunehmend auf Cloud-Lösungen umsteigen, ist die Sicherheit von Cloud-Anwendungen und APIs von entscheidender Bedeutung, um die Datenintegrität aufrechtzuerhalten und Angriffe zu verhindern.  
+**U**bika **W**AAP **G**ateway (UWG) bietet erweiterte Funktionen für Web-Applikations- und API-Schutz (WAAP), einschließlich leistungsstarker Tools wie Web Application Firewalls (WAF), Bot-Verwaltung und DDoS-Schutz. Diese Tools helfen Ihnen, Ihre Cloud-Umgebung vor einer Vielzahl von Bedrohungen auf Anwendungsebene zu schützen.
 
-This guide provides step-by-step instructions for deploying and configuring Ubika WAAP Gateway on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika WAAP Gateway instances, set up High Availability (HA) using Additional IP and vRack and public IP routing, and ensure a secure and reliable architecture for your cloud infrastructure.
+Diese Anleitung enthält detaillierte Anweisungen zur Inbetriebnahme und Konfiguration von Ubika WAAP Gateway in der OVHcloud Public Cloud. Sie erfahren, wie Sie private Netzwerke für die Verwaltung und den Workload konfigurieren, Ubika WAAP Gateway Instanzen einrichten, mithilfe von Additional IP, vRack und Routing für öffentliche IPs eine hohe Verfügbarkeit (HA) einrichten und eine sichere und zuverlässige Architektur für Ihre Cloud-Infrastruktur ermöglichen.
 
-**This guide explains how to secure your OVHcloud infrastructure with Ubika WAAP Gateway deployed on Public Cloud.**
+**Diese Anleitung erklärt, wie Sie Ihre OVHcloud Infrastruktur mit Ubika WAAP Gateway in der Public Cloud absichern.**
 
 > [!warning]
-> This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. ou may need to adapt the instructions according to your situation.
+> In diesem Tutorial erläutern wir die Verwendung von OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Möglicherweise müssen Sie bestimmte Anweisungen an Ihre Umgebung oder individuelle Bedürfnisse anpassen.
 >
-> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
+> Wir empfehlen, bei Schwierigkeiten bezüglich der Umsetzung einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
-## Requirements
+## Voraussetzungen
 
-- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
-- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
-- Basic networking knowledge
-- A Ubika account on the [Ubika website](https://my.ubikasec.com/){.external}
-- Ensure that an appropriate block of Additional IPs is available
-- Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure
-- [Additional IP address](/links/network/additional-ip) for ensuring network failover and high availability setup
-- Ubika WAAP Gateway Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process
+- Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
+- Sie haben Grundkenntnisse in Networking.
+- Sie haben auf der [Ubika-Website](https://my.ubikasec.com/){.external} einen Ubika-Account erstellt.
+- Sie haben einen ausreichenden Block von Additional IP-Adressen verfügbar.
+- Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
+- Sie haben eine [Additional IP-Adresse](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
+- Sie haben eine Ubika WAAP Gateway Lizenz (**B**ring **Y**our **O**wn **L**icence), die über die [offizielle Website von Ubika](https://my.ubikasec.com/){.external} erworben wurde. Diese ist zur Installation und Konfiguration erforderlich.
 
-## Instructions
+## In der praktischen Anwendung
 
-In addition to the installation and configuration of UWG, this tutorial offers a use case where you'll test UWG by deploying and running a web application on your Public Cloud infrastructure:
+Neben der Installation und Konfiguration von UWG bietet dieses Tutorial einen Anwendungsfall, in dem Sie zum Testen von UWG eine Web-Anwendung auf Ihrer Public Cloud Infrastruktur deployen und ausführen:
 
-- [Configure your vRack](#step1)
-- [Install and configure Ubika WAAP Gateway on your Public Cloud environment](#step2)
-- [Configure the licences](#step3)
-- [Create your web server environment](#step4)
+- [Konfigurieren von vRack](#step1)
+- [Ubika WAAP Gateway auf einer Public Cloud Umgebung installieren und konfigurieren](#step2)
+- [Lizenzen konfigurieren](#step3)
+- [Webserver-Umgebung erstellen](#step4)
 
-### Configure your vRack <a name="step1"></a>
+<a name="step1"></a>
 
-In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your Additional IP block to the same vRack, along with public IP routing, you can enable your UWG instances to communicate securely, while keeping full control over IP address management. Private vRack network also allows you to secure Baremetal Cloud servers or Private Cloud VMs with security appliances deployed on top of Public Cloud.
+### Konfigurieren des vRack
 
-**Add your public cloud project and your Additional IP block to the same vRack**
+In diesem Schritt konfigurieren wir das vRack, ein privates virtuelles Netzwerk, das von OVHcloud bereitgestellt wird. Mit dem vRack können Sie mehrere Instanzen oder Server in einer Public Cloud Umgebung untereinander verbinden, was die Isolierung des Netzwerks und gleichzeitig eine sichere Kommunikation gewährleistet.
 
-Please refer to the guide [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) for more information.
+Indem Sie Ihr Public Cloud Projekt und Ihren Additional IP Block zum selben vRack hinzufügen und Routing für öffentliche IP-Adressen einrichten, erlauben Sie Ihren UWG Instanzen eine sichere Kommunikation, während Sie gleichzeitig die volle Kontrolle über die Verwaltung der IP-Adressen behalten. Das private Netzwerk vRack erlaubt Ihnen auch die Absicherung von Bare Metal Servern oder Private Cloud VMs mit in der Public Cloud bereitgestellten Sicherheitsanwendungen.
 
-Below is the architecture that we are going to set-up:
+**Fügen Sie Ihr Public Cloud Projekt und Ihren Additional IP Block zum selben vRack hinzu**
+
+Weitere Informationen finden Sie in der Anleitung "[IP-Block in einem vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)".
+
+Hier die Architektur, die wir implementieren werden:
 
 ![Ubika vrack](images/ubika-vrack.png){.thumbnail}
 
-### Install and configure Ubika WAAP Gateway on your Public Cloud environment <a name="step2"></a>
+<a name="step2"></a>
+
+### Installieren und konfigurieren von Ubika WAAP Gateway auf Ihrer Public Cloud Umgebung
 
 > [!primary]
-> In this tutorial, the installation and configuration of UWG is done primarily via the command line. Open a terminal to execute the instructions.
+> In dieser Anleitung erfolgt die Installation und Konfiguration von UWG hauptsächlich über die Befehlszeile. Öffnen Sie ein Terminal, um die Anweisungen auszuführen.
 >
-> Please note that all sections related to « High Availability » are optional as well as using vRack network with Additional IP. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. In a minimal version, it can also work with just one instance if that is sufficient for your needs.
+> Beachten Sie, dass alle Abschnitte zu "High Availability" optional sind und die Verwendung des vRack Netzwerks mit Additional IP ebenfalls optional ist. Es wird veranschaulicht, wie das System mit zwei Instanzen im im Aktiv/Passiv Modus für hohe Verfügbarkeit eingerichtet wird. In einer minimalen Version kann es auch mit einer einzigen Instanz arbeiten, wenn dies Ihren Bedürfnissen genügt.
 
-#### Configure Ubika WAAP Gateway management networking
+### Konfigurieren des Ubika WAAP Gateway Verwaltungsnetzwerk
 
 > [!primary]
-> In this scenario, we will use a two virtual machines setup for the security appliance to achieve High Availability (HA), and an additional VM for management. This setup ensures failover protection and continuous service availability. For more examples and detailed guidance on scalability options, please refer to [Ubika documentation](https://www.ubikasec.com/ressources/){.external}.
+> In diesem Szenario verwenden wir zwei virtuelle Maschinen, die für die Sicherheitsanwendung konfiguriert sind, um hohe Verfügbarkeit (HA) zu erreichen, sowie einen zusätzliche virtuelle Maschine für die Verwaltung der Sicherheitsanwendung. Diese Konfiguration gewährleistet den Schutz vor Ausfällen und die kontinuierliche Verfügbarkeit des Dienstes. Weitere Beispiele und ausführliche Hilfe zu den Skalierungsoptionen finden Sie in der [Ubika-Dokumentation](https://www.ubikasec.com/resources/){.external}.
 
-Create a private network for management:
+Erstellen Sie ein privates Netzwerk für die Verwaltung der Infrastruktur:
 
 ```bash
 openstack network create --provider-network-type vrack --provider-segment 1000 ubika-management
 ```
 
-This command creates a private network for managing the UWG instances, using the virtual private network (vRack) provided by OVHcloud. This isolated network is intended for internal communication between the Ubika components.
+Mit diesem Befehl wird ein privates Netzwerk für die Verwaltung der UWG-Instanzen mithilfe des von OVHcloud bereitgestellten Netzwerks (vRack) erstellt. Dieses isolierte Netzwerk dient der internen Kommunikation zwischen den Ubika-Komponenten.
 
 ```bash
 openstack subnet create --network ubika-management --subnet-range 192.168.1.0/24 --dhcp --gateway none --dns-nameserver 213.186.33.99 ubika-management
 ```
 
-Here, you configure a subnet for the management network, specifying an IP address range and a DNS server for internal communications.
+Konfigurieren Sie hier ein Subnetz für das Verwaltungsnetzwerk, indem Sie einen IP-Adressbereich und einen DNS-Server für die interne Kommunikation angeben.
 
-#### Configure Ubika WAAP Gateway workload networking
+### Workload Network Ubika WAAP Gateway konfigurieren
 
-Create a private network for the workload:
+Erstellen Sie ein privates Netzwerk für den Workload:
 
 ```bash
 openstack network create --provider-network-type vrack --provider-segment 0 --disable-port-security ubika-workload
 ```
 
-This command creates a private network for the workload, designed to host applications secured by UWG.
+Mit diesem Befehl wird ein privates Netzwerk für den Workload erstellt, das zum Hosten von durch UWG gesicherten Anwendungen konzipiert ist.
 
 ```bash
 openstack subnet create --network ubika-workload --subnet-range 192.168.2.0/24 --dhcp --dns-nameserver 213.186.33.99 ubika-workload
 ```
 
-Here, you define a subnet for the workload network, enabling efficient management of network traffic.
+Definieren Sie hier ein Subnetz für das Workload-Netzwerk, das eine effiziente Verwaltung des Netzwerkverkehrs ermöglicht.
 
-Create a gateway:
+Erstellen Sie ein Gateway:
 
 > [!primary]
-> A Gateway may be required for accessing the internet from web servers, especially for tasks such as software installation (Nginx for example) or remote management. However, for inbound client traffic, this component is not used.
+> Für den Zugriff auf das Internet von Webservern aus kann ein Gateway erforderlich sein, etwa für die Installation von Software (z.B. Nginx) oder die Remote-Verwaltung. Für eingehenden Datenverkehr wird diese Komponente jedoch nicht verwendet.
+>
 
 ```bash
 openstack router create --external-gateway Ext-Net ubika-workload
@@ -107,25 +114,25 @@ openstack router create --external-gateway Ext-Net ubika-workload
 openstack router add subnet 2481bcaf-efa2-419a-ad92-d6d27737dfd1 ubika-workload
 ```
 
-#### Deploy the Ubika WAAP Gateway instances
+#### Ubika WAAP Gateway Instanzen deployen
 
-Upload UWG image to OpenStack:
+UWG Image auf OpenStack hochladen:
 
-Go to the `download`{.action} section of the [official Ubika website](https://my.ubikasec.com/){.external}. Log in to your Ubika account and follow the instructions to download the UWG OpenStack image.
+Gehen Sie in den Bereich `Download`{.action} auf der [offiziellen Website von Ubika](https://my.ubikasec.com/){.external}. Loggen Sie sich in Ihren Ubika-Account ein und folgen Sie den Anweisungen zum Herunterladen des UWG OpenStack Images.
 
-Go to the folder where you have downloaded your UWG Openstack image and upload the UWG OpenStack image (for this tutorial, we use the image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`):
+Gehen Sie in den Ordner, in den Sie Ihr UWG OpenStack Image hochgeladen haben, und importieren Sie das UWG OpenStack Image (für diese Anleitung verwenden wir das Image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`):
 
 ```bash
 openstack image create --disk-format raw --container-format bare --file ~/Downloads/UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2 Ubika-WAAP-Gateway-6.11.10
 ```
 
-[Import your SSH public key](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external}:
+[Importieren Sie Ihren öffentlichen SSH-Schlüssel](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external}:
 
 ```bash
 openstack keypair create --public-key ~/.ssh/id_rsa.pub <username>
 ```
 
-Create a security group for the management UWG instance:
+Erstellen Sie eine Sicherheitsgruppe für die verwalteten Instanzen:
 
 ```bash
 openstack security group create ubika-management
@@ -143,9 +150,9 @@ openstack security group rule create --ingress --remote-ip 109.190.254.24/32 --d
 openstack security group rule create --ingress --remote-ip 109.190.254.24/32 --dst-port 3001 --protocol tcp ubika-management
 ```
 
-Create the UWG management instance:
+Erstellen der verwalteten Instanzen:
 
-Before executing the next OpenStack command, first create a `management.json` file and add the following content, adapting the parameters to your environment:
+Erstellen Sie vor dem Ausführen des folgenden OpenStack-Befehls zunächst eine Datei `management.json`, und fügen Sie den folgenden Inhalt hinzu, wobei Sie die Einstellungen an Ihre Umgebung anpassen:
 
 ```console
 {
@@ -155,15 +162,15 @@ Before executing the next OpenStack command, first create a `management.json` fi
 }
 ```
 
-Once the `management.json` file is created, execute the following command:
+Führen Sie den folgenden Befehl aus, nachdem Sie die Datei `management.json` erstellt haben:
 
 ```bash
 openstack server create --flavor r3-64 --image Ubika-WAAP-Gateway-6.11.10 --network Ext-Net --network ubika-management ubika-management --key-name <username> --security-group ubika-management --user-data ./management.json
 ```
 
-Create the UWG managed instances:
+Erstellen Sie die verwalteten UWG Instanzen:
 
-Before executing the next OpenStack command, first create a `managed-1.json` file and add the following content, adapting the parameters to your environment.
+Bevor Sie den folgenden OpenStack-Befehl ausführen, erstellen Sie zunächst eine Datei `managed-1.json` und fügen Sie den folgenden Inhalt hinzu, wobei Sie die Einstellungen an Ihre Umgebung anpassen.
 
 ```console
 {
@@ -172,13 +179,13 @@ Before executing the next OpenStack command, first create a `managed-1.json` fil
 }
 ```
 
-Once the `managed-1.json` file is created, execute the following command:
+Führen Sie den folgenden Befehl aus, nachdem Sie die Datei `managed-1.json` erstellt haben:
 
 ```bash
 openstack server create --flavor c3-16 --image Ubika-WAAP-Gateway-6.11.10 --network ubika-management --network ubika-workload ubika-managed-1 --key-name <username> --user-data ./managed-1.json
 ```
 
-Re-do these steps to create a second UWG managed instance but use the `managed-2.json` file. Create and add the following content to the `managed-2.json` file:
+Wiederholen Sie diese Schritte, um eine zweite Instanz zu erstellen, verwenden Sie jedoch die Datei `managed-2.json`. Erstellen Sie den folgenden Inhalt, und fügen Sie ihn der Datei `managed-2.json` hinzu:
 
 ```console
 {
@@ -187,19 +194,19 @@ Re-do these steps to create a second UWG managed instance but use the `managed-2
 }
 ```
 
-#### Configure the HA on the UWG managed instances
+### HA auf von UWG verwalteten Instanzen konfigurieren
 
-Get the management instance public IP:
+Rufen Sie die öffentliche IP-Adresse der verwalteten Instanz ab:
 
 ```bash
 openstack port list --server ubika-management --network Ext-Net
 ```
 
-Log in to the Ubika Java GUI and add the two managed UWG instances:
+Melden Sie sich bei der grafischen Ubika Java-Benutzeroberfläche an und fügen Sie die beiden UWG Instanzen hinzu:
 
 ![Ubika vrack](images/login.png){.thumbnail}
 
-Get the management IP of the managed instances:
+Rufen Sie die IP der verwalteten Instanzen ab:
 
 ```bash
 openstack port list --server ubika-managed-1 --network ubika-management
@@ -209,75 +216,80 @@ openstack port list --server ubika-managed-1 --network ubika-management
 openstack port list --server ubika-managed-2 --network ubika-management
 ```
 
-Add the first managed UWG instance to the UWG management (`Setup` > `Boxes` > `Add`):
+Fügen Sie die erste verwaltete UWG-Instanz zur UWG-Verwaltung hinzu (`Setup` > `Boxes` > `Add`):
 
 ![Ubika vrack](images/managed-1.png){.thumbnail}
 
-Add the second one:
+Zweite Instanz hinzufügen:
 
 ![Ubika vrack](images/managed-2.png){.thumbnail}
 
-Add a virtual interface to the `eth1` interface of each managed UWG instance and configure it with an IP of your IP block instead of the private IP (`Setup` > `Networking` > `IP Addresses`).
+Fügen Sie dem `eth1` Interface jeder verwalteten UWG Instanz ein virtuelles Interface hinzu und konfigurieren Sie es mit einer IP Ihres IP-Blocks anstelle der privaten IP (`Setup` > `Networking` > `IP Addresses`).
 
-UWG managed-1:
+Managed-1 UWG:
 
 ![Ubika vrack](images/virtual-interface-1.png){.thumbnail}
 
-UWG managed-2:
+Managed-2 UWG:
 
 ![Ubika vrack](images/virtual-interface-2.png){.thumbnail}
 
-Remove the default gateway and add the vRack gateway for each managed Ubika (`Setup` > `Networking` > `Routes`).
+Entfernen Sie das Standard-Gateway und fügen Sie das vRack Gateway für jedes verwaltete Ubika hinzu (`Setup` > `Networking` > `Routes`).
 
-UWG managed-1:
+Managed-1 UWG:
 
 ![Ubika vrack](images/default-gateway-1.png){.thumbnail}
 
-UWG managed-2:
+Managed-2 UWG:
 
 ![Ubika vrack](images/default-gateway-2.png){.thumbnail}
 
-Create a High Availability Active/Passive configuration (`Setup` > `High Availability` > `Add`):
+Erstellen Sie eine hoch verfügbare Aktiv/Passiv Konfiguration (`Setup` > `High Availability` > `Add`):
 
 ![Ubika vrack](images/ha-1.png){.thumbnail}
 
-Add an IP of the IP block as Virtual IP:
+Fügen Sie eine IP-Adresse des IP-Blocks als virtuelle IP hinzu:
 
 ![Ubika vrack](images/ha-2-vrack.png){.thumbnail}
 
-Add the two managed UWG instances as VRRP members using the workload interfaces (eth1):
+Fügen Sie die beiden verwalteten UWG-Instanzen als VRRP-Member mithilfe der Workload Interfaces (eth1) hinzu:
 
 ![Ubika vrack](images/ha-3.png){.thumbnail}
 
-Apply the configuration (top right corner button):
+Konfiguration anwenden (Button oben rechts im Interface):
 
 ![Ubika vrack](images/ha-4.png){.thumbnail}
 
-### Configure the licences <a name="step3"></a>
+<a name="step3"></a>
 
-Ubika WAAP Gateway licences are available directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. Depending on your deployment needs, you can choose between a single VM licence or a High Availability mode licence, which supports an Active-Backup configuration with two data-plane instances and one-or-more control plane instances. The licences also vary based on the SSL TPS (Transactions Per Second), supporting either multiple SSL certificates or failover capabilities.
+### Lizenzen konfigurieren
 
-We strongly recommend to use latest compute instances for appliance deployments, i.e.:
+Die Ubika WAAP Gateway Lizenzen sind über die [offizielle Website von Ubika](https://my.ubikasec.com/){.external} verfügbar. Abhängig von Ihren Bereitstellungsanforderungen können Sie zwischen einer einzelnen VM Lizenz oder einer High Availability Lizenz wählen, die eine Active Backup Konfiguration mit zwei Data Plane Instanzen und einer oder mehreren Control Plane Instanzen unterstützt.  
+Die Lizenzen variieren auch abhängig vom TPS SSL (Transaktionen pro Sekunde), wobei mehrere SSL-Zertifikate oder Failover-Funktionen unterstützt werden.
 
-- C3-8 for basic needs and VMcloud licences.
-- C3-16, C3-32, C3-64 and C3-128 for Ubika Enterprise Edition 1500, 2450, 4450, 5450 and 6450 licences respectively.
-- C3-16 for small MGMT console, or C3-128 for big MGMT console (depends on the observability options enabled).
+Es wird dringend empfohlen, die neuesten Generationen von Compute-Instanzen für Appliance-Bereitstellungen zu verwenden. Beispiel:
 
-To apply the licences, you will need to provide the following information to UWG:
+- C3-8 für grundlegende Anforderungen und VMcloud Lizenzen
+- C3-16, C3-32, C3-64 bzw. C3-128 für die Lizenzen Ubika Enterprise Edition 1500, 2450, 4450, 5450 und 6450
+- C3-16 für die kleine MGMT-Konsole oder C3-128 für die große MGMT-Konsole (abhängig von den aktivierten Beobachtungsoptionen)
 
-- Type of UWG deployment (single instance or HA)
-- Serial number of the UWG instance
-- Number of vCPUs and the amount of RAM allocated to each instance
+Um die Lizenzen anzuwenden, müssen Sie UWG die folgenden Informationen bereitstellen:
 
-Once you receive the licences from Ubika, apply them to the corresponding instances to complete the setup.
+- UWG Bereitstellungstyp (Single Instance oder HA)
+- Seriennummer der UWG-Instanz
+- Anzahl der vCPUs und der jeder Instanz zugewiesenen RAM
 
-### Create your web server environment <a name="step4"></a>
+Sobald Sie die Lizenzen von Ubika erhalten haben, wenden Sie diese auf die entsprechenden Instanzen an, um die Installation abzuschließen.
 
-In this section, we will create a web server environment and set up a load balancer to distribute traffic between multiple web servers. This step is crucial to validate the proper functioning of the network, security, and high availability settings of your UWG setup. By implementing a load balancer, we ensure that traffic is balanced across your web servers, enabling failover protection and redundancy, which is essential for maintaining service availability.
+<a name="step4"></a>
 
-Create two web servers on the workload network.
+### Erstellen Sie Ihre Webserver-Umgebung
 
-Before executing the next OpenStack command, first create a `webserver.cloud-init` file and add the following content, adapting the parameters to your environment:
+In diesem Abschnitt erstellen wir eine Webserver-Umgebung und richten einen Load Balancer ein, um den Traffic auf mehrere Webserver zu verteilen. Dieser Schritt ist entscheidend, um den korrekten Netzwerkbetrieb, die Sicherheit und die Hochverfügbarkeitseinstellungen Ihrer UWG-Konfiguration zu validieren. Mit einem Load Balancer stellen wir das Gleichgewicht des Traffics auf Ihren Webservern sicher. Dies ermöglicht Schutz und Redundanz im Falle eines Failovers, was für die Aufrechterhaltung der Verfügbarkeit des Dienstes unerlässlich ist.
+
+Erstellen Sie zwei Webserver im Workload-Netzwerk.
+
+Bevor Sie den OpenStack-Befehl ausführen, erstellen Sie zunächst eine `webserver.cloud-init`-Datei und fügen Sie den folgenden Inhalt hinzu, wobei Sie die Einstellungen an Ihre Umgebung anpassen:
 
 ```console
 {
@@ -297,29 +309,29 @@ Before executing the next OpenStack command, first create a `webserver.cloud-ini
 }
 ```
 
-Once the `webserver.cloud-init` file is created, execute the following commands:
+Führen Sie nach dem Erstellen der Datei `webserver.cloud-init` die folgenden Befehle aus:
 
 ```bash
 openstack server create --flavor b3-8 --image "Ubuntu 22.04" --network ubika-workload ubika-test-webserver-1 --key-name <username> --user-data ./webserver.cloud-init
 ```
 
-```console
+```bash
 openstack server create --flavor b3-8 --image "Ubuntu 22.04" --network ubika-workload ubika-test-webserver-2 --key-name <username> --user-data ./webserver.cloud-init
 ```
 
-Create an Octavia private load balancer:
-
-```bash
-openstack loadbalancer create --name ubika-test-webserver --vip-subnet-id ubika-workload
-```
-
-Check the status of the load balancer, it should be `ACTIVE`:
+Erstellen Sie einen privaten Octavia Load Balancer:
 
 ```bash
 openstack loadbalancer show 367ecaef-28f6-4866-9af2-7ce519ba688f
 ```
 
-Create an HTTP listener for the load balancer:
+Überprüfen Sie den Status des Load Balancers auf `ACTIVE`:
+
+```bash
+OpenStack LoadBalancer Show 367eCAEF-28f6-4866-9af2-7ce519ba688f
+```
+
+Erstellen Sie einen HTTP-Listener für den Load Balancer:
 
 ```bash
 openstack loadbalancer listener create --name ubika-test-webserver --protocol HTTP --protocol-port 80 29590860-2852-44c3-9514-dfb271bd9371
@@ -329,13 +341,13 @@ openstack loadbalancer listener create --name ubika-test-webserver --protocol HT
 openstack loadbalancer pool create --name ubika-test-webserver --listener 3e77b59f-0abb-4861-b0a5-7de442ee6d1b --protocol HTTP --lb-algorithm ROUND_ROBIN
 ```
 
-Create health check for the load balancer backends pool:
+Erstellen Sie eine Integritätsprüfung (*health check*) für den Load Balancer Backend Pool:
 
 ```bash
 openstack loadbalancer healthmonitor create --type HTTP --delay 5 --timeout 5 --max-retries 3 212ff492-6935-4810-973f-83b7346e72ac
 ```
 
-Get the IP of the two web servers:
+Rufen Sie die IP-Adressen der beiden Webserver ab:
 
 ```bash
 openstack port list --server ubika-test-webserver-1 --network ubika-workload
@@ -345,7 +357,7 @@ openstack port list --server ubika-test-webserver-1 --network ubika-workload
 openstack port list --server ubika-test-webserver-2 --network ubika-workload
 ```
 
-Add the web servers to the backends pool of the load balancer:
+Fügen Sie die Webserver dem Backend Pool des Load Balancers hinzu:
 
 ```bash
 openstack loadbalancer member create --address 192.168.2.164 --protocol-port 80 212ff492-6935-4810-973f-83b7346e72ac
@@ -355,31 +367,31 @@ openstack loadbalancer member create --address 192.168.2.164 --protocol-port 80 
 openstack loadbalancer member create --address 192.168.2.237 --protocol-port 80 212ff492-6935-4810-973f-83b7346e72ac
 ```
 
-Create a Reverse Proxy (Setup -> Reverse Proxy -> Add) on one of the Ubika managed boxes:
+Erstellen Sie einen Reverse Proxy (`Setup` -> `Reverse Proxy` -> `Add`) auf einem der von Ubika verwalteten Boxen:
 
 ![Ubika vrack](images/reverse-proxy.png){.thumbnail}
 
-Create a DNS A record for the webserver pointing to the virtual IP of the Ubika deployment:
+Erstellen Sie einen DNS A-Eintrag für den Webserver, der auf die virtuelle IP-Adresse von Ubika zeigt:
 
 ![Ubika vrack](images/dns-vrack.png){.thumbnail}
 
-Get the VIP of the load balancer:
+Rufen Sie die virtuelle IP-Adresse des Load Balancers ab:
 
 ```bash
 openstack loadbalancer show 29590860-2852-44c3-9514-dfb271bd9371
 ```
 
-Create a tunnel (`Setup` > `Tunnels` > `Add`):
+Erstellen Sie einen Tunnel (`Setup` > `Tunnels` > `Add`):
 
 ![Ubika vrack](images/tunnel-1.png){.thumbnail}
 
 ![Ubika vrack](images/tunnel-2.png){.thumbnail}
 
-Apply the configuration:
+Konfiguration anwenden:
 
 ![Ubika vrack](images/tunnel-3.png){.thumbnail}
 
-Try to access the webserver:
+Versuchen Sie, auf den Webserver zuzugreifen:
 
 ```bash
 curl http://ubika.lab-sg.architects.ovh
@@ -387,8 +399,10 @@ curl http://ubika.lab-sg.architects.ovh
 ubika-test-webserver-1
 ```
 
-## Go further <a name="gofurther"></a>
+<a name="gofurther"></a>
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+## Weiterführende Informationen
 
-Join our [community of users](/links/community).
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+Treten Sie unserer [User Community](/links/community) bei.

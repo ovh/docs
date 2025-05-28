@@ -1,7 +1,7 @@
 ---
 title: How to migrate from Load Balancer for MKS (IOLB) to Public Cloud Load Balancer (Octavia)
 excerpt: "The purpose of this guide is to help OVHcloud Managed Kubernetes Service (MKS) users to migrate from an existing Load Balancer for Managed Kubernetes to a Public Cloud Load Balancer"
-updated: 2025-02-14
+updated: 2025-05-14
 ---
 
 <style>
@@ -121,8 +121,11 @@ spec:
 
 ```yaml
 annotations:
-  loadbalancer.ovhcloud.com/class: "octavia" // if your cluster <1.31
-  loadbalancer.ovhcloud.com/flavor: "small" // Available values: small (default) | medium | large | xl
+  loadbalancer.ovhcloud.com/class: "octavia" # if your cluster <1.31
+  loadbalancer.ovhcloud.com/flavor: "small" # Available values: small (default) | medium | large | xl
+  loadbalancer.openstack.org/timeout-client-data: 180000 # The default value (in milliseconds) on the iolb solution, can be customized
+  loadbalancer.openstack.org/timeout-member-connect: 20000 # The default value (in milliseconds) on the iolb solution, can be customized
+  loadbalancer.openstack.org/timeout-member-data: 180000 # The default value (in milliseconds) on the iolb solution, can be customized
 ```
 
 Apply the new service with:

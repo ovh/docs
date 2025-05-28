@@ -1,8 +1,25 @@
 ---
 title: 'Getting started with the MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
-updated: 2025-04-28
+updated: 2025-05-19
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
+</style>
 
 ## Objective
 
@@ -13,237 +30,256 @@ If you have just purchased an MX Plan solution, this means you have email addres
 ## Requirements
 
 - An MX plan solution, available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately
-- Access to the [OVHcloud Control Panel](/links/manager), and `Web Cloud`{.action} section
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions <a name="instructions"></a>
-
-Once the MX Plan solution has been created and is available, you can manage it from the [OVHcloud Control Panel](/links/manager). Depending on its activation date or if it has been migrated recently, you may have the old or new version of the solution. You will need to check this before you proceed any further.
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 1. Open the `Web Cloud`{.action} section.
 1. Click `MX Plan`{.action}.
 1. Select the domain concerned.
-1. Then you can proceed in accordance with the version you are using.
+1. **Continue with the email technology used by your MX Plan service**.
 
-|MX Plan legacy version|MX Plan new version|
-|---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the "Server model" in the "Summary" box|
-|Continue to [Legacy version of the MX Plan solution](#oldmxplan)|Continue to [New version of the MX Plan solution](#newmxplan)|
+> [!primary]
+>
+> **Identify the email technology for your MX Plan solution.**
+>
+> Depending on the activation date of your MX Plan solution, or on a recent migration, the email technology associated with it may differ. This version is characterized by its webmail interface. To identify it:
+>
+> - In the `General information`{.action} tab, note the technology used under the **** comment in the `Subscription`{.action} or `Connection`{.action} box.
+>
+> ![mx plan](images/technology-email.png){.thumbnail .w-500}Webmail
 
-### New version of the MX Plan solution <a name="newmxplan"></a>
+**Contents**
 
-#### Managing your email accounts
+- [Create an email address](#create-email)
+- [Use your email addresses](#consult-emails)
+    - [Use webmail](#consult-emails-webmail)
+    - [Use email client](#consult-emails-client)
+        - [IMAP and POP receive settings](#imap-pop)
+        - [SMTP send settings](#smtp)
+- [Redirections and aliases](#redirection-alias)
+- [Auto-reply](#autoreply)
 
-If you are using the new version of the MX Plan solution, this is the display you should get. If not, please ensure you follow the right path [by referring to the information above](#instructions).
+### Create an email address <a name="create-email"></a>
 
-![email](images/mxplan-starter-new-step1.png){.thumbnail}
+To find out how to create an email address, click on the tab corresponding to the email technology used by your MX Plan service:
 
-#### Adding an email account
+> [!tabs]
+> **Roundcube**
+>>
+>> To create an email address, go to the `Emails`{.action} tab. The window that opens will list the accounts that have already been created. To add a new email account, click the `Add an account`{.action} button.
+>>
+>> ![email](images/mxplan-starter-new-step2.png){.thumbnail .w-500}
+>>
+>> In the window that pops up, enter the following information:
+>>
+>> - **Account name**: Enter your new email address (e.g. first name.surname). The domain name that makes up the email address is already pre-selected in the list.
+>> - **Account description**: Information on the email address, visible only in the table in the `Emails`{.action} tab of your email service.
+>> - **Account size**: Determine the size you would like to assign to the email account.
+>> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
+>>
+>> Once you have filled in the fields, click `Next`{.action}, then check the information that appears in the summary. If the information is correct, click `Confirm`{.action}. Repeat this step as necessary, depending on the number of accounts you have.
+>>
+>> ![email](images/mxplan-creation-new-step3-roundcube.png){.thumbnail .w-500}
+>>
+> **Zimbra and OWA**
+>>
+>> To create an email address, go to the `Email accounts`{.action} tab. The window that opens will list the accounts that are already available, as well as those that you can still create. To add a new email account, click the `Add an account`{.action} button.
+>>
+>> ![email](images/mxplan-starter-new-step2.png){.thumbnail .w-500}
+>>
+>> In the window that pops up, enter the following information:
+>>
+>> - **Email account**: A temporary name is already pre-filled in the text box: delete it and enter your new email address (e.g. your first name.surname). The domain name that makes up the email address is already pre-selected in the list.
+>> - **First name**: Enter a first name.
+>> - **Name**: Enter a name.
+>> - **Display name**: Enter the name that will be displayed as a sender when emails are sent from this address.
+>> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
+>> - **Quota**: Determine the size you would like to assign to the email account.
+>>
+>> Once you have filled in the fields, click `Next`{.action} , then check the information that appears in the summary. If the information is correct, click `Confirm`{.action}. Repeat this step as necessary, depending on the number of accounts you have.
+>>
+>> ![email](images/mxplan-starter-new-step3.png){.thumbnail .w-500}
+>>
 
-To configure your email accounts, go to the `Email accounts`{.action} tab. The window that opens will list the accounts that are already available, as well as those that you can still create. To add a new email account, click `Add account`{.action}.
+### Use your email addresses <a name="consult-emails"></a>
 
-![email](images/mxplan-starter-new-step2.png){.thumbnail}
+Once you have created your email addresses, you can start using them. There are two ways of doing this: using webmail from a browser, or using an email client.
 
-In the popup window, enter the following information:
-
-|Information|Description|
-|---|---|
-|Email account|A temporary name is already pre-filled in the text box: delete it and enter your new email address (e.g. firstname.surname). The domain name for the email address is already preselected in the list.|
-|First name|Enter a first name.|
-|Last name|Enter a last name.|
-|Display name|Enter the name that will be displayed when sending emails from this address.|
-|Password|[Enter and confirm a password](/pages/account_and_service_management/account_information/manage-ovh-password). For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth) and we also recommend renewing it regularly.|
-
-Once you have completed the text fields, click `Next`{.action} and then check the information that appears in the summary. If it is all correct, click `Confirm`{.action} . Repeat this step as necessary according to the number of accounts you have.
-
-![email](images/mxplan-starter-new-step3.png){.thumbnail}
-
-#### Using your email accounts
-
-Once you have created your email addresses, you can start using them straight away. You can do this using Outlook Web App (OWA) webmail, or you can use any software you want.
-
-##### **1. Using Outlook Web App (OWA) webmail**
+#### Use Webmail <a name="consult-emails-webmail"></a>
 
 Go to the [Webmail login](/links/web/email) page, then enter the email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+Select the tab corresponding to the email technology of your MX Plan solution:
 
-![email](images/mxplan-starter-new-step4.png){.thumbnail}
+> [!tabs]
+> **Roundcube**
+>>
+>> You should see an interface similar to the image below with the word "Roundcube" in the top left.  
+>> To find out how to use the Roundcube interface, please read our guide on [Using an email address via the Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube) .
+>>
+>> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
+>>
+> **Zimbra**
+>>
+>> As shown in the image below, a window will appear with the word "Zimbra" in the top left-hand corner.  
+>> To find out how to use your email address via Zimbra webmail, please refer to our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+>>
+>> ![email](images/mxplan-webmail-zimbra01.png){.thumbnail .w-500}
+>>
+> **OWA**
+>>
+>> When you log in to webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear.
+>>
+>> To find out how to use your email address via OWA webmail, please refer to our guide on [Using your email address via Outlook Web App (OWA) webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+>>
+>> ![email](images/mxplan-webmail-owa01.png){.thumbnail .w-500}
+>>
 
-##### **2. Using the software of your choice**
+#### Use an email client <a name="consult-emails-client"></a>
 
-To use your email address with a third-party software, you will need to configure this account on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
+You can configure your email account on an email client such as Outlook, Thunderbird, Mac Mail, etc.
 
-|Windows|Outlook|Apple|Android|
-|---|---|---|---|
-|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)|[Outlook Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)|[Android (latest version)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)|
-|[Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)|[Mail for iPhone or iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)|
-|||[Thunderbird Mac OS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac)|
+Below are the links to the configuration guides depending on your device type:
 
-If you just need the information required to configure your email accounts, the settings to use are listed below:
+> [!tabs]
+> **Windows PC**
+>>
+>> - [Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)<br>
+>> - [Thunderbird for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows)<br>
+>> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+>>
+> **Apple Mac computer**
+>>
+>> - [Outlook for macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)<br>
+>> - [Mail for macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)<br>
+>> - [Thunderbird for macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac)
+>>
+> **iPhone or iPad**
+>>
+>> - [Mail for iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
+>>
+> **Android Smartphone or Tablet**
+>>
+>> - [Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
+>>
 
-- **For IMAP configuration (recommended)**
+If you only need the connection parameters to configure an email account on an email client, you can find these settings below.
 
-|Server type|Server name|Port (with SSL)|Port (without SSL)|
-|---|---|---|---|
-|Incoming|ssl0.ovh.net|993|143|
-|Outgoing|ssl0.ovh.net|465|587|
+#### IMAP and POP Receive Settings <a name="imap-pop"></a>
 
-- **For POP configuration**
-
-|Server type|Server name|Port (with SSL)|Port (without SSL)|
-|---|---|---|---|
-|Incoming|ssl0.ovh.net|995|110|
-|Outgoing|ssl0.ovh.net|465|587|
-
-> [!warning]
->
-> If you have any problems configuring your email address on your device, we recommend using [our configuration guides](/products/web-cloud-email-collaborative-solutions-mx-plan) or getting in touch with the publishers of the application you are using, because you may need to make a change that is specific to the application.
->
-
-#### Advanced features
-
-##### **Security policy**
-
-You may want to increase the security of access to your email addresses.
-
-You can do this by setting the security policy for your MX Plan solution.
-
-Please follow our guide on [Managing the security policy of an email service](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/security-policy).
-
-##### **Redirections**
-
-You may want to redirect your emails to another recipient, create an alias or systematically copy another email address.
-
-To do this, you will need to create a redirection.
-
-You can do this in two ways:
-
-- Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#example-1-redirecting-emails-to-another-address).
-
-- Creating a redirection from your [OVHcloud Control Panel](/links/manager). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-new-version) redirections.
-
-##### **Automated responses**
-
-You may go on holidays, or you will not have access to your email accounts for a certain period of time.
-
-You can then use the automatic reply function of your email accounts. Please follow our guide on [Creating an autoreply for an email account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
-
-##### **Delegations**
-
-You may want to send an email from your own email account using an email address associated with another account of your organisation.
-
-To do this, you will need to configure the delegation for the email account concerned. Please follow our guide on [delegating account rights](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
-
-##### **Mailing lists**
-
-You may want to send a regular newsletter to your contacts.
-
-To do this, you can create a mailing list. Please follow our guide on [Managing and using mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list).
-
-##### **Footer**
-
-You may want to apply a global signature to all the email accounts for your domain name.
-
-You can do this in the footer, which can be configured from your Control Panel. Please follow our guide on [Adding a footer to your emails](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers).
-
-### MX Plan legacy version <a name="oldmxplan"></a>
-
-#### Accessing your solution management
-
-If you are using the legacy version of the MX Plan solution, this is the display you should see. If not, please ensure you follow the right path [by referring to the information above](#instructions).
-
-![email](images/mxplan-starter-legacy-step1.png){.thumbnail}
-
-#### Adding an email account
-
-To create an email account, go to the `Email accounts`{.action} tab. The table that appears will contain all of the email accounts you have created as part of your MX Plan solution. Then click the `Create an email address`{.action} button.
-
-![email](images/mxplan-starter-legacy-step2.png){.thumbnail}
-
-In the popup window, enter the following information:
-
-|Information|Description|  
-|---|---|  
-|User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
-|Account description|Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.|  
-|Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
-|Password|Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. first name, surname and date of birth). We also recommend changing your password regularly.|
-
-Once you have completed the text fields, click `Next`{.action} and then check the information that appears in the summary. If it is all correct, click `Confirm`{.action} . Repeat this step as necessary according to the number of accounts you have.
-
-![email](images/mxplan-starter-legacy-step3.png){.thumbnail}
-
-#### Using your email accounts
-
-Once you have created your email accounts, you can start using them straight away. There are two ways you can do this: using the RoundCube webmail interface, or using the software of your choice.
-
-##### **1. Using RoundCube webmail**
-
-Go to the [webmail login](/links/web/email) page, then enter the email address and password. Then click the `Login`{.action} button.
-
-Your inbox will appear. To find out how to use your email accounts via the RoundCube webmail interface, use our guide on [Using your email account via the RoundCube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
-
-![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
-
-##### **2. Using the software of your choice**
-
-To use your email accounts with a third-party software, you will need to configure them on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
-
-|Windows|Outlook|Apple|Android|
-|---|---|---|---|
-|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)|[Outlook Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)|[Android (latest version)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)|
-|[Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)|[Mail for iPhone or iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)|
-|||[Thunderbird Mac OS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac)|
-
-If you just need the information required to configure your email accounts, the settings to use are listed below:
-
-- **For IMAP configuration (recommended)**
-
-|Server type|Server name|Port (with SSL)|Port (without SSL)|
-|---|---|---|---|
-|Incoming|ssl0.ovh.net|993|143|
-|Outgoing|ssl0.ovh.net|465|587|
-
-- **For POP configuration**
-
-|Server type|Server name|Port (with SSL)|Port (without SSL)|
-|---|---|---|---|
-|Incoming|ssl0.ovh.net|995|110|
-|Outgoing|ssl0.ovh.net|465|587|
+When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP** as well.
 
 > [!warning]
 >
-> If you have any problems configuring your email accounts on your device, we recommend using [our configuration guides](/products/web-cloud-email-collaborative-solutions-mx-plan) or contacting the publishers of the application you are using, because you may need to make a change that is specific to the application.
+> Please only enter the values corresponding to your location (**EUROPE** or **AMERICA/ASIA-PACIFIC**).
 
-#### Advanced features
+Select the tab corresponding to your configuration type:
 
-##### **Redirection**
+> [!tabs]
+> **IMAP configuration**
+>>
+>> - **Username**: Enter the **full** email address.
+>> - **Password**: Enter the password for the email account.
+>> - **EUROPE server (incoming)**: imap.mail.ovh.net **or** ssl0.ovh.net.
+>> - **AMERICA/ASIA-PACIFIC server (incoming)**: imap.mail.ovh.ca.
+>> - **Port**: 993.
+>> - **Security type**: SSL/TLS.
+>>
+> **POP configuration**
+>>
+>> - **Username**: Enter the **full** email address.
+>> - **Password**: Enter the password for the email account.
+>> - **EUROPE server (incoming)**: pop.mail.ovh.net **or** ssl0.ovh.net.
+>> - **AMERICA/ASIA-PACIFIC server (incoming)**: pop.mail.ovh.ca.
+>> - **Port**: 995.
+>> - **Security type**: SSL/TLS.
 
-You may want to redirect your emails to another recipient, create an alias or systematically copy another email address.
+#### SMTP Send Settings <a name="smtp"></a>
 
-To do this, you will need to create a redirection. Please follow our guide on [Using email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-legacy-version).
+Below are the **SMTP** settings to use when sending emails:
 
-##### **Automated responses**
+**SMTP configuration**
 
-You may go on holidays, or you will not have access to your email accounts for a certain period of time.
+- **Username**: Enter the **full** email address.
+- **Password**: Enter the password for the email account.
+- **EUROPE server (outgoing)**: pop.mail.ovh.net **or** ssl0.ovh.net.
+- **AMERICA/ASIA-PACIFIC server (outgoing)**: pop.mail.ovh.ca.
+- **Port**: 465.
+- **Security type**: SSL/TLS.
 
-You can then use the automatic reply function of your email accounts. Please follow our guide on [Creating an autoreply for an email account](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
+### Redirections and Aliases <a name="redirection-alias"></a>
 
-##### **Delegations**
+Do you want to redirect your emails to another recipient, create an alias or systematically copy another email address?
 
-You may want to **delegate all the email services for a domain name to another OVHcloud account** , or **delegate one or more email accounts to another OVHcloud account**. For example, you can allow the holder of this other OVHcloud account to change the password for an email account.
+To do this, click on the tab corresponding to your email technology:
 
-Please follow our guide on [Delegating email management to another person](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
+> [!tabs]
+> **Roundcube**
+>>
+>> To add a redirection or an alias, click on the `Emails`{.action} tab of your MX Plan service, then click on the `Manage redirections`{.action} button on the right.  
+>> The table of redirections that are already active appears. On the right, click `Add a redirection`{.action} to start creating your redirection or alias.
+>>
+>> - `From address`: Enter the email address you would like to redirect.<br>
+>> - `To address`: Enter the address you would like to redirect to here. This can be one of your OVHcloud email addresses, or an external email address.<br>
+>> - `Choose a copy method`: Define whether you want to keep a copy of the email received at the targeted email address (`From address`) or directly redirect to the redirection address (`To address`) without saving a copy.
+>>
+>> To understand how to use redirections and aliases on your MX Plan service, please read our full guide: “[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)”.
+>>
+> **OWA and Zimbra**
+>>
+>> When you are using **OWA** or **Zimbra**, you can do this in two ways:
+>>
+>> 1. **Create your redirection via webmail**: Via inbox rules or filters. These rules, which are applied when an email is received, allow an email to be forwarded or redirected. To do this, please follow our guide on [Inbox rules via the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan), or read the Filters section of our guide on [Using webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+>>
+>> 2. **Create your redirection and alias via the OVHcloud Control Panel**: To add a redirection or alias, click on the `Redirections`{.action} tab. The table of redirections that are already active is displayed. On the right, click `Add a redirection`{.action}.
+>>
+>> - `From address`: Enter the email address you would like to redirect.<br>
+>> - `To address`: Enter the address you would like to redirect to here. This can be one of your OVHcloud email addresses, or an external email address.<br>
+>> - `Choose a copy method`: Define whether you want to keep a copy of the email received at the targeted email address (`From address`) or directly redirect to the redirection address (`To address`) without saving a copy.
+>>
+>> To understand how to use redirections and aliases on your MX Plan service, please read our full guide: “[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)”.
 
-##### **Mailing lists**
+### Automatic reply <a name="autoreply"></a>
 
-You may want to send a regular newsletter to your contacts.
+It is important to be able to set up an automatic response in case you cannot view or process your emails.
 
-To do this, you can create a mailing list. Please follow our guide on [Managing and using mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list).
+Select the tab corresponding to the email technology of your MX Plan solution:
 
-## Go further
+> [!tabs]
+> **Roundcube**
+>>
+>> To add an automatic reply to one of your email addresses, click on the `Emails`{.action} tab of your MX Plan service, then click the `Manage replies`{.action} button on the right.  
+>> The table of auto-replies that are already active is displayed. On the right, click `Add auto-reply`{.action} to start creating your redirection or alias.
+>>
+>> For more details on setting up an automatic response from your MX Plan service in the OVHcloud Control Panel, please read our guide on “[MX Plan - Creating an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)”.
+>>
+> **Zimbra**
+>>
+>> You can set up an automatic reply directly by logging in to your email account via Webmail. For further details, please refer to our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra), in the section “Automatic replies/Voicemail”.
+>>
+> **OWA**
+>>
+>> You can set up an automatic reply directly by logging in to your email account via Webmail. For further details, please refer to the section "Adding automatic replies" in our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+>>
 
-If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+## Go further <a name="go-further"></a>
+
+[Use Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
+
+[Use Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
+
+[Use Outlook Web App (OWA) webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
+
+[MX Plan - Create an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
+
+[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).

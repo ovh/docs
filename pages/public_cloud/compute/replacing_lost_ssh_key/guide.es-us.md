@@ -25,7 +25,7 @@ Sin embargo, todavía puede conectarse a su instancia a través del modo de resc
 
 ## Requisitos
 
-- Una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
+- Una [instancia de Public Cloud](/links/public-cloud/compute) en su cuenta de OVHcloud
 - Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento

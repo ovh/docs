@@ -1,7 +1,7 @@
 ---
 title: "Publicar un sitio web en internet"
 excerpt: "Descubra cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet"
-updated: 2024-03-21
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -70,9 +70,7 @@ Habrá recibido esta información por correo electrónico tras la instalación d
 
 Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection). Si no recuerda la contraseña, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
-Una vez que disponga de todos los datos necesarios, podrá conectarse a su espacio de almacenamiento de tres formas diferentes:
-
-- **Explorador FTP de OVHcloud**: Le permite acceder al espacio de almacenamiento desde un navegador web. Para utilizarlo, en la pestaña `FTP - SSH`{.action}, haga clic en el botón `Explorador FTP`{.action}.
+Una vez que disponga de todos los datos necesarios, podrá conectarse a su espacio de almacenamiento de dos formas diferentes:
 
 - **Cliente FTP o SFTP**: Deberá instalar en su ordenador un programa compatible con el protocolo FTP o SFTP (por ejemplo, FileZilla). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa.
 

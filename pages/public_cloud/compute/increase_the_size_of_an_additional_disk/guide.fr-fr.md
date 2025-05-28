@@ -26,9 +26,9 @@ Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous
 
 ## Prérequis
 
-- Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre projet Public Cloud.
+- Une [instance Public Cloud](/links/public-cloud/compute) dans votre projet Public Cloud.
 - Un [disque supplémentaire](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) créé dans votre projet.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir un accès administratif (sudo) à votre instance via SSH (Linux) ou RDP (Windows).
 
 ## En pratique
@@ -238,6 +238,7 @@ Le volume redimensionné inclut désormais l'espace disque supplémentaire.
 ## Aller plus loin
 
 [Créer et configurer un disque additionnel sur une instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Modifier un Volume Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

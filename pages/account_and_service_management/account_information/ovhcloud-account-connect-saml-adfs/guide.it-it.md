@@ -1,7 +1,7 @@
 ---
 title: Attiva le connessioni Active Directory Federation Services (AD FS) SSO con il tuo account OVHcloud
 excerpt: "Scopri come associare il tuo servizio Active Directory Federation Services (AD FS) al tuo account OVHcloud tramite SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Obiettivo
@@ -121,17 +121,13 @@ Una volta terminata la tabella di corrispondenza, il servizio AD FS si fida di O
 
 L'aggiunta del tuo AD FS come affidabilità provider avviene [nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), dove è possibile fornire i metadati del provider.
 
-Nella barra laterale, clicca su `Identità, sicurezza e operazioni`{.action} e poi su `Identity & Access Management`{.action}.
+Nella barra laterale, clicca su `Identità, Sicurezza e Operazioni`{.action} e poi su `Identità`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Clicca sulla scheda `Identità`{.action} per accedere alla gestione degli utenti locali.
+Clicca sulla scheda `SSO`{.action} e sul pulsante `Connessione SSO`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Clicca sul pulsante `SSO connection`{.action}.
-
-![OVHcloud di connessione SSO Step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Inserisci i metadati XML del tuo servizio AD FS. Il campo `Nome del gruppo` è facoltativo in questo caso. Clicca su `Conferma`{.action}.
 
@@ -186,7 +182,7 @@ Puoi verificarlo anche nella dichiarazione SAML:
 
 Questo significa che è necessario aggiungere il gruppo `manager@<my-domain>.com` al tuo account OVHcloud associandovi un ruolo. In caso contrario, il tuo account OVHcloud non sa cosa l'utente può fare.
 
-Per aggiungerlo, clicca sul pulsante `Dichiarare un gruppo`{.action} e inserisci i campi:
+Per aggiungere questo gruppo, clicca sulla sezione `Identità`{.action} e poi sulla scheda `Gruppi di utenti`{.action}. Clicca sul pulsante `Dichiarare un gruppo`{.action}, inserisci il nome del gruppo e seleziona il ruolo associato:
 
 ![Gruppi di gestione utenti AD FS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 
@@ -198,7 +194,7 @@ Verifica che il gruppo sia aggiunto al tuo account OVHcloud nella sezione `Grupp
 
 Quando ti connetti con l'utente Active Directory "John Doe", il tuo account OVHcloud riconoscerà che l'utente ha il ruolo "REGULAR", specificato dal suo gruppo.
 
-Attenzione: se concedi il privilegio `Nessuno`, sarà necessario assegnare i diritti a questo gruppo tramite le [politiche IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+Attenzione: se concedi il ruolo `Nessuno`, sarà necessario assegnare i diritti a questo gruppo tramite le [politiche IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 In seguito, potrai disconnetterti dal tuo account e collegarti con il tuo AD FS come provider di identità.
 

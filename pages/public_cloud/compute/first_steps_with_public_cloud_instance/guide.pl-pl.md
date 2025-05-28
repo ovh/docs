@@ -28,7 +28,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `P
 
 Kliknij `Instancje`{.action} w menu po lewej stronie. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Strona ta zawiera listę wszystkich instancji Public Cloud i niektórych ich właściwości:
 
@@ -143,8 +143,8 @@ Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzeni
 
 [Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/public_cloud/compute/public-cloud-first-steps)
 
-[Prezentacja programu "Horyzont"](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+[Prezentacja Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

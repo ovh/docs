@@ -1,7 +1,7 @@
 ---
 title: "Aceder ao espaço de armazenamento FTP do alojamento web"
 excerpt: "Descubra como aceder ao espaço de armazenamento FTP do alojamento web da OVHcloud"
-updated: 2024-05-20
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -79,26 +79,7 @@ Nesta fase, dispõe de todos os elementos que lhe permitem aceder ao seu espaço
 
 A ligação ao espaço de armazenamento FTP pode ser efetuada de várias formas. Consulte este manual em função da operação que pretende realizar.
 
-- [1 Ligação via "FTP Explorer"](#ftpexplorer): permite aceder ao seu espaço de armazenamento FTP a partir do seu browser.
-
-- [2. Ligação através de um software FTP](#ftpsoftware): permite aceder ao seu espaço de armazenamento FTP através de um software (como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ou [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
-Deverá instalar previamente o software/cliente FTP escolhido no seu computador.
-
-- [3. Ligação via acesso SSH](#ssh): permite aceder ao seu espaço de armazenamento FTP através de um acesso SSH. Este tipo de acesso requer conhecimentos técnicos avançados, bem como uma oferta de [alojamento web da OVHcloud](/links/web/hosting){.external} **Pro* ou **Performance**.
-
-#### 1. Ligação através de FTP Explorer <a name="ftpexplorer"></a>
-
-Para se ligar ao espaço de armazenamento FTP através do "FTP Explorer", aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}.
-
-Clique na secção `Alojamentos`{.action} na coluna da esquerda. Escolha o nome do alojamento web em causa, aceda ao separador `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
-
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
-
-Na nova página, insira o seu identificador FTP e a respetiva palavra-passe. Se as informações estiverem corretas, aparecerá o seu espaço de armazenamento.
-
-![ftpconnect](/pages/assets/screens/other/web-tools/net2ftp/login-interface.png){.thumbnail}
-
-#### 2. Ligação através de um software FTP <a name="ftpsoftware"></a>
+#### 1. Ligação através de um software FTP <a name="ftpsoftware"></a>
 
 Depois de instalar o software FTP à sua escolha no seu computador (como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ou [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)), inicie-o. 
 
@@ -120,7 +101,9 @@ Aqui fica um lembrete das informações que deverá introduzir:
 
 Se as informações estiverem corretas, o programa que utiliza mostrará o conteúdo do seu espaço de armazenamento FTP. Poderá aparecer uma mensagem (também chamada "status") para confirmar que o conteúdo foi listado com sucesso pelo seu software FTP.
 
-#### 3. Ligação através de um acesso SSH <a name="ssh"></a>
+#### 2. Ligação através de um acesso SSH <a name="ssh"></a>
+
+Este tipo de acesso requer conhecimentos técnicos avançados, bem como uma oferta de [alojamento web da OVHcloud](/links/web/hosting){.external} **Pro* ou **Performance**.
 
 Para se ligar em SSH, utilize um terminal para interagir diretamente com o seu espaço de armazenamento FTP através de linhas de comando. 
 
@@ -146,7 +129,7 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 No comando acima, substitua:
 
-- o valor `sshlogin` pelo seu login FTP principal, descrito no [passo 2.2](#ftpsoftware) (ou por um login FTP com acesso SSH);
+- o valor `sshlogin` pelo seu login FTP principal, descrito no [passo 2.1](#ftpsoftware) (ou por um login FTP com acesso SSH);
 - os `XXX` pelos números correspondentes ao número do cluster onde se encontra o seu alojamento web.
 
 Uma vez enviado o comando, deverá introduzir a palavra-passe do utilizador SSH.

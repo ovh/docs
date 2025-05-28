@@ -33,7 +33,7 @@ Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instance
 
 Geben Sie im angezeigten Fenster die erforderlichen Informationen ein:
 
-Snapshot Name: Geben Sie einen Namen für den Snapshot ein und klicken Sie auf `Create Snapshot`{.action}.
+* Snapshot Name: Geben Sie einen Namen für den Snapshot ein und klicken Sie auf `Create Snapshot`{.action}.
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
@@ -51,7 +51,7 @@ Klicken Sie auf `Launch`{.action} neben der Auswahl.
 
 Verwenden Sie die Optionen-Auswahl, um Konditionen für die Erstellung des Snapshots festzulegen.
 
-> [!tab]
+> [!tabs]
 > **Details**
 >>
 >> **Name der Instanz (*Instance name*):** Geben Sie den gewünschten Instanznamen an.<br>
@@ -63,7 +63,7 @@ Verwenden Sie die Optionen-Auswahl, um Konditionen für die Erstellung des Snaps
 >> Wählen Sie das gewünschte *flavor* aus. Stellen Sie sicher, dass Sie eine Version auswählen, deren Ressourcen mindestens der Image-Größe (Snapshot) entsprechen.<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Netzwerk (*Network*)**
+> **Netzwerk (*Networks*)**
 >>
 >> Wählen Sie ein öffentliches Netzwerk (Ext-Net) aus, das mit der Instanz verbunden werden soll.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>
@@ -86,4 +86,4 @@ Klicken Sie anschließend auf den Dropdown-Pfeil neben dem zu löschenden Snapsh
 
 ## Weiterführende Informationen
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

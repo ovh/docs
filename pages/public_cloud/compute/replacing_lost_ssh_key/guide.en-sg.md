@@ -20,7 +20,7 @@ However, you can still connect to your instance via the OVHcloud rescue mode, wh
 
 ## Requirements
 
-- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- A [Public Cloud instance](/links/public-cloud/compute) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

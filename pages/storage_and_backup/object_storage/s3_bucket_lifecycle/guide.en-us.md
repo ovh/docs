@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2025-04-29
+updated: 2025-05-13
 ---
 
 <style>
@@ -164,7 +164,7 @@ In a versioning-enabled bucket, each object has one current version and zero or 
 
 ### Understanding the NoncurrentDays parameter
 
-The NoncurrentDays parameter defines the minimum number of days since a version is no longer current. This paramater must not be confused with the age of the object but rather indicates the minimum age of a non-current version.
+The NoncurrentDays parameter defines the minimum number of days since a version is no longer current. This parameter must not be confused with the age of the object but rather indicates the minimum age of a non-current version.
 
 **Example 1:**
 
@@ -227,7 +227,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 **Example**: Get expiration date via the cli
 
 ```bash
-~$ aws s3api head-bucket --bucket $bucket --key $object_name
+~$ aws s3api head-object --bucket $bucket --key $object_name
 {
   ...
   "Expiration" : "expiry-date=\"Fri, 21 Dec 2024 00:00:00 GMT\", rule-id=\"123456789\"",

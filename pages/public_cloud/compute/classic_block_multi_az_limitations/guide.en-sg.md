@@ -2,7 +2,6 @@
 title: Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions
 excerpt: 'Learn how to safely use Classic Multi-Attach Block Storage in 3AZ regions, understand its limitations, and avoid data corruption'
 updated: 2025-05-06
-flag: hidden
 ---
 
 ## Introduction

@@ -6,7 +6,7 @@ updated: 2024-01-11
 
 ## Objectif
 
-Vous pouvez avoir besoin de déplacer des volumes additionnels d'une région OpenStack à une autre, soit parce qu'une nouvelle région est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers le [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}.
+Vous pouvez avoir besoin de déplacer des volumes additionnels d'une région OpenStack à une autre, soit parce qu'une nouvelle région est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/) vers le [Public Cloud](/links/public-cloud/compute).
 
 **Découvrez comment transférer une sauvegarde de volume d'une région OpenStack à une autre.**
 
@@ -190,6 +190,6 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Aller plus loin
 
-[Transférer la sauvegarde d'une instance d'une région OpenStack à une autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
+[Télécharger et transférer la sauvegarde d'une instance d'une région OpenStack à une autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

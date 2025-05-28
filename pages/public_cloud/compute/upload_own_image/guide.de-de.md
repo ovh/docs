@@ -4,10 +4,6 @@ excerpt: Erfahren Sie hier, wie Sie Ihr eigenes Image in der Public Cloud verwen
 updated: 2020-10-27
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 OVHcloud bietet Public Cloud Nutzern gebrauchsfertige Images, aber auch die Möglichkeit, ihre eigenen Images zu verwenden.
@@ -38,8 +34,8 @@ Andere Betriebssysteme bieten wahrscheinlich auch ISO-Images, die bei der Erstel
 
 Stellen Sie sicher, dass folgende Elemente auf Ihren Images installiert sind, um sie als *cloud-ready* vorzubereiten:
 
-- *QEMU Guest Agent*\: Diese Operation ermöglicht es dem Host, mit der Instanz für Live-Snapshots direkt zu kommunizieren. Nicht alle Betriebssysteme sind mit diesem Paket kompatibel.
-- *cloud-init*\: So können Sie Ihre Instanz beim ersten Start booten, indem Sie SSH-Schlüssel hinzufügen und das Netzwerk konfigurieren. Die meisten Betriebssysteme sind mit dieser Funktion kompatibel.
+- *QEMU Guest Agent*: Diese Operation ermöglicht es dem Host, mit der Instanz für Live-Snapshots direkt zu kommunizieren. Nicht alle Betriebssysteme sind mit diesem Paket kompatibel.
+- *cloud-init*: So können Sie Ihre Instanz beim ersten Start booten, indem Sie SSH-Schlüssel hinzufügen und das Netzwerk konfigurieren. Die meisten Betriebssysteme sind mit dieser Funktion kompatibel.
 
 Wir empfehlen die Verwendung von Bildern im RAW- oder QCOW2-Format. Halten Sie die Größe des Images so klein wie möglich, um die monatlichen Abrechnungskosten zu minimieren und die Zeit bis zur Erstellung Ihrer Instanzen zu verkürzen.
 
@@ -53,7 +49,7 @@ Wenn Ihr Image fertig ist, folgen Sie diesen Schritten, um den Import mit der Op
 
 1\. Laden Sie Ihre Datei "openrc.sh" für Ihren OpenStack-Benutzer aus Ihrem OVHcloud Kundencenter herunter (wählen Sie die Region aus, in der Sie den Upload durchführen möchten).
 
-![openrc](images/openrc_file.png){.thumbnail}
+![openrc](images/open_rc_download.png){.thumbnail}
 
 2\. Laden Sie die openrc Datei:
 
@@ -72,7 +68,7 @@ source openrc.sh
 - Definiert die empfohlenen Eigenschaften. Eine optimale Konfiguration ermöglicht die Nutzung von Funktionen wie *live-snapshot* und *cloud-init* (benötigt die Verwendung des Benutzernamens)
 
 ```sh
-openstack image create —disk-format raw —container-format bare —file debian9.raw "debian 9 - my image" —private —property distribution=debian —property hw_disk_bus=scsi —property hw_scsi_model=virtio-scsi —property hw_qemu_guest_agent es —property image_original_user=debian
+openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - My Image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
 ```
 
 #### Über das Horizon-Interface
@@ -98,5 +94,5 @@ Sobald Ihr Image importbereit ist, folgen Sie den diesen Schritten, um es über 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
 ## Weiterführende Informationen
-
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+ 
+Treten Sie unserer [User Community](/links/community) bei.

@@ -1,7 +1,7 @@
 ---
 title: "SQL Database Web Hosting EOL und EOS Ankündigungen"
 excerpt: "SQL Database Web Hosting EOL und EOS Ankündigungen"
-updated: 2024-10-17
+updated: 2025-05-20
 ---
 
 Die von der folgenden Terminierung zu End-of-Life (EOL) und End-of-Sale (EOS) erfassten Produkte sind Webhosting SQL Datenbankdienste, d.h. MySQL Datenbanken, die über das Webhosting-Netzwerk erreichbar sind.
@@ -10,7 +10,8 @@ Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Data
 
 |DBMS-Version|EOL Ankündigung|End-of-Sale|End-of-Support|
 |---|---|---|---|
-|MySQL 8.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+|MySQL 8.0|2025-05-20|2025-09-30|2026-04-01|
+|MySQL 8.4|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 
 > [!primary]
 >

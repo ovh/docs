@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit der OVHcloud API
 excerpt: Erfahren Sie hier, wie Sie die OVHcloud API verwenden
-updated: 2024-06-07
+updated: 2025-05-13
 ---
 
 > [!primary]
@@ -204,28 +204,38 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### Schlüssel auflisten und widerrufen
 
-Es gibt derzeit keine Option im Kundencenter, mit der Sie Ihre Schlüssel auflisten und widerrufen können. Dazu kann das API-Portal verwendet werden:
+Um Schlüssel aufzulisten und zu widerrufen, können Sie die [API-Konsole](/links/api) oder das [OVHcloud Kundencenter](/links/manager) verwenden:
 
-- Erhalten Sie die Schlüssel-IDs mit dem folgenden Aufruf:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application
->
-
-- Erhalten Sie die Schlüsseldetails mit dem folgenden Aufruf:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application/{applicationId}
->
-
-- Widerrufen Sie einen Schlüssel mit dem folgenden Aufruf:
-
-> [!api]
->
-> @api {v1} /me DELETE /me/api/application/{applicationId}
->
+> [!tab]
+> API-Konsole
+>>
+>> - Auflisten der Schlüssel-IDs mit dem folgenden Aufruf:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application
+>> >
+>>
+>> - Mit dem folgenden Aufruf erhalten Sie wichtige Informationen:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application/{applicationId}
+>> >
+>>
+>> - Schlüssel sperren mit dem folgenden Aufruf:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me DELETE /me/api/application/{applicationId}
+>> >
+>>
+> OVHcloud Kundencenter
+>>
+>> Gehen Sie zum Menü `Identität, Sicherheit und Operationen`{.action} und danach zu `API-Schlüssel`{.action}.
+>>
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
+>>
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
@@ -233,4 +243,4 @@ Es gibt derzeit keine Option im Kundencenter, mit der Sie Ihre Schlüssel auflis
 
 [OVHcloud Kunden-Account über die API verwalten](/pages/manage_and_operate/api/api_right_delegation) (EN)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

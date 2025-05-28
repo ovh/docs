@@ -2,7 +2,6 @@
 title: Utilisation correcte et limitations du stockage Classic Multi-Attach dans les régions 3AZ
 excerpt: "Découvrez comment utiliser en toute sécurité le stockage Classic Multi-Attach dans les régions 3AZ, comprendre ses limitations et éviter la corruption de données"
 updated: 2025-05-06
-flag: hidden
 ---
 
 ## Introduction

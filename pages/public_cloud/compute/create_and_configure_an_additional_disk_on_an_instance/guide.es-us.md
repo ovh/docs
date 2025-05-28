@@ -366,7 +366,7 @@ sudo blkid
 
 Abra `/etc/fstab` con un editor de texto:
 
-```
+```bash
 sudo nano /etc/fstab
 ```
 
@@ -617,7 +617,7 @@ Por último, vamos a desvincular el volumen de la instancia:
 >> ```console
 >> terraform apply
 >> ```
-.>
+>>
 >> El resultado debería ser similar al siguiente:
 >>
 >> ```console

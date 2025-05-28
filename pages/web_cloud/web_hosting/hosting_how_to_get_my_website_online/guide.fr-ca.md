@@ -1,7 +1,7 @@
 ---
 title: "Mettre en ligne un site internet sur son hébergement web"
 excerpt: "Découvrez comment mettre en ligne un site internet sur votre hébergement web OVHcloud"
-updated: 2024-03-21
+updated: 2025-05-23
 ---
 
 ## Objectif
@@ -70,9 +70,7 @@ Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’in
 
 Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci. Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection). Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
 
-Une fois tous les éléments en votre possession, la connexion à l'espace de stockage peut s'effectuer de trois manières différentes :
-
-- **utiliser le FTP Explorer d'OVHcloud** : vous permet d'accéder à votre espace de stockage depuis votre navigateur internet. Pour l'utiliser, toujours depuis l'onglet `FTP - SSH`{.action}, cliquez sur le bouton `FTP Explorer`{.action} ;
+Une fois tous les éléments en votre possession, la connexion à l'espace de stockage peut s'effectuer de deux manières différentes :
 
 - **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme FileZilla. Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
 

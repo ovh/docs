@@ -56,7 +56,7 @@ Le bouton `Installation à partir d'un de vos gabarits`{.action} a été supprim
 - Ecrire un script qui utilise l'API (recommandé pour les automatisations, mais requiert des connaissances en programmation) : voir la section [API OVHcloud, SoYouStart ou Kimsufi](#api) ci-dessous.
 - Utiliser la console API (bon compromis) : utilisez l'ancien appel API jusqu'au 17 Juin 2025, puis utilisez le nouveau appel API avec les payloads fournis ensuite.
 
-Même si vous pouvez déjà explorer des exemples et schémas de la [nouvelle route API /reinstall dans la console API](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) et lire la [documentation publique](/pages/bare_metal_cloud/dedicated_servers/api-os-installation), voici un contournement temporaire que vous pouvez suivre en attendant de recevoir les payloads de la nouvelle route API dans le courriel du 17 Juin 2025.
+Même si vous pouvez déjà explorer des exemples et schémas de la [nouvelle route API /reinstall dans la console API](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) et lire la [documentation publique](/pages/bare_metal_cloud/dedicated_servers/api-os-installation), voici un contournement temporaire que vous pouvez suivre en attendant de recevoir les payloads de la nouvelle route API dans le courriel du 19 Mai 2025.
 
 #### Contournement pour les comptes OVHcloud <a name="ux-ovh"></a>
 

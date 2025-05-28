@@ -1,18 +1,18 @@
 ---
 title: 'IP-Block-Ankündigung im vRack ändern'
 excerpt: 'So ändern Sie die IP-Block-Ankündigung im vRack'
-updated: 2019-03-12
+updated: 2025-05-14
 ---
 
 ## Einleitung
 
-Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVHcloud [Dedicated Servern](/links/bare-metal/bare-metal){.external} einrichten können.
+Das [vRack](/links/network/vrack) ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVHcloud [Dedicated Servern](/links/bare-metal/bare-metal) einrichten können.
 
 **In dieser Anleitung erfahren Sie, wie Sie die IP-Block-Ankündigung im vRack ändern.**
 
 ## Voraussetzungen
 
-- Sie besitzen ein [vRack](https://www.ovh.de/loesungen/vrack/){.external}.
+- Sie haben ein [vRack](/links/network/vrack) in Ihrem Kunden-Account.
 - Sie haben [einen IP-Adressblock im vRack eingerichtet](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
 - Sie verfügen über fortgeschrittene Netzwerkkenntnisse.
 
@@ -43,27 +43,29 @@ Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse aktuell in **Rou
 
 ### Schritt 2: IP-Block-Ankündigung ändern
 
-Gehen Sie auf den Link <https://api.ovh.com/console/> und loggen Sie sich mit Ihrer OVHcloud Kundenkennung ein. Verwenden Sie die nachstehenden API-Aufrufe, um die IP-Block-Ankündigung zu bearbeiten.
+Öffnen Sie die [API-Konsole](/links/api) und loggen Sie sich mit Ihrer OVHcloud Kundenkennung ein. Verwenden Sie die nachstehenden API-Aufrufe, um die IP-Block-Ankündigung zu bearbeiten.
 
 > [!api]
 >
 > @api {v1} /vrack GET /vrack
 > 
 
-So können Sie über die API die Liste der vRack Dienste aufrufen. Wenn Sie den betreffenden Dienst über diese Referenzen nicht identifizieren können, finden Sie seinen Namen in Ihrem [OVHcloud Kundencenter](/links/manager){.external}. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action}, dann in den Bereich `Network`{.action} und dann "vRack". 
+So können Sie über die API die Liste der vRack Dienste aufrufen. Wenn Sie den betreffenden Dienst über diese Referenzen nicht identifizieren können, finden Sie seinen Namen in Ihrem [OVHcloud Kundencenter](/links/manager). Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action}, dann in den Bereich `Network`{.action} und dann "vRack". 
 
 > [!api]
 >
-> @api {v1} /vrack POST /vrack/{serviceName}/ip/{ip}/announceInZone#POST
+> @api {v1} /vrack POST /vrack/{serviceName}/ip
 > 
 
 Mit diesem API-Aufruf können Sie die IP-Block-Ankündigung ändern. Füllen Sie die erforderlichen Felder aus:
 
 |Feld|Beschreibung|
 |---|---|
-|serviceName|Geben Sie den Namen des betreffenden vRack Dienstes ein.|
-|ip|Geben Sie den Namen des betreffenden IP-Blocks ein. Achten Sie darauf, nicht nur die im vorherigen Schritt getestete IP-Adresse, sondern den gesamten IP-Block anzugeben. Zum Beispiel: `1.2.3.4/27`.|
-|zone|Wählen Sie die neue Ankündigungszone des IP-Blocks aus. Achten Sie darauf, nicht dieselbe Ankündigungszone anzugeben, die im vorherigen Schritt ermittelt wurde.|
+|serviceName|Geben Sie den Namen des betreffenden vRack Dienstes ein. Zum Beispiel: `pn-12345`.|
+|block|Geben Sie den Namen des betreffenden IP-Blocks ein. Achten Sie darauf, nicht nur die im vorherigen Schritt getestete IP-Adresse, sondern den gesamten IP-Block anzugeben. Zum Beispiel: `192.0.2.0/24`.|
+|region|Wählen Sie die neue Ankündigungszone des IP-Blocks aus. Achten Sie darauf, nicht dieselbe Ankündigungszone anzugeben, die im vorherigen Schritt ermittelt wurde. Zum Beispiel: `bexxx.gra-d1-a75.fr.eu`.|
+
+![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 
 Führen Sie nun den API-Aufruf aus, um die Ankündigung zu ändern.
 

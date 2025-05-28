@@ -1,7 +1,7 @@
 ---
 title: "Speeding up your website with CDN"
 excerpt: "Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Objective
@@ -229,8 +229,8 @@ Under **Cache** rules, click the `Add a rule`{.action} button.
 
 * **Rule name**: Give your rule a name.
 * **Resource type**: Choose from the options below:
-    * **Extension**: Please enter a valid file extension without putting a period, for example: css
-    * **File**:  Please enter a valid path for one of the folders in the root directory of your website.
+    * **Extension**: Please enter a valid file extension without putting a period, for example: CSS.
+    * **File**: Please enter a valid path for one of the folders in the root directory of your website.
     * **Custom regular expression**: It applies to all URIs on your website.
     * **URI**: Enter the subset of your website’s resources via their URL path.
 * **Resource**: set attributes based on the type of resource you choose.
@@ -245,42 +245,9 @@ Rules appear in a list. You can edit a rule by clicking `...`{.action} to the ri
 
 Once you have configured your rules and chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
 
-### Viewing CDN statistics
+### View CDN statistics and logs
 
-Click on the tabs below to view each of the **6** steps.
-
-> [!tabs]
-> **Step 1**
->>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Step 3**
->>
->> On the page that pops up, click on the `Statistics and logs`{.action} tab.
->>
-> **Step 4**
->> 
->> In the `Visit statistics` section, click the `View statistics`{.action} button.
->>
-> **Step 5**
->>
->> You are redirected to the tool **OVHcloud Web Statistics**. In this tool, click on the form labelled `Select domain`{.action} located at the top of the page, then choose a domain name for which the CDN is active.
->>
-> **Step 6**
->>
->> In the right column, click on the `Cache`{.action} tab.
->>
->> You will now see the CDN statistics for your domain name.
->>
->> If you need further information, please refer to our guide on "[Web hosting - View website statistics and logs](/pages/web_cloud/web_hosting/logs_and_statistics)".
+To view CDN statistics and/or logs, please refer to our dedicated guide: “[Web Hosting - View CDN statistics and logs](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)”.
 
 ### How do I cache my files in the CDN?
 

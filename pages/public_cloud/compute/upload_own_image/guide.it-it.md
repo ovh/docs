@@ -29,10 +29,10 @@ Ti consigliamo di utilizzare immagini Cloud compatibili fornite dal distributore
 
 Le immagini Cloud compatibili sono disponibili qui:
 
-- https://cloud.centos.org/centos/
-- https://cloud.debian.org/images/cloud/
-- https://cloud-images.ubuntu.com/releases/
-- https://alt.fedoraproject.org/cloud/
+- <https://cloud.centos.org/centos/>{.external}
+- <https://cloud.debian.org/images/cloud/>{.external}
+- <https://cloud-images.ubuntu.com/releases/>{.external}
+- <https://alt.fedoraproject.org/cloud/>{.external}
 
 Altri sistemi operativi offrono anche immagini ISO applicabili anche durante la [creazione di immagini con Packer](https://www.packer.io/docs/builders) come QEMU e VirtualBox.
 
@@ -53,7 +53,7 @@ Una volta completata l'importazione, segui gli step qui sotto utilizzando la CLI
 
 1\. Scarica il tuo file openrc.sh per il tuo utente OpenStack dal tuo Spazio Cliente OVHcloud (seleziona la Region verso cui effettuare il download).
 
-![openrc](images/openrc_file.png){.thumbnail}
+![openrc](images/open_rc_download.png){.thumbnail}
 
 2\. Carica il file openrc:
 
@@ -72,7 +72,7 @@ source openrc.sh
 - Definisce le proprietà raccomandate. Una configurazione ottimale consente l'utilizzo di funzionalità come *live-snapshot* e *cloud-init* (utilizza il nome utente)
 
 ```sh
-openstack image create —disk-format raw —container-format bare —file debian9.raw "Debian 9 - La mia immagine" —private —property distribution=debian —property hw_disk_bus=scsi —property hw_scsi_model=virtio-scsi —property hw_qemu_guest_agent=yes perty image_originale_user=debian
+openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - My Image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
 ```
 
 #### Dall’interfaccia Horizon
@@ -85,7 +85,7 @@ Una volta che l'immagine è pronta, segui gli step qui sotto per importarla dall
 
 ![horizon_1](images/horizon_1.png){.thumbnail}
 
-3\. Clicca sulla sezione `Immagini` e poi su `Create Image`{.action}.
+3\. Clicca sulla sezione `Images` e poi su `Create Image`{.action}.
 
 ![horizon_2](images/horizon_2.png){.thumbnail}
 
@@ -97,6 +97,6 @@ Una volta che l'immagine è pronta, segui gli step qui sotto per importarla dall
 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

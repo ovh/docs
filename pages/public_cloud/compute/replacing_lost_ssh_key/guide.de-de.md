@@ -25,7 +25,7 @@ Sie können sich jedoch weiterhin über den OVHcloud Rescue-Modus mit einem prov
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](/links/public-cloud/compute) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

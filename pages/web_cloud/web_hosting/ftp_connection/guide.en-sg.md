@@ -1,7 +1,7 @@
 ---
 title: "Logging in to your web hosting plan’s FTP storage space"
 excerpt: "Find out how to log in to your OVHcloud web hosting plan’s FTP storage space"
-updated: 2024-05-20
+updated: 2025-05-23
 ---
 
 ## Objective
@@ -79,26 +79,7 @@ At this stage, you have everything you need to log in to your FTP storage space.
 
 There are several ways you can access your FTP storage space. We recommend reading this guide, and focusing on the method you wish to follow.
 
-- [1. Logging in via FTP Explorer](#ftpexplorer): Allows you to access your FTP storage space from your browser.
-
-- [2. Logging in via FTP software](#ftpsoftware): Allows you to access your FTP storage space via software (e.g. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) or [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
-You must first install the FTP client/software you have chosen on your computer.
-
-- [3. Connecting via SSH access](#ssh): Allows you to access your FTP storage space via SSH. You will need advanced knowledge and an [OVHcloud web hosting plan](/links/web/hosting){.external} **Pro** or **Performance** to use this access type.
-
-#### 1. Log in via FTP Explorer <a name="ftpexplorer"></a>
-
-To log in to your FTP storage space via FTP Explorer, log in to [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section.
-
-Click on the `Hosting`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, go to the `FTP - SSH`{.action} tab, then click the `FTP Explorer`{.action} button.
-
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
-
-On the new page that pops up, enter your FTP username and password, then log in. If the information is correct, your storage space will appear.
-
-![ftpconnect](/pages/assets/screens/other/web-tools/net2ftp/login-interface.png){.thumbnail}
-
-#### 2. Logging in via FTP software <a name="ftpsoftware"></a>
+#### 1. Logging in via FTP software <a name="ftpsoftware"></a>
 
 Once you have installed the FTP software of your choice on your computer (e.g. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) or [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)), start it. 
 
@@ -120,7 +101,9 @@ Here is a reminder of the information you will need to enter:
 
 If the information is correct, the software you are using will display the content of your FTP storage space. A message (also called "status") may appear to confirm that the content has been successfully listed by your FTP software.
 
-#### 3. SSH connection <a name="ssh"></a>
+#### 2. SSH connection <a name="ssh"></a>
+
+You will need advanced knowledge and an [OVHcloud web hosting plan](/links/web/hosting){.external} **Pro** or **Performance** to use this access type.
 
 To connect via SSH, use a terminal to interact directly with your FTP storage space via command lines.
 
@@ -146,7 +129,7 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 In the command above, replace:
 
-- The value `sshlogin` by your main FTP login, as described in [step 2.2](#ftpsoftware) (or by an FTP login with SSH access).
+- The value `sshlogin` by your main FTP login, as described in [step 2.1](#ftpsoftware) (or by an FTP login with SSH access).
 - `XXX` with the number of the cluster where your Web Hosting plan is located.
 
 Once the command has been sent, you will be prompted to enter the SSH user password.

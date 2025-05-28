@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting recurring errors when using FTP software"
 excerpt: "Find out how to resolve the most common FTP software related issues"
-updated: 2022-01-05
+updated: 2025-05-23
 ---
 
 ## Objective
@@ -80,7 +80,7 @@ This link is installed by default on OVHcloud Web Hosting plans. It displays thi
 
 ![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
-If you did not use the "[1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" feature to create your website, you will need to use the [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection) software accessible via the [OVHcloud Control Panel](/links/manager) in order to manually delete the "Website under construction" page.
+If you have not used the [1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules) feature to create your website, you will need to [log in to the FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) on your web hosting plan in order to delete the “Website under construction” page manually.
 
 ## Go further <a name="go-further"></a>
 

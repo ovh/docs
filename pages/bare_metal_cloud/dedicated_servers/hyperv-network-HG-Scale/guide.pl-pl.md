@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja sieci w systemie Windows Server z Hyper-V'
 excerpt: 'Dowiedz się, jak skonfigurować sieć w systemie Windows Server z Hyper-V'
-updated: 2024-08-07
+updated: 2025-05-16
 ---
 
 > [!primary]
@@ -14,7 +14,9 @@ updated: 2024-08-07
 
 ### Gamy High Grade & Scale
 
-W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP w trybie *bridged* (za pomocą wirtualnych adresów MAC). Konieczne jest zatem skonfigurowanie Additional IP w trybie routera lub vRack.
+Od maja 2025 można używać wirtualnych adresów MAC do uruchamiania adresów Additional IP w trybie *bridged* na serwerach z gamy High Grade i Scale.
+
+Jeśli chcesz użyć wirtualnych adresów MAC do skonfigurowania sieci z funkcją Hyper-V na serwerach z gamy High Grade lub Scale, zapoznaj się z [tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ### Gama Advance
 

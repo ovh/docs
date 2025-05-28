@@ -1,7 +1,7 @@
 ---
 title: "Capacités techniques et limites de Public VCF aaS (alias Managed VCD)"
 excerpt: "Découvrez les capacités techniques et les limites de Public VCF aaS (alias Managed VCD)"
-updated: 2025-04-15
+updated: 2025-05-13
 ---
 
 ## Objectif
@@ -32,6 +32,10 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre VMware C
 | VMs (par vApp) | 128 | 128 | 128 | Nombre maximal de VMs autorisées par vApp. |
 | VMs (par organisation) | 2000 | 4000 | 4000 | Nombre maximal de VMs par organisation. |
 | vApps (par organisation) | 10 000 | 10 000 | 10 000 | Nombre maximal de vApps par organisation. |
+
+> **Remarque** : Lorsqu’un snapshot inclut la mémoire de la machine virtuelle, l’utilisation du stockage peut rapidement augmenter.
+> Par exemple, si vous avez une VM avec 1 Go de RAM et un disque de 10 Go, et que vous créez un snapshot incluant la mémoire, l’espace de stockage utilisé sera le suivant :
+> 10 Go (disque) + 1 Go (swap de la VM) + jusqu’à 10 Go (snapshot du disque) + 1 Go (snapshot de la mémoire) = **22 Go au total**.
 
 ### Limitations matérielles
 

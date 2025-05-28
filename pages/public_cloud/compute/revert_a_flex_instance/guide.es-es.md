@@ -24,7 +24,7 @@ Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proc
 > [!warning] 
 > - Si actualiza de una instancia flex a una instancia clásica con más recursos, esto se considera una actualización. En este caso, se le facturará la diferencia. Al final del periodo de facturación, recibirá dos facturas.
 >
-> Si pasa de una instancia flexible a una instancia clásica con menos recursos, se considera un downgrade. En este caso, no se le facturará.
+> - Si pasa de una instancia flexible a una instancia clásica con menos recursos, se considera un downgrade. En este caso, no se le facturará.
 >
 > - Si cambia de una instancia flexible a una instancia clásica con los mismos recursos, no se le facturará.
 >

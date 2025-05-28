@@ -12,7 +12,7 @@ Es probable que desee comprobar la velocidad de sus discos, ya sea para comparar
 
 ## Requisitos
 
-- Tener una [instancia Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
+- Tener una [instancia Public Cloud](/links/public-cloud/compute) en su cuenta de OVHcloud.
 - Tener acceso administrativo (sudo) a la instancia por SSH (Linux) o RDP (Windows).
 
 ## Procedimiento
@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > Deberá adaptar el argumento `--numjobs` al número de CPU de su instancia. 
 > 
-> Puede consultar la lista de argumentos y sus funciones directamente en el [manual de fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> Puede consultar la lista de argumentos y sus funciones directamente en el [manual de fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 > 
 
 ### Analizar los datos
@@ -144,7 +144,7 @@ Podemos ver que el rendimiento del disco adicional es de aproximadamente 3052 IO
 
 El comando que necesita para comprobar la velocidad de su disco se llama `fio`. No está presente por defecto en el servidor.
 
-Para instalar `fio`, conéctese a su instancia a través de RDP y descargue este archivo binario: [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
+Para instalar `fio`, conéctese a su instancia a través de RDP y descargue este archivo binario: [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
 
 ### Probar la velocidad de su disco
 
@@ -158,7 +158,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > Deberá adaptar el argumento `--numjobs` al número de CPU de su instancia. 
 > 
-> Puede consultar la lista de argumentos y sus funciones directamente en el [manual de fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> Puede consultar la lista de argumentos y sus funciones directamente en el [manual de fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 >
 
 ### Analizar los datos
@@ -218,4 +218,4 @@ A continuación, acceda al disco adicional mediante powershell y ejecute el mism
 
 [Crear y configurar un disco adicional en una instancia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Den Speicherplatz Ihres Webhostings wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen"
-updated: 2023-12-04
+updated: 2025-05-23
 ---
 
 ## Ziel 
@@ -127,11 +127,7 @@ Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwe
 
 - **Cyberduck**: Laden Sie Cyberduck zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von Cyberduck eine Anleitung zur Verfügung](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac) (Englisch). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 
-- **Interface des FTP-Explorers**: Zugriff auf das Interface des FTP-Explorers erhalten Sie über das [OVHcloud Kundencenter](/links/manager). Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP-Explorer`{.action}.
-
 Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren.
-
-![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### Schritt 2: Auf das Backup zugreifen
 
@@ -153,9 +149,7 @@ Ergänzen Sie Ihren Haupt-FTP-Benutzernamen (bzw. „FTP-Login“) mit einem Suf
 
 Denken Sie daran, „ftpbenutzer“ mit Ihrem eigenen FTP-Benutzernamen zu ersetzen. Notieren Sie sich das Suffix für das Backup, auf das Sie zugreifen möchten.
 
-Wie Sie sich in Ihren Speicherplatz einloggen, hängt von der verwendeten Software bzw. dem Interface ab. Die folgende Abbildung zeigt den Login über das Interface des FTP-Explorers.
-
-![FTP-Backup](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
+Wie Sie sich in Ihren Speicherplatz einloggen, hängt von der verwendeten Software bzw. dem Interface ab.
 
 #### Schritt 3: Eine oder mehrere Backup-Dateien wiederherstellen
 
@@ -165,9 +159,7 @@ Vergewissern Sie sich, bevor Sie zum nächsten Schritt übergehen, dass Sie alle
 
 > [!success]
 >
-> Wenn Sie das **FTP Explorer** Interface verwenden, können Sie die [Hilfeseite](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} verwenden, um die Wiederherstellung Ihrer Dateien durchzuführen. Diese Seite ist auch über den Button `Hilfe/Anleitung`{.action} am unteren Rand des **FTP Explorer** verfügbar.
->
-> Wenn Sie eine andere Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
+> Wenn Sie eine Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
 >
 
 #### Schritt 4: Die gewünschten Dateien wiederherstellen
@@ -178,9 +170,7 @@ Nach dem Login können Sie die gewünschten Dateien wiederherstellen. Gehen Sie 
 
 > [!success]
 >
-> Wenn Sie das **FTP Explorer** Interface verwenden, können Sie die [Hilfeseite](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} verwenden, um die Wiederherstellung Ihrer Dateien durchzuführen. Diese Seite ist auch über den Button `Hilfe/Anleitung`{.action} am unteren Rand des **FTP Explorer** verfügbar.
->
-> Wenn Sie eine andere Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
+> Wenn Sie eine Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
 >
 
 ## Weiterführende Informationen

@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Environment, PHP version, .ovhconfig"
 excerpt: "Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig"
-updated: 2024-07-16
+updated: 2025-05-23
 ---
 
 ## Objective
@@ -236,8 +236,6 @@ For the FTP user password, please refer to our guide on [Modifying an FTP user p
 #### 3.2 - Create or open the .ovhconfig file
 
 Once you have logged in to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), you can view all of the files currently hosted on it. Inside the root directory of your hosting (which is indicated by a `/`) you should find the .ovhconfig file.
-
-![ovhconfig](/pages/assets/screens/other/web-tools/net2ftp/ovhconfig-file.png){.thumbnail}
 
 There are two ways of doing this:
 

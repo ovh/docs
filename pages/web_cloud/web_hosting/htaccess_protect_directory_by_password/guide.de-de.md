@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ordner und Verwaltungsinterface Ihrer Website mit den Dateien .htaccess und .htpasswd schützen"
 excerpt: "Erfahren Sie hier, wie Sie Verzeichnisse oder den Adminbereich Ihrer Website durch Authentifizierung mittels .htaccess und .htpasswd schützen"
-updated: 2024-04-17
+updated: 2025-05-23
 ---
 
 ## Ziel 
@@ -69,11 +69,7 @@ Loggen Sie sich im [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ih
 
 Erstellen Sie die Datei "crypt.php" in diesem Wurzelverzeichnis.
 
-![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
-
 Öffnen oder erstellen Sie den Ordner, dessen Zugang Sie sichern möchten. Im folgenden Beispiel ist das der Ordner "admin". Erstellen Sie in diesem Verzeichnis die Dateien ".htpasswd" und ".htaccess".
-
-![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 Beachten Sie diese Regeln, um mit den Dateien ".htpasswd" und ".htaccess" korrekt umzugehen:
 

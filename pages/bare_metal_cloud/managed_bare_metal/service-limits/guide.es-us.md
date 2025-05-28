@@ -1,38 +1,35 @@
 ---
 title: Capacidad técnica
 excerpt: 'Encuentre las capacidades y limitaciones técnicas de las soluciones Managed Bare Metal que ofrece OVHcloud'
-updated: 2020-10-27
+updated: 2025-05-20
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+## Objective
 
-## Objetivo
+**This page provides an overview of the technical capabilities and limitations of OVHcloud Managed Bare Metal services.**
 
-**Esta página ofrece una visión general de las funcionalidades y limitaciones técnicas de los servicios Managed Bare Metal de OVHcloud.**
+## Capabilities and known limits
 
-## Capacidades y limitaciones conocidas
-
-| Elemento | Descripción | Valor |
+| Item | Description | Value |
 |:-----:|:-----:|:----------:|
-| Número máx. PCC por ID de cliente | Número de vCenter o packs por organización | Sin límite |
-| Número de PCC asociados | Conexión de vCenters (Enhanced Link Mode) | 0 (no autorizado) |
-| Número mín. de hosts por PCC (SLA) | Número de hosts por vCenter para el mantenimiento del contrato de nivel de servicio | 2 |
-| Número mín. de hosts por PCC (sin SLA) | Número mínimo de hosts que se deben utilizar con vCenter sin contrato de nivel de servicio | 0 |
-| Número máx. de hosts por cluster | Hosts por cluster | 64 |
-| Número máx. de clusters por vDC | Número de clusters en el mismo datacenter virtual | Sin límite |
-| Número máx. de vDC por PCC | Número de datacenters virtuales (vDC) que los clientes pueden añadir por vCenter | 400 |
-| Número máx. de hosts por PCC | Límites de hosts por vCenter | playa **Hosts**: 340 hosts, 70 zpools<br>playa **Hybrid**: 241 hosts, 120 zpools<br>playa **BigDS**: 76 hosts, 205 zpools |
-| Número máx. máquinas virtuales por SDDC | MV gestionadas por el mismo vCenter | 25 000 |
-| Número máx. máquinas virtuales por host | MV alojadas en el mismo host físico | 1024 |
-| Número máx. de direcciones IP por PCC | Número máx. direcciones IP públicas que puedan asignarse y utilizarse por vCenter | 1 x /23 |
-| vCPU, memoria RAM y disco utilizados por vCenter standard | Recursos asignados a vCenter (VCSA) | 4 procesadores virtuales, 16 GB de RAM, 290 GB de espacio en disco |
-| vCPU, memoria RAM y disco utilizados por vROPS | Recursos asignados a vROPS | 4 procesadores virtuales, 16 GB de RAM |
-| Número máx. túneles VPN IPSec | Número máx. túneles VPN por extensión | 512 compact edge<br>1600 large de edge<br>4096 quad large edge<br>6000 extra large edge |
-| Número máx. de vRack por vDC | Número máx. redes privadas por Virtual Data Center (VDC) | 1 |
-| Número máx. de clientes VPN L2 | Número de clientes VPN a conectar | 5 |
+| Max. number of PCCs per customer ID | Number of vCenters or packs per organisation | No limit |
+| Number of linked PCCs | vCenters linked (Enhanced Linked Mode) | 0 (not allowed) |
+| Minimum hosts per PCC (SLA) | Number of hosts per vCenter to maintain SLA | 2 |
+| Minimum hosts per PCC (no SLA) | Bare minimum hosts to work with vCenter without SLA | 0 |
+| Max. number of hosts per cluster | Hosts per cluster | 64 |
+| Max. number of clusters per vDC | Number of cluster within the same virtual data centre | No limit |
+| Max. number of vDCs per PCC | Virtual data centres customers can add per vCenter | 400 |
+| Max. number of hosts per PCC | Limits of hosts per vCenter | range **Hosts**: 340 hosts, 70 zpools<br>range **Hybrid**: 241 hosts, 120 zpools<br>range **BigDS**: 76 hosts, 205 zpools |
+| Max. number of VMs per SDDC | VMs managed by the same vCenter | 25000 |
+| Max. number of VMs per host | VMs hosted on the same physical host | 1024 |
+| Max. number of IPs per PCC | Max. number of Public IPs assignable and usable per vCenter | 1 x /23 |
+| vCPUs, RAM and disk consumed by regular vCenter | Resources assigned to vCenter (VCSA) | 4 vCPU, 16GB RAM, 290GB Disk |
+| vCPUs, RAM and disk consumed by regular vROPS | Resources assigned to vROPS | 4 vCPU, 16GB RAM |
+| Max. number of IPSec VPN Tunnels | Max. number of VPN tunnels per edge | 512 compact edge<br>1600 large edge<br>4096 quad large edge<br>6000 extra large edge |
+| Max. number of vRack per vDC | Max. number of private networks per virtual data centre | 1 |
+| Max. number of L2 VPN Clients | Number of VPN clients to connect | 5 |
+| TPM (Trusted Platform Module) | Possibility to secure VMs using TPM by protecting encryption keys | Not supported |
 
-## Más información
+## Go further
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

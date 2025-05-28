@@ -1,7 +1,7 @@
 ---
 title: 'Comment fonctionnent les Savings Plans ?'
 excerpt: 'Savings Plans - Tout ce que vous devez savoir pour optimiser vos coûts'
-updated: 2025-04-17
+updated: 2025-05-16
 ---
 
 <style>
@@ -122,44 +122,47 @@ Grâce à cette combinaison, le client réalise des économies substantielles en
 
 ## Analyser vos Savings Plans grâce au dashboard
 
-> [!primary]
->
-> Cette section sera disponible en même temps que la fonctionnalité Dashboard dans votre espace client OVHcloud.
->
-
-<!--Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Savings Plans, en fournissant des informations essentielles sur leur utilisation, leur couverture et les économies réalisées. Vous pouvez consulter des données spécifiques selon la période, le service, le type d'instance ou d'autres critères pertinents.
+Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Savings Plans, en fournissant des informations essentielles sur leur utilisation et leur couverture. Vous pouvez consulter des données spécifiques selon la période et le service.
 
 /// details | **a. Filtres de sélection**
 
- Image avec focus sur les filtres
+![Dashboard focus on filters](images/dashboard_filters.png){.thumbnail}
 
-- **Service :** Vous permet de filtrer les données en fonction du service spécifique auquel les Savings Plans sont associés.
-- **Type d'instance :** Permet de choisir entre différents types d'instances ("instances" ou "Managed Rancher Services").
-- **Modèle :** Choix du modèle spécifique de ressources pour affiner le suivi des Savings Plans.
+- **Service :** Permet de filtrer le service spécifique auquel les Savings Plans sont associés.
 - **Période :** Permet de sélectionner une période précise pour observer l’utilisation des Savings Plans et la couverture associée.
 
 ///
 
-/// details | **b. KPIs (Indicateurs Clés de Performance)**
+/// details | **b. Indicateurs des Savings Plan**
 
 > [!primary]
 >
-> Les données des KPIs dans le dashboard des Savings Plans sont ajustées en fonction des filtres appliqués. Cela permet de personnaliser l'affichage des indicateurs pour se concentrer sur des périodes spécifiques, des services particuliers, ou des types d'instances choisis.
+> Les indicateurs affichés dans le tableau des Savings Plans sont ajustés en fonction des filtres appliqués. Il est ainsi possible de personnaliser l'affichage des indicateurs pour se concentrer sur des périodes spécifiques, des services particuliers ou des types d'instances sélectionnées.
+>
+> Seules les données des 6 derniers mois sont disponibles.
 >
 
- Image avec focus sur les KPIs
+![Dashboard focus on kpi](images/dashboard_kpi.png){.thumbnail}
 
-- **Nombre de Savings Plans actifs :** Affiche le nombre total de Savings Plans actifs.
-- **% d'usage des Savings Plans :** Indique le pourcentage d’utilisation des Savings Plans par rapport à la capacité totale disponible.
-- **% de couverture des Savings Plans :** Montre la proportion des ressources couvertes par les Savings Plans par rapport à l'utilisation totale.
-- **Économies réalisées :** Affiche le montant total des économies réalisées grâce aux Savings Plans pendant la période spécifiée.
-- **Montant du hors-forfait :** Affiche le montant des consommations excédentaires qui génèrent des frais non remisés.
+- **Nombre de Savings Plans actifs :** Nombre total de vos Savings plans actifs sur la période donnée pour la ressource sélectionnée
+- **% d'usage des Savings Plans :** Moyenne d'utilisation de vos Savings Plans (sur la période sélectionnée pour la ressource sélectionnée). Par exemple, si vous utilisez 8 instances et que vos Savings Plans en couvrent 10, le taux d'utilisation sera de 80 %.
+- **% de couverture des Savings Plans :** Moyenne de couverture de vos Savings Plans (sur la période sélectionnée pour la ressource sélectionnée). Par exemple, si vous avez consommé 10 instances et que vos Savings Plans en couvrent 8, alors votre taux de couverture est de 80 %.
+
+Si la période selectionnée est déjà terminée (un mois précédant celui actuel), deux champs supplémentaires seront disponibles pour vous permettre de visualiser des données plus détaillées :
+
+- **Économies réalisées :** Économies totales (sur la période sélectionnée pour la ressource sélectionnée).
+- **Montant du hors-forfait :** Montant de la facture dépassant votre configuration de Savings Plan (sur la période sélectionnée pour la ressource sélectionnée).
 
 ///
 
 /// details | **c. Graphiques**
 
- Image avec focus sur le graphique
+> [!warning]
+>
+> Pour un Savings Plan démarré en cours de mois, les jours antérieurs à sa création s'affichent en rouge, indiquant l'absence de couverture.
+> 
+
+![Dashboard focus on graph](images/dashboard_graph.png){.thumbnail}
 
 - **Légende axe Y du graphique :**
     - Si "Instances" est sélectionné, l'axe Y affichera le nombre d'instance(s) utilisées.
@@ -172,19 +175,21 @@ Grâce à cette combinaison, le client réalise des économies substantielles en
 
 /// details | **d. Tableau de suivi de consommation**
 
- Image avec focus sur la parti de suivi de consommation
+![Dashboard focus on conso](images/dashboard_conso.png){.thumbnail}
 
 - **Créer un Savings Plan :** Un bouton permettant de créer un nouveau Savings Plan.
-- **Télécharger (Exporter en CSV) :** Un bouton pour exporter les données du **tableau de suivi de consommation** au format CSV, afin de les analyser en détail ou les conserver pour vos archives.
+
+Chaque période dans le tableau correspond à un changement dans l'utilisation des ressources, tel que l'ajout ou la suppression d'une ressource ou d'un Savings Plan.
+
 - **Colonnes du tableau de suivi de consommation :**
     - **Début :** Cette colonne indique la date et l’heure de début de la période de consommation des ressources.
     - **Fin :** Cette colonne indique la date et l’heure de fin de la période de consommation des ressources.
-    - **Utilisation des Savings Plans :** Montre la quantité de ressources consommées durant la période. Cette valeur représente l'utilisation effective des ressources pendant la période sélectionnée.
-    - **Couverture totale des Savings Plans :** Indique la couverture totale des ressources durant la période, c’est-à-dire la quantité de ressources couvertes par vos Savings Plans pour cette période spécifique.
+    - **Utilisation :** Représente la quantité de ressources consommées au cours de la période sélectionnée. Elle reflète l’usage effectif de vos services pendant cette période.
+    - **Couverture totale :** Indique le total des ressources couvertes par vos Savings Plan au cours de cette période.
 
 ///
 
-Grâce à ce tableau de bord, vous pouvez suivre en temps réel l'utilisation et l'efficacité de vos Savings Plans, ajuster votre stratégie en fonction des données observées et optimiser ainsi vos coûts pour une gestion plus performante de vos ressources OVHcloud. -->
+Grâce à ce tableau de bord, vous pouvez suivre en temps réel l'utilisation et l'efficacité de vos Savings Plans, ajuster votre stratégie en fonction des données observées et optimiser ainsi vos coûts pour une gestion plus performante de vos ressources OVHcloud.
 
 ## Comprendre la facturation
 

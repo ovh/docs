@@ -77,7 +77,7 @@ Questa operazione deve essere effettuata regolarmente per mantenere un sistema a
 
 ### Modifica la porta di default SSH <a name="changesshport"></a>
 
-> [!primario]
+> [!primary]
 >
 > Per questa sezione, le righe di comando seguenti sono le stesse per Ubuntu, Debian e CentOS.
 >

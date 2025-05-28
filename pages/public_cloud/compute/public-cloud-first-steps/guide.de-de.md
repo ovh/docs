@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Public Cloud Instanzen sind einfach einzurichten und zu verwalten. Als Teil des OVHcloud Public Cloud Ökosystems bieten Instanzen jedoch zahlreiche Konfigurationsoptionen und können für verschiedene Anwendungsfälle angepasst werden. Die folgenden Anweisungen enthalten alle notwendigen und optionalen Schritte, um eine Instanz im OVHcloud Kundencenter zu erstellen und darauf zuzugreifen.  
@@ -291,7 +287,7 @@ Dieser Schritt umfasst mehrere Konfigurationsoptionen. Klicken Sie auf die Tabs,
 >>
 > **3: Name der Instanz**
 >>
->> Geben Sie einen Anzeigenamen für Ihre Instanz ein. Der Standardwert ist die kommerzielle Referenz des Instanz-Modells..<br>
+>> Geben Sie einen Anzeigenamen für Ihre Instanz ein. Der Standardwert ist die kommerzielle Referenz des Instanz-Modells.<br>
 >>
 > **4: Post-Installation-Skript**
 >>

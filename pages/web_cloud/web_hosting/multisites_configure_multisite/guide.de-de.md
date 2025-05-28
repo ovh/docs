@@ -21,7 +21,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 ## Voraussetzungen
 
-- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
+- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting-multisite) in Ihrem Kunden-Account.
 - Sie besitzen eine oder mehrere [Domainnamen](/links/web/domains){.external}.
 - Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)) zu ändern.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).

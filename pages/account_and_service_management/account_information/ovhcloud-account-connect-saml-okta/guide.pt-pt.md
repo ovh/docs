@@ -1,7 +1,7 @@
 ---
 title: "Ativar as ligações Okta SSO com a sua conta OVHcloud"
 excerpt: "Saiba como associar o seu serviço Okta à sua conta OVHcloud através do SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Objetivo
@@ -80,17 +80,13 @@ O seu serviço Okta confia agora na OVHcloud enquanto prestadora de serviços. O
 
 Para adicionar o Okta como fornecedor de identidade de confiança, deve fornecer os metadados do fornecedor de identidade na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-Na barra lateral, clique em `Identidade, Segurança e Operações` {.action} e, a seguir, em `Identity & Access Management`{.action}.
+Na barra lateral, clique em `Identidade, Segurança e Operações`{.action} e, a seguir, em `Identidades`{.action}.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-De seguida, clique no separador `Identidades`{.action} para aceder à gestão dos utilizadores locais.
+Clique no separador `SSO`{.action} e no botão `Ligação SSO`{.action}.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Clique no botão `Ligação SSO`{.action}.
-
-![Ligação SSO OVHcloud etapa 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Insira os metadados XML do seu serviço Okta. Preencha o campo "Nome de atributo de utilizador" com o valor `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` e o campo "Nome de atributo de grupo" com o valor `Group`. Clique em `Confirmar`{.action}.
 
@@ -120,7 +116,7 @@ O seu serviço Okta é agora considerado um fornecedor de identidade de confian�
 
 Agora deve atribuir **funções** aos grupos de utilizadores Okta na OVHcloud. Caso contrário, a sua conta OVHcloud não sabe o que o utilizador está autorizado a fazer e, de forma padrão, não é atribuído nenhum direito.
 
-Na Área de Cliente, adicione um grupo ao clicar no botão `Declarar um grupo`{.action} e preencher os campos:
+Para adicionar um grupo a partir do seu [Área de Cliente OVHcloud](/links/manager), aceda à secção `Identidades`{.action} e aceda ao separador `Grupos de utilizadores`{.action}. De seguida, clique no botão `Declarar um grupo`{.action} e introduza os campos:
 
 - **Group name**: Nome do grupo em Okta
 - **Role**: Nível de direitos concedidos a este grupo

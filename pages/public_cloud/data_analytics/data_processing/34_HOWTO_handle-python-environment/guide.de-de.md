@@ -1,8 +1,17 @@
 ---
 title: How to generate environment file for Python jobs
 excerpt: Find out how to create your Python environment and export it as an environment file.
-updated: 2020-05-04
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 This guide helps you create your python environment with Conda. Then we will see how to export it so you can use it to submit your Python job on OVHcloud Data Processing platform.

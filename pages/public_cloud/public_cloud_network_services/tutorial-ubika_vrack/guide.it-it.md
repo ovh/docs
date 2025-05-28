@@ -1,5 +1,5 @@
 ---
-title: 'Securing your OVHcloud infrastructure with Ubika WAAP Gateway'
+title: 'Securing your OVHcloud infrastructure with Ubika WAAP Gateway (EN)'
 excerpt: 'Find out how to secure your OVHcloud infrastructure with Ubika WAAP Gateway deployed on Public Cloud'
 updated: 2024-10-23
 ---

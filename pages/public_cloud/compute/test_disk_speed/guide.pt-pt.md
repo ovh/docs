@@ -12,7 +12,7 @@ Quer seja para comparar as performances entre os diferentes discos, quer seja pa
 
 ## Requisitos
 
-- Dispor de uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}.
+- Dispor de uma [instância Public Cloud](/links/public-cloud/compute).
 - Dispor de um Ter acesso administrativo (sudo) à sua instância através de SSH (Linux) ou RDP (Windows).
 
 ## Instruções
@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > É necessário adaptar o argumento --numjobs em função do número de CPUs que a sua instância dispõe.
 >
-> Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 >
 
 ### Analisar os dados
@@ -144,7 +144,7 @@ Podemos ver que o desempenho do disco suplementar é de cerca de 3052 IOPS.
 
 O comando de que precisa para verificar a velocidade do seu disco chama-se `fio`. Por predefinição, não está presente no seu servidor.
 
-Para instalar `fio`, ligue-se à sua instância através de RDP e descarregue este binário: [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
+Para instalar `fio`, ligue-se à sua instância através de RDP e descarregue este binário: [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
 
 ### Testar a velocidade do seu disco
 
@@ -158,7 +158,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > É necessário adaptar o argumento --numjobs em função do número de CPUs que a sua instância dispõe.
 >
-> Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 >
 
 ### Analisar os dados
@@ -216,4 +216,4 @@ A seguir, aceda ao disco suplementar através do powershell e execute o mesmo co
 
 [Criar e configurar um disco suplementar numa instância](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

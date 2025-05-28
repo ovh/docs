@@ -1,7 +1,7 @@
 ---
 title: Modifier le mot de passe de la base de données d'un hébergement web
 excerpt: Découvrez comment changer le mot de passe d'une base de données créée dans le cadre d'une offre d'hébergement web
-updated: 2022-01-26
+updated: 2025-05-23
 ---
 
 ## Objectif
@@ -51,14 +51,11 @@ Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.ac
 
 ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Cliquez ensuite sur l'onglet `FTP-SSH`{.action} puis accédez à l'espace contenant les fichiers et dossiers de votre site (*espace FTP*) en cliquant sur le bouton `FTP Explorer`{.action}.
+Accédez ensuite à l'espace contenant les fichiers et dossiers de votre site (*espace FTP*) en consultant ce [guide](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
 > Si vous souhaitez modifier le mot de passe de votre espace FTP, consultez ce [guide](/pages/web_cloud/web_hosting/ftp_change_password).
->
-> Si vous souhaitez vous y connecter par une autre méthode, consultez ce [guide](/pages/web_cloud/web_hosting/ftp_connection).
->
 
 Ouvrez le `Dossier racine` identifié plus haut.
 

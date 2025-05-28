@@ -1,7 +1,7 @@
 ---
 title: "How to connect a compatible product using KMIP protocol"
 excerpt: "How to communicate with the OVHcloud KMS using KMIP protocol"
-updated: 2025-03-03
+updated: 2025-05-12
 ---
 
 ## Objective
@@ -48,6 +48,35 @@ Then it's possible to exchange KMIP messages such as defined in the standard. De
 - Libkmip for C: <https://github.com/OpenKMIP/libkmip>.
 
 You can use as well our SDK for Go: <https://github.com/ovh/kmip-go>
+
+### IAM Rights
+
+KMIP operations with IAM users need specific authorisations as described below:
+
+| KMIP Operation | Description | Action |
+| -------------- | ----------- | ------ |
+| Create | Create managed object | okms:kmip:create |
+| Get | Get managed object | okms:kmip:get |
+| Register | Register managed object| okms:kmip:register |
+| Activate | Activate managed object | okms:kmip:activate |
+| Revoke | Revoke managed object | okms:kmip:revoke |
+| Destroy | Destroy managed object | okms:kmip:destroy |
+| CreateKeyPair | Create key pair | okms:kmip:createKeyPair |
+| AddAttribute | Add managed object attribute | okms:kmip:addAttribute |
+| GetAttributes | Get one or more of managed object attributes | okms:kmip:getAttributes |
+| GetAttributeList | Get list of the attribute names | okms:kmip:getAttributeList |
+| ModifyAttribute | Modify managed object attribute | okms:kmip:modifyAttribute |
+| DeleteAttribute | Delete managed object attribute | okms:kmip:deleteAttribute |
+| Locate | Locate managed object | okms:kmip:locate |
+| Archive | Archive managed object | okms:kmip:archive |
+| Recover | Recover managed object | okms:kmip:recover |
+| ReKey | Rekey managed object | okms:kmip:rekey |
+| ObtainLease | Obtain lease on managed object | okms:kmip:obtainLease |
+| GetUsageAllocation | Get Usage Allocation of managed object | okms:kmip:getUsageAllocation |
+| Encrypt | Encrypt with managed object | okms:kmip:encrypt |
+| Decrypt | Decrypt with managed object | okms:kmip:decrypt |
+| Sign | Sign with managed object | okms:kmip:sign |
+| Signature Verify | Verify with managed object | okms:kmip:signatureVerify |
 
 ### KMIP coverage
 

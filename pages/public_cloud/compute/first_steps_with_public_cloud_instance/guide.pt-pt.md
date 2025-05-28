@@ -28,7 +28,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cl
 
 Clique em `Instâncias`{.action} no menu à esquerda. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Esta página lista o conjunto das suas instâncias Public Cloud e algumas das suas propriedades:
 
@@ -95,7 +95,7 @@ Isto irá ativar o modo de rescue da instância. Consulte o nosso manual [Como a
 >
 
 - Clique em `Reboot a quente (soft)`{.action} para efetuar um reboot ao nível de software.
-- Clique em `Reiniciar a frio (hard)`{.action} para lançar um reboot ao nível material.
+- Clique em `Reboot a frio (hard)`{.action} para lançar um reboot ao nível material.
 
 Confirme o pedido de reboot na janela que aparecer.
 
@@ -147,4 +147,4 @@ Para mais informações, consulte o nosso manual "[Criação e conexão a uma pr
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

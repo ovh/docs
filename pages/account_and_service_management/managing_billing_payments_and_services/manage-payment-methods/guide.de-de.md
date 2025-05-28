@@ -99,7 +99,7 @@ Wenn Sie eine Ihrer Zahlungsarten nicht mehr verwenden möchten, dann können Si
 
 Wenn Sie alle Ihre Zahlungsarten löschen möchten, müssen alle Ihre Dienstleistungen [auf manuelle Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) umgestellt werden.
 
-#### Löschen einer Zahlungsart über die OVHCloud API
+#### Löschen einer Zahlungsart über die OVHcloud API
 
 Die Löschung einer Zahlungsart kann über die API erfolgen. Verbinden Sie sich hierzu über [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
 

@@ -1,7 +1,7 @@
 ---
 title: 'Proteger a minha conta OVHcloud e gerir as minhas informações pessoais'
 excerpt: 'Saiba como otimizar a segurança da sua conta OVHcloud, gerir os seus dados pessoais e delegar o acesso à sua conta.'
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -98,6 +98,10 @@ Se deseja indicar um novo endereço de e-mail principal, terá de o validar por 
 Introduza o código no campo `Código de validação` e valide.
 
 ![identificador de cliente](images/nichandle08.png){.thumbnail}
+
+> [!primary]
+>
+> O `Código de validação` só permite acelerar a alteração do endereço de e-mail principal. Se o antigo endereço de e-mail não estiver acessível e não puder recuperar este código, a modificação será no entanto efetuada automaticamente **25** horas após o pedido.
 
 #### Modificar o tipo de conta
 

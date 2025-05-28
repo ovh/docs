@@ -64,7 +64,7 @@ W oknie podręcznym musi być zaznaczona pewna liczba opcji, aby zakończyć prz
 >> Wybierz odpowiedni *flavor*. Upewnij się, że wybierasz wersję z zasobami równymi lub większymi niż rozmiar obrazu (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Sieć (*Network*)**
+> **Sieć (*Networks*)**
 >>
 >> Wybierz sieć publiczną (Ext-Net), którą chcesz przypisać do instancji.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>
@@ -87,5 +87,5 @@ Następnie kliknij rozwijaną strzałkę obok snapshota, który chcesz usunąć 
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).
 

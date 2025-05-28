@@ -1,7 +1,7 @@
 ---
 title: 'Atribuir um endereço MAC virtual a um Additional IP'
 excerpt: 'Saiba como criar um endereço MAC virtual e como associá-lo a um Additional IP'
-updated: 2024-12-13
+updated: 2025-05-16
 ---
 
 ## Sumário
@@ -22,7 +22,7 @@ A OVHcloud permite-lhe associar um endereço MAC virtual a um endereço de IP, d
 >
 > - Os servidores Advance de terceira geração (equipados com processadores EPYC 4004 Series) suportam 32 vMACs diferentes.
 >
-> - Esta funcionalidade estará disponível nas gamas Scale e High Grade durante o ano de 2025.
+> - Desde maio de 2025, esta funcionalidade está disponível nas gamas Scale e High Grade.
 
 > [!primary]
 > Se não está familiarizado com a utilização da API OVHcloud, consulte o nosso guia [Primeiros passos com as API OVHcloud](/pages/manage_and_operate/api/first-steps).

@@ -1,7 +1,7 @@
 ---
 title: 'Creating and managing local users on an OVHcloud account'
 excerpt: 'Find out how to add local users from your OVHcloud account'
-updated: 2025-04-28
+updated: 2025-05-16
 ---
 
 ## Objective
@@ -32,11 +32,7 @@ Local users are one of the types of identities that can be set up on your OVHclo
 
 #### Add a user
 
-Log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
-
-In the **Shortcuts** box, click on the `Manage my users`{.action} tab.
-
-Then click on the `Identities`{.action} tab to access local users management.
+Log in to your [OVHcloud Control Panel](/links/manager). In the sidebar, click on `Identity, Security & Operations`{.action}, then on `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -68,7 +64,7 @@ Example: **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-The user you have created can then log in to the [OVHcloud Control Panel](/links/manager) using this ID. 
+The user you have created can then log in to the [OVHcloud Control Panel](/links/manager) using this ID.
 
 They can also change their password and secure their own access to your account by enabling two-factor authentication (this is only for their access as a user). To find out how to enable two-factor authentication, you can refer to [this guide](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
@@ -86,7 +82,7 @@ When you edit a user you can update their email address, group and description.
 
 #### Add a group
 
-On the `Identities`{.action} tab, click on `Declare a group`{.action}.
+To add a group, go to the `Identities`{.action} section, then to the `User groups`{.action} tab. Then click the `Declare a group`{.action} button.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

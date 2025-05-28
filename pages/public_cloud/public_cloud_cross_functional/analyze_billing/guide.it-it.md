@@ -66,7 +66,7 @@ Pari a 23,63€ IVA incl.
 
 ### Consulta le tue fatture
 
-Accedi alla sezione `Public Cloud`{.action}(1) dello Spazio Cliente, seleziona il tuo progetto nel menu a sinistra e clicca su `Fatturazione`{.action} (nella sezione `Impostazioni`) > `Storico`{.action}.
+Accedi alla sezione `Public Cloud`{.action} dello Spazio Cliente, seleziona il tuo progetto nel menu a sinistra e clicca su `Fatturazione`{.action} (nella sezione `Impostazioni`) e infine su `Storico`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: "Eine Website auf Ihrem Webhosting online stellen"
 excerpt: "So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online"
-updated: 2024-03-21
+updated: 2025-05-23
 ---
 
 ## Ziel 
@@ -70,9 +70,7 @@ Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostin
 
 Es werden nun die Informationen für Ihren Speicherplatz angezeigt. Sie sollten hier alle Elemente finden, die Sie für die Verbindung mit Ihrem Speicherplatz brauchen. Falls nötig, lesen Sie unsere Anleitung: [„Mit dem Speicherplatz eines Webhostings verbinden“](/pages/web_cloud/web_hosting/ftp_connection). Wenn Sie kein Passwort besitzen, lesen Sie bitte die Anleitung [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
 
-Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherplatz einloggen. Hierfür haben Sie drei Möglichkeiten:
-
-- **OVHcloud FTP-Explorer verwenden**: Dieser ermöglicht es Ihnen, über einen Webbrowser auf Ihren Speicherplatz zuzugreifen. Bleiben Sie für diese Option im Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP Explorer`{.action}.
+Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherplatz einloggen. Hierfür haben Sie zwei Möglichkeiten:
 
 - **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer (zum Beispiel FileZilla). Bitte kontaktieren Sie den Herausgeber der installierten Software, wenn Sie für deren Verwendung Hilfe brauchen, da sie nicht von OVHcloud entwickelt wurde.
 

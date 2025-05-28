@@ -376,4 +376,4 @@ Per un processo più automatizzato, OVHcloud propone anche la soluzione SSL Gate
 
 [Mettere in sicurezza un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

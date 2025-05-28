@@ -354,7 +354,7 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 > Montowanie nie jest stałe, ponieważ dysk zostanie odłączony podczas restartu instancji. Aby zautomatyzować montaż, edytuj plik `fstab`.
 >
 
-Pobierz UID (blok ID) nowego wolumenu:
+Pobierz UUID (blok ID) nowego wolumenu:
 
 ```bash
 sudo blkid
@@ -368,11 +368,11 @@ sudo blkid
 
 Otwórz `/etc/fstab` z edytorem tekstu:
 
-```
+```bash
 sudo nano /etc/fstab
 ```
 
-Dodaj poniższą linię do pliku i zastąp UID Twoją:
+Dodaj poniższą linię do pliku i zastąp UUID Twoją:
 
 ```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0

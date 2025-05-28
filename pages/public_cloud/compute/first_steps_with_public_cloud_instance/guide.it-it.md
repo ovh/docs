@@ -26,9 +26,9 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{
 
 ### Utilizza l'interfaccia di gestione delle istanze
 
-Clicca sulle `Istanze`{.action} nel menu a sinistra. 
+Clicca su `Istanze`{.action} nel menu a sinistra. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 In questa pagina sono elencate tutte le tue istanze Public Cloud e alcune delle loro proprietà:
 
@@ -129,7 +129,7 @@ Nella nuova finestra, conferma l'operazione.
 
 ### Accedi alla console VNC <a name="accessvnc"></a>
 
-Clicca sulle `Istanze`{.action} nel menu a sinistra. Nella pagina di gestione delle istanze, clicca sul nome dell'istanza nella tabella.
+Clicca su `Istanze`{.action} nel menu a sinistra. Nella pagina di gestione delle istanze, clicca sul nome dell'istanza nella tabella.
 
 Clicca sulla scheda `Console VNC`{.action}.
 
@@ -147,4 +147,4 @@ Per maggiori informazioni, consulta la nostra guida [Creare e connettersi a un�
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

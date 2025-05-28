@@ -18,8 +18,8 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 
 ## Requisitos
 
-- uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
-- acesso à [Área de Cliente OVHcloud](/links/manager){.external}
+- uma [Instância Public Cloud](/links/public-cloud/compute) na sua conta OVHcloud
+- acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -86,7 +86,7 @@ A sua informação estará agora disponível a partir da pasta `/mnt`.
 
 ### Desativar o modo rescue
 
-Após concluir as suas tarefas, pode desativar o modo rescue reiniciando normalmente a sua instância. Para o fazer, clique na seta voltada para baixo na sua instância e selecione `Sair do modo rescue`{.action}.
+Após concluir as suas tarefas, pode desativar o modo rescue reiniciando normalmente a sua instância. Para o fazer, clique na seta voltada para baixo na sua instância e selecione `Sair do modo Rescue`{.action}.
 
 ![área de cliente](images/rescueexit2022.png){.thumbnail}
 
@@ -112,4 +112,4 @@ nova unrescue INSTANCE_ID
 
 [Como substituir um par de chaves SSH numa instância](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

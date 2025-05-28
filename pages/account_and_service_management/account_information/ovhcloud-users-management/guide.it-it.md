@@ -1,7 +1,7 @@
 ---
 title: 'Creare e gestire utenti locali su un account OVHcloud'
 excerpt: 'Scopri come aggiungere utenti locali dal tuo account OVHcloud'
-updated: 2025-04-28
+updated: 2025-05-16
 ---
 
 ## Obiettivo
@@ -32,11 +32,7 @@ Gli utenti locali sono uno dei tipi di identità che possono essere associati al
 
 #### Aggiungi un utente
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Accedere al mio account`{.action}.
-
-Nel riquadro **Scelta rapida** clicca sulla scheda `Gestisci i tuoi utenti`{.action}.
-
-Clicca sulla scheda `Identità`{.action} per accedere alla gestione degli utenti locali.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Nella barra laterale, clicca su `Identità, sicurezza & operazioni`{.action}, poi su `Identità`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -86,7 +82,7 @@ La modifica dell’utente ti consentirà di aggiornare il suo indirizzo-mail, i 
 
 #### Aggiungi un gruppo
 
-Nella scheda `Identità`{.action}, clicca su `Dichiarare un gruppo`{.action}.
+Per aggiungere un gruppo, accedi alla sezione `Identità`{.action} e clicca sulla scheda `Gruppi di utenti`{.action}. Clicca sul pulsante `Dichiarare un gruppo`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

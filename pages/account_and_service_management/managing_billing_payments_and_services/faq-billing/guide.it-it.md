@@ -111,7 +111,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in al
 
 #### Consigli e suggerimenti
 
-Se la fattura che stai cercando non compare in questa sezione, è possibile che il tuo utente non risulti come contatto di fatturazione del servizio interessato. Per conoscerlo ed eventualmente modificarlo, accedi al tuo [Spazio Cliente OVHcloud](//links/manager), clicca sul tuo nome in alto a destra e poi su `I miei contatti`{.action}.
+Se la fattura che stai cercando non compare in questa sezione, è possibile che il tuo utente non risulti come contatto di fatturazione del servizio interessato. Per conoscerlo ed eventualmente modificarlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei contatti`{.action}.
 
 ### Come saldare gli importi dovuti?
 

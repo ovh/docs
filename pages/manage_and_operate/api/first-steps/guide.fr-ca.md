@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec les API OVHcloud'
 excerpt: 'Découvrez comment utiliser les API OVHcloud'
-updated: 2024-06-07
+updated: 2025-05-13
 ---
 
 ## Objectif
@@ -201,28 +201,38 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### Lister et révoquer vos clés
 
-Il n'y a actuellement aucune option dans l'espace client pour lister et révoquer vos clés. Pour cela, il est possible d’utiliser le portail API :
+Pour lister et révoquer les clés, il est possible d'utiliser le [portail API](/links/api) ou l'[espace client OVHcloud](/links/manager) :
 
-- Listez les ID des clés avec l'appel suivant :
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application
->
-
-- Obtenez les détails d'une clé avec l'appel suivant :
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application/{applicationId}
->
-
-- Révoquez une clé avec l'appel suivant :
-
-> [!api]
->
-> @api {v1} /me DELETE /me/api/application/{applicationId}
->
+> [!tabs]
+> Via le Portail API OVHcloud
+>>
+>> - Listez les ID des clés avec l'appel suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application
+>> >
+>>
+>> - Obtenez les détails d'une clé avec l'appel suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application/{applicationId}
+>> >
+>>
+>> - Révoquez une clé avec l'appel suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me DELETE /me/api/application/{applicationId}
+>> >
+>>
+> Via l'espace client OVHcloud
+>>
+>> Rendez-vous dans le menu `Identité, Sécurité & Opérations`{.action} puis `Clés API`{.action}.
+>>
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
+>>
 
 ## Aller plus loin <a name="gofurther"></a>
 

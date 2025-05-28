@@ -163,10 +163,10 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 > [!tabs]
 > **E-maile (MX Plan)**
 >>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Clique em `MX Plan`{.action}.
->> 1. Selecione o domínio em questão.
+>> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+>> 1. Przejdź do sekcji `Web Cloud`{.action}.
+>> 1. Kliknij`MX Plan`{.action}.
+>> 1. Wybierz domenę.
 >> 1. Następnie przejdź do zakładki `Informacje ogólne`{.action}.
 >>
 >> W polu **Informacje ogólne** można zauważyć, że przycisk `DKIM`jest czerwony pod napisem **Diagnostyka**.

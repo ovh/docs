@@ -18,9 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -182,7 +179,7 @@ Na stronie "**Strona główna**" kliknij `Utwórz instancję`{.action}.
 
 <a name="model"></a>
 
-#### Krok 4.1: Wybierz szablon
+#### Etap 4.1: Wybierz szablon
 
 W pierwszym kroku wybierz model instancji (można go również nazwać "*flavour*"), który definiuje zasoby instancji. Kliknij zakładkę z kluczowymi zasobami, aby znaleźć nasze zoptymalizowane modele instancji.
 
@@ -229,7 +226,7 @@ Lokalne strefy to rozszerzenie **regionów**, które przybliża usługi OVHcloud
 
 <a name="region"></a>
 
-#### Krok 4.2: Wybierz lokalizację
+#### Etap 4.2: Wybierz lokalizację
 
 Wybierz [region](/links/public-cloud/regions-pci) najbliżej użytkowników lub klientów. Opcja ta może być ograniczona w zależności od modelu wybranego w **etapie 4.1**. Jeśli na tym etapie wybierzesz strefę **Local Zone**, instancja będzie podlegać ograniczeniom sieci (patrz [Etap 3](#networking-modes)).
 
@@ -239,7 +236,7 @@ Zapoznaj się również z informacjami podanymi na [stronie sieci Web stref loka
 
 <a name="image"></a>
 
-#### Krok 4.3: Wybierz obraz
+#### Etap 4.3: Wybierz obraz
 
 Kliknij wybraną kartę i z menu rozwijanego wybierz system operacyjny dla Twojej instancji.
 
@@ -271,7 +268,7 @@ Kliknij poniższe karty, aby wyświetlić ich prezentację:
 >>![key selection](images/24-instance-creation06.png){.thumbnail}<br>
 >> Wprowadź nazwę dla klucza i ciągu klucza w odpowiednich polach. Następnie kliknij przycisk `Dalej`{.action}.<br><br>
 >>![key selection](images/24-instance-creation07.png){.thumbnail}<br>
->> Zanim klikniesz przycisk `Dalej`{.action}, możesz skorzystać z przycisku `Dodaj klucz`{.action}, aby zapisać ten klucz w Panelu klienta OVHcloud (więcej informacji zawiera[etap 2](#import-ssh)).
+>> Zanim klikniesz przycisk `Dalej`{.action}, możesz skorzystać z przycisku `Dodaj klucz`{.action}, aby zapisać ten klucz w Panelu klienta OVHcloud (więcej informacji zawiera [etap 2](#import-ssh)).
 >>
 
 <a name="configuration"></a>
@@ -342,7 +339,7 @@ Możesz przypisać instancję do sieci prywatnej, udostępnić ją publicznie lu
 > **Public Network**
 >>
 >> Po wybraniu opcji `Sieć publiczna` instancja będzie udostępniona w Internecie bezpośrednio przez IPv4/IPv6.<br>
->> Możesz dodatkowo połączyć instancję z [siecią prywatną](#networking-modes) (niekompatybilną z vRack), jeśli wybierzesz opcję Lokalna sieć prywatna kompatybilna z Local Zones` (patrz zakładka **Lokalna sieć prywatna**)..
+>> Możesz dodatkowo połączyć instancję z [siecią prywatną](#networking-modes) (niekompatybilną z vRack), jeśli wybierzesz opcję `Lokalna sieć prywatna kompatybilna z Local Zones` (patrz zakładka **Lokalna sieć prywatna**).
 >>
 > **Local Private Network**
 >>
@@ -354,7 +351,7 @@ Kliknij przycisk `Dalej`{.action}, aby przejść do ostatniego etapu.
 
 <a name="billing"></a>
 
-#### Krok 4.6: Wybierz okres rozliczeniowy
+#### Etap 4.6: Wybierz okres rozliczeniowy
 
 ![tryb płatności](images/24-instance-creation14.png){.thumbnail}
 
@@ -452,7 +449,7 @@ ssh ubuntu@203.0.113.101
 
 Jeśli używasz innego klienta SSH, zapoznaj się z jego dokumentacją. Przykład zastosowania rozwiązania open source `PuTTY` można znaleźć w [tym przewodniku](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
-Kontynuuj[etap 6 poniżej](#manage-access).
+Kontynuuj [etap 6 poniżej](#manage-access).
 
 <a name="Windows"></a>
 
@@ -482,7 +479,7 @@ Następnie należy dokończyć wstępną konfigurację systemu operacyjnego Wind
 >>
 > 4. **Login administratora**
 >>
->> EWprowadź hasło `Administrator` utworzone na poprzednim etapie i kliknij przycisk `Strzała`..<br><br>
+>> EWprowadź hasło `Administrator` utworzone na poprzednim etapie i kliknij przycisk `Strzała`.<br><br>
 >>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
 >>
 
@@ -601,7 +598,7 @@ passwd: password updated successfully
 
 <a name="remote-password"></a>
 
-#### 6.1.2: Aktywacja połączenia zdalnego za pomocą hasła (opcjonalnie)
+##### 6.1.2: Aktywacja połączenia zdalnego za pomocą hasła (opcjonalnie)
 
 > [!warning]
 >

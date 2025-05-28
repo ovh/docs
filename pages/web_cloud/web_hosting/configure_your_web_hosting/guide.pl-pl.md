@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Środowisko, wersja PHP, .ovhconfig"
 excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i .ovhconfig na hostingu WWW"
-updated: 2024-07-16
+updated: 2025-05-23
 ---
 
 ## Wprowadzenie
@@ -235,8 +235,6 @@ Jeśli chodzi o hasło użytkownika FTP, zapoznaj się z instrukcjami zawartymi 
 #### 3.2 - Odzyskaj lub utwórz plik ".ovhconfig"
 
 Po zalogowaniu się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection) możesz wyświetlić wszystkie aktualnie hostowane na niej pliki. Pozostań w katalogu głównym Twojego hostingu (oznaczonym "/"). Powinieneś w nim odnaleźć plik ".ovhconfig".
-
-![ovhconfig](/pages/assets/screens/other/web-tools/net2ftp/ovhconfig-file.png){.thumbnail}
 
 Istnieją dwie możliwości:
 

@@ -12,7 +12,7 @@ Lors de vos tests, vous serez probablement amené à vérifier la vitesse de vos
 
 ## Prérequis
 
-- Posséder une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
+- Posséder une [instance Public Cloud](/links/public-cloud/compute).
 - Avoir un accès administratif (sudo) à votre instance via SSH (Linux) ou RDP (Windows).
 
 ## En pratique
@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > Notez que vous devrez modifier l'argument `--numjobs` pour refléter le nombre de CPU de votre instance.
 >
-> Vous pouvez récupérer une liste d'arguments et leurs fonctions directement à partir du [guide](https://github.com/axboe/fio/blob/master/HOWTO.rst) de fio.
+> Vous pouvez récupérer une liste d'arguments et leurs fonctions directement à partir du [guide](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external} de fio.
 >
 
 ### Analyser les données
@@ -141,7 +141,7 @@ Nous pouvons voir que la performance du disque supplémentaire est d'environ 305
 
 La commande dont vous avez besoin pour vérifier la vitesse de votre disque s'appelle `fio`. Elle n'est pas présente par défaut sur votre serveur.
 
-Pour installer `fio`, connectez-vous à votre instance via RDP et téléchargez ce binaire : [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
+Pour installer `fio`, connectez-vous à votre instance via RDP et téléchargez ce binaire : [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
 
 ### Tester la vitesse de votre disque
 
@@ -155,7 +155,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > Notez que vous devrez modifier l'argument `--numjobs` pour refléter le nombre de CPU de votre instance.
 >
-> Vous pouvez récupérer une liste d'arguments et leurs fonctions directement à partir du [guide de fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> Vous pouvez récupérer une liste d'arguments et leurs fonctions directement à partir du [guide de fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 >
 
 ### Analyser les données
@@ -212,6 +212,6 @@ Accédez ensuite au disque supplémentaire via powershell et exécutez la même 
 
 ## Aller plus loin
 
-[Créer et configurer un disque supplémentaire sur une instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance){.external}.
+[Créer et configurer un disque supplémentaire sur une instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

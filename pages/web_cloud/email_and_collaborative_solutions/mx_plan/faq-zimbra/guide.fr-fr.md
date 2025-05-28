@@ -153,7 +153,7 @@ Il est toutefois possible de continuer à profiter de l'interface OWA [en migran
 
 /// details | Puis je résilier mon offre MX Plan ?
 
-Pour résilier votre offre dans la section « Mes services » de votre espace OVHCloud, consultez la rubrique MX Plan de notre guide « [Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan) ».
+Pour résilier votre offre dans la section « Mes services » de votre espace OVHcloud, consultez la rubrique MX Plan de notre guide « [Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan) ».
 
 ///
 

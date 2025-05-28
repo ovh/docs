@@ -1,7 +1,7 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Entra ID aktivieren
 excerpt: "Erfahren Sie hier, wie Sie Entra ID (vormals Azure Active Directory) über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Ziel
@@ -203,17 +203,13 @@ Das Hinzufügen Ihrer Entra ID Anwendung als vertrauenswürdiger Identity Provid
 
 #### OVHcloud Vertrauen aufbauen
 
-Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und dann auf `Identity & Access Management`{.action}.
+Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und anschließend `Identitäten`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
+Klicken Sie auf den Tab `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Klicken Sie auf den Button `SSO-Verbindung`{.action}.
-
-![OVHcloud SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Geben Sie im Feld **Nutzerattributname** den **UPN** der Entra ID Anwendung ein und im Feld **Name des Gruppenattributs** den zuvor gespeicherten Wert des *Claim name* für **groups**.
 
@@ -239,11 +235,11 @@ Um dies zu erreichen, überprüfen Sie das Attribut "Group", das von Ihrer Entra
 
 ![Entra ID Group Schritt 2](images/azure_ad_group_2.png){.thumbnail}
 
-Klicken Sie auf den Button `Gruppe deklarieren`{.action}.
+Um eine Gruppe hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action}:
 
 ![OVHcloud User Management Gruppen Schritt 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Vervollständigen Sie die Felder und klicken Sie dann auf den Button `Bestätigen`{.action}.
+Geben Sie den Gruppennamen ein und wählen Sie die zugehörige Rolle aus. Klicken Sie anschließend auf `Bestätigen`{.action}.
 
 ![OVHcloud User Management Gruppen Schritt 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 

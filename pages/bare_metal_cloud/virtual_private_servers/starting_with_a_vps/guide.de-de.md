@@ -114,7 +114,7 @@ Klicken Sie auf die Tabs, um Erläuterungen dieses Bereichs anzuzeigen.
 
 Diese Optionen beziehen sich auf zusätzliche VPS-Dienste, die über das Kundencenter bestellt werden können.
 
-> [!tab]
+> [!tabs]
 > Snapshot
 >>
 >> Ein Snapshot eines VPS ist eine instante Sicherung des Serverzustands, mit der sich das System bei einem Problem schnell wiederherstellen lässt. Mit der Option `Snapshot` können Sie einen manuellen Snapshot als singulären Wiederherstellungspunkt erstellen.

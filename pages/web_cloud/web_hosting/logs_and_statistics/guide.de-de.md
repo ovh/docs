@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Statistiken und Logs einer Website einsehen"
 excerpt: "Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Website auf Ihrem Webhosting einsehen"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Ziel
@@ -74,6 +74,10 @@ Es stehen verschiedene Arten von Logs zur Verfügung:
 - **out**: Enthält die History der verschiedenen externen Anfragen (ausgehende TCP Verbindungen), die von Ihrem Webhosting zu Remote Hosts durchgeführt wurden.
 - **SSH**: Diese Logs zeigen die verschiedenen Verbindungen und Befehle an, die mit dem SSH-Protokoll durchgeführt wurden.
 - **CRON**: Hier finden Sie die Ergebnisse der Ausführung Ihrer geplanten Tasks [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) auf Ihrem Webhosting.
+
+> [!success]
+>
+> Um die Statistiken und/oder Logs des CDN einzusehen, lesen Sie unsere zugehörige Anleitung: „[Webhosting - CDN Statistiken und Logs einsehen](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)“.
 
 ### Infrastrukturstatistiken <a name="infra-stats"></a>
 

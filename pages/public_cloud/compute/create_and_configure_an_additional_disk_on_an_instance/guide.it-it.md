@@ -425,7 +425,7 @@ C:\> diskpart
 
 Per mettere il disco `online`, utilizza il seguente set di comandi DISKPART:
 
-```
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared

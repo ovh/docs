@@ -1,7 +1,7 @@
 ---
 title: Attiva le connessioni SSO di Entra ID con il tuo account OVHcloud
 excerpt: "Scopri come associare il tuo Entra ID (precedentemente Azure Active Directory) al tuo account OVHcloud utilizzando SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Obiettivo
@@ -203,17 +203,13 @@ L'applicazione Entra ID viene aggiunta come provider di identità approvato tram
 
 #### Creare la fiducia di OVHcloud
 
-Nella barra laterale, clicca su `Identità, sicurezza e operazioni`{.action} e poi su `Identity & Access Management`{.action}.
+Nella barra laterale, clicca su `Identità, Sicurezza e Operazioni`{.action} e poi su `Identità`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Clicca sulla scheda `Identità`{.action} per accedere alla gestione degli utenti locali.
+Clicca sulla scheda `SSO`{.action} e sul pulsante `Connessione SSO`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Clicca sul pulsante `Connessione SSO`{.action}.
-
-![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Completa il campo **Group Attribute Name** con il valore di **Claim name** dei gruppi di applicazioni Entra ID precedentemente registrato.
 
@@ -239,11 +235,11 @@ Per risolvere il problema, verifica l'attributo "Group" restituito dalla tua app
 
 ![Entra ID Group Step 2](images/azure_ad_group_2.png){.thumbnail}
 
-Per aggiungerlo, clicca sul pulsante `Declarer un gruppo`{.action}.
+Per aggiungere un gruppo, clicca sulla sezione `Identità`{.action} e poi sulla scheda `Gruppi di utenti`{.action}. Clicca sul pulsante `Dichiarare un gruppo`{.action}:
 
 ![Gruppi di gestione utenti Ovhcloud step 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Completa i campi e clicca su `Conferma`{.action}.
+Inserisci il nome del gruppo e seleziona il ruolo associato, poi clicca sul pulsante `Confermare`{.action}.
 
 ![Gruppi di gestione utenti Ovhcloud Step 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 
@@ -251,7 +247,7 @@ Il gruppo creato deve figurare sull'elenco.
 
 ![Gruppi di gestione utenti Ovhcloud step 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
 
-Attenzione: se concedi il privilegio `Nessuno`, sarà necessario assegnare i diritti a questo gruppo tramite le [politiche IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+Attenzione: se concedi il ruolo `Nessuno`, sarà necessario assegnare i diritti a questo gruppo tramite le [politiche IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 ### Connexion via SSO
 

@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - View website statistics and logs"
 excerpt: "Find out how to view your website's statistics and logs with your web hosting plan"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Objective
@@ -12,8 +12,8 @@ Access to your website’s logs and statistics is included in your web hosting p
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An [OVHcloud Web Hosting plan](/links/web/hosting).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -74,6 +74,10 @@ Different types of logs are available:
 - **out**: Contain the history of various external requests (TCP outgoing connections) made from your web hosting plan to remote hosts.
 - **SSH**: These logs show the different connections/commands made with the SSH protocol.
 - **CRON**: Find here the results of the execution of your scheduled tasks [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) on your web hosting plan.
+
+> [!success]
+>
+> To view CDN statistics and/or logs, please refer to our dedicated guide: “[Web Hosting - View CDN statistics and logs](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)”.
 
 ### Infrastructure statistics <a name="infra-stats"></a>
 

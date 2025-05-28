@@ -21,7 +21,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 
 ## Prerequisiti
 
-- Disporre di una soluzione [di hosting Web OVHcloud](/links/web/hosting){.external} compatibile
+- Disporre di una soluzione [di hosting Web OVHcloud](/links/web/hosting-multisite){.external} compatibile
 - Disporre di uno o più [domini](/links/web/domains){.external}
 - Poter modificare la configurazione dei tuoi domini (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit))
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}

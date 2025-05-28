@@ -1,8 +1,17 @@
 ---
 title: How to use Data Processing through the OVHcloud API
 excerpt: Find out how to run your Apache Spark jobs with the OVHcloud API
-updated: 2021-05-14
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 

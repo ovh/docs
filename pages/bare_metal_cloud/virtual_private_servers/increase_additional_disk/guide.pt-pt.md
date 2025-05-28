@@ -41,7 +41,7 @@ Irá aparecer uma mensagem para confirmar o seu pedido. Clique na ligação dent
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
-O aumento da capacidade do disco demorará alguns minutos após a validação do pagamento. Pode verificar o progresso no separador `Discos adicionais`{.action}\: se o novo tamanho escolhido for apresentado, o disco está pronto.
+O aumento da capacidade do disco demorará alguns minutos após a validação do pagamento. Pode verificar o progresso no separador `Discos adicionais`{.action}: se o novo tamanho escolhido for apresentado, o disco está pronto.
 
 ![size-disk-vps](images/increase_disk_vps04.png){.thumbnail}
 

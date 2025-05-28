@@ -1,7 +1,7 @@
 ---
 title: 'How do Savings Plans work?'
 excerpt: 'Savings Plans - Everything you need to know to optimise your costs'
-updated: 2025-04-17
+updated: 2025-05-16
 ---
 
 <style>
@@ -123,69 +123,74 @@ Thanks to this combination, the customer achieves substantial savings by optimis
 
 ## Use the dashboard to analyse your Savings Plans
 
-> [!primary]
->
-> This section will be available at the same time as the Dashboard functionality in your OVHcloud Control Panel.
->
-
-<!--The Savings Plans dashboard allows you to track and analyse your Savings Plans, providing essential information about their usage, coverage and savings. You can view specific data by period, service, instance type or other relevant criteria.
+The Savings Plans dashboard allows you to track and analyse your Savings Plans, providing essential information about their usage and coverage. You can view specific data by period and service.
 
 /// details | **a. Selection filters**
 
- Image avec focus sur les filtres
+![Dashboard focus on filters](images/dashboard_filters.png){.thumbnail}
 
-- **Service:** Allows you to filter the data according to the specific service with which Savings Plans are associated.
-- **Instance type:** Allows you to choose between different types of instances ("instances" or "Managed Rancher Services").
-- **Model:** Choice of specific resource model to refine Savings Plans monitoring.
+- **Service:** Allows you to filter the specific service the Savings Plans are associated with.
 - **Period:** Allows you to select a specific period to observe the use of Savings Plans and the associated coverage.
 
 ///
 
-/// details | **b. KPIs (Key Performance Indicators)**
+/// details | **b. Savings Plan indicators**
 
 > [!primary]
 >
-> The KPI data in the Savings Plans dashboard is adjusted according to the filters applied. This makes it possible to customise the display of indicators to focus on specific periods, particular services or selected instance types.
+> The indicators displayed in the Savings Plans dashboard are adjusted according to the filters applied. This makes it possible to customise the display of indicators to focus on specific periods, particular services or selected instance types.
+>
+> Only data from the last 6 months are available.
 >
 
- Image avec focus sur les KPIs
+![Dashboard focus on kpi](images/dashboard_kpi.png){.thumbnail}
 
-- **Number of active Savings Plans:** Displays the total number of active Savings Plans.
-- **% use of Savings Plans:** Indicates the percentage of Savings Plans used in relation to the total capacity available.
-- **% of Savings Plan coverage:** Shows the proportion of resources covered by Savings Plans compared to total usage.
-- **Savings achieved:** Displays the total savings made through Savings Plans over the specified period.
-- **Excess amount:** Displays the amount of excess consumption that generates non-discounted charges.
+- **Number of active Savings Plans:** Total number of your Savings Plans active on the last day of the given period for the selected resource.
+- **% Savings Plan Utilization:** Average use of your Savings Plans (over the selected period for the selected resource). For example, if you used 8 instances and your Savings Plans cover 10, the utilization rate would be 80%.
+- **% Savings Plan Coverage:** Average coverage of your Savings Plans (over the selected period for the selected resource). For example, if you have consumed 10 instances and your Savings Plans cover 8, then your coverage rate is 80%.
+
+If the selected period has already ended (one month before the current one), two additional fields will be available to allow you to view more detailed data:
+
+- **Savings achieved:** Total savings (over the selected period for the selected resource).
+- **Excess amount:** Invoice amount exceeding your Savings Plans configuration (over the selected period for the selected resource).
 
 ///
 
 /// details | **c. Graphics**
 
- Image avec focus sur le graphique
+> [!warning]
+>
+> For a Savings Plan started during the month, days prior to its creation are displayed in red, indicating the absence of coverage.
+> 
+
+![Dashboard focus on graph](images/dashboard_graph.png){.thumbnail}
 
 - **Y-axis legend on graph:**
     - If ‘Instances’ is selected, the Y axis will display the number of instance(s) used.
-    - If ‘Managed Rancher Services’ is selected, the Y axis will show the number of vCPU(s) used.
+    - If ‘Managed Rancher Services’ is selected, the Y axis will display the number of vCPU(s) used.
 - **Graph colour legends :**
     - **Green :** Represents the number of resources covered by a Savings Plan.
-    - **Red :** Represents the number of resources not covered by a Savings Plan and billed by the hour.
+    - **Red :** Represents the number of resources not covered by a Savings Plan and billed hourly.
 
 ///
 
-/// details | **d. Consumption monitoring table**
+/// details | **d. Savings Plan Usage Detail**
 
- Image avec focus sur la parti de suivi de consommation
+![Dashboard focus on conso](images/dashboard_conso.png){.thumbnail}
 
 - **Create a Savings Plan:** A button to create a new Savings Plan.
-- **Download (Export as CSV):** A button for exporting data from the **Consumption monitoring table** in CSV format, so that you can analyse it in detail or save it for your archives.
-- **Consumption monitoring table columns:**
-    - **Begin:** This column shows the start date and time of the resource consumption period.
+
+Each period in the table corresponds to a change in resource usage, such as the addition or deletion of a resource or Savings Plan.
+
+- **Savings Plan Usage Detail columns:**
+    - **Start:** This column shows the start date and time of the resource consumption period.
     - **End:** This column shows the date and time at which the resource consumption period ends.
-    - **Consumption Size:** Shows the quantity of resources consumed during the period. This value represents the actual use of resources during the selected period.
-    - **Cumul Plan Size:** Indicates the total coverage of resources during the period, i.e. the quantity of resources covered by your Savings Plans for this specific period.
+    - **Usage:** Represents the amount of resources consumed during the selected period.
+    - **Total coverage:** Indicates the total of resources covered by your Savings Plans during this period.
 
 ///
 
-Thanks to this dashboard, you can monitor the use and efficiency of your Savings Plans in real time, adjust your strategy according to the data observed and optimise your costs for more effective management of your OVHcloud resources. -->
+Thanks to this dashboard, you can monitor the use and efficiency of your Savings Plans in real time, adjust your strategy according to the data observed, and optimise your costs for more efficient management of your OVHcloud resources.
 
 ## Understanding billing
 

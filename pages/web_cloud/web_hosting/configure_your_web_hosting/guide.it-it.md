@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Ambiente, versione PHP, .ovhconfig"
 excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e .ovhconfig di un hosting Web"
-updated: 2024-07-16
+updated: 2025-05-23
 ---
 
 ## Obiettivo
@@ -236,8 +236,6 @@ Per conoscere la password associata a un utente FTP, consulta le istruzioni forn
 #### 3.2 - Recuperare o creare il file ".ovhconfig"
 
 Una volta effettuato l’accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), visualizzi tutti i file attualmente ospitati su questo spazio. Rimani posizionato sulla root dell’hosting (simbolo "/"). dovrebbe essere presente il file ".ovhconfig".
-
-![ovhconfig](/pages/assets/screens/other/web-tools/net2ftp/ovhconfig-file.png){.thumbnail}
 
 A questo punto, si presentano due possibilità:
 

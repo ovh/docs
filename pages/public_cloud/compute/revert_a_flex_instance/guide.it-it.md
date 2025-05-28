@@ -24,9 +24,9 @@ Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più
 > [!warning] 
 > - Se si passa da un'istanza flex a un'istanza classica con più risorse, questo viene considerato un aggiornamento. In questo caso, vi verrà addebitata la differenza. Al termine del periodo di fatturazione, riceverete due fatture.
 >
-> Se si passa da un'istanza flex a un'istanza classica con meno risorse, questo viene considerato un downgrade. In questo caso, non verrà emessa alcuna fattura.
+> - Se si passa da un'istanza flex a un'istanza classica con meno risorse, questo viene considerato un downgrade. In questo caso, non verrà emessa alcuna fattura.
 >
-> Se passate da un'istanza flex a un'istanza classica con le stesse risorse, non riceverete alcuna fattura.
+> - Se passate da un'istanza flex a un'istanza classica con le stesse risorse, non riceverete alcuna fattura.
 >
 
 Accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/) e assicurati di essere nella regione corretta. Puoi verificarlo nell'angolo in alto a sinistra.

@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare le API OVHcloud
 excerpt: Come utilizzare le API OVHcloud
-updated: 2024-06-07
+updated: 2025-05-13
 ---
 
 > [!primary]
@@ -205,28 +205,38 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### Elenca e revoca le chiavi
 
-Al momento non è disponibile un'opzione del Pannello di controllo per elencare e revocare le chiavi. Il portale API può essere utilizzato a tale scopo:
+Per visualizzare e rimuovere le chiavi è possibile utilizzare il [portale API](/links/api) o lo [Spazio Cliente OVHcloud](/links/manager):
 
-- Elenca gli ID delle chiavi con la chiamata seguente:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application
->
-
-- Ottieni i dettagli della chiave con la seguente chiamata:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application/{applicationId}
->
-
-- Revoca di una chiave con la seguente chiamata:
-
-> [!api]
->
-> @api {v1} /me DELETE /me/api/application/{applicationId}
->
+> [!tabs]
+> Tramite il Portale API OVHcloud
+>>
+>> - Elenca gli ID delle chiavi con questa chiamata:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application
+>> >
+>>
+>> - Ottieni i dettagli di una chiave con la chiamata seguente:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application/{applicationId}
+>> >
+>>
+>> - Rimuovi una chiave con la chiamata seguente:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me DELETE /me/api/application/{applicationId}
+>> >
+>>
+> Dallo Spazio Cliente OVHcloud
+>>
+>> Accedi al menu `Identità, Sicurezza & Operazioni`{.action} e poi `Chiavi API`{.action}.
+>>
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
+>>
 
 ## Per saperne di più <a name="gofurther"></a>
 

@@ -1,14 +1,15 @@
 ---
 title: "Anuncios de fin de venta/vida base de datos SQL"
 excerpt: "Anuncios de fin de venta/vida base de datos SQL"
-updated: 2024-10-17
+updated: 2025-05-20
 ---
 
 Los productos cubiertos por estos anuncios de fin de venta y fin de vida son los servicios de base de datos de SQL Web Hosting, a los que se puede acceder a través de la red Web Hosting. Para más información, consulte la [política de fin de vida útil de las bases de datos administradas](/pages/web_cloud/web_cloud_databases/eol-policy).
 
 |Versión del DBMS|Anuncio de fin de vida|Fin de venta|Fin de soporte|
 |---|---|---|---|
-|MySQL 8.0|Por determinar|Por determinar|Por determinar|
+|MySQL 8.0|2025-05-20|2025-09-30|2026-04-01|
+|MySQL 8.4|Por determinar|Por determinar|Por determinar|
 
 > [!primary]
 >

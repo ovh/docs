@@ -20,7 +20,7 @@ Cependant, vous pouvez toujours vous connecter à votre instance via le mode res
 
 ## Prérequis
 
-- Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+- Une [instance Public Cloud](/links/public-cloud/compute) dans votre compte OVHcloud
 - Être connecté à l’[espace client OVHcloud](/links/manager)
 
 ## En pratique

@@ -106,7 +106,7 @@ Introduzca la información solicitada. Si necesita ayuda para completar los dist
 
 *flavors* pre-construidos están disponibles para usted, seleccione el *flavor* de su elección en la pestaña `Available`.
 
-**Networks*
+**Networks**
 
 ![createinstance](images/create-instance-step6.png){.thumbnail}
 
@@ -123,7 +123,7 @@ Introduzca la información solicitada. Si necesita ayuda para completar los dist
 Para obtener más información, consulte [esta guía](/pages/public_cloud/compute/setup_security_group).
 
 
-**Key Pairs (par de claves)**
+**Key Pair (par de claves)**
 
 > [!warning]
 > 
@@ -182,4 +182,4 @@ Atención: Estas opciones no son obligatorias para la creación de una instancia
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

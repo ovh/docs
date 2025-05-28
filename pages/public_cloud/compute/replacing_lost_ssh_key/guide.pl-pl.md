@@ -24,7 +24,7 @@ Nadal jednak możesz logować się do Twojej instancji w trybie Rescue OVHcloud,
 
 ## Wymagania początkowe
 
-- [Instancja Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
+- [Instancja Public Cloud](/links/public-cloud/compute) na koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

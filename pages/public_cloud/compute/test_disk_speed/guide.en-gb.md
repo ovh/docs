@@ -12,7 +12,7 @@ You'll probably be called upon to check the speed of your disks when you carry o
 
 ## Requirements
 
-- A [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud Instance](/links/public-cloud/compute) in your OVHcloud account
 - Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows).
 
 ## Instructions
@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > Please note that you will need to modify the `--numjobs` argument to reflect the number of CPUs that your instance has.
 >
-> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 >
 
 ### Analyse the data
@@ -144,7 +144,7 @@ We can see that the performance of the additional disk is around 3052 IOPS.
 
 The command that you need to test your disk speed is called `fio`, and is not installed on your server by default.
 
-To install `fio`, log in to your instance via RDP and download this binary: [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
+To install `fio`, log in to your instance via RDP and download this binary: [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
 
 ### Test your disk speed
 
@@ -158,7 +158,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > Please note that you will need to modify the `--numjobs` argument to reflect the number of CPUs that your instance has.
 >
-> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst).
+> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
 >
 
 ### Analyse the data
@@ -214,7 +214,6 @@ Next, access the disk via powershell and run the same command as above.
 
 ## Go further
 
-[Create and configure an additional disk on an Instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance){.external}
+[Create and configure an additional disk on an Instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
 Join our [community of users](/links/community).
-

@@ -1,7 +1,7 @@
 ---
 title: "Comment connecter un produit compatible en utilisant le protocole KMIP"
 excerpt: "Comment communiquer avec le KMS OVHcloud avec le protocole KMIP"
-updated: 2025-03-03
+updated: 2025-05-12
 ---
 
 ## Objectif
@@ -47,6 +47,35 @@ A partir de là, il est possible d'échanger des messages KMIP tels que définis
 - Libkmip pour le C : <https://github.com/OpenKMIP/libkmip>.
 
 Vous pouvez aussi utiliser notre SDK pour Go : <https://github.com/ovh/kmip-go>
+
+### IAM Rights
+
+Les opérations KMIP avec un utilisateur IAM nécessitent des droits spécifiques listés ci-dessous
+
+| Opération KMIP | Description | Action |
+| -------------- | ----------- | ------ |
+| Create | Créer un objet managé | okms:kmip:create |
+| Get | Lister un objet managé | okms:kmip:get |
+| Register | Enregistrer un objet managé| okms:kmip:register |
+| Activate | Activer un objet managé | okms:kmip:activate |
+| Revoke | Révoquer un objet managé | okms:kmip:revoke |
+| Destroy | Détruire un objet managé | okms:kmip:destroy |
+| CreateKeyPair | Créer une paire de clé | okms:kmip:createKeyPair |
+| AddAttribute | Ajouter un attribut à un objet managé | okms:kmip:addAttribute |
+| GetAttributes | Lister les attributs d'un objet managé | okms:kmip:getAttributes |
+| GetAttributeList | Lister les noms d'attributs | okms:kmip:getAttributeList |
+| ModifyAttribute | Modifier l'attribut d'un objet managé | okms:kmip:modifyAttribute |
+| DeleteAttribute | Supprimer l'attribut d'un objet managé | okms:kmip:deleteAttribute |
+| Locate | Localiser un objet managé | okms:kmip:locate |
+| Archive | Archiver un objet managé | okms:kmip:archive |
+| Recover | Restorer un objet managé | okms:kmip:recover |
+| ReKey | Rekey un objet managé | okms:kmip:rekey |
+| ObtainLease | Obtenir le lease d'un objet managé | okms:kmip:obtainLease |
+| GetUsageAllocation | Lister l'allocation d'usage  d'un objet managé | okms:kmip:getUsageAllocation |
+| Encrypt | Chiffer avec un objet managé | okms:kmip:encrypt |
+| Decrypt | Déchiffrer avec un objet managé | okms:kmip:decrypt |
+| Sign | Signé avec un objet managé | okms:kmip:sign |
+| Signature Verify | Vérifier avec un objet managé | okms:kmip:signatureVerify |
 
 ### Couverture KMIP
 

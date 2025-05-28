@@ -26,7 +26,7 @@ Se atingiu a capacidade máxima do seu disco suplementar, pode adicionar armazen
 
 ## Requisitos
 
-- Uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) no seu projeto Public Cloud
+- Uma [instância Public Cloud](/links/public-cloud/compute) no seu projeto Public Cloud
 - Um [disco adicional](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) criado no seu projeto
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ter acesso administrativo (sudo) à sua instância através de SSH (Linux) ou RDP (Windows)
@@ -234,6 +234,7 @@ O volume redimensionado inclui agora o espaço de disco suplementar.
 ## Quer saber mais?
 
 [Criar e configurar um disco suplementar numa instância](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Alterar o tipo de volume do seu Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

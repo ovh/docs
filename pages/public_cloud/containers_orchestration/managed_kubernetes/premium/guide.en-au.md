@@ -1,7 +1,7 @@
 ---
 title: MKS Premium Plan
 excerpt: 'Features and limitations of the MKS Premium Plan in Beta version'
-updated: 2025-04-30
+updated: 2025-05-27
 ---
 
 <style>
@@ -48,10 +48,6 @@ This list is subject to change as new features will be introduced during the Bet
 
 Upgrading an existing cluster is not supported at the moment, we'll deliver this functionality once we support the next Kubernetes release (1.33).
 
-### Cluster rename
-
-Renaming an existing cluster is not supported at the moment.
-
 ### Logs Data Platform integration
 
 Audit logs forwarding to the [Logs Data Platform](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) is not supported at the moment.
@@ -59,10 +55,6 @@ Audit logs forwarding to the [Logs Data Platform](/pages/public_cloud/containers
 ### ETCD Quota
 
 Real-time monitoring of the etcd storage usage is not supported at the moment, current etcd quota is 8GB per cluster.
-
-### API server admission plugins configuration
-
-The configuration of the [API server admission plugins](/pages/public_cloud/containers_orchestration/managed_kubernetes/apiserver-flags-configuration) is not available at the moment.
 
 ### API Server IP restrictions
 
@@ -74,10 +66,6 @@ Retrieve the gateway IP of your cluster's gateway in the [OVHcloud Control Panel
 ```bash
 openstack router show ROUTER_ID -c external_gateway_info
 ```
-
-### Security Policies
-
-Changing the Security Policy after the cluster creation is not supported yet.
 
 ### Anti-affinity
 
@@ -211,7 +199,7 @@ The following methods are supported to create an MKS Premium cluster:
 >>
 > Using Terraform
 >>
->> Refer to the [dedicated documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster-through-terraform) to create a Managed Kubernetes cluster.
+>> Refer to the [dedicated documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) to create a Managed Kubernetes cluster.
 >>
 >> Here is a sample Terraform file that creates an MKS Premium cluster and three nodepools on three different availability zones in the `EU-WEST-PAR` region.
 >>

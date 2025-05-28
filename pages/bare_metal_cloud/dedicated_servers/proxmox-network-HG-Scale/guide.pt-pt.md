@@ -1,7 +1,7 @@
 ---
 title: 'Configurar a rede em Proxmox VE nas gamas High Grade, Scale & Advance (EN)'
 excerpt: 'Saiba como configurar a rede em Proxmox VE'
-updated: 2024-11-19
+updated: 2025-05-16
 ---
 
 > [!primary]
@@ -10,6 +10,12 @@ updated: 2024-11-19
 >
 > Older Advance generation servers do not rely on the same network infrastructure.
 >
+
+> [!warning]
+>
+> As of May 2025, virtual MACs can be used on High Grade & Scale ranges.
+>
+> If you want to use virtual MACs to configure the network on Proxmox VE on High Grade and Scale servers, you can refer to [Configuring Additional IP in bridge mode on your virtual machines](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ## Objective
 

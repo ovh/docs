@@ -1,8 +1,17 @@
 ---
 title: Security specifications for Data Processing
 excerpt: Data Processing security overview
-updated: 2024-03-01
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 

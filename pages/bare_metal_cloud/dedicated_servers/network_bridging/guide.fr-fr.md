@@ -1,7 +1,7 @@
 ---
-title: 'Mode bridge IP'
+title: 'Configurer des Additional IP en mode bridge sur vos machines virtuelles'
 excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
-updated: 2024-12-13
+updated: 2025-05-16
 ---
 
 > [!primary]
@@ -26,9 +26,9 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 >
 > Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 >
-> Ce guide n'est pas applicable aux serveurs des gammes [Scale](https://www.ovhcloud.com/fr/bare-metal/scale/) et [High Grade](https://www.ovhcloud.com/fr/bare-metal/high-grade/).
+> Depuis mai 2025, ce guide peut être utilisé pour les serveurs des gammes [Scale](https://www.ovhcloud.com/fr/bare-metal/scale/) et [High Grade](https://www.ovhcloud.com/fr/bare-metal/high-grade/).
 >
-> Reportez-vous plutôt aux guides suivants : [Configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) et [Configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
+> Il est aussi possible de configurer les Additional IP en mode routé ou via le vRack. Pour cela, vous pouvez consulter: [Configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) et [Configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
 ## En pratique
 

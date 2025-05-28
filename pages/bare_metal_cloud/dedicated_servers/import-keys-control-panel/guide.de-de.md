@@ -30,7 +30,7 @@ Wenn Sie noch kein SSH-Schlüsselpaar erstellt haben, lesen Sie zuerst unsere An
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf den Account-Namen oben rechts und öffnen Sie `Produktkatalog`{.action}.
 
-![Products and Services](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
+![Products and Services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
 Klicken Sie im Kundencenter-Bereich `Meine Dienste` auf `SSH-Schlüssel`{.action}.
 

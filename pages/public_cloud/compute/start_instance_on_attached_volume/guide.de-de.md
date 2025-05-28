@@ -121,7 +121,7 @@ Sie können auch ein Betriebssystem von einem Volume aus oder auf einem Volume b
 
 > [!tabs]
 > **Horizon**
-> Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/).
+>> Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/).
 >>
 >> Wählen Sie oben links die korrekte Region aus.
 >>

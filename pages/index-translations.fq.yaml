@@ -213,9 +213,9 @@ web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-
 web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
 web-cloud-email-collaborative-solutions-email-pro-getting-started: Premiers pas
-web-cloud-email-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-email-pro-setting-up-an-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
 web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
-web-cloud-email-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
+web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
 web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Fonctionnalités d'un compte Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Premiers pas
@@ -292,6 +292,7 @@ web-cloud-hosting-troubleshooting: Dépanner
 web-cloud-hosting-tutorials: Tutoriels
 web-cloud-hosting-tutorials-wordpress: Tutoriels WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutoriels Cloud Web
+web-cloud-hosting-visibility-pro: Visibilité Pro
 web-cloud-hosting-website-optimisation: Optimisation de votre site web
 web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway

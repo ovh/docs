@@ -1,12 +1,18 @@
 ---
-title: Managing a group of Microsoft 365 OVHcloud licences
+title: How to manage Microsoft 365 licence groups at OVHcloud
 excerpt: Find out how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel
-updated: 2024-03-27
+updated: 2025-05-22
 ---
+
+<style>
+.w-500 {
+  max-width:500px !important;
+}
+</style>
 
 ## Objective
 
-There are several advantages to subscribing to the OVHcloud **Microsoft 365 Apps for Business** or **Microsoft 365 Apps for Enterprise** offers. Billing is monthly and you can use one licence for 5 PCs/Macs, 5 tablets and 5 smartphones.
+There are several advantages to subscribing to the OVHcloud offers **Microsoft 365 Apps for Business** or **Microsoft 365 Apps for Enterprise**. Billing is monthly and you can use one licence for 5 PCs/Macs, 5 tablets and 5 smartphones.
 
 Your Microsoft 365 licences are collected into a group, also called `Service`. An Apps for Business licence group can contain up to 300 licences, an Apps for Enterprise licence group is unlimited.
 
@@ -23,85 +29,107 @@ Here is the list of software included in the suite:
 
 ## Instructions
 
-### How to order a licence
+### Order a license
 
-Go to the [OVHcloud Microsoft 365](/links/web/ms365)commercial page and click on the button `Order`{.action}.
+1. Go to the [Microsoft 365 sales page](/links/web/ms365), or to the [OVHcloud Control Panel](/links/manager):
+    - Go to the `Web Cloud`{.action} section.
+    - In the `MICROSOFT` section, click `Microsoft 365`{.action}.
+    - Click `Order`{.action}.
+1. Choose from our available solutions, namely "Apps for Business" and "Apps for Enterprise".
+1. Set the renewal frequency for your license group.
+1. Define the number of licenses you want, then finalize your order.
 
-From the [OVHcloud Control Panel](/links/manager), select `Web Cloud`{.action} in the top menu, click the `Order`{.action} button and then `Office 365`{.action}.
+### Activate your license
 
-- Choose from our available offers, namely Apps for Business and Apps for Enterprise.
-- Set the renewal frequency for your licence group.
-- Set the number of licences you want, then click `Continue`{.action}.
+To activate the license ordered:
 
-You will be redirected to the order page to confirm and pay for your order.
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. In the `MICROSOFT` section, click `Microsoft 365`{.action}.
+1. Select the Microsoft 365 service concerned.
+1. Click the `Licenses`{.action} tab.
+1. Click the `⁝`{.action} button on the license line for the activation, then click `Edit account`{.action}.
 
-### Activate your licence
+    ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
-Once you have ordered your license, you will need to activate it via the [OVHcloud Control Panel](/links/manager). In the `Web Cloud` section, click `Microsoft`{.action} then `Microsoft 365`{.action} and select the license group concerned.
+1. Enter the license user information, then click `Confirm`{.action}.
 
-Click the `...`{.action} button of the licence, then click `Edit the account`{.action}.
+    ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
-![office licence](images/Outlook-cps1-01.png){.thumbnail}
+### Install the Microsoft 365 suite on your device <a name="install365"></a>
 
-Enter the information for the licence user, click `Next`{.action}, then `Confirm`{.action}.
+Once the license has been activated, you will receive an email to the contact email address of your OVHcloud account. You can also find this email in your [OVHcloud Control Panel](/links/manager), by clicking on your account name in the top right-hand corner, then `My communications`{.action} in the `Emails received` section.
 
-![office licence](images/Outlook-cps1-02.png){.thumbnail}
+This email contains the information required to download and install your Microsoft 365 suite, namely **the activation email address** and the **password**.
 
-### Install the Microsoft 365 suite on your machine <a name="install365"></a>
+Go to <https://portal.office.com/> and log in with **the activation email address** and the **password** previously configured. You will be taken to a window where you can download the Microsoft 365 suite to your desktop, along with the installation instructions.
 
-Once the licence has been activated, you will receive an email on the contact email address for your OVHcloud account. You can also find this email in your [OVHcloud Control Panel](/links/manager) by clicking on your account ID in the top right-hand corner, then on `Service emails`{.action} in the `Shortcuts` section.
+![emails](images/Outlook-cps1-04.png){.thumbnail .w-500}
 
-This email contains the information required to download and install your Microsoft 365 suite, including the **activation email address** and the **password**.
+#### Install Suite 365 on multiple devices
 
->
-> If you would like to set the password yourself, you will need to do so via the OVHcloud Control Panel. In the `Web Cloud` section, click `Microsoft`{.action} , then click `Microsoft 365`{.action} and select the licence group concerned.
->
-> Click on the `...`{.action} button next to the relevant licence, then `Change password`{.action}.
->
-> ![office licence](images/Outlook-cps1-03.png){.thumbnail}
->
+With a license, the user can install Microsoft 365 on **5 Windows and macOS devices**, on **5 tablets** and **5 smartphones**. This represents a total of **15 devices** for a license. All of these devices must be owned by the licensee.
 
-Go to <https://portal.office.com/> and log in with the **activation email address** and **password** previously configured. You will be redirected to a page with installation instructions where you can download the Microsoft 365 suite to your device.
+To install your license on several devices, simply reproduce [the previous step](#install365) *on each device*, ensuring that each is managed *by the same user*.
 
-![office licence](images/Outlook-cps1-04.png){.thumbnail}
+### Change a license password
 
-#### Install Suite 365 on multiple machines
+If you would like to set your own license password:
 
-With a license, the user can install Microsoft 365 on **5 Windows and macOS machines**, on **5 tablets** and **5 smartphones**. This represents a total of **15 devices** for a license. All of these devices must be owned by the licensee.
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. In the `MICROSOFT` section, click `Microsoft 365`{.action}.
+1. Select the Microsoft 365 service concerned.
+1. Click the `Licenses`{.action} tab.
+1. Click the `⁝`{.action} button to the right of the license concerned, then `Change password`{.action}.
 
-To install your license on multiple machines, simply reproduce [the previous step](#install365) *on each device* ensuring that each is managed *by the same user*.
+![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
-### Add a licence to an existing group
+### Add a license to an existing group
 
-If you would like to add one or more licences to your existing licence group, you can do so from your [OVHcloud Control Panel](/links/manager). In the `Web Cloud` section, click `Microsoft`{.action} , then click `Microsoft 365`{.action} and select the licence group concerned.
+If you want to add one or more licenses to your existing license group:
 
-Click the `Order more licences`{.action} button on the right. Enter the number and type of licences you would like to order.
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. In the `MICROSOFT` section, click `Microsoft 365`{.action}.
+1. Select the Microsoft 365 service concerned.
+1. Click the `Order more licenses`{.action} button on the right.
+1. Determine the **number** and **license type** you wish to order, then click `Confirm`{.action}.
 
-![office licence](images/Outlook-cps1-05.png){.thumbnail}
+![emails](images/Outlook-cps1-05.png){.thumbnail .w-500}
 
 ### Manage your subscriptions <a name="managesubscriptions"></a>
 
-### Remove a licence in a licence group
+#### Delete a license in a license group
 
-From the `Licences`{.action} tab of your licence group, click on `...`{.action} to the right of the licence you want to cancel, then click `Disable account`{.action}.
+In the `Licenses`{.action} tab of your license group, click the `⁝`{.action} button to the right of the license you want to cancel, then click `Delete account`{.action}.
 
-![office licence](images/Outlook-cps1-06.png){.thumbnail}
-
-> [!primary]
->
-> Consumption for the current month will be charged at the end of the month.
-
-### Cancel licence group
-
-To cancel your Microsoft Office 365 CSP1 license group, click on your name in the top right-hand corner of the OVHcloud Control Panel, then click on the `Manage services`{.action} button. Next, click the `...`{.action} button to the right of the license group you want to terminate, then `Terminate`{.action}.<br>
-Specify the reasons for your termination request, then click `Confirm`{.action}.
+![emails](images/Outlook-cps1-06.png){.thumbnail .w-500}
 
 > [!primary]
 >
-> Consumption for the current month will be charged at the end of the month.
+> Usage for the current month will be billed at the end of the month.
+
+#### Cancel a license group
+
+To terminate your Microsoft Office 365 CSP1 license group:
+
+1. Click on your name in the top right-hand corner of the OVHcloud Control Panel.
+1. Click `My offers and services`{.action}.
+1. Identify your license group in the table for your services.
+1. Click the `...`{.action} button to the right of the license group you want to terminate, then `Terminate`{.action}.
+1. Specify the reasons for your termination request, then click `Confirm`{.action}.
+
+> [!primary]
+>
+> Usage for the current month will be billed at the end of the month.
 
 ## Go further
 
 [Using Remote Desktop with Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).

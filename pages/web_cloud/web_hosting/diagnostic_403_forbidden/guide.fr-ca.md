@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas de page « 403 forbidden » ?"
 excerpt: "Découvrez comment remettre votre site web en ligne s'il affiche une page « 403 forbidden »"
-updated: 2023-06-08
+updated: 2025-05-23
 ---
 
 ## Objectif
@@ -115,14 +115,12 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 > Si vous souhaitez plus de détails concernant les [étapes 2 et 3](#step-2) précédentes, consultez notre tutoriel sur [les actions à réaliser en cas de piratage de votre site web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Étape 4 : réactiver votre hébergement web <a name="reactivate-web-hosting"></a>
+### Étape 4 : réactiver votre hébergement web avec FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
 > Nous vous recommandons de réaliser un audit de sécurité **avant** la réouverture de votre hébergement web. Toute opération malveillante effectuée depuis votre hébergement web peut engager votre responsabilité juridique.
 >
-
-#### Réactiver votre hébergement web avec FileZilla
 
 > [!primary]
 >
@@ -155,28 +153,6 @@ Si la commande ci-dessus ne fonctionne pas, vous pouvez essayer cette autre comm
 ```
 SITE CHMOD 705 .
 ```
-
-#### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
-
-Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche et sélectionnez l'hébergement web concerné. Sélectionnez l'onglet `FTP-SSH`{.action} sur la page qui s'affiche.
-
-Appuyez sur le bouton `FTP Explorer`{.action} et connectez-vous à votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection). 
-
-Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
-
-![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
-
-Dans la partie supérieure de la page, renseignez la commande ci-dessous :
-
-```
-SITE CHMOD 705 /
-```
-
-puis cliquez sur le bouton représentant un « V » vert.
-
-![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
-
-Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site web.
 
 > [!warning]
 >

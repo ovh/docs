@@ -1,7 +1,7 @@
 ---
 title: Zmiana hasła do bazy danych na hostingu
 excerpt: Dowiedz się, jak zmienić hasło do bazy danych utworzonej w ramach pakietu hostingowego
-updated: 2022-01-26
+updated: 2025-05-23
 ---
 
 ## Wprowadzenie 
@@ -51,13 +51,11 @@ W [Panelu klienta OVHcloud](/links/manager) kliknij pozycję `Web Cloud`{.action
 
 ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Następnie kliknij kartę `FTP-SSH`{.action}, a następnie przejdź do przestrzeni zawierającej pliki i foldery Twojej strony (*przestrzeń FTP*) klikając przycisk `FTP Explorer`{.action}.
+Następnie przejdź do przestrzeni zawierającej pliki i foldery Twojej strony WWW (*przestrzeń FTP*), przechodząc do tego [przewodnika](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
 > Jeśli chcesz zmienić hasło do Twojej przestrzeni FTP, zapoznaj się z tym [przewodnikiem](/pages/web_cloud/web_hosting/ftp_change_password).
->
-> Jeśli chcesz zalogować się inną metodą, zapoznaj się z tym [przewodnikiem](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
 Otwórz `Katalog główny`.

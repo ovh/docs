@@ -18,12 +18,12 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 
 ## Wymagania początkowe
 
-- [Instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} utworzona na koncie OVHcloud
-- dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
+- [Instancja Public Cloud](/links/public-cloud/compute) utworzona na koncie OVHcloud
+- dostęp do [Panelu klienta OVHcloud](/links/manager)
 
-## W praktyce> 
+## W praktyce
 
-[!alert]
+> [!alert]
 >
 > Do tej pory tryb Rescue dla instancji Metal nie jest dostępny w panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [trybu Rescue dla instancji Metal](/pages/public_cloud/compute/rescue_mode_metal_instance).
 
@@ -33,11 +33,11 @@ Najpierw zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do 
 
 Następnie kliknij zakładkę `Instancje`{.action} na pasku nawigacji po lewej stronie.
 
-Kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz `Restartuj w trybie ratunkowym`{.action}.
+Kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz `Restartuj w trybie Rescue`{.action}.
 
 ![control panel](images/rescue2022.png){.thumbnail}
 
-Zostanie wyświetlone okno dialogowe “Restart w trybie ratunkowym”. Kliknij listę rozwijaną, aby wybrać dystrybucję systemu Linux do użycia w trybie ratunkowym, a następnie kliknij przycisk `Uruchom ponownie`{.action}.
+Zostanie wyświetlone okno dialogowe “Restartuj do trybu Rescue”. Kliknij listę rozwijaną, aby wybrać dystrybucję systemu Linux do użycia w trybie ratunkowym, a następnie kliknij przycisk `Restart`{.action}.
 
 ![control panel](images/rescue2.png){.thumbnail}
 
@@ -84,17 +84,17 @@ mount /dev/sdb1 /mnt/
 
 Dane będą dostępne w folderze `/mnt`.
 
-### Dezaktywacja trybu ratunkowego
+### Dezaktywacja Rescue mode (trybu ratunkowego)
 
-Po wykonaniu wszystkich zadań można zdezaktywować tryb ratunkowy przez zrestartowanie instancji w trybie normalnym. Aby to zrobić, kliknij strzałkę menu rozwijanego instancji i wybierz pozycję `Wyjdź z trybu ratunkowego`{.action}.
+Po wykonaniu wszystkich zadań można zdezaktywować tryb ratunkowy przez zrestartowanie instancji w trybie normalnym. Aby to zrobić, kliknij strzałkę menu rozwijanego instancji i wybierz pozycję `Wyjdź z trybu Rescue`{.action}.
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
 
 > [!warning]
-> Jeśli przycisk `Wyjdź z trybu ratunkowego`{.action} nie pojawi się po wykonaniu instancji w trybie rescue, zalecamy odświeżenie karty.
+> Jeśli przycisk `Wyjdź z trybu Rescue`{.action} nie pojawi się po wykonaniu instancji w trybie rescue, zalecamy odświeżenie karty.
 >
 
-### Aktywacja trybu ratunkowego przy użyciu interfejsu API OpenStack
+### Aktywacja trybu Rescue przy użyciu interfejsu API OpenStack
 
 Tryb ratunkowy można aktywować także za pośrednictwem interfejsu API OpenStack przy użyciu następującego polecenia:
 
@@ -112,4 +112,4 @@ nova unrescue INSTANCE_ID
 
 [Jak zastąpić parę kluczy SSH na instancji](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

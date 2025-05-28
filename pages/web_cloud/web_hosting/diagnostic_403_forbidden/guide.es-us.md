@@ -1,7 +1,7 @@
 ---
 title: "¿Qué hacer en caso de página 403 forbidden?"
 excerpt: "Descubra cómo volver a publicar un sitio web cuando este muestre la página 403 forbidden"
-updated: 2023-06-09
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -113,14 +113,12 @@ Si su alojamiento ha sido cerrado más de dos semanas antes, contacte con un [pr
 >
 > Si desea más información sobre los [etapas 2 y 3](#step-2) anteriores, consulte nuestro tutorial sobre [las acciones a realizar en caso de pirateo de su sitio web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
-### Etapa 4: reactivar su alojamiento web <a name="reactivate-web-hosting"></a>
+### Etapa 4: reactivar el alojamiento con FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
 > Le recomendamos que realice una auditoría de seguridad **antes de** para reabrir su alojamiento web. Cualquier operación maliciosa efectuada desde su alojamiento web puede conllevar su responsabilidad jurídica.
 >
-
-#### Reactivar el alojamiento con FileZilla
 
 > [!primary]
 >
@@ -153,28 +151,6 @@ Si el comando anterior no funciona, puede utilizar el siguiente comando:
 ```
 SITE CHMOD 705 .
 ```
-
-#### Reactivar el alojamiento con el explorador FTP "net2ftp"
-
-En el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
-
-Pulse el botón `Explorador FTP `{.action} y conéctese a su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
-
-Haga clic en el botón `Avanzado`{.action} y, a continuación, en el botón `Go`{.action} situado junto a "Send arbitrary FTP commands to the FTP server".
-
-![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
-
-Introduzca el siguiente comando en la parte superior de la página:
-
-```
-SITE CHMOD 705 /
-```
-
-y haga clic en el botón con forma de "V" verde.
-
-![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
-
-Una respuesta **"200 Permissions changed on /"** confirma que la operación se ha realizado correctamente. Para comprobarlo, vuelva a intentar acceder al sitio web.
 
 > [!warning]
 >

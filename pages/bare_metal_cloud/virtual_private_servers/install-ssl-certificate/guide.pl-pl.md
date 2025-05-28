@@ -6,7 +6,7 @@ updated: 2025-01-24
 
 ## Wprowadzenie
 
-Bezpieczeństwo strony WWW jest kluczowe, aby chronić wrażliwe dane użytkowników i zwiększyć ich zaufanie. Certyfikat SSL (**S**ecure **S**ockets **L**ayer) umożliwia szyfrowanie danych przesyłanych między użytkownikami i stroną WWW, co zwiększa jej wiarygodność. Niniejszy przewodnik dokumentuje korzystanie z **Let's Encrypt*, darmowej i zautomatyzowanej usługi.
+Bezpieczeństwo strony WWW jest kluczowe, aby chronić wrażliwe dane użytkowników i zwiększyć ich zaufanie. Certyfikat SSL (**S**ecure **S**ockets **L**ayer) umożliwia szyfrowanie danych przesyłanych między użytkownikami i stroną WWW, co zwiększa jej wiarygodność. Niniejszy przewodnik dokumentuje korzystanie z **Let's Encrypt**, darmowej i zautomatyzowanej usługi.
 
 **Dowiedz się, jak zainstalować certyfikat SSL na serwerze VPS od OVHcloud.**
 
@@ -66,7 +66,7 @@ Certbot to narzędzie do automatycznego zarządzania certyfikatami Let's Encrypt
 >>
 >> ```bash
 >> sudo dnf install certbot
->> ``
+>> ```
 
 Upewnij się, że serwer Certbot został poprawnie zainstalowany, uruchamiając następujące polecenie:
 

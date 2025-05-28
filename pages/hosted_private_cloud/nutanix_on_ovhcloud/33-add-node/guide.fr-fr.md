@@ -1,207 +1,194 @@
 ---
-title: "Ajout d'un nœud dans un cluster Nutanix"
-excerpt: 'Ajouter un nœud et valider son bon fonctionnement'
-hidden: true
-updated: 2023-09-14
+title: "Ajouter ou retirer un nœud dans un cluster Nutanix (Scale In/Out)"
+excerpt: "Ajustez dynamiquement votre cluster Nutanix on OVHcloud en ajoutant ou retirant des nœuds via l'espace client ou l'API OVHcloud"
+updated: 2025-05-23
 ---
-
-<style>
- pre {
-     font-size: 14px !important;
- }
- pre.bgwhite {
-   background-color: #fff !important;
-   color: #000 !important;
-   font-family: monospace !important;
-   padding: 5px !important;
-   margin-bottom: 5px !important;
- }
- pre.bgwhite code {
-   background-color: #fff !important;
-   border: solid 0px transparent !important;
-   font-family: monospace !important;
-   font-size: 0.90em !important;
-   color: #000 !important;
- }
- .small {
-     font-size: 0.90em !important;
- }
-</style>
 
 ## Objectif
 
-Les clusters Nutanix sont évolutifs. Il est possible de rajouter des nœuds dans un cluster existant.
-
-**Ce guide vous explique comment ajouter un nœud et valider son bon fonctionnement.**
+Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajouter (scale out)** ou **retirer (scale in)** des nœuds directement depuis l'espace client ou l'API OVHcloud.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](/links/professional-services) ou à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 
 ## Prérequis
 
-- Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/).
-- Être connecté sur le cluster via Prism Central.
-- Un serveur physique prêt à être configuré ajouté dans l'espace client OVHCloud.
+- Un cluster Nutanix hébergé dans votre compte OVHcloud
+- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l’[API OVHcloud](/links/api)
+- Être connecté à l’interface Prism Central
 
 ## Informations techniques
 
-La solution **Nutanix on OVHcloud** permet d'avoir entre 3 et 18 nœuds sur le même cluster.
-
-Il est possible d'ajouter plusieurs nœuds lors de l'expansion du cluster.
-
-Les nœuds à rajouter doivent avoir la même version d'**AOS** que ceux du cluster existant.
+- Votre cluster doit comporter entre **3 et 15 nœuds**
+- Tous les nouveaux nœuds doivent utiliser la **même version d’AOS** que le cluster existant
 
 ## En pratique
 
-### Vérification de la livraison du nœud.
-
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et vérifiez qu'un nœud supplémentaire apparaît bien dans le cluster Nutanix.
-
-![Nouveau Noeud](images/scaleup1.png){.thumbnail}
-
-Vous pouvez également le vérifier via l'API OVHcloud.
-
-Utilisez l'appel API suivant :
-
-> [!api]
->
-> @api {v1} /nutanix GET /nutanix/{serviceName}
->
-
-- `serviceName` : saisissez le nom du cluster
-
-![Nouveau Noeud via APIV6](images/scaleup2.png){.thumbnail}
-
-Le nouveau nœud apparaît avec des IP en 0.0.0.0.
-
-### Installation du Noeud.
-
-Pour installer le nouveau nœud, vous devez modifier les propriété du cluster en faisant un `PUT` sur le cluster.
-
-Pour cela, utilisez l'appel API suivant :
-
-> [!api]
->
-> @api {v1} /nutanix PUT /nutanix/{serviceName}
->
-
-> [!warning]
-> Veillez à décochez la case `redeployCluster`.
-
-Cochez la case `scaleUp`.
-Saisissez les informations suivantes en dessous de **nodes** :
-
-- **ahvip** : Adresse IP de l'hyperviseur du nouveau nœud.
-- **cvmip** : Adresse IP de la CVM du nouveau nœud.
-
-> [!warning]
-> Ces adresses IP ne doivent pas être déjà utilisées et doivent correpondre à votre plan d'adressage.
-
-Vous devez également compléter la version de deployment. Elle peut ne pas correspondre avec la version courante de votre cluster. Cela ne pose pas de problèmes, le nœud sera modifié par le processus d'ajout dans le cluster via Prism Element.
-
-![PUT scaleUp via APIV6](images/scaleup3.png){.thumbnail}
-
-Cliquez sur `Execute`{.action} pour envoyer la requête.
-
-Dans l'onglet « Result », le nouveau nœud apparaît avec la nouvelle adresse IP.
-
-A la fin de l'installation, vous recevrez un email pour vous indiquer que le nœud est prêt.
-
-<pre class="bgwhite"><code>
-Dear Customer,
-
-Your server has just been installed.
-
-You must now add it back to your Nutanix cluster by connecting to Prism Central: https://cluster-xxxx.nutanix.ovh.net:9440
-
-We remain at your disposal for any further information.
-
-The OVHcloud Team
-</code></pre>
-
-### Ajout d'un nœud dans un cluster Nutanix.
-
-Connectez-vous à **Prism Element** au travers de **Prism Central**.
-
-Pour plus d'informations sur la connexion au cluster, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
-
-Sur le tableau de bord, les 3 nœuds sont visibles dans `Hardware Summary`. Cliquez sur `View Details`{.action} au milieu à gauche pour faire apparaître plus de détails.
-
-![Display dashboard before Expansion](images/DisplayDashboardBefore.PNG){.thumbnail}
-
-Une vue plus détaillée est affichée avec des informations comme l'espace total et la capacité de résilience du stockage.<br>
-Cliquez sur `Close`{.action} pour fermer cette fenêtre.
-
-![Cluster detail before Expansion](images/ClusterDetailBFromDashboard.PNG){.thumbnail}
-
-Ouvrez le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse du cluster avant le rajout du nœud.
-
-![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}
-
-Cliquez en haut à droite sur `Actions`{.action} et choisissez `Run NCC Check`{.action}.
-
-![NCC check before Expansion 02](images/CheckBeforeAdd02.PNG){.thumbnail}
-
-Cliquez sur `Run`{.action} pour lancer un contrôle et attendez que l'opération soit terminée.
-
-![NCC check before Expansion 03](images/CheckBeforeAdd03.PNG){.thumbnail}
-
-Après le contrôle, cliquez sur l'icône `Engrenage`{.action} en haut à droite pour modifier les paramètres.
-
-![Add Node 01](images/AddNode01.PNG){.thumbnail}
-
-Cliquez sur `Expand Cluster`{.action}.
-
-![Add Node 02](images/AddNode02.PNG){.thumbnail}
-
-Cochez la case à coté de l'hôte découvert afin de faire apparaître les détails du nœud.
-
-![Add Node 03](images/AddNode03.PNG){.thumbnail}
-
-Faites défiler la barre de défilement pour voir les options.
-
-![Add Node 04](images/AddNode04.PNG){.thumbnail}
-
-Continuez le défilement jusqu'en bas de la fenêtre et cliquez sur `Next`{.action}.
-
-![Add Node 05](images/AddNode05.PNG){.thumbnail}
-
-Choisissez le Rack dans `Assign to Rack` et cliquez sur `Next`{.action}.
-
-![Add Node 06](images/AddNode06.PNG){.thumbnail}
-
-Cliquez sur `Expand Cluster`{.action}.
-
-![Add Node 07](images/AddNode07.PNG){.thumbnail}
-
-Cliquez sur `Open`{.action} pour voir le détail de l'expansion du cluster.
-
-![Add Node 08](images/AddNode08.PNG){.thumbnail}
-
-![Add Node 09](images/AddNode09.PNG){.thumbnail}
-
-L'ajout du nœud est terminée lorsque la progression de *Expanding Cluster* est à 100%.
-
-![Add Node 10](images/AddNode10.PNG){.thumbnail}
-
-Quatre nœuds sont visibles dans `Hardware Summary`, cliquez sur `View Details`{.action} pour afficher plus d'informations.
-
-![Display dashbord after expansion](images/DisplayDashboardAfter.PNG){.thumbnail}
-
-Cliquez sur `Close`{.action} pour revenir au tableau de bord.
-
-![Cluster detail after Expansion](images/ClusterDetailAfterFromDashboard.PNG){.thumbnail}
-
-## Aller plus loin <a name="gofurther"></a>
-
-[Hyper-convergence Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/03-nutanix-hci)
-
-[Guide Nutanix d'ajout de nœuds](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-cluster-expand-wc-t.html)
-
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+### Scale Out (ajouter un nœud)
+
+#### Ajouter un nœud
+
+1. Depuis l'[espace client OVHcloud](/links/manager), accédez à votre cluster Nutanix via les menus `Hosted Private Cloud`{.action} et `Nutanix`{.action}.
+
+    ![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
+
+2. Dans l’onglet **Informations générales**, la section **Nombre de noeuds** est visible. Cliquez sur `Gérer mes noeuds`{.action}.
+
+    ![Nombre de nœuds](images/manage-nodes.png){.thumbnail}
+
+3. Dans l’onglet **Noeuds**, sélectionnez `Ajouter des noeuds`{.action}.
+
+    ![Ajouter des nœuds](images/adding-nodes-03.png){.thumbnail}
+
+4. Vérifiez la configuration et le tarif dans la fenêtre contextuelle, puis cliquez sur `Commander`{.action} pour lancer l’ajout.
+
+    ![Fenêtre commande](images/adding-nodes-04.png){.thumbnail}
+
+Une fois le nœud livré, son statut s’affiche dans l’onglet **Informations générales**.
+
+La zone **Nombre de noeuds** indiquera qu’un nouveau nœud est prêt à être installé.
+
+![Nouveau nœud à installer](images/adding-nodes-05.png){.thumbnail}
+
+#### Installer un système d’exploitation (OS)
+
+> [!tabs]
+> Espace client OVHcloud
+>> Si vous cliquez à nouveau sur `Gérer mes noeuds`{.action}, vous verrez la liste des nœuds. Pour tout nœud avec le statut **OS not installed**, cliquez sur le bouton `...`{.action} et sélectionnez `Installer`{.action}.
+>>
+>> ![Statut du nœud](images/install-os-01.png){.thumbnail}
+>>
+>> Saisissez les paramètres de configuration du nœud. Veillez à installer la même version d'AOS que votre cluster.
+>>
+>> Cliquez sur `Install`{.action}.
+>>
+>> ![Formulaire installation](images/install-os-02.png){.thumbnail}
+>>
+>> Une bannière de confirmation apparaîtra.
+>>
+>> ![Confirmation](images/install-os-03.png){.thumbnail}
+>>
+> API OVHcloud
+>> Pour installer le nœud via l’[API OVHcloud](/links/api){.external}, utilisez l’appel suivant :
+>>
+>> > [!api]
+>> > @api {v1} /nutanix PUT /nutanix/{serviceName}/nodes/{server}/deploy
+>> >
+>>
+
+Une fois le nœud installé, vous pouvez vous connecter à Prism Central ou Prism Element pour l’intégrer au cluster.
+
+Consultez la documentation suivante :
+
+- [Étendre un cluster via Prism Central](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_3_1:mul-node-add-pc-t.html)
+- [Étendre un cluster](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_0:wc-cluster-expand-wc-t.html)
+
+### Scale In (retirer un nœud)
+
+#### Éteindre (power down) un nœud
+
+1. Depuis l'[espace client OVHcloud](/links/manager), accédez à votre cluster Nutanix via les menus `Hosted Private Cloud`{.action} et `Nutanix`{.action}.
+
+    ![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
+
+2. Dans l’onglet **General information**, vous pouvez voir le nombre de nœuds. Cliquez sur `Gérer mes noeuds`{.action}.
+
+    ![Manage my nodes](images/manage-nodes.png){.thumbnail}
+
+3. Deux options s’offrent à vous :
+
+> [!tabs]
+> Espace client OVHcloud
+>> Pour le nœud à retirer, cliquez sur le bouton `...`{.action} puis sélectionnez `Eteindre`{.action}.
+>>
+>> ![Éteindre un nœud](images/powerdown-nodes-01.png){.thumbnail}
+>>
+>> Une fenêtre d’avertissement s’ouvrira. Saisissez le terme demandé et cliquez sur `Eteindre`{.action}.
+>>
+>> > [!primary]
+>> > L’arrêt d’un nœud Nutanix peut avoir un impact sur votre cluster. Consultez les [prérequis sur le portail Nutanix](https://portal.nutanix.com/page/documents/list?type=software) avant de poursuivre.
+>> >
+>>
+>> ![Alerte arrêt](images/powerdown-nodes-02.png){.thumbnail}
+>>
+>> Une bannière de confirmation apparaîtra.
+>>
+>> ![Confirmation arrêt](images/powerdown-nodes-03.png){.thumbnail}
+>>
+> API OVHcloud
+>> Vous pouvez également arrêter un nœud via l’[API OVHcloud](/links/api).
+>>
+>> - Récupérez le Boot ID (saisissez *power* comme valeur pour **bootType**) :
+>>
+>> > [!api]
+>> > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/boot
+>> >
+>>
+>> - Définissez le Boot ID :
+>>
+>> > [!api]
+>> > @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
+>> >
+>>
+>> - Éteignez le nœud :
+>>
+>> > [!api]
+>> > @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/reboot
+>> >
+>>
+
+#### Désinstaller le nœud
+
+> [!tabs]
+> Espace client OVHcloud
+>> Une fois le nœud éteint, cliquez sur le bouton `...`{.action} puis sélectionnez `Désinstaller`{.action}.
+>>
+>> ![Bouton désinstaller](images/remove-nodes-01.png){.thumbnail}
+>>
+>> Une fenêtre d’avertissement apparaîtra. Saisissez le terme requis et cliquez sur `Désinstaller`{.action}.
+>>
+>> > [!primary]
+>> > La désinstallation d’un nœud Nutanix peut avoir un impact sur votre cluster. Consultez les [prérequis sur le portail Nutanix](https://portal.nutanix.com/page/documents/list?type=software) avant de poursuivre.
+>> >
+>>
+>> ![Alerte désinstallation](images/remove-nodes-02.png){.thumbnail}
+>>
+>> Une bannière de confirmation apparaîtra.
+>>
+>> ![Confirmation désinstallation](images/remove-nodes-03.png){.thumbnail}
+>>
+> API OVHcloud
+>>
+>> Pour désinstaller un nœud via l’[API OVHcloud](/links/api){.external}, utilisez l’appel suivant :
+>>
+>> > [!api]
+>> > @api {v1} /nutanix POST /nutanix/{serviceName}/node/{server}/terminate
+>> >
+>>
+
+#### Supprimer le nœud
+
+Une fois le nœud désinstallé, cliquez sur le bouton `...`{.action} puis sélectionnez `Résilier`{.action}.
+
+![Supprimer le nœud](images/remove-nodes-04.png){.thumbnail}
+
+Une fenêtre d’avertissement apparaîtra. Saisissez le terme requis puis cliquez sur `Confirmer`{.action}.
+
+> [!primary]
+> Le service suspendu restera visible dans la liste des nœuds pendant environ une semaine avant suppression définitive. Vous pouvez annuler la suppression pendant ce délai.
+
+## Aller plus loin
+
+Pour aller plus loin, vous pouvez consulter :
+
+[Nutanix Hyperconvergence](/pages/hosted_private_cloud/nutanix_on_ovhcloud/03-nutanix-hci)
+
+[Guide d’ajout de nœud Nutanix](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_0:wc-cluster-expand-wc-t.html)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
+
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

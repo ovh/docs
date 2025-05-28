@@ -1,7 +1,7 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Wprowadzenie 
@@ -33,7 +33,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli opcja CDN nie jest zamówiona lub włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
 
 > [!primary]
 > 
@@ -53,7 +53,7 @@ Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a nast
 
 > [!warning]
 > 
-> W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.<br>
+> W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.
 > Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
  
 **Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?**
@@ -157,7 +157,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 > [!primary]
 >
-> Po włączeniu funkcji HSTS na Twojej stronie, zmusi ona protokół HTTPS do Twojej przeglądarki aż do końca tzw. "wieku maksymalnego", nawet po wyłączeniu funkcji w Panelu klienta. Jeśli pamięć podręczna jest usuwana z przeglądarki, która już przeprowadziła wizytę na Twojej stronie WWW, strona ta zastosuje nowy stan funkcji HSTS.
+> Po włączeniu funkcji HSTS na Twojej stronie, zmusi ona protokół HTTPS do Twojej przeglądarki aż do końca tzw. „wieku maksymalnego”, nawet po wyłączeniu funkcji w Panelu klienta. Jeśli pamięć podręczna jest usuwana z przeglądarki, która już przeprowadziła wizytę na Twojej stronie WWW, strona ta zastosuje nowy stan funkcji HSTS.
 
 - **Mixed content**: Wymuś załadowanie całej zawartości stron www w bezpieczny sposób, przyczyniając się tym samym do optymalnego doświadczenia użytkownika. Wszystkie zasoby Twojej strony WWW, zarówno wewnętrzne, jak i zewnętrzne, muszą być dostępne za pomocą protokołu HTTPS, aby uniknąć błędu w zakresie bezpieczeństwa przeglądarki.
 
@@ -183,7 +183,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 - **Prefetch**: Przewiduj załadowanie tego zasobu. Prześlij ją automatycznie do pamięci cache CDN za pomocą *header link* Twojej strony WWW. Mechanizm ten jest używany przede wszystkim do ładowania CSS, JavaScript, zdjęć, plików wideo lub czcionek www, które są wymagane przez motyw strony internetowej. 
 
-	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej "Hi", zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
+	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej „Hi”, zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
 
 	```	
 	<?php
@@ -192,7 +192,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 	?> 
 	```
 
-- **Telefon komórkowy**:  Przekieruj automatycznie użytkowników "Mobile" na zoptymalizowaną stronę www. Do wyboru: systematycznie przekierowywać stronę główną innej strony lub zachować adres URL, zastępując tylko domenę (lub subdomenę).
+- **Telefon komórkowy**: Przekieruj automatycznie użytkowników „Mobile” na zoptymalizowaną stronę www. Do wyboru: systematycznie przekierowywać stronę główną innej strony lub zachować adres URL, zastępując tylko domenę (lub subdomenę).
 
 - **Czyszczenie zaawansowane**: Spersonalizuj wyczyszczenie, wybierając elementy pamięci cache, które chcesz opróżnić: cała strona, folder, URI, rozszerzenie plików lub za pomocą regularnych ustawień. 
 
@@ -229,13 +229,13 @@ W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
 * **Nazwa reguły**: Nadaj nazwę swojej regule.
 * **Rodzaj zasobów**: Wybierz spośród poniższych opcji:
-    * **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład css
-    * **Dokumentacja**:  Wprowadź prawidłową ścieżkę dla jednego z katalogów znajdujących się w katalogu głównym Twojej strony WWW.
+    * **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład CSS
+    * **Dokumentacja**: Wprowadź prawidłową ścieżkę dla jednego z katalogów znajdujących się w katalogu głównym Twojej strony WWW.
     * **Regularne spersonalizowane**: wyrażenie: Dotyczy ona wszystkich URI Twojej strony WWW.
     * **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL.
 * **Zasoby**: definiuj atrybuty według wybranego typu zasobów.
 * **Czas trwania**: Wskaż czas przechowywania wybranego zasobu w pamięci cache.
-* **Klasyfikacja**:  Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
+* **Klasyfikacja**: Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
 
 Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 
@@ -245,42 +245,9 @@ Reguły znajdują się na liście. Możesz zmienić regułę klikając `...`{.ac
 
 Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwierdź konfigurację`{.action} w następnym oknie.
 
-### Wyświetl statystyki usługi CDN
+### Wyświetl statystyki i logi usługi CDN
 
-Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **6** etapy.
-
-> [!tabs]
-> **Etap 1**
->>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Etap 3**
->>
->> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
->>
-> **Etap 4**
->>
->> W sekcji `Statystyki odwiedzin na stronie` kliknij przycisk `Wyświetl statystyki`{.action}.
->>
-> **Etap 5**
->>
->> Zostaniesz przekierowany do narzędzia **OVHcloud Web Statistics**. W tym narzędziu kliknij na formularz `Wybór domeny`{.action} znajdujący się na górze strony, następnie wybierz nazwę domeny, dla której aktywny jest CDN.
->>
-> **Etap 6**
->>
->> W prawej kolumnie kliknij zakładkę `Cache`{.action}.
->>
->> Teraz wyświetlasz statystyki usługi CDN dla swojej domeny.
->>
->> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem "[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)".
+Aby wyświetlić statystyki i/lub logi usługi CDN, zapoznaj się z naszym przewodnikiem: „[Hosting WWW - Sprawdzanie statystyk i logów CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)”.
 
 ### Jak przenieść pliki do pamięci cache w usłudze GeoCache?
 
@@ -320,7 +287,7 @@ Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w o
 >
 > W przeciwnym razie należy wykonać następujące dwa działania:
 >
-> - uzyskaj domyślny adres IP **klastra**, w którym znajduje się Twój hosting, korzystając z naszego przewodnika "[Hosting WWW: adresy IP klastrów OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)";
+> - uzyskaj domyślny adres IP **klastra**, w którym znajduje się Twój hosting, korzystając z naszego przewodnika „[Hosting WWW: adresy IP klastrów OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”;
 > - ręcznie zmień adres IP w aktywnej strefie DNS Twojej domeny lub skontaktuj się z dostawcą strefy DNS, aby zaktualizował się za Ciebie.
 >
 > Modyfikacja wpisu w aktywnej strefie DNS domeny wiąże się z opóźnieniem propagacji wynoszącym **4** do **24** godzin, zanim wejdzie on w życie. W tym czasie może pojawić się losowo strona z kodem **520**. Zjawisko to jest związane z faktem, że niektóre części sieci DNS nadal przekierowują zapytania na adres IP usługi CDN powiązanej z Twoim hostingiem.
@@ -328,7 +295,7 @@ Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w o
 
 Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
 
-Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+Usuń zaznaczenie opcji „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
 ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
 
@@ -336,7 +303,7 @@ Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a
 
 Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Rezygnacja z GeoCache`{.action}.
 
 ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
 

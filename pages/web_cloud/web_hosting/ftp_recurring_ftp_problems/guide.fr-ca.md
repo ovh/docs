@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP"
 excerpt: "Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP"
-updated: 2022-01-05
+updated: 2025-05-23
 ---
 
 ## Objectif
@@ -81,7 +81,7 @@ Ce lien est installé par défaut sur les hébergements mutualisés OVHcloud. Il
 
 ![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
-Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » pour créer votre site, vous devrez utiliser le logiciel [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-connexion-via-le-ftp-explorer) accessible via l'[espace client OVHcloud](/links/manager) afin de supprimer manuellement la page « Site en construction ».
+Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » pour créer votre site, vous devrez vous [connecter à l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web afin de supprimer manuellement la page « Site en construction ».
 
 ## Aller plus loin <a name="go-further"></a>
 

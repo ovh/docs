@@ -1,7 +1,7 @@
 ---
 title: "Restoring your Web Hosting plan’s storage space"
 excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
-updated: 2023-12-04
+updated: 2025-05-23
 ---
 
 ## Objective
@@ -128,11 +128,7 @@ First of all, decide which software or interface you would like to use in order 
 
 - **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](/links/manager){.external}. Once you have logged in, click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
-
 Once you are ready to start making changes, continue to the next step.
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### Step 2: Connect to your backup.
 
@@ -154,9 +150,7 @@ You will need to enter your primary username (or FTP login) with a suffix determ
 
 Please ensure that you replace ‘ftpuser’ with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
 
-The method for connecting to your storage space will differ depending on the interface or software you are using. Below, we have included an image showing how to connect via the FTP Explorer interface.
-
-![backupftp](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
+The method for connecting to your storage space will differ depending on the interface or software you are using.
 
 #### Step 3: Gather the files you want to restore.
 
@@ -166,9 +160,7 @@ Before you move on to the next step, ensure that you have gathered all the files
 
 > [!success]
 >
-> If you are using the **FTP Explorer** interface, please refer to the [help page](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} to recover your files correctly. You can also access this page via the `Help`{.action} button at the bottom of the interface for connecting to the **FTP Explorer**.
->
-> If you use another program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
+> If you use a program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
 >
 
 #### Step 4: Restore the files.
@@ -179,9 +171,7 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 > [!success]
 >
-> If you are using the **FTP Explorer** interface, please refer to the [help page](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} to restore your files correctly. You can also access this page via the `Help`{.action} button at the bottom of the interface for connecting to the **FTP Explorer**.
->
-> If you use another program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
+> If you use a program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
 >
 
 ## Go further

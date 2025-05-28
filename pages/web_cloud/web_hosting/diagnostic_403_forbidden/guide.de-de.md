@@ -1,7 +1,7 @@
 ---
 title: Was tun bei dem Fehler "403 forbidden"?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn “403 forbidden“ angezeigt wird
-updated: 2023-06-09
+updated: 2025-05-23
 ---
 
 ## Ziel 
@@ -115,14 +115,12 @@ Wenn Ihr Hosting vor mehr als zwei Wochen gesperrt wurde, kontaktieren Sie einen
 > Wenn Sie weitere Informationen zu den [Schritten 2 und 3](#step-2) benötigen, lesen Sie unsere Hilfe zu [Aktionen wenn Ihre Website von einem Hack betroffen ist](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Schritt 4: Webhosting wieder aktivieren <a name="reactivate-web-hosting"></a>
+### Schritt 4: Ihr Webhosting mit FileZilla reaktivieren <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
 > Wir empfehlen Ihnen, eine Sicherheitsüberprüfung durchzuführen **bevor** Sie die Reaktivierung Ihres Webhostings anstoßen. Sie können rechtlich auch ohne Vorsatz verantwortlich sein, wenn schädlicher Code von Ihrem Webhosting aus verbreitet wird.
 >
-
-#### Ihr Webhosting mit FileZilla reaktivieren
 
 > [!primary]
 >
@@ -155,28 +153,6 @@ Wenn der oben stehende Befehl nicht funktioniert, versuchen Sie den folgenden Be
 ```
 SITE CHMOD 705.
 ```
-
-#### Ihr Webhosting mit dem FTP-Explorer (“net2ftp“) reaktivieren
-
-Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und öffnen Sie `Hosting-Pakete`{.action} im linken Menü. Wechseln Sie zum Tab `FTP-SSH`{.action} des betroffenen Hostings.
-
-Klicken Sie auf den Button `FTP-Explorer`{.action} und [loggen Sie sich in Ihren FTP-Speicherplatz ein](/pages/web_cloud/web_hosting/ftp_connection). 
-
-Klicken Sie auf `Erweitert`{.action} und dann auf den Button `Weiter`{.action} neben "**Sende benutzerdefinierte FTP-Kommandos zum FTP-Server**".
-
-![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
-
-Geben Sie im oberen Bereich der Seite den folgenden Befehl ein:
-
-```
-SITE CHMOD 705 /
-```
-
-Klicken Sie dann auf den grünen "Haken".
-
-![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
-
-Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteger um diretório ou a interface de administração do seu website por ficheiros .htaccess e .htpasswd"
 excerpt: "Descruba como proteger um diretório ou o acesso à administração do seu website através de uma autenticação com os ficheiros .htaccess e .htpasswd"
-updated: 2024-04-17
+updated: 2025-05-23
 ---
 
 ## Objetivo
@@ -70,11 +70,7 @@ Ligue-se ao [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 Crie um ficheiro "crypt.php" nesta "pasta raiz".
 
-![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
-
 Abra ou crie a pasta destinada a ser protegida do seu website. No nosso exemplo, trata-se do dossier "admin". Crie neste diretório um ficheiro ".htpasswd" e um ficheiro ".htaccess".
-
-![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 Para utilizar corretamente os ficheiros ".htaccess" e ".htpasswd", deve conhecer e respeitar as seguintes regras: 
 

@@ -1,7 +1,7 @@
 ---
 title: "Cycle de vie de la solution VMware on OVHcloud"
 excerpt: "VMware on OVHcloud"
-updated: 2025-04-24
+updated: 2025-05-28
 ---
 
 > [!warning]
@@ -99,7 +99,7 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 |                DC2016 (AMD PileDriver)                |          2016          |  2018-11-30  |  2022-02-28   | 2022-09-30  |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016          |  2017-04-30  |  2026-03-30   | 2027-07-31  |
 |              SDDC2018 (Intel Broadwell)               |          2018          |  2018-11-30  |  2026-03-30   | 2027-07-31  |
-|             Essentials (Intel Broadwell)              |          2020          |  2025-09-30  |  2026-03-30   | 2027-07-31  |
+|             Essentials (Intel Broadwell)              |          2020          |  2025-11-30  |  2026-03-30   | 2027-07-31  |
 |               Premier (Intel Xeon Gold)               |          2020          |  2025-11-30  |              |               |
 |                Premier v2 (Intel Emerald Rapids)               |          2025          |              |               |             |
 

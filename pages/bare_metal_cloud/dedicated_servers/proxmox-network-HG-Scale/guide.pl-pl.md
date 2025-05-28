@@ -11,6 +11,12 @@ updated: 2024-09-27
 > Older Advance generation servers do not rely on the same network infrastructure.
 >
 
+> [!warning]
+>
+> As of May 2025, virtual MACs can be used on High Grade & Scale ranges.
+>
+> If you want to use virtual MACs to configure the network on Proxmox VE on High Grade and Scale servers, you can refer to [Configuring Additional IP in bridge mode on your virtual machines](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
+
 ## Objective
 
 **Find out two ways to configure an _additional IP_ on Proxmox VE: via the public interfaces and via the private interfaces (vRack).**

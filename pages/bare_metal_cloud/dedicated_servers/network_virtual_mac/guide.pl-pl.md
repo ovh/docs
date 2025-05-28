@@ -1,7 +1,7 @@
 ---
 title: 'Przypisanie wirtualnego adresu MAC do Additional IP'
 excerpt: 'Dowiedz się, jak utworzyć wirtualny adres MAC i jak powiązać go z Additional IP'
-updated: 2024-12-13
+updated: 2025-05-16
 ---
 
 ## Wprowadzenie
@@ -22,7 +22,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 >
 > - Serwery Advance trzeciej generacji (wyposażone w procesory EPYC 4004 Series) obsługują 32 różne sieci vMAC.
 >
-> - Funkcja ta będzie dostępna w ofercie Scale i High Grade w roku 2025.
+> - Od maja 2025 funkcja ta jest dostępna w ofercie Scale i High Grade.
 
 > [!primary]
 > Jeśli nie jesteś zaznajomiony z korzystaniem z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps).

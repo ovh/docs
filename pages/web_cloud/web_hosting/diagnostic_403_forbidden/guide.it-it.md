@@ -1,7 +1,7 @@
 ---
 title: Cosa fare in caso di pagina "403 forbidden"?
 excerpt: Questa guida ti mostra come caricare il tuo sito online su una pagina "403 forbidden"
-updated: 2023-06-09
+updated: 2025-05-23
 ---
 
 ## Obiettivo
@@ -115,14 +115,12 @@ Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provide
 > Per maggiori informazioni sui [step 2 e 3](#step-2), consulta la nostra guida su [le azioni da effettuare in caso di hacking del tuo sito Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
-### Step 4: riattivare il tuo hosting Web <a name="reactivate-web-hosting"></a>
+### Step 4: riattiva il tuo hosting con FileZilla <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
 > Ti consigliamo di effettuare un audit di sicurezza **prima** della riapertura del tuo hosting. L'invio del codice malevolo dal tuo hosting può impegnare la tua responsabilità legale.
 >
-
-#### Riattiva il tuo hosting con FileZilla
 
 > [!primary]
 >
@@ -155,28 +153,6 @@ Se il comando qui sotto non funziona, prova utilizzando l'altro comando:
 ```
 SITE CHMOD 705 .
 ```
-
-#### Riattiva il tuo hosting con FTP Explorer "net2ftp"
-
-Nello [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}, poi `Hosting`{.action} e clicca sulla scheda `FTP-SSH`{.action} dell'hosting in questione.
-
-Clicca su `FTP Explorer`{.action} e accedi al tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
-
-Clicca sul pulsante `Funzioni avanzate`{.action} e poi sul pulsante `Esegui`{.action} accanto a "Send arbitrary FTP commands to the FTP server".
-
-![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
-
-Nella parte superiore della pagina, inserisci questo comando:
-
-```
-SITE CHMOD 705 /
-```
-
-Clicca su "V" verde.
-
-![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
-
-Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
 > [!warning]
 >

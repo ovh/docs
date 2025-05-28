@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z hostingiem Cloud Web"
 excerpt: "Dowiedz się, jak rozpocząć korzystanie z hostingu Cloud Web"
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Wprowadzenie
@@ -42,11 +42,13 @@ Aktualnie dostępne języki to:
 - Python
 - Ruby
 
-Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action} na pasku usług po lewej stronie, a następnie wybierz nazwę odpowiedniego hostingu Cloud Web. Teraz przejdź do zakładki `Framework`{.action}.
+Aby uzyskać dostęp do frameworków Twojego hostingu [Cloud Web](/links/web/hosting-cloud-web-offer), zaloguj się do [Panelu klienta OVHcloud](/links/manager). Kliknij `Web Cloud`{.action} na pasku usług po lewej stronie, a następnie `Hosting`{.action}. Wybierz nazwę odpowiedniego hostingu Cloud Web i przejdź do zakładki `Frameworki`{.action}.
 
 Framework jest automatycznie tworzony podczas instalacji hostingu. Oznaczony jest jako `Wybór domyślny` w tabeli, która się wyświetli. Aby zmodyfikować wcześniej skonfigurowany framework, kliknij trzy kropki po jego prawej stronie, a następnie `Modyfikuj`{.action}. 
 
-Możesz również dodawać frameworki, jeśli pozwala na to wybrana oferta [Cloud Web](/links/web/hosting-cloud-web-offer). W tym celu kliknij przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}. Pamiętaj, że maksymalna liczba frameworków zależy od oferty Cloud Web, którą zamówiłeś.
+Jeśli dysponujesz pakietem [Cloud Web](/links/web/hosting-cloud-web-offer) z 2 vCores, możesz dodać drugi framework do Twojej oferty (maksymalnie 2 różne frameworki w jednej ofercie), klikając przycisk `Operacje`{.action}, a następnie `Dodaj framework`{.action}.
+
+Aby sprawdzić, czy w ramach hostingu Cloud Web dysponujesz 2 vCores, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Na stronie, która się wyświetla, w ramce **Abonament** i pod napisem `Pakiet` sprawdź, czy jest tam wskazany numer `Cloud Web 3`{.action}.
 
 Zanim przejdziesz do kolejnych kroków, upewnij się, że posiadasz framework lub frameworki niezbędne do Twojego projektu.
 

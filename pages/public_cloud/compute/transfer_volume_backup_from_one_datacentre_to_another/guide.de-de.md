@@ -4,13 +4,9 @@ excerpt: Erfahren Sie hier, wie Sie das Backup eines Volumes von einer OpenStack
 updated: 2024-01-11
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
-Es kann vorkommen, dass Sie zusätzliche Volumes von einer OpenStack-Region in eine andere verschieben müssen; etwa weil Sie in einer neuen OpenStack-Region operieren möchten, oder weil Sie von [OVHcloud Labs](https://labs.ovh.com/) in die [Public Cloud](https://www.ovh.com/de/public-cloud/instances/) migrieren möchten.
+Es kann vorkommen, dass Sie zusätzliche Volumes von einer OpenStack-Region in eine andere verschieben müssen; etwa weil Sie in einer neuen OpenStack-Region operieren möchten, oder weil Sie von [OVHcloud Labs](https://labs.ovh.com/) in die [Public Cloud](/links/public-cloud/compute) migrieren möchten.
 
 **Diese Anleitung erklärt, wie Sie ein Volume-Backup von einer OpenStack-Region in eine andere übertragen.**
 
@@ -194,4 +190,6 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+[Backup einer Instanz herunterladen von einer OpenStack-Region in eine andere übertragen](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
+
+Treten Sie unserer [User Community](/links/community) bei.

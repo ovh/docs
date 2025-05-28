@@ -1,7 +1,7 @@
 ---
 title: Capacités techniques
 excerpt: 'Retrouvez les capacités et limitations techniques des solutions Managed Bare Metal fournies par OVHcloud'
-updated: 2020-10-27
+updated: 2025-05-20
 ---
 
 ## Objectif
@@ -28,6 +28,7 @@ updated: 2020-10-27
 | Nombre max. de tunnels VPN IPSec | Nombre max. de tunnels VPN par edge | 512 compact edge<br>1600 large edge<br>4096 quad large edge<br>6000 extra large edge |
 | Nombre max. de vRack par vDC | Nombre max. de réseaux privés par Virtual Data Center (VDC) | 1 |
 | Nombre max. de clients VPN L2 | Nombre de clients VPN à connecter | 5 |
+| TPM (Trusted Platform Module) | Possibilité de sécuriser les VMs grâce au TPM en protégeant les clés de chiffrement | Non supporté |
 
 ## Aller plus loin
 

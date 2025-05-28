@@ -1,7 +1,7 @@
 ---
 title: Ativar as ligações Active Directory Federation Services (AD FS) SSO com a sua conta OVHcloud
 excerpt: "Saiba como associar o seu serviço Active Directory Federation Services (AD FS) à sua conta OVHcloud via SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Objetivo
@@ -121,17 +121,13 @@ Uma vez terminada a tabela de correspondências, o seu serviço AD FS confia ago
 
 A adição do AD FS como fornecedor de identidade de confiança pode ser efetuada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), onde poderá fornecer os metadados do fornecedor de identidade.
 
-Na barra lateral, clique em `Identidade, Segurança e Operações` {.action} e, a seguir, em `Identity & Access Management`{.action}.
+Na barra lateral, clique em `Identidade, Segurança e Operações`{.action} e, a seguir, em `Identidades`{.action}.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-De seguida, clique no separador `Identidades`{.action} para aceder à gestão dos utilizadores locais.
+Clique no separador `SSO`{.action} e no botão `Ligação SSO`{.action}.
 
 ![Para aceder ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Clique no botão `SSO connection`{.action}.
-
-![A ligação SSO da OVHcloud etapa 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Insira os metadados XML do seu serviço AD FS. O campo `Nome do atributo do grupo` é facultativo neste caso. Clique em `Confirmar`{.action}.
 
@@ -186,7 +182,7 @@ Também pode verificar isto na secção SAML:
 
 Isto significa que deve adicionar o grupo `manager@<my-domain>.com` à sua conta OVHcloud ligando-lhe um papel. Caso contrário, a sua conta OVHcloud não sabe o que o utilizador pode fazer.
 
-Adicione-o ao clicar no botão `Declarar um grupo`{.action} e preencher os campos:
+Para adicionar este grupo, aceda à secção `Identidades`{.action} e aceda ao separador `Grupos de utilizadores`{.action}. Clique então no botão `Declarar um grupo`{.action}, introduza o nome do grupo e selecione o privilégio associado:
 
 ![Grupos de gestão dos utilizadores AD FS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 

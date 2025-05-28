@@ -24,7 +24,7 @@ Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans l
 
 Cliquez sur `Instances`{.action} dans le menu de gauche. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Cette page liste l'ensemble de vos instances Public Cloud et certaines de leurs propriétés :
 

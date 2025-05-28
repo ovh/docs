@@ -1,7 +1,7 @@
 ---
 title: Modificare la password del database di un hosting Web
 excerpt: Scopri come modificare la password di un database creata nell'ambito di un piano di hosting Web
-updated: 2022-01-26
+updated: 2025-05-23
 ---
 
 ## Obiettivo
@@ -51,13 +51,11 @@ Nello [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action} 
 
 ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Clicca sulla scheda `FTP-SSH`{.action} e poi clicca sul pulsante `FTP Explorer`{.action} per accedere allo spazio contenente i file e le cartelle del tuo sito (*spazio FTP*).
+A questo punto è sufficiente accedere allo spazio contenente i file e le cartelle del sito (*spazio FTP*) consultando questa [guida](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
 > Per modificare la password del tuo spazio FTP, consulta questa [guida](/pages/web_cloud/web_hosting/ftp_change_password).
->
-> Per connetterti con un altro metodo, consulta questa [guida](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
 Apri la `Cartella di root` identificata sopra.

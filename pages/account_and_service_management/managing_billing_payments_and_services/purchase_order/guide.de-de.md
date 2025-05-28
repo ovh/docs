@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Ziel
 
-In dieser Anleitung erfahren Sie, wie Sie die Bestellnummer bzw. Purchase Order Nummer für die OVHCloud Abrechnung verwenden.
+In dieser Anleitung erfahren Sie, wie Sie die Bestellnummer bzw. Purchase Order Nummer für die OVHcloud Abrechnung verwenden.
 
 ## In der praktischen Anwendung
 

@@ -10,10 +10,10 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | Roles |
 | --- |
-|R : Is in charge of carrying out the process|
-|A : Accountable for the successful completion of the process|
-|C : Is consulted during the process|
-|I : Is informed of the results of the process|
+|R: Is in charge of carrying out the process|
+|A: Accountable for the successful completion of the process|
+|C: Is consulted during the process|
+|I: Is informed of the results of the process|
 
 ### 1. Before subscription
 
@@ -31,7 +31,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Produce, route, deliver and maintain physical Instances and hosting buldings | I | RA |
+| Produce, route, deliver and maintain physical Instances and hosting buildings | I | RA |
 
 #### 2.2. Reversibility model
 
@@ -55,7 +55,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage data security hosted on the service (confidentiality, integrity, backups, …) |RA |  | 
-| Manage network accessibility of storage volumes whithin attached Instances   |  | RA |
+| Manage network accessibility of storage volumes within attached Instances   |  | RA |
 | Decide to add / remove a Block Storage option (resizing, create a snapshot, create a backup volume) | RA | I |
 | Carry out to add / remove a Block Storage option (resizing, create a snapshot, create a backup volume) | I | RA |
 | Install needed security bricks and tools | RA |  |

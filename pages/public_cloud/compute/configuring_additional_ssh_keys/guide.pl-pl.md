@@ -85,7 +85,7 @@ Więcej informacji na temat uprawnień użytkowników i powiązanych z nimi tema
 
 ### Etap 3: dodanie publicznego klucza SSH do instancji
 
-### Transferowanie kluczy publicznych utworzonych w systemach opartych na GNU/Linux, macOS lub BSD
+#### Transferowanie kluczy publicznych utworzonych w systemach opartych na GNU/Linux, macOS lub BSD
 
 Jeśli stworzyłeś pary kluczy SSH w systemie opartym na GNU/Linux, macOS lub BSD, możesz użyć komendy `ssh-copy-id`, aby dodać publiczne klucze do Twojego serwera.
 

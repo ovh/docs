@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
 Las instancias de Public Cloud son fáciles de desplegar y gestionar. Sin embargo, como miembro del ecosistema Public Cloud de OVHcloud, las instancias ofrecen numerosas opciones de configuración y pueden adaptarse a diferentes casos de uso. Las siguientes instrucciones incluyen todos los pasos necesarios (y opcionales) para crear una instancia en el área de cliente de OVHcloud y acceder a ella de forma remota.
@@ -119,7 +115,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la secci�
 
 ![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Abra `Claves SSH`{.action} en el menú de la izquierda debajo de **Ajustes**. Haga clic en el botón Añadir una llave SSH`{.action}.
+Abra `Claves SSH`{.action} en el menú de la izquierda debajo de **Ajustes**. Haga clic en el botón `Añadir una clave SSH`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
@@ -218,8 +214,7 @@ Los modelos de instancia de tipo `Metal`{.action} proporcionan recursos físicos
 
 **Regiones**
 
-Una **región** se define como una ubicación en el mundo formada por uno o varios datacenters en los que están alojados los servicios de OVHcloud. Puede encontrar más información sobre las regiones, la distribución geográfica y la disponibilidad de los servicios en nuestra [página web dedicada]
-(/links/public-cloud/regions-pci) y nuestra [página web sobre las localizaciones de las infraestructuras de OVHcloud](/links/infrareg).
+Una **región** se define como una ubicación en el mundo formada por uno o varios datacenters en los que están alojados los servicios de OVHcloud. Puede encontrar más información sobre las regiones, la distribución geográfica y la disponibilidad de los servicios en nuestra [página web dedicada](/links/public-cloud/regions-pci) y nuestra [página web sobre las localizaciones de las infraestructuras de OVHcloud](/links/infrareg).
 
 **Local Zones**
 
@@ -265,7 +260,7 @@ Haga clic en las fichas siguientes para ver su presentación:
 >> Para añadir una clave almacenada en el área de cliente de OVHcloud (consulte [Paso 2](#import-ssh)), selecciónela en la lista.<br><br>
 >>![key selection](images/24-instance-creation05.png){.thumbnail}<br>
 >>
-> **Introducir directamente una llav**
+> **Introducir directamente una llave**
 >>
 >> Para añadir una clave pública pegando la cadena de clave, haga clic en el botón `Añadir una clave`{.action}.<br><br>
 >>![key selection](images/24-instance-creation06.png){.thumbnail}<br>
@@ -411,7 +406,7 @@ Seleccione `Instancias`{.action} en la barra de navegación izquierda debajo de 
 
 Haga clic en el nombre de la instancia en este panel para abrir el `Dashboard`{.action}, donde puede encontrar toda la información relativa a la instancia. Para más información sobre las funciones disponibles en esta página, consulte nuestra guía sobre [la gestión de las instancias en el área de cliente](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
 
-Se creará automáticamente un **usuario con derechos elevados (*sudo*)* en la instancia**. El nombre de usuario refleja la imagen instalada, por ejemplo "ubuntu", "debian", "fedora", etc. Puede comprobarlo en el lado derecho del `Dashboard`{.action} en la sección **Redes**.
+Se creará automáticamente un **usuario con derechos elevados (*sudo*) en la instancia**. El nombre de usuario refleja la imagen instalada, por ejemplo "ubuntu", "debian", "fedora", etc. Puede comprobarlo en el lado derecho del `Dashboard`{.action} en la sección **Redes**.
 
 ![page instances](images/24-instance-connect02.png){.thumbnail}
 

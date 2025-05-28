@@ -1,7 +1,7 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Okta aktivieren
 excerpt: "Erfahren Sie hier, wie Sie Okta Dienste über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Ziel
@@ -80,21 +80,13 @@ Ihr Okta Dienst vertraut nun OVHcloud als Service Provider. Stellen Sie im näch
 
 Um Okta als vertrauenswürdigen Identity Provider hinzuzufügen, liefern Sie die Metadaten des Identity Providers in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und dann auf `Identity & Access Management`{.action}.
+Klicken Sie in der Seitenleiste auf `Identity, Security und Operations`{.action} und anschließend auf `Identitäten`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
-
-![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
-
-Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
+Klicken Sie dann auf den Tab `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Klicken Sie auf den Button `SSO-Verbindung`{.action}.
-
-![OVHcloud SSO-Verbindung Schritt 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Geben Sie die XML-Metadaten Ihres Okta Dienstes ein. Geben Sie den Wert `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` im Feld **Nutzerattributname** und den Wert `Group` im Feld **Name des Gruppenattributs** ein und klicken Sie auf `Bestätigen`{.action}.
 
@@ -124,7 +116,7 @@ Ihr Okta gilt nun als vertrauenswürdiger Identity Provider. Dennoch müssen im 
 
 Sie müssen nun den Nutzergruppen in Okta **Rollen** bei OVHcloud zuweisen. Andernfalls weiß Ihr OVHcloud Account nicht, welche Berechtigungen ein Benutzer hat und es werden keine Rechte zugewiesen.
 
-Fügen Sie über Ihr OVHcloud Kundencenter eine Gruppe hinzu, indem Sie auf den Button `Gruppe deklarieren`{.action} klicken und die Felder ausfüllen:
+Um eine Gruppe aus Ihrem [OVHcloud Kundencenter](/links/manager) hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action} und füllen Sie die Felder aus:
 
 - **Group name**: Name der Gruppe in Okta
 - **Role**: Berechtigungsstufe für diese Gruppe

@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Active Directory Federation Services (AD FS) SSO avec votre compte OVHcloud
 excerpt: "Découvrez comment associer votre service Active Directory Federation Services (AD FS) à votre compte OVHcloud via SAML 2.0"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Objectif
@@ -121,11 +121,11 @@ Une fois le tableau de correspondances terminé, votre service AD FS fait désor
 
 L'ajout de votre AD FS en tant que fournisseur d'identité de confiance s'effectue dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) où vous pouvez fournir les métadonnées du fournisseur d'identité.
 
-Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identitées`{.action}.
+Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identités`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Cliquez ensuite sur l'onglet `SSO`{.action}. et le bouton `Connexion SSO`{.action}.
+Cliquez ensuite sur l'onglet `SSO`{.action} et sur le bouton `Connexion SSO`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -182,7 +182,7 @@ Vous pouvez également le vérifier dans l'assertion SAML :
 
 Cela signifie que vous devez ajouter le groupe `manager@<my-domain>.com` à votre compte OVHcloud en y attachant un rôle. Dans le cas contraire, votre compte OVHcloud ne sait pas ce que l'utilisateur est autorisé à faire.
 
-Ajoutez-le dans la section `Identitées`{.action} et dans l'onglet `Groupes d'utilisateurs`{.action} en cliquant sur le bouton `Déclarer un groupe`{.action} et en remplissant les champs :
+Pour ajouter ce groupe, rendez-vous dans la section `Identités`{.action} puis dans l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action}, renseignez le nom du groupe et sélectionnez le privilège associé :
 
 ![Groupes de gestion des utilisateurs AD FS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 

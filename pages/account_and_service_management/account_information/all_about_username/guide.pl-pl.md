@@ -1,7 +1,7 @@
 ---
 title: 'Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi'
 excerpt: 'Dowiedz się, jak zoptymalizować bezpieczeństwo konta OVHcloud, zarządzać danymi osobowymi i delegować dostęp do konta.'
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Wprowadzenie
@@ -96,6 +96,10 @@ Jeśli chcesz podać nowy główny kontaktowy adres e-mail, musisz to potwierdzi
 Wpisz kod w polu zatytułowanym `Kod potwierdzający`, następnie zatwierdź.
 
 ![identyfikator klienta](images/nichandle08.png){.thumbnail}
+
+> [!primary]
+>
+> `Kod potwierdzający` pozwala tylko na przyspieszenie zmiany głównego adresu e-mail. Jeśli stary adres e-mail jest niedostępny i nie możesz uzyskać tego kodu, zmiana zostanie wykonana automatycznie **25** godz. po wysłaniu żądania.
 
 #### Zmień typ konta
 

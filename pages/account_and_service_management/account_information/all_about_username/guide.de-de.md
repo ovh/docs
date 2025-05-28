@@ -1,7 +1,7 @@
 ---
 title: 'OVHcloud Kunden-Account absichern und persönliche Informationen verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Account-Sicherheit optimieren, Ihre persönlichen Informationen verwalten und den Zugriff auf Ihren Account delegieren'
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 ## Ziel
@@ -96,6 +96,10 @@ Wenn Sie eine neue Haupt-Kontaktadresse eingeben möchten, wird Ihnen ein Code a
 Geben Sie den Code im Feld `Validierungscode` ein und bestätigen Sie.
 
 ![Kundenkennung](images/nichandle08.png){.thumbnail}
+
+> [!primary]
+>
+> Mit dem `Validierungscode` können Sie nur die Änderung der Haupt-E-Mail-Adresse beschleunigen. Wenn die alte E-Mail-Adresse nicht erreichbar ist und Sie diesen Code nicht abrufen können, wird die Änderung dennoch **25 Stunden** nach der Anfrage automatisch durchgeführt.
 
 #### Account-Typ ändern
 

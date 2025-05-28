@@ -1,7 +1,7 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Google Workspace aktivieren
 excerpt: "Erfahren Sie hier, wie Sie Google Workspace über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-updated: 2025-05-12
+updated: 2025-05-15
 ---
 
 ## Ziel
@@ -56,9 +56,9 @@ Klicken Sie auf `Weiter`{.action}.
 
 Fügen Sie im Schritt "Attribute mapping" folgendes Schema hinzu:
 
-- **First Name**: Name
-- **Last Name**: Surname
-- **Primary email**: E-mail Address
+- **First Name**: Vorname
+- **Last Name**: Nachname
+- **Primary email**: E-Mail-Adresse
 
 Klicken Sie auf `Finish`{.action}.
 
@@ -81,17 +81,13 @@ Ihr Google Workspace vertraut nun OVHcloud als Service Provider. Stellen Sie ans
 
 Das Hinzufügen Ihres Google Workspace als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), in dem Sie die Metadaten des Identity Providers hinterlegen können.
 
-Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und dann auf `Identity & Access Management`{.action}.
+Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und anschließend `Identitäten`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
+Klicken Sie dann auf den Tab `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Klicken Sie auf den Button `SSO-Verbindung`{.action}.
-
-![OVHcloud SSO-Verbindung Schritt 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Geben Sie die XML-Metadaten Ihres Google Workspace ein. Geben Sie im Feld **Nutzerattributname** den Wert `Name` und im Feld **Name des Gruppenattributs** den Wert `Group` ein und klicken Sie auf `Bestätigen`{.action}.
 
@@ -141,7 +137,7 @@ Weisen Sie dann diesen Benutzergruppen bei OVHcloud **Rollen** zu. Andernfalls k
 
 ![Konfiguration der Benutzergruppen](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
-Fügen Sie über Ihr OVHcloud Kundencenter eine Gruppe hinzu, indem Sie auf den Button `Gruppe deklarieren`{.action} klicken und die Felder ausfüllen:
+Um eine Gruppe aus Ihrem [OVHcloud Kundencenter](/links/manager) hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action} und füllen Sie die Felder aus:
 
 - **Name der Gruppe**: Name der Gruppe in Google Workspace
 - **Rolle**: Berechtigungsstufe für diese Gruppe
