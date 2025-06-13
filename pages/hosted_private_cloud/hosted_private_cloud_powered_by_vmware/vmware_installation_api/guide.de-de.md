@@ -12,12 +12,12 @@ Aktionen in Ihrer Infrastruktur können mithilfe des vSphere SDK automatisiert w
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
-- Eine virtuelle Maschine, die mit einem unserer [OVF Templates](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library)  erstellt wurde.
-- Eine Infrastruktur [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Eine virtuelle Maschine, die mit einem unserer [OVF Templates](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library) erstellt wurde.
+- Sie haben eine [Hosted Private Cloud Infrastruktur](/links/hosted-private-cloud/vmware).
 
 > [!warning]
-> Die folgenden Codebeispiele wurden mit Python 2.7 erstellt. Bitte beachten Sie, dass Sie Ihre Bestellungen möglicherweise anpassen müssen, wenn Ihre Umgebung Debian 12 verwendet. In diesem Fall empfehlen wir Ihnen, die neueste Version von Python 3 herunterzuladen.
+> Die folgenden Codebeispiele wurden mit Python 2.7 erstellt. Beachten Sie, dass Sie Ihre Bestellungen möglicherweise anpassen müssen, wenn Ihre Umgebung Debian 12 verwendet. In diesem Fall empfehlen wir Ihnen, die neueste Version von Python 3 herunterzuladen.
 >
 
 ## In der praktischen Anwendung
@@ -48,7 +48,7 @@ Das Verzeichnis `/vsphere-automation-sdk-python` wird erstellt. Wechseln Sie zu 
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
-In diesem Beispiel ist dies der folgende Befehl:
+Im vorliegenden Beispiel handelt es sich um folgenden Befehl:
 
 ```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
@@ -178,9 +178,9 @@ cd vmware-vsphere-cli-distrib
 ./vmware-install.pl
 ```
 
-Wenn Sie die Bedingungen gelesen haben, akzeptieren Sie diese und drücken Sie auf `Enter`{.action}.
+Wenn Sie die Bedingungen gelesen haben, akzeptieren Sie diese und drücken Sie `Enter`{.action}.
 
-Nach der Installation werden weitere Module installiert. Drücken Sie auf `Enter`{.action}, um die Installation fortzusetzen.
+Nach der Installation werden weitere Module installiert. Drücken Sie `Enter`{.action}, um die Installation fortzusetzen.
 
 Um die Installation abzuschließen, muss ein Verzeichnis ausgewählt werden, in dem das SDK installiert wird. Standardmäßig ist dieses Verzeichnis “/usr/bin”.
 
@@ -260,4 +260,4 @@ perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien -
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer [User Community](/links/community).
+Treten Sie unserer [User Community](/links/community) bei.
