@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z SDK vSphere
 excerpt: Dowiedz się, jak uruchomić SDK vSphere i jak z niego korzystać
-updated: 2025-05-21
+updated: 2025-06-13
 ---
 
 ## Wprowadzenie
@@ -13,7 +13,7 @@ Działania w infrastrukturze można zautomatyzować przy użyciu SDK vSphere.
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Maszyna wirtualna utworzona w jednym z naszych [szablonów OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+- Maszyna wirtualna utworzona w jednym z naszych [szablonów OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 - Infrastruktura [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
 
 > [!warning]
@@ -26,7 +26,7 @@ Działania w infrastrukturze można zautomatyzować przy użyciu SDK vSphere.
 
 #### Wdrożenie środowiska
 
-Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Debian 9 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Debian 9 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 Zainstalowanie następujących pakietów: 
 
@@ -91,9 +91,9 @@ print("Disconnecting..")
 vconnect()
 ```
 
-#### Wyświetlenie listy maszyn wirtualnych w usłudze Managed Bare Metal
+#### Wyświetlenie listy maszyn wirtualnych w usłudze Managed vSphere
 
-W tym przykładzie wyświetlimy listę wszystkich maszyn wirtualnych obecnych w usłudze Managed Bare Metal:
+W tym przykładzie wyświetlimy listę wszystkich maszyn wirtualnych obecnych w usłudze Managed vSphere:
 
 ```python
 #!/usr/bin/env python
@@ -140,7 +140,7 @@ vconnect()
 
 #### Wdrożenie środowiska
 
-Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Ubuntu 18.04 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Ubuntu 18.04 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 Zainstalowanie następujących pakietów: 
 
@@ -156,7 +156,7 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 Pobierz zestaw SDK vSphere dostępny pod tym linkiem: 
 
-<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
+<https://developer.broadcom.com/sdks/vsphere-management-sdk/latest>
 
 Pobierz wersję kompatybilną z Twoim systemem operacyjnym.
 
@@ -211,9 +211,9 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-#### Wyświetlenie listy maszyn wirtualnych w usłudze Managed Bare Metal
+#### Wyświetlenie listy maszyn wirtualnych w usłudze Managed vSphere
 
-W tym przykładzie wyświetlimy listę wszystkich maszyn wirtualnych obecnych w usłudze Managed Bare Metal:
+W tym przykładzie wyświetlimy listę wszystkich maszyn wirtualnych obecnych w usłudze Managed vSphere:
 
 ```perl
 #!/usr/bin/perl

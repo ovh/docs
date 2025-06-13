@@ -1,7 +1,7 @@
 ---
 title: Using the vSphere SDK
 excerpt: Find out how to implement and use the vSphere SDK
-updated: 2025-05-21
+updated: 2025-06-13
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ Actions within your infrastructure can be automated using the vSphere SDK.
 ## Instructions
 
 - Access to the [OVHcloud Control Panel](/links/manager).
-- A virtual machine created with one of our [OVF templates](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+- A virtual machine created with one of our [OVF templates](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 
 > [!warning]
@@ -24,7 +24,7 @@ Actions within your infrastructure can be automated using the vSphere SDK.
 
 #### Setting up the environment
 
-This example uses a VM installed with Debian 9, deployed from [templates available for your Managed Bare Metal infrastructure](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+This example uses a VM installed with Debian 9, deployed from [templates available for your Managed Bare Metal infrastructure](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 To begin, it is necessary to install these packages:
 
@@ -138,7 +138,7 @@ vconnect()
 
 #### Setting up the environment
 
-This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Managed Bare Metal infrastructure](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Managed Bare Metal infrastructure](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 To begin, it is necessary to install these packages:
 
@@ -154,7 +154,7 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 Download the vSphere SDK using this link: 
 
-<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
+<https://developer.broadcom.com/sdks/vsphere-management-sdk/latest>
 
 Make sure to download the version that is compatible with your operating system.
 

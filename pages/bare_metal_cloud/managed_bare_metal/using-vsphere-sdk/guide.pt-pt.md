@@ -1,7 +1,7 @@
 ---
 title: Utilização do SDK vSphere
 excerpt: Utilização e implementação do SDK vSphere
-updated: 2025-05-21
+updated: 2025-06-13
 ---
 
 ## Objetivo
@@ -13,7 +13,7 @@ updated: 2025-05-21
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Uma máquina virtual criada com um dos nossos [templates OVF](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+- Uma máquina virtual criada com um dos nossos [templates OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 > [!warning]
 > Os exemplos de código abaixo foram criados utilizando Python 2.7. Tenha em conta que poderá ser necessário ajustar os seus comandos de forma correspondente se o seu ambiente estiver a utilizar Debian 12. Neste caso, recomendamos que transfira a última versão do Python 3.
@@ -25,7 +25,7 @@ updated: 2025-05-21
 
 #### Implementação do ambiente
 
-Este exemplo utiliza uma VM instalada com Debian 9, implementada a partir de [templates disponíveis para a sua infraestrutura Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+Este exemplo utiliza uma VM instalada com Debian 9, implementada a partir de [templates disponíveis para a sua infraestrutura Managed Bare Metal](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 
 É necessário instalar os seguintes packs: 
@@ -140,7 +140,7 @@ vconnect()
 
 #### Implementação do ambiente
 
-Este exemplo utiliza uma VM instalada com Ubuntu 18.04, implementada a partir de [templates disponíveis para a sua infraestrutura Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+Este exemplo utiliza uma VM instalada com Ubuntu 18.04, implementada a partir de [templates disponíveis para a sua infraestrutura Managed Bare Metal](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 É necessário instalar os seguintes packs: 
 
@@ -156,7 +156,7 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 Descarregue o SDK vSphere disponível nesta ligação: 
 
-<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
+<https://developer.broadcom.com/sdks/vsphere-management-sdk/latest>
 
 Descarregue a versão compatível com o seu sistema operativo.
 

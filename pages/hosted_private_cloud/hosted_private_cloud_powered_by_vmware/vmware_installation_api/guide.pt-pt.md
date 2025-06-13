@@ -1,7 +1,7 @@
 ---
 title: Utilização do SDK vSphere
 excerpt: Utilização e implementação do SDK vSphere
-updated: 2025-05-21
+updated: 2025-06-13
 ---
 
 ## Objetivo
@@ -13,7 +13,7 @@ updated: 2025-05-21
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Uma máquina virtual criada com um dos nossos [templates OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+- Uma máquina virtual criada com um dos nossos [templates OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 - Uma infraestrutura [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
 
 > [!warning]
@@ -26,7 +26,7 @@ updated: 2025-05-21
 
 #### Implementação do ambiente
 
-Este exemplo utiliza uma VM instalada com Debian 9, implementada a partir de [templates disponibilizados no seu Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+Este exemplo utiliza uma VM instalada com Debian 9, implementada a partir de [templates disponibilizados no seu Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 
 É necessário instalar os seguintes packs: 
@@ -92,9 +92,9 @@ print("Disconnecting..")
 vconnect()
 ```
 
-#### Listar as VM presentes num Managed Bare Metal
+#### Listar as VM presentes num Managed vSphere
 
-Neste exemplo, iremos listar todas as VM presentes no Managed Bare Metal:
+Neste exemplo, iremos listar todas as VM presentes no Managed vSphere:
 
 ```python
 #!/usr/bin/env python
@@ -141,7 +141,7 @@ vconnect()
 
 #### Implementação do ambiente
 
-Este exemplo utiliza uma VM instalada com Ubuntu 18.04, implementada a partir de [templates disponibilizados no seu Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+Este exemplo utiliza uma VM instalada com Ubuntu 18.04, implementada a partir de [templates disponibilizados no seu Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 É necessário instalar os seguintes packs: 
 
@@ -157,7 +157,7 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 Descarregue o SDK vSphere disponível nesta ligação: 
 
-<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
+<https://developer.broadcom.com/sdks/vsphere-management-sdk/latest>
 
 Descarregue a versão compatível com o seu sistema operativo.
 
@@ -212,9 +212,9 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-#### Listar as VM presentes num Managed Bare Metal
+#### Listar as VM presentes num Managed vSphere
 
-Neste exemplo, iremos listar todas as VM presentes no Managed Bare Metal:
+Neste exemplo, iremos listar todas as VM presentes no Managed vSphere:
 
 ```perl
 #!/usr/bin/perl

@@ -1,7 +1,7 @@
 ---
 title: Utilisation SDK vSphere
 excerpt: Découvrez comment implémenter et utiliser le SDK vSphere
-updated: 2025-05-21
+updated: 2025-06-13
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Les actions au sein de votre infrastructure peuvent être automatisées grâce a
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Une machine virtuelle créée avec l’un de nos [templates OVF](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+- Une machine virtuelle créée avec l’un de nos [templates OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 
 > [!warning]
@@ -26,7 +26,7 @@ Les actions au sein de votre infrastructure peuvent être automatisées grâce a
 
 #### Mise en place de l'environnement
 
-Cet exemple utilise une VM installée avec Debian 9, déployée à partir de [templates disponibles pour votre infrastructure Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+Cet exemple utilise une VM installée avec Debian 9, déployée à partir de [templates disponibles pour votre infrastructure Managed Bare Metal](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 Pour commencer, il est nécessaire d'installer ces packages :
 
@@ -139,7 +139,7 @@ vconnect()
 
 #### Mise en place de l'environnement
 
-Cet exemple utilise une VM installée avec Ubuntu 18.04, déployée à partir de [templates disponibles pour votre infrastructure Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+Cet exemple utilise une VM installée avec Ubuntu 18.04, déployée à partir de [templates disponibles pour votre infrastructure Managed Bare Metal](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 
 Pour commencer, il est nécessaire d'installer ces packages :
@@ -157,7 +157,7 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 Téléchargez le SDK vSphere disponible sur ce lien : 
 
-<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
+<https://developer.broadcom.com/sdks/vsphere-management-sdk/latest>
 
 Téléchargez la version compatible avec votre système d'exploitation.
 

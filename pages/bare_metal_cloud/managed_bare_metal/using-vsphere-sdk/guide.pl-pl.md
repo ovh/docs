@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z SDK vSphere
 excerpt: Dowiedz się, jak uruchomić SDK vSphere i jak z niego korzystać
-updated: 2025-05-21
+updated: 2025-06-13
 ---
 
 ## Wprowadzenie
@@ -13,7 +13,7 @@ Działania w infrastrukturze można zautomatyzować przy użyciu SDK vSphere.
 ## Wymagania początkowe
 
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
-- Maszyna wirtualna utworzona w jednym z naszych [szablonów OVF](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+- Maszyna wirtualna utworzona w jednym z naszych [szablonów OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 > [!warning]
 > Poniższe przykłady kodu zostały utworzone przy użyciu Python 2.7. Pamiętaj, że może być konieczne odpowiednie dostosowanie Twoich zamówień, jeśli Twoje środowisko korzysta z Debiana 12. W takim przypadku zalecamy pobranie najnowszej wersji Pythona 3.
@@ -25,7 +25,7 @@ Działania w infrastrukturze można zautomatyzować przy użyciu SDK vSphere.
 
 #### Wdrożenie środowiska
 
-W tym przykładzie wykorzystano wirtualną maszynę zainstalowaną w systemie Debian 9 i wdrożoną z [szablonów dostępnych dla infrastruktury Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+W tym przykładzie wykorzystano wirtualną maszynę zainstalowaną w systemie Debian 9 i wdrożoną z [szablonów dostępnych dla infrastruktury Managed Bare Metal](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 Zainstalowanie następujących pakietów: 
 
@@ -139,7 +139,7 @@ vconnect()
 
 #### Wdrożenie środowiska
 
-Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Ubuntu 18.04 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ovf_template).
+Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Ubuntu 18.04 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Managed Bare Metal](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 Zainstalowanie następujących pakietów: 
 
@@ -155,7 +155,7 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 Pobierz zestaw SDK vSphere dostępny pod tym linkiem: 
 
-<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
+<https://developer.broadcom.com/sdks/vsphere-management-sdk/latest>
 
 Pobierz wersję kompatybilną z Twoim systemem operacyjnym.
 

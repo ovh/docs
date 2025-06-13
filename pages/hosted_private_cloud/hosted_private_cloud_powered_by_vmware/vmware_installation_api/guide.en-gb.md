@@ -1,7 +1,7 @@
 ---
 title: Using the vSphere SDK
 excerpt: Find out how to implement and use the vSphere SDK
-updated: 2025-05-21
+updated: 2025-06-13
 ---
 
 ## Objective
@@ -13,18 +13,18 @@ Actions within your infrastructure can be automated using the vSphere SDK.
 ## Instructions
 
 - Access to the [OVHcloud Control Panel](/links/manager).
-- A virtual machine created with one of our [OVF templates](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+- A virtual machine created with one of our [OVF templates](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 - A [Hosted Private Cloud](/links/hosted-private-cloud/vmware) infrastructure.
 
 > [!warning]
-> The code examples below were created using Pythin 2.7. Please note that you may need to adjust your commands accordingly if your environment uses Debian 12. In this case, we recommend that you download the latest version of Python 3.
+> The code examples below were created using Python 2.7. Please note that you may need to adjust your commands accordingly if your environment uses Debian 12. In this case, we recommend that you download the latest version of Python 3.
 >
 
 ### Python
 
 #### Setting up the environment
 
-This example uses a VM installed with Debian 9, deployed from [templates available for your Hosted Private Cloud infrastructure](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+This example uses a VM installed with Debian 9, deployed from [templates available for your Hosted Private Cloud infrastructure](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 To begin, it is necessary to install these packages:
 
@@ -89,9 +89,9 @@ print("Disconnecting..")
 vconnect()
 ```
 
-#### Listing the VMs of a Managed Bare Metal infrastructure
+#### Listing the VMs of a Managed vSphere infrastructure
 
-This example lists all VMs of a Managed Bare Metal infrastructure.
+This example lists all VMs of a Managed vSphere infrastructure.
 
 ```python
 #!/usr/bin/env python
@@ -138,7 +138,7 @@ vconnect()
 
 #### Setting up the environment
 
-This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Hosted Private Cloud infrastructure](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Hosted Private Cloud infrastructure](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 To begin, it is necessary to install these packages:
 
@@ -154,7 +154,7 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 Download the vSphere SDK using this link: 
 
-<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
+<https://developer.broadcom.com/sdks/vsphere-management-sdk/latest>
 
 Make sure to download the version that is compatible with your operating system.
 
@@ -207,9 +207,9 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-#### Listing the VMs of a Managed Bare Metal infrastructure
+#### Listing the VMs of a Managed vSphere infrastructure
 
-This example lists all VMs of a Managed Bare Metal infrastructure.
+This example lists all VMs of a Managed vSphere infrastructure.
 
 ```perl
 #!/usr/bin/perl

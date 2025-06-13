@@ -1,7 +1,7 @@
 ---
 title: Utilisation SDK vSphere
 excerpt: Découvrez comment implémenter et utiliser le SDK vSphere
-updated: 2025-05-21
+updated: 2025-06-13
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Les actions au sein de votre infrastructure peuvent être automatisées grâce a
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Une machine virtuelle créée avec l’un de nos [templates OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+- Une machine virtuelle créée avec l’un de nos [templates OVF](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 - Une infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
 
 > [!warning]
@@ -26,7 +26,7 @@ Les actions au sein de votre infrastructure peuvent être automatisées grâce a
 
 #### Mise en place de l'environnement
 
-Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 Pour commencer, il est nécessaire d'installer ces packages :
 
@@ -90,9 +90,9 @@ print("Disconnecting..")
 vconnect()
 ```
 
-#### Lister les VM présentes dans un Managed Bare Metal
+#### Lister les VM présentes dans un Managed vSphere
 
-Dans cet exemple, nous allons lister toutes les VM présentes sur le Managed Bare Metal :
+Dans cet exemple, nous allons lister toutes les VM présentes sur le Managed vSphere :
 
 ```python
 #!/usr/bin/env python
@@ -139,7 +139,7 @@ vconnect()
 
 #### Mise en place de l'environnement
 
-Ici nous utilisons une VM installée sur Ubuntu 18.04, déployée depuis [les templates mis à disposition sur votre Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
+Ici nous utilisons une VM installée sur Ubuntu 18.04, déployée depuis [les templates mis à disposition sur votre Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_content_library).
 
 Pour commencer, il est nécessaire d'installer ces packages :
 
@@ -156,7 +156,7 @@ cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List:
 
 Téléchargez le SDK vSphere disponible sur ce lien : 
 
-<https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67>
+<https://developer.broadcom.com/sdks/vsphere-management-sdk/latest>
 
 Téléchargez la version compatible avec votre système d'exploitation.
 
@@ -174,7 +174,7 @@ Lancez le programme d'installation à l'aide des commandes suivantes :
 cd vmware-vsphere-cli-distrib
 ```
 
-Puis : 
+Puis :
 
 ```bash
 ./vmware-install.pl
@@ -211,9 +211,9 @@ Util::disconnect();
 print "Disconnected \n";
 ```
 
-#### Lister les VM présentes dans un Managed Bare Metal
+#### Lister les VM présentes dans un Managed vSphere
 
-Dans cet exemple, nous allons lister toutes les VM présentes sur le Managed Bare Metal :
+Dans cet exemple, nous allons lister toutes les VM présentes sur le Managed vSphere :
 
 ```perl
 #!/usr/bin/perl
