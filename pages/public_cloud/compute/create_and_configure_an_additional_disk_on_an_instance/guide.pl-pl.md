@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
 excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
-updated: 2025-04-28
+updated: 2025-06-03
 ---
 
 <style>
@@ -55,6 +55,8 @@ Wolumen Classic to niezawodne i ekonomiczne rozwiązanie do przechowywania danyc
 - Hosting klasycznych aplikacji www
 - Małe i średnie przechowywanie baz danych
 - Archiwizacja i kopie zapasowe danych
+
+W 3AZ regions, Classic Volumes are regional services that use distributed erasure coding across multiple Availability Zones. Dzięki tym środkom dane mogą zostać wykorzystane dopiero po wpłynięciu lub wycofaniu się z kolejnego zdarzenia, a ponadto można provided the multi-attached resilient architecture conditions are met. For more information, please refer to our guide "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 

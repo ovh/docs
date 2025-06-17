@@ -1,12 +1,17 @@
 ---
 title: "Monitoring DDoS attacks with the Network Security Dashboard"
 excerpt: "Learn how to navigate through the Network Security Dashboard"
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Objective
 
 This guide explains the Network Security Dashboard and provides an overview of counter measures triggered by our DDoS protection infrastructure when malicious network activity is detected. You can find details on which additional protections should be implemented to keep your services up and running. Moreover, traffic charts are available on the dashboard for scrubbing centre activity periods to better visualize the situation.
+
+> [!warning]
+>
+> **Warning**: Permanent Mitigation is reaching its End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
+>
 
 ## Requirements
 

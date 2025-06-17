@@ -1,3 +1,8 @@
 id: 7adf6743-0b6e-431d-8577-5c77ee246928
 full_slug: exchange-billing
 translation_banner: true
+disable_languages:
+- en-asia
+- en-au
+- en-sg
+- en-in

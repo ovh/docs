@@ -17,7 +17,7 @@ Public cloud features are divided into three categories:
 - The [OVHcloud implementation](#ovhcloud-implementation), whose migration will require adaptations to a new environment.
 - [Specific functionalities](#specific-functionalities), whose migration as such is impossible to guarantee as they are tied to OVHcloud environment or specific developments.
 
-### Core features <a name="core-features"></a>
+### Core features
 
 |Feature|Description|Available formats|Migration model|Available documentation|
 |---|---|---|---|---|
@@ -28,13 +28,13 @@ Public cloud features are divided into three categories:
 |Horizon - WebUI Service|Web control panel and management interface|N/A|No migration per se, this is just an interface above resources|N/A|
 |Mistral - Workflow management|Describe and execute processes as a set of tasks and their transitions.|Yaml|Export workflows files and run them in the new environment|N/A|
 
-### OVHcloud implementation <a name="ovhcloud-implementation"></a>
+### OVHcloud implementation
 
 |Feature|Description|Available formats|Migration model|Available documentation|
 |---|---|---|---|---|
 |Public image catalog|Catalog of classic system images, optimised by OVHcloud|qcow2|Setup new instances using a similar offer on another provider|N/A|
 
-### Specific functionalities <a name="specific-functionalities"></a>
+### Specific functionalities
 
 |Feature|Description|Available formats|Migration model|Available documentation|
 |---|---|---|---|---|

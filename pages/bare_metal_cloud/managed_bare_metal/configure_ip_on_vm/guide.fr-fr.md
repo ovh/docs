@@ -38,10 +38,10 @@ Après avoir créé une machine virtuelle (VM) dans votre infrastructure, vous p
 >>
 > IPv6
 >>
->>> [!warning]
->>>
->>> Par défaut, le bloc IPv6 livré avec votre PCC n'est pas activé, il est donc nécessaire d'ouvrir une [demande d'assistance auprès du support technique](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander son activation.
->>>
+>> > [!warning]
+>> >
+>> > Par défaut, le bloc IPv6 livré avec votre PCC n'est pas activé, il est donc nécessaire d'ouvrir une [demande d'assistance auprès du support technique](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander son activation.
+>> >
 >>
 >> Vous pouvez récupérer les informations de votre bloc d'adresse IPv6 publiques depuis votre espace client, depuis la page [Gérer mes IPs](https://www.ovh.com/manager/#/dedicated/ip?serviceType=pcc&page=1).
 >>

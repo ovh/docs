@@ -13,7 +13,7 @@ Dzięki nazwie domeny będziesz mógł dostarczyć własny adres URL do udostęp
 
 Przewodnik ten wyjaśnia, jak skonfigurować domenę na kontenerach, aby ułatwić dostęp do nich.
 
-## Wymagania
+## Wymagania początkowe
 
 - [Dodanie przestrzeni dyskowej](/pages/storage_and_backup/object_storage/pcs_create_container) (EN)
 - Domena

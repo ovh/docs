@@ -52,7 +52,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Si votre résultat ressemble à l'exemple ci-dessus et que la colonne `MOUNTPOINT` est vide dans la ligne correspondante, vous pouvez passer à [l'étape suivante](#checkfs).
+Si votre résultat ressemble à l'exemple ci-dessus et que la colonne `MOUNTPOINT` est vide dans la ligne correspondante, vous pouvez passer à [l'étape suivante](#filesystemcheck).
 
 Cependant, si votre résultat montre qu'il y a un point de montage pour la partition VPS, elle doit d'abord être démontée.
 
@@ -77,7 +77,7 @@ Dans cet exemple de configuration, la commande serait :
 umount /dev/sdb1
 ```
 
-#### Vérifier le système de fichiers <a name="checkfs"></a>
+#### Vérifier le système de fichiers <a name="filesystemcheck"></a>
 
 Avant de continuer, il est recommandé de vérifier le système de fichiers (`filesystem check`) pour voir s'il y a des erreurs dans la partition. La commande est la suivante :
 

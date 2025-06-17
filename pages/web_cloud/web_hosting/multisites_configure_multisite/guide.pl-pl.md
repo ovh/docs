@@ -118,7 +118,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_edit), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
+> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br><br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br><br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_edit), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
 > ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
 >

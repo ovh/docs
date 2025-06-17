@@ -25,7 +25,7 @@ Un snapshot de volumen es una copia puntual de sólo lectura de un volumen.<br>
 Los snapshots se crean a partir de un volumen operativo existente. No pueden existir sin eso.<br>
 Una política de snapshots permite automatizar la creación de snapshots utilizando diferentes parámetros. La política puede modificarse y eliminarse si ya no la necesita.
 
-## En la práctica
+## Procedimiento
 
 Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione la pestaña `Bare Metal Cloud`{.action} en la barra de navegación superior. Abra `Almacenamiento y backup`{.action} y luego `Enterprise File Storage`{.action} en el menú de la izquierda y seleccione su servicio en la lista.
 

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or reinstall an OS on your dedicated server
-updated: 2025-02-25
+updated: 2025-06-06
 ---
 
 ## Objective
@@ -189,7 +189,6 @@ With the following parameters:
 |operatingSystem|OS to install|✅|
 |customizations|OS reinstallation customizations|⚠️¹|
 |storage|OS reinstallation storage configurations|❌|
-|properties|Arbitrary properties to pass to cloud-init's config drive datasource|❌|
 
 ¹ Operating system specific, some customization(s) might be required on some operating systems.
 

@@ -33,6 +33,8 @@ Antes de continuar leyendo esta guía, debe cumplir los siguientes requisitos:
 - Ser [contacto de facturación](/pages/account_and_service_management/account_information/managing_contacts#definicion) de sus servicios de OVHcloud.
 - Tener una forma de pago válida en su cuenta de OVHcloud. Consulte nuestra guía "[Gestionar las formas de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
 
+<a name="auto-vs-manual"></a>
+
 ## Los diferentes tipos de renovación
 
 **Haga clic en una de las fichas siguientes.**

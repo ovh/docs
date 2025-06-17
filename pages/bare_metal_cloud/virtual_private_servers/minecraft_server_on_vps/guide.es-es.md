@@ -1,30 +1,26 @@
 ---
 title: 'Cómo crear un servidor Minecraft en un VPS o un servidor dedicado'
 excerpt: 'Cómo instalar un servidor Minecraft'
-updated: 2021-06-29
+updated: 2025-06-06
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
 Minecraft es un videojuego de construcción de éxito mundial. Si desea jugar en modo multijugador, debe alojarse en un servidor.
 
-Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo en un [VPS](https://www.ovhcloud.com/es-es/vps/) o en un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/). Esto le permitirá ahorrar recursos y le permitirá controlar completamente su instancia de juego.
+Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo en un [VPS](/links/bare-metal/vps) o en un [servidor dedicado](/links/bare-metal/bare-metal). Esto le permitirá ahorrar recursos y le permitirá controlar completamente su instancia de juego.
 
 **Este tutorial explica cómo lanzar un servidor Minecraft Java Edition en un VPS de OVHcloud y probar su conectividad.**
 
 > [!warning]
->Esta guía explica cómo utilizar una o más soluciones de OVHcloud con herramientas externas y describe las acciones que deben realizarse en un contexto específico. Es posible que necesite adaptar las instrucciones en función de su caso particular.
+> Esta guía explica cómo utilizar una o más soluciones de OVHcloud con herramientas externas y describe las acciones que deben realizarse en un contexto específico. Es posible que necesite adaptar las instrucciones en función de su caso particular.
 >
->Si necesita ayuda para aplicar las indicaciones, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Para más información, consulte la sección [Más información](#gofurther) de esta guía.
+> Si necesita ayuda para aplicar las indicaciones, le recomendamos que contacte con un [proveedor especializado](/links/partner). Para más información, consulte la sección [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud.
+- Tener un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
 - Haber instalado una distribución GNU/Linux en el servidor.
 - Tener acceso de administrador (sudo) por SSH a su servidor.
 - Tener una comprensión básica de la administración GNU/Linux.
@@ -32,7 +28,7 @@ Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo e
 ## Procedimiento
 
 > [!primary]
-> Este tutorial está basado en la versión "1.17" de Minecraft Java Edition y la versión "16.0.1" de OpenJDK.
+> Este tutorial está basado en la versión "1.21" de Minecraft Java Edition y la versión "24.0.1" de OpenJDK.
 >
 
 ### Paso 1: Preparar el servidor
@@ -45,29 +41,29 @@ Una vez instalado el sistema operativo, conéctese al VPS por SSH como se descri
 En primer lugar, actualice los paquetes con sus últimas versiones:
 
 ```sh
-~$ sudo apt update
+$ sudo apt update
 ```
 
 ```sh
-~$ sudo apt full-upgrade
+$ sudo apt full-upgrade
 ```
 
 Utilice el siguiente comando para asegurarse de que se han instalado todos los paquetes necesarios:
 
 ```sh
-~$ sudo apt install screen nano wget git
+$ sudo apt install screen nano wget git
 ```
 
 Instale el paquete Java:
 
 ```sh
-~$ sudo apt install openjdk-16-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 Para evitar crear vulnerabilidades en su sistema, cree un usuario llamado "minecraft" que ejecute las acciones del servidor:
 
 ```sh
-~$ sudo adduser minecraft --disabled-login --disabled-password
+$ sudo adduser minecraft --disabled-password
 ```
 
 Se le pedirá que facilite varios datos. sólo tiene que pulsar la tecla `Entrar`{.action} para validarlas.
@@ -77,7 +73,7 @@ El usuario se creará ahora. Tenga en cuenta que no se ha especificado ninguna c
 Cambie al nuevo usuario:
 
 ```sh
-~$ sudo su - minecraft
+$ sudo su - minecraft
 ```
 
 > [!primary]
@@ -88,7 +84,7 @@ Cambie al nuevo usuario:
 Para finalizar la instalación, cree una carpeta llamada `server`.
 
 ```sh
-~$ mkdir ~/server && cd ~/server
+$ mkdir ~/server && cd ~/server
 ```
 
 ### Paso 2: Instalar el servidor Vanilla Minecraft
@@ -101,7 +97,7 @@ Para finalizar la instalación, cree una carpeta llamada `server`.
 Primero deberá copiar y pegar el enlace de descarga para el programa servidor.
 <br>En el [sitio web oficial de Minecraft](https://minecraft.net/download/server){.external}, haga clic derecho en el enlace de descarga y seleccione `Copiar dirección del enlace`{.action}.
 
-![Descarga del servidor](images/download_jar.png){.thumbnail}
+![Descarga del servidor](images/jar_file_download.png){.thumbnail}
 
 En su terminal de línea de comandos, compruebe que siga en la carpeta `servidor` y utilice `wget` para descargar el archivo.
 <br>Sustituya `el_enlace_de_descarga` por la URL real que haya copiado anteriormente.
@@ -148,7 +144,24 @@ También puede pulsar `Ctrl`{.action}, a continuación `a`{.action} y, a continu
 En el intérprete de órdenes `minecraft1` creado anteriormente, ejecute el servidor Minecraft con el siguiente comando. (Utilice `ls` archivos para comprobar el nombre del archivo en caso de que sea diferente).
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: Configura el servidor para que arranque con 1024 MB o 1 GB de RAM. Este límite puede aumentarse si se desea que el servidor arranque con más RAM.
+- `Xms1024M`: Esto permite al servidor utilizar un máximo de 1024M de RAM. Puedes aumentar este límite si quieres que tu servidor funcione con más RAM, para acomodar a más jugadores o si sientes que tu servidor funciona lentamente.
+- `jar`: Especifica el archivo jar del servidor a ejecutar.
+- `nogui`: Indica al servidor que no ejecute una GUI.
+
+También puedes usar el siguiente comando:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Una vez que el servidor está en marcha, se obtiene el siguiente resultado:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 Para detener el servidor, introduzca el comando `stop`.
@@ -171,10 +184,10 @@ Por defecto, no es necesario introducir ningún puerto.
 
 El servidor Vanilla Minecraft ya está instalado en su VPS.
 
-Esta guía de instalación también es válida para un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/). Con estas soluciones, también disfrutará de recursos físicos garantizados y estables en cualquier momento del día, ya que el hardware es dedicado.
+Esta guía de instalación también es válida para un [servidor dedicado de OVHcloud](/links/bare-metal/bare-metal) o una instancia de [Public Cloud](/links/public-cloud/compute). Con estas soluciones, también disfrutará de recursos físicos garantizados y estables en cualquier momento del día, ya que el hardware es dedicado.
 
 ## Más información <a name="gofurther"></a>
 
 Para añadir add-ons, mods y configurar más finamente su servidor Minecraft, consulte la siguiente documentación oficial: <https://help.mojang.com/>.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

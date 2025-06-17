@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Cómo aumentar el límite en Public Cloud'
-updated: 2025-04-28
+updated: 2025-05-30
 ---
 
 > [!primary]
@@ -28,6 +28,12 @@ Si desea crear más, es necesario aumentar el límite.
 De acuerdo con criterios internos (antigüedad, existencia de facturas pagadas, etc.), ahora es libre de solicitar aumentos de cuota para los recursos de sus proyectos de Public Cloud directamente desde el área de cliente de OVHcloud.
 
 Puede aumentar la cuota de recursos de forma manual o automática.
+
+> [!primary]
+> Si necesita aumentar su cuota y el botón `Aumentar los límites de mi couta`{.action} no está disponible en su área de cliente, haga clic en el botón `Contactar con el soporte`{.action}.
+>
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 #### Aumentar manualmente la cuota de recursos
 

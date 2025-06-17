@@ -38,10 +38,10 @@ After you have created a virtual machine (VM), you can assign to it a public or 
 >>
 > IPv6
 >>
->>> [!warning]
->>>
->>> By default, the IPv6 block delivered with your Dedicated Cloud is not activated, so you will need to open a [support request](https://help.ovhcloud.com/csm?id=csm_get_help) to request its activation.
->>>
+>> > [!warning]
+>> >
+>> > By default, the IPv6 block delivered with your Dedicated Cloud is not activated, so you will need to open a [support request](https://help.ovhcloud.com/csm?id=csm_get_help) to request its activation.
+>> >
 >>
 >> You can retrieve your public IPv6 address block information via the OVHcloud Control Panel by going to the [Manage my IPs](https://www.ovh.com/manager/#/dedicated/ip?serviceType=pcc&page=1) section.
 >>

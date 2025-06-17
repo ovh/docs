@@ -44,7 +44,7 @@ Below, you will find basic information on your VPS, and the status of the servic
 > [!tabs]
 > Name
 >>
->> If you click on the `...`{.action} button and then select `Change name`{.action}, you can enter a distinguishing name for this VPS. This is useful for easier Control Panel navigation in case you are managing multiple VPS services but it has no impact otherwise. However, the internal name of the service remains in the format *vps-XXXXX.vps.ovh.net*.
+>> If you click on the `...`{.action} button and then select `Change the name`{.action}, you can enter a distinguishing name for this VPS. This is useful for easier Control Panel navigation in case you are managing multiple VPS services but it has no impact otherwise. However, the internal name of the service remains in the format *vps-XXXXX.vps.ovh.net*.
 >>
 > Boot
 >>

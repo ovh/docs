@@ -49,7 +49,7 @@ If the access policy has been changed to "Restricted", you will need to apply th
 
 In the lifecycle of the source PCC, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination Hosted Private Cloud and assign them the appropriate rights, depending on the configuration of the destination Hosted Private Cloud.
 
-To do this, please refer to our guides on [Changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights), [Changing the User Password](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/changement_du_mot_de_passe_utilisateur) and [Associating an email with a vSphere user](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_edit_user).
+To do this, please refer to our guides on [Changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud), [Changing the User Password](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/changement_du_mot_de_passe_utilisateur) and [Associating an email with a vSphere user](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_edit_user).
 
 ##### **Key Management Server (KMS)**
 

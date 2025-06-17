@@ -50,7 +50,7 @@ Para verificar se o domínio utiliza a configuração DNS da OVHcloud, clique na
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
@@ -84,7 +84,7 @@ Para ativar (ou desativar) a solução **DNSSEC** para o seu domínio, clique na
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
@@ -117,7 +117,7 @@ Quando tiver concluído a obtenção destes 4 parâmetros, clique nas guias abai
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}

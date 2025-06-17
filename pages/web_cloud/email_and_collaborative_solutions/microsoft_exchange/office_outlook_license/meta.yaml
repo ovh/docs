@@ -1,3 +1,8 @@
 id: 177b3543-7f7c-40bf-a171-ce43498b3ab0
 full_slug: exchange-order-outlook-licence
 translation_banner: true
+disable_languages:
+- en-asia
+- en-au
+- en-sg
+- en-in

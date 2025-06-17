@@ -39,7 +39,7 @@ The window `Add an auto-reply` appears. Fill out the form according to the infor
 
 - `Auto-replies type`:
 
-**Associated with an email inbox**: To use if it concerns an existing email account of your email solution.</br>
+**Associated with an email inbox**: To use if it concerns an existing email account of your email solution.<br>
 **Free**: To use in the case of an email alias address. It is not linked to an existing account.
 
 - `Mailbox` or `Auto-reply name`:  Select the email account or alias address concerned by the automatic reply.

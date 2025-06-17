@@ -27,31 +27,31 @@ Ustalając limity przepustowości, zapewniamy, że API może utrzymać płynne i
 
 ### Keystone (API tożsamości OpenStack)
 
-Stosujemy limity przepustowości na poziomie**użytkownika** OpenStack.
+Stosujemy limity przepustowości na poziomie **użytkownika** OpenStack.
 
 Użytkownik może wykonać **60 zapytań na minutę** przed otrzymaniem odpowiedzi HTTP 429.
 
 ### Nova (API obliczeń OpenStack)
 
-Stosujemy limity przepustowości na poziomie **projektu* OpenStack.
+Stosujemy limity przepustowości na poziomie **projektu** OpenStack.
 
 Projekt może wykonać **20 zapytań na sekundę** przed otrzymaniem odpowiedzi HTTP 429.
 
 ### Neutron (API dla sieci OpenStack)
 
-Stosujemy limity przepustowości na poziomie **projektu* OpenStack.
+Stosujemy limity przepustowości na poziomie **projektu** OpenStack.
 
 Projekt może wykonać **20 zapytań na sekundę** przed otrzymaniem odpowiedzi HTTP 429.
 
 ### Glance (API dla obrazu OpenStack)
 
-Stosujemy limity przepustowości na poziomie **projektu* OpenStack.
+Stosujemy limity przepustowości na poziomie **projektu** OpenStack.
 
 Projekt może wykonać **20 zapytań na sekundę** przed otrzymaniem odpowiedzi HTTP 429.
 
 ### Cinder (API dla obliczeń OpenStack)
 
-Stosujemy limity przepustowości na poziomie **projektu* OpenStack.
+Stosujemy limity przepustowości na poziomie **projektu** OpenStack.
 
 Projekt może wykonać **20 zapytań na sekundę** przed otrzymaniem odpowiedzi HTTP 429.
 

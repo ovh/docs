@@ -67,7 +67,7 @@ Po utworzeniu odpowiedzi automatycznej zostanie ona wyświetlona na liście wido
 
 ![autoreply](images/email_responder02.png){.thumbnail}
 
-## Krok w przyszłość
+## Sprawdź również
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

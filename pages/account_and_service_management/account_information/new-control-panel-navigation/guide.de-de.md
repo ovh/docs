@@ -76,7 +76,7 @@ Unten links im Kundencenter finden Sie die Shortcuts, um unsere Partner auf unse
 
 - [Das Help Center von OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
 - [OVHcloud Partner-Suche](/links/partner)
-- [OVHcloud Status](https://www.status-ovhcloud.com/en)
+- [OVHcloud Status](https://www.status-ovhcloud.com/)
 - [How to get the carbon footprint of your OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/carbon_footprint) (EN)
 
 ///

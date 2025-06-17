@@ -56,8 +56,8 @@ Po zakończeniu weryfikacji, wybierz opcję aktywacji lub nie dodawania wpisów 
 
 |Włącz minimalne wpisy?|Szczegóły|
 |---|---|
-|Tak|Wybierz ten wybór, jeśli chcesz samodzielnie spersonalizować strefę DNS.</br>![minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
-|Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](/links/web/hosting){.external}, strefa jest wstępnie skonfigurowana do tego celu.</br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
+|Tak|Wybierz ten wybór, jeśli chcesz samodzielnie spersonalizować strefę DNS.<br>![minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
+|Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](/links/web/hosting){.external}, strefa jest wstępnie skonfigurowana do tego celu.<br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Po dokonaniu wyboru wykonaj kolejne kroki, aż do utworzenia strefy DNS.
 

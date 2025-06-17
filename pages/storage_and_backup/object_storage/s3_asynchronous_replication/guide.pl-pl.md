@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets (EN)
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2024-11-29
+updated: 2025-06-17
 ---
 
 ## Introduction
@@ -60,19 +60,19 @@ At its core, the asynchronous replication is designed to facilitate several key 
 
 - **Exact replica creation**
 
-![Schema 1](images/1.png)
+![Schema 1](images/1.png){.thumbnail}
 
 - **Replicate data within the same region**
 
-![Schema 2](images/2.png)
+![Schema 2](images/2.png){.thumbnail}
 
 - **Replicate data to a different region**
   
-![Schema 3](images/3.png)
+![Schema 3](images/3.png){.thumbnail}
 
 - **Replicate data to two different regions**
 
-![Schema 4](images/4.png)
+![Schema 4](images/4.png){.thumbnail}
 
 
 ### What is replicated and what is not
@@ -125,6 +125,7 @@ The basic structure of a replication rule within the configuration JSON file is 
       "Status": "Enabled"|"Disabled",
       "Destination": {
         "Bucket": "arn:aws:s3:::<your_bucket_name>",
+        "StorageClass": "STANDARD"|"STANDARD_IA"|"EXPRESS_ONEZONE"
       },
       "DeleteMarkerReplication": {
         "Status": "Enabled"|"Disabled"
@@ -146,6 +147,7 @@ The basic structure of a replication rule within the configuration JSON file is 
 | Destination             | A container for information about the replication destination and its configurations.                                    | Yes      |
 | DeleteMarkerReplication | Tells if delete operations should be replicated.                                                                         | Yes      |
 | Bucket                  | The destination bucket (to replicate to multiple destinations, you must create multiple replication rules).              | Yes      |
+| StorageClass | The destination storage class. By default, OVHcloud Object Storage uses the storage class of the source object to create the object replica.<br><br> Please note that **not all storage classes are available in all regions** i.e some storage classes are not supported in some regions such as EXPRESS_ONEZONE which is not supported in 3AZ regions. To learn more about the available storage classes in each region check [our documentation](/pages/storage_and_backup/object_storage/s3_location). | Yes |
 | And                     | You can apply multiple selection criteria in the filter.                                                                 | No       |
 
 ### Delete marker replication
@@ -397,7 +399,6 @@ $ aws s3api put-bucket-versioning --bucket my-source-bucket --versioning-configu
 $ aws s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
 ```
 
-
 #### Apply replication configuration
 
 Using the AWS CLI, replication configuration is applied on the source bucket.
@@ -438,6 +439,110 @@ $ aws s3api put-bucket-replication --bucket <source> --replication-configuration
 
 }
 ```
+
+### Using the OVHcloud Control Panel
+
+#### Prerequisites
+
+- A source and a destination bucket
+- Versioning **must** be activated on source **and** destination bucket
+
+#### Apply replication configuration
+
+Find your source bucket in the bucket listing.
+
+Either open the menu and click on `Manage replication`{.action}.
+
+![replication_screenshot_1](images/source-bucket-menu-EN.png){.thumbnail}
+
+Or click directly on your bucket and click on `Manage replication`{.action}.
+
+![replication_screenshot_2](images/source-bucket-details-EN.png){.thumbnail}
+
+Choose `Add a replication rule`{.action}.
+
+![replication_screenshot_3](images/replication-rules-EN.png){.thumbnail}
+
+Specify a name for your rule to help identify it later. The name is required and must be unique within the bucket.
+
+![replication_screenshot_4](images/replication-rule-creation-EN.png){.thumbnail}
+
+You can specify a prefix and/or tags to limit the scope of the objects to be replicated.
+
+> [!warning]
+> As a reminder, you cannot replicate delete markers if you are using tags to filter your objects.
+
+Under **Destination**, select a destination bucket. The selected bucket must have versioning enabled and if object lock has been enabled on the source bucket then it also must be enabled on the destination bucket.
+
+- By default, the objects will be replicated with the same storage class. However, you can choose to replicate the objects to another storage class.
+- If there are two or more rules with the same destination bucket, objects will be replicated according to the rule with the highest priority. The higher the number, the higher the priority.
+
+Under **Status**, `Enabled` is selected by default. An enabled rule starts to work as soon as you save it. If you want to disable the rule at creation and activate it later, choose `Disabled`.
+
+To finish, click on `Create the rule`{.action}.
+
+![replication_screenshot_5](images/replication-rules-success-EN.png){.thumbnail}
+
+#### Delete a replication rule
+
+In the Replication rules management view, you can delete a rule from the menu.
+
+![replication_screenshot_6](images/replication-rules-delete-EN.png){.thumbnail}
+
+### Offsite Replication option in 3-AZ regions
+
+With Object Storage in a 3-AZ region, we have introduced a new option called **Offsite Replication**, which simplifies the replication process and automatically replicates your data to a remote site for greater resiliency with a one-click action in the OVHcloud Control Panel. 
+This feature is only available for primary Object Storage in a 3-AZ region (to know more about existing 1-AZ and 3-AZ regions, see [Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location)) and is based on an OVHcloud auto-generated and managed replication rule configuration:
+
+- Data is replicated on a remote 1-AZ region. The system will automatically determine the most suitable location among Strasbourg, Gravelines, and Roubaix, ensuring efficient and reliable offsite data protection.
+- Objects stored in the replica bucket are stored in an **Infrequent Access** class and are billed differently. View pricing on [this page](/links/public-cloud/prices). This class is designed for less frequently accessed data and allow you to reduce your overall Object Storage bill together with Standard-class performance level. This said, if the destination bucket storage class doesn’t suit your needs, you can choose another approach and use the asynchronous replication feature and manage the replication rule configuration by yourself. 
+- The replica bucket and the replication rule configuration are then available for modification if needed.
+
+#### How can I access the option in the OVHcloud Control Panel?
+
+When creating a new bucket/container in a **3-AZ region**, you will be asked if you want to activave or not the Offsite Replication option. If enabled, and because it relies on the asynchronous replication feature, the versioning will be automatically enabled too.
+
+![OffsiteReplication](images/01-offsite-replication01.PNG){.thumbnail}
+
+#### What are the differences between the asynchronous replication feature and the Offsite Replication feature available in 3-AZ regions?
+
+The Offsite Replication option offered in 3-AZ regions is based on the asynchronous replication feature. With this Offsite Replication option, OVHcloud automatically generates a replication rule configuration with pre-filled parameters, whereas the S3-compatible asynchronous replication functionality allows the user to take control of the entire function (configuration and deployment).
+
+#### What if a replica bucket is deleted?
+
+The source objects that are to be replicated will have a replication status `FAILED` when Object Storage tries to replicate them but you will not get any errors.
+
+#### What about the initial replication rule?
+
+The initial rule will remain unchanged and active until you modify or disable it.
+
+#### What if a source bucket with offsite replication enabled is deleted? And what about the initial replication rule?
+
+Your replica bucket still exists but no more objects are replicated to it from your original source bucket. The initial replication rule is set up on the source bucket and thus will also be deleted.
+
+#### Where will be stored the replicated data as the replication rule configuration is managed by OVHcloud?
+
+Your replicated data is stored as any other data and will be stored in a bucket automatically generated by OVHcloud in a region of our choosing. The system will automatically determine the most suitable location between Strasbourg, Gravelines, and Roubaix, ensuring efficient and reliable offsite data protection.
+
+#### Can I modify the replication rule configuration?
+
+We recommend that you do not modify the auto-generated replication rule configuration to ensure optimal operation. However, as it is a standard asynchronous replication rule configuration, you can decide to enrich/upgrade it for advanced protection by following the steps highlighted in the sections above.
+
+#### What is the name of the replica bucket?
+
+The destination bucket name follows the pattern `backup-{src-region}-{dst-region}-{timestamp_in_ms}-{src-bucket}`.
+
+#### How can I access my backed up data and which actions are possible with the replica bucket?
+
+You can list/head/delete objects on this replica bucket. Data stored on the replica bucket are using the Infrequent Access storage class to help you optimizing your storage costs. As it is used for data protection reasons and supposed to be rarely accessed, this storage class is adapted and designed for such use cases. The replica bucket is exclusively dedicated to the Offiste Replication option. You can also read those objects, however a retrieval fee is applied for the Infrequent Access target storage class. View pricing on [this page](/links/public-cloud/prices).
+
+#### Which users/credentials can be used to access the destination bucket?
+
+When you activate the Offsite Replication during the source bucket creation, the same user that you associated with your source bucket will be associated with the replica bucket.
+
+#### How will my backup data be billed?
+
+You can access the details of the Offiste Replication pricing on the global Object Storage [pricing page](/links/public-cloud/prices). It is billed according to the storage space used, with a granularity of 1 GiB. To ensure readability, the price is displayed per GiB/month, but the billing granularity is per GiB/hour.
 
 ## Go further
 

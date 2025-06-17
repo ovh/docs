@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizar o FileZilla com o seu alojamento OVHcloud"
 excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no seu alojamento partilhado"
-updated: 2022-09-13
+updated: 2025-06-10
 ---
 
 ## Objetivo
@@ -23,6 +23,10 @@ Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](/pages/web
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting){.external}.
 - Ter instalado o software Filezilla no seu computador. Este último está disponível gratuitamente a partir da página [filezilla-project.org](https://filezilla-project.org/download.php){.external}
+
+> [!primary]
+>
+> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Apresentação da interface <a name="interface"></a>
 

@@ -26,7 +26,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr-ca/serveurs_dedies/){.external}
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external}
 - Avoir une ou plusieurs [Additional IP](/links/network/additional-ip){.external}.
 - Être connecté en SSH au serveur ou via remote desktop pour Windows.
 

@@ -16,7 +16,7 @@ A partir da interface Horizon, pode definir uma palavra-passe para cada utilizad
 
 ## Requisitos
 
-- Um projeto [Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) na sua conta OVHcloud
+- Um projeto [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) na sua conta OVHcloud
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções

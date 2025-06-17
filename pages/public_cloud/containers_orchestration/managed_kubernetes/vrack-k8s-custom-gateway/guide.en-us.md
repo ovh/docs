@@ -400,7 +400,7 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> 
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 >> 
->> ![Attach a Vrack gateway to an OVHcloud Managed Kubernetes cluster](images/attach-vrack-gateway-to-kubernetes-cluster.png)
+>> ![Attach a vRack gateway to an OVHcloud Managed Kubernetes cluster](images/attach-vrack-gateway-to-kubernetes-cluster.png)
 > Terraform
 >> > [!primary]
 >> > 

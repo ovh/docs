@@ -1,3 +1,8 @@
 id: bbde13f5-a004-4471-9a49-0dd89cdef373
 full_slug: email-cname-record
 translation_banner: true
+disable_languages:
+- en-asia
+- en-au
+- en-sg
+- en-in

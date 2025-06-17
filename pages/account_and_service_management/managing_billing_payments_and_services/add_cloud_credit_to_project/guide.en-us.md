@@ -21,7 +21,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`
 
 > [!warning]
 >
-Note that credit added in this section cannot be transferred or refunded. It does not have monetary value, and any credit that has not been used within 13 months of purchase will be lost.
+> Note that credit added in this section cannot be transferred or refunded. It does not have monetary value, and any credit that has not been used within 13 months of purchase will be lost.
 >
 
 ### Adding credit
@@ -54,7 +54,7 @@ The voucher balance will appear in the `Credits & Vouchers` list.
 
 > [!primary]
 >
-Since the validity periods of vouchers are usually more limited, the voucher balance will be used before the regular Public Cloud credit.
+> Since the validity periods of vouchers are usually more limited, the voucher balance will be used before the regular Public Cloud credit.
 >
 
 ## Go further

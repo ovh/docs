@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Activar las direcciones de correo incluidas"
 excerpt: "Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web"
-updated: 2024-12-12
+updated: 2025-06-03
 ---
 
 ## Objetivo
@@ -45,18 +45,6 @@ Se mostrará la ventana de activación. Seleccione el dominio que quiere utiliza
 > Atención: La activación de la opción de correo puede tardar unos minutos. Recibirá un mensaje de correo electrónico para confirmar la instalación y activación de la solución MXPLAN. Incluye, entre otras cosas, la gestión y la configuración de sus direcciones de correo.
 >
 
-### Conservar las direcciones de correo tras la expiración del alojamiento web
-
-Es posible conservar las direcciones de correo, incluso tras la expiración o la supresión del alojamiento web.
-
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
-
-En la columna `Configuración`, vaya a `Direcciones de correo`, haga clic en el botón `...`{.action} a la derecha y seleccione `Desvincular la opción de correo`{.action}.
-
-![Desvincular el correo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
-
-Tendrá la opción de contratar una solución MX personalizada. Una vez abonado el pedido, sus direcciones de correo seguirán funcionando tras la supresión del alojamiento web.
- 
 ### Eliminar la solución de correo asociada al alojamiento web
 
 Es posible eliminar definitivamente la solución de correo asociada a su alojamiento web.

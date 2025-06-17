@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Getting started
 excerpt: Discover AI Endpoints, the secure serverless platform by OVHcloud for developers to access top AI models with easy-to-use APIs. No AI expertise needed.
-updated: 2025-05-21
+updated: 2025-06-11
 ---
 
 > [!primary]
@@ -47,6 +47,11 @@ Once you have filled in the required information, click the `Create`{.action} bu
 ![API access key creation](images/api-access-key-creation-2.png){.thumbnail}
 
 *Note that this access key can be [revoked](#revoke-your-api-access-key) at any time.*
+
+> [!primary]
+>
+> **Only project administrators can create keys.**
+> 
 
 **3\. Store the created API access key**
 

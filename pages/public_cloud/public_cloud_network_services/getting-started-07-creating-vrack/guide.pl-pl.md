@@ -232,7 +232,7 @@ Możliwe są dwa scenariusze:
 
 **W przypadku nowej instancji**
 
-#### W Panelu klienta OVHcloud**
+#### W Panelu klienta OVHcloud
 
 Jeśli potrzebujesz pomocy, zapoznaj się z tym przewodnikiem: [Tworzenie instancji](/pages/public_cloud/compute/public-cloud-first-steps) Podczas tworzenia instancji w etapie 5 możesz wybrać tryb sieci, a następnie prywatną sieć, do której chcesz zintegrować instancję.
 
@@ -266,7 +266,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `P
 
 Kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym, a następnie kliknij pozycję `...`{.action} z prawej strony instancji. Wybierz opcję `Informacje o instancji`{.action} wystąpienia.
 
-![wystąpienie szczegółowe](images/vrack2021.png){.thumbnail}
+![wystąpienie szczegółowe](images/instance_details.png){.thumbnail}
 
 Spowoduje to otwarcie pulpitu nawigacyjnego instancji. Kliknij przycisk `...`{.action} po prawej stronie "Prywatne sieci", a następnie na `Przypisz sieć`{.action}.
 

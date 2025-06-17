@@ -164,8 +164,8 @@ Para crear el registro DynHost, haga clic en las fichas siguientes para ver cada
 >>
 >> |Campo|Descripción|
 >> |---|---|
->> |Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost.</br></br>**Si desea implementar un DynHost directamente para su dominio, deje este formulario de entrada vacío**|
->> |IP de destino|Introduzca la dirección IP (IPv4 o IPv6) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado.</br></br>Según el principio DynHost, esta se actualizará automáticamente más adelante.</br></br>Este formulario solo debe incluir una dirección IP.|
+>> |Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost.<br><br>**Si desea implementar un DynHost directamente para su dominio, deje este formulario de entrada vacío**|
+>> |IP de destino|Introduzca la dirección IP (IPv4 o IPv6) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado.<br><br>Según el principio DynHost, esta se actualizará automáticamente más adelante.<br><br>Este formulario solo debe incluir una dirección IP.|
 >>
 >> > [!warning]
 >> >

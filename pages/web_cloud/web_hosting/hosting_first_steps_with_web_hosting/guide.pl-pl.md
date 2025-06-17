@@ -27,7 +27,7 @@ Chcesz stworzyć stronę WWW dla swojej firmy lub własny blog? Potrzebujesz skl
 > - Chcesz przenieść istniejącą stronę WWW do innego dostawcy hostingu? Sprawdź przewodnik: [Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 > - Chcesz mieć tylko jedną prostą stronę główną? Sprawdź przewodnik: [Hosting WWW - Włącz darmowy hosting 100M](/pages/web_cloud/web_hosting/activate_start10m).
 
-## Wymagania
+## Wymagania początkowe
 
 - Posiadanie hostingu [OVHcloud](/links/web/hosting) z co najmniej jedną dostępną bazą danych (poza ofertą darmowego hostingu 100M).
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany.

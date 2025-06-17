@@ -10,7 +10,7 @@ Może zaistnieć potrzeba przeniesienia dodatkowych wolumenów z jednego regionu
 
 **Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego regionu OpenStack do innego.**
 
-## Wymagania
+## Wymagania początkowe
 
 Do przeniesienia będziesz potrzebował środowiska z:
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Come iniziare con Object Storage (EN)
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2025-05-05
+updated: 2025-06-04
 ---
 
 <style>
@@ -31,7 +31,7 @@ This guide is designed to familiarise you with the management of your containers
 > - for **Standard object storage - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pcs_create_container).
 > - for **Cloud Archive - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pca_create_container).
 >
-> For new projects, we highly recommend using our S3<sup>*</sup>-compatible Object Storage which benefits from our latest innovations and new features.
+> For new projects, we highly recommend using our S3<sup>1</sup>-compatible Object Storage which benefits from our latest innovations and new features.
 > 
 
 ## Requirements
@@ -50,32 +50,6 @@ This guide is designed to familiarise you with the management of your containers
 ### Preparation
 
 /// details | To use the AWS CLI
-
-> [!warning]
->
-> AWS CLI and SDK compatibility warning
->
-> Recently, Amazon Web Services (AWS) implemented a change that strengthens checksums when using the S3 API. These new integrity checks are currently being integrated into our platform. The following headers are not supported:
->
-> - `x-amz-content-sha256 with value STREAMING-UNSIGNED-PAYLOAD-TRAILER`
-> - `x-amz-sdk-checksum-algorithm with value CRC32`
->
-> Until our Object Storage service is updated, we recommend that you use the maximum supported versions of the CLI, SDK and other AWS tools below:
->
-> - boto3 1.35.99
-> - legacy aws cli 1.36.40
-> - aws cli 2.22.35
-> - aws-sdk-go 1.72.3
-> - aws-sdk-java 2.29.52
-> - aws-sdk-js-v3 3.726.1
-> - aws-sdk-net 3.7.962.0
-> - aws-sdk-php 3.336.15
-> - aws-sdk-ruby 1.177.0
->
-> Find out more [here](https://docs.aws.amazon.com/fr_fr/sdkref/latest/guide/feature-dataintegrity.html){.external}.
->
-> Follow OVHcloud related updates [here](https://public-cloud.status-ovhcloud.com/incidents/491vx956zx6b).
-> 
 
 To find out how to install the AWS CLI in your environment, we recommend you to read [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions){.external}.
 
@@ -293,23 +267,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 
 #### Uploading your files as objects in your bucket
 
-/// details | Differences between storage class of type **Standard** and **High Performance**
-
-**Standard Storage Class:**
-
-- Designed for general-purpose storage with a balance of cost and performance.
-- Suitable for workloads with moderate access frequency.
-- Provides durability and availability but may have slightly higher access latency.
-- Best for backups, archiving, and infrequently accessed data.
-
-**High Performance Storage Class:**
-
-- Optimized for low-latency and high-throughput workloads.
-- Ideal for frequent and intensive read/write operations.
-- Suitable for data analytics, AI/ML workloads, and real-time applications.
-- Typically costs more than Standard storage but offers better performance.
-
-///
+As part of the object upload process to an Object Storage bucket, users can select the desired storage class for their objects, providing control over storage characteristics such as availability, redundancy, and cost. To help you in choosing the best class for your requirements, check the documentation [here](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!tabs]
 > Via AWS CLI
@@ -364,7 +322,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ![Upload file](images/upload-file.png){.thumbnail}
 >>
->> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class between **Standard** and **High Performance**. Finally, select the file you are about to download and click on the `Import`{.action} button.
+>> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class. Finally, select the file you are about to download and click on the `Import`{.action} button.
 >>
 >> ![upload file window](images/upload-files-window.png)
 
@@ -582,4 +540,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-<sup>*</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

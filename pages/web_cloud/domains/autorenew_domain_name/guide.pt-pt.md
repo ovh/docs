@@ -1,7 +1,7 @@
 ---
 title: "Renovar os meus nomes de domínio OVHcloud"
 excerpt: "Saiba porquê e como renovar os seus nomes de domínio OVHcloud"
-updated: 2025-02-17
+updated: 2025-06-13
 ---
 
 ## Objetivo
@@ -107,6 +107,21 @@ Efetue os seguintes procedimentos:
 Pode renovar o serviço a qualquer momento antes de o seu fim de validade e pode igualmente escolher o período de renovação.
 Neste caso, o período de validade subscrito será adicionado ao período de validade a decorrer. Não perderá o tempo de validade restante.
 
+### Acompanhar a renovação do meu domínio
+
+Uma vez o débito da renovação efetuado, o nome de domínio será renovado no dia anterior à sua expiração (cerca de um mês após o débito direto).
+
+Os dados apresentados no WHOIS serão atualizados, confirmando a renovação do domínio.
+
+Para verificar o estado da renovação do seu domínio:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager).
+1. Aceda à secção `Web Cloud`{.action}.
+1. Clique em `Nomes de domínio`{.action} na secção `Domínios e DNS`{.action}.
+1. Na tabela que se abrir, verifique o estado da renovação na coluna `Estado` na linha do domínio em questão.
+
+A menção `Renovação em curso` é apresentada quando o pagamento é efetuado, até à renovação efetiva do seu nome de domínio junto do registry.
+
 ### Rescindir o meu nome de domínio
 
 - Na tabela, identifique o domínio que pretende renovar.
@@ -124,11 +139,6 @@ Para mais informações sobre a rescisão dos serviços OVHcloud, siga as instru
 
 ### Aceder à fatura de renovação do meu nome de domínio
 
-> [!primary]
->
-> A fatura só está disponível no dia da renovação do nome de domínio (30 dias após o débito em caso de renovação automática).
->
-
 É apresentada uma mensagem `Fatura por pagar` quando uma fatura está a aguardar pagamento e quando:
 
  - possui serviços em renovação automática;
@@ -138,23 +148,53 @@ Basta então escolher a ação `Pagar a minha fatura`{.action} que lhe redirecio
 
 ## FAQ
 
-> [!faq]
->
-> Esqueci-me de renovar o meu nome de domínio a tempo, o que fazer?
->> Verifique o estado do domínio utilizando a ferramenta [Whois de um domínio](/links/web/domains-whois).
->> Se se tratar de um nome de domínio genérico (.com, .org, .net, etc.), este ficará "reservado" durante um período dito de "*graça*" (cerca de 7 dias) e durante o período de "*redenção*" (cerca de 35 a 40 dias suplementares). Estes prazos são variáveis e dependem da extensão e das regras do registo que detém a extensão. Apenas você poderá renovar o nome de domínio durante estes dois períodos.
->> Durante o período de graça, poderá renová-lo através da Área de Cliente, seguindo as etapas deste guia.
->> Durante o período de redenção, o domínio não é gerido pela OVHcloud. A sua renovação através da Área de Cliente provocará custos suplementares (custos de restauro, que variam em função da extensão. Consulte os preços ao clicar na extensão em causa [aqui](/links/web/domains-tld).)
->> Após o período de redenção, o domínio entra numa fase de eliminação que pode durar vários dias, antes de voltar a ficar disponível no domínio público. Se desejar recuperar a utilização, aconselhamos-o a utilizar a ferramenta [Whois de um domínio](/links/web/domains-whois) para verificar a sua disponibilidade regularmente.
-> Não quero renovar o meu nome de domínio mas transferi-lo para um outro agente de registo que não seja a OVHcloud. Como fazer?
->> Siga as instruções do nosso guia "[Transferir um domínio para outro agente de registo](/pages/web_cloud/domains/transfer_outgoing_domain)".
-> Estou em renovação automática e fui debitado automaticamente. No entanto, não quero conservar o meu nome de domínio e quero ser reembolsado.
->> É possível ser automaticamente reembolsado até 10 dias antes da data de renovação efetiva do nome de domínio. Para isso, rescinda o nome de domínio.
+/// details | Esqueci-me de renovar o meu nome de domínio a tempo, o que fazer?
+
+Verifique o estado do domínio utilizando a ferramenta [Whois de um domínio](/links/web/domains-whois).
+
+Se se tratar de um nome de domínio genérico (.com, .org, .net, etc.), este ficará "reservado" durante um período dito de "*graça*" (cerca de 7 dias) e durante o período de "*redenção*" (cerca de 35 a 40 dias suplementares). Estes prazos são variáveis e dependem da extensão e das regras do registo que detém a extensão. Apenas você poderá renovar o nome de domínio durante estes dois períodos.
+
+Durante o período de graça, poderá renová-lo através da Área de Cliente, seguindo as etapas deste guia.
+
+Durante o período de redenção, o domínio não é gerido pela OVHcloud. A sua renovação através da Área de Cliente provocará custos suplementares (custos de restauro, que variam em função da extensão. Consulte os preços ao clicar na extensão em causa [aqui](/links/web/domains-tld).)
+
+Após o período de redenção, o domínio entra numa fase de eliminação que pode durar vários dias, antes de voltar a ficar disponível no domínio público. Se desejar recuperar a utilização, aconselhamos-o a utilizar a ferramenta [Whois de um domínio](/links/web/domains-whois) para verificar a sua disponibilidade regularmente.
+
+///
+
+/// details | Não quero renovar o meu nome de domínio mas transferi-lo para um outro agente de registo que não seja a OVHcloud. Como fazer?
+
+Siga as instruções do nosso guia "[Transferir um domínio para outro agente de registo](/pages/web_cloud/domains/transfer_outgoing_domain)".
+
+Estou em renovação automática e fui debitado automaticamente. No entanto, não quero conservar o meu nome de domínio e quero ser reembolsado.
+
+É possível ser automaticamente reembolsado até 10 dias antes da data de renovação efetiva do nome de domínio. Para isso, rescinda o nome de domínio.
+
+///
+
+/// details | Renovei o meu nome de domínio, mas o WHOIS continua desatualizado. Como posso assegurar-me de que o domínio foi renovado?
+
+Depois de efetuado o pagamento das taxas de renovação, enviamos o pedido ao agente de registo competente.
+
+O estado do seu domínio será alterado para `Renovação em curso`.
+
+Após a renovação efetuada pelo registry (cerca de um mês após o pagamento das taxas de renovação), o estado do seu nome de domínio passará a ser apresentado com a menção "registado".
+
+Os dados do WHOIS serão atualizados posteriormente.
+
+Para verificar o estado da renovação do seu domínio:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager).
+1. Aceda à secção `Web Cloud`{.action}.
+1. Clique em `Nomes de domínio`{.action} na secção `Domínios e DNS`{.action}.
+1. Na tabela que se abrir, verifique o estado da renovação na coluna `Estado` na linha do domínio em questão.
+
+///
 
 ## Quer saber mais?
 
-Este guia não respondeu à sua pergunta? Consulte [FAQ sobre faturação e pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/faq-billing)
+Este guia não respondeu à sua pergunta? Consulte [FAQ sobre faturação e pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/faq-billing).
 
 [Como renovar os meus serviços OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 
-Fale com nossa [comunidade de utilizadores](/links/community)
+Fale com a nossa [comunidade de utilizadores](/links/community).

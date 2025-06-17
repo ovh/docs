@@ -13,7 +13,7 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 > [!warning]
 >OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
->This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to the [OVHcloud community](/links/community) if you encounter any difficulties. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to the [OVHcloud community](/links/community) if you encounter any difficulties. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements

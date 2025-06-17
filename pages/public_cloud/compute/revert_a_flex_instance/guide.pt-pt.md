@@ -10,9 +10,9 @@ updated: 2024-07-17
 
 ## Objetivo
 
-Uma instância *flex* é uma instância de disco único (50 GB) que oferece um processo mais rápido para as snapshots. Permite um redimensionamento para modelos superiores ou inferiores com um espaço de armazenamento fixo, ao passo que os modelos clássicos só podem ser redimensionados para modelos superiores.</br> Com uma infraestrutura em constante evolução, pode ter necessidade de aumentar o espaço de armazenamento da sua instância. Neste caso, deverá migrar a sua instância *flex* para um modelo clássico. Esta ação só é possível a partir da interface Horizon.
+Uma instância *flex* é uma instância de disco único (50 GB) que oferece um processo mais rápido para as snapshots. Permite um redimensionamento para modelos superiores ou inferiores com um espaço de armazenamento fixo, ao passo que os modelos clássicos só podem ser redimensionados para modelos superiores.<br> Com uma infraestrutura em constante evolução, pode ter necessidade de aumentar o espaço de armazenamento da sua instância. Neste caso, deverá migrar a sua instância *flex* para um modelo clássico. Esta ação só é possível a partir da interface Horizon.
 
-</br>**Este guia explica-lhe como migrar de um modelo *flex* para um modelo clássico e redimensionar a sua instância *flex* a partir da interface OpenStack Horizon.**
+<br>**Este guia explica-lhe como migrar de um modelo *flex* para um modelo clássico e redimensionar a sua instância *flex* a partir da interface OpenStack Horizon.**
 
 ## Requisitos
 

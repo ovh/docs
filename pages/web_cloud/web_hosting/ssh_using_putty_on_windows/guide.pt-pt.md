@@ -395,7 +395,7 @@ Abra a aplicação Pageant [no seu computador](#installation). Uma vez que a jan
 
 ![pageant](/pages/assets/screens/other/web-tools/putty/systray.png){.thumbnail}
 
-Esta ação irá abrir a **Lista de chaves do pagante**. Clique no botão "Add Key" {.action} e selecione o ficheiro de chave privada (`keyfile.ppk`) na pasta onde o guardou.
+Esta ação irá abrir a **Lista de chaves do pagante**. Clique no botão `Add Key`{.action} e selecione o ficheiro de chave privada (`keyfile.ppk`) na pasta onde o guardou.
 
 ![pageant](/pages/assets/screens/other/web-tools/putty/pageant1.png){.thumbnail}
 

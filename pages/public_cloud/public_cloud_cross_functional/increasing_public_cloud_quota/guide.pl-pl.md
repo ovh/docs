@@ -1,7 +1,7 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-updated: 2025-04-28
+updated: 2025-05-30
 ---
 
 > [!primary]
@@ -28,6 +28,12 @@ Jeśli chcesz utworzyć więcej zasobów, musisz zwiększyć limit.
 Zgodnie z wewnętrznymi kryteriami (staż pracy, istnienie faktur zapłaconych...) możesz teraz dowolnie wnioskować o zwiększenie limitu zasobów projektu Public Cloud bezpośrednio w Panelu klienta OVHcloud.
 
 Możesz zwiększyć limit zasobów ręcznie lub automatycznie.
+
+> [!primary]
+> Jeśli potrzebujesz zwiększyć limit rozmiaru, a przycisk `Zwiększ limity`{.action} nie jest dostępny w Twoim Panelu klienta, kliknij przycisk `Skontaktuj się z pomocą techni`{.action}.
+>
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 #### Ręczne zwiększanie limitu zasobów
 

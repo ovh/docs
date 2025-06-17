@@ -39,7 +39,7 @@ Plik OpenRC odpowiada użytkownikowi, a także strefie. Nie można zarządzać k
 * Załaduj treść pliku do bieżącego środowiska. Zostanie wyświetlony monit o podanie hasła odpowiedniego użytkownika Horizon.
 
 ```bash
-admin@vpsxxxxxx:~$ source openrc.sh
+admin@remote_host:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
@@ -78,4 +78,4 @@ set OS_PASSWORD="Hasło użytkownika Horizon"
 
 Informacje na temat korzystania z OpenStack: [Dokumentacja OpenStack](https://docs.openstack.org/){.external}
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

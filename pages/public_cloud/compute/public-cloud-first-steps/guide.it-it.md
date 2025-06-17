@@ -426,7 +426,7 @@ Se la tua [coppia di chiavi SSH è configurata correttamente](#create-ssh), puoi
 
 > [!primary]
 >
-> Se ricevi messaggi di errore relativi alle **chiavi SSH**, verifica che il tuo dispositivo locale disponga di una chiave SSH privata configurata correttamente utilizzando le informazioni di [questa guida](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> Se ricevi messaggi di errore relativi alle **chiavi SSH**, verifica che il tuo dispositivo locale disponga di una chiave SSH privata configurata correttamente utilizzando le informazioni di [questa guida](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > In caso di difficoltà, è possibile sostituire la coppia di chiavi utilizzando [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Se hai creato un’istanza senza chiave SSH, tramite l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) o l’[interfaccia OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), puoi aggiungere una chiave SSH alla tua istanza soltanto tramite il [modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) seguendo le istruzioni descritte in [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).

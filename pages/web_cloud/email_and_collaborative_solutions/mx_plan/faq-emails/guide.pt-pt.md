@@ -31,37 +31,37 @@ A OVHcloud oferece atualmente 4 ofertas de e-mail. Para compreender as suas espe
 
 > [!tabs]
 > **E-mails / MX Plan**
->>>
+>>
 >>![MX Plan](images/mxplan01.png){.thumbnail .w-500}
->>>
+>>
 >> 1. A oferta de e-mail mais antiga da OVHcloud, que inclui as funções essenciais de um serviço de e-mail com 5 GB de espaço de armazenamento por conta de e-mail.
 >> 2. Incluída com as ofertas de alojamento web e pode ser encomendada através da [Área de Cliente OVHcloud](/links/manager).
 >> 3. Esta oferta está disponível em 3 tecnologias de correio eletrónico diferentes. **Roundcube**, **OWA** (Outlook Web Access) e **Zimbra**.
->>>
+>>
 > **Zimbra Mail**
->>>
+>>
 >>![Zimbra Mail](images/zimbra01.png){.thumbnail .w-500}
->>>
+>>
 >> 1. Oferta de e-mail mais recente da OVHcloud, oferece um serviço de e-mail flexível e evolutivo em três níveis de oferta e de funcionalidades.
 >> 2. Pode encomendar uma conta Zimbra através da [Área de Cliente OVHcloud](/links/manager) ou diretamente em [ovhcloud.com](/links/web/email).
 >> 3. Como o nome indica, utiliza a interface **Zimbra**.
->>>
+>>
 > **E-mails Pro**
->>>
->>>![Email Pro](images/emailpro01.png){.thumbnail .w-500}
->>>
+>>
+>>![Email Pro](images/emailpro01.png){.thumbnail .w-500}
+>>
 >> 1. Oferta de e-mail baseada na tecnologia Exchange, com funcionalidades essenciais e um espaço de armazenamento de 10 GB.
 >> 2. Pode encomendar uma conta E-mail Pro através da [Área de Cliente OVHcloud](/links/manager) ou diretamente através de [ovhcloud.com](/links/web/email).
 >> 3. Esta oferta utiliza a interface webmail **OWA** (Outlook Web Access).
->>>
+>>
 > **Exchange**
->>>
->>>![Exchange](images/exchange01.png){.thumbnail .w-500}
->>>
+>>
+>>![Exchange](images/exchange01.png){.thumbnail .w-500}
+>>
 >> 1. Oferta de e-mail completa com funcionalidades de colaboração online com 50 GB ou 300 GB de espaço de armazenamento.
 >> 2. Incluída com as ofertas de alojamento web e pode ser encomendada através da [Área de Cliente OVHcloud](/links/manager).
 >> 3. Esta oferta utiliza a interface webmail **OWA** (Outlook Web Access).
->>>
+>>
 
 > [!success]
 >

@@ -20,7 +20,7 @@ Na przykład w przypadku chęci skonfigurowania kilku kluczy SSH dla instancji l
 - [Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [Pobranie zmiennych środowiskowych OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
-## Wymagania początkowe
+## W praktyce
 
 ### Utworzenie skryptu
 

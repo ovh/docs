@@ -266,7 +266,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie 
 
 Klicken Sie links im Menü auf `Instanzen`{.action}. Klicken Sie dann auf `...`{.action} rechts neben der betreffenden Instanz und anschließend auf `Instanz-Details`{.action}.
 
-![Instance](images/vrack2021.png){.thumbnail}
+![Instance](images/instance_details.png){.thumbnail}
 
 Dadurch wird das Dashboard der Instanz geöffnet. Klicken Sie auf `...`{.action} neben "Private(s) Netzwerk(e)", und wählen Sie `Netzwerk hinzufügen`{.action}.
 

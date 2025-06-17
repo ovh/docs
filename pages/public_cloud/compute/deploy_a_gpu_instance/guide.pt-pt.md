@@ -161,6 +161,6 @@ Depois desse processo, basta instalar o driver necessário que será depois apre
 > Antes de qualquer atualização do driver NVIDIA, é fortemente recomendado que efetue uma snapshot da sua instância, o que lhe permitirá voltar atrás caso seja necessário.
 >
 
-## Vá mais longe
+## Quer saber mais?
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

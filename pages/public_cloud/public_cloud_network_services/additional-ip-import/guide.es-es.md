@@ -53,7 +53,7 @@ Haga clic en `Importar`{.action} para confirmar la operación.
 
 Espere a que finalice la importación en unos minutos. Abra la pestaña `Additional IP`{.action} para buscar la dirección IP importada. Actualice la página si es necesario.
 
-Haga clic en `..`{.action} a la derecha y seleccione `Editar la instancia asociada`{.action}.
+Haga clic en `...`{.action} a la derecha y seleccione `Editar la instancia asociada`{.action}.
 
 ![Importación IP](images/import22_04.png){.thumbnail}
 

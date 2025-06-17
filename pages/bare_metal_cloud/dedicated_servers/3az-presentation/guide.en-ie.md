@@ -1,7 +1,7 @@
 ---
 title: 'Bare Metal 3-AZ Region - Service presentation'
 excerpt: 'Discover Bare Metal 3-AZ service, offering unparalleled high availability and redundancy across three data centers'
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Objective
@@ -9,6 +9,21 @@ updated: 2025-04-28
 OVHcloud offers its innovative Bare Metal service in the [3-AZ region](/links/bare-metal/regions), a significant development in the company's regionalization strategy. This service, available in the Paris metropolitan area, sets a new industry standard for reliability and performance in Bare Metal servers.
 
 Bare Metal in the 3-AZ region caters to customers requiring high availability and redundancy in their business continuity plans. This service provides Bare Metal servers across three proximal data centers in Paris, connected by a low-latency network. It ensures enhanced security, improved performance, and uninterrupted functionality, even in the event of localized incidents.
+
+> [!primary]
+>
+> **Important Notice - Evolution of Bare Metal 3-AZ Offering**
+>
+> Starting May 2025, the delivery model for Bare Metal servers in the Paris 3-AZ region is significantly evolving. The previous paradigm of mandatory delivery in clusters of 3 servers (one in each availability zone) will be discontinued.
+>
+> **Key changes:**
+>
+> - Customers will now be able to freely select the exact number of servers they require.
+> - The distribution of servers across different availability zones (AZ) will be fully customizable.
+> - No obligation to deploy in all three zones simultaneously.
+>
+> **Important:** The information presented in this guide, particularly concerning the mandatory cluster deployment and potentially the user experience reflecting this model, primarily applies to customers whose servers were delivered *before May 2025* under the previous cluster model. New deployments starting from May 2025 will benefit from the flexibility of the new model, and potentially an adapted interface experience. For any questions regarding this evolution or to adapt your existing infrastructure, please contact your account manager or OVHcloud support.
+>
 
 ## Overview
 

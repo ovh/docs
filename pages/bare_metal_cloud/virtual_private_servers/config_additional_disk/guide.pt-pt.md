@@ -301,6 +301,6 @@ No separador `Página Inicial`{.action}, expanda o ecrã até à zona intitulada
 
 ![rescisão de disco adicional](images/disk_vps02.png){.thumbnail}
 
-## Vá mais longe
+## Quer saber mais?
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

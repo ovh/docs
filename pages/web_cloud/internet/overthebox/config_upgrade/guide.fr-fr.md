@@ -1,7 +1,7 @@
 ---
 title: 'Comment mettre à jour un appareil OverTheBox ?'
 excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
-updated: 2025-04-03
+updated: 2025-06-05
 ---
 
 ## Objectif
@@ -127,14 +127,14 @@ Dans ce cas, les recommandations sont les suivantes :
 
 ### Matrice des versions
 
-| Canal | OverTheBox | OpenWRT | Linux | MPTCP | Compatibilité du matériel |
-| ---  | :---: | :---: | :---: | :---: | ---: |
-| v0.8_deprecated | v0.8.2 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3|
-| v0.9 | v0.9.6 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| v1.0 | v1.0.4 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
-| v1.1 | v1.1.1 | 24.10.0 | 6.6.73 | v1 | v3lte, v3, v2b, v2c |
-| stable | v1.0.4 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
-| beta | v1.1.1 | 24.10.0 | 6.6.73 | v1 | v3lte, v3, v2b, v2c |
+| Canal | OverTheBox | OpenWRT | Linux | MPTCP | IPv6 | Compatibilité du matériel |
+| ---  | :---: | :---: | :---: | :---: | :---: | ---: |
+| v0.8_deprecated | v0.8.2 | 19.07.10 | 4.14.276 | v0.94 | &#10060; | nuc, ITv1, rpi3 |
+| v0.9 | v0.9.6 | 21.02.5 | 5.4.217 | v0.96 | &#10060; | v2b, v2c |
+| v1.0 | v1.0.4 | 23.05.5 | 5.15.167 | v1 | &#10060; | v3lte, v3, v2b, v2c |
+| v1.1 | v1.1.2 | 24.10.1 | 6.6.86 | v1 | &#9989; | v3lte, v3, v2b, v2c |
+| stable | v1.0.4 | 23.05.5 | 5.15.167 | v1 | &#10060; | v3lte, v3, v2b, v2c |
+| beta | v1.1.2 | 24.10.1 | 6.6.86 | v1 | &#9989; | v3lte, v3, v2b, v2c |
 
 ### Revenir sur une version antérieure
 

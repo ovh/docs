@@ -5,7 +5,7 @@ updated: 2025-04-28
 ---
 
 
-## Cel <a name="objective"></a>
+## Wprowadzenie <a name="objective"></a>
 
 Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego zarządzania różnymi funkcjami (w tym zmianą hasła). Funkcje te zależą od rodzaju wprowadzonej delegacji:
 

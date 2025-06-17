@@ -269,7 +269,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la secci�
 
 En la columna izquierda, haga clic en `Instancias`{.action}. Haga clic en el botón `...`{.action} a la derecha de la instancia correspondiente y, seguidamente, en `Detalles de la instancia`{.action}.
 
-![detail instance](images/vrack2021.png){.thumbnail}
+![detail instance](images/instance_details.png){.thumbnail}
 
 Se mostrará el panel de control de la instancia. Haga clic en el botón `...`{.action} a la derecha de "Red(es) privada(s)" y, seguidamente, en `Asociar una red`{.action}.
 

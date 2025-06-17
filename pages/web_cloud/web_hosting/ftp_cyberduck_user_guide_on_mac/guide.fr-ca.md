@@ -1,7 +1,7 @@
 ---
 title: Tutoriel - Utiliser Cyberduck avec votre hébergement web OVHcloud
 excerpt: Découvrez comment utiliser l’application Cyberduck pour vous connecter à votre hébergement web OVHcloud.
-updated: 2024-02-23
+updated: 2025-06-10
 ---
 
 ## Objectif
@@ -29,6 +29,10 @@ Pour télécharger Cyberduck, rendez-vous sur le [site officiel](https://cyberdu
 
 - Disposer d'une offre d'[hébergement web](/links/web/hosting){.external}.
 - Avoir téléchargé et installé l'application Cyberduck sur votre ordinateur.
+
+> [!primary]
+>
+> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne FTP Explorer/Net2FTP. Pour continuer à vous connecter en FTP à votre hébergement web, utilisez les logiciels [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## En pratique
 

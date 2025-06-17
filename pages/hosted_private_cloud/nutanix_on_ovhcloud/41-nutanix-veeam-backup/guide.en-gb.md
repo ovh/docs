@@ -4,7 +4,7 @@ excerpt: Installing Veeam Backup on a Nutanix cluster
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
-updated: 2022-05-31
+updated: 2025-06-06
 ---
 
 ## Objective
@@ -22,16 +22,16 @@ Veeam Backup is a backup software available for Nutanix.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You must be connected to the cluster via **Prism Central**. 
 - **Veeam Backup & Replication** installed on a virtual machine in your Nutanix cluster via this procedure: [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 - Knowing the public IP address used by **Veeam Backup** to access the internet.
 - You must have 4 GB of RAM, 60 GB of storage and 4 vCPUs to add an additional virtual machine when configuring extensions for **Veeam Backup & Replication**.
-- You must have remote storage outside of the cluster, such as [OVHcloud Enterprise File Storage](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/).
+- You must have remote storage outside of the cluster, such as [OVHcloud Object Storage via S3<sup>1</sup>](/links/public-cloud/object-storage).
 
 ## Instructions
 
-We will customise **Veeam Backup & Replication** for use on a Nutanix cluster, with a remote repository for this cluster at OVHcloud, using the [OVHcloud Enterprise File Storage solution](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/).
+We will customise **Veeam Backup & Replication** for use on a Nutanix cluster, with a remote repository for this cluster at OVHcloud, using the [OVHcloud Object Storage via S3 solution](/links/public-cloud/object-storage).
 
 ### Add a user in Prism Element for Veeam Backup
 
@@ -262,96 +262,13 @@ Save the file and run this command:
 proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 [sudo] password for proxy_user:
 ```
+### Add S3 Object Storage repository in Veeam Backup
 
-### Creating the Enterprise File Storage volume via the OVHcloud Control Panel
-
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Bare Metal Cloud`{.action} tab, go to `Storage and Backup`{.action}. Select `Enterprise File Storage`{.action}, then the service that will be used for the **Veeam Backup**.
-
-![Create Enterprise Storage Volume 01](images/04-create-enterprise-storage-volume01.png){.thumbnail}
-
-In the `Volumes`{.action} tab, click `Create a volume`{.action}.
-
-![Create Enterprise Storage Volume 02](images/04-create-enterprise-storage-volume02.png){.thumbnail}
-
-Choose these options to create a 500 GB volume.
-
-- **Volume name (optional)**: `BACKUP`
-- **Description (optional)**: `BACKUP`
-- **Volume size**: `500`
-
-![Create Enterprise Storage Volume 03](images/04-create-enterprise-storage-volume03.png){.thumbnail}
-
-Modify the settings of the new volume by clicking on the `...`{.action} button. Choose `Modify Volume`{.action}.
-
-![Create Enterprise Storage Volume 04](images/04-create-enterprise-storage-volume04.png){.thumbnail}
-
-In the `Access Control (ACL)`{.action} tab, click `Add a new access`{.action}.
-
-![Create Enterprise Storage Volume 05](images/04-create-enterprise-storage-volume05.png){.thumbnail}
-
-In the “Access to” field, enter the public IP address used on the VM Veeam Backup that serves as an internet gateway.
-In the “Access permissions” field, choose `Read and write`{.action}.
-
-![Create Enterprise Storage Volume 06](images/04-create-enterprise-storage-volume06.png){.thumbnail}
-
-Once validated, a message will appear informing you that the access control has been created.
-
-![Create Enterprise Storage Volume 07](images/04-create-enterprise-storage-volume07.png){.thumbnail}
-
-In the `General Information`{.action} tab, click the `Copy`{.action} icon to copy the "Mount path".  
+You can store your backups in [OVHcloud Object Storage via S3](/links/public-cloud/object-storage) directly from Veeam Backup & Replication.
 
 > [!primary]
-> The copied item is the repository that is used by **Veeam Backup**.
-> The syntax should be similar to: **ipaddress://share_name**.
->
-
-![Create Enterprise Storage Volume 08](images/04-create-enterprise-storage-volume08.png){.thumbnail}
-
-### Add Enterprise File Storage repository in Veeam Backup
-
-Via the **Veeam Backup** console, click on `Backup Infrastructure`{.action} at the bottom right, choose `Backup Repositories`{.action} and click on `Add repository`{.action}. 
-
-![Add Enterprise File Storage repository 01](images/05-add-enterprise-file-storage-repository01.png){.thumbnail}
-
-Choisissez `Network attached storage`{.action}. 
-
-![Add Enterprise File Storage repository 02](images/05-add-enterprise-file-storage-repository02.png){.thumbnail}
-
-Click on `NFS share`{.action}.
-
-![Add Enterprise File Storage repository 03](images/05-add-enterprise-file-storage-repository03.png){.thumbnail}
-
-Name the repository and click `Next`{.action}.
-
-![Add Enterprise File Storage repository 04](images/05-add-enterprise-file-storage-repository04.png){.thumbnail}
-
-In the “Shared folder” field, type or paste the name of the shared volume and click `Next`{.action}.
-
-> [!primary]
-> Enter the "Mount path" copied from the OVHcloud Control Panel.
->
-
-![Add Enterprise File Storage repository 05](images/05-add-enterprise-file-storage-repository05.png){.thumbnail}
-
-Click `Next`{.action}.
-
-![Add Enterprise File Storage repository 06](images/05-add-enterprise-file-storage-repository06.png){.thumbnail}
-
-Click `Next`{.action}.
-
-![Add Enterprise File Storage repository 07](images/05-add-enterprise-file-storage-repository07.png){.thumbnail}
-
-Click `Apply`{.action}.
-
-![Add Enterprise File Storage repository 08](images/05-add-enterprise-file-storage-repository08.png){.thumbnail}
-
-Click `Next`{.action}.
-
-![Add Enterprise File Storage repository 09](images/05-add-enterprise-file-storage-repository09.png){.thumbnail}
-
-Click `Finish`{.action}.
-
-![Add Enterprise File Storage repository 10](images/05-add-enterprise-file-storage-repository10.png){.thumbnail}
+> To configure the repository in Veeam, please follow this step-by-step guide:
+> [Using S3 Object Storage with Veeam Backup](/pages/storage_and_backup/object_storage/s3_veeam)
 
 ### Setting up an automated backup
 
@@ -467,6 +384,8 @@ A preview of the status of the restoration is launched, it takes some time depen
 
 [OVHcloud storage solutions](/products/storage-backup)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
+_<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc._

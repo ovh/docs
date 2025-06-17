@@ -40,7 +40,7 @@ Un archivo OpenRC corresponde tanto a un usuario como a una zona. No puede gesti
 * Cargue el contenido del archivo en el entorno actual. El sistema le pedirá la contraseña del usuario de Horizon correspondiente.
 
 ```bash
-admin@vpsxxxxxx:~$ source openrc.sh
+admin@remote_host:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
@@ -79,4 +79,4 @@ set OS_PASSWORD="Contraseña del usuario de Horizon"
 
 Para aprender a utilizar OpenStack: [Documentación de OpenStack](https://docs.openstack.org/){.external}
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -95,9 +95,9 @@ Selon l'interface choisie, voici les étapes à suivre :
 
 Suivez ces étapes pour ajouter un Health Monitor à un pool de votre Load Balancer OVHcloud, ce qui permet de surveiller l'état de santé des serveurs du pool :
 
-<strong>1.</strong> Connectez-vous à votre [espace client OVHcloud](/links/manager).</br>
-<strong>2.</strong> Rendez-vous dans l'onglet `Public Cloud`{.action} et sélectionnez votre projet.</br>
-<strong>3.</strong> Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.</br>
+<strong>1.</strong> Connectez-vous à votre [espace client OVHcloud](/links/manager).<br>
+<strong>2.</strong> Rendez-vous dans l'onglet `Public Cloud`{.action} et sélectionnez votre projet.<br>
+<strong>3.</strong> Cliquez sur `Load Balancer`{.action} dans le menu de gauche. Sélectionnez le Load Balancer que vous souhaitez configurer.<br>
 <strong>4.</strong> Cliquez sur l'onglet `Pools`{.action} puis cliquez sur le Pool pour lequel vous souhaitez créer un Health Monitor.
 
 ![Schema 1](images/healthM1.png){.thumbnail}
@@ -128,8 +128,8 @@ Ce processus crée un Health Monitor qui effectuera régulièrement des contrôl
 
 #### CLI (OpenStack)
 
-<strong>1.</strong> **Préparation** : assurez-vous que l'outil CLI OpenStack est installé et configuré sur votre machine.</br>
-<strong>2.</strong> **Création du Health Monitor** : utilisez la commande suivante pour créer un Health Monitor :</br>
+<strong>1.</strong> **Préparation** : assurez-vous que l'outil CLI OpenStack est installé et configuré sur votre machine.<br>
+<strong>2.</strong> **Création du Health Monitor** : utilisez la commande suivante pour créer un Health Monitor :<br>
 
 ```bash
 openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 3 --type HTTP --http-method GET --url-path /healthcheck --expected-codes 200 <POOL_ID>
@@ -137,7 +137,7 @@ openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 
 
 Remplacez <POOL_ID> par l'ID de votre Pool.
 
-<strong>3.</strong> Vérification : confirmez la création du Health Monitor en listant les Health Monitors associés à votre Load Balancer avec :</br>
+<strong>3.</strong> Vérification : confirmez la création du Health Monitor en listant les Health Monitors associés à votre Load Balancer avec :<br>
 
 ```bash
 openstack loadbalancer healthmonitor list

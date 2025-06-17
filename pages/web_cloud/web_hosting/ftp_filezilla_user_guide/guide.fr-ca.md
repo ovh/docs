@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud"
 excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hébergement mutualisé"
-updated: 2023-06-28
+updated: 2025-06-10
 ---
 
 ## Objectif
@@ -25,6 +25,10 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
 - Avoir installé le logiciel Filezilla sur votre ordinateur. Celui-ci est disponible gratuitement depuis la page [filezilla-project.org](https://filezilla-project.org/download.php){.external}
+
+> [!primary]
+>
+> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne FTP Explorer/Net2FTP. Pour continuer à vous connecter en FTP à votre hébergement web, utilisez les logiciels [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Présentation de l'interface <a name="interface"></a>
 

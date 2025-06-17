@@ -35,7 +35,7 @@ Os endereços de e-mail do serviço E-mail Pro podem ser configurados em vários
 >
 > Esta documentação foi feita a partir de um dispositivo que utiliza a versão 13 do Android.
 
-## Na Prática
+## Instruções
 
 ### Como adicionar a sua conta de e-mail
 
@@ -169,7 +169,7 @@ Para compreender a diferença entre a utilização do protocolo POP e IMAP, vamo
 >
 > Esta descrição é uma síntese, e representa o funcionamento padrão destes dois protocolos. É possível configurar o POP para que os e-mails não sejam eliminados quando recolhe os seus e-mails. O objetivo é descrever o funcionamento nativo destes dois protocolos e evitar manipulações suplementares para responder às suas necessidades.
 
-## Vá mais longe
+## Quer saber mais?
 
 > [!primary]
 >

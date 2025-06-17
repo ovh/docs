@@ -425,7 +425,7 @@ Si su [par de llaves SSH está correctamente configurado](#create-ssh), puede co
 
 > [!primary]
 >
-> Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > Si sigue teniendo problemas, puede reemplazar el par de claves con [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Si ha creado una instancia sin llave SSH, a través de la [API de OVHcloud](/pages/manage_and_operate/api/first-steps) o de la [interfaz OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).

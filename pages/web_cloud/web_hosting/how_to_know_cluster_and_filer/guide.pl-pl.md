@@ -12,7 +12,7 @@ Podczas korzystania z hostingu może być konieczne poznanie numeru klastra i/lu
 
 **Dowiedz się, jak znaleźć numer klastra i numer filera, w którym znajduje się Twój hosting.**
 
-## Wymagania
+## Wymagania początkowe
 
 - Zakupienie [hostingu OVHcloud](/links/web/hosting).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).

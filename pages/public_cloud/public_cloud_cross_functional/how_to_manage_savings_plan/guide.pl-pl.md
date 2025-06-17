@@ -1,5 +1,5 @@
 ---
-title: How to manage a Savings Plan
+title: How to manage a Savings Plan (EN)
 excerpt: Learn how to manage a Savings Plan using different tools
 updated: 2025-04-28
 ---

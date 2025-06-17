@@ -1,7 +1,7 @@
 ---
 title: 'VMware on OVHcloud maintenance operations (EN)' 
 excerpt: 'Find out more about the operations carried out to ensure the reliability and performance of your Hosted Private Cloud VMware on OVHcloud equipment' 
-updated: 2025-04-29
+updated: 2025-06-02
 ---
 
 > [!success]
@@ -147,6 +147,12 @@ To get the details of each robot, run the following API call:
 
 > [!primary]
 > The estimated duration applies to most customers. For large infrastructures, the duration can be significantly longer. It depends on each case and should be evaluated individually.
+
+#### **redeployPrivateGw**
+
+| Purpose | Reason | Preventive instructions | Impact | Estimated duration | Frequency |
+|---------|--------|--------------------------|--------|---------------------|-----------|
+| Redeployment of the Private Gateway on control plane virtual machines managed by OVHcloud. | - Operating system upgrade task.<br><br>- Redeployment required for incident management. | None | Control plane unavailable<sup>1</sup> (management) during the maintenance timeout. | 02H00 | Based on the publisher lifecycle or specific incident context |
 
 #### **maintenanceUpgradeHosts**
 

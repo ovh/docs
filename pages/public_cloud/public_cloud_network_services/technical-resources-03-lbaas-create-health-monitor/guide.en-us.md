@@ -95,9 +95,9 @@ Depending on the interface chosen, here are the steps to follow:
 
 Follow these steps to add a Health Monitor to a pool of your OVHcloud Load Balancer, which will monitor the health status of the servers in the pool:
 
-<strong>1.</strong> Log in to the [OVHcloud Control Panel](/links/manager).</br>
-<strong>2.</strong> Navigate to the `Public Cloud`{.action} section and select your project.</br>
-<strong>3.</strong> Click on `Load Balancer`{.action} in the left menu and select the Load Balancer you want to configure.</br>
+<strong>1.</strong> Log in to the [OVHcloud Control Panel](/links/manager).<br>
+<strong>2.</strong> Navigate to the `Public Cloud`{.action} section and select your project.<br>
+<strong>3.</strong> Click on `Load Balancer`{.action} in the left menu and select the Load Balancer you want to configure.<br>
 <strong>4.</strong> Go to the `Pools`{.action} tab, then click on the Pool for which you want to create a Health Monitor.
 
 ![Schema 1](images/healthM1.png){.thumbnail}
@@ -128,8 +128,8 @@ This process creates a Health Monitor that will regularly perform health checks 
 
 #### CLI (OpenStack)
 
-<strong>1.</strong> Ensure the OpenStack CLI tool is installed and configured on your machine.</br>
-<strong>2.</strong> Use the following command to create a Health Monitor:</br>
+<strong>1.</strong> Ensure the OpenStack CLI tool is installed and configured on your machine.<br>
+<strong>2.</strong> Use the following command to create a Health Monitor:<br>
 
 ```bash
 openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 3 --type HTTP --http-method GET --url-path /healthcheck --expected-codes 200 <POOL_ID>
@@ -137,7 +137,7 @@ openstack loadbalancer healthmonitor create --delay 5 --max-retries 4 --timeout 
 
 Replace <POOL_ID> with the ID of your Pool.
 
-<strong>3.</strong> Confirm the creation of the Health Monitor by listing the Health Monitors associated with your Load Balancer using:</br>
+<strong>3.</strong> Confirm the creation of the Health Monitor by listing the Health Monitors associated with your Load Balancer using:<br>
 
 ```bash
 openstack loadbalancer healthmonitor list

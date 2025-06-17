@@ -1,3 +1,12 @@
 id: 8B22E20E-8B99-4346-8365-C651DA8FB40A
 full_slug: zimbra-mail-mobile-app-android-ios
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

@@ -46,7 +46,7 @@ Retrouvez ci-dessous les informations de base sur votre VPS et l’état du serv
 > [!tabs]
 > Nom
 >>
->> Pour personnaliser le nom de votre VPS, cliquez sur le bouton `...`{.action}, puis sélectionnez `Changer le nom`{.action}. Cette fonctionnalité est utile pour faciliter la navigation dans l’espace client lorsque vous gérez plusieurs services VPS. Toutefois, le nom interne du service reste au format *vps-XXXXXXX.vps.ovh.net*.
+>> Pour personnaliser le nom de votre VPS, cliquez sur le bouton `...`{.action}, puis sélectionnez `Modifier le nom`{.action}. Cette fonctionnalité est utile pour faciliter la navigation dans l’espace client lorsque vous gérez plusieurs services VPS. Toutefois, le nom interne du service reste au format *vps-XXXXXXX.vps.ovh.net*.
 >>
 > Boot
 >>

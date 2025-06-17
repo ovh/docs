@@ -1,18 +1,33 @@
 ---
 title: 'Configurare un blocco di indirizzi IP nella vRack'
 excerpt: 'Scopri come configurare un blocco di indirizzi IP nella vRack'
-updated: 2023-08-31
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
 Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/soluzioni/vrack/){.external} permette di dirigere il traffico IP pubblico tramite la porta vRack del server attraverso un blocco di indirizzi IP pubblici.
 
 **Questa guida ti mostra come configurare un blocco di indirizzi IP pubblici da utilizzare con la vRack.**
+
+> [!primary]
+>
+> La vRack supporta il routing pubblico IPv4 e IPv6 con blocchi di indirizzi Additional IP. Per istruzioni sulla configurazione dei blocchi IPv6, consulta questa guida: "[Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)".
+>
+
+> [!primary]
+>
+> Questo articolo descrive la configurazione degli indirizzi Additional IP su una rete vRack. Per istruzioni sulla configurazione degli indirizzi Additional IP con un indirizzo IP primario (nell'interfaccia di rete pubblica), vedere gli articoli seguenti:
+>
+> - IPv4:
+>   - [Configurare un Alias IP](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+>   - [Configurare un indirizzo IP in alias](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>
+> - IPv6:
+>   - [Configurare IPv6 sur un server dedicato](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+>   - [Configurare IPv6 su un server VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>   - [Configurare IPv6 su un’istanza Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+>
 
 ## Prerequisiti
 

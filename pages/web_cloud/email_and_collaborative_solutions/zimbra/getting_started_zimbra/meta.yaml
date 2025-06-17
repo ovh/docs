@@ -1,3 +1,12 @@
 id: 6FAB1A47-C6B9-4A2C-A934-4061628196DF
 full_slug: zimbra-getting-started
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

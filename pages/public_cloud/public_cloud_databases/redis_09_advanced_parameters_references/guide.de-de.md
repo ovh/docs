@@ -1,6 +1,6 @@
 ---
-title: Caching/Valkey - Advanced parameters references
-excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Caching/Valkey according to your use cases
+title: Valkey - Advanced parameters references
+excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Valkey according to your use cases
 updated: 2024-06-12
 ---
 
@@ -29,7 +29,7 @@ updated: 2024-06-12
 
 ## Objective
 
-This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Caching/Valkey according to your use cases.
+This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Valkey according to your use cases.
 
 ## Requirements
 
@@ -52,9 +52,9 @@ Please refer to this [guide](/pages/public_cloud/public_cloud_databases/database
 
 Please refer to this [guide](/pages/public_cloud/public_cloud_databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
 
-### Advanced parameters for Caching/Valkey
+### Advanced parameters for Valkey
 
-Below you can find a summary of every configuration option available for Caching/Valkey service:
+Below you can find a summary of every configuration option available for Valkey service:
 
 | | |
 |---|---|

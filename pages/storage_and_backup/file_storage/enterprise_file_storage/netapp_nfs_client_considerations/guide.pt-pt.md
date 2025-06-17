@@ -12,7 +12,7 @@ updated: 2024-11-08
 
 - Ter um plano [Enterprise File Storage](/links/storage/enterprise-file-storage)
 
-## Na Prática
+## Instruções
 
 ### Clientes NFS Microsoft Windows
 

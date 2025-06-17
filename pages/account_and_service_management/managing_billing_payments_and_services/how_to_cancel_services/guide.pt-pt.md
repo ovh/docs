@@ -8,8 +8,8 @@ updated: 2025-04-28
 
 Deseja rescindir um ou vários serviços OVHcloud. Este manual indicar-lhe-á como interromper à sua subscrição a partir da Área de Cliente OVHcloud.
 
-- Em primeiro lugar, consulte a secção "O que acontece quando um serviço da OVHcloud é rescindidoa" abaixo.
-- Selecione o produto correspondente na secção "[Como cancelar a subscrição?](#terminatea".
+- Em primeiro lugar, consulte a secção "[O que acontece quando um serviço da OVHcloud é rescindido](#consequences)".
+- Selecione o produto correspondente na secção "[Como cancelar a subscrição?](#terminate)".
 
 ### O que acontece quando um serviço OVHcloud é rescindido? <a name="consequences"></a>
 

@@ -28,10 +28,10 @@ La tabla de esta sección contiene todas las bases de datos creadas con su aloja
 
 En la tabla, las bases de datos pueden tener varios tipos diferentes:
 
-- **Incluida**: indica que la base de datos está incluida en el plan de hosting. No genera ningún coste adicional.</br></br>
-- **Opcional**: indica que la base de datos se ha contratado como complemento de las bases de datos incluidas con el alojamiento web. Pague un complemento para disponer de esta base de datos adicional en su alojamiento web.</br></br>
-- **Incluida - retirada de la venta**: indica que la base de datos incluida va a retirarse pronto de la venta y quedar obsoleta. </br>Le recomendamos que, **antes** de que la base de datos quede obsoleta, recupere el contenido y la coloque en una nueva base de datos más reciente (que aún no tenga programada su finalización).</br></br>
-- **Opcional - retirada de la venta**: Indica que la base de datos contratada como complemento en su alojamiento web va a ser retirada de la venta y quedar obsoleta. </br>Le recomendamos que, **antes** de que la base de datos quede obsoleta, recupere el contenido y la coloque en una base de datos nueva y más reciente (que aún no haya finalizado).
+- **Incluida**: indica que la base de datos está incluida en el plan de hosting. No genera ningún coste adicional.<br><br>
+- **Opcional**: indica que la base de datos se ha contratado como complemento de las bases de datos incluidas con el alojamiento web. Pague un complemento para disponer de esta base de datos adicional en su alojamiento web.<br><br>
+- **Incluida - retirada de la venta**: indica que la base de datos incluida va a retirarse pronto de la venta y quedar obsoleta. <br>Le recomendamos que, **antes** de que la base de datos quede obsoleta, recupere el contenido y la coloque en una nueva base de datos más reciente (que aún no tenga programada su finalización).<br><br>
+- **Opcional - retirada de la venta**: Indica que la base de datos contratada como complemento en su alojamiento web va a ser retirada de la venta y quedar obsoleta. <br>Le recomendamos que, **antes** de que la base de datos quede obsoleta, recupere el contenido y la coloque en una base de datos nueva y más reciente (que aún no haya finalizado).
 
 > [!success]
 >

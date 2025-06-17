@@ -1,7 +1,7 @@
 ---
 title: "Domena - Jak zmienić właściciela?"
 excerpt: "Dowiedz się, jak zmienić właściciela domeny lub zaktualizować informacje na jej temat"
-updated: 2025-04-28
+updated: 2025-06-11
 ---
 
 ## Wprowadzenie
@@ -24,7 +24,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 - Posiadanie domeny zarejestrowanej w OVHcloud dla której nie trwa żadna operacja (zmiana właściciela, transfer, utworzenie). Jeśli operacja została ostatnio zakończona w ramach Twojej domeny, przed wykonaniem nowej operacji musi upłynąć co najmniej 60 dni kalendarzowych.
-- Posiadanie statusu [kontaktu administracyjnego](/pages/account_and_service_management/account_information/managing_contacts) danej domeny.
+- Twoje konto klienta to [kontakt administracyjny i księgowy](/pages/account_and_service_management/account_information/managing_contacts) danej domeny.
 - Zgoda aktualnego właściciela domeny na zmianę właściciela.
 
 ## W praktyce

@@ -2,3 +2,12 @@ id: 43fd8131-cc5b-408c-88ff-06f1fb166c6c
 full_slug: email-pro-outlook-windows-configuration
 banner: marketplace-support-collaboration
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

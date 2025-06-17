@@ -147,6 +147,6 @@ IMPORTANTE NOTAS:
    your certificates, run "certbot renew"
 ```
 
-## Vá mais longe
+## Quer saber mais?
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -266,7 +266,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`
 
 Click on `Instances`{.action} in the left-hand navigation bar and then on `...`{.action} to the right of the instance. Select `Instance details`{.action}.
 
-![detail instance](images/vrack2021.png){.thumbnail}
+![detail instance](images/instance_details.png){.thumbnail}
 
 This will open the instance dashboard. Click on the `...`{.action} button in the box "Networks", next to "Private networks", and select `Attach a network`{.action}.
 

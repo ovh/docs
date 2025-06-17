@@ -1,7 +1,7 @@
 ---
 title: Aktivieren und Konfigurieren der Edge Network Firewall
 excerpt: Erfahren Sie hier, wie Sie die Edge Network Firewall konfigurieren
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Ziel
@@ -9,6 +9,11 @@ updated: 2025-04-28
 Zum Schutz von Diensten, die über öffentliche IP-Adressen zugänglich sind, bietet OVHcloud eine konfigurierbare Firewall an, die in unsere **DDoS-Schutz-Infrastruktur** integriert ist: Edge Network Firewall. Mithilfe dieser Option kann die Anfälligkeit der Dienste für Angriffe von außerhalb des OVHcloud Netzwerks begrenzt werden.
 
 **Diese Anleitung erklärt, wie Sie die Edge Network Firewall für Ihre Dienste konfigurieren.**
+
+> [!warning]
+>
+> **Achtung**: Die Funktion "Scrubbing-Center: permanenter Modus" erreicht End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
+>
 
 > [!primary]
 >

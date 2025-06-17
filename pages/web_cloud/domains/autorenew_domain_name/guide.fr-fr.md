@@ -1,7 +1,7 @@
 ---
 title: "Comment renouveler mon nom de domaine OVHcloud"
 excerpt: "Découvrez pourquoi et comment renouveler vos noms de domaine OVHcloud"
-updated: 2025-02-17
+updated: 2025-06-13
 ---
 
 ## Objectif 
@@ -97,7 +97,7 @@ Effectuez les action suivantes :
 
 ### Renouveler mon nom de domaine avant la date d'échéance
 
-Effectuez les action suivantes :
+Effectuez les actions suivantes :
 
 - Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler.
 - Cliquez à droite de la ligne sur le bouton `...`{.action}.
@@ -106,6 +106,21 @@ Effectuez les action suivantes :
 
 Vous pouvez renouveler le service à tout moment avant son expiration et également choisir la durée de renouvellement.
 Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
+
+### Suivre le renouvellement de mon nom de domaine
+
+Une fois le prélèvement du renouvellement effectué, le nom de domaine sera renouvelé la veille de son expiration (environ un mois après le prélèvement).
+
+Les données affichées dans le WHOIS seront alors mises à jour, confirmant le bon renouvellement du nom de domaine.
+
+Pour vérifier le statut du renouvellement de votre nom de domaine :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la partie `Web Cloud`{.action}.
+1. Cliquez sur `Noms de domaine`{.action} dans la section `Domaines et DNS`{.action}.
+1. Dans le tableau qui s'affiche, vérifiez le statut du renouvellement dans la colonne `Statut` sur la ligne du nom de domaine concerné.
+
+La mention `Renouvellement en cours` est présente une fois le paiement effectué, jusqu'au renouvellement effectif de votre nom de domaine auprès du registre.
 
 ### Résilier mon nom de domaine
 
@@ -124,11 +139,6 @@ Pour plus d'informations sur la résiliation des services OVHcloud, suivez les i
 
 ### Accéder à la facture du renouvellement de mon nom de domaine
 
-> [!primary]
->
-> La facture n’est disponible que le jour du renouvellement du nom de domaine (30 jours après le prélèvement en cas de renouvellement automatique).
->
-
 Une mention `Facture à régler` s'affiche lorsqu'une facture est en attente de règlement et lorsque :
 
 - Vous possédez des services en renouvellement automatique.
@@ -138,22 +148,52 @@ Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous 
 
 ## FAQ
 
-> [!faq]
->
-> J'ai oublié de renouveler mon nom de domaine à temps, que faire ?
->> Commencez par vérifier le statut du nom de domaine en utilisant l'outil [Whois d'un nom de domaine](/links/web/domains-whois).
->> S'il s'agit d'un nom de domaine générique (.com, .org, .net, etc.), celui-ci vous reste « réservé » pendant une période dite de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Ces délais sont variables et dépendent de l'extension et des règles du registre détenant l'extension. Pendant ces deux périodes, vous seul serez en mesure de renouveler le nom de domaine.
->> Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
->> Pendant la période de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (frais de restauration, qui varient en fonction de l'extension. Voir les tarifs en cliquant sur l'extension concernée [ici](/links/web/domains-tld).).
->> Au-delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de redevenir disponible dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](/links/web/domains-whois) pour vérifier sa disponibilité régulièrement.
-> Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'enregistrement que OVHcloud. Comment faire ?
->> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
-> Je suis en renouvellement automatique et j’ai été prélevé automatiquement. Or, je ne souhaite pas conserver mon nom de domaine et je veux être remboursé.
->> Il est possible d’être automatiquement remboursé jusqu’à 10 jours avant la date de renouvellement effective du nom de domaine. Pour cela, résiliez le nom de domaine.
+/// details | J'ai oublié de renouveler mon nom de domaine à temps, que faire ?
+
+Commencez par vérifier le statut du nom de domaine en utilisant l'outil [Whois d'un nom de domaine](/links/web/domains-whois).
+
+S'il s'agit d'un nom de domaine générique (.com, .org, .net, etc.), celui-ci vous reste « réservé » pendant une période dite de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Ces délais sont variables et dépendent de l'extension et des règles du registre détenant l'extension. Pendant ces deux périodes, vous seul serez en mesure de renouveler le nom de domaine.
+
+Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
+
+Pendant la période de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (frais de restauration), qui varient en fonction de l'extension. Voir les tarifs en cliquant sur l'extension concernée [ici](/links/web/domains-tld).
+
+Au-delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de redevenir disponible dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](/links/web/domains-whois) pour vérifier sa disponibilité régulièrement.
+
+///
+
+/// details | Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'enregistrement que OVHcloud. Comment faire ?
+
+Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
+
+Je suis en renouvellement automatique et j’ai été prélevé automatiquement. Or, je ne souhaite pas conserver mon nom de domaine et je veux être remboursé.
+
+Il est possible d’être automatiquement remboursé jusqu’à 10 jours avant la date de renouvellement effective du nom de domaine. Pour cela, résiliez le nom de domaine.
+
+///
+
+/// details | J'ai renouvelé mon nom de domaine mais le WHOIS n'est toujours pas à jour. Comment puis-je m'assurer que le nom de domaine est bien renouvelé ?
+
+Une fois le règlement des frais de renouvellement effectué, nous transmettons la demande auprès du registre approprié.
+
+Le statut de votre nom de domaine passe alors en `Renouvellement en cours`.
+
+Une fois le renouvellement effectué par le registre (environ un mois après le règlement des frais de renouvellement), le statut de votre nom de domaine repassera sous la mention `enregistré`.
+
+Les données du WHOIS se mettront ensuite à jour.
+
+Pour vérifier le statut du renouvellement de votre nom de domaine :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la partie `Web Cloud`{.action}.
+1. Cliquez sur `Noms de domaine`{.action} dans la section `Domaines et DNS`{.action}.
+1. Dans le tableau qui s'affiche, vérifiez le statut du renouvellement dans la colonne `Statut` sur la ligne du nom de domaine concerné.
+
+///
 
 ## Aller plus loin
 
-Ce guide n'a pas répondu à votre question ? Consultez notre [FAQ sur la facturation et le paiement](/pages/account_and_service_management/managing_billing_payments_and_services/faq-billing)
+Ce guide n'a pas répondu à votre question ? Consultez notre [FAQ sur la facturation et le paiement](/pages/account_and_service_management/managing_billing_payments_and_services/faq-billing).
 
 [Comment renouveler mes services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 

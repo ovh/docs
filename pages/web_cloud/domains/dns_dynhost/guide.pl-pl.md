@@ -164,8 +164,8 @@ Gdy jesteś gotowy, aby utworzyć rekord DynHost, w tym celu kliknij poniższe z
 >>
 >> |Informacje|Opis|
 >> |---|---|
->> |Subdomena|Wpisz subdomenę, której rekord DNS ma być aktualizowany dynamicznie. Subdomena ta ma odpowiadać subdomenie wskazanej podczas tworzenia identyfikatora DynHost.</br></br>**Jeśli chcesz skonfigurować wpis DynHost bezpośrednio dla Twojej domeny, zostaw ten formularz pusty**|
->> |Docelowy adres IP |Wpisz adres IP (tylko IPv4 lub IPv6), który ma być aktualnie używany przez rekord DNS. Zazwyczaj chodzi o publiczny adres IP Twojego *box* Internet lub Twojego serwera z własnym dostępem.</br></br>Zgodnie z zasadą DynHost adres IP zostanie automatycznie aktualizowany w późniejszym czasie.</br></br>W tym formularzu należy podać tylko jeden adres IP.|
+>> |Subdomena|Wpisz subdomenę, której rekord DNS ma być aktualizowany dynamicznie. Subdomena ta ma odpowiadać subdomenie wskazanej podczas tworzenia identyfikatora DynHost.<br><br>**Jeśli chcesz skonfigurować wpis DynHost bezpośrednio dla Twojej domeny, zostaw ten formularz pusty**|
+>> |Docelowy adres IP |Wpisz adres IP (tylko IPv4 lub IPv6), który ma być aktualnie używany przez rekord DNS. Zazwyczaj chodzi o publiczny adres IP Twojego *box* Internet lub Twojego serwera z własnym dostępem.<br><br>Zgodnie z zasadą DynHost adres IP zostanie automatycznie aktualizowany w późniejszym czasie.<br><br>W tym formularzu należy podać tylko jeden adres IP.|
 >>
 >> > [!warning]
 >> >

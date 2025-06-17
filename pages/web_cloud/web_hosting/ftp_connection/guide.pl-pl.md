@@ -1,7 +1,7 @@
 ---
 title: "Logowanie do przestrzeni dyskowej FTP hostingu"
 excerpt: "Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud"
-updated: 2025-05-23
+updated: 2025-06-10
 ---
 
 ## Wprowadzenie 
@@ -18,6 +18,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 > [!primary]
 > Tylko hosting WWW **Pro** lub **Performance** umożliwia aktywację kilku użytkowników FTP i połączenie przez SSH.
 >
+> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php){.external} lub [Cyberduck](https://cyberduck.io/){.external}.
 
 ## W praktyce
 

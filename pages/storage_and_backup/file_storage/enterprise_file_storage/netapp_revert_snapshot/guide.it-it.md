@@ -35,7 +35,7 @@ In questa guida, un volume viene anche chiamato "*share*", come nell’API OVHcl
 
 È possibile ripristinare un volume solo al suo Snapshot più recente disponibile. Per ripristinare un volume da uno Snapshot precedente è invece necessario eliminare gli Snapshot fino a quando non risulti aggiornato quello da utilizzare per il ripristino.
 
-## In pratica
+## Procedura
 
 ### Scenario 1: ripristinare un volume da uno Snapshot di tipo `manual`
 

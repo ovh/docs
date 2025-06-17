@@ -1,7 +1,7 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
 excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
-updated: 2025-04-28
+updated: 2025-06-03
 ---
 
 <style>
@@ -20,7 +20,8 @@ details[open]>summary::before {
 
 ## Ziel
 
-Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen zu erstellen. Das kann in folgenden Fällen hilfreich sein:
+Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen zu erstellen.
+Das kann in folgenden Fällen hilfreich sein:
 
 - Sie möchten Ihre Speicherkapazität erhöhen, ohne das Instanzmodell zu verändern.
 - Sie benötigen hochverfügbaren und leistungsfähigen Speicherplatz.
@@ -45,7 +46,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 
 ### Die verschiedenen Volume-Typen
 
-OVHcloud bietet drei Arten von Block Storage-Volumes, die jeweils an spezifische Leistungs-, Kapazitäts- und Kostenanforderungen angepasst sind. Mit diesen Lösungen können Sie Ihren Instanzen persistenten Speicher zuweisen und so ein hohes Maß an Zuverlässigkeit und Verfügbarkeit sicherstellen.
+OVHcloud bietet drei Arten von Block Storage Volumes, die jeweils an spezifische Leistungs-, Kapazitäts- und Kostenanforderungen angepasst sind. Mit diesen Lösungen können Sie Ihren Instanzen persistenten Speicher zuweisen und so ein hohes Maß an Zuverlässigkeit und Verfügbarkeit sicherstellen.
 
 /// details | **Classic - 500 IOPS garantiert**
 
@@ -55,11 +56,13 @@ Das Volume Classic ist eine zuverlässige und kostengünstige Speicherlösung, d
 - Speicherung kleiner bis mittlerer Datenbanken
 - Datensicherung und -archivierung
 
+In den 3AZ-Regionen sind Classic Volumes regionale Dienste, die *Distributed Erasure Coding* über mehrere Availability Zones verwenden. Dadurch wird sichergestellt, dass die Daten ohne Auswirkung oder Unterbrechung verfügbar sind, wenn eine Zone ausfällt, sofern die Anforderungen einer resilienten *Multi-Attach* Architektur erfüllt werden. Weitere Informationen finden Sie in unserer Anleitung „[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)“.
+
 ///
 
 /// details | **High-Speed - Bis zu 3000 IOPS**
 
-Das High-Speed-Volume wurde für Anwendungen entwickelt, die einen schnelleren Datenzugriff erfordern. Mit einer Leistung von bis zu 3000 IOPS ist es ideal für folgende Anwendungsfälle:
+Das High Speed-Volume wurde für Anwendungen entwickelt, die einen schnelleren Datenzugriff erfordern. Mit einer Leistung von bis zu 3000 IOPS ist es ideal für folgende Anwendungsfälle:
 
 - Transaktionsdatenbanken (MySQL, PostgreSQL, etc.)
 - Virtualisierungs- und Containerumgebungen
@@ -69,7 +72,7 @@ Das High-Speed-Volume wurde für Anwendungen entwickelt, die einen schnelleren D
 
 /// details | **High-Speed Gen2 - 30 IOPS/GB und bis zu 20.000 IOPS**
 
-High-Speed Volumes der zweiten Generation sind für die anspruchsvollsten Workloads optimiert. Mit einer Performance von 30 IOPS/GB bis zu 20.000 IOPS wird dieser Volume-Typ für folgende Anwendungen empfohlen:
+High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Workloads optimiert. Mit einer Performance von 30 IOPS/GB bis zu 20.000 IOPS wird dieser Volume-Typ für folgende Anwendungen empfohlen:
 
 - Big Data und Analysen in Echtzeit
 - Künstliche Intelligenz und Machine Learning

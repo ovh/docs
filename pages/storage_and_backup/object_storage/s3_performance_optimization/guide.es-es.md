@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimising Performance (EN)
 excerpt: This guide walks you through various methods to optimise the performance of your Object Storage buckets, including using byte range fetches, multipart uploads and other methods
-updated: 2024-03-27
+updated: 2025-06-04
 ---
 
 ## Objective
@@ -138,8 +138,33 @@ Where `mpu.json` is:
 ```
 
 > [!primary]
-> If you do not complete the multipart upload, your object will not be rebuilt and will not be visible BUT you still have to pay the storage costs of the parts.
 >
+> If a multipart upload is not completed, the final object will not be assembled and will remain invisible. Nevertheless, all uploaded parts remain stored and incur storage charges.
+>
+
+To avoid unnecessary costs, you can abort the multipart upload using the following AWS CLI command:
+
+```bash
+user@host:~$ aws s3api abort-multipart-upload \
+  --bucket test-bucket \
+  --key filename \
+  --upload-id <upload-id>
+```
+
+The upload ID is returned by the `create-multipart-upload` command or can be retrieved by listing ongoing multipart uploads:
+
+```bash
+user@host:~$ aws s3api list-multipart-uploads --bucket my-bucket
+```
+
+Example of aborting a specific multipart upload after retrieving its upload ID:
+
+```bash
+user@host:~$ aws s3api abort-multipart-upload \
+  --bucket my-bucket \
+  --upload-id "OWZiZTA4YzUtODExZC00ZjE5LTkyMjUtZGVmNjcwNjBiYWQ1" \
+  --key <my-file> # name or path of the object
+```
 
 ### Using other third party tools
 

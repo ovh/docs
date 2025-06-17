@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser votre infrastructure OVHcloud avec Stormshield Network Security'
 excerpt: 'Découvrez comment sécuriser votre infrastructure OVHcloud avec Stormshield Network Security déployé sur Public Cloud'
-updated: 2024-12-19
+updated: 2025-05-29
 ---
 
 ## Objectif
@@ -26,7 +26,7 @@ Ce guide fournit des instructions pas à pas pour déployer et configurer SNS EV
 - Des connaissances de base en réseau.
 - Un compte Stormshield créé via le [site Stormshield](https://documentation.stormshield.eu/SNS/v4/fr/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}.
 - S'assurer que le vRack est activé et configuré pour permettre une communication sécurisée entre les composants de l'infrastructure.
-- Une adresse [Additional IP](/links/network/additional-ip) pour permettre le failover et la configuration de la haute disponibilité.
+- Un bloc d'adresses [Additional IP](/links/network/additional-ip) (/29) pour permettre le failover et la configuration de la haute disponibilité.
 - Une licence Stormshield Elastic Virtual Appliance BYOL (**B**ring **Y**our **O**wn **L**icence), obtenue auprès de [partenaires ou revendeurs tiers](https://www.stormshield.com/partner/partner-finder/){.external}, que vous devrez fournir lors de l'installation et de la configuration.
 
 ## En pratique
@@ -104,17 +104,17 @@ Rendez-vous dans la section `download` du [site officiel de Stormshield](https:/
 Rendez-vous dans le dossier où vous avez téléchargé votre image SNS EVA OpenStack et importez l'image (pour ce tutoriel, nous utilisons l'image `utm-SNS-EVA-4.8.3-openstack.qcow2`) :
 
 ```bash
-openstack image create --disk-format raw --container-format bare --file ./utm-SNS-EVA-4.8.3-openstack.qcow2 stormshield-SNS-EVA-4.7.6
+openstack image create --disk-format raw --container-format bare --file ./utm-SNS-EVA-4.8.3-openstack.qcow2 stormshield-SNS-EVA-4.8.3
 ```
 
 Créez les instances SNS EVA (dans cet exemple, nous les avons appelées `stormshield-1` et `stormshield-2`) :
 
 ```bash
-openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-1
+openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-1
 ```
 
 ```bash
-openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-2
+openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-2
 ```
 
 > [!primary]
@@ -271,10 +271,10 @@ Synchronisez les deux instances HA SNS EVA :
 
 ```bash
 ssh admin@<adresse_ip>
-hasyn
+hasync
 ```
 
-##### Vérifier si une instance peut atteindre Internet depuis le  VLAN200
+##### Vérifier si une instance peut atteindre Internet depuis le VLAN200
 
 [Importez votre clé publique SSH](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external} :
 
@@ -353,7 +353,7 @@ Synchronisez les deux instances HA SNS EVA :
 
 ```bash
 ssh admin@<adresse_ip>
-hasyn
+hasync
 ```
 
 #### Cas d'usage n°3 : tunnel IPsec (de site à site) <a name="step4"></a>
@@ -376,11 +376,11 @@ Répétez toutes les étapes dans une autre région en utilisant le VLAN 201 au 
 >> Ajoutez le réseau privé local et le réseau privé distant :
 >>
 >>![SNS EVA vrack](images/ipsec-3.png){.thumbnail}
->>>
+>>
 > **Étape 2**
 >>
 >> Créez la passerelle distante :
->>>
+>>
 >>![SNS EVA vrack](images/ipsec-4.png){.thumbnail}
 >>
 > **Étape 3**

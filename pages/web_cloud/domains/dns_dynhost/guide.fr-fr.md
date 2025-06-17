@@ -164,8 +164,8 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les on
 >>
 >> |Informations|Description|
 >> |---|---|
->> |Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost.</br></br>**Si vous souhaitez mettre en place un DynHost directement pour votre nom de domaine, laissez ce formulaire de saisie vide**|
->> |IP de destination|Renseignez l'adresse IP (IPv4 ou IPv6) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé.</br></br>Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.</br></br>Une seule adresse IP doit être renseignée dans ce formulaire.|
+>> |Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost.<br><br>**Si vous souhaitez mettre en place un DynHost directement pour votre nom de domaine, laissez ce formulaire de saisie vide**|
+>> |IP de destination|Renseignez l'adresse IP (IPv4 ou IPv6) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé.<br><br>Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.<br><br>Une seule adresse IP doit être renseignée dans ce formulaire.|
 >> 
 >> > [!warning]
 >> >

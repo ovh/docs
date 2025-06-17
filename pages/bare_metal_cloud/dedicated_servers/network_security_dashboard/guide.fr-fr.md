@@ -1,12 +1,17 @@
 ---
 title: "Monitoring des attaques DDoS avec le Network Security Dashboard"
 excerpt: "Apprenez à naviguer dans le Network Security Dashboard"
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Objectif
 
 Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Network Security Dashboard*), un outil d'aperçu de ce qui se passe lorsqu'une activité réseau malveillante est détectée et que l'infrastructure de protection DDoS est impliquée. Vous y trouverez des détails sur ce qui a déclenché la mise en place de protections supplémentaires pour maintenir vos services opérationnels. Des graphiques de trafic correspondant aux périodes d’activité du centre de nettoyage (*Scrubbing Center*) y sont également disponibles afin de mieux visualiser la situation.
+
+> [!warning]
+>
+> **Avertissement** : la fonctionnalité « Centre de Scrubbing: mode permanent » atteint sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
+>
 
 ## Prérequis
 

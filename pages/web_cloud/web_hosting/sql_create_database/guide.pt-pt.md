@@ -28,10 +28,10 @@ A tabela desta secção contém todas as bases de dados criadas com o seu alojam
 
 Na tabela, as bases de dados podem ter vários Status diferentes:
 
-- **Incluída**: indica que a base de dados está incluída na sua oferta de alojamento web. Não implica custos adicionais.</br></br>
-- **Opcional** : indica que a base de dados foi subscrita em complemento das bases de dados incluídas com o seu alojamento web. Paga um complemento para dispor desta base de dados suplementar no seu alojamento web.</br></br>
-- **Incluída - retirada da venda**: indica que a base de dados incluída será em breve retirada da venda e tornar-se-á obsoleta. </br>Antes de o banco de dados se tornar obsoleto, recomendamos que recupere o seu conteúdo para o colocar numa nova base de dados mais recente (cujo escoamento ainda não está agendado para terminar).</br></br>
-- **Opcional - retirada da venda** : indica que a base de dados subscrita em complemento do seu alojamento web ficará em breve retirada da venda e tornar-se-á obsoleta. </br>Antes de o banco de dados se tornar obsoleto, recomendamos que recupere o seu conteúdo para o colocar numa nova base de dados mais recente (cuja venda ainda não está agendada para terminar).
+- **Incluída**: indica que a base de dados está incluída na sua oferta de alojamento web. Não implica custos adicionais.<br><br>
+- **Opcional** : indica que a base de dados foi subscrita em complemento das bases de dados incluídas com o seu alojamento web. Paga um complemento para dispor desta base de dados suplementar no seu alojamento web.<br><br>
+- **Incluída - retirada da venda**: indica que a base de dados incluída será em breve retirada da venda e tornar-se-á obsoleta. <br>Antes de o banco de dados se tornar obsoleto, recomendamos que recupere o seu conteúdo para o colocar numa nova base de dados mais recente (cujo escoamento ainda não está agendado para terminar).<br><br>
+- **Opcional - retirada da venda** : indica que a base de dados subscrita em complemento do seu alojamento web ficará em breve retirada da venda e tornar-se-á obsoleta. <br>Antes de o banco de dados se tornar obsoleto, recomendamos que recupere o seu conteúdo para o colocar numa nova base de dados mais recente (cuja venda ainda não está agendada para terminar).
 
 > [!success]
 >

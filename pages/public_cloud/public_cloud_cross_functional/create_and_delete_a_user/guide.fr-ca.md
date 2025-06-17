@@ -16,7 +16,7 @@ Depuis l'interface Horizon, vous pouvez définir un mot de passe pour chaque uti
 
 ## Prérequis
 
-- Un projet [Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud
+- Un projet [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Endpoints
-updated: 2025-04-28
+updated: 2025-06-13
 ---
 
 > [!primary]
@@ -23,18 +23,17 @@ This page provides the technical features, capabilities and limitations of [AI E
 
 | Feature                                    | Details                                                                                                                                                                                                                                      |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Large Selection of Models                        | AI Endpoints offers a diverse range of pre-trained AI models, covering categories such as Assistant (LLMs, Code Assistants), Audio Analysis, Embeddings, Natural Language Processing, Translation, Image Generation, and Computer Vision. For a full list of models, please visit the [AI Endpoints Catalog Page](https://endpoints.ai.cloud.ovh.net/catalog).                                                                          |
+| Large Selection of Models                        | AI Endpoints offers a diverse range of pre-trained AI models, covering categories such as LLMs (Visual, Reasoning, Coding), Audio Analysis, Embeddings, Natural Language Processing, Translation, Image Generation, and Computer Vision. For a full list of models, please visit the [AI Endpoints Catalog Page](https://endpoints.ai.cloud.ovh.net/catalog).                                                                          |
 | Model Metrics | Users can access various metrics in the [OVHcloud Control Panel](/links/manager), such as the number of calls made per model, input and output tokens for large language models (LLMs), and other usage data. These insights can help you manage costs and gain a better understanding of how your applications are using AI capabilities.                                                                                              |
 | Data Privacy and Sovereignty | OVHcloud prioritizes data privacy and sovereignty, ensuring that AI models accessed via AI Endpoints are fully compliant with strict European regulations. Our infrastructure, located in Gravelines, France, adheres to European data protection regulations. Data is not stored or shared during or after model use, providing users with peace of mind that their data is secure and protected.                                                                          |
 | Access with Personalized Access Keys | To ensure secure and authenticated access to model APIs, users need to provide an API access key in each request. Access keys can be easily created by following the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide. API keys are linked to a Public Cloud project. We provide the flexibility to manage multiple keys for various projects or teams. Additionally, each access key comes with adjustable validity periods, allowing users to tailor their access to specific needs.
+| JSON Mode (JSON Object)                       | AI Endpoints supports JSON mode, which ensures the model's output is always a syntactically valid JSON. This is ideal when you want a reliably parseable JSON format.                                                                   |
+| Function Calling (Tools)  | Lets the model invoke pre‑defined functions (tools).         |
+| Structured Outputs (JSON Schema) | Builds on JSON Mode by enforcing a specified JSON schema, ensuring outputs strictly adhere to your defined properties and types.     |
 
-### Planned features
+## Planned Features
 
-| Planned Feature                                    | Details                                                                                                                                                                                                                                      |
-|--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| JSON Mode                        | AI Endpoints plans to support JSON mode in the future, which will allow you to send and receive data in a format that's easy to understand and integrate into your applications. This feature will make it simple to work with AI models and ensure that your data is correctly formatted for the models to process.                                                                          |
-| Function Calling | AI Endpoints also plans to support function calling in the future, which will allow you to invoke specific functions within a model, making it easier to use only the capabilities you need. |
-| Easy billing | Soon, you will be able to monitor your estimated consumption and resource usage via the [OVHcloud Control Panel](/links/manager), in the `AI Endpoints`{.action} section of the `AI & Machine Learning` category, in the left-hand vertical menu. This will give you an idea of your potential charges, once the billing system is enabled (future General Availability (GA) phase).
+For upcoming developments, check our [Public Cloud Roadmap](https://github.com/orgs/ovh/projects/16/views/1?sliceBy%5Bvalue%5D=AI+Endpoints) to stay informed about new features and model updates.
 
 ## Capabilities
 

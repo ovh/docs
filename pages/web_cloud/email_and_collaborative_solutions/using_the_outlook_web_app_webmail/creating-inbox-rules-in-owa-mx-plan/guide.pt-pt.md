@@ -90,7 +90,7 @@ Visto que nenhum sistema de proteção anti-SPAM automático consegue decidir co
 Tenha em atenção que os falsos positivos de SPAM não podem ser declarados através do OWA. Se receber e-mails falsamente assinalados como \[SPAM], recomendamos que informe o nosso Apoio ao Cliente solicitando um [pedido de assistência através](https://help.ovhcloud.com/csm?id=csm_get_help).  
 >
 
-## Vá mais longe
+## Quer saber mais?
 
 [Criar respostas automáticas no OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies)
 

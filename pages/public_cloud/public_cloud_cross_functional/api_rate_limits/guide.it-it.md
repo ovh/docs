@@ -57,7 +57,7 @@ Un progetto può effettuare **20 richieste al secondo** prima di ricevere una ri
 
 ## Come funzionano i limiti di flusso?
 
-Se effettui troppe richieste di token a Keystone (l'API d'identità) o invii troppe richieste a un punto terminale API come Nova (l'API di calcolo), il punto terminale comincerà a rispondere con un codice di risposta **HTTP 429*** contenente un oggetto JSON come questo:
+Se effettui troppe richieste di token a Keystone (l'API d'identità) o invii troppe richieste a un punto terminale API come Nova (l'API di calcolo), il punto terminale comincerà a rispondere con un codice di risposta **HTTP 429** contenente un oggetto JSON come questo:
 
 ```json
 {

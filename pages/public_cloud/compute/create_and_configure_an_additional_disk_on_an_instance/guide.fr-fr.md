@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer un disque supplementaire sur une instance
 excerpt: Découvrez comment attacher un nouveau volume à votre instance Public Cloud
-updated: 2025-04-28
+updated: 2025-06-03
 ---
 
 <style>
@@ -38,6 +38,7 @@ Cela peut être utile dans les cas suivants :
 - Préparer l'environnement si vous souhaitez utiliser [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform)
 
 > [!warning]
+>
 > Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
 >
 
@@ -54,6 +55,8 @@ Le volume Classic est une solution de stockage fiable et économique, idéale po
 - Hébergement d’applications web classiques
 - Stockage de bases de données de petite à moyenne taille
 - Sauvegarde et archivage de données
+
+Dans les régions 3AZ, les volumes Classic sont des services régionaux qui utilisent un Erasure Coding distribué entre plusieurs zones de disponibilité. Cela garantit la disponibilité des données sans impact ni interruption en cas de défaillance d’une zone, à condition que les exigences de l’architecture résiliente avec attachement multiple soient respectées. Pour plus d'informations, consultez notre guide « [Utilisation correcte et limitations du stockage Classic Multi-Attach dans les régions 3AZ](/pages/public_cloud/compute/classic_block_multi_az_limitations) ».
 
 ///
 

@@ -35,7 +35,7 @@ En esta guía, un volumen también recibe el nombre de "*share*" en la API de OV
 
 Solo es posible restaurar un volumen a su snapshot más reciente disponible. Sin embargo, si desea restaurar un volumen a partir de un snapshot anterior, deberá eliminar los snapshots hasta que el snapshot que vaya a utilizar para la restauración sea el más reciente.
 
-## En la práctica
+## Procedimiento
 
 ### Escenario 1: restaurar un volumen desde un snapshot de tipo `manual`
 

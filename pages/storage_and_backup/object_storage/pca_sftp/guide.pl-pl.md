@@ -9,7 +9,8 @@ Object Storage to rozwiązanie do przechowywania danych zarządzane głównie pr
 
 Jeśli nie chcesz zarządzać przestrzenią dyskową z poziomu linii poleceń, skorzystaj z wdrożonego przez nas rozwiązania, dzięki któremu możesz połączyć się ze swoim kontenerem PCA za pomocą programu SFTP.
 
-### Wymagania
+### Wymagania początkowe
+
 - Program SFTP: [WinSCP](https://winscp.net/eng/download.php){.external}
 - Login i hasło OpenStack
 - TenantName projektu

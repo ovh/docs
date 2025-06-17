@@ -54,7 +54,7 @@ Nella nuova finestra, inserisci la password e confermala.
 
 [Introduzione allo Spazio Cliente Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)
 
-[Modificare i diritti di un utente](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights)
+[Modificare i diritti di un utente](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)
 
 [Impostare e gestire la password di un account OVHcloud](/pages/account_and_service_management/account_information/manage-ovh-password)
 

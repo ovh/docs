@@ -2,3 +2,12 @@ id: 7a3671a7-0264-49ff-afe2-04ef9402236a
 full_slug: email-pro-android-configuration
 banner: marketplace-support-collaboration
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

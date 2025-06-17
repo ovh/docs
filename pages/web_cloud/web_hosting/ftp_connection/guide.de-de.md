@@ -1,7 +1,7 @@
 ---
 title: "Mit dem FTP-Speicherplatz eines Webhostings verbinden"
 excerpt: "Erfahren Sie hier, wie Sie sich im FTP-Speicherplatz Ihres OVHcloud Webhostings einloggen"
-updated: 2025-05-23
+updated: 2025-06-10
 ---
 
 ## Ziel 
@@ -18,6 +18,7 @@ Die OVHcloud Webhostings bieten Zugriff auf einen FTP-Speicherplatz, um die Date
 > [!primary]
 > Nur die Webhosting-Angebote **Pro** und **Performance** erlauben die Aktivierung mehrerer FTP-Benutzer und verfügen über SSH-Verbindungen.
 >
+> Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [Filezilla](https://filezilla-project.org/download.php){.external} oder [Cyberduck](https://cyberduck.io/){.external}.
 
 ## In der praktischen Anwendung
 

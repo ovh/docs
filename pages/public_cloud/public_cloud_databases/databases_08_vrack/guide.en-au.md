@@ -82,7 +82,7 @@ Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to cre
 >If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
 >
 
-### Step 5 - Example of verification with a Public Cloud Databases for Caching/Valkey
+### Step 5 - Example of verification with a Public Cloud Databases for Valkey
 
 We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) page.
 
@@ -98,7 +98,7 @@ Now install the client by installing the `redis-server` package:
 sudo apt-get update && sudo apt-get install redis-server -y
 ```
 
-Now connect to the Caching/Valkey service using the URL retrieved from the OVHcloud Control Panel, with a command such as:
+Now connect to the Valkey service using the URL retrieved from the OVHcloud Control Panel, with a command such as:
 
 ```bash
 redis-cli --tls -u "rediss://my-redis-user@redis-2612345abc-abcd1234defg.database.cloud.ovh.net:20185"

@@ -1,3 +1,12 @@
 id: 76c3c576-1c41-494a-93e7-89915ea5a29c
 full_slug: microsoft-office365-csp2
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

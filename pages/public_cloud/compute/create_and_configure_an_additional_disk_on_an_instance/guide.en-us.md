@@ -1,7 +1,7 @@
 ---
 title: Creating and configuring an additional disk on an instance
 excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: 2025-04-28
+updated: 2025-06-03
 ---
 
 <style>
@@ -54,6 +54,8 @@ The Classic volume is a reliable, cost-effective storage solution, ideal for wor
 - Hosting of classic web applications
 - Storage of small to medium-sized databases
 - Data backup and archiving
+
+In 3AZ regions, Classic Volumes are regional services that use distributed erasure coding across multiple Availability Zones. This ensures data remains available without impact or downtime in the event of an AZ failure, provided the multi-attached resilient architecture conditions are met. For more information, please refer to our guide "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 

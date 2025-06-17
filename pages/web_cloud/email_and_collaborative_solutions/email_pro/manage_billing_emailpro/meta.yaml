@@ -1,3 +1,12 @@
 id: cd82363d-5d6a-446e-8776-6463f8623821
 full_slug: email-pro-billing
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

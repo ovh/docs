@@ -1,20 +1,21 @@
 ---
 title: "Monitorización de los ataques DDoS con el Network Security Dashboard"
 excerpt: "Aprenda a navegar por el panel de control de seguridad de red"
-updated: 2025-04-28
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
 Esta guía explica el panel de control de seguridad de la red y proporciona una visión general de las medidas de respuesta activadas por nuestra infraestructura de protección DDoS cuando se detecta actividad de red malintencionada. Puede encontrar información detallada sobre las protecciones adicionales activadas que se deben implementar para mantener sus servicios activos y en funcionamiento. Además, hay gráficos de tráfico disponibles en el tablero de mandos para limpiar los periodos de actividad del centro a fin de visualizar mejor la situación.
 
+> [!warning]
+>
+> **Advertencia**: La mitigación permanente está llegando a su fin de vida útil (EOL) y se desactivará permanentemente el 8 de septiembre de 2025.
+>
+
 ## Requisitos
 
-- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/es-es/vps/), [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), [IP adicional](/links/network/additional-ip), etc.)
+- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/es-es/vps/), [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
 - Acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Instrucciones

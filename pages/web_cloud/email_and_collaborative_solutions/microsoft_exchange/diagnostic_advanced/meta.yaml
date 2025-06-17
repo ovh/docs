@@ -1,3 +1,8 @@
 id: 753e8732-8be1-44cc-bb8d-3b026a7371f6
 full_slug: exchange-troubleshooting
 translation_banner: true
+disable_languages:
+- en-asia
+- en-au
+- en-sg
+- en-in

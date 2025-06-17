@@ -1,7 +1,7 @@
 ---
 title: "Aceder ao espaço de armazenamento FTP do alojamento web"
 excerpt: "Descubra como aceder ao espaço de armazenamento FTP do alojamento web da OVHcloud"
-updated: 2025-05-23
+updated: 2025-06-10
 ---
 
 ## Objetivo
@@ -18,6 +18,7 @@ As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamen
 > [!primary]
 > Apenas os alojamentos web **Pro** ou **Performance** permitem a ativação de vários utilizadores FTP e dispõem de ligações em SSH.
 >
+> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Instruções
 

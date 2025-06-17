@@ -1,3 +1,8 @@
 id: 7b44e62b-4d69-4cea-bdeb-6ec8c677bfd0
 full_slug: exchange-resource-accounts
 translation_banner: true
+disable_languages:
+- en-asia
+- en-au
+- en-sg
+- en-in

@@ -164,8 +164,8 @@ Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie jeweils auf 
 >>
 >> |Information|Beschreibung|
 >> |---|---|
->> |Subdomain|Geben Sie die Subdomain ein, deren DNS-Eintrag dynamisch aktualisiert werden soll. Diese Subdomain muss der bei der Erstellung des DynHost-Benutzers angegebenen Subdomain entsprechen.</br></br>**Wenn Sie einen DynHost direkt für Ihren Domainnamen einrichten möchten, lassen Sie dieses Feld leer**|
->> |Ziel-IP|Geben Sie die IP-Adresse (IPv4 oder IPv6) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers.</br></br>Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert.</br></br>In diesem Formular darf nur eine IP-Adresse angegeben werden.|
+>> |Subdomain|Geben Sie die Subdomain ein, deren DNS-Eintrag dynamisch aktualisiert werden soll. Diese Subdomain muss der bei der Erstellung des DynHost-Benutzers angegebenen Subdomain entsprechen.<br><br>**Wenn Sie einen DynHost direkt für Ihren Domainnamen einrichten möchten, lassen Sie dieses Feld leer**|
+>> |Ziel-IP|Geben Sie die IP-Adresse (IPv4 oder IPv6) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers.<br><br>Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert.<br><br>In diesem Formular darf nur eine IP-Adresse angegeben werden.|
 >>
 >> > [!warning]
 >> >

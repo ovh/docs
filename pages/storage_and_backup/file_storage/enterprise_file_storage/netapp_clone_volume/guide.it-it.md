@@ -58,7 +58,7 @@ Per maggiori informazioni, consulta la [guida alla conservazione degli Snapshot 
 
 - La dimensione del volume clonato deve essere **superiore o uguale** alla dimensione dello Snapshot utilizzato per l'operazione di clonazione.
 
-## In pratica
+## Procedura
 
 1\. Identificare l`id` dello Snapshot da utilizzare utilizzando la chiamata API seguente:
 

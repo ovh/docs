@@ -50,7 +50,7 @@ Les règles pour les requêtes CORS acceptées sont configurées au niveau du bu
 A l'aide de la CLI AWS, configurez CORS sur le bucket :
 
 ```sh
-aws s3api put-bucket-cors --bucket my-bucket --cors-configuration cors.json
+aws s3api put-bucket-cors --bucket my-bucket --cors-configuration file://cors.json
 ```
 
 Le fichier cors.json contient la configuration suivante :
@@ -75,7 +75,7 @@ Supposons que nous avons une application web frontend hébergée sur `https://my
 Nous activons CORS sur le bucket my-media :
 
 ```sh
-aws s3api put-bucket-cors --bucket my-media --cors-configuration cors.json
+aws s3api put-bucket-cors --bucket my-media --cors-configuration file://cors.json
 ```
 
 Le fichier cors.json contient la configuration suivante :

@@ -75,7 +75,7 @@ hosted-private-cloud-sap-ovhcloud-getting-started: Premiers pas
 hosted-private-cloud-sap-ovhcloud-automated-deployments: Déploiements automatisés
 hosted-private-cloud-sap-ovhcloud-resilience: Résilience
 hosted-private-cloud-sap-ovhcloud-backups: Sauvegardes
-hosted-private-cloud-sap-ovhcloud-observability: Observabilité 
+hosted-private-cloud-sap-ovhcloud-observability: Observabilité
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Premiers pas
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
@@ -105,19 +105,18 @@ public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutor
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
-public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Technical resources
 public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
-public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
-public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: User guides
 public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
 public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup and Restore
 public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
 public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
 public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
-public-cloud-containers-orchestration-managed-kubernetes-k8s-gpu: GPU
 public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
-public-cloud-containers-orchestration-managed-kubernetes-k8s-serverless: Serverless
 public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
+public-cloud-containers-orchestration-managed-kubernetes-k8s-general-information: General Information
+public-cloud-containers-orchestration-managed-kubernetes-k8s-cluster: Cluster
+public-cloud-containers-orchestration-managed-kubernetes-k8s-nodepools-and-nodes: Nodepools & Nodes
+public-cloud-containers-orchestration-managed-kubernetes-k8s-workloads: Workloadss
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (MPR)
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
@@ -150,9 +149,9 @@ public-cloud-databases-mysql-tutorials: MySQL - Tutoriels
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
-public-cloud-databases-redis: Caching/Valkey
-public-cloud-databases-redis-guides: Caching/Valkey - Guides
-public-cloud-databases-redis-tutorials: Caching/Valkey - Tutoriels
+public-cloud-databases-redis: Valkey
+public-cloud-databases-redis-guides: Valkey - Guides
+public-cloud-databases-redis-tutorials: Valkey - Tutoriels
 public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutoriels
@@ -181,6 +180,7 @@ public-cloud-cross-functional: Public Cloud - Informations générales
 public-cloud-cross-functional-getting-started: Premiers pas
 public-cloud-cross-functional-general-information: Informations générales
 public-cloud-cross-functional-project-management: Gestion des projets Public Cloud
+public-cloud-cross-functional-migration: Migration
 public-cloud-cross-functional-tutorials: Tutoriels
 public-cloud-cross-functional-services-management: Gestion des services
 public-cloud-cross-functional-horizon: Gestion via Horizon
@@ -346,8 +346,9 @@ manage-operate-observability: Observabilité
 manage-operate-kms: KMS
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Premiers pas
-observability-logs-data-platform-ingestion: Ingestion de vos logs 
+observability-logs-data-platform-ingestion: Ingestion de vos logs
 observability-logs-data-platform-visualizing-querying-exploiting: Visualisation, requête et exploitation de vos logs
-observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service 
+observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service
 observability-logs-data-platform-security-conformity: Sécurité et conformité
 observability-logs-data-platform-usecases: Cas d'usage
+observability-logs-data-platform-services-logs: OVHcloud Service Logs

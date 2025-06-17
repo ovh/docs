@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Using Cyberduck with a web hosting plan"
 excerpt: "Find out how to use the Cyberduck application to connect to your OVHcloud web hosting plan"
-updated: 2024-02-28
+updated: 2025-06-10
 ---
 
 ## Objective
@@ -29,6 +29,10 @@ To download Cyberduck, go to the [official website](https://cyberduck.io/) of th
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - The Cyberduck application downloaded and installed
+
+> [!primary]
+>
+> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php){.external} or [Cyberduck](https://cyberduck.io/){.external} software.
 
 ## Instructions
 

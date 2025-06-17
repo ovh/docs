@@ -33,7 +33,7 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 
 ## En pratique
 
-Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous d'être dans la bonne région. Vous pouvez le vérifier en haut à gauche de l’interface.</br>
+Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/) et assurez-vous d'être dans la bonne région. Vous pouvez le vérifier en haut à gauche de l’interface.<br>
 Cliquez sur le menu `Compute`{.action} à gauche puis sélectionnez `Instances`{.action}. Sélectionnez `Resize Instance`{.action} dans le menu déroulant à droite de l'instance concernée.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}

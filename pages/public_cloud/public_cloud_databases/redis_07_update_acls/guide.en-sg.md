@@ -1,23 +1,23 @@
 ---
-title: Caching/Valkey - Manage ACLs via API
+title: Valkey - Manage ACLs via API
 excerpt: Update users ACLs with the OVHcloud API
 updated: 2024-06-12
 ---
 
 ## Objective
 
-This page shows you how to update your Caching/Valkey service user ACLs with the OVHcloud API.
+This page shows you how to update your Valkey service user ACLs with the OVHcloud API.
 
 ## Users and roles
 
-As explained on this page: [Caching/Valkey Capabilities, Users & roles](/pages/public_cloud/public_cloud_databases/redis_01_capabilities#users-and-roles), the users' ACLs cannot be updated via the OVHcloud Control Panel.
+As explained on this page: [Valkey Capabilities, Users & roles](/pages/public_cloud/public_cloud_databases/redis_01_capabilities#users-and-roles), the users' ACLs cannot be updated via the OVHcloud Control Panel.
 
 You must therefore use the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account.
-- An up and running Public Cloud Database for Caching/Valkey.
+- An up and running Public Cloud Database for Valkey.
 
 If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
 
@@ -25,9 +25,9 @@ For this tutorial, we consider that you are logged on the relevant API (Europe: 
 
 ## Instructions
 
-### Get your service, Caching/Valkey cluster and user IDs
+### Get your service, Valkey cluster and user IDs
 
-You first need to identify the service, the Caching/Valkey cluster and the user you want to apply the changes to.
+You first need to identify the service, the Valkey cluster and the user you want to apply the changes to.
 
 #### Get the desired service ID
 

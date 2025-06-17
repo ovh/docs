@@ -16,7 +16,7 @@ Dall’interfaccia Horizon, è possibile impostare una password per ogni utente.
 
 ## Prerequisiti
 
-- Un progetto [Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) nel tuo account OVHcloud
+- Un progetto [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

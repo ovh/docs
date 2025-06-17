@@ -31,7 +31,7 @@ This guide will help you:
 - [Enable your first two-factor authentication method](#enabling-2fa)
 - [Find out how to log in with two-factor authentication](#login-2fa)
 - [Find out what to do if your phone/tablet/key is lost/stolen/damaged](#lost-device)
-- [Find out how to disable two-factor authentication completely](#desactivation)
+- [Find out how to disable two-factor authentication completely](#disable-2fa)
 
 ## Requirements
 
@@ -66,7 +66,7 @@ We offer four different methods (click on the tabs below to view their explanati
 >>
 >> > [!success]
 >> > **Advantages of this method**:
->>>
+>> >
 >> > - Once you have linked the application to your account for the first time, you no longer need to be connected to the internet on your smartphone/tablet for the codes to be generated.
 >> > - You can use a single OTP application for all of your services or sites that require two-factor authentication.
 >>

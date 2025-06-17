@@ -1,31 +1,27 @@
 ---
 title: 'Einen Minecraft-Server auf einem VPS oder Dedicated Server einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren eigenen Minecraft-Server installieren'
-updated: 2021-06-29
+updated: 2025-06-06
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
 Minecraft ist ein populäres Sandbox-Spiel. Es muss auf einem Server gehostet werden, wenn Sie im Multiplayer-Modus spielen möchten.
 
-Sie können einen vorkonfigurierten Minecraft-Server mieten oder einen solchen selbst auf einem [VPS](https://www.ovhcloud.com/de/vps/) oder einem dedizierten [Server](https://www.ovhcloud.com/de/bare-metal/) installieren. Dadurch werden die Kosten reduziert und Sie haben die volle Kontrolle über Ihre Spielinstanz.
+Sie können einen vorkonfigurierten Minecraft-Server mieten oder einen solchen selbst auf einem [VPS](/links/bare-metal/vps) oder einem dedizierten [Server](/links/bare-metal/bare-metal) installieren. Dadurch werden die Kosten reduziert und Sie haben die volle Kontrolle über Ihre Spielinstanz.
 
 **Diese Anleitung erklärt, wie Sie einen Minecraft-Server Java Edition auf einem OVHcloud VPS starten und die Verbindung testen.**
 
 > [!warning]
 > In diesem Tutorial erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
-> Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+> Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kunden-Account.
 - Sie haben eine GNU/Linux Distribution auf dem Server installiert.
 - Administrator-Zugang (sudo) über SSH auf Ihren Server.
 - Sie verfügen über ein grundlegendes Verständnis der GNU/Linux-Administration.
@@ -33,7 +29,7 @@ Sie können einen vorkonfigurierten Minecraft-Server mieten oder einen solchen s
 ## In der praktischen Anwendung
 
 > [!primary]
-> Diese Anleitung basiert auf der Minecraft Java Edition Version "1.17" und der OpenJDK Version "16.0.1".
+> Diese Anleitung basiert auf der Minecraft Java Edition Version "1.21" und der OpenJDK Version "24.0.1".
 >
 
 ### Schritt 1: Server vorbereiten
@@ -46,29 +42,29 @@ Wenn das Betriebssystem installiert ist, verbinden Sie sich mit Ihrem VPS per SS
 Aktualisieren Sie zunächst die Pakete auf die neuesten Versionen:
 
 ```sh
-~$ sudo apt update
+$ sudo apt update
 ```
 
 ```sh
-~$ sudo apt full-upgrade
+$ sudo apt full-upgrade
 ```
 
 Verwenden Sie folgenden Befehl, um sicherzustellen, dass alle notwendigen Pakete installiert sind:
 
 ```sh
-~$ sudo apt install screen nano wget git
+$ sudo apt install screen nano wget git
 ```
 
 Installieren Sie das Java-Paket:
 
 ```sh
-~$ sudo apt install openjdk-16-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 Um Sicherheitslücken in Ihrem System zu vermeiden, erstellen Sie einen Benutzer namens "minecraft", der die Server-Aktionen ausführen wird:
 
 ```sh
-~$ sudo adduser minecraft —disabled-login —disabled-password
+$ sudo adduser minecraft --disabled-password
 ```
 
 Bestätigen Sie einfach mit `Enter`{.action}, um das Ausfüllen der üblichen Kontoinformationen zu überspringen.
@@ -78,7 +74,7 @@ Der Benutzer wurde erstellt. Bitte beachten Sie, dass für diesen Benutzer kein 
 Wechseln Sie zum neuen Benutzer:
 
 ```sh
-~$ sudo su - minecraft
+$ sudo su - minecraft
 ```
 
 > [!primary]
@@ -89,7 +85,7 @@ Wechseln Sie zum neuen Benutzer:
 Erstellen Sie einen Ordner mit dem Namen `server`.
 
 ```sh
-~$ mkdir ~/server && cd ~/server
+$ mkdir ~/server && cd ~/server
 ```
 
 ### Schritt 2: Ihren Minecraft-Server installieren
@@ -99,10 +95,10 @@ Erstellen Sie einen Ordner mit dem Namen `server`.
 > Ein "Vanilla"-Server ist eine Instanz ohne jegliche Add-ons oder Plugins. Sie werden das Spiel so erfahren, wie es von den Entwicklern veröffentlicht wurde.
 >
 
-Kopieren Sie zuerst den Download-Link für das Server-Programm.
-<br>Klicken Sie dazu auf der offiziellen [Website von Minecraft](https://minecraft.net/download/server){.external} mit der rechten Maustaste auf den Download-Link und wählen Sie `Linkadresse kopieren`{.action}.
+Kopieren Sie zuerst den Download-Link für das Server-Programm.  
+Klicken Sie dazu auf der offiziellen [Website von Minecraft](https://minecraft.net/download/server){.external} mit der rechten Maustaste auf den Download-Link und wählen Sie `Linkadresse kopieren`{.action}.
 
-![Download des Servers](images/download_jar.png){.thumbnail}
+![Download des Servers](images/jar_file_download.png){.thumbnail}
 
 Überprüfen Sie in Ihrem Kommandozeilenterminal, dass Sie noch im Verzeichnis `server` sind und verwenden Sie `wget`, um die Datei herunterzuladen.
 <br>Ersetzen Sie `download_link` mit der URL, die Sie zuvor kopiert haben.
@@ -117,12 +113,12 @@ Bevor Sie den Server starten, müssen Sie die EULA (*End User License Agreement*
 ~/server$ echo "eula=true" > eula.txt
 ```
 
-Anschließend befindet sich eine Datei namens `eula.txt` im Wurzelverzeichnis Ihres Servers, die die Zeile `eula=true` enthält. Dies zeigt der Software an, dass Sie die Nutzungsbedingungen für Minecraft akzeptieren.
-<br>Die allgemeinen Nutzungsbedingungen finden Sie auf der offiziellen [Website von Minecraft](https://www.minecraft.net/){.external}.
+Anschließend befindet sich eine Datei namens `eula.txt` im Wurzelverzeichnis Ihres Servers, die die Zeile `eula=true` enthält. Dies zeigt der Software an, dass Sie die Nutzungsbedingungen für Minecraft akzeptieren.  
+Die allgemeinen Nutzungsbedingungen finden Sie auf der offiziellen [Website von Minecraft](https://www.minecraft.net/){.external}.
 
 Ihr Server kann nun gestartet werden.
 
-In Schritt 1 wurde das Paket `screen` installiert, dem mehrere Terminalsitzungen (Shell) geöffnet werden können. Wir starten Minecraft nun in einer neuen Session, die im Hintergrund ausgeführt werden kann. Die Verwendung von `screen` kann sehr praktisch sein, weil Sie so mehrere Minecraft-Server gleichzeitig starten können.
+In Schritt 1 wurde das Paket `screen` installiert, mit dem mehrere Terminal-Sitzungen (Shell) geöffnet werden können. Wir starten Minecraft nun in einer neuen Session, die im Hintergrund ausgeführt werden kann. Die Verwendung von `screen` kann sehr praktisch sein, weil Sie so mehrere Minecraft-Server gleichzeitig starten können.
 
 Erzeugen Sie zunächst eine neue Shell namens "minecraft1":
 
@@ -133,7 +129,7 @@ Erzeugen Sie zunächst eine neue Shell namens "minecraft1":
 Das aktive Fenster Ihres Terminals ändert sich und Sie wechseln automatisch auf die neue Shell-Session. Wenn nötig können Sie weitere Shell-Instanzen erstellen und diese über folgenden Befehl auflisten:
 
 ```sh
-screen -ls
+~/server$ screen -ls
 ```
 
 Um eine Shell zu verlassen (während diese weiter ausgeführt wird), drücken Sie auf `Ctrl`{.action}, dann auf `a`{.action} und dann auf `d`{.action} Ihrer Tastatur.
@@ -149,7 +145,24 @@ Sie können alternativ auch `Ctrl`{.action}, dann auf `a`{.action} und dann auf 
 Starten Sie den Server in der zuvor erstellten Shell "minecraft1" mit folgendem Befehl. (Verwenden Sie `ls`, um den Namen der Datei zu überprüfen, falls dieser abweicht.)
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: Damit wird der Server so konfiguriert, dass er mit 1024 MB oder 1 GB RAM startet. Dieses Limit kann erhöht werden, wenn Sie möchten, dass Ihr Server mit mehr RAM startet.
+- `Xms1024M`: Dies lässt den Server maximal 1024M RAM verwenden. Sie können dieses Limit erhöhen, wenn Sie möchten, dass Ihr Server mit mehr RAM läuft, um mehr Spieler unterzubringen oder wenn Sie das Gefühl haben, dass Ihr Server langsam läuft.
+- `jar`: Gibt die jar-Datei des Servers an, die ausgeführt werden soll.
+- `nogui`: Damit wird dem Server mitgeteilt, dass er keine grafische Benutzeroberfläche starten soll.
+
+Sie können auch den folgenden Befehl verwenden:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Sobald der Server läuft, erhalten Sie das folgende Ergebnis:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 Um Ihren Server anzuhalten, geben Sie den Befehl `stop` ein.
@@ -172,10 +185,10 @@ Standardmäßig ist kein Port anzugeben.
 
 Ihr Minecraft Vanilla Server ist nun auf Ihrem VPS installiert.
 
-Bitte beachten Sie, dass diese Installationsanleitung auch für einen [OVHcloud Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) gilt. Mit diesen Lösungen profitieren Sie auch von garantierten und stabilen physischen Ressourcen, da die Hardware dediziert ist.
+Beachten Sie, dass diese Installationsanleitung auch für einen [OVHcloud Dedicated Server](/links/bare-metal/bare-metal) oder eine [Public Cloud Instanz](/links/public-cloud/compute) anwendbar ist. Mit diesen Lösungen profitieren Sie auch von garantierten und stabilen physischen Ressourcen, da die Hardware dediziert ist.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
 Zu Add-ons, Mods und um die Konfiguration Ihres Minecraft-Servers zu individualisieren, finden Sie hier die offizielle Dokumentation: <https://help.mojang.com/>.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

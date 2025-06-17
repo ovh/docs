@@ -1,7 +1,7 @@
 ---
 title: 'VMware on OVHcloud - Les opérations de maintenance'
 excerpt: 'Apprenez-en plus sur les opérations effectuées pour assurer la fiabilité et la performance de vos équipements Hosted Private Cloud VMware on OVHcloud'
-updated: 2025-04-29
+updated: 2025-06-02
 ---
 
 > [!success]
@@ -148,6 +148,12 @@ Pour avoir le détail de chaque robot, exécutez l'appel API suivant :
 
 > [!primary]
 > L’estimation de durée concerne la majorité des clients. Pour les grandes infrastructures, la durée peut être significativement plus longue. Cela dépend des cas et doit être évalué individuellement.
+
+#### **redeployPrivateGw**
+
+| Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
+|----------|-------|----------------------------|--------|----------------|-----------|
+| Redéploiement de la passerelle privée (Private Gateway) sur les machines virtuelles du plan de contrôle gérées par OVHcloud. | - Tâche liée à une mise à jour du système d'exploitation.<br><br>- Redéploiement nécessaire dans le cadre d'une gestion d'incident. | Aucune | Plan de contrôle indisponible<sup>1</sup> (management) pendant la fenêtre de maintenance. | 02H00 | Selon le cycle de vie de l’éditeur ou en fonction du contexte d’incident |
 
 #### **maintenanceUpgradeHosts**
 

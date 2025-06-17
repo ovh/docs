@@ -55,7 +55,7 @@ Para isso, clique nas guias abaixo para exibir sucessivamente cada um dos **4** 
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}

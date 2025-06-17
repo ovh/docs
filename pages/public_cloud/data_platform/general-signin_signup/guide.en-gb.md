@@ -13,7 +13,7 @@ You can sign up if you are new to Data Platform or sign in if you have an existi
 > [!primary]
 > If you have received an invitation to join an existing Data Platform Organization from an admin, you can alternatively sign up with your email.
 
-To access OVHcloud Data Platform for the first time, you need an [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation) and a [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project).
+To access OVHcloud Data Platform for the first time, you need an [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation) and a [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 
 You have different options: sign up from the website or from the OVHcloud Control Panel.
 

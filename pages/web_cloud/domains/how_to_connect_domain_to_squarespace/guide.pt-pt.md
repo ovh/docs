@@ -73,7 +73,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www" (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
->> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" CNAME`{.action}.
+>> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `CNAME`{.action}.
 >> Preencha o campo **Subdomínio** com o valor `www` e introduza `verify.squarespace.com.` no campo **Alvo**.<br>
 >> ![cname-entry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
 >> Clique em `Seguinte`{.action} e valide o seu registo "CNAME".

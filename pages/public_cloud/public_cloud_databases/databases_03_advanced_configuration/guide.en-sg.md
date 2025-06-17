@@ -15,7 +15,7 @@ Public cloud database engines are managed services, which means that they are no
 > - Cassandra
 > - MySQL
 > - PostgreSQL
-> - Caching/Valkey
+> - Valkey
 
 
 ## Requirements
@@ -100,7 +100,7 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql
 >> >
-> Caching/Valkey
+> Valkey
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
@@ -130,7 +130,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
 >> >
-> Caching/Valkey
+> Valkey
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
@@ -158,7 +158,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/advancedConfiguration
 >> >
-> Caching/Valkey
+> Valkey
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/capabilities/advancedConfiguration
@@ -186,7 +186,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
 >> >
-> Caching/Valkey
+> Valkey
 >> > [!api]
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration

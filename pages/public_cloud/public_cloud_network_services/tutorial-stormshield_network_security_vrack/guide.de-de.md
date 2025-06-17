@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Infrastruktur mit Stormshield Network Security sichern
 excerpt: Erfahren Sie hier, wie Sie Ihre OVHcloud Infrastruktur mit Stormshield Network Security in der Public Cloud absichern können
-updated: 2024-05-12
+updated: 2025-05-29
 ---
 
 ## Ziel
@@ -22,11 +22,11 @@ In dieser Anleitung erhalten Sie Schritt-für-Schritt-Anweisungen zum Deployment
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional).
 - Sie haben Grundkenntnisse in Networking.
 - Sie haben auf der [Stormshield-Website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external} einen Stormshield-Account erstellt.
 - Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
-- Sie haben eine [Additional IP-Adresse](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
+- Sie haben eine Adressblock [Additional IP](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
 - Sie haben eine Stormshield Elastic Virtual Appliance Lizenz (**B**ring **Y**our **O**wn **L**icence) von [Partnern oder Drittanbietern](https://www.stormshield.com/partner/partner-finder/){.external} erworben. Diese ist zur Installation und Konfiguration erforderlich.
 
 ## In der praktischen Anwendung
@@ -91,7 +91,7 @@ openstack network create --provider-network-type vrack --provider-segment 200 --
 openstack subnet create --network stormshield-vlan200 --subnet-range 10.200.0.0/16 --dhcp --dns-nameserver <dns_address_ip> stormshield-vlan200
 ```
 
-Erstellen Sie das private Netzwerk für die SNS HA Interfaces (**H**igh **A**vailability):
+Erstellen Sie das private Netzwerk für die EVA SNS HA Interfaces (**H**igh **A**vailability):
 
 ```bash
 openstack network create --provider-network-type vrack --provider-segment 199 --disable-port-security stormshield-ha
@@ -108,17 +108,17 @@ Gehen Sie in den Bereich `Download` auf der [offiziellen Website von Stormshield
 Gehen Sie in den Ordner, in den Sie Ihr OpenStack EVA SNS Image hochgeladen haben, und importieren Sie das Image (für diese Anleitung verwenden wir das Image `utm-SNS-EVA-4.8.3-openstack.qcow2`):
 
 ```bash
-openstack image create --disk-format raw --container-format bare --file ./utm-SNS-EVA-4.8.3-openstack.qcow2 stormshield-SNS-EVA-4.7.6
+openstack image create --disk-format raw --container-format bare --file ./utm-SNS-EVA-4.8.3-openstack.qcow2 stormshield-SNS-EVA-4.8.3
 ```
 
 Erstellen Sie die EVA SNS Instanzen (in diesem Beispiel haben wir sie `stormshield-1` und `stormshield-2` genannt):
 
 ```bash
-openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-1
+openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-1
 ```
 
 ```bash
-openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-2
+openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-2
 ```
 
 > [!primary]
@@ -282,7 +282,7 @@ Synchronisieren Sie die beiden HA SNS EVA Instanzen:
 
 ```bash
 ssh admin@<ip_address>
-hasyn
+hasync
 ```
 
 ##### Überprüfen, ob eine Instanz vom VLAN200 aus das Internet erreichen kann
@@ -366,7 +366,7 @@ Synchronisieren Sie die beiden HA SNS EVA Instanzen:
 
 ```bash
 ssh admin@<ip_address>
-hasyn
+hasync
 ```
 
 <a name="step4"></a>

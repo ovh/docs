@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2024-07-15
+updated: 2025-06-04
 ---
 
 ## Objective
@@ -9,6 +9,14 @@ updated: 2024-07-15
 Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Most OVHcloud dedicated servers are delivered with a /64 IPv6 block, with the exception of High Grade and Scale servers, which are delivered with a /56 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
 
 **This guide explains how to configure IPv6 addresses on your server using various examples.**
+
+> [!primary]
+>
+> This article is about primary IP configuration. For servers that support vRack connectivity, you can also configure Additional IP addresses in a vRack rather than on the public interface of your server. You can find the matching instructions in these guides:
+>
+> - IPv4: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
+> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.

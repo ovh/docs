@@ -3062,7 +3062,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >> Le NIC OVH à configurer pour le contact Admin de ce service (Chaîne de caractères)
 >
 
-### Vrack
+### vRack
 
 #### Description des réseaux privés attachés au load balancer
 

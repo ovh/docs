@@ -267,7 +267,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) poi clicca sul `Public Clo
 
 Clicca su `Istanze`{.action} nel menu a sinistra e poi su `...`{.action} a destra dell'istanza corrispondente. Seleziona `Dettagli dell'istanza`{.action}.
 
-![detail instance](images/vrack2021.png){.thumbnail}
+![detail instance](images/instance_details.png){.thumbnail}
 
 Verrà aperto il dashboard dell'istanza. Cliccate su `...`{.action} accanto a "Reti private" e selezionate `Associa una rete`{.action}.
 

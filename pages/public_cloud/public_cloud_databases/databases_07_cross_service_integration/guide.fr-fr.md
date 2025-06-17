@@ -28,7 +28,7 @@ Cross Service Integration allows you to expose your Public Cloud Databases Logs 
 
 The Cross Service Integrations for Logs and Metrics allow you for example:
 
-- To send Caching/Valkey or MySQL metrics or Cassandra metrics in PostgreSQL.
+- To send Valkey or MySQL metrics or Cassandra metrics in PostgreSQL.
 - To send PostgreSQL or MySQL metrics to OpenSearch.
 - To show metrics in Dashboards service.
 
@@ -190,7 +190,7 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql
 >> >
-> Caching/Valkey
+> Valkey
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
@@ -235,7 +235,7 @@ Get integration capabilities related to your Public Cloud Databases service:
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/integration
 >> >
-> Caching/Valkey
+> Valkey
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/caching/{clusterId}/capabilities/integration
 >> >
@@ -281,7 +281,7 @@ For that, you need to create a new integration:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
 >> >
-> Caching/Valkey
+> Valkey
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/caching/{clusterId}/integration
 >> >
@@ -337,7 +337,7 @@ Then create a second integration from your *Destination* service name:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
 >> >
-> Caching/Valkey
+> Valkey
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/caching/{clusterId}/integration
 >> >

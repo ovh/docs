@@ -222,7 +222,7 @@ Suite au changement de politique d'accès, si celle-ci est passée en « restrei
 
 Dans le cycle de vie du vDC d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. Ces utilisateurs seront également présents sur le nouveau vDC mais n'auront aucun droit sur ce nouveau vDC. Vous devrez donc attribuer les droits appropriés aux utilisateurs, en fonction de la configuration du vDC de destination.
 
-Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights), [modifier le mot de passe d'un utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/changement_du_mot_de_passe_utilisateur) et [associer un e-mail à un utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_edit_user).
+Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud), [modifier le mot de passe d'un utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/changement_du_mot_de_passe_utilisateur) et [associer un e-mail à un utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_edit_user).
 
 <a name="activateveeamzerto"></a>
 #### Etape 3.3 Activer les options Veeam Managed Backup & Zerto Disaster Recovery

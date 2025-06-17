@@ -250,7 +250,7 @@ You can then connect to this second host by entering:
 ssh vps
 ```
 
-Consult the [corresponding `man` page](https://manpages.org/ssh_config/5) for more information on the `config` file.
+Consult the [corresponding `man` page](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html) for more information on the `config` file.
 
 ///
 
@@ -445,7 +445,7 @@ You can then connect to this second host by entering:
 ssh vps
 ```
 
-Consult the [corresponding `man` page](https://manpages.org/ssh_config/5) for more information on the `config` file.
+Consult the [corresponding `man` page](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html) for more information on the `config` file.
 
 ///
 

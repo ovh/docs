@@ -155,12 +155,12 @@ Si la opción **Boost** es adecuada para usted, encontrará a continuación las 
 
 > [!tabs]
 > **Activar la opción Boost**
->>>
+>>
 >> Para activar la opción Boost, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En el recuadro `Información general` de la página que se abre, haga clic en el botón `...`{.action} a la derecha de `Boost` y seleccione `Mejorar mi plan`{.action}.<br><br>
 >>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
->>>
+>>
 > **Desactivar la opción Boost**
->>>
+>>
 >> Para desactivar la opción Boost, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Abra la pestaña `Más` y haga clic en `Mejorar mi plan`{.action}.<br>
 >> Se mostrará la tabla de uso de la opción Boost. Haga clic en `Desactivar el plan Boost`{.action}.<br><br>
 >>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>

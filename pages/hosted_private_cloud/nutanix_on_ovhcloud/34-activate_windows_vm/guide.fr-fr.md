@@ -20,7 +20,7 @@ updated: 2022-12-21
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Une licence Windows fournie par OVHcloud.
 - Une machine virtuelle sous Windows Server. Vous pouvez vous aider de ce guide pour installer une machine virtuelle sous Windows : [Gestion des machines virtuelles](/pages/hosted_private_cloud/nutanix_on_ovhcloud/06-virtual-machine-management).
-- La machine virtuelle se connecte à Internet au travers du rtVrack (par exemple via la passerelle par défaut).
+- La machine virtuelle se connecte à Internet au travers du rtvRack (par exemple via la passerelle par défaut).
 
 ## En pratique
 

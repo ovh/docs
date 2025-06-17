@@ -50,7 +50,7 @@ This operation may take up to 30 minutes.
 
 Once the option is activated, IAM roles are created by default and can be used in OVHcloud IAM access policies.
 
-vSphere permissions for each IAM role are managed the same way as for any other Hosted Private Cloud user, via the API or in the [OVHcloud Control Panel](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
+vSphere permissions for each IAM role are managed the same way as for any other Hosted Private Cloud user, via the API or in the [OVHcloud Control Panel](/links/manager).
 
 #### Via the Control Panel
 

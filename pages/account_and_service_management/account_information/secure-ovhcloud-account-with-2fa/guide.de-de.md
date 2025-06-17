@@ -172,7 +172,7 @@ Wenn Ihr Peripheriegerät (Mobiltelefon/Smartphone/Sicherheitsschlüssel) verlor
 
 - Verwenden Sie [die aktiven Notfall-Codes](#codes), die Sie gesichert haben.
 - Sie können ein anderes Gerät zur Zwei-Faktor-Authentifizierung verwenden, wenn Sie mehrere Geräte zur Zwei-Faktor-Authentifizierung aktiviert haben.
-- [Die Zwei-Faktor-Authentifizierung deaktivieren](#desactivation).
+- [Die Zwei-Faktor-Authentifizierung deaktivieren](#disable-2fa).
 
 > [!warning]
 >

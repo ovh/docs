@@ -268,7 +268,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la
 
 Cliquez alors sur `Instances`{.action} dans le menu latéral de gauche. Cliquez ensuite sur le bouton `...`{.action} à droite de l'instance concernée puis sur `Détail de l'instance`{.action}.
 
-![detail instance](images/vrack2021.png){.thumbnail}
+![detail instance](images/instance_details.png){.thumbnail}
 
 Le tableau de bord de votre instance vous est alors présenté. Cliquez sur le bouton `...`{.action} à droite de « Réseau(x) privé(s) » puis sur `Attacher un réseau`{.action}.
 

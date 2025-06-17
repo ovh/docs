@@ -4,7 +4,8 @@ excerpt: 'Dowiedz się, jak przeprowadzić ewaluację wydajności Cloud Disk Arr
 updated: 2019-05-25
 ---
 
-## Wymagania początkowe
+## Wprowadzenie
+
 Zanim rozpoczniesz testy wydajności, zapoznaj się z używanym środowiskiem. Pamiętaj, że nawet drobne błędy metodologiczne mogą wpłynąć negatywnie na wiarygodność benchmarku. Na przykład, nie powinno się przeprowadzać testów porównawczych wydajności Cloud Disk Array znajdujących się w różnych centrach danych. Opóźnienia między centrami są zbyt duże, aby wyniki ewaluacji były wiarygodne.
 
 Bardzo istotne jest ponadto, abyś wybrał parametry odpowiednie dla Twojego przypadku. Jeśli planujesz hostować bazę danych, całkowita dostępna liczba IOPS dla bloków 8 KiB będzie prawdopodobnie miała większe znaczenie niż całkowita przepustowość I/O dużych bloków. Jeśli planujesz zastosować Hadoop, wymagania przestrzeni dyskowej będą całkowicie inne.

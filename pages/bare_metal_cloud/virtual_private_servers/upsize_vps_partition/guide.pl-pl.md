@@ -52,7 +52,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Jeśli Twój wynik wygląda podobnie do powyższego przykładu, a kolumna `MOUNTPOINT` jest pusta w odpowiednim wierszu, możesz przejść do [następnego etapu](#checkfs).
+Jeśli Twój wynik wygląda podobnie do powyższego przykładu, a kolumna `MOUNTPOINT` jest pusta w odpowiednim wierszu, możesz przejść do [następnego etapu](#filesystemcheck).
 
 Jeśli jednak Twój wynik wskazuje, że partycja VPS ma punkt montowania, najpierw należy ją odmontować.
 
@@ -77,7 +77,7 @@ W tym przykładzie konfiguracji, polecenie to będzie:
 umount /dev/sdb1
 ```
 
-#### Sprawdzanie systemu plików <a name="checkfs"></a>
+#### Sprawdzanie systemu plików <a name="filesystemcheck"></a>
 
 Przed kontynuowaniem zaleca się sprawdzenie systemu plików (`filesystem check`) w celu sprawdzenia, czy partycja zawiera błędy. Tu stosuje się poniższe polecenie:
 

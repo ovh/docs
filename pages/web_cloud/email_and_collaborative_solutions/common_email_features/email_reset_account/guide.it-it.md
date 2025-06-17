@@ -21,7 +21,7 @@ Vuoi:
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 - Disporre delle informazioni di connessione agli account email interessati
 
-## In pratica <a name="instructions"></a>
+## Procedura <a name="instructions"></a>
 
 OVHcloud propone 3 soluzioni email, la nozione di eliminazione di un account è diversa a seconda della tua offerta.
 

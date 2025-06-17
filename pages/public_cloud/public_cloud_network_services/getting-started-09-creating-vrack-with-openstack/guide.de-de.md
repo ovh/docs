@@ -55,8 +55,6 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein und klicken Sie im linken Men
 
 ![vRack bestellen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
-![vRack bestellen](images/ordering_vrack_2024.png){.thumbnail}
-
 Sie werden auf eine andere Seite weitergeleitet, um die Bestellung zu bestätigen. Dieser Vorgang dauert einige Minuten.
 
 Sobald der Dienst aktiv ist, finden Sie ihn in Ihrem Kundencenter im Bereich `Network`{.action} > `Privates vRack Netzwerk`{.action} unter der Bezeichnung "pn-xxxxxx".

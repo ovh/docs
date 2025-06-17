@@ -1,7 +1,7 @@
 ---
 title: Configurer un bloc d'IP dans le vRack
 excerpt: Découvrez comment configurer un bloc d'adresses IP publiques dans le vRack
-updated: 2023-08-31
+updated: 2025-06-04
 ---
 
 ## Objectif
@@ -9,6 +9,25 @@ updated: 2023-08-31
 En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external} vous permet de diriger le trafic IP public via le port vRack de votre serveur à l'aide d'un bloc d'adresses IP publiques.
 
 **Ce guide vous explique comment configurer un bloc d'adresses IP publiques à utiliser avec le vRack.**
+
+> [!primary]
+>
+> Le vRack prend en charge le routage public IPv4 et IPv6 avec des blocs d’adresses Additional IP. Retrouvez les instructions sur la configuration de blocs IPv6 dans ce guide : « [Configurer un bloc Additional IPv6 dans un vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) ».
+>
+
+> [!primary]
+>
+> Cet article détaille la configuration d'adresses Additional IP sur un réseau vRack. Si vous cherchez des instructions sur la configuration d'adresses Additional IP avec une adresse IP principale (sur l'interface réseau publique), consultez les articles suivants :
+>
+> - IPv4:
+>   - [Configurer une adresse IP en alias sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+>   - [Configurer une adresse IP en alias sur un serveur VPS](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>
+> - IPv6:
+>   - [Configurer IPv6 sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+>   - [Configurer IPv6 sur un serveur VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>   - [Configurer IPv6 sur une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+>
 
 ## Prérequis
 

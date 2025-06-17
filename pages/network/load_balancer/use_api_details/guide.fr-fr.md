@@ -3072,7 +3072,7 @@ Accéder aux éléments relatifs au protocole UDP (frontend, ferme, etc.).
 > Pour plus d'informations sur la gestion des contacts OVHcloud, consultez le guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 >
 
-### Vrack
+### vRack
 
 #### Description des réseaux privés attachés au load balancer
 

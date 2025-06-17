@@ -26,7 +26,7 @@ Możesz również wdrożyć system operacyjny z wolumenu i na wolumin. W ten spo
 > W aktualnej wersji OpenStack tryb rescue-pro nie jest dostępny na instancji uruchomionej z poziomu wolumenu bootowalnego.
 >
 
-## Wymagania
+## Wymagania początkowe
 
 - [Dostęp do interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - [Pobieranie zmiennych środowiskowych OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
@@ -246,6 +246,6 @@ Możesz również wdrożyć system operacyjny z wolumenu i na wolumin. W ten spo
 >> +--------------------------------------+----------+--------------------------------------+--------------------------------------+------+
 >> ```
 
-## Krok w przyszłość
+## Sprawdź również
 
 Przyłącz się do [społeczności użytkowników](/links/community).

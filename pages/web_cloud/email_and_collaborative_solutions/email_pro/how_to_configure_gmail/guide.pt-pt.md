@@ -28,7 +28,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail e int
 > Esta documentação foi realizada a partir da nova interface do Gmail. Se as imagens forem um pouco diferentes da sua versão, as instruções permanecerão as mesmas e poderão ser seguidas.
 >
 
-## Na Prática
+## Instruções
 
 ### Etapa 1: adicionar uma conta E-mail Pro OVHcloud na interface do Gmail
 

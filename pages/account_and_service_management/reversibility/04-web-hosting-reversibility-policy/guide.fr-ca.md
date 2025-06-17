@@ -14,10 +14,10 @@ Cette politique vise à mettre en oeuvre les principes de réversibilité mondia
 Les fonctionnalités des hébergements web OVHcloud sont divisées en trois catégories:
 
 - Les [fonctionnalités principales](#fonctionnalites-principales) pour lesquelles nous garantissons la capacité de migrer.
-- L'[implémentation OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
-- Les [fonctionnalités spécifiques](#fonctions-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
+- L'[implémentation OVHcloud](#implementation-ovhcloud), dont la migration nécessitera des adaptations à un nouvel environnement.
+- Les [fonctionnalités spécifiques](#fonctionnalites-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
 
-### Fonctionnalités principales <a name="fonctionnalites-principales"></a>
+### Fonctionnalités principales
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |----|-----|---|-----|-----|
@@ -26,7 +26,7 @@ Les fonctionnalités des hébergements web OVHcloud sont divisées en trois cat�
 |Hébergement Web - Serveurs de fichiers (FTP).|Mise à disposition d'un serveur de fichiers pour héberger les fichiers composants du site Web (pages, scripts, ressources...)|**Tout type de format** - les clients peuvent téléverser n'importe quel fichier sur le serveur.|**Migration entrante**: Connexion FTP au serveur de fichiers et importation.<br><br>**Migration sortante**: Connexion FTP et récupération de fichiers.|**Migration entrante**: [Migration de votre site Web vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)<br><br>**Migration sortante**: [Exporter un site Web - récupérer des fichiers de votre espace de stockage FTP](/pages/web_cloud/web_hosting/exporter-son-site-web#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp)|
 |Hébergement Web: bases de données|Bases de données pouvant être connectées au site Web|**Offres SQL partagées**:<br><br>**MySQL** 5.6<br>**Offres SQL privées**:<br><br>**MySQL** 5.6 / 5.7<br>**MariaDB** 10.1<br><br>**PostgreSQL** 9.4 / 9.5 / 9.6 / 10|**Migration entrante**: Créez une base de données, puis importez les données selon l'une des méthodes disponibles (restauration de sauvegarde, interface phpMyAdmin, script, connexion SSH)<br><br>**Migration sortante**: Exporter les données par l'une des méthodes disponibles (exportation de sauvegarde, interface phpMyAdmin, script, connexion SSH)|**Migration entrante**: [Importation d'une sauvegarde dans une base de données sur votre hébergement Web](/pages/web_cloud/web_hosting/sql_importing_mysql_database)<br><br>[SQL privé - Importation d'une base de données](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#importation-dune-base-de-donnees-facultatif)<br><br>**Migration sortante**: [Récupération de la sauvegarde de la base de données sur votre hébergement Web](/pages/web_cloud/web_hosting/sql_database_export)|
 
-### Implémentation OVHcloud <a name="ovhcloud-implementation"></a>
+### Implémentation OVHcloud
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -35,7 +35,7 @@ Les fonctionnalités des hébergements web OVHcloud sont divisées en trois cat�
 |Journalisation|Conservation et consultation des logs du site Web. Analyse et représentation graphique de ces logs avec l'application Urchin WebAnalytics.|Texte brut avec un format de logs Apache standard|**Migration entrante**: Non applicable - les logs de l'infrastructure précédente ne sont pas pertinents pour un autre.<br><br>**Migration sortante**: Téléchargez les fichiers de logs à partir de votre [esapce client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)|**Migration entrante**: N/A<br><br>**Migration sortante**: [Exportation d'un site Web - récupération des logs](/pages/web_cloud/web_hosting/exporter-son-site-web#etape-3-recuperer-les-logs-de-votre-hebergement-ovhcloud)|
 |Planification des tâches |Exécution de tâches automatisées périodiques (cron)|N/A|**Migration entrante**: Les scripts ne sont pas importés tels quels. Récupérez les anciens scripts ou leur structure et réimplémentez-les sur l'hébergement OVHcloud via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).<br><br>**Migration sortante**: Les scripts ne sont pas exportés tels quels. Récupérez la structure des scripts dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et réimplémentez-les dans l'environnement cible.|**Migration entrante et sortante**: [Utilisation de tâches automatisées sur un hébergement Web](/pages/web_cloud/web_hosting/cron_tasks)|
 
-### Fonctionnalités spécifiques <a name="fonctionnalités-spécifiques"></a>
+### Fonctionnalités spécifiques
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|-----|---|-----|---|

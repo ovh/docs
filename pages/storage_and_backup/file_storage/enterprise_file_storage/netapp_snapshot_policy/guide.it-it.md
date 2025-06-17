@@ -25,7 +25,7 @@ Uno Snapshot di volumi è una copia temporizzata di sola lettura di un volume.<b
 Gli Snapshot sono creati a partire da un volume operativo esistente. Non possono esistere senza questo.<br>
 Una politica di Snapshot permette di automatizzare la creazione degli Snapshot utilizzando diversi parametri. La policy può quindi essere modificata ed eliminata se non è più necessaria.
 
-## In pratica
+## Procedura
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona la scheda `Bare Metal Cloud`{.action} nella barra di navigazione superiore. Apri `Storage e Backup`{.action} poi `Enterprise File Storage`{.action} nel menu a sinistra e seleziona il servizio dalla lista.
 

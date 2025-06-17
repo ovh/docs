@@ -18,7 +18,7 @@ Consulte en esta guía todas las direcciones IP del servicio CDN Infrastructure 
 
 - Tener una [solución CDN Infrastructure de OVHcloud](https://www.ovhcloud.com/es-es/network/cdn/).
 
-## En la práctica
+## Procedimiento
 
 > [!warning]
 > Esta lista de direcciones IP no es exhaustiva y puede cambiar en el futuro.

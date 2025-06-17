@@ -1,7 +1,7 @@
 ---
 title: Jakie są adresy IP monitoringu OVHcloud?
 excerpt: W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze.
-updated: 2025-05-21
+updated: 2025-06-04
 ---
 
 ## Wprowadzenie
@@ -37,6 +37,7 @@ Aby wdrożyć restrykcyjny firewall, zwłaszcza w zakresie ICMP i nadal korzysta
 |netmon-eri-probe|51.195.135.163/32|icmp|
 |netmon-lim-probe|51.38.117.56|icmp|
 |netmon-sbg-probe|51.38.25.100|icmp|
+|netmon-par-probe|57.130.4.212|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.xxx.250 (z adresem IP serwera xxx.xxx.xxx.aaa)|icmp|

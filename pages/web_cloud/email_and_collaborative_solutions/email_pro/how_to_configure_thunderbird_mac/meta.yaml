@@ -2,3 +2,12 @@ id: 417f733d-60e7-4c1c-9863-b9176b4a397b
 full_slug: email-pro-thunderbird-macos-configuration
 banner: marketplace-support-collaboration
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

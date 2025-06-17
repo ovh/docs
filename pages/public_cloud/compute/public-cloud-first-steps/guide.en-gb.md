@@ -426,7 +426,7 @@ If your [SSH key pair is set up correctly](#create-ssh), you can now connect to 
 
 > [!primary]
 >
-> If you receive error messages regarding your **SSH keys**, verify that your local device has a properly configured private SSH key using the information in [this guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> If you receive error messages regarding your **SSH keys**, verify that your local device has a properly configured private SSH key using the information in [this guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > If you still encounter issues, you can replace the key pair with the help of [this guide](/pages/public_cloud/compute/replacing_lost_ssh_key). 
 >
 > If you have created an instance without an SSH key, via the [OVHcloud API](/pages/manage_and_operate/api/first-steps) or the [OpenStack Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon), you can only add an SSH key to your instance via [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) by following the instructions set out in [this guide](/pages/public_cloud/compute/replacing_lost_ssh_key).

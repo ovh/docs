@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizzare Cyberduck con un hosting Web"
 excerpt: "Questa guida ti mostra come utilizzare l’applicazione Cyberduck per connettersi a un hosting Web OVHcloud"
-updated: 2024-02-23
+updated: 2025-06-10
 ---
 
 ## Obiettivo
@@ -22,13 +22,17 @@ Per scaricare Cyberduck, accedi al [sito ufficiale](https://cyberduck.io/) dell�
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore del servizio. OVHcloud non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
 >
 
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web](/links/web/hosting){.external}.
 - Aver scaricato e installato l’applicazione Cyberduck sul proprio computer.
+
+> [!primary]
+>
+> Per gli hosting Web, non è più possibile connettersi allo spazio di storage FTP tramite lo strumento online FTP Explorer/Net2FTP. Per continuare a connettersi in FTP al tuo hosting Web, utilizza i software [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Procedura
 

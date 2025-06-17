@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l’espace de stockage FTP de son hébergement web"
 excerpt: "Découvrez comment vous connecter à l'espace de stockage FTP de votre hébergement web OVHcloud"
-updated: 2025-05-23
+updated: 2025-06-10
 ---
 
 ## Objectif
@@ -20,6 +20,7 @@ Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage F
 > [!primary]
 > Seuls les hébergements web **Pro** ou **Performance** permettent l'activation de plusieurs utilisateurs FTP et disposent de connexions en SSH.
 >
+> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne FTP Explorer/Net2FTP. Pour continuer à vous connecter en FTP à votre hébergement web, utilisez les logiciels [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## En pratique
 

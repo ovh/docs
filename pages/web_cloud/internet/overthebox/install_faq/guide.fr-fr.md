@@ -1,7 +1,7 @@
 ---
 title: 'FAQ OverTheBox'
 excerpt: 'Foire aux questions sur la solution OverTheBox'
-updated: 2024-10-04
+updated: 2025-06-05
 ---
 
 <style>
@@ -98,7 +98,11 @@ Le système OverTheBox est l'élément central de votre réseau, il est le véri
 
 /// details | Est-ce que l'IPv6 est supportée ?
 
-Nous ne fournissons pour l'instant qu'une IPv4 de sortie avec l'agrégation. Nous allons prochainement intégrer le support d'IPv6 à OverTheBox.
+Oui, l'IPv6 est actuellement supportée en bêta. L'IPv6 est incluse dans les offres OverTheBox **Starter** et **Business**.
+
+Pour activer l'IPv6 sur votre service, consultez notre guide : [Comment configurer IPv6 sur OverTheBox ?](/pages/web_cloud/internet/overthebox/config_ipv6)
+
+Si votre offre actuelle n'inclut pas l'IPv6, il est possible de changer d'offre en suivant notre guide : [Comment changer mon offre OverTheBox](/pages/web_cloud/internet/overthebox/offer_migration).
 
 ///
 

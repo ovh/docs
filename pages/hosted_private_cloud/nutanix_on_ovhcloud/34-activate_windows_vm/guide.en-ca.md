@@ -21,7 +21,7 @@ updated: 2022-12-21
 - You must be connected to the cluster via Prism Central
 - A Windows licence provided by OVHcloud
 - A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](/pages/hosted_private_cloud/nutanix_on_ovhcloud/06-virtual-machine-management)
-- The virtual machine connects to the Internet through the rtVrack (e.g. via the default gateway)
+- The virtual machine connects to the Internet through the rtvRack (e.g. via the default gateway)
 
 ## Instructions
 

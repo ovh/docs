@@ -47,7 +47,7 @@ Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](/links/mana
 
 Para que a applet Java funcione, é necessário que o Java esteja instalado no seu computador. Se ainda não o fez, aceda à [página oficial](https://www.java.com/en/download/){.external}.
 
-Na secção "Remote KVM" {.action} da Área de Cliente OVHcloud, clique em `A partir de applet Java (KVM)`{.action}:
+Na secção `Remote KVM`{.action} da Área de Cliente OVHcloud, clique em `A partir de applet Java (KVM)`{.action}:
 
 ![Acesso KVM Java](images/ipmi-kvm-java-01.png){.thumbnail}
 
@@ -63,7 +63,7 @@ Pode desde já gerir o seu servidor.
 
 ### Abrir um KVM através do browser da Web <a name="kvm-browser"></a>
 
-Na secção "Remote KVM" {.action} da Área de Cliente OVHcloud, clique em `A partir do seu browser (KVM)`{.action}:
+Na secção `Remote KVM`{.action} da Área de Cliente OVHcloud, clique em `A partir do seu browser (KVM)`{.action}:
 
 ![Acesso KVM HTML](images/ipmi-kvm-html-01.png){.thumbnail}
 

@@ -2,3 +2,12 @@ id: 3faa5269-2c91-485e-a409-2fcda0b9afd0
 full_slug: private-email-server-responsibility-sharing
 reference_category: account-and-service-management-responsibility-sharing
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

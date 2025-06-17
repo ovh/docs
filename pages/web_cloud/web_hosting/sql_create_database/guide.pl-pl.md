@@ -28,10 +28,10 @@ Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hos
 
 W tabeli bazy danych mogą mieć kilka różnych Opcje:
 
-- **W pakiecie**: wskazuje, że baza danych jest zawarta w Twojej usłudze hostingu. Nie powoduje to dodatkowych kosztów.</br></br>
-- **Opcjonalnie**: wskazuje, że baza danych została wykupiona jako uzupełnienie baz danych zawartych w hostingu. Płacisz jedynie za dodatkową bazę danych na Twoim hostingu.</br></br>
-- **W pakiecie - wycofane ze sprzedaży**: wskazuje, że baza danych zawarta w ofercie zostanie wkrótce wycofana ze sprzedaży i stanie się nieaktualna. </br>Zalecamy, aby baza danych stała się przestarzała **przed**, pobrać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).</br></br>
-- **Opcjonalnie - wycofane ze sprzedaży**: wskazuje, że baza danych wykupiona dodatkowo na Twoim hostingu zostanie wkrótce usunięta ze sprzedaży i stanie się nieaktualna. </br>Zalecamy, aby baza danych stała się przestarzała **przed**, odzyskać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).
+- **W pakiecie**: wskazuje, że baza danych jest zawarta w Twojej usłudze hostingu. Nie powoduje to dodatkowych kosztów.<br><br>
+- **Opcjonalnie**: wskazuje, że baza danych została wykupiona jako uzupełnienie baz danych zawartych w hostingu. Płacisz jedynie za dodatkową bazę danych na Twoim hostingu.<br><br>
+- **W pakiecie - wycofane ze sprzedaży**: wskazuje, że baza danych zawarta w ofercie zostanie wkrótce wycofana ze sprzedaży i stanie się nieaktualna. <br>Zalecamy, aby baza danych stała się przestarzała **przed**, pobrać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).<br><br>
+- **Opcjonalnie - wycofane ze sprzedaży**: wskazuje, że baza danych wykupiona dodatkowo na Twoim hostingu zostanie wkrótce usunięta ze sprzedaży i stanie się nieaktualna. <br>Zalecamy, aby baza danych stała się przestarzała **przed**, odzyskać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).
 
 > [!success]
 >

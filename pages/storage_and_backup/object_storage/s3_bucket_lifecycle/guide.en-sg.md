@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2025-05-13
+updated: 2025-06-05
 ---
 
 <style>
@@ -54,14 +54,7 @@ When an object reaches the end of its lifetime based on its lifecycle configurat
 - **versioned**: a delete marker is created and becomes the current version. You can also choose how many old versions you want to keep. If the current object version is the only object version and it is also a delete marker, that delete marker will be removed.
 - **versioning-suspended**: we currently do not allow for the suspension of versioning if you have a lifecycle configuration in effect and vice-versa. We currently do not allow for the upload of a lifecycle configuration if versioning is suspended on the bucket.
 
-> [!warning]
-> 
-> The release of the feature will be done in 2 phases:
->
-> - Phase 1: support for expiration only
-> - Phase 2: support for transitions
-
-## Expiration (available)
+## Expiration
 
 Lifecycle rules are processed asynchronously and on a best-effort basis. Most rules are applied within 24 hours, but for very large buckets or when processing many objects, it might take longer. During this delay, you continue to be billed for the object's current storage tier, even if the rule (e.g., expiration or transition) has already been triggered but not yet completed. For example, if an object is set to be deleted on day 30 but is only processed on day 32, you may be billed for an additional two days.
 
@@ -150,13 +143,13 @@ In a versioning-enabled bucket, each object has one current version and zero or 
 | Filter.ObjectSizeLessThan                           | no       | Maximum object size to which the rule applies. |
 | Filter.And                                          | no       | You can apply multiple selection criteria in the filter. A logical AND applies to multiple filter criteria. |
 | Filter.And.Tags                                     | no       | An array of tag filters. All of the tags of the array must exist in the object's tag set in order for the rule to apply. |
-| Expiration                                          | yes*     | A lifecycle action that applies a deletion operation to the set of filtered objects. </br></br> ⚠️ Mandatory if Transitions or AbortIncompleteMultipartUpload is not present |
-| Expiration.Date                                     | no*      | Indicates the deletion date of the objects. The date value must be in the ISO 8601 date format and the time must always be set to midnight UTC. </br></br> ⚠️ This attribute is not mandatory if Days is present.  </br> ⚠️ this attribute is mutually exclusive with Days i.e you either have Date or Days but you cannot specify both. |
-| Expiration.Days                                     | yes*     | Indicates the duration in days after which the objects are to be deleted. The value must be an integer equal to or greater than 1. </br></br> ⚠️ This attribute is mandatory if Date is not present. </br> ⚠️ this attribute is mutually exclusive with Date i.e you either have Date or Days but you cannot specify both. |
-| Expiration.ExpiredObjectDeleteMarker                | no       | Tells if OVHcloud Object Storage should immediately remove delete markers with no noncurrent versions aka expired delete markers. </br></br> ⚠️ You cannot specify Days or Date with ExpiredObjectDeleteMarker in the same rule. When you specify the Days/Date, expired delete markers are automatically deleted like normal objects when they satisfy the age criteria. ExpiredObjectDeleteMarker is used to clean up delete markers as soon as they become the only version, you have to create a separate rule with only ExpiredObjectDeleteMarker attribute in Expiration. </br> ⚠️ When you use the ExpiredObjectDeleteMarker lifecycle action, the rule cannot specify a tag-based filter. |
+| Expiration                                          | yes*     | A lifecycle action that applies a deletion operation to the set of filtered objects. <br><br> ⚠️ Mandatory if Transitions or AbortIncompleteMultipartUpload is not present |
+| Expiration.Date                                     | no*      | Indicates the deletion date of the objects. The date value must be in the ISO 8601 date format and the time must always be set to midnight UTC. <br><br> ⚠️ This attribute is not mandatory if Days is present.  <br> ⚠️ this attribute is mutually exclusive with Days i.e you either have Date or Days but you cannot specify both. |
+| Expiration.Days                                     | yes*     | Indicates the duration in days after which the objects are to be deleted. The value must be an integer equal to or greater than 1. <br><br> ⚠️ This attribute is mandatory if Date is not present. <br> ⚠️ this attribute is mutually exclusive with Date i.e you either have Date or Days but you cannot specify both. |
+| Expiration.ExpiredObjectDeleteMarker                | no       | Tells if OVHcloud Object Storage should immediately remove delete markers with no noncurrent versions aka expired delete markers. <br><br> ⚠️ You cannot specify Days or Date with ExpiredObjectDeleteMarker in the same rule. When you specify the Days/Date, expired delete markers are automatically deleted like normal objects when they satisfy the age criteria. ExpiredObjectDeleteMarker is used to clean up delete markers as soon as they become the only version, you have to create a separate rule with only ExpiredObjectDeleteMarker attribute in Expiration. <br> ⚠️ When you use the ExpiredObjectDeleteMarker lifecycle action, the rule cannot specify a tag-based filter. |
 | NoncurrentVersionExpiration                         | no       | A lifecycle action that indicates when noncurrent object versions should be deleted. This action does not affect the current versions. It only deletes the versions that are not current. |
 | NoncurrentVersionExpiration.NoncurrentDays          | no       | Indicates the number of days before a noncurrent version is eligible to deletion after they became noncurrent i.e the minimum age of a noncurrent version. |
-| NoncurrentVersionExpiration.NewerNoncurrentVersions | no       | Indicates the number of most recent noncurrent versions to retain. Maximum is 100. </br></br> Example: </br> Suppose you have an object B with 10 versions: </br> - B v10 (current version, creation date: 2024-10-23) </br> - B v9 (noncurrent version, creation date: 2024-10-22) </br> - B v8 (noncurrent version, creation date: 2024-10-21) </br> - B v7 (noncurrent version, creation date: 2024-10-20) </br> - B v6 (noncurrent version, creation date: 2024-10-19) </br> - B v5 (noncurrent version, creation date: 2024-10-18) </br> - B v4 (noncurrent version, creation date: 2024-10-17) </br> - B v3 (noncurrent version, creation date: 2024-10-16) </br> - B v2 (noncurrent version, creation date: 2024-10-15) </br> - B v1 (noncurrent version, creation date: 2024-10-14) </br></br> If **NewerNoncurrentVersions**=3, the lifecycle rule will delete all the noncurrent versions except the 3 most recent i.e v9, v8 and v7. |
+| NoncurrentVersionExpiration.NewerNoncurrentVersions | no       | Indicates the number of most recent noncurrent versions to retain. Maximum is 100. <br><br> Example: <br> Suppose you have an object B with 10 versions: <br> - B v10 (current version, creation date: 2024-10-23) <br> - B v9 (noncurrent version, creation date: 2024-10-22) <br> - B v8 (noncurrent version, creation date: 2024-10-21) <br> - B v7 (noncurrent version, creation date: 2024-10-20) <br> - B v6 (noncurrent version, creation date: 2024-10-19) <br> - B v5 (noncurrent version, creation date: 2024-10-18) <br> - B v4 (noncurrent version, creation date: 2024-10-17) <br> - B v3 (noncurrent version, creation date: 2024-10-16) <br> - B v2 (noncurrent version, creation date: 2024-10-15) <br> - B v1 (noncurrent version, creation date: 2024-10-14) <br><br> If **NewerNoncurrentVersions**=3, the lifecycle rule will delete all the noncurrent versions except the 3 most recent i.e v9, v8 and v7. |
 | AbortIncompleteMultipartUpload                      | no       | A lifecycle action that applies a delete operation on parts of an incomplete multipart upload. |
 | AbortIncompleteMultipartUpload.DaysAfterInitiation  | no       | Indicates the number of days after which all the parts of all incomplete multipart uploads are deleted and aborts the underlying multipart uploads. |
 
@@ -393,7 +386,7 @@ In a versioned bucket, the following configuration does the following actions:
 
 ///
 
-## Transition (coming soon)
+## Transition
 
 ### Supported transitions
 
@@ -403,11 +396,12 @@ In a versioned bucket, the following configuration does the following actions:
 
 The following are the currently supported transitions:
 
-| from/to          | High Performance | Standard  | Standard Infrequent Access |Cold Archive |
-| ---------------- | ---------------- | --------- | -------------------------- |------------ |
-| High Performance |        -         | yes       |             yes            | no          |
-| Standard         | forbidden        | -         |             yes            | no          |
-| Cold Archive     | forbidden        | forbidden |             forbidden      | -           |
+| from/to          | High Performance | Standard  | Infrequent Access |Cold Archive |
+| ---------------- | ---------------- | --------- | ----------------- |------------ |
+| High Performance |        -         | yes       |    yes            | no          |
+| Standard         | forbidden        | -         |    yes            | no          |
+| Infrequent Access| forbidden        | forbidden |    -              | no          |
+| Cold Archive     | forbidden        | forbidden |    forbidden      | -           |
 
 ### Minimum object size
 
@@ -460,8 +454,8 @@ As already mentioned before, when you have multiple rules in a bucket lifecycle 
 | Attribute                                            | Required | Description 
 | ---------------------------------------------------- | -------- | ------------
 | Transitions                                          | yes*     | An array of lifecycle operations that automatically copy all selected objects from their current storage tier to a most-effective storage tier. |
-| Transitions.Date                                     | no*      | Indicates the date when the objects are to be transitioned. The date value must be in the ISO 8601 date format and the time must always be set to midnight UTC. </br></br> ⚠️ This attribute is not mandatory if Days is present. </br> ⚠️ this attribute is mutually exclusive with Days i.e you either have Date or Days but you cannot specify both. |
-| Transitions.Days                                     | yes*     | Indicates the duration in days after which the objects are to be transitioned. The value must be an integer equal to or greater than 30. </br></br> ⚠️ This attribute is mandatory if Date is not present. </br> ⚠️ this attribute is mutually exclusive with Date i.e you either have Date or Days but you cannot specify both. |
+| Transitions.Date                                     | no*      | Indicates the date when the objects are to be transitioned. The date value must be in the ISO 8601 date format and the time must always be set to midnight UTC. <br><br> ⚠️ This attribute is not mandatory if Days is present. <br> ⚠️ this attribute is mutually exclusive with Days i.e you either have Date or Days but you cannot specify both. |
+| Transitions.Days                                     | yes*     | Indicates the duration in days after which the objects are to be transitioned. The value must be an integer equal to or greater than 30. <br><br> ⚠️ This attribute is mandatory if Date is not present. <br> ⚠️ this attribute is mutually exclusive with Date i.e you either have Date or Days but you cannot specify both. |
 | Transitions.StorageClass                             | yes      | Indicates the target Storage class. Currently, only "STANDARD" is available. |
 | NoncurrentVersionTransitions                         | no       | An array of lifecycle actions that indicate when noncurrent object versions should be transitioned. These actions do not affect the current versions. They only transition the versions that are not current. |
 | NoncurrentVersionTransitions.NoncurrentDays          | no       | Indicates the number of days before a noncurrent version is eligible to transition after they became noncurrent i.e the minimum age of a noncurrent version. |

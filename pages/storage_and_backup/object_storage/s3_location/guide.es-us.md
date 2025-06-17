@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints y geodisponibilidad del Object Storage (EN)
-updated: 2025-05-14
+updated: 2025-06-04
 ---
 
 <style>
@@ -201,7 +201,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 _<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-04._
 
 > [!warning]
-> Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all features and API operations will be available.
+> Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3 compatible features and API operations are available.
 
 ### Endpoint retrocompatibility
 

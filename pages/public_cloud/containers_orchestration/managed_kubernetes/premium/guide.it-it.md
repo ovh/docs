@@ -1,7 +1,7 @@
 ---
 title: MKS Premium Plan
 excerpt: 'Features and limitations of the MKS Premium Plan in Beta version'
-updated: 2025-05-27
+updated: 2025-06-05
 ---
 
 <style>
@@ -101,6 +101,16 @@ The following ranges are used by the cluster, and should not be used elsewhere o
 ```
 
 These ranges will be configurable in a future version.
+
+### Storage classes
+
+MKS Premium only supports two out of the [three Storage Classes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume#storage-classes): `csi-cinder-high-speed` and `csi-cinder-high-speed-gen2`.
+
+They allow to create **zone specific** volumes: a PVC provisioned on a zone `X` will only be accessible from the nodes on the zone `X`.
+
+The [classic multi-attach](/pages/public_cloud/compute/classic_block_multi_az_limitations#introduction) is not supported yet for MKS clusters on regions with multiple availability zones, since the currently available file systems (ext(2,3,4), xfs and btrfs) can be subject to data corruptions if volumes are attached to multiple instances.
+
+To create a volume on MKS Premium, use the same process as a [standard Managed Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume).
 
 ## Getting started
 

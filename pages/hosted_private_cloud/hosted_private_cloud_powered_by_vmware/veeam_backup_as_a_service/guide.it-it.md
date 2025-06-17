@@ -11,7 +11,7 @@ updated: 2024-10-18
 ## Requirements
 
 - A [Hosted Private Cloud infrastructure](/links/hosted-private-cloud/hosted-private-cloud).
-- A user account with access to vSphere and the permission ["Add resources"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights) for the pertinent data centre granted from the [OVHcloud Control Panel](/links/manager).
+- A user account with access to vSphere and the permission ["Add resources"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud) for the pertinent data centre granted from the [OVHcloud Control Panel](/links/manager).
 - You must be logged in to the managed vSphere web client.
 - [vSphere High Availability (HA)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability) enabled.
 - [Distributed Resource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new) enabled.

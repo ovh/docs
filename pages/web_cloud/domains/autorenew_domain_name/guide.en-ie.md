@@ -1,7 +1,7 @@
 ---
 title: "How to renew OVHcloud domain names"
 excerpt: "Find out why and how to renew your OVHcloud domain names"
-updated: 2025-02-17
+updated: 2025-06-13
 ---
 
 ## Objective
@@ -105,6 +105,21 @@ Perform the following actions:
 You can renew the service at any time before its expiry and also choose the renewal duration.  
 In this case, the duration of validity subscribed to will be added to the current validity period. You will not lose any remaining validity time.
 
+### Checking the renewal status of a domain name
+
+Once you have paid for your renewal, the domain name will be renewed the day before its expiry (approximately one month after the renewal).
+
+The data displayed in the WHOIS will then be updated, confirming the correct domain name renewal.
+
+To check the renewal status of your domain name:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. Click `Domain names`{.action} in the `Domains and DNS`{.action} section.
+1. In the table, check the renewal status in the `Status` column of the domain name concerned.
+
+The status `Renewal in progress` will appear once the payment has been made, until your domain name has been renewed with the registry.
+
 ### Cancelling a domain name
 
 - In the table, identify the domain name you want to cancel.
@@ -122,11 +137,6 @@ For more information on cancelling OVHcloud services, follow the instructions in
 
 ### Access domain name renewal bills
 
-> [!primary]
->
-> The bill is available on the day the relevant domain name is renewed (30 days after the renewal date in the case of automatic renewal).
->
-
 A `Bill to pay` statement is displayed when an invoice is awaiting payment and when:
 
  - You have services that renew automatically.
@@ -136,22 +146,52 @@ Simply click the `Pay my bill`{.action} option, which will redirect you to a pay
 
 ## FAQ
 
-> [!faq]
->
-> I forgot to renew my domain name in time, what should I do?
->> Start by checking the domain name’s status using the [WHOIS domain name tool](https://www.ovhcloud.com/en-gb/domains/whois/).
->> If it is a generic domain name (.com, .org, .net, etc.), it remains reserved for a "grace period" (approximately 7 days), followed by a "redemption period" (approximately 35 to 40 additional days). These delays vary, and depend on the extension and the rules of the registry that owns the extension. During these two periods, only you will be able to renew the domain name.
->> During the grace period, you can renew it via the OVHcloud Control Panel by following the steps in this guide.
->> During the redemption period, the domain is no longer managed by OVHcloud. Renewal via the OVHcloud Control Panel will incur an additional fee, which vary depending on the extension. View prices by clicking on the extension concerned [here](/links/web/domains-tld).
->> After the redemption period, the domain name will enter a deletion phase that can take several days, before becoming public again. If you would like to use it again, we recommend using the [WHOIS domain name tool](https://www.ovhcloud.com/en-gb/domains/whois/) to check its availability regularly.
-> I do not want to renew my domain name, but transfer it to a registrar other than OVHcloud. How do I do this?
->> Follow the instructions in our guide “[Transferring a domain name to another registrar](/pages/web_cloud/domains/transfer_outgoing_domain)”.
-> I use automatic renewal, and I have been charged automatically. However, I do not want to keep my domain name, and I want a refund.
->> You can be automatically refunded up to 10 days before the effective renewal date for your domain name. To do this, cancel the domain name.
+/// details | I forgot to renew my domain name in time, what should I do?
+
+Start by checking the domain name’s status using the [WHOIS domain name tool](/links/web/domains-whois).
+
+If it is a generic domain name (.com, .org, .net, etc.), it remains reserved for a "grace period" (approximately 7 days), followed by a "redemption period" (approximately 35 to 40 additional days). These delays vary, and depend on the extension and the rules of the registry that owns the extension. During these two periods, only you will be able to renew the domain name.
+
+During the grace period, you can renew it via the OVHcloud Control Panel by following the steps in this guide.
+
+During the redemption period, the domain is no longer managed by OVHcloud. Renewal via the OVHcloud Control Panel will incur an additional fee, which vary depending on the extension. View prices by clicking on the extension concerned [here](/links/web/domains-tld).
+
+After the redemption period, the domain name will enter a deletion phase that can take several days, before becoming public again. If you would like to use it again, we recommend using the [WHOIS domain name tool](/links/web/domains-whois) to check its availability regularly.
+
+///
+
+/// details | I do not want to renew my domain name, but transfer it to a registrar other than OVHcloud. How do I do this?
+
+Follow the instructions in our guide “[Transferring a domain name to another registrar](/pages/web_cloud/domains/transfer_outgoing_domain)”.
+
+I use automatic renewal, and I have been charged automatically. However, I do not want to keep my domain name, and I want a refund.
+
+You can be automatically refunded up to 10 days before the effective renewal date for your domain name. To do this, cancel the domain name.
+
+///
+
+/// details | I have renewed my domain name but the WHOIS is still not up to date. How can I ensure that the domain name is renewed properly?
+
+Once the renewal fee has been paid, we will send the request to the appropriate registry.
+
+Your domain name’s status will then change to `Renewal in progress`.
+
+Once the registry has renewed your domain name (approximately one month after the renewal fees have been paid), its status will change back to `registered`.
+
+WHOIS data will then be updated.
+
+To check the renewal status of your domain name:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. Click `Domain names`{.action} in the `Domains and DNS`{.action} section.
+1. In the table that pops up, check the renewal status in the `Status` column of the domain name concerned.
+
+///
 
 ## Go further
 
-This guide did not answer your question? View our [Billing and payment FAQ](/pages/account_and_service_management/managing_billing_payments_and_services/faq-billing)
+This guide did not answer your question? View our [Billing and payment FAQ](/pages/account_and_service_management/managing_billing_payments_and_services/faq-billing).
 
 [How to renew OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 

@@ -22,7 +22,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Publ
 
 > [!warning]
 >
-Si noti che gli stanziamenti aggiunti in questa sezione non possono essere trasferiti né rimborsati. Non hanno valore monetario e il credito non utilizzato entro 13 mesi dall'acquisto viene perso.
+> Si noti che gli stanziamenti aggiunti in questa sezione non possono essere trasferiti né rimborsati. Non hanno valore monetario e il credito non utilizzato entro 13 mesi dall'acquisto viene perso.
 >
 
 ### Aggiungi credito
@@ -55,7 +55,7 @@ Il saldo del voucher comparirà nella lista `Crediti e voucher`.
 
 > [!primary]
 >
-Poiché i periodi di validità dei voucher sono generalmente più limitati, prima del credito Public Cloud verrà utilizzato il saldo del voucher.
+> Poiché i periodi di validità dei voucher sono generalmente più limitati, prima del credito Public Cloud verrà utilizzato il saldo del voucher.
 >
 
 ## Per saperne di più

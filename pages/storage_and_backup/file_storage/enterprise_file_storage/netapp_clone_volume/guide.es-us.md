@@ -58,7 +58,7 @@ Consulte la [guía de conservación de snapshots automáticos](/pages/storage_an
 
 - El tamaño del volumen clonado debe ser **mayor o igual** al tamaño del snapshot utilizado para la operación de clonación.
 
-## En la práctica
+## Procedimiento
 
 1\. Identifique el`id` del snapshot que desea utilizar con la siguiente llamada a la API:
 

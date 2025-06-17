@@ -151,7 +151,7 @@ Select the tab that corresponds to your choice:
 >> ![zimbra](images/zimbra_domain_add_external02.png){.thumbnail .w-500}
 >>
 >> > [!warning]
->>>
+>> >
 >> > If the CNAME record is not visible in the DNS zone after 48 hours, the operation is cancelled. You will then need to retry the operation.
 
 #### Modify a domain name <a name="domains-modify"></a>

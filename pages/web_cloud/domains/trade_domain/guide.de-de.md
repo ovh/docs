@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen - Inhaber eines Domainnamens ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens ändern oder die zugehörigen Informationen aktualisieren"
-updated: 2025-04-28
+updated: 2025-06-11
 ---
 
 ## Ziel
@@ -24,7 +24,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verwalten einen bei OVHcloud registrierten Domainnamen, für den keine Operation (Inhaberwechsel, Transfer, Erstellung) im Gange ist. Wenn vor kurzem ein solcher Vorgang für Ihren Domainnamen abgeschlossen wurde, gilt regulär eine Frist von 60 Kalendertagen, bevor eine neue Operation gestartet werden kann.
-- Sie sind der [Administrator-Kontakt](/pages/account_and_service_management/account_information/managing_contacts) des entsprechenden Domainnamens.
+- Ihr Kunden-Account ist der [Kontakt für Administrator und Abrechnung](/pages/account_and_service_management/account_information/managing_contacts) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des aktuellen Inhabers des Domainnamens, den Inhaberwechsel durchzuführen oder Daten zu aktualisieren.
 
 ## In der praktischen Anwendung

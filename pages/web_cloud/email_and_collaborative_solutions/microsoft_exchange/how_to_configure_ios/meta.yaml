@@ -2,3 +2,8 @@ id: 3b2fd238-24d9-4513-9959-707ccacefd0d
 full_slug: exchange-ios-configuration
 banner: marketplace-support-collaboration
 translation_banner: true
+disable_languages:
+- en-asia
+- en-au
+- en-sg
+- en-in

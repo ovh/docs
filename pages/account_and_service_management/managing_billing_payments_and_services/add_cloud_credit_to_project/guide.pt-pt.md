@@ -22,7 +22,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), aceda a secção `Public C
 
 > [!warning]
 >
-Note que os créditos acrescentados a esta secção não podem ser transferidos nem reembolsados. Não têm qualquer valor monetário e qualquer crédito não utilizado nos 13 meses seguintes à sua compra é perdido.
+> Note que os créditos acrescentados a esta secção não podem ser transferidos nem reembolsados. Não têm qualquer valor monetário e qualquer crédito não utilizado nos 13 meses seguintes à sua compra é perdido.
 >
 
 ### Adicionar crédito
@@ -55,7 +55,7 @@ O saldo do voucher aparecerá na lista `Créditos e Vouchers`.
 
 > [!primary]
 >
-Uma vez que os prazos de validade dos vouchers são geralmente mais limitados, o saldo do voucher será utilizado antes do crédito Public Cloud.
+> Uma vez que os prazos de validade dos vouchers são geralmente mais limitados, o saldo do voucher será utilizado antes do crédito Public Cloud.
 >
 
 ## Quer saber mais?

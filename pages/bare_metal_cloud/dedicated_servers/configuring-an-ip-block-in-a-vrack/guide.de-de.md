@@ -1,7 +1,7 @@
 ---
 title: 'IP-Block im vRack konfigurieren'
 excerpt: 'So konfigurieren Sie einen öffentlichen IP-Adressblock im vRack'
-updated: 2023-08-31
+updated: 2025-06-04
 ---
 
 ## Einleitung
@@ -9,6 +9,25 @@ updated: 2023-08-31
 Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/vrack/){.external} auch möglich, mithilfe eines öffentlichen IP-Adressblocks den öffentlichen IP-Traffic über den vRack Port Ihres Servers zu routen.
 
 **In dieser Anleitung erfahren Sie, wie Sie einen öffentlichen IP-Adressblock so konfigurieren, dass Sie ihn mit dem vRack verwenden können.**
+
+> [!primary]
+>
+> vRack unterstützt Routing für IPv4 und IPv6 Additional IP Blöcke. Details zur Konfiguration von IPv6 finden Sie in dieser Anleitung: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+
+> [!primary]
+>
+> Dieser Artikel erklärt die Konfiguration von Additional IP über ein vRack Netzwerk. Weitere Informationen zur Konfiguration mit der primären IP (über die Schnittstelle des öffentlichen Netzwerks) finden Sie in den folgenden Anleitungen:
+>
+> - IPv4:
+>   - [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+>   - [IP-Adresse als Alias konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing)
+>
+> - IPv6:
+>   - [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+>   - [IPv6 auf einem VPS einrichten](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6)
+>   - [IPv6 auf einer Public Cloud Instanz konfigurieren](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6)
+>
 
 ## Voraussetzungen
 
@@ -23,13 +42,13 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 >
 > Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 > [!primary]
 >
 > In der vorliegenden Anleitung verwenden wir als Beispiel den IP-Block 46.105.135.96/28 sowie `eth1` als sekundäres Netzwerk, das dem vRack zugewiesen ist.
 >
-> Ebenfalls nur als Beispiel: Die Netzwerkkonfigurationsdatei, auf die wir uns beziehen, befindet sich unter `/etc/network/interfaces`. Je nach verwendetem Betriebssystem kann sich die entsprechende Datei an anderer Stelle befinden. Auch der Inhalt der Datei kann unterschiedlich sein. Bei Schwierigkeiten können Sie gerne die offizielle Dokumentation Ihrer Distribution zu Rate ziehen.
+> Ebenfalls nur als Beispiel: Die Netzwerkkonfigurationsdatei, auf die wir uns beziehen, befindet sich unter `/etc/network/interfaces`. Je nach verwendetem Betriebssystem kann sich die entsprechende Datei an anderer Stelle befinden. Auch der Inhalt der Datei kann unterschiedlich sein. Für Details können Sie die offizielle Dokumentation Ihrer Distribution zu Rate ziehen.
 
 ### IP-Block zum vRack hinzufügen
 

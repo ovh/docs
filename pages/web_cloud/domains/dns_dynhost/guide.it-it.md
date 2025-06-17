@@ -164,8 +164,8 @@ Una volta che tutto è pronto per creare il record, clicca sulle schede qui sott
 >>
 >> |Campo|Descrizione|
 >> |---|---|
->> |Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost.</br></br>**Se vuoi installare un DynHost direttamente per il tuo dominio, lascia vuoto questo modulo di inserimento**|
->> |IP di destinazione|Inserisci l'indirizzo IP (IPv4 o IPv6) che deve essere utilizzato dal record DNS. È generalmente l'indirizzo IP pubblico del tuo *box* Internet o del tuo server auto-ospitato.</br></br>In base al principio del DynHost, verrà aggiornato automaticamente in seguito.</br></br>In questo modulo deve essere inserito un solo indirizzo IP.|
+>> |Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost.<br><br>**Se vuoi installare un DynHost direttamente per il tuo dominio, lascia vuoto questo modulo di inserimento**|
+>> |IP di destinazione|Inserisci l'indirizzo IP (IPv4 o IPv6) che deve essere utilizzato dal record DNS. È generalmente l'indirizzo IP pubblico del tuo *box* Internet o del tuo server auto-ospitato.<br><br>In base al principio del DynHost, verrà aggiornato automaticamente in seguito.<br><br>In questo modulo deve essere inserito un solo indirizzo IP.|
 >>
 >> > [!warning]
 >> >

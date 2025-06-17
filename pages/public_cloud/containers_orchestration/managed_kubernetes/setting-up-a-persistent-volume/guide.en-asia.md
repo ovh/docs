@@ -1,7 +1,7 @@
 ---
 title: Setting-up a Persistent Volume on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Volumes (PV), attach a Pod to a PVC, change PV reclaim policy and delete created objects'
-updated: 2024-08-14
+updated: 2025-06-05
 ---
 
 In this tutorial we are going to guide you through a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
@@ -178,11 +178,11 @@ Events:
 
 ## Storage Classes
 
-We currently support three [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes:
+We currently support the following [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes:s
 
 * `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as  scale up the storage space.
 * `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size. 
-* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). 
+* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). (Not supported yet on [MKS Premium plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium#storage-classes)).
 
 All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
 

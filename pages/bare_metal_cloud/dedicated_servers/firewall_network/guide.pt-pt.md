@@ -1,7 +1,7 @@
 ---
 title: 'Habilitar e configurar o Edge Network Firewall'
 excerpt: 'Saiba como configurar a Edge Network Firewall para os seus serviços'
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Objetivo
@@ -9,6 +9,11 @@ updated: 2025-04-28
 Para proteger os serviços dos clientes expostos aos IPs públicos, a OVHcloud oferece uma firewall stateless que é configurada e integrada na **infraestrutura Anti-DDoS**: a Edge Network Firewall. Permite limitar a exposição do serviço a ataques DDoS, ao eliminar fluxos de rede específicos provenientes de fora da rede da OVHcloud.
 
 **Este guia explica como configurar a Edge Network Firewall para os seus serviços.**
+
+> [!warning]
+>
+> **Aviso** : a funcionalidade "Centro de Scrubbing: modo permanente" foi atingida o seu fim de vida útil (EOL) será definitivamente desativado em 8 de setembro de 2025.
+>
 
 > [!primary]
 >
@@ -21,7 +26,7 @@ Para proteger os serviços dos clientes expostos aos IPs públicos, a OVHcloud o
 
 ## Requisitos
 
-- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [IP adicional](/links/network/additional-ip), etc.)
+- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
 - Acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]

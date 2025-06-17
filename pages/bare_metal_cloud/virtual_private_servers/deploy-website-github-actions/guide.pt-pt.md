@@ -95,7 +95,7 @@ Once you have configured the public key on your VPS, add it to your GitHub accou
 cat /home/<user>/.ssh/deploy_key.pub
 ```
 
-Follow the steps from the "Adding a new SSH key to your account" section of the [GitHub official documentation](https://docs.github.com/gb/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) to add your public key to your GitHub account.
+Follow the steps from the "Adding a new SSH key to your account" section of the [GitHub official documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#about-addition-of-ssh-keys-to-your-account) to add your public key to your GitHub account.
 
 #### Configure SSH access to GitHub on the VPS
 
@@ -138,7 +138,7 @@ Copy the content of the generated private key to your VPS with:
 cat /home/<user>/.ssh/deploy_key
 ```
 
-To allow GitHub Actions to automatically connect to your VPS, add the private key in a secret repository on GitHub. This will allow GitHub to deploy your website via SSH. Follow the steps from the "Creating secrets for a repository" section of the [GitHub official documentation](https://docs.github.com/gb/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository).
+To allow GitHub Actions to automatically connect to your VPS, add the private key in a secret repository on GitHub. This will allow GitHub to deploy your website via SSH. Follow the steps from the "Creating secrets for a repository" section of the [GitHub official documentation](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository).
 
 ### Initialize GitHub repository (optional) <a name="init-github-repo"></a>
 
@@ -147,7 +147,7 @@ To allow GitHub Actions to automatically connect to your VPS, add the private ke
 
 #### Create a GitHub repository
 
-To create a GitHub repository, follow the steps from the "Create a repository" page of the [GitHub official documentation](https://docs.github.com/gb/en/repositories/creating-and-managing-repositories/creating-a-new-repository){.external}.
+To create a GitHub repository, follow the steps from the "Create a repository" page of the [GitHub official documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository){.external}.
 
 #### Initialize the Git repository on the VPS
 

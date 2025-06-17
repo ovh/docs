@@ -42,9 +42,9 @@ details[open]>summary::before {
 <summary>How to access your VMware On OVHcloud Hosted Private Cloud service</summary>
 
 Log in to the [OVHcloud Control Panel](/links/manager).
-</br></br>
+<br><br>
 Click on <code class="action">Hosted Private Cloud</code>.
-</br></br>
+<br><br>
 - OVHcloud direct link: https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Replace PCC-XXX-XXX-XXX-XXX with the name of your PCC service.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
@@ -60,7 +60,7 @@ Click on <code class="action">Hosted Private Cloud</code>.
 <summary>How to enable the NSX-T web console for a user</summary>
 
 On the previously opened page, edit the user with whom you want to access the NSX-T web interface.
-</br></br>
+<br><br>
 Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-X</code> > <code class="action">Users</code> > <code class="action">Edit</code>. Activate the button <code class="action">NSX Interface</code>.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_3.png" loading="lazy"></p>
@@ -90,17 +90,17 @@ Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX
 <summary>How to add permissions to a Datacenter</summary>
 
 At this stage, you just need to modify the permissions for each Datacenter.
-</br></br>
+<br><br>
 Click on: <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code> > <code class="action">Users</code> > <code class="action">View / Edit rights for each DC</code> > <code class="action">Modify rights</code>.
-</br></br>
+<br><br>
 In the new window, choose the required permissions from the 3 main sections: <code class="action">Vsphere access</code> > <code class="action">Access to vmNetwork</code> > <code class="action">Access to the V(X)LANs</code>.
-</br></br>
+<br><br>
 The following rights are available: <strong>Operator</strong> / <strong>Administrator</strong> / <strong>None</strong> / <strong>Read-only</strong>
-</br></br>
+<br><br>
 Only access to <code class="action">V(X)LANs</code> in <strong>Read-only</strong> is necessary to access the NSX-T web console.
-</br></br>
+<br><br>
 Select <code class="action">Read-only</code> mode.
-</br></br>
+<br><br>
 If you want to make changes in the NSX-T web interface, then additional rights will be required, such as <strong>Operator</strong> or <strong>Administrator</strong>.
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_8.png" loading="lazy"></p>
 </details>
@@ -113,15 +113,15 @@ If you want to make changes in the NSX-T web interface, then additional rights w
 <summary>>How to access the NSX-T web console</summary>
 
 In your Hosted Private Cloud tree view, click <code class="action">VMware</code> > <code class="action">PCC-XX-XX-XX-XX</code>.
-</br></br>
+<br><br>
 - OVHcloud direct link: https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XX-XX-XX-X > Replace PCC-XX-XX-XX-X with the name of your PCC service.
-</br></br>
+<br><br>
 <img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_9.png" loading="lazy">
-</br></br>
+<br><br>
 <img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_10.png" loading="lazy">
-</br></br>
+<br><br>
 <img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_11.png" loading="lazy">
-</br></br>
+<br><br>
 <img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_12.png" loading="lazy">
 
 </details>

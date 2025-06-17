@@ -1,18 +1,33 @@
 ---
 title: 'Configurar un bloque de IP en el vRack'
 excerpt: 'Cómo configurar un bloque de direcciones IP públicas en el vRack'
-updated: 2023-08-28
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
 Además del direccionamiento IP privado, el [vRack](https://www.ovh.es/soluciones/vrack/){.external} permite dirigir el tráfico IP público a través del puerto vRack del servidor mediante un bloque de direcciones IP públicas.
 
 **Esta guía explica cómo configurar en el vRack un bloque de direcciones IP públicas.**
+
+> [!primary]
+>
+> El vRack admite el enrutamiento público IPv4 e IPv6 con bloques de direcciones Additional IP. Para más información sobre la configuración de bloques de IPv6, consulte esta guía: "[Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)".
+>
+
+> [!primary]
+>
+> Este artículo explica cómo configurar direcciones Additional IP en una red vRack. Si necesita instrucciones para configurar direcciones Additional IP con una dirección IP principal (en la interfaz de red pública), consulte los siguientes artículos:
+>
+> - IPv4:
+>   - [Configurar una IP como alias](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+>   - [Configurar una dirección IP como alias](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>
+> - IPv6:
+>   - [Configurar IPv6 en un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+>   - [Configurar la IPv6 en un VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>   - [Configurar IPv6 en una instancia de Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+>
 
 ## Requisitos
 

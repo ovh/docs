@@ -1,18 +1,33 @@
 ---
 title: 'Configurar um bloco de endereços IP no vRack'
 excerpt: 'Saiba como configurar um bloco de endereços IP públicos no vRack'
-updated: 2023-08-31
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
 Além do direcionamento IP privado, o [vRack](https://www.ovh.pt/solucoes/vrack/){.external} permite direcionar o tráfego IP público através da porta vRack do servidor através de um bloco de endereços IP públicos.
 
 **Este manual explica como configurar um bloco de endereços IP públicos no vRack.**
+
+> [!primary]
+>
+> O vRack suporta o roteamento público IPv4 e IPv6 com blocos de endereços Additional IP. Encontre as instruções sobre a configuração de blocos IPv6 neste guia: "[Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)".
+>
+
+> [!primary]
+>
+> Este artigo detalha a configuração de endereços Additional IP numa rede vRack. Se você estiver procurando instruções sobre como configurar endereços Additional IP com um endereço IP principal (na interface de rede pública), consulte os seguintes artigos:
+>
+> - IPv4:
+>   - [Como configurar um IP alias](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+>   - [Configurar um endereço de IP alias](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>
+> - IPv6:
+>   - [Configurar IPv6 em servidores dedicados](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+>   - [Configurar o IPv6 num VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>   - [Configurar o IPv6 numa instância Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+>
 
 ## Requisitos
 

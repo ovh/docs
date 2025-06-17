@@ -16,7 +16,7 @@ Dzięki stale zmieniającej się infrastrukturze możesz zwiększyć przestrzeń
 
 **Niniejszy przewodnik wyjaśnia, jak zmienić model *flex* na model klasyczny i zmienić rozmiar instancji *flex* w interfejsie OpenStack Horizon.**
 
-## Wymagania
+## Wymagania początkowe
 
 - Posiadanie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) typu *flex*
 - [Utworzenie dostępu do interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)

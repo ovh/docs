@@ -1,3 +1,8 @@
 id: 3866c9d9-3d56-406e-8857-f6c052168548
 full_slug: exchange-hosted-getting-started
 translation_banner: true
+disable_languages:
+- en-asia
+- en-au
+- en-sg
+- en-in

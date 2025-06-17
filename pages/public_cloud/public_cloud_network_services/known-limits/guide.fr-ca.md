@@ -4,7 +4,7 @@ excerpt: 'Prérequis et limites à respecter'
 updated: 2024-11-12
 ---
 
-## Projets Vrack et Public Cloud
+## Projets vRack et Public Cloud
 
 Pour un projet Public Cloud donné, vous ne pouvez attacher qu'un seul vRack. Si vous souhaitez créer un réseau privé entre 2 projets Public Cloud (ou plus), vous devez attacher le même vRack à ces projets Public Cloud.
 

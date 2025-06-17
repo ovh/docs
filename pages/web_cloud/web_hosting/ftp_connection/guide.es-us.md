@@ -1,7 +1,7 @@
 ---
 title: "Conectarse al espacio de almacenamiento FTP de un alojamiento web"
 excerpt: "Descubra cómo conectarse al espacio de almacenamiento FTP de un alojamiento web de OVHcloud"
-updated: 2025-05-23
+updated: 2025-06-10
 ---
 
 ## Objetivo
@@ -18,6 +18,7 @@ Los planes de hosting de OVHcloud proporcionan acceso a un espacio de almacenami
 > [!primary]
 > Solo los alojamientos web **Pro** o **Performance** permiten la activación de varios usuarios FTP y disponen de conexiones por SSH.
 >
+> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Procedimiento
 

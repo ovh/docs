@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Presentación del producto"
 excerpt: 'Descubra el servicio Bare Metal 3-AZ, que ofrece una alta disponibilidad y redundancia sin igual entre tres datacenters'
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Objetivo
@@ -10,11 +10,26 @@ OVHcloud ofrece su servicio Bare Metal en la [región 3-AZ](/links/bare-metal/re
 
 El Bare Metal de la región 3-AZ responde a las necesidades de los clientes que necesitan alta disponibilidad y redundancia en sus planes de continuidad del negocio. Este servicio ofrece servidores Bare Metal en tres datacenters cercanos a París, conectados por una red de baja latencia. Ofrece una seguridad mejorada, un rendimiento mejorado y funcionalidades ininterrumpidas, incluso en caso de incidencia localizada.
 
+> [!primary]
+>
+> **Información importante - Evolución de la oferta Bare Metal 3-AZ**
+>
+> A partir de mayo de 2025, el modelo de entrega de los servidores Bare Metal en la región París 3-AZ evoluciona significativamente. Se abandonará el modelo anterior de entrega obligatoria en clusters de 3 servidores (uno en cada zona de disponibilidad).
+>
+> **Cambios clave:**
+
+> - Los clientes podrán elegir libremente el número exacto de servidores que necesitan.
+> - La distribución de los servidores entre las diferentes zonas de disponibilidad (AZ) será totalmente personalizable.
+> - No hay ninguna obligación de despliegue en las tres zonas simultáneamente.
+>
+> **Importante:** la información presentada en esta guía, en particular la relativa al despliegue obligatorio del cluster y la posible experiencia de usuario que refleja este modelo, se aplica principalmente a los clientes cuyos servidores se entregaron *antes de mayo de 2025* bajo el modelo de cluster anterior. Los nuevos despliegues a partir de mayo de 2025 se beneficiarán de la flexibilidad del nuevo modelo y, potencialmente, de una interfaz adecuada. Si tiene alguna pregunta sobre esta evolución o si desea adaptar su infraestructura existente, póngase en contacto con el administrador de su cuenta o con el soporte de OVHcloud.
+>
+
 ## Información general
 
 ### Objetivo del Servicio
 
-El valor de la región 3-AZ reside en la oferta de tres servidores idénticos repartidos en tres zonas de disponibilidad dentro de una misma región. Esta configuración garantiza una alta disponibilidad y redundancia de los datos, al tiempo que mantiene la continuidad operativa y reduce el riesgo de pérdida de datos. La distribución estratégica de servidores reduce la latencia y mejora el rendimiento de las aplicaciones.
+El valor de la región 3-AZ reside en ofrecer varios servidores idénticos repartidos en tres zonas de disponibilidad dentro de una misma región. Esta configuración garantiza una alta disponibilidad y redundancia de los datos, al tiempo que mantiene la continuidad operativa y reduce el riesgo de pérdida de datos. La distribución estratégica de servidores reduce la latencia y mejora el rendimiento de las aplicaciones.
 
 ### La regionalización en OVHcloud
 

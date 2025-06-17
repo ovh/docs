@@ -16,7 +16,7 @@ W interfejsie Horizon możesz zdefiniować hasło dla każdego użytkownika. Uwa
 
 ## Wymagania początkowe
 
-- Projekt [Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) na Twoim koncie OVHcloud
+- Projekt [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) na Twoim koncie OVHcloud
 - Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce

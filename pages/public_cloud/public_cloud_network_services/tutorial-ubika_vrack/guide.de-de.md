@@ -23,7 +23,7 @@ Diese Anleitung enthält detaillierte Anweisungen zur Inbetriebnahme und Konfigu
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional).
 - Sie haben Grundkenntnisse in Networking.
 - Sie haben auf der [Ubika-Website](https://my.ubikasec.com/){.external} einen Ubika-Account erstellt.
 - Sie haben einen ausreichenden Block von Additional IP-Adressen verfügbar.

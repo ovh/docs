@@ -13,11 +13,11 @@ Cette politique vise à mettre en oeuvre les principes généraux de réversibil
 
 Les fonctionnalités Hosted Private Cloud sont divisées en trois catégories :
 
-- Les [fonctionnalités principales](#fonctionnalites-principales) pour lesquelles nous garantissons la capacité de migrer.
+- Les [fonctionnalités principales](#main-features) pour lesquelles nous garantissons la capacité de migrer.
 - L'[implémentation OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
 - Les [fonctionnalités spécifiques](#fonctionnalites-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
 
-### Fonctionnalités principales <a name="fonctionnalites-principales"></a>
+### Fonctionnalités principales
 
 |Fonction|Description|Formats disponibles|
 |---|---|---|
@@ -31,7 +31,7 @@ Les modèles de migration suivants et la documentation disponible s'appliquent �
 |---|---|
 |**Migration entrante**:<br>- Souscrivez un projet Hosted Private Cloud SecNumCloud <br>- Commandez le nombre approprié d'hôtes et de datastores sur le projet pour obtenir une capacité comparable à celle de l'infrastructure d'origine.<br>- Migrez à l'aide d'un outil spécialisé (Veeam, API, ...) ou manuellement<br>- Utilisez le service VPN Gateway de la zone SecNumCloud ou une solution VPN personnalisée (Ex : NSX ou solution tierce en machine virtuelle) afin de garantir le chiffrement des données lors de la migration depuis un réseau extérieur.<br>- Activez ensuite le chiffrement des VMs et les datastores du Cluster vSAN à l’aide de la brique logicielle vNKP ou votre propre KMS (compatible avec le protocole KMIP). <br>- Utilisez le SPN (Secure Private Network) afin de connecter les services SecNumCloud à l’intérieur d’un site d’hébergement.<br>- Utilisez la solution SPN inter DC pour connecter vos infrastructures qualifiées hébergées dans d’autres sites d’hébergement couverts par la qualification SecNumCloud chez OVHcloud.<br><br>**Migration sortante**: <br> - Planifiez les capacités de l'environnement cible comparativement à l'environnement d'origine. <br>**- Scénario de migration des données chiffrées avec vNKP:** Mettez en place une liaison chiffrée entre le site d’hébergement d’OVHcloud et le site de destination. Exportez la clé vNKP de l’environnement d’hébergement OVHcloud. Importez la clé vNKP sur l’environnement vSphere du site distant. Migrez vos données à froid via une copie manuelle entre les deux sites, ou bien migrez vos données à chaud (via un mécanisme de bascule) à l’aide d’un outil tier compatible et supporté par les 2 fournisseurs.<br>**- Scénario des données chiffrées à l’aide d’un KMS propre au client:** Mettez en place une liaison chiffrée entre le site d’hébergement d’OVHcloud et le site de destination. Configurez votre KMS sur l’environnement vSphere du site distant.Migrez vos données à froid via une copie manuelle entre les deux sites, ou bien migrez vos données à chaud (via un mécanisme de bascule) à l’aide d’un outil tier compatible et supporté par les 2 fournisseurs.<br>- Migrez via un outil spécialisé (par exemple Veeam, ...) |La documentation [vSphere SecNumCloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc_getting_started) s'applique dès la livraison du service pour sécuriser la connexion et le chiffrement des données de bout en bout. Suite à cela, la [documentation vSphere standard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) s'applique.<br><br>[Déployer un template OVF Linux, Windows Server et Windows SQL Server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)<br><br>[Déploiement d'une machine virtuelle avec vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Création de cluster et activation EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)<br><br>[Interopérabilité du chiffrement des machines virtuelles](https://docs.vmware.com/fr/VMware-vSphere/8.0/vsphere-security/GUID-C0AF1F3A-67B4-41A6-A933-7E52A3603D9D.html)<br><br>[Back up a vSphere Native Key Provider](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-E0EB371A-F6E4-463B-A1E9-9D4DDCAA039D.html)|
 
-### Implémentation OVHcloud <a name="ovhcloud-implementation"></a>
+### Implémentation OVHcloud
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -41,7 +41,7 @@ Les modèles de migration suivants et la documentation disponible s'appliquent �
 |vROps|Solution standard de Monitoring VMware.|N/A|**Migration entrante**: vROps est inclus par défaut avec chaque Hosted Private Cloud.<br><br>**Migration sortante**: Installer et configurer vROps dans un environnement vSphere.|[First connection on vROps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrops_introduction)|
 |Managed Veeam backup|Solution de sauvegarde en tant que service pour vos VMs|VBK, VIB, VBM|**Migration entrante**: Activez une option de sauvegarde Veeam dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) mais notez que l'import des données ne sera pas possible <br><br>**Migration sortante**: Cette fonctionnalité n’est pas prise en charge actuellement.Le client a la possibilité d’exporter ses données primaires (hors données sauvegardées) et de configurer une solution de sauvegarde de son choix sur le site de destination.|[Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)|
 
-### Fonctionnalités spécifiques <a name="fonctionnalites-specifiques"></a>
+### Fonctionnalités spécifiques
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|

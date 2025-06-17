@@ -1,7 +1,7 @@
 ---
 title: 'How to increase Public Cloud quotas'
 excerpt: 'Find out how to apply for a Public Cloud quota extension'
-updated: 2025-04-28
+updated: 2025-05-30
 ---
 
 ## Objective
@@ -26,8 +26,10 @@ In compliance with internal criteria (seniority, existence of paid invoices, etc
 You can increase your resources quota manually or automatically.
 
 > [!primary]
-> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, you can contact our support teams.
+> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, click on the `Contact Support`{.action} button.
 >
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 #### Increasing your resources quota manually
 

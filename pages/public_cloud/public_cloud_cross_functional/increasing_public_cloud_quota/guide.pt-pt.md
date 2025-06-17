@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar as quotas Public Cloud'
 excerpt: 'Saiba como solicitar o aumento das suas quotas Public Cloud'
-updated: 2025-04-28
+updated: 2025-05-30
 ---
 
 > [!primary]
@@ -28,6 +28,12 @@ Se deseja criar mais, é necessário um aumento de quota.
 Em conformidade com critérios internos (antiguidade, existência de faturas pagas, etc.), você agora está livre para solicitar aumentos de cota para os recursos de projetos Public Cloud diretamente da sua Área de cliente OVHcloud.
 
 Você pode aumentar a cota de recursos manualmente ou automaticamente.
+
+> [!primary]
+> Se necessitar de aumentar o seu limite e o botão `Aumentar o meus limites`{.action} não estiver disponível na Área de Cliente, clique no botão `Contactar o Apoio ao Cliente`{.action}.
+>
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 #### Aumentando manualmente a cota de recursos
 

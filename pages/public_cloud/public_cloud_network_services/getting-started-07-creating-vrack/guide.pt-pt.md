@@ -270,7 +270,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public 
 
 Clique em `Instâncias`{.action} no menu lateral esquerdo. A seguir, clique no botão `...`{.action} à direita da instância em causa e, a seguir, em `Dados da instância`{.action}.
 
-![de](images/vrack2021.png){.thumbnail}
+![de](images/instance_details.png){.thumbnail}
 
 Isso abrirá o painel de instâncias. Clique em `...`{.action} à direita de "Rede(s) privada(s)" e, a seguir, em `Associar uma rede`{.action}.
 

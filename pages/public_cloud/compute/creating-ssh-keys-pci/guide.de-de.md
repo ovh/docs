@@ -241,7 +241,7 @@ Anschließend können Sie sich folgendermaßen mit dem zweiten Host verbinden:
 ssh myserver
 ```
 
-Weitere Informationen finden Sie auf [der entsprechenden `man`-Seite](https://manpages.org/ssh_config/5)
+Weitere Informationen finden Sie auf [der entsprechenden `man`-Seite](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html)
 
 ///
 
@@ -436,7 +436,7 @@ Anschließend können Sie sich folgendermaßen mit dem zweiten Host verbinden:
 ssh myserver
 ```
 
-Weitere Informationen finden Sie auf [der entsprechenden `man`-Seite](https://manpages.org/ssh_config/5)
+Weitere Informationen finden Sie auf [der entsprechenden `man`-Seite](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html)
 
 ///
 

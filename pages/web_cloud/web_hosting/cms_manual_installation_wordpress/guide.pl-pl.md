@@ -24,7 +24,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System) W
 
 **Dowiedz się, jak ręcznie zainstalować CMS WordPress.**
 
-## Wymagania
+## Wymagania początkowe
 
 - Posiadanie oferty[hostingu](/links/web/hosting), która zawiera przynajmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)

@@ -427,7 +427,7 @@ Jeśli Twoja [para kluczy SSH jest prawidłowo skonfigurowana](#create-ssh), mo�
 
 > [!primary]
 >
-> Jeśli wyświetlają się komunikaty o błędach dotyczące **kluczy SSH**, sprawdź, czy na Twoim lokalnym urządzeniu jest poprawnie skonfigurowany prywatny klucz SSH, używając informacji z [tego przewodnika](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> Jeśli wyświetlają się komunikaty o błędach dotyczące **kluczy SSH**, sprawdź, czy na Twoim lokalnym urządzeniu jest poprawnie skonfigurowany prywatny klucz SSH, używając informacji z [tego przewodnika](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > Jeśli nadal występują problemy, możesz wymienić parę kluczy za pomocą [tego przewodnika](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Jeśli instancja została utworzona bez klucza SSH, w [API OVHcloud](/pages/manage_and_operate/api/first-steps) lub [interfejs OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon) możesz dodać klucz SSH do instancji tylko w trybie [rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), postępując zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/public_cloud/compute/replacing_lost_ssh_key).

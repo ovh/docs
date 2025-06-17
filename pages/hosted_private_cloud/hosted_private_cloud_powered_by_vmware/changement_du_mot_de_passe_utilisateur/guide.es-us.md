@@ -54,7 +54,7 @@ Introduzca la nueva contraseña y confírmela.
 
 [Presentación del área de cliente Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)
 
-[Cambiar los permisos de un usuario](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights)
+[Cambiar los permisos de un usuario](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)
 
 [Establecer y gestionar la contraseña de su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password)
 

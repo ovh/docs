@@ -1,7 +1,7 @@
 ---
 title: 'Augmenter les quotas Public Cloud'
 excerpt: 'Découvrez comment demander l’augmentation de vos quotas Public Cloud'
-updated: 2025-04-28
+updated: 2025-05-30
 ---
 
 ## Objectif
@@ -26,8 +26,10 @@ En accord avec des critères internes (ancienneté, existence de factures acquit
 Vous avez la possibilté d'augmenter votre quota de ressources manuellement ou automatiquement.
 
 > [!primary]
-> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas!`{.action} n'est pas disponible dans votre espace client, vous pouvez contacter nos équipes support.
+> Si vous avez besoin d'augmenter votre quota et que le bouton `Augmenter mes quotas!`{.action} n'est pas disponible dans votre espace client, cliquez sur le bouton `Contacter le support`{.action}.
 >
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 #### Augmenter manuellement votre quota de ressources
 

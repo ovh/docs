@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Cyberduck mit einem Webhosting verwenden"
 excerpt: "Erfahren Sie hier, wie Sie die Software Cyberduck verwenden, um sich mit Ihrem OVHcloud Webhosting zu verbinden"
-updated: 2024-02-26
+updated: 2025-06-10
 ---
 
 ## Ziel
@@ -29,6 +29,10 @@ Um Cyberduck herunterzuladen, gehen Sie auf die [offizielle Website](https://cyb
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Cyberduck heruntergeladen und installiert.
+
+> [!primary]
+>
+> Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [Filezilla](https://filezilla-project.org/download.php){.external} oder [Cyberduck](https://cyberduck.io/){.external}.
 
 ## In der praktischen Anwendung
 

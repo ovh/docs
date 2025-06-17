@@ -1,7 +1,7 @@
 ---
 title: 'Activación y configuración del Edge Network Firewall'
 excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Objetivo
@@ -11,6 +11,11 @@ Para proteger los servicios dde sus clientes expuestos en direcciones IP públic
 Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Network Firewall. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
 **Esta guía le mostrará cómo configurar el Edge Network Firewall para sus servicios.**
+
+> [!warning]
+>
+> **Advertencia**: La mitigación permanente está llegando a su fin de vida útil (EOL) y se desactivará permanentemente el 8 de septiembre de 2025.
+>
 
 > [!primary]
 >
@@ -23,8 +28,8 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Requisitos
 
-- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal){.external}, [VPS](https://www.ovhcloud.com/es-es/vps/){.external}, [instancias de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](/links/network/additional-ip){.external}, etc.).
-- Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}.
+- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/es-es/vps/), [instancias de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.).
+- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).

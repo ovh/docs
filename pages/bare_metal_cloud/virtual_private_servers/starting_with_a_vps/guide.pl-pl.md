@@ -54,7 +54,7 @@ Poniżej znajdziesz podstawowe informacje o Twoim serwerze VPS oraz o stanie us�
 >>
 > OS / Dystrybucja
 >>
->> est to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny spośród dostępnych opcji](#reinstalvps).
+>> est to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny spośród dostępnych opcji](#reinstallvps).
 >>
 >> > [!warning]
 >> >
@@ -65,7 +65,7 @@ Poniżej znajdziesz podstawowe informacje o Twoim serwerze VPS oraz o stanie us�
 >> > Jeśli zamówiłeś VPS **Windows**, możesz wybrać tylko system Windows do reinstalacji. Podobnie, jeśli system Windows nie został wybrany podczas zamówienia, nie może zostać zainstalowany po zainstalowaniu serwera VPS.
 >>
 >>
->> Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji [poniżej](#reinstalvps) znajdziesz w naszym przewodniku "[Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)".
+>> Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji [poniżej](#reinstallvps) znajdziesz w naszym przewodniku "[Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)".
 >> 
 > Strefa / Lokalizacja
 >>
@@ -138,7 +138,7 @@ W tych sekcjach znajdują się najważniejsze informacje dotyczące fakturowania
 > Celem niniejszego przewodnika jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym](https://partner.ovhcloud.com/pl/directory/) dostawcą usług lub [naszą społecznością](https://community.ovh.com/en/).
 >
 
-### Reinstalacja serwera VPS <a name="reinstalacja vps"></a>
+### Reinstalacja serwera VPS <a name="reinstallvps"></a>
 
 Reinstalacja serwera VPS może zostać przeprowadzona z poziomu panelu klienta. Kliknij przycisk`...`{.action} po prawej stronie `OS / Distribution`{.action}, a następnie `Reinstaluj mój VPS`{.action}.
 

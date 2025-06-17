@@ -1,18 +1,22 @@
 ---
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-updated: 2024-07-15
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
 IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetowego (IP, ang. Internet Protocol). Umożliwia rozwiązanie problemów z wyczerpywaniem się dostępnych adresów swojego poprzednika, protokołu IPv4, ponieważ korzysta z adresów 128-bitowych zamiast 32-bitowych. Os servidores das gamas High Grade, Scale e Advance (desde julho de 2024) são entregues com um bloco /56 IPv6. Já os antigos servidores são entregues com um bloco /64 IPv6. Um servidor entregue com um bloco /56 IPv6 permite dispor de até 18 quintilhões de endereços IP.
 
 **Dowiedz się, jak skonfigurować adresy IPv6 na serwerze na podstawie różnych przykładów.**
+
+> [!primary]
+>
+> Ten artykuł dotyczy konfiguracji głównego adresu IP. W przypadku serwerów korzystających z usługi vRack możesz skonfigurować dodatkowe adresy IP w ramach usługi vRack, a nie w publicznym interfejsie serwera. Odpowiednie instrukcje znajdują się w tych przewodnikach:
+>
+> - IPv4: [Konfiguracja bloku IP w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
+> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
 
 > [!warning]
 > OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.

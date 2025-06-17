@@ -1,6 +1,6 @@
 ---
-title: Caching/Valkey - Connect with CLI
-excerpt: Connect to your Public Cloud Databases for Caching/Valkey using the Command Line Interface (CLI)
+title: Valkey - Connect with CLI
+excerpt: Connect to your Public Cloud Databases for Valkey using the Command Line Interface (CLI)
 updated: 2024-06-12
 ---
 
@@ -8,20 +8,20 @@ updated: 2024-06-12
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to connect to a Caching/Valkey service instance with a Command Line Interface (CLI).**
+**This guide explains how to connect to a Valkey service instance with a Command Line Interface (CLI).**
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl);
 - A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account;
-- A Caching/Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- [Configure your Caching/Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
+- A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 
 ## Concept
 
-A Caching/Valkey service can be managed through multiple ways.<br>
+A Valkey service can be managed through multiple ways.<br>
 One of the easiest, yet powerful, is to use a Command Line Interface (CLI), also known as a Console or Terminal.
-To interact correctly with the instance, we need to first install something called a client, in order to connect and control the Caching/Valkey service remotely.<br>
+To interact correctly with the instance, we need to first install something called a client, in order to connect and control the Valkey service remotely.<br>
 It's a Client-Server interaction.
 
 ## Instructions
@@ -104,7 +104,7 @@ In case the user doesn't have the right privilege, you will get a NOPERM respons
 
 ## Go further
 
-[Caching/Valkey capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities)
+[Valkey capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities)
 
 [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)
 

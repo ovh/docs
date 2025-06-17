@@ -10,13 +10,13 @@ Rozwiązania [Web Cloud Databases](/links/web/databases) można włączyć bezp�
 
 **Dowiedz się, jak odłączyć rozwiązanie Web Cloud Databases od hostingu.**
 
-## Wymagania
+## Wymagania początkowe
 
 - Posiadanie [instancji Web Cloud Databases](/links/web/databases) powiązanej z ofertą hostingu [Performance](/links/web/hosting).
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Posiadanie statusu przynajmniej kontaktu "[Administrator](/pages/account_and_service_management/account_information/managing_contacts)" dla usług, w odniesieniu do których chcesz podjąć działania.
 
-## Wymagania początkowe
+## W praktyce
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 

@@ -38,7 +38,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}

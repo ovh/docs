@@ -1,3 +1,12 @@
 id: E3D1E42E-BBB5-4162-9B62-CCD2D9548442
 full_slug: email-pro-outlook-ios-configuration
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

@@ -35,7 +35,7 @@ Un fichier OpenRC correspond à un utilisateur et aussi à une zone. Vous ne pou
 * Chargez le contenu du fichier dans l’environnement courant. Le mot de passe de l’utilisateur Horizon correspondant vous sera alors demandé.
 
 ```bash
-admin@vpsxxxxxx:~$ source openrc.sh
+admin@remote_host:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 

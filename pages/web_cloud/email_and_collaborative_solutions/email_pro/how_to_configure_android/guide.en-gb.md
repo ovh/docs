@@ -87,7 +87,7 @@ Follow the next steps in the configuration process by browsing the tabs below:
 >> ![emailpro](images/emailpro-android-04.png){.thumbnail .h-600}
 >>
 > **Step 5**
->>> Enter the "**Incoming server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email account password<br>- **Server**: Type pro?.mail.ovh.net (replace "?" with your server number). <br><br>
+>> Enter the "**Incoming server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email account password<br>- **Server**: Type pro?.mail.ovh.net (replace "?" with your server number). <br><br>
 >>![emailpro](images/emailpro-android-05.png){.thumbnail .h-600}
 >>
 > **Etape 6**

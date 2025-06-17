@@ -1,7 +1,7 @@
 ---
 title: "Come creare un server Minecraft su un VPS o un server dedicato"
 excerpt: "Come installare il tuo server Minecraft"
-updated: 2021-06-29
+updated: 2025-06-06
 ---
 
 > [!primary]
@@ -32,7 +32,7 @@ Minecraft è un videogioco da costruzione di successo globale. Per giocare in mo
 ## Procedura
 
 > [!primary]
-> Questa guida si basa sulla versione "1.17" di Minecraft Java Edition e sulla versione "16.0.1" di OpenJDK.
+> Questa guida si basa sulla versione "1.21" di Minecraft Java Edition e sulla versione "24.0.1" di OpenJDK.
 >
 
 ### Step 1: preparare il server
@@ -46,29 +46,29 @@ Una volta installato il sistema operativo, accedi al tuo VPS in SSH come descrit
 Per prima cosa, aggiorna i pacchetti con le versioni più recenti:
 
 ```sh
-~$ sudo apt update
+$ sudo apt update
 ```
 
 ```sh
-~$ sudo apt full-upgrade
+$ sudo apt full-upgrade
 ```
 
 Per assicurarti che siano installati tutti i pacchetti necessari, utilizza questo comando:
 
 ```sh
-~$ sudo apt install screen nano wget git
+$ sudo apt install screen nano wget git
 ```
 
 Installa il pacchetto Java:
 
 ```sh
-~$ sudo apt install openjdk-16-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 Per evitare di creare vulnerabilità nel tuo sistema, crea un utente chiamato "minecraft" che eseguirà le azioni del server:
 
 ```sh
-~$ sudo adduser minecraft —disabled-login —disabled-password
+$ sudo adduser minecraft --disabled-password
 ```
 
 Ti vengono richieste diverse informazioni è sufficiente premere il tasto `Entrata`{.action} per confermarli.
@@ -78,7 +78,7 @@ L'utente è stato creato. Ti ricordiamo che per questo utente non è stata speci
 Passa al nuovo utente:
 
 ```sh
-~$ sudo su - minecraft
+$ sudo su - minecraft
 ```
 
 > [!primary]
@@ -89,7 +89,7 @@ Passa al nuovo utente:
 Per completare la preparazione dell'installazione, crea una cartella di nome `server`.
 
 ```sh
-~$ mkdir ~/server & cd ~/server
+$ mkdir ~/server && cd ~/server
 ```
 
 ### Step 2: installa il tuo server Vanilla Minecraft
@@ -102,7 +102,7 @@ Per completare la preparazione dell'installazione, crea una cartella di nome `se
 Per prima cosa, copia e incolla il link di download del software server.
 <br>Sul [sito ufficiale di Minecraft](https://minecraft.net/download/server){.external}, clicca con il tasto destro sul link di download e seleziona `Copia l'indirizzo del link`{.action}.
 
-![Download del server](images/download_jar.png){.thumbnail}
+![Download del server](images/jar_file_download.png){.thumbnail}
 
 Nel tuo terminale da riga di comando, verifica di essere ancora nella cartella `server` e utilizza `wget` per scaricare il file.
 <br>Sostituisci il `link_di_telecaricamento` con l'URL reale che hai copiato in precedenza.
@@ -133,7 +133,7 @@ Per prima cosa, creeremo una nuova `shell` chiamata `minecraft1`:
 La finestra attiva del tuo terminale cambia automaticamente e trasferisci automaticamente su una nuova sessione `shell`. Se necessario, è possibile creare altre `shell` e visualizzarle via questo comando:
 
 ```sh
-screen -ls
+~/server$ screen -ls
 ```
 
 Per staccarti dalla `shell` (e mantenerla in corso di esecuzione), clicca su `Ctrl`{.action}, poi su `a`{.action} e poi su `d`{.action} sulla tastiera.
@@ -149,7 +149,24 @@ Premi anche `Ctrl`{.action}, poi `a`{.action}, poi `n`{.action} sulla tastiera.
 Nella shell `minecraft1` creata precedentemente, avvia il server Minecraft con il comando seguente. (Utilizza `ls` strumenti per verificare il nome del file nel caso in cui fosse diverso).
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: configura il server per l'avvio con 1024 MB o 1 GB di RAM. Questo limite può essere aumentato se si vuole che il server parta con più RAM.
+- `Xms1024M`: consente al server di utilizzare un massimo di 1024M di RAM. È possibile aumentare questo limite se si desidera che il server funzioni con più RAM, per ospitare più giocatori o se si ritiene che il server funzioni lentamente.
+- `jar`: Specifica il file jar del server da eseguire.
+- `nogui`: indica al server di non eseguire l'interfaccia grafica.
+
+Si può anche usare il comando seguente:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Una volta che il server è attivo e funzionante, si ottiene il seguente risultato:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 Per arrestare il server, inserisci il comando `stop`.

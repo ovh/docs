@@ -53,7 +53,7 @@ Renseignez alors un nouveau mot de passe et confirmez-le.
 
 [Présentation de l’espace client Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)
 
-[Changer les droits d'un utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights)
+[Changer les droits d'un utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)
 
 [Définir et gérer le mot de passe de votre compte OVHcloud](/pages/account_and_service_management/account_information/manage-ovh-password)
 

@@ -241,7 +241,7 @@ Następnie będziesz mógł zalogować się do drugiego hosta wprowadzając:
 ssh myserver
 ```
 
-Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.org/ssh_config/5).
+Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 
@@ -437,7 +437,7 @@ Następnie będziesz mógł zalogować się do drugiego hosta wprowadzając:
 ssh myserver
 ```
 
-Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.org/ssh_config/5).
+Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 

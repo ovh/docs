@@ -423,7 +423,7 @@ Si votre [paire de clés SSH est correctement configurée](#create-ssh), vous po
 
 > [!primary]
 >
-> Si vous recevez des messages d’erreur concernant vos **clés SSH**, vérifiez que votre appareil local dispose d’une clé SSH privée correctement configurée en utilisant les informations de [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> Si vous recevez des messages d’erreur concernant vos **clés SSH**, vérifiez que votre appareil local dispose d’une clé SSH privée correctement configurée en utilisant les informations de [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > Si vous rencontrez toujours des difficultés, vous pouvez remplacer la paire de clés à l'aide de [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Si vous avez créé une instance sans clé SSH, via l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) ou l’[interface OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), vous ne pouvez ajouter une clé SSH à votre instance que via le [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) en suivant les instructions décrites dans [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).

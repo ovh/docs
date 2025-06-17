@@ -33,7 +33,7 @@ Por ejemplo, podemos crear una política para dar a un usuario llamado John, par
 - Saber [gestionar los usuarios de la cuenta](/pages/account_and_service_management/account_information/ovhcloud-users-management)
 - Uno o varios productos de OVHcloud asociados a esta cuenta de OVHcloud (Load Balancer, dominio, VPS, etc.)
 
-## En la práctica
+## Procedimiento
 
 ### Acceder al menú IAM
 

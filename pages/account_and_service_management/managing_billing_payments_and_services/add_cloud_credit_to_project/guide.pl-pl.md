@@ -22,7 +22,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `P
 
 > [!warning]
 >
-Zapamiętaj, że zasilenia dodane do tej sekcji nie mogą zostać przekazane ani zwrócone. Nie mają żadnej wartości pieniężnej, a wszelkie niewykorzystane zasilenie w ciągu 13 miesięcy od zakupu traci swoją wartość.
+> Zapamiętaj, że zasilenia dodane do tej sekcji nie mogą zostać przekazane ani zwrócone. Nie mają żadnej wartości pieniężnej, a wszelkie niewykorzystane zasilenie w ciągu 13 miesięcy od zakupu traci swoją wartość.
 >
 
 ### Dodaj zasilenie
@@ -55,7 +55,7 @@ Pozostała część kodu pojawi się na liście `Kredyty i vouchery`.
 
 > [!primary]
 >
-Ze względu na to, że kody promocyjne są ważne przez dłuższy czas, pozostała część kodu zostanie wykorzystana przed zasileniem Public Cloud.
+> Ze względu na to, że kody promocyjne są ważne przez dłuższy czas, pozostała część kodu zostanie wykorzystana przed zasileniem Public Cloud.
 >
 
 ## Sprawdź również

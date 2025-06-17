@@ -51,7 +51,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-If your result looks similar to the output above and the column `MOUNTPOINT` is empty in the corresponding line, you can proceed with the [next step](#checkfs).
+If your result looks similar to the output above and the column `MOUNTPOINT` is empty in the corresponding line, you can proceed with the [next step](#filesystemcheck).
 
 However, if your result shows that there is a mount point for the VPS partition, it needs to be unmounted first.
 
@@ -76,7 +76,7 @@ In this example configuration, the command would be:
 umount /dev/sdb1
 ```
 
-#### Check the filesystem <a name="checkfs"></a>
+#### Check the filesystem <a name="filesystemcheck"></a>
 
 Before you proceed, it is recommended to check the filesystem to see if there are errors in the partition. The command is as follows:
 

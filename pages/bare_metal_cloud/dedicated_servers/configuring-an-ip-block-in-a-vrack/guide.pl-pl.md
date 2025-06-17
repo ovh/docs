@@ -1,18 +1,33 @@
 ---
 title: 'Konfiguracja bloku IP w sieci vRack'
 excerpt: 'Dowiedz się, jak skonfigurować blok publicznych adresów IP w sieci vRack'
-updated: 2023-08-31
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
 Oprócz prywatnego adresowania IP, [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia kierowanie publicznego ruchu IP przez port vRack Twojego serwera za pomocą bloku publicznych adresów IP.
 
 **Niniejszy przewodnik wyjaśnia, jak skonfigurować blok publicznych adresów IP do zastosowania z rozwiązaniem vRack.**
+
+> [!primary]
+>
+> vRack obsługuje adresy IPv4 i IPv6 public routing z dodatkowymi adresami IP. Możesz sfinalizować instrukcje dotyczące konfigurowania bloków IPv6 w tym przewodniku: "[Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)".
+>
+
+> [!primary]
+>
+> Ten artykuł dotyczy konfiguracji dodatkowych adresów IP w sieci vRack. Jeśli poszukujesz wskazówek dotyczących konfiguracji Additional IP w połączeniu z primary IP (w publicznym interfejsie sieciowym), przeczytaj następujące artykuły:
+>
+> - IPv4:
+>   - [Konfigurowanie adresu IPv6 na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+>   - [Skonfiguruj adres IP jako alias](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>
+> - IPv6:
+>   - [Konfigurowanie adresu IPv6 na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+>   - [Konfiguracja IPv6 na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>   - [Jak konfigurować IPv6 w instancji Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+>
 
 ## Wymagania początkowe
 

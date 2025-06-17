@@ -477,7 +477,7 @@ Per risolvere il problema, eseguire la procedura seguente:
 >> 5. Nella nuova pagina, seleziona l’opzione `Utilizzare i DNS predefiniti di OVHcloud`{.action} e clicca sul pulsante `Applicare la configurazione`{.action}.
 >>
 >> La propagazione dell'aggiornamento dei server DNS applicati a un dominio può richiedere fino a **48** ore.
->>>
+>>
 >> > [!success]
 >> >
 >> > Trovi tutti i dettagli nella nostra guida "[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".

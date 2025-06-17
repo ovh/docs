@@ -28,10 +28,10 @@ Die Tabelle auf dieser Seite enthält alle Datenbanken, die mit Ihrem Webhosting
 
 In der Tabelle können Datenbanken verschiedene Typen haben:
 
-- **Inklusive**: Gibt an, dass die Datenbank in Ihrem Webhosting enthalten ist. Sie verursacht keine zusätzlichen Kosten.</br></br>
-- **Optional**: Gibt an, dass die Datenbank als Ergänzung zu den in Ihrem Webhosting enthaltenen Datenbanken abonniert wurde. Sie zahlen einen Aufpreis, um über diese zusätzliche Datenbank auf Ihrem Webhosting zu verfügen.</br></br>
-- **Inklusive - aus dem Verkauf genommen**: Gibt an, dass die Inklusiv-Datenbank in Kürze aus dem Verkauf genommen wird. </br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, ihren Inhalt in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).</br></br>
-- **Optional – aus dem Verkauf genommen**: Gibt an, dass die zusätzlich zu Ihrem Webhosting abonnierte Datenbank in Kürze aus dem Verkauf genommen wird. </br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, den Inhalt der Datenbank in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).
+- **Inklusive**: Gibt an, dass die Datenbank in Ihrem Webhosting enthalten ist. Sie verursacht keine zusätzlichen Kosten.<br><br>
+- **Optional**: Gibt an, dass die Datenbank als Ergänzung zu den in Ihrem Webhosting enthaltenen Datenbanken abonniert wurde. Sie zahlen einen Aufpreis, um über diese zusätzliche Datenbank auf Ihrem Webhosting zu verfügen.<br><br>
+- **Inklusive - aus dem Verkauf genommen**: Gibt an, dass die Inklusiv-Datenbank in Kürze aus dem Verkauf genommen wird. <br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, ihren Inhalt in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).<br><br>
+- **Optional – aus dem Verkauf genommen**: Gibt an, dass die zusätzlich zu Ihrem Webhosting abonnierte Datenbank in Kürze aus dem Verkauf genommen wird. <br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, den Inhalt der Datenbank in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).
 
 > [!success]
 >

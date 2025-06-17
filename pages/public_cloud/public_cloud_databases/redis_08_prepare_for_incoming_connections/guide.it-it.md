@@ -1,6 +1,6 @@
 ---
-title: Caching/Valkey - Configure your Caching/Valkey service to accept incoming connections
-excerpt: Find out how to configure your Caching/Valkey service to accept incoming connections
+title: Valkey - Configure your Valkey service to accept incoming connections
+excerpt: Find out how to configure your Valkey service to accept incoming connections
 updated: 2024-06-12
 ---
 
@@ -8,21 +8,21 @@ updated: 2024-06-12
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to configure your Caching/Valkey instance to accept incoming connections.**
+**This guide explains how to configure your Valkey instance to accept incoming connections.**
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- A Caching/Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 ## Instructions
 
-### Configure your Caching/Valkey instance to accept incoming connections
+### Configure your Valkey instance to accept incoming connections
 
-Before making a connection, we need to verify that our Caching/Valkey instance is correctly configured.
+Before making a connection, we need to verify that our Valkey instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Caching/Valkey instance.
+Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Valkey instance.
 
 #### Step 1: Verify your user roles and password
 

@@ -17,7 +17,7 @@ This policy aims at implementing the global reversibility principles and require
 - The [OVHcloud implementation](#ovhcloud-implementation), whose migration will require adaptations to a new environment.
 - [Specific functionalities](#specific-functionalities), whose migration as such is impossible to guarantee as they are tied to OVHcloud environment or specific developments.
 
-### Core features <a name="core-features"></a>
+### Core features
 
 |Feature|Description|Available formats|Migration model|Available documentation|
 |----|-----|---|-----|-----|
@@ -26,7 +26,7 @@ This policy aims at implementing the global reversibility principles and require
 |Web hosting - Providing file servers.|Provision of a file server to host the component files of the website (pages, scripts, resources...)|**Every format** - clients may upload any file on the server.|**Inbound migration**: FTP connection to the file server and import.<br><br>**Outbound migration**: FTP connection and file recovery.|**Inbound migration**: [Migrating your website to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)<br><br>**Outbound migration**: [Export a website - retrieve files from your FTP storage space](/pages/web_cloud/web_hosting/exporter-son-site-web#step-1-retrieve-files-from-your-ftp-storage-space)|
 |Web hosting - providing databases|Provision of databases that can be connected to the website|**Shared SQL offers**:<br><br>**MySQL 5.6**<br><br>**Private SQL offers**:<br><br>**MySQL** 5.6 / 5.7<br><br>**MariaDB** 10.1<br><br>**PostgreSQL** 9.4 / 9.5 / 9.6 / 10|**Inbound migration**: Create a new database, then import the data by one of the available methods (backup restore, phpMyAdmin interface, script, SSH connection)<br><br>**Outbound migration**: Export data by one of the available methods (backup export, phpMyAdmin interface, script, SSH connection)|**Inbound migration**: [Importing a backup into a Web Hosting plan database](/pages/web_cloud/web_hosting/sql_importing_mysql_database)<br><br>[Private SQL - Importing a database](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#importing-a-database-optional)<br><br>**Outbound migration**: [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)|
 
-### OVHcloud implementation <a name="ovhcloud-implementation"></a>
+### OVHcloud implementation
 
 |Feature|Description|Available formats|Migration model|Available documentation|
 |---|---|---|---|---|
@@ -35,7 +35,7 @@ This policy aims at implementing the global reversibility principles and require
 |Logging|Retention and browsing of the website logs. Analysis and graphic representation of these logs with the Urchin WebAnalytics application.|Plain text with standard apache log format|**Inbound migration**: Not applicable - logs from previous infrastructure are unlikely to be relevant to another.<br><br>**Outbound migration**: Download log files from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)|**Inbound migration**: N/A<br><br>**Outbound migration**: [Exporting a website - retrieving the logs](/pages/web_cloud/web_hosting/exporter-son-site-web#step-3-retrieve-the-logs-for-your-ovhcloud-web-hosting-plan)|
 |Job scheduling|Performing periodic automated tasks (cron)|N/A|**Inbound migration**: Scripts are not imported as is. Retrieve old scripts, or their business logic, and reimplement them on OVHcloud hosting through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).<br><br>**Outbound migration**: Scripts are not exported as is. Retrieve the business logic of the scripts in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) and reimplement them in the target environment.|**Inbound and outbound migration**: [Using automated tasks on a Web Hosting plan](/pages/web_cloud/web_hosting/cron_tasks)|
 
-### Specific functionalities <a name="specific-functionalities"></a>
+### Specific functionalities
 
 |Feature|Description|Available formats|Migration model|Available documentation|
 |---|-----|---|-----|---|

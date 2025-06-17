@@ -15,7 +15,7 @@ Si está ausente y no puede consultar su dirección de correo, puede implementar
 - Tener una solución MX Plan. Esta está disponible a través de: un plan de hosting [web hosting](/links/web/hosting), el [alojamiento gratuito 100M](/links/web/domains-free-hosting) incluido con un dominio (activado previamente) o el MX Plan contratado por separado.
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
-## En la práctica
+## Procedimiento
 
 > [!warning]
 >

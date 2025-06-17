@@ -17,7 +17,7 @@ Tutorial ten pozwoli Ci na tworzenie pierwszych treści, ich organizację, umies
 
 **Dowiedz się, jak utworzyć stronę WWW przy użyciu CMS WordPress.**
 
-## Wymagania
+## Wymagania początkowe
 
 - Posiadanie oferty [hostingu](/links/web/hosting), która zawiera przynajmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)

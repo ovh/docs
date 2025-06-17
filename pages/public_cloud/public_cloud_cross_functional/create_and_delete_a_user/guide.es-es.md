@@ -16,7 +16,7 @@ En Horizon puede establecer una contraseña para cada usuario. Atención: El cam
 
 ## Requisitos
 
-- Un proyecto de [Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) en su cuenta de OVHcloud
+- Un proyecto de [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) en su cuenta de OVHcloud
 - Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager)
 
 ## Procedimiento

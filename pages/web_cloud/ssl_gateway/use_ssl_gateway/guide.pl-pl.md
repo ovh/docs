@@ -6,7 +6,7 @@ updated: 2022-12-01
 
 ## Wprowadzenie
 
-### Wymagania
+### Wymagania początkowe
 
 > [!primary]
 >

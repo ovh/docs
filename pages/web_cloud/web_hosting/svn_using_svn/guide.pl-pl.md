@@ -17,7 +17,7 @@ SVN, który jest skrótem od "subwersji", jest systemem zarządzania wersjami.
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „[Sprawdź również](#go-further)”.
 > 
 
-## Wymagania
+## Wymagania początkowe
 
 - Posiadanie [hostingu](/links/web/hosting) pozwalającego na połączenie SSH (**od oferty Pro**)
 - Logowanie przez SSH do hostingu (zapoznaj się z naszym przewodnikiem [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting)

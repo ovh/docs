@@ -153,7 +153,7 @@ Si vous avez identifié une adresse IP malveillante, voici la ligne à renseigne
 >>```bash
 >> <Limit GET POST>
 >>   order allow,deny 
->>>  deny from 2001:db8:1:1b00:203:0:113:0
+>>   deny from 2001:db8:1:1b00:203:0:113:0
 >>   allow from all
 >> </Limit>
 >>```

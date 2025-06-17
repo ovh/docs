@@ -4,7 +4,7 @@ excerpt: "Dowiedz się, jak sklonować wolumen z rozwiązania Enterprise File St
 updated: 2024-12-09
 ---
 
-## Cel
+## Wprowadzenie
 
 Sklonowany wolumin zawiera wszystkie dane woluminu nadrzędnego z danej chwili. Posiada wszystkie funkcje woluminu i może być używany jako wolumin klasyczny.<br>
 
@@ -35,7 +35,7 @@ Tworzenie regularnych punktów kopii zapasowych za pomocą [Polityka snapshotów
 
 ![CloneVolumeUseCaseDataCorruption](images/clone_volume_use_case_2.png){.thumbnail}
 
-## Wymagania
+## Wymagania początkowe
 
 - Wykupienie usługi OVHcloud [Enterprise File Storage](/links/storage/enterprise-file-storage)
 - Połączenie z [API OVHcloud](/links/api)
@@ -99,7 +99,7 @@ W zależności od użytego rozmiaru snapshota operacja tworzenia wolumenu może 
 
 **Nowy wolumen jest teraz tworzony w kopii zapasowej snapshot woluminu nadrzędnego.**
 
-## Krok w przyszłość
+## Sprawdź również
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w zakresie wdrażania naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij na [link](/links/professional-services), aby uzyskać wycenę i poprosić naszych ekspertów z zespołu Professional Services o indywidualną analizę Twojego projektu.
 

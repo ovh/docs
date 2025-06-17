@@ -40,7 +40,7 @@ Vous devez mettre en place un dispositif de sauvegarde supplémentaire basé sur
 
 | **Source** | **Contenu** | **Documentation** |
 | --- | --- | --- |
-| Espace client | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://eu.api.ovh.com/console/#/me> (voir `/me/api/logs`)<br>- [Liste des appels API lancés avec votre compte](https://eu.api.ovh.com/console/#/me/api/logs/self~GET)<br>- [Liste des appels API lancés sur des services auxquels vous avez accès](https://eu.api.ovh.com/console/#/me/api/logs/services~GET)<br>- [Obtenir vos logs d'audit](https://eu.api.ovh.com/console/console/#/audit/#~me) |
+| Espace client | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://eu.api.ovh.com/console/#/me> (voir `/me/api/logs`)<br>- [Liste des appels API lancés avec votre compte](https://eu.api.ovh.com/console/#/me/api/logs/self~GET)<br>- [Liste des appels API lancés sur des services auxquels vous avez accès](https://eu.api.ovh.com/console/#/me/api/logs/services~GET)<br>- [Obtenir vos logs d'audit](https://eu.api.ovh.com/console/#/me/logs/audit~GET) |
 
 ### 6. API
 

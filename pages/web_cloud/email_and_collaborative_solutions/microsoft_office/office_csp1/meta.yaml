@@ -1,3 +1,12 @@
 id: d74e93b4-1775-4876-bd4e-ee83a83e0908
 full_slug: microsoft-office365-csp1
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

@@ -57,7 +57,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Wenn Ihr Ergebnis ähnlich aussieht wie die Ausgabe oben und die Spalte `MOUNTPOINT` in der entsprechenden Zeile leer ist, können Sie mit dem [nächsten Schritt](#checkfs) fortfahren.
+Wenn Ihr Ergebnis ähnlich aussieht wie die Ausgabe oben und die Spalte `MOUNTPOINT` in der entsprechenden Zeile leer ist, können Sie mit dem [nächsten Schritt](#filesystemcheck) fortfahren.
 
 Wenn Ihr Ergebnis jedoch zeigt, dass es einen Mountpunkt für die VPS-Partition gibt, muss sie zuerst ausgehängt werden (*unmount*).
 
@@ -81,6 +81,8 @@ In dieser Beispielkonfiguration wäre der Befehl:
 ```bash
 umount /dev/sdb1
 ```
+
+<a name="filesystemcheck"></a>
 
 ### Überprüfung des Dateisystems
 

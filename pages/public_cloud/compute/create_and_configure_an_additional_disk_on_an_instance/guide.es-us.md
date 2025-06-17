@@ -1,7 +1,7 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
 excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
-updated: 2025-04-28
+updated: 2025-06-03
 ---
 
 <style>
@@ -55,6 +55,8 @@ El volumen Classic es una solución de almacenamiento fiable y rentable, ideal p
 - Alojamiento de aplicaciones web clásicas
 - Almacenamiento de bases de datos de tamaño pequeño a mediano
 - Backup y archivado de datos
+
+En las regiones 3AZ, los volúmenes Classic son servicios regionales que utilizan un Erasure Coding distribuido entre varias zonas de disponibilidad. Esto garantiza la disponibilidad de los datos sin impacto ni interrupción en caso de fallo de una zona, siempre que se cumplan los requisitos de la arquitectura resiliente con conexión múltiple. Para más información, consulte nuestra guía "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 

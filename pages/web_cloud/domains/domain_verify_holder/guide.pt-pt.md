@@ -33,7 +33,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínio`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}

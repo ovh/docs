@@ -27,7 +27,7 @@ Al establecer límites de velocidad, nos aseguramos de que la API pueda mantener
 
 ### Keystone (API de identidad OpenStack)
 
-Aplicamos límites de ancho de banda a nivel de usuario** de OpenStack.
+Aplicamos límites de ancho de banda a nivel de **usuario** de OpenStack.
 
 Un usuario puede realizar **60 peticiones por minuto** antes de recibir una respuesta HTTP 429.
 
@@ -103,6 +103,6 @@ Estos son algunos ejemplos de librerías conocidas por implementar la función *
 - tenacity: <https://pypi.org/project/tenacity/>
 - backoff: <https://pypi.org/project/backoff/>
 
-## Ir más allá
+## Más información
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

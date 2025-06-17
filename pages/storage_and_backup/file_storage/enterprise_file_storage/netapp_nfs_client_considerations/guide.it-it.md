@@ -12,7 +12,7 @@ updated: 2024-11-08
 
 - Disporre di una soluzione [Enterprise File Storage](/links/storage/enterprise-file-storage)
 
-## In pratica
+## Procedura
 
 ### Client NFS Microsoft Windows
 

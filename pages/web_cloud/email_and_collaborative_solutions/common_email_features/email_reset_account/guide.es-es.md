@@ -21,7 +21,7 @@ Quiere:
 - Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
 
-## En la práctica <a name="instructions"></a>
+## Procedimiento <a name="instructions"></a>
 
 OVHcloud ofrece 3 soluciones de correo electrónico. El concepto de eliminación de cuenta es diferente según su solución.
 

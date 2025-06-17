@@ -489,6 +489,6 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 [Activating Rescue Mode on VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 
 Join our [community of users](/links/community).

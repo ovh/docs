@@ -2,3 +2,12 @@ id: 3d1e4540-bd10-4086-956c-d2cf4292c91f
 full_slug: email-pro-outlook-macos-configuration
 banner: marketplace-support-collaboration
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

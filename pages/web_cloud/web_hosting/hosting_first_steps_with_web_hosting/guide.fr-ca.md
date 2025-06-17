@@ -87,7 +87,7 @@ Consultez nos guides détaillés :
 
 Consultez notre guide détaillé « [Hébergement web - Activer les adresses e-mails incluses](/pages/web_cloud/web_hosting/activate-email-hosting) ».
 
-//
+///
 
 ### 4 - Créer une adresse e-mail personnalisée avec votre nom de domaine <a name="part-4"></a>
 

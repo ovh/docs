@@ -241,7 +241,7 @@ De seguida, poderá ligar-se a este segundo host ao seguinte endereço:
 ssh myserver
 ```
 
-Para mais informações sobre o ficheiro `config`, consulte a [página `man` correspondente](https://manpages.org/ssh_config/5).
+Para mais informações sobre o ficheiro `config`, consulte a [página `man` correspondente](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 
@@ -437,7 +437,7 @@ De seguida, poderá ligar-se a este segundo host ao seguinte endereço:
 ssh myserver
 ```
 
-Para mais informações sobre o ficheiro `config`, consulte a [página `man` correspondente](https://manpages.org/ssh_config/5).
+Para mais informações sobre o ficheiro `config`, consulte a [página `man` correspondente](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 

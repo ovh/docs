@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Activating email addresses included"
 excerpt: "Find out how to activate the email addresses included in your Web Hosting plan"
-updated: 2024-12-12
+updated: 2025-06-03
 ---
 
 ## Objective
@@ -45,18 +45,6 @@ The activation window appears. Choose the domain name you would like to link you
 > Please note: it may take a few minutes for the email option to be enabled. You will receive an email confirming that you have installed and enabled the MX Plan solution. This includes managing and configuring your email accounts.
 >
 
-### Keeping your email addresses before your Web Hosting plan expires
-
-When your Web Hosting plan expires or needs to be deleted, you can keep your email addresses.
-
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan that has the email solution.
-
-In the `Configuration` box, click the `...`{.action} button to the right of the `Email addresses` entry, then click the `Detach my email option`{.action} button
-
-![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
-
-An MX solution will be offered for purchase. Once the order has been settled, your emails will continue to work after the Web Hosting plan is suspended.
- 
 ### Deleting the email solution linked to your Web Hosting plan
 
 You can permanently delete the email solution linked to your Web Hosting plan.

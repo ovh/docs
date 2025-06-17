@@ -54,14 +54,7 @@ Lorsqu'un objet atteint la fin de sa durée de vie selon la configuration de son
 - **versionné** : un marqueur de suppression est créé et devient la version courante. Vous pouvez également choisir le nombre d'anciennes versions que vous souhaitez conserver. Si la version courante de l'objet est la seule version de l'objet et qu'il s'agit également d'un marqueur de suppression, ce dernier sera supprimé.
 - **versioning suspendu** : actuellement, nous ne permettons pas la suspension du versioning si vous avez une configuration de lifecycle en vigueur. De la même manière, nous ne permettons pas le téléchargement d'une configuration de lifecycle si le versioning est suspendu sur le bucket.
 
-> [!warning]
-> 
-> La mise en place de la fonctionnalité se fera en 2 phases :
->
-> - Phase 1 : prise en charge de l'expiration uniquement
-> - Phase 2 : prise en charge des transitions
-
-## Expiration (disponible)
+## Expiration
 
 Les règles de lifecycle sont traitées de manière asynchrone et dans la mesure du possible. La plupart des règles sont appliquées dans les 24 heures, mais cela peut prendre plus de temps dans le cas d'un très grand nombre d'objets ou lors du traitement de nombreux objets. Pendant ce délai, vous continuez à être facturé pour le niveau de stockage actuel de l'objet, même si la règle (par exemple, l'expiration ou la transition) a déjà été déclenchée mais n'est pas encore terminée. Par exemple, si un objet doit être supprimé le 30e jour, mais qu'il n'est traité que le 32e jour, vous pouvez être facturé pour deux jours supplémentaires.
 
@@ -150,13 +143,13 @@ Dans un bucket versionné, chaque objet a une version courante et zéro ou plusi
 | Filter.ObjectSizeLessThan                           | non       | Taille maximale de l'objet auquel la règle s'applique. |
 | Filter.And                                          | non       | Vous pouvez appliquer plusieurs critères de sélection dans le filtre. Un AND logique s'applique à plusieurs critères de filtrage. |
 | Filter.And.Tags                                     | non       | Un tableau de filtres de tag. Tout les tags du tableau doivent exister dans les tags de l'objet pour que la règle s'applique. |
-| Expiration                                          | oui*     | Une action de lifecycle qui applique une opération de suppression à l'ensemble des objets filtrés. </br></br> ⚠️ Obligatoire si Transitions ou AbortIncompleteMultipartUpload n'est pas présent. |
-| Expiration.Date                                     | non*      | Indique la date à laquelle les objets doivent être supprimés. La valeur de la date doit être au format ISO 8601 et l'heure doit toujours être fixée à minuit UTC. </br></br> ⚠️ Cet attribut n'est pas obligatoire si Days est présent.  </br> ⚠️ Cet attribut s'exclut mutuellement avec Days, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
-| Expiration.Days                                     | oui*     | Indique la durée en jours après laquelle les objets doivent être supprimés. La valeur doit être un nombre entier égal ou supérieur à 1. </br></br> ⚠️ Cet attribut est obligatoire si Date n'est pas présent. </br> ⚠️ Cet attribut s'exclut mutuellement avec Date, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
-| Expiration.ExpiredObjectDeleteMarker                | non       | Indique si OVHcloud Object Storage doit immédiatement supprimer les marqueurs de suppression qui n'ont pas de versions non courantes (marqueurs de suppression expirés). </br></br> ⚠️ Vous ne pouvez pas spécifier Days ou Date avec ExpiredObjectDeleteMarker dans la même règle. Lorsque vous spécifiez Days/Date, les marqueurs de suppression expirés sont automatiquement supprimés comme des objets normaux lorsqu'ils satisfont aux critères d'âge. ExpiredObjectDeleteMarker est utilisé pour nettoyer les marqueurs de suppression dès qu'ils deviennent la seule version. Vous devez créer une règle séparée avec uniquement l'attribut ExpiredObjectDeleteMarker dans Expiration. </br> ⚠️ Lorsque vous utilisez l'action de lifecycle ExpiredObjectDeleteMarker, la règle ne peut pas spécifier un filtre basé sur un tag. |
+| Expiration                                          | oui*     | Une action de lifecycle qui applique une opération de suppression à l'ensemble des objets filtrés. <br><br> ⚠️ Obligatoire si Transitions ou AbortIncompleteMultipartUpload n'est pas présent. |
+| Expiration.Date                                     | non*      | Indique la date à laquelle les objets doivent être supprimés. La valeur de la date doit être au format ISO 8601 et l'heure doit toujours être fixée à minuit UTC. <br><br> ⚠️ Cet attribut n'est pas obligatoire si Days est présent.  <br> ⚠️ Cet attribut s'exclut mutuellement avec Days, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
+| Expiration.Days                                     | oui*     | Indique la durée en jours après laquelle les objets doivent être supprimés. La valeur doit être un nombre entier égal ou supérieur à 1. <br><br> ⚠️ Cet attribut est obligatoire si Date n'est pas présent. <br> ⚠️ Cet attribut s'exclut mutuellement avec Date, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
+| Expiration.ExpiredObjectDeleteMarker                | non       | Indique si OVHcloud Object Storage doit immédiatement supprimer les marqueurs de suppression qui n'ont pas de versions non courantes (marqueurs de suppression expirés). <br><br> ⚠️ Vous ne pouvez pas spécifier Days ou Date avec ExpiredObjectDeleteMarker dans la même règle. Lorsque vous spécifiez Days/Date, les marqueurs de suppression expirés sont automatiquement supprimés comme des objets normaux lorsqu'ils satisfont aux critères d'âge. ExpiredObjectDeleteMarker est utilisé pour nettoyer les marqueurs de suppression dès qu'ils deviennent la seule version. Vous devez créer une règle séparée avec uniquement l'attribut ExpiredObjectDeleteMarker dans Expiration. <br> ⚠️ Lorsque vous utilisez l'action de lifecycle ExpiredObjectDeleteMarker, la règle ne peut pas spécifier un filtre basé sur un tag. |
 | NoncurrentVersionExpiration                         | non       | Une Action de lifecycle qui indique quand les versions d'objets non courantes doivent être supprimées. Cette action n'affecte pas les versions courantes. Elle supprime uniquement les versions qui ne sont pas à jour. |
 | NoncurrentVersionExpiration.NoncurrentDays          | non       | Indique le nombre de jours avant qu'une version non courante soit éligible à la suppression après qu'elle soit devenue non courante, c'est-à-dire l'âge minimum d'une version non courante. |
-| NoncurrentVersionExpiration.NewerNoncurrentVersions | non       | Indique le nombre de versions non courantes les plus récentes à conserver. Le maximum est de 100. </br></br> Exemple: </br> Supposons que vous ayez un objet B avec 10 versions : </br> - B v10 (current version, creation date: 2024-10-23) </br> - B v9 (non-current version, creation date: 2024-10-22) </br> - B v8 (non-current version, creation date: 2024-10-21) </br> - B v7 (non-current version, creation date: 2024-10-20) </br> - B v6 (non-current version, creation date: 2024-10-19) </br> - B v5 (non-current version, creation date: 2024-10-18) </br> - B v4 (non-current version, creation date: 2024-10-17) </br> - B v3 (non-current version, creation date: 2024-10-16) </br> - B v2 (non-current version, creation date: 2024-10-15) </br> - B v1 (non-current version, creation date: 2024-10-14) </br></br> Si **NewerNoncurrentVersions**=3, la règle de lifecycle supprimera toutes les versions non courantes à l'exception des trois plus récentes, à savoir v9, v8 et v7. |
+| NoncurrentVersionExpiration.NewerNoncurrentVersions | non       | Indique le nombre de versions non courantes les plus récentes à conserver. Le maximum est de 100. <br><br> Exemple: <br> Supposons que vous ayez un objet B avec 10 versions : <br> - B v10 (current version, creation date: 2024-10-23) <br> - B v9 (non-current version, creation date: 2024-10-22) <br> - B v8 (non-current version, creation date: 2024-10-21) <br> - B v7 (non-current version, creation date: 2024-10-20) <br> - B v6 (non-current version, creation date: 2024-10-19) <br> - B v5 (non-current version, creation date: 2024-10-18) <br> - B v4 (non-current version, creation date: 2024-10-17) <br> - B v3 (non-current version, creation date: 2024-10-16) <br> - B v2 (non-current version, creation date: 2024-10-15) <br> - B v1 (non-current version, creation date: 2024-10-14) <br><br> Si **NewerNoncurrentVersions**=3, la règle de lifecycle supprimera toutes les versions non courantes à l'exception des trois plus récentes, à savoir v9, v8 et v7. |
 | AbortIncompleteMultipartUpload                      | non       | Une action de lifecycle qui applique une opération de suppression sur les parties d'un téléchargement multi-parties incomplet. |
 | AbortIncompleteMultipartUpload.DaysAfterInitiation  | non       | Indique le nombre de jours après lequel toutes les parties de tous les téléchargements multi-parties incomplets sont supprimées et interrompt les téléchargements multi-parties sous-jacents. |
 
@@ -204,7 +197,6 @@ Si la date actuelle est 2024-10-29 et **NoncurrentDays**=5, la règle de lifecyc
 - B v2 est non-courante depuis 2024-10-20 (quand B v3 a été créée) : son âge en tant que version non-courante est 9 jours.
 
 ### Obtenir la date d'expiration programmée
-
 
 Si un objet est programmé pour être supprimé, un appel HEAD-OBJECT renvoie un en-tête de réponse http spécial x-amz-expiration qui contient un timestamp indiquant sa date d'expiration et un identifiant de la règle du lifecycle qui a été appliquée.
 
@@ -393,7 +385,7 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
 
 ///
 
-## Transition (à venir)
+## Transition
 
 ### Transitions supportées
 
@@ -404,10 +396,11 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
 
 Les transitions actuellement prises en charge sont les suivantes :
 
-| de/vers          | High Performance | Standard  | Standard Infrequent Access |Cold Archive |
+| de/vers          | High Performance | Standard  | Infrequent Access |Cold Archive |
 | ---------------- | ---------------- | --------- | -------------------------- |------------ |
 | High Performance |        -         | oui       |             oui            | non          |
 | Standard         | interdit        | -         |             oui            | non          |
+| Infrequent Access         | interdit        | interdit         |             -            | non          |
 | Cold Archive     | interdit        | interdit |             interdit      | -           |
 
 ### Taille minimale de l'objet
@@ -461,8 +454,8 @@ Comme nous l'avons déjà mentionné, lorsque vous avez plusieurs règles dans u
 | Attribut                                             | Requis   | Description 
 | ---------------------------------------------------- | -------- | ------------
 | Transitions                                          | oui*     | Un tableau d'opérations lifecycle qui copient automatiquement tous les objets sélectionnés de leur niveau de stockage actuel vers le niveau de stockage le plus efficace. |
-| Transitions.Date                                     | no*      | Indique la date à laquelle les objets doivent être transférés. La valeur de la date doit être au format ISO 8601 et l'heure doit toujours être fixée à minuit UTC. </br></br> ⚠️ Cet attribut n'est pas obligatoire si Days est présent. </br> ⚠️ cet attribut s'exclut mutuellement avec Days, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
-| Transitions.Days                                     | oui*     | Indique la durée en jours après laquelle les objets doivent être transférés. La valeur doit être un nombre entier égal ou supérieur à 30. </br></br> ⚠️ Cet attribut est obligatoire si Date n'est pas présent. </br> ⚠️ cet attribut s'exclut mutuellement avec Date, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
+| Transitions.Date                                     | no*      | Indique la date à laquelle les objets doivent être transférés. La valeur de la date doit être au format ISO 8601 et l'heure doit toujours être fixée à minuit UTC. <br><br> ⚠️ Cet attribut n'est pas obligatoire si Days est présent. <br> ⚠️ cet attribut s'exclut mutuellement avec Days, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
+| Transitions.Days                                     | oui*     | Indique la durée en jours après laquelle les objets doivent être transférés. La valeur doit être un nombre entier égal ou supérieur à 30. <br><br> ⚠️ Cet attribut est obligatoire si Date n'est pas présent. <br> ⚠️ cet attribut s'exclut mutuellement avec Date, c'est-à-dire que vous avez soit Date, soit Days, mais vous ne pouvez pas spécifier les deux. |
 | Transitions.StorageClass                             | oui      | Indique la classe de stockage cible. Actuellement, seul « STANDARD » est disponible. |
 | NoncurrentVersionTransitions                         | no       | Un tableau d'actions de lifecycle qui indique quand les versions d'objets non courantes doivent être transférées. Ces actions n'affectent pas les versions courantes. Elles n'assurent la transition que pour les versions qui ne sont pas courantes. |
 | NoncurrentVersionTransitions.NoncurrentDays          | no       | Indique le nombre de jours avant qu'une version non courante soit éligible à la transition après être devenue non courante, c'est-à-dire l'âge minimum d'une version non courante. |

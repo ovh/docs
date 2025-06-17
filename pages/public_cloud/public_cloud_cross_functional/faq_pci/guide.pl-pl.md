@@ -58,7 +58,7 @@ Tak, obrazy cloud dostarczane przez OVHcloud zawierają skrypty cloud-init, któ
 
 Tak i nie.
 
-Tak, ponieważ opcja jest aktywna (flag CPU VMX* jest widoczny na Twojej instancji). Możesz więc korzystać z każdego rozwiązania wirtualizacji w swojej instancji (KVM, QEMU, VirtualBox, Xen, HyperV, itp.).
+Tak, ponieważ opcja jest aktywna (*flag CPU VMX* jest widoczny na Twojej instancji). Możesz więc korzystać z każdego rozwiązania wirtualizacji w swojej instancji (KVM, QEMU, VirtualBox, Xen, HyperV, itp.).
 
 Nie, ponieważ po przeprowadzeniu migracji instancji na żywo (może to nastąpić w każdej chwili, w oparciu o cykl życia hypervisora), Twoje jądro Linux może nie działać (kernel panic).
 

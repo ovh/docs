@@ -25,7 +25,7 @@ Ao estabelecer limites de débito, garantimos que a API possa manter uma experi�
 
 ## Quais são os limites de débito para a nossa API?
 
-## Keystone (API de identidade OpenStack)
+### Keystone (API de identidade OpenStack)
 
 Aplicamos limites de débito ao nível do**utilizador** OpenStack.
 
@@ -37,19 +37,19 @@ Aplicamos limites de débito ao nível do **projeto** OpenStack.
 
 Um projeto pode efetuar **20 pedidos por segundo** antes de receber uma resposta HTTP 429.
 
-## Neutron (API de rede OpenStack)
+### Neutron (API de rede OpenStack)
 
 Aplicamos limites de débito ao nível do **projeto** OpenStack.
 
 Um projeto pode efetuar **20 pedidos por segundo** antes de receber uma resposta HTTP 429.
 
-## Glance (API de imagem OpenStack)
+### Glance (API de imagem OpenStack)
 
 Aplicamos limites de débito ao nível do **projeto** OpenStack.
 
 Um projeto pode efetuar **20 pedidos por segundo** antes de receber uma resposta HTTP 429.
 
-## Cinder (API de cálculo OpenStack)
+### Cinder (API de cálculo OpenStack)
 
 Aplicamos limites de débito ao nível do **projeto** OpenStack.
 

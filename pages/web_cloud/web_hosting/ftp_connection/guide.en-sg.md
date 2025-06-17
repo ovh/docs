@@ -1,7 +1,7 @@
 ---
 title: "Logging in to your web hosting plan’s FTP storage space"
 excerpt: "Find out how to log in to your OVHcloud web hosting plan’s FTP storage space"
-updated: 2025-05-23
+updated: 2025-06-10
 ---
 
 ## Objective
@@ -18,6 +18,7 @@ OVHcloud web hosting plans provide you with access to an FTP storage space, whic
 > [!primary]
 > Only **Pro** and **Performance** web hosting plans allow SSH connections and multiple FTP users to be activated.
 >
+> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php){.external} or [Cyberduck](https://cyberduck.io/){.external} software.
 
 ## Instructions
 

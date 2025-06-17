@@ -1,7 +1,7 @@
 ---
 title: 'Aktywacja i konfiguracja Edge Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować Edge Network Firewall dla Twoich usług'
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Wprowadzenie
@@ -9,6 +9,11 @@ updated: 2025-04-28
 Aby chronić usługi dostępne dla klientów korzystających z publicznych adresów IP, OVHcloud udostępniło zaporę ogniową, skonfigurowaną i zintegrowaną z **infrastrukturą Anty-DDoS**: Edge Network Firewall Pozwala to ograniczyć ekspozycję usługi na ataki DDoS, usuwając określone przepływy sieciowe pochodzące spoza sieci OVHcloud.
 
 **Ten przewodnik wyjaśnia, jak skonfigurować Edge Network Firewall dla Twoich usług.**
+
+> [!warning]
+>
+> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
+>
 
 > [!primary]
 >

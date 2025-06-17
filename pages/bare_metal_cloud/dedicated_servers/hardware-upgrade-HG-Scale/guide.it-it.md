@@ -22,7 +22,7 @@ I nostri server High Grade e Scale offrono un'opzione di scalabilità che permet
 - Un server [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/) o [SCALE](https://www.ovhcloud.com/it/bare-metal/scale/)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
-## In pratica
+## Procedura
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 

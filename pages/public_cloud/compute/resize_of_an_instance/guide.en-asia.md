@@ -33,7 +33,7 @@ As a result of increased activity, or simply new needs, your instance may not be
 
 ## Instructions
 
-Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/), and make sure you are in the correct region. You can verify this on the top left corner.</br>
+Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/), and make sure you are in the correct region. You can verify this on the top left corner.<br>
 Next, click on the `Compute`{.action} menu on the left side and select `Instances`{.action}. Select `Resize Instance`{.action} in the drop list for the corresponding instance.
 
 ![Resize instance](images/resizeinstance2021.png){.thumbnail}

@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Włącz konta e-mail zawarte w ofercie"
 excerpt: "Dowiedz się, jak aktywować konta e-mail zawarte w hostingu"
-updated: 2024-12-12
+updated: 2025-06-03
 ---
 
 ## Wprowadzenie 

@@ -6,10 +6,10 @@ updated: 2024-07-17
 
 ## Objective
 
-A flex instance is a single size disk (50GB) instance which offers a faster process for snapshots. It allows resizing to higher or lower models with a fix storage space, whereas classic models can only be resized to higher models.</br>
+A flex instance is a single size disk (50GB) instance which offers a faster process for snapshots. It allows resizing to higher or lower models with a fix storage space, whereas classic models can only be resized to higher models.<br>
 As your infrastructure is constantly evolving, you may need to increase the storage space of your instance. In this case, you will need to « revert » your flex instance to a classic model. This action can only be done from the Horizon interface.
 
-</br>**This guide shows you how to revert and resize your flex instance from the OpenStack Horizon interface.**
+<br>**This guide shows you how to revert and resize your flex instance from the OpenStack Horizon interface.**
 
 ## Requirements
 

@@ -1,7 +1,7 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-updated: 2025-04-28
+updated: 2025-06-03
 ---
 
 <style>
@@ -55,6 +55,8 @@ Il volume Classic è una soluzione di storage affidabile ed economica, ideale pe
 - Hosting di applicazioni Web classiche
 - Storage di database di piccole e medie dimensioni
 - Backup e archiviazione dei dati
+
+Nelle aree 3AZ, i volumi Classic sono servizi locali che utilizzano un Erasure Coding distribuito tra più zone di disponibilità. In questo modo è garantita la disponibilità dei dati senza impatto né interruzioni in caso di guasto di una zona, a condizione che siano rispettati i requisiti dell'architettura resiliente con collegamento multiplo. Per maggiori informazioni, consulta la nostra guida "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 

@@ -38,7 +38,7 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 > Eliminare una zona DNS non elimina il record del dominio al quale è associato. L’eliminazione di una zona DNS associata non comporta la perdita del dominio.
 >
 
-## In pratica
+## Procedura
 
 > [!warning]
 >

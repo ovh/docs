@@ -155,14 +155,14 @@ Se a opção **Boost** for adequada às suas necessidades, encontrará abaixo as
 
 > [!tabs]
 > **Ativar a opção Boost**
->>>
->>> Para ativar a opção Boost, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. No quadro "Informações gerais" da página que se abrir, clique no botão `...`{.action} à direita de `Boost` e, a seguir, em `Aplicar opção boost ao serviço`{.action}.<br><br>
+>>
+>> Para ativar a opção Boost, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. No quadro "Informações gerais" da página que se abrir, clique no botão `...`{.action} à direita de `Boost` e, a seguir, em `Aplicar opção boost ao serviço`{.action}.<br><br>
 >>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
->>>
+>>
 > **Desativar a opção Boost**
->>>
->>> Para desativar a opção Boost, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Mais` e clique em `Aplicar opção boost ao serviço`{.action}.<br>
->>> Aparece o quadro de utilização da opção Boost, clique em `Desativar a opção boost`{.action}.<br><br>
+>>
+>> Para desativar a opção Boost, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Mais` e clique em `Aplicar opção boost ao serviço`{.action}.<br>
+>> Aparece o quadro de utilização da opção Boost, clique em `Desativar a opção boost`{.action}.<br><br>
 >>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
 
 #### A faturação em caso de alteração da oferta <a name="billing"></a>

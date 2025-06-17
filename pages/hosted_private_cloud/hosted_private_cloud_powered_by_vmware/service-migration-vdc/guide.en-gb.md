@@ -216,7 +216,7 @@ If the access policy has been changed to "Restricted", the new vDC will inherit 
 
 In the lifecycle of the source vDC, a list of users may have been created for business or organisational needs. These users will also be present on the new vDC but will have no permissions on this new vDC. You must therefore assign the users the appropriate rights, depending on the configuration of the destination vDC.
 
-To do this, please refer to our guides on [Changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights), [Changing the User Password](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/changement_du_mot_de_passe_utilisateur) and [Associating an email with a vSphere user](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_edit_user).
+To do this, please refer to our guides on [Changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud), [Changing the User Password](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/changement_du_mot_de_passe_utilisateur) and [Associating an email with a vSphere user](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_edit_user).
 <a name="activateveeamzerto"></a>
 #### Step 3.3 Activate Veeam Managed Backup & Zerto Disaster Recovery Options
 

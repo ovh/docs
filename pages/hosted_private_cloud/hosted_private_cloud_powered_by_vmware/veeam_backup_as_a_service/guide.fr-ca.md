@@ -11,7 +11,7 @@ updated: 2024-10-18
 ## Prérequis
 
 * Posséder une offre [Hosted Private cloud](/links/hosted-private-cloud/hosted-private-cloud).
-* [Donner le droit « Ajout de ressources »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](/links/manager).
+* [Donner le droit « Ajout de ressources »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](/links/manager).
 * Être connecté au client web vSphere managé.
 * Avoir activé la [haute disponibilité (HA)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability).
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new) sur le ou les clusters.

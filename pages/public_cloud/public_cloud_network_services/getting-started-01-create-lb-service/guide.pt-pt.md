@@ -100,7 +100,7 @@ You will be redirected to the Load Balancer listing page. Among the attributes t
 
 Another way to create a Load Balancer is through the Openstack Command Line Interface. Before you begin, consult the following guides:
 
-[Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).</br>
+[Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).<br>
 [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
 #### Configuring your private network

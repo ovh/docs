@@ -140,7 +140,7 @@ Nesse caso, o servidor deverá ser reiniciado no sistema operativo normal.
 
 ### Etapa 3 - Reiniciar o servidor <a name="step3"></a>
 
-Comece por substituir o netboot por "Fazer boot" no disco rígido`{.action} na Área de Cliente OVHcloud (ver [Etapa 1](#step1)).
+Comece por substituir o netboot por "Fazer boot no disco rígido" na Área de Cliente OVHcloud (ver [Etapa 1](#step1)).
 
 A seguir, reinicie o servidor a partir da Área de Cliente. Clique no botão `...`{.action} junto da secção « Estado dos serviços » e selecione `Reiniciar`{.action}.
 

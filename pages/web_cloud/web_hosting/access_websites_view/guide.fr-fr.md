@@ -1,12 +1,12 @@
 ---
 title: "Visualiser et gérer tous ses sites web depuis son espace client OVHcloud"
 excerpt: "Découvrez comment consulter et gérer l'ensemble de vos sites web depuis votre espace client OVHcloud"
-updated: 2025-05-26
+updated: 2025-05-27
 ---
 
 ## Objectif
 
-La vue `Sites internet` (ou `Websites`) permet de centraliser l'affichage de l'ensemble de vos sites web, indépendamment de leur hébergement. Elle facilite le suivi des fonctionnalités activées pour chaque site web et donne un accès rapide aux actions essentielles. Cette interface est particulièrement utile pour les agences ou les professionnels du web qui gèrent un grand nombre de domaines répartis sur plusieurs hébergements.
+La vue `Sites internet` permet de centraliser l'affichage de l'ensemble de vos sites web, indépendamment de leur hébergement. Elle facilite le suivi des fonctionnalités activées pour chaque site web et donne un accès rapide aux actions essentielles. Cette interface est particulièrement utile pour les agences ou les professionnels du web qui gèrent un grand nombre de domaines répartis sur plusieurs hébergements.
 
 **Découvrez comment visualiser et gérer tous vos sites web depuis votre espace client.**
 
@@ -21,7 +21,7 @@ La vue `Sites internet` (ou `Websites`) permet de centraliser l'affichage de l'e
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans le menu de gauche, cliquez sur `Sites internet`{.action}. Un tableau s'affiche, regroupant l'ensemble de vos sites web et de leurs principales informations.
 
-![website_view](images/website_view_tab.png){.thumbnail}
+![vue_sites_internet](images/website_view_tab.png){.thumbnail}
 
 #### Nom de Domaine
 

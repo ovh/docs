@@ -1,7 +1,7 @@
 ---
 title: 'Activer et configurer le Edge Network Firewall'
 excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Objectif
@@ -9,6 +9,11 @@ updated: 2025-04-28
 Pour protéger les services des clients exposés sur les adresses IP publiques, OVHcloud propose un pare-feu sans état (*stateless*) qui est configuré et intégré à l’**infrastructure anti-DDoS** : le Edge Network Firewall. Il permet de limiter l’exposition des services aux attaques DDoS, en supprimant des flux réseau spécifiques qui peuvent provenir de l’extérieur du réseau OVHcloud.
 
 **Ce guide vous explique comment configurer le Edge Network Firewall pour vos services.**
+
+> [!warning]
+>
+> **Avertissement** : la fonctionnalité « Centre de Scrubbing: mode permanent » atteint sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
+>
 
 > [!primary]
 >

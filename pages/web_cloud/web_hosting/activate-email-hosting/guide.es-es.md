@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Activar las direcciones de correo incluidas"
 excerpt: "Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web"
-updated: 2024-12-12
+updated: 2025-06-03
 ---
 
 ## Objetivo

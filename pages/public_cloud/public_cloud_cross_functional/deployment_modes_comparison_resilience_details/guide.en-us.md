@@ -79,7 +79,7 @@ Services and data are protected against localised incidents thanks to effective 
 
 | Specification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
-| **Redundancy Type**   | Redundancy on the infrastructure side (power, network, and cooling).</br> Local data replication within the zone for resilience.                                        |
+| **Redundancy Type**   | Redundancy on the infrastructure side (power, network, and cooling).<br> Local data replication within the zone for resilience.                                        |
 | **Fault Tolerance**   | Protects against disk and server failures, but not against total data centre failure.           |
 | **Data protection** | Data replicated within the AZ to guarantee local resilience.                                    |
 | **Limits** | No inter-regional or inter-zone protection; dependent on a single AZ.                                    |
@@ -141,7 +141,7 @@ This configuration ensures high availability of services, even in the event of t
 
 | Specification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
-| **Type of redundancy**      | Infrastructure redundancy (power, network and cooling) on 3 separate sites using the 3AZ model, increasing availability and fault tolerance. </br> Enable inter-zone data replication for resilience                 |
+| **Type of redundancy**      | Infrastructure redundancy (power, network and cooling) on 3 separate sites using the 3AZ model, increasing availability and fault tolerance. <br> Enable inter-zone data replication for resilience                 |
 | **Fault tolerance** | Guarantees resilience against the loss of an entire zone, with automatic failover.                      |
 | **Data protection** | Data replicated synchronously between zones to guarantee continuous availability. |
 | **Limits** | Does not protect against complete regional failure; requires multi-regional architecture for maximum resilience. |
@@ -204,7 +204,7 @@ Each Local Zone operates as a single availability zone with a limited set of ser
 
 | Advantage        | Description                                           |
 |------------------|-------------------------------------------------------|
-| **Type of redundancy**      | Redundancy on the infrastructure side (power, network, and cooling). </br> Local data replication within the zone for resilience.             |
+| **Type of redundancy**      | Redundancy on the infrastructure side (power, network, and cooling). <br> Local data replication within the zone for resilience.             |
 | **Fault tolerance**  | Guarantees continuity of operations in the event of a disk or server failure within the zone, but does not protect against a total failure of the availability zone. |
 | **Data protection**| Data replicated in the zone to guarantee local availability. |
 | **Limits**| No protection against global or regional failures, dependent on a single Local Zone. |

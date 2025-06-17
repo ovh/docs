@@ -10,9 +10,9 @@ updated: 2024-07-17
 
 ## Obiettivo
 
-Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più rapido per gli Snapshot. Permette un ridimensionamento verso modelli superiori o inferiori con spazio di storage fisso, mentre i modelli classici possono essere ridimensionati solo verso modelli superiori.</br> Con un'infrastruttura in costante evoluzione, potresti aver bisogno di aumentare lo spazio di storage della tua istanza. In questo caso, è necessario spostare l'istanza *flex* verso un modello classico. Questa operazione è possibile solo dall'interfaccia Horizon.
+Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più rapido per gli Snapshot. Permette un ridimensionamento verso modelli superiori o inferiori con spazio di storage fisso, mentre i modelli classici possono essere ridimensionati solo verso modelli superiori.<br> Con un'infrastruttura in costante evoluzione, potresti aver bisogno di aumentare lo spazio di storage della tua istanza. In questo caso, è necessario spostare l'istanza *flex* verso un modello classico. Questa operazione è possibile solo dall'interfaccia Horizon.
 
-</br>**Questa guida ti mostra come passare da un modello *flex* a un modello classico e ridimensionare la tua istanza *flex* dall'interfaccia OpenStack Horizon.**
+<br>**Questa guida ti mostra come passare da un modello *flex* a un modello classico e ridimensionare la tua istanza *flex* dall'interfaccia OpenStack Horizon.**
 
 ## Prerequisiti
 

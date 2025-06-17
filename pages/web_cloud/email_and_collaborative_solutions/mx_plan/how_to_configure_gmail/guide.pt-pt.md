@@ -28,7 +28,7 @@ Os endereços de e-mail da oferta MX Plan podem ser configurados em diferentes p
 > Esta documentação foi realizada a partir da nova interface do Gmail. Se as imagens forem um pouco diferentes da sua versão, as instruções permanecerão as mesmas e poderão ser seguidas.
 >
 
-## Na Prática
+## Instruções
 
 ### Etapa 1: adicionar a conta de e-mail OVHcloud na interface do Gmail
 
@@ -102,7 +102,7 @@ Para enviar uma mensagem com o seu endereço de e-mail OVHcloud a partir da inte
 
 Tenha em conta que pode sempre utilizar a nossa interface online, acessível a partir do endereço [Webmail](/links/web/email), para aceder ao seu endereço de e-mail OVHcloud. Pode ligar-se a ele graças aos dados de acesso.
 
-## Vá mais longe
+## Quer saber mais?
 
 > [!primary]
 >

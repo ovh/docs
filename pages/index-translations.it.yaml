@@ -104,19 +104,18 @@ public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutor
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
-public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Technical resources
 public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
-public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
-public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: User guides
 public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
 public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup and Restore
 public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
 public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
 public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
-public-cloud-containers-orchestration-managed-kubernetes-k8s-gpu: GPU
 public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
-public-cloud-containers-orchestration-managed-kubernetes-k8s-serverless: Serverless
 public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
+public-cloud-containers-orchestration-managed-kubernetes-k8s-general-information: General Information
+public-cloud-containers-orchestration-managed-kubernetes-k8s-cluster: Cluster
+public-cloud-containers-orchestration-managed-kubernetes-k8s-nodepools-and-nodes: Nodepools & Nodes
+public-cloud-containers-orchestration-managed-kubernetes-k8s-workloads: Workloads
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (MPR)
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
@@ -149,9 +148,9 @@ public-cloud-databases-mysql-tutorials: MySQL - Tutorials
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
-public-cloud-databases-redis: Caching/Valkey
-public-cloud-databases-redis-guides: Caching/Valkey - Guides
-public-cloud-databases-redis-tutorials: Caching/Valkey - Tutorials
+public-cloud-databases-redis: Valkey
+public-cloud-databases-redis-guides: Valkey - Guides
+public-cloud-databases-redis-tutorials: Valkey - Tutorials
 public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
@@ -180,6 +179,7 @@ public-cloud-cross-functional: Public Cloud - Informazioni generali
 public-cloud-cross-functional-getting-started: Per iniziare
 public-cloud-cross-functional-general-information: Informazioni generali
 public-cloud-cross-functional-project-management: Gestione dei progetti Public Cloud
+public-cloud-cross-functional-migration: Migrazione
 public-cloud-cross-functional-tutorials: Tutorials
 public-cloud-cross-functional-services-management: Gestione dei servizi
 public-cloud-cross-functional-horizon: Gestione via Horizon
@@ -349,3 +349,4 @@ observability-logs-data-platform-visualizing-querying-exploiting: Visualizing, q
 observability-logs-data-platform-opensearch-index: OpenSearch Index as a service
 observability-logs-data-platform-security-conformity: Security and conformity
 observability-logs-data-platform-usecases: Usecases
+observability-logs-data-platform-services-logs: OVHcloud Service Logs

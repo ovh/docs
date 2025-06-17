@@ -40,7 +40,7 @@ Ces droits sont accordés depuis l'[espace client OVHcloud](/links/manager).
 <summary>Comment accéder à votre Hosted Private Cloud - VMware On OVHcloud ?</summary>
 
 Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet <code class="action">Hosted Private Cloud</code>.
-</br></br>
+<br><br>
 
 - Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/pcc-xxx-xxx-xxx-xxx > Remplacez-le par le nom de votre service VMware on OVHcloud.
 
@@ -55,7 +55,7 @@ Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet <code class
 <summary>Comment activer l'interface NSX-T pour votre utilisateur ?</summary>
 
 Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez accéder à l'interface Web NSX-T : 
-</br></br>
+<br><br>
 
 <code class="action">VMware</code> > <code class="action">PCC-XXX.XXX.XXX.XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
 
@@ -86,13 +86,13 @@ Il ne vous reste plus que à modifier les droits de chaque Datacenter souhaité 
 
 Une fenetre s'ouvre alors. Choisissez les droits nécessaires parmi les 3 sections principales > <code class="action">Accès vSphere</code> / <code class="action">Accès au vmNetwork</code> / <code class="action">Accès aux V(x)Lans</code>.
 
-</br></br>
+<br><br>
 Les droits suivants sont disponibles : <strong>Operateur</strong> / <strong>Administrateur</strong> / <strong>Aucun</strong> / <strong>Lecture seule</strong>
-</br></br>
+<br><br>
 Uniquement l'accès aux <code class="action">V(x)Lans</code> en <strong>Lecture seule</strong> est nécessaire pour accéder à l'interface Web NSX-T.
-</br></br>
+<br><br>
 Choisissez <code class="action">Lecture seule</code>.
-</br></br>
+<br><br>
 Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits supplémentaires seront alors nécessaires, tels que <strong>Opérateur</strong> ou <strong>Administrateur</strong>.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_8.png" loading="lazy"></p>
@@ -105,7 +105,7 @@ Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits su
 <summary>Comment accéder à l'interface Web NSX-T ?</summary>
 
 Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code>.
-</br></br>
+<br><br>
 - Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Remplacez PCC-XXX-XXX-XXX-XXX par le nom de votre service PCC.
 
 <p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_9.png" loading="lazy"></p>

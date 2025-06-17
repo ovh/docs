@@ -19,7 +19,7 @@ Plesk ist ein einfach zu verwendendes Server-Verwaltungsinterface. Sie können e
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](/pages/public_cloud/compute/create_a_public_cloud_project).
+- Sie verfügen über eine [Public Cloud Instanz](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 - Sie haben [administrativen Zugriff](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
 
 ## In der praktischen Anwendung

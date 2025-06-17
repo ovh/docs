@@ -2,3 +2,12 @@ id: f88c878c-0179-4c5a-a464-32aef9f9e910
 full_slug: dedicated-email-infrastructure-responsibility-sharing
 reference_category: account-and-service-management-responsibility-sharing
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

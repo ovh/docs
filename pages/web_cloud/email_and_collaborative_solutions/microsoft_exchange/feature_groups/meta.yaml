@@ -1,3 +1,8 @@
 id: 5d0bb7a1-ea66-4ad5-9c4e-3e9f2f3293f3
 full_slug: exchange-contacts-groups
 translation_banner: true
+disable_languages:
+- en-asia
+- en-au
+- en-sg
+- en-in

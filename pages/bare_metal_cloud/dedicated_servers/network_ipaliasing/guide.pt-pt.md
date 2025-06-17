@@ -19,7 +19,7 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 >
 > A OVHcloud oferece-lhe serviços pelos quais é responsável. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/). Mais informações na secção « Ir mais longe » deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Mais informações na secção « Ir mais longe » deste guia.
 >
 
 ## Requisitos

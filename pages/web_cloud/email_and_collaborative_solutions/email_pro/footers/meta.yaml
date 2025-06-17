@@ -1,3 +1,12 @@
 id: 71ba973a-b0b8-4757-87d4-f3dbf6270e53
 full_slug: email-pro-automatic-signature
 translation_banner: true
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-in
+- en-us
+- es-us

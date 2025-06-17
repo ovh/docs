@@ -1,7 +1,7 @@
 ---
 title: "Nome de domínio - Como alterar o titular?"
 excerpt: "Saiba como alterar o titular de um domínio ou atualizar as informações associadas ao mesmo"
-updated: 2025-04-28
+updated: 2025-06-11
 ---
 
 ## Objetivo
@@ -24,7 +24,7 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}
 - Ter um nome de domínio registado na OVHcloud e para o qual não está em curso nenhuma operação (mudança de titular, transferência, criação). Se uma operação foi finalizada recentemente no seu domínio, é necessário aguardar pelo menos 60 dias de calendário antes de realizar uma nova operação.
-- Ser o [contacto administrador](/pages/account_and_service_management/account_information/managing_contacts) do respetivo nome de domínio.
+- A sua conta de cliente é [contacto administrador e de faturação](/pages/account_and_service_management/account_information/managing_contacts) do respetivo nome de domínio.
 - Ter o consentimento do titular atual do nome de domínio para realizar a alteração de titular.
 
 ## Instruções
@@ -59,7 +59,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **7** etapas.
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínio`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
@@ -124,8 +124,8 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **7** etapas.
 
 [Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

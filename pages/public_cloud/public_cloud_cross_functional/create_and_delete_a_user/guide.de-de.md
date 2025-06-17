@@ -16,7 +16,7 @@ Mithilfe des Horizon-Interface kann jedem Benutzer ein Passwort zugewiesen werde
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](/pages/public_cloud/compute/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
+- Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

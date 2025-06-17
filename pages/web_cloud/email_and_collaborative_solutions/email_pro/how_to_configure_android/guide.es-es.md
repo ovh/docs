@@ -36,7 +36,7 @@ Las direcciones de correo electrónico de la solución Email Pro pueden configur
 >
 > Esta documentación se ha realizado desde un dispositivo que utiliza la versión 13 de Android.
 
-## En la práctica
+## Procedimiento
 
 ### Cómo añadir una cuenta de correo
 

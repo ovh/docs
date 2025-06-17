@@ -185,7 +185,7 @@ Wenn Ihr E-Mail-Client installiert ist, folgen Sie den nachstehenden Anweisungen
 > **macOS Mail**
 >>
 >> Erstellen Sie mit Mail auf macOS einen Ordner, der in der linken Spalte im Abschnitt "Auf meinem Mac" erscheint. Folgen Sie hierzu der Dokumentation von Apple:<br><br>
->>> - [Mailbox Mac](https://support.apple.com/de-de/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
+>> - [Mailbox Mac](https://support.apple.com/de-de/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>

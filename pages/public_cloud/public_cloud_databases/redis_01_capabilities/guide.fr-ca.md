@@ -1,12 +1,12 @@
 ---
-title: Caching/Valkey - Capacités et limites (EN)
-excerpt: Discover the capabilities and limitations of Public Cloud Databases for Caching/Valkey
+title: Valkey - Capacités et limites (EN)
+excerpt: Discover the capabilities and limitations of Public Cloud Databases for Valkey
 updated: 2025-05-05
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases for Caching/Valkey offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases for Valkey offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
@@ -26,7 +26,7 @@ The Public Cloud Databases offer is available in the following regions:
 
 Database nodes have to be in the same region. Multi-AZ is currently not supported.
 
-### Caching/Valkey versions
+### Valkey versions
 
 The Public Cloud Databases offer uses the following Redis® open source and Valkey versions:
 
@@ -36,7 +36,7 @@ The Public Cloud Databases offer uses the following Redis® open source and Valk
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Redis® release cycle on their official page: <https://redis.io/topics/releases>
 
-### Caching/Valkey clients
+### Valkey clients
 
 You can use any of the [clients recommended by Redis®](https://redis.io/clients){.external} to access your instance.
 
@@ -79,7 +79,7 @@ For information on node types and pricing, please refer to the [price page](http
 ### Features
 
 #### Network
-Caching/Valkey clusters are reachable through default port 20182.
+Valkey clusters are reachable through default port 20182.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
@@ -102,7 +102,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for Caching/Valkey depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
+The number of simultaneous connections in Public Cloud Databases for Valkey depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
 
 So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672 simultaneous connections.
 

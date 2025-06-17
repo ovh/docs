@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Korzystanie z Cyberduck na moim hostingu"
 excerpt: "Dowiedz się, jak korzystać z aplikacji Cyberduck, aby zalogować się do hostingu OVHcloud"
-updated: 2024-02-26
+updated: 2025-06-10
 ---
 
 ## Wprowadzenie
@@ -22,13 +22,17 @@ Aby pobrać Cyberduck, przejdź do [oficjalnej strony](https://cyberduck.io/) ap
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) lub skontaktowanie się z wydawcą usługi. Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
 >
 
 ## Wymagania początkowe
 
 - Posiadanie [hostingu web](/links/web/hosting){.external}.
 - Pobranie i zainstalowanie aplikacji Cyberduck na komputerze.
+
+> [!primary]
+>
+> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php){.external} lub [Cyberduck](https://cyberduck.io/){.external}.
 
 ## W praktyce
 
@@ -79,7 +83,7 @@ Aby zalogować się do przestrzeni hostingu, wykonaj następujące kroki:
 
 > [!success]
 >
-> - Możesz zarejestrować hasło w Cyberduck zaznaczając opcję "Add to keychain`{.action}. Jeśli nie zaznaczysz tego pola, wprowadź hasło, aby zalogować się ponownie do Twojej przestrzeni hostingowej.
+> - Możesz zarejestrować hasło w Cyberduck zaznaczając opcję `Add to keychain`{.action}. Jeśli nie zaznaczysz tego pola, wprowadź hasło, aby zalogować się ponownie do Twojej przestrzeni hostingowej.
 > - Jeśli nie znasz wszystkich swoich danych FTP (serwer, dane do logowania, etc.), zapoznaj się z przewodnikiem "[Logowanie do przestrzeni dyskowej FTP Twojego hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 > 
 

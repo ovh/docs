@@ -36,7 +36,7 @@ Eine *OpenRC*-Datei entspricht einem User und einer Zone. Sie können nicht mehr
 Laden Sie den Inhalt der Datei in die bestehende Umgebung. Sie werden dann nach dem Passwort des Benutzers gefragt:
 
 ```bash
-admin@vpsxxxxxx:~$ source openrc.sh
+admin@remote_host:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
@@ -75,4 +75,4 @@ set OS_PASSWORD="Ihr Benutzerpasswort"
 
 [OpenStack Dokumentation](https://docs.openstack.org/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

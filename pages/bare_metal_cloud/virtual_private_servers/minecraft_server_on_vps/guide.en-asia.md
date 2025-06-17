@@ -1,26 +1,26 @@
 ---
 title: 'How to create a Minecraft server on a VPS'
 excerpt: 'Find out how to install your own Minecraft server'
-updated: 2021-06-29
+updated: 2025-06-06
 ---
 
 ## Objective
 
 Minecraft is a popular sandbox video game. It needs to be hosted on a server if you wish to play in multiplayer.
 
-You can rent a pre-built Minecraft server or you can set it up yourself on a [VPS](https://www.ovhcloud.com/asia/vps/) or on a [dedicated server](https://www.ovhcloud.com/asia/bare-metal/){.external}. This will reduce the cost and give you full control over your game instance.
+You can rent a pre-built Minecraft server or you can set it up yourself on a [VPS](/links/bare-metal/vps) or on a [dedicated server](/links/bare-metal/bare-metal). This will reduce the cost and give you full control over your game instance.
 
 **This tutorial explains how to launch a Minecraft Java Edition server on an OVHcloud VPS and test its connectivity.**
 
 > [!warning]
->This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. ou may need to adapt the instructions according to your situation.
+> This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. ou may need to adapt the instructions according to your situation.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
+> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
-- A [Virtual Private Server](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
+- A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - A GNU/Linux distribution installed on the server
 - Administrative access (sudo) via SSH to your server
 - A basic understanding of GNU/Linux administration
@@ -28,7 +28,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 ## Instructions
 
 > [!primary]
-> This tutorial is based on version "1.17" of Minecraft Java Edition and OpenJDK version "16.0.1".
+> This tutorial is based on version "1.21" of Minecraft Java Edition and OpenJDK version "24.0.1".
 >
 
 ### Step 1: Prepare the server
@@ -41,29 +41,29 @@ Once the OS is installed, connect to your VPS with SSH as described in the [Gett
 First update the packages to their latest versions:
 
 ```sh
-~$ sudo apt update
+$ sudo apt update
 ```
 
 ```sh
-~$ sudo apt full-upgrade
+$ sudo apt full-upgrade
 ```
 
 Use the following command to ensure all required packages are installed. 
 
 ```sh
-~$ sudo apt install screen nano wget git
+$ sudo apt install screen nano wget git
 ```
 
 Install the Java package:
 
 ```sh
-~$ sudo apt install openjdk-16-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 To avoid security vulnerabilities on your system, create a user named "minecraft" who will carry out the server actions:
 
 ```sh
-~$ sudo adduser minecraft --disabled-login --disabled-password
+$ sudo adduser minecraft --disabled-password
 ```
 
 Simply press the `Enter`{.action} key to skip filling in the usual account information.
@@ -73,7 +73,7 @@ The user is now created. Note that no password was specified for this user. This
 Switch to the new user:
 
 ```sh
-~$ sudo su - minecraft
+$ sudo su - minecraft
 ```
 
 > [!primary]
@@ -84,7 +84,7 @@ Switch to the new user:
 To complete the setup preparations, create a folder named `server`.
 
 ```sh
-~$ mkdir ~/server && cd ~/server
+$ mkdir ~/server && cd ~/server
 ```
 
 ### Step 2: Install your Vanilla Minecraft server
@@ -94,9 +94,9 @@ To complete the setup preparations, create a folder named `server`.
 > A "Vanilla" server is an instance without any add-ons or plugins. You will experience the game the way it was created by the developers.
 >
 
-First you will need to copy/paste the download link for the server software. On the official [Minecraft website](https://minecraft.net/download/server), right-click on the download link and select `Copy Link Location`{.action} from the context menu.
+First you will need to copy/paste the download link for the server software. On the official [Minecraft website](https://minecraft.net/download/server){.external}, right-click on the download link and select `Copy Link`{.action} from the context menu.
 
-![Server download](images/download_jar.png){.thumbnail}
+![Server download](images/jar_file_download.png){.thumbnail}
 
 Back in your command line terminal, make sure you are still in the `server` folder and use `wget` to download the file. Replace `download_link` with the actual URL from your clipboard.
 
@@ -110,7 +110,7 @@ Before launching the server, you need to agree to the End User License Agreement
 ~/server$ echo "eula=true" > eula.txt
 ```
 
-A file named `eula.txt` is now located at the root level of your server, containing the line `eula=true`. This will tell the software that you accept the Minecraft EULA. We invite you to review the terms and conditions on the [Minecraft website](https://www.minecraft.net/).
+A file named `eula.txt` is now located at the root level of your server, containing the line `eula=true`. This will tell the software that you accept the Minecraft EULA. We invite you to review the terms and conditions on the [Minecraft website](https://www.minecraft.net/){.external}.
 
 Your server can now be started.
 
@@ -141,14 +141,31 @@ You can also press `Ctrl`{.action}, then `a`{.action}, then `n`{.action} on your
 In the previously created `minecraft1` shell, launch the Minecraft server with the following command. (Use `ls` to verify the filename in case it differs.) 
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: This sets the server to start up with 1024 MB or 1 GB of RAM. This limit can be increased if you want your server to start up with more RAM.
+- `Xms1024M`: This sets the server to use a maximum of 1024M RAM. You can increase this limit if you want your server to run with more RAM, to accommodate more players, or if you have the impression that your server is running slowly.
+- `jar`: Specifies which server jar file to run. 
+- `nogui`: This instructs the server not to launch a GUI, since it's a server and you don't have a GUI.
+
+Alternatively, you can use the command below instead:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Once the server is operational, you will get the following result:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 To shut down your server, enter the command `stop`.
 
 ### Step 3: Connect to the server
 
-Your server instance is now functional. To play the game, download the Minecraft client from the official [Minecraft website](https://www.minecraft.net/).
+Your server instance is now functional. To play the game, download the Minecraft client from the official [Minecraft website](https://www.minecraft.net/){.external}.
 
 Install and launch the client for your operating system and sign in.
 
@@ -160,11 +177,11 @@ On the next screen, enter the server name in the field `Server Name`, and the IP
 
 By default, no port needs to be specified.
 
-## Conclusion
+### Conclusion
 
 Your Vanilla Minecraft server is now installed on your VPS.
 
-Please note that this installation guide should also work on an OVHcloud [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) or a [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/) instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
+Please note that this installation guide should also work on an OVHcloud [dedicated server](/links/bare-metal/bare-metal) or a [Public Cloud](/links/public-cloud/compute) instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
 
 ## Go further <a name="gofurther"></a>
 
