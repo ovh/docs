@@ -19,7 +19,7 @@ Par exemple, supposons que vous voulez créer un marché dans lequel vous, en ta
 
 La première partie, en tant que développeur d'applications, consiste à enregistrer votre application sur OVHcloud.
 
-Pour ce faire, accédez à l'[API OVHcloud](https://ca.api.ovh.com/createApp/){.external}
+Pour ce faire, accédez à l'[API OVHcloud](/links/apicreateApp/){.external}
 
 Vous devrez vous connecter et définir un nom et une description de l'application.
 
@@ -51,7 +51,7 @@ Supposons qu'un client naviguant sur votre marché sélectionne un service à d�
 
 La première étape consiste pour votre application à demander des autorisations sur l'API du client.
 
-Pour ce faire, votre application demandera des informations d'identification en appelant https://ca.api.ovh.com/console/#/auth/credential#POST et en transmettant comme argument une liste de points de terminaison auxquels l'application doit avoir accès.
+Pour ce faire, votre application demandera des informations d'identification en appelant /links/apiconsole/#/auth/credential#POST et en transmettant comme argument une liste de points de terminaison auxquels l'application doit avoir accès.
 
 <!--
 Application Name: maketplace
@@ -68,7 +68,7 @@ Exemple avec curl avec une demande d'accès à "GET /me".
 export AK=FpAgU1C1fpnbyxoL
 export REDIRECT_URL=https://webhook.site/586c652e-061e-453f-bd71-51912e33419d # usefull for debug
 
-curl -H "Content-type: application/json" -H "X-Ovh-Application: $AK" -d '{"redirection": "$REDIRECT_URL", "accessRules": [{"method": "GET", "path": "/me"}]}' https://ca.api.ovh.com/1.0/auth/credential
+curl -H "Content-type: application/json" -H "X-Ovh-Application: $AK" -d '{"redirection": "$REDIRECT_URL", "accessRules": [{"method": "GET", "path": "/me"}]}' /links/api1.0/auth/credential
 ```
 
 Le résultat de cet appel sera un dictionnaire JSON
@@ -77,7 +77,7 @@ Le résultat de cet appel sera un dictionnaire JSON
 {
   "state":"pendingValidation",
   "consumerKey":"5DU984kYxyoAe4lRaevZCGnmt9FVnKT2",
-  "validationUrl":"https://ca.api.ovh.com/auth/?credentialToken=RAXoRq9FvUQFI1S6hE0HmkySyVp8aDWwIqBA3fYrOr0vVSMdpjqxFqp3IjyjGAfu"
+  "validationUrl":"/links/apiauth/?credentialToken=RAXoRq9FvUQFI1S6hE0HmkySyVp8aDWwIqBA3fYrOr0vVSMdpjqxFqp3IjyjGAfu"
 ```
 
 En tant que développeur, vous devez enregistrer la "ConsumerKey", plus tard appelée "CK". Cette clé sera utilisée pour signer les demandes d'API OVHcloud pour le compte de votre client.

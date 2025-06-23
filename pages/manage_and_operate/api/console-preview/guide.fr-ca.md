@@ -6,7 +6,7 @@ updated: 2023-03-27
 
 ## Objectif
 
-Les API disponibles sur [https://ca.api.ovh.com/](/links/api){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
+Les API disponibles sur [/links/api](/links/api){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
 
 **Découvrez comment explorer les API OVHcloud à travers notre nouvelle console.**
 
@@ -48,8 +48,8 @@ Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site gr
 
 Plusieurs branches des API OVHcloud sont disponibles :
 
-- **V1** : l'API disponible à l'URL [https://ca.api.ovh.com/v1](https://ca.api.ovh.com/v1)
-- **V2** : la nouvelle API OVHcloud, disponible à l'URL [https://ca.api.ovh.com/v2](https://ca.api.ovh.com/v2)
+- **V1** : l'API disponible à l'URL [/links/apiv1](/links/apiv1)
+- **V2** : la nouvelle API OVHcloud, disponible à l'URL [/links/apiv2](/links/apiv2)
 
 La branche d'API peut être sélectionnée à l'aide du menu déroulant en haut à gauche de la console.
 

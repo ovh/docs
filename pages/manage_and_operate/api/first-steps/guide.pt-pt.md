@@ -132,7 +132,7 @@ Os separadores `PHP` e `Python` contêm os elementos que devem ser adicionados n
 
 Qualquer aplicação que pretenda comunicar com a API da OVHcloud deve ser declarada previamente.
 
-Para isso, clique na seguinte ligação: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+Para isso, clique na seguinte ligação: [/links/apicreateToken/](/links/apicreateToken/){.external}.
 
 Indique o seu ID de cliente, a sua palavra-passe e o nome da sua aplicação. O nome será útil mais tarde se quiser autorizar outras pessoas a utilizá-lo.
 

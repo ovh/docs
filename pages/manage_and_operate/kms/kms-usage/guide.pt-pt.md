@@ -89,7 +89,7 @@ You can now use the Swagger UI interactively.
 
 ### Creating an encryption key via API
 
-Key creation can be performed either through the [OVHcloud API](https://eu.api.ovh.com/console/?section=%2Fokms&branch=v2) or on the specific OVHcloud KMS API. There is no difference on the result from the creation method.
+Key creation can be performed either through the [OVHcloud API](/links/apiconsole/?section=%2Fokms&branch=v2) or on the specific OVHcloud KMS API. There is no difference on the result from the creation method.
 
 In the case of the specific OVHcloud KMS API, you can create a key using the following API:
 

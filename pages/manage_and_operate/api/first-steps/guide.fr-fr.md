@@ -128,7 +128,7 @@ Les onglets `PHP` et `Python` contiennent les éléments à ajouter dans votre s
 
 Toute application souhaitant communiquer avec l'API OVHcloud doit être déclarée à l'avance.
 
-Pour ce faire, cliquez sur le lien suivant : [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+Pour ce faire, cliquez sur le lien suivant : [/links/apicreateToken/](/links/apicreateToken/){.external}.
 
 Renseignez votre identifiant client, votre mot de passe et le nom de votre application. Le nom sera utile plus tard si vous voulez autoriser d'autres personnes à l'utiliser.
 

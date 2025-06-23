@@ -128,7 +128,7 @@ The `PHP` and `Python` tabs contain the elements to be added to your script acco
 
 Any application that wants to communicate with the OVHcloud API must be declared in advance.
 
-To do this, click the following link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+To do this, click the following link: [/links/apicreateToken/](/links/apicreateToken/){.external}.
 
 Fill in your OVHcloud customer ID, password, and application name. The name will be useful later if you want to allow others to use it.
 

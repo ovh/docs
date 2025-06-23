@@ -132,7 +132,7 @@ Las pestañas `PHP` y `Python` contienen los elementos que se añadirán al scri
 
 Todas las aplicaciones que quieran comunicarse con la API de OVHcloud deben notificarse con antelación.
 
-Para ello, haga clic en el siguiente enlace: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+Para ello, haga clic en el siguiente enlace: [/links/apicreateToken/](/links/apicreateToken/){.external}.
 
 Introduzca su identificador de cliente, su contraseña y el nombre de su aplicación. El nombre será útil más adelante si desea permitir que otras personas lo usen.
 

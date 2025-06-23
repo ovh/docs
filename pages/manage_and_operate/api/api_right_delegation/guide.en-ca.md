@@ -20,7 +20,7 @@ As an example, let's assume that you want to create a marketplace in which you, 
 
 The first part, as the application developer, is to register your application on OVHcloud.
 
-To do so, go to [OVHcloud API](https://ca.api.ovh.com/createApp/){.external}.
+To do so, go to [OVHcloud API](/links/apicreateApp/){.external}.
 
 You will need to log in and set an application name and description.
 
@@ -52,7 +52,7 @@ Let's assume that a customer browsing your marketplace selects a service to depl
 
 The first step is for your application to request permissions on the customer's API.
 
-To do so, your application will request credentials by calling https://ca.api.ovh.com/console/#/auth/credential#POST and passing as argument a list of endpoints the application needs access to.
+To do so, your application will request credentials by calling /links/apiconsole/#/auth/credential#POST and passing as argument a list of endpoints the application needs access to.
 
 <!--
 Application Name: maketplace
@@ -69,7 +69,7 @@ Example with curl with an access request to `GET /me`.
 export AK=FpAgU1C1fpnbyxoL
 export REDIRECT_URL=https://webhook.site/586c652e-061e-453f-bd71-51912e33419d # usefull for debug
 
-curl -H "Content-type: application/json" -H "X-Ovh-Application: $AK" -d '{"redirection": "$REDIRECT_URL", "accessRules": [{"method": "GET", "path": "/me"}]}' https://ca.api.ovh.com/1.0/auth/credential
+curl -H "Content-type: application/json" -H "X-Ovh-Application: $AK" -d '{"redirection": "$REDIRECT_URL", "accessRules": [{"method": "GET", "path": "/me"}]}' /links/api1.0/auth/credential
 ```
 
 The result of that call will be a JSON dictionary
@@ -78,7 +78,7 @@ The result of that call will be a JSON dictionary
 {
   "state":"pendingValidation",
   "consumerKey":"5DU984kYxyoAe4lRaevZCGnmt9FVnKT2",
-  "validationUrl":"https://ca.api.ovh.com/auth/?credentialToken=RAXoRq9FvUQFI1S6hE0HmkySyVp8aDWwIqBA3fYrOr0vVSMdpjqxFqp3IjyjGAfu"
+  "validationUrl":"/links/apiauth/?credentialToken=RAXoRq9FvUQFI1S6hE0HmkySyVp8aDWwIqBA3fYrOr0vVSMdpjqxFqp3IjyjGAfu"
 ```
 
 As the developer, you have to store the `consumerKey`, later refered as `CK`. This key will be used to sign the OVHcloud API requests on behalf of your customer.
