@@ -44,7 +44,7 @@ ResNet has many variants that work on the same concept but have different number
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account
+- An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for AI Notebooks
 
 ## Instructions
@@ -147,7 +147,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - If you want to deploy a Gradio app for **Image classification** or **Sketch recognition**, check out this [documentation](/pages/public_cloud/ai_machine_learning/deploy_tuto_05_gradio_sketch_recognition).
 - If you are interested in **Computer Vision**, familiarise yourself with Object Detection by following this [tutorial](/pages/public_cloud/ai_machine_learning/notebook_tuto_04_yolov5).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

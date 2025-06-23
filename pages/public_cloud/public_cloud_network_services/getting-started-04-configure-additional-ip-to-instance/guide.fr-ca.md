@@ -23,8 +23,8 @@ Vous devrez peut-être configurer des adresses Additional IP sur vos instances, 
 
 ## Prérequis
 
-- une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
-- une [adresse Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/) ou un bloc Additional IP
+- une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+- une [adresse Additional IP](/links/bare-metal/ip) ou un bloc Additional IP
 - un accès administrateur (sudo) via SSH ou GUI à votre instance
 - des connaissances de base sur les réseaux et leur administration
 
@@ -303,6 +303,6 @@ Pour tester la connexion, il vous suffit d'envoyer un ping à votre adresse Addi
 
 [Basculer une Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

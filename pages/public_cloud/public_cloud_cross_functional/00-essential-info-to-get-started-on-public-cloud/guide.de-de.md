@@ -56,7 +56,7 @@ Die Ressourcen sind in unseren verschiedenen Rechenzentren weltweit verfügbar. 
 
 ### Cloud-Anbieter auf einem ausgereiften Markt
 
-Die OVHcloud Public Cloud ist neben bekannten Cloud-Anbietern wie AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (von Microsoft) oder Alibaba Cloud positioniert. Unser Angebot zeichnet sich durch [besonders günstige Preise](https://www.ovhcloud.com/de/public-cloud/prices/) und die Verwendung von Standard-APIs aus, die unseren Nutzern Änderungen erlauben, ohne sich einer einzelnen proprietären Technologie unterwerfen zu müssen.
+Die OVHcloud Public Cloud ist neben bekannten Cloud-Anbietern wie AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (von Microsoft) oder Alibaba Cloud positioniert. Unser Angebot zeichnet sich durch [besonders günstige Preise](/links/public-cloud/prices) und die Verwendung von Standard-APIs aus, die unseren Nutzern Änderungen erlauben, ohne sich einer einzelnen proprietären Technologie unterwerfen zu müssen.
 
 ## Konkreter Ansatz <a name="concrete-approach"></a>
 
@@ -126,7 +126,7 @@ Nachfolgend finden Sie grundlegende Wissensressourcen, die Ihnen bei Ihrem Start
 |---|---|
 |[FAQ](/pages/public_cloud/public_cloud_cross_functional/faq_pci)|Die häufigsten Fragen zur Public Cloud.|
 |[Glossar](/pages/public_cloud/public_cloud_cross_functional/introduction_about_instances)|Die Konzepte und Definitionen zur fortgeschrittenen Nutzung.|
-|[Verfügbarkeit der Dienste nach Standort](https://www.ovhcloud.com/de/public-cloud/regions-availability/)|Verfügbarkeitstabellen der Dienste an den verschiedenen Standorten.|
+|[Verfügbarkeit der Dienste nach Standort](/links/public-cloud/regions-pci)|Verfügbarkeitstabellen der Dienste an den verschiedenen Standorten.|
 
 Verwenden Sie folgende Anleitungen, um Informationen zum praktischen Vorgehen zu erhalten:
 
@@ -146,8 +146,8 @@ Einer der großen Vorteile der Verwendung von Standard- und Open-Source-Technolo
 
 |Dokumentation|Beschreibung|
 |---|---|
-|[OpenStack CLI](https://docs.openstack.org/python-openstackclient/stein/#using-openstackclient) (EN)|Die vollständige Dokumentation des essentiellen OpenStack Clients in der Kommandozeile. Dokumentation für die Version "Stein": Nutzen Sie [die Verfügbarkeitstabelle](https://www.ovhcloud.com/de/public-cloud/regions-availability/), um zu sehen, welche Dienstleistungen verfügbar sind.|
-|[OpenStack API](https://docs.openstack.org/stein/api/) (EN)|Die vollständige Dokumentation zu OpenStack für die "Stein"-Version. Nutzen Sie [die Verfügbarkeitstabelle](https://www.ovhcloud.com/de/public-cloud/regions-availability/), um zu sehen, welche Dienstleistungen verfügbar sind.|
+|[OpenStack CLI](https://docs.openstack.org/python-openstackclient/stein/#using-openstackclient) (EN)|Die vollständige Dokumentation des essentiellen OpenStack Clients in der Kommandozeile. Dokumentation für die Version "Stein": Nutzen Sie [die Verfügbarkeitstabelle](/links/public-cloud/regions-pci), um zu sehen, welche Dienstleistungen verfügbar sind.|
+|[OpenStack API](https://docs.openstack.org/stein/api/) (EN)|Die vollständige Dokumentation zu OpenStack für die "Stein"-Version. Nutzen Sie [die Verfügbarkeitstabelle](/links/public-cloud/regions-pci), um zu sehen, welche Dienstleistungen verfügbar sind.|
 |[Benutzer-Dokumentation](https://docs.openstack.org/stein/user/) (EN)|Vollständige Dokumentation für OpenStack-Benutzer in der Version "Stein".|
 |[Entwickler-Dokumentation](https://developer.openstack.org/) (EN)|Dokumentation für Entwickler, die ihre Anwendung mit der OpenStack API verbinden möchten, unter Verwendung der verfügbaren Bibliotheken/SDKs.|
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| Dokumentation des essentiellen CLI-Clients *kubectl*.|

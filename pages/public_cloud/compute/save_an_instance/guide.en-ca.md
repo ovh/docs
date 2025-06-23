@@ -12,7 +12,7 @@ You can create a single backup of an instance or configure a schedule in order t
 
 ## Requirements
 
-- A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

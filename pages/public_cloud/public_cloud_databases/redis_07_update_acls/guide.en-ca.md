@@ -16,7 +16,7 @@ You must therefore use the [OVHcloud API](/pages/manage_and_operate/api/first-st
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account.
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An up and running Public Cloud Database for Valkey.
 
 If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).

@@ -32,7 +32,7 @@ Avant de suivre ces étapes, il est recommandé de consulter d'abord ce guide :
 
 Vous aurez également besoin de :
 
-- posséder une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud ;
+- posséder une [Instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud ;
 - Un utilisateur [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) créé dans votre projet ;
 
 > [!primary]

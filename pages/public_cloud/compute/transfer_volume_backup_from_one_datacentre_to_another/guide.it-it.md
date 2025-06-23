@@ -6,7 +6,7 @@ updated: 2024-01-11
 
 ## Obiettivo
 
-In alcuni casi potrebbe essere necessario spostare volumi aggiuntivi da una Region OpenStack a un'altra, perché è disponibile una nuova Region o perché si desidera migrare da [OVHcloud Labs](https://labs.ovh.com/) al [Public Cloud](https://www.ovhcloud.com/it/public-cloud/).
+In alcuni casi potrebbe essere necessario spostare volumi aggiuntivi da una Region OpenStack a un'altra, perché è disponibile una nuova Region o perché si desidera migrare da [OVHcloud Labs](https://labs.ovh.com/) al [Public Cloud](/links/public-cloud/public-cloud).
 
 **Questa guida ti mostra come migrare un backup di un volume da una Region OpenStack ad un'altra.**
 

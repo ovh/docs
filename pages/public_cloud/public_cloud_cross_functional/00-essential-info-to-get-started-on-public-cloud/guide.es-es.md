@@ -56,7 +56,7 @@ Estos recursos están disponibles en nuestros distintos datacenters repartidos p
 
 ### Un proveedor de servicios cloud en un mercado maduro
 
-El Public Cloud de OVHcloud se posiciona junto a proveedores cloud muy conocidos como AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (de Microsoft) o Alibaba Cloud. Nuestra oferta se distingue por [tarifas especialmente ventajosas](https://www.ovhcloud.com/es-es/public-cloud/prices/) y el uso de API estándar que permiten a los usuarios libertad de cambio, sin adherencia a ninguna tecnología propietaria.
+El Public Cloud de OVHcloud se posiciona junto a proveedores cloud muy conocidos como AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (de Microsoft) o Alibaba Cloud. Nuestra oferta se distingue por [tarifas especialmente ventajosas](/links/public-cloud/prices) y el uso de API estándar que permiten a los usuarios libertad de cambio, sin adherencia a ninguna tecnología propietaria.
 
 ## Enfoque práctico <a name="concrete-approach"></a>
 

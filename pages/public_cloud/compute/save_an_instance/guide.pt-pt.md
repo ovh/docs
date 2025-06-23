@@ -16,7 +16,7 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 
 ## Requisitos
 
-- Ter uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
+- Ter uma instância [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções

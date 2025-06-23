@@ -24,7 +24,7 @@ Overview of the app:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr);
-- An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account;
+- An AI Deploy project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
@@ -369,7 +369,7 @@ If you want your notebook to be accessible without the need to authenticate, spe
 - You can imagine deploying an AI model with an other tool: **Gradio**. Refer to this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_05_gradio_sketch_recognition).
 - Another way to create an AI Deploy app is to use **Flask**! [Here it is](/pages/public_cloud/ai_machine_learning/deploy_tuto_04_flask_yolov5).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

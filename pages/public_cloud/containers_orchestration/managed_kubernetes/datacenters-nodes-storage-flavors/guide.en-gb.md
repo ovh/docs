@@ -41,7 +41,7 @@ Here is a comparative table of flavours available by region:
 | `T2-*`   | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / UK1 / WAW1 | | | | | | |
 
 Each family offers contains different flavors, consisting of a five amount of vCores, RAM and local storage.  
-For more information, please refer to the following page: [OVHcloud Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/prices/)
+For more information, please refer to the following page: [OVHcloud Public Cloud instances](/links/public-cloud/prices)
 
 Note that we are both compatible with the standard and flex variations (Flex offering the same disk size for each flavor).
 Note however that Managed Kubernetes Service does not currently offer worker nodes resize.  

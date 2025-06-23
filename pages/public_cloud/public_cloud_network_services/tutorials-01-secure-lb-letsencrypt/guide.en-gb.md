@@ -14,7 +14,7 @@ After setting up your Load Balancer, you can configure it with a certificate in 
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - [Preparing your environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [OpenStack Octavia client](https://docs.openstack.org/python-octaviaclient/latest/install/index.html) and [OpenStack Barbican](https://docs.openstack.org/python-barbicanclient/latest/install/index.html) set up
 - A Load Balancer running in your project
@@ -115,6 +115,6 @@ You can now securely access your Load Balancer with Let's Encrypt. Be careful, y
 
 [Getting started with Load Balancer on Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

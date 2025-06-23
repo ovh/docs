@@ -10,7 +10,7 @@ updated: 2022-10-14
 
 ## Objetivo
 
-Si ya no necesita un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/), puede eliminarlo directamente desde el área de cliente de [OVHcloud](/links/manager).
+Si ya no necesita un [proyecto de Public Cloud](/links/public-cloud/public-cloud), puede eliminarlo directamente desde el área de cliente de [OVHcloud](/links/manager).
 
 Al eliminar un proyecto de Public Cloud, se emitirá una factura final en la que se indicará el importe pendiente de pago.
 
@@ -24,7 +24,7 @@ Al eliminar un proyecto, los recursos que contiene se pierden definitivamente. E
 
 ## Requisitos
 
-- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
+- Un [proyecto de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
 - Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager)
 
 ## Procedimiento

@@ -10,7 +10,7 @@ Ce guide a pour but de vous expliquer comment redimensionner votre système de f
 
 ## Prérequis
 
- * Avoir une instance avec FreeBSD 12 dans votre projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) ou un [VPS](https://www.ovhcloud.com/fr/vps/) sous FreeBSD 12
+ * Avoir une instance avec FreeBSD 12 dans votre projet [Public Cloud](/links/public-cloud/public-cloud) ou un [VPS](/links/bare-metal/vps) sous FreeBSD 12
  * Avoir récemment installé l'instance/le VPS ou [l'avoir redimensionnée](/pages/public_cloud/compute/resize_of_an_instance)
 
 > [!primary]

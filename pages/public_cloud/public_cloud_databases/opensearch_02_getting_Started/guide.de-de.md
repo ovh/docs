@@ -13,7 +13,7 @@ This guide explains how to successfully configure a Public Cloud Databases for a
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- a [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
+- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions
 
@@ -330,4 +330,4 @@ Visit the [Github examples repository](https://github.com/ovh/public-cloud-datab
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

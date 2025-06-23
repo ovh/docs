@@ -16,7 +16,7 @@ Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente OVHcloud](/
 
 ## Requisitos
 
-- Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
+- Um [projeto Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
 - Uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) no seu projeto
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 

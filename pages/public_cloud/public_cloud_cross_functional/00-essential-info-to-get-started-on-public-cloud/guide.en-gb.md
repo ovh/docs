@@ -52,7 +52,7 @@ These resources are available in our various data centres across the globe. OVHc
 
 ### A cloud service provider in a mature market
 
-OVHcloud Public Cloud is positioned alongside well-known cloud providers such as AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (from Microsoft) and Alibaba Cloud. Our offer is distinguished by [the particularly advantageous rates](https://www.ovhcloud.com/en-gb/public-cloud/prices/) and the use of standard APIs that leave our users free to change, without adhering to any proprietary technology.
+OVHcloud Public Cloud is positioned alongside well-known cloud providers such as AWS (Amazon Web Services), GCP (Google Cloud Platform), Azure (from Microsoft) and Alibaba Cloud. Our offer is distinguished by [the particularly advantageous rates](/links/public-cloud/prices) and the use of standard APIs that leave our users free to change, without adhering to any proprietary technology.
 
 ## Practical approach <a name="concrete-approach"></a>
 

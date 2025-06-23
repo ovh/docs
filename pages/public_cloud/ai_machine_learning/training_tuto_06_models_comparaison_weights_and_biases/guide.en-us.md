@@ -55,7 +55,7 @@ The basic principles for using Weights & Biases can be found [here](https://gith
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we);
-- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account;
+- An AI Training project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Make sure you have a Docker Hub [account](https://hub.docker.com/);
@@ -483,7 +483,7 @@ However, it takes longer to train and consumes **more computing resources**.
 - To build an app to classify audios, refer to this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_03_streamlit_sounds_classification).
 - Do you want to know how to build and use custom Docker image with AI Training? [Here it is](/pages/public_cloud/ai_machine_learning/training_tuto_02_build_custom_image).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

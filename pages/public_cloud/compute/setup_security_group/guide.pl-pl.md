@@ -16,7 +16,7 @@ Ze względów bezpieczeństwa możesz konfigurować i używać reguł filtrowani
 
 ## Wymagania początkowe
 
-- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
+- Projekt [Public Cloud](/links/public-cloud/public-cloud)
 - [Dostęp do interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 ## W praktyce

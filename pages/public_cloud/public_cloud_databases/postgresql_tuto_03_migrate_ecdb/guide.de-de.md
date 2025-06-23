@@ -10,7 +10,7 @@ updated: 2022-03-16
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/compute/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/compute) in your OVHcloud account
 - A PostgreSQL database running on-premises (the "source" instance)
 - A PostgreSQL database running on OVHcloud Public Cloud Databases (the "target" instance)
 - A PostgreSQL client that can connect to both database instances, source and target.
@@ -145,6 +145,6 @@ Once you verified that the database migration was successful, update client appl
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

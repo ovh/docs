@@ -21,7 +21,7 @@ In this tutorial, we will use one of them and interpret the results.
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
-- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account.
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An app with an API running in AI Deploy on your Public Cloud project.
 - A python environment, with enough CPU and RAM and internet access (a virtual machine is recommended).
 
@@ -244,7 +244,7 @@ Locust official documentation : [Locust.io](https://docs.locust.io/en/stable/)
 
 Comparison of load testing tools : [Comparison of load testing tools](https://k6.io/blog/comparing-best-open-source-load-testing-tools/)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

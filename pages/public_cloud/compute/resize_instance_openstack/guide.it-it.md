@@ -24,7 +24,7 @@ A causa di un aumento dell'attività o semplicemente per rispondere a nuove esig
 
 ## Prerequisiti
 
-- Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
+- Disporre di un'istanza [Public Cloud](/links/public-cloud/public-cloud) sul proprio account OVHcloud
 - Un [utente OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - Disporre di un [ambiente OpenStack predisposto per la CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - Aver definito le [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)

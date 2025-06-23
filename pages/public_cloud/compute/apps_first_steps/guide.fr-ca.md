@@ -26,7 +26,7 @@ Depuis [l'espace client OVHcloud](/links/manager), les API OVHcloud ou de l'API 
 
 Une fois l'instance créée et une application préinstallée choisie, vous pouvez récupérer vos informations de connexion uniquement via l'API OVHcloud.
 
-1. Connectez-vous à la [console API](https://ca.api.ovh.com/)
+1. Connectez-vous à la [console API](/links/api)
 2. Utilisez ensuite [cet appel API](https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
 
 > Appel API

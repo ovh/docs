@@ -144,6 +144,6 @@ The wording is slightly different between OpenStack and OVHcloud: the following 
 - An exhaustive technical documentation on [OpenStack project page](https://docs.openstack.org/octavia/latest/).
 - Configure your first load balancer with this [guide](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -27,8 +27,8 @@ Potrai configurare indirizzi Additional IP sulle tue istanze, ad esempio se ospi
 
 ## Prerequisiti
 
-- un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-- un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) o un blocco Additional IP
+- un'[istanza Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
+- un [indirizzo Additional IP](/links/bare-metal/ip) o un blocco Additional IP
 - un accesso amministratore (sudo) via SSH o GUI alla tua istanza
 - conoscenze di base sulle reti e la loro amministrazione
 
@@ -312,6 +312,6 @@ Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional
 
 [Trasferisci un Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

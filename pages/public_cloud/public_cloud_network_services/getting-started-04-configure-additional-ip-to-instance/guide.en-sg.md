@@ -18,13 +18,13 @@ You may need to configure Additional IP addresses on your instances, for example
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/) or an Additional IP block
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- An [Additional IP address](/links/bare-metal/ip) or an Additional IP block
 - Administrative access (sudo) via SSH or GUI to your instance
 - Basic networking and administration knowledge
 
@@ -299,6 +299,6 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 [Migrating an Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

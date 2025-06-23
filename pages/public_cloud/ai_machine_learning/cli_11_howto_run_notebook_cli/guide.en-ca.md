@@ -321,7 +321,7 @@ Learn how to access your Object Storage data and Git repositories from your note
 
 Learn how to share your notebooks with other people [here](/pages/public_cloud/ai_machine_learning/cli_14_howto_cli_sharing).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -16,7 +16,7 @@ Możesz zarządzać instancjami Public Cloud w [Panelu klienta OVHcloud](/links/
 
 ## Wymagania początkowe
 
-- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
+- Projekt [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
 - Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) w Twoim projekcie
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 

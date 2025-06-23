@@ -10,7 +10,7 @@ updated: 2025-03-20
 
 ## Obiettivo
 
-Nel momento in cui crei un’[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, così come ad ogni riavvio, puoi configurarla grazie al modulo Cloud-init. Di conseguenza, se si desidera riconfigurare l'hostname, a causa di un errore durante la creazione dell'istanza o per riconfigurare il server di posta elettronica, è necessario disabilitare il modulo Cloud-init. Questo è responsabile della configurazione dell'hostname in modo che non venga ripristinato.
+Nel momento in cui crei un’[istanza Public Cloud](/links/public-cloud/public-cloud){.external}, così come ad ogni riavvio, puoi configurarla grazie al modulo Cloud-init. Di conseguenza, se si desidera riconfigurare l'hostname, a causa di un errore durante la creazione dell'istanza o per riconfigurare il server di posta elettronica, è necessario disabilitare il modulo Cloud-init. Questo è responsabile della configurazione dell'hostname in modo che non venga ripristinato.
 
 **Questa guida spiega come riconfigurare cloud-init in modo da poter cambiare l'hostname dell'istanza.**
 

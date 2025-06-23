@@ -17,7 +17,7 @@ La liste des produits OVHcloud certifiés est disponible sur la page « [OVHclou
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-- Avoir souscrit au [niveau de support Business ou Enterprise](https://www.ovhcloud.com/fr/support-levels/) pour votre compte OVHcloud.
+- Avoir souscrit au [niveau de support Business ou Enterprise](/links/support) pour votre compte OVHcloud.
 
 ## En pratique
 

@@ -16,7 +16,7 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 
 ## Prerequisiti
 
-- Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
+- Disporre di un'istanza [Public Cloud](/links/public-cloud/public-cloud) sul proprio account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

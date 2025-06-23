@@ -13,7 +13,7 @@ La modification de ces contacts permet de dissocier la gestion technique de la g
 
 ## Prérequis
 
-- Avoir un projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
+- Avoir un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Contacts administrateur et facturation dans la même filiale OVHcloud
 

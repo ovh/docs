@@ -23,7 +23,7 @@ Tal pode ser útil nos seguintes casos:
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
-- Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
+- Ter uma [instância Public Cloud](/links/public-cloud/public-cloud){.external} na sua conta OVHcloud.
 - Ter um backup de disco na mesma região OpenStack.
 - Ter acesso à instância via SSH enquanto administrador (sudo).
 

@@ -15,7 +15,7 @@ L’obiettivo di questa guida è mostrarti come modificare un tipo di volume Blo
 ## Prerequisiti
 
 - [Accedere all'interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
-- Un volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/)
+- Un volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto [Public Cloud](/links/public-cloud/public-cloud)
 
 ## Procedura
 

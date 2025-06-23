@@ -6,7 +6,7 @@ updated: 2024-03-26
 
 ## Objectif
 
-Les Floating IP sont des adresses IP publiques sur [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), utilisées pour exposer une instance privée ou un service de réseau privé sur le réseau public. Retrouvez plus d'informations sur [notre page concepts](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip) dédiée.
+Les Floating IP sont des adresses IP publiques sur [Public Cloud](/links/public-cloud/public-cloud), utilisées pour exposer une instance privée ou un service de réseau privé sur le réseau public. Retrouvez plus d'informations sur [notre page concepts](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip) dédiée.
 
 **Découvrez comment attacher des adresses Floating IP à vos instances.**
 

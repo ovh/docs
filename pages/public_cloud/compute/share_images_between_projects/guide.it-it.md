@@ -32,7 +32,7 @@ Prima di seguire questi passaggi, ti consigliamo di consultare questa guida:
 
 Avrai anche bisogno di:
 
-- Disporre di un’[Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) iscritta nel proprio account OVHcloud
+- Disporre di un’[Istanza Public Cloud](/links/public-cloud/public-cloud) iscritta nel proprio account OVHcloud
 - [Aver creato un utente OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 > [!primary]
