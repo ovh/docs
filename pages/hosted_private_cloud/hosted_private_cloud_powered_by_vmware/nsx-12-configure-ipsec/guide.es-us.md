@@ -11,7 +11,7 @@ updated: 2023-07-05
 > [!warning]
 > OVHcloud provides you with services for which you are responsible for configuration, management, and liability. It is your responsibility to ensure their proper functioning.
 >
-> This guide aims to assist you with common tasks. However, we recommend seeking assistance from a [specialized provider](https://partner.ovhcloud.com/es/directory/) if you encounter difficulties or have doubts regarding the administration, usage, or implementation of a service on a server.
+> This guide aims to assist you with common tasks. However, we recommend seeking assistance from a [specialized provider](/links/partner) if you encounter difficulties or have doubts regarding the administration, usage, or implementation of a service on a server.
 >
 
 ## Prerequisites
@@ -101,6 +101,6 @@ If everything is properly configured on the other side, you should see a green "
 
 [VMware Documentation on NAT in NSX](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html)
 
-If you require training or technical assistance for the implementation of our solutions, contact your account manager or click [this link](https://www.ovhcloud.com/es/professional-services/) to request a quote and a personalized analysis of your project from our Professional Services team.
+If you require training or technical assistance for the implementation of our solutions, contact your account manager or click [this link](/links/professional-services) to request a quote and a personalized analysis of your project from our Professional Services team.
 
 Join our community of users on <https://community.ovh.com/en/>.

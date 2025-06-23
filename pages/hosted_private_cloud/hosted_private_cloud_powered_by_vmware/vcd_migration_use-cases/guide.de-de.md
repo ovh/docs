@@ -157,7 +157,7 @@ This interface allows you to view and download the files still stored on your da
 
 For security reasons, only users who existed before the migration can log in.
 
-Passwords for these users may have been reset during the migration process. If needed, you can update them using the [dedicated OVHcloud API](https://eu.api.ovh.com/console/) with the following call:
+Passwords for these users may have been reset during the migration process. If needed, you can update them using the [dedicated OVHcloud API](/links/console) with the following call:
 
 > [!api]
 >
