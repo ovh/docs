@@ -70,7 +70,7 @@ La doppia autenticazione permette di aumentare la sicurezza del tuo account OVHc
 Per maggiori informazioni, consulta la nostra guida [Proteggere un account OVHcloud con la doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 > [!primary]
-> L'attivazione della doppia autenticazione sul tuo account OVHcloud è un prerequisito obbligatorio per essere in conformità con [l'hosting dei dati sanitari in Francia (HDS)](https://www.ovhcloud.com/it/enterprise/certification-conformity/hds/).
+> L'attivazione della doppia autenticazione sul tuo account OVHcloud è un prerequisito obbligatorio per essere in conformità con [l'hosting dei dati sanitari in Francia (HDS)](/links/websiteenterprise/certification-conformity/hds/).
 
 ### Come gestire le tue informazioni personali? <a name="personal-information"></a>
 
@@ -155,7 +155,7 @@ Per maggiori informazioni, consulta la [guida sulla gestione degli utenti](/page
 
 Se ricevi una email che indica un accesso sconosciuto al tuo Spazio Cliente, ti consigliamo di [modificare immediatamente la password del tuo account](/pages/account_and_service_management/account_information/manage-ovh-password#modifica-la-password) e di [proteggerlo tramite l’attivazione della doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
-Se riscontri un'attività sospetta sul tuo account, [contatta il supporto OVHcloud](https://www.ovhcloud.com/it/contact/) al +39 02 5560 0423 affinché i nostri team ti assistano nei passi da compiere.
+Se riscontri un'attività sospetta sul tuo account, [contatta il supporto OVHcloud](/links/websitecontact/) al +39 02 5560 0423 affinché i nostri team ti assistano nei passi da compiere.
 
 ## Per saperne di più
 

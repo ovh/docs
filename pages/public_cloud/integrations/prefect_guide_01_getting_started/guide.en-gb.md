@@ -14,7 +14,7 @@ Prefect provides a flexible Python framework to easily combine tasks into workfl
 
 - An active OVHcloud account and its credentials
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
+- A [Public Cloud project](/links/websitepublic-cloud/)
 
 ## Instructions
 
@@ -63,7 +63,7 @@ For the next tutorials, we will **choose this second option**.
 
 Any application that wants to communicate with the OVHcloud API must be declared in advance.
 
-To do this, click the following [link](https://eu.api.ovh.com/createToken/).
+To do this, click the following [link](/links/apicreateToken/).
 
 Fill in your OVHcloud customer ID, password, and application name. The name will be useful later if you want to allow others to use it.
 

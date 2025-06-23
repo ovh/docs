@@ -81,7 +81,7 @@ Les champs les plus intéressants dans la réponse sont les suivants :
 - `status` : correspond aux statuts présentés dans la section précédente.
 - `comment` : contient des informations détaillées sur le statut de la tâche. En particulier, si la tâche est en statut `error`, ce champ contiendra des indications pour vous aider à corriger le problème.
 - `canRelaunch` : indique s'il vous est possible de relancer une tâche. Cela vous sera utile si la tâche est en statut `error`.
-- `todoDate` : la date et heure approximative de prochaine exécution de la tâche. Celle-ci ne s'applique que si la tâche est en statut `todo`. Il est possible de rapprocher cette date à l'aide de l'API [`POST /me/task/{id}/accelerate`](https://eu.api.ovh.com/console/#/me/task/domain/%7Bid%7D/accelerate~POST), mais cela est rarement nécessaire.
+- `todoDate` : la date et heure approximative de prochaine exécution de la tâche. Celle-ci ne s'applique que si la tâche est en statut `todo`. Il est possible de rapprocher cette date à l'aide de l'API [`POST /me/task/{id}/accelerate`](/links/apiconsole/#/me/task/domain/%7Bid%7D/accelerate~POST), mais cela est rarement nécessaire.
 
 ## Corriger et relancer une tâche en erreur <a name="fix-and-relaunch-a-task-in-error"></a>
 

@@ -28,7 +28,7 @@ This guide will cover the creation of a new notebook from the OVHcloud Control P
 
 For the OVHcloud Control Panel:
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A Public Cloud user with the `administrator` role
 - Data Processing activated (see [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project) for details)

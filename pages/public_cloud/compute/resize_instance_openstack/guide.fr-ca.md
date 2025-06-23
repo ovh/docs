@@ -14,13 +14,13 @@ En raison d'une activité accrue, ou simplement pour répondre à de nouveaux be
 > **Limites :**
 >
 > - Seul le redimensionnement vers un modèle supérieur (*upscaling*) est possible pour les instances classiques.
-> - Une [instance Metal](https://www.ovhcloud.com/fr-ca/public-cloud/metal-instances/) ne peut être redimensionnée que vers un autre modèle **Metal**.
+> - Une [instance Metal](/links/websitepublic-cloud/metal-instances/) ne peut être redimensionnée que vers un autre modèle **Metal**.
 > - Les instances *Flex* permettent le redimensionnement vers des modèles supérieurs ou inférieurs, en raison d'une taille de disque unique et verrouillée.
 >
 
 ## Prérequis
 
-- Une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
+- Une [instance Public Cloud](/links/websitepublic-cloud/) dans votre compte OVHcloud
 - Un [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - Avoir un [environnement OpenStack préparé pour le CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - Avoir défini les [variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)

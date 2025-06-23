@@ -17,9 +17,9 @@ The [vRack](/links/network/vrack) is a private network that allows you to config
 - Basic network knowledge
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/ecoabout/).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 
@@ -43,7 +43,7 @@ In this example, the tested IP address is currently announced to **Roubaix**. Th
 
 ### Step 2: Change the announcement zone of the IP block
 
-Go to <https://ca.api.ovh.com/console/>, then sign in with your OVHcloud customer ID. Use the API call below to change the announcement of the IP block.
+Go to </links/apiconsole/>, then sign in with your OVHcloud customer ID. Use the API call below to change the announcement of the IP block.
 
 > [!api]
 >

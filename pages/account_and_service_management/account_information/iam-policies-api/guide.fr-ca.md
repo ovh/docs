@@ -43,7 +43,7 @@ Les ressources, les groupes de ressources et les actions nécessaires à la cré
 
 #### Définition de l'API
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
+</links/apiconsole-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -297,7 +297,7 @@ Cette section décrit comment récupérer ou créer un utilisateur pour la polit
 
 #### Définition de l'API
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
+</links/apiconsole-preview/?section=%2Fme&branch=v1#overview>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -384,7 +384,7 @@ Cette section décrit comment récupérer les informations sur les ressources po
 
 #### Définition de l'API
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
+</links/apiconsole-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -443,7 +443,7 @@ Pour faciliter la gestion des politiques pour un grand nombre de ressources, il 
 
 #### Définition de l'API
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
+</links/apiconsole-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -536,7 +536,7 @@ Ces actions sont spécifiques à chaque produit, comme le redémarrage d'un serv
 
 #### Définition de l'API
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
+</links/apiconsole-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |

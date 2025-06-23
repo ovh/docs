@@ -27,7 +27,7 @@ Jeśli Twój serwer VPS nie odpowiada, powinieneś mieć dostęp do niego za po�
 
 ## Wymagania początkowe
 
-- posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- posiadanie serwera [VPS](/links/websitevps/) na koncie OVHcloud
 - dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
@@ -77,7 +77,7 @@ sdb       8:16   0   50G  0 disk
 
 Powyższy przykład pokazuje, że partycja systemowa jest zamontowana na **/mnt/sdb**. (Dysk główny to **sdb**. Dysk rescue to **sda**, a **sda1** to główna partycja w trybie rescue zamontowana na **/**).
 
-Jeśli Twój VPS należy do [**bieżącej gamy VPS**](https://www.ovhcloud.com/pl/vps/), nie zostanie wykonany automatyczny montaż, a kolumna "MOUNTPOINT" powinna być pusta. W tym przypadku przejdź do [etapu czwartego](#step4).
+Jeśli Twój VPS należy do [**bieżącej gamy VPS**](/links/websitevps/), nie zostanie wykonany automatyczny montaż, a kolumna "MOUNTPOINT" powinna być pusta. W tym przypadku przejdź do [etapu czwartego](#step4).
 
 ### Etap 3: odmontuj partycję (tylko dla starszych gam VPS)
 
@@ -89,7 +89,7 @@ Na serwerze VPS należącym do poprzednich gam znajdujących się w trybie Rescu
 
 ### Etap 4: zamontować partycję z odpowiednimi parametrami <a name="step4"></a>
 
-Jeśli Twój VPS należy do [**bieżącej gamy VPS**](https://www.ovhcloud.com/pl/vps/), sprawdź najpierw, czy folder montowania jest utworzony:
+Jeśli Twój VPS należy do [**bieżącej gamy VPS**](/links/websitevps/), sprawdź najpierw, czy folder montowania jest utworzony:
 
 ```sh
 ~$ mkdir -p /mnt/sdb1

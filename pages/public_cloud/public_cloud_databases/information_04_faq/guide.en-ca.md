@@ -312,7 +312,7 @@ Each database instance is strongly secured through multiple actions:
 - **Network ACL**: we provide Access Control List (ACL) allowing you to specify which IPs or IP block have the right to connect to your database instance. By default, no ACL is declared on the service meaning nobody can connect to your service until you add at least one.
 - **End-to-End encryption**: connections to databases are, by default, encrypted with TLS protocol, providing end-to-end encryption protection. OVHcloud generates an SSL/TLS certificate for each DB instance. Once you establish an encrypted connection between your application and your database instance, your data flows will be encrypted.
 - **Data encryption**: data is stored on dedicated volumes that are encrypted.
-- **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](https://www.ovhcloud.com/en-ca/about-us/data-sovereignty/)
+- **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](/links/websiteabout-us/data-sovereignty/)
 
 ### Who can access my database instance initially?
 
@@ -344,7 +344,7 @@ OVHcloud is meeting the highest standards certifications. Public Cloud Databases
 - ISO 27001
 - Planned: HIPAA / HDS 1-2-3
 
-For healthcare compliance such as HIPAA/HDS, please refer to our [official page](https://www.ovhcloud.com/en-ca/enterprise/certification-conformity/hds/). For certification overview, please refer to our [official page](https://www.ovhcloud.com/en-ca/enterprise/certification-conformity/).
+For healthcare compliance such as HIPAA/HDS, please refer to our [official page](/links/websiteenterprise/certification-conformity/hds/). For certification overview, please refer to our [official page](/links/websiteenterprise/certification-conformity/).
 
 ## Network
 
@@ -429,6 +429,6 @@ If your data is corrupted, you have 2 options:
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

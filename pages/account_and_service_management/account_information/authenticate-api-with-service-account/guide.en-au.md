@@ -37,8 +37,8 @@ For example purposes in this guide, we will use the service account `urn:v1:eu:i
 
 First of all, our service account must be able to access the useful APIs. OVHcloud provides rights for each API call. To find out what permissions are required, you can go to the OVHcloud API console:
 
-- [EU API console](https://eu.api.ovh.com/console-preview/)
-- [CA API console](https://ca.api.ovh.com/console-preview/)
+- [EU API console](/links/apiconsole-preview/)
+- [CA API console](/links/apiconsole-preview/)
 
 For each API call, you will find the name of the action corresponding to the line **IAM actions**.
 For example, for the */v1/hosting/web* call, the name of the action required is *webHosting:apiovh:get* as you can see in the following example:

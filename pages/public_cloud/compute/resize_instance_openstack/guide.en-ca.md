@@ -14,13 +14,13 @@ As a result of increased activity, or simply to address new needs, your instance
 > **Limitations:**
 >
 > - Only upscaling is possible for classic models.
-> - [Metal instances](https://www.ovhcloud.com/en-ca/public-cloud/metal-instances/) can only be resized to and from other Metal flavors.
+> - [Metal instances](/links/websitepublic-cloud/metal-instances/) can only be resized to and from other Metal flavors.
 > - *Flex* instances allow resizing to higher or lower models due to a locked single disk size.
 >
 
 ## Requirements
 
-- A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- A [Public Cloud instance](/links/websitepublic-cloud/) in your OVHcloud account
 - An [OpenStack user account](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [Set OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)

@@ -8,7 +8,7 @@ updated: 2022-02-11
 
 [Wagtail](https://wagtail.org/){.external} is a free and open source content management system (CMS) written in Python. It is popular amongst websites using the [Django framework](https://www.djangoproject.com/){.external}.
 
-In this tutorial, we are going to show you how to install [Wagtail](https://wagtail.org/){.external} and how to connect it to the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} [database service](https://www.ovhcloud.com/pl/public-cloud/postgresql/).
+In this tutorial, we are going to show you how to install [Wagtail](https://wagtail.org/){.external} and how to connect it to the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} [database service](/links/websitepublic-cloud/postgresql/).
 
 > [!warning]
 >
@@ -20,7 +20,7 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account.
+- A [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for PostgreSQL.
 - A Python environment with a stable version and public network connectivity (Internet). This tutorial was made using Python 3.9.7.
 
@@ -203,6 +203,6 @@ To clean your PostgreSQL, use the OVHcloud Control Panel to delete your managed 
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

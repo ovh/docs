@@ -66,8 +66,8 @@ Vous aurez ainsi accès aux informations personnelles de votre compte. Faites d�
 
 Pour mieux connaître les impacts du règlement général sur la protection des données (RGPD) sur votre activité professionnelle ou vos informations personnelles, nous vous proposons de consulter ces ressources :
 
-- [« OVHcloud et la protection des données à caractère personnel »](https://www.ovhcloud.com/fr/personal-data-protection/);
-- [« RGPD : les questions que vous vous posez »](https://www.ovhcloud.com/fr/personal-data-protection/faq/?lsdDoc=faq.xml).
+- [« OVHcloud et la protection des données à caractère personnel »](/links/websitepersonal-data-protection/);
+- [« RGPD : les questions que vous vous posez »](/links/websitepersonal-data-protection/faq/?lsdDoc=faq.xml).
 
 ### Comment modifier mon mot de passe OVHcloud ?
 

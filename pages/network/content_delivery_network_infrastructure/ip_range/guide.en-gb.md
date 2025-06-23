@@ -12,7 +12,7 @@ In this guide, you will find all of the CDN Infrastructure service IP addresses 
 
 ## Requirements
 
-- An [OVHcloud CDN Infrastructure solution](https://www.ovhcloud.com/en-gb/network/cdn/).
+- An [OVHcloud CDN Infrastructure solution](/links/websitenetwork/cdn/).
 
 ## Instructions
 

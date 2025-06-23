@@ -9,7 +9,7 @@ updated: 2025-04-29
 
 An **OVHgateway** virtual machine is installed when deploying a **Nutanix on OVHcloud** cluster. This virtual machine serves as the outgoing Internet gateway for the cluster. The maximum throughput is 1 GB/s.
 
-If you need more bandwidth, you can replace this gateway with a [dedicated server](https://www.ovhcloud.com/pt/bare-metal/) and choose a solution that allows you to connect between 1 GB/s and 10 GB/s on the public network.<br>
+If you need more bandwidth, you can replace this gateway with a [dedicated server](/links/websitebare-metal/) and choose a solution that allows you to connect between 1 GB/s and 10 GB/s on the public network.<br>
 Contact OVHcloud Sales to help you choose the right server. 
 
 **This guide explains how to replace the default gateway with an OVHcloud dedicated server to increase bandwidth.**
@@ -25,7 +25,7 @@ Contact OVHcloud Sales to help you choose the right server.
 - A Nutanix cluster in your OVHcloud account.
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - You must be connected to the cluster via **Prism Central**. 
-- You have a [dedicated server](https://www.ovhcloud.com/pt/bare-metal/) in your OVHcloud account with several network cards, some on the public network, others on the private network. This server must be in the same data centre as the Nutanix cluster.
+- You have a [dedicated server](/links/websitebare-metal/) in your OVHcloud account with several network cards, some on the public network, others on the private network. This server must be in the same data centre as the Nutanix cluster.
 
 ## Instructions
 
@@ -375,6 +375,6 @@ The test takes 10 seconds, and you will get your cluster’s bandwidth via your 
 
 ## Go further <a name="gofurther"></a>
   
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

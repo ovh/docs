@@ -42,7 +42,7 @@ Resources, resource groups and actions needed to create a policy will be describ
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
+</links/apiconsole-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -296,7 +296,7 @@ This section describes how to retrieve or create user for the policy.
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
+</links/apiconsole-preview/?section=%2Fme&branch=v1#overview>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -383,7 +383,7 @@ This section describes how to retrieve resources information to use in a policy.
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
+</links/apiconsole-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -442,7 +442,7 @@ To ease the policy management for a large number of resources, it is possible to
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
+</links/apiconsole-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -535,7 +535,7 @@ These actions are specific to every product, such as rebooting a database server
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
+</links/apiconsole-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |

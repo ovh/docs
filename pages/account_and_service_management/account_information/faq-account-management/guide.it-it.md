@@ -56,8 +56,8 @@ Per “02 123456”, inserisci “+39 02 123456”. Selezionando l’Italia come
 
 Per conoscere meglio l’impatto del Regolamento Generale sulla Protezione dei Dati (GDPR) sulla tua attività professionale o sulle tue informazioni personali, ti invitiamo a consultare queste pagine:
 
-- [OVHcloud e la protezione dei dati personali](https://www.ovhcloud.com/it/personal-data-protection/)
-- [GDPR - Le risposte alle tue domande](https://www.ovhcloud.com/it/personal-data-protection/faq/)
+- [OVHcloud e la protezione dei dati personali](/links/websitepersonal-data-protection/)
+- [GDPR - Le risposte alle tue domande](/links/websitepersonal-data-protection/faq/)
 
 ### Come modificare la password OVHcloud?
 

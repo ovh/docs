@@ -55,7 +55,7 @@ Your choice of plan affects the number of nodes your cluster run or the SLA.
 
 ### Hardware resources
 
-For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](https://www.ovhcloud.com/pt/public-cloud/prices/#9667).
+For detailed information about node types and pricing, please refer to the [Public Cloud pricing page](/links/websitepublic-cloud/prices/#9667).
 
 ### Features
 
@@ -98,6 +98,6 @@ Please note that if the cluster is deleted, logs and metrics are also automatica
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

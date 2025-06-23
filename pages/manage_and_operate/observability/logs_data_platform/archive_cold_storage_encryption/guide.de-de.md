@@ -276,7 +276,7 @@ Note that this feature is opt-in: you have to explicitly select the `LDP Recover
 
 #### Ask OVHcloud to recover your encrypted archive
 
-If the situation described above happens (you lost your private key, but your archive is also encrypted with the `LDP Recovery Key`), you will have to [contact OVHcloud support](https://www.ovhcloud.com/en/contact/). Open a ticket and describe precisely the name of your Logs Data Platform service, the name of the stream and the name of the archive. You will also have to provide a new PGP encryption key (a key you already added to your Logs Data Platform account).
+If the situation described above happens (you lost your private key, but your archive is also encrypted with the `LDP Recovery Key`), you will have to [contact OVHcloud support](/links/websitecontact/). Open a ticket and describe precisely the name of your Logs Data Platform service, the name of the stream and the name of the archive. You will also have to provide a new PGP encryption key (a key you already added to your Logs Data Platform account).
 
 The Logs Data Platform team will then take care of your request.
 

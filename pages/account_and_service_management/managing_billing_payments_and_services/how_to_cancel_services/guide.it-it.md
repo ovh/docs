@@ -78,45 +78,45 @@ Se il servizio di posta MX Plan è stato ordinato indipendentemente dall’hosti
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Per disattivare la tua offerta [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#elimina-account).
+Per disattivare la tua offerta [Email Pro](/links/websiteemails/email-pro/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#elimina-account).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Per disattivare la soluzione [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account).
+Per disattivare la soluzione [Hosted Exchange](/links/websiteemails/hosted-exchange/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account).
 
 #### Private Exchange <a name="private"></a>
 
-Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account_1).
+Per disattivare la tua offerta [Private Exchange](/links/websiteemails/private-exchange/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Per disattivare la tua offerta [Office 365 csp 1](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/), segui questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#gestisci-i-tuoi-abbonamenti).
+Per disattivare la tua offerta [Office 365 csp 1](/links/websitecollaborative-tools/microsoft-365/), segui questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#gestisci-i-tuoi-abbonamenti).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Per disattivare la tua offerta [Office 365 csp 2](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/reseller/), segui questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gestisci-i-tuoi-abbonamenti).
+Per disattivare la tua offerta [Office 365 csp 2](/links/websitecollaborative-tools/microsoft-365/reseller/), segui questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gestisci-i-tuoi-abbonamenti).
 
 #### Certificato SSL Sectigo <a name="ssl_sectigo"></a>
 
-Le offerte [SSL Sectigo](https://www.ovhcloud.com/it/web-hosting/options/ssl/) non possono essere disattivate prima della scadenza, in quanto non vengono rinnovate automaticamente. Sarà quindi sufficiente non rinnovarli alla prossima scadenza.
+Le offerte [SSL Sectigo](/links/websiteweb-hosting/options/ssl/) non possono essere disattivate prima della scadenza, in quanto non vengono rinnovate automaticamente. Sarà quindi sufficiente non rinnovarli alla prossima scadenza.
 
 #### SMS <a name="sms"></a>
 
-Non esiste una procedura di disattivazione relativa alle [offerte SMS](https://www.ovhcloud.com/it/sms/). Un account SMS non genera alcun abbonamento mensile o fatturazione. I crediti SMS hanno una durata illimitata.
+Non esiste una procedura di disattivazione relativa alle [offerte SMS](/links/websitesms/). Un account SMS non genera alcun abbonamento mensile o fatturazione. I crediti SMS hanno una durata illimitata.
 
 Per eliminare un account SMS, contatta il nostro supporto aprendo un ticket dal [centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Per disattivare la soluzione [Managed bare metal](https://www.ovhcloud.com/it/managed-bare-metal/), segui le indicazioni di questa [guida](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
+Per disattivare la soluzione [Managed bare metal](/links/websitemanaged-bare-metal/), segui le indicazioni di questa [guida](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Per disattivare la soluzione [VMware on OVHcloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/), segui le istruzioni di questa [guida](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Per disattivare la soluzione [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/), segui le istruzioni di questa [guida](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Ogni servizio [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) può essere eliminato cliccando sul pulsante `...`{.action} a destra del servizio interessato e poi su `Elimina`{.action}, come nell'esempio seguente per un'istanza:
+Ogni servizio [Public Cloud](/links/websitepublic-cloud/) può essere eliminato cliccando sul pulsante `...`{.action} a destra del servizio interessato e poi su `Elimina`{.action}, come nell'esempio seguente per un'istanza:
 
 ![public cloud instance deletion](images/pci-deletion-en.png){.thumbnail}
 

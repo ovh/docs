@@ -24,7 +24,7 @@ You're able to choose file volume size, manage accesses using ACLs or create sna
 
 ## Instructions
 
-All API routes used for this quickstart are available under the */storage* section here: <https://ca.api.ovh.com/console/#/storage>.
+All API routes used for this quickstart are available under the */storage* section here: </links/apiconsole/#/storage>.
 
 > [!primary]
 >
@@ -234,6 +234,6 @@ You can remove your volume using the following route:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -57,8 +57,8 @@ For "07123456789", please enter "+44 7123456789". The "+44" is automatically add
 
 To find out more about the impact of the General Data Protection Regulation (GPDR) on your business activity or personal data, we suggest you read these resources:
 
--[”OVHcloud and personal data protection”](https://www.ovhcloud.com/en-ie/personal-data-protection/);
--[”GDPR – Your questions answered”](https://www.ovhcloud.com/en-ie/personal-data-protection/faq/).
+-[”OVHcloud and personal data protection”](/links/websitepersonal-data-protection/);
+-[”GDPR – Your questions answered”](/links/websitepersonal-data-protection/faq/).
 
 #### Tips and tricks
 

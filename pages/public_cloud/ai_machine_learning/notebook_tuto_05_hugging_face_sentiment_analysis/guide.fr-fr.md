@@ -40,7 +40,7 @@ We will also use a model to classify the Tweets according to their topic: a *Zer
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr);
-- A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account;
+- A [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account;
 - A Public Cloud user with the ability to start AI Notebooks;
 - A Hugging Face account (if you want!).
 
@@ -160,7 +160,7 @@ A preview of the three notebooks can be found on GitHub [here](https://github.co
 - You can also deploy a **Flask** app to classify text sentiments with **Hugging Face** models. Check this [documentation](/pages/public_cloud/ai_machine_learning/deploy_tuto_06_flask_hugging_face).
 - If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](/pages/public_cloud/ai_machine_learning/notebook_tuto_08_speech_to_text).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

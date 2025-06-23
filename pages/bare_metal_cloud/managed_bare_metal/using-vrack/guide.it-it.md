@@ -18,7 +18,7 @@ La vRack è la possibilità di connettere diversi servizi Cloud di OVHcloud all'
 
 ### Spazio cliente
 
-Al momento della consegna del servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/), la sezione *datacenter* è già all'interno di una vRack.
+Al momento della consegna del servizio [Managed Bare Metal](/links/websitemanaged-bare-metal/), la sezione *datacenter* è già all'interno di una vRack.
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 

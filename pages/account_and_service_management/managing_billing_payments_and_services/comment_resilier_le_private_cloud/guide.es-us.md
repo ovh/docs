@@ -13,7 +13,7 @@ Es posible solicitar la baja de su infraestructura Hosted Private Cloud en cualq
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, en el menú `Servidores`{.action} > `Private Cloud`{.action}.
-- Haber contratado una solución [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
+- Haber contratado una solución [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 
 ## Procedimiento
 

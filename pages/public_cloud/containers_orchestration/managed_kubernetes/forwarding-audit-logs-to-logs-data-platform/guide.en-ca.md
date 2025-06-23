@@ -11,7 +11,7 @@ If you want to discover Logs Data Platform before reading this guide, please ref
 
 ## Glossary
 
-- **Logs Data Platform:** a fully managed and secured log management platform by OVHcloud. Find more information on the [Logs Data Platform service page](https://www.ovhcloud.com/en-ca/logs-data-platform/).
+- **Logs Data Platform:** a fully managed and secured log management platform by OVHcloud. Find more information on the [Logs Data Platform service page](/links/websitelogs-data-platform/).
 - **Data Stream:** a logical partition of logs that you create in an LDP account that you will use when ingesting, visualizing or querying your logs. Multiple sources can be stored in the same data stream, and it is the unit for defining a logs pipeline (retention policy, archiving, live streaming...), access rights and alert policies.
 - **Logs forwarding:** feature integrated in an OVHcloud product to ingest logs from its services to a *Data Stream* of a LDP account in the same OVHcloud account. The feature has to be enabled by the customer and per service.
 - **Logs forwarding Subscription:** when enabling the logs forwarding for a given OVHcloud service to a given LDP *Data Stream*, a *Subscription* is created and attached to the *Data Stream* for further management by the customer.
@@ -130,9 +130,9 @@ Your subscription is now created and your MKS audit logs are forwarded !
 ### Enabling Audit Log Forwarding using APIs
 
 You will have to define the targeted *Stream* of one of your LDP account on which you want your logs to be forwarded to. The enablement of the forwarding will create a subscription for this stream id.
-Note that the forwarding activation is free of charge, but you will be charged for the usage of the Logs Data Platform service as per standard price plan. For LDP pricing, refer to the [Logs Data Platform product page](https://www.ovhcloud.com/en-ca/logs-data-platform/).
+Note that the forwarding activation is free of charge, but you will be charged for the usage of the Logs Data Platform service as per standard price plan. For LDP pricing, refer to the [Logs Data Platform product page](/links/websitelogs-data-platform/).
 
-You can retrieve the API specifications in the [OVH API Portal](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream)
+You can retrieve the API specifications in the [OVH API Portal](/links/apiconsole-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream)
 
 #### Step 1 - Retrieve your target Stream (and ID)
 
@@ -152,7 +152,7 @@ Get the details of a data stream:
 
 #### Step 2 - Create your subscription
 
-As in the example above, the POST request has a payload containing a streamId, which is the target data stream of your LDP account where you want your Kubernetes cluster Audit logs to be forwarded to. You also need to specify the 'kind' of log you want to forward. Note that the only currently supported value for Managed Kubernetes Service is 'audit' (you can find available kinds using the [dedicated API](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/capabilities/kube/log/kind) call):
+As in the example above, the POST request has a payload containing a streamId, which is the target data stream of your LDP account where you want your Kubernetes cluster Audit logs to be forwarded to. You also need to specify the 'kind' of log you want to forward. Note that the only currently supported value for Managed Kubernetes Service is 'audit' (you can find available kinds using the [dedicated API](/links/apiconsole-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/capabilities/kube/log/kind) call):
 
 > [!api]
 >
@@ -239,6 +239,6 @@ To delete your subscription you can use the dedicated section in the OVHcloud Co
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

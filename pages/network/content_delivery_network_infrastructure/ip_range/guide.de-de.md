@@ -16,7 +16,7 @@ In dieser Anleitung finden Sie alle IP-Adressen des CDN Infrastructure Dienstes,
 
 ## Voraussetzungen
 
-- Sie besitzen ein [OVHcloud CDN Infrastructure Angebot](https://www.ovhcloud.com/de/network/cdn/).
+- Sie besitzen ein [OVHcloud CDN Infrastructure Angebot](/links/websitenetwork/cdn/).
 
 ## In der Praxis
 

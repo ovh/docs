@@ -43,7 +43,7 @@ Thanks to the `Node Pool's template`, you will:
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
+- a [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## Instructions
@@ -605,8 +605,8 @@ with the following information:
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/asia/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/websitepublic-cloud/kubernetes/).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](/links/community).

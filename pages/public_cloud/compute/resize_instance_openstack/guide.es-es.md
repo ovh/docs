@@ -18,13 +18,13 @@ Debido al aumento de la actividad, o simplemente para responder a nuevas necesid
 > **Límites:**
 >
 > - Para las instancias clásicas sólo es posible cambiar el tamaño a un modelo superior (*upscaling*).
-> - Una [instancia Metal](https://www.ovhcloud.com/es-es/public-cloud/metal-instances/) sólo puede redimensionarse a otro modelo **Metal**.
+> - Una [instancia Metal](/links/websitepublic-cloud/metal-instances/) sólo puede redimensionarse a otro modelo **Metal**.
 > - Las instancias *Flex* permiten el redimensionamiento a modelos superiores o inferiores, debido a un tamaño de disco único y bloqueado.
 >
 
 ## Requisitos
 
-- Una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
+- Una [instancia de Public Cloud](/links/websitepublic-cloud/) en su cuenta de OVHcloud
 - Un [usuario de OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - Disponga de un [entorno OpenStack preparado para CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - Haber definido las [variables de entorno OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)

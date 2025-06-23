@@ -81,7 +81,7 @@ The most interesting fields in the answer are the following:
 - `status`: corresponds to the statuses presented in the previous section.
 - `comment`: contains detailed information about the status of the task. In particular, if the task is in `error` status, this field will contain a message to help you fix the problem.
 - `canRelaunch`: indicates whether it is possible for you to relaunch a task. This will be useful if the task is in `error` status.
-- `todoDate`: the approximate date and time when the task should be executed next. This only applies if the task is in `todo` status. It is possible to make this date closer using the [`POST /me/task/{id}/accelerate`](https://eu.api.ovh.com/console/#/me/task/domain/%7Bid%7D/accelerate~POST) API, but this is rarely necessary.
+- `todoDate`: the approximate date and time when the task should be executed next. This only applies if the task is in `todo` status. It is possible to make this date closer using the [`POST /me/task/{id}/accelerate`](/links/apiconsole/#/me/task/domain/%7Bid%7D/accelerate~POST) API, but this is rarely necessary.
 
 ## Fix and relaunch a task in error <a name="fix-and-relaunch-a-task-in-error"></a>
 

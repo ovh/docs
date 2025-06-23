@@ -25,7 +25,7 @@ Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werde
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie verfügen über eine [Public Cloud Instanz](/links/websitepublic-cloud).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -54,7 +54,7 @@ Ersetzen Sie "InstanceID" mit der ID der entsprechenden Instanz. Diese Kennung k
 
 ### Über die OVHcloud API
 
-Loggen Sie sich gemäß der [entsprechenden Anleitung](/pages/manage_and_operate/api/first-steps) in das [OVHcloud API Interface](https://eu.api.ovh.com/) ein und folgen Sie den nachstehenden Schritten.
+Loggen Sie sich gemäß der [entsprechenden Anleitung](/pages/manage_and_operate/api/first-steps) in das [OVHcloud API Interface](/links/api) ein und folgen Sie den nachstehenden Schritten.
 
 Verwenden Sie folgenden Aufruf:
 

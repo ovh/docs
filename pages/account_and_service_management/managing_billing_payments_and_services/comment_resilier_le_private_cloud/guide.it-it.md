@@ -13,7 +13,7 @@ Se il servizio Private Cloud utilizzato non è più in grado di rispondere alle 
 ## Prerequisiti
 
 - Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Hosted Private Cloud`{.action} > `Private Cloud`{.action}.
-- Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
+- Disporre di un servizio [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external} attivo
 
 ## Procedura
 

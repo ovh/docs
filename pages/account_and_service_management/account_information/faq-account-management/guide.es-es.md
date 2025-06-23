@@ -59,8 +59,8 @@ Al seleccionar España como país de residencia, el prefijo "+34" se selecciona 
 
 Para saber cómo afecta el Reglamento general de protección de datos (RGPD) a su actividad profesional o sus datos personales, le recomendamos que consulte los siguientes recursos:
 
-- ["OVHcloud y la protección de datos personales"](https://www.ovhcloud.com/es-es/personal-data-protection/)
-- ["RGPD: la respuesta a sus preguntas"](https://www.ovhcloud.com/es-es/personal-data-protection/faq/)
+- ["OVHcloud y la protección de datos personales"](/links/websitepersonal-data-protection/)
+- ["RGPD: la respuesta a sus preguntas"](/links/websitepersonal-data-protection/faq/)
 
 ### ¿Cómo cambiar la contraseña en OVHcloud?
 

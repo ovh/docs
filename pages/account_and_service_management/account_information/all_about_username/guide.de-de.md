@@ -70,7 +70,7 @@ Die Zwei-Faktor-Authentifizierung erhöht die Sicherheit Ihres OVHcloud Kunden-A
 Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)" sichern.
 
 > [!primary]
-> Die Aktivierung der Zwei-Faktor-Authentifizierung für Ihren OVHcloud Kunden-Account ist eine obligatorische Voraussetzung für das [Hosting von Gesundheitsdaten (HDS Zertifizierung)](https://www.ovhcloud.com/de/enterprise/certification-conformity/hds/).
+> Die Aktivierung der Zwei-Faktor-Authentifizierung für Ihren OVHcloud Kunden-Account ist eine obligatorische Voraussetzung für das [Hosting von Gesundheitsdaten (HDS Zertifizierung)](/links/websiteenterprise/certification-conformity/hds/).
 
 ### Persönliche Daten im Account verwalten <a name="personal-information"></a>
 

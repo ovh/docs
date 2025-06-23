@@ -26,12 +26,12 @@ Gracias a una interfaz gráfica que permite automatizar los parámetros, el aloj
 
 ## Requisitos
 
-- Tener contratado un servicio [VPS reciente](https://www.ovhcloud.com/es-es/vps/){.external} con un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
+- Tener contratado un servicio [VPS reciente](/links/websitevps/){.external} con un [OS compatible con cPanel](/links/websitevps/os/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [área de cliente de OVHcloud](/links/manager) a través de un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
+Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [área de cliente de OVHcloud](/links/manager) a través de un [OS compatible con cPanel](/links/websitevps/os/).
 
 > [!warning]
 >

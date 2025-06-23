@@ -12,7 +12,7 @@ Em certas situações, pode ser útil eliminar um servidor host do seu cluster, 
 
 ## Requisitos
 
-* Dispor do serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
+* Dispor do serviço [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 * Aceder à interface de gestão vSphere.
 
 ## Instruções

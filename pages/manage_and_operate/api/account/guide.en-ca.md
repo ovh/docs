@@ -12,7 +12,7 @@ This guide will also show you how to add one or more logins to this sub-account 
 
 ## Requirements
 
-* Being connected on [OVHcloud API](https://ca.api.ovh.com/){.external}.
+* Being connected on [OVHcloud API](/links/api){.external}.
 * Having [created your credentials for OVHcloud API](/pages/manage_and_operate/api/first-steps){.external}.
 
 * Having a customer account wih Reseller Tag (contact your sales representative for eligibility if applicable).

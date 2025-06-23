@@ -36,9 +36,9 @@ In case of difficulties, we recommend that you contact a [specialist provider](/
 
 ### Does OVHcloud have a backup to restore my data?
 
-The Dedicated Server offering is optionally supported by [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-storage/). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) guide.
+The Dedicated Server offering is optionally supported by [Backup Storage](/links/websitebare-metal/backup-storage/). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) guide.
 
-Our dedicated servers are also compatible with our [different backup solutions](https://www.ovhcloud.com/en-gb/storage-solutions/).
+Our dedicated servers are also compatible with our [different backup solutions](/links/websitestorage-solutions/).
 
 ### What is OVHcloud's responsibility?
 
@@ -79,7 +79,7 @@ Not to our knowledge on this wave of attack.
 
 ### Is the VMware on OVHcloud affected by this incident?
 
-Our customers using [VMware on OVHcloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/) solutions are not affected by the ransomware. Specifically, the SSL gateway makes it possible to avoid this type of attack by blocking external access to this port (OpenSLP 427).
+Our customers using [VMware on OVHcloud](/links/websitehosted-private-cloud/) solutions are not affected by the ransomware. Specifically, the SSL gateway makes it possible to avoid this type of attack by blocking external access to this port (OpenSLP 427).
 
 ## Go further
 

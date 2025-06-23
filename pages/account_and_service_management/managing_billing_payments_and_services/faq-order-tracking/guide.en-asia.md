@@ -38,7 +38,7 @@ Orders cannot be changed. However, If you do not pay, your order will automatica
 
 #### Tips and tricks
 
-If you have already paid for your order, please contact our [customer service team](https://www.ovhcloud.com/asia/contact/).
+If you have already paid for your order, please contact our [customer service team](/links/websitecontact/).
 
 ### How do I cancel my order?
 

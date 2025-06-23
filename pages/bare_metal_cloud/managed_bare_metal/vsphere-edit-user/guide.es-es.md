@@ -12,7 +12,7 @@ Es posible asociar un nombre, un apellido, un número de teléfono y una direcci
 
 ## Requisitos
 
-- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
+- Tener una solución [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento

@@ -12,7 +12,7 @@ The OVHcloud Network plugin was developed to allow for a more focused management
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/)
 - an IP address block linked to your Hosted Private Cloud infrastructure
 - access to the vSphere interface
 
@@ -49,7 +49,7 @@ The new reverse will then be displayed in the table.
 
 > [!primary]
 >
-> This configuration process is also accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and the [OVHcloud APIs](https://ca.api.ovh.com/){.external}. 
+> This configuration process is also accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and the [OVHcloud APIs](/links/api){.external}. 
 > 
 
 ## Go further

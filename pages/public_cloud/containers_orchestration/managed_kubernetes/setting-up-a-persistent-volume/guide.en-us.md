@@ -19,7 +19,7 @@ It also supposes you have read our [Persistent Volumes on OVHcloud Managed Kuber
 
 > [!warning]
 > When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
-> This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en/public-cloud/prices/#storage)
+> This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](/links/websitepublic-cloud/prices/#storage)
 
 ## Persistent Volumes (PV) and Persistent Volume Claims (PVC)
 
@@ -311,6 +311,6 @@ It will not be automatically deleted when a user deletes PVC `default/test-pvc`
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

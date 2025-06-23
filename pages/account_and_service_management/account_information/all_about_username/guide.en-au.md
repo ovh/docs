@@ -70,7 +70,7 @@ Two-factor authentication increases security for your OVHcloud account.
 You can find all the details to enable it in our guide on [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 > [!primary]
-> Enabling two-factor authentication on your OVHcloud account is a mandatory requirement for compliance with the [HDS certification](https://www.ovhcloud.com/en-au/enterprise/certification-conformity/hds/).
+> Enabling two-factor authentication on your OVHcloud account is a mandatory requirement for compliance with the [HDS certification](/links/websiteenterprise/certification-conformity/hds/).
 
 ### How to manage your personal details <a name="personal-information"></a>
 

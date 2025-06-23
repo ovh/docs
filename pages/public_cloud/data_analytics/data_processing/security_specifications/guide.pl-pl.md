@@ -71,7 +71,7 @@ To lock your data stored in the Object Storage service, manage versioning and pr
 
 | **Name** | **Capacity** | **Link** |
 | --- | --- | --- |
-| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [Documentation on how to use API](/pages/public_cloud/data_analytics/data_processing/38_HOWTO_use-with-ovh-api) <br> [API link](https://eu.api.ovh.com/console/#/cloud) |
+| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [Documentation on how to use API](/pages/public_cloud/data_analytics/data_processing/38_HOWTO_use-with-ovh-api) <br> [API link](/links/apiconsole/#/cloud) |
 
 ## 7. Users accounts
 

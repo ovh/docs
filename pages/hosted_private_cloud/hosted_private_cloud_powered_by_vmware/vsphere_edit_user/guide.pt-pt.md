@@ -12,7 +12,7 @@ updated: 2020-07-07
 
 ## Requisitos
 
-- Dispor de uma oferta [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
+- Dispor de uma oferta [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções

@@ -8,7 +8,7 @@ updated: 2023-03-02
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Objectif
@@ -19,7 +19,7 @@ Certains stockages ne seront plus disponibles à la fin Mars 2023 car ils ne ser
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir un identifiant actif dans vSphere.
 
@@ -29,7 +29,7 @@ Certains stockages ne seront plus disponibles à la fin Mars 2023 car ils ne ser
 
 Les nouvelles gammes de stockage vous permettent de bénéficier de disques full-SSD (comparativement à des disques SSD-accelerated sur les précédentes gammes de stockage), de cartes-réseau 2x2x25Gbps (comparativement à des cartes-réseau 2x10Gbps sur les précédentes gammes de stockage), d'une meilleure disponibilité et résilience. 
 
-Consultez notre page [Datastore NFS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/) pour obtenir plus d'informations.
+Consultez notre page [Datastore NFS](/links/websiteenterprise/products/hosted-private-cloud/datastores-nfs/) pour obtenir plus d'informations.
 
 Si vous n'avez pas encore souscrit à une offre plus récente, Utilisez [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage) pour ajouter un stockage plus important.
 

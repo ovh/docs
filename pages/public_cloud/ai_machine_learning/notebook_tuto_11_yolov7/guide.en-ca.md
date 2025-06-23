@@ -15,7 +15,7 @@ It is based on the YOLOv7 open source [repository](https://github.com/WongKinYiu
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- An AI Notebooks project created inside a [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 - A [Public Roboflow](https://public.roboflow.com/) account to access and download the [American Sign Language Letters Dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1)
 
@@ -106,7 +106,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - Do you want to observe the evolution of your metrics during the training of your model? Click [here](/pages/public_cloud/ai_machine_learning/notebook_tuto_03_weight_biases)!
 - Do you want to use your YOLOv7 model in an app? [Here it is](/pages/public_cloud/ai_machine_learning/deploy_tuto_13_streamlit_yolov7).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

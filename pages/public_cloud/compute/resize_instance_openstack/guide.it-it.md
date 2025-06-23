@@ -18,13 +18,13 @@ A causa di un aumento dell'attività o semplicemente per rispondere a nuove esig
 > **Limiti:**
 >
 > - Solo il ridimensionamento a un modello superiore (*upscaling*) è possibile per le istanze classiche.
-> - Un [istanza Metal](https://www.ovhcloud.com/it/public-cloud/metal-instances/) può essere ridimensionata solo verso un altro modello **Metal**.
+> - Un [istanza Metal](/links/websitepublic-cloud/metal-instances/) può essere ridimensionata solo verso un altro modello **Metal**.
 > - Le istanze *Flex* consentono il ridimensionamento verso modelli superiori o inferiori, grazie a una singola dimensione del disco bloccata.
 >
 
 ## Prerequisiti
 
-- Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
+- Disporre di un'istanza [Public Cloud](/links/websitepublic-cloud/) sul proprio account OVHcloud
 - Un [utente OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - Disporre di un [ambiente OpenStack predisposto per la CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - Aver definito le [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)

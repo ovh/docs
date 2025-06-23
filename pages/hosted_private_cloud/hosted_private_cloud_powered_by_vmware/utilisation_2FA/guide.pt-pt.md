@@ -12,7 +12,7 @@ A implementação de uma dupla autenticação permite proteger o acesso ao seu H
  
 ## Requisitos
 
-- Dispor de uma infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) com a opção de [segurança avançada](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (incluída nas ofertas PCI-DSS e HDS).
+- Dispor de uma infraestrutura [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) com a opção de [segurança avançada](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) (incluída nas ofertas PCI-DSS e HDS).
 - Dispor de um smartphone e de uma aplicação de autenticação (exemplos: Google Authenticator, Authy, OTP Auth...).
 
 ## Instruções

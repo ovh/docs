@@ -38,7 +38,7 @@ Es ist nicht möglich, eine Bestellung zu ändern. Unbezahlte Bestellungen werde
 
 #### Tipps und Tricks
 
-Sollten Sie Ihre Bestellung bereits bezahlt haben, wenden Sie sich bitte an unseren [Support](https://www.ovhcloud.com/de/contact/).
+Sollten Sie Ihre Bestellung bereits bezahlt haben, wenden Sie sich bitte an unseren [Support](/links/websitecontact/).
 
 ### Wie kann ich meine Bestellung stornieren?
 

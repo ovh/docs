@@ -55,8 +55,8 @@ Por exemplo: se o seu número for “21 123 45 67”, indique “+351 211234567�
 
 Para conhecer o impacto do Regulamento Geral sobre a Proteção de Dados (RGPD) relativamente à sua atividade profissional ou às suas informações pessoais, pode consultar os recursos seguintes:
 
-- [“A OVHcloud e a proteção de dados pessoais”](https://www.ovhcloud.com/pt/personal-data-protection/);
-- [“RGPD - Resposta a questões frequentes”](https://www.ovhcloud.com/pt/personal-data-protection/faq/?lsdDoc=faq.xml).
+- [“A OVHcloud e a proteção de dados pessoais”](/links/websitepersonal-data-protection/);
+- [“RGPD - Resposta a questões frequentes”](/links/websitepersonal-data-protection/faq/?lsdDoc=faq.xml).
 
 ### Como modificar a minha palavra-passe OVHcloud?
 

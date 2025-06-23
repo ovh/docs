@@ -141,8 +141,8 @@ The upgrade process is straightforward and requires just one API call.
  
 Choose the appropriate API console for your region:
 
-- [EU API console](https://eu.api.ovh.com/console-preview/)
-- [CA API console](https://ca.api.ovh.com/console-preview/)
+- [EU API console](/links/apiconsole-preview/)
+- [CA API console](/links/apiconsole-preview/)
 
 **Step 2: Submit the Upgrade Order**
 

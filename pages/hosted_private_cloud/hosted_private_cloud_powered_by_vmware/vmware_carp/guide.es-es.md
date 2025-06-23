@@ -12,7 +12,7 @@ It may be necessary in some cases to enable promiscuous mode for the proper oper
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/)
 - a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es))
 
 ## Instructions

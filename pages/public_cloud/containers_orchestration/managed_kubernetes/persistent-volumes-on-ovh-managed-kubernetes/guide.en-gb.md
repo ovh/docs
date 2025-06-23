@@ -11,7 +11,7 @@ If you want to know more on those topics, please look at the [OVHcloud Managed K
 
 > [!warning]
 > When a __PersistentVolume__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it, with a lifespan depending on the parent cluster's lifespan.
-> This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-gb/public-cloud/prices/#storage)
+> This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](/links/websitepublic-cloud/prices/#storage)
 
 ## PersistentVolumes
 
@@ -61,7 +61,7 @@ All of them are based on [Cinder](https://docs.openstack.org/cinder/latest/){.ex
 
 The difference between them is the associated physical storage device. The `csi-cinder-high-speed` use SSD, while `csi-cinder-classic` use traditional spinning disks. Both are distributed transparently, on three physical local replicas.
 
-When you create a PersistentVolume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [Flexible Cloud Block Storage Policy](https://www.ovhcloud.com/en-gb/public-cloud/block-storage/){.external}.
+When you create a PersistentVolume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [Flexible Cloud Block Storage Policy](/links/websitepublic-cloud/block-storage/){.external}.
 
 Since Kubernetes 1.11, support for expanding `PersistentVolumeClaims` (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing PersistentVolumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes) tutorial. Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
 
@@ -296,6 +296,6 @@ $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

@@ -42,8 +42,8 @@ Ce processus comporte deux aspects :
 >
 > Si vous souhaitez être assistés par :
 >
-> - des partenaires OVHcloud, certifiés et experts sur nos produits, pour vous accompagner dans votre migration ou l'effectuer à votre place, veuillez cliquer sur [ce lien](https://www.ovhcloud.com/fr/private-cloud-migration/).
-> - nos experts techniques OVHcloud pour un accompagnement sur mesure et vous conseiller à chacune des étapes de votre projet de migration, veuillez cliquer [ce lien](https://www.ovhcloud.com/fr/private-cloud-migration/).
+> - des partenaires OVHcloud, certifiés et experts sur nos produits, pour vous accompagner dans votre migration ou l'effectuer à votre place, veuillez cliquer sur [ce lien](/links/websiteprivate-cloud-migration/).
+> - nos experts techniques OVHcloud pour un accompagnement sur mesure et vous conseiller à chacune des étapes de votre projet de migration, veuillez cliquer [ce lien](/links/websiteprivate-cloud-migration/).
 >
 
 Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. Voici un index des tâches à réaliser:
@@ -120,9 +120,9 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 
 En tant que client Hosted Private Cloud VMware avec un hôte antérieur à 2020, vous souhaitez migrer vers VMware on OVHcloud.
 
-- Si vous utilisez ou prévoyez d'utiliser [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => vous devez effectuer une mise à niveau vers [Network Security Virtualization ou Software-Defined DataCenter](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- Si votre infrastructure VMware doit être [certifiée](https://www.ovhcloud.com/fr/enterprise/certification-compliance/) (HDS, PCI-DSS, HIPA) => vous devez effectuer une mise à niveau vers [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- Si vous n'avez pas NSX sur votre infrastructure actuelle et que vous n'avez pas besoin de certifications => vous pouvez choisir [vSphere](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). 
+- Si vous utilisez ou prévoyez d'utiliser [NSX](/links/websiteenterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => vous devez effectuer une mise à niveau vers [Network Security Virtualization ou Software-Defined DataCenter](/links/websiteenterprise/products/hosted-private-cloud/)
+- Si votre infrastructure VMware doit être [certifiée](/links/websiteenterprise/certification-compliance/) (HDS, PCI-DSS, HIPA) => vous devez effectuer une mise à niveau vers [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/)
+- Si vous n'avez pas NSX sur votre infrastructure actuelle et que vous n'avez pas besoin de certifications => vous pouvez choisir [vSphere](/links/websiteenterprise/products/hosted-private-cloud/). 
 - Les options Veeam Backup Managed et Zerto Disaster Recovery sont disponibles sur l'ensemble des gammes.
 
 Attention, vous ne démarrez pas un nouveau service, il vous faudra commander vos ressources à l'unité. La création d'un nouveau vDC n'entraine pas la livraison de 2 hosts et 2 datastores.
@@ -149,7 +149,7 @@ Vous avez maintenant choisi votre gamme commerciale et vos hosts. Veuillez noter
 **Résultat attendu :** boolean
 
 Si le retour API est `TRUE`, ce datastore est compatible avec les nouvelles gammes et vous pourrez le conserver. Vous pourrez le définir comme global par la suite dans le processus de mise à jour.
-Si le retour API est `FALSE`, ce datastore n'est pas compatible, vous devrez commander de nouveaux datastores, [VMware On OVHcloud datastores](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
+Si le retour API est `FALSE`, ce datastore n'est pas compatible, vous devrez commander de nouveaux datastores, [VMware On OVHcloud datastores](/links/websiteenterprise/products/hosted-private-cloud/datastores-nfs/).<br>
 En fonction de vos besoins en capacité de stockage, vous pouvez choisir le type et le nombre de datastores à commander.
 
 Il vous suffit de remplacer les datastores qui ne sont pas compatibles. Il vous sera possible de libérer les datastores qui ne sont pas compatibles à la fin du processus.
@@ -348,7 +348,7 @@ Si cette organisation est toujours nécessaire, il vous faudra la créer à nouv
 Dans le cadre d'une migration NSX-V vers NSX, si vous utilisez un des services ci-dessous, voici comment effectuer cette migration en détails. 
 
 > [!primary]
-> Si vous avez besoin d'une assistance technique, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans votre démarche de reconstrusction de votre architecture réseau, au travers de prestations personnalisées.
+> Si vous avez besoin d'une assistance technique, notre équipe [Professional Services](/links/websiteprofessional-services/) peut vous accompagner dans votre démarche de reconstrusction de votre architecture réseau, au travers de prestations personnalisées.
 
 Dans un premier temps, nous vous invitions à consulter notre documentation sur [les premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
@@ -382,7 +382,7 @@ De manière générale, en fonction du nombre de *Edges* déployées via NSX-V d
 
 De plus, si votre production nécessite de n'avoir aucune interruption de service, des solutions peuvent être mises en place pour éviter ces coupures.
 
-Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans cette démarche. 
+Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](/links/websiteprofessional-services/) peut vous accompagner dans cette démarche. 
 
 <a name="t1seg"></a>
 ##### Etape 4.8.3.1 Créer les T1 et les segments
@@ -793,6 +793,6 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/websiteprofessional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -12,7 +12,7 @@ All’utente vSphere di un servizio Managed Bare Metal è possibile associare co
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
+- Disporre di una soluzione [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura

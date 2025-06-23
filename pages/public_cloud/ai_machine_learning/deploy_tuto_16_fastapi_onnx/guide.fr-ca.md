@@ -294,4 +294,4 @@ Congratulations! You have obtained the results of the prediction with the labels
 - You can imagine deploying an image segmentation app through this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_14_img_segmentation_app).
 - Feel free to use **Streamlit** to [deploy a Speech-to-Text app](/pages/public_cloud/ai_machine_learning/deploy_tuto_09_streamlit_speech_to_text_app).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

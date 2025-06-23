@@ -26,7 +26,7 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 >
 > Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 >
-> Da maggio 2025, questa guida può essere utilizzata per i server di gamma [Scale](https://www.ovhcloud.com/it/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/).
+> Da maggio 2025, questa guida può essere utilizzata per i server di gamma [Scale](/links/websitebare-metal/scale/) e [High Grade](/links/websitebare-metal/high-grade/).
 >
 > Gli Additional IP possono essere configurati anche in modalità routing o tramite la vRack. Per farlo, consulta: [Configurare la rete su Proxmox VE sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) e [Configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
@@ -81,7 +81,7 @@ L’indirizzo gateway IPv4 assegnato al tuo server è visualizzato nella sezione
 
 #### Tramite le API OVHcloud <a name="viaapi"></a>
 
-Nella [pagina API OVHcloud](https://eu.api.ovh.com/console/), clicca in alto a destra su `Login`{.action}. Nella pagina successiva, inserisci il tuo identificativo cliente OVHcloud.
+Nella [pagina API OVHcloud](/links/apiconsole/), clicca in alto a destra su `Login`{.action}. Nella pagina successiva, inserisci il tuo identificativo cliente OVHcloud.
 
 Eseguire la chiamata API seguente, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
 

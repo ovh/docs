@@ -16,9 +16,9 @@ This problem will not occur if the virtual machine and the backup proxy are loca
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au))
-- [Veeam Managed Backup](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external} option enabled
+- [Veeam Managed Backup](/links/websiteenterprise/products/hosted-private-cloud/veeam-backup-managed/){.external} option enabled
 
 ## Instructions
 

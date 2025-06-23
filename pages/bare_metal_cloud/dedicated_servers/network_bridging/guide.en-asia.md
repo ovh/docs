@@ -24,7 +24,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/asia/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/asia/bare-metal/high-grade/).
+> This guide is not applicable to servers of the ranges [Scale](/links/websitebare-metal/scale/) and [High Grade](/links/websitebare-metal/high-grade/).
 > 
 > Refer to the following guides instead: [Configuring the network on Proxmox VE on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >
@@ -81,7 +81,7 @@ The IPv4 gateway assigned to your server will appear in the `Network` section of
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
-On the [OVHcloud API page](https://ca.api.ovh.com/console/), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
+On the [OVHcloud API page](/links/apiconsole/), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
 
 Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 

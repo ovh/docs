@@ -47,14 +47,14 @@ Consulte la guía [Conectarse a Horizon](/pages/public_cloud/public_cloud_cross_
 
 ### OVHcloud APIv6
 
-Cada acción que realice en el área de cliente de OVHcloud recurre a las [APIv6 de OVHcloud](https://ca.api.ovh.com/).
+Cada acción que realice en el área de cliente de OVHcloud recurre a las [APIv6 de OVHcloud](/links/api).
 Puede incluso ir más lejos en las API que en el área de cliente.
 
 La interfaz es menos visual que el área de cliente de OVHcloud, pero le permitirá realizar un gran número de acciones. De este modo, podrá gestionar y personalizar sus VLAN, añadir interfaces a sus instancias o crear servidores altamente personalizados.
 
 A veces deberá obtener más información antes de utilizar una API específica.
 
-Solo tiene que acceder a las API desde [nuestra página web](https://ca.api.ovh.com/), pero también puede crear sus scripts PHP o Python para llamar.
+Solo tiene que acceder a las API desde [nuestra página web](/links/api), pero también puede crear sus scripts PHP o Python para llamar.
 
 De este modo, podrá automatizar libremente las tareas básicas mediante scripts, optimizar sus propias funciones, etc.
 

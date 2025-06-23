@@ -80,15 +80,15 @@ If your MX Plan email solution was ordered independently of any hosting plan, fo
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en/managed-bare-metal/) solution, follow the instructions in this [guide](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
+To cancel your [Managed Bare Metal](/links/websitemanaged-bare-metal/) solution, follow the instructions in this [guide](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-To cancel your [VMware on OVHcloud](https://www.ovhcloud.com/en/hosted-private-cloud/), follow the instructions in this [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+To cancel your [VMware on OVHcloud](/links/websitehosted-private-cloud/), follow the instructions in this [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Each [Public Cloud](https://www.ovhcloud.com/en/public-cloud/) service can be deleted from the `Public Cloud`{.action} tab in the Control Panel.
+Each [Public Cloud](/links/websitepublic-cloud/) service can be deleted from the `Public Cloud`{.action} tab in the Control Panel.
 
 Select a service on the left, click on the `...`{.action} button to the right of the service concerned, then on `Delete`{.action}, as in the example below for an instance:
 

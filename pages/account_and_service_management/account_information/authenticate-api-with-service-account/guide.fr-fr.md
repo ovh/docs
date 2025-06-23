@@ -37,8 +37,8 @@ A des fins d'exemple dans ce guide, nous utiliserons le compte de service `urn:v
 
 Avant toute chose, il faut que notre compte de service puisse accèder aux APIs utiles. OVHcloud fournit des droits pour chaque appel d'API. Pour trouver quelles sont les autorisations nécessaires, vous pouvez vous rendre sur la console des API de OVHcloud :
 
-- [Console de l'API EU](https://eu.api.ovh.com/console-preview/)
-- [Console de l'API CA](https://ca.api.ovh.com/console-preview/)
+- [Console de l'API EU](/links/apiconsole-preview/)
+- [Console de l'API CA](/links/apiconsole-preview/)
 
 Pour chaque appel d'API, vous trouverez le nom de l'action correspondante à la ligne **IAM actions**.
 Par exemple, pour l'appel */v1/hosting/web*, le nom de l'action nécessaire est *webHosting:apiovh:get* comme vous pouvez l'observer dans l'exemple suivant :

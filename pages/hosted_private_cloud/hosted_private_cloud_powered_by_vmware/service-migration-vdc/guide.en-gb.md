@@ -43,8 +43,8 @@ There are two aspects involved in this process:
 >
 > If you want to be assisted by:
 >
-> - OVHcloud partners, who are certified and experts on our products, to assist you with your migration or perform it on your behalf, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
-> - Our OVHcloud technical experts for tailored support and advice at every stage of your migration project, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
+> - OVHcloud partners, who are certified and experts on our products, to assist you with your migration or perform it on your behalf, please click [this link](/links/websiteprivate-cloud-migration/).
+> - Our OVHcloud technical experts for tailored support and advice at every stage of your migration project, please click [this link](/links/websiteprivate-cloud-migration/).
 >
 
 This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing:
@@ -123,9 +123,9 @@ As an Hosted Private Cloud VMware customer with host prior to 2020, you want to 
 
 Here are a few guidelines:
 
-- If you are using or you plan to use [NSX](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Network Security Virtualization or Software-Defined DataCenter ](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- If you need your VMware infrastructure to be [certified](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [VMware on OVHcloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- If you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose [vSphere](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). 
+- If you are using or you plan to use [NSX](/links/websiteenterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Network Security Virtualization or Software-Defined DataCenter ](/links/websiteenterprise/products/hosted-private-cloud/)
+- If you need your VMware infrastructure to be [certified](/links/websiteenterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/)
+- If you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose [vSphere](/links/websiteenterprise/products/hosted-private-cloud/). 
 - Veeam Managed Backup and Zerto Disaster Recovery options are available.
 
 Please be reminded that you do not create a new service, you will need to order your resources individually. Creating a new vDC will not deliver 2 hosts and 2 datastores.
@@ -152,7 +152,7 @@ You have now chosen your commercial range and your hosts. Please note that some 
 **Expected return:** boolean
 
 If the API return is `TRUE`, this datastore is compatible with the newer ranges and you can keep this datastore, you will make it global later on in the upgrade process.
-If the API return is `FALSE`, this datastore is not compatible, you will need to order new datastores, [VMware On OVHcloud datastores](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
+If the API return is `FALSE`, this datastore is not compatible, you will need to order new datastores, [VMware On OVHcloud datastores](/links/websiteenterprise/products/hosted-private-cloud/datastores-nfs/).<br>
 Based on your needs in terms of storage capacity, you can select which type and how many datastores you would order.
 
 You only need to replace the datastores that are not compatible. You will be able to release the datastores that are not compatible after you upgrade your storage.
@@ -333,7 +333,7 @@ If you still need this organisation, you will need to create it again in the des
 As part of an NSX-V to NSX-T migration, several NSX-V services need to be migrated to NSX-T. If you are using any of the services listed below, here is a step-by-step guide on how to migrate them. 
 
 > [!primary]
-> If you need technical support, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can help you rebuild your network architecture with customised services.
+> If you need technical support, our [Professional Services](/links/websiteprofessional-services/) team can help you rebuild your network architecture with customised services.
 
 As a first step, please read our documentation on [getting started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
@@ -367,7 +367,7 @@ Generally, depending on the number of edges deployed via NSX-V in the source vDC
 
 Additionally, if your production requires zero service interruption, solutions can be implemented to avoid these disruptions.
 
-In both cases mentioned above, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can assist you in this process.
+In both cases mentioned above, our [Professional Services](/links/websiteprofessional-services/) team can assist you in this process.
 
 <a name="t1seg"></a>
 ##### Step 4.8.3.1 Create T1 and segments
@@ -774,6 +774,6 @@ Below is a list of frequently asked questions about vDC migration.
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

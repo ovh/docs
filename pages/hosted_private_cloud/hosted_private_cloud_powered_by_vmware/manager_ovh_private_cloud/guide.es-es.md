@@ -13,7 +13,7 @@ El área de cliente de OVHcloud ofrece múltiples opciones de configuración de 
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Servidor`{.action}, y dentro, en `Private Cloud`{.action}.
-- Haber contratado un servicio [Private Cloud OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
+- Haber contratado un servicio [Private Cloud OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 
 ## Procedimiento
 
@@ -178,7 +178,7 @@ La pestaña `Licencia Windows`{.action} permite activar las licencias SPLA Windo
 
 ![Licencia SPLA Windows](images/controlpanel10.png){.thumbnail}
 
-Puede consultar las tarifas [aquí](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Puede consultar las tarifas [aquí](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/){.external}.
 
 ### Visualización del datacenter
 

@@ -16,7 +16,7 @@ Encontre neste guia todos os endereços IP do serviço CDN Infrastructure a adic
 
 ## Requisitos
 
-- Dispor de uma [oferta CDN Infrastructure OVHcloud](https://www.ovhcloud.com/pt/network/cdn/).
+- Dispor de uma [oferta CDN Infrastructure OVHcloud](/links/websitenetwork/cdn/).
 
 ## Instruções
 

@@ -38,7 +38,7 @@ Não é possível alterar uma encomenda. No entanto, se não realizar o pagament
 
 #### Truques e dicas:
 
-Se já fez o pagamento, sugerimos que contacte o [nosso Apoio ao Cliente](https://www.ovhcloud.com/pt/contact/).
+Se já fez o pagamento, sugerimos que contacte o [nosso Apoio ao Cliente](/links/websitecontact/).
 
 ### Como anular a minha encomenda?
 

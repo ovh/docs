@@ -14,7 +14,7 @@ In this guide you will be able to configure your OIDC provider through the OVHcl
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - An OVHcloud Managed Kubernetes cluster
 
@@ -82,7 +82,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 ```json
 {
-  "issuerUrl": "https://www.ovhcloud.com/fr/",
+  "issuerUrl": "/links/website",
   "clientId": "my-oidc-client-id",
   "usernameClaim": "email",
   "usernamePrefix": "ovh:",
@@ -109,7 +109,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 ```json
 {
-  "issuerUrl": "https://www.ovhcloud.com/fr/",
+  "issuerUrl": "/links/website",
   "clientId": "my-oidc-client-id",
   "usernameClaim": "email",
   "usernamePrefix": "ovhcloud:",
@@ -136,7 +136,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 ```json
 {
-  "issuerUrl": "https://www.ovhcloud.com/fr/",
+  "issuerUrl": "/links/website",
   "clientId": "my-oidc-client-id",
   "usernameClaim": "email",
   "usernamePrefix": "ovh:",
@@ -325,7 +325,7 @@ Terraform will perform the following actions:
   + resource "ovh_cloud_project_kube_oidc" "my-oidc" {
       + client_id            = "my-oidc-client-id"
       + id                   = (known after apply)
-      + issuer_url           = "https://www.ovhcloud.com/fr/"
+      + issuer_url           = "/links/website"
       + kube_id              = "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx"
       + oidc_ca_content      = "LS0tXXXXXXXXXQ0FURS0tLS0tCk1JSUZhekNDQTFPZ0F3SUJBZ0lVYm9YRkZrL1hCQmdQUUI4UHlqbkttUGVWekNjd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1JURUxNQWtHQTFVRUJoTUNRVlV4RXpBUkJnTlZCQWdNQ2xOdmJXVXRVM1JoZEdVeElUQWZCZ05WQkFvTQpHRWx1ZEdWeWJtVjBJRmRwWkdkcGRITWdVSFI1SUV4MFpEQWVGdzB5TWpFd01UUXdOalE0TlROYUZ3MHlNekV3Ck1UUXdOalE0TlROYU1FVXhDekFKQmdOVkJBWVRBa0ZWTVJNd0VRWURWUVFJREFwVGIyMWxMVk4wWVhSbE1TRXcKSHdZRFZRUUtEQmhKYm5SbGNtNWxkQ0JYYVdSbmFYUnpJRkIwZVNCTWRHUXdnZ0lpTUEwR0NTcUdTSWIzRFFFQgpBUVVBQTRJQ0R3QXdnZ0lLQW9JQ0FRQytPMk53bGx2QTQyT05SUHMyZWlqTUp2UHhpN21RblVSS3FrOHJEV1VkCkwzZU0yM1JXeVhtS1AydDQ5Zi9LVGsweEZNVStOSTUzTEhwWmh6N3NpK3dEUFUvWWZWSS9rQmZskfdsfkhdskfgskdGIrQ3FoaWlCUkh0Vm5LblFKUmdvOVJjVkxhRm82UEY0N1V0UWJ2bWVuNGdERnExVkYwVHhUdnFMdwpIMzRZL0U2QUJsSlZnWFBzaWQzNm54eTErNnlKV05vRXNVekFiekpWMHhzTGhxc2hOazA0TWx4YnBhcG1XcEUxCmFFMHRIZGpjUlI3Y1dTRUUwMnRSQzNYL2tSNjBKb3MxR0N0Y0ZQTTVIN3NjOFBXNFRUem1EWWhOeDRiVjV4T28KU0xYRnI5ajBzZEgxbm1wSlI1dWxJT2dPTWV3MHA2d3JOYVV2MGpxc1hzdVdqMVpxdTRLRi81aEQ3azVhRlhKNQpjYWNTUi9mRWxreW1uZis0eHZFOG8wdkRWNFR5NHo3K3lSS1U0clZvZFNBZWZIN3lqeitLV1RRck96L0lHU2NwCmV1YTdqV0hRMDdMYWxyTjV2b0tFaU1JM3MrWjhzeUdVUGVyYXQwdzJMWlc3NnhxVGl4R002clZxUldxVlQ4L1oKQTJMMEc4WGRvNTZvV2lFYVF5RkJtRDFnMXU2UEsvTmFGVDI1L2tTNWJ1dnF5L1dLVGt0UVNhNHNdsfdsf0NUZ2aFErNkRuQzd0TmVnaTZDTkdTb0w0R1dPOEE5UDZRNjE5RkJJZ1VjcGpFMTgvUHpQOEJmcTAxajhnCjZmdm1jNkVPMkxHVHhDcW1DbVp0TnI3OCtQaUxkMHZIY3pqY3E3NzhiNW5WRXRpUVNRQkUyb0ozTVlIZUFIUUkKYVFJREFRQUJvMU13VVRBZEJnTlZIUTRFRmdRVUpaMUhlVmx1U3pjY0U2NEZQYWtuNkRBWnhmSXdId1lEVlIwagpCQmd3Rm9BVUpaMUhlVmx1U3pjY0U2NEZQYWtuNkRBWnhmSXdEd1lEVlIwVEFRSC9CQVV3QXdFQi96QU5CZ2txCmhraUc5dzBCQVFzRkFBT0NBZ0VBQlhNSlU2MjJZVFZVNnZ1K2svNnkwMGNaWlRmVnZtdVJMOXhTcWxVM0I1QmQKVWdyVWx1TmdjN2dhUUlrYzkvWmh2MnhNd0xxUldMWEhiTWx1NkNvdkNiVTVpeWt0NHVWMnl5UzlZYWhmVVRNVQo3TVE0WFRta2hoS0dGbWZBQ2QzTUVwRE55T3hmWXh0UVBwM1NZT2IxRGFKMmUwY01GcdsfsdFLMjMwQnZzYldYYVo4MStIdTU4U1BsYTM5R3FMTG85MzR6dEs4WkRWNFRGTVJxMnNVQ1cxcWFidDh5ejd2RzAKSGV3dXdxelRwR1lTSFI1U0ZvMm45R0xKVUN4SnhxcDlOWVJjMlhUdXRUdkJESzVPMXFZZEJaQzd6cmcxSnczawp2SjI4UGx2TzBQRE42ZVlUdElJdC9yU05ZbW56eVVNRTRYREt0di9KRitLZWZNSWxDTkpzZDRHYXVTdlo5M1NOClhINmcrNEZvRkp4UzNxRmZ0WEc4czNRNnppNzNLRzh5UHZVNHU0WmZNRGd2aG92L0V5YkNLWUpFdVVZSlJWNGEKbmc3cWh3NDBabXQ0eWNCRzU5a2tFSGhNYWtxTWpPaUNkV2x4MEVjZXIxcEFGT1pqN3o1NktURXIxa0ZwUHVaRApjVER5SnNwTjh6dm9CQ0l1ancvQjR6S3kyWStOQitRR1p3dXhyTk9mRGR6ek9yQUE1Ym9OS2gwUUh4c0RxNTExClFaU3hCR21EcGJzN2QzMUQvQll3WEhIUWdwb3FoVUU5dFBGSThpN0pkM2FyeXZCdHlnTWlxSmt1VlRFVk1Ta0UKNTZ0VnFsMjlXenFhRXNrbDN3VUlmczVKKzN3RzRPcWNxRDdXaGQxWUtnc0VUMjdFTWlqVXZIYzQ4TXE0bU1rPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
       + oidc_groups_claim    = [
@@ -366,7 +366,7 @@ Terraform will perform the following actions:
   + resource "ovh_cloud_project_kube_oidc" "my-oidc" {
       + client_id            = "my-oidc-client-id"
       + id                   = (known after apply)
-      + issuer_url           = "https://www.ovhcloud.com/fr/"
+      + issuer_url           = "/links/website"
       + kube_id              = "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx"
       + oidc_ca_content      = "LS0tXXXXXXXXXQ0FURS0tLS0tCk1JSUZhekNDQTFPZ0F3SUJBZ0lVYm9YRkZrL1hCQmdQUUI4UHlqbkttUGVWekNjd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1JURUxNQWtHQTFVRUJoTUNRVlV4RXpBUkJnTlZCQWdNQ2xOdmJXVXRVM1JoZEdVeElUQWZCZ05WQkFvTQpHRWx1ZEdWeWJtVjBJRmRwWkdkcGRITWdVSFI1SUV4MFpEQWVGdzB5TWpFd01UUXdOalE0TlROYUZ3MHlNekV3Ck1UUXdOalE0TlROYU1FVXhDekFKQmdOVkJBWVRBa0ZWTVJNd0VRWURWUVFJREFwVGIyMWxMVk4wWVhSbE1TRXcKSHdZRFZRUUtEQmhKYm5SbGNtNWxkQ0JYYVdSbmFYUnpJRkIwZVNCTWRHUXdnZ0lpTUEwR0NTcUdTSWIzRFFFQgpBUVVBQTRJQ0R3QXdnZ0lLQW9JQ0FRQytPMk53bGx2QTQyT05SUHMyZWlqTUp2UHhpN21RblVSS3FrOHJEV1VkCkwzZU0yM1JXeVhtS1AydDQ5Zi9LVGsweEZNVStOSTUzTEhwWmh6N3NpK3dEUFUvWWZWSS9rQmZskfdsfkhdskfgskdGIrQ3FoaWlCUkh0Vm5LblFKUmdvOVJjVkxhRm82UEY0N1V0UWJ2bWVuNGdERnExVkYwVHhUdnFMdwpIMzRZL0U2QUJsSlZnWFBzaWQzNm54eTErNnlKV05vRXNVekFiekpWMHhzTGhxc2hOazA0TWx4YnBhcG1XcEUxCmFFMHRIZGpjUlI3Y1dTRUUwMnRSQzNYL2tSNjBKb3MxR0N0Y0ZQTTVIN3NjOFBXNFRUem1EWWhOeDRiVjV4T28KU0xYRnI5ajBzZEgxbm1wSlI1dWxJT2dPTWV3MHA2d3JOYVV2MGpxc1hzdVdqMVpxdTRLRi81aEQ3azVhRlhKNQpjYWNTUi9mRWxreW1uZis0eHZFOG8wdkRWNFR5NHo3K3lSS1U0clZvZFNBZWZIN3lqeitLV1RRck96L0lHU2NwCmV1YTdqV0hRMDdMYWxyTjV2b0tFaU1JM3MrWjhzeUdVUGVyYXQwdzJMWlc3NnhxVGl4R002clZxUldxVlQ4L1oKQTJMMEc4WGRvNTZvV2lFYVF5RkJtRDFnMXU2UEsvTmFGVDI1L2tTNWJ1dnF5L1dLVGt0UVNhNHNdsfdsf0NUZ2aFErNkRuQzd0TmVnaTZDTkdTb0w0R1dPOEE5UDZRNjE5RkJJZ1VjcGpFMTgvUHpQOEJmcTAxajhnCjZmdm1jNkVPMkxHVHhDcW1DbVp0TnI3OCtQaUxkMHZIY3pqY3E3NzhiNW5WRXRpUVNRQkUyb0ozTVlIZUFIUUkKYVFJREFRQUJvMU13VVRBZEJnTlZIUTRFRmdRVUpaMUhlVmx1U3pjY0U2NEZQYWtuNkRBWnhmSXdId1lEVlIwagpCQmd3Rm9BVUpaMUhlVmx1U3pjY0U2NEZQYWtuNkRBWnhmSXdEd1lEVlIwVEFRSC9CQVV3QXdFQi96QU5CZ2txCmhraUc5dzBCQVFzRkFBT0NBZ0VBQlhNSlU2MjJZVFZVNnZ1K2svNnkwMGNaWlRmVnZtdVJMOXhTcWxVM0I1QmQKVWdyVWx1TmdjN2dhUUlrYzkvWmh2MnhNd0xxUldMWEhiTWx1NkNvdkNiVTVpeWt0NHVWMnl5UzlZYWhmVVRNVQo3TVE0WFRta2hoS0dGbWZBQ2QzTUVwRE55T3hmWXh0UVBwM1NZT2IxRGFKMmUwY01GcdsfsdFLMjMwQnZzYldYYVo4MStIdTU4U1BsYTM5R3FMTG85MzR6dEs4WkRWNFRGTVJxMnNVQ1cxcWFidDh5ejd2RzAKSGV3dXdxelRwR1lTSFI1U0ZvMm45R0xKVUN4SnhxcDlOWVJjMlhUdXRUdkJESzVPMXFZZEJaQzd6cmcxSnczawp2SjI4UGx2TzBQRE42ZVlUdElJdC9yU05ZbW56eVVNRTRYREt0di9KRitLZWZNSWxDTkpzZDRHYXVTdlo5M1NOClhINmcrNEZvRkp4UzNxRmZ0WEc4czNRNnppNzNLRzh5UHZVNHU0WmZNRGd2aG92L0V5YkNLWUpFdVVZSlJWNGEKbmc3cWh3NDBabXQ0eWNCRzU5a2tFSGhNYWtxTWpPaUNkV2x4MEVjZXIxcEFGT1pqN3o1NktURXIxa0ZwUHVaRApjVER5SnNwTjh6dm9CQ0l1ancvQjR6S3kyWStOQitRR1p3dXhyTk9mRGR6ek9yQUE1Ym9OS2gwUUh4c0RxNTExClFaU3hCR21EcGJzN2QzMUQvQll3WEhIUWdwb3FoVUU5dFBGSThpN0pkM2FyeXZCdHlnTWlxSmt1VlRFVk1Ta0UKNTZ0VnFsMjlXenFhRXNrbDN3VUlmczVKKzN3RzRPcWNxRDdXaGQxWUtnc0VUMjdFTWlqVXZIYzQ4TXE0bU1rPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
       + oidc_groups_claim    = [
@@ -404,7 +404,7 @@ ovh_cloud_project_kube_oidc.my-oidc: Still creating... [1m20s elapsed]
 ovh_cloud_project_kube_oidc.my-oidc: Still creating... [1m30s elapsed]
 ovh_cloud_project_kube_oidc.my-oidc: Still creating... [1m40s elapsed]
 ovh_cloud_project_kube_oidc.my-oidc: Still creating... [1m50s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Creation complete after 1m59s [id=xxxxxxxx-xxxx-XXXX-xxxx-xxxxxxxxxx-my-oidc-client-id-https://www.ovhcloud.com/fr/]
+ovh_cloud_project_kube_oidc.my-oidc: Creation complete after 1m59s [id=xxxxxxxx-xxxx-XXXX-xxxx-xxxxxxxxxx-my-oidc-client-id-/links/website]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
@@ -415,7 +415,7 @@ If you want to delete the OIDC provider you configured through Terraform, you ha
 
 ```bash
 $ terraform destroy
-ovh_cloud_project_kube_oidc.my-oidc: Refreshing state... [id=xxxxxxxx-xxxx-XXXX-xxxx-xxxxxxxxxx-my-oidc-client-id-https://www.ovhcloud.com/fr/]
+ovh_cloud_project_kube_oidc.my-oidc: Refreshing state... [id=xxxxxxxx-xxxx-XXXX-xxxx-xxxxxxxxxx-my-oidc-client-id-/links/website]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   - destroy
@@ -425,8 +425,8 @@ Terraform will perform the following actions:
   # ovh_cloud_project_kube_oidc.my-oidc will be destroyed
   - resource "ovh_cloud_project_kube_oidc" "my-oidc" {
       - client_id            = "my-oidc-client-id" -> null
-      - id                   = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my-oidc-client-id-https://www.ovhcloud.com/fr/" -> null
-      - issuer_url           = "https://www.ovhcloud.com/fr/" -> null
+      - id                   = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my-oidc-client-id-/links/website" -> null
+      - issuer_url           = "/links/website" -> null
       - kube_id              = "xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx" -> null
       - oidc_ca_content      = "LS0tLS1CRUdJTiBDRVJXXXXXXXXXXXXXkNDQTFPZ0F3SUJBZ0lVYm9YRkZrL1hCQmdQUUI4UHlqbkttUGVWekNjd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1JURUxNQWtHQTFVRUJoTUNRVlV4RXpBUkJnTlZCQWdNQ2xOdmJXVXRVM1JoZEdVeElUQWZCZ05WQkFvTQpHRWx1ZEdWeWJtVjBJRmRwWkdkcGRITWdVSFI1SUV4MFpEQWVGdzB5TWpFd01UUXdOalE0TlROYUZ3MHlNekV3Ck1UUXdOalE0TlROYU1FVXhDekFKQmdOVkJBWVRBa0ZWTVJNd0VRWURWUVFJREFwVGIyMWxMVk4wWVhSbE1TRXcKSHdZRFZRUUtEQmhKYm5SbGNtNWxkQ0JYYVdSbmFYUnpJRkIwZVNCTWRHUXdnZ0lpTUEwR0NTcUdTSWIzRFFFQgpBUVVBQTRJQ0R3QXdnZ0lLQW9JQ0FRQytPMk53bGx2QTQyT05SUHMyZWlqTUp2UHhpN21RblVSS3FrOHJEV1VkCkwzZU0yM1JXeVhtS1AydDQ5Zi9LVGsweEZNVStOSTUzTEhwWmh6N3NpK3dEUFUvWWZWSS9rQmZsRm8zeVZCMSsKZWdCSnpyNGIrQ3FoaWlCUkh0Vm5LblFKUmdvOVJjVkxhRm82UEY0N1V0UWJ2bWVuNGdERnExVkYwVHhUdnFMdwpIMzRZL0U2QxxxxXNVekFiekpWMHhzTGhxc2hOazA0TWx4YnBhcG1XcEUxCmFFMHRIZGpjUlI3Y1dTRUUwMnRSQzNYL2tSNjBKb3MxR0N0Y0ZQTTVIN3NjOFBXNFRUem1EWWhOeDRiVjV4T28KU0xYRnI5ajBzZEgxbm1wSlI1dWxJT2dPTWV3MHA2d3JOYVV2MGpxc1hzdVdqMVpxdTRLRi81aEQ3azVhRlhKNQpjYWNTUi9mRWxreW1uZis0eHZFOG8wdkRWNFR5NHo3K3lSS1U0clZvZFNBZWZIN3lqeitLV1RRck96L0lHU2NwCmV1YTdqV0hRMDdMYWxyTjV2b0tFaU1JM3MrWjhzeUdVUGVxxxxxxxxxxxxxldxVlQ4L1oKQTJMMEc4WGRvNTZvV2lFYVF5RkJtRDFnMXU2UEsvTmFGVDI1L2tTNWJ1dnF5L1dLVGt0UVNhNHNZc1ZLbUlQTQp0Zys0NUZ2aFErNkRuQzd0TmVnaTZDTkdTb0w0R1dPOEE5UDZRNjE5RkJJZ1VjcGpFMTgvUHpQOEJmcTAxajhnCjZmdm1jNkVPMkxHVHhDcW1DbVp0TnI3OCtQaUxkMHZIY3pqY3E3NzhiNW5WRXRpUVNRQkUyb0ozTVlIZUFIUUkKYVFJREFRQUJvMU13VVRBZEJnTlZIUTRFRmdRVUpaMUhlVmx1U3pjY0U2NEZQYWtuNkRBWnhXXXVmx1U3pjY0U2NEZQYWtuNkRBWnhmSXdEd1lEVlIwVEFRSC9CQVV3QXdFQi96QU5CZ2txCmhraUc5dzBCQVFzRkFBT0NBZ0VBQlhNSlU2MjJZVFZVNnZ1K2svNnkwMGNaWlRmVnZtdVJMOXXXXXXXXXXXXXrYzkvWmh2MnhNd0xxUldMWEhiTWx1NkNvdkNiVTVpeWt0NHVWMnl5UzlZYWhmVVRNVQo3TVE0WFRta2hoS0dGbWZBQ2QzTUVwRE55T3hmWXh0UVBwM1NZT2IxRGFKMmUwY01Gc081bytORGQ5aFVBVzFoCjFLMjMwQnZzYldYYVo4MStIdTU4U1BsYTM5R3FMTG85MzR6dEs4WkRWNFRGTVJxMnNVQ1cxcWFidDh5ejd2RzAKSGV3dXdxelRwR1lTSFI1U0ZvMm45R0xKVUN4SnhxcDlOWVJjMlhUdXRUdkJESzXXXXXXE42ZVlUdElJdC9yU05ZbW56eVVNRTRYREt0di9KRitLZWZNSWxDTkpzZDRHYXVTdlo5M1NOClhINmcrNEZvRkp4UzNxRmZ0WEc4czNRNnppNzNLRzh5UHZVNHU0WmZNRGd2aG92L0V5YkNLWUpFdVVZSlJWNGEKbmc3cWh3NDBabXQ0eWNCRzU5a2tFSGhNYWtxTWpPaUNkV2x4MEVjZXIxcEFGT1pqN3o1NktURXIxa0ZwUHVaRApjVER5SnNwTjh6dm9CQ0l1ancvQjR6S3kyWStOQitRR1p3dXhyTk9mRGR6ek9yQUE1Ym9OS2gwUUh4c0RxNTExClFaU3hCR21EcGJzN2QzMUQvQll3WEhIUWdwb3FoVUU5dFBGSThpN0pkM2FyeXZCdHlnTWlxSmt1VlRFVk1Ta0UKNTZ0VnFsMjlXenFhRXNrbDN3VUlmczVKKzN3RzRPcWNxRDdXaGQxWUtnc0VUMjdFTWlqVXZIYzQ4TXE0bU1rPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==" -> null
       - oidc_groups_claim    = [
@@ -452,19 +452,19 @@ Do you really want to destroy all resources?
 
   Enter a value: yes
 
-ovh_cloud_project_kube_oidc.my-oidc: Destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my-oidc-client-id-https://www.ovhcloud.com/fr/]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 10s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 20s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 30s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 40s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 50s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 1m0s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 1m10s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 1m20s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 1m30s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 1m40s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 1m50s elapsed]
-ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-https://www.ovhcloud.com/fr/, 2m0s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my-oidc-client-id-/links/website]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 10s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 20s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 30s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 40s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 50s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 1m0s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 1m10s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 1m20s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 1m30s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 1m40s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 1m50s elapsed]
+ovh_cloud_project_kube_oidc.my-oidc: Still destroying... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx-my...client-id-/links/website, 2m0s elapsed]
 ovh_cloud_project_kube_oidc.my-oidc: Destruction complete after 2m9s
 
 Destroy complete! Resources: 1 destroyed.
@@ -472,8 +472,8 @@ Destroy complete! Resources: 1 destroyed.
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-au/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/websitepublic-cloud/kubernetes/).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

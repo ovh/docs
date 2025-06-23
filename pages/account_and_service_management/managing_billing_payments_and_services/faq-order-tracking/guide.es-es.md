@@ -38,7 +38,7 @@ No es posible modificar los pedidos. No obstante, si no realiza el pago, el pedi
 
 #### Ideas y consejos
 
-Si ya ha abonado el pedido, puede contactar con nuestro [servicio de atención al cliente](https://www.ovhcloud.com/es-es/contact/).
+Si ya ha abonado el pedido, puede contactar con nuestro [servicio de atención al cliente](/links/websitecontact/).
 
 ### ¿Cómo cancelar un pedido?
 

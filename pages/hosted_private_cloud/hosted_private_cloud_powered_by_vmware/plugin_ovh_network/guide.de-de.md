@@ -12,7 +12,7 @@ Das OVHcloud Network Plugin wurde entwickelt, um alle IP-Adressen effizient zu v
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie verfügen über eine [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) Infrastruktur.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen mit Ihrer Private Cloud verbundenen IP-Block.
 - Sie haben Zugang zum vSphere Interface.

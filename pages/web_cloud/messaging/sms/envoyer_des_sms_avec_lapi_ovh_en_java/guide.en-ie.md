@@ -23,14 +23,14 @@ Java Wrappers no longer exist. The call to the web service will then be implemen
 
 In this guide, two methods will be called:
 
-- List of active SMS services [https://eu.api.ovh.com/1.0/sms/](https://api.ovh.com/console/#/sms#GET)
-- Sending SMS messages [https://eu.api.ovh.com/1.0/sms/{ServiceName}/jobs/](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
+- List of active SMS services [/links/api1.0/sms/](https://api.ovh.com/console/#/sms#GET)
+- Sending SMS messages [/links/api1.0/sms/{ServiceName}/jobs/](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 
 ### Step 1: Create your credentials.
 
 Credentials are required to use the SMS API. These credentials are created once, to identify the application that will be sending SMS messages. The lifespan of these credentials can be configured.
 
-Create your script credentials (all keys at once) on this page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
+Create your script credentials (all keys at once) on this page: [/links/apicreateToken/](/links/apicreateToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
 
 ![create tokens](images/img_2479.jpg){.thumbnail}
 
@@ -78,7 +78,7 @@ public class Program {
 
         String METHOD = "GET";
         try {
-            URL    QUERY  = new URL("https://eu.api.ovh.com/1.0/sms/");
+            URL    QUERY  = new URL("/links/api1.0/sms/");
             String BODY   = "";
 
             long TSTAMP  = new Date().getTime()/1000;
@@ -205,7 +205,7 @@ public class ProgramSendSms {
         String ServiceName = "sms-xx000000-1";
         String METHOD = "POST";
         try {
-            URL    QUERY  = new URL("https://eu.api.ovh.com/1.0/sms/"+ServiceName+"/jobs");
+            URL    QUERY  = new URL("/links/api1.0/sms/"+ServiceName+"/jobs");
             String BODY   = "{\"receivers\":[\"+33612345678\"],\"message\":\"Test SMS OVH\",\"priority\":\"high\",\"senderForResponse\":true}";
 
             long TSTAMP  = new Date().getTime()/1000;

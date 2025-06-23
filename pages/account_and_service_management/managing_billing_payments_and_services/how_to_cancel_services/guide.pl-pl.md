@@ -78,45 +78,45 @@ Jeśli Twoja oferta e-mail MX Plan została zamówiona niezależnie od hostingu,
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Aby zrezygnować z usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#usuwanie-kont).
+Aby zrezygnować z usługi [E-mail Pro](/links/websiteemails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#usuwanie-kont).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Aby zrezygnować z usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont).
+Aby zrezygnować z usługi [Hosted Exchange](/links/websiteemails/hosted-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont).
 
 #### Private Exchange <a name="private"></a>
 
-Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont_1).
+Aby zrezygnować z usługi [Private Exchange](/links/websiteemails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Aby zrezygnować z usługi [Office 365](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) csp 11, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#zarzadzaj-subskrypcjami).
+Aby zrezygnować z usługi [Office 365](/links/websitecollaborative-tools/microsoft-365/) csp 11, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#zarzadzaj-subskrypcjami).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Aby zrezygnować z usługi [Office 365 csp](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#zarzadzanie-subskrypcjami).
+Aby zrezygnować z usługi [Office 365 csp](/links/websitecollaborative-tools/microsoft-365/) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#zarzadzanie-subskrypcjami).
 
 #### Certyfikat SSL Sectigo <a name="ssl_sectigo"></a>
 
-Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](https://www.ovhcloud.com/pl/web-hosting/options/ssl/), ponieważ nie są one odnawiane automatycznie. Dlatego wystarczy, że nie odnawiacie ich w najbliższym terminie.
+Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](/links/websiteweb-hosting/options/ssl/), ponieważ nie są one odnawiane automatycznie. Dlatego wystarczy, że nie odnawiacie ich w najbliższym terminie.
 
 #### SMS <a name="sms"></a>
 
-Nie istnieje procedura rozwiązania umowy w odniesieniu do [ofert SMS](https://www.ovhcloud.com/pl/sms/). Konto SMS nie generuje miesięcznej subskrypcji ani opłat. Kredyty SMS są ważne bezterminowo.
+Nie istnieje procedura rozwiązania umowy w odniesieniu do [ofert SMS](/links/websitesms/). Konto SMS nie generuje miesięcznej subskrypcji ani opłat. Kredyty SMS są ważne bezterminowo.
 
 Jeśli chcesz usunąć konto SMS, otwierając zgłoszenie w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Aby zrezygnować z usługi [Managed bare metal](https://www.ovhcloud.com/pl/managed-bare-metal/), zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
+Aby zrezygnować z usługi [Managed bare metal](/links/websitemanaged-bare-metal/), zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Aby zrezygnować z usługi [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Aby zrezygnować z usługi [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 ### Public Cloud <a name="publiccloud"></a>
 
-Każda usługa [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) może zostać usunięta, klikając przycisk `...`{.action} po prawej stronie wybranej usługi, a następnie `Usuń`{.action}, jak w poniższym przykładzie dla instancji:
+Każda usługa [Public Cloud](/links/websitepublic-cloud/) może zostać usunięta, klikając przycisk `...`{.action} po prawej stronie wybranej usługi, a następnie `Usuń`{.action}, jak w poniższym przykładzie dla instancji:
 
 ![public cloud instance deletion](images/pci-deletion-en.png){.thumbnail}
 

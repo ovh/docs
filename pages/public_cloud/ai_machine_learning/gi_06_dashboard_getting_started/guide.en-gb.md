@@ -37,7 +37,7 @@ Listed instances are the ones that are in `RUNNING` and `STOPPED` status.
 
 You can also easily access to your [Object Storage](/products/storage-backup).
 
-You can find more details on the prices of the AI tools [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning).
+You can find more details on the prices of the AI tools [here](/links/websitepublic-cloud/prices/#ai-&-machine-learning).
 
 You can also see security information with the number of users and tokens created to use your AI Tools.
 

@@ -38,7 +38,7 @@ Il n'est pas possible de modifier une commande. Cependant, sans paiement de votr
 
 #### Trucs et astuces
 
-Si vous avez déjà réglé votre commande, nous vous invitons à contacter [notre service client](https://www.ovhcloud.com/fr-ca/contact/).
+Si vous avez déjà réglé votre commande, nous vous invitons à contacter [notre service client](/links/websitecontact/).
 
 ### Comment annuler ma commande ?
 

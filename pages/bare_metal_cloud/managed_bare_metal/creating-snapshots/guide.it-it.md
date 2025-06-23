@@ -12,7 +12,7 @@ updated: 2020-11-18
 
 ## Prerequisiti
 
-- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo.
+- Disporre di un servizio [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} attivo.
 - Essere connesso al client vSphere HTML
 
 ## Procedura

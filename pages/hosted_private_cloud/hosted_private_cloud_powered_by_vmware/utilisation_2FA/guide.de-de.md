@@ -12,7 +12,7 @@ Die Einrichtung der Zwei-Faktor-Authentifizierung schützt den Zugang zu Ihrer P
  
 ## Voraussetzungen
 
-- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur mit [Advanced Security](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) Option (in PCI-DSS und HDS Angeboten enthalten).
+- Sie verfügen über eine [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) Infrastruktur mit [Advanced Security](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) Option (in PCI-DSS und HDS Angeboten enthalten).
 - Sie verfügen über ein Smartphone mit installierter Authentifizierungsanwendung (Beispiele: Google Authenticator, Authy, OTP Auth, ...).
 
 ## In der praktischen Anwendung

@@ -13,7 +13,7 @@ Panel klienta OVHcloud oferuje liczne opcje konfiguracji Twojej infrastruktury M
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejście do sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}
-- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+- Posiadanie usługi [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}
 
 ## W praktyce
 
@@ -165,7 +165,7 @@ Karta `Licencja Windows`{.action} pozwala aktywować licencje SPLA Windows w Two
 
 ![Licence SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Cennik znajdziesz [tutaj](https://www.ovhcloud.com/pl/managed-bare-metal/options/){.external}.
+Cennik znajdziesz [tutaj](/links/websitemanaged-bare-metal/options/){.external}.
 
 ### Widok centrum danych
 

@@ -13,7 +13,7 @@ Se il servizio Managed Bare Metal utilizzato non è più in grado di rispondere 
 ## Prerequisiti
 
 - Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}.
-- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo
+- Disporre di un servizio [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} attivo
 
 ## Procedura
 

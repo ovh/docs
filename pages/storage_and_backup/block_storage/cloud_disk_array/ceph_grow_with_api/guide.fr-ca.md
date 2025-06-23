@@ -140,8 +140,8 @@ Le processus de mise à niveau est simple et ne nécessite qu'un seul appel API.
  
 Choisissez la console API appropriée pour votre région :
 
-- [Console de l'API EU](https://eu.api.ovh.com/console-preview/)
-- [Console de l'API CA](https://ca.api.ovh.com/console-preview/)
+- [Console de l'API EU](/links/apiconsole-preview/)
+- [Console de l'API CA](/links/apiconsole-preview/)
 
 **Étape 2 : Envoyer l'ordre de mise à niveau**
 

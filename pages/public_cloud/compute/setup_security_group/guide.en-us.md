@@ -12,7 +12,7 @@ For security reasons, you can configure and use filtering rules that will define
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/).
+- A [Public Cloud project](/links/websitepublic-cloud/).
 - Access to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 ## Instructions

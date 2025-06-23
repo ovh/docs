@@ -12,7 +12,7 @@ In den Verträgen von OVHcloud wird der Ersatz eines unzugänglichen Hosts garan
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie verfügen über eine [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) Infrastruktur.
 
 ## In der praktischen Anwendung
 

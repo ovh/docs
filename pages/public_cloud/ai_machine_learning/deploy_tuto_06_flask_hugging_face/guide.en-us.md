@@ -23,7 +23,7 @@ For more information about Hugging Face, please visit <https://huggingface.co/>.
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we);
-- An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account;
+- An AI Deploy project created inside a [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account;
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
@@ -243,7 +243,7 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/sentime
 - You can also imagine deploying an Object Detection model with **Flask** in this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_04_flask_yolov5).
 - Discover an other tool to deploy easily AI models: **Gradio**. Refer to this [documentation](/pages/public_cloud/ai_machine_learning/deploy_tuto_05_gradio_sketch_recognition).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -13,7 +13,7 @@ El área de cliente de OVHcloud ofrece múltiples opciones de configuración de 
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Bare Metal Cloud`{.action}, y dentro, en `Managed Bare Metal`{.action}.
-- Haber contratado un servicio [Managed Bare Metal OVHcloud](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
+- Haber contratado un servicio [Managed Bare Metal OVHcloud](/links/websitemanaged-bare-metal/){.external}.
 
 ## Procedimiento
 
@@ -167,7 +167,7 @@ La pestaña `Licencia Windows`{.action} permite activar las licencias SPLA Windo
 
 ![Licencia SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Puede consultar las tarifas [aquí](https://www.ovhcloud.com/es/managed-bare-metal/options/){.external}.
+Puede consultar las tarifas [aquí](/links/websitemanaged-bare-metal/options/){.external}.
 
 ### Visualización del datacenter
 

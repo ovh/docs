@@ -70,7 +70,7 @@ Weryfikacja dwuetapowa zwiększa bezpieczeństwo konta OVHcloud.
 Wszystkie informacje, które chcesz aktywować w przewodniku "[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)".
 
 > [!primary]
-> Aktywacja weryfikacji dwuetapowej na Twoim koncie OVHcloud jest niezbędnym warunkiem zachowania zgodności z [hostingiem danych medycznych we Francji (HDS)](https://www.ovhcloud.com/pl/enterprise/certification-conformity/hds/).
+> Aktywacja weryfikacji dwuetapowej na Twoim koncie OVHcloud jest niezbędnym warunkiem zachowania zgodności z [hostingiem danych medycznych we Francji (HDS)](/links/websiteenterprise/certification-conformity/hds/).
 
 ### Jak zarządzać danymi osobowymi? <a name="personal-information"></a>
 
@@ -155,7 +155,7 @@ Zarządzanie administracyjne **lub** techniczne **lub** księgowe jedną lub kil
 
 Jeśli otrzymasz e-mail informujący o nieznanym logowaniu do panelu klienta, zalecamy natychmiastową [zmianę hasła do konta](/pages/account_and_service_management/account_information/manage-ovh-password#zmiana-hasla) i [zabezpieczenie konta weryfikacją dwuetapową](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
-Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z zespołem OVHcloud](https://www.ovhcloud.com/pl/contact/) na dzień 71 750 02 00, aby nasi pracownicy mogli Ci pomóc w podjęciu odpowiednich kroków.
+Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z zespołem OVHcloud](/links/websitecontact/) na dzień 71 750 02 00, aby nasi pracownicy mogli Ci pomóc w podjęciu odpowiednich kroków.
 
 ## Sprawdź również
 

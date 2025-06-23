@@ -12,7 +12,7 @@ Este guia explica como proceder à ativação do VM Encryption no serviço Manag
 
 ## Requisitos
 
-- Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Dispor do serviço [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Dispor de um KMS externo compatível com **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** e presente na [matriz de compatibilidade](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
 - Aceder à interface de gestão vSphere.
 - Dispor de máquinas virtuais com uma versão hardware 13 (mínimo).

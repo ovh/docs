@@ -5,7 +5,7 @@ updated: 2023-09-28
 
 ## Objectif
 
-Ce document est la politique de réversibilité du produit [VMware on OVHcloud sous la qualification SecNumCloud](https://www.ovhcloud.com/fr/enterprise/products/secnumcloud/).
+Ce document est la politique de réversibilité du produit [VMware on OVHcloud sous la qualification SecNumCloud](/links/websiteenterprise/products/secnumcloud/).
 
 Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 
@@ -46,9 +46,9 @@ Les modèles de migration suivants et la documentation disponible s'appliquent �
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
 |Monitoring vScope|Outil de monitoring de l'état et de l'utilisation des ressources conçu par OVHcloud pour Hosted Private Cloud.|N/A|N/A ; vScope est une interface statique.|[Comment utiliser vScope](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_vscope)|
-|Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Migration entrante**: Le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise. Il est activé uniquement sur les IP publiques et ne couvre pas les liaisons du service OVHcloud Connect.<br><br>**Migration sortante**: Commandez et configurez un anti-DDoS avec le nouvel hébergeur.|[Protection anti-DDoS OVHcloud](https://www.ovhcloud.com/fr/security/anti-ddos/)|
+|Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Migration entrante**: Le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise. Il est activé uniquement sur les IP publiques et ne couvre pas les liaisons du service OVHcloud Connect.<br><br>**Migration sortante**: Commandez et configurez un anti-DDoS avec le nouvel hébergeur.|[Protection anti-DDoS OVHcloud](/links/websitesecurity/anti-ddos/)|
 |OVHcloud Connect|Service de connectivité, via des points de présence (POP), qui permet de connecter un réseau d’entreprise hébergé à l’extérieur (site Tier) à un service d’infrastructure fourni par OVHcloud, à travers un réseau privé et sans passer par un accès Internet |N/A|**Migration entrante**: Une fois le service livré et après réception de la clé de service (key service), configurez-le à travers d’interface disponible sur votre espace client OVHcloud<br><br>**Migration sortante**:Utilisez les ports de connexion réseau mis à votre disposition et POP OVHcloud  ou POP Provider pour reproduire une nouvelle architecture réseau.|[Mise en service de OVHcloud Connect direct ](/pages/network/ovhcloud_connect/occ-direct-control-panel)<br><br>[Mise en service de OVHcloud Connect Provider ](/pages/network/ovhcloud_connect/occ-provider-control-panel)|
-|Sécurité avancée pour SDDC|Ensemble de fonctionnalités améliorant la sécurité, telle que l'implémentation de Sécurité Zero Trust, MFA, IDS pour l'accès vSphere...|N/A|**Migration entrante**: Ces fonctionnalités sont disponibles par défaut sur les infrastructures qualifiées SecNumCloud<br><br>**Migration sortante**: Commandez et configurez les fonctionnalités de sécurité appropriées avec le nouveau fournisseur.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
+|Sécurité avancée pour SDDC|Ensemble de fonctionnalités améliorant la sécurité, telle que l'implémentation de Sécurité Zero Trust, MFA, IDS pour l'accès vSphere...|N/A|**Migration entrante**: Ces fonctionnalités sont disponibles par défaut sur les infrastructures qualifiées SecNumCloud<br><br>**Migration sortante**: Commandez et configurez les fonctionnalités de sécurité appropriées avec le nouveau fournisseur.|[SDDC Advanced Security Pack](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
 
 ### Liste des architectures
 
@@ -60,7 +60,7 @@ Les informations relatives à l'architecture (serveurs, stockage, etc.) sont cen
 
 ### Services Partenaires
 
-Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/). Dans le cadre de migrations SecNumCloud, il est recommandé d’utiliser un opérateur de confiance ayant un visa de sécurité de l’ANSSI (PAMS ou PACS).
+Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](/links/partner). Dans le cadre de migrations SecNumCloud, il est recommandé d’utiliser un opérateur de confiance ayant un visa de sécurité de l’ANSSI (PAMS ou PACS).
 
 ### Coût et frais
 

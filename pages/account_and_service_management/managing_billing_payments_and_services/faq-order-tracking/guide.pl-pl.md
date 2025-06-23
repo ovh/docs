@@ -38,7 +38,7 @@ Nie można zmienić zamówienia. Niemniej jednak, w przypadku nieuregulowania p�
 
 #### Wskazówki i porady
 
-Jeśli zapłaciłaś/eś już za Twoje zamówienie, zapraszamy do skontaktowania się z [naszym działem obsługi klienta](https://www.ovhcloud.com/pl/contact/).
+Jeśli zapłaciłaś/eś już za Twoje zamówienie, zapraszamy do skontaktowania się z [naszym działem obsługi klienta](/links/websitecontact/).
 
 ### Jak anulować zamówienie?
 

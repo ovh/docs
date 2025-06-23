@@ -59,7 +59,7 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 - Another way to track your training with an AI notebook is to use **Weights & Biases**. Follow this [tutorial](/pages/public_cloud/ai_machine_learning/notebook_tuto_03_weight_biases).
 - If you want to launch **TensorBoard** in a job, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/training_tuto_05_tensorboard).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

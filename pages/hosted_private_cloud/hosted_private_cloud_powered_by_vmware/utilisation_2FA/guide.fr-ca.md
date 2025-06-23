@@ -12,7 +12,7 @@ La mise en place d'une double authentification permet de protéger l'accès à v
  
 ## Prérequis
 
-- Disposer d'une infrastructure [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/) avec l'option de [sécurité avancée](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclus dans les offres PCI-DSS et HDS).
+- Disposer d'une infrastructure [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) avec l'option de [sécurité avancée](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclus dans les offres PCI-DSS et HDS).
 - Disposer d'un smartphone et d'une application d'authentification (exemples : Google Authenticator, Authy, OTP Auth...).
 
 ## En pratique

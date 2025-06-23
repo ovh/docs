@@ -10,7 +10,7 @@ updated: 2024-01-22
 
 ## Obiettivo
 
-Il nome visualizzato nello [Spazio Cliente OVHcloud](/links/manager) permette di stabilire se un VPS appartiene a una gamma meno recente. Se invece la referenza interna è in formato *vpsXXXX.ovh.net* (dove *X* rappresenta una cifra) e non è stato effettuato il trasferimento del VPS corrispondente alla [nostra gamma attuale di prodotti](https://www.ovhcloud.com/it/vps/), si tratta di un VPS *legacy*. 
+Il nome visualizzato nello [Spazio Cliente OVHcloud](/links/manager) permette di stabilire se un VPS appartiene a una gamma meno recente. Se invece la referenza interna è in formato *vpsXXXX.ovh.net* (dove *X* rappresenta una cifra) e non è stato effettuato il trasferimento del VPS corrispondente alla [nostra gamma attuale di prodotti](/links/websitevps/), si tratta di un VPS *legacy*. 
 
 Il riferimento di un VPS della gamma attuale si presenta in questo modo: *vps-XXXXXXX.vps.ovh.net* (dove *X* può essere una cifra o una lettera).
 
@@ -20,7 +20,7 @@ Un VPS *legacy* implica alcune differenze in termini di gestione.
 
 ## Prerequisiti
 
-- Un [VPS *legacy*](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
+- Un [VPS *legacy*](/links/websitevps/) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
@@ -119,7 +119,7 @@ Questo link ti indirizza al form da compilare in caso di cambio di proprietario 
 
 ### Passa alla nuova gamma
 
-Il VPS può essere migrato automaticamente verso la gamma attuale. Scopri i vantaggi di questa offerta nelle [nostre FAQ dedicate alla migrazione dei VPS](https://www.ovhcloud.com/it/vps/vps-offer-migration/).
+Il VPS può essere migrato automaticamente verso la gamma attuale. Scopri i vantaggi di questa offerta nelle [nostre FAQ dedicate alla migrazione dei VPS](/links/websitevps/vps-offer-migration/).
 
 ## Per saperne di più
 

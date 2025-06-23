@@ -13,7 +13,7 @@ Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihre
 ## Voraussetzungen
 
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich unter `Hosted Private Cloud`{.action} im Bereich `Hosted Private Cloud`{.action}.
-- Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Produkt.
+- Sie verfügen über ein [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external} Produkt.
 
 ## In der praktischen Anwendung
 
@@ -176,7 +176,7 @@ Im Tab `Windows-Lizenz`{.action} können Sie Windows-SPLA-Lizenzen auf Ihrer Hos
 
 ![Windows-SPLA-Lizenz](images/controlpanel10.png){.thumbnail}
 
-Die Preisübersicht hierzu finden Sie [hier](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Die Preisübersicht hierzu finden Sie [hier](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/){.external}.
 
 ### Datacenter-Ansicht
 

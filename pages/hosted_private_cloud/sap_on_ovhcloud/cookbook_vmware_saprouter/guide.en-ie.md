@@ -11,7 +11,7 @@ This guides provides instructions for deploying an SAProuter on VMware on OVHclo
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
-- A [VMware on OVHcloud solution](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/) deployed.
+- A [VMware on OVHcloud solution](/links/websiteenterprise/products/hosted-private-cloud/) deployed.
 - Access to NSX with management rights.
 
 ## Instructions

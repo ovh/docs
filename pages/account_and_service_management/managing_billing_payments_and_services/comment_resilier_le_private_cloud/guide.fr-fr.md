@@ -13,7 +13,7 @@ Si votre offre Private Cloud ne vous convient plus, ou que vous avez commandé u
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 
 ## En pratique
 

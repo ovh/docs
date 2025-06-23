@@ -23,14 +23,14 @@ Nie istnieje jeszcze wrapper Javy. Wywołanie WebService będzie zatem realizowa
 
 W tym przewodniku wykorzystane zostaną dwie metody:
 
-- Lista aktywnych usług SMS [https://eu.api.ovh.com/1.0/sms/](https://api.ovh.com/console/#/sms#GET)
-- Wysyłanie wiadomości SMS [https://eu.api.ovh.com/1.0/sms/{ServiceName}/jobs/](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
+- Lista aktywnych usług SMS [/links/api1.0/sms/](https://api.ovh.com/console/#/sms#GET)
+- Wysyłanie wiadomości SMS [/links/api1.0/sms/{ServiceName}/jobs/](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 
 ### Etap 1: utworzenie identyfikatorów
 
 Identyfikatory są niezbędne do korzystania z interfejsu API SMS. Identyfikatory te tworzy się jednorazowo w celu określenia aplikacji, która będzie wysyłać wiadomości SMS. Czas ważności tych identyfikatorów można skonfigurować.
 
-Utwórz identyfikatory skryptu (all keys at once) na tej stronie: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (ten adres URL automatycznie zapewni Ci odpowiednie uprawnienia na potrzeby kroków opisanych w tym przewodniku).
+Utwórz identyfikatory skryptu (all keys at once) na tej stronie: [/links/apicreateToken/](/links/apicreateToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (ten adres URL automatycznie zapewni Ci odpowiednie uprawnienia na potrzeby kroków opisanych w tym przewodniku).
 
 ![tworzenie tokenów](images/img_2479.jpg){.thumbnail}
 
@@ -78,7 +78,7 @@ public class Program {
 
         String METHOD = "GET";
         try {
-            URL    QUERY  = new URL("https://eu.api.ovh.com/1.0/sms/");
+            URL    QUERY  = new URL("/links/api1.0/sms/");
             String BODY   = "";
 
             long TSTAMP  = new Date().getTime()/1000;
@@ -205,7 +205,7 @@ public class ProgramSendSms {
         String ServiceName = "sms-xx000000-1";
         String METHOD = "POST";
         try {
-            URL    QUERY  = new URL("https://eu.api.ovh.com/1.0/sms/"+ServiceName+"/jobs");
+            URL    QUERY  = new URL("/links/api1.0/sms/"+ServiceName+"/jobs");
             String BODY   = "{\"receivers\":[\"+33612345678\"],\"message\":\"Test SMS OVH\",\"priority\":\"high\",\"senderForResponse\":true}";
 
             long TSTAMP  = new Date().getTime()/1000;

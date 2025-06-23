@@ -12,7 +12,7 @@ Sie können jederzeit einen Snapshot einer virtuellen Maschine erstellen. Wenn S
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
+- Sie verfügen über ein [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} Produkt.
 - Sie haben Zugriff zum vSphere HTML Client.
 
 ## In der praktischen Anwendung

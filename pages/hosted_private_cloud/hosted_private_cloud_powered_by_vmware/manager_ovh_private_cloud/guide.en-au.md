@@ -12,7 +12,7 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage you
 
 ## Requirements
 
-- A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/)
+- A [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
@@ -134,7 +134,7 @@ You can sort the list by types and if the tasks are actionable, you will have op
 #### Windows Licence
 
 The Windows license tab shows your Windows SPLA licence status.<br>
-More information on the [pricing page](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/images-licenses/).
+More information on the [pricing page](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/).
 
 ![SPLA](images/en11spla.png){.thumbnail}
 

@@ -18,7 +18,7 @@ Windows VMs, die von einem Template aus eingerichtet werden, verwenden automatis
 
 > [!primary]
 > 
-> Auf dieser Seite [finden](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/images-licenses/) Sie die Preise der von OVHcloud angebotenen Images.
+> Auf dieser Seite [finden](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/) Sie die Preise der von OVHcloud angebotenen Images.
 >
 
 ## Voraussetzungen

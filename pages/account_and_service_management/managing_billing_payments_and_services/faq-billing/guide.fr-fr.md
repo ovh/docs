@@ -24,7 +24,7 @@ Pour des raisons légales, il est impossible de modifier une facture déjà édi
 
 ### Quels sont les différents moyens de paiement disponibles pour régler mon service ?
 
-Différents moyens de moyens de paiement sont proposés par OVHcloud. Retrouvez-les [ici](https://www.ovhcloud.com/fr/terms-and-conditions/payment/) en vous référant directement à la rubrique « Les différents moyens de paiement proposés par OVHcloud ».
+Différents moyens de moyens de paiement sont proposés par OVHcloud. Retrouvez-les [ici](/links/websiteterms-and-conditions/payment/) en vous référant directement à la rubrique « Les différents moyens de paiement proposés par OVHcloud ».
 
 #### Trucs et astuces
 

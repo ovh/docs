@@ -132,7 +132,7 @@ Zakładki `PHP` i `Python` zawierają elementy, które należy dodać do skryptu
 
 Każda aplikacja, która chce komunikować się z API OVHcloud, musi zostać zgłoszona z wyprzedzeniem.
 
-W tym celu kliknij link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+W tym celu kliknij link: [/links/apicreateToken/](/links/apicreateToken/){.external}.
 
 Wpisz identyfikator klienta, hasło i nazwę aplikacji. Nazwa będzie pomocna później, jeśli chcesz zezwolić innym na jej używanie.
 

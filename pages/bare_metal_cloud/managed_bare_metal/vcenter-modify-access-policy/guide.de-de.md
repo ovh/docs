@@ -12,7 +12,7 @@ Um die Sicherheit Ihrer Managed Bare Metal Infrastruktur zu verbessern, können 
 
 ## Voraussetzungen
 
-- Sie nutzen ein Angebot der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external}.
+- Sie nutzen ein Angebot der Art [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
 
 ## Praktische Anwendung

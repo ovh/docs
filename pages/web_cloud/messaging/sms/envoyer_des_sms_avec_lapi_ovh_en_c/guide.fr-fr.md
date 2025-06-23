@@ -44,11 +44,11 @@ Dans ce guide nous appellerons deux méthodes :
 
 Des identifiants API sont nécessaires pour consommer l’API SMS, ils sont créés de manière unitaire pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
-Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
+Créez vos identifiants de Script (all keys at once) sur cette page: [/links/apicreateToken/](/links/apicreateToken/).
 
 > [!primary]
 >
-> L'URL suivante vous permet d'obtenir automatiquement les bons droits pour ce guide : <https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs>.
+> L'URL suivante vous permet d'obtenir automatiquement les bons droits pour ce guide : </links/apicreateToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs>.
 
 ![création des tokens](images/sms-tokens-01.png){.thumbnail}
 
@@ -115,7 +115,7 @@ namespace ConsoleApplication1
             
             //Paramètres de la méthode appellée
             String METHOD = "GET";
-            String QUERY = "https://eu.api.ovh.com/1.0/sms/";
+            String QUERY = "/links/api1.0/sms/";
             String BODY = "";
 
             Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
@@ -193,7 +193,7 @@ private void sendSms()
             //Paramètres de la méthode appellée
             String ServiceName = "sms-XX00000-1";
             String METHOD = "POST";
-            String QUERY = "https://eu.api.ovh.com/1.0/sms/"+ServiceName+"/jobs";
+            String QUERY = "/links/api1.0/sms/"+ServiceName+"/jobs";
             String BODY =@"{ ""charset"": ""UTF-8"", ""receivers"": [ ""+33660000000"" ], ""message"": ""Test SMS OVH"", ""priority"": ""high"",  ""senderForResponse"": true, ""sender"": ""YOURSENDER""}";
 
             Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;

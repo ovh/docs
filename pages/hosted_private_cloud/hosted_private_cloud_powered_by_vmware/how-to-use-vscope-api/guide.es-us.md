@@ -16,7 +16,7 @@ Esta información también se encuentra disponible en la APIv6 y la API Metrics.
 
 ## Requisitos
 
-- Tener [una infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/).
+- Tener [una infraestructura Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/).
 - Estar conectado a la interfaz vScope.
 
 ## Procedimiento

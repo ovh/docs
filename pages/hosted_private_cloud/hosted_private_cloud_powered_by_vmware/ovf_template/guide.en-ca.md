@@ -14,7 +14,7 @@ Windows VMs deployed from a template automatically use the SPLA licences provide
 
 > [!primary]
 > 
-> You can find the prices of the images offered by OVHcloud on this [page](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/images-licenses/).
+> You can find the prices of the images offered by OVHcloud on this [page](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/).
 >
 
 ## Requirements

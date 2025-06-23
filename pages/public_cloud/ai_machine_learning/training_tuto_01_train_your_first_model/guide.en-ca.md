@@ -12,7 +12,7 @@ AI Training allows you to train your models easily, with just a few clicks or co
 
 AI Training is compatible with leading applications and frameworks such as *Pytorch, Scikit-learn, TensorFlow, Transformers* and others!
 
-More information about AI Training can be found [here](https://www.ovhcloud.com/en-ie/public-cloud/ai-training/).
+More information about AI Training can be found [here](/links/websitepublic-cloud/ai-training/).
 
 ## Objective of this tutorial
 

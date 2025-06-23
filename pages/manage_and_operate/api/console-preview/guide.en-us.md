@@ -6,14 +6,14 @@ updated: 2023-03-27
 
 ## Objective
 
-The APIs available on [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.external} allow you to purchase, manage, update and configure OVHcloud products without using a graphical interface such as the OVHcloud Control Panel.
+The APIs available on [/links/api](/links/api){.external} allow you to purchase, manage, update and configure OVHcloud products without using a graphical interface such as the OVHcloud Control Panel.
 
 **Discover how to explore the OVHcloud APIs on our brand new console**
 
 ## Requirements
 
 - You have an active OVHcloud account and know its credentials.
-- You are on the [OVHcloud API](https://ca.api.ovh.com/){.external} web page.
+- You are on the [OVHcloud API](/links/api){.external} web page.
 
 ## Instructions
 
@@ -25,7 +25,7 @@ The APIs available on [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.extern
 
 ### Signing in to OVHcloud APIs
 
-On the [OVHcloud API](https://ca.api.ovh.com/) page, click `Try the new OVHcloud API console`{.action} to view the list of APIs.
+On the [OVHcloud API](/links/api) page, click `Try the new OVHcloud API console`{.action} to view the list of APIs.
 
 To use the APIs on your products, you must sign in to this site using your OVHcloud credentials.
 
@@ -47,8 +47,8 @@ To use the APIs on your products, you must sign in to this site using your OVHcl
 
 Several branches of OVHcloud APIs are available:
 
-- **V1**: the API available at [https://ca.api.ovh.com/v1](https://ca.api.ovh.com/v1)
-- **V2**: the new OVHcloud API, available at [https://ca.api.ovh.com/v2](https://ca.api.ovh.com/v2)
+- **V1**: the API available at [/links/apiv1](/links/apiv1)
+- **V2**: the new OVHcloud API, available at [/links/apiv2](/links/apiv2)
 
 The API branch can be selected using the drop-down menu in the upper left.
 

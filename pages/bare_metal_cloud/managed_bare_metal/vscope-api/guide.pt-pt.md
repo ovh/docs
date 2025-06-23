@@ -16,7 +16,7 @@ Estas informações encontram-se também disponíveis através da APIv6 e da API
 
 ## Requisitos
 
-- Uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/)
+- Uma [infraestrutura Managed Bare Metal](/links/websitemanaged-bare-metal/)
 - Ter acesso à interface de gestão vScope
 
 ## Instruções

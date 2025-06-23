@@ -13,7 +13,7 @@ IP blocks can be used to make your services accessible online.
 ## Requirements
 
 * access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
-* a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/){.external} on your OVHcloud account
+* a [Managed Bare Metal infrastructure](/links/websitemanaged-bare-metal/){.external} on your OVHcloud account
 
 ## Instructions
 

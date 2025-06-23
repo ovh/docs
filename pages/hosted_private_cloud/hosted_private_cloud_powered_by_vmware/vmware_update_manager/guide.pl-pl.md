@@ -19,7 +19,7 @@ Menedżer aktualizacji oprogramowania VMware pozwala na aktualizację hostów po
 
 ## Wymagania początkowe
 
-- Posiadanie kontaktu administratora [Hosted Private Cloud Infrastructure](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
+- Posiadanie kontaktu administratora [Hosted Private Cloud Infrastructure](/links/websiteenterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
 - Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla NSX (utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
 
 ## W praktyce

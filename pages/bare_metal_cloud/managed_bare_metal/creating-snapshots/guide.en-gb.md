@@ -12,7 +12,7 @@ You can take a snapshot of a virtual machine. Once you have taken the snapshot, 
 
 ## Requirements
 
-- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/)
+- a [Managed Bare Metal infrastructure](/links/websitemanaged-bare-metal/)
 - a user account with access to [vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface) (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions

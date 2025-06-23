@@ -38,7 +38,7 @@ L’ordine non può essere modificato ma, se non ne viene effettuato il saldo, v
 
 #### Consigli e suggerimenti
 
-Se hai già eseguito il pagamento dell’ordine, contatta il nostro [servizio clienti](https://www.ovhcloud.com/it/contact/).
+Se hai già eseguito il pagamento dell’ordine, contatta il nostro [servizio clienti](/links/websitecontact/).
 
 ### Come annullare un ordine?
 

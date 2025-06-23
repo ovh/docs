@@ -18,8 +18,8 @@ When a maintenance is scheduled on your Hosted Private Cloud service, you will b
 ## Requirements
 
 - You have received a maintenance notification email specifically stating that you can **change the maintenance date**. Otherwise, the maintenance cannot be rescheduled.
-- You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/) infrastructure.
-- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or the [API console for your services](https://eu.api.ovh.com/).
+- You are the administrative or technical contact for the [VMware on OVHcloud solution](/links/websiteenterprise/products/hosted-private-cloud/) infrastructure.
+- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or the [API console for your services](/links/api).
 
 ## Instructions
 
@@ -50,7 +50,7 @@ Finally, click the `Modify`{.action} button to confirm your changes.
 
 ### Using the OVHcloud API
 
-Log in to the [API service administration console](https://eu.api.ovh.com/). You can refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+Log in to the [API service administration console](/links/api). You can refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 Run the following API call:
 

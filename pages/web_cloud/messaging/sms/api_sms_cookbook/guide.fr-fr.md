@@ -5,7 +5,7 @@ updated: 2018-03-26
 ---
 
 ## 
-L’envoi de SMS au fil de l’eau correspond à un appel webservice pour envoyer régulièrement un à un des SMS. Pour chaque SMS à envoyer nous allons donc réaliser un appel Webservice en POST à la méthode [/sms/{serviceName}/jobs](https://eu.api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
+L’envoi de SMS au fil de l’eau correspond à un appel webservice pour envoyer régulièrement un à un des SMS. Pour chaque SMS à envoyer nous allons donc réaliser un appel Webservice en POST à la méthode [/sms/{serviceName}/jobs](/links/apiconsole/#/sms/{serviceName}/jobs#POST)
 
 ServiceName correspondant à votre compte SMS. Vous pouvez le récupérer soit dans votre manager, soit en réalisant un appel GET à la méthode [/sms](https://api.ovh.com/console/#/sms#GET). 
 Voici un exemple : /sms/sms-XXXXXX-1/jobs

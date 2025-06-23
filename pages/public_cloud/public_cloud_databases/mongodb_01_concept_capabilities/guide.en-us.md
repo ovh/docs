@@ -69,7 +69,7 @@ License cost is included inside the service plans. You cannot bring your own lic
 
 ### Hardware resources
 
-Please refer to the [price page](https://www.ovhcloud.com/en/public-cloud/prices/#4951) for details on node types and their specifications.
+Please refer to the [price page](/links/websitepublic-cloud/prices/#4951) for details on node types and their specifications.
 
 ### Features
 

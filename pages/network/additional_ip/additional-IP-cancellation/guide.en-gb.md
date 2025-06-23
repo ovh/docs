@@ -22,7 +22,7 @@ As any other OVHcloud service, an Additional IP service can be cancelled at any 
 ## Requirements
 
 - An [Additional IP service](/links/network/additional-ip)
-- Access to the [OVHcloud API console](https://eu.api.ovh.com/)
+- Access to the [OVHcloud API console](/links/api)
 - Consulting the guide [First steps to use the OVHcloud API](/pages/manage_and_operate/api/first-steps) (to familiarise yourself with the OVHcloud API)
 
 ## Instructions

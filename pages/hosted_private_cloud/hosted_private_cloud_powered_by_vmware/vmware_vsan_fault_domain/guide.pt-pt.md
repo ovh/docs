@@ -14,7 +14,7 @@ Este guia tem como objetivo explicar o funcionamento e a implementação de dom�
 
 ## Requisitos
 
-- Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), a fim de receber os identificadores de ligação.
+- Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), a fim de receber os identificadores de ligação.
 - Ter um identificador de utilizador ativo com os direitos específicos para o NSX [criado na Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Ter implementado um [datastore vSan](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
 

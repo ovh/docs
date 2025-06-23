@@ -14,7 +14,7 @@ Les VM Windows déployées à partir d'un template utilisent automatiquement les
 
 > [!primary]
 > 
-> Retrouvez sur cette [page](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/images-licenses/){.external} les tarifs des images proposées par OVHcloud.
+> Retrouvez sur cette [page](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/){.external} les tarifs des images proposées par OVHcloud.
 >
 
 ## Prérequis

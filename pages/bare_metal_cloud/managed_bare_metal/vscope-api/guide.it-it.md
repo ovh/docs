@@ -14,7 +14,7 @@ Per ogni servizio Managed Bare Metal, OVHcloud mette a disposizione il tool **vS
 
 ## Prerequisiti
 
-- Un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/)
+- Un’[infrastruttura Managed Bare Metal](/links/websitemanaged-bare-metal/)
 - Essere connesso all’interfaccia di gestione vScope
 
 ## Procedura

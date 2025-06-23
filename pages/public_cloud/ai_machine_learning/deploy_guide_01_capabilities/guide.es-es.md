@@ -74,7 +74,7 @@ You are also able to check it from the OVHcloud Control Panel in your app inform
 API endpoints to manage your AI Deploy apps can be found here:
 
 - EU: <https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
-- CA: <https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
+- CA: </links/apiconsole/#/cloud/project/%7BserviceName%7D/ai/app#GET>
 
 ### Planned features
 We continuously improve our offers. You can follow, vote and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/4>.
@@ -111,7 +111,7 @@ If you choose `CPU`:
 
 - Memory and local storage resource is not customisable but scaled linearly with each additional CPU.
 
-The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](https://www.ovhcloud.com/es-es/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](/links/websitepublic-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
 
 ``` {.console}
 ovhai capabilities flavor list
@@ -126,7 +126,7 @@ For your information, the current limits are:
 
 Currently, we provide:
 
-- **NVIDIA V100S** ([pricing available here](https://www.ovhcloud.com/es-es/public-cloud/prices/#ai-&-machine-learning)).
+- **NVIDIA V100S** ([pricing available here](/links/websitepublic-cloud/prices/#ai-&-machine-learning)).
 
 ##### **Scaling**
 
@@ -202,7 +202,7 @@ Each Public Cloud project grants a customer by default a maximum of 4 GPUs used 
 
 Browse the full [AI Deploy documentation](/products/public-cloud-ai-and-machine-learning) to further understand the main concepts and get started.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.                                                                                                                                      
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.                                                                                                                                      
 ## Feedback
 
 We would love to help answer questions and appreciate any feedback you may have.

@@ -28,7 +28,7 @@ Using ACLs, you can allow an IP or range of IP addresses (CIDR notation) to acce
 
 ## Instructions
 
-All API routes used for this tutorial are available under the */storage* section here: <https://ca.api.ovh.com/console/#/storage>.
+All API routes used for this tutorial are available under the */storage* section here: </links/apiconsole/#/storage>.
 
 > [!primary]
 >
@@ -142,6 +142,6 @@ You can get the `aclRuleId` either from the ACL creation body response or by lis
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

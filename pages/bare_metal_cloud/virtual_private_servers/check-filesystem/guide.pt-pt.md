@@ -20,7 +20,7 @@ updated: 2023-09-20
 
 ## Requisitos
 
-- um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
+- um [VPS](/links/websitevps/) na sua conta OVHcloud
 - ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções

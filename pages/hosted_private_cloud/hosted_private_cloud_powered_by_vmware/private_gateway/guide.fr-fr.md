@@ -12,7 +12,7 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 **Ce guide vous explique comment activer la private gateway sur votre infrastructure Hosted Private Cloud via l'API OVHCloud.**
 
 > [!warning]
-> N'activez pas l'option Private Gateway si vous utilisez la solution de plan de reprise d'activité [Zerto](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/zerto/) car cela provoquerait un dysfonctionnement de Zerto.
+> N'activez pas l'option Private Gateway si vous utilisez la solution de plan de reprise d'activité [Zerto](/links/websiteenterprise/products/hosted-private-cloud/zerto/) car cela provoquerait un dysfonctionnement de Zerto.
 >
 
 > [!warning]

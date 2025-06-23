@@ -21,7 +21,7 @@ IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls
 
 ## Voraussetzungen
 
-- Sie verfügen über mindestens zwei [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
+- Sie verfügen über mindestens zwei [Public Cloud Instanzen](/links/websitepublic-cloud) in Ihrem Kunden-Account.
 - Sie verfügen über eine Additional IP.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
@@ -69,6 +69,6 @@ Die Additional IP kann vor oder nach der Migration auf dem Zielserver konfigurie
 
 [Additional IP importieren](/pages/public_cloud/public_cloud_network_services/additional-ip-import)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/websiteprofessional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

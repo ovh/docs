@@ -18,7 +18,7 @@ Ze względu na zwiększoną aktywność lub po prostu w celu zaspokojenia nowych
 > **Limity:**
 >
 > - W przypadku klasycznych instancji możliwa jest wyłącznie zmiana rozmiaru instancji na wyższy model (*upscaling*).
-> - [Instancja Metal](https://www.ovhcloud.com/pl/public-cloud/metal-instances/) można zmienić tylko na inny model **Metal**.
+> - [Instancja Metal](/links/websitepublic-cloud/metal-instances/) można zmienić tylko na inny model **Metal**.
 > - Instancje *Flex* umożliwiają zmianę rozmiaru na wyższy lub niższy model ze względu na pojedynczy zablokowany rozmiar dysku.
 >
 

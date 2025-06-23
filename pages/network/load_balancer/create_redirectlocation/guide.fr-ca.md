@@ -14,7 +14,7 @@ Le service OVH Load Balancer agit par défault comme un mandataire ou "Proxy". I
 - Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external}.
 - Avoir accès :
     - à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, ou bien
-        - à l'[API OVH](https://ca.api.ovh.com/){.external}.
+        - à l'[API OVH](/links/api){.external}.
 
 ## En pratique
 
@@ -76,7 +76,7 @@ cliquez sur `Appliquer la configuration`{.action}.
 
 ### Ajouter une redirection personnalisée via l'API
 
-Dans l'[API OVH](https://ca.api.ovh.com/){.external}, les Redirections sont spécifiées dans la chaîne de caractère redirectLocation :
+Dans l'[API OVH](/links/api){.external}, les Redirections sont spécifiées dans la chaîne de caractère redirectLocation :
 
 * création d'un nouveau Frontend
 

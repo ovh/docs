@@ -12,7 +12,7 @@ Es posible asociar un nombre, un apellido, un número de teléfono y una direcci
 
 ## Requisitos
 
-- Tener una solución [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
+- Tener una solución [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento

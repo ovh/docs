@@ -10,7 +10,7 @@ The purpose of this guide is to explain how to resize your file system after ins
 
 ## Requirements
 
-- Having an instance with FreeBSD 12 in your [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) or a [Virtual Private Server](https://www.ovhcloud.com/en-ca/vps/) with FreeBSD 12
+- Having an instance with FreeBSD 12 in your [Public Cloud project](/links/websitepublic-cloud/) or a [Virtual Private Server](/links/websitevps/) with FreeBSD 12
 - Having freshly installed the instance/VPS or having resized it
 
 > [!primary]

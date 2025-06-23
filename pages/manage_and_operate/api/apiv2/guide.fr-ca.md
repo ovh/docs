@@ -6,11 +6,11 @@ updated: 2023-04-17
 
 ## Objectif
 
-Les API disponibles sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
+Les API disponibles sur [/links/api](/links/api){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
 
 Historiquement, les API d'OVHcloud sont disponibles sous la branche **/1.0** correspondant à la première version de l'API que nous avons publiée. 
 
-Une nouvelle branche des API OVHcloud est disponible sous le préfixe **/v2** sur [https://ca.api.ovh.com/v2](https://ca.api.ovh.com/console-preview/?branch=v2){.external}. 
+Une nouvelle branche des API OVHcloud est disponible sous le préfixe **/v2** sur [/links/apiv2](/links/apiconsole-preview/?branch=v2){.external}. 
 
 Cette nouvelle branche regroupera des nouvelles routes d'API, retravaillées sous un nouveau format, et deviendra la branche d'API principale pour les nouveaux développements de fonctionnalités de produits OVHcloud.<br>
 La branche **/1.0** continuera d'exister en parallèle de la branche **/v2** mais ne contiendra pas la même fonctionnalité. En tant que client, vous pourrez consommer des API de la branche **/1.0** et **/v2** simultanément dans vos programmes, tout en conservant la même authentification et les mêmes outils pour appeler l'API. Afin de standardiser le nommage de nos branches d'API, la branche **/1.0** est également disponible à travers l'alias **/v1**.
@@ -41,7 +41,7 @@ Vous aurez probablement besoin de tester vos applications avec la nouvelle versi
 Pour cela, vous pouvez indiquer la version majeure à utiliser avec l'en-tête `X-Schemas-Version` dans vos appels API :
 
 ```bash
-curl -X GET -H "X-Schemas-Version: 1.0" https://ca.api.ovh.com/v2/iam/policy
+curl -X GET -H "X-Schemas-Version: 1.0" /links/apiv2/iam/policy
 ```
 
 Si cet en-tête n'est pas fourni lors d'un appel à l'API, la version majeure de votre compte est utilisée par défaut.
@@ -51,7 +51,7 @@ Lors de la sortie d'une nouvelle version majeure, nous ferons une évaluation de
 
 #### Récupérer les versions disponibles via la console
 
-Il est possible de voir la liste des versions disponible sur la console de l'API OVHcloud. Pour cela, ouvrez la [console](https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#servers){.external}.
+Il est possible de voir la liste des versions disponible sur la console de l'API OVHcloud. Pour cela, ouvrez la [console](/links/apiconsole-preview/?section=%2Fiam&branch=v2#servers){.external}.
 
 Les différentes versions sont affichées dans la section **SCHEMAS VERSION**. Vous pouvez ensuite sélectionner une version pour voir les schémas d'API associés.
 
@@ -64,7 +64,7 @@ Deux approches opposées existent pour voir l'état courant d'une ressource à t
 - **Approche centrée sur le processus** : l'API expose l'état courant des ressources (par exemple une instance Public Cloud) et offre des opérations pour les modifier (par exemple, changer la taille d'un disque).
 - **Approche centrée sur les ressources** : l'API expose à la fois l'état courant des ressources ainsi que l'état souhaité. Les modifications se font directement en mettant à jour l'état souhaité des ressources. Dans ce cas, l'API effectue elle-même les actions nécessaires pour atteindre l'état ciblé.
 
-La première approche est celle utilisée par l'API actuelle : [https://ca.api.ovh.com/v1](https://ca.api.ovh.com/v1){.external}.
+La première approche est celle utilisée par l'API actuelle : [/links/apiv1](/links/apiv1){.external}.
 
 L'APIv2 utilise l'approche centrée sur les ressources, qui la rend plus facilement utilisable « *as-code* », notamment à travers des outils tels que [Terraform](https://www.terraform.io){.external}. Ce fonctionnement permet également d'abstraire toute la complexité du processus de transformation d'une ressource d'un état à un autre puisqu'il est à la charge de l'API et non du client.
 
@@ -137,7 +137,7 @@ Les en-têtes utilisés sont les suivants :
 Par exemple, l'appel suivant retournera les 5 premiers éléments ainsi que le curseur à utiliser pour récupérer la page suivante :
 
 ```bash
-curl https://ca.api.ovh.com/v2/iam/policy -H "X-Pagination-Size: 5"
+curl /links/apiv2/iam/policy -H "X-Pagination-Size: 5"
 # Si le nombre de ressources à retourner est supérieur à 5, l'en-tête suivant
 # sera disponible dans la réponse : "X-Pagination-Cursor-Next: xxxyyyzzz"
 ```
@@ -145,7 +145,7 @@ curl https://ca.api.ovh.com/v2/iam/policy -H "X-Pagination-Size: 5"
 La page suivante peut être récupérée en fournissant le curseur renvoyé dans la réponse de l'appel précédent :
 
 ```bash
-curl https://ca.api.ovh.com/v2/iam/policy -H "X-Pagination-Size: 5" -H "X-Pagination-Cursor: xxxyyyzzz"
+curl /links/apiv2/iam/policy -H "X-Pagination-Size: 5" -H "X-Pagination-Cursor: xxxyyyzzz"
 ```
 
 L'absence de l'en-tête `X-Pagination-Cursor-Next` dans une réponse d'API contenant une liste d'éléments signifie que la dernière page est atteinte et que tous les éléments disponibles on été retournés.

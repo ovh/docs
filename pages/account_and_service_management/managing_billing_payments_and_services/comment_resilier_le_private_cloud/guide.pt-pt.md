@@ -13,7 +13,7 @@ Se à sua oferta de Hosted Private Cloud já não lhe convier, ou se encomendou 
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external} e aceder à secção `Hosted Private Cloud`{.action} e, depois, `Private Cloud`{.action}.
-- Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
+- Ter um produto [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 
 ## Instruções
 

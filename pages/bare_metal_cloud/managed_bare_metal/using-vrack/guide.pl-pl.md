@@ -18,7 +18,7 @@ vRack umożliwia podłączenie różnych usług cloud OVHcloud w ramach jednej l
 
 ### Panel klienta
 
-Podczas dostarczania usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/) część *datacenter* jest już w sieci vRack.
+Podczas dostarczania usługi [Managed Bare Metal](/links/websitemanaged-bare-metal/) część *datacenter* jest już w sieci vRack.
 
 ![Centrum danych](images/vRackDatacenter.PNG){.thumbnail}
 

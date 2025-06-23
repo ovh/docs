@@ -12,7 +12,7 @@ Możesz ograniczyć dostęp do vCenter, pozwalając na łączenie się z nim tyl
 ## Wymagania początkowe
 
 * Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-* Posiadanie [infrastruktury Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external} na koncie OVHcloud.
+* Posiadanie [infrastruktury Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} na koncie OVHcloud.
 
 ## W praktyce
 

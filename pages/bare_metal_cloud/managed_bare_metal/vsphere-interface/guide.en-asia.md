@@ -10,7 +10,7 @@ updated: 2020-11-18
 
 ## Requirements
 
-- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/asia/managed-bare-metal/) of which you are an administrative contact (to receive login credentials)
+- a [Managed Bare Metal infrastructure](/links/websitemanaged-bare-metal/) of which you are an administrative contact (to receive login credentials)
 - a user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia))
 
 ## Instructions

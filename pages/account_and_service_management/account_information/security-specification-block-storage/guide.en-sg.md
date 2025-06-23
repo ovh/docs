@@ -41,7 +41,7 @@ You  must implement an additional backup device based on customer tools or optio
 
 | **Source** | **Content** | **Documentation** |
 | --- | --- | --- |
-| Control Panel | Logs of interactions made by admin, technical or billing contacts in the Control Panel and services they have access to, using API calls. |- <https://eu.api.ovh.com/console/#/me> (see `/me/api/logs`)<br>- [List of API calls done with your account](https://eu.api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://eu.api.ovh.com/console/#/me/api/logs/services~GET)<br>- [Get your audit logs](https://eu.api.ovh.com/console/#/me/logs/audit~GET) |
+| Control Panel | Logs of interactions made by admin, technical or billing contacts in the Control Panel and services they have access to, using API calls. |- </links/apiconsole/#/me> (see `/me/api/logs`)<br>- [List of API calls done with your account](/links/apiconsole/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](/links/apiconsole/#/me/api/logs/services~GET)<br>- [Get your audit logs](/links/apiconsole/#/me/logs/audit~GET) |
 
 ### 6. API
 

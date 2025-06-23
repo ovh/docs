@@ -64,7 +64,7 @@ If you need to restore your data using a backup, you can follow [this guide](/pa
 
 | **Name** | **Capacity** | **Link** |
 | --- | --- | --- |
-| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [https://eu.api.ovh.com/console/#/dbaas/logs](https://eu.api.ovh.com/console/#/dbaas/logs)) |
+| Control Panel and service | Manage customer accounts and services on which each account has access rights. | [/links/apiconsole/#/dbaas/logs](/links/apiconsole/#/dbaas/logs)) |
 
 ## 7.Accounts - User
 
@@ -164,4 +164,4 @@ As the encryption keys are unique for each project, they will be deleted after s
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

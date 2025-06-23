@@ -16,7 +16,7 @@ Mit der Einrichtung eines Webservers und verwandter Software kann Ihr Cloud Serv
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/de/vps/) oder eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Kunden-Account (ausgenommen Windows-Systeme).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/websitevps/) oder eine [Public Cloud Instanz](/links/websitepublic-cloud/) in Ihrem Kunden-Account (ausgenommen Windows-Systeme).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff (sudo) auf Ihren Dienst über SSH.
 

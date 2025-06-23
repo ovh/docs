@@ -21,7 +21,7 @@ Les API disponibles sur [https://api.ovh.com/](https://api.ovh.com/){.external} 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin ](#gofurther) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin ](#gofurther) » de ce guide.
 > 
 
 ### Utilisation simple
@@ -128,7 +128,7 @@ Les onglets `PHP` et `Python` contiennent les éléments à ajouter dans votre s
 
 Toute application souhaitant communiquer avec l'API OVHcloud doit être déclarée à l'avance.
 
-Pour ce faire, cliquez sur le lien suivant : [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+Pour ce faire, cliquez sur le lien suivant : [/links/apicreateToken/](/links/apicreateToken/){.external}.
 
 Renseignez votre identifiant client, votre mot de passe et le nom de votre application. Le nom sera utile plus tard si vous voulez autoriser d'autres personnes à l'utiliser.
 

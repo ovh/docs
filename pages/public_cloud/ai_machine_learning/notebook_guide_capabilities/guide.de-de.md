@@ -88,7 +88,7 @@ If you choose `CPU`:
 
 - Memory and local storage resources are not customizable but scaled linearly with each additional CPU.
 
-The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](https://www.ovhcloud.com/de/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](/links/websitepublic-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
 
 ``` {.console}
 ovhai capabilities flavor list
@@ -103,7 +103,7 @@ For your information, the current limits are:
 
 Currently, we provide:
 
-- **NVIDIA V100S** ([pricing available here](https://www.ovhcloud.com/de/public-cloud/prices/#ai-&-machine-learning)).
+- **NVIDIA V100S** ([pricing available here](/links/websitepublic-cloud/prices/#ai-&-machine-learning)).
 
 #### Available storage
 
@@ -194,7 +194,7 @@ Each Public Cloud project grants a customer by default a maximum of 4 GPUs used 
 
 Browse the full [AI Notebooks documentation](/products/public-cloud-ai-and-machine-learning) to further understand the main concepts and get started.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

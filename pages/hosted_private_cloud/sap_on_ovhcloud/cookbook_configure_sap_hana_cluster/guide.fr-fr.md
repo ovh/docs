@@ -15,7 +15,7 @@ Cette configuration réduit la durée maximale d'interruption admissible (RTO), 
 ## Prérequis
 
 - Un accès à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Une solution [SAP HANA on Private Cloud](https://www.ovhcloud.com/fr/hosted-private-cloud/sap-hana/) déployée.
+- Une solution [SAP HANA on Private Cloud](/links/websitehosted-private-cloud/sap-hana/) déployée.
 - Deux machines virtuelles SAP HANA déployées ayant la même version SAP HANA installée.
 
 ## En pratique
@@ -760,6 +760,6 @@ Dans ce cas, le comportement attendu est uniquement la détection de la perte du
 - [Configurer un cluster SAP HANA](https://documentation.suse.com/sles-sap/15-SP1/html/SLES4SAP-guide/cha-s4s-cluster.html)
 - [Configurer une réplication SAP HANA avec hdbnsutil](https://help.sap.com/docs/SAP_HANA_PLATFORM/4e9b18c116aa42fc84c7dbfd02111aba/2dd26de6360046309e1579accbd9e527.html)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/?_gl=1*835bqy*_gcl_au*MzU3MTAzMzA5LjE2ODY1NTk4MTE.) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/websiteprofessional-services/?_gl=1*835bqy*_gcl_au*MzU3MTAzMzA5LjE2ODY1NTk4MTE.) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

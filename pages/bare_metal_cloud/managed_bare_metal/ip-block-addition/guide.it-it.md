@@ -13,7 +13,7 @@ Un blocco IP Un blocco IP può essere utilizzato per rendere i tuoi servizi acce
 ## Prerequisiti
 
 * Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-* Disporre di un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} sul proprio account OVHcloud
+* Disporre di un’[infrastruttura Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} sul proprio account OVHcloud
 
 ## Procedura
 

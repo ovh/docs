@@ -15,7 +15,7 @@ Nos serveurs High Grade et Scale vous proposent une option évolutive qui vous p
 
 ## Prérequis
 
-- Un serveur [High Grade](https://www.ovhcloud.com/fr-ca/bare-metal/high-grade/) ou [SCALE](https://www.ovhcloud.com/fr-ca/bare-metal/scale/)
+- Un serveur [High Grade](/links/websitebare-metal/high-grade/) ou [SCALE](/links/websitebare-metal/scale/)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique

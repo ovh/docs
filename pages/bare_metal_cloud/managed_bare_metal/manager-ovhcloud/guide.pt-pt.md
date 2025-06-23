@@ -13,7 +13,7 @@ A Área de Cliente OVHcloud oferece-lhe várias opções de personalização da 
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Managed Bare Metal`{.action}.
-- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Ter um produto [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 
 ## Instruções
 
@@ -167,7 +167,7 @@ O separador `Licença Windows`{.action} permite ativar as licenças SPLA Windows
 
 ![Licença SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Encontrará a página das tarifas [aqui](https://www.ovhcloud.com/pt/managed-bare-metal/options/).
+Encontrará a página das tarifas [aqui](/links/websitemanaged-bare-metal/options/).
 
 ### Panorama datacenter
 

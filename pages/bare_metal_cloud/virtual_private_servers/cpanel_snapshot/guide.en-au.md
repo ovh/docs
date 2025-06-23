@@ -18,7 +18,7 @@ However, if Jailed Shell access is enabled, cPanel creates a *virtfs* which cann
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-au/vps) solution with a [compatible distribution](https://www.ovhcloud.com/en-au/vps/os/)
+- A [VPS](/links/websitevps) solution with a [compatible distribution](/links/websitevps/os/)
 - cPanel installed on your server
 
 ## Instructions

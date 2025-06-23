@@ -8,13 +8,13 @@ updated: 2020-11-18
 
 Protecting and backing up your VMs is an essential part of ensuring long-term stability for your infrastructure. This is why we offer a managed backup solution based on Veeam Backup & Replication technology. You can use it to restore your data simply, by enabling automatic backup for your VMs.
 
-Backups are performed using a virtual machine (VM) within your [Managed Bare Metal](https://www.ovhcloud.com/en-ca/managed-bare-metal/) infrastructure. The backup data is outsourced to an independent storage space at OVHcloud. Backups are performed during night-time, with a retention time depending on the solution level you choose.
+Backups are performed using a virtual machine (VM) within your [Managed Bare Metal](/links/websitemanaged-bare-metal/) infrastructure. The backup data is outsourced to an independent storage space at OVHcloud. Backups are performed during night-time, with a retention time depending on the solution level you choose.
 
 **This guide explains how to deploy and use the Veeam Managed Backup option.**
 
 ## Requirements
 
-- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-ca/managed-bare-metal/)
+- a [Managed Bare Metal infrastructure](/links/websitemanaged-bare-metal/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - a user account with access to vSphere and the permission ["Add resources"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) for the pertinent data centre
 - [vSphere High Availability (HA)](/pages/bare_metal_cloud/managed_bare_metal/vmware_ha_high_availability) enabled

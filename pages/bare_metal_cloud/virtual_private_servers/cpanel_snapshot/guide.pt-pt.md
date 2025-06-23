@@ -22,7 +22,7 @@ Ao criar um backup do seu VPS (no caso de subscrição dos backups automáticos 
 
 ## Requisitos
 
-- Ter uma oferta [VPS recente](https://www.ovhcloud.com/pt/vps/){.external} com uma distribuição [compatível com cPanel](https://www.ovhcloud.com/pt/vps/os/).
+- Ter uma oferta [VPS recente](/links/websitevps/){.external} com uma distribuição [compatível com cPanel](/links/websitevps/os/).
 - cPanel deve ser instalado no seu servidor
 
 ## Instruções

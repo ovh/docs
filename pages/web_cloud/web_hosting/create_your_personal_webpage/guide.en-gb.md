@@ -364,13 +364,13 @@ Links to navigate a site from page to page are essential elements of the Web. To
 We can do it the same way to make text interactive:
 
 ```html
-<p>Offer <a href="https://www.ovhcloud.com/en-gb/domains/">domain name</a> includes:</p>
+<p>Offer <a href="/links/websitedomains/">domain name</a> includes:</p>
 ```
 
 To display the link target in a new tab, simply add a `target` attribute to your `<a>` tag:
 
 ```html
-<p>Offer <a href="https://www.ovhcloud.com/en-gb/domains/" target="_blank">domain name</a> includes:</p>
+<p>Offer <a href="/links/websitedomains/" target="_blank">domain name</a> includes:</p>
 ```
 
 ### How do I store content on my hosting plan?

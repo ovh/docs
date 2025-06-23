@@ -429,7 +429,7 @@ Restaurez une sauvegarde spécifique de votre base de données en cas de problè
 
 Ce guide vous a présenté les principales requêtes API pour gérer votre hébergement web OVHcloud, comme l'attachement de domaines, la gestion des certificats SSL et des bases de données. 
 
-Il existe cependant de nombreux autres appels API disponibles, que vous pouvez explorer en fonction de vos besoins spécifiques. Pour plus d'options et de fonctionnalités, vous pouvez consulter la section « [/hosting/web](https://eu.api.ovh.com/console/?section=%2Fhosting%2Fweb&branch=v1#get-/hosting/web) » de l'API OVHcloud.
+Il existe cependant de nombreux autres appels API disponibles, que vous pouvez explorer en fonction de vos besoins spécifiques. Pour plus d'options et de fonctionnalités, vous pouvez consulter la section « [/hosting/web](/links/apiconsole/?section=%2Fhosting%2Fweb&branch=v1#get-/hosting/web) » de l'API OVHcloud.
 
 ## Aller plus loin
 

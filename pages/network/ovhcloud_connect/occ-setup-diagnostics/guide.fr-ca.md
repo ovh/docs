@@ -10,7 +10,7 @@ Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise 
 
 ## Prérequis
 
-- Posséder une [offre OVHcloud Connect](https://www.ovhcloud.com/fr-ca/network-security/ovhcloud-connect/)
+- Posséder une [offre OVHcloud Connect](/links/websitenetwork-security/ovhcloud-connect/)
 
 ## En pratique
 
@@ -163,6 +163,6 @@ La BGP Area côté client doit être différente de celle côté OVHcloud.
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/websiteprofessional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

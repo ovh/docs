@@ -12,7 +12,7 @@ Pode tirar uma snapshot de uma máquina virtual. Uma vez tirada a snapshot, pode
 
 ## Requisitos
 
-- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Ter um produto [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Estabelecer uma ligação ao cliente vSphere HTML
 
 ## Instruções

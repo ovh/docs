@@ -121,7 +121,7 @@ Cette section aborde les actions qui peuvent être effectuées via l'API OVHclou
 
 Ces actions mettent en évidence les capacités opérationnelles des vRack Services, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
 
-Vous devez vous authentifier au préalable via cette [page](https://ca.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth).
+Vous devez vous authentifier au préalable via cette [page](/links/apiconsole-preview/?section=%2FvrackServices&branch=v2#auth).
 
 <a name="actions"></a>
 
@@ -139,7 +139,7 @@ Vous devez tout d'abord lister vos vRack Services afin de récuperer l'id du vRa
 Voici la ligne de commande correspondante :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource" \
+curl -X GET "/links/apiv2/vrackServices/resource" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
 ```
@@ -156,7 +156,7 @@ L'id qui sera utilisé dans notre exemple est le suivant : `vrs-a9y-v91-xnm-f5u`
 Voici la ligne de commande correspondante :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u/eligibleManagedService" \
+curl -X GET "/links/apiv2/vrackServices/resource/vrs-a9y-v91-xnm-f5u/eligibleManagedService" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
 ```
@@ -224,7 +224,7 @@ Pour cette section, veuillez bien lire la section [Actions](#actions) ci-dessus.
 Action formulée avec un `GET`{.action} :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X GET "/links/apiv2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg" \
 ```
@@ -286,7 +286,7 @@ Retour de l'appel API :
 Action formulée avec le `PUT`{.action} - Mise à jour en cours :
 
 ```bash
-curl -X PUT "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X PUT "/links/apiv2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg"\
  -H "content-type: application/json" \
@@ -370,7 +370,7 @@ Retour de l'appel API :
 Action formulée avec le `GET`{.action} :
 
 ```bash
-curl -X GET "https://ca.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X GET "/links/apiv2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg" \
 ```

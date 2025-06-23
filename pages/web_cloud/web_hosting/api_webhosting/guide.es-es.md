@@ -428,7 +428,7 @@ Restore a specific backup of your database if there is a problem:
 
 This guide has introduced you to the main API requests for managing your OVHcloud web hosting plan, such as domain attachment, SSL certificate management and database management.
 
-However, there are many other API calls available, which you can explore depending on your specific needs. For more options and features, you can refer to the « [/hosting/web](https://eu.api.ovh.com/console/?section=%2Fhosting%2Fweb&branch=v1#get-/hosting/web) » section of the OVHcloud API.
+However, there are many other API calls available, which you can explore depending on your specific needs. For more options and features, you can refer to the « [/hosting/web](/links/apiconsole/?section=%2Fhosting%2Fweb&branch=v1#get-/hosting/web) » section of the OVHcloud API.
 
 ## Go further
 

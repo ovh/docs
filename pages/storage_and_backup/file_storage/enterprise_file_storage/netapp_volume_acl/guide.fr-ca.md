@@ -13,7 +13,7 @@ Dans ce guide, découvrez comment gérer les ACL d'un volume pour l'offre OVHclo
 ## Prérequis
 
 - Disposer d'une offre OVHcloud Enterprise File Storage avec un volume
-- Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/)
+- Être connecté sur la page des [API OVHcloud](/links/api)
 
 ## L'essentiel
 
@@ -28,7 +28,7 @@ Les ACL permettent d'autoriser ou de restreindre l'accès à un volume.
 
 ## Instructions
 
-Toutes les routes API utilisées pour ce guide sont disponibles dans la section */storage* : <https://ca.api.ovh.com/console/#/storage>.
+Toutes les routes API utilisées pour ce guide sont disponibles dans la section */storage* : </links/apiconsole/#/storage>.
 
 > [!primary]
 >
@@ -142,6 +142,6 @@ Vous pouvez obtenir le `aclRuleId` à partir de la réponse obtenue lors de cré
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/websiteprofessional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

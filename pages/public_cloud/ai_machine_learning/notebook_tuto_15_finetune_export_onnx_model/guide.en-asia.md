@@ -39,7 +39,7 @@ Exporting your model in ONNX format allows you to **optimize the inference** of 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- An AI Notebooks project created inside a [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 - A [Kaggle](https://www.kaggle.com/) account to download the dataset
 
@@ -108,7 +108,7 @@ There are many other tasks that exist in the computer vision field. Check our ot
 
 - [Perform Brain tumor segmentation using U-Net](/pages/public_cloud/ai_machine_learning/notebook_tuto_12_image-segmentation-unet-tumors)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

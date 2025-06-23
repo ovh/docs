@@ -11,9 +11,9 @@ La technologie Intel SGX fournit des fonctions de sécurité avancées de chiffr
 
 ## Prérequis
 
-- Avoir un serveur dédié compatible avec l’option [SGX](https://www.ovhcloud.com/fr-ca/bare-metal/intel-software-guard-extensions/){.external}
+- Avoir un serveur dédié compatible avec l’option [SGX](/links/websitebare-metal/intel-software-guard-extensions/){.external}
 - Disposer des identifiants de connexion reçus par e-mail suite à l'installation
-- Avoir accès à l'[espace client OVHcloud](/links/manager) ou l’[API OVHcloud](https://ca.api.ovh.com/)
+- Avoir accès à l'[espace client OVHcloud](/links/manager) ou l’[API OVHcloud](/links/api)
 - Ubuntu 18.04 ou équivalent installé sur le serveur
 
 ## En pratique
@@ -60,7 +60,7 @@ Continuez la lecture de ce guide à [l'étape 3](#sgx-softwares) ci-dessous.
 
 #### Étape 1 : Se connecter à l’API
 
-Allez sur <https://ca.api.ovh.com/console/> et cliquez sur `Login`{.action} dans le coin supérieur droit de la page.  
+Allez sur </links/apiconsole/> et cliquez sur `Login`{.action} dans le coin supérieur droit de la page.  
 Sur la page suivante, connectez-vous avec les identifiants de votre compte OVHcloud.
 
 #### Étape 2 : Activer SGX

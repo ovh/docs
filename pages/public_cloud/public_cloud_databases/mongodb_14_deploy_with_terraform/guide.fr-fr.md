@@ -15,7 +15,7 @@ However, if you would like to know how to do the same with Terraform, but over a
 ## Requirements
 
 - **OVHcloud requirements**
-    - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
+    - A [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account
     - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
     - A private vRack network that can be accessed from your Public Cloud project (if you don’t have one, please refer to our guide [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)).
     - An OpenStack user account in your Public Cloud project (if you don’t have one, please refer to the following guide: [Managing OpenStack users](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user/)).
@@ -294,7 +294,7 @@ You are now connected to your MongoDB managed database from a machine on your pr
 
 ## We want your feedback!
 
-For more information about Managed Databases for MongoDB, please visit our [product page](https://www.ovhcloud.com/fr/public-cloud/mongodb/).
+For more information about Managed Databases for MongoDB, please visit our [product page](/links/websitepublic-cloud/mongodb/).
 
 Visit the [Terraform repository](https://registry.terraform.io/providers/ovh/ovh/latest) to find the latest documentation about OVHcloud provider.
 
@@ -304,4 +304,4 @@ Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask question
 
 Join our community of users on <https://community.ovh.com/en/>.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

@@ -22,8 +22,8 @@ Quando uma manutenção é programada no seu Hosted Private Cloud, ser-lhe-á en
 ## Requisitos
 
 - Ter recebido um e-mail de notificação de manutenção indicando especificamente que pode "**alterar a data de execução da manutenção**". Caso contrário, a data da manutenção não pode ser alterada.
-- Ser o contacto administrador ou técnico da infraestrutura [VMware on OVHcloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou à [interface de administração dos seus serviços através da API](https://eu.api.ovh.com/).
+- Ser o contacto administrador ou técnico da infraestrutura [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou à [interface de administração dos seus serviços através da API](/links/api).
 
 ## Instruções
 
@@ -54,7 +54,7 @@ Finalmente, clique no botão `Alterar`{.action} para validar as suas modificaç�
 
 ### A partir da API OVHcloud
 
-Ligue-se à [interface de administração dos seus serviços através da API](https://eu.api.ovh.com/). Pode consultar o nosso manual "[Primeiros passos com as API OVHcloud](/pages/manage_and_operate/api/first-steps)".
+Ligue-se à [interface de administração dos seus serviços através da API](/links/api). Pode consultar o nosso manual "[Primeiros passos com as API OVHcloud](/pages/manage_and_operate/api/first-steps)".
 
 Execute a seguinte chamada API:
 

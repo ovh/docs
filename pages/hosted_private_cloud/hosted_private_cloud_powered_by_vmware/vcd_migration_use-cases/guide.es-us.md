@@ -58,7 +58,7 @@ You can find all the information you need on our VCD pages:
 
 - [Webinar - Managed VMware Cloud Director on OVHcloud (video)](https://vimeo.com/936590009/b52b3ba8ce)
 - [Webinar - VMware by Broadcom New Offerings and Opportunities (video)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
-- [OVHcloud.com - Managed VMware Cloud Director on OVHcloud](https://www.ovhcloud.com/en-gb/lp/vmware-vcd-evolution/)
+- [OVHcloud.com - Managed VMware Cloud Director on OVHcloud](/links/websitelp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
 Migrations will be carried out in 4 waves, from november 2024, depending on the services active in your environment.
@@ -139,7 +139,7 @@ For more information, please refer to our guide: [VMware Cloud Director - Veeam 
 
 ### Reset the "Admin" password on Managed VMware Cloud Director
 
-You can now reset the **Admin** password for a Managed VMware Cloud Director organization using APIv2: [Access APIv2](https://ca.api.ovh.com/console/?section=%2FvmwareCloudDirector&branch=v2#post-/vmwareCloudDirector/organization/-organizationId-/password).
+You can now reset the **Admin** password for a Managed VMware Cloud Director organization using APIv2: [Access APIv2](/links/apiconsole/?section=%2FvmwareCloudDirector&branch=v2#post-/vmwareCloudDirector/organization/-organizationId-/password).
 
 > [!api]
 >
@@ -157,7 +157,7 @@ This interface allows you to view and download the files still stored on your da
 
 For security reasons, only users who existed before the migration can log in.
 
-Passwords for these users may have been reset during the migration process. If needed, you can update them using the [dedicated OVHcloud API](https://ca.api.ovh.com/console/) with the following call:
+Passwords for these users may have been reset during the migration process. If needed, you can update them using the [dedicated OVHcloud API](/links/apiconsole/) with the following call:
 
 > [!api]
 >

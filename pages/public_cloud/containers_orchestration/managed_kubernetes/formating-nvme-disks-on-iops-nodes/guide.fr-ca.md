@@ -4,7 +4,7 @@ excerpt: 'Find out how to partition and format NVMe disks on OVHcloud Managed Ku
 updated: 2023-06-30
 ---
 
-When you order [IOPS nodes](https://www.ovhcloud.com/fr-ca/public-cloud/iops/) for your OVHcloud Managed Kubernetes cluster, the NVMe disks are neither partitioned nor formatted, therefore they cannot be used to create Kubernetes persistent volumes.
+When you order [IOPS nodes](/links/websitepublic-cloud/iops/) for your OVHcloud Managed Kubernetes cluster, the NVMe disks are neither partitioned nor formatted, therefore they cannot be used to create Kubernetes persistent volumes.
 In this tutorial we are going to guide you on how to easily achieve the partitioning and the formatting of your NVMe disks on your existing nodes but also on future ones.
 
 ## Why using Kubernetes IOPS nodes?
@@ -380,6 +380,6 @@ kubectl delete -f format-nvme-configmap.yaml
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](/links/community).

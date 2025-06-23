@@ -16,7 +16,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) in Ihrem OVHcloud Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](/links/websitepublic-cloud) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

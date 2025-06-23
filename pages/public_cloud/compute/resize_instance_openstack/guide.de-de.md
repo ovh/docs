@@ -18,13 +18,13 @@ Ihre Instanz kann aufgrund erhöhter Aktivität oder einfach aufgrund neuer Anfo
 > **Limitierungen**
 >
 > - Bei klassischen Instanzen ist nur eine Größenänderung auf ein höheres Modell (*Upscaling*) möglich.
-> - Eine [Metal Instanz](https://www.ovhcloud.com/de/public-cloud/metal-instances/) kann nur auf ein anderes Modell der Reihe **Metal** geändert werden.
+> - Eine [Metal Instanz](/links/websitepublic-cloud/metal-instances/) kann nur auf ein anderes Modell der Reihe **Metal** geändert werden.
 > - *Flex*-Instanzen ermöglichen die Größenänderung auf größere oder keinere Modelle aufgrund einer fixen Diskgröße.
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/).
+- Sie verfügen über eine [Public Cloud Instanz](/links/websitepublic-cloud/).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 - Sie haben [OpenStack CLI auf Ihrem System installiert](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 - Sie haben die [OpenStack Umgebungsvariablen konfiguriert](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).

@@ -5,7 +5,7 @@ updated: 2021-05-05
 
 ## Objective
 
-This document is the reversibility policy for the [Hosted Private Cloud Premier Powered by VMware](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) product.
+This document is the reversibility policy for the [Hosted Private Cloud Premier Powered by VMware](/links/websiteenterprise/products/hosted-private-cloud/) product.
 
 This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 
@@ -46,7 +46,7 @@ The following migration models and available documentation apply to all the feat
 |---|---|---|---|---|
 |vScope monitoring|Health and resource usage monitoring tool designed by OVHcloud for Privrate Cloud.|N/A|N/A ; vScope is a static interface.|[How to use vScope](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_vscope)|
 |Anti-DDoS|The anti-DDoS is a set of equipment and means put in place to absorb distributed denial of service attacks. It includes an analysis of traffic, the "aspiration" towards a specialized network, and mitigation, ensured by VAC technology developed by OVHcloud.|N/A|**Inbound migration**: The Anti-DDoS is a component of our infrastructure, enabled by default. No action is required.<br><br>**Outbound migration**: Order and configure an anti-DDoS with the new provider.|[OVHcloud anti-DDoS protection](https://www.ovh.co.uk/anti-ddos/)<br><br>[Anti-DDoS Technology](https://www.ovh.co.uk/anti-ddos/anti-ddos-technology.xml)|
-|SDDC Security advanced|Package of features improving security, such as Zero trust implementation, MFA, IDS for vSphere access ...|N/A|**Inbound migration**: Order the activation of security advanced in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).<br><br>**Outbound migration**: Order and configure appropriate security features with the new provider.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
+|SDDC Security advanced|Package of features improving security, such as Zero trust implementation, MFA, IDS for vSphere access ...|N/A|**Inbound migration**: Order the activation of security advanced in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).<br><br>**Outbound migration**: Order and configure appropriate security features with the new provider.|[SDDC Advanced Security Pack](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
 
 ### Architecture listing
 
@@ -60,7 +60,7 @@ Information about the architecture (such as servers, storage ...) is centralized
 
 ### Partner services
 
-OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](https://partner.ovhcloud.com/es-es/directory/).
+OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](/links/partner).
 
 ### Cost and fees
 

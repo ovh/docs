@@ -11,7 +11,7 @@ Ce guide vous détaille les étapes pour le déploiement d'une machine virtuelle
 ## Prérequis
 
 - Un accès à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Une [solution SAP HANA on Private Cloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/sap-hana/) déployée
+- Une [solution SAP HANA on Private Cloud](/links/websitehosted-private-cloud/sap-hana/) déployée
 - [Un projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) dans votre compte OVHcloud avec :
     - [Un bucket Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et [un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture
     - [Un second bucket Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et [un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec les droits de lecture et d'écriture
@@ -252,6 +252,6 @@ systemctl enable chronyd.service
 - [SAP Note 2779240 - Workload-based sizing for virtualized environments](https://me.sap.com/notes/2779240)
 - [SAP HANA on VMware vSphere](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/?_gl=1*39h6u1*_gcl_au*MzU3MTAzMzA5LjE2ODY1NTk4MTE.) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/websiteprofessional-services/?_gl=1*39h6u1*_gcl_au*MzU3MTAzMzA5LjE2ODY1NTk4MTE.) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

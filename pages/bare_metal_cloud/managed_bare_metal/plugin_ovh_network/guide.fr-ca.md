@@ -12,7 +12,7 @@ Le plugin OVHcloud Network a été développé pour permettre une gestion plus c
 
 ## Prérequis
 
-- Disposer d'une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
+- Disposer d'une offre [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Un bloc d'adresse IP lié à votre Managed Bare Metal.
 - Accès à l'interface vSphere.

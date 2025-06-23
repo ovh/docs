@@ -23,7 +23,7 @@ Aby optymalnie chronić system, serwer z systemem Windows Server dysponuje włas
 
 ## Wymagania początkowe
 
-- Serwer [VPS](https://www.ovhcloud.com/pl/vps/) z systemem Windows na koncie OVHcloud
+- Serwer [VPS](/links/websitevps/) z systemem Windows na koncie OVHcloud
 - Dostęp administratora do serwera przez zdalny pulpit w systemie Windows 
 
 ## W praktyce

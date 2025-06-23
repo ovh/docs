@@ -56,8 +56,8 @@ Dla numeru „06 12 34 56 78” należy zatem wpisać „+48 612345678”. Prefi
 
 Aby lepiej poznać konsekwencje rozporządzenia ogólnego o ochronie danych osobowych (RODO) dla Twojej działalności zawodowej lub względem ochrony Twoich danych osobowych, zapoznaj się z treścią poniższych dokumentów:
 
-- [OVHcloud i ochrona danych osobowych](https://www.ovhcloud.com/pl/personal-data-protection/);
-- [RODO - Pytania do eksperta OVHcloud](https://www.ovhcloud.com/pl/personal-data-protection/faq/).
+- [OVHcloud i ochrona danych osobowych](/links/websitepersonal-data-protection/);
+- [RODO - Pytania do eksperta OVHcloud](/links/websitepersonal-data-protection/faq/).
 
 ### Jak zmienić moje hasło OVHcloud?
 

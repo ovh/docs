@@ -12,7 +12,7 @@ OVHcloud offers VPS customers pre-installed application images for quick and eas
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
+- A [VPS](/links/websitevps/) in your OVHcloud account
 
 ## Instructions
 

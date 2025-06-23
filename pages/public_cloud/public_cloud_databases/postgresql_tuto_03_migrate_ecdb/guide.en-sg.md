@@ -10,7 +10,7 @@ updated: 2022-03-16
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/compute/) in your OVHcloud account
+- A [Public Cloud project](/links/websitepublic-cloud/compute/) in your OVHcloud account
 - A PostgreSQL database running on-premises (the "source" instance)
 - A PostgreSQL database running on OVHcloud Public Cloud Databases (the "target" instance)
 - A PostgreSQL client that can connect to both database instances, source and target.
@@ -26,7 +26,7 @@ These guides can help you to meet these requirements:
 - This document outlines an offline migration path for your database, which means you will have to suspend all the writes from your application for the duration of the migration. Ensure you plan sufficient downtime to carry out all the migration tasks.
 - Ensure the source and destination PostgreSQL versions match.
 - Ensure you have good enough bandwidth between the client machine and both source and destination databases.
-- Ensure you choose a [Database plan](https://www.ovhcloud.com/en-sg/public-cloud/prices/#databases) with appropriate compute, storage and memory resources.
+- Ensure you choose a [Database plan](/links/websitepublic-cloud/prices/#databases) with appropriate compute, storage and memory resources.
 
 ## Procedure
 
@@ -145,6 +145,6 @@ Once you verified that the database migration was successful, update client appl
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

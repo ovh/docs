@@ -105,7 +105,7 @@ Pour commander un certificat SSL, sélectionnez l'onglet `Certificat SSL`{.actio
 |Élément|Fonction|
 |---|---|
 |Nom|Si vous le souhaitez, vous pouvez nommer votre certificat, afin de l'identifier rapidement quand vous en avez plusieurs|
-|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV ([Pour plus de détails](https://www.ovhcloud.com/fr/web-hosting/options/ssl/))|
+|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV ([Pour plus de détails](/links/websiteweb-hosting/options/ssl/))|
 |Fully Qualified Domain Name (FQDN)|Le(s) domaine(s) concerné(s)|
 
 #### Ajout d'un certificat SSL externe

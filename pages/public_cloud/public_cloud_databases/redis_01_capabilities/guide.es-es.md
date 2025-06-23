@@ -74,7 +74,7 @@ More information on <https://redis.com/legal/licenses/>.
 
 ### Hardware resources
 
-For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/es-es/public-cloud/prices/#7262).
+For information on node types and pricing, please refer to the [price page](/links/websitepublic-cloud/prices/#7262).
 
 ### Features
 
@@ -171,6 +171,6 @@ Here is the list of unsupported commands:
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

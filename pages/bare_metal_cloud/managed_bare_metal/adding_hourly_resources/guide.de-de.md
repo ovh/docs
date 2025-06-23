@@ -12,7 +12,7 @@ Bei einer Hosted Managed Bare Metal-Lösung können Sie stündlich abgerechnete 
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Infrastruktur.
+- Sie verfügen über eine [Managed Bare Metal](/links/websitemanaged-bare-metal/) Infrastruktur.
 - [Dem Benutzer die Berechtigung "Hinzufügen von Ressourcen"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) für das betreffende Rechenzentrum über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} erteilen.
 - Sie haben Zugriff zum vSphere-Client.
 

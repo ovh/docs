@@ -6,14 +6,14 @@ updated: 2023-03-27
 
 ## Objectif
 
-Les API disponibles sur [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
+Les API disponibles sur [/links/api](/links/api){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
 
 **Découvrez comment explorer les API OVHcloud à travers notre nouvelle console.**
 
 ## Prérequis
 
 - Disposer d'un compte OVHcloud actif et connaître ses identifiants.
-- Être sur la page web des [API OVHcloud](https://eu.api.ovh.com/){.external}.
+- Être sur la page web des [API OVHcloud](/links/api){.external}.
 
 ## En pratique
 
@@ -21,12 +21,12 @@ Les API disponibles sur [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.exte
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin ](#gofurther) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin ](#gofurther) » de ce guide.
 > 
 
 ### Se connecter aux API OVHcloud
 
-Sur la page des [API OVHcloud](https://eu.api.ovh.com/), cliquez sur `Try the new OVHcloud API console`{.action} pour afficher la liste des API.
+Sur la page des [API OVHcloud](/links/api), cliquez sur `Try the new OVHcloud API console`{.action} pour afficher la liste des API.
 
 Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site grâce à vos identifiants OVHcloud.
 
@@ -48,8 +48,8 @@ Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site gr
 
 Plusieurs branches des API OVHcloud sont disponibles :
 
-- **V1** : l'API disponible à l'URL [https://eu.api.ovh.com/v1](https://eu.api.ovh.com/v1)
-- **V2** : la nouvelle API OVHcloud, disponible à l'URL [https://eu.api.ovh.com/v2](https://eu.api.ovh.com/v2)
+- **V1** : l'API disponible à l'URL [/links/apiv1](/links/apiv1)
+- **V2** : la nouvelle API OVHcloud, disponible à l'URL [/links/apiv2](/links/apiv2)
 
 La branche d'API peut être sélectionnée à l'aide du menu déroulant en haut à gauche de la console.
 

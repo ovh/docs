@@ -13,7 +13,7 @@ This guide explains how to get started with the OVHcloud AI Dashboard, a consoli
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account
 
 ## Instructions
 
@@ -37,7 +37,7 @@ Listed instances are the ones that are in `RUNNING` and `STOPPED` status.
 
 You can also easily access to your [Object Storage](/products/storage-object-storage).
 
-You can find more details on the prices of the AI tools [here](https://www.ovhcloud.com/it/public-cloud/prices/#ai-&-machine-learning).
+You can find more details on the prices of the AI tools [here](/links/websitepublic-cloud/prices/#ai-&-machine-learning).
 
 You can also see security information with the number of users and tokens created to use your AI Tools.
 
@@ -72,4 +72,4 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

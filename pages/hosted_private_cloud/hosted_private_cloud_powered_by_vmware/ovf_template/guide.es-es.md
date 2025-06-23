@@ -16,7 +16,7 @@ Las MV Windows desplegadas a partir de una plantilla utilizan automáticamente l
 
 > [!primary]
 > 
-> En [esta página](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/images-licenses/) puede consultar el precio del licenciamiento de las imágenes que OVHcloud pone a su disposición.
+> En [esta página](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/) puede consultar el precio del licenciamiento de las imágenes que OVHcloud pone a su disposición.
 >
 
 ## Requisitos

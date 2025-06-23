@@ -12,7 +12,7 @@ A partir da interface vSphere, pode implementar máquinas virtuais de várias fo
 
 ## Requisitos
 
-- Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
+- Ter um produto [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/).
 - Estar ligado à [interface vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion).
 
 ## Instruções

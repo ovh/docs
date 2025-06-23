@@ -26,8 +26,8 @@ Using the [OVHcloud Control Panel](/links/manager) / API or the OpenStack Horizo
 
 Once the instance has been installed with your chosen pre-installed application, you can retrieve your login details via the OVHcloud API only.
 
-1. Log in to the [API console here](https://ca.api.ovh.com/).
-2. Then go to [here](https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST).
+1. Log in to the [API console here](/links/api).
+2. Then go to [here](/links/apiconsole/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST).
 
 > API call
 >> > [!api]

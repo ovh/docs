@@ -28,7 +28,7 @@ It can also optionally have a name and a description.
 
 ## Instructions
 
-All API routes used for this tutorial are available under the */storage* section here: <https://ca.api.ovh.com/console/#/storage>.
+All API routes used for this tutorial are available under the */storage* section here: </links/apiconsole/#/storage>.
 
 > [!primary]
 >
@@ -180,6 +180,6 @@ Replace `serviceName` with the ID of your service and `shareId` with your volume
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

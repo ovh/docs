@@ -16,7 +16,7 @@ Produkt [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} pozwala na po�
 
 ## Wymagania początkowe
 
-- Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
+- Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
 - Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## Kontekst

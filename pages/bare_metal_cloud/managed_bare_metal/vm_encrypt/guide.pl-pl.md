@@ -12,7 +12,7 @@ Celem niniejszego przewodnika jest wyjaśnienie szczegółów dotyczących konfi
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}.
+- Posiadanie oferty [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Posiadanie kompatybilnego zewnętrznego serwera zarządzania kluczami (KMS) **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** i znajdującego się w [matrycy zgodności](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
 - Dostęp do interfejsu zarządzania vSphere.
 - Posiadanie maszyn wirtualnych z wersją Hardware 13 lub wyższą.

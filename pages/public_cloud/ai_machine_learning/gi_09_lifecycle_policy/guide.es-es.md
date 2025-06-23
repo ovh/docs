@@ -6,7 +6,7 @@ updated: 2023-09-19
 
 ## Objective
 
-This document is intended for our OVHcloud end customers and aims at providing information about the lifecycle of the [AI Notebooks, AI Training, AI Deploy](https://www.ovhcloud.com/es-es/public-cloud/ai-machine-learning/) IT products in the OVHcloud Public Cloud.
+This document is intended for our OVHcloud end customers and aims at providing information about the lifecycle of the [AI Notebooks, AI Training, AI Deploy](/links/websitepublic-cloud/ai-machine-learning/) IT products in the OVHcloud Public Cloud.
 
 We aim at ensuring a clear understanding of the maintenance, upgrade and decommissioning stages of the products to ensure a continuous and reliable experience. This document is not contractual and has no legal basis. It is the desire of the OVHcloud teams to provide the best possible service to their customers.
 
@@ -59,7 +59,7 @@ The products will evolve and eventually reach the end of their lifecycles. Our o
 
 ## Conclusion
 
-We hope this document has provided you with a clear view of the maintenance, upgrade and decommissioning phases of the [AI Notebooks, AI Training, AI Deploy](https://www.ovhcloud.com/es-es/public-cloud/ai-machine-learning/) products. Our commitment is to provide you with an exceptional customer experience throughout the products' lifecycle. If you have any questions or specific requirements, please do not hesitate to contact us at any time on the dedicated [AI Channels](https://discord.gg/ovhcloud).
+We hope this document has provided you with a clear view of the maintenance, upgrade and decommissioning phases of the [AI Notebooks, AI Training, AI Deploy](/links/websitepublic-cloud/ai-machine-learning/) products. Our commitment is to provide you with an exceptional customer experience throughout the products' lifecycle. If you have any questions or specific requirements, please do not hesitate to contact us at any time on the dedicated [AI Channels](https://discord.gg/ovhcloud).
 
 ## Feedback
 

@@ -78,15 +78,15 @@ Si su servicio MX Plan se ha contratado independientemente de cualquier alojamie
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Para dar de baja su servicio [Managed bare metal](https://www.ovhcloud.com/es/managed-bare-metal/), siga las indicaciones de esta [guía](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
+Para dar de baja su servicio [Managed bare metal](/links/websitemanaged-bare-metal/), siga las indicaciones de esta [guía](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Para dar de baja su servicio [VMware on OVHcloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Para dar de baja su servicio [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Cada servicio [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) puede eliminarse haciendo clic en el botón `...`{.action} a la derecha del servicio correspondiente y, seguidamente, en `Eliminar`{.action}, como en el ejemplo de abajo para una instancia:
+Cada servicio [Public Cloud](/links/websitepublic-cloud/) puede eliminarse haciendo clic en el botón `...`{.action} a la derecha del servicio correspondiente y, seguidamente, en `Eliminar`{.action}, como en el ejemplo de abajo para una instancia:
 
 ![public cloud instance deleite](images/pci-deletion-en.png){.thumbnail}
 

@@ -13,7 +13,7 @@ Se a sua oferta de Managed Bare Metal já não lhe convier, ou se encomendou uma
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Managed Bare Metal`{.action}.
-- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Ter um produto [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 
 ## Instruções
 

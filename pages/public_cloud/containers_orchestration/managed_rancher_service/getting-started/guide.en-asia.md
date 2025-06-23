@@ -63,7 +63,7 @@ We will detail below how to use OVHcloud as a Hosted Kubernetes provider and Inf
 
 > [!warning]
 >
-> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/asia/public-cloud/prices/#568) and [Compute](/links/public-cloud/prices) pricing pages.
+> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](/links/websitepublic-cloud/prices/#568) and [Compute](/links/public-cloud/prices) pricing pages.
 > Once your Managed Kubernetes clusters are created, we do recommend performing all actions (upgrade, nodepool management, cluster modification) from the Rancher console and not performing any action directly via the OVHcloud API or the OVHcloud Control Panel as this can lead to desynchronizations.
 >
 
@@ -92,7 +92,7 @@ You need to provide the following parameters:
 | Application Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
 | Consumer Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
 | Application Secret | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
-| Public Cloud project ID | Yes | The projectID of the OVHcloud project where your MKS cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) or if already existing, you can copy/paste it from the OVHcloud Control Panel or [API](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) |
+| Public Cloud project ID | Yes | The projectID of the OVHcloud project where your MKS cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) or if already existing, you can copy/paste it from the OVHcloud Control Panel or [API](/links/apiconsole-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) |
 | OVH API Endpoint | Yes | Select the OVHcloud subsidiary (EU, US, CA) |
 
 4\. Move to **Cluster Configuration**
@@ -149,7 +149,7 @@ On this part we will detail how to use Rancher to create and manage Kubernetes c
 
 > [!warning]
 > Deploying to OVHcloud will incur charges.
-> For more information, refer to the [MKS](https://www.ovhcloud.com/asia/public-cloud/prices/#568) and [Compute](/links/public-cloud/prices) pricing pages.
+> For more information, refer to the [MKS](/links/websitepublic-cloud/prices/#568) and [Compute](/links/public-cloud/prices) pricing pages.
 
 1\. From the Rancher Homepage, click on `Create`{.action}.
 
@@ -194,8 +194,8 @@ For each machine pool, define the machine configuration by providing the followi
 - **Pool Name** - Name of the Machine Pool.
 - **Machine Count** - Number of instances.
 - **Roles** - `etcd`, `Control Plane` or `Worker`. You can refer to the [Node Roles](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider#node-roles) documentation.
-- **Region** - The OVHcloud Public Cloud region. If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](https://www.ovhcloud.com/asia/public-cloud/regions-availability/) page.
-- **Flavor** - The instance flavor used for your nodes. You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/asia/public-cloud/prices/#13569).
+- **Region** - The OVHcloud Public Cloud region. If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](/links/websitepublic-cloud/regions-availability/) page.
+- **Flavor** - The instance flavor used for your nodes. You can refer to the [OVHcloud Flavor list](/links/websitepublic-cloud/prices/#13569).
 - **Image** - The Operating System image used for your nodes. Please refer to [Rancher Operating Systems and Container Runtime Requirements](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters).
 - **Key Pair** (optional) - The SSH Key Pair that should be used to access your nodes. Please refer to this guide on [how to create a SSH KeyPair and add it to your Public Cloud project](/pages/public_cloud/compute/public-cloud-first-steps). If you leave this field empty, a new keypair will be generated automatically.
 - **Security Group** - The security group from your Public Cloud project that will be applied to created instances.

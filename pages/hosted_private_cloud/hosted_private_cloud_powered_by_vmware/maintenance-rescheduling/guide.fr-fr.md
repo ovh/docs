@@ -18,8 +18,8 @@ Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail
 ## Prérequis
 
 - Avoir reçu un e-mail de notification de maintenance indiquant spécifiquement que vous pouvez « **modifier la date d'exécution de la maintenance** ». Dans le cas contraire, la date de la maintenance ne peut pas être modifiée.
-- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/).
+- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à l'[interface d'administration de vos services par API](/links/api).
 
 ## En pratique
 
@@ -50,7 +50,7 @@ Enfin, cliquez sur le bouton `Modifier`{.action} pour valider vos modifications.
 
 ### Depuis l'API OVHcloud
 
-Connectez-vous à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/). Vous pouvez vous aider de notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
+Connectez-vous à l'[interface d'administration de vos services par API](/links/api). Vous pouvez vous aider de notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
 Exécutez l'appel API suivant :
 

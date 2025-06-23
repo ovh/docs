@@ -23,7 +23,7 @@ Dies kann in folgenden Fällen nützlich sein:
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie verfügen über eine [Public Cloud Instanz](/links/websitepublic-cloud).
 - Sie verfügen über einen Volume Snapshot in der gleichen OpenStack-Region.
 - Sie haben administrativen Zugriff (sudo) über SSH oder RDP auf Ihre Instanzen.
 

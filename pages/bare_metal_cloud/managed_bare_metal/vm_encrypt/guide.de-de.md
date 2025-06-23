@@ -12,7 +12,7 @@ Die vorliegende Anleitung erklärt die Vorgehensweise zur Einrichtung von VM Enc
 
 ## Voraussetzungen
 
-- Sie haben ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Angebot abonniert.
+- Sie haben ein [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} Angebot abonniert.
 - Sie verfügen über einen externen Key Management Server (KMS), der **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external}-1.1**-konform ist und in der [Kompatibilitätsmatrix](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} von VMware aufgeführt wird.
 - Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 - Sie verfügen über virtuelle Maschinen mit Hardware-Version 13 oder höher.

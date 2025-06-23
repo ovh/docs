@@ -12,7 +12,7 @@ Em certas situações, pode ser útil eliminar um servidor host do seu cluster, 
 
 ## Requisitos
 
-* Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+* Dispor do serviço [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 * Aceder à interface de gestão vSphere.
 
 ## Instruções

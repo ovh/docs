@@ -89,7 +89,7 @@ Vous pouvez maintenant utiliser l'interface utilisateur Swagger de manière inte
 
 ### Créer une clé de chiffrement par API
 
-La création d'une clé peut être faite soit à travers les [API OVHcloud](https://eu.api.ovh.com/console/?section=%2Fokms&branch=v2) soit sur les API spécifiques au KMS OVHcloud. Il n'y a pas de différences sur le résultat selon la méthode de création.
+La création d'une clé peut être faite soit à travers les [API OVHcloud](/links/apiconsole/?section=%2Fokms&branch=v2) soit sur les API spécifiques au KMS OVHcloud. Il n'y a pas de différences sur le résultat selon la méthode de création.
 
 Dans le cas des API spécifiques au KMS OVHcloud, la création d'une clé se fait par l'API suivante :
 

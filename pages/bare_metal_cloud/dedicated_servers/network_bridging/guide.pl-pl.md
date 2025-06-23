@@ -26,7 +26,7 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](/links/bare-metal/eco-compare).
 >
-> Od maja 2025 r. niniejszy przewodnik może być używany dla serwerów w następujących zakresach [Scale](https://www.ovhcloud.com/pl/bare-metal/scale/) i [High Grade](https://www.ovhcloud.com/pl/bare-metal/high-grade/).
+> Od maja 2025 r. niniejszy przewodnik może być używany dla serwerów w następujących zakresach [Scale](/links/websitebare-metal/scale/) i [High Grade](/links/websitebare-metal/high-grade/).
 >
 > Możesz również skonfigurować Additional IP w trybie routera lub przez vRack. W tym celu sprawdź: [Konfiguracja sieci na Proxmox VE w ofercie High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) i [Konfiguracja sieci w systemie Windows Server z Hyper-V w ofercie High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
@@ -81,7 +81,7 @@ Adres bramy IPv4 przypisany do Twojego serwera wyświetla się w sekcji `Sieć` 
 
 #### Za pośrednictwem API OVHcloud <a name="viaapi"></a>
 
-Na [stronie API OVHcloud](https://eu.api.ovh.com/console/) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
+Na [stronie API OVHcloud](/links/apiconsole/) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
 
 Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 

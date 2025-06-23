@@ -47,11 +47,11 @@ Please refer to [this guide](/pages/public_cloud/public_cloud_cross_functional/i
 
 ### OVHcloud APIv6
 
-Every action you take in your OVHcloud Control Panel can be called with the [OVHcloud APIv6](https://ca.api.ovh.com/). It even offers more possibilities than the graphical interface.
+Every action you take in your OVHcloud Control Panel can be called with the [OVHcloud APIv6](/links/api). It even offers more possibilities than the graphical interface.
 
 The API interface is less visual than the OVHcloud Control Panel but will allow you to perform a large number of actions. You can manage and customise your VLAN, add interfaces to your instances, or create highly customised servers.
 
-You can simply access it from [our web page](https://ca.api.ovh.com/) but also use it to create your PHP or Python scripts. This way, you can freely automate basic tasks with scripts, optimise your own functions and much more.
+You can simply access it from [our web page](/links/api) but also use it to create your PHP or Python scripts. This way, you can freely automate basic tasks with scripts, optimise your own functions and much more.
 
 You may need to retrieve various information before using some API calls because a specific input is required.
 

@@ -21,7 +21,7 @@ Les NAS-HA OVHcloud vous permettent de créer et de gérer des volumes de fichie
 > N’hésitez pas à vous rendre sur [la page FAQ NAS-HA](/pages/storage_and_backup/file_storage/ha_nas/nas_faq) pour retrouver toutes les informations détaillées concernant la fonction snapshot.
 >
 
-Toutes les routes API de ce guide sont disponibles dans la section */dedicated/nasha* : <https://ca.api.ovh.com/console/#/dedicated/nasha>.
+Toutes les routes API de ce guide sont disponibles dans la section */dedicated/nasha* : </links/apiconsole/#/dedicated/nasha>.
 
 > [!primary]
 >
@@ -291,6 +291,6 @@ Plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
 
 [Montez votre NAS sur Windows Server via CIFS](/pages/storage_and_backup/file_storage/ha_nas/nas_cifs)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/websiteprofessional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

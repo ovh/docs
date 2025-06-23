@@ -70,9 +70,9 @@ If you have an existing/already deployed cluster and if:
 
 When exposing your load balancer publicly (public-to-public or public-to-private):
 
-- If it does not already exist, a single OVHcloud Gateway will be automatically created and billed for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-ca/public-cloud/prices/#10394>.
-- A Public Floating IP will be used: <https://www.ovhcloud.com/en-ca/public-cloud/prices/#10346>.
-- Each Public Cloud Load Balancer is billed according to its flavor: <https://www.ovhcloud.com/en-ca/public-cloud/prices/#10420>.
+- If it does not already exist, a single OVHcloud Gateway will be automatically created and billed for all Load Balancers spawned in the subnet </links/websitepublic-cloud/prices/#10394>.
+- A Public Floating IP will be used: </links/websitepublic-cloud/prices/#10346>.
+- Each Public Cloud Load Balancer is billed according to its flavor: </links/websitepublic-cloud/prices/#10420>.
 
 > [!primary]
 >

@@ -20,7 +20,7 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 
 ## Prérequis
 
-- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
 
 ## En pratique
@@ -29,8 +29,8 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 >
 > Si vous souhaitez être assistés par :
 >
-> - des partenaires OVHcloud, certifiés et experts sur nos produits, pour vous accompagner dans votre migration ou l'effectuer à votre place, veuillez cliquer sur [ce lien](https://www.ovhcloud.com/fr/private-cloud-migration/).
-> - nos experts techniques OVHcloud pour un accompagnement sur mesure et vous conseiller à chacune des étapes de votre projet de migration, veuillez cliquer [ce lien](https://www.ovhcloud.com/fr/private-cloud-migration/).
+> - des partenaires OVHcloud, certifiés et experts sur nos produits, pour vous accompagner dans votre migration ou l'effectuer à votre place, veuillez cliquer sur [ce lien](/links/websiteprivate-cloud-migration/).
+> - nos experts techniques OVHcloud pour un accompagnement sur mesure et vous conseiller à chacune des étapes de votre projet de migration, veuillez cliquer [ce lien](/links/websiteprivate-cloud-migration/).
 >
 
 Nous aborderons dans ce guide les notions d'**infrastructure d'origine** et de **Hosted Private Cloud de destination**.
@@ -59,7 +59,7 @@ Consultez donc notre guide sur l'[activation du chiffrement des machines virtuel
 
 ##### **Certifications**
 
-Pour des raisons de conformité, les options [PCI DSS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) et [HDS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/hds/)  peuvent avoir été activées sur l'infrastructure d'origine.
+Pour des raisons de conformité, les options [PCI DSS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) et [HDS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/hds/)  peuvent avoir été activées sur l'infrastructure d'origine.
 
 Ces options doivent donc être réactivées sur le Hosted Private Cloud de destination. À cet effet, consultez [notre guide sur leur activation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/activer_l_option_hds_hipaa_ou_pci_dss).
 

@@ -13,7 +13,7 @@ Jeśli usługa Private Cloud nie jest już dla Ciebie odpowiednia lub jeśli zam
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} i sekcji `Hosted Private Cloud`{.action}, a następnie `Private Cloud`{.action}
-- Posiadanie usługi [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
+- Posiadanie usługi [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}
 
 ## W praktyce
 

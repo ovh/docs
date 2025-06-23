@@ -20,7 +20,7 @@ Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
 
 ## Voraussetzungen
 
-- Sie verfügen über ein Backup einer [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/instance-backup/).
+- Sie verfügen über ein Backup einer [Public Cloud Instanz](/links/websitepublic-cloud/instance-backup/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

@@ -11,7 +11,7 @@ Ce guide fournit des instructions sur l'utilisation du module Terraform SAP syst
 ## Prérequis
 
 - Être connecté à l'[espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Une [solution VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/vmware/) déployée.
+- Une [solution VMware on OVHcloud](/links/websitehosted-private-cloud/vmware/) déployée.
 - Binaire Terraform (version >= 1.4).
 
 ## En pratique

@@ -26,7 +26,7 @@ Overview of our image segmentation app:
 To deploy your app, you need:
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
+- An AI Deploy Project created inside a [Public Cloud project](/links/websitepublic-cloud/) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
 - [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
@@ -267,7 +267,7 @@ ovhai app run <shared-registry-address>/tumor_seg_streamlit_app:latest \
 - Do you want to use Streamlit to create an audio classification app? [Learn how to do it](/pages/public_cloud/ai_machine_learning/deploy_tuto_03_streamlit_sounds_classification).
 - Learn how to create & deploy a Speech-to-Text app [here](/pages/public_cloud/ai_machine_learning/deploy_tuto_09_streamlit_speech_to_text_app).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -78,15 +78,15 @@ Si votre offre e-mail MX Plan a été commandée indépendamment de tout héberg
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/), suivez les instructions de [ce guide](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
+Pour résilier votre offre [Managed bare metal](/links/websitemanaged-bare-metal/), suivez les instructions de [ce guide](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), suivez les instructions de [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Pour résilier votre offre [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/), suivez les instructions de [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Chaque service [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) peut être supprimé depuis l'onglet `Public Cloud`{.action} de l'espace client.
+Chaque service [Public Cloud](/links/websitepublic-cloud/) peut être supprimé depuis l'onglet `Public Cloud`{.action} de l'espace client.
 
 Sélectionnez un service à gauche, cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
 

@@ -19,7 +19,7 @@ Os nossos servidores High Grade e Scale propõem-lhe uma opção escalável que 
 
 ## Requisitos
 
-- Um servidor [High Grade](https://www.ovhcloud.com/pt/bare-metal/high-grade/) ou [SCALE](https://www.ovhcloud.com/pt/bare-metal/scale/)
+- Um servidor [High Grade](/links/websitebare-metal/high-grade/) ou [SCALE](/links/websitebare-metal/scale/)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
@@ -82,6 +82,6 @@ Se pretender programar uma evolução de memória e de armazenamento durante a m
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -14,7 +14,7 @@ Este manual explica como redimensionar o sistema de ficheiros após a instalaç�
 
 ## Requisitos
 
- * Ter uma instância com FreeBSD 12 no seu projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) com FreeBSD 12
+ * Ter uma instância com FreeBSD 12 no seu projeto [Public Cloud](/links/websitepublic-cloud/) ou um [VPS](/links/websitevps/) com FreeBSD 12
  * * Ter instalado recentemente a instância/o VPS ou [ter redimensionado](/pages/public_cloud/compute/resize_of_an_instance)
 
 > [!primary]

@@ -17,7 +17,7 @@ Esta guía explica cómo gestionar las ACL de un volumen para la solución OVHcl
 ## Requisitos
 
 - Tener contratado un plan Enterprise File Storage de OVHcloud con un volumen.
-- Estar conectado a la página de las [API de OVHcloud](https://ca.api.ovh.com/).
+- Estar conectado a la página de las [API de OVHcloud](/links/api).
 
 ## Lo esencial
 
@@ -32,7 +32,7 @@ Mediante ACL, puede autorizar a una dirección IP o rango de direcciones IP (not
 
 ## Procedimiento
 
-Todas las rutas API utilizadas en esta guía están disponibles en la sección */storage* : <https://ca.api.ovh.com/console/#/storage>.
+Todas las rutas API utilizadas en esta guía están disponibles en la sección */storage* : </links/apiconsole/#/storage>.
 
 > [!primary]
 >
@@ -146,6 +146,6 @@ Puede obtener el `aclRuleId` a partir de la respuesta obtenida al crear el ACL o
 
 ## Más información
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/websiteprofessional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

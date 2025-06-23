@@ -22,7 +22,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 > [!warning]
 > When a **LoadBalancer** Service resource is created inside a Managed Kubernetes cluster, a Load Balancer for a Managed Kubernetes Service is automatically created, allowing public access to your Kubernetes application.
-> The Load Balancer for a Managed Kubernetes Service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following [page](https://www.ovhcloud.com/asia/public-cloud/prices/#2034).
+> The Load Balancer for a Managed Kubernetes Service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following [page](/links/websitepublic-cloud/prices/#2034).
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 

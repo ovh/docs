@@ -14,7 +14,7 @@ This guide will outline the steps you need to take to get started with your Nuta
 > [!warning]
 > OVHcloud provides services for which you are responsible, responsible and responsible for their configuration. You are therefore responsible for ensuring that it works properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting the [OVHcloud Professional Services team](https://www.ovhcloud.com/en/professional-services/) or a [specialist provider](https://partner.ovhcloud.com/en/directory/) if you experience any difficulties or doubts when it comes to administering, using or setting up a service on a server.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting the [OVHcloud Professional Services team](/links/websiteprofessional-services/) or a [specialist provider](/links/partner) if you experience any difficulties or doubts when it comes to administering, using or setting up a service on a server.
 >
 
 **Find out how to get started with your Nutanix cluster.**
@@ -50,7 +50,7 @@ In this example, the network configuration is as follows:
 
 > [!warning]
 > Adapt this configuration to your cluster.
-> You can find this information by using this [OVHcloud API call](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> You can find this information by using this [OVHcloud API call](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 >
 
 Import your Linux image into the cluster. For more details, please refer to our guide on [importing images into Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import).
@@ -91,7 +91,7 @@ Select cloud-init, copy the "cloud-init" script, then click `Next`{.action} and 
 
 > [!warning]
 > Adapt this configuration to your cluster.
-> You can find this information by using this [OVHcloud API call](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> You can find this information by using this [OVHcloud API call](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 > Make sure to adapt your password and IP configuration.
 >
 
@@ -396,7 +396,7 @@ In this example, the network configuration is as follows:
 
 > [!warning]
 > Adapt this configuration to your cluster.
-> You can find this information by using this [OVHcloud API call](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> You can find this information by using this [OVHcloud API call](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 >
 
 ![Configuration - WS2022 - Step1](images/ConfigWS2022-1.PNG){.thumbnail}
@@ -496,6 +496,6 @@ You can also [secure access to Prism Central](/pages/hosted_private_cloud/nutani
 
 ## Go further <a name="gofurther"></a>
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/websiteprofessional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

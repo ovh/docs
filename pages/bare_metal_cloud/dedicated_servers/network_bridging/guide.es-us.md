@@ -26,7 +26,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 >
 > Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 >
-> Desde mayo de 2025, esta guía puede utilizarse para los servidores de las gamas [Scale](https://www.ovhcloud.com/es/bare-metal/scale/) y [High Grade](https://www.ovhcloud.com/es/bare-metal/high-grade/).
+> Desde mayo de 2025, esta guía puede utilizarse para los servidores de las gamas [Scale](/links/websitebare-metal/scale/) y [High Grade](/links/websitebare-metal/high-grade/).
 >
 > También es posible configurar las direcciones Additional IP en modo ruteado o a través del vRack. Para ello, puede consultar: [Configurar la red en Proxmox VE en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) y [Configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
@@ -82,7 +82,7 @@ La dirección de la pasarela IPv4 asignada a su servidor se muestra en la secci�
 
 #### A través de la API de OVHcloud <a name="viaapi"></a>
 
-En la [página API de OVHcloud](https://ca.api.ovh.com/console/), haga clic en `Login`{.action}, situado en la esquina superior derecha. En la siguiente página, introduzca su ID de cliente de OVHcloud.
+En la [página API de OVHcloud](/links/apiconsole/), haga clic en `Login`{.action}, situado en la esquina superior derecha. En la siguiente página, introduzca su ID de cliente de OVHcloud.
 
 Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
 

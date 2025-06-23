@@ -51,8 +51,8 @@ Für „0612/345678“ geben Sie also bitte „+49 612345678“ ein. „+49“ w
 
 Für detaillierte Informationen zur Datenschutz-Grundverordnung (DSGVO) bezüglich Ihrer beruflichen Aktivitäten oder Ihrer personenbezogenen Daten, empfehlen wir Ihnen die folgenden Links:
 
-- [OVHcloud und der Schutz personenbezogener Daten](https://www.ovhcloud.com/de/personal-data-protection/);
-- [DSGVO – Antworten auf Ihre häufigsten Fragen](https://www.ovhcloud.com/de/personal-data-protection/gdpr/).
+- [OVHcloud und der Schutz personenbezogener Daten](/links/websitepersonal-data-protection/);
+- [DSGVO – Antworten auf Ihre häufigsten Fragen](/links/websitepersonal-data-protection/gdpr/).
 
 ### Wie ändere ich mein OVHcloud Passwort?
 

@@ -645,7 +645,7 @@ Il est également possible de déployer votre instance via API, en utilisant l'a
 - Exemple avec une flavor D2-4, Debian 10 et la facturation à l'heure :
 
 ```bash
-curl -X POST "https://eu.api.ovh.com/v1/cloud/project/votre_id_projet/instance" \
+curl -X POST "/links/apiv1/cloud/project/votre_id_projet/instance" \
  -H "accept: application/json"\
  -H "authorization: Bearer [Votre_Token]"\
  -H "content-type: application/json" \
