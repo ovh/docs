@@ -110,7 +110,7 @@ El cambio de contacto será efectivo unos minutos después de que los dos contac
 
 ### Ejemplo: dar la gestión técnica de su sitio web a su webmaster
 
-Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propia [tienda online](https://www.ovhcloud.com/es-es/web-hosting/ecommerce-website/). Para empezar a crear su sitio web, usted ha contactado con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/) y le solicita los permisos de acceso a sus servicios de OVHcloud.
+Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propia [tienda online](https://www.ovhcloud.com/es-es/web-hosting/ecommerce-website/). Para empezar a crear su sitio web, usted ha contactado con uno de nuestros [partners](/links/partner) y le solicita los permisos de acceso a sus servicios de OVHcloud.
 
 > [!warning]
 >

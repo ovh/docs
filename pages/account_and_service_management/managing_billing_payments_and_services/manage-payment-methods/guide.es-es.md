@@ -100,7 +100,7 @@ Si quiere eliminar todas sus formas de pago, todos sus servicios deben estar [re
 
 #### Eliminar una forma de pago a través de las API OVHcloud
 
-La eliminación de una forma de pago puede realizarse a través de las API conectándose a [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+La eliminación de una forma de pago puede realizarse a través de las API conectándose a [https://eu.api.ovh.com/](/links/api).
 
 En primer lugar, debe obtener el id. de la forma de pago:
 

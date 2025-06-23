@@ -6,7 +6,7 @@ updated: 2020-12-09
 
 ## Objetivo
 
-A criação de um projeto é a primeira etapa da implantação de [instâncias Public Cloud](https://www.ovhcloud.com/pt/public-cloud/).
+A criação de um projeto é a primeira etapa da implantação de [instâncias Public Cloud](/links/public-cloud/public-cloud).
 
 **Este guia explica como encomendar um projeto Public Cloud através da APIv6 OVHcloud.**
 

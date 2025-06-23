@@ -13,7 +13,7 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Definition
@@ -108,7 +108,7 @@ The contact change will take effect a few minutes after both contacts have valid
 
 ### Example: Providing access for a website's technical administration to your webmaster
 
-You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](https://partner.ovhcloud.com/en-gb/directory/) and they are requesting access rights to your OVHcloud services in order to start building your website.
+You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](/links/partner) and they are requesting access rights to your OVHcloud services in order to start building your website.
 
 > [!warning]
 >

@@ -209,11 +209,11 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 > Mon moyen de paiement n'est plus valide. Comment ajouter un nouveau moyen de paiement ?
 >> Consultez notre guide « [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ». Avant de pouvoir supprimer un moyen de paiement obsolète, vous devez ajouter un nouveau moyen de paiement valide dans votre compte OVHcloud.
 > J'ai oublié de renouveler mon nom de domaine à temps, que faire ?
->> Commencez par vérifier le statut du nom de domaine en utilisant l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr-ca/domains/whois/).
+>> Commencez par vérifier le statut du nom de domaine en utilisant l'outil [Whois d'un nom de domaine](/links/web/domains-whois).
 >> S'il s'agit d'un nom de domaine générique (.com, .org. net, etc.), celui-ci vous reste « réservé » pendant une période dite « de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Ces délais sont variables et dépendent de l'extension et des règles du registre détenant l'extension. Pendant ces deux périodes, vous seul serez en mesure de renouveler le nom de domaine.
 >> Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
 >> Pendant la periode de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (qui varient en fonction de l'extension).
->> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr-ca/domains/whois/) pour vérifier sa disponibilité régulièrement.
+>> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](/links/web/domains-whois) pour vérifier sa disponibilité régulièrement.
 > Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'entregistrement que OVHcloud. Comment faire ?
 >> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
 > Je ne veux plus de prélèvement automatique mais je ne veux pas résilier mon service. Que dois-je faire ?

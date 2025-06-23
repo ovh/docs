@@ -80,23 +80,23 @@ If your MX Plan email solution was ordered independently of any hosting plan, fo
 
 #### Email Pro <a name="emailpro"></a>
 
-To cancel your [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) service, follow the instructions of this [guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#deleting-accounts).
+To cancel your [Email Pro](/links/web/email-pro) service, follow the instructions of this [guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#deleting-accounts).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) service, follow the instructions of this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts).
+To cancel your [Hosted Exchange](/links/web/emails-hosted-exchange) service, follow the instructions of this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts).
 
 #### Private Exchange <a name="private"></a>
 
-To cancel your [Private Exchange](https://www.ovhcloud.com/en-ie/emails/private-exchange/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts_1).
+To cancel your [Private Exchange](/links/web/emails-private-exchange) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts_1).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 
-To cancel your [Office 365 CSP1](https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#manage-your-subscriptions).
+To cancel your [Office 365 CSP1](/links/web/ms365) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#manage-your-subscriptions).
 
 #### Office 365 CSP2 <a name="office-csp2"></a>
 
-To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#manage-your-subscriptions).
+To cancel your [Office 365 CSP2](/links/web/ms365) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#manage-your-subscriptions).
 
 #### SMS <a name="sms"></a>
 
@@ -110,11 +110,11 @@ To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en-ie/managed-bare-
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-To cancel your [VMware on OVHcloud](https://www.ovhcloud.com/en-ie/hosted-private-cloud/), follow the instructions in this [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+To cancel your [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-cloud), follow the instructions in this [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Each [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/) service can be deleted from the `Public Cloud`{.action} tab in the Control Panel.
+Each [Public Cloud](/links/public-cloud/public-cloud) service can be deleted from the `Public Cloud`{.action} tab in the Control Panel.
 
 Select a service on the left, click on the `...`{.action} button to the right of the service concerned, then on `Delete`{.action}, as in the example below for an instance:
 

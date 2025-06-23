@@ -6,7 +6,7 @@ updated: 2020-12-09
 
 ## Objective
 
-Creating a project is the first step in deploying [Public Cloud instances](https://www.ovhcloud.com/en-sg/public-cloud/).
+Creating a project is the first step in deploying [Public Cloud instances](/links/public-cloud/public-cloud).
 
 **This guide explains how to order a Public Cloud project via the OVHcloud API.**
 
@@ -18,7 +18,7 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 ## Instructions
 
-Log in to the [OVHcloud API interface](https://ca.api.ovh.com/) according to the [relevant guide](/pages/manage_and_operate/api/first-steps) and follow the steps below.
+Log in to the [OVHcloud API interface](/links/api) according to the [relevant guide](/pages/manage_and_operate/api/first-steps) and follow the steps below.
 
 ### Step 1: Building your cart
 

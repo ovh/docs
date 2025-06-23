@@ -60,7 +60,7 @@ Information about the architecture (such as servers, storage ...) is centralized
 
 ### Partner services
 
-OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](https://partner.ovhcloud.com/de/directory/).
+OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](/links/partner).
 
 ### Cost and fees
 
