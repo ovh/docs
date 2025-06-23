@@ -14,7 +14,7 @@ The OVH Load Balancer acts by default as a proxy. It can also be configured to r
 ## Requirements
 
 - an [OVH Load Balancer](https://www.ovh.com/ca/en/solutions/load-balancer/){.external}
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/){.external}, or the [OVH API](https://ca.api.ovh.com/){.external}
+- access to the [OVH Control Panel](https://ca.ovh.com/auth/){.external}, or the [OVH API](/links/api){.external}
 
 ## Instructions
 
@@ -67,7 +67,7 @@ Once the front-end has been configured, click `Add`{.action} or `Edit`{.action},
 
 ### Add a custom redirection via the API.
 
-In the [OVH API](https://ca.api.ovh.com/){.external}, redirections are specified in the redirectLocation character chain.
+In the [OVH API](/links/api){.external}, redirections are specified in the redirectLocation character chain.
 
 * If you are creating a new front-end:
 

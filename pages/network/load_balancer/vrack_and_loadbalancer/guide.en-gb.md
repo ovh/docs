@@ -8,7 +8,7 @@ updated: 2022-04-04
 
 The purpose of this guide is to help you link and configure your Load Balancer in vRack via the APIv6 OVH.
 
-The vRack is a dedicated private network that creates a link between all your cloud products. For more information please visit the page on [vRack](https://www.ovhcloud.com/en-gb/network/vrack/)
+The vRack is a dedicated private network that creates a link between all your cloud products. For more information please visit the page on [vRack](/links/network/vrack)
 
 Before starting, if you haven't read it yet, we advise you to read the general presentation of the [Load Balancer](/pages/network/load_balancer/use_presentation) service.
 

@@ -17,7 +17,7 @@ ALPN (Application-Layer Protocol Negotiation) est une extension TLS qui permet �
 - Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external}.
 - Un frontend TCP est créé sur le port 443.
 - Une ferme TCP est créée et des serveurs sont ajoutés.
-- Avoir accès à l'[API OVHcloud](https://ca.api.ovh.com/){.external}.
+- Avoir accès à l'[API OVHcloud](/links/api){.external}.
 
 ## En pratique
 

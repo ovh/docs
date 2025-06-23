@@ -17,7 +17,7 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 >
 
 - Posséder une [offre OVHcloud Connect Direct](https://www.ovhcloud.com/fr-ca/network-security/ovhcloud-connect/)
-- Disposer d'un [vRack OVHcloud](https://www.ovhcloud.com/fr-ca/network/vrack/)
+- Disposer d'un [vRack OVHcloud](/links/network/vrack)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
@@ -182,6 +182,6 @@ Pour supprimer une configuration PoP, cliquez sur le bouton `(...)`{.action} sur
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
