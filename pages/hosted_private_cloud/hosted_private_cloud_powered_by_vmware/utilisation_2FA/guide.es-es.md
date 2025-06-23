@@ -12,7 +12,7 @@ La activación de la doble autenticación permite proteger el acceso a su Privat
  
 ## Requisitos
 
-- Tener una infraestructura [Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) con la opción de [seguridad avanzada](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (incluida en las soluciones PCI-DSS y HDS).
+- Tener una infraestructura [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) con la opción de [seguridad avanzada](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) (incluida en las soluciones PCI-DSS y HDS).
 - Tener un smartphone y una aplicación de autenticación (p. ej.: Google Authenticator, Authy, OTP Auth, etc.).
 
 ## Procedimiento

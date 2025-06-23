@@ -12,7 +12,7 @@ OVHcloud vous met à disposition une interface sécurisée pour valider les opé
 
 ## Prérequis
 
-- Disposer d'une infrastructure avec l'option **advanced security** (inclus dans les offres [PCI-DSS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) et [HDS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/hds/)). Ce droit permet la validation.
+- Disposer d'une infrastructure avec l'option **advanced security** (inclus dans les offres [PCI-DSS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) et [HDS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/hds/)). Ce droit permet la validation.
 - Avoir accès à l'interface sécurisée du PCC, exemple : https://pcc-192-0-2-1.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
 
 ## En pratique

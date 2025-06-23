@@ -139,7 +139,7 @@ Pour plus d'informations, consultez le guide : [VMware Cloud Director - Sauvegar
 
 ### Réinitialiser le mot de passe "Admin" sur Managed VMware Cloud Director
 
-Il est désormais possible de réinitialiser le mot de passe **Admin** d'une Organisation Managed VMware Cloud Director via l'APIv2 : [Accéder à l'APIv2](https://eu.api.ovh.com/console/?section=%2FvmwareCloudDirector&branch=v2#post-/vmwareCloudDirector/organization/-organizationId-/password).
+Il est désormais possible de réinitialiser le mot de passe **Admin** d'une Organisation Managed VMware Cloud Director via l'APIv2 : [Accéder à l'APIv2](/links/apiconsole/?section=%2FvmwareCloudDirector&branch=v2#post-/vmwareCloudDirector/organization/-organizationId-/password).
 
 > [!api]
 >

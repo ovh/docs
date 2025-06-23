@@ -11,7 +11,7 @@ This guide will explain how to replace the outgoing internet gateway (OVHgateway
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure  that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements

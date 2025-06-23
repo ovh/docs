@@ -6,7 +6,7 @@ updated: 2020-05-27
 
 ## Objective
 
-To configure your Hosted Private Cloud for [healthcare data hosting](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/safety-compliance/hds/) (HDS certification in France as well as regulatory compliance for healthcare data hosting in Italy, United Kingdom, Germany and Poland) or [financial data hosting](https://www.ovhcloud.com/en-ie/enterprise/solutions/certified-cloud-solutions/financial-data-hosting-pci-dss/) with PCI DSS certification, you have to follow the technical activation process below.
+To configure your Hosted Private Cloud for [healthcare data hosting](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/hds/) (HDS certification in France as well as regulatory compliance for healthcare data hosting in Italy, United Kingdom, Germany and Poland) or [financial data hosting](/links/websiteenterprise/solutions/certified-cloud-solutions/financial-data-hosting-pci-dss/) with PCI DSS certification, you have to follow the technical activation process below.
 
 **Find out how to host healthcare or payment card data on your Hosted Private Cloud.**
 
@@ -32,7 +32,7 @@ In the window that appears, make sure you are on the `General information`{.acti
 
 If the desired security option is not enabled, activate it by clicking on the `...`{.action} button, then on `Activate`{.action}. Several requirements are essential.
 
-- **[NSX](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/){.external} and [vROps](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/vrops/){.external} options must be installed**: from the `General information`{.action} tab in the "Options and compliance" section, you can check the activation status of these options. If they are not enabled, activate them by clicking on the `...`{.action} button and then on `Activate`{.action}.
+- **[NSX](/links/websiteenterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/){.external} and [vROps](/links/websiteenterprise/products/hosted-private-cloud/vrops/){.external} options must be installed**: from the `General information`{.action} tab in the "Options and compliance" section, you can check the activation status of these options. If they are not enabled, activate them by clicking on the `...`{.action} button and then on `Activate`{.action}.
 
 - **The vCenter access policy must be restricted**: from the `Security`{.action} tab, you can check the status of the access policy. If it is not restricted, make the change by clicking on the `Modify vCenter Access Policy`{.action} button, then following the steps. Our documentation “[Introduction to the OVHcloud Private Cloud Control Panel](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)” can assist you in this process.
 

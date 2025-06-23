@@ -19,7 +19,7 @@ updated: 2025-03-11
 
 The first step is to open a *flow* on the OVHcloud API to enable vROps to communicate with your SMTP server.
 
-You can check that the flow has been opened using this [endpoint](https://eu.api.ovh.com/console/#/dedicatedCloud/%7BserviceName%7D/vrops/outgoingFlow/%7BoutgoingFlowId%7D~GET).
+You can check that the flow has been opened using this [endpoint](/links/apiconsole/#/dedicatedCloud/%7BserviceName%7D/vrops/outgoingFlow/%7BoutgoingFlowId%7D~GET).
 
 To do this, use the following API call:
 

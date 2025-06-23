@@ -12,7 +12,7 @@ La interfaz segura puede utilizarse para confirmar operaciones sensibles (como c
 
 ## Requisitos
 
-- Tener una infraestructura con la opción de **seguridad avanzada** (incluida en las soluciones [PCI-DSS](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) y [HDS](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/safety-compliance/hds/)). Este permiso permite la validación.
+- Tener una infraestructura con la opción de **seguridad avanzada** (incluida en las soluciones [PCI-DSS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) y [HDS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/hds/)). Este permiso permite la validación.
 - Tener acceso a la interfaz segura del Private Cloud, por ejemplo: https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (no olvide la barra al final de la dirección).
 
 ## Procedimiento

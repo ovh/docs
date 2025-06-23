@@ -50,7 +50,7 @@ Dans cet exemple, la configuration du réseau est la suivante :
 
 > [!warning]
 > Adaptez cette configuration à votre cluster.
-> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 >
 
 Importez votre image Linux dans le cluster. Pour plus de détails, consultez notre guide sur l'[importation d'images dans Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import).
@@ -91,7 +91,7 @@ Selectionnez cloud-init, copiez le script "cloud-init" puis cliquez sur `Next`{.
 
 > [!warning]
 > Adaptez cette configuration à votre cluster.
-> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 > Adaptez en particulier le mot de passe et la configuration IP.
 >
 
@@ -396,7 +396,7 @@ Dans cet exemple la configuration du réseau est la suivante :
 
 > [!warning]
 > Adaptez cette configuration à votre cluster.
-> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 >
 
 ![Configuration - WS2022 - Etape1](images/ConfigWS2022-1.PNG){.thumbnail}

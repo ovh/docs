@@ -11,7 +11,7 @@ Ce guide vous détaille le déploiement d'un SAProuter sur VMware on OVHcloud av
 ## Prérequis
 
 - Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Une solution [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/) avec NSX déployée dans votre compte OVHcloud.
+- Une solution [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/) avec NSX déployée dans votre compte OVHcloud.
 - Un accès avec les droits de gestion pour NSX.
 
 ## En pratique

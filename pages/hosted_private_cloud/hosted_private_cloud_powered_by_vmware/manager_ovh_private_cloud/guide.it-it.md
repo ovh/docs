@@ -13,7 +13,7 @@ Lo Spazio Cliente OVHcloud propone numerose opzioni di configurazione della tua 
 ## Prerequisiti
 
 - Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Hosted Private Cloud`{.action} > `Private Cloud`{.action}.
-- Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
+- Disporre di un servizio [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external} attivo
 
 ## Procedura
 
@@ -178,7 +178,7 @@ Dalla scheda `Licenza Windows`{.action} è possibile attivare sul tuo datacenter
 
 ![Licenza SPLA Windows](images/controlpanel10.png){.thumbnail}
 
-Per consultare le tariffe, [clicca qui](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Per consultare le tariffe, [clicca qui](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/){.external}.
 
 ### Panoramica dei datacenter
 

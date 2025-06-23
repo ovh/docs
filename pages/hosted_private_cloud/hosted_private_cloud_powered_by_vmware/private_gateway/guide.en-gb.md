@@ -11,7 +11,7 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 **This guide explains how to enable private gateway on your Hosted Private Cloud infrastructure through the OVHcloud API.**
 
 > [!warning]
-> Do not enable the Private Gateway if you are using the Disaster Recovery Plan solution [Zerto](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/zerto/) as this would cause Zerto to fail.
+> Do not enable the Private Gateway if you are using the Disaster Recovery Plan solution [Zerto](/links/websiteenterprise/products/hosted-private-cloud/zerto/) as this would cause Zerto to fail.
 >
 
 > [!warning]

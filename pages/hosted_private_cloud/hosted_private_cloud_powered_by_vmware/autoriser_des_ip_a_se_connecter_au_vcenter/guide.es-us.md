@@ -12,7 +12,7 @@ El acceso al vCenter solo está restringido a las direcciones IP autorizadas.
 ## Requisitos
 
 * Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-* Disponer de una [infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) en su cuenta de OVHcloud.
+* Disponer de una [infraestructura Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) en su cuenta de OVHcloud.
 
 ## Procedimiento
 

@@ -20,7 +20,7 @@ There are two aspects to migrating a PCC infrastructure:
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
 
 ## Instructions
@@ -29,8 +29,8 @@ There are two aspects to migrating a PCC infrastructure:
 >
 > If you want to be assisted by:
 >
-> - OVHcloud partners, who are certified and experts on our products, to assist you with your migration or perform it on your behalf, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
-> - our OVHcloud technical experts for tailored support and advice at every stage of your migration project, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
+> - OVHcloud partners, who are certified and experts on our products, to assist you with your migration or perform it on your behalf, please click [this link](/links/websiteprivate-cloud-migration/).
+> - our OVHcloud technical experts for tailored support and advice at every stage of your migration project, please click [this link](/links/websiteprivate-cloud-migration/).
 >
 
 This guide will use the notions of a **source PCC** and a **destination Hosted Private Cloud**.
@@ -58,7 +58,7 @@ Please refer to our guide on [Enabling Virtual Machine Encryption](/pages/hosted
 
 ##### **Certifications**
 
-For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source PCC.
+For compliance reasons, [PCI DSS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source PCC.
 
 These options must therefore be reactivated on the destination Hosted Private Cloud. To do this, please refer to our [guide on activating them](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/activer_l_option_hds_hipaa_ou_pci_dss).
 

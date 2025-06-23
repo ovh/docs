@@ -50,7 +50,7 @@ In this example, the network configuration is as follows:
 
 > [!warning]
 > Adapt this configuration to your cluster.
-> You can find this information by using this [OVHcloud API call](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> You can find this information by using this [OVHcloud API call](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 >
 
 Import your Linux image into the cluster. For more details, please refer to our guide on [importing images into Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import).
@@ -91,7 +91,7 @@ Select cloud-init, copy the "cloud-init" script, then click `Next`{.action} and 
 
 > [!warning]
 > Adapt this configuration to your cluster.
-> You can find this information by using this [OVHcloud API call](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> You can find this information by using this [OVHcloud API call](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 > Make sure to adapt your password and IP configuration.
 >
 
@@ -396,7 +396,7 @@ In this example, the network configuration is as follows:
 
 > [!warning]
 > Adapt this configuration to your cluster.
-> You can find this information by using this [OVHcloud API call](https://ca.api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> You can find this information by using this [OVHcloud API call](/links/apiconsole/#/nutanix/%7BserviceName%7D~GET).
 >
 
 ![Configuration - WS2022 - Step1](images/ConfigWS2022-1.PNG){.thumbnail}

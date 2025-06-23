@@ -18,7 +18,7 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir un identifiant actif dans vSphere
 - Avoir déployé une [NSX Edge Services Gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_deploying_edge_gateway)

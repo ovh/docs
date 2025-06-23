@@ -12,7 +12,7 @@ OVHcloud stellt Ihnen ein sicheres Interface zur Verfügung, über welches Sie s
 
 ## Voraussetzungen
 
-- Sie verfügen über eine Infrastruktur mit **Advanced Security** Option (in [PCI-DSS](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) und [HDS](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/safety-compliance/hds/) Angeboten enthalten). Diese Option ermöglicht die Bestätigung sensibler Operationen.
+- Sie verfügen über eine Infrastruktur mit **Advanced Security** Option (in [PCI-DSS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) und [HDS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/hds/) Angeboten enthalten). Diese Option ermöglicht die Bestätigung sensibler Operationen.
 - Sie haben Zugriff auf das gesicherte Interface der Private Cloud, zum Beispiel: https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (achten Sie darauf, „ / “ am Ende der Adresse hinzuzufügen).
 
 ## In der praktischen Anwendung

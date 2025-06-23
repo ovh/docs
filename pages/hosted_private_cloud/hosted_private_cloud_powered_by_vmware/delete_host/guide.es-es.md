@@ -12,7 +12,7 @@ Hay situaciones en las que puede ser necesario eliminar un servidor host del clu
 
 ## Requisitos
 
-* Tener contratado un servicio [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
+* Tener contratado un servicio [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 * Estar conectado al panel de administración vSphere.
 
 ## Procedimiento

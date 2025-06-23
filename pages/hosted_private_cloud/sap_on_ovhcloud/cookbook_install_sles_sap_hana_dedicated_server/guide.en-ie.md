@@ -11,7 +11,7 @@ This guide provides instructions for deploying the SLES 15 for SAP image on an O
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- An [HGR-SAP dedicated server](https://www.ovhcloud.com/en-ie/lp/sap/)
+- An [HGR-SAP dedicated server](/links/websitelp/sap/)
 
 ## Instructions
 

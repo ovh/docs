@@ -13,7 +13,7 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 
 ## En pratique
 
@@ -178,7 +178,7 @@ L'onglet `Licence Windows`{.action} permet d'activer les licences SPLA Windows s
 
 ![Licence SPLA Windows](images/controlpanel10.png){.thumbnail}
 
-Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Vous pouvez retrouver la page des tarifs [ici](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/){.external}.
 
 ### Vue datacentre
 

@@ -22,7 +22,7 @@ In caso di manutenzione programmata sull'Hosted Private Cloud, riceverai un'emai
 ## Prerequisiti
 
 - Aver ricevuto un'email di notifica di manutenzione che indica specificamente che è possibile "**modificare la data di esecuzione della manutenzione**" In caso contrario, la data della manutenzione non può essere modificata.
-- Essere contatto amministratore o tecnico dell'infrastruttura [VMware on OVHcloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/).
+- Essere contatto amministratore o tecnico dell'infrastruttura [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o all'[interfaccia di gestione dei servizi via API](/links/api).
 
 ## Procedura

@@ -35,7 +35,7 @@ By default, routes are not enabled. The segments created behind the **ovh-T1-gw*
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/) to receive login credentials.
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 ## Instructions

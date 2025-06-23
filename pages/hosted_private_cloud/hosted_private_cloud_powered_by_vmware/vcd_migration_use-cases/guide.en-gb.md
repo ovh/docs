@@ -139,7 +139,7 @@ For more information, please refer to our guide: [VMware Cloud Director - Veeam 
 
 ### Reset the "Admin" password on Managed VMware Cloud Director
 
-You can now reset the **Admin** password for a Managed VMware Cloud Director organization using APIv2: [Access APIv2](https://eu.api.ovh.com/console/?section=%2FvmwareCloudDirector&branch=v2#post-/vmwareCloudDirector/organization/-organizationId-/password).
+You can now reset the **Admin** password for a Managed VMware Cloud Director organization using APIv2: [Access APIv2](/links/apiconsole/?section=%2FvmwareCloudDirector&branch=v2#post-/vmwareCloudDirector/organization/-organizationId-/password).
 
 > [!api]
 >

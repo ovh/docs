@@ -115,7 +115,7 @@ Une fois que vous avez obtenu vos logs archivés, vous pouvez les utiliser à l'
 
 Les données étant au format JSON, vous pouvez également envoyer vos logs sur une plateforme d'analyse Big Data.
 
-L’API OVHcloud disponible sur [api.ovh.com](https://ca.api.ovh.com/console-preview/) peut vous aider à récupérer vos données. Dans la documentation, vous retrouverez de nombreux appels d'API qui peuvent vous aider à récupérer et utiliser vos logs.
+L’API OVHcloud disponible sur [api.ovh.com](/links/apiconsole-preview/) peut vous aider à récupérer vos données. Dans la documentation, vous retrouverez de nombreux appels d'API qui peuvent vous aider à récupérer et utiliser vos logs.
 
 ## Aller plus loin
 

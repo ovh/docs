@@ -12,7 +12,7 @@ Wdrożenie weryfikacji dwuetapowej zapewnia ochronę dostępu do Twojej usługi 
  
 ## Wymagania początkowe
 
-- Posiadanie infrastruktury [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) z opcją [zaawansowanego bezpieczeństwa](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (dostępną w ofertach PCI-DSS i HDS).
+- Posiadanie infrastruktury [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) z opcją [zaawansowanego bezpieczeństwa](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) (dostępną w ofertach PCI-DSS i HDS).
 - Posiadanie smartfona i aplikacji weryfikacji dwuetapowej (np.: Google Authenticator, Authy, OTP Auth).
 
 ## W praktyce

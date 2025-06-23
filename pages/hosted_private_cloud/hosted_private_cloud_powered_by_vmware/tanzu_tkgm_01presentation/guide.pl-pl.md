@@ -16,7 +16,7 @@ updated: 2022-11-15
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - A user account with access to vSphere
 

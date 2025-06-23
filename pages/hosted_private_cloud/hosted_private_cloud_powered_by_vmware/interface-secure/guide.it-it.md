@@ -12,7 +12,7 @@ L’interfaccia sicura è un sistema che permette di confermare le operazioni se
 
 ## Prerequisiti
 
-- Disporre di un’infrastruttura **Private Cloud** con l’opzione di [sicurezza avanzata](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclusa nei servizi PCI-DSS e HDS) Questo permesso consente la convalida.
+- Disporre di un’infrastruttura **Private Cloud** con l’opzione di [sicurezza avanzata](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclusa nei servizi PCI-DSS e HDS) Questo permesso consente la convalida.
 - ad esempio https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (facendo attenzione a non dimenticare “/” alla fine dell’indirizzo).
 
 ## Procedura

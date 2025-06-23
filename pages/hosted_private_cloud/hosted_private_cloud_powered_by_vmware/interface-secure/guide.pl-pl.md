@@ -12,7 +12,7 @@ OVHcloud zapewnia bezpieczny interfejs umożliwiający potwierdzanie wrażliwych
 
 ## Wymagania początkowe
 
-- Posiadanie infrastruktury z opcją **advanced security** (dostępną w ofertach [PCI-DSS](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) i [HDS](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/safety-compliance/hds/)) To uprawnienie umożliwia zatwierdzanie.
+- Posiadanie infrastruktury z opcją **advanced security** (dostępną w ofertach [PCI-DSS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) i [HDS](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/hds/)) To uprawnienie umożliwia zatwierdzanie.
 - Dostęp do bezpiecznego interfejsu, na przykład: https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (uwaga: pamiętaj o umieszczeniu ukośnika „/” na końcu adresu)
 
 ## W praktyce

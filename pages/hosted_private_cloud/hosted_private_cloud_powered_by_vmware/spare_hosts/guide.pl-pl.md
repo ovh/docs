@@ -6,7 +6,7 @@ updated: 2020-06-29
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
+- Wykupienie usługi [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/).
 
 ## Wprowadzenie
 

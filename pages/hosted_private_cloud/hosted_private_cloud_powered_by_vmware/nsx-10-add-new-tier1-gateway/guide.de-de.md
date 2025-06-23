@@ -18,7 +18,7 @@ OVHcloud provides you with NSX with two gateways, a north-south gateway (ovh-T0-
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) to receive login credentials
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 - Having **NSX** deployed.
 

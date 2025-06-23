@@ -12,7 +12,7 @@ Der Zugang zu Ihrem vCenter ist auf autorisierte IP-Adressen beschränkt.
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie verfügen über eine [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) Infrastruktur.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

@@ -12,7 +12,7 @@ Il metodo di autenticazione a due fattori consente di proteggere l’accesso al 
  
 ## Prerequisiti
 
-- Disporre di un’infrastruttura [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) con l’opzione di [sicurezza avanzata](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclusa nei servizi PCI-DSS e HDS)
+- Disporre di un’infrastruttura [Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) con l’opzione di [sicurezza avanzata](/links/websiteenterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclusa nei servizi PCI-DSS e HDS)
 - Disporre di uno smartphone e di un'applicazione di autenticazione (ad esempio Google Authenticator, Authy, OTP Auth...)
 
 ## Procedura

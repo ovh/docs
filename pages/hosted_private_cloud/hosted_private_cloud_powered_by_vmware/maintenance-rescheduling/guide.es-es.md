@@ -22,7 +22,7 @@ Cuando se haya programado un mantenimiento en su Hosted Private Cloud, recibirá
 ## Requisitos
 
 - Haber recibido una notificación de mantenimiento por correo electrónico en la que se indique específicamente que puede "**modificar la fecha de ejecución del mantenimiento**". En caso contrario, la fecha del mantenimiento no puede modificarse.
-- Ser contacto administrador o técnico de la infraestructura [VMware on OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
+- Ser contacto administrador o técnico de la infraestructura [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/).
 - Tienes acceso a tu [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o al panel de [administración de sus servicios a través de la API](/links/api).
 
 ## Procedimiento

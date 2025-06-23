@@ -16,7 +16,7 @@ Um die durchgehende Verfügbarkeit des Dienstes sicherzustellen und Datenverlust
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) in Ihrem OVHcloud Account.
+- Sie verfügen über eine [Hosted Private Cloud Infrastruktur](/links/websiteenterprise/products/hosted-private-cloud/) in Ihrem OVHcloud Account.
 - Sie haben Zugang zum vSphere Web Client Verwaltungsinterface.
 
 ## In der praktischen Anwendung

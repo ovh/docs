@@ -16,7 +16,7 @@ Mit unserer Netzwerklösung [vRack](https://www.ovh.de/loesungen/vrack/){.extern
 
 ## Voraussetzungen
 
-- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
+- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
 - Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 ## Technischer Hintergrund

@@ -16,7 +16,7 @@ Informacje te są dostępne także poprzez APIv6 i API Metrics.
 
 ## Wymagania początkowe
 
-- [Infrastructure Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
+- [Infrastructure Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/)
 - Dostęp do interfejsu zarządzania vScope
 
 ## W praktyce

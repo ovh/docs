@@ -19,7 +19,7 @@ Die VMware Update-Verwaltung erlaubt es Ihnen, Ihre Hosts auf dem neuesten Stand
 
 ## Voraussetzungen
 
-- Sie haben Zugriff als Administrator-Kontakt auf die [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) , um Login-Daten zu erhalten.
+- Sie haben Zugriff als Administrator-Kontakt auf die [Hosted Private Cloud Infrastruktur](/links/websiteenterprise/products/hosted-private-cloud/) , um Login-Daten zu erhalten.
 - Sie haben eine aktive Benutzerkennung mit spezifischen Rechten für NSX (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)).
 
 ## In der praktischen Anwendung

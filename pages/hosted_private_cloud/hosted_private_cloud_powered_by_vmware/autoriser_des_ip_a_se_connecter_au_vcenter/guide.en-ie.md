@@ -12,7 +12,7 @@ Access to your vCenter is restricted only to authorized IP addresses.
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](/links/websiteenterprise/products/hosted-private-cloud/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions

@@ -12,7 +12,7 @@ Mit dem Private Cloud Plugin von OVHcloud können Sie in wenigen Minuten dedizie
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie verfügen über eine [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/) Infrastruktur.
 - Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
 ## In der praktischen Anwendung

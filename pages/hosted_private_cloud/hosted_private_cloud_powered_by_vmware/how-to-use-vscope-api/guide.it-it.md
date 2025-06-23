@@ -14,7 +14,7 @@ Per ogni servizio Private Cloud, OVHcloud mette a disposizione il tool **vScope*
 
 ## Prerequisiti
 
-- Un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/)
+- Un’[infrastruttura Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/)
 - Essere connesso all’interfaccia di gestione vScope
 
 ## Procedura

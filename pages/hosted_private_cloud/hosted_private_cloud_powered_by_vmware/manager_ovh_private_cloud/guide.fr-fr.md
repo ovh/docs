@@ -12,7 +12,7 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 
 ## Prérequis
 
-- Une [Infrastrucure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- Une [Infrastrucure Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/)
 - Un accès à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
@@ -132,7 +132,7 @@ Vous pouvez trier la liste par types et si une tâche est modifiable, vous verre
 #### Licence Windows
 
 L'onglet Licence Windows vous donne le statut de votre licence Windows SPLA.<br>
-Consultez la page des [tarifs](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/images-licenses/).
+Consultez la page des [tarifs](/links/websiteenterprise/products/hosted-private-cloud/images-licenses/).
 
 ![SPLA](images/en11spla.png){.thumbnail}
 

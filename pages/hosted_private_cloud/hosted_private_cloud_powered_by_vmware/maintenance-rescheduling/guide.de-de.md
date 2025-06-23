@@ -22,7 +22,7 @@ Wenn Wartungsarbeiten geplant sind, die Ihre Hosted Private Cloud Infrastruktur 
 ## Voraussetzungen
 
 - Sie haben eine E-Mail mit der Benachrichtigung über die Wartungsarbeiten erhalten, in der ausdrücklich darauf hingewiesen wird, dass Sie **das Datum der Wartungsarbeiten** ändern können. Andernfalls können die Arbeiten nicht verschoben werden.
-- Sie sind als administrativer oder technischer Kontakt für die [[VMware on OVHcloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur eingetragen.
+- Sie sind als administrativer oder technischer Kontakt für die [[VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/) Infrastruktur eingetragen.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder auf die  [OVHcloud API ](/links/api).
 
 ## In der praktischen Anwendung

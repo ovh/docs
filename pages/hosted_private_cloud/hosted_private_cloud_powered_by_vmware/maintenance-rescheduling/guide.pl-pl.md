@@ -22,7 +22,7 @@ Po zaplanowaniu prac konserwacyjnych na Twojej usłudze Hosted Private Cloud otr
 ## Wymagania początkowe
 
 - Otrzymałeś e-mail z powiadomieniem o pracach konserwacyjnych informujący, że możesz **zmienić datę wykonania prac konserwacyjnych**. W przeciwnym razie data utrzymania nie może zostać zmieniona.
-- Posiadanie kontaktu administracyjnego lub technicznego w infrastrukturze [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
+- Posiadanie kontaktu administracyjnego lub technicznego w infrastrukturze [VMware on OVHcloud](/links/websiteenterprise/products/hosted-private-cloud/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub [interfejsu administracyjnego usług przez API](/links/api).
 
 ## W praktyce

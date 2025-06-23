@@ -12,7 +12,7 @@ Le produit [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external} permet
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 
 ## Contexte technique

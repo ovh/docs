@@ -12,7 +12,7 @@ Existen situaciones en las que puede ser útil eliminar un datastore del cluster
 
 ## Requisitos
 
-* Tener contratado un servicio [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
+* Tener contratado un servicio [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/){.external}.
 * Estar conectado al cliente vSphere.
 
 ## Procedimiento

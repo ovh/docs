@@ -25,7 +25,7 @@ Si no está familiarizado con el funcionamiento de las API de OVHcloud, consulte
 
 En primer lugar, debe identificar los backups que desea restaurar.
 
-Conéctese a [https://ca.api.ovh.com/](/links/api) y utilice la siguiente llamada:
+Conéctese a [/links/api](/links/api) y utilice la siguiente llamada:
 
 > [!api]
 >
@@ -59,7 +59,7 @@ Tenga en cuenta que el backup repository permite restaurar las copias de segurid
 
 La llamada a la API restaurará los últimos puntos de restauración válidos de cada backup presente en el directorio de almacenamiento.
 
-Conéctese a [https://ca.api.ovh.com/](/links/api) y utilice la siguiente llamada:
+Conéctese a [/links/api](/links/api) y utilice la siguiente llamada:
 
 > [!api]
 >
