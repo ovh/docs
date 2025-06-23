@@ -11,7 +11,7 @@ updated: 2022-11-30
 
 ## Obiettivo
 
-Scopri i concetti di approvvigionamento, monitoraggio e test delle performance della soluzione [Enterprise File Storage](https://www.ovhcloud.com/it/storage-solutions/enterprise-file-storage/).
+Scopri i concetti di approvvigionamento, monitoraggio e test delle performance della soluzione [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## Procedura
 
@@ -32,7 +32,7 @@ Questa informazione è importante quando progettate l'architettura di storage. P
 
 - **Esempio n°2**: la tua infrastruttura richiede **4500 IOPS** e un volume di dati di **1 TB**. Per effettuare questa operazione è necessario disporre **2 TB** per ottenere **4500 IOPS necessari**. In particolare, usufruisci di **8000 IOPS** sulla capacità attivata. Per garantire il livello di prestazioni desiderato, è necessario sovrintendere il servizio.
 
-- **Esempio n. 3**: le performance delle applicazioni non sono particolarmente elevate ma un volume di storage superiore a **60 TB**. In questo caso, è preferibile orientarsi verso il servizio di archiviazione [NAS-HA](https://www.ovhcloud.com/it/storage-solutions/nas-ha/), più economico e che permette di raggiungere capacità superiori a 58 TB per servizio.
+- **Esempio n. 3**: le performance delle applicazioni non sono particolarmente elevate ma un volume di storage superiore a **60 TB**. In questo caso, è preferibile orientarsi verso il servizio di archiviazione [NAS-HA](/links/storage/nas-ha), più economico e che permette di raggiungere capacità superiori a 58 TB per servizio.
 
 ### Volumi e qualità dei servizi (QoS)
 
@@ -75,6 +75,6 @@ Per maggiori informazioni, consulta la [documentazione di FIO](https://fio.readt
 
 ## Per saperne di più
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti su Discord: <https://discord.gg/jW2FgBJ72h>

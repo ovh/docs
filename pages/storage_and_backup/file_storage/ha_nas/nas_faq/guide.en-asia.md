@@ -143,7 +143,7 @@ You can manage the frequency of snapshots from your OVHcloud Control Panel. You 
 - once every 3 days
 - once every week
 
-You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or via the following [API](https://ca.api.ovh.com/) call:
+You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or via the following [API](/links/api) call:
 
 > [!api]
 >
@@ -198,6 +198,6 @@ The subscription periods offered are 1 month, 12 months, 24 months and 36 months
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our user community on <https://community.ovh.com/en/>.

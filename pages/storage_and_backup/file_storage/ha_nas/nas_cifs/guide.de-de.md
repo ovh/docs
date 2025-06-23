@@ -14,7 +14,7 @@ Konfigurieren und mounten Sie einen OVHcloud HA-NAS-Speicherraum auf Ihrem Windo
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) **oder** einen [VPS](https://www.ovhcloud.com/de/vps/) **oder** eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) mit einer Windows-Distribution in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) **oder** einen [VPS](/links/bare-metal/vps) **oder** eine [Public Cloud Instanz](/links/public-cloud/public-cloud) mit einer Windows-Distribution in Ihrem Kunden-Account.
 - Sie verfügen über eine [HA-NAS Lösung](https://www.ovh.de/nas/).
 
 ### Einstellungen
@@ -47,6 +47,6 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 
 [Häufig gestellte Fragen zu HA-NAS](/pages/storage_and_backup/file_storage/ha_nas/nas_faq)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
