@@ -9,7 +9,6 @@
         + [Managing contacts for your services](account_and_service_management/account_information/managing_contacts)
         + [Presentation of the new OVHcloud Control Panel navigation](account_and_service_management/account_information/new-control-panel-navigation)
         + [Sharing files with the Plik tool](account_and_service_management/account_information/use-plik)
-    + [ServiceNow upgrade](account-and-service-management-account-information-servicenow-upgrade)
         + [Yokohama Upgrade - Preprod guide for testing purposes](account_and_service_management/account_information/yokohama-upgrade)
     + [Users creation and management](account-and-service-management-account-information-users)
         + [Presentation of identities that can interact within an OVHcloud account](manage_and_operate/iam/identities-management)
