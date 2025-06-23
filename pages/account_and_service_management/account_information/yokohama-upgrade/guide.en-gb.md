@@ -2,7 +2,6 @@
 title: Yokohama upgrade - Preprod guide for testing purposes
 excerpt: This guide is created for testing purposes only, for new formats and Yokohama upgrade
 updated: 2025-06-23
-flag: hidden
 ---
 
 <style>
