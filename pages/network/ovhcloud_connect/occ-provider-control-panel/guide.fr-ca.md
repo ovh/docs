@@ -16,7 +16,7 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 > Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/network/ovhcloud_connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
-- Avoir commandé une [offre OVHcloud Connect Provider](https://www.ovhcloud.com/fr-ca/network-security/ovhcloud-connect/)
+- Avoir commandé une [offre OVHcloud Connect Provider](/links/websitenetwork-security/ovhcloud-connect/)
 - Disposer d'un [vRack OVHcloud](https://www.ovh.com/fr/solutions/vrack/)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 

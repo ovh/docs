@@ -16,7 +16,7 @@ W tym przewodniku znajdziesz wszystkie adresy IP usługi CDN Infrastructure, kt�
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [CDN Infrastructure OVHcloud](https://www.ovhcloud.com/pl/network/cdn/).
+- Posiadanie usługi [CDN Infrastructure OVHcloud](/links/websitenetwork/cdn/).
 
 ## W praktyce
 

@@ -12,7 +12,7 @@ Retrouvez dans ce guide toutes les adresses IP du service CDN Infrastructure à 
 
 ## Prérequis
 
-- Posséder une [offre CDN Infrastructure OVHcloud](https://www.ovhcloud.com/fr/network/cdn/).
+- Posséder une [offre CDN Infrastructure OVHcloud](/links/websitenetwork/cdn/).
 
 ## En pratique
 

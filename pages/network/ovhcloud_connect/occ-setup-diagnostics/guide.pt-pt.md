@@ -10,7 +10,7 @@ Find out how to resolve the most common errors associated with setting up OVHclo
 
 ## Requirements
 
-- an [OVHcloud Connect solution](https://www.ovhcloud.com/pt/network-security/ovhcloud-connect/)
+- an [OVHcloud Connect solution](/links/websitenetwork-security/ovhcloud-connect/)
 
 ## Instructions
 

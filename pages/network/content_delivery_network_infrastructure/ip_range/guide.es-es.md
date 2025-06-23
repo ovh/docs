@@ -16,7 +16,7 @@ Consulte en esta guía todas las direcciones IP del servicio CDN Infrastructure 
 
 ## Requisitos
 
-- Tener una [solución CDN Infrastructure de OVHcloud](https://www.ovhcloud.com/es-es/network/cdn/).
+- Tener una [solución CDN Infrastructure de OVHcloud](/links/websitenetwork/cdn/).
 
 ## Procedimiento
 
