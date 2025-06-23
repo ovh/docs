@@ -22,7 +22,7 @@ Wenn Sie jedoch den Jailed Shell Zugang aktiviert haben, erstellt cPanel ein *vi
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](/links/bare-metal/vps) mit einer [kompatiblen Distribution](https://www.ovhcloud.com/de/vps/os/).
+- Sie haben einen [VPS](/links/bare-metal/vps) mit einer [kompatiblen Distribution](/links/websitevps/os/).
 - cPanel ist auf dem Server installiert.
 
 ## In der praktischen Anwendung

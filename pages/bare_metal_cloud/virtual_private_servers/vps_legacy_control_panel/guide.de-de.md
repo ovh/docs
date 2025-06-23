@@ -119,7 +119,7 @@ Verwenden Sie diese Option, um sich über KVM mit Ihrem VPS zu verbinden. Weiter
 
 ### Zur neuen Reihe migrieren
 
-Ihr VPS kann automatisch auf die aktuelle Reihe migriert werden. Entdecken Sie die Vorteile dieses Angebots in [unseren FAQ zur VPS-Migration](https://www.ovhcloud.com/de/vps/vps-offer-migration/).
+Ihr VPS kann automatisch auf die aktuelle Reihe migriert werden. Entdecken Sie die Vorteile dieses Angebots in [unseren FAQ zur VPS-Migration](/links/websitevps/vps-offer-migration/).
 
 ## Weiterführende Informationen
 

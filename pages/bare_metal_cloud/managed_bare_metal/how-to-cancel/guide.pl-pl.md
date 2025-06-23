@@ -13,7 +13,7 @@ Jeśli usługa Managed Bare Metal nie jest już dla Ciebie odpowiednia lub jeśl
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}
-- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+- Posiadanie usługi [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}
 
 ## W praktyce
 

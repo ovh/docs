@@ -16,7 +16,7 @@ Um die durchgehende Verfügbarkeit des Dienstes sicherzustellen und Datenverlust
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Managed Bare Metal Infrastruktur](https://www.ovhcloud.com/de/managed-bare-metal/) in Ihrem OVHcloud Account.
+- Sie verfügen über eine [Managed Bare Metal Infrastruktur](/links/websitemanaged-bare-metal/) in Ihrem OVHcloud Account.
 - Sie haben Zugang zum vSphere Web Client Verwaltungsinterface.
 
 ## In der praktischen Anwendung

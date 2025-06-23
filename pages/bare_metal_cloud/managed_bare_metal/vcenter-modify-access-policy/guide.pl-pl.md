@@ -12,7 +12,7 @@ Aby zwiększyć bezpieczeństwo infrastruktury Managed Bare Metal, można ograni
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}.
+- Wykupienie usługi [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce

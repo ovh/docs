@@ -13,7 +13,7 @@ Si votre offre Managed Bare Metal ne vous convient plus, ou que vous avez comman
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
-- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
+- Posséder un produit [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 
 ## En pratique
 

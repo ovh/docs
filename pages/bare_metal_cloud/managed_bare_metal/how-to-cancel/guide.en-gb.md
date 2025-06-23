@@ -12,7 +12,7 @@ If your Managed Bare Metal offer no longer suits you, or if you have ordered a n
 
 ## Requirements
 
-- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/)
+- a [Managed Bare Metal infrastructure](/links/websitemanaged-bare-metal/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions

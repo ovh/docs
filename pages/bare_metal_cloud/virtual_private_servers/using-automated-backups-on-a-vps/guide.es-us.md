@@ -16,7 +16,7 @@ Esta opción disponible desde el área de cliente de OVHcloud le ofrece una form
 
 > [!primary]
 >
-Antes de aplicar las opciones de copia de seguridad, le recomendamos que consulte las [preguntas frecuentes y demás páginas del producto](https://www.ovhcloud.com/es-es/vps/options/) para acceder a una comparativa de los precios y otras informaciones.
+Antes de aplicar las opciones de copia de seguridad, le recomendamos que consulte las [preguntas frecuentes y demás páginas del producto](/links/websitevps/options/) para acceder a una comparativa de los precios y otras informaciones.
 >
 
 ## Requisitos

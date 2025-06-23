@@ -43,7 +43,7 @@ L'exemple ci-dessus montre que l'adresse IP testée est actuellement annoncée �
 
 ### Étape 2 : modifier l'annonce du bloc IP
 
-Rendez-vous sur le lien <https://ca.api.ovh.com/console/>, puis connectez-vous avec votre identifiant client OVHcloud. Dès lors, utilisez les API ci-dessous afin de modifier l'annonce du bloc IP.
+Rendez-vous sur le lien </links/apiconsole/>, puis connectez-vous avec votre identifiant client OVHcloud. Dès lors, utilisez les API ci-dessous afin de modifier l'annonce du bloc IP.
 
 > [!api]
 >

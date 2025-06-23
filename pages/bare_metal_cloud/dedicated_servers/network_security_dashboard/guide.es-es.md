@@ -15,7 +15,7 @@ Esta guía explica el panel de control de seguridad de la red y proporciona una 
 
 ## Requisitos
 
-- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [instancia de Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [instancia de Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
 - Acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Instrucciones
@@ -62,7 +62,7 @@ Las columnas corresponden al estado de limpieza anti-DDoS (**Mitigación**), la 
     - **Desactivado** - El firewall está **desactivado** para esta IP.
     - **(sin estado)** - No se ha creado la configuración del cortafuegos. Para configurar las reglas, haga clic en el botón `...`{.action} y seleccione `Crear firewall`{.action}.
 
-- El estado del firewall **GAME** (disponible únicamente para los [servidores dedicados OVHcloud **Game**](https://www.ovhcloud.com/es-es/bare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)) puede ser:
+- El estado del firewall **GAME** (disponible únicamente para los [servidores dedicados OVHcloud **Game**](/links/websitebare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)) puede ser:
     - **Activado** - La protección DDoS GAME está **activada** en esta IP.
     - **Desactivado** - El firewall GAME está **disponible** pero **desactivado** en esta IP.
     - **(sin estado)** - El firewall GAME no está disponible para esta IP. Esto significa que la IP de la lista no está configurada en una gama de productos compatible.

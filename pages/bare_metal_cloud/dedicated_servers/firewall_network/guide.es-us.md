@@ -28,7 +28,7 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Requisitos
 
-- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [instancias de Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.).
+- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [instancias de Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.).
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).

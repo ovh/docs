@@ -26,12 +26,12 @@ Grazie a un’interfaccia grafica che permette di automatizzare i parametri, l�
 
 ## Prerequisiti
 
-- Disporre di una soluzione [VPS recente](/links/bare-metal/vps){.external} con un [OS compatibile con cPanel](https://www.ovhcloud.com/it/vps/os/).
+- Disporre di una soluzione [VPS recente](/links/bare-metal/vps){.external} con un [OS compatibile con cPanel](/links/websitevps/os/).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
-Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Cliente OVHcloud](/links/manager) tramite un [OS compatibile con cPanel](https://www.ovhcloud.com/it/vps/os/).
+Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Cliente OVHcloud](/links/manager) tramite un [OS compatibile con cPanel](/links/websitevps/os/).
 
 > [!warning]
 >

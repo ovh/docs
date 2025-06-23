@@ -26,7 +26,7 @@ Para proteger os serviços dos clientes expostos aos IPs públicos, a OVHcloud o
 
 ## Requisitos
 
-- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Instância Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Instância Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
 - Acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]

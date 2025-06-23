@@ -18,7 +18,7 @@ vRack bietet die Möglichkeit, verschiedene Cloud-Dienste von OVHcloud untereina
 
 ### Kundencenter
 
-Sobald Ihre Dienstleistung [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) bereitgestellt ist, wird sie im Bereich `vRack` in Ihrem OVHcloud Kundencenter angezeigt und das "Rechenzentrum" befindet sich bereits in einem vRack.
+Sobald Ihre Dienstleistung [Managed Bare Metal](/links/websitemanaged-bare-metal/) bereitgestellt ist, wird sie im Bereich `vRack` in Ihrem OVHcloud Kundencenter angezeigt und das "Rechenzentrum" befindet sich bereits in einem vRack.
 
 ![Rechenzentrum](images/vRackDatacenter.PNG){.thumbnail}
 

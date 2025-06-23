@@ -18,7 +18,7 @@ Le VM Windows implementate a partire da un template utilizzano automaticamente l
 
 > [!primary]
 > 
-> Per trovare le tariffe delle immagini proposte da OVHcloud, visita la pagina [Immagini e Licenze](https://www.ovhcloud.com/it/managed-bare-metal/options/){.external}.
+> Per trovare le tariffe delle immagini proposte da OVHcloud, visita la pagina [Immagini e Licenze](/links/websitemanaged-bare-metal/options/){.external}.
 >
 
 ## Prerequisiti

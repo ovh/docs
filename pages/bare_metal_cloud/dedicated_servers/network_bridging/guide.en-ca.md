@@ -24,7 +24,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-ca/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-ca/bare-metal/high-grade/).
+> This guide is not applicable to servers of the ranges [Scale](/links/websitebare-metal/scale/) and [High Grade](/links/websitebare-metal/high-grade/).
 > 
 > Refer to the following guides instead: [Configuring the network on Proxmox VE on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >

@@ -13,7 +13,7 @@ Un bloc IP peut vous servir à rendre vos services accessibles sur Internet.
 ## Prérequis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-* Posséder une [infrastructure Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external} sur votre compte OVHcloud.
+* Posséder une [infrastructure Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} sur votre compte OVHcloud.
 
 ## En pratique
 

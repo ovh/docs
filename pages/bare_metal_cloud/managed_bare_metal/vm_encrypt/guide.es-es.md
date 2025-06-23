@@ -12,7 +12,7 @@ El servicio Managed Bare Metal de OVHcloud permite gestionar el cifrado de las m
 
 ## Requisitos
 
-- Tener contratado el servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
+- Tener contratado el servicio [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Tener un servicio de administración de claves (KMS) externo compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** dentro de la [matriz de compatibilidad](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
 - Estar conectado a la interfaz de gestión vSphere.
 - Tener máquinas virtuales con una versión Hardware 13 (mínimo).

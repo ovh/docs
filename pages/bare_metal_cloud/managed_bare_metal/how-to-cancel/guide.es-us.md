@@ -13,7 +13,7 @@ Es posible solicitar la baja de su infraestructura Managed Bare Metal en cualqui
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en el menú `Servidores`{.action} > `Managed Bare Metal`{.action}.
-- Haber contratado una solución [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
+- Haber contratado una solución [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 
 ## Procedimiento
 

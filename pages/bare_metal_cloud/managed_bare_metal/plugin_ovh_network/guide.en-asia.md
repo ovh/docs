@@ -12,7 +12,7 @@ The OVHcloud Network plugin was developed to allow for a more focused management
 
 ## Requirements
 
-- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/asia/managed-bare-metal/)
+- a [Managed Bare Metal infrastructure](/links/websitemanaged-bare-metal/)
 - an IP address block linked to your Managed Bare Metal infrastructure
 - access to the vSphere interface
 

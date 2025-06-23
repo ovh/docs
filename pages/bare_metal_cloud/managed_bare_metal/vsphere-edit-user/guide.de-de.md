@@ -12,7 +12,7 @@ Ein Name, Vorname, eine Telefonnummer und E-Mail-Adresse können mit dem vSphere
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Infrastruktur.
+- Sie verfügen über eine [Managed Bare Metal](/links/websitemanaged-bare-metal/) Infrastruktur.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

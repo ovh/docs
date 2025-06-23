@@ -12,7 +12,7 @@ Il est possible d'associer un nom, prénom, numéro de téléphone et adresse e-
 
 ## Prérequis
 
-- Disposer d'une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/).
+- Disposer d'une offre [Managed Bare Metal](/links/websitemanaged-bare-metal/).
 - Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique

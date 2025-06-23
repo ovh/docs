@@ -12,7 +12,7 @@ Para melhorar a segurança da sua infraestrutura Managed Bare Metal, pode limita
 
 ## Requisitos
 
-- Dispor de uma oferta [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Dispor de uma oferta [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções

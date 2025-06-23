@@ -35,7 +35,7 @@ Personal templates decommissioning will be done in 2 steps:
 ### Step 1: 17th of June 2025<a name="step-1"></a>
 
 - Customers will no longer be able to **edit** or **add** new personal templates.
-- Customers having personal templates and active subscriptions to dedicated servers will receive custom technical information by email to help them migrate their personal templates to the [new "/reinstall" API call](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall).
+- Customers having personal templates and active subscriptions to dedicated servers will receive custom technical information by email to help them migrate their personal templates to the [new "/reinstall" API call](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall).
 
 ### Step 2: 7th of October 2025<a name="step-2"></a>
 
@@ -56,7 +56,7 @@ The `Install one of your templates`{.action} wizard to install an operating syst
 - Write a script that uses the API (best for automation, but requires programming skills): See the section [Using OVHcloud, SoYouStart or Kimsufi API](#api) below.
 - Use the API console (good tradeoff): Use the old API call until the 17th of June 2025 and then use the new API call with the provided payloads.
 
-Although you could start exploring the examples and schemes of the [new "/reinstall" API call in the API console](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) and look at its [public documentation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation), here is the temporary workaround you can follow until you receive the payloads for the new API route via email on the 17th of June 2025.
+Although you could start exploring the examples and schemes of the [new "/reinstall" API call in the API console](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) and look at its [public documentation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation), here is the temporary workaround you can follow until you receive the payloads for the new API route via email on the 17th of June 2025.
 
 #### OVHcloud workaround <a name="ux-ovh"></a>
 
@@ -86,7 +86,7 @@ Then run the API call to trigger an OS installation from your personal template:
 If you need to list your personal templates and their details, please go to the `/me`{.action} section and look at all the `GET` API calls under `/me/installationTemplate`{.action}.
 
 > [!alert]
-> **Executing the call [POST /dedicated/server/{serviceName}/install/start](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start) to a dedicated server will erase all the data on that server. PLEASE BE CAREFUL WHILE USING THIS API CALL.**
+> **Executing the call [POST /dedicated/server/{serviceName}/install/start](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start) to a dedicated server will erase all the data on that server. PLEASE BE CAREFUL WHILE USING THIS API CALL.**
 >
 
 Then click the `Execute`{.action} button to start the OS installation.
@@ -121,9 +121,9 @@ You can go back to the [SoYouStart](https://eu.soyoustart.com/manager) or [Kimsu
 If you are using the OVHcloud, SoYouStart or Kimsufi APIs to trigger OS installations from a personal template, you can continue using the `POST /dedicated/server/{serviceName}/install/start`{.action} API call until **the 7th of October 2025**.  
 But please note that starting from **the 17th of June 2025**, you will no longer be able to add or edit personal templates.
 
-Although you will receive an email with all the details to migrate your API payloads to the [new "/reinstall" API call](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall), feel free to start exploring the examples and schemes of the [new /reinstall API call in the API console](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) (API scheme is the same for OVHcloud, [SoYouStart](https://eu.api.soyoustart.com/console/#/dedicated/server/%7BserviceName%7D/install/start~POST) and [Kimsufi](https://eu.api.kimsufi.com/console/#/dedicated/server/%7BserviceName%7D/install/start~POST)) and look at its [public documentation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation).
+Although you will receive an email with all the details to migrate your API payloads to the [new "/reinstall" API call](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall), feel free to start exploring the examples and schemes of the [new /reinstall API call in the API console](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) (API scheme is the same for OVHcloud, [SoYouStart](https://eu.api.soyoustart.com/console/#/dedicated/server/%7BserviceName%7D/install/start~POST) and [Kimsufi](https://eu.api.kimsufi.com/console/#/dedicated/server/%7BserviceName%7D/install/start~POST)) and look at its [public documentation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation).
 
-The end of the personal templates feature will simplify OS installation on dedicated servers. Indeed, the new API call [POST /dedicated/server/{serviceName}/reinstall](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) brings all the possible customizations that the old API call [POST /dedicated/server/{serviceName}/install/start](https://eu.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start) was not able to offer without the need to first define a personal template under [/me/installationTemplate](https://eu.api.ovh.com/console/?section=%2Fme&branch=v1#get-/me/installationTemplate).
+The end of the personal templates feature will simplify OS installation on dedicated servers. Indeed, the new API call [POST /dedicated/server/{serviceName}/reinstall](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) brings all the possible customizations that the old API call [POST /dedicated/server/{serviceName}/install/start](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start) was not able to offer without the need to first define a personal template under [/me/installationTemplate](/links/apiconsole/?section=%2Fme&branch=v1#get-/me/installationTemplate).
 
 The following comparison gives you an idea of the reduced number of API calls to achieve a complex customization configuration involving hardware RAID and custom partitioning: from `4+n`{.action} calls (where `n`{.action} is the number of partitions you have defined in your partitioning layout) to 1 single API call.
 

@@ -35,7 +35,7 @@ Le décommissionnement des gabarits personnels sera effectué en 2 étapes :
 ### Étape 1 : 17 Juin 2025 <a name="step-1"></a>
 
 - Les clients ne pourront plus **éditer** ou **ajouter** de nouveaux gabarits personnels.
-- Les clients ayant un/des gabarit(s) personnel(s) et au moins un service de serveur dédié actif recevront par e-mail des informations techniques détaillées personnalisées pour migrer leurs requêtes API vers la [nouvelle route /reinstall](https://ca.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall).
+- Les clients ayant un/des gabarit(s) personnel(s) et au moins un service de serveur dédié actif recevront par e-mail des informations techniques détaillées personnalisées pour migrer leurs requêtes API vers la [nouvelle route /reinstall](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall).
 
 ### Étape 2 : 7 Octobre 2025 <a name="step-2"></a>
 
@@ -56,7 +56,7 @@ Le bouton `Installation à partir d'un de vos gabarits`{.action} a été supprim
 - Ecrire un script qui utilise l'API (recommandé pour les automatisations, mais requiert des connaissances en programmation) : voir la section [API OVHcloud, SoYouStart ou Kimsufi](#api) ci-dessous.
 - Utiliser la console API (bon compromis) : utilisez l'ancien appel API jusqu'au 17 Juin 2025, puis utilisez le nouveau appel API avec les payloads fournis ensuite.
 
-Même si vous pouvez déjà explorer des exemples et schémas de la [nouvelle route API /reinstall dans la console API](https://ca.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) et lire la [documentation publique](/pages/bare_metal_cloud/dedicated_servers/api-os-installation), voici un contournement temporaire que vous pouvez suivre en attendant de recevoir les payloads de la nouvelle route API dans le courriel du 19 Mai 2025.
+Même si vous pouvez déjà explorer des exemples et schémas de la [nouvelle route API /reinstall dans la console API](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) et lire la [documentation publique](/pages/bare_metal_cloud/dedicated_servers/api-os-installation), voici un contournement temporaire que vous pouvez suivre en attendant de recevoir les payloads de la nouvelle route API dans le courriel du 19 Mai 2025.
 
 #### Contournement pour les comptes OVHcloud <a name="ux-ovh"></a>
 
@@ -86,7 +86,7 @@ Ensuite, exécutez l'appel API pour déclencher une installation OS depuis votre
 Si vous avez besoin de lister et d'afficher les détails de vos gabarits personnels, vous pouvez le faire dans la section `/me`{.action} dans les appels API dans `/me/installationTemplate`{.action}.
 
 > [!alert]
-> **Effectuer l'appel API [POST /dedicated/server/{serviceName}/install/start](https://ca.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start) sur un serveur dédié va effacer toutes ses données. VEUILLEZ UTILISER CET APPEL API AVEC PRÉCAUTION.**
+> **Effectuer l'appel API [POST /dedicated/server/{serviceName}/install/start](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start) sur un serveur dédié va effacer toutes ses données. VEUILLEZ UTILISER CET APPEL API AVEC PRÉCAUTION.**
 >
 
 Cliquez ensuite sur le bouton `Execute`{.action} pour lancer la tâche d'installation OS.
@@ -121,11 +121,11 @@ Vous pouvez revenir sur la page tableau de bord du serveur dédié dans [l'espac
 Si vous utilisez directement les appels APIs OVHcloud, SoYouStart ou Kimsufi pour déclencher les installations OS depuis un gabarit personnel, vous pouvez continuer à utiliser l'appel API `POST /dedicated/server/{serviceName}/install/start`{.action} jusqu'au **7 Octobre 2025**.
 Cependant, veuillez noter qu'à partir du **17 Juin 2025**, il ne sera plus possible d'ajouter ou de modifier vos gabarits personnels.
 
-Même si vous allez recevoir un e-mail avec tous les détails concernant les adaptations de payloads API à effectuer pour utiliser le [nouvel appel API /reinstall](https://ca.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall), vous pouvez commencer dès maintenant à parcourir son schéma [dans la console API](https://ca.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) (le schéma est le même pour OVHcloud, [SoYouStart](https://ca.api.soyoustart.com/console/#/dedicated/server/%7BserviceName%7D/install/start~POST) et [Kimsufi](https://ca.api.kimsufi.com/console/#/dedicated/server/%7BserviceName%7D/install/start~POST)) et à regarder sa [documentation publique](/pages/bare_metal_cloud/dedicated_servers/api-os-installation).
+Même si vous allez recevoir un e-mail avec tous les détails concernant les adaptations de payloads API à effectuer pour utiliser le [nouvel appel API /reinstall](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall), vous pouvez commencer dès maintenant à parcourir son schéma [dans la console API](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) (le schéma est le même pour OVHcloud, [SoYouStart](https://ca.api.soyoustart.com/console/#/dedicated/server/%7BserviceName%7D/install/start~POST) et [Kimsufi](https://ca.api.kimsufi.com/console/#/dedicated/server/%7BserviceName%7D/install/start~POST)) et à regarder sa [documentation publique](/pages/bare_metal_cloud/dedicated_servers/api-os-installation).
 
-Dans votre cas, le décommissionnement des gabarits personnels simplifie l'installation des OS sur les serveurs dédiés. En effet, le [nouvel appel API /reinstall](https://ca.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) apporte toutes les personnalisations possibles que l'ancien appel API [POST /dedicated/server/{serviceName}/install/start](https://ca.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start) n'était pas en mesure de fournir directement sans devoir définir un gabarit personnel dans [/me/installationTemplate](https://ca.api.ovh.com/console/?section=%2Fme&branch=v1#get-/me/installationTemplate) au préalable.
+Dans votre cas, le décommissionnement des gabarits personnels simplifie l'installation des OS sur les serveurs dédiés. En effet, le [nouvel appel API /reinstall](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) apporte toutes les personnalisations possibles que l'ancien appel API [POST /dedicated/server/{serviceName}/install/start](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/install/start) n'était pas en mesure de fournir directement sans devoir définir un gabarit personnel dans [/me/installationTemplate](/links/apiconsole/?section=%2Fme&branch=v1#get-/me/installationTemplate) au préalable.
 
-La comparaison suivante vous donne une idée de la réduction du nombre d'appels APIs apportée par le [nouvel appel API /reinstall](https://ca.api.ovh.com/console/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) dans le cas d'une personnalisation complexe impliquant du RAID matériel et une personnalisation du partitionnement : de `4+n`{.action} appels (où `n`{.action} représente le nombre de partitions définies dans le schéma de partitionnement) à un seul et unique appel API.
+La comparaison suivante vous donne une idée de la réduction du nombre d'appels APIs apportée par le [nouvel appel API /reinstall](/links/apiconsole/?section=%2Fdedicated%2Fserver&branch=v1#post-/dedicated/server/-serviceName-/reinstall) dans le cas d'une personnalisation complexe impliquant du RAID matériel et une personnalisation du partitionnement : de `4+n`{.action} appels (où `n`{.action} représente le nombre de partitions définies dans le schéma de partitionnement) à un seul et unique appel API.
 
 ![Comparaison ancien vs nouveau call API](images/api-calls-comparison.png){.thumbnail}
 

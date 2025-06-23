@@ -13,7 +13,7 @@ Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihre
 ## Voraussetzungen
 
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich unter `Bare Metal Cloud`{.action} im Bereich `Managed Bare Metal`{.action}.
-- Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Infrastruktur.
+- Sie verfügen über eine [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} Infrastruktur.
 
 ## In der praktischen Anwendung
 
@@ -165,7 +165,7 @@ Im Tab `Windows-Lizenz`{.action} können Sie Windows-SPLA-Lizenzen auf Ihrer Man
 
 ![Windows-SPLA-Lizenz](images/controlpanel10-e.png){.thumbnail}
 
-Die Preisübersicht hierzu finden Sie [hier](https://www.ovhcloud.com/de/managed-bare-metal/options/){.external}.
+Die Preisübersicht hierzu finden Sie [hier](/links/websitemanaged-bare-metal/options/){.external}.
 
 ### Datacenter-Ansicht
 

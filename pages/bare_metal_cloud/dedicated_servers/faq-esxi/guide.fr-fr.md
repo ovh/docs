@@ -38,7 +38,7 @@ En cas de difficultés, nous vous recommandons de faire appel à un [prestataire
 
 L'offre Serveur Dédié bénéficie en option de l'offre [Backup Storage](/links/bare-metal/backup-storage). La sauvegarde n'est cependant pas automatique. Retrouvez plus de détails sur le fonctionnement de cette solution sur notre guide « [Utiliser Backup Storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) ».
 
-Nos serveurs dédiés sont aussi compatibles avec nos [différentes solutions de sauvegarde](https://www.ovhcloud.com/fr/storage-solutions/).
+Nos serveurs dédiés sont aussi compatibles avec nos [différentes solutions de sauvegarde](/links/websitestorage-solutions/).
 
 ### Quelle est la responsabilité de OVHcloud ?
 

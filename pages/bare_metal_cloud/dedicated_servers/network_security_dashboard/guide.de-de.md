@@ -62,7 +62,7 @@ Die Spalten entsprechen dem Status des Anti-DDoS-Scrubbing (**Mitigation**) sowi
     - **Deaktiviert** - Firewall ist **deaktiviert** für diese IP.
     - **(kein Status)** - Die Firewall-Konfiguration wurde nicht erstellt. Um Regeln zu konfigurieren, klicken Sie auf den Button `...`{.action} und wählen dann `Firewall erstellen`{.action}.
 
-- Der Status der **GAME Firewall** (nur verfügbar für [OVHcloud **Game** Dedicated Server](https://www.ovhcloud.com/de/bare-metal/prices/#filterType=range_element&filterValue=game)) kann sein:
+- Der Status der **GAME Firewall** (nur verfügbar für [OVHcloud **Game** Dedicated Server](/links/websitebare-metal/prices/#filterType=range_element&filterValue=game)) kann sein:
     - **Ein** - Der Game DDoS-Schutz ist für diese IP **aktiviert**.
     - **Aus** - Die Game Firewall ist **verfügbar**, aber **deaktiviert** auf dieser IP.
     - **(kein Status)** - Die Game Firewall ist für diese IP nicht verfügbar. Dies bedeutet, dass die aufgeführte IP nicht für eine unterstützte Produktreihe konfiguriert ist.

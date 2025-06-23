@@ -26,7 +26,7 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 >
 > Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 >
-> Da maggio 2025, questa guida può essere utilizzata per i server di gamma [Scale](https://www.ovhcloud.com/it/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/).
+> Da maggio 2025, questa guida può essere utilizzata per i server di gamma [Scale](/links/websitebare-metal/scale/) e [High Grade](/links/websitebare-metal/high-grade/).
 >
 > Gli Additional IP possono essere configurati anche in modalità routing o tramite la vRack. Per farlo, consulta: [Configurare la rete su Proxmox VE sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) e [Configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 

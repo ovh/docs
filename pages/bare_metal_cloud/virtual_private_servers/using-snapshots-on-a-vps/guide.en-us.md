@@ -18,7 +18,7 @@ Before applying backup options, we recommend to consult the [product pages and F
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An OVHcloud [VPS service](https://www.ovhcloud.com/en-ca/vps/) already set up
+- An OVHcloud [VPS service](/links/websitevps/) already set up
 
 ## Instructions
 

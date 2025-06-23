@@ -14,7 +14,7 @@ The reference name of a current VPS looks like this: *vps-XXXXXXX.vps.ovh.net* (
 
 ## Requirements
 
-- A legacy [Virtual Private Server](https://www.ovhcloud.com/asia/vps/vps-offer-migration/) in your OVHcloud account
+- A legacy [Virtual Private Server](/links/websitevps/vps-offer-migration/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -111,7 +111,7 @@ This link directs you to the form to fill out in case the owner of the VPS has t
 
 ### Migrate to the new range
 
-Your VPS can be migrated to the current range automatically. Find out the benefits of this offer on our [VPS migration FAQ page](https://www.ovhcloud.com/asia/vps/vps-offer-migration/).
+Your VPS can be migrated to the current range automatically. Find out the benefits of this offer on our [VPS migration FAQ page](/links/websitevps/vps-offer-migration/).
 
 ## Go further
 

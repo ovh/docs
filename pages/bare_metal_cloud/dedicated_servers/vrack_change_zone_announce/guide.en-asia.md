@@ -43,7 +43,7 @@ In this example, the tested IP address is currently announced to **Roubaix**. Th
 
 ### Step 2: Change the announcement zone of the IP block
 
-Go to <https://ca.api.ovh.com/console/>, then sign in with your OVHcloud customer ID. Use the API call below to change the announcement of the IP block.
+Go to </links/apiconsole/>, then sign in with your OVHcloud customer ID. Use the API call below to change the announcement of the IP block.
 
 > [!api]
 >

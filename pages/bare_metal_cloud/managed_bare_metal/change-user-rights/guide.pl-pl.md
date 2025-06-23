@@ -11,7 +11,7 @@ Celem niniejszego przewodnika jest wyjaśnienie, na czym polega zarządzanie pra
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/).
+- Wykupienie usługi [Managed Bare Metal](/links/websitemanaged-bare-metal/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce

@@ -119,7 +119,7 @@ Questo link ti indirizza al form da compilare in caso di cambio di proprietario 
 
 ### Passa alla nuova gamma
 
-Il VPS può essere migrato automaticamente verso la gamma attuale. Scopri i vantaggi di questa offerta nelle [nostre FAQ dedicate alla migrazione dei VPS](https://www.ovhcloud.com/it/vps/vps-offer-migration/).
+Il VPS può essere migrato automaticamente verso la gamma attuale. Scopri i vantaggi di questa offerta nelle [nostre FAQ dedicate alla migrazione dei VPS](/links/websitevps/vps-offer-migration/).
 
 ## Per saperne di più
 

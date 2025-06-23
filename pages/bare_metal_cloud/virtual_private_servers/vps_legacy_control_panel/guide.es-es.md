@@ -118,7 +118,7 @@ Este enlace le dirige al formulario que deberá rellenar en caso de cambio de pr
 
 ### Migrar a la nueva gama
 
-Su VPS puede migrarse automáticamente a la gama actual. Descubra las ventajas de esta oferta en [nuestras FAQ dedicadas a la migración de VPS](https://www.ovhcloud.com/es-es/vps/vps-offer-migration/).
+Su VPS puede migrarse automáticamente a la gama actual. Descubra las ventajas de esta oferta en [nuestras FAQ dedicadas a la migración de VPS](/links/websitevps/vps-offer-migration/).
 
 ## Más información
 

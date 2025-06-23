@@ -119,7 +119,7 @@ Link ten przekierowuje Cię do formularza, który należy wypełnić w przypadku
 
 ### Przejdź na nową gamę
 
-Możesz automatycznie przenieść VPS do aktualnej gamy. Sprawdź zalety tej oferty w [FAQ dotyczący migracji VPS](https://www.ovhcloud.com/pl/vps/vps-offer-migration/).
+Możesz automatycznie przenieść VPS do aktualnej gamy. Sprawdź zalety tej oferty w [FAQ dotyczący migracji VPS](/links/websitevps/vps-offer-migration/).
 
 ## Sprawdź również
 

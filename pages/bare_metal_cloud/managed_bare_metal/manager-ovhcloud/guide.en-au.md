@@ -12,7 +12,7 @@ The OVHcloud Managed Bare Metal Control Panel enables you to easily manage the n
 
 ## Requirements
 
-- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-au/managed-bare-metal/)
+- a [Managed Bare Metal infrastructure](/links/websitemanaged-bare-metal/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
@@ -160,7 +160,7 @@ This tab allows you to activate Windows SPLA licences for your data centre by cl
 
 ![Windows SPLA Licence](images/controlpanel10-e.png){.thumbnail}
 
-You can find more information on the [pricing page](https://www.ovhcloud.com/en-au/managed-bare-metal/options/).
+You can find more information on the [pricing page](/links/websitemanaged-bare-metal/options/).
 
 ### Data centre view 
 

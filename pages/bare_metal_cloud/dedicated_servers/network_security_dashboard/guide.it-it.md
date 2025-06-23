@@ -15,7 +15,7 @@ Questa guida ti mostra il Dashboard di Sicurezza di Rete e ti fornisce una panor
 
 ## Prerequisiti
 
-- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Istanza Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud) cloud/), [Additional IP](/links/network/additional-ip), ecc.
+- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Istanza Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/websiteenterprise/products/hosted-private-cloud) cloud/), [Additional IP](/links/network/additional-ip), ecc.
 - Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
@@ -62,7 +62,7 @@ Le colonne corrispondono allo stato di protezione anti-DDoS (**Mitigation**), al
     - **Disattivato** - Il firewall è **disattivato** per questo IP.
     - **(nessuno stato)** - Configurazione del firewall non creata. Per configurare le regole, clicca sul pulsante `...`{.action}, quindi seleziona `Crea Firewall`{.action}.
 
-- Lo stato **GAME firewall** (disponibile solo per i [server dedicati OVHcloud **Game**](https://www.ovhcloud.com/it/bare-metal/prices/#filterType=range_element&filterValue=game)) può essere:
+- Lo stato **GAME firewall** (disponibile solo per i [server dedicati OVHcloud **Game**](/links/websitebare-metal/prices/#filterType=range_element&filterValue=game)) può essere:
     - **On** - La protezione DDoS GAME è **enabled** su questo IP.
     - **Disattivato** - Il firewall GAME è **disponibile** ma **disattivato** su questo IP.
     - **(nessuno stato)** - Il firewall GAME non è disponibile per questo IP. Questo significa che l'IP elencato non è configurato su una gamma di prodotti supportata.

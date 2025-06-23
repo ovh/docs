@@ -12,7 +12,7 @@ A OVH disponibiliza templates Windows e SQL server (em formato OVF) que pode usa
 
 > [!primary]
 > 
-> Encontre nesta [página](https://www.ovhcloud.com/pt/managed-bare-metal/options/){.external} os preços das imagens disponibilizadas pela OVHcloud.
+> Encontre nesta [página](/links/websitemanaged-bare-metal/options/){.external} os preços das imagens disponibilizadas pela OVHcloud.
 >
 
 ## Requisitos

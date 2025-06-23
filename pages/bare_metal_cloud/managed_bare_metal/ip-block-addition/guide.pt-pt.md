@@ -13,7 +13,7 @@ Um bloco IP pode servir para tornar os seus serviços acessíveis na Internet.
 ## Requisitos
 
 * Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-* Dispor de uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external} na sua conta OVHcloud.
+* Dispor de uma [infraestrutura Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} na sua conta OVHcloud.
 
 ## Instruções
 

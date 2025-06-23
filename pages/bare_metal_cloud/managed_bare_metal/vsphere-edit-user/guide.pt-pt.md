@@ -12,7 +12,7 @@ updated: 2020-11-18
 
 ## Requisitos
 
-- Dispor de uma oferta [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
+- Dispor de uma oferta [Managed Bare Metal](/links/websitemanaged-bare-metal/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções

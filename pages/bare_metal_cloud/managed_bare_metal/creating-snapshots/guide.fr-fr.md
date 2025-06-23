@@ -12,7 +12,7 @@ Vous pouvez prendre un snapshot d'une machine virtuelle. Une fois que vous avez 
 
 ## Prérequis
 
-- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
+- Posséder un produit [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 - Être connecté au client vSphere HTML
 
 ## En pratique

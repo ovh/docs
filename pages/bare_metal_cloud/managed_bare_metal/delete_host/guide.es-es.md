@@ -12,7 +12,7 @@ Hay situaciones en las que puede ser necesario eliminar un servidor host del clu
 
 ## Requisitos
 
-* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
+* Tener contratado un servicio [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 * Estar conectado al panel de administración vSphere.
 
 ## Procedimiento

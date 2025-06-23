@@ -16,7 +16,7 @@ Informacje te są dostępne także poprzez APIv6 i API Metrics.
 
 ## Wymagania początkowe
 
-- [Infrastructure Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/)
+- [Infrastructure Managed Bare Metal](/links/websitemanaged-bare-metal/)
 - Dostęp do interfejsu zarządzania vScope
 
 ## W praktyce

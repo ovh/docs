@@ -83,7 +83,7 @@ Click `Next`{.action}, then `Confirm`{.action}.
 
 ### Moving an IP via the API
 
-Log in to the OVHcloud [API webpage](https://ca.api.ovh.com/).
+Log in to the OVHcloud [API webpage](/links/api).
 
 First, it is best to check if the IP address can be moved.
 <br>To check if the IP can be moved to one of your dedicated servers, use the following call:

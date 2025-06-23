@@ -6,13 +6,13 @@ updated: 2020-12-15
 
 ## Objectif
 
-L'offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external} vous permet d'ajouter des ressources facturées à l'heure.
+L'offre [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} vous permet d'ajouter des ressources facturées à l'heure.
 
 **Ce guide décrit comment ajouter une ressource horaire depuis l'interface vSphere du Managed Bare Metal.**
 
 ## Prérequis
 
-* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
+* Posséder une offre [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}.
 * [Donner le droit "Ajout de ressources"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 * Être connecté au client vSphere.
 

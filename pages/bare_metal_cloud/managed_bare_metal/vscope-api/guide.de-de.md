@@ -16,7 +16,7 @@ Diese Informationen sind auch über APIv6 und API Metrics verfügbar.
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Infrastruktur.
+- Sie verfügen über eine [Managed Bare Metal](/links/websitemanaged-bare-metal/) Infrastruktur.
 - Sie sind im Verwaltungsinterface von vScope eingeloggt.
 
 ## In der praktischen Anwendung

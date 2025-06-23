@@ -6,7 +6,7 @@ updated: 2020-11-18
 
 ## Voraussetzungen
 
-- Sie nutzen einen [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Dienst.
+- Sie nutzen einen [Managed Bare Metal](/links/websitemanaged-bare-metal/) Dienst.
 
 ## Einleitung
 

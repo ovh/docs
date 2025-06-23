@@ -6,13 +6,13 @@ updated: 2020-12-15
 
 ## Wprowadzenie
 
-Oferta [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external} umożliwia dodawanie zasobów płatnych w systemie godzinowym.
+Oferta [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external} umożliwia dodawanie zasobów płatnych w systemie godzinowym.
 
 **Niniejszy przewodnik wyjaśnia, jak dodać zasób w systemie godzinowym za pomocą interfejsu vSphere Managed Bare Metal.**
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+* Posiadanie oferty [Managed Bare Metal](/links/websitemanaged-bare-metal/){.external}
 * [Przydzielenie użytkownikowi uprawnienia "Dodawanie zasobów"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights){.external} w wybranym centrum danych, korzystając z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * Połączenie z klientem vSphere
 

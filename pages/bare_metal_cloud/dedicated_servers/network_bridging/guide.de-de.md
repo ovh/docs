@@ -24,7 +24,7 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 >
 > Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 >
-> Seit Mai 2025 gilt diese Anleitung auch für Server der Reihen [Scale](https://www.ovhcloud.com/de/bare-metal/scale/) und [High Grade](https://www.ovhcloud.com/de/bare-metal/high-grade/).
+> Seit Mai 2025 gilt diese Anleitung auch für Server der Reihen [Scale](/links/websitebare-metal/scale/) und [High Grade](/links/websitebare-metal/high-grade/).
 >
 > Additional IPs können auch im Routing-Modus oder im vRack konfiguriert werden. Weitere Informationen finden Sie unter: [Netzwerk auf Proxmox VE auf den High Grade & Scale-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) und [Netzwerk auf Windows Server mit Hyper-V auf den High Grade & Scale-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 

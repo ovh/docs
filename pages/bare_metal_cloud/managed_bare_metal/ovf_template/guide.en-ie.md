@@ -14,7 +14,7 @@ Windows VMs deployed from a template automatically use the SPLA licences provide
 
 > [!primary]
 > 
-> You can find the prices of the images offered by OVHcloud on this [page](https://www.ovhcloud.com/en-ie/managed-bare-metal/options/).
+> You can find the prices of the images offered by OVHcloud on this [page](/links/websitemanaged-bare-metal/options/).
 >
 
 ## Requirements

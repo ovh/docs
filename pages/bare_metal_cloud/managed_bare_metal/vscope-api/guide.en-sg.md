@@ -16,7 +16,7 @@ You can also access this information via the APIv6 and Metrics API.
 
 ## Requirements
 
-- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-sg/managed-bare-metal/)
+- a [Managed Bare Metal infrastructure](/links/websitemanaged-bare-metal/)
 - access to the management interface (vScope)
 
 ## Instructions
