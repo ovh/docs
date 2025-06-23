@@ -22,7 +22,7 @@ Al crear una copia de seguridad de su VPS (en caso de suscribirse a las copias d
 
 ## Requisitos
 
-- Tener contratado un servicio [VPS reciente](https://www.ovhcloud.com/es-es/vps/){.external} con un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
+- Tener contratado un servicio [VPS reciente](/links/bare-metal/vps){.external} con un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
 - cPanel debe estar instalado en su servidor
 
 ## Procedimiento

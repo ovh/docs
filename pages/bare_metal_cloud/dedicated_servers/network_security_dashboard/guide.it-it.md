@@ -15,7 +15,7 @@ Questa guida ti mostra il Dashboard di Sicurezza di Rete e ti fornisce una panor
 
 ## Prerequisiti
 
-- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/it/vps/), [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud) cloud/), [Additional IP](/links/network/additional-ip), ecc.
+- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Istanza Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud) cloud/), [Additional IP](/links/network/additional-ip), ecc.
 - Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

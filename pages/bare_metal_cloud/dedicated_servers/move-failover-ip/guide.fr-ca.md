@@ -34,9 +34,9 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
-> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+> Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 >
 
 > [!warning]
@@ -86,7 +86,7 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ### Déplacer une IP via les API
 
-Connectez-vous sur la page web des [API OVHcloud](https://ca.api.ovh.com/).
+Connectez-vous sur la page web des [API OVHcloud](/links/api).
 
 Dans un premier temps, il est préférable de vérifier si l'adresse IP peut bien être déplacée.
 <br>Pour vérifier si l'IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :

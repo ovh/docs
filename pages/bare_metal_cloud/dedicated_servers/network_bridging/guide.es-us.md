@@ -82,7 +82,7 @@ La dirección de la pasarela IPv4 asignada a su servidor se muestra en la secci�
 
 #### A través de la API de OVHcloud <a name="viaapi"></a>
 
-En la [página API de OVHcloud](https://ca.api.ovh.com/console/), haga clic en `Login`{.action}, situado en la esquina superior derecha. En la siguiente página, introduzca su ID de cliente de OVHcloud.
+En la [página API de OVHcloud](/links/console), haga clic en `Login`{.action}, situado en la esquina superior derecha. En la siguiente página, introduzca su ID de cliente de OVHcloud.
 
 Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
 

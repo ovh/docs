@@ -18,12 +18,12 @@ Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur v
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce tutoriel.
 >
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre [espace client OVHcloud](/links/manager)
+- Disposer d'une offre [VPS](/links/bare-metal/vps) ou d'un [serveur dédié](/links/bare-metal/bare-metal) dans votre [espace client OVHcloud](/links/manager)
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
 
 ## En pratique
@@ -115,6 +115,6 @@ Pour obtenir quelques conseils généraux pour sécuriser un serveur basé sur G
 
 [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/)
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

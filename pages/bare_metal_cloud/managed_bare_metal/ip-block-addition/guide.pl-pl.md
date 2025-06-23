@@ -13,7 +13,7 @@ Blok IP umożliwia udostępnianie witryn w Internecie.
 ## Wymagania początkowe
 
 * Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-* Posiadanie [infrastruktury Managed Bare Metal](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud.
+* Posiadanie [infrastruktury Managed Bare Metal](/links/public-cloud/public-cloud){.external} na koncie OVHcloud.
 
 ## W praktyce
 

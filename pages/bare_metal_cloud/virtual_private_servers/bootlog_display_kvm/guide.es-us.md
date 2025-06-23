@@ -27,7 +27,7 @@ Si su VPS no responde, siempre debería poder acceder a él desde el área de cl
 
 ## Requisitos
 
-- Disponer de un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
+- Disponer de un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud
 - Tener acceso al [Panel de configuración de OVHcloud](/links/manager)
 
 ## Procedimiento
@@ -77,7 +77,7 @@ sdb       8:16   0   50G  0 disk
 
 El ejemplo anterior muestra que la partición del sistema está montada en **/mnt/sdb1**. (El disco principal es **sdb**. El disco rescue es **sda** y **sda1** es la partición principal en rescue montada en **/**).
 
-Si su VPS pertenece a las [**gamas VPS actuales**](https://www.ovhcloud.com/es/vps/), no se realizará ningún montaje automático y la columna "MOUNTPOINT" debería estar vacía. En ese caso, vaya al [paso 4](#step4).
+Si su VPS pertenece a las [**gamas VPS actuales**](/links/bare-metal/vps), no se realizará ningún montaje automático y la columna "MOUNTPOINT" debería estar vacía. En ese caso, vaya al [paso 4](#step4).
 
 ### Paso 3: desmontar la partición (solo para las antiguas gamas VPS)
 
@@ -89,7 +89,7 @@ En un VPS perteneciente a las antiguas gamas en modo de rescate, el disco princi
 
 ### Paso 4: montar la partición con los parámetros adecuados <a name="step4"></a>
 
-Si su VPS pertenece a las [**gamas VPS actuales**](https://www.ovhcloud.com/es/vps/), compruebe que la carpeta de montaje esté creada:
+Si su VPS pertenece a las [**gamas VPS actuales**](/links/bare-metal/vps), compruebe que la carpeta de montaje esté creada:
 
 ```sh
 ~$ mkdir -p /mnt/sdb1

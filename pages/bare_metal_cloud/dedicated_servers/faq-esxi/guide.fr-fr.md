@@ -32,11 +32,11 @@ Cependant, nous ne disposons pas de tous les dispositifs nécessaires pour récu
 L'agence nationale américaine pour la cybersécurité et la sécurité des infrastructures ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) a également mis à disposition [un outil](https://github.com/cisagov/ESXiArgs-Recover) pour récupérer les données d'un serveur ESXi ciblé par le ransomware ESXIArgs.<br>
 L'utilisation de cet outil nécessite des compétences avancées en administration de système. Nous vous conseillons de ne l'utiliser qu'en connaissance de cause, OVHcloud ne pouvant vous fournir d'assistance sur son utilisation.
 
-En cas de difficultés, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de contacter nos équipes en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
+En cas de difficultés, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou de contacter nos équipes en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ### OVHcloud dispose-t-il d'une sauvegarde pour restaurer vos données ?
 
-L'offre Serveur Dédié bénéficie en option de l'offre [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/). La sauvegarde n'est cependant pas automatique. Retrouvez plus de détails sur le fonctionnement de cette solution sur notre guide « [Utiliser Backup Storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) ».
+L'offre Serveur Dédié bénéficie en option de l'offre [Backup Storage](/links/bare-metal/backup-storage). La sauvegarde n'est cependant pas automatique. Retrouvez plus de détails sur le fonctionnement de cette solution sur notre guide « [Utiliser Backup Storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) ».
 
 Nos serveurs dédiés sont aussi compatibles avec nos [différentes solutions de sauvegarde](https://www.ovhcloud.com/fr/storage-solutions/).
 
@@ -79,7 +79,7 @@ Pas à notre connaissance sur cette vague d'attaque.
 
 ### Est-ce que l'offre VMware on OVHcloud est concernée par cet incident ?
 
-Nos clients utilisant les solutions [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/) ne sont pas concernés par le ransomware. Concrètement, la SSL gateway permet d’éviter cette typologie d’attaque en bloquant l’accès externe à ce port (OpenSLP 427).
+Nos clients utilisant les solutions [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-cloud) ne sont pas concernés par le ransomware. Concrètement, la SSL gateway permet d’éviter cette typologie d’attaque en bloquant l’accès externe à ce port (OpenSLP 427).
 
 ## Aller plus loin
 

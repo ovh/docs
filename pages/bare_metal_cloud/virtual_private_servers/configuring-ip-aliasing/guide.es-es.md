@@ -19,13 +19,13 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de red 
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. No tenemos acceso a estas máquinas, por lo que no somos los administradores de las mismas y no podremos asistirle. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de un servidor, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Para más información, consulte el apartado "Más información" de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de un servidor, contacte con un [proveedor especializado](/links/partner). Para más información, consulte el apartado "Más información" de esta guía.
 >
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta OVHcloud
-- Tener una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/)
+- Tener un [VPS](/links/bare-metal/vps) en su cuenta OVHcloud
+- Tener una [dirección Additional IP](/links/bare-metal/ip)
 - Tener acceso de administrador (sudo) a través de SSH o GUI en su servidor
 - Tener conocimientos básicos de redes y administración
 
@@ -486,6 +486,6 @@ Para probar la conexión, solo tiene que enviar un ping a su dirección Addition
 
 [Activar el modo de rescate en un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

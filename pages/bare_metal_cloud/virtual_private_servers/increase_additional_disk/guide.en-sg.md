@@ -12,7 +12,7 @@ This guide explains how to increase the size of an additional disk and extend th
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
+- A [VPS](/links/bare-metal/vps) in your OVHcloud account
 - An [additional disk](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configured on the VPS
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access via SSH or RDP to your VPS
@@ -51,7 +51,7 @@ After the payment is confirmed, the disk upgrade will take a few minutes. You ca
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 #### On a Linux VPS

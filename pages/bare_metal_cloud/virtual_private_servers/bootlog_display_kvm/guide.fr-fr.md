@@ -23,7 +23,7 @@ Si votre VPS ne répond plus, vous devriez toujours pouvoir y accéder depuis vo
 
 ## Prérequis
 
-- disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- disposer d'un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
 - disposer d'un accès à l'[espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -73,7 +73,7 @@ sdb       8:16   0   50G  0 disk
 
 L'exemple obtenu ci-dessus montre que la partition système est montée sur **/mnt/sdb1**. (Le disque principal est **sdb**. Le disque rescue est **sda** et **sda1** est la partition principale en rescue montée sur **/**).
 
-Si votre VPS appartient aux [**gammes VPS actuelles**](https://www.ovhcloud.com/fr/vps/), aucun montage automatique ne sera effectué et la colonne "MOUNTPOINT" devrait être vide. Dans ce cas, passez à [l'étape 4](#step4).
+Si votre VPS appartient aux [**gammes VPS actuelles**](/links/bare-metal/vps), aucun montage automatique ne sera effectué et la colonne "MOUNTPOINT" devrait être vide. Dans ce cas, passez à [l'étape 4](#step4).
 
 ### Étape 3 : démonter la partition (uniquement pour les anciennes gammes VPS)
 
@@ -85,7 +85,7 @@ Sur un VPS appartenant aux anciennes gammes placé en mode rescue, le disque pri
 
 ### Étape 4 : monter la partition avec les paramètres appropriés <a name="step4"></a>
 
-Si votre VPS appartient aux [**gammes VPS actuelles**](https://www.ovhcloud.com/fr/vps/), vérifiez d'abord que le dossier de montage est créé :
+Si votre VPS appartient aux [**gammes VPS actuelles**](/links/bare-metal/vps), vérifiez d'abord que le dossier de montage est créé :
 
 ```sh
 ~$ mkdir -p /mnt/sdb1

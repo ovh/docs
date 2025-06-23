@@ -12,13 +12,13 @@ This option offers a convenient way to frequently have complete VPS backups avai
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [product pages and FAQ](/links/bare-metal/vps-options) for pricing comparisons and further details.
 >
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An OVHcloud [VPS service](https://www.ovhcloud.com/en/vps/) already set up
+- An OVHcloud [VPS service](/links/bare-metal/vps) already set up
 - Administrative access (sudo) via SSH to your VPS (optional)
 
 ## Instructions

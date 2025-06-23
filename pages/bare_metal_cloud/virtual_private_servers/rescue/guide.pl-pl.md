@@ -26,12 +26,12 @@ W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Re
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
-- Posiadanie już skonfigurowanego [VPS OVHcloud](https://www.ovhcloud.com/pl/vps/)
+- Posiadanie już skonfigurowanego [VPS OVHcloud](/links/bare-metal/vps)
 
 > [!warning]
 > OVHcloud zapewnia usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Do Twoich obowiązków należy zatem upewnienie się, że działają one prawidłowo.
 >
-> Ten przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem usługami, korzystaniem z nich lub ich wdrażaniem na serwerze, zalecamy kontakt z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) lub [naszą społecznością](https://community.ovh.com/en/).
+> Ten przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem usługami, korzystaniem z nich lub ich wdrażaniem na serwerze, zalecamy kontakt z [wyspecjalizowanym dostawcą](/links/partner) lub [naszą społecznością](https://community.ovh.com/en/).
 >
 
 ## W praktyce

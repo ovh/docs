@@ -24,7 +24,7 @@ Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erl
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) mit einer [kompatiblen Distribution](https://www.ovhcloud.com/de/vps/os/).
+- Sie haben einen [VPS](/links/bare-metal/vps) mit einer [kompatiblen Distribution](https://www.ovhcloud.com/de/vps/os/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

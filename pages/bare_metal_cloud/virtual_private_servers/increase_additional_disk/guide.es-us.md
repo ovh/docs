@@ -16,7 +16,7 @@ Si ha alcanzado la capacidad máxima de su disco adicional, puede añadir almace
 
 ## Requisitos
 
-- Un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
+- Un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
 - Un [disco adicional](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configurado en el VPS.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 - Tener acceso al VPS por SSH o RDP para la administración.

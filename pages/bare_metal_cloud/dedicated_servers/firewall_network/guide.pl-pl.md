@@ -26,13 +26,13 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 
 ## Wymagania początkowe
 
-- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pl/vps/), [Public Cloud instance](https://www.ovhcloud.com/pl/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip) itd.)
+- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip) itd.)
 - Dostęp do [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line](https://eco.ovhcloud.com/pl/about/).
+> Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Aby uzyskać więcej informacji, odwiedź stronę pod adresem [comparison page](https://eco.ovhcloud.com/pl/compare/).
+> Aby uzyskać więcej informacji, odwiedź stronę pod adresem [comparison page](/links/bare-metal/eco-compare).
 
 > [!warning]
 > Edge Network Firewall nie obsługuje protokołu QUIC.

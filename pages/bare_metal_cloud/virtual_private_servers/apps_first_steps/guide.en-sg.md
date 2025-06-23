@@ -12,7 +12,7 @@ OVHcloud offers VPS customers pre-installed application images for quick and eas
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
+- A [VPS](/links/bare-metal/vps) in your OVHcloud account
 
 ## Instructions
 

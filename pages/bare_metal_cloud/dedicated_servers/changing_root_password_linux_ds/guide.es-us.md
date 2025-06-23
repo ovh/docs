@@ -19,7 +19,7 @@ Aunque el servidor no se utilice para fines que requieran la administración de 
 
 ## Requisitos
 
-- Un [servidor dedicado](/links/bare-metal/bare-metal) o un [VPS](https://www.ovhcloud.com/es/vps/) con un sistema operativo Linux en su cuenta de OVHcloud
+- Un [servidor dedicado](/links/bare-metal/bare-metal) o un [VPS](/links/bare-metal/vps) con un sistema operativo Linux en su cuenta de OVHcloud
 - Disponer de las claves de conexión recibidas por correo electrónico tras la instalación.
 
 ## Procedimiento

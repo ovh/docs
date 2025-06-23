@@ -15,7 +15,7 @@ Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci
 
 ## Wymagania początkowe
 
-- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pl/vps/), [Public Cloud instance](https://www.ovhcloud.com/pl/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip) itd.)
+- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip) itd.)
 - Dostęp do [OVHcloud Control Panel](/links/manager)
 
 ## W praktyce

@@ -13,7 +13,7 @@ Having your own server to play a game such as Palworld offers several advantages
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/es/vps/) or a [dedicated server](https://www.ovhcloud.com/es/bare-metal/) in your OVHcloud account
+- A [VPS](/links/bare-metal/vps) or a [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - A GNU/Linux operating system installed on the server
 - Administrative (sudo) SSH access to your server
 - Basic understanding of GNU/Linux administration

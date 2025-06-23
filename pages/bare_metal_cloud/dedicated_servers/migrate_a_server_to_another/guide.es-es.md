@@ -50,7 +50,7 @@ La migración de los datos suele implicar copiar archivos de un servidor a otro.
 
 ### Uso del Backup Storage (disponible únicamente en OVHcloud y So you Start)
 
-Con la opción [Backup Storage](https://www.ovhcloud.com/es-es/bare-metal/backup-storage/) de backup, puede almacenar datos en un servicio externo al servidor. Solo está relacionado con el servicio que le ha contratado.
+Con la opción [Backup Storage](/links/bare-metal/backup-storage) de backup, puede almacenar datos en un servicio externo al servidor. Solo está relacionado con el servicio que le ha contratado.
 
 > [!warning]
 >

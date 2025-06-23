@@ -20,7 +20,7 @@ Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizad
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud.
+- Tener un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
 - Tener acceso de administrador (root/sudo) a su servidor por SSH.
 
 ## Procedimiento

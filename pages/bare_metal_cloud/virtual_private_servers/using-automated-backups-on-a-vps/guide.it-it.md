@@ -16,13 +16,13 @@ Questa opzione offre una comoda modalità per avere frequenti backup sul VPS, di
 
 > [!primary]
 >
-Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pagine prodotto [e alle domande frequenti](https://www.ovhcloud.com/it/vps/options/) per confrontare i prezzi e per visualizzare ulteriori dettagli.
+Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pagine prodotto [e alle domande frequenti](/links/bare-metal/vps-options) per confrontare i prezzi e per visualizzare ulteriori dettagli.
 >
 
 ## Prerequisiti
 
 - avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- un servizio [VPS OVHcloud](https://www.ovhcloud.com/it/vps/) già impostato
+- un servizio [VPS OVHcloud](/links/bare-metal/vps) già impostato
 - accesso come amministratore (sudo) mediante SSH al tuo VPS (opzionale)
 
 ## Procedura

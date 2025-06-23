@@ -16,13 +16,13 @@ Dzięki tej opcji będziesz mieć w Panelu klienta OVHcloud gotowe kopie zapasow
 
 > [!primary]
 >
-Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](https://www.ovhcloud.com/pl/vps/options/) w celu porównania cen i uzyskania szczegółowych informacji.
+Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](/links/bare-metal/vps-options) w celu porównania cen i uzyskania szczegółowych informacji.
 >
 
 ## Wymagania początkowe
 
 - dostęp do [Panelu klienta OVHcloud](/links/manager)
-- skonfigurowana [usługa VPS](https://www.ovhcloud.com/pl/vps/) OVHcloud
+- skonfigurowana [usługa VPS](/links/bare-metal/vps) OVHcloud
 - dostęp administracyjny (uprawnienia użytkownika root) do prywatnego serwera wirtualnego za pośrednictwem protokołu SSH
 
 ## W praktyce

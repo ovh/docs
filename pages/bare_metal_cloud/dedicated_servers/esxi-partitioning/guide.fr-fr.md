@@ -53,7 +53,7 @@ Comme vous pouvez le constater, aucun datastore n'est créé sur le premier disq
 > [!primary]
 >
 > Le saviez-vous ?
-> Les solutions [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/) sont basées sur des installations ESXi avec le schéma de partitionnement `small`.
+> Les solutions [VMware on OVHcloud](/links/hosted-private-cloud/vmware) sont basées sur des installations ESXi avec le schéma de partitionnement `small`.
 >
 
 ### Comment sélectionner le schéma de partitionnement ?
