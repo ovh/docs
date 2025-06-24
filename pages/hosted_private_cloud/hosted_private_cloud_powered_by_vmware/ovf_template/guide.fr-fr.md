@@ -20,7 +20,7 @@ Les VM Windows déployées à partir d'un template utilisent automatiquement les
 ## Prérequis
 
 - Avoir accès au client Web (HTML5)
-- [Avoir activé les licences Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#licence-windows){.external} depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- [Avoir activé les licences Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#licence-windows){.external} depuis votre [espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 

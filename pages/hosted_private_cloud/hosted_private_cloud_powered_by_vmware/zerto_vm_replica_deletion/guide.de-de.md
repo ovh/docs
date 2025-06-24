@@ -19,7 +19,7 @@ Sie können diese Kopien dann löschen, um die VPG wieder in den Normalbetrieb z
 ## Voraussetzungen
 
 - Sie sind Administrator-Kontakt der [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
-- Sie haben eine aktive Benutzerkennung mit spezifischen Rechten für Zerto (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)).
+- Sie haben eine aktive Benutzerkennung mit spezifischen Rechten für Zerto (erstellt im [OVHcloud Kundencenter](/links/manager)).
 - Sie setzen [Zerto Virtual Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service) ein.
 
 ## In der praktischen Anwendung

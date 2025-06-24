@@ -12,14 +12,14 @@ A Área de Cliente OVHcloud oferece-lhe várias opções de personalização da 
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceder à secção `Hosted Private Cloud`{.action} e, depois, `Private Cloud`{.action}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external} e aceder à secção `Hosted Private Cloud`{.action} e, depois, `Private Cloud`{.action}.
 - Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
 
 ## Instruções
 
 ### Separador geral
 
-Depois de aceder à secção  `Hosted Private Cloud`{.action} e `Private Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, visualizará um panorama geral da sua Private Cloud:
+Depois de aceder à secção  `Hosted Private Cloud`{.action} e `Private Cloud`{.action} da [Área de Cliente OVHcloud](/links/manager){.external}, visualizará um panorama geral da sua Private Cloud:
 
 ![Informações gerais](images/controlpanel1.png){.thumbnail}
 

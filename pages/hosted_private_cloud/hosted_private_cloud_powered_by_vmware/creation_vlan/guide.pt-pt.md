@@ -13,7 +13,7 @@ OVHcloud sets up a base of 11 VLANs on your vRack.
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere as well as the specific rights for Networking (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
+- A user account with access to vSphere as well as the specific rights for Networking (created in the [OVHcloud Control Panel](/links/manager))
 
 ## Instructions
 

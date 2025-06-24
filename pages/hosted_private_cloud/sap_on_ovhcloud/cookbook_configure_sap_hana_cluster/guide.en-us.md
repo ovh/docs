@@ -14,7 +14,7 @@ This implementation reduces the Recovery Time Objective (RTO), in case of a virt
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A deployed [SAP HANA on Private Cloud](https://www.ovhcloud.com/en/hosted-private-cloud/sap-hana/) solution.
 - Two deployed SAP HANA virtual machines with the same SAP HANA version installed .
 

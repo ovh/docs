@@ -58,7 +58,7 @@ Vous retrouverez toutes les informations nécessaires sur nos pages dédiées à
 
 - [Webinar - Managed VMware Cloud Director on OVHcloud (vidéo EN)](https://vimeo.com/936590009/b52b3ba8ce)
 - [Webinar - VMware by Broadcom New Offerings and Opportunities (vidéo EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
-- [OVHcloud.com - VMware Cloud Director on OVHcloud (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
+- [OVHcloud.com - VMware Cloud Director on OVHcloud (FR)](/links/hosted-private-cloud/vmware-vcd)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
 Les migrations seront effectuées en 4 vagues, à partir du mois de novembre 2024, selon les services actifs dans votre environnement.
@@ -157,7 +157,7 @@ Cette interface permet de visualiser et de télécharger les fichiers encore pr�
 
 Pour des raisons de sécurité, seuls les utilisateurs existants avant la migration peuvent s’authentifier.
 
-Le mot de passe associé à ces utilisateurs peut avoir été réinitialisé pendant la migration. Si besoin, vous pouvez le modifier via l’[API OVHcloud dédiée](https://eu.api.ovh.com/console/) avec l'appel suivant :
+Le mot de passe associé à ces utilisateurs peut avoir été réinitialisé pendant la migration. Si besoin, vous pouvez le modifier via l’[API OVHcloud dédiée](/links/console) avec l'appel suivant :
 
 > [!api]
 >

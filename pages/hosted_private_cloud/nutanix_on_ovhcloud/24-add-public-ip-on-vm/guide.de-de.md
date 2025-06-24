@@ -13,21 +13,21 @@ If you want to create a web front-end or a reverse proxy to create a stack of VM
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](https://www.ovhcloud.com/de/professional-services/) or a [specialist service provider](https://partner.ovhcloud.com/en/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](/links/professional-services) or a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
 - Login credentials and URL for Prism Central, received via email after the installation
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An available Additional IP address
 
 ## Instructions
 
 ### Adding a new Additional IP to your vRack
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) and add an Additional IP address to your [vRack](https://www.ovh.de/loesungen/vrack/){.external}.
+Log in to the [OVHcloud Control Panel](/links/manager) and add an Additional IP address to your [vRack](https://www.ovh.de/loesungen/vrack/){.external}.
 
 > [!primary]
 > The following instructions will use the IP block 123.45.6.78/30 for example purposes.
@@ -407,6 +407,6 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 
 [Nutanix API: How to create a Linux VM](https://www.nutanix.dev/2020/06/16/nutanix-api-v3-creating-a-linux-vm-with-cloud-init/){.external}
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

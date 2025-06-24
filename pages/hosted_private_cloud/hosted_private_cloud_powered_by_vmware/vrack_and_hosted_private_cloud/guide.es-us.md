@@ -17,7 +17,7 @@ El producto [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} p
 ## Requisitos
 
 - Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), para recibir claves de conexión.
-- Tener un usuario activo (creado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](/links/manager).
 
 ## Algo de contexto
 

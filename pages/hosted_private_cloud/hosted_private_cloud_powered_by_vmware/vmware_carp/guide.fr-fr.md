@@ -13,7 +13,7 @@ Il peut être nécessaire dans certains cas d'activer le mode promiscuité pour 
 ## Prérequis
 
 - Une infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- Avoir un identifiant utilisateur vSphere actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir un identifiant utilisateur vSphere actif (créé dans l'[espace client OVHcloud](/links/manager))
 
 ## En pratique
 

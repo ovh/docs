@@ -11,13 +11,13 @@ updated: 2022-12-21
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
 >
-> If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#go-further) section of this tutorial.
+> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#go-further) section of this tutorial.
 >
 
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - You must be connected to the cluster via Prism Central
 - A Windows licence provided by OVHcloud
 - A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](/pages/hosted_private_cloud/nutanix_on_ovhcloud/06-virtual-machine-management)
@@ -72,6 +72,6 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

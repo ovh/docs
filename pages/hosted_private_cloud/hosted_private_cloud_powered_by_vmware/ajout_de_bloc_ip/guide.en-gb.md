@@ -13,7 +13,7 @@ IP blocks can be used to make your services accessible online.
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
 
 ## Instructions
 
@@ -93,7 +93,7 @@ If you need to detach the IP block, you can use the following API call to move t
 > This call cuts the network on the VMs that use the IPs concerned.
 >
 
-You can track the movement of your IP block via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
+You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager){.external} in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
 
 The operation reference is “removeIpRipeBlock”.
 

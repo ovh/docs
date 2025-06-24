@@ -14,10 +14,10 @@ Cette page fournit une explication sur les éléments qui constituent un cluster
 
 Un cluster Nutanix est constitué d’un ensemble de services OVHcloud :
 
-- [Serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/)
-- [vRack](https://www.ovhcloud.com/fr-ca/network/vrack/)
-- [Load Balancer](https://www.ovhcloud.com/fr-ca/network/load-balancer/)
-- [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/)
+- [Serveur dédié](/links/bare-metal/bare-metal)
+- [vRack](/links/network/vrack)
+- [Load Balancer](/links/network/load-balancer)
+- [Additional IP](/links/bare-metal/ip)
 
 Les serveurs dédiés (3 minimum) sont connectés au sein du vRack qui est un réseau L2, le réseau privé des hosts (noeud ou *node*).
 
@@ -73,6 +73,6 @@ L'accès à Prism Central est disponible à l'adresse suivante : `https://<fqdn>
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -16,7 +16,7 @@ VMware Tools verbessern die Performance einer virtuellen Maschine und ermöglich
 
 ## Voraussetzungen
 
-- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](/links/manager)
 
 ## In der praktischen Anwendung
 

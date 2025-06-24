@@ -21,7 +21,7 @@ There are two aspects to migrating a PCC infrastructure:
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
+- access to the [OVHcloud Control Panel](/links/manager) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
 
 ## Instructions
 

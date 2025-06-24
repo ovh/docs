@@ -13,7 +13,7 @@ OVHcloud installe une base de 11 VLANs sur votre vRack.
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour la mise en réseau (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour la mise en réseau (créé dans l'[espace client OVHcloud](/links/manager))
 
 ## En pratique
 
