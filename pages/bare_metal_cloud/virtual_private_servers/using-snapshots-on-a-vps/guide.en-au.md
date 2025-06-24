@@ -12,13 +12,13 @@ Creating a snapshot is a fast and simple way to secure a functioning system befo
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en-au/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [product pages and FAQ](/links/bare-metal/vps-options) for pricing comparisons and further details.
 >
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An OVHcloud [VPS service](https://www.ovhcloud.com/en-au/vps/) already set up
+- An OVHcloud [VPS service](/links/bare-metal/vps) already set up
 
 ## Instructions
 

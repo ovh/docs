@@ -12,7 +12,7 @@ Un blocco IP Un blocco IP può essere utilizzato per rendere i tuoi servizi acce
 
 ## Prerequisiti
 
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 * Disporre di un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} sul proprio account OVHcloud
 
 ## Procedura
@@ -86,7 +86,7 @@ Dopodiché utilizza questa chiamata API per spostare l’IP nel Parking degli IP
 > Questa chiamata interrompe la rete sulle VM che utilizzano gli IP in questione.
 >
 
-È possibile seguire la migrazione del blocco IP dal tuo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione`Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}. Clicca sul tuo servizio Managed Bare Metal, quindi sulla scheda `Operazioni`{.action}.
+È possibile seguire la migrazione del blocco IP dal tuo[Spazio Cliente OVHcloud](/links/manager){.external} nella sezione`Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}. Clicca sul tuo servizio Managed Bare Metal, quindi sulla scheda `Operazioni`{.action}.
 
 Il riferimento dell’operazione è « removeIpRipeBlock ».
 

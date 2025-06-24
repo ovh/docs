@@ -24,7 +24,7 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [VPS](https://www.ovhcloud.com/pl/vps/){.external} z dystrybucją [kompatybilną](https://www.ovhcloud.com/pl/vps/os/).
+- Wykupienie usługi [VPS](/links/bare-metal/vps){.external} z dystrybucją [kompatybilną](https://www.ovhcloud.com/pl/vps/os/).
 - zalogowanie do [Panelu client OVHcloud](/links/manager).
 
 ## W praktyce

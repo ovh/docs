@@ -11,14 +11,14 @@ Impostare restrizioni di accesso al vCenter consente di limitare la connessione 
 
 ## Prerequisiti
 
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 * Disporre di un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} sul proprio account OVHcloud
 
 ## Procedura
 
 Se la [politica di accesso al vCenter è configurata come limitata](/pages/bare_metal_cloud/managed_bare_metal/vcenter-modify-access-policy), è necessario aggiungere gli IP che saranno autorizzati a connettersi al servizio.
 
-Questa operazione può essere effettuata dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external-link}: nella sezione `Bare Metal Cloud`, clicca su `Managed Bare Metal` nella colonna a sinistra. Seleziona l’infrastruttura, clicca sulla scheda `Sicurezza` e poi su `Aggiungi una nuova classe di indirizzi IP`{.action}.
+Questa operazione può essere effettuata dallo [Spazio Cliente OVHcloud](/links/manager){.external-link}: nella sezione `Bare Metal Cloud`, clicca su `Managed Bare Metal` nella colonna a sinistra. Seleziona l’infrastruttura, clicca sulla scheda `Sicurezza` e poi su `Aggiungi una nuova classe di indirizzi IP`{.action}.
 
 ![vCenter](images/restrictIP.png){.thumbnail}
 

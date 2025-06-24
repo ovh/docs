@@ -13,7 +13,7 @@ Oferta [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.ex
 ## Wymagania początkowe
 
 * Posiadanie oferty [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
-* [Przydzielenie użytkownikowi uprawnienia "Dodawanie zasobów"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights){.external} w wybranym centrum danych, korzystając z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+* [Przydzielenie użytkownikowi uprawnienia "Dodawanie zasobów"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights){.external} w wybranym centrum danych, korzystając z [Panelu klienta](/links/manager){.external}
 * Połączenie z klientem vSphere
 
 ## W praktyce

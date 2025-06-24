@@ -12,14 +12,14 @@ Lo Spazio Cliente OVHcloud propone numerose opzioni di configurazione della tua 
 
 ## Prerequisiti
 
-- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}.
+- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}.
 - Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo
 
 ## Procedura
 
 ### Informazioni generali
 
-Accedendo alla sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, visualizzi le informazioni relative alla tua piattaforma:
+Accedendo alla sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager){.external}, visualizzi le informazioni relative alla tua piattaforma:
 
 ![Informazioni generali](images/controlpanel1-e.png){.thumbnail}
 

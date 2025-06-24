@@ -22,7 +22,7 @@ There are two aspects to migrating an infrastructure to a new vDC:
 ## Requirements
 
 - a PCC infrastructure
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

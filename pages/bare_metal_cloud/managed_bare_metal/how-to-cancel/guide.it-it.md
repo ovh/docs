@@ -12,7 +12,7 @@ Se il servizio Managed Bare Metal utilizzato non è più in grado di rispondere 
 
 ## Prerequisiti
 
-- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}.
+- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}.
 - Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo
 
 ## Procedura
@@ -24,7 +24,7 @@ Se il servizio Managed Bare Metal utilizzato non è più in grado di rispondere 
 
 ### Step 1: richiedi la disattivazione del servizio dallo Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nella sezione `Bare Metal Cloud`{.action} (1), clicca su `Managed Bare Metal`{.action} (2) e seleziona il servizio nella lista (3).
+Accedi allo [Spazio Cliente](/links/manager){.external} e, nella sezione `Bare Metal Cloud`{.action} (1), clicca su `Managed Bare Metal`{.action} (2) e seleziona il servizio nella lista (3).
 
 Nel riquadro “Gestisci il servizio” disponibile nella scheda “Informazioni generali”, clicca sul pulsante `...`{.action}  (4) in corrispondenza della data di rinnovo e seleziona l’opzione `Elimina il servizio`{.action} (5).
 

@@ -20,7 +20,7 @@ I firewall funzionano definendo regole che disciplinano il traffico autorizzato 
 
 ## Prerequisiti
 
-- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
+- Disporre di un [VPS](/links/bare-metal/vps) nel proprio account OVHcloud
 - Avere accesso amministratore (root/sudo) al server via SSH
 
 ## Procedura

@@ -13,14 +13,14 @@ Le autorizzazioni e le password associate agli utenti del client vSphere possono
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 - Disporre di un account utente creato dallo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta [questa guida](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#utenti)
   
 ## Procedura
 
 ### Modifica la password
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nella sezione `Bare Metal Cloud`{.action}  (1), clicca su `Managed Bare Metal`{.action} (2), seleziona il server dalla lista (3) e clicca sulla scheda `Utenti`{.action}(4).
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e, nella sezione `Bare Metal Cloud`{.action}  (1), clicca su `Managed Bare Metal`{.action} (2), seleziona il server dalla lista (3) e clicca sulla scheda `Utenti`{.action}(4).
 
 ![Accesso allo Spazio Cliente](images/userpassword1.png){.thumbnail}
 

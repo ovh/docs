@@ -16,7 +16,7 @@ A OVHcloud oferece aos clientes VPS imagens de aplicações pré-instaladas para
 
 ## Requisitos
 
-- Ter um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud.
+- Ter um [VPS](/links/bare-metal/vps) na sua conta OVHcloud.
 
 ## Instruções
 

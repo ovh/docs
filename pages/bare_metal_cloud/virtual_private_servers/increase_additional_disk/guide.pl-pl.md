@@ -16,7 +16,7 @@ Jeśli osiągnąłeś maksymalną pojemność dodatkowego dysku, możesz zwięks
 
 ## Wymagania początkowe
 
-- Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud.
+- Jeden [VPS](/links/bare-metal/vps) na koncie OVHcloud.
 - Dodatkowy [dysk](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) skonfigurowany na serwerze VPS.
 - Dostęp do [Panelu client OVHcloud](/links/manager).
 - Dostęp do serwera VPS przez SSH lub RDP.
@@ -55,7 +55,7 @@ Zwiększenie pojemności dysku zajmie kilka minut po zatwierdzeniu płatności. 
 > [!warning]
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. W związku z tym to do Ciebie należy zapewnienie prawidłowego funkcjonowania systemu.
 >
-> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub skorzystanie z pomocy [naszej społeczności](https://community.ovh.com/en/).
+> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](/links/partner) lub skorzystanie z pomocy [naszej społeczności](https://community.ovh.com/en/).
 >
 
 #### Na serwerze VPS Linux

@@ -37,7 +37,7 @@ W części **IP Blocks** wyszczególnione są wszystkie adresy IP Twojego bloku.
 
 Aby zaktualizować informacje we wtyczce OVH, że Twoje publiczne adresy IP są już używane, konieczne jest wysłanie zapytania ARP (_arping_) z maszyny lub maszyn wirtualnych używających tych adresów. Uwaga: niektóre konfiguracje z wirtualną zaporą nie umożliwiają pobierania adresów MAC, jeśli protokół ARP nie został wskazany jako autoryzowany.
 
-Możesz następnie skonfigurować Twoje rewersy DNS dla IP, na przykład dla serwera e-mail. Ustawienie to jest dostępne również w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} oraz w interfejsie [API OVH](https://api.ovh.com/){.external}. Kliknij trzy kropki po lewej stronie adresu IP, a następnie `Edit Reverse`{.action}.
+Możesz następnie skonfigurować Twoje rewersy DNS dla IP, na przykład dla serwera e-mail. Ustawienie to jest dostępne również w [Panelu klienta](/links/manager){.external} oraz w interfejsie [API OVH](https://api.ovh.com/){.external}. Kliknij trzy kropki po lewej stronie adresu IP, a następnie `Edit Reverse`{.action}.
 
 ![Przycisk Edition Reverse](images/network_04.png){.thumbnail}
 

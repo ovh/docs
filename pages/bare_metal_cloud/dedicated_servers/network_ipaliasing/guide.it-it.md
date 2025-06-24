@@ -29,9 +29,9 @@ L'alias IP (o IP aliasing) è un tipo di configurazione del tuo server dedicato 
 - Essere connesso al server in SSH (accesso *sudo*)
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 ## Procedura
 

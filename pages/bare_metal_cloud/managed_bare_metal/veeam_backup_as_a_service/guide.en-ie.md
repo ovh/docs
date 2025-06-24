@@ -15,7 +15,7 @@ Backups are performed using a virtual machine (VM) within your [Managed Bare Met
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-ie/managed-bare-metal/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the [OVHcloud Control Panel](/links/manager)
 - a user account with access to vSphere and the permission ["Add resources"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) for the pertinent data centre
 - [vSphere High Availability (HA)](/pages/bare_metal_cloud/managed_bare_metal/vmware_ha_high_availability) enabled
 - [Distributed Resource Scheduler (DRS)](/pages/bare_metal_cloud/managed_bare_metal/vmware_drs_distributed_ressource_scheduler) enabled
@@ -30,7 +30,7 @@ Backups are performed using a virtual machine (VM) within your [Managed Bare Met
 
 ### Activating the backup option
 
-The first step is to order the service from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, go to the `Managed Bare Metal`{.action} section of the `Bare Metal Cloud`{.action} tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the `Backup`{.action} tab.
+The first step is to order the service from the [OVHcloud Control Panel](/links/manager). To do this, go to the `Managed Bare Metal`{.action} section of the `Bare Metal Cloud`{.action} tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the `Backup`{.action} tab.
 
 ![Enable backup](images/veeam-managed-bare-metal.png){.thumbnail}
 

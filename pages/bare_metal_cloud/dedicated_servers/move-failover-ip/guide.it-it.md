@@ -32,9 +32,9 @@ I blocchi di indirizzi IP di una Region possono essere trasferiti da un datacent
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 >
 
 > [!warning]

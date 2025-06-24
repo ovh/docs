@@ -20,9 +20,9 @@ La [configuration standard du vRack](/pages/bare_metal_cloud/dedicated_servers/v
 - Avoir finalisé la [configuration du vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}.
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
-> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+> Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 
 ## En pratique
 

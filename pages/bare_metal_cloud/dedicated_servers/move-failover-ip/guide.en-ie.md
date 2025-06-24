@@ -33,9 +33,9 @@ With this technology, you can switch IP addresses from one solution to another i
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ie/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-ie/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 > [!warning]
 > If the Additional IP address or one of the block IP addresses has a virtual MAC attached, the target server must support the vMAC functionality.
@@ -83,7 +83,7 @@ Click `Next`{.action}, then `Confirm`{.action}.
 
 ### Moving an IP via the API
 
-Log in to the OVHcloud [API webpage](https://ca.api.ovh.com/).
+Log in to the OVHcloud [API webpage](/links/api).
 
 First, it is best to check if the IP address can be moved.
 <br>To check if the IP can be moved to one of your dedicated servers, use the following call:

@@ -12,7 +12,7 @@ IP blocks can be used to make your services accessible online.
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+* access to the [OVHcloud Control Panel](/links/manager){.external}
 * a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/){.external} on your OVHcloud account
 
 ## Instructions
@@ -86,7 +86,7 @@ Next, use this API call to move the IP into the IP parking space:
 > This call cuts the network on the VMs that use the IPs concerned.
 >
 
-You can track the movement of your IP block via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} in the `Bare Metal Cloud`{.action} section, then `Managed Bare Metal`{.action}. Click on your Managed Bare Metal service, then on the `Operations`{.action} tab.
+You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager){.external} in the `Bare Metal Cloud`{.action} section, then `Managed Bare Metal`{.action}. Click on your Managed Bare Metal service, then on the `Operations`{.action} tab.
 
 The operation reference is “removeIpRipeBlock”.
 

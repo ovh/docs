@@ -38,9 +38,9 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 - Access to the [OVHcloud Control Panel](/links/manager){.external}
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-sg/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-sg/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 

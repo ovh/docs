@@ -88,7 +88,7 @@ Una volta completata l'operazione, il tuo IP verrà sbloccato.
 
 #### Sblocca il tuo indirizzo IP dall'API OVHcloud
 
-Accedi all'interfaccia [API di OVHcloud](https://eu.api.ovh.com/) e segui gli step qui sotto. Per maggiori informazioni sull'utilizzo delle API OVHcloud, consulta la guida Iniziare a [Iniziare a utilizzare le API OVHcloud](/pages/manage_and_operate/api/first-steps).
+Accedi all'interfaccia [API di OVHcloud](/links/api) e segui gli step qui sotto. Per maggiori informazioni sull'utilizzo delle API OVHcloud, consulta la guida Iniziare a [Iniziare a utilizzare le API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 Per prima cosa recupera la lista degli IP di ogni servizio OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Server Dedicato):
 

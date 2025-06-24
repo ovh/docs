@@ -38,9 +38,9 @@ Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/s
 - Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 ## Procedura
 

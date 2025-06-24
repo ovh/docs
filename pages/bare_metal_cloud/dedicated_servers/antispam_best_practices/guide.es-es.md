@@ -87,7 +87,7 @@ Una vez realizado el tratamiento, la IP se desbloqueará.
 
 #### Desbloquear la dirección IP desde la API de OVHcloud
 
-Conéctese a la interfaz de la [API de OVHcloud](https://eu.api.ovh.com/) y siga los pasos que se indican a continuación. Para más información sobre el uso de las API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps).
+Conéctese a la interfaz de la [API de OVHcloud](/links/api) y siga los pasos que se indican a continuación. Para más información sobre el uso de las API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 Descargue en primer lugar la lista de direcciones IP de cada servicio de OVHcloud (Hosted Private Cloud, VPS, Public Cloud, servidor dedicado):
 

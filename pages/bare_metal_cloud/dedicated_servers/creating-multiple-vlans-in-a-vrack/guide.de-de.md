@@ -24,9 +24,9 @@ Bei der [Standardkonfiguration des vRack](/pages/bare_metal_cloud/dedicated_serv
 - Sie haben die [Konfiguration des vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server) abgeschlossen.
 
 > [!warning]
-> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
 >
-> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 
 ## In der praktischen Anwendung
 
