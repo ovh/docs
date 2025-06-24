@@ -6,7 +6,7 @@ updated: 2025-06-17
 
 ## Objectif
 
-L'objectif de ce guide est de vous montrer comment changer un type de volume Block Storage, de Classic ou High speed à High speed gen2 ou encore à un version `lus` (chiffrée) de votre storage.
+L'objectif de ce guide est de vous montrer comment changer un type de volume Block Storage, de Classic ou High speed à High speed gen2 ou encore à un version `luks` (chiffrée) de votre storage.
 
 ## Prérequis
 
@@ -19,14 +19,14 @@ L'objectif de ce guide est de vous montrer comment changer un type de volume Blo
 >
 > En complément des volumes Classic, High speed et Highs speed gen2, trois nouvelles versions chiffrées au repos sont désormais proposées :
 >
-> - classic-lus
-> - high-speed-lus
-> - high-speed-gen2-lus
+> - classic-luks
+> - high-speed-luks
+> - high-speed-gen2-luks
 >
 
 ### Pourquoi choisir un volume chiffré ?
 
-Les volumes Block Storage en version `-lus` (chiffré) offrent le même niveau de performance que leurs équivalents non chiffrés, avec un chiffrement des données au repos intégré par OVHcloud.
+Les volumes Block Storage en version `-luks` (chiffré) offrent le même niveau de performance que leurs équivalents non chiffrés, avec un chiffrement des données au repos intégré par OVHcloud.
 
 Cas d’usage principaux :
 
@@ -61,7 +61,7 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 > [!warning]
 > Si le volume est attaché à une Instance, vous devez d'abord le détacher avant de continuer. Pour plus d'informations, consultez [cette section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detacher-un-volume) du guide correspondant.
 >
-> La conversion vers un volume `-lus` (chiffré) n’est disponible que via la CLI OpenStack pour le moment. Elle n’est pas encore accessible depuis l'interface Horizon.
+> La conversion vers un volume `-luks` (chiffré) n’est disponible que via la CLI OpenStack pour le moment. Elle n’est pas encore accessible depuis l'interface Horizon.
 >
 
 > [!tabs]
@@ -97,9 +97,9 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 >> | 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True |
 >> | 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True |
 >> | 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True |
->> | bee392e6-1a9a-4944-be59-e62559be582e | high-speed-gen2-lus                                | True |
->> | 4d1a6718-d4f6-416a-4591-5048fcba6024 | classic-lus                                        | True |
->> | 9facd26c-4a42-4e5c-b177-562ed6bf0de6 | high-speed-lus                                     | True |
+>> | bee392e6-1a9a-4944-be59-e62559be582e | high-speed-gen2-luks                                | True |
+>> | 4d1a6718-d4f6-416a-4591-5048fcba6024 | classic-luks                                        | True |
+>> | 9facd26c-4a42-4e5c-b177-562ed6bf0de6 | high-speed-luks                                     | True |
 >> ----------------------------------------------------------------------------------------------------
 >> ```
 >>

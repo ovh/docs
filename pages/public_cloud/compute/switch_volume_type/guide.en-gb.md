@@ -6,7 +6,7 @@ updated: 2025-06-17
 
 ## Objective
 
-The aim of this guide is to show you how to change a Block Storage volume type, from Classic or High speed to High speed gen2 or even to a `lus` (encrypted) version of your storage.
+The aim of this guide is to show you how to change a Block Storage volume type, from Classic or High speed to High speed gen2 or even to a `luks` (encrypted) version of your storage.
 
 ## Requirements
 
@@ -19,14 +19,14 @@ The aim of this guide is to show you how to change a Block Storage volume type, 
 >
 > In addition to the Classic, High speed and Highs speed gen2 volumes, three new rest-encrypted versions are now available:
 >
-> - classic-lus
-> - high-speed-lus
-> - high-speed-gen2-lus
+> - classic-luks
+> - high-speed-luks
+> - high-speed-gen2-luks
 >
 
 ### Why choose an encrypted volume?
 
-Block Storage volumes in the `-lus` (encrypted) version offer the same level of performance as their unencrypted equivalents, with OVHcloud's built-in encryption of data at rest.
+Block Storage volumes in the `-luks` (encrypted) version offer the same level of performance as their unencrypted equivalents, with OVHcloud's built-in encryption of data at rest.
 
 Main use cases:
 
@@ -97,9 +97,9 @@ Click on the drop-down arrow next to `Edit Volume`{.action} and select `Change V
 >> | 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True |
 >> | 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True |
 >> | 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True |
->> | bee392e6-1a9a-4944-be59-e62559be582e | high-speed-gen2-lus                                | True |
->> | 4d1a6718-d4f6-416a-4591-5048fcba6024 | classic-lus                                        | True |
->> | 9facd26c-4a42-4e5c-b177-562ed6bf0de6 | high-speed-lus                                     | True |
+>> | bee392e6-1a9a-4944-be59-e62559be582e | high-speed-gen2-luks                                | True |
+>> | 4d1a6718-d4f6-416a-4591-5048fcba6024 | classic-luks                                        | True |
+>> | 9facd26c-4a42-4e5c-b177-562ed6bf0de6 | high-speed-luks                                     | True |
 >> ----------------------------------------------------------------------------------------------------
 >> ```
 >>
