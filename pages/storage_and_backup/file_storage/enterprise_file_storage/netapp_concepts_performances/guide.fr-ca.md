@@ -6,7 +6,7 @@ updated: 2022-11-30
 
 ## Objectif
 
-Découvrez les concepts liés au provisionnement, au suivi ainsi qu'au test des performances de la solution [Enterprise File Storage](https://www.ovhcloud.com/fr-ca/storage-solutions/enterprise-file-storage/).
+Découvrez les concepts liés au provisionnement, au suivi ainsi qu'au test des performances de la solution [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## En pratique
 
@@ -27,7 +27,7 @@ Cette information est importante lorsque vous concevez votre architecture de sto
 
 - **Exemple n°2** : votre infrastructure nécessite **4500 IOPS** et un volume de données de **1 To**. Pour cela, vous devez provisionner **2 To** pour obtenir les **4500 IOPS nécessaires**. Plus spécifiquement dans ce cas, vous bénéficierez de **8000 IOPS** sur la capacité provisionnée. Il s’agit donc de sur-provisionner votre service afin d’assurer le niveau de performances souhaité.
 
-- **Exemple n°3** : votre application ne nécessite pas de performance en particulier mais un volume de stockage de plus de **60 To**. Dans ce cas, il est préférable de s’orienter vers le service de stockage [NAS-HA](https://www.ovhcloud.com/fr-ca/storage-solutions/nas-ha/), plus économique et permettant d’atteindre des capacités supérieures à 58 To par service.
+- **Exemple n°3** : votre application ne nécessite pas de performance en particulier mais un volume de stockage de plus de **60 To**. Dans ce cas, il est préférable de s’orienter vers le service de stockage [NAS-HA](/links/storage/nas-ha), plus économique et permettant d’atteindre des capacités supérieures à 58 To par service.
 
 ### Volumes et qualité de services (QoS)
 
@@ -70,7 +70,7 @@ Retrouvez plus d'informations sur [la documentation de FIO](https://fio.readthed
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d’utilisateurs sur Discord : <https://discord.gg/jW2FgBJ72h>
 

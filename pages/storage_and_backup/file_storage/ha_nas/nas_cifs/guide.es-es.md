@@ -14,7 +14,7 @@ Configure e monte su espacio de almacenamiento NAS-HA OVHcloud en Windows Server
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) **o** un [VPS](https://www.ovhcloud.com/es-es/vps/) **o** una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) con una distribución Windows.
+- Un [servidor dedicado](/links/bare-metal/bare-metal) **o** un [VPS](/links/bare-metal/vps) **o** una [instancia de Public Cloud](/links/public-cloud/public-cloud) con una distribución Windows.
 - Una oferta [NAS-HA](https://www.ovh.es/nas/).
 
 ### Configuración
@@ -47,6 +47,6 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 
 [Preguntas frecuentes sobre los NAS](/pages/storage_and_backup/file_storage/ha_nas/nas_faq)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

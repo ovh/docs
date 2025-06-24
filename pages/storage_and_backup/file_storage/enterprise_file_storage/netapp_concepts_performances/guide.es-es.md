@@ -10,7 +10,7 @@ updated: 2022-11-30
 
 ## Objetivo
 
-Descubra los conceptos relacionados con el aprovisionamiento, el seguimiento y la prueba del rendimiento de la solución [Enterprise File Storage](https://www.ovhcloud.com/es-es/storage-solutions/enterprise-file-storage/).
+Descubra los conceptos relacionados con el aprovisionamiento, el seguimiento y la prueba del rendimiento de la solución [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## Procedimiento
 
@@ -31,7 +31,7 @@ Esta información es importante al diseñar la arquitectura de almacenamiento. V
 
 - **Ejemplo n°2**: su infraestructura necesita **4500 IOPS** y un volumen de datos de **1 TB**. Para ello, debe aprovisionar **2 TB** para obtener las **4500 IOPS necesarias**. Más específicamente en este caso, disfrutará de **8000 IOPS** sobre la capacidad aprovisionada. Por lo tanto, el objetivo es recargar el servicio para garantizar el nivel de rendimiento deseado.
 
-- **Ejemplo n°3**: su aplicación no necesita un rendimiento en particular, pero un volumen de almacenamiento de más de **60 TB**. En ese caso, es preferible optar por el servicio de almacenamiento [NAS-HA](https://www.ovhcloud.com/es-es/storage-solutions/nas-ha/), más económico y que permite alcanzar una capacidad superior a 58 TB por servicio.
+- **Ejemplo n°3**: su aplicación no necesita un rendimiento en particular, pero un volumen de almacenamiento de más de **60 TB**. En ese caso, es preferible optar por el servicio de almacenamiento [NAS-HA](/links/storage/nas-ha), más económico y que permite alcanzar una capacidad superior a 58 TB por servicio.
 
 ### volúmenes y calidad de servicios (QoS)
 
@@ -74,6 +74,6 @@ Más información sobre [la documentación de FIO](https://fio.readthedocs.io/en
 
 ## Más información
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/jW2FgBJ72h>

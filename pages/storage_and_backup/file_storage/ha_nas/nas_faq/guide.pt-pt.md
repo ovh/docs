@@ -28,7 +28,7 @@ NAS-HA permite centralizar os dados de diferentes cargas de trabalho Linux, mas 
 
 ### É possível obter o NAS-HA através da área de gestão do serviço?
 
-Sim, este espaço pode ser acedido a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Bare Metal Cloud`{.action} e depois `NAS e CDN`{.action}.
+Sim, este espaço pode ser acedido a partir da [Área de Cliente OVHcloud](/links/manager), secção `Bare Metal Cloud`{.action} e depois `NAS e CDN`{.action}.
 
 ## Disponibilidade
 
@@ -147,7 +147,7 @@ A frequência das snapshots pode ser administrada a partir da Área de Cliente O
 - de 3 em 3 dias;
 - semanal.
 
-Também pode criar Snapshots manuais a qualquer momento. Esta funcionalidade está disponível no seio do seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou através da [API](https://api.ovh.com/) seguinte:
+Também pode criar Snapshots manuais a qualquer momento. Esta funcionalidade está disponível no seio do seu [Espaço Cliente OVHcloud](/links/manager) ou através da [API](https://api.ovh.com/) seguinte:
 
 > [!api]
 >
@@ -202,6 +202,6 @@ O serviço pode ser contratado por 1, 12, 24 e 36 meses. No final do período de
 
 ## Quer saber mais?
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Troque impressões com a nossa comunidade em <https://community.ovh.com/en/>.

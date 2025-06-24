@@ -28,7 +28,7 @@ HA-NAS erlaubt die Zentralisierung der Daten verschiedener Workloads von Linux u
 
 ### Kann das HA-NAS über eine Verwaltungsoberfläche genutzt werden?
 
-Ja, das ist in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Bare Metal Cloud`{.action} und dann `NAS und CDN`{.action} möglich.
+Ja, das ist in Ihrem [OVHcloud Kundencenter](/links/manager) im Bereich `Bare Metal Cloud`{.action} und dann `NAS und CDN`{.action} möglich.
 
 ## Verfügbarkeit
 
@@ -147,7 +147,7 @@ Die Snapshot-Frequenz kann über Ihr OVHcloud Kundencenter verwaltet werden. Sie
 - Alle drei Tage
 - Wöchentlich
 
-Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über folgenden [API-Aufruf](https://api.ovh.com/) verfügbar:
+Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist in Ihrem [OVHcloud Kundencenter](/links/manager) oder über folgenden [API-Aufruf](https://api.ovh.com/) verfügbar:
 
 >[!api]
 >
@@ -202,6 +202,6 @@ Die angebotenen Nutzungsperioden sind 1, 12, 24 und 36 Monate. Am Ende Ihrer Ver
 
 ## Weiterführende Informationen
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

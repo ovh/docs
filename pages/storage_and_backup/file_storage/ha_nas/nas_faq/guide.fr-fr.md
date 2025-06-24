@@ -24,7 +24,7 @@ NAS-HA permet de centraliser les données de différentes charges de travail Lin
 
 ### Peut-on gérer le NAS-HA via un espace de configuration ?
 
-Oui, cet espace est accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rubrique `Bare Metal Cloud`{.action} puis `NAS et CDN`{.action}.
+Oui, cet espace est accessible depuis votre [espace client OVHcloud](/links/manager), rubrique `Bare Metal Cloud`{.action} puis `NAS et CDN`{.action}.
 
 ## Disponibilité
 
@@ -143,7 +143,7 @@ La fréquence des snapshots est administrable depuis votre espace client OVHclou
 - tous les trois jours ;
 - hebdomadaire.
 
-Vous pouvez aussi, à tout moment, créer des snapshots manuels, les conserver sans limitation de durée ou les supprimer. Cette fonctionnalité est disponible au sein de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou via l'appel [API](https://api.ovh.com/) suivant :
+Vous pouvez aussi, à tout moment, créer des snapshots manuels, les conserver sans limitation de durée ou les supprimer. Cette fonctionnalité est disponible au sein de votre [espace client OVHcloud](/links/manager) ou via l'appel [API](https://api.ovh.com/) suivant :
 
 > [!api]
 >
@@ -198,6 +198,6 @@ Les périodes proposées sont de 1, 12, 24 et 36 mois. À la fin de votre pério
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

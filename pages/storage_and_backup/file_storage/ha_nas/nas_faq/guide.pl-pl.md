@@ -28,7 +28,7 @@ NAS-HA pozwala na scentralizowanie danych z różnych obciążeń związanych z 
 
 ### Czy można zarządzać usługą NAS-HA za pomocą przestrzeni konfiguracyjnej?
 
-Tak, ta przestrzeń jest dostępna w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w rubryce `Bare Metal Cloud`{.action}, następnie `NAS i CDN`{.action}.
+Tak, ta przestrzeń jest dostępna w [Panelu klienta OVHcloud](/links/manager), w rubryce `Bare Metal Cloud`{.action}, następnie `NAS i CDN`{.action}.
 
 ## Dostępność
 
@@ -147,7 +147,7 @@ Częstotliwość kopii zapasowych (snapshot) można zarządzać w Panelu klienta
 - co trzy dni;
 - tygodniowo.
 
-W każdej chwili możesz również tworzyć ręczne snapshoty, przechowywać je bez ograniczeń czasowych lub je usuwać. Funkcja ta jest dostępna w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub za pośrednictwem [następującego wywołania API](https://api.ovh.com/):
+W każdej chwili możesz również tworzyć ręczne snapshoty, przechowywać je bez ograniczeń czasowych lub je usuwać. Funkcja ta jest dostępna w Panelu [klienta OVHcloud](/links/manager) lub za pośrednictwem [następującego wywołania API](https://api.ovh.com/):
 
 > [!api]
 >
@@ -202,6 +202,6 @@ Proponowane okresy to 1, 12, 24 i 36 miesięcy. Pod koniec okresu abonamentu zos
 
 ## Sprawdź również
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

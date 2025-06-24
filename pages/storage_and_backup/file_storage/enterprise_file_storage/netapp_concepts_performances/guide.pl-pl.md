@@ -10,7 +10,7 @@ updated: 2022-11-30
 
 ## Wprowadzenie
 
-Poznaj pojęcia związane z tworzeniem rezerw, monitorowaniem oraz testowaniem wydajności rozwiązania [Enterprise File Storage](https://www.ovhcloud.com/pl/storage-solutions/enterprise-file-storage/).
+Poznaj pojęcia związane z tworzeniem rezerw, monitorowaniem oraz testowaniem wydajności rozwiązania [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## W praktyce
 
@@ -31,7 +31,7 @@ Informacja ta jest ważna w przypadku architektury przestrzeni dyskowej. Przytoc
 
 - **Przykład nr 2**: Twoja infrastruktura wymaga **4500 IOPS** i ilości danych **1 TB**. W tym celu należy zapewnić zapasy **2 TB**, aby otrzymać **niezbędne 4500 IOPS**. W tym przypadku skorzystasz z **8000 IOPS** w przypadku wykorzystania dodatkowej pojemności. Chodzi zatem o nadmierne dostarczanie usługi, aby zapewnić pożądany poziom wydajności.
 
-- **Przykład nr 3**: Twoja aplikacja nie wymaga szczególnie dużej wydajności, ale przestrzeni dyskowej większej niż **60 TB**. W takim przypadku lepiej jest wybrać usługę przestrzeni dyskowej [NAS-HA](https://www.ovhcloud.com/pl/storage-solutions/nas-ha/), która jest bardziej ekonomiczna i pozwala na osiągnięcie wydajności przekraczającej 58 TB na usługę.
+- **Przykład nr 3**: Twoja aplikacja nie wymaga szczególnie dużej wydajności, ale przestrzeni dyskowej większej niż **60 TB**. W takim przypadku lepiej jest wybrać usługę przestrzeni dyskowej [NAS-HA](/links/storage/nas-ha), która jest bardziej ekonomiczna i pozwala na osiągnięcie wydajności przekraczającej 58 TB na usługę.
 
 ### Liczba woluminów i jakości usług (QoS)
 
@@ -74,6 +74,6 @@ Więcej informacji znajduje się na stronie [dokumentacja FIO](https://fio.readt
 
 ## Sprawdź również
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/jW2FgBJ72h>

@@ -6,7 +6,7 @@ updated: 2022-11-30
 
 ## Objective
 
-Learn about the concepts of provisioning, tracking, and performance testing for [Enterprise File Storage](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/).
+Learn about the concepts of provisioning, tracking, and performance testing for [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## Instructions
 
@@ -27,7 +27,7 @@ This information is important when you design your storage architecture. Let’s
 
 - **Example 2**: Your infrastructure requires **4500 IOPS** and a data volume of **1 TB**. To do this, you need to provision **2 TB** to get the **required 4500 IOPS**. Specifically, you will get **8000 IOPS** on provisioned capacity. This involves overprovisioning your service to ensure the level of performance you want.
 
-- **Example 3**: Your application does not require any particular performance but a storage volume of more than **60 TB**. In this case, it is best to switch to the more economical storage service [HA-NAS](https://www.ovhcloud.com/en-gb/storage-solutions/nas-ha/), which can reach capacities higher than 58 TB per service.
+- **Example 3**: Your application does not require any particular performance but a storage volume of more than **60 TB**. In this case, it is best to switch to the more economical storage service [HA-NAS](/links/storage/nas-ha), which can reach capacities higher than 58 TB per service.
 
 ### Volumes and quality of services (QoS)
 
@@ -70,6 +70,6 @@ For more information, see [the FIO documentation](https://fio.readthedocs.io/en/
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of Discord users: <https://discord.gg/jW2FgBJ72h>

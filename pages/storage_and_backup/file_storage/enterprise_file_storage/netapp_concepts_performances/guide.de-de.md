@@ -10,7 +10,7 @@ updated: 2022-11-30
 
 ## Ziel
 
-Auf dieser Seite finden Sie die Konzepte zur Bereitstellung, Überwachung und Überprüfung der Performance von [Enterprise File Storage](https://www.ovhcloud.com/de/storage-solutions/enterprise-file-storage/).
+Auf dieser Seite finden Sie die Konzepte zur Bereitstellung, Überwachung und Überprüfung der Performance von [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## In der praktischen Anwendung
 
@@ -31,7 +31,7 @@ Diese Information ist wichtig, wenn Sie Ihre Storage-Architektur entwerfen. Drei
 
 - **Beispiel 2**: Ihre Infrastruktur benötigt **4500 IOPS** und ein Datenvolumen von **1 TB**. Daher müssen Sie **2 TB** reservieren, um die erforderlichen **4500 IOPS**  zu erreichen. In diesem Fall verfügen Sie über **8000 IOPS** über die im Voraus provisionierte Kapazität. Es geht also darum, Ihren Dienst überzuprovisionieren, um das gewünschte Leistungsniveau zu gewährleisten.
 
-- **Beispiel 3**: Ihre Anwendung benötigt keine bestimmte Leistung, aber ein Speichervolumen von mehr als **60 TB**. In diesem Fall ist es ratsam, auf den kostengünstigeren Speicherdienst [HA-NAS](https://www.ovhcloud.com/de/storage-solutions/nas-ha/) zu wechseln, der Kapazitäten von mehr als 58 TB pro Dienst ermöglicht.
+- **Beispiel 3**: Ihre Anwendung benötigt keine bestimmte Leistung, aber ein Speichervolumen von mehr als **60 TB**. In diesem Fall ist es ratsam, auf den kostengünstigeren Speicherdienst [HA-NAS](/links/storage/nas-ha) zu wechseln, der Kapazitäten von mehr als 58 TB pro Dienst ermöglicht.
 
 ### Volumes und Dienstqualität (QoS)
 
@@ -74,6 +74,6 @@ Weitere Informationen finden Sie in [FIO-Dokumentation](https://fio.readthedocs.
 
 ## Weiterführende Informationen
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Treten Sie unserer Benutzergemeinschaft auf Discord bei: <https://discord.gg/jW2FgBJ72h>.
