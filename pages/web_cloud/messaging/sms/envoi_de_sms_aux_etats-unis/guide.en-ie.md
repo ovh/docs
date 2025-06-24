@@ -12,7 +12,7 @@ There are specific rules for sending SMS to the United States. The guide will ex
 
 - An OVHcloud SMS account with SMS credits.
 - Access to the [OVHcloud API](https://api.ovh.com/) (for the API method only)
-- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+- You must be logged in to [OVHcloud Control Panel](/links/manager){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -34,7 +34,7 @@ Setting message templates is free and is carried out by the OVHcloud teams withi
 
 #### 2.1 Via the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account. Click on the `Message and campaign`{.action} tab then click `SMS management`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager){.external}, then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account. Click on the `Message and campaign`{.action} tab then click `SMS management`{.action}.
 
 Finally, click `Manage templates`{.action}.
 

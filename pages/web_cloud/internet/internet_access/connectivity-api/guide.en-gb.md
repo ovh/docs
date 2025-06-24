@@ -20,7 +20,7 @@ This guide is designed to help developers use our APIs to create their own appli
 
 OVHcloud offers various internet access packages that contain at least one internet access but also VoIP lines, emails and domain names.
 
-You can view offers [here](https://www.ovhcloud.com/fr/internet/).
+You can view offers [here](/links/telecom/offre-internet).
 
 Services can be managed using these API endpoints:
 

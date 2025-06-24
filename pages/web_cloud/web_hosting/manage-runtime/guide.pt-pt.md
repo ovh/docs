@@ -19,7 +19,7 @@ A Cloud Web oferece a possibilidade de construir um projeto em diferentes lingua
 
 Para melhor se adaptar ao seu projeto, a Cloud Web permite-lhe dispor de um ou vários motores de execução. A utilização de um ou outro motor de execução dependerá das necessidades específicas de cada projeto. 
 
-Desta forma, em primeiro lugar, **certifique-se de que o seu projeto é tecnicamente compatível com o seu alojamento Cloud Web**. Pode consultar as linguagens compatíveis na seguinte ligação: <https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/> 
+Desta forma, em primeiro lugar, **certifique-se de que o seu projeto é tecnicamente compatível com o seu alojamento Cloud Web**. Pode consultar as linguagens compatíveis na seguinte ligação: </links/web/hosting-cloud-web-offer> 
 
 Depois de escolher o ou os motores de execução que pretende utilizar, pode efetuar as seguintes ações:
 

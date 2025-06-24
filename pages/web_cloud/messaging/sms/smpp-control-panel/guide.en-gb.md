@@ -17,7 +17,7 @@ In the OVHcloud Control Panel, you can retrieve your SMPP credentials, change yo
 ## Requirements
 
 - an [OVHcloud SMS SMPP account](https://www.ovhcloud.com/en-gb/sms/api-sms/)
-- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Telecom`{.action} section, then `SMS`{.action}.
+- Access to your [OVHcloud Control Panel](/links/manager) in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ## Instructions
 

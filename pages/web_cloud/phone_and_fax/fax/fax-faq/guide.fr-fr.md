@@ -10,7 +10,7 @@ Retrouvez ici les questions les plus fréquemment posées sur le service Fax OVH
 
 ### Comment commander des fax ?
 
-Pour envoyer des fax, vous devez d'abord disposer d'une ligne Fax dédiée à cet usage. Choisissez votre offre depuis notre page <https://www.ovhtelecom.fr/fax/> et votre ligne fax sera activée dans l'espace client à l'issue de la commande.<br>
+Pour envoyer des fax, vous devez d'abord disposer d'une ligne Fax dédiée à cet usage. Choisissez votre offre depuis notre page </links/telecom/fax> et votre ligne fax sera activée dans l'espace client à l'issue de la commande.<br>
 Par la suite, vous n'avez pas à commander de fax. Chaque envoi de fax vous sera facturé à hauteur du nombre de destinataires compris dans votre campagne de fax.
 
 ### Pourquoi mon Fax est-il en attente ?

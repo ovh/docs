@@ -61,7 +61,7 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 
 > [!warning]
 >
-> O procedimento exato de transferência de domínio pode variar, especialmente no caso de certos **TLD** de código de país (**ccTLD**, tais como .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) e de alguns **TLD** especiais (.am, .fm, etc.). Em função da extensão do domínio, poderá ser necessário realizar requisitos adicionais. Recomendamos que comece por verificar as informações apresentadas para a extensão em causa no nosso website: <https://www.ovhcloud.com/pt/domains/tld/>.
+> O procedimento exato de transferência de domínio pode variar, especialmente no caso de certos **TLD** de código de país (**ccTLD**, tais como .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) e de alguns **TLD** especiais (.am, .fm, etc.). Em função da extensão do domínio, poderá ser necessário realizar requisitos adicionais. Recomendamos que comece por verificar as informações apresentadas para a extensão em causa no nosso website: </links/web/domains-tld>.
 >
 
 ### 1 - Verificar a informação relativa ao domínio <a name="step1"></a>

@@ -31,7 +31,7 @@ Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre d
 
 La page qui s'affiche vous permet de visualiser le nombre d'appels simultanés inclus dans votre offre ou en option sur votre ligne. Selon vos besoins, vous avez la possibilité d'augmenter ou de diminuer ce nombre en utilisant les flèches à droite du nombre actuel d'appels simultanés. Avant d'entamer toute démarche, nous vous recommandons de vous assurer que :
 
-- le téléphone sur lequel est configurée votre ligne est apte à gérer le nombre d'appels simultanés dont vous souhaitez bénéficier. Retrouvez plus d'informations sur les téléphones depuis le lien : <https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml> ;
+- le téléphone sur lequel est configurée votre ligne est apte à gérer le nombre d'appels simultanés dont vous souhaitez bénéficier. Retrouvez plus d'informations sur les téléphones depuis le lien : </links/telecom/telephonie-comparatif-telephones> ;
 - la bande passante de votre connexion internet est suffisamment dimensionnée pour gérer le nombre d'appels simultanés dont vous souhaitez bénéficier. Pour une utilisation optimale, une bande passante comprise entre 70 et 100 Kbit/s est requise par appel simultané.
 
 Dès que vous êtes prêt, modifiez le nombre d'appels simultanés grâce aux flèches, puis suivez les étapes qui s'affichent. Pour chaque ajout, n'oubliez pas de payer le bon de commande qui s'affichera.

@@ -19,7 +19,7 @@ Cloud Web mette a tua disposizione diversi linguaggi di programmazione per conse
 
 Per adattarsi al maggior numero di utilizzi possibile, la soluzione di hosting Cloud Web permette di disporre di uno o più motori di esecuzione, ognuno dei quali risponde a esigenze specifiche di ciascun progetto. 
 
-Per prima cosa, **assicurati che il tuo progetto sia tecnicamente compatibile con il tuo hosting Cloud Web**. La lista dei linguaggi compatibili è disponibile all’indirizzo <https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/> 
+Per prima cosa, **assicurati che il tuo progetto sia tecnicamente compatibile con il tuo hosting Cloud Web**. La lista dei linguaggi compatibili è disponibile all’indirizzo </links/web/hosting-cloud-web-offer> 
 
 Una volta indicati i motori di esecuzione da utilizzare, segui la procedura descritta in questa guida. 
 

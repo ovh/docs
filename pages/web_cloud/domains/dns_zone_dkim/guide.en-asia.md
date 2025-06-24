@@ -188,7 +188,7 @@ After 24 hours, if your `DKIM` box is red, please refer to the section [“Why d
 
 #### Full DKIM configuration <a name="firststep"></a>
 
-To configure DKIM, go to the website <https://ca.api.ovh.com/console/>, log in using the `Login`{.action} button in the top right-hand corner, and enter your OVHcloud credentials.
+To configure DKIM, go to the website </links/console>, log in using the `Login`{.action} button in the top right-hand corner, and enter your OVHcloud credentials.
 
 > Visit our guide ["First Steps with the OVHcloud APIs"](/pages/manage_and_operate/api/first-steps) if you have never used APIs.
 

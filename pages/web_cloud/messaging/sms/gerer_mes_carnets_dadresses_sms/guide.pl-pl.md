@@ -16,7 +16,7 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 
 - Posiadanie aktywnego konta SMS OVHcloud.
 - Posiadanie arkusza kalkulacyjnego lub edytora tekstu.
-- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -24,7 +24,7 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 
 ### Etap 1: tworzenie książki adresowej w Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do rubryki `Telefonia`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do rubryki `Telefonia`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
 
 Kliknij żądane konto SMS i wybierz kartę `Kontakty`{.action}, a następnie `Książka adresowa`{.action}.
 

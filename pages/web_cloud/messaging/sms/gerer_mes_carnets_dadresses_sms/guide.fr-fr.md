@@ -12,7 +12,7 @@ Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresse
 
 - Disposer d'un compte SMS OVHcloud.
 - Disposer d'un outil de type tableur ou éditeur de texte.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -20,7 +20,7 @@ Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresse
 
 ### Étape 1 : créer un carnet d'adresses dans votre espace client
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rubrique `Telecom`. Sélectionnez ensuite `SMS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rubrique `Telecom`. Sélectionnez ensuite `SMS`{.action}.
 
 Cliquez sur le compte SMS souhaité et choisissez l'onglet `Contacts`{.action} puis `Carnet d'adresses`{.action}.
 

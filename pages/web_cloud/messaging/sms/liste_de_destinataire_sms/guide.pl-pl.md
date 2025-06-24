@@ -16,7 +16,7 @@ Wszystkie konta SMS OVHcloud mogą używać jednej lub kilku list odbiorców. Z 
 
 - Posiadanie aktywnego konta SMS OVHcloud
 - Posiadanie narzędzia typu arkusz kalkulacyjny lub edytor tekstu
-- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Otrzymany rezultat powinien wyglądać następująco:
 
 ### Etap 2: zaimportować listę do Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję `Telecom`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz opcję `Telecom`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
 
 Wybierz konto SMS, następnie kliknij zakładkę `Kontakty`{.action} i `Utwórz listę kontaktów`{.action}.
 

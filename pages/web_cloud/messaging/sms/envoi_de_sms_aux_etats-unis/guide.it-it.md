@@ -16,7 +16,7 @@ L’invio di SMS negli Stati Uniti è sottoposto a regole specifiche. Questa gui
 
 - Disporre di un account SMS OVHcloud con crediti SMS.
 - Avere accesso alle [API OVHcloud](https://api.ovh.com/)(solo per il metodo di invio via API)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Télécom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -38,7 +38,7 @@ La convalida dei modelli di messaggi è gratuita e viene effettuata dai team di 
 
 #### 2.1 Dallo Spazio Cliente OVHcloud
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Télécom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS. Clicca sulla scheda `Messagio e campagna`{.action} e poi su `Gestisci gli SMS`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Télécom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS. Clicca sulla scheda `Messagio e campagna`{.action} e poi su `Gestisci gli SMS`{.action}.
 
 Clicca su `Gestisci i modelli`{.action}.
 

@@ -20,7 +20,7 @@ Lexpéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation e
 ## Prérequis
 
 - Disposer d’un compte SMS OVHcloud crédité.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -48,7 +48,7 @@ La réponse (si vous l'activez) peut être ensuite :
 
 Avant d'envoyer votre SMS réponse, nous vous conseillons de configurer les options de réception des réponses.
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
+Connectez-vous à votre [espace client](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
 
 Dans la barre d'onglets, cliquez sur `Options`{.action} puis sur `Options des réponses`{.action}.
 

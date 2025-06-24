@@ -61,7 +61,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 > [!warning]
 >
-> Dokładna procedura transferu domeny może się różnić, w szczególności w przypadku niektórych **TLD** kodu kraju (**ccTLD**, takich jak .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz niektórych specjalnych **TLD** (.am, .fm, itp.). W zależności od rozszerzenia Twojej domeny, mogą być konieczne dodatkowe wymagania. Zalecamy sprawdzenie w pierwszej kolejności informacji wyświetlanych dla danego rozszerzenia na naszej stronie internetowej: <https://www.ovhcloud.com/pl/domains/tld/>.
+> Dokładna procedura transferu domeny może się różnić, w szczególności w przypadku niektórych **TLD** kodu kraju (**ccTLD**, takich jak .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz niektórych specjalnych **TLD** (.am, .fm, itp.). W zależności od rozszerzenia Twojej domeny, mogą być konieczne dodatkowe wymagania. Zalecamy sprawdzenie w pierwszej kolejności informacji wyświetlanych dla danego rozszerzenia na naszej stronie internetowej: </links/web/domains-tld>.
 >
 
 ### Etap 1: weryfikacja informacji związanych z domeną <a name="step1"></a>

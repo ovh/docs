@@ -17,7 +17,7 @@ L'espace client OVHcloud vous permet de retrouver vos identifiants SMPP, modifie
 ## Prérequis
 
 - Disposer d’un [compte SMS SMPP OVHcloud](https://www.ovhcloud.com/fr/sms/api-sms/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Télécom`{.action} puis `SMS`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Télécom`{.action} puis `SMS`{.action}.
 
 ## En pratique
 

@@ -60,7 +60,7 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 > [!warning]
 >
-> Das genaue Verfahren für den Domaintransfer kann variieren, insbesondere bei bestimmten Ländercode-**TLD**s (**ccTLD**, z.B. .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi) und einigen speziellen **TLD**s (.am, .fm. etc.). Je nach Endung Ihres Domainnamens können zusätzliche Voraussetzungen notwendig sein. Wir empfehlen Ihnen, zunächst die für die betreffende Endung verfügbaren Informationen auf unserer Website zu überprüfen: <https://www.ovhcloud.com/de/domains/tld/>.
+> Das genaue Verfahren für den Domaintransfer kann variieren, insbesondere bei bestimmten Ländercode-**TLD**s (**ccTLD**, z.B. .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi) und einigen speziellen **TLD**s (.am, .fm. etc.). Je nach Endung Ihres Domainnamens können zusätzliche Voraussetzungen notwendig sein. Wir empfehlen Ihnen, zunächst die für die betreffende Endung verfügbaren Informationen auf unserer Website zu überprüfen: </links/web/domains-tld>.
 >
 
 ### Schritt 1: Domaininformationen überprüfen <a name="step1"></a>

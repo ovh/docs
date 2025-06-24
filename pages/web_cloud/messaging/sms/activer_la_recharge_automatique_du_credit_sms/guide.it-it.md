@@ -16,7 +16,7 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 
 - Disporre di un account SMS OVHcloud attivo
 - Avere accesso alle [API OVHcloud](https://api.ovh.com/)(soltanto per trasferire i crediti)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Télécom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile e a
 > - sul tuo account OVHcloud è presente e validato un metodo di pagamento di tipo SEPA.
 > - il tuo servizio SMS deve avere almeno 2 mesi di anzianità.
 
-Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sulla scheda `ADSL e telefono`{.action} e poi sulla sezione `SMS`{.action}. Seleziona l’account SMS su cui attivare la ricarica automatica.
+Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, clicca sulla scheda `ADSL e telefono`{.action} e poi sulla sezione `SMS`{.action}. Seleziona l’account SMS su cui attivare la ricarica automatica.
 
 Clicca sul menu `Opzioni`{.action} (1) e poi su `Ricarica automatica`{.action} (2).
 
