@@ -24,8 +24,8 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud
-- Disposer d'une [adresse Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/)
+- Disposer d'une offre [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
+- Disposer d'une [adresse Additional IP](/links/bare-metal/ip)
 - Avoir un accès administrateur (sudo) via SSH ou GUI sur votre serveur
 - Avoir les connaissances de base sur les réseaux et leur administration
 
@@ -483,6 +483,6 @@ Pour tester la connexion, envoyez un ping à votre adresse Additional IP depuis 
 
 [Activer le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
  
 Échangez avec notre [communauté d'utilisateurs](/links/community).

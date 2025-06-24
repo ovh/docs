@@ -17,7 +17,7 @@ Si configura su VPS como servidor DNS, puede utilizar el servicio DNS secundario
 ## Requisitos
 
 - Un dominio al que puede acceder como administrador
-- Un servidor [VPS](https://www.ovhcloud.com/es/vps/) desde el área de cliente de OVHcloud
+- Un servidor [VPS](/links/bare-metal/vps) desde el área de cliente de OVHcloud
 - Haber iniciado sesión en el [Panel de configuración de OVHcloud](/links/manager)
 
 > [!warning]

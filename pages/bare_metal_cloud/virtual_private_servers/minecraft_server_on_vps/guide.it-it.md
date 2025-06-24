@@ -12,7 +12,7 @@ updated: 2025-06-06
 
 Minecraft è un videogioco da costruzione di successo globale. Per giocare in modalità multiplayer, il server deve essere ospitato su un server.
 
-È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](https://www.ovhcloud.com/it/vps/) o su un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
+È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](/links/bare-metal/vps) o su un [server dedicato](/links/bare-metal/bare-metal) per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
 
 **Questa guida ti mostra come avviare un server Minecraft Java Edition su un VPS OVHcloud e testarne la connettività.**
 
@@ -24,7 +24,7 @@ Minecraft è un videogioco da costruzione di successo globale. Per giocare in mo
 
 ## Prerequisiti
 
-- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) sul proprio account OVHcloud
+- Disporre di un [VPS](/links/bare-metal/vps) sul proprio account OVHcloud
 - Aver installato una distribuzione GNU/Linux sul server
 - Avere accesso amministratore (sudo) via SSH al server
 - Comprendere principalmente l'amministrazione GNU/Linux
@@ -189,7 +189,7 @@ Nessuna porta da inserire di default
 
 Il tuo server Vanilla Minecraft è installato sul tuo VPS.
 
-Questa guida è valida anche per un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/). Con queste soluzioni, potrai usufruire anche di risorse fisiche garantite e stabili in qualsiasi momento della giornata, dato che l'hardware è dedicato.
+Questa guida è valida anche per un [server dedicato OVHcloud](/links/bare-metal/bare-metal) o un'istanza [Public Cloud](/links/public-cloud/public-cloud). Con queste soluzioni, potrai usufruire anche di risorse fisiche garantite e stabili in qualsiasi momento della giornata, dato che l'hardware è dedicato.
 
 ## Per saperne di più <a name="gofurther"></a>
 

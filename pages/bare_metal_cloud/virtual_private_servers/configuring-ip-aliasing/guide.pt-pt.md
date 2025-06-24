@@ -19,13 +19,13 @@ O alias de IP (*IP aliasing* em inglês) é uma configuração especial da rede 
 >
 > A OVHcloud oferece-lhe serviços que são da sua responsabilidade. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
 >
 
 ## Requisitos
 
-- Ter uma oferta [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Dispor de um [endereço Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
+- Ter uma oferta [VPS](/links/bare-metal/vps) na sua conta OVHcloud
+- Dispor de um [endereço Additional IP](/links/bare-metal/ip)
 - Ter um acesso administrador (sudo) via SSH ou GUI no seu servidor
 - Ter conhecimentos básicos sobre as redes e a sua administração
 
@@ -471,6 +471,6 @@ Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a p
 
 [Ativar o modo rescue num VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

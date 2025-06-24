@@ -16,13 +16,13 @@ Criar um snapshot é uma forma simples e rápida de garantir o funcionamento de 
 
 > [!primary]
 >
-Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e perguntas frequentes do produto](https://www.ovhcloud.com/pt/vps/options/) para obter uma comparação de preços e outras informações.
+Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e perguntas frequentes do produto](/links/bare-metal/vps-options) para obter uma comparação de preços e outras informações.
 >
 
 ## Requisitos
 
 - acesso à [Área de Cliente OVHcloud](/links/manager)
-- um [serviço VPS](https://www.ovhcloud.com/pt/vps/) OVHcloud já instalado
+- um [serviço VPS](/links/bare-metal/vps) OVHcloud já instalado
 
 ## Instruções
 

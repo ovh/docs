@@ -16,7 +16,7 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, puoi aggiungere 
 
 ## Prerequisiti
 
-- Un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud.
+- Un [VPS](/links/bare-metal/vps) nel tuo account OVHcloud.
 - Un [disco aggiuntivo](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configurato sul VPS.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Avere accesso al VPS in SSH o in RDP per l'amministrazione.
@@ -55,7 +55,7 @@ L'aumento di capacità del disco richiederà alcuni minuti dopo la conferma del 
 > [!warning]
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o di contattare la [nostra Community](https://community.ovh.com/en/).
+> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner) o di contattare la [nostra Community](https://community.ovh.com/en/).
 >
 
 #### Su un VPS Linux

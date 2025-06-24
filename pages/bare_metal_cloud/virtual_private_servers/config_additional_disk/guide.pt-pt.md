@@ -16,7 +16,7 @@ Com os VPS OVHcloud, tem a possibilidade de adicionar um espaço de armazenament
 
 ## Requisitos
 
-- Ter um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
+- Ter um [VPS](/links/bare-metal/vps) na sua conta OVHcloud
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 - Ter acesso administrativo via SSH ou RDP ao VPS
 

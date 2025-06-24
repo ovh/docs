@@ -15,7 +15,7 @@ Support for the vMAC function is a prerequisite for all actions concerning virtu
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
-- Access to the OVHcloud [API](https://ca.api.ovh.com/)
+- Access to the OVHcloud [API](/links/api)
 
 > [!primary]
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps) .
