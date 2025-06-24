@@ -19,7 +19,7 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+-   access to the [OVHcloud Control Panel](/links/manager)
 -   an AI Deploy project created inside a Public Cloud project
 -   a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
@@ -292,7 +292,7 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/flask-y
 - You can imagine deploying a **Flask** app in order to classify the feelings in a text. Refer to this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_06_flask_hugging_face).
 - Another way to create an AI Deploy app is to use **Streamlit**! [Here it is](/pages/public_cloud/ai_machine_learning/deploy_tuto_01_streamlit).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

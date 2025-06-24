@@ -10,14 +10,14 @@ This tutorial covers the process of starting a new Jupyter notebook and experime
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+-   access to the [OVHcloud Control Panel](/links/manager)
 -   an **AI Training project** created inside a **Public Cloud** project
 -   a [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 -   some knowledge about [Tensorflow](https://www.tensorflow.org/) library
 
 ## Launch and access Jupyter notebook with Tensorflow library
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), just follow this [guide](/pages/public_cloud/ai_machine_learning/training_guide_06_howto_notebooks) and select the `Tensorflow 2` docker image.
+If you want to launch it from the [OVHcloud Control Panel](/links/manager), just follow this [guide](/pages/public_cloud/ai_machine_learning/training_guide_06_howto_notebooks) and select the `Tensorflow 2` docker image.
 
 If you want to launch it with the `CLI`, just choose the number of GPUs (`<nb-gpus>`) to use on jour job and use the following command:
 
@@ -65,7 +65,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - You can compare AI models based on resource consumption, accuracy and training time. Refer to this [tutorial](/pages/public_cloud/ai_machine_learning/training_tuto_06_models_comparaison_weights_and_biases).
 - It is possible to do the same thing with **PyTorch** based on this [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/pytorch/multi_gpu_benchmark.ipynb).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

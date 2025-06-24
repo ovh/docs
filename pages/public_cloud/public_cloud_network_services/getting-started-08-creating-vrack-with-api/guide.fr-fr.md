@@ -6,13 +6,13 @@ updated: 2022-11-02
 
 ## Objectif
 
-Le [vRack](https://www.ovh.com/fr/solutions/vrack/) est un réseau privé qui vous permet de configurer l’adressage entre deux ou plusieurs serveurs dédiés OVHcloud. Mais il vous permet également d’ajouter des [instances Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
+Le [vRack](https://www.ovh.com/fr/solutions/vrack/) est un réseau privé qui vous permet de configurer l’adressage entre deux ou plusieurs serveurs dédiés OVHcloud. Mais il vous permet également d’ajouter des [instances Public Cloud](/links/public-cloud/public-cloud) à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
 
 **Découvrez comment activer et gérer un vRack Public Cloud depuis les APIv6 OVHcloud.**
 
 ## Prérequis
 
-- Posséder un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- Posséder un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - [Avoir créer un utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 - Connaissances réseaux élémentaires.
 - Consulter le guide [Configuration du vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) pour connaître les différentes méthodes proposées pour gérer le vRack Public Cloud OVHcloud.
@@ -511,6 +511,6 @@ Vous devrez renseigner a minima les champs suivants :
 
 [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

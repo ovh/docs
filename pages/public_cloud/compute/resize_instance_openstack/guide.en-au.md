@@ -20,7 +20,7 @@ As a result of increased activity, or simply to address new needs, your instance
 
 ## Requirements
 
-- A [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [OpenStack user account](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [Set OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)

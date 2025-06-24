@@ -334,7 +334,7 @@ user = "myuser"
 > If after running the `terraform apply` command, you get the error message `Error: Your query returned no results. Please change your search criteria and try again`, it means you have entered an incorrect `region`.
 >
 
-Now, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
+Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
 As you can see, your registry has been successfuly created:
 
 ![Private registry created](images/registry-created.png){.thumbnail}

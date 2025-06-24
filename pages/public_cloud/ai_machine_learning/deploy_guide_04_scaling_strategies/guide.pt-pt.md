@@ -16,12 +16,12 @@ This guide covers the use of the different scaling strategies for AI Deploy. The
 ## Requirements
 
 - a **Public Cloud** project
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- access to the [OVHcloud Control Panel](/links/manager)
 - start deploying an app and get to **Step 3**: `Resources`
 
 ## Scaling principles
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), it is possible to select the **resources** in `Step 3` of the app deployment.
+In the [OVHcloud Control Panel](/links/manager), it is possible to select the **resources** in `Step 3` of the app deployment.
 
 This step allows you to choose between two scaling strategies: **static scaling** and **autoscaling**.
 
@@ -106,4 +106,4 @@ In this example, the app will be scaled up when the average RAM usage across all
 
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

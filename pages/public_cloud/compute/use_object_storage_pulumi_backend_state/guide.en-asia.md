@@ -16,7 +16,7 @@ In this tutorial you will:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- A [Public Cloud Instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - [Pulumi CLI](https://www.pulumi.com/docs/install/){.external} installed
 
 **Before you begin**

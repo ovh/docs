@@ -20,8 +20,8 @@ In this tutorial, we will use one of them and interpret the results.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
-- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An app with an API running in AI Deploy on your Public Cloud project.
 - A python environment, with enough CPU and RAM and internet access (a virtual machine is recommended).
 
@@ -44,7 +44,7 @@ Feel free to deploy any app and API that you would like to load test, as long as
 For this tutorial, we will load test a spam classifier API from the [AI Deploy app portfolio](/pages/public_cloud/ai_machine_learning/deploy_guide_05_app_portfolio).
 This API takes sentences (emails) as input text, and outputs a spam probability score. 
 
-You can deploy this API easily from the [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or [OVHcloud CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). A good strategy is to deploy with autoscaling, with minimum and maximum replicas. This way we will monitor the growth of used replicas.
+You can deploy this API easily from the [OVHcloud control panel](/links/manager) or [OVHcloud CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). A good strategy is to deploy with autoscaling, with minimum and maximum replicas. This way we will monitor the growth of used replicas.
 
 Here is the CLI command used to deploy it, with autoscaling going from 1 to 5 replicas and a CPU threshold of 75%:
 
@@ -244,7 +244,7 @@ Locust official documentation : [Locust.io](https://docs.locust.io/en/stable/)
 
 Comparison of load testing tools : [Comparison of load testing tools](https://k6.io/blog/comparing-best-open-source-load-testing-tools/)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

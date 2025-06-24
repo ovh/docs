@@ -23,7 +23,7 @@ Możesz dodać serwer zapasowy lub zastąpić tę konfigurację Twoją. Serwery 
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
+- Posiadanie [instancji Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 - Dostęp administratora do instancji przez SSH lub RDP
 - Podstawowa wiedza w zakresie sieci i administracji
 

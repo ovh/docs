@@ -30,7 +30,7 @@ O Volume Snapshot e o Volume Backup permitem-lhe:
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
-- Um volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) criado no seu projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/).
+- Um volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) criado no seu projeto [Public Cloud](/links/public-cloud/public-cloud).
 
 ## Instruções
 

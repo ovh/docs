@@ -129,7 +129,7 @@ $ ovhai notebook patch <notebook ID> -v my-dataset@GRA:/workspace/datasets:rw
 > This is the same option as the `run` command above. You can choose to mount the volume in read-only or read & write mode and mount multiple volumes.
 >
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

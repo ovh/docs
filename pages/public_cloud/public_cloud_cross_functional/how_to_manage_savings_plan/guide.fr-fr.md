@@ -36,7 +36,7 @@ Ce guide a pour objectif de fournir une méthode claire et détaillée pour la c
 
 ## Prérequis
 
-- Un [projet Public Cloud OVHcloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- Un [projet Public Cloud OVHcloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[API OVHcloud](/links/api) (créez vos identifiants en consultant [ce guide](/pages/manage_and_operate/api/first-steps)).
 - Être familier de l'utilisation de [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) si vous souhaitez l'utiliser.
 - Connaitre les principes d'un [Savings Plan](/links/public-cloud/savings-plan)

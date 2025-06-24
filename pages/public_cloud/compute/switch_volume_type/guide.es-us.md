@@ -15,7 +15,7 @@ El objetivo de esta guía es mostrarle cómo cambiar un tipo de volumen Block St
 ## Requisitos
 
 - [Conectarse a Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
-- Un volumen [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creado en su proyecto [Public Cloud](https://www.ovhcloud.com/es/public-cloud/)
+- Un volumen [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creado en su proyecto [Public Cloud](/links/public-cloud/public-cloud)
 
 ## Procedimiento
 

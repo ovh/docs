@@ -10,7 +10,7 @@ updated: 2025-04-28
 
 ## Ziel
 
-Das Erstellen eines Projekts ist die Voraussetzung, um [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud/) verwenden zu können.
+Das Erstellen eines Projekts ist die Voraussetzung, um [Public Cloud Instanzen](/links/public-cloud/public-cloud) verwenden zu können.
 
 **Diese Anleitung erklärt die Schritte zur Erstellung Ihres ersten Public Cloud Projekts.**
 

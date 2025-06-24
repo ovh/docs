@@ -17,13 +17,13 @@ updated: 2025-05-13
 
 This guide will help you to understand the different parameters that you can set when submitting a new job to the Data Processing platform
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} to use the Data Processing platform. 
+In this guide, we are assuming that you're using the [OVHcloud Manager](/links/manager){.external} to use the Data Processing platform. 
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](/pages/public_cloud/data_analytics/data_processing/00_CONCEPTS_Overview){.external}.
 
 ## Requirements 
 
-- Access to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}
+- Access to the [OVHcloud Manager](/links/manager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project){.external} for details.)
 - Your application must be uploaded into a container in your Object Storage.

@@ -16,7 +16,7 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 
 ## Wymagania początkowe
 
-- Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
+- Posiadanie instancji [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
 - Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce

@@ -28,8 +28,8 @@ This guide will cover the creation of a new notebook from the OVHcloud Control P
 
 For the OVHcloud Control Panel:
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud user with the `administrator` role
 - Data Processing activated (see [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project) for details)
 
@@ -53,7 +53,7 @@ You can create notebooks in the [OVHcloud Control Panel](#controlpanel) or use t
 
 ### OVHcloud Control Panel <a name="controlpanel"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Data Processing by clicking on `Data Processing`{.action} (1) in the left-hand menu and then click on `Create a notebook`{.action} (2).
 
@@ -116,7 +116,7 @@ Go back to the OVHcloud Control Panel. In the `Data Processing`{.action} panel y
 
 ### OVHcloud APIv6 <a name="apiv6"></a>
 
-In the [OVHcloud APIv6](https://ca.api.ovh.com/console/) you can find all the Data Processing endpoints in the `cloud` section. 
+In the [OVHcloud APIv6](/links/console) you can find all the Data Processing endpoints in the `cloud` section. 
 
 ![Create a notebook 07](images/Creating-a-notebook07.png){.thumbnail}
 

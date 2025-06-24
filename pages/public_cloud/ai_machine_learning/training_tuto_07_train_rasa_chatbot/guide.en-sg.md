@@ -17,7 +17,7 @@ Both of the frameworks are Python packages.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
@@ -198,7 +198,7 @@ If you want to deploy your model created with the chatbot, you can follow this t
 
 [How to deploy a chatbot](/pages/public_cloud/ai_machine_learning/deploy_tuto_11_rasa_chatbot_flask)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

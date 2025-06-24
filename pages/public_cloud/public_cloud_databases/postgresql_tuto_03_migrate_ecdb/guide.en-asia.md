@@ -10,11 +10,11 @@ updated: 2022-03-16
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/compute/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/compute) in your OVHcloud account
 - A PostgreSQL database running on-premises (the "source" instance)
 - A PostgreSQL database running on OVHcloud Public Cloud Databases (the "target" instance)
 - A PostgreSQL client that can connect to both database instances, source and target.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 These guides can help you to meet these requirements:
 
@@ -116,7 +116,7 @@ $ pg_restore -d defaultdb -h <postgresql-xxxxxxxxx.database.cloud.ovh.net> -p <p
 ```
 
 As for the data export step and depending on the dataset size and the available bandwidth, the operation might take some time.<br>
-You can monitor the disk & network activity from the Metrics section of the DB service page in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia):
+You can monitor the disk & network activity from the Metrics section of the DB service page in your [OVHcloud Control Panel](/links/manager):
 
 ![Metrics Tab](images/metrics_tab.png){.thumbnail}
 
@@ -145,6 +145,6 @@ Once you verified that the database migration was successful, update client appl
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

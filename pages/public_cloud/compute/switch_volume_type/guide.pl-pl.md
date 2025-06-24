@@ -15,7 +15,7 @@ Celem niniejszego przewodnika jest pokazanie, jak zmienić rodzaj wolumenu Block
 ## Wymagania początkowe
 
 - [Dostęp do interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
-- Wolumen [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
+- Wolumen [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](/links/public-cloud/public-cloud)
 
 ## W praktyce
 

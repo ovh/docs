@@ -14,7 +14,7 @@ Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPr
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Avoir une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) avec Debian ou Ubuntu installé
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d’un accès administratif (sudo) à votre instance via SSH

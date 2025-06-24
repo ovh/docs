@@ -17,7 +17,7 @@ updated: 2022-04-11
 There are two ways to manage your data:
 
 - You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). Next, find out how to [manage your data with the CLI](/pages/public_cloud/ai_machine_learning/cli_16_commands_reference_data).
-- You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), see [create data container](/pages/storage_and_backup/object_storage/pcs_create_container).
+- You can use the [OVHcloud Control Panel](/links/manager), see [create data container](/pages/storage_and_backup/object_storage/pcs_create_container).
 
 ## How it works
 
@@ -107,7 +107,7 @@ Users can enable a `cache` feature that allow jobs and notebooks to re-use avail
 
 - You can check how to [launch an AI Training job with attached volumes](/pages/public_cloud/ai_machine_learning/cli_12_howto_run_job_cli).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -17,7 +17,7 @@ A questo scopo, è possibile delegare ad altri account cliente OVHcloud diritti 
 
 ## Prerequisiti
 
-- Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
+- Disporre di un'istanza [Public Cloud](/links/public-cloud/public-cloud) sul proprio account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura 

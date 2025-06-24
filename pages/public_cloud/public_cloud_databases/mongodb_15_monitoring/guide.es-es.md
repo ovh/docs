@@ -14,8 +14,8 @@ You can monitor your databases via the OVHcloud Control Panel (and also view sum
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager).
 - An OVHcloud managed MongoDB service. If you do not have one, please refer to the following guide: [Getting started with Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel).
 - An account you can use to log in to MongoDB. If you do not have one, please refer to the following guide: [Configure your MongoDB instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel).
 
@@ -23,7 +23,7 @@ You can monitor your databases via the OVHcloud Control Panel (and also view sum
 
 ### Using the metrics provided by OVHcloud
 
-You can use the main metrics and statistics in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) to track and manage your database instance.
+You can use the main metrics and statistics in the [OVHcloud Control Panel](/links/manager) to track and manage your database instance.
 
 For each Public Cloud Database service, in the `Metrics`{.action} tab, you can find the following charts:
 
@@ -129,4 +129,4 @@ Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask question
 
 Join our community of users on <https://community.ovh.com/en/>.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

@@ -23,7 +23,7 @@ As a result of increased activity, or simply new needs, your instance may not be
 
 ## Requirements
 
-- A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - [Access to the OVHcloud Control Panel](/links/manager)
 
 ## Instructions

@@ -16,7 +16,7 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 
 ## Requisitos
 
-- Tener una instancia de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
+- Tener una instancia de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
 - Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento

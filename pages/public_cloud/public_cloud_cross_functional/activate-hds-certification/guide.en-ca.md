@@ -17,7 +17,7 @@ The list of certified OVHcloud products is available on the page “[OVHcloud pr
 ## Requirements
 
 - You must be logged in to your [OVHcloud Control Panel](/links/manager){.external}.
-- You must have signed up to the [Business or Enterprise level of support](https://www.ovhcloud.com/en-ca/support-levels/) for your OVHcloud account.
+- You must have signed up to the [Business or Enterprise level of support](/links/support) for your OVHcloud account.
 
 ## Instructions
 

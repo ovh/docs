@@ -6,13 +6,13 @@ updated: 2022-11-02
 
 ## Objectif
 
-Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) est un réseau privé qui vous permet de configurer l’adressage entre deux ou plusieurs serveurs dédiés OVHcloud. Mais il vous permet également d’ajouter des [instances Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
+Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) est un réseau privé qui vous permet de configurer l’adressage entre deux ou plusieurs serveurs dédiés OVHcloud. Mais il vous permet également d’ajouter des [instances Public Cloud](/links/public-cloud/public-cloud) à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
 
 **Découvrez comment activer et gérer un vRack Public Cloud depuis les APIv6 OVHcloud.**
 
 ## Prérequis
 
-- Posséder un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
+- Posséder un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - [Avoir créer un utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon#creer-un-compte-utilisateur-openstack).
 - [Avoir créer un utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 - Connaissances réseaux élémentaires.
@@ -193,7 +193,7 @@ Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres
 >OpenStack n'étant pas située au même niveau de l'infrastructure, vous ne pourrez pas personnaliser les vLan au travers de l'interface Horizon ou des API OpenStack.
 >
 
-Une fois connecté à l'[APIv6 OVHcloud](https://ca.api.ovh.com/), exécutez les commandes suivantes dans l'ordre.
+Une fois connecté à l'[APIv6 OVHcloud](/links/api), exécutez les commandes suivantes dans l'ordre.
 
 #### Récupération des informations nécessaires : <a name="vlansetup"></a>
 
@@ -314,7 +314,7 @@ Deux situations peuvent se présenter à vous :
 
 #### Cas d'une nouvelle instance
 
-Une fois connecté à l'[APIv6 OVHcloud](https://ca.api.ovh.com/), exécutez les commandes suivantes dans l'ordre.
+Une fois connecté à l'[APIv6 OVHcloud](/links/api), exécutez les commandes suivantes dans l'ordre.
 
 ##### **Récupération des informations nécessaires**
 
@@ -512,6 +512,6 @@ Vous devrez renseigner a minima les champs suivants :
 
 [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -19,8 +19,8 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An up and running Public Cloud Database for PostgreSQL.
 - A Python environment with a stable version and public network connectivity (Internet). This tutorial was made using Python 3.9.7.
 
@@ -130,7 +130,7 @@ If you keep wagtail on default settings, a local SQLlite database will be used i
 
 Before creating the database, let's edit the `mysite/mysite/settings/base.py` file and adapt the connection parameters to the database.
 
-The useful parameters, available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) are:
+The useful parameters, available in the [OVHcloud Control Panel](/links/manager) are:
 
 - The db Host, the db Port
     - Get them from the "General Information tab".
@@ -203,6 +203,6 @@ To clean your PostgreSQL, use the OVHcloud Control Panel to delete your managed 
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

@@ -17,7 +17,7 @@ Unlike other Public Cloud Instances where the rescue mode can be activated from 
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [Public Cloud Metal instance](/pages/public_cloud/compute/public-cloud-first-steps) in your project
 
 ## Instructions

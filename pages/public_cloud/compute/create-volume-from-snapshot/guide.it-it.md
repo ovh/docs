@@ -23,7 +23,7 @@ Ciò può essere utile nei seguenti casi:
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
-- Disporre di un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} sul proprio account OVHcloud
+- Disporre di un'[istanza Public Cloud](/links/public-cloud/public-cloud){.external} sul proprio account OVHcloud
 - Disco nella stessa Region OpenStack
 - Avere accesso alla tua istanza via SSH come amministratore (sudo)
 

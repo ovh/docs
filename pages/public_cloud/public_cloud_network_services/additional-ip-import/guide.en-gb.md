@@ -23,9 +23,9 @@ Instead of buying more public IP addresses, you can import an Additional IP addr
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [Additional IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
+- An [Additional IP address](/links/bare-metal/ip)
 
 > [!warning]
 > This feature is not currently available for Metal instances.

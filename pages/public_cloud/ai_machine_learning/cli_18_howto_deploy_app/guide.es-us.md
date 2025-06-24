@@ -277,7 +277,7 @@ ovhai app run <registry-address>/<image-identifier>:<tag-name> \
 
 To know more about the CLI and available commands to interact with your app check out the [overview of `ovhai`](/pages/public_cloud/ai_machine_learning/cli_15_commands_reference).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

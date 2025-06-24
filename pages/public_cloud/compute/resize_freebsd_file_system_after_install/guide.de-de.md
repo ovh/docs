@@ -14,7 +14,7 @@ In dieser Anleitung erfahren Sie, wie Sie Ihr Dateisystem nach der Installation 
 
 ## Voraussetzungen
 
-- Sie haben eine Instanz mit FreeBSD 12 in Ihrem [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) mit FreeBSD 12
+- Sie haben eine Instanz mit FreeBSD 12 in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) oder einen [VPS](/links/bare-metal/vps) mit FreeBSD 12
 - Sie haben die Instanz / den VPS kürzlich installiert oder [angepasst](/pages/public_cloud/compute/resize_of_an_instance)
 
 > [!primary]

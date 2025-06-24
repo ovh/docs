@@ -10,7 +10,7 @@ updated: 2025-04-28
 
 ## Objetivo
 
-Crear un proyecto es el primer paso para implementar [instancias Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/).
+Crear un proyecto es el primer paso para implementar [instancias Public Cloud](/links/public-cloud/public-cloud).
 
 **Esta guía le guiará a través de los pasos para crear su primer proyecto de Public Cloud.**
 

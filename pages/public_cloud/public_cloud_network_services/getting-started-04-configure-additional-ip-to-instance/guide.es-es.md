@@ -27,8 +27,8 @@ Es posible que necesite configurar direcciones Additional IP en sus instancias, 
 
 ## Requisitos
 
-- una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
-- una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/) o un bloque Additional IP
+- una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
+- una [dirección Additional IP](/links/bare-metal/ip) o un bloque Additional IP
 - acceso de administrador (sudo) a su instancia por SSH o GUI
 - conocimientos básicos de redes y administración
 
@@ -312,6 +312,6 @@ Para probar la conexión, solo tiene que enviar un ping a su dirección Addition
 
 [Migrar una Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

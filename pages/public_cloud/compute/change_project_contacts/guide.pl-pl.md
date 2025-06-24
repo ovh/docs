@@ -17,7 +17,7 @@ Zmiana tych kontaktów pozwala na oddzielenie zarządzania technicznego i księg
 
 ## Wymagania początkowe
 
-- Posiadanie projektu [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
+- Posiadanie projektu [Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Kontakt administracyjny i księgowy w tym samym oddziale OVHcloud
 

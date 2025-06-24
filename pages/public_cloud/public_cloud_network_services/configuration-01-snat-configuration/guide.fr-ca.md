@@ -10,7 +10,7 @@ L'objectif de ce guide est d'expliquer ce qu'est le service SNAT fourni par les 
 
 ## Prérequis
 
-- Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
+- Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - L'outil [Openstack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} installé sur votre environnement (local)
 - Une [Floating IP des services L3](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)
 
@@ -145,6 +145,6 @@ La VM **vmpriv** a un accès externe à Internet tout en étant connectée à un
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

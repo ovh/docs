@@ -12,7 +12,7 @@ We will use the famous open source framework [Rasa](https://rasa.community/) to 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 - A [user for AI Notebooks](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
@@ -112,7 +112,7 @@ If you want to train a Rasa chatbot with the tool AI Training, please refer to t
 
 [How to train a chatbot with docker and AI Training](/pages/public_cloud/ai_machine_learning/training_tuto_07_train_rasa_chatbot)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
