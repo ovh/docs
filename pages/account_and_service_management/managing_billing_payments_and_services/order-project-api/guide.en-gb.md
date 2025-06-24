@@ -6,7 +6,7 @@ updated: 2020-12-09
 
 ## Objective
 
-Creating a project is the first step in deploying [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/).
+Creating a project is the first step in deploying [Public Cloud instances](/links/public-cloud/public-cloud).
 
 **This guide explains how to order a Public Cloud project via the OVHcloud API.**
 

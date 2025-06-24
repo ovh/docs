@@ -7,7 +7,7 @@ updated: 2025-04-28
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#weiterfuhrende-informationen).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#weiterfuhrende-informationen).
 >
 
 ## Ziel
@@ -109,7 +109,7 @@ Die Kontaktänderung wird einige Minuten nach Bestätigung der Anfrage durch die
 
 ### Beispiel: Ihrem Webmaster die technische Verwaltung Ihrer Website erlauben
 
-Sie haben gerade einen OVHcloud Dienst abonniert, um Ihren eigenen [Onlineshop zu hosten](https://www.ovhcloud.com/de/web-hosting/ecommerce-website/). Sie haben einen unserer [Partner kontaktiert](https://partner.ovhcloud.com/de/directory/) und Sie werden um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website erstellen zu können.
+Sie haben gerade einen OVHcloud Dienst abonniert, um Ihren eigenen [Onlineshop zu hosten](https://www.ovhcloud.com/de/web-hosting/ecommerce-website/). Sie haben einen unserer [Partner kontaktiert](/links/partner) und Sie werden um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website erstellen zu können.
 
 > [!warning]
 >

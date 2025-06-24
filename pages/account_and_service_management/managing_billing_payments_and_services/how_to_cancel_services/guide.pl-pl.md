@@ -78,27 +78,27 @@ Jeśli Twoja oferta e-mail MX Plan została zamówiona niezależnie od hostingu,
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Aby zrezygnować z usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#usuwanie-kont).
+Aby zrezygnować z usługi [E-mail Pro](/links/web/email-pro), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#usuwanie-kont).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Aby zrezygnować z usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont).
+Aby zrezygnować z usługi [Hosted Exchange](/links/web/emails-hosted-exchange), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont).
 
 #### Private Exchange <a name="private"></a>
 
-Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont_1).
+Aby zrezygnować z usługi [Private Exchange](/links/web/emails-private-exchange), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Aby zrezygnować z usługi [Office 365](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) csp 11, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#zarzadzaj-subskrypcjami).
+Aby zrezygnować z usługi [Office 365](/links/web/ms365) csp 11, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#zarzadzaj-subskrypcjami).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Aby zrezygnować z usługi [Office 365 csp](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#zarzadzanie-subskrypcjami).
+Aby zrezygnować z usługi [Office 365 csp](/links/web/ms365) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#zarzadzanie-subskrypcjami).
 
 #### Certyfikat SSL Sectigo <a name="ssl_sectigo"></a>
 
-Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](https://www.ovhcloud.com/pl/web-hosting/options/ssl/), ponieważ nie są one odnawiane automatycznie. Dlatego wystarczy, że nie odnawiacie ich w najbliższym terminie.
+Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](/links/web/hosting-options-ssl), ponieważ nie są one odnawiane automatycznie. Dlatego wystarczy, że nie odnawiacie ich w najbliższym terminie.
 
 #### SMS <a name="sms"></a>
 
@@ -116,7 +116,7 @@ Aby zrezygnować z usługi [VMware on OVHcloud](https://www.ovhcloud.com/pl/ente
 
 ### Public Cloud <a name="publiccloud"></a>
 
-Każda usługa [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) może zostać usunięta, klikając przycisk `...`{.action} po prawej stronie wybranej usługi, a następnie `Usuń`{.action}, jak w poniższym przykładzie dla instancji:
+Każda usługa [Public Cloud](/links/public-cloud/public-cloud) może zostać usunięta, klikając przycisk `...`{.action} po prawej stronie wybranej usługi, a następnie `Usuń`{.action}, jak w poniższym przykładzie dla instancji:
 
 ![public cloud instance deletion](images/pci-deletion-en.png){.thumbnail}
 

@@ -111,7 +111,7 @@ La modifica del contatto diventerà effettiva entro pochi minuti dalla conferma 
 
 ### Esempio: assegna la gestione tecnica del tuo sito al tuo webmaster
 
-Hai appena sottoscritto un abbonamento OVHcloud che permette di creare il tuo [negozio online](https://www.ovhcloud.com/it/web-hosting/ecommerce-website/). Hai contattato uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/) e ti chiede i diritti di accesso ai tuoi servizi OVHcloud per iniziare a creare il tuo sito.
+Hai appena sottoscritto un abbonamento OVHcloud che permette di creare il tuo [negozio online](https://www.ovhcloud.com/it/web-hosting/ecommerce-website/). Hai contattato uno dei nostri [partner](/links/partner) e ti chiede i diritti di accesso ai tuoi servizi OVHcloud per iniziare a creare il tuo sito.
 
 > [!warning]
 >

@@ -52,7 +52,7 @@ Sostituisci "InstanceID" con l'ID dell'istanza corrispondente. L'identificativo 
 
 ### Dall'API OVHcloud
 
-Accedi alla [interfaccia API OVHcloud](https://eu.api.ovh.com/) in base alla [guida appropriata](/pages/manage_and_operate/api/first-steps) e segui gli step seguenti.
+Accedi alla [interfaccia API OVHcloud](/links/api) in base alla [guida appropriata](/pages/manage_and_operate/api/first-steps) e segui gli step seguenti.
 
 Utilizza questa chiamata:
 

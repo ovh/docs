@@ -14,7 +14,7 @@ La plupart des services créés chez OVHcloud sont gérés par plusieurs contact
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Définition
@@ -112,7 +112,7 @@ Le changement de contact sera effectif quelques minutes après que les deux cont
 
 ### Exemple de cas concret : confier la gestion technique de votre site à votre webmaster <a name="use-case"></a>
 
-Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
+Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](/links/partner) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
 
 > [!warning]
 >

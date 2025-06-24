@@ -5,7 +5,7 @@ updated: 2021-05-05
 
 ## Objective
 
-This document is the reversibility policy for the **[Dedicated Servers](https://www.ovhcloud.com/en-sg/bare-metal/)** product range.
+This document is the reversibility policy for the **[Dedicated Servers](/links/bare-metal/bare-metal)** product range.
 
 This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 
@@ -23,7 +23,7 @@ Dedicated Servers features are divided into three categories:
 |---|-----|---|-----|-----|
 |Supplying dedicated servers|Supplying different ranges of high-performance dedicated servers|N/A|**Inbound migration**: Order a dedicated server in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), backup and migrate data, re-install software (or use automated installation).<br><br>**Outbound migration**: Order dedicated servers, backup and migrate data, re-install software|[Getting started with a dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)|
 |Backup storage|Backup storage delivered by default with every dedicated server|NFS/CIFS/FTP|**Inbound migration**: Migrate data on your dedicated servers and activate backup storage on those servers through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).<br><br>**Outbound migration**: enable access from outside your account through OVHcloud API, then migrate data using standard file transfer protocols, such as FTP.|[Using backup storage on a dedicated server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage)|
-|Operating systems and software installed on dedicated server|Automatically install operating systems, databases, administration interfaces and virtualization software on a new dedicated server.<br>See [here](https://www.ovhcloud.com/en-sg/bare-metal/os/) the complete list.|For customized images used with "bring your own image": <br>- Boot type: **uefi** or **legacy**<br>- Partition type: **MBR** or **GPT**<br>- Image format: **qcow2** or **raw**|**Inbound migration**: Order dedicated servers and choose operating systems/software to install on the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Alternatively, use the"bring your own image" feature to install customized images.<br><br>**Outbound migration**: Export your image and install on another dedicated server.|[Installing or reinstalling your dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installing-or-reinstalling-your-dedicated-server)<br><br>[How to use the Bring Your Own Image feature](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)|
+|Operating systems and software installed on dedicated server|Automatically install operating systems, databases, administration interfaces and virtualization software on a new dedicated server.<br>See [here](/links/bare-metal/os) the complete list.|For customized images used with "bring your own image": <br>- Boot type: **uefi** or **legacy**<br>- Partition type: **MBR** or **GPT**<br>- Image format: **qcow2** or **raw**|**Inbound migration**: Order dedicated servers and choose operating systems/software to install on the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Alternatively, use the"bring your own image" feature to install customized images.<br><br>**Outbound migration**: Export your image and install on another dedicated server.|[Installing or reinstalling your dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installing-or-reinstalling-your-dedicated-server)<br><br>[How to use the Bring Your Own Image feature](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)|
 
 ### OVHcloud implementation <a name="ovhcloud-implementation"></a>
 
@@ -45,7 +45,7 @@ All components of the OVHcloud Dedicated Server product are accessible through t
 
 ### Partner services
 
-OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](https://partner.ovhcloud.com/en-sg/directory/).
+OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](/links/partner).
 
 ### Cost and fees
 

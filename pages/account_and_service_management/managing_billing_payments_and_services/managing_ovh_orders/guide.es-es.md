@@ -95,7 +95,7 @@ Encontrará todas las modalidades de la aplicación de dicho derecho en los sigu
 >
 > Además, el derecho de desistimiento no se aplica a los pedidos no pagados, ya que estos se cancelan automáticamente cuando la orden de pedido expira.
 >
-> Por último, no se aplica a determinados servicios (especialmente los [nombres de dominio](https://www.ovhcloud.com/es-es/domains/) y los [certificados SSL Sectigo](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/)). Al contratar estos productos, deberá renunciar expresamente a su derecho de desistimiento de conformidad con el artículo L.221-28 del Código de Consumo.
+> Por último, no se aplica a determinados servicios (especialmente los [nombres de dominio](/links/web/domains) y los [certificados SSL Sectigo](/links/web/hosting-options-ssl)). Al contratar estos productos, deberá renunciar expresamente a su derecho de desistimiento de conformidad con el artículo L.221-28 del Código de Consumo.
 >
 
 Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](/links/manager):

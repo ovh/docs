@@ -5,7 +5,7 @@ updated: 2021-05-05
 
 ## Objective
 
-This document is the reversibility policy for the **Web Hosting** product for the [domain name](https://www.ovhcloud.com/en-gb/domains/) activity.
+This document is the reversibility policy for the **Web Hosting** product for the [domain name](/links/web/domains) activity.
 
 This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 
@@ -49,7 +49,7 @@ All components of an OVHcloud Web product are accessible through the [OVHcloud C
 
 ### Partner services
 
-OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](https://partner.ovhcloud.com/en-gb/directory/).
+OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](/links/partner).
 
 ### Cost and fees
 

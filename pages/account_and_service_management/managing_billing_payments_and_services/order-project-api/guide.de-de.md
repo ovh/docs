@@ -6,7 +6,7 @@ updated: 2020-12-09
 
 ## Ziel
 
-Die Erstellung eines Projekts ist der erste Schritt zum Deployment von [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud/).
+Die Erstellung eines Projekts ist der erste Schritt zum Deployment von [Public Cloud Instanzen](/links/public-cloud/public-cloud).
 
 **In dieser Anleitung erfahren Sie, wie Sie ein Public Cloud Projekt über die OVHcloud APIv6 bestellen.**
 

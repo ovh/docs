@@ -87,27 +87,27 @@ Wenn Ihr MX Plan E-Mail-Angebot unabhängig von einem Webhosting bestellt wurde,
 
 #### E-Mail Pro <a name="emailpro"></a>
 
-Um [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#konten-entfernen).
+Um [E-Mail Pro](/links/web/email-pro) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#konten-entfernen).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Um [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen).
+Um [Hosted Exchange](/links/web/emails-hosted-exchange) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen).
 
 #### Private Exchange <a name="private"></a>
 
-Um [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen_1).
+Um [Private Exchange](/links/web/emails-private-exchange) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen_1).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 
-Um [Office 365 CSP1](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#ihre-abonnements-verwalten).
+Um [Office 365 CSP1](/links/web/ms365) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#ihre-abonnements-verwalten).
 
 #### Office 365 CSP2 <a name="office-csp2"></a>
 
-Um [Office 365 CSP2](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#ihre-abos-verwalten).
+Um [Office 365 CSP2](/links/web/ms365) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#ihre-abos-verwalten).
 
 #### Sectigo SSL Zertifikat <a name="ssl_sectigo"></a>
 
-Bei den [Sectigo SSL](https://www.ovhcloud.com/de/web-hosting/options/ssl/) Angeboten ist eine Kündigung vor Ablauf nicht möglich, da diese nicht automatisch verlängert werden. Es genügt also, wenn Sie diese zum nächsten Termin nicht verlängern.
+Bei den [Sectigo SSL](/links/web/hosting-options-ssl) Angeboten ist eine Kündigung vor Ablauf nicht möglich, da diese nicht automatisch verlängert werden. Es genügt also, wenn Sie diese zum nächsten Termin nicht verlängern.
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
@@ -115,7 +115,7 @@ Um Ihren [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) D
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Um Ihre [VMware on OVHcloud](https://www.ovhcloud.com/de/hosted-private-cloud/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Um Ihre [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-cloud) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 ### Public Cloud <a name="publiccloud"></a>
 

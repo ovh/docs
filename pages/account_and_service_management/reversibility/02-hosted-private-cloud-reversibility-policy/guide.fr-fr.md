@@ -60,7 +60,7 @@ Les informations relatives à l'architecture (serveurs, stockage, etc.) sont cen
 
 ### Services Partenaires
 
-Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/).
+Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](/links/partner).
 
 ### Coût et frais
 

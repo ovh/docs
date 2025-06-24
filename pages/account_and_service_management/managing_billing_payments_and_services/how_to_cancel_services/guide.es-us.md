@@ -86,7 +86,7 @@ Para dar de baja su servicio [VMware on OVHcloud](https://www.ovhcloud.com/es/en
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Cada servicio [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) puede eliminarse haciendo clic en el botón `...`{.action} a la derecha del servicio correspondiente y, seguidamente, en `Eliminar`{.action}, como en el ejemplo de abajo para una instancia:
+Cada servicio [Public Cloud](/links/public-cloud/public-cloud) puede eliminarse haciendo clic en el botón `...`{.action} a la derecha del servicio correspondiente y, seguidamente, en `Eliminar`{.action}, como en el ejemplo de abajo para una instancia:
 
 ![public cloud instance deleite](images/pci-deletion-en.png){.thumbnail}
 

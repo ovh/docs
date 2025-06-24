@@ -110,7 +110,7 @@ Zmiana kontaktu zostanie wykonana w ciągu kilku minut od zatwierdzenia przez ob
 
 ### Przykład: zarządzanie stroną www na webmasterze
 
-Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](https://www.ovhcloud.com/pl/web-hosting/ecommerce-website/). Skontaktowałeś się z jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
+Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](https://www.ovhcloud.com/pl/web-hosting/ecommerce-website/). Skontaktowałeś się z jednym z naszych [partnerów](/links/partner) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
 
 > [!warning]
 >

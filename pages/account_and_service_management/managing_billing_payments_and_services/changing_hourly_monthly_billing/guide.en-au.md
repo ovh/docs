@@ -54,7 +54,7 @@ Replace "InstanceID" with the ID of the corresponding instance. This ID can be r
 
 ### From the OVHcloud API
 
-Log in to the [OVHcloud API interface](https://ca.api.ovh.com/) according to the [relevant guide](/pages/manage_and_operate/api/first-steps) and follow the steps below.
+Log in to the [OVHcloud API interface](/links/api) according to the [relevant guide](/pages/manage_and_operate/api/first-steps) and follow the steps below.
 
 Use the following call:
 
