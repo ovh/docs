@@ -148,9 +148,9 @@ public-cloud-databases-mysql-tutorials: MySQL - Tutorials
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
-public-cloud-databases-valkey: Caching/Valkey
-public-cloud-databases-valkey-guides: Caching/Valkey - Guides
-public-cloud-databases-valkey-tutorials: Caching/Valkey - Tutorials
+public-cloud-databases-valkey: Valkey
+public-cloud-databases-valkey-guides: Valkey - Guides
+public-cloud-databases-valkey-tutorials: Valkey - Tutorials
 public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
@@ -380,9 +380,9 @@ db-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
 db-public-cloud-databases-postgresql: PostgreSQL
 db-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 db-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
-db-public-cloud-databases-valkey: Redis
-db-public-cloud-databases-valkey-guides: Redis - Guides
-db-public-cloud-databases-valkey-tutorials: Redis - Tutorials
+db-public-cloud-databases-valkey: Valkey
+db-public-cloud-databases-valkey-guides: Valkey - Guides
+db-public-cloud-databases-valkey-tutorials: Valkey - Tutorials
 db-public-cloud-databases-grafana: Dashboards
 db-public-cloud-databases-grafana-guides: Dashboards - Guides
 db-public-cloud-databases-grafana-tutorials: Dashboards - Tutorials
