@@ -1,7 +1,7 @@
 ---
 title: "Gestion du service OVHcloud Load Balancer via l'espace client"
 excerpt: "Résumé des principales fonctionnalités et prise en main du service Load Balancer via l'espace client OVHcloud"
-updated: 2022-04-04
+updated: 2025-07-04
 ---
 
 ## Objectif
@@ -28,8 +28,8 @@ Sur la page de résumé de votre service Load Balancer, vous trouverez les menus
 |Statut|Résumé de votre Load Balancer avec le nom du service, les frontends, les fermes fonctionnelles et les serveurs ajoutés|
 |Utilisation|Un récapitulatif de l'utilisation de votre LoadBalancer|
 |Graphiques|Des graphiques présentant le nombre de connexions simultanées ou le nombre de requêtes par minute|
-|Informations|Votre IPv4 et les Additional IP liées, ainsi que le nombre d'IPv4 de sortie (obtenez des détails en cliquant sur le bouton `...`{.action})|
-|Configuration|Personnalisez ici le nom de votre offre. Retrouvez aussi le(s) cipher(s), qui sont personnalisables, ainsi que le datacenter où se situe votre Load Balancer|
+|Informations|Vos adresses IPv4 et IPv6 et les Additional IP liées, ainsi que le nombre d'IPv4 de sortie (obtenez des détails en cliquant sur le bouton `...`{.action})|
+|Configuration|Personnalisez ici le nom de votre offre. Retrouvez aussi le(s) cipher(s), qui sont personnalisables, ainsi que la zone de disponibilité où se situe votre Load Balancer|
 |Abonnement|Vous trouverez ici les détails administratifs de votre offre|
 
 Pour ajouter des `Frontends`{.action} ou des `Fermes de serveurs`{.action}, cliquez simplement sur les onglets respectifs. Un formulaire vous aidera ensuite à configurer chaque partie de votre service.
@@ -47,7 +47,7 @@ Détails des éléments d'un frontend :
 |Nom|Vous pouvez nommer ici votre frontend, afin notamment de l'identifier rapidement si vous en avez plusieurs |
 |Protocole|Vous avez le choix entre le HTTP, HTTPS, TCP, SSL TCP (ou TLS) et l'UDP|
 |Port|Choisissez ici le port d'écoute à utiliser|
-|Datacenter|Vous pouvez choisir entre un datacenter en particulier ou tous pour la création du frontend|
+|Datacenter|Vous pouvez choisir entre une zone de disponibilité en particulier ou tous pour la création du frontend|
 |Ferme par défaut|Si vous avez plusieurs fermes paramétrées, vous pourrez en choisir une par défaut pour chaque frontend|
 
 Vous avez également accès à des paramètres avancés :
@@ -91,6 +91,7 @@ Une fois votre ferme de serveurs créée, il vous reste à y ajouter des serveur
 |Cookie|Ajout d'un cookie de session personnalisé|
 |Chaîne de certification|Ajout d'une chaîne de certification|
 |Poids de balancement|Choix du poids de balancement pour la répartition de charge|
+|Version du protocole de PROXU|**Uniquement si vous l'avez déjà configuré**, choisissez la version du protocole de PROXY que vous souhaitez utiliser sur ce serveur. </br> Vous pouvez trouver plus d'informations sur le protocole PROXY et sur son utilisation avec le service OVHcloud Load Balancer dans [ce guide](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Gérer ses certificats SSL
 
