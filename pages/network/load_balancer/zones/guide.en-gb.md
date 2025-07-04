@@ -14,9 +14,27 @@ This increases the availability of your Load Balancer service in case a zone is 
 
 It is also possible, if configured appropriately, to use multiple zones to minimize latency for your visitors.
 
-## Add a zone
+## Instructions
 
-### From the API
+### Add a zone
+
+#### From the OVHcloud Control Panel
+
+You can order an additional zone from the [OVHcloud Control Panel](/manager) in the `Bare Metal Cloud`{.action} section, then `Load Balancer`{.action}.
+
+Select your Load Balancer, then in the `Home`{.action} tab and the `Configuration`{.action} menu, click `Add`{.action} in the "Availability zones" section.
+
+![Add a Load Balancer zone from the manager](images/add_Zone_IPLB.png){.thumbnail}
+
+Then select the zone(s) you wish to order and click `Add`{.action}.
+ 
+![Selection of a Load Balancer zone from the manager](images/Select_Zone_IPLB.png){.thumbnail}
+
+A purchase order will be generated, which you'll need to pay.
+
+![Pay the Load Balancer zone order from the manager](images/Paybill_Zone_IPLB.png){.thumbnail}
+
+#### From the API
 
 To order a zone via the API, you first need to create a cart.
 
@@ -55,6 +73,22 @@ Finally, you can validate your cart ("cart") via
 >
 
 Don't forget to pay the order form thus generated.
+
+### Add a zone
+
+Once your zone order is finalized, you can add it from your OVHcloud Control Panel.
+
+Select the Load Balancer you wish to modify, then create a new frontend, or edit an existing one, via the `Frontends`{.action} tab.
+
+In the `Datacenter`{.action} field, choose the zone you wish to associate with your frontend.
+
+![Zone selection](images/Select-Datacenter.png){.thumbnail}
+
+Once the frontend is configured, click `Add`{.action} or `Modify`{.action} depending on whether you are configuring a new frontend or an existing one.
+
+Don't forget to deploy the configuration. To do this, click `Apply configuration`{.action} in the reminder banner stating that the configuration is not applied.
+
+![Applying a Load Balancer Configuration](images/apply-configuration.PNG){.thumbnail}
 
 ## Use multiple zones
 
