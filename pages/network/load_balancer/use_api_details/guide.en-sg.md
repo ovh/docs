@@ -1,7 +1,7 @@
 ---
 title: Details of API functions
 excerpt: Details of API functionalities
-updated: 2022-04-04
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -33,12 +33,12 @@ Details of the API functionality for the Load Balancer OVH
 
 > [!primary]
 >
-> The Frontend, Farm and Server are specific to the
+> The Frontend, cluster and Server are specific to the
 > protocol (among HTTP, TCP or UDP) in which they are defined.
 > Although they can be "combined" with each other, this is only possible within
 > of the same protocol. Thus, it is not possible to use a Frontend
-> UDP with an HTTP Farm. But it is possible (in the absence of other
-> limitation) to use an HTTP Frontend with an HTTP Farm.
+> UDP with an HTTP cluster. But it is possible (in the absence of other
+> limitation) to use an HTTP Frontend with an HTTP cluster.
 > 
 
 ## Services and zones
@@ -123,7 +123,7 @@ Details of the API functionality for the Load Balancer OVH
 >> >> The identifier of your Load Balancer, ex: IP-1.2.3.4 (String of characters)
 >
 
-#### List existing farms and their type
+#### List existing clusters and their type
 
 > [!faq]
 >
@@ -184,7 +184,7 @@ Details of the API functionality for the Load Balancer OVH
 >> >> The identifier of your Load Balancer, ex: IP-1.2.3.4 (String of characters)
 >
 
-#### List the different types of farms that can be used
+#### List the different types of clusters that can be used
 
 > [!faq]
 >
@@ -414,9 +414,9 @@ The service will be discontinued on the expiry date.
 ## HTTP Protocol
 Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 
-### HTTP farms
+### HTTP clusters
 
-#### List HTTP farms attached to a Load Balancer OVH service
+#### List HTTP clusters attached to a Load Balancer OVH service
 
 > [!faq]
 >
@@ -439,7 +439,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >> The name of the zone (String of characters)
 >
 
-#### Adding a new HTTP farm to a Load Balancer OVH service
+#### Adding a new HTTP cluster to a Load Balancer OVH service
 
 > [!faq]
 >
@@ -463,23 +463,23 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **displayName**
 >> >
->> >> The name you wish to give to your farm (String of characters)
+>> >> The name you wish to give to your cluster (String of characters)
 >> >
 >> > **balance**
 >> >>
->> >> Your farm's load distribution method (Value)
+>> >> Your cluster's load distribution method (Value)
 >> >
 >> > **port**
 >> >
->> >> The listening port on your farm. Inherited from the frontend if undefined (Number, 1..65535)
+>> >> The listening port on your cluster. Inherited from the frontend if undefined (Number, 1..65535)
 >> >
 >> > **stickiness**
 >> >
->> >> The type of connection persistence to use for your farm (Value)
+>> >> The type of connection persistence to use for your cluster (Value)
 >> >
 >> > **probe**
 >> >
->> >> The type of probe to use on your farm (Probe HTTP)
+>> >> The type of probe to use on your cluster (Probe HTTP)
 >> >> >
 >> >> > - **forceSsl**
 >> >> >
@@ -507,7 +507,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >> >
 >> >> > - **port**
 >> >> >
->> >> >> The port that the probe should use to test the servers attached to your farm. Ignored for 'oco' probes. If not defined, the farm port is used (Number)
+>> >> >> The port that the probe should use to test the servers attached to your cluster. Ignored for 'oco' probes. If not defined, the cluster port is used (Number)
 >> >> >
 >> >> > - **type**
 >> >> >
@@ -518,7 +518,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >> >> The address to be used by the probe for HTTP type probes. The type is ignored if this parameter is set to (String of characters)
 >
 
-#### Getting the details of an HTTP farm
+#### Getting the details of an HTTP cluster
 
 > [!faq]
 >
@@ -538,10 +538,10 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your HTTP farm (Number)
+>> >> The identifier of your HTTP cluster (Number)
 >
 
-#### Modify the properties of an HTTP farm
+#### Modify the properties of an HTTP cluster
 
 > [!faq]
 >
@@ -561,13 +561,13 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your HTTP farm (Number)
+>> >> The identifier of your HTTP cluster (Number)
 >> >
 >> > **BackendHttp** *
 >> >
 >> >> - **displayName**
 >> >> >
->> >> > The name of the farm (String of characters)
+>> >> > The name of the cluster (String of characters)
 >> >>
 >> >> - **balance**
 >> >> >
@@ -575,7 +575,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >>
 >> >> - **port**
 >> >> >
->> >> > The farm's listening port (Number, 1..65000)
+>> >> > The cluster's listening port (Number, 1..65000)
 >> >>
 >> >> - **probe**
 >> >> >
@@ -586,7 +586,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >> > The type of connection persistence (Value)
 >
 
-#### Delete an HTTP farm
+#### Delete an HTTP cluster
 
 > [!faq]
 >
@@ -606,12 +606,12 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your HTTP farm (Number)
+>> >> The identifier of your HTTP cluster (Number)
 >
 
 ### HTTP Servers
 
-#### List the servers linked to the HTTP farm
+#### List the servers linked to the HTTP cluster
 
 > [!faq]
 >
@@ -631,7 +631,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your HTTP farm (Number)
+>> >> The identifier of your HTTP cluster (Number)
 >> >
 >> > **cookie**
 >> >
@@ -646,7 +646,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >> Filter Values by server status (Value)
 >
 
-#### Adding a server to an HTTP farm
+#### Adding a server to an HTTP cluster
 
 > [!faq]
 >
@@ -666,7 +666,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **address** *
 >> >
@@ -690,7 +690,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **port**
 >> >
->> >> The listening port of your server. Inherited from your farm if not defined (Number, 1..65535)
+>> >> The listening port of your server. Inherited from your cluster if not defined (Number, 1..65535)
 >> >
 >> > **probe**
 >> >
@@ -707,14 +707,14 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **weight** *
 >> >
->> >> The weight of your server for your farm. A server with high weight receives more requests (Number)
+>> >> The weight of your server for your cluster. A server with high weight receives more requests (Number)
 >> >
 >> > **status** *
 >> >
 >> >> If your server is activated or not (Boolean)
 >
 
-#### Get the details of a server linked to an HTTP farm
+#### Get the details of a server linked to an HTTP cluster
 
 > [!faq]
 >
@@ -738,7 +738,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >
 
 #### Modify the properties of an HTTP server
@@ -765,7 +765,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **BackendHttpServer** *
 >> >
@@ -808,10 +808,10 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >>
 >> >> - **weight**
 >> >> >
->> >> > The weight of your server for your farm (Number)
+>> >> > The weight of your server for your cluster (Number)
 >
 
-#### Removing a server from an HTTP farm
+#### Removing a server from an HTTP cluster
 
 > [!faq]
 >
@@ -835,7 +835,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >
 
 ### Frontends HTTP
@@ -860,7 +860,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **defaultFarmId**
 >> >
->> >> The identifier of the HTTP farm to which the HTTP frontend is linked (Number)
+>> >> The identifier of the HTTP cluster to which the HTTP frontend is linked (Number)
 >> >
 >> > **port**
 >> >
@@ -901,7 +901,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **defaultFarmId**
 >> >
->> >> The default HTTP farm identifier for your frontend (Number)
+>> >> The default HTTP cluster identifier for your frontend (Number)
 >> >
 >> > **defaultSslId**
 >> >
@@ -933,7 +933,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **ssl**
 >> >
->> >> Whether requests sent to the HTTP farm should be encrypted with SSL or not (Boolean)
+>> >> Whether requests sent to the HTTP cluster should be encrypted with SSL or not (Boolean)
 >> >
 >> > **zone** *
 >> >
@@ -1019,7 +1019,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >>
 >> >> - **ssl** 
 >> >> >
->> >> > Whether requests sent to the HTTP farm should be encrypted with SSL or not (Boolean)
+>> >> > Whether requests sent to the HTTP cluster should be encrypted with SSL or not (Boolean)
 >
 
 #### Delete an HTTP frontend
@@ -1099,7 +1099,7 @@ Routes are evaluated one by one, testing their routing rules. The first route va
 >> >>
 >> >> - **target** 
 >> >>
->> >> > The farm identifier, or the template for the URL (String of characters)
+>> >> > The cluster identifier, or the template for the URL (String of characters)
 >> >>
 >> >> - **type** 
 >> >>
@@ -1175,7 +1175,7 @@ Routes are evaluated one by one, testing their routing rules. The first route va
 >> >> >
 >> >> > - **target** 
 >> >> >
->> >> >> The farm identifier, or the template for the URL (String of characters)
+>> >> >> The cluster identifier, or the template for the URL (String of characters)
 >> >> >
 >> >> > - **type** 
 >> >> >
@@ -1389,11 +1389,11 @@ Routes are evaluated one by one, testing their routing rules. The first route va
 >
 
 ## Protocol TCP
-Access the elements related to the TCP protocol (Frontend, Farm, etc.).
+Access the elements related to the TCP protocol (Frontend, cluster, etc.).
 
-### TCP Farms
+### TCP clusters
 
-#### List TCP farms attached to a Load Balancer OVH service
+#### List TCP clusters attached to a Load Balancer OVH service
 
 > [!faq]
 >
@@ -1416,7 +1416,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Add a new TCP farm to a Load Balancer OVH service
+#### Add a new TCP cluster to a Load Balancer OVH service
 
 > [!faq]
 >
@@ -1436,19 +1436,19 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **balance**
 >> >
->> >> Your farm's load sharing method (Value)
+>> >> Your cluster's load sharing method (Value)
 >> >
 >> > **displayName**
 >> >
->> >> The name you wish to give to your farm (String of characters)
+>> >> The name you wish to give to your cluster (String of characters)
 >> >
 >> > **port**
 >> >
->> >> The listening port on your farm. Inherited from the frontend if not defined (Number, 1..65535)
+>> >> The listening port on your cluster. Inherited from the frontend if not defined (Number, 1..65535)
 >> >
 >> > **probe**
 >> >
->> >> The type of probe to use on your farm (HTTP probe)
+>> >> The type of probe to use on your cluster (HTTP probe)
 >> >>
 >> >> - **forceSsl**
 >> >>
@@ -1476,7 +1476,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >>
 >> >> - **port**
 >> >>
->> >> > The port that the probe should use to test the servers attached to your farm. Ignored for 'oco' probes. If not defined, the farm port is used (Number)
+>> >> > The port that the probe should use to test the servers attached to your cluster. Ignored for 'oco' probes. If not defined, the cluster port is used (Number)
 >> >>
 >> >> - **type**
 >> >>
@@ -1488,14 +1488,14 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >>
 >> > **stickiness**
 >> >
->> >> The type of connection persistence to use for your farm (Value)
+>> >> The type of connection persistence to use for your cluster (Value)
 >> >
 >> > **zone** *
 >> >
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Get the details of a TCP farm
+#### Get the details of a TCP cluster
 
 > [!faq]
 >
@@ -1515,10 +1515,10 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >
 
-#### Modify the properties of a TCP farm
+#### Modify the properties of a TCP cluster
 
 > [!faq]
 >
@@ -1538,7 +1538,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **BackendTcp** *
 >> >
@@ -1548,11 +1548,11 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >>
 >> >> - **displayName** 
 >> >>
->> >> > The name of the farm (String of characters)
+>> >> > The name of the cluster (String of characters)
 >> >>
 >> >> - **port** 
 >> >>
->> >> > The farm's listening port (Number, 1..65000)
+>> >> > The cluster's listening port (Number, 1..65000)
 >> >>
 >> >> - **probe** 
 >> >>
@@ -1563,7 +1563,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >> > The type of connection persistence (Value)
 >
 
-#### Delete a TCP farm
+#### Delete a TCP cluster
 
 > [!faq]
 >
@@ -1583,12 +1583,12 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >
 
 ### TCP Servers
 
-#### List the servers linked to the TCP farm
+#### List the servers linked to the TCP cluster
 
 > [!faq]
 >
@@ -1608,7 +1608,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **cookie**
 >> >
@@ -1623,7 +1623,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >> Filter Values by Server Status (Value)
 >
 
-#### Add a server to a TCP farm
+#### Add a server to a TCP cluster
 
 > [!faq]
 >
@@ -1643,7 +1643,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **address** *
 >> >
@@ -1663,7 +1663,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **port**
 >> >
->> >> The listening port of your server. Inherited from your farm if not defined (Number, 1..65535)
+>> >> The listening port of your server. Inherited from your cluster if not defined (Number, 1..65535)
 >> >
 >> > **probe**
 >> >
@@ -1680,14 +1680,14 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **weight** *
 >> >
->> >> The weight of your server for your farm. A high weight server receives more requests (Number)
+>> >> The weight of your server for your cluster. A high weight server receives more requests (Number)
 >> >
 >> > **status** *
 >> >
 >> >> If your server is activated or not (Boolean)
 >
 
-#### Get the details of a server linked to a TCP farm
+#### Get the details of a server linked to a TCP cluster
 
 > [!faq]
 >
@@ -1711,7 +1711,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 > >
 
 #### Modify the properties of a TCP server
@@ -1738,7 +1738,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **BackendTcpServer** *
 >> >
@@ -1777,10 +1777,10 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >>
 >> >> - **weight** 
 >> >>
->> >> > The weight of your server for your farm (Number)
+>> >> > The weight of your server for your cluster (Number)
 >
 
-#### Delete a server from a TCP farm
+#### Delete a server from a TCP cluster
 
 > [!faq]
 >
@@ -1804,7 +1804,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >
 
 ### Frontends TCP
@@ -1829,7 +1829,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **defaultFarmId**
 >> >
->> >> The identifier of the TCP farm to which the TCP frontend is linked (Number)
+>> >> The identifier of the TCP cluster to which the TCP frontend is linked (Number)
 >> >
 >> > **port**
 >> >
@@ -1868,7 +1868,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **defaultFarmId**
 >> >
->> >> The default TCP farm identifier for your frontend (Number)
+>> >> The default TCP cluster identifier for your frontend (Number)
 >> >
 >> > **defaultSslId**
 >> >
@@ -1888,7 +1888,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **ssl**
 >> >
->> >> Whether requests sent to the TCP farm should be encrypted with SSL or not (Boolean)
+>> >> Whether requests sent to the TCP cluster should be encrypted with SSL or not (Boolean)
 >> >
 >> > **zone** *
 >> >
@@ -1964,7 +1964,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >>
 >> >> - **ssl** 
 >> >>
->> >> > Whether requests sent to the HTTP farm should be encrypted with SSL or not (Boolean)
+>> >> > Whether requests sent to the HTTP cluster should be encrypted with SSL or not (Boolean)
 >
 
 #### Delete a TCP frontend
@@ -2040,7 +2040,7 @@ Routes are evaluated one by one, testing their routing rules. The first route va
 >> >>
 >> >> - **target** 
 >> >>
->> >> > The farm identifier, or the template for the URL (String of characters)
+>> >> > The cluster identifier, or the template for the URL (String of characters)
 >> >>
 >> >> - **type** 
 >> >>
@@ -2112,7 +2112,7 @@ Routes are evaluated one by one, testing their routing rules. The first route va
 >> >> >
 >> >> > - **target** 
 >> >> >
->> >> >> The farm identifier, or the template for the URL (String of characters)
+>> >> >> The cluster identifier, or the template for the URL (String of characters)
 >> >> >
 >> >> > - **type** 
 >> >> >
@@ -2326,9 +2326,9 @@ Routes are evaluated one by one, testing their routing rules. The first route va
 >
 
 ## UDP Protocol
-Access the UDP protocol elements (Frontend, Farm, etc.).
+Access the UDP protocol elements (Frontend, cluster, etc.).
 
-### UDP Farms
+### UDP clusters
 
 #### List UDP trusses attached to a Load Balancer OVH service
 
@@ -2353,7 +2353,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Add a new UDP farm to a Load Balancer OVH service
+#### Add a new UDP cluster to a Load Balancer OVH service
 
 > [!faq]
 >
@@ -2373,18 +2373,18 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **displayName**
 >> >
->> >> The name you wish to give to your farm (String of characters)
+>> >> The name you wish to give to your cluster (String of characters)
 >> >
 >> > **port**
 >> >
->> >> The listening port on your farm. Inherited from the frontend if not defined (Number, 1..65535)
+>> >> The listening port on your cluster. Inherited from the frontend if not defined (Number, 1..65535)
 >> >
 >> > **zone** *
 >> >
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Get the details of a UDP farm
+#### Get the details of a UDP cluster
 
 > [!faq]
 >
@@ -2404,10 +2404,10 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >
 
-#### Modify the properties of a UDP farm
+#### Modify the properties of a UDP cluster
 
 > [!faq]
 >
@@ -2427,20 +2427,20 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **BackendUdp** *
 >> >
 >> >> - **displayName**
 >> >>
->> >> > The name of the farm (String of characters)
+>> >> > The name of the cluster (String of characters)
 >> >>
 >> >> - **port** 
 >> >>
->> >> > The farm's listening port (Number, 1..65000)
+>> >> > The cluster's listening port (Number, 1..65000)
 >
 
-#### Delete a UDP farm
+#### Delete a UDP cluster
 
 > [!faq]
 >
@@ -2460,12 +2460,12 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >
 
 ### UDP Servers
 
-#### List the servers linked to the UDP farm
+#### List the servers linked to the UDP cluster
 
 > [!faq]
 >
@@ -2485,7 +2485,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **address**
 >> >
@@ -2496,7 +2496,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >> Filter Values by Server Status (Value)
 >
 
-#### Adding a server to a UDP farm
+#### Adding a server to a UDP cluster
 
 > [!faq]
 >
@@ -2516,7 +2516,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **address** *
 >> >
@@ -2528,14 +2528,14 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **port**
 >> >
->> >> The listening port of your server. Inherited from your farm if not defined (Number, 1..65535)
+>> >> The listening port of your server. Inherited from your cluster if not defined (Number, 1..65535)
 >> >
 >> > **status** *
 >> >
 >> >> If your server is activated or not (Boolean)
 >
 
-#### Get the details of a server linked to a UDP farm
+#### Get the details of a server linked to a UDP cluster
 
 > [!faq]
 >
@@ -2559,7 +2559,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >
 
 #### Modify the properties of a UDP server
@@ -2586,7 +2586,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm (Number)
+>> >> The identifier of your cluster (Number)
 >> >
 >> > **BackendUdpServer** *
 >> >
@@ -2603,7 +2603,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >> > If your server is activated or not (Boolean)
 >
 
-#### Removing a server from a UDP farm
+#### Removing a server from a UDP cluster
 
 > [!faq]
 >
@@ -2627,7 +2627,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> The identifier of your farm UDP (Number)
+>> >> The identifier of your cluster UDP (Number)
 >
 
 ### Frontends UDP
@@ -2652,7 +2652,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **defaultFarmId**
 >> >
->> >> The identifier of the UDP farm to which the UDP frontend is linked (Number)
+>> >> The identifier of the UDP cluster to which the UDP frontend is linked (Number)
 >> >
 >> > **port**
 >> >
@@ -2687,7 +2687,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **defaultFarmId** *
 >> >
->> >> The default UDP farm identifier for your frontend (Number)
+>> >> The default UDP cluster identifier for your frontend (Number)
 >> >
 >> > **disabled**
 >> >
@@ -3115,7 +3115,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId**
 >> >
->> >> Identification table of farms that you wish to attach to this private network
+>> >> Identification table of clusters that you wish to attach to this private network
 >> >
 >> > **natIp**
 >> >
@@ -3155,7 +3155,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >> The identifier of the private network
 >
 
-#### Modify the list of farms attached to a private network
+#### Modify the list of clusters attached to a private network
 
 > [!faq]
 >
@@ -3179,7 +3179,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **farmId** *
 >> >
->> >> Table of farm identifiers that you wish to attach to this private network. The Value "null" removes the vrack network id from all farms where it was configured.
+>> >> Table of cluster identifiers that you wish to attach to this private network. The Value "null" removes the vrack network id from all clusters where it was configured.
 >
 
 ## Go further

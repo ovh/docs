@@ -1,7 +1,7 @@
 ---
 title: Lastverteilungstyp
 excerpt: Diese Anleitung beschreibt die verschiedenen Lastverteilungsmethoden des OVH Loadbalancers
-updated: 2018-01-17
+updated: 2025-07-04
 ---
 
 ## Einleitung
@@ -19,7 +19,7 @@ Der neue OVH Loadbalancer bietet Ihnen mehrere Lastverteilungstypen für Ihre Di
 
 ### Die verschiedenen Lastverteilungstypen
 
-Lastverteilung (engl. „Load Balancing“) wird in Serverfarmen verwendet. Diese Einstellung bestimmt, wie Anfragen zwischen den verschiedenen Servern einer Farm aufgeteilt werden.
+Lastverteilung (engl. „Load Balancing“) wird in Serverfarmen verwendet. Diese Einstellung bestimmt, wie Anfragen zwischen den verschiedenen Servern einer cluster aufgeteilt werden.
 
 Weitere Informationen zu den Grundbestandteilen des OVH Loadbalancers finden Sie in der [Einführung zum OVH Loadbalancer](/pages/network/load_balancer/use_presentation){.external}.
 
@@ -31,9 +31,9 @@ Weitere Informationen zu den Grundbestandteilen des OVH Loadbalancers finden Sie
 |Source|Dieser Algorithmus wendet eine *Hashfunktion* auf die Quell-IP an und teilt anschließend das Ergebnis durch die Anzahl der aktuell aktiven Server. So wird die gleiche Quell-IP immer auf denselben Server weitergeleitet, solange dieser aktiv ist.|
 |URI|Dieser Algorithmus wendet eine *Hashfunktion* auf einen Teil oder den kompletten URI an und teilt anschließend das Ergebnis durch die Anzahl der aktuell aktiven Server. So wird der gleiche URI immer auf denselben Server weitergeleitet, solange dieser aktiv ist.|
 
-### Lastverteilungstyp einer Farm über das Kundencenter anpassen
+### Lastverteilungstyp einer cluster über das Kundencenter anpassen
 
-- Im Bereich `Serverfarmen`{.action} Ihres OVH Loadbalancers werden Ihnen die aktuell eingerichteten Serverfarmen angezeigt. Um eine der Farmen zu bearbeiten, klicken Sie einfach auf die drei Punkte rechts neben der entsprechenden Farm (2) und anschließend auf `Ändern`{.action}:
+- Im Bereich `Serverfarmen`{.action} Ihres OVH Loadbalancers werden Ihnen die aktuell eingerichteten Serverfarmen angezeigt. Um eine der clusteren zu bearbeiten, klicken Sie einfach auf die drei Punkte rechts neben der entsprechenden cluster (2) und anschließend auf `Ändern`{.action}:
 
 ![Serverfarm bearbeiten](images/server_cluster_change.png){.thumbnail}
 
@@ -45,13 +45,13 @@ Wenn Sie den gewünschten Lastverteilungstyp ausgewählt haben, klicken Sie auf 
 
 ![Konfiguration anwenden](images/apply_config.png){.thumbnail}
 
-### Lastverteilungstyp einer Farm über die API anpassen
+### Lastverteilungstyp einer cluster über die API anpassen
 
 Sie können die Einstellungen des Lastverteilungstyps anpassen, indem Sie die entsprechenden Einstellungen in den Serverfarmen vornehmen.
 
-- Details einer Farm einsehen
+- Details einer cluster einsehen
 
-Mit dieser API-Funktion können Sie sich die Details einer Farm anzeigen lassen, wenn Sie deren ID kennen. Im folgenden Beispiel werden wir eine HTTP-Farm bearbeiten:
+Mit dieser API-Funktion können Sie sich die Details einer cluster anzeigen lassen, wenn Sie deren ID kennen. Im folgenden Beispiel werden wir eine HTTP-Farm bearbeiten:
 
 > [!api]
 >
@@ -61,21 +61,21 @@ Mit dieser API-Funktion können Sie sich die Details einer Farm anzeigen lassen,
 |Einstellung|Bedeutung|
 |---|---|
 |ServiceName*|ID Ihres Loadbalancer Dienstes|
-|farmId*|ID der Farm|
+|farmId*|ID der cluster|
 
 |Antwort (BackendHttp)|Bedeutung|
 |---|---|
-|farmId|ID der Farm|
-|balance|Aktuell auf der Farm konfigurierter Lastverteilungstyp|
-|zone|Name der Zone, in der die Farm konfiguriert ist|
+|farmId|ID der cluster|
+|balance|Aktuell auf der cluster konfigurierter Lastverteilungstyp|
+|zone|Name der Zone, in der die cluster konfiguriert ist|
 |port|Port, der verwendet wird, um die Server zu kontaktieren|
-|probe|Aktuell auf der Farm konfigurierte Monitoring-Sonde|
-|displayName|Name der Farm|
-|stickiness|Aktuell auf der Farm konfigurierte Verbindungsüberwachung|
+|probe|Aktuell auf der cluster konfigurierte Monitoring-Sonde|
+|displayName|Name der cluster|
+|stickiness|Aktuell auf der cluster konfigurierte Verbindungsüberwachung|
 
 - Lastverteilungstyp anpassen
 
-Mit diesem Aufrufbefehl können Sie die Konfiguration einer Farm bearbeiten, wenn Sie deren ID kennen. Im folgenden Beispiel werden wir eine HTTP-Farm bearbeiten. Um den Lastverteilungstyp zu ändern, aktualisieren Sie das Feld `BackendHttp.balance` mit einem verfügbaren Lastverteilungstyp:
+Mit diesem Aufrufbefehl können Sie die Konfiguration einer cluster bearbeiten, wenn Sie deren ID kennen. Im folgenden Beispiel werden wir eine HTTP-Farm bearbeiten. Um den Lastverteilungstyp zu ändern, aktualisieren Sie das Feld `BackendHttp.balance` mit einem verfügbaren Lastverteilungstyp:
 
 > [!api]
 >
@@ -85,8 +85,8 @@ Mit diesem Aufrufbefehl können Sie die Konfiguration einer Farm bearbeiten, wen
 |Einstellung|Bedeutung|
 |---|---|
 |ServiceName*|ID Ihres Loadbalancer Dienstes|
-|farmId*|ID der Farm|
-|BackendHttp.balance|Der gewünschte Lastverteilungstyp für diese Farm|
+|farmId*|ID der cluster|
+|BackendHttp.balance|Der gewünschte Lastverteilungstyp für diese cluster|
 
 - Änderungen anwenden
 

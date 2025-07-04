@@ -1,7 +1,7 @@
 ---
 title: Load Balancer API Quick Reference
 excerpt: Quick description of the different API functions used to manage the Load Balancer
-updated: 2022-04-04
+updated: 2025-07-04
 ---
 
 ## List of API functions
@@ -16,12 +16,12 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 
 > [!primary]
 >
-> The Frontend, Farm and Server are specific to the
+> The Frontend, Cluster and Server are specific to the
 > protocol (among HTTP, TCP or UDP) in which they are defined.
 > Although they can be "combined" with each other, this is only possible within the same protocol.
 > of the same protocol. Thus, it is not possible to use a Frontend
-> UDP with an HTTP Farm. But it is possible (in the absence of other
-> limitation) to use an HTTP Frontend with an HTTP Farm.
+> UDP with an HTTP Cluster. But it is possible (in the absence of other
+> limitation) to use an HTTP Frontend with an HTTP Cluster.
 > 
 
 ## Frontend
@@ -77,7 +77,7 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
-## Server farm
+## Server cluster
 
 > [!primary]
 >
@@ -85,7 +85,7 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > It is necessary to execute the API function that corresponds to the type of service desired.
 > 
 
-### Return the list of IDs of existing farms
+### Return the list of IDs of existing clusters
 
 > [!api]
 >
@@ -94,7 +94,7 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm
 > 
 
-### Create a Farm
+### Create a cluster
 
 > [!api]
 >
@@ -103,7 +103,7 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm
 > 
 
-### Return the parameters applied to a farm
+### Return the parameters applied to a cluster
 
 > [!api]
 >
@@ -112,7 +112,7 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 > 
 
-### Edit parameters related to a particular farm
+### Edit parameters related to a particular cluster
 
 > [!api]
 >
@@ -121,7 +121,7 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 > 
 
-### Delete a Farm
+### Delete a cluster
 
 > [!api]
 >
@@ -134,11 +134,11 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 
 > [!primary]
 >
-> As for the frontend and farm, each category is composed of 3 API functions.
+> As for the frontend and cluster, each category is composed of 3 API functions.
 > It is necessary to properly execute the API function that corresponds to the type of the   desired service.
 > 
 
-### Return the list of server IDs linked to a particular farm
+### Return the list of server IDs linked to a particular cluster
 
 > [!api]
 >
@@ -147,7 +147,7 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 > 
 
-### Creates a server for a particular farm
+### Creates a server for a particular cluster
 
 > [!api]
 >

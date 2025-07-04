@@ -1,12 +1,12 @@
 ---
 title: 'Configuring SMTP on a Load Balancer service'
 excerpt: 'Find out how to use SMTP with the OVH Load Balancer'
-updated: 2018-12-28
+updated: 2025-07-04
 ---
 
 ## Objective
 
-In this guide, we will configure a basic TCP load balancing service, for one or more SMTP servers. A TCP front-end will listen to TCP traffic on port 25. It is configured to direct traffic to a TCP farm with one or more TCP servers, depending on how you choose to configure it.
+In this guide, we will configure a basic TCP load balancing service, for one or more SMTP servers. A TCP front-end will listen to TCP traffic on port 25. It is configured to direct traffic to a TCP cluster with one or more TCP servers, depending on how you choose to configure it.
 
 **This guide is designed to help you configure an OVH Load Balancer service in order to balance load across several servers that respond in SMTP.**
 
@@ -25,11 +25,11 @@ In this guide, we will configure a basic TCP load balancing service, for one or 
 > This guide will take you through the steps required. Depending on the way you have designed your architecture, some configurations may vary.
 > 
 
-As a reminder, each protocol (HTTP, TCP and UDP) in the OVH Load Balancer service has its own associated front-ends, farms and servers.
+As a reminder, each protocol (HTTP, TCP and UDP) in the OVH Load Balancer service has its own associated front-ends, clusters and servers.
 
 > [!warning]
 >
-> The order in which elements are created is important. In particular, the server farms must be configured before we can attach servers to them.
+> The order in which elements are created is important. In particular, the server clusters must be configured before we can attach servers to them.
 > 
 
 In the Sunrise Control Panel, you will see the features detailed below:
@@ -45,9 +45,9 @@ Via the OVH API, in the section:
 
 For more information on the API’s features, you can refer to the following guide: [Load Balancer API Quick Reference](/pages/network/load_balancer/use_api_reference){.ref}
 
-## Add a server farm.
+## Add a server cluster.
 
-We will add a farm of TCP servers to our service, which is the part that balances traffic on the servers.
+We will add a cluster of TCP servers to our service, which is the part that balances traffic on the servers.
 
 ### Via the Sunrise Control Panel.
 
@@ -55,19 +55,19 @@ In the `Farms`{.action} tab for servers, click on the `+TCP/TLS`{.action} button
 
 Fill in the fields. The mandatory fields for a basic configuration are *Port* and *Zone*. In our case, for SMTP, port 25 is used. If no ports are specified, your OVH Load Balancer will automatically use the same port as the corresponding front-end.
 
-As an option, you can add an SMTP probe on your farm.
+As an option, you can add an SMTP probe on your cluster.
 
-![Add a server farm via the Control Panel](images/add_farm.png){.thumbnail}
+![Add a server cluster via the Control Panel](images/add_farm.png){.thumbnail}
 
 Click `Add`{.action} once you have filled in the fields.
 
-Your server farm should appear in the list, in the `Farms`{.action} tab.
+Your server cluster should appear in the list, in the `Farms`{.action} tab.
 
-![Details of the server farm created](images/resume_farm.png){.thumbnail}
+![Details of the server cluster created](images/resume_farm.png){.thumbnail}
 
 ### Via the API
 
-- List of TCP server farms:
+- List of TCP server clusters:
 
 > [!api]
 >
@@ -81,21 +81,21 @@ Your server farm should appear in the list, in the `Farms`{.action} tab.
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
-- Add a new TCP server farm:
+- Add a new TCP server cluster:
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
-- Modify a specific server farm:
+- Modify a specific server cluster:
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
-- Delete a specific server farm:
+- Delete a specific server cluster:
 
 > [!api]
 >
@@ -104,30 +104,30 @@ Your server farm should appear in the list, in the `Farms`{.action} tab.
 
 ## Add a server.
 
-We will now add a server to our server farm.
+We will now add a server to our server cluster.
 
 ### Via the Sunrise Control Panel.
 
-In the `Farms`{.action} tab, select the farm you want to add a server to by clicking on the corresponding line. The list of servers already configured in the farm will appear beneath the list of farms, along with the `Add a server`{.action} button. Click on this button to add a new server.
+In the `Farms`{.action} tab, select the cluster you want to add a server to by clicking on the corresponding line. The list of servers already configured in the cluster will appear beneath the list of clusters, along with the `Add a server`{.action} button. Click on this button to add a new server.
 
-Only the *IPv4 address*,  *Status* and *ProxyProtocol version* fields are mandatory. If a server does not use the same port as the one defined earlier in the farm, you may overload it by configuring a server. However, to keep the configuration as standard as possible and easy to maintain, we recommend only using this parameter in advanced cases.
+Only the *IPv4 address*,  *Status* and *ProxyProtocol version* fields are mandatory. If a server does not use the same port as the one defined earlier in the cluster, you may overload it by configuring a server. However, to keep the configuration as standard as possible and easy to maintain, we recommend only using this parameter in advanced cases.
 
 > [!warning]
 >
 > It is important to configure ProxyProtocol in version v1, so that you can get the real source IP on your SMTP service. Postfix is compatible with this protocol.
 > 
 
-![Add a server to a farm.](images/add_server.png){.thumbnail}
+![Add a server to a cluster.](images/add_server.png){.thumbnail}
 
 Click `Add`{.action} once you have filled in the fields.
 
-Your server should appear in the server list, in the `Farms`{.action} tab, just below the list of farms.
+Your server should appear in the server list, in the `Farms`{.action} tab, just below the list of clusters.
 
 ![Details of the server created.](images/resume_server.png){.thumbnail}
 
 ### Via the API
 
-- List of servers in the farm:
+- List of servers in the cluster:
 
 > [!api]
 >
@@ -164,17 +164,17 @@ Your server should appear in the server list, in the `Farms`{.action} tab, just 
 
 ## Add a front-end
 
-We will now add a `front-end`{.action} to our service, and connect it to our server farm. The front-end is the part of your OVH Load Balancer that exposes your service on the internet.
+We will now add a `front-end`{.action} to our service, and connect it to our server cluster. The front-end is the part of your OVH Load Balancer that exposes your service on the internet.
 
 ### Via the Sunrise Control Panel.
 
 Go to the `+ Front-ends`{.action} tab, and click `+TCP/TLS`{.action}.
 
-Fill in the fields. The only mandatory fields for a basic configuration are *Port* (25 for a standard SMTP service), *Zone* and *Probe*, if you configured a probe on your farm. If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a range of ports, in the format "start_port-end_port".
+Fill in the fields. The only mandatory fields for a basic configuration are *Port* (25 for a standard SMTP service), *Zone* and *Probe*, if you configured a probe on your cluster. If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a range of ports, in the format "start_port-end_port".
 
 If you have routed Additional IPs to your OVH Load Balancer service, you can also attach a front-end to one or more specific Additional IPs.
 
-Please remember to specify the farm you created earlier as a “default farm”.
+Please remember to specify the cluster you created earlier as a “default cluster”.
 
 ![Add a front-end](images/add_frontend.png){.thumbnail}
 

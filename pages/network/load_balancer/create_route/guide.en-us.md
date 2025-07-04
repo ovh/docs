@@ -1,16 +1,16 @@
 ---
 title: 'Working with HTTP routes'
-excerpt: 'Find out how to direct your requests dynamically, to a specific farm'
-updated: 2018-04-09
+excerpt: 'Find out how to direct your requests dynamically, to a specific cluster'
+updated: 2025-07-04
 ---
 
 ## Objective
 
-The OVH Load Balancer service redirects the front-end’s incoming traffic to the servers that make up the front-end’s default farm, or its default redirection.
+The OVH Load Balancer service redirects the front-end’s incoming traffic to the servers that make up the front-end’s default cluster, or its default redirection.
 
 In some cases, you can go a step further and route, redirect or block traffic according to a range of criteria. For example, in the case of a HTTP(S) service, you can filter traffic depending on the HTTP method, the URL, and even a cookie or header value! In the OVH Load Balancer service, these are called `routes`{.action}. A route is a particular action to carry out if one or more conditions are met.
 
-**This guide will show you how to direct your requests dynamically, to a specific farm.**
+**This guide will show you how to direct your requests dynamically, to a specific cluster.**
 
 ## Requirements
 
@@ -21,7 +21,7 @@ In some cases, you can go a step further and route, redirect or block traffic ac
 
 > [!primary]
 >
-> Although this guide focuses on HTTP routes, the same principle applies to TCP (with TCP routes). This can be used to direct HTTP/2 traffic to a particular farm, or reject incoming requests from certain IPs.
+> Although this guide focuses on HTTP routes, the same principle applies to TCP (with TCP routes). This can be used to direct HTTP/2 traffic to a particular cluster, or reject incoming requests from certain IPs.
 > 
 
 Since this feature is still very new, it is only available in the API. This guide will explain the general principles behind routing, and provide practical examples of routes being used.
@@ -64,7 +64,7 @@ When you want to configure a route or rules, the first thing you need to do is l
 
 When a request arrives at your OVH Load Balancer service, the routes are evaluated successively following the principles below:
 
-1. firstly, reject and rewrite routes, then the farm routes
+1. firstly, reject and rewrite routes, then the cluster routes
 1. within categories, the routes are evaluated in order of ascending weight
 1. if two routes are the same weight, the first route created is evaluated first
 1. only the first action from all the validated rules is executed
@@ -104,7 +104,7 @@ For more information on this call, please read the [Edit routes](#edit-routes){.
 
 ### Route configuration.
 
-With these basic principles around the action and rules available, and the order in which routes are evaluated, these routes can be edited the same way as the farms can. When you create a route, you can attach rules to it. The possible values for rules and actions are defined by the API calls.
+With these basic principles around the action and rules available, and the order in which routes are evaluated, these routes can be edited the same way as the clusters can. When you create a route, you can attach rules to it. The possible values for rules and actions are defined by the API calls.
 
 For more information on these calls, please read the [Edit routes](#edit-routes){.internal} section at the bottom of this guide.
 
@@ -160,9 +160,9 @@ Next, apply the configuration to the zone concerned, and the rule will begin to 
 
 This feature helped propel the expansion of the web at its very early stages, by exposing several websites behind a single IP address using the “host” field of HTTP headers.
 
-For example, if your infrastructure is made up of a VPS for your website, an OVH Load Balancer to ensure SSL/TLS termination, and redirection to a maintenance page with a backup server in the farms, you would originally have needed one Additional IP per website, routed to your OVH Load Balancer, and one front-end per IP.
+For example, if your infrastructure is made up of a VPS for your website, an OVH Load Balancer to ensure SSL/TLS termination, and redirection to a maintenance page with a backup server in the clusters, you would originally have needed one Additional IP per website, routed to your OVH Load Balancer, and one front-end per IP.
 
-With routes, you can share the same front-end, and choose the server farm dynamically, with the “host” field.
+With routes, you can share the same front-end, and choose the server cluster dynamically, with the “host” field.
 
 To do this, you will need:
 
@@ -179,7 +179,7 @@ In practice, to route the domain www.example.com, this would give the following 
 |weight|(empty)|
 |action.type|"farm"|
 |action.status|(empty)|
-|action.target|ID of the farm to direct this domain to|
+|action.target|ID of the cluster to direct this domain to|
 
 And on this route, we will attach a rule:
 
@@ -231,7 +231,7 @@ Finally, apply the configuration.
 
 ### Route depending on a URL and HTTP method.
 
-On some specific infrastructures, certain requests need to be routed to a specific farm. For example, to manage rare but data-intensive requests without impacting production, such as analytical requests that would work from a read-only duplicate of the data with a server that has a higher volume of memory.
+On some specific infrastructures, certain requests need to be routed to a specific cluster. For example, to manage rare but data-intensive requests without impacting production, such as analytical requests that would work from a read-only duplicate of the data with a server that has a higher volume of memory.
 
 If, for example, the request is sent:
 
@@ -246,11 +246,11 @@ In practice, this gives a route like this:
 |---|---|
 |serviceName|Your OVH Load Balancer service ID|
 |frontendId|Your front-end ID|
-|displayName|"Route batch analytics to dedicated farm"|
+|displayName|"Route batch analytics to dedicated cluster"|
 |weight|(empty)|
 |action.type|"farm"|
 |action.status|(empty)|
-|action.target|ID of the farm to direct these operations to|
+|action.target|ID of the cluster to direct these operations to|
 
 And on this route, we will attach two rules:
 
@@ -289,7 +289,7 @@ In practice, we would need two identical routes:
 |weight|(empty)|
 |action.type|"farm"|
 |action.status|(empty)|
-|action.target|Your pre-production farm’s ID|
+|action.target|Your pre-production cluster’s ID|
 
 Then we will attach the following two rules to each of the routes (one rule per route):
 
@@ -309,9 +309,9 @@ The second rule simply tests to see if a cookie exists. It is also possible to t
 
 Next, apply the configuration to the zone concerned.
 
-### Route WebSockets to a dedicated farm.
+### Route WebSockets to a dedicated cluster.
 
-When a website has interactive features based on WebSockets — a chatbot, for example — you may want to direct these connections to a server farm dedicated to this task. This is actually quite simple. When a browser attempts to open a WebSockets connection, it sends a standard HTTP request with these headers:
+When a website has interactive features based on WebSockets — a chatbot, for example — you may want to direct these connections to a server cluster dedicated to this task. This is actually quite simple. When a browser attempts to open a WebSockets connection, it sends a standard HTTP request with these headers:
 
 ```
 Upgrade: websocket
@@ -324,11 +324,11 @@ In this case, only the first header needs to be detected. This can be done very 
 |---|---|
 |serviceName|Your OVH Load Balancer service ID|
 |frontendId|Your front-end ID|
-|displayName|"Route WebSockets to a dedicated farm"|
+|displayName|"Route WebSockets to a dedicated cluster"|
 |weight|(empty)|
 |action.type|"farm"|
 |action.status|(empty)|
-|action.target|ID of the farm dedicated to WebSockets|
+|action.target|ID of the cluster dedicated to WebSockets|
 
 And on this route, we will attach a rule:
 
@@ -383,7 +383,7 @@ With this call, you can create a route. Only the action is mandatory. A route ca
 |weight||Route priority, between 1 (carry out first) and 255 (carry out after the others)|
 |action.type|Required|Name of the action type to execute if all of the rules associated with the route are validated|
 |action.status||HTTP status code for `reject` and `redirect` actions|
-|action.target||ID number of the target farm for `farm` actions, or the URL template for `redirect` actions|
+|action.target||ID number of the target cluster for `farm` actions, or the URL template for `redirect` actions|
 
 The possible action types are listed below:
 
@@ -391,7 +391,7 @@ The possible action types are listed below:
 |---|---|
 |redirect|Redirects a request to `action.target`, with the HTTP `action.status` code|
 |reject|Rejects a request with the HTTP `action.status` code|
-|farm|Routes a request to the farm with the ID entered in `action.target`|
+|farm|Routes a request to the cluster with the ID entered in `action.target`|
 
 For further information on the actions managed and the format of parameters, please read the [Available actions](#available-actions){.internal} section further down.
 
@@ -421,7 +421,7 @@ Answer
 |weight|Priority of your route|
 |action.type|Name of the action type for your route|
 |action.status|Associated HTTP status code|
-|action.target|ID number of the associated farm or URL template|
+|action.target|ID number of the associated cluster or URL template|
 |rules|List of rules that must be validated to trigger the route’s action More detail on this is available in the  [Edit rules](#edit-rules){.internal} section.|
 
 For further information on the actions managed and the format of parameters, please read the [Available actions](#available-actions){.internal} section further down.
@@ -444,7 +444,7 @@ With this call, you can modify an HTTP route if you know its ID. You will need t
 |weight||Route priority, between 1 (carry out first) and 255 (carry out after the others)|
 |action.type|Required|Name of the action type to execute if all of the rules associated with the route are validated|
 |action.status||HTTP status code for `reject` and `redirect` actions|
-|action.target||ID number of the target farm for `farm` actions, or the URL template for `redirect` actions|
+|action.target||ID number of the target cluster for `farm` actions, or the URL template for `redirect` actions|
 
 For further information on the actions managed and the format of parameters, please read the [Available actions](#available-actions){.internal} section further down.
 
@@ -649,7 +649,7 @@ Answer
 
 #### Redirection
 
-This action sends a redirection to the visitor. This redirection type can be configured with the status field. When this action is selected, no farms will receive the request.
+This action sends a redirection to the visitor. This redirection type can be configured with the status field. When this action is selected, no clusters will receive the request.
 
 |Setting|Value|
 |---|---|
@@ -686,7 +686,7 @@ For example, for:
 
 #### Reject.
 
-This action returns an HTTP error status code to the visitor. The HTTP error code can be configured with the status field. When this action is selected, no farms will receive the request.
+This action returns an HTTP error status code to the visitor. The HTTP error code can be configured with the status field. When this action is selected, no clusters will receive the request.
 
 |Setting|Value|
 |---|---|
@@ -716,17 +716,17 @@ Only the HTTP error codes listed in the API can be specified. The most common on
 
 #### Routing.
 
-This action redirects requests to a specific farm, other than the default farm configured on the front-end. The destination farm must be the same type as the front-end ("http" or "tcp").
+This action redirects requests to a specific cluster, other than the default cluster configured on the front-end. The destination cluster must be the same type as the front-end ("http" or "tcp").
 
 |Setting|Value|
 |---|---|
 |type|`farm`|
 |status|not available|
-|target|The destination farm’s ID number. This must be the same type.|
+|target|The destination cluster’s ID number. This must be the same type.|
 
 > [!primary]
 >
-> This action is also available in TCP. In this case, the destination farm type must be "tcp".
+> This action is also available in TCP. In this case, the destination cluster type must be "tcp".
 > 
 
 ### Available rules.
@@ -850,7 +850,7 @@ This rule filters requests depending on their existence, or the value of a speci
 
 #### HTTP header.
 
-This rule filters requests depending on their existence, or the value of a specific HTTP header value. You can use it to detect the opening of a WebSocket connection, and direct it to a dedicated server farm.
+This rule filters requests depending on their existence, or the value of a specific HTTP header value. You can use it to detect the opening of a WebSocket connection, and direct it to a dedicated server cluster.
 
 |Fields|Value|
 |---|---|
@@ -861,7 +861,7 @@ This rule filters requests depending on their existence, or the value of a speci
 
 #### Cookie.
 
-With this rule, you can filter requests depending on the existence or value of a specific HTTP cookie. You can use it to direct voluntary visitors to a pre-production farm.
+With this rule, you can filter requests depending on the existence or value of a specific HTTP cookie. You can use it to direct voluntary visitors to a pre-production cluster.
 
 |Fields|Value|
 |---|---|

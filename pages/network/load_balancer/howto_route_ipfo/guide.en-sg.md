@@ -1,7 +1,7 @@
 ---
 title: 'Routing an Additional IP'
 excerpt: 'Find out how to route an Additional IP and link it to the OVH Load Balancer'
-updated: 2022-10-06
+updated: 2025-07-04
 ---
 
 > [!primary]
@@ -32,12 +32,12 @@ For more information on the OVH Load Balancer solution, you can read our [Introd
 >
 > Once you have confirmed the changes in the list of Additional IPs associated with the Load Balancer, you need to be able to refresh them. Several conditions need to be met for this to work.
 > 
-> - If the Load Balancer is in a vRack, all of the farms must also be in the vRack. The Load Balancer must also have its vLAN. Otherwise, there should not be any farms in a vRack.
+> - If the Load Balancer is in a vRack, all of the clusters must also be in the vRack. The Load Balancer must also have its vLAN. Otherwise, there should not be any clusters in a vRack.
 >
 > - At least one existing front-end. All of the front-ends must be valid. They can be enabled and disabled, with either:
 >    - a valid route (with routing rules)
 >    - a redirection (`redirectLocation`{.action})
->    - a default farm
+>    - a default cluster
 >
 > - Nothing else should be refreshed for the Load Balancer. A Load Balancer cannot be refreshed several times at once. Doing so would not make any changes to the resulting configuration.
 >

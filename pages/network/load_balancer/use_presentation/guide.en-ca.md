@@ -1,7 +1,7 @@
 ---
 title: Introduction to the OVHcloud Load Balancer 
 excerpt: Find out more about the OVHcloud Load Balancer solution 
-updated: 2018-01-17
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ With this new solution, you will get:
 |Basic parts|Function|
 |---|---|
 |Front-end|The front-end defines the protocol type (HTTP/TCP/UDP) of the OVHcloud Load Balancer service. This part also has the service’s listening port|
-|Farm|The farm receives the incoming traffic from the front-end. This part takes care of the load balancing|
+|Cluster|The cluster receives the incoming traffic from the front-end. This part takes care of the load balancing|
 |Server|These are the servers that receive the final traffic, and respond via the application|
 
 With these three basic parts that make up the Load Balancer, you can configure it to use nearly all possible load balancing methods.
@@ -65,13 +65,13 @@ The OVHcloud Load Balancer service can automatically detect when a server is not
 
 #### Scale your infrastructure easily
 
-You can add or remove farms, front-ends or servers from the OVHcloud Load Balancer solution without interrupting your service.
+You can add or remove clusters, front-ends or servers from the OVHcloud Load Balancer solution without interrupting your service.
 
 ![Scale your infrastructure easily](images/facilitate_maintenance.png){.thumbnail}
 
 #### Make maintenance easier
 
-If there is any maintenance scheduled for your solution, you can now easily place a farm in downtime mode to prevent it from receiving traffic. If you need to do this, it’s easy to add your server again once the maintenance has finished.
+If there is any maintenance scheduled for your solution, you can now easily place a cluster in downtime mode to prevent it from receiving traffic. If you need to do this, it’s easy to add your server again once the maintenance has finished.
 
 ![Make maintenance easier](images/scale_easily.png){.thumbnail}
 

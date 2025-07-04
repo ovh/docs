@@ -1,14 +1,14 @@
 ---
 title: 'Working with probes'
 excerpt: 'Find out about the general principles behind probes, and why they are used'
-updated: 2019-02-12
+updated: 2025-07-04
 ---
 
 ## Objective
 
-With the OVH Load Balancer, you can distribute a front-end’s incoming traffic across a set of servers in a destination farm.
+With the OVH Load Balancer, you can distribute a front-end’s incoming traffic across a set of servers in a destination cluster.
 
-There may be instances where a server in your farm becomes unavailable for a number of reasons, including oversaturation, an incident, or scheduled maintenance. When the OVH Load Balancer detects a connection error, it will try to redirect traffic to another server. The connection will be slower, but it will continue to work.
+There may be instances where a server in your cluster becomes unavailable for a number of reasons, including oversaturation, an incident, or scheduled maintenance. When the OVH Load Balancer detects a connection error, it will try to redirect traffic to another server. The connection will be slower, but it will continue to work.
 
 However, the reasons behind certain types of unavailability can be harder to pinpoint. For example, if a new version of code is being deployed, the application may momentarily experience a glitch, and return a 500 error. In this particular case, a solution would be to mark the servers concerned as unavailable in the API before you begin the maintenance work, apply the configuration and update, then mark the server as available again. This method is not ideal, but it works. For more information on deploying a blue-green architecture with an OVH Load Balancer, please read our guide: </pages/network/load_balancer/case_blue_green>.
 
@@ -20,7 +20,7 @@ Since this service is still very new, its basic features are only available in t
 
 ## Requirements
 
-- a correctly configured OVH Load Balancer, with farms and servers set
+- a correctly configured OVH Load Balancer, with clusters and servers set
 
 ## Instructions
 
@@ -28,7 +28,7 @@ Since this service is still very new, its basic features are only available in t
 
 The API for probes in the OVH Load Balancer is designed to be flexible and scalable.
 
-The probes can be configured directly on the farms. All of the servers from a single farm will have exactly the same probe applied. However, probe activation and deactivation is specific for each server. As a result, it is possible to only monitor certain servers within a single farm.
+The probes can be configured directly on the clusters. All of the servers from a single cluster will have exactly the same probe applied. However, probe activation and deactivation is specific for each server. As a result, it is possible to only monitor certain servers within a single cluster.
 
 You can view the list of available probes and their settings with the following API call:
 
@@ -39,7 +39,7 @@ You can view the list of available probes and their settings with the following 
 
 For more information on this call, please read the *Available probes* section at the bottom of this guide.
 
-The probes in this list can be configured on `http` and `tcp` farms via the following calls:
+The probes in this list can be configured on `http` and `tcp` clusters via the following calls:
 
 > [!api]
 >
@@ -67,14 +67,14 @@ For more information on these calls, please read the *Probe configuration* secti
 
 #### Check if the server accepts TCP connections.
 
-This is the simplest method to set up. It is compatible with `tcp` and `http` farms. If no other probes are configured, you can activate it to start. It works by periodically attempting to establish a connection on each of your servers. If the connection fails twice in a row, the server is put aside until it responds again.
+This is the simplest method to set up. It is compatible with `tcp` and `http` clusters. If no other probes are configured, you can activate it to start. It works by periodically attempting to establish a connection on each of your servers. If the connection fails twice in a row, the server is put aside until it responds again.
 
 In practice, this gives a probe:
 
 |Field|Value and description|
 |---|---|
 |serviceName|Your OVH Load Balancer ID|
-|farmId|Your TCP or HTTP farm|
+|farmId|Your TCP or HTTP cluster|
 |probe.type|"tcp"|
 
 All other probe fields can keep their default values. Just apply the configuration to the zone concerned, and the probe will begin to work.
@@ -88,7 +88,7 @@ In practice, if you want to configure the probe to send a "GET" request on [http
 |Field|Value and description|
 |---|---|
 |serviceName|Your OVH Load Balancer ID|
-|farmId|Your TCP or HTTP farm|
+|farmId|Your TCP or HTTP cluster|
 |probe.type|http|
 |probe.method|GET|
 |probe.url|[http://api.example.com/status](http://api.example.com/status){.external}|
@@ -99,7 +99,7 @@ All other probe fields can keep their default values. Finally, apply the configu
 
 #### Use an external HTTP test.
 
-What happens if, for example, your service is an IMAP server that relies on an LDAP server for authentication? The server may accept connections, but experience a temporary connection issue with the LDAP server. If this happens, the customers redirected to this server would be able to connect, but wouldn’t be able to authenticate. As a result, the server would need to be removed from the farm.
+What happens if, for example, your service is an IMAP server that relies on an LDAP server for authentication? The server may accept connections, but experience a temporary connection issue with the LDAP server. If this happens, the customers redirected to this server would be able to connect, but wouldn’t be able to authenticate. As a result, the server would need to be removed from the cluster.
 
 If you are using a `tcp` probe, it will manage to connect. As a result, it will consider the service to be available, even though this is not the case.
 
@@ -110,7 +110,7 @@ For example, in this situation, you can have a HTTP server on port 8080\. It wil
 |Field|Value and description|
 |---|---|
 |serviceName|Your OVH Load Balancer ID|
-|farmId|Your TCP or HTTP farm|
+|farmId|Your TCP or HTTP cluster|
 |probe.type|http|
 |probe.port|8080|
 |probe.method|GET|
@@ -131,7 +131,7 @@ Just apply the configuration to the zone concerned, and the probe will begin to 
 
 ##### Configure a probe.
 
-Probes can be configured on a new farm (`POST`) or an existing one (`PUT`). Since the two methods are equivalent, only the second (`PUT`) method is presented here.
+Probes can be configured on a new cluster (`POST`) or an existing one (`PUT`). Since the two methods are equivalent, only the second (`PUT`) method is presented here.
 
 > [!faq]
 >
@@ -177,7 +177,7 @@ Probes can be configured on a new farm (`POST`) or an existing one (`PUT`). Sinc
 >> >
 >> >> **port**
 >> >>
->> >> > The port that the probe must use, if it is different to the port configured on the farm.
+>> >> > The port that the probe must use, if it is different to the port configured on the cluster.
 >> >> > This enables you to delegate a server’s status validation to a separate service on the machine, and carry out arbitrary probes.
 >> >
 >> >> **method**
@@ -203,21 +203,21 @@ Probes can be configured on a new farm (`POST`) or an existing one (`PUT`). Sinc
 >> >
 >> >> **forceSsl**
 >> >>
->> >> > This defines whether the probe must work in SSL/TLS, even if the farm is configured to connect via standard TCP.
+>> >> > This defines whether the probe must work in SSL/TLS, even if the cluster is configured to connect via standard TCP.
 >> >> > This can be useful when, for example, your OVH Load Balancer is configured to monitor HTTPS traffic in TCP without decrypting it.
 >
 
 Other settings can be edited via this call. Since this guide focuses on probes, they are not documented here.
 
-If a port other than the farm’s base port is configured on the probe, the `proxyprotocol` and `ssl` settings are reset. As an example, we will take a configured farm to use `proxyprotocol` on **port 4242**, and an associated probe using **port 8080**. The probe will not send the `proxyprotocol` header when it connects on **port 8080**. The same goes for `ssl`, but it can be forced.
+If a port other than the cluster’s base port is configured on the probe, the `proxyprotocol` and `ssl` settings are reset. As an example, we will take a configured cluster to use `proxyprotocol` on **port 4242**, and an associated probe using **port 8080**. The probe will not send the `proxyprotocol` header when it connects on **port 8080**. The same goes for `ssl`, but it can be forced.
 
 > [!warning]
 >
-> When a probe is configured on a farm, it must be activated on the servers.
+> When a probe is configured on a cluster, it must be activated on the servers.
 > 
 
 ##### Activate probes on a server.
-For a probe to be active, it must be configured on the farm and activated on the servers concerned. With this call, you can activate the probe being taken into account:
+For a probe to be active, it must be configured on the cluster and activated on the servers concerned. With this call, you can activate the probe being taken into account:
 
 > [!faq]
 >
@@ -348,7 +348,7 @@ This probe attempts to establish a HTTP connection to the server. If the server 
 |URL|URL in the form: \[\[https?://]www.example.com]/path/to/check|
 |matches|`default`, `contains` or `matches`|
 
-If the URL is specified, the domain name and protocol are operational. If a domain name is specified, the “Host” field of the request will be filled in, and the request will be sent to HTTP/1.1. If the protocol is specified, it must be consistent with the farm’s SSL configuration.
+If the URL is specified, the domain name and protocol are operational. If a domain name is specified, the “Host” field of the request will be filled in, and the request will be sent to HTTP/1.1. If the protocol is specified, it must be consistent with the cluster’s SSL configuration.
 
 > [!primary]
 >
@@ -406,9 +406,9 @@ This probe attempts to establish a TCP connection on port 79 of your server, and
 
 ## Via the OVH Control Panel.
 
-You can configure probes when you add (or modify) a server farm, in advanced settings.
+You can configure probes when you add (or modify) a server cluster, in advanced settings.
 
-![Advanced settings for a farm](images/farm_advanced_settings.png){.thumbnail}
+![Advanced settings for a cluster](images/farm_advanced_settings.png){.thumbnail}
 
 This is how you access the probe type’s configuration.
 

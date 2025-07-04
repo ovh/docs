@@ -1,7 +1,7 @@
 ---
 title: Configuring the vRack on the load balancer
 excerpt: How to configure vRack on a Load Balancer
-updated: 2022-04-04
+updated: 2025-07-04
 ---
 
 ## Introduction
@@ -14,7 +14,7 @@ Before starting, if you haven't read it yet, we advise you to read the general p
 
 > [!warning]
 >
-> Warning, once linked to your vRack, the farms of your Load Balancer will be unable to communicate with your servers via their public IP addresses. You will then be forced to use their private IP address inside the vRack.***
+> Warning, once linked to your vRack, the clusters of your Load Balancer will be unable to communicate with your servers via their public IP addresses. You will then be forced to use their private IP address inside the vRack.***
 >
 
 ## Listing Load Balancer services eligible for vRack
@@ -67,7 +67,7 @@ Example configuration :
 
 The natIp beach must of course be contained in your subnet.
 
-Once your network is created, you will need to retrieve its `vrackNetworkId` for the configuration of your farms.
+Once your network is created, you will need to retrieve its `vrackNetworkId` for the configuration of your clusters.
 
 To find out the minimum range size to be assigned to natIp, an API call is available.
 
@@ -76,9 +76,9 @@ To find out the minimum range size to be assigned to natIp, an API call is avail
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/networkCreationRules
 >
 
-## Setting up a farm linked to a vRack
+## Setting up a cluster linked to a vRack
 
-You can now create your server farm in the vRack. To do so, configure your TCP or HTTP farm as usual and simply fill in the `vrackNetworkId` you previously obtained in the field of the same name.
+You can now create your server cluster in the vRack. To do so, configure your TCP or HTTP cluster as usual and simply fill in the `vrackNetworkId` you previously obtained in the field of the same name.
 
 > [!api]
 >

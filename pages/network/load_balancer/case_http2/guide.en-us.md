@@ -1,7 +1,7 @@
 ---
 title: Configuring HTTP/2 on an OVHcloud Load Balancer service
 excerpt: Configuring HTTP/2 on an OVHcloud Load Balancer service
-updated: 2018-01-15
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -15,7 +15,7 @@ ALPN (Application-Layer Protocol Negotiation) is a TLS extension that enables th
 ## Requirements
 
 - You need to have created a TCP front-end.
-- You need to have created a TCP farm, with servers added to it.
+- You need to have created a TCP cluster, with servers added to it.
 
 ## Instructions
 
@@ -54,7 +54,7 @@ We will add a route to our service.
 >> >>
 >> >> **target**
 >> >> >
->> >> > `<ID of your TCP farm that must manage the HTTP/2>`
+>> >> > `<ID of your TCP cluster that must manage the HTTP/2>`
 >> >
 >> > **frontendId**
 >> >

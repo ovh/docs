@@ -1,7 +1,7 @@
 ---
 title: 'Deploying a blue-green infrastructure'
 excerpt: 'This guide will show you how to deploy a blue-green infrastructure with the OVH Load Balancer'
-updated: 2019-02-25
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -50,13 +50,13 @@ The diagram below gives a general idea of the architecture:
 
 ### Infrastructure A.
 
-This infrastructure is made up of a server farm that will later be associated with a front-end of your IP Load Balancer. This farm will expose an HTTP, TCP or UDP service to the front-end. It also balances loads by sending the front-end’s incoming traffic to the servers. For more detail on the role of various component of the OVH Load Balancer service, you can read the following guide: [Introduction to the OVH Load Balancer](/pages/network/load_balancer/use_presentation).
+This infrastructure is made up of a server cluster that will later be associated with a front-end of your IP Load Balancer. This cluster will expose an HTTP, TCP or UDP service to the front-end. It also balances loads by sending the front-end’s incoming traffic to the servers. For more detail on the role of various component of the OVH Load Balancer service, you can read the following guide: [Introduction to the OVH Load Balancer](/pages/network/load_balancer/use_presentation).
 
-In our scenario, we will declare a farm of servers for the HTTP service. Please note that you can create as many farms (as well as TCP and/or UDP services) as are required for your final service to be exposed to your customers.
+In our scenario, we will declare a cluster of servers for the HTTP service. Please note that you can create as many clusters (as well as TCP and/or UDP services) as are required for your final service to be exposed to your customers.
 
 #### Via the OVH Control Panel:
 
-![Add a new HTTP farm dedicated to infrastructure A](images/ferme1.png){.thumbnail}
+![Add a new HTTP cluster dedicated to infrastructure A](images/ferme1.png){.thumbnail}
 
 #### Via the API:
 
@@ -69,7 +69,7 @@ In our scenario, we will declare a farm of servers for the HTTP service. Please 
 |---|---|
 |serviceName|Your Load Balancer service ID|
 
-With the additional calls listed below, you can list, modify and delete your server farms respectively.
+With the additional calls listed below, you can list, modify and delete your server clusters respectively.
 
 > [!api]
 >
@@ -86,11 +86,11 @@ With the additional calls listed below, you can list, modify and delete your ser
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm
 > 
 
-Associate a server with your farm, if it is a physical server hosting your production infrastructure. The service exposed to the front-end is supplied by the server’s port 8080. Please note that you can associate one or more servers with each farm (to balance the load and/or offer higher fault tolerance, for ex.).
+Associate a server with your cluster, if it is a physical server hosting your production infrastructure. The service exposed to the front-end is supplied by the server’s port 8080. Please note that you can associate one or more servers with each cluster (to balance the load and/or offer higher fault tolerance, for ex.).
 
 #### Via the OVH Control Panel:
 
-![Add a new server to the farm HTTP A](images/serveur1.png){.thumbnail}
+![Add a new server to the cluster HTTP A](images/serveur1.png){.thumbnail}
 
 ![Enter the HTTP A server’s configuration](images/server1.png){.thumbnail}
 
@@ -104,10 +104,10 @@ Associate a server with your farm, if it is a physical server hosting your produ
 |Setting|Required|Meaning|Example|
 |---|---|---|---|
 |serviceName|Required|Your Load Balancer service ID|loadbalancer-abcdef0123456789|
-|farmId|Required|Your server farm ID|77212|
+|farmId|Required|Your server cluster ID|77212|
 |address|Required|Your server's IPv4 address|10.10.1.100|
-|displayName||The name of the server associated with your farm|HTTP A server|
-|port||The server port associated with your farm|8080|
+|displayName||The name of the server associated with your cluster|HTTP A server|
+|port||The server port associated with your cluster|8080|
 
 With the additional calls listed below, you can list, modify and delete your servers respectively.
 
@@ -128,15 +128,15 @@ With the additional calls listed below, you can list, modify and delete your ser
 
 ### Infrastructure B.
 
-Functionally, this second infrastructure is identical to the first. It is also composed of a server farm that will later be associated with a second front-end of your IP Load Balancer. This server farm exposes the same service to the front-end as the first server farm. This service is supplied on the servers by port 8080.
+Functionally, this second infrastructure is identical to the first. It is also composed of a server cluster that will later be associated with a second front-end of your IP Load Balancer. This server cluster exposes the same service to the front-end as the first server cluster. This service is supplied on the servers by port 8080.
 
-Deploy the server farm for the HTTP service (and/or any other TCP or UDP services required for your final service to be exposed to your customers).
+Deploy the server cluster for the HTTP service (and/or any other TCP or UDP services required for your final service to be exposed to your customers).
 
 #### Via the Sunrise Control Panel:
 
-![Add a new HTTP farm dedicated to infrastructure B](images/ferme2.png){.thumbnail}
+![Add a new HTTP cluster dedicated to infrastructure B](images/ferme2.png){.thumbnail}
 
-![Create a second farm dedicated to infrastructure B](images/backend2.png){.thumbnail}
+![Create a second cluster dedicated to infrastructure B](images/backend2.png){.thumbnail}
 
 #### Via the API:
 
@@ -149,11 +149,11 @@ Deploy the server farm for the HTTP service (and/or any other TCP or UDP service
 |---|---|
 |serviceName|Your Load Balancer service ID|
 
-Associate a server with your farm. Here, it involves one or more physical servers hosting your development infrastructure.
+Associate a server with your cluster. Here, it involves one or more physical servers hosting your development infrastructure.
 
 #### Via the OVH Control Panel:
 
-![Add a new server to the farm HTTP B](images/serveur2.png){.thumbnail}
+![Add a new server to the cluster HTTP B](images/serveur2.png){.thumbnail}
 
 ![Enter the HTTP B server’s configuration](images/server2.png){.thumbnail}
 
@@ -167,18 +167,18 @@ Associate a server with your farm. Here, it involves one or more physical server
 |Setting|Required|Meaning|Example|
 |---|---|---|---|
 |serviceName|Required|Your Load Balancer service ID|loadbalancer-abcdef0123456789|
-|farmId|Required|Your server farm ID|77213|
+|farmId|Required|Your server cluster ID|77213|
 |address|Required|Your server's IPv4 address|10.10.2.100|
-|displayName||The name of the server associated with your farm|HTTP B server|
-|port||The server port associated with your farm|8080|
+|displayName||The name of the server associated with your cluster|HTTP B server|
+|port||The server port associated with your cluster|8080|
 
-At this stage, here is the configuration status for your two farms:
+At this stage, here is the configuration status for your two clusters:
 
 ![Farm configuration](images/farms.png){.thumbnail}
 
 ## Front-ends.
 
-The magic of `blue-green`{.action} deployment lies in the configuration of your front-ends. At this stage, we have configure two functionally identical infrastructures. For both infrastructures, you have declared one or more server farms, each with their own set of associated servers.
+The magic of `blue-green`{.action} deployment lies in the configuration of your front-ends. At this stage, we have configure two functionally identical infrastructures. For both infrastructures, you have declared one or more server clusters, each with their own set of associated servers.
 
 To switch simply from one infrastructure to another, we will use front-ends.
 
@@ -186,7 +186,7 @@ To do this, we need to declare two front-ends. The first one will give you acces
 
 > [!warning]
 >
-> If the final service you expose to your customers requires several server farms (e.g. ports 80 and 443), you will need to declare a `front-end`{.action} for each of your farms.
+> If the final service you expose to your customers requires several server clusters (e.g. ports 80 and 443), you will need to declare a `front-end`{.action} for each of your clusters.
 > 
 
 ### Blue front-end.
@@ -208,7 +208,7 @@ This `front-end`{.action} is dedicated to accessing the production infrastructur
 |Setting|Required|Meaning|Example|
 |---|---|---|---|
 |serviceName|Required|Your Load Balancer service ID|loadbalancer-abcdef0123456789|
-|defaultFarmId||Your production farm’s ID|77212|
+|defaultFarmId||Your production cluster’s ID|77212|
 |displayName||The name given to the front-end|Blue front-end|
 |port|Required|The port exposed to your customers by your front-end|80|
 |zone|Required|The zone in which you want to deploy your front-end|all|
@@ -233,7 +233,7 @@ This `front-end`{.action} is dedicated to accessing the development infrastructu
 |Setting|Required|Meaning|Example|
 |---|---|---|---|
 |serviceName|Required|Your Load Balancer service ID|loadbalancer-abcdef0123456789|
-|defaultFarmId||Your production farm’s ID|77213|
+|defaultFarmId||Your production cluster’s ID|77213|
 |displayName||The name given to the front-end|Green front-end|
 |port|Required|The port exposed to your customers by your front-end|8888|
 |zone|Required|The zone in which you want to deploy your front-end|all|
@@ -263,16 +263,16 @@ Once you have finished configuring the components of the OVH Load Balancer servi
 
 At this stage, our initial environment is deployed and ready to use. How do we use it?
 
-To put it simply, you just need to switch over your front-ends from one server farm to another.
+To put it simply, you just need to switch over your front-ends from one server cluster to another.
 
 Let’s take a look at our scenario:
 
-- The production infrastructure (A) is deployed on `HTTP farm A`{.action} (id 77212), which in turn is attached to `HTTP server A`{.action}. This infrastructure can be accessed through the `blue front-end`{.action}.
-- The development infrastructure (B) is deployed on `HTTP farm B`{.action} (id 77213), which in turn is attached to `HTTP server B`{.action}. This infrastructure can be accessed through the `green front-end`{.action}.
+- The production infrastructure (A) is deployed on `HTTP cluster A`{.action} (id 77212), which in turn is attached to `HTTP server A`{.action}. This infrastructure can be accessed through the `blue front-end`{.action}.
+- The development infrastructure (B) is deployed on `HTTP cluster B`{.action} (id 77213), which in turn is attached to `HTTP server B`{.action}. This infrastructure can be accessed through the `green front-end`{.action}.
 
 Once you have modified/applied updates to `infrastructure B`{.action} and checked that the service is working properly, you decide to put it into production.
 
-To switch between the two farms, you can simply update your different front-ends by modifying the ID of the farm it is attached to, and applying the modification.
+To switch between the two clusters, you can simply update your different front-ends by modifying the ID of the cluster it is attached to, and applying the modification.
 
 The `blue front-end`{.action} (id 70089) will then be associated with `Farm B`{.action} (infrastructure B, new production, id 77213).
 
@@ -293,7 +293,7 @@ This should be the result on the Sunrise Control Panel after updating the front-
 |---|---|---|
 |serviceName|Your Load Balancer service ID|loadbalancer-abcdef0123456789|
 |frontendId|Your production front-end ID|70089|
-|defaultFarmId|Your development server farm ID|77213|
+|defaultFarmId|Your development server cluster ID|77213|
 
 > [!api]
 >
@@ -304,7 +304,7 @@ This should be the result on the Sunrise Control Panel after updating the front-
 |---|---|---|
 |serviceName|Your Load Balancer service ID|loadbalancer-abcdef0123456789|
 |frontendId|Your production front-end ID|70090|
-|defaultFarmId|Your development server farm ID|77212|
+|defaultFarmId|Your development server cluster ID|77212|
 
 #### To apply your changes and effectively switch over the production and development environments:
 
@@ -323,6 +323,6 @@ You now have an infrastructure you can use to simply and efficiently manage `blu
 
 Developers have access to a development environment on port 8888 (or whichever other port you would prefer to define), while your customers continue to access the service in production via the standard HTTP port (80 in our case, for example).
 
-The infrastructure presented here is limited to just one port, but it can be expanded by adding other ports. For example, you can also expose your website on the standard HTTPS port (443). You can do this by defining new farms dedicated to each port you want to expose, and associating them with their corresponding front-ends (one for the standard port exposed in production, the second for the arbitrary port dedicated to development).
+The infrastructure presented here is limited to just one port, but it can be expanded by adding other ports. For example, you can also expose your website on the standard HTTPS port (443). You can do this by defining new clusters dedicated to each port you want to expose, and associating them with their corresponding front-ends (one for the standard port exposed in production, the second for the arbitrary port dedicated to development).
 
-Another way to consolidate your infrastructure even further is by multiplying the servers attached to your farms. This way, you can make your services more redundant (guaranteeing availability as a result), and also add a load balancing capacity.
+Another way to consolidate your infrastructure even further is by multiplying the servers attached to your clusters. This way, you can make your services more redundant (guaranteeing availability as a result), and also add a load balancing capacity.

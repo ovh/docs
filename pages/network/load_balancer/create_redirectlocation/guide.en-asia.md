@@ -2,7 +2,7 @@
 title: 'Working with redirections'
 universe: cloud
 excerpt: 'Integrate your web services behind a Load Balancer with redirections'
-updated: 2021-02-05
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -43,7 +43,7 @@ You can either do this on a new front-end as you create it, or on an existing fr
 
 In the `Front-ends`{.action} section of the OVH Control Panel, click on `Add a front-end`{.action} to create a new one.
 
-In the editing page for a front-end, select `HTTP`{.action} or `HTTPS`{.action} protocol. Configure the information as requested. However, please note that there is no need to set a `Default farm`{.action}, as it will not be used.
+In the editing page for a front-end, select `HTTP`{.action} or `HTTPS`{.action} protocol. Configure the information as requested. However, please note that there is no need to set a `Default cluster`{.action}, as it will not be used.
 
 In the advanced settings, enter the `HTTP redirection`{.action}.
 
@@ -51,7 +51,7 @@ In the advanced settings, enter the `HTTP redirection`{.action}.
 
 In the `Front-ends`{.action} section of the OVH Control Panel, select the front-end you would like to edit. To do this, click the `...`{.action} button, then select `Edit`{.action} in the menu that appears. Please ensure that the front-end you have chosen uses either `HTTP` or `HTTPS` protocol.
 
-In the editing page for the front-end, complete the configuration if needed. However, please note that there is no need to set a `Default farm`{.action}, as it will not be used.
+In the editing page for the front-end, complete the configuration if needed. However, please note that there is no need to set a `Default cluster`{.action}, as it will not be used.
 
 In the advanced settings, enter the `HTTP redirection`{.action}.
 

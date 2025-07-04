@@ -1,7 +1,7 @@
 ---
 title: 'ProxyProtocol get Source IP'
 excerpt: 'Get real visitor IP using OVH Load Balancer with ProxyProtocol'
-updated: 2018-10-12
+updated: 2025-07-04
 ---
 
 ## Introduction
@@ -76,7 +76,7 @@ You can't use ProxyProtocol and HTTP on the same port, and theses protocols aren
 ## Configuration
 
 ### Add backends
-Create a new farm for each port on backend.
+Create a new cluster for each port on backend.
 
 > [!api]
 >

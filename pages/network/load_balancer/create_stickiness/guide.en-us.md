@@ -1,7 +1,7 @@
 ---
 title: 'Tracking connections'
 excerpt: 'This guide will show you a number of ways you can track connections on the OVH Load Balancer.'
-updated: 2021-02-05
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -27,31 +27,31 @@ There are two main connection tracking methods that can be configured on your se
 
 |Tracking connections|Details|
 |---|---|
-|Cookie|Configures a session cookie, which will be used to distribute traffic from a single HTTP session to the same server in the farm.|
+|Cookie|Configures a session cookie, which will be used to distribute traffic from a single HTTP session to the same server in the cluster.|
 |SourceIp|A hash algorithm will be applied to the source IP address of the request received by the OVH Load Balancer.
 
 The following elements will affect traffic redirection:
 
 - if the configured weight changes
-- if a server in the farm is re-enabled
-- if a server in the farm is no longer responding
+- if a server in the cluster is re-enabled
+- if a server in the cluster is no longer responding
 
 > [!warning]
 >
 > Once you have refreshed your configuration, the connections will be rebalanced, and your HTTP sessions will be lost as a result.
 > 
 
-### Modify a server farm’s connection tracking method via the OVH Control Panel.
+### Modify a server cluster’s connection tracking method via the OVH Control Panel.
 
-To modify connection tracking for a farm, you need to edit it by going to the `Server clusters`{.action} section (*1* on the screenshot below), then click the `...`{.action} edit button (*2* on the screenshot below) for the farm you want to edit, and click `Edit`{.action} (*3* on the screenshot below):
+To modify connection tracking for a cluster, you need to edit it by going to the `Server clusters`{.action} section (*1* on the screenshot below), then click the `...`{.action} edit button (*2* on the screenshot below) for the cluster you want to edit, and click `Edit`{.action} (*3* on the screenshot below):
 
-![Modify a farm](images/farm_edit.png){.thumbnail}
+![Modify a cluster](images/farm_edit.png){.thumbnail}
 
 In the `Advanced settings`, you will be able to access the `Track session` section:
 
 ![Modifying connection tracking](images/tracking_session.png){.thumbnail}
 
-Once you have configured the farm, click `Add`{.action} or `Edit`{.action}, depending on whether you are configuring a new or existing farm.
+Once you have configured the cluster, click `Add`{.action} or `Edit`{.action}, depending on whether you are configuring a new or existing cluster.
 Please remember to deploy the configuration.
 
 There are two ways of doing this:
@@ -62,11 +62,11 @@ There are two ways of doing this:
 
 ![Apply a Load Balancer configuration](images/apply_configuration.png){.thumbnail}
 
-### Modify a server farm’s connection tracking method via the API.
+### Modify a server cluster’s connection tracking method via the API.
 
-#### View details on a server farm.
+#### View details on a server cluster.
 
-With this call instruction, you can view details on a server farm if you know its ID. In this example, we will work on a HTTP farm.
+With this call instruction, you can view details on a server cluster if you know its ID. In this example, we will work on a HTTP cluster.
 
 > [!api]
 >
@@ -76,21 +76,21 @@ With this call instruction, you can view details on a server farm if you know it
 |Setting|Meaning|
 |---|---|
 |serviceName*|Your Load Balancer service ID|
-|farmId*|The farm’s ID number|
+|farmId*|The cluster’s ID number|
 
 |Response (BackendHttp)|Meaning|
 |---|---|
-|farmId|The farm’s ID number|
-|balance|Balance type currently enabled for the farm|
-|zone|Name of the zone in which the farm is configured|
-|port|Port used to contact the servers configured on the farm|
-|probe|Type of probe currently configured on the farm|
-|displayName|Name given to this farm|
-|stickiness|Connection tracking method currently set for the farm|
+|farmId|The cluster’s ID number|
+|balance|Balance type currently enabled for the cluster|
+|zone|Name of the zone in which the cluster is configured|
+|port|Port used to contact the servers configured on the cluster|
+|probe|Type of probe currently configured on the cluster|
+|displayName|Name given to this cluster|
+|stickiness|Connection tracking method currently set for the cluster|
 
-#### Modify a server farm’s connection tracking method.
+#### Modify a server cluster’s connection tracking method.
 
-With this call instruction, you can edit the settings of a server farm if you know its ID. In this example, we will work on a HTTP farm. To modify the tracking method, the BackendHttp.stickiness field must be updated with an available connection tracking method:
+With this call instruction, you can edit the settings of a server cluster if you know its ID. In this example, we will work on a HTTP cluster. To modify the tracking method, the BackendHttp.stickiness field must be updated with an available connection tracking method:
 
 > [!api]
 >
@@ -100,8 +100,8 @@ With this call instruction, you can edit the settings of a server farm if you kn
 |Setting|Meaning|
 |---|---|
 |serviceName*|Your Load Balancer service ID|
-|farmId*|The farm’s ID number|
-|BackendHttp.stickiness|Connection tracking method chosen for the farm|
+|farmId*|The cluster’s ID number|
+|BackendHttp.stickiness|Connection tracking method chosen for the cluster|
 
 #### Apply the modifications.
 

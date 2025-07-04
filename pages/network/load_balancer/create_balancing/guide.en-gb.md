@@ -1,7 +1,7 @@
 ---
 title: Load balancing methods
 excerpt: Find out about the various load balancing methods used by the OVH Load Balancer
-updated: 2018-01-17
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -13,13 +13,13 @@ The new OVH Load Balancer service offers a variety of load balancing methods for
 ## Requirements
 
 - You must be logged in to the [OVH Control Panel](/links/manager).
-- You need to have created a server farm.
+- You need to have created a server cluster.
 
 ## Instructions
 
 ### Different load balancing methods
 
-Load balancing is used in server farms. This setting defines the way that requests are distributed between the servers within the farm.
+Load balancing is used in server clusters. This setting defines the way that requests are distributed between the servers within the cluster.
 
 To understand the basics of the OVH Load Balancer service, please refer to the [Load Balancer Introduction](/pages/network/load_balancer/use_presentation){.external}.
 
@@ -31,27 +31,27 @@ To understand the basics of the OVH Load Balancer service, please refer to the [
 |Source|This algorithm *hashes* the source IP address, then divides the result by the number of servers currently running. The same source IP address will then still be redirected to the same server, provided that it continues to run.|
 |URI|This algorithm *hashes* part or all of the URI, then divides the result by the number of servers currently running. The same URI will then still be redirected to the same server, provided that it continues to run.|
 
-### Modify a server farm’s load balancing method via the Control Panel
+### Modify a server cluster’s load balancing method via the Control Panel
 
-- In the `Server farms`{.action} section (1), you will see the farms that have been created. You can edit them by clicking the three dots on the right-hand side (2), then `Change`{.action}:
+- In the `Server clusters`{.action} section (1), you will see the clusters that have been created. You can edit them by clicking the three dots on the right-hand side (2), then `Change`{.action}:
 
-![Modify a farm](images/server_cluster_change.png){.thumbnail}
+![Modify a cluster](images/server_cluster_change.png){.thumbnail}
 
 In `Advanced settings`{.action}, you can modify your `Load balancing method`{.action}:
 
-![Modify a farm](images/distrib_mode_edit.png){.thumbnail}
+![Modify a cluster](images/distrib_mode_edit.png){.thumbnail}
 
 Once you have selected your preferred load balancing method, click `Update`{.action}, then `Apply configuration`{.action} in the yellow banner that appears:
 
 ![Apply configuration](images/apply_config.png){.thumbnail}
 
-### Modify a server farm’s load balancing method via the API
+### Modify a server cluster’s load balancing method via the API
 
-You can modify the load balancing method settings by editing them in the server farm.
+You can modify the load balancing method settings by editing them in the server cluster.
 
-- View details on a server farm
+- View details on a server cluster
 
-With this call instruction, you can view details on a server farm if you know its ID.  In this example, we will work on an HTTP farm:
+With this call instruction, you can view details on a server cluster if you know its ID.  In this example, we will work on an HTTP cluster:
 
 > [!api]
 >
@@ -61,21 +61,21 @@ With this call instruction, you can view details on a server farm if you know it
 |Setting|Meaning|
 |---|---|
 |ServiceName*|Your Load Balancer service ID|
-|farmId*|The farm’s ID number|
+|farmId*|The cluster’s ID number|
 
 |Response (BackendHttp)|Meaning|
 |---|---|
-|farmId|The farm’s ID number|
-|balance|Balance type currently set for the farm|
-|zone|Name of the zone in which the farm is configured|
-|port|Port used to contact the servers configured on the farm|
-|probe|Type of probe currently configured on the farm|
-|displayName|Name given to this farm|
-|stickiness|Connection monitoring method currently set for the farm|
+|farmId|The cluster’s ID number|
+|balance|Balance type currently set for the cluster|
+|zone|Name of the zone in which the cluster is configured|
+|port|Port used to contact the servers configured on the cluster|
+|probe|Type of probe currently configured on the cluster|
+|displayName|Name given to this cluster|
+|stickiness|Connection monitoring method currently set for the cluster|
 
-- Modify a server farm’s load balancing method
+- Modify a server cluster’s load balancing method
 
-With this call instruction, you can edit the settings of a server farm if you know its ID.  In this example, we will work on an HTTP farm. To modify the balancing method, the `BackendHttp.balance` field must be updated with an available balancing method:
+With this call instruction, you can edit the settings of a server cluster if you know its ID.  In this example, we will work on an HTTP cluster. To modify the balancing method, the `BackendHttp.balance` field must be updated with an available balancing method:
 
 > [!api]
 >
@@ -85,8 +85,8 @@ With this call instruction, you can edit the settings of a server farm if you kn
 |Setting|Meaning|
 |---|---|
 |ServiceName*|Your Load Balancer service ID|
-|farmId*|The farm’s ID number|
-|BackendHttp.balance|Preferred balancing method for this farm|
+|farmId*|The cluster’s ID number|
+|BackendHttp.balance|Preferred balancing method for this cluster|
 
 - Apply the modifications
 

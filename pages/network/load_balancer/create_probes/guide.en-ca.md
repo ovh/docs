@@ -1,7 +1,7 @@
 ---
 title: 'Working with probes'
 excerpt: 'Find out about the general principles behind probes, and why they are used'
-updated: 2019-02-12
+updated: 2025-07-04
 ---
 
 ## Objective

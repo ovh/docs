@@ -1,7 +1,7 @@
 ---
 title: Working with zones
 excerpt: Use zones to increase availability and decrease latency
-updated: 2022-04-04
+updated: 2025-07-04
 ---
 
 ## Introduction
@@ -68,13 +68,13 @@ This special `all` zone will allow you to deploy the same configuration on all z
 
 If the goal is to reduce latency, we can imagine directing requests coming from the zone1 load balancer to backend servers geographically close to zone1, and similarly, directing requests coming from the zone2 load balancer to backend servers close to zone2.
 
-To achieve this, you need to specify a frontend in each zone that uses a farm in the same zone.
-This will allow us to declare backend servers in different farms per zone and to control which backend servers are used in which zone.
+To achieve this, you need to specify a frontend in each zone that uses a cluster in the same zone.
+This will allow us to declare backend servers in different clusters per zone and to control which backend servers are used in which zone.
 
-![Operation with several zones and several farms](images/multi_zones_multi_backends.png){.thumbnail}
+![Operation with several zones and several clusters](images/multi_zones_multi_backends.png){.thumbnail}
 
 For example, if we have backend servers in the data centers of Gravelines (gra) and Beauharnois (bhs),
 you can order a Load Balancer service in the `gra` and `bhs` areas and configure :
 
-- A frontend in the gra zone with as default farm in the gra zone which contains servers in the Gravelines datacenter
-- A frontend in the bhs zone with a default farm in the bhs zone that contains servers in the Beauharnois datacenter
+- A frontend in the gra zone with as default cluster in the gra zone which contains servers in the Gravelines datacenter
+- A frontend in the bhs zone with a default cluster in the bhs zone that contains servers in the Beauharnois datacenter

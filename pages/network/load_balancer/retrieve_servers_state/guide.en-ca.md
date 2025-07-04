@@ -6,15 +6,15 @@ updated: 2022-03-29
 ---
 
 ## Presentation
-The OVH Load Balancer service acts by default as a proxy. That is to say that it distributes the load (requests) it receives between all the servers of the desired farm.
+The OVH Load Balancer service acts by default as a proxy. That is to say that it distributes the load (requests) it receives between all the servers of the desired cluster.
 
 Each server can be configured for the load balancer to check its status frequently.
 
 Once a server is detected as "down", the load balancer no longer sends any data to it and distributes the load among the remaining servers.
 
-This can be practical in the case of server maintenance: you can take the server out of the farm, perform maintenance and then reintegrate it into the farm.
+This can be practical in the case of server maintenance: you can take the server out of the cluster, perform maintenance and then reintegrate it into the cluster.
 
-However, when a server is removed from the farm by the load balancer beyond our control, it can be interesting to know about it and why.
+However, when a server is removed from the cluster by the load balancer beyond our control, it can be interesting to know about it and why.
 
 This tutorial explains how to know the health status of each server for each instance of your OVH Load Balancer.
 

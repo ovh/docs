@@ -1,20 +1,20 @@
 ---
 title: 'Configuring a HTTP/HTTPS OVH Load Balancer service'
 excerpt: 'Find out how to configure an OVH Load Balancer service'
-updated: 2023-11-22
+updated: 2025-07-04
 ---
 
 ## Objective
 
 The purpose of this guide is to help you create your first HTTP/HTTPS service with the new OVHcloud Load Balancer solution. Here, we will set up a basic OVHcloud Load Balancer service configuration to balance the HTTP load for a service like a website.
 
-A front-end will be created to listen on port 80, while another listens on port 443 with an SSL/TLS certificate. These front-ends will be configured to direct their traffic to a common HTTP farm. This farm can have one or more servers, depending on the configuration you have chosen/adapted.
+A front-end will be created to listen on port 80, while another listens on port 443 with an SSL/TLS certificate. These front-ends will be configured to direct their traffic to a common HTTP cluster. This cluster can have one or more servers, depending on the configuration you have chosen/adapted.
 
 As a reminder, the OVHcloud Load Balancer has four primary components:
 
 - `front-ends`
 - server `farms` and their `servers`
-- the advanced `routes` between the front-ends and server farms
+- the advanced `routes` between the front-ends and server clusters
 - `SSL/TLS` connections that can encrypt TCP and/or HTTP connections
 
 **This guide will show you how to configure an OVHcloud Load Balancer Service.**
@@ -22,7 +22,7 @@ As a reminder, the OVHcloud Load Balancer has four primary components:
 ## Requirements
 
 - an OVHcloud Load Balancer
-- the ability to add and configure a farm, a server, a front-end and an SSL certificate
+- the ability to add and configure a cluster, a server, a front-end and an SSL certificate
 
 ## Introduction
 
@@ -35,7 +35,7 @@ If you have not done so already, we recommend reading a general introduction to 
 
 > [!warning]
 >
-> The order in which elements are created is important. In particular, the server farms must be configured before we can attach an SSL/TLS certificate or servers to them. The front-ends must be configured after the server farms in order to configure the front-end’s default farm.
+> The order in which elements are created is important. In particular, the server clusters must be configured before we can attach an SSL/TLS certificate or servers to them. The front-ends must be configured after the server clusters in order to configure the front-end’s default cluster.
 > 
 
 In the control panel of the load balancer, you will see the features detailed below:
@@ -53,31 +53,31 @@ Similarly, this can be done via the OVHcloud API, in the section:
 
 For more information on the API’s features, you can consult the following guide: [Load Balancer API Quick Reference](/pages/network/load_balancer/use_api_reference){.ref}
 
-## Add a server farm.
+## Add a server cluster.
 
-We will add a farm of HTTP servers to our service, which is the part that balances traffic on the servers.
+We will add a cluster of HTTP servers to our service, which is the part that balances traffic on the servers.
 
 ### Via the OVHCloud Control Panel.
 
 Log into the [OVHcloud Control Panel](/links/manager), click `Network`{.action} in the left-hand menu, then `Load Balancer`. Click on your load balancer service.
 
-In the `Server farms`{.action} tab, click on the `Add a server farm`{.action} button.
+In the `Server clusters`{.action} tab, click on the `Add a server cluster`{.action} button.
 
 Fill in the fields. The only mandatory fields for a basic configuration are *Protocol* and *Datacentre*. We recommend explicitly defining a *Port* (generally port 80 for a web service). If no ports are specified, your OVHcloud Load Balancer will automatically use the same port as the corresponding front-end, and the probes will not be able to work as intended.
 
-If you add several servers to your farm, we advise configuring an HTTP `availability probe`. When a probe is configured, the OVHcloud Load Balancer service can automatically disable a server that is down or under maintenance, so that your web users are not affected.
+If you add several servers to your cluster, we advise configuring an HTTP `availability probe`. When a probe is configured, the OVHcloud Load Balancer service can automatically disable a server that is down or under maintenance, so that your web users are not affected.
 
-![Add a server farm via the Control Panel](images/add_backend.png){.thumbnail}
+![Add a server cluster via the Control Panel](images/add_backend.png){.thumbnail}
 
 Click `Add`{.action} once you have filled in the fields.
 
-Your server farm should appear in the list, in the `Server farms`{.action} tab.
+Your server cluster should appear in the list, in the `Server clusters`{.action} tab.
 
-![Details of the server farm created](images/resume_backend.png){.thumbnail}
+![Details of the server cluster created](images/resume_backend.png){.thumbnail}
 
 ### Via the API
 
-- List of HTTP server farms:
+- List of HTTP server clusters:
 
 > [!api]
 >
@@ -91,21 +91,21 @@ Your server farm should appear in the list, in the `Server farms`{.action} tab.
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
-- Add a new HTTP server farm:
+- Add a new HTTP server cluster:
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
-- Modify a specific server farm:
+- Modify a specific server cluster:
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
-- Delete a specific server farm:
+- Delete a specific server cluster:
 
 > [!api]
 >
@@ -114,27 +114,27 @@ Your server farm should appear in the list, in the `Server farms`{.action} tab.
 
 ## Add a server.
 
-We will now add a server to our server farm.
+We will now add a server to our server cluster.
 
 ### Via the OVHcloud Control Panel.
 
 Log into the [OVHcloud Control Panel](/links/manager), click `Network`{.action} in the left-hand menu, then `Load Balancer`. Click on your load balancer service.
 
-In the `Server farms`{.action} tab, select the farm you want to add a server to by clicking on the corresponding line. The list of servers already configured in the farm will appear beneath the list of farms, along with the `Add a server`{.action} button. Click on this button to add a new server.
+In the `Server clusters`{.action} tab, select the cluster you want to add a server to by clicking on the corresponding line. The list of servers already configured in the cluster will appear beneath the list of clusters, along with the `Add a server`{.action} button. Click on this button to add a new server.
 
-Only the *IPv4 address* field is mandatory. If a server does not use the same port as the one defined earlier in the farm, you may overload it by configuring a server. However, to keep the configuration as standardised and easy to maintain as possible, we recommend only using this parameter in advanced cases.
+Only the *IPv4 address* field is mandatory. If a server does not use the same port as the one defined earlier in the cluster, you may overload it by configuring a server. However, to keep the configuration as standardised and easy to maintain as possible, we recommend only using this parameter in advanced cases.
 
-![Add a server to a farm.](images/add_server.png){.thumbnail}
+![Add a server to a cluster.](images/add_server.png){.thumbnail}
 
 Click `Add`{.action} once you have filled in the fields.
 
-Your server should appear in the server list, in the `Server farm`{.action} tab, just below the list of farms.
+Your server should appear in the server list, in the `Server cluster`{.action} tab, just below the list of clusters.
 
 ![Details of the server created.](images/resume_server.png){.thumbnail}
 
 ### Via the API
 
-- List of servers in the farm:
+- List of servers in the cluster:
 
 > [!api]
 >
@@ -171,7 +171,7 @@ Your server should appear in the server list, in the `Server farm`{.action} tab,
 
 ## Add a front-end.
 
-We will now add a `front-end` to our service, and connect it to our server farm. The front-end is the part of your OVHcloud Load Balancer that exposes your service on the internet. First, we will only configure it in HTTP, without an SSL/TLS certificate.
+We will now add a `front-end` to our service, and connect it to our server cluster. The front-end is the part of your OVHcloud Load Balancer that exposes your service on the internet. First, we will only configure it in HTTP, without an SSL/TLS certificate.
 
 ### Via the OVHcloud Control Panel.
 
