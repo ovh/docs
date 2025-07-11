@@ -25,11 +25,11 @@ Vous pouvez être tenus de conserver des logs et certaines données relatives au
 
 ## Prérequis
 
-Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVHcloud Load Balancer, en particulier les **frontend** et les **fermes**. Si ce n'est pas encore le cas, nous vous recommandons de consulter le guide « [Configurer un service OVHcloud Load Balancer HTTP/HTTPS](/pages/network/load_balancer/create_http_https) ». Ce guide est plus particulièrement orienté sur les services TCP mais les principes généraux sont les mêmes.
+Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVHcloud Load Balancer, en particulier les **frontend** et les **clusters**. Si ce n'est pas encore le cas, nous vous recommandons de consulter le guide « [Configurer un service OVHcloud Load Balancer HTTP/HTTPS](/pages/network/load_balancer/create_http_https) ». Ce guide est plus particulièrement orienté sur les services TCP mais les principes généraux sont les mêmes.
 
 Vous devez disposer de :
 
-- un service OVHcloud Load Balancer avec un frontend et une ferme TCP fonctionnels;
+- un service OVHcloud Load Balancer avec un frontend et un cluster TCP fonctionnels;
 - Nginx ou Apache avec mod_proxyprotocol sur un serveur OVHcloud.
 
 > [!warning]
@@ -77,7 +77,7 @@ Pour en savoir plus sur le ProxyProtocol, nous vous invitons à consulter la [sp
 
 ### Activation du ProxyProtocol pour un de vos serveurs
 
-Le ProxyProtocol doit être activé pour chaque serveur enregistré dans une ferme de serveurs. Cette fonctionnalité étant intrusive et ne pouvant être activée de manière transparente, cela permet de la tester sur une machine en particulier puis de déployer progressivement la configuration sur une ferme active.
+Le ProxyProtocol doit être activé pour chaque serveur enregistré dans un cluster de serveurs. Cette fonctionnalité étant intrusive et ne pouvant être activée de manière transparente, cela permet de la tester sur une machine en particulier puis de déployer progressivement la configuration sur un cluster actif.
 
 Votre service OVHcloud Load Balancer gère 4 modes pour le ProxyProtocol:
 
@@ -92,11 +92,11 @@ Lorsque le ProxyProtocol est activé pour l'un de vos serveurs, les sondes insè
 
 #### Depuis l'espace client OVHcloud
 
-Dans la section `Fermes`{.action}, sélectionnez la ferme contenant le serveur sur lequel activer le ProxyProtocol puis cliquez sur le bouton d'édition du serveur concerné.
+Dans la section `Clusters`{.action}, sélectionnez le cluster contenant le serveur sur lequel activer le ProxyProtocol puis cliquez sur le bouton d'édition du serveur concerné.
 
 Le ProxyProtocol se configure via l'option `Version du ProxyProtocol`{.action}. Vous y retrouverez les 4 modes décrits ci-dessus.
 
-![Activation du ProxyProtocol sur un serveur d'une ferme](images/edit_server.png){.thumbnail}
+![Activation du ProxyProtocol sur un serveur d'un cluster](images/edit_server.png){.thumbnail}
 
 Une fois le mode souhaité sélectionné, cliquez sur `Mettre à jour`{.action} puis sur `Déployer la zone: VOTRE ZONE`{.action} pour appliquer vos changements dans la zone concernée.
 
@@ -127,7 +127,7 @@ Nginx gère la version 1 du ProxyProtocol. Il est capable d'en extraire les prin
 
 Pour utiliser le ProxyProtocol avec Nginx, vous pouvez configurer le section server de votre configuration avec :
 
-```nginx
+```bash
 1. server {
 2.     # Enable the Proxy protocol on port 80
 3.     listen 80 proxy_protocol;
