@@ -147,13 +147,13 @@ In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen
 
 #### Richtlinien für andere OVHcloud Kunden-Accounts
 
-Zugriffsrichtlinien können auf andere OVHcloud-Kundenkonten abzielen.
-Das Zielkonto dieser Richtlinie kann die auf diese Weise erhaltenen Rechte in seinen eigenen Richtlinien verwalten, aber niemals die in der Zugriffsrichtlinie festgelegten Rechte außer Kraft setzen.
+Zugriffsrichtlinien können auf andere Kunden-Accounts übertragen werden.  
+Der Ziel-Account der Richtlinie kann die auf diese Weise erhaltenen Rechte in seinen eigenen Richtlinien verwalten, aber niemals die in der Zugriffsrichtlinie festgelegten Berechtigungen überschreiten.
 
-Zum Beispiel ein Account **xx1111-ovh**, der Rechte auf `vps:apiovh:ips/*` an Account **xx2222-ovh** gewährt.
-Account **xx2222-ovh** wird seinen eigenen Nutzern das Recht `vps:apiovh:ips/delete` geben können, aber niemals das Recht `vps:apiovh:reboot`.
+Beispiel: Der Account **xx1111-ovh** gewährt die Rechte für `vps:apiovh:ips/*` dem Account **xx2222-ovh**.  
+Der Account **xx2222-ovh** kann dann seinen eigenen Nutzern das Recht `vps:apiovh:ips/delete` zuweisen, aber nicht das Recht `vps:apiovh:reboot`.
 
-Der Zugriff auf den Support bleibt weiterhin dem Eigentümer der Ressource vorbehalten.
+Der Zugriff auf den Support bleibt weiterhin dem Inhaber der Ressource vorbehalten.
 
 ### Verwaltung von Identitäten
 
