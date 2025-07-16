@@ -17,7 +17,7 @@ updated: 2022-11-10
 ## Prérequis
 
 - Être contact administrateur de [l'infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Avoir un identifiant actif dans l'[espace client OVHcloud](/links/manager).
 - Avoir un identifiant actif dans vSphere.
 - Avoir installé le cluster d'administration **Tanzu Kubernetes GRID** à l'aide du guide « [Installer Tanzu Kubernetes Grid](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/tanzu_tkgm_02installation) ».
 - Avoir un VLAN qui possède un accès à Internet et un serveur DHCP.
@@ -147,6 +147,6 @@ Une application peut être constituée de plusieurs pods qui communiquent entre 
 
 [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

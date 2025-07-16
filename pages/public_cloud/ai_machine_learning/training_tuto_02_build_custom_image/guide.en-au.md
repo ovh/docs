@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial -  Build & use custom Docker image
 excerpt: Explanations on how to build and use your own custom image
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 ## Objective
@@ -288,25 +288,25 @@ CMD ["python", "/workspace/main.py"]
 
 ## Build our image
 
-Once the **Dockerfile** is complete and matches our needs, we have to choose an image name and build the image using the following command (make sure you are still in the root directory of your project, where the `Dockerfile` is located):
+Once the **Dockerfile** is complete and matches our needs, we have to choose an image name and build the image using one of the following commands (make sure you are still in the root directory of your project, where the `Dockerfile` is located):
 
-``` {.console}
+```console
+# Build the image using your machine's default architecture
 docker build . -t <image-identifier>
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t <image-identifier> .
 ```
 
-> [!primary]
->
-> The dot `.` argument indicates that our build context (place of the **Dockerfile** and other needed files) is the current directory.
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
 
 > [!primary]
 >
-> The `-t` argument allows us to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`.
-
-> [!warning]
+> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
->
-> `docker buildx build --platform linux/amd64 ...`
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`.
 >
 
 **Try to find a name that is easily identifiable**. This will allow you to manage your Docker images more easily, especially when you have multiple images and versions.
@@ -314,7 +314,7 @@ docker build . -t <image-identifier>
 For example, we could use: 
 
 ``` {.console}
-docker build . -t <cnn_image_segmentation_project>
+docker build . -t cnn_image_segmentation_project
 ```
 
 ## Test the image locally (Optional)

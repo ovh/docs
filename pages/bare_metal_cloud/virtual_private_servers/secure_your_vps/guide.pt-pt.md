@@ -22,7 +22,7 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 
 ## Requisitos
 
-- Um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
+- Um [VPS](/links/bare-metal/vps) na sua conta OVHcloud
 - Ter acesso de administrador (sudo) ao seu servidor através de SSH
 
 ## Instruções
@@ -281,7 +281,7 @@ A segurança dos seus dados é um elemento chave. É por isso que a OVHcloud ofe
 - A opção `Snapshot` que lhe permite criar uma imagem manual.
 - A opção de `Backup automático` permite-lhe conservar os backups regulares do seu VPS (à exceção dos discos suplementares).
 
-Na [página do produto](https://www.ovhcloud.com/pt/vps/options/) e nos respetivos [guias](/products/bare-metal-cloud-virtual-private-servers), poderá encontrar todas as informações sobre as soluções de backup disponíveis para o seu serviço.
+Na [página do produto](/links/bare-metal/vps-options) e nos respetivos [guias](/products/bare-metal-cloud-virtual-private-servers), poderá encontrar todas as informações sobre as soluções de backup disponíveis para o seu serviço.
 
 ## Quer saber mais?
 

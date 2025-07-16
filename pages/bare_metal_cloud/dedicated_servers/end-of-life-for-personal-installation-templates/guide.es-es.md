@@ -60,7 +60,7 @@ Although you could start exploring the examples and schemes of the [new "/reinst
 
 #### OVHcloud workaround <a name="ux-ovh"></a>
 
-As mentioned in the [OVHcloud API documentation](/pages/manage_and_operate/api/first-steps#sign-in-to-ovhcloud-apis), on the [OVHcloud console API](https://eu.api.ovh.com/console/) page:
+As mentioned in the [OVHcloud API documentation](/pages/manage_and_operate/api/first-steps#sign-in-to-ovhcloud-apis), on the [OVHcloud console API](/links/console) page:
 
 - Click `Authentication`{.action} in the upper left corner.
 - Select `Login with OVHcloud SSO`{.action}.

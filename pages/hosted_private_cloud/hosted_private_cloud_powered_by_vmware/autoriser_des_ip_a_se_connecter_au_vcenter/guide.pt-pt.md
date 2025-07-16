@@ -11,14 +11,14 @@ O acesso ao seu vCenter é restrito aos endereços IP autorizados.
 
 ## Requisitos
 
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 * Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) na sua conta OVHcloud.
 
 ## Instruções
 
 Por predefinição, o acesso ao seu vCenter é restrito. Por isso, é necessário adicionar os IP que serão autorizados a ligar-se ao serviço.
 
-A operação pode ser realizada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na secção `Hosted Private Cloud`{.action}, clique na opção `VMware`{.action}. 
+A operação pode ser realizada a partir da [Área de Cliente OVHcloud](/links/manager). Na secção `Hosted Private Cloud`{.action}, clique na opção `VMware`{.action}. 
 
 Selecione a infraestrutura e aceda ao separador `Segurança`{.action} e clique em `Adicionar um novo intervalo de endereços IP`{.action}.
 

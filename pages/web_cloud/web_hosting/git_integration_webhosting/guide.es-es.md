@@ -1,7 +1,7 @@
 ---
 title: "Configurar y utilizar Git con un alojamiento web de OVHcloud"
 excerpt: "Descubra cómo configurar y utilizar Git con un alojamiento web en el área de cliente de OVHcloud"
-updated: 2025-01-31
+updated: 2025-07-03
 ---
 
 ## Objetivo
@@ -73,8 +73,8 @@ Haga clic en `Create Repository`{.action}.
 
 Copie la dirección de su repositorio de GitHub. Debe tener el siguiente formato:
 
-- `https://github.com/<username>/<repository_name.git>` para un depósito público.
-- `git@github.com:<username>/<repository_name.git>` para un depósito privado.
+- `https://github.com/<username>/<repository_name>.git` para un depósito público.
+- `git@github.com:<username>/<repository_name>.git` para un depósito privado.
 
 Vuelva al formulario de asociación de Git y pegue la dirección de su repositorio de GitHub en el campo `Repositorio`. Si el formato de la dirección no es correcto, aparecerá el siguiente mensaje de error:
 
@@ -91,12 +91,13 @@ Ahora defina la rama de su repositorio de GitHub. La rama predeterminada es `mai
 
 Vuelva al formulario de asociación de Git en el área de cliente de OVHcloud e introduzca el nombre de la nueva rama que acaba de crear.
 
-#### Asociar una llave SSH a GitHub (solo para los repositorios privados de GitHub) <a name="linkSSHKey"></a>
+Si introduce la dirección de un repositorio privado de GitHub (de tipo `git@github.com:<username>/<repository_name>.git`), aparecerá un campo `SSH key` (llave SSH) debajo del campo `Branch`.
 
-> [!primary]
->
-> La generación de una llave SSH es un paso fundamental, ya que establece una conexión segura y cifrada entre el directorio de su sitio web y el repositorio de GitHub. Esta clave garantiza que las transferencias de datos y los cambios de código se realizan de forma segura y autenticada, evitando el acceso no autorizado y garantizando la integridad del código.
->
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
+
+Para configurar su llave SSH, consulte el paso "Asociar una llave SSH a GitHub (solo para los repositorios privados de GitHub)" a continuación.
+
+#### Asociar una llave SSH a GitHub (solo para los repositorios privados de GitHub) <a name="linkSSHKey"></a>
 
 > [!primary]
 >
@@ -104,7 +105,16 @@ Vuelva al formulario de asociación de Git en el área de cliente de OVHcloud e 
 >
 > Cuando su repositorio de GitHub es público, los archivos pueden recuperarse sin autenticación, lo que significa que Git puede clonar y actualizar el código sin necesidad de una llave SSH. Por el contrario, si su depósito es privado, GitHub requiere autenticación para acceder. La llave SSH permite establecer esta conexión segura y garantizar que solo los usuarios autorizados puedan interactuar con el repositorio.
 
-Copie y guarde la llave SSH en su cuenta de GitHub. Esto permite establecer una conexión segura sin necesidad de introducir una contraseña en cada operación Git que deba realizar.
+> [!primary]
+>
+> La generación de una llave SSH es un paso fundamental, ya que establece una conexión segura y cifrada entre el directorio de su sitio web y el repositorio de GitHub. Esta clave garantiza que las transferencias de datos y los cambios de código se realizan de forma segura y autenticada, evitando el acceso no autorizado y garantizando la integridad del código.
+>
+
+Copie su llave SSH haciendo clic en el botón de la derecha.
+
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key-copy.png){.thumbnail}
+
+Registre la llave SSH en su cuenta de GitHub:
 
 - Inicie sesión en su cuenta de GitHub.
 - Haga clic en su imagen de perfil en la esquina superior derecha y luego en `Settings`{.action}.
@@ -128,7 +138,7 @@ En la parte inferior del formulario de asociación de Git, aparece la sección `
 Antes de validar el formulario de asociación de Git, asegúrese de que:
 
 - La llave SSH se ha registrado correctamente en su cuenta de GitHub.
-- La dirección de su repositorio de GitHub es correcta. Debe tener el formato `https://github.com/<username>/<repository_name.git>`.
+- La dirección de su repositorio de GitHub es correcta. Debe tener el formato `https://github.com/<username>/<repository_name>.git`.
 - El nombre de la rama del repositorio de GitHub es correcto.
 - El directorio de instalación está vacío.
 

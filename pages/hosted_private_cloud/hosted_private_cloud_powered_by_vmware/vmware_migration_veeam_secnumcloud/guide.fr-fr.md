@@ -88,7 +88,7 @@ Créez un tunnel sécurisé entre votre infrastructure on-premise et l’HPC en 
 - [NSX avec IPsec](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
 - [Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/IPSEC_VPN.htm){.external} ou [OPNsense](https://docs.opnsense.org/manual/how-tos/ipsec-s2s.html){.external}
 
-Pour plus de performance et une latence réduite, vous pouvez utiliser [OVHcloud Connect](https://www.ovhcloud.com/fr/network/ovhcloud-connect/).
+Pour plus de performance et une latence réduite, vous pouvez utiliser [OVHcloud Connect](/links/network/ovhcloud-connect).
 
 > [!warning]
 > Les environnements SNC requièrent des SPN. Pour en savoir plus, consultez le guide  « [VPN-SPN - Présentation du concept](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-vpn-spn) ».

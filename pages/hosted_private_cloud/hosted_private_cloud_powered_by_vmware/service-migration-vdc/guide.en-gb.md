@@ -34,7 +34,7 @@ There are two aspects involved in this process:
 ## Requirements
 
 - A PCC infrastructure (PREMIER or SDDC)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`VMware`{.action} in the `Hosted Private Cloud`{.action} section)
+- Access to the [OVHcloud Control Panel](/links/manager) (`VMware`{.action} in the `Hosted Private Cloud`{.action} section)
 - Access to the vSphere Control Panel
 
 ## Instructions
@@ -333,7 +333,7 @@ If you still need this organisation, you will need to create it again in the des
 As part of an NSX-V to NSX-T migration, several NSX-V services need to be migrated to NSX-T. If you are using any of the services listed below, here is a step-by-step guide on how to migrate them. 
 
 > [!primary]
-> If you need technical support, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can help you rebuild your network architecture with customised services.
+> If you need technical support, our [Professional Services](/links/professional-services) team can help you rebuild your network architecture with customised services.
 
 As a first step, please read our documentation on [getting started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
@@ -367,7 +367,7 @@ Generally, depending on the number of edges deployed via NSX-V in the source vDC
 
 Additionally, if your production requires zero service interruption, solutions can be implemented to avoid these disruptions.
 
-In both cases mentioned above, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can assist you in this process.
+In both cases mentioned above, our [Professional Services](/links/professional-services) team can assist you in this process.
 
 <a name="t1seg"></a>
 ##### Step 4.8.3.1 Create T1 and segments
@@ -774,6 +774,6 @@ Below is a list of frequently asked questions about vDC migration.
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

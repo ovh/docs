@@ -283,7 +283,7 @@ To identify the cause, start by ensuring that none of your subscriptions need to
 Follow these steps:
 
 1. Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
-2. On the page that pops up, click on your name in the top right-hand corner, then choose `My solutions & services`{.action}.
+2. On the page that pops up, click on your name in the top right-hand corner, then choose `My offers and services`{.action}.
 
 > [!success]
 >

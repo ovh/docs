@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Managed Rancher Service
 excerpt: 'Find out how to start using Managed Rancher Service on OVHcloud'
-updated: 2024-10-07
+updated: 2025-06-24
 ---
 
 ## Objective
@@ -88,7 +88,7 @@ You need to provide the following parameters:
 | Name | Yes | Name of the Managed Kubernetes Service Cluster that will be created. |
 | Member Roles | Yes, default value is ok | Configure user authorization for the cluster. Click `Add Member`{.action} to add users that can access the cluster. Use the Role drop-down menu to set permissions for each user. |
 | Label & Annotations | No | Add Kubernetes labels or annotations to the cluster. |
-| Account Configuration | Yes | Provide your OVH API credentials, you can follow our guide on how to [Generate your OVHcloud API keys](/pages/manage_and_operate/api/first-steps#advanced-usage-pair-ovhcloud-apis-with-an-application). wildcard. |
+| Account Configuration | Yes | Provide your OVH API credentials, you can follow our guide on how to [Generate your OVHcloud API keys](/pages/manage_and_operate/api/first-steps#advanced-usage-pair-ovhcloud-apis-with-an-application).<br/>We advise you to set at least the following rights to your new token:<br/>`GET=/cloud/project/{YOUR_PROJECT_ID}*`<br/>`PUT=/cloud/project/{YOUR_PROJECT_ID}/kube*`<br/>`POST=/cloud/project/{YOUR_PROJECT_ID}/kube*`<br/>`DELETE=/cloud/project/{YOUR_PROJECT_ID}/kube*` |
 | Application Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
 | Consumer Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
 | Application Secret | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |

@@ -1,7 +1,7 @@
 ---
-title: "Deploying cPanel on a VPS"
-excerpt: "Find out how to instantiate a VPS with the pre-installed cPanel application"
-updated: 2024-01-31
+title: "How to deploy cPanel on a VPS"
+excerpt: "Find out how to instantiate a VPS with the preinstalled cPanel application"
+updated: 2025-07-14
 ---
 
 ## Objective
@@ -20,12 +20,12 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-au/vps) solution with a [compatible distribution](https://www.ovhcloud.com/en-au/vps/os/)
+- A [VPS](/links/bare-metal/vps) solution with a [compatible distribution](/links/bare-metal/vps-os)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](/links/manager) via a [cPanel-compatible OS](https://www.ovhcloud.com/en-au/vps/os/).
+If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](/links/manager) via a [cPanel-compatible OS](/links/bare-metal/vps-os).
 
 > [!warning]
 >
@@ -34,7 +34,7 @@ If you already have a VPS and want to have cPanel on it, you can reinstall the V
 
 To install your cPanel server, order a VPS with the cPanel distribution.
 
-![horizon](images/cpanel_order.png){.thumbnail}
+![horizon](images/cpanel-order.png){.thumbnail}
 
 When your VPS is ready, you will receive an email providing the information to connect to your cPanel server:
 

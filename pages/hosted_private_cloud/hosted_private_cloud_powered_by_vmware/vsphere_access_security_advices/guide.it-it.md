@@ -12,7 +12,7 @@ Per assicurare un livello di sicurezza ottimale di un’infrastruttura, limitare
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -20,13 +20,13 @@ Per assicurare un livello di sicurezza ottimale di un’infrastruttura, limitare
 
 Il primo consiglio è relativo alla restrizione dell’accesso tramite IP, per cui suggeriamo di utilizzare un sistema di registrazione basato su <i>whitelist</i>. Questa tecnica consiste nel rifiutare di default l’accesso a tutti gli indirizzi IP e aggiungere gli indirizzi autorizzati a connettersi all’infrastruttura.
 
-Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione Private Cloud, seleziona il servizio in questione e clicca sulla scheda `Sicurezza`{.action}: compare una tabella che mostra gli indirizzi IP autorizzati o bloccati. Per aggiungerne di nuovi, clicca sul pulsante `Aggiungi IP`{.action} a destra:
+Questa operazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager){.external}. Accedi alla sezione Private Cloud, seleziona il servizio in questione e clicca sulla scheda `Sicurezza`{.action}: compare una tabella che mostra gli indirizzi IP autorizzati o bloccati. Per aggiungerne di nuovi, clicca sul pulsante `Aggiungi IP`{.action} a destra:
 
 ![Aggiunta di IP](images/adding_ip.png){.thumbnail}
 
 ### Crea utenti specifici
 
-Consigliamo vivamente di creare un accesso personale per ogni utente che ha bisogno di connettersi all’infrastruttura. Anche questa operazione è disponibile nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: accedi alla scheda `Utenti`{.action} e clicca sul pulsante `Crea un utente`{.action}.
+Consigliamo vivamente di creare un accesso personale per ogni utente che ha bisogno di connettersi all’infrastruttura. Anche questa operazione è disponibile nello [Spazio Cliente](/links/manager){.external}: accedi alla scheda `Utenti`{.action} e clicca sul pulsante `Crea un utente`{.action}.
 
 ![Utenti](images/users.png){.thumbnail}
 
@@ -54,7 +54,7 @@ In seguito sarà possibile gestire i diritti di ogni account cliccando sul pulsa
 
 Al termine dell’utilizzo, consigliamo di chiudere la sessione aperta con l’account utilizzato.   Per limitare la durata delle connessioni è possibile impostare la scadenza della sessione.
 
-Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione Private Cloud, seleziona la scheda `Sicurezza`{.action} e clicca sul pulsante `Modifica la durata di una sessione `{.action} a destra.
+Questa operazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager){.external}. Accedi alla sezione Private Cloud, seleziona la scheda `Sicurezza`{.action} e clicca sul pulsante `Modifica la durata di una sessione `{.action} a destra.
 
 ![Scadenza della sessione](images/security-expiration.png){.thumbnail}
 

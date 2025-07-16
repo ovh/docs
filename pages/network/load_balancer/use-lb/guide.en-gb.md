@@ -103,7 +103,7 @@ To order an SSL certificate, simply go to the `SSL Certificate`{.action} section
 |Element|Purpose|
 |---|---|
 |Name|If you want, you can choose a name for your certificate. This is very useful when you have several certificates, so you can tell them apart quickly|
-|Certificate type|Free (Let's Encrypt), Comodo DV or Comodo EV (details available here: https://www.ovh.co.uk/ssl/)|
+|Certificate type|Free (Let's Encrypt), Comodo DV or Comodo EV (For more details, [see this page](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Domain(s) concerned|
 
 #### Adding an external SSL certificate

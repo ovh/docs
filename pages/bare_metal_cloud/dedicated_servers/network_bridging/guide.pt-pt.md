@@ -331,6 +331,8 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Se receber uma resposta, significa que o Additional IP foi corretamente configurado. Se não for o caso, reinicie a sua máquina virtual e repita o comando ping.
 
+Se desejar mais informações sobre `nmcli`, consulte [esta página (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli){.external}.
+
 #### FreeBSD
 
 Por predefinição, o ficheiro de configuração de rede da VM está localizado em `/etc/rc.conf`.

@@ -16,7 +16,7 @@ Se atingiu a capacidade máxima do seu disco adicional, pode adicionar armazenam
 
 ## Requisitos
 
-- Um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud.
+- Um [VPS](/links/bare-metal/vps) na sua conta OVHcloud.
 - Um [disco adicional](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configurado no VPS.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter acesso ao VPS por SSH ou RDP para a administração.
@@ -37,7 +37,7 @@ Escolha o novo tamanho de disco na nova janela e clique em `Aumentar`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Irá aparecer uma mensagem para confirmar o seu pedido. Clique na ligação dentro da mensagem e siga o processo de encomenda. É possível que um novo separador de navegação para a encomenda tenha sido aberto automaticamente.
+Irá aparecer uma mensagem para confirmar o seu pedido. Clique na ligação dentro da mensagem e siga o processo de encomenda. É aberto um novo separador do browser para finalizar a encomenda.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
@@ -55,7 +55,7 @@ O aumento da capacidade do disco demorará alguns minutos após a validação do
 > [!warning]
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, é da sua responsabilidade assegurar o seu bom funcionamento.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou que recorra à [nossa comunidade](https://community.ovh.com/en/).
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou que recorra à [nossa comunidade](https://community.ovh.com/en/).
 >
 
 #### Num VPS Linux

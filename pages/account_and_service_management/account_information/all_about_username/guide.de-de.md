@@ -15,7 +15,7 @@ Das OVHcloud Kundencenter erlaubt es Ihnen auch, Ihre persönlichen Daten zu ver
 
 ## Voraussetzungen
 
-- Sie haben [Ihren OVHcloud Kunden-Account erstellt](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
+- Sie haben [Ihren OVHcloud Kunden-Account erstellt](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
 
 > [!primary]
@@ -157,7 +157,7 @@ Wenn Sie per E-Mail über eine unbekannte Verbindung mit Ihrem Kundencenter info
 
 Wenn Sie eine verdächtige Aktivität auf Ihrem Account feststellen, [kontaktieren Sie den OVHcloud Support](https://help.ovhcloud.com/csm?id=csm_get_help) unter +49 681 906730, damit unsere Teams Sie bei den notwendigen Schritten unterstützen können.
 
-## Weiterführende Informationen3
+## Weiterführende Informationen
 
 [Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account_and_service_management/account_information/manage-ovh-password)
 

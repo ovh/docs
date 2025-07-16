@@ -13,7 +13,7 @@ Um bloco IP pode servir para tornar os seus serviços acessíveis na Internet.
 ## Requisitos
 
 - Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber dados de acesso.
-- Ter um identificador de utilizador ativo [criado na Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter um identificador de utilizador ativo [criado na Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -93,7 +93,7 @@ Se tiver de desassociar o bloco IP mais tarde, pode utilizar esta chamada API pa
 > Esta chamada associa a rede nas VM que utilizam os IP em questão.
 >
 
-Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} na secção `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clique no seu serviço Hosted Private Cloud e, depois, no separador `Operações`{.action}.
+Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](/links/manager){.external} na secção `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clique no seu serviço Hosted Private Cloud e, depois, no separador `Operações`{.action}.
 
 A referência da operação é “removeIpRipeBlock”.
 

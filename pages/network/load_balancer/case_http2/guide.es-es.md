@@ -1,16 +1,23 @@
 ---
-title: Configurar HTTP/2 en un Load Balancer de OVH
-excerpt: Cómo configurar el protocolo HTTP/2 en un Load Balancer de OVH
-updated: 2018-01-15
+title: Configurar HTTP/2 en un Load Balancer de OVHcloud
+excerpt: Cómo configurar el protocolo HTTP/2 en un Load Balancer de OVHvloud
+updated: 2025-07-04
 ---
 
 ## Objetivo
 
-Actualmente el Load Balancer de OVH no soporta el protocolo HTTP/2, pero hay una forma de saltarse esta restricción: utilizar conjuntamente el modo TCP y la extensión ALPN del protocolo TLS.
+Actualmente el Load Balancer de OVHcloud no soporta el protocolo HTTP/2, pero hay una forma de saltarse esta restricción: utilizar conjuntamente el modo TCP y la extensión ALPN del protocolo TLS.
 
 ALPN (Application-Layer Protocol Negotiation) es una extensión de TLS que permite a la capa de aplicación negociar cuál será el protocolo utilizado (en este caso, h2).
 
-**Esta guía explica cómo crear un servicio HTTP/2 con el Load Balancer de OVH. En este caso, vamos a configurar el servicio para balancear la carga en varios servidores que respondan en HTTP/2.**
+**Esta guía explica cómo crear un servicio HTTP/2 con el Load Balancer de OVHcloud. En este caso, vamos a configurar el servicio para balancear la carga en varios servidores que respondan en HTTP/2.**
+
+> [!primary]
+>
+> Desde junio de 2025, los frontend HTTP y TLS de los servicios Load Balancer de OVHcloud soportan de forma nativa el protocolo HTTP/2.
+>
+> No obstante, la siguiente guía sigue siendo aplicable para los frontend TCP.
+>
 
 ## Requisitos
 
@@ -62,7 +69,7 @@ A continuación, vamos a añadir una regla a la ruta.
 
 ### 3. Aplicar los cambios
 
-Los cambios realizados **deben aplicarse expresamente** a cada una de las zonas configuradas en el Load Balancer de OVH. Hasta entonces no serán visibles por los visitantes. Esto permite realizar cambios de configuración complejos de una vez.
+Los cambios realizados **deben aplicarse expresamente** a cada una de las zonas configuradas en el Load Balancer de OVHcloud. Hasta entonces no serán visibles por los visitantes. Esto permite realizar cambios de configuración complejos de una vez.
 
 Si tiene varias zonas, deberá aplicar la misma configuración a todas ellas.
 
@@ -82,7 +89,7 @@ A continuación vamos a actualizar una zona.
 
 ### 4. Aceptar
 
-Una vez hecho lo anterior, el servicio de balanceo de carga debería estar operativo para los servidores HTTP/2. Compruebe el estado del servicio enviando una petición al Load Balancer de OVH y verificando la versión de la respuesta:
+Una vez hecho lo anterior, el servicio de balanceo de carga debería estar operativo para los servidores HTTP/2. Compruebe el estado del servicio enviando una petición al Load Balancer de OVHcloud y verificando la versión de la respuesta:
 
 ```
 curl -I --http2 https://www.ovh.es/

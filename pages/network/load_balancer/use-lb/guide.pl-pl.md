@@ -104,7 +104,7 @@ W celu zamówienia certyfikatu SSL wystarczy przejść do sekcji `Certyfikat SSL
 |Element|Opis|
 |---|---|
 |Nazwa|Zdecyduj czy chcesz nadać certyfikatowi nazwę, co może przydać się do szybkiej identyfikacji, jeśli ma się ich kilka|
-|Rodzaj certyfikatu|Darmowy (Let's Encrypt), Comodo DV lub Comodo EV (szczegóły pod tym adresem: https://www.ovh.pl/ssl/)|
+|Rodzaj certyfikatu|Darmowy (Let's Encrypt), Comodo DV lub Comodo EV (Więcej informacji [patrz ta strona](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Powiązana/-e domena/-y|
 
 #### Dodanie zewnętrznego certyfikatu SSL

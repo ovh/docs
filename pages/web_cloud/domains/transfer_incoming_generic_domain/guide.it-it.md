@@ -18,7 +18,7 @@ Con il trasferimento del tuo dominio, potrai cambiare da **Registrar** per quest
 >
 > Il *Registrar* di un dominio rappresenta l'organizzazione/provider accreditata presso la quale il dominio è registrato/sottoscritto da un privato, un'associazione o un'organizzazione. È presso lo stesso *Registrar* che rinnovi la sottoscrizione del tuo dominio (generalmente una volta all'anno).
 >
-> Se OVHcloud è già il *Registrar* del tuo dominio **prima** di avviare la procedura che seguirà, il *trasferimento in entrata del dominio* non è la procedura appropriata. La procedura *trasferimento in entrata da un dominio** si applica **solo** ai domini registrati in un altro *Registrar* di OVHcloud.
+> Se OVHcloud è già il *Registrar* del tuo dominio **prima** di avviare la procedura che seguirà, il *trasferimento in entrata del dominio* non è la procedura appropriata. La procedura *trasferimento in entrata da un dominio* si applica **solo** ai domini registrati in un altro *Registrar* di OVHcloud.
 >
 > Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, la modalità corretta è una *modifica dei contatti*. La procedura è descritta in [guida](/pages/account_and_service_management/account_information/managing_contacts).
 >

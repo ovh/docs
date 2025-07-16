@@ -12,7 +12,7 @@ Um die Integrität Ihrer Infrastruktur zu gewährleisten, empfehlen wir, den Zug
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} angemeldet.
 
 ## Beschreibung
 
@@ -20,13 +20,13 @@ Um die Integrität Ihrer Infrastruktur zu gewährleisten, empfehlen wir, den Zug
 
 Unser erster Tipp ist die IP-basierte Zugangsbeschränkung. Wir empfehlen Ihnen, immer mit einem Whitelisting-System zu arbeiten. Hierbei wird grundsätzlich allen IP-Adressen der Zugriff verwehrt und Sie können manuell die Adressen hinzufügen, denen Sie Zugriff auf Ihre Infrastruktur gewähren möchten.
 
-Sie können die Einstellungen direkt in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} vornehmen. Gehen Sie dazu in Ihrem Managed Bare Metal Bereich auf `Sicherheit`{.action}. Es wird eine Tabelle angezeigt, die alle gesperrten und freigegebenen IP-Adressen auflistet. Um eine weitere IP hinzuzufügen, klicken Sie rechts auf `IP-Adressen hinzufügen`{.action}.
+Sie können die Einstellungen direkt in Ihrem [OVHcloud Kundencenter](/links/manager){.external} vornehmen. Gehen Sie dazu in Ihrem Managed Bare Metal Bereich auf `Sicherheit`{.action}. Es wird eine Tabelle angezeigt, die alle gesperrten und freigegebenen IP-Adressen auflistet. Um eine weitere IP hinzuzufügen, klicken Sie rechts auf `IP-Adressen hinzufügen`{.action}.
 
 ![IPs hinzufügen](images/adding_ip.png){.thumbnail}
 
 ### Spezifische Nutzer anlegen
 
-Wir empfehlen, personalisierte Zugänge für diejenigen Nutzer einzurichten, die Zugriff auf Ihre Infrastruktur erhalten sollen. Diese Einstellungen können Sie ebenfalls über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} vornehmen. Klicken Sie dazu bitte auf den Tab `Benutzer`{.action}. Um einen neuen Nutzer hinzuzufügen, klicken Sie rechts auf den Button: `Benutzer erstellen`{.action}.
+Wir empfehlen, personalisierte Zugänge für diejenigen Nutzer einzurichten, die Zugriff auf Ihre Infrastruktur erhalten sollen. Diese Einstellungen können Sie ebenfalls über Ihr [OVHcloud Kundencenter](/links/manager){.external} vornehmen. Klicken Sie dazu bitte auf den Tab `Benutzer`{.action}. Um einen neuen Nutzer hinzuzufügen, klicken Sie rechts auf den Button: `Benutzer erstellen`{.action}.
 
 ![Nutzer](images/users.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Anschließend können Sie die Rechte für jeden Nutzer verwalten, indem Sie in d
 
 Wenn der Nutzer den Client nicht mehr verwendet, sollte die Sitzung entsprechend geschlossen werden. Es ist möglich, eine maximale Sitzungsdauer festzulegen, um die Verbindungszeit der Nutzer einzuschränken.
 
-Diese Einstellungen können Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} vornehmen. Gehen Sie hierzu in Ihrem Managed Bare Metal Bereich auf `Sicherheit`{.action}. Klicken Sie dann rechts auf den Button `Sitzungstimeout ändern`{.action}.
+Diese Einstellungen können Sie im [OVHcloud Kundencenter](/links/manager){.external} vornehmen. Gehen Sie hierzu in Ihrem Managed Bare Metal Bereich auf `Sicherheit`{.action}. Klicken Sie dann rechts auf den Button `Sitzungstimeout ändern`{.action}.
 
 ![Sitzungstimeout](images/security-expiration.png){.thumbnail}
 

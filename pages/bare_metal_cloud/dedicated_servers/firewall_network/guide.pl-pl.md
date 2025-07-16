@@ -21,18 +21,18 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 > 
 
 | ![global-schema](images/global_schema.png) |
-|:—:|
+|:--:|
 | Anty-DDoS - schemat infrastruktury i usług ochrony gier w OVHcloud |
 
 ## Wymagania początkowe
 
-- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pl/vps/), [Public Cloud instance](https://www.ovhcloud.com/pl/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip) itd.)
+- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip) itd.)
 - Dostęp do [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line](https://eco.ovhcloud.com/pl/about/).
+> Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Aby uzyskać więcej informacji, odwiedź stronę pod adresem [comparison page](https://eco.ovhcloud.com/pl/compare/).
+> Aby uzyskać więcej informacji, odwiedź stronę pod adresem [comparison page](/links/bare-metal/eco-compare).
 
 > [!warning]
 > Edge Network Firewall nie obsługuje protokołu QUIC.
@@ -67,13 +67,13 @@ Następnie wymagane jest potwierdzenie. Firewall zostanie utworzony i będziesz 
 >
 
 | ![Enabling the configuration](images/activationconfig.png) |
-|:—:|
+|:--:|
 | Kliknij pozycję `Edge Network Firewall configuration`{.action}, aby rozpocząć konfigurację. |
 
 Na tej stronie można wybrać opcję **Aktywuj** lub **Wyłącz** zaporę za pomocą przycisku switch.
 Można to również zrobić w inny sposób wyjaśniony poniżej.
 
-Dla każdego adresu IP można skonfigurować do **20 reguł **.
+Dla każdego adresu IP można skonfigurować do **20 reguł**.
 
 > [!warning]
 >
@@ -101,19 +101,19 @@ Dla każdego adresu IP można skonfigurować do **20 reguł **.
 **Aby dodać regułę:**
 
 | ![add-rule-btn](images/enf_add_rule.png) | 
-|:—:| 
+|:--:| 
 | Kliknij opcję `Dodaj regułę`{.action}. |
 
 Dla każdej reguły (poza TCP) wybierz:
 
 | ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
-|:—| 
+|:-| 
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) |
 
 Dla każdej reguły **TCP** należy wybrać:
 
 | ![add-rule-btn](images/enf_add_rule_tcp.png) | 
-|:—| 
+|:-| 
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) <br>&bull; Port źródłowy (opcjonalnie) <br>&bull; Port docelowy (opcjonalnie) <br>&bull; Stan TCP (opcjonalnie) <br>&bull; Fragmenty (opcjonalnie)|
 
 > [!primary]
@@ -133,7 +133,7 @@ Dla każdej reguły **TCP** należy wybrać:
 **Włącz firewall:**
 
 | ![activate-desactivate](images/enf_enabled_button_01.png) |
-|:—:|
+|:--:|
 | `Włącz`{.action}, aby włączyć |
 
 Po potwierdzeniu firewall zostanie włączony.
@@ -141,7 +141,7 @@ Po potwierdzeniu firewall zostanie włączony.
 **Wyłącz firewall:**
 
 | ![activate-desactivate](images/enf_enabled_button_04.png) |
-|:—:|
+|:--:|
 | `Włącz`{.action}, aby włączyć |
 
 Po potwierdzeniu konfiguracja firewalla zostanie wyłączona.
@@ -179,12 +179,12 @@ Aby go aktywować, wykonaj następujące kroki:
 - Przejdź do sekcji `IP`{.action}.
 
 | ![menu-ipv4](images/mitigation_menu.png) |
-|:—:|
+|:--:|
 | Następnie kliknij `...`{.action} Przycisk po prawej stronie odpowiedniego adresu IPv4. |
 
 
 | ![mitigation-option](images/mitigation_menu_step_2.png) |
-|:—:|
+|:--:|
 | Wybierz `Filtrowanie: tryb stały`{.action}. |
 
 

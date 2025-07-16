@@ -19,7 +19,7 @@ Ce guide vous présente les possibilités offertes par les clusters Nutanix inst
 - Disposer de plusieurs clusters Nutanix avec l'une et/ou l'autre de ces organisations :
     - plusieurs clusters Nutanix sur des sites physiquement différents chez OVHcloud;
     - un cluster Nutanix fourni par OVHcloud et un autre cluster Nutanix chez un autre fournisseur.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté sur vos clusters via Prism Central.
 - Avoir une interconnexion de type vRack ou VPN IPSEC entre les deux clusters en fonction des besoins.
 
@@ -62,7 +62,7 @@ Il est possible d'améliorer la gestion des plans de reprise d'activité via des
 
 [Réplication asynchrone ou *NearSync* au travers de Prism Element](/pages/hosted_private_cloud/nutanix_on_ovhcloud/46-prism-element-replication)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 

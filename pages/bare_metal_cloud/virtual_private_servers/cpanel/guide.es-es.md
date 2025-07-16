@@ -1,12 +1,8 @@
 ---
 title: "Desplegar cPanel en un VPS"
 excerpt: "Descubra cómo instanciar un VPS con la aplicación cPanel preinstalada"
-updated: 2024-01-31
+updated: 2025-07-14
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -26,12 +22,12 @@ Gracias a una interfaz gráfica que permite automatizar los parámetros, el aloj
 
 ## Requisitos
 
-- Tener contratado un servicio [VPS reciente](https://www.ovhcloud.com/es-es/vps/){.external} con un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
+- Tener contratado un servicio [VPS reciente](/links/bare-metal/vps) con un [OS compatible con cPanel](/links/bare-metal/vps-os).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [área de cliente de OVHcloud](/links/manager) a través de un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
+Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [área de cliente de OVHcloud](/links/manager) a través de un [OS compatible con cPanel](/links/bare-metal/vps-os).
 
 > [!warning]
 >
@@ -40,7 +36,7 @@ Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [á
 
 Para instalar su servidor cPanel, contrate un VPS con la distribución cPanel.
 
-![cPanel](images/cpanel_order.png){.thumbnail}
+![cPanel](images/cpanel-order.png){.thumbnail}
 
 Cuando su VPS esté listo, recibirá un correo electrónico con los datos de acceso para conectarse a su servidor cPanel:
 
@@ -112,4 +108,4 @@ Asimismo, le recomendamos que consulte nuestra guía para [proteger un VPS](/pag
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

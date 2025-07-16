@@ -81,7 +81,7 @@ Adres bramy IPv4 przypisany do Twojego serwera wyświetla się w sekcji `Sieć` 
 
 #### Za pośrednictwem API OVHcloud <a name="viaapi"></a>
 
-Na [stronie API OVHcloud](https://eu.api.ovh.com/console/) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
+Na [stronie API OVHcloud](/links/console) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
 
 Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 
@@ -318,7 +318,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Jeśli otrzymasz odpowiedź, oznacza to, że adres Additional IP został poprawnie skonfigurowany. Jeśli tak się nie stanie, zrestartuj maszynę wirtualną i ponownie wprowadź polecenie ping.
 
-Aby uzyskać więcej informacji na temat `nmcli`, zobacz [ta strona](https://docs.redhat.com/pl/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-using_the_networkmanager_command_line_tool_nmcli).
+Aby uzyskać więcej informacji na temat `nmcli`, zobacz [ta strona (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli){.external}.
 
 #### FreeBSD
 

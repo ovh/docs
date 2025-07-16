@@ -15,7 +15,7 @@ A Área de Cliente OVHcloud permite-lhe também gerir os seus dados pessoais e d
 
 ## Requisitos
 
-- Ter criado a [sua conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
+- Ter criado a [sua conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 > [!primary]

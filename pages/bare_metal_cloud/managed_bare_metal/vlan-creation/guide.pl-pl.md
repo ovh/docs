@@ -32,7 +32,7 @@ Drugi serwer vDS dysponuje również jednym rodzajem *portGroup*, czyli siecią 
 
 W tym switchu 11 sieci VLAN są tworzone w oparciu o podstawowe projekty (VLAN10 w VLAN20). Dzięki uprawnieniu `administratora` do `dostępu do sieci VLAN` w [zarządzaniu użytkownikami w Panelu klienta](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#uzytkownicy){.external-link}, będziesz mógł utworzyć dodatkowe sieci VLAN.
 
-Po pierwsze, przejdź do widoku `tworzenia sieci` Twojego klienta vSphere. Uruchom folder **vrack**, kliknij prawym przyciskiem myszy **na serwer **dVS** kończący się *-vrack*, a następnie kliknij `New Distributed Port Group`{.action}.
+Po pierwsze, przejdź do widoku `tworzenia sieci` Twojego klienta vSphere. Uruchom folder **vrack**, kliknij prawym przyciskiem myszy na serwer **dVS** kończący się *-vrack*, a następnie kliknij `New Distributed Port Group`{.action}.
 
 ![vRack](images/07network.png){.thumbnail}
 

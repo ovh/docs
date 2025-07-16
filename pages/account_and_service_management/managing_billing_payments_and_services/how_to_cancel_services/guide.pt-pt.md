@@ -78,19 +78,19 @@ Se à sua oferta de e-mail MX Plan tiver sido encomendada independentemente de q
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Para rescindir à sua oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#eliminar-contas).
+Para rescindir à sua oferta [E-mail Pro](/links/web/email-pro), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#eliminar-contas).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Para rescindir à sua oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas).
+Para rescindir à sua oferta [Hosted Exchange](/links/web/emails-hosted-exchange), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas).
 
 #### Private Exchange <a name="private"></a>
 
-Para rescindir à sua oferta [Private Exchange](https://www.ovhcloud.com/pt/emails/private-exchange/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas_1).
+Para rescindir à sua oferta [Private Exchange](/links/web/emails-private-exchange), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Para rescindir à sua oferta [Office 365 csp 1](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1/#gerir-as-suas-assinaturas).
+Para rescindir à sua oferta [Office 365 csp 1](/links/web/ms365), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1/#gerir-as-suas-assinaturas).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
@@ -98,7 +98,7 @@ Para rescindir à sua oferta [Office 365 csp 2](https://www.ovhcloud.com/pt/coll
 
 #### Certificado SSL Sectigo <a name="ssl_sectigo"></a>
 
-Não é possível rescindir as ofertas [SSL sectigo](https://www.ovhcloud.com/pt/web-hosting/options/ssl/) antes do fim do prazo, uma vez que não são renovadas automaticamente. Basta, portanto, não os renovar no próximo prazo.
+Não é possível rescindir as ofertas [SSL sectigo](/links/web/hosting-options-ssl) antes do fim do prazo, uma vez que não são renovadas automaticamente. Basta, portanto, não os renovar no próximo prazo.
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
@@ -110,7 +110,7 @@ Para rescindir à sua oferta [VMware on OVHcloud](https://www.ovhcloud.com/pt/en
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Cada serviço [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) pode ser eliminado clicando no botão `...`{.action} à direita do serviço em causa e, a seguir, em `Eliminar`{.action}, como no exemplo seguinte para uma instância:
+Cada serviço [Public Cloud](/links/public-cloud/public-cloud) pode ser eliminado clicando no botão `...`{.action} à direita do serviço em causa e, a seguir, em `Eliminar`{.action}, como no exemplo seguinte para uma instância:
 
 ![public cloud instance deleet](images/pci-deletion.png){.thumbnail}
 

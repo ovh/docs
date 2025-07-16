@@ -55,7 +55,7 @@ Nella nuova finestra, inserisci le informazioni richieste. Clicca su `Conferma`{
 | Ruolo | Dettagli |
 |--|--|
 | UNPRIVILEGED (Sola Lettura) | Consente l’accesso in lettura allo Spazio Cliente OVHcloud e a tutte le sue sezioni. |
-| DEFAULT (Amministratore con restrizioni) | Consente l'accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, ad eccezione della gestione degli utenti**. |
+| DEFAULT (Amministratore con restrizioni) | Consente l'accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, **ad eccezione della gestione degli utenti**. |
 | ADMIN (Amministratore) | Consente l’accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, **inclusa** la gestione degli utenti. |
 
 L’utente otterrà quindi il proprio identificativo composto dall’identificativo numerico del tuo account (indicato nel menu “Gestione degli utenti”) e dal suo nome utente, entrambi i valori sono separati da uno slash “/”.
@@ -96,7 +96,7 @@ I gruppi assegnano un livello di privilegio predefinito agli utenti che contengo
 |--|--|
 | Nessuno | Non concede l’accesso allo Spazio Cliente OVHcloud se non è stata applicata una politica IAM. |
 | Sola Lettura | Consente l’accesso in lettura allo Spazio Cliente OVHcloud e a tutte le sue sezioni. |
-| Amministratore con restrizioni | Consente l'accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, ad eccezione della gestione degli utenti**. |
+| Amministratore con restrizioni | Consente l'accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, **ad eccezione della gestione degli utenti**. |
 | Amministratore | Consente l’accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, **inclusa** la gestione degli utenti. |
 
 #### Gestisci i gruppi

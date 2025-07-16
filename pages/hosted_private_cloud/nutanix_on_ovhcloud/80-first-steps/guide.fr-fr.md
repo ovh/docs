@@ -14,7 +14,7 @@ Ce guide vous présente les opérations que vous devez réaliser pour bien débu
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](/links/professional-services) ou à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 **Découvrez les premières opérations à réaliser sur votre cluster Nutanix.**
@@ -22,7 +22,7 @@ Ce guide vous présente les opérations que vous devez réaliser pour bien débu
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté à Prism Central sur le cluster
 
 > [!warning]
@@ -147,7 +147,7 @@ Ouvrez la console après le redémarrage de la VM. Vous pouvez voir que la VM a 
 
 ##### Configuration du Load Balancer
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Ouvrez la page de configuration du Nutanix Cluster. 
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Ouvrez la page de configuration du Nutanix Cluster. 
 
 Dans le cadre `Réseau du cluster` en bas de page, cliquez sur le Load Balancer.
 
@@ -411,7 +411,7 @@ Dans les paramètres du système, activez le "bureau à distance".
 
 ##### Configuration du Load Balancer
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Ouvrez la page de configuration du Nutanix Cluster. Dans le cadre `Réseau du cluster` en bas de page, cliquez sur le Load Balancer.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Ouvrez la page de configuration du Nutanix Cluster. Dans le cadre `Réseau du cluster` en bas de page, cliquez sur le Load Balancer.
 
 ![Configure Load Balancer 01 RDP](images/config-lb1-rdp.PNG){.thumbnail}
 
@@ -496,6 +496,6 @@ Vous pouvez également [sécuriser l'accès à Prism Central](/pages/hosted_priv
 
 ## Aller plus loin <a name="go further"></a>
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

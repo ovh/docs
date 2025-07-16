@@ -23,7 +23,7 @@ You can’t find your country? Change the website language by clicking on the fl
 
 Your username or customer ID — also called a NIC handle — is located in the top right-hand corner of your last invoice. It looks like this: “aa00000-ovh” (the first letters are normally the initials of the person who created the account). This username is also included in all emails sent by OVHcloud (account creation confirmation email, order confirmations, renewal emails, etc.).
 
-If you have not yet found your username, you can click on the “Forgotten your username or password?” link on the login page for your [OVHcloud account](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), and enter the email address associated with your account.
+If you have not yet found your username, you can click on the “Forgotten your username or password?” link on the login page for your [OVHcloud account](/links/manager), and enter the email address associated with your account.
 
 #### Tips and tricks
 

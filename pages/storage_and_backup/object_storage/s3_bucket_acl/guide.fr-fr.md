@@ -5,7 +5,7 @@ updated: 2023-08-09
 
 ## Objectif
 
-Par défaut, toutes les ressources (buckets, objets) et les sous-ressources (configuration de cycle de vue, configuration de site web, ...etc) sont privées dans l'Object Storage. Seul le propriétaire de la ressource, c'est à dire l'utilisateur du compte qui la crée, a le contrôle total dessus.
+Par défaut, toutes les ressources (buckets, objets) et les sous-ressources (configuration de cycle de vie, configuration de site web, ...etc) sont privées dans l'Object Storage. Seul le propriétaire de la ressource, c'est à dire l'utilisateur du compte qui la crée, a le contrôle total dessus.
 
 L'accès aux ressources privées peut être donné via les politiques d'accès.
 

@@ -26,12 +26,12 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
-- Ter o seu [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external} já configurado.
+- Ter o seu [VPS OVHcloud](/links/bare-metal/vps){.external} já configurado.
 
 > [!warning]
 > A OVHcloud fornece serviços cuja configuração e gestão são da sua responsabilidade. É da sua responsabilidade assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor, recomendamos que contacte um [fornecedor de serviços especializado](https://partner.ovhcloud.com/pt/directory/) ou que contacte a [nossa comunidade](https://community.ovh.com/en/).
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor, recomendamos que contacte um [fornecedor de serviços especializado](/links/partner) ou que contacte a [nossa comunidade](https://community.ovh.com/en/).
 >
 
 ## Instruções

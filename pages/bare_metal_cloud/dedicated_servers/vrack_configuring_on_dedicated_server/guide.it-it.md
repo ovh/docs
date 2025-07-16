@@ -250,8 +250,6 @@ link ether f0:00:00:ef:0e:f0
 >> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
 >> ```
 >>
->> **Esempio:**
->>
 >> - Modifica la configurazione da **auto** a **manual**:
 >>
 >> ```bash

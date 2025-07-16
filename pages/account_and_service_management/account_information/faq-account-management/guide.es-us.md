@@ -73,11 +73,11 @@ La delegación del servicio deberá ser validada por correo electrónico tanto p
 
 Antes de realizar cualquier cambio, asegúrese de que todas las direcciones de correo electrónico de contacto son válidas, ya que, de lo contrario, la solicitud no podrá completarse.
 
-Si desea recuperar un dominio del que usted es el propietario registrado en un registro (puede consultar esta información en [www.ovh.es/cgi-bin/tools/check_whois.pl](https://www.ovh.es/cgi-bin/tools/check_whois.pl)), pero no tiene acceso a la cuenta de cliente administrador, le recomendamos que siga los pasos que se indican en el siguiente procedimiento: [www.ovh.es/cgi-bin/es/procedure/procedureChangeContacts.cgi](https://www.ovh.es/cgi-bin/es/procedure/procedureChangeContacts.cgi)
+Si desea recuperar un dominio del que usted es el propietario registrado en un registro (puede consultar esta información en [www.ovh.es/cgi-bin/tools/check_whois.pl](https://www.ovh.es/cgi-bin/tools/check_whois.pl)), pero no tiene acceso a la cuenta de cliente administrador, le recomendamos que siga los pasos que se indican en el siguiente procedimiento: [www.ovh.es/cgi-bin/es/procedure/procedureChangeContacts.cgi](https://www.ovh.es/cgi-bin/es/procedure/procedureChangeContacts.cgi).
 
 #### Ideas y consejos
 
-Para más información sobre la gestión de contactos, consulte la siguiente guía: [/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos)
+Para más información sobre la gestión de contactos, consulte la siguiente [guía](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos).
 
 ### ¿Cómo cambiar el contacto de facturación?
 
@@ -113,7 +113,7 @@ Al activar la doble autenticación o 2FA, podrá elegir el método con el que de
 - desde una aplicación móvil compatible con Android, iPhone y Windows móvil;
 - con una llave de seguridad compatible con U2F.
 
-[Más información](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+Para más información, haga clic [aquí](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 ### ¿Cómo desactivar la doble autenticación/2FA de OVHcloud?
 
@@ -182,8 +182,8 @@ Solo es posible cerrar su cuenta de cliente de OVHcloud y eliminar sus datos per
 
 Si cumple las condiciones anteriores, puede solicitar la eliminación de su cuenta de OVHcloud y de los datos asociados siguiendo estos pasos:
 
-1. Conéctese al [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
-2. Haga clic en el botón `Crear un tíquet`{.action}
+1. Conéctese al [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+2. Haga clic en el botón `Crear un tíquet`{.action}.
 3. Seleccione el motivo `Gestione su cuenta de cliente OVHcloud`{.action}.
 4. Indique `Quiero cerrar mi cuenta de cliente OVHcloud`{.action} y siga los pasos que se indican.
 

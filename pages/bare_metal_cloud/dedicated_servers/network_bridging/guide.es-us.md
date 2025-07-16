@@ -82,7 +82,7 @@ La dirección de la pasarela IPv4 asignada a su servidor se muestra en la secci�
 
 #### A través de la API de OVHcloud <a name="viaapi"></a>
 
-En la [página API de OVHcloud](https://ca.api.ovh.com/console/), haga clic en `Login`{.action}, situado en la esquina superior derecha. En la siguiente página, introduzca su ID de cliente de OVHcloud.
+En la [página API de OVHcloud](/links/console), haga clic en `Login`{.action}, situado en la esquina superior derecha. En la siguiente página, introduzca su ID de cliente de OVHcloud.
 
 Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
 
@@ -326,6 +326,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Si recibe una respuesta, significa que la Additional IP se ha configurado correctamente. En caso contrario, reinicie la máquina virtual e intente ping de nuevo.
 
+Si desea más información sobre `nmcli`, consulte [esta página (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli){.external}.
 
 #### FreeBSD
 

@@ -146,7 +146,7 @@ Możesz wygenerować lub usunąć kody zapasowe w Panelu klienta:
 
 > [!warning]
 >
-> Stanowczo zaleca się wykonanie kopii zapasowej tych kodów zapasowych** i upewnienie się, że są one prawidłowe.
+> **Zdecydowanie zalecamy zapisanie tych kodów awaryjnych i upewnienie się, że są one ważne.**
 > Bez posiadanego kodu bezpieczeństwa, w przypadku kradzieży lub utraty telefonu/smartfona/tabletu lub klucza sprzętowego, dostęp do Twojego panelu klienta i usług może zostać zablokowany.
 >
 

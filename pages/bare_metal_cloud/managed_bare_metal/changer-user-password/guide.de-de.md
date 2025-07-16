@@ -13,14 +13,14 @@ Die Berechtigungen und Passwörter von Nutzern des vSphere Clients werden im OVH
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} angemeldet.
 - Im OVHcloud Kundencenter wurde ein Nutzeraccount für Sie angelegt. Bitte entnehmen Sie [dieser Anleitung](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#benutzer) weitere Informationen.
 
 ## Praktische Anwendung
 
 ### Passwort ändern
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an, gehen Sie in den Bereich `Bare Metal Cloud`{.action} (1), klicken Sie auf `Managed Bare Metal`{.action} (2) und wählen Sie Ihren Server aus der Liste aus (3). Klicken Sie dann auf den Reiter `Nutzer`{.action} (4).
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} an, gehen Sie in den Bereich `Bare Metal Cloud`{.action} (1), klicken Sie auf `Managed Bare Metal`{.action} (2) und wählen Sie Ihren Server aus der Liste aus (3). Klicken Sie dann auf den Reiter `Nutzer`{.action} (4).
 
 ![Zugang zum Kundencenter](images/userpassword1.png){.thumbnail}
 

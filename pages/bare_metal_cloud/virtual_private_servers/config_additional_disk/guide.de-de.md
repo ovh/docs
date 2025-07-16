@@ -16,7 +16,7 @@ Bei den VPS von OVHcloud können Sie einen sicheren Speicherplatz als Dienstopti
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Administrativer Zugriff via SSH oder RDP auf Ihren VPS.
 
@@ -37,7 +37,7 @@ Beachten Sie die Preisinformationen und klicken Sie dann auf `Bestellen`{.action
 > [!warning]
 > OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Sie sind also verantwortlich für das ordnungsgemäße Funktionieren dieser Systeme.
 >
->Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen hierzu keinen technischen Support bieten.
+>Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie einen [spezialisierten Dienstleister](/links/partner) oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen hierzu keinen technischen Support bieten.
 >
 
 #### Auf einem Linux VPS

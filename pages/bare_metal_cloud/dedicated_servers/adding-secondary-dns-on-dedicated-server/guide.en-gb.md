@@ -17,9 +17,9 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Instructions
@@ -69,5 +69,7 @@ It is necessary to confirm your authorisation to manage the domain name before i
 After successfully adding the TXT record to the domain name's DNS zone, repeat the [steps above](#addingdomain) and finish the process.
 
 ## Go further
+
+[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
 Join our [community of users](/links/community).

@@ -77,7 +77,7 @@ Wir bieten vier verschiedene Methoden an (klicken Sie jeweils auf die Tabs, um d
 >> Diese Methode bietet ein höheres Sicherheitsniveau, da sie auf einem separaten physischen Sicherheitsfaktor basiert, der vollständig von Ihrem Computer, Smartphone oder Tablet getrennt ist und weniger anfällig für Hacks ist.
 > Notfall-Codes
 >>![2FA codes](images/code.svg)<br>
->> Wenn Sie eine Zwei-Faktor-Authentifizierung konfigurieren (zum ersten Mal mit **SMS**, **OTP App** oder **U2F**), werden Ihnen im Kundencenter 10 Notfall-Codes zur **Einmalverwendung*** angezeigt.
+>> Wenn Sie eine Zwei-Faktor-Authentifizierung konfigurieren (zum ersten Mal mit **SMS**, **OTP App** oder **U2F**), werden Ihnen im Kundencenter 10 Notfall-Codes zur **Einmalverwendung** angezeigt.
 >>
 >> Diese Methode der Zwei-Faktor-Authentifizierung ergänzt eine bereits aktivierte Methode (mit **SMS**, **OTP App** oder **U2F**) und kann nicht alleinstehend aktiviert werden.
 >>
@@ -202,7 +202,7 @@ Klicken Sie danach auf `Sicherheit`{.action}, dann auf die `...`{.action} rechts
 Anschließend wird ein letzter Bestätigungscode an das zu löschende Gerät gesendet. Geben Sie diesen Code in das angezeigte Fenster ein und klicken Sie auf `Bestätigen`{.action}, um den Löschvorgang abzuschließen.
 
 Wenn Sie keinen Zugriff mehr auf das Gerät haben, das Sie löschen möchten, können Sie es nicht selbst aus dem OVHcloud Kundencenter löschen.
-In diesem Fall **kontaktieren Sie unsere Support-Teams direkt**, indem Sie [ein Ticket über das Help Center erstellen](https://help.ovhcloud.com/csm?id=csm_get_help) oder indem Sie den unten beschriebenen Vorgang ausführen [#2FA-deletion].
+In diesem Fall **kontaktieren Sie unsere Support-Teams direkt**, indem Sie [ein Ticket über das Help Center erstellen](https://help.ovhcloud.com/csm?id=csm_get_help) oder durch Befolgen des [unten](#2FA-deletion) beschriebenen Vorgangs.
 
 > [!warning]
 >

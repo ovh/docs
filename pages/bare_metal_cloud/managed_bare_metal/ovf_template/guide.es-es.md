@@ -22,7 +22,7 @@ Las MV Windows desplegadas a partir de una plantilla utilizan automáticamente l
 ## Requisitos
 
 - Tener acceso al cliente web (HTML5).
-- Haber activado las [licencias de Windows](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#licencia-windows) desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} (en la pestaña `Licencia Widows`{.action} de la plataforma). 
+- Haber activado las [licencias de Windows](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#licencia-windows) desde el [área de cliente de OVHcloud](/links/manager){.external} (en la pestaña `Licencia Widows`{.action} de la plataforma). 
 
 Desde un navegador de internet, vaya a la página de inicio de su Managed Bare Metal y haga clic en `OVH Templates`{.action}.
 

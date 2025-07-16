@@ -24,7 +24,7 @@ HA-NAS enables data to be centralised across different Linux workloads, as well 
 
 ### Can I manage my HA-NAS via a configuration panel?
 
-Yes, you can access it from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) by going to the `Bare Metal Cloud`{.action} section, then `NAS and CDN`{.action}.
+Yes, you can access it from your [OVHcloud Control Panel](/links/manager) by going to the `Bare Metal Cloud`{.action} section, then `NAS and CDN`{.action}.
 
 ## Availability
 
@@ -36,7 +36,7 @@ HA-NAS comes with a 99.99% availability rate.
 
 ### What file transfer protocols are currently supported on the HA-NAS solution?
 
-HA-NAS supports file transfer through NFS (NFSv3) and CIFS (SMB).
+HA-NAS supports file transfers via NFS (NFSv3, NFSv4.1, NFNSv4.2) and CIFS (SMB).
 
 ### Which OVHcloud services can I push data from?
 
@@ -143,7 +143,7 @@ You can manage the frequency of snapshots from your OVHcloud Control Panel. You 
 - once every 3 days
 - once every week
 
-You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or via the following [API](https://ca.api.ovh.com/) call:
+You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](/links/manager) or via the following [API](https://ca.api.ovh.com/) call:
 
 > [!api]
 >
@@ -176,7 +176,8 @@ For example, for a 3 TB service, an additional 450 GB is reserved for snapshots.
 
 ### Where are snapshots stored?
 
-Snapshots are stored at the same level as your service. Snapshots are replicated on two separate servers in two different racks. In addition, OVHcloud takes a daily snapshot at a remote site.
+Snapshots are stored on the same level as your service.
+In addition, OVHcloud takes a daily snapshot (with a 24-hour retention) on a backup server located in a separate rack.
 
 ### Where can I retrieve my snapshots?
 
@@ -198,6 +199,6 @@ The subscription periods offered are 1 month, 12 months, 24 months and 36 months
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our user community on <https://community.ovh.com/en/>.

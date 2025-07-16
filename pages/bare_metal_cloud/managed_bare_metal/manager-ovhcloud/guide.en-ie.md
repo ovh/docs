@@ -13,13 +13,13 @@ The OVHcloud Managed Bare Metal Control Panel enables you to easily manage the n
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-ie/managed-bare-metal/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### General information tab
 
-Once you have navigated to the "Bare Metal Cloud" section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and selected your service under `Managed Bare Metal`{.action} in the left-hand navigation bar, you will have access to a general overview of your Managed Bare Metal service:
+Once you have navigated to the "Bare Metal Cloud" section of your [OVHcloud Control Panel](/links/manager), and selected your service under `Managed Bare Metal`{.action} in the left-hand navigation bar, you will have access to a general overview of your Managed Bare Metal service:
 
 ![General information](images/controlpanel1-e.png){.thumbnail}
 

@@ -559,7 +559,7 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 64 bytes from <ip_address>: icmp_seq=2 ttl=64 time=13.1 ms
 ```
 
-## Más información <a name="go-further"></a>
+## Más información <a name="gofurther"></a>
  
 Si necesita formación o asistencia técnica para implementar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener una cotización y solicite a nuestros expertos de Professional Services que le ayuden en su caso de uso específico de su proyecto.
  

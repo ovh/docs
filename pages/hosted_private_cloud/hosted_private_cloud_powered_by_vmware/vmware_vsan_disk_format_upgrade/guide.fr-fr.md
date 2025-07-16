@@ -13,7 +13,7 @@ Le format des disques vSAN est régulièrement amélioré avec de nouvelles vers
 ## Prérequis
 
 - Être contact [« Administrateur »](/pages/account_and_service_management/account_information/managing_contacts) de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](/links/manager))
 - Avoir déployé un [cluster vSan](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
 
 ## En pratique

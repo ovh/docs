@@ -1,7 +1,7 @@
 ---
 title: How to use the backup storage on a dedicated server
 excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2025-03-27
+updated: 2025-07-14
 ---
 
 ## Objective
@@ -154,11 +154,11 @@ ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **FtpUsername** : Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **FolderLocation**: The path to the target folder where you want to save the file
-* **File**: The name of the file you want to save
+- **FtpUsername** : Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **FolderLocation**: The path to the target folder where you want to save the file
+- **File**: The name of the file you want to save
 
 Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
 
@@ -168,11 +168,11 @@ tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName Archi
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **FolderName**: The path to the folder you want to back up
-* **FtpUsername**: Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **ArchiveName**: The name of the folder you want to back up
+- **FolderName**: The path to the folder you want to back up
+- **FtpUsername**: Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **ArchiveName**: The name of the folder you want to back up
 
 To download an archive file from your backup storage, you can use the following command:
 
@@ -182,17 +182,18 @@ ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **FtpUsername**: Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **LocalFolder**: The path to the local folder where you want to save the file
-* **File**: The path to the file you want to download
+- **FtpUsername**: Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **LocalFolder**: The path to the local folder where you want to save the file
+- **File**: The path to the file you want to download
 
 ##### Curl (for Linux)
 
 > [!primary]
 >
-> To use FTPS you must change the hostname of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net. You also need to add the -ssl flag to the commands below.
+> To use FTPS you must change the hostname of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net. You also need to add the -ssl flag to the commands below.  
+> If the backup storage is located in Canada (BHS), you will need to change it to ftpback-bhsX-YYY.mybackup.ovh.ca.
 >
 
 To save individual files to your backup storage, you can use the following command:
@@ -203,11 +204,11 @@ curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **File**: The name of the file you want to save
-* **FtpUsername**: Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **FolderLocation**: The path to the target folder where you want to save the file
+- **File**: The name of the file you want to save
+- **FtpUsername**: Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **FolderLocation**: The path to the target folder where you want to save the file
 
 Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
 
@@ -217,12 +218,12 @@ tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocati
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **FolderName**: The path to the folder you want to back up
-* **FtpUsername**: Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **FolderLocation**: The path to the target folder where you want to save the folder
-* **ArchiveName**: The name of the folder you want to back up
+- **FolderName**: The path to the folder you want to back up
+- **FtpUsername**: Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **FolderLocation**: The path to the target folder where you want to save the folder
+- **ArchiveName**: The name of the folder you want to back up
 
 To download an archive file from your backup storage, you can use the following commands:
 
@@ -233,17 +234,18 @@ curl -u FtpUsername:FtpPassword ftp://HostName/File
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **FtpUsername**: Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **LocalFolder**: The name of the local folder where you want to save the file
-* **File**: The path to the file you want to download
+- **FtpUsername**: Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **LocalFolder**: The name of the local folder where you want to save the file
+- **File**: The path to the file you want to download
 
 #### lftp (for Linux)
 
 > [!primary]
 >
-> lftp uses FTP+SSL/TLS by default. So you must change the host name of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net.
+> lftp uses FTP+SSL/TLS by default. So you must change the host name of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net.  
+> If the backup storage is located in Canada (BHS), you will need to change it to ftpback-bhsX-YYY.mybackup.ovh.ca.
 >
 
 To save individual files to your backup storage, you can use the following command:
@@ -254,11 +256,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; 
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **File**: The name of the file you want to save
-* **FtpUsername**: Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **FolderLocation**: The path to the target folder where you want to save the file
+- **File**: The name of the file you want to save
+- **FtpUsername**: Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **FolderLocation**: The path to the target folder where you want to save the file
 
 Backing up a folder is done by creating a folder archive, and then uploading it all with one command:
 
@@ -268,12 +270,12 @@ tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderL
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **FolderName**: The path to the folder you want to back up
-* **FtpUsername**: Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **FolderLocation**: The path to the target folder where you want to save the folder
-* **ArchiveName**: The name of the folder you want to back up
+- **FolderName**: The path to the folder you want to back up
+- **FtpUsername**: Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **FolderLocation**: The path to the target folder where you want to save the folder
+- **ArchiveName**: The name of the folder you want to back up
 
 To download an archive file from your backup storage, you can use the following commands:
 
@@ -284,11 +286,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **FtpUsername**: Your FTP username
-* **FtpPassword**: Your FTP password
-* **HostName**: The host name of your backup storage
-* **LocalFolder**: The name of the local folder where you want to save the file
-* **File**: The path to the file you want to download
+- **FtpUsername**: Your FTP username
+- **FtpPassword**: Your FTP password
+- **HostName**: The host name of your backup storage
+- **LocalFolder**: The name of the local folder where you want to save the file
+- **File**: The path to the file you want to download
 
 ##### Filezilla (for Windows)
 
@@ -306,9 +308,9 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **HostName**: The host name of your backup storage
-* **ServiceName**: The name of your server (`ns1111111.ip-203-0-113.eu`)
-* **FolderMount**: The folder where you want to mount the NFS share
+- **HostName**: The host name of your backup storage
+- **ServiceName**: The name of your server (`ns1111111.ip-203-0-113.eu`)
+- **FolderMount**: The folder where you want to mount the NFS share
 
 Once the share is mounted, you can use commands like **cp** and rsync like on a normal directory.
 
@@ -324,8 +326,8 @@ net use z: \\HostName\ServiceName
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **HostName**: The host name of your backup storage
-* **ServiceName**: The name of your server (`ns1111111.ip-203-0-113.eu`)
+- **HostName**: The host name of your backup storage
+- **ServiceName**: The name of your server (`ns1111111.ip-203-0-113.eu`)
 
 You might receive the following error message:
 
@@ -364,9 +366,9 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 
 The code example above contains variables, which you will need to substitute with your own values.
 
-* **HostName**: The host name of your backup storage
-* **ServiceName**: The name of your server (`ns1111111.ip-203-0-113.eu`)
-* **FolderMount**: The folder where you want to mount the share (it must already exist)
+- **HostName**: The host name of your backup storage
+- **ServiceName**: The name of your server (`ns1111111.ip-203-0-113.eu`)
+- **FolderMount**: The folder where you want to mount the share (it must already exist)
 
 ## Go further
 

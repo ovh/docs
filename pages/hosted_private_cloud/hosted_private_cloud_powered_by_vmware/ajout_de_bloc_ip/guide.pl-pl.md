@@ -13,7 +13,7 @@ Blok IP umożliwia udostępnianie witryn w Internecie.
 ## Wymagania początkowe
 
 - Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
-- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -93,7 +93,7 @@ Jeśli po odłączeniu bloku IP będziesz mógł użyć tego połączenia API do
 > To wywołanie odcina dostęp do sieci maszynom wirtualnym, które wykorzystują dane adresy IP.
 >
 
-Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}. Kliknij Twoją usługę Hosted Private Cloud, a następnie kartę `Operacje`{.action}.
+Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](/links/manager){.external} w sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}. Kliknij Twoją usługę Hosted Private Cloud, a następnie kartę `Operacje`{.action}.
 
 Odnośnik do operacji to „removeIpRipeBlock”.
 

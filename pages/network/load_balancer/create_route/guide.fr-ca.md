@@ -13,7 +13,7 @@ Dans certains cas, il est possible d'aller plus loin, et de router, rediriger ou
 ## Prérequis
 
 - Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} sur une offre autorisant la création des routes
-- Avoir accès à l'[API OVH](https://ca.api.ovh.com/){.external}.
+- Avoir accès à l'[API OVH](/links/api){.external}.
 
 ## En pratique
 
@@ -41,7 +41,7 @@ Il s'agit d'une action « finale ». C'est à dire que si les règles sont valid
 
 ## Présentation de l'API
 
-La gestion des routes n'est accessible qu'au travers de l'[API OVH](https://ca.api.ovh.com/){.external}. Elle est valide uniquement pour les protocoles `http`{.action} et `tcp`{.action}, le chemin `/ipLoadbalancing/{serviceName}/{protocole}/route/`{.action} expose l'API dédiée aux routes.
+La gestion des routes n'est accessible qu'au travers de l'[API OVH](/links/api){.external}. Elle est valide uniquement pour les protocoles `http`{.action} et `tcp`{.action}, le chemin `/ipLoadbalancing/{serviceName}/{protocole}/route/`{.action} expose l'API dédiée aux routes.
 
 L'API des routes de votre service OVH Load Balancer a été pensée spécialement pour être souple, puissante et évolutive. Elle est organisée autour de trois sections principales :
 

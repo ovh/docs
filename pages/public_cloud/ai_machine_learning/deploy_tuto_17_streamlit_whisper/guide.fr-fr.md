@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Déployer le modèle Whisper (EN)
 excerpt: "Comment déployer Whisper, le modèle de reconnaissance de la parole d'OpenAI"
-updated: 2023-12-15
+updated: 2025-06-27
 ---
 
 > [!primary]
@@ -194,18 +194,26 @@ Then run `cd ai-training-examples/apps/streamlit/whisper/` to move to the Whispe
 - `requirements.txt`: Contains the libraries needed by the Whisper application (streamlit, openai-whisper, ...).
 - `Dockerfile`: Contains all the commands you could call on the command line to run your application (installing `requirements.txt`, running the python script, ...).
 
-Then, launch the following command to build your application image. The created image will be named `whisper_app`. You can change it if you wish, but make sure you keep the same identifier throughout the next commands.
+Then, launch one of the following commands to build your application image. The created image will be named `whisper_app`. You can change it if you wish, but make sure you keep the same identifier throughout the next commands.
 
 ```console
+# Build the image using your machine's default architecture
 docker build . -t whisper_app:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t whisper_app:latest .
 ```
 
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
+
 > [!primary]
-> **Command explanation**
 >
-> - The dot `.` argument indicates that our build context (place of the **Dockerfile** and other needed files) is the current directory.
+> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-> - The `-t` argument allows us to choose the identifier to give to our image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we choose **whisper_app:latest**.
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **whisper_app:latest**.
+>
 
 During the build process, Docker reads the instructions from the Dockerfile and executes them step by step. For your information, here are the steps of this Dockerfile:
 

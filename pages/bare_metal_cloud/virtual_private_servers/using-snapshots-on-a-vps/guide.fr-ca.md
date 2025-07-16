@@ -14,13 +14,13 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pazh9ozbkEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!primary]
-> Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr-ca/vps/options/) afin de comparer les détails et tarifs de chaque option.
+> Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](/links/bare-metal/vps-options) afin de comparer les détails et tarifs de chaque option.
 >
 
 ## Prérequis
 
 - Avoir accès à votre [espace client OVHcloud](/links/manager).
-- Un [VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/) déjà configuré.
+- Un [VPS OVHcloud](/links/bare-metal/vps) déjà configuré.
 
 ## En pratique
 

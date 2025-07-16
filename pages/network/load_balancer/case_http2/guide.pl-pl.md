@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja HTTP/2 w usłudze Load Balancer
 excerpt: Dowiedz się, jak skonfigurować HTTP/2 w usłudze Load Balancer
-updated: 2018-01-15
+updated: 2025-07-04
 ---
 
 ## Wprowadzenie
@@ -11,6 +11,13 @@ Obecnie Load Balancer nie wspiera protokołu HTTP/2. Istnieje jednak możliwoś�
 ALPN (Application-Layer Protocol Negotiation) jest rozszerzeniem TLS, które umożliwia warstwie aplikacyjnej negocjowanie, który protokół zostanie użyty (w tym przypadku h2).
 
 **Dzięki niniejszemu przewodnikowi nauczysz się, jak utworzyć usługę HTTP/2 kompatybilną z Load Balancerem. Znajdziesz w nim opis konfiguracji usługi pozwalającej równoważyć obciążenie między kilkoma serwerami wykorzystującymi HTTP/2.**
+
+> [!primary]
+>
+> Od czerwca 2025 front-endy HTTP i TLS usług Load Balancer OVHcloud wspierają natywnie protokół HTTP/2.
+>
+> Poniższy przewodnik dotyczy front-endów TCP.
+>
 
 ## Wymagania początkowe
 
@@ -28,7 +35,7 @@ ALPN (Application-Layer Protocol Negotiation) jest rozszerzeniem TLS, które umo
 
 Dodaj trasę do Twojej usługi.
 
-#### Za pomocą API OVH
+#### Za pomocą API OVHcloud
 
 > [!faq]
 >
@@ -65,7 +72,7 @@ Dodaj trasę do Twojej usługi.
 
 Dodaj regułę do trasy.
 
-#### Za pomocą API OVH
+#### Za pomocą API OVHcloud
 
 > [!faq]
 >
@@ -106,7 +113,7 @@ Modyfikacje wprowadzone w Load Balancerze muszą zostać *wyraźnie zatwierdzone
 
 W przypadku kilku stref, musisz zastosować tę samą konfigurację dla każdej z nich.
 
-#### Za pomocą API OVH
+#### Za pomocą API OVHcloud
 
 Odświeżanie strefy:
 

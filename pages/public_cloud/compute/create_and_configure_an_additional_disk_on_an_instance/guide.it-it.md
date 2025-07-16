@@ -1,7 +1,7 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-updated: 2025-06-03
+updated: 2025-06-27
 ---
 
 <style>
@@ -46,7 +46,7 @@ Ciò può essere utile nei seguenti casi:
 
 ### I diversi tipi di volumi
 
-OVHcloud propone tre tipi di volumi Block Storage, ognuno dei quali risponde a esigenze specifiche in termini di performance, capacità e costi. Queste soluzioni ti permettono di associare volumi di storage persistenti alle tue istanze, garantendo un alto livello di affidabilità e disponibilità.
+OVHcloud propone tre tipi di volumi Block Storage, ognuno dei quali risponde a esigenze specifiche in termini di performance, capacità e costi. Queste soluzioni ti permettono di associare volumi di storage persistenti alle tue istanze, garantendo un alto livello di affidabilità e disponibilità. Se la funzionalità è disponibile, è possibile attivare la crittografia durante la creazione di un volume per tutti i tipi di volume, ad eccezione dei volumi Classic Multi-Attach nelle aree 3AZ.
 
 /// details | **Classic - 500 IOPS garantiti**
 
@@ -56,7 +56,7 @@ Il volume Classic è una soluzione di storage affidabile ed economica, ideale pe
 - Storage di database di piccole e medie dimensioni
 - Backup e archiviazione dei dati
 
-Nelle aree 3AZ, i volumi Classic sono servizi locali che utilizzano un Erasure Coding distribuito tra più zone di disponibilità. In questo modo è garantita la disponibilità dei dati senza impatto né interruzioni in caso di guasto di una zona, a condizione che siano rispettati i requisiti dell'architettura resiliente con collegamento multiplo. Per maggiori informazioni, consulta la nostra guida "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
+Nelle aree 3AZ, i volumi Classic sono servizi locali che utilizzano un Erasure Coding distribuito tra più zone di disponibilità. In questo modo è garantita la disponibilità dei dati senza impatto né interruzioni in caso di guasto di una zona, a condizione che siano rispettati i requisiti dell'architettura resiliente con collegamento multiplo. Per maggiori informazioni, consulta la nostra guida "[Utilizzo corretto e limitazioni dello storage Classic Multi-Attach nelle Region 3AZ](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 
@@ -64,7 +64,7 @@ Nelle aree 3AZ, i volumi Classic sono servizi locali che utilizzano un Erasure C
 
 Il volume High-Speed è progettato per applicazioni che richiedono un accesso più rapido ai dati. Con prestazioni fino a 3000 IOPS, l'ideale per i seguenti utilizzi:
 
-- Database transazionali (MySQL, PostgreSQL, ecc...)
+- Database transazionali (MySQL, PostgreSQL, ecc.)
 - Ambienti di virtualizzazione e container
 - Applicazioni che richiedono latenza ridotta e throughput elevato
 
@@ -72,7 +72,7 @@ Il volume High-Speed è progettato per applicazioni che richiedono un accesso pi
 
 /// details | **High-Speed Gen2 - 30 IOPS/GB e fino a 20.000 IOPS**
 
-La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigenti. Con prestazioni di 30 IOPS/GB, fino a 20.000 IOPS, questo tipo di volume è consigliato per:
+La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigenti. Con una performance di 30 IOPS/GB, fino a 20.000 IOPS, questo tipo di volume è consigliato per i seguenti utilizzi:
 
 - Big Data e analisi in tempo reale
 - Intelligenza artificiale e Machine Learning
@@ -80,61 +80,83 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 
 ///
 
-![volumi_tipici](images/volume-types.png){.thumbnail}
+![volume_types](images/volume-types.png){.thumbnail}
+
+> [!primary]
+>
+> Ogni tipo di volume è disponibile anche in versione cifrata (**LUKS**). Questi volumi garantiscono la confidenzialità dei dati senza impatto sulle performance. Sono disponibili nello Spazio Cliente OVHcloud e con gli strumenti indicati nella sezione seguente, specificando il tipo `<volume_type>-luks`.
+>
 
 ### Associa un nuovo volume
 
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto. Poi apri `Block Storage`{.action} nel menu a sinistra sotto **Storage e Backup**.
 >>
->> In questa sezione clicca sul pulsante `Crea un volume`{.action}.
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato. Apri poi `Block Storage`{.action} nel menu a sinistra sotto **Storage & Backup**.
 >>
->> > [!warning]
->> >
->> > Nota: il volume deve essere creato nella stessa regione dell'istanza a cui si desidera associarlo. Se lo crei in un'altra regione, puoi eliminarlo e ricrearlo nella regione corretta, oppure puoi migrare la regione seguendo [questa guida](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
->> >
+>> In questa sezione, clicca sul pulsante `Crea un volume`{.action}.
 >>
 >> ![seleziona il progetto](images/avolume01.png){.thumbnail}
 >>
->> Segui gli step di configurazione per selezionare le opzioni di posizione, tipo di disco e capacità di disco. Inserisci un nome per il volume e conferma cliccando su `Crea il volume`{.action}.
+>> Seguire i passaggi di configurazione per selezionare le opzioni relative a posizione, tipo, crittografia e capacità del disco. Inserisci un nome per il volume e conferma cliccando su `Crea il volume`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Nota: il volume deve essere creato nella stessa regione dell'istanza a cui si desidera associarlo. Se lo crei in un'altra Region, puoi eliminarlo e ricrearlo nella Region corretta, oppure puoi migrare la Region seguendo [questa guida](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
+>> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
 >>
->> Il nuovo disco verrà visualizzato nello Spazio Cliente OVHcloud.
+>> Il nuovo disco verrà visualizzato nello Spazio Cliente.
 >>
->> ![configura disk](images/avolume03.png){.thumbnail}
+>> ![configure disk](images/avolume03.png){.thumbnail}
 >>
->> A destra del volume, clicca sul pulsante `...`{.action} poi seleziona `Associa all'istanza`{.action}.
+>> A destra del volume, clicca sul pulsante `...`{.action} e seleziona `Associa all’istanza`{.action}.
 >>
 >> ![attach disk 01](images/avolume04.png){.thumbnail}
 >>
->> Nella nuova finestra, seleziona un'istanza dalla lista e clicca su `Conferma`{.action} per associare il disco.
+>> Nella nuova finestra, seleziona un’istanza dalla lista e clicca su `Conferma`{.action} per associare il disco.
 >>
 >> ![attach disk 02](images/avolume05.png){.thumbnail}
 >>
 >> Il processo di associazione del disco all'istanza sta per iniziare. L'operazione potrebbe richiedere alcuni minuti.
 >>
 >> > [!warning]
->> >
->> > Quando il disco è in corso di connessione, assicurati di non lasciare la pagina attuale del tuo Spazio Cliente OVHcloud. Ciò potrebbe interrompere il processo.
+>> > Ricordati di non uscire dalla pagina corrente dello Spazio Cliente OVHcloud mentre il disco è in corso di connessione. Questo potrebbe interrompere il processo.
 >> >
 >>
 > **Via Terraform**
+>> > [!warning]
+>> >
+>> > Ti ricordiamo che i tipi di volume "high-speed-gen2" o "luks" potrebbero non essere disponibili in tutte le regioni.
+>> >
+>>
+>> Tipi di volumi:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> I tipi che terminano con -luks sono crittografati (LUKS).
+>>
 >> Per creare un volume block storage semplice, sono necessari 3 elementi:
 >>
->> * Il nome del volume
->> * Regione
->> * Dimensione del volume in GB
+>> - Il nome del volume
+>> - Regione
+>> - Dimensione del volume in GB
 >>
 >> Nel nostro esempio, creeremo un block storage nella Region **GRA11** con una dimensione di **10 GB**. Aggiungere le righe seguenti a un file denominato *simple_blockstorage.tf*:
 >>
 >> ```python
->> # Creazione di un volume block storage
->> risorsa "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
->>   name   = "terraform_blockstorage" # Nome del volume block storage
->>   size   = 10                       # Dimensione del volume
->>   Region = "GRA11"                  # Region in cui deve essere creato il volume
+>> # Creation of a block storage volume
+>> resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
+>>   name   = "terraform_blockstorage" # Name of the block storage volume
+>>   size   = 10                       # Volume size
+>>   region = "GRA11"                  # Region where the volume must be created
+>>   volume_type = "volume_type"       # classic, high-speed, high-speed-gen2 or equivalent `-luks`
 >> }
 >> ```
 >>
@@ -147,9 +169,9 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 >> Aggiungere le seguenti righe sotto le righe precedenti:
 >>
 >> ```python
->> # Associa il volume all'istanza
+>> # Attach the volume to the instance
 >> resource "openstack_compute_volume_attach_v2" "volume_attach" {
->>   instance_id = "<tua_istanza_id>"
+>>   instance_id = "<your_instance_id>"
 >>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
 >> }
 >> ```
@@ -178,7 +200,7 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 >>       + name              = "terraform_blockstorage"
 >>       + region            = "GRA11"
 >>       + size              = 10
->>       + volume_type       = (known after apply)
+>>       + volume_type       = "high-speed-gen2"
 >>     }
 >>
 >>   # openstack_compute_volume_attach_v2.volume_attach will be created
@@ -207,6 +229,74 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 >>
 >> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 >> ```
+>>
+> **Tramite l'interfaccia Horizon**
+>> Accedi alla sezione a tendina `Volumes`{.action}, clicca su `Volumes`{.action} e poi su `Create Volume`{.action}.
+>>
+>> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
+>>
+>> Inserisci il campo `Volume Name`{.action} e seleziona il tipo di volume che desideri. Clicca su `Create Volume`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Nota che se il tipo di volume high-speed-gen2 o luks non è presente nell'elenco, significa che non è disponibile in questa area.
+>> >
+>>
+>> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
+>>
+>> Per associare questo volume a un'istanza, sulla linea del volume, clicca su la freccia accanto a `Edit Volume`{.action}. Clicca su `Manage Attachments`{.action}
+>>
+>> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
+>>
+>> Seleziona l’istanza a cui vuoi associare il tuo volume e clicca su `Attach Volume`{.action}.
+>>
+>> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
+>>
+> **Tramite la CLI OpenStack**
+>> > [!warning]
+>> >
+>> > Nota che se il tipo di volume "high-speed-gen2" o "luks" non è presente nell'elenco, significa che non è disponibile in questa area.
+>> >
+>>
+>> Tipi di volumi:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> I tipi che terminano con -luks sono crittografati (LUKS).
+>>
+>> Elencare i tipi di volumi disponibili nell'area:
+>>
+>> ```bash
+>> openstack volume type list
+>> ```
+>>
+>> Create un volume specificandone almeno le dimensioni (in GB) e un tipo tra quelli elencati in precedenza. È inoltre possibile specificare un nome per il volume al termine dell'ordine.
+>>
+>> ```bash
+>> openstack volume create --size 1 --type high-speed-gen2 volumeName # classic, high-speed, high-speed-gen2 or equivalent `-luks`
+>> ```
+>>
+>> Per associare un volume a un'istanza disponibile nella Region, esegui il comando:
+>>
+>> ```bash
+>> openstack server add volume <server-id|server-name> <volume-id|volume-name>
+>>
+>> +-----------+-------------------------------------+
+>> | Field | Value |
+>> +-----------+-------------------------------------+
+>> | ID | 7d3d670f- ****-****-****-60dd1e6**** |
+>> | Server ID | 74317f97-****-****-80cf2d4**** |
+>> | Volume ID | 7d3d670f-****-****-****-60dd1e6**** |
+>> | Device | /dev/sdb |
+>> | Tag | None |
+>> +-----------+-------------------------------------+
+>> ```
+>>
 
 ### Configurazione del nuovo disco
 

@@ -33,7 +33,7 @@ Ce processus comporte deux aspects :
 ## Prérequis
 
 - Une infrastructure PCC (SDDC ou PREMIER)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Hosted Private Cloud`{.action}.
 - Être connecté à votre interface d'administration vSphere
 
 ## En pratique
@@ -348,7 +348,7 @@ Si cette organisation est toujours nécessaire, il vous faudra la créer à nouv
 Dans le cadre d'une migration NSX-V vers NSX, si vous utilisez un des services ci-dessous, voici comment effectuer cette migration en détails. 
 
 > [!primary]
-> Si vous avez besoin d'une assistance technique, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans votre démarche de reconstrusction de votre architecture réseau, au travers de prestations personnalisées.
+> Si vous avez besoin d'une assistance technique, notre équipe [Professional Services](/links/professional-services) peut vous accompagner dans votre démarche de reconstrusction de votre architecture réseau, au travers de prestations personnalisées.
 
 Dans un premier temps, nous vous invitions à consulter notre documentation sur [les premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
@@ -382,7 +382,7 @@ De manière générale, en fonction du nombre de *Edges* déployées via NSX-V d
 
 De plus, si votre production nécessite de n'avoir aucune interruption de service, des solutions peuvent être mises en place pour éviter ces coupures.
 
-Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans cette démarche. 
+Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](/links/professional-services) peut vous accompagner dans cette démarche. 
 
 <a name="t1seg"></a>
 ##### Etape 4.8.3.1 Créer les T1 et les segments
@@ -793,6 +793,6 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

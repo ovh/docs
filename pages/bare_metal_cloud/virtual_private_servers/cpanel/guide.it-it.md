@@ -1,14 +1,8 @@
 ---
 title: "Deploy di cPanel su un VPS"
 excerpt: "Come installare un VPS con l'applicazione cPanel preinstallata"
-updated: 2024-01-31
+updated: 2025-07-14
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
-## Obiettivo
 
 ## Obiettivo
 
@@ -26,12 +20,12 @@ Grazie a un’interfaccia grafica che permette di automatizzare i parametri, l�
 
 ## Prerequisiti
 
-- Disporre di una soluzione [VPS recente](https://www.ovhcloud.com/it/vps/){.external} con un [OS compatibile con cPanel](https://www.ovhcloud.com/it/vps/os/).
+- Disporre di una soluzione [VPS recente](/links/bare-metal/vps) con un [OS compatibile con cPanel](/links/bare-metal/vps-os).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
-Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Cliente OVHcloud](/links/manager) tramite un [OS compatibile con cPanel](https://www.ovhcloud.com/it/vps/os/).
+Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Cliente OVHcloud](/links/manager) tramite un [OS compatibile con cPanel](/links/bare-metal/vps-os).
 
 > [!warning]
 >
@@ -40,7 +34,7 @@ Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Client
 
 Per installare il tuo server cPanel, ordina un VPS con la distribuzione cPanel.
 
-![cPanel](images/cpanel_order.png){.thumbnail}
+![cPanel](images/cpanel-order.png){.thumbnail}
 
 Quando il VPS è pronto, ricevi un’email con le credenziali di accesso al server cPanel:
 
@@ -112,4 +106,4 @@ Per [proteggere un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_y
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

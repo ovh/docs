@@ -15,7 +15,7 @@ In some cases, you can go a step further and route, redirect or block traffic ac
 ## Requirements
 
 - an [OVH Load Balancer](https://www.ovh.com/world/solutions/load-balancer/){.external} on a solution that lets you create routes
-- access to the [OVH API](https://ca.api.ovh.com/){.external}
+- access to the [OVH API](/links/api){.external}
 
 ## Instructions
 
@@ -43,7 +43,7 @@ This is what is known as an ‘end action’. It means that if the rules are con
 
 ## An introduction to the API.
 
-You can only manage routes via the [OVH API](https://ca.api.ovh.com/){.external}. It is only valid for `http`{.action} and `tcp`{.action} protocols, and the `/ipLoadbalancing/{serviceName}/{protocol}/route/`{.action} pathway exposes the API dedicated to routes.
+You can only manage routes via the [OVH API](/links/api){.external}. It is only valid for `http`{.action} and `tcp`{.action} protocols, and the `/ipLoadbalancing/{serviceName}/{protocol}/route/`{.action} pathway exposes the API dedicated to routes.
 
 The API for routes to the OVH Load Balancer is specially designed for flexibility, power and scalability. It is organised around three main sections:
 
@@ -619,7 +619,7 @@ Answer
 |routeId|The route’s ID number|
 |displayName|The display name of the route|
 
-### Actions available
+### Actions available <a name="available-actions"></a>
 
 This call returns the list of actions available for TCP and HTTP routes, as well as the values expected for each of the fields.
 

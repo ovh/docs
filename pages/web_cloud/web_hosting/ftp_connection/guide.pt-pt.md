@@ -104,7 +104,7 @@ Se as informações estiverem corretas, o programa que utiliza mostrará o conte
 
 #### 2. Ligação através de um acesso SSH <a name="ssh"></a>
 
-Este tipo de acesso requer conhecimentos técnicos avançados, bem como uma oferta de [alojamento web da OVHcloud](/links/web/hosting){.external} **Pro* ou **Performance**.
+Este tipo de acesso requer conhecimentos técnicos avançados, bem como uma oferta de [alojamento web da OVHcloud](/links/web/hosting){.external} **Pro** ou **Performance**.
 
 Para se ligar em SSH, utilize um terminal para interagir diretamente com o seu espaço de armazenamento FTP através de linhas de comando. 
 

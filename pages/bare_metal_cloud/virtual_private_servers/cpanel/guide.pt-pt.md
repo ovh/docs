@@ -1,12 +1,8 @@
 ---
 title: "Implementar o cPanel num VPS"
 excerpt: "Saiba como instanciar um VPS com a aplicação cPanel pré-instalada"
-updated: 2024-01-31
+updated: 2025-07-14
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -24,12 +20,12 @@ Graças a uma interface gráfica que permite a automatização dos parâmetros, 
 
 ## Requisitos
 
-- Ter uma oferta [VPS recente](https://www.ovhcloud.com/pt/vps/){.external} com uma distribuição [compatível com cPanel](https://www.ovhcloud.com/pt/vps/os/).
+- Ter uma oferta [VPS recente](/links/bare-metal/vps) com uma distribuição [compatível com cPanel](/links/bare-metal/vps-os).
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-Se já dispõe de um VPS e deseja instalar o cPanel, pode reinstalar o VPS a partir da sua [Área de Cliente OVHcloud](/links/manager) através de um [OS compatível com cPanel](https://www.ovhcloud.com/pt/vps/os/).
+Se já dispõe de um VPS e deseja instalar o cPanel, pode reinstalar o VPS a partir da sua [Área de Cliente OVHcloud](/links/manager) através de um [OS compatível com cPanel](/links/bare-metal/vps-os).
 
 > [!warning]
 >
@@ -38,7 +34,7 @@ Se já dispõe de um VPS e deseja instalar o cPanel, pode reinstalar o VPS a par
 
 Para instalar o seu servidor cPanel, encomende um VPS com a distribuição cPanel.
 
-![cPanel](images/cpanel_order.png){.thumbnail}
+![cPanel](images/cpanel-order.png){.thumbnail}
 
 Quando o VPS estiver pronto, receberá um e-mail a dar-lhe as informações de acesso ao servidor cPanel:
 
@@ -110,4 +106,4 @@ Além disso, recomendamos que consulte o nosso manual para [proteger um VPS](/pa
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

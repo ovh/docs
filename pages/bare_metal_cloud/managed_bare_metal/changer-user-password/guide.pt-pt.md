@@ -13,14 +13,14 @@ A gestão das autorizações e palavras-passe dos utilizadores cliente vSphere r
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}.
 - Dispor de uma conta de utilizador criada a partir da Área de Cliente OVHcloud. Para mais informações, [consulte este manual](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#utilizadores)
 
 ## Instruções
 
 ### Alterar palavra-passe
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, dirija-se à secção `Bare Metal Cloud`{.action} (1), clique em `Managed Bare Metal`{.action} (2) e selecione o seu servidor na lista (3). De seguida, clique no separador `Utilizadores`{.action} (4).
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, dirija-se à secção `Bare Metal Cloud`{.action} (1), clique em `Managed Bare Metal`{.action} (2) e selecione o seu servidor na lista (3). De seguida, clique no separador `Utilizadores`{.action} (4).
 
 ![acces espace client](images/userpassword1.png){.thumbnail}
 

@@ -73,7 +73,7 @@ Les services et les données sont protégés contre les incidents localisés gr�
 
 > [!success]
 >
-> Pour améliorer la résilience des applications critiques dans une région 1-AZ, envisagez d'utiliser la réplication asynchrone pour une protection accrue. Cela permet de renforcer la résilience des applications et des données. Une autre option pour atténuer ce risque consiste à utiliser un [**mode de déploiement 3-AZ**](#3azregion).
+> Pour améliorer la résilience des applications critiques dans une région 1-AZ, envisagez d'utiliser la réplication asynchrone pour une protection accrue. Cela permet de renforcer la résilience des applications et des données. Une autre option pour atténuer ce risque consiste à utiliser un [**mode de déploiement 3-AZ**](#3-az-region).
 
 #### Spécifications de redondance - Région 1-AZ
 

@@ -451,7 +451,7 @@ Jeśli używasz innego klienta SSH, zapoznaj się z jego dokumentacją. Przykła
 
 Kontynuuj [etap 6 poniżej](#manage-access).
 
-<a name="Windows"></a>
+<a name="windows"></a>
 
 #### 5.3: Instancje Windows
 

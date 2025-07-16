@@ -66,7 +66,7 @@ A migração pode ser efetuada a partir de duas interfaces:<br>
 - **o do assistente de configuração Hosted Exchange**, apenas se encomendou um serviço Hosted Exchange e ainda não o configurou;
 - **do MX Plan**, quando tiver um serviço E-mail Pro ou Exchange (configurado ou não) e um endereço MX Plan que pretende migrar.
 
-> Lembre-se de que antes de iniciar a migração, certifique-se de que nenhum **reencaminhamento* ou que nenhum **atendedor automático* está configurado no seu MX Plan.
+> Lembre-se de que antes de iniciar a migração, certifique-se de que nenhum *reencaminhamento* ou que nenhum **atendedor automático* está configurado no seu MX Plan.
 > ![email](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Quando estiver pronto, continue a ler este manual em função da interface selecionada. Lembramos que o tempo de migração depende da quantidade de conteúdo a migrar para a sua nova conta. Pode variar de alguns minutos a várias horas.

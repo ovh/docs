@@ -1,7 +1,7 @@
 ---
 title: "Utilizzare la webmail Zimbra"
 excerpt: "Scopri l'interfaccia della Webmail Zimbra per i tuoi indirizzi email MX Plan di OVHcloud"
-updated: 2025-02-12
+updated: 2025-07-08
 ---
 
 <style>
@@ -43,6 +43,7 @@ OVHcloud fornisce un servizio di webmail chiamato Zimbra per accedere a un accou
 - [Calendario](#calendar)
     - [Gestione calendari](#calendar-management)
     - [Impegni](#tasks)
+- [Archiviazione](#storage)
 - [Filtri](#filters)
     - [Come impostare i filtri](#filters-howto)
     - [Crea un filtro](#filters-creation)
@@ -439,6 +440,72 @@ Quando si crea un'attività, è possibile impostare una data di scadenza e una p
 Clicca su `Salva`{.action} per completare la creazione dell’operazione.
 
 ![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+
+### Archiviazione <a name="storage"></a>
+
+> [!success]
+>
+> La funzionalità di archiviazione chiamata "Valigetta" è disponibile solo a partire dall'offerta Zimbra Pro.
+
+> [!warning]
+>
+> L'offerta Zimbra Pro è attualmente in versione beta, alcune funzionalità sono ancora in corso di miglioramento.
+
+Clicca sull’icona `Valigetta`{.action} nella barra superiore per accedere allo spazio di archiviazione. Potrete depositare i vostri file e condividerli.
+
+1. Nella colonna a sinistra sono riportate le cartelle del tuo spazio di archiviazione.
+
+    - Per creare una nuova cartella, clicca su `+ Aggiungi una cartella`{.action} in fondo alla colonna. Inserisci il nome che ti interessa e conferma cliccando su `Invio`{.action}.
+    - Per creare una sottocartella, clicca con il tasto destro su una delle cartelle e seleziona `Crea sottocartella`{.action}. Inserisci il nome che ti interessa e conferma cliccando su `Invio`{.action}.
+
+2. Nella colonna centrale è visualizzato l'elenco dei file presenti nella cartella selezionata.
+
+3. Nella finestra a destra, a seconda del tipo di file selezionato nella colonna centrale, viene visualizzata un'anteprima del contenuto. Nella barra superiore dell'anteprima vengono visualizzate le azioni possibili per il file o i file selezionati.
+
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+
+#### Aggiungi un file
+
+Per aggiungere un file allo spazio di archiviazione, segui questi step:
+
+1. Clicca su `Scarica`{.action} (Upload) nella colonna di sinistra.
+2. Nella finestra Esplora file, seleziona il file o i file da caricare sullo spazio di archiviazione.
+3. Clicca su `Apri`{.action} per caricare gli elementi nel tuo spazio di archiviazione.
+
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+
+#### Condividi un file/cartella
+
+La condivisione vi permette di dare accesso ad una cartella o ad un file sul vostro archivio ad una persona terza, fuori dal vostro account Zimbra.
+
+> [!warning]
+>
+> La condivisione che permette l'amministrazione delle cartelle e dei file è possibile solo con un altro account Zimbra Pro.
+
+> [!tabs]
+> **Condividi un file**
+>>
+>> 1. Seleziona il file da condividere e clicca su `Altro...`{.action}.
+>> 2. Clicca su `Condividi...`{.action}.
+>> 3. Inserisci l’indirizzo email dell’ospite e clicca su `Aggiungi`{.action}. È possibile aggiungere più indirizzi email.
+>> 4. Seleziona i diritti che vuoi assegnare all'ospite.
+>> 5. Clicca su `Salva`{.action} per completare la condivisione.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>>
+> **Condividi una cartella**
+>>
+>> 1. Clicca con il tasto destro sulla cartella che vuoi condividere e poi clicca su `Condividi...`{.action}.
+>> 2. Inserisci l’indirizzo email dell’ospite e clicca su `Aggiungi`{.action}. È possibile aggiungere più indirizzi email.
+>> 3. Seleziona i diritti che vuoi assegnare all'ospite.
+>> 4. Clicca su `Salva`{.action} per completare la condivisione.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>>
+
+L'ospite riceve una e-mail che lo invita a creare un account Zimbra composto da un identificativo e una password. Questo account permette di accedere a un’interfaccia Zimbra limitata a ciò che è stato condiviso.
+
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
 
 ### Filtri <a name="filters"></a>
 

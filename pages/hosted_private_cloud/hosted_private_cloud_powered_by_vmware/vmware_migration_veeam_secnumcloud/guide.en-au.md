@@ -90,7 +90,7 @@ Set up a secure tunnel between your on-premises infrastructure and the OVHcloud 
 - [Configure IPsec VPN with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
 - Use a compatible third-party solution like [Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/IPSEC_VPN.htm) or [OPNsense](https://docs.opnsense.org/manual/how-tos/ipsec-s2s.html)
 
-If you need higher performance and lower latency, you can optionally use [OVHcloud Connect](https://www.ovhcloud.com/en-gb/network/ovhcloud-connect/).
+If you need higher performance and lower latency, you can optionally use [OVHcloud Connect](/links/network/ovhcloud-connect).
 
 > [!warning]
 > SNC environments require SPNs (Security Provider Names). Learn more in [this connectivity guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-vpn-spn).

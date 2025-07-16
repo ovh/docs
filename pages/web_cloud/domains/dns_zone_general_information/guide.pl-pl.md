@@ -14,7 +14,7 @@ Aby lepiej zrozumieć całość odpowiedzi, zalecamy zapoznanie się z naszym pr
 
 Na przykład, jeśli chcesz wejść na stronę *domain.tld* za pośrednictwem przeglądarki internetowej, Twoje zapytanie jest początkowo przetwarzane przez ten zestaw DNS. Serwer DNS dostarczy w odpowiedzi na Twoją przeglądarkę internetową adres IP serwera hostującego stronę *domain.tld*.
 
-Po wpisaniu *domain.tld** wszystkie **serwery DNS** powiązane z tą domeną zostaną zbadane. Zawierają one **strefę DNS** nazwy domeny *domain.tld*, w której jest podany adres IP hostingu *domain.tld*. Następnie Twoja przeglądarka będzie mogła wyświetlić stronę WWW *domain.tld* zawartą na hostingu. Nazywamy to rozdzielczością DNS.
+Po wpisaniu **domain.tld** wszystkie **serwery DNS** powiązane z tą domeną zostaną zbadane. Zawierają one **strefę DNS** nazwy domeny *domain.tld*, w której jest podany adres IP hostingu *domain.tld*. Następnie Twoja przeglądarka będzie mogła wyświetlić stronę WWW *domain.tld* zawartą na hostingu. Nazywamy to rozdzielczością DNS.
 
 **Dowiedz się, jaką rolę odgrywa strefa DNS, co to jest strefa DNS i jak działa z nazwą domeny.**
 

@@ -10,8 +10,8 @@ Ce guide fournit des instructions sur l'utilisation du module Terraform SAP HANA
 
 ## Prérequis
 
-- Être connecté à l'[espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Une [solution VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/vmware/) déployée.
+- Être connecté à l'[espace client](/links/manager).
+- Une [solution VMware on OVHcloud](/links/hosted-private-cloud/vmware) déployée.
 - Binaire Terraform (version >= 1.4).
 
 ## En pratique

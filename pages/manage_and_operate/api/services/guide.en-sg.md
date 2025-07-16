@@ -17,7 +17,7 @@ The **/service** API route consists of actions common to all types of services a
 
 ## Requirements
 
-* Being connected on [OVHcloud API](https://ca.api.ovh.com/){.external}.
+* Being connected on [OVHcloud API](/links/api){.external}.
 * Having [created your credentials for OVHcloud API](/pages/manage_and_operate/api/first-steps){.external}.
 * Having a customer account wih Reseller Tag (contact your sales representative for eligibility if applicable).
 

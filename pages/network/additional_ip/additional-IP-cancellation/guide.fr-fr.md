@@ -22,7 +22,7 @@ Comme tous les services OVHcloud, les services Additional IP peuvent être rési
 ## Prérequis
 
 - Disposer d'un [service Additional IP](/links/network/additional-ip).
-- Être connecté à la [console API OVHcloud](https://eu.api.ovh.com/).
+- Être connecté à la [console API OVHcloud](/links/api).
 - Consulter le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion des identités et des accès
 excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources Object Storage
-updated: 2025-03-21
+updated: 2025-07-11
 ---
 
 ## Objectif
@@ -120,6 +120,24 @@ Quelques exemples de fichiers de configuration JSON :
 }
 ```
 
+**Refuser l'affichage de tous les buckets appartenant au compte.**
+
+> [!primary]
+>
+> L'action (`s3:ListAllMyBuckets`) est autorisée par défaut pour un utilisateur donné. Ajouter explicitement un `deny`{.action} si vous souhaitez refuser l'utilisation de l'opération d'API `ListBuckets`{.action}.
+>  
+
+```json
+{
+  "Statement":[{
+    "Sid": "DenyListBucket",
+    "Effect": "Deny",
+    "Action":["s3:ListAllMyBuckets"],
+    "Resource":["*"]
+  }]
+}
+```
+
 **Autoriser toutes les opérations sur toutes les ressources d'un projet**
 
 ```json
@@ -176,6 +194,7 @@ Quelques exemples de fichiers de configuration JSON :
 | s3:GetObjectRetention | Object |
 | s3:GetObjectTagging | Object |
 | s3:GetReplicationConfiguration | Bucket |
+| s3:ListAllMyBuckets | Bucket |
 | s3:ListBucket | Bucket |
 | s3:ListBucketMultipartUploads | Bucket |
 | s3:ListMultipartUploadParts | Object |

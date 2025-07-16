@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2025-02-26
+updated: 2025-07-03
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -10,12 +10,12 @@ We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) &
 
 Currently, we support the following Kubernetes releases:
 
-* `1.27`
 * `1.28`
 * `1.29`
 * `1.30`
 * `1.31`
 * `1.32`
+* `1.33`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](/pages/public_cloud/containers_orchestration/managed_kubernetes/upgrading-kubernetes-version) to receive official support for your cluster.
 
@@ -35,12 +35,12 @@ The OS, kernel and Docker demon version on your nodes will be regularly updated.
 
 We use `containerd` as the default CRI
 
-* `1.27`: 1.7.18
 * `1.28`: 1.7.18
 * `1.29`: 1.7.18
 * `1.30`: 1.7.18
 * `1.31`: 1.7.18
 * `1.32`: 1.7.25
+* `1.33`: 2.1.3
 
 ## CNI (Cluster Network Interface)
 
@@ -54,6 +54,7 @@ The versions installed depends on the Kubernetes version:
 * `1.30`: calico v3.28.0, flannel v0.24.3
 * `1.31`: calico v3.28.1, flannel v0.24.4
 * `1.32`: calico v3.29.1, flannel v0.24.4
+* `1.33`: calico v3.30.1, flannel v0.24.4
 
 ## CCM (Cloud-controller-manager)
 
@@ -64,8 +65,8 @@ Our cloud-controller-manager (CCM) is based on the OpenStack cloud-controller-ma
 * `1.29`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
 * `1.30`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
 * `1.31`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-* `1.32`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-
+* `1.32`: OVH Octavia CCM based on OpenstackCCM 1.29
+* `1.33`: OVH Octavia CCM based on OpenstackCCM 1.33
 
 ## CSI (Container Storage Interface)
 
@@ -92,6 +93,7 @@ The versions are:
 * `1.30`: coredns v1.11.3, metrics-server v0.7.2
 * `1.31`: coredns v1.11.3, metrics-server v0.7.2
 * `1.32`: coredns v1.12.0, metrics-server v0.7.2
+* `1.33`: coredns v1.12.1, metrics-server v0.7.2
 
 ## Enabled policies
 

@@ -1,7 +1,7 @@
 ---
 title: "How to use Zimbra webmail"
 excerpt: "Discover the Zimbra webmail interface for your OVHcloud MX Plan email accounts"
-updated: 2025-02-12
+updated: 2025-07-08
 ---
 
 <style>
@@ -43,6 +43,7 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
 - [Calendar](#calendar)
     - [Calendar management](#calendar-management)
     - [Tasks](#tasks)
+- [Storage](#storage)
 - [Filters](#filters)
     - [How to set filters](#filters-howto)
     - [Create a filter](#filters-creation)
@@ -231,6 +232,7 @@ Your Zimbra interface has 2 configuration menus:
 ![Zimbra - preferences](images/zimbra-14.png){.thumbnail}
 
 - **(1) Profile**: Click on the name of your email account in the top right-hand corner of your interface. From this menu, you have the options "**Change password**", **Change Profile Image** and you can log out of the account by clicking on **Logout**.
+
 - **(2) Settings**: Click on the cogwheel icon in the top right-hand corner of your interface to change the **Language** of your interface. In the **Help** section, you can read the official Zimbra documentation. In **Settings**, you will find all of the configuration elements described in the following tabs:
 
 > [!tabs]
@@ -438,6 +440,72 @@ When you create a task, you can set a due date and priority so that you can rank
 Then click `Save`{.action} to finish creating your task.
 
 ![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+
+### Storage <a name="storage"></a>
+
+> [!success]
+>
+> The storage feature called "Briefcase" is only available with the Zimbra Pro solution.
+
+> [!warning]
+>
+> The Zimbra Pro solution is currently in beta version. Some features are still being improved.
+
+Click the `Briefcase`{.action} icon in the top bar to access your storage space. You can upload your files and share them there.
+
+1. In the left-hand column, you will see the folders for your storage space.
+
+    - To create a new folder, click `+ Add a folder`{.action} at the bottom of the column. Enter the name you want, then confirm by pressing the `Enter`{.action} key.
+    - To create a subfolder, right-click on one of the folders, then click `Create subfolder`{.action}. Enter the name you want, then confirm by pressing the `Enter`{.action} key.
+
+2. In the center column, you will see a list of the files in the selected folder.
+
+3. In the right window, depending on the file type selected in the center column, a preview of the content is displayed. The top bar of the preview displays the possible actions on the file or files you selected.
+
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+
+#### Add a file
+
+To add a file to your storage space, follow the steps below:
+
+1. Click `Upload`{.action} in the left column.
+2. From the File Browse window, select the file(s) to upload to your storage space.
+3. Click `Open`{.action} to upload the item(s) to your storage space.
+
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+
+#### Share a file/folder
+
+Sharing allows you to give access to a folder or file on your storage to a third party, outside your Zimbra account.
+
+> [!warning]
+>
+> Sharing for folder and file administration is only possible with another Zimbra Pro account.
+
+> [!tabs]
+> **Share a file**
+>>
+>> 1. Select the file to share and click `More...`{.action}.
+>> 2. Click `Share...`{.action}.
+>> 3. Enter the guest email address, then click `Add`{.action}. You can add multiple email addresses.
+>> 4. Choose the permissions you want to assign to the guest.
+>> 5 Click `Save`{.action} to finalize the sharing.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>>
+> **Share a folder**
+>>
+>> 1. Right-click on the folder you want to share, then click `Share...`{.action}.
+>> 2. Enter the guest email address, then click `Add`{.action}. You can add multiple email addresses.
+>> 3. Choose the permissions you want to assign to the guest.
+>> 4. Click `Save`{.action} to finalize the sharing.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>>
+
+The guest receives an email inviting them to create a Zimbra account with a username and password. This account provides access to a Zimbra interface limited to the shared content only.
+
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
 
 ### Filters <a name="filters"></a>
 

@@ -19,19 +19,19 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 >
 > A OVHcloud oferece-lhe serviços pelos quais é responsável. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Mais informações na secção « Ir mais longe » deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Mais informações na secção « Ir mais longe » deste guia.
 >
 
 ## Requisitos
 
-- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external}.
-- Dispor de um ou vários endereços [Additional IP](/links/network/additional-ip){.external}.
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal).
+- Dispor de um ou vários endereços [Additional IP](/links/network/additional-ip).
 - Estar ligado ao servidor usando o protocolo SSH.
 
 > [!warning]
-> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+> Para mais informações, consulte o nosso [comparativo](/links/bare-metal/eco-compare).
 
 ## Instruções
 
@@ -563,4 +563,4 @@ De seguida,efetuar um ping a partir do seu Additional IP para o exterior. Se iss
 
 [Modo bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

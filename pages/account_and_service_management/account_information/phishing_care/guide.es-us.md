@@ -32,7 +32,7 @@ En la práctica, a menudo se trata del envío de un mensaje de correo electróni
 |---|---|---|
 |Remitente|Compruebe que la dirección utilizada para enviar el mensaje de correo termina en **@ovhcloud.com**, **@ovh.com**, **@ovh.es**, **@soyoustart.com**, **@kimsufi.com** o un subdominio como **@events.ovhcloud.com**, **@news.soyoustart.com**, **@services.kimsufi.com**.|El remitente del correo será una dirección que no proviene de OVHcloud.|
 |Asunto|Si su ID de cliente (que empieza con dos letras que corresponden a las iniciales del primer apellido y del nombre, según figura en su cuenta de OVHcloud) o la dirección de correo electrónico asociada a su cuenta aparecen en el asunto del mensaje, verifique que son correctos.|Por lo general, el mensaje estará marcado como **spam**, indicándolo entre corchetes en el asunto, y no aparecerá su ID de cliente (o este será incorrecto).|
-|Enlace|Si sitúa el ratón sobre el enlace, podrá ver el destino en la parte inferior de su navegador sin tener que hacer clic en él. En la imagen, el enlace dirige efectivamente a `https://www.ovh.com/`.|En el email de phishing, al pasar el ratón sobre el enlace se observa que este no tiene ninguna relación con OVHcloud. **No haga clic en él**.|
+|Enlace|Si sitúa el ratón sobre el enlace, podrá ver el destino en la parte inferior de su navegador sin tener que hacer clic en él. En la imagen, el enlace dirige efectivamente a <https://www.ovh.com/>.|En el email de phishing, al pasar el ratón sobre el enlace se observa que este no tiene ninguna relación con OVHcloud. **No haga clic en él**.|
 
 #### Informar de un email de phishing
 

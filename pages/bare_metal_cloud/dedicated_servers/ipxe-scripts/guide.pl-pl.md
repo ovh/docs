@@ -15,7 +15,7 @@ updated: 2024-02-27
 > Ten artykuł jest przeznaczony dla doświadczonych użytkowników, którzy posiadają co najmniej podstawową wiedzę na temat [rozruchu PXE](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) oraz na temat wdrażania w OVHcloud: [PXE](https://ipxe.org/).
 >
 
-W Panelu klienta OVHcloud] można wybrać tryb bootowania spośród wstępnie zdefiniowanych trybów: dysk główny lub rescue.
+W [Panelu klienta OVHcloud](/links/manager) można wybrać tryb bootowania spośród wstępnie zdefiniowanych trybów: dysk główny lub rescue.
 Za pośrednictwem [API OVHcloud](https://api.ovh.com/) możesz również zdefiniować własne skrypty.
 
 Spersonalizowany skrypt może być interesujący w następujących przypadkach:

@@ -12,7 +12,7 @@ Los bloques de IP permiten que sus servicios estén accesibles online.
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 - Disponer de una [infraestructura Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external} en su cuenta de OVHcloud.
 
 ## Procedimiento
@@ -93,7 +93,7 @@ A continuación utilice la siguiente llamada para mover la IP en el parking de I
 > Esta llamada interrumpe la red en las MV que utilizan las IP en cuestión.
 >
 
-Podrá seguir la migración del bloque de IP desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en el menú `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}. Haga clic en su servicio y, a continuación, en la pestaña `Operaciones`{.action}.
+Podrá seguir la migración del bloque de IP desde su [área de cliente de OVHcloud](/links/manager) en el menú `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}. Haga clic en su servicio y, a continuación, en la pestaña `Operaciones`{.action}.
 
 La referencia de la operación es «removeIpRipeBlock».
 

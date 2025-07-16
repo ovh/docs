@@ -16,7 +16,7 @@ OVHcloud udostępnia klientom VPS obrazy wstępnie zainstalowanych aplikacji, kt
 
 ## Wymagania początkowe
 
-- Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie serwera [VPS](/links/bare-metal/vps) na koncie OVHcloud
 
 ## W praktyce
 

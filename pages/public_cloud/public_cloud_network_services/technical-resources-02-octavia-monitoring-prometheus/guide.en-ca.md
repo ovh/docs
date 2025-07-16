@@ -174,7 +174,7 @@ Once the `PROMETHEUS` listener is `ACTIVE`, you can configure Prometheus to coll
 
 For more information on setting up Prometheus, see the [Prometheus project website](https://prometheus.io/).
 
-You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia Load Balancers is available [here](https://grafana.com/grafana/dashboards/15828-octavia-amphora-load-balancer/).
+You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia Load Balancers is available [here](https://grafana.com/grafana/dashboards/15828-openstack-octavia-amphora-load-balancer/).
 
 The metrics have the following naming format:
 

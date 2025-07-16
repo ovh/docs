@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Kompatybilność (EN)
 excerpt: "Discover our S3* compatible Object Storage features list"
-updated: 2025-06-17
+updated: 2025-06-27
 ---
 
 <style>
@@ -522,7 +522,7 @@ This guide lists the features supported by Object Storage.
         <td>Browser-based uploads</td>
         <td>POST</td>
         <td>no</td>
-        <td>no</td>
+        <td>yes</td>
     </tr>
     <tr>
         <td>Data analytics</td>

@@ -27,14 +27,14 @@ Bloki adresów IP w regionie mogą być przenoszone między centrami danych w da
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} w Panelu klienta
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) w Panelu klienta
 - Posiadanie [adresu Additional IP](/links/network/additional-ip)
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 
 > [!warning]
-> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
 >
-> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](/links/bare-metal/eco-compare).
 >
 
 > [!warning]

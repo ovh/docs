@@ -18,12 +18,12 @@ Para proteger ao máximo o seu sistema, o seu servidor Windows Server dispõe da
 >
 > A OVHcloud oferece-lhe serviços que são da sua responsabilidade. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas quanto à administração, utilização ou segurança de um servidor, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas quanto à administração, utilização ou segurança de um servidor, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Para mais informações, aceda à secção [Quer saber mais?](#go-further).
 >
 
 ## Requisitos
 
-- Um servidor [VPS](https://www.ovhcloud.com/pt/vps/) Windows na sua conta OVHcloud.
+- Um servidor [VPS](/links/bare-metal/vps) Windows na sua conta OVHcloud.
 - Dispor de um acesso de administrador ao seu servidor através de um escritório distante em Windows. 
 
 ## Instruções
@@ -112,6 +112,6 @@ Clique no botão `Terminar`{.action} para terminar o processo e criar a nova reg
 
 De seguida, poderá efetuar alterações ao nível de segurança da nova regra criada.
 
-## Saiba mais
+## Quer saber mais? <a name="go-further"></a>
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -619,7 +619,7 @@ Answer
 |routeId|The route’s ID number|
 |displayName|The display name of the route|
 
-### Actions available
+### Actions available <a name="available-actions"></a>
 
 This call returns the list of actions available for TCP and HTTP routes, as well as the values expected for each of the fields.
 

@@ -18,7 +18,7 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 >
 
 ## Voraussetzungen
@@ -28,9 +28,9 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder GUI.
 
 > [!warning]
-> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
 >
-> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 
 ## In der praktischen Anwendung
 
@@ -563,4 +563,4 @@ Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn d
 
 [Network Bridge einrichten](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

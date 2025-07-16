@@ -81,7 +81,7 @@ Das folgende Fenster wird angezeigt, um den Status anhand von vier Schritten anz
 
 ### Widerrufsrecht ausüben
 
-In Artikel 14.1.1 unserer [Allgemeinen Geschäftsbedingungen](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-de.pdf){.action} heißt es: "*Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.*."
+In Artikel 14.1.1 unserer [Allgemeinen Geschäftsbedingungen](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-de.pdf){.action} heißt es: "*Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.*"
 
 Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren AGB.
 
@@ -94,7 +94,7 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 >
 > Außerdem gilt das Widerrufsrecht nicht für unbezahlte Bestellungen, da diese automatisch annulliert werden, sobald der Bestellschein ausläuft.
 >
-> Weiterhin gilt es nicht für besondere Dienstleistungen, etwa [Domainnamen](https://www.ovhcloud.com/de/domains/) und [Sectigo SSL-Zertifikate](https://www.ovhcloud.com/de/web-hosting/options/ssl/).
+> Weiterhin gilt es nicht für besondere Dienstleistungen, etwa [Domainnamen](/links/web/domains) und [Sectigo SSL-Zertifikate](/links/web/hosting-options-ssl).
 >
 
 Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt über das [OVHcloud Kundencenter](/links/manager) ausgeübt werden:

@@ -16,12 +16,12 @@ Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHclo
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -60,7 +60,7 @@ Revenez au mode de démarrage « normal » et redémarrez le serveur dans votre 
 
 Vous avez maintenant accès au serveur avec votre nouvelle paire de clés SSH.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 

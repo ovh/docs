@@ -1,5 +1,5 @@
 ---
-title: "Increasing the size of an additional disk"
+title: "How to increase the size of an additional disk"
 excerpt: "Find out how to increase the size of an additional volume and enlarge its main partition"
 updated: 2023-03-10
 ---
@@ -8,11 +8,11 @@ updated: 2023-03-10
 
 If you have reached the maximum capacity on your additional disk, you can add more storage by increasing its size.
 
-This guide explains how to increase the size of an additional disk and extend the main partition accordingly.
+**This guide explains how to increase the size of an additional disk and extend the main partition accordingly.**
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
+- A [VPS](/links/bare-metal/vps) in your OVHcloud account
 - An [additional disk](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configured on the VPS
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access via SSH or RDP to your VPS
@@ -33,7 +33,7 @@ Choose the new disk size in the popup window, then click on `Increase`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-A message will appear to confirm your request. Click on the link inside the message box and follow the order process. (It is also possible that a new browser tab for the order has opened automatically.)
+A message will appear to confirm your request. Click on the link inside the message box and follow the order process. A new browser tab opens to finalize the order.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
@@ -51,7 +51,7 @@ After the payment is confirmed, the disk upgrade will take a few minutes. You ca
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](/links/community) if you experience any issues.
 >
 
 #### On a Linux VPS

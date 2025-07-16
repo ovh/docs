@@ -55,7 +55,7 @@ Na janela que se abrir, complete os campos obrigatórios. Clique em `Validar`{.a
 | Papel | Detalhes |
 |--|--|
 | UNPRIVILEGED (Apenas leitura) | Dá acesso de leitura à Área de Cliente OVHcloud e a todas as suas secções. |
-| DEFAULT (Administrador restrito) | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção** da gestão de** utilizadores. |
+| DEFAULT (Administrador restrito) | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção da gestão de utilizadores**. |
 | ADMIN (Administrador) | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **incluindo** a gestão dos utilizadores. |
 
 O utilizador receberá um ID próprio, composto pelo ID digital da conta (indicado no menu «Gestão de utilizadores») e pelo nome de utilizador, com as duas referências separadas por uma barra.
@@ -96,7 +96,7 @@ Os grupos atribuem um nível de privilégio por defeito aos utilizadores que con
 |--|--|
 | Nenhum | Não dá acesso à Área de Cliente OVHcloud se não for implementada uma política IAM. |
 | Apenas leitura | Dá acesso de leitura à Área de Cliente OVHcloud e a todas as suas secções. |
-| Administrador restrito | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção** da gestão de** utilizadores. |
+| Administrador restrito | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção da gestão de utilizadores**. |
 | Administrador | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **incluindo** a gestão dos utilizadores. |
 
 #### Gerir os grupos

@@ -105,7 +105,7 @@ Pour commander un certificat SSL il suffit d'aller dans la section `Certificat S
 
 |Élément|Fonction|
 |---|---|
-|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV (détails à cette adresse: https://www.ovh.com/ca/fr/hebergement-web/ssl_mutualise.xml)|
+|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV (Pour plus de détails, [consultez cette page](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Le(s) domaine(s) concerné(s)|
 
 #### Ajout d'un certificat SSL externe

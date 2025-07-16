@@ -18,7 +18,7 @@ Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par
 
 - Avoir pris connaissance des cas d'usages d'un VPN IPsec à l'aide du guide « [Plan de reprise d'activité sur Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/43-disaster-recovery-plan-overview) ».
 - Disposer de deux clusters Nutanix fournis par OVHcloud, sur des sites différents.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur vos clusters via Prism Central.
 - Utiliser un plan d'adressage IP privé différent par cluster.
 
@@ -122,7 +122,7 @@ Depuis le menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 Récupérez les informations concernant les paramètres réseau de la passerelle OVHcloud.
 
-Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
+Connectez-vous à [l'espace client OVHcloud](/links/manager), sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -458,7 +458,7 @@ Depuis le menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 Récupérez les informations concernant les paramètres réseau de la passerelle OVHcloud.
 
-Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
+Connectez-vous à [l'espace client OVHcloud](/links/manager), sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -974,6 +974,6 @@ Le paramétrage du VPN est terminé sur les deux clusters. Il est maintenant pos
 
 [Réplication asynchrone ou **NearSync** au travers de Prism Element](/pages/hosted_private_cloud/nutanix_on_ovhcloud/46-prism-element-replication)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

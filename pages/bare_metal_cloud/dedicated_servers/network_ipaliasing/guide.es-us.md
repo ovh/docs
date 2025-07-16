@@ -17,14 +17,14 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de la r
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external}
-- Tener una o más direcciones [Additional IP](/links/network/additional-ip){.external}.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal).
+- Tener una o más direcciones [Additional IP](/links/network/additional-ip).
 - Estar conectado al servidor por SSH (acceso *sudo*).
 
 > [!warning]
-> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
+> Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 
 ## Procedimiento
 
@@ -552,4 +552,4 @@ A continuación, solo tiene que hacer ping desde su Additional IP hacia el exter
 
 [Modo Bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -92,7 +92,7 @@ We start one AI Training job with two GPUs and we keep it running for 5 hours, t
 - Remote storage: Nothing
 - Duration: 5 hours then stopped
 
-Price calculation for compute: 5 (hours) x 2 (GPU) x €1.93 (price / GPU) = **€9.65 **, billed at the end of the month
+Price calculation for compute: 5 (hours) x 2 (GPU) x €1.93 (price / GPU) = **€9.65**, billed at the end of the month
 
 ## Feedback
 

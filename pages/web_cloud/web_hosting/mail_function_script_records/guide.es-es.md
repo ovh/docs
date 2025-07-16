@@ -203,7 +203,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 > Ponemos a su disposición la parte que viene a continuación para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
-Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()" de PHP, los alojamientos compartidos permiten enviar emails pasando por un script que utiliza el protocolo SMTP (Simple Mail Transfer Protocol). El tamaño total del mensaje de correo electrónico no podrá ser superior a **10 MB* (es decir, **7/8 MB sin encapsular**).
+Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()" de PHP, los alojamientos compartidos permiten enviar emails pasando por un script que utiliza el protocolo SMTP (Simple Mail Transfer Protocol). El tamaño total del mensaje de correo electrónico no podrá ser superior a **10 MB** (es decir, **7/8 MB sin encapsular**).
 
 > [!warning]
 > 

@@ -17,7 +17,7 @@ This document details the operation of a Nutanix hyperconvergence solution and d
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Technical solution overview
 
@@ -116,6 +116,6 @@ Click `Diagrams`{.action} for a graphical summary as shown below.
 
 Visit the website <https://www.nutanixbible.com/> for more information on how Nutanix works.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

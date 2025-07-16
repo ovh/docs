@@ -468,7 +468,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >>
 >> Please wait for vSphere to establish a connection with the key provider you have just added. You should see a message confirming that the connection has been established successfully.
 >>
-> **Approving KMS** <a name="trust-kms"></a>
+> **Approving KMS** <a name="trust-okms"></a>
 >>
 >> > [!primary]
 >> >

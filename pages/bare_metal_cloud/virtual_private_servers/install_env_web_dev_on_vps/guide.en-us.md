@@ -17,12 +17,12 @@ If you would like to install a CMS (**C**ontent **M**anagement **S**ystem) on yo
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> We recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> We recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](/links/community) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [VPS] solution (https://www.ovhcloud.com/en/vps/) or a [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your [OVHcloud Control Panel](/links/manager)
+- A [VPS] solution (/links/bare-metal/vps) or a [dedicated server](/links/bare-metal/bare-metal) in your [OVHcloud Control Panel](/links/manager)
 - Administrative (sudo) access to your server via SSH
 
 ## Instructions
@@ -70,7 +70,7 @@ If Nginx is correctly installed, you should see a message like this:
 
 ![env dev web](images/result_nginx_v.png){.thumbnail}
 
-If you have any queries, please refer to [Nginx official website](https://www.nginx.com/).
+If you have any queries, please refer to [Nginx official website](https://www.nginx.com/){.external}.
 
 ### Install a DBMS (**D**ata**B**ase **M**anagement **S**ystem)
 
@@ -114,6 +114,6 @@ For some general tips on securing a GNU/Linux-based server, see our guides:
 
 [Securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our [community of users](/links/community).

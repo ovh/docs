@@ -21,7 +21,7 @@ O IPv6 é a versão mais recente do *Internet Protocol* (IP). Cada servidor VPS 
 
 ## Requisitos
 
-- Dispor de um [servidor VPS da OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
+- Dispor de um [servidor VPS da OVHcloud](/links/bare-metal/vps){.external}.
 - Ter acesso ao VPS através de SSH (acesso root) ou de um ambiente de trabalho remoto (Windows).
 - Ter conhecimentos básciso de rede.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external} ou à [API OVHcloud](https://api.ovh.com/).

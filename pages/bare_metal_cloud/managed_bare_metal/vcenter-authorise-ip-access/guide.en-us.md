@@ -13,7 +13,7 @@ Access to your Managed Bare Metal can be restricted by allowing only certain IP 
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en/managed-bare-metal/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

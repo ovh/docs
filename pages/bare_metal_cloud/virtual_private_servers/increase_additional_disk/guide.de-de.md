@@ -16,7 +16,7 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kunden-Account.
 - Sie haben eine [zusätzliche Disk konfiguriert](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff auf Ihren VPS über SSH (Linux) oder RDP (Windows).
@@ -37,7 +37,7 @@ Wählen Sie im neuen Fenster die gewünschte Größe aus und klicken Sie dann au
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Es erscheint eine Nachricht, um Ihre Anfrage zu bestätigen. Klicken Sie auf den Link innerhalb der Nachricht und folgen Sie dem Bestellprozess. (Es ist auch möglich, dass sich automatisch ein neuer Browser-Tab für die Bestellung geöffnet hat.)
+Es erscheint eine Nachricht, um Ihre Anfrage zu bestätigen. Klicken Sie auf den Link innerhalb der Nachricht und folgen Sie dem Bestellprozess. Ein neuer Browser-Tab öffnet sich zum Abschließen der Bestellung.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
@@ -55,7 +55,7 @@ Die Erhöhung der Disk-Kapazität wird nach der Bestätigung der Zahlung einige 
 > [!warning]
 >Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Denken Sie daran, diese Aktionen nötigenfalls an Ihre Situation anzupassen.
 >
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Sie Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Sie Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
 >
 
 #### Auf einem Linux VPS

@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Escolhendo a classe de armazenamento certa para suas necessidades (EN)
-updated: 2025-06-04
+updated: 2025-07-03
 ---
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
@@ -41,6 +41,28 @@ This offer is suitable for the following use cases: long-term storage, backups, 
 | **Cold Archive** | Very long-term storage, backups, disaster recovery. | hours | 4 dedicated DCs | 99,9% | 90 days | Yes | Bucket-level, no lifeycle management support yet|
 
 More details about available regions [here](/pages/storage_and_backup/object_storage/s3_location).
+
+### Additional details
+
+#### Minimum storage duration
+
+It refers to the **minimum amount of time that an object must be stored in a particular storage class**. In case of early deletion, using *delete-object* requests, a pro-rated fee equal to the remaining days is applied. Be careful with non-versioned buckets, if the object is overwritten, this will be considered as a deletion of the current object version and the pro-rated fee will be applied too.
+
+For example, for the Infrequent Access class, the minimum storage time is 730 hours (30 days). If an object is deleted during this period, an additional charge will be applied and calculated using the following formula: [730h - # of hours of storage of the object] x price per hour of storage class.
+
+#### Retrieval fee
+
+It refers to a **charge that is applied when you retrieve or access data that is stored in a particular storage class**. The retrieval fee is calculated based on the amount of data retrieved (per GiB retrieved).
+
+For the Infrequent Access class, only *get-object* requests are considered as retrieval fee.
+
+For our Cold Archive class, only *restore* requests are considered as retrieval fee.
+
+#### Lifecycle management support
+
+It refers to the ability to **automatically manage the storage lifecycle of your objects**, such as transitioning them from one storage class to another, based on predefined rules and policies. This allows you to optimize storage costs and simplify data management. Object-level granularity is required because it allows you to manage at the individual object level. **Lifecycle transition requests are free of charge.**
+
+More details about lifecycle management [here](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle).
 
 
 ## OpenStack SWIFT Object Storage tiers

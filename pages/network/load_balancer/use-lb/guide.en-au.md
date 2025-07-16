@@ -105,7 +105,7 @@ To order an SSL certificate, simply go to the `SSL Certificate`{.action} section
 
 |Element|Function|
 |---|---|
-|Types of certificate|Free (Let's Encrypt), Comodo DV or Comodo EV (find details here: https://www.ovh.com.au/web-hosting/shared-ssl.xml)|
+|Types of certificate|Free (Let's Encrypt), Comodo DV or Comodo EV (For more details, [see this page](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Affected domains|
 
 #### Adding an external SSL certificate

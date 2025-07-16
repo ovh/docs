@@ -15,7 +15,7 @@ OVHcloud ofrece una serie de herramientas, disponibles en el área de cliente, q
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action} > `SMS`{.action}.
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

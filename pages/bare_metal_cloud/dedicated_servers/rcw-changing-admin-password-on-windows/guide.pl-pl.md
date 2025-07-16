@@ -29,7 +29,7 @@ Aby można było zmienić hasło, system musi być uruchomiony w trybie **Window
 
 Więcej informacji znajdziesz w [Przewodniku o trybie ratunkowym](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
-### Krok 2 - Usuń bieżące hasło <a name="step2"></a>
+### Etap 2 - Usuń bieżące hasło <a name="step2"></a>
 
 Połącz się z serwerem za pomocą polecenia "Połączenie pulpitu zdalnego" (RDP) oraz danych do logowania przesłanych pocztą e-mail.
 

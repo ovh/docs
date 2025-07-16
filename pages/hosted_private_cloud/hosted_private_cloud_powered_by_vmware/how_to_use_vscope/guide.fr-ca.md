@@ -15,7 +15,7 @@ Il s’agit d’une page web où sont rassemblées toutes les informations **uti
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
-- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](/links/manager))
 
 ## En pratique
 

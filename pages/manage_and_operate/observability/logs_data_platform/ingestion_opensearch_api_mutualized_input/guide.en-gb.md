@@ -81,11 +81,11 @@ auth.password = "<password>"
 
 Here is the explanation of this configuration.
 
-The source part of the TOML configuration file configure the [journald](https://vector.dev/docs/reference/sources/journald/){.external} source. By default this source will use the `/var/lib/vector` directory to store its data. You can configure this directory with the global option data_dir.
+The source part of the TOML configuration file configure the [journald](https://vector.dev/docs/reference/configuration/sources/journald/){.external} source. By default this source will use the `/var/lib/vector` directory to store its data. You can configure this directory with the global option data_dir.
 
 The transform configuration part relates to the [remap](https://vector.dev/docs/reference/configuration/transforms/remap/){.external} transform. This transform named here token has for unique goal to add the token stream value. It takes logs from the **inputs** named journald and adds a **X-OVH-TOKEN** value. This token value can be found on the `...`{.action} stream menu on the stream page in the Logs Data Platform manager. Replace **<stream-token>** with the token value of your stream.
 
-The final part is the [Elasticsearch sink](https://vector.dev/docs/reference/sinks/elasticsearch/){.external}. It takes data from the previous **inputs** token and sets up several config points:
+The final part is the [Elasticsearch sink](https://vector.dev/docs/reference/configuration/sinks/elasticsearch/){.external}. It takes data from the previous **inputs** token and sets up several config points:
 
 - gzip is supported on our endpoint, so it's activated with the **compression** configuration.
 - **healthcheck** is also supported and allows you to be sure that the platform is alive and well

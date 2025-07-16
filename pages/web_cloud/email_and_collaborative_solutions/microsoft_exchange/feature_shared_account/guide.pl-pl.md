@@ -47,7 +47,7 @@ Wpisz wymagane pola:
 >
 > **Przykład:**
 >
-> Na platformie zamówiłeś 4 konta Exchange. W związku z tym masz **4 x 5GB*, czyli **20 GB** przyznanej przestrzeni dla kont współdzielonych.
+> Na platformie zamówiłeś 4 konta Exchange. W związku z tym masz **4 x 5GB**, czyli **20 GB** przyznanej przestrzeni dla kont współdzielonych.
 
 Kliknij Dalej, aby `uzyskać dostęp`{.action} do podsumowania. Zakończ operację, klikając `Zatwierdź`{.action}.
 

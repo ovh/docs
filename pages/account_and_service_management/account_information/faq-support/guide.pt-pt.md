@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objetivo
 
-Encontre as questões mais frequentes sobre o suporte da OVHcloud
+Encontre as questões mais frequentes sobre o suporte da OVHcloud.
 
 <a name="sso"></a>
 

@@ -55,7 +55,7 @@ Se abrirá una ventana, donde deberá completar los campos obligatorios. Haga cl
 | Rol | Detalles |
 |--|--|
 | UNPRIVILEGED (Solo Lectura) | Proporciona acceso de lectura al área de cliente de OVHcloud y a todas sus secciones. |
-| DEFAULT (Administrador restringido) | Concede acceso de escritura al área de cliente de OVHcloud y a todas sus secciones,**excepto para la gestión de los** usuarios. |
+| DEFAULT (Administrador restringido) | Concede acceso de escritura al área de cliente de OVHcloud y a todas sus secciones, **excepto para la gestión de los** usuarios. |
 | ADMIN (Administrador) | Proporciona acceso de escritura al área de cliente de OVHcloud y a todas sus secciones, **incluyendo** la gestión de usuarios. |
 
 A continuación, el usuario obtendrá su identificador conformado por el id. numérico de su cuenta (que se indica en el menú «Gestión de usuarios») y su nombre de usuario, con los dos valores separados por una barra (/).

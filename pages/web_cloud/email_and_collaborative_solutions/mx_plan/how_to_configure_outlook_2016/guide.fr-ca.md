@@ -75,7 +75,7 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 >>
 > **Etape 4 - IMAP**
 >> Si vous avez choisi IMAP, saisissez les paramètres suivants. Si vous avez choisi POP, passez à l'onglet "**Etape 4 - POP**".<br>
->> Dans **Courrier entrant**, saisissez :<br>- Le serveur **imap.mail.ovh.ca**<br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Dans **Courrier sortant**, saisissez :<br>- Le serveur **smtp.mail.ovh.ca<br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
+>> Dans **Courrier entrant**, saisissez :<br>- Le serveur **imap.mail.ovh.ca**<br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Dans **Courrier sortant**, saisissez :<br>- Le serveur **smtp.mail.ovh.ca**<br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05-ca.png){.thumbnail .h-600}
 >>

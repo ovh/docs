@@ -15,7 +15,7 @@ Esta guía explica el funcionamiento y la aplicación de los dominios de fallos 
 ## Requisitos
 
 - Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) para recibir las claves de conexión.
-- Tener un usuario activo con permisos específicos para NSX (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener un usuario activo con permisos específicos para NSX (creado en el [área de cliente de OVHcloud](/links/manager).
 - Haber desplegado un [datastore vSan](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
 
 ## Procedimiento

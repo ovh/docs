@@ -146,7 +146,7 @@ Pode regenerar ou eliminar os códigos de segurança a partir da Área de Client
 
 > [!warning]
 >
-> Recomenda-se vivamente que guarde estes códigos de segurança** e verifique se estes são válidos.
+> Recomenda-se **vivamente que guarde estes códigos de segurança** e verifique se estes são válidos.
 > Sem código de segurança na sua posse e em caso de roubo ou perda do seu telefone/smartphone/tablet ou da sua chave de segurança, o acesso à sua Área de Cliente e aos seus serviços poderá ser bloqueado.
 >
 
@@ -226,7 +226,7 @@ Se já não dispõe de dispositivos válidos nem de códigos de segurança váli
 
 Em primeiro lugar, aceda a [a página de autenticação na Área de Cliente OVHcloud](/links/manager).
 
-Introduza o seu identificador OVHcloud e a sua palavra-passe para aceder à etapa da dupla autenticação. Clique no botão `Perdi acesso ao meu telemóvel, à chave de segurança U2F ou aos meus códigos de segurança{.action}.<br>
+Introduza o seu identificador OVHcloud e a sua palavra-passe para aceder à etapa da dupla autenticação. Clique no botão `Perdi acesso ao meu telemóvel, à chave de segurança U2F ou aos meus códigos de segurança`{.action}.<br>
 Se não vir este botão, clique no botão `Experimentar outro método`{.action} e, a seguir, em `Perdi acesso ao meu telemóvel, à chave de segurança U2F ou aos meus códigos de segurança`{.action}.
 
 A interface seguinte permite-lhe descarregar e enviar às nossas equipas os documentos necessários para desativar a dupla autenticação na sua conta.

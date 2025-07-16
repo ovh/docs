@@ -52,7 +52,7 @@ Sustituya "InstanceID" por el ID de la instancia correspondiente. Puede obtener 
 
 ### Desde la API OVHcloud
 
-Conéctese a la [interfaz API OVHcloud](https://eu.api.ovh.com/) según la [guía adecuada](/pages/manage_and_operate/api/first-steps) y siga los pasos que se indican a continuación.
+Conéctese a la [interfaz API OVHcloud](/links/api) según la [guía adecuada](/pages/manage_and_operate/api/first-steps) y siga los pasos que se indican a continuación.
 
 Utilice la siguiente llamada:
 

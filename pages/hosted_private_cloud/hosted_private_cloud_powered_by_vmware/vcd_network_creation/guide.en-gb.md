@@ -1,7 +1,7 @@
 ---
-title: "VMware Cloud Director - Creating network components from the VCD control panel"
-excerpt: "Find out how to easily create network components within the VCD on OVHcloud control panel"
-updated: 2024-09-17
+title: "VMware Cloud Director - Creating network components from the Public VCF as-a-Service control panel"
+excerpt: "Find out how to easily create network components within the Public VCFaaS control panel"
+updated: 2025-07-07
 ---
 
 <style>
@@ -20,12 +20,12 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> VCD on OVHcloud is currently in Alpha phase. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
+> This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
 > 
 
 ## Objective
 
-**To create, configure and effectively manage your network (IP spaces, Edge gateways and providers, and private network) from the VCD on OVHcloud control panel.**
+**To create, configure and effectively manage your network (IP spaces, Edge gateways and providers, and private network) from the Public VCF as-a-Service control panel.**
 
 ## Requirements
 
@@ -348,50 +348,43 @@ To continue with step 5 (creating a private network), click on `NEXT`{.action}.
 
 6\. (Optional) Segment profile templates can be defined here.
 
-This can be used for advanced networking needs (e.g. with pfSense: Promiscuous mode).
+Segment profiles can be used for advanced networking use cases, such as enabling CARP protocol or Promiscuous mode in nested environments.
 
-There are **3 modes**:
+There are **3 available modes**:
 
-- **Not defined (the mode in this guide).**
-- **Allow-DHCP.**
-- **Promiscuous mode.**
+- **Default** (applied automatically)
+- **Allow-DHCP**
+- **Promiscuous mode**
 
-| Model details        | Promiscuous mode              |
-|----------------------|-------------------------------|
-| IP address discovery | NSX-T Default Segment Profile |
-| MAC Discovery        | Promiscuous mode              |
-| SpoofGuard           | NSX-T Default Segment Profile |
-| Quality of service   | NSX-T Default Segment Profile |
-| Segment Security     | NSX-T Default Segment Profile |
+> These profiles are necessary in specific situations:
+>
+> - MAC or IP learning for nested environments
+> - Custom security profiles to allow DHCP traffic
+> - Spoofing protection needs
 
-| Model details        | Allow-DHCP                    |
-|----------------------|-------------------------------|
-| IP address discovery | NSX-T Default Segment Profile |
-| MAC Discovery        | Promiscuous mode              |
-| SpoofGuard           | NSX-T Default Segment Profile |
-| Quality of service   | NSX-T Default Segment Profile |
-| Segment Security     | Allow-DHCP                    |
+To configure Promiscuous or Allow-DHCP mode:
 
-Custom segment profiles are required in a number of specific situations.
+1. Go to `Networking`{.action} > `All Networks`{.action}
+2. Select the target network
+3. In the `Segment Profiles`{.action} section, click `Edit`{.action}
+4. Choose the appropriate profile
 
-**These include:**
+![VCD Networking Network 06](images/NETWORK_6_1.png){.thumbnail}
 
-- MAC or IP learning must be enabled for nested environments.
-- Custom security profiles to allow DHCP traffic from a network
-- Enabling spoofing protection
+| Setting               | Promiscuous mode                          | Allow-DHCP mode                              |
+|----------------------|-------------------------------------------|---------------------------------------------|
+| IP address discovery | NSX-T Default Segment Profile             | NSX-T Default Segment Profile               |
+| MAC Discovery        | `ovh-default-promiscuous-mac-discovery-profile` | `ovh-default-promiscuous-mac-discovery-profile` |
+| SpoofGuard           | NSX-T Default Segment Profile             | NSX-T Default Segment Profile               |
+| Quality of service   | NSX-T Default Segment Profile             | NSX-T Default Segment Profile               |
+| Segment Security     | NSX-T Default Segment Profile             | `ovh-default-dhcp-security-segment-profile` |
 
-![VCD Networking Network 06_2](images/NETWORK_6_2.png){.thumbnail}
+> [!warning]
+> Promiscuous and DHCP profiles must be set manually after the network is created if required.
 
-7\. Depending on your choice of configuration, you can go to step 7 or 8.
+Do a final check of the settings, then click `FINISH`.
 
-**Exemple:**
-
-- **Step 7**: With "Segment Profile Template".
-- **Step 8**: Without "Segment Profile Template".
-
-Do a final check of the settings you defined, then click `FINISH`{.action}.
-
-![VCD Networking Network 07](images/NETWORK_7.png){.thumbnail}
+![Finish network creation](images/NETWORK_7.png)
 
 Your network is now fully created and ready to use.
 

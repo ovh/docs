@@ -15,9 +15,9 @@ Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguri
 **Esta guía ofrece algunos consejos para proteger un servidor basado en GNU/Linux.**
 
 > [!warning]
->OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
+> OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
 >
->Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle soporte técnico.
+> Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra [comunidad de usuarios](/links/community). OVHcloud no puede ofrecerle soporte técnico.
 >
 
 ## Requisitos

@@ -12,7 +12,7 @@ Um bloco IP pode servir para tornar os seus serviços acessíveis na Internet.
 
 ## Requisitos
 
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 * Dispor de uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external} na sua conta OVHcloud.
 
 ## Instruções
@@ -86,7 +86,7 @@ De seguida, utilize esta chamada API para mover o IP no “IP parking”:
 > Esta chamada associa a rede nas VM que utilizam os IP em questão.
 >
 
-Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} na secção `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}. Clique no seu serviço Managed Bare Metal e, depois, no separador `Operações`{.action}.
+Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](/links/manager){.external} na secção `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}. Clique no seu serviço Managed Bare Metal e, depois, no separador `Operações`{.action}.
 
 A referência da operação é “removeIpRipeBlock”.
 

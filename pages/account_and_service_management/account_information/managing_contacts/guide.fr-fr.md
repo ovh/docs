@@ -109,7 +109,7 @@ Le changement de contact sera effectif quelques minutes après que les deux cont
 
 ### Exemple de cas concret : confier la gestion technique de votre site à votre webmaster <a name="use-case"></a>
 
-Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
+Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](/links/partner) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
 
 > [!warning]
 >

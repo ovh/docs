@@ -1,7 +1,7 @@
 ---
-title: "VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud"
-excerpt: "Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud"
-updated: 2024-09-17
+title: "VMware Cloud Director - Création de composants réseaux via Public VCF as-a-Service"
+excerpt: "Découvrez comment créer facilement des composants réseau depuis l'interface Public VCFaaS"
+updated: 2025-07-07
 ---
 
 <style>
@@ -20,12 +20,12 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc évoluer et être mis à jour à l'avenir avec les avancées de nos équipes en charge de ce produit.
+> Ce guide est susceptible d'évoluer et d'être mis à jour à l'avenir, au rythme des avancées de nos équipes en charge de ce produit.
 >
 
 ## Objectif
 
-**Ce guide vous montre comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis l'interface VCD on OVHcloud.**
+**Ce guide vous montre comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis l'interface Public VCF as-a-Servive.**
 
 ## Prérequis
 
@@ -349,54 +349,47 @@ Pour continuer l'étape 5 (de création d'un réseau privé), cliquez sur `SUIVA
 
 ![VCD Networking Network 06](images/NETWORK_6.png){.thumbnail}
 
-6\. Il est possible ici de définir des modèles de profil de segments (optionnel).
+6\. (Facultatif) Des modèles de profil de segment peuvent être définis ici.
 
-Ces modèles peuvent être utilisés pour des besoins avancés en matière de réseaux (par exemple avec pfSense : Promiscuous mode).
+Les profils de segment peuvent être utilisés pour des cas d’usage réseau avancés, comme l’activation du protocole CARP ou le mode Promiscuous dans des environnements imbriqués.
 
-Il existe **3 modes** :
+**Trois modes sont disponibles** :
 
-- **Non défini (le mode de ce guide).**
-- **Allow-DHCP.**
-- **Promiscuous mode.**
+- **Par défaut** (appliqué automatiquement)
+- **Allow-DHCP**
+- **Promiscuous**
 
-| Détails du modèle        | Promiscuous mode                   |
-|--------------------------|------------------------------------|
-| Découverte d'adresses IP | Profil de segment par défaut NSX-T |
-| Découverte MAC           | Promiscuous mode                   |
-| SpoofGuard               | Profil de segment par défaut NSX-T |
-| Qualité de service       | Profil de segment par défaut NSX-T |
-| Sécurité des segments    | Profil de segment par défaut NSX-T |
+> Ces profils sont nécessaires dans certaines situations spécifiques :
+>
+> - Apprentissage MAC ou IP dans des environnements imbriqués
+> - Profils de sécurité personnalisés pour autoriser le trafic DHCP
+> - Besoins en protection contre l'usurpation
 
-| Détails du modèle        | Allow-DHCP                         |
-|--------------------------|------------------------------------|
-| Découverte d'adresses IP | Profil de segment par défaut NSX-T |
-| Découverte MAC           | Promiscuous mode                   |
-| SpoofGuard               | Profil de segment par défaut NSX-T |
-| Qualité de service       | Profil de segment par défaut NSX-T |
-| Sécurité des segments    | Allow-DHCP                         |
+Pour configurer le mode Promiscuous ou Allow-DHCP :
 
-Des profils de segments personnalisés sont nécessaires dans un certain nombre de situations spécifiques.
+1. Rendez-vous dans `Mise en réseau`{.action} > `Tous les réseaux`{.action}.
+2. Sélectionnez le réseau cible.
+3. Dans la section `Profils de segment`{.action}, cliquez sur `Modifier`{.action}.
+4. Choisissez le profil approprié.
 
-**Celles-ci incluent notamment :**
+![VCD Networking Network 06](images/NETWORK_6_1.png){.thumbnail}
 
-- L'apprentissage MAC ou IP doit être activé pour les environnements imbriqués.
-- Profils de sécurité personnalisés pour autoriser le trafic DHCP provenant d'un réseau.
-- Activation des protections contre l'usurpation.
+| Paramètre               | Mode Promiscuous                          | Mode Allow-DHCP                          |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| Découverte d'adresses IP | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| MAC Discovery        | `ovh-default-promiscuous-mac-discovery-profile` | `ovh-default-promiscuous-mac-discovery-profile` |
+| SpoofGuard           | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| Qualité de service   | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| Sécurité des segments     | Profil de segment par défaut NSX-T             | `ovh-default-dhcp-security-segment-profile` |
 
-![VCD Networking Network 06_2](images/NETWORK_6_2.png){.thumbnail}
+> [!warning]
+> Les profils Promiscuous et Allow-DHCP doivent être configurés manuellement après la création du réseau si nécessaire.
 
-7\. Suivant le choix de votre configuration, vous pouvez arriver à l'étape 7 ou 8.
+Vérifiez une dernière fois les paramètres, puis cliquez sur `TERMINER`{.action}.
 
-**Exemple :**
+![Finaliser la création du réseau](images/NETWORK_7.png)
 
-- **Étape 7** : Avec "Modèle de profil de segment".
-- **Étape 8** : Sans "Modèle de profil de segment".
-
-Vérifiez les réglages définis puis lancee la création du réseau en cliquant sur `TERMINER`{.action}.
-
-![VCD Networking Network 07](images/NETWORK_7.png){.thumbnail}
-
-Votre réseau est maintenant entièrement créé et prêt à l'emploi.
+Votre réseau est maintenant entièrement créé et prêt à être utilisé.
 
 **Glossaire :**
 

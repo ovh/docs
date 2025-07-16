@@ -1,7 +1,7 @@
 ---
 title: Preguntas frecuentes sobre los NAS-HA
 excerpt: ¿Tiene alguna duda sobre los NAS-HA? A continuación le ofrecemos la respuesta a las preguntas más frecuentes.
-updated: 2024-02-26
+updated: 2025-07-15
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ NAS-HA permite centralizar los datos de diferentes cargas de trabajo Linux pero 
 
 ### ¿Se puede gestionar el NAS-HA desde un panel de administración?
 
-Sí, puede acceder a este espacio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección "`Bare Metal Cloud`{.action}" y, seguidamente, en la sección `NAS y CDN`{.action}.
+Sí, puede acceder a este espacio desde el [área de cliente de OVHcloud](/links/manager), en la sección `Bare Metal Cloud`{.action} y, seguidamente, en la sección `NAS y CDN`{.action}.
 
 ## Disponibilidad
 
@@ -40,7 +40,7 @@ NAS-HA se suministra con un índice de disponibilidad del 99,99%.
 
 ### ¿Qué protocolos de transferencia de archivos soportan actualmente la solución NAS-HA?
 
-NAS-HA soporta la transferencia de archivos a través de NFS (NFSv3) y CIFS (SMB).
+NAS-HA soporta la transferencia de archivos a través de NFS (NFSv3, NFSv4.1, NFNSv4.2) y CIFS (SMB).
 
 ### ¿Desde qué servicios de OVHcloud puedo crear datos?
 
@@ -147,7 +147,7 @@ La frecuencia de los snapshots puede configurarse desde el área de cliente de O
 - cada tres días
 - semanal
 
-Además, en cualquier momento puede crear snapshots manuales, que podrá conservar sin limitación de tiempo o eliminar cuando desee. Esta funcionalidad está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o a través de la siguiente llamada a la [API](https://ca.api.ovh.com/):
+Además, en cualquier momento puede crear snapshots manuales, que podrá conservar sin limitación de tiempo o eliminar cuando desee. Esta funcionalidad está disponible en el [área de cliente de OVHcloud](/links/manager) o a través de la siguiente llamada a la [API](https://ca.api.ovh.com/):
 
 > [!api]
 >
@@ -164,7 +164,7 @@ Puede configurar snapshots automáticos con una de las frecuencias disponibles. 
 
 ### ¿Es posible eliminar un snapshot?
 
-Solo se pueden eliminar los snapshots creados "bajo demanda" (véase la pregunta anterior ["¿Con qué frecuencia se realizan los snapshots?](#frequency)".<br>
+Solo se pueden eliminar los snapshots creados "bajo demanda" (véase la pregunta anterior ["¿Con qué frecuencia se realizan los snapshots?](#frequency))".<br>
 Los snapshots con una frecuencia establecida se eliminan automáticamente, y no es posible eliminarlos manualmente.
 
 ### ¿Los snapshots están incluidos en la capacidad de un servicio?
@@ -202,6 +202,6 @@ Los períodos ofrecidos son de 1, 3, 6 y 12 meses. Al finalizar el período cont
 
 ## Más información
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

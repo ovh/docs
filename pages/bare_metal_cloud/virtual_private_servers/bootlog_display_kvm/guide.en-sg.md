@@ -18,12 +18,12 @@ If your VPS has become unresponsive, you still have the possibility to access it
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
+- A [VPS](/links/bare-metal/vps) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -73,7 +73,7 @@ sdb       8:16   0   50G  0 disk
 
 The example output above shows that the system partition is mounted on **/mnt/sdb1**. (The primary disk is **sdb**, whereas **sda** is the rescue disk and **sda1** is the primary rescue partition mounted on **/**).
 
-If your VPS is of the [**current ranges**](https://www.ovhcloud.com/en-sg/vps/), no automatic mounting will occur and the `MOUNTPOINT` column should be empty. In that case, proceed with [step 4](#step4).
+If your VPS is of the [**current ranges**](/links/bare-metal/vps), no automatic mounting will occur and the `MOUNTPOINT` column should be empty. In that case, proceed with [step 4](#step4).
 
 ### Step 3: Unmount the partition (older ranges only)
 
@@ -85,7 +85,7 @@ On a legacy VPS in rescue mode, the primary disk is already mounted. Therefore, 
 
 ### Step 4: Mount the partition with the correct settings <a name="step4"></a>
 
-If your VPS is of the [**current ranges**](https://www.ovhcloud.com/en-sg/vps/), first make sure the mount folder is created:
+If your VPS is of the [**current ranges**](/links/bare-metal/vps), first make sure the mount folder is created:
 
 ```sh
 ~$ mkdir -p /mnt/sdb1

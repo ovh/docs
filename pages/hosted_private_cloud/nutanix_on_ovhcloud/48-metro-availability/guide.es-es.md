@@ -16,7 +16,7 @@ updated: 2024-05-13
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via Prism Central
 - You need to have 3 Nutanix clusters within the OVHcloud infrastructure with **Pro** or **Ultimate** packs if you have a Nutanix on OVHcloud packaged service on both clusters in the P.R.A. These 3 clusters will need to be at remote sites for maximum security.
 - You must have less than 5 ms of latency between the two replicated clusters. Please note that latency is not covered by SLAs.
@@ -1084,10 +1084,10 @@ The list of events appears, click `Close`{.action} to close.
 
 [Advanced replication with Leap](/pages/hosted_private_cloud/nutanix_on_ovhcloud/47-nutanix-leap)
 
-[Introduction to vRacks](https://www.ovhcloud.com/es-es/network/vrack/)
+[Introduction to vRacks](/links/network/vrack)
 
 [Documentation Nutanix AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

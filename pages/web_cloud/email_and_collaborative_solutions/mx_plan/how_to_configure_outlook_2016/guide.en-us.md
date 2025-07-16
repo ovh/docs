@@ -83,7 +83,7 @@ To configure your email address, follow the steps by clicking on the tabs below.
 >> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail .h-600}
 >>
 > **Step 4 - POP**
->> In **Incoming Mail**, type:<br>- Server **pop.mail.ovh.ca**<br>- Port **995**<br>- **SSL/TLS encryption method**<br><br>In **Outgoing Mail**, type:<br>- Server **smtp.mail.ovh.ca** server** <br>- Port **465**<br>- **SSL/TLS encryption method**<br><br>Click `Next`{.action} to confirm.<br>
+>> In **Incoming Mail**, type:<br>- Server **pop.mail.ovh.ca**<br>- Port **995**<br>- **SSL/TLS encryption method**<br><br>In **Outgoing Mail**, type:<br>- Server **smtp.mail.ovh.ca** <br>- Port **465**<br>- **SSL/TLS encryption method**<br><br>Click `Next`{.action} to confirm.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail .h-600}
 

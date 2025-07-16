@@ -134,7 +134,7 @@ Antes de criar a sua instância, recomendamos que estude a forma como a instânc
 - Se não precisar de configurar a instância com uma rede privada de momento, poderá aceder à [etapa 4](#create-instance). Pode criar uma instância exposta à Internet pública (ver **Modo Público** [abaixo](#networking-modes).)
 - Se a instância estiver ligada a uma nova rede privada (OVHcloud [vRack](/links/network/vrack)), **crie o seu vRack** antes de continuar. Consulte os detalhes no [manual sobre o serviço vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
-<a name="networking-mode"></a>
+<a name="networking-modes"></a>
 
 /// details | Public Cloud Networking - Modos
 

@@ -421,7 +421,7 @@ Réponse :
 |action.type|Nom du type d'action de votre route|
 |action.status|Code d'état HTTP associé|
 |action.target|Identifiant numérique de la ferme ou modèle d'URL associé|
-|rules|Liste des règles devant être validées pour déclencher l'action de la route. Plus de détails sont disponibles dans la section « [Manipulation des Règles](#handling-regles) ».|
+|rules|Liste des règles devant être validées pour déclencher l'action de la route. Plus de détails sont disponibles dans la section « [Manipulation des Règles](#handling-rules) ».|
 
 Pour plus d'informations sur les actions gérées ainsi que le format des paramètres, nous vous invitons à consulter la section « [Actions disponibles](#available-actions) » plus bas dans ce guide.
 

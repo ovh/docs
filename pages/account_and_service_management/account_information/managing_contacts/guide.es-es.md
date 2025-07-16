@@ -99,7 +99,7 @@ En caso de que uno de los contactos no haya recibido el mensaje de correo electr
 
 ![Gestión de contactos](images/managing_contacts_06.png){.thumbnail}
 
-Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaje informándole de que la solicitud está pendiente de validación por parte del otro contacto. Si el contacto acaba de validar la solicitud de cambio, es posible que la información que se muestra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} tarde unos minutos en actualizarse.
+Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaje informándole de que la solicitud está pendiente de validación por parte del otro contacto. Si el contacto acaba de validar la solicitud de cambio, es posible que la información que se muestra en el [área de cliente de OVHcloud](/links/manager){.external} tarde unos minutos en actualizarse.
 
 ![Gestión de contactos](images/managing_contacts_007.png){.thumbnail}
 
@@ -107,11 +107,11 @@ El cambio de contacto será efectivo unos minutos después de que los dos contac
 
 ### Ejemplo: dar la gestión técnica de su sitio web a su webmaster
 
-Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propia [tienda online](https://www.ovhcloud.com/es-es/web-hosting/ecommerce-website/). Para empezar a crear su sitio web, usted ha contactado con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/) y le solicita los permisos de acceso a sus servicios de OVHcloud.
+Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propia [tienda online](https://www.ovhcloud.com/es-es/web-hosting/ecommerce-website/). Para empezar a crear su sitio web, usted ha contactado con uno de nuestros [partners](/links/partner) y le solicita los permisos de acceso a sus servicios de OVHcloud.
 
 > [!warning]
 >
-> No se recomienda proporcionar a ningún tercero las claves de acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+> No se recomienda proporcionar a ningún tercero las claves de acceso al [área de cliente de OVHcloud](/links/manager).
 >
 
 En ese caso, conceda a su proveedor el derecho de "[contacto técnico](#gestion_des_contacts)" en su alojamiento de OVHcloud. Este acceso le permitirá realizar las manipulaciones necesarias para la puesta en línea de su sitio web (adición de un dominio o subdominio en el multisitio, instalación de un módulo en 1 clic, modificación de la contraseña FTP o de la base de datos, creación de un certificado SSL, etc.).

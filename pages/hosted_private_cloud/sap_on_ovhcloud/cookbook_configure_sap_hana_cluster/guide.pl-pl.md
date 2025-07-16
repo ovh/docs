@@ -14,7 +14,7 @@ This implementation reduces the Recovery Time Objective (RTO), in case of a virt
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A deployed [SAP HANA on Private Cloud](https://www.ovhcloud.com/pl/hosted-private-cloud/sap-hana/) solution.
 - Two deployed SAP HANA virtual machines with the same SAP HANA version installed .
 
@@ -31,7 +31,7 @@ This implementation reduces the Recovery Time Objective (RTO), in case of a virt
 
 The availability of the SAP HANA database might be impacted during this configuration. Please take all precautions before starting this guide.
 
-### vSphere user
+### vSphere user creation
 
 To allow the Corosync service to get information from your SAP HANA nodes, you have to configure a user which has access to the vSphere interface.
 

@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2025-05-12
+updated: 2025-07-15
 ---
 
 ## Objective
@@ -70,7 +70,7 @@ It's possible to create this certificate from the dedicated entry on the adminis
 
 ![Create a certificate](images/create_certificat_01.png){.thumbnail}
 
-The first part of the form allows you to precise its validity duration and providing or not your Certificate Signing Request (CSR) in case you have your own private key
+The first part of the form allows you to precise its validity duration, choose signature algorithm, and providing or not your Certificate Signing Request (CSR) in case you have your own private key.
 
 - Without providing a private key:
 
@@ -208,6 +208,7 @@ The following information is required:
 - **name**: the name of the certificate
 - **identityURNs**: list of OVHcloud identities in URN format that will be provided to the IAM for calculating access rights
 - **description**: certificate description (optional)
+- **certificateType** : certificate signature algorithm (ECDSA or RSA) - ECDSA by default (optional)
 - **validity**: certificate validity duration in days - 365 days by default (optional)
 
 **Example of certificate creation with root account:**
@@ -248,6 +249,7 @@ The API then returns the certificate creation status:
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
+  "certificateType": "ECDSA",
   "status": "CREATING",
   "fromCSR": false,
   "privateKeyPEM": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDOfWuMVQxl5quoURzThF4zTI9YYTmylSaPjneLBwP+2oAoGCCqGSM49\nAwEHoUQDQgAERd1eMw0YdAD+E9oSymGc4bCL1mfJl0EZwoM2ya/uKFFVFnGMnckg\nXXXXXXXXXXXXXXX==\n-----END EC PRIVATE KEY-----\n",
@@ -288,6 +290,7 @@ The API returns the certificate in PEM:
   ],
   "status": "READY",
   "fromCSR": false,
+  "certificateType": "ECDSA",
   "certificatePEM": "-----BEGIN CERTIFICATE-----\nMIIBqTCCAVCgAwIBAgIRAPGLXg11uECjmw5x/+X/A8swCgYIKoZIzj0EAwIwFTET\nMBEGA1UEAxMKQ0NNVXNlcnNDQTAeFw0yNDA0MDQxMDI2MjhaFw0yNTA0MDQxMDI2\nMjhaMC8xLTArBgNVBAMTJGU5MGM1ODQxLWYzOWUtNDk4My04NTk2LTYyZmYwYzUz\nOGI2YjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABEXdXjMNGHQA/hPaEsphnOGw\ni9ZnyZdBGcKDNsmv7ihRVRZxjJ3JICEusleqD4lE27DAAdzbRdqAhpCqsTks+sSj\nZzBlME4GA1UdEQEB/wREMEKgQAYKKwYBBAGCNxQCA6AyDDBva21zLmRvbWFpbjpl\nOTBjNTg0MS1mMzllLTQ5ODMtODU5Ni02MmZmMGM1MzhiNmIwEwYDVR0lBAwwCgYI\nKwYBBQUHAwIwCgYIKoZIzj0EAwIDRwAwRAIgdWGYm1UQMg0sTIgROFH5mWiAh/lk\nDlyP5HhrWyFB9BICIDl5wtUWgCmo6TjOqXXXXXXXXXXXXXX\n-----END CERTIFICATE-----",
   "createdAt": "2024-04-04T12:26:28.856619+02:00",
   "expiredAt": "2025-04-04T12:26:28.856616+02:00"
@@ -353,6 +356,7 @@ The API then returns the certificate creation status:
   ],
   "status": "CREATING",
   "fromCSR": true,
+  "certificateType": "ECDSA",
   "createdAt": "2024-04-04T12:26:28.856619+02:00",
   "expiredAt": "2025-04-04T12:26:28.856616+02:00"
 }
@@ -378,6 +382,7 @@ The API returns the certificate in PEM:
   ],
   "status": "READY",
   "fromCSR": true,
+  "certificateType": "ECDSA",
   "certificatePEM": "-----BEGIN CERTIFICATE-----\nMIIBqTCCAVCgAwIBAgIRAPGLXg11uECjmw5x/+X/A8swCgYIKoZIzj0EAwIwFTET\nMBEGA1UEAxMKQ0NNVXNlcnNDQTAeFw0yNDA0MDQxMDI2MjhaFw0yNTA0MDQxMDI2\nMjhaMC8xLTArBgNVBAMTJGU5MGM1ODQxLWYzOWUtNDk4My04NTk2LTYyZmYwYzUz\nOGI2YjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABEXdXjMNGHQA/hPaEsphnOGw\ni9ZnyZdBGcKDNsmv7ihRVRZxjJ3JICEusleqD4lE27DAAdzbRdqAhpCqsTks+sSj\nZzBlME4GA1UdEQEB/wREMEKgQAYKKwYBBAGCNxQCA6AyDDBva21zLmRvbWFpbjpl\nOTBjNTg0MS1mMzllLTQ5ODMtODU5Ni02MmZmMGM1MzhiNmIwEwYDVR0lBAwwCgYI\nKwYBBQUHAwIwCgYIKoZIzj0EAwIDRwAwRAIgdWGYm1UQMg0sTIgROFH5mWiAh/lk\nDlyP5HhrWyFB9BICIDl5wtUWgCmo6TjOqXXXXXXXXXXXXXX\n-----END CERTIFICATE-----",
   "createdAt": "2024-04-04T12:26:28.856619+02:00",
   "expiredAt": "2025-04-04T12:26:28.856616+02:00"

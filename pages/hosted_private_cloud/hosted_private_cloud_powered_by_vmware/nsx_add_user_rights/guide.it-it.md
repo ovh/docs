@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 ## Requirements
 
-- You have a [Hosted Private Cloud](https://www.ovhcloud.com/it/hosted-private-cloud/vmware/) service with the option **"Network Security Virtualization"** or **"Software-Defined Datacenter"**.
+- You have a [Hosted Private Cloud](/links/hosted-private-cloud/vmware) service with the option **"Network Security Virtualization"** or **"Software-Defined Datacenter"**.
 - You have access to the [OVHcloud Control Panel](/links/manager).
 - You are the administrator on your VMware on OVHcloud infrastructure, with the login credentials to create NSX-T user access.
 - You have followed the steps in the guide: [Getting started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).

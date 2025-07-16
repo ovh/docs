@@ -101,7 +101,7 @@ Para solicitar um certificado SSL, basta aceder à secção `Certificado SSL`{.a
 |Elemento|Função|
 |---|---|
 |Nome|Opção que permite atribuir um nome ao servidor, para facilitar a sua identificação|
-|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV ou Comodo EV (veja detalhes neste endereço: https://www.ovh.pt/ssl/)|
+|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV ou Comodo EV (Para mais detalhes, [consulte esta página](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|O(s) domínio(s) associados(s) ao serviço|
 
 #### Adicionar um certificado SSL externo

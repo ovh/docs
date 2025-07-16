@@ -122,7 +122,7 @@ Pour identifier et signaler un e-mail ou un SMS de phishing, consultez notre [gu
 
 ### Comment signaler un comportement abusif ou du contenu illicite provenant de services hébergés par OVHcloud et dont je suis victime ?
 
-Vous pouvez signaler tout comportement abusif ou contenu illicite sur la plateforme OVHcloud [www.ovh.com/abuse/](https://www.ovh.com/abuse/) dédiée à cet effet . Sélectionnez la catégorie concernée puis renseignez les champs demandés.
+Vous pouvez signaler tout comportement abusif ou contenu illicite sur la plateforme OVHcloud [www.ovh.com/abuse/](https://www.ovh.com/abuse/) dédiée à cet effet. Sélectionnez la catégorie concernée puis renseignez les champs demandés.
 
 Seul les logs et éléments techniques peuvent être transmis au titulaire du service incriminé. Veuillez donc à ne pas inclure de données personnelles dans ces champs.
 
@@ -132,7 +132,7 @@ Votre signalement sera traité dans les meilleurs délais par le service juridiq
 
 ### OVHcloud m'a envoyé un email stipulant un éventuel comportement abusif de ma part, que dois-je faire ?
 
-Si un comportement abusif nous a été rapporté ou a été constaté par nos équipes, vous recevrez un e-mail provenant d'une adresse e-mail au format « ticket+"numéro-de-ticket"]"@abuse.ovh.net ».
+Si un comportement abusif nous a été rapporté ou a été constaté par nos équipes, vous recevrez un e-mail provenant d'une adresse e-mail au format « ticket+"numéro-de-ticket"@abuse.ovh.net ».
 
 Compte tenu des éléments complémentaires qui vous seront précisés dans cet email, nous vous demanderons de procéder à une investigation afin de remédier au comportement abusif et/ou de supprimer tout contenu illicite.
 

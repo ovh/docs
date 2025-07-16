@@ -75,7 +75,7 @@ Geben Sie im FileZilla Client-Interface die IP-Adresse Ihres Servers in das Feld
 
 Klicken Sie auf `Quickconnect`{.action}.
 
-Das Dateisystem des Servers befindet sich in dem Verzeichnis, das Sie als Bereitstellungspunkt im Rescue-Modus festgelegt haben („/mnt“ in diesem Beispiel).
+Das Dateisystem des Servers befindet sich in dem Verzeichnis, das Sie als Bereitstellungspunkt im Rescue-Modus festgelegt haben ("/mnt" in diesem Beispiel).
 
 ![SFTP Rescue-Modus Remote-Site](images/sftp_sd_03.png){.thumbnail}
 

@@ -60,7 +60,7 @@ Même si vous pouvez déjà explorer des exemples et schémas de la [nouvelle ro
 
 #### Contournement pour les comptes OVHcloud <a name="ux-ovh"></a>
 
-Comme mentionné dans la [documentation API OVHcloud](/pages/manage_and_operate/api/first-steps#se-connecter-aux-api-ovhcloud), sur la [page des API OVHcloud](https://eu.api.ovh.com/console/) :
+Comme mentionné dans la [documentation API OVHcloud](/pages/manage_and_operate/api/first-steps#se-connecter-aux-api-ovhcloud), sur la [page des API OVHcloud](/links/console) :
 
 - Cliquez sur `Authentication`{.action} en haut à gauche.
 - Cliquez ensuite `Login with OVHcloud SSO`{.action}.

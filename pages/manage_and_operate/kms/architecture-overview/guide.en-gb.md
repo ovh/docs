@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud KMS Architecture overview"
 excerpt: "Discover how we handle the security of the OVHcloud KMS"
-updated: 2024-11-25
+updated: 2025-06-18
 ---
 
 ## Objective
@@ -62,6 +62,21 @@ The backup location depends on the location of the OVHcloud KMS.
 - **EU_WEST_SBG**
     - KMS Backup Region 1 : EU_WEST_RBX
     - KMS Backup Region 2 : EU_WEST_GRA
+- **EU_WEST_PAR**
+    - KMS Backup Region 1 : EU_WEST_GRA
+    - KMS Backup Region 2 : EU_WEST_SBG
+- **CA_EAST_BHS**
+    - KMS Backup Region 1 : CA_EAST_BHS
+    - KMS Backup Region 2 : CA_EAST_TOR
+- **CA_EAST_TOR**
+    - KMS Backup Region 1 : CA_EAST_BHS
+    - KMS Backup Region 2 : CA_EAST_TOR
+- **AP_SOUTHEAST_SGP**
+    - KMS Backup Region 1 : AP_SOUTHEAST_SGP
+    - KMS Backup Region 2 : AP_SOUTHEAST_SYD
+- **AP_SOUTHEAST_SYD**
+    - KMS Backup Region 1 : AP_SOUTHEAST_SGP
+    - KMS Backup Region 2 : AP_SOUTHEAST_SYD
 
 ### Disaster scenarios
 

@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar Zerto entre a OVHcloud e uma plataforma de terceiros'
 excerpt: 'Saiba como conectar a Zerto OVHcloud a outra plataforma'
-updated: 2023-12-04
+updated: 2025-06-25
 ---
 
 > [!primary]
@@ -34,7 +34,7 @@ Para mais informações sobre a segunda opção, consulte o nosso guia "[Zerto e
 
 > [!warning]
 >
-> A OVHcloud suporta as versões N-1 de Zerto (Atualmente, até à versão 9.7 incluída).
+> A OVHcloud suporta as versões N-1 de Zerto (Atualmente, até à versão 10 incluída).
 >
 > Pode encontrar as diferentes versões disponíveis aqui: <https://help.zerto.com/kb/000004585>.
 >

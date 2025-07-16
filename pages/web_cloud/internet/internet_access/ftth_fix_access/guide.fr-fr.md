@@ -139,7 +139,7 @@ Si le voyant « WAN » de votre box OVHcloud n'est pas allumé vert fixe, réali
 
 1. **Vérifier le branchement entre l'ONT et la box OVHcloud** : assurez-vous qu'un câble Ethernet est bien relié de la box OVHcloud sous l'emplacement « **WAN** » prévu à cet effet jusqu'à l'équipement ONT sous l'emplacement « **LAN** » prévu à cet effet. 
 
-2. **Vérifier l'état de fonctionnement du port « **WAN** » de la box OVHcloud** : changez de place le câble Ethernet actuellement relié sous l'emplacement « **WAN** » sur l'un des ports « **LAN** » (n'importe lequel), puis vérifiez si le voyant « **LAN** » s'est allumé sur l'ONT. Si tel est le cas, ceci indique que le port « **WAN** » de votre box OVHcloud est défectueux. [Prenez alors contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help) afin de procéder à un échange de celle-ci. 
+2. **Vérifier l'état de fonctionnement du port « WAN » de la box OVHcloud** : changez de place le câble Ethernet actuellement relié sous l'emplacement « **WAN** » sur l'un des ports « **LAN** » (n'importe lequel), puis vérifiez si le voyant « **LAN** » s'est allumé sur l'ONT. Si tel est le cas, ceci indique que le port « **WAN** » de votre box OVHcloud est défectueux. [Prenez alors contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help) afin de procéder à un échange de celle-ci. 
 
 3. **Vérifier l'état du câble Ethernet** : assurez-vous que le câble Ethernet reliant l'ONT à la box OVHcloud est en bon état (non dénudé, non plié ou non coincé sous un meuble). Si possible, essayez de changer ce câble par un autre.
 

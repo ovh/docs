@@ -11,13 +11,13 @@ updated: 2022-12-21
 > [!warning]
 > Ce tutoriel vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
 >
-> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/). Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce tutoriel.
+> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner). Pour plus d'informations, consultez la section [Aller plus loin](#go-further) de ce tutoriel.
 >
 
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Une licence Windows fournie par OVHcloud.
 - Une machine virtuelle sous Windows Server. Vous pouvez vous aider de ce guide pour installer une machine virtuelle sous Windows : [Gestion des machines virtuelles](/pages/hosted_private_cloud/nutanix_on_ovhcloud/06-virtual-machine-management).
 - La machine virtuelle se connecte à Internet au travers du rtvRack (par exemple via la passerelle par défaut).
@@ -71,6 +71,6 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

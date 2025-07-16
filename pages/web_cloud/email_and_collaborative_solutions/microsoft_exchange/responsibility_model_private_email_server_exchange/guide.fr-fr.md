@@ -74,7 +74,7 @@ Définition ## RACI
 | Restreindre l'utilisation des protocoles de sécurité en fonction des besoins de l'entreprise (IMAP, POP, MAPI, EWS, SMTP) et de la sécurité associée | A | R |
 | Gérer les accès physiques et logiques aux infrastructures pour les équipes OVHcloud | | RA |
 
-##### **3.1.3. Monitoring **
+##### **3.1.3. Monitoring**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
@@ -83,14 +83,14 @@ Définition ## RACI
 | Gérer le dimensionnement du matériel sur le service |  | RA |
 | Tenir à jour les logs générés par le service |  | RA |
 
-##### **3.1.4. Connectivité **
+##### **3.1.4. Connectivité**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gérer le plan d’adressage IP et les systèmes réseau (architecture, protocoles, trafic réseau et accès au service) | | RA |
 | Filtrer les flux réseau | RA | |
 
-##### **3.1.5. Gestion **
+##### **3.1.5. Gestion**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |

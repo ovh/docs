@@ -27,14 +27,14 @@ Os blocos de endereços IP numa região podem ser movidos de um datacenter para 
 
 ## Requisitos
 
-- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external} na Área de Cliente OVHcloud.
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) na Área de Cliente OVHcloud.
 - Dispor de um [endereço Additional IP](/links/network/additional-ip).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]
-> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+> Para mais informações, consulte o nosso [comparativo](/links/bare-metal/eco-compare).
 >
 
 > [!warning]

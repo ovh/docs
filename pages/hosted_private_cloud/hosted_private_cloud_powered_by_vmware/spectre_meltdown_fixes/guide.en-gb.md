@@ -47,7 +47,7 @@ If you have an older version of these *builds*, you will need to update your hos
 
 ### Update your host with the patch associated with the vulnerability
 
-Update your host by switching it to maintenance mode (your host will be rebooted during the procedure), and use the [VMware Update Manager plugin](https://www.vmware.com/support/pubs/vum_pubs.html){.external}.
+Update your host by switching it to maintenance mode (your host will be rebooted during the procedure), and use the [VMware Update Manager plugin](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager){.external}.
 
 The patches are as follows:
 

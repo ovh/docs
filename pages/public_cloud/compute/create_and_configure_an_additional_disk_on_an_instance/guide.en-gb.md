@@ -1,7 +1,7 @@
 ---
-title: Creating and configuring an additional disk on an instance
+title: How to create and configure an additional disk on an instance
 excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: 2025-06-03
+updated: 2025-06-27
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-It is possible to create additional disks for your Public Cloud instances.
+It is possible to create additional disks for your Public Cloud instances.  
 This can be useful in cases where:
 
 - You want to increase your storage capacity without changing the instance model.
@@ -45,7 +45,7 @@ This can be useful in cases where:
 
 ### The different types of volumes
 
-OVHcloud offers three types of Block Storage volumes, each tailored to specific needs in terms of performance, capacity and cost. These solutions enable you to attach persistent storage volumes to your instances, guaranteeing a high level of reliability and availability.
+OVHcloud offers three types of Block Storage volumes, each tailored to specific needs in terms of performance, capacity, and cost. These solutions allow you to attach persistent storage volumes to your instances, ensuring a high level of reliability and availability. If the feature is available, encryption can be enabled when creating a volume, for all volume types except Classic Multi-Attach volumes in 3AZ regions.
 
 /// details | **Classic – 500 IOPS guaranteed**
 
@@ -71,7 +71,7 @@ The High-Speed volume is designed for applications requiring faster data access.
 
 /// details | **High-Speed Gen2 – 30 IOPS/GB and up to 20,000 IOPS**
 
-Generation 2 High-Speed volumes are optimized for the most demanding workloads. With a performance of 30 IOPS/GB, up to 20,000 IOPS, this type of volume is recommended for :
+Generation 2 High-Speed volumes are optimized for the most demanding workloads. With a performance of 30 IOPS/GB, up to 20,000 IOPS, this type of volume is recommended for:
 
 - Big Data and real-time analysis
 - Artificial intelligence and machine learning
@@ -80,6 +80,11 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 ///
 
 ![volume_types](images/volume-types.png){.thumbnail}
+
+> [!primary]
+>
+> All volume types are also available in an encrypted version (LUKS). These volumes ensure data confidentiality without impacting performance. They are available through the OVHcloud Control Panel as well as via the tools presented in the next section, by specifying the type `<volume_type>-luks`.
+>
 
 ### Attaching a new volume
 
@@ -92,7 +97,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> ![select project](images/avolume01.png){.thumbnail}
 >>
->> Follow the configuration steps in order to select options for location, disk type and disk capacity. Then enter a name for the volume and confirm by clicking on `Create the volume`{.action}.
+>> Follow the configuration steps to select the location, disk type, encryption and disk capacity options. Enter a name for the volume and confirm by clicking on `Create volume`{.action}.
 >>
 >> > [!warning]
 >> >
@@ -120,21 +125,37 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >> >
 >>
 > **Via Terraform**
+>> > [!warning]
+>> >
+>> > Please note that the "high-speed-gen2" or "luks" volume types may not be available in all regions.
+>> >
+>>
+>> Types of volumes:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> The types ending in -luks are encrypted (LUKS).
 >>
 >> To create a simple block storage volume, you need 3 elements:
 >>
->> * The name of the volume
->> * The region
->> * The size of the volume in GB
+>> - The name of the volume
+>> - The region
+>> - The size of the volume in GB
 >>
 >> In our example, we will create a block storage in the **GRA11** region with a size of **10 GB**. Add the following lines to a file named *simple_blockstorage.tf*:
 >>
 >> ```python
 >> # Creation of a block storage volume
 >> resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
->> name   = "terraform_blockstorage" # Name of the block storage volume
->> size   = 10                       # Volume size
->> region = "GRA11"                  # Region where the volume must be created
+>>   name   = "terraform_blockstorage" # Name of the block storage volume
+>>   size   = 10                       # Volume size
+>>   region = "GRA11"                  # Region where the volume must be created
+>>   volume_type = "volume_type"       # classic, high-speed, high-speed-gen2 or equivalent `-luks`
 >> }
 >> ```
 >>
@@ -178,7 +199,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>       + name              = "terraform_blockstorage"
 >>       + region            = "GRA11"
 >>       + size              = 10
->>       + volume_type       = (known after apply)
+>>       + volume_type       = "high-speed-gen2"
 >>     }
 >>
 >>   # openstack_compute_volume_attach_v2.volume_attach will be created
@@ -207,6 +228,74 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 >> ```
+>>
+> **Via the Horizon interface**
+>> Go to the `Volumes`{.action} drop-down section, click `Volumes`{.action} and then `Create Volume`{.action}.
+>>
+>> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
+>>
+>> Fill in the `Volume Name`{.action} field and select the type of volume you want. Then click on `Create Volume`{.action}
+>>
+>> > [!warning]
+>> >
+>> > Please note that if the volume type "high-speed-gen2" or "luks" does not appear in the list, this means that it is not available in this region.
+>> >
+>>
+>> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
+>>
+>> To attach this volume to an instance, on your volume line, click `the arrow`{.action} at the end of the line next to `Edit Volume`. Then click on `Manage Attachments`{.action}.
+>>
+>> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
+>>
+>> Select the instance to which you wish to attach your volume, then click on `Attach Volume`{.action}.
+>>
+>> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
+>>
+> **Via the OpenStack CLI**
+>> > [!warning]
+>> >
+>> > Please note that if the volume type "high-speed-gen2" or "luks" does not appear in the list, this means that it is not available in this region.
+>> >
+>>
+>> Types of volumes:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> The types ending in -luks are encrypted (LUKS).
+>>
+>> List the volume types available in the region:
+>>
+>> ```bash
+>> openstack volume type list
+>> ```
+>>
+>> Create a volume, specifying at least its size (in GB) and a type from those listed above. You can also specify a name for your volume at the end of the command.
+>>
+>> ```bash
+>> openstack volume create --size 1 --type high-speed-gen2 volumeName # classic, high-speed, high-speed-gen2 or equivalent `-luks`
+>> ```
+>>
+>> To attach a volume to an instance available in the region, use the following command:
+>>
+>> ```bash
+>> openstack server add volume <server-id|server-name> <volume-id|volume-name>
+>>
+>> +-----------+-------------------------------------+
+>> | Field | Value |
+>> +-----------+-------------------------------------+
+>> | ID | 7d3d670f- ****-****-****-60dd1e6**** |
+>> | Server ID | 74317f97-****-****-80cf2d4**** |
+>> | Volume ID | 7d3d670f-****-****-****-60dd1e6**** |
+>> | Device | /dev/sdb |
+>> | Tag | None |
+>> +-----------+-------------------------------------+
+>> ```
+>>
 
 ### Configuring the new disk
 

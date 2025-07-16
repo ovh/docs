@@ -143,7 +143,7 @@ Because OpenSearch Dashboards interacts directly with the OpenSearch API, you wi
 
 ### Managed Grafana
 
-While Logs Data Platform doesn't propose a managed Grafana inside the platform, OVHcloud Public Cloud has a [managed Grafana offer](https://www.ovhcloud.com/fr/public-cloud/grafana/) that is well-suited to integrate directly with the OpenSearch API exposed by Logs Data Platform. While it is not pre-configured to integrate with your platform out-of-the box, the configuration is very easy to make by following [this guide](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
+While Logs Data Platform doesn't propose a managed Grafana inside the platform, OVHcloud Public Cloud has a [managed Grafana offer](/links/public-cloud/dashboards) that is well-suited to integrate directly with the OpenSearch API exposed by Logs Data Platform. While it is not pre-configured to integrate with your platform out-of-the box, the configuration is very easy to make by following [this guide](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
 
 ### WebSocket & LDP-tail
 

@@ -99,7 +99,7 @@ Il est possible d'afficher différent types de graphiques, depuis le menu dérou
 
 La création d'un utilisateur permettra à une personne d'accéder aux statistiques de votre hébergement web sans avoir accès à votre espace client OVHcloud.
 
-Dans la section `Administration des utilisateurs`{.action}, cliquez sur `Créer un nouvel utilisateur`{.action} puis suivez les intructions pour finaliser la création d'un nouvel utilisateur.
+Dans la section `Administration des utilisateurs`{.action}, cliquez sur `Créer un nouvel utilisateur`{.action} puis suivez les instructions pour finaliser la création d'un nouvel utilisateur.
 
 ![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
 

@@ -110,7 +110,7 @@ Come accedere ai grafici:
 
 Che tipo di informazioni è possibile visualizzare?
 
-- **Richieste HTTP **: indica il numero di hit medio al sito. (Hit: richiesta di accesso a un qualsiasi file - testo, immagine, ecc. - di una pagina web effettuata dal tuo browser).  Gli hit sono classificati per codice http: 2xx/3xx - 4xx - 5xx
+- **Richieste HTTP**: indica il numero di hit medio al sito. (Hit: richiesta di accesso a un qualsiasi file - testo, immagine, ecc. - di una pagina web effettuata dal tuo browser).  Gli hit sono classificati per codice http: 2xx/3xx - 4xx - 5xx
 
 - **Tempo medio di risposta**: corrisponde al tempo medio di risposta delle pagine, distinguendo tra quelle dinamiche e quelle statiche.
 

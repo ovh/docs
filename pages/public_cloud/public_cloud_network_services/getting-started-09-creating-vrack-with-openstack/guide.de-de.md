@@ -43,6 +43,8 @@ Bevor Sie beginnen, sollten Sie unbedingt diese Leitfäden lesen, um Ihre OpenSt
 > Da das vRack eine von OVHcloud verwaltete Infrastruktur ist, können Sie es nur über das OVHcloud Kundencenter und die OVHcloud APIv6 verwalten.
 >
 
+<a name="control-panel"></a>
+
 #### Über das OVHcloud Kundencenter
 
 > [!primary]

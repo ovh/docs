@@ -15,7 +15,7 @@ Questa guida ti mostra il Dashboard di Sicurezza di Rete e ti fornisce una panor
 
 ## Prerequisiti
 
-- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/it/vps/), [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud) cloud/), [Additional IP](/links/network/additional-ip), ecc.
+- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Istanza Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud)), [Additional IP](/links/network/additional-ip), ecc.
 - Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
@@ -75,7 +75,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.acti
 
 Nella scheda **scrubbing center log** è possibile recuperare tutte le informazioni sugli attacchi rilevati in passato (o in corso).
 
-![red-line-attack](images/nsd_main_blur.png)
+![red-line-attack](images/nsd_main_blur.png){.thumbnail}
 
 Nella tabella sono presenti le seguenti colonne: 
 
@@ -91,7 +91,7 @@ Nella tabella sono presenti le seguenti colonne:
 
 Nella scheda **Traffic chart**, è possibile visualizzare un grafico che mostra il traffico verso il proprio indirizzo IP (bps o pps).
 
-![red-line-attack](images/nsd_graph_tab_blur.png)
+![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Presenta il traffico malevolo che è caduto (**in rosso**) e il traffico pulito recapitato al tuo indirizzo IP (**in verde**). Vengono inoltre visualizzate le statistiche di base relative alla mitigazione, ad esempio il numero di attacchi rilevati per un IP selezionato, la quantità di traffico (o pacchetti) pulito durante gli attacchi o il numero di volte che i centri di pulitura hanno eseguito un'azione per ispezionare il traffico (il numero di eventi) in un determinato periodo di tempo.
 
@@ -171,4 +171,4 @@ In tutti i casi in cui sarà necessario apportare modifiche al nostro sistema an
 
 [Proteggere un server GAME con il firewall dell’applicazione](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

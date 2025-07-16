@@ -63,7 +63,7 @@ Questa guida ti mostra come:
 >> Se scegli il rinnovo manuale, riceverai diverse email di promemoria prima della scadenza, ciascuna contenente un link che permette di rinnovare online i servizi in scadenza.
 >> Potrai anche effettuare semplicemente il pagamento dal tuo Spazio Cliente.
 >>
->> **Attenzione**, se non effettui il pagamento di un servizio con rinnovo manuale, questo verrà **sospeso** alla data di scadenza e poi **eliminato*** dopo alcuni giorni.
+>> **Attenzione**, se non effettui il pagamento di un servizio con rinnovo manuale, questo verrà **sospeso** alla data di scadenza e poi **eliminato** dopo alcuni giorni.
 >> Se non vuoi mantenere il servizio attivo, non è necessario richiederne la disattivazione.
 
 ## Procedura

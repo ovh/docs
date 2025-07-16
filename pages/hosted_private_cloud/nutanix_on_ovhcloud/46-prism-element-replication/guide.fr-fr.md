@@ -31,7 +31,7 @@ Via **Prism Element**, il est possible :
 ## Prérequis
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters, par exemple via un VPN IPsec.
 
@@ -242,6 +242,6 @@ Les machines virtuelles apparaîtront dans la console de **Prism Element** dans 
 
 [Documentation Nutanix sur Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

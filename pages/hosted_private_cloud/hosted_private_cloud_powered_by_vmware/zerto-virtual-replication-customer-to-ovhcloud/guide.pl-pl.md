@@ -1,7 +1,7 @@
 ---
 title: "Korzystanie z usługi Zerto między OVHcloud a platformą zewnętrzną"
 excerpt: 'Dowiedz się, jak połączyć Zerto OVHcloud z inną platformą'
-updated: 2023-12-04
+updated: 2025-06-25
 ---
 
 > [!primary]
@@ -34,7 +34,7 @@ W drugim przypadku zapoznaj się z naszym przewodnikiem "[Zerto między dwoma ce
 
 > [!warning]
 >
-> OVHcloud wspiera wersje N-1 Zerto (aktualnie do wersji 9.7 zawartej w ofercie).
+> OVHcloud wspiera wersje N-1 Zerto (aktualnie do wersji 10 zawartej w ofercie).
 >
 > Dostępne wersje znajdziesz tutaj: <https://help.zerto.com/kb/000004585>.
 >

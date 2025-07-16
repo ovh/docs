@@ -10,7 +10,7 @@ Ce guide vous détaille le déploiement d'un SAProuter sur VMware on OVHcloud av
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à l’[espace client OVHcloud](/links/manager).
 - Une solution [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) avec NSX déployée dans votre compte OVHcloud.
 - Un accès avec les droits de gestion pour NSX.
 
@@ -25,7 +25,7 @@ Si vous n'avez pas créé de Network Firewall et de règles de filtrage réseau 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), ouvrez l'onglet `Bare Metal Cloud`{.action}, menu `Network`{.action} puis cliquez sur `IP`{.action}.
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez l'onglet `Bare Metal Cloud`{.action}, menu `Network`{.action} puis cliquez sur `IP`{.action}.
 >>
 >> Si vous possédez plusieurs adresses IP publiques ou services, vous pouvez soit filtrer avec les valeurs `Tous les types de service`{.action} et sélectionner `Hosting Private Cloud (VMware)`{.action}, soit avec les valeurs `Tous les services`{.action} et sélectionner votre solution VMware on OVHcloud.
 >>

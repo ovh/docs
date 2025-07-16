@@ -16,9 +16,9 @@ Si configura su servidor dedicado como servidor DNS, puede utilizar el DNS de OV
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external}.
-- Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} gestionado administrativa o técnicamente.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal).
+- Tener un [dominio](/links/web/domains) gestionado administrativa o técnicamente.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -29,7 +29,7 @@ Si configura su servidor dedicado como servidor DNS, puede utilizar el DNS de OV
 
 ## Procedimiento
 
-### Añadir un dominio <a name="ajoutdomaine"></a>
+### Añadir un dominio <a name="addingdomain"></a>
 
 Inicie sesión en el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor bajo `Servidores dedicados`{.action}.
 
@@ -41,7 +41,7 @@ Introduzca la dirección IP y el dominio a añadir y haga clic en `Siguiente`{.a
 
 ![DNS secundario](images/cp-02.png){.thumbnail}
 
-Una vez que haya hecho clic en `Siguiente`{.action} en esta etapa, se activará la verificación del dominio. Si todavía no ha añadido un registro TXT a su zona DNS, siga las indicaciones [que se ofrecen a continuación](#verificationdomaine). En caso contrario, haga clic en `Siguiente`{.action}.
+Una vez que haya hecho clic en `Siguiente`{.action} en esta etapa, se activará la verificación del dominio. Si todavía no ha añadido un registro TXT a su zona DNS, siga las indicaciones [que se ofrecen a continuación](#verifyingdomain). En caso contrario, haga clic en `Siguiente`{.action}.
 
 ![DNS secundario](images/cp-03.png){.thumbnail}
 
@@ -61,20 +61,20 @@ Los dominios añadidos se listarán en esta pestaña y pueden eliminarse haciend
 >
 > Si necesita más información para completar estas tareas administrativas, consulte la documentación externa correspondiente.
 
-### Verificación de la autorización para el dominio <a name="verificationdomaine"></a>
+### Verificación de la autorización para el dominio <a name="verifyingdomain"></a>
 
 Es necesario confirmar la autorización para gestionar el dominio antes de poder añadirlo al DNS secundario de OVHcloud. Esto se realiza a través de una búsqueda DNS automatizada en el subdominio *ownercheck.sudominio*. Para ello, se genera una única cadena que se muestra en el área de cliente de OVHcloud.
 
-- Si el dominio es gestionado por un agente registrador externo o utiliza servidores DNS externos en esta etapa, conéctese al área de cliente de su proveedor DNS y añada un registro TXT con el subdominio "ownercheck" y el valor proporcionado en el paso 2 de la [adición de dominio"](#ajoutdomaine).
+- Si el dominio es gestionado por un agente registrador externo o utiliza servidores DNS externos en esta etapa, conéctese al área de cliente de su proveedor DNS y añada un registro TXT con el subdominio "ownercheck" y el valor proporcionado en el paso 2 de la ["adición de dominio"](#addingdomain).
 
 - Si el dominio es gestionado por OVHcloud como servidor de registro y utiliza servidores DNS de OVHcloud, cierre la ventana haciendo clic en `Cancelar`{.action}. A continuación, siga las indicaciones de [esta guía](/pages/web_cloud/domains/dns_zone_edit) para añadir el registro TXT al [área de cliente de OVHcloud](/links/manager).
 
 ![DNS secundario](images/cp-04.png){.thumbnail}
 
-Una vez que haya añadido correctamente el registro TXT a la zona DNS del dominio, repita los [pasos anteriores](#ajoutdomaine) y complete el procedimiento.
+Una vez que haya añadido correctamente el registro TXT a la zona DNS del dominio, repita los [pasos anteriores](#addingdomain) y complete el procedimiento.
 
 ## Más información
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

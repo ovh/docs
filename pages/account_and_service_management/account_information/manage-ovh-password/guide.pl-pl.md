@@ -36,7 +36,7 @@ Bezpieczeństwo Twoich rozwiązań zależy od skuteczności hasła do Panelu kli
 
 - musi różnić się od wcześniejszego hasła.
 
-Istnieje kilka skutecznych metod tworzenia haseł. Polecamy na przykład **metodę pierwszych liter** opisaną tutaj: https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla
+Istnieje kilka skutecznych metod tworzenia haseł. Polecamy na przykład **metodę pierwszych liter** opisaną tutaj: <https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla>.
 
 Narodowa Komisja Ochrony Informacji i Wolności (CNIL), francuska organizacja powołana do czuwania nad przestrzeganiem postanowień dotyczących ochrony danych osobowych, rekomenduje również użycie narzędzia do generacji silnych haseł działającego w oparciu o metodę pierwszych liter.
 
@@ -93,7 +93,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 ![manage-ovh-password](images/account-password-modif-forgotten-step1.png){.thumbnail}
 
-- Wpisz nazwę użytkownika lub główny adres e-mail powiązany z kontem OVHcloud i kliknij przycisk `{.action}Wyślij`.
+- Wpisz swój identyfikator lub główny adres e-mail przypisany do Twojego konta OVHcloud i kliknij na `Wyślij`{.action}.
 
 ![manage-ovh-password](images/account-password-modif-forgotten-step2.png){.thumbnail}
 

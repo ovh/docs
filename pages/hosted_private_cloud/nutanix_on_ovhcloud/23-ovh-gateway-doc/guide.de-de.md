@@ -121,7 +121,7 @@ To redeploy the gateway VM you will need:
 
 ##### **Check the Additional IP address**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) and open the management section of your [vRack](https://www.ovhcloud.com/de/network/vrack/){.external}. Verify the Additional IP address used by the Nutanix Cluster.
+Log in to the [OVHcloud Control Panel](/links/manager) and open the management section of your [vRack](/links/network/vrack){.external}. Verify the Additional IP address used by the Nutanix Cluster.
 
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 
@@ -129,7 +129,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 > The following instructions will use the IP block 198.51.100.0/30 for example purposes.
 >
 
-For [vRack](https://www.ovhcloud.com/de/network/vrack/){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
+For [vRack](/links/network/vrack){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
 
 ```console
 198.51.100.0   Reserved: Network address
@@ -271,6 +271,6 @@ Click `Next`{.action}, then `Create VM`{.action}.
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

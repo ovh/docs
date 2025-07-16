@@ -27,14 +27,14 @@ Los bloques de direcciones IP de una región pueden moverse de un datacenter a o
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external} en el área de cliente de OVHcloud.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) en el área de cliente de OVHcloud.
 - Tener una [dirección Additional IP](/links/network/additional-ip).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
-> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
+> Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 
 > [!warning]
 > Si la dirección Additional IP, o una de las direcciones IP del bloque, tiene una MAC virtual asociada, el servidor de destino debe soportar la funcionalidad de las MAC virtuales.
@@ -82,7 +82,7 @@ Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
 
 ### Mover una IP a través de las API
 
-Conéctese a la página web de las [API de OVHcloud](https://ca.api.ovh.com/).
+Conéctese a la página web de las [API de OVHcloud](/links/api).
 
 En primer lugar, es mejor comprobar si la dirección IP se puede mover correctamente al servidor deseado.
 <br>Para comprobar si la IP puede moverse a uno de sus servidores dedicados, utilice la siguiente llamada:

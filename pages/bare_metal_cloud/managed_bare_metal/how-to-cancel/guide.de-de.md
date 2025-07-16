@@ -13,7 +13,7 @@ Unser Managed Bare Metal Angebot entspricht nicht mehr Ihren Anforderungen? Oder
 ## Voraussetzungen
 
 - Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Infrastruktur.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -24,7 +24,7 @@ Unser Managed Bare Metal Angebot entspricht nicht mehr Ihren Anforderungen? Oder
 
 ### Schritt 1: Beantragen Sie die Kündigung in Ihrem OVHcloud Kundencenter
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an, gehen Sie in den Bereich `Bare Metal Cloud`{.action} (1), klicken Sie auf `Managed Bare Metal`{.action} (2) und wählen Sie die Managed Bare Metal aus der Liste aus (3), die Sie kündigen möchten.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} an, gehen Sie in den Bereich `Bare Metal Cloud`{.action} (1), klicken Sie auf `Managed Bare Metal`{.action} (2) und wählen Sie die Managed Bare Metal aus der Liste aus (3), die Sie kündigen möchten.
 
 Klicken Sie im Reiter “Allgemeine Informationen” in der Tabelle “Dienstverwaltung” auf den Button `...`{.action} (4) rechts neben dem Datum der Verlängerung. Klicken Sie dann auf `Dienst löschen`{.action} (5).
 

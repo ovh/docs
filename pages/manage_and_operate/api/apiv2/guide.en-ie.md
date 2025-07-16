@@ -6,7 +6,7 @@ updated: 2023-04-17
 
 ## Objective
 
-The APIs available at [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.external} allow you to buy, manage, update and configure OVHcloud products without using a graphical interface like the OVHcloud Control Panel.
+The APIs available at [https://eu.api.ovh.com/](/links/api){.external} allow you to buy, manage, update and configure OVHcloud products without using a graphical interface like the OVHcloud Control Panel.
 
 Historically, OVHcloud APIs have been available under the **/1.0** branch corresponding to the first version of the API that we published. 
 

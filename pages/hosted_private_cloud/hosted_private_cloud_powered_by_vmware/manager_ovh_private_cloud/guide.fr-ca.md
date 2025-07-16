@@ -12,14 +12,14 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
 - Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 
 ## En pratique
 
 ### Onglet général
 
-Une fois dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, vous aurez accès à un aperçu général de votre Private Cloud :
+Une fois dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action} de votre [espace client OVHcloud](/links/manager){.external}, vous aurez accès à un aperçu général de votre Private Cloud :
 
 ![Informations générales](images/controlpanel1.png){.thumbnail}
 

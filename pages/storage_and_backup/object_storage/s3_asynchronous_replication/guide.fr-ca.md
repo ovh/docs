@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2025-06-17
+updated: 2025-07-10
 ---
 
 ## Introduction
@@ -229,14 +229,9 @@ Le verrouillage d'objet peut être utilisé avec la réplication pour permettre 
 > [!warning]
 > Pour répliquer des données dans des buckets avec un verrouillage d'objet, vous devez disposer des prérequis suivants :
 >
+> - Le versioning doit être activé sur le bucket source et le bucket de destination.
 > - Le verrouillage d'objet doit être activé sur les buckets source et de destination.
-> - Vous devez fournir un token lorsque vous téléversez votre configuration de réplication sur le bucket source.
-
-Vous pouvez obtenir un token en contactant notre [équipe de support](https://help.ovhcloud.com/csm?id=csm_get_help). Une fois que vous avez obtenu le token, vous pouvez le définir, via le client en ligne de commande, dans le paramètre `--token` de la commande `put-bucket-replication` :
-
-```bash
-$AWS s3api put-bucket-replication --replication-configuration "file://path_to_replication_conf_file" --bucket bucket_name --token $TOKEN
-```
+>
 
 #### Exemple de configuration de réplication
 
@@ -494,6 +489,8 @@ Cette fonctionnalité n'est disponible que pour les régions 3-AZ (pour en savoi
 - Les données sont répliquées sur une région distante 1-AZ. Le système détermine automatiquement l'emplacement le plus approprié parmi **Strasbourg, Gravelines et Roubaix**, assurant une protection des données hors site efficace et fiable.
 - Les objets stockés dans le bucket de destination (aussi appelé *replica bucket*) le sont dans une classe différente, nommée **Infrequent Access**, et sont facturés différemment. Consultez la tarification sur [cette page](/links/public-cloud/prices). Cette classe est conçue pour des données moins fréquemment consultées et vous permet de réduire vos coûts Object Storage tout en gardant des performances comparables à la classe Standard. Cependant, si la classe du bucket de destination ne convient pas, il est possible de privilégier une autre approche et d'utiliser la fonctionnalité de réplication asynchrone permettant de gérer l'ensemble des paramètres de la configuration.
 - Le bucket de destination et la configuration de la règle de réplication peuvent ensuite être modifiés par l'utilisateur.
+
+### FAQ Offsite Replication
 
 #### Comment puis-je accéder à l’option depuis mon espace client ?
 

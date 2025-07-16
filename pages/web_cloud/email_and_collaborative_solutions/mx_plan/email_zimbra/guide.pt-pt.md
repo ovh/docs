@@ -1,7 +1,7 @@
 ---
 title: "Utilizar o webmail Zimbra"
 excerpt: "Descubra a interface do webmail Zimbra para os endereços de e-mail MX Plan da OVHcloud"
-updated: 2025-02-12
+updated: 2025-07-08
 ---
 
 <style>
@@ -43,6 +43,7 @@ A OVHcloud fornece um serviço de webmail chamado Zimbra para aceder a uma conta
 - [Calendário](#calendar)
     - [Gestão de calendários](#calendar-management)
     - [Tarefas](#tasks)
+- [Armazenamento](#storage)
 - [Filtros](#filters)
     - [Compreender como configurar os seus filtros](#filters-howto)
     - [Criar um filtro](#filters-creation)
@@ -439,6 +440,72 @@ Ao criar uma tarefa, você pode definir uma data de vencimento e uma prioridade 
 De seguida, clique em `Guardar`{.action} para finalizar a criação da sua tarefa.
 
 ![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+
+### Armazenamento <a name="storage"></a>
+
+> [!success]
+>
+> A funcionalidade de armazenamento chamada "Porta-documentos" só está disponível a partir da oferta Zimbra Pro.
+
+> [!warning]
+>
+> O Zimbra Pro está disponível em versão beta e algumas funcionalidades estão ainda a ser melhoradas.
+
+Clique no ícone `Porta-documentos`{.action} situado na barra superior para aceder ao seu espaço de armazenamento. Poderá guardar os seus ficheiros e partilhá-los.
+
+1. Na coluna da esquerda, encontrará as pastas do seu espaço de armazenamento.
+
+    - Para criar uma nova pasta, clique em `+ Adicionar uma pasta`{.action} na parte inferior da coluna. Introduza o nome pretendido e valide premindo a tecla `Enter`{.action}.
+    - Para criar uma sub-pasta, clique com o botão direito do rato numa das pastas e clique em `Criar sub-pasta`{.action}. Introduza o nome pretendido e valide premindo a tecla `Enter`{.action}.
+
+2. Na coluna central, você encontrará a lista de arquivos presentes na pasta selecionada.
+
+3. Na janela à direita, dependendo do tipo de arquivo selecionado na coluna central, uma visão geral do conteúdo é exibida. A barra superior da pré-visualização exibe as ações possíveis para o(s) ficheiro(s) selecionado(s).
+
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+
+#### Adicionar um ficheiro
+
+Para adicionar um ficheiro ao espaço de armazenamento, efetue os seguintes passos:
+
+1. Clique em `Carregar`{.action} na coluna da esquerda.
+2. Na janela de exploração de ficheiros, selecione os ficheiros a transferir para o seu espaço de armazenamento.
+3. Clique em `Abrir`{.action} para transferir o(s) elemento(s) para o seu espaço de armazenamento.
+
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+
+#### Partilhar um ficheiro ou uma pasta
+
+A partilha permite-lhe dar acesso a uma pasta ou a um ficheiro no seu armazenamento a uma pessoa terceira, fora da sua conta Zimbra.
+
+> [!warning]
+>
+> A partilha que permite a administração de pastas e ficheiros só é possível com outra conta Zimbra Pro.
+
+> [!tabs]
+> **Partilhar um ficheiro**
+>>
+>> 1. Selecione o ficheiro a partilhar e clique em `Mais...`{.action}.
+>> 2. Clique em `Compartilhar...`{.action}.
+>> 3. Introduza o endereço de e-mail do convidado e depois clique em `Adicionar`{.action}. Pode adicionar vários endereços de e-mail.
+>> 4. Escolha as permissões que deseja atribuir ao convidado.
+>> 5. Clique em `Guardar`{.action} para finalizar a partilha.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>>
+> **Partilhar uma pasta**
+>>
+>> 1. Clique com o botão direito do rato na pasta que pretende partilhar e, em seguida, clique em `Partilhar...`{.action}.
+>> 2. Introduza o endereço de e-mail do convidado e depois clique em `Adicionar`{.action}. Pode adicionar vários endereços de e-mail.
+>> 3. Escolha as permissões que deseja atribuir ao convidado.
+>> 4. Clique em `Guardar`{.action} para finalizar a partilha.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>>
+
+O convidado recebe um e-mail convidando-o a criar uma conta Zimbra composta por um identificador de cliente e uma palavra-passe. Esta conta permite aceder a uma interface Zimbra limitada ao que foi partilhado.
+
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
 
 ### Filtros <a name="filters"></a>
 

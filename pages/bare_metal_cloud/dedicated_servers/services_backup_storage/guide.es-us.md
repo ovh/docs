@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar Backup Storage en un servidor dedicado'
 excerpt: 'Cómo activar y acceder al espacio de almacenamiento adicional'
-updated: 2025-02-12
+updated: 2025-07-14
 ---
 
 ## Objetivo
@@ -157,11 +157,11 @@ ncftpput -u FtpUsername -p FtpPassword HostName /FolderLocation /File
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
-* **File**: Nombre del archivo del que quiere guardar la copia de seguridad
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
+- **File**: Nombre del archivo del que quiere guardar la copia de seguridad
 
 Para realizar el backup de un directorio completo, solo tiene que empaquetarlo antes de transferirlo al espacio de backup con el siguiente comando:
 
@@ -171,11 +171,11 @@ tar czf - /FolderName | ncftpput -u FtpUsername -p FtpPassword -c HostName Archi
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **FolderName**: Ruta de acceso al directorio del que quiere guardar la copia de seguridad
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **ArchiveName**: Nombre del directorio del que quiere guardar la copia de seguridad
+- **FolderName**: Ruta de acceso al directorio del que quiere guardar la copia de seguridad
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **ArchiveName**: Nombre del directorio del que quiere guardar la copia de seguridad
 
 Para descargar un archivo desde el espacio de backup, utilice el siguiente comando:
 
@@ -185,17 +185,18 @@ ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **LocalFolder**: Ruta de acceso al directorio local en el que quiere guardar el archivo
-* **File**: Ruta de acceso del archivo que quiere descargar
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **LocalFolder**: Ruta de acceso al directorio local en el que quiere guardar el archivo
+- **File**: Ruta de acceso del archivo que quiere descargar
 
 ##### cURL (para Linux)
 
 > [!primary]
 >
-> Para utilizar el protocolo FTPS, es necesario cambiar el nombre del Backup Storage. Por ejemplo, si el nombre actual es «ftpback-rbxX-YYY.ovh.net», deberá cambiarlo por «ftpback-rbxX-YYY.**mybackup**.ovh.net». También debe añadir el argumento `-ssl` al comando que se indica a continuación.
+> Para utilizar el protocolo FTPS, es necesario cambiar el nombre del Backup Storage. Por ejemplo, si el nombre actual es «ftpback-rbxX-YYY.ovh.net», deberá cambiarlo por «ftpback-rbxX-YYY.**mybackup**.ovh.net». También debe añadir el argumento `-ssl` al comando que se indica a continuación.  
+> Si el Backup Storage se encuentra en Canadá (BHS), deberá cambiarlo por «ftpback-bhsX-YYY.mybackup.ovh.ca».
 >
 
 Para realizar el backup de un solo archivo, utilice el siguiente comando:
@@ -206,11 +207,11 @@ curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **File**: Nombre del archivo del que quiere guardar la copia de seguridad
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
+- **File**: Nombre del archivo del que quiere guardar la copia de seguridad
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
 
 Para realizar el backup de un directorio completo, solo tiene que empaquetarlo antes de transferirlo al espacio de backup con el siguiente comando:
 
@@ -220,12 +221,12 @@ tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocati
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **FolderName**: Ruta de acceso al directorio del que quiere guardar la copia de seguridad
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
-* **ArchiveName**: Nombre del directorio del que quiere guardar la copia de seguridad
+- **FolderName**: Ruta de acceso al directorio del que quiere guardar la copia de seguridad
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
+- **ArchiveName**: Nombre del directorio del que quiere guardar la copia de seguridad
 
 Para descargar un archivo desde el espacio de backup, utilice el siguiente comando:
 
@@ -236,17 +237,18 @@ curl -u FtpUsername:FtpPassword ftp://HostName/File
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **LocalFolder**: Nombre del directorio local en el que quiere guardar el archivo
-* **File**: Ruta de acceso del archivo que quiere descargar
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **LocalFolder**: Nombre del directorio local en el que quiere guardar el archivo
+- **File**: Ruta de acceso del archivo que quiere descargar
 
 #### lftp (para Linux)
 
 > [!primary]
 >
-> LFTP utiliza FTP+SSL/TLS por defecto, por lo que deberá cambiar el nombre del Backup Storage. Por ejemplo, si el nombre es «ftpback-rbxX-YYY.ovh.net», deberá cambiarlo por «ftpback-rbxX-YYY.**mybackup**.ovh.net».
+> LFTP utiliza FTP+SSL/TLS por defecto, por lo que deberá cambiar el nombre del Backup Storage. Por ejemplo, si el nombre es «ftpback-rbxX-YYY.ovh.net», deberá cambiarlo por «ftpback-rbxX-YYY.**mybackup**.ovh.net».  
+> Si el Backup Storage se encuentra en Canadá (BHS), deberá cambiarlo por «ftpback-bhsX-YYY.mybackup.ovh.ca».
 >
 
 Para realizar el backup de un solo archivo, utilice el siguiente comando:
@@ -257,11 +259,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; 
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **File**: Nombre del archivo del que quiere guardar la copia de seguridad
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
+- **File**: Nombre del archivo del que quiere guardar la copia de seguridad
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
 
 Para realizar el backup de un directorio completo, solo tiene que empaquetarlo antes de transferirlo al espacio de backup con el siguiente comando:
 
@@ -271,12 +273,12 @@ tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderL
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **FolderName**: Ruta de acceso al directorio del que quiere guardar la copia de seguridad
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
-* **ArchiveName**: Nombre del directorio del que quiere guardar la copia de seguridad
+- **FolderName**: Ruta de acceso al directorio del que quiere guardar la copia de seguridad
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **FolderLocation**: Ruta de acceso al directorio de destino en el que quiere copiar el archivo
+- **ArchiveName**: Nombre del directorio del que quiere guardar la copia de seguridad
 
 Para descargar un archivo empaquetado desde el espacio de backup, utilice el siguiente comando:
 
@@ -287,11 +289,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **FtpUsername**: Nombre de usuario FTP
-* **FtpPassword**: Contraseña FTP
-* **HostName**: Nombre del Backup Storage
-* **LocalFolder**: Nombre del directorio local en el que quiere guardar el archivo
-* **File**: Ruta de acceso del archivo que quiere descargar
+- **FtpUsername**: Nombre de usuario FTP
+- **FtpPassword**: Contraseña FTP
+- **HostName**: Nombre del Backup Storage
+- **LocalFolder**: Nombre del directorio local en el que quiere guardar el archivo
+- **File**: Ruta de acceso del archivo que quiere descargar
 
 ##### FileZilla
 
@@ -309,9 +311,9 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **HostName**: Nombre del Backup Storage
-* **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
-* **FolderMount**: Directorio en el que quiere montar la partición NFS
+- **HostName**: Nombre del Backup Storage
+- **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
+- **FolderMount**: Directorio en el que quiere montar la partición NFS
 
 Una vez montada la partición, puede utilizar comandos como `cp` y `rsync` como lo haría con un directorio normal.
 
@@ -327,8 +329,8 @@ net use z: \\HostName\ServiceName
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **HostName**: Nombre del Backup Storage
-* **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
+- **HostName**: Nombre del Backup Storage
+- **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
 
 
 Puede aparecer el siguiente mensaje de error:
@@ -369,10 +371,10 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
-* **RootPassword**: Contraseña SSH del usuario root del servidor (no se mostrará al escribirla)
-* **HostName**: Nombre del Backup Storage
-* **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
-* **FolderMount**: Directorio en el que quiere montar la partición (es necesario que ya exista)
+- **RootPassword**: Contraseña SSH del usuario root del servidor (no se mostrará al escribirla)
+- **HostName**: Nombre del Backup Storage
+- **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
+- **FolderMount**: Directorio en el que quiere montar la partición (es necesario que ya exista)
 
 ## Más información
 

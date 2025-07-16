@@ -9,7 +9,7 @@ updated: 2024-01-22
 > 
 ## Objetivo
 
-Puede identificar si un VPS procede de una antigua gama gracias al nombre de referencia que aparece en el [área de cliente de OVHcloud](/links/manager): si dicha referencia interna está en formato *vpsXXXX.ovh.net* (donde *X* representa un número) y no ha migrado el VPS correspondiente a [nuestra gama actual de productos](https://www.ovhcloud.com/es-es/vps/), se trata de un VPS *legacy*. 
+Puede identificar si un VPS procede de una antigua gama gracias al nombre de referencia que aparece en el [área de cliente de OVHcloud](/links/manager): si dicha referencia interna está en formato *vpsXXXX.ovh.net* (donde *X* representa un número) y no ha migrado el VPS correspondiente a [nuestra gama actual de productos](/links/bare-metal/vps), se trata de un VPS *legacy*. 
 
 La referencia de un VPS de gama actual se presenta de esta manera: *vps-XXXXXXX.vps.ovh.net* (donde *X* puede ser una cifra o una letra).
 
@@ -19,7 +19,7 @@ Un VPS *legacy* implica algunas diferencias en términos de gestión.
 
 ## Requisitos
 
-- Un [VPS *legacy*](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud
+- Un [VPS *legacy*](/links/bare-metal/vps) en su cuenta de OVHcloud
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento

@@ -47,7 +47,7 @@ However, there are **special cases** that are detailed [below](#specific-cases) 
 
 ### How do I cancel my subscription? <a name="terminate"></a>
 
-To cancel your service subscription, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on `My solutions & services`{.action}.
+To cancel your service subscription, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on `My offers and services`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -84,11 +84,11 @@ To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en/managed-bare-met
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-To cancel your [VMware on OVHcloud](https://www.ovhcloud.com/en/hosted-private-cloud/), follow the instructions in this [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+To cancel your [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-cloud), follow the instructions in this [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Each [Public Cloud](https://www.ovhcloud.com/en/public-cloud/) service can be deleted from the `Public Cloud`{.action} tab in the Control Panel.
+Each [Public Cloud](/links/public-cloud/public-cloud) service can be deleted from the `Public Cloud`{.action} tab in the Control Panel.
 
 Select a service on the left, click on the `...`{.action} button to the right of the service concerned, then on `Delete`{.action}, as in the example below for an instance:
 
@@ -105,7 +105,7 @@ You can also [view your current resource usage](/pages/public_cloud/public_cloud
 > You can revoke a cancellation request up to 24 hours before the subscription end date.
 >
 
-To abort a cancellation request, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on `My solutions & services`{.action}.
+To abort a cancellation request, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on `My offers and services`{.action}.
 
 Next, click the `...`{.action} button to the right of the service for which a cancellation request is being made, then `Stop cancellation of service`{.action}
 

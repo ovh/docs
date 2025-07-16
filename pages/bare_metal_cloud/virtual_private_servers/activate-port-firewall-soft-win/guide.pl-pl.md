@@ -18,12 +18,12 @@ Aby optymalnie chronić system, serwer z systemem Windows Server dysponuje włas
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub zabezpieczeniem serwera rekomendujemy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Więcej informacji znajduje się w sekcji “Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub zabezpieczeniem serwera rekomendujemy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
 >
 
 ## Wymagania początkowe
 
-- Serwer [VPS](https://www.ovhcloud.com/pl/vps/) z systemem Windows na koncie OVHcloud
+- Serwer [VPS](/links/bare-metal/vps) z systemem Windows na koncie OVHcloud
 - Dostęp administratora do serwera przez zdalny pulpit w systemie Windows 
 
 ## W praktyce
@@ -112,6 +112,6 @@ Kliknij przycisk `Zakończ`{.action}, aby zakończyć proces i utworzyć nową r
 
 Następnie możesz wprowadzić zmiany w zakresie bezpieczeństwa nowej reguły utworzonej.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -14,7 +14,7 @@ Cada conexión al sitio web genera un flujo de datos. Cuando estos datos circula
 
 ## Requisitos
 
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener acceso al [área de cliente](/links/manager){.external}.
 
 ## Procedimiento
 
@@ -22,7 +22,7 @@ Cada conexión al sitio web genera un flujo de datos. Cuando estos datos circula
 
 Al contratar la solución CDN, puede disfrutar de **1 TB** de tráfico incluido de forma gratuita. Este volumen de tráfico no se renueva cada mes junto con la solución, sino que, una vez consumido (independientemente del plazo), deberá contratar tráfico adicional.
 
-Es posible adquirir tráfico adicional directamente desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+Es posible adquirir tráfico adicional directamente desde el [área de cliente de OVH](/links/manager){.external}.
 
 ![Adquirir tráfico](images/add_quota.png){.thumbnail}
 

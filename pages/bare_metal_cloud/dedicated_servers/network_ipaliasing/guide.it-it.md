@@ -24,14 +24,14 @@ L'alias IP (o IP aliasing) è un tipo di configurazione del tuo server dedicato 
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external}
-- Disporre di uno o più [Additional IP](/links/network/additional-ip){.external}
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal)
+- Disporre di uno o più [Additional IP](/links/network/additional-ip)
 - Essere connesso al server in SSH (accesso *sudo*)
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 ## Procedura
 
@@ -563,4 +563,4 @@ In seguito, ti basta effettuare un ping dal tuo Additional IP verso l'esterno. S
 
 [Modalità bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Transférer les logs du KMS OVHcloud à Logs Data Platform"
 excerpt: "Analyser les logs KMS via LDP"
-updated: 2025-06-17
+updated: 2025-06-18
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ L'objectif de ce guide est de présenter les logs générés par le KMS OVHcloud
 
 ### Description
 
-Le KMS OVHcloud dispose d'une intégration native avec [Logs Data Platform](/links/manage-operate/ldp) pour la gestion des logs.
+Le KMS OVHcloud dispose d'une intégration native avec [Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/introduction_to_services_logs) pour la gestion des logs.
 
 ### Accès aux logs en direct
 

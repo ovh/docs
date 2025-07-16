@@ -15,7 +15,7 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 
 > [!warning]
 > 
-> Attention : le RAID 0 n’offre ni **tolérance aux pannes** ni ** redondance des données**. Cela rend très probable la perte d’informations en cas de panne de disque.
+> Attention : le RAID 0 n’offre ni **tolérance aux pannes** ni **redondance des données**. Cela rend très probable la perte d’informations en cas de panne de disque.
 > 
 
 ## Prérequis

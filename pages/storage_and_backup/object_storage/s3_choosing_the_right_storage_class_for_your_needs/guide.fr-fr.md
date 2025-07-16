@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Choisir une classe de stockage adaptée à vos besoins
-updated: 2025-06-04
+updated: 2025-07-03
 ---
 
 Le stockage objet « Object Storage » est une famille d’offres de stockage proposant des espaces de stockage performants, scalables et sécurisés.
@@ -39,6 +39,28 @@ Cette offre est adaptée aux cas d'usage suivants : stockage long durée, sauveg
 | **Cold Archive** *[en savoir plus](/pages/storage_and_backup/object_storage/cold_archive_overview)* | Stockage à très long terme, sauvegardes, reprise après sinistre | heures | 4 centres de données dédiés | 99,9% | 90 jours | Oui | Au bucket, pas de prise en charge de la gestion du cycle de vie pour le moment |
 
 Retrouvez plus de détails concernant les régions OVHcloud [ici](/pages/storage_and_backup/object_storage/s3_location).
+
+### Détails supplémentaires
+
+#### Durée de stockage minimale
+
+Il s'agit de la **durée minimum pendant laquelle un objet doit être stocké** dans une classe de stockage concernée. En cas de suppression anticipée, via une requête *delete-object*, des frais proportionnels aux jours restants sont appliqués. Soyez vigileants avec des buckets non versionnés : si l'objet est écrasé, la nouvelle écriture sera considérée comme une suppression de la version actuelle de l'objet et les frais mentionnés seront également appliqués. 
+
+Par exemple, pour la classe *Infrequent Access*, la durée de stockage minimale est de 730 heures (30 jours). Si un objet est supprimé pendant cette période, des frais supplémentaires seront appliqués et calculés à l'aide de la formule suivante : [730h - nombre d'heures de stockage de l'objet] x prix par heure de la classe de stockage.
+
+#### Frais de récupération/d'extraction des données
+
+Il s'agit de frais appliqués lorsque vous récupérez ou accédez à des données stockées dans une classe de stockage concernée. Ces frais de récupération sont calculés en fonction de la quantité de données récupérées (par Gio récupéré). 
+
+Pour la classe *Infrequent Access*, seules les requêtes de type *get-object* sont considérées comme des frais de récupération. 
+
+Pour la classe *Cold Archive*, seules les requêtes de type *restore* sont considérées comme des frais de récupération.
+
+#### Prise en charge de la gestion du cycle de vie
+
+Il s'agit de la capacité à gérer automatiquement le cycle de vie de vos objets, par exemple en les faisant passer d'une classe de stockage à une autre, selon des règles prédéfinies. Cela vous permet d'optimiser les coûts de stockage et de simplifier la gestion des données. Une granularité au niveau de l'objet est requise car elle vous permet de gérer ces règles au niveau d'un objet individuel. **Les requêtes associées à la fonctionnalité de lifecycle sont inclues et ne sont donc pas facturées**. 
+
+Plus de détails sur la gestion du cycle de vie [ici](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle).
 
 ## Object Storage - SWIFT API
 

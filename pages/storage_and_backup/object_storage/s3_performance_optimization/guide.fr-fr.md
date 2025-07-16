@@ -67,7 +67,7 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
 ```
 
 > [!primary]
-> N'oubliez pas de sauvegarder les **upload ID**, **key*- et **bucket name*- pour les utiliser avec la commande `upload-part`.
+> N'oubliez pas de sauvegarder les **upload ID**, **key** et **bucket name** pour les utiliser avec la commande `upload-part`.
 >
 
 Pour chaque partie, vous devez exécuter la commande `upload-part` dans laquelle vous spécifiez les *bucket*, *key- et *upload ID- :
@@ -239,7 +239,7 @@ OpenIO est une solution de *Software Defined Storage- sur laquelle repose l’Ob
 
 Dans OpenIO, un **conteneur*- est essentiellement une entité logique interne qui contient tous les objets d'un bucket donné. Chaque conteneur est associé à une base de données de métadonnées interne qui répertorie toutes les adresses du cluster des objets qu'il contient. Par défaut, un bucket Object Storage est associé à un conteneur, mais cela peut changer avec le mécanisme de *sharding*.
 
-Le *sharding- est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets*- appelé **shards**.
+Le *sharding* est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets** appelé **shards**.
 
 Le *sharding- permet :
 

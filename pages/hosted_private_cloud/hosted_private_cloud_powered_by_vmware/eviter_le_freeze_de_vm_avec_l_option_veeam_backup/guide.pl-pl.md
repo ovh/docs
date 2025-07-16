@@ -18,7 +18,7 @@ Wynika to z faktu, że snapshot Twojej wirtualnej maszyny jest zainstalowany na 
 ## Wymagania początkowe
 
 - Posiadanie kontaktu administracyjnego infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymać dane do logowania.
-- Posiadanie aktywnego identyfikatora użytkownika (utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
+- Posiadanie aktywnego identyfikatora użytkownika (utworzonego w [Panelu klienta OVHcloud](/links/manager))
 - Włącz opcję [Veeam Backup Managed](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external}.
 
 ## W praktyce

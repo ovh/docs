@@ -101,7 +101,7 @@ Um ein SSL-Zertifikat zu bestellen, gehen Sie einfach in den Bereich `SSL-Zertif
 |Element|Funktion|
 |---|---|
 |Name|Wenn Sie möchten, können Sie Ihrem Zertifikat einen Namen geben. Wenn Sie mehrere Zertifikate verwenden, können Sie diese so schneller unterscheiden.|
-|Zertifikattyp|Kostenlos (Let's Encrypt), Comodo DV oder Comodo EV (Details unter dieser Adresse: https://www.ovh.de/ssl/)|
+|Zertifikattyp|Kostenlos (Let's Encrypt), Comodo DV oder Comodo EV (Weitere Informationen finden Sie [auf dieser Seite](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Die betroffene(n) Domain(s)|
 
 #### Hinzufügen eines externen SSL-Zertifikats

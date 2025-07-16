@@ -15,9 +15,9 @@ If you are new to Logs Data Platform, completion of the [Quick Start Tutorial](/
 
 The following links can help you get a head start on Logstash in order to get started with the basics:
 
-- [What is Logstash?](#what-is-logstash){.external}
-- [How do I configure Logstash Collector on Logs Data Platform?](#host-a-logstash-collector-on-logs-data-platform){.external}
-- [What is special about our hosted Logstash? Available plugins, SSL Certificates and more.](#additional-information_1){.external}
+- [What is Logstash?](#what-is-logstash)
+- [How do I configure Logstash Collector on Logs Data Platform?](#host-a-logstash-collector-on-logs-data-platform)
+- [What is special about our hosted Logstash? Available plugins, SSL Certificates and more.](#additional-information)
 
 This is "All you need to know about the Logstash Collector on the Logs Data Platform"!
 

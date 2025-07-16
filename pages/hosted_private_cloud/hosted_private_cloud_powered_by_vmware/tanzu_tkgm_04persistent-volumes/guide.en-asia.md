@@ -17,7 +17,7 @@ updated: 2024-01-10
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A user account with access to the [OVHcloud Control Panel](/links/manager)
 - A user account with access to vSphere
 - You need to have deployed the **Workload** **TKG** cluster using the [Tanzu Management Cluster Grid administration guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/tanzu_tkgm_03manage).
 
@@ -220,6 +220,6 @@ Go back to the `Datacenter`{.action} at the root of the datacenters, click on th
 
 [Manual installation of the CLI tool for the deployment of Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

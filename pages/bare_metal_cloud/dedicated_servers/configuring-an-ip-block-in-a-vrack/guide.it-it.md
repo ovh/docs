@@ -20,8 +20,8 @@ Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/s
 > Questo articolo descrive la configurazione degli indirizzi Additional IP su una rete vRack. Per istruzioni sulla configurazione degli indirizzi Additional IP con un indirizzo IP primario (nell'interfaccia di rete pubblica), vedere gli articoli seguenti:
 >
 > - IPv4:
->   - [Configurare un Alias IP](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
->   - [Configurare un indirizzo IP in alias](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>   - [Configurare un indirizzo IP come alias su un server dedicato](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+>   - [Configurare un indirizzo IP in alias su un server VPS](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
 >
 > - IPv6:
 >   - [Configurare IPv6 sur un server dedicato](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
@@ -38,9 +38,9 @@ Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/s
 - Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 ## Procedura
 

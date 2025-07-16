@@ -32,7 +32,7 @@ Cuando el sistema está en versión de prueba, se registra una clave por defecto
 
 A continuación, introduzca el siguiente comando:
 
-```
+```bash
 cscript.exe c:\windows\system32\slmgr.vbs -upk
 ```
 
@@ -67,7 +67,7 @@ cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 ### Activar el sistema
 Por último, para activar su sistema Windows, ejecute el siguiente comando:
 
-```
+```bash
 cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 

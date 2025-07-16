@@ -12,13 +12,13 @@ Diese Option bietet eine komfortable Möglichkeit, vollständige VPS Backups reg
 
 > [!primary]
 >
-Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](https://www.ovhcloud.com/de/vps/options/) zu Preisvergleichen und weiteren Details zu konsultieren.
+Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](/links/bare-metal/vps-options) zu Preisvergleichen und weiteren Details zu konsultieren.
 >
 
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
 - Administratorzugang (sudo) über SSH auf Ihren VPS (optional)
 
 ## In der praktischen Anwendung
@@ -69,7 +69,7 @@ Es ist nicht erforderlich, Ihren laufenden Dienst mit einer Wiederherstellung vo
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
 >
 
 Klicken Sie auf `...`{.action} neben dem Backup, auf das Sie zugreifen möchten, und wählen Sie `Mounten`{.action}.

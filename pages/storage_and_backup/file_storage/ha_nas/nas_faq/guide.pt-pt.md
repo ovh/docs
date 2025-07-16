@@ -1,7 +1,7 @@
 ---
 title: NAS-HA - Perguntas Frequentes
 excerpt: Tem dúvidas sobre o NAS-HA? Veja as repostas às perguntas mais frequentes
-updated: 2024-02-26
+updated: 2025-07-15
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ NAS-HA permite centralizar os dados de diferentes cargas de trabalho Linux, mas 
 
 ### É possível obter o NAS-HA através da área de gestão do serviço?
 
-Sim, este espaço pode ser acedido a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Bare Metal Cloud`{.action} e depois `NAS e CDN`{.action}.
+Sim, este espaço pode ser acedido a partir da [Área de Cliente OVHcloud](/links/manager), secção `Bare Metal Cloud`{.action} e depois `NAS e CDN`{.action}.
 
 ## Disponibilidade
 
@@ -40,7 +40,7 @@ NAS-HA é fornecido com uma taxa de disponibilidade de 99,99%.
 
 ### Que protocolos de transferência de ficheiros são atualmente suportados na solução NAS-HA?
 
-NAS-HA suporta a transferência de ficheiros através de NFS (NFSv3) e CIFS (SMB).
+O NAS-HA suporta a transferência de ficheiros através do NFS (NFSv3, NFSv4.1, NFNSv4.2) e do CIFS (SMB).
 
 ### A partir de que serviços OVHcloud posso cultivar dados?
 
@@ -147,7 +147,7 @@ A frequência das snapshots pode ser administrada a partir da Área de Cliente O
 - de 3 em 3 dias;
 - semanal.
 
-Também pode criar Snapshots manuais a qualquer momento. Esta funcionalidade está disponível no seio do seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou através da [API](https://api.ovh.com/) seguinte:
+Também pode criar Snapshots manuais a qualquer momento. Esta funcionalidade está disponível no seio do seu [Espaço Cliente OVHcloud](/links/manager) ou através da [API](https://api.ovh.com/) seguinte:
 
 > [!api]
 >
@@ -180,7 +180,8 @@ Por exemplo, para um serviço de 3 TB, são reservados 450 GB adicionais para as
 
 ### Onde estão armazenadas as snapshots?
 
-As snapshots são armazenadas ao mesmo nível que o seu serviço. As snapshots são replicadas em dois servidores diferentes em dois racks diferentes. Além disso, a OVHcloud efetua uma snapshot diária num site remoto.
+As snapshots são armazenadas ao mesmo nível que o seu serviço.
+Como complemento, a OVHcloud efetua um snapshot diário (com uma retenção de 24H) num servidor de backup situado num rack distinto.
 
 ### Como aceder às Snapshots?
 
@@ -202,6 +203,6 @@ O serviço pode ser contratado por 1, 12, 24 e 36 meses. No final do período de
 
 ## Quer saber mais?
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Troque impressões com a nossa comunidade em <https://community.ovh.com/en/>.

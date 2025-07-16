@@ -12,7 +12,7 @@ Si vous avez atteint la capacité maximale de votre disque additionnel, vous pou
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud.
+- Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud.
 - Un [disque additionnel](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configuré sur le VPS.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir accès à votre VPS en SSH ou en RDP pour l'administration.
@@ -33,7 +33,7 @@ Choisissez la nouvelle taille de disque dans la fenêtre qui apparaît, puis cli
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Un message apparaîtra pour confirmer votre demande. Cliquez sur le lien à l'intérieur du message et suivez le processus de commande. Il est possible qu'un nouvel onglet de navigation pour la commande se soit ouvert automatiquement.
+Un message apparaîtra pour confirmer votre demande. Cliquez sur le lien à l'intérieur du message et suivez le processus de commande. Un nouvel onglet de navigateur s'ouvre pour finaliser la commande.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
@@ -51,7 +51,7 @@ L'augmentation de capacité du disque prendra quelques minutes après la validat
 > [!warning]
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) ou de faire appel à [notre communauté](/links/community) si vous éprouvez des difficultés.
+> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou de faire appel à [notre communauté](/links/community) si vous éprouvez des difficultés.
 >
 
 #### Sur un VPS Linux

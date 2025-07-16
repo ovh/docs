@@ -148,7 +148,7 @@ Licencje Outlook możesz wykupić w [Panelu klienta OVHcloud](/links/manager), a
 
 ## Usunięcie domeny z platformy
 
-Jeśli chcesz usunąć domenę powiązaną z twoją usługą Exchange lub E-mail Pro, upewnij się, że nie jest ona powiązana z kontami e-mail, aliasami, zasobami, kontami współdzielonymi (tylko w przypadku usługi Exchange), grupami, kontaktami zewnętrznymi ani ustawionymi stopkami. W takim przypadku konieczne będzie **powiązanie tych kont z inną nazwą domeny* na twojej platformie lub **usunięcie**.
+Jeśli chcesz usunąć domenę powiązaną z twoją usługą Exchange lub E-mail Pro, upewnij się, że nie jest ona powiązana z kontami e-mail, aliasami, zasobami, kontami współdzielonymi (tylko w przypadku usługi Exchange), grupami, kontaktami zewnętrznymi ani ustawionymi stopkami. W takim przypadku konieczne będzie **powiązanie tych kont z inną nazwą domeny** na twojej platformie lub **usunięcie**.
 
 > [!warning]
 >

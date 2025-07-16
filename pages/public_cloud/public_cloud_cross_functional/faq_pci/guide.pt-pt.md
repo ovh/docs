@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Encontre as perguntas mais frequentes sobre os serviços Public Cloud da OVHcloud
-updated: 2024-10-11
+updated: 2025-06-17
 ---
 
 <style>
@@ -86,9 +86,7 @@ Pode consultar o guia [Alterar a chave SSH em caso de perda](/pages/public_cloud
 
 /// details | Como criar e gerir utilizadores OpenStack?
 
-Para poder utilizar as API Horizon ou OpenStack, deverá criar um utilizador OpenStack. Pode criar um número ilimitado.
-
-Sugerimos que consulte o guia [Criar e eliminar um utilizador OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
+**[Opcional desde setembro de 2023]** Um utilizador [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) pode ser criado para utilizar as API Horizon ou OpenStack. Esta é facultativa, pois implementámos uma autenticação única (SSO: *Single Sign-On*) entre a Área de Cliente OVHcloud e Horizon.
 
 ///
 

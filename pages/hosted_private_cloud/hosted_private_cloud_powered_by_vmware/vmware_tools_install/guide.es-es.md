@@ -16,7 +16,7 @@ VMware Tools mejora el rendimiento de una máquina virtual y permite utilizar mu
 
 ## Requisitos
 
-- Tener un usuario activo (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 

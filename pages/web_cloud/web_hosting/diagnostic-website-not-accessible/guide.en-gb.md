@@ -41,7 +41,7 @@ Several error returns may appear on your browser if your website becomes inacces
 > As a result, we strongly recommend that you enable [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instructions) for all of your OVHcloud subscriptions.
 >
 
-To ensure that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `My solutions & services`{.action} within the right-hand menu.
+To ensure that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `My offers and services`{.action} within the right-hand menu.
 
 ![control-panel](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}|
 

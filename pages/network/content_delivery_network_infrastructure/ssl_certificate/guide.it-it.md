@@ -6,7 +6,7 @@ updated: 2018-02-22
 
 ## Obiettivo
 
-È possibile aggiungere un [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external} sulla CDN (Content Delivery Network) per consentire agli utenti di stabilire connessioni sicure, anche nei casi in cui il traffico passi attraverso la CDN.
+È possibile aggiungere un [certificato SSL](/links/web/hosting-options-ssl){.external} sulla CDN (Content Delivery Network) per consentire agli utenti di stabilire connessioni sicure, anche nei casi in cui il traffico passi attraverso la CDN.
 
 **Questa guida ti mostra nel dettaglio il funzionamento del certificato SSL <i>Let's Encrypt</i> fornito da OVH.**
 

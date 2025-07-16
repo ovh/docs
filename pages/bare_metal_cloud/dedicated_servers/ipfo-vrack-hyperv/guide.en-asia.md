@@ -17,9 +17,9 @@ updated: 2021-02-25
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/asia/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/asia/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 

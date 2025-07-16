@@ -13,13 +13,13 @@ Nutanix Objects implements an **Object Storage** S3* compatible solution on your
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
 >
-> If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/it/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
+> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
 >
 
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You must be connected to the cluster via Prism Central.
 
 ## Instructions
@@ -254,7 +254,7 @@ You can see the bucket you created in the command line. You can create and delet
 
 ## Go further <a name="gofurther"></a>
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
 

@@ -81,7 +81,7 @@ L'authentification à la base de données SAP HANA par les administrateurs peut 
 
 Il est recommandé de restreindre et de surveiller l'accès à la base de données SAP HANA pour l'administration via des points d'entrée contrôlés et surveillés pour améliorer la sécurité.
 
-Pour plus d'informations sur la sécurité SAP HANA, consultez la [documentation SAP](https://www.sap.com/documents/2016/06/3ea239ad-757c-0010-82c7-eda71af511fa.html).
+Pour plus d'informations sur la sécurité SAP HANA, consultez la [documentation SAP](https://help.sap.com/docs/SAP_HANA_PLATFORM/b3ee5778bc2e4a089d3299b82ec762a7/c3d9889e3c9843bdb834e9eb56f1b041.html).
 
 ### 3 - Serveurs d'application SAP
 

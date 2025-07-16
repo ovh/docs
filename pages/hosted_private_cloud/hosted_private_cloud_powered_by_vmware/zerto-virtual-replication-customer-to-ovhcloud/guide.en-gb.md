@@ -1,12 +1,13 @@
 ---
 title: Using Zerto between OVHcloud and a third party platform
 excerpt: Learn how to setup Zerto between your OVHcloud Private Cloud and another platform
-updated: 2023-12-04
+updated: 2025-06-25
 ---
 
 ## Objective
 
 This guide provides an outline of how to configure a virtual private network between an OVHcloud Hosted Private Cloud and a different platform.
+
 We will use the OPNsense open-source VPN Solution as an example, and explain the simplest way to set up a VPN tunnel to the Zerto network. 
 
 Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service) for the other scenario.
@@ -30,7 +31,7 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 
 > [!warning]
 >
-> OVHcloud supports the N-1 version of Zerto (currently up to and including version 9.7).
+> OVHcloud supports the N-1 version of Zerto (currently up to and including version 10).
 > You can find the different versions available here : <https://help.zerto.com/kb/000004585>.
 >
 

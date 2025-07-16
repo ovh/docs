@@ -1,7 +1,7 @@
 ---
 title: "Korzystaj z interfejsu Webmail Zimbra"
 excerpt: "Poznaj interfejs Zimbra Webmail dla Twoich kont e-mail MX Plan OVHcloud"
-updated: 2025-02-12
+updated: 2025-07-08
 ---
 
 <style>
@@ -43,6 +43,7 @@ OVHcloud dostarcza usługę webmail o nazwie Zimbra umożliwiającą dostęp do 
 - [Kalendarz](#calendar)
     - [Zarządzanie kalendarzami](#calendar-management)
     - [Zadania](#tasks)
+- [Przestrzeń](#storage)
 - [Filtry](#filters)
     - [Jak skonfigurować filtry](#filters-howto)
     - [Utwórz filtr](#filters-creation)
@@ -439,6 +440,72 @@ Po utworzeniu zadania możesz zdefiniować datę ukończenia i priorytet, które
 Następnie kliknij przycisk `Zapisz`{.action}, aby dokończyć tworzenie zadania.
 
 ![Zimbra - kalendarz](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+
+### Przestrzeń dyskowa <a name="storage"></a>
+
+> [!success]
+>
+> Funkcja przechowywania "Aktówka" jest dostępna tylko w ofercie Zimbra Pro.
+
+> [!warning]
+>
+> Oferta Zimbra Pro jest w wersji beta. Niektóre funkcje są nadal ulepszane.
+
+Kliknij ikonę `Aktówka`{.action} na górnym pasku, aby uzyskać dostęp do przestrzeni dyskowej. Możesz pobrać pliki i udostępnić je w tym miejscu.
+
+1. W lewej kolumnie widoczne są foldery przestrzeni dyskowej.
+
+    - Aby utworzyć nowy folder, kliknij `+ Dodaj folder`{.action} na dole kolumny. Wpisz żądaną nazwę i potwierdź, naciskając klawisz `Enter`{.action}.
+    - Aby utworzyć podfolder, kliknij prawym przyciskiem myszy jeden z folderów, a następnie kliknij przycisk `Utwórz podfolder`{.action}. Wpisz żądaną nazwę i potwierdź, naciskając klawisz `Enter`{.action}.
+
+2. W kolumnie środkowej pojawi się lista plików w wybranym folderze.
+
+3. W prawym oknie, w zależności od typu pliku wybranego w środkowej kolumnie, wyświetlany jest podgląd treści. W górnym pasku podglądu są wyświetlane możliwe operacje na wybranym pliku lub plikach.
+
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+
+#### Dodaj plik
+
+Aby dodać plik do przestrzeni dyskowej, wykonaj następujące kroki:
+
+1. Kliknij przycisk `Prześlij`{.action} w lewej kolumnie.
+2. W oknie Przeglądarka plików wybierz plik(i), który chcesz umieścić na Twojej przestrzeni dyskowej.
+3. Kliknij przycisk `Otwórz`{.action}, aby załadować element(y) do Twojej przestrzeni dyskowej.
+
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+
+#### Udostępnienie pliku/katalogu
+
+Udostępnianie pozwala na udostępnienie katalogu lub pliku na Twojej przestrzeni dyskowej osobie trzeciej, poza Twoim kontem Zimbra.
+
+> [!warning]
+>
+> Udostępnianie na potrzeby administrowania folderami i plikami jest możliwe tylko z innym kontem Zimbra Pro.
+
+> [!tabs]
+> **Udostępnij plik**
+>>
+>> 1. Wybierz plik, który chcesz udostępnić i kliknij na `Więcej...`{.action}.
+>> 2. Kliknij Na `Udostępnij...`{.action}.
+>> 3. Wpisz adres e-mail gościa i kliknij na `Dodaj`{.action}. Możesz dodać kilka kont e-mail.
+>> 4. Wybierz uprawnienia, które chcesz przypisać gościowi.
+>> 5. Kliknij `Zapisz`{.action}, aby dokończyć udostępnianie.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>>
+> **Udostępnij katalog**
+>>
+>> 1. Kliknij prawym przyciskiem myszy folder, który chcesz udostępnić, a następnie kliknij przycisk `Udostępnij...`{.action}.
+>> 2. Wpisz adres e-mail gościa i kliknij na `Dodaj`{.action}. Możesz dodać kilka kont e-mail.
+>> 3. Wybierz uprawnienia, które chcesz przypisać gościowi.
+>> 4. Kliknij na `Zapisz`{.action}, aby dokończyć udostępnianie.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>>
+
+Gość otrzymuje e-mail z prośbą o utworzenie konta Zimbra z nazwą użytkownika i hasłem. To konto umożliwia dostęp do interfejsu Zimbra tylko w przypadku udostępniania treści.
+
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
 
 ### Filtry <a name="filters"></a>
 

@@ -111,7 +111,7 @@ Una volta inseriti tutti i dati, clicca sul pulsante `Conferma`{.action}.
 
 #### Esercita i tuoi diritti sui tuoi dati personali
 
-In conformità con il Regolamento generale sulla protezione dei dati (GDPR), è possibile esercitare i propri diritti in materia di protezione dei dati personali, compilando[questo form](https://www.ovh.it/protezione-dati-personali/esercita-i-tuoi-diritti){.external}.
+In conformità con il Regolamento generale sulla protezione dei dati (GDPR), è possibile esercitare i propri diritti in materia di protezione dei dati personali, compilando [questo form](https://www.ovh.it/protezione-dati-personali/esercita-i-tuoi-diritti){.external}.
 
 #### Elimina un account OVHcloud
 
@@ -165,6 +165,6 @@ Se riscontri un'attività sospetta sul tuo account, [contatta il supporto OVHclo
 
 [Accedi allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Se la connessione allo Spazio Cliente OVH non funziona](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
+[Se la connessione allo Spazio Cliente non funziona](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Contatta la nostra [Community di utenti](/links/community).

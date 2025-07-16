@@ -55,7 +55,7 @@ Las claves de producto de las versiones compatibles de Windows Server se encuent
 
 Para asociar su clave a nuestro robot de activación, introduzca el siguiente comando en el cuadro de diálogo `Ejecutar`{.action}:
 
-```
+```bash
 cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 ```
 
@@ -67,7 +67,7 @@ cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 ### Activar el sistema
 Por último, para activar su sistema Windows, ejecute el siguiente comando:
 
-```
+```bash
 cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 

@@ -16,7 +16,7 @@ updated: 2024-05-13
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur vos clusters via Prism Central.
 - Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences des packs **Pro** ou **Ultimate** si vous avez une offre Nutanix on OVHcloud packagée sur les deux clusters du P.R.A. Ces 3 clusters devront être sur des sites distants pour obtenir un maximum de sûreté.
 - Avoir une latence de moins de 5 ms entre les deux clusters répliqués. Veuillez noter que la latence n'est pas couverte par les SLA.
@@ -1088,6 +1088,6 @@ La liste des événements survenus apparaît, cliquez sur `Close`{.action} pour 
 
 [Documentation Nutanix AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

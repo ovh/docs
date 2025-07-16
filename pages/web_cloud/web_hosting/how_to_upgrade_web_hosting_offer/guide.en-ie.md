@@ -82,7 +82,7 @@ With this action, you can order a Web Cloud Databases solution that is independe
 If you do not want to keep this data, you can also delete your Web Cloud Databases solution before switching to the *Pro* solution: 
 
 1. Back up your data by following the instructions in this [guide](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](/links/manager). To do this, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on the `My solutions & services`{.action}. Next, click the `...`{.action} button to the right of the line for the Web Cloud Databases/Private SQL solution concerned, then `Delete my Private SQL hosting plan`{.action}.
+2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](/links/manager). To do this, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on the `My offers and services`{.action}. Next, click the `...`{.action} button to the right of the line for the Web Cloud Databases/Private SQL solution concerned, then `Delete my Private SQL hosting plan`{.action}.
 
 #### 3 - FTP storage space
 

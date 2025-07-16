@@ -51,7 +51,7 @@ Não se esqueça de consultar os nossos manuais "Primeiros passos":
 
 ### Criação de pares de chaves para as ligações OpenSSH
 
-As seguintes instruções explicam como criar e gerir pares de chaves para ligações remotas com **OpenSSH** em linha de comandos**. A maioria dos sistemas operativos atuais incluem esse recurso sem a necessidade de instalar qualquer software adicional.
+As seguintes instruções explicam como criar e gerir pares de chaves para ligações remotas com **OpenSSH** em **linha de comandos**. A maioria dos sistemas operativos atuais incluem esse recurso sem a necessidade de instalar qualquer software adicional.
 
 Se preferir uma interface gráfica, existem numerosas aplicações de software para cada tipo de sistema operativo que lhe permitem ligar-se a hosts distantes através do protocolo OpenSSH.
 

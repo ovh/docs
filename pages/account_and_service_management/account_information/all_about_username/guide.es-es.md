@@ -84,7 +84,7 @@ Modifique sus datos y haga clic en el botón `«Aceptar»`{.action}.
 
 > [!warning]
 >
-> Es importante que los datos personales proporcionados sean **exactos** y estén **actualizados**. Se le pedirá que proporcione los datos necesarios cuando se ponga en contacto con el equipo de asistencia de OVHcloud. Asimismo, deberá ser capaz de justificar su exactitud si procede (por ejemplo, durante el procedimiento de cambio de dirección de correo electrónico, se le puede solicitar un justificante de domicilio idéntico a la dirección indicada en su cuenta.
+> Es importante que los datos personales proporcionados sean **exactos** y estén **actualizados**. Se le pedirá que proporcione los datos necesarios cuando se ponga en contacto con el equipo de asistencia de OVHcloud. Asimismo, deberá ser capaz de justificar su exactitud si procede (por ejemplo, durante el procedimiento de cambio de dirección de correo electrónico, se le puede solicitar un justificante de domicilio idéntico a la dirección indicada en su cuenta).
 >
 
 #### Editar la dirección de correo electrónico principal

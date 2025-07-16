@@ -12,7 +12,7 @@ Se a sua oferta de Managed Bare Metal já não lhe convier, ou se encomendou uma
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Managed Bare Metal`{.action}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Managed Bare Metal`{.action}.
 - Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
 
 ## Instruções
@@ -24,7 +24,7 @@ Se a sua oferta de Managed Bare Metal já não lhe convier, ou se encomendou uma
 
 ### 1 - Solicitar a rescisão através da Área de Cliente OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, dirija-se à secção `Bare Metal Cloud`{.action} (1), clique em `Managed Bare Metal`{.action} (2) e selecione a sua oferta na lista (3).
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, dirija-se à secção `Bare Metal Cloud`{.action} (1), clique em `Managed Bare Metal`{.action} (2) e selecione a sua oferta na lista (3).
 
 Na tabela «Gestão do serviço» do separador «Informações gerais», clique no botão `...`{.action} (4) à direita da data de renovação. Clique em `Eliminar o serviço`{.action} (5).
 

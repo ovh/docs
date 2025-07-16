@@ -18,7 +18,7 @@ Jeśli utracisz hasło administratora, możesz je zresetować przy użyciu trybu
 
 ## Wymagania początkowe
 
-- Posiadanie na koncie OVHcloud serwera [VPS](https://www.ovhcloud.com/pl/vps/) lub [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
+- Posiadanie na koncie OVHcloud serwera [VPS](/links/bare-metal/vps) lub [instancji Public Cloud](/links/public-cloud/public-cloud)
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

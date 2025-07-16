@@ -18,13 +18,13 @@ Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für b
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Account.
-- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse.
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Account.
+- Sie verfügen über eine [Additional IP](/links/bare-metal/ip)-Adresse.
 - Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
 
@@ -479,6 +479,6 @@ Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre
 
 [VPS Rescue-Modus aktivieren](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

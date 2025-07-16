@@ -50,7 +50,7 @@ W przypadku hostingu www OVHcloud organem certyfikującym wydającym certyfikaty
 >
 > Jeśli chcesz aktywować certyfikat SSL dla kilku domen/subdomen zadeklarowanych na Twoim hostingu, zdecyduj się na instalację [bezpłatnego certyfikatu SSL Let's Encrypt](/links/web/hosting-options-ssl) lub zainstaluj własny [spersonalizowany certyfikat SSL](/pages/web_cloud/web_hosting/ssl_custom).
 
-**Przed złożeniem zamówienia na certyfikat SSL Sectigo DV na Twoim hostingu *** sprawdź, czy **nazwa domeny/subdomeny**, której dotyczy certyfikat SSL:
+**Przed złożeniem zamówienia na certyfikat SSL Sectigo DV na Twoim hostingu** sprawdź, czy **nazwa domeny/subdomeny**, której dotyczy certyfikat SSL:
 
 - wskazuje na adres IP hostingu;
 - dostępny w opcji MultiSite na Twoim hostingu.

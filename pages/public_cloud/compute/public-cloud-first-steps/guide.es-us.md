@@ -134,7 +134,7 @@ Antes de crear su instancia, le recomendamos que analice cómo se utilizará la 
 - Si por el momento no necesita configurar la instancia con una red privada, puede pasar al [paso 4](#create-instance). Puede crear una instancia expuesta a internet (ver el **Modo público** [a continuación](#networking-modes).)
 - Si la instancia debe estar conectada a una nueva red privada (OVHcloud [vRack](/links/network/vrack)), **cree su vRack** antes de continuar. Para más información, consulte la [guía sobre el vRack de Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
-<a name="networking-mode"></a>
+<a name="networking-modes"></a>
 
 /// details | Public Cloud Networking - Modos
 

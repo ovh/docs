@@ -14,7 +14,7 @@ El módulo **cloud-init** permite configurar una [instancia de Public Cloud](htt
 >
 > OVHcloud pone a su disposición servicios cuya responsabilidad recae en usted. No tenemos acceso a estas máquinas, por lo que no somos los administradores de las mismas y no podremos asistirle. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#mas-informacion) de esta guía.
 >
 > Esta guía está destinada a las instancias basadas en distribuciones Linux **únicam**
 >

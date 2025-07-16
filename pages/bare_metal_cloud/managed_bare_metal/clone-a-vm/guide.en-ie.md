@@ -13,7 +13,7 @@ Cloning a VM creates a copy of the source VM.
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-ie/managed-bare-metal/)
-- a user account with access to [vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface) (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie))
+- a user account with access to [vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface) (created in the [OVHcloud Control Panel](/links/manager))
 - a VM in your cluster
 
 ## Instructions

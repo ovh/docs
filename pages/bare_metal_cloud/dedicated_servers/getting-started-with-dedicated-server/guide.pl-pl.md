@@ -188,7 +188,7 @@ Aby je włączyć, na kartach wykonaj następujące kroki:
 >> Otwórz menu Start systemu Windows i kliknij polecenie `Uruchom`{.action}.<br><br>
 >>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
-> 3. ***Otwórz "msconfig"**
+> 3. **Otwórz "msconfig"**
 >>
 >> Wpisz "msconfig" i kliknij na `OK`{.action}.<br><br>
 >>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>

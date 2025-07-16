@@ -17,9 +17,9 @@ Die Erstellung eines Accounts ist kostenfrei. Dieser Bereich vereinfacht den Zug
 
 ### Wo finde ich meine OVHcloud Kundenkennung?
 
-Ihre Kundenkennung steht auf Ihrer letzten Rechnung oben rechts. Sie sieht so aus: „aa00000-ovh“. Die ersten Buchstaben sind meist die Initialen der Person, die den Account erstellt hat. Diese Kundenkennung finden Sie auch in allen E-Mails von OVHcloud, zum Beispiel in Bestätigungs-E-Mails bei der Erstellung eines Accounts, Verlängerungen und neuen Bestellungen.
+Ihre Kundenkennung steht auf Ihrer letzten Rechnung oben rechts. Sie sieht so aus: “aa00000-ovh”. Die ersten Buchstaben sind meist die Initialen der Person, die den Account erstellt hat. Diese Kundenkennung finden Sie auch in allen E-Mails von OVHcloud, zum Beispiel in Bestätigungs-E-Mails bei der Erstellung eines Accounts, Verlängerungen und neuen Bestellungen.
 
-Haben Sie Ihre Kundenkennung nicht gefunden? Dann können Sie auf den Link „Kennung oder Passwort vergessen“ auf der [Login-Seite](/links/manager) des OVHcloud-Accounts klicken. Geben Sie dann die E-Mail-Adresse an, die mit Ihrem Account verbunden ist.
+Haben Sie Ihre Kundenkennung nicht gefunden? Dann können Sie auf den Link “Kennung oder Passwort vergessen” auf der [Login-Seite](/links/manager) des OVHcloud-Accounts klicken. Geben Sie dann die E-Mail-Adresse an, die mit Ihrem Account verbunden ist.
 
 > [!success]
 > Wenn Sie in Ihrem Kundencenter angemeldet sind, sehen Sie Ihre Kundenkennung jederzeit rechts oben neben Ihrem Namen.
@@ -45,7 +45,7 @@ Bitte geben Sie Ihre Telefonnummer im internationalen Format an.
 
 #### Tipps und Tricks
 
-Für „0612/345678“ geben Sie also bitte „+49 612345678“ ein. „+49“ wird automatisch hinzugefügt, wenn Sie Deutschland als Standort ausgewählt haben.
+Für “0612/345678” geben Sie also bitte “+49 612345678” ein. “+49” wird automatisch hinzugefügt, wenn Sie Deutschland als Standort ausgewählt haben.
 
 ### Welche Auswirkungen hat DSGVO auf meine personenbezogenen Daten?
 
@@ -56,7 +56,7 @@ Für detaillierte Informationen zur Datenschutz-Grundverordnung (DSGVO) bezügli
 
 ### Wie ändere ich mein OVHcloud Passwort?
 
-Gehen Sie auf die Login-Seite für das Kundencenter und wählen Sie „Login oder Passwort vergessen“. Geben Sie Ihre Kundenkennung oder die E-Mail-Adresse, die Ihrem OVHcloud Account als erstes zugeordnet ist, an und klicken Sie dann auf „Absenden“. Sie erhalten danach eine Bestätigungs-E-Mail für die Anfrage an die für Ihren Account hinterlegte Kontakt-E-Mail-Adresse. Lesen Sie die Anweisungen bitte sorgfältig durch und klicken Sie auf den Link in der E-Mail.
+Gehen Sie auf die Login-Seite für das Kundencenter und wählen Sie “Login oder Passwort vergessen”. Geben Sie Ihre Kundenkennung oder die E-Mail-Adresse, die Ihrem OVHcloud Account als erstes zugeordnet ist, an und klicken Sie dann auf “Absenden”. Sie erhalten danach eine Bestätigungs-E-Mail für die Anfrage an die für Ihren Account hinterlegte Kontakt-E-Mail-Adresse. Lesen Sie die Anweisungen bitte sorgfältig durch und klicken Sie auf den Link in der E-Mail.
 
 #### Tipps und Tricks
 
@@ -71,11 +71,11 @@ Die Übertragung für den jeweiligen Dienst muss sowohl vom Administrator des Di
 
 Bevor Sie eine Änderung vornehmen, vergewissern Sie sich bitte, dass alle Kontakt-E-Mail-Adressen gültig sind. Andernfalls kann Ihrer Anfrage nicht entsprochen werden.
 
-Möchten Sie einen Domainnamen abrufen, als dessen Inhaber Sie bei der Registry registriert sind? Überprüfen können Sie diese Angaben auf [www.ovh.com/de/cgi-bin/tools/check_whois.pl](https://www.ovh.com/de/cgi-bin/tools/check_whois.pl) Wenn Sie aber keinen Zugriff auf den Administrator-Kundenaccount haben, folgen Sie bitte diesem Verfahren: [www.ovh.de/cgi-bin/de/procedure/procedureChangeContacts.cgi](https://www.ovh.de/cgi-bin/de/procedure/procedureChangeContacts.cgi)
+Möchten Sie einen Domainnamen abrufen, als dessen Inhaber Sie bei der Registry registriert sind? Überprüfen können Sie diese Angaben auf [www.ovh.com/de/cgi-bin/tools/check_whois.pl](https://www.ovh.com/de/cgi-bin/tools/check_whois.pl) Wenn Sie aber keinen Zugriff auf den Administrator-Kundenaccount haben, folgen Sie bitte diesem Verfahren: [www.ovh.de/cgi-bin/de/procedure/procedureChangeContacts.cgi](https://www.ovh.de/cgi-bin/de/procedure/procedureChangeContacts.cgi).
 
 #### Gut zu wissen
 
-Weitere Informationen zur Kontaktverwaltung finden Sie hier: [/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen](/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen)
+Weitere Informationen zur Kontaktverwaltung finden Sie [hier](/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen). 
 
 ### Wie kann ich einen Rechnungskontakt einstellen oder ändern?
 
@@ -111,7 +111,7 @@ Sie haben mehrere Möglichkeiten, um sich zu authentifizieren und die 2FA zu akt
 - Über eine mobile Applikation, die kompatibel zu Android, iPhone und Windows Mobile ist
 - Mit einem U2F-kompatiblen Sicherheitsschlüssel
 
-[Mehr erfahren](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+[Mehr erfahren](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 ### Wie kann ich die Zwei-Faktor-Authentifizierung (2FA) von OVHcloud deaktivieren?
 
@@ -124,17 +124,17 @@ Haben Sie Ihr Gerät zur Zwei-Faktor-Authentifizierung nicht mehr, und daher kei
 
 ### Was kann ich tun, wenn mein OVHcloud Account gehackt wurde?
 
-Sollte Ihr OVHcloud Account missbräuchlich verwendet werden (Kundenkennung, Zahlungsmittel...), wenden Sie sich bitte umgehend an die zuständige Polizeibehörde, um Anzeige zu erstatten. -
+Sollte Ihr OVHcloud Account missbräuchlich verwendet werden (Kundenkennung, Zahlungsmittel...), wenden Sie sich bitte umgehend an die zuständige Polizeibehörde, um Anzeige zu erstatten.
 
 Die Behörde wird Sie daraufhin kontaktieren und die Anzeige gemeinsam mit Ihnen aufnehmen. Sobald Sie Anzeige erstattet haben, senden Sie uns bitte ein Kopie der Anzeige zu. Wir können dann interne Schritte einleiten.
 
 Ihre Kundenkennung wird infolgedessen blockiert. Missbräuchlich bestellte Dienste werden wir löschen und Ihnen die Zahlungen automatisch rückerstatten.
 
-Damit Sie Ihren Account wieder nutzen können, werden wir Sie dazu auffordern, Ihre E-Mail-Adresse und/oder Ihr Passwort über den folgenden Link zu ändern: [www.ovh.de/cgi-bin/de/procedure/procedureChangeEmail.cgi](https://www.ovh.de/cgi-bin/de/procedure/procedureChangeEmail.cgi)
+Damit Sie Ihren Account wieder nutzen können, werden wir Sie dazu auffordern, Ihre E-Mail-Adresse und/oder Ihr Passwort über den folgenden Link zu ändern: [www.ovh.de/cgi-bin/de/procedure/procedureChangeEmail.cgi](https://www.ovh.de/cgi-bin/de/procedure/procedureChangeEmail.cgi).
 
 ### Ich habe eine E-Mail erhalten, die ein Versuch von Phishing sein könnte. Angeblich kommt sie von OVHcloud. Wie kann ich eine Überprüfung veranlassen?
 
-Wie Sie einen Phishing-Versuch durch eine E-Mail oder eine SMS identifizieren und melden können, erfahren Sie in unserer Anleitung dazu [/pages/account_and_service_management/account_information/phishing_care](/pages/account_and_service_management/account_information/phishing_care)
+Wie Sie einen Phishing-Versuch durch eine E-Mail oder eine SMS identifizieren und melden können, erfahren Sie in unserer [Anleitung](/pages/account_and_service_management/account_information/phishing_care).
 
 ### Wie kann ich als Opfer missbräuchliches Verhalten oder rechtswidrige Inhalte melden, für die bei OVHcloud gehostete Dienste genutzt werden?
 
@@ -148,7 +148,7 @@ Die Rechtsabteilung von OVHcloud bearbeitet Ihre Meldung schnellstmöglich und a
 
 ### OVHcloud hat mir eine E-Mail zu potenziell missbräuchlichem Verhalten meinerseits zugesandt. Was soll ich tun?
 
-Wenn uns ein missbräuchliches Verhalten gemeldet oder von unseren Teams festgestellt wird, erhalten Sie eine E-Mail. Das Format der E-Mail-Adresse ist „ticket+"ticket-nummer"@abuse.ovh.net“.
+Wenn uns ein missbräuchliches Verhalten gemeldet oder von unseren Teams festgestellt wird, erhalten Sie eine E-Mail. Das Format der E-Mail-Adresse ist “ticket+"ticket-nummer"@abuse.ovh.net”.
 
 In Anbetracht der Einzelheiten, die Sie in der E-Mail erfahren werden, werden wir Sie bitten, den Angaben nachzugehen, etwaiges missbräuchliches Verhalten einzustellen und jegliche rechtswidrigen Inhalte zu löschen.
 
@@ -163,10 +163,10 @@ Wir empfehlen Ihnen, die Absicherung Ihrer Dienste zu überprüfen. Lassen Sie s
 
 ### Wie kann ich vermeiden, dass meine Dienste blockiert werden, wenn eine potenzielle missbräuchliche Verwendung eines meiner OVHcloud Dienste festgestellt wird?
 
-Ergreifen Sie die erforderlichen Maßnahmen und antworten Sie dann bitte direkt auf die E-Mail unserer Abteilung „Abuse“. Legen Sie darin bitte diese Maßnahmen dar.
+Ergreifen Sie die erforderlichen Maßnahmen und antworten Sie dann bitte direkt auf die E-Mail unserer Abteilung “Abuse”. Legen Sie darin bitte diese Maßnahmen dar.
 Ein Mitarbeiter aus unserem Team wird Ihnen dann schnellstmöglich antworten.
 
-### Ich habe der Abteilung „Abuse“ von OVHcloud geantwortet, aber mein Dienst ist immer noch blockiert. Was kann ich tun?
+### Ich habe der Abteilung “Abuse” von OVHcloud geantwortet, aber mein Dienst ist immer noch blockiert. Was kann ich tun?
 
 Sie haben die Möglichkeit, in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) eine Support-Anfrage zu stellen und so weitere Informationen zur Bearbeitung Ihres Abuse-Tickets einzuholen. Sie erleichtern und beschleunigen die Bearbeitung Ihrer Support-Anfrage, wenn Sie darin die Referenznummer dieses Abuse-Tickets angeben.
 

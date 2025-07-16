@@ -71,7 +71,7 @@ However, if you do not wish to keep this service, you do not need to request its
 
 ### Changing the renewal mode of domain names
 
-In your [Control Panel](/links/manager), click on your name in the top right-hand corner of your screen, then on `My solutions & services`{.action}. In the table, identify the domain names for which you would like to change the renewal mode.
+In your [Control Panel](/links/manager), click on your name in the top right-hand corner of your screen, then on `My offers and services`{.action}. In the table, identify the domain names for which you would like to change the renewal mode.
 
 #### For a single domain name
 

@@ -165,7 +165,7 @@ Votre signalement sera traité dans les meilleurs délais par le service juridiq
 
 ### OVHcloud m'a envoyé un email stipulant un éventuel comportement abusif de ma part, que dois-je faire ?
 
-Si un comportement abusif nous a été rapporté ou a été constaté par nos équipes, vous recevrez un e-mail provenant d'une adresse e-mail au format « ticket+"numéro-de-ticket"]"@abuse.ovh.net ».
+Si un comportement abusif nous a été rapporté ou a été constaté par nos équipes, vous recevrez un e-mail provenant d'une adresse e-mail au format « ticket+"numéro-de-ticket"@abuse.ovh.net ».
 
 Compte tenu des éléments complémentaires qui vous seront précisés dans cet email, nous vous demanderons de procéder à une investigation afin de remédier au comportement abusif et/ou de supprimer tout contenu illicite.
 

@@ -10,7 +10,7 @@ updated: 2024-01-22
 
 ## Wprowadzenie
 
-Możesz sprawdzić, czy VPS pochodzi z poprzedniej gamy serwerów, używając nazwy wyświetlanej w [Panelu klienta](/links/manager): jeśli ten wewnętrzny numer referencyjny ma format *vpsXXXX.ovh.net* (gdzie *X* odpowiada liczbie) i nie przeniosłeś odpowiedniego serwera VPS do [naszej aktualnej gamy produktów](https://www.ovhcloud.com/pl/vps/), jest to VPS *legacy*. 
+Możesz sprawdzić, czy VPS pochodzi z poprzedniej gamy serwerów, używając nazwy wyświetlanej w [Panelu klienta](/links/manager): jeśli ten wewnętrzny numer referencyjny ma format *vpsXXXX.ovh.net* (gdzie *X* odpowiada liczbie) i nie przeniosłeś odpowiedniego serwera VPS do [naszej aktualnej gamy produktów](/links/bare-metal/vps), jest to VPS *legacy*. 
 
 Model VPS gamy dostępny obecnie: *vps-XXXXX.vps.ovh.net* (gdzie *X* może być cyfrą lub literą).
 
@@ -20,7 +20,7 @@ Serwer VPS *legacy* wymaga kilku różnic w zarządzaniu.
 
 ## Wymagania początkowe
 
-- [VPS *legacy*](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- [VPS *legacy*](/links/bare-metal/vps) na koncie OVHcloud
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

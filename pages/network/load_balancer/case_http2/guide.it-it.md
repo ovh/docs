@@ -1,23 +1,30 @@
 ---
-title: 'Configurare HTTP/2 su OVH Load Balancer'
-excerpt: 'Configurazione di HTTP/2 su OVH Load Balancer'
-updated: 2018-01-15
+title: 'Configurare HTTP/2 su OVHcloud Load Balancer'
+excerpt: 'Configurazione di HTTP/2 su OVHcloud Load Balancer'
+updated: 2025-07-04
 ---
 
 ## Obiettivo
 
-Attualmente, OVH Load Balancer non supporta il protocollo HTTP/2, ma esiste un modo per aggirare questo limite utilizzando contemporaneamente la modalità TCP e l'estensione ALPN del protocollo TLS.
+Attualmente, OVHcloud Load Balancer non supporta il protocollo HTTP/2, ma esiste un modo per aggirare questo limite utilizzando contemporaneamente la modalità TCP e l'estensione ALPN del protocollo TLS.
 
 L’ALPN (Application-Layer Protocol Negotiation) è un'estensione TLS che consente al livello di applicazione di negoziare quale protocollo verrà utilizzato (protocollo h2 nel nostro caso).
 
-**Questa guida ti mostra creare un servizio HTTP/2 con Load Balancer OVH. In questo caso, configuriamo questo servizio per distribuire il carico su diversi server che rispondono in HTTP/2.**
+**Questa guida ti mostra creare un servizio HTTP/2 con Load Balancer OVHcloud. In questo caso, configuriamo questo servizio per distribuire il carico su diversi server che rispondono in HTTP/2.**
+
+> [!primary]
+>
+> Da giugno 2025, i frontend HTTP e TLS dei servizi Load Balancer di OVHcloud supportano nativamente il protocollo HTTP/2.
+>
+> Questa guida è valida anche per i frontend TCP.
+>
 
 ## Prerequisiti
 
 - Disporre di un [Load Balancer OVH](https://www.ovh.it/soluzioni/load-balancer/){.external}
 - Aver creato un front-end TCP
 - Aver creato una farm TCP e aver aggiunto i server
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVH](/links/manager){.external}
 
 ## Procedura
 
@@ -104,7 +111,7 @@ Ora vediamo come aggiungere una regola al percorso appena creato.
 
 ### Step 3: applica le modifiche
 
-Le modifiche effettuate su OVH Load Balancer devono essere *espressamente applicate* a tutte le zone configurate: solo così saranno visibili ai visitatori. Questo consente di modificare le impostazioni in modo complesso in una sola volta.
+Le modifiche effettuate su OVHcloud Load Balancer devono essere *espressamente applicate* a tutte le zone configurate: solo così saranno visibili ai visitatori. Questo consente di modificare le impostazioni in modo complesso in una sola volta.
 
 Se disponi di più zone, dovrai applicare la stessa configurazione a ogni zona.
 
@@ -135,7 +142,7 @@ Aggiornamento di una zona:
 
 ### Step 4: verifica lo stato del servizio
 
-Dopo tutti questi passaggi, Load Balancer dovrebbe essere operativo per i tuoi server HTTP/2. A questo punto verifica e conferma lo stato del servizio inviando una richiesta al tuo OVH Load Balancer e verificandone la risposta:
+Dopo tutti questi passaggi, Load Balancer dovrebbe essere operativo per i tuoi server HTTP/2. A questo punto verifica e conferma lo stato del servizio inviando una richiesta al tuo OVHcloud Load Balancer e verificandone la risposta:
 
 ```bash
 curl -I --http2 https://www.ovh.com/

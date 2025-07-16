@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Webmail verwenden"
 excerpt: "Erfahren Sie hier, wie Sie das Zimbra Webmail-Interface mit OVHcloud MX Plan E-Mail-Accounts verwenden"
-updated: 2025-02-12
+updated: 2025-07-08
 ---
 
 <style>
@@ -43,6 +43,7 @@ OVHcloud bietet den Webmail-Dienst Zimbra an, um auf MX Plan E-Mail-Accounts zuz
 - [Kalender](#calendar)
     - [Kalenderverwaltung](#calendar-management)
     - [Aufgaben](#tasks)
+- [Speicherplatz](#storage)
 - [Filter](#filters)
     - [Grundlegendes zum Einrichten von Filtern](#filters-howto)
     - [Filter erstellen](#filters-creation)
@@ -440,6 +441,72 @@ Wenn Sie eine Aufgabe erstellen, können Sie ein Fälligkeitsdatum und eine Prio
 Klicken Sie dann auf `Speichern`{.action}, um die Erstellung Ihrer Aufgabe abzuschließen.
 
 ![Zimbra - Calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+
+### Storage / Speicherplatz <a name="storage"></a>
+
+> [!success]
+>
+> Die Speicherplatzfunktion "Aktentasche" ist nur mit der Zimbra Pro Lösung verfügbar.
+
+> [!warning]
+>
+> Die Zimbra Pro-Lösung ist derzeit in der Beta-Version verfügbar. Einige Funktionen werden noch verbessert.
+
+Klicken Sie auf das `Aktentasche`{.action} Symbol in der oberen Leiste, um auf Ihren Speicherplatz zuzugreifen. Sie können Ihre Dateien hochladen und dort freigeben.
+
+1. In der linken Spalte sehen Sie die Ordner für Ihren Speicherplatz.
+
+    - Um einen neuen Ordner zu erstellen, klicken Sie auf `+ Einen Ordner hinzufügen`{.action} am Ende der Spalte. Geben Sie den gewünschten Namen ein und bestätigen Sie ihn mit der `Enter`{.action} Taste.
+    - Um einen Unterordner zu erstellen, klicken Sie mit der rechten Maustaste auf einen der Ordner und danach auf `Unterordner erstellen`{.action}. Geben Sie den gewünschten Namen ein und bestätigen Sie ihn mit `Enter`{.action}.
+
+2. In der mittleren Spalte wird eine Liste der Dateien im ausgewählten Ordner angezeigt.
+
+3. Im rechten Fenster wird abhängig vom in der mittleren Spalte ausgewählten Dateityp eine Vorschau des Inhalts angezeigt. In der oberen Leiste der Vorschau werden die möglichen Aktionen für die ausgewählten Dateien angezeigt.
+
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+
+#### Hinzufügen einer Datei
+
+So fügen Sie eine Datei zu Ihrem Speicherplatz hinzu:
+
+1. Klicken Sie in der linken Spalte auf `Hochladen`{.action}.
+2. Wählen Sie im Fenster "Dateisuche" die Dateien, die in Ihren Speicherplatz hochgeladen werden sollen.
+3. Klicken Sie auf `Öffnen`{.action}, um Dateien in Ihren Speicherplatz hochzuladen.
+
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+
+#### Freigeben von Dateien und Ordnern
+
+Die Freigabe ermöglicht es Ihnen, Dritten außerhalb Ihres Zimbra Accounts Zugriff auf einen Ordner oder eine Datei in Ihrem Speicher zu gewähren.
+
+> [!warning]
+>
+> Freigabe für Ordner- und Dateiverwaltung ist nur mit einem Zimbra Pro Account möglich.
+
+> [!tabs]
+> **Datei freigeben**
+>>
+>> 1. Wählen Sie die freizugebende Datei aus und klicken Sie auf `...Mehr`{.action}.
+>> 2. Klicken Sie auf `Freigeben`{.action}.
+>> 3. Geben Sie die E-Mail-Adresse des Gastes ein und klicken Sie dann auf `Hinzufügen`{.action}. Sie können mehrere E-Mail-Adressen hinzufügen.
+>> 4. Wählen Sie die Berechtigungen aus, die Sie dem Gast zuweisen möchten.
+>> 5. Klicken Sie auf `Speichern`{.action}, um die Freigabe abzuschließen.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>>
+> **Ordner freigeben**
+>>
+>> 1. Klicken Sie mit der rechten Maustaste auf den Ordner, den Sie freigeben möchten, und klicken Sie dann auf `Freigeben`{.action}.
+>> 2. Geben Sie die E-Mail-Adresse des Gastes ein und klicken Sie dann auf `Hinzufügen`{.action}. Sie können mehrere E-Mail-Adressen hinzufügen.
+>> 3. Wählen Sie die Berechtigungen aus, die Sie dem Gast zuweisen möchten.
+>> 4. Klicken Sie auf `Speichern`{.action}, um die Freigabe abzuschließen.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>>
+
+Der Gast erhält eine E-Mail, in der er aufgefordert wird, einen Zimbra Account mit Benutzername und Passwort zu erstellen. Dieses Konto ermöglicht den Zugriff auf eine Zimbra Oberfläche, die auf den gemeinsam genutzten Inhalt beschränkt ist.
+
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
 
 ### Filter <a name="filters"></a>
 

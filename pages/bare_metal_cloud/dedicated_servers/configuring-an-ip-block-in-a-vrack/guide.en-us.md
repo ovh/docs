@@ -33,14 +33,14 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 
 - A public block of IP addresses in your account, with a minimum of four addresses
 - Your chosen private IP address range
-- A [vRack compatible server](https://www.ovhcloud.com/en/bare-metal/){.external}
+- A [vRack compatible server](/links/bare-metal/bare-metal)
 - A [vRack](/links/network/vrack){.external} service activated in your account
 - Access to the OVHcloud [Control Panel](/links/manager){.external}
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 

@@ -135,7 +135,7 @@ Una volta aggiunto il primo metodo, **aggiungi uno o due altri metodi** per aver
 
 ### Step 2 - salvare i codici di sicurezza <a name="codes"></a>
 
-Quando aggiungi per la prima volta un metodo di autenticazione a due fattori, nello Spazio Cliente vengono visualizzati 10 codici di sicurezza** monouso.
+Quando si aggiunge la doppia autenticazione per la prima volta, nell'area clienti vengono visualizzati 10 codici di emergenza **utilizzati una sola volta**.
 
 **Conservali con cura**. Ti consigliamo di salvarli con un gestore di password, come [KeePass](https://keepass.info/){.external} o [Bitwarden](https://bitwarden.com/) (queste due applicazioni sono gratuite).
 

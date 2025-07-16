@@ -20,7 +20,7 @@ Utiliser plusieurs buckets Object Storage peut être notamment utile pour :
 
 OVHcloud Backint Agent pour SAP HANA a été certifié par SAP, vous pouvez retrouver les informations de la certification à ces adresses :
 
-- [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/#/solutions?search=backint&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389)
+- [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/sap-certified-solutions/#/solutions?filters=v:1108&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389)
 - [SAP Note 2031547](https://me.sap.com/notes/0002031547)
 - [SAP Note 3344150](https://me.sap.com/notes/3344150)
 

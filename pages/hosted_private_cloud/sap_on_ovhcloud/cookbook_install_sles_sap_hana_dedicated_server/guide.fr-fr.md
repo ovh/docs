@@ -10,7 +10,7 @@ Ce guide fournit des instructions pour le déploiement de l'image SUSE Linux Ent
 
 ## Prérequis
 
-- Un accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un accès à l’[espace client OVHcloud](/links/manager)
 - Un [serveur dédié HGR-SAP Bare Metal](https://www.ovhcloud.com/fr/lp/sap/)
 
 ## En pratique

@@ -13,7 +13,7 @@ With our [Managed Bare Metal solutions](https://www.ovhcloud.com/en-ca/managed-b
 ## Requirements
 
 - a [Managed Bare Metal](https://www.ovhcloud.com/en-ca/managed-bare-metal/){.external} solution
-- [the "Add resources"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights){.external} right for the datacentre concerned (this right is granted via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external})
+- [the "Add resources"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights){.external} right for the datacentre concerned (this right is granted via the [OVHcloud Control Panel](/links/manager){.external})
 - access to the vSphere client
 
 ## Instructions

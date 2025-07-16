@@ -12,7 +12,7 @@ CDN (Content Delivery Network) umożliwia optymalizację czasu odpowiedzi Twoich
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVH](/links/manager){.external}
 
 ## W praktyce
 
@@ -20,7 +20,7 @@ CDN (Content Delivery Network) umożliwia optymalizację czasu odpowiedzi Twoich
 
 W momencie zamówienia przyznany zostaje Ci limit transferu wynoszący **1 TB**. Pamiętaj, że limit ten **nie jest odnawiany** co miesiąc wraz z odnowieniem Twojej usługi. Po zużyciu całego limitu (niezależnie od czasu, w jakim został on wykorzystany), możesz zamówić nowy pakiet transferu danych.
 
-Jeśli potrzebujesz dodatkowego transferu, możesz zamówić go bezpośrednio w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}:
+Jeśli potrzebujesz dodatkowego transferu, możesz zamówić go bezpośrednio w [Panelu klienta](/links/manager){.external}:
 
 ![Dodatnie limitu transferu](images/add_quota.png){.thumbnail}
 

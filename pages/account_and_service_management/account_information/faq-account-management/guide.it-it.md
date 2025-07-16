@@ -76,11 +76,11 @@ La delega dei servizi dovrà essere convalidata via email dall'amministratore de
 
 Prima di apportare qualsiasi modifica, assicurati che tutti gli indirizzi email di contatto siano validi. In caso contrario la richiesta non potrà essere completata.
 
-Se vuoi recuperare un dominio di cui risulti proprietario presso il Registro (verifica questa informazione su [www.ovh.it/cgi-bin/tools/check_whois.pl](http://www.ovh.it/cgi-bin/tools/check_whois.pl)) ma non disponi dell’accesso all'account amministratore, ti invitiamo a seguire gli step indicati in questa procedura: [www.ovh.it/cgi-bin/fr/procedure/procedureChangeContacts.cgi](https://www.ovh.it/cgi-bin/fr/procedure/procedureChangeContacts.cgi)
+Se vuoi recuperare un dominio di cui risulti proprietario presso il Registro (verifica questa informazione su [www.ovh.it/cgi-bin/tools/check_whois.pl](http://www.ovh.it/cgi-bin/tools/check_whois.pl)) ma non disponi dell’accesso all'account amministratore, ti invitiamo a seguire gli step indicati in questa procedura: [www.ovh.it/cgi-bin/fr/procedure/procedureChangeContacts.cgi](https://www.ovh.it/cgi-bin/fr/procedure/procedureChangeContacts.cgi).
 
 #### Consigli e suggerimenti
 
-Per maggiori informazioni sulla gestione dei contatti, consulta la guida [/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti)
+Per maggiori informazioni sulla gestione dei contatti, consulta questa [guida](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti).
 
 ### Come configurare o modificare il contatto di fatturazione?
 
@@ -114,7 +114,7 @@ Clicca sulla scheda `Sicurezza`{.action}. Inoltre, per attivare la 2FA, puoi aut
 - da un'applicazione mobile compatibile con Android, Iphone e Windows mobile;
 - tramite una chiave di sicurezza compatibile con U2F.
 
-[Maggiori informazioni](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+Para más información, haga clic [aquí](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
 ### Come disattivare la doppia autenticazione/2FA di OVHcloud?
 
@@ -127,15 +127,15 @@ Se non riesci ad accedere allo Spazio Cliente perché hai perso la periferica di
 
 ### Cosa fare se l’account OVHcloud è vittima di hacking?
 
-In caso di utilizzo fraudolento dell’account OVHcloud (identità, metodo di pagamento...), ti suggeriamo di rivolgerti il prima possibile alle autorità competenti. In Italia il reparto specializzato preposto al contrasto delle frodi postali e del crimine informatico è quello della Polizia Postale. Le segnalazioni per reati telematici possono essere inviate direttamente tramite il loro sito Web, dalla pagina [www.commissariatodips.it/segnalazioni/](https://www.commissariatodips.it/segnalazioni/).
+In caso di utilizzo fraudolento dell’account OVHcloud (identità, metodo di pagamento...), ti suggeriamo di rivolgerti il prima possibile alle autorità competenti. In Italia il reparto specializzato preposto al contrasto delle frodi postali e del crimine informatico è quello della Polizia Postale. Le segnalazioni per reati telematici possono essere inviate direttamente tramite il loro sito Web, dalla pagina <https://www.commissariatodips.it/segnalazioni/>.
 
 Sarà poi questo stesso dipartimento a contattarci per svolgere le opportune verifiche e accertamenti tecnici. Con l’avvio di questa procedura, l’identificativo cliente verrà bloccato e i servizi attivati in maniera fraudolenta sospesi.
 
-Per ripristinare la corretta operatività dell’account cliente, potremmo chiederti di modificare l’indirizzo email associato e la relativa password tramite la procedura disponibile a questo link: [www.ovh.it/cgi-bin/it/procedure/procedureChangeEmail.cgi](https://www.ovh.it/cgi-bin/it/procedure/procedureChangeEmail.cgi).
+Per ripristinare la corretta operatività dell’account cliente, potremmo chiederti di modificare l’indirizzo email associato e la relativa password tramite la procedura disponibile a questo [link](https://www.ovh.it/cgi-bin/it/procedure/procedureChangeEmail.cgi).
 
 ### Ho ricevuto una possibile email di phishing che utilizza l’identità di OVHcloud: come segnalarla per effettuare una verifica?
 
-Per identificare e segnalare un'email o un SMS di phishing, consulta la nostra [guida dedicata](/pages/account_and_service_management/account_information/phishing_care)
+Per identificare e segnalare un'email o un SMS di phishing, consulta la nostra [guida dedicata](/pages/account_and_service_management/account_information/phishing_care).
 
 ### Come segnalare un comportamento fraudolento o contenuti illeciti provenienti da servizi ospitati da OVHcloud di cui sono vittima?
 
@@ -182,8 +182,8 @@ La chiusura del tuo account cliente OVHcloud e la cancellazione dei tuoi dati pe
 
 Se le condizioni di cui sopra sono soddisfatte, puoi richiedere di eliminare il tuo account OVHcloud e i dati ad esso associati seguendo questi step:
 
-1. Connettiti al [Help Center di OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
-2. Clicca sul pulsante `Crea un ticket`{.action}
+1. Connettiti al [Help Center di OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+2. Clicca sul pulsante `Crea un ticket`{.action}.
 3. Seleziona il motivo `Gestisci il tuo account cliente OVHcloud`{.action}.
 4. Indica `Voglio chiudere il mio account cliente OVHcloud`{.action} e segui gli step descritti.
 

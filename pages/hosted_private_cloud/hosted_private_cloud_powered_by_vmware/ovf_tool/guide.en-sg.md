@@ -6,14 +6,14 @@ updated: 2022-01-31
 
 ## Objective
 
-[OVFTOOL](https://www.vmware.com/support/developer/ovf/){.external} is an **export/import** tool for VMs using the OVF format (compatible with Windows, Linux and Mac).
+[OVFTOOL](https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest){.external} is an **export/import** tool for VMs using the OVF format (compatible with Windows, Linux and Mac).
 
 **This guide offers a step by step study case on how to use this tool.**
 
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg))
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
 
 ## Instructions
 

@@ -79,7 +79,7 @@ Das Ihrem Server zugewiesene IPv4-Gateway wird im Tab `Allgemeine Informationen`
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 
-Klicken Sie auf der [OVHcloud API Seite](https://eu.api.ovh.com/console/) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein.
+Klicken Sie auf der [OVHcloud API Seite](/links/console) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein.
 
 Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
 
@@ -323,7 +323,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Wenn Sie eine Antwort erhalten, wurde die Additional IP korrekt konfiguriert. Ist das nicht der Fall, starten Sie die virtuelle Maschine neu, und wiederholen Sie den Ping-Befehl.
 
-Weitere Informationen zu `nmcli` finden Sie auf [dieser Seite](https://docs.redhat.com/de/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-using_the_networkmanager_command_line_tool_nmcli).
+Weitere Informationen zu `nmcli` finden Sie auf [dieser Seite (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli){.external}.
 
 #### FreeBSD
 

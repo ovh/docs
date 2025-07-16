@@ -13,7 +13,7 @@ updated: 2022-10-06
 
 Une Additional IP est une adresse IP basculable d'un service à l'autre. Elle offre donc la possibilité de disposer d'une infrastructure résistant à une grande diversité de problèmes (pannes matérielles, surcharges de vos services, maintenance...).
 
-Pour plus d'informations sur l'Additional IP nous vous recommandons la lecture du [document de présentation](https://www.ovhcloud.com/fr-ca/bare-metal/ip/){.external}.
+Pour plus d'informations sur l'Additional IP nous vous recommandons la lecture du [document de présentation](/links/bare-metal/ip){.external}.
 
 Le service OVH Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une Additional IP, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'Additional IP, donc pas de délai de propagation des DNS.
 
@@ -24,7 +24,7 @@ Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons
 ## Prérequis
 
 - Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} correctement configuré.
-- Disposer d'une [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/){.external}.
+- Disposer d'une [Additional IP](/links/bare-metal/ip){.external}.
 
 > [!primary]
 >
@@ -127,7 +127,7 @@ Toujours depuis l'[API OVH](https://ca.api.ovh.com){.external}, l'appel suivant 
 > 
 
 ### Depuis le Manager
-Il est enfin possible de définir vos Additional IPs dédiées depuis l'[espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
+Il est enfin possible de définir vos Additional IPs dédiées depuis l'[espace client](/links/manager){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier,
 créez un nouveau Frontend, ou éditez en un existants.

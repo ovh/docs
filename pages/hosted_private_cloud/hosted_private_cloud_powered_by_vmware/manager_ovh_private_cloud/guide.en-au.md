@@ -13,13 +13,13 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage you
 ## Requirements
 
 - A [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Interface Access
 
-Navigate to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and log on with your administrative credentials.
+Navigate to the [OVHcloud Control Panel](/links/manager) and log on with your administrative credentials.
 
 ![LOGIN](images/en01login.png){.thumbnail}
 

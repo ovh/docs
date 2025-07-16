@@ -75,11 +75,11 @@ A delegação do serviço deverá ser validada por e-mail pelo administrador do 
 
 Antes de efetuar qualquer alteração, certifique-se de que todos os endereços de e-mail de contacto são válidos, caso o contrário o pedido não poderá ser tido em conta.
 
-Se pretender recuperar um nome de domínio do qual é o proprietário registado junto da entidade de registo (pode verificar estas informações em [www.ovh.com/pt/cgi-bin/tools/check_whois.pl](https://www.ovh.com/pt/cgi-bin/tools/check_whois.pl)), mas não tem acesso à conta de cliente administrador, recomendamos que siga o seguinte procedimento: [www.ovh.com/pt/cgi-bin/pt/procedure/procedureChangeContacts.cgi](https://www.ovh.com/pt/cgi-bin/pt/procedure/procedureChangeContacts.cgi)
+Se pretender recuperar um nome de domínio do qual é o proprietário registado junto da entidade de registo (pode verificar estas informações em [www.ovh.com/pt/cgi-bin/tools/check_whois.pl](https://www.ovh.com/pt/cgi-bin/tools/check_whois.pl)), mas não tem acesso à conta de cliente administrador, recomendamos que siga o seguinte procedimento: [www.ovh.com/pt/cgi-bin/pt/procedure/procedureChangeContacts.cgi](https://www.ovh.com/pt/cgi-bin/pt/procedure/procedureChangeContacts.cgi).
 
 #### Conselhos e dicas
 
-Pode consultar o seguinte manual sobre a gestão dos contactos: [/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos)
+Está disponível um guia completo sobre gestão de contactos [aqui](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos).
 
 ### Como configurar ou modificar um contacto de faturação?
 
@@ -109,7 +109,7 @@ Depois de criar a sua conta de cliente OVHcloud, recomendamos que proteja os seu
 - A partir de uma aplicação móvel compatível com Android, iPhone e Windows Mobile
 - Com uma chave de segurança, compatível com U2F
 
-[Saber mais](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+Para mais informações, consulte esta [ligação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
 ### Como desativar a dupla autenticação/2FA da OVHcloud?
 
@@ -127,11 +127,11 @@ Quando estiver na posse da queixa formal, deverá enviar-nos uma cópia. Esse do
 
 O seu nome de utilizador será bloqueado. Os serviços subscritos de forma fraudulenta serão suprimidos e reembolsados automaticamente.
 
-Por fim, de modo a recuperar o controlo da sua conta de cliente, poderemos pedir-lhe que altere o seu endereço de e-mail e/ou a sua palavra-passe através desta ligação: [www.ovh.pt/cgi-bin/pt/procedure/procedureChangeEmail.cgi](https://www.ovh.pt/cgi-bin/pt/procedure/procedureChangeEmail.cgi)
+Por fim, de modo a recuperar o controlo da sua conta de cliente, poderemos pedir-lhe que altere o seu endereço de e-mail e/ou a sua palavra-passe através desta [ligação](https://www.ovh.pt/cgi-bin/pt/procedure/procedureChangeEmail.cgi).
 
 ### Recebi um e-mail que parece ser phishing a usurpar a identidade da OVHcloud. Como posso chamar a vossa atenção?
 
-Para sinalizar um e-mail ou uma SMS de phishing, consulte o nosso [guia dedicado](/pages/account_and_service_management/account_information/phishing_care)
+Para sinalizar um e-mail ou uma SMS de phishing, consulte o nosso [guia dedicado](/pages/account_and_service_management/account_information/phishing_care).
 
 ### Como assinalar um comportamento abusivo ou um conteúdo ilícito proveniente de serviços alojados pela OVHcloud e do qual sou vítima?
 

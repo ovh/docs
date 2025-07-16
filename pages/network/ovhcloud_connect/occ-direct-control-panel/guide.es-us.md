@@ -1,7 +1,7 @@
 ---
 title: Installation of OVHcloud Connect Direct from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Direct solution via the OVHcloud Control Panel
-updated: 2020-09-28
+updated: 2025-07-15
 ---
 
 ## Objective
@@ -16,13 +16,13 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 > To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/network/ovhcloud_connect/occ-limits) and configure your network devices accordingly.
 >
 
-- An [OVHcloud Connect Direct solution](https://www.ovhcloud.com/es/network-security/ovhcloud-connect/)
-- An OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- An [OVHcloud Connect Direct solution](/links/network/ovhcloud-connect)
+- An OVHcloud [vRack](/links/network/vrack)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution.
 
 ![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 
@@ -52,7 +52,7 @@ Once you have linked your vRack, two `PoP configuration` menus will appear. Clic
 
 ![adding PoP L2](images/pop2.png){.thumbnail}
 
-The L2 configuration will then be enabled in the two `PoP configuration` menus.
+The L2 configuration will then be enabled in the `PoP configuration` menu.
 
 ![adding PoP L2](images/l2pop2.png){.thumbnail}
 
@@ -78,44 +78,44 @@ The `PoP configuration` menu will then appear.
 
 You can also add a second PoP L3 configuration via the second `PoP configuration` menu.
 
-### Step 3: Adding a data centre configuration
+### Step 3: Adding an availability zone configuration
 
 #### Configuration 
 
-When your PoP configuration is active, click `Add a configuration`{.action} under the `DC configuration` menu. Select a data centre from the drop-down menu and confirm.
+When your PoP configuration is active, click `Add a configuration`{.action} under the `AZ configuration` menu. Select an availability zone from the drop-down menu and confirm.
 
-![add datacentre](images/l2dc1.png){.thumbnail}
+![add AZ](images/l2dc1.png){.thumbnail}
 
-![add datacentre](images/l2dc1-1.png){.thumbnail}
+![add AZ](images/l2dc1-1.png){.thumbnail}
 
-The DC configuration will then begin.
+The AZ configuration will then begin.
 
-![add datacentre](images/l2dc1-2.png){.thumbnail}
+![add AZ](images/l2dc1-2.png){.thumbnail}
 
 #### Configuration L3 
 
-When your PoP configuration has been set, click `Add a configuration`{.action} under the `DC configuration` menu. 
+When your PoP configuration has been set, click `Add a configuration`{.action} under the `AZ configuration` menu. 
 
-![add datacentre](images/l3dc0.png){.thumbnail}
+![add AZ](images/l3dc0.png){.thumbnail}
 
-Select a data centre from the drop-down menu, then enter the information required. 
+Select an availability zone from the drop-down menu, then enter the information required. 
 
 | Information    | Description |
 |:-------:|:------:|
-| OVHcloud ASN    | The OVHcloud AS number that will be configured on the OVHcloud Connect routers located in the DC. This number may be different from the ASN chosen for the PoP |
-| A /28 subnetwork  |  A private subnetwork configured in your vRack in the selected DC. This can be an IPv4 block of size /28 or higher |
+| OVHcloud ASN    | The OVHcloud AS number that will be configured on the OVHcloud Connect routers located in the AZ. This number may be different from the ASN chosen for the PoP |
+| A /28 subnetwork  |  A private subnetwork configured in your vRack in the selected AZ. This can be an IPv4 block of size /28 or higher |
 
-![add datacentre](images/l3dc1.png){.thumbnail}
+![add AZ](images/l3dc1.png){.thumbnail}
 
-You can add additional data centre configurations by clicking on the `...`{.action} button, then `Add a configuration`{.action}.
+You can add additional availability zone configurations by clicking on the `+ Add a configuration`{.action} button.
 
-![add datacentre](images/l3dc1-1.png){.thumbnail}
+![add AZ](images/l3dc1-1.png){.thumbnail}
 
 You must also add a routing configuration.
 
 ##### **Adding a routing configuration**
 
-Click on the `(...)`{.action} button on the desired data centre then on `Add routing configuration`{.action} .
+Click on the `(...)`{.action} button on the desired availability zone then on `Add routing configuration`{.action}.
 
 ![add routing configuration](images/l3dc2.png){.thumbnail}
 
@@ -127,8 +127,8 @@ If you choose the type BGP, then enter the required information.
 
 | Information    | Description |
 |:-------:|:------:|
-| Customer ASN    | Your AS BGP number, which is configured on your router located in the DC |
-| IP Neighbour    | IP address of the BGP neighbour of your router in the DC. This address must be part of the subnetwork specified in the `DC Configuration` section |
+| Customer ASN    | Your AS BGP number, which is configured on your router located in the AZ |
+| IP Neighbour    | IP address of the BGP neighbour of your router in the AZ. This address must be part of the subnetwork specified in the `AZ Configuration` section |
 
 ![add routing configuration](images/l3dc5.png){.thumbnail}
 
@@ -141,18 +141,18 @@ If you choose the Static type, enter the required information:
 
 ![add routing configuration](images/l3dc4.png){.thumbnail}
 
-You can add multiple routing configurations within the same data centre. The configuration type (BGP or Static) chosen for your first routing configuration will then apply to the next configuration on the same data centre.
+You can add multiple routing configurations within the same availability zone. The configuration type (BGP or Static) chosen for your first routing configuration will then apply to the next configuration on the same availability zone.
 
 ![add routing configuration](images/l3dc6.png){.thumbnail}
 
 ### Deletion of vCenter resources
 
-Each resource (PoP or DC) can be deleted individually, but deleting a parent resource such as DC or PoP will automatically delete all the subresources.
+Each resource (PoP or AZ) can be deleted individually, but deleting a parent resource such as AZ or PoP will automatically delete all the subresources.
 
 Recursive removal is slower than sequential removal of each resource.
 
 > [!primary]
-> If a DC configuration is shared between two or more OVHcloud Connect services, removing the PoP configuration from a single OVHcloud Connect service will not affect the DC resource.
+> If a AZ configuration is shared between two or more OVHcloud Connect services, removing the PoP configuration from a single OVHcloud Connect service will not affect the AZ resource.
 >
 
 #### Deleting a routing Configuration
@@ -161,14 +161,14 @@ To delete a routing configuration, click the `...`{.action} button on the routin
 
 ![deleting routing configuration](images/deleterouting.png){.thumbnail}
 
-#### Deleting a DC configuration
+#### Deleting a AZ configuration
 
-To delete a DC configuration, click the `...`{.action} button on the DC configuration to delete, then click `Delete`{.action}.
+To delete a AZ configuration, click the `...`{.action} button on the AZ configuration to delete, then click `Delete`{.action}.
 
 ![DC deletion](images/deletedc.png){.thumbnail}
 
 > [!primary]
-> Deleting a DC configuration will delete the related routing configurations.
+> Deleting a AZ configuration will delete the related routing configurations.
 >
 
 #### Deleting a PoP configuration
@@ -178,11 +178,11 @@ To delete a PoP configuration, click the `...`{.action} button on the PoP config
 ![deleting PoP configuration](images/deletepop.png){.thumbnail}
 
 > [!primary]
-> Deleting a PoP configuration will delete the related DC and routing configurations.
+> Deleting a PoP configuration will delete the related AZ and routing configurations.
 >
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

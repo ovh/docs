@@ -97,7 +97,7 @@ En caso de que uno de los contactos no haya recibido el mensaje de correo electr
 
 ![Gestión de contactos](images/managing_contacts_06.png){.thumbnail}
 
-Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaje informándole de que la solicitud está pendiente de validación por parte del otro contacto. Si el contacto acaba de validar la solicitud de cambio, es posible que la información que se muestra en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} tarde unos minutos en actualizarse.
+Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaje informándole de que la solicitud está pendiente de validación por parte del otro contacto. Si el contacto acaba de validar la solicitud de cambio, es posible que la información que se muestra en el [área de cliente de OVHcloud](/links/manager){.external} tarde unos minutos en actualizarse.
 
 ![Gestión de contactos](images/managing_contacts_007.png){.thumbnail}
 

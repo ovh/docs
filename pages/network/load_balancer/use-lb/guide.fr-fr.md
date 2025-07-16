@@ -11,7 +11,7 @@ Ce guide a pour but de vous aider lors de la première prise en main de votre Lo
 ## Prérequis
 
 - Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -105,7 +105,7 @@ Pour commander un certificat SSL, sélectionnez l'onglet `Certificat SSL`{.actio
 |Élément|Fonction|
 |---|---|
 |Nom|Si vous le souhaitez, vous pouvez nommer votre certificat, afin de l'identifier rapidement quand vous en avez plusieurs|
-|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV ([Pour plus de détails](https://www.ovhcloud.com/fr/web-hosting/options/ssl/))|
+|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV (Pour plus de détails, [consultez cette page](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Le(s) domaine(s) concerné(s)|
 
 #### Ajout d'un certificat SSL externe

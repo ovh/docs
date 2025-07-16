@@ -187,7 +187,7 @@ A continuación, haga clic en `Seguridad`{.action}, luego en los `...`{.action} 
 Recibirá el último código de verificación en el dispositivo que quiera eliminar. Introduzca este código en la ventana que se abre y haga clic en `Validar`{.action} para completar la eliminación.
 
 Si ya no tiene acceso al dispositivo que desea eliminar, no podrá eliminarlo usted mismo del área de cliente de OVHcloud.
-En este caso, **póngase en contacto directamente con el equipo de soporte técnico de OVHcloud [creando un tíquet desde el Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) o siguiendo el proceso descrito [a continuación](#2FA-deletion).
+En este caso, **póngase en contacto directamente** con el equipo de soporte técnico de OVHcloud [creando un tíquet desde el Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) o siguiendo el proceso descrito [a continuación](#2FA-deletion).
 
 > [!warning]
 >

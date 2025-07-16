@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser Backup Storage sur un serveur dédié'
 excerpt: 'Découvrez comment activer et accéder à votre espace de stockage supplémentaire'
-updated: 2025-03-27
+updated: 2025-07-11
 ---
 
 ## Objectif
@@ -159,11 +159,11 @@ ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **FolderLocation** : le chemin d'accès au répertoire-cible dans lequel vous souhaitez enregistrer le fichier.
-* **File** : le nom du fichier que vous voulez sauvegarder.
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **FolderLocation** : le chemin d'accès au répertoire-cible dans lequel vous souhaitez enregistrer le fichier.
+- **File** : le nom du fichier que vous voulez sauvegarder.
 
 Pour sauvegarder un répertoire, il vous suffit de l’archiver et de le transférer dans votre répertoire de sauvegarde :
 
@@ -173,11 +173,11 @@ tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName Archi
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **FolderName** : le chemin d’accès au répertoire que vous voulez sauvegarder.
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **ArchiveName** : le nom du répertoire que vous voulez sauvegarder.
+- **FolderName** : le chemin d’accès au répertoire que vous voulez sauvegarder.
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **ArchiveName** : le nom du répertoire que vous voulez sauvegarder.
 
 Pour télécharger un fichier d'archive à partir de votre Backup Storage, vous pouvez utiliser la commande suivante :
 
@@ -187,17 +187,18 @@ ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **LocalFolder** : le chemin d'accès au répertoire local dans lequel vous souhaitez enregistrer le fichier
-* **File** : le chemin d’accès du fichier à télécharger
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **LocalFolder** : le chemin d'accès au répertoire local dans lequel vous souhaitez enregistrer le fichier
+- **File** : le chemin d’accès du fichier à télécharger
 
 ##### Curl (pour Linux)
 
 > [!primary]
 >
-> Pour utiliser FTPS, vous devez changer le nom du Backup Storage. Par exemple, si le nom du Backup Storage est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ». Il vous faudra également ajouter l’argument \`-ssl\` à la commande ci-dessous.
+> Pour utiliser FTPS, vous devez changer le nom du Backup Storage. Par exemple, si le nom du Backup Storage est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ». Il vous faudra également ajouter l’argument \`-ssl\` à la commande ci-dessous.  
+> Attention, si le Backup Storage est situé au Canada (BHS), vous devrez le changer sous la forme « ftpback-bhsX-YYY.mybackup.ovh.ca ».
 >
 
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
@@ -208,11 +209,11 @@ curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **File** : le nom du fichier que vous voulez sauvegarder.
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **FolderLocation** : le chemin d'accès au répertoire-cible dans lequel vous souhaitez enregistrer le fichier.
+- **File** : le nom du fichier que vous voulez sauvegarder.
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **FolderLocation** : le chemin d'accès au répertoire-cible dans lequel vous souhaitez enregistrer le fichier.
 
 Pour sauvegarder un répertoire, il vous suffit de l’archiver et de le transférer dans votre répertoire de sauvegarde :
 
@@ -222,12 +223,12 @@ tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocati
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **FolderName** : le chemin d’accès au répertoire que vous voulez sauvegarder.
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **FolderLocation** : le chemin d'accès au répertoire local cible dans lequel vous souhaitez enregistrer le fichier
-* **ArchiveName** : le nom du répertoire que vous voulez sauvegarder.
+- **FolderName** : le chemin d’accès au répertoire que vous voulez sauvegarder.
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **FolderLocation** : le chemin d'accès au répertoire local cible dans lequel vous souhaitez enregistrer le fichier
+- **ArchiveName** : le nom du répertoire que vous voulez sauvegarder.
 
 Pour télécharger un fichier d'archive à partir de votre Backup Storage, vous pouvez utiliser la commande suivante :
 
@@ -238,17 +239,18 @@ curl -u FtpUsername:FtpPassword ftp://HostName/File
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **LocalFolder** : le nom du répertoire local dans lequel vous souhaitez enregistrer le fichier.
-* **File** : le chemin d’accès du fichier à télécharger
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **LocalFolder** : le nom du répertoire local dans lequel vous souhaitez enregistrer le fichier.
+- **File** : le chemin d’accès du fichier à télécharger
 
 #### lftp (pour Linux)
 
 > [!primary]
 >
-> lftp utilise FTP+SSL/TLS par défaut. Vous devez donc changer le nom de votre Backup Storage. Par exemple, si son nom est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ».
+> lftp utilise FTP+SSL/TLS par défaut. Vous devez donc changer le nom de votre Backup Storage. Par exemple, si son nom est « ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net », vous devrez le changer sous la forme « ftpback-rbxX-YYY.mybackup.ovh.net ».  
+> Attention, si le Backup Storage est situé au Canada (BHS), vous devrez le changer sous la forme « ftpback-bhsX-YYY.mybackup.ovh.ca ».
 >
 
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
@@ -259,11 +261,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; 
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **File** : le nom du fichier que vous voulez sauvegarder.
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **FolderLocation** : le chemin d'accès au répertoire-cible dans lequel vous souhaitez enregistrer le fichier.
+- **File** : le nom du fichier que vous voulez sauvegarder.
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **FolderLocation** : le chemin d'accès au répertoire-cible dans lequel vous souhaitez enregistrer le fichier.
 
 Pour sauvegarder un répertoire, il vous suffit de l’archiver et de le transférer dans votre répertoire de sauvegarde :
 
@@ -273,12 +275,12 @@ tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderL
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **FolderName** : le chemin d’accès au répertoire que vous voulez sauvegarder.
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **FolderLocation** : le chemin d'accès au répertoire local cible dans lequel vous souhaitez enregistrer le fichier
-* **ArchiveName** : le nom du répertoire que vous voulez sauvegarder.
+- **FolderName** : le chemin d’accès au répertoire que vous voulez sauvegarder.
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **FolderLocation** : le chemin d'accès au répertoire local cible dans lequel vous souhaitez enregistrer le fichier
+- **ArchiveName** : le nom du répertoire que vous voulez sauvegarder.
 
 Pour télécharger un fichier d'archive à partir de votre Backup Storage, vous pouvez utiliser la commande suivante :
 
@@ -289,11 +291,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **FtpUsername** : votre nom d'utilisateur FTP.
-* **FtpPassword** : votre mot de passe FTP.
-* **HostName** : le nom de votre Backup Storage.
-* **LocalFolder** : le nom du répertoire local dans lequel vous souhaitez enregistrer le fichier.
-* **File** : le chemin d’accès du fichier à télécharger
+- **FtpUsername** : votre nom d'utilisateur FTP.
+- **FtpPassword** : votre mot de passe FTP.
+- **HostName** : le nom de votre Backup Storage.
+- **LocalFolder** : le nom du répertoire local dans lequel vous souhaitez enregistrer le fichier.
+- **File** : le chemin d’accès du fichier à télécharger
 
 ##### Filezilla (pour Windows)
 
@@ -311,9 +313,9 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **HostName** : le nom de votre Backup Storage.
-* **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
-* **FolderMount** : le répertoire où vous souhaitez monter le partage NFS.
+- **HostName** : le nom de votre Backup Storage.
+- **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
+- **FolderMount** : le répertoire où vous souhaitez monter le partage NFS.
 
 Une fois le partage monté, vous pouvez utiliser des commandes telles que **cp** et \`rsync\` comme vous le feriez avec un répertoire normal.
 
@@ -329,8 +331,8 @@ net use z: \\HostName\ServiceName
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **HostName** : le nom de votre Backup Storage.
-* **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
+- **HostName** : le nom de votre Backup Storage.
+- **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
 
 Le message d'erreur suivant peut s'afficher :  
 
@@ -369,9 +371,9 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
-* **HostName** : le nom de votre Backup Storage.
-* **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
-* **FolderMount** : le répertoire où vous souhaitez monter le partage (il doit déjà exister).
+- **HostName** : le nom de votre Backup Storage.
+- **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
+- **FolderMount** : le répertoire où vous souhaitez monter le partage (il doit déjà exister).
 
 ## Aller plus loin
 

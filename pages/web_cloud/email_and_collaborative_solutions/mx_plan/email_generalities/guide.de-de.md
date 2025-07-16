@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit MX Plan'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr MX Plan Angebot verwenden'
-updated: 2025-05-19
+updated: 2025-06-26
 ---
 
 <style>
@@ -204,8 +204,8 @@ Für den Versand von E-Mails verwenden Sie die folgenden **SMTP** Einstellungen:
 
 - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
 - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
-- **Server ausgehend EUROPA**: pop.mail.ovh.net **oder** ssl0.ovh.net.
-- **Server ausgehend AMERIKA/ASIEN-PAZIFIK**: pop.mail.ovh.ca.
+- **Server ausgehend EUROPA**: smtp.mail.ovh.net **oder** ssl0.ovh.net.
+- **Server ausgehend AMERIKA/ASIEN-PAZIFIK**: smtp.mail.ovh.ca.
 - **Port**: 465.
 - **Sicherheitstyp**: SSL/TLS.
 

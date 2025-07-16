@@ -19,13 +19,13 @@ Alias IP (*IP aliasing* w języku angielskim) to specjalna konfiguracja sieci dl
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Więcej informacji znajduje się w sekcji "Sprawdź również".
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Więcej informacji znajduje się w sekcji "Sprawdź również".
 >
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- Posiadanie adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
+- Posiadanie usługi [VPS](/links/bare-metal/vps) na koncie OVHcloud
+- Posiadanie adresu [Additional IP](/links/bare-metal/ip)
 - Dostęp administratora (sudo) przez SSH lub GUI do serwera
 - Posiadanie podstawowej wiedzy na temat sieci i zarządzania nimi
 
@@ -485,6 +485,6 @@ Aby przetestować połączenie, wystarczy wysłać ping na adres Additional IP z
 
 [Włącz tryb Rescue na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

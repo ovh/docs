@@ -56,7 +56,7 @@ Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk 
 |--|--|
 | UNPRIVILEGED (Tylko Odczyt) | Dostęp w trybie odczytu do Panelu klienta OVHcloud i do wszystkich jego sekcji. |
 | DEFAULT (Ograniczony administrator) | Dostęp w trybie zapisu do Panelu klienta OVHcloud i do wszystkich jego sekcji, **z wyjątkiem** zarządzania użytkownikami. |
-| ADMIN (Administrator) | Dostęp w trybie zapisu do Panelu klienta OVHcloud i wszystkich jego sekcji **w tym*** zarządzanie użytkownikami. |
+| ADMIN (Administrator) | Dostęp w trybie zapisu do Panelu klienta OVHcloud i wszystkich jego sekcji **w tym** zarządzanie użytkownikami. |
 
 Użytkownik otrzyma własny identyfikator składający się z identyfikatora numerycznego Twojego konta (który możesz sprawdzić w menu “Zarządzanie użytkownikami”) i jego nazwy użytkownika — obie wartości są rozdzielone znakiem “/”.
 
@@ -97,7 +97,7 @@ Grupy przyznają domyślny poziom przywileju użytkownikom, których dotyczą, w
 | Brak | Brak dostępu do Panelu klienta OVHcloud, jeśli nie wdrożono żadnej polityki IAM. |
 | Tylko Odczyt | Dostęp w trybie odczytu do Panelu klienta OVHcloud i do wszystkich jego sekcji. |
 | Ograniczony administrator | Dostęp w trybie zapisu do Panelu klienta OVHcloud i do wszystkich jego sekcji, **z wyjątkiem** zarządzania użytkownikami. |
-| Administrator | Dostęp w trybie zapisu do Panelu klienta OVHcloud i wszystkich jego sekcji **w tym*** zarządzanie użytkownikami. |
+| Administrator | Dostęp w trybie zapisu do Panelu klienta OVHcloud i wszystkich jego sekcji **w tym** zarządzanie użytkownikami. |
 
 #### Zarządzaj grupami
 

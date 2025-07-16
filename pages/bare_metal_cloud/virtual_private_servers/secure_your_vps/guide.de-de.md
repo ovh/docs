@@ -18,12 +18,12 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
 >
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH.
 
 ## In der praktischen Anwendung
@@ -278,7 +278,7 @@ Die Sicherung Ihrer Daten ist ebenso essenziell, deshalb bietet Ihnen OVHcloud m
 - Mit der `Snapshot` Option können Sie manuelle Snapshots erstellen.
 - `Automatische Backups` ermöglichen es, regelmäßige Backups Ihres VPS zu speichern (mit Ausnahme zusätzlicher Disks).
 
-Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden Sie auf der [Produktseite](https://www.ovhcloud.com/de/vps/options/) und in den [zugehörigen Anleitungen](/products/bare-metal-cloud-virtual-private-servers).
+Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden Sie auf der [Produktseite](/links/bare-metal/vps-options) und in den [zugehörigen Anleitungen](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Weiterführende Informationen
 

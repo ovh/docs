@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Compare models with W&B for audio classification task
 excerpt: Compare 2 models by running 2 jobs in parallel. See which one performs best on your data!
-updated: 2023-05-11
+updated: 2025-06-27
 ---
 
 ## Objective
@@ -54,8 +54,8 @@ The basic principles for using Weights & Biases can be found [here](https://gith
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia);
-- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](/links/manager);
+- An AI Training project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Make sure you have a Docker Hub [account](https://hub.docker.com/);
@@ -98,7 +98,7 @@ cd ai-training-examples/jobs/weights-and-biases/audio-classification-models-comp
 
 It's a zip file (`audio_files.zip`)! We are going to push it into an object container named `spoken-digit`.
 
-If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the Object Storage section and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Object Storage` > `Create an object container`.
+If you want to upload it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Object Storage` > `Create an object container`.
 
 > [!primary]
 >
@@ -264,7 +264,7 @@ ENV HOME=/workspace
 
 ### Build the Docker image from the Dockerfile
 
-Launch the following command from the **Dockerfile** directory to build your application image:
+Launch one of the following commands from the **Dockerfile** directory to build your application image:
 
 > [!warning]
 >
@@ -272,21 +272,22 @@ Launch the following command from the **Dockerfile** directory to build your app
 >
 
 ```console
+# Build the image using your machine's default architecture
 docker build . -t <your-docker-id>/audio-classification-models:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t <your-docker-id>/audio-classification-models:latest .
 ```
+
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
 
 > [!primary]
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **audio-classification-models:latest**.
->
-
-> [!warning]
->
-> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
->
-> `docker buildx build --platform linux/amd64 ...`
 >
 
 ### Push the image into your Docker Hub
@@ -483,7 +484,7 @@ However, it takes longer to train and consumes **more computing resources**.
 - To build an app to classify audios, refer to this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_03_streamlit_sounds_classification).
 - Do you want to know how to build and use custom Docker image with AI Training? [Here it is](/pages/public_cloud/ai_machine_learning/training_tuto_02_build_custom_image).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

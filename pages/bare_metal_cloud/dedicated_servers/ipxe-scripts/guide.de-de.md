@@ -79,6 +79,7 @@ Zum Beispiel:
     "serverId": 123456,
     "powerState": "poweron",
     "monitoring": false
+}
 ```
 
 Sie können nun Ihren Server neu starten; er wird unter Verwendung des neuen [iPXE Skripts](https://ipxe.org/) booten.

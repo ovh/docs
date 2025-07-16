@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Premiers pas (EN)
 excerpt: Découvrez AI Endpoints, la plateforme d'OVHcloud dédiée aux développeurs pour accéder à des modèles d'IA de pointe via des API. Pas d'expertise IA requise.
-updated: 2025-06-11
+updated: 2025-06-19
 ---
 
 > [!primary]
@@ -89,7 +89,7 @@ Once you have selected the category of model you want to use, you will be presen
 
 For example, if you select the `Code LLM` category, you will see a list of available code assistant models.
 
-To access one of them, simply click the name of the model you want to use. Let's take the `CodeLlama-13b-Instruct-hf` code assistant as our example.
+To access one of them, simply click the name of the model you want to use. Let's take the `Qwen2.5-​Coder-​32B-​Instruct` code assistant as our example.
 
 This will take you to a dedicated page with several options for interacting with the chosen model, including the ability to view its specifications. Here is an overview of the available options:
 

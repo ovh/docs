@@ -16,7 +16,7 @@ VMware Update Manager allows you to keep your hosts up to date by installing Bug
 ## Requirements
 
 - being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) to receive login credentials.
-- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca))
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
 
 ## Instructions
 

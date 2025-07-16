@@ -18,7 +18,7 @@ This guide will show you how to create a **storage container** and a **volume gr
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Being connected to the cluster via the Prism Element web interface
 
 ## Overview of storage operations in a Nutanix cluster
@@ -115,6 +115,6 @@ The **Volume Group** will then appear in the list.
 
 [Nutanix licences](https://www.nutanix.com/products/software-options)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

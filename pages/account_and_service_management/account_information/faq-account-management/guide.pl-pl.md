@@ -23,7 +23,7 @@ Nie możesz odnaleźć Twojego kraju? Zmień język strony klikając na odpowied
 
 Swój identyfikator klienta, zwany także NIC-handle, znajdziesz w prawym górnym rogu na ostatniej fakturze. Zbudowany jest w następujący sposób: "aa00000-ovh" (pierwsze litery to zazwyczaj inicjały osoby, która założyła konto). Identyfikator jest również podawany we wszystkich wiadomościach e-mail wysyłanych przez OVHcloud (e-mail z potwierdzeniem utworzenia konta, e-mail z potwierdzeniem lub odnowieniem zamówienia itp.)
 
-Jeśli nie dysponujesz loginem, kliknij link „Nie pamiętam loginu lub hasła” na stronie [logowania do konta OVHcloud](/links/manager) i wpisz adres e-mail przypisany do Twojego konta.
+Jeśli nie dysponujesz loginem, kliknij link “Nie pamiętam loginu lub hasła” na stronie [logowania do konta OVHcloud](/links/manager) i wpisz adres e-mail przypisany do Twojego konta.
 
 #### Porady i wskazówki
 
@@ -50,7 +50,7 @@ Numer telefonu powinien zostać wpisany w formacie międzynarodowym.
 
 #### Wskazówki i porady
 
-Dla numeru „06 12 34 56 78” należy zatem wpisać „+48 612345678”. Prefiks „+48” dodawany jest automatycznie po wybraniu Polski jako kraju zamieszkania.
+Dla numeru “06 12 34 56 78” należy zatem wpisać “+48 612345678”. Prefiks “+48” dodawany jest automatycznie po wybraniu Polski jako kraju zamieszkania.
 
 ### Jakie są konsekwencje wprowadzenia rozporządzenia RODO względem ochrony moich danych osobowych?
 
@@ -66,7 +66,7 @@ Udaj się do strony logowania w Twoim Panelu klienta i wybierz „Nie pamiętam 
 #### Wskazówki i porady
 
 Jeśli nie masz dostępu do adresu e-mail do kontaktu, prosimy o wypełnienie tej [procedury](https://www.ovh.pl/pomoc/procedury/).
-Jeśli nie pamiętasz Twojego identyfikatora klienta, odnajdziesz go w prawym górnym rogu Twojej ostatniej faktury. Identyfikator składa się z następujących znaków: „aa00000-ovh” (przy czym pierwsze litery są zazwyczaj inicjałami osoby, która założyła konto). Identyfikator znajduje się również w e-mailu potwierdzającym założenie konta oraz w e-mailach potwierdzających złożenie zamówienia lub jego odnowienie.
+Jeśli nie pamiętasz Twojego identyfikatora klienta, odnajdziesz go w prawym górnym rogu Twojej ostatniej faktury. Identyfikator składa się z następujących znaków: “aa00000-ovh” (przy czym pierwsze litery są zazwyczaj inicjałami osoby, która założyła konto). Identyfikator znajduje się również w e-mailu potwierdzającym założenie konta oraz w e-mailach potwierdzających złożenie zamówienia lub jego odnowienie.
 
 ### Jak zmienić dane kontaktowe?
 
@@ -76,11 +76,12 @@ Nadanie uprawnień musi zostać zatwierdzone drogą mailową zarówno przez admi
 
 Przed wprowadzeniem jakiejkolwiek zmiany upewnij się, że wszystkie adresy e-mail podane do kontaktu są prawidłowe. W przeciwnym razie dyspozycja nie będzie mogła zostać zrealizowana.
 
-Jeśli chcesz odzyskać domenę, której jesteś właścicielem zarejestrowanym w odpowiednim rejestrze (możesz sprawdzić te informacje na [www.ovh.com/pl/cgi-bin/tools/check_whois.pl](https://www.ovh.com/pl/cgi-bin/tools/check_whois.pl)), ale nie masz dostępu do konta klienta administratora, zalecamy zastosowanie procedury: [www.ovh.pl/cgi-bin/pl/procedure/procedureChangeContacts.cgi](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeContacts.cgi)
+Jeśli chcesz odzyskać domenę, której jesteś właścicielem zarejestrowanym w odpowiednim rejestrze (możesz sprawdzić te informacje na [www.ovh.com/pl/cgi-bin/tools/check_whois.pl](https://www.ovh.com/pl/cgi-bin/tools/check_whois.pl)), ale nie masz dostępu do konta klienta administratora, zalecamy zastosowanie procedury: [www.ovh.pl/cgi-bin/pl/procedure/procedureChangeContacts.cgi](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeContacts.cgi).
 
 #### Wskazówki i porady
 
-Pełna instrukcja zarządzania kontaktami dostępna jest tutaj: [/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami](/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami)
+Pełny przewodnik po zarządzaniu kontaktami jest dostępny [tutaj]
+(/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami).
 
 ### W jaki sposób skonfigurować lub zmienić kontakt księgowy?
 
@@ -98,9 +99,9 @@ Aby zabezpieczyć Twoje konto, masz do wyboru kilka rozwiązań, takich jak:
 - jego regularne odnowienie tego hasła
 - weryfikacji dwuetapowej
 
-W przypadku weryfikacji dwuetapowej za pomocą wysyłania kodu w wiadomości SMS lub poprzez ograniczenie za pomocą adresu IP (autoryzacja lub odmowa dostępu do niektórych adresów) możesz dodać reguły bezpieczeństwa w Panelu klienta. Wszystkie te opcje są dostępne w sekcji „Bezpieczeństwo” po kliknięciu na Twoje inicjały w prawym górnym rogu Panelu klienta OVHcloud. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
+W przypadku weryfikacji dwuetapowej za pomocą wysyłania kodu w wiadomości SMS lub poprzez ograniczenie za pomocą adresu IP (autoryzacja lub odmowa dostępu do niektórych adresów) możesz dodać reguły bezpieczeństwa w Panelu klienta. Wszystkie te opcje są dostępne w sekcji “Bezpieczeństwo” po kliknięciu na Twoje inicjały w prawym górnym rogu Panelu klienta OVHcloud. 
 
-Kliknij `Bezpieczeństwo`{.action}
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}. Kliknij `Bezpieczeństwo`{.action}.
 
 Aby uzyskać więcej informacji, obejrzyj [film](https://www.youtube.com/watch?v=odO58c4gJfc&list=PL0DynEzr_sE5MnOfJOpVJN-EhfMDWoqGS&index=24).
 
@@ -110,9 +111,7 @@ Po utworzeniu konta klienta OVHcloud zalecamy
 zabezpieczyć Twoje dane osobowe, aktywując dwuetapowe
 uwierzytelnianie. 
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
-
-Kliknij `Bezpieczeństwo`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}. Kliknij `Bezpieczeństwo`{.action}.
 
 Ponadto, aby aktywować 2FA, dostępnych jest kilka rozwiązań umożliwiających uwierzytelnienie:
 
@@ -120,13 +119,11 @@ Ponadto, aby aktywować 2FA, dostępnych jest kilka rozwiązań umożliwiającyc
 - Z aplikacji mobilnej kompatybilnej z systemami Android, iPhone i Windows mobile
 - Korzystając z klucza bezpieczeństwa zgodnego z U2F
 
-[Więcej informacji](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+Więcej informacji można znaleźć pod tym [linkiem](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
 ### Jak dezaktywować uwierzytelnianie dwuetapowe/2FA w OVHcloud?
 
-Jeśli chcesz dezaktywować skonfigurowane dwuetapowe uwierzytelnianie, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
-
-Kliknij `Bezpieczeństwo`{.action}.
+Jeśli chcesz dezaktywować skonfigurowane dwuetapowe uwierzytelnianie, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}. Kliknij `Bezpieczeństwo`{.action}.
 
 Będziesz mieć możliwość dezaktywacji poszczególnych zabezpieczających urządzeń peryferyjnych. 
 Jeśli nie masz już dostępu do swojej strefy klienta z powodu utraty urządzenia do dwuetapowego uwierzytelnienia, skontaktuj się z pomocą techniczną OVHcloud, aby doradca mógł ręcznie dezaktywować urządzenie po przedstawieniu dokumentów potwierdzających.
@@ -141,11 +138,11 @@ Twój identyfikator klienta zostanie zablokowany. Wszelkie usługi wykupione nie
 
 Abyś mogła/mógł ponownie korzystać z Twojego konta klienta, poprosimy Cię ewentualnie o zmianę Twojego adresu e-mail i/lub Twojego hasła po kliknięciu tego linku: [www.ovh.pl/cgi-bin/pl/procedure/procedureChangeEmail.cgi](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeEmail.cgi).
 
-Chcąc uniknąć podobnych sytuacji w przyszłości, zabezpiecz swoje konto z poziomu Panelu klienta, dodając np. dwuskładnikowe uwierzytelnienie (kod wysyłany za pomocą SMS-a) oraz ogranicz dostęp do konta do Twojego adresu/adresów IP (akceptacja lub odmowa dostępu do niektórych adresów IP). Wszystkie te opcje można odnaleźć w sekcji „Bezpieczeństwo”. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}. Kliknij `Bezpieczeństwo`{.action}
+Chcąc uniknąć podobnych sytuacji w przyszłości, zabezpiecz swoje konto z poziomu Panelu klienta, dodając np. dwuskładnikowe uwierzytelnienie (kod wysyłany za pomocą SMS-a) oraz ogranicz dostęp do konta do Twojego adresu/adresów IP (akceptacja lub odmowa dostępu do niektórych adresów IP). Wszystkie te opcje można odnaleźć w sekcji “Bezpieczeństwo”. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}. Kliknij `Bezpieczeństwo`{.action}
 
 ### Otrzymałem e-mail, który wygląda na phishing i kradzież tożsamości OVHcloud. Jak zgłosić tę wiadomość do weryfikacji?
 
-Wyjaśnienie, jak rozpoznać i zgłosić atak phising przeprowadzony przy użyciu wiadomości e-mail lub SMS, znajdziesz w [przewodniku](/pages/account_and_service_management/account_information/phishing_care)
+Wyjaśnienie, jak rozpoznać i zgłosić atak phising przeprowadzony przy użyciu wiadomości e-mail lub SMS, znajdziesz w [przewodniku](/pages/account_and_service_management/account_information/phishing_care).
 
 ### W jaki sposób zgłosić nadużycie lub treści niezgodne z prawem wykryte na usługach hostowanych przez OVHcloud?
 

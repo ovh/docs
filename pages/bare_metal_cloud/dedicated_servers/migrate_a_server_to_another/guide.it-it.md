@@ -18,7 +18,7 @@ Le esigenze e le gamme OVHcloud si evolvono costantemente ed è quindi necessari
 >
 > OVHcloud mette a tua disposizione macchine di cui tu sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
 >
-> Mettiamo questa guida a tua disposizione per aiutarti con le attività più comuni. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> Mettiamo questa guida a tua disposizione per aiutarti con le attività più comuni. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un [fornitore specializzato](/links/partner). Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >
 
 ## Prerequisiti
@@ -49,7 +49,7 @@ La migrazione dei dati implica generalmente la copia dei file da un server all'a
 
 ### Utilizza il Backup Storage (disponibile solo su OVHcloud e So you Start)
 
-Con l'opzione [Backup Storage](https://www.ovhcloud.com/it/bare-metal/backup-storage/), puoi archiviare dati su un servizio esterno al tuo server. È associato esclusivamente al servizio dal quale l'hai ordinato.
+Con l'opzione [Backup Storage](/links/bare-metal/backup-storage), puoi archiviare dati su un servizio esterno al tuo server. È associato esclusivamente al servizio dal quale l'hai ordinato.
 
 > [!warning]
 >

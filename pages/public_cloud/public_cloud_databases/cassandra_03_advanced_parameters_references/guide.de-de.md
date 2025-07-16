@@ -1,7 +1,7 @@
 ---
 title: Cassandra - Advanced parameters references
 excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Cassandra according to your use cases
-updated: 2023-02-06
+updated: 2025-07-07
 ---
 
 <style>
@@ -26,6 +26,15 @@ updated: 2023-02-06
   width:11ch;
 }
 </style>
+
+> [!warning]
+>
+> **Important Notice – End of Sale (EOS)**
+>
+> Sale of our Cassandra managed database service will end on 15 September 2025.
+>
+> Existing services will continue to operate until the End Of Life (EOL) on 15 December 2025.
+>
 
 ## Objective
 

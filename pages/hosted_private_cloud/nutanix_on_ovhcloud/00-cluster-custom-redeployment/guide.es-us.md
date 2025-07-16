@@ -17,8 +17,8 @@ updated: 2022-12-13
 ## Requirements
 
 - a Nutanix Cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- access to the [OVHcloud API page](https://ca.api.ovh.com/)
+- access to the [OVHcloud Control Panel](/links/manager)
+- access to the [OVHcloud API page](/links/api)
 
 > [!warning]
 > If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](/pages/hosted_private_cloud/nutanix_on_ovhcloud/12-activate-licenses-on-byol).
@@ -200,6 +200,6 @@ Click `Execute`{.action} to start the cluster redeployment.
 
 [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](/pages/hosted_private_cloud/nutanix_on_ovhcloud/12-activate-licenses-on-byol)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

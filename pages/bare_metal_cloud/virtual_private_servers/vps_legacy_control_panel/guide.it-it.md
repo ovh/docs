@@ -10,7 +10,7 @@ updated: 2024-01-22
 
 ## Obiettivo
 
-Il nome visualizzato nello [Spazio Cliente OVHcloud](/links/manager) permette di stabilire se un VPS appartiene a una gamma meno recente. Se invece la referenza interna è in formato *vpsXXXX.ovh.net* (dove *X* rappresenta una cifra) e non è stato effettuato il trasferimento del VPS corrispondente alla [nostra gamma attuale di prodotti](https://www.ovhcloud.com/it/vps/), si tratta di un VPS *legacy*. 
+Il nome visualizzato nello [Spazio Cliente OVHcloud](/links/manager) permette di stabilire se un VPS appartiene a una gamma meno recente. Se invece la referenza interna è in formato *vpsXXXX.ovh.net* (dove *X* rappresenta una cifra) e non è stato effettuato il trasferimento del VPS corrispondente alla [nostra gamma attuale di prodotti](/links/bare-metal/vps), si tratta di un VPS *legacy*. 
 
 Il riferimento di un VPS della gamma attuale si presenta in questo modo: *vps-XXXXXXX.vps.ovh.net* (dove *X* può essere una cifra o una lettera).
 
@@ -20,7 +20,7 @@ Un VPS *legacy* implica alcune differenze in termini di gestione.
 
 ## Prerequisiti
 
-- Un [VPS *legacy*](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
+- Un [VPS *legacy*](/links/bare-metal/vps) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

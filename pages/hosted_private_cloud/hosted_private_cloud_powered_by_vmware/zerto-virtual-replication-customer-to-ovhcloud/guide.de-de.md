@@ -1,7 +1,7 @@
 ---
 title: 'Zerto zwischen OVHcloud und einer Drittplattform verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie OVHcloud Zerto mit einer anderen Plattform verbinden'
-updated: 2023-12-04
+updated: 2025-06-25
 ---
 
 > [!primary]
@@ -33,7 +33,7 @@ Lesen Sie hierzu unsere Anleitung zu "[Zerto zwischen zwei OVHcloud Rechenzentre
 
 > [!warning]
 >
-> OVHcloud unterstützt die N-1-Versionen von Zerto (derzeit bis einschließlich Version 9.7).
+> OVHcloud unterstützt die N-1-Versionen von Zerto (derzeit bis einschließlich Version 10).
 >
 > Die verfügbaren Versionen finden Sie hier: <https://help.zerto.com/kb/000004585>.
 >

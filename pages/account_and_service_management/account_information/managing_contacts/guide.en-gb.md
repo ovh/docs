@@ -106,7 +106,7 @@ The contact change will take effect a few minutes after both contacts have valid
 
 ### Example: Providing access for a website's technical administration to your webmaster
 
-You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](https://partner.ovhcloud.com/en-gb/directory/) and they are requesting access rights to your OVHcloud services in order to start building your website.
+You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](/links/partner) and they are requesting access rights to your OVHcloud services in order to start building your website.
 
 > [!warning]
 >

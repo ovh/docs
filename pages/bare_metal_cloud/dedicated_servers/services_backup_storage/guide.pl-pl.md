@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
 excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
-updated: 2025-02-12
+updated: 2025-07-14
 ---
 
 ## Wprowadzenie
@@ -160,11 +160,11 @@ ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **FtpUsername**\: Twoja nazwa użytkownika FTP.
-* **FtpPassword**\: Twoje hasło FTP.
-* **HostName**\: nazwę Twojej usługi Backup Storage.
-* **FolderLocation**\: ścieżka dostępu do katalogu docelowego, w którym zamierzasz zapisać plik. 
-* **File**\: nazwa pliku, który chcesz zapisać. 
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwę Twojej usługi Backup Storage.
+- **FolderLocation**: ścieżka dostępu do katalogu docelowego, w którym zamierzasz zapisać plik. 
+- **File**: nazwa pliku, który chcesz zapisać. 
 
 Aby zapisać katalog, wystarczy go zarchiwizować i przesłać do katalogu kopii zapasowych:
 
@@ -174,11 +174,11 @@ tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName Archi
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **FolderName**\: ścieżka dostępu do katalogu, który chcesz zapisać. 
-* **FtpUsername**\: Twoja nazwa użytkownika FTP.
-* **FtpPassword**\: Twoje hasło FTP.
-* **HostName**\: nazwę Twojej usługi Backup Storage.
-* **ArchiveName**\: nazwa katalogu, który chcesz zapisać.
+- **FolderName**: ścieżka dostępu do katalogu, który chcesz zapisać. 
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwę Twojej usługi Backup Storage.
+- **ArchiveName**: nazwa katalogu, który chcesz zapisać.
 
 Aby pobrać plik archiwalny z Backup Storage, możesz użyć następującej komendy:
 
@@ -188,17 +188,18 @@ ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **FtpUsername**\: Twoja nazwa użytkownika FTP.
-* **FtpPassword**\: Twoje hasło FTP.
-* **HostName**\: nazwę Twojej usługi Backup Storage.
-* **LocalFolder**\: ścieżka dostępu do katalogu lokalnego, w którym chcesz zapisać plik
-* **File**\: ścieżka dostępu pliku do pobrania
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwę Twojej usługi Backup Storage.
+- **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym chcesz zapisać plik
+- **File**: ścieżka dostępu pliku do pobrania
 
 ##### Curl (dla systemu Linux)
 
 > [!primary]
 >
-> Aby korzystać z FTPS, zmień nazwę Backup Storage. Na przykład, jeśli nazwa Backup Storage to "ftpback-rbxX-YY.ip-Z.Z.Z.net", zmień ją w następujący sposób: "ftpback-rbxX-YYY.mybackup.ovh.net". Należy również dodać argument \`-ssl\` do poniższej komendy.
+> Aby korzystać z FTPS, zmień nazwę Backup Storage. Na przykład, jeśli nazwa Backup Storage to "ftpback-rbxX-YY.ip-Z.Z.Z.net", zmień ją w następujący sposób: "ftpback-rbxX-YYY.mybackup.ovh.net". Należy również dodać argument `-ssl` do poniższej komendy.  
+> Jeśli Backup Storage znajduje się w Kanadzie (BHS), zmień go w formie "ftpback-bhsX-YYY.mybackup.ovh.ca".
 >
 
 Aby zapisać jeden plik, możesz użyć następującej komendy:
@@ -209,11 +210,11 @@ curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **File**\: nazwa pliku, który chcesz zapisać. 
-* **FtpUsername**\: Twoja nazwa użytkownika FTP.
-* **FtpPassword**\: Twoje hasło FTP.
-* **HostName**\: nazwę Twojej usługi Backup Storage.
-* **FolderLocation**\: ścieżka dostępu do katalogu docelowego, w którym zamierzasz zapisać plik. 
+- **File**: nazwa pliku, który chcesz zapisać. 
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwę Twojej usługi Backup Storage.
+- **FolderLocation**: ścieżka dostępu do katalogu docelowego, w którym zamierzasz zapisać plik. 
 
 Aby zapisać katalog, wystarczy go zarchiwizować i przesłać do katalogu kopii zapasowych:
 
@@ -223,12 +224,12 @@ tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocati
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **FolderName**\: ścieżka dostępu do katalogu, który chcesz zapisać. 
-* **FtpUsername**\: Twoja nazwa użytkownika FTP.
-* **FtpPassword**\: Twoje hasło FTP.
-* **HostName**\: nazwę Twojej usługi Backup Storage.
-* **FolderLocation**\: ścieżka dostępu do docelowego katalogu lokalnego, w którym chcesz zapisać plik
-* **ArchiveName**\: nazwa katalogu, który chcesz zapisać.
+- **FolderName**: ścieżka dostępu do katalogu, który chcesz zapisać. 
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwę Twojej usługi Backup Storage.
+- **FolderLocation**: ścieżka dostępu do docelowego katalogu lokalnego, w którym chcesz zapisać plik
+- **ArchiveName**: nazwa katalogu, który chcesz zapisać.
 
 Aby pobrać plik archiwalny z Backup Storage, możesz użyć następującej komendy:
 
@@ -239,123 +240,18 @@ curl -u FtpUsername:FtpPassword ftp://HostName/File
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **FtpUsername**\: Twoja nazwa użytkownika FTP.
-* **FtpPassword**\: Twoje hasło FTP.
-* **HostName**\: nazwę Twojej usługi Backup Storage.
-* **LocalFolder**\: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
-* **File**\: ścieżka dostępu pliku do pobrania
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwę Twojej usługi Backup Storage.
+- **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
+- **File**: ścieżka dostępu pliku do pobrania
 
 #### lftp (na Linux)
 
 > [!primary]
 >
-> lftp używa domyślnie FTP+SSL/TLS. W związku z tym zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi "ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net", zmień ją w następujący sposób: "ftpback-rbxX-YY.mybackup.ovh.net".
->
-
-#### FTP/FTPS
-
-##### NcFTP (na Linux)
-
-Aby zapisać jeden plik, możesz użyć następującej komendy:
-
-```sh
-ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
-```
-
-**Komenda ta nie wspiera protokołu FTPS. Jeśli chcesz wykonać bezpieczny transfer, użyj klienta lftp lub interfejsu cURL.**
-
-Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
-
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **FolderLocation**: ścieżka dostępu do katalogu docelowego, w którym zamierzasz zapisać plik. 
-* **File**: nazwa pliku, który chcesz zapisać. 
-
-Aby zapisać katalog, wystarczy zarchiwizować go i przesłać do katalogu kopii zapasowych:
-
-```sh
-tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
-```
-
-Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
-
-* **FolderName**: ścieżka dostępu do katalogu, który chcesz zapisać. 
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **ArchiveName**: nazwa katalogu, który chcesz zapisać.
-
-Aby pobrać plik archiwalny z Twojej przestrzeni dyskowej, możesz użyć następującej komendy:
-
-```sh
-ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
-```
-
-Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
-
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
-* **File**: ścieżka dostępu pliku do pobrania. 
-
-##### cURL (Linux)
-
-> [!primary]
->
-> Aby użyć protokołu FTPS, zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, zmień ją w następujący sposób: “ftpback-rbxX-YYY.mybackup.ovh.net”. Dodaj również flagę `-ssl` do poniższej komendy.
->
-
-Aby zapisać jeden plik, możesz użyć następującej komendy:
-
-```sh
-curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
-```
-
-Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
-
-* **File**: nazwa pliku, który chcesz zapisać. 
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **FolderLocation**: ścieżka dostępu do katalogu docelowego, w którym zamierzasz zapisać plik. 
-
-Aby zapisać katalog, wystarczy zarchiwizować go i przesłać do katalogu kopii zapasowych:
-
-```sh
-tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
-```
-
-Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
-
-* **FolderName**: ścieżka dostępu do katalogu, który chcesz zapisać. 
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **FolderLocation**: ścieżka dostępu do docelowego katalogu lokalnego, w którym zamierzasz zapisać plik. 
-* **ArchiveName**: nazwa katalogu, który chcesz zapisać.
-
-Aby pobrać plik archiwalny z Twojej przestrzeni dyskowej, możesz użyć następującej komendy:
-
-```sh
-cd /LocalFolder
-curl -u FtpUsername:FtpPassword ftp://HostName/File 
-```
-
-Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
-
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
-* **File**: ścieżka dostępu pliku do pobrania. 
-
-#### lftp (Linux)
-
-> [!primary]
->
-> lftp używa domyślnie FTP+SSL/TLS. W związku z tym zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, zmień ją w następujący sposób: “ftpback-rbxX-YYY.mybackup.ovh.net”.
+> lftp używa domyślnie FTP+SSL/TLS. W związku z tym zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi "ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net", zmień ją w następujący sposób: "ftpback-rbxX-YY.mybackup.ovh.net".  
+> Jeśli Backup Storage znajduje się w Kanadzie (BHS), zmień go w formie "ftpback-bhsX-YYY.mybackup.ovh.ca".
 >
 
 Aby zapisać jeden plik, możesz użyć następującej komendy:
@@ -366,11 +262,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; 
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **File**: nazwa pliku, który chcesz zapisać. 
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **FolderLocation**: ścieżka dostępu do katalogu docelowego, w którym zamierzasz zapisać plik. 
+- **File**: nazwa pliku, który chcesz zapisać. 
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwa Twojej usługi Backup Storage.
+- **FolderLocation**: ścieżka dostępu do katalogu docelowego, w którym zamierzasz zapisać plik. 
 
 Aby zapisać katalog, wystarczy zarchiwizować go i przesłać do katalogu kopii zapasowych:
 
@@ -380,12 +276,12 @@ tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderL
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **FolderName**: ścieżka dostępu do katalogu, który chcesz zapisać. 
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **FolderLocation**: ścieżka dostępu do docelowego katalogu lokalnego, w którym zamierzasz zapisać plik. 
-* **ArchiveName**: nazwa katalogu, który chcesz zapisać.
+- **FolderName**: ścieżka dostępu do katalogu, który chcesz zapisać. 
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwa Twojej usługi Backup Storage.
+- **FolderLocation**: ścieżka dostępu do docelowego katalogu lokalnego, w którym zamierzasz zapisać plik. 
+- **ArchiveName**: nazwa katalogu, który chcesz zapisać.
 
 Aby pobrać plik archiwalny z Twojej przestrzeni dyskowej, możesz użyć następującej komendy:
 
@@ -396,11 +292,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **FtpUsername**: Twoja nazwa użytkownika FTP.
-* **FtpPassword**: Twoje hasło FTP.
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
-* **File**: ścieżka dostępu pliku do pobrania. 
+- **FtpUsername**: Twoja nazwa użytkownika FTP.
+- **FtpPassword**: Twoje hasło FTP.
+- **HostName**: nazwa Twojej usługi Backup Storage.
+- **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
+- **File**: ścieżka dostępu pliku do pobrania. 
 
 ##### FileZilla
 
@@ -418,9 +314,9 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
-* **FolderMount**: katalog w którym chcesz zamontować zasób NFS.
+- **HostName**: nazwa Twojej usługi Backup Storage.
+- **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
+- **FolderMount**: katalog w którym chcesz zamontować zasób NFS.
 
 Po zamontowaniu zasobu możesz używać komend, takich jak **cp** i rsync, tak jak ma to miejsce w przypadku zwykłego katalogu.
 
@@ -436,8 +332,8 @@ net use z: \\HostName\ServiceName
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
+- **HostName**: nazwa Twojej usługi Backup Storage.
+- **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
 
 Może pojawić się następujący komunikat o błędzie:
 
@@ -476,9 +372,9 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
-* **HostName**: nazwa Twojej usługi Backup Storage.
-* **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
-* **FolderMount**: katalog, w którym chcesz zamontować zasób (powinien już istnieć).
+- **HostName**: nazwa Twojej usługi Backup Storage.
+- **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
+- **FolderMount**: katalog, w którym chcesz zamontować zasób (powinien już istnieć).
 
 ## Sprawdź również
 

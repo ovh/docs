@@ -164,7 +164,7 @@ ssh username@server_IP -p port_number
 
 Quando solicitado, introduza a palavra-passe do utilizador que inicia sessão (ou cole-a através de um clique com o botão direito do rato) e prima `Enter`{.action}.
 
-Se for uma nova ligação, o seu cliente SSH receberá uma **impressão de chave** do servidor. Introduza "yes` para confirmar e, em seguida, a palavra-passe do utilizador que inicia sessão para iniciar sessão.
+Se for uma nova ligação, o seu cliente SSH receberá uma **impressão de chave** do servidor. Introduza "yes" para confirmar e, em seguida, a palavra-passe do utilizador que inicia sessão para iniciar sessão.
 
 Exemplo de saída:
 

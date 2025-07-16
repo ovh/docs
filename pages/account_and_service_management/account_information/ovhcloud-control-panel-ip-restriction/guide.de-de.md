@@ -25,7 +25,7 @@ Die Einrichtung dieser Option, kombiniert mit der [Zwei-Faktor-Authentifizierung
 
 ## In der praktischen Anwendung
 
-## Schritt 1: Bestimmung der öffentlichen IP-Adressen, die zum Zugriff auf Ihr OVHcloud Kundencenter berechtigt sind
+### Schritt 1: Bestimmung der öffentlichen IP-Adressen, die zum Zugriff auf Ihr OVHcloud Kundencenter berechtigt sind
 
 Es gibt grundsätzlich zwei Arten IP-Adressen:
 

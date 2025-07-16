@@ -23,7 +23,7 @@ You can install this product on your OVHcloud infrastructure to take advantage o
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A user account with access to the [OVHcloud Control Panel](/links/manager)
 - A user account with access to vSphere
 - A VLAN with internet access and a DHCP server
 - You must have these resources:
@@ -361,6 +361,6 @@ Go to the vCenter interface to see the seven virtual machines created.
 
 [Manual installation of the CLI tool for the deployment of Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

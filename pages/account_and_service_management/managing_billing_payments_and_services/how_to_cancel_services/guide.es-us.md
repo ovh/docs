@@ -13,7 +13,7 @@ Quiere dar de baja uno o varios servicios de OVHcloud. Esta guía explica cómo 
 
 ### ¿Qué ocurre cuando se da de baja un servicio de OVHcloud? <a name="consequences"></a>
 
-Al dar de baja un servicio de OVHcloud, este se interrumpirá definitivamente** al finalizar la suscripción actual (pero con una excepción, en el caso **de los [dominios](#domain)). Puede dar de baja el servicio o [cancelar una solicitud de baja](#cancel) hasta 24 horas antes de la fecha de finalización de la suscripción.
+Al dar de baja un servicio de OVHcloud, este se interrumpirá **definitivamente** al finalizar la suscripción actual (pero con una excepción, en el caso de los [dominios](#domain)). Puede dar de baja el servicio o [cancelar una solicitud de baja](#cancel) hasta 24 horas antes de la fecha de finalización de la suscripción.
 
 Si se trata de un servicio de correo, un servidor o un alojamiento web, todos los datos correspondientes se eliminarán **sin que sea posible recuperarlos**.
 
@@ -86,7 +86,7 @@ Para dar de baja su servicio [VMware on OVHcloud](https://www.ovhcloud.com/es/en
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Cada servicio [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) puede eliminarse haciendo clic en el botón `...`{.action} a la derecha del servicio correspondiente y, seguidamente, en `Eliminar`{.action}, como en el ejemplo de abajo para una instancia:
+Cada servicio [Public Cloud](/links/public-cloud/public-cloud) puede eliminarse haciendo clic en el botón `...`{.action} a la derecha del servicio correspondiente y, seguidamente, en `Eliminar`{.action}, como en el ejemplo de abajo para una instancia:
 
 ![public cloud instance deleite](images/pci-deletion-en.png){.thumbnail}
 

@@ -57,7 +57,7 @@ Per la maggior parte degli account extraeuropei, viene spesso sostituito dall’
 Questo identificativo cliente ti permette di:
 
 - effettuare ordini online
-- accedere al tuo Spazio Cliente OVH per gestire tutti i tuoi servizi
+- accedere al tuo Spazio Cliente per gestire tutti i tuoi servizi
 - identificarti durante il contatto con il supporto OVHcloud e semplificare la gestione delle tue richieste.
 
 > [!warning]

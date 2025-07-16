@@ -73,7 +73,7 @@ Jeśli logowanie przebiegło pomyślnie, zostaniesz o tym poinformowany poprzez 
 
 ### Połączenie z Filezilla przez SFTP <a name="sftp"></a>
 
-SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) to protokół podobny do protokołu **FTP**. Podobnie jak SSH, używa domyślnego portu 22 zamiast portu 21. Jeśli korzystasz z hostingu Cloud Web, powinieneś użyć portu, który wyświetla się w Twoim [Panelu klienta OVHcloud](/links/manager){.external}. Port 22 został dezaktywowany przez bezpieczeństwo poprzez SSH i SFTP dla hostingu Cloud Web.
+**SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) to protokół podobny do protokołu **FTP**. Podobnie jak SSH, używa domyślnego portu 22 zamiast portu 21. Jeśli korzystasz z hostingu Cloud Web, powinieneś użyć portu, który wyświetla się w Twoim [Panelu klienta OVHcloud](/links/manager){.external}. Port 22 został dezaktywowany przez bezpieczeństwo poprzez SSH i SFTP dla hostingu Cloud Web.
 
 > [!success]
 >

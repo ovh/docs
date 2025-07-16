@@ -79,7 +79,7 @@ Haga clic en `Acceder a la consola (KVM)`{.action} para abrir la consola en su n
 
 Para más información sobre la creación de pares de claves SSH, consulte [esta página](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
-En la sección `Serial over LAN» (SoL)`{.action} del área de cliente de OVHcloud, haga clic en `Añadir la llave SSH`{.action}.
+En la sección `«Serial over LAN» (SoL)`{.action} del área de cliente de OVHcloud, haga clic en `Añadir la llave SSH`{.action}.
 
 ![Acceso SoL SSH](images/ipmi-sol-sshkey-01.png){.thumbnail}
 

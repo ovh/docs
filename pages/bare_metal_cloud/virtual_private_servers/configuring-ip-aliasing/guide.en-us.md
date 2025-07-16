@@ -18,13 +18,13 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/ if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/ if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [Virtual Private Server](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/en/bare-metal/ip/)
+- A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
+- An [Additional IP address](/links/bare-metal/ip)
 - Administrative access (sudo) via SSH or GUI to your server
 - Basic networking and administration knowledge
 
@@ -488,6 +488,6 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 [Activating Rescue Mode on VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).

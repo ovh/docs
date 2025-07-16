@@ -101,6 +101,10 @@ public-cloud-ai-and-machine-learning-ai-ecosystem-guides: AI Partners - Guides
 public-cloud-ai-and-machine-learning-ai-endpoints: AI Endpoints
 public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
 public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutorials
+public-cloud-quantum-computing: Quantum computing
+public-cloud-quantum-computing-general-information: General information
+public-cloud-quantum-computing-emulator: Quantum emulators
+public-cloud-quantum-computing-emulators-guides: Guides
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
@@ -128,12 +132,6 @@ public-cloud-containers-orchestration-managed-rancher-service-deploy-application
 public-cloud-data-analytics: Analytics
 public-cloud-data-analytics-general-information: General information
 public-cloud-data-analytics-general-guides: General guides
-public-cloud-data-analytics-data-processing: Data Processing
-public-cloud-data-analytics-data-processing-concepts: Conceitos
-public-cloud-data-analytics-data-processing-getting-started: Primeiros passos
-public-cloud-data-analytics-data-processing-how-to: Como fazer
-public-cloud-data-analytics-data-processing-supported-computing-engines: Motores de cálculo suportados
-public-cloud-data-analytics-data-processing-tutorials: Tutoriais
 public-cloud-databases: Public Cloud Databases
 public-cloud-databases-general-information: General information
 public-cloud-databases-general-guides: General guides
@@ -186,6 +184,17 @@ public-cloud-cross-functional-horizon: Gestão a partir do Horizon
 public-cloud-cross-functional-openstack: Gestão via OpenStack API
 public-cloud-cross-functional-infrastructure: Infraestrutura
 public-cloud-cross-functional-billing-information: Informações de faturação
+public-cloud-storage: Storage and Backup
+public-cloud-storage-object-storage: Object Storage
+public-cloud-storage-object-storage-general-information: General information
+public-cloud-storage-object-storage-general-guides-to-start: General guides to start
+public-cloud-storage-object-storage-tutorials: Tutorials
+public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
+public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
+public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
+public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+public-cloud-storage-block-storage: Block Storage
+public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
@@ -224,6 +233,9 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-appl
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnóstico
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-zimbra: Zimbra
+web-cloud-email-collaborative-solutions-zimbra-getting-started: Primeiros passos
+web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
+web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
 web-cloud-domains: Domínios
 web-cloud-domains-api: API
 web-cloud-domains-api-frequent-tasks: Tarefas frequentes
@@ -314,7 +326,7 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
-network-byoip: Bring your own IP (BYOIP)
+network-general-information: Informações gerais
 network-additional-ip: Additional IP
 network-bgp: BGP Service
 network-security: Rede e Segurança

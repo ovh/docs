@@ -8,7 +8,7 @@ updated: 2017-12-01
 Esta guía explica los primeros pasos con el servicio Load Balancer y presenta sus principales funcionalidades.
 
 ## Requisitos
-- Tener acceso al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso al [área de cliente](/links/manager).
 - Haber contratado un [Load Balancer](https://www.ovh.com/world/es/soluciones/load-balancer/).
 
 ## Procedimiento
@@ -101,7 +101,7 @@ Para contratar un certificado SSL, abra la pestaña `Certificado SSL`{.action} y
 
 |Elemento|Función|
 |---|---|
-|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (más información en la [web de ovh](https://www.ovhcloud.com/es/web-hosting/options/ssl/))|
+|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (más información en la [web de ovh](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Indique el dominio o dominios correspondientes|
 
 Si opta por un certificado Comodo EV, también deberá introducir la información de contacto y jurisdiccional.

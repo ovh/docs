@@ -122,12 +122,12 @@ La solution logicielle NSX est activé eau niveau du Virtual Datacenter (vDC). A
 
 La documentation pour migrer vers NSX est disponible ici: [vDC Migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
 
-Nos équipes du support et [nos experts de l'équipe Professional Services](https://www.ovhcloud.com/fr/professional-services/) pourront vous fournir une assistance.
+Nos équipes du support et [nos experts de l'équipe Professional Services](/links/professional-services) pourront vous fournir une assistance.
 
 ## Aller plus loin <a name="gofurther"></a>
 
 [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

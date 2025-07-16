@@ -106,7 +106,7 @@ Szczegółowe informacje można znaleźć na stronie <http://www.usenix.org.uk/c
 
 ///
 
-### UCEprotect
+#### UCEprotect
 
 /// details | Więcej informacji...
 
@@ -126,7 +126,7 @@ Jeśli jesteś aktualnie zainteresowany(a) tą sytuacją, zalecamy:
 
 ///
 
-### Fabel Spamsources
+#### Fabel Spamsources
 
 /// details | Więcej informacji...
 
@@ -142,11 +142,11 @@ Usunięcie listy powinno zająć od 20 do 30 minut.
 
 ///
 
-### MIPSpace
+#### MIPSpace
 
 /// details | Więcej informacji...
 
-Aby [usunąć adres IP z MIPSpace](https://www.mipspace.com/remove.php), najpierw zaloguj się do [Panelu klienta OVHcloud](/links/manager) i upewnij się, że następujące informacje są aktualne:
+Aby [usunąć adres IP z MIPSpace](https://www.mipspace.com/removal.php), najpierw zaloguj się do [Panelu klienta OVHcloud](/links/manager) i upewnij się, że następujące informacje są aktualne:
 
 - [Rewers DNS](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (pole PTR).
 - Informacje na temat Twojej organizacji (*RWhois*) w sekcji `Network`{.action}: Otwórz `IP`{.action} i kliknij na przycisk `Koła zębatego`{.action} po prawej stronie. Z menu rozwijanego wybierz opcję Zarządzaj moimi organizacjami {.action}.

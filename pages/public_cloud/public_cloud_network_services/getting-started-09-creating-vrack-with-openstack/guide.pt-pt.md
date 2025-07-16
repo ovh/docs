@@ -73,6 +73,8 @@ Na lista dos serviços elegíveis, selecione o projeto que deseja adicionar ao v
 
 Para ativar e gerir um vRack a partir das APIv6 OVHcloud, clique [aqui](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#step-1-activating-and-managing-a-vrack) (EN), para consultar o guia específico deste método.
 
+<a name="private-network"></a>
+
 ### Etapa 2: Criar uma rede privada no vRack
 
 
@@ -372,7 +374,7 @@ openstack server show <ID-instance>
 [...]
 ```
 
-<a name="detach-network"></a>
+<a name="detach-interface"></a>
 
 ### Desassociar uma interface de rede
 

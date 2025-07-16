@@ -1,7 +1,7 @@
 ---
 title: "Utilizar el webmail Zimbra"
 excerpt: "Descubra la interfaz del webmail Zimbra para sus cuentas MX Plan OVHcloud"
-updated: 2025-02-12
+updated: 2025-07-08
 ---
 
 <style>
@@ -43,6 +43,7 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 - [Calendario](#calendar)
     - [Gestión de calendarios](#calendar-management)
     - [Tareas](#tasks)
+- [Almacenamiento](#storage)
 - [Filtros](#filters)
     - [Cómo configurar los filtros](#filters-howto)
     - [Crear un filtro](#filters-creation)
@@ -439,6 +440,72 @@ Al crear una tarea, puede establecer una fecha de vencimiento y una prioridad pa
 A continuación, haga clic en `Guardar`{.action} para terminar de crear la tarea.
 
 ![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+
+### Almacenamiento <a name="storage"></a>
+
+> [!success]
+>
+> La funcionalidad de almacenamiento denominada "Maletín" solo está disponible a partir del producto Zimbra Pro.
+
+> [!warning]
+>
+> La oferta Zimbra Pro está actualmente en versión beta, algunas funcionalidades todavía se están mejorando.
+
+Haga clic en el icono `Maletín`{.action} situado en la barra superior para acceder a su espacio de almacenamiento. Desde ahí podrá subir sus archivos y compartirlos.
+
+1. En la columna de la izquierda, encontrará las carpetas de su espacio de almacenamiento.
+
+    - Para crear una nueva carpeta, haga clic en `+ Agregar una carpeta`{.action} en la parte inferior de la columna. Introduzca el nombre deseado y acepte pulsando la tecla `Intro`{.action}.
+    - Para crear una subcarpeta, haga clic derecho en una de las carpetas y, a continuación, haga clic en `Crear subcarpeta`{.action}. Introduzca el nombre deseado y acepte pulsando la tecla `Intro`{.action}.
+
+2. En la columna central, se mostrará una lista de los archivos de la carpeta seleccionada.
+
+3. En la ventana de la derecha, según el tipo de archivo seleccionado en la columna central, se muestra una vista previa del contenido. La barra superior de la vista previa muestra las acciones que puede realizar en el archivo o archivos seleccionados.
+
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+
+#### Añadir un archivo
+
+Para añadir un archivo a su espacio de almacenamiento, siga estos pasos:
+
+1. Haga clic en `Cargar`{.action} en la columna izquierda.
+2. En la ventana del explorador de archivos, seleccione el archivo o archivos que desea cargar en el espacio de almacenamiento.
+3. Haga clic en `Abrir`{.action} para cargar los elementos en su espacio de almacenamiento.
+
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+
+#### Compartir un archivo o carpeta
+
+El uso compartido le permite dar acceso a una carpeta o un archivo en su almacenamiento a otra persona, fuera de su cuenta Zimbra.
+
+> [!warning]
+>
+> El uso compartido que permite la administración de carpetas y archivos solo es posible con otra cuenta Zimbra Pro.
+
+> [!tabs]
+> **Compartir archivo**
+>>
+>> 1. Seleccione el archivo que desea compartir y haga clic en `Más...`{.action}.
+>> 2. Haga clic en `Compartir...`{.action}.
+>> 3. Introduzca la dirección de correo electrónico del invitado y haga clic en `Añadir`{.action}. Puede añadir varias direcciones de correo electrónico.
+>> 4. Elija los permisos que desea asignar al invitado.
+>> 5. Haga clic en `Guardar`{.action} para terminar de compartir.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>>
+> **Compartir una carpeta**
+>>
+>> 1. Haga clic derecho en la carpeta que desea compartir y, a continuación, haga clic en `Compartir...`{.action}.
+>> 2. Introduzca la dirección de correo electrónico del invitado y haga clic en `Añadir`{.action}. Puede añadir varias direcciones de correo electrónico.
+>> 3. Elija los permisos que desea asignar al invitado.
+>> 4. Haga clic en `Guardar`{.action} para terminar de compartir.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>>
+
+El invitado recibirá un mensaje de correo electrónico invitándole a crear una cuenta Zimbra compuesta por un usuario y una contraseña. Esta cuenta permite acceder a una interfaz Zimbra limitada a lo que se ha compartido.
+
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
 
 ### Filtres <a name="filters"></a>
 

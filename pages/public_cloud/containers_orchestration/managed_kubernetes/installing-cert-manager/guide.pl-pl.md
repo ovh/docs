@@ -1,7 +1,7 @@
 ---
 title: Installing cert-manager on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes'
-updated: 2024-01-18
+updated: 2025-07-02
 ---
 
 ## Objective
@@ -48,6 +48,16 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈Happy Helming!⎈
 ```
 
+Create a `values.yaml` file with the following content:
+
+```yaml
+config:
+  featureGates:
+    # Disable the use of Exact PathType in Ingress resources, to work around a bug in ingress-nginx
+    # https://github.com/kubernetes/ingress-nginx/issues/11176
+    ACMEHTTP01IngressPathTypeExact: false
+```
+
 Install the latest version of cert-manager with `helm install` command:
 
 ```bash
@@ -55,8 +65,13 @@ helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
   --create-namespace \
- --set installCRDs=true
+  --set installCRDs=true \
+  --values values.yaml
 ```
+
+> [!primary]
+>
+> `values.yaml` file is necessary to "fix" blocking [ingress-nginx 1.18+ changes](https://cert-manager.io/docs/releases/release-notes/release-notes-1.18/#acme-http01-challenge-paths-now-use-pathtype-exact-in-ingress-routes).
 
 This command will install the latest version of cert-manager, create a new `cert-manager` namespace and install the new CRD (CustomResourceDefinitions):
 

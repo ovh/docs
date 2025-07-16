@@ -15,9 +15,9 @@ Quando encomendar o seu servidor dedicado, pode escolher uma distribuição ou u
 **Este manual fornece-lhe alguns conselhos gerais para proteger um servidor baseado em GNU/Linux.**
 
 > [!warning]
->A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
+> A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
->Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
+> Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa [comunidade de utilizadores](/links/community). A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
 >
 
 ## Requisitos

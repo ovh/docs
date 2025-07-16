@@ -8,7 +8,7 @@ updated: 2024-06-17
 
 Las siglas **DNS**, que significan **D**omain **N**ame **S**ystem, son un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten asociar un dominio a una dirección IP.
 
-Es fundamental diferenciar entre los **servidores DNS** y la **zona DNS**. Una zona DNS** se configura a nivel del **servidor DNS**.
+Es fundamental diferenciar entre los **servidores DNS** y la **zona DNS**. Una **zona DNS** se configura a nivel del **servidor DNS**.
 
 Para una mejor comprensión del conjunto, le recomendamos que consulte previamente nuestra guía "[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)".
 

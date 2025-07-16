@@ -28,13 +28,13 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Requisitos
 
-- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/es-es/vps/), [instancias de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.).
+- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [instancias de Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.).
 - Tener acceso al [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
-> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+> Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 
 > [!warning]
 > Edge Firewall Network no admite el protocolo QUIC.

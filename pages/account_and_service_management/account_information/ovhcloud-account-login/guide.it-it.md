@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Obiettivo
 
-Per gestire i tuoi servizi accedi allo Spazio Cliente OVHcloud,
+Per gestire i tuoi servizi accedi allo Spazio Cliente OVHcloud.
 
 **Questa guida ti mostra come connettersi al tuo account OVHcloud e come risolvere i problemi di connessione.**
 

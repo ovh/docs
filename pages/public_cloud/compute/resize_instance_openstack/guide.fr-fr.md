@@ -51,7 +51,7 @@ $ openstack server list
 +--------------------------------------+----------------------------------------------------------------+--------+----------------------------------------------+
 ```
 
-### Lister les modèles <a name=« flavorlist »></a>
+### Lister les modèles <a name="flavorlist"></a>
 
 Vous devez afficher à présent la liste des modèles (*flavors*) disponibles dans votre région afin de récupérer l'ID du nouveau modèle. Dans notre exemple, nous voulons redimensionner notre instance sur un modèle b2-30 avec l'ID `098889e6-d1fc-4967-baea-19fd97fd83a8`.
 
