@@ -1,7 +1,7 @@
 ---
 title: "Cómo utilizar las políticas de IAM con la API de OVHcloud (EN)"
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-06-06
+updated: 2025-08-18
 ---
 
 ## Objective
@@ -42,7 +42,7 @@ Resources, resource groups and actions needed to create a policy will be describ
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
+<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -288,13 +288,13 @@ Check it via `GET /iam/policy`:
 
 The policies have been created successfully. Now, "***user1***" can **carry out reboots and create snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***". "***user2***" can **execute any vps action except for the deletion of snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
-#### Policies targeting other OVHcloud customer account
+#### Policies targeting other OVHcloud customer accounts
 
-Access policies can target other OVHcloud customer account.
-The targeted account of this policy will be able to manage the rights recieved that way on his own policies, but will never be able to override the rights set on the access policy.
+Access policies can target other OVHcloud customer accounts.  
+The targeted account of this policy will be able to manage the rights received that way on its own policies, but will never be able to override the rights set on the access policy.
 
-For example an account **xx1111-ovh** giving rights on `vps:apiovh:ips/*` to account **xx2222-ovh**.
-Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to his own users, but will never be able to give the right `vps:apiovh:reboot`.
+For example, an account **xx1111-ovh** gives rights on `vps:apiovh:ips/*` to account **xx2222-ovh**:  
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to its own users, but will never be able to grant the right `vps:apiovh:reboot`.
 
 Access to the support will still be reserved to the owner of the resource.
 
@@ -306,7 +306,7 @@ This section describes how to retrieve or create user for the policy.
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
+<https://api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -393,7 +393,7 @@ This section describes how to retrieve resources information to use in a policy.
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
+<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -452,7 +452,7 @@ To ease the policy management for a large number of resources, it is possible to
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
+<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -545,7 +545,7 @@ These actions are specific to every product, such as rebooting a database server
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
+<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
