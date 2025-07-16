@@ -17,7 +17,7 @@ Die meisten OVHcloud Dienste werden mithilfe mehrerer Kontakte verwaltet. Jedem 
 **Diese Anleitung erklärt, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten.**
 
 > [!primary]
-> OVHcloud bietet ein [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/)-System an, mit dem der Zugriff auf andere Kundenkonten delegiert werden kann.
+> OVHcloud bietet ein [Richtlinien-System (IAM Policy)](/pages/account_and_service_management/account_information/iam-policy-ui/) an, mit dem der Zugriff auf andere Kunden-Accounts delegiert werden kann.  
 > IAM-Richtlinien ermöglichen die Definition eines detaillierten Zugriffs bei gleichzeitiger Nachvollziehbarkeit der Aktionen.
 
 ## Definition
