@@ -10,15 +10,9 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 
 **Find out how to manage contacts for your OVHcloud services.**
 
-> [!warning]
-> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
->
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider]((/links/partner)) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
->
-
 > [!primary]
-> OVHcloud offer an [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) system allowing to delegate access to other customer accounts.
-> IAM policies allow to define fine grained access while keeping tracability of the actions.
+> OVHcloud offers an [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) system allowing to delegate access to other customer accounts.  
+> IAM policies enable precise access control while keeping tracability of the actions.
 
 ## Definition
 
