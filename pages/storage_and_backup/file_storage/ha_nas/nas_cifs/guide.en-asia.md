@@ -10,7 +10,7 @@ Configure and mount an OVHcloud HA-NAS storage space on your Windows Server usin
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/) **or** a [VPS](https://www.ovhcloud.com/asia/vps/) **or** a [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/) with a Windows distribution
+- a [Dedicated Server](/links/bare-metal/bare-metal) **or** a [VPS](/links/bare-metal/vps) **or** a [Public Cloud Instance](/links/public-cloud/public-cloud) with a Windows distribution
 - a [HA-NAS solution](https://www.ovh.co.uk/nas/)
 
 ### Settings
@@ -43,6 +43,6 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 
 [NAS - Frequently Asked Questions](/pages/storage_and_backup/file_storage/ha_nas/nas_faq)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

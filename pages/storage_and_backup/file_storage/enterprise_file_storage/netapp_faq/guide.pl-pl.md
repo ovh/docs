@@ -28,7 +28,7 @@ Rozwiązanie to pozwala również na rozwiązanie bardziej złożonych problemó
 
 ### Czy można zarządzać Enterprise File Storage w Panelu klienta?
 
-Tak, usługa ta jest dostępna bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji `Bare Metal Cloud`{.action}, następnie `Storage i Backup`{.action}.
+Tak, usługa ta jest dostępna bezpośrednio w [Panelu klienta OVHcloud](/links/manager), w sekcji `Bare Metal Cloud`{.action}, następnie `Storage i Backup`{.action}.
 
 ## Dostępność
 
@@ -136,6 +136,6 @@ Enterprise File Storage to usługa płatna co miesiąc za wolumen (od 1 do 58 TB
 
 ## Sprawdź również
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
