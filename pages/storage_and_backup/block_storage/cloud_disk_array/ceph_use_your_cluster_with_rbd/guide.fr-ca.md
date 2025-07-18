@@ -55,7 +55,7 @@ Créer le fichier `/etc/ceph/ceph.client.<ceph_user_name>.keyring`
 key = <my_user_key>
 ```
 
-`<mon_X_IP>` doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous "Plateformes et services", sélectionnez votre groupe Ceph.
+`<mon_X_IP>` doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](/links/manager). Sous "Plateformes et services", sélectionnez votre groupe Ceph.
 
 `<my_user_key>` doit être remplacée par la clé d'utilisateur que vous pouvez trouver sur le gestionnaire de votre Cloud Disk Array.
 
@@ -125,6 +125,6 @@ Vous pouvez maintenant utiliser votre grappe Ceph !
 
 Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
