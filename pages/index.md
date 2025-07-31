@@ -586,7 +586,7 @@
             + [Deploy virtual machines of SAP Application Server on VMware on OVHcloud solution with Terraform](hosted_private_cloud/sap_on_ovhcloud/cookbook_terraform_sap_application_server)
             + [Deploy virtual machines of SAP HANA database on VMware on OVHcloud solution with Terraform](hosted_private_cloud/sap_on_ovhcloud/cookbook_terraform_sap_hana_database)
             + [Deploy an SAP system infrastructure on VMware on OVHcloud solution with Terraform](hosted_private_cloud/sap_on_ovhcloud/cookbook_terraform_sap_system)
-            + [SAP Installation Wizard](hosted_private_cloud/sap_on_ovhcloud/installation-wizard)
+            + [SAP pre-installation wizard](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_preinstallation_wizard)
         + [Resilience](hosted-private-cloud-sap-ovhcloud-resilience)
             + [Deploy a SAP HANA cluster with SLES on VMware on OVHcloud](hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_sap_hana_cluster)
         + [Backups](hosted-private-cloud-sap-ovhcloud-backups)
