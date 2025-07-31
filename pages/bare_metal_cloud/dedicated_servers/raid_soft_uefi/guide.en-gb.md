@@ -384,10 +384,10 @@ Consistency Policy : bitmap
 
 Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command:
 
-**For GPT partitions**
+**For GPT partitions**n n
 
 ```sh
-sgdisk -R /dev/sda /dev/sdb 
+sgdisk -R /dev/sda /dev/sdb nmnn
 ```
 
 The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`
