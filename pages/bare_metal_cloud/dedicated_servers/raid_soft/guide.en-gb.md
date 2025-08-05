@@ -1,7 +1,7 @@
 ---
 title: How to configure and rebuild software RAID
 excerpt: Find out how to verify the state of the software RAID of your server and rebuild it after a disk replacement
-updated: 2023-08-21
+updated: 2025-08-xx
 ---
 
 ## Objective
@@ -255,7 +255,7 @@ sudo mdadm --manage /dev/md3 --remove /dev/nvme0n1p3
 ```
 
 
-If we runnthe following command:
+If we run the following command:
 
 ```sh
 parted /dev/nvme0n1
@@ -347,9 +347,14 @@ In this situation, we will explore two cases
 
 #### Dedicated server with UEFI
 
-The steps described in this section apply to servers whose main disk containing the EFI partition mounted on /boot/efi failed, was replaced, and the server no longer boots in normal mode. If the main disk containing this partition was not replaced and the server boots in normal mode, please follow the steps for [Dedicated servers with BIOS]() and recreate an EFI partition in the secondary disk as described below.
+In this section, we will focus on the steps to follow after the replacement of the main disk with the following scenario:
 
-**Understanding the EFI partition**
+- The EFI partition was mounted on this disk
+- The content of the EFI partition have not been updated/they have been updated and both partitions have been synchronized.
+
+If  your secondary disk was replaced, please follow the steps for [Dedicated servers with BIOS]() and recreate an EFI partition in the secondary disk as described below.
+
+/// details | **Understanding the EFI partition**
 
 An EFI partition, is a partition which can contain the boot loaders, boot managers, or kernel images of an installed operating system. It also contains system utility programs designed to be run before the operating system boots, as well as data files such as error logs.
 
@@ -380,7 +385,7 @@ nvme1n1     259:1    0 476.9G  0 disk
 └─nvme1n1p4 259:5    0   512M  0 part  [SWAP]
 ```
 
-From the example above, we see that we have two identical partitions (nvme0n1p1 and nvme1n1p1) but only nvme1n1p1 is mounted on `/boot/efi`.
+From the example above, we see that we have two identical partitions (nvme0n1p1 and nvme1n1p1) but only **nvme1n1p1** is mounted on `/boot/efi`.
 
 We can also use the following command to confirm that two EFI partitions were actually created after install:
 
@@ -422,7 +427,7 @@ nvme1n1
 
 From the results above, we can see two partitions (**nvme0n1p1** and **nvme1n1p1**), with identical size (504.9M). Both partitions have the LABEL: `EFI_SYSPART` but only one is mounted on `/boot/efi`.
 
-In general, this is a partition whose contents do not change much, except when there is a GRUB or the kernel updated. In this case, we recommend running an automatic or manual script to synchronise both partitions often.
+In general, this is a partition is not often updated, except when there are relevant updates. In this case, we recommend running an automatic or manual script to copy the primary EFI partition to the second one when needed. Additionally, a boot entry for the secondary ESP can then be added manually using [efibootmgr](https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface#efibootmgr){.external}
 
 The script below can be used:
 
@@ -444,6 +449,10 @@ while read -r partition; do
     umount "${MOUNTPOINT}"
 done < <(blkid -o device -t LABEL=EFI_SYSPART)
 ```
+
+///
+
+**Disk replacement**
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
 
@@ -512,12 +521,214 @@ md2 : active raid1 nvme0n1p2[2] nvme1n1p2[1]
 Once the raid rebuild is complete, run the following command to make sure that the partitions were properly added to the raid:
 
 ```sh
+lsblk -fA
+NAME        FSTYPE            FSVER LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+nvme1n1
+├─nvme1n1p1 vfat              FAT16 EFI_SYSPART    4629-D183
+├─nvme1n1p2 linux_raid_member 1.2   md2            83719c5c-2a27-2a56-5268-7d49d8a1d84f
+│ └─md2     ext4              1.0   boot           4de80ae0-dd90-4256-9135-1735e7be4b4d
+├─nvme1n1p3 linux_raid_member 1.2   md3            b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
+│ └─md3     ext4              1.0   root           9bf386b6-9523-46bf-b8e5-4b8cc7c5786f
+└─nvme1n1p4 swap              1     swap-nvme1n1p4 9bf292e8-0145-4d2f-b891-4cef93c0d209
+nvme0n1
+├─nvme0n1p1
+├─nvme0n1p2 linux_raid_member 1.2   md2            83719c5c-2a27-2a56-5268-7d49d8a1d84f
+│ └─md2     ext4              1.0   boot           4de80ae0-dd90-4256-9135-1735e7be4b4d
+├─nvme0n1p3 linux_raid_member 1.2   md3            b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
+│ └─md3     ext4              1.0   root           9bf386b6-9523-46bf-b8e5-4b8cc7c5786f
+└─nvme0n1p4
 ```
 
-The next step is to recreated the EFI partition on the newly added disk and format it. Please keep in mind that the content of this partition on the remaining drive (in our exmaple: nvme1n1) will be replicated to the new disk in order to enable our server to boot back into normal mode. This is possible because we kept the partition in sync while the server was running normally before the disk failure. 
+From the above results, we can see that the partitions of our newly added disk have been properly added to the raid, however, the EFI partition was not duplicated, which is normal since it is not included in the raid. We also see that the [SWAP] partition **nvme0n1p4** does not have the label anymore. We also need reattribute its properties.
 
-It is possible that this process does not work if there was a kernel or grub update and both partitions were not synchronized. 
+> [!warning]
+> The examples above are merely illustrating the necessary steps based on a typical server configuration. The information in the output table depends on your server's hardware and its partition scheme. When in doubt, consult the documentation of your operating system.
+> 
+> If you require professional assistance with server administration, consider the details in the Go further section of this guide.
+>
 
+The next step is to create an EFI partition (**nvme0n1p1**) on the newly added disk and format it. Please keep in mind that the content of this partition on the remaining drive (in our exmaple: nvme1n1) will be replicated to the new disk in order to enable our server to boot back into normal mode. This is possible because we kept the partition in sync while the server was running normally before the disk failure.
+
+It is possible that this process does not work if there was a kernel or grub update and both partitions were not synchronized. In this case, please consult the following guide [].
+
+We create a vfat partition
+
+```sh
+mkfs.vfat /dev/nvme0n1p1
+```
+
+Next, we lable the partition as `EFI_SYSPART` (this naming is proper to OVHcloud)
+
+```sh
+fatlabel /dev/nvme0n1p1 EFI_SYSPART
+```
+
+Now we have to duplicate the partition from nvme1n1p1 (healthy partition), to nvme0n1p1 (new partition). To do so, we start by creating two folders named `old` and `new`. 
+
+```sh
+mkdir old new
+```
+
+Next, we mount mount **nvme1n1p1** in the `old` folder and **nvme0n1p1** in the `new` folder:
+
+```sh
+mount /dev/nvme1n1p1 old
+mount /dev/nvme0n1p1 new
+```
+
+Next, we copy the files from `old` to `new`. Depending on your operating system, you will have a similar output. Here we are using debian:
+
+```sh
+rsync -axv old/ new/
+sending incremental file list
+EFI/
+EFI/debian/
+EFI/debian/BOOTX64.CSV
+EFI/debian/fbx64.efi
+EFI/debian/grub.cfg
+EFI/debian/grubx64.efi
+EFI/debian/mmx64.efi
+EFI/debian/shimx64.efi
+```
+
+Once this is done, we umount the **nvme0n1p1** partition.
+
+```sh
+umount nvme0n1p1
+```
+
+Next, we mount the partition containing our files on `/mnt`. In our example, that partition is `md3`.
+
+```sh
+mount /dev/md3 /mnt
+```
+
+Next, we mount the following directories:
+
+```sh
+mount --types proc /proc /mnt/proc
+mount --rbind /sys /mnt/sys
+mount --make-rslave /mnt/sys
+mount --rbind /dev /mnt/dev
+mount --make-rslave /mnt/dev
+mount --bind /run /mnt/run
+mount --make-slave /mnt/run
+```
+
+Next, we use the `chroot` command to access the mountpoint and make sure the new EFI partition has been properly created and the system recongnises both EFI partitions:
+
+```sh
+chroot /mnt
+```
+
+```sh
+blkid -t LABEL=EFI_SYSPART
+/dev/nvme1n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="4629-D183" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="889f241b-49c3-4031-b5c9-60df0746f98f"
+/dev/nvme0n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="521F-300B" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="02bf2b2d-7ada-4461-ba50-07683519f65d"
+```
+
+Still in the `chroot` environment, we create the `/boot/efi` folder in order to mount the EFI partition **nvme0n1p1** in it:
+
+```sh
+cd /mnt
+mkdir /boot/efi
+mount /dev/nvme0n1p1 /boot/efi
+```
+
+Next, we install the grub bootloader to make sure the server can reboot in normal mode on the new disk (you won't have to do this if the disk replaced is the secondary disk. Simply duplicate the EFI partition and proceed to the RAID rebuild, then enable the [SWAP] partition (if applicable)):
+
+```sh
+grub-install --efi-directory=/boot/efi /dev/nvme0n1p1
+```
+
+Next, we exit the `chroot` environment, then we recreate our [SWAP] partition **nvme0n1p4** and add the label `swap-nvmenxxx`:
+
+```sh
+mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
+
+Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
+LABEL=swap-nvme0n1p4, UUID=256215f9-7694-4a88-aa47-335558fc6cd8
+```
+
+We verify that the lable has been properly applied:
+
+```sh
+NAME        FSTYPE            FSVER LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+nvme1n1
+├─nvme1n1p1 vfat              FAT16 EFI_SYSPART    4629-D183
+├─nvme1n1p2 linux_raid_member 1.2   md2            83719c5c-2a27-2a56-5268-7d49d8a1d84f
+│ └─md2     ext4              1.0   boot           4de80ae0-dd90-4256-9135-1735e7be4b4d
+├─nvme1n1p3 linux_raid_member 1.2   md3            b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
+│ └─md3     ext4              1.0   root           9bf386b6-9523-46bf-b8e5-4b8cc7c5786f  441.1G     0% /mnt
+└─nvme1n1p4 swap              1     swap-nvme1n1p4 9bf292e8-0145-4d2f-b891-4cef93c0d209
+nvme0n1
+├─nvme0n1p1 vfat              FAT16 EFI_SYSPART    521F-300B
+├─nvme0n1p2 linux_raid_member 1.2   md2            83719c5c-2a27-2a56-5268-7d49d8a1d84f
+│ └─md2     ext4              1.0   boot           4de80ae0-dd90-4256-9135-1735e7be4b4d
+├─nvme0n1p3 linux_raid_member 1.2   md3            b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
+│ └─md3     ext4              1.0   root           9bf386b6-9523-46bf-b8e5-4b8cc7c5786f  441.1G     0% /mnt
+└─nvme0n1p4 swap              1     swap-nvme0n1p4 256215f9-7694-4a88-aa47-335558fc6cd8
+```
+
+Take note of the UUID of both swap partitions **nvme0n1p4** and **nvme1n1p4**.
+
+Next, we need to add the new UUID of the swap partition in `/etc/fstab` using the `chroot` environment:
+
+```sh
+chroot /mnt
+```
+
+```sh
+cat /etc/fstab
+
+UUID=9bf386b6-9523-46bf-b8e5-4b8cc7c5786f       /       ext4    defaults        0       1
+UUID=4de80ae0-dd90-4256-9135-1735e7be4b4d       /boot   ext4    defaults        0       0
+LABEL=EFI_SYSPART       /boot/efi       vfat    defaults        0       1
+UUID=356439fe-0539-45ce-9eff-40b616689b0c       swap    swap    defaults        0       0
+UUID=9bf292e8-0145-4d2f-b891-4cef93c0d209       swap    swap    defaults        0       0
+```
+We need to replace UUID `356439fe-0539-45ce-9eff-40b616689b0c` with `256215f9-7694-4a88-aa47-335558fc6cd8` since `9bf292e8-0145-4d2f-b891-4cef93c0d209` is the UUID of our second swap partition  **nvme1n1p4** and we are not replacing it. You can use a text editor such as `vi` or `nano` to edit the file:
+
+```sh
+nano etc/fstab
+```
+
+```sh
+cat /etc/fstab
+
+UUID=9bf386b6-9523-46bf-b8e5-4b8cc7c5786f       /       ext4    defaults        0       1
+UUID=4de80ae0-dd90-4256-9135-1735e7be4b4d       /boot   ext4    defaults        0       0
+LABEL=EFI_SYSPART       /boot/efi       vfat    defaults        0       1
+UUID=256215f9-7694-4a88-aa47-335558fc6cd8       swap    swap    defaults        0       0
+UUID=9bf292e8-0145-4d2f-b891-4cef93c0d209       swap    swap    defaults        0       0
+```
+
+Next, we make sure everything is properly mounted:
+
+```sh
+mount -av
+
+/                        : ignored
+/boot                    : successfully mounted
+/boot/efi                : successfully mounted
+swap                     : ignored
+swap                     : ignored
+```
+
+We enable the swap partition:
+
+```sh
+swapon -av
+
+swapon: /dev/nvme0n1p4: found signature [pagesize=4096, signature=swap]
+swapon: /dev/nvme0n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
+swapon /dev/nvme0n1p4
+swapon: /dev/nvme1n1p4: found signature [pagesize=4096, signature=swap]
+swapon: /dev/nvme1n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
+swapon /dev/nvme1n1p4
+```
+
+We have now succesffuly completed the RAID rebuild on the server and we can now reboot the server in normal mode:
 
 
 #### Dedicated servers with BIOS
