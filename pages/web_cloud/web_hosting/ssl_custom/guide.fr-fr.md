@@ -55,7 +55,7 @@ Une fois la commande lancée, le terminal va vous demander chacune des informati
 - `Locality Name (eg, city) []` : saisissez en majuscule le nom de votre ville.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]` : saisissez le nom de votre organisation, entreprise ou association. **Si vous êtes un particulier, ne répondez pas à cette question et appuyez directement sur la touche `ENTREE`{.action} de votre clavier pour afficher la question suivante**.
 - `Organizational Unit Name (eg, section) []` : saisissez le nom de votre département ou de votre service au sein de votre organisation, entreprise ou association. **Si vous êtes un particulier, ne répondez pas à cette question et appuyez directement sur la touche `ENTREE`{.action} de votre clavier pour afficher la question suivante**.
-- `Common Name (e.g. server FQDN or YOUR name) []` : saisissez le nom de domaine (exemple : `domain.tld`) ou le sous-domaine (exemple : `sub.domain.tld`) pour lequel vous souhaitez obtenir un certificat SSL. **Un seul** nom de domaine ou sous-domaine peut être renseigné ici. En fonction du fournisseur SSL, vous devrez préciser soit votre nom de domaine seul (exemple : `domain.tld`), soit son sous-domaine en « www » (exemple : `www.domain.tld`). Renseignez-vous à ce sujet au préalable auprès de votre fournisseur SSL.
+- `Common Name (e.g. server FQDN or YOUR name) []` : saisissez le nom de domaine (par exemple : `domain.tld`) ou le sous-domaine (par exemple : `sub.domain.tld`) pour lequel vous souhaitez obtenir un certificat SSL. **Un seul** nom de domaine ou sous-domaine peut être renseigné ici. En fonction du fournisseur SSL, vous devrez préciser soit votre nom de domaine seul (par exemple : `domain.tld`), soit son sous-domaine en « www » (par exemple : `www.domain.tld`). Renseignez-vous à ce sujet au préalable auprès de votre fournisseur SSL.
 - `Email Address []` : saisissez votre adresse e-mail.
 
 Les questions posées ensuite sont optionnelles et concernent principalement les utilisateurs avertis. En cas de doute, nous vous recommandons vivement de les passer en appuyant sur la touche `ENTREE`{.action} de votre clavier jusqu'à ce que le terminal ne vous pose plus de questions.
@@ -121,15 +121,15 @@ Enregistrez ce fichier est conservez-le précieusement pour la suite de ce guide
 >
 > Cette étape est optionnelle si vous avez déjà généré et récupéré le certificat SSL auprès de votre fournisseur SSL. Si tel est le cas, passez directement à la [partie 3](#step-3).
 
-Commandez le certificat SSL auprès de votre fournisseur SSL. Si ce dernier en a besoin, transmettez-lui le contenu de la CSR générée lors de la [partie 1](#step-1) de ce guide. S'il vous demande en complément la clé privée générée lors de la [partie 1](#step-1), transmettez-lui également.
+Commandez le certificat SSL auprès de votre fournisseur SSL. Si ce dernier en a besoin, transmettez-lui le contenu de la CSR générée lors de la [partie 1](#step-1) de ce guide. S'il vous demande en complément la clé privée générée lors de la [partie 1](#step-1), transmettez-lui également cette information.
 
 Suite à votre commande, le fournisseur de certificat SSL doit vous fournir 3 fichiers :
 
-- le fichier `certificate.crt` ;
-- le fichier `private.key` ;
-- le fichier `ca_bundle.crt`.
+- Le fichier `certificate.crt`.
+- Le fichier `private.key`.
+- Le fichier `ca_bundle.crt`.
 
-C'est le contenu de chacun de ses fichiers qui sera nécessaire pour réaliser la [partie 3](#step-3) de ce guide.
+Le contenu de chacun de ces fichiers sera nécessaire pour réaliser la [partie 3](#step-3) de ce guide.
 
 <a name="3files"></a>
 
@@ -147,16 +147,16 @@ Si vous démarrez directement la lecture de ce guide à cette étape car vous di
 
 **Avant de finaliser l'installation du certificat SSL sur votre hébergement web**, vérifiez que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre certificat SSL : 
 
-- pointent vers l'adresse IP de votre hébergement web. 
+- pointent vers l'adresse IP de votre hébergement web.
 - sont déclarés en multisite sur votre hébergement web.
 - ne disposent pas déjà d'un certificat SSL actif.
 
-Si besoin et pour vous en assurer, consultez nos guides :
+Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 
 - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+- [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), partie **Désactiver un certificat SSL sur un hébergement web**.
+- [Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), partie **Désactiver un certificat SSL sur un hébergement web**.
 
 Dès lors où tous ces prérequis sont respectés, vous pouvez commencer la finalisation de l'installation de votre certificat SSL personnalisé sur votre hébergement web.
 
@@ -193,13 +193,13 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window.png){.thumbnail}
 >>
->> - `Copier le contenu de votre certificat (RSA uniquement)`{.action} : saisissez le contenu du fichier **certificate.crt** délivré par votre fournisseur SSL, y compris les termes `-----BEGIN CERTIFICATE-----` et `-----END CERTIFICATE-----` (ou leurs équivalents). Le chiffrement RSA correspond au chiffrement standard des certificats SSL.
->> - `Copier le contenu de votre clé privée (non chiffrée)`{.action} : saisissez le contenu du fichier **private.key** délivré par votre fournisseur SSL, y compris les termes `-----BEGIN RSA PRIVATE KEY-----` et `-----END RSA PRIVATE KEY-----` (ou leurs équivalents). La mention *non chiffrée* signifie que la clé privée ne doit pas être protégée par un mot de passe ou une passphrase. Dans le cas contraire, l'installation du certificat échouera.
->> - `Copier le contenu de votre chaîne de certificats`{.action} : saisissez le contenu du fichier **ca_bundle.crt** délivré par votre fournisseur SSL, y compris les termes `-----BEGIN CERTIFICATE-----` et `-----END CERTIFICATE-----` (ou leurs équivalents).
+>> - `Copier le contenu de votre certificat (RSA uniquement)`{.action} : Saisissez le contenu du fichier **certificate.crt** délivré par votre fournisseur SSL, y compris les termes `-----BEGIN CERTIFICATE-----` et `-----END CERTIFICATE-----` (ou leurs équivalents). Le chiffrement RSA correspond au chiffrement standard des certificats SSL.
+>> - `Copier le contenu de votre clé privée (non chiffrée)`{.action} : Saisissez le contenu du fichier **private.key** délivré par votre fournisseur SSL, y compris les termes `-----BEGIN RSA PRIVATE KEY-----` et `-----END RSA PRIVATE KEY-----` (ou leurs équivalents). La mention *non chiffrée* signifie que la clé privée ne doit pas être protégée par un mot de passe ou une passphrase. Si tel est le cas, l'installation du certificat échouera.
+>> - `Copier le contenu de votre chaîne de certificats`{.action} : Saisissez le contenu du fichier **ca_bundle.crt** délivré par votre fournisseur SSL, y compris les termes `-----BEGIN CERTIFICATE-----` et `-----END CERTIFICATE-----` (ou leurs équivalents).
 >>
 >> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
 >>
->> Une fois les 3 formulaires complétés, cliquez sur `Valider`{.action} pour terminer l'importation du certificat SSL personnalisé sur votre hébergement web.
+>> Une fois les 3 champs renseignés, cliquez sur `Valider`{.action} pour finaliser l'importation du certificat SSL personnalisé sur votre hébergement web.
 
 Si le certificat SSL a été correctement généré par le fournisseur SSL et si les prérequis sont respectés, un message apparait précisant que l'activation du certificat SSL sur votre hébergement web est en cours.
 
@@ -237,7 +237,7 @@ Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dess
 >>
 > **Étape 4**
 >>
->> Lorsque le contenu de l'onglet apparaît, vérifiez que le(s) nom(s) de domaine/sous-domaine(s) concerné(s) est (sont) présent(s) dans le tableau avec le type de certificat SSL `Custom`.
+>> Lorsque le contenu de l'onglet apparaît, vérifiez que chaque nom de domaine et/ou sous-domaine concerné figure dans le tableau avec le type de certificat SSL `Custom`.
 >>
 >> ![Tableau de gestion des certificats SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
 
@@ -251,8 +251,8 @@ Votre certificat SSL personnalisé est désormais installé et actif. Vous pouve
 
 [Erreurs courantes liées à la sécurisation de votre site web avec le SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
  
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
- 
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

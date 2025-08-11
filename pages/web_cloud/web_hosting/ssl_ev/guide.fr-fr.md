@@ -37,7 +37,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Commander ou disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting).
 - Commander ou disposer d'un [nom de domaine](/links/web/domains) et disposer des droits exclusifs sur son utilisation. Le nom de domaine ne doit pas déjà être lié à un certificat SSL.
-- Être une organisation (entreprise, agence gouvernementale, ...) enregistrée auprès d'un registre officiel.
+- Être une organisation (entreprise, agence gouvernementale, etc.) enregistrée auprès d'un registre officiel.
 - Disposer de l'autorisation de votre organisation à commander un certificat SSL Sectigo EV.
 - Être en capacité de justifier avec exactitude les informations et coordonnées relatives à votre organisation.
 
@@ -49,7 +49,7 @@ Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Se
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance **pour toutes les étapes de vérifications directement réalisée avec l'autorité de certification Sectigo**. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance **pour toutes les étapes de vérifications directement réalisées avec l'autorité de certification Sectigo**. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 ### 1 - Commander le certificat SSL Sectigo EV
 
@@ -57,10 +57,10 @@ Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Se
 >
 > Les certificats SSL Sectigo EV proposés chez OVHcloud ne sont valables que pour l'un des deux cas suivants sur votre hébergement web :
 >
-> - un seul nom de domaine + son sous-domaine en « www » (exemple : `domain.tld` et `www.domain.tld`) ;
-> - un seul sous-domaine (exemple : `sub.domain.tld`).
+> - Un seul nom de domaine + son sous-domaine en « www » (par exemple : `domain.tld` et `www.domain.tld`).
+> - Un seul sous-domaine (par exemple : `sub.domain.tld`).
 >
-> Si d'autres noms de domaine/sous-domaines sont déclarés sur votre hébergement web et que vous souhaitez également qu'ils disposent d'un certificat SSL, vous pourrez soit :
+> Si d'autres noms de domaine ou sous-domaines sont déclarés sur votre hébergement web et que vous souhaitez également leur attribuer un certificat SSL, vous pouvez soit :
 >
 > - [Activer un certificat SSL gratuit Let's Encrypt](/pages/web_cloud/web_hosting/ssl_letsencrypt) (si ce n'est pas déjà le cas par défaut).
 > - Activer un (ou plusieurs) autre(s) certificat(s) SSL payant(s) ([Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv) ou [Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev)).
@@ -72,22 +72,20 @@ Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Se
 - est déclaré en multisite sur votre hébergement web.
 - ne dispose pas déjà d'un certificat SSL actif.
 
-Si besoin et pour vous en assurer, consultez nos guides :
+Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 
 - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+- [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), partie **Désactiver un certificat SSL sur un hébergement web**.
+- [Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), partie **Désactiver un certificat SSL sur un hébergement web**.
 
 > [!primary]
 >
-> Dans le cas où vous souhaitez souscrire à un certificat SSL Sectigo EV pour un nom de domaine (exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
+> Si vous souhaitez souscrire un certificat SSL Sectigo EV pour un nom de domaine (par exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (par exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
 >
 > En effet, le cas échéant et si vous commandez le certificat SSL Sectigo EV sans vous en assurer, vous devrez effectuer un correctif a posteriori. Vous devrez alors supprimer le certificat SSL Sectigo EV précédemment souscrit **sans être remboursé**, puis en commander un nouveau. L'objectif est que le nouveau certificat SSL Sectigo EV englobe bien à la fois votre nom de domaine `domain.tld` et son sous-domaine en « www » `www.domain.tld`.
 >
-> Pour rappel, si vous souscrivez à un certificat SSL Sectigo EV directement pour un sous-domaine (exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
-
-Si besoin et pour vous en assurer, consultez nos guides :
+> Pour rappel, si vous souscrivez un certificat SSL Sectigo EV directement pour un sous-domaine (par exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
 
 #### 1.1 - Pour un nom de domaine/sous-domaine et un hébergement web déjà existants chez OVHcloud
 
@@ -124,13 +122,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 >> ![SSL Sectigo sélection du domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
->> Poursuivez la commande jusqu'au paiement afin de valider la demande de création du certificat SSL Sectigo EV pour votre nom de domaine et/ou sous-domaine sur votre hébergement web.
->>
 > **Étape 6**
 >>
->> Sélectionnez le **Certificat SSL Sectigo EV** une fois arrivé dans le tunnel de commande, puis poursuivez la commande.
+>> Dans le tunnel de commande, sélectionnez le **Certificat SSL Sectigo EV**, puis poursuivez la commande.
 >>
->> Renseignez avec exactitude les informations demandées par **Sectigo** avant que ne vous soit délivré le certificat SSL Sectigo EV. 
+>> Renseignez avec exactitude les informations demandées par **Sectigo** avant que le certificat SSL Sectigo EV ne vous soit délivré.
 >>
 >> ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 >>
@@ -182,7 +178,7 @@ Toutes les actions décrites dans cette étape peuvent être effectuées sur plu
 
 > [!warning]
 >
-> Dans cette étape, tout le processus dépend du fournisseur de certificat **Sectigo** et des informations renseignées lors de votre commande de certificat SSL Sectigo EV. 
+> Dans cette étape, tout le processus dépend du fournisseur de certificat **Sectigo** et des informations renseignées lors de votre commande de certificat SSL Sectigo EV.
 >
 > Seul **Sectigo** pourra intervenir sur cette étape et OVHcloud ne pourra pas agir à ce niveau.
 >
@@ -240,7 +236,7 @@ Il ne vous restera plus qu'à [passer votre site en HTTPS](/pages/web_cloud/web_
 
 [Passer votre site en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

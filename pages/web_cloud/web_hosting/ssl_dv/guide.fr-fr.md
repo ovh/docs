@@ -40,10 +40,10 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 >
 > Les certificats SSL Sectigo DV proposés chez OVHcloud ne sont valables que pour l'un des deux cas suivants sur votre hébergement web :
 >
-> - un seul nom de domaine + son sous-domaine en « www » (exemple : `domain.tld` et `www.domain.tld`) ;
-> - un seul sous-domaine (exemple : `sub.domain.tld`).
+> - Un seul nom de domaine + son sous-domaine en « www » (par exemple : `domain.tld` et `www.domain.tld`).
+> - Un seul sous-domaine (par exemple : `sub.domain.tld`).
 >
-> Si d'autres noms de domaine/sous-domaines sont déclarés sur votre hébergement web et que vous souhaitez également qu'ils disposent d'un certificat SSL, vous pourrez soit :
+> Si d'autres noms de domaine ou sous-domaines sont déclarés sur votre hébergement web et que vous souhaitez également leur attribuer un certificat SSL, vous pouvez soit :
 >
 > - [Activer un certificat SSL gratuit Let's Encrypt](/pages/web_cloud/web_hosting/ssl_letsencrypt) (si ce n'est pas déjà le cas par défaut).
 > - Activer un (ou plusieurs) autre(s) certificat(s) SSL payant(s) ([Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv) ou [Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev)).
@@ -57,18 +57,18 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 
 > [!primary]
 >
-> Dans le cas où vous souhaitez souscrire à un certificat SSL Sectigo DV pour un nom de domaine (exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
+> Si vous souhaitez souscrire un certificat SSL Sectigo DV pour un nom de domaine (par exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (par exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
 >
 > En effet, le cas échéant et si vous commandez le certificat SSL Sectigo DV sans vous en assurer, vous devrez effectuer un correctif a posteriori. Vous devrez alors supprimer le certificat SSL Sectigo DV précédemment souscrit **sans être remboursé**, puis en commander un nouveau. L'objectif est que le nouveau certificat SSL Sectigo DV englobe bien à la fois votre nom de domaine `domain.tld` et son sous-domaine en « www » `www.domain.tld`.
 >
-> Pour rappel, si vous souscrivez à un certificat SSL Sectigo DV directement pour un sous-domaine (exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
+> Pour rappel, si vous souscrivez à un certificat SSL Sectigo DV directement pour un sous-domaine (par exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
 
-Si besoin et pour vous en assurer, consultez nos guides :
+Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 
 - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+- [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), partie **Désactiver un certificat SSL sur un hébergement web**.
+- [Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), partie **Désactiver un certificat SSL sur un hébergement web**.
 
 ### Commander le certificat SSL Sectigo DV
 
@@ -140,7 +140,7 @@ Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dess
 >>
 > **Étape 4**
 >>
->> Lorsque le contenu de l'onglet apparaît, vérifiez que le(s) nom(s) de domaine/sous-domaine(s) concerné(s) est (sont) présent(s) dans le tableau avec le type de certificat SSL `Sectigo`.
+>> Lorsque le contenu de l'onglet apparaît, vérifiez que chaque nom de domaine et/ou sous-domaine concerné figure dans le tableau avec le type de certificat SSL `Sectigo`.
 >>
 >> ![Tableau de gestion des certificats SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab.png){.thumbnail}
 
@@ -154,8 +154,8 @@ Votre certificat SSL Sectigo DV est désormais installé et actif. Vous pouvez d
 
 [Erreurs courantes liées à la sécurisation de votre site web avec le SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
  
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
- 
+ Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -37,25 +37,25 @@ Let's Encrypt est une autorité de certification gratuite, automatisée, ouverte
 > - tous les nouveaux noms de domaine/sous-domaines associés à un hébergement web.
 > - toutes les nouvelles souscriptions d'un nom de domaine avec un nouvel hébergement web.
 >
-> L'objectif étant de vous faire gagner du temps lors de la configuration de vos services. Bien évidemment, vous pourrez toujours depuis votre [espace client OVHcloud](/links/manager), désactiver le certificat SSL Let's Encrypt si vous souhaitez installer un autre certificat SSL (Sectigo DV, Sectigo EV, SSL personnalisé).
-> Plus d'informations dans notre guide « [Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) », partie **Désactiver un certificat SSL sur un hébergement web**.
+> L'objectif étant de vous faire gagner du temps lors de la configuration de vos services. Bien évidemment, vous pourrez toujours désactiver le certificat SSL Let's Encrypt depuis votre [espace client OVHcloud](/links/manager) si vous souhaitez installer un autre certificat SSL (Sectigo DV, Sectigo EV ou certificat SSL personnalisé).
+> Retrouvez plus d'informations dans notre guide « [Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) », partie **Désactiver un certificat SSL sur un hébergement web**.
 
 ## En pratique
 
 > [!warning]
 >
-> **Avant de poursuivre**, vérifiez que **le(s) nom(s) de domaine et/ou sous-domaine(s)** concerné(s) par votre (vos) futur(s) certificat(s) SSL Let's Encrypt :
+> **Avant de poursuivre**, vérifiez que **chaque nom de domaine et/ou sous-domaine** concerné par un futur certificat SSL Let's Encrypt :
 >
-> - pointe(nt) vers l'adresse IP de votre hébergement web. 
-> - est (sont) déclaré(s) en multisite sur votre hébergement web.
-> - ne dispose(nt) pas déjà d'un certificat SSL actif.
+> - pointe vers l'adresse IP de votre hébergement web. 
+> - est déclaré en multisite sur votre hébergement web.
+> - ne dispose pas déjà d'un certificat SSL actif.
 >
-> Si besoin et pour vous en assurer, consultez nos guides :
+> Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 >
 > - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-> - [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+> - [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-> - [Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), partie **Désactiver un certificat SSL sur un hébergement web**.
+> - [Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), partie **Désactiver un certificat SSL sur un hébergement web**.
 
 ### Activer le certificat SSL Let's Encrypt
 
@@ -82,7 +82,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 4**
 >>
->> Lorsque le contenu de l'onglet apparaît, sélectionnez le nom de domaine ou sous-domaine pour lequel vous souhaitez activer le certificat SSL gratuit Let's Encrypt (DV), sous la mention `Activer le certificat SSL`.
+>> Lorsque le contenu de l'onglet apparaît, sélectionnez le nom de domaine ou le sous-domaine pour lequel vous souhaitez activer le certificat SSL gratuit Let's Encrypt (DV), sous la mention `Activer le certificat SSL`.
 >>
 >> ![SSL Let's Encrypt](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/enable-ssl-lets-encrypt.png){.thumbnail}
 >>
@@ -115,7 +115,7 @@ Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dess
 >>
 > **Étape 4**
 >>
->> Lorsque le contenu de l'onglet apparaît, vérifiez que le(s) nom(s) de domaine/sous-domaine(s) concerné(s) est (sont) présent(s) dans le tableau avec le type de certificat SSL `Let's Encrypt`.
+>> Lorsque le contenu de l'onglet apparaît, vérifiez que chaque nom de domaine et/ou sous-domaine concerné figure dans le tableau avec le type de certificat SSL `Let's Encrypt`.
 >>
 >> ![Tableau de gestion des certificats SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab.png){.thumbnail}
 
@@ -129,8 +129,8 @@ Votre certificat SSL gratuit Let's Encrypt (DV) est désormais installé et acti
 
 [Erreurs courantes liées à la sécurisation de votre site web avec le SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
  
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
- 
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).
