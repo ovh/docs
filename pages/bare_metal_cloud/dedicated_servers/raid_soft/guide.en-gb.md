@@ -1,7 +1,7 @@
 ---
 title: How to configure and rebuild software RAID
-excerpt: Find out how to verify the state of the software RAID of your server and rebuild it after a disk replacement
-updated: 2025-08-xx
+excerpt: Find out how to verify the state of your software RAID and rebuild it after a disk replacement
+updated: 2023-08-21
 ---
 
 ## Objective
@@ -14,93 +14,72 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) with a software RAID configuration
+- A [dedicated server](/links/bare-metal/bare-metal){.external} with a software RAID configuration
 - Administrative (sudo) access to the server via SSH
-- Understanding of RAID, partitions and GRUB
 
 ## Instructions
 
-When you purchase a new server, you might feel the need to perform a series of tests and actions. One of those actions could be simulating a disk failure in order to understand the process of rebuilding the raid and prepare yourself in case this happens.
-
-#### Basic Information
+### Removing the disk
 
 In a command line session, type the following code to determine the current RAID status:
 
 ```sh
 cat /proc/mdstat
+
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md3 : active raid1 nvme1n1p3[1] nvme0n1p3[0]
-      497875968 blocks super 1.2 [2/2] [UU]
-      bitmap: 2/4 pages [8KB], 65536KB chunk
+md2 : active raid1 sda2[1] sdb2[0]
+      931954688 blocks super 1.2 [2/2] [UU]
+      bitmap: 2/7 pages [8KB], 65536KB chunk
 
-md2 : active raid1 nvme1n1p2[1] nvme0n1p2[0]
-      1046528 blocks super 1.2 [2/2] [UU]
-
+md4 : active raid1 sda4[0] sdb4[1]
+      1020767232 blocks super 1.2 [2/2] [UU]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+      
 unused devices: <none>
 ```
 
-This command shows us that we have two software RAID devices currently set up, with **md3** being the largest one. This array consists of two partitions, which are known as **nvme1n1p3** and **nvme0n1p3**. 
-
-The [UU] means that all the disks are working normally. A `_` would indicate a failed disk.
-
-If you have a server with SATA disks, you would get the following results:
-
-```sh
-cat /proc/mdstat
-Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md3 : active raid1 sda3[0] sdb3[1]
-      3904786432 blocks super 1.2 [2/2] [UU]
-      bitmap: 2/30 pages [8KB], 65536KB chunk
-
-md2 : active raid1 sda2[0] sdb2[1]
-      1046528 blocks super 1.2 [2/2] [UU]
-
-unused devices: <none>
-```
+This command shows us that we have two RAID arrays currently set up, with md4 being the largest partition. The partition consists of two disks, which are known as sda4 and sdb4. The [UU] means that all the disks are working normally. A `_` would indicate a failed disk.
 
 Although this command returns our RAID volumes, it doesn't tell us the size of the partitions themselves. We can find this information with the following command:
 
 ```sh
-sudo fdisk -l
+fdisk -l
 
-Disk /dev/nvme0n1: 476.94 GiB, 512110190592 bytes, 1000215216 sectors
-Disk model: WDC CL SN720 SDAQNTW-512G-2000
+Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
+Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: gpt
-Disk identifier: 18EFC16E-F711-4858-8298-9FAA9218E309
+Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 
-Device              Start        End   Sectors   Size Type
-/dev/nvme0n1p1       2048    1048575   1046528   511M EFI System
-/dev/nvme0n1p2    1048576    3145727   2097152     1G Linux RAID
-/dev/nvme0n1p3    3145728  999161855 996016128 474.9G Linux RAID
-/dev/nvme0n1p4  999161856 1000210431   1048576   512M Linux filesystem
-/dev/nvme0n1p5 1000211120 1000215182      4063     2M Linux filesystem
+Device          Start        End    Sectors   Size Type
+/dev/sdb1        2048       4095       2048     1M BIOS boot
+/dev/sdb2        4096 1864177663 1864173568 888.9G Linux RAID
+/dev/sdb3  1864177664 1865226239    1048576   512M Linux filesystem
+/dev/sdb4  1865226240 3907024895 2041798656 973.6G Linux RAID
 
-
-Disk /dev/nvme1n1: 476.94 GiB, 512110190592 bytes, 1000215216 sectors
-Disk model: WDC CL SN720 SDAQNTW-512G-2000
+Disk /dev/sda: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
+Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: gpt
-Disk identifier: A99678B9-49B0-44E1-B411-52FA2879B617
+Disk identifier: 2E1DCCBA-8808-4D2B-BA33-9FEC3B96ADA8
 
-Device             Start        End   Sectors   Size Type
-/dev/nvme1n1p1      2048    1048575   1046528   511M EFI System
-/dev/nvme1n1p2   1048576    3145727   2097152     1G Linux RAID
-/dev/nvme1n1p3   3145728  999161855 996016128 474.9G Linux RAID
-/dev/nvme1n1p4 999161856 1000210431   1048576   512M Linux filesystem
+Device          Start        End    Sectors   Size Type
+/dev/sda1        2048       4095       2048     1M BIOS boot
+/dev/sda2        4096 1864177663 1864173568 888.9G Linux RAID
+/dev/sda3  1864177664 1865226239    1048576   512M Linux filesystem
+/dev/sda4  1865226240 3907024895 2041798656 973.6G Linux RAID
+/dev/sda5  3907025072 3907029134       4063     2M Linux filesystem
 
-
-Disk /dev/md2: 1022 MiB, 1071644672 bytes, 2093056 sectors
+Disk /dev/md4: 973.5 GiB, 1045265645568 bytes, 2041534464 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 
-
-Disk /dev/md3: 474.81 GiB, 509824991232 bytes, 995751936 sectors
+Disk /dev/md2: 888.8 GiB, 954321600512 bytes, 1863909376 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -108,38 +87,65 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 The `fdisk -l` command also allows you to identify your partition type. This is an important information when it comes to rebuilding your RAID in case of a disk failure.
 
-For **GPT** partitions, line 6 will display: `Disklabel type: gpt`.
+For **GPT** partitions, the command will return: `Disklabel type: gpt`.
 
-For **MBR** partitions, line 6 will display: `Disklabel type: dos`.
+```sh
+Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
+Disk model: HGST HUS724020AL
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+'Disklabel type: gpt'
+Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
+```
 
-Still going by the results of `fdisk -l`, we can see that `/dev/md2` consists of 1022 MiB and `/dev/md3` contains 474.81 GiB. If we were to run the mount command we can also find out the layout of the disk.
+For **MBR** partitions, the command will return: `Disklabel type: dos`.
+
+```sh
+Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
+Disk model: QEMU HARDDISK
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+'Disklabel type: dos'            
+Disk identifier: 0x150f6797
+```
+
+We can see that `/dev/md2` consists of 888.8GB and `/dev/md4` contains 973.5GB. If we were to run the mount command we can also find out the layout of the disk.
 
 ```sh
 mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
-udev on /dev type devtmpfs (rw,nosuid,relatime,size=16348308k,nr_inodes=4087077,mode=755)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=16315920k,nr_inodes=4078980,mode=755)
 devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
-tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=3275192k,mode=755)
-/dev/md3 on / type ext4 (rw,relatime)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=3266556k,mode=755)
+/dev/md2 on / type ext4 (rw,relatime)
 securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
 tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
 tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
-cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
 pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
-efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
-none on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
-systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=30,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=10895)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
 hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
-mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
-debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
-tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
-fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
-configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
-/dev/md2 on /boot type ext4 (rw,relatime)
-/dev/nvme1n1p1 on /boot/efi type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro)
-tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3275188k,nr_inodes=818797,mode=700,uid=1000,gid=1000)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=45,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=10340)
+/dev/md4 on /home type ext3 (rw,relatime)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3266552k,mode=700,uid=1000,gid=1000)
 ```
 
 Alternatively, the `lsblk` command offers a different view of the partitions:
@@ -147,170 +153,122 @@ Alternatively, the `lsblk` command offers a different view of the partitions:
 ```sh
 lsblk
 
-NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
-nvme0n1     259:0    0 476.9G  0 disk
-├─nvme0n1p1 259:6    0   511M  0 part
-├─nvme0n1p2 259:7    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1 /boot
-├─nvme0n1p3 259:8    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1 /
-├─nvme0n1p4 259:9    0   512M  0 part  [SWAP]
-└─nvme0n1p5 259:10   0     2M  0 part
-nvme1n1     259:1    0 476.9G  0 disk
-├─nvme1n1p1 259:2    0   511M  0 part  /boot/efi
-├─nvme1n1p2 259:3    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1 /boot
-├─nvme1n1p3 259:4    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1 /
-└─nvme1n1p4 259:5    0   512M  0 part  [SWAP]
+NAME    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+sda       8:0    0   1.8T  0 disk
+├─sda1    8:1    0     1M  0 part
+├─sda2    8:2    0 888.9G  0 part
+│ └─md2   9:2    0 888.8G  0 raid1 /
+├─sda3    8:3    0   512M  0 part  [SWAP]
+├─sda4    8:4    0 973.6G  0 part
+│ └─md4   9:4    0 973.5G  0 raid1 /home
+└─sda5    8:5    0     2M  0 part
+sdb       8:16   0   1.8T  0 disk
+├─sdb1    8:17   0     1M  0 part
+├─sdb2    8:18   0 888.9G  0 part
+│ └─md2   9:2    0 888.8G  0 raid1 /
+├─sdb3    8:19   0   512M  0 part  [SWAP]
+└─sdb4    8:20   0 973.6G  0 part
+  └─md4   9:4    0 973.5G  0 raid1 /home
 ```
 
-We take note of the devices, partitions and their mount points.
+As the disks are currently mounted by default, to remove a disk from the RAID, we first need to unmount the disk, then simulate a failure, and finally remove it. We will remove `/dev/sda4` from the RAID with the following command:
 
-From the above commands and results, we have:
+```sh
+umount /dev/md4
+```
 
-- Two RAID arrays: `/dev/md2` and `/dev/md3`.
-- Partitions part of the RAID: `/boot` and `/`.
-- Partitions not part of the RAID: `/boot/efi` and [SWAP].
-
-> [!primary]
-> Most modern motherboards use UEFI mode (EFI). When a server is intalled, two ESPs partitions (labelled EFI_SYSPART by OVHcloud) are created on the disks used for RAID, however, only one partition is automatically mounted in `/boot/efi` by the system after install. It is important to understand the role of this partition and how to manage it.
+> [!warning]
+> Please note that if you are connected as the user `root`, you may get the following message when you try to unmount the partition (in our case, where our md4 partition is mounted in /home):
 >
-> For more information on UEFI, consult the following [guide](https://uefi.org/about){.external}
+> <pre class="highlight language-console"><code class="language-console">umount: /home: target is busy</code></pre>
+>
+> In this case, you must log out as the user root and connect as a local user (in our case `debian`), and use the following command:
+>
+> <pre class="highlight language-console"><code class="language-console">debian@ns000000:/$ sudo umount /dev/md4</code></pre>
+>
+> If you do not have a local user, you need to [create one](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-To check whether a server runs on BIOS mode or UEFI mode, run the following command:
+This will provide us with the following output:
 
 ```sh
-[user@server_ip ~]# [ -d /sys/firmware/efi ] && echo UEFI || echo BIOS
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=16315920k,nr_inodes=4078980,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=3266556k,mode=755)
+/dev/md2 on / type ext4 (rw,relatime)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=45,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=10340)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3266552k,mode=700,uid=1000,gid=1000)
 ```
 
-### Simulating a disk failure
-
-Now that we have all the necessary information, we can simulate a disk failure and proceed with the tests. In this example, we will fail the disk `nvme0n1`.
-
-The preferred to do this is via the OVHcloud rescue environment.
-
-First reboot in rescue menu and log in with the credentials provided.
-
-To remove a disk from the RAID, the first step is to mark it as **Failed** and remove the partitions from their respective RAID arrays.
+As we can see the, entry of `/dev/md4` is no longer mounted. However, the RAID is still active, so we need to simulate a failure to remove the disk. We can do this with the following command:
 
 ```sh
-root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
-Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
-md3 : active raid1 nvme0n1p3[0] nvme1n1p3[1]
-      497875968 blocks super 1.2 [2/2] [UU]
-      bitmap: 0/4 pages [0KB], 65536KB chunk
+sudo mdadm --fail /dev/md4 /dev/sda4
+```
 
-md2 : active raid1 nvme0n1p2[2] nvme1n1p2[1]
-      1046528 blocks super 1.2 [2/2] [UU]
+We have now simulated a failure of the RAID. The next step is to remove the partition from the RAID array with the following command:
 
+```sh
+sudo mdadm --remove /dev/md4 /dev/sda4
+```
+
+You can verify that the partition has been removed with the following command:
+
+```sh
+cat /proc/mdstat 
+
+Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2 : active raid1 sda2[1] sdb2[0]
+      931954688 blocks super 1.2 [2/2] [UU]
+      bitmap: 4/7 pages [16KB], 65536KB chunk
+
+md4 : active raid1 sdb4[1]
+      1020767232 blocks super 1.2 [2/1] [_U]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+      
 unused devices: <none>
 ```
 
-From the above output, nvme0n1 consists of two partitions in raid which are **nvme0n1p2** and **nvme0n1p3**. 
-
-#### Removing the failed disk
-
-First we mark the partitions **nvme0n1p2** and **nvme0n1p3** as failed. 
+The following command will verify that the partition has been removed:
 
 ```sh
-sudo mdadm --manage /dev/md2 --fail /dev/nvme0n1p2
+mdadm --detail /dev/md4
 
-# mdadm: set /dev/nvme0n1p2 faulty in /dev/md2
-```
-
-```sh
-sudo mdadm --manage /dev/md3 --fail /dev/nvme0n1p3
-
-# mdadm: set /dev/nvme0n1p3 faulty in /dev/md3
-```
-
-We have now simulated a failure of the RAID, when we run the `cat /proc/mdstat` command, we have the following output
-
-```sh
-root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
-Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
-md3 : active raid1 nvme0n1p3[0](F) nvme1n1p3[1]
-      497875968 blocks super 1.2 [2/1] [_U]
-      bitmap: 0/4 pages [0KB], 65536KB chunk
-
-md2 : active raid1 nvme0n1p2[2](F) nvme1n1p2[1]
-      1046528 blocks super 1.2 [2/1] [_U]
-
-unused devices: <none>
-```
-
-As we can see above, the [F] next to the partitions indicates that the disk has failed or is faulty. Next, we remove these partitions from the RAID arrays to completely remove the disk from RAID.
-
-```sh
-sudo mdadm --manage /dev/md2 --remove /dev/nvme0n1p2
-
-# mdadm: hot removed /dev/nvme0n1p2 from /dev/md2
-```
-
-```sh
-sudo mdadm --manage /dev/md3 --remove /dev/nvme0n1p3
-
-# mdadm: hot removed /dev/nvme0n1p3 from /dev/md3
-```
-
-
-If we run the following command:
-
-```sh
-parted /dev/nvme0n1
-GNU Parted 3.5
-Using /dev/nvme0n1
-Welcome to GNU Parted! Type 'help' to view a list of commands.
-(parted) p
-Error: /dev/nvme0n1: unrecognised disk label
-Model: WDC CL SN720 SDAQNTW-512G-2000 (nvme)
-Disk /dev/nvme0n1: 512GB
-Sector size (logical/physical): 512B/512B
-Partition Table: unknown
-Disk Flags:
-```
-
-We see that our disk has been successfully wiped.
-
-Our RAID status should now look like this:
-
-```sh
-root@rescue12-customer-ca (ns5009452.ip-51-222-254.net) ~ # cat /proc/mdstat
-Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
-md3 : active raid1 nvme1n1p3[1]
-      497875968 blocks super 1.2 [2/1] [_U]
-      bitmap: 0/4 pages [0KB], 65536KB chunk
-
-md2 : active raid1 nvme1n1p2[1]
-      1046528 blocks super 1.2 [2/1] [_U]
-
-unused devices: <none>n
-```
-
-From the results above, we can see that only two partitions now appear in the RAID arrays. We have successfully failed the disk nvme0n1 and we can now proceed with the replacement. 
-
-For more information on how to prepare and request a disk replacement, consult this [guide](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
-
-If you run the following command, you can have more details on the raid array.
-
-
-```sh
-mdadm --detail /dev/md3
-
-/dev/md3:
+/dev/md4:
            Version : 1.2
-     Creation Time : Fri Aug  1 14:51:13 2025
+     Creation Time : Tue Jan 24 15:35:02 2023
         Raid Level : raid1
-        Array Size : 497875968 (474.81 GiB 509.82 GB)
-     Used Dev Size : 497875968 (474.81 GiB 509.82 GB)
+        Array Size : 1020767232 (973.48 GiB 1045.27 GB)
+     Used Dev Size : 1020767232 (973.48 GiB 1045.27 GB)
       Raid Devices : 2
      Total Devices : 1
        Persistence : Superblock is persistent
 
      Intent Bitmap : Internal
 
-       Update Time : Fri Aug  1 15:56:17 2025
+       Update Time : Tue Jan 24 16:28:03 2023
              State : clean, degraded
     Active Devices : 1
    Working Devices : 1
@@ -319,483 +277,57 @@ mdadm --detail /dev/md3
 
 Consistency Policy : bitmap
 
-              Name : md3
-              UUID : b383c3d5:7fb1bb5e:6b7c4d96:6ea817ff
-            Events : 215
+              Name : md4
+              UUID : 7b5c1d80:0a7ab4c2:e769b5e5:9c6eaa0f
+            Events : 21
 
     Number   Major   Minor   RaidDevice State
        -       0        0        0      removed
-       1     259        4        1      active sync   /dev/nvme1n1p3
+       1       8       20        1      active sync   /dev/sdb4
 ```
 
 ### Rebuilding the RAID
 
-> [!primary]
-> This process might be different depending on the operating system you have installed on your server. We recommend that you consult the official documentation of your operating system to have access to the proper commands.
->
-
-In this situation, we will explore two cases
-
-- Dedicated servers with UEFI
-- Dedicated servers with BIOS
-
-
-> [!warning]
->
-> With most cases, after a disk replacement, the server is able to reboot in normal mode (on the healthy disk) and these steps can be done in normal mode. However, if the server is not able to reboot after a disk replacement, it will be rebooted in rescue mode to proceed with the raid rebuild. These steps apply as well.
->
-
-#### Dedicated server with UEFI
-
-In this section, we will focus on the steps to follow after the replacement of the main disk with the following scenario:
-
-- The EFI partition was mounted on this disk
-- The content of the EFI partition have not been updated/they have been updated and both partitions have been synchronized.
-
-If  your secondary disk was replaced, please follow the steps for [Dedicated servers with BIOS]() and recreate an EFI partition in the secondary disk as described below.
-
-/// details | **Understanding the EFI partition**
-
-An EFI partition, is a partition which can contain the boot loaders, boot managers, or kernel images of an installed operating system. It also contains system utility programs designed to be run before the operating system boots, as well as data files such as error logs.
-
-By default, this partition is duplicated when one of our installation template is installed in RAID, but this partition is not included in the RAID.
-
-During installation, this partition is mounted on `/boot/efi` and the disk on which it is mounted is selected randomly by the operating system. Thus, your system has two EFI partitions, but only one is mounted in the RAID.
-
-Example:
-
-```sh
-lsblk
-
-NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
-nvme0n1     259:0    0 476.9G  0 disk
-├─nvme0n1p1 259:6    0   511M  0 part
-├─nvme0n1p2 259:7    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1 /boot
-├─nvme0n1p3 259:8    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1 /
-├─nvme0n1p4 259:9    0   512M  0 part  [SWAP]
-└─nvme0n1p5 259:10   0     2M  0 part
-nvme1n1     259:1    0 476.9G  0 disk
-├─nvme1n1p1 259:2    0   511M  0 part  /boot/efi
-├─nvme1n1p2 259:3    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1 /boot
-├─nvme1n1p3 259:4    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1 /
-└─nvme1n1p4 259:5    0   512M  0 part  [SWAP]
-```
-
-From the example above, we see that we have two identical partitions (nvme0n1p1 and nvme1n1p1) but only **nvme1n1p1** is mounted on `/boot/efi`.
-
-We can also use the following command to confirm that two EFI partitions were actually created after install:
-
-```sh
-lsblk -f
-
-NAME        FSTYPE FSVER LABEL     UUID                   FSAVAIL     FSUSE%  MOUNTPOINT
-nvme0n1
-│
-├─nvme0n1p1 vfat  FAT16 EFI_SYSPART 461C-DB56
-├─nvme0n1p2
-│    linux_ 1.2         md2   83719c5c-2a27-2a56-5268-7d49d8a1d84f
-│ └─md2
-│    ext4   1.0         boot  4de80ae0-dd90-4256-9135-1735e7be4b4d  851.8M     7% /boot
-├─nvme0n1p3
-│    linux_ 1.2         md3   b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
-│ └─md3
-│    ext4   1.0         root  9bf386b6-9523-46bf-b8e5-4b8cc7c5786f  441.3G     0% /
-├─nvme0n1p4
-│    swap   1     swap-nvme0n1p4 356439fe-0539-45ce-9eff-40b616689b0c                [SWAP]
-└─nvme0n1p5
-     iso966 Jolie config-2
-                        2025-08-01-14-51-51-00
-nvme1n1
-│
-├─nvme1n1p1 vfat   FAT16 EFI_SYSPART 4629-D183                504.9M     1% /boot/efi
-├─nvme1n1p2
-│    linux_ 1.2   md2   83719c5c-2a27-2a56-5268-7d49d8a1d84f
-│ └─md2
-│    ext4   1.0   boot  4de80ae0-dd90-4256-9135-1735e7be4b4d  851.8M     7% /boot
-├─nvme1n1p3
-│    linux_ 1.2   md3   b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
-│ └─md3
-│    ext4   1.0   root  9bf386b6-9523-46bf-b8e5-4b8cc7c5786f  441.3G     0% /
-└─nvme1n1p4
-     swap   1     swap-nvme1n1p4
-                        9bf292e8-0145-4d2f-b891-4cef93c0d209                [SWAP]
-```
-
-From the results above, we can see two partitions (**nvme0n1p1** and **nvme1n1p1**), with identical size (504.9M). Both partitions have the LABEL: `EFI_SYSPART` but only one is mounted on `/boot/efi`.
-
-In general, this is a partition is not often updated, except when there are relevant updates. In this case, we recommend running an automatic or manual script to copy the primary EFI partition to the second one when needed. Additionally, a boot entry for the secondary ESP can then be added manually using [efibootmgr](https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface#efibootmgr){.external}
-
-The script below can be used:
-
-```sh
-set -euo pipefail
-
-MAIN_PARTITION="$(findmnt -n -o SOURCE /boot/efi)"
-MOUNTPOINT="/var/lib/grub/esp"
-
-mkdir -p "${MOUNTPOINT}"
-
-while read -r partition; do
-    if [[ "${partition}" == "${MAIN_PARTITION}" ]]; then
-        continue
-    fi
-    echo "Working on ${partition}"
-    mount "${partition}" "${MOUNTPOINT}"
-    rsync -ax "/boot/efi/" "${MOUNTPOINT}/"
-    umount "${MOUNTPOINT}"
-done < <(blkid -o device -t LABEL=EFI_SYSPART)
-```
-
-///
-
-**Disk replacement**
-
-Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
+Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command:
 
 **For GPT partitions**
 
 ```sh
-sudo sgdisk -R /dev/sda /dev/sdb 
+sgdisk -R /dev/sda /dev/sdb 
 ```
 
 The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`
 
-In our example:
-
-```sh
-sudo sgdisk -R /dev/nvme0n1 /dev/nvme1n1
-```
-
 Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
 
 ```sh
-sudo sgdisk -G /dev/nvme0n1
+sgdisk -G /dev/sda
 ```
-
-If you receive a message like this:
-
-```console
-Warning: The kernel is still using the old partition table.
-The new table will be used at the next reboot or after you
-run partprobe(8) or kpartx(8)
-The operation has completed successfully.
-```
-
-You can simply run the `partprobe` command or reboot the server when the raid rebuilt is done.
 
 **For MBR partitions**
 
-```sh
-sudo sfdisk -d /dev/sdb | sfdisk /dev/sda 
-```
-
-The command should be in this format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
-
-We can now rebuild the RAID array. The following code snippet shows how we can add the new partitions (nvme0n1p2 and nvme0n1p3) back in the RAID array.
-
+Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command:
 
 ```sh
-sudo mdadm --add /dev/md2 /dev/nvme0n1p2
-
-# mdadm: added /dev/nvme0n1p2
-
-sudo mdadm --add /dev/md3 /dev/nvme0n1p3
-
-# mdadm: re-added /dev/nvme0n1p3
-
-cat /proc/mdstat
-Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
-md3 : active raid1 nvme0n1p3[2] nvme1n1p3[1]
-      497875968 blocks super 1.2 [2/1] [_U]
-      [>....................]  recovery =  0.1% (801920/497875968) finish=41.3min speed=200480K/sec
-      bitmap: 0/4 pages [0KB], 65536KB chunk
-
-md2 : active raid1 nvme0n1p2[2] nvme1n1p2[1]
-      1046528 blocks super 1.2 [2/2] [UU]
-```
-
-Once the raid rebuild is complete, run the following command to make sure that the partitions were properly added to the raid:
-
-```sh
-lsblk -fA
-NAME        FSTYPE            FSVER LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
-nvme1n1
-├─nvme1n1p1 vfat              FAT16 EFI_SYSPART    4629-D183
-├─nvme1n1p2 linux_raid_member 1.2   md2            83719c5c-2a27-2a56-5268-7d49d8a1d84f
-│ └─md2     ext4              1.0   boot           4de80ae0-dd90-4256-9135-1735e7be4b4d
-├─nvme1n1p3 linux_raid_member 1.2   md3            b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
-│ └─md3     ext4              1.0   root           9bf386b6-9523-46bf-b8e5-4b8cc7c5786f
-└─nvme1n1p4 swap              1     swap-nvme1n1p4 9bf292e8-0145-4d2f-b891-4cef93c0d209
-nvme0n1
-├─nvme0n1p1
-├─nvme0n1p2 linux_raid_member 1.2   md2            83719c5c-2a27-2a56-5268-7d49d8a1d84f
-│ └─md2     ext4              1.0   boot           4de80ae0-dd90-4256-9135-1735e7be4b4d
-├─nvme0n1p3 linux_raid_member 1.2   md3            b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
-│ └─md3     ext4              1.0   root           9bf386b6-9523-46bf-b8e5-4b8cc7c5786f
-└─nvme0n1p4
-```
-
-From the above results, we can see that the partitions of our newly added disk have been properly added to the raid, however, the EFI partition was not duplicated, which is normal since it is not included in the raid. We also see that the [SWAP] partition **nvme0n1p4** does not have the label anymore. We also need reattribute its properties.
-
-> [!warning]
-> The examples above are merely illustrating the necessary steps based on a typical server configuration. The information in the output table depends on your server's hardware and its partition scheme. When in doubt, consult the documentation of your operating system.
-> 
-> If you require professional assistance with server administration, consider the details in the Go further section of this guide.
->
-
-The next step is to create an EFI partition (**nvme0n1p1**) on the newly added disk and format it. Please keep in mind that the content of this partition on the remaining drive (in our exmaple: nvme1n1) will be replicated to the new disk in order to enable our server to boot back into normal mode. This is possible because we kept the partition in sync while the server was running normally before the disk failure.
-
-It is possible that this process does not work if there was a kernel or grub update and both partitions were not synchronized. In this case, please consult the following guide [].
-
-We create a vfat partition
-
-```sh
-mkfs.vfat /dev/nvme0n1p1
-```
-
-Next, we lable the partition as `EFI_SYSPART` (this naming is proper to OVHcloud)
-
-```sh
-fatlabel /dev/nvme0n1p1 EFI_SYSPART
-```
-
-Now we have to duplicate the partition from nvme1n1p1 (healthy partition), to nvme0n1p1 (new partition). To do so, we start by creating two folders named `old` and `new`. 
-
-```sh
-mkdir old new
-```
-
-Next, we mount mount **nvme1n1p1** in the `old` folder and **nvme0n1p1** in the `new` folder:
-
-```sh
-mount /dev/nvme1n1p1 old
-mount /dev/nvme0n1p1 new
-```
-
-Next, we copy the files from `old` to `new`. Depending on your operating system, you will have a similar output. Here we are using debian:
-
-```sh
-rsync -axv old/ new/
-sending incremental file list
-EFI/
-EFI/debian/
-EFI/debian/BOOTX64.CSV
-EFI/debian/fbx64.efi
-EFI/debian/grub.cfg
-EFI/debian/grubx64.efi
-EFI/debian/mmx64.efi
-EFI/debian/shimx64.efi
-```
-
-Once this is done, we umount the **nvme0n1p1** partition.
-
-```sh
-umount nvme0n1p1
-```
-
-Next, we mount the partition containing our files on `/mnt`. In our example, that partition is `md3`.
-
-```sh
-mount /dev/md3 /mnt
-```
-
-Next, we mount the following directories:
-
-```sh
-mount --types proc /proc /mnt/proc
-mount --rbind /sys /mnt/sys
-mount --make-rslave /mnt/sys
-mount --rbind /dev /mnt/dev
-mount --make-rslave /mnt/dev
-mount --bind /run /mnt/run
-mount --make-slave /mnt/run
-```
-
-Next, we use the `chroot` command to access the mountpoint and make sure the new EFI partition has been properly created and the system recongnises both EFI partitions:
-
-```sh
-chroot /mnt
-```
-
-```sh
-blkid -t LABEL=EFI_SYSPART
-/dev/nvme1n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="4629-D183" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="889f241b-49c3-4031-b5c9-60df0746f98f"
-/dev/nvme0n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="521F-300B" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="02bf2b2d-7ada-4461-ba50-07683519f65d"
-```
-
-Still in the `chroot` environment, we create the `/boot/efi` folder in order to mount the EFI partition **nvme0n1p1** in it:
-
-```sh
-cd /mnt
-mkdir /boot/efi
-mount /dev/nvme0n1p1 /boot/efi
-```
-
-Next, we install the grub bootloader to make sure the server can reboot in normal mode on the new disk (you won't have to do this if the disk replaced is the secondary disk. Simply duplicate the EFI partition and proceed to the RAID rebuild, then enable the [SWAP] partition (if applicable)):
-
-```sh
-grub-install --efi-directory=/boot/efi /dev/nvme0n1p1
-```
-
-Next, we exit the `chroot` environment, then we recreate our [SWAP] partition **nvme0n1p4** and add the label `swap-nvmenxxx`:
-
-```sh
-mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
-
-Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
-LABEL=swap-nvme0n1p4, UUID=256215f9-7694-4a88-aa47-335558fc6cd8
-```
-
-We verify that the lable has been properly applied:
-
-```sh
-NAME        FSTYPE            FSVER LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
-nvme1n1
-├─nvme1n1p1 vfat              FAT16 EFI_SYSPART    4629-D183
-├─nvme1n1p2 linux_raid_member 1.2   md2            83719c5c-2a27-2a56-5268-7d49d8a1d84f
-│ └─md2     ext4              1.0   boot           4de80ae0-dd90-4256-9135-1735e7be4b4d
-├─nvme1n1p3 linux_raid_member 1.2   md3            b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
-│ └─md3     ext4              1.0   root           9bf386b6-9523-46bf-b8e5-4b8cc7c5786f  441.1G     0% /mnt
-└─nvme1n1p4 swap              1     swap-nvme1n1p4 9bf292e8-0145-4d2f-b891-4cef93c0d209
-nvme0n1
-├─nvme0n1p1 vfat              FAT16 EFI_SYSPART    521F-300B
-├─nvme0n1p2 linux_raid_member 1.2   md2            83719c5c-2a27-2a56-5268-7d49d8a1d84f
-│ └─md2     ext4              1.0   boot           4de80ae0-dd90-4256-9135-1735e7be4b4d
-├─nvme0n1p3 linux_raid_member 1.2   md3            b383c3d5-7fb1-bb5e-6b7c-4d966ea817ff
-│ └─md3     ext4              1.0   root           9bf386b6-9523-46bf-b8e5-4b8cc7c5786f  441.1G     0% /mnt
-└─nvme0n1p4 swap              1     swap-nvme0n1p4 256215f9-7694-4a88-aa47-335558fc6cd8
-```
-
-Take note of the UUID of both swap partitions **nvme0n1p4** and **nvme1n1p4**.
-
-Next, we need to add the new UUID of the swap partition in `/etc/fstab` using the `chroot` environment:
-
-```sh
-chroot /mnt
-```
-
-```sh
-cat /etc/fstab
-
-UUID=9bf386b6-9523-46bf-b8e5-4b8cc7c5786f       /       ext4    defaults        0       1
-UUID=4de80ae0-dd90-4256-9135-1735e7be4b4d       /boot   ext4    defaults        0       0
-LABEL=EFI_SYSPART       /boot/efi       vfat    defaults        0       1
-UUID=356439fe-0539-45ce-9eff-40b616689b0c       swap    swap    defaults        0       0
-UUID=9bf292e8-0145-4d2f-b891-4cef93c0d209       swap    swap    defaults        0       0
-```
-We need to replace UUID `356439fe-0539-45ce-9eff-40b616689b0c` with `256215f9-7694-4a88-aa47-335558fc6cd8` since `9bf292e8-0145-4d2f-b891-4cef93c0d209` is the UUID of our second swap partition  **nvme1n1p4** and we are not replacing it. You can use a text editor such as `vi` or `nano` to edit the file:
-
-```sh
-nano etc/fstab
-```
-
-```sh
-cat /etc/fstab
-
-UUID=9bf386b6-9523-46bf-b8e5-4b8cc7c5786f       /       ext4    defaults        0       1
-UUID=4de80ae0-dd90-4256-9135-1735e7be4b4d       /boot   ext4    defaults        0       0
-LABEL=EFI_SYSPART       /boot/efi       vfat    defaults        0       1
-UUID=256215f9-7694-4a88-aa47-335558fc6cd8       swap    swap    defaults        0       0
-UUID=9bf292e8-0145-4d2f-b891-4cef93c0d209       swap    swap    defaults        0       0
-```
-
-Next, we make sure everything is properly mounted:
-
-```sh
-mount -av
-
-/                        : ignored
-/boot                    : successfully mounted
-/boot/efi                : successfully mounted
-swap                     : ignored
-swap                     : ignored
-```
-
-We enable the swap partition:
-
-```sh
-swapon -av
-
-swapon: /dev/nvme0n1p4: found signature [pagesize=4096, signature=swap]
-swapon: /dev/nvme0n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
-swapon /dev/nvme0n1p4
-swapon: /dev/nvme1n1p4: found signature [pagesize=4096, signature=swap]
-swapon: /dev/nvme1n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
-swapon /dev/nvme1n1p4
-```
-
-We have now succesffuly completed the RAID rebuild on the server and we can now reboot the server in normal mode:
-
-
-#### Dedicated servers with BIOS
-
-Use the appropriate commands:
-
-**For GPT partitions**
-
-```sh
-sudo sgdisk -R /dev/sda /dev/sdb 
-```
-
-The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`
-
-In our example:
-
-```sh
-sudo sgdisk -R /dev/nvme0n1 /dev/nvme1n1
-```
-
-Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
-
-```sh
-sudo sgdisk -G /dev/nvme0n1
-```
-
-If you receive a message like this:
-
-```console
-Warning: The kernel is still using the old partition table.
-The new table will be used at the next reboot or after you
-run partprobe(8) or kpartx(8)
-The operation has completed successfully.
-```
-
-You can simply run the `partprobe` command or reboot the server when the raid rebuilt is done.
-
-**For MBR partitions**
-
-```sh
-sudo sfdisk -d /dev/sdb | sfdisk /dev/sda 
+sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
 The command should be in this format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`
 
-We can now rebuild the RAID array. The following code snippet shows how we can add the new partitions (nvme0n1p2 and nvme0n1p3) back in the RAID array.
-
+We can now rebuild the RAID array. The following code snippet shows how we can rebulid the `/dev/md4` partition layout with the recently-copied sda partition table:
 
 ```sh
-sudo mdadm --add /dev/md2 /dev/nvme0n1p2
-
-# mdadm: added /dev/nvme0n1p2
-
-sudo mdadm --add /dev/md3 /dev/nvme0n1p3
-
-# mdadm: re-added /dev/nvme0n1p3
-
+mdadm --add /dev/md4 /dev/sda4
 cat /proc/mdstat
 
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md3 : active raid1 nvme0n1p3[0] nvme1n1p3[1]
-      497875968 blocks super 1.2 [2/1] [_U]
-      [============>........]  recovery = 64.8% (322969856/497875968) finish=7.2min speed=401664K/sec
-      bitmap: 4/4 pages [16KB], 65536KB chunk
+md2 : active raid1 sda2[1] sdb2[0]
+      931954688 blocks super 1.2 [2/2] [UU]
+      bitmap: 1/7 pages [4KB], 65536KB chunk
 
-md2 : active raid1 nvme0n1p2[2] nvme1n1p2[1]
-      1046528 blocks super 1.2 [2/2] [UU]
+md4 : active raid1 sda4[0] sdb4[1]
+      1020767232 blocks super 1.2 [2/2] [UU]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
 
 unused devices: <none>
 ```
@@ -803,85 +335,42 @@ unused devices: <none>
 We can verify the RAID details with the following command:
 
 ```sh
-sudo mdadm --detail /dev/md3 & sudo mdadm --detail /dev/md2
-[1] 2096
-/dev/md3:
-           Version : 1.2
-     Creation Time : Fri Aug  1 14:51:13 2025
+mdadm --detail /dev/md4
+
+/dev/md4:
+        Version : 1.2
+     Creation Time : Tue Jan 24 15:35:02 2023
         Raid Level : raid1
-        Array Size : 497875968 (474.81 GiB 509.82 GB)
-     Used Dev Size : 497875968 (474.81 GiB 509.82 GB)
+        Array Size : 1020767232 (973.48 GiB 1045.27 GB)
+     Used Dev Size : 1020767232 (973.48 GiB 1045.27 GB)
       Raid Devices : 2
      Total Devices : 2
        Persistence : Superblock is persistent
 
      Intent Bitmap : Internal
 
-       Update Time : Fri Aug  1 16:48:03 2025
+       Update Time : Tue Jan 24 17:02:55 2023
              State : clean
     Active Devices : 2
    Working Devices : 2
     Failed Devices : 0
      Spare Devices : 0
 
-Consistency Policy : bitmap
+ Rebuild Status : 21% complete
 
-              Name : md3
-              UUID : b383c3d5:7fb1bb5e:6b7c4d96:6ea817ff
-            Events : 538
-
-    Number   Major   Minor   RaidDevice State
-       0     259        8        0      active sync   /dev/nvme0n1p3
-       1     259        4        1      active sync   /dev/nvme1n1p3
-/dev/md2:
-           Version : 1.2
-     Creation Time : Fri Aug  1 14:51:13 2025
-        Raid Level : raid1
-        Array Size : 1046528 (1022.00 MiB 1071.64 MB)
-     Used Dev Size : 1046528 (1022.00 MiB 1071.64 MB)
-      Raid Devices : 2
-     Total Devices : 2
-       Persistence : Superblock is persistent
-
-       Update Time : Fri Aug  1 16:45:59 2025
-             State : clean
-    Active Devices : 2
-   Working Devices : 2
-    Failed Devices : 0
-     Spare Devices : 0
-
-Consistency Policy : resync
-
-              Name : md2
-              UUID : 83719c5c:2a272a56:52687d49:d8a1d84f
-            Events : 26
+           UUID : 7f39d062:9f16a016:a4d2adc2:26fd5302
+         Events : 0.95
 
     Number   Major   Minor   RaidDevice State
-       2     259        7        0      active sync   /dev/nvme0n1p2
-       1     259        3        1      active sync   /dev/nvme1n1p2
+       0       8        2        0      spare rebuilding   /dev/sda4
+       1       8       18        1      active sync   /dev/sdb4
 ```
 
-The RAID has now been rebuilt.
-
-Next, mount the partitions
+The RAID has now been rebuilt, but we still need to mount the partition (`/dev/md4` in this example) with the following command:
 
 ```sh
-sudo mount /dev/md2 /boot
-sudo mount /dev/md3 /
+mount /dev/md4 /home
 ```
-
-
-
-
-
-> [!primary]
-> While this process helps understand what to do when a disk fails, it is a but simplistic. For further diagnostics, you can consult this section of the guide.
->
-
-
-
-
-
 
 ## Go Further
 
