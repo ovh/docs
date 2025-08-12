@@ -104,7 +104,7 @@ Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (pr
 
 > [!warning]
 >
-> Poniższe instrukcje dotyczą utworzonej wcześniej maszyny wirtualnej z zainstalowanym systemem operacyjnym. Jeśli nie posiadasz wirtualnej maszyny, sprawdź opcje na stronie [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} firmy Proxmox.
+> Poniższe instrukcje dotyczą utworzonej wcześniej maszyny wirtualnej z zainstalowanym systemem operacyjnym. Jeśli nie posiadasz wirtualnej maszyny, sprawdź opcje na stronie [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines) firmy Proxmox.
 >
 
 Po utworzeniu wirtualnej maszyny i jej zakończeniu:
@@ -131,7 +131,7 @@ Teraz możesz uruchomić wirtualną maszynę i przejść do kolejnych etapów, w
 
 > [!warning]
 >
-> Poniższe instrukcje dotyczą utworzonej wcześniej maszyny wirtualnej z zainstalowanym systemem operacyjnym. Jeśli nie posiadasz wirtualnej maszyny, zapoznaj się z przewodnikiem [Tworzenie maszyny wirtualnej w kliencie hosta VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID--F968-4983-A230-.html){.external} na stronie VMware.
+> Poniższe instrukcje dotyczą utworzonej wcześniej maszyny wirtualnej z zainstalowanym systemem operacyjnym. Jeśli nie posiadasz wirtualnej maszyny, zapoznaj się z przewodnikiem [Tworzenie maszyny wirtualnej w kliencie hosta VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID--F968-4983-A230-.html) na stronie VMware.
 >
 
 Po utworzeniu wirtualnej maszyny i po jej wyłączeniu kliknij prawym przyciskiem myszy i kliknij `Zmień parametry`{.action}.
@@ -321,7 +321,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Jeśli otrzymasz odpowiedź, oznacza to, że adres Additional IP został poprawnie skonfigurowany. Jeśli tak się nie stanie, zrestartuj maszynę wirtualną i ponownie wprowadź polecenie ping.
 
-Aby uzyskać więcej informacji na temat `nmcli`, zobacz [ta strona (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli){.external}.
+Aby uzyskać więcej informacji na temat `nmcli`, zobacz [ta strona (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli).
 
 #### FreeBSD
 

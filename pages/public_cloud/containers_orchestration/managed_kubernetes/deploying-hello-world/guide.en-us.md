@@ -13,7 +13,7 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 ## Requirements
 
 - You should have already created a cluster on the OVHcloud Managed Kubernetes service.
-- You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} for this tool on the Kubernetes official site.
+- You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/) for this tool on the Kubernetes official site.
 
 > [!warning]
 >

@@ -64,7 +64,7 @@ A seguir, clique em `Connecter`{.action}. Uma vez ligado, terá acesso à arbore
 
 ## Saiba mais
 
-[Documentação de Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
+[Documentação de Cyberduck](https://trac.cyberduck.io/wiki/help/en)
 
 [Primeiros passos com a API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

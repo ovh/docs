@@ -46,7 +46,7 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 >
 > Wszystkie poniższe działania opisane w tym tutorialu będą przeprowadzane z **phpMyAdmin**.
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} jest dostępny we wszystkich współdzielonych bazach danych OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/) jest dostępny we wszystkich współdzielonych bazach danych OVHcloud.
 > Ta aplikacja do zarządzania bazami danych ułatwia wykonywanie czynności ręcznych, które możesz wykonać za pomocą bazy danych.
 >
 > Jeśli Twoja baza danych znajduje się w rozwiązaniu [Web Cloud Databases](/links/web/databases), zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Logowanie do bazy danych](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)", następnie przejdź bezpośrednio do [etap 1.2](#step1.2) niniejszego przewodnika.
@@ -126,10 +126,10 @@ W pozostałych przypadkach związanych z CMS-ami zalecamy kontakt z producentem 
 
 Poniżej znajdziesz linki do oficjalnych stron WWW proponowanych przez OVHcloud "**Za jednym kliknięciem**":
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://www.joomla.org){.external}
-- [PrestaShop](https://www.prestashop.com/){.external}
-- [Drupal](https://drupal.org){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://www.joomla.org)
+- [PrestaShop](https://www.prestashop.com/)
+- [Drupal](https://drupal.org)
 
 > [!primary]
 >

@@ -20,7 +20,7 @@ Os níveis de encriptação SSL são iguais entre os três tipos de certificado.
 
 A principal diferença reside no nível de verificações que será realizado pela Autoridade de Certificação (AC) que emite o certificado SSL e atesta a sua autenticidade.
 
-Para os alojamentos partilhados OVHcloud, a autoridade de certificação que emite os certificados SSL DV é [Sectigo](https://sectigostore.com){.external}.
+Para os alojamentos partilhados OVHcloud, a autoridade de certificação que emite os certificados SSL DV é [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >

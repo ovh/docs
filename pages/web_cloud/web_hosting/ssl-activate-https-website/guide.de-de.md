@@ -12,7 +12,7 @@ Mit Ihrem OVHcloud Webhosting verfügen Sie über ein [SSL-Zertifikat](/links/we
 
 ## Voraussetzungen
 
-- Auf Ihrem [OVHcloud Webhosting](/links/web/hosting){.external} ist ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl){.external} installiert.
+- Auf Ihrem [OVHcloud Webhosting](/links/web/hosting) ist ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl) installiert.
 - Sie verfügen über mindestens eine Website, die auf Ihrem OVHcloud Webhosting installiert und verfügbar ist.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
 

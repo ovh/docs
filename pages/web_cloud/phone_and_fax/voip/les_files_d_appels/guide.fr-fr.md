@@ -14,8 +14,8 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
  
 ## Prérequis
  
-- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external} dans votre compte OVHcloud.
-- Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros) dans votre compte OVHcloud.
+- Être connecté à l’[espace client OVHcloud](/links/manager).
 
 > [!primary]
 >
@@ -162,7 +162,7 @@ Dans le menu « Configuration », cliquez sur `Gestion des sons et de l'attente`
 > [!warning]
 >
 > La création des annonces sonores est de votre responsabilité. En cas de difficultés, nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) car OVHcloud ne sera pas en mesure de créer ces fichiers pour vous.
-> <br>Sachez qu'il est possible de créer des fichiers-sons via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/){.external}.
+> <br>Sachez qu'il est possible de créer des fichiers-sons via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/).
 > Nous vous rappelons que l'utilisation d'une musique non libre d'utilisation commerciale nécessite de s'acquitter de droits de diffusion auprès des sociétés d'auteurs/compositeurs/producteurs.
 
 Vous avez la possibilité d'ajouter deux sons :

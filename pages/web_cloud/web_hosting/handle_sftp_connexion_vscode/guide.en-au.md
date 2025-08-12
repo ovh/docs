@@ -26,7 +26,7 @@ If you have an OVHcloud web hosting plan, you can access a storage space that al
 >
 > OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
 > 
-> We offer this tutorial to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or [the publisher of the Visual Studio Code IDE](https://code.visualstudio.com/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+> We offer this tutorial to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or [the publisher of the Visual Studio Code IDE](https://code.visualstudio.com/) if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 ### Install the SFTP extension for Visual Studio Code
@@ -155,7 +155,7 @@ If prompted, enter the user password entered in the “sftp.json” file, then c
 
 > [!primary]
 >
-> As a reminder, it is important to configure the “sftp.json” file correctly. If you encounter an error before downloading your project, it is usually caused by a configuration defect in the “sftp.json” file. If you have any questions, please refer to the [Extension FAQ](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md){.external}.
+> As a reminder, it is important to configure the “sftp.json” file correctly. If you encounter an error before downloading your project, it is usually caused by a configuration defect in the “sftp.json” file. If you have any questions, please refer to the [Extension FAQ](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md).
 >
 
 ### Make changes to files
@@ -170,7 +170,7 @@ So far, we have only mentioned the commands: `SFTP: Config` and `SFTP: Download 
 
 ![hosting](/pages/assets/screens/other/web-tools/vscode/list_commands.png){.thumbnail}
 
-Find the list of commands [here](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
+Find the list of commands [here](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands).
 
 You are now able to access and edit the content of your web hosting plan via Visual Studio Code.
 

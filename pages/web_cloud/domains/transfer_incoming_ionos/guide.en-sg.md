@@ -66,7 +66,7 @@ To transfer a Ionos domain name, you will need to follow a specific procedure.
 
 ### Step 1 - Disable private registration
 
-To confirm whether private registration is enabled for your domain name, follow the steps described in the [Ionos documentation](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-private-registration-for-a-11-ionos-domain/){.external}.
+To confirm whether private registration is enabled for your domain name, follow the steps described in the [Ionos documentation](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-private-registration-for-a-11-ionos-domain/).
 
 ### Step 2 - Disable transfer locking
 
@@ -75,13 +75,13 @@ To confirm whether private registration is enabled for your domain name, follow 
 > For security, domain names with a generic extension (e.g. *.com*, *.net* or *.org*) are locked by default and cannot be transferred. Before you can initiate a domain name transfer, you must disable this transfer lock.
 >
 
-Follow the steps described in the [Ionos documentation](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-the-domain-transfer-lock-with-11-ionos/){.external}.
+Follow the steps described in the [Ionos documentation](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-the-domain-transfer-lock-with-11-ionos/).
 
 ### Step 3 - Get the authorization code
 
 The authorization code protects your domain name against unauthorized transfers by third parties. This code is required to authorize the transfer of your domain name to a new provider.
 
-Follow the steps described in the [Ionos documentation](https://www.ionos.com/help/domains/transferring-your-domain-away-from-ionos-to-another-provider/getting-the-authorization-code-for-your-domain-with-11-ionos/){.external}.
+Follow the steps described in the [Ionos documentation](https://www.ionos.com/help/domains/transferring-your-domain-away-from-ionos-to-another-provider/getting-the-authorization-code-for-your-domain-with-11-ionos/).
 
 Once you have obtained the authorization code, you can proceed with the transfer of your domain name by following the steps in our guide “[Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)”.
 

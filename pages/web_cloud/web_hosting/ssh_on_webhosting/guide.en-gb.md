@@ -12,9 +12,9 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 ## Requirements
 
-- an [OVHcloud web hosting plan](/links/web/hosting){.external} with SSH access
+- an [OVHcloud web hosting plan](/links/web/hosting) with SSH access
 - the login credentials required to connect to your storage space via SSH
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager){.external}
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > 
@@ -24,13 +24,13 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 ### Step 1: Ensure that SSH access is enabled <a name="sshcheck"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
 
 Find the table in the ‘SSH’ column to check if the SSH user (or ‘login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
 
 ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 
-If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](/links/web/hosting){.external} offers SSH access.
+If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](/links/web/hosting) offers SSH access.
 
 ### Step 2: Retrieve your connection information <a name="sshlogin"></a>
 

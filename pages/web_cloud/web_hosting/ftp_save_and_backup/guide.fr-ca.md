@@ -19,8 +19,8 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](/links/web/hosting){.external} (ne fonctionne pas avec un [hébergement Cloud Web](/links/web/hosting-cloud-web-offer)).
-- Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](/links/manager){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) (ne fonctionne pas avec un [hébergement Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](/links/manager) ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
 ## En pratique
 
@@ -79,11 +79,11 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 > Dans ce cas de figure :
 >
 > - Un e-mail est envoyé au [contact administrateur](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
-> - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](/links/manager){.external}. Dans la partie `Web Cloud`{.action}, cliquez sur votre service dans la section `Hébergements`{.action} puis sur l'onglet `Informations générales`{.action}.
+> - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](/links/manager). Dans la partie `Web Cloud`{.action}, cliquez sur votre service dans la section `Hébergements`{.action} puis sur l'onglet `Informations générales`{.action}.
 > - Le(s) site(s) hébergé(s) affiche(nt) une page « 403 Forbidden ».
 >
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
@@ -123,9 +123,9 @@ La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en posse
 
 Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des trois solutions suivantes :
 
-- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
 Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape suivante.
 
@@ -133,7 +133,7 @@ Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape
 
 Depuis l'interface ou le logiciel sélectionné, vous allez devoir vous connecter à votre espace de stockage pour accéder aux données de la sauvegarde que vous voulez récupérer. Pour cela, vous devrez être en possession du nom d'utilisateur FTP, de son mot de passe et du nom d'hôte de votre serveur FTP.
 
-Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

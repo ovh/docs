@@ -77,6 +77,6 @@ set OS_PASSWORD="Contraseña del usuario de Horizon"
 
 ## Más información
 
-Para aprender a utilizar OpenStack: [Documentación de OpenStack](https://docs.openstack.org/){.external}
+Para aprender a utilizar OpenStack: [Documentación de OpenStack](https://docs.openstack.org/)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -95,7 +95,7 @@ $ mkdir ~/server && cd ~/server
 >
 
 Primero deberá copiar y pegar el enlace de descarga para el programa servidor.
-<br>En el [sitio web oficial de Minecraft](https://minecraft.net/download/server){.external}, haga clic derecho en el enlace de descarga y seleccione `Copiar dirección del enlace`{.action}.
+<br>En el [sitio web oficial de Minecraft](https://minecraft.net/download/server), haga clic derecho en el enlace de descarga y seleccione `Copiar dirección del enlace`{.action}.
 
 ![Descarga del servidor](images/jar_file_download.png){.thumbnail}
 
@@ -113,7 +113,7 @@ Antes de ejecutar el servidor, debe aceptar la licencia del programa (EULA o _En
 ```
 
 En la raíz del servidor, se creará un archivo llamado `eula.txt`, que contendrá la línea `eula=true`. Esto significa que el programa acepta las condiciones de uso de Minecraft.
-<br>Le invitamos a consultar las Condiciones Generales en la [web oficial de Minecraft](https://www.minecraft.net/){.external}.
+<br>Le invitamos a consultar las Condiciones Generales en la [web oficial de Minecraft](https://www.minecraft.net/).
 
 A continuación, el servidor estará listo para ser iniciado.
 
@@ -168,7 +168,7 @@ Para detener el servidor, introduzca el comando `stop`.
 
 ### Paso 3: Conectarse al servidor
 
-La instancia de servidor ya está operativa. Para jugar al juego, descargue al cliente Minecraft desde [el sitio web oficial](https://www.minecraft.net/){.external}.
+La instancia de servidor ya está operativa. Para jugar al juego, descargue al cliente Minecraft desde [el sitio web oficial](https://www.minecraft.net/).
 
 Instale y ejecute el cliente para su sistema operativo y conéctese.
 

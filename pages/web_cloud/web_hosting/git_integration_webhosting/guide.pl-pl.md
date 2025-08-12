@@ -14,7 +14,7 @@ W dzisiejszym świecie cyfrowym społeczeństwa stają się coraz bardziej dynam
 
 - Posiadanie hostingu [OVHcloud](/links/web/hosting).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja Web Cloud.
-- Posiadanie konta [GitHub](https://github.com/){.external} i logowanie.
+- Posiadanie konta [GitHub](https://github.com/) i logowanie.
 
 > [!primary]
 >

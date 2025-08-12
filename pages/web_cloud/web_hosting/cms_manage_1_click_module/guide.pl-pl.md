@@ -56,8 +56,8 @@ Możesz również wyszukać e-mail otrzymany podczas tworzenia modułu w [Panelu
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal : Producent tego oprogramowania nie może w dniu dzisiejszym dostarczyć dokumentacji umożliwiającej zmianę hasła dostępu do interfejsu administracyjnego Drupal. Prosimy o bezpośredni kontakt z wydawcą na ten temat. Więcej informacji znajduje się na oficjalnej stronie [drupal.org](https://www.drupal.org/){.external}.
-> - PrestaShop : Producent tego oprogramowania nie udostępnia w terminie dokumentacji zmiany hasła dostępu do interfejsu administracyjnego PrestaShop. Prosimy o bezpośredni kontakt z wydawcą na ten temat. Aby uzyskać więcej informacji, kliknij [tutaj](https://www.prestashop.com){.external} i przejdź do oficjalnej strony.
+> - Drupal : Producent tego oprogramowania nie może w dniu dzisiejszym dostarczyć dokumentacji umożliwiającej zmianę hasła dostępu do interfejsu administracyjnego Drupal. Prosimy o bezpośredni kontakt z wydawcą na ten temat. Więcej informacji znajduje się na oficjalnej stronie [drupal.org](https://www.drupal.org/).
+> - PrestaShop : Producent tego oprogramowania nie udostępnia w terminie dokumentacji zmiany hasła dostępu do interfejsu administracyjnego PrestaShop. Prosimy o bezpośredni kontakt z wydawcą na ten temat. Aby uzyskać więcej informacji, kliknij [tutaj](https://www.prestashop.com) i przejdź do oficjalnej strony.
 >
 Możesz również zmienić hasło dostępowe do interfejsu administracyjnego Twojego CMS bezpośrednio z Twojej bazy danych.<br>
 Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygotowaną przez producenta systemu CMS lub skorzystał z pomocy [wyspecjalizowanego usługodawcy](/links/partner), jeśli masz trudności. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź dalej](#go-further) niniejszego przewodnika.
@@ -129,10 +129,10 @@ Dodaj narzędzia testowe typu CAPTCHA do formularzy na Twojej stronie.
 
 Nie instaluj na Twojej stronie wtyczek ani szablonów, które nie są zalecane przez oficjalne społeczności Twojego CMS: 
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://community.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/community){.external}
-- [PrestaShop](https://www.prestashop.com/pl){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://community.joomla.org/)
+- [Drupal](https://www.drupal.org/community)
+- [PrestaShop](https://www.prestashop.com/pl)
 
 ## Sprawdź również <a name="go-further"></a>
 

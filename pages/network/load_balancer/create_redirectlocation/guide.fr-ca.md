@@ -11,10 +11,10 @@ Le service OVH Load Balancer agit par défault comme un mandataire ou "Proxy". I
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external}.
+- Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/).
 - Avoir accès :
-    - à l'[espace client OVH](/links/manager){.external}, ou bien
-        - à l'[API OVH](/links/api){.external}.
+    - à l'[espace client OVH](/links/manager), ou bien
+        - à l'[API OVH](/links/api).
 
 ## En pratique
 
@@ -35,7 +35,7 @@ Les Redirections personnalisées peuvent être spécifiées via le Manager et vi
 
 ### Ajouter une redirection personnalisée via le Manager
 
-Il est possible de définir une redirection personnalisée depuis l'[espace client](/links/manager){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
+Il est possible de définir une redirection personnalisée depuis l'[espace client](/links/manager) dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
 Cela peut-être effectué tant sur un nouveau Frontend pendant sa création, que sur un Frontend existant.
 
 * Ajout d'un nouveau Frontend
@@ -76,7 +76,7 @@ cliquez sur `Appliquer la configuration`{.action}.
 
 ### Ajouter une redirection personnalisée via l'API
 
-Dans l'[API OVH](/links/api){.external}, les Redirections sont spécifiées dans la chaîne de caractère redirectLocation :
+Dans l'[API OVH](/links/api), les Redirections sont spécifiées dans la chaîne de caractère redirectLocation :
 
 * création d'un nouveau Frontend
 

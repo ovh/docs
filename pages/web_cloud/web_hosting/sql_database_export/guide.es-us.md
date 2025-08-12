@@ -12,21 +12,21 @@ La mayoría de los sitios web utilizan bases de datos y **C**ontent **M**anageme
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVHcloud.](/links/web/hosting){.external}
-- Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager){.external} o disponer de las claves necesarias para conectarse a la base de datos.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
+- Disponer de una base de datos creada en un [alojamiento web de OVHcloud.](/links/web/hosting)
+- Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager) o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento
 
 Antes de empezar, defina el método que va a seguir para recuperar la copia de seguridad de la base de datos. Puede elegir entre varias opciones:
 
-- **Utilizar la herramienta de backup de OVHcloud** : Esta solución permite recuperar copias de seguridad de sus bases de datos desde el [área de cliente de OVHcloud](/links/manager){.external}. Este método no requiere conocimientos técnicos.
+- **Utilizar la herramienta de backup de OVHcloud** : Esta solución permite recuperar copias de seguridad de sus bases de datos desde el [área de cliente de OVHcloud](/links/manager). Este método no requiere conocimientos técnicos.
 
 - **Realizar la copia de seguridad desde la interfaz web phpMyAdmin**: Este método requiere conectarse a la interfaz *phpMyAdmin* para realizar la manipulación. Para ello, es necesario conocer la interfaz *phpMyAdmin*.
 
 - **Utilizar un script para realizar la copia de seguridad** : Para ello, deberá crear un script y colocarlo en su alojamiento web de OVHcloud. Se requieren conocimientos específicos para esta creación.
 
-- **Realizar la copia de seguridad mediante un comando SSH** : Para ello, deberá conectarse al espacio de almacenamiento FTP por SSH y utilizar los comandos necesarios para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](/links/web/hosting){.external} específico.
+- **Realizar la copia de seguridad mediante un comando SSH** : Para ello, deberá conectarse al espacio de almacenamiento FTP por SSH y utilizar los comandos necesarios para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](/links/web/hosting) específico.
 
 > [!success]
 >
@@ -46,7 +46,7 @@ Continúe leyendo esta guía en el apartado correspondiente al método de backup
 
 ### Obtener una copia de seguridad a través de la herramienta de OVHcloud
 
-Para acceder a la herramienta de backup de OVHcloud, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Para acceder a la herramienta de backup de OVHcloud, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el alojamiento web. A continuación, podrá elegir entre realizar una nueva copia de seguridad o recuperar una ya existente, realizando dos operaciones distintas.
 
@@ -76,7 +76,7 @@ Para descargar una copia de seguridad, haga clic en el botón `...`{.action} a l
 
 ### Recuperar una copia de seguridad desde la interfaz web phpMyAdmin
 
-Para realizar la operación, conéctese a *phpMyAdmin*. Para conocer el enlace de acceso a este último, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Para realizar la operación, conéctese a *phpMyAdmin*. Para conocer el enlace de acceso a este último, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el alojamiento web. Haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, seguidamente, en `Acceder a phpMyAdmin »`{.action}.
 

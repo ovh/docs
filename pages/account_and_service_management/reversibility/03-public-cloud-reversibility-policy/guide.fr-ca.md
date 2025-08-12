@@ -7,7 +7,7 @@ updated: 2021-05-05
 
 Ce document est la politique de réversibilité pour les activités Public Cloud [Compute](/links/public-cloud/compute), [Object Storage](/links/public-cloud/object-storage) et [Block Storage](/links/public-cloud/block-storage).
 
-Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Liste des fonctionnalités
 

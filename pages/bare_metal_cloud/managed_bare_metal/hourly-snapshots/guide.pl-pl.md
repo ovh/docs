@@ -16,7 +16,7 @@ Aby zapewnić ciągłość usługi i uniknąć utraty danych, OVHcloud automatyc
 
 ## Wymagania początkowe
 
-* Posiadanie [infrastruktury Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external} na koncie OVHcloud.
+* Posiadanie [infrastruktury Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/) na koncie OVHcloud.
 * Dostęp do interfejsu zarządzania vSphere Web Client HTML.
 
 ## W praktyce

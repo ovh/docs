@@ -6,7 +6,7 @@ updated: 2021-01-11
 
 ## Objective
 
-In this tutorial, we are going to show you how to build a [Strapi](https://strapi.io/){.external} application using the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/en-au/public-cloud/postgresql/).
+In this tutorial, we are going to show you how to build a [Strapi](https://strapi.io/) application using the OVHcloud managed [PostgreSQL](https://www.postgresql.org/) database [service](https://www.ovhcloud.com/en-au/public-cloud/postgresql/).
 
 > [!warning]
 >
@@ -19,7 +19,7 @@ In this tutorial, we are going to show you how to build a [Strapi](https://strap
 
 You need to be able to order a database solution in the OVHcloud Control Panel, as explained in our [Getting started with Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) guide.
 
-As [Strapi](https://strapi.io/){.external} is written in Javascript, packages like [nodejs](https://nodejs.org/){.external}, [nvm](https://github.com/nvm-sh/nvm){.external} and [yarn](https://classic.yarnpkg.com/en/){.external} are necessary for this tutorial.
+As [Strapi](https://strapi.io/) is written in Javascript, packages like [nodejs](https://nodejs.org/), [nvm](https://github.com/nvm-sh/nvm) and [yarn](https://classic.yarnpkg.com/en/) are necessary for this tutorial.
 
 ## Instructions
 
@@ -103,9 +103,9 @@ Following the related documentation on how to [authorize the suitable IP address
 
 ### Test connection to the PostgreSQL DataBase
 
-A quick and easy way to test the connection is to use the Postgre Command Line Interface (CLI) [psql](https://docs.postgresql.fr/14/app-psql.html){.external}.
+A quick and easy way to test the connection is to use the Postgre Command Line Interface (CLI) [psql](https://docs.postgresql.fr/14/app-psql.html).
 
-> 💡 Tip : If you are familiar with [Docker](https://www.docker.com/){.external} or [Kubernetes](https://kubernetes.io/){.external}, you can use the psql tool inside a postgres Docker [image](https://hub.docker.com/_/postgres){.external} instead of installing the tool locally.
+> 💡 Tip : If you are familiar with [Docker](https://www.docker.com/) or [Kubernetes](https://kubernetes.io/), you can use the psql tool inside a postgres Docker [image](https://hub.docker.com/_/postgres) instead of installing the tool locally.
 >
 > Examples :
 >
@@ -153,21 +153,21 @@ Type "help" for help.
 defaultdb=>
 ```
 
-Setup is done, your Managed PostgreSQL database is fully operational, let's go further and use it with [Strapi](https://strapi.io/){.external}.
+Setup is done, your Managed PostgreSQL database is fully operational, let's go further and use it with [Strapi](https://strapi.io/).
 
 ### Before you begin, prepare your environment
 
 What you need here is to check your `nodejs` and `yarn` versions.
-According to the official documention on [GitHub](https://github.com/strapi/strapi){.external}, check that your existent nodejs installation matches with "NodeJS >= 12 <= 16".
+According to the official documention on [GitHub](https://github.com/strapi/strapi), check that your existent nodejs installation matches with "NodeJS >= 12 <= 16".
 
 > [!warning]
 > No specific version of yarn is specified, this tutorial was made with the 1.22.17 one.
 
 You can follow these different tutorials if you need to install some of the tools:
 
-- [nodejs](https://nodejs.org/en/download/package-manager/){.external}
-- [nvm](https://github.com/nvm-sh/nvm){.external}
-- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/){.external}
+- [nodejs](https://nodejs.org/en/download/package-manager/)
+- [nvm](https://github.com/nvm-sh/nvm)
+- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
 
 ### Declare the nodejs version
 

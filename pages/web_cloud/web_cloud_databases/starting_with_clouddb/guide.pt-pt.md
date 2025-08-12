@@ -14,7 +14,7 @@ A sua solução Web Cloud Databases está associada de forma padrão à rede de 
 ## Requisitos
 
 - Dispor de uma [instância Web Cloud Databases](/links/web/databases) (associada a um [alojamento web](/links/web/hosting)).
-- Aceder à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Aceder à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -47,7 +47,7 @@ Se a sua oferta de alojamento inclui a opção Web Cloud Databases, clique nas j
 
 ### Consultar informações gerais da instância Web Cloud Databases
 
-Na[Área de Cliente OVHcloud](/links/manager){.external}, no menu à esquerda, aceda à secção `Web Cloud Databases`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
+Na[Área de Cliente OVHcloud](/links/manager), no menu à esquerda, aceda à secção `Web Cloud Databases`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ Aí pode consultar as informações mais relevantes relativamente à sua instân
 |RAM|Indica a RAM disponível para a instância, e avisa quando os limites da RAM são ultrapassados. A sua instância Web Cloud Databases dispõe de recursos dedicados e garantidos: a sua memória RAM. Se precisar de mais recursos, pode fazer um upgrade e receber notificações quando o limite de memória for atingido.|
 |Infraestrutura|Indica a infraestrutura / plataforma usada pela sua instância (i.e. informação relativa à infraestrutura da OVHcloud). Trata-se de uma informação inerente à infraestrutura da OVHcloud.|
 |Datacenter|Indica o datacenter onde instância está alojada.|
-|Host|Indica o servidor OVHcloud onde a instância foi criada. Esta informação, inerente à infraestrutura da OVHcloud, poderá ser incluída na página sobre o [Estado dos Serviços](https://www.status-ovhcloud.com/){.external}.|
+|Host|Indica o servidor OVHcloud onde a instância foi criada. Esta informação, inerente à infraestrutura da OVHcloud, poderá ser incluída na página sobre o [Estado dos Serviços](https://www.status-ovhcloud.com/).|
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 

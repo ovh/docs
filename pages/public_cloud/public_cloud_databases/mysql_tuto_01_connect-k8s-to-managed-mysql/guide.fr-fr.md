@@ -19,7 +19,7 @@ In this tutorial, we are going to show you how to connect your OVHcloud Managed 
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
+You need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
 Finally, you need to be able to order a database solution in the OVHcloud Control Panel, as explained in our [Getting started with Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) guide.
 
@@ -159,7 +159,7 @@ Setup is done, your Managed MySQL database is fully operational, let's go furthe
 
 ### Installing the WordPress Helm chart
 
-For this tutorial we are using the [WordPress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/){.external}. The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
+For this tutorial we are using the [WordPress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress) found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
 
 #### Pre-requisites
 
@@ -175,7 +175,7 @@ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public
 
 By default, the Helm chart installs the WordPress and a MariaDB on the Kubernetes cluster. As you want to use your OVHcloud Managed MySQL database, you need to customize the Helm installation by setting the URL, user and password of your database.
 
-In order to customize your install, without having to leave the simplicity of using Helm and the WordPress Helm chart, you can simply set some of the [WordPress chart configurable parameters](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}.
+In order to customize your install, without having to leave the simplicity of using Helm and the WordPress Helm chart, you can simply set some of the [WordPress chart configurable parameters](https://github.com/helm/charts/tree/master/stable/wordpress#configuration).
 
 Then you can add it to your `helm install` command with the `--set` option (`--set param1=value1,param2=value2`)
 

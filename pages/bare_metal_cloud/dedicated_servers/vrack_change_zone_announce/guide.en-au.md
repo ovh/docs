@@ -6,13 +6,13 @@ updated: 2025-05-14
 
 ## Objective
 
-The [vRack](/links/network/vrack){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](/links/bare-metal/bare-metal){.external}.
+The [vRack](/links/network/vrack) is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](/links/bare-metal/bare-metal).
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 
 ## Requirements:
 
-- A [vRack](/links/network/vrack){.external}
+- A [vRack](/links/network/vrack)
 - A [configured block of IP addresses in the vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 - Basic network knowledge
 
@@ -50,7 +50,7 @@ Go to <https://ca.api.ovh.com/console/>, then sign in with your OVHcloud custome
 > @api {v1} /vrack GET /vrack
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](/links/manager){.external}. To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](/links/manager). To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
 
 > [!api]
 >

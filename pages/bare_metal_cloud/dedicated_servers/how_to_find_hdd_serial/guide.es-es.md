@@ -16,15 +16,15 @@ Para minimizar el riesgo de error durante la sustitución de un disco duro, pedi
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external}.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal).
 - Tener acceso al servidor por SSH como administrador (sudo).
-- En servidores Windows, haber instalado la utilidad **sas2ircu** (disponible en el motor de búsqueda de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
+- En servidores Windows, haber instalado la utilidad **sas2ircu** (disponible en el motor de búsqueda de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu)).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} y utilizar la herramienta **nvme-cli**, instalada por defecto.
+> Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) y utilizar la herramienta **nvme-cli**, instalada por defecto.
 > 
 
 ### Obtener el número de serie de un disco (RAID por software)
@@ -72,7 +72,7 @@ Si el periférico (/dev/sda, /dev/sdb...) es detectado por el sistema operativo,
 
 ### Obtener el número de serie de un disco (RAID por hardware)
 
-Para más información sobre estos comandos y sobre cómo probar los discos duros, consulte nuestra guía [RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}.
+Para más información sobre estos comandos y sobre cómo probar los discos duros, consulte nuestra guía [RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard).
 
 #### Controladora MegaRAID
 
@@ -159,7 +159,7 @@ No olvide sustituir en el comando anterior **N** por el Device Id y **sdX** por 
 
 Las tarjetas controladoras RAID LSI utilizan un módulo llamado **sg-map**, que asocia los periféricos a rutas de tipo /dev/sgX (siendo «X» el número del periférico).
 
-Para determinar qué periférico sg corresponde a cada disco duro, consulte nuestra guía [RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}.
+Para determinar qué periférico sg corresponde a cada disco duro, consulte nuestra guía [RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard).
 
 Una vez que sepa qué periférico sg corresponde al disco duro que quiera analizar, utilice el siguiente comando:
 

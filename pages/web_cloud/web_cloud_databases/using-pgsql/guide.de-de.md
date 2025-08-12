@@ -31,7 +31,7 @@ Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie:
 - Das Passwort Ihrer Datenbank
 - Den Namen Ihrer Datenbank
 
-Diese Informationen sind über Ihr [Kundencenter](/links/manager){.external} einsehbar.
+Diese Informationen sind über Ihr [Kundencenter](/links/manager) einsehbar.
 
 Eine Anleitung finden Sie unter: [Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.ref}
 

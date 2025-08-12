@@ -6,7 +6,7 @@ updated: 2018-01-17
 
 ## Objetivo
 
-El nuevo [Load Balancer de OVH](/links/network/load-balancer){.external} es un balanceador de carga (*load balancer*) que combina fiabilidad y una gran flexibilidad en la configuración. Usted solo tiene que configurar sus productos con el Load Balancer de OVH y nosotros nos encargamos del resto.
+El nuevo [Load Balancer de OVH](/links/network/load-balancer) es un balanceador de carga (*load balancer*) que combina fiabilidad y una gran flexibilidad en la configuración. Usted solo tiene que configurar sus productos con el Load Balancer de OVH y nosotros nos encargamos del resto.
 
 **Esta guía explica brevemente el funcionamiento del nuevo Load Balancer de OVH.**
 
@@ -19,7 +19,7 @@ El nuevo [Load Balancer de OVH](/links/network/load-balancer){.external} es un b
  
 Este nuevo producto está basado en tecnologías *open source* muy robustas: HAProxy para el tráfico TCP y Nginx para el tráfico UDP.
 
-¡Se acabaron las limitaciones! El nuevo [Load Balancer de OVH](/links/network/load-balancer){.external} se puede utilizar con diferentes protocolos:
+¡Se acabaron las limitaciones! El nuevo [Load Balancer de OVH](/links/network/load-balancer) se puede utilizar con diferentes protocolos:
 
 |Tipo|Descripción|Ventajas|Tecnología|
 |---|---|---|---|
@@ -111,10 +111,10 @@ Equilibre y redunde sus bases de datos.
 
 ## Más información
 
-[Más información sobre el balanceo de carga](https://es.wikipedia.org/wiki/Balanceador_de_carga){.external}
+[Más información sobre el balanceo de carga](https://es.wikipedia.org/wiki/Balanceador_de_carga)
 
-[Más información sobre HAProxy](http://www.haproxy.org/#desc){.external}
+[Más información sobre HAProxy](http://www.haproxy.org/#desc)
 
-[Más información sobre Nginx](https://es.wikipedia.org/wiki/Nginx){.external}
+[Más información sobre Nginx](https://es.wikipedia.org/wiki/Nginx)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

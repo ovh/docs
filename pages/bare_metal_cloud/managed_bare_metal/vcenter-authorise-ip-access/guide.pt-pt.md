@@ -11,8 +11,8 @@ updated: 2020-11-18
 
 ## Requisitos
 
-* Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
-* Dispor de uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external} na sua conta OVHcloud.
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+* Dispor de uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/) na sua conta OVHcloud.
 
 ## Instruções
 

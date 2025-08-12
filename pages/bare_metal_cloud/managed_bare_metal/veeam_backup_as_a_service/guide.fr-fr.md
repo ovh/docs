@@ -8,17 +8,17 @@ updated: 2020-11-18
 
 Veeam est un éditeur de logiciel spécialisé dans les solutions de sauvegarde et de plan de reprise d'activité (PRA) dans des environnements virtualisés. L'offre Veeam Managed Backup s'appuie sur la brique logicielle Veeam Availability Suite pour vous fournir une solution de backup à la demande.
 
-Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située à l’intérieur même de votre infrastructure [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}. Les données sauvegardées sont, quant à elles, externalisées vers un espace de stockage indépendant, chez OVHcloud. Les sauvegardes s'effectuent la nuit, avec une durée de rétention en fonction du niveau d'offre choisi.
+Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située à l’intérieur même de votre infrastructure [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/). Les données sauvegardées sont, quant à elles, externalisées vers un espace de stockage indépendant, chez OVHcloud. Les sauvegardes s'effectuent la nuit, avec une durée de rétention en fonction du niveau d'offre choisi.
 
 **Ce guide vous explique comment déployer et utiliser l'option Veeam Managed Backup en quelques minutes.**
 
 ## Prérequis
 
-* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
-* [Donner le droit « Ajout de ressources »](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights){.external} pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](/links/manager){.external}.
+* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
+* [Donner le droit « Ajout de ressources »](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](/links/manager).
 * Être connecté au client vSphere.
-* Avoir activé la [haute disponibilité (HA)](/pages/bare_metal_cloud/managed_bare_metal/vmware_ha_high_availability){.external}.
-* Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/bare_metal_cloud/managed_bare_metal/vmware_drs_distributed_ressource_scheduler){.external} sur le ou les clusters.
+* Avoir activé la [haute disponibilité (HA)](/pages/bare_metal_cloud/managed_bare_metal/vmware_ha_high_availability).
+* Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/bare_metal_cloud/managed_bare_metal/vmware_drs_distributed_ressource_scheduler) sur le ou les clusters.
 * Mettre en place la gestion des licences Windows sur le Managed Bare Metal.
 
 > [!primary]
@@ -30,7 +30,7 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 
 ### Activer le service
 
-La première étape consiste à activer le service depuis l'[espace client OVHcloud](/links/manager){.external}. Pour cela, rendez-vous dans la partie `Managed Bare Metal`{.action} de l'onglet `Bare Metal Cloud`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
+La première étape consiste à activer le service depuis l'[espace client OVHcloud](/links/manager). Pour cela, rendez-vous dans la partie `Managed Bare Metal`{.action} de l'onglet `Bare Metal Cloud`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
 
 ![Activer le backup](images/veeam-managed-bare-metal.png){.thumbnail}
 

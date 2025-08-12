@@ -1,75 +1,65 @@
 ---
-title: Hosted Private Cloud Reversibility Policy (EN)
-updated: 2021-05-05
+title: Reversibility Policy for Managed Dedicated Cloud product (EN)
+updated: 2025-08-08
 ---
 
 ## Objective
 
-This document is the reversibility policy for the [Hosted Private Cloud Premier Powered by VMware](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) product.
+This document describes the reversibility policy for the Managed Dedicated Cloud product covering the offer VMware on OVHcloud.
 
-This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
 ## Features map
 
-Hosted Private Cloud features are divided into three categories:
+Features of the product line fall into three categories:
 
-- The [core features](#core-features) for which we guarantee the ability to migrate
-- The [OVHcloud implementation](#ovhcloud-implementation), whose migration will require adaptations to a new environment.
-- [Specific functionalities](#specific-functionalities), whose migration as such is impossible to guarantee as they are tied to OVHcloud environment or specific developments.
+1. **Core features** for which we guarantee migration capacity.
+2. **OVHcloud implementations** that require adaptation to a new migration environment.
+3. **Specific features** that cannot be guaranteed for migration as they are related to the OVHcloud environment or involve custom developments.
 
-### Core features <a name="core-features"></a>
 
-|Feature|Description|Available formats|
-|---|---|---|
-|Software-defined Compute|Set of virtual machines managed by VMware vSphere|Every file format supported by vSphere, such as .vmsd, .vmx ...|
-|Software-defined Storage|Set of datastores attached to virtual machines.|N/A|
-|Software defined Network|Network virtualisation service based on NSX|N/A|
+### 1. Core features
 
-The following migration models and available documentation apply to all the features described in the table above.
+| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
+| --- | --- | --- | --- | --- |
+| Virtualization | VM management via vSphere, vCenter, vMotion, and support for VMware standard formats | OVA, OVF | **Inbound**: import VMs, disks, snapshots via vSphere interface or any specialized tools (e.g. Veeam, Zerto, etc...) <br>**Oubound**: export VMs, disks via vSphere, and reuse on any VMware or compatible environment. Specialized tools can be used (e.g. Veeam, Zerto, PowerCLI, etc.) | [Connect to the vSphere web interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion)<br><br>[Deploying a virtual machine](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[How to connect an ISO image to a VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_connect_an_iso_image_to_a_vm) <br><br>[Create a cluster and enable EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc) |
+| User and rights management | Create, manage and delete users. Manage permissions and roles via the user interface | JSON, CSV (exports) | **Inbound**: manual or automated import of users and permissions <br>**Outbound**: export of user lists, permissions and adaptation on the target. | [IAM for VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started) |
+| Virtual network management | Network configuration via NSX, VLAN management, routing, firewall, network security via API or UI | YAML, JSON, scripts | **Inbound**: definition of networks, VLAN, firewall rules <br>**Outbound**: export of network configurations through the available VMWare APIs | [Getting started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) |
+| Dedicated storage (vSAN and/or NFS) | Use of dedicated vSAN and/or NFS datastores, snapshot and clone management. | NA | **Inbound**: add datastores, restore VMs and snapshots <br>**Outbound**: export VMs and snapshots to compatible target storage. | [Using VMware Hyperconvergence with vSAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)|
 
-|Migration model|Available documentation|
-|---|---|
-|**Inbound migration**:<br>- Sign up for an Hosted Private Cloud project<br>-Order the appropriate number of hosts and datastores on the project to achieve capacity comparable to the original infrastructure.<br>-Migrate via a specialized tool (e.g. Veeam, Zerto...)<br><br>**Outbound migration**:<br>- Set up a vsphere hypervisor in the target environment<br>- Plan the capacities of the target environment in a manner comparable to the original environment<br>- Migrate via a specialized tool (e.g. Veeam, Zerto...)|[Standard vSphere documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) applies.<br><br>[Deploying an OVF Linux, Windows Server and Windows SQL Server template](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)<br><br>[Deploying a virtual machine with vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Create a cluster and enable EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)(FR)|
 
-### OVHcloud implementation <a name="ovhcloud-implementation"></a>
+### 2. OVHcloud Implementations
 
-|Feature|Description|Available formats|Migration model|Available documentation|
-|---|---|---|---|---|
-|vRack|vRack, or Virtual rack, is a private VLAN technology that enables connection between OVHcloud services|N/A|**Inbound migration**: Hosted private Cloud is included by default into vRack.<br><br>**Outbound migration**: Record the network architecture and reproduce it with VLAN.|[Using Private Cloud with vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/using_private_cloud_in_vrack)<br><br>[How to create a V(x)LAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan)|
-|vROps|Standard VMware monitoring solution.|N/A|**Inbound migration**: ROps is included by default with every Hosted Private Cloud.<br><br>**Outbound migration**: Install & configure vROps in a vSphere environment.|[First connection on vROps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrops_introduction)|
-|Managed Veeam backup|Backup-as-a-Service solution for your VMs|VBK, VIB, VBM|**Inbound migration**: Activate a Veeam backup option in the [OVHcloud Control Panel](/links/manager).<br><br>**Outbound migration**: Import backups manually, then restore backups|[Activating and using Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)<br><br>[Importing backups](https://helpcenter.veeam.com/docs/backup/hyperv/importing_backups.html?ver=110)|
-|Zerto|Business continuity and disaster recovery platform.|N/A|**Inbound migration**: Activate the zerto service either in the [OVHcloud Control Panel](/links/manager) or directly in the provided Zerto Replication Interface.<br><br>**Outbound migration**: Export zerto VPG settings and import those settings in the new environment.|[Setting up Zerto Virtual Replication for your DRP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)<br><br>[Exporting Zerto VPG settings](https://www.zerto.com/myzerto/knowledge-base/exporting-and-importing-vpg-settings-with-zerto-diagnostic-tool/)|
+| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
+| --- | --- | --- | --- | --- |
+|vRack|vRack, or Virtual rack, is a private VLAN technology that enables connection between OVHcloud services|N/A|**Inbound**: Hosted private Cloud is included by default into vRack.<br><br>**Outbound**: record the network architecture and reproduce it with VLAN.|[Using Private Cloud with vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/using_private_cloud_in_vrack)<br><br>[How to create a V(x)LAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan)|
+|Monitoring and supervision|VMware standard monitoring solution via vROps|Many formats supported by the platform(e.g JSON, Syslog, etc) |**Inbound**: vROps is included by default with every Hosted Private Server. Adaptation of Cloud dashboards and monitoring agents.<br><br>**Outbound**: install and configure vROps in a vSphere environment.|[First connection on vROps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrops_introduction)|
+|Backup and replication|Backup-as-a-Service solution for your VMs|VBK, VIB, VBM|**Inbound**: activation of Veeam backup option in the [OVHcloud Control Panel](/links/manager).<br><br>**Outbound**: import backups manually, then restore backups|[Activating and using Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)<br><br>[Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Veeam Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam)|
+|Zerto|Business continuity and disaster recovery platform.|N/A|**Inbound**: activation of the option in the [OVHcloud Control Panel](/links/manager) or directly in the provided Zerto Replication Interface.<br><br>**Outbound**: export zerto VPG settings and import those settings in the new environment.|[Setting up Zerto Virtual Replication for your DRP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)<br><br>[Move2Cloud - Migrate VMware workloads to OVHcloud Hosted Private Cloud with Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto)<br><br>[Exporting Zerto VPG settings](https://www.zerto.com/myzerto/knowledge-base/exporting-and-importing-vpg-settings-with-zerto-diagnostic-tool/)|
 
-### Specific functionalities <a name="specific-functionalities"></a>
+### 3. Specific features
 
-|Feature|Description|Available formats|Migration model|Available documentation|
-|---|---|---|---|---|
-|vScope monitoring|Health and resource usage monitoring tool designed by OVHcloud for Privrate Cloud.|N/A|N/A ; vScope is a static interface.|[How to use vScope](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_vscope)|
-|Anti-DDoS|The anti-DDoS is a set of equipment and means put in place to absorb distributed denial of service attacks. It includes an analysis of traffic, the "aspiration" towards a specialized network, and mitigation, ensured by VAC technology developed by OVHcloud.|N/A|**Inbound migration**: The Anti-DDoS is a component of our infrastructure, enabled by default. No action is required.<br><br>**Outbound migration**: Order and configure an anti-DDoS with the new provider.|[OVHcloud anti-DDoS protection](/links/security/antiddos)|
-|SDDC Security advanced|Package of features improving security, such as Zero trust implementation, MFA, IDS for vSphere access ...|N/A|**Inbound migration**: Order the activation of security advanced in the [OVHcloud Control Panel](/links/manager).<br><br>**Outbound migration**: Order and configure appropriate security features with the new provider.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
+| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
+| --- | --- | --- | --- | --- |
+|Anti-DDoS|The anti-DDoS is a set of equipment and means put in place to absorb distributed denial of service attacks. It includes an analysis of traffic, the "aspiration" towards a specialized network, and mitigation, ensured by VAC technology developed by OVHcloud.|N/A|**Inbound migration**: the Anti-DDoS is a component of our infrastructure, enabled by default. No action is required.<br><br>**Outbound migration**: order and configure an anti-DDoS with the new provider.|[OVHcloud anti-DDoS protection](/links/security/antiddos)|
+|Advanced security|Package of features improving security, such as Zero trust implementation, MFA, IDS for vSphere access ...|N/A|**Inbound migration**: order the activation of security advanced in the [OVHcloud Control Panel](/links/manager).<br><br>**Outbound migration**: order and configure appropriate security features with the new provider.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)<br><br>[Using the secure interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure) |
 
-### Architecture listing
+## List of architectures
 
-Information about the architecture (such as servers, storage ...) is centralized and visible in the vSphere console.
+The product is based on a dedicated VMware solution, including bricks such as vSphere, vCenter, NFS storage, vROps, advanced security options (encryption, MFA) and NSX (SDN) and/or vSAN options to be enabled. Resources (compute, storage, network) are physically and logically isolated, with fine grained rights management (IAM), and the integration of private network services. The architecture is carried out in OVHcloud datacentres.
 
-### Available migration tools
-
-[Importing/exporting virtual machines](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) (FR).
-
-[Converting a physical / virtual machine into a cloud infrastructure](https://help.ovhcloud.com/csm/fr-vmware-vmware-vcenter-converter?id=kb_article_view&sysparm_article=KB0033587) (FR).
 
 ### Partner services
 
-OVHcloud Partners are listed with the "Cloud Migration" keyword in the dedicated [directory](/links/partner).
+The OVHcloud partners concerned are listed in the [OVHcloud partners directory](/links/partner) under the "**Data center expansion and Migration**" keywords.
+
+OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
+
 
 ### Cost and fees
 
-No additional billing is planned from OVHcloud for the migration features listed here.
+Billing is on monthly basis, with or without a duration commitment. No specific cancelation fees apply: deleting the service will stop the billing immediately. Migration features (VM export, disks, configuration) are included at no extra cost. The costs are linked to the resource usage and options subscribed to (hosts, storage, etc.).
 
 ### Retention of data after contract termination
 
-The data is retained until the end of the month after the termination of the service and then deleted permanently.
-
-## Go further
-
-[Migrating a PCC to Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration)
+After termination or deletion of the service, OVHcloud carries out a secure erasure of data, VMs, snapshots and configurations. It is imperative to export all necessary data before permanent deletion, as no post-removal recovery will be possible.

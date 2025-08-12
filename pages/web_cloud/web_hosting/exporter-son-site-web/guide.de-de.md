@@ -59,7 +59,7 @@ Informationen zum Abrufen eines Backups Ihrer Datenbank finden Sie in unserer An
 [Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export).
 
 Wenn Sie eine Datenbank **Web Cloud Databases** für Ihre Website verwenden, lesen Sie den Abschnitt "Backup" in unserer Anleitung:
-[Eine Datenbank Ihres Datenbankservers sichern und exportieren](/pages/web_cloud/web_cloud_databases/save-export-on-database-server){.external}.
+[Eine Datenbank Ihres Datenbankservers sichern und exportieren](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
 ### Schritt 3: Logs Ihres OVHcloud Webhostings abrufen
 

@@ -75,6 +75,6 @@ Una vez que haya añadido correctamente el registro TXT a la zona DNS del domini
 
 ## Más información
 
-[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

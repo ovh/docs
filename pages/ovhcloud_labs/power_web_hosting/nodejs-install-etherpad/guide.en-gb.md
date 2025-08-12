@@ -6,7 +6,7 @@ updated: 2023-04-27
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy an [Etherpad](https://etherpad.org/){.external} server on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy an [Etherpad](https://etherpad.org/) server on it.
 
 This guide will explain how to do it.
 

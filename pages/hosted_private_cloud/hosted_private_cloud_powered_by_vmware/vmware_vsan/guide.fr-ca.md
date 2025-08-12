@@ -29,7 +29,7 @@ Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos 
 
 vSAN est une solution de stockage objet proposée par VMware. Elle agrège un ensemble de disques situés directement dans les hôtes VMware et les présente comme un datastore unique. C'est ce que l'on appelle du Software Defined Storage ou SDS. Un des avantages de vSAN est d'être complétement intégré à vSphere et géré directement depuis vCenter.
 
-Pour une vue complète des concepts et des spécifications techniques, rendez-vous sur la [page officielle VMware VSAN](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external}
+Pour une vue complète des concepts et des spécifications techniques, rendez-vous sur la [page officielle VMware VSAN](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html)
 
 ### Paramétrer vSAN
 
@@ -69,7 +69,7 @@ Cliquez sur `Suivant`{.action}.
 
 ![VSAN](images/en06vsanservices.png){.thumbnail}
 
-La fenêtre `Réclamer des disques` attribue automatiquement les disques pour du cache ou du stockage (voir la [page officielle VMware VSAN](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} pour plus de détails) en fonction du type et de la taille. Vous pouvez personnaliser les paramètres.<br>
+La fenêtre `Réclamer des disques` attribue automatiquement les disques pour du cache ou du stockage (voir la [page officielle VMware VSAN](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html) pour plus de détails) en fonction du type et de la taille. Vous pouvez personnaliser les paramètres.<br>
 Cliquez sur `Suivant`{.action}.
 
 ![VSAN](images/en07vsanclaim.png){.thumbnail}

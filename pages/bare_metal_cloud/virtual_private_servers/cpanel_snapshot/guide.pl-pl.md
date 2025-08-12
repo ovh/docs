@@ -22,7 +22,7 @@ Podczas tworzenia kopii zapasowej Twojego serwera VPS (w przypadku zamówienia a
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [VPS](/links/bare-metal/vps){.external} z dystrybucją [kompatybilną](https://www.ovhcloud.com/pl/vps/os/).
+- Wykupienie usługi [VPS](/links/bare-metal/vps) z dystrybucją [kompatybilną](https://www.ovhcloud.com/pl/vps/os/).
 - cPanel musi być zainstalowany na serwerze
 
 ## W praktyce

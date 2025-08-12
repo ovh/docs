@@ -66,7 +66,7 @@ The [FIO](https://github.com/axboe/fio) tool allows you to test several scenario
 - The number of FIO workers
 - The access model (read/write/sequential/random), etc.
 
-For more information, see [the FIO documentation](https://fio.readthedocs.io/en/latest/index.html){.external}.
+For more information, see [the FIO documentation](https://fio.readthedocs.io/en/latest/index.html).
 
 ## Go further
 

@@ -12,8 +12,8 @@ Los planes de hosting de OVHcloud son compartidos. Por lo tanto, la configuraci�
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](/links/web/hosting){.external} compatible.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un [plan de hosting](/links/web/hosting) compatible.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -168,7 +168,7 @@ Cómo [conectarse al espacio de almacenamiento FTP de un alojamiento web](/pages
 > OVHcloud ofrece un servicio de backup automático de datos y la puesta a disposición de estas copias de seguridad. Sin embargo, este servicio es *no-contractual* y está disponible como complemento de sus servicios. De hecho, es su responsabilidad implementar su propia política de restauración, y determinar los puntos de restauración en los momentos que considere oportunos.
 >
 
-Para las bases de datos compartidas (incluidas en su plan de hosting) o los servidores de bases de datos (Web Cloud Databases), que se ofrecen en Gravelines (GRA), Francia y Beauharnois (BHS), Canadá, la copia de seguridad de las bases de datos se realiza todos los días. Puede acceder a estas copias de seguridad (en el [área de cliente de OVHcloud](/links/manager){.external} o a través de las [API de OVHcloud](/links/api)). Las copias de seguridad también se almacenan en otra infraestructura. Estos datos se replican en un centro de datos situado en Estrasburgo (SBG). La política de retención de las copias de seguridad es de 30 días.
+Para las bases de datos compartidas (incluidas en su plan de hosting) o los servidores de bases de datos (Web Cloud Databases), que se ofrecen en Gravelines (GRA), Francia y Beauharnois (BHS), Canadá, la copia de seguridad de las bases de datos se realiza todos los días. Puede acceder a estas copias de seguridad (en el [área de cliente de OVHcloud](/links/manager) o a través de las [API de OVHcloud](/links/api)). Las copias de seguridad también se almacenan en otra infraestructura. Estos datos se replican en un centro de datos situado en Estrasburgo (SBG). La política de retención de las copias de seguridad es de 30 días.
 
 Esta guía explica cómo consultar nuestra documentación [Descargar la copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export).
 

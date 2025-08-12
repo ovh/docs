@@ -12,7 +12,7 @@ Pode tirar uma snapshot de uma máquina virtual. Uma vez tirada a snapshot, pode
 
 ## Requisitos
 
-- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
 - Estabelecer uma ligação ao cliente vSphere HTML
 
 ## Instruções
@@ -78,7 +78,7 @@ Para efetuar uma consolidação, clique com o botão direito na VM e selecione `
 
 ![consolidar snapshots](images/consolidate.png){.thumbnail}
 
-Poderá consultar mais informações [na documentação de VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
+Poderá consultar mais informações [na documentação de VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html).
 
 ## Quer saber mais?
 

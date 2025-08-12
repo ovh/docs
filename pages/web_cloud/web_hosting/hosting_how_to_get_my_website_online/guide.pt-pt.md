@@ -6,17 +6,17 @@ updated: 2025-05-23
 
 ## Sumário
 
-Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVHcloud](/links/web/hosting){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](https://webhosting-infos.hosting.ovh.net){.external}.
+Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVHcloud](/links/web/hosting) permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](https://webhosting-infos.hosting.ovh.net).
 
 **Saiba como publicar um site no alojamento web da OVHcloud.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting){.external}.
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
 
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
-- Ter um [domínio](/links/web/domains){.external} (endereço que permite identificar e aceder ao seu site).
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um [domínio](/links/web/domains) (endereço que permite identificar e aceder ao seu site).
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
 
 ## Instruções
@@ -25,7 +25,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 
 É primordial que tenha uma visão clara do seu objetivo para conduzir o projeto a bom porto. O que é que pretende fazer com o seu site? Como quer publicá-lo? Tem ao seu dispor várias possibilidades para concretizar o seu projeto num alojamento web da OVHcloud.
 
-- **Usar um site chave-na-mão graças aos módulos 1 clique da OVHcloud**: esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar que poderá personalizar (tema, textos, etc.). A OVHcloud propõe quatro já compatíveis com as nossas infraestruturas com os seus módulos 1 clique a descobrir na página web da OVHcloud ["Criar um site Internet com os módulos 1 clique"](/links/web/hosting-website){.external}. Pode igualmente consultar o guia ["Instalar o seu site com os módulos 1 clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Usar um site chave-na-mão graças aos módulos 1 clique da OVHcloud**: esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar que poderá personalizar (tema, textos, etc.). A OVHcloud propõe quatro já compatíveis com as nossas infraestruturas com os seus módulos 1 clique a descobrir na página web da OVHcloud ["Criar um site Internet com os módulos 1 clique"](/links/web/hosting-website). Pode igualmente consultar o guia ["Instalar o seu site com os módulos 1 clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Usar um site chave-na-mão de instalação manual**: esta solução permite beneficiar de uma estrutura de site pronta a ser usada e personalizável (tema, textos, etc.), que deverá instalar no seu alojamento web da OVHcloud.
 
@@ -65,7 +65,7 @@ Para se ligar ao espaço de armazenamento, deve dispor dos seguintes elementos:
 - o endereço deste servidor;
 - a porta de ligação ao servidor.
 
-Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na secção “Web”, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
+Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager), na secção “Web”, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
 
 ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pod
 
 - **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível como o FileZilla. Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização.
 
-- **Utilizar um acesso SSH**: terá de executar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos técnicos avançados. Por outro lado, nem todos os planos de [alojamento web da OVHcloud](/links/web/hosting){.external} são compatíveis.
+- **Utilizar um acesso SSH**: terá de executar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos técnicos avançados. Por outro lado, nem todos os planos de [alojamento web da OVHcloud](/links/web/hosting) são compatíveis.
 
 #### 2.3. Carregar os ficheiros para o espaço de armazenamento
 
@@ -108,9 +108,9 @@ Se estiver a migrar um site já existente, obtenha a base de dados junto do anti
 
 #### 3.2. Criar a base de dados na OVHcloud 
 
-Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](/links/web/hosting){.external} ou [Web Cloud Databases](/links/web/databases){.external}), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
+Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](/links/web/hosting) ou [Web Cloud Databases](/links/web/databases)), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
 
-Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
+Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente OVHcloud](/links/manager) e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
 
 Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
 

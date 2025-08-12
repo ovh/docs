@@ -6,18 +6,18 @@ updated: 2022-05-04
 
 ## Introducción
 
-[Ghost](https://ghost.org/){.external} es un gestor de contenidos open source destinado a blogueros o periodistas que simplifica el proceso de publicación en internet. El programa está escrito en JavaScript y utiliza [Node.js](https://nodejs.org/){.external}, un entorno de ejecución que permite crear sitios web y API en JavaScript del lado del servidor.
+[Ghost](https://ghost.org/) es un gestor de contenidos open source destinado a blogueros o periodistas que simplifica el proceso de publicación en internet. El programa está escrito en JavaScript y utiliza [Node.js](https://nodejs.org/), un entorno de ejecución que permite crear sitios web y API en JavaScript del lado del servidor.
 
-En el [hosting Cloud Web de OVHcloud](/links/web/hosting-cloud-web-offer){.external}, es posible elegir Node.js como motor de ejecución de sitios web y, por lo tanto, permite instalar y alojar Ghost o cualquier otra aplicación diseñada para Node.js.
+En el [hosting Cloud Web de OVHcloud](/links/web/hosting-cloud-web-offer), es posible elegir Node.js como motor de ejecución de sitios web y, por lo tanto, permite instalar y alojar Ghost o cualquier otra aplicación diseñada para Node.js.
 
 Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web de OVHcloud y cómo publicarlo para que se pueda acceder a él a través de un dominio.
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting Cloud Web](/links/web/hosting-cloud-web-offer){.external} de OVHcloud.
+- Tener contratado un plan de [hosting Cloud Web](/links/web/hosting-cloud-web-offer) de OVHcloud.
 - Haber activado Node.js como motor de ejecución.
 - Haber añadido el dominio correspondiente como multisitio y haber establecido Node.js como motor de ejecución.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 - Conocimientos necesarios:
     - Estar familiarizado con el ecosistema Node.js.
     - Conectarse por SSH.
@@ -27,7 +27,7 @@ Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web d
 
 ### 1. Activar el motor de ejecución Node.js
 
-Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
+Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
 
 Se mostrará una tabla con los motores de ejecución que haya añadido hasta ese momento. Asegúrese de que el motor de ejecución Node.js esté activado. Si lo está, vaya al apartado [2. Asociar Node.js a un multisitio](./#2-asociar-nodejs-a-un-multisitio).
 
@@ -48,7 +48,7 @@ En la nueva ventana, cumplimente los campos con los valores que indicamos a cont
 |Entorno de la aplicación|production|
 |Script de ejecución de la aplicación|server.js|
 
-Una vez que haya introducido toda la información, haga clic en `Aceptar`{.action}. Para más información sobre los motores de ejecución, consulte nuestra guía [Gestionar los motores de ejecución en un hosting Cloud Web](/pages/web_cloud/web_hosting/manage-runtime){.external}.
+Una vez que haya introducido toda la información, haga clic en `Aceptar`{.action}. Para más información sobre los motores de ejecución, consulte nuestra guía [Gestionar los motores de ejecución en un hosting Cloud Web](/pages/web_cloud/web_hosting/manage-runtime).
 
 ![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
@@ -78,7 +78,7 @@ En la nueva ventana, cumplimente los campos según su caso particular. La siguie
 |Carpeta raíz|ghost|
 |Motor de ejecución|NodeJS 8|
 
-Active las opciones que desee. Una vez que haya introducido toda la información, haga clic en `Siguiente`{.action} y acepte. El dominio puede tardar un máximo de una hora en añadirse. Sin embargo, la modificación de la configuración DNS puede tardar hasta 24 horas en ser efectiva. Para más información sobre la gestión de multisitios, consulte nuestra guía [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
+Active las opciones que desee. Una vez que haya introducido toda la información, haga clic en `Siguiente`{.action} y acepte. El dominio puede tardar un máximo de una hora en añadirse. Sin embargo, la modificación de la configuración DNS puede tardar hasta 24 horas en ser efectiva. Para más información sobre la gestión de multisitios, consulte nuestra guía [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
 
@@ -163,7 +163,7 @@ demonon@cloudweb-ssh:~ $ cd ghost/
 demonon@cloudweb-ssh:~/ghost $
 ```
 
-Descargue la [última versión de Ghost](https://ghost.org/){.external} y descomprima el contenido.
+Descargue la [última versión de Ghost](https://ghost.org/) y descomprima el contenido.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ ls
@@ -182,7 +182,7 @@ demonon@cloudweb-ssh:~/ghost $ ls
 Gruntfile.js  LICENSE  MigratorConfig.js  PRIVACY.md  README.md  content  core  index.js  package.json  public  server.js  yarn.lock
 ```
 
-Ghost utiliza [Yarn](https://yarnpkg.com/){.external}, una alternativa a npm, para gestionar las dependencias de Node.js. Instale Yarn a través de npm y añada estos binarios a su `PATH`:
+Ghost utiliza [Yarn](https://yarnpkg.com/), una alternativa a npm, para gestionar las dependencias de Node.js. Instale Yarn a través de npm y añada estos binarios a su `PATH`:
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ npm-node8 install yarn
@@ -240,7 +240,7 @@ Ya hemos terminado de instalar y configurar Ghost. Solo queda reiniciar el demon
 
 ### 7. Reiniciar el demonio Node.js
 
-Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVHcloud](/links/manager){.external}. Abra la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al dominio y seleccione `Reiniciar`{.action}.
+Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVHcloud](/links/manager). Abra la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al dominio y seleccione `Reiniciar`{.action}.
 
 A continuación, la aplicación estará accesible desde el dominio indicado en la configuración del multisitio.
 
@@ -261,13 +261,13 @@ En este tutorial hemos explicado cómo instalar una aplicación Node.js en un ho
 
 ## Más información
 
-[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Instalar un sitio web con un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Instalar un sitio web con un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

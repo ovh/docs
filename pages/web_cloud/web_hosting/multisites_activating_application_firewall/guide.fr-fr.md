@@ -26,13 +26,13 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
-- Disposer d'au moins un [nom de domaine](/links/web/domains){.external} attaché à l'hébergement.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
+- Disposer d'au moins un [nom de domaine](/links/web/domains) attaché à l'hébergement.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
 
 ### Activer le pare-feu applicatif dans la configuration PHP
 

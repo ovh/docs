@@ -14,8 +14,8 @@ Il couvre notamment l’ajout d’un volume cloud, la configuration des paramèt
 
 Assurez-vous de disposer des éléments suivants :
 
-- Un Primary Server NetBackup installé et configuré. Voir la documentation suivante : « [Installing NetBackup primary server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020){.external} ».
-- Un serveur de médias avec option de déduplication installé sur Red Hat Enterprise ou SUSE Linux Enterprise Server. Voir la documentation suivante : « [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external} ».
+- Un Primary Server NetBackup installé et configuré. Voir la documentation suivante : « [Installing NetBackup primary server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020) ».
+- Un serveur de médias avec option de déduplication installé sur Red Hat Enterprise ou SUSE Linux Enterprise Server. Voir la documentation suivante : « [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index) ».
 - Un espace disque local disponible d’environ 1 To pour la gestion des métadonnées de déduplication.
 
 ## En pratique

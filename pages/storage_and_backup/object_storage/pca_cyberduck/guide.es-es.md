@@ -64,7 +64,7 @@ Haga clic en `Conectar`{.action}. Una vez que se haya conectado, podrá acceder 
 
 ## Más información
 
-[Documentación de Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
+[Documentación de Cyberduck](https://trac.cyberduck.io/wiki/help/en)
 
 [Empezar con la API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

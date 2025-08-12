@@ -50,8 +50,8 @@ W przypadku błędu możesz zawsze zalogować się do [przestrzeni FTP](/pages/w
 >
 > Szczegółowe informacje na temat nowej składni znajdują się na następujących oficjalnych stronach:
 >
-> - [Dokumentacja kontroli dostępu Apache 2.4](https://httpd.apache.org/docs/2.4/en/howto/access.html){.external}
-> - [Dokumentacja dotycząca modułu mod_authz_core Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html){.external}
+> - [Dokumentacja kontroli dostępu Apache 2.4](https://httpd.apache.org/docs/2.4/en/howto/access.html)
+> - [Dokumentacja dotycząca modułu mod_authz_core Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html)
 >
 
 #### Zablokuj IP
@@ -185,7 +185,7 @@ Aby zablokować domenę, wprowadź jeden z dwóch poniższych kodów do pliku ".
 >
 > Blokowanie przez ".htaccess" odbywa się za pomocą dwuliterowych "Country Codes" (ISO 3166-1 alpha2) krajów.
 >
-> Kilka stron WWW zawiera listę krajów oraz ich odpowiednich kodów "Country Codes" (w tym [https://www.iban.com/country-codes](https://www.iban.com/country-codes){.external} (niezależny od OVHcloud).
+> Kilka stron WWW zawiera listę krajów oraz ich odpowiednich kodów "Country Codes" (w tym [https://www.iban.com/country-codes](https://www.iban.com/country-codes) (niezależny od OVHcloud).
 >
 
 Aby zablokować wszystkie adresy IP danego kraju, wprowadź jeden z dwóch poniższych kodów do pliku ".htaccess":

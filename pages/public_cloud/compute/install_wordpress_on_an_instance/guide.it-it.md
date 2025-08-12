@@ -236,7 +236,7 @@ Una volta convalidato, potrai accedere allo spazio di amministrazione del tuo si
 
 > [!primary]
 >
-> Per stabilire connessioni sicure (`https`), il server web deve essere protetto tramite un'autorità di certificazione come [Let's Encrypt](https://letsencrypt.org/){.external} che offre certificati gratuiti. Per configurare Apache è necessario installare uno strumento client (ad esempio "Cerbot"). Senza questo step, il tuo sito potrà accettare solo richieste `http`.
+> Per stabilire connessioni sicure (`https`), il server web deve essere protetto tramite un'autorità di certificazione come [Let's Encrypt](https://letsencrypt.org/) che offre certificati gratuiti. Per configurare Apache è necessario installare uno strumento client (ad esempio "Cerbot"). Senza questo step, il tuo sito potrà accettare solo richieste `http`.
 > 
 > In alternativa, OVHcloud propone la soluzione [SSL Gateway](https://www.ovh.it/ssl-gateway/). Per maggiori informazioni, consulta la [nostra guida](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 >

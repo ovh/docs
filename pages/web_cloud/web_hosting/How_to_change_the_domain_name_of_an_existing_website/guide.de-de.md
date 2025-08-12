@@ -99,9 +99,9 @@ Die meisten CMS erlauben es, direkt über den Admin-Verwaltungsbereich im *Backe
 Da die CMS von Drittanbietern entwickelt werden und nicht von OVHcloud verwaltet werden, finden Sie im Folgenden die Links zur offiziellen Dokumentation der CMS, die auf unseren Webhostings zur Installation angeboten werden:
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
-- Joomla!: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weiere Informationen finden Sie auf den offiziellen Seiten [docs.joomla.org](https://docs.joomla.org/){.external} oder [forum.joomla.org](https://forum.joomla.org/){.external}.
-- Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://drupal.org){.external}.
-- PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. FWeitere Informationen finden Sie auf der [offiziellen Seite](https://help-center.prestashop.com){.external}.
+- Joomla!: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weiere Informationen finden Sie auf den offiziellen Seiten [docs.joomla.org](https://docs.joomla.org/) oder [forum.joomla.org](https://forum.joomla.org/).
+- Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://drupal.org).
+- PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. FWeitere Informationen finden Sie auf der [offiziellen Seite](https://help-center.prestashop.com).
 
 Bitte beachten Sie, dass bei diesen CMS Änderungen auch direkt vorgenommen werden können, indem Sie die verwendete [Datenbank editieren](/pages/web_cloud/web_hosting/sql_create_database). Ändern Sie dazu die URL Ihrer Website in der entsprechenden Tabelle.
 

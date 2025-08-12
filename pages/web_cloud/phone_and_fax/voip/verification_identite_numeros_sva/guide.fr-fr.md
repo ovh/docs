@@ -16,7 +16,7 @@ OVHcloud, en partenariat avec Lemonway&#174;, vous accompagne dans la mise en oe
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 

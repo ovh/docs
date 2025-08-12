@@ -15,7 +15,7 @@ Główną funkcją usługi **VMware HA** (High Availability) w razie awarii sprz
 ## Wymagania początkowe
 
 - Dostęp do [interfejsu vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion).
-- Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
+- Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
 
 ## W praktyce
 

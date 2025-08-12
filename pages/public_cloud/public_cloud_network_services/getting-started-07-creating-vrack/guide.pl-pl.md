@@ -84,7 +84,7 @@ Następnie, w razie potrzeby, będziesz mógł korzystać z API dedykowanych dla
 >
 > Ponadto w API OpenStack może brakować niektórych funkcji w zależności od wersji klienta i systemu operacyjnego.
 Niniejszy przewodnik prezentuje najprostsze i najbardziej intuicyjne opcje.
-Możesz zapoznać się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/){.external}, jeśli chcesz dowiedzieć się więcej o jej używaniu.
+Możesz zapoznać się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/), jeśli chcesz dowiedzieć się więcej o jej używaniu.
 >
 
 Więcej informacji znajdziesz w przewodniku: [Konfiguracja Public Cloud vRack przy użyciu OpenStack CLI](/pages/public_cloud/public_cloud_network_services/getting-started-09-creating-vrack-with-openstack).
@@ -282,7 +282,7 @@ Przejdź do [tej sekcji](/pages/public_cloud/public_cloud_network_services/getti
 
 #### Zarządzanie interfejsami sieciowymi za pomocą OpenStack Horizon
 
-Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}, przy użyciu metody określonej w [pierwszej części niniejszego przewodnika](./#interfejs-horizon).
+Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/), przy użyciu metody określonej w [pierwszej części niniejszego przewodnika](./#interfejs-horizon).
 
 Wybierz właściwą strefę roboczą.
 

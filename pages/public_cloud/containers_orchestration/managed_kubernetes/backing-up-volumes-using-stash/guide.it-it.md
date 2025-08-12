@@ -4,7 +4,7 @@ excerpt: Backing-up Persistent Volumes using Stash
 updated: 2024-06-21
 ---
 
-In this tutorial, we are using [Stash](https://stash.run/){.external} to backup and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
+In this tutorial, we are using [Stash](https://stash.run/) to backup and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
 
 Stash is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes persistent volumes.
 

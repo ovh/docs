@@ -19,7 +19,7 @@ Wynika to z faktu, że snapshot Twojej wirtualnej maszyny jest zainstalowany na 
 
 - Posiadanie kontaktu administracyjnego infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymać dane do logowania.
 - Posiadanie aktywnego identyfikatora użytkownika (utworzonego w [Panelu klienta OVHcloud](/links/manager))
-- Włącz opcję [Veeam Backup Managed](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external}.
+- Włącz opcję [Veeam Backup Managed](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/veeam-backup-managed/).
 
 ## W praktyce
 

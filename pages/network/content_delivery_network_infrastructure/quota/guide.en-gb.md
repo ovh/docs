@@ -12,7 +12,7 @@ With the Content Delivery Network (CDN), you can optimise your website’s respo
 
 ## Requirements
 
-- access to the [OVH Control Panel](/links/manager){.external}
+- access to the [OVH Control Panel](/links/manager)
 
 ## Instructions
 
@@ -20,11 +20,11 @@ With the Content Delivery Network (CDN), you can optimise your website’s respo
 
 When you place an order, it comes with a **1 TB** quota allowance for traffic. It is important to note that this quota is not renewed monthly with your solution. Once you have used up this quota allowance (regardless of duration), you will need to add more quota allowance.
 
-If you need additional quota, you can order it directly via the [OVH Control Panel](/links/manager){.external}:
+If you need additional quota, you can order it directly via the [OVH Control Panel](/links/manager):
 
 ![Add quota](images/add_quota.png){.thumbnail}
 
-You can view the prices for quota allowance on our [website](/links/network/cdn-infrastructure){.external}.
+You can view the prices for quota allowance on our [website](/links/network/cdn-infrastructure).
 
 You are automatically notified when you have **100 GB** of quota remaining, so that you have time to order more bandwidth in advance. If you run out of quota allowance, the  `bypass` is automatically enabled until you order more quota.
 

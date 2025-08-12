@@ -19,9 +19,9 @@ Se il dominio è registrato in OVHcloud e vuoi connetterlo a un hosting SquareSp
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
-- Disporre di un [dominio](/links/web/domains){.external} registrato in OVHcloud.
-- Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un [dominio](/links/web/domains) registrato in OVHcloud.
+- Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di un hosting in SquareSpace.
 - Avere accesso alla gestione di questo hosting su SquareSpace.
 
@@ -35,7 +35,7 @@ Prima di eseguire i due passaggi di questa guida, ti consigliamo di familiarizza
 
 ### Configurare i record DNS su un account OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS del dominio selezionato.
 
@@ -88,17 +88,17 @@ Le operazioni per questo step devono essere effettuate dallo spazio di gestione 
 > [!primary]
 >
 > - Puoi connettere il tuo dominio a un sito SquareSpace di prova o a pagamento. Non è possibile connetterlo a un sito scaduto.
-> - Se al dominio è associato un account email, è possibile continuare a utilizzarlo dopo che il dominio si è connesso a SquareSpace. Prima di connettere il dominio, consigliamo di consultare questa [guida SquareSpace](https://support.squarespace.com/hc/it/articles/217601877-Usare-un-indirizzo-email-di-dominio-personalizzato-di-cui-gi%C3%A0-disponi-con-Squarespace){.external}.
+> - Se al dominio è associato un account email, è possibile continuare a utilizzarlo dopo che il dominio si è connesso a SquareSpace. Prima di connettere il dominio, consigliamo di consultare questa [guida SquareSpace](https://support.squarespace.com/hc/it/articles/217601877-Usare-un-indirizzo-email-di-dominio-personalizzato-di-cui-gi%C3%A0-disponi-con-Squarespace).
 > - Puoi utilizzare diversi domini personalizzati per il tuo sito Web. È possibile connetterne o salvarne quante volte si desidera.
 > - Non è possibile connettere un dominio personalizzato a SquareSpace se il dominio include la parola "squarespace" o "sqsp".
 
-Per iniziare, segui la procedura di connessione descritta nello step 1 di questa [guida SquareSpace](https://support.squarespace.com/hc/it/articles/12880712406797-Collegare-un-dominio-OVHcloud-al-sito-Squarespace){.external}.
+Per iniziare, segui la procedura di connessione descritta nello step 1 di questa [guida SquareSpace](https://support.squarespace.com/hc/it/articles/12880712406797-Collegare-un-dominio-OVHcloud-al-sito-Squarespace).
 
 > [!warning]
 >
 > Se ricevi l'alert "This domain is already connected to another Squarespace site" (questo dominio è già connesso a un altro sito Squarespace), controlla gli altri tuoi siti Squarespace per determinare a quale sito è connesso il dominio. A questo punto, disconnetterlo da questo sito Web.
 
-Per continuare il processo, passa allo step 2 di questa [guida SquareSpace](https://support.squarespace.com/hc/it/articles/12880712406797-Collegare-un-dominio-OVHcloud-al-sito-Squarespace){.external}.
+Per continuare il processo, passa allo step 2 di questa [guida SquareSpace](https://support.squarespace.com/hc/it/articles/12880712406797-Collegare-un-dominio-OVHcloud-al-sito-Squarespace).
 
 Se utilizzi un servizio di posta elettronica OVHcloud o intendi sottoscrivere una delle [nostre soluzioni di posta](/links/web/emails), prepara la zona DNS di conseguenza. Consulta la nostra guida "[Configurazione di un record MX](/pages/web_cloud/domains/dns_zone_mx)".
 

@@ -66,7 +66,7 @@ Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consulte
 
 ### Déploiement de votre image via les API <a name="viaapi"></a>
 
-Connectez-vous sur [https://api.ovh.com/](/links/api){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
+Connectez-vous sur [https://api.ovh.com/](/links/api) puis rendez-vous dans la section `/dedicated/server`{.action}.
 
 > [!api]
 >

@@ -66,7 +66,7 @@ L’outil [FIO](https://github.com/axboe/fio) vous permet de tester plusieurs sc
 - le nombre de FIO workers ;
 - le modèle d’accès (lecture/écriture/séquentiel/aléatoire), etc.
 
-Retrouvez plus d'informations sur [la documentation de FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
+Retrouvez plus d'informations sur [la documentation de FIO](https://fio.readthedocs.io/en/latest/index.html).
 
 ## Aller plus loin
 

@@ -173,7 +173,7 @@ Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 >>
 >> Il protocollo DANE permette a un cliente (browser Internet, client di posta, client FTP, client SSH, ecc.) di consultare il record TLSA. In questo modo, si assicura che un certificato SSL/TLS utilizzato per un dominio sia effettivamente quello che certifica lo stesso dominio.
 >>
->> Se necessario, consulta i dettagli sul sito dell' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>> Se necessario, consulta i dettagli sul sito dell' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
 
 #### Casi d'uso particolari: l'utilizzo dei record CNAME <a name="cnameusecase"></a>

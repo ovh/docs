@@ -93,7 +93,7 @@ Si, par la suite, vous devez détacher le bloc IP, vous pouvez utiliser cet appe
 > Cet appel coupe le réseau sur les VMs qui utilisent les IPs en question.
 >
 
-Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](/links/manager){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}. Cliquez sur votre service Hosted Private Cloud puis sur l'onglet `Operations`{.action}.
+Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}. Cliquez sur votre service Hosted Private Cloud puis sur l'onglet `Operations`{.action}.
 
 La référence de l'opération est « removeIpRipeBlock ».
 

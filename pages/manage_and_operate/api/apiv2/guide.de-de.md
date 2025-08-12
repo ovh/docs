@@ -6,11 +6,11 @@ updated: 2023-04-17
 
 ## Objective
 
-The APIs available at [https://eu.api.ovh.com/](/links/api){.external} allow you to buy, manage, update and configure OVHcloud products without using a graphical interface like the OVHcloud Control Panel.
+The APIs available at [https://eu.api.ovh.com/](/links/api) allow you to buy, manage, update and configure OVHcloud products without using a graphical interface like the OVHcloud Control Panel.
 
 Historically, OVHcloud APIs have been available under the **/1.0** branch corresponding to the first version of the API that we published. 
 
-A new section of the OVHcloud APIs is available under the prefix **/v2** on [https://eu.api.ovh.com/v2](https://api.ovh.com/console-preview/?branch=v2){.external}. 
+A new section of the OVHcloud APIs is available under the prefix **/v2** on [https://eu.api.ovh.com/v2](https://api.ovh.com/console-preview/?branch=v2). 
 
 This new branch will bring together new API routes, reworked in a new format, and become the main API branch for new feature developments of OVHcloud products.<br>
 The **/1.0** branch will continue to exist in parallel to the **/v2** branch but will not contain the same functionality. As a customer, you can consume APIs from branch **/1.0** and **/v2** simultaneously in your programs, while retaining the same authentication and tools to call the API. To standardise the naming of our API branches, the **/1.0** branch is also available via the **/v1** alias.
@@ -52,7 +52,7 @@ When a major new version is released, we will evaluate the impact of this new ve
 
 #### Retrieve available versions via the console
 
-You can see the list of versions available on the OVHcloud API console. To do this, open the [console](https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#servers){.external}.
+You can see the list of versions available on the OVHcloud API console. To do this, open the [console](https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#servers).
 
 The different versions are displayed in the **SCHEMAS VERSION** section. You can then select a version to view the associated API schemas.
 
@@ -65,9 +65,9 @@ There are two opposing approaches to seeing the current state of a resource thro
 - **Process-centred approach**: The API exposes the current state of resources (for example, a Public Cloud instance) and offers operations for modifying them (for example, changing the size of a disk).
 - **Resource-centred approach**: The API exposes both the current state of resources and the desired state. Changes are made directly by updating the desired state of the resources. In this case, the API takes the necessary actions itself to reach the targeted state.
 
-The first approach is the one used by the current API: [https://eu.api.ovh.com/v1](https://eu.api.ovh.com/v1){.external}.
+The first approach is the one used by the current API: [https://eu.api.ovh.com/v1](https://eu.api.ovh.com/v1).
 
-The APIv2 uses the resource-centric approach, which makes it easier to use *as-code*, particularly with tools like [Terraform](https://www.terraform.io){.external}. This operation also abstracts all the complexity of the process of transforming a resource from one state to another since it is the responsibility of the API and not the customer.
+The APIv2 uses the resource-centric approach, which makes it easier to use *as-code*, particularly with tools like [Terraform](https://www.terraform.io). This operation also abstracts all the complexity of the process of transforming a resource from one state to another since it is the responsibility of the API and not the customer.
 
 ### Asynchronous management and events
 
@@ -155,9 +155,9 @@ The absence of the `X-Pagination-Cursor-Next` header in an API response containi
 
 Several libraries are available to use the OVHcloud APIs:
 
-- Go: [https://github.com/ovh/go-ovh](https://github.com/ovh/go-ovh){.external}
-- Python: [https://github.com/ovh/python-ovh](https://github.com/ovh/python-ovh){.external}
-- PHP: [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh){.external}
+- Go: [https://github.com/ovh/go-ovh](https://github.com/ovh/go-ovh)
+- Python: [https://github.com/ovh/python-ovh](https://github.com/ovh/python-ovh)
+- PHP: [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 
 ## Go further <a name="gofurther"></a>
 

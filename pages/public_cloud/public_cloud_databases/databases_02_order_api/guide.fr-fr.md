@@ -12,7 +12,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 ## Requirements
 
-- access to the [OVHcloud API](/links/api){.external} (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
+- access to the [OVHcloud API](/links/api) (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
 - a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions

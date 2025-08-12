@@ -173,7 +173,7 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> The DANE protocol allows a client (internet browser, email client, FTP client, SSH client, etc.) to view the TLSA record. This way, they can ensure that an SSL/TLS certificate used for a domain name is the one certifying the same domain name.
 >>
->> If you need further information, please visit the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} website.
+>> If you need further information, please visit the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) website.
 >>
 
 #### Special use case: CNAME records <a name="cnameusecase"></a>

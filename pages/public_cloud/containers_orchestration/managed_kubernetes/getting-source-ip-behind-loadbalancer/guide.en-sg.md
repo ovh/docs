@@ -32,7 +32,7 @@ The easiest way to deploy services behind the Load Balancer while keeping the so
 
 The `Ingress` is exposed to the outside of the cluster either via  `LoadBalancer`, and it routes incoming traffic to your services according to configured rules. And additional advantage of this setting is the cost: you can have lots of services behind a single `LoadBalancer`.
 
-In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx){.external}, where an NGINX server take the role of reverse proxy.
+In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx), where an NGINX server take the role of reverse proxy.
 
 ### 1. Installing the NGINX Ingress Controller
 

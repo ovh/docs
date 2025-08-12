@@ -11,7 +11,7 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) PrestaShop
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den [Herausgeber von PrestaShop](https://www.prestashop.com/en/support){.external} zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den [Herausgeber von PrestaShop](https://www.prestashop.com/en/support) zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 > [!success]
@@ -147,7 +147,7 @@ Speichern Sie Ihre Login-Daten zu PrestaShop, bevor Sie die Seite verlassen.
 >
 > **Aus Sicherheitsgründen wird empfohlen, die Installationsdatei in Ihrem FTP-Bereich zu löschen.**
 >
-> Um diese Aktion durchzuführen, folgen Sie unserer Anleitung ["Mit dem Speicherplatz eines Webhostings verbinden"](/pages/web_cloud/web_hosting/ftp_connection) und nutzen Sie das [PrestaShop Forum](https://www.prestashop.com/forums/){.external}, um sicherzustellen, dass die richtigen Dateien gelöscht werden.
+> Um diese Aktion durchzuführen, folgen Sie unserer Anleitung ["Mit dem Speicherplatz eines Webhostings verbinden"](/pages/web_cloud/web_hosting/ftp_connection) und nutzen Sie das [PrestaShop Forum](https://www.prestashop.com/forums/), um sicherzustellen, dass die richtigen Dateien gelöscht werden.
 >
 
 > [!success]

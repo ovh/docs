@@ -22,7 +22,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un dominio registrato in OVHcloud e per il quale non sono in corso operazioni (modifica del titolare, trasferimento, creazione). Se un'operazione è stata ultimata di recente sul tuo dominio, prima di eseguire una nuova operazione è necessario almeno 60 giorni di calendario.
 - Il tuo account cliente è il [contatto amministratore e di fatturazione](/pages/account_and_service_management/account_information/managing_contacts) del dominio interessato.
 - Disporre del consenso del titolare attuale del dominio per effettuare il cambio di titolare.

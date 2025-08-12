@@ -12,7 +12,7 @@ Jumbo frames are Ethernet frames with more than 1500 bytes of payload. They can 
 
 ## Requirements
 
-- a [vRack](/links/network/vrack){.external}
+- a [vRack](/links/network/vrack)
 - run a shell as root
 
 > [!warning]

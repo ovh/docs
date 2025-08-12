@@ -40,7 +40,7 @@ Nous nous appuierons pour cela sur les fonctions embarquées que propose VMware,
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Posséder un serveur dédié avec la solution ESXi déployée.
 - Avoir souscrit à une offre compatible avec notre fonctionnalité [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) si vous souhaitez l'utiliser pour effectuer le filtrage.
 

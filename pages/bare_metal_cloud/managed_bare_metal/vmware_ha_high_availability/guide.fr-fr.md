@@ -15,7 +15,7 @@ La fonction principale de **VMware HA** (High Availability) en cas de défaillan
 ## Prérequis
 
 - Être connecté à votre [interface vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
-- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
+- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
 
 ## En pratique
 

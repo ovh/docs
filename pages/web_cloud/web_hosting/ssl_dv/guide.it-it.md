@@ -20,7 +20,7 @@ I livelli di crittografia SSL sono identici tra questi tre tipi di certificati.
 
 La principale differenza risiede nel livello di controlli che saranno effettuati dall'Autorità di Certificazione (CA) che rilascia il certificato SSL e ne attesta l'autenticità.
 
-Per gli hosting condivisi OVHcloud, l'autorità di certificazione che rilascia i certificati SSL DV è [Sectigo](https://sectigostore.com){.external}.
+Per gli hosting condivisi OVHcloud, l'autorità di certificazione che rilascia i certificati SSL DV è [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >

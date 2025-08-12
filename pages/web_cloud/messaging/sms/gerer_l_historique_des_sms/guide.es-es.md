@@ -15,7 +15,7 @@ Esta guía explica cómo consultar y descargar el historial de SMS enviados desd
 ## Requisitos
 
 - Tener una cuenta de SMS de OVHcloud con la que haya enviado al menos un SMS.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Telecom`{.action} > `SMS`{.action}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Telecom`{.action} > `SMS`{.action}.
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

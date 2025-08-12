@@ -12,7 +12,7 @@ Znajdziesz tutaj wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS Joomla!](https://www.joomla.org/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS Joomla!](https://www.joomla.org/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Znajdziesz tutaj wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 
 - Posiadanie oferty [hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)
-- Dostęp do[Panelu klienta OVHcloud](/links/manager){.external}
+- Dostęp do[Panelu klienta OVHcloud](/links/manager)
   
 ## W praktyce
 
@@ -131,7 +131,7 @@ Instalacja została zakończona, ale w razie potrzeby możesz dodać dodatkowe j
   
 ## Sprawdź również <a name="go-further"></a>
 
-[Oficjalna strona Joomla!](https://joomla.org){.external}
+[Oficjalna strona Joomla!](https://joomla.org)
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  

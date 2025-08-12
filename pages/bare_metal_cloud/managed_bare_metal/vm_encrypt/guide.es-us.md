@@ -12,8 +12,8 @@ El servicio Managed Bare Metal de OVHcloud permite gestionar el cifrado de las m
 
 ## Requisitos
 
-- Tener contratado el servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
-- Tener un servicio de administración de claves (KMS) externo compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** dentro de la [matriz de compatibilidad](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
+- Tener contratado el servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/).
+- Tener un servicio de administración de claves (KMS) externo compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)) 1.1** dentro de la [matriz de compatibilidad](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc) VMware.
 - Estar conectado a la interfaz de gestión vSphere.
 - Tener máquinas virtuales con una versión Hardware 13 (mínimo).
 
@@ -136,7 +136,7 @@ Elija las siguientes opciones:
 
 #### Importar el certificado KMS
 
-La mayoría de proveedores de KMS necesitan un certificado para [establecer una conexión segura](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} con el vCenter.
+La mayoría de proveedores de KMS necesitan un certificado para [establecer una conexión segura](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html) con el vCenter.
 
 Seleccione el servidor KMS en el vCenter en el que se ha añadido el mismo. En «Todas las opciones», haga clic en `Establecer un enlace de confianza con KMS`{.action}.
 

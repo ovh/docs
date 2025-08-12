@@ -110,10 +110,10 @@ Balance your databases, and make them redundant.
 
 ## Go further
 
-[Find out more about load balancing](https://en.wikipedia.org/wiki/Load_balancing){.external}.
+[Find out more about load balancing](https://en.wikipedia.org/wiki/Load_balancing).
 
-[Find out more about HAProxy](http://www.haproxy.org/#desc){.external}.
+[Find out more about HAProxy](http://www.haproxy.org/#desc).
 
-[Find out more about Nginx](https://en.wikipedia.org/wiki/Nginx){.external}.
+[Find out more about Nginx](https://en.wikipedia.org/wiki/Nginx).
 
 Join our community of users on <https://community.ovh.com/en/>.

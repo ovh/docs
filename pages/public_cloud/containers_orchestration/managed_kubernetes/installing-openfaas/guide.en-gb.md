@@ -10,19 +10,19 @@ The following guide details an OpenFaas installation on an OVHcloud Managed Kube
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
 ## OpenFaaS, a Kubernetes-native FaaS platform
 
 ![OpenFaas logo](images/openfaas-logo.png){.thumbnail}
 
-[OpenFaaS](https://github.com/openfaas/faas){.external} is an open source framework for building Serverless functions with Docker and Kubernetes.
+[OpenFaaS](https://github.com/openfaas/faas) is an open source framework for building Serverless functions with Docker and Kubernetes.
 
 More details about the OpenFaaS architecture can be found in the [official documentation](https://docs.openfaas.com/architecture/stack).
 
 ## Deploying OpenFaaS on OVHcloud Managed Kubernetes
 
-The official Helm chart for OpenFaas is [published on the faas-netes repository](https://github.com/openfaas/faas-netes/blob/master/chart/openfaas){.external}. The following section describes how to install it on your OVHcloud Managed Kubernetes cluster.
+The official Helm chart for OpenFaas is [published on the faas-netes repository](https://github.com/openfaas/faas-netes/blob/master/chart/openfaas). The following section describes how to install it on your OVHcloud Managed Kubernetes cluster.
 
 ### 1. Load the OpenFaaS helm chart repository
 
@@ -192,7 +192,7 @@ All available templates are available in the [official template repository](http
 ./faas-cli template store list
 ```
 
-This example will use [NodeJS](https://nodejs.org/){.external} to create a *hello world* function. Let's begin by creating and scaffolding the function folder:
+This example will use [NodeJS](https://nodejs.org/) to create a *hello world* function. Let's begin by creating and scaffolding the function folder:
 
 ```console
 mkdir hello-js-project
@@ -251,7 +251,7 @@ Congratulations, you have written and deployed your first OpenFaaS function usin
 
 ## Where do we go from here?
 
-To learn more about OpenFaaS, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/){.external}. You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop){.external} to learn in a more practical way.
+To learn more about OpenFaaS, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/). You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop) to learn in a more practical way.
 
 ## Go further
 

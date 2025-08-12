@@ -157,8 +157,8 @@ The publishing action is in fact done in two steps:
 
 ## Go further
 
-[Kafka Official documentation](https://kafka.apache.org/documentation/){.external}
+[Kafka Official documentation](https://kafka.apache.org/documentation/)
 
-[Confluent Kafka Python library](https://github.com/confluentinc/confluent-kafka-python){.external}
+[Confluent Kafka Python library](https://github.com/confluentinc/confluent-kafka-python)
 
 Join our [community of users](/links/community).

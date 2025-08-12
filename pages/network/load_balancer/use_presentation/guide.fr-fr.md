@@ -111,10 +111,10 @@ Répartissez la charge entre vos serveurs de messagerie :
 
 ## Aller plus loin
 
-[En apprendre plus sur la répartition de charge](https://fr.wikipedia.org/wiki/Repartition_de_charge){.external}.
+[En apprendre plus sur la répartition de charge](https://fr.wikipedia.org/wiki/Repartition_de_charge).
 
-[En apprendre plus sur Haproxy](http://www.haproxy.org/#desc){.external}.
+[En apprendre plus sur Haproxy](http://www.haproxy.org/#desc).
 
-[En apprendre plus sur Nginx](https://fr.wikipedia.org/wiki/Nginx){.external}.
+[En apprendre plus sur Nginx](https://fr.wikipedia.org/wiki/Nginx).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

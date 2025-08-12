@@ -112,5 +112,5 @@ Happy development !
 
 ## Go further
 
-- [API Console](/links/api){.external}
+- [API Console](/links/api)
 

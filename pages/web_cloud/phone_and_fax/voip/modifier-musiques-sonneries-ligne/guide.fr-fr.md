@@ -12,9 +12,9 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 
 ## Prérequis
 
-- Disposer d'une [ligne téléphonique OVHcloud Entreprise](/links/telecom/telephonie){.external}
+- Disposer d'une [ligne téléphonique OVHcloud Entreprise](/links/telecom/telephonie)
 - Être en possession de la ou des musiques ou sonneries que vous souhaitez utiliser, au format audio adéquat.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Certaines règles et informations sont à prendre en considération en ce qui co
 > Vous pouvez faire appel à un [prestataire spécialisé](/links/partner) mais sachez qu'il est également possible de créer des fichiers-sons par vos propres moyens :
 > 
 > - Soit en laissant un message sur le répondeur de votre ligne OVHcloud puis en le téléchargeant. Plus d'informations sur [notre guide d'utilisation du répondeur](/pages/web_cloud/phone_and_fax/voip/configurer-consulter-repondeur-ligne-ovh).
-> - Soit via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/){.external}.
+> - Soit via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/).
 >
 
 Une fois que vous êtes prêt, en dessous de la musique ou de la sonnerie que vous voulez modifier, choisissez `Personnalisée` dans le menu déroulant puis cliquez sur le bouton `Choisir un fichier`{.action}. Dans la fenêtre qui s'ouvre, retrouvez le fichier audio que vous souhaitez utiliser. Une fois sélectionné, cliquez sur le bouton `Envoyer le fichier`{.action}.

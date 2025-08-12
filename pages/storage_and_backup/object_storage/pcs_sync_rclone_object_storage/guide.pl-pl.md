@@ -12,8 +12,8 @@ rClone to zewnętrzne oprogramowanie do synchronizacji, szczegółowe informacje
 
 ## Wymagania początkowe
 
-- Utworzony kontener *Object Storage* (z poziomu Panelu klienta lub z poziomu [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container){.external}).
-- Utworzony [użytkownik OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user){.external}.
+- Utworzony kontener *Object Storage* (z poziomu Panelu klienta lub z poziomu [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container)).
+- Utworzony [użytkownik OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 ## W praktyce
 
@@ -21,9 +21,9 @@ Po utworzeniu kontenera oraz użytkownika OpenStack do wykonania pozostają dwie
 
 ### Uzyskanie pliku konfiguracyjnego do rClone:
 
-Po utworzeniu [użytkownika OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user){.external} w Panelu klienta możesz uzyskać plik konfiguracyjny rClone.
+Po utworzeniu [użytkownika OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) w Panelu klienta możesz uzyskać plik konfiguracyjny rClone.
 
-W tym celu, na stronie użytkowników OpenStack w Panelu klienta, należy kliknąć ikonę klucza francuskiego, znajdującą się z prawej strony identyfikatora użytkownika, a następnie kliknąć `Pobierz plik konfiguracyjny rClone`{.external}.
+W tym celu, na stronie użytkowników OpenStack w Panelu klienta, należy kliknąć ikonę klucza francuskiego, znajdującą się z prawej strony identyfikatora użytkownika, a następnie kliknąć `Pobierz plik konfiguracyjny rClone`.
 ![Pobierz plik konfiguracyjny rClone](images/download_file.png){.thumbnail}
 
 ### Konfiguracja rClone:
@@ -49,7 +49,7 @@ Rclone lsd BackupStorage
 
 *BackupStorage* odpowiada nazwie nadanej przestrzeni dyskowej.
 
-Na oficjalnej stronie rClone znajduje się dokładna dokumentacja opisująca działania potrzebne do przeprowadzenia synchronizacji Object Storage poprzez rClone: [Oficjalna dokumentacja rClone](https://Rclone.org/swift/){.external}.
+Na oficjalnej stronie rClone znajduje się dokładna dokumentacja opisująca działania potrzebne do przeprowadzenia synchronizacji Object Storage poprzez rClone: [Oficjalna dokumentacja rClone](https://Rclone.org/swift/).
 
 ## Sprawdź również
 

@@ -75,7 +75,7 @@ Nachdem diese Umstellung erfolgt ist, [richten Sie **erneut** eine Backup-Adress
 
 In diesem Fall kann Ihnen der Telefonsupport von OVHcloud nicht unmittelbar helfen.
 
-Folgen Sie diesem [Vorgang](https://www.ovh.de/cgi-bin/de/procedure/procedureChangeEmail.cgi){.external}, damit Ihre Identität überprüft werden kann.
+Folgen Sie diesem [Vorgang](https://www.ovh.de/cgi-bin/de/procedure/procedureChangeEmail.cgi), damit Ihre Identität überprüft werden kann.
 
 Nach Eingang der E-Mail bei OVHcloud ersetzen wir Ihre Kontakt-E-Mail-Adresse, sofern alle angeforderten Nachweise übereinstimmen.
 

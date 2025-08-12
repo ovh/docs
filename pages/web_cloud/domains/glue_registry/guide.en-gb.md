@@ -39,9 +39,9 @@ Depending on your needs, you can customise your OVHcloud domain name’s DNS ser
 
 ### 1 - Retrieve the DNS servers currently used by your domain name <a name="step1"></a>
 
-You can retrieve the DNS servers currently used by your domain name using the online DNS tool [Zonemaster](https://zonemaster.net/en/run-test){.external}.
+You can retrieve the DNS servers currently used by your domain name using the online DNS tool [Zonemaster](https://zonemaster.net/en/run-test).
 
-To do this, go to [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, enter your domain name without *www* (*domain.tld*), then tick the `Options`{.action} button located just below the domain name entry form.
+To do this, go to [https://zonemaster.net](https://zonemaster.net/en/run-test), enter your domain name without *www* (*domain.tld*), then tick the `Options`{.action} button located just below the domain name entry form.
 
 In the available options, click on the button `Fetch NS from parent zone`{.action}.
 

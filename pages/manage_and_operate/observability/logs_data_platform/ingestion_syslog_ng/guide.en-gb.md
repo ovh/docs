@@ -16,7 +16,7 @@ In this tutorial will show you how to send Logs from your Linux instance to Logs
 
 - A **Linux** based instance (server, VPS, Cloud instance, Raspberry Pi, ...). Command lines will be for **DEBIAN 12** in this tutorial
 - A root access to this instance
-- [Activated your Logs Data Platform account](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29)
 - [To create at least one Stream and get its token](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ## Instructions
@@ -40,7 +40,7 @@ Conclusion: lot of info, with a date, a process, a description. but hard to foll
 
 ### Configure your Account
 
-First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) Read it? Let's go to the next step then !
+First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)), a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) Read it? Let's go to the next step then !
 
 ### Install and configure a log collector
 
@@ -159,5 +159,5 @@ The best feature is the ability to mix criteria, based on what is important to y
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

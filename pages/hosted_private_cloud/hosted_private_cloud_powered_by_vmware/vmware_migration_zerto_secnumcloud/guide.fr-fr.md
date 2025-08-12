@@ -70,7 +70,7 @@ Cette conception réseau sera recréée dans votre tenant HPC OVHcloud à l'aide
 
 Retrouvez plus d'informations sur la planification du réseau dans notre guide « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) ».
 
-Pour obtenir des conseils supplémentaires sur l'utilisation de Zerto, référez-vous à la documentation suivante : [Installer la solution Zerto](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external}.
+Pour obtenir des conseils supplémentaires sur l'utilisation de Zerto, référez-vous à la documentation suivante : [Installer la solution Zerto](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm).
 
 ### Étape 2 : Planifier les ressources de votre Hosted Private Cloud
 
@@ -146,7 +146,7 @@ Les composants Zerto nécessitent des rôles et des autorisations vSphere spéci
 - Créer un compte dédié `zerto-admin` dans vSphere.
 - Attribuer les privilèges nécessaires pour gérer la réplication et la restauration.
 
-Les détails sur les autorisations requises sont disponibles dans la documentation de Zerto : [Rôles et autorisations dans Zerto](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Roles_and_Permissions_Within_.htm){.external}.
+Les détails sur les autorisations requises sont disponibles dans la documentation de Zerto : [Rôles et autorisations dans Zerto](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Roles_and_Permissions_Within_.htm).
 
 ### Étape 5 : Construire le réseau cible
 
@@ -229,7 +229,7 @@ Tous les détails sont disponibles dans notre guide « [Utiliser Zerto entre OVH
 
 Vous devez installer manuellement les composants Zerto sur votre infrastructure on-premises.
 
-Suivez la procédure décrite dans le guide Zerto suivant : [Réaliser une installation rapide](https://help.zerto.com/bundle/Install.VC.HTML/page/Performing_an_Express_Installation.htm){.external}.
+Suivez la procédure décrite dans le guide Zerto suivant : [Réaliser une installation rapide](https://help.zerto.com/bundle/Install.VC.HTML/page/Performing_an_Express_Installation.htm).
 
 Les principaux composants sont les suivants :
 
@@ -260,7 +260,7 @@ Une fois les ZVM en ligne et la communication validée :
 
 Un VPG regroupe toutes les VM qui doivent être répliquées et basculées ensemble.
 
-Retrouvez plus d'informations dans le guide Zerto suivant : [Créer un VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external} .
+Retrouvez plus d'informations dans le guide Zerto suivant : [Créer un VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm) .
 
 ### Étape 11 : Surveiller l'état de la réplication
 
@@ -270,7 +270,7 @@ Surveillez chaque VPG depuis l'interface utilisateur Zerto :
 - Vérifiez le RPO (Recovery Point Objective).
 - Résolvez les alertes avant d'exécuter un test ou un failover.
 
-Si besoin, consultez le guide Zerto suivant : [Surveillance des groupes de protection virtuels](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm){.external}.
+Si besoin, consultez le guide Zerto suivant : [Surveillance des groupes de protection virtuels](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm).
 
 ### Étape 12 : Exécuter un test de failover
 
@@ -280,8 +280,8 @@ Utilisez l'option `Failover Test` dans l'interface utilisateur Zerto. Cela perme
 
 Retrouvez ci-dessous les guides de Zerto à ce sujet :
 
-- [Démarrage et arrêt des tests de failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
-- [Que se passe-t-il après avoir démarré un test ?](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm){.external}
+- [Démarrage et arrêt des tests de failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm)
+- [Que se passe-t-il après avoir démarré un test ?](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm)
 
 ### Étape 13 : Exécuter la migration prévue
 
@@ -290,7 +290,7 @@ Lorsque vous êtes prêt à migrer :
 1. Utilisez l'opération **Move** dans Zerto pour migrer chaque VPG.
 2. Choisissez la stratégie de validation (manuelle, automatique, annulation).
 
-Pour obtenir des instructions complètes, référez-vous au guide Zerto suivant : [Processus de déplacement](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external}.
+Pour obtenir des instructions complètes, référez-vous au guide Zerto suivant : [Processus de déplacement](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm).
 
 ### Étape 14 : Valider la disponibilité de l'application
 
@@ -306,7 +306,7 @@ Si tous les tests réussissent, validez l'opération dans Zerto.
 
 Si quelque chose ne fonctionne pas, vous pouvez annuler le déplacement et revenir à votre environnement local.
 
-Voir le guide Zerto suivant : [Déplacement des machines virtuelles protégées vers le site distant](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm){.external}.
+Voir le guide Zerto suivant : [Déplacement des machines virtuelles protégées vers le site distant](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm).
 
 ### Étape 16 : Utiliser Storage vMotion pour placer les VM sur le stockage cible
 
@@ -333,6 +333,6 @@ Vous disposez de 2 options :
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
 
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud){.external} dédié.
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

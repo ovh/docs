@@ -68,7 +68,7 @@ Deve também:
 
 ### Desbloquear o nome de domínio e recuperar o código de transferência
 
-Para desbloquear o domínio e obter o código de transferência, siga os passos descritos na [documentação dedicada do Wix](https://support.wix.com/pt/article/transferir-o-seu-dom%C3%ADnio-para-fora-do-wix){.external}.
+Para desbloquear o domínio e obter o código de transferência, siga os passos descritos na [documentação dedicada do Wix](https://support.wix.com/pt/article/transferir-o-seu-dom%C3%ADnio-para-fora-do-wix).
 
 ### Iniciar a transferência do domínio para a OVHcloud
 

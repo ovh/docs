@@ -49,10 +49,10 @@ Accedi alle impostazioni del browser e controlla se è disponibile un aggiorname
 
 Di seguito vengono descritte le procedure per l'aggiornamento dei principali browser Internet (documentazione fornita dai rispettivi produttori):
 
-- [Firefox](https://support.mozilla.org/it/kb/aggiornamento-firefox){.external}.
-- [Chrome](https://support.google.com/chrome/answer/95414?hl=it&co=GENIE.Platform%3DDesktop&oco=0){.external}.
-- [Safari](https://support.apple.com/it-it/102665){.external}.
-- [Edge](https://support.microsoft.com/it-it/topic/impostazioni-di-aggiornamento-di-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}.
+- [Firefox](https://support.mozilla.org/it/kb/aggiornamento-firefox).
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=it&co=GENIE.Platform%3DDesktop&oco=0).
+- [Safari](https://support.apple.com/it-it/102665).
+- [Edge](https://support.microsoft.com/it-it/topic/impostazioni-di-aggiornamento-di-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1).
 
 Se il browser utilizzato non è presente nell'elenco, consultare la documentazione disponibile online o contattare il supporto dell'editore.
 

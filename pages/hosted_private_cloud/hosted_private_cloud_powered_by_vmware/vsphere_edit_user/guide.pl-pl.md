@@ -12,7 +12,7 @@ Możliwe jest powiązanie imienia, nazwiska, numeru telefonu i adresu e-mail z u
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}.
+- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
@@ -37,4 +37,4 @@ Kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić zmiany.
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/)

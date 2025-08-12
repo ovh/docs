@@ -60,7 +60,7 @@ Enfin, intégrez dès le départ des outils de supervision, de journalisation et
 
 Bien que le Public Cloud d’OVHcloud repose sur OpenStack, il propose également des services propriétaires comme Kubernetes managé et Bases de données managées. Pour cette raison, vous devrez utiliser des fournisseurs OpenTofu ou Terraform spécifiques, adaptés à l’infrastructure OVHcloud.
 
-Vous pouvez créer vos stacks Terraform/OpenTofu en utilisant les fournisseurs pour [OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}, OVHcloud, ou des services compatibles S3, selon les ressources que vous souhaitez gérer.
+Vous pouvez créer vos stacks Terraform/OpenTofu en utilisant les fournisseurs pour [OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs), OVHcloud, ou des services compatibles S3, selon les ressources que vous souhaitez gérer.
 
 Vous retrouverez dans notre guide « [Using Terraform with OVHcloud (EN)](/pages/manage_and_operate/terraform/terraform-at-ovhcloud) » des exemples pour vous aider à démarrer la création de vos configurations Terraform/OpenTofu pour votre Landing Zone et votre infrastructure cloud.
 
@@ -102,7 +102,7 @@ La méthode Lift and Shift vous permet de migrer vos machines virtuelles (VMs) e
 
 Pour commencer, exportez vos VMs sources depuis votre infrastructure actuelle. OVHcloud supporte plusieurs formats d’images, notamment : ami, ari, aki, vhd, vmdk, raw, qcow2, vhdx, vdi, iso, et ploop.
 
-Une fois exportée, vous devrez téléverser l'image de la VM dans votre projet OVHcloud. Pour cela, assurez-vous d’avoir un environnement Python local prêt et installez le client OpenStack CLI (pour ce faire, suivez ce [guide d’installation](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external}). Vous aurez également besoin de vos identifiants API pour vous authentifier.
+Une fois exportée, vous devrez téléverser l'image de la VM dans votre projet OVHcloud. Pour cela, assurez-vous d’avoir un environnement Python local prêt et installez le client OpenStack CLI (pour ce faire, suivez ce [guide d’installation](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html)). Vous aurez également besoin de vos identifiants API pour vous authentifier.
 
 Après avoir téléversé l'image, vous pourrez déployer une nouvelle instance à partir de celle-ci via le tableau de bord OVHcloud, la CLI OpenStack ou via Terraform/OpenTofu. Retrouvez les instructions détaillées pour importer une image de VM dans notre guide « [Importez votre propre image](/pages/public_cloud/compute/upload_own_image) ».
 

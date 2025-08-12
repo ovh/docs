@@ -52,7 +52,7 @@ lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-La tarjeta gráfica está ahí, pero todavía no puede utilizarse. Para ello, primero debe instalar el controlador NVIDIA. Puede encontrar la lista de los paquetes en esta dirección: [Lista de paquetes Linux disponibles](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+La tarjeta gráfica está ahí, pero todavía no puede utilizarse. Para ello, primero debe instalar el controlador NVIDIA. Puede encontrar la lista de los paquetes en esta dirección: [Lista de paquetes Linux disponibles](https://developer.download.nvidia.com/compute/cuda/repos/).
 
 A continuación, deberá introducir los siguientes comandos:
 
@@ -147,7 +147,7 @@ Indique la dirección IPv4 de su instancia y el usuario "Administrator" y, a con
 > Si tiene problemas para conectarse, compruebe que el dispositivo permite las conexiones remotas (RDP). Para ello, consulte la configuración de su sistema, las reglas de firewall y las posibles restricciones de red.
 >
 
-Cuando se haya iniciado su instancia de GPU, deberá instalar el controlador NVIDIA desde el [sitio web oficial](https://www.nvidia.com/Download/index.aspx){.external}.
+Cuando se haya iniciado su instancia de GPU, deberá instalar el controlador NVIDIA desde el [sitio web oficial](https://www.nvidia.com/Download/index.aspx).
 
 Después, todo lo que falta por hacer es instalar el controlador necesario, el cual se mostrará aquí:
 

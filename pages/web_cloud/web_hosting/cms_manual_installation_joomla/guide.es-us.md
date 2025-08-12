@@ -12,7 +12,7 @@ Aquí encontrará todos los elementos necesarios para instalar manualmente el CM
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o [el editor del CMS Joomla!](https://www.joomla.org/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o [el editor del CMS Joomla!](https://www.joomla.org/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 >
 
 > [!success]
@@ -28,7 +28,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
 - Disponer de un [dominio](/links/web/domains)
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}
+- Estar conectado al [área de cliente de OVHcloud](/links/manager)
   
 ## Procedimiento
 
@@ -131,7 +131,7 @@ La instalación ha finalizado, pero puede añadir más idiomas al CMS si es nece
   
 ## Más información <a name="go-further"></a>
 
-[Sitio Oficial Joomla!](https://joomla.org){.external}
+[Sitio Oficial Joomla!](https://joomla.org)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

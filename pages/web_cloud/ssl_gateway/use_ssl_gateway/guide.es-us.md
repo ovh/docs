@@ -9,7 +9,7 @@ updated: 2022-12-01
 ### Requisitos
 
 - [Haber contratado un servicio SSL Gateway](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
-- Tener acceso al [área de cliente Sunrise](https://www.ovh.com/manager/sunrise/){.external}.
+- Tener acceso al [área de cliente Sunrise](https://www.ovh.com/manager/sunrise/).
 
 ## Uso
 
@@ -17,7 +17,7 @@ A continuación se explica cómo utilizar el servicio SSL Gateway.
 
 ### Configuracion del servicio
 
-Conéctese al [área de cliente](/links/manager){.external} y acceda a la sección `Sunrise`{.action}.
+Conéctese al [área de cliente](/links/manager) y acceda a la sección `Sunrise`{.action}.
 
 ![menú sunrise](images/4.PNG){.thumbnail}
 
@@ -229,7 +229,7 @@ a2enconf remoteip
 service apache2 restart
 ```
 
-En la [documentación oficial](https://httpd.apache.org/docs/current/es/mod/mod_remoteip.html){.external} (en inglés) encontrará más información sobre esta funcionalidad de Apache.
+En la [documentación oficial](https://httpd.apache.org/docs/current/es/mod/mod_remoteip.html) (en inglés) encontrará más información sobre esta funcionalidad de Apache.
 
 #### Nginx
 
@@ -244,7 +244,7 @@ set_real_ip_from 213.32.4.0/24;
 real_ip_header X-Forwarded-For;
 ```
 
-En la [documentación oficial](http://nginx.org/en/docs/http/ngx_http_realip_module.html){.external} (en inglés) encontrará más información sobre esta funcionalidad de Nginx.
+En la [documentación oficial](http://nginx.org/en/docs/http/ngx_http_realip_module.html) (en inglés) encontrará más información sobre esta funcionalidad de Nginx.
 
 ## Más información
 

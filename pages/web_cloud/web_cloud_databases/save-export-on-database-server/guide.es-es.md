@@ -17,7 +17,7 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 ## Procedimiento
 
-> Tenga en cuenta que las soluciones [Web Cloud Databases](/links/web/databases){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> Tenga en cuenta que las soluciones [Web Cloud Databases](/links/web/databases) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
 > <br> - Tenga en cuenta que no hay acceso "root".
 > <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 

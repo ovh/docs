@@ -82,7 +82,7 @@ Aktivieren Sie ein [SSL-Zertifikat](/links/web/hosting-options-ssl) auf Ihrem We
 
 Wenn Sie ein **"Let's Encrypt" SSL-Zertifikat** erstellt haben, aktivieren Sie die SSL-Option unter `Multisite`{.action} Ihres Hostings gemäß den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/ssl_on_webhosting#ssl-zertifikat-fur-eine-multisite-aktivieren).
 
-Wenn Sie eines der **kostenpflichtigen SSL-Zertifikate** unseres Partners [SECTIGO](https://sectigo.com/){.external} bestellt haben, kontaktieren Sie den [SECTIGO Support](https://sectigo.com/support){.external}.
+Wenn Sie eines der **kostenpflichtigen SSL-Zertifikate** unseres Partners [SECTIGO](https://sectigo.com/) bestellt haben, kontaktieren Sie den [SECTIGO Support](https://sectigo.com/support).
 
 Wenn Sie über ein **importiertes SSL-Zertifikat** verfügen, kontaktieren Sie den entsprechenden Anbieter.
 

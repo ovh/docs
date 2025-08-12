@@ -6,7 +6,7 @@ updated: 2023-06-15
  
 ## Objective
 
-OVHcloud offers OVF templates that you can deploy directly from your vSphere *(version 7.0 or later)* across [content libraries](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-254B2CE8-20A8-43F0-90E8-3F6776C2C896.html){.external}.
+OVHcloud offers OVF templates that you can deploy directly from your vSphere *(version 7.0 or later)* across [content libraries](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-254B2CE8-20A8-43F0-90E8-3F6776C2C896.html).
 
 **This guide will explain how to deploy these templates.**
 

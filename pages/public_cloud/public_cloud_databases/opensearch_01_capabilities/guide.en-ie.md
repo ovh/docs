@@ -37,7 +37,7 @@ Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_clo
 
 ### OpenSearch clients and plugins compatibility
 
-You can use any of the [OpenSearch-recommended clients and plugins](https://opensearch.org/docs/latest/clients/index/#){.external} to access and populate your instance.
+You can use any of the [OpenSearch-recommended clients and plugins](https://opensearch.org/docs/latest/clients/index/#) to access and populate your instance.
 
 ### Plans
 

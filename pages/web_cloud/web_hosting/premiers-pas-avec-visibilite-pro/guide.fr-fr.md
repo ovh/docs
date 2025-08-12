@@ -12,15 +12,15 @@ Visibilité Pro est une solution de référencement local vous permettant de gé
 
 ## Prérequis
 
-- Disposer d’une offre d’[hébergement web OVHcloud](/links/web/hosting){.external}.
-- Disposer d’une offre [Visibilité Pro](https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/){.external}.
+- Disposer d’une offre d’[hébergement web OVHcloud](/links/web/hosting).
+- Disposer d’une offre [Visibilité Pro](https://www.ovhcloud.com/fr/web-hosting/options/pro-visibility/).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion de la solution Visibilité Pro
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement auquel la solution Visibilité Pro a été liée. 
+Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement auquel la solution Visibilité Pro a été liée. 
 
 Cliquez sur l'onglet `Plus`{.action}, puis sur `Visibilité Pro`{.action}.
 

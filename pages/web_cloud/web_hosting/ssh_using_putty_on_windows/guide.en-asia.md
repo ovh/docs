@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-[PuTTY](https://putty.org/){.external} is an open-source SSH client software with a graphical user interface. It was developed for Windows but is available for other operating systems as well and includes useful features, such as SSH key management.
+[PuTTY](https://putty.org/) is an open-source SSH client software with a graphical user interface. It was developed for Windows but is available for other operating systems as well and includes useful features, such as SSH key management.
 
 **This tutorial explains how to use PuTTY for secured connections to your OVHcloud service via the SSH protocol.**
 

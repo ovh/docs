@@ -45,7 +45,7 @@ Les avantages des *multipart uploads- sont les suivants :
 Vous aurez besoin des éléments suivants :
 
 - Avoir créé un [bucket OVHcloud](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
-- Avoir installé et configuré [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}
+- Avoir installé et configuré [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - Avoir un fichier volumineux divisé en plusieurs parties
 
 > [!primary]
@@ -191,7 +191,7 @@ SIZE est exprimé en méga-octets, la taille de bloc par défaut est de 15 Mo, l
 $ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
 ```
 
-Pour plus d'informations sur *s3cmd*, consultez la documentation officielle [ici](https://s3tools.org/usage){.external}.
+Pour plus d'informations sur *s3cmd*, consultez la documentation officielle [ici](https://s3tools.org/usage).
 
 #### rclone
 
@@ -219,7 +219,7 @@ Cette commande représente le nombre de segments uploadés simultanément.
 $ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M testfile s3:test-bucket
 ```
 
-Pour plus d'informations sur *rclone*, consultez la [documentation officielle](https://rclone.org/s3/){.external}.
+Pour plus d'informations sur *rclone*, consultez la [documentation officielle](https://rclone.org/s3/).
 
 ### Augmentation du nombre de demandes simultanées
 

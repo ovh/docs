@@ -22,7 +22,7 @@ La principale différence réside dans le niveau de vérifications qui sera réa
 
 Les certificats SSL EV sont ceux pour lesquels les niveaux de vérification et de sécurité sont les plus élevés. Généralement, le certificat SSL EV est utilisé pour de très gros sites web ou des sites web sensibles. Ce certificat fournira le plus haut niveau d'identification disponible.
 
-Pour les hébergements mutualisés OVHcloud, l'autorité de certification délivrant les certificats SSL EV est [Sectigo](https://sectigostore.com){.external}.
+Pour les hébergements mutualisés OVHcloud, l'autorité de certification délivrant les certificats SSL EV est [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 - Disposer de l'autorisation de votre organisation à commander un certificat SSL Sectigo EV.
 - Être en capacité de justifier avec exactitude les informations et coordonnées relatives à votre organisation.
 
-Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Sectigo EV, rendez-vous sur [ce lien](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Sectigo EV, rendez-vous sur [ce lien](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
 
 ## En pratique
 
@@ -228,9 +228,9 @@ Il ne vous restera plus qu'à [passer votre site en HTTPS](/pages/web_cloud/web_
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Site officiel Sectigo](https://sectigostore.com){.external}
+[Site officiel Sectigo](https://sectigostore.com)
 
-[Description des vérifications faites par Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
+[Description des vérifications faites par Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-)
 
 [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

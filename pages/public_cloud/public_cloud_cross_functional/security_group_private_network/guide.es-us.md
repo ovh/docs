@@ -12,7 +12,7 @@ updated: 2023-03-13
 
 La plataforma OpenStack gestiona la seguridad de los cortafuegos combinando las reglas de conexión en **grupos de seguridad**. A continuación, las reglas se aplican asignando grupos de seguridad a los puertos de red.
 
-Un **puerto** en el marco de [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} es un punto de conexión entre las subredes y los elementos de red (como instancias, load-balancers, routers, etc.).
+Un **puerto** en el marco de [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html) es un punto de conexión entre las subredes y los elementos de red (como instancias, load-balancers, routers, etc.).
 
 **Esta guía explica cómo se gestionan los grupos de seguridad de las redes públicas y privadas en Public Cloud.**
 

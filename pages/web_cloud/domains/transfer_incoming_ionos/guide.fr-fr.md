@@ -68,7 +68,7 @@ Vous devez aussi :
 
 ### Etape 1 - Désactiver l'enregistrement privé
 
-Pour confirmer si l'enregistrement privé est activé pour votre nom de domaine, suivez les étapes décrites dans la [documentation dédiée de Ionos](https://www.ionos.fr/assistance/domaines/transferer-un-domaine-au-sein-de-11-ionos/desactiver-lenregistrement-prive-dun-domaine-chez-11-ionos/){.external}.
+Pour confirmer si l'enregistrement privé est activé pour votre nom de domaine, suivez les étapes décrites dans la [documentation dédiée de Ionos](https://www.ionos.fr/assistance/domaines/transferer-un-domaine-au-sein-de-11-ionos/desactiver-lenregistrement-prive-dun-domaine-chez-11-ionos/).
 
 ### Etape 2 - Désactiver le verrouillage du transfert
 
@@ -77,13 +77,13 @@ Pour confirmer si l'enregistrement privé est activé pour votre nom de domaine,
 > Par sécurité, les noms de domaine avec une extension générique (par exemple *.com*, *.net* ou *.org*) sont verrouillés par défaut et ne peuvent pas être transférés. Avant d'initier un transfert de nom de domaine, vous devez désactiver ce verrouillage de transfert.
 >
 
-Suivez les étapes décrites dans la [documentation dédiée de Ionos](https://www.ionos.fr/assistance/domaines/transferer-un-domaine-au-sein-de-11-ionos/desactiver-le-verrouillage-du-transfert-de-domaine-chez-11-ionos/){.external}.
+Suivez les étapes décrites dans la [documentation dédiée de Ionos](https://www.ionos.fr/assistance/domaines/transferer-un-domaine-au-sein-de-11-ionos/desactiver-le-verrouillage-du-transfert-de-domaine-chez-11-ionos/).
 
 ### Etape 3 - Obtenir le code d'autorisation
 
 Le code d'autorisation protège votre nom de domaine contre tout transfert non autorisé par des tiers. Ce code est requis pour autoriser le transfert de votre nom de domaine vers un nouveau fournisseur.
 
-Suivez les étapes décrites dans la [documentation dédiée de Ionos](https://www.ionos.fr/assistance/domaines/transferer-un-domaine-de-11-ionos-vers-un-autre-fournisseur/afficher-le-code-dautorisation-de-votre-domaine-heberge-chez-11-ionos/){.external}.
+Suivez les étapes décrites dans la [documentation dédiée de Ionos](https://www.ionos.fr/assistance/domaines/transferer-un-domaine-de-11-ionos-vers-un-autre-fournisseur/afficher-le-code-dautorisation-de-votre-domaine-heberge-chez-11-ionos/).
 
 Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de votre nom de domaine en suivant les étapes de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) ».
 

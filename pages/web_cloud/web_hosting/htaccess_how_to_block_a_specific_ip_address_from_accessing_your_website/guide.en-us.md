@@ -50,8 +50,8 @@ In the event of an error, you can always log in to [the FTP space](/pages/web_cl
 >
 > For more details on the new syntax, you can consult the following official pages:
 >
-> - [Apache 2.4 access control documentation](https://httpd.apache.org/docs/2.4/en/howto/access.html){.external}
-> - [Apache 2.4 mod_authz_core module documentation](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html){.external}
+> - [Apache 2.4 access control documentation](https://httpd.apache.org/docs/2.4/en/howto/access.html)
+> - [Apache 2.4 mod_authz_core module documentation](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html)
 >
 
 ### Block an IP
@@ -185,7 +185,7 @@ To block a domain, insert one of the following two codes into your ".htaccess" f
 >
 > Blocks via the ".htaccess" are done through the two-letter Country Codes (ISO 3166-1 alpha2 standard) of the countries.
 >
-> Several websites list the countries and their respective Country Codes, including [https://www.iban.com/country-codes](https://www.iban.com/country-codes){.external} (independent of OVHcloud).
+> Several websites list the countries and their respective Country Codes, including [https://www.iban.com/country-codes](https://www.iban.com/country-codes) (independent of OVHcloud).
 >
 
 To block all IPs of a country, insert one of the following two codes into your ".htaccess" file:

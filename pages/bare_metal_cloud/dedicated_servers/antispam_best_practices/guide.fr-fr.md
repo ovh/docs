@@ -267,9 +267,9 @@ Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur
 
 - **Vers un serveur Gmail**
 
-L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr){.external}.
+L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr).
 
-Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en){.external} à la prévention du spam pour les utilisateurs de Gmail.
+Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en) à la prévention du spam pour les utilisateurs de Gmail.
 
 ### Déclarer un faux positif
 

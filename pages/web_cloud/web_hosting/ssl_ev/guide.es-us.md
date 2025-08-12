@@ -22,7 +22,7 @@ La principal diferencia radica en el nivel de verificaciones que realizará la A
 
 Los certificados SSL EV son aquellos en los que los niveles de verificación y seguridad son más elevados. Por lo general, el certificado SSL EV se utiliza para sitios web muy grandes o sensibles. Este certificado proporcionará el nivel de identificación más alto disponible.
 
-Para los alojamientos compartidos de OVHcloud, la autoridad de certificación que emite los certificados SSL EV es [Sectigo](https://sectigostore.com){.external}.
+Para los alojamientos compartidos de OVHcloud, la autoridad de certificación que emite los certificados SSL EV es [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -42,7 +42,7 @@ Para los alojamientos compartidos de OVHcloud, la autoridad de certificación qu
 - La autorización de su organización para contratar un certificado SSL Sectigo EV.
 - Estar en condiciones de justificar con exactitud la información y los datos relativos a su organización.
 
-Para comprobar si puede contratar un certificado SSL Sectigo EV, acceda a [este enlace](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+Para comprobar si puede contratar un certificado SSL Sectigo EV, acceda a [este enlace](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
   
 ## Procedimiento
 
@@ -216,7 +216,7 @@ Una vez realizadas las comprobaciones realizadas por Sectigo, sus servicios le c
 
 > [!success]
 >
-> Para más información sobre las operaciones descritas en **el Etapa 2** anterior, consulte la [documentación oficial de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sobre el asunto.
+> Para más información sobre las operaciones descritas en **el Etapa 2** anterior, consulte la [documentación oficial de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-) sobre el asunto.
 >
 
 ### Etapa 3: instalación del certificado SSL Sectigo EV con su dominio y su alojamiento OVHcloud
@@ -227,9 +227,9 @@ Solo tendrá que [pasar su sitio web en HTTPS](/pages/web_cloud/web_hosting/ssl-
 
 ## Más información <a name="go-further"></a>
 
-[Sitio Oficial Sectigo](https://sectigostore.com){.external}
+[Sitio Oficial Sectigo](https://sectigostore.com)
 
-[Descripción de las verificaciones realizadas por Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
+[Descripción de las verificaciones realizadas por Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-)
 
 [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

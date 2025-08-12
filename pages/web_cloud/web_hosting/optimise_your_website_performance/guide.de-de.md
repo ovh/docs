@@ -44,7 +44,7 @@ Weitere Informationen dazu, welches Hostingpaket sich eignet, finden Sie auf [di
 
 ### Schritt 2: Überprüfen der PHP-Version
 Durch die Verwendung der neuesten PHP-Version, die mit Ihrer Seite kompatibel ist, könnte die Leistung erheblich beeinflusst werden.
-Um zu überprüfen, ob Ihre Webseite mit der neuesten PHP-Version kompatibel ist, können Sie [in der offiziellen Dokumentation von PHP](https://php.net/eol.php){.external} nachlesen.
+Um zu überprüfen, ob Ihre Webseite mit der neuesten PHP-Version kompatibel ist, können Sie [in der offiziellen Dokumentation von PHP](https://php.net/eol.php) nachlesen.
 
 **PHP-FPM**
 
@@ -120,7 +120,7 @@ Vergessen Sie nicht, den Namen Ihrer Datenbank und den gewünschten Zeitraum aus
 - **SQL Requests**: Zeigt die Anzahl der Anfragen an.
 
 ### Schritt 5: Überprüfen von Netzwerkanfragen
-Ein nützliches Tool für die Analyse ist der [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external}, der direkt in den Mozilla Firefox-Browser integriert ist und die detaillierte Analyse der Ladezeit einer Webseite ermöglicht.
+Ein nützliches Tool für die Analyse ist der [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor), der direkt in den Mozilla Firefox-Browser integriert ist und die detaillierte Analyse der Ladezeit einer Webseite ermöglicht.
 
 So können Sie überprüfen, welche Elemente Ihrer Seite schwerfällig geladen werden.
 Es kann hilfreich sein, einzugrenzen, welche Bilder und welche Inhalte die Ladezeit der Webseite verlängern, und damit Prioritäten zu setzen, wo Optimierungen vorgenommen werden sollten.
@@ -135,7 +135,7 @@ Um den Webseitenzugriff auf Downloads zu verbessern und ein optimiertes Ranking 
 
 Infolgedessen verbessern Sie die Reaktionszeiten für Besucher auf der ganzen Welt, da die statischen Teile Ihrer Website direkt von Ihrem Besucher an der nächstgelegenen Präsenzstelle (PoP) heruntergeladen werden.
 
-Entdecken Sie hier unsere [CDN Lösung](/links/network/cdn-infrastructure).
+Entdecken Sie hier unsere [CDN Lösung](/links/web/hosting-options-cdn).
 
 ### Schritt 6: Überprüfen des verwendeten Content Management Systems (CMS) und der verwendeten Plugins
 
@@ -212,14 +212,14 @@ Vermeiden Sie die Verwendung der „HAVING“ -Klausel, die Abfragen verlangsame
 
 #### Web Cloud Databases
 Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenommen haben, zu langsam läuft oder wenn eine große Anzahl von Anfragen regelmäßig an die Datenbank gestellt werden, können Sie gegebenenfalls zu unserem Web Cloud Databases-Angebot wechseln; dort stehen Ihnen dann mehr Ressourcen zur Verfügung.
-[Das Web Cloud Databases Angebot auf unserer Website](/links/web/databases){.external}.
+[Das Web Cloud Databases Angebot auf unserer Website](/links/web/databases).
 
 ## Weiterführende Informationen
 
 [Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
+[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 Treten Sie unserer [User Community](/links/community) bei.

@@ -6,7 +6,7 @@ updated: 2018-03-26
 
 ## Objective
 
-To find general information on Spectre and Meltdown, please refer to our [detailed guide](/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes){.external} and [our guide for each OS](/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os){.external}.
+To find general information on Spectre and Meltdown, please refer to our [detailed guide](/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes) and [our guide for each OS](/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os).
 
 **This guide will explain how to apply patches for the Spectre and Meltdown vulnerabilities**.
 
@@ -29,11 +29,11 @@ As a reminder:
 > Meltdown (CVE-2017-5754) does not affect ESXI because ESXI does not run non-verified user codes.
 >
 
-For **Private Cloud** solutions, there is planned scheduled maintenance to apply a patch for this vulnerability automatically on vulnerable hosts. You can find information about this scheduled maintenance on the [associated task](http://travaux.ovh.com/?do=details&id=29250){.external} (English translation below French text).
+For **Private Cloud** solutions, there is planned scheduled maintenance to apply a patch for this vulnerability automatically on vulnerable hosts. You can find information about this scheduled maintenance on the [associated task](http://travaux.ovh.com/?do=details&id=29250) (English translation below French text).
 
 ### Check the host version
 
-To check your host version, log in to your [vSphere interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion){.external} and go to the host summary, in the `Configuration`{.action} section:
+To check your host version, log in to your [vSphere interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) and go to the host summary, in the `Configuration`{.action} section:
 
 ![Host configuration section](images/spectre1.JPG)
 
@@ -47,12 +47,12 @@ If you have an older version of these *builds*, you will need to update your hos
 
 ### Update your host with the patch associated with the vulnerability
 
-Update your host by switching it to maintenance mode (your host will be rebooted during the procedure), and use the [VMware Update Manager plugin](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager){.external}.
+Update your host by switching it to maintenance mode (your host will be rebooted during the procedure), and use the [VMware Update Manager plugin](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager).
 
 The patches are as follows:
 
-- **ESXi 6.0** – [ESXi600-201711101-SG](https://kb.vmware.com/s/article/2151132){.external}
-- **ESXi 5.5** – [ESXi550-201709101-SG](https://kb.vmware.com/s/article/2150876){.external}
+- **ESXi 6.0** – [ESXi600-201711101-SG](https://kb.vmware.com/s/article/2151132)
+- **ESXi 5.5** – [ESXi550-201709101-SG](https://kb.vmware.com/s/article/2150876)
 
 > [!warning]
 >

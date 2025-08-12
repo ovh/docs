@@ -329,7 +329,7 @@ sudo netplan apply
 ```
 
 > [!primary]
-> Lors de l'utilisation de la commande `netplan try`, il est possible que le système renvoie un message d'avertissement tel que `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Cela signifie simplement que le fichier n'a pas de permissions restrictives. Cela n'affecte pas la configuration de votre Additional IP. Pour plus d'informations sur les permissions de fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+> Lors de l'utilisation de la commande `netplan try`, il est possible que le système renvoie un message d'avertissement tel que `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Cela signifie simplement que le fichier n'a pas de permissions restrictives. Cela n'affecte pas la configuration de votre Additional IP. Pour plus d'informations sur les permissions de fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions).
 
 ### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
@@ -548,7 +548,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Où vous remplacerez « ADDITIONAL_IP » par la véritable Additional IP.
 
-Il vous suffit ensuite d'effectuer un ping depuis votre Additional IP vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket auprès de l'équipe d'assistance via le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external} en précisant les informations suivantes :
+Il vous suffit ensuite d'effectuer un ping depuis votre Additional IP vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket auprès de l'équipe d'assistance via le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant les informations suivantes :
 
 - Le nom et la version du système d'exploitation que vous utilisez sur votre serveur.
 - Le nom et le répertoire du fichier de configuration réseau.

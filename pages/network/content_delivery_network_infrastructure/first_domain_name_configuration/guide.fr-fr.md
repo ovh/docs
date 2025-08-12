@@ -12,9 +12,9 @@ Lors de la première configuration du Content Delivery Network (CDN), il est né
 
 ## Prérequis
 
-- Bénéficier du [Content Delivery Network (CDN) d'OVH](/links/network/cdn-infrastructure){.external}.
+- Bénéficier du [Content Delivery Network (CDN) d'OVH](/links/network/cdn-infrastructure).
 - Avoir accès à la gestion de la zone DNS de votre nom de domaine.
-- Avoir accès à votre [espace client OVH](/links/manager){.external}.
+- Avoir accès à votre [espace client OVH](/links/manager).
 
 ## En pratique
 
@@ -22,7 +22,7 @@ Lors de la première configuration du Content Delivery Network (CDN), il est né
 
 La première étape de cette configuration est l'ajout du sous-domaine de votre choix au CDN pour que celui-ci accepte les requêtes HTTP(S) pour ce domaine.
 
-Pour cela, rendez-vous dans votre [espace client OVH](/links/manager){.external} dans l'onglet `Dédié`{.action}, puis `NAS et CDN`{.action}.
+Pour cela, rendez-vous dans votre [espace client OVH](/links/manager) dans l'onglet `Dédié`{.action}, puis `NAS et CDN`{.action}.
 
 Cliquez ensuite sur `Ajouter un domaine au CDN`{.action} :
 

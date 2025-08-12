@@ -23,7 +23,7 @@ The first step is to create a container that will hold your files.
 
 If you use Horizon :
 
-- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user){.external}
+- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 ## Instructions
 
@@ -78,7 +78,7 @@ Your container is now created:
 > It is not possible to create a Public Cloud Archive container from Horizon.
 >
 
-Log in to [Horizon](https://horizon.cloud.ovh.net){.external} :
+Log in to [Horizon](https://horizon.cloud.ovh.net) :
 
 ![horizon login](images/create-container-20211005155245752.png)
 

@@ -278,7 +278,7 @@ Passen Sie alle Ihre Bilddateien an, um den Ressourcenverbrauch möglichst gerin
 
 Lesen Sie auch unsere Anleitung zur [Optimierung der Performance Ihrer Website](/pages/web_cloud/web_hosting/optimise_your_website_performance).
 
-Sie können weitere Optimierungsmöglichkeiten für Ihre Website finden, indem Sie diese auf [gtmetrix.com](https://gtmetrix.com){.external} analysieren lassen. (Dieses externe Tool hat keine geschäftliche Verbindung zu OVHcloud).
+Sie können weitere Optimierungsmöglichkeiten für Ihre Website finden, indem Sie diese auf [gtmetrix.com](https://gtmetrix.com) analysieren lassen. (Dieses externe Tool hat keine geschäftliche Verbindung zu OVHcloud).
 
 > [!success]
 >

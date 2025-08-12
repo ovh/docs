@@ -44,7 +44,7 @@ W tym celu skorzystamy z pokładowych funkcji oferowanych przez VMware, ale rów
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Posiadanie serwera dedykowanego z zainstalowanym rozwiązaniem ESXi
 - Wykupienie usługi kompatybilnej z naszą funkcjonalnością [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network), jeśli chcesz korzystać z niej do filtrowania.
 

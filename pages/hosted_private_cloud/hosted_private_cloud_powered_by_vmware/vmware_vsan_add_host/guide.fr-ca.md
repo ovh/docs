@@ -49,7 +49,7 @@ Cliquez sur `Réclamer des disques inutilisés`{.action}.
 
 ![vSAN](images/en08cluster.png){.thumbnail}
 
-Les disques disponibles sont attribués automatiquement au cache ou au stockage (voir la [page officielle VMware VSAN](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} pour plus de détails) en fonction de leur type et de leur taille. Vous pouvez personnaliser les paramètres.
+Les disques disponibles sont attribués automatiquement au cache ou au stockage (voir la [page officielle VMware VSAN](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html) pour plus de détails) en fonction de leur type et de leur taille. Vous pouvez personnaliser les paramètres.
 
 Cliquez sur `Créer`{.action}.
 

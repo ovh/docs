@@ -39,7 +39,7 @@ To ensure that your solutions stay secure, you will need to set a strong passwor
 
 There are several effective ways of creating strong passwords. We recommend following the tips provided by the National Cyber Security Centre: https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email
 
-The freemium password manager LastPass also offers a tool for creating solid, randomly-generated passwords, available [here](https://www.lastpass.com/password-generator){.external}.
+The freemium password manager LastPass also offers a tool for creating solid, randomly-generated passwords, available [here](https://www.lastpass.com/password-generator).
 
 ### Use a password manager
 
@@ -113,14 +113,14 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 ## Go further
 
-[Top tips for staying secure online - National Cyber Security Centre](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/){.external}
+[Top tips for staying secure online - National Cyber Security Centre](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/)
 
-[Basic guidelines defined by the NCSC for creating a strong password](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email){.external}
+[Basic guidelines defined by the NCSC for creating a strong password](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email)
 
-[LastPass password generator tool](https://www.lastpass.com/password-generator){.external}
+[LastPass password generator tool](https://www.lastpass.com/password-generator)
 
-[Detailed advice on passwords from Get Safe Online](https://www.getsafeonline.org/protecting-your-computer/passwords/){.external}
+[Detailed advice on passwords from Get Safe Online](https://www.getsafeonline.org/protecting-your-computer/passwords/)
 
-[KeePass password manager](https://keepass.info/){.external}
+[KeePass password manager](https://keepass.info/)
 
 Join our [community of users](/links/community).

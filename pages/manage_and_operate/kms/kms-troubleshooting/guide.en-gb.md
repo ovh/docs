@@ -105,7 +105,7 @@ Elements that can be pushed to Logs Data Platform:
 |iam_operation|IAM action evalutated|
 |iam_identities|IAM identity used for rights evaluation|
 |kmip_operation|KMIP operation used|
-|kmip_reason|[Standard KMIP error code](https://docs.oasis-open.org/kmip/spec/v1.4/kmip-spec-v1.4.pdf#%5B%7B%22num%22%3A484%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C720%2C0%5D){.external}|
+|kmip_reason|[Standard KMIP error code](https://docs.oasis-open.org/kmip/spec/v1.4/kmip-spec-v1.4.pdf#%5B%7B%22num%22%3A484%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C720%2C0%5D)|
 
 ## Go further
 

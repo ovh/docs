@@ -6,13 +6,13 @@ updated: 2018-02-22
 
 ## Sumário
 
-É possível adicionar um [certificado SSL](https://www.ovh.com/pt/ssl/){.external} na solução CDN (Content Delivery Network) para que os seus utilizadores possam estabelecer ligações seguras, mesmo passando pela CDN.
+É possível adicionar um [certificado SSL](https://www.ovh.com/pt/ssl/) na solução CDN (Content Delivery Network) para que os seus utilizadores possam estabelecer ligações seguras, mesmo passando pela CDN.
 
 **Este manual explica em detalhes o funcionamento do SSL Let's Encrypt fornecido pela OVH.**
 
 ## Requisitos
 
-- Dispor da solução [CDN da OVH](https://www.ovh.com/pt/cdn/){.external}.
+- Dispor da solução [CDN da OVH](https://www.ovh.com/pt/cdn/).
 - Ter acesso à gestão da zona DNS do seu domínio.
 
 ## Instruções
@@ -22,7 +22,7 @@ updated: 2018-02-22
 - Se não configurou nenhum certificado e adicionou o seu primeiro subdomínio à CDN, um certificado Let's Encrypt será automaticamente criado para esse nome de domínio.
 - Se adicionar outro subdomínio à CDN, o certificado será automaticamente regenerado para incluir o novo subdomínio que configurou.
 
-Para que o certificado seja criado corretamente, é necessário que o subdomínio recentemente adicionado aponte corretamente para a CDN. Para isso, consulte a secção do manual que explica como realizar uma [primeira configuração de um domínio](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external} (versão em inglês).
+Para que o certificado seja criado corretamente, é necessário que o subdomínio recentemente adicionado aponte corretamente para a CDN. Para isso, consulte a secção do manual que explica como realizar uma [primeira configuração de um domínio](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration) (versão em inglês).
 
 A renovação do certificado é realizada automaticamente nos 20 dias antes da expiração do certificado.
 
@@ -59,6 +59,6 @@ Uma vez ativado o certificado, irá obter o seguinte resultado:
 
 ## Quer saber mais?
 
-[Primeira configuração de um domínio](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external} (versão em inglês)
+[Primeira configuração de um domínio](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration) (versão em inglês)
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/)

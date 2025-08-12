@@ -24,7 +24,7 @@ There are many different types of website you can put online. Whether you are cr
 
 It is important to have a clear idea of your objective, for your project to succeed. What do you want to do with your website? How will you publish it? There are several ways to get your project off the ground with an OVHcloud web hosting plan.
 
-- **Using a turn-key website, with OVHcloud’s one-click modules**: This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures that are featured on the OVHcloud webpage ["How to create a website"](/links/web/hosting-website){.external}. Please also see our guide ["Setting up your website with 1-click modules"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Using a turn-key website, with OVHcloud’s one-click modules**: This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures that are featured on the OVHcloud webpage ["How to create a website"](/links/web/hosting-website). Please also see our guide ["Setting up your website with 1-click modules"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Using a turn-key website that you install manually**: this solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), and you set it up yourself on your OVHcloud web hosting plan.
 
@@ -64,7 +64,7 @@ To log in to your storage space, you will need the following:
 - the server address
 - the server connection port
 
-These elements were sent to you in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
+These elements were sent to you in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
 ![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
@@ -109,7 +109,7 @@ If you are migrating an existing website, you can recover your existing database
 
 If you already have a database and wish to use it (from an [OVHcloud web hosting plan](/links/web/hosting), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
 
-If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](/links/manager){.external}, then click on `Hosting`{.action}. Select the name of the hosting plan concerned, and click on the `Database`{.action} tab.
+If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](/links/manager), then click on `Hosting`{.action}. Select the name of the hosting plan concerned, and click on the `Database`{.action} tab.
 
 Now click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Now follow the information shown.
 

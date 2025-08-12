@@ -27,8 +27,8 @@ I software **Plesk** e **cPanel** annunciano la fine del supporto per i seguenti
 
 Per ulteriori informazioni sul supporto, consultare la documentazione ufficiale:
 
-- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
-- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/){.external}.
+- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/).
 
 ### Che fare concretamente?
 
@@ -37,8 +37,8 @@ Per ulteriori informazioni sul supporto, consultare la documentazione ufficiale:
 > Dal punto di vista **sicurezza**, continuare a utilizzare un sistema operativo non supportato ti espone ad attacchi.
 > Consigliamo di leggere:
 >
-> - [le raccomandazioni di cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
-> - [le raccomandazioni di Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
+> - [le raccomandazioni di cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+> - [le raccomandazioni di Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/).
 
 #### 1. Verifica il sistema attuale
 
@@ -54,8 +54,8 @@ Se il sistema operativo fa parte degli OS che non saranno più supportati, passa
 
 Consulta la documentazione ufficiale degli OS supportati:
 
-- [Elenco degli OS supportati da Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
-- [Elenco degli OS compatibili con cPanel](https://docs.cpanel.net/installation-guide/system-requirements/){.external}.
+- [Elenco degli OS supportati da Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [Elenco degli OS compatibili con cPanel](https://docs.cpanel.net/installation-guide/system-requirements/).
 
 #### 3. Migrare il servizio
 
@@ -74,16 +74,16 @@ Ordina un nuovo VPS con OS compatibile, se non lo hai già fatto. [Installare cP
 
 Utilizza lo strumento di migrazione che preferisci. Questi strumenti permettono di trasferire automaticamente siti Web, database, account email e configurazioni da un VPS all'altro:
 
-- Plesk Migrator - [Documentazione ufficiale](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
-- cPanel Transfer Tool - [Documentazione ufficiale](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
+- Plesk Migrator - [Documentazione ufficiale](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/).
+- cPanel Transfer Tool - [Documentazione ufficiale](https://docs.cpanel.net/whm/transfers/transfer-tool/).
 
 **Opzione C — Aggiornamento diretto del sistema operativo senza reinstallazione o migrazione (utenti avanzati)**
 
 Se non riesci a creare un nuovo VPS, è possibile utilizzare alcuni strumenti per effettuare l'aggiornamento direttamente dal sistema operativo**, mantenendo installato Plesk o cPanel. Questo metodo è indicato per utenti esperti, in quanto comporta rischi in caso di esecuzione non corretta.
 
-- Per **Plesk** (passaggio da CentOS 7 verso AlmaLinux 8), utilizza lo script `centos2alma` proposto nella [documentazione ufficiale di Plesk](https://github.com/plesk/centos2alma){.external}. Consulta anche le istruzioni dettagliate del [supporto di Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
+- Per **Plesk** (passaggio da CentOS 7 verso AlmaLinux 8), utilizza lo script `centos2alma` proposto nella [documentazione ufficiale di Plesk](https://github.com/plesk/centos2alma). Consulta anche le istruzioni dettagliate del [supporto di Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983).
 
-- Per **cPanel** (passaggio da CentOS 7 verso AlmaLinux 8), utilizza lo strumento **Elevate** proposto nella [documentazione ufficiale di cPanel](https://cpanel.github.io/elevate/){.external}.
+- Per **cPanel** (passaggio da CentOS 7 verso AlmaLinux 8), utilizza lo strumento **Elevate** proposto nella [documentazione ufficiale di cPanel](https://cpanel.github.io/elevate/).
 
 > [!primary]
 >

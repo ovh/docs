@@ -18,7 +18,7 @@ Per effettuare il trasferimento dei tuoi dati, è necessario:
 
 - Un NAS-HA OVHcloud
 - Una distribuzione compatibile con NFS
-- Aver configurato il tuo NAS-HA seguendo la guida per [montare il tuo NAS-HA tramite una condivisione NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs){.external}.
+- Aver configurato il tuo NAS-HA seguendo la guida per [montare il tuo NAS-HA tramite una condivisione NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs).
 
 ## Procedura
 
@@ -46,4 +46,4 @@ rsync -Pva /mnt/SrcNas /mnt/DstNas
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

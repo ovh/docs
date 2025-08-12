@@ -1,7 +1,7 @@
 ---
 title: Primeiros passos com um VPS
 excerpt: Aprenda a gerir um VPS na sua Área de Cliente e descubra as primeiras etapas da sua utilização, nomeadamente as ligações remotas e as medidas de segurança
-updated: 2024-11-22
+updated: 2025-08-07
 ---
 
 ## Objetivo
@@ -110,7 +110,7 @@ Clique nas guias abaixo para ver os detalhes da secção.
 
 #### Backup
 
-Estas opções referem-se a serviços VPS suplementares que podem ser encomendados na Área de Cliente.
+Estas opções referem-se a serviços VPS adicionais para backups e restauro do seu sistema.
 
 > [!tabs]
 > Snapshot
@@ -119,11 +119,13 @@ Estas opções referem-se a serviços VPS suplementares que podem ser encomendad
 >>
 > Backup automatizado
 >>
->> A opção `Backup automatizado` permite programar backups regulares do seu VPS. Ao contrário das snapshots manuais, esta funcionalidade conserva vários pontos de restauro ao longo do tempo, oferecendo-lhe uma proteção contínua e automática dos seus dados (exceto discos adicionais).
+>> É automaticamente criado um backup diário do sistema (excluindo discos adicionais), que é guardado durante 24 horas. Ao passar para a opção **Backup Premium automático**, fica com disponíveis 7 últimos backups diários do seu VPS para montagem e restauro.  
+Em comparação com instantâneos manuais, esta funcionalidade aumenta a segurança dos dados através da criação de vários pontos de restauro em intervalos regulares.
+>>
 
 Encontre todas as informações sobre as soluções de backup disponíveis para o seu serviço na [página do produto VPS](/links/bare-metal/vps-options) e nos nossos [guias respetivos](/products/bare-metal-cloud-virtual-private-servers-backups).
 
-### Assinatura
+### A minha oferta
 
 Estas secções apresentam as informações mais importantes sobre a faturação do serviço. Encontre todas as informações sobre este assumpto na [documentação correspondente](/products/account-and-service-management-managing-billing-payments-and-services).
 

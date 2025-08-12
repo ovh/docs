@@ -12,7 +12,7 @@ Klonowanie wirtualnej maszyny umożliwia utworzenie kopii maszyny źródłowej.
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}.
+- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/).
 - Posiadanie co najmniej jednej wirtualnej maszyny w klastrze.
 - Dostęp do [interfejsu vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface)
 

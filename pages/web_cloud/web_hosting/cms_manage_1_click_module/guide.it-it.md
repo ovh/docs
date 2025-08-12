@@ -56,8 +56,8 @@ Puoi anche ricercare l'email ricevuta durante la creazione del tuo modulo dal tu
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal : L'editor di questo software non offre, alla data, la documentazione per modificare la password di accesso all'interfaccia di amministrazione di Drupal. Ti invitiamo a contattare direttamente l'editor su questo argomento. Per maggiori informazioni, consulta la pagina ufficiale [drupal.org](https://www.drupal.org/){.external}.
-> - PrestaShop : L'editor di questo software non offre, alla data, la documentazione necessaria per modificare la password di accesso all'interfaccia di amministrazione di PrestaShop. Ti invitiamo a contattare direttamente l'editor su questo argomento. Per maggiori informazioni, clicca [qui](https://www.prestashop.com){.external} per accedere alla pagina ufficiale.
+> - Drupal : L'editor di questo software non offre, alla data, la documentazione per modificare la password di accesso all'interfaccia di amministrazione di Drupal. Ti invitiamo a contattare direttamente l'editor su questo argomento. Per maggiori informazioni, consulta la pagina ufficiale [drupal.org](https://www.drupal.org/).
+> - PrestaShop : L'editor di questo software non offre, alla data, la documentazione necessaria per modificare la password di accesso all'interfaccia di amministrazione di PrestaShop. Ti invitiamo a contattare direttamente l'editor su questo argomento. Per maggiori informazioni, clicca [qui](https://www.prestashop.com) per accedere alla pagina ufficiale.
 >
 È inoltre possibile modificare la password di accesso all'interfaccia di gestione del tuo CMS direttamente dal tuo database.<br>
 Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazione utilizzando la documentazione proposta dal tuo CMS o di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
@@ -129,10 +129,10 @@ Aggiungi strumenti di test del tipo CAPTCHA ai moduli del tuo sito.
 
 Non installate sul vostro sito plugin o template che non sono stati consigliati dalle comunità ufficiali del vostro CMS: 
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://community.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/community){.external}
-- [PrestaShop](https://www.prestashop.com/it){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla](https://community.joomla.org/)
+- [Drupal](https://www.drupal.org/community)
+- [PrestaShop](https://www.prestashop.com/it)
 
 ## Spingiti oltre <a name="go-further"></a>
 

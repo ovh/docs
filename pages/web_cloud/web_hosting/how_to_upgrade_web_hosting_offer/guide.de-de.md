@@ -12,7 +12,7 @@ Im [OVHcloud Kundencenter](/links/manager) können Sie die Kapazitäten Ihrer [W
 - Mehr FTP-Speicherplatz
 - Zusätzliche Datenbanken
 - Zusätzliche E-Mail-Accounts
-- Zusätzliche Funktionen wie [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (ab [dem Pro Angebot](/links/web/hosting-professional-offer)) oder [Web Cloud Databases](/links/web/databases){.external} (in [den Performance Angeboten](/links/web/hosting-performance-offer))
+- Zusätzliche Funktionen wie [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (ab [dem Pro Angebot](/links/web/hosting-professional-offer)) oder [Web Cloud Databases](/links/web/databases) (in [den Performance Angeboten](/links/web/hosting-performance-offer))
 
 **Diese Anleitung erklärt, wie Sie Ihr OVHcloud Hosting ohne Dienstunterbrechung skalieren können.**
 

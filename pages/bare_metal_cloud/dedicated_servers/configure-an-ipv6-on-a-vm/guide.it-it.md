@@ -133,7 +133,7 @@ Log in to your container to verify IPv6 connectivity with the `ping` command:
 
 #### Windows Server / Hyper-V
 
-The first step is to install the Hyper-V role on your Windows Server. For more information, consult the [official documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}.
+The first step is to install the Hyper-V role on your Windows Server. For more information, consult the [official documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server).
 
 Before configuring your virtual machine, you need to create a virtual switch.
 

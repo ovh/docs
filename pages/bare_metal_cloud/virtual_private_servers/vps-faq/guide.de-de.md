@@ -1,6 +1,6 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2025-03-25
+updated: 2025-08-07
 ---
 
 ## VPS FAQ
@@ -16,11 +16,6 @@ Unserer Server verbinden ideal die Vorzüge von Webhosting und einem physischen 
 Die Verwendung eines VPS ist die logische Fortführung einer Webhosting-Nutzung. Die virtuellen privaten Server bieten mehr Möglichkeiten und eine größere Freiheit bei Einstellung, Zugang und Funktionen (Root-Zugang, freie Wahl der Software von Drittanbietern wie Apache Webserver oder PHP). Sie können außerdem ein SSL-Zertifikat oder jedes andere Programm Ihrer Wahl installieren.
 
 Ein VPS muss mit Sorgfalt gewählt werden. Die Konfiguration muss den Anforderungen der Anwendungen entsprechen, und der VPS muss sich dem Wachstum Ihrer Nutzung anpassen können.
-
-### VPS oder Plesk Webhosting?
-
-Bei einem Plesk Webhosting wird Ihnen ein Speicherplatz mit vorinstalliertem Plesk zur Verfügung gestellt. Sie können in diesem Fall Ihre Webseiten verwalten, sind aber nicht der Administrator des Dienstes. Dieser kümmert sich ausschließlich um die Verwaltung.  
-Wenn Sie sich für einen VPS entscheiden, sind Sie der Administrator Ihres Servers, und OVHcloud hat keinen Zugang zu dessen Inhalt. Sie sind also völlig frei, den VPS gemäß Ihren Anforderungen zu nutzen.
 
 ### Was sind die Vorteile eines VPS im Vergleich zu einem Dedicated Server?
 
@@ -71,8 +66,8 @@ Ja. Ein VPS kann partitioniert und Ihren Anforderungen entsprechend strukturiert
 
 ### Ist mein VPS gesichert?
 
-OVHcloud stellt keine Backups der auf Ihrem VPS gehosteten Daten bereit. Sie müssen selbst eine geeignete Backup-Strategie anwenden.  
-Sie können hierzu folgende Dienstoptionen verwenden: Manuelle Snapshots oder Automatische Backups.
+Es ist ratsam, eine angemessene Backup-Strategie entsprechend der Sensibilität Ihrer Daten anzuwenden.  
+Genauere Informationen zu den verfügbaren Optionen finden Sie auf unserer [VPS Webseite](/links/bare-metal/vps-options).
 
 ### Wie kann ich meinen VPS schützen?
 

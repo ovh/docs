@@ -129,7 +129,7 @@ Repita este passo sempre que necessário se precisar de dados DynHost adicionais
 
 ### 2 - Criar o registo DNS dinâmico (DynHost) <a name="step2"></a>
 
-A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A" ou "AAAA". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}".
+A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A" ou "AAAA". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 Quando estiver pronto para criar o registo DynHost, clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
 

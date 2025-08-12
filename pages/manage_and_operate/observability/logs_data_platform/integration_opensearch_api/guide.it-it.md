@@ -81,5 +81,5 @@ Like most features of Logs Data Platform, aliases can be shared with other Logs 
 - [Introduction to Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
 - [Getting Started with Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - [Our documentation](/products/public-cloud-data-platforms-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

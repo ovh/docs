@@ -71,13 +71,13 @@ Musisz również:
 Blokada domeny chroni ją przed nieautoryzowanym transferem.
 GoDaddy włącza tę domyślną ochronę. Aby przenieść domenę do OVHcloud, musisz ją wyłączyć.
 
-Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej dla GoDaddy](https://pl.godaddy.com/help/odblokuj-lub-zablokuj-domene-410){.external}.
+Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej dla GoDaddy](https://pl.godaddy.com/help/odblokuj-lub-zablokuj-domene-410).
 
 ### Etap 2 - Uzyskanie kodu autoryzacyjnego 
 
 Przed rozpoczęciem procedury transferu domeny OVHcloud poprosi o podanie kodu autoryzacyjnego lub "Auth code". Możesz go uzyskać, otwierając stronę Twojego portfolio `Domeny`{.action} w GoDaddy.
 
-Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej GoDaddy](https://pl.godaddy.com/help/przenoszenie-posiadanej-domeny-z-godaddy-3560){.external}.
+Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej GoDaddy](https://pl.godaddy.com/help/przenoszenie-posiadanej-domeny-z-godaddy-3560).
 
 ### Etap 3 - Rozpocznij transfer domeny do OVHcloud
 

@@ -608,7 +608,7 @@ If you are unsure about the changes you need to make, contact your webmaster or 
 
 ![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-You have no action to take in this situation. Even if your domain appears in [internationalized notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} in your Control Panel, it will work and display in a normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
+You have no action to take in this situation. Even if your domain appears in [internationalized notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name) in your Control Panel, it will work and display in a normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
 
 > [!alert]
 >

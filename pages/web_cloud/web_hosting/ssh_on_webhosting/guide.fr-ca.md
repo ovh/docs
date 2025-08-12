@@ -12,9 +12,9 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external} bénéficiant d'un accès SSH.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting) bénéficiant d'un accès SSH.
 - Être en possession des informations permettant de vous connecter en SSH à l'espace de stockage.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}, partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 > [!warning]
 > 
@@ -24,13 +24,13 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 
 ### Étape 1 : s'assurer que l'accès SSH est actif <a name="sshcheck"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, cliquez sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, cliquez sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent.
 
 Repérez dans le tableau la colonne « SSH » afin de vérifier que l'utilisateur (ou « login ») SSH concerné dispose bien d'un accès SSH actif. La mention « Désactivé » apparaît si ce n'est pas le cas.
 
 ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 
-Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](/links/web/hosting){.external} bénéficie bien d'un accès SSH.
+Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](/links/web/hosting) bénéficie bien d'un accès SSH.
 
 ### Étape 2 : récupérer les informations nécessaires pour se connecter <a name="sshlogin"></a>
 

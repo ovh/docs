@@ -11,7 +11,7 @@ updated: 2018-06-29
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie){.external}.
+- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
 - Avoir réceptionné et installé le téléphone Cisco 7841 fourni par OVH.
 
 ## En pratique

@@ -7,20 +7,20 @@ updated: 2023-01-16
 
 This guide will show you how to push your logs to Logs Data Platform using Python 3.x.
 
-[logging-ldp](https://github.com/ovh/python-logging-ldp){.external} is intended to be a high performance logging formatter and handler to send log entries into Logs Data Platform.
+[logging-ldp](https://github.com/ovh/python-logging-ldp) is intended to be a high performance logging formatter and handler to send log entries into Logs Data Platform.
 
 This package includes:
 
 - a TCP/TLS handler to send log entries over TCP with TLS support.
-- a formatter to convert logging record into [GELF(1.1)](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification#gelf-payload-specification){.external}.
+- a formatter to convert logging record into [GELF(1.1)](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification#gelf-payload-specification).
 - a facility to ensure fields suits the [LDP naming conventions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention).
 
 ## Requirements
 
 To complete this guide you will need:
 
-- Python 3, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/){.external}.
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- Python 3, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/).
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29)
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ## Instructions
@@ -29,7 +29,7 @@ To complete this guide you will need:
 
 #### Using pip
 
-You can use [pip](https://pip.pypa.io/en/stable/){.external} to install logging-ldp, make sure you have the latest version:
+You can use [pip](https://pip.pypa.io/en/stable/) to install logging-ldp, make sure you have the latest version:
 
 ```shell-session
 $ pip3 install --upgrade pip
@@ -42,7 +42,7 @@ Successfully installed logging-ldp-<version> setuptools-18.3.1
 
 #### Using sources
 
-logging-ldp is available on the [OVH github repository](https://github.com/ovh/python-logging-ldp){.external} and can be installed manually:
+logging-ldp is available on the [OVH github repository](https://github.com/ovh/python-logging-ldp) and can be installed manually:
 
 ```shell-session
 $ git clone git@github.com:ovh/python-logging-ldp.git
@@ -200,5 +200,5 @@ As we can see:
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

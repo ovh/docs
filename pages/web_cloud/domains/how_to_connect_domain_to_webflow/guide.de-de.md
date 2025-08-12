@@ -43,7 +43,7 @@ Wenn Sie ein Webflow-Hosting mit einem OVHcloud Domainnamen verwenden, müssen S
 > Bevor Sie fortfahren:
 >
 > - Öffnen Sie einen Tab in Ihrem Webbrowser.
-> - Öffnen Sie [**diese Seite der Webflow-Dokumentation**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export){.external}.
+> - Öffnen Sie [**diese Seite der Webflow-Dokumentation**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export).
 > - Gehen Sie zum Abschnitt "**How to set your DNS records**" der Webflow-Dokumentation.<br>
 > Die folgenden Anweisungen helfen Ihnen bei der Konfiguration Ihrer OVHcloud DNS-Zone.
 

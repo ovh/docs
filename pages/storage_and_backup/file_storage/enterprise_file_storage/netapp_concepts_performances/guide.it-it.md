@@ -71,7 +71,7 @@ Il tool [FIO](https://github.com/axboe/fio) ti permette di testare diversi scena
 - Il numero di FIO workers.
 - Il modello di accesso (lettura/scrittura/sequenziale/casuale), ecc...
 
-Per maggiori informazioni, consulta la [documentazione di FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
+Per maggiori informazioni, consulta la [documentazione di FIO](https://fio.readthedocs.io/en/latest/index.html).
 
 ## Per saperne di più
 

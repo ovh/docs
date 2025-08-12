@@ -12,9 +12,9 @@ When you install Windows on a server with a hardware RAID configuration, the RAI
 
 ## Requirements
 
-- a [Dedicated Server](/links/bare-metal/bare-metal){.external} with Windows installed and a hardware RAID card (LSI MegaRaid)
+- a [Dedicated Server](/links/bare-metal/bare-metal) with Windows installed and a hardware RAID card (LSI MegaRaid)
 - at least two identical disks
-- access to the [OVHcloud Control Panel](/links/manager){.external}
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -239,6 +239,6 @@ Once the system is installed, log in to your Windows system and open up the util
 
 ## Go further
 
-[Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}.
+[Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard).
 
 Join our [community of users](/links/community).

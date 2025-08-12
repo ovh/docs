@@ -12,7 +12,7 @@ updated: 2024-10-30
 - więcej przestrzeni dyskowej FTP;
 - dodatkowych baz danych; 
 - dodatkowych adresów e-mail;
-- dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases){.external} (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/).
+- dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases) (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/).
 
 **Dowiedz się, jak zmienić ofertę hostingową OVHcloud bez przerwy w działaniu usługi.**
 

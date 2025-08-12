@@ -45,7 +45,7 @@ Para activar uno de estos métodos, conéctese al [área de cliente de OVHcloud]
 
 ### Abrir un KVM a través de un applet Java <a name="applet-java"></a>
 
-Para que el applet funcione, debe tener Java instalado en su equipo. Si todavía no lo ha hecho, visite la [página oficial](https://www.java.com/en/download/){.external}.
+Para que el applet funcione, debe tener Java instalado en su equipo. Si todavía no lo ha hecho, visite la [página oficial](https://www.java.com/en/download/).
 
 En la sección `Remote KVM`{.action} del área de cliente de OVHcloud, haga clic en `Desde un applet Java (KVM)`{.action}:
 

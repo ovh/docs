@@ -46,7 +46,7 @@ Une fenêtre apparaît et vous devez y compléter les champs requis. Cliquez sur
 |--|--|
 | Identifiant | Renseignez, par exemple, le nom de l'utilisateur ou sa fonction. |
 | E-mail | Renseignez l'adresse e-mail de l'utilisateur. |
-| Mot de passe | Définissez le mot de passe de l'utilisateur. Il pourra modifier ce mot de passe lorsque son accès aura été créé. <br>Nous vous conseillons également de consulter [le guide sur la gestion du mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password){.external} pour définir ce mot de passe. |
+| Mot de passe | Définissez le mot de passe de l'utilisateur. Il pourra modifier ce mot de passe lorsque son accès aura été créé. <br>Nous vous conseillons également de consulter [le guide sur la gestion du mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password) pour définir ce mot de passe. |
 | Groupe | Choisissez un groupe parmi ceux disponibles (voir le tableau ci-dessous). |
 | Description | Vous pouvez ajouter une description de l'utilisateur. Exemple : son rôle dans votre entreprise. |
 
@@ -66,7 +66,7 @@ Exemple : **1234-567-89/johnsmith**.
 
 L'utilisateur créé pourra dès lors se connecter à [l'espace client OVHcloud](/links/manager) en utilisant cet identifiant.
 
-Il pourra également modifier son mot de passe et sécuriser son propre accès à votre compte en activant une mesure de double authentification (celle-ci concernera uniquement son accès en tant qu'utilisateur). Vous pouvez consulter à cet effet [le guide sur la mise en place de la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
+Il pourra également modifier son mot de passe et sécuriser son propre accès à votre compte en activant une mesure de double authentification (celle-ci concernera uniquement son accès en tant qu'utilisateur). Vous pouvez consulter à cet effet [le guide sur la mise en place de la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 #### Gérer les utilisateurs
 

@@ -97,7 +97,7 @@ The monthly storage cost will be: 37 376 000 * 0.00001917 + (73 728 000 - 37 376
 
 We designed Object Storage storage classes to be **compatible with S3** API, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region.
 
-Get your S3 access keys and access the various storage classes via the command line using AWS-CLI, [`s3cmd`](https://s3tools.org/s3cmd){.external} or other commands.
+Get your S3 access keys and access the various storage classes via the command line using AWS-CLI, [`s3cmd`](https://s3tools.org/s3cmd) or other commands.
 
 The list of endpoints is available in the following guide: [Object Storage endpoints and geo-availability](/pages/storage_and_backup/object_storage/s3_location).
 
@@ -222,8 +222,8 @@ More generally, there are several methods that allow you to maximize your upload
 
 The High Performance class is adapted to AI or analytics use cases, it is built to bring performance through its design and the use of NVMe SSD disks. It is adapted to use cases that require high read/write speeds on high volumes of data. Performance tests are available on the Cloud Mercato website: 
 
-- [OVHcloud High performance Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovh-high-perf-object-storage-benchmark){.external}
-- [OVHcloud Standard Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovhcloud-standard-object-storage-benchmark){.external}
+- [OVHcloud High performance Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovh-high-perf-object-storage-benchmark)
+- [OVHcloud Standard Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovhcloud-standard-object-storage-benchmark)
 
 ### What is the available bandwidth for upload and download?
 

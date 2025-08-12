@@ -40,7 +40,7 @@ Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_clo
 
 ### PostgreSQL connectors
 
-You can use any of the [PostgreSQL-recommended drivers and extensions](https://www.postgresql.org/download/product-categories/){.external} to access your instance.
+You can use any of the [PostgreSQL-recommended drivers and extensions](https://www.postgresql.org/download/product-categories/) to access your instance.
 
 ### Plans
 

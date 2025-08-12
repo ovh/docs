@@ -100,9 +100,9 @@ Most CMSs can directly replace the domain originally declared for your website w
 Since CMSs are developed by third-party organisations and are not managed by OVHcloud, you will find below links to the official documentation for the various CMSs offered for installation on our hosting plans:
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
-- Joomla! : The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, visit the official pages [docs.joomla.org](https://docs.joomla.org/){.external} or [forum.joomla.org](https://forum.joomla.org/){.external}.
-- Drupal: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, see the official pages [drupal.org](https://drupal.org){.external} or [drupal.fr](https://drupal.fr){.external}.
-- PrestaShop: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, click [here](https://help-center.prestashop.com){.external} to go to their official page.
+- Joomla! : The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, visit the official pages [docs.joomla.org](https://docs.joomla.org/) or [forum.joomla.org](https://forum.joomla.org/).
+- Drupal: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, see the official pages [drupal.org](https://drupal.org) or [drupal.fr](https://drupal.fr).
+- PrestaShop: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, click [here](https://help-center.prestashop.com) to go to their official page.
 
 Please note that for these CMSs, you can also edit the domain names directly [in the corresponding database](/pages/web_cloud/web_hosting/sql_create_database). You will need to change the URL for accessing your website in the table used for your CMS.
 

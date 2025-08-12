@@ -12,9 +12,9 @@ Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir un
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [dedizierten Server](/links/bare-metal/bare-metal){.external}.
+- Sie verfügen über einen [dedizierten Server](/links/bare-metal/bare-metal).
 - Sie haben als Administrator (sudo) via SSH Zugriff auf Ihren Server.
-- Auf Windows Servern ist das Tool sas2ircu installiert (verfügbar über das [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} Search Engine).
+- Auf Windows Servern ist das Tool sas2ircu installiert (verfügbar über das [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu) Search Engine).
 
 ## In der praktischen Anwendung
 
@@ -68,7 +68,7 @@ Das Gerät wird über das Betriebssystem erkannt und wie folgt angezeigt: `/dev/
 
 ### Seriennummer einer Festplatte ermitteln (Hardware-RAID)
 
-Für eine detaillierte Übersicht der Befehle sowie die Vorgehensweise beim Testen Ihrer Festplatten lesen Sie folgende [Anleitung (LSI Raid Controller)](/pages/bare_metal_cloud/dedicated_servers/raid_hard#using-the-lsi-raid-controller){.external} (Englisch).
+Für eine detaillierte Übersicht der Befehle sowie die Vorgehensweise beim Testen Ihrer Festplatten lesen Sie folgende [Anleitung (LSI Raid Controller)](/pages/bare_metal_cloud/dedicated_servers/raid_hard#using-the-lsi-raid-controller) (Englisch).
 
 #### MegaRaid-Controller
 
@@ -155,7 +155,7 @@ Die ID des RAID-Geräts wird wie folgt angezeigt: `/dev/sda` = 1\. RAID, `/dev/s
 
 Der LSI-RAID-Controller verwendet ein Modul namens `sg-map`, das Geräte in der Form `/dev/sgX` abbildet (“X” ist hierbei die Nummer des Geräts).
 
-Um zu ermitteln, welche Festplatte zu einem bestimmten “sg”-Gerät gehört, folgen Sie dieser [Anleitung](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} (Englisch).
+Um zu ermitteln, welche Festplatte zu einem bestimmten “sg”-Gerät gehört, folgen Sie dieser [Anleitung](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (Englisch).
 
 Wenn Sie das Gerät ermittelt haben, das mit der Festplatte, die Sie analysieren möchten, verbunden ist, verwenden Sie folgenden Befehl:
 

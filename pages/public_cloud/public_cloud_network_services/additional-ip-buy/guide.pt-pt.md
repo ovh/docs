@@ -70,7 +70,7 @@ Os seguintes países estão disponíveis para a geolocalização dos IP:
 >
 > A geolocalização de IP baseia-se unicamente em organismos de referência.
 > 
-> Por exemplo, o [RIPE NCC](https://www.ripe.net/){.external} serve a Europa como registo regional da Internet.
+> Por exemplo, o [RIPE NCC](https://www.ripe.net/) serve a Europa como registo regional da Internet.
 >
 > Se precisar de verificar a geolocalização de outra forma, contacte diretamente as organizações em causa. A OVHcloud não lhe poderá fornecer assistência nesta matéria.
 

@@ -93,7 +93,7 @@ If you need to detach the IP block, you can use the following API call to move t
 > This call cuts the network on the VMs that use the IPs concerned.
 >
 
-You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager){.external} in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
+You can track the movement of your IP block via the [OVHcloud Control Panel](/links/manager) in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
 
 The operation reference is “removeIpRipeBlock”.
 

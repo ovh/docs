@@ -4,7 +4,7 @@ excerpt: 'Find out how to install the Kubernetes Dashboard on your OVHcloud Mana
 updated: 2023-02-16
 ---
 
-The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications running in their cluster, as well as manage the cluster itself.
+The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications running in their cluster, as well as manage the cluster itself.
 
 ![kubernetes-dashboard](images/kubernetes-dashboard-02.png){.thumbnail}
 
@@ -13,7 +13,7 @@ The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} i
 This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
 > [!primary]
-> This tutorial describes the most basic way of using the Dashboard with your OVHcloud Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard){.external} for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/README.md){.external}, for more in-depth information.
+> This tutorial describes the most basic way of using the Dashboard with your OVHcloud Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard) for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/README.md), for more in-depth information.
 >
 
 ## Deploy the Dashboard in your cluster

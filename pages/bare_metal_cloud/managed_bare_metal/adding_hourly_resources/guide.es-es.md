@@ -6,14 +6,14 @@ updated: 2020-12-15
 
 ## Objetivo
 
-La solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external} permite disfrutar de recursos con facturación por horas.
+La solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/) permite disfrutar de recursos con facturación por horas.
 
 **Esta guía explica cómo añadir recursos por horas desde el panel de administración vSphere de Managed Bare Metal.**
 
 ## Requisitos
 
-* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
-* [Conceder al usuario el permiso "Adición de recursos"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) para el datacenter correspondiente desde el [área de cliente de OVHcloud](/links/manager){.external}.
+* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/).
+* [Conceder al usuario el permiso "Adición de recursos"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) para el datacenter correspondiente desde el [área de cliente de OVHcloud](/links/manager).
 * Estar conectado al cliente vSphere.
 
 ## Procedimiento

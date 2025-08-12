@@ -19,9 +19,9 @@ Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um alojamento GoDad
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
-- Ter um [nome de domínio](/links/web/domains){.external} registado na OVHcloud.
-- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter um [nome de domínio](/links/web/domains) registado na OVHcloud.
+- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager).
 - Ter um alojamento na GoDaddy.
 - Ter acesso à gestão deste alojamento na GoDaddy.
 
@@ -44,11 +44,11 @@ Quando utiliza um alojamento GoDaddy com um nome de domínio OVHcloud, deve prim
 > Antes de avançar: <br>
 >
 > - Abra um separador em paralelo no seu browser.
-> - Abrir [**esta página de documentação GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US){.external}.
+> - Abrir [**esta página de documentação GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
 > - Siga as instruções até ao passo 10 e recupere as informações específicas ao seu website para poder modificar os seus registos DNS da OVHcloud.<br>
 > As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS da OVHcloud.
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 

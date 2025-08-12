@@ -216,6 +216,6 @@ Klicken Sie abschließend auf den Button `OK`{.action}, um die Änderungen zu sp
 
 ## Weiterführende Informationen
 
-[Mehrere dedizierte Server im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
+[Mehrere dedizierte Server im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

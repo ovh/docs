@@ -6,7 +6,7 @@ updated: 2025-05-23
 
 ## Wprowadzenie
 
-Oferty hostingu [OVHcloud](/links/web/hosting){.external} umożliwiają hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury współdzielonej](https://webhosting-infos.hosting.ovh.net){.external}.
+Oferty hostingu [OVHcloud](/links/web/hosting) umożliwiają hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury współdzielonej](https://webhosting-infos.hosting.ovh.net).
 
 Modyfikacja pliku **php.ini** nie jest dostępna w ofercie hostingu. Wynika to z faktu, że konfiguracja PHP jest globalna dla całej infrastruktury współdzielonej.
 Na serwerach współdzielonych możesz zmienić następujące parametry hostingu:
@@ -44,7 +44,7 @@ Zmiana konfiguracji hostingu w [Panelu klienta OVHcloud](/links/manager) lub zmi
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}, z wyjątkiem [hostingu Cloud Web](/links/web/hosting-cloud-web-offer).
+- Posiadanie [hostingu OVHcloud](/links/web/hosting), z wyjątkiem [hostingu Cloud Web](/links/web/hosting-cloud-web-offer).
 - Dostęp do hostingu z poziomu [Panelu klienta OVHcloud](/links/manager) lub informacje potrzebne do zalogowania się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## W praktyce
@@ -111,12 +111,12 @@ OVHcloud zapewnia instalację najnowszych wersji PHP na swoich serwerach, jednak
 **Przypadek nr 2 - korzystasz ze strony zbudowanej w oparciu o spersonalizowane rozwiązanie**: 
 
 - Skontaktuj się z webmasterem, który zbudował stronę.
-- Skorzystaj z [oficjalnej dokumentacji PHP](http://php.net/manual/en/appendices.php){.external} zawierającej więcej informacji na temat migracji wersji.
+- Skorzystaj z [oficjalnej dokumentacji PHP](http://php.net/manual/en/appendices.php) zawierającej więcej informacji na temat migracji wersji.
 - Jeśli to konieczne, zaktualizuj kod Twojej strony WWW i upewnij się, czy jest kompatybilny z hostingiem OVHcloud.
 
 W razie potrzeby sprawdź wersję PHP aktualnie używaną przez Twój hosting na dwa sposoby:
 
-- **W Panelu klienta OVHcloud**. Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdź wersję poniżej *Ogólna wersja PHP*. 
+- **W Panelu klienta OVHcloud**. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdź wersję poniżej *Ogólna wersja PHP*. 
 
 ![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
 
@@ -190,7 +190,7 @@ Teraz już znasz różne modyfikowalne ustawienia Twojego hostingu WWW OVHcloud,
 
 #### 2.1 - Dostęp do interfejsu zarządzania konfiguracją hostingu WWW
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Następnie przejdź do zakładki `Informacje ogólne`{.action}. Z prawej strony wzmianki `Ogólna wersja PHP`{.action} znajdującej się prawie na środku strony, kliknij przycisk `...`{.action}, a następnie `Zmień konfigurację`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Następnie przejdź do zakładki `Informacje ogólne`{.action}. Z prawej strony wzmianki `Ogólna wersja PHP`{.action} znajdującej się prawie na środku strony, kliknij przycisk `...`{.action}, a następnie `Zmień konfigurację`{.action}.
 
 ![HostingConfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 
@@ -226,7 +226,7 @@ Kiedy wszystko jest gotowe, kliknij `Zatwierdź`{.action}, aby zastosować modyf
 #### 3.1 - Logowanie do przestrzeni dyskowej FTP Twojego hostingu
 
 Przygotuj główny identyfikator FTP, hasło oraz adres serwera FTP.
-W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Teraz przejdź do zakładki `FTP - SSH`{.action}. Znajdziesz tam informacje potrzebne do zalogowania się. 
+W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Teraz przejdź do zakładki `FTP - SSH`{.action}. Znajdziesz tam informacje potrzebne do zalogowania się. 
 
 Jeśli chodzi o hasło użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku OVH ["Zmiana hasła do konta FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -265,8 +265,8 @@ Wpisz wartości zmiennych odpowiadające konfiguracji, którą chcesz zastosowa�
 |Zmienne|Szczegóły|
 |---|---| 
 |app.engine|Pozwala zmodyfikować [silnik PHP](#php-runtime) używany przez hosting. Wpisz **php**, aby włączyć akcelerator PHP-FPM i **phpcgi**, aby go wyłączyć.|
-|app.engine.version|Pozwala zdefiniować [wersja PHP](#php-versions) używana przez hosting spośród [wersji proponowanych przez OVHcloud](/links/web/hosting-programming-language){.external}. Wpisz wybraną przez Ciebie wersję (odpowiednią dla wybranego środowiska wykonawczego).|
-|http.firewall|Umożliwia włączenie lub wyłączenie [firewalla dostarczonego z hostingiem OVHcloud](/links/web/hosting-options){.external}. Wpisz **security**, aby go włączyć lub **none**, aby go wyłączyć.|
+|app.engine.version|Pozwala zdefiniować [wersja PHP](#php-versions) używana przez hosting spośród [wersji proponowanych przez OVHcloud](/links/web/hosting-programming-language). Wpisz wybraną przez Ciebie wersję (odpowiednią dla wybranego środowiska wykonawczego).|
+|http.firewall|Umożliwia włączenie lub wyłączenie [firewalla dostarczonego z hostingiem OVHcloud](/links/web/hosting-options). Wpisz **security**, aby go włączyć lub **none**, aby go wyłączyć.|
 |environment|Pozwala zarządzać mechanizmem pamięci podręcznej dla plików statycznych Twojej strony WWW, a także przetwarzaniem błędów PHP. Odpowiada to [tryb wykonania](#runtime-mod). Wpisz **production**, aby zmaksymalizować buforowanie i ukryć błędy PHP lub **development**, aby pamięć podręczna nie była stosowana a błędy PHP były wyświetlane.|
 |container.image|Pozwala zmodyfikować [środowisko uruchomieniowe](#runtime-environment) używane przez hosting. Wprowadź środowisko uruchomieniowe (**legacy**,**stable** lub **stable64**). Jeśli wybierzesz środowisko uruchomieniowe **stable64**, sprawdź, czy Twoja strona jest zgodna z architekturą 64-bitową.|
 

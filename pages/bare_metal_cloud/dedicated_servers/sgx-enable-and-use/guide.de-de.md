@@ -211,11 +211,11 @@ Hit a key....
 
 Für die weiteren Schritte (Ihre eigene Anwendung entwickeln, sich für die Remote-Bestätigung registrieren, etc.) finden Sie hier weitere nützliche Ressourcen:
 
-- [Intel SGX](https://software.intel.com/en-us/sgx){.external}
-- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services){.external}
-- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
-- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
-- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
-- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
+- [Intel SGX](https://software.intel.com/en-us/sgx)
+- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
+- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/)
+- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver)
+- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -84,10 +84,10 @@ We use official and un-modified (vanilla) versions of DBMS, allowing you to rely
 
 Please refer to the official website for each DBMS documentation:
 
-- [MongoDB](https://docs.mongodb.com/manual/){.external}
-- [MySQL](https://dev.mysql.com/doc/){.external}
-- [PostgreSQL](https://www.postgresql.org/docs/){.external}
-- [Valkey](https://valkey.io/docs/){.external}
+- [MongoDB](https://docs.mongodb.com/manual/)
+- [MySQL](https://dev.mysql.com/doc/)
+- [PostgreSQL](https://www.postgresql.org/docs/)
+- [Valkey](https://valkey.io/docs/)
 
 ## DBMS software and versions
 
@@ -257,10 +257,10 @@ We use official and unmodified (vanilla) versions of DBMS, allowing you to rely 
 
 Please refer to the official website for each DBMS documentation:
 
-- [MongoDB](https://docs.mongodb.com/manual/){.external}
-- [MySQL](https://dev.mysql.com/doc/){.external}
-- [PostgreSQL](https://www.postgresql.org/docs/){.external}
-- [Valkey](https://valkey.io/docs/){.external}
+- [MongoDB](https://docs.mongodb.com/manual/)
+- [MySQL](https://dev.mysql.com/doc/)
+- [PostgreSQL](https://www.postgresql.org/docs/)
+- [Valkey](https://valkey.io/docs/)
 
 ### Can I directly download backups made by OVHcloud?
 

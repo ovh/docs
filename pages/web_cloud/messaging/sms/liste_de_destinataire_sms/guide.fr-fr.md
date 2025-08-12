@@ -14,7 +14,7 @@ Afin d'envoyer une campagne de SMS à de multiples contacts, vous pouvez importe
 
 - Disposer d’un compte SMS OVHcloud
 - Disposer d'un outil de type tableur ou éditeur de texte
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 

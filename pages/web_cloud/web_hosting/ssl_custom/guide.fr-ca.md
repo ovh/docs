@@ -51,7 +51,7 @@ Remplacez les termes `my_private` et `your_file_name` par les noms de fichier de
 
 Une fois la commande lancée, le terminal va vous demander chacune des informations suivantes (pour vous-même, votre entreprise ou votre association). Dès que vous avez répondu à la question posée, appuyez ensuite sur la touche `ENTREE`{.action} de votre clavier pour afficher la question suivante :
 
-- `Country Name (2 letter code) [AU]` : saisissez en majuscule le **Country Code** de votre pays. Si besoin, retrouvez la liste de tous les **Country Codes** [ici](https://www.iban.com/country-codes){.external}.
+- `Country Name (2 letter code) [AU]` : saisissez en majuscule le **Country Code** de votre pays. Si besoin, retrouvez la liste de tous les **Country Codes** [ici](https://www.iban.com/country-codes).
 - `State or Province Name (full name) [Some-State]` : saisissez en majuscule le nom de votre région (ou de votre Etat si vous êtes, par exemple, aux USA).
 - `Locality Name (eg, city) []` : saisissez en majuscule le nom de votre ville.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]` : saisissez le nom de votre organisation, entreprise ou association. **Si vous êtes un particulier, ne répondez pas à cette question et appuyez directement sur la touche `ENTREE`{.action} de votre clavier pour afficher la question suivante**.

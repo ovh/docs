@@ -23,7 +23,7 @@ Login credentials are sent out by email when the Managed Bare Metal service is c
 Name/IP address: pcc-xxx-xxx-xxx-xxx.ovh.com Username: admin password: xxxxxx
 ```
 
-To ensure access, please refer to the VMware documentation, in which the different ports to be opened in your firewall are listed: [Client access](https://kb.vmware.com/kb/1012382){.external}.
+To ensure access, please refer to the VMware documentation, in which the different ports to be opened in your firewall are listed: [Client access](https://kb.vmware.com/kb/1012382).
 
 ### Using the HTML5 web client
 

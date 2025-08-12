@@ -20,7 +20,7 @@ L’impostazione delle variabili d’ambiente OpenStack ti consente di utilizzar
 
 Per recuperare le variabili d’ambiente scarica il file OpenRC dall’utente OpenStack creato in precedenza.
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}, accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud in alto a sinistra.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud in alto a sinistra.
 <br> Nel menu di sinistra, sotto la rubrica **Impostazioni**, clicca su `Utenti e ruoli`{.action}. Poi clicca sui `...`{.action} a destra del tuo utente e seleziona `Scarica il file RC di Openstack`{.action}.
 
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
@@ -72,6 +72,6 @@ export OS_PASSWORD="Password dell’utente Horizon"
 
 ## Per saperne di più
 
-OpenStack, istruzioni per l'uso: [Documentation OpenStack](https://docs.openstack.org/){.external}
+OpenStack, istruzioni per l'uso: [Documentation OpenStack](https://docs.openstack.org/)
 
 Contatta la nostra [Community di utenti](/links/community).

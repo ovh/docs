@@ -35,7 +35,7 @@ La fatturazione dei tuoi servizi è disponibile nello Spazio Cliente OVHcloud.
 
 ### Interfaccia Horizon
 
-Interfaccia visiva indipendente di OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} è l'implementazione iniziale della dashboard di OpenStack, che fornisce un'interfaccia utente web ai servizi OpenStack, in particolare Nova, Swift, Keystone, ecc.
+Interfaccia visiva indipendente di OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/) è l'implementazione iniziale della dashboard di OpenStack, che fornisce un'interfaccia utente web ai servizi OpenStack, in particolare Nova, Swift, Keystone, ecc.
 
 Questa interfaccia completa e tecnica ti permette di gestire quasi tutte le azioni OpenStack. Sarà una delle interfacce necessarie per gestire più di due VLAN, aggiungere interfacce di rete private alle tue istanze, gestire immagini personalizzate, ecc.
 
@@ -87,7 +87,7 @@ A seconda delle tue necessità, puoi utilizzare le API dedicate a OpenStack:
 >
 > Inoltre, alcune funzionalità potrebbero mancare dall'API OpenStack a seconda della versione del client e del sistema operativo.
 Per rendere la guida più accessibile, offre le opzioni più semplici e intuitive.
-È possibile consultare la [documentazione ufficiale di OpenStack](https://docs.openstack.org/){.external} se si desidera approfondire la conoscenza del suo utilizzo.
+È possibile consultare la [documentazione ufficiale di OpenStack](https://docs.openstack.org/) se si desidera approfondire la conoscenza del suo utilizzo.
 >
 
 ### Terraform
@@ -283,7 +283,7 @@ Clicca [qui](/pages/public_cloud/public_cloud_network_services/getting-started-0
 
 #### Gestione delle interfacce di rete con OpenStack Horizon
 
-Accedi all'interfaccia [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} utilizzando il metodo indicato nella [prima parte di questa guida](./#interfaccia-horizon).
+Accedi all'interfaccia [Horizon](https://horizon.cloud.ovh.net/auth/login/) utilizzando il metodo indicato nella [prima parte di questa guida](./#interfaccia-horizon).
 
 Accedi alla tua zona di lavoro:
 

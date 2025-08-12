@@ -85,7 +85,7 @@ Siga as etapas de instalação, clicando nos separadores abaixo:
 >> - **Nome completo** : introduza o seu endereço de e-mail completo
 >> - **Description**
 >> - **Servidor de receção de correio eletrónico IMAP**:<br>- **Nome de anfitrião IMAP**: digite `pro?mail.ovh.net` (substitua "?" pelo número do seu servidor)<br>- **Porta IMAP**: 993<br>- **Nome de utilizador IMAP** : o seu endereço de correio eletrónico completo<br>- **Palavra-passe IMAP** : o seu endereço de correio eletrónico<br>- **Segurança da porta**: SSL
->> - **Servidor de receção de correio eletrónico SMTP**:<br>- **Nome de host SMTP**: digite `pro?mail.ovh.net` (substitua "?" pelo número do seu servidor)<br>- **Porta SMTP**: 587<br>- **Nome de utilizador SMTP**: o seu endereço de correio eletrónico completo<br>- **Palavra-passe SMTP**: o do seu endereço de correio eletrónico<br>- **Segurança da porta**: falhas do TLS START
+>> - **Servidor de correio de saída SMTP**:<br>- **Nome de host SMTP**: digite `pro?mail.ovh.net` (substitua "?" pelo número do seu servidor)<br>- **Porta SMTP**: 587<br>- **Nome de utilizador SMTP**: o seu endereço de correio eletrónico completo<br>- **Palavra-passe SMTP**: o do seu endereço de correio eletrónico<br>- **Segurança da porta**: falhas do TLS START
 >>
 >> Para finalizar a configuração, prima `Connection`{.action}.
 >>

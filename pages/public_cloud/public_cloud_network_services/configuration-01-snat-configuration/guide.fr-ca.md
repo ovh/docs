@@ -11,7 +11,7 @@ L'objectif de ce guide est d'expliquer ce qu'est le service SNAT fourni par les 
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- L'outil [Openstack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} installé sur votre environnement (local)
+- L'outil [Openstack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) installé sur votre environnement (local)
 - Une [Floating IP des services L3](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)
 
 ## Concepts

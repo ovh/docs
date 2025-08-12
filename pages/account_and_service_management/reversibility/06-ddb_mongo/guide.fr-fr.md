@@ -21,9 +21,9 @@ Les fonctionnalités de la gamme de produits Managed Document Database sont rép
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Base de données orientée document | Stockage de données JSON/BSON flexible pour une grande évolutivité. | BSON, JSON, CSV | **Entrant** : Import via mongorestore/mongoimport. <br> **Sortant** : Export via mongodump/mongoexport. | [MongoDB documentation](https://docs.mongodb.com/){.external} |
+| Base de données orientée document | Stockage de données JSON/BSON flexible pour une grande évolutivité. | BSON, JSON, CSV | **Entrant** : Import via mongorestore/mongoimport. <br> **Sortant** : Export via mongodump/mongoexport. | [MongoDB documentation](https://docs.mongodb.com/) |
 | Compatibilité Open-source MongoDB | Version standard de MongoDB sans modification, facilitant la portabilité. | Standard MongoDB (CLI, API, outils) | **Entrant** : intégration directe. <br> **Sortant** : Export complet sans adaptation. |[MongoDB](/products/public-cloud-databases-mongodb)|
-| Haute disponibilité | Jeux de réplicas assurant la redondance et la récupération automatique. | N/A | **Entrant** : Configuration des réplicas à l'import. <br> **Sortant** : Export et déploiement sur un autre cluster. | [Replication](https://docs.mongodb.com/manual/replication/){.external} |
+| Haute disponibilité | Jeux de réplicas assurant la redondance et la récupération automatique. | N/A | **Entrant** : Configuration des réplicas à l'import. <br> **Sortant** : Export et déploiement sur un autre cluster. | [Replication](https://docs.mongodb.com/manual/replication/) |
 | Sauvegardes automatiques | Sauvegardes quotidiennes avec possibilité de restauration. | Snapshots MongoDB | **Entrant** : Restauration possible. <br> **Sortant** : Téléchargement et exportation doivent être effectués manuellement. | [MongoDB Backups](/pages/public_cloud/public_cloud_databases/mongodb_06_howto_backup_restore)|
 
 ### 2 - Implémentations OVHcloud

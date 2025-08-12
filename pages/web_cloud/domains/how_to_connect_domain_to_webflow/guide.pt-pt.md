@@ -19,9 +19,9 @@ Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um alojamento Webfl
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
-- Ter um [nome de domínio](/links/web/domains){.external} registado na OVHcloud.
-- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter um [nome de domínio](/links/web/domains) registado na OVHcloud.
+- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager).
 - Ter um alojamento na Webflow.
 - Ter acesso à gestão deste alojamento na Webflow.
 
@@ -44,11 +44,11 @@ Quando utiliza um alojamento Webflow com um nome de domínio OVHcloud, deve, em 
 > Antes de avançar: <br>
 >
 > - Abra um separador em paralelo no seu browser.
-> - Abrir [**esta página de documentação Webflow**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export){.external}.
+> - Abrir [**esta página de documentação Webflow**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export).
 > - Aceda à secção "**How to set your DNS records**" da documentação sobre Webflow.<br>
 > As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS da OVHcloud.
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 

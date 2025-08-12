@@ -16,7 +16,7 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - Access to the [OVHcloud API](/links/api), the [OVHcloud Control Panel](/links/manager) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
-- The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
+- The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) tool installed on your working environment (optional)
 
 ## Instructions
 

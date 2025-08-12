@@ -22,7 +22,7 @@ There are three different contact types:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager){.external}
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the email address linked to any relevant customer account
 - Appropriate rights for the service concerned
 - The new contact’s email address
@@ -92,7 +92,7 @@ If one of the contacts has not received this email, the contact email address li
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](/links/manager){.external}.
+If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](/links/manager).
 
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 

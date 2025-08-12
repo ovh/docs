@@ -6,7 +6,7 @@ updated: 2023-03-07
 
 ## Ziel 
 
-[Composer](https://getcomposer.org/){.external} ist ein für PHP erstellter Dependency Manager. PHP-Entwickler können externe Bibliotheken in ihre Programme einbinden. Composer vereinfacht die Verteilung von Bibliotheken und die Wartung des Codes von PHP-Projekten. Seit der Veröffentlichung dieses Tools wurden zahlreiche Best Practices für die Entwicklung etabliert und somit die Bibliotheken der PHP-Community verbessert. Diese bewährten Verfahren werden in der Form [SRP](http://www.php-fig.org/){.external} dokumentiert.
+[Composer](https://getcomposer.org/) ist ein für PHP erstellter Dependency Manager. PHP-Entwickler können externe Bibliotheken in ihre Programme einbinden. Composer vereinfacht die Verteilung von Bibliotheken und die Wartung des Codes von PHP-Projekten. Seit der Veröffentlichung dieses Tools wurden zahlreiche Best Practices für die Entwicklung etabliert und somit die Bibliotheken der PHP-Community verbessert. Diese bewährten Verfahren werden in der Form [SRP](http://www.php-fig.org/) dokumentiert.
 
 **Diese Anleitung erklärt, wie Sie Composer installieren und gibt ein Anwendungsbeispiel.**
 
@@ -71,7 +71,7 @@ Um sie zu installieren starten Sie folgenden Befehl im gleichen Ordner:
 php composer.phar install
 ```
 
-Beachten Sie die Dokumentation zu dieser Library sowie den Code, verfügbar auf [GitHub](https://github.com/ovh/php-ovh){.external}.
+Beachten Sie die Dokumentation zu dieser Library sowie den Code, verfügbar auf [GitHub](https://github.com/ovh/php-ovh).
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

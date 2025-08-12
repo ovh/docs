@@ -28,7 +28,7 @@ A agregação baseia-se na tecnologia IEEE 802.3ad, ou Link Aggregation Control 
 
 ### Configurar o OLA na Área de Cliente OVHcloud
 
-Para começar a configurar o OLA, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione o separador `Bare Metal Cloud`{.action}. Clique em `Servidores dedicados`{.action} e selecione o seu servidor na lista.
+Para começar a configurar o OLA, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione o separador `Bare Metal Cloud`{.action}. Clique em `Servidores dedicados`{.action} e selecione o seu servidor na lista.
 
 ![network interfaces](images/network_interfaces2022.png){.thumbnail}
 

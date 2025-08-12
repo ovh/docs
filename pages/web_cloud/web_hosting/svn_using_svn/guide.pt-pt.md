@@ -104,14 +104,14 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 
 #### Windows com TortoiseSVN
 
-- Faça o download e instale a [TortoiseSVN](https://tortoisesvn.net/downloads.html){.external}.
+- Faça o download e instale a [TortoiseSVN](https://tortoisesvn.net/downloads.html).
 - Clique com o botão direito do rato na chave privada. Um ícone aparece no canto inferior direito, e a chave é carregada no agente de autenticação.
 - Crie um diretório, clique com o botão direito e selecione "SVN Checkout". 
 - Introduza `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` no campo "URL of repository" e clique em `OK`:
 
 ![alojamento](/pages/assets/screens/other/web-tools/tortoisesvn/checkout.png){.thumbnail}
 
-Existe uma excelente documentação em inglês para a Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
+Existe uma excelente documentação em inglês para a Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html)
 
 ### Casos específicos
 

@@ -10,13 +10,13 @@ La mise en réseau en mode bridge peut être utilisée pour configurer votre mac
 
 ## Prérequis
 
-- Avoir un serveur dédié avec un hyperviseur installé, par exemple [VMware ESXi](https://www.vmware.com/products/cloud-infrastructure/vsphere){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.
+- Avoir un serveur dédié avec un hyperviseur installé, par exemple [VMware ESXi](https://www.vmware.com/products/cloud-infrastructure/vsphere), [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/), [Proxmox](https://www.proxmox.com/en/proxmox-ve), etc.
 - Avoir au moins une adresse [Additional IP](/links/network/additional-ip) connectée au serveur 
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## Recommandations pour votre machine virtuelle pfSense
 
-- Avoir un serveur dédié avec le [jeu d'instructions AES](https://en.wikipedia.org/wiki/AES_instruction_set){.external}
+- Avoir un serveur dédié avec le [jeu d'instructions AES](https://en.wikipedia.org/wiki/AES_instruction_set)
 - 2 coeurs virtuels pour la machine virtuelle
 - 2 Go (2048 Mo) de RAM pour la machine virtuelle
 - Un hyperviseur avec accès console aux machines virtuelles
@@ -221,11 +221,11 @@ La configuration est maintenant terminée ! Vous devriez voir que la navigation 
 Dans le cadre de l'utilisation de Proxmox, afin de choisir les bonnes interfaces virtuelles, le bon type d’OS, etc, ce tutoriel suit les recommandations de Netgate.<br>
 Si vous n'avez pas l'intention d'utiliser Proxmox, nous vous suggérons de consulter les documentations suivantes de Netgate à ce sujet :
 
-[https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox.html](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html){.external}
+[https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox.html](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html)
 
-[https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-esxi.html#installing-pfsense-software-on-vsphere-6-x-using-vsphere-web-client](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-esxi.html#installing-pfsense-software-on-vsphere-6-x-using-vsphere-web-client){.external}
+[https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-esxi.html#installing-pfsense-software-on-vsphere-6-x-using-vsphere-web-client](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-esxi.html#installing-pfsense-software-on-vsphere-6-x-using-vsphere-web-client)
 
-[https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-hyper-v.html](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-hyper-v.html){.external}
+[https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-hyper-v.html](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-hyper-v.html)
 
 ## Aller plus loin
 

@@ -12,21 +12,21 @@ I database sono utilizzati dalla maggior parte dei siti Web e **C**ontent **M**a
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
-- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
-- In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](/links/manager){.external} o disporre dei dati di connessione al database
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
+- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
+- In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](/links/manager) o disporre dei dati di connessione al database
 
 ## Procedura
 
 Prima di iniziare, definisci il metodo che intendi utilizzare per recuperare il backup del database. Le opzioni disponibili sono diverse:
 
-- **Utilizza lo strumento di backup di OVHcloud**: permette di recuperare i backup dei tuoi database dallo [Spazio Cliente OVHcloud](/links/manager){.external}. Questo metodo non richiede particolari competenze tecniche.
+- **Utilizza lo strumento di backup di OVHcloud**: permette di recuperare i backup dei tuoi database dallo [Spazio Cliente OVHcloud](/links/manager). Questo metodo non richiede particolari competenze tecniche.
 
 - **Effettuare il backup dall’interfaccia web phpMyAdmin** : per effettuare l’operazione è necessario connettersi all’interfaccia *phpMyAdmin*. per utilizzare al meglio l’interfaccia *phpMyAdmin*.
 
 - **Utilizza uno script per il backup** : per poter effettuare il backup è necessario creare uno script e salvarlo sull’hosting Web OVHcloud. Per questa creazione sono necessarie conoscenze specifiche.
 
-- **Effettua il backup da un comando SSH**: questo metodo richiede l’accesso allo spazio di storage FTP tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso. Questo tipo di accesso richiede conoscenze avanzate e una soluzione [hosting Web OVHcloud](/links/web/hosting){.external} specifica.
+- **Effettua il backup da un comando SSH**: questo metodo richiede l’accesso allo spazio di storage FTP tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso. Questo tipo di accesso richiede conoscenze avanzate e una soluzione [hosting Web OVHcloud](/links/web/hosting) specifica.
 
 > [!success]
 >
@@ -46,7 +46,7 @@ Continua la lettura in base al metodo di backup scelto.
 
 ### Recuperare un backup tramite lo strumento di OVHcloud
 
-Per accedere allo strumento di backup di OVHcloud, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
+Per accedere allo strumento di backup di OVHcloud, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Da questo momento è possibile scegliere se effettuare un nuovo backup o ripristinarne uno esistente.
 
@@ -76,7 +76,7 @@ Per scaricare un backup, clicca sul pulsante `...`{.action} a destra del backup 
 
 ### Recupera un backup dall'interfaccia web phpMyAdmin
 
-Per effettuare l’operazione, accedi a *phpMyAdmin*. Per conoscere il link di accesso a quest’ultimo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}, clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
+Per effettuare l’operazione, accedi a *phpMyAdmin*. Per conoscere il link di accesso a quest’ultimo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sul pulsante `...`{.action} in corrispondenza del database interessato e seleziona `Accedi a phpMyAdmin`{.action}.
 

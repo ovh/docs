@@ -17,7 +17,7 @@ updated: 2024-12-10
 
 ### Définitions
 
-- Endpoint : adresse HTTP pointant directement sur une API d'un service. par exemple [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/){.external} pour le endpoint d'authentification ou [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/){.external} pour le endpoint de gestion des images de la zone GRA1.
+- Endpoint : adresse HTTP pointant directement sur une API d'un service. par exemple [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) pour le endpoint d'authentification ou [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/) pour le endpoint de gestion des images de la zone GRA1.
 - Token : chaîne de caractère unique liée à une authentification et à des droits d'accès. Un token est demandé par l'utilisateur en fournissant ses *credentials* (informations d'identification) à l'API d'authentification. Le token est généré et fourni avec une durée de validité limitée de 24h. Un token peut être *scoped* ou *unscoped*, c'est à dire qu'il peut être directement lié à un tenant ou n'être lié à aucun tenant.
 
 ### Principe global
@@ -33,7 +33,7 @@ Comme les tokens ont une durée de validité définie, ils expirent et doivent �
 
 De la même manière, si un token doit être révoqué avant sa date d'expiration, il est possible de le faire via l'API.
 
-Pour plus d'information, consultez la documentation d'[OpenStack de l'API](https://docs.openstack.org/keystone/train/api_curl_examples.html){.external}.
+Pour plus d'information, consultez la documentation d'[OpenStack de l'API](https://docs.openstack.org/keystone/train/api_curl_examples.html).
 
 ### Operations manuelles
 
@@ -166,7 +166,7 @@ Connection: close
 
 Il est fortement recommandé d'utiliser les librairies permettant la gestion transparente des tokens. De cette manière, en fournissant simplement les credentials de connexion à la librairie, les tokens seront automatiquement générés, utilisés et renouvelés sans devoir en faire la gestion au niveau applicatif.
 
-Il existe de nombreuses librairies dans les différents langages. Consultez [la liste officielle pour plus d'informations](https://wiki.openstack.org/wiki/SDKs){.external}.
+Il existe de nombreuses librairies dans les différents langages. Consultez [la liste officielle pour plus d'informations](https://wiki.openstack.org/wiki/SDKs).
 
 #### Suppression du token
 

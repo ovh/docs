@@ -76,7 +76,7 @@ Pour permettre cette configuration, nous allons remplacer sur chacun des sites l
 <a name="downloadsources"></a>
 #### Etape 2.1 Téléchargement des sources pour l'installation de pfSense
 
-Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/){.external}.
+Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/).
 
 A l'aide de [cette documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
 
@@ -412,7 +412,7 @@ Nous allons effectuer l'installation de la passerelle **GW-PFSENSE** en France s
 <a name="downloadsourcesfr"></a>
 #### Etape 3.1 Téléchargement des sources pour l'installation de pfSense
 
-Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/){.external}.
+Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/).
 
 A l'aide de [cette documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
 

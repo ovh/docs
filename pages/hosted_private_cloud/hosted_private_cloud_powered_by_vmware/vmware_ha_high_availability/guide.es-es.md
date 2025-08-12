@@ -15,7 +15,7 @@ La función principal de **VMware HA**(Alta disponibilidad) es reiniciar las má
 ## Requisitos
 
 - Estar conectado a la [interfaz vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion).
-- Tener contratado un [Hosted Private Cloud de OVHcloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
+- Tener contratado un [Hosted Private Cloud de OVHcloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/).
 
 ## Procedimiento
 

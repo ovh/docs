@@ -6,7 +6,7 @@ updated: 2023-12-08
 
 ## Ziel
 
-Dieses Tutorial zeigt Ihnen, wie Sie [Cecil](https://cecil.app/){.external} installieren und konfigurieren können. Es ist eine in PHP geschriebene Anwendung, die statische Webseiten generieren und verwalten kann.
+Dieses Tutorial zeigt Ihnen, wie Sie [Cecil](https://cecil.app/) installieren und konfigurieren können. Es ist eine in PHP geschriebene Anwendung, die statische Webseiten generieren und verwalten kann.
 
 Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren Besuchern eine bessere Ladezeit und eine höhere Sicherheit. Ohne dynamischen Inhalt sind Ihre Seiten robuster gegen Cyber-Angriffe. Das Erzeugen von statischen Seiten erlaubt mehr Freiheiten bei der Seiten-Erstellung. Sie sparen auch Zeit, da Sie nicht bei Null anfangen müssen.
 
@@ -24,7 +24,7 @@ Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren B
 - Sie sind mit der Befehlszeileneingabe vertraut.
 - Sie können Ihre Dateien per FTP mit einem Client wie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) übertragen.
 - Sie haben Ihre DNS-Zone konfiguriert, um Ihren Domainnamen (oder eine Subdomain) auf Ihr Webhosting zu verweisen. Dies ist besonders relevant, wenn Sie auf Ihrem Hosting mehrere Websites als [Multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) hosten möchten.
-- Sie haben [Composer](https://getcomposer.org/){.external} installiert, mit der Datei `composer.phar` im Wurzelverzeichnis Ihres Webhostings oder im Zielordner Ihres Domainnamens.
+- Sie haben [Composer](https://getcomposer.org/) installiert, mit der Datei `composer.phar` im Wurzelverzeichnis Ihres Webhostings oder im Zielordner Ihres Domainnamens.
 
 ## In der praktischen Anwendung
 
@@ -109,7 +109,7 @@ Ersetzen Sie die Standardinformationen durch Ihre eigenen, und speichern Sie die
 
 ### Neue Seite erstellen
 
-Sie können Webseiten mithilfe von Dateien im Markdown-Format erstellen. Diese Seiten können angepasst werden. **Cecil** enthält [Twig](https://twig.symfony.com/){.external}, die Template Engine, die standardmäßig für das [Symfony](https://symfony.com/){.external} Framework verwendet wird.
+Sie können Webseiten mithilfe von Dateien im Markdown-Format erstellen. Diese Seiten können angepasst werden. **Cecil** enthält [Twig](https://twig.symfony.com/), die Template Engine, die standardmäßig für das [Symfony](https://symfony.com/) Framework verwendet wird.
 
 Ordner und Dateien sind wie folgt organisiert:
 
@@ -153,7 +153,7 @@ Sie können sie auf dem Server öffnen, indem Sie die URL Ihrer Seite gefolgt vo
 
 #### Auf dem Server arbeiten
 
-Markdown-Dateien können direkt auf dem Webhosting-Server bearbeitet werden. Mit dem SSH-Zugang der [Performance Hostings](/links/web/hosting-performance-offer) können Sie [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} oder [vim](https://www.vim.org/){.external} verwenden.
+Markdown-Dateien können direkt auf dem Webhosting-Server bearbeitet werden. Mit dem SSH-Zugang der [Performance Hostings](/links/web/hosting-performance-offer) können Sie [GNU nano](https://nano-editor.org/), [vi](https://ex-vi.sourceforge.net/) oder [vim](https://www.vim.org/) verwenden.
 
 Die Screenshots dieses Tutorials wurden unter **GNU nano** erstellt.
 
@@ -216,9 +216,9 @@ Die Verwendung einer Template Engine, die in der Web-Entwickler-Community weit v
 
 [Dynamischen Inhalt auf einer statischen Webseite hinzufügen, die mit Cecil erstellt wurde](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
 
-[Offizielle Webseite von Cecil](https://cecil.app/){.external}
+[Offizielle Webseite von Cecil](https://cecil.app/)
 
-[Hilfe zum Markdown-Format](https://www.markdownguide.org/){.external}
+[Hilfe zum Markdown-Format](https://www.markdownguide.org/)
 
 [Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

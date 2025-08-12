@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia){.external} et est entièrement intégré dans l'univers Public Cloud.
+Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia) et est entièrement intégré dans l'univers Public Cloud.
 
 **Découvrez comment débuter avec un Load Balancer sur le Public Cloud.**
 

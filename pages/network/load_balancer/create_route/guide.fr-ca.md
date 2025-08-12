@@ -12,8 +12,8 @@ Dans certains cas, il est possible d'aller plus loin, et de router, rediriger ou
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} sur une offre autorisant la création des routes
-- Avoir accès à l'[API OVH](/links/api){.external}.
+- Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/) sur une offre autorisant la création des routes
+- Avoir accès à l'[API OVH](/links/api).
 
 ## En pratique
 
@@ -41,7 +41,7 @@ Il s'agit d'une action « finale ». C'est à dire que si les règles sont valid
 
 ## Présentation de l'API
 
-La gestion des routes n'est accessible qu'au travers de l'[API OVH](/links/api){.external}. Elle est valide uniquement pour les protocoles `http`{.action} et `tcp`{.action}, le chemin `/ipLoadbalancing/{serviceName}/{protocole}/route/`{.action} expose l'API dédiée aux routes.
+La gestion des routes n'est accessible qu'au travers de l'[API OVH](/links/api). Elle est valide uniquement pour les protocoles `http`{.action} et `tcp`{.action}, le chemin `/ipLoadbalancing/{serviceName}/{protocole}/route/`{.action} expose l'API dédiée aux routes.
 
 L'API des routes de votre service OVH Load Balancer a été pensée spécialement pour être souple, puissante et évolutive. Elle est organisée autour de trois sections principales :
 
@@ -111,7 +111,7 @@ Vous trouverez le détail des appels d'API dans la section [Manipulation des rou
 ### Forcer le HTTPS pour les pages de login WordPress
 Le HTTPS est devenu la norme. L'objectif est de rendre tous les sites disponibles de manière sécurisée en HTTPS grâce au protocole SSL/TLS. Si vous avez besoin d'un certificat SSL/TLS, vous pouvez utiliser votre service OVH Load Balancer pour en commander un qui sera géré pour vous de manière complètement automatique.
 
-Migrer un site en HTTPS demande du travail, notamment pour éviter les problèmes de "[Mixed-Content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external}". Il peut être intéressant de migrer section par section, en commençant par sécuriser les pages envoyant des identifiants.
+Migrer un site en HTTPS demande du travail, notamment pour éviter les problèmes de "[Mixed-Content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content)". Il peut être intéressant de migrer section par section, en commençant par sécuriser les pages envoyant des identifiants.
 
 Une approche pourrait être de se baser sur le début des URLs WordPress. Par défaut, l'URL des pages de connexion de WordPress commencent par "/wp-login". Nous aurions donc besoin :
 

@@ -51,7 +51,7 @@ Dans la suite de ce document, nous allons voir 2 cas d'usages distincts.
 
 ### Ajouter une Additional IP
 
-Depuis l'[API OVHcloud](https://api.ovh.com){.external}, vous pouvez associer ces IPs avec votre service OVHcloud Load Balancer.
+Depuis l'[API OVHcloud](https://api.ovh.com), vous pouvez associer ces IPs avec votre service OVHcloud Load Balancer.
 
 Voici l'appel API pour cela :
 
@@ -81,7 +81,7 @@ Les services de vos autres frontends restent quant à eux accessibles via l'adre
 
 ##### **Création d'un frontend**
 
-Depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs Additional IPs sur un frontend pendant sa création :
+Depuis l'[API OVHcloud](https://api.ovh.com), l'appel suivant vous permettra de définir une ou plusieurs Additional IPs sur un frontend pendant sa création :
 
 - protocole HTTP
 
@@ -106,7 +106,7 @@ Depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous pe
 
 ##### **Mise à jour d'un frontend**
 
-Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs Additional IPs sur un frontend existant :
+Toujours depuis l'[API OVHcloud](https://api.ovh.com), l'appel suivant vous permettra de définir une ou plusieurs Additional IPs sur un frontend existant :
 
 - protocole HTTP
 
@@ -131,7 +131,7 @@ Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivan
 
 #### Depuis l'espace client OVHcloud
 
-Vous pouvez définir vos Additional IPs dédiées depuis l'[espace client OVHcloud](/links/manager){.external}. Rendez-vous dans la partie `Bare metal Cloud`{.action} puis dans `Load Balancer`{.action}.
+Vous pouvez définir vos Additional IPs dédiées depuis l'[espace client OVHcloud](/links/manager). Rendez-vous dans la partie `Bare metal Cloud`{.action} puis dans `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier, créez un nouveau frontend, ou éditez-en un existant.
 

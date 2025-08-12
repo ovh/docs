@@ -14,7 +14,7 @@ Las bases de datos administradas de OVHcloud ofrecen varios sistemas de gestión
 Tener al menos una de las 3 ofertas siguientes:
 
 - Una de las bases de datos incluidas con un [alojamiento web](/links/web/hosting).
-- Una [instancia Web Cloud Databases](/links/web/databases) {.external} (incluida en un [plan de hosting Performance](/links/web/hosting)).
+- Una [instancia Web Cloud Databases](/links/web/databases)  (incluida en un [plan de hosting Performance](/links/web/hosting)).
 - Un pack de bases de datos [Start SQL](/links/web/hosting-options-startsql).
 
 ## Procedimiento

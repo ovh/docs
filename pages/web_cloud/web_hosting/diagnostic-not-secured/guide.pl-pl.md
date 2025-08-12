@@ -85,8 +85,8 @@ Jeśli wygenerowałeś **certyfikat SSL « Let's Encrypt »**, włącz opcję SS
 
 Jeśli posiadasz importowany **certyfikat SSL** i certyfikat ten nie działa, skontaktuj się z dostawcą.
 
-Jeśli zamówiłeś jeden z płatnych **certyfikatów SSL** od naszego partnera [SECTIGO](https://sectigo.com/){.external}, sprawdź, czy otrzymałeś wiadomość e-mail z propozycją odnowienia certyfikatu.
-<br>W razie potrzeby skontaktuj się z [pomocą SECTIGO](https://sectigo.com/support){.external} w tej sprawie.
+Jeśli zamówiłeś jeden z płatnych **certyfikatów SSL** od naszego partnera [SECTIGO](https://sectigo.com/), sprawdź, czy otrzymałeś wiadomość e-mail z propozycją odnowienia certyfikatu.
+<br>W razie potrzeby skontaktuj się z [pomocą SECTIGO](https://sectigo.com/support) w tej sprawie.
 
 > [!primary]
 >

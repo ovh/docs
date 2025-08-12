@@ -15,7 +15,7 @@ Główną funkcją usługi **VMware HA** (High Availability) w razie awarii sprz
 ## Wymagania początkowe
 
 - Dostęp do [interfejsu vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
-- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/)
 
 ## W praktyce
 

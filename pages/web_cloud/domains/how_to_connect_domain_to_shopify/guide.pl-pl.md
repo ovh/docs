@@ -19,9 +19,9 @@ Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem Shopify. W ty
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
-- Posiadanie [domeny](/links/web/domains){.external} zarejestrowanej w OVHcloud.
-- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie [domeny](/links/web/domains) zarejestrowanej w OVHcloud.
+- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie hostingu w Shopify.
 - Dostęp do interfejsu zarządzania hostingiem w Shopify.
 
@@ -35,7 +35,7 @@ Zalecamy, abyś przed przystąpieniem do dwóch kroków, zapoznał się z konfig
 
 ### Konfiguracja wpisów DNS na koncie OVHcloud
 
-Zaloguj się do Twojego panelu [klienta OVHcloud](/links/manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Zaloguj się do Twojego panelu [klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich rekordów DNS wybranej domeny.
 
@@ -85,7 +85,7 @@ Strefa DNS jest teraz skonfigurowana tak, aby wskazywała na hosting Shopify.
 
 ### Przypisz domenę do Shopify
 
-Operacje na tym etapie należy wykonać w panelu zarządzania Shopify. Prosimy o przejście bezpośrednio do etapu 2 przewodnika na stronie Shopify, klikając [**ten link**](https://help.shopify.com/pl/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){.external}.
+Operacje na tym etapie należy wykonać w panelu zarządzania Shopify. Prosimy o przejście bezpośrednio do etapu 2 przewodnika na stronie Shopify, klikając [**ten link**](https://help.shopify.com/pl/manual/domains/add-a-domain/connecting-domains/connect-domain-manual).
 
 > [!primary]
 >

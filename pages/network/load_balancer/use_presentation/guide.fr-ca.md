@@ -6,7 +6,7 @@ updated: 2018-01-17
 
 ## Objectif
 
-La nouvelle offre [OVHcloud Load Balancer](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} est un répartiteur de charge (load balancer) qui allie souplesse de configuration et fiabilité. Vous n'avez qu'à configurer vos produits avec le Load Balancer OVHcloud et nous nous occupons du reste !
+La nouvelle offre [OVHcloud Load Balancer](https://www.ovh.com/ca/fr/solutions/load-balancer/) est un répartiteur de charge (load balancer) qui allie souplesse de configuration et fiabilité. Vous n'avez qu'à configurer vos produits avec le Load Balancer OVHcloud et nous nous occupons du reste !
 
 **Découvrez vite la nouvelle offre OVHcloud Load Balancer.**
 
@@ -19,7 +19,7 @@ La nouvelle offre [OVHcloud Load Balancer](https://www.ovh.com/ca/fr/solutions/l
  
 Cette nouvelle offre est basée sur de robustes solutions open source : Haproxy pour les flux TCP et Nginx pour les flux UDP.
 
-Plus de limitations ! La nouvelle offre [OVHcloud Load Balancer](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} peut être utilisée pour fonctionner avec différents protocoles :
+Plus de limitations ! La nouvelle offre [OVHcloud Load Balancer](https://www.ovh.com/ca/fr/solutions/load-balancer/) peut être utilisée pour fonctionner avec différents protocoles :
 
 |Type|Description|Avantages|Technologie|
 |---|---|---|---|
@@ -111,10 +111,10 @@ Répartissez la charge entre vos serveurs de messagerie :
 
 ## Aller plus loin
 
-[En apprendre plus sur la répartition de charge](https://fr.wikipedia.org/wiki/Repartition_de_charge){.external}.
+[En apprendre plus sur la répartition de charge](https://fr.wikipedia.org/wiki/Repartition_de_charge).
 
-[En apprendre plus sur Haproxy](http://www.haproxy.org/#desc){.external}.
+[En apprendre plus sur Haproxy](http://www.haproxy.org/#desc).
 
-[En apprendre plus sur Nginx](https://fr.wikipedia.org/wiki/Nginx){.external}.
+[En apprendre plus sur Nginx](https://fr.wikipedia.org/wiki/Nginx).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -12,7 +12,7 @@ Um die Sicherheit Ihrer Managed Bare Metal Infrastruktur zu verbessern, können 
 
 ## Voraussetzungen
 
-- Sie nutzen ein Angebot der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external}.
+- Sie nutzen ein Angebot der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/).
 - Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
 
 ## Praktische Anwendung
@@ -36,4 +36,4 @@ Es öffnet sich ein Fenster. Wählen Sie in seinem Drop-down-Menü zwischen “O
 
 [Die Verbindung von IPs mit dem vCenter erlauben](/pages/bare_metal_cloud/managed_bare_metal/vcenter-authorise-ip-access)
 
-Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

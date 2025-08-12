@@ -32,7 +32,7 @@ Certaines règles sont déjà présentes par défaut, permettant notamment de pr
 > Le débit montant est la bande passante de votre réseau vers l'Internet, c'est-à-dire votre débit d'émission.
 >
 
-Avant de configurer la  **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [perf.overthebox.net](https://perf.overthebox.net/){.external} afin de déterminer les débits maximum de chacune de vos connexions.
+Avant de configurer la  **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [perf.overthebox.net](https://perf.overthebox.net/) afin de déterminer les débits maximum de chacune de vos connexions.
 
 **À titre d'exemple**, pour ce guide, voici les débits obtenus sur chaque connexion :
 
@@ -149,7 +149,7 @@ L'outil de configuration automatique applique une configuration générale en fo
 > - Le débit montant est la bande passante de votre réseau vers l'Internet, c'est-à-dire votre débit d'émission.
 >
 
-Avant de configurer la  **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [perf.overthebox.net](https://perf.overthebox.net/){.external} afin de déterminer les débits maximum de chacune de vos connexions.
+Avant de configurer la  **QoS**, il est conseillé de connaître le débit maximum **montant et descendant** de chaque connexion utilisée par votre **OverTheBox**. Pour cela, vous pouvez utiliser l'outil [perf.overthebox.net](https://perf.overthebox.net/) afin de déterminer les débits maximum de chacune de vos connexions.
 
 **À titre d'exemple**, pour ce guide, voici les débits obtenus sur chaque connexion :
 

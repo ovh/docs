@@ -12,7 +12,7 @@ In einigen Fällen kann es nützlich sein, einen Datastore aus Ihrem Cluster zu 
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Angebot.
+- Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Angebot.
 - Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
 ## In der praktischen Anwendung

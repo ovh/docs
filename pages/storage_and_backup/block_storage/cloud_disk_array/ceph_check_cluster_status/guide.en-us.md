@@ -5,7 +5,7 @@ updated: 2020-12-22
 ---
 
 ## Using web interface
-First, connect to the [Ceph as a Service manager](https://www.ovh.com/manager/sunrise/caas/index.html#/caas){.external}. You will see two differents parts: **cluster details** and **cluster health**.
+First, connect to the [Ceph as a Service manager](https://www.ovh.com/manager/sunrise/caas/index.html#/caas). You will see two differents parts: **cluster details** and **cluster health**.
 
 ### Cluster details
 
@@ -27,7 +27,7 @@ Additional explanations:
 >>
 > **Version**
 >>
->> We currently deliver clusters up to version 9.2.1 ([official Ceph releases](https://docs.ceph.com/en/latest/releases/general/){.external})
+>> We currently deliver clusters up to version 9.2.1 ([official Ceph releases](https://docs.ceph.com/en/latest/releases/general/))
 >>
 >>
 > **Tunable**

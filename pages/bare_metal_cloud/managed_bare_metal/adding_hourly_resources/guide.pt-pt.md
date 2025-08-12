@@ -6,14 +6,14 @@ updated: 2020-12-15
 
 ## Sumário
 
-A solução [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external} permite-lhe adicionar recursos faturados à hora.
+A solução [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/) permite-lhe adicionar recursos faturados à hora.
 
 **Este manual descreve como adicionar um recurso com faturação à hora a partir da interface vSphere do Managed Bare Metal.**
 
 ## Requisitos
 
-* Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
-* Dar ao utilizador a autorização [“Adição de recursos”](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights){.external} quanto ao datacenter em causa a partir da [Área de Cliente OVH](/links/manager){.external}.
+* Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
+* Dar ao utilizador a autorização [“Adição de recursos”](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) quanto ao datacenter em causa a partir da [Área de Cliente OVH](/links/manager).
 * Estabelecer uma ligação ao cliente vSphere.
 
 ## Instruções
@@ -44,4 +44,4 @@ Por outro lado, surgirá uma tarefa nas tarefas recentes do vSphere. Também ela
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}
+Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/)

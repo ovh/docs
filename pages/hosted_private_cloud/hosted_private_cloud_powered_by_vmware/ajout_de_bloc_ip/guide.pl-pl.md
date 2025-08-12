@@ -93,7 +93,7 @@ Jeśli po odłączeniu bloku IP będziesz mógł użyć tego połączenia API do
 > To wywołanie odcina dostęp do sieci maszynom wirtualnym, które wykorzystują dane adresy IP.
 >
 
-Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](/links/manager){.external} w sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}. Kliknij Twoją usługę Hosted Private Cloud, a następnie kartę `Operacje`{.action}.
+Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](/links/manager) w sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}. Kliknij Twoją usługę Hosted Private Cloud, a następnie kartę `Operacje`{.action}.
 
 Odnośnik do operacji to „removeIpRipeBlock”.
 

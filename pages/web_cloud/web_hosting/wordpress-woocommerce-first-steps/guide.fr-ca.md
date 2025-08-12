@@ -12,7 +12,7 @@ Découvrez comment créer une boutique en ligne avec l'extension open source **W
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner), à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} ou à [l'éditeur de WooCommerce](https://woocommerce.com/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner), à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/) ou à [l'éditeur de WooCommerce](https://woocommerce.com/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 ## Prérequis
@@ -118,7 +118,7 @@ La gestion de produits se fait via un ensemble de sous-rubriques :
 
 #### Expédition
 
-Si vous avez activé les extensions par défaut proposées gratuitement lors de l'installation, vous disposez de l'extension [WooCommerce Shipping](https://woocommerce.com/fr-fr/woocommerce-shipping/){.external}. Dans le cas contraire, vous pouvez procéder à son installation en vous rendant dans le menu `Extensions`{.action}.
+Si vous avez activé les extensions par défaut proposées gratuitement lors de l'installation, vous disposez de l'extension [WooCommerce Shipping](https://woocommerce.com/fr-fr/woocommerce-shipping/). Dans le cas contraire, vous pouvez procéder à son installation en vous rendant dans le menu `Extensions`{.action}.
 
 - **Zones d'expédition** : permet de définir et configurer des zones d'expédition.
 - **Options de livraison** : sert à paramétrer l'application pour tout ce qui est relatif aux frais d'expédition.
@@ -138,7 +138,7 @@ Permet de configurer les *e-mails types* envoyés par l'application (inscription
 
 #### Intégration
 
-Pour géolocaliser vos clients en fonction de leur adresse IP, vous pouvez, dans cette sous-rubrique, entrer la clé de licence de [MaxMind](https://www.maxmind.com/){.external}, service payant de géolocalisation.
+Pour géolocaliser vos clients en fonction de leur adresse IP, vous pouvez, dans cette sous-rubrique, entrer la clé de licence de [MaxMind](https://www.maxmind.com/), service payant de géolocalisation.
 
 #### Avancé
 
@@ -153,10 +153,10 @@ Pour géolocaliser vos clients en fonction de leur adresse IP, vous pouvez, dans
 
 Quelques liens utiles :
 
-- Le [site officiel WordPress](https://wordpress.org){.external}.
-- L'extension [Jetpack](https://jetpack.com/){.external}
-- Le site de [WooCommerce](https://woocommerce.com/){.external}
-- Le magasin d'[extensions WooCommerce](https://woocommerce.com/products/){.external}
+- Le [site officiel WordPress](https://wordpress.org).
+- L'extension [Jetpack](https://jetpack.com/)
+- Le site de [WooCommerce](https://woocommerce.com/)
+- Le magasin d'[extensions WooCommerce](https://woocommerce.com/products/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

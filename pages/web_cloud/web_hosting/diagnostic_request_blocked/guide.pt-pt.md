@@ -49,10 +49,10 @@ Aceda às definições do browser e verifique se existe uma atualização.
 
 A seguir, poderá encontrar os procedimentos de atualização para os principais browsers da Internet (documentação fornecida pelos seus editores):
 
-- [Firefox](https://support.mozilla.org/pt-BR/kb/atualize-o-firefox){.external}.
-- [Chrome](https://support.google.com/chrome/answer/95414?hl=pt&co=GENIE.Platform%3DDesktop&oco=0){.external}.
-- [Safari](https://support.apple.com/pt-pt/102665){.external}.
-- [Edge](https://support.microsoft.com/pt-pt/topic/defini%C3%A7%C3%B5es-de-atualiza%C3%A7%C3%A3o-do-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}.
+- [Firefox](https://support.mozilla.org/pt-BR/kb/atualize-o-firefox).
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=pt&co=GENIE.Platform%3DDesktop&oco=0).
+- [Safari](https://support.apple.com/pt-pt/102665).
+- [Edge](https://support.microsoft.com/pt-pt/topic/defini%C3%A7%C3%B5es-de-atualiza%C3%A7%C3%A3o-do-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1).
 
 Se o seu browser da Internet não estiver presente na lista acima, consulte a sua documentação online ou contacte o suporte do seu editor.
 

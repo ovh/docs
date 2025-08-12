@@ -35,7 +35,7 @@ The test.txt file will be deleted in an hour.
 ### On a specific date
 
 First, you need to know what the deletion date is in epoch format.
-To help you find the value you need to insert, use a [converter](http://www.epochconverter.com/){.external}.
+To help you find the value you need to insert, use a [converter](http://www.epochconverter.com/).
 
 Then you can enter this date in the X-Delete-At header:
 
@@ -49,4 +49,4 @@ The file will therefore be deleted on the 19th November 2022.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

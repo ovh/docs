@@ -6,7 +6,7 @@ updated: 2018-01-17
 
 ## Obiettivo
 
-Il nuovo [OVH Load Balancer](https://www.ovh.it/soluzioni/load-balancer/){.external} è un ripartitore di carico che combina flessibilità e affidabilità. Non dovrai fare altro che configurare i tuoi prodotti con OVH Load Balancer e noi ci occuperemo di tutto il resto!
+Il nuovo [OVH Load Balancer](https://www.ovh.it/soluzioni/load-balancer/) è un ripartitore di carico che combina flessibilità e affidabilità. Non dovrai fare altro che configurare i tuoi prodotti con OVH Load Balancer e noi ci occuperemo di tutto il resto!
 
 **Scopri subito il nuovo OVH Load Balancer**
 
@@ -19,7 +19,7 @@ Il nuovo [OVH Load Balancer](https://www.ovh.it/soluzioni/load-balancer/){.exter
  
 Questo servizio si basa su tecnologie open source: HAProxy per il traffico TCP e Nginx per il traffico UDP.
 
-Senza restrizioni! La nuova soluzione di [OVH Load Balancer](https://www.ovh.it/soluzioni/load-balancer/){.external} è stata ideata per funzionare con diversi protocolli:
+Senza restrizioni! La nuova soluzione di [OVH Load Balancer](https://www.ovh.it/soluzioni/load-balancer/) è stata ideata per funzionare con diversi protocolli:
 
 |Tipo|Descrizione|Vantaggi|Tecnologia|
 |---|---|---|---|
@@ -111,10 +111,10 @@ Distribuzione e ridondanza dei tuoi database.
 
 ## Per saperne di più
 
-[Load balancing](https://it.wikipedia.org/wiki/Load_balancing){.external}.
+[Load balancing](https://it.wikipedia.org/wiki/Load_balancing).
 
-[Haproxy](https://en.wikipedia.org/wiki/HAProxy){.external}.
+[Haproxy](https://en.wikipedia.org/wiki/HAProxy).
 
-[Nginx](https://it.wikipedia.org/wiki/Nginx){.external}.
+[Nginx](https://it.wikipedia.org/wiki/Nginx).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

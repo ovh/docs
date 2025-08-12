@@ -25,8 +25,8 @@ Admission plugins (defaults are not listed here):
 
 Authorization modes:
 
-* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/){.external}: Authorise API requests made by Kubelets.
-* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external}: Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
+* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/): Authorise API requests made by Kubelets.
+* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/): Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
 
 Feature gates:
 

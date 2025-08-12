@@ -19,9 +19,9 @@ Tem um nome de domínio na OVHcloud e deseja ligá-lo a um alojamento SquareSpac
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
-- Ter um [nome de domínio](/links/web/domains){.external} registado na OVHcloud.
-- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter um [nome de domínio](/links/web/domains) registado na OVHcloud.
+- Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager).
 - Ter um alojamento na SquareSpace.
 - Ter acesso à gestão deste alojamento na SquareSpace.
 
@@ -35,7 +35,7 @@ Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configur
 
 ### Configurar os registos DNS na sua conta OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 
@@ -88,17 +88,17 @@ As manipulações para esta etapa devem ser realizadas a partir da Área de Gest
 > [!primary]
 >
 > - Pode ligar o seu domínio a um site SquareSpace de teste ou pago. Não pode aceder a um site expirado.
-> - Se tiver uma conta de e-mail associada ao seu domínio, pode continuar a utilizá-la depois de o domínio se ligar à SquareSpace. Antes de iniciar sessão, recomendamos que consulte este [manual do SquareSpace](https://support.squarespace.com/hc/pt/articles/217601877-Usando-um-e-mail-de-dom%C3%ADnio-personalizado-que-voc%C3%AA-j%C3%A1-possui-com-o-Squarespace){.external}.
+> - Se tiver uma conta de e-mail associada ao seu domínio, pode continuar a utilizá-la depois de o domínio se ligar à SquareSpace. Antes de iniciar sessão, recomendamos que consulte este [manual do SquareSpace](https://support.squarespace.com/hc/pt/articles/217601877-Usando-um-e-mail-de-dom%C3%ADnio-personalizado-que-voc%C3%AA-j%C3%A1-possui-com-o-Squarespace).
 > - Pode utilizar vários domínios personalizados para o seu website. Pode ligar ou guardar tantos quantos quiser.
 > - Não é possível conectar um nome de domínio personalizado ao SquareSpace se o nome de domínio incluir a palavra "squarespace" ou "sqsp".
 
-Para começar, siga os passos de ligação descritos no passo 1 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace){.external}.
+Para começar, siga os passos de ligação descritos no passo 1 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace).
 
 > [!warning]
 >
 > Se receber o alerta "This domain is already connected to another Squarespace site" (Este domínio já está ligado a outro site do Squarespace), verifique os outros sites do Squarespace para determinar o site ao qual o domínio está ligado. De seguida, desligue-o deste website.
 
-Para continuar o processo, prossiga na etapa 2 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace){.external}.
+Para continuar o processo, prossiga na etapa 2 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace).
 
 Se utiliza uma oferta de e-mail OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), prepare a sua zona DNS em conformidade. Consulte o nosso guia sobre a "[Configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx)".
 

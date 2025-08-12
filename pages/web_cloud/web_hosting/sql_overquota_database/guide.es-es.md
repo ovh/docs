@@ -46,7 +46,7 @@ En primer lugar, es necesario identificar las tablas de gran tamaño de la base 
 >
 > Todas las acciones siguientes descritas en este tutorial se realizarán a partir de **phpMyAdmin**.
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} está disponible en todas las bases de datos compartidas de OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/) está disponible en todas las bases de datos compartidas de OVHcloud.
 > Esta aplicación de gestión de bases de datos facilita la realización de las acciones manuales que puede realizar con su base de datos.
 >
 > Si su base de datos se encuentra en una solución [Web Cloud Databases](/links/web/databases), consulte nuestra guía "[Web Cloud Databases - Conectarse a su base de datos](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) ". A continuación, diríjase directamente al [etapa 1.2](#step1.2) de esta guía.
@@ -126,10 +126,10 @@ Si tiene algún otro CMS, le recomendamos que contacte directamente con el edito
 
 A continuación se muestran los enlaces a los sitios web oficiales de los CMS que OVHcloud ofrece instalados **en un clic**:
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://www.joomla.org){.external}
-- [PrestaShop](https://www.prestashop.com/){.external}
-- [Drupal](https://drupal.org){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://www.joomla.org)
+- [PrestaShop](https://www.prestashop.com/)
+- [Drupal](https://drupal.org)
 
 > [!primary]
 >

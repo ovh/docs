@@ -22,7 +22,7 @@ Ao criar um backup do seu VPS (no caso de subscrição dos backups automáticos 
 
 ## Requisitos
 
-- Ter uma oferta [VPS recente](/links/bare-metal/vps){.external} com uma distribuição [compatível com cPanel](https://www.ovhcloud.com/pt/vps/os/).
+- Ter uma oferta [VPS recente](/links/bare-metal/vps) com uma distribuição [compatível com cPanel](https://www.ovhcloud.com/pt/vps/os/).
 - cPanel deve ser instalado no seu servidor
 
 ## Instruções

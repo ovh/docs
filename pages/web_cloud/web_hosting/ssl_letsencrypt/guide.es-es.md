@@ -164,7 +164,7 @@ Este paso puede tardar varias horas.
 
 > [!warning]
 >
-> Let's Encrypt, la autoridad que proporciona el certificado SSL, [limita a cinco el número de regeneraciones posibles por semana](https://letsencrypt.org/docs/rate-limits/){.external}. Por lo tanto, tenga cuidado con los posibles refrescamientos a corto plazo para no quedar bloqueado temporalmente.
+> Let's Encrypt, la autoridad que proporciona el certificado SSL, [limita a cinco el número de regeneraciones posibles por semana](https://letsencrypt.org/docs/rate-limits/). Por lo tanto, tenga cuidado con los posibles refrescamientos a corto plazo para no quedar bloqueado temporalmente.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

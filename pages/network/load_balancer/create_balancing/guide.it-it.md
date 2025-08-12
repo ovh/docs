@@ -21,7 +21,7 @@ La nuova soluzione OVH Load Balancer offre diverse tipologie di ripartizione del
 
 La ripartizione del carico si utilizza nelle server farm. Attraverso questo parametro si definisce il modo in cui le richieste vengono suddivise tra i server della farm.
 
-Per saperne di più sul servizio OVH Load Balancer, consulta la seguente guida: [Presentazione Load Balancer](/pages/network/load_balancer/use_presentation){.external}.
+Per saperne di più sul servizio OVH Load Balancer, consulta la seguente guida: [Presentazione Load Balancer](/pages/network/load_balancer/use_presentation).
 
 |Algoritmo|Caratteristiche|
 |---|---|

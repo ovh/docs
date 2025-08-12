@@ -12,7 +12,7 @@ Dowiedz się, jak utworzyć sklep internetowy z rozszerzeniem open source **WooC
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner), [edytora CMS WordPress](https://wordpress.com/support/){.external} lub [edytora WooCommerce](https://woocommerce.com/){.external}. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner), [edytora CMS WordPress](https://wordpress.com/support/) lub [edytora WooCommerce](https://woocommerce.com/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
 ## Wymagania początkowe
@@ -118,7 +118,7 @@ Zarządzanie produktami odbywa się poprzez zestaw podpozycji:
 
 #### Wysyłka
 
-Jeśli włączyłeś domyślne rozszerzenia proponowane za darmo podczas instalacji, korzystasz z rozszerzenia [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. W przeciwnym razie możesz przystąpić do jego instalacji w menu `Wtyczki`{.action}.
+Jeśli włączyłeś domyślne rozszerzenia proponowane za darmo podczas instalacji, korzystasz z rozszerzenia [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/). W przeciwnym razie możesz przystąpić do jego instalacji w menu `Wtyczki`{.action}.
 
 - **Strefy wysyłki**: pozwala na zdefiniowanie i skonfigurowanie obszarów wysyłki.
 - **Opcje dostawy**: służy do konfiguracji aplikacji we wszystkich kwestiach związanych z kosztami wysyłki.
@@ -138,7 +138,7 @@ Umożliwia konfigurowanie *e-maili typu* wysyłanych przez aplikację (rejestrac
 
 #### Integracja
 
-W tej podsekcji możesz wprowadzić klucz licencyjny dla [MaxMind](https://www.maxmind.com/){.external}, płatnej usługi geolokalizacji, aby geolokalizować swoje usługi.
+W tej podsekcji możesz wprowadzić klucz licencyjny dla [MaxMind](https://www.maxmind.com/), płatnej usługi geolokalizacji, aby geolokalizować swoje usługi.
 
 #### Zaawansowane
 
@@ -153,10 +153,10 @@ W tej podsekcji możesz wprowadzić klucz licencyjny dla [MaxMind](https://www.m
 
 Kilka przydatnych linków:
 
-- [oficjalna strona WordPressa](https://wordpress.org){.external}.
-- Rozszerzenie [Jetpack](https://jetpack.com/){.external}
-- The [WooCommerce](https://woocommerce.com/){.external}
-- Sklep [Rozszerzenia WooCommerce](https://woocommerce.com/products/){.external}
+- [oficjalna strona WordPressa](https://wordpress.org).
+- Rozszerzenie [Jetpack](https://jetpack.com/)
+- The [WooCommerce](https://woocommerce.com/)
+- Sklep [Rozszerzenia WooCommerce](https://woocommerce.com/products/)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

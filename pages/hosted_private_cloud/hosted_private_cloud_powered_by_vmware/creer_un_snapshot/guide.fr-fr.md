@@ -107,7 +107,7 @@ Confirmez en cliquant sur `Oui`{.action}.
 
 ![CONFIRM](images/en09confirm.png){.thumbnail}
 
-Vous trouverez plus d'informations sur [la documentation de VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
+Vous trouverez plus d'informations sur [la documentation de VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html).
 
 ## Aller plus loin
 

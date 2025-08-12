@@ -1,6 +1,6 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2025-03-25
+updated: 2025-08-07
 ---
 
 ## FAQ VPS
@@ -10,17 +10,6 @@ updated: 2025-03-25
 Un serveur privé virtuel (VPS) permet d’héberger des sites web (vitrine, e-commerce, contenus, médias) et des applications logicielles (portails, Extranet, solutions collaboratives, wikis, CRM). Contrairement à l’hébergement mutualisé, les données sont isolées sur une machine virtuelle dédiée à l’utilisateur.
 
 Idéalement situés entre un hébergement web et un serveur physique, nos VPS conjuguent la fiabilité et la performance d’un serveur dédié sans la gestion des contraintes matérielles.
-
-### Que choisir entre VPS et hébergement web ?
-
-L’utilisation d’un VPS s’inscrit dans la continuité logique de celle d’un hébergement web. Les serveurs privés virtuels offrent davantage de possibilités et une plus grande liberté d’action concernant le paramétrage, l’accès et les fonctionnalités (root, Apache PHP.init). Vous avez également la possibilité d’installer un certificat SSL ou tout autre logiciel de votre choix.
-
-Nous attirons cependant votre attention sur la nécessité de bien sélectionner votre VPS. En effet, celui-ci requiert une configuration conforme aux besoins des applications et une adaptation à la croissance de votre activité.
-
-### Que choisir entre un VPS et un hébergement web Plesk ?
-
-Sur un hébergement web Plesk, un espace avec Plesk préinstallé est mis à votre disposition. Vous pouvez gérer vos sites internet mais n’êtes pas administrateur du service. Celui-ci ne pourra servir qu’à la gestion.  
-En choisissant un VPS, vous êtes l’administrateur de votre serveur et OVHcloud n’a pas accès à son contenu. Vous êtes ainsi libre de l’utiliser selon vos besoins.
 
 ### Quels sont les avantages d'un VPS par rapport à un serveur dédié ?
 
@@ -71,8 +60,8 @@ Oui. Un VPS peut être partitionné et organisé en fonction de vos besoins. Vou
 
 ### Mon VPS est-il sauvegardé ?
 
-OVHcloud ne fournit pas de sauvegarde des données hébergées sur votre VPS. Vous devrez appliquer votre propre stratégie de sauvegarde.  
-À cette fin, vous pouvez utiliser les options suivantes : la sauvegarde manuelle (Snapshot) ou la sauvegarde automatisée.
+Il est conseillé d'appliquer une stratégie de sauvegarde appropriée en fonction de la sensibilité de vos données.  
+Rendez-vous sur notre [page web VPS](/links/bare-metal/vps-options) pour en savoir plus sur les options disponibles.
 
 ### Comment sécuriser mon VPS ?
 

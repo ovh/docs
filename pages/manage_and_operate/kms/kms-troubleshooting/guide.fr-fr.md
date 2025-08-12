@@ -106,7 +106,7 @@ Les éléments pouvant être transmis à Logs Data Platform étant :
 |iam_operation|Action IAM évaluée|
 |iam_identities|Identitée IAM utilisé pour l'évaluation des droits|
 |kmip_operation|Opération KMIP utilisée|
-|kmip_reason|[code d'erreur KMIP](https://docs.oasis-open.org/kmip/spec/v1.4/kmip-spec-v1.4.pdf#%5B%7B%22num%22%3A484%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C720%2C0%5D){.external}|
+|kmip_reason|[code d'erreur KMIP](https://docs.oasis-open.org/kmip/spec/v1.4/kmip-spec-v1.4.pdf#%5B%7B%22num%22%3A484%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C720%2C0%5D)|
 
 ## Aller plus loin
 

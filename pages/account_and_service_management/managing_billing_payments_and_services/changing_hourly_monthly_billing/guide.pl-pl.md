@@ -24,13 +24,13 @@ Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzi
 ## Wymagania początkowe
 
 - utworzona [instancja Public Cloud](/links/public-cloud/public-cloud)
-- zalogowanie do [Panelu klienta OVHcloud](/links/manager){.external}
+- zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
 ### W Panelu klienta OVHcloud
 
-W [Panelu klienta OVHcloud](/links/manager){.external} wybierz instancję, dla której chcesz zmienić typ rozliczenia, i otwórz menu opcji, klikając ikonę z trzema kropkami (po prawej stronie instancji). Zobaczysz przycisk `Zmień na subskrypcję miesięczną`{.action}:
+W [Panelu klienta OVHcloud](/links/manager) wybierz instancję, dla której chcesz zmienić typ rozliczenia, i otwórz menu opcji, klikając ikonę z trzema kropkami (po prawej stronie instancji). Zobaczysz przycisk `Zmień na subskrypcję miesięczną`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
@@ -63,7 +63,7 @@ Skorzystaj z następującego połączenia:
 
 ### Ze skryptu Terraform
 
-Jest to możliwe dzięki `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} z zasobu [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Jest to możliwe dzięki `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) z zasobu [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
 
 ```terraform
 metadata = {

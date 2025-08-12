@@ -57,7 +57,7 @@ The list of IPv4 outbound addresses potentially used by your OVHcloud Load Balan
 
 ### Introduction to ProxyProtocol
 
-ProxyProtocol was developed by the [HAProxy](http://haproxy.org/){.external} Load Balancer team as the TCP counterpart to standard HTTP headers like X-Forwarded-For. It was designed to forward at minimum:
+ProxyProtocol was developed by the [HAProxy](http://haproxy.org/) Load Balancer team as the TCP counterpart to standard HTTP headers like X-Forwarded-For. It was designed to forward at minimum:
 
 - the L4 protocol name used (TCP4 for IPv4 or TCP6 for IPv6);
 - the source IPv4 or IPv6 address;
@@ -72,7 +72,7 @@ Indeed, this protocol exists in 2 versions:
 
 Version 1 is largely sufficient for most uses (although less optimized) and is often the only version supported by compatible software. Version 2, being a binary format, is faster to parse. It also adds the ability to indicate whether the original connection was encrypted (the equivalent of the X-Forwarded-Proto header) as well as the domain specified in the Common Name field of the certificate used, if applicable.
 
-To learn more about ProxyProtocol, please consult the [ProxyProtocol specification](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt){.external}.
+To learn more about ProxyProtocol, please consult the [ProxyProtocol specification](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt).
 
 ### Activating ProxyProtocol for one of your servers
 
@@ -156,11 +156,11 @@ service nginx reload
 > This example uses the HTTP protocol for more simplicity. If you are using HTTP, we strongly recommend using HTTP headers instead of ProxyProtocol, unless your OVHcloud Load Balancer service is configured in TCP. This can happen in the case of SSL termination for HTTP/2, for example.
 >
 
-For more information on configuring ProxyProtocol in Nginx, please consult [the project's official documentation](https://www.nginx.com/resources/admin-guide/proxy-protocol/){.external}.
+For more information on configuring ProxyProtocol in Nginx, please consult [the project's official documentation](https://www.nginx.com/resources/admin-guide/proxy-protocol/).
 
 #### Apache
 
-The management of ProxyProtocol in Apache is still young. An unofficial implementation compatible with Apache 2.4 is available on Github ([https://github.com/roadrunner2/mod-proxy-protocol](https://github.com/roadrunner2/mod-proxy-protocol){.external}) but has not been maintained since 2014. An official implementation is found in the `mod_remoteip` module which is also used to manage headers from the X-Forwarded-For family.
+The management of ProxyProtocol in Apache is still young. An unofficial implementation compatible with Apache 2.4 is available on Github ([https://github.com/roadrunner2/mod-proxy-protocol](https://github.com/roadrunner2/mod-proxy-protocol)) but has not been maintained since 2014. An official implementation is found in the `mod_remoteip` module which is also used to manage headers from the X-Forwarded-For family.
 
 `mod-proxy-protocol` supports ProxyProtocol versions 1 and 2. However, it does not allow specifying a list of source IP addresses authorized to use ProxyProtocol, although this is mentioned in the module's projects.
 
@@ -208,7 +208,7 @@ sudo apxs -i -a -c mod_proxy_protocol.c
 service apache2 restart
 ```
 
-To learn more about configuring the `mod-proxy-protocol` module, please consult [its documentation](http://roadrunner2.github.io/mod-proxy-protocol/mod_proxy_protocol.html){.external}.
+To learn more about configuring the `mod-proxy-protocol` module, please consult [its documentation](http://roadrunner2.github.io/mod-proxy-protocol/mod_proxy_protocol.html).
 
 ##### **With mod_remoteip**
 
@@ -233,7 +233,7 @@ a2enmod remoteip
 service apache2 restart
 ```
 
-To learn more about configuring the `mod_remoteip` module, please consult [its documentation](https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html#remoteipproxyprotocol){.external}.
+To learn more about configuring the `mod_remoteip` module, please consult [its documentation](https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html#remoteipproxyprotocol).
 
 #### HAProxy
 

@@ -50,7 +50,7 @@ Wenn Ihr Hosting-Angebot die Option "Web Cloud Databases" beinhaltet, klicken Si
 
 ### Allgemeine Informationen der Instanz einsehen
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](/links/manager){.external} im linken Menü in den Bereich `Web Cloud Databases`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](/links/manager) im linken Menü in den Bereich `Web Cloud Databases`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
 
 > [!primary]
 >
@@ -68,7 +68,7 @@ Hier können Sie wichtige Informationen zu Ihrer Instanz einsehen. Wir bitten Si
 |RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Der Arbeitsspeicher Ihrer Web Cloud Databases Instanz ist eine dedizierte und garantierte Ressource. Falls nötig können Sie diesen skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
 |Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es sich um inhärente Informationen zur OVHcloud Infrastruktur.|
 |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des OVHcloud Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
-|Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine inhärente Information zur OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://www.status-ovhcloud.com/){.external} verwendet werden kann.|
+|Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine inhärente Information zur OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://www.status-ovhcloud.com/) verwendet werden kann.|
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 

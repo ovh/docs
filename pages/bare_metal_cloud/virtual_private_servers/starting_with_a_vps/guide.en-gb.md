@@ -1,7 +1,7 @@
 ---
 title: How to get started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2024-11-22
+updated: 2025-08-07
 ---
 
 ## Objective
@@ -110,7 +110,7 @@ Click the tabs below to view details for this section.
 
 #### Backup
 
-These options refer to additional VPS services which can be ordered in the Control Panel.
+These options refer to additional VPS services for backups and restoration of your system.
 
 > [!tabs]
 > Snapshot
@@ -119,11 +119,13 @@ These options refer to additional VPS services which can be ordered in the Contr
 >>
 > Automated backup
 >>
->> The `Automated backup` option allows you to schedule regular backups of your VPS (excluding additional disks). Compared to manual snapshots, this feature increases data security by retaining several restore points at regular intervals.
+>> A daily backup of the system (excluding additional disks) is created automatically and retained for 24 hours. By upgrading to the **Automatic Backup Premium** option, you will have the last 7 daily backups of your VPS available to mount and restore.  
+>> Compared to manual snapshots, this feature increases data security by creating several restore points at regular intervals.
+>>
 
 You can find all information on the available backup solutions for your service on the [VPS product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers-backups).
 
-#### Subscription
+#### My offer
 
 These sections show the most important information regarding the billing of your service. Please find all the information about this topic in the [corresponding documentation](/products/account-and-service-management-managing-billing-payments-and-services).
 

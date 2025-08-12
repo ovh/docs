@@ -278,4 +278,4 @@ Introduza o tamanho pretendido e clique em `OK`{.action}. O seu volume será ent
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -10,7 +10,7 @@ updated: 2021-12-31
 
 ## Objetivo
 
-El producto [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} permite interconectar varios productos de OVHcloud y comunicarlos a través de una o varias vlan. Algunas configuraciones no son compatibles con la solución Hosted Private Cloud.
+El producto [vRack](https://www.ovh.com/world/es/soluciones/vrack/) permite interconectar varios productos de OVHcloud y comunicarlos a través de una o varias vlan. Algunas configuraciones no son compatibles con la solución Hosted Private Cloud.
 
 **Esta guía explica las compatibilidad de Hosted Private Cloud con el producto vRack.**
 

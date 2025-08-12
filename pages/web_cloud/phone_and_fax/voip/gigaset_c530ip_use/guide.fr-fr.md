@@ -11,7 +11,7 @@ updated: 2018-07-03
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie){.external}.
+- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
 - Avoir réceptionné et installé le téléphone Gigaset C530IP fourni par OVH.
 
 ## En pratique

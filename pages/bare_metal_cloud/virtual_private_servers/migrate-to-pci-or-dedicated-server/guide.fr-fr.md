@@ -71,13 +71,13 @@ Si votre site web utilise une base de données, sauvegardez-la en utilisant les 
 >> - `<db_name>` : par le nom de la base de données.
 >>
 > **PostgreSQL**
->> Pour exporter votre base de données, référez-vous à la [documentation officielle de PostgreSQL](https://www.postgresql.org/docs/){.external}
+>> Pour exporter votre base de données, référez-vous à la [documentation officielle de PostgreSQL](https://www.postgresql.org/docs/)
 >>
 > MongoDB
->> Pour exporter votre base de données, référez-vous à la [documentation officielle de MongoDB](https://docs.mongodb.com/manual/){.external}
+>> Pour exporter votre base de données, référez-vous à la [documentation officielle de MongoDB](https://docs.mongodb.com/manual/)
 >>
 > **Redis® open source**
->> Pour exporter votre base de données, référez-vous à la [documentation officielle de Redis](https://redis.io/documentation){.external}
+>> Pour exporter votre base de données, référez-vous à la [documentation officielle de Redis](https://redis.io/documentation)
 
 Si vous utilisez un autre SGBD, consultez sa documentation officielle pour trouver les commandes de sauvegarde de la base de données.
 
@@ -142,16 +142,16 @@ Connectez-vous en SSH au serveur dédié ou à l'instance Public Cloud. Créez u
 
 > [!tabs]
 > **MySQL et MariaDB**
->> Pour créer une nouvelle base de données, référez-vous à la [documentation officielle de MySQL](https://dev.mysql.com/doc/refman/8.4/en/creating-database.html){.external}
+>> Pour créer une nouvelle base de données, référez-vous à la [documentation officielle de MySQL](https://dev.mysql.com/doc/refman/8.4/en/creating-database.html)
 >>
 > **PostgreSQL**
->> Pour créer une nouvelle base de données, référez-vous à la [documentation officielle de PostgreSQL](https://docs.postgresql.fr/11/sql-createdatabase.html){.external}
+>> Pour créer une nouvelle base de données, référez-vous à la [documentation officielle de PostgreSQL](https://docs.postgresql.fr/11/sql-createdatabase.html)
 >>
 > **MongoDB**
->> Pour créer une nouvelle base de données, référez-vous à la [documentation officielle de MongoDB](https://www.mongodb.com/resources/products/fundamentals/create-database){.external}
+>> Pour créer une nouvelle base de données, référez-vous à la [documentation officielle de MongoDB](https://www.mongodb.com/resources/products/fundamentals/create-database)
 >>
 > **Redis® open source**
->> Pour créer une nouvelle base de données, référez-vous à la [documentation officielle de Redis](https://redis.io/docs/latest/operate/rc/databases/create-database/){.external}
+>> Pour créer une nouvelle base de données, référez-vous à la [documentation officielle de Redis](https://redis.io/docs/latest/operate/rc/databases/create-database/)
 
 2\. Importez la base de données
 

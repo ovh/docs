@@ -40,7 +40,7 @@ To interact with your MySQL instance with PHP, your development environment need
 - A compatible version of PHP;
 - MySQLi, PDO and OpenSSL PHP extensions installed and activated in `php.ini`;
 
-Please follow the official [MySQL Drivers and Plugin](https://www.php.net/manual/en/set.mysqlinfo.php){.external} to get the latest information.
+Please follow the official [MySQL Drivers and Plugin](https://www.php.net/manual/en/set.mysqlinfo.php) to get the latest information.
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in the documentation page linked above.
 

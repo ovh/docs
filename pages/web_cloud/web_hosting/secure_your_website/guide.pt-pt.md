@@ -24,7 +24,7 @@ Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a dispo
 - um [plano OVHcloud Web Hosting](/links/web/hosting)
 - ter os [detalhes de login](/pages/web_cloud/web_hosting/ftp_connection#1-recuperar-as-informacoes-de-acesso) para acessar o espaço de armazenamento do seu plano de hospedagem
 - acesso ao [Painel de Controlo da Nuvem OVHcloud](/links/manager)
-- acesso à [interface admin para o seu site](https://codex.wordpress.org/pt-br:Primeiros_Passos_com_o_WordPress){.external}
+- acesso à [interface admin para o seu site](https://codex.wordpress.org/pt-br:Primeiros_Passos_com_o_WordPress)
 
 ## Instruções
 
@@ -32,7 +32,7 @@ Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a dispo
 
 Este primeiro passo é fundamental. De facto, a infeção do seu computador com um software malicioso pode potencialmente dar acesso, a uma pessoa mal intencionada, a todas as apreensões efetuadas no seu teclado. Assim, as credenciais que utiliza para se ligar à Área de Cliente OVHcloud ou à interface de administração do seu site podem estar comprometidas.
 
-Além disso, o fenómeno crescente dos [ransomware](https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks){.external} (cerca de 400 casos em França em 2020) pode não só levar à encriptação do conjunto dos seus dados pessoais, mas também pôr em perigo a sua atividade ao tornar inacessível o conjunto dos seus dados, aparelhos e softwares. 
+Além disso, o fenómeno crescente dos [ransomware](https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks) (cerca de 400 casos em França em 2020) pode não só levar à encriptação do conjunto dos seus dados pessoais, mas também pôr em perigo a sua atividade ao tornar inacessível o conjunto dos seus dados, aparelhos e softwares. 
 
 Em primeiro lugar, verifique a segurança do seu computador Windows, MacOS ou Linux:
 
@@ -91,10 +91,10 @@ Os formulários dos websites são alvos privilegiados dos hackers/spammers. Prot
 
 Adicione ao seu site um plugin de segurança recomendado pelo editor do CMS:
 
-- [WordPress](https://pt.wordpress.org/){.external}
-- [Joomla](https://downloads.joomla.org/pt/){.external}
-- [Drupal](https://www.drupal.org/){.external}
-- [PrestaShop](https://www.prestashop.com/pt){.external}
+- [WordPress](https://pt.wordpress.org/)
+- [Joomla](https://downloads.joomla.org/pt/)
+- [Drupal](https://www.drupal.org/)
+- [PrestaShop](https://www.prestashop.com/pt)
 
 ### Etapa 10 - Verifique se existem ficheiros maliciosos no seu alojamento web
 
@@ -108,7 +108,7 @@ Os [backups dos dados](#backup) do seu site (ficheiros FTP e base de dados) deve
 
 No entanto, não constituem uma segurança absoluta. Também deve testar os backups da sua base de dados para verificar que estes não são corrompidos.
 
-Poderá efetuar estes testes localmente, por exemplo, através da importação dos seus dados para um software do tipo [WAMP](https://www.wampserver.com/){.external}. De seguida, certifique-se de que a sua solução local corresponde em todos os pontos à dos nossos [servidores de alojamento partilhado](https://webhosting-infos.hosting.ovh.net/).
+Poderá efetuar estes testes localmente, por exemplo, através da importação dos seus dados para um software do tipo [WAMP](https://www.wampserver.com/). De seguida, certifique-se de que a sua solução local corresponde em todos os pontos à dos nossos [servidores de alojamento partilhado](https://webhosting-infos.hosting.ovh.net/).
 
 Também pode criar uma **versão de teste** do seu site (ex: teste.meudominio.tld) noutra pasta do seu alojamento (será perfeitamente possível utilizar um template de base).
 

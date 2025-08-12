@@ -9,10 +9,10 @@ Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour uti
 
 ## Prérequis
 
-- Installation de [la CLI Terraform](https://www.terraform.io/downloads.html){.external}
+- Installation de [la CLI Terraform](https://www.terraform.io/downloads.html)
 - Accès à l'[API OVHcloud](/links/api) (créez vos identifiants en consultant [ce guide](/pages/manage_and_operate/api/first-steps))
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
-- OVHcloud fournit un [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} qui est disponible dans le registre officiel de Terraform. Vous devez avoir installé une version >= 2.0. Vous pouvez suivre le guide [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
+- OVHcloud fournit un [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest) qui est disponible dans le registre officiel de Terraform. Vous devez avoir installé une version >= 2.0. Vous pouvez suivre le guide [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 
 ## Obtenir des informations sur vos jetons cluster/API
 
@@ -42,7 +42,7 @@ Vous utiliserez également ces informations dans les fichiers de définition des
 
 ## En pratique
 
-Si vous souhaitez accéder à la documentation du provider sur Object Storage, [cliquez-ici](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_storage){.external}
+Si vous souhaitez accéder à la documentation du provider sur Object Storage, [cliquez-ici](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_storage)
 
 ### Configuration
 

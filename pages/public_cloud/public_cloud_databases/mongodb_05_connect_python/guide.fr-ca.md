@@ -48,7 +48,7 @@ To interact with your MongoDB instance using Python, your development environmen
 
 This guide will focus on the use of **PyMongo**, which covers most of the use cases.
 
-Please follow the official [MongoDB documentation for Python drivers](https://docs.mongodb.com/drivers/python/){.external} to get the latest information.
+Please follow the official [MongoDB documentation for Python drivers](https://docs.mongodb.com/drivers/python/) to get the latest information.
 
 At the end of the documentation page for PyMongo, you will find a **compatibility matrix** between Python versions and PyMongo driver.
 Follow this accordingly.
@@ -73,7 +73,7 @@ This is compliant with our current MongoDB 5.0 instance.
 ### Configure your MongoDB instance to accept incoming connections
 
 In order to be able to connect to your MongoDB instance, you will need to configure your instance to accept incoming connections from the IP address of your Python environment.
-If you don't know how to retrieve your IP, please visit a website such as [myip.ovh](https://myip.ovh/){.external} from the station hosting the Python environment.
+If you don't know how to retrieve your IP, please visit a website such as [myip.ovh](https://myip.ovh/) from the station hosting the Python environment.
 
 Once you know the IP address, follow the steps from this guide : [Configure your MongoDB instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel).
 

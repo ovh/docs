@@ -39,7 +39,7 @@ In this tutorial we are going to:
 - install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster
 - configure a Keycloak instance in our Kubernetes cluster as an OIDC provider
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -774,11 +774,11 @@ kubectl delete namespaces cert-manager
 
 ## Useful resources
 
-- [Keycloack documentation](https://www.keycloak.org/documentation){.external}
-- [ArtifactHUB keycloack](https://artifacthub.io/packages/helm/codecentric/keycloak){.external}  
-- [Cert-manager Securing Ingress Resources](https://cert-manager.io/docs/usage/ingress/){.external}  
-- [Keycloak on Kubernetes](https://www.keycloak.org/getting-started/getting-started-kube){.external}
-- [Kubernetes API Access Control documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator){.external}
+- [Keycloack documentation](https://www.keycloak.org/documentation)
+- [ArtifactHUB keycloack](https://artifacthub.io/packages/helm/codecentric/keycloak)  
+- [Cert-manager Securing Ingress Resources](https://cert-manager.io/docs/usage/ingress/)  
+- [Keycloak on Kubernetes](https://www.keycloak.org/getting-started/getting-started-kube)
+- [Kubernetes API Access Control documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator)
 
 ## Go further
 

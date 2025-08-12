@@ -43,7 +43,7 @@ Il existe plusieurs méthodes efficaces pour créer des mots de passe. Parmi ell
 
 La Commission nationale de l'informatique et des libertés (CNIL) propose également un outil permettant de générer un mot de passe solide, basé sur la méthode des premières lettres.
 
-Pour en savoir plus, reportez-vous à la section [Aller plus loin](/pages/account_and_service_management/account_information/manage-ovh-password#aller-plus-loin){.external} en bas de ce guide.
+Pour en savoir plus, reportez-vous à la section [Aller plus loin](/pages/account_and_service_management/account_information/manage-ovh-password#aller-plus-loin) en bas de ce guide.
 
 ### Utiliser un gestionnaire de mots de passe
 
@@ -116,14 +116,14 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 ## Aller plus loin
 
-[Les recommandations de sécurité relatives aux mots de passe de l'ANSSI](https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/){.external}
+[Les recommandations de sécurité relatives aux mots de passe de l'ANSSI](https://www.ssi.gouv.fr/guide/recommandations-relatives-a-lauthentification-multifacteur-et-aux-mots-de-passe/)
 
-[Les mesures de sécurité élémentaires relatives aux mots de passe définies par la CNIL](https://www.cnil.fr/fr/authentification-par-mot-de-passe-les-mesures-de-securite-elementaires){.external}
+[Les mesures de sécurité élémentaires relatives aux mots de passe définies par la CNIL](https://www.cnil.fr/fr/authentification-par-mot-de-passe-les-mesures-de-securite-elementaires)
 
-[Un outil de création de mots de passe proposé par la CNIL](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide){.external}
+[Un outil de création de mots de passe proposé par la CNIL](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide)
 
-[Les conseils de cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
+[Les conseils de cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/)
 
-[Le gestionnaire de mots de passe KeePass](https://keepass.info/){.external}
+[Le gestionnaire de mots de passe KeePass](https://keepass.info/)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

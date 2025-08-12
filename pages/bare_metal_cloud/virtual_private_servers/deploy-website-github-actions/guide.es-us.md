@@ -147,7 +147,7 @@ To allow GitHub Actions to automatically connect to your VPS, add the private ke
 
 #### Create a GitHub repository
 
-To create a GitHub repository, follow the steps from the "Create a repository" page of the [GitHub official documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository){.external}.
+To create a GitHub repository, follow the steps from the "Create a repository" page of the [GitHub official documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository).
 
 #### Initialize the Git repository on the VPS
 

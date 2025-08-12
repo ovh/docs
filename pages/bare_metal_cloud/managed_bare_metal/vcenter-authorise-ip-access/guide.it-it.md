@@ -11,8 +11,8 @@ Impostare restrizioni di accesso al vCenter consente di limitare la connessione 
 
 ## Prerequisiti
 
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
-* Disporre di un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} sul proprio account OVHcloud
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+* Disporre di un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) sul proprio account OVHcloud
 
 ## Procedura
 

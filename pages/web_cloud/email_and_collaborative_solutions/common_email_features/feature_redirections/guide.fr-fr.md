@@ -1,6 +1,6 @@
 ---
-title: 'Utiliser les alias et redirections e-mail'
-excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
+title: "Utiliser les alias et redirections e-mail"
+excerpt: "Découvrez comment gérer vos alias et redirections e-mail"
 updated: 2025-06-03
 ---
 
@@ -67,7 +67,6 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 > [!primary]
 >
 > Il est possible de configurer une redirection vers plusieurs adresses e-mail. Cela implique cependant de créer une par une les redirections vers chaque destinataire.
->
 
 ///
 
@@ -90,7 +89,7 @@ Ce guide concerne l'ensemble de nos offres e-mail. En fonction de l'offre, la ge
  - **Exchange** : S'applique aux offres **Hosted**, **Private** et **Dedicated** Exchange utilisant le webmail Outlook Web App (OWA).
  - **Email Pro** : Offre E-mail basée sur Exchange utilisant le webmail Outlook Web App (OWA).
  - **Zimbra** : Offre dédiée utilisant le webmail Zimbra.
- - **redirect** : Cette offre gratuite est automatiquement disponible si vous disposez d'un nom de domaine dans votre espace client sans offre e-mail attachée. Elle permet de créer des redirections e-mail.
+ - **Redirect** : Cette offre gratuite est automatiquement disponible si vous disposez d'un nom de domaine dans votre espace client sans offre e-mail attachée. Elle permet de créer des redirections e-mail.
 
 > [!primary]
 >
@@ -131,7 +130,7 @@ Ce guide concerne l'ensemble de nos offres e-mail. En fonction de l'offre, la ge
 
 #### Depuis l'espace client <a name="redirect-manager"></a>
 
-Actuellement, seules les offres **MX plan** et **redirect** disposent d'une interface de gestion des redirections via l'espace client OVHcloud.
+Actuellement, seules les offres **MX plan** et **Redirect** disposent d'une interface de gestion des redirections via l'espace client OVHcloud.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
@@ -143,7 +142,7 @@ Actuellement, seules les offres **MX plan** et **redirect** disposent d'une inte
 Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](#diagram) au début de ce guide). Si cela correspond à votre besoin, suivez les étapes ci-dessous en cliquant sur l'onglet correspondant à la technologie webmail utilisée par votre MX Plan :
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan Outlook Web App / redirect**
+> **MX Plan Roundcube / MX Plan Outlook Web App / Redirect**
 >>
 >> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.
 >>
@@ -209,9 +208,9 @@ La création d'une redirection se fait par le biais de règles de boîte de réc
 >
 > Ce chapitre concerne les offres suivantes :
 >
-> - **MX Plan OWA.**
-> - **Exchange.**
-> - **E-mail Pro.**
+> - **MX Plan OWA**.
+> - **Exchange**.
+> - **E-mail Pro**.
 >
 
 Outlook Web App est une interface utilisée pour nos offres **Exchange**, **E-mail Pro** et une partie des comptes **MX Plan**.
@@ -276,7 +275,7 @@ Parcourez les onglets ci-dessous pour mettre en place votre redirection via Outl
 > Ce chapitre concerne les offres suivantes:
 >
 > - **MX Plan** ayant la mention zimbra pour le webmail.
-> - **Zimbra.**
+> - **Zimbra**.
 >
 
 Pour rediriger les e-mails de votre compte Zimbra vers une autre adresse e-mail, nous allons appliquer une règle de transfert.
@@ -325,10 +324,10 @@ Pour plus de détails sur l'utilisation du webmail Zimbra, consultez notre guide
 1. Cliquez sur `MX Plan`{.action}.
 1. Sélectionnez le domaine concerné.
 
-Sélectionnez, ci-dessous, l'onglet correspondant à la technologie e-mail utilisée par votre service  MX Plan :
+Sélectionnez, ci-dessous, l'onglet correspondant à la technologie e-mail utilisée par votre service MX Plan :
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan OWA / redirect**
+> **MX Plan Roundcube / MX Plan OWA / Redirect**
 >>
 >> - Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan.
 >> - Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.
@@ -447,7 +446,7 @@ Pour créer un alias sur un compte email MX Plan Roundcube, vous devez le faire 
 > [!tabs]
 > **Étape 1**
 >>
->> - Cliquez sur le bouton `⁝` à droite du compte e-mail concerné.
+>> - Cliquez sur le bouton `⁝`{.action} à droite du compte e-mail concerné.
 >> - Cliquez sur `Modifier`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
@@ -485,7 +484,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée. Cliquez ensuite sur `Configurer les alias`{.action} (ou `Gérer les alias`{.action}).
 
-Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le menu de gestion des alias. Enfin, cliquez sur `Supprimer l'alias`{.action}
+Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le menu de gestion des alias. Enfin, cliquez sur `Supprimer l'alias`{.action}.
 
 ![emails](images/email-alias04.png){.thumbnail .w-640}
 
@@ -514,7 +513,7 @@ Cliquez sur le bouton `...`{.action} à droite de la redirection concernée puis
 > [!tabs]
 > **Étape 1**
 >>
->> - Cliquez sur le bouton `⁝` à droite du compte e-mail concerné.
+>> - Cliquez sur le bouton `⁝`{.action} à droite du compte e-mail concerné.
 >> - Cliquez sur `Modifier`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
@@ -545,7 +544,7 @@ Cliquez sur le bouton `...`{.action} à droite de la redirection concernée puis
 [Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -15,7 +15,7 @@ La tecnología Intel SGX proporciona funciones avanzadas de seguridad mediante e
 
 ## Requisitos
 
-- Tener un servidor dedicado compatible con la opción [SGX](https://www.ovhcloud.com/es/bare-metal/intel-software-guard-extensions/){.external}
+- Tener un servidor dedicado compatible con la opción [SGX](https://www.ovhcloud.com/es/bare-metal/intel-software-guard-extensions/)
 - Disponer de las claves de conexión recibidas por correo electrónico tras la instalación
 - Tener acceso al [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](/links/api)
 - Tener instalado Ubuntu 18.04 o similar en el servidor
@@ -211,9 +211,9 @@ Hit a key....
 
 Si desea seguir avanzando (desarrollar su propia aplicación, obtener una certificación a distancia, etc), aquí tiene algunos recursos que pueden resultarle útiles:
 
-- [Intel SGX](https://software.intel.com/en-us/sgx){.external}
-- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services){.external}
-- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
-- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
-- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
-- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
+- [Intel SGX](https://software.intel.com/en-us/sgx)
+- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
+- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/)
+- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver)
+- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample)

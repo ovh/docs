@@ -19,9 +19,9 @@ Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem SquareSpace. 
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
-- Posiadanie [domeny](/links/web/domains){.external} zarejestrowanej w OVHcloud.
-- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie [domeny](/links/web/domains) zarejestrowanej w OVHcloud.
+- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie hostingu w SquareSpace.
 - Dostęp do interfejsu zarządzania hostingiem w SquareSpace.
 
@@ -35,7 +35,7 @@ Zalecamy, abyś przed przystąpieniem do dwóch kroków, zapoznał się z konfig
 
 ### Konfiguracja wpisów DNS na koncie OVHcloud
 
-Zaloguj się do Twojego panelu [klienta OVHcloud](/links/manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Zaloguj się do Twojego panelu [klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich rekordów DNS wybranej domeny.
 
@@ -88,17 +88,17 @@ Operacje na tym etapie należy wykonać w panelu zarządzania SquareSpace.
 > [!primary]
 >
 > - Możesz połączyć swoją domenę z testową lub płatną witryną SquareSpace. Nie można połączyć go z wygasłą witryną.
-> - Jeśli posiadasz konto e-mail powiązane z Twoją domeną, możesz z niego nadal korzystać po zalogowaniu domeny do SquareSpace. Przed połączeniem domeny zalecamy zapoznanie się z tym [przewodnikiem dotyczącym platformy SquareSpace](https://support.squarespace.com/hc/en-us/articles/217601877-Using-a-custom-domain-email-you-already-own-with-Squarespace){.external}.
+> - Jeśli posiadasz konto e-mail powiązane z Twoją domeną, możesz z niego nadal korzystać po zalogowaniu domeny do SquareSpace. Przed połączeniem domeny zalecamy zapoznanie się z tym [przewodnikiem dotyczącym platformy SquareSpace](https://support.squarespace.com/hc/en-us/articles/217601877-Using-a-custom-domain-email-you-already-own-with-Squarespace).
 > - Możesz używać kilku niestandardowych nazw domen dla swojej strony www. Możesz się z nimi połączyć lub zapisać dowolną ich liczbę.
 > - Nie można połączyć domeny niestandardowej z usługą SquareSpace, jeśli nazwa domeny zawiera słowo "squarespace" lub "sqsp".
 
-Aby rozpocząć, wykonaj kroki połączenia opisane w etapie 1 tego [przewodnika SquareSpace](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site){.external}.
+Aby rozpocząć, wykonaj kroki połączenia opisane w etapie 1 tego [przewodnika SquareSpace](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
 
 > [!warning]
 >
 > Jeśli otrzymasz alert "This domain is already connected to another Squarespace site" (Ta domena jest już połączona z inną stroną Squarespace), sprawdź na innych stronach WWW Squarespace, czy domena jest połączona z inną stroną. Następnie wyloguj go z tej witryny.
 
-Aby kontynuować proces, przejdź do etapu 2 niniejszego [przewodnika SquareSpace](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site){.external}.
+Aby kontynuować proces, przejdź do etapu 2 niniejszego [przewodnika SquareSpace](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
 
 Jeśli korzystasz z oferty e-mail OVHcloud lub zamierzasz zamówić jedną z [naszych usług e-mail](/links/web/emails), przygotuj odpowiednio Twoją strefę DNS. Zapoznaj się z przewodnikiem dotyczącym "[Konfiguracja rekordu MX](/pages/web_cloud/domains/dns_zone_mx)".
 

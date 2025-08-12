@@ -6,13 +6,13 @@ updated: 2018-02-22
 
 ## Wprowadzenie
 
-Do Twojej usługi Content Delivery Network (CDN) można dodać [certyfikat SSL](/links/web/hosting-options-ssl){.external}, dzięki czemu Twoi użytkownicy mogą łączyć się bezpiecznie, nawet korzystając z CDN.
+Do Twojej usługi Content Delivery Network (CDN) można dodać [certyfikat SSL](/links/web/hosting-options-ssl), dzięki czemu Twoi użytkownicy mogą łączyć się bezpiecznie, nawet korzystając z CDN.
 
 **W niniejszym przewodniku wyjaśnimy działanie certyfikatu SSL Let's Encrypt dostarczonego przez OVH.**
 
 ## Wymagania początkowe
 
-- Posiadanie [usługi CDN od OVH](/links/network/cdn-infrastructure){.external}
+- Posiadanie [usługi CDN od OVH](/links/network/cdn-infrastructure)
 - Dostęp do interfejsu zarządzania strefą DNS domeny
 
 ## W praktyce
@@ -22,7 +22,7 @@ Do Twojej usługi Content Delivery Network (CDN) można dodać [certyfikat SSL](
 - Jeśli nie skonfigurowałeś żadnego certyfikatu i dodajesz Twoją pierwszą subdomenę do CDN, certyfikat Let's Encrypt zostanie automatycznie utworzony dla tej domeny.
 - Jeśli dodajesz do CDN kolejną subdomenę, certyfikat zostanie automatycznie odnowiony i obejmie nową, właśnie skonfigurowaną, subdomenę.
 
-Aby tworzenie certyfikatu przebiegało prawidłowo, konieczne jest, aby subdomena, którą właśnie dodałeś, wskazywała poprawnie CDN. Zapoznaj się z przewodnikiem, który wyjaśni, jak przeprowadzić [pierwszą konfigurację domeny](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external}.
+Aby tworzenie certyfikatu przebiegało prawidłowo, konieczne jest, aby subdomena, którą właśnie dodałeś, wskazywała poprawnie CDN. Zapoznaj się z przewodnikiem, który wyjaśni, jak przeprowadzić [pierwszą konfigurację domeny](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration).
 
 Certyfikatu odnawiany jest automatycznie i następuje to w ciągu 20 dni poprzedzających jego wygaśnięcie.
 
@@ -59,6 +59,6 @@ Po aktywacji certyfikatu wyświetli się komunikat:
 
 ## Sprawdź również
 
-[Pierwsza konfiguracja domeny](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external}
+[Pierwsza konfiguracja domeny](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

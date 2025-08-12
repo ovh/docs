@@ -7,7 +7,7 @@ updated: 2025-06-10
 > [!primary]
 > **Desactivación de FTP Explorer/Net2FTP**
 >
-> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
+> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
 
 ## Objetivo
 
@@ -19,15 +19,15 @@ Permite publicar archivos o su sitio web [conectándose al espacio FTP](/pages/w
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Tener contratado un [plan de hosting](/links/web/hosting){.external}.
-- Haber instalado Filezilla en su ordenador. Está disponible de forma gratuita en la página [filezilla-project.org.](https://filezilla-project.org/download.php){.external}
+- Tener contratado un [plan de hosting](/links/web/hosting).
+- Haber instalado Filezilla en su ordenador. Está disponible de forma gratuita en la página [filezilla-project.org.](https://filezilla-project.org/download.php)
 
 ## Presentación de la interfaz <a name="interface"></a>
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La parte superior **del recuadro** permite una conexión rápida al alojamiento, introduciendo el nombre del **host**, el nombre de **usuario**, la **contraseña** asociada y el número de **puerto** utilizado.
-- **zona 1**: información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de Filezilla](https://filezilla-project.org/){.external}.
+- **zona 1**: información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de Filezilla](https://filezilla-project.org/).
 - **zona 2**: árbol de directorios/archivos locales en su ordenador.
 - **zona 3**: árbol de directorios/ archivos remotos cuando se conecta al alojamiento.
 - **zone 4**: lista de carpetas/archivos en el directorio seleccionado localmente en su ordenador.
@@ -49,13 +49,13 @@ Introduzca la información en la siguiente tabla:
 |Contraseña|Contraseña asociada al usuario.|
 |Puerto|Se suele completar automáticamente con el programa. En caso contrario, introduzca:<br><br>- el puerto "21" para una conexión FTP;<br>- el puerto "22" para una conexión SFTP (en caso de que esté activada). Más información sobre el SFTP en [la sección dedicada de este tutorial](#sftp).|
 
-Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento:
+Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento:
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!warning]
 >
-> Algunos productos de OVHcloud no utilizan el puerto 22 para las conexiones por SFTP y/o SSH. Utilice los puertos que se muestran en el [área de cliente de OVHcloud](/links/manager){.external}
+> Algunos productos de OVHcloud no utilizan el puerto 22 para las conexiones por SFTP y/o SSH. Utilice los puertos que se muestran en el [área de cliente de OVHcloud](/links/manager)
 >
 
 Una vez que haya introducido todo correctamente en el recuadro **1** de la imagen inferior, haga clic en `Conexión rápida`{.action}.
@@ -66,7 +66,7 @@ Si la conexión se ha realizado correctamente, se le informará de ello en el re
 
 ### Conexión con Filezilla por SFTP <a name="sftp"></a>
 
-El **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) es un protocolo similar al **FTP**. Utiliza, al igual que el SSH, el puerto 22 por defecto en lugar del puerto 21. Si utiliza un plan de hosting Cloud Web, debe utilizar el puerto que se muestra en el [área de cliente de OVHcloud](/links/manager){.external}. El puerto 22 está desactivado por seguridad en SSH y SFTP para los alojamientos Cloud Web.
+El **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) es un protocolo similar al **FTP**. Utiliza, al igual que el SSH, el puerto 22 por defecto en lugar del puerto 21. Si utiliza un plan de hosting Cloud Web, debe utilizar el puerto que se muestra en el [área de cliente de OVHcloud](/links/manager). El puerto 22 está desactivado por seguridad en SSH y SFTP para los alojamientos Cloud Web.
 
 > [!success]
 >
@@ -77,7 +77,7 @@ El **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) es un protocolo
 
 En primer lugar, compruebe que el SFTP esté activado en su **Usuario FTP**.
 
-Acceda al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
+Acceda al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
 
 Compruebe si el **SFTP** está activo en la tabla de la parte inferior de la página.
 
@@ -120,7 +120,7 @@ El siguiente mensaje indica un error de identificación durante la conexión por
 
 Este tipo de mensaje se genera por un error en el par Login/Contraseña.
 
-Compruebe las claves para asegurarse de que no se ha producido ningún error. En su caso, puede cambiar la contraseña del acceso FTP del alojamiento directamente en el [área de cliente de OVHcloud](/links/manager){.external}.
+Compruebe las claves para asegurarse de que no se ha producido ningún error. En su caso, puede cambiar la contraseña del acceso FTP del alojamiento directamente en el [área de cliente de OVHcloud](/links/manager).
 
 > [!success]
 > Consulte nuestra guía sobre el [cambio de la contraseña FTP](/pages/web_cloud/web_hosting/ftp_change_password) en los planes de hosting.
@@ -129,7 +129,7 @@ En el siguiente caso, el error se genera con un nombre de host incorrecto:
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/connection-timed-out-after-20s.png){.thumbnail}
 
-Compruebe que la contraseña del host se corresponde con el nombre del host que haya indicado en el [área de cliente de OVHcloud](/links/manager){.external}.
+Compruebe que la contraseña del host se corresponde con el nombre del host que haya indicado en el [área de cliente de OVHcloud](/links/manager).
 
 ### Transferencia de archivos
 

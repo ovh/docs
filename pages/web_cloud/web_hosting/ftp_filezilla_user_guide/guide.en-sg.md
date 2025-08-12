@@ -7,7 +7,7 @@ updated: 2025-06-10
 > [!primary]
 > **FTP Explorer/Net2FTP tool deactivated**
 >
-> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php){.external} or [Cyberduck](https://cyberduck.io/){.external} software.
+> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php) or [Cyberduck](https://cyberduck.io/) software.
 
 ## Objective
 
@@ -20,14 +20,14 @@ You can use it to put files or your website online by [connecting to your web ho
 
 - Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
-- You need to have installed the FileZilla client on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php){.external}.
+- You need to have installed the FileZilla client on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php).
 
 ## Interface overview <a name="interface"></a>
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - The top **connection bar** allows you to log in to your hosting plan quickly, by entering its **host** name, **user** name, associated **password** and **port** number.
-- **Section 1**: Displays details on the operation history, connection to the FTP space, file transfers, errors, etc. For more information, please refer to the official FileZilla [documentation](https://filezilla-project.org/){.external}.
+- **Section 1**: Displays details on the operation history, connection to the FTP space, file transfers, errors, etc. For more information, please refer to the official FileZilla [documentation](https://filezilla-project.org/).
 - **Section 2**: The directory tree of local files on your computer
 - **Section 3**: The directory tree of remote files when you are connected to your hosting
 - **Section 4**: The list of directories/files in the directory selected locally on your computer
@@ -49,13 +49,13 @@ In the quick connection bar, enter the information using the table below:
 |Password|The password associated with the user.|
 |Port|It is usually filled in automatically by the software. Otherwise, enter:<br><br>\- Port `21` for an FTP connection.<br>\- Port `22` for an SFTP connection (if it is enabled). You can find more information on SFTP in [the dedicated section of this tutorial](#sftp).|
 
-In case you do not have this information, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will then appear:
+In case you do not have this information, log in to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will then appear:
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!warning]
 >
-> Some OVHcloud solutions do not use port 22 for SFTP and/or SSH connections. so make good use of the ports displayed in your [OVHcloud Control Panel](/links/manager){.external}
+> Some OVHcloud solutions do not use port 22 for SFTP and/or SSH connections. so make good use of the ports displayed in your [OVHcloud Control Panel](/links/manager)
 >
 
 Once everything is entered correctly into section **1** as shown in the image below, click on `Quickconnect`{.action}.
@@ -66,7 +66,7 @@ If the connection is successful, you will be informed via the status in section 
 
 ### Logging in to Filezilla via SFTP <a name="sftp"></a>
 
-The **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) is a protocol similar to **FTP**. Like SSH, it uses port 22 by default instead of port 21. If you are using a Cloud Web hosting plan, you will need to use the port listed in the [OVHcloud Control Panel](/links/manager){.external} instead. Port 22 on Cloud Web hostings is disabled for security reasons and therefore not used for SSH and SFTP connections.
+The **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) is a protocol similar to **FTP**. Like SSH, it uses port 22 by default instead of port 21. If you are using a Cloud Web hosting plan, you will need to use the port listed in the [OVHcloud Control Panel](/links/manager) instead. Port 22 on Cloud Web hostings is disabled for security reasons and therefore not used for SSH and SFTP connections.
 
 > [!success]
 >
@@ -77,7 +77,7 @@ The **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) is a protocol simil
 
 First, check that SFTP is enabled for your **FTP** login.
 
-Go to the `Web Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager){.external}, then click on `Hosting plans`{.action}. Select the name of the web hosting plan and click on the `FTP - SSH`{.action} tab.
+Go to the `Web Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager), then click on `Hosting plans`{.action}. Select the name of the web hosting plan and click on the `FTP - SSH`{.action} tab.
 
 Then check if the **SFTP** is active in the table at the bottom of the page.
 
@@ -120,7 +120,7 @@ The message displayed below indicates an identification error when connecting to
 
 This type of message is generated by an error in the Login/Password pair.
 
-Check your login details to ensure that no errors are entered. If required, you can change the FTP access password for your web hosting plan directly in the [OVHcloud Control Panel](/links/manager){.external}.
+Check your login details to ensure that no errors are entered. If required, you can change the FTP access password for your web hosting plan directly in the [OVHcloud Control Panel](/links/manager).
 
 > [!success]
 > A guide is available for [changing the FTP](/pages/web_cloud/web_hosting/ftp_change_password) password on shared hosting plans.
@@ -129,7 +129,7 @@ In the following case, the error is generated by an incorrect host name:
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/connection-timed-out-after-20s.png){.thumbnail}
 
-Check that it is linked to the host name declared in your [OVHcloud Control Panel](/links/manager){.external}.
+Check that it is linked to the host name declared in your [OVHcloud Control Panel](/links/manager).
 
 ### File transfer
 

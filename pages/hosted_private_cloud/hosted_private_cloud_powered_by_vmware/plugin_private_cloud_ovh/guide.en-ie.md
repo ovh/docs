@@ -12,7 +12,7 @@ With the OVHcloud plugin, you can add dedicated resources to your infrastructure
 
 ## Requirements
 
-- an [OVHcloud Hosted Private Cloud solution](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/){.external}
+- an [OVHcloud Hosted Private Cloud solution](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/)
 - access to the vSphere interface
 
 ## Instructions

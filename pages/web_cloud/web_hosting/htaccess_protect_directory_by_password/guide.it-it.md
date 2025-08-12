@@ -112,7 +112,7 @@ Sostituisci `plain_text_password1`, `plain_text_password2` e `plain_text_passwor
 >
 > I due script di cui sopra utilizzano, alla data, il metodo di cifratura più sicuro tramite l'algoritmo **bcrypt** raccomandato da Apache.
 >
-> Per maggiori informazioni sull'argomento, consulta la [documentazione ufficiale Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
+> Per maggiori informazioni sull'argomento, consulta la [documentazione ufficiale Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html).
 >
 
 Se disponi di un hosting [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), collegati in [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) al tuo hosting Web. Scendete nella "**directory**" dove si trova il vostro script "crypt.php".
@@ -199,7 +199,7 @@ Nello script di cui sopra, sostituisci questi elementi con i tuoi valori:
 
 #### Blocca l'accesso a uno o più file
 
-Per bloccare l'accesso a uno o più file, aggiungi una [direttiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} nel file ".htaccess":
+Per bloccare l'accesso a uno o più file, aggiungi una [direttiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) nel file ".htaccess":
 
 ```bash
 <Files test.php>
@@ -221,7 +221,7 @@ Nello script di cui sopra, sostituisci questi elementi con i tuoi valori:
 
 > [!warning]
 >
-> Inserisci una [direttiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} per **ogni file** da proteggere.
+> Inserisci una [direttiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) per **ogni file** da proteggere.
 >
 > Le direttive "Files" si applicano a tutti i file con lo stesso nome o che terminano con il nome specificato. A condizione che siano contenuti nella stessa directory del.htaccess o in una delle sue sottocartelle.
 >
@@ -237,7 +237,7 @@ Nello script di cui sopra, sostituisci questi elementi con i tuoi valori:
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Documentazione ufficiale Apache](https://httpd.apache.org/docs/2.4/){.external}
+[Documentazione ufficiale Apache](https://httpd.apache.org/docs/2.4/)
 
 [Accedere allo spazio FTP del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
 

@@ -84,7 +84,7 @@ Then use this API call to move the IP addresses to "IP parking":
 > This call cuts the network on VMs that use the IPs in question.
 >
 
-You can track the IP block movement from your [OVHcloud Control Panel](/links/manager){.external} in the `Bare Metal Cloud`{.action} part and then `Managed Bare Metal`{.action}. Click on your Managed Bare Metal service and then click the `Operations`{.action} tab.
+You can track the IP block movement from your [OVHcloud Control Panel](/links/manager) in the `Bare Metal Cloud`{.action} part and then `Managed Bare Metal`{.action}. Click on your Managed Bare Metal service and then click the `Operations`{.action} tab.
 
 The operation name is removeIpRipeBlock.
 

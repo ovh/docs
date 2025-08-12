@@ -28,7 +28,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cl
 
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
-We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/){.external} to select the right roles for your use case.
+We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/) to select the right roles for your use case.
 
 In our example, we will create a user called `foo` with the role `userAdmin` on the `bar` database and the role `readWriteAnyDatabase` on any database as its name implies:
 

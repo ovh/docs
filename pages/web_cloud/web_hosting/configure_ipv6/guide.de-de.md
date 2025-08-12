@@ -12,7 +12,7 @@ Aus diesem Grund wurde das **IPv6**-Protokoll eingeführt, mit dem bis zu 340 Se
 
 Da weniger IPv4-Adressen zur Verfügung stehen, ist es schwieriger, neue Geräte mit dem IPv4-Standard ins Internet zu bringen. Verbindungen über IPv6-Adressen sind aber nur anwendbar, wenn die öffentlichen Ressourcen (z.B. Ihre Website) mit diesem Protokoll verfügbar sind. Das bedeutet, je mehr Websites mit IPv6 verfügbar werden, desto wichtiger wird es für alle beteiligten Akteure, auf dieses neue Protokoll umzusteigen.
 
-Weitere Informationen finden Sie im [Wikipedia-Artikel](https://de.wikipedia.org/wiki/IPv6){.external} zum IPv6-Protokoll.
+Weitere Informationen finden Sie im [Wikipedia-Artikel](https://de.wikipedia.org/wiki/IPv6) zum IPv6-Protokoll.
 
 Unsere Webhostings sind seit 2011 mit IPv6 kompatibel, doch die Aktivierung dieses Protokolls war bis vor kurzem eine optionale Konfigurationseinstellung.  
 
@@ -35,7 +35,7 @@ Wenn Ihre Website nicht bereits mit IPv6 funktioniert, können Sie die [IPv6-Adr
 
 ### 1 - Die IPv6-Verfügbarkeit Ihrer Website überprüfen
 
-Um zu überprüfen, ob Ihre Website bereits eine IPv6-Adresse verwendet, können Sie Ihre URL auf der Website [ipv6-test.com](https://ipv6-test.com/validate.php){.external} eingeben. Es wird geprüft, ob Ihre Website auf dieses IP-Protokoll reagiert. Ist das nicht der Fall, führen Sie die nachfolgenden Schritte aus.
+Um zu überprüfen, ob Ihre Website bereits eine IPv6-Adresse verwendet, können Sie Ihre URL auf der Website [ipv6-test.com](https://ipv6-test.com/validate.php) eingeben. Es wird geprüft, ob Ihre Website auf dieses IP-Protokoll reagiert. Ist das nicht der Fall, führen Sie die nachfolgenden Schritte aus.
 
 ### 2 - IPv6-Adresse Ihres Webhostings abrufen
 

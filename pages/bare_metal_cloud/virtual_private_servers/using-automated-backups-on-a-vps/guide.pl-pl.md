@@ -1,43 +1,71 @@
 ---
-title: 'Korzystanie z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym'
-excerpt: 'Dowiedz się, jak włączyć opcję "Automatyczne kopie zapasowe" w Panelu klienta OVHcloud i korzystać z niej'
-updated: 2023-08-07
+title: "Jak korzystać z automatycznych kopii zapasowych na serwerze VPS"
+excerpt: "Dowiedz się, jak korzystać z opcji zautomatyzowany backup zapasowych z poziomu Panelu klienta OVHcloud do zabezpieczania danych"
+updated: 2025-08-07
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
-Dzięki tej opcji będziesz mieć w Panelu klienta OVHcloud gotowe kopie zapasowe prywatnego serwera wirtualnego (VPS) — wygodnie, bez konieczności łączenia się z serwerem i ręcznego ich tworzenia oraz przywracania. Kolejną korzyścią jest dostęp do kopii zapasowej za pośrednictwem protokołu SSH po jej wcześniejszym zamontowaniu.
+Opcja zautomatyzowany backup zapasowych dla serwerów VPS pozwala na udostępnienie pełnej kopii zapasowej systemu w Panelu klienta OVHcloud bez konieczności łączenia się z serwerem w celu ich ręcznego utworzenia i przywrócenia. Kolejną korzyścią jest możliwość zdalnego dostępu do plików kopii zapasowej przy jej wcześniejszym zamontowaniu.
 
-**Dowiedz się, jak korzystać z automatycznych kopii zapasowych prywatnego serwera wirtualnego (VPS) OVHcloud.**
+**Dowiedz się, jak utworzyć zautomatyzowany backup zapasową VPS od OVHcloud.**
 
 > [!primary]
->
-Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](/links/bare-metal/vps-options) w celu porównania cen i uzyskania szczegółowych informacji.
+> Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](/links/bare-metal/vps-options) w celu porównania cen i uzyskania szczegółowych informacji.
 >
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](/links/manager)
-- skonfigurowana [usługa VPS](/links/bare-metal/vps) OVHcloud
-- dostęp administracyjny (uprawnienia użytkownika root) do prywatnego serwera wirtualnego za pośrednictwem protokołu SSH
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Serwer [Prywatne serwery wirtualne](/links/bare-metal/vps) z poziomu Twojego konta OVHcloud.
+- Dostęp administracyjny (uprawnienia użytkownika root) do prywatnego serwera wirtualnego za pośrednictwem protokołu SSH.
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
+### Omówienie zawartości
 
-### Krok 1: Włącz opcję automatycznych kopii zapasowych
+- [Jak zmienić ofertę na zautomatyzowany backup Premium](#premium)
+- [Skonfiguruj godzinę kopii zapasowej](#time)
+- [Jak przywrócić kopię zapasową z poziomu Panelu klienta OVHcloud](#restore)
+- [Montowanie kopii zapasowej i dostęp do niej](#mount)
+    - [Za Pomocą Secure Shell](#shell)
+    - [Za Pomocą Systemu Windows](#windows)
+- [Dobre praktyki dotyczące korzystania ze zautomatyzowany backup zapasowych](#bestpractice)
+    - [Konfiguracja agenta QEMU na serwerze VPS](#qemu)
+        - [Dystrybucje Debian](#deb)
+        - [Dystrybucje Redhat](#red)
+        - [Windows](#win)
 
-Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Automatyczne kopie zapasowe`{.action} w menu poziomym.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatne serwery wirtualne`{.action}.
 
-W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.action}. Po przejściu kolejnych kroków procesu zamówienia otrzymasz wiadomość e-mail z potwierdzeniem. Kopie zapasowe będą tworzone codziennie, aż do czasu anulowania tej opcji.
+W przypadku zamówienia VPS codzienna automatyczna kopia zapasowa jest zawarta w cenie. Ta opcja kopii zapasowych pozwala na:
 
-#### Skonfiguruj godzinę kopii zapasowej
+- Montowanie i przywracanie dziennej kopii zapasowej.
+- Określ godzinę dnia, w którym kopia zapasowa zostanie utworzona.
 
-Możesz zmienić godzinę wykonywania kopii zapasowej. 
+Aby uzyskać większą elastyczność w zakresie kopii zapasowych, możesz włączyć opcję zautomatyzowany backup Premium.
+
+<a name="premium"></a>
+
+### Jak zmienić ofertę na zautomatyzowany backup Premium
+
+Migracja na ofertę zautomatyzowany backup Premium pozwoli na automatyczne tworzenie kopii zapasowych przez 7 kolejnych dni. Pozwala to na przywrócenie starszych wersji backupu w porównaniu z 24-godzinną rotacją opcji standardowej.
+
+Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Zautomatyzowany backup`{.action} w menu poziomym.
+
+Kliknij link `Wła̧cz zautomatyzowany backup premium`{.action}.
+
+![automatyczne kopie zapasowe](images/backup_vps.png){.thumbnail}
+
+W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.action}. Po przejściu kolejnych kroków procesu zamówienia otrzymasz wiadomość e-mail z potwierdzeniem.
+
+<a name="time"></a>
+
+### Skonfiguruj godzinę kopii zapasowej
+
+Możesz zmienić godzinę wykonywania kopii zapasowej.
+
+Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Zautomatyzowany backup`{.action} w menu poziomym.
 
 Kliknij `...`{.action} nad tabelą, a następnie `Edytuj`{.action}.
 
@@ -52,29 +80,35 @@ W oknie, które się wyświetla zmień czas dnia (standard czasu UTC 24 godziny)
 > Po zatwierdzeniu w Panelu klienta zmiana zostanie wykonana w ciągu 24-48 godzin.
 >
 
-### Krok 2: przywracanie kopii zapasowej z Panelu klienta OVHcloud
+<a name="restore"></a>
 
-Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Automatyczne kopie zapasowe`{.action} w menu poziomym. Dostępnych będzie maksymalnie 7 codziennych kopii zapasowych (15 codzienne kopie zapasowe dla serwerów VPS z poprzednich gam). Kliknij ikonę `...`{.action} obok kopii zapasowej, którą chcesz przywrócić, i wybierz pozycję `Przywrócenie`{.action}.
+### Jak przywrócić kopię zapasową z poziomu Panelu klienta OVHcloud
+
+Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Zautomatyzowany backup`{.action} w menu poziomym.  
+Kliknij ikonę `...`{.action} obok kopii zapasowej, którą chcesz przywrócić, i wybierz pozycję `Przywrócenie`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
 Jeśli niedawno zmieniło się Twoje hasło użytkownika administracyjnego (*root*), w wyświetlonym oknie zaznacz opcję "Modyfikuj hasło administratora przy przywracaniu", aby zachować bieżące hasło, i kliknij pozycję `Potwierdź`{.action}. Po ukończeniu zadania otrzymasz wiadomość e-mail. Czas potrzebny do przywrócenia kopii zapasowej zależy od używanej przestrzeni dyskowej.
 
 > [!alert]
+> W procesie tworzenia zautomatyzowanego backupu zapasowych nie są uwzględniane dodatkowe dyski.
 >
-W procesie tworzenia automatycznych kopii zapasowych nie są uwzględniane dodatkowe dyski.
->
+
+<a name="mount"></a>
 
 ### Montowanie kopii zapasowej i dostęp do niej
 
-Całkowite zastąpienie istniejącej usługi w wyniku przywrócenia nie jest konieczne. Opcja “Montowanie” umożliwia dostęp do danych kopii zapasowej w celu przywrócenia poszczególnych plików. 
+Całkowite zastąpienie istniejącej usługi w wyniku przywrócenia nie jest konieczne. Opcja "Montowanie" umożliwia dostęp do danych kopii zapasowej w celu przywrócenia poszczególnych plików. 
 
 > [!warning]
->OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.
 >
->Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja “Sprawdź również” tego przewodnika.
+> OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.
+>
+> Ten przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. W przypadku trudności zalecamy skorzystanie z pomocy [specjalisty](/links/partner) lub kontakt z [społecznością OVHcloud](/links/community). Więcej informacji zawiera sekcja [Sprawdź również](#go-further) tego przewodnika.
 >
 
+Po wybraniu prywatnego serwera wirtualnego kliknij zakładkę `Zautomatyzowany backup`{.action} w menu poziomym.
 Kliknij ikonę `...`{.action} obok kopii zapasowej, do której chcesz uzyskać dostęp, i wybierz pozycję `Montowanie`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
@@ -83,7 +117,9 @@ Gdy korzystasz z tej opcji, utworzona zostaje kopia zapasowa w trybie odczytu i 
 
 Po ukończeniu procesu otrzymasz wiadomość e-mail. Teraz możesz się połączyć z prywatnym serwerem wirtualnym i dodać partycję, na której znajduje się kopia zapasowa.
 
-#### protokół SSH
+<a name="shell"></a>
+
+#### Za Pomocą Secure Shell
 
 Najpierw połącz się z prywatnym serwerem wirtualnym przy użyciu protokołu SSH.
 
@@ -107,7 +143,7 @@ sdb       8:16   0   25G  0 disk
 └─sdb15   8:31   0  106M  0 part /boot/efi
 ```
 
-W tym przykładzie partycja zawierająca system plików kopii zapasowej ma nazwę “sdb1”.
+W tym przykładzie partycja zawierająca system plików kopii zapasowej ma nazwę "sdb1".
 Następnie utwórz katalog dla tej partycji i zdefiniuj go jako punkt montowania:
 
 ```bash
@@ -121,7 +157,9 @@ Pamiętaj, aby odmontować automatyczną kopię zapasową po zakończeniu korzys
 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
 
-#### Windows
+<a name="windows"></a>
+
+#### Za Pomocą Systemu Windows
 
 Utwórz połączenie RDP (Remote Desktop) z Twoim serwerem VPS.
 
@@ -146,18 +184,25 @@ Pamiętaj, aby odmontować automatyczną kopię zapasową po zakończeniu korzys
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
 
 > [!warning]
+>
 > Podczas odmontowywania kopii zapasowej nastąpi restart serwera.
 >
 
+<a name="bestpractice"></a>
+
 ### Dobre praktyki w zakresie korzystania z automatycznych kopii zapasowych
 
-Funkcja automatycznych kopii zapasowych opiera się na snapshotach VPS. Zalecamy, aby przed rozpoczęciem korzystania z tej opcji postępować zgodnie z poniższymi instrukcjami.
+Funkcja zautomatyzowany backup zapasowych opiera się na snapshotach VPS. Zalecamy, aby przed rozpoczęciem korzystania z tej opcji postępować zgodnie z poniższymi instrukcjami.
+
+<a name="qemu"></a>
 
 #### Konfiguracja agenta QEMU na serwerze VPS
 
 Migawki to kopie systemu tworzone w ściśle określonym momencie (“live snapshots”). Aby zapewnić dostępność systemu podczas tworzenia migawki, wykorzystywany jest agent QEMU, który pozwala przygotować system plików do tego procesu.
 
-Wymagany *qemu-guest-agent* nie jest domyślnie zainstalowany na większości dystrybucji. Ponadto, wymogi licencyjne mogą uniemożliwić OVHcloud włączenie go do dostępnych obrazów systemu operacyjnego. Dlatego zalecamy zainstalowanie agenta, jeśli nie jest on aktywowany na Twoim prywatnym serwerze wirtualnym. W tym celu połącz się z VPS przez SSH i postępuj zgodnie z poleceniami dotyczącymi Twojego systemu operacyjnego.
+Agent "**qemu-guest-agent**" nie è installato di default sulla maggior parte delle distribuzioni. Ponadto, wymogi licencyjne mogą uniemożliwić OVHcloud włączenie go do dostępnych obrazów systemu operacyjnego. Dlatego zalecamy zainstalowanie agenta, jeśli nie jest on aktywowany na Twoim prywatnym serwerze wirtualnym. W tym celu połącz się z VPS przez SSH i postępuj zgodnie z poleceniami dotyczącymi Twojego systemu operacyjnego.
+
+<a name="deb"></a>
 
 ##### **Dystrybucje Debian (Debian, Ubuntu)**
 
@@ -165,10 +210,15 @@ Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie sko
 
 ```bash
 file /dev/virtio-ports/org.qemu.guest_agent.0
+```
+
+Oczekiwany wynik:
+
+```console
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Jeśli wynik jest inny (“No such file or directory”), zainstaluj najnowszy pakiet:
+Jeśli dane wyjściowe są różne, na przykład "Brak takiego pliku lub katalogu", zainstaluj najnowszą wersję pakietu:
 
 ```bash
 sudo apt-get update
@@ -187,16 +237,23 @@ Uruchom usługę, aby upewnić się, że działa:
 sudo service qemu-guest-agent start
 ```
 
+<a name="red"></a>
+
 ##### **Dystrybucje Redhat (CentOS, Fedora)**
 
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
 ```bash
 file /dev/virtio-ports/org.qemu.guest_agent.0
+```
+
+Oczekiwany wynik:
+
+```console
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Jeśli wynik jest inny (“No such file or directory”), zainstaluj i aktywuj agenta:
+Jeśli dane wyjściowe są różne, na przykład "Brak takiego pliku lub katalogu", zainstaluj najnowszą wersję pakietu:
 
 ```bash
 sudo yum install qemu-guest-agent
@@ -205,7 +262,7 @@ sudo chkconfig qemu-guest-agent on
 
 Zrestartuj serwer VPS:
 
-```basj
+```bash
 sudo reboot
 ```
 
@@ -216,21 +273,25 @@ sudo service qemu-guest-agent start
 sudo service qemu-guest-agent status
 ```
 
+<a name="win"></a>
+
 ##### **Windows**
 
 Możesz zainstalować agenta za pomocą pliku MSI dostępnego na stronie projektu Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
 Sprawdź, czy usługa działa za pomocą poniższej komendy powershell:
 
-```powershell
+```console
 PS C:\Users\Administrator> Get-Service QEMU-GA
 Status   Name               DisplayName
 ------   ----               -----------
 Running  QEMU-GA            QEMU Guest Agent
 ```
 
+<a name="go-further"></a>
+
 ## Sprawdź również
 
 [Korzystanie z migawek na prywatnym serwerze wirtualnym](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
 
-Dołącz do naszej społeczności użytkowników <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

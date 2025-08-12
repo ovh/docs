@@ -333,7 +333,7 @@ sudo netplan apply
 ```
 
 > [!primary]
-> Quando utilizar o comando `netplan try`, é possível que o sistema envie uma mensagem de aviso tal como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be access by others`. Isso simplesmente significa que o arquivo não tem permissões restritivas. Isto não afeta a configuração do seu Additional IP. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+> Quando utilizar o comando `netplan try`, é possível que o sistema envie uma mensagem de aviso tal como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be access by others`. Isso simplesmente significa que o arquivo não tem permissões restritivas. Isto não afeta a configuração do seu Additional IP. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >
 
 ### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
@@ -556,7 +556,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Onde irá substituir "ADDITIONAL_IP" pelo verdadeiro Additional IP.
 
-De seguida,efetuar um ping a partir do seu Additional IP para o exterior. Se isso funcionar, provavelmente significa que há um erro de configuração que precisa ser corrigido. Se, pelo contrário, o endereço IP não funcionar, abra um ticket junto da equipa de assistência através do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external} com as seguintes informações:
+De seguida,efetuar um ping a partir do seu Additional IP para o exterior. Se isso funcionar, provavelmente significa que há um erro de configuração que precisa ser corrigido. Se, pelo contrário, o endereço IP não funcionar, abra um ticket junto da equipa de assistência através do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) com as seguintes informações:
 
 - O nome e a versão do sistema operativo que utiliza no seu servidor.
 - Nome e diretório do ficheiro de configuração de rede.

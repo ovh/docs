@@ -164,7 +164,7 @@ This step may take several hours.
 
 > [!warning]
 >
-> Let's Encrypt, the authority that provides the SSL certificate, [limits the number of regenerations per week to five](https://letsencrypt.org/docs/rate-limits/){.external}. As a result, be vigilant about any regenerations you may undertake in the short term.
+> Let's Encrypt, the authority that provides the SSL certificate, [limits the number of regenerations per week to five](https://letsencrypt.org/docs/rate-limits/). As a result, be vigilant about any regenerations you may undertake in the short term.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

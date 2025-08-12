@@ -10,12 +10,12 @@ El Object Storage de OVH se puede sincronizar mediante Rclone.
 
 **Esta guía explica cómo realizar la sincronización desde el área de cliente de OVH.**
 
-Tenga en cuenta que Rclone es un software de sincronización externo. Para más información, consulte directamente la [documentación oficial](https://Rclone.org/){.external}.
+Tenga en cuenta que Rclone es un software de sincronización externo. Para más información, consulte directamente la [documentación oficial](https://Rclone.org/).
 
 ## Requisitos
 
-- Haber creado un contenedor de Object Storage desde el área de cliente o desde [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container){.external}.
-- Haber creado un [usuario de OpenStack](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon){.external}.
+- Haber creado un contenedor de Object Storage desde el área de cliente o desde [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container).
+- Haber creado un [usuario de OpenStack](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 
 ## Procedimiento
 
@@ -23,7 +23,7 @@ Una vez que haya creado el contenedor y el usuario de OpenStack, deberá realiza
 
 ### 1. Descargar el archivo de configuración de Rclone
 
-Una vez creado el [usuario de OpenStack](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon){.external}, podrá descargar el archivo de configuración de Rclone desde el área de cliente.
+Una vez creado el [usuario de OpenStack](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon), podrá descargar el archivo de configuración de Rclone desde el área de cliente.
 
 Para ello, en la columna izquierda, haga clic en `Servidores`{.action}, seleccione el proyecto cloud y haga clic en `OpenStack`{.action}. Se mostrará la lista de usuarios creados en el proyecto.
 
@@ -54,7 +54,7 @@ rclone lsd BackupStorage
 
 En el comando anterior, sustituya «BackupStorage» por el nombre de su espacio de almacenamiento.
 
-En la [documentación oficial de Rclone](https://Rclone.org/swift/){.external} encontrará más información sobre cómo sincronizar su Object Storage y Rclone.
+En la [documentación oficial de Rclone](https://Rclone.org/swift/) encontrará más información sobre cómo sincronizar su Object Storage y Rclone.
 
 ## Más información
 

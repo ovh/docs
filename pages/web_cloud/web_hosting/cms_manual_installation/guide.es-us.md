@@ -16,14 +16,14 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 >
 > Para contactar con los diferentes editores de los CMS mencionados, consulte los enlaces a sus páginas oficiales respectivas:
 >
-> - [WordPress](https://wordpress.com/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
-> - [Pico](https://picocms.org/){.external}
-> - [Grav](https://getgrav.org/){.external}
-> - [Typo3](https://typo3.com/){.external}
-> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+> - [WordPress](https://wordpress.com/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
+> - [Pico](https://picocms.org/)
+> - [Grav](https://getgrav.org/)
+> - [Typo3](https://typo3.com/)
+> - [SPIP](https://www.spip.net/en_rubrique25.html)
 >
 
 > [!success]
@@ -51,7 +51,7 @@ Para ayudarle a elegir su CMS, consulte a continuación una breve descripción p
 
 Más información en nuestra página relativa a [módulo WordPress](/links/web/hosting-wordpress)
 
-- Sitio oficial de [WordPress](https://wordpress.com/){.external}
+- Sitio oficial de [WordPress](https://wordpress.com/)
 
 #### Joomla!
 
@@ -61,7 +61,7 @@ La comunidad **Joomla!** es muy grande y puede prestar asistencia y servicios en
 
 Más información en nuestra página relativa a [Joomla!](/links/web/hosting-joomla)
 
-- Sitio oficial de [Joomla!](https://www.joomla.org/){.external}
+- Sitio oficial de [Joomla!](https://www.joomla.org/)
 
 #### Drupal
 
@@ -69,7 +69,7 @@ Más información en nuestra página relativa a [Joomla!](/links/web/hosting-joo
 
 Más información en nuestra página relativa a [Drupal](/links/web/hosting-drupal)
 
-- Sitio oficial de [Drupal](https://www.drupal.org/){.external}
+- Sitio oficial de [Drupal](https://www.drupal.org/)
 
 #### PrestaShop
 
@@ -77,31 +77,31 @@ CMS creado en 2005 y dedicado a la creación de sitios web de e-commerce. Fuera 
 
 Más información en nuestra página relativa a [PrestaShop](/links/web/hosting-prestashop)
 
-- Sitio oficial de [PrestaShop](https://www.prestashop.com/){.external}
+- Sitio oficial de [PrestaShop](https://www.prestashop.com/)
 
 #### Pico
 
 **Pico** es un CMS ligero basado en PHP, ideal para crear sitios web o blogs. Sin base de datos, utiliza archivos Markdown para administrar el contenido. Soporta extensiones para personalizar su sitio web.
 
-- Sitio web oficial de [Pico](https://picocms.org/){.external}
+- Sitio web oficial de [Pico](https://picocms.org/)
 
 #### Grav
 
 **Grav** es un CMS moderno y flexible basado en PHP. Está diseñado sin base de datos y utiliza archivos Markdown para el almacenamiento y la gestión de contenido. Grav se distingue por su sistema de gestión de paquetes que facilita la instalación y la actualización de los plugins y temas para su sitio web.
 
-- Sitio web oficial de [Grav](https://getgrav.org/){.external}
+- Sitio web oficial de [Grav](https://getgrav.org/)
 
 #### Typo3
 
 **Typo3** es un CMS basado en PHP, diseñado para el desarrollo de sitios web de todos los tamaños, desde pequeñas hasta grandes empresas. Se basa en una base de datos para almacenar el contenido. Ofrece una amplia gama de extensiones para ampliar sus funcionalidades y personalizar su sitio web.
 
-- Sitio web oficial de [Typo3](https://typo3.com/){.external}
+- Sitio web oficial de [Typo3](https://typo3.com/)
 
 #### SPIP
 
 **SPIP** es un CMS diseñado principalmente para la publicación y la gestión de sitios web editoriales como periódicos o revistas en línea. Basado en PHP y basado en una base de datos SQL, facilita la creación de sitios web enriquecidos con contenido textual, gráfico y/o multimedia.
 
-- Sitio oficial de [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+- Sitio oficial de [SPIP](https://www.spip.net/en_rubrique25.html)
 
 > [!warning]
 >
@@ -189,14 +189,14 @@ Acceda a la web del editor del CMS que haya elegido para descargar los archivos 
 
 A continuación se muestran los enlaces a las páginas de descarga de los CMS que figuran en el presente tutorial:
 
-- [WordPress](https://wordpress.org/download/#download-install){.external}
-- [Joomla!](https://downloads.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/download){.external}
-- [Prestashop](https://www.prestashop.com/en/download){.external}
-- [Pico](https://picocms.org/download/){.external}
-- [Grav](https://getgrav.org/downloads){.external}
-- [Typo3](https://get.typo3.org/#download){.external}
-- [SPIP](https://www.spip.net/en_download){.external}
+- [WordPress](https://wordpress.org/download/#download-install)
+- [Joomla!](https://downloads.joomla.org/)
+- [Drupal](https://www.drupal.org/download)
+- [Prestashop](https://www.prestashop.com/en/download)
+- [Pico](https://picocms.org/download/)
+- [Grav](https://getgrav.org/downloads)
+- [Typo3](https://get.typo3.org/#download)
+- [SPIP](https://www.spip.net/en_download)
 
 > [!primary]
 >
@@ -205,14 +205,14 @@ A continuación se muestran los enlaces a las páginas de descarga de los CMS qu
 > Para ello, consulte el enlace a la página oficial del CMS que quiera instalar:
 
 >
-> - [WordPress](https://wordpress.org/about/requirements/){.external}
-> - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
-> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
-> - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
-> - [Pico](https://picocms.org/download/){.external}
-> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
-> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
-> - [SPIP](https://www.spip.net/en_article6659.html){.external}
+> - [WordPress](https://wordpress.org/about/requirements/)
+> - [Joomla!](https://downloads.joomla.org/technical-requirements)
+> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements)
+> - [Prestashop](https://www.prestashop.com/en/system-requirements)
+> - [Pico](https://picocms.org/download/)
+> - [Grav](https://learn.getgrav.org/17/basics/requirements)
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html)
+> - [SPIP](https://www.spip.net/en_article6659.html)
 >
 >
 > Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).

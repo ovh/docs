@@ -38,7 +38,7 @@ To interact with your instance using Python, your development environment needs 
 - A compatible version of Python
 - Redis-py
 
-Please follow the official [Redis-py](https://github.com/redis/redis-py#installation){.external} to get the latest information.
+Please follow the official [Redis-py](https://github.com/redis/redis-py#installation) to get the latest information.
 
 Once your Python environment is set up and you begin executing a **python --version** in your command line interface (CLI), you should see information about the version as shown below:
 

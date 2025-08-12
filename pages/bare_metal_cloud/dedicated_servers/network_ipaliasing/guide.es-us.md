@@ -324,7 +324,7 @@ sudo netplan apply
 ```
 
 > [!primary]
-> Al utilizar el comando `netplan try`, es posible que el sistema envíe un mensaje de advertencia como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Simplemente significa que el archivo no tiene permisos restrictivos. Esto no afecta a la configuración de su Additional IP. Para obtener más información sobre los permisos de archivo, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+> Al utilizar el comando `netplan try`, es posible que el sistema envíe un mensaje de advertencia como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Simplemente significa que el archivo no tiene permisos restrictivos. Esto no afecta a la configuración de su Additional IP. Para obtener más información sobre los permisos de archivo, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >
 
 ### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
@@ -544,7 +544,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Donde podrá sustituir "ADDITIONAL_IP" por la auténtica Additional IP.
 
-A continuación, solo tiene que hacer ping desde su Additional IP hacia el exterior. Si funciona, es probable que haya un error de configuración que deba corregirse. Si, por el contrario, la dirección IP sigue sin funcionar, abra un tíquet con el equipo de soporte a través del [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external} y especifique lo siguiente:
+A continuación, solo tiene que hacer ping desde su Additional IP hacia el exterior. Si funciona, es probable que haya un error de configuración que deba corregirse. Si, por el contrario, la dirección IP sigue sin funcionar, abra un tíquet con el equipo de soporte a través del [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) y especifique lo siguiente:
 
 
 - El nombre y la versión del sistema operativo que utiliza en su servidor.

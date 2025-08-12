@@ -25,7 +25,7 @@ Depois de escolher o ou os motores de execução que pretende utilizar, pode efe
 
 ### Etapa 1: aceder à gestão dos motores de execução
 
-Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique em `Alojamentos`{.action} na barra de serviços à esquerda e, em seguida, selecione o alojamento Cloud Web correspondente. Por fim, clique no separador `Motores de execução`{.action}.
+Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Alojamentos`{.action} na barra de serviços à esquerda e, em seguida, selecione o alojamento Cloud Web correspondente. Por fim, clique no separador `Motores de execução`{.action}.
 
 A tabela que aparece indica os motores de execução adicionados atualmente ao seu alojamento Cloud Web. Ao instalar um alojamento, um motor será automaticamente criado.
 
@@ -35,7 +35,7 @@ A tabela que aparece indica os motores de execução adicionados atualmente ao s
 
 A gestão dos motores de execução do seu alojamento Cloud Web realiza-se de várias formas:
 
-- [adicionar ou alterar um motor de execução](./#21-Adicionar-ou-alterar-um-motor-de-execucao){.external} (o número máximo de motores depende do [plano escolhido](/links/web/hosting-cloud-web-offer){.external});
+- [adicionar ou alterar um motor de execução](./#21-Adicionar-ou-alterar-um-motor-de-execucao) (o número máximo de motores depende do [plano escolhido](/links/web/hosting-cloud-web-offer));
 - definir um motor enquanto escolha predefinida;
 - eliminar um motor de execução.
 
@@ -54,10 +54,10 @@ Para adicionar ou alterar um motor de execução, aceda ao separador `Motores de
 
 Na nova janela que aparecerá, preencha as informações necessárias e prossiga em função do motor de execução selecionado:
 
-- [PHP](./#php){.external} 
-- [Node.js](./#nodejs){.external}
-- [Ruby](./#ruby){.external} 
-- [Python](./#python){.external} 
+- [PHP](./#php) 
+- [Node.js](./#nodejs)
+- [Ruby](./#ruby) 
+- [Python](./#python) 
 
 ##### **PHP**
 
@@ -66,7 +66,7 @@ Na nova janela que aparecerá, preencha as informações necessárias e prossiga
 |Nome personalizado|Insira um nome que lhe permita distinguir este motor do resto dos motores na sua Área de Cliente OVHcloud.|  
 |Motor de execução|Escolha o novo motor de execução desejado.|  
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site).
 
 ##### **Node.js**
 
@@ -78,7 +78,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 |Ambiente da aplicação|Indique se se trata de um ambiente de “produção”, de “teste” ou de “desenvolvimento”. Tenha em conta que este último tem um comportamento diferente e apresenta erros diretamente na interface web. Utilize-o com precaução.|
 |Script de lançamento da aplicação|Indique o script que chamará a tecnologia Node.js.|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
@@ -92,7 +92,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 |Ambiente da aplicação|Indique se se trata de um ambiente de “produção”, de “teste” ou de “desenvolvimento”. Tenha em conta que este último tem um comportamento diferente e apresenta erros diretamente na interface web. Utilize-o com precaução.|
 |Script de lançamento da aplicação|Dê nome ao script que chamará o motor de execução Ruby.|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 |Ambiente da aplicação|Indique se se trata de um ambiente de “produção”, de “teste” ou de “desenvolvimento”. Tenha em conta que este último tem um comportamento diferente e apresenta erros diretamente na interface web. Utilize-o com precaução.|
 |Script de lançamento da aplicação|Dê nome ao script que chamará o motor de execução Python.|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 > No nosso exemplo, foram criados apenas os motores PHP e Node.js. É possível que, no seu projeto, utilize Ruby ou Python. Neste caso, as operações descritas abaixo são
 > aplicáveis.
 > 
-> A utilização de dois motores de execução em paralelo no seu alojamento Cloud Web depende do [seu plano](/links/web/hosting-cloud-web-offer){.external}.
+> A utilização de dois motores de execução em paralelo no seu alojamento Cloud Web depende do [seu plano](/links/web/hosting-cloud-web-offer).
 > 
 
 Uma vez que dispõe dos motores de execução necessários para o seu projeto, certifique-se de que estes estão corretamente associados aos seus multi-sites. Para isso, aceda ao separador `Multi-site`{.action} do alojamento Cloud Web em questão. 

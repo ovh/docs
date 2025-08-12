@@ -69,7 +69,7 @@ Il trasferimento di un dominio Ionos richiede una procedura specifica.
 
 ### Step 1 - Disattiva la registrazione privata
 
-Per confermare se la registrazione privata è attivata per il tuo dominio, segui gli step descritti nella [documentazione dedicata di Ionos](https://www.ionos.it/aiuto/domini/trasferire-un-dominio-allinterno-di-11-ionos/disattivare-la-registrazione-privata-per-un-dominio-su-11-ionos/){.external}.
+Per confermare se la registrazione privata è attivata per il tuo dominio, segui gli step descritti nella [documentazione dedicata di Ionos](https://www.ionos.it/aiuto/domini/trasferire-un-dominio-allinterno-di-11-ionos/disattivare-la-registrazione-privata-per-un-dominio-su-11-ionos/).
 
 ### Step 2 - Disattiva il blocco del trasferimento
 
@@ -78,13 +78,13 @@ Per confermare se la registrazione privata è attivata per il tuo dominio, segui
 > Per motivi di sicurezza, i domini con estensione generica (ad esempio *.com*, *.net* o *.org*) sono bloccati di default e non possono essere trasferiti. Prima di avviare un trasferimento di dominio, è necessario disattivare questo blocco.
 >
 
-Segui gli step descritti nella [documentazione dedicata di Ionos](https://www.ionos.it/aiuto/domini/trasferire-un-dominio-allinterno-di-11-ionos/disattivare-il-blocco-di-trasferimento-di-un-dominio-su-11-ionos/){.external}.
+Segui gli step descritti nella [documentazione dedicata di Ionos](https://www.ionos.it/aiuto/domini/trasferire-un-dominio-allinterno-di-11-ionos/disattivare-il-blocco-di-trasferimento-di-un-dominio-su-11-ionos/).
 
 ### Step 3 - Ottieni il codice di autorizzazione
 
 Il codice di autorizzazione protegge il dominio da trasferimenti non autorizzati da parte di terzi. Questo codice è necessario per autorizzare il trasferimento del tuo dominio verso un nuovo provider.
 
-Segui gli step descritti nella [documentazione dedicata di Ionos](https://www.ionos.it/aiuto/domini/trasferire-un-dominio-da-11-ionos-ad-un-provider-esterno/visualizzare-il-codice-di-autorizzazione-per-un-dominio-su-11-ionos/){.external}.
+Segui gli step descritti nella [documentazione dedicata di Ionos](https://www.ionos.it/aiuto/domini/trasferire-un-dominio-da-11-ionos-ad-un-provider-esterno/visualizzare-il-codice-di-autorizzazione-per-un-dominio-su-11-ionos/).
 
 Una volta ottenuto il codice di autorizzazione, è possibile procedere al trasferimento del dominio seguendo gli step indicati nella nostra guida "[Trasferire un dominio in OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
 

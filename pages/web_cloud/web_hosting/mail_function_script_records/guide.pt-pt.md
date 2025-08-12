@@ -12,7 +12,7 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 >
 > Este guia trata principalmente dos e-mails enviados a partir de scripts situados no seu [alojamento web da OVHcloud](/links/web/hosting) com a ajuda da função "mail()" de PHP.
 >
-> Se pretender gerir os endereços de e-mail incluídos na sua oferta MX Plan ou na sua oferta de[alojamento web OVHcloud](/links/web/hosting){.external}, consulte a nossa documentação sobre os [E-mails partilhados - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Se pretender gerir os endereços de e-mail incluídos na sua oferta MX Plan ou na sua oferta de[alojamento web OVHcloud](/links/web/hosting), consulte a nossa documentação sobre os [E-mails partilhados - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,12 +24,12 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting){.external}.
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting).
+- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](/links/manager){.external}. Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
+O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](/links/manager). Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 

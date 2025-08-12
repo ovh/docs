@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Le logiciel [Zoiper](https://www.zoiper.com/){.external} est un softphone (logiciel de téléphonie) gratuit permettant d'enregistrer une ligne SIP fixe OVHcloud afin d'émettre et recevoir des appels via cette ligne, depuis un ordinateur ou un smartphone.
+Le logiciel [Zoiper](https://www.zoiper.com/) est un softphone (logiciel de téléphonie) gratuit permettant d'enregistrer une ligne SIP fixe OVHcloud afin d'émettre et recevoir des appels via cette ligne, depuis un ordinateur ou un smartphone.
 
 **Découvrez comment enregistrer votre ligne SIP OVHcloud sur Zoiper**
 
@@ -33,9 +33,9 @@ Le logiciel [Zoiper](https://www.zoiper.com/){.external} est un softphone (logic
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip)
 - [Disposer des identifiants de votre ligne SIP OVHcloud](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone)
-- Disposer du logiciel [Zoiper](https://www.zoiper.com/en/voip-softphone/download/current){.external} sur un smartphone ou un ordinateur
+- Disposer du logiciel [Zoiper](https://www.zoiper.com/en/voip-softphone/download/current) sur un smartphone ou un ordinateur
 
 ## En pratique
 

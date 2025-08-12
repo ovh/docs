@@ -49,10 +49,10 @@ Rendez-vous dans les paramètres de votre navigateur Internet et vérifiez si un
 
 Vous trouverez ci-dessous les procédures de mise à jour des principaux navigateurs Internet (documentations fournies par leurs éditeurs) :
 
-- [Firefox](https://support.mozilla.org/fr/kb/mettre-jour-firefox-derniere-version){.external}.
-- [Chrome](https://support.google.com/chrome/answer/95414?hl=fr&co=GENIE.Platform%3DDesktop&oco=0){.external}.
-- [Safari](https://support.apple.com/fr-fr/102665){.external}.
-- [Edge](https://support.microsoft.com/fr-fr/topic/param%C3%A8tres-de-mise-%C3%A0-jour-de-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}.
+- [Firefox](https://support.mozilla.org/fr/kb/mettre-jour-firefox-derniere-version).
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=fr&co=GENIE.Platform%3DDesktop&oco=0).
+- [Safari](https://support.apple.com/fr-fr/102665).
+- [Edge](https://support.microsoft.com/fr-fr/topic/param%C3%A8tres-de-mise-%C3%A0-jour-de-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1).
 
 Si votre navigateur Internet n'est pas présent dans la liste ci-dessus, consultez sa documentation en ligne ou contactez le support de son éditeur.
 

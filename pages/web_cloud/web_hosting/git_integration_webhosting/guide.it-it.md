@@ -14,7 +14,7 @@ Nel panorama digitale di oggi, le società sono sempre più dinamiche e innovati
 
 - Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione Web Cloud.
-- Disporre di un account [GitHub](https://github.com/){.external} ed essere connesso.
+- Disporre di un account [GitHub](https://github.com/) ed essere connesso.
 
 > [!primary]
 >

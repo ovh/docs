@@ -12,7 +12,7 @@ Este tutorial le permitirá crear sus primeros contenidos, organizarlos, publica
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [el editor del CMS WordPress](https://wordpress.com/support/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [el editor del CMS WordPress](https://wordpress.com/support/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 >
 
 **Descubra cómo crear un sitio web con el CMS WordPress.**
@@ -22,7 +22,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
 - Disponer de un [dominio](/links/web/domains)
 - Haber [instalado WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en su alojamiento web
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}
+- Estar conectado al [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
@@ -176,15 +176,15 @@ Los enlaces se construirán a partir del slug que haya indicado anteriormente al
 
 ## Más información <a name="go-further"></a>
 
-- Almacene sus accesos en un gestor de contraseñas como [KeePass](https://keepass.info/){.external}.
-- Pruebe online el editor predeterminado [Gutenberg](https://wordpress.org/gutenberg/){.external}.
+- Almacene sus accesos en un gestor de contraseñas como [KeePass](https://keepass.info/).
+- Pruebe online el editor predeterminado [Gutenberg](https://wordpress.org/gutenberg/).
 - Recursos para encontrar temas WordPress:
-    - [WordPress Themes](https://wordpress.com/themes){.external}
-    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php){.external}.
-    - [Elegant Themes](https://www.elegantthemes.com/){.external}, editor del fabricante de temas Divi.
-    - [Elemor](https://elementor.com/){.external}, otro editor de temas.
-- Sitio oficial [WordPress](https://wordpress.org/){.external}.
-- [Utilizar el SFTP para transferir archivos o páginas a su WordPress](https://wordpress.com/es/support/sftp/){.external}.
+    - [WordPress Themes](https://wordpress.com/themes)
+    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php).
+    - [Elegant Themes](https://www.elegantthemes.com/), editor del fabricante de temas Divi.
+    - [Elemor](https://elementor.com/), otro editor de temas.
+- Sitio oficial [WordPress](https://wordpress.org/).
+- [Utilizar el SFTP para transferir archivos o páginas a su WordPress](https://wordpress.com/es/support/sftp/).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

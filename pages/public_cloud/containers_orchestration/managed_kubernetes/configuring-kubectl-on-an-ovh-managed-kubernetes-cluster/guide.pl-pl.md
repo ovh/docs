@@ -15,9 +15,9 @@ This guide will cover how to retrieve the `kubectl` configuration file to intera
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - Access to the [OVHcloud Control Panel](/links/manager).
 - You must have an OVHcloud Managed Kubernetes cluster.
-- You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed.
+- You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed.
 
-You can find the detailed installation instructions for `kubectl` in Kubernetes' [official documentation](https://kubernetes.io/docs/home/){.external}.
+You can find the detailed installation instructions for `kubectl` in Kubernetes' [official documentation](https://kubernetes.io/docs/home/).
 
 ## Instructions
 

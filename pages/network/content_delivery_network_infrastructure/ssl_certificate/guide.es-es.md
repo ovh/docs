@@ -6,13 +6,13 @@ updated: 2018-02-22
 
 ## Objetivo
 
-Es posible añadir un [certificado SSL](/links/web/hosting-options-ssl){.external} a su red de distribución de contenidos (CDN, del inglés *content delivery network*) para que los usuarios puedan establecer conexiones seguras incluso pasando por la CDN.
+Es posible añadir un [certificado SSL](/links/web/hosting-options-ssl) a su red de distribución de contenidos (CDN, del inglés *content delivery network*) para que los usuarios puedan establecer conexiones seguras incluso pasando por la CDN.
 
 **Esta guía explica cómo funcionan los certificados SSL Let's Encrypt que ofrece OVH.**
 
 ## Requisitos
 
-- Tener contratada la solución [CDN de OVH](/links/network/cdn-infrastructure){.external}.
+- Tener contratada la solución [CDN de OVH](/links/network/cdn-infrastructure).
 - Tener acceso a la gestión de la zona DNS del dominio.
 
 ## Procedimiento
@@ -22,7 +22,7 @@ Es posible añadir un [certificado SSL](/links/web/hosting-options-ssl){.externa
 - Si no ha configurado ningún certificado y añade un primer subdominio a la CDN, se generará automáticamente un certificado Let's Encrypt para dicho dominio.
 - Si añade a la CDN un nuevo subdominio, el certificado se regenerará automáticamente para incluir el subdominio recientemente configurado.
 
-Para poder crear el certificado, es necesario que el subdominio que acaba de añadir apunte correctamente a la CDN. Para más información, consulte nuestra guía sobre cómo [configurar un dominio en la CDN](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external}.
+Para poder crear el certificado, es necesario que el subdominio que acaba de añadir apunte correctamente a la CDN. Para más información, consulte nuestra guía sobre cómo [configurar un dominio en la CDN](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration).
 
 El certificado se renovará automáticamente en los 20 días previos a la expiración del certificado.
 
@@ -59,6 +59,6 @@ Una vez activado el certificado, podrá ver lo siguiente en el área de cliente:
 
 ## Más información
 
-[Primera configuración de un dominio](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external}
+[Primera configuración de un dominio](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

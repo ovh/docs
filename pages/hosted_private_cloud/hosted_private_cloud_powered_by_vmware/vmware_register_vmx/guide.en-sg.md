@@ -52,9 +52,9 @@ In case you have more than a few VMs and/or datastores, it is possible to automa
 #### With PowerCLI
 
 VMware provides PowerCLI for VMware administrators using PowerShell.
-<br>Refer to the VMware guide to [install PowerCLI](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
+<br>Refer to the VMware guide to [install PowerCLI](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
 
-Once installed, you can use the following PS script, written by [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}:
+Once installed, you can use the following PS script, written by [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/):
 
 ```powershell
 function register-vmxX {

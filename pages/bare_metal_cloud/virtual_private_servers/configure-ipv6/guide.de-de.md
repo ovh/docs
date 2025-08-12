@@ -1,7 +1,7 @@
 ---
 title: "IPv6 auf einem VPS einrichten"
 excerpt: "Erfahren Sie hier, wie Sie IPv6 auf Ihrem OVHcloud VPS konfigurieren"
-updated: 2025-07-24
+updated: 2025-08-07
 ---
 
 > [!primary]
@@ -212,7 +212,7 @@ Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`. 
 
 Wenn die IPv6-Adresse noch nicht konfiguriert wurde, sollten Sie eine separate Konfigurationsdatei erzeugen, um IPv6-Adressen im Verzeichnis `/etc/netplan/` zu konfigurieren. Auf diese Weise können Sie Änderungen im Falle eines Fehlers leicht rückgängig machen.
 
-Außerdem empfehlen wir, die Berechtigungen für die neu erstellte Datei anzupassen. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+Außerdem empfehlen wir, die Berechtigungen für die neu erstellte Datei anzupassen. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions).
 
 In unserem Beispiel heißt diese Datei `51-cloud-init-ipv6.yaml`:
 

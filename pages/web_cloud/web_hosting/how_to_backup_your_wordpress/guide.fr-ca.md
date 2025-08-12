@@ -15,7 +15,7 @@ Sur un hébergement web mutualisé, vous êtes responsable des sauvegardes de vo
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 **Découvrez comment sauvegarder le contenu de votre site WordPress et sa base de données.**
@@ -68,7 +68,7 @@ Cliquez sur `Exécuter`{.action}, vous téléchargez alors votre base de donnée
 
 ### Méthode n°2 - réaliser une sauvegarde avec une extension
 
-De nombreuses extensions WordPress permettent de gérer vos sauvegardes. La plus populaire est [UdraftPlus](https://wordpress.org/plugins/updraftplus/){.external} qui compte plusieurs millions d'installations actives. La version gratuite est suffisante pour sauvegarder votre site web. La version premium offre plus d'options telles que les sauvegardes incrémentales, un outil de migration, la sauvegarde multisites, plus de choix sur les clouds destinés à stocker les données, etc.
+De nombreuses extensions WordPress permettent de gérer vos sauvegardes. La plus populaire est [UdraftPlus](https://wordpress.org/plugins/updraftplus/) qui compte plusieurs millions d'installations actives. La version gratuite est suffisante pour sauvegarder votre site web. La version premium offre plus d'options telles que les sauvegardes incrémentales, un outil de migration, la sauvegarde multisites, plus de choix sur les clouds destinés à stocker les données, etc.
 
 Téléchargez l'extension au format `.zip` sur votre ordinateur. Pour des raisons de clarté, le fichier téléchargé de l'extension sera renommé **updraftplus.zip** dans la suite de ce tutoriel.
 
@@ -143,7 +143,7 @@ En appliquant ces bonnes pratiques, vous aurez la possibilité de revenir à une
 
 ## Aller plus loin <a name="go-further"></a>
 
-- [Site officiel de WordPress](https://wordpress.org){.external}
+- [Site officiel de WordPress](https://wordpress.org)
 - [Plus d'informations sur les sauvegardes de votre hébergement web](/pages/web_cloud/web_hosting/hosting_technical_specificities#informations-sur-les-sauvegardes-automatiques)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).

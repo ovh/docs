@@ -12,13 +12,13 @@ OVH oferuje szablony Windows i SQL Server (w formacie OVF), które możesz wdro�
 
 > [!primary]
 > 
-> Ceny obrazów systemów oferowanych przez OVHcloud znajdziesz na [stronie WWW](https://www.ovhcloud.com/pl/managed-bare-metal/options/){.external}.
+> Ceny obrazów systemów oferowanych przez OVHcloud znajdziesz na [stronie WWW](https://www.ovhcloud.com/pl/managed-bare-metal/options/).
 >
 
 ## Wymagania początkowe
 
 - Dostęp do klienta sieciowego lub do grubego klienta w zależności od używanej wersji
-- [Aktywowanie licencji Windows](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#licencja-windows) w [Panelu klienta OVHcloud](/links/manager){.external} (zakładka `Licencje Windows`{.action} w odpowiednim centrum danych) 
+- [Aktywowanie licencji Windows](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#licencja-windows) w [Panelu klienta OVHcloud](/links/manager) (zakładka `Licencje Windows`{.action} w odpowiednim centrum danych) 
 
 ## W praktyce
 

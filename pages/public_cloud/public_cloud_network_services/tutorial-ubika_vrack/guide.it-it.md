@@ -25,11 +25,11 @@ This guide provides step-by-step instructions for deploying and configuring Ubik
 - Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
 - Basic networking knowledge
-- A Ubika account on the [Ubika website](https://my.ubikasec.com/){.external}
+- A Ubika account on the [Ubika website](https://my.ubikasec.com/)
 - Ensure that an appropriate block of Additional IPs is available
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure
 - [Additional IP address](/links/network/additional-ip) for ensuring network failover and high availability setup
-- Ubika WAAP Gateway Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process
+- Ubika WAAP Gateway Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/). You will need to provide it during the installation and configuration process
 
 ## Instructions
 
@@ -62,7 +62,7 @@ Below is the architecture that we are going to set-up:
 #### Configure Ubika WAAP Gateway management networking
 
 > [!primary]
-> In this scenario, we will use a two virtual machines setup for the security appliance to achieve High Availability (HA), and an additional VM for management. This setup ensures failover protection and continuous service availability. For more examples and detailed guidance on scalability options, please refer to [Ubika documentation](https://www.ubikasec.com/ressources/){.external}.
+> In this scenario, we will use a two virtual machines setup for the security appliance to achieve High Availability (HA), and an additional VM for management. This setup ensures failover protection and continuous service availability. For more examples and detailed guidance on scalability options, please refer to [Ubika documentation](https://www.ubikasec.com/ressources/).
 
 Create a private network for management:
 
@@ -111,7 +111,7 @@ openstack router add subnet 2481bcaf-efa2-419a-ad92-d6d27737dfd1 ubika-workload
 
 Upload UWG image to OpenStack:
 
-Go to the `download`{.action} section of the [official Ubika website](https://my.ubikasec.com/){.external}. Log in to your Ubika account and follow the instructions to download the UWG OpenStack image.
+Go to the `download`{.action} section of the [official Ubika website](https://my.ubikasec.com/). Log in to your Ubika account and follow the instructions to download the UWG OpenStack image.
 
 Go to the folder where you have downloaded your UWG Openstack image and upload the UWG OpenStack image (for this tutorial, we use the image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`):
 
@@ -119,7 +119,7 @@ Go to the folder where you have downloaded your UWG Openstack image and upload t
 openstack image create --disk-format raw --container-format bare --file ~/Downloads/UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2 Ubika-WAAP-Gateway-6.11.10
 ```
 
-[Import your SSH public key](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external}:
+[Import your SSH public key](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html):
 
 ```bash
 openstack keypair create --public-key ~/.ssh/id_rsa.pub <username>
@@ -255,7 +255,7 @@ Apply the configuration (top right corner button):
 
 ### Configure the licences <a name="step3"></a>
 
-Ubika WAAP Gateway licences are available directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. Depending on your deployment needs, you can choose between a single VM licence or a High Availability mode licence, which supports an Active-Backup configuration with two data-plane instances and one-or-more control plane instances. The licences also vary based on the SSL TPS (Transactions Per Second), supporting either multiple SSL certificates or failover capabilities.
+Ubika WAAP Gateway licences are available directly from Ubika via the [official Ubika website](https://my.ubikasec.com/). Depending on your deployment needs, you can choose between a single VM licence or a High Availability mode licence, which supports an Active-Backup configuration with two data-plane instances and one-or-more control plane instances. The licences also vary based on the SSL TPS (Transactions Per Second), supporting either multiple SSL certificates or failover capabilities.
 
 We strongly recommend to use latest compute instances for appliance deployments, i.e.:
 

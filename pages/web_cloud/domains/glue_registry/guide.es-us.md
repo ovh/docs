@@ -39,9 +39,9 @@ En función de sus necesidades, es posible personalizar el nombre de los servido
 
 ### 1 - Obtener los servidores DNS que utiliza actualmente su dominio <a name="step1"></a>
 
-Puede recuperar los servidores DNS que utiliza actualmente su dominio mediante la herramienta DNS en línea [Zonemaster](https://zonemaster.net/en/run-test){.external}.
+Puede recuperar los servidores DNS que utiliza actualmente su dominio mediante la herramienta DNS en línea [Zonemaster](https://zonemaster.net/en/run-test).
 
-Para ello, acceda al enlace [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, introduzca su dominio sin los *www* (p. ej.: *domain.tld*) y marque el botón `Options`{.action} situado justo debajo del formulario de entrada del dominio.
+Para ello, acceda al enlace [https://zonemaster.net](https://zonemaster.net/en/run-test), introduzca su dominio sin los *www* (p. ej.: *domain.tld*) y marque el botón `Options`{.action} situado justo debajo del formulario de entrada del dominio.
 
 En las opciones disponibles, haga clic directamente en el botón `Fetch NS from parent zone`{.action}.
 

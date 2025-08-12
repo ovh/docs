@@ -66,7 +66,7 @@ Klicken Sie dann auf `Connect`{.action}. Sobald Sie eingeloggt sind, haben Sie Z
 
 ## Weiterführende Informationen
 
-[Cyberduck Dokumentation](https://trac.cyberduck.io/wiki/help/en){.external}
+[Cyberduck Dokumentation](https://trac.cyberduck.io/wiki/help/en)
 
 [Erste Schritte mit der Swift API](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

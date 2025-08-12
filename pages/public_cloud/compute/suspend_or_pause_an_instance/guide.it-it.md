@@ -288,6 +288,6 @@ Per **riattivare** l'istanza, esegui questo comando:
 
 ## Per saperne di più
 
-[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
+[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
 
 Contatta la nostra [Community di utenti](/links/community).

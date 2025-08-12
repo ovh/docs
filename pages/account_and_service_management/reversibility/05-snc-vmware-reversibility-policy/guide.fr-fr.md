@@ -7,7 +7,7 @@ updated: 2023-09-28
 
 Ce document est la politique de réversibilité du produit [VMware on OVHcloud sous la qualification SecNumCloud](https://www.ovhcloud.com/fr/enterprise/products/secnumcloud/).
 
-Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Liste des fonctionnalités
 

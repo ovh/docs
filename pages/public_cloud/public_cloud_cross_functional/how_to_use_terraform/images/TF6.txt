@@ -1,16 +1,15 @@
  resource "ovh_vrack_cloudproject" "vcp" {
   service_name = "VRACK_NAME"
   project_id   = "OS_TENANT_ID"
-} 
+}
  resource "ovh_cloud_project_network_private" "network" {
     service_name = "OS_TENANT_ID"
     name         = "private_network"
     regions      = ["OS_REGION_NAME"]
-    provider     = ovh.ovh
     vlan_id      = 168
     depends_on   = [ovh_vrack_cloudproject.vcp]
  }
-  
+
  resource "ovh_cloud_project_network_private_subnet" "subnet" {
     service_name = "OS_TENANT_ID"
     network_id   = ovh_cloud_project_network_private.network.id
@@ -19,12 +18,10 @@
     network      = "192.168.168.0/24"
     dhcp         = true
     region       = "OS_REGION_NAME"
-    provider     = ovh.ovh
     no_gateway   = true
  }
-  
+
  resource "openstack_compute_instance_v2" "proxy_instance" {
-   provider     = openstack.ovh
    name         = "proxy_instance"
    image_name   = "Debian 10"
    flavor_name  = "d2-2"

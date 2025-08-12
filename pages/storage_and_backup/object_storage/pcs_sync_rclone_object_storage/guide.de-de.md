@@ -24,7 +24,7 @@ Wenn Sie Ihren Container und Ihren OpenStack-Benutzer eingerichtet haben, sind n
 
 Sobald Sie Ihren OpenStack-Benutzer eingerichtet haben, können Sie in Ihrem Kundencenter die für Rclone notwendige Konfigurationsdatei abrufen.
 
-Dabei gehen Sie wie folgt vor: Wenn Sie sich in Ihrem Kundencenter auf der Seite der OpenStack-Benutzer befinden, klicken Sie auf den Schraubenschlüssel rechts neben dem Benutzer und gehen dann auf `Rclone Konfigurationsdatei herunterladen`{.external}.
+Dabei gehen Sie wie folgt vor: Wenn Sie sich in Ihrem Kundencenter auf der Seite der OpenStack-Benutzer befinden, klicken Sie auf den Schraubenschlüssel rechts neben dem Benutzer und gehen dann auf `Rclone Konfigurationsdatei herunterladen`.
 
 ![Download der Rclone-Konfigurationsdatei](images/download_file.png){.thumbnail}
 
@@ -51,7 +51,7 @@ Rclone lsd BackupStorage
 
 *BackupStorage* entspricht dem Namen Ihres Storage.
 
-Auf der offiziellen Website von Rclone finden Sie eine ausführliche Dokumentation zur Vorgehensweise bei der Synchronisierung Ihres Object Storage mit Rclone: [Offizielle Dokumentation von Rclone](https://Rclone.org/swift/){.external}.
+Auf der offiziellen Website von Rclone finden Sie eine ausführliche Dokumentation zur Vorgehensweise bei der Synchronisierung Ihres Object Storage mit Rclone: [Offizielle Dokumentation von Rclone](https://Rclone.org/swift/).
 
 ## Weiterführende Informationen
 

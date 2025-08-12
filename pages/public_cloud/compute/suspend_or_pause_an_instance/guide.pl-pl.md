@@ -286,6 +286,6 @@ Aby **restartować** instancję, wpisz w wierszu polecenia:
 
 ## Sprawdź również
 
-[Dokumentacja OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
+[Dokumentacja OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
 
 Dołącz do [grona naszych użytkowników](/links/community).

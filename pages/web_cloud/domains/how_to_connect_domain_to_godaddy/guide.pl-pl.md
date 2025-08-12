@@ -19,9 +19,9 @@ Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem GoDaddy. W ty
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
-- Posiadanie [domeny](/links/web/domains){.external} zarejestrowanej w OVHcloud.
-- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie [domeny](/links/web/domains) zarejestrowanej w OVHcloud.
+- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie hostingu w GoDaddy.
 - Dostęp do interfejsu zarządzania hostingiem w GoDaddy.
 
@@ -44,11 +44,11 @@ Jeśli korzystasz z hostingu GoDaddy z domeną OVHcloud, najpierw musisz przygot
 > Prima di continuare:
 >
 > - Apri una scheda in parallelo sul tuo browser internet.
-> - Apri [**questa pagina della documentazione GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US){.external}.
+> - Apri [**questa pagina della documentazione GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
 > - Postępuj zgodnie z instrukcjami aż do etapu 10 i uzyskaj informacje dotyczące Twojej strony WWW, aby móc modyfikować rekordy DNS OVHcloud.<br>
 > Le istruzioni seguenti ti aiuteranno a configurare la tua zona DNS OVHcloud.
 
-Zaloguj się do Twojego [panelu klienta OVHcloud](/links/manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Zaloguj się do Twojego [panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich rekordów DNS wybranej domeny.
 

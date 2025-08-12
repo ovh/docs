@@ -12,8 +12,8 @@ Jeśli usługa Managed Bare Metal nie jest już dla Ciebie odpowiednia lub jeśl
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} i sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}
-- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager) i sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}
+- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/)
 
 ## W praktyce
 
@@ -24,7 +24,7 @@ Jeśli usługa Managed Bare Metal nie jest już dla Ciebie odpowiednia lub jeśl
 
 ### Etap 1: złóż dyspozycję zakończenia usługi w Panelu klienta 
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, przejdź do sekcji `Bare Metal Cloud`{.action} (1), kliknij `Managed Bare Metal`{.action} (2) i wybierz serwer z listy (3).
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} (1), kliknij `Managed Bare Metal`{.action} (2) i wybierz serwer z listy (3).
 
 W tabeli “Zarządzanie usługami” w zakładce “Informacje ogólne” kliknij przycisk `...`{.action} (4) po prawej stronie od daty odnowienia. Na koniec kliknij `Usuń usługę`{.action} (5).
 

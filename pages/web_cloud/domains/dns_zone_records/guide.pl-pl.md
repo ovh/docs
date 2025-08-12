@@ -173,7 +173,7 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> Protokół DANYCH pozwala klientowi (przeglądarce internetowej, klientowi poczty elektronicznej, klientowi FTP, klientowi SSH, etc.) sprawdzić rekord TLSA. W ten sposób zyskuje pewność, że certyfikat SSL/TLS używany dla danej domeny jest certyfikatem potwierdzającym tą samą nazwę domeny.
 >>
->> W razie potrzeby sprawdź więcej szczegółów na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>> W razie potrzeby sprawdź więcej szczegółów na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
 
 #### Specjalne zastosowania: użycie rekordów CNAME <a name="cannamesecase"></a>

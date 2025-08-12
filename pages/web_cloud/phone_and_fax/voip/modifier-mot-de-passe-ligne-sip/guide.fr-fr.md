@@ -12,8 +12,8 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 
 ## Prérequis
 
-- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip){.external}.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
+- Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -59,6 +59,6 @@ Dans le cas contraire, nous vous invitons à vous rapprocher de l’éditeur du 
 
 [Tutoriel - Utiliser une ligne SIP OVHcloud sur un softphone](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone)
 
-[En apprendre plus sur la sécurité des mots de passe grâce à l'ANSSI](http://www.ssi.gouv.fr/guide/mot-de-passe/){.external}.
+[En apprendre plus sur la sécurité des mots de passe grâce à l'ANSSI](http://www.ssi.gouv.fr/guide/mot-de-passe/).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -209,11 +209,11 @@ Hit a key....
 
 To go further (develop your own application, register for remote attestation, etc.), here are some useful resources:
 
-- [Intel SGX](https://software.intel.com/en-us/sgx){.external}
-- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services){.external}
-- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
-- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
-- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
-- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
+- [Intel SGX](https://software.intel.com/en-us/sgx)
+- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
+- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/)
+- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver)
+- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample)
 
 Join our [community of users](/links/community).

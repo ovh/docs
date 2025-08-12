@@ -13,7 +13,7 @@ Vous trouverez dans ce guide les différentes étapes permettant la configuratio
 
 ## Prérequis
 
-* Disposer d'un service [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}
+* Disposer d'un service [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
 * Être connecté à l'[interface vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) de votre service Hosted Private Cloud
 * Avoir une adresse IP par instance de KMS
 * Avoir les fichiers du modèle OVF présents sur votre poste de travail
@@ -176,7 +176,7 @@ A l’issue de ces étapes, les différentes instances doivent être visibles. E
 
 Première authentification au KMS :
 
-* Connectez-vous sur l’appliance : [192.0.2.68](https://192.0.2.68/){.external}.
+* Connectez-vous sur l’appliance : [192.0.2.68](https://192.0.2.68/).
 * Renseignez la clé SSH publique.
 * Cliquez sur `ADD`{.action}.
 

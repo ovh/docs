@@ -168,7 +168,7 @@ Aby uzyskać więcej informacji na temat tworzenia klucza SSH, zapoznaj się z [
 
 **Inne opcje**
 
-Uwaga: te opcje nie są wymagane do utworzenia podstawowej instancji. Jeśli chcesz zgłębić więcej opcji, zapoznaj się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/horizon/latest/user/launch-instances.html){.external}.
+Uwaga: te opcje nie są wymagane do utworzenia podstawowej instancji. Jeśli chcesz zgłębić więcej opcji, zapoznaj się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
 
 |Informacje|Szczegóły|
 |---|---|

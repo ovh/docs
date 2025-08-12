@@ -35,7 +35,7 @@ Como los tokens tienen un período de validez definido, expiran y deben renovars
 
 De la misma forma, si debe revocarse un token antes de su fecha de expiración, puede hacerlo a través de la API.
 
-Para más información, consulte la documentación de [OpenStack de la API](https://docs.openstack.org/keystone/train/api_curl_examples.html){.external}.
+Para más información, consulte la documentación de [OpenStack de la API](https://docs.openstack.org/keystone/train/api_curl_examples.html).
 
 ### Operaciones manuales
 
@@ -167,7 +167,7 @@ Connection: close
 ### Gestión automática: librería y SDK
 Es altamente recomendable utilizar librerías que permitan la gestión transparente de los tokens. De esta forma, al proporcionar simplemente los credenciales de conexión a la librería, los tokens se generarán, utilizarán y renovarán automáticamente sin tener que gestionar los tokens a nivel aplicativo.
 
-Existen numerosas librerías en los diferentes lenguajes. Consulte [la lista oficial para más información](https://wiki.openstack.org/wiki/SDKs){.external}.
+Existen numerosas librerías en los diferentes lenguajes. Consulte [la lista oficial para más información](https://wiki.openstack.org/wiki/SDKs).
 
 #### Borrar el token
 

@@ -608,7 +608,7 @@ Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z we
 
 ![rating_idn](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name){.external} w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
+Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name) w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
 
 > [!alert]
 >

@@ -12,7 +12,7 @@ In certain cases — like replacing a datastore or scaling it up to a higher cap
 
 ## Requirements
 
-* an [OVHcloud Hosted Private Cloud](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/){.external} solution
+* an [OVHcloud Hosted Private Cloud](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) solution
 * access to the vSphere management interface
 
 ## Instructions

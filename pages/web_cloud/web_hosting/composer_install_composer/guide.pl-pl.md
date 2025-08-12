@@ -6,7 +6,7 @@ updated: 2023-02-24
 
 ## Wprowadzenie 
 
-[Composer](https://getcomposer.org/){.external} jest menedżerem zależności stworzonym dla języka PHP. Pozwala deweloperom PHP na umieszczanie w programach zewnętrznych bibliotek. "Composer" umożliwiło projektom PHP ułatwienie dystrybucji bibliotek i utrzymania ich kodu. Poza tym, od momentu utworzenia tego narzędzia, w ramach społeczności PHP udostępniano liczne dobre praktyki rozwoju, które poprawiły biblioteki społeczności PHP. Te dobre praktyki są dokumentowane w formie [PSR](http://www.php-fig.org/){.external}.
+[Composer](https://getcomposer.org/) jest menedżerem zależności stworzonym dla języka PHP. Pozwala deweloperom PHP na umieszczanie w programach zewnętrznych bibliotek. "Composer" umożliwiło projektom PHP ułatwienie dystrybucji bibliotek i utrzymania ich kodu. Poza tym, od momentu utworzenia tego narzędzia, w ramach społeczności PHP udostępniano liczne dobre praktyki rozwoju, które poprawiły biblioteki społeczności PHP. Te dobre praktyki są dokumentowane w formie [PSR](http://www.php-fig.org/).
 
 **Dowiedz się, jak zainstalować i zrobić pierwsze kroki z Composer**
 
@@ -19,8 +19,8 @@ updated: 2023-02-24
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](/links/web/hosting){.external} z dostępem SSH
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie [hostingu](/links/web/hosting) z dostępem SSH
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -72,7 +72,7 @@ Aby go zainstalować, wprowadź następującą komendę do tego samego katalogu:
 php composer.phar install
 ```
 
-Aby korzystać z tej biblioteki, zapoznaj się z dokumentacją oraz kodem dostępnym na stronie [GitHub](https://github.com/ovh/php-ovh){.external}
+Aby korzystać z tej biblioteki, zapoznaj się z dokumentacją oraz kodem dostępnym na stronie [GitHub](https://github.com/ovh/php-ovh)
 
 ## Sprawdź również <a name="go-further"></a>
 

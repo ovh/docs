@@ -12,7 +12,7 @@ Le Content Delivery Network (CDN) vous permet d'optimiser le temps de réponse d
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVH](/links/manager){.external}.
+- Avoir accès à votre [espace client OVH](/links/manager).
 
 ## En pratique
 
@@ -20,11 +20,11 @@ Le Content Delivery Network (CDN) vous permet d'optimiser le temps de réponse d
 
 Lors de votre commande, **1 To** de trafic vous est offert. Attention, ce quota n'est pas renouvelé chaque mois avec votre offre. En effet, une fois ce volume consommé (quelle que soit la durée), vous devrez en ajouter à nouveau.
 
-Si vous avez besoin de quota supplémentaire, vous pouvez le commander directement depuis votre [espace client OVH](/links/manager){.external} :
+Si vous avez besoin de quota supplémentaire, vous pouvez le commander directement depuis votre [espace client OVH](/links/manager) :
 
 ![Ajout de quota](images/add_quota.png){.thumbnail}
 
-Retrouvez les tarifications de ce quota sur [notre site](/links/network/cdn-infrastructure){.external}.
+Retrouvez les tarifications de ce quota sur [notre site](/links/network/cdn-infrastructure).
 
 Une alerte vous est automatiquement envoyée lorsqu'il vous reste **100 Go** de quota pour que vous puissiez planifier un nouvel achat de bande passante. S'il ne vous reste plus de quota, la fonction `*bypass*` sera automatiquement activée jusqu'à ce que vous possédiez de nouveau du quota disponible.
 

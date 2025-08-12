@@ -12,7 +12,7 @@ Scopri come creare un negozio online con l'estensione open source **WooCommerce*
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno specialista del settore (/links/partner), [amministratore del CMS WordPress](https://wordpress.com/support/){.external} o [amministratore delegato di WooCommerce](https://woocommerce.com/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno specialista del settore (/links/partner), [amministratore del CMS WordPress](https://wordpress.com/support/) o [amministratore delegato di WooCommerce](https://woocommerce.com/). OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
   
 ## Prerequisiti
@@ -118,7 +118,7 @@ La gestione dei prodotti avviene tramite una serie di sottorubriche:
 
 #### Spedizione
 
-Se hai attivato gratuitamente le estensioni predefinite durante l'installazione, disponi dell'estensione [WooCommerce Shipping](https://woocommerce.com/it-it/woocommerce-shipping/){.external}. In caso contrario, accedi alla sezione `Plugin`{.action} del menu in cui viene ordinata la configurazione del server.
+Se hai attivato gratuitamente le estensioni predefinite durante l'installazione, disponi dell'estensione [WooCommerce Shipping](https://woocommerce.com/it-it/woocommerce-shipping/). In caso contrario, accedi alla sezione `Plugin`{.action} del menu in cui viene ordinata la configurazione del server.
 
 - **Zone di spedizione**: permette di definire e configurare zone di spedizione.
 - **Opzioni di consegna**: serve a impostare l'applicazione per tutto ciò che riguarda le spese di spedizione.
@@ -138,7 +138,7 @@ Permette di configurare le *email tipo* inviate dall'applicazione (iscrizione, o
 
 #### Integrazione
 
-Per geolocalizzare i tuoi clienti in base al loro indirizzo IP, in questa sottorubrica puoi inserire la chiave di licenza di [MaxMind](https://www.maxmind.com/){.external}, servizio a pagamento di geolocalizzazione.
+Per geolocalizzare i tuoi clienti in base al loro indirizzo IP, in questa sottorubrica puoi inserire la chiave di licenza di [MaxMind](https://www.maxmind.com/), servizio a pagamento di geolocalizzazione.
 
 #### Avanzato
 
@@ -153,10 +153,10 @@ Per geolocalizzare i tuoi clienti in base al loro indirizzo IP, in questa sottor
 
 Alcuni link utili:
 
-- Il [sito ufficiale di WordPress](https://wordpress.org){.external}.
-- L'estensione [Jetpack](https://jetpack.com/){.external}.
-- L'estensione [WooCommerce](https://woocommerce.com/){.external}
-- Il negozio [estensioni WooCommerce](https://woocommerce.com/products/){.external}
+- Il [sito ufficiale di WordPress](https://wordpress.org).
+- L'estensione [Jetpack](https://jetpack.com/).
+- L'estensione [WooCommerce](https://woocommerce.com/)
+- Il negozio [estensioni WooCommerce](https://woocommerce.com/products/)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

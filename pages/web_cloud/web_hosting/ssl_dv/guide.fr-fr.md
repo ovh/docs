@@ -20,7 +20,7 @@ Les niveaux de chiffrement SSL sont identiques entre ces trois types de certific
 
 La principale différence réside dans le niveau de vérifications qui sera réalisé par l'Autorité de Certification (AC) qui délivre le certificat SSL et atteste de son authenticité.
 
-Pour les hébergements mutualisés OVHcloud, l'autorité de certification délivrant les certificats SSL DV est [Sectigo](https://sectigostore.com){.external}.
+Pour les hébergements mutualisés OVHcloud, l'autorité de certification délivrant les certificats SSL DV est [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >

@@ -76,7 +76,7 @@ To allow this configuration, we will replace the **OVHgateway** virtual machine 
 <a name="downloadsources"></a>
 #### Step 2.1 Downloading sources for pfSense installation
 
-Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
+Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/).
 
 Using [this documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import), add the **pfSense ISO** image to your Nutanix cluster.
 
@@ -412,7 +412,7 @@ We will install the **GW-PFSENSE** gateway in France on the IP plan **192.168.0.
 <a name="downloadsourcesfr"></a>
 #### Step 3.1 Downloading sources for pfSense installation
 
-Download the ISO image of **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
+Download the ISO image of **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/).
 
 Using [this documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import), add the pfSense **ISO image** to your Nutanix cluster.
 

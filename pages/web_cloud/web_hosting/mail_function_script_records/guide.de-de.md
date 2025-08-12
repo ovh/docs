@@ -12,7 +12,7 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 >
 > Diese Anleitung betrifft hauptsächlich E-Mails, die über Skripte auf Ihrem [OVHcloud Webhosting](/links/web/hosting) mit der "mail()"-Funktion von PHP versendet werden.
 >
-> Wenn Sie die E-Mail-Accounts Ihres MX Plans oder Ihres [OVHcloud Webhostings](/links/web/hosting){.external} verwalten möchten, lesen Sie unsere Dokumentation zu [Hosted E-Mail - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Wenn Sie die E-Mail-Accounts Ihres MX Plans oder Ihres [OVHcloud Webhostings](/links/web/hosting) verwalten möchten, lesen Sie unsere Dokumentation zu [Hosted E-Mail - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,12 +24,12 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting){.external}.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](/links/manager){.external}. Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
+Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](/links/manager). Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 

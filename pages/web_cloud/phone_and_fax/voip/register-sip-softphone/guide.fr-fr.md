@@ -73,7 +73,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login** et v
 Si vous ne connaissez pas votre mot de passe SIP ou que vous ne l'avez jamais modifié au profit d'un **mot de passe fort**, consultez notre guide pour [Modifier le mot de passe d'une ligne SIP](/pages/web_cloud/phone_and_fax/voip/modifier-mot-de-passe-ligne-sip).
 
 > [!success]
-> Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://keepass.info/){.external} afin de sauvegarder en toute sécurité votre mot de passe SIP.
+> Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://keepass.info/) afin de sauvegarder en toute sécurité votre mot de passe SIP.
 
 ### Étape 2 : enregistrer la ligne SIP
 

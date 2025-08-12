@@ -52,7 +52,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 - Disponer de la contraseña asociada al usuario.
 - el nombre de la base de datos;
 
-Puede encontrar todos estos datos en el [área de cliente OVHcloud](/links/manager){.external}.
+Puede encontrar todos estos datos en el [área de cliente OVHcloud](/links/manager).
 
 Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
@@ -79,7 +79,7 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña=contraseña nom
 - Cumplimente los campos como se indica a continuación y acepte con el botón `OK`{.action}:
     - **Name**: Indique un nombre.
     - **Driver**: Seleccione `MySQL Driver`.
-    - **URL**: Indique la dirección del servidor y el puerto en formato `jdbc:mysql://servidor:puerto`.
+    - **URL**: Indique la dirección del servidor y el puerto en formato `jdbc:mysql://server:port`.
     - **User Name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 

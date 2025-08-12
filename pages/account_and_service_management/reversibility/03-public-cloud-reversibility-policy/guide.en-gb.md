@@ -7,7 +7,7 @@ updated: 2021-05-05
 
 This document is the reversibility policy for the Public Cloud [Compute](/links/public-cloud/compute), [Object Storage](/links/public-cloud/object-storage) and [Block Storage](/links/public-cloud/block-storage) activities.
 
-This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Features map
 

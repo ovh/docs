@@ -35,7 +35,7 @@ The query will disappear but if your client application is coded to redo the que
 
 PostgreSQL CLI, called `psql`, provides native administration functions such as `pg_terminate_backend()`.
 
-For more information, please refer to their [official documentation](https://www.postgresql.org/docs/current/functions-admin.html){.external}.
+For more information, please refer to their [official documentation](https://www.postgresql.org/docs/current/functions-admin.html).
 
 #### Connect to your database using psql
 

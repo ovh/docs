@@ -15,7 +15,7 @@ Nos servidores Alta Gama compatíveis, é possível substituir um disco danifica
 - Dispor de um servidor mHG, HG ou BHG.
 - Possuir um RAID por software (com placa LSI).
 - Dispor de um acesso SSH (Linux) ou RDP (Windows).
-- Ter instalado o utilitário “sas2ircu”(utilize o motor de busca [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} para o encontrar).
+- Ter instalado o utilitário “sas2ircu”(utilize o motor de busca [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu) para o encontrar).
 
 ## Instruções
 
@@ -236,7 +236,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-O disco danificado já pode ser substituído por um técnico do datacenter. Uma vez a operação efetuada, só terá de voltar a sincronizar o RAID. Para isso, consulte a seguinte documentação: [RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+O disco danificado já pode ser substituído por um técnico do datacenter. Uma vez a operação efetuada, só terá de voltar a sincronizar o RAID. Para isso, consulte a seguinte documentação: [RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ### Em Windows
 
@@ -288,11 +288,11 @@ Para que o disco pare de piscar, substitua “on” por “off” no comando.
 
 Esta operação pode ser realizada a partir da interface **Gestão dos discos** do servidor Windows.
 
-O disco danificado já pode ser substituído por um técnico do datacenter. Uma vez a operação efetuada, só terá de voltar a sincronizar o RAID. Para isso, consulte a seguinte documentação: [RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+O disco danificado já pode ser substituído por um técnico do datacenter. Uma vez a operação efetuada, só terá de voltar a sincronizar o RAID. Para isso, consulte a seguinte documentação: [RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Quer saber mais?
 
-[RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+[RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 

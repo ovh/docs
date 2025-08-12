@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'IPv6 sur un serveur VPS"
 excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
-updated: 2025-07-24
+updated: 2025-08-07
 ---
 
 > [!primary]
@@ -91,7 +91,7 @@ Une fois les adresses récupérées, continuez à l'étape 2 « [Appliquer la co
 
 ### Étape 2 : appliquer la configuration IPv6 <a name="applyipv6"></a>
 
-Une fois les informations nécessaires pour la configuration IPv6 en votre possession, connectez-vous en SSH à votre VPS. Si besoin, aidez-vous des informations de notre documentation « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} ».
+Une fois les informations nécessaires pour la configuration IPv6 en votre possession, connectez-vous en SSH à votre VPS. Si besoin, aidez-vous des informations de notre documentation « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) ».
 
 Il existe plusieurs méthodes pour appliquer la configuration IPv6. En fonction de votre situation et de vos besoins, poursuivez vers celle que vous souhaitez utiliser.
 
@@ -213,7 +213,7 @@ Les fichiers de configuration du réseau sont situés dans le répertoire `/etc/
 
 Si l'adresse IPv6 n'a pas été configurée, la meilleure approche est de créer un fichier de configuration séparé pour configurer l'adresse IPv6 dans le répertoire `/etc/netplan/`. De cette façon, vous pouvez facilement revenir sur les modifications en cas d'erreur.
 
-De plus, nous vous recommandons d'ajuster les permissions pour le fichier nouvellement créé. Pour plus d'informations sur les permissions des fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+De plus, nous vous recommandons d'ajuster les permissions pour le fichier nouvellement créé. Pour plus d'informations sur les permissions des fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions).
 
 Dans notre exemple, notre fichier est nommé `51-cloud-init-ipv6.yaml` :
 

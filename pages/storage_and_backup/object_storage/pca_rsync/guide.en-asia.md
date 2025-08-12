@@ -23,7 +23,7 @@ You can generate your OpenStack login and password using this [guide](/pages/pub
 
 ### TenantName
 
-The TenantName corresponds to the name of your Horizon Project. To get the TenantName, you need to connect to the OpenStack web interface: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/){.external}.
+The TenantName corresponds to the name of your Horizon Project. To get the TenantName, you need to connect to the OpenStack web interface: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/).
 
 Once logged in, the TenantName is visible at the top of page.
 

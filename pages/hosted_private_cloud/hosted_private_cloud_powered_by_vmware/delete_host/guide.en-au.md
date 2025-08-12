@@ -12,7 +12,7 @@ There are some situations where it may be useful to remove a host server from yo
 
 ## Requirements
 
-* an [OVHcloud Hosted Private Cloud](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/){.external} solution
+* an [OVHcloud Hosted Private Cloud](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/) solution
 * access to the vSphere interface
 
 ## Instructions

@@ -14,7 +14,7 @@ Les bases de données managées OVHcloud proposent plusieurs Systèmes de Gestio
 Posséder au moins l'une des 3 offres suivantes:
 
 - Une des bases de données incluses avec un [hébergement web](/links/web/hosting).
-- Une [instance Web Cloud Databases](/links/web/databases){.external} (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
+- Une [instance Web Cloud Databases](/links/web/databases) (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
 - Un pack de base de données [Start SQL](/links/web/hosting-options-startsql).
 
 ## En pratique

@@ -46,7 +46,7 @@ Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk 
 |--|--|
 | Identyfikator | Wpisz na przykład nazwę użytkownika lub jego funkcję. |
 | E-mail | Wpisz pełny adres e-mail użytkownika. |
-| Hasło | Określ hasło dla użytkownika. Użytkownik będzie mógł je zmienić po uzyskaniu uprawnień do dostępu. <br>W celu utworzenia hasła zalecamy zapoznanie się z [przewodnikiem dotyczącym zarządzania hasłami](/pages/account_and_service_management/account_information/manage-ovh-password){.external}. |
+| Hasło | Określ hasło dla użytkownika. Użytkownik będzie mógł je zmienić po uzyskaniu uprawnień do dostępu. <br>W celu utworzenia hasła zalecamy zapoznanie się z [przewodnikiem dotyczącym zarządzania hasłami](/pages/account_and_service_management/account_information/manage-ovh-password). |
 | Grupa | Wybierz grupę spośród dostępnych (patrz tabela poniżej). |
 | Opis | Tutaj możesz dodać opis użytkownika. Przykład: jego rola w firmie. |
 
@@ -66,7 +66,7 @@ Przykład: **1234-567-89/johnsmith**.
 
 Przy użyciu tego identyfikatora nowy użytkownik będzie mógł zalogować się do [Panelu klienta OVHcloud](/links/manager).
 
-Będzie również mógł zmienić swoje hasło i zabezpieczyć swój własny dostęp do Twojego konta, włączając procedurę weryfikacji dwuetapowej (która dotyczy wyłącznie jego dostępu jako użytkownika). W tym celu zapoznaj się z [przewodnikiem dotyczącym wdrażania weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
+Będzie również mógł zmienić swoje hasło i zabezpieczyć swój własny dostęp do Twojego konta, włączając procedurę weryfikacji dwuetapowej (która dotyczy wyłącznie jego dostępu jako użytkownika). W tym celu zapoznaj się z [przewodnikiem dotyczącym wdrażania weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 #### Zarządzanie użytkownikami
 

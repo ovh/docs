@@ -320,9 +320,9 @@ Si quiere reducir este plazo en las próximas ediciones de la zona DNS de OVHclo
 
 [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 
-[Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf){.external}
+[Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf)
 
-[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}
+[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  

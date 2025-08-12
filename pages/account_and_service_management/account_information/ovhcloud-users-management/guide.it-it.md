@@ -66,7 +66,7 @@ Esempio: **1234-567-89/johnsmith**.
 
 A questo punto l’utente appena creato potrà accedere allo [Spazio Cliente OVHcloud](/links/manager) usando questo identificativo. 
 
-Inoltre potrà modificare password e proteggere l’accesso al tuo account attivando la doppia autenticazione (solo ed esclusivamente per il suo accesso in qualità di utente). A questo proposito consulta [la guida relativa all’attivazione della doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
+Inoltre potrà modificare password e proteggere l’accesso al tuo account attivando la doppia autenticazione (solo ed esclusivamente per il suo accesso in qualità di utente). A questo proposito consulta [la guida relativa all’attivazione della doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 #### Gestisci gli utenti
 

@@ -51,7 +51,7 @@ Sustituya los términos `my_private` y `your_file_name` por los nombres de archi
 
 Una vez lanzado el pedido, el terminal le pedirá cada uno de los siguientes datos (para usted mismo, su empresa o su asociación). Una vez que haya respondido a la pregunta, pulse la tecla `ENTRAR`{.action} en su teclado para ver la siguiente pregunta:
 
-- `Country Name (2 letter code) [AU]`: introduzca en mayúscula el **Country Code** de su país. Si es necesario, consulte la lista de todos los **Country Codes** [aquí](https://www.iban.com/country-codes){.external}.
+- `Country Name (2 letter code) [AU]`: introduzca en mayúscula el **Country Code** de su país. Si es necesario, consulte la lista de todos los **Country Codes** [aquí](https://www.iban.com/country-codes).
 - `State or Province Name (full name) [Some-State]`: escriba en mayúscula el nombre de su región (o de su estado si, por ejemplo, se encuentra en Estados Unidos).
 - `Locality Name (eg, city) []`: escriba el nombre de su ciudad en mayúscula.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: introduzca el nombre de su organización, empresa o asociación. **Si es un particular, no responda a esta pregunta y pulse directamente la tecla `ENTRAR`{.action} en su teclado para ver la siguiente pregunta**.

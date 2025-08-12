@@ -6,7 +6,7 @@ updated: 2023-02-24
 
 ## Objetivo
 
-[Composer](https://getcomposer.org/){.external} es un gestor de dependencias creado para el lenguaje PHP. Permite a los desarrolladores de PHP incluir librerías externas en sus programas. "Composer" ha permitido a los proyectos PHP facilitar la distribución de librerías y el mantenimiento de su código. Además, desde la creación de esta herramienta, se han propuesto numerosas buenas prácticas de desarrollo en el seno de la comunidad PHP y han mejorado las librerías de la comunidad PHP. Estas buenas prácticas se documentan en forma de [PSR](http://www.php-fig.org/){.external}.
+[Composer](https://getcomposer.org/) es un gestor de dependencias creado para el lenguaje PHP. Permite a los desarrolladores de PHP incluir librerías externas en sus programas. "Composer" ha permitido a los proyectos PHP facilitar la distribución de librerías y el mantenimiento de su código. Además, desde la creación de esta herramienta, se han propuesto numerosas buenas prácticas de desarrollo en el seno de la comunidad PHP y han mejorado las librerías de la comunidad PHP. Estas buenas prácticas se documentan en forma de [PSR](http://www.php-fig.org/).
 
 **Cómo instalar y dar los primeros pasos en Composer**
 
@@ -19,8 +19,8 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](/links/web/hosting){.external} con acceso SSH.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un [plan de hosting](/links/web/hosting) con acceso SSH.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -72,7 +72,7 @@ Para instalarlo, ejecute el siguiente comando en la misma carpeta:
 php composer.phar install
 ```
 
-Para utilizar esta librería, consulte la documentación y el código, disponibles en [GitHub](https://github.com/ovh/php-ovh){.external}
+Para utilizar esta librería, consulte la documentación y el código, disponibles en [GitHub](https://github.com/ovh/php-ovh)
 
 ## Más información <a name="go-further"></a>
 

@@ -82,13 +82,13 @@ Für den Transfer eines Gandi-Domainnamens ist ein spezieller Ansatz erforderlic
 > Solange die Sperre aktiv ist, ist die Übertragung nicht möglich.
 >
 
-Um Ihren Domainnamen bei Gandi zu entsperren, folgen Sie den Schritten in der [Gandi Dokumentation](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html){.external}.
+Um Ihren Domainnamen bei Gandi zu entsperren, folgen Sie den Schritten in der [Gandi Dokumentation](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html).
 
 ### Schritt 2 - Autorisierungscode abrufen
 
 Der Autorisierungscode schützt Ihren Domainnamen gegen unbefugte Transfers durch Dritte. Dieser Code ist erforderlich, um den Transfer Ihres Domainnamens zu einem neuen Registrar zu autorisieren.
 
-Um den Transfer-Code für Ihren Domainnamen abzurufen, folgen Sie den Schritten in der [Gandi Dokumentation](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html){.external}.
+Um den Transfer-Code für Ihren Domainnamen abzurufen, folgen Sie den Schritten in der [Gandi Dokumentation](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html).
 
 ### Schritt 3 - Transfer Ihres Domainnamens zu OVHcloud einleiten
   

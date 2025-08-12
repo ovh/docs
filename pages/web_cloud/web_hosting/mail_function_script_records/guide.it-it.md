@@ -12,7 +12,7 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 >
 > Questa guida ti mostra come utilizzare la funzione "mail()" di PHP per inviare messaggi da script siti sul tuo [hosting Web OVHcloud](/links/web/hosting).
 >
-> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](/links/web/hosting){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](/links/web/hosting), consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,12 +24,12 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](/links/manager){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](/links/manager). Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 

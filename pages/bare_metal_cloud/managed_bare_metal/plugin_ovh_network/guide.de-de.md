@@ -12,7 +12,7 @@ Das OVHcloud Network Plugin wurde entwickelt,  um alle IP-Adressen effizient zu 
 
 ## Voraussetzungen
 
-- Sie nutzen ein Angebot der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external}.
+- Sie nutzen ein Angebot der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/).
 - Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
 - Sie haben einen mit Ihrer Managed Bare Metal verbundenen IP-Block.
 - Sie haben Zugang zum vSphere Interface.
@@ -53,4 +53,4 @@ Die neue “Reverse-IP” wird dann in der Tabelle angezeigt.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -32,10 +32,10 @@ Existem vários métodos para alterar a palavra-passe de administrador do seu CM
 >
 > Para contactar os diferentes editores dos CMS acima mencionados, consulte as ligações às respetivas páginas oficiais:
 >
-> - [WordPress](https://wordpress.com/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [WordPress](https://wordpress.com/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
 
 ### Alterar a palavra-passe de administrador através do e-mail automático (palavra-passe esquecida) <a name="via-email"></a>
 

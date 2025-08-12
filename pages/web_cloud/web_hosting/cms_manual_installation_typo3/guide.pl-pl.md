@@ -70,7 +70,7 @@ Pojawi się piąty i ostatni etap instalacji.
 Przeczytaj informacje wyświetlane na ekranie i wybierz odpowiednią opcję:
 
 - `Create empty starting page` : wybierz tę opcję, aby utworzyć domyślną stronę serwisu WWW. Po zatwierdzeniu tego etapu wpisz nazwę domeny w przeglądarce internetowej, aby uzyskać dostęp do witryny Typo3.
-- `Take me straight to the backend` : wybierz tę opcję, aby zostać przekierowanym do dashboardu Twojej strony WWW Typo3. Za pomocą tego dashboardu będziesz musiał samodzielnie tworzyć strony WWW, zasilać ich treści i wiele więcej. Więcej informacji znajdziesz w [oficjalnej dokumentacji Typo3](https://docs.typo3.org/Home/GettingStarted.html){.external}.
+- `Take me straight to the backend` : wybierz tę opcję, aby zostać przekierowanym do dashboardu Twojej strony WWW Typo3. Za pomocą tego dashboardu będziesz musiał samodzielnie tworzyć strony WWW, zasilać ich treści i wiele więcej. Więcej informacji znajdziesz w [oficjalnej dokumentacji Typo3](https://docs.typo3.org/Home/GettingStarted.html).
 
 Kliknij `Open the TYPO3 Backend`{.action}, aby potwierdzić wybraną właśnie opcję.
 

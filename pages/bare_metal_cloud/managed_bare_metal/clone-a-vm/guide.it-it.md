@@ -12,7 +12,7 @@ La clonazione di una macchina virtuale permette di creare una copia della VM sor
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
+- Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/)
 - Disporre di almeno una VM nel cluster
 - Avere accesso all’[interfaccia vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface)
 

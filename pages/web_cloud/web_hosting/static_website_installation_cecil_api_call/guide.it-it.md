@@ -6,7 +6,7 @@ updated: 2023-01-16
 
 ## Obiettivo
 
-Questa guida ti mostra come utilizzare il generatore del sito [Cecil](https://cecil.app){.external} per visualizzare il contenuto di una pagina dinamica. Il tutto chiamando un'API per recuperare e visualizzare le informazioni su una pagina generata via **Cecil**.
+Questa guida ti mostra come utilizzare il generatore del sito [Cecil](https://cecil.app) per visualizzare il contenuto di una pagina dinamica. Il tutto chiamando un'API per recuperare e visualizzare le informazioni su una pagina generata via **Cecil**.
 
 **Questa guida ti mostra come aggiungere una chiamata verso un'API esterna dalla tua pagina Web statica.**
 
@@ -48,7 +48,7 @@ cd myWebSite
 
 ### Utilizzo dell'API OpenWeather
 
-In questa guida utilizzeremo un'API fornita dal sito [OpenWeather](https://openweathermap.org/){.external}. In questo modo è possibile conoscere le informazioni meteorologiche in base al nome di una città.
+In questa guida utilizzeremo un'API fornita dal sito [OpenWeather](https://openweathermap.org/). In questo modo è possibile conoscere le informazioni meteorologiche in base al nome di una città.
 
 Crea un account su <https://home.openweathermap.org/users/sign_up><br>
 Una volta confermato l'account (tramite email di conferma), accedi al menu "My API keys". Una chiave è stata generata di default, recuperala e conservala per il seguito di questa guida.
@@ -185,7 +185,7 @@ Crea il file `script.js` menzionato in precedenza alla root della directory `ass
 nano assets/script.js
 ```
 
-Sostituisci il valore della variabile `apiKey` con la chiave recuperata precedentemente sul sito [OpenWeather](https://openweathermap.org/){.external}
+Sostituisci il valore della variabile `apiKey` con la chiave recuperata precedentemente sul sito [OpenWeather](https://openweathermap.org/)
 
 ```javascript
 let apiKey = '123456789'; // Sostituisci questo valore
@@ -241,12 +241,12 @@ Questa guida ti mostra un esempio di integrazione di dati dinamici recuperati da
 ## Per saperne di più
 
 - Alcune API da testare sul tuo sito Web
-    - [API Numbers](http://numbersapi.com/#42){.external}
-    - [NASA](https://api.nasa.gov/){.external}
-    - [News API](https://newsapi.org/){.external}
-    - [Polygon.io](https://polygon.io/){.external}
-    - una lista di [API pubbliche](https://github.com/public-api-lists/public-api-lists){.external}
-- I [comandi Cecil](https://cecil.app/documentation/commands/){.external}.
+    - [API Numbers](http://numbersapi.com/#42)
+    - [NASA](https://api.nasa.gov/)
+    - [News API](https://newsapi.org/)
+    - [Polygon.io](https://polygon.io/)
+    - una lista di [API pubbliche](https://github.com/public-api-lists/public-api-lists)
+- I [comandi Cecil](https://cecil.app/documentation/commands/).
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

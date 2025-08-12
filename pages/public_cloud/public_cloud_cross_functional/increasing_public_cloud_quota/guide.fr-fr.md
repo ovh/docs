@@ -35,7 +35,7 @@ Vous avez la possibilté d'augmenter votre quota de ressources manuellement ou a
 
 Cette procédure vous permet de demander manuellement une augmentation de quota et de la valider via un paiement initial (crédit Public Cloud).
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
 <br> Dans la rubrique **Paramètres**, cliquez sur `Quota & Régions`{.action}.
 
 ![access quota](images/raisepciquota1-2023.png){.thumbnail}
@@ -74,7 +74,7 @@ Cette option vous permet de demander une augmentation automatique et progressive
 
 Veuillez noter que le processus n'est pas immédiat. Le quota de ressources est augmenté au fil du temps.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
 <br> Dans la rubrique **Paramètres**, cliquez sur `Quota & Régions`{.action}.
 
 Pour avoir plus d'informations sur cette fonctionnalité, cliquez sur le bouton `?`{.action}. Cliquez ensuite sur le bouton dédié afin de passer l'état à « **Activé** ».

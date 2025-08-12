@@ -16,7 +16,7 @@ Description des différents points d'entrées dans l'API pour le Load Balancer O
 
 Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 
-- Tous les appels API se font dans la section */ipLoadbalancing* disponible ici : [https://ca.api.ovh.com/console/#/ipLoadbalancing](https://ca.api.ovh.com/console/#/ipLoadbalancing){.external}.
+- Tous les appels API se font dans la section */ipLoadbalancing* disponible ici : [https://ca.api.ovh.com/console/#/ipLoadbalancing](https://ca.api.ovh.com/console/#/ipLoadbalancing).
 
 > [!warning]
 >

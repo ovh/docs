@@ -25,7 +25,7 @@ Par ailleurs, tous vos certificats sont ainsi centralisés au même endroit et l
 
 La première étape est de configurer votre frontend pour gérer la terminaison SSL.
 
-Vous pouvez configurer votre terminaison SSL depuis l'[espace client OVHcloud](/links/manager){.external} dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
+Vous pouvez configurer votre terminaison SSL depuis l'[espace client OVHcloud](/links/manager) dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier, créez un nouveau frontend ou éditez-en un existant.
 

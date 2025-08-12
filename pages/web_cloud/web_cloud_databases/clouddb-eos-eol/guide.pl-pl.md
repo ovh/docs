@@ -1,6 +1,6 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-updated: 2025-06-11
+updated: 2025-08-06
 ---
 
 ## Wprowadzenie
@@ -10,7 +10,6 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 
 |Wersja|Ogłoszenie o zakończeniu życia|Koniec sprzedaży|Zakończenie pomocy|
 |---|---|---|---|
-|MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|2025-02-12|2026-01-04|2026-07-06|
 |MariaDB 10.11|Do określenia|Do określenia|Do określenia|
 |MariaDB 11.4|Do określenia|Do określenia|Do określenia|

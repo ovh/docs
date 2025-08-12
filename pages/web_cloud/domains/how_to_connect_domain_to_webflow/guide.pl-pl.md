@@ -19,9 +19,9 @@ Posiadasz domenę w OVHcloud i chcesz ją połączyć z hostingiem Webflow. W ty
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
-- Posiadanie [domeny](/links/web/domains){.external} zarejestrowanej w OVHcloud.
-- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie [domeny](/links/web/domains) zarejestrowanej w OVHcloud.
+- Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeną w [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie hostingu w Webflow.
 - Dostęp do interfejsu zarządzania hostingiem w Webflow.
 
@@ -44,11 +44,11 @@ Jeśli korzystasz z hostingu Webflow z domeną OVHcloud, najpierw przygotuj host
 > Prima di continuare:
 >
 > - Apri una scheda in parallelo sul tuo browser internet.
-> - Apri [**questa pagina della documentazione Webflow**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export){.external}.
+> - Apri [**questa pagina della documentazione Webflow**](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export).
 > - Przejdź do sekcji "**How to set your DNS records**" dokumentacji Webflow.<br>
 > Le istruzioni seguenti ti aiuteranno a configurare la tua zona DNS OVHcloud.
 
-Zaloguj się do Twojego [panelu klienta OVHcloud](/links/manager){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Zaloguj się do Twojego [panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie nazwę wybranej domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich rekordów DNS wybranej domeny.
 

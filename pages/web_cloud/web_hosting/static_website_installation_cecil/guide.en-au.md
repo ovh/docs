@@ -6,7 +6,7 @@ updated: 2023-12-08
 
 ## Objective
 
-This tutorial will show you how to install and configure [Cecil](https://cecil.app/){.external}. It is an application written in PHP that can generate and manage static web pages.
+This tutorial will show you how to install and configure [Cecil](https://cecil.app/). It is an application written in PHP that can generate and manage static web pages.
 
 A website essentially composed of static web pages guarantees a better loading time for your visitors and greater security. Without dynamic content, your pages are more robust against cyber attacks. By creating a static website, you get more freedom to create the website of your choice. You will also save time since you will not have to start from scratch.
 
@@ -25,7 +25,7 @@ A website essentially composed of static web pages guarantees a better loading t
 - Be familiar with command line input.
 - Be able to transfer files via FTP with a client like [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Configure your DNS zone to point your domain name (or subdomain) to your web hosting plan. This is particularly useful if you would like to host several websites in [multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your shared web hosting plan.
-- Install [Composer](https://getcomposer.org/){.external} with the file `composer.phar` in the root of your web hosting or in the target folder of your domain name.
+- Install [Composer](https://getcomposer.org/) with the file `composer.phar` in the root of your web hosting or in the target folder of your domain name.
 
 ## Instructions
 
@@ -110,7 +110,7 @@ Replace the default information with your own and save the file.
 
 ### Create a new page
 
-You can create pages containing your website’s data using files in the Markdown format. These pages are customisable. **Cecil** includes [Twig](https://twig.symfony.com/){.external}, the template engine used by default with the [Symfony](https://symfony.com/){.external} framework.
+You can create pages containing your website’s data using files in the Markdown format. These pages are customisable. **Cecil** includes [Twig](https://twig.symfony.com/), the template engine used by default with the [Symfony](https://symfony.com/) framework.
 
 Folders and files are organised as follows:
 
@@ -154,7 +154,7 @@ You can view it on your server by typing your website URL, followed by `/mypage/
 
 #### Change on server
 
-You can edit Markdown files directly on the Web Hosting server. With your [Performance Hosting](/links/web/hosting-performance-offer) SSH access, you can use [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} or [vim](https://www.vim.org/){.external}.
+You can edit Markdown files directly on the Web Hosting server. With your [Performance Hosting](/links/web/hosting-performance-offer) SSH access, you can use [GNU nano](https://nano-editor.org/), [vi](https://ex-vi.sourceforge.net/) or [vim](https://www.vim.org/).
 The screenshots of this tutorial were taken under **GNU nano**.
 
 Edit the file `mypage.md` located in the `pages` directory by typing the following command if you are at the root of your site:
@@ -216,9 +216,9 @@ Using a template engine, widely used in the web developer community, will allow 
 
 [Add dynamic content to a static web page generated with Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
 
-[Cecil application official website](https://cecil.app/){.external}
+[Cecil application official website](https://cecil.app/)
 
-[A Markdown format guide](https://www.markdownguide.org/){.external}
+[A Markdown format guide](https://www.markdownguide.org/)
 
 [Our FileZilla user guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

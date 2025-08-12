@@ -12,7 +12,7 @@ A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidade
 - mais espaço de armazenamento FTP;
 - de bases de dados suplementares; 
 - endereços de e-mail adicionais;
-- de funcionalidades suplementares como as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [a oferta Pro](/links/web/hosting-professional-offer)) ou o [serviço Web Cloud Databases](/links/web/databases){.external} (incluído em [oferta Performance](/links/web/hosting-performance-offer).
+- de funcionalidades suplementares como as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [a oferta Pro](/links/web/hosting-professional-offer)) ou o [serviço Web Cloud Databases](/links/web/databases) (incluído em [oferta Performance](/links/web/hosting-performance-offer).
 
 **Saiba como fazer evoluir a sua oferta de alojamento OVHcloud, sem interrupção de serviço.**
 

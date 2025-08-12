@@ -6,7 +6,7 @@ updated: 2025-05-23
 
 ## Objetivo
 
-As ofertas de [alojamento web da OVHcloud](/links/web/hosting){.external} permitem alojar o site que quiser, desde que seja compatível com a [configuração das nossas infraestruturas partilhadas](https://webhosting-infos.hosting.ovh.net){.external}.
+As ofertas de [alojamento web da OVHcloud](/links/web/hosting) permitem alojar o site que quiser, desde que seja compatível com a [configuração das nossas infraestruturas partilhadas](https://webhosting-infos.hosting.ovh.net).
 
 A modificação do ficheiro **php.ini** não está disponível nas ofertas de alojamento web. Isto porque a configuração PHP é global para o conjunto da infraestrutura partilhada.
 No entanto, nas nossas infraestruturas partilhadas, pode modificar os seguintes parâmetros para o seu alojamento web:
@@ -44,7 +44,7 @@ Em resumo, alterar a configuração do seu alojamento web a partir da [Área de 
 
 ## Requisitos
 
-- Dispor de um serviço de [alojamento web OVHcloud](/links/web/hosting){.external}, com exceção de um [serviço de alojamento Cloud Web](/links/web/hosting-cloud-web-offer).
+- Dispor de um serviço de [alojamento web OVHcloud](/links/web/hosting), com exceção de um [serviço de alojamento Cloud Web](/links/web/hosting-cloud-web-offer).
 - Ter acesso à sua oferta de alojamento web a partir da [Área de Cliente OVHcloud](/links/manager) ou conhecer as informações que permitem ligar-se à [Área de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Instruções
@@ -111,12 +111,12 @@ Embora a OVHcloud trate da instalação das versões mais recentes de PHP nos se
 **Caso n°2 - utiliza um site baseado numa solução personalizada** : 
 
 - Aproxime-se do webmaster que criou o website.
-- Consulte a [documentação oficial PHP](http://php.net/manual/en/appendices.php){.external} para obter mais informações sobre as migrações da versão.
+- Consulte a [documentação oficial PHP](http://php.net/manual/en/appendices.php) para obter mais informações sobre as migrações da versão.
 - Se necessário, atualize o código do seu website assegurando-se de que este é compatível com o alojamento web da OVHcloud.
 
 Se necessário, pode conhecer a versão de PHP atualmente utilizada pelo seu alojamento web de duas formas:
 
-- **Através da Área de Cliente OVHcloud**. Aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Informações gerais`{.action}, localize a versão abaixo de *Versão global de PHP*. 
+- **Através da Área de Cliente OVHcloud**. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Informações gerais`{.action}, localize a versão abaixo de *Versão global de PHP*. 
 
 ![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
 
@@ -190,7 +190,7 @@ Agora que conhece os diferentes parâmetros alteráveis para o seu alojamento we
 
 #### 2.1 - Aceder à gestão da configuração do alojamento web
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador
+Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador
 `Informações gerais`{.action}. À direita da entrada `Versão global de PHP`{.action}", localizada quase no centro da página, clique no botão `...`{.action} e, a seguir, em `Alterar configuração`{.action}.
 
 ![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
@@ -227,7 +227,7 @@ Clique em `Validar`{.action} para aplicar a alteração. Aguarde alguns instante
 #### 3.1 - Aceder ao espaço de armazenamento FTP do seu alojamento web
 
 Tenha consigo o seu nome de utilizador FTP, a respetiva palavra-passe e o endereço do servidor FTP.
-Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento correspondente. Aceda ao separador FTP - SSH`{.action}. Nele, encontrará informações que lhe permitem aceder. 
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento correspondente. Aceda ao separador FTP - SSH`{.action}. Nele, encontrará informações que lhe permitem aceder. 
 
 Se for caso disso, consulte as instruções descritas na nossa documentação ["Alterar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password) para obter uma palavra-passe para o utilizador FTP.
 
@@ -266,8 +266,8 @@ Personalize os valores das variáveis em função da configuração que pretende
 |Variáveis|Detalhe|
 |---|---| 
 |app.engine|Permite alterar [o motor PHP](#php-runtime) utilizado pelo alojamento. Introduza **php** para ativar o acelerador PHP-FPM e **phpcgi** para o desativar.|
-|app.engine.version|Permite definir [a versão de PHP](#php-versions) utilizada pelo alojamento entre [as que a OVHcloud propõe](/links/web/hosting-programming-language){.external}. Insira a versão da sua escolha (adequada ao ambiente de execução que escolheu utilizar).|
-|http.firewall|Permite ativar ou desativar a [firewall fornecida com os alojamentos web da OVHcloud](/links/web/hosting-options){.external}. Introduza **security** para a ativar ou **none** para a desativar.|
+|app.engine.version|Permite definir [a versão de PHP](#php-versions) utilizada pelo alojamento entre [as que a OVHcloud propõe](/links/web/hosting-programming-language). Insira a versão da sua escolha (adequada ao ambiente de execução que escolheu utilizar).|
+|http.firewall|Permite ativar ou desativar a [firewall fornecida com os alojamentos web da OVHcloud](/links/web/hosting-options). Introduza **security** para a ativar ou **none** para a desativar.|
 |environment|Permite gerir o comportamento da cache dos ficheiros estáticos do seu website, assim como o tratamento dos erros PHP. Corresponde a [modo de execução](#runtime-mod). Insira **production** para maximizar a colocação em cache e ocultar os erros PHP ou **development** para que nenhuma cache seja aplicada e que os erros PHP sejam apresentados.|
 |container.image|Permite alterar [o ambiente de execução](#runtime-environment) utilizado pelo alojamento. Indique o ambiente de execução (**legacy**,**stable** ou **stable64**) à sua escolha. Se escolher o ambiente de execução **stable64**, verifique se o seu site é compatível com a arquitetura de 64 bits.|
 

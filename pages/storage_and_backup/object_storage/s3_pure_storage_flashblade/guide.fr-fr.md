@@ -6,7 +6,7 @@ updated: 2025-07-08
 
 ## Objectif
 
-Ce guide a pour but de vous aider à configurer et à utiliser OVHcloud Object Storage comme cible de réplication pour Pure Storage [Flashblade unified storage platform](https://www.purestorage.com/fr/products/unstructured-data-storage/flashblade-s.html){.external}.
+Ce guide a pour but de vous aider à configurer et à utiliser OVHcloud Object Storage comme cible de réplication pour Pure Storage [Flashblade unified storage platform](https://www.purestorage.com/fr/products/unstructured-data-storage/flashblade-s.html).
 
 **Découvrez comment configurer, gérer et répliquer facilement des objets compatibles Pure Storage Flashblade S3<sup>1</sup> vers OVHcloud Object Storage.**
 

@@ -19,8 +19,8 @@ A sua solução de alojamento web da OVHcloud dá-lhe acesso a um espaço de arm
 
 ## Requisitos
 
-- Ter um [alojamento web](/links/web/hosting){.external} (não funciona com um alojamento [Cloud Web](/links/web/hosting-cloud-web-offer)).
-- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
+- Ter um [alojamento web](/links/web/hosting) (não funciona com um alojamento [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager) ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
 
 ## Instruções
 
@@ -79,11 +79,11 @@ Aceda à informação correspondente ao método de restauração escolhido.
 > Nesse caso:
 >
 > - As nossas equipas enviam um e-mail ao [administrador](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
-> - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](/links/manager){.external}. Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
+> - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](/links/manager). Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
 > - O(s) site(s) alojado(s) apresenta(m) uma página "403 Forbidden".
 >
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
@@ -123,9 +123,9 @@ Esta operação realiza-se em vários passos. Certifique-se de que tem a palavra
 
 Em primeiro lugar, deve decidir qual o programa ou interface que vai utilizar para aceder à cópia de segurança do seu espaço de armazenamento. Se já decidiu, passe para o passo 2. Caso contrário, recomendamos que utilize uma destas três soluções:
 
-- **FileZilla**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do FileZilla”](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}. Este manual não substitui a documentação oficial do editor.
+- **FileZilla**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do FileZilla”](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Este manual não substitui a documentação oficial do editor.
 
-- **Cyberduck**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do Cyberduck (MAC)”](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Este manual não substitui a documentação oficial do editor.
+- **Cyberduck**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do Cyberduck (MAC)”](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac). Este manual não substitui a documentação oficial do editor.
 
 Assim que estiver pronto para continuar a operação, avance para o passo seguinte.
 
@@ -133,7 +133,7 @@ Assim que estiver pronto para continuar a operação, avance para o passo seguin
 
 A partir da interface ou do programa selecionado, deverá ligar-se ao seu espaço de armazenamento para aceder aos dados da cópia de segurança que pretende recuperar. Para isso, deverá ter um nome de utilizador FTP, a respetiva palavra-passe e o nome de host do seu servidor FTP.
 
-Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojamento. Caso não tenha a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojamento. Caso não tenha a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
@@ -175,9 +175,9 @@ Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pel
 
 ## Quer saber mais?
 
-[Guia de utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}.
+[Guia de utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
-[Guia de utilização do Cyberduck (MAC)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}.
+[Guia de utilização do Cyberduck (MAC)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
 
 [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export)
 

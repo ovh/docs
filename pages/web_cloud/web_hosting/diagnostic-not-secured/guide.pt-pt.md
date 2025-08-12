@@ -86,8 +86,8 @@ Se gerou um **certificado SSL « Let's Encrypt »**, ative a opção SSL no `Mul
 
 Se dispõe de um **certificado SSL importado** e este não funcionar, contacte o seu fornecedor.
 
-Se encomendou um dos **certificados SSL pagos** do nosso parceiro [SECTIGO](https://sectigo.com/){.external}, verifique se recebeu um e-mail que lhe propõe a sua renovação.
-<br>Se necessário, contacte o [suporte de SECTIGO](https://sectigo.com/support){.external} a este respeito.
+Se encomendou um dos **certificados SSL pagos** do nosso parceiro [SECTIGO](https://sectigo.com/), verifique se recebeu um e-mail que lhe propõe a sua renovação.
+<br>Se necessário, contacte o [suporte de SECTIGO](https://sectigo.com/support) a este respeito.
 
 > [!primary]
 >

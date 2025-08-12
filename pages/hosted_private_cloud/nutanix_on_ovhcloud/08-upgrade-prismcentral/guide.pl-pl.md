@@ -25,7 +25,7 @@ Once an upgrade of one Nutanix software component is needed, let's review all th
 
 ### Official documentation for upgrades
 
-You can either look for this document: "The Nutanix upgrades: Life Cycle Manager" or visit the official Nutanix website for archived documents: [Software Documentation: Upgrade Guide](https://portal.nutanix.com/page/documents/details?targetId=Acropolis-Upgrade-Guide-v5_20:Acropolis-Upgrade-Guide-v5_20){.external}.
+You can either look for this document: "The Nutanix upgrades: Life Cycle Manager" or visit the official Nutanix website for archived documents: [Software Documentation: Upgrade Guide](https://portal.nutanix.com/page/documents/details?targetId=Acropolis-Upgrade-Guide-v5_20:Acropolis-Upgrade-Guide-v5_20).
 
 ### Backup
 
@@ -192,7 +192,7 @@ Click `Apply N Updates`{.action}.
 
 [OVHcloud documentation](/products/hosted-private-cloud-nutanix-on-ovhcloud)
 
-[Nutanix official documentation](https://www.nutanix.com/){.external}
+[Nutanix official documentation](https://www.nutanix.com/)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

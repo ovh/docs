@@ -6,14 +6,14 @@ updated: 2022-02-03
 
 ## Obiettivo
 
-Questa guida ti mostra come esportare tutti gli elementi del tuo sito Web in formato standard, da un [hosting Web OVHcloud](/links/web/hosting){.external}.
+Questa guida ti mostra come esportare tutti gli elementi del tuo sito Web in formato standard, da un [hosting Web OVHcloud](/links/web/hosting).
 
 **Questa guida ti mostra come esportare il tuo sito Web OVHcloud.**
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -28,17 +28,17 @@ Per accedere allo spazio di storage sono necessari:
 - l'indirizzo del server.
 - porta di connessione al server
 
-Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma, Se non ne hai ancora uno, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} nella sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. 
+Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma, Se non ne hai ancora uno, accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. 
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
-Visualizzi le informazioni associate allo spazio di storage. le informazioni di accesso allo spazio di storage. In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection){.external}. Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Visualizzi le informazioni associate allo spazio di storage. le informazioni di accesso allo spazio di storage. In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection). Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio di storage può essere effettuato in due modi diversi:
 
 - **utilizzare un software compatibile con il protocollo FTP o SFTP**: dovrai installare sul tuo computer un software compatibile, come [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Se hai bisogno di aiuto per utilizzarlo, contatta il produttore del software installato:
 
-- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage.  Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'[offerta di hosting Web OVHcloud](/links/web/hosting){.external} specifica. Per maggiori informazioni, consulta la guida ["Utilizzare l'accesso SSH di un hosting Web"](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage.  Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'[offerta di hosting Web OVHcloud](/links/web/hosting) specifica. Per maggiori informazioni, consulta la guida ["Utilizzare l'accesso SSH di un hosting Web"](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 
@@ -56,10 +56,10 @@ Per verificare la cartella in cui il tuo sito è ospitato clicca sulla scheda `M
 >
 
 Per recuperare un backup del tuo database, consulta la nostra guida:
-[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export){.external}.
+[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export).
 
 Se utilizzi un database **Web Cloud Databases** per il tuo sito Web, consulta la sezione dedicata al backup della nostra guida:
-[Salvare ed esportare un database sul tuo server di database](/pages/web_cloud/web_cloud_databases/save-export-on-database-server){.external}.
+[Salvare ed esportare un database sul tuo server di database](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
 ### Step 3: recuperare i log del tuo hosting OVHcloud
 
@@ -89,17 +89,17 @@ Quando hai selezionato il tipo di log nel mese che ti interessa, questi vengono 
 
 ## Per saperne di più
 
-[Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection){.external}.
+[Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
 
-[Modificare la password di un utente FTP ](/pages/web_cloud/web_hosting/ftp_change_password){.external}
+[Modificare la password di un utente FTP ](/pages/web_cloud/web_hosting/ftp_change_password)
 
-[Utilizza FileZilla con il tuo hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}.
+[Utilizza FileZilla con il tuo hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
-[Utilizzare l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+[Utilizzare l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
-[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export){.external}.
+[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export).
 
-[Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}.
+[Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

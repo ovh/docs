@@ -85,8 +85,8 @@ Se hai generato un **certificato SSL "Let's Encrypt"**, attiva l'opzione SSL nel
 
 Se disponi di un **certificato SSL importato** e questo non funziona, contatta il suo provider.
 
-Se hai ordinato uno dei **certificati SSL a pagamento** del nostro partner [SECTIGO](https://sectigo.com/){.external}, verifica se hai ricevuto un'email che ti propone di rinnovarlo.
-<br>Se necessario, contatta il [supporto di SECTIGO](https://sectigo.com/support){.external} a questo proposito.
+Se hai ordinato uno dei **certificati SSL a pagamento** del nostro partner [SECTIGO](https://sectigo.com/), verifica se hai ricevuto un'email che ti propone di rinnovarlo.
+<br>Se necessario, contatta il [supporto di SECTIGO](https://sectigo.com/support) a questo proposito.
 
 >[!primary]
 >

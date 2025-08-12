@@ -15,7 +15,7 @@ Historię wysłanych wiadomości SMS możesz sprawdzić i pobrać z poziomu Pane
 ## Wymagania początkowe
 
 - Posiadanie konta SMS OVHcloud, z którego wysłano co najmniej jedną wiadomość SMS
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

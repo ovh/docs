@@ -14,17 +14,17 @@ It will ensure certificates are valid and up to date periodically, and attempt t
 
 ![Cert Manager architecture](images/cert-manager-archi.png)
 
-In this tutorial we are going to guide you with the setup of [cert-manager](https://github.com/jetstack/cert-manager){.external} on your OVHcloud Managed Kubernetes Service.
+In this tutorial we are going to guide you with the setup of [cert-manager](https://github.com/jetstack/cert-manager) on your OVHcloud Managed Kubernetes Service.
 
 ## Requirements
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
 ## Installing cert-manager Helm chart
 
-For this tutorial we are using the [cert-manager Helm chart](https://artifacthub.io/packages/helm/cert-manager/cert-manager){.external} found on its own Helm repository.
+For this tutorial we are using the [cert-manager Helm chart](https://artifacthub.io/packages/helm/cert-manager/cert-manager) found on its own Helm repository.
 
 The chart is fully configurable, but here we are using the default configuration.
 

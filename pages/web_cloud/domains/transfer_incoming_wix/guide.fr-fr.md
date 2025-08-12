@@ -68,7 +68,7 @@ Vous devez aussi :
 
 ### Déverrouiller le nom de domaine et récupérer le code de transfert
 
-Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de Wix](https://support.wix.com/fr/article/transf%C3%A9rer-votre-domaine-wix-en-dehors-de-wix){.external}.
+Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de Wix](https://support.wix.com/fr/article/transf%C3%A9rer-votre-domaine-wix-en-dehors-de-wix).
 
 ### Initier le transfert de domaine chez OVHcloud
 

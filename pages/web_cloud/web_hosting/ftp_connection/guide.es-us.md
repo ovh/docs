@@ -12,13 +12,13 @@ Los planes de hosting de OVHcloud proporcionan acceso a un espacio de almacenami
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Web Cloud`{.action}.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting)
+- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 
 > [!primary]
 > Solo los alojamientos web **Pro** o **Performance** permiten la activación de varios usuarios FTP y disponen de conexiones por SSH.
 >
-> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
+> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
 
 ## Procedimiento
 
@@ -33,12 +33,12 @@ Para conectarse a su espacio de almacenamiento FTP, descargue los siguientes ele
 
 > [!primary]
 >
-> Estos datos se le han comunicado en el email de notificación de la instalación de su alojamiento web durante la suscripción. Puede acceder a ellos desde el [área de cliente de OVHcloud](/links/manager){.external}.
+> Estos datos se le han comunicado en el email de notificación de la instalación de su alojamiento web durante la suscripción. Puede acceder a ellos desde el [área de cliente de OVHcloud](/links/manager).
 >
 > **Si ya tiene estos elementos**, vaya directamente al paso 2. "[Acceder a su espacio de almacenamiento](#ftp_storage_access)" de esta guía.
 > 
 
-Si no dispone de estos datos, conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`{.action}. Haga clic en el apartado `Alojamientos`{.action} en la columna izquierda. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
+Si no dispone de estos datos, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en el apartado `Alojamientos`{.action} en la columna izquierda. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
 
 Se mostrará la información relativa a su espacio de almacenamiento y una tabla con los usuarios FTP y SSH creados en su alojamiento web.
 
@@ -67,7 +67,7 @@ A continuación se muestra una descripción de la información esencial que se m
 
 > [!primary]
 >
-> En función del plan de [hosting de OVHcloud](/links/web/hosting){.external} que tenga, es posible que no aparezca alguna de las informaciones arriba descritas (en particular, relativas al SSH).
+> En función del plan de [hosting de OVHcloud](/links/web/hosting) que tenga, es posible que no aparezca alguna de las informaciones arriba descritas (en particular, relativas al SSH).
 >
 
 Si ya no conoce la contraseña de un usuario FTP o SSH, consulte nuestra guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
@@ -104,7 +104,7 @@ Si la información es correcta, el programa que utilice mostrará el contenido d
 
 #### 2. Conexión por SSH <a name="ssh"></a>
 
-Este tipo de acceso requiere conocimientos avanzados y una solución de [alojamiento web de OVHcloud](/links/web/hosting){.external} **Pro** o **Performance**.
+Este tipo de acceso requiere conocimientos avanzados y una solución de [alojamiento web de OVHcloud](/links/web/hosting) **Pro** o **Performance**.
 
 Para conectarse por SSH, utilice un terminal para interactuar directamente con su espacio de almacenamiento FTP a través de líneas de comando. 
 
@@ -143,9 +143,9 @@ Si necesita ayuda, consulte la guía "[Utilizar una conexión SSH en un alojamie
 
 ## Más información
 
-[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
-[Utilizar una conexión SSH en un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+[Utilizar una conexión SSH en un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 [Utilizar PuTTY para conectarse por SSH](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

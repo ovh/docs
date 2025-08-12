@@ -47,7 +47,7 @@ Na twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych
 
 ## W praktyce
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
 
 Wybierz odpowiedni hosting, kliknij zakładkę `Więcej`{.action}, a następnie `Cron`{.action}.
 
@@ -156,7 +156,7 @@ Zawsze korzystaj z bezwzględnych ścieżek dostępu do plików skryptów. Stał
  
 #### Weryfikacja logów wykonawczych
 
-W \[logach] twojego hostingu WWW, które są dostępne w [Panelu klienta OVHcloud](/links/manager){.external}, zobaczysz kategorię logów zatytułowaną "CRON".
+W \[logach] twojego hostingu WWW, które są dostępne w [Panelu klienta OVHcloud](/links/manager), zobaczysz kategorię logów zatytułowaną "CRON".
 
 Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony zainstalowanej na hostingu"](/pages/web_cloud/web_hosting/logs_and_statistics).
 

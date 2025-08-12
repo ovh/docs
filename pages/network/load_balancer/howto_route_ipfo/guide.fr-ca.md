@@ -13,18 +13,18 @@ updated: 2022-10-06
 
 Une Additional IP est une adresse IP basculable d'un service à l'autre. Elle offre donc la possibilité de disposer d'une infrastructure résistant à une grande diversité de problèmes (pannes matérielles, surcharges de vos services, maintenance...).
 
-Pour plus d'informations sur l'Additional IP nous vous recommandons la lecture du [document de présentation](/links/bare-metal/ip){.external}.
+Pour plus d'informations sur l'Additional IP nous vous recommandons la lecture du [document de présentation](/links/bare-metal/ip).
 
 Le service OVH Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une Additional IP, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'Additional IP, donc pas de délai de propagation des DNS.
 
-Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons de consulter la [présentation générale](/pages/network/load_balancer/use_presentation){.external}.
+Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons de consulter la [présentation générale](/pages/network/load_balancer/use_presentation).
 
 **Ce guide vous explique comment utiliser une Additional IP avec le service OVH Load Balancer.**
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} correctement configuré.
-- Disposer d'une [Additional IP](/links/bare-metal/ip){.external}.
+- Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/) correctement configuré.
+- Disposer d'une [Additional IP](/links/bare-metal/ip).
 
 > [!primary]
 >
@@ -50,7 +50,7 @@ Dans la suite de ce document, nous allons voir 2 cas d'usages distincts.
 - Associer une Additional IP à un seul et unique frontend de votre service OVH Load Balancer.
 
 ### Ajouter une Additional IP
-Depuis l'[API OVH](https://ca.api.ovh.com){.external} vous pouvez associer ces IPs avec votre service OVH Load Balancer.
+Depuis l'[API OVH](https://ca.api.ovh.com) vous pouvez associer ces IPs avec votre service OVH Load Balancer.
 Voici l'appel API pour cela :
 
 > [!api]
@@ -78,7 +78,7 @@ Les services de vos autres frontends restent quant à eux accessibles via l'adre
 
 #### Création d'un Frontend
 
-Depuis l'[API OVH](https://ca.api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs Additional IPss sur un frontend pendant sa création :
+Depuis l'[API OVH](https://ca.api.ovh.com), l'appel suivant vous permettra de définir une ou plusieurs Additional IPss sur un frontend pendant sa création :
 
 * protocole HTTP
 
@@ -103,7 +103,7 @@ Depuis l'[API OVH](https://ca.api.ovh.com){.external}, l'appel suivant vous perm
 
 #### Mise à jour d'un Frontend
 
-Toujours depuis l'[API OVH](https://ca.api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs Additional IPss sur un frontend existant :
+Toujours depuis l'[API OVH](https://ca.api.ovh.com), l'appel suivant vous permettra de définir une ou plusieurs Additional IPss sur un frontend existant :
 
 * protocole HTTP
 
@@ -127,7 +127,7 @@ Toujours depuis l'[API OVH](https://ca.api.ovh.com){.external}, l'appel suivant 
 > 
 
 ### Depuis le Manager
-Il est enfin possible de définir vos Additional IPs dédiées depuis l'[espace client](/links/manager){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
+Il est enfin possible de définir vos Additional IPs dédiées depuis l'[espace client](/links/manager) dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier,
 créez un nouveau Frontend, ou éditez en un existants.

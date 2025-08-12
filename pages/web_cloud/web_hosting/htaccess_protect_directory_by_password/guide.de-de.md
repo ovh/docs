@@ -112,7 +112,7 @@ Ersetzen Sie `plain_text_password1`, `plain_text_password2` und `plain_text_pass
 >
 > Die beiden oben genannten Skripte verwenden die zum Zeitpunkt von Apache empfohlene sicherste Verschlüsselungsmethode unter Verwendung des Algorithmus **bcrypt**.
 >
-> Weitere Informationen zum Thema finden Sie in der [offiziellen Apache Dokumentation](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
+> Weitere Informationen zum Thema finden Sie in der [offiziellen Apache Dokumentation](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html).
 >
 
 Wenn Sie über ein Webhosting [Pro](/links/web/hosting-professional-offer) oder Webhosting [Performance](/links/web/hosting-performance-offer) verfügen, loggen Sie sich über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) in Ihr Webhosting ein. Wechseln Sie zum "**Wurzelverzeichnis**", in dem sich Ihr Skript "crypt.php" befindet.
@@ -199,7 +199,7 @@ Ersetzen Sie im oben stehenden Skript die folgenden Elemente mit Ihren eigenen W
 
 #### Zugang zu einer oder mehreren Dateien blockieren
 
-Um den Zugriff auf eine Datei oder mehrere Dateien zu blockieren, fügen Sie eine [Files-Direktive](https://httpd.apache.org/docs/2.4/de/mod/core.html#files){.external} zur “.htaccess“ Datei hinzu:
+Um den Zugriff auf eine Datei oder mehrere Dateien zu blockieren, fügen Sie eine [Files-Direktive](https://httpd.apache.org/docs/2.4/de/mod/core.html#files) zur “.htaccess“ Datei hinzu:
 
 ```bash
 <Files test.php>
@@ -221,7 +221,7 @@ Ersetzen Sie im oben stehenden Skript die folgenden Elemente mit Ihren eigenen W
 
 > [!warning]
 >
-> Eine [Files-Direktive](https://httpd.apache.org/docs/2.4/de/mod/core.html#files){.external} ist für **jede zu schützende Datei** anzugeben.
+> Eine [Files-Direktive](https://httpd.apache.org/docs/2.4/de/mod/core.html#files) ist für **jede zu schützende Datei** anzugeben.
 >
 > Die Files-Direktiven gelten für alle Dateien desselben Namens und für passende Dateinamen (letzte Komponente des Dateinamens). Dies gilt, sofern sie im selben Verzeichnis wie “.htaccess“ oder in einem der Unterverzeichnisse enthalten sind.
 >
@@ -237,7 +237,7 @@ Ersetzen Sie im oben stehenden Skript die folgenden Elemente mit Ihren eigenen W
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Offizielle Dokumentation Apache](https://httpd.apache.org/docs/2.4/){.external}
+[Offizielle Dokumentation Apache](https://httpd.apache.org/docs/2.4/)
 
 [Mit dem Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection)
 

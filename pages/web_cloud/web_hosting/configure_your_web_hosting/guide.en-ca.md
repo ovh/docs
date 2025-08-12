@@ -6,7 +6,7 @@ updated: 2025-05-23
 
 ## Objective
 
-The [OVHcloud Web Hosting](/links/web/hosting){.external} offers allow you to host your websites, provided they are compatible with the [configuration of our shared infrastructure](https://webhosting-infos.hosting.ovh.net){.external}.
+The [OVHcloud Web Hosting](/links/web/hosting) offers allow you to host your websites, provided they are compatible with the [configuration of our shared infrastructure](https://webhosting-infos.hosting.ovh.net).
 
 Editing the **php.ini** file is not available on Web Hosting plans. This is because the PHP configuration is global to the entire shared infrastructure.
 However, on our shared infrastructure, you can modify the following settings for your web hosting plan:
@@ -44,7 +44,7 @@ In short, changing your Web Hosting plan’s configuration from the [OVHcloud Co
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](/links/web/hosting){.external}, with the exception of a [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
+- An [OVHcloud web hosting plan](/links/web/hosting), with the exception of a [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
 - Access to your web hosting plan in the [OVHcloud Control Panel](/links/manager), or via [FTP login](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions
@@ -111,12 +111,12 @@ Although OVHcloud manages the installation of the latest PHP versions on its ser
 **Case 2: You are using a website based on a custom solution**: 
 
 - Contact the webmaster who created the website.
-- Use the [official PHP documentation](http://php.net/manual/en/appendices.php){.external}, which provides more information on version migrations.
+- Use the [official PHP documentation](http://php.net/manual/en/appendices.php), which provides more information on version migrations.
 - If necessary, update your website’s code, ensuring that it remains compatible with OVHcloud web hostings.
 
 You can find out which PHP version is currently used by your web hosting plan in two ways:
 
-- **In the OVHcloud Control Panel**: Log in to the [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information`{.action} tab, find the version below *Global PHP version*. 
+- **In the OVHcloud Control Panel**: Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information`{.action} tab, find the version below *Global PHP version*. 
 
 ![phpversion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/change-php-version-step1.png){.thumbnail}
 
@@ -189,7 +189,7 @@ Now that you know the different editable settings for your OVHcloud Web Hosting 
 
 #### 2.1 - Access Web Hosting plan configuration management
 
-Log in to your [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. Make sure you are positioned on the tab
+Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. Make sure you are positioned on the tab
 `General information`{.action}. On the right-hand side of `Global PHP version`{.action} located almost in the center of the page, click the `...`{.action} button, then `Modify configuration`{.action}.
 
 ![hostingconfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
@@ -227,7 +227,7 @@ Once you are ready, click `Confirm`{.action} to apply the modification. Wait a f
 
 You will need your primary FTP username, its password, and the FTP server address.
 
-Log in to your [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the web hosting plan concerned. Go to the `FTP - SSH`{.action} tab. Here, you will find the information you need to log in.
+Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the web hosting plan concerned. Go to the `FTP - SSH`{.action} tab. Here, you will find the information you need to log in.
 
 For the FTP user password, please refer to our guide on [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password) if necessary.
 
@@ -266,8 +266,8 @@ Customise the values of the variables depending on the configuration you want to
 |Variables|Detail|
 |---|---|
 |app.engine|Allows you to modify [the PHP engine](#php-runtime) used by the hosting system. Enter **php** to enable the PHP-FPM accelerator, and **phpcgi** to disable it.|
-|app.engine.version|Allows you to define [the PHP version](#php-versions) used by the hosting plan among [the ones OVHcloud offers](/links/web/hosting-programming-language){.external}. Enter the version of your choice (appropriate for the runtime environment you have chosen to use).|
-|http.firewall|Enables or disables the [firewall of your OVHcloud web hosting plan](/links/web/hosting-options){.external}. Enter **security** to enable it, or **none** to disable it.|
+|app.engine.version|Allows you to define [the PHP version](#php-versions) used by the hosting plan among [the ones OVHcloud offers](/links/web/hosting-programming-language). Enter the version of your choice (appropriate for the runtime environment you have chosen to use).|
+|http.firewall|Enables or disables the [firewall of your OVHcloud web hosting plan](/links/web/hosting-options). Enter **security** to enable it, or **none** to disable it.|
 |environment|Allows you to manage the behaviour of your website's static file cache, as well as PHP error processing. This corresponds to [execution mode](#runtime-mod). Enter **production** to maximise caching and hide PHP errors, or **development** so that no cache is applied and PHP errors are displayed.|
 |container.image|Allows you to modify the [runtime environment](#runtime-environment) used by the hosting. Enter the runtime environment (**legacy**,**stable** or **stable64**) of your choice. If you choose the **stable64** runtime environment, ensure that your site is compatible with 64-bit architecture.|
 

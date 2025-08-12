@@ -40,7 +40,7 @@ Natychmiast po otrzymaniu wiadomości e-mail zawierającej alert o uszkodzeniu d
 
 #### Serwer z programową macierzą RAID 
 
-Jeśli posiadasz serwer z programową macierzą RAID, zapoznaj się z przewodnikiem [“Software RAID”](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}, aby odnaleźć dyski zainstalowane na Twoim serwerze.
+Jeśli posiadasz serwer z programową macierzą RAID, zapoznaj się z przewodnikiem [“Software RAID”](/pages/bare_metal_cloud/dedicated_servers/raid_soft), aby odnaleźć dyski zainstalowane na Twoim serwerze.
 
 Po znalezieniu ścieżki dostępu do Twoich dysków możesz przeprowadzić test, używając komendy `smartctl` w następujący sposób:
 
@@ -84,7 +84,7 @@ W tym przypadku istotny będzie następujący wiersz:
 
 #### Serwer ze sprzętową macierzą RAID
 
-Jeśli posiadasz serwer ze sprzętową macierzą RAID, zapoznaj się z przewodnikiem [“Hardware RAID” - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} i zastosuj procedurę dotyczącą Twojego typu kontrolera RAID, aby odnaleźć ścieżki dostępu do Twoich dysków.
+Jeśli posiadasz serwer ze sprzętową macierzą RAID, zapoznaj się z przewodnikiem [“Hardware RAID” - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard) i zastosuj procedurę dotyczącą Twojego typu kontrolera RAID, aby odnaleźć ścieżki dostępu do Twoich dysków.
 
 Po znalezieniu ścieżki dostępu do Twoich dysków możesz przeprowadzić test, używając komendy `smartctl` w następujący sposób:
 
@@ -193,13 +193,13 @@ MegaCli -PdLocate -start -physdrv[E0:S0] -a0
 
 Jeśli posiadasz serwer ze sprzętową macierzą RAID, RAID odbuduje się samoistnie.  Uwaga: funkcja *auto-rebuild*, aktywowana domyślnie, nie może być przez Ciebie uprzednio zdezaktywowana.  Proces ponownej synchronizacji może zająć kilka minut i spowodować zmniejszenie wydajności odczytu/zapisu macierzy RAID.
 
-Jeśli posiadasz serwer z programową macierzą RAID, uruchom ręcznie ponowną synchronizację dysków. Więcej informacji na ten temat znajdziesz w dokumentacji [“Software RAID”](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Jeśli posiadasz serwer z programową macierzą RAID, uruchom ręcznie ponowną synchronizację dysków. Więcej informacji na ten temat znajdziesz w dokumentacji [“Software RAID”](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Sprawdź również
 
 [Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[Sprzętowa macierz RAID - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
+[Sprzętowa macierz RAID - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 [Trybu Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

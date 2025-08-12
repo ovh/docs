@@ -12,7 +12,7 @@ updated: 2023-03-13
 
 La piattaforma OpenStack gestisce la sicurezza dei firewall combinando le regole di connessione con i **gruppi di sicurezza**. Le regole vengono poi applicate assegnando gruppi di sicurezza alle porte di rete.
 
-Una **porta** nell'ambito di [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} è un punto di connessione tra le sottoreti e gli elementi di rete (come istanze, load balancer, router, ecc...).
+Una **porta** nell'ambito di [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html) è un punto di connessione tra le sottoreti e gli elementi di rete (come istanze, load balancer, router, ecc...).
 
 **Scopri come sono gestiti i gruppi di sicurezza per le reti pubbliche e private su Public Cloud.**
 

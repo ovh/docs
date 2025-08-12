@@ -12,7 +12,7 @@ In einigen Fällen kann es nützlich sein, einen Datastore aus Ihrem Cluster zu 
 
 ## Voraussetzungen
 
-* Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Angebot.
+* Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Angebot.
 * Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
 ## Beschreibung

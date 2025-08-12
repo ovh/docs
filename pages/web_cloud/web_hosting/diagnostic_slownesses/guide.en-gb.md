@@ -280,7 +280,7 @@ Resize all of your images to minimise resource consumption.
 
 See our guide on [optimising performance for your website](/pages/web_cloud/web_hosting/optimise_your_website_performance).
 
-You can find optimisation suggestions for your site by analysing it at [gtmetrix.com](https://gtmetrix.com){.external} (not affiliated with OVHcloud).
+You can find optimisation suggestions for your site by analysing it at [gtmetrix.com](https://gtmetrix.com) (not affiliated with OVHcloud).
 
 > [!success]
 >

@@ -111,10 +111,10 @@ Sorgen Sie für gleichmäßige Verteilung und Redundanz Ihrer Datenbanken:
 
 ## Weiterführende Informationen
 
-[Mehr zum Thema Lastverteilung](http://ovh.to/PhFmeK8){.external}.
+[Mehr zum Thema Lastverteilung](http://ovh.to/PhFmeK8).
 
-[Mehr zum Thema HAProxy](http://www.haproxy.org/#desc){.external}.
+[Mehr zum Thema HAProxy](http://www.haproxy.org/#desc).
 
-[Mehr zum Thema Nginx](https://de.wikipedia.org/wiki/Nginx){.external}.
+[Mehr zum Thema Nginx](https://de.wikipedia.org/wiki/Nginx).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

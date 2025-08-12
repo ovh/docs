@@ -14,7 +14,7 @@ In der heutigen digitalen Landschaft sind Unternehmen dynamischer und innovative
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich Web Cloud.
-- Sie haben einen Account auf [GitHub](https://github.com/){.external} und sind eingeloggt.
+- Sie haben einen Account auf [GitHub](https://github.com/) und sind eingeloggt.
 
 > [!primary]
 >

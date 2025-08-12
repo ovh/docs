@@ -14,8 +14,8 @@ In some cases, you can go a step further and route, redirect or block traffic ac
 
 ## Requirements
 
-- an [OVH Load Balancer](https://www.ovh.com/world/solutions/load-balancer/){.external} on a solution that lets you create routes
-- access to the [OVH API](/links/api){.external}
+- an [OVH Load Balancer](https://www.ovh.com/world/solutions/load-balancer/) on a solution that lets you create routes
+- access to the [OVH API](/links/api)
 
 ## Instructions
 
@@ -43,7 +43,7 @@ This is what is known as an ‘end action’. It means that if the rules are con
 
 ## An introduction to the API.
 
-You can only manage routes via the [OVH API](/links/api){.external}. It is only valid for `http`{.action} and `tcp`{.action} protocols, and the `/ipLoadbalancing/{serviceName}/{protocol}/route/`{.action} pathway exposes the API dedicated to routes.
+You can only manage routes via the [OVH API](/links/api). It is only valid for `http`{.action} and `tcp`{.action} protocols, and the `/ipLoadbalancing/{serviceName}/{protocol}/route/`{.action} pathway exposes the API dedicated to routes.
 
 The API for routes to the OVH Load Balancer is specially designed for flexibility, power and scalability. It is organised around three main sections:
 
@@ -118,7 +118,7 @@ You can read about API calls in more detail in the [Edit routes](#edit-routes){.
 
 HTTPS protocol has become the norm. Its purpose is to make all websites available securely in HTTPS, with the SSL/TLS protocol. If you need an SSL/TLS certificate, you can use the OVH Load Balancer service to order a new one, which will be automatically managed for you.
 
-Migrating a website to HTTPS involves a lot of work, especially to avoid [mixed content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external}. It may be worth migrating your website section by section, and starting by securing pages that send login credentials.
+Migrating a website to HTTPS involves a lot of work, especially to avoid [mixed content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content). It may be worth migrating your website section by section, and starting by securing pages that send login credentials.
 
 One approach could be to base it on the beginning of WordPress URLs. By default, the URL the login pages for WordPress start with "/wp-login". So we would need:
 

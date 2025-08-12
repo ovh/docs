@@ -6,7 +6,7 @@ updated: 2021-02-04
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Ruby** applications, and you want to deploy [Rails](https://rubyonrails.org/){.external} on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Ruby** applications, and you want to deploy [Rails](https://rubyonrails.org/) on it.
 
 This guide will explain how to do it.
 

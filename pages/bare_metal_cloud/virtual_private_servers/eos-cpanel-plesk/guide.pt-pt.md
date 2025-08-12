@@ -27,8 +27,8 @@ Os editores **Plesk** e **cPanel** anunciam o fim do suporte para os seguintes s
 
 Para obter mais informações de apoio, consulte a documentação oficial:
 
-- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
-- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/){.external}.
+- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/).
 
 ### O que devo fazer concretamente?
 
@@ -37,8 +37,8 @@ Para obter mais informações de apoio, consulte a documentação oficial:
 > De um ponto de vista **segurança**, continuar a utilizar um SO não suportado expõe-no a ataques.
 > Recomendamos que leia:
 >
-> - [as recomendações do cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
-> - [as recomendações do Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
+> - [as recomendações do cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+> - [as recomendações do Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/).
 
 #### 1. Verificar o sistema atual
 
@@ -54,8 +54,8 @@ Se o seu sistema operativo faz parte dos SO que já não serão suportados, deve
 
 Consulte a documentação oficial dos SO suportados:
 
-- [Lista dos SO suportados pelo Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
-- [Lista dos SO compatíveis com cPanel](https://docs.cpanel.net/installation-guide/system-requirements/){.external}.
+- [Lista dos SO suportados pelo Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [Lista dos SO compatíveis com cPanel](https://docs.cpanel.net/installation-guide/system-requirements/).
 
 #### 3. Migrar o seu serviço
 
@@ -74,16 +74,16 @@ Encomende um novo VPS com um SO compatível, se ainda não o fez. [Instale cPane
 
 Utilize a ferramenta de migração à sua escolha. Estas ferramentas permitem transferir automaticamente sites, bases de dados, contas de e-mail e configurações de um VPS para outro:
 
-- Plesk Migrator - [Documentação oficial](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
-- cPanel Transfer Tool - [Documentação oficial](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
+- Plesk Migrator - [Documentação oficial](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/).
+- cPanel Transfer Tool - [Documentação oficial](https://docs.cpanel.net/whm/transfers/transfer-tool/).
 
 **Opção C — Atualização direta do SO sem reinstalação ou migração (utilizadores avançados)**
 
 Se não conseguir implementar um novo servidor VPS, algumas ferramentas permitem **atualizar diretamente o seu sistema operativo**, conservando o Plesk ou cPanel instalado. Este método destina-se a utilizadores experientes porque pode ser perigoso se não for bem executado.
 
-- Para **Plesk** (passagem de CentOS 7 para AlmaLinux 8), utilize o script `centos2alma` proposto pela [documentação oficial do Plesk](https://github.com/plesk/centos2alma){.external}. Consulte também as instruções detalhadas do [suporte de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
+- Para **Plesk** (passagem de CentOS 7 para AlmaLinux 8), utilize o script `centos2alma` proposto pela [documentação oficial do Plesk](https://github.com/plesk/centos2alma). Consulte também as instruções detalhadas do [suporte de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983).
 
-- Para **cPanel** (passagem de CentOS 7 para AlmaLinux 8), utilize a ferramenta **Elevate** proposta pela [documentação oficial do cPanel](https://cpanel.github.io/elevate/){.external}.
+- Para **cPanel** (passagem de CentOS 7 para AlmaLinux 8), utilize a ferramenta **Elevate** proposta pela [documentação oficial do cPanel](https://cpanel.github.io/elevate/).
 
 > [!primary]
 >

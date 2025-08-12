@@ -133,7 +133,7 @@ Connectez-vous à votre conteneur pour vérifier la connectivité IPv6 avec la c
 
 #### Windows Server / Hyper-V
 
-La première étape consiste à installer le rôle Hyper-V sur votre serveur Windows. Pour plus d'informations, consultez la [documentation officielle](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}.
+La première étape consiste à installer le rôle Hyper-V sur votre serveur Windows. Pour plus d'informations, consultez la [documentation officielle](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server).
 
 Avant de configurer votre machine virtuelle, vous devez créer un commutateur virtuel.
 

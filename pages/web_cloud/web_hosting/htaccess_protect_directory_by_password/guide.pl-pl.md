@@ -113,7 +113,7 @@ Zastąp wyłącznie `plain_text_password1`, `plain_text_password2` i `plain_text
 >
 > Oba powyższe skrypty wykorzystują w dniu dzisiejszym najbezpieczniejszą metodę szyfrowania za pomocą algorytmu **bcrypt** zalecanego przez Apache.
 >
-> Więcej informacji na ten temat znajdziesz w [oficjalnej dokumentacji Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
+> Więcej informacji na ten temat znajdziesz w [oficjalnej dokumentacji Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html).
 >
 
 Jeśli dysponujesz hostingiem [Pro](/links/web/hosting-professional-offer) lub [Performance](/links/web/hosting-performance-offer), zaloguj się do hostingu za pomocą [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Przejdź do "**katalog główny**", w którym znajduje się Twój skrypt "crypt.php".
@@ -200,7 +200,7 @@ W skrypcie powyżej zastąp następujące elementy własnymi wartościami:
 
 #### Zablokuj dostęp do jednego lub kilku plików
 
-Aby zablokować dostęp do jednego lub kilku plików, dodaj [dyrektywa "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} do pliku ".htaccess":
+Aby zablokować dostęp do jednego lub kilku plików, dodaj [dyrektywa "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) do pliku ".htaccess":
 
 ```bash
 <Files test.php>
@@ -222,7 +222,7 @@ W skrypcie powyżej zastąp następujące elementy własnymi wartościami:
 
 > [!warning]
 >
-> Należy podać [dyrektywa "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} dla **każdego pliku** do ochrony.
+> Należy podać [dyrektywa "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) dla **każdego pliku** do ochrony.
 >
 > Dyrektywy "Kolejki" mają zastosowanie do wszystkich plików o tej samej nazwie lub kończących się określoną nazwą. Pod warunkiem, że są one zawarte w tym samym katalogu co ".htaccess" lub w jednym z jego podkatalogów.
 >
@@ -238,7 +238,7 @@ W skrypcie powyżej zastąp następujące elementy własnymi wartościami:
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Oficjalna dokumentacja Apache](https://httpd.apache.org/docs/2.4/){.external}
+[Oficjalna dokumentacja Apache](https://httpd.apache.org/docs/2.4/)
 
 [Logowanie do przestrzeni FTP hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)
 

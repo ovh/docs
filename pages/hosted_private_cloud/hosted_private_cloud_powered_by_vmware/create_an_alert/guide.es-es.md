@@ -12,7 +12,7 @@ Es posible crear una alerta en todos los elementos de su Hosted Private Cloud: e
 
 ## Requisitos
 
-- Haber contratado un [Hosted Private Cloud de OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
+- Haber contratado un [Hosted Private Cloud de OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
 - Estar conectado a la [interfaz vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion).
 
 ## Procedimiento

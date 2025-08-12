@@ -164,7 +164,7 @@ Cette étape peut prendre plusieurs heures.
 
 > [!warning]
 >
-> Let's Encrypt, l'autorité qui fournit le certificat SSL, [limite à cinq le nombre de régénérations possibles par semaine](https://letsencrypt.org/docs/rate-limits/){.external}. Par conséquent, soyez vigilant sur les différentes régénérations que vous pourriez entreprendre à court terme afin de ne pas être temporairement bloqué.
+> Let's Encrypt, l'autorité qui fournit le certificat SSL, [limite à cinq le nombre de régénérations possibles par semaine](https://letsencrypt.org/docs/rate-limits/). Par conséquent, soyez vigilant sur les différentes régénérations que vous pourriez entreprendre à court terme afin de ne pas être temporairement bloqué.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

@@ -17,7 +17,7 @@ Configuring the OVHcloud Connect solution can be done via API.
 >
 
 - an [OVHcloud Connect service](/links/network/ovhcloud-connect)
-- access to the [OVHcloud APIv6](/links/api){.external} (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
+- access to the [OVHcloud APIv6](/links/api) (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
 
 ## Instructions
 

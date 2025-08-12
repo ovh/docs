@@ -16,7 +16,7 @@ In this tutorial you are going to:
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to our tutorial on [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm).
+You need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to our tutorial on [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm).
 
 You also need to install [cert-manager](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-cert-manager) on your OVHcloud Managed Kubernetes.
 
@@ -109,7 +109,7 @@ hello-world   ClusterIP   10.3.213.111   <none>        80/TCP    68s
 
 ### Installing the Nginx Ingress Controller Helm chart
 
-For this tutorial, we are using the [Nginx Ingress Controller Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx){.external} found on its own Helm repository.
+For this tutorial, we are using the [Nginx Ingress Controller Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx) found on its own Helm repository.
 
 The chart is fully configurable, but here we are using the default configuration.
 

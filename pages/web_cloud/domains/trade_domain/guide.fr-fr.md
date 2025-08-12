@@ -22,7 +22,7 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d'un nom de domaine enregistré chez OVHcloud et pour lequel aucune opération (changement de titulaire, transfert, création) n'est en cours. Si une opération a été finalisée récemment sur votre nom de domaine, un délai d'au moins 60 jours calendaires est nécessaire avant de réaliser une nouvelle opération.
 - Votre compte client est le [contact administrateur et de facturation](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine concerné.
 - Disposer de l'accord du titulaire actuel du nom de domaine pour effectuer le changement de titulaire.

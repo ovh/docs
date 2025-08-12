@@ -25,7 +25,7 @@ Une fois qu'une mise à niveau d'un composant logiciel Nutanix est nécessaire, 
 
 ### Documentation officielle des mises à jour
 
-Vous pouvez rechercher le document suivant : "The Nutanix upgrades : Life Cycle Manager" ou visitez le site officiel de Nutanix pour les documentations archivées : [Software Documentation: Upgrade Guide](https://portal.nutanix.com/page/documents/details?targetId=Acropolis-Upgrade-Guide-v5_20:Acropolis-Upgrade-Guide-v5_20){.external}.
+Vous pouvez rechercher le document suivant : "The Nutanix upgrades : Life Cycle Manager" ou visitez le site officiel de Nutanix pour les documentations archivées : [Software Documentation: Upgrade Guide](https://portal.nutanix.com/page/documents/details?targetId=Acropolis-Upgrade-Guide-v5_20:Acropolis-Upgrade-Guide-v5_20).
 
 ### Sauvegarde
 
@@ -192,7 +192,7 @@ Cliquez sur `Apply N Updates`{.action}.
 
 [Documentation OVHcloud](/products/hosted-private-cloud-nutanix-on-ovhcloud)
 
-[Documentation officielle de Nutanix](https://www.nutanix.com/){.external}
+[Documentation officielle de Nutanix](https://www.nutanix.com/)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

@@ -128,7 +128,7 @@ Dans le cas d'une OverTheBox Intel :
 Dans le cas d'une OverTheBox IT v1 :
 ![overthebox](images/installationV1-step3-1_OTBv2a.jpg){.thumbnail}
 
-- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} depuis votre ordinateur connecté au modem principal.
+- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh) depuis votre ordinateur connecté au modem principal.
 
 ##### Automatiquement
 
@@ -169,7 +169,7 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 > soit reconnue (câble noir sur l’image ci-dessous).
 >
 
-- Retournez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} depuis votre ordinateur connecté au modem principal.
+- Retournez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh) depuis votre ordinateur connecté au modem principal.
 - Cliquez sur le bouton **"Activate"**.
 
 ![overthebox](images/installationV1-step4-1.png){.thumbnail}
@@ -180,7 +180,7 @@ Votre **OverTheBox** est maintenant prête à la configuration :
 
 - Connectez-vous au modem principal sur une nouvelle page du navigateur via l'adresse IP indiquée (dans notre exemple **http://192.168.0.1** ) et désactivez le DHCP de ce modem.
 
-- Revenez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} et cliquez sur **recheck**.
+- Revenez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh) et cliquez sur **recheck**.
 
 ![overthebox](images/installationV1-step4-3.png){.thumbnail}
 
@@ -191,7 +191,7 @@ Cette opération dure 30 secondes. Le DHCP sera ensuite géré par votre **OverT
 - Rafraichissez ensuite la configuration réseau de votre ordinateur afin que ce dernier soit désormais pris en charge par l'**OverTheBox**. Pour ce faire :
     - En **Ethernet RJ45** : débranchez et rebranchez le câble RJ45.
     - En **Wifi** : coupez le WiFi et réactivez-le.
-- Assurez vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur notre site [http://proof.ovh.net/](http://proof.ovh.net/){.external}. Vous devez obtenir une IP similaire à 109.190.x.y ou 151.127.x.y:
+- Assurez vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur notre site [http://proof.ovh.net/](http://proof.ovh.net/). Vous devez obtenir une IP similaire à 109.190.x.y ou 151.127.x.y:
 
 ![overthebox](images/installationV1-step4-5.png){.thumbnail}
 
@@ -206,7 +206,7 @@ ipconfig /renew
 
 > [!warning]
 >
-> Si malgré cette opération le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer l'intégralité de cette dernière étape point par point.
+> Si malgré cette opération le site [http://proof.ovh.net/](http://proof.ovh.net/) ne retourne toujours pas les bonnes informations, veuillez recommencer l'intégralité de cette dernière étape point par point.
 >
 
 #### Étape 5 : ajout d'une connexion supplémentaire
@@ -234,7 +234,7 @@ Dans le cas d'une OverTheBox Intel :
 Dans le cas d'une OverTheBox IT v1 :
 ![overthebox](images/installationV1-step5-1_OTBv2a.jpg){.thumbnail}
 
-- Retournez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} depuis l'ordinateur toujours **branché sur le modem principal**.
+- Retournez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh) depuis l'ordinateur toujours **branché sur le modem principal**.
 
 Votre **OverTheBox** va détecter le deuxième modem :
 
@@ -242,13 +242,13 @@ Votre **OverTheBox** va détecter le deuxième modem :
 
 - Connectez-vous au deuxième modem sur une nouvelle page du navigateur via l'adresse IP indiquée (dans notre exemple **http://192.168.1.1** ) et désactivez le DHCP de ce modem.    
 
-- Revenez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} et cliquez sur **recheck**.
+- Revenez sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh) et cliquez sur **recheck**.
 
 Cette opération dure 30 secondes.
 
 ![overthebox](images/installationV1-step5-3.png){.thumbnail}
 
-La configuration est terminée. Votre  **OverTheBox**  utilise à présent les deux connexions simultanées, comme indiqué à l'accueil de [http://overthebox.ovh](http://overthebox.ovh){.external} :
+La configuration est terminée. Votre  **OverTheBox**  utilise à présent les deux connexions simultanées, comme indiqué à l'accueil de [http://overthebox.ovh](http://overthebox.ovh) :
 
 ![overthebox](images/installationV1-step5-4.png){.thumbnail}
 

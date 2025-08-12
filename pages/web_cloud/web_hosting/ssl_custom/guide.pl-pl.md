@@ -51,7 +51,7 @@ Zastąp słowa `my_private` i `your_file_name` wybranymi nazwami plików.
 
 Po zrealizowaniu zamówienia terminal poprosi Cię o każdą z następujących informacji (dla Ciebie, Twojej firmy lub stowarzyszenia). Po udzieleniu odpowiedzi na zadane pytanie naciśnij klawisz `ENTER`{.action} na klawiaturze, aby wyświetlić następujące pytanie:
 
-- `Country Name (2 letter code) [AU]` : wpisz wielką literę **Country Code** Twojego kraju. W razie potrzeby sprawdź listę wszystkich **Country Codes** [tutaj](https://www.iban.com/country-codes){.external}.
+- `Country Name (2 letter code) [AU]` : wpisz wielką literę **Country Code** Twojego kraju. W razie potrzeby sprawdź listę wszystkich **Country Codes** [tutaj](https://www.iban.com/country-codes).
 - `State or Province Name (full name) [Some-State]` : wpisz wielką literą nazwę swojego regionu (lub stanu, jeśli np. mieszkasz w USA).
 - `Locality Name (eg, city) []` : wpisz wielką literą nazwę miasta.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]` : wprowadź nazwę swojej organizacji, firmy lub stowarzyszenia. **Jeśli jesteś osobą prywatną, nie odpowiadaj na to pytanie i naciśnij bezpośrednio klawisz `ENTER`{.action} na klawiaturze, aby wyświetlić następne pytanie**.

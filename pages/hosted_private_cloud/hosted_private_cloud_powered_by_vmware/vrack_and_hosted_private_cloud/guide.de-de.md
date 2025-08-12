@@ -10,7 +10,7 @@ updated: 2021-12-31
 
 ## Ziel
 
-Mit unserer Netzwerklösung [vRack](/links/network/vrack){.external} können Sie mehrere OVHcloud Dienste untereinander verbinden und sie über ein oder mehrere VLANs kommunizieren lassen. Einige Konfigurationen sind allerdings nicht mit Hosted Private Cloud kompatibel.
+Mit unserer Netzwerklösung [vRack](/links/network/vrack) können Sie mehrere OVHcloud Dienste untereinander verbinden und sie über ein oder mehrere VLANs kommunizieren lassen. Einige Konfigurationen sind allerdings nicht mit Hosted Private Cloud kompatibel.
 
 **In dieser Anleitung wird erläutert, wie Hosted Private Cloud mit dem vRack kompatibel ist.**
 

@@ -20,7 +20,7 @@ Wenn Sie z.B. ein Image aus Projekt A für Projekt B freigeben möchten (unter d
 
 Daher ist es wichtig, diese Punkte in Betracht zu ziehen, bevor Sie diese Konfigurationen anwenden.
 
-Weitere Informationen finden Sie in der offiziellen [OpenStack Dokumentation](https://docs.openstack.org/image-guide/share-images.html){.external}.
+Weitere Informationen finden Sie in der offiziellen [OpenStack Dokumentation](https://docs.openstack.org/image-guide/share-images.html).
 
 **Diese Anleitung erklärt, wie Sie ein Image für ein anderes Projekt freigeben und dabei die Image-Konfiguration und den Image-Status beibehalten.**
 
@@ -32,7 +32,7 @@ Weitere Informationen finden Sie in der offiziellen [OpenStack Dokumentation](ht
 
 > [!primary]
 >
-> Diese Anleitung bezieht sich auf die Verwendung des [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Diese Anleitung bezieht sich auf die Verwendung des [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/).
 >
 
 ## In der praktischen Anwendung

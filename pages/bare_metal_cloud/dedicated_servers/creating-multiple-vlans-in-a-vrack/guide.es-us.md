@@ -10,18 +10,18 @@ updated: 2023-09-12
 
 ## Objetivo
 
-La [configuración estándar del vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external} solo le permite crear una VLAN. Esto significa que solo es posible utilizar cada IP una única vez. Sin embargo, la versión 2.0 del vRack permite crear hasta 4000 redes locales virtuales en un mismo vRack, de forma que cada IP puede utilizarse hasta 4000 veces.
+La [configuración estándar del vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server) solo le permite crear una VLAN. Esto significa que solo es posible utilizar cada IP una única vez. Sin embargo, la versión 2.0 del vRack permite crear hasta 4000 redes locales virtuales en un mismo vRack, de forma que cada IP puede utilizarse hasta 4000 veces.
 
 **Esta guía explica cómo crear varias VLAN en el vRack.**
 
 ## Requisitos
 
-- Tener uno o más [servidores dedicados](/links/bare-metal/bare-metal){.external} compatibles con el vRack.
-- Haber activado el servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}.
+- Tener uno o más [servidores dedicados](/links/bare-metal/bare-metal) compatibles con el vRack.
+- Haber activado el servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/).
 - Tener acceso al rango de direcciones IP privadas elegido.
 - Estar conectado por SSH con el usuario root (Linux).
 - Estar conectado con la cuenta de administrador (Windows).
-- Haber terminado de [configurar el vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}.
+- Haber terminado de [configurar el vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server).
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -196,6 +196,6 @@ Por último, haga clic en `OK`{.action} para guardar los cambios y reinicie el s
 
 ## Más información
 
-[Configurar varios servidores dedicados en el vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
+[Configurar varios servidores dedicados en el vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

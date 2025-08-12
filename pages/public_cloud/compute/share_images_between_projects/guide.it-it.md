@@ -20,7 +20,7 @@ Ad esempio, se si desidera condividere un'immagine di un progetto A con un proge
 
 È quindi importante tenerlo a mente prima di intraprendere questa configurazione.
 
-Per maggiori informazioni, consulta la [documentazione ufficiale OpenStack](https://docs.openstack.org/image-guide/share-images.html){.external}.
+Per maggiori informazioni, consulta la [documentazione ufficiale OpenStack](https://docs.openstack.org/image-guide/share-images.html).
 
 **Questa guida ti mostra come condividere immagini tra uno o più progetti, preservandone la configurazione e lo stato.**
 
@@ -37,7 +37,7 @@ Avrai anche bisogno di:
 
 > [!primary]
 >
-> Questa guida ti mostra come utilizzare il [OpenStack Cient](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Questa guida ti mostra come utilizzare il [OpenStack Cient](https://docs.openstack.org/python-openstackclient/latest/).
 >
 
 ## Procedura

@@ -12,7 +12,7 @@ Wtyczka OVHcloud Network umożliwia bardziej ukierunkowane zarządzanie adresami
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}.
+- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Blok adresu IP powiązany z Twoją usługą Private Cloud.
 - Dostęp do interfejsu vSphere.

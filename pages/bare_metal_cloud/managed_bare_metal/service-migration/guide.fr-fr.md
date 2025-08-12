@@ -20,8 +20,8 @@ La migration d'un service Managed Bare Metal comprend deux aspects :
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
-* Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
+* Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
+* Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
 
 ## En pratique
 
@@ -111,7 +111,7 @@ Voici une liste des éléments à prendre en compte:
 
 La migration nécessite la reconstruction des pools de ressources, notamment les réservations, les partages et les applications virtuelles. Cela s'applique également aux vApps et à toute configuration de commande de démarrage définie dans les vApps.
 
-Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
+Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html).
 
 Voici une liste d'éléments à prendre en compte:
 
@@ -200,7 +200,7 @@ La vidéo ci-dessous vous détaille comment configurer un Hosted Private Cloud a
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqNtKrJSH8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br>Vous pouvez également consulter [la documentation de Veeam](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external}.
+<br>Vous pouvez également consulter [la documentation de Veeam](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf).
 
 ## Aller plus loin
 

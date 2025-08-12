@@ -36,7 +36,7 @@ You must just choose a suffix for your index. The final name will follow this co
 
 For each index, you can specify the number of **shards**. A **shard** is the main component of an **index**. Its maximum storage capacity is set to **25 GB** (per shard). Multiple shards means more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
 
-When you create an index through the [OpenSearch API](https://opensearch.org/docs/latest/opensearch/index-data/){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to **16**. OpenSearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an example with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster.
+When you create an index through the [OpenSearch API](https://opensearch.org/docs/latest/opensearch/index-data/), you can also specify the number of shards. Note that the maximum number of shards by index is limited to **16**. OpenSearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an example with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster.
 
 ```shell-session
 $ curl -u logs-ab-12345:mypassword -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/logs-ab-12345-i-another-index' -d '{ "settings" : {"number_of_shards" : 1}}'
@@ -48,7 +48,7 @@ Whatever method you use, you will be able to query and visualize your documents 
 
 #### Index some data
 
-Logs Data Platform OpenSearch indices are compatible with the [OpenSearch REST API](https://opensearch.org/docs/latest/opensearch/rest-api/index/){.external}. Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
+Logs Data Platform OpenSearch indices are compatible with the [OpenSearch REST API](https://opensearch.org/docs/latest/opensearch/rest-api/index/). Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
 
 ```shell-session
 $ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
@@ -91,7 +91,7 @@ $ curl -XGET -u token:<your-token-value> 'https://<ldp-cluster>.logs.ovh.com:920
 {"_id":"1","_index":"logs-<username>-i-<suffix>","_primary_term":1,"_seq_no":0,"_source":{"company":"OVH","message":"Hello World !","post_date":"1999-11-02T23:01:00","user":"Oles"},"_type":"_doc","_version":1,"found":true}
 ```
 
-To issue a simple search you can either use the [Query DSL](https://opensearch.org/docs/latest/opensearch/query-dsl/index/){.external} or a URI search. Here is a simple example with an URI search:
+To issue a simple search you can either use the [Query DSL](https://opensearch.org/docs/latest/opensearch/query-dsl/index/) or a URI search. Here is a simple example with an URI search:
 
 ```shell-session
 $ curl -XGET -u token:<your-token-value> 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?q=user:Oles'
@@ -429,7 +429,7 @@ $ curl -u <username>:<mypassword> -XPUT -H 'Content-Type: application/json' 'htt
 - The **PUT** HTTP command can be used to create or modify a document.
 - The **-H 'Content-Type: application/json'** option is the mandatory header to indicate that the data will be in the json format.
 - The address contains the endpoint of the cluster followed by the **name of your index**
-- The payload of the request is a  **JSON document** which contains the [settings of your index](https://opensearch.org/docs/latest/opensearch/rest-api/index-apis/create-index/){.external}: the number of shards (the number of replicas will be automatically set at 1).
+- The payload of the request is a  **JSON document** which contains the [settings of your index](https://opensearch.org/docs/latest/opensearch/rest-api/index-apis/create-index/): the number of shards (the number of replicas will be automatically set at 1).
 
 You have to follow the Logs Data Platform naming convention `<username>-i-<your-suffix>` to create your index. Your username is the one you use to connect to Graylog or to use the API. The suffix can contain any alphanumeric character.
 
@@ -512,11 +512,11 @@ Index as a service has some specificities on our platforms. This additional and 
 - You are not allowed to change the settings of your index.
 - You can create an **alias** on Logs Data Platform and attach it to one or several indices.
 - Unlike indices, aliases are **read-only**, you cannot write through an alias yet.
-- If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
+- If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms).
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

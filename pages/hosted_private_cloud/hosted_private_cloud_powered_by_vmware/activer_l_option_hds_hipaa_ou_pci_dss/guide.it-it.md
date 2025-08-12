@@ -6,7 +6,7 @@ updated: 2020-05-27
 
 ## Obiettivo
 
-Sulle soluzioni Private Cloud OVH è possibile attivare la certificazione PCI DSS. Disporre di un’infrastruttura conforme a questi standard è indispensabile, ad esempio, per ospitare sulle proprie piattaforme [dati relativi alle carte di pagamento](https://www.ovh.it/private-cloud/payment-infrastructure/){.external}.   
+Sulle soluzioni Private Cloud OVH è possibile attivare la certificazione PCI DSS. Disporre di un’infrastruttura conforme a questi standard è indispensabile, ad esempio, per ospitare sulle proprie piattaforme [dati relativi alle carte di pagamento](https://www.ovh.it/private-cloud/payment-infrastructure/).   
 
 **Questa guida ti mostra come attivare l’opzione di sicurezza PCI DSS sul tuo Private Cloud dallo Spazio Cliente OVH.**
 
@@ -29,7 +29,7 @@ Se l’opzione è disattivata, clicca sui tre puntini in corrispondenza della ce
 
 Questa operazione richiede il rispetto di alcune condizioni:
 
-- **le opzioni [NSX](https://www.ovh.it/private-cloud/opzioni/nsx.xml){.external} e [vROps](https://www.ovh.it/private-cloud/opzioni/vrops.xml){.external} devono essere installate**: per verificare questo requisito accedi alla scheda `Informazioni generali`{.action}, riquadro `Opzioni Private Cloud`. Per modificare lo stato delle funzionalità, clicca sui tre puntini in corrispondenza dell’opzione e seleziona `Attiva`{.action}.
+- **le opzioni [NSX](https://www.ovh.it/private-cloud/opzioni/nsx.xml) e [vROps](https://www.ovh.it/private-cloud/opzioni/vrops.xml) devono essere installate**: per verificare questo requisito accedi alla scheda `Informazioni generali`{.action}, riquadro `Opzioni Private Cloud`. Per modificare lo stato delle funzionalità, clicca sui tre puntini in corrispondenza dell’opzione e seleziona `Attiva`{.action}.
 
 - **la politica di accesso al vCenter deve essere impostata su “Limitata”**: per verificare questo requisito accedi alla scheda `Sicurezza`{.action}. Per modificare lo stato dell’opzione, clicca sul pulsante `Modifica la politica di accesso al vCenter`{.action} e segui gli step indicati. In caso di necessità consulta la guida [Introduzione allo Spazio Cliente Private Cloud OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#sicurezza).
 

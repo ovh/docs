@@ -88,7 +88,7 @@ deployment.apps/hello-world-deployment created
 
 > [!primary]
 > The application you have just deployed is a simple Nginx server with a single static *Hello World* page. 
-> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}.
+> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/).
 
 ### Step 2 - List the pods
 

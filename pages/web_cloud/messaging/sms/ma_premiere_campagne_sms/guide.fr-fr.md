@@ -11,7 +11,7 @@ OVHcloud met à votre disposition des outils intégrés à votre espace client a
 ## Prérequis
 
 - Disposer d’un compte SMS OVHcloud avec des crédits SMS.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 

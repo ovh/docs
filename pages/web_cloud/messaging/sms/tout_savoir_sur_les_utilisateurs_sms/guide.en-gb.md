@@ -11,7 +11,7 @@ This guide will explain how to create and manage API users.
 ## Requirements
 
 - an active OVHcloud SMS account
-- You must be logged in to [OVHcloud Control Panel](/links/manager){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

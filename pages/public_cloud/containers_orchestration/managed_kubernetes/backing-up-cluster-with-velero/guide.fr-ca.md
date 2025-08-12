@@ -6,7 +6,7 @@ updated: 2025-03-07
 
 ## Objective
 
-In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
+In this tutorial, we are using [Velero](https://velero.io/) to backup and restore an OVHcloud Managed Kubernetes cluster.
 
 Velero is an Open Source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources.
 
@@ -794,7 +794,7 @@ velero backup delete nginx-backup-with-pv
 ## Where do we go from here
 
 So now you have a working Velero on your cluster.  
-Please refer to [official Velero documentation](https://velero.io/docs/){.external} to learn how to use it, including scheduling backups, using `pre-` and `post-backup` hooks and other matters.
+Please refer to [official Velero documentation](https://velero.io/docs/) to learn how to use it, including scheduling backups, using `pre-` and `post-backup` hooks and other matters.
 
 ## Go further
 

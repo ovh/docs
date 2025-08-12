@@ -307,13 +307,13 @@ Vous trouverez plus d'informations sur Django CMS et ses fonctionnalités dans l
 
 ## Aller plus loin
 
-[Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

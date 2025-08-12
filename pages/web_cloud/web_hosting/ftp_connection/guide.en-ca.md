@@ -12,13 +12,13 @@ OVHcloud web hosting plans provide you with access to an FTP storage space, whic
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](/links/web/hosting){.external}
-- Access to the [OVHcloud Control Panel](/links/manager){.external}
+- An [OVHcloud web hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!primary]
 > Only **Pro** and **Performance** web hosting plans allow SSH connections and multiple FTP users to be activated.
 >
-> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php){.external} or [Cyberduck](https://cyberduck.io/){.external} software.
+> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php) or [Cyberduck](https://cyberduck.io/) software.
 
 ## Instructions
 
@@ -33,12 +33,12 @@ To connect to your FTP storage space, you will need the following:
 
 > [!primary]
 >
-> These elements were sent to you in the email informing you that your web hosting plan has been set up after completing your order. You can access them via your [OVHcloud Control Panel](/links/manager){.external}.
+> These elements were sent to you in the email informing you that your web hosting plan has been set up after completing your order. You can access them via your [OVHcloud Control Panel](/links/manager).
 >
 > **If you already have these items**, proceed directly to step 2 "[Access your storage space](#ftp_storage_access)" in this guide.
 >
 
-If you do not have this information at hand, log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. Click on the `Hosting plans`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, then go to the `FTP - SSH`{.action} tab. 
+If you do not have this information at hand, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. Click on the `Hosting plans`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, then go to the `FTP - SSH`{.action} tab. 
 
 The information associated with your storage space will then appear, along with a table listing the FTP and SSH users created on your web hosting plan.
 
@@ -67,7 +67,7 @@ Below is a description of the essential information displayed on the `FTP-SSH` p
 
 > [!primary]
 >
-> Depending on which OVHcloud [web hosting plan](/links/web/hosting){.external} you have, some of the information listed above (particularly concerning SSH) may not appear.
+> Depending on which OVHcloud [web hosting plan](/links/web/hosting) you have, some of the information listed above (particularly concerning SSH) may not appear.
 >
 
 If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
@@ -104,7 +104,7 @@ If the information is correct, the software you are using will display the conte
 
 #### 2. SSH connection <a name="ssh"></a>
 
-You will need advanced knowledge and an [OVHcloud web hosting plan](/links/web/hosting){.external} **Pro** or **Performance** to use this access type.
+You will need advanced knowledge and an [OVHcloud web hosting plan](/links/web/hosting) **Pro** or **Performance** to use this access type.
 
 To connect via SSH, use a terminal to interact directly with your FTP storage space via command lines.
 

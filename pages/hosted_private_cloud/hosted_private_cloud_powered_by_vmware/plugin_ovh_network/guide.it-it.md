@@ -12,7 +12,7 @@ Il plugin OVHcloud Network è stato sviluppato per consentire una gestione più 
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
+- Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un blocco di indirizzi IP associato al Private Cloud
 - Avere accesso all’interfaccia vSphere
@@ -51,4 +51,4 @@ Inserisci il “reverse” e clicca su `Confirm`{.action}: il nuovo valore appar
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

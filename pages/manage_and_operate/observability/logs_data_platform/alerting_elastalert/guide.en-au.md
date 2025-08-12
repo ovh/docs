@@ -6,13 +6,13 @@ updated: 2024-08-07
 
 ## Objective
 
-[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their motto is: "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compatibility with OpenSearch through [aliases](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards) and [indexes](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform.
+[ElastAlert 2](https://github.com/jertel/elastalert) is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their motto is: "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compatibility with OpenSearch through [aliases](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards) and [indexes](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform.
 
 ## Requirements
 
 Note that in order to complete this tutorial, you should have at least:
 
-- [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29)
 - A machine on which you will deploy ElastAlert.
 - Some data on an alias or an index.
 
@@ -42,7 +42,7 @@ ElastAlert configuration consists of three steps:
 
 ### Installation
 
-Installing ElastAlert can be done in different ways as described in their [documentation](https://elastalert2.readthedocs.io/en/latest/elastalert.html#running-elastalert){.external}. You can either use the docker image or install the python 3 packages. You must check that your Python version is the one compatible with ElastAlert. Check the documentation to verify which version of Python is compatible. Be sure also to meet all the [requirements](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#requirements) before attempting the installation.
+Installing ElastAlert can be done in different ways as described in their [documentation](https://elastalert2.readthedocs.io/en/latest/elastalert.html#running-elastalert). You can either use the docker image or install the python 3 packages. You must check that your Python version is the one compatible with ElastAlert. Check the documentation to verify which version of Python is compatible. Be sure also to meet all the [requirements](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#requirements) before attempting the installation.
 
 You can either install the latest released version of ElastAlert 2 using pip:
 
@@ -131,7 +131,7 @@ alert_time_limit:
   days: 2
 ```
 
-You can find all the available options [here](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#downloading-and-configuring){.external}.
+You can find all the available options [here](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#downloading-and-configuring).
 
 - **rules_folder** is where ElastAlert will load rule configuration files from. It will attempt to load every .yaml file in the folder. Without any valid rules in this folder, ElastAlert will not start.
 - **run_every** is how often ElastAlert will query OpenSearch.
@@ -147,7 +147,7 @@ You can find all the available options [here](https://elastalert2.readthedocs.io
 
 ### Rules configuration
 
-In this example, we will create a [frequency.yml](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#frequency){.external} rule which will send a email if the field **user** with the value **Oles** appears more than **3** times in less than **4 hours** and use the debug logger **debug**.
+In this example, we will create a [frequency.yml](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#frequency) rule which will send a email if the field **user** with the value **Oles** appears more than **3** times in less than **4 hours** and use the debug logger **debug**.
 
 ```yaml
 name: Example frequency rule
@@ -231,11 +231,11 @@ INFO:elastalert:Example frequency rule
 ```
 
 
-ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGenie, SNS, HipChat, Slack, MS Teams, PagerDuty, Zabbix, custom commands and [many more](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#alerts){.external}.
+ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGenie, SNS, HipChat, Slack, MS Teams, PagerDuty, Zabbix, custom commands and [many more](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#alerts).
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

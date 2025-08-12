@@ -109,8 +109,8 @@ Dzięki Load balancerowi, zadbasz o redundancję i zrównoważone obciążenie s
 
 ## Sprawdź również
 
-[Dowiedz się więcej o Haproxy](http://www.haproxy.org/#desc){.external}.
+[Dowiedz się więcej o Haproxy](http://www.haproxy.org/#desc).
 
-[Dowiedz się więcej o Nginx](https://pl.wikipedia.org/wiki/Nginx){.external}.
+[Dowiedz się więcej o Nginx](https://pl.wikipedia.org/wiki/Nginx).
 
 Przyłącz się do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

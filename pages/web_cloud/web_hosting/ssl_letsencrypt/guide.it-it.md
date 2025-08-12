@@ -164,7 +164,7 @@ Questa operazione potrebbe richiedere qualche ora.
 
 > [!warning]
 >
-> Let's Encrypt, l'autorità che fornisce il certificato SSL, [limita a cinque il numero di rigenerazioni possibili alla settimana](https://letsencrypt.org/docs/rate-limits/){.external}. Pertanto, prestare attenzione alle diverse rigenerazioni che si possono eseguire a breve termine in modo da non essere temporaneamente bloccati.
+> Let's Encrypt, l'autorità che fornisce il certificato SSL, [limita a cinque il numero di rigenerazioni possibili alla settimana](https://letsencrypt.org/docs/rate-limits/). Pertanto, prestare attenzione alle diverse rigenerazioni che si possono eseguire a breve termine in modo da non essere temporaneamente bloccati.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

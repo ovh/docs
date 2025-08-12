@@ -4,15 +4,15 @@ excerpt: "Find out how to install Jenkins on OVHcloud Managed Kubernetes"
 updated: 2021-12-20
 ---
 
-In this tutorial we are going to guide you with the install of [Jenkins](https://jenkins.io/){.external} on your OVHcloud Managed Kubernetes Service.
+In this tutorial we are going to guide you with the install of [Jenkins](https://jenkins.io/) on your OVHcloud Managed Kubernetes Service.
 
-We are going to install Jenkins master and slave cluster utilizing the [Jenkins Kubernetes plugin](https://plugins.jenkins.io/kubernetes/){.external}.
+We are going to install Jenkins master and slave cluster utilizing the [Jenkins Kubernetes plugin](https://plugins.jenkins.io/kubernetes/).
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
 ## Pre-requisites
 
@@ -51,7 +51,7 @@ storageclass.storage.k8s.io/csi-cinder-high-speed created
 > The Helm community is currently transitioning to a hub model, with a [Helm Hub](https://hub.helm.sh/), where charts can be searched using `helm search hub <keyword>`
 > As most charts from the Helm _stable_ repository have been transferred to the [Bitnami repository](https://github.com/bitnami/charts/) we are using it in the tutorial.
 
-For this tutorial we are using the [Jenkins Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/jenkins){.external} found on Bitnami Helm repositories.
+For this tutorial we are using the [Jenkins Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/jenkins) found on Bitnami Helm repositories.
 
 The chart is fully configurable, but here we are using the default configuration.
 

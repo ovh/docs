@@ -20,8 +20,8 @@ Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz has
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} z zainstalowanym systemem Windows
-- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) z zainstalowanym systemem Windows
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 

@@ -12,12 +12,12 @@ Nativement, OVHcloud vous propose le renouvellement automatique de votre offre. 
 
 ## Prérequis
 
-- Être connecté aux [API OVHcloud](/links/api){.external}.
+- Être connecté aux [API OVHcloud](/links/api).
 - Avoir créé ses identifiants pour l'API OVHcloud.
 
 ## En pratique
 
-Pour utiliser l'[API de renouvellement](https://api.ovh.com/console/#/service/{serviceId}/renew#GET){.external}, vous aurez besoin du `serviceId`. Cette information est disponible avec l'API `serviceInfos`, par exemple :
+Pour utiliser l'[API de renouvellement](https://api.ovh.com/console/#/service/{serviceId}/renew#GET), vous aurez besoin du `serviceId`. Cette information est disponible avec l'API `serviceInfos`, par exemple :
 
 > [!api]
 >

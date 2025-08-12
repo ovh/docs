@@ -19,9 +19,9 @@ Se il dominio è registrato in OVHcloud e vuoi connetterlo a un hosting GoDaddy.
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
-- Disporre di un [dominio](/links/web/domains){.external} registrato in OVHcloud.
-- Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un [dominio](/links/web/domains) registrato in OVHcloud.
+- Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di un hosting in GoDaddy.
 - Avere accesso alla gestione di questo hosting presso GoDaddy.
 
@@ -44,11 +44,11 @@ Quando utilizzi un hosting GoDaddy con un dominio OVHcloud, devi prima preparare
 > Prima di continuare: <br>
 >
 > - Apri una scheda in parallelo sul tuo browser internet.
-> - Apri [**questa pagina della documentazione GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US){.external}.
+> - Apri [**questa pagina della documentazione GoDaddy**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
 > - Segui le istruzioni fino allo step 10 per recuperare le informazioni specifiche del tuo sito Web e modificare i record DNS di OVHcloud in un secondo momento.<br>
 > Le istruzioni seguenti ti aiuteranno a configurare la tua zona DNS OVHcloud.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS del dominio selezionato.
 

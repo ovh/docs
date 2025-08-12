@@ -287,6 +287,6 @@ Para **reactivar** la instancia, escriba lo siguiente en la línea de comandos:
 
 ## Más información
 
-[Documentación OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
+[Documentación OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -16,14 +16,14 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 >
 > Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-après les liens vers leurs pages officielles respectives :
 >
-> - [WordPress](https://wordpress.com/fr/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
-> - [Pico](https://picocms.org/){.external}
-> - [Grav](https://getgrav.org/){.external}
-> - [Typo3](https://typo3.fr/){.external}
-> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+> - [WordPress](https://wordpress.com/fr/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
+> - [Pico](https://picocms.org/)
+> - [Grav](https://getgrav.org/)
+> - [Typo3](https://typo3.fr/)
+> - [SPIP](https://www.spip.net/en_rubrique25.html)
 >
 
 > [!success]
@@ -37,7 +37,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](/links/web/domains)
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
+- Être connecté à l'[espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -51,7 +51,7 @@ Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif p
 
 Retrouvez plus d'informations sur notre page relative au [module WordPress](/links/web/hosting-wordpress)
 
-- Site officiel de [WordPress](https://wordpress.com/){.external}
+- Site officiel de [WordPress](https://wordpress.com/)
 
 #### Joomla!
 
@@ -61,7 +61,7 @@ La communauté **Joomla!** est très grande et peut fournir de l’assistance et
 
 Retrouvez plus d'informations sur notre page relative au [module Joomla!](/links/web/hosting-joomla)
 
-- Site officiel de [Joomla!](https://www.joomla.org/){.external}
+- Site officiel de [Joomla!](https://www.joomla.org/)
 
 #### Drupal
 
@@ -69,7 +69,7 @@ Retrouvez plus d'informations sur notre page relative au [module Joomla!](/links
 
 Retrouvez plus d'informations sur notre page relative au [module Drupal](/links/web/hosting-drupal)
 
-- Site officiel de [Drupal](https://www.drupal.org/){.external}
+- Site officiel de [Drupal](https://www.drupal.org/)
 
 #### PrestaShop
 
@@ -77,31 +77,31 @@ CMS créé en 2005 et dédié à la réalisation de sites web e-commerce. En deh
 
 Retrouvez plus d'informations sur notre page relative au [module PrestaShop](/links/web/hosting-prestashop)
 
-- Site officiel de [PrestaShop](https://www.prestashop.com/){.external}
+- Site officiel de [PrestaShop](https://www.prestashop.com/)
 
 #### Pico
 
 **Pico** est un CMS léger basé sur PHP, idéal pour créer des sites web ou des blogs. Dépourvu de base de données, il utilise des fichiers Markdown pour gérer le contenu. Il supporte des extensions pour personnaliser votre site web.
 
-- Site officiel de [Pico](https://picocms.org/){.external}
+- Site officiel de [Pico](https://picocms.org/)
 
 #### Grav
 
 **Grav** est un CMS moderne et flexible basé sur PHP. Il est conçu sans base de données et utilise des fichiers Markdown pour le stockage et la gestion du contenu. Grav se distingue par son système de gestion de paquets qui facilite l'installation et la mise à jour des plugins et des thèmes pour votre site web.
 
-- Site officiel de [Grav](https://getgrav.org/){.external}
+- Site officiel de [Grav](https://getgrav.org/)
 
 #### Typo3
 
 **Typo3** est un CMS basé sur PHP, conçu pour le développement de sites web de toutes tailles, des petites aux grandes entreprises. Il s'appuie sur une base de données pour stocker le contenu. Il offre une vaste gamme d'extensions pour étendre ses fonctionnalités afin de personnaliser votre site web.
 
-- Site officiel de [Typo3](https://typo3.fr/){.external}
+- Site officiel de [Typo3](https://typo3.fr/)
 
 #### SPIP
 
 **SPIP** est un CMS conçu principalement pour la publication et la gestion de sites web éditoriaux comme des journaux ou des magazines en ligne. Basé sur PHP et s'appuyant sur une base de données SQL, il facilite la création de sites web enrichis de contenu textuel, graphique et / ou multimédia.
 
-- Site officiel de [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+- Site officiel de [SPIP](https://www.spip.net/en_rubrique25.html)
 
 > [!warning]
 >
@@ -191,17 +191,17 @@ Rendez-vous sur le site de l'éditeur du CMS que vous avez choisi pour y téléc
 
 Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqués dans le présent tutoriel :
 
-- [WordPress](https://wordpress.org/download/#download-install){.external}
-- [Joomla!](https://downloads.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/download){.external}
-- [Prestashop](https://www.prestashop.com/en/download){.external}
-- [Pico](https://picocms.org/download/){.external}
-- [Grav](https://getgrav.org/downloads){.external}
-- [Typo3](https://get.typo3.org/#download){.external}
-- [SPIP](https://www.spip.net/en_download){.external}
-- [Grav](https://getgrav.org/downloads){.external}
-- [Typo3](https://get.typo3.org/#download){.external}
-- [SPIP](https://www.spip.net/en_download){.external}
+- [WordPress](https://wordpress.org/download/#download-install)
+- [Joomla!](https://downloads.joomla.org/)
+- [Drupal](https://www.drupal.org/download)
+- [Prestashop](https://www.prestashop.com/en/download)
+- [Pico](https://picocms.org/download/)
+- [Grav](https://getgrav.org/downloads)
+- [Typo3](https://get.typo3.org/#download)
+- [SPIP](https://www.spip.net/en_download)
+- [Grav](https://getgrav.org/downloads)
+- [Typo3](https://get.typo3.org/#download)
+- [SPIP](https://www.spip.net/en_download)
 
 > [!primary]
 >
@@ -209,17 +209,17 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 >
 > Pour cela, consultez le lien vers la page officielle du CMS que vous souhaitez installer :
 >
-> - [WordPress](https://wordpress.org/about/requirements/){.external}
-> - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
-> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
-> - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
-> - [Pico](https://picocms.org/download/){.external}
-> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
-> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
-> - [SPIP](https://www.spip.net/en_article6659.html){.external}
-> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
-> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
-> - [SPIP](https://www.spip.net/en_article6659.html){.external}
+> - [WordPress](https://wordpress.org/about/requirements/)
+> - [Joomla!](https://downloads.joomla.org/technical-requirements)
+> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements)
+> - [Prestashop](https://www.prestashop.com/en/system-requirements)
+> - [Pico](https://picocms.org/download/)
+> - [Grav](https://learn.getgrav.org/17/basics/requirements)
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html)
+> - [SPIP](https://www.spip.net/en_article6659.html)
+> - [Grav](https://learn.getgrav.org/17/basics/requirements)
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html)
+> - [SPIP](https://www.spip.net/en_article6659.html)
 >
 > Configurez ensuite la version de PHP sur votre hébergement web en vous aidant de notre documentation sur [le changement de version PHP d'un hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >

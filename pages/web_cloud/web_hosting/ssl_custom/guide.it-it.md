@@ -51,7 +51,7 @@ Sostituire `my_private` e `your_file_name` con i nomi di file desiderati.
 
 Una volta avviato l'ordine, il terminale ti chiederà ognuna delle seguenti informazioni (per te, la tua azienda o la tua associazione). Una volta ricevuta la risposta alla domanda, clicca su `INVIO`{.action} sulla tastiera per visualizzare la seguente domanda:
 
-- `Country Name (2 letter code) [AU]`: inserisci in maiuscolo il **Country Code** del tuo paese. Se necessario, visualizza la lista di tutti i **Country Codes** [qui](https://www.iban.com/country-codes){.external}.
+- `Country Name (2 letter code) [AU]`: inserisci in maiuscolo il **Country Code** del tuo paese. Se necessario, visualizza la lista di tutti i **Country Codes** [qui](https://www.iban.com/country-codes).
 - `State or Province Name (full name) [Some-State]`: immettere il nome della propria regione (o Stato, ad esempio, se ci si trova negli Stati Uniti) in maiuscolo.
 - `Locality Name (eg, city) []`: inserire il nome della città in maiuscolo.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: inserisci il nome della tua organizzazione, società o associazione. **Se sei un privato, non rispondere a questa domanda e clicca direttamente su `INVIO`{.action} sulla tastiera per visualizzare la domanda successiva**.

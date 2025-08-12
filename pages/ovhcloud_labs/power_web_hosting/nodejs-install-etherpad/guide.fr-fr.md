@@ -6,14 +6,14 @@ updated: 2023-04-27
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y installer un outil de production de texte collaboratif en ligne. [Etherpad](https://etherpad.org/){.external} est l'outil idéal.
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y installer un outil de production de texte collaboratif en ligne. [Etherpad](https://etherpad.org/) est l'outil idéal.
 
 **Découvrez comment installer Etherpad sur votre hébergement web POWER**
 
 ## Prérequis
 
 - Disposer de l'offre d'hébergement web POWER [Node.js](https://labs.ovh.com/managed-nodejs).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](/pages/ovhcloud_labs/power_web_hosting/getting-started) » avant de poursuivre la lecture de ce guide.
 
@@ -40,7 +40,7 @@ git pull origin refs/tags/1.8.6
 
 > [!alert]
 >
-> Etherpad 1.8.7 n'est pas compatible avec l'hébergement web POWER car [nous ne supportons  actuellement pas l'option "experimental-worker"](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache){.external}.
+> Etherpad 1.8.7 n'est pas compatible avec l'hébergement web POWER car [nous ne supportons  actuellement pas l'option "experimental-worker"](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache).
 
 Installez les dépendances d'Etherpad et configurez le point d'entrée :
 

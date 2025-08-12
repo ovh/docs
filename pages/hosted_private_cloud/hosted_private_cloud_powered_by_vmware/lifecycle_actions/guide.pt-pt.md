@@ -20,10 +20,10 @@ In this guide, we detail the actions to take for the topics in progress:
 
 ## Requirements
 
-- a [Hosted Private Cloud solution powered by VMware](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}
+- a [Hosted Private Cloud solution powered by VMware](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- Access to the [OVHcloud API](/links/api){.external}. If required, please refer to our guide on [Getting started with OVHcloud](/pages/manage_and_operate/api/first-steps) APIs.
-- You need to have [created your login credentials for the OVHcloud API](/pages/manage_and_operate/api/first-steps){.external}.
+- Access to the [OVHcloud API](/links/api). If required, please refer to our guide on [Getting started with OVHcloud](/pages/manage_and_operate/api/first-steps) APIs.
+- You need to have [created your login credentials for the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 ## Instructions
 

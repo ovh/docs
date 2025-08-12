@@ -264,7 +264,7 @@ sudo service fail2ban restart
 
 Fail2ban dispõe de numerosos parâmetros e filtros de personalização, bem como de opções pré-definidas, por exemplo quando deseja adicionar uma camada de proteção a um servidor web Nginx.
 
-Para mais informações e recomendações sobre o Fail2ban, não hesite em consultar [a documentação oficial](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} desta ferramenta.
+Para mais informações e recomendações sobre o Fail2ban, não hesite em consultar [a documentação oficial](https://www.fail2ban.org/wiki/index.php/Main_Page) desta ferramenta.
 
 ### Configuração da Network Firewall OVHcloud 
 

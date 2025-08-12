@@ -94,7 +94,7 @@ $ mkdir ~/server && cd ~/server
 > A "Vanilla" server is an instance without any add-ons or plugins. You will experience the game the way it was created by the developers.
 >
 
-First you will need to copy/paste the download link for the server software. On the official [Minecraft website](https://minecraft.net/download/server){.external}, right-click on the download link and select `Copy Link`{.action} from the context menu.
+First you will need to copy/paste the download link for the server software. On the official [Minecraft website](https://minecraft.net/download/server), right-click on the download link and select `Copy Link`{.action} from the context menu.
 
 ![Server download](images/jar_file_download.png){.thumbnail}
 
@@ -110,7 +110,7 @@ Before launching the server, you need to agree to the End User License Agreement
 ~/server$ echo "eula=true" > eula.txt
 ```
 
-A file named `eula.txt` is now located at the root level of your server, containing the line `eula=true`. This will tell the software that you accept the Minecraft EULA. We invite you to review the terms and conditions on the [Minecraft website](https://www.minecraft.net/){.external}.
+A file named `eula.txt` is now located at the root level of your server, containing the line `eula=true`. This will tell the software that you accept the Minecraft EULA. We invite you to review the terms and conditions on the [Minecraft website](https://www.minecraft.net/).
 
 Your server can now be started.
 
@@ -165,7 +165,7 @@ To shut down your server, enter the command `stop`.
 
 ### Step 3: Connect to the server
 
-Your server instance is now functional. To play the game, download the Minecraft client from the official [Minecraft website](https://www.minecraft.net/){.external}.
+Your server instance is now functional. To play the game, download the Minecraft client from the official [Minecraft website](https://www.minecraft.net/).
 
 Install and launch the client for your operating system and sign in.
 

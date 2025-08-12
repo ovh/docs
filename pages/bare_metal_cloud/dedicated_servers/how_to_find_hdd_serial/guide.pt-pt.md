@@ -12,9 +12,9 @@ Para minimizar os riscos de erro durante a substituição de um disco rígido, p
 
 ## Requisitos
 
-- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external}.
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal).
 - Ter acesso ao servidor através de SSH enquanto administrador (sudo).
-- Ter instalado o utilitário sas2ircu no servidor Windows (disponível através do motor de busca [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
+- Ter instalado o utilitário sas2ircu no servidor Windows (disponível através do motor de busca [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu)).
 
 ## Instruções
 
@@ -68,7 +68,7 @@ O periférico é detetado pelo sistema operativo e indicado como se segue: `/dev
 
 ### Obter o número de série de um disco (RAID de hardware)
 
-Para informações pormenorizadas sobre estes comandos e a forma de testar os discos rígidos, consulte este [manual](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} (versão em inglês).
+Para informações pormenorizadas sobre estes comandos e a forma de testar os discos rígidos, consulte este [manual](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (versão em inglês).
 
 #### Controlador MegaRaid
 
@@ -155,7 +155,7 @@ O ID do periférico RAID será apresentado como se segue: `/dev/sda` = 1º RAID,
 
 O controlador RAID LSI utiliza um módulo chamado `sg-map` que associa os periféricos a `/dev/sgX`, sendo “X” o número que define o periférico.
 
-Pode recorrer a [este manual](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} (versão em inglês) para determinar que disco rígido corresponde a que periférico “sg”.
+Pode recorrer a [este manual](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (versão em inglês) para determinar que disco rígido corresponde a que periférico “sg”.
 
 Quando tiver encontrado este periférico associado ao disco rígido que pretende analisar, utilize o seguinte comando:
 

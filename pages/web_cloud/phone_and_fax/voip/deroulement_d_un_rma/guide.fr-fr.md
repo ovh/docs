@@ -27,7 +27,7 @@ Lorsque vous changez de téléphone, vous restituez votre ancien matériel. Que 
 ## Prérequis
 
 - Disposer d'un téléphone VoIP fourni sous caution par OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 
 ## En pratique
 

@@ -1,5 +1,5 @@
 ---
-title: "Capacités techniques et limites de Public VCF aaS (alias Public VCF as-a-Service)"
+title: "Capacités techniques et limites de Public VCF as-a-Service"
 excerpt: "Découvrez les capacités techniques et les limites de Public VCF aaS (alias Public VCF as-a-Service)"
 updated: 2025-05-13
 ---

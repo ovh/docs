@@ -77,7 +77,7 @@ Vous devez aussi :
 
 Pour les noms de domaine enregistrés chez Hostinger, vous pouvez gérer le statut de verrouillage de votre nom de domaine en ouvrant la section `Domaines`{.action} et en sélectionnant le nom de domaine à transférer.
 
-Suivez les étapes décrites dans la [documentation dédiée de Hostinger](https://support.hostinger.com/fr/articles/4791444-comment-verrouiller-ou-deverrouiller-un-nom-de-domaine-pour-le-transfert){.external}.
+Suivez les étapes décrites dans la [documentation dédiée de Hostinger](https://support.hostinger.com/fr/articles/4791444-comment-verrouiller-ou-deverrouiller-un-nom-de-domaine-pour-le-transfert).
 
 ### Obtenir le code EPP ou Auth
 
@@ -91,7 +91,7 @@ Pour vous familiariser avec le changement de propriétaire d'un nom de domaine, 
 > Nous vous invitons à prendre connaissance auprès d'Hostinger des démarches appropriées pour transférer votre nom de domaine.
 > 
 
-Pour obtenir un code **EPP** ou **Auth** chez Hostinger, suivez les étapes décrites dans la [documentation dédiée de Hostinger](https://support.hostinger.com/fr/articles/1583203-comment-obtenir-un-code-epp-ou-auth-pour-le-transfert-d-un-nom-de-domaine-chez-hostinger){.external}.
+Pour obtenir un code **EPP** ou **Auth** chez Hostinger, suivez les étapes décrites dans la [documentation dédiée de Hostinger](https://support.hostinger.com/fr/articles/1583203-comment-obtenir-un-code-epp-ou-auth-pour-le-transfert-d-un-nom-de-domaine-chez-hostinger).
 
 ### Initier le transfert de domaine chez OVHcloud
 

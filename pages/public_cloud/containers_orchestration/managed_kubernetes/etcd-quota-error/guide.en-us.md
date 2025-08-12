@@ -23,7 +23,7 @@ rpc error: code = Unknown desc = The OVHcloud storage quota has been reached
 ## Requirements
 
 - An OVHcloud Managed Kubernetes cluster
-- The [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed
+- The [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed
 
 ## Instructions
 

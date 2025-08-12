@@ -12,8 +12,8 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir des appels. Pour div
 
 ## Prérequis
 
-- Disposer d'une [ligne OVHcloud avec un forfait compatible](/links/telecom/telephonie-voip){.external} ou d'une ligne Trunk.
-- Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
+- Disposer d'une [ligne OVHcloud avec un forfait compatible](/links/telecom/telephonie-voip) ou d'une ligne Trunk.
+- Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -68,7 +68,7 @@ Définissez dans un premier temps où les appels doivent être redirigés selon 
 
 Pour modifier un créneau, cliquez sur l'icône en forme de roue dentée à côté de celui-ci. Définissez où seront redirigés les appels, puis cliquez sur le bouton `Modifier`{.action}. 
 
-Sachez que les communications vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/telephonie-voip){.external} (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/telephonie-decouvrez-tarifs-telephonie){.external}.
+Sachez que les communications vers un numéro non enregistré chez OVHcloud (externe) seront décomptées de votre forfait ou facturées selon le [forfait auquel vous avez souscrit](/links/telecom/telephonie-voip) (voir la note en bas de page) et [les tarifs en vigueur](/links/telecom/telephonie-decouvrez-tarifs-telephonie).
 
 ![gerer-plages-horaires](images/manage-time-slot-step3.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Pour compléter vos plages horaires, vous avez la possibilité de créer des fer
 
 > [!primary]
 >
-> Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires){.external}. Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s’appliquent.
+> Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires). Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s’appliquent.
 >
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.

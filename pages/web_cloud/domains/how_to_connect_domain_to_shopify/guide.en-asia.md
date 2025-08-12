@@ -34,7 +34,7 @@ Before following the two steps in this guide, we recommend that you get familiar
 
 ### Configure your DNS records on your OVHcloud account
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 The table lists all of the DNS records for the selected domain name.
 
@@ -84,7 +84,7 @@ The DNS zone is now configured to link to a Shopify hosting plan.
 
 ### Connecting your domain name to Shopify
 
-Log in to the Shopify Control Panel and carry out step 2 of the [corresponding Shopify guide](https://help.shopify.com/en/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){.external}.
+Log in to the Shopify Control Panel and carry out step 2 of the [corresponding Shopify guide](https://help.shopify.com/en/manual/domains/add-a-domain/connecting-domains/connect-domain-manual).
 
 > [!primary]
 >

@@ -141,7 +141,7 @@ Uma vez adicionado o primeiro método, também pode **adicionar um ou dois outro
 
 Quando adiciona uma autenticação dupla pela primeira vez, 10 códigos de segurança **de utilização única** são-lhe apresentados na Área de Cliente.
 
-**Guarde-os preciosamente**. Aconselhamos que os guarde num gestor de palavras-passe, tal como [KeePass](https://keepass.info/){.external} ou [Bitwarden](https://bitwarden.com/) (as duas aplicações são gratuitas).
+**Guarde-os preciosamente**. Aconselhamos que os guarde num gestor de palavras-passe, tal como [KeePass](https://keepass.info/) ou [Bitwarden](https://bitwarden.com/) (as duas aplicações são gratuitas).
 
 ![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
@@ -157,7 +157,7 @@ Pode regenerar ou eliminar os códigos de segurança a partir da Área de Client
 
 ### Etapa 3 - Aceder à Área de Cliente OVHcloud com a dupla autenticação <a name="login-2fa"></a>
 
-Aceda à [página de autenticação da Área de Cliente OVHcloud](/links/manager){.external} e introduza o seu identificador (ou o seu endereço de e-mail principal) e a palavra-passe.
+Aceda à [página de autenticação da Área de Cliente OVHcloud](/links/manager) e introduza o seu identificador (ou o seu endereço de e-mail principal) e a palavra-passe.
 
 O ecrã de acesso mostra o último método de autenticação dupla utilizado ou introduzido. Se desejar utilizar outro método, clique no botão `Experimentar outro método`{.action}.
 

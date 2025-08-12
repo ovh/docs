@@ -14,7 +14,7 @@ Sie sind für Backups von auf Webhostings gehosteten Websites alleine verantwort
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/){.external} zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 **Dieses Tutorial erklärt, wie Sie Ihre WordPress Website und deren Datenbank sichern.**
@@ -67,7 +67,7 @@ Klicken Sie auf `Go`{.action}, um die gesamte Datenbank im SQL-Format (Structure
 
 ### Methode 2: Backups über Plugin erstellen
 
-Es gibt viele Plugins für WordPress zur Verwaltung von Backups. Das meistgenutzte ist [UpdraftPlus](https://wordpress.org/plugins/updraftplus/){.external} mit mehreren Millionen aktiven Installationen. Die kostenlose Version reicht aus, um Ihre Website zu sichern. Die Premium Version bietet mehr Optionen wie inkrementelle Backups, Migrationstools, Multisite-Backups, mehr Auswahl an Datenspeicher-Diensten, etc. .
+Es gibt viele Plugins für WordPress zur Verwaltung von Backups. Das meistgenutzte ist [UpdraftPlus](https://wordpress.org/plugins/updraftplus/) mit mehreren Millionen aktiven Installationen. Die kostenlose Version reicht aus, um Ihre Website zu sichern. Die Premium Version bietet mehr Optionen wie inkrementelle Backups, Migrationstools, Multisite-Backups, mehr Auswahl an Datenspeicher-Diensten, etc. .
 
 Laden Sie das Plugin im Format `.zip` herunter. Die heruntergeladene Datei wurde in diesem Beispiel zu **updraftplus.zip** umbenannt.
 
@@ -142,7 +142,7 @@ Wenn Sie diese bewährten Verfahren anwenden, können Sie Ihre Website stets zu 
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-- [Offizielle Website von WordPress](https://wordpress.org){.external}
+- [Offizielle Website von WordPress](https://wordpress.org)
 - [Mehr Informationen zu den Sicherungen Ihres Webhostings](/pages/web_cloud/web_hosting/hosting_technical_specificities#informationen-zu-den-automatischen-backups)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).

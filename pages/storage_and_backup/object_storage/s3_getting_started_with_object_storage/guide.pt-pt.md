@@ -51,7 +51,7 @@ This guide is designed to familiarise you with the management of your containers
 
 /// details | To use the AWS CLI
 
-To find out how to install the AWS CLI in your environment, we recommend you to read [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions){.external}.
+To find out how to install the AWS CLI in your environment, we recommend you to read [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
 
 **Check installation**
 
@@ -61,7 +61,7 @@ user@host:~$ aws --version
 
 > [!primary]
 >
-> If you need more information about AWS CLI installation, read the [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}.
+> If you need more information about AWS CLI installation, read the [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 >
 
 #### Collect Credentials

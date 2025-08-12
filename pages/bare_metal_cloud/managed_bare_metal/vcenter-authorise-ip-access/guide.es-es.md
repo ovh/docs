@@ -11,8 +11,8 @@ Es posible limitar el acceso al vCenter autorizando solo la conexión de determi
 
 ## Requisitos
 
-* Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
-* Disponer de una [infraestructura Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external} en su cuenta de OVHcloud.
+* Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+* Disponer de una [infraestructura Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/) en su cuenta de OVHcloud.
 
 ## Procedimiento
 

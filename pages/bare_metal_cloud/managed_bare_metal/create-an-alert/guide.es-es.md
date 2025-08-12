@@ -12,7 +12,7 @@ Es posible crear una alerta en todos los elementos de su Managed Bare Metal: el 
 
 ## Requisitos
 
-- Haber contratado un [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
+- Haber contratado un [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es-es/managed-bare-metal/).
 - Estar conectado a la [interfaz vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 
 ## Procedimiento

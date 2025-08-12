@@ -36,7 +36,7 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 
 - Votre domaine ne doit pas être en période de **rédemption** ou de suppression.
 - Le domaine ne doit pas être bloqué chez votre registrar. 
-- Les coordonnées du propriétaire doivent être bien à jour sur le [whois](https://www.nominet.uk/whois/){.external} du domaine.
+- Les coordonnées du propriétaire doivent être bien à jour sur le [whois](https://www.nominet.uk/whois/) du domaine.
 - Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire.
 
 > [!primary]
@@ -61,7 +61,7 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 
 #### Étape 1 : Modification du TAG de votre domaine
 
-Pour pouvoir transférer votre domaine chez OVHcloud, vous devez préalablement indiquer le TAG OVHcloud chez votre registrar actuel. Le TAG OVHcloud est « OVH-FR ». La liste des TAGS des différents registrars est disponible sur le site officiel du registre [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
+Pour pouvoir transférer votre domaine chez OVHcloud, vous devez préalablement indiquer le TAG OVHcloud chez votre registrar actuel. Le TAG OVHcloud est « OVH-FR ». La liste des TAGS des différents registrars est disponible sur le site officiel du registre [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
 > [!primary]
 >

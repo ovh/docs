@@ -22,7 +22,7 @@ Le service OVHcloud Load Balancer offre différents types de répartition de cha
 
 La répartition de charge est utilisée dans les fermes de serveurs. C'est ce paramètre qui définit la manière dont les requêtes sont réparties entre les serveurs de la ferme.
 
-Pour connaître les différentes parties élémentaires du service OVHcloud Load Balancer, consultez la [présentation du Load Balancer](/pages/network/load_balancer/use_presentation){.external}.
+Pour connaître les différentes parties élémentaires du service OVHcloud Load Balancer, consultez la [présentation du Load Balancer](/pages/network/load_balancer/use_presentation).
 
 |Algorithme|Fonctionnalités|
 |---|---|

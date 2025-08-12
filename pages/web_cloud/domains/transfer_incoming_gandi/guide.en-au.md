@@ -84,13 +84,13 @@ To transfer a Gandi domain name, you will need to follow a specific procedure.
 > While the lock is active, the transfer is not possible.
 >
 
-To unlock your Gandi domain name, follow the steps described in the [Gandi dedicated documentation](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html){.external}.
+To unlock your Gandi domain name, follow the steps described in the [Gandi dedicated documentation](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html).
 
 ### Step 2 - Get the authorization code
 
 The authorization code secures your domain name against unauthorized transfers made by third parties. This code is required to authorize the transfer of your domain name to a new registrar.
 
-To retrieve the transfer code for your domain name, follow the steps described in the [Gandi dedicated documentation](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html){.external}.
+To retrieve the transfer code for your domain name, follow the steps described in the [Gandi dedicated documentation](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html).
 
 ### Step 3 - Start transferring your domain name to OVHcloud
 

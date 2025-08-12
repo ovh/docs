@@ -20,7 +20,7 @@ Para outros casos, consulte o nosso manual sobre como [utilizar Zerto entre a OV
 
 ## Requisitos
 
-* Dispor de dois serviços [Private Cloud](/links/hosted-private-cloud/vmware-prices){.external} em dois hosts diferentes.
+* Dispor de dois serviços [Private Cloud](/links/hosted-private-cloud/vmware-prices) em dois hosts diferentes.
 * Ter, em cada um deles, um endereço IP público livre.
 
 ### Conceitos da Zerto Virtual Replication

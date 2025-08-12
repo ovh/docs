@@ -335,7 +335,7 @@ sudo netplan apply
 ```
 
 > [!primary]
-> Quando si utilizza il comando `netplan try`, è possibile che il sistema restituisca un messaggio di avviso, ad esempio `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Significa semplicemente che il file non dispone di autorizzazioni restrittive. e la configurazione dell’Additional IP resta invariata. Per maggiori informazioni sui permessi dei file, consulta la [documentazione ufficiale di ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+> Quando si utilizza il comando `netplan try`, è possibile che il sistema restituisca un messaggio di avviso, ad esempio `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Significa semplicemente che il file non dispone di autorizzazioni restrittive. e la configurazione dell’Additional IP resta invariata. Per maggiori informazioni sui permessi dei file, consulta la [documentazione ufficiale di ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >
 
 ### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
@@ -556,7 +556,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 In cui sostituirai "ADDITIONAL_IP" con il vero Additional IP.
 
-In seguito, ti basta effettuare un ping dal tuo Additional IP verso l'esterno. Se funziona, significa probabilmente che è necessario correggere un errore di configurazione. Se, al contrario, l’indirizzo IP continua a non funzionare, apri un ticket presso il team di assistenza tramite il [Help Center di OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external}, precisando le informazioni seguenti:
+In seguito, ti basta effettuare un ping dal tuo Additional IP verso l'esterno. Se funziona, significa probabilmente che è necessario correggere un errore di configurazione. Se, al contrario, l’indirizzo IP continua a non funzionare, apri un ticket presso il team di assistenza tramite il [Help Center di OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help), precisando le informazioni seguenti:
 
 - Nome e versione del sistema operativo utilizzato sul server.
 - Nome e directory del file di configurazione di rete.

@@ -7,7 +7,7 @@ updated: 2021-05-05
 
 This document is the reversibility policy for the **Web Hosting** product for the [domain name](/links/web/domains) activity.
 
-This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Features map
 

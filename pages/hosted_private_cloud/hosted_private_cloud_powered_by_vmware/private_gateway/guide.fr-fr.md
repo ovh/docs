@@ -22,10 +22,10 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 
 ## Prérequis
 
-* Posséder une offre [Hosted Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+* Posséder une offre [Hosted Private Cloud](https://www.ovh.com/fr/private-cloud/).
 * Accéder à l’interface de gestion vSphere.
-* Être connecté aux [API OVHCloud](/links/api){.external}.
-* Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps){.external}.
+* Être connecté aux [API OVHCloud](/links/api).
+* Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps).
 
 ## En pratique
 

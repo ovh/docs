@@ -36,7 +36,7 @@ In our guide, we will replace this gateway with the network operating system **p
 
 ### Downloading sources for pfSense installation
 
-Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
+Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/).
 
 Using [this documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import), add the **pfSense ISO** image to your Nutanix cluster.
 

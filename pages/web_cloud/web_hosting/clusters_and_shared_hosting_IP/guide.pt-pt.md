@@ -22,8 +22,8 @@ Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assi
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 

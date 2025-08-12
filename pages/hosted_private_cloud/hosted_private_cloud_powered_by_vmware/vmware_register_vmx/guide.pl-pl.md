@@ -55,9 +55,9 @@ W przypadku kilkudziesięciu wirtualnych maszyn i/lub datastore możesz użyć s
 
 #### Avec PowerCLI
 
-VMware dostarcza PowerCLI administratorom VMware korzystającym z PowerShell: [Installez PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
+VMware dostarcza PowerCLI administratorom VMware korzystającym z PowerShell: [Installez PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
 
-Następnie możesz użyć poniższego skryptu, dostosowanego do skryptu napisanego przez [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
+Następnie możesz użyć poniższego skryptu, dostosowanego do skryptu napisanego przez [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/).
 
 ```powershell
 function register-vmxX {

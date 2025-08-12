@@ -6,9 +6,9 @@ updated: 2025-06-04
 
 ## Objective
 
-As well as private IP addressing, the [vRack](/links/network/vrack){.external} also allows you to route public IP traffic through your server's [vRack](/links/network/vrack){.external} port using a public IP address block.
+As well as private IP addressing, the [vRack](/links/network/vrack) also allows you to route public IP traffic through your server's [vRack](/links/network/vrack) port using a public IP address block.
 
-**This guide will show you how to configure a block of public IP addresses for use with the [vRack](/links/network/vrack){.external}.**
+**This guide will show you how to configure a block of public IP addresses for use with the [vRack](/links/network/vrack).**
 
 > [!primary]
 >
@@ -33,9 +33,9 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 
 - A public block of IP addresses in your account, with a minimum of four addresses
 - Your chosen private IP address range
-- A [vRack compatible server](/links/bare-metal/bare-metal){.external}
-- A [vRack](/links/network/vrack){.external} service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager){.external}
+- A [vRack compatible server](/links/bare-metal/bare-metal)
+- A [vRack](/links/network/vrack) service activated in your account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -46,7 +46,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 
 > [!primary]
 >
-> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](/links/network/vrack){.external}.
+> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](/links/network/vrack).
 > 
 > Also for example purposes, the network configuration file we refer to is located in `/etc/network/interfaces`. The equivalent file on your server may be located somewhere else, depending on your operating system. The file content may also be different. If you encounter any difficulties, please refer to the official documentation for your distribution.
 
@@ -67,7 +67,7 @@ Select your vRack from the list to display the list of eligible services. Click 
 
 ### Configure a usable IP address
 
-For [vRack](/links/network/vrack){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
+For [vRack](/links/network/vrack) purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
 
 ```sh
 46.105.135.96   Reserved: Network address
@@ -116,7 +116,7 @@ Establish an SSH connection to your server and run the following command from th
 # apt-get install iproute2
 ```
 
-Next, we need to create a new IP route for the [vRack](/links/network/vrack){.external}. We'll be adding a new traffic rule by amending the file, as shown below:
+Next, we need to create a new IP route for the [vRack](/links/network/vrack). We'll be adding a new traffic rule by amending the file, as shown below:
 
 ```sh
 /etc/iproute2/rt_tables
@@ -142,7 +142,7 @@ Next, we need to create a new IP route for the [vRack](/links/network/vrack){.ex
 For example purposes, the network configuration file we refer to is located in /etc/network/interfaces. The equivalent file on your server may be located somewhere else, depending on your operating system.
 >
 
-Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](/links/network/vrack){.external} traffic through the network gateway address of **46.105.135.110**.
+Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](/links/network/vrack) traffic through the network gateway address of **46.105.135.110**.
 
 ```sh
 /etc/network/interfaces
@@ -196,7 +196,7 @@ ARP=yes
 
 ### Create a new IP routing table
 
-Next, we need to create a new IP route for the [vRack](/links/network/vrack){.external}. We'll be adding a new traffic rule by amending the file, as shown below:
+Next, we need to create a new IP route for the [vRack](/links/network/vrack). We'll be adding a new traffic rule by amending the file, as shown below:
 
 ```sh
 /etc/iproute2/rt_tables
@@ -229,7 +229,7 @@ to 46.105.135.96/28 table vrack
 
 ### Amend the network configuration file
 
-Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](/links/network/vrack){.external} traffic through the network gateway address of **46.105.135.110**.
+Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](/links/network/vrack) traffic through the network gateway address of **46.105.135.110**.
 
 We can achieve it by editing the following file in order to add persistent and static routes:
 
@@ -298,10 +298,10 @@ Please, include the results from above into your ticket.
 
 ## Go further
 
-[Configuring the vRack on your dedicated servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
+[Configuring the vRack on your dedicated servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
-[Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack){.external}
+[Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
-[Configuring the vRack between the Public Cloud and a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
+[Configuring the vRack between the Public Cloud and a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
 
 Join our [community of users](/links/community).

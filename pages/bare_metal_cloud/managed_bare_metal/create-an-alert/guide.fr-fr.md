@@ -12,7 +12,7 @@ Il est possible de créer une alerte sur tous les éléments de votre Managed Ba
 
 ## Prérequis
 
-- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
+- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
 - Être connecté à votre [interface vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 
 ## En pratique

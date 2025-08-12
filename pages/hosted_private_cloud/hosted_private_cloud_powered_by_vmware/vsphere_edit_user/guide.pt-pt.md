@@ -12,7 +12,7 @@ updated: 2020-07-07
 
 ## Requisitos
 
-- Dispor de uma oferta [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
+- Dispor de uma oferta [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
@@ -37,4 +37,4 @@ Clique no botão Validar para confirmar as suas modificações.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/).

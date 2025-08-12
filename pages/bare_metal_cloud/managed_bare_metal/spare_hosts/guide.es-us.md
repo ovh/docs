@@ -12,7 +12,7 @@ OVHcloud garantiza en sus contratos la sustitución de los hosts que no están a
 
 ## Requisitos
 
-- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
+- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/).
 
 ## Procedimiento
 

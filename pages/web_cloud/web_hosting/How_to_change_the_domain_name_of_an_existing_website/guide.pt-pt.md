@@ -100,9 +100,9 @@ A maioria dos CMS permite diretamente, a partir do seu espaço de administraçã
 Uma vez que os CMS são desenvolvidos por organismos terceiros não geridos pela OVHcloud, encontrará de seguida os links para a documentação oficial dos diferentes CMS propostos em instalação nos nossos alojamentos partilhados:
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
-- Joomla! : O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [docs.joomla.org](https://docs.joomla.org/){.external} ou [forum.joomla.org](https://forum.joomla.org/){.external}.
-- Drupal: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [drupal.org](https://drupal.org){.external} ou [drupal.fr](https://drupal.fr){.external}.
-- PrestaShop: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://help-center.prestashop.com){.external} para aceder à sua página oficial.
+- Joomla! : O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [docs.joomla.org](https://docs.joomla.org/) ou [forum.joomla.org](https://forum.joomla.org/).
+- Drupal: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [drupal.org](https://drupal.org) ou [drupal.fr](https://drupal.fr).
+- PrestaShop: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://help-center.prestashop.com) para aceder à sua página oficial.
 
 Note que, para estes CMS, também é possível efetuar as alterações diretamente [na base de dados](/pages/web_cloud/web_hosting/sql_create_database). Deverá alterar o URL de acesso ao seu site na tabela prevista para esse efeito.
 

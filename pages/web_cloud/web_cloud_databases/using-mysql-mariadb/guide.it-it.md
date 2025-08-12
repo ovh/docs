@@ -24,7 +24,7 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](/links/web/databases){.external} (inclusa in un'offerta di[hosting web performance](/links/web/hosting)
+- Disporre di una [istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di[hosting web performance](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Consulta la guida [all'avvio di Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
@@ -64,7 +64,7 @@ mysql --host=server --user=utente --port=porta --password=password nome_database
 
 ```php
 1. <?php
-2. $db = new PDO('mysql:host=host;port=porta;dbname= nome_database', 'utente', 'password');
+2. $db = new PDO('mysql:host=host;port=port;dbname=dbname', 'username', 'password');
 3. ?>
 ```
 
@@ -77,7 +77,7 @@ mysql --host=server --user=utente --port=porta --password=password nome_database
 - Completa i campi qui sotto e clicca su `OK`{.action} per confermare:
     - **Name**: scegli un nome
     - **Driver**: scegli `MySQL Driver`
-    - **URL**: inserisci l’indirizzo del server e la porta in formato `jdbc:mysql://server:porta`
+    - **URL**: inserisci l’indirizzo del server e la porta in formato `jdbc:mysql://server:port`
     - **User Name**: inserisci il nome utente
     - **Password**: inserisci la password
 

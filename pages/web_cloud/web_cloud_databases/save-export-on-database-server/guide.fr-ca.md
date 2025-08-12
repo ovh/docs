@@ -12,21 +12,21 @@ Votre base de données peut contenir un grand nombre d'informations essentielles
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](/links/web/databases){.external} (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'une [instance Web Cloud Databases](/links/web/databases) (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [Web Cloud Databases](/links/web/databases){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
+> Il est à noter que les offres [Web Cloud Databases](/links/web/databases) ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
 > <br> - Il n'y a pas d'accès super utilisateur « root ». 
 > <br> - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL  ou Adminer sont pleinement compatibles.
 > 
 
 ### Sauvegarder et exporter une base de données depuis l'espace client
 
-Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données. Dirigez-vous dans l'onglet `Bases de données`.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager). Cliquez sur  l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données. Dirigez-vous dans l'onglet `Bases de données`.
 
 Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre de sauvegardes disponibles pour votre base de données.
 
@@ -55,11 +55,11 @@ La liste des sauvegardes disponibles apparaît,  cliquez sur le bouton `...`{.ac
 
 #### 1\. Export de base de données MySQL ou MariaDB
 
- Dans certains cas, il se peut que la RAM disponible sur votre serveur de bases de données ne permette pas de réaliser l'export souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. En effet, celui-ci permettra l'utilisation de ressources externes à votre offre pour réaliser cette opération. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client){.external} de cette documentation.
+ Dans certains cas, il se peut que la RAM disponible sur votre serveur de bases de données ne permette pas de réaliser l'export souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. En effet, celui-ci permettra l'utilisation de ressources externes à votre offre pour réaliser cette opération. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client) de cette documentation.
 
 ##### 1\.1 Exporter ma base MySQL ou MariaDB depuis phpMyAdmin OVHcloud 
 
-Pour exporter votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable. Vous pouvez pour cela vous aider du guide [« Se connecter a une base de données  »](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server){.external}
+Pour exporter votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable. Vous pouvez pour cela vous aider du guide [« Se connecter a une base de données  »](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)
 
 Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que vous souhaitez exporter et ensuite sur l'onglet `Exporter`{.action} en haut.
 
@@ -84,13 +84,13 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
 
 > [!warning]
 >
-> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 
 #### 2\. Export et import de bases de données PostgreSQL hors espace client
 
- Dans certains cas, il se peut que la RAM disponible sur votre serveur de bases de données ne permette pas de réaliser l'export souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. En effet, celui-ci permettra l'utilisation de ressources externes à votre offre pour réaliser cette opération. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client){.external} de cette documentation.
+ Dans certains cas, il se peut que la RAM disponible sur votre serveur de bases de données ne permette pas de réaliser l'export souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. En effet, celui-ci permettra l'utilisation de ressources externes à votre offre pour réaliser cette opération. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client) de cette documentation.
  
 ##### 2\.1 Exporter ma base PostgreSQL en ligne de commande
 
@@ -109,13 +109,13 @@ pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de
 
 > [!warning]
 >
-> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 
 ## Aller plus loin
 
-[Sauvegarder et exporter une base de données depuis l'espace client](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client){.external}
+[Sauvegarder et exporter une base de données depuis l'espace client](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

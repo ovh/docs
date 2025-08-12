@@ -7,7 +7,7 @@ flag: hidden
 
 ## Obiettivo
 
-Durante l’installazione o la reinstallazione di una distribuzione Windows, viene fornita una password per accedere come amministratore. Ti consigliamo vivamente di modificarlo, come spiegato nella nostra guida Mettere in [sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server){.external}. Se hai perso la password admin, è necessario reimpostarla in modalità Rescue.
+Durante l’installazione o la reinstallazione di una distribuzione Windows, viene fornita una password per accedere come amministratore. Ti consigliamo vivamente di modificarlo, come spiegato nella nostra guida Mettere in [sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server). Se hai perso la password admin, è necessario reimpostarla in modalità Rescue.
 
 **Questa guida ti mostra come modificare la password admin del tuo server utilizzando le configurazioni della modalità Rescue disponibili con un sistema operativo Windows.**
 
@@ -20,8 +20,8 @@ Durante l’installazione o la reinstallazione di una distribuzione Windows, vie
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external} Windows
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) Windows
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

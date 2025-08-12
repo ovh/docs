@@ -43,7 +43,7 @@ Then configure the settings recommended by OVHcloud:
 - **Port binding**: Static (reserving and assigning the port to a virtual machine)
 - **Port allocation**: Elastic (Allows the number of ports to be hot-wired)
 - **Number of ports**: 24
-- **VLAN type**: VLAN (The others are [PVLAN](https://kb.vmware.com/s/article/1010691){.external} and Trunk)
+- **VLAN type**: VLAN (The others are [PVLAN](https://kb.vmware.com/s/article/1010691) and Trunk)
 - **VLAN ID**: 21 (Knowing that the ID can be configured from 1 to 4096)
 - Check the option *Customize default policies configuration*.
 
@@ -62,7 +62,7 @@ You have 3 security settings that can be activated according to your need:
 
 ![security settings](images/11network4.png){.thumbnail}
 
-We leave [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} disabled.
+We leave [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html) disabled.
 
 ![traffic shaping](images/12network5.png){.thumbnail}
 

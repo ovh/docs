@@ -12,12 +12,12 @@ OVHcloud bietet Ihnen standardmäßig die Möglichkeit, Ihre Dienste automatisch
 
 ## Voraussetzungen
 
-- Sie sind in der [OVHcloud API](/links/api){.external} eingeloggt.
+- Sie sind in der [OVHcloud API](/links/api) eingeloggt.
 - Sie haben Ihre [Zugangsdaten für die OVHcloud API eingerichtet - EN](/pages/manage_and_operate/api/first-steps).
 
 ## In der praktischen Anwendung
 
-Um die [Verlängerungs-API](https://api.ovh.com/console/#/service/{serviceId}/renew#GET){.external} zu verwenden, benötigen Sie die `serviceId`. Diese Information finden Sie in der API `serviceInfos`, zum Beispiel:
+Um die [Verlängerungs-API](https://api.ovh.com/console/#/service/{serviceId}/renew#GET) zu verwenden, benötigen Sie die `serviceId`. Diese Information finden Sie in der API `serviceInfos`, zum Beispiel:
 
 > [!api]
 >

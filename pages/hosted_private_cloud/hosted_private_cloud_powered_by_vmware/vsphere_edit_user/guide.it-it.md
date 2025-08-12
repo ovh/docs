@@ -12,7 +12,7 @@ All’utente vSphere di un servizio Private Cloud è possibile associare cognome
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
+- Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
@@ -37,4 +37,4 @@ Clicca su `Conferma`{.action} per applicare le modifiche.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/).

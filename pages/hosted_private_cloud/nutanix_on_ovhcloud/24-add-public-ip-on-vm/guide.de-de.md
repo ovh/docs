@@ -27,13 +27,13 @@ If you want to create a web front-end or a reverse proxy to create a stack of VM
 
 ### Adding a new Additional IP to your vRack
 
-Log in to the [OVHcloud Control Panel](/links/manager) and add an Additional IP address to your [vRack](/links/network/vrack){.external}.
+Log in to the [OVHcloud Control Panel](/links/manager) and add an Additional IP address to your [vRack](/links/network/vrack).
 
 > [!primary]
 > The following instructions will use the IP block 123.45.6.78/30 for example purposes.
 >
 
-For [vRack](/links/network/vrack){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
+For [vRack](/links/network/vrack) purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
 
 ```console
 123.45.6.76   Reserved: Network address
@@ -401,11 +401,11 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 
 ## Go further
 
-[Cloud Init Documentation](https://cloudinit.readthedocs.io/en/latest/topics/examples.html){.external}
+[Cloud Init Documentation](https://cloudinit.readthedocs.io/en/latest/topics/examples.html)
 
-[Nutanix: API v3 reference](https://www.nutanix.dev/api-reference-v3/){.external}
+[Nutanix: API v3 reference](https://www.nutanix.dev/api-reference-v3/)
 
-[Nutanix API: How to create a Linux VM](https://www.nutanix.dev/2020/06/16/nutanix-api-v3-creating-a-linux-vm-with-cloud-init/){.external}
+[Nutanix API: How to create a Linux VM](https://www.nutanix.dev/2020/06/16/nutanix-api-v3-creating-a-linux-vm-with-cloud-init/)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

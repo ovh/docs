@@ -22,7 +22,7 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener un nombre de dominio registrado en OVHcloud y para el que no se está realizando ninguna operación (cambio de titular, transferencia, creación). Si una operación ha finalizado recientemente en su dominio, es necesario un plazo mínimo de 60 días naturales antes de realizar una nueva operación.
 - Su cuenta de cliente es el [contacto administrador y facturación](/pages/account_and_service_management/account_information/managing_contacts) del nombre de dominio en cuestión.
 - Contar con el consentimiento del titular actual del nombre de dominio para realizar el cambio de titular.

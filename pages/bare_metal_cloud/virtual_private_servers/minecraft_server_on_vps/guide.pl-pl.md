@@ -95,7 +95,7 @@ $ mkdir ~/server && cd ~/server
 >
 
 Najpierw skopiuj/wklej link do pobrania dla oprogramowania serwera.
-<br>Na oficjalnej [stronie Minecraft](https://minecraft.net/download/server){.external}, kliknij prawym przyciskiem myszy link do pobrania i wybierz `Skopiuj adres z linku`{.action}.
+<br>Na oficjalnej [stronie Minecraft](https://minecraft.net/download/server), kliknij prawym przyciskiem myszy link do pobrania i wybierz `Skopiuj adres z linku`{.action}.
 
 ![Pobieranie serwera](images/jar_file_download.png){.thumbnail}
 
@@ -113,7 +113,7 @@ Zanim uruchomisz serwer, musisz zaakceptować licencję oprogramowania (EULA lub
 ```
 
 Plik o nazwie `eula.txt` jest utworzony w katalogu głównym Twojego serwera, który zawiera linię `eula=true`. Oznacza to, że użytkownik akceptuje warunki korzystania z Minecraft.
-<br>Zapraszamy do zapoznania się z ogólnymi warunkami na oficjalnej [stronie internetowej Minecraft](https://www.minecraft.net/){.external}.
+<br>Zapraszamy do zapoznania się z ogólnymi warunkami na oficjalnej [stronie internetowej Minecraft](https://www.minecraft.net/).
 
 Twój serwer jest gotowy do uruchomienia.
 
@@ -168,7 +168,7 @@ Aby wyłączyć serwer, wprowadź komendę `stop`.
 
 ### Etap 3: połączyć się z serwerem
 
-Twoja instancja serwerowa działa teraz. Aby grać w grę, pobierz klienta Minecraft z oficjalnej [strony internetowej](https://www.minecraft.net/){.external}.
+Twoja instancja serwerowa działa teraz. Aby grać w grę, pobierz klienta Minecraft z oficjalnej [strony internetowej](https://www.minecraft.net/).
 
 Zainstaluj i uruchom klienta dla systemu operacyjnego i zaloguj się.
 

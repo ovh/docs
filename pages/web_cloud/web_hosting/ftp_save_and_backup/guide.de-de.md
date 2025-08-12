@@ -19,8 +19,8 @@ updated: 2025-05-23
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.com/de/hosting/){.external} Angebot (mit Ausnahme von [Cloud Web](/links/web/hosting-cloud-web-offer)).
-- Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhostings über das [OVHcloud Kundencenter](/links/manager){.external} oder das Passwort des FTP-Benutzers, um sich mit Ihrem Speicherplatz zu verbinden. 
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.com/de/hosting/) Angebot (mit Ausnahme von [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhostings über das [OVHcloud Kundencenter](/links/manager) oder das Passwort des FTP-Benutzers, um sich mit Ihrem Speicherplatz zu verbinden. 
 
 ## In der praktischen Anwendung
 
@@ -83,7 +83,7 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 > - Die gehosteten Webseiten zeigen eine "403 Forbidden"-Meldung an.
 >
 
-Loggen Sie sich in Ihr [OVHcloudcloud Kundencenter](/links/manager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann zum Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
+Loggen Sie sich in Ihr [OVHcloudcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann zum Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
 
 ![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 

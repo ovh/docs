@@ -173,7 +173,7 @@ Para serviços que não sejam indicados, consulte a documentação do serviço. 
 
 #### Casos 1: Ver um website presente no meu alojamento web da OVHcloud com um subdomínio <a name="link-subdomain-case-1"></a>
 
-Tal como para um domínio e para autorizar um subdomínio a apresentar o conteúdo de uma pasta *de destino* presente num alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, selecione o serviço em causa onde se encontra o seu website e escolha o separador `Multisite`{.action}.
+Tal como para um domínio e para autorizar um subdomínio a apresentar o conteúdo de uma pasta *de destino* presente num alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, selecione o serviço em causa onde se encontra o seu website e escolha o separador `Multisite`{.action}.
 
 É aqui que autoriza o acesso do seu subdomínio ao seu alojamento web onde se encontra o seu website.
 
@@ -186,7 +186,7 @@ Para mais informações sobre a configuração de um domínio ou subdomínio num
 
 #### Casos 2 - Criar endereços de e-mail Exchange com um subdomínio <a name="link-subdomain-case-2"></a>
 
-Para desbloquear a criação de endereços de e-mail Exchange personalizados com um subdomínio, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione `Web Cloud`{.action}. Clique em `Microsoft`{.action} na coluna da esquerda e, a seguir, em `Exchange`{.action}. De seguida, selecione a plataforma Exchange que deseja utilizar com o seu subdomínio. Na página que se abrir, aceda ao separador `Domínios associados`{.action} e clique no botão `Adicionar domínio`{.action} à direita.
+Para desbloquear a criação de endereços de e-mail Exchange personalizados com um subdomínio, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Microsoft`{.action} na coluna da esquerda e, a seguir, em `Exchange`{.action}. De seguida, selecione a plataforma Exchange que deseja utilizar com o seu subdomínio. Na página que se abrir, aceda ao separador `Domínios associados`{.action} e clique no botão `Adicionar domínio`{.action} à direita.
 
 Assim, poderá declarar o seu subdomínio na sua plataforma Exchange.
 
@@ -198,7 +198,7 @@ Para obter mais detalhes sobre a configuração de uma plataforma Exchange, cons
 
 #### Casos 3 - Criar endereços E-mail Pro com um subdomínio <a name="link-subdomain-case-3"></a>
 
-Para desbloquear a criação de endereços E-mail Pro personalizados com um subdomínio, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione `Web Cloud`{.action}. Clique em `E-mails Pro`{.action} e selecione a plataforma E-mail Pro que pretende utilizar com o seu subdomínio. Na página que se abrir, aceda ao separador `Domínios associados`{.action} e clique no botão `Adicionar domínio`{.action} à direita.
+Para desbloquear a criação de endereços E-mail Pro personalizados com um subdomínio, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `E-mails Pro`{.action} e selecione a plataforma E-mail Pro que pretende utilizar com o seu subdomínio. Na página que se abrir, aceda ao separador `Domínios associados`{.action} e clique no botão `Adicionar domínio`{.action} à direita.
 
 Assim, poderá declarar o seu subdomínio na sua plataforma E-mail Pro.
 

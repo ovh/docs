@@ -38,7 +38,7 @@ Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_clo
 
 ### Valkey clients
 
-You can use any of the [clients recommended by Redis®](https://redis.io/clients){.external} to access your instance.
+You can use any of the [clients recommended by Redis®](https://redis.io/clients) to access your instance.
 
 ### Plans
 

@@ -52,7 +52,7 @@ A continuación, podrá realizar diversas operaciones en función de sus necesid
 
 En las máquinas virtuales con la funcionalidad **Fault Tolerance** activada, no es posible realizar algunas acciones ni utilizar ciertos periféricos.
 
-Para conocer la lista de acciones que no es posible realizar, consulte esta [página](https://docs.vmware.com/es/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html){.external}. Para consultar la lista de incompatibilidades, haga clic [aquí](https://docs.vmware.com/es/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html){.external}.
+Para conocer la lista de acciones que no es posible realizar, consulte esta [página](https://docs.vmware.com/es/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html). Para consultar la lista de incompatibilidades, haga clic [aquí](https://docs.vmware.com/es/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html).
 
 ## Más información
 

@@ -12,7 +12,7 @@ Il est possible d'associer un nom, prénom, numéro de téléphone et adresse e-
 
 ## Prérequis
 
-- Disposer d'une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Disposer d'une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 - Être connecté à [l'espace client OVHcloud](/links/manager).
 
 ## En pratique

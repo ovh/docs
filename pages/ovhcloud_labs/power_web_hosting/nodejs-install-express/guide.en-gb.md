@@ -6,7 +6,7 @@ updated: 2021-02-04
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to begin developing your project using [Express](https://expressjs.com/){.external}.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to begin developing your project using [Express](https://expressjs.com/).
 
 This guide will explain how to deploy a simple *Hello World* server on Express.
 

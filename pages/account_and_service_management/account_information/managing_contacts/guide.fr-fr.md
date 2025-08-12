@@ -31,7 +31,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
 - Disposer de droits suffisants sur le service concerné.
 - Posséder l'identifiant client du nouveau contact (pour qui vous réalisez la modification).

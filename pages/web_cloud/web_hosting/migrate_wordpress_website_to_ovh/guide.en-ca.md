@@ -12,7 +12,7 @@ This tutorial will show you step by step how to migrate your WordPress website a
 >
 > OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
 >
-> We offer this tutorial to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or [the WordPress CMS editor](https://wordpress.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+> We offer this tutorial to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or [the WordPress CMS editor](https://wordpress.com/support/) if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 **Find out how to migrate your WordPress website and associated services to OVHcloud.**

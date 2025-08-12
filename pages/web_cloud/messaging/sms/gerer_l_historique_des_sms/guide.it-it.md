@@ -15,7 +15,7 @@ Dallo Spazio Cliente è possibile consultare e scaricare la cronologia degli SMS
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con almeno 1 SMS inviato
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

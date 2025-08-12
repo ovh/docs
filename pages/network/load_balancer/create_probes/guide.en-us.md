@@ -83,7 +83,7 @@ All other probe fields can keep their default values. Just apply the configurati
 
 By default, the HTTP `probe` sends an "OPTIONS" request on "/" in HTTP/1.0, without a domain name. In many cases, this is sufficient, but some servers do not manage this method. You can carry out much more powerful tests with the HTTP probe. For example, a good practice when exposing a HTTP service is to add a router dedicated to probes. It is normal to see "/status", "/health", and "/check", which summarise the service’s status.
 
-In practice, if you want to configure the probe to send a "GET" request on [http://api.example.com/status](http://api.example.com/status){.external}, it gives:
+In practice, if you want to configure the probe to send a "GET" request on [http://api.example.com/status](http://api.example.com/status), it gives:
 
 |Field|Value and description|
 |---|---|
@@ -91,7 +91,7 @@ In practice, if you want to configure the probe to send a "GET" request on [http
 |farmId|Your TCP or HTTP farm|
 |probe.type|http|
 |probe.method|GET|
-|probe.url|[http://api.example.com/status](http://api.example.com/status){.external}|
+|probe.url|[http://api.example.com/status](http://api.example.com/status)|
 |probe.match|status|
 |probe.pattern|200 (multiple status codes can be added, provided they are separated by commas)|
 

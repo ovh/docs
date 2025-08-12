@@ -49,10 +49,10 @@ Gehen Sie in die Einstellungen Ihres Internetbrowsers und überprüfen Sie, ob e
 
 Nachfolgend finden Sie die Verfahren zur Aktualisierung der gängigsten Internetbrowser (von den Herausgebern bereitgestellte Dokumentation):
 
-- [Firefox](https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren){.external}
-- [Chrome](https://support.google.com/chrome/answer/95414?hl=de&co=GENIE.Platform%3DDesktop&oco=0){.external}
-- [Safari](https://support.apple.com/de-de/102665){.external}
-- [Edge](https://support.microsoft.com/de-de/topic/microsoft-edge-updateeinstellungen-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}
+- [Firefox](https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren)
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=de&co=GENIE.Platform%3DDesktop&oco=0)
+- [Safari](https://support.apple.com/de-de/102665)
+- [Edge](https://support.microsoft.com/de-de/topic/microsoft-edge-updateeinstellungen-af8aaca2-1b69-4870-94fe-18822dbb7ef1)
 
 Wenn Ihr Internetbrowser nicht in der oben stehenden Liste aufgeführt ist, lesen Sie die zugehörige Onlinedokumentation, oder wenden Sie sich an den Support des Herausgebers.
 

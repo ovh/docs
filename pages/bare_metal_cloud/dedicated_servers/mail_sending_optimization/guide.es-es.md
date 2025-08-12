@@ -117,7 +117,7 @@ La adición de registros específicos, como un registro de Domain-based Message 
 
 ### Revisa su información
 
-Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/){.external} para verificar que todas sus configuración son correctas.
+Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/) para verificar que todas sus configuración son correctas.
 
 ## Más información
 

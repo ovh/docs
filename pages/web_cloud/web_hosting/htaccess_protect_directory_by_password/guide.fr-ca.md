@@ -113,7 +113,7 @@ Remplacez uniquement `plain_text_password1`, `plain_text_password2` et `plain_te
 >
 > Les deux scripts ci-dessus utilisent, à date, la méthode de chiffrement la plus sûre à l'aide de l'algorithme **bcrypt** recommandé par Apache.
 >
-> Pour plus d'informations sur le sujet, consultez la [documentation officielle Apache](https://httpd.apache.org/docs/2.4/fr/misc/password_encryptions.html){.external}.
+> Pour plus d'informations sur le sujet, consultez la [documentation officielle Apache](https://httpd.apache.org/docs/2.4/fr/misc/password_encryptions.html).
 >
 
 Si vous disposez d'un hébergement [Pro](/links/web/hosting-professional-offer) ou [Performance](/links/web/hosting-performance-offer), connectez-vous ensuite en [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) à votre hébergement web. Descendez dans le « **dossier racine** » où se trouve votre script « crypt.php ».
@@ -200,7 +200,7 @@ Dans le script ci-dessus, remplacez les éléments suivants par vos propres vale
 
 #### Bloquer l'accès à un ou plusieurs fichiers
 
-Pour bloquer l'accès à un ou plusieurs fichiers précis, ajoutez une [directive « Files »](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} dans le fichier « .htaccess » :
+Pour bloquer l'accès à un ou plusieurs fichiers précis, ajoutez une [directive « Files »](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files) dans le fichier « .htaccess » :
 
 ```bash
 <Files test.php>
@@ -222,7 +222,7 @@ Dans le script ci-dessus, remplacez les éléments suivants par vos propres vale
 
 > [!warning]
 >
-> Vous devrez indiquer une [directive « Files »](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} pour **chaque fichier** à protéger.
+> Vous devrez indiquer une [directive « Files »](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files) pour **chaque fichier** à protéger.
 >
 > Les directives « Files » s'appliquent à l'ensemble des fichiers du même nom ou se terminant par le nom spécifié. Ceci à condition qu'ils soient contenus dans le même répertoire que le « .htaccess » ou dans l'un de ses sous-répertoires.
 >
@@ -238,7 +238,7 @@ Dans le script ci-dessus, remplacez les éléments suivants par vos propres vale
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Documentation officielle Apache](https://httpd.apache.org/docs/2.4/){.external}
+[Documentation officielle Apache](https://httpd.apache.org/docs/2.4/)
 
 [Se connecter à l'espace FTP de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection)
 

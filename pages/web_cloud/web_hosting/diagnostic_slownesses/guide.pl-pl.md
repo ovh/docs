@@ -279,7 +279,7 @@ Zmień rozmiar wszystkich obrazów, aby zminimalizować zużycie zasobów.
 
 Zapoznaj się z naszym przewodnikiem dotyczącym [optymalizacji wydajności dla Twojej strony internetowej](/pages/web_cloud/web_hosting/optimise_your_website_performance).
 
-Możesz sprawdzić ścieżki optymalizacji dla Twojej strony, analizując ją na stronie [gtmetrix.com](https://gtmetrix.com){.external} (strona ta nie jest powiązana z OVHcloud).
+Możesz sprawdzić ścieżki optymalizacji dla Twojej strony, analizując ją na stronie [gtmetrix.com](https://gtmetrix.com) (strona ta nie jest powiązana z OVHcloud).
 
 > [!success]
 >

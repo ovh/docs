@@ -12,7 +12,7 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 >
 > This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting plan](/links/web/hosting) using the PHP "mail()" function.
 >
-> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](/links/web/hosting){.external} , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](/links/web/hosting) , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,12 +24,12 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 
 # Requirements
 
-- An [OVHcloud web hosting plan](/links/web/hosting){.external} solution.
-- Access to the [OVHcloud Control Panel](/links/manager){.external}.
+- An [OVHcloud web hosting plan](/links/web/hosting) solution.
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
-You can monitor and manage automated emails from your OVHcloud web hosting plan in your [OVHcloud Control Panel](/links/manager){.external}. Once you have logged in, go to the `Web Cloud`{.action} section, open `Hosting plans`{.action} and select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
+You can monitor and manage automated emails from your OVHcloud web hosting plan in your [OVHcloud Control Panel](/links/manager). Once you have logged in, go to the `Web Cloud`{.action} section, open `Hosting plans`{.action} and select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 

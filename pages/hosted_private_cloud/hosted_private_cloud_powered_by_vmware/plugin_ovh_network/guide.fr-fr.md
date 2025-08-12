@@ -12,7 +12,7 @@ Le plugin OVHcloud Network a été développé pour permettre une gestion plus c
 
 ## Prérequis
 
-- Disposer d'une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Disposer d'une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 - Être connecté à [l'espace client OVHcloud](/links/manager).
 - Un bloc d'adresse IP lié à votre Private Cloud.
 - Accès à l'interface vSphere.

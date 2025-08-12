@@ -141,7 +141,7 @@ Nachdem Sie die erste Methode hinzugefügt haben, können Sie auch **eine oder z
 
 Wenn Sie zum ersten Mal eine Zwei-Faktor-Authentifizierung hinzufügen, werden Ihnen im Kundencenter 10 **Notfall-Codes** zur einmaligen Verwendung angezeigt.
 
-**Bewahren Sie diese gut auf**. Wir empfehlen Ihnen, sie in einem Passwort-Manager wie [Keepass](https://keepass.info/){.external} oder [Bitwarden](https://bitwarden.com/) zu speichern (beide Apps sind kostenlos).
+**Bewahren Sie diese gut auf**. Wir empfehlen Ihnen, sie in einem Passwort-Manager wie [Keepass](https://keepass.info/) oder [Bitwarden](https://bitwarden.com/) zu speichern (beide Apps sind kostenlos).
 
 ![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
@@ -157,7 +157,7 @@ Sie können die Notfall-Codes über Ihr Kundencenter neu generieren oder lösche
 
 ### Schritt 3 - Loggen Sie sich mit der Zwei-Faktor-Authentifizierung in Ihr OVHcloud Kundencenter ein <a name="login-2fa"></a>
 
-Gehen Sie auf die [Authentifizierungsseite im OVHcloud Kundencenter](/links/manager){.external} und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
+Gehen Sie auf die [Authentifizierungsseite im OVHcloud Kundencenter](/links/manager) und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
 
 Im Anmeldebildschirm wird die zuletzt verwendete oder aufgefüllte Methode der Zwei-Faktor-Authentifizierung angezeigt. Wenn Sie eine andere Methode verwenden möchten, klicken Sie auf den Button `Eine andere Methode verwenden`{.action}.
 

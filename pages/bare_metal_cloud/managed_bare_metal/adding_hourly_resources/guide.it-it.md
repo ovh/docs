@@ -6,14 +6,14 @@ updated: 2020-12-15
 
 ## Obiettivo
 
-Il servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} consente di aggiungere risorse con fatturazione oraria.
+Il servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) consente di aggiungere risorse con fatturazione oraria.
 
 **Questa guida ti mostra come aggiungere una risorsa oraria dall’interfaccia di gestione vSphere del Managed Bare Metal.**
 
 ## Prerequisiti
 
-* Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
-* [Attribuire il permesso "Aggiunta di risorse"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) per il datacenter in questione all'utente dallo[Spazio Cliente OVHcloud](/links/manager){.external}.
+* Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/)
+* [Attribuire il permesso "Aggiunta di risorse"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) per il datacenter in questione all'utente dallo[Spazio Cliente OVHcloud](/links/manager).
 * Essere connesso al client vSphere
 
 ## Procedura

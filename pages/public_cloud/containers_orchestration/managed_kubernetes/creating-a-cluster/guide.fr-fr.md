@@ -35,7 +35,7 @@ OVHcloud offers a native Terraform provider, and for developers who prefer worki
 [Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, written in Go. It aims to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
 
 This tool has a powerful and very intuitive command line interface (CLI).  
-If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat Sheet](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external} exists.
+If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat Sheet](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf) exists.
 
 ///
 
@@ -153,21 +153,21 @@ The cluster creation is now in progress. It should be available within a few min
 
 > [!primary]
 >
-> Before starting, you should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following [detailed installation instructions](https://www.terraform.io/docs/cli/index.html){.external} or with the tool [tfenv](https://github.com/tfutils/tfenv){.external}.
+> Before starting, you should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following [detailed installation instructions](https://www.terraform.io/docs/cli/index.html) or with the tool [tfenv](https://github.com/tfutils/tfenv).
 >
 
 ### OVHcloud Terraform provider
 
 ![Terraform](images/ovh-loves-terraform.png){.thumbnail}
 
-In order to create a Kubernetes cluster and other resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} which is available in the official Terraform registry.
+In order to create a Kubernetes cluster and other resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest) which is available in the official Terraform registry.
 
 All available resources and data sources have their definition and documentation.
 
 In this guide, we will create two resources:
 
-- A [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster
-- A [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool
+- A [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube), that represents an OVHcloud managed Kubernetes cluster
+- A [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool), that represents a Kubernetes Node Pool
 
 ![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
@@ -555,14 +555,14 @@ Perfect!
 >
 > You need to have:
 >
-> - [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/){.external} installed.
-> - [Cloud Development Kit for Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install){.external} installed.
+> - [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/) installed.
+> - [Cloud Development Kit for Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install) installed.
 > - [Go](https://go.dev/doc/install) installed.
 > 
 
 ### OVHcloud Terraform provider
 
-In order to create a Kubernetes cluster and other resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} which is available in the official Terraform registry.
+In order to create a Kubernetes cluster and other resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest) which is available in the official Terraform registry.
 
 All available resources and data sources have their own definition and documentation.
 
@@ -570,8 +570,8 @@ CDKTF will "translate" your code into an HCL configuration file and then call `t
 
 We will create two resources:
 
-- A [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster
-- A [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool
+- A [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube), that represents an OVHcloud managed Kubernetes cluster
+- A [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool), that represents a Kubernetes Node Pool
 
 ![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
@@ -1021,7 +1021,7 @@ Our node pool is also created.
 >
 > You need to:
 >
-> - Install [Pulumi CLI](https://www.pulumi.com/docs/install/){.external}.
+> - Install [Pulumi CLI](https://www.pulumi.com/docs/install/).
 > - Have an account in [Pulumi](https://www.pulumi.com/).
 > - Have a [Pulumi access token](https://app.pulumi.com/account/tokens).
 > - Install [kubectl CLI](https://kubernetes.io/docs/tasks/tools/).
@@ -1054,14 +1054,14 @@ v3.81.0
 
 #### OVHcloud Pulumi provider
 
-In order to create a Kubernetes cluster and other resources, you will use the [OVHcloud Pulumi provider](https://github.com/ovh/pulumi-ovh). This provider is a bridge to our official [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external}.
+In order to create a Kubernetes cluster and other resources, you will use the [OVHcloud Pulumi provider](https://github.com/ovh/pulumi-ovh). This provider is a bridge to our official [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest).
 
 All available Pulumi resources have their definition and [documentation](https://www.pulumi.com/registry/packages/ovh).
 
 In this guide, we will create two resources:
 
-- A [Kube resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kube/){.external} that represents an OVHcloud managed Kubernetes cluster
-- A [KubeNodePool resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kubenodepool/){.external} that represents a Kubernetes Node Pool
+- A [Kube resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kube/) that represents an OVHcloud managed Kubernetes cluster
+- A [KubeNodePool resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kubenodepool/) that represents a Kubernetes Node Pool
 
 ![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
@@ -1452,7 +1452,7 @@ xxx can be: RAM, CPU, VM, Disk or Port.
 If this is the case, the quotas must be increased.  
 In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota){.external}.
+[Increasing Public Cloud quotas](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota).
 
 
 ///
@@ -1470,7 +1470,7 @@ You may get the following error message: `"not enough xxx quotas".`
 
 If this is the case, the quotas must be increased. In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota){.external}.
+[Increasing Public Cloud quotas](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota).
 
 ///
 

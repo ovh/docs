@@ -11,7 +11,7 @@ Welcome to the quick start tutorial of the Logs Data Platform. This Quick start 
 
 ### Welcome to Logs Data Platform
 
-First, you will have to create a new account on [the Logs Data Platform page](https://www.ovh.com/fr/data-platforms/logs){.external}. Creating an account is totally free. With the pay-as-you-go pricing model of Logs Data Platform you pay only for what you use.
+First, you will have to create a new account on [the Logs Data Platform page](https://www.ovh.com/fr/data-platforms/logs). Creating an account is totally free. With the pay-as-you-go pricing model of Logs Data Platform you pay only for what you use.
 
 - Log in to the [OVHcloud Control Panel](/links/manager), and navigate to the Bare Metal Cloud section located at the top left in the header.
 - Once you have created your credentials, the main interface will appear:
@@ -64,12 +64,12 @@ The menu **"..."** at the right gives you several features:
 
 Logs Data Platform supports several logs formats, each one of them has its own advantages and disadvantages. Here are the different formats available
 
-- **GELF**: This is the native format of logs used by Graylog. This JSON format will allow you to send logs really easily. See: [https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. The GELF input only accepts a null (`\0`) delimiter.
-- **LTSV**: This simple format is very efficient and is still human readable. You can learn more about it [here](http://ltsv.org){.external}. LTSV has two inputs that accept a line delimiter or a null delimiter.
+- **GELF**: This is the native format of logs used by Graylog. This JSON format will allow you to send logs really easily. See: [https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification). The GELF input only accepts a null (`\0`) delimiter.
+- **LTSV**: This simple format is very efficient and is still human readable. You can learn more about it [here](http://ltsv.org). LTSV has two inputs that accept a line delimiter or a null delimiter.
 - **RFC 5424**: This format is commonly used by logs utilities such as syslog. It is extensible enough to allow you to send all your data. More information about it can be found at this link: [RFC
-5424](https://tools.ietf.org/html/rfc5424){.external}.
-- **Cap'n'Proto**: The most efficient log format. This is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
-- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat), [Metricbeat](https://www.elastic.co/beats/metricbeat){.external}, [Winlogbeat](https://www.elastic.co/beats/winlogbeat){.external}).
+5424](https://tools.ietf.org/html/rfc5424).
+- **Cap'n'Proto**: The most efficient log format. This is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/).
+- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat), [Metricbeat](https://www.elastic.co/beats/metricbeat), [Winlogbeat](https://www.elastic.co/beats/winlogbeat)).
 
 Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS >= 1.2) or use the plain unsecured ones if you can't use an SSL transport.
 
@@ -83,7 +83,7 @@ As said before, you can retrieve the ports and the address of your cluster at th
 
 ![About page](images/about.png){.thumbnail}
 
-To send your logs to Logs Data Platform you can easily test your stream by doing, for example, a simple `echo` followed by an `openssl` command. Here are 3 examples, choose the format you like the most with your preferred terminal:  Note that each format has its own timestamp format: GELF uses [seconds from epoch](https://en.wikipedia.org/wiki/Unix_time){.external}, RFC 5424 and LTSV use the [RFC 3339](https://tools.ietf.org/html/rfc3339){.external}. Don't forget to change the **timestamp** to your current time to see your logs (by default Graylog only display recent logs, you can change the scope of the search by using the top left time picker in the Graylog web interface). Also please ensure to change the **token** to put the right one too.
+To send your logs to Logs Data Platform you can easily test your stream by doing, for example, a simple `echo` followed by an `openssl` command. Here are 3 examples, choose the format you like the most with your preferred terminal:  Note that each format has its own timestamp format: GELF uses [seconds from epoch](https://en.wikipedia.org/wiki/Unix_time), RFC 5424 and LTSV use the [RFC 3339](https://tools.ietf.org/html/rfc3339). Don't forget to change the **timestamp** to your current time to see your logs (by default Graylog only display recent logs, you can change the scope of the search by using the top left time picker in the Graylog web interface). Also please ensure to change the **token** to put the right one too.
 
 *GELF*:
 
@@ -141,7 +141,7 @@ helps going
 
 Giving you all the messages that contains the terms `helps` and `going`.
 
-Graylog allows you to extensively search through your logs without compromising usability. For more information about how to craft relevant searches on Graylog, please visit [Graylog Search Documentation](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external}.
+Graylog allows you to extensively search through your logs without compromising usability. For more information about how to craft relevant searches on Graylog, please visit [Graylog Search Documentation](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html).
 
 Send several logs with different values for `user_id`, for example. At the left of the page you will see the fields present in your stream, you can click on the `user_id` checkbox to display all the values for this field along the logs.
 
@@ -185,7 +185,7 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - [Configure your syslog-ng](/pages/manage_and_operate/observability/logs_data_platform/ingestion_syslog_ng) to send your Linux logs to Logs Data Platform.
 - [Using roles](/pages/manage_and_operate/observability/logs_data_platform/getting_started_roles_permission) to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
 - [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards)
-- If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
+- If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries)
 - Documentation: [Guides](/products/observability-logs-data-platform)
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))
-- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)

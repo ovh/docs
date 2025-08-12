@@ -12,7 +12,7 @@ Saiba como criar uma loja online com a extensão open source **WooCommerce** com
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner), ao [editor do CMS WordPress](https://wordpress.com/support/){.external} ou ao [editor do WooCommerce](https://woocommerce.com/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner), ao [editor do CMS WordPress](https://wordpress.com/support/) ou ao [editor do WooCommerce](https://woocommerce.com/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
 >
   
 ## Requisitos
@@ -118,7 +118,7 @@ A gestão dos produtos faz-se através de um conjunto de sub-rubricas:
 
 #### Expedição
 
-Se ativou as extensões predefinidas oferecidas gratuitamente durante a instalação, dispõe da extensão [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. Caso contrário, poderá efetuar a instalação através do menu `Plugins`{.action}.
+Se ativou as extensões predefinidas oferecidas gratuitamente durante a instalação, dispõe da extensão [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/). Caso contrário, poderá efetuar a instalação através do menu `Plugins`{.action}.
 
 - **Zonas de expedição**: permite definir e configurar zonas de expedição.
 - **Opções de entrega**: serve para configurar a aplicação em tudo o que diz respeito às despesas de expedição.
@@ -138,7 +138,7 @@ Permite configurar os *e-mails tipo* enviados pela aplicação (inscrição, com
 
 #### Integração
 
-Para geolocalizar os seus clientes em função do seu endereço IP, pode, nesta sub-rubrica, introduzir a chave da licença de [MaxMind](https://www.maxmind.com/){.external}, serviço pago de geolocalização.
+Para geolocalizar os seus clientes em função do seu endereço IP, pode, nesta sub-rubrica, introduzir a chave da licença de [MaxMind](https://www.maxmind.com/), serviço pago de geolocalização.
 
 #### Avançado
 
@@ -153,10 +153,10 @@ Para geolocalizar os seus clientes em função do seu endereço IP, pode, nesta 
 
 Alguns links úteis:
 
-- O [sítio oficial do WordPress](https://wordpress.org){.external}.
-- A extensão [Jetpack](https://jetpack.com/){.external}.
-- The [WooCommerce](https://woocommerce.com/){.external}
-- A loja [WooCommerce extensões](https://woocommerce.com/products/){.external}
+- O [sítio oficial do WordPress](https://wordpress.org).
+- A extensão [Jetpack](https://jetpack.com/).
+- The [WooCommerce](https://woocommerce.com/)
+- A loja [WooCommerce extensões](https://woocommerce.com/products/)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

@@ -6,14 +6,14 @@ updated: 2022-02-03
 
 ## Objetivo
 
-Este guia mostra-lhe as etapas para exportar todos os elementos do seu website para o formato padrão, a partir de um [alojamento web OVHcloud.](/links/web/hosting){.external}.
+Este guia mostra-lhe as etapas para exportar todos os elementos do seu website para o formato padrão, a partir de um [alojamento web OVHcloud.](/links/web/hosting).
 
 **Descubra como exportar o seu website OVHcloud.**
 
 ## Requisitos
 
-- Ter um [plano de alojamento web OVHcloud](/links/web/hosting){.external}.
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um [plano de alojamento web OVHcloud](/links/web/hosting).
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -28,17 +28,17 @@ Para se ligar ao seu espaço de armazenamento, deve dispor dos seguintes element
 - o endereço do servidor;
 - a porta de ligação ao servidor.
 
-Estes elementos foram-lhe enviados no e-mail enviado após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na secção `Web Cloud`{.action}, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. 
+Estes elementos foram-lhe enviados no e-mail enviado após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. 
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
-Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web_cloud/web_hosting/ftp_connection){.external}. Caso tenha perdido a palavra-passe, consulte o manual ["Modificar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web_cloud/web_hosting/ftp_connection). Caso tenha perdido a palavra-passe, consulte o manual ["Modificar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no espaço de armazenamento pode ser realizado de duas formas:
 
 - **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível, como o [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização, OVHcloud não criou esse programa;
 
-- **Utilizar um acesso SSH**: terá de utilizar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos mais avançados, bem como um [plano de alojamento web da OVHcloud](/links/web/hosting){.external} específica. Para mais informações, pode consultar o nosso guia  ["Utilizar o acesso SSH do seu alojamento web"](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+- **Utilizar um acesso SSH**: terá de utilizar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos mais avançados, bem como um [plano de alojamento web da OVHcloud](/links/web/hosting) específica. Para mais informações, pode consultar o nosso guia  ["Utilizar o acesso SSH do seu alojamento web"](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 1.2 Transferir os ficheiros a partir do seu espaço de armazenamento
 
@@ -56,7 +56,7 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 >
 
 Para recuperar um backup da sua base de dados, consulte o nosso guia:
-["Recuperar o backup da base de dados de um alojamento web"](/pages/web_cloud/web_hosting/sql_database_export){.external}.
+["Recuperar o backup da base de dados de um alojamento web"](/pages/web_cloud/web_hosting/sql_database_export).
 
 Se utiliza uma base de dados **Web Cloud Databases** para o seu website, consulte a secção dedicada ao backup no nosso guia:
 [Backup e exportação de uma base de dados no servidor de bases de dados](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).

@@ -12,9 +12,9 @@ Graças ao seu alojamento web da OVHcloud, pode beneficiar de um [certificado SS
 
 ## Requisitos
 
-- Dispor de um [certificado SSL](/links/web/hosting-options-ssl){.external} instalado no seu [alojamento web OVHcloud](/links/web/hosting){.external}.
+- Dispor de um [certificado SSL](/links/web/hosting-options-ssl) instalado no seu [alojamento web OVHcloud](/links/web/hosting).
 - Ter pelo menos um website instalado e acessível no alojamento web da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, parte `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}.
 
 ## Instruções
 

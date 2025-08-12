@@ -12,13 +12,13 @@ A OVH disponibiliza templates Windows e SQL server (em formato OVF) que pode usa
 
 > [!primary]
 > 
-> Encontre nesta [página](/links/hosted-private-cloud/vmware-images-licenses){.external} os preços das imagens disponibilizadas pela OVH.
+> Encontre nesta [página](/links/hosted-private-cloud/vmware-images-licenses) os preços das imagens disponibilizadas pela OVH.
 >
 
 ## Requisitos
 
 - Ter acesso ao web client ou ao thick client, consoante a versão utilizada.
-- [Ter ativado as licenças Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-licence){.external} na [Área de Cliente OVH](/links/manager){.external} (separador `Licença Windows`{.action} do datacenter). 
+- [Ter ativado as licenças Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-licence) na [Área de Cliente OVH](/links/manager) (separador `Licença Windows`{.action} do datacenter). 
 
 ## Instruções
 

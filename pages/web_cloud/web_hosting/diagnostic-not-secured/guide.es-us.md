@@ -85,8 +85,8 @@ Si ha generado un **certificado SSL « Let's Encrypt »**, active la opción SSL
 
 Si tiene un **certificado SSL importado** y este no funciona, póngase en contacto con su proveedor.
 
-Si ha contratado uno de los **certificados SSL de pago** de nuestro partner [SECTIGO](https://sectigo.com/){.external}, compruebe si ha recibido un mensaje de correo electrónico proponiéndole que lo renueve.
-<br>Si es necesario, contacte con el [soporte de SECTIGO](https://sectigo.com/support){.external} al respecto.
+Si ha contratado uno de los **certificados SSL de pago** de nuestro partner [SECTIGO](https://sectigo.com/), compruebe si ha recibido un mensaje de correo electrónico proponiéndole que lo renueve.
+<br>Si es necesario, contacte con el [soporte de SECTIGO](https://sectigo.com/support) al respecto.
 
 > [!primary]
 >

@@ -75,7 +75,7 @@ Once this action has been completed, please [enter a **new** backup email addres
 
 In this case, the OVHcloud telephone support will not be able to help you.
 
-Please follow this [procedure](https://www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi){.external} so that we can verify your identity.
+Please follow this [procedure](https://www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi) so that we can verify your identity.
 
 Once the procedure has been received by our services, we will replace your contact email address if all of the documents requested are valid.
 

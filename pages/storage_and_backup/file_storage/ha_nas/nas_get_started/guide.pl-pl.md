@@ -16,11 +16,11 @@ NAS (Network Attached Storage) jest serwerem plików podłączonym do sieci, kt�
 
 - Posiadanie adresu IP powiązanego z usługą OVHcloud (Hosted Private Cloud, Serwer dedykowany, VPS, Instancja Public Cloud, itp.)
 - Posiadanie usługi [NAS-HA](/links/storage/nas-ha)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
-Zarządzanie usługą NAS-HA odbywa się w [Panelu klienta](/links/manager){.external}.
+Zarządzanie usługą NAS-HA odbywa się w [Panelu klienta](/links/manager).
 
 Po zalogowaniu kliknij `Bare Metal Cloud`{.action}, a następnie `NAS i CDN`{.action} w menu po lewej stronie. Kliknij Twoją usługę, aby uzyskać dostęp do menu administracyjnego.
 

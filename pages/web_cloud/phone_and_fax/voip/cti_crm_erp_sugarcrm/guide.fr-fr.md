@@ -36,7 +36,7 @@ Avec les fonctionnalités CTI d'OVHcloud, il est possible de coupler la téléph
 ## Prérequis
 
 - Une [ligne de téléphonie OVHcloud](/links/telecom/telephonie-voip)
-- Une installation opérationnelle de [SugarCRM](https://www.sugarcrm.com/fr/){.external}
+- Une installation opérationnelle de [SugarCRM](https://www.sugarcrm.com/fr/)
 - Un poste informatique avec un navigateur web
 
 ## En pratique

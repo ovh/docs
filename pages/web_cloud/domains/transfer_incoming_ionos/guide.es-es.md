@@ -68,7 +68,7 @@ También debe:
 
 ### Etapa 1 - Desactivar el registro privado
 
-Para confirmar si el registro privado está activado para su dominio, siga los pasos descritos en la [documentación dedicada de Ionos](https://www.ionos.es/ayuda/dominios/transferir-un-dominio-dentro-de-11-ionos/desactivar-el-registro-privado-para-un-dominio-en-11-ionos/){.external}.
+Para confirmar si el registro privado está activado para su dominio, siga los pasos descritos en la [documentación dedicada de Ionos](https://www.ionos.es/ayuda/dominios/transferir-un-dominio-dentro-de-11-ionos/desactivar-el-registro-privado-para-un-dominio-en-11-ionos/).
 
 ### Etapa 2 - Desactivar el bloqueo de la transferencia
 
@@ -77,13 +77,13 @@ Para confirmar si el registro privado está activado para su dominio, siga los p
 > Por seguridad, los dominios con una extensión genérica (por ejemplo, *.com*, *.net* o *.org*) están bloqueados por defecto y no pueden transferirse. Antes de iniciar una transferencia de nombre de dominio, debe desactivar este bloqueo de transferencia.
 >
 
-Siga los pasos que se describen en la [documentación dedicada de Ionos](https://www.ionos.es/ayuda/dominios/transferir-un-dominio-dentro-de-11-ionos/desactivar-el-bloqueo-de-transferencia-en-11-ionos/){.external}.
+Siga los pasos que se describen en la [documentación dedicada de Ionos](https://www.ionos.es/ayuda/dominios/transferir-un-dominio-dentro-de-11-ionos/desactivar-el-bloqueo-de-transferencia-en-11-ionos/).
 
 ### Etapa 3 - Obtener el código de autorización
 
 El código de autorización protege su nombre de dominio contra toda transferencia no autorizada por terceros. Este código es necesario para autorizar la transferencia del dominio a un nuevo proveedor.
 
-Siga los pasos descritos en la [documentación dedicada de Ionos](https://www.ionos.es/ayuda/dominios/transferir-un-dominio-de-11-ionos-a-otro-proveedor/consultar-el-codigo-de-autorizacion-en-11-ionos/){.external}.
+Siga los pasos descritos en la [documentación dedicada de Ionos](https://www.ionos.es/ayuda/dominios/transferir-un-dominio-de-11-ionos-a-otro-proveedor/consultar-el-codigo-de-autorizacion-en-11-ionos/).
 
 Una vez obtenido el código de autorización, puede proceder a la transferencia del dominio siguiendo las etapas de la guía "[Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
 

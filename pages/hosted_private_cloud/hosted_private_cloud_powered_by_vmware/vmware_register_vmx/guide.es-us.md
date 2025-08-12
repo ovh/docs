@@ -55,9 +55,9 @@ En caso de tener varias decenas de MV y/o datastores, es posible utilizar script
 
 #### Avec PowerCLI
 
-VMware proporciona los PowerCLI para los administradores VMware que utilizan PowerShell: [Instale PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
+VMware proporciona los PowerCLI para los administradores VMware que utilizan PowerShell: [Instale PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
 
-A continuación puede utilizar el siguiente script, adaptado al que escribió [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
+A continuación puede utilizar el siguiente script, adaptado al que escribió [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/).
 
 ```powershell
 function register-vmxX {

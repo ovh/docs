@@ -12,14 +12,14 @@ Panel klienta OVHcloud oferuje liczne opcje konfiguracji Twojej infrastruktury P
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} i przejście do sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}
-- Posiadanie usługi [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager) i przejście do sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}
+- Posiadanie usługi [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
 
 ## W praktyce
 
 ### Karta ogólna
 
-W sekcji `Private Cloud`{.action} znajdującej się w części `Serwer`{.action} [Panelu klienta OVHcloud](/links/manager){.external} masz dostęp do ogólnego podglądu infrastruktury Private Cloud:
+W sekcji `Private Cloud`{.action} znajdującej się w części `Serwer`{.action} [Panelu klienta OVHcloud](/links/manager) masz dostęp do ogólnego podglądu infrastruktury Private Cloud:
 
 ![Informacje ogólne](images/controlpanel1.png){.thumbnail}
 
@@ -176,7 +176,7 @@ Karta `Licencja Windows`{.action} pozwala aktywować licencje SPLA Windows w Two
 
 ![Licence SPLA Windows](images/controlpanel10.png){.thumbnail}
 
-Cennik znajdziesz [tutaj](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Cennik znajdziesz [tutaj](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/images-licenses/).
 
 ### Widok centrum danych
 

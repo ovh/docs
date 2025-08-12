@@ -75,7 +75,7 @@ Una volta completata l'operazione, è fondamentale [inserire un **nuovo** indiri
 
 In questo caso, il supporto telefonico OVHcloud non potrà fornirti assistenza.
 
-Segui questa [procedura](https://www.ovh.it/cgi-bin/it/procedure/procedureChangeEmail.cgi){.external} per inviarci per posta affinché la tua identità sia verificata.
+Segui questa [procedura](https://www.ovh.it/cgi-bin/it/procedure/procedureChangeEmail.cgi) per inviarci per posta affinché la tua identità sia verificata.
 <br>Una volta ricevuta la posta dai nostri servizi, procederemo alla sostituzione del tuo indirizzo email di contatto se tutti i giustificativi richiesti sono conformi.
 <br>Questa procedura può richiedere diversi giorni di tempo, tenendo conto dei tempi di consegna della posta e del suo trattamento da parte dei nostri servizi.
 

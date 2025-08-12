@@ -12,7 +12,7 @@ In some cases, OVHcloud administrators will need to perform interventions on you
 
 ## Requirements
 
-- You must be [logged in via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} (root access).
+- You must be [logged in via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) (root access).
 
 ## Instructions
 

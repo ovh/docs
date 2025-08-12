@@ -1,7 +1,7 @@
 ---
 title: "Configurar la IPv6 en un VPS"
 excerpt: 'Cómo configurar la IPv6 en un VPS de OVHcloud'
-updated: 2025-07-24
+updated: 2025-08-07
 ---
 
 > [!primary]
@@ -92,7 +92,7 @@ Una vez que haya recuperado las direcciones, vaya al paso 2. [Aplicar la configu
 
 ### 2\. aplicar la configuración IPv6 <a name="applyipv6"></a>
 
-Una vez que disponga de la información necesaria para configurar la IPv6, conéctese al VPS por SSH. Si lo necesita, puede consultar la guía [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external}.
+Una vez que disponga de la información necesaria para configurar la IPv6, conéctese al VPS por SSH. Si lo necesita, puede consultar la guía [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 Existen varias formas de aplicar la configuración IPv6. Utilice los siguientes enlaces para ir directamente a la necesite, según su caso:
 
@@ -216,7 +216,7 @@ Los archivos de configuración de red se encuentran en el directorio `/etc/netpl
 
 Si no se ha configurado la dirección IPv6, el mejor método es crear un archivo de configuración independiente para configurar la dirección IPv6 en el directorio `/etc/netplan/`. De este modo, podrá volver a revisar fácilmente los cambios en caso de error.
 
-Además, le recomendamos que ajuste los permisos para el archivo recién creado. Para más información sobre los permisos de los archivos, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+Además, le recomendamos que ajuste los permisos para el archivo recién creado. Para más información sobre los permisos de los archivos, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions).
 
 En nuestro ejemplo, nuestro archivo se llama `51-cloud-init-ipv6.yaml`:
 

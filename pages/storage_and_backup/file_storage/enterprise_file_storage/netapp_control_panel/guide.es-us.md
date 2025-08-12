@@ -83,7 +83,7 @@ Para configurar sus [políticas de snapshot](#snapshot_policy), acceda a la secc
 
 En el área de cliente no es posible consultar la lista de snapshots realizados ni restaurarlos.
 
-Para acceder a los snapshots desde el punto de montaje, puede utilizar los comandos que se ofrecen en la documentación [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+Para acceder a los snapshots desde el punto de montaje, puede utilizar los comandos que se ofrecen en la documentación [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html).
 
 #### Gestión de volúmenes ACL <a name="access_control"></a>
 

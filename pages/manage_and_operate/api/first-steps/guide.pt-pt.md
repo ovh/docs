@@ -10,14 +10,14 @@ updated: 2025-05-13
 
 ## Objetivo
 
-As API disponíveis em [https://api.ovh.com/](/links/api){.external} permitem-lhe adquirir, gerir, atualizar e configurar produtos OVHcloud sem utilizar uma interface gráfica como a Área de Cliente.
+As API disponíveis em [https://api.ovh.com/](/links/api) permitem-lhe adquirir, gerir, atualizar e configurar produtos OVHcloud sem utilizar uma interface gráfica como a Área de Cliente.
 
 **Saiba como utilizar as API da OVHcloud e como associá-las às suas aplicações**
 
 ## Requisitos
 
 - Ter uma conta OVHcloud ativa e conhecer os seus identificadores.
-- Estar na página web das [API OVHcloud](/links/api){.external}.
+- Estar na página web das [API OVHcloud](/links/api).
 
 ## Instruções
 
@@ -132,7 +132,7 @@ Os separadores `PHP` e `Python` contêm os elementos que devem ser adicionados n
 
 Qualquer aplicação que pretenda comunicar com a API da OVHcloud deve ser declarada previamente.
 
-Para isso, clique na seguinte ligação: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+Para isso, clique na seguinte ligação: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
 
 Indique o seu ID de cliente, a sua palavra-passe e o nome da sua aplicação. O nome será útil mais tarde se quiser autorizar outras pessoas a utilizá-lo.
 

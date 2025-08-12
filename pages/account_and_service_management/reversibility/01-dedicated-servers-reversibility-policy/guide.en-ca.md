@@ -7,7 +7,7 @@ updated: 2021-05-05
 
 This document is the reversibility policy for the **[Dedicated Servers](/links/bare-metal/bare-metal)** product range.
 
-This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+This policy aims at implementing the global reversibility principles and requirements of [SWIPO IaaS Code of Conduct for Cloud Providers](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Features map
 

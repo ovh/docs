@@ -166,7 +166,7 @@ Per maggiori informazioni sulla creazione di una chiave SSH, consulta [questa gu
 
 **Altre opzioni**
 
-Attenzione: queste opzioni non sono obbligatorie per la creazione di un’istanza di base. Per maggiori informazioni su queste opzioni, consulta la [documentazione ufficiale OpenStack](https://docs.openstack.org/horizon/latest/user/launch-instances.html){.external}.
+Attenzione: queste opzioni non sono obbligatorie per la creazione di un’istanza di base. Per maggiori informazioni su queste opzioni, consulta la [documentazione ufficiale OpenStack](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
 
 |Informazioni|Dettagli|
 |---|---|

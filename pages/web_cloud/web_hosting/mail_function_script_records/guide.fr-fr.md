@@ -12,7 +12,7 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 >
 > Ce guide concerne principalement les e-mails envoyés depuis des scripts situés sur votre [hébergement web OVHcloud](/links/web/hosting) à l'aide de la fonction « mail() » de PHP.
 >
-> Si vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](/links/web/hosting){.external}, consultez notre documentation sur les [E-mails mutualisés - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Si vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](/links/web/hosting), consultez notre documentation sur les [E-mails mutualisés - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,12 +24,12 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](/links/manager){.external}. Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](/links/manager). Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 

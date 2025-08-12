@@ -20,7 +20,7 @@ Los niveles de cifrado SSL son idénticos entre los tres tipos de certificado.
 
 La principal diferencia reside en el nivel de comprobaciones que realizará la Autoridad de Certificación (CA) que emite el certificado SSL y certifica su autenticidad.
 
-Para los alojamientos compartidos de OVHcloud, la autoridad de certificación que expide los certificados SSL DV es [Sectigo](https://sectigostore.com){.external}.
+Para los alojamientos compartidos de OVHcloud, la autoridad de certificación que expide los certificados SSL DV es [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >

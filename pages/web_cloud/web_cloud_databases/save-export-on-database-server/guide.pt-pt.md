@@ -12,21 +12,21 @@ A sua base de dados pode conter um grande volume de informações essenciais ao 
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](/links/web/databases) {.external} (incluída numa oferta de [alojamento web Performance](/links/web/hosting)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Dispor de uma [instância Web Cloud Databases](/links/web/databases)  (incluída numa oferta de [alojamento web Performance](/links/web/hosting)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 > [!primary]
 >
-> Pamiętaj, że rozwiązania [Web Cloud Databases](/links/web/databases){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+> Pamiętaj, że rozwiązania [Web Cloud Databases](/links/web/databases) nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
 > <br> - Pamiętaj, że nie ma dostępu "root".
 > <br> - Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL lub Adminer jest w pełni kompatybilne.
 >
 
 ### Salvaguardar e exportar uma base de dados a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. Clique no separador `Bases de dados`.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. Clique no separador `Bases de dados`.
 
 Ao nível da coluna **«Backups»**, o algarismo corresponde ao número de salvaguardas disponíveis para a sua base de dados.
 
@@ -55,11 +55,11 @@ Salvaguardar e exportar uma base de dados fora da Área de Cliente
 
 #### 1. Exportação de bases de dados MySQL ou MariaDB
 
- Em certos casos, é possível que a RAM disponível no seu servidor de bases de dados não permita realizar a exportação desejada. Se isso lhe acontecer, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Essa ferramenta permitirá a utilização de recursos externos ao serviço para que realize a operação. Consulte a secção [«Salvaguardar e exportar uma base de dados a partir da Área de Cliente»](./#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente){.external} deste guia.
+ Em certos casos, é possível que a RAM disponível no seu servidor de bases de dados não permita realizar a exportação desejada. Se isso lhe acontecer, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Essa ferramenta permitirá a utilização de recursos externos ao serviço para que realize a operação. Consulte a secção [«Salvaguardar e exportar uma base de dados a partir da Área de Cliente»](./#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente) deste guia.
 
 ##### 1.1\. Exportar uma base MySQL ou MariaDB a partir do phpMyAdmin OVHcloud 
 
-Para exportar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Se necessário, consulte o guia [«Conexão a uma base de dados do servidor de bases de dados»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server){.external}.
+Para exportar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Se necessário, consulte o guia [«Conexão a uma base de dados do servidor de bases de dados»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 
 Depois de se conectar ao phpMyAdmin, clique no nome da base de dados que deseja exportar e, de seguida, clique no separador `Exportar`{.action} ao alto.
 
@@ -84,13 +84,13 @@ mysqldump --host=servidor --user=utilizador --port=port --password=password nome
 
 > [!warning]
 >
-> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password){.external}.
+> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 > - Esta operação só é possível a partir de um alojamento partilhado OVHcloud.
 >
 
 #### 2. Exportação e importação de bases de dados PostgreSQL fora da Área de Cliente
 
- Em certos casos, é possível que a RAM disponível no seu servidor de bases de dados não permita realizar a exportação desejada. Se isso lhe acontecer, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Essa ferramenta permitirá a utilização de recursos externos ao serviço para que realize a operação. Consulte a secção [«Salvaguardar e exportar uma base de dados a partir da Área de Cliente»](./#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente){.external} deste guia.
+ Em certos casos, é possível que a RAM disponível no seu servidor de bases de dados não permita realizar a exportação desejada. Se isso lhe acontecer, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Essa ferramenta permitirá a utilização de recursos externos ao serviço para que realize a operação. Consulte a secção [«Salvaguardar e exportar uma base de dados a partir da Área de Cliente»](./#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente) deste guia.
  
 ##### 2.1\. Exportar uma base PostgreSQL a partir da linha de comandos
 
@@ -109,7 +109,7 @@ pg_dump --host=servidor --port=port --user=utilizador --password=password nome_d
 
 > [!warning]
 >
-> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password){.external}.
+> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 > - Esta operação só é possível a partir de um alojamento partilhado OVHcloud.
 >
 

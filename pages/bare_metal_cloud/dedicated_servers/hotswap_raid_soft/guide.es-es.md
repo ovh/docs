@@ -16,10 +16,10 @@ En los servidores Alta Gama compatibles, es posible sustituir un disco dañado e
 
 ## Requisitos
 
-- Tener contratado un servidor [mHG, HG o BHG](/links/bare-metal/hg){.external}.
+- Tener contratado un servidor [mHG, HG o BHG](/links/bare-metal/hg).
 - Tener RAID por software (con tarjeta LSI).
 - Tener acceso por SSH (Linux) o RDP (Windows).
-- Haber instalado la utilidad sas2ircu (disponible en la web de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
+- Haber instalado la utilidad sas2ircu (disponible en la web de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu)).
 
 ## Procedimiento
 
@@ -240,7 +240,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-El disco dañado ya puede ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+El disco dañado ya puede ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ### En Windows
 
@@ -292,7 +292,7 @@ Puede desactivar el parpadeo del disco sustituyendo `on` por `off` en el comando
 
 Esta operación puede realizarse desde la utilidad **Administración de discos** del servidor Windows.
 
-A continuación, el disco dañado ya podrá ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+A continuación, el disco dañado ya podrá ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Más información
 

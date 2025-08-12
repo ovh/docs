@@ -86,13 +86,13 @@ Deve também:
 > Enquanto o bloqueio estiver ativo, a transferência não é possível.
 >
 
-Para desbloquear o domínio na Gandi, siga os passos descritos na [documentação dedicada de Gandi](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html){.external}.
+Para desbloquear o domínio na Gandi, siga os passos descritos na [documentação dedicada de Gandi](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html).
 
 ### Etapa 2 - Obter o código de autorização
 
 O código de autorização protege o seu domínio contra transferências não autorizadas e realizadas por terceiros. Este código é necessário para autorizar a transferência do seu domínio para um novo agente registador.
 
-Para obter o código de transferência do seu domínio, siga os passos descritos na [documentação dedicada de Gandi](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html){.external}.
+Para obter o código de transferência do seu domínio, siga os passos descritos na [documentação dedicada de Gandi](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html).
 
 ### Etapa 3 - Iniciar a transferência do seu domínio para a OVHcloud
   

@@ -12,7 +12,7 @@ There are some situations where it may be useful to remove a host server from yo
 
 ## Requirements
 
-* an [OVHcloud Managed Bare Metal](https://www.ovhcloud.com/en-ca/managed-bare-metal/){.external} solution
+* an [OVHcloud Managed Bare Metal](https://www.ovhcloud.com/en-ca/managed-bare-metal/) solution
 * access to the vSphere interface
 
 ## Instructions

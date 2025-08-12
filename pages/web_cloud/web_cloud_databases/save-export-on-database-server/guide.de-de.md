@@ -12,7 +12,7 @@ Ihre Datenbank enthält in der Regel wichtige Datensätze für den Betrieb Ihrer
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases){.external} (in einem [Performance Webhosting](/links/web/hosting) Angebot enthalten).
+- Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases) (in einem [Performance Webhosting](/links/web/hosting) Angebot enthalten).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

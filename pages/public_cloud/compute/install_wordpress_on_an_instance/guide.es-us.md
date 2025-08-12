@@ -237,7 +237,7 @@ Una vez validado, podrá conectarse al panel de administración del sitio web co
 
 > [!primary]
 >
-> Para establecer conexiones seguras (`https`), el servidor web debe estar protegido a través de una Autoridad de Certificación como [Let's Encrypt](https://letsencrypt.org/){.external} que ofrece certificados gratuitos. Deberá instalar una herramienta de cliente (como "Certbot") y configurar Apache. Sin este paso, el sitio web solo podrá aceptar peticiones `http`.
+> Para establecer conexiones seguras (`https`), el servidor web debe estar protegido a través de una Autoridad de Certificación como [Let's Encrypt](https://letsencrypt.org/) que ofrece certificados gratuitos. Deberá instalar una herramienta de cliente (como "Certbot") y configurar Apache. Sin este paso, el sitio web solo podrá aceptar peticiones `http`.
 >
 > 
 > Como alternativa, OVHcloud le ofrece la solución [SSL Gateway](https://www.ovh.com/world/es/ssl-gateway/). Para más información, consulte [nuestra guía](/pages/web_cloud/ssl_gateway/order-ssl-gateway).

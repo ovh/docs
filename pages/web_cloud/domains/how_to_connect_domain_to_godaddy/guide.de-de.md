@@ -44,7 +44,7 @@ Wenn Sie ein GoDaddy-Hosting mit einem OVHcloud Domainnamen verwenden, müssen S
 > Bevor Sie fortfahren:
 >
 > - Öffnen Sie einen Tab in Ihrem Webbrowser.
-> - Öffnen Sie [**diese Seite der GoDaddy-Dokumentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US){.external}.
+> - Öffnen Sie [**diese Seite der GoDaddy-Dokumentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
 > - Befolgen Sie die Anweisungen bis Schritt 10 und rufen Sie die für Ihre Website spezifischen Informationen ab, um Ihre OVHcloud DNS-Einträge zu einem späteren Zeitpunkt ändern zu können.<br>
 > Die folgenden Anweisungen helfen Ihnen bei der Konfiguration Ihrer OVHcloud DNS-Zone.
 

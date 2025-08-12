@@ -54,10 +54,10 @@ Um eine Runtime Engine hinzuzufügen oder zu ändern, gehen Sie in den Tab `Runt
 
 Geben Sie im angezeigten Fenster die notwendigen Informationen ein. Fahren Sie entsprechend der ausgewählten Engine fort:
 
-- [PHP](./#php){.external} 
-- [Node.js](./#nodejs){.external}
-- [Ruby](./#ruby){.external} 
-- [Python](./#python){.external} 
+- [PHP](./#php) 
+- [Node.js](./#nodejs)
+- [Ruby](./#ruby) 
+- [Python](./#python) 
 
 ##### **PHP**
 

@@ -12,7 +12,7 @@ Questa guida ti mostra come installare manualmente il CMS (Content Management Sy
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o [l'amministratore del CMS WordPress](https://wordpress.com/it/support/){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o [l'amministratore del CMS WordPress](https://wordpress.com/it/support/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più](#go-further) di questa guida.
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Questa guida ti mostra come installare manualmente il CMS (Content Management Sy
 
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

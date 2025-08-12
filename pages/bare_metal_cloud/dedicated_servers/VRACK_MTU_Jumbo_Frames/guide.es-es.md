@@ -12,7 +12,7 @@ Las tramas Jumbo o *Jumbo frames* son tramas Ethernet con una carga útil superi
 
 ## Requisitos
 
-- Tener un [vRack](/links/network/vrack){.external}.
+- Tener un [vRack](/links/network/vrack).
 - Abrir un *shell* con permisos root.
 
 > [!warning]

@@ -7,7 +7,7 @@ updated: 2021-05-05
 
 Ce document est la politique de réversibilité appliquée sur un **hébergement Web** avec un [nom de domaine](/links/web/domains).
 
-Cette politique vise à mettre en oeuvre les principes de réversibilité mondiale et les prérequis du [Code de conduite IaaS de l'OMPI pour les fournisseurs de Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+Cette politique vise à mettre en oeuvre les principes de réversibilité mondiale et les prérequis du [Code de conduite IaaS de l'OMPI pour les fournisseurs de Cloud](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Liste des fonctionnalités
 

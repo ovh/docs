@@ -10,8 +10,8 @@ This guide aims to explain the details of implementing VMencrypt on the OVHcloud
 
 ## Requirements
 
-- Have a [Managed Bare Metal](https://www.ovhcloud.com/en-au/managed-bare-metal/){.external} offer.
-- Have a external **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** compatible Key management server (KMS) and how are in VMware [compatibility matrix](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware
+- Have a [Managed Bare Metal](https://www.ovhcloud.com/en-au/managed-bare-metal/) offer.
+- Have a external **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)) 1.1** compatible Key management server (KMS) and how are in VMware [compatibility matrix](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc) VMware
 - Access to the vSphere management interface.
 - Have virtual machines with at least Hardware version 13
 
@@ -136,7 +136,7 @@ Choose the following options:
 
 #### Import of the KMS certificate
 
-Most KMS providers need a certificate to  [trust](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} the vCenter.
+Most KMS providers need a certificate to  [trust](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html) the vCenter.
 
 From the vCenter where we added the KMS server
 

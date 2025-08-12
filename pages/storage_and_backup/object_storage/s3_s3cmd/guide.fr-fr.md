@@ -128,7 +128,7 @@ Télécharger un fichier `file.txt` depuis un bucket :
 $ s3cmd get s3://BUCKET/OBJECT LOCAL_FILE
 ```
 
-Vous trouverez sur le site officiel de S3cmd une documentation détaillée des actions possibles: [Documentation officielle S3cmd](https://s3tools.org/usage){.external}.
+Vous trouverez sur le site officiel de S3cmd une documentation détaillée des actions possibles: [Documentation officielle S3cmd](https://s3tools.org/usage).
 
 ## Aller plus loin
 

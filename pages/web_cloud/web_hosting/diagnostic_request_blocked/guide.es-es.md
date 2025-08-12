@@ -49,10 +49,10 @@ Acceda a la configuración de su navegador de Internet y compruebe si hay una ac
 
 A continuación se describen los procedimientos para actualizar los principales exploradores de Internet (documentación proporcionada por sus editores):
 
-- [Firefox](https://support.mozilla.org/es/kb/actualizar-firefox-la-ultima-version){.external}.
-- [Chrome](https://support.google.com/chrome/answer/95414?hl=es&co=GENIE.Platform%3DDesktop&oco=0){.external}.
-- [Safari](https://support.apple.com/es-es/102665){.external}.
-- [Edge](https://support.microsoft.com/es-es/topic/configuraci%C3%B3n-de-actualizaci%C3%B3n-de-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}.
+- [Firefox](https://support.mozilla.org/es/kb/actualizar-firefox-la-ultima-version).
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=es&co=GENIE.Platform%3DDesktop&oco=0).
+- [Safari](https://support.apple.com/es-es/102665).
+- [Edge](https://support.microsoft.com/es-es/topic/configuraci%C3%B3n-de-actualizaci%C3%B3n-de-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1).
 
 Si su navegador de Internet no aparece en la lista anterior, consulte la documentación en línea o póngase en contacto con el soporte técnico del editor.
 

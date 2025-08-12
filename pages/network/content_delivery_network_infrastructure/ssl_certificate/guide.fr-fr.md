@@ -6,13 +6,13 @@ updated: 2018-02-22
 
 ## Objectif
 
-Il est possible d'ajouter un [certificat SSL](/links/web/hosting-options-ssl){.external} à votre offre Content Delivery Network (CDN) afin que vos utilisateurs puissent effectuer des connexions sécurisées, même en passant par le CDN.
+Il est possible d'ajouter un [certificat SSL](/links/web/hosting-options-ssl) à votre offre Content Delivery Network (CDN) afin que vos utilisateurs puissent effectuer des connexions sécurisées, même en passant par le CDN.
 
 **Dans ce guide, nous allons vous détailler le fonctionnement du SSL Let's Encrypt fourni par OVH.**
 
 ## Prérequis
 
-- Posséder l'[offre CDN d'OVH](/links/network/cdn-infrastructure){.external}.
+- Posséder l'[offre CDN d'OVH](/links/network/cdn-infrastructure).
 - Avoir accès à la gestion de la zone DNS de votre domaine.
 
 ## En pratique
@@ -22,7 +22,7 @@ Il est possible d'ajouter un [certificat SSL](/links/web/hosting-options-ssl){.e
 - Si vous n'avez configuré aucun certificat et que vous ajoutez votre premier sous-domaine au CDN, un certificat Let's Encrypt sera automatiquement créé pour ce nom de domaine.
 - Si vous ajoutez un autre sous-domaine au CDN, le certificat sera automatiquement régénéré afin d'y inclure le nouveau sous-domaine que vous venez de configurer.
 
-Pour que la création du certificat se déroule correctement, il est nécessaire que le sous-domaine que vous venez d'ajouter pointe correctement vers le CDN. Pour cela référez-vous au guide vous indiquant comment effectuer une [première configuration d'un nom de domaine](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external}.
+Pour que la création du certificat se déroule correctement, il est nécessaire que le sous-domaine que vous venez d'ajouter pointe correctement vers le CDN. Pour cela référez-vous au guide vous indiquant comment effectuer une [première configuration d'un nom de domaine](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration).
 
 Le renouvellement du certificat est effectué de manière automatique dans les 20 jours précédant l'expiration du certificat.
 
@@ -59,6 +59,6 @@ Une fois le certificat activé, voici ce que vous obtiendrez :
 
 ## Aller plus loin
 
-[Première configuration d'un nom de domaine](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external}
+[Première configuration d'un nom de domaine](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

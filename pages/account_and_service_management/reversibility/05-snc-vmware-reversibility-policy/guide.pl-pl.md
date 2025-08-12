@@ -7,7 +7,7 @@ updated: 2023-09-28
 
 This document is the reversibility policy of the Product [VMware on OVHcloud under SecNumCloud qualification ](https://www.ovhcloud.com/pl/enterprise/products/secnumcloud/).
 
-This policy aims at implementing the general reversibility principles and our compliance with the [SWIPO IaaS Code of Conduct for Cloud providers](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+This policy aims at implementing the general reversibility principles and our compliance with the [SWIPO IaaS Code of Conduct for Cloud providers](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Features list
 

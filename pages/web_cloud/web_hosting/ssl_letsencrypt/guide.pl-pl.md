@@ -164,7 +164,7 @@ Może to potrwać kilka godzin.
 
 > [!warning]
 >
-> Let's Encrypt, organ wydający certyfikat SSL, [ogranicza do pięciu liczbę możliwych ponownych generacji w tygodniu](https://letsencrypt.org/docs/rate-limits/){.external}. Dlatego należy uważać na różne regeneracje, które można podjąć w krótkim czasie, aby nie zostać tymczasowo zablokowanym.
+> Let's Encrypt, organ wydający certyfikat SSL, [ogranicza do pięciu liczbę możliwych ponownych generacji w tygodniu](https://letsencrypt.org/docs/rate-limits/). Dlatego należy uważać na różne regeneracje, które można podjąć w krótkim czasie, aby nie zostać tymczasowo zablokowanym.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

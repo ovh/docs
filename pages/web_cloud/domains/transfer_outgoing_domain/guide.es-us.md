@@ -25,7 +25,7 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 
 - Tener un [dominio](/links/web/domains) registrado con OVHcloud.
 - Estar facultado para solicitar la transferencia del dominio. El propietario y las personas que lo administren deben haber sido informados.
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager).
 - El registro del dominio en cuestión data de hace al menos 60 días **y** no ha sido transferido ni intercambiado (es decir, el cambio de propietario) en los últimos 60 días.
 
 > [!primary]

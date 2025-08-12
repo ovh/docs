@@ -12,7 +12,7 @@ La función **DRS** (Distributed Ressource Scheduler) está disponible en un clu
 
 ## Requisitos
 
-- Tener contratado un [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
+- Tener contratado un [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es-es/managed-bare-metal/).
 - Estar conectado a la [interfaz vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 
 ## Procedimiento

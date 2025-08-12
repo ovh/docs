@@ -71,7 +71,7 @@ La zone **Nombre de noeuds** indiquera qu’un nouveau nœud est prêt à être 
 >> ![Confirmation](images/install-os-03.png){.thumbnail}
 >>
 > API OVHcloud
->> Pour installer le nœud via l’[API OVHcloud](/links/api){.external}, utilisez l’appel suivant :
+>> Pour installer le nœud via l’[API OVHcloud](/links/api), utilisez l’appel suivant :
 >>
 >> > [!api]
 >> > @api {v1} /nutanix PUT /nutanix/{serviceName}/nodes/{server}/deploy
@@ -161,7 +161,7 @@ Consultez la documentation suivante :
 >>
 > API OVHcloud
 >>
->> Pour désinstaller un nœud via l’[API OVHcloud](/links/api){.external}, utilisez l’appel suivant :
+>> Pour désinstaller un nœud via l’[API OVHcloud](/links/api), utilisez l’appel suivant :
 >>
 >> > [!api]
 >> > @api {v1} /nutanix POST /nutanix/{serviceName}/node/{server}/terminate

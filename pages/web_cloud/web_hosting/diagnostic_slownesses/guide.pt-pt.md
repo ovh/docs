@@ -279,7 +279,7 @@ Redimensione todas as suas imagens para minimizar o consumo de recursos.
 
 Consulte o nosso guia sobre a [otimização das performances para o seu website](/pages/web_cloud/web_hosting/optimise_your_website_performance).
 
-Pode encontrar pistas de otimização para o seu site analisando-o em [gtmetrix.com](https://gtmetrix.com){.external} (este site não está associado à OVHcloud).
+Pode encontrar pistas de otimização para o seu site analisando-o em [gtmetrix.com](https://gtmetrix.com) (este site não está associado à OVHcloud).
 
 > [!success]
 >

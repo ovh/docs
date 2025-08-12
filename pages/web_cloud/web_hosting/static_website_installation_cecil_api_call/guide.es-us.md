@@ -6,7 +6,7 @@ updated: 2023-01-16
 
 ## Objetivo
 
-Este tutorial explica cómo utilizar el generador de sitios web [Cecil](https://cecil.app){.external} para mostrar el contenido de una página dinámica. Llamando a una API para recuperar y mostrar la información en una página generada a través de **Cecil**.
+Este tutorial explica cómo utilizar el generador de sitios web [Cecil](https://cecil.app) para mostrar el contenido de una página dinámica. Llamando a una API para recuperar y mostrar la información en una página generada a través de **Cecil**.
 
 **Esta guía explica cómo añadir una llamada a una API externa desde su página web estática.**
 
@@ -48,7 +48,7 @@ cd myWebSite
 
 ### Uso de la API OpenWeather
 
-Para este tutorial, utilizaremos una API proporcionada por el sitio web [OpenWeather](https://openweathermap.org/){.external}. Permite conocer la información meteorológica en función del nombre de una ciudad.
+Para este tutorial, utilizaremos una API proporcionada por el sitio web [OpenWeather](https://openweathermap.org/). Permite conocer la información meteorológica en función del nombre de una ciudad.
 
 Cree una cuenta en <https://home.openweathermap.org/users/sign_up><br>
 Una vez que haya validado su cuenta (mediante el envío de un email de confirmación), acceda al menú "My API keys". Se ha generado una clave por defecto, recuperándola y conservándola para el resto de este tutorial.
@@ -185,7 +185,7 @@ Cree el archivo `script.js` anteriormente mencionado en la raíz del directorio 
 nano assets/script.js
 ```
 
-Sustituya el valor de la variable `apiKey` por la clave obtenida anteriormente en el sitio [OpenWeather](https://openweathermap.org/){.external}
+Sustituya el valor de la variable `apiKey` por la clave obtenida anteriormente en el sitio [OpenWeather](https://openweathermap.org/)
 
 ```javascript
 let apiKey = '123456789'; // Reemplace este valor
@@ -241,12 +241,12 @@ Este tutorial muestra un ejemplo de integración de datos dinámicos recuperados
 ## Más información
 
 - Algunas API a probar en su sitio web
-    - [Numbers API](http://numbersapi.com/#42){.external}
-    - [NASA](https://api.nasa.gov/){.external}
-    - [Nueva API](https://newsapi.org/){.external}
-    - [Polygon.io](https://polygon.io/){.external}
-    - una lista de [API públicas](https://github.com/public-api-lists/public-api-lists){.external}
-- Las [órdenes de Cecil](https://cecil.app/documentation/commands/){.external}.
+    - [Numbers API](http://numbersapi.com/#42)
+    - [NASA](https://api.nasa.gov/)
+    - [Nueva API](https://newsapi.org/)
+    - [Polygon.io](https://polygon.io/)
+    - una lista de [API públicas](https://github.com/public-api-lists/public-api-lists)
+- Las [órdenes de Cecil](https://cecil.app/documentation/commands/).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

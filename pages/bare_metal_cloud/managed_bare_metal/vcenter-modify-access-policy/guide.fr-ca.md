@@ -12,7 +12,7 @@ Pour améliorer la sécurité de votre infrastructure Managed Bare Metal, vous p
 
 ## Prérequis
 
-- Disposer d'une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
+- Disposer d'une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/).
 - Être connecté à [l'espace client OVHcloud](/links/manager).
 
 ## En pratique

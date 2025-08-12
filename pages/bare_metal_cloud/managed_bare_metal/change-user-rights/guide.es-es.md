@@ -11,8 +11,8 @@ El servicio Managed Bare Metal de OVHcloud permite gestionar los permisos de usu
 
 ## Requisitos
 
-* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
-* Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/).
+* Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 

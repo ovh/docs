@@ -12,7 +12,7 @@ O plugin OVHcloud permite-lhe adicionar recursos dedicados à sua infraestrutura
 
 ## Requisitos
 
-- Dispor do serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
+- Dispor do serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
 - Aceder à interface de gestão vSphere.
 
 ## Instruções

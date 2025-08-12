@@ -105,7 +105,7 @@ Para todos los sistemas operativos y distribuciones, debe configurar su máquina
 
 > [!warning]
 >
-> Las siguientes instrucciones se aplican a una máquina virtual creada anteriormente con un sistema operativo instalado. Si no ha creado ninguna MV, consulte las opciones en la página [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} (EN) de Proxmox.
+> Las siguientes instrucciones se aplican a una máquina virtual creada anteriormente con un sistema operativo instalado. Si no ha creado ninguna MV, consulte las opciones en la página [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines) (EN) de Proxmox.
 >
 
 Después de haber creado la máquina virtual y cuando esta esté aún apagada:
@@ -132,7 +132,7 @@ Una vez iniciado el VPS, podrá pasar a las siguientes etapas, en función del s
 
 > [!warning]
 >
-> Las siguientes instrucciones se aplican a una máquina virtual creada anteriormente con un sistema operativo instalado. Si no ha creado ninguna MV, consulte la guía [Crear una máquina virtual en el cliente host de VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) en la página VMware.
+> Las siguientes instrucciones se aplican a una máquina virtual creada anteriormente con un sistema operativo instalado. Si no ha creado ninguna MV, consulte la guía [Crear una máquina virtual en el cliente host de VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html) (EN) en la página VMware.
 >
 
 Una vez que haya creado la máquina virtual y esté libre de tensión, haga clic derecho sobre ella y seleccione `Cambiar configuración`{.action}.
@@ -329,7 +329,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Si recibe una respuesta, significa que la Additional IP se ha configurado correctamente. En caso contrario, reinicie la máquina virtual e intente ping de nuevo.
 
-Si desea más información sobre `nmcli`, consulte [esta página (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli){.external}.
+Si desea más información sobre `nmcli`, consulte [esta página (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli).
 
 #### FreeBSD
 

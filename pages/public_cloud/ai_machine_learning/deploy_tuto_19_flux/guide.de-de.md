@@ -11,9 +11,9 @@ updated: 2025-08-01
 
 ## Introduction
 
-[FLUX](https://github.com/black-forest-labs/flux){.external} is a flexible family of generative models developed by [Black Forest Technologies](https://bfl.ai/){.external}. The **FLUX** models support a variety of tasks, including text-to-image generation, structural conditioning, and inpainting.
+[FLUX](https://github.com/black-forest-labs/flux) is a flexible family of generative models developed by [Black Forest Technologies](https://bfl.ai/). The **FLUX** models support a variety of tasks, including text-to-image generation, structural conditioning, and inpainting.
 
-In this tutorial, we walk through the process of deploying **FLUX** models on **AI Deploy**. We will show how to use **FLUX** models interactively with [ComfyUI](https://github.com/comfyanonymous/ComfyUI){.external} (a visual programming interface).
+In this tutorial, we walk through the process of deploying **FLUX** models on **AI Deploy**. We will show how to use **FLUX** models interactively with [ComfyUI](https://github.com/comfyanonymous/ComfyUI) (a visual programming interface).
 
 ## Instructions
 
@@ -37,7 +37,7 @@ The following table lists the main FLUX variants and their intended use cases:
 | `FLUX.1 [dev]`              | [Text to Image](docs/text-to-image.md)                     | https://huggingface.co/black-forest-labs/FLUX.1-dev            | [FLUX.1-dev Non-Commercial License](model_licenses/LICENSE-FLUX1-dev) |
 | `FLUX.1 Kontext [dev]`      | [Image editing](docs/image-editing.md)                     | https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev    | [FLUX.1-dev Non-Commercial License](model_licenses/LICENSE-FLUX1-dev) |
 
-Full list is available on the [official repository](https://github.com/black-forest-labs/flux){.external} for FLUX.1 models.
+Full list is available on the [official repository](https://github.com/black-forest-labs/flux) for FLUX.1 models.
 
 ## Requirements
 
@@ -47,7 +47,7 @@ Before proceeding, ensure you have the following:
 - An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Training & Object Storage](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer
-- [Docker](https://www.docker.com/get-started){.external} installed on your computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](/links/manager)
+- [Docker](https://www.docker.com/get-started) installed on your computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](/links/manager)
 - A Hugging Face account, with access to the FLUX model. You need to accept usage terms on the model Hugging Face page.
 - A Hugging Face access token (generate one under your Hugging Face account → Access Tokens). This one will be used to authenticate and download the model weights.
 
@@ -155,7 +155,7 @@ ovhai bucket object list <bucket_name>@GRA
 
 ### Build a Docker image
 
-Once the FLUX model weights are uploaded to Object Storage, the next step is to build a Docker image that packages [ComfyUI](https://github.com/comfyanonymous/ComfyUI){.external} and its required dependencies. 
+Once the FLUX model weights are uploaded to Object Storage, the next step is to build a Docker image that packages [ComfyUI](https://github.com/comfyanonymous/ComfyUI) and its required dependencies. 
 
 This image will later be deployed as an AI Deploy application, where the model files will be mounted at runtime from Object Storage. This avoids the need to embed large model weights directly into the container image.
 
@@ -384,7 +384,7 @@ ovhai app get <app_id>
 
 ### Run inference with ComfyUI
 
-Once inside the ComfyUI web interface, head to the official [ComfyUI FLUX examples](https://comfyanonymous.github.io/ComfyUI_examples/flux/){.external} page. Find the image matching your deployed variant.
+Once inside the ComfyUI web interface, head to the official [ComfyUI FLUX examples](https://comfyanonymous.github.io/ComfyUI_examples/flux/) page. Find the image matching your deployed variant.
 
 Then, drag and drop this image into your ComfyUI interface. This will automatically load the FLUX image workflow.
 
@@ -396,7 +396,7 @@ Once the image is generated, you can view and download it directly from the Comf
 
 ## Go further
 
-If you want to deploy a different interface such as [AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui){.external} with Stable Diffusion XL, we have a [step-by-step guide](/pages/public_cloud/ai_machine_learning/deploy_tuto_18_gradio_stable_diffusion_webui) to deploy this popular Web UI on AI Deploy.
+If you want to deploy a different interface such as [AUTOMATIC1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui) with Stable Diffusion XL, we have a [step-by-step guide](/pages/public_cloud/ai_machine_learning/deploy_tuto_18_gradio_stable_diffusion_webui) to deploy this popular Web UI on AI Deploy.
 
 If you are interested in image generation concepts, you can learn how image generation networks work and train your own Generative Adversarial Network. Check out this AI Notebooks guide: [Create and train an image generation model](/pages/public_cloud/ai_machine_learning/notebook_tuto_14_image-generation-dcgan).
 

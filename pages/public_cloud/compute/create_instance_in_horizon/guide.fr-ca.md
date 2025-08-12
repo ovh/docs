@@ -163,7 +163,7 @@ Pour plus d'informations sur la création d'une clé SSH, consultez [ce guide](/
 
 **Autres options**
 
-Attention, ces options ne sont pas obligatoires pour la création d'une instance de base. Si vous souhaitez explorer davantage ces options, consultez la [documentation OpenStack officielle](https://docs.openstack.org/horizon/latest/user/launch-instances.html){.external}.
+Attention, ces options ne sont pas obligatoires pour la création d'une instance de base. Si vous souhaitez explorer davantage ces options, consultez la [documentation OpenStack officielle](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
 
 |Informations|Détails|
 |---|---|

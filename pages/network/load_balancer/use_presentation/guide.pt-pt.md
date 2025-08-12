@@ -111,10 +111,10 @@ Equilibre o esforço das base de dados e crie redundâncias:
 
 ## Quer saber mais? Consulte a informação abaixo
 
-[Saber mais sobre o Load Balancer](https://pt.wikipedia.org/wiki/Balanceamento_de_carga){.external}.
+[Saber mais sobre o Load Balancer](https://pt.wikipedia.org/wiki/Balanceamento_de_carga).
 
-[Saber mais sobre Haproxy](http://www.haproxy.org/#desc){.external}.
+[Saber mais sobre Haproxy](http://www.haproxy.org/#desc).
 
-[Saber mais sobre Nginx](https://pt.wikipedia.org/wiki/Nginx){.external}.
+[Saber mais sobre Nginx](https://pt.wikipedia.org/wiki/Nginx).
 
 Ou fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

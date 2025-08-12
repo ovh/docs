@@ -351,7 +351,7 @@ La passerelle est disponible pour le Cluster Nutanix dans le VLAN 1.
 
 ### Test de la bande passante
 
-Vous pouvez contrôler la bande passante de votre serveur avec un outil nommé Iperf que vous pouvez trouver sur le [site officiel de Iperf](https://iperf.fr/){.external}.
+Vous pouvez contrôler la bande passante de votre serveur avec un outil nommé Iperf que vous pouvez trouver sur le [site officiel de Iperf](https://iperf.fr/).
 
 Pour effectuer un test complet, créez une machine virtuelle sous Linux, installez le logiciel iperf3 et lancez cette commande :
 

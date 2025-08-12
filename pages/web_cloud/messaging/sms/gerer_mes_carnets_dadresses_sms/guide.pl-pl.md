@@ -16,7 +16,7 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 
 - Posiadanie aktywnego konta SMS OVHcloud.
 - Posiadanie arkusza kalkulacyjnego lub edytora tekstu.
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

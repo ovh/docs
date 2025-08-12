@@ -12,13 +12,13 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
-- Dostęp do [Panelu klienta](/links/manager){.external}, sekcja `Web Cloud`{.action}
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
+- Dostęp do [Panelu klienta](/links/manager), sekcja `Web Cloud`{.action}
 
 > [!primary]
 > Tylko hosting WWW **Pro** lub **Performance** umożliwia aktywację kilku użytkowników FTP i połączenie przez SSH.
 >
-> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php){.external} lub [Cyberduck](https://cyberduck.io/){.external}.
+> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php) lub [Cyberduck](https://cyberduck.io/).
 
 ## W praktyce
 
@@ -33,12 +33,12 @@ Aby zalogować się do przestrzeni dyskowej FTP, pobierz następujące elementy:
 
 > [!primary]
 >
-> Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu podczas jego rejestracji. Są one dostępne w [Panelu klienta OVHcloud](/links/manager){.external}.
+> Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu podczas jego rejestracji. Są one dostępne w [Panelu klienta OVHcloud](/links/manager).
 > 
 > **Jeśli dysponujesz już tymi elementami**, przejdź bezpośrednio do etapu 2  [niniejszego przewodnika](#ftp_storage_access).
 > 
 
-Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
+Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
 
 Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
 
@@ -67,7 +67,7 @@ Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stroni
 
 > [!primary]
 >
-> W zależności od oferty [hosting OVHcloud](/links/web/hosting){.external}, którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
+> W zależności od oferty [hosting OVHcloud](/links/web/hosting), którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
 >
 
 Jeśli nie znasz hasła użytkownika FTP lub SSH, zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
@@ -104,7 +104,7 @@ Jeśli wprowadzone dane są poprawne, program, którego używasz wyświetla zawa
 
 #### 2. Logowanie przez SSH <a name="ssh"></a>
 
-Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](/links/web/hosting){.external} **Pro** lub **Performance**.
+Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](/links/web/hosting) **Pro** lub **Performance**.
 
 Aby zalogować się przez SSH, użyj terminala, aby połączyć się bezpośrednio z przestrzenią dyskową FTP za pomocą wierszy poleceń. 
 
@@ -143,9 +143,9 @@ Skorzystaj z naszej dokumentacji "[Korzystanie z połączenia SSH na hostingu](/
 
 ## Sprawdź również
 
-[Zmień hasło użytkownika FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+[Zmień hasło użytkownika FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
-[Korzystanie z połączenia SSH na hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+[Korzystanie z połączenia SSH na hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 [Użyj PuTTY do logowania przez SSH](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

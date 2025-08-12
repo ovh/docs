@@ -31,7 +31,7 @@ Afin de vous connecter à votre base, assurez vous de ceci :
 - Disposer du mot de passe de votre base de données
 - Disposer du nom de votre base de données
 
-Toutes ces informations sont disponibles dans votre [Espace Client Web](/links/manager){.external}.
+Toutes ces informations sont disponibles dans votre [Espace Client Web](/links/manager).
 
 Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.ref}
 
@@ -90,7 +90,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 > [!primary]
 >
-> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service Web Cloud Databases »](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#importation-dune-base-de-donnees){.external} si nécessaire.
+> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service Web Cloud Databases »](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#importation-dune-base-de-donnees) si nécessaire.
 >
 
 ## Aller plus loin

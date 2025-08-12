@@ -20,7 +20,7 @@ The SSL encryption levels are identical between these three certificate types.
 
 The main difference lies in the level of checks that will be carried out by the Certification Authority (CA) that issues the SSL certificate and attests to its authenticity.
 
-For OVHcloud web hosting plans, the certification authority delivering DV SSL certificates is [Sectigo](https://sectigostore.com){.external}.
+For OVHcloud web hosting plans, the certification authority delivering DV SSL certificates is [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >

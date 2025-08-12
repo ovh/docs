@@ -84,7 +84,7 @@ Die DNS-Zone ist nun zur Verwendung mit einem Shopify Hosting konfiguriert.
 
 ### Domainname mit Shopify verbinden
 
-Loggen Sie sich hierzu ins Shopify-Verwaltungsinterface ein und führen Sie Schritt 2 der [Anleitung von Shopify](https://help.shopify.com/de/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){.external} aus.
+Loggen Sie sich hierzu ins Shopify-Verwaltungsinterface ein und führen Sie Schritt 2 der [Anleitung von Shopify](https://help.shopify.com/de/manual/domains/add-a-domain/connecting-domains/connect-domain-manual) aus.
 
 > [!primary]
 >

@@ -109,7 +109,7 @@ Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new 
 
 You can edit and remove database access via the `...`{.action} button in the IP table.
 
-If you don't know how to get your IP, please visit a website such as [www.WhatismyIP.com](https://www.whatismyip.com/){.external}.
+If you don't know how to get your IP, please visit a website such as [www.WhatismyIP.com](https://www.whatismyip.com/).
 Copy the IP address shown on this website and save them for later.
 
 Your OpenSearch service is now fully accessible!
@@ -161,7 +161,7 @@ In practice, for OpenSearch Dashboards to work properly, you must grant the user
 
 An index contains a database schema. Each data is based on a basic unit which is a JSON document, indexed with a unique ID. Indexing is the method used to store data and by the search engine for fast retrieval.
 
-You can learn more browsing the [OpenSearch official documentation - Index data](https://opensearch.org/docs/latest/opensearch/index-data/){.external}
+You can learn more browsing the [OpenSearch official documentation - Index data](https://opensearch.org/docs/latest/opensearch/index-data/)
 
 It's not mandatory, but if needed, you can add new indexes in the OpenSearch database.
 
@@ -324,7 +324,7 @@ You service is now configured. To go further,
 
 [OpenSearch capabilities](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities)
 
-[OpenSearch Official documentation](https://opensearch.org/docs/latest){.external}
+[OpenSearch Official documentation](https://opensearch.org/docs/latest)
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/opensearch) to find how to connect to your database with several languages.
 

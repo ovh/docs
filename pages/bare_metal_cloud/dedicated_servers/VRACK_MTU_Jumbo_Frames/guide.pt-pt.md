@@ -12,7 +12,7 @@ Os quadros Jumbo, ou *Jumbo Frames*, são quadros Ethernet cuja carga útil é s
 
 ## Requisitos
 
-- Ter um [vRack](/links/network/vrack){.external}.
+- Ter um [vRack](/links/network/vrack).
 - Abrir um shell com direitos root
 
 > [!warning]

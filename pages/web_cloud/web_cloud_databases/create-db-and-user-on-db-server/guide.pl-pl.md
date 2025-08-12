@@ -12,14 +12,14 @@ Baza danych (z ang.*database* lub w skrócie „DB”) umożliwia przechowywanie
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Web Cloud Databases](/links/web/databases){.external} (zawartej w ofercie [hostingu www Performance](/links/web/hosting).
+- Posiadanie [instancji Web Cloud Databases](/links/web/databases) (zawartej w ofercie [hostingu www Performance](/links/web/hosting).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 ### Tworzenie bazy danych
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager){.external}. Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę prywatnego serwera SQL.
+Przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę prywatnego serwera SQL.
 
 Przejdź do karty `Bazy danych`, a następnie `Dodaj bazę danych`{.action}.
 
@@ -45,7 +45,7 @@ Następnie kliknij `Zatwierdź`{.action}.
 
 Aby korzystać z serwera baz danych OVHcloud, należy utworzyć użytkowników, którzy będą mieli określone uprawnienia do łączenia się z bazą danych. 
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager){.external}. Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
+Przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
 
 Następnie przejdź do zakładki `Użytkownicy i uprawnienia` i kliknij `Dodaj użytkownika`{.action}
 
@@ -57,7 +57,7 @@ Wpisz nazwę użytkownika i hasło, a następnie kliknij `Zatwierdź`{.action}.
 
 Aby zezwolić użytkownikowi na wykonywanie operacji na bazie danych, należy mu przypisać uprawnienia.
 
-Aby zarządzać uprawnieniami każdego użytkownika, przejdź do [Panelu klienta OVHcloud](/links/manager){.external}. Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych. Teraz wybierz zakładkę `Użytkownicy i uprawnienia`{.action}.
+Aby zarządzać uprawnieniami każdego użytkownika, przejdź do [Panelu klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych. Teraz wybierz zakładkę `Użytkownicy i uprawnienia`{.action}.
 
 Kliknij przycisk `(...)`{.action} po prawej stronie wybranego użytkownika, a następnie `Zarządzanie uprawnieniami`{.action}.
 
@@ -85,7 +85,7 @@ Opis 3 rodzajów proponowanych uprawnień:
 > Przed usunięciem bazy danych na serwerze baz danych, nie jest sprawdzana zawartość bazy. Zostanie ona zatem usunięta, nawet jeśli dane są tam nadal zapisywane. Dlatego przed usunięciem bazy danych zaleca się wykonanie kopii zapasowej i pobranie jej.
 > 
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager){.external}. Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę prywatnego serwera SQL.
+Przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę prywatnego serwera SQL.
 
 Aby usunąć bazę danych na serwerze baz danych, przejdź do zakładki `Bazy danych`, następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie odpowiedniej bazy danych i kliknij `Usuń bazę danych`{.action}.
 

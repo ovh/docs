@@ -81,7 +81,7 @@ Siga los pasos de instalación haciendo clic en las fichas siguientes:
 >> - **Nombre completo** : Introduzca su dirección de correo electrónico completa
 >> - **Descripción**
 >> - **Servidor de correo electrónico de entrada IMAP**:<br>- **Nombre de host IMAP**: introduzca pro?.mail.ovh.net (sustituya bien "?" por el número de su servidor)<br>- **Puerto IMAP**: 993<br>- **Nombre de usuario IMAP**: su dirección de correo electrónico completa<br>- **Contraseña IMAP**: la de su dirección de correo electrónico<br>- **Seguridad del puerto**: SSL
->> - **Servidor de correo electrónico entrante SMTP**:<br>- **Nombre de host SMTP**: introduzca pro?.mail.ovh.net (sustituya bien "?" por el número de su servidor)<br>- **Puerto SMTP**: 587<br>- **Nombre de usuario SMTP**: su dirección de correo electrónico completa<br>- **Contraseña SMTP**: la de su dirección de correo electrónico<br>- **Seguridad del puerto**: Fallos del comando STARTTLS
+>> - **Servidor de correo electrónico de saliente SMTP**:<br>- **Nombre de host SMTP**: introduzca pro?.mail.ovh.net (sustituya bien "?" por el número de su servidor)<br>- **Puerto SMTP**: 587<br>- **Nombre de usuario SMTP**: su dirección de correo electrónico completa<br>- **Contraseña SMTP**: la de su dirección de correo electrónico<br>- **Seguridad del puerto**: Fallos del comando STARTTLS
 >>
 >> Para finalizar la configuración, pulse `Conectar`{.action}.
 >>

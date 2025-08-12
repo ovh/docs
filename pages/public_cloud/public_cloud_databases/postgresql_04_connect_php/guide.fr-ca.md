@@ -40,7 +40,7 @@ To interact with your PostgreSQL instance with PHP, your development environment
 - A compatible version of PHP;
 - PostgresSQL and PDO PHP extension;
 
-Please follow the official [PostgreSQL](https://www.php.net/manual/en/book.pgsql.php){.external} to get the latest information.
+Please follow the official [PostgreSQL](https://www.php.net/manual/en/book.pgsql.php) to get the latest information.
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in the documentation page linked above.
 

@@ -352,7 +352,7 @@ The gateway is available for the Nutanix Cluster in VLAN 1.
 
 ### Test bandwidth
 
-You can control your server's bandwidth with a tool called Iperf that you can find on [Iperf's official website](https://iperf.fr/){.external}.
+You can control your server's bandwidth with a tool called Iperf that you can find on [Iperf's official website](https://iperf.fr/).
 
 To perform a full test, create a virtual machine on Linux, install iperf3 software and run this command:
 

@@ -24,13 +24,13 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 ## Requisitos
 
 - Ter criado uma [instância Public Cloud](/links/public-cloud/public-cloud).
-- Aceder à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Aceder à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Desde à Área de Cliente OVHcloud
 
-Na [Área de Cliente OVHcloud](/links/manager){.external}, escolha a instância para a qual deseja mudar o modo de faturação e abra o respetivo menu de opções clicando nos 3 pontos do lado direito da Instância. Terá então acesso ao botão `Passar para o plano mensal`{.action}:
+Na [Área de Cliente OVHcloud](/links/manager), escolha a instância para a qual deseja mudar o modo de faturação e abra o respetivo menu de opções clicando nos 3 pontos do lado direito da Instância. Terá então acesso ao botão `Passar para o plano mensal`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
@@ -63,7 +63,7 @@ Utilize a seguinte chamada:
 
 ### A partir de um script Terraform
 
-Isto é possível graças ao `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} do recurso [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Isto é possível graças ao `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) do recurso [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
 
 ```terraform
 metadata = {

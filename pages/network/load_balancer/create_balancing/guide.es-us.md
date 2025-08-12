@@ -12,7 +12,7 @@ El nuevo Load Balancer de OVH ofrece distintos tipos de balanceo de la carga de 
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](/links/manager){.external}.
+- Estar conectado al [área de cliente de OVH](/links/manager).
 - Haber creado una granja de servidores.
 
 ## Procedimiento
@@ -21,7 +21,7 @@ El nuevo Load Balancer de OVH ofrece distintos tipos de balanceo de la carga de 
 
 En las granjas de servidores, el balanceo de carga determina la forma en la que las peticiones se distribuirán entre los distintos servidores de la granja.
 
-Para conocer las principales características del Load Balancer de OVH, consulte la [guía de presentación del servicio](/pages/network/load_balancer/use_presentation){.external}.
+Para conocer las principales características del Load Balancer de OVH, consulte la [guía de presentación del servicio](/pages/network/load_balancer/use_presentation).
 
 |Algoritmo|Funcionalidades|
 |---|---|

@@ -46,7 +46,7 @@ Il primo step consiste nell'identificare le tavole voluminose presenti nel tuo d
 >
 > Tutte le azioni descritte in questo tutorial saranno realizzate a partire da **phpMyAdmin**.
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} è disponibile su tutti i database condivisi OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/) è disponibile su tutti i database condivisi OVHcloud.
 > Questa applicazione di gestione database facilita la realizzazione delle azioni manuali che puoi effettuare con il tuo database.
 >
 >
@@ -127,10 +127,10 @@ Per gli altri casi relativi ai CMS, ti consigliamo di contattare direttamente il
 
 Di seguito trovi i link ai siti ufficiali dei CMS proposti per l'installazione "**In un click**" da OVHcloud:
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://www.joomla.org){.external}
-- [PrestaShop](https://www.prestashop.com/){.external}
-- [Drupal](https://drupal.org){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://www.joomla.org)
+- [PrestaShop](https://www.prestashop.com/)
+- [Drupal](https://drupal.org)
 
 > [!primary]
 >

@@ -1,6 +1,6 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2025-03-25
+updated: 2025-08-07
 ---
 
 ## FAQ VPS
@@ -16,11 +16,6 @@ Os nossos VPS são o compromisso ideal entre o alojamento web e um servidor fís
 Depois de um alojamento web, o VPS é a evolução lógica como solução de alojamento. Os VPS oferecem mais possibilidades e uma maior liberdade em matéria de configuração, acesso e funcionalidade (root, Apache, PHP.init). Também poderá instalar um certificado SSL ou qualquer outro software à sua escolha.
 
 Neste sentido, recomendamos que preste especial atenção no momento de escolher o seu VPS, uma vez requererá uma configuração adaptada às necessidades das aplicações alojadas assim como o crescimento da sua atividade.
-
-### Qual a melhor opção: VPS ou alojamento Web Plesk?
-
-Num alojamento web Plesk, é-lhe disponibilizado um espaço com Plesk pré-instalado. Pode alojar os seus websites, mas não é o administrador do serviço. Este só poderá servir para a gestão.  
-Ao escolher um VPS, é o administrador do seu servidor e a OVHcloud não tem acesso ao seu conteúdo. Assim, é livre de o utilizar em função das suas necessidades.
 
 ### Quais são as vantagens de um VPS relativamente a um servidor dedicado?
 
@@ -71,8 +66,8 @@ Sim. Um VPS pode ser particionado e organizado em função das suas necessidades
 
 ### São realizados backups do meu VPS?
 
-A OVHcloud não fornece um backup dos dados alojados no seu VPS. Deverá aplicar a sua própria estratégia de backups.  
-Para isso, pode utilizar as seguintes opções: o backup manual (Snapshot) ou o backup automatizado.
+É aconselhável implementar uma estratégia de backup adequada, de acordo com a sensibilidade dos seus dados.  
+Visite a nossa [página web da VPS](/links/bare-metal/vps-options) para saber mais sobre as opções disponíveis.
 
 ### Como proteger o meu VPS?
 

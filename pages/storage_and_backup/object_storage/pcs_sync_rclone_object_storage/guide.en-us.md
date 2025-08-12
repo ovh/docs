@@ -14,7 +14,7 @@ Rclone is an external synchronisation program - you can find further details for
 
 ## Requirements
 
-- You need to have created an *Object Storage* container (you can create one from the Control Panel or from [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container){.external})
+- You need to have created an *Object Storage* container (you can create one from the Control Panel or from [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container))
 - You need to have created an OpenStack user account
 
 ## Instructions
@@ -52,7 +52,7 @@ Rclone lsd BackupStorage
 
 (Where *BackupStorage* is the name given to your storage space.)
 
-You can find more detailed instructions on how to synchronise your object storage and Rclone on the official Rclone website: [Official Rclone documentation](https://Rclone.org/swift/){.external}.
+You can find more detailed instructions on how to synchronise your object storage and Rclone on the official Rclone website: [Official Rclone documentation](https://Rclone.org/swift/).
 
 ## Go further
 

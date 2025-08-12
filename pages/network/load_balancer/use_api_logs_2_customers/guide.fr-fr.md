@@ -41,7 +41,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 **Quels sont les logs d’un OVHcloud Load Balancer ?**
 
-Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wiki/HAProxy){.external} (le composant open source utilisé pour la répartition de charge).
+Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wiki/HAProxy) (le composant open source utilisé pour la répartition de charge).
 
 ### Consignation du contenu pour les écouteurs TCP : `TCP`, `HTTP`
 
@@ -60,7 +60,7 @@ Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wik
 | backend_source_port_int | Port source utilisé par le Load Balancer pour se connecter à vos serveurs backend | *Integer* |
 | server_ip | Adresse IP du serveur backend connecté à votre Load Balancer | IP |
 | server_port_int | Port TCP du serveur backend connecté à votre Load Balancer | *Integer* |
-| termination_state | L'indicateur de fin de session : 2 lettres pour TCP, 4 lettres pour HTTP, tous les détails sont sur la [page de documentation HAProxy](https://docs.haproxy.org/2.6/configuration.html#8.5){.external}| Chaîne (par exemple « ---- ») |
+| termination_state | L'indicateur de fin de session : 2 lettres pour TCP, 4 lettres pour HTTP, tous les détails sont sur la [page de documentation HAProxy](https://docs.haproxy.org/2.6/configuration.html#8.5)| Chaîne (par exemple « ---- ») |
 | bytes_read_int | Taille (en octets) de la réponse envoyée par le Load Balancer au client | *Integer* |
 | bytes_uploaded_int | Taille (en octets) de la requête envoyée par le client au Load Balancer | *Integer* |
 | time_duration_int | Durée (en millisecondes) de la session TCP au moment où la demande a été effectuée | *Integer* |
@@ -184,7 +184,7 @@ Maintenant que vos logs sont ingérés et stockés dans votre flux de données L
 - Dans votre espace client, récupérez le nom d'utilisateur LDP (ex: logs-xxxx) et son mot de passe sur la page d'accueil de votre compte Logs Data Platform. Vous pouvez vous référer au [Guide de démarrage rapide pour Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Ouvrir l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est `https://gra1.logs.ovh.com/`).
 - Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
-- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries (EN)](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
+- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries (EN)](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html) pour plus de détails sur la syntaxe de recherche.
 
 Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs (EN)](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec Logs Data Platform, y compris sur la façon de :
 

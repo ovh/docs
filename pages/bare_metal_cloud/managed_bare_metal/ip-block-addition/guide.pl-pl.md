@@ -12,8 +12,8 @@ Blok IP umożliwia udostępnianie witryn w Internecie.
 
 ## Wymagania początkowe
 
-* Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
-* Posiadanie [infrastruktury Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external} na koncie OVHcloud.
+* Dostęp do [Panelu klienta OVHcloud](/links/manager).
+* Posiadanie [infrastruktury Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/) na koncie OVHcloud.
 
 ## W praktyce
 
@@ -86,7 +86,7 @@ Następnie użyj tego wywołania API, aby przenieść IP na “parking adresów 
 > To wywołanie odcina dostęp do sieci maszynom wirtualnym, które wykorzystują dane adresy IP.
 >
 
-Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](/links/manager){.external} w sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}. Kliknij Twoją usługę Managed Bare Metal, a następnie kartę `Operacje`{.action}.
+Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](/links/manager) w sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}. Kliknij Twoją usługę Managed Bare Metal, a następnie kartę `Operacje`{.action}.
 
 Odnośnik do operacji to “removeIpRipeBlock”.
 

@@ -36,7 +36,7 @@ At the end of this tutorial you should have the following flow:
 - The [OpenStack API CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) installed.
 - Being familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 - Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you wish to use it.
-- The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
+- The JSON parser tool [jq](https://stedolan.github.io/jq/) installed.
 
 ## Initialization
 

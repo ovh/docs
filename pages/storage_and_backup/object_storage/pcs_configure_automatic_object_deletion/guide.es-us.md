@@ -36,7 +36,7 @@ En este ejemplo, el archivo test.txt se eliminará al cabo de una hora.
 
 ## En una fecha determinada
 
-En primer lugar, hay que conocer la fecha de eliminación en formato Epoch. Para calcularla fácilmente puede utilizar un [conversor](http://espanol.epochconverter.com/){.external}.
+En primer lugar, hay que conocer la fecha de eliminación en formato Epoch. Para calcularla fácilmente puede utilizar un [conversor](http://espanol.epochconverter.com/).
 
 A continuación, introduzca ese valor en el header X-Delete-At:
 

@@ -83,7 +83,7 @@ Tous les autres champs probe peuvent rester à leur valeur par défaut. Il ne re
 
 Par défaut, la `sonde` HTTP envoie une requête "OPTIONS" sur "/" en HTTP/1.0, sans nom de domaine. Cela suffit dans beaucoup de cas, mais certains serveurs ne gèrent pas cette méthode. Et il est possible de faire des tests beaucoup plus puissants avec la sonde HTTP. Par exemple, une bonne pratique lors de l'exposition d'un service HTTP consiste à ajouter une route dédiée aux sondes. Il est courant de retrouver des "/status", "/health", "/check" qui renvoient une synthèse de l'état du service.
 
-Dans la pratique, si vous voulez configurer la sonde pour envoyer une requête "GET" sur [http://api.example.com/status](http://api.example.com/status){.external}, cela donne :
+Dans la pratique, si vous voulez configurer la sonde pour envoyer une requête "GET" sur [http://api.example.com/status](http://api.example.com/status), cela donne :
 
 |Champ|Valeur et description|
 |---|---|
@@ -91,7 +91,7 @@ Dans la pratique, si vous voulez configurer la sonde pour envoyer une requête "
 |farmId|Identifiant de votre ferme TCP ou HTTP|
 |probe.type|http|
 |probe.method|GET|
-|probe.url|[http://api.example.com/status](http://api.example.com/status){.external}|
+|probe.url|[http://api.example.com/status](http://api.example.com/status)|
 |probe.match|status|
 |probe.pattern|200 (Plusieurs codes d'état peuvent être ajoutés, en les séparant par des virgules)|
 

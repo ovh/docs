@@ -14,7 +14,7 @@ No atual panorama digital, as empresas estão a tornar-se cada vez mais dinâmic
 
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção Web Cloud.
-- Ter uma conta [GitHub](https://github.com/){.external} e ter acesso à mesma.
+- Ter uma conta [GitHub](https://github.com/) e ter acesso à mesma.
 
 > [!primary]
 >

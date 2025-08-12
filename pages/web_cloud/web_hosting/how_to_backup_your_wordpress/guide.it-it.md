@@ -15,7 +15,7 @@ Su un hosting Web condiviso, sei responsabile dei backup del tuo sito Web. Anche
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a [fornitore specializzato](/links/partner) o [amministratore del CMS WordPress](https://wordpress.com/support/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a [fornitore specializzato](/links/partner) o [amministratore del CMS WordPress](https://wordpress.com/support/). OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
 
 **Questa guida ti mostra come salvare il contenuto del tuo sito WordPress e del suo database.**
@@ -68,7 +68,7 @@ Clicca su `Esegui`{.action} per scaricare il database completo in formato SQL (S
 
 ### Metodo n°2 - Effettuare un backup con estensione
 
-Le estensioni WordPress permettono di gestire i backup La più popolare è [UdraftPlus](https://wordpress.org/plugins/updraftplus/){.external}, con diversi milioni di impianti attivi. La versione gratuita è sufficiente per salvare il tuo sito Web. La versione premium offre più opzioni come backup incrementali, strumenti di migrazione, backup multisito, più scelta sui cloud per archiviare i dati, ecc...
+Le estensioni WordPress permettono di gestire i backup La più popolare è [UdraftPlus](https://wordpress.org/plugins/updraftplus/), con diversi milioni di impianti attivi. La versione gratuita è sufficiente per salvare il tuo sito Web. La versione premium offre più opzioni come backup incrementali, strumenti di migrazione, backup multisito, più scelta sui cloud per archiviare i dati, ecc...
 
 Scarica l'estensione in `.zip` sul tuo computer. Per motivi di chiarezza, il file caricato dell'estensione verrà rinominato **updraftplus.zip** nel seguito di questa guida.
 
@@ -143,7 +143,7 @@ Applicando queste best practice, hai la possibilità di tornare a una versione p
 
 ## Per saperne di più <a name="go-further"></a>
 
-- [Sito ufficiale di WordPress](https://wordpress.org){.external}
+- [Sito ufficiale di WordPress](https://wordpress.org)
 - [Maggiori informazioni sui backup del tuo hosting Web](/pages/web_cloud/web_hosting/hosting_technical_specificities#informazioni-sui-backup-automatici)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).

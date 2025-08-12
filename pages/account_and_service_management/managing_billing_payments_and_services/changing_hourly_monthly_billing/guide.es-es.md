@@ -24,13 +24,13 @@ Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas 
 ## Requisitos
 
 - Debe haber creado una [instancia de Public Cloud](/links/public-cloud/public-cloud)
-- Debe estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}
+- Debe estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
 ### Desde el área de cliente de OVHcloud
 
-Una vez iniciada sesión en el [área de cliente de OVHcloud](/links/manager){.external}, seleccione la instancia cuya tarifa de facturación desea cambiar en el panel de control y abra su menú de opciones haciendo clic en los tres puntos a la derecha de dicha instancia. A continuación, podrá ver el botón `«Cambiar a suscripción mensual»`{.action}:
+Una vez iniciada sesión en el [área de cliente de OVHcloud](/links/manager), seleccione la instancia cuya tarifa de facturación desea cambiar en el panel de control y abra su menú de opciones haciendo clic en los tres puntos a la derecha de dicha instancia. A continuación, podrá ver el botón `«Cambiar a suscripción mensual»`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
@@ -63,7 +63,7 @@ Utilice la siguiente llamada:
 
 ### Desde un script Terraform
 
-Esto es posible gracias a los `metadata` [atributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} del recurso [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Esto es posible gracias a los `metadata` [atributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) del recurso [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
 
 ```terraform
 metadata = {

@@ -11,7 +11,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/){.external} zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 **Dieses Tutorial erklärt, wie Sie Ihr WordPress mit .htaccess-Dateien absichern.**
@@ -23,9 +23,9 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 
 **.htaccess**-Dateien können mit Texteditoren erstellt und bearbeitet werden, zum Beispiel:
 
-- [Notepad](https://support.microsoft.com/de-de/windows/hilfe-in-windows-editor-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} in Windows
-- [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac){.external} in macOS
-- [Notepad++](https://notepad-plus-plus.org/){.external}
+- [Notepad](https://support.microsoft.com/de-de/windows/hilfe-in-windows-editor-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c) in Windows
+- [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac) in macOS
+- [Notepad++](https://notepad-plus-plus.org/)
 
 > [!primary]
 >

@@ -129,7 +129,7 @@ Jeśli potrzebujesz dodatkowych loginów DynHost, powtórz ten etap tyle razy, i
 
 ### 2 - Utworzenie dynamicznego rekordu DNS (DynHost) <a name="step2"></a>
 
-Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynamicznie. Rekord DynHost nie może już istnieć w strefie DNS OVHcloud Twojej domeny jako rekord "A" lub "AAAA". Aby zweryfikować rekord, i w razie potrzeby go usunąć, zapoznaj się z informacjami zawartymi w przewodniku [Modyfikacja DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
+Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynamicznie. Rekord DynHost nie może już istnieć w strefie DNS OVHcloud Twojej domeny jako rekord "A" lub "AAAA". Aby zweryfikować rekord, i w razie potrzeby go usunąć, zapoznaj się z informacjami zawartymi w przewodniku [Modyfikacja DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Gdy jesteś gotowy, aby utworzyć rekord DynHost, w tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 

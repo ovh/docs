@@ -12,14 +12,14 @@ A Área de Cliente OVHcloud oferece-lhe várias opções de personalização da 
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external} e aceder à secção `Hosted Private Cloud`{.action} e, depois, `Private Cloud`{.action}.
-- Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager) e aceder à secção `Hosted Private Cloud`{.action} e, depois, `Private Cloud`{.action}.
+- Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
 
 ## Instruções
 
 ### Separador geral
 
-Depois de aceder à secção  `Hosted Private Cloud`{.action} e `Private Cloud`{.action} da [Área de Cliente OVHcloud](/links/manager){.external}, visualizará um panorama geral da sua Private Cloud:
+Depois de aceder à secção  `Hosted Private Cloud`{.action} e `Private Cloud`{.action} da [Área de Cliente OVHcloud](/links/manager), visualizará um panorama geral da sua Private Cloud:
 
 ![Informações gerais](images/controlpanel1.png){.thumbnail}
 
@@ -178,7 +178,7 @@ O separador `Licença Windows`{.action} permite ativar as licenças SPLA Windows
 
 ![Licença SPLA Windows](images/controlpanel10.png){.thumbnail}
 
-Encontrará a página das tarifas [aqui](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Encontrará a página das tarifas [aqui](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/images-licenses/).
 
 ### Panorama datacenter
 
@@ -231,7 +231,7 @@ O separador Backup permite-lhe ativar a solução `Veeam Backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Para mais informações acerca desta opção, consulte [este guia](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service){.external}.
+Para mais informações acerca desta opção, consulte [este guia](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service).
 
 ## Quer saber mais?
 

@@ -12,7 +12,7 @@ O novo Load Balancer OVH oferece diferentes tipos de repartição de carga para 
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVH](/links/manager).
 - Ter uma Farm de servidores criada.
 
 ## Instruções
@@ -21,7 +21,7 @@ O novo Load Balancer OVH oferece diferentes tipos de repartição de carga para 
 
 A repartição de carga é utilizada nas Farms de servidores. É este parâmetro que define a forma como os pedidos são distribuídos entre os servidores da Farm.
 
-Para conhecer os principais elementos do Load Balancer OVH, consulte [Apresentação do Load Balancer](/pages/network/load_balancer/use_presentation){.external}. 
+Para conhecer os principais elementos do Load Balancer OVH, consulte [Apresentação do Load Balancer](/pages/network/load_balancer/use_presentation). 
 
 |Algoritmo|Funcionalidades|
 |---|---|

@@ -252,9 +252,9 @@ network:
 
 - Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi
 - Aver selezionato un intervallo di indirizzi IP privati
-- Disporre di un [server compatibile con la vRack](/links/bare-metal/bare-metal){.external}
-- Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Disporre di un [server compatibile con la vRack](/links/bare-metal/bare-metal)
+- Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 #### Spiegazioni
 

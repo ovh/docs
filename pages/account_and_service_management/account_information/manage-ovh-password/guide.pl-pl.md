@@ -40,7 +40,7 @@ Istnieje kilka skutecznych metod tworzenia haseł. Polecamy na przykład **metod
 
 Narodowa Komisja Ochrony Informacji i Wolności (CNIL), francuska organizacja powołana do czuwania nad przestrzeganiem postanowień dotyczących ochrony danych osobowych, rekomenduje również użycie narzędzia do generacji silnych haseł działającego w oparciu o metodę pierwszych liter.
 
-Więcej informacji znajdziesz w sekcji  [Sprawdź również](./#sprawdz-rowniez){.external} na końcu tego przewodnika.
+Więcej informacji znajdziesz w sekcji  [Sprawdź również](./#sprawdz-rowniez) na końcu tego przewodnika.
 
 ### Użycie managera haseł 
 
@@ -113,12 +113,12 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 > 
 
 ## Sprawdź również
-[Zalecenia dotyczące tworzenia bezpiecznych haseł](https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla){.external}
+[Zalecenia dotyczące tworzenia bezpiecznych haseł](https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla)
 
-[Krajowy system cyberbezpieczeństwa](https://www.gov.pl/web/cyfryzacja/krajowy-system-cyberbezpieczenstwa-){.external}
+[Krajowy system cyberbezpieczeństwa](https://www.gov.pl/web/cyfryzacja/krajowy-system-cyberbezpieczenstwa-)
 
-[Manager haseł KeePass](https://keepass.info/){.external}
+[Manager haseł KeePass](https://keepass.info/)
 
-[Przykładowy darmowy generator haseł](https://www.lastpass.com/password-generator){.external}
+[Przykładowy darmowy generator haseł](https://www.lastpass.com/password-generator)
 
 Dołącz do [grona naszych użytkowników](/links/community).

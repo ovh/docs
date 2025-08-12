@@ -47,7 +47,7 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 
 ## Procedimiento
 
-Acceda al [área de cliente de OVHcloud](/links/manager){.external}. Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
+Acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
 Seleccione el alojamiento correspondiente, abra la pestaña `Más`{.action} y haga clic en `Cron.`{.action}.
 
@@ -152,7 +152,7 @@ Una prueba sencilla de si el script producirá un error es ejecutarlo en un nave
 
 #### Comprobación del uso de rutas absolutas
 
-Utilice siempre rutas de acceso absolutas a los archivos de sus scripts. La constante "DIR", por ejemplo, puede ayudar a obtener la ruta actual en los scripts PHP ([documentación PHP](https://www.php.net/manual/en/language.constants.predefined.php){.external}).
+Utilice siempre rutas de acceso absolutas a los archivos de sus scripts. La constante "DIR", por ejemplo, puede ayudar a obtener la ruta actual en los scripts PHP ([documentación PHP](https://www.php.net/manual/en/language.constants.predefined.php)).
  
 #### Verificación de los logs de ejecución
 

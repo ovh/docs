@@ -33,7 +33,7 @@ Niniejszy przewodnik wyjaśnia, jak emitować token OpenStack, używać go do wy
 
 ## Wymagania początkowe 
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Niniejszy przewodnik wymaga instalacji narzędzia OpenStack CLI na Twoim komputerze.
 
 > [!primary]

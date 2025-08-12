@@ -40,7 +40,7 @@ Se ricevi un alert via email o noti qualsiasi segno di malfunzionamento, è fond
 
 #### Server con RAID software
 
-Se possiedi un server che dispone di un RAID software, fai riferimento alla guida [Software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external} per trovare i dischi installati sul tuo server.
+Se possiedi un server che dispone di un RAID software, fai riferimento alla guida [Software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft) per trovare i dischi installati sul tuo server.
 
 Una volta individuato il percorso per accedere ai dischi, puoi testarli utilizzando il comando `smartctl` come segue:
 
@@ -84,7 +84,7 @@ Nel nostro caso, la riga importante è la seguente:
 
 #### Server con RAID hardware
 
-Se il tuo server dispone di un RAID hardware, fai riferimento alla guida (in inglese) [Hardware RAID - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} e segui la procedura relativa al tuo tipo di controller RAID per trovare i percorsi di accesso ai tuoi dischi.
+Se il tuo server dispone di un RAID hardware, fai riferimento alla guida (in inglese) [Hardware RAID - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard) e segui la procedura relativa al tuo tipo di controller RAID per trovare i percorsi di accesso ai tuoi dischi.
 
 Una volta individuato il percorso per accedere ai dischi, puoi testarli utilizzando il comando `smartctl` come segue:
 
@@ -114,7 +114,7 @@ smartctl -a /dev/sgY
 
 #### Server con un disco NVMe
 
-Nel caso di un disco NVME, è necessario mettere il server in modalità [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} e installare lo strumento `nvme-cli`.
+Nel caso di un disco NVME, è necessario mettere il server in modalità [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) e installare lo strumento `nvme-cli`.
 
 ```sh
 apt install nvme-cli
@@ -136,7 +136,7 @@ root@rescue:~# nvme list
 
 Per richiedere la sostituzione di un disco, basta creare un ticket presso il nostro team di assistenza direttamente dal tuo [Centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help). Al fine di accelerare il processo, fornisci gli elementi collegati ai test. Di seguito, un riepilogo delle informazioni che dovrai fornire.
 
-- **Il numero di serie del disco da sostituire e di tutti gli altri dischi funzionanti**. Per recuperare il numero di serie del disco da sostituire consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial){.external}. Se non è possibile recuperare il numero di serie del disco, è necessario farlo presente nel ticket e comunicarci il numero di serie del o dei dischi da non sostituire. 
+- **Il numero di serie del disco da sostituire e di tutti gli altri dischi funzionanti**. Per recuperare il numero di serie del disco da sostituire consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial). Se non è possibile recuperare il numero di serie del disco, è necessario farlo presente nel ticket e comunicarci il numero di serie del o dei dischi da non sostituire. 
 
 Come anticipato, sono importanti i numeri di tutti i dischi in quanto verranno poi trasmessi al tecnico nel datacenter ed eviteranno un possibile errore durante l’operazione.
 
@@ -199,9 +199,9 @@ Se possiedi un server con RAID software, ti consigliamo di risincronizzare i dis
 
 [RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[RAID hardware - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
+[RAID hardware - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-[Rescue Mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external}
+[Rescue Mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

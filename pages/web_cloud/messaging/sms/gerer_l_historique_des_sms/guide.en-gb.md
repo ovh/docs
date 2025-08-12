@@ -10,7 +10,7 @@ You can view and download a log of your sent SMS messages from your OVHcloud Con
 ## Requirements
 
 - An OVHcloud SMS account with at least 1 sent SMS.
-- You must be logged in to [OVHcloud Control Panel](/links/manager){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![SMS Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

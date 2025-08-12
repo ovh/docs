@@ -70,7 +70,7 @@ La herramienta [FIO](https://github.com/axboe/fio) le permite probar varios esce
 - El número de FIO workers.
 - El modelo de acceso (lectura/escritura/secuencial/aleatoria), etc.
 
-Más información sobre [la documentación de FIO](https://fio.readthedocs.io/en/latest/index.html) {.external}.
+Más información sobre [la documentación de FIO](https://fio.readthedocs.io/en/latest/index.html) .
 
 ## Más información
 

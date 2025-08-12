@@ -6,7 +6,7 @@ updated: 2025-05-14
 
 ## Obiettivo
 
-La [vRack](/links/network/vrack) è una rete privata che permette di configurare l’indirizzamento tra due o più [server dedicati](/links/bare-metal/bare-metal){.external} OVHcloud.
+La [vRack](/links/network/vrack) è una rete privata che permette di configurare l’indirizzamento tra due o più [server dedicati](/links/bare-metal/bare-metal) OVHcloud.
 
 **Questa guida ti mostra come definire la zona annunciata nella vRack per un blocco IP.**
 
@@ -89,6 +89,6 @@ In questo esempio l’indirizzo IP testato è annunciato a **Gravelines**, come 
 
 ## Per saperne di più
 
-[Configurare un blocco di indirizzi IP nella vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack){.external}
+[Configurare un blocco di indirizzi IP nella vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -23,7 +23,7 @@ Loginy są wysyłane e-mailem przy tworzeniu konta Managed Bare Metal, przy zmia
 adres IP/Nazwa: pcc-xxx-xxx-xxx-xxx.ovh.com nazwa użytkownika : admin hasło : xxxxxx
 ```
 
-Dokument VMware zawiera spis portów, które należy otworzyć w zaporze sieciowej, aby np. mieć dostęp do konsoli: [Dostęp do konsoli](https://kb.vmware.com/kb/1012382){.external}
+Dokument VMware zawiera spis portów, które należy otworzyć w zaporze sieciowej, aby np. mieć dostęp do konsoli: [Dostęp do konsoli](https://kb.vmware.com/kb/1012382)
 
 ### Połączenie z vSphere za pomocą klienta desktopowego
 

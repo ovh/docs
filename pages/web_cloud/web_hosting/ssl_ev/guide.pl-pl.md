@@ -22,7 +22,7 @@ Główną różnicą jest poziom weryfikacji, który zostanie przeprowadzony prz
 
 Certyfikaty SSL EV są certyfikatami o najwyższych poziomach weryfikacji i bezpieczeństwa. Certyfikat SSL EV jest zazwyczaj wykorzystywany do tworzenia bardzo dużych stron www lub wrażliwych stron internetowych. Certyfikat ten zapewni najwyższy dostępny poziom identyfikacji.
 
-W przypadku hostingu współdzielonego OVHcloud instytucja certyfikująca certyfikaty SSL EV to [Sectigo](https://sectigostore.com){.external}.
+W przypadku hostingu współdzielonego OVHcloud instytucja certyfikująca certyfikaty SSL EV to [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -42,7 +42,7 @@ W przypadku hostingu współdzielonego OVHcloud instytucja certyfikująca certyf
 - Posiadanie upoważnienia organizacji do zamawiania certyfikatu SSL Sectigo EV.
 - Być w stanie dokładnie uzasadnić informacje i dane kontaktowe dotyczące organizacji.
 
-Aby sprawdzić, czy możesz zamówić certyfikat SSL Sectigo EV, przejdź do [link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+Aby sprawdzić, czy możesz zamówić certyfikat SSL Sectigo EV, przejdź do [link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
   
 ## W praktyce
 
@@ -216,7 +216,7 @@ Po dokonaniu weryfikacji przez Sectigo skontaktujemy się z Tobą przez ich usł
 
 > [!success]
 >
-> Szczegółowe informacje na temat operacji opisanych **w etapie 2** powyżej znajdują się w [oficjalnej dokumentacji Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} na ten temat.
+> Szczegółowe informacje na temat operacji opisanych **w etapie 2** powyżej znajdują się w [oficjalnej dokumentacji Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-) na ten temat.
 >
 
 ### Etap 3: instalacja certyfikatu SSL Sectigo EV z domeną i hostingiem OVHcloud
@@ -227,9 +227,9 @@ Aby w pełni korzystać z certyfikatu SSL Sectigo EV, wystarczy kliknąć na [za
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Oficjalna strona Sectigo](https://sectigostore.com){.external}
+[Oficjalna strona Sectigo](https://sectigostore.com)
 
-[Opis weryfikacji przeprowadzonych przez Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
+[Opis weryfikacji przeprowadzonych przez Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-)
 
 [Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

@@ -173,7 +173,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >>
 >> O protocolo DANE permite a um cliente (browser, cliente de e-mail, cliente FTP, cliente SSH, etc.) consultar o registo TLSA. Desta forma, garante que um certificado SSL/TLS utilizado para um nome de domínio é o que certifica esse mesmo nome de domínio.
 >>
->> Se necessário, pode consultar mais pormenores no website da [**I**nternet **E**ngineering **T**ask **F**orce (**IETF***)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>> Se necessário, pode consultar mais pormenores no website da [**I**nternet **E**ngineering **T**ask **F**orce (**IETF***)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
 
 #### Casos particulares de utilização: a utilização dos registos CNAME <a name="cnameusecase"></a>

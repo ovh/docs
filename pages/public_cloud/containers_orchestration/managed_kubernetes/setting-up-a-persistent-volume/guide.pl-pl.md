@@ -34,7 +34,7 @@ PVC consume abstract storage resources (the PVs) as Pods consume node resources.
 
 ## So you want some persistent storage on your cluster
 
-Let's say you need some persistent storage on your cluster, some kind of network storage for OVHcloud Managed Kubernetes Service that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}. In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`.
+Let's say you need some persistent storage on your cluster, some kind of network storage for OVHcloud Managed Kubernetes Service that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/). In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`.
 
 How do you get them? You simply need to create the PVC object in your cluster. Kubernetes will see your claim and, according to its available resources, allocate a PV corresponding to your claim.
 
@@ -196,7 +196,7 @@ csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Imm
 csi-cinder-high-speed-gen2        cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
 ```
 
-When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/){.external}.
+When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/).
 
 Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing Persistent Volumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes) tutorial. Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
 
@@ -220,7 +220,7 @@ There are 2 possible reclaim policies:
 
 * `Delete`: when the PVC is deleted, the PV and the associated storage in the external infrastructure (i.e. the Cinder storage in our case) are both deleted.
 
-For every [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/){.external} there is a  reclaim policy set by default, that can be changed for individual instances of PV.  On our Cinder based storage classes, **the reclaim policy by default is `Delete`**, as you can verify:
+For every [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/) there is a  reclaim policy set by default, that can be changed for individual instances of PV.  On our Cinder based storage classes, **the reclaim policy by default is `Delete`**, as you can verify:
 
 ```bash
 kubectl get pv

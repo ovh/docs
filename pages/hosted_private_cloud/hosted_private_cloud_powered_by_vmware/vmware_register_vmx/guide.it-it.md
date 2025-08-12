@@ -55,9 +55,9 @@ Se disponi di decine di VM e/o datastore, è possibile utilizzare script per eff
 
 #### Avec PowerCLI
 
-VMware fornisce i PowerCLI agli amministratori VMware che utilizzano PowerShell: [Installate PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
+VMware fornisce i PowerCLI agli amministratori VMware che utilizzano PowerShell: [Installate PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
 
-In seguito, puoi utilizzare lo script qui sotto, adattato a quello scritto da [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
+In seguito, puoi utilizzare lo script qui sotto, adattato a quello scritto da [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/).
 
 ```powershell
 function register-vmxX {

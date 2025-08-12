@@ -39,7 +39,7 @@ Sollten Sie durch eine E-Mail-Benachrichtigung oder eine Überprüfung Ihrerseit
 
 #### Server mit Software-RAID
 
-Falls Sie einen Server mit Software-RAID besitzen, erfahren Sie in der Anleitung [Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}, wie Sie die auf Ihrem Server installierten Festplatten finden.
+Falls Sie einen Server mit Software-RAID besitzen, erfahren Sie in der Anleitung [Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), wie Sie die auf Ihrem Server installierten Festplatten finden.
 
 Wenn Ihnen der Zugriffspfad zu Ihren Festplatten bekannt ist, können Sie diese mithilfe des Befehls `smartctl` folgendermaßen überprüfen:
 
@@ -83,7 +83,7 @@ Die Seriennummer finden Sie in unserem Beispiel also in folgender Zeile:
 
 #### Server mit Hardware-RAID
 
-Falls Sie einen Server mit Hardware RAID besitzen, lesen Sie unsere Anleitung [Managing Hardware RAID - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} und folgen Sie den Vorgaben für Ihren RAID-Controller-Typ, um die Zugriffspfade zu Ihren Festplatten zu identifizieren.
+Falls Sie einen Server mit Hardware RAID besitzen, lesen Sie unsere Anleitung [Managing Hardware RAID - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard) und folgen Sie den Vorgaben für Ihren RAID-Controller-Typ, um die Zugriffspfade zu Ihren Festplatten zu identifizieren.
 
 Wenn Ihnen der Zugriffspfad zu Ihren Festplatten bekannt ist, können Sie diese mithilfe des Befehls `smartctl` folgendermaßen überprüfen:
 
@@ -113,7 +113,7 @@ Dabei ist die RAID-Nummer anzugeben (/dev/sg0 = RAID 1, /dev/sg1 = RAID 2 etc.)
 
 #### Server mit NVMe
 
-Bei einer NVMe-Disk muss der Server in erst in den [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} versetzt werden. Installieren Sie dann das Tool `nvme-cli`.
+Bei einer NVMe-Disk muss der Server in erst in den [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) versetzt werden. Installieren Sie dann das Tool `nvme-cli`.
 
 ```sh
 apt install nvme-cli
@@ -192,7 +192,7 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Wenn Sie über einen Hardware-RAID verfügen, wird sich der RAID selbst wiederherstellen. Bitte beachten Sie: Hierfür darf die standardmäßig aktivierte Funktion *auto-rebuild* nicht manuell von Ihnen deaktiviert worden sein. Bitte beachten Sie auch, dass der Resynchronisationsprozess einige Minuten in Anspruch nehmen kann und die Lese-/Schreibperformance Ihres RAID in dieser Zeit eingeschränkt sein kann.
 
-Wenn Sie über einen Software-RAID verfügen, muss die Resynchronisation Ihrer Festplatten manuell gestartet werden. Wie das geht, erfahren Sie in unserer Anleitung zum Thema [Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Wenn Sie über einen Software-RAID verfügen, muss die Resynchronisation Ihrer Festplatten manuell gestartet werden. Wie das geht, erfahren Sie in unserer Anleitung zum Thema [Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Weiterführende Informationen
 

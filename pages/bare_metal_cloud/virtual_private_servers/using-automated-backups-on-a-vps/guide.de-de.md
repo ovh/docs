@@ -1,12 +1,12 @@
 ---
-title: Automatische Backups auf einem VPS verwenden
-excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Option “Automatisches Backup” aktivieren und verwenden
-updated: 2023-08-07
+title: "Automatische Backups auf einem VPS verwenden"
+excerpt: "Erfahren Sie, wie Sie im OVHcloud Kundencenter die Backup-Option verwenden, um Ihre Daten zu sichern"
+updated: 2025-08-07
 ---
 
 ## Ziel
 
-Diese Option bietet eine komfortable Möglichkeit, vollständige VPS Backups regulär in Ihrem OVHcloud Kundencenter verfügbar zu halten, ohne eine Verbindung zum Server herstellen zu müssen, um sie manuell anzulegen und wiederherzustellen. Ein weiterer Vorteil ist, dass Sie auch wahlweise ein Backup erzeugen und dann über SSH darauf zugreifen können.
+Die Option für automatische Backups bietet eine komfortable Möglichkeit, vollständige Systemsicherungen über Ihr OVHcloud Kundencenter verfügbar zu machen, ohne eine Verbindung zum Server herstellen zu müssen, um sie manuell anzulegen und wiederherzustellen. Ein weiterer Vorteil ist, dass Sie auch wahlweise ein Backup erzeugen und dann über Remote-Verbindung darauf zugreifen können.
 
 **Diese Anleitung erläutert die Verwendung von automatischen Backups für Ihren OVHcloud VPS.**
 
@@ -23,17 +23,48 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](/
 
 ## In der praktischen Anwendung
 
+### Inhaltsübersicht
+
+- [Upgrade auf Automatic Backup Premium](#premium)
+- [Backup-Zeit konfigurieren](#time)
+- [Eine Sicherung über das OVHcloud Kundencenter wiederherstellen](#restore)
+- [Ein Backup mounten und darauf zugreifen](#mount)
+    - [Über Secure Shell](#shell)
+    - [Mit Windows](#windows)
+- [Optimale Vorgehensweise zur Backup-Erstellung](#bestpractice)
+    - [Konfiguration des QEMU-Agents auf einem VPS](#qemu)
+        - [Debian Distributionen](#deb)
+        - [Redhat Distributionen](#red)
+        - [Windows](#win)
+
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
 
-### Schritt 1: Die Option “Automatisches Backup” aktivieren
+Bei der Bestellung eines VPS ist ein tägliches automatisches Backup als kostenlose Service-Option inklusive. Mit dieser Standard-Option können Sie:
 
-Nach der Auswahl Ihres VPS klicken Sie auf den Tab `Automatisches Backup`{.action} im horizontalen Menü.
+- Das tägliche Backup Mounten und Wiederherstellen.
+- Den Tageszeitpunkt festlegen, zu dem dieses Backup erstellt wird.
 
-Beachten Sie im nächsten Schritt die Preisinformation und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellvorgang geführt und erhalten eine Bestätigungsmail. Backups werden nun täglich erstellt, bis die Option wieder gekündigt wird.
+Für mehr Flexibilität bei Ihren Backups können Sie die Option "Automatisches Backup Premium" aktivieren.
 
-#### Backup-Zeit konfigurieren
+<a name="premium"></a>
 
-Sie können den Zeitpunkt ändern, zu dem das Backup durchgeführt wird. 
+### Upgrade auf Automatisches Backup Premium
+
+Mit einem Upgrade zu "Premium" erweitern Sie Ihre automatische Backup-Option auf ein tägliches Backup mit einer Verfügbarkeit von 7 Tagen. Dadurch können Sie im Vergleich zur 24-Stunden-Rotation der Standardoption auf ältere Backup-Versionen zurückgreifen.
+
+Nach der Auswahl Ihres VPS klicken Sie im horizontalen Menü auf den Tab `Automatisches Backup`{.action}.
+
+Klicken Sie auf den Link `Premium Backup bestellen`{.action}.
+
+![autobackupvps](images/backup_vps.png){.thumbnail}
+
+<a name="time"></a>
+
+### Backup-Zeit konfigurieren
+
+Sie können den Zeitpunkt ändern, zu dem das Backup durchgeführt wird.
+
+Nach der Auswahl Ihres VPS klicken Sie im horizontalen Menü auf den Tab `Automatisches Backup`{.action}.
 
 Klicken Sie auf `...`{.action} über der Tabelle und dann auf `Bearbeiten`{.action}.
 
@@ -48,18 +79,23 @@ Tragen Sie im neu angezeigten Fenster die Tageszeit ein (Zeitstandard UTC 24 Stu
 > Sobald die Änderung im Kundencenter bestätigt wurde, wird sie innerhalb von 24 bis 48 Stunden wirksam.
 >
 
-### Schritt 2: Eine Sicherung über das OVHcloud Kundencenter wiederherstellen
+<a name="restore"></a>
 
-Nach der Auswahl Ihres VPS klicken Sie auf den Tab `Automatisches Backup`{.action} im horizontalen Menü. Es sind maximal 7 Backups verfügbar (15 bei älteren Produktreihen). Klicken Sie auf `...`{.action} neben dem Backup, das Sie wiederherstellen möchten, und wählen Sie `Wiederherstellung`{.action}.
+### Eine Sicherung über das OVHcloud Kundencenter wiederherstellen
+
+Nach der Auswahl Ihres VPS klicken Sie auf den Tab `Automatisches Backup`{.action} im horizontalen Menü.  
+Klicken Sie auf `...`{.action} neben dem Backup, das Sie wiederherstellen möchten, und wählen Sie `Wiederherstellung`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
-Wenn Sie kürzlich Ihr Root-Passwort geändert haben, aktivieren Sie im Popup-Fenster die Option “Root-Passwort im Zuge der Wiederherstellung ändern”, damit Ihr aktuelles Passwort beibehalten wird, und klicken Sie auf `Bestätigen`{.action}. Sie erhalten eine E-Mail, sobald der Task abgeschlossen ist. Die Wiederherstellung kann je nach verwendetem Speicherplatz eine Weile dauern.
+Wenn Sie kürzlich Ihr Root-Passwort geändert haben, aktivieren Sie im Popup-Fenster die Option "Root-Passwort im Zuge der Wiederherstellung ändern", damit Ihr aktuelles Passwort beibehalten wird, und klicken Sie auf `Bestätigen`{.action}. Sie erhalten eine E-Mail, sobald der Task abgeschlossen ist. Die Wiederherstellung kann je nach verwendetem Speicherplatz eine Weile dauern.
 
 > [!alert]
 >
 Bitte beachten Sie, dass die automatisierten Backups nicht Ihre zusätzlichen Disks umfassen.
 >
+
+<a name="mount"></a>
 
 ### Ein Backup mounten und darauf zugreifen
 
@@ -79,6 +115,8 @@ Klicken Sie auf `...`{.action} neben dem Backup, auf das Sie zugreifen möchten,
 Wenn Sie diese Option verwenden, wird eine Lese-/Schreibkopie des Backups erstellt und gemountet. Das ursprüngliche Backup bleibt für zukünftige Wiederherstellungen unverändert verfügbar.
 
 Nach Abschluss des Vorgangs erhalten Sie eine E-Mail. Sie können jetzt eine Verbindung zu Ihrem VPS herstellen und die Partition hinzufügen, auf der sich Ihr Backup befindet.
+
+<a name="shell"></a>
 
 #### Über Secure Shell
 
@@ -117,6 +155,8 @@ Denken Sie daran, das automatische Backup zu unmounten, sobald Sie damit fertig 
 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
 
+<a name="windows"></a>
+
 #### Mit Windows
 
 Stellen Sie eine RDP-Verbindung (Remote Desktop) mit Ihrem VPS her.
@@ -147,15 +187,21 @@ Denken Sie daran, das automatische Backup auszuhängen, sobald Sie damit fertig 
 Beachten Sie, dass beim Aushängen des Backups ein Neustart des Servers erfolgt.
 >
 
+<a name="bestpractice"></a>
+
 ### Optimale Vorgehensweise zur Backup-Erstellung
 
-Die Funktion “Automatisches Backup” basiert auf VPS Snapshots. Es wird empfohlen, die folgenden Schritte zu befolgen, um Probleme zu vermeiden, bevor Sie diese Option verwenden.
+Die Funktion "Automatisches Backup" basiert auf VPS Snapshots. Es wird empfohlen, die folgenden Schritte zu befolgen, um Probleme zu vermeiden, bevor Sie diese Option verwenden.
+
+<a name="qemu"></a>
 
 #### Konfiguration des QEMU-Agents auf einem VPS
 
 Snapshots sind Momentaufnahmen Ihres Systems bei der Ausführung (*live snapshot*). Um die Verfügbarkeit Ihres Systems während der Erstellung des Snapshots zu gewährleisten, wird der QEMU-Agent verwendet, um das Dateisystem für diesen Vorgang vorzubereiten.
 
 Der hierzu benötigte *qemu-guest-agent* ist bei den meisten Distributionen nicht standardmäßig installiert. Auch können lizenzbedingte Einschränkungen OVHcloud daran hindern, diese Bedingung in die Images der verfügbaren Betriebssysteme einzubeziehen. Es wird daher geraten, dies zu überprüfen, und den Agent zu installieren, falls er nicht auf Ihrem VPS aktiviert ist. Verbinden Sie sich per SSH mit Ihrem VPS und folgen Sie je nach Betriebssystem den unten stehenden Anleitungen. 
+
+<a name="deb"></a>
 
 ##### **Debian Distributionen (Debian, Ubuntu)**
 
@@ -185,6 +231,8 @@ sudo reboot
 sudo service qemu-guest-agent status
 ```
 
+<a name="red"></a>
+
 ##### **Redhat Distributionen (CentOS, Fedora)**
 
 Überprüfen Sie mit folgendem Befehl, ob das System richtig für Snapshots konfiguriert ist.
@@ -213,13 +261,15 @@ sudo reboot
 sudo service qemu-guest-agent status
 ```
 
+<a name="win"></a>
+
 ##### **Windows**
 
 Sie können den QEMU Guest Agent über eine MSI-Datei installieren. Diese ist auf der Webseite des *Fedora project* verfügbar: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
 Überprüfen Sie, ob der Dienst ausgeführt wird. Verwenden Sie dazu folgenden Powershell-Befehl:
 
-```powershell
+```console
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName

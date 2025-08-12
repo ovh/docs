@@ -165,7 +165,7 @@ Po pobraniu wersji i uruchomieniu procesu aktualizacji serwer uruchomi się pono
 Sprawdź, czy Twoje aplikacje działają zgodnie z planem. W przypadku problemu zalecamy [przywrócenie kopii zapasowej](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup) przed aktualizacją.
 
 > [!primary]
-> Jeśli napotkasz trudności, możesz znaleźć odpowiedzi na Twoje pytania na stronie internetowej [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.
+> Jeśli napotkasz trudności, możesz znaleźć odpowiedzi na Twoje pytania na stronie internetowej [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/).
 >
 
 ## Sprawdź również

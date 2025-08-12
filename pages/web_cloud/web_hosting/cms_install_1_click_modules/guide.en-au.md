@@ -56,7 +56,7 @@ In the window that pops up, choose the CMS you want to use, then select the doma
 
 ![Choose a module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} if required.
+If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) if required.
 
 > [!primary]
 >
@@ -199,20 +199,20 @@ If you need help with your CMS's features, please contact the publisher of the C
 
 |CMS|Official documentation|
 |---|---|
-|WordPress|[First steps with WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
-|PrestaShop|[Getting started with PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started){.external}|
-|Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
-|Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
+|WordPress|[First steps with WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/)|
+|PrestaShop|[Getting started with PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started)|
+|Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html)|
+|Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview)|
 
 ## Go further
 
-[Choosing a CMS for building your website](/links/web/hosting-cms-comparison){.external}.
+[Choosing a CMS for building your website](/links/web/hosting-cms-comparison).
 
 [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 [Managing a database on a web hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
 
-Explore our [Web Cloud Database solutions](/links/web/databases){.external}.
+Explore our [Web Cloud Database solutions](/links/web/databases).
 
 [Managing your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 

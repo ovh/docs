@@ -12,9 +12,9 @@ This tutorial will help you install Drupal CMS (Content Management System) manua
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [Drupal support](https://www.drupal.org/support){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [Drupal support](https://www.drupal.org/support) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
-> If you would like to update an existing Drupal CMS, or have any questions on how to use the Drupal CMS, please contact [the Drupal CMS publisher](https://www.drupal.org/support){.external} directly.
+> If you would like to update an existing Drupal CMS, or have any questions on how to use the Drupal CMS, please contact [the Drupal CMS publisher](https://www.drupal.org/support) directly.
 >
 
 > [!success]
@@ -145,7 +145,7 @@ If everything went well, the following page appears:
 
 ## Go further <a name="go-further"></a>
 
-[Drupal official website](https://www.drupal.org/){.external}
+[Drupal official website](https://www.drupal.org/)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

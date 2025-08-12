@@ -12,7 +12,7 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 >
 > Esta guía se refiere principalmente a los mensajes de correo enviados desde scripts situados en su [alojamiento web de OVHcloud](/links/web/hosting) mediante la función "mail()" de PHP.
 >
-> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](/links/web/hosting){.external}, consulte nuestra documentación sobre los [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](/links/web/hosting), consulte nuestra documentación sobre los [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,12 +24,12 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](/links/manager){.external}. Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](/links/manager). Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 

@@ -74,7 +74,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 > [!primary]
 >
-> Se non sai quale Registrar è responsabile del tuo dominio, la riga "Registrar", che compare nel risultato della ricerca del [tool Whois](/links/web/domains-whois){.external}, può fornirti informazioni sulla sua identità.
+> Se non sai quale Registrar è responsabile del tuo dominio, la riga "Registrar", che compare nel risultato della ricerca del [tool Whois](/links/web/domains-whois), può fornirti informazioni sulla sua identità.
 >
 
 ### Step 2: sblocca il dominio e recupera il codice di trasferimento <a name="step2"></a>
@@ -100,7 +100,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 ![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
-È inoltre possibile completare l'ordine con un [hosting Web](/links/web/hosting){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)", fornisce alcune istruzioni su come procedere.
+È inoltre possibile completare l'ordine con un [hosting Web](/links/web/hosting) e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)", fornisce alcune istruzioni su come procedere.
 
 > [!warning]
 >

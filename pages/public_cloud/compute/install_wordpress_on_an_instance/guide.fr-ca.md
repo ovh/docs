@@ -226,7 +226,7 @@ Une fois validé, vous pourrez vous connecter à l'espace d'administration de vo
 
 > [!primary]
 >
-> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme [Let’s Encrypt](https://letsencrypt.org/){.external} qui propose des certificats gratuits. Vous devrez installer un outil client (comme « Certbot ») et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`.
+> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme [Let’s Encrypt](https://letsencrypt.org/) qui propose des certificats gratuits. Vous devrez installer un outil client (comme « Certbot ») et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`.
 > 
 > En alternative, OVHcloud vous propose la solution [SSL Gateway](https://www.ovh.com/ca/fr/ssl-gateway/). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
 >

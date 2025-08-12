@@ -12,8 +12,8 @@ Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la co
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](/links/web/hosting){.external} compatible.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'une [offre d'hébergement web](/links/web/hosting) compatible.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -168,7 +168,7 @@ Découvrez comment [se connecter à l’espace de stockage FTP de votre héberge
 > OVHcloud fournit un service de sauvegarde automatique des données ainsi que la mise à disposition de ces sauvegardes. Il reste cependant *non-contractuel* et est présent en complément de vos services. Effectivement, il est de votre responsabilité de mettre en place votre propre politique de restauration, et de déterminer des points de restaurations aux moments que vous jugez opportuns.
 >
 
-Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (Web Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](/links/manager){.external} ou via les [API OVHcloud](/links/api)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées dans un centre de données situé à Strasbourg (SBG). La politique de rétention des sauvegardes est de 30 jours.
+Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (Web Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](/links/manager) ou via les [API OVHcloud](/links/api)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées dans un centre de données situé à Strasbourg (SBG). La politique de rétention des sauvegardes est de 30 jours.
 
 Découvrez comment [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export) sur notre documentation.
 

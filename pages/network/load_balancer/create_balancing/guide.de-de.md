@@ -12,7 +12,7 @@ Der neue OVH Loadbalancer bietet Ihnen mehrere Lastverteilungstypen für Ihre Di
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
 - Sie haben eine Serverfarm erstellt.
 
 ## Beschreibung
@@ -21,7 +21,7 @@ Der neue OVH Loadbalancer bietet Ihnen mehrere Lastverteilungstypen für Ihre Di
 
 Lastverteilung (engl. „Load Balancing“) wird in Serverfarmen verwendet. Diese Einstellung bestimmt, wie Anfragen zwischen den verschiedenen Servern einer Farm aufgeteilt werden.
 
-Weitere Informationen zu den Grundbestandteilen des OVH Loadbalancers finden Sie in der [Einführung zum OVH Loadbalancer](/pages/network/load_balancer/use_presentation){.external}.
+Weitere Informationen zu den Grundbestandteilen des OVH Loadbalancers finden Sie in der [Einführung zum OVH Loadbalancer](/pages/network/load_balancer/use_presentation).
 
 |Algorithmus|Funktion|
 |---|---|

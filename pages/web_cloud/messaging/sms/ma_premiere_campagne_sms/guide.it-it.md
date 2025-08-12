@@ -15,7 +15,7 @@ OVHcloud mette a tua disposizione strumenti integrati nello Spazio Cliente per l
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con saldo SMS.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Telecom`{.action} > `SMS`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Telecom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

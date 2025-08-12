@@ -6,7 +6,7 @@ updated: 2025-06-04
 
 ## Objetivo
 
-Além do direcionamento IP privado, o [vRack](/links/network/vrack){.external} permite direcionar o tráfego IP público através da porta vRack do servidor através de um bloco de endereços IP públicos.
+Além do direcionamento IP privado, o [vRack](/links/network/vrack) permite direcionar o tráfego IP público através da porta vRack do servidor através de um bloco de endereços IP públicos.
 
 **Este manual explica como configurar um bloco de endereços IP públicos no vRack.**
 
@@ -33,9 +33,9 @@ Além do direcionamento IP privado, o [vRack](/links/network/vrack){.external} p
 
 - Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços.
 - Ter acesso ao intervalo de endereços de IP privados escolhidos.
-- Dispor de um [servidor compatível com o vRack](/links/bare-metal/bare-metal){.external}.
-- Ter ativado um serviço [vRack](/links/network/vrack){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Dispor de um [servidor compatível com o vRack](/links/bare-metal/bare-metal).
+- Ter ativado um serviço [vRack](/links/network/vrack).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -156,10 +156,10 @@ Reinicie o servidor para aplicar as modificações realizadas.
 
 ## Quer saber mais?
 
-[Configurar vários servidores dedicados no vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
+[Configurar vários servidores dedicados no vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
-[Criar várias VLAN no vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack){.external}
+[Criar várias VLAN no vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
-[Configurar o vRack entre o Public Cloud e um servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
+[Configurar o vRack entre o Public Cloud e um servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

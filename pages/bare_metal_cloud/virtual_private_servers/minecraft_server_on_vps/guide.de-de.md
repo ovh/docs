@@ -96,7 +96,7 @@ $ mkdir ~/server && cd ~/server
 >
 
 Kopieren Sie zuerst den Download-Link für das Server-Programm.  
-Klicken Sie dazu auf der offiziellen [Website von Minecraft](https://minecraft.net/download/server){.external} mit der rechten Maustaste auf den Download-Link und wählen Sie `Linkadresse kopieren`{.action}.
+Klicken Sie dazu auf der offiziellen [Website von Minecraft](https://minecraft.net/download/server) mit der rechten Maustaste auf den Download-Link und wählen Sie `Linkadresse kopieren`{.action}.
 
 ![Download des Servers](images/jar_file_download.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Bevor Sie den Server starten, müssen Sie die EULA (*End User License Agreement*
 ```
 
 Anschließend befindet sich eine Datei namens `eula.txt` im Wurzelverzeichnis Ihres Servers, die die Zeile `eula=true` enthält. Dies zeigt der Software an, dass Sie die Nutzungsbedingungen für Minecraft akzeptieren.  
-Die allgemeinen Nutzungsbedingungen finden Sie auf der offiziellen [Website von Minecraft](https://www.minecraft.net/){.external}.
+Die allgemeinen Nutzungsbedingungen finden Sie auf der offiziellen [Website von Minecraft](https://www.minecraft.net/).
 
 Ihr Server kann nun gestartet werden.
 
@@ -169,7 +169,7 @@ Um Ihren Server anzuhalten, geben Sie den Befehl `stop` ein.
 
 ### Schritt 3: Mit dem Server verbinden
 
-Ihre Server-Instanz ist nun funktionsfähig. Um zu spielen, beziehen Sie den Minecraft-Client von der [offiziellen Website](https://www.minecraft.net/){.external}.
+Ihre Server-Instanz ist nun funktionsfähig. Um zu spielen, beziehen Sie den Minecraft-Client von der [offiziellen Website](https://www.minecraft.net/).
 
 Installieren und starten Sie den Client für Ihr Betriebssystem und registrieren Sie sich.
 

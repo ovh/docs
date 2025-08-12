@@ -200,20 +200,20 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS,
 
 |CMS|Documentation officielle|
 |---|---|
-|WordPress|[Premiers pas avec WordPress](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}|
-|PrestaShop|[Documentation en français PrestaShop](http://doc.prestashop.com/pages/viewpage.action?pageId=2424836){.external}|
-|Joomla|[Infos techniques Joomla (en anglais)](https://www.joomla.org/about-joomla/getting-started.html){.external}|
-|Drupal|[Bien démarrer avec Drupal](https://www.drupal.fr/documentation/bien-demarrer-drupal){.external}|
+|WordPress|[Premiers pas avec WordPress](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress)|
+|PrestaShop|[Documentation en français PrestaShop](http://doc.prestashop.com/pages/viewpage.action?pageId=2424836)|
+|Joomla|[Infos techniques Joomla (en anglais)](https://www.joomla.org/about-joomla/getting-started.html)|
+|Drupal|[Bien démarrer avec Drupal](https://www.drupal.fr/documentation/bien-demarrer-drupal)|
 
 ## Aller plus loin
 
-[Choisir un CMS pour créer un site web](/links/web/hosting-cms-comparison){.external}
+[Choisir un CMS pour créer un site web](/links/web/hosting-cms-comparison)
 
-[Comment partager mon hébergement Web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Comment partager mon hébergement Web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-[Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database)
 
-Découvrez nos [offres Web Cloud Databases](/links/web/databases){.external}
+Découvrez nos [offres Web Cloud Databases](/links/web/databases)
 
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 

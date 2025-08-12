@@ -26,7 +26,7 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
-- Ter o seu [VPS OVHcloud](/links/bare-metal/vps){.external} já configurado.
+- Ter o seu [VPS OVHcloud](/links/bare-metal/vps) já configurado.
 
 > [!warning]
 > A OVHcloud fornece serviços cuja configuração e gestão são da sua responsabilidade. É da sua responsabilidade assegurar o seu bom funcionamento.

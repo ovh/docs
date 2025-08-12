@@ -51,7 +51,7 @@ Replace the terms `my_private` and `your_file_name` with the file names of your 
 
 Once the command is launched, the terminal will ask you for each of the following information (for yourself, your company or your association). Once you have answered the question asked, then press the `ENTER`{.action} key on your keyboard to display the following question:
 
-- `Country Name (2 letter code) [AU]`: Enter the **Country Code** of your country in upper case. If you need to, you can find the list of all **Country Codes** [here](https://www.iban.com/country-codes){.external}.
+- `Country Name (2 letter code) [AU]`: Enter the **Country Code** of your country in upper case. If you need to, you can find the list of all **Country Codes** [here](https://www.iban.com/country-codes).
 - `State or Province Name (full name) [Some-State]`: Enter the name of your region (or state if you are in the USA, for example) in upper-case letters.
 - `Locality Name (eg, city) []`: Enter the name of your city in upper case.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: Enter the name of your organization, company, or association. **If you are an individual, do not answer this question and press the `ENTER`{.action} key on your keyboard to display the next question**.

@@ -39,7 +39,7 @@ To interact with your MySQL instance using Python, your development environment 
 - A compatible version of Python
 - Mysql connector
 
-Please follow the official [MySQL Connector/Python](https://dev.mysql.com/doc/connector-python/en/){.external}. to get the latest information.
+Please follow the official [MySQL Connector/Python](https://dev.mysql.com/doc/connector-python/en/). to get the latest information.
 
 Once your Python environment is set up and you begin executing a **python --version** in your command line interface (CLI), you should see information about the version as shown below :
 
@@ -68,7 +68,7 @@ We are now ready to learn how to connect to our MySQL instance !
 
 #### Using MySQL Connector
 
-MySQL Connector/Python enables Python programs to access MySQL databases, using an API that is compliant with the [Python Database API Specification v2.0 (PEP 249)](http://www.python.org/dev/peps/pep-0249/){.external}.
+MySQL Connector/Python enables Python programs to access MySQL databases, using an API that is compliant with the [Python Database API Specification v2.0 (PEP 249)](http://www.python.org/dev/peps/pep-0249/).
 
 In your Python environment, let's try a connection.
 

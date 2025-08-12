@@ -127,7 +127,7 @@ Download a file file.txt from a bucket:
 $ s3cmd get s3://BUCKET/OBJECT LOCAL_FILE
 ```
 
-You will find a detailed documentation of the possible actions on the [official S3cmd documentation](https://s3tools.org/usage){.external}.
+You will find a detailed documentation of the possible actions on the [official S3cmd documentation](https://s3tools.org/usage).
 
 ## Go further
 

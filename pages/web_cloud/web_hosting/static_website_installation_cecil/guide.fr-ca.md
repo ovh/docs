@@ -6,7 +6,7 @@ updated: 2023-12-08
 
 ## Objectif
 
-Ce tutoriel vous explique comment installer et configurer [Cecil](https://cecil.app/){.external}. Il s'agit d'une application écrite en PHP permettant de générer et d'administrer des pages web statiques.
+Ce tutoriel vous explique comment installer et configurer [Cecil](https://cecil.app/). Il s'agit d'une application écrite en PHP permettant de générer et d'administrer des pages web statiques.
 
 Un site web composé essentiellement de pages web statiques garantit un meilleur temps de chargement pour vos visiteurs et une plus grande sécurité. Sans contenu dynamique, vos pages sont plus robustes face aux attaques informatiques. La génération d’un site statique permet de disposer d’une liberté plus grande pour créer le site web de votre choix. Vous gagnerez également du temps puisque vous n’aurez pas à partir de zéro.
 
@@ -18,7 +18,7 @@ Un site web composé essentiellement de pages web statiques garantit un meilleur
 - Être familiarisé à la saisie en ligne de commande.
 - Être en capacité de transférer des fichiers en FTP avec un client comme [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Paramétrer votre zone DNS pour faire pointer votre nom de domaine (ou sous-domaine) vers votre hébergement web mutualisé. Cela s'avère notamment utile si vous souhaitez héberger plusieurs sites en [multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web mutualisé.
-- Installer préalablement [Composer](https://getcomposer.org/){.external} avec le fichier `composer.phar` à la racine de votre hébergement web mutualisé ou dans le dossier cible de votre nom de domaine.
+- Installer préalablement [Composer](https://getcomposer.org/) avec le fichier `composer.phar` à la racine de votre hébergement web mutualisé ou dans le dossier cible de votre nom de domaine.
 
 ## En pratique
 
@@ -103,7 +103,7 @@ Remplacez les informations par défaut par les vôtres et sauvegardez le fichier
 
 ### Créer une nouvelle page
 
-La création des pages qui contiendront les données de votre site se fait via des fichiers au format _Markdown_. Ces pages sont personnalisables. **Cecil**  intègre le moteur de _template_ [Twig](https://twig.symfony.com/){.external} qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/){.external}.
+La création des pages qui contiendront les données de votre site se fait via des fichiers au format _Markdown_. Ces pages sont personnalisables. **Cecil**  intègre le moteur de _template_ [Twig](https://twig.symfony.com/) qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/).
 
 Les dossiers et fichiers sont organisés comme suit:
 
@@ -147,7 +147,7 @@ Vous pouvez le visualiser sur votre serveur en tapant l'URL de votre site, suivi
 
 #### Modification sur le serveur
 
-L'édition des fichiers _Markdown_ peut se faire directement sur le serveur d'hébergement web. Sur votre offre d'[hébergement Performance](/links/web/hosting-performance-offer), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](https://www.vim.org/){.external}.
+L'édition des fichiers _Markdown_ peut se faire directement sur le serveur d'hébergement web. Sur votre offre d'[hébergement Performance](/links/web/hosting-performance-offer), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/), [vi](https://ex-vi.sourceforge.net/) ou [vim](https://www.vim.org/).
 Les captures d'écran du présent tutoriel ont été réalisées sous **GNU nano**.
 
 Éditez le fichier `mypage.md` situé dans le répertoire `pages` en tapant la commande suivante si vous êtes à la racine de votre site:
@@ -209,9 +209,9 @@ L'utilisation d'un moteur de template, très utilisé dans la communauté des d�
 
 [Ajouter du contenu dynamique dans une page web statique générée avec Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
 
-Le [site officiel de l'application Cecil](https://cecil.app/){.external}
+Le [site officiel de l'application Cecil](https://cecil.app/)
 
-Un [guide sur le format Markdown](https://www.markdownguide.org/){.external}
+Un [guide sur le format Markdown](https://www.markdownguide.org/)
 
 Notre [guide sur l'utilisation de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

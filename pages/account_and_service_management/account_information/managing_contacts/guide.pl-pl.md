@@ -31,7 +31,7 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Dostęp do adresu e-mail podanego w profilu.
 - Wystarczające uprawnienia dotyczące danej usługi.
 - Posiadanie identyfikatora klienta nowego kontaktu (dla którego wprowadzasz zmianę).
@@ -102,7 +102,7 @@ Jeśli jeden z kontaktów nie otrzymał e-maila, może to na przykład oznaczać
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](/links/manager){.external} zaktualizują się w ciągu kilku minut.
+Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](/links/manager) zaktualizują się w ciągu kilku minut.
 
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 

@@ -9,7 +9,7 @@ OVHcloud [vRack](/links/network/vrack) is a private network solution that enable
 
 In this tutorial, we are going to activate the vRack on a Public Cloud project. Then we will create a Managed Kubernetes cluster and a Public Cloud instance (PCI). Eventually, both of them will be added inside the vRack. 
 
-Concretely, we are going to install an OVHcloud Managed Kubernetes cluster and a Public Cloud instance, both of them in the same private network. We are going to deploy a [WordPress](https://wordpress.org/){.external} on the Kubernetes cluster that will use the private network to connect to a [MariaDB database](https://mariadb.org/) installed on the Public Cloud instance.
+Concretely, we are going to install an OVHcloud Managed Kubernetes cluster and a Public Cloud instance, both of them in the same private network. We are going to deploy a [WordPress](https://wordpress.org/) on the Kubernetes cluster that will use the private network to connect to a [MariaDB database](https://mariadb.org/) installed on the Public Cloud instance.
 
 **In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](/links/network/vrack) to connect a Managed Kubernetes cluster with a Public Cloud instance inside the same private network.**
 
@@ -344,7 +344,7 @@ storageclass.storage.k8s.io/csi-cinder-high-speed created
 
 #### Using the WordPress Helm chart
 
-For this tutorial we are using the [WordPress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but we will only need to tweak the external database parameters:
+For this tutorial we are using the [WordPress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress) found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but we will only need to tweak the external database parameters:
 
 ```
 mariadb.enabled

@@ -72,13 +72,13 @@ Il trasferimento di un dominio GoDaddy richiede una procedura specifica.
 Il blocco di un dominio lo protegge contro i tentativi di trasferimento non autorizzati.
 GoDaddy attiva questa protezione predefinita. Per trasferire il dominio in OVHcloud è necessario disattivarla.
 
-Segui gli step descritti nella [documentazione dedicata di GoDaddy](https://it.godaddy.com/help/sblocca-o-blocca-il-mio-dominio-410){.external}.
+Segui gli step descritti nella [documentazione dedicata di GoDaddy](https://it.godaddy.com/help/sblocca-o-blocca-il-mio-dominio-410).
 
 ### Step 2 - Ottieni il codice di autorizzazione 
 
 OVHcloud chiederà il codice di autorizzazione o "Auth code" prima di avviare la procedura di trasferimento del dominio. Puoi ottenerlo aprendo la pagina del tuo portfolio di `Domini`{.action} in GoDaddy.
 
-Segui gli step descritti nella [documentazione dedicata di GoDaddy](https://it.godaddy.com/help/trasferimento-del-dominio-da-godaddy-3560){.external}.
+Segui gli step descritti nella [documentazione dedicata di GoDaddy](https://it.godaddy.com/help/trasferimento-del-dominio-da-godaddy-3560).
 
 ### Step 3 - Inizia il trasferimento di dominio in OVHcloud
 

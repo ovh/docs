@@ -51,7 +51,7 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs/
 
 /// details | Pour utiliser l'AWS CLI
 
-Pour connaître la procédure d’installation de l’AWS CLI adaptée à votre environnement, nous vous recommandons de consulter [la documentation officielle d’AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions){.external}.
+Pour connaître la procédure d’installation de l’AWS CLI adaptée à votre environnement, nous vous recommandons de consulter [la documentation officielle d’AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
 
 **Vérifier l'installation**
 
@@ -61,7 +61,7 @@ user@host:~$ aws --version
 
 > [!primary]
 >
-> Si vous avez besoin de plus d'informations sur l'installation de l'AWS CLI, consultez [la documentation AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}.
+> Si vous avez besoin de plus d'informations sur l'installation de l'AWS CLI, consultez [la documentation AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 >
 
 #### Collecter les informations d'identification

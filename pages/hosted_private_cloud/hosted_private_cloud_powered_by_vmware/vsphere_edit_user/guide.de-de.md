@@ -37,4 +37,4 @@ Klicken Sie auf den Button `Bestätigen`{.action}, um Ihre Änderungen zu bestä
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

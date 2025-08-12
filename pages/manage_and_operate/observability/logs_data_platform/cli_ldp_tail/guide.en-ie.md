@@ -20,7 +20,7 @@ The Logs Data Platform allows you to connect different applications or servers t
 
 ### Download and test ldp-tail in two minutes
 
-**ldp-tail** is derived from an internal tool used by OVHcloud engineers to follow in real time hundreds of applications and servers logs. It is written in Go and is completely open-source. So if you're curious enough, you can check the code at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail){.external}. You can also download binary releases from this website. Go to [https://github.com/ovh/ldp-tail/releases](https://github.com/ovh/ldp-tail/releases){.external} to download the release for your platform. 64-bit versions of Linux, Windows and Mac OS X are currently supported. Decompress the archive obtained and you will get the **ldp-tail** binary.
+**ldp-tail** is derived from an internal tool used by OVHcloud engineers to follow in real time hundreds of applications and servers logs. It is written in Go and is completely open-source. So if you're curious enough, you can check the code at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail). You can also download binary releases from this website. Go to [https://github.com/ovh/ldp-tail/releases](https://github.com/ovh/ldp-tail/releases) to download the release for your platform. 64-bit versions of Linux, Windows and Mac OS X are currently supported. Decompress the archive obtained and you will get the **ldp-tail** binary.
 
 You can test it right away on our demo stream by using this command in a terminal.
 
@@ -49,7 +49,7 @@ You will also find on this page a link to the ldp-tail release page and three wa
 
 ### Formatting and Filtering
 
-**ldp-tail** is not just a plain tail (as its name suggest). It comes with advanced formatting and filtering capabilities. The full documentation of these capabilities are all available at the [github website](https://github.com/ovh/ldp-tail#parameters){.external}. Here are the two main options that you can use to enhance your output.
+**ldp-tail** is not just a plain tail (as its name suggest). It comes with advanced formatting and filtering capabilities. The full documentation of these capabilities are all available at the [github website](https://github.com/ovh/ldp-tail#parameters). Here are the two main options that you can use to enhance your output.
 
 #### The pattern option
 
@@ -64,7 +64,7 @@ My Title: Success , The Joke: Success is relative. The more success, the more re
 My Title: Freeway , The Joke: When everything is coming your way, you're on the wrong side of the freeway.
 ```
 
-Please note that in this example we use the [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external} field naming convention of, which means that your extra fields must all have an underscore. This is because the WebSocket endpoint sends messages fully compatible with the GELF format so you can use them after in any GELF compatible tool.
+Please note that in this example we use the [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification) field naming convention of, which means that your extra fields must all have an underscore. This is because the WebSocket endpoint sends messages fully compatible with the GELF format so you can use them after in any GELF compatible tool.
 
 The pattern option allows you also to customize colors, background and text colors are customizable.
 
@@ -82,7 +82,7 @@ $ ldp@ubuntu:~$ ./ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo" --p
 
 #### The match option
 
-As the name implies, the match option is able to choose which messages you want or don't want to display in your ldp-tail. The option contains several operators, all described at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail){.external}. You can easily display messages beginning with some values or display only message that have a certain field or whose a field is higher or lower than a value.
+As the name implies, the match option is able to choose which messages you want or don't want to display in your ldp-tail. The option contains several operators, all described at [https://github.com/ovh/ldp-tail](https://github.com/ovh/ldp-tail). You can easily display messages beginning with some values or display only message that have a certain field or whose a field is higher or lower than a value.
 
 Here is how you can display only logs that have a title beginning with the word "another"
 
@@ -94,7 +94,7 @@ You can of course combine multiple matches by issuing **ldp-tail --match <COND_1
 
 #### TOML Configuration file
 
-Here is an example of a [TOML](https://github.com/toml-lang/toml){.external} configuration file for ldp-tail. You can save it into a file named **myfile.toml**.
+Here is an example of a [TOML](https://github.com/toml-lang/toml) configuration file for ldp-tail. You can save it into a file named **myfile.toml**.
 
 ```text
 Address = "wss://gra1.logs.ovh.com/tail/?tk=demo"
@@ -141,13 +141,13 @@ Value="/dbaas/logs"
 Not=false
 ```
 
-If you have any difficulty understanding this pattern or if you want help creating your own, don't hesitate to reach us on the [Community Hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
+If you have any difficulty understanding this pattern or if you want help creating your own, don't hesitate to reach us on the [Community Hub](https://community.ovh.com/en/c/Platform/data-platforms).
 
 ### Replay tail
 
 It's also possible to replay a given time window in the past.
 
-To proceed, give the begin & end as uri query parameter. begin and end must be in [Unix timestamp format](https://en.wikipedia.org/wiki/Unix_time){.external}.
+To proceed, give the begin & end as uri query parameter. begin and end must be in [Unix timestamp format](https://en.wikipedia.org/wiki/Unix_time).
 
 Sample:
 
@@ -162,12 +162,12 @@ To make the magic happen, replace the `<BEGIN>` and `<END>` values with UNIX tim
 $ ldp@ubuntu:~$ ldp-tail --address "wss://gra1.logs.ovh.com/tail/?tk=demo&begin=1722841200&end=1722848400" --pattern "{{date .timestamp}}: {{ ._category }}"
 ```
 
-You can use the website [https://www.unixtimestamp.com/](https://www.unixtimestamp.com/){.external} to easily convert dates to unix timestamps.
+You can use the website [https://www.unixtimestamp.com/](https://www.unixtimestamp.com/) to easily convert dates to unix timestamps.
 
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

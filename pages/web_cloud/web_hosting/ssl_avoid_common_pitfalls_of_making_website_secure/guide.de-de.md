@@ -18,8 +18,8 @@ In dieser Anleitung finden Sie einige Beispiele für mögliche Problemsituatione
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting){.external}.
-- Sie haben mindestens einen [Domainnamen](/links/web/domains){.external} registriert.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben mindestens einen [Domainnamen](/links/web/domains) registriert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung
@@ -40,7 +40,7 @@ In den meisten Fällen handelt es sich dabei um externe Skripte von anderen Webs
 
 Wie kann ich feststellen, ob meine Seite betroffen ist?
 
-Die von *Mozilla Firefox* und *Google Chrome* bereitgestellten Tools können anzeigen, ob Ihre Website Elemente enthält, die aufgrund von gemischten Inhalten blockiert wurden. Die im [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} verfügbare Dokumentation erläutert die Verwendung dieser Tools zur Erkennung gemischter Inhalte.
+Die von *Mozilla Firefox* und *Google Chrome* bereitgestellten Tools können anzeigen, ob Ihre Website Elemente enthält, die aufgrund von gemischten Inhalten blockiert wurden. Die im [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) verfügbare Dokumentation erläutert die Verwendung dieser Tools zur Erkennung gemischter Inhalte.
 
 ### Duplicate Content (Duplizierter Inhalt)
 

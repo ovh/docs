@@ -6,7 +6,7 @@ updated: 2023-12-08
 
 ## Wprowadzenie
 
-Tutorial wyjaśnia, jak zainstalować i skonfigurować [Cecil](https://cecil.app/){.external}. Jest to aplikacja napisana w PHP pozwalająca na generowanie i administrowanie statycznymi stronami WWW.
+Tutorial wyjaśnia, jak zainstalować i skonfigurować [Cecil](https://cecil.app/). Jest to aplikacja napisana w PHP pozwalająca na generowanie i administrowanie statycznymi stronami WWW.
 
 Strona www zawierająca statyczne strony internetowe gwarantuje lepszy czas ładowania się strony i większe bezpieczeństwo. Bez dynamicznych treści twoje strony są mocniejsze w obliczu ataków komputerowych. Wygenerowanie strony statycznej daje większą swobodę tworzenia wybranej strony www. Zyskujesz również czas, ponieważ nie będziesz musiał zaczynać od zera.
 
@@ -18,7 +18,7 @@ Strona www zawierająca statyczne strony internetowe gwarantuje lepszy czas ład
 - Zapoznanie się z wprowadzaniem wiersza poleceń.
 - Możliwość przesyłania plików przez FTP z klientem, takim jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Ustawienie strefy DNS w celu przekierowania domeny (lub subdomeny) na hosting. Jest to przydatne, jeśli chcesz hostować kilka stron WWW na [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) na Twoim hostingu.
-- Zainstaluj wcześniej [Composer](https://getcomposer.org/){.external} z plikiem `composer.phar` w katalogu głównym hostingu lub w katalogu docelowym Twojej domeny.
+- Zainstaluj wcześniej [Composer](https://getcomposer.org/) z plikiem `composer.phar` w katalogu głównym hostingu lub w katalogu docelowym Twojej domeny.
 
 ## W praktyce
 
@@ -103,7 +103,7 @@ Zastąp Twoje domyślne informacje i zapisz plik.
 
 ### Utwórz nową stronę
 
-Tworzenie stron zawierających dane strony odbywa się poprzez pliki w formacie _Markdown_. Te strony można spersonalizować. **Cecil** zawiera silnik _template_ [Twig](https://twig.symfony.com/){.external} który jest używany domyślnie z _framework_ [Symfony](https://symfony.com/){.external}.
+Tworzenie stron zawierających dane strony odbywa się poprzez pliki w formacie _Markdown_. Te strony można spersonalizować. **Cecil** zawiera silnik _template_ [Twig](https://twig.symfony.com/) który jest używany domyślnie z _framework_ [Symfony](https://symfony.com/).
 
 foldery i pliki są zorganizowane w następujący sposób:
 
@@ -147,7 +147,7 @@ Możesz wyświetlić go na Twoim serwerze, wpisując adres URL strony, a następ
 
 #### Zmiana dla serwera
 
-Edycja plików _Markdown_ może odbywać się bezpośrednio na serwerze hostingowym. W ofercie [hosting Performance](/links/web/hosting-performance-offer) dostęp SSH pozwala na korzystanie z protokołu [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} lub [vim](https://www.vim.org/){.external}.
+Edycja plików _Markdown_ może odbywać się bezpośrednio na serwerze hostingowym. W ofercie [hosting Performance](/links/web/hosting-performance-offer) dostęp SSH pozwala na korzystanie z protokołu [GNU nano](https://nano-editor.org/), [vi](https://ex-vi.sourceforge.net/) lub [vim](https://www.vim.org/).
 Zrzuty ekranu z niniejszego tutoriala przeprowadzono w **GNU nano**.
 
 Edytuj plik `mypage.md` znajdujący się w katalogu `pages`, wpisując następujące polecenie, jeśli znajdujesz się w katalogu głównym Twojej strony:
@@ -209,9 +209,9 @@ Korzystanie z silnika szablonu, bardzo popularnego wśród deweloperów WWW, poz
 
 [Dodaj dynamiczne treści do statycznej strony internetowej generowanej przez Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
 
-[Oficjalna strona aplikacji Cecil](https://cecil.app/){.external}
+[Oficjalna strona aplikacji Cecil](https://cecil.app/)
 
-Un [przewodnik na temat formatu Markdown](https://www.markdownguide.org/){.external}
+Un [przewodnik na temat formatu Markdown](https://www.markdownguide.org/)
 
 Nasz [Przewodnik dotyczący korzystania z FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

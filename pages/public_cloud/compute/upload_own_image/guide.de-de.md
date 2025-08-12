@@ -25,12 +25,12 @@ Es wird empfohlen, *cloud-ready* Images der Anbieter zu verwenden oder Ihr eigen
 
 Kompatible cloud-ready Images sind hier verfügbar:
 
-- <https://cloud.centos.org/centos/>{.external}
-- <https://cloud.debian.org/images/cloud/>{.external}
-- <https://cloud-images.ubuntu.com/releases/>{.external}
-- <https://alt.fedoraproject.org/cloud/>{.external}
+- <https://cloud.centos.org/centos/>
+- <https://cloud.debian.org/images/cloud/>
+- <https://cloud-images.ubuntu.com/releases/>
+- <https://alt.fedoraproject.org/cloud/>
 
-Andere Betriebssysteme bieten wahrscheinlich auch ISO-Images, die bei der Erstellung von [Images mit Packer](https://www.packer.io/docs/builders){.external} wie QEMU und VirtualBox angewendet werden können.
+Andere Betriebssysteme bieten wahrscheinlich auch ISO-Images, die bei der Erstellung von [Images mit Packer](https://www.packer.io/docs/builders) wie QEMU und VirtualBox angewendet werden können.
 
 Stellen Sie sicher, dass folgende Elemente auf Ihren Images installiert sind, um sie als *cloud-ready* vorzubereiten:
 

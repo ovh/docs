@@ -70,7 +70,7 @@ Mit dem Tool [FIO](https://github.com/axboe/fio) können Sie verschiedene Szenar
 - Anzahl der FIO-Worker
 - Zugriffsmodell (Lesen/Schreiben/Sequenziell/Zufällig), etc.
 
-Weitere Informationen finden Sie in [FIO-Dokumentation](https://fio.readthedocs.io/en/latest/index.html){.external}.
+Weitere Informationen finden Sie in [FIO-Dokumentation](https://fio.readthedocs.io/en/latest/index.html).
 
 ## Weiterführende Informationen
 

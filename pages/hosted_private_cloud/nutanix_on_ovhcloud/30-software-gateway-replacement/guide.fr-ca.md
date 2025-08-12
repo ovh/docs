@@ -36,7 +36,7 @@ Dans notre guide, nous allons remplacer cette passerelle par le système d'explo
 
 ### Téléchargement des sources pour l'installation de pfSense
 
-Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/){.external}.
+Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/).
 
 A l'aide de [cette documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
 

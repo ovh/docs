@@ -12,7 +12,7 @@ La interfaz vSphere permite instrumentar máquinas virtuales de varios modos.
 
 ## Requisitos
 
-- Haber contratado una solución [Private Cloud de OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
+- Haber contratado una solución [Private Cloud de OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
 - Estar conectado a la [interfaz vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion).
 
 ## Procedimiento

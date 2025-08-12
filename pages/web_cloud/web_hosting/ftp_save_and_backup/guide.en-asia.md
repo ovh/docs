@@ -19,8 +19,8 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 
 ## Requirements
 
-- A [Web Hosting plan](/links/web/hosting){.external} (please note that this does not work with [Cloud Web](/links/web/hosting-cloud-web-offer)).
-- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](/links/manager){.external}, or have the FTP user password required to access your storage space. 
+- A [Web Hosting plan](/links/web/hosting) (please note that this does not work with [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](/links/manager), or have the FTP user password required to access your storage space. 
 
 ## Instructions
 
@@ -80,11 +80,11 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > In this case:
 >
 > - Our teams send an email to the hosting [administrator contact](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management).
-> - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/manager){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
+> - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
 >
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Hosting plans`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
@@ -124,9 +124,9 @@ There are several stages to this procedure. Ensure that you have your FTP user p
 
 First of all, decide which software or interface you would like to use in order to connect to your storage space backup.  If you have already decided on one, you can move straight to step 2. Otherwise, we recommend using one of the following three solutions:
 
-- **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
+- **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
+- **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac). Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
 Once you are ready to start making changes, continue to the next step.
 
@@ -134,7 +134,7 @@ Once you are ready to start making changes, continue to the next step.
 
 To access the backup data you would like to restore, you will need to log in to your storage space via the interface or software you have selected. To do this, you will need to have the FTP username, its password and your FTP server’s host name.
 
-You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
@@ -176,7 +176,7 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 ## Go further
 
-[Using FileZilla software with your Web Hosting plan](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}
+[Using FileZilla software with your Web Hosting plan](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
 [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
 

@@ -98,11 +98,11 @@ Once the information is filled in, click on `Begin Setup` to transmit the reques
 
 Once the confirmations are approved, the subscription to JMRP/SNDS will be completed.
 
-Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junk mail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062){.external} (usually within 48H).
+Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junk mail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062) (usually within 48H).
 
 In some cases, Microsoft may ask the date of the first billing of your IP/server. In this situation, you can send a copy of your bill and add your IP/server details (ex.: host name ns1111111.ip-203-0-113.eu) in your reply.
 
-For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656){.external} with Microsoft. 
+For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) with Microsoft. 
 
 > [!warning]
 > 
@@ -117,7 +117,7 @@ Adding specific records, such as a Domain-based Message Authentication, Reportin
 
 ### Check your information
 
-You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.external} to check that all of your settings are correct.
+You may want to use a website like [Mail Tester](http://www.mail-tester.com/) to check that all of your settings are correct.
 
 ## Go further
 

@@ -11,8 +11,8 @@ Der Zugang zum vCenter kann eingeschränkt werden. Dazu wird nur bestimmten IP A
 
 ## Voraussetzungen
 
-* Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt.
-* Sie verfügen über eine [Managed Bare Metal Infrastruktur](https://www.ovhcloud.com/de/managed-bare-metal/){.external} in Ihrem OVHcloud Account.
+* Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
+* Sie verfügen über eine [Managed Bare Metal Infrastruktur](https://www.ovhcloud.com/de/managed-bare-metal/) in Ihrem OVHcloud Account.
 
 ## Praktische Anwendung
 

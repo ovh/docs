@@ -28,7 +28,7 @@ Les Floating IP sont des adresses IP publiques sur [Public Cloud](/links/public-
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) existant sur votre compte OVHcloud
 - Avoir accès à [l’API OVHcloud](/links/api) ou à [l’espace client OVHcloud](/links/manager) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
-- L’outil [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} installé sur votre environnement de travail (facultatif)
+- L’outil [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) installé sur votre environnement de travail (facultatif)
 
 ## Comprendre le service Floating IP
 

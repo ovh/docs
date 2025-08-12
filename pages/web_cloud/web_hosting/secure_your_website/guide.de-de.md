@@ -25,7 +25,7 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}.
+- Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/).
 
 ## In der praktischen Anwendung
 
@@ -33,7 +33,7 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 
 Dieser erste Schritt ist von entscheidender Bedeutung. Die Infektion Ihrer Geräte mit böswilliger Software kann dazu führen, dass Angreifer Zugriff auf alle Ihre Tastatur-Eingaben haben. Jegliche Login-Daten, die Sie für die das OVHcloud Kundencenter oder dem Verwaltungsinterface Ihrer Website verwenden, könnten somit beeinträchtigt sein.
 
-Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Schadprogramme/Ransomware/ransomware_node.html){.external}" (2020 in Frankreich etwa 400 Fälle) nicht nur zur Verschlüsselung Ihrer persönlichen Daten führen, sondern auch Ihre Geschäftstätigkeiten unterbrechen, da Ihre Software und Hardware nicht mehr funktional sind.
+Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Schadprogramme/Ransomware/ransomware_node.html)" (2020 in Frankreich etwa 400 Fälle) nicht nur zur Verschlüsselung Ihrer persönlichen Daten führen, sondern auch Ihre Geschäftstätigkeiten unterbrechen, da Ihre Software und Hardware nicht mehr funktional sind.
 
 Überprüfen Sie zunächst die Sicherheit Ihres Windows-, Mac- oder Linux-Systems:
 
@@ -92,10 +92,10 @@ Eingabe-Formulare auf Webseiten sind bevorzugte Ziele von Hackern/Spammern. Sch�
 
 Fügen Sie Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplugin hinzu:
 
-- [WordPress](https://wordpress.com/de/){.external}
-- [Joomla](https://www.joomla.de/){.external}
-- [Drupal](https://www.drupal.de/){.external}
-- [PrestaShop](https://www.prestashop.com/de){.external}
+- [WordPress](https://wordpress.com/de/)
+- [Joomla](https://www.joomla.de/)
+- [Drupal](https://www.drupal.de/)
+- [PrestaShop](https://www.prestashop.com/de)
 
 ### Schritt 10: Überprüfen Sie Ihr Webhosting auf schädliche Dateien
 
@@ -107,7 +107,7 @@ Im Zweifelsfall können Sie auch die in [Schritt 1](#local) dieser Anleitung bes
 
 Die [Sicherungen](#backup) der Daten Ihrer Webseite (FTP-Dateien und Datenbanken) sollten regelmäßig durchgeführt werden. Es besteht aber keine Garantie, dass diese auch im Ernstfall Ihre Daten korrekt wiederherstellen können. Testen Sie auch die Sicherungen Ihrer Datenbank, um sicherzustellen, dass sie nicht korrupt sind.
 
-Sie können diese Tests lokal durchführen, etwa indem Sie Ihre Daten einer Software wie [WAMP](https://www.wampserver.com/en/){.external} importieren. Achten Sie daher darauf, Ihre lokale Lösung so einzurichten, dass die Konfiguration in allen Punkten der unserer [Shared Hosting Server entspricht](https://webhosting-infos.hosting.ovh.net/).
+Sie können diese Tests lokal durchführen, etwa indem Sie Ihre Daten einer Software wie [WAMP](https://www.wampserver.com/en/) importieren. Achten Sie daher darauf, Ihre lokale Lösung so einzurichten, dass die Konfiguration in allen Punkten der unserer [Shared Hosting Server entspricht](https://webhosting-infos.hosting.ovh.net/).
 
 Sie können auch in einem anderen Ordner Ihres Webhostings eine **Testversion** Ihrer Webseite erstellen (z.B.: test.meinedomain.tld). (Es ist hierbei möglich, ein Basistemplate zu verwenden).
 

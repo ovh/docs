@@ -12,9 +12,9 @@ Aby zminimalizować ryzyko błędu podczas wymiany dysku twardego, prosimy naszy
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal)
 - Połączenie z serwerem przez SSH z uprawnieniami użytkownika root
-- Instalacja narzędzia sas2ircu na serwerze Windows (znajdziesz je za pomocą wyszukiwarki [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external})
+- Instalacja narzędzia sas2ircu na serwerze Windows (znajdziesz je za pomocą wyszukiwarki [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu))
 
 ## W praktyce
 
@@ -68,7 +68,7 @@ Urządzenie zostanie wykryte przez system operacyjny i będzie się wyświetlał
 
 ### Ustalenie numeru seryjnego dysku w przypadku sprzętowej macierzy RAID
 
-Szczegółowy opis poleceń oraz sposobu testowania dysków twardych znajdziesz w tym [przewodniku (kontroler RAID LSI)](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}.
+Szczegółowy opis poleceń oraz sposobu testowania dysków twardych znajdziesz w tym [przewodniku (kontroler RAID LSI)](/pages/bare_metal_cloud/dedicated_servers/raid_hard).
 
 #### Kontroler MegaRaid
 
@@ -155,7 +155,7 @@ Numer ID urządzenia RAID będzie się wyświetlał w następujący sposób: `/d
 
 Kontroler RAID LSI korzysta z modułu o nazwie `sg-map`, który mapuje urządzenia na `/dev/sgX` (gdzie X to numer określający urządzenie).
 
-Możesz skorzystać z [tego przewodnika (kontroler RAID LSI)](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}, aby określić, który dysk twardy odpowiada oznaczonemu urządzeniu “sg”.
+Możesz skorzystać z [tego przewodnika (kontroler RAID LSI)](/pages/bare_metal_cloud/dedicated_servers/raid_hard), aby określić, który dysk twardy odpowiada oznaczonemu urządzeniu “sg”.
 
 Po odnalezieniu urządzenia “sg” powiązanego z dyskiem twardym, który chcesz przeanalizować, zastosuj następujące polecenie:
 

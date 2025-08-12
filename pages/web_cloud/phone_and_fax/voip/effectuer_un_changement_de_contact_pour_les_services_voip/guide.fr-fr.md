@@ -27,7 +27,7 @@ OVHcloud vous permet de différencier la gestion administrative, technique et de
 
 ## Prérequis
 
-- Être connecté à  votre [espace client OVHcloud](/links/manager){.external}
+- Être connecté à  votre [espace client OVHcloud](/links/manager)
 - Disposer d’un accès à l’adresse e-mail renseignée dans votre profil.
 - Posséder l’identifiant client du nouveau contact (destinataire de la modification).
 - Le nouveau contact doit quant à lui disposer d’un accès à l’adresse e-mail renseignée dans son profil.

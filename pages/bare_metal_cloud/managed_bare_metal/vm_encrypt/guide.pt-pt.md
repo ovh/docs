@@ -12,8 +12,8 @@ Este guia explica como proceder à ativação do VM Encryption no serviço Manag
 
 ## Requisitos
 
-- Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
-- Dispor de um KMS externo compatível com **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** e presente na [matriz de compatibilidade](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
+- Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
+- Dispor de um KMS externo compatível com **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)) 1.1** e presente na [matriz de compatibilidade](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc) VMware.
 - Aceder à interface de gestão vSphere.
 - Dispor de máquinas virtuais com uma versão hardware 13 (mínimo).
 
@@ -136,7 +136,7 @@ Escolha as opções seguintes:
 
 #### Importação do certificado KMS
 
-A maioria dos fornecedores de KMS precisam de um certificado para [estabelecer uma ligação segura](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} com o vCenter.
+A maioria dos fornecedores de KMS precisam de um certificado para [estabelecer uma ligação segura](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html) com o vCenter.
 
 A partir do vCenter onde adicionou o servidor KMS, selecione este último. Em «Todas as opções», clique em `Estabelecer uma relação de confiança com o KMS`{.action}.
 

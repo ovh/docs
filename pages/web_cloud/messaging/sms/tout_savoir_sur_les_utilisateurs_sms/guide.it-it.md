@@ -15,7 +15,7 @@ Questa guida ti mostra come creare e aggiungere utenti API.
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

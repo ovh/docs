@@ -85,8 +85,8 @@ Si vous avez généré un **certificat SSL « Let's Encrypt »**, activez l'opti
 
 Si vous disposez d'un **certificat SSL importé** et que celui-ci ne fonctionne pas, contactez son fournisseur.
 
-Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire [SECTIGO](https://sectigo.com/){.external}, vérifiez si vous avez reçu un e-mail vous proposant de le renouveler.
-<br>Si besoin, contactez le [support de SECTIGO](https://sectigo.com/support){.external} à ce sujet.
+Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire [SECTIGO](https://sectigo.com/), vérifiez si vous avez reçu un e-mail vous proposant de le renouveler.
+<br>Si besoin, contactez le [support de SECTIGO](https://sectigo.com/support) à ce sujet.
 
 > [!primary]
 >

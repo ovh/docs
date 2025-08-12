@@ -8,7 +8,7 @@ updated: 2023-03-13
 
 La plateforme OpenStack gère la sécurité des pare-feu en combinant les règles de connexion en **groupes de sécurité**. Les règles sont ensuite appliquées en affectant des groupes de sécurité aux ports réseau.
 
-Un **port** dans le cadre d'[OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} est un point de connexion entre les sous-réseaux et les éléments réseau (tels que des instances, load-balancers, routeurs, etc...).
+Un **port** dans le cadre d'[OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html) est un point de connexion entre les sous-réseaux et les éléments réseau (tels que des instances, load-balancers, routeurs, etc...).
 
 **Découvrez comment sont gérés les groupes de sécurité pour les réseaux publics et privés sur Public Cloud.**
 

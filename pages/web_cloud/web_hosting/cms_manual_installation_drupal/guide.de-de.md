@@ -12,9 +12,9 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den [Herausgeber von Drupal](https://www.drupal.org/support){.external} zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den [Herausgeber von Drupal](https://www.drupal.org/support) zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> Wenn Sie ein vorhandenes Drupal CMS aktualisieren möchten oder Fragen zur Verwendung von Drupal haben, wenden Sie sich direkt an [den Herausgeber des Drupal CMS](https://www.drupal.org/support){.external}.
+> Wenn Sie ein vorhandenes Drupal CMS aktualisieren möchten oder Fragen zur Verwendung von Drupal haben, wenden Sie sich direkt an [den Herausgeber des Drupal CMS](https://www.drupal.org/support).
 >
 
 > [!success]
@@ -145,7 +145,7 @@ Wenn alle Eingaben korrekt waren, erscheint folgende Seite:
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Offizielle Website Drupal](https://www.drupal.org/){.external}
+[Offizielle Website Drupal](https://www.drupal.org/)
  
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  

@@ -70,7 +70,7 @@ Verrà visualizzato il quinto e ultimo step dell’installazione.
 Leggi le informazioni visualizzate sullo schermo e scegli l'opzione che preferisci:
 
 - `Create empty starting page` : seleziona questa opzione per creare una pagina predefinita per il tuo sito Web. Una volta completato questo step, inserisci il dominio nel browser per accedere al sito Web Typo3.
-- `Take me straight to the backend` : seleziona questa opzione per essere reindirizzato alla dashboard del tuo sito web Typo3. Questa dashboard ti permette di creare le pagine Web in autonomia, inserirne il contenuto e molto altro ancora. Per maggiori informazioni consulta la [documentazione ufficiale di Typo3](https://docs.typo3.org/Home/GettingStarted.html){.external}.
+- `Take me straight to the backend` : seleziona questa opzione per essere reindirizzato alla dashboard del tuo sito web Typo3. Questa dashboard ti permette di creare le pagine Web in autonomia, inserirne il contenuto e molto altro ancora. Per maggiori informazioni consulta la [documentazione ufficiale di Typo3](https://docs.typo3.org/Home/GettingStarted.html).
 
 Clicca su `Open the TYPO3 Backend`{.action} per confermare l’opzione appena scelta.
 

@@ -70,7 +70,7 @@ If Nginx is correctly installed, you should see a message like this:
 
 ![env dev web](images/result_nginx_v.png){.thumbnail}
 
-If you have any queries, please refer to [Nginx official website](https://www.nginx.com/){.external}{.external}.
+If you have any queries, please refer to [Nginx official website](https://www.nginx.com/).
 
 ### Install a DBMS (**D**ata**B**ase **M**anagement **S**ystem)
 

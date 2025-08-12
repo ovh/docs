@@ -6,14 +6,14 @@ updated: 2020-11-18
 
 ## Wprowadzenie
 
-Wtyczka OVH Network została stworzona przez OVH. Dzięki niej możesz bardziej precyzyjnie zarządzać wszystkimi adresami IP powiązanymi z Twoją usługą [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/){.external}. 
+Wtyczka OVH Network została stworzona przez OVH. Dzięki niej możesz bardziej precyzyjnie zarządzać wszystkimi adresami IP powiązanymi z Twoją usługą [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/). 
 
 **Dowiedz się, jak korzystać z wtyczki OVH Network w usłudze Managed Bare Metal.**
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
-* Posiadanie bloku IP powiązanego z Twoją usługą [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+* Posiadanie oferty [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/)
+* Posiadanie bloku IP powiązanego z Twoją usługą [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/)
 * Dostęp do interfejsu zarządzania vSphere
 
 ## W praktyce
@@ -37,7 +37,7 @@ W części **IP Blocks** wyszczególnione są wszystkie adresy IP Twojego bloku.
 
 Aby zaktualizować informacje we wtyczce OVH, że Twoje publiczne adresy IP są już używane, konieczne jest wysłanie zapytania ARP (_arping_) z maszyny lub maszyn wirtualnych używających tych adresów. Uwaga: niektóre konfiguracje z wirtualną zaporą nie umożliwiają pobierania adresów MAC, jeśli protokół ARP nie został wskazany jako autoryzowany.
 
-Możesz następnie skonfigurować Twoje rewersy DNS dla IP, na przykład dla serwera e-mail. Ustawienie to jest dostępne również w [Panelu klienta](/links/manager){.external} oraz w interfejsie [API OVHcloud](/links/api){.external}. Kliknij trzy kropki po lewej stronie adresu IP, a następnie `Edit Reverse`{.action}.
+Możesz następnie skonfigurować Twoje rewersy DNS dla IP, na przykład dla serwera e-mail. Ustawienie to jest dostępne również w [Panelu klienta](/links/manager) oraz w interfejsie [API OVHcloud](/links/api). Kliknij trzy kropki po lewej stronie adresu IP, a następnie `Edit Reverse`{.action}.
 
 ![Przycisk Edition Reverse](images/network_04.png){.thumbnail}
 

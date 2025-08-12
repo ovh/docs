@@ -51,7 +51,7 @@ Substitua os termos `my_private` e `your_file_name` por qualquer nome de ficheir
 
 Uma vez iniciada a encomenda, o terminal solicitará cada uma das seguintes informações (para si, para a sua empresa ou para a sua associação). Depois de responder à pergunta, prima a tecla `ENTRAE`{.action} no teclado para apresentar a seguinte pergunta:
 
-- `Country Name (2 letter code) [AU]`: introduza em maiúsculas o **Country Code** do seu país. Se necessário, encontre a lista de todos os **Country Codes** [aqui](https://www.iban.com/country-codes){.external}.
+- `Country Name (2 letter code) [AU]`: introduza em maiúsculas o **Country Code** do seu país. Se necessário, encontre a lista de todos os **Country Codes** [aqui](https://www.iban.com/country-codes).
 - `State or Province Name (full name) [Some-State]` : introduza em maiúsculas o nome da sua região (ou do seu Estado se estiver, por exemplo, nos EUA).
 - `Locality Name (eg, city) []` : introduza em maiúsculas o nome da sua cidade.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: introduza o nome da sua organização, empresa ou associação. **Se for um utilizador doméstico, não responda a esta pergunta e prima diretamente a tecla `ENTRAE`{.action} no teclado para apresentar a seguinte pergunta**.

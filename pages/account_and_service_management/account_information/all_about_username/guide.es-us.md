@@ -116,11 +116,11 @@ Una vez introducidos los datos, haga clic en el botón `Aceptar`{.action}.
 
 #### Ejercer mis derechos sobre mis datos personales
 
-De acuerdo con el Reglamento General de Protección de Datos (RGPD), puede solicitar ejercer los derechos relacionados con la protección de sus datos personales rellenando [este formulario](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos){.external}.
+De acuerdo con el Reglamento General de Protección de Datos (RGPD), puede solicitar ejercer los derechos relacionados con la protección de sus datos personales rellenando [este formulario](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos).
 
 #### Eliminar mi cuenta de OVHcloud
 
-Puede solicitar la eliminación de su cuenta de OVHcloud y los datos asociados rellenando [el formulario para el ejercicio de los derechos RGPD](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos){.external} y eligiendo el "Derecho de supresión".
+Puede solicitar la eliminación de su cuenta de OVHcloud y los datos asociados rellenando [el formulario para el ejercicio de los derechos RGPD](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos) y eligiendo el "Derecho de supresión".
 
 > [!warning]
 >

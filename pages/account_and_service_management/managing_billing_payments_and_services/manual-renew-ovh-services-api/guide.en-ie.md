@@ -17,7 +17,7 @@ Natively, OVHcloud offers you the option of renewing your solution automatically
 
 ## Instructions
 
-To use the [renewal API](https://api.ovh.com/console/#/service/{serviceId}/renew#GET){.external}, you will need your `serviceId`. You can get this information via the `serviceInfos` API, for example:
+To use the [renewal API](https://api.ovh.com/console/#/service/{serviceId}/renew#GET), you will need your `serviceId`. You can get this information via the `serviceInfos` API, for example:
 
 > [!api]
 >

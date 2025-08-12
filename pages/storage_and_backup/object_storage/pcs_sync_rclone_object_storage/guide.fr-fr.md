@@ -13,8 +13,8 @@ rClone étant un logiciel de synchronisation externe, les détails d'utilisation
 
 ## Prérequis
 
-- Avoir créé son container *Object Storage* (depuis l'espace client ou depuis [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container){.external}).
-- Avoir créé un [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user){.external}.
+- Avoir créé son container *Object Storage* (depuis l'espace client ou depuis [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container)).
+- Avoir créé un [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 ## En pratique
 
@@ -22,7 +22,7 @@ Une fois votre container et votre utilisateur OpenStack créés, il vous reste d
 
 - Récupérer le fichier de configuration pour rClone :
 
-Une fois votre [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user){.external} créé vous pourrez choisir, dans votre espace client, de récupérer le fichier de configuration nécessaire pour rClone.
+Une fois votre [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) créé vous pourrez choisir, dans votre espace client, de récupérer le fichier de configuration nécessaire pour rClone.
 
 Pour cela, quand vous êtes sur la page des utilisateurs OpenStack dans votre espace client, cliquez sur `...`{.action} à droite de l'utilisateur puis sur `Télécharger un fichier de configuration Rclone`{.action}.
 
@@ -51,7 +51,7 @@ rclone lsd BackupStorage
 
 *BackupStorage* correspond au nom donné à votre espace de stockage.
 
-Vous trouverez sur le site officiel de rClone une documentation précise des actions à effectuer pour synchroniser votre Object Storage et rClone : [Documentation officielle rClone](https://Rclone.org/swift/){.external}.
+Vous trouverez sur le site officiel de rClone une documentation précise des actions à effectuer pour synchroniser votre Object Storage et rClone : [Documentation officielle rClone](https://Rclone.org/swift/).
 
 ## Aller plus loin
 

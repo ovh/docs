@@ -20,7 +20,7 @@ Lexpéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation e
 ## Prérequis
 
 - Disposer d’un compte SMS OVHcloud crédité.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 

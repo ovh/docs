@@ -12,29 +12,29 @@ In this tutorial we will show you how to monitor your applications/workloads on 
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
 ## Instructions
 
 In this guide you will:
 
-- install Prometheus operator (it will install [Prometheus](https://prometheus.io/){.external} & [Grafana](https://grafana.com/){.external})
+- install Prometheus operator (it will install [Prometheus](https://prometheus.io/) & [Grafana](https://grafana.com/))
 - query Prometheus
 - visualize metrics on Grafana
 
 ### Prometheus operator
 
-The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator){.external} provides Kubernetes native deployment and management of Prometheus and related monitoring components.
+The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) provides Kubernetes native deployment and management of Prometheus and related monitoring components.
 
 ![Prometheus Architecture](images/prometheus-scraping-schema.png){.thumbnail}
 
 The purpose of this project is to simplify and automate the configuration of a Prometheus-based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys Grafana and its dashboards, to visualize our metrics in a user-friendly way.
 
-If you are interested in the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator){.external}.
+If you are interested in the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator).
 
 ### Installing the Prometheus operator
 
-For this tutorial we are using the [Prometheus Operator Helm chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack){.external} found on the [Prometheus Community repository](https://github.com/prometheus-community){.external}.
+For this tutorial we are using the [Prometheus Operator Helm chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) found on the [Prometheus Community repository](https://github.com/prometheus-community).
 
 Add the Prometheus Helm repository:
 
@@ -172,7 +172,7 @@ Click on the `Execute`{.action} button to determine if the Kubernetes metrics ar
 
 Thanks to the PromQL query you can list the number of pods per namespace in your Kubernetes cluster.
 
-Kubernetes components emit metrics in Prometheus format. You can find more information in the [Kubernetes official documentation](https://kubernetes.io/docs/concepts/cluster-administration/system-metrics/){.external}.
+Kubernetes components emit metrics in Prometheus format. You can find more information in the [Kubernetes official documentation](https://kubernetes.io/docs/concepts/cluster-administration/system-metrics/).
 
 You can also go to the Grafana interface. Open your browser and point to `http://$GRAFANA_URL` value using the credentials below:
 

@@ -6,14 +6,14 @@ updated: 2022-02-03
 
 ## Objetivo
 
-Esta guía explica los pasos que debe seguir para exportar todos los elementos de su sitio web al formato estándar desde un [alojamiento web de OVHcloud](/links/web/hosting){.external}.
+Esta guía explica los pasos que debe seguir para exportar todos los elementos de su sitio web al formato estándar desde un [alojamiento web de OVHcloud](/links/web/hosting).
 
 **Esta guía explica cómo exportar un sitio web de OVHcloud.**
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -28,17 +28,17 @@ Para conectarse a su espacio de almacenamiento necesitará lo siguiente:
 - la dirección del servidor.
 - el puerto de conexión al servidor.
 
-Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de ellos, conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección `Web Cloud`{.action} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
+Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de ellos, conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
-Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection){.external}. Si no tiene la contraseña, consulte la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection). Si no tiene la contraseña, consulte la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Una vez que disponga de todos los elementos necesarios, la recuperación de los archivos en el espacio de almacenamiento puede realizarse de dos formas diferentes:
 
 - **Cliente FTP o SFTP** : deberá instalar en su ordenador un programa compatible, como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa instalado, ya que OVHcloud no lo ha creado.
 
-- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](/links/web/hosting){.external} específico. Para más información, consulte nuestra guía ["Utilizar el acceso SSH de un alojamiento web"](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](/links/web/hosting) específico. Para más información, consulte nuestra guía ["Utilizar el acceso SSH de un alojamiento web"](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 1.2. Descargar los archivos desde el espacio de almacenamiento.
 
@@ -56,10 +56,10 @@ Para consultar la carpeta en la que está almacenado el sitio web, abra la pesta
 >
 
 Para obtener una copia de seguridad de la base de datos, consulte nuestra guía:
-[Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export){.external}.
+[Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export).
 
 Si utiliza una base de datos **Web Cloud Databases** para su sitio web, consulte la sección relativa al backup de nuestra guía:
-[Guardar y exportar una base de datos en un servidor de bases de datos](/pages/web_cloud/web_cloud_databases/save-export-on-database-server){.external}.
+[Guardar y exportar una base de datos en un servidor de bases de datos](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
 ### 3. obtener los logs de su alojamiento de OVHcloud
 
@@ -89,17 +89,17 @@ Al seleccionar el tipo de logs durante el mes que le interesa, estos se guardan 
 
 ## Más información
 
-[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection){.external}.
+[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection).
 
-[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}
+[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)
 
-[Utilizar FileZilla con su alojamiento](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}.
+[Utilizar FileZilla con su alojamiento](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
-[Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+[Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
-[Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export){.external}.
+[Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export).
 
-[Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}.
+[Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

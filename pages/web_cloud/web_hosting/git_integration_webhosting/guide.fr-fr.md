@@ -14,7 +14,7 @@ Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamique
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie Web Cloud.
-- Posséder un compte [GitHub](https://github.com/){.external} et y être connecté.
+- Posséder un compte [GitHub](https://github.com/) et y être connecté.
 
 > [!primary]
 >

@@ -6,14 +6,14 @@ updated: 2023-03-27
 
 ## Objectif
 
-Les API disponibles sur [https://ca.api.ovh.com/](/links/api){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
+Les API disponibles sur [https://ca.api.ovh.com/](/links/api) vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
 
 **Découvrez comment explorer les API OVHcloud à travers notre nouvelle console.**
 
 ## Prérequis
 
 - Disposer d'un compte OVHcloud actif et connaître ses identifiants.
-- Être sur la page web des [API OVHcloud](/links/api){.external}.
+- Être sur la page web des [API OVHcloud](/links/api).
 
 ## En pratique
 

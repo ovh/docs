@@ -1,6 +1,6 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2025-03-25
+updated: 2025-08-07
 ---
 
 ## FAQ VPS
@@ -17,11 +17,6 @@ VPS, rozwiązanie pośrednie między hostingiem a serwerem fizycznym, charaktery
 Serwer VPS jest kolejnym wyborem po hostingu.  Daje Ci więcej swobody w zakresie konfiguracji i korzystania z różnych funkcjonalności (dostęp root, Apache PHP,init).  Możesz również zainstalować własny certyfikat SSL i dowolne oprogramowanie.
 
 Pamiętaj jednak, żeby wybrać odpowiedni VPS.  Potrzebujesz konfiguracji dopasowanej do wymagań Twoich aplikacji oraz możliwości dostosowywania jej wraz z rozwojem Twoich projektów.
-
-### VPS czy hosting Plesk?
-
-Wraz z pakietem hostingowym Plesk otrzymujesz serwer, na którym jest wstępnie zainstalowana platforma Plesk.  Możesz zarządzać stronami WWW, ale nie jesteś administratorem usługi. Może on być wykorzystywany wyłącznie do zarządzania.  
-Wybierając VPS, stajesz się administratorem Twojego serwera, a OVHcloud nie ma dostępu do jego zawartości. Możesz zatem używać go dowolnie zgodnie z Twoimi potrzebami.
 
 ### VPS czy serwer dedykowany?
 
@@ -73,8 +68,8 @@ Tak Możesz podzielić serwer VPS i dostosować go do Twoich potrzeb. Możesz za
 
 ### Czy mój VPS ma kopię zapasową?
 
-OVHcloud nie dostarcza kopii zapasowych danych hostowanych na Twoim serwerze VPS. Musisz zastosować własną strategię tworzenia kopii zapasowych.  
-W tym celu możesz skorzystać z następujących opcji: ręczna kopia zapasowa (Snapshot) lub automatyczny backup.
+W zależności od wrażliwości danych zalecamy zastosowanie odpowiedniej strategii tworzenia kopii zapasowych.  
+Przejdź na naszą [stronę WWW VPS](/links/bare-metal/vps-options), aby uzyskać więcej informacji na temat dostępnych opcji.
 
 ### Jak zabezpieczyć serwer VPS?
 

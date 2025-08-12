@@ -51,7 +51,7 @@ Ersetzen Sie `my_private` und `your_file_name` durch die gewünschten Dateinamen
 
 Sobald die Bestellung gestartet wurde, fragt das Terminal Sie nach den folgenden Informationen (zu Ihrer Person, Ihrem Unternehmen, Verein, etc.). Drücken Sie jeweils die `EINGABETASTE`{.action} auf der Tastatur, um die folgenden Fragen schrittweise anzuzeigen:
 
-- `Country Name (2 letter code) [AU]`: Geben Sie den **Country Code** Ihres Landes in Großbuchstaben ein. Alle Ländercodes sind [hier](https://www.iban.com/country-codes){.external} aufgelistet.
+- `Country Name (2 letter code) [AU]`: Geben Sie den **Country Code** Ihres Landes in Großbuchstaben ein. Alle Ländercodes sind [hier](https://www.iban.com/country-codes) aufgelistet.
 - `State or Province Name (full name) [Some-State]`: Geben Sie den Namen Ihrer Region oder Ihres Bundeslandes in Großbuchstaben ein.
 - `Locality Name (eg, city) []`: Geben Sie den Namen Ihrer Stadt in Großbuchstaben ein.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: Geben Sie den Namen Ihrer Organisation bzw. Ihres Unternehmens ein. **Wenn Sie eine Privatperson sind, beantworten Sie diese Frage nicht und drücken Sie die `EINGABETASTE`{.action} auf Ihrer Tastatur, um die nächste Frage anzuzeigen**.

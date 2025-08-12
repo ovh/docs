@@ -27,7 +27,7 @@ One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as s
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
-Redis® has multiple PHP clients, allowing us to connect and manage an instance from code. Please follow the official [Redis® documentation for PHP clients](https://redis.io/clients#php){.external} to get the latest clients information.
+Redis® has multiple PHP clients, allowing us to connect and manage an instance from code. Please follow the official [Redis® documentation for PHP clients](https://redis.io/clients#php) to get the latest clients information.
 
 We will need to set up our PHP environment with phpredis client, then configure our Public Cloud Databases for Valkey services to accept incoming connections, and finally code in PHP to perform a few example actions.
 

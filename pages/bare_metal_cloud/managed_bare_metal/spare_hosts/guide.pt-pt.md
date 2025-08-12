@@ -6,7 +6,7 @@ updated: 2020-11-18
 
 ## Requisitos
 
-- Dispor de uma oferta [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Dispor de uma oferta [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
 
 ## Sumário
 

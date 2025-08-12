@@ -12,7 +12,7 @@ updated: 2023-03-13
 
 Die OpenStack-Plattform verwaltet Sicherheit via Firewalls, indem sie Verbindungsregeln in **Sicherheitsgruppen** (*security groups*) zusammenfasst. Die Regeln werden dann angewendet, indem Sicherheitsgruppen Netzwerk-Ports zugewiesen werden.
 
-Ein **Port** im Kontext von [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} ist ein Verbindungspunkt zwischen Subnetzen und Netzwerkelementen (Instanzen, Loadbalancer, Router etc.).
+Ein **Port** im Kontext von [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html) ist ein Verbindungspunkt zwischen Subnetzen und Netzwerkelementen (Instanzen, Loadbalancer, Router etc.).
 
 **Diese Anleitung erklärt, wie Sicherheitsgruppen für private und öffentliche Netzwerke in der Public Cloud verwaltet werden.**
 

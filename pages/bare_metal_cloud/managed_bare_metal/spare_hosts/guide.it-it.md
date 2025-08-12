@@ -6,7 +6,7 @@ updated: 2020-11-18
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
+- Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/)
 
 ## Obiettivi
 

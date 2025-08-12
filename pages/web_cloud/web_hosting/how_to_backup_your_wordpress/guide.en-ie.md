@@ -15,7 +15,7 @@ On a web hosting plan, you are responsible for your website’s backups. Althoug
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 **This tutorial explains how to back up the content of your WordPress website and its database.**
@@ -68,7 +68,7 @@ Click `Go`{.action} and you will download your entire database in Structured Que
 
 ### Method 2: Create a backup with a plugin
 
-There are many WordPress plugins you can use to manage backups. The most popular is [UpdraftPlus](https://wordpress.org/plugins/updraftplus/){.external}, which has several million active installations. The free version is enough to back up your website. The premium version offers more options such as incremental backups, a migration tool, multisite backup, more choices on clouds for storing data, etc.
+There are many WordPress plugins you can use to manage backups. The most popular is [UpdraftPlus](https://wordpress.org/plugins/updraftplus/), which has several million active installations. The free version is enough to back up your website. The premium version offers more options such as incremental backups, a migration tool, multisite backup, more choices on clouds for storing data, etc.
 
 Download the `.zip` file to your computer. For the sake of clarity, the downloaded plugin file will be renamed **updraftplus.zip** in the examples below.
 
@@ -143,7 +143,7 @@ By applying these best practices, you will have the possibility to restore the w
 
 ## Go further <a name="go-further"></a>
 
-- [WordPress official website](https://wordpress.org){.external}
+- [WordPress official website](https://wordpress.org)
 - [More information on backups for your web hosting plan](/pages/web_cloud/web_hosting/hosting_technical_specificities#automatic-backup-information)
 - [More information on backups for your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_technical_specificities#automatic-backup-information)
 

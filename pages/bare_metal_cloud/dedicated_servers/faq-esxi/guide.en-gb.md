@@ -29,7 +29,7 @@ Enter your IP or server name in a browser to determine if a ransom message is di
 If you want to attempt to recover the data on your server, you can rely on the steps in the following documentation: [Enable and use rescue mode - Mounting a datastore](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#mounting-a-datastore).
 However, we don't have all the devices we need to recover all of your data.
 
-The US National Cybersecurity and Infrastructure Security Agency ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) also made available [a tool](https://github.com/cisagov/ESXiArgs-Recover) to retrieve data from an ESXi server targeted by the ESXiArgs ransomware.<br>
+The US National Cybersecurity and Infrastructure Security Agency ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script)) also made available [a tool](https://github.com/cisagov/ESXiArgs-Recover) to retrieve data from an ESXi server targeted by the ESXiArgs ransomware.<br>
 Using this tool requires advanced system administration skills. We advise you to use it only with knowledge of the facts, since OVHcloud cannot provide you with assistance on its use.
 
 In case of difficulties, we recommend that you contact a [specialist provider](/links/partner) or contact our teams by [creating a support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).

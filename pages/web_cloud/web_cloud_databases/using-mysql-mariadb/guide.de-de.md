@@ -24,7 +24,7 @@ Das System ist 100% kompatibel und gilt insgesamt als „freier“ als das origi
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases){.external} (auch enthalten in einem [Performance Webhosting](/links/web/hosting)).
+- Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases) (auch enthalten in einem [Performance Webhosting](/links/web/hosting)).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben die [Anleitung zum Start mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) befolgt.
 

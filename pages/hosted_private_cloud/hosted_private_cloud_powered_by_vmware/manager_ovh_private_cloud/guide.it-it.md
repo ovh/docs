@@ -12,14 +12,14 @@ Lo Spazio Cliente OVHcloud propone numerose opzioni di configurazione della tua 
 
 ## Prerequisiti
 
-- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Hosted Private Cloud`{.action} > `Private Cloud`{.action}.
-- Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
+- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Hosted Private Cloud`{.action} > `Private Cloud`{.action}.
+- Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) attivo
 
 ## Procedura
 
 ### Informazioni generali
 
-Accedendo alla sezione `Hosted Private Cloud`{.action} > `Private Cloud`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager){.external}, visualizzi le informazioni relative alla tua piattaforma:
+Accedendo alla sezione `Hosted Private Cloud`{.action} > `Private Cloud`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager), visualizzi le informazioni relative alla tua piattaforma:
 
 ![Informazioni generali](images/controlpanel1.png){.thumbnail}
 
@@ -178,7 +178,7 @@ Dalla scheda `Licenza Windows`{.action} è possibile attivare sul tuo datacenter
 
 ![Licenza SPLA Windows](images/controlpanel10.png){.thumbnail}
 
-Per consultare le tariffe, [clicca qui](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Per consultare le tariffe, [clicca qui](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/images-licenses/).
 
 ### Panoramica dei datacenter
 
@@ -231,7 +231,7 @@ La scheda di backup consente di attivare la soluzione `Veeam backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Per maggiori informazioni su questa opzione, consulta [questa guida](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service){.external}.
+Per maggiori informazioni su questa opzione, consulta [questa guida](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service).
 
 ## Per saperne di più
 

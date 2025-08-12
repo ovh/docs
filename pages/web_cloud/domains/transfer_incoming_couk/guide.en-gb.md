@@ -35,7 +35,7 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 
 - Your domain must not be in the **Redemption** period or in Pending Delete status.
 - The domain must not be blocked by your registrar.
-- Owner contact information must be up to date in the [Whois](https://www.nominet.uk/whois){.external} data of the domain.
+- Owner contact information must be up to date in the [Whois](https://www.nominet.uk/whois) data of the domain.
 - You are able to obtain the authorisation code that will be sent to the domain owner's email address.
 
 > [!primary]
@@ -58,12 +58,12 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 
 ### Step 1: Changing your domain TAG
 
-In order to transfer your domain to OVHcloud, you must first specify the OVHcloud TAG at your current registrar: "OVH-FR". The list of TAGs for the different registrars is available on the official [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external} registry website.
+In order to transfer your domain to OVHcloud, you must first specify the OVHcloud TAG at your current registrar: "OVH-FR". The list of TAGs for the different registrars is available on the official [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/) registry website.
 
 > [!primary]
 >
 > If you cannot change your domain's TAG through your current registrar, you can apply to the Nominet registry to make the change for you. Nominet will charge a fee for this service.
-> Please refer to [Nominet's website](https://www.nominet.uk/domain-support/){.external} for more information. 
+> Please refer to [Nominet's website](https://www.nominet.uk/domain-support/) for more information. 
 >
 
 ### Step 2: Obtaining the authorisation code

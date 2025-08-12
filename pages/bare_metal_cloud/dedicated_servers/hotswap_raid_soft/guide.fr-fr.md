@@ -15,7 +15,7 @@ Si l'un des disques de votre serveur est hors d'usage, vous avez la possibilité
 - Bénéficier d'un serveur mHG, HG ou BHG.
 - Posséder un RAID logiciel (avec une carte LSI).
 - Disposer d'un accès SSH (Linux) ou RDP (Windows).
-- Avoir installé l'utilitaire « sas2ircu » (utilisez le moteur de recherche [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} pour le trouver).
+- Avoir installé l'utilitaire « sas2ircu » (utilisez le moteur de recherche [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu) pour le trouver).
 
 ## En pratique
 
@@ -236,7 +236,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ### Sous Windows
 
@@ -288,7 +288,7 @@ Vous pouvez désactiver le clignotement du disque, en remplaçant « on » par
 
 Réalisez cette manipulation depuis l'interface « **Gestion des disques** » de votre serveur Windows.
 
-Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Le disque défectueux est désormais prêt à être remplacé par un technicien en datacenter. Une fois l'opération effectuée, vous n'aurez plus qu'à resynchroniser le RAID. Pour cela, aidez-vous de la documentation suivante : [RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Aller plus loin
 

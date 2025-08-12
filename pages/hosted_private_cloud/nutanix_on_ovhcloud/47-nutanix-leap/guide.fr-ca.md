@@ -139,7 +139,7 @@ Depuis le menu principal, cliquez sur `Availability Zones`{.action} dans le sous
 ### Mise en place d'une réplication à partir du Canada vers la France
 
 > [!warning]
-> Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membres d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour effectuer cette migration : [Migration depuis un Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html){.external}. 
+> Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membres d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour effectuer cette migration : [Migration depuis un Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html). 
 >
 
 #### Création d'une catégorie contenant les machines virtuelles à répliquer

@@ -20,7 +20,7 @@ Poziomy szyfrowania SSL są identyczne dla tych trzech typów certyfikatów.
 
 Główna różnica polega na tym, że poziom weryfikacji będzie przeprowadzany przez Urząd Certyfikacji (CA), który wydaje certyfikat SSL i poświadcza jego autentyczność.
 
-W przypadku hostingu www OVHcloud organem certyfikującym wydającym certyfikaty SSL DV jest [Sectigo](https://sectigostore.com){.external}.
+W przypadku hostingu www OVHcloud organem certyfikującym wydającym certyfikaty SSL DV jest [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >

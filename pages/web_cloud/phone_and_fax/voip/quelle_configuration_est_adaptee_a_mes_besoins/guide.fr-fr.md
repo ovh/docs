@@ -17,8 +17,8 @@ Lorsque vous disposez d'un numéro alias chez OVHcloud, qu'il soit nouvellement 
 
 ## Prérequis
 
-- Disposer d'un [numéro alias fourni par OVHcloud](/links/telecom/telephonie-numeros){.external} ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
+- Disposer d'un [numéro alias fourni par OVHcloud](/links/telecom/telephonie-numeros) ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -59,7 +59,7 @@ Vous trouverez ci-dessous un récapitulatif des différentes configurations. Pou
 
 La redirection permet de rediriger les appels reçus sur un numéro OVHcloud vers une seule ligne SIP OVHcloud.
 
-Cette configuration est accessible en mode simple uniquement. Reportez-vous aux instructions décrites dans notre documentation « [Configurer une redirection d’appels](/pages/web_cloud/phone_and_fax/voip/redirection_avec_presentation){.external} » si vous désirez en apprendre plus.
+Cette configuration est accessible en mode simple uniquement. Reportez-vous aux instructions décrites dans notre documentation « [Configurer une redirection d’appels](/pages/web_cloud/phone_and_fax/voip/redirection_avec_presentation) » si vous désirez en apprendre plus.
 
 #### 2.2 File d'appels <a name="file-d-appels"></a>
 

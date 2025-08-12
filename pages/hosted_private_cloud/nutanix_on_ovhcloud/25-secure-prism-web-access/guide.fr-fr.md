@@ -6,7 +6,7 @@ updated: 2022-01-11
 
 ## Objectif
 
-Une fois votre service livré, Prism Central est accessible sur l'Internet public. Vous pouvez en restreindre l'accès à une ou plusieurs adresses IP via le [Load Balancer OVHcloud](/links/network/load-balancer){.external}.
+Une fois votre service livré, Prism Central est accessible sur l'Internet public. Vous pouvez en restreindre l'accès à une ou plusieurs adresses IP via le [Load Balancer OVHcloud](/links/network/load-balancer).
 
 **Ce guide vous explique comment sécuriser l'accès à l'interface Prism Central.**
 

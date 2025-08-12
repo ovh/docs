@@ -16,7 +16,7 @@ Description of the different input points in the API for the Load Balancer OVH.
 
 Details of the API functionality for the Load Balancer OVH
 
-- All API calls are made in the section */ipLoadbalancing* available here : [https://api.ovh.com/console/#/ipLoadbalancing](https://api.ovh.com/console/#/ipLoadbalancing){.external}.
+- All API calls are made in the section */ipLoadbalancing* available here : [https://api.ovh.com/console/#/ipLoadbalancing](https://api.ovh.com/console/#/ipLoadbalancing).
 
 > [!warning]
 >

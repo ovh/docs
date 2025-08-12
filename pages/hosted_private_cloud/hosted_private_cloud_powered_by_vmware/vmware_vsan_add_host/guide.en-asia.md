@@ -47,7 +47,7 @@ Click on `Claim Unused Disks`{.action}.
 
 ![vSAN](images/en08cluster.png){.thumbnail}
 
-Available disks are assigned to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} for explanation) depending on types and sizes. You can customize it to your need.
+Available disks are assigned to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html) for explanation) depending on types and sizes. You can customize it to your need.
 
 Click on `Create`{.action} when ready.
 

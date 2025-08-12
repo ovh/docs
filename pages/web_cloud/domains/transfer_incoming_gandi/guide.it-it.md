@@ -87,13 +87,13 @@ Il trasferimento di un dominio Gandi richiede una procedura specifica.
 > Finché il blocco è attivo, il trasferimento non è possibile.
 >
 
-Per sbloccare il dominio in Gandi, segui gli step descritti nella [documentazione dedicata di Gandi](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html){.external}.
+Per sbloccare il dominio in Gandi, segui gli step descritti nella [documentazione dedicata di Gandi](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html).
 
 ### Step 2 - Ottieni il codice di autorizzazione
 
 Il codice di autorizzazione protegge il dominio da trasferimenti non autorizzati da parte di terzi. Questo codice è necessario per autorizzare il trasferimento del tuo dominio verso un nuovo Registrar.
 
-Per recuperare il codice di trasferimento del dominio, segui gli step descritti nella [documentazione dedicata di Gandi](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html){.external}.
+Per recuperare il codice di trasferimento del dominio, segui gli step descritti nella [documentazione dedicata di Gandi](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html).
 
 ### Step 3 - Avvia il trasferimento del tuo dominio verso OVHcloud
   

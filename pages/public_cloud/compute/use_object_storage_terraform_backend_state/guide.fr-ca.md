@@ -18,11 +18,11 @@ Dans ce tutoriel, vous allez :
 
 - Être connecté votre [espace client OVHcloud](/links/manager)
 - Une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Installation de la CLI [Terraform](https://www.terraform.io/downloads){.external}
+- Installation de la CLI [Terraform](https://www.terraform.io/downloads)
 
 ## Avant de commencer
 
-- Vous devez avoir installé Terraform CLI, version 0.12.x minimum, sur votre machine. Vous pouvez l'installer en suivant les instructions d'installation [détaillées](https://www.terraform.io/docs/cli/index.html){.external} ou avec l'outil [tfenv](https://github.com/tfutils/tfenv){.external}.
+- Vous devez avoir installé Terraform CLI, version 0.12.x minimum, sur votre machine. Vous pouvez l'installer en suivant les instructions d'installation [détaillées](https://www.terraform.io/docs/cli/index.html) ou avec l'outil [tfenv](https://github.com/tfutils/tfenv).
 
 ## Terraform
 
@@ -31,9 +31,9 @@ Dans ce tutoriel, vous allez :
 ![Terraform](images/terraform.png){.thumbnail}
 
 Cet outil dispose d’une interface de ligne de commande (CLI) puissante et très intuitive.
-Si vous souhaitez tirer parti de vos connaissances sur Terraform CLI, consultez [l'aide-mémoire](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external}.
+Si vous souhaitez tirer parti de vos connaissances sur Terraform CLI, consultez [l'aide-mémoire](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf).
 
-Chez OVHcloud, nous avons créé un [provider Terraform](https://registry.terraform.io/providers/ovh/ovh/latest){.external} qui vous permet d'interagir et de gérer les ressources OVHcloud.
+Chez OVHcloud, nous avons créé un [provider Terraform](https://registry.terraform.io/providers/ovh/ovh/latest) qui vous permet d'interagir et de gérer les ressources OVHcloud.
 
 ### Terraform states et backend
 

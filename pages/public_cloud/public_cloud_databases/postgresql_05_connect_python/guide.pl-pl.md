@@ -39,7 +39,7 @@ To interact with your PostgreSQL instance using Python, your development environ
 - A compatible version of Python
 - Psycopg2
 
-Please follow the official [Psycopg - PostgreSQL database adapter for Pytho](https://www.psycopg.org/docs/){.external}. to get the latest information.
+Please follow the official [Psycopg - PostgreSQL database adapter for Pytho](https://www.psycopg.org/docs/). to get the latest information.
 
 Once your Python environment is set up and you begin executing a **python --version** in your command line interface (CLI), you should see information about the version as shown below :
 

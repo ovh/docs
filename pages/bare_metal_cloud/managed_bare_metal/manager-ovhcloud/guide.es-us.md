@@ -12,14 +12,14 @@ El área de cliente de OVHcloud ofrece múltiples opciones de configuración de 
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Bare Metal Cloud`{.action}, y dentro, en `Managed Bare Metal`{.action}.
-- Haber contratado un servicio [Managed Bare Metal OVHcloud](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Bare Metal Cloud`{.action}, y dentro, en `Managed Bare Metal`{.action}.
+- Haber contratado un servicio [Managed Bare Metal OVHcloud](https://www.ovhcloud.com/es/managed-bare-metal/).
 
 ## Procedimiento
 
 ### Información general
 
-Una vez en la sección `Bare Metal Cloud`{.action} del [área de cliente OVHcloud](/links/manager){.external}, haga clic en `Managed Bare Metal`{.action} y aparecerá la información general de su Managed Bare Metal.
+Una vez en la sección `Bare Metal Cloud`{.action} del [área de cliente OVHcloud](/links/manager), haga clic en `Managed Bare Metal`{.action} y aparecerá la información general de su Managed Bare Metal.
 
 ![Información general](images/controlpanel1-e.png){.thumbnail}
 
@@ -167,7 +167,7 @@ La pestaña `Licencia Windows`{.action} permite activar las licencias SPLA Windo
 
 ![Licencia SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Puede consultar las tarifas [aquí](https://www.ovhcloud.com/es/managed-bare-metal/options/){.external}.
+Puede consultar las tarifas [aquí](https://www.ovhcloud.com/es/managed-bare-metal/options/).
 
 ### Visualización del datacenter
 
@@ -219,7 +219,7 @@ La pestaña de backup permite activar la solución `Veeam backup`.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-Si desea más información sobre esta opción, puede consultar esta [guía](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service){.external}.
+Si desea más información sobre esta opción, puede consultar esta [guía](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service).
 
 ## Más información
 

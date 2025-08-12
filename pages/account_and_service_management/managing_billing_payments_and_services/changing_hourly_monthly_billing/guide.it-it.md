@@ -24,13 +24,13 @@ Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o m
 ## Prerequisiti
 
 - Aver creato un’[istanza Public Cloud](/links/public-cloud/public-cloud).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 ### Dallo Spazio Cliente OVHcloud
 
-Nello [Spazio Cliente](/links/manager){.external} seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
+Nello [Spazio Cliente](/links/manager) seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Utilizza questa chiamata:
 >
 ### Da uno script Terraform
 
-Questo è possibile grazie ai `metadata` [attributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} dalla risorsa [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Questo è possibile grazie ai `metadata` [attributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) dalla risorsa [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
 
 ```terraform
 metadata = {

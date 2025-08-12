@@ -32,10 +32,10 @@ Istnieje kilka metod zmiany hasła administratora CMS w zależności od Twojego 
 >
 > Aby skontaktować się z poszczególnymi edytorami systemów zarządzania treścią, zapoznaj się z poniższymi linkami do ich odpowiednich oficjalnych stron:
 >
-> - [WordPress](https://wordpress.com/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [WordPress](https://wordpress.com/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
 
 ### Zmiana hasła administratora za pomocą automatycznego konta e-mail (zapomniane hasło) <a name="via-email"></a>
 

@@ -12,7 +12,7 @@ A solução CDN da OVH permite-lhe otimizar os tempos de resposta dos seus websi
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVH](/links/manager).
 
 ## Instruções
 
@@ -20,11 +20,11 @@ A solução CDN da OVH permite-lhe otimizar os tempos de resposta dos seus websi
 
 Ao contratar a solução CDN, poderá usufruir de **1 TB** de tráfego incluído. Contudo, este limite não é renovado mensalmente juntamente com a sua solução. Uma vez consumido (independentemente do prazo), deverá renovar o tráfego disponível.
 
-Caso necessite de tráfego adicional, poderá adicionar diretamente a partir da [Área de Cliente OVH](/links/manager){.external}.
+Caso necessite de tráfego adicional, poderá adicionar diretamente a partir da [Área de Cliente OVH](/links/manager).
 
 ![Adquirir tráfego](images/add_quota.png){.thumbnail}
 
-Pode consultar os preços dos pacotes de tráfego disponíveis no [nosso site](/links/network/cdn-infrastructure){.external}.
+Pode consultar os preços dos pacotes de tráfego disponíveis no [nosso site](/links/network/cdn-infrastructure).
 
 Quando o tráfego disponível for inferior a **100 GB**, receberá um aviso indicando-lhe que é necessário adquirir mais largura de banda. Se não possuir tráfego na solução, a função `bypass` será automaticamente ativada até que adquira mais largura de banda.
 
@@ -47,4 +47,4 @@ Em ambos os casos, quer os ficheiros estejam guardados na cache ou enviados para
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/)

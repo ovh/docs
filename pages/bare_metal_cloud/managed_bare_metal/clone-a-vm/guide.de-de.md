@@ -12,7 +12,7 @@ Mit dem Klonen einer VM können Sie eine Kopie der ursprünglichen VM herstellen
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
+- Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Produkt.
 - Sie haben mindestens eine VM in Ihrem Cluster.
 - Sie sind auf Ihrem [vSphere Interface](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface) angemeldet.
 

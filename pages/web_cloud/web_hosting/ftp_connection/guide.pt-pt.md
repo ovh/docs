@@ -12,13 +12,13 @@ As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamen
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting){.external}
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, na secção `Web Cloud`{.action}.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 
 > [!primary]
 > Apenas os alojamentos web **Pro** ou **Performance** permitem a ativação de vários utilizadores FTP e dispõem de ligações em SSH.
 >
-> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
+> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php) ou [Cyberduck](https://cyberduck.io/).
 
 ## Instruções
 
@@ -33,12 +33,12 @@ Para se ligar ao espaço de armazenamento FTP, recupere os seguintes elementos:
 
 > [!primary]
 >
-> Estes elementos foram-lhe enviados por e-mail após a subscrição do seu alojamento web. Estão disponíveis a partir do seu [Área de Cliente OVHcloud](/links/manager){.external}.
+> Estes elementos foram-lhe enviados por e-mail após a subscrição do seu alojamento web. Estão disponíveis a partir do seu [Área de Cliente OVHcloud](/links/manager).
 >
 > **Se já dispõe destes elementos**, consulte o etapa 2 "[Aceder ao espaço de armazenamento](#ftp_storage_access)" deste manual.
 >
 
-Se não dispõe destes elementos, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Clique na secção `Alojamentos`{.action} na coluna da esquerda. Escolha o nome do alojamento web em causa e aceda ao separador `FTP - SSH`{.action}. 
+Se não dispõe destes elementos, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique na secção `Alojamentos`{.action} na coluna da esquerda. Escolha o nome do alojamento web em causa e aceda ao separador `FTP - SSH`{.action}. 
 
 Aparecerá a informação relativa ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento web.
 
@@ -67,7 +67,7 @@ Encontre aqui uma descrição das informações essenciais exibidas na página `
 
 > [!primary]
 >
-> Dependendo da oferta de [alojamento web OVHcloud](/links/web/hosting){.external} que possui, algumas das informações descritas acima (nomeadamente sobre o SSH) podem não aparecer.
+> Dependendo da oferta de [alojamento web OVHcloud](/links/web/hosting) que possui, algumas das informações descritas acima (nomeadamente sobre o SSH) podem não aparecer.
 >
 
 Se já não sabe a palavra-passe de um utilizador FTP ou SSH, consulte o nosso guia "[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
@@ -104,7 +104,7 @@ Se as informações estiverem corretas, o programa que utiliza mostrará o conte
 
 #### 2. Ligação através de um acesso SSH <a name="ssh"></a>
 
-Este tipo de acesso requer conhecimentos técnicos avançados, bem como uma oferta de [alojamento web da OVHcloud](/links/web/hosting){.external} **Pro** ou **Performance**.
+Este tipo de acesso requer conhecimentos técnicos avançados, bem como uma oferta de [alojamento web da OVHcloud](/links/web/hosting) **Pro** ou **Performance**.
 
 Para se ligar em SSH, utilize um terminal para interagir diretamente com o seu espaço de armazenamento FTP através de linhas de comando. 
 
@@ -143,9 +143,9 @@ Para mais informações, consulte o manual "[Utilizar uma ligação SSH num aloj
 
 ## Quer saber mais?
 
-[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
-[Utilizar uma ligação SSH num alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+[Utilizar uma ligação SSH num alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 [Utilizar PuTTY para se ligar em SSH](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

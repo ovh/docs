@@ -32,7 +32,7 @@ If you initially selected hourly billing, you can switch to monthly billing at a
 
 ### From the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](/links/manager){.external}, choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
+In the [OVHcloud Control Panel](/links/manager), choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
@@ -65,7 +65,7 @@ Use the following call:
 
 ### From a Terraform script
 
-This is possible thanks to the `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} from the resource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+This is possible thanks to the `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) from the resource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
 
 ```terraform
 metadata = {

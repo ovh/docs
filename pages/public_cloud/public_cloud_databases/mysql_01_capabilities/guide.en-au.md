@@ -37,7 +37,7 @@ Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_clo
 
 ### MySQL connectors
 
-You can use any of the [MySQL-recommended connectors and API](https://dev.mysql.com/doc/refman/8.0/en/connectors-apis.html){.external} to access your cluster.
+You can use any of the [MySQL-recommended connectors and API](https://dev.mysql.com/doc/refman/8.0/en/connectors-apis.html) to access your cluster.
 
 ### Plans
 

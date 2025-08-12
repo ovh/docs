@@ -69,7 +69,7 @@ This network design will be recreated in your OVHcloud HPC tenant using NSX-T ov
 
 You can find more about network planning in [NSX-T - First steps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
-For additional guidance from Zerto, refer to [Installing the Zerto Solution](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external}.
+For additional guidance from Zerto, refer to [Installing the Zerto Solution](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm).
 
 ### Step 2: Plan Hosted Private Cloud resources
 
@@ -204,7 +204,7 @@ Full details: [Zerto Virtual Replication on OVHcloud](/pages/hosted_private_clou
 
 You must install Zerto components manually on your on-premises infrastructure.
 
-Follow the procedure in [Installing Zerto on source site](https://help.zerto.com/bundle/Install.VC.HTML/page/Performing_an_Express_Installation.htm){.external}.
+Follow the procedure in [Installing Zerto on source site](https://help.zerto.com/bundle/Install.VC.HTML/page/Performing_an_Express_Installation.htm).
 
 The main components are:
 
@@ -235,7 +235,7 @@ Once ZVMs are online and communication is confirmed:
 
 A VPG groups all VMs that should be replicated and failed over together.
 
-More information in [Creating a VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external}
+More information in [Creating a VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm)
 
 ### Step 11: Monitor the replication status
 
@@ -245,7 +245,7 @@ Monitor each VPG from the Zerto UI:
 - Check the RPO (Recovery Point Objective).
 - Resolve any alerts before running a test or failover.
 
-Refer to [Monitoring Virtual Protection Groups](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm){.external}
+Refer to [Monitoring Virtual Protection Groups](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm)
 
 ### Step 12: Run a test failover
 
@@ -255,8 +255,8 @@ Use the `Failover Test` option in the Zerto UI. This powers on the replicated VM
 
 Instructions:
 
-- [Start a test failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
-- [Stop a test failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm){.external}
+- [Start a test failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm)
+- [Stop a test failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm)
 
 ### Step 13: Execute the planned migration
 
@@ -265,7 +265,7 @@ When you are ready to migrate:
 1. Use the **Move** operation in Zerto to migrate each VPG.
 2. Choose the commit policy (manual, auto, rollback).
 
-See [The Move Process](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external} for full instructions.
+See [The Move Process](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm) for full instructions.
 
 ### Step 14: Validate application availability
 
@@ -281,7 +281,7 @@ If all tests succeed, commit the operation in Zerto.
 
 If something is not working, you can cancel the move and roll back to your on-prem environment.
 
-More in [Moving Protected VMs to Remote Site](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm){.external}
+More in [Moving Protected VMs to Remote Site](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm)
 
 ### Step 16: Use Storage vMotion to place VMs on target storage
 

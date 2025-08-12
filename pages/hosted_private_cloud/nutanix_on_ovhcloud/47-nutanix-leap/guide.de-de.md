@@ -139,7 +139,7 @@ From the main menu, click `Availability Zones`{.action} on the `Administration` 
 ### Implementation of replication from Canada to France
 
 > [!warning]
-> Virtual machines that will be protected with **Nutanix Leap** should not be members of a **Domain Protection** created from **Prism Element**. There is a procedure on the Nutanix website to perform this migration: [Migrating from a Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html){.external}. 
+> Virtual machines that will be protected with **Nutanix Leap** should not be members of a **Domain Protection** created from **Prism Element**. There is a procedure on the Nutanix website to perform this migration: [Migrating from a Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html). 
 >
 
 #### Creating a category containing the virtual machines to replicate

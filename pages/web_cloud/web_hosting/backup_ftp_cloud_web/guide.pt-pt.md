@@ -21,8 +21,8 @@ O seu alojamento Cloud Web dispõe de um espaço de armazenamento no qual pode a
 
 ## Requisitos
 
-- Ter um [alojamento Cloud Web](/links/web/hosting-cloud-web-offer){.external}
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um [alojamento Cloud Web](/links/web/hosting-cloud-web-offer)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter acesso ao endereço de e-mail associado ao seu ID de cliente.
 
 ## Instruções
@@ -38,13 +38,13 @@ Só os backups mencionados acima podem ser propostos pela OVHcloud, desde que o 
 
 ### Recuperar um backup
 
-Contrariamente aos alojamentos partilhados OVHcloud, é impossível efetuar um restauro do espaço FTP com um clique a partir da [Área de Cliente OVHcloud](/links/manager){.external}.
+Contrariamente aos alojamentos partilhados OVHcloud, é impossível efetuar um restauro do espaço FTP com um clique a partir da [Área de Cliente OVHcloud](/links/manager).
 
 É gerado um link de download do backup que é enviado por e-mail para o endereço de e-mail associado ao identificador de cliente administrador do alojamento Cloud Web.
 
 #### Etapa 1 - Gerar o link de recuperação enviado por e-mail
 
-Para gerar o link de recuperação, aceda à [Área de Cliente OVHcloud](/links/manager){.external}, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e, a seguir, no Cloud Web em causa. 
+Para gerar o link de recuperação, aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e, a seguir, no Cloud Web em causa. 
 
 Selecione o separador `FTP - SSH`{.action} e clique no botão `Gerar um backup`{.action} à direita.
 
@@ -60,7 +60,7 @@ Aparecerá uma segunda janela que lhe indicará que o link de recuperação do f
 
 Clique em `Confirmar`{.action} para validar o seu pedido.
 
-Se a geração do backup está bem lançada, na [Área de Cliente OVHcloud](/links/manager){.external}, aparecerá a seguinte mensagem:
+Se a geração do backup está bem lançada, na [Área de Cliente OVHcloud](/links/manager), aparecerá a seguinte mensagem:
 
 ![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Depois de fazer o download dos seus ficheiros, poderá [ligar-se ao seu espaço 
 
 > [!primary]
 >
-> Utilize as portas indicadas na [Área de Cliente OVHcloud](/links/manager){.external} para as ligações SFTP e SSH, pois a porta 22 não estará funcional para o seu alojamento Cloud Web.
+> Utilize as portas indicadas na [Área de Cliente OVHcloud](/links/manager) para as ligações SFTP e SSH, pois a porta 22 não estará funcional para o seu alojamento Cloud Web.
 >
 
 ## Quer saber mais? 

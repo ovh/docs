@@ -11,8 +11,8 @@ Il est possible de restreindre l'accès au vCenter en autorisant uniquement cert
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-* Posséder une [infrastructure Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external} sur votre compte OVHcloud.
+* Être connecté à votre [espace client OVHcloud](/links/manager).
+* Posséder une [infrastructure Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/) sur votre compte OVHcloud.
 
 ## En pratique
 

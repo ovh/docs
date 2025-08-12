@@ -6,7 +6,7 @@ updated: 2021-02-04
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Ruby** applications, and you want to deploy [Camaleon](http://camaleon.tuzitio.com/){.external} on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Ruby** applications, and you want to deploy [Camaleon](http://camaleon.tuzitio.com/) on it.
 
 This guide will explain how to do it.
 

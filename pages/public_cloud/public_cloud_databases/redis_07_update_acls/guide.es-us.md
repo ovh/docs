@@ -95,7 +95,7 @@ The result shows four string arrays, which represent the ACLs defined for the gi
 - Commands: Add or remove the command to the list of commands the user can call.
 - Channels: Allow and disallow Pub/Sub channels.
 
-You can follow the official Redis® documentation about users and ACL: [https://redis.io/topics/acl](https://redis.io/topics/acl){.external}.
+You can follow the official Redis® documentation about users and ACL: [https://redis.io/topics/acl](https://redis.io/topics/acl).
 
 ### Update an ACL with the API
 

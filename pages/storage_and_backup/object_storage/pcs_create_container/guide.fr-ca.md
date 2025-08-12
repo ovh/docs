@@ -19,7 +19,7 @@ La première étape est la création d’un conteneur qui regroupera vos fichier
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 Si vous utilisez Horizon :
 
@@ -29,7 +29,7 @@ Si vous utilisez Horizon :
 
 ### Création d'un conteneur Object Storage depuis l'espace client OVHcloud <a name="controlpanel"></a>
 
-Connectez-vous à votre [espace client](/links/manager){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans la barre de navigation de gauche sous `Storage`.
+Connectez-vous à votre [espace client](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans la barre de navigation de gauche sous `Storage`.
 
 Cliquez ensuite sur `Create an object container`{.action}.
 
@@ -79,7 +79,7 @@ Votre conteneur est créé :
 > Il n'est pas possible de créer un conteneur Public Cloud Archive depuis Horizon
 >
 
-Connectez-vous à votre [espace Horizon](https://horizon.cloud.ovh.net){.external} :
+Connectez-vous à votre [espace Horizon](https://horizon.cloud.ovh.net) :
 
 ![horizon login](images/create-container-20211005155245752.png)
 

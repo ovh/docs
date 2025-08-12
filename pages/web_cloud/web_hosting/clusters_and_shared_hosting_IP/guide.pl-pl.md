@@ -22,8 +22,8 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 
 ## Wymagania początkowe
 
-- Zakupienie [hostingu OVHcloud](/links/web/hosting){.external}.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Zakupienie [hostingu OVHcloud](/links/web/hosting).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 

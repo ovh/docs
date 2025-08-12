@@ -12,24 +12,24 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](/links/web/hosting){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
+- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](/links/web/hosting).
 - Tener la copia de seguridad que quiera importar en la base de datos.
-- Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager){.external} o disponer de las claves necesarias para conectarse a la base de datos.
+- Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager) o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento
 
 Antes de empezar, deberá elegir el método que quiera utilizar para importar la copia de seguridad en la base de datos. Existen diversas opciones con distinto nivel de dificultad técnica:
 
-- **Restaurar la base de datos a una fecha anterior en unos clics**: Esta solución permite restaurar el contenido de la base de datos utilizando las copias de seguridad efectuadas por la herramienta de backup de OVHcloud. Esta operación no requiere conocimientos técnicos y se realiza desde el [área de cliente de OVHcloud](/links/manager){.external}.
+- **Restaurar la base de datos a una fecha anterior en unos clics**: Esta solución permite restaurar el contenido de la base de datos utilizando las copias de seguridad efectuadas por la herramienta de backup de OVHcloud. Esta operación no requiere conocimientos técnicos y se realiza desde el [área de cliente de OVHcloud](/links/manager).
 
-- **Importar su propio archivo de backup en unos clics**: Esta solución permite importar los datos de su propia copia de seguridad en una base de datos. Esta operación se realiza desde el [área de cliente de OVHcloud](/links/manager){.external}.
+- **Importar su propio archivo de backup en unos clics**: Esta solución permite importar los datos de su propia copia de seguridad en una base de datos. Esta operación se realiza desde el [área de cliente de OVHcloud](/links/manager).
 
 - **Realizar la importación desde la herramienta web phpMyAdmin**: Para ello, deberá conectarse a phpMyAdmin. Esta operación requiere conocimientos técnicos. Asimismo, existe un límite para el tamaño del archivo de backup.
 
 - **Realizar la importación utilizando un script**: Para ello, deberá crear un script y colocarlo en el alojamiento web de OVHcloud. La creación de un script requiere conocimientos técnicos.
 
-- **Realizar la importación mediante comandos SSH**: Para ello, deberá conectarse por SSH al espacio de almacenamiento y utilizar comandos para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](/links/web/hosting){.external} son compatibles.
+- **Realizar la importación mediante comandos SSH**: Para ello, deberá conectarse por SSH al espacio de almacenamiento y utilizar comandos para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](/links/web/hosting) son compatibles.
 
 Algunas de las operaciones anteriores se realizan en interfaces que no pertenecen a OVHcloud, por lo que no podemos orientarle sobre cómo ejecutarlas. A continuación explicamos con más detalle los distintos métodos de importación (sin que estas explicaciones sustituyan a la ayuda de un webmaster).
 
@@ -44,7 +44,7 @@ Continúe leyendo esta guía en el apartado correspondiente al método de import
 
 ### Restaurar una copia de seguridad desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos que quiera restaurar a una fecha anterior y seleccione `Restaurar una copia de seguridad`{.action}. Tenga en cuenta que esta acción sustituirá el contenido actual de la base de datos por el de la copia de seguridad.
 
@@ -58,7 +58,7 @@ Haga clic en los tres puntos situados al final de la línea correspondiente al b
 
 ### Importar una copia de seguridad desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos en la que quiera importar datos y seleccione `Importar un archivo`{.action}.
 
@@ -91,7 +91,7 @@ A continuación haga clic en `Aceptar`{.action} y espere a que finalice la impor
 
 ### Realizar la importación desde la herramienta web phpMyAdmin
 
-En primer lugar deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+En primer lugar deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos y seleccione `Acceder a phpMyAdmin`{.action}.
 
@@ -135,7 +135,7 @@ No olvide sustituir la información genérica del script por los datos correspon
 
 #### 2. Cargar el script y la copia de seguridad en el espacio de almacenamiento
 
-Una vez que haya creado el script de importación, deberá cargarlo, junto con el archivo de backup que quiera importar, en el espacio de almacenamiento de su alojamiento web. Para ello, conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el paso «2. Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-conectarse-al-espacio-de-almacenamiento){.external}.
+Una vez que haya creado el script de importación, deberá cargarlo, junto con el archivo de backup que quiera importar, en el espacio de almacenamiento de su alojamiento web. Para ello, conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el paso «2. Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-conectarse-al-espacio-de-almacenamiento).
 
 Para poder realizar las siguientes acciones, cargue el script de importación y el archivo de backup en la carpeta «www». **Preste especial atención al nombre del archivo del script de importación**: cuando cargue el script, asegúrese de no sobrescribir un archivo presente en su espacio de almacenamiento que pueda tener el mismo nombre. Si aparece un mensaje de aviso que indique lo anterior, cambie el nombre del script que acaba de crear por otro diferente y vuelva a intentar cargarlo.
 

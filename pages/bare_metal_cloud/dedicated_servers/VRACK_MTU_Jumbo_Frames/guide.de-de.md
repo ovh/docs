@@ -12,7 +12,7 @@ updated: 2020-08-17
 
 ## Voraussetzungen
 
-- Sie besitzen ein [vRack](/links/network/vrack){.external}.
+- Sie besitzen ein [vRack](/links/network/vrack).
 - Eine Shell mit Root-Rechten ausführen
 
 > [!warning]

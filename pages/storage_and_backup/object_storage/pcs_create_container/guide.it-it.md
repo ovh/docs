@@ -23,7 +23,7 @@ Il primo step è la creazione di un container che raggrupperà i tuoi file.
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 Se utilizzi Horizon:
 
@@ -33,7 +33,7 @@ Se utilizzi Horizon:
 
 ### Crea un container Object Storage dallo Spazio Cliente OVHcloud <a name="controlpanel"></a>
 
-Accedi al tuo [Spazio Cliente](/links/manager){.external}, accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Clicca su `Object Storage`{.action} nella barra di navigazione di sinistra su `Storage`.
+Accedi al tuo [Spazio Cliente](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Clicca su `Object Storage`{.action} nella barra di navigazione di sinistra su `Storage`.
 
 Clicca su `Crea un container di oggetti`{.action}.
 
@@ -83,7 +83,7 @@ Il tuo container è stato creato:
 > Non è possibile creare un container Public Cloud Archive da Horizon
 >
 
-Accedi al tuo [spazio Horizon](https://horizon.cloud.ovh.net){.external}:
+Accedi al tuo [spazio Horizon](https://horizon.cloud.ovh.net):
 
 ![orizzonte logistico](images/create-container-20211005155245752.png)
 

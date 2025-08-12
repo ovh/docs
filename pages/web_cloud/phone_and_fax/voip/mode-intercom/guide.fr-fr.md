@@ -14,7 +14,7 @@ Votre ligne téléphonique vous permet de recevoir et d'émettre des appels. Un 
 
 - Disposer d'une offre de téléphonie SIP.
 - Disposer d'un téléphone ou d'un équipement compatible avec le mode intercom.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 

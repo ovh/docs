@@ -29,7 +29,7 @@ Find out how to use the power of Hyperconvergence for your virtual machines with
 
 vSAN is an object storage solution offered by VMware. It gathers a set of disks situated directly on your VMware hosts, and presents them as a single datastore. This is known as Software-Defined Storage or SDS. One of the advantages of vSAN is that it is fully integrated into vSphere, and can be managed directly from vCenter.
 
-For full concept review and technical specifications, check out the [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external}
+For full concept review and technical specifications, check out the [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html)
 
 ### Setting up vSAN
 
@@ -69,7 +69,7 @@ Click `Next`{.action}.
 
 ![VSAN](images/en06vsanservices.png){.thumbnail}
 
-The Claim disks window assigns available disks to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} for explanation) depending on types and sizes. You can customize it to your need.<br>
+The Claim disks window assigns available disks to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html) for explanation) depending on types and sizes. You can customize it to your need.<br>
 Click `Next`{.action}.
 
 ![VSAN](images/en07vsanclaim.png){.thumbnail}

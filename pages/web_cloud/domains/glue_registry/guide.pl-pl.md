@@ -39,9 +39,9 @@ W zależności od Twoich potrzeb możesz spersonalizować nazwy serwerów DNS Tw
 
 ### 1 - Pobierz serwery DNS aktualnie używane przez Twoją domenę <a name="step1"></a>
 
-Możesz pobrać serwery DNS aktualnie używane przez Twoją domenę za pomocą narzędzia DNS online [Zonemaster](https://zonemaster.net/en/run-test){.external}.
+Możesz pobrać serwery DNS aktualnie używane przez Twoją domenę za pomocą narzędzia DNS online [Zonemaster](https://zonemaster.net/en/run-test).
 
-W tym celu kliknij link [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, wprowadź nazwę domeny bez *www* (przykład: *domain.tld*) następnie zaznacz przycisk `Options`{.action} znajdujący się tuż pod formularzem wprowadzania domeny.
+W tym celu kliknij link [https://zonemaster.net](https://zonemaster.net/en/run-test), wprowadź nazwę domeny bez *www* (przykład: *domain.tld*) następnie zaznacz przycisk `Options`{.action} znajdujący się tuż pod formularzem wprowadzania domeny.
 
 W dostępnych opcjach kliknij przycisk `Fetch NS from parent zone`{.action}.
 

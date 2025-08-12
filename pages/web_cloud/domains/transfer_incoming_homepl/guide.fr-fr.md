@@ -69,7 +69,7 @@ Vous devez aussi :
 
 ### Déverrouiller le nom de domaine et récupérer le code de transfert
 
-Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de home.pl](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form){.external}.
+Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de home.pl](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form).
 
 ### Initier le transfert de domaine chez OVHcloud
 

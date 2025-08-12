@@ -57,11 +57,11 @@ csi-cinder-classic                cinder.csi.openstack.org   Delete          Imm
 csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   42d
 ```
 
-All of them are based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service.  
+All of them are based on [Cinder](https://docs.openstack.org/cinder/latest/), the OpenStack Block Storage service.  
 
 The difference between them is the associated physical storage device. The `csi-cinder-high-speed` use SSD, while `csi-cinder-classic` use traditional spinning disks. Both are distributed transparently, on three physical local replicas.
 
-When you create a PersistentVolume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [Flexible Cloud Block Storage Policy](/links/public-cloud/block-storage){.external}.
+When you create a PersistentVolume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [Flexible Cloud Block Storage Policy](/links/public-cloud/block-storage).
 
 Since Kubernetes 1.11, support for expanding `PersistentVolumeClaims` (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing PersistentVolumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes) tutorial. Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
 

@@ -113,7 +113,7 @@ Pour redéployer la VM de la passerelle, vous aurez besoin des éléments suivan
 
 ##### **Vérifier l'adresse Additional IP**
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) et accédez à la gestion de votre [vRack](/links/network/vrack){.external}. Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
+Connectez-vous à l'[espace client OVHcloud](/links/manager) et accédez à la gestion de votre [vRack](/links/network/vrack). Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
 
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Connectez-vous à l'[espace client OVHcloud](/links/manager) et accédez à la g
 > Les instructions suivantes vont utiliser le bloc IP 198.51.100.0/30 à titre d'exemple.
 >
 
-Dans le cadre d'une utilisation du [vRack](/links/network/vrack){.external}, la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
+Dans le cadre d'une utilisation du [vRack](/links/network/vrack), la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
 
 ```console
 198.51.100.0  Reserved: Network address

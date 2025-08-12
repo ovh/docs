@@ -77,7 +77,7 @@ Deve também:
 
 Para os nomes de domínio registados na Hostinger, pode gerir o estado de bloqueio do seu nome de domínio abrindo a secção `Domínios`{.action} e selecionando o nome de domínio a transferir.
 
-Siga os passos descritos na [documentação dedicada de Hostinger](https://support.hostinger.com/pt/articles/4791444-como-bloquear-ou-desbloquear-a-transferencia-de-um-dominio){.external}.
+Siga os passos descritos na [documentação dedicada de Hostinger](https://support.hostinger.com/pt/articles/4791444-como-bloquear-ou-desbloquear-a-transferencia-de-um-dominio).
 
 ### Obter o código EPP ou Auth
 
@@ -91,7 +91,7 @@ Para se familiarizar com a mudança de proprietário de um domínio, consulte es
 > Sugerimos que consulte o Hostinger para que tome as medidas adequadas à transferência do seu domínio.
 > 
 
-Para obter um código **EPP** ou **Auth** na Hostinger, siga os passos descritos na [documentação dedicada do Hostinger](https://support.hostinger.com/pt/articles/1583203-como-obter-o-codigo-epp-ou-de-autenticacao-para-transferencia-de-dominio-na-hostinger){.external}.
+Para obter um código **EPP** ou **Auth** na Hostinger, siga os passos descritos na [documentação dedicada do Hostinger](https://support.hostinger.com/pt/articles/1583203-como-obter-o-codigo-epp-ou-de-autenticacao-para-transferencia-de-dominio-na-hostinger).
 
 ### Iniciar a transferência do domínio para a OVHcloud
 

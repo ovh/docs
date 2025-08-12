@@ -12,14 +12,14 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 
 ## Wymagania początkowe
 
-- - Posiadanie [instancji Web Cloud Databases](/links/web/databases){.external} (zawartej w ofercie[hostingu www Performance](/links/web/hosting)
+- - Posiadanie [instancji Web Cloud Databases](/links/web/databases) (zawartej w ofercie[hostingu www Performance](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 > [!primary]
 >
-> Pamiętaj, że rozwiązania [Web Cloud Databases](/links/web/databases){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+> Pamiętaj, że rozwiązania [Web Cloud Databases](/links/web/databases) nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
 > <br> - Pamiętaj, że nie ma dostępu "root".
 > <br> - Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL lub Adminer jest w pełni kompatybilne.
 >
@@ -33,7 +33,7 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 
 ####  Przez phpMyAdmin OVHcloud 
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych.
 
 W zakładce `Informacje ogólne` link dostępowy do phpMyAdmin znajduje się w polu **"Administrowanie bazą danych"** pod napisem " Panel użytkownika ".
 
@@ -45,11 +45,11 @@ Zostaniesz przekierowany na stronę logowania phpMyAdmin.
 
 Aby zalogować się do bazy danych, wprowadź następujące informacje:
 
-- **Serwer:** podaj *nazwę hosta* serwera baz danych, następnie jego *numer portu*. *Numer portu* musi być oddzielony od *nazwa hosta* znakiem "**spacja**" lub "**:**". Na przykład, jeśli *nazwa hosta* to **aaXXXXX-XXX.eu.clouddb.ovh.net**, a *numer portu* to **12345**, należy wpisać **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** lub **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Aby odnaleźć *nazwę hosta* i *numer portu* Twojego serwera Web Cloud Databases, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych. Na stronie `Informacje ogólne`, która się wyświetla, w ramce `Informacje na temat połączenia` znajdziesz *nazwę hosta* i *numer portu*.
+- **Serwer:** podaj *nazwę hosta* serwera baz danych, następnie jego *numer portu*. *Numer portu* musi być oddzielony od *nazwa hosta* znakiem "**spacja**" lub "**:**". Na przykład, jeśli *nazwa hosta* to **aaXXXXX-XXX.eu.clouddb.ovh.net**, a *numer portu* to **12345**, należy wpisać **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** lub **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Aby odnaleźć *nazwę hosta* i *numer portu* Twojego serwera Web Cloud Databases, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych. Na stronie `Informacje ogólne`, która się wyświetla, w ramce `Informacje na temat połączenia` znajdziesz *nazwę hosta* i *numer portu*.
 
-- **Użytkownik:** wprowadź *nazwę użytkownika* Twojego serwera baz danych. Aby odnaleźć *nazwę użytkownika* Twojej bazy danych, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych. Na stronie, która się wyświetli kliknij zakładkę `Użytkownicy i uprawnienia`{.action}. Znajdziesz tam tabelę wszystkich użytkowników utworzonych w Twojej usłudze Web Cloud Databases.
+- **Użytkownik:** wprowadź *nazwę użytkownika* Twojego serwera baz danych. Aby odnaleźć *nazwę użytkownika* Twojej bazy danych, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych. Na stronie, która się wyświetli kliknij zakładkę `Użytkownicy i uprawnienia`{.action}. Znajdziesz tam tabelę wszystkich użytkowników utworzonych w Twojej usłudze Web Cloud Databases.
 
-- **Hasło:** wprowadź *hasło* powiązane z *nazwą użytkownika*. Jeśli nie pamiętasz *hasła* powiązanego z Twoją *nazwą użytkownika*, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych. Na stronie, która się wyświetli kliknij zakładkę `Użytkownicy i uprawnienia`{.action}. Kliknij przycisk `...`{.action} po prawej stronie *danego użytkownika*, aby `Zmień hasło`{.action}.
+- **Hasło:** wprowadź *hasło* powiązane z *nazwą użytkownika*. Jeśli nie pamiętasz *hasła* powiązanego z Twoją *nazwą użytkownika*, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych. Na stronie, która się wyświetli kliknij zakładkę `Użytkownicy i uprawnienia`{.action}. Kliknij przycisk `...`{.action} po prawej stronie *danego użytkownika*, aby `Zmień hasło`{.action}.
 
 > [!warning]
 >

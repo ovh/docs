@@ -12,7 +12,7 @@ Existen situaciones en las que puede ser útil eliminar un datastore del cluster
 
 ## Requisitos
 
-* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
+* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/).
 * Estar conectado al cliente vSphere.
 
 ## Procedimiento

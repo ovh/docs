@@ -5,7 +5,7 @@ updated: 2024-08-07
 
 ## Objective
 
-[Bonfire](https://github.com/blue-yonder/bonfire){.external} is an open source command line interface to query Graylog searches via the REST API. It  emulates the experience of using tail on a local file and adds other valuable options.
+[Bonfire](https://github.com/blue-yonder/bonfire) is an open source command line interface to query Graylog searches via the REST API. It  emulates the experience of using tail on a local file and adds other valuable options.
 
 This guide will help you to query your logs from the Bonfire command line tool.
 
@@ -160,5 +160,5 @@ Enter password for <USERNAME>@<YOUR-CLUSTER>.logs.ovh.com:443/api:
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

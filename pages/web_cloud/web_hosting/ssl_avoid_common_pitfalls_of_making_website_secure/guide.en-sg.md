@@ -41,7 +41,7 @@ In most cases, these are external scripts, from other websites such as social ne
 
 How do I know if my website is affected?
 
-The debugging tools provided by *Mozilla Firefox* and *Google Chrome* can tell you whether or not your website contains items blocked due to mixed content. The documentation available on the [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} explains how to use these tools to identify mixed content.
+The debugging tools provided by *Mozilla Firefox* and *Google Chrome* can tell you whether or not your website contains items blocked due to mixed content. The documentation available on the [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) explains how to use these tools to identify mixed content.
 
 ### Duplicate content
 

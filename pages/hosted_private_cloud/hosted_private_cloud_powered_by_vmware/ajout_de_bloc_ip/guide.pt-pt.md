@@ -93,7 +93,7 @@ Se tiver de desassociar o bloco IP mais tarde, pode utilizar esta chamada API pa
 > Esta chamada associa a rede nas VM que utilizam os IP em questão.
 >
 
-Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](/links/manager){.external} na secção `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clique no seu serviço Hosted Private Cloud e, depois, no separador `Operações`{.action}.
+Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](/links/manager) na secção `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clique no seu serviço Hosted Private Cloud e, depois, no separador `Operações`{.action}.
 
 A referência da operação é “removeIpRipeBlock”.
 

@@ -164,7 +164,7 @@ Dieser Schritt kann mehrere Stunden dauern.
 
 > [!warning]
 >
-> Let's Encrypt [begrenzt die Anzahl der Erneuerungen pro Woche auf fünf](https://letsencrypt.org/docs/rate-limits/){.external}. Achten Sie daher auf die Regenerierungen, um nicht vorübergehend blockiert zu werden.
+> Let's Encrypt [begrenzt die Anzahl der Erneuerungen pro Woche auf fünf](https://letsencrypt.org/docs/rate-limits/). Achten Sie daher auf die Regenerierungen, um nicht vorübergehend blockiert zu werden.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

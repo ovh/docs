@@ -41,7 +41,7 @@ To interact with your MongoDB instance with PHP, your development environment ne
 - MongoDB PHP extension;
 - Strongly recommended : the MongoDB PHP Library.
 
-Please follow the official [MongoDB documentation for PHP drivers](https://docs.mongodb.com/drivers/php/){.external} to get the latest information.
+Please follow the official [MongoDB documentation for PHP drivers](https://docs.mongodb.com/drivers/php/) to get the latest information.
 
 At the end of the documentation page, you will find a **compatibility matrix** between PHP versions, MongoDB extensions and library versions.
 Follow this accordingly.
@@ -163,7 +163,7 @@ Congratulations! Everything is working properly.
 ### PHP frameworks and tools for MongoDB
 
 Coding in PHP from scratch to interact with a MongoDB instance can be fun and very instructive.
-If you are interested, you can also take a look at [MongoDB PHP list for libraries, frameworks and tools](https://docs.mongodb.com/drivers/php-libraries/){.external}.
+If you are interested, you can also take a look at [MongoDB PHP list for libraries, frameworks and tools](https://docs.mongodb.com/drivers/php-libraries/).
 They can really help your work with PHP.
 
 ## Go further

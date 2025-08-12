@@ -90,7 +90,7 @@ ErrorDocument Error_Code_Number Message_Or_Destination
 
 Ersetzen Sie "**Error_Code_Number**" durch die Nummer des entsprechenden Apache-Fehlercodes. 
 
-Weitere Informationen zu dieser Funktion finden Sie in der [offiziellen Dokumentation zu Apache](https://httpd.apache.org/docs/trunk/en/custom-error.html){.external}.
+Weitere Informationen zu dieser Funktion finden Sie in der [offiziellen Dokumentation zu Apache](https://httpd.apache.org/docs/trunk/en/custom-error.html).
 
 Die gängigsten HTTP-Fehlercodes sind:
 

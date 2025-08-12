@@ -12,7 +12,7 @@ W niektórych przypadkach może zaistnieć potrzeba usunięcia datastore z Twoje
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+* Posiadanie oferty [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/)
 * Dostęp do interfejsu zarządzania vSphere
 
 ## W praktyce

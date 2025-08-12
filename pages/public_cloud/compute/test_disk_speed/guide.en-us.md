@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > Please note that you will need to modify the `--numjobs` argument to reflect the number of CPUs that your instance has.
 >
-> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analyse the data
@@ -144,7 +144,7 @@ We can see that the performance of the additional disk is around 3052 IOPS.
 
 The command that you need to test your disk speed is called `fio`, and is not installed on your server by default.
 
-To install `fio`, log in to your instance via RDP and download this binary: [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
+To install `fio`, log in to your instance via RDP and download this binary: [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
 
 ### Test your disk speed
 
@@ -158,7 +158,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > Please note that you will need to modify the `--numjobs` argument to reflect the number of CPUs that your instance has.
 >
-> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analyse the data

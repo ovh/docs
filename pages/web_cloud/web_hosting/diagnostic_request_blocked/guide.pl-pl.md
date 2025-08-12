@@ -49,10 +49,10 @@ Przejdź do ustawień przeglądarki internetowej i sprawdź, czy jest dostępna 
 
 Poniżej znajdują się procedury aktualizacji głównych przeglądarek internetowych (dokumentacja dostarczona przez ich wydawców):
 
-- [Firefox](https://support.mozilla.org/pl/kb/Aktualizacja%20Firefoksa){.external}.
-- [Chrome](https://support.google.com/chrome/answer/95414?hl=pl&co=GENIE.Platform%3DDesktop&oco=0){.external}.
-- [Safari](https://support.apple.com/pl-pl/102665){.external}.
-- [Edge](https://support.microsoft.com/pl-pl/topic/ustawienia-aktualizacji-przegl%C4%85darki-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}.
+- [Firefox](https://support.mozilla.org/pl/kb/Aktualizacja%20Firefoksa).
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=pl&co=GENIE.Platform%3DDesktop&oco=0).
+- [Safari](https://support.apple.com/pl-pl/102665).
+- [Edge](https://support.microsoft.com/pl-pl/topic/ustawienia-aktualizacji-przegl%C4%85darki-microsoft-edge-af8aaca2-1b69-4870-94fe-18822dbb7ef1).
 
 Jeśli Twoja przeglądarka internetowa nie jest widoczna na powyższej liście, zapoznaj się z jej dokumentacją online lub skontaktuj się z pomocą techniczną jej producenta.
 

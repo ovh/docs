@@ -19,7 +19,7 @@ Cela peut être utile dans les cas suivants :
 ## Prérequis
 
 - Être connecté votre [espace client OVHcloud](/links/manager).
-- Avoir une [instance Public Cloud](/links/public-cloud/public-cloud){.external} dans votre compte OVHcloud.
+- Avoir une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Avoir une sauvegarde disque dans la même région OpenStack.
 - Avoir accès à votre instance via SSH en tant qu'administrateur (sudo).
 

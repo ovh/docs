@@ -15,7 +15,7 @@ OVHcloud udostępnia Ci zintegrowane z Panelem klienta narzędzia umożliwiając
 ## Wymagania początkowe
 
 - Posiadanie konta SMS OVHcloud z zasileniami SMS
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

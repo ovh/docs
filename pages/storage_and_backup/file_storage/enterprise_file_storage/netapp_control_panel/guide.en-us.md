@@ -80,7 +80,7 @@ The `Snapshots`{.action} tab lists all the snapshots that have been created for 
 
 > [!primary]
 >
-> You can also access snapshot from your mount point using the commands provided in the [NetApp documentation](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+> You can also access snapshot from your mount point using the commands provided in the [NetApp documentation](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html).
 >
 
 On this tab you can also view all the [Snapshot Policies](#snapshot_policy) created for the service and apply them to this volume.

@@ -1,6 +1,6 @@
 ---
 title: 'Annonces de fin de vente/vie Web Cloud Databases'
-updated: 2025-06-11
+updated: 2025-08-06
 ---
 
 ## Objectif
@@ -9,7 +9,6 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 
 |Version|Annonce de fin de vie|Fin de vente|Fin de support|
 |---|---|---|---|
-|MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|2025-02-12|2026-01-04|2026-07-06|
 |MariaDB 10.11|À définir|À définir|À définir|
 |MariaDB 11.4|À définir|À définir|À définir|

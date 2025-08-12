@@ -14,13 +14,13 @@ Les VM Windows déployées à partir d'un template utilisent automatiquement les
 
 > [!primary]
 > 
-> Retrouvez sur cette [page](/links/hosted-private-cloud/vmware-images-licenses){.external} les tarifs des images proposées par OVHcloud.
+> Retrouvez sur cette [page](/links/hosted-private-cloud/vmware-images-licenses) les tarifs des images proposées par OVHcloud.
 >
 
 ## Prérequis
 
 - Avoir accès au client Web (HTML5)
-- [Avoir activé les licences Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#licence-windows){.external} depuis votre [espace client OVHcloud](/links/manager){.external}
+- [Avoir activé les licences Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#licence-windows) depuis votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 

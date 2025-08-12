@@ -14,7 +14,7 @@ To send an SMS campaign to multiple contacts, you can import one or more recipie
 
 - an active OVHcloud SMS account
 - a spreadsheet or text editor tool
-- You must be logged in to [OVHcloud Control Panel](/links/manager){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

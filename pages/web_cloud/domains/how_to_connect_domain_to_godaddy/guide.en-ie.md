@@ -43,11 +43,11 @@ When using a GoDaddy hosting plan with an OVHcloud domain name, you must first p
 > Before you continue:
 >
 > - Open a tab in your web browser.
-> - Open [**this page of the GoDaddy documentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US){.external}.
+> - Open [**this page of the GoDaddy documentation**](https://fr.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612?lc=en-US).
 > - Follow the instructions until step 10 and retrieve the information specific to your website so that you can later modify your OVHcloud DNS records.<br>
 > The following instructions will help you configure your OVHcloud DNS zone more easily.
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 The table lists all of the DNS records for the selected domain name.
 

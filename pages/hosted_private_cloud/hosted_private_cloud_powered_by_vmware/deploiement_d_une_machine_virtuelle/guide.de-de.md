@@ -12,7 +12,7 @@ Es gibt mehrere Möglichkeiten, um virtuelle Maschinen über Ihr vSphere Interfa
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Produkt.
+- Sie verfügen über ein [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Produkt.
 - Sie sind auf Ihrem [vSphere Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) eingeloggt.
 
 ## Beschreibung

@@ -200,20 +200,20 @@ Para mais informações, contacte o editor do CMS que instalou. Encontrará junt
 
 |CMS|Manuais em inglês|
 |---|---|
-|WordPress|[First steps with WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
-|PrestaShop|[Getting started with PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started){.external}|
-|Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
-|Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
+|WordPress|[First steps with WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/)|
+|PrestaShop|[Getting started with PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started)|
+|Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html)|
+|Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview)|
 
 ## Quer saber mais?
 
-[Escolher um CMS para criar um *site*](/links/web/hosting-cms-comparison){.external}.
+[Escolher um CMS para criar um *site*](/links/web/hosting-cms-comparison).
 
 [Como usar o meu alojamento com vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](/pages/web_cloud/web_hosting/sql_create_database).
 
-Veja a nossa [oferta Web Cloud Databases](/links/web/databases){.external}.
+Veja a nossa [oferta Web Cloud Databases](/links/web/databases).
 
 [Gerir o CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 

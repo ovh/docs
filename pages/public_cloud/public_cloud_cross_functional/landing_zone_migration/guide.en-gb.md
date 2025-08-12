@@ -109,7 +109,7 @@ Use it to:
 - Define fine-grained user permissions (LDAP, AD, IAM)
 - Monitor access logs and session replay
 
-See [documentation about Bastion](https://ovh.github.io/the-bastion/index.html){.external} on our GitHub account.
+See [documentation about Bastion](https://ovh.github.io/the-bastion/index.html) on our GitHub account.
 
 ### 8. Enable private connectivity (OCC)
 

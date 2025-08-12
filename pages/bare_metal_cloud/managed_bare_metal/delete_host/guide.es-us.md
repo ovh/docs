@@ -12,7 +12,7 @@ Hay situaciones en las que puede ser necesario eliminar un servidor host del clu
 
 ## Requisitos
 
-* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
+* Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/).
 * Estar conectado al panel de administración vSphere.
 
 ## Procedimiento
@@ -65,4 +65,4 @@ El servidor host se eliminará en unos minutos y dejará de aparecer en el inven
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

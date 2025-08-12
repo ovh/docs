@@ -7,7 +7,7 @@ updated: 2022-07-28
 ## Overview
 
 Logs policies are often decisions made by an entire team, not individuals. Collaboration remains an utmost priority for Logs Data Platform, following this strategy it shall enable everyone to share data in a easy and secure manner.
-Log policies also affect several teams regarding access rights, for instance the Product managers can access some data but be denied to access security logs. That's why we decided to provide a [Role Based Access Control](https://en.wikipedia.org/wiki/Role-based_access_control){.external} to users to configure access rights. This document will expose you how you can use this system to configure access rights.
+Log policies also affect several teams regarding access rights, for instance the Product managers can access some data but be denied to access security logs. That's why we decided to provide a [Role Based Access Control](https://en.wikipedia.org/wiki/Role-based_access_control) to users to configure access rights. This document will expose you how you can use this system to configure access rights.
 
 ## Creating a Role
 
@@ -61,7 +61,7 @@ A user can use their usual Logs Data Platform account credentials on a different
 
 ## Using API
 
-Role management can be automated by using the [OVHcloud API](https://api.ovh.com/console/#/dbaas/logs){.external}.
+Role management can be automated by using the [OVHcloud API](https://api.ovh.com/console/#/dbaas/logs).
 
 Here are a few examples of the role API calls you can use:
 
@@ -124,11 +124,11 @@ Here are a few examples of the role API calls you can use:
 
 - `RolePermissionAliasCreation`: A JSON object containing the field {aliasId} (string), the UUID of the alias you want to share.
 
-Don't hesitate to [explore the API](https://api.ovh.com/console/#/dbaas/logs){.external}, and try it with the provided console.
+Don't hesitate to [explore the API](https://api.ovh.com/console/#/dbaas/logs), and try it with the provided console.
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

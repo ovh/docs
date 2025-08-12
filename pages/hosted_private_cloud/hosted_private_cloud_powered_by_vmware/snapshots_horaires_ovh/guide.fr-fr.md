@@ -12,7 +12,7 @@ Afin de vous assurer une continuité de service et éviter la perte de données,
 
 ## Prérequis
 
-* Posséder une [infrastructure Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external} sur votre compte OVHcloud.
+* Posséder une [infrastructure Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) sur votre compte OVHcloud.
 * Accéder à l’interface de gestion vSphere Web Client HTML.
 
 ## En pratique

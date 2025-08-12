@@ -19,9 +19,9 @@ Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-- Disposer d'un [nom de domaine](/links/web/domains){.external} enregistré chez OVHcloud.
-- Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](/links/manager){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
+- Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](/links/manager).
 - Disposer d’un hébergement chez Wix.
 - Avoir accès à la gestion de cet hébergement chez Wix.
 
@@ -44,11 +44,11 @@ Lorsque vous utilisez un hébergement Wix avec un nom de domaine OVHcloud, vous 
 > Avant de poursuivre :
 >
 > - Ouvrez un onglet en parallèle sur votre navigateur internet.
-> - Ouvrez [**cette page de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882){.external}.
+> - Ouvrez [**cette page de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
 > - Positionnez-vous sur la partie « **Étape 2 | Mettre à jour les enregistrements DNS dans le compte de votre hébergeur de domaine** » de la documentation Wix.<br>
 > Les instructions suivantes vous aideront à configurer plus facilement votre zone DNS OVHcloud.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Le tableau qui s'affiche liste l'ensemble des enregistrements DNS du nom de domaine sélectionné.
 

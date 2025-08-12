@@ -104,7 +104,7 @@ Pour tous les systèmes d'exploitation et distributions, vous devez configurer v
 
 > [!warning]
 >
-> Les instructions suivantes s'appliquent à une machine virtuelle créée précédemment avec un système d'exploitation déjà installé. Si vous n'avez pas créé de VM, veuillez consulter les options sur la page [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} (EN) de Proxmox.
+> Les instructions suivantes s'appliquent à une machine virtuelle créée précédemment avec un système d'exploitation déjà installé. Si vous n'avez pas créé de VM, veuillez consulter les options sur la page [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines) (EN) de Proxmox.
 >
 
 Après avoir créé la machine virtuelle et lorsque celle-ci est encore éteinte :
@@ -130,7 +130,7 @@ Vous pouvez maintenant démarrer votre machine virtuelle et passer aux étapes s
 
 > [!warning]
 >
-> Les instructions suivantes s'appliquent à une machine virtuelle créée précédemment avec un système d'exploitation déjà installé. Si vous n'avez pas créé de VM, consultez le guide [Créer une machine virtuelle dans le client hôte VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) sur la page VMware.
+> Les instructions suivantes s'appliquent à une machine virtuelle créée précédemment avec un système d'exploitation déjà installé. Si vous n'avez pas créé de VM, consultez le guide [Créer une machine virtuelle dans le client hôte VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html) (EN) sur la page VMware.
 >
 
 Après avoir créé la machine virtuelle et lorsqu'elle est hors tension, effectuez un clic droit sur celle-ci et cliquez sur `Modifier les paramètres`{.action}.
@@ -326,7 +326,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Si vous recevez une réponse, cela signifie que l’Additional IP a été correctement configurée. Si ce n'est pas le cas, redémarrez votre machine virtuelle et recommencez la commande ping.
 
-Si vous souhaitez plus d'informations sur `nmcli`, consultez [cette page (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli){.external}.
+Si vous souhaitez plus d'informations sur `nmcli`, consultez [cette page (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli).
 
 #### FreeBSD
 

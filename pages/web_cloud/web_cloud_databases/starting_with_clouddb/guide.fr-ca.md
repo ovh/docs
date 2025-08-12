@@ -13,8 +13,8 @@ Par défaut, votre solution Web Cloud Databases est liée au réseau d'hébergem
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](/links/web/databases){.external} (incluse dans une offre d'[hébergement web performance](/links/web/hosting)).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'une [instance Web Cloud Databases](/links/web/databases) (incluse dans une offre d'[hébergement web performance](/links/web/hosting)).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -47,7 +47,7 @@ Si votre offre d'hébergement inclut l'option Web Cloud Databases, cliquez sur l
 
 ### Visionner les informations générales de l'instance
 
-Dans la barre de services à gauche de votre [espace client OVHcloud](/links/manager){.external}, rendez-vous dans la section `Web Cloud Databases`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
+Dans la barre de services à gauche de votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Web Cloud Databases`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ Vous pouvez y consulter les informations importantes concernant votre instance. 
 |RAM|Affiche la mémoire vive disponible pour votre instance ainsi que les éventuels dépassements de mémoire. Votre instance Web Cloud Databases dispose de ressources dédiées et garanties : sa mémoire RAM. Si besoin, vous pouvez faire évoluer cette dernière et être prévenu si vous consommez toutes les ressources mémoire de votre instance.|
 |Infrastructure|Affiche l'infrastructure utilisée par votre instance. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud.|
 |Datacenter|Affiche le centre de données dans lequel l'instance a été créée.|
-|Host|Affiche le serveur OVHcloud dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud et peut être utilisée dans nos communications liées aux [incidents OVHcloud](https://www.status-ovhcloud.com/){.external}.|
+|Host|Affiche le serveur OVHcloud dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud et peut être utilisée dans nos communications liées aux [incidents OVHcloud](https://www.status-ovhcloud.com/).|
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
@@ -211,15 +211,15 @@ Pour accéder aux logs de votre solution Web Cloud Databases, consultez notre gu
 
 ## Aller plus loin
 
-[Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server){.external}
+[Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)
 
-[Se connecter à la base de données de votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server){.external}
+[Se connecter à la base de données de votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)
 
-[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/save-export-on-database-server){.external}
+[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/save-export-on-database-server)
 
-[Restaurer et importer une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server){.external}
+[Restaurer et importer une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
-[Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server){.external}
+[Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

@@ -15,7 +15,7 @@ Jeśli jeden z dysków w serwerze jest niesprawny, możesz wymienić go bez wył
 - Posiadanie serwera mHG, HG lub BHG
 - Posiadanie programowej macierzy RAID (z kartą LSI)
 - Dostęp SSH (Linux) lub RDP (Windows)
-- Instalacja narzędzia “sas2ircu” (skorzystaj z wyszukiwarki [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}, aby je znaleźć)
+- Instalacja narzędzia “sas2ircu” (skorzystaj z wyszukiwarki [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu), aby je znaleźć)
 
 ## W praktyce
 
@@ -236,7 +236,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ### Windows
 
@@ -288,11 +288,11 @@ Można wyłączyć miganie diody dysku, zastępując “on” przez “off” w 
 
 Przeprowadź tę operację w interfejsie **Zarządzanie dyskami** na serwerze Windows.
 
-Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Sprawdź również
 
-[Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+[Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 

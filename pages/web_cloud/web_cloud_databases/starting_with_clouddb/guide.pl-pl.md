@@ -13,8 +13,8 @@ Twoje rozwiązanie Web Cloud Databases jest domyślnie powiązane z siecią host
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Cloud Databases](/links/web/databases){.external} (zawartego w ofercie [pakiecie hostingowym performance](/links/web/hosting))
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
+- Posiadanie [instancji Cloud Databases](/links/web/databases) (zawartego w ofercie [pakiecie hostingowym performance](/links/web/hosting))
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -48,7 +48,7 @@ Jeśli Twój hosting zawiera opcję prywatnego Web Cloud Databases, kliknij poni
 
 ### Wyświetlanie informacji ogólnych o instancji
 
-W menu usług po lewej stronie [Panelu klienta](/links/manager){.external}, przejdź do sekcji `Web Cloud Databases`, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W menu usług po lewej stronie [Panelu klienta](/links/manager), przejdź do sekcji `Web Cloud Databases`, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 > [!primary]
 >
@@ -66,7 +66,7 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji. Sprawd
 |RAM|Pokazuje pamięć operacyjną dostępną dla Twojej instancji oraz ewentualne przekroczenia pamięci. Twoja instancja Web Cloud Databases dysponuje dedykowaną i gwarantowaną pamięcią RAM. Jeśli zajdzie taka potrzeba, możesz zwiększyć pamięć RAM. Możesz również ustawić alert o jej całkowitym zużyciu.|
 |Infrastruktura|Pokazuje infrastrukturę używaną przez Twoją instancję. Jest to wewnętrzne oznaczenie infrastruktury OVHcloud.|
 |Centrum danych|Pokazuje centrum danych, w którym została uruchomiona instancja.|
-|Host|Pokazuje serwer OVHcloud, na którym utworzona została instancja. Jest to wewnętrzne oznaczenie OVHcloud, które może pojawić się w komunikatach dotyczących [prac modernizacyjnych i potencjalnych incydentów OVHcloud](https://www.status-ovhcloud.com/){.external}.|
+|Host|Pokazuje serwer OVHcloud, na którym utworzona została instancja. Jest to wewnętrzne oznaczenie OVHcloud, które może pojawić się w komunikatach dotyczących [prac modernizacyjnych i potencjalnych incydentów OVHcloud](https://www.status-ovhcloud.com/).|
 
 ![cloud databases - bazy danych na instancji](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 

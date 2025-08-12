@@ -33,7 +33,7 @@ In order to do so, we will need to install pgAdmin, then configure our Public Cl
 
 To interact with your PostgreSQL instance with pgAdmin 4 you need to install it.
 
-Please follow the official [pgAdmin](https://www.pgadmin.org/download/){.external} to get the latest information.
+Please follow the official [pgAdmin](https://www.pgadmin.org/download/) to get the latest information.
 
 We are now ready to learn how to connect to our PostgreSQL instance.
 
@@ -74,10 +74,10 @@ Once saved, select your server in the servers list on the left. In the Dashboard
 
 > [!primary]
 >
-> pgAdmin has [useful functions](https://pgadmin.org/features){.external} such as:
+> pgAdmin has [useful functions](https://pgadmin.org/features) such as:
 >
-> - [Backup & Restore](https://www.pgadmin.org/docs/pgadmin4/latest/backup_and_restore.html){.external} a single table, a schema, or a complete database
-> - [Manage Roles](https://www.pgadmin.org/docs/pgadmin4/latest/role_dialog.html){.external}
+> - [Backup & Restore](https://www.pgadmin.org/docs/pgadmin4/latest/backup_and_restore.html) a single table, a schema, or a complete database
+> - [Manage Roles](https://www.pgadmin.org/docs/pgadmin4/latest/role_dialog.html)
 >
 
 ## Go further

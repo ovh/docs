@@ -24,7 +24,7 @@ If you have completely understood these three guides, let's dive into this one.
 
 #### Twitter application creation
 
-Logstash has a powerful Twitter Input plugin. This plugin allows you to connect to the Stream API of Twitter and to listen for incoming tweets. In order to do this, it just needs your Twitter account API Keys. They are free and can be retrieved with a Twitter account. Log in your Twitter account in: [https://apps.twitter.com/](https://apps.twitter.com/){.external} and click on create a new app. Fill a name, a description and a website for your project. Read and agree to the Twitter Developer Agreement to proceed. You will then arrive on the application webpage:
+Logstash has a powerful Twitter Input plugin. This plugin allows you to connect to the Stream API of Twitter and to listen for incoming tweets. In order to do this, it just needs your Twitter account API Keys. They are free and can be retrieved with a Twitter account. Log in your Twitter account in: [https://apps.twitter.com/](https://apps.twitter.com/) and click on create a new app. Fill a name, a description and a website for your project. Read and agree to the Twitter Developer Agreement to proceed. You will then arrive on the application webpage:
 
 ![twitter_app](images/twitter-app.png){.thumbnail}
 
@@ -66,7 +66,7 @@ twitter {
 
 Fill the consumer Keys and Secret with the keys you obtained at the Twitter app configuration step. The oauth_token and the oauth_token_secret are the Access Token and Access Token Secret you created just before.
 
-The keywords array is the special array where you can specify which keywords you want to follow. Here I want to follow the three different competitors of the famous #ConsoleWars. If you want to follow tweets that contain multiple terms simultaneously you just separate them by a space in the same string. For example: "call of duty" will follow only tweets that contain 'call', 'of' and 'Duty'. You can also just follow a specific Twitter account by using the option **follows**. For more information about the Twitter input, go to the complete [Twitter input documentation](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-twitter.html){.external}.
+The keywords array is the special array where you can specify which keywords you want to follow. Here I want to follow the three different competitors of the famous #ConsoleWars. If you want to follow tweets that contain multiple terms simultaneously you just separate them by a space in the same string. For example: "call of duty" will follow only tweets that contain 'call', 'of' and 'Duty'. You can also just follow a specific Twitter account by using the option **follows**. For more information about the Twitter input, go to the complete [Twitter input documentation](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-twitter.html).
 
 You must use two additional parameters:
 
@@ -176,7 +176,7 @@ if [type] == "mention" {
 
 The configuration looks quite long and complex, it is in fact split into three parts: the *tweet type section*, the *hashtag type section* and the *mention type section*
 
-- The tweet type section: In this section, we select all the objects that have the *tweet*  type. We use the *mutate filter*  to extract and move some information at the top level of the event. We also remove unneeded information as id_str or timestamp_ms. Then we use [conditional expressions](https://www.elastic.co/guide/en/logstash/6.7/event-dependent-configuration.html){.external} to extract information and to create hashtags and mentions objects. The *clone filters*  will create a new event that will contain a copy of the full tweet and will tag it as a hashtag or mention type. They will execute only if mentions or hashtags are present.
+- The tweet type section: In this section, we select all the objects that have the *tweet*  type. We use the *mutate filter*  to extract and move some information at the top level of the event. We also remove unneeded information as id_str or timestamp_ms. Then we use [conditional expressions](https://www.elastic.co/guide/en/logstash/6.7/event-dependent-configuration.html) to extract information and to create hashtags and mentions objects. The *clone filters*  will create a new event that will contain a copy of the full tweet and will tag it as a hashtag or mention type. They will execute only if mentions or hashtags are present.
 - The hashtag type section: In this section, the hashtags of a tweet will be split into distinct events so a tweet that has 4 hashtags will generate 4 events of type hashtag. That's the purpose of the *split filter*. After the split filter, there is a mutate filter that will promote some information at the top level of the event and remove unnecessary information for this type of object. It will also change the message to the hashtag text itself with the preceding 'hash' character.
 - The mention type section: It is pretty much the same as the hashtag one. One *split filter*  to create mentions events and one *mutate filter*  to extract, delete and modify useful information.
 
@@ -254,11 +254,11 @@ There are many more possibilities. Of course you can create beautiful dashboards
 
 ![Dashboards](images/dashboard.png){.thumbnail}
 
-That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us on the [Community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
+That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us on the [Community hub](https://community.ovh.com/en/c/Platform/data-platforms).
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

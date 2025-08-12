@@ -8,7 +8,7 @@ updated: 2022-05-13
 Public Cloud Archive (PCA) è una soluzione di archiviazione gestibile tramite l'API di OpenStack. Se non hai familiarità nell'amministrazione dello spazio di storage da riga di comando, abbiamo sviluppato un gateway che ti permette di accedere a PCA tramite un client SFTP.
 
 ### Prerequisiti
-- Client SFTP: [WinSCP](https://winscp.net/eng/download.php){.external}
+- Client SFTP: [WinSCP](https://winscp.net/eng/download.php)
 - Login e Password OpenStack
 - TenantName del progetto
 
@@ -19,7 +19,7 @@ Nel nostro esempio, il client SFTP utilizzato è WinSCP. Ne esistono molti altri
 Per generare il tuo login e password OpenStack, consulta questa [guida](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 ## TenantName
-Il TenantName corrisponde al nome del tuo progetto su Horizon. Per recuperarlo, accedi all’interfaccia Web OpenStack utilizzando le credenziali generate precedentemente: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/){.external}. Una volta effettuato il login, il TenantName è visibile in alto nella pagina.
+Il TenantName corrisponde al nome del tuo progetto su Horizon. Per recuperarlo, accedi all’interfaccia Web OpenStack utilizzando le credenziali generate precedentemente: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/). Una volta effettuato il login, il TenantName è visibile in alto nella pagina.
 
 ![horizon](images/image1.png){.thumbnail}
 

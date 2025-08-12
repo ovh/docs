@@ -608,7 +608,7 @@ Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden S
 
 ![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in Ihrem Kundencenter mit [internationaler Notation (IDN)](https://de.wikipedia.org/wiki/Internationalisierter_Domainname){.external} angezeigt wird, funktioniert sie und wird andernorts normal angezeigt. Die Webadresse Ihrer Website wird wie gewünscht angezeigt. Ihre E-Mail-Adressen werden auch bei Ihren Kontakten wie gewünscht angezeigt.
+Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in Ihrem Kundencenter mit [internationaler Notation (IDN)](https://de.wikipedia.org/wiki/Internationalisierter_Domainname) angezeigt wird, funktioniert sie und wird andernorts normal angezeigt. Die Webadresse Ihrer Website wird wie gewünscht angezeigt. Ihre E-Mail-Adressen werden auch bei Ihren Kontakten wie gewünscht angezeigt.
 
 > [!alert]
 >

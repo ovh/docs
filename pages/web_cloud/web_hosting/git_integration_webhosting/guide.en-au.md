@@ -14,7 +14,7 @@ In today’s digital landscape, companies are becoming increasingly dynamic and 
 
 - An [OVHcloud Web Hosting](/links/web/hosting) plan.
 - Access to the [OVHcloud Control Panel](/links/manager), in the Web Cloud section.
-- A [GitHub](https://github.com/){.external} account on which you must be logged in.
+- A [GitHub](https://github.com/) account on which you must be logged in.
 
 > [!primary]
 >

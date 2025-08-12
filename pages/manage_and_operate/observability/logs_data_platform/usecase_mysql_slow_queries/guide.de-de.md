@@ -23,7 +23,7 @@ Before, you must read these three guides:
 ### Configure the MySQL slow query logs
 To send your logs to Logs Data Platform you first need to activate the slow query logs in your MySQL configuration.
 
-We recommend you refer to the official [MySQL documentation](http://dev.mysql.com/doc/){.external} for your own version of MySQL. For example here is a working configuration on MySQL 5.6:
+We recommend you refer to the official [MySQL documentation](http://dev.mysql.com/doc/) for your own version of MySQL. For example here is a working configuration on MySQL 5.6:
 
 ```ini
 # Here you can see queries with especially long duration
@@ -69,8 +69,8 @@ Slow query logs are multi-line logs giving information:
 
 ### Configure Filebeat on your system
 
-Our favorite way to send MySQL slow query logs is to send logs directly to Logs Data Platform by using [Filebeat](https://www.elastic.co/fr/downloads/beats/filebeat-oss){.external}.
-We cover Filebeat in depth in [another tutorial](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat){.external}. Here is a minimal **filebeat.yml** configuration file.
+Our favorite way to send MySQL slow query logs is to send logs directly to Logs Data Platform by using [Filebeat](https://www.elastic.co/fr/downloads/beats/filebeat-oss).
+We cover Filebeat in depth in [another tutorial](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat). Here is a minimal **filebeat.yml** configuration file.
 
 ```yaml
 #=========================== Filebeat inputs =============================
@@ -166,7 +166,7 @@ $ ldp@ubuntu:~$ sudo /etc/init.d/filebeat restart
 
 depending on your distribution.
 
-Try to run some slow queries in your database. For this you can use this [database sample](https://github.com/datacharmer/test_db){.external} and use join and like queries. Alternatively, you can use the MySQL Sleep query:
+Try to run some slow queries in your database. For this you can use this [database sample](https://github.com/datacharmer/test_db) and use join and like queries. Alternatively, you can use the MySQL Sleep query:
 
 ```
 SELECT SLEEP(2);
@@ -190,5 +190,5 @@ All this information can help you to analyse the most difficult queries for your
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

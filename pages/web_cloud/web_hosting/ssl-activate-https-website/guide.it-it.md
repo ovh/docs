@@ -12,9 +12,9 @@ Gli hosting Web OVHcloud permettono di usufruire di un [certificato SSL](/links/
 
 ## Prerequisiti
 
-- Disporre di un [certificato SSL](/links/web/hosting-options-ssl){.external} installato sul [hosting web OVHcloud](/links/web/hosting){.external}.
+- Disporre di un [certificato SSL](/links/web/hosting-options-ssl) installato sul [hosting web OVHcloud](/links/web/hosting).
 - Disporre di almeno un sito Web installato e accessibile sul proprio hosting Web OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 
 ## Procedura
 

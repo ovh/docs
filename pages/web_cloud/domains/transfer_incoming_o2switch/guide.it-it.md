@@ -70,7 +70,7 @@ Il trasferimento di un dominio O2Switch richiede una procedura specifica.
 
 ### Sblocca il dominio e recupera il codice di trasferimento
 
-Per sbloccare il dominio e recuperare il codice di trasferimento, segui gli step descritti nella [documentazione dedicata di O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert){.external}.
+Per sbloccare il dominio e recuperare il codice di trasferimento, segui gli step descritti nella [documentazione dedicata di O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert).
 
 ### Avvia il trasferimento di dominio in OVHcloud
 

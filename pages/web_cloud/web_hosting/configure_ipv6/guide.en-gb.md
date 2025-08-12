@@ -12,7 +12,7 @@ For this reason, the **IPv6** protocol was introduced, allowing up to 340 sextil
 
 Since less IPv4 addresses are available, it is more difficult to add new devices to the Internet using the IPv4 standard. However, connections with an IPv6 address are only useful if public resources, for example your website, are also available with this protocol. This means that the more websites IPv6 is enabled for, the more important it becomes for everyone concerned to migrate to this new protocol.
 
-For more information, see [Wikipedia](https://en.wikipedia.org/wiki/IPv6){.external}'s article on IPv6.
+For more information, see [Wikipedia](https://en.wikipedia.org/wiki/IPv6)'s article on IPv6.
 
 Our web hosting plans have been compatible with IPv6 since 2011. However, enabling this protocol remained optional for the configuration until recently. 
 
@@ -37,7 +37,7 @@ If your website is not configured to work with an IPv6 address, you can add [the
 
 ### 1 - Check your website's IPv6 availability
 
-To check if your website already uses an IPv6 address, use [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. It will show you whether your website responds to this IP protocol. If not, follow the steps below.
+To check if your website already uses an IPv6 address, use [ipv6-test.com](https://ipv6-test.com/validate.php). It will show you whether your website responds to this IP protocol. If not, follow the steps below.
 
 ### 2 - Retrieve your web hosting plan’s IPv6 address
 

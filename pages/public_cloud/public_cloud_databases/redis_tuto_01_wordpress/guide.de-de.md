@@ -34,7 +34,7 @@ This tutorial requires:
 
 - A running WordPress
 - A WordPress administrator account to install a plugin
-- A [PHP Redis® client](https://redis.io/clients#php){.external} supported by the plugin
+- A [PHP Redis® client](https://redis.io/clients#php) supported by the plugin
 - An OVHcloud Public Cloud database for Valkey
 
 ## Instructions
@@ -51,14 +51,14 @@ The main software component releases used for the following screenshots and exam
 
 ### Configuring your CMS: WordPress
 
-If you need to install WordPress, please refer to the official guide: [WordPress How To Install](https://wordpress.org/support/article/how-to-install-wordpress/){.external}.
+If you need to install WordPress, please refer to the official guide: [WordPress How To Install](https://wordpress.org/support/article/how-to-install-wordpress/).
 
 Once done, we will set up the WordPress backend correctly.
 For the next steps, let's consider that you have an up and running WordPress system on a LAMP (Linux, Apache, MySQL, PHP) platform.
 
 ### PHP Redis® Client: PhpRedis
 
-As WordPress is based on PHP, we will need a PHP Redis® client. We propose to use one of the main recommended [PHP Redis® clients](https://redis.io/clients#php){.external}: PhpRedis.
+As WordPress is based on PHP, we will need a PHP Redis® client. We propose to use one of the main recommended [PHP Redis® clients](https://redis.io/clients#php): PhpRedis.
 
 As TLS is required to secure the connection to the OVHcloud Public Cloud database for Valkey, we have to use the v5.3.x release of PhpRedis or above.
 
@@ -85,7 +85,7 @@ There are multiple Redis® plugins that could be used to integrate to a Valkey s
 
 ![Search Redis Plugin](images/Redis_plugin_list.png){.thumbnail}
 
-You can get more information related to this WordPress plugin at the official [WordPress plugin documentation - Redis Object Cache](https://wordpress.org/plugins/redis-cache/){.external}.
+You can get more information related to this WordPress plugin at the official [WordPress plugin documentation - Redis Object Cache](https://wordpress.org/plugins/redis-cache/).
 
 ### Configure WordPress to connect to the Valkey service
 
@@ -134,8 +134,8 @@ If you run into any problems enabling the Redis Object Cache plugin, start your 
 
 Please find below more documentation on the additional available parameters that you might want to use to optimise your Valkey service usage:
 
-- [Redis Object Cache connection parameters](https://github.com/rhubarbgroup/redis-cache/wiki/Connection-Parameters){.external}
-- [Redis Object Cache configuration options](https://github.com/rhubarbgroup/redis-cache/wiki/Configuration-Options){.external}
+- [Redis Object Cache connection parameters](https://github.com/rhubarbgroup/redis-cache/wiki/Connection-Parameters)
+- [Redis Object Cache configuration options](https://github.com/rhubarbgroup/redis-cache/wiki/Configuration-Options)
 
 ### Checking performance boost
 
@@ -160,7 +160,7 @@ my_redis-123456-123456.database.cloud.ovh.net:20185> SCAN 0
 ```
 #### Install a query monitoring plugin
 
-If you want to have more information about how the cache has impacted the performance, you can measure the gain in response delay directly with your browser. You can also see more details using an additional WordPress plugin like [Query Monitor](https://wordpress.org/plugins/query-monitor/){.external}.
+If you want to have more information about how the cache has impacted the performance, you can measure the gain in response delay directly with your browser. You can also see more details using an additional WordPress plugin like [Query Monitor](https://wordpress.org/plugins/query-monitor/).
 
 #### Example of performance boost with a basic WordPress site
 

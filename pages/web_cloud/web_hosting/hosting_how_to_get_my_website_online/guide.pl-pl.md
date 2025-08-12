@@ -8,16 +8,16 @@ updated: 2025-05-23
 
 W sieci istnieje bardzo wiele rodzajów stron WWW. 
 
-Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na **hostingu OVHcloud**, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVHcloud](https://webhosting-infos.hosting.ovh.net){.external}.
+Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na **hostingu OVHcloud**, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVHcloud](https://webhosting-infos.hosting.ovh.net).
 
 **Dowiedz się, jak zainstalować stronę WWW na Twoim hostingu OVHcloud.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
-- Posiadanie [domeny](/links/web/domains){.external}, pod którą będzie Twoja strona WWW
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
+- Posiadanie [domeny](/links/web/domains), pod którą będzie Twoja strona WWW
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting).
 
 ## W praktyce
@@ -26,7 +26,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 Jasno określony cel jest kluczowy dla realizacji Twojego projektu. Do czego zamierzasz wykorzystać Twoją stronę WWW? Jak ją uruchomić online? Hosting OVHcloud daje Ci kilka możliwości.
 
-- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud oferuje cztery kompatybilne z naszą infrastrukturą moduły za 1 kliknięciem, które można znaleźć na stronie internetowej OVHcloud ["Tworzenie strony internetowej z modułami za 1 kliknięciem"](/links/web/hosting-website){.external}. Możesz również zapoznać się z przewodnikiem ["Instalacja strony WWW za pomocą modułów 1 kliknięcia"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud oferuje cztery kompatybilne z naszą infrastrukturą moduły za 1 kliknięciem, które można znaleźć na stronie internetowej OVHcloud ["Tworzenie strony internetowej z modułami za 1 kliknięciem"](/links/web/hosting-website). Możesz również zapoznać się z przewodnikiem ["Instalacja strony WWW za pomocą modułów 1 kliknięcia"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Ręczna instalacja gotowego systemu CMS**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.) i samodzielnie instalujesz na Twoim hostingu OVHcloud.
 
@@ -67,7 +67,7 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 - adres serwera;
 - port połączenia z serwerem.
 
-Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [Panelu klienta](/links/manager){.external} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
+Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [Panelu klienta](/links/manager) i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
 
 ![instalacja strony www](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
@@ -77,7 +77,7 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać do
 
 - **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. FileZilla. Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.  W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](/links/web/hosting){.external} z dostępem SSH.
+- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.  W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](/links/web/hosting) z dostępem SSH.
 
 #### 3. Zapisanie plików na przestrzeni dyskowej
 
@@ -110,9 +110,9 @@ Jeśli przenosisz istniejącą stronę WWW do OVHcloud, pobierz bazę danych od 
 
 #### 2. Utworzenie bazy danych w OVHcloud 
 
-Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](/links/web/hosting){.external},[Web Cloud Databases](/links/web/databases){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
+Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](/links/web/hosting),[Web Cloud Databases](/links/web/databases)), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
-Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](/links/manager){.external} i kliknij `Hosting`{.action}. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
+Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](/links/manager) i kliknij `Hosting`{.action}. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
 
 Następnie kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 

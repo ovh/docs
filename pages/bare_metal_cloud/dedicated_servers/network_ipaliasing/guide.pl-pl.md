@@ -330,7 +330,7 @@ sudo netplan apply
 ```
 
 > [!primary]
-> Używając polecenia `netplan try`, system może zwrócić komunikat ostrzegawczy, taki jak `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Oznacza to po prostu, że plik nie ma ograniczonych uprawnień. Nie ma to wpływu na konfigurację Additional IP. Aby uzyskać więcej informacji na temat uprawnień do plików, zobacz [oficjalną dokumentację Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+> Używając polecenia `netplan try`, system może zwrócić komunikat ostrzegawczy, taki jak `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Oznacza to po prostu, że plik nie ma ograniczonych uprawnień. Nie ma to wpływu na konfigurację Additional IP. Aby uzyskać więcej informacji na temat uprawnień do plików, zobacz [oficjalną dokumentację Ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >
 
 ### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
@@ -549,7 +549,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Gdzie zastąpisz "ADDITIONAL_IP" prawdziwym Additional IP.
 
-Następnie wystarczy skierować ping z Additional IP na zewnątrz. Jeśli to działa, prawdopodobnie oznacza to, że błąd konfiguracji wymaga naprawy. Jeśli adres IP nadal nie działa, otwórz zgłoszenie dla zespołu pomocy technicznej w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external}, podając następujące informacje:
+Następnie wystarczy skierować ping z Additional IP na zewnątrz. Jeśli to działa, prawdopodobnie oznacza to, że błąd konfiguracji wymaga naprawy. Jeśli adres IP nadal nie działa, otwórz zgłoszenie dla zespołu pomocy technicznej w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help), podając następujące informacje:
 
 - Nazwa i wersja systemu operacyjnego, którego używasz na Twoim serwerze.
 - Nazwa i katalog pliku konfiguracji sieci.

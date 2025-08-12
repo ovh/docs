@@ -263,9 +263,9 @@ Microsoft uses a whitelist policy. This means that initially, everything starts 
 
 - **To a Gmail server**
 
-If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
+If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
 
-Google also has a [dedicated article](https://support.google.com/mail/answer/81126?hl=en){.external} regarding spam prevention to Gmail users.
+Google also has a [dedicated article](https://support.google.com/mail/answer/81126?hl=en) regarding spam prevention to Gmail users.
 
 ### Reporting a false positive
 

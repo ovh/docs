@@ -12,7 +12,7 @@ W niektórych przypadkach istnieje konieczność dokonania interwencji w dedykow
 
 ## Wymagania początkowe
 
-- [Połączenie przez SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} (dostęp root).
+- [Połączenie przez SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) (dostęp root).
 
 ## W praktyce
 
@@ -114,6 +114,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Sprawdź również
 
-[Wprowadzenie do protokołów SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external}.
+[Wprowadzenie do protokołów SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com>.

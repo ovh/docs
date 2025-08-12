@@ -12,7 +12,7 @@ Tutti gli elementi di un Managed Bare Metal consentono la creazione di alert: da
 
 ## Prerequisiti
 
-- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo
+- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) attivo
 - Avere accesso all’[interfaccia vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface)
 
 ## Procedura

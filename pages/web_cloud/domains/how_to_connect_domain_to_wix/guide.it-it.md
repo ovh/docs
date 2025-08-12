@@ -19,9 +19,9 @@ Se il dominio è registrato in OVHcloud e vuoi connetterlo a un hosting Wix. Que
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
-- Disporre di un [dominio](/links/web/domains){.external} registrato in OVHcloud.
-- Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un [dominio](/links/web/domains) registrato in OVHcloud.
+- Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il dominio dallo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di un hosting in Wix.
 - Avere accesso alla gestione di questo hosting presso Wix.
 
@@ -44,11 +44,11 @@ Quando utilizzi un hosting Wix con un dominio OVHcloud, devi prima preparare il 
 > Prima di continuare: <br>
 >
 > - Apri una scheda in parallelo sul tuo browser internet.
-> - Apri [**questa pagina della documentazione Wix**](https://support.wix.com/it/article/connected-un-domaine-%C3%A0-wix-par-pointage-5727882){.external}.
+> - Apri [**questa pagina della documentazione Wix**](https://support.wix.com/it/article/connected-un-domaine-%C3%A0-wix-par-pointage-5727882).
 > - Posizionati sulla sezione "**Step 2 | Aggiorna record DNS nell'account dell'hosting di dominio**" nella documentazione di Wix.<br>
 > Le istruzioni seguenti ti aiuteranno a configurare la tua zona DNS OVHcloud.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS del dominio selezionato.
 

@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un VPS
 excerpt: Come gestire un VPS dallo Spazio Cliente OVHcloud e scopri gli step iniziali del suo utilizzo, incluse le connessioni remote e le misure di sicurezza
-updated: 2024-11-22
+updated: 2025-08-07
 ---
 
 ## Obiettivo
@@ -110,7 +110,7 @@ Fare clic sulle schede seguenti per visualizzare i dettagli di questa sezione.
 
 #### Backup
 
-Queste opzioni si riferiscono a servizi VPS aggiuntivi ordinabili dallo Spazio Cliente.
+Queste opzioni si riferiscono a servizi VPS aggiuntivi per il backup e il ripristino del sistema.
 
 > [!tabs]
 > Snapshot
@@ -119,11 +119,13 @@ Queste opzioni si riferiscono a servizi VPS aggiuntivi ordinabili dallo Spazio C
 >>
 > Backup automatizzato
 >>
->> L’opzione `Backup automatizzato` permette di programmare backup regolari del VPS. A differenza degli Snapshot manuali, questa funzionalità conserva diversi punti di ripristino nel tempo, offrendoti una protezione continua e automatica dei dati (esclusi i dischi aggiuntivi).
+>> Il backup giornaliero del sistema viene creato automaticamente (esclusi i dischi aggiuntivi) e conservato per 24 ore. Passando all'opzione **Backup automatico Premium**, disporrai degli ultimi 7 backup giornalieri del tuo VPS disponibili per il montaggio e il ripristino.  
+Rispetto alle copie istantanee manuali, questa funzione aumenta la sicurezza dei dati creando diversi punti di ripristino a intervalli regolari.
+>>
 
 Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-servers-backups).
 
-#### Abbonamento
+#### Il mio servizio
 
 In queste sezioni vengono fornite le informazioni più importanti relative alla fatturazione del servizio. Tutte le informazioni su questo argomento sono disponibili nella [documentazione corrispondente](/products/account-and-service-management-managing-billing-payments-and-services).
 

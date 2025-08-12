@@ -26,13 +26,13 @@ Lors de la création d’une instance Public Cloud, vous pouvez choisir entre un
 ## Prérequis
 
 - Vous devez avoir créé une [instance Public Cloud](/links/public-cloud/public-cloud).
-- Vous devez être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Vous devez être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 ### Depuis l'espace client OVHcloud
 
-Dans [votre espace client](https://www.ovh.com/auth/?action=alleraugestionnaire){.external}, cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
+Dans [votre espace client](https://www.ovh.com/auth/?action=alleraugestionnaire), cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
 
 ![Modifier le mode de calcul des factures](images/switch_to_monthly_updated.png){.thumbnail}
 
@@ -65,7 +65,7 @@ Vous trouverez plus d'informations sur l'utilisation de l'API OVHcloud sur notre
 
 ### Depuis un script Terraform
 
-Ceci est possible grâce aux `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} de la ressource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external} :
+Ceci est possible grâce aux `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) de la ressource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2) :
 
 ```terraform
 metadata = {

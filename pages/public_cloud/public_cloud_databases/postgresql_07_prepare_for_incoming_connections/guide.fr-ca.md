@@ -42,7 +42,7 @@ This first user **avnadmin** comes with the following privileges:
 We rely on official PostgreSQL roles and privileges. You can manage them yourself via CLI or code.
 So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
 
-Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html){.external} to select the right roles for your use case.
+Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html) to select the right roles for your use case.
 
 To simply reset the **avnadmin** password, click on the `...`{.action} on the right of user, then on `Reset the password`{.action}.
 

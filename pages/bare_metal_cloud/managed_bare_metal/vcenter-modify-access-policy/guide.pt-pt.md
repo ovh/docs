@@ -12,7 +12,7 @@ Para melhorar a segurança da sua infraestrutura Managed Bare Metal, pode limita
 
 ## Requisitos
 
-- Dispor de uma oferta [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Dispor de uma oferta [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
@@ -36,5 +36,5 @@ Na janela que aparece, selecione a opção “Aberto” ou “Restritos” no me
 
 [Autorizar IP a ligar-se ao vCenter](/pages/bare_metal_cloud/managed_bare_metal/vcenter-authorise-ip-access)
 
-Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/).
 

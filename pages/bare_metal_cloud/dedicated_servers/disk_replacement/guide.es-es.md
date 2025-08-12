@@ -39,7 +39,7 @@ Ante cualquier notificación por correo electrónico o verificación por su part
 
 #### Servidor con RAID por software
 
-Si tiene un servidor con RAID por software, consulte la guía [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external} para identificar los discos instalados en su servidor.
+Si tiene un servidor con RAID por software, consulte la guía [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft) para identificar los discos instalados en su servidor.
 
 Una vez que conozca la ruta de los discos, puede probarlos usando el comando `smartctl` del siguiente modo:
 
@@ -83,7 +83,7 @@ En este caso, el número de serie se indica en la siguiente línea:
 
 #### Servidor con RAID por hardware
 
-Si tiene un servidor con RAID por hardware, consulte la guía [RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} y siga el procedimiento correspondiente a su tipo de controlador RAID para conocer la ruta de acceso a los discos.
+Si tiene un servidor con RAID por hardware, consulte la guía [RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard) y siga el procedimiento correspondiente a su tipo de controlador RAID para conocer la ruta de acceso a los discos.
 
 Una vez que conozca la ruta de los discos, puede probarlos usando el comando `smartctl` del siguiente modo:
 
@@ -119,7 +119,7 @@ smartctl -a /dev/sgY
 
 #### Servidor con disco NVMe
 
-Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} e instalar la herramienta `nvme-cli`.
+Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) e instalar la herramienta `nvme-cli`.
 
 ```sh
 apt install nvme-cli
@@ -141,7 +141,7 @@ root@rescue:~# nvme list
 
 Si desea solicitar la sustitución de un disco, solo tiene que crear un tíquet a nuestro soporte desde el [Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help). Para acelerar el proceso, deberá proporcionar la información obtenida en las pruebas anteriores. Son necesarios los siguientes datos:
 
-- **Número de serie del disco que quiera sustituir, así como de todos los demás discos**: Para obtener el número de serie del disco, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial){.external}. Si por alguna razón no fuera posible obtener el número de serie del disco, indíquelo en el tíquet y comunique el número de serie del disco o discos que no haya que sustituir. Como ya hemos dicho, es importante indicar el número de serie de todos los discos para evitar errores durante la operación.
+- **Número de serie del disco que quiera sustituir, así como de todos los demás discos**: Para obtener el número de serie del disco, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial). Si por alguna razón no fuera posible obtener el número de serie del disco, indíquelo en el tíquet y comunique el número de serie del disco o discos que no haya que sustituir. Como ya hemos dicho, es importante indicar el número de serie de todos los discos para evitar errores durante la operación.
 
 - **Fecha y hora de inicio de la intervención**: Deberá prever una breve interrupción del servicio, pero puede programar la intervención a cualquier hora del día o de la noche, los siete días de la semana.
 
@@ -196,15 +196,15 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Si tiene un servidor con RAID por hardware, el RAID se reconstruirá por sí mismo si el **auto-rebuild** está activado (por defecto está activado). Tenga en cuenta que la resincronización puede tardar unos minutos y afectar al rendimiento de lectura-escritura del RAID.
 
-Si tiene un servidor con RAID por software, deberá reconstruir el RAID usted mismo. Para ello, no dude en consultar la guía [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Si tiene un servidor con RAID por software, deberá reconstruir el RAID usted mismo. Para ello, no dude en consultar la guía [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Más información
 
-[RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+[RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
+[RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-[Modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external}
+[Modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
 

@@ -56,7 +56,7 @@ Se abrirá una ventana en la que deberá seleccionar el CMS correspondiente y el
 
 ![Elección del módulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Si su dominio no está en la lista, acceda a la pestaña `Multisitio`{.action} para añadirlo. Consulte nuestra guía [Cómo compartir un alojamiento web con varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} si es necesario.
+Si su dominio no está en la lista, acceda a la pestaña `Multisitio`{.action} para añadirlo. Consulte nuestra guía [Cómo compartir un alojamiento web con varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite) si es necesario.
 
 > [!primary]
 >
@@ -200,20 +200,20 @@ Si desea obtener ayuda sobre las funcionalidades de su CMS, consulte con el edit
 
 |CMS|Sitio web oficial|
 |---|---|
-|WordPress|[https://es.wordpress.com/](https://es.wordpress.com/){.external}|
-|PrestaShop|[https://www.prestashop.com/es/](https://www.prestashop.com/es/){.external}|
-|Joomla|[https://www.joomla.com/](https://www.joomla.com/){.external}|
-|Drupal|[https://www.drupal.org/](https://www.drupal.org/){.external}|
+|WordPress|[https://es.wordpress.com/](https://es.wordpress.com/)|
+|PrestaShop|[https://www.prestashop.com/es/](https://www.prestashop.com/es/)|
+|Joomla|[https://www.joomla.com/](https://www.joomla.com/)|
+|Drupal|[https://www.drupal.org/](https://www.drupal.org/)|
 
 ## Más información
 
-[Seleccione un CMS para crear un sitio web](/links/web/hosting-cms-comparison){.external}.
+[Seleccione un CMS para crear un sitio web](/links/web/hosting-cms-comparison).
 
 [Cómo compartir un alojamiento web entre varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 [Gestión de una base de datos desde un alojamiento compartido](/pages/web_cloud/web_hosting/sql_create_database).
 
-Descubra nuestras [ofertas Web Cloud Databases](/links/web/databases){.external}.
+Descubra nuestras [ofertas Web Cloud Databases](/links/web/databases).
 
 [Gestionar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 

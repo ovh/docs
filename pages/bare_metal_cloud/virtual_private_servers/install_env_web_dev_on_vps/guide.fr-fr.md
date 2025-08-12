@@ -71,7 +71,7 @@ Si Nginx est bien installé, un message de ce type doit apparaître :
 
 ![env dev web](images/result_nginx_v.png){.thumbnail}
 
-En cas de besoin, n'hésitez pas à consulter le [site officiel de Nginx](https://www.nginx.com/){.external}.
+En cas de besoin, n'hésitez pas à consulter le [site officiel de Nginx](https://www.nginx.com/).
 
 ### Installer un SGBD (**S**ystème de **G**estion de **B**ase de **D**onnées)
 

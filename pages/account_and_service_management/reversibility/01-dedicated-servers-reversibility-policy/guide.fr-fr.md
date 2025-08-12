@@ -7,7 +7,7 @@ updated: 2021-05-05
 
 Ce document est la politique de réversibilité pour la gamme de produits [Serveurs dédiés](/links/bare-metal/bare-metal).
 
-Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Détails des fonctionnalités
 

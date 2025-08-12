@@ -83,8 +83,8 @@ Activate an [SSL certificate](/links/web/hosting-options-ssl) on your Web Hostin
 
 If you generated a **Let's Encrypt SSL certificate**, click on the `Multisite`{.action} tab and follow the instructions of this [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting#enabling-ssl-on-a-multisite) to activate and/or generate the SSL option.
 
-If you **ordered a SSL certificate** of our partner [SECTIGO](https://sectigo.com/){.external}, check if you have received an e-mail offering to renew it.
-<br>If necessary, contact the [SECTIGO support team](https://sectigo.com/support){.external} for more informations.
+If you **ordered a SSL certificate** of our partner [SECTIGO](https://sectigo.com/), check if you have received an e-mail offering to renew it.
+<br>If necessary, contact the [SECTIGO support team](https://sectigo.com/support) for more informations.
 
 If you **imported a SSL certificate** from another provider, contact its support team.
 

@@ -60,7 +60,7 @@ Com a opção [Backup Storage](/links/bare-metal/backup-storage), pode armazenar
 
 Pode autorizar o acesso ao armazenamento de backup a partir do seu novo servidor. Assim, disporá de uma gateway para transferir os seus dados.
 
-Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage num servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage){.external}.
+Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage num servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ### Migração de um Additional IP (disponível apenas na OVHcloud e So you Start)
 

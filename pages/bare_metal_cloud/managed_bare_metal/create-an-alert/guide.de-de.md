@@ -12,7 +12,7 @@ Alarmmeldungen können für alle Komponenten Ihrer Managed Bare Metal erstellt w
 
 ## Voraussetzungen
 
-- Sie nutzen ein Produkt der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external}.
+- Sie nutzen ein Produkt der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/).
 - Sie sind in Ihrem [vSphere Interface](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface) angemeldet.
 
 ## Praktische Anwendung

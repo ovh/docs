@@ -20,7 +20,7 @@ Die SSL-Verschlüsselungsstufen zwischen diesen drei Zertifikattypen sind identi
 
 Der Hauptunterschied besteht in den Überprüfungen, mit denen die ausstellende Zertifikatsstelle (Certificate Authority, CA) die Legitimität verifiziert und dessen Authentizität bescheinigt.
 
-Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifikate ausstellt [Sectigo](https://sectigostore.com){.external}.
+Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifikate ausstellt [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >

@@ -6,7 +6,7 @@ updated: 2022-03-28
 
 ## Objectif
 
-Le service [Load Balancer OVHcloud](/links/network/load-balancer){.external} offre différents types de suivi de connexion pour vos services.
+Le service [Load Balancer OVHcloud](/links/network/load-balancer) offre différents types de suivi de connexion pour vos services.
 
 Chaque session du service OVHcloud Load Balancer est maintenue par un système de persistence de connexion. Ce dernier est configuré au niveau de la couche applicative du service OVHcloud Load Balancer, c'est elle qui assure la persistence de la connexion vers le serveur.
 
@@ -14,9 +14,9 @@ Chaque session du service OVHcloud Load Balancer est maintenue par un système d
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVHcloud](/links/network/load-balancer){.external}.
-- Avoir accès à l'[espace client OVHcloud](/links/manager){.external}, ou bien
-- Avoir accès à l'[API OVHcloud](/links/api){.external}.
+- Disposer d'un [Load Balancer OVHcloud](/links/network/load-balancer).
+- Avoir accès à l'[espace client OVHcloud](/links/manager), ou bien
+- Avoir accès à l'[API OVHcloud](/links/api).
 
 ## En pratique
 
@@ -42,7 +42,7 @@ Les éléments suivants auront un impact sur la redirection de trafic :
 
 ### Modifier le mode de suivi de connexion d'une ferme via l'espace client OVHcloud
 
-Dans l'[espace client OVHcloud](/links/manager){.external} rendez-vous dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
+Dans l'[espace client OVHcloud](/links/manager) rendez-vous dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
 
 Pour modifier le suivi de connexion d'une ferme, il faut éditer celle-ci en allant dans l'onglet `Ferme de serveurs`{.action} puis cliquez sur le bouton d'édition `...`{.action} à droite  de la ferme voulue et sélectionnez `Modifier`{.action}.
 

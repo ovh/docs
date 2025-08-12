@@ -4,14 +4,14 @@ excerpt: Find out how to install Istio on OVHcloud Managed Kubernetes
 updated: 2022-05-30
 ---
 
-[Istio](https://istio.io){.external} is a open source service mesh and platform to reduce the complexity of deploying, securing, controlling and observing distributed services. As the Istio site explains, Istio helps you to:
+[Istio](https://istio.io) is a open source service mesh and platform to reduce the complexity of deploying, securing, controlling and observing distributed services. As the Istio site explains, Istio helps you to:
 
 - Control the flow of traffic between services
 - Secure the services and manage the authentication, authorization and encryption of inter-service communications
 - Apply and enforce policies on distributes services
 - Monitor the services gathering metrics, logs and traces
 
-In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager){.external} to reinitialize your cluster before following this tutorial.
+In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) to reinitialize your cluster before following this tutorial.
 
 ## Before you begin
 
@@ -21,7 +21,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 Istio is installed in its own `istio-system` namespace and can manage services from all other namespaces.
 
-1. Go to the [Istio release page](https://github.com/istio/istio/releases){.external} to download the installation file for your OS, or download and extract the latest release automatically (Linux or macOS):
+1. Go to the [Istio release page](https://github.com/istio/istio/releases) to download the installation file for your OS, or download and extract the latest release automatically (Linux or macOS):
 
     ```
     curl -L https://istio.io/downloadIstio | sh -
@@ -140,13 +140,13 @@ $ kubectl get pods -n istio-system
 
 ## Deploying an application
 
-To verify that Istio is truly working in the cluster, you are going to deploy a test application. We have choosen the [Bookinfo](https://istio.io/docs/examples/bookinfo/){.external} application, as it's a multi-technology multi-instance microservices-based application that let's you verify if Istio works as intended.
+To verify that Istio is truly working in the cluster, you are going to deploy a test application. We have choosen the [Bookinfo](https://istio.io/docs/examples/bookinfo/) application, as it's a multi-technology multi-instance microservices-based application that let's you verify if Istio works as intended.
 
 ![Bookinfo](images/installing-istio-bookinfo.png){.thumbnail}
 
 ### Installing Bookinfo
 
-The [Istio-Sidecar-injector](https://istio.io/docs/setup/kubernetes/sidecar-injection/#automatic-sidecar-injection){.external}, that you installed with Istio, will automatically inject Envoy containers into your application pods. The injector assumes the application pods are running in namespaces labeled with `istio-injection=enabled`. 
+The [Istio-Sidecar-injector](https://istio.io/docs/setup/kubernetes/sidecar-injection/#automatic-sidecar-injection), that you installed with Istio, will automatically inject Envoy containers into your application pods. The injector assumes the application pods are running in namespaces labeled with `istio-injection=enabled`. 
 
 Let's create and label a `istio-apps` namespace:
 
@@ -239,7 +239,7 @@ $ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadat
 ### Open the application to outside traffic
 
 Now that the Bookinfo services are up and running, you need to make the application accessible from outside of your Kubernetes cluster, e.g., from a browser.
-An [Istio Gateway](https://istio.io/docs/concepts/traffic-management/#gateways){.external} is used for this purpose.
+An [Istio Gateway](https://istio.io/docs/concepts/traffic-management/#gateways) is used for this purpose.
 
 1. Associate this application with the Istio gateway:
 
@@ -325,7 +325,7 @@ The Kiali dashboard shows an overview of your mesh with the relationships betwee
 
 ## What's next?
 
-Now you have a working Bookinfo app deployed on Istio, you can follow the suggestions of the [Bookinfo sample app page](https://istio.io/docs/examples/bookinfo/){.external} and use this sample to experiment with Istio’s features for traffic routing, fault injection, rate limiting, etc. To proceed, refer to one or more of the [Istio Examples](https://istio.io/docs/examples){.external}, depending on your interest. [Intelligent Routing](https://istio.io/docs/examples/intelligent-routing/){.external} is a good place to start for beginners.
+Now you have a working Bookinfo app deployed on Istio, you can follow the suggestions of the [Bookinfo sample app page](https://istio.io/docs/examples/bookinfo/) and use this sample to experiment with Istio’s features for traffic routing, fault injection, rate limiting, etc. To proceed, refer to one or more of the [Istio Examples](https://istio.io/docs/examples), depending on your interest. [Intelligent Routing](https://istio.io/docs/examples/intelligent-routing/) is a good place to start for beginners.
 
 ## Cleanup
 

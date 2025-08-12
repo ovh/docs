@@ -27,11 +27,11 @@ Logs Data Platform imposes a few [constraints](/pages/manage_and_operate/observa
 
 The log formats that are accepted by Logs Data Platform are the following:
 
-- **GELF**: This is the native format of logs used by Graylog. This JSON format allows you to send logs really easily. See the [GELF Payload Specification](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. The GELF input only accepts a null (`\0`) delimiter.
-- **LTSV**: This simple format is very efficient and human readable. You can learn more about it [here](http://ltsv.org){.external}. LTSV has two inputs that accept a line delimiter or a null delimiter.
-- **RFC 5424**: This format is commonly used by logs utilities such as syslog. It is extensible enough to allow you to send all your data. More information about it can be found [here](https://tools.ietf.org/html/rfc5424){.external}.
-- **Cap'n'Proto**: The most efficient log format. This is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
-- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat), [Metricbeat](https://www.elastic.co/beats/metricbeat){.external}, [Winlogbeat](https://www.elastic.co/beats/winlogbeat){.external}).
+- **GELF**: This is the native format of logs used by Graylog. This JSON format allows you to send logs really easily. See the [GELF Payload Specification](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification). The GELF input only accepts a null (`\0`) delimiter.
+- **LTSV**: This simple format is very efficient and human readable. You can learn more about it [here](http://ltsv.org). LTSV has two inputs that accept a line delimiter or a null delimiter.
+- **RFC 5424**: This format is commonly used by logs utilities such as syslog. It is extensible enough to allow you to send all your data. More information about it can be found [here](https://tools.ietf.org/html/rfc5424).
+- **Cap'n'Proto**: The most efficient log format. This is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/).
+- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat), [Metricbeat](https://www.elastic.co/beats/metricbeat), [Winlogbeat](https://www.elastic.co/beats/winlogbeat)).
 
 ### Mutualized vs Dedicated inputs
 

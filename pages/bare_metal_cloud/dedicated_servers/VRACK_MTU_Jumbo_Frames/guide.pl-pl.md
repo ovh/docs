@@ -12,7 +12,7 @@ Ramki Jumbo, inaczej *Jumbo frames*, to ramki Ethernet o ładowności ponad 1500
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [vRack](/links/network/vrack){.external}
+- Posiadanie usługi [vRack](/links/network/vrack)
 - Otwórz shell z prawami root
 
 > [!warning]

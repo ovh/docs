@@ -22,7 +22,7 @@ Quando crei un backup del tuo VPS (nel caso di una sottoscrizione di backup auto
 
 ## Prerequisiti
 
-- Disporre di una soluzione [VPS recente](/links/bare-metal/vps){.external} con un [OS compatibile con cPanel](https://www.ovhcloud.com/it/vps/os/).
+- Disporre di una soluzione [VPS recente](/links/bare-metal/vps) con un [OS compatibile con cPanel](https://www.ovhcloud.com/it/vps/os/).
 - cPanel deve essere installato sul tuo server
 
 ## Procedura

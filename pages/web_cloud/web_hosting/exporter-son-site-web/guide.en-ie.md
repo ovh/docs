@@ -6,14 +6,14 @@ updated: 2022-02-03
 
 ## Objective
 
-This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](/links/web/hosting){.external}.
+This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](/links/web/hosting).
 
 **Find out how to export an OVHcloud website.**
 
 ## Requirements
 
-- an [OVHcloud web hosting plan](/links/web/hosting){.external}
-- access to the [OVHcloud Control Panel](/links/manager){.external}
+- an [OVHcloud web hosting plan](/links/web/hosting)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -28,17 +28,17 @@ To log in to your storage space, you will need the following:
 - the server address
 - the server connection port
 
-This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
+This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
-The information associated with your storage space will now appear. You should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection){.external}. If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+The information associated with your storage space will now appear. You should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection). If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Once you have everything you need, there are two different ways of retrieving your files from the storage space:
 
 - **Using FTP- or SFTP-compatible software.** You will need to install a compatible program on your computer (e.g. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). Since OVHcloud did not create the software package you have installed, please contact the software’s publisher if you are experiencing difficulties using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](/links/web/hosting){.external} are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](/links/web/hosting) are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 2.1 Upload the files from your storage space.
 
@@ -56,7 +56,7 @@ To identify the folder that the website is stored on, go to the `Multi-site`{.ac
 >
 
 To retrieve a backup of your database, please read our guide on
-[Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export){.external}.
+[Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export).
 
 If you are using a **Web Cloud Databases** for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
 You can also download, import and restore backups in this section.

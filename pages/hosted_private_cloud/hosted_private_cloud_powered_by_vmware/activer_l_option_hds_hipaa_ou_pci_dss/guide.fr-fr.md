@@ -12,14 +12,14 @@ Pour rendre votre infrastructure Private Cloud conforme à [l'hébergement des d
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-* Posséder une [infrastructure Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud. Version 6.0 ou supérieure.
+* Être connecté à votre [espace client OVHcloud](/links/manager).
+* Posséder une [infrastructure Private Cloud](https://www.ovh.com/fr/public-cloud/instances/) sur votre compte OVHcloud. Version 6.0 ou supérieure.
 
 ## En pratique
 
 ### Activation
 
-Pour adapter votre Private Cloud à cette certification, l'une des options de sécurité correspondantes doit être activée. Pour le vérifier, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et dirigez-vous dans la section `Serveur`. Cliquez sur `Private Cloud`{.action} et sélectionnez le service concerné.
+Pour adapter votre Private Cloud à cette certification, l'une des options de sécurité correspondantes doit être activée. Pour le vérifier, connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Serveur`. Cliquez sur `Private Cloud`{.action} et sélectionnez le service concerné.
 
 Dans la fenêtre qui s'affiche, vérifiez que vous vous trouvez dans l'onglet `Informations générales`{.action}. Vérifiez ensuite l'état d'activation des options de sécurité dans la section « Options et conformité ».
 
@@ -29,7 +29,7 @@ Si l'option de sécurité souhaitée n'est pas activée, activez-la en cliquant 
 
 Plusieurs conditions sont essentielles :
 
-- **Les options [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/){.external} et [vROps](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/vrops/){.external} doivent être installées**: depuis l'onglet `Informations générales`{.action}, dans la section « Options et conformité », vous pouvez vérifier l'état d'activation de ces options. Si elles ne sont pas activées, activez-les en cliquant sur le bouton `...`{.action} puis sur `Activer`{.action}.
+- **Les options [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) et [vROps](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/vrops/) doivent être installées**: depuis l'onglet `Informations générales`{.action}, dans la section « Options et conformité », vous pouvez vérifier l'état d'activation de ces options. Si elles ne sont pas activées, activez-les en cliquant sur le bouton `...`{.action} puis sur `Activer`{.action}.
 
 - **La politique d'accès à vCenter doit être restreinte**: depuis l'onglet `Sécurité`{.action} , vous pouvez vérifier l'état de la politique de sécurité. S'il n'est pas restreint, effectuez la modification en cliquant sur `Modifier la politique d'accès à vCenter`{.action}, puis suivez les étapes. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
 

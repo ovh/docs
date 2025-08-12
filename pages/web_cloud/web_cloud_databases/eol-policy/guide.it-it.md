@@ -14,7 +14,7 @@ I database gestiti OVHcloud propongono diversi Sistemi di Gestione Database (SGB
 Almeno una delle 3 offerte seguenti:
 
 - Uno dei database inclusi con un [Hosting Web](/links/web/hosting).
-- Una [istanza Web Cloud Databases](/links/web/databases){.external} (inclusa in un'offerta di [Hosting Performance](/links/web/hosting).
+- Una [istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di [Hosting Performance](/links/web/hosting).
 - Pack di database [Start SQL](/links/web/hosting-options-startsql).
 
 ## Procedura

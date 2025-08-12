@@ -12,8 +12,8 @@ This guide will also show you how to add one or more logins to this sub-account 
 
 ## Requirements
 
-* Being connected on [OVHcloud API](/links/api){.external}.
-* Having [created your credentials for OVHcloud API](/pages/manage_and_operate/api/first-steps){.external}.
+* Being connected on [OVHcloud API](/links/api).
+* Having [created your credentials for OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 * Having a customer account wih Reseller Tag (contact your sales representative for eligibility if applicable).
 
@@ -55,7 +55,7 @@ With the previously created ConsumerKey.
 
 * email : add an email address for this user
 * login : enter a relevant string for this user
-* password : it must meet the requirements of [zxcvbn: Low-Budget Password Strength Estimation](https://github.com/dropbox/zxcvbn){.external} and be valid by testing it on [Pwned Passwords](https://haveibeenpwned.com/Passwords){.external}.
+* password : it must meet the requirements of [zxcvbn: Low-Budget Password Strength Estimation](https://github.com/dropbox/zxcvbn) and be valid by testing it on [Pwned Passwords](https://haveibeenpwned.com/Passwords).
 
 ## Go further
 

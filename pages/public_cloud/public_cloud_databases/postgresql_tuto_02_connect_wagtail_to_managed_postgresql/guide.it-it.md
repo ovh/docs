@@ -6,9 +6,9 @@ updated: 2022-02-11
 
 ## Objective
 
-[Wagtail](https://wagtail.org/){.external} is a free and open source content management system (CMS) written in Python. It is popular amongst websites using the [Django framework](https://www.djangoproject.com/){.external}.
+[Wagtail](https://wagtail.org/) is a free and open source content management system (CMS) written in Python. It is popular amongst websites using the [Django framework](https://www.djangoproject.com/).
 
-In this tutorial, we are going to show you how to install [Wagtail](https://wagtail.org/){.external} and how to connect it to the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} [database service](https://www.ovhcloud.com/it/public-cloud/postgresql/).
+In this tutorial, we are going to show you how to install [Wagtail](https://wagtail.org/) and how to connect it to the OVHcloud managed [PostgreSQL](https://www.postgresql.org/) [database service](https://www.ovhcloud.com/it/public-cloud/postgresql/).
 
 > [!warning]
 >
@@ -53,7 +53,7 @@ This first user **avnadmin** comes with the following privileges:
 We rely on official PostgreSQL roles and privileges. You can manage them yourself via CLI or code.
 So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
 
-Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html){.external} to select the right roles for your use case.
+Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html) to select the right roles for your use case.
 
 In our example, we will simply reset the **avnadmin** password.
 

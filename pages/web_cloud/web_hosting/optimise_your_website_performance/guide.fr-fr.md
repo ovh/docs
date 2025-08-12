@@ -16,10 +16,10 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 
 ## Prérequis
 
-- Un [hébergement web OVHcloud](/links/web/hosting){.external}
+- Un [hébergement web OVHcloud](/links/web/hosting)
 - Un e-mail confirmant que votre hébergement web a été configuré;
-- Un [nom de domaine](/links/web/domains){.external} lié à votre hébergement web;
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Un [nom de domaine](/links/web/domains) lié à votre hébergement web;
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -49,14 +49,14 @@ Les réponses à ces questions peuvent vous aider à cibler certains points spé
 
 L’utilisation des CMS comme WordPress, PrestaShop, Drupal ou Joomla! nécessite plusieurs bibliothèques pour qu’une seule page web puisse gérer un grand nombre d’éléments.
 Les navigateurs Internet doivent pouvoir charger et lire tous ces éléments.
-Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](/links/web/hosting){.external}.
+Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](/links/web/hosting).
 
-Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](/links/web/hosting-best-web){.external}.
+Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](/links/web/hosting-best-web).
 
 ### Étape 2 : Vérification de la version PHP
 
 Utiliser la dernière version de PHP compatible avec votre site peut avoir une influence considérable sur son rendement.
-Pour vérifier si votre site web est compatible avec la dernière version PHP, veuillez vous référer à [la documentation officielle de PHP](https://php.net/eol.php){.external}.
+Pour vérifier si votre site web est compatible avec la dernière version PHP, veuillez vous référer à [la documentation officielle de PHP](https://php.net/eol.php).
 
 **PHP-FPM**
 
@@ -93,7 +93,7 @@ Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 c
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
-Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](/links/manager){.external}.
+Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](/links/manager).
 
 Comment accéder aux statistiques et logs :
 
@@ -133,7 +133,7 @@ Les deux catégories suivantes sont visibles seulement si vous utilisez actuelle
 
 ### Étape 5 : Vérification des requêtes sur le réseau
 
-La [Surveillance réseau](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} constitue un outil d’analyse utile qui est intégré au navigateur Mozilla Firefox et qui permet d’analyser en détail le temps de chargement d’une page web. 
+La [Surveillance réseau](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor) constitue un outil d’analyse utile qui est intégré au navigateur Mozilla Firefox et qui permet d’analyser en détail le temps de chargement d’une page web. 
 
 Avec cet outil, vous pouvez vérifier les éléments de votre site qui sont plus lents ou plus lourds à charger.
 Il permet de circonscrire les images et le contenu qui augmentent la durée de chargement du site web et de définir des priorités si une optimisation est nécessaire.
@@ -148,14 +148,14 @@ Pour améliorer l’accès au site web, les téléchargements et profiter d’un
 
 Ainsi, vous améliorez le temps de réponse pour les visiteurs dans le monde entier puisque les parties statiques de votre site web seront téléchargées directement par votre visiteur au point de présence le plus proche de leur emplacement.
 
-Découvrez notre [solution CDN](/links/network/cdn-infrastructure){.external}. 
+Découvrez notre [solution CDN](/links/network/cdn-infrastructure). 
 
 ### Étape 6 : Contrôle du système de gestion du contenu (CMS) et des plugins utilisés
 
 > [!primary]
 > Cette étape est facultative si vous n’utilisez pas de CMS.
 
-Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de votre CMS, vous pouvez consulter une comparaison de nos services sur [la page du produit](/links/web/hosting){.external}. 
+Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de votre CMS, vous pouvez consulter une comparaison de nos services sur [la page du produit](/links/web/hosting). 
 
 - **Utilisation d’un plugin en cache :** L’utilisation d’un CMS implique de nombreuses bibliothèques, si bien qu’une seule page web peut devoir traiter un grand nombre d’éléments. Pour optimiser votre CMS, vous devez utiliser plusieurs plugins en cache pour éviter une régénération du contenu de votre site web chaque fois que le chargement d’une page est en cours. Il est recommandé de rechercher des plugins en cache sur les sites web de la communauté associés au CMS que vous utilisez (Joomla! - PrestaShop - WordPress) pour éviter la régénération de tout le contenu de votre site web chaque fois que vous chargez la page web.
 
@@ -169,7 +169,7 @@ Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de
 Vous pouvez accéder à votre base de données à l’aide de PHPMyAdmin; l'utilisation détaillée de PHPMyAdmin va au-delà de la portée de ce guide. Par conséquent, nous n’aborderons pas le sujet en détail.
 Toutefois, il existe un grand nombre de guides externes qui traitent le sujet.
 
-**Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](/links/manager){.external} :
+**Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](/links/manager) :
 
 - Cliquez sur votre domaine dans la section `Hébergements`{.action} ;
 
@@ -233,15 +233,15 @@ Par exemple :
 
 #### Web Cloud Databases
 Si, en dépit de toutes les modifications et mesures d’optimisation que vous avez appliquées, la base de données est toujours lente, ou si un grand nombre de requêtes sont envoyées à la base de données, vous pourrez éventuellement opter pour notre offre Web Cloud Databases pour disposer de plus de ressources.
-[Consulter notre offre Web Cloud Databases sur le site](/links/web/hosting-options-startsql){.external}.
+[Consulter notre offre Web Cloud Databases sur le site](/links/web/hosting-options-startsql).
 
 ## Aller plus loin
 
 [Modifier la configuration d’un d’hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.externe}
 
-[Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
+[Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

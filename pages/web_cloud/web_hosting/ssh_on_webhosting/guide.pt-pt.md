@@ -12,9 +12,9 @@ Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazena
 
 ## Requisitos
 
-- Ter um [plano de alojamento web OVHcloud](/links/web/hosting){.external} com acesso SSH.
+- Ter um [plano de alojamento web OVHcloud](/links/web/hosting) com acesso SSH.
 - Estar na posse das informações necessárias à conexão em SSH ao espaço de armazenamento.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
 
 > [!warning]
 > 
@@ -24,13 +24,13 @@ Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazena
 
 ### 1.ª etapa: Assegurar que o acesso SSH se encontra ativo <a name="sshcheck"></a>
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção «Web», e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento 
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção «Web», e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento 
 
 Na coluna «SSH» da tabela, verifique se o utilizador SSH (ou «Login») em causa dispõe de um acesso SSH ativo. Se não for o caso, surgirá a menção «Desativado».
 
 ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 
-Se o acesso SSH não estiver ativo, clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Modificar`{.action}. Na janela que se abrir, ative o acesso SSH e conclua a modificação. Se não conseguir proceder à ativação, certifique-se de que o seu serviço de [alojamento web OVHcloud](/links/web/hosting){.external} beneficia de um acesso SSH.
+Se o acesso SSH não estiver ativo, clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Modificar`{.action}. Na janela que se abrir, ative o acesso SSH e conclua a modificação. Se não conseguir proceder à ativação, certifique-se de que o seu serviço de [alojamento web OVHcloud](/links/web/hosting) beneficia de um acesso SSH.
 
 ### 2.ª etapa: Obter as informações de acesso <a name="sshlogin"></a>
 

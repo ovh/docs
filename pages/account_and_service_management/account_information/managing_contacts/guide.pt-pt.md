@@ -31,7 +31,7 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Ter as permissões de acesso necessárias para este tipo de operação.
 - Ter acesso ao Identificador de Cliente (ID de Cliente) do utilizador que irá ser definido como contacto.
 - Todos os utilizadores envolvidos na alteração de um contacto devem ter acesso à conta de e-mail associada aos seus perfis.
@@ -101,7 +101,7 @@ Se um dos contactos não tiver recebido o e-mail, é possível que o endereço a
 
 ![Gestão de contactos](images/managing_contacts_06.png){.thumbnail}
 
-Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem para informar que o pedido precisa de ser confirmado por outro utilizador. A confirmação dos utilizadores pode demorar alguns minutos até ser atualizada na [Área de Cliente OVHcloud](/links/manager){.external}.
+Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem para informar que o pedido precisa de ser confirmado por outro utilizador. A confirmação dos utilizadores pode demorar alguns minutos até ser atualizada na [Área de Cliente OVHcloud](/links/manager).
 
 ![Gestão de contactos](images/managing_contacts_007.png){.thumbnail}
 

@@ -12,7 +12,7 @@ OVHcloud ha desarrollado para sus clientes el plugin OVHcloud Network para ofrec
 
 ## Requisitos
 
-- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
+- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener un bloque de direcciones IP asociado a su Managed Bare Metal.
 - Tener acceso a la interfaz vSphere.
@@ -53,4 +53,4 @@ El registro inverso aparecerá en la tabla.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

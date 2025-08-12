@@ -42,7 +42,7 @@ Quando utilizzi un Google Site con un dominio OVHcloud, per prima cosa prepara l
 
 ### 2. Configurare i record DNS su un account OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS del dominio selezionato.
 

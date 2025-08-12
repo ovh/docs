@@ -62,15 +62,15 @@ Cuando el servidor de recepción (Inbound Mail Server) recibe el mensaje de corr
 
 ## Requisitos
 
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](/links/manager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - El dominio debe utilizar la configuración de OVHcloud (es decir, los servidores DNS de OVHcloud).
 
 > [!warning]
 >
 > Si el dominio no utiliza los servidores DNS de OVHcloud, deberá editar el SPF desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio.
 >
-> Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración de OVHcloud desde el [área de cliente](/links/manager){.external}, en la pestaña `Servidores DNS`{.action}, seleccionando el dominio correspondiente.
+> Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración de OVHcloud desde el [área de cliente](/links/manager), en la pestaña `Servidores DNS`{.action}, seleccionando el dominio correspondiente.
 >
 
 ## Procedimiento
@@ -81,7 +81,7 @@ Si el dominio utiliza la configuración de OVHcloud, puede comprobar si ya hay u
 
 /// details | ¿Cómo comprobar una configuración SPF existente?
 
-Para ello, conéctese al [área de cliente de OVHcloud](/links/manager){.external}. En la sección `Dominios`{.action}, seleccione el dominio correspondiente. Haga clic en la pestaña `Zona DNS`{.action}.
+Para ello, conéctese al [área de cliente de OVHcloud](/links/manager). En la sección `Dominios`{.action}, seleccione el dominio correspondiente. Haga clic en la pestaña `Zona DNS`{.action}.
 
 Se mostrará una tabla que muestra la zona DNS de su dominio en OVHcloud. Está formada por varios registros, todos ellos simbolizados por una línea de la tabla.
 
@@ -109,7 +109,7 @@ Para encontrar la línea correspondiente al SPF de OVHcloud, puede utilizar un f
 
 ### Configurar el registro SPF
 
-Para añadir un registro SPF a la configuración de OVHcloud de su dominio, conéctese al [área de cliente de OVHcloud](/links/manager){.external}.Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Para añadir un registro SPF a la configuración de OVHcloud de su dominio, conéctese al [área de cliente de OVHcloud](/links/manager).Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 Para añadir un registro SPF, haga clic en `Añadir un registro`{.action}.
 
@@ -117,7 +117,7 @@ Para añadir un registro SPF, haga clic en `Añadir un registro`{.action}.
 
 Se abrirá una ventana en la que podrá elegir entre varios registros DNS. Para añadir un SPF, existen dos posibilidades:
 
-- [Añadir un registro SPF](#spfrecordovhcloud)**y utilizar la configuración de OVHcloud**: para los usuarios que solo posean los productos de correo electrónico de OVHcloud en su dominio (excepto [Private Exchange](/links/web/emails-hosted-exchange){.external} y Exchange Provider).
+- [Añadir un registro SPF](#spfrecordovhcloud)**y utilizar la configuración de OVHcloud**: para los usuarios que solo posean los productos de correo electrónico de OVHcloud en su dominio (excepto [Private Exchange](/links/web/emails-hosted-exchange) y Exchange Provider).
 - [Añadir un registro SPF](#spfrecord) : para los usuarios que no dispongan del registro completo. Por ejemplo, solo tiene una dirección IP o el nombre del host del servidor de correo.
 - [Añadir un registro TXT](#txtrecord) : para usuarios avanzados o que ya dispongan del registro completo. Por ejemplo, su proveedor de soluciones de correo electrónico transmite el valor.
 
@@ -129,7 +129,7 @@ Se abrirá una ventana en la que podrá elegir entre varios registros DNS. Para 
 
 Ha elegido el registro `SPF`{.action} y quiere aplicar la configuración de OVHcloud. Esto le permite incluir todos los servidores de correo saliente de OVHcloud para las siguientes ofertas de correo electrónico:
 
-- Solo MX Plan o incluido en un plan de [hosting de OVHcloud](/links/web/hosting){.external} .
+- Solo MX Plan o incluido en un plan de [hosting de OVHcloud](/links/web/hosting) .
 - [Hosted Exchange](/links/web/emails-hosted-exchange)
 
 Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.action}, situado en la parte superior de la ventana de asistencia. Se mostrará la información relativa al SPF de OVHcloud. Haga clic en `Aceptar`{.action} para aplicar los cambios.
@@ -198,7 +198,7 @@ Para finalizar, haga clic en `Siguiente`{.action}. Asegúrese de que la informac
 
 ### Editar un registro SPF <a name="modifyspf"></a>
 
-Para modificar el SPF en la configuración de OVHcloud de su dominio, conéctese al [área de cliente de OVHcloud](/links/manager){.external}.Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Para modificar el SPF en la configuración de OVHcloud de su dominio, conéctese al [área de cliente de OVHcloud](/links/manager).Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 Se mostrará una tabla con la configuración del dominio en OVHcloud. Cada línea corresponde a un registro DNS. Localice su registro TXT o SPF en esta tabla y haga clic en el botón `..`{.action} para editar la entrada.
 
@@ -249,8 +249,8 @@ Acceda a la sección `Nombres de dominio`{.action} de la columna izquierda y sel
 
 ## Más información
 
-[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
+[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-[Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit){.external}.
+[Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

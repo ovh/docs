@@ -12,14 +12,14 @@ Il tuo database può contenere molte informazioni essenziali per il tuo sito. E'
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](/links/web/databases){.external} (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
+- Disporre di una [istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 > [!primary]
 >
-> Attenzione: le soluzioni [Web Cloud Databases](/links/web/databases){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> Attenzione: le soluzioni [Web Cloud Databases](/links/web/databases) non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
 > <br> - Attenzione: non sono presenti accessi "root".
 > <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
 >

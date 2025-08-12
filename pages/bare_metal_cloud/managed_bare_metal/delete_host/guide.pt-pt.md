@@ -12,7 +12,7 @@ Em certas situações, pode ser útil eliminar um servidor host do seu cluster, 
 
 ## Requisitos
 
-* Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+* Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
 * Aceder à interface de gestão vSphere.
 
 ## Instruções
@@ -65,4 +65,4 @@ O servidor host será eliminado em poucos minutos e deixará de aparecer no inve
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

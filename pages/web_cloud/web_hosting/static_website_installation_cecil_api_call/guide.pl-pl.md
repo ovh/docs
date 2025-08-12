@@ -6,7 +6,7 @@ updated: 2023-01-16
 
 ## Wprowadzenie
 
-Tutorial wyjaśnia, jak używać generatora strony [Cecil](https://cecil.app){.external} do wyświetlania zawartości dynamicznej strony. Podczas połączenia z API, aby pobrać i wyświetlić informacje na stronie generowanej przez **Cecil**.
+Tutorial wyjaśnia, jak używać generatora strony [Cecil](https://cecil.app) do wyświetlania zawartości dynamicznej strony. Podczas połączenia z API, aby pobrać i wyświetlić informacje na stronie generowanej przez **Cecil**.
 
 **Dowiedz się, jak dodać połączenie do zewnętrznego API na stronie statycznej.**
 
@@ -48,7 +48,7 @@ cd myWebSite
 
 ### Korzystanie z API OpenWeather
 
-W tym tutorialu użyjemy interfejsu API dostarczonego przez stronę [OpenWeather](https://openweathermap.org/){.external}. Pozwala on na poznanie informacji meteorologicznych w zależności od nazwy miasta.
+W tym tutorialu użyjemy interfejsu API dostarczonego przez stronę [OpenWeather](https://openweathermap.org/). Pozwala on na poznanie informacji meteorologicznych w zależności od nazwy miasta.
 
 Załóż konto na <https://home.openweathermap.org/users/sign_up><br>
 Po zatwierdzeniu konta (wysyłając e-mail z potwierdzeniem) przejdź do menu "My API keys". Klucz został wygenerowany domyślnie. Uzyskaj go i zachowaj do końca tego tutoriala.
@@ -185,7 +185,7 @@ Utwórz plik `script.js` wymieniony powyżej w katalogu `assets`:
 nano assets/script.js
 ```
 
-Zastąp wartość zmiennej `apiKey` kluczem pobranym wcześniej na stronie [OpenWeather](https://openweathermap.org/){.external}
+Zastąp wartość zmiennej `apiKey` kluczem pobranym wcześniej na stronie [OpenWeather](https://openweathermap.org/)
 
 ```javascript
 let apiKey = '123456789'; // Zastąp tą wartość
@@ -241,12 +241,12 @@ Tutorial przedstawia przykład integracji dynamicznych danych pochodzących ze �
 ## Sprawdź również
 
 - Kilka interfejsów API do przetestowania na Twojej stronie WWW
-    - [Numery API](http://numbersapi.com/#42){.external}
-    - [NASA](https://api.nasa.gov/){.external}
-    - [Nowe API](https://newsapi.org/){.external}
-    - [Poligon](https://polygon.io/){.external}
-    - lista publicznych [API](https://github.com/public-api-lists/public-api-lists){.external}
-- Komendy [Cecil](https://cecil.app/documentation/commands/){.external}.
+    - [Numery API](http://numbersapi.com/#42)
+    - [NASA](https://api.nasa.gov/)
+    - [Nowe API](https://newsapi.org/)
+    - [Poligon](https://polygon.io/)
+    - lista publicznych [API](https://github.com/public-api-lists/public-api-lists)
+- Komendy [Cecil](https://cecil.app/documentation/commands/).
 
 Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

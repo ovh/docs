@@ -6,7 +6,7 @@ updated: 2021-12-31
 
 ## Objective
 
-With our [vRack](/links/network/vrack){.external} solution, you can connect multiple OVHcloud products to one another, and connect them via one or more VLANs. Some configurations however are not compatible with the Hosted Private Cloud solution.
+With our [vRack](/links/network/vrack) solution, you can connect multiple OVHcloud products to one another, and connect them via one or more VLANs. Some configurations however are not compatible with the Hosted Private Cloud solution.
 
 **This guide explains Hosted Private Cloud compatibility with the OVHcloud vRack.**
 

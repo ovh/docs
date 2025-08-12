@@ -60,7 +60,7 @@ Then click `Connect`{.action}. Once you're logged in, you will have access to th
 
 ## Go further
 
-[Cyberduck documentation](https://trac.cyberduck.io/wiki/help/en){.external}
+[Cyberduck documentation](https://trac.cyberduck.io/wiki/help/en)
 
 [Getting started with the Swift API](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

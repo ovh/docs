@@ -5,7 +5,7 @@ updated: 2024-11-28
 
 ## Objective
 
-[Filebeat](https://github.com/elastic/beats/tree/master/filebeat){.external} is an open source file harvester, used to fetch logs files and can be easily setup to feed them into Logs Data Platform.
+[Filebeat](https://github.com/elastic/beats/tree/master/filebeat) is an open source file harvester, used to fetch logs files and can be easily setup to feed them into Logs Data Platform.
 
 The main benefits of Filebeat are it's resilient protocol to send logs, and a variety of modules ready-to-use for most of the common applications.
 
@@ -15,18 +15,18 @@ This guide will describe how to setup Filebeat OSS on your system for forwarding
 
 Note that in order to complete this tutorial, you should have at least:
 
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29)
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ## Instructions
 
 ### Setup Filebeat OSS 7.X in your system
 
-Filebeat supports many platforms as listed here [https://www.elastic.co/downloads/beats/filebeat](https://www.elastic.co/downloads/beats/filebeat){.external}
+Filebeat supports many platforms as listed here [https://www.elastic.co/downloads/beats/filebeat](https://www.elastic.co/downloads/beats/filebeat)
 
-You can decide to setup Filebeat OSS from a package or to compile it from source (you will need the latest [go compiler](https://golang.org/){.external} to compile it) or just download the binary to start immediately.
+You can decide to setup Filebeat OSS from a package or to compile it from source (you will need the latest [go compiler](https://golang.org/) to compile it) or just download the binary to start immediately.
 
-For this part, head to [Filebeat OSS download website](https://www.elastic.co/fr/downloads/past-releases#filebeat-oss){.external} to download the best version for your distribution.
+For this part, head to [Filebeat OSS download website](https://www.elastic.co/fr/downloads/past-releases#filebeat-oss) to download the best version for your distribution.
 
 The following configuration files have been tested on the latest version of Filebeat OSS compatible with OpenSearch (**7.12.1**).
 
@@ -34,11 +34,11 @@ The package will install the config file in the following directory: `/etc/fileb
 
 > [!warning]
 > Do not use a version superior than the 7.12 version. They are currently not compatible with OpenSearch.
-> More information in the [matrix compatibility documentation](https://opensearch.org/docs/latest/clients/agents-and-ingestion-tools/index/#compatibility-matrix-for-beats){.external}.
+> More information in the [matrix compatibility documentation](https://opensearch.org/docs/latest/clients/agents-and-ingestion-tools/index/#compatibility-matrix-for-beats).
 
 ### Configure Filebeat OSS 7.X on your system
 
-In the following example we will enable Apache and Syslog support, but you can easily prospect [anything else](https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-modules.html){.external}.
+In the following example we will enable Apache and Syslog support, but you can easily prospect [anything else](https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-modules.html).
 
 Filebeat expects a configuration file named **filebeat.yml** .
 
@@ -216,7 +216,7 @@ output.elasticsearch:
 
 This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your credentials **<username>** and **<password>** of your account. Like all Logs Data Platform APIs you can also use [tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens). Don't change **ldp-logs** since it is our special destination index.
 
-When you use our OpenSearch endpoint with filebeat, it will use the [ingest module](https://www.elastic.co/guide/en/logstash/7.12/use-ingest-pipelines.html){.external} to parse and structure the logs.
+When you use our OpenSearch endpoint with filebeat, it will use the [ingest module](https://www.elastic.co/guide/en/logstash/7.12/use-ingest-pipelines.html) to parse and structure the logs.
 
 #### Enable Apache Filebeat module
 
@@ -310,13 +310,13 @@ Note the type value (apache or syslog or apache-error) that indicates the source
 
 Filebeat is a handy tool to send the content of your current log files to Logs Data Platform. It offers a clean and easy way to send your logs without changing the configuration of your software. Don't hesitate to check the links below to master this tool.
 
-- Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html){.external}
-- Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html){.external}
+- Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html)
+- Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html)
 - Learn how to configure Filebeat and Logstash to add your own extra filters: [Dedicated input - Logstash](/pages/manage_and_operate/observability/logs_data_platform/ingestion_logstash_dedicated_input)
 
 ## Going further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](/links/manage-operate/ldp)

@@ -12,7 +12,7 @@ In certi casi può essere utile rimuovere un datastore dal cluster, ad esempio p
 
 ## Prerequisiti
 
-* Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
+* Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/)
 * Avere accesso all’interfaccia di gestione vSphere
 
 ## Procedura

@@ -13,7 +13,7 @@ The purpose of this guide is to describe the Secure Network Address Translation 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- The [Openstack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment
+- The [Openstack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) tool installed on your working environment
 - A [Public Cloud Floating IP](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)
 
 ## Concepts

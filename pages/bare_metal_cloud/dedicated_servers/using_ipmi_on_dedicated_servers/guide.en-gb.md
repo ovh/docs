@@ -41,7 +41,7 @@ To enable one of these methods, log in to your [OVHcloud Control Panel](/links/m
 
 ### Open KVM via Java applet <a name="applet-java"></a>
 
-You will need to ensure that Java is installed on your desktop for the Java applet to work. If you do not have Java installed, go to the [official page](https://www.java.com/en/download/){.external} to do so.
+You will need to ensure that Java is installed on your desktop for the Java applet to work. If you do not have Java installed, go to the [official page](https://www.java.com/en/download/) to do so.
 
 In the `Remote KVM`{.action} section of the OVHcloud Control Panel, click on `From a Java applet (KVM)`{.action}:
 

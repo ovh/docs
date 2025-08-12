@@ -80,7 +80,7 @@ If a datastore fails with an all path down status, you can set the actions to ta
 
 ##### VM Monitoring
 
-VM monitoring is available after [VMware tools](/pages/bare_metal_cloud/managed_bare_metal/vmware_tools_install){.external} is installed, in case of non-response via the **tools** (heartbeat signals) the virtual machine will be automatically restarted. Advanced configuration is possible for this feature (for example, reboot interval).
+VM monitoring is available after [VMware tools](/pages/bare_metal_cloud/managed_bare_metal/vmware_tools_install) is installed, in case of non-response via the **tools** (heartbeat signals) the virtual machine will be automatically restarted. Advanced configuration is possible for this feature (for example, reboot interval).
 
 ![](images/HAparam5.PNG){.thumbnail}
 
@@ -96,9 +96,9 @@ Admission control places constraints on resource use. Actions that may violate t
 
 The basis of the vSphere Admission control is the number of host failures that the cluster is allowed to tolerate and that continues to ensure failover. The failover capacity of hosts can be defined in three different ways:
 
-- [Cluster resource Percentage](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external}
-- [Slot Policy (powered-on VMs)](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external}
-- [Dedicated failover hosts](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external}
+- [Cluster resource Percentage](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html)
+- [Slot Policy (powered-on VMs)](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html)
+- [Dedicated failover hosts](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html)
 
 #### Heartbeat datastore
 
@@ -108,7 +108,7 @@ When the primary host of an HA cluster can not communicate with a subordinate ho
 
 Multiple advanced configuration settings can be used in your cluster.
 
-You can find settings on [this page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external}.
+You can find settings on [this page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html).
 
 ### HA rules
 

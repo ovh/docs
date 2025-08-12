@@ -26,7 +26,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Teleco
 
 Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
 
-Le champ `Version du matériel` indique la version actuellement installée sur votre appareil. Elle est basée sur les tags du [dépôt git overthebox](https://github.com/ovh/overthebox/tags){.external}.
+Le champ `Version du matériel` indique la version actuellement installée sur votre appareil. Elle est basée sur les tags du [dépôt git overthebox](https://github.com/ovh/overthebox/tags).
 
 ![overthebox](images/manager-version-2024.png){.thumbnail}
 

@@ -173,7 +173,7 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >>
 >> Mit dem DANE-Protokoll kann ein Client (Webbrowser, E-Mail-Client, FTP-Client, SSH-Client usw.) auf den TLSA-Eintrag zugreifen. So stellt er sicher, dass ein für einen Domainnamen verwendetes SSL/TLS-Zertifikat mit dem Zertifikat des gleichen Domainnamens identisch ist.
 >>
->> Weitere Informationen finden Sie bei Bedarf auf der Website der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>> Weitere Informationen finden Sie bei Bedarf auf der Website der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
 
 #### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>

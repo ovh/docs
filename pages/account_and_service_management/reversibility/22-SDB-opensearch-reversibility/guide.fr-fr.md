@@ -39,7 +39,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Infrastructure as a code | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | NA | **Entrante** : scripts à adapter pour d’autres fournisseurs <br>**Sortante** : réécriture nécessaire des configurations Terraform | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external} |
+| Infrastructure as a code | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | NA | **Entrante** : scripts à adapter pour d’autres fournisseurs <br>**Sortante** : réécriture nécessaire des configurations Terraform | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs) |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud | N/A | **Entrante** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise <br> **Sortante** : commander et configurer l'anti-DDoS chez le nouveau fournisseur | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures

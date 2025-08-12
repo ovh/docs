@@ -21,9 +21,9 @@ The functionalities of the product line Managed Document Database are divided in
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Document oriented database | Flexible JSON/BSON data storage for high scalability. | BSON, JSON, CSV | **Incoming**: Import via mongorestore/mongoimport. <br> **Outgoing**: Export via mongodump/mongoexport. | [MongoDB documentation](https://docs.mongodb.com/){.external} |
+| Document oriented database | Flexible JSON/BSON data storage for high scalability. | BSON, JSON, CSV | **Incoming**: Import via mongorestore/mongoimport. <br> **Outgoing**: Export via mongodump/mongoexport. | [MongoDB documentation](https://docs.mongodb.com/) |
 | Open-source MongoDB compatibility | Standard version of MongoDB without modification, facilitating portability. | Standard MongoDB (CLI, API, tools) | **Incoming**: Direct integration. <br> **Outgoing**: Full export without adaptation. | [MongoDB](/products/public-cloud-databases-mongodb) |
-| High availability | Replica sets ensuring redundancy and auto recovery. | N/A | **Incoming**: Configuration of replicas at import. <br> **Outgoing**: Export and deployment on another cluster. | [Replication](https://docs.mongodb.com/manual/replication/){.external} |
+| High availability | Replica sets ensuring redundancy and auto recovery. | N/A | **Incoming**: Configuration of replicas at import. <br> **Outgoing**: Export and deployment on another cluster. | [Replication](https://docs.mongodb.com/manual/replication/) |
 | Automatic backups | Daily backups with possibility of restoration. | Snapshots MongoDB | **Incoming**: Restoration possible. <br> **Outgoing**: Manual download/export required. | [MongoDB Backups](/pages/public_cloud/public_cloud_databases/mongodb_06_howto_backup_restore) |
 
 ### 2 - OVHcloud implementations

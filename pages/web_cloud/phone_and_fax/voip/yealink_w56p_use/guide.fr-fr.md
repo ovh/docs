@@ -11,7 +11,7 @@ updated: 2018-05-25
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie){.external}.
+- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
 - Avoir réceptionné le téléphone Yealing W56P fourni par OVH.
 
 ## En pratique

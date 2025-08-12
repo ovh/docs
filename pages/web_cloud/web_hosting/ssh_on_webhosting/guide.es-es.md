@@ -14,7 +14,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) con acceso SSH.
 - Disponer de las claves necesarias para conectarse por SSH al espacio de almacenamiento.
-- Conectarse al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `WebCloud`{.action}.
+- Conectarse al [área de cliente de OVHcloud](/links/manager), en la sección `WebCloud`{.action}.
 
 > [!warning]
 > 

@@ -12,7 +12,7 @@ Mithilfe des Content Delivery Network (CDN) können Sie die Antwortzeiten von We
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
 
 ## Beschreibung
 
@@ -20,11 +20,11 @@ Mithilfe des Content Delivery Network (CDN) können Sie die Antwortzeiten von We
 
 Bei der Bestellung erhalten Sie **1 TB** Traffic-Quota. Bitte beachten Sie, dass dieses nicht jeden Monat automatisch erneuert wird. Ist das Quota aufgebraucht (egal über welchen Zeitraum), muss neues Quota bestellt werden.
 
-Wenn Sie zusätzliches Quota benötigen, können Sie dieses direkt über Ihr [OVHcloud Kundencenter](/links/manager){.external} bestellen.
+Wenn Sie zusätzliches Quota benötigen, können Sie dieses direkt über Ihr [OVHcloud Kundencenter](/links/manager) bestellen.
 
 ![Quota hinzufügen](images/add_quota.png){.thumbnail}
 
-Die Preise für das Quota finden Sie auf der zugehörigen [Webseite](/links/network/cdn-infrastructure){.external}.
+Die Preise für das Quota finden Sie auf der zugehörigen [Webseite](/links/network/cdn-infrastructure).
 
 Sobald nur noch **100 GB** übrig sind, erhalten Sie eine automatische Warnung zu Ihrem Quota-Verbrauch, damit Sie rechtzeitig weitere Bandbreite bestellen können. Wenn Ihr Quota aufgebraucht ist, wird automatisch die `bypass`-Funktion aktiviert, bis Sie weiteres Quota bestellt haben.
 

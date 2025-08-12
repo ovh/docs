@@ -12,7 +12,7 @@ Es gibt mehrere Möglichkeiten, um virtuelle Maschinen über Ihr vSphere Interfa
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
+- Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Produkt.
 - Sie sind auf Ihrem [vSphere Interface](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface) eingeloggt.
 
 ## In der praktischen Anwendung

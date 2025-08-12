@@ -39,9 +39,9 @@ In base alle esigenze, è possibile personalizzare il nome dei server DNS del do
 
 ### 1 - Recupera i server DNS attualmente utilizzati dal tuo dominio <a name="step1"></a>
 
-È possibile recuperare i server DNS attualmente utilizzati dal dominio tramite lo strumento DNS online [Zonemaster](https://zonemaster.net/en/run-test){.external}.
+È possibile recuperare i server DNS attualmente utilizzati dal dominio tramite lo strumento DNS online [Zonemaster](https://zonemaster.net/en/run-test).
 
-Accedi al link [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, inserisci il tuo dominio senza i *www* (esempio: *domain.tld*) e seleziona il pulsante `Options`{.action} situato immediatamente sotto il modulo di inserimento del nome di dominio.
+Accedi al link [https://zonemaster.net](https://zonemaster.net/en/run-test), inserisci il tuo dominio senza i *www* (esempio: *domain.tld*) e seleziona il pulsante `Options`{.action} situato immediatamente sotto il modulo di inserimento del nome di dominio.
 
 Nelle opzioni disponibili, clicca direttamente sul pulsante `Fetch NS from parent zone`{.action}.
 

@@ -235,7 +235,7 @@ Uma vez validado, poderá aceder ao espaço de administração do seu site com o
 
 > [!primary]
 >
-> Para estabelecer ligações seguras (`https`), o servidor web deve ser protegido por uma Autoridade de Certificação como a [Let’s Encrypt](https://letsencrypt.org/){.external}, que propõe certificados gratuitos. Deverá instalar uma ferramenta cliente (como "Certbot") e configurar Apache. Sem esta etapa, o seu site só poderá aceitar pedidos `http`.
+> Para estabelecer ligações seguras (`https`), o servidor web deve ser protegido por uma Autoridade de Certificação como a [Let’s Encrypt](https://letsencrypt.org/), que propõe certificados gratuitos. Deverá instalar uma ferramenta cliente (como "Certbot") e configurar Apache. Sem esta etapa, o seu site só poderá aceitar pedidos `http`.
 > 
 > Em alternativa, a OVHcloud oferece-lhe a solução [SSL Gateway](/links/web/ssl-gateway). Para mais informações, consulte o [nosso manual](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 

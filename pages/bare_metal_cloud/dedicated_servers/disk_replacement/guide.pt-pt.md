@@ -84,7 +84,7 @@ Portanto, a linha importante no nosso caso será a seguinte:
 
 #### Servidor com recurso a um RAID por hardware
 
-Se possui um servidor que recorre a RAID por hardware, consulte o guia [«RAID por hardware» - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} e realize o procedimento adequado ao seu tipo de controlador RAID para encontrar os caminhos de acesso aos discos.
+Se possui um servidor que recorre a RAID por hardware, consulte o guia [«RAID por hardware» - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard) e realize o procedimento adequado ao seu tipo de controlador RAID para encontrar os caminhos de acesso aos discos.
 
 Quando tiver encontrado o caminho de acesso aos discos, pode testá-los da seguinte forma através do comando `smartctl`:
 
@@ -199,7 +199,7 @@ Se possui um servidor em RAID por software, convém que execute manualmente a re
 
 [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[RAID por hardware - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
+[RAID por hardware - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 [Modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
