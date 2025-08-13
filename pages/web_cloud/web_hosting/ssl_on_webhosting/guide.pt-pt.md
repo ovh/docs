@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Gerir um certificado SSL"
 excerpt: "Saiba como gerir um certificado SSL no alojamento web da OVHcloud"
-updated: 2025-06-16
+updated: 2025-11-05
 ---
 
 ## Objetivo

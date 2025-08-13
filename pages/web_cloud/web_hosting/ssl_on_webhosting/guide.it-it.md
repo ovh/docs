@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Gestire un certificato SSL"
 excerpt: "Questa quiga ti mostra come attivare e utilizzare un certificato SSL sugli hosting Web OVHcloud"
-updated: 2025-06-16
+updated: 2025-11-05
 ---
 
 ## Obiettivo
