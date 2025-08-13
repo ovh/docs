@@ -24,7 +24,7 @@ For more information on UEFI, consult the following [guide](https://uefi.org/abo
 
 ## Instructions
 
-When you purchase a new server, you might feel the need to perform a series of tests and actions. One of those actions could be simulating a disk failure in order to understand the process of rebuilding the raid and prepare yourself in case this happens.
+When you purchase a new server, you might feel the need to perform a series of tests and actions. One of those actions could be simulating a disk failure in order to understand the process of rebuilding the RAID and prepare yourself in case this happens.
 
 ### Basic Information
 
@@ -253,23 +253,23 @@ nvme0n1
 
 From the results above, we can see two partitions (**nvme0n1p1** and **nvme1n1p1**), with identical size (504.9M). Both partitions have the LABEL: `EFI_SYSPART` but only one is mounted on `/boot/efi`.
 
-***Does the content of EFI partition change regularly?***
+***Does the content of the EFI partition change regularly?***
 
-In general, the contents of this partition do not change much, except when there are relevant updates such as grub/kernel updates or even simple `apt` or `yum` updates.
+In general, the contents of this partition do not change much, except in the case of relevant updates such as grub/kernel updates or even simple apt or yum updates.
 
-In this case, we recommend running an automatic or manual script keep the partitions in sync. This is because in case of the failure of the main disk on which this partition in mounted, you can use the rescue mode to recover it. 
+In this case, we recommend running an automatic or manual script to synchronize the partitions. This is because, in the event of a failure of the main disk on which this partition is mounted, you can use rescue mode to facilitate the recovery process.
 
 ***What happens if my main disk fails and is replaced?***
 
-If the main disk on your server fails and it is replaced. The server will be rebooted in rescue mode in other for you to rebuild the raid. Since the EFI partition is not mirrored, the server will not be able to boot on the secondary disk (in most cases). You can rebuild the raid in rescue mode, recreate the EFI partition and the disk should be able to boot.
+If the main disk on your server fails and it is replaced. The server will be rebooted in rescue mode in other for you to rebuild the RAID. Since the EFI partition is not mirrored, the server will not be able to boot on the secondary disk (in most cases). In rescue mode, you must rebuild the RAID, recreate the EFI partition on the new disk, copy the contents of the healthy partition to the new partition, and the disk should then be able to boot.
 
-***What if the main disk fails and I did not synchronise my EFI partitions after a major update (kernel/grub)?*** 
+***What happens if the main disk fails and I haven't synchronised my EFI partitions after a major update (kernel/grub)?***
 
-If this is the case, you will have to rebuild the raid, create the EFI partition on the new disk and install the grub/kernel update in rescue mode. If you are not able to perform some manipulations, we recommend contacting a professional service.
+If this is the case, you will need to rebuild the RAID, create the EFI partition on the new disk, and install the grub/kernel update in rescue mode. If you are unable to perform certain operations, we recommend that you contact a professional service.
 
-***How can I keep my EFI partitions synchronized or how often should I sychronize them?***
+***How can I synchronise my EFI partitions, and how often should I synchronise them?***
 
-We recommend synchronizing both partitions daily. Below is a script you can use to manually synchronize your EFI partitions. You can also run an automated script to synchronize the partitions daily or when the service is booted.
+We recommend that you synchronise the two partitions regularly after each major update or on a daily basis. Below is a script that you can use to manually synchronise your EFI partitions. You can also run an automated script to synchronise the partitions daily or whenever the service boots up.
 
 ```sh
 set -euo pipefail
@@ -291,9 +291,9 @@ while read -r partition; do
 done < <(blkid -o device -t LABEL=EFI_SYSPART)
 ```
 
-In the script above, the `MAIN_PARTITION` is the one mounted on /boot/efi and `MOUNTPOINT` is where you want to sync the contents.
+In the script above, `MAIN_PARTITION` is the one mounted on /boot/efi and `MOUNTPOINT` is the location where you want to synchronise the content.
 
-Before you run the script, make sure `rsync` is installed:
+Before you run the script, make sure `rsync` is installed on your system:
 
 **Debian/Ubuntu**
 
@@ -510,13 +510,13 @@ The following steps document the RAID rebuild in rescue mode.
 
 > [!warning]
 >
-> For most servers in software RAID, after a disk replacement, the server is able to reboot in normal mode (on the healthy disk) and the rebuild can be done in normal mode. However, if the server is not able to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode to proceed with the raid rebuild.
+> For most servers in software RAID, after a disk replacement, the server is able to reboot in normal mode (on the healthy disk) and the rebuild can be done in normal mode. However, if the server is not able to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode to proceed with the RAID rebuild.
 >
-> If your server is able to boot in normal mode after the RAID rebuilding, simply proceed with the steps from [this section]().
+> If your server is able to boot in normal mode after the RAID rebuilding, simply proceed with the steps from [this section](#rebuilding-the-raid-after-the-secondary-disk-is-replaced).
 
 #### Rebuilding the RAID after the main disk is replaced
 
-Here, we assume that the EFI partitions have been kept in sync (including after GRUB/kernel updates. If that is not your case, we have provided additional information on how to proceed).
+Here, we assume that the EFI partitions have been kept in sync (including after GRUB/kernel updates. If that is not your case, we have provided additional information in this guide on how to proceed).
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
 
@@ -524,7 +524,7 @@ Once the disk has been replaced, we need to copy the partition table from the he
 > **For GPT partitions**
 >>
 >> ```sh
->> sgdisk -R /dev/nvmeXnX /dev/nvmeAnA
+>> sgdisk -R /dev/nvmeXnX /dev/nvmeXnX
 >> ```
 >>
 >> The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`
@@ -628,7 +628,7 @@ nvme0n1
 └─nvme0n1p4
 ```
 
-From the above results, we can see that the partitions of our newly added disk have been properly added to the RAID, however, the EFI partition was not duplicated, which is normal since it is not included in the RAID. We also see that the [SWAP] partition **nvme0n1p4** does not have a label anymore (this will not be the same for all cases, especially if you customise your partitions before your server's installation).
+Based on the above results, we can see that the partitions on our newly added drive have been correctly added to the RAID. However, the EFI partition has not been duplicated, which is normal since it is not included in the RAID. We also note that the [SWAP] partition **nvme0n1p4** no longer has a label (this will not be the case in all instances, especially if you customised your partitions before installing your server).
 
 > [!warning]
 > The examples above are merely illustrating the necessary steps based on a default server configuration. The information in the output table depends on your server's hardware and its partition scheme. When in doubt, consult the documentation of your operating system.
@@ -638,9 +638,7 @@ From the above results, we can see that the partitions of our newly added disk h
 
 #### Recreating the EFI partition
 
-The next step is to format **nvme0n1p1** to create the EFI partition, then replicate the content of this partition from the healthy drive (in our example: nvme1n1) to the new one.
-
-This is possible because we kept the partitions in sync while the server was running normally before the disk failure. So we have both partitions up to date.
+The next step is to format **nvme0n1p1** to create the EFI partition, then replicate the content from the healthy partition (in our example: nvme1n1p1) to the new one.
 
 > [!warning]
 > If there was a kernel or grub update or a major update and both partitions were not synchronized, consult the following guide [Repairing the GRUB bootloader]() once you are done creating the new EFI partition.
@@ -671,7 +669,7 @@ mount /dev/nvme1n1p1 old
 mount /dev/nvme0n1p1 new
 ```
 
-Next, we copy the files from `old` to `new`. Depending on your operating system, you will have a similar output. Here we are using debian:
+Next, we copy the files from the `old` folder to `new` one. Depending on your operating system, you may have a different output. Here we are using debian:
 
 ```sh
 rsync -axv old/ new/
@@ -689,7 +687,7 @@ Next, we mount the partition containing our files on `/mnt`. In our example, tha
 mount /dev/md3 /mnt
 ```
 
-Next, we mount the following directories to make sure any manipulation we make in the chroot environment works properly:
+We mount the following directories to make sure any manipulation we make in the chroot environment works properly:
 
 ```sh
 mount --types proc /proc /mnt/proc
@@ -713,9 +711,11 @@ blkid -t LABEL=EFI_SYSPART
 /dev/nvme0n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="521F-300B" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="02bf2b2d-7ada-4461-ba50-07683519f65d"
 ```
 
-/// details | **GRUB/kernel update with EFI partitions not synchronized**
+####  GRUB/kernel update with EFI partitions not synchronized
 
-If GRUB/kernal updates were made and the EFI partitions were not kept in sync, this additional step could necessary.
+/// details | Unfold this section
+
+If GRUB/kernel updates were done and the EFI partitions weren't synced, this extra step might be needed.
 
 Still in the `chroot` environment, we create the `/boot/efi` folder in order to mount the EFI partition **nvme0n1p1** in it:
 
@@ -725,7 +725,7 @@ mkdir /boot/efi
 mount /dev/nvme0n1p1 /boot/efi
 ```
 
-Next, we install the grub bootloader to make sure the server can reboot in normal mode on the new disk (you won't have to do this if the disk replaced is the secondary disk. Simply duplicate the EFI partition and proceed to the RAID rebuild, then enable the [SWAP] partition (if applicable)):
+Next, we install the grub bootloader to make sure the server can reboot in normal mode on the new disk (you won't have to do this if the disk replaced is the secondary disk. Simply duplicate the EFI partition and proceed to the RAID rebuild, then enable the [SWAP](#swap-partition) partition (if applicable)):
 
 ```sh
 grub-install --efi-directory=/boot/efi /dev/nvme0n1p1
@@ -861,7 +861,9 @@ umount -a
 
 We have now successfully completed the RAID rebuild on the server and we can now reboot the server in normal mode.
 
-/// details | **Rebuilding the RAID after the secondary disk is replaced**
+#### Rebuilding the RAID after the secondary disk is replaced
+
+/// details | Unfold this section
 
 The following are to be followed in normal mode since it is the secondary disk that is being replaced and the server will be booted in normal mode. Our secondary disk is **nvme1n1**.
 

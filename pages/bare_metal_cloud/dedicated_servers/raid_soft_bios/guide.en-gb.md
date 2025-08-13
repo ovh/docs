@@ -28,18 +28,20 @@ In a command line session, type the following code to determine the current RAID
 
 ```sh
 cat /proc/mdstat
+
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md3 : active raid1 nvme1n1p3[1] nvme0n1p3[0]
-      497875968 blocks super 1.2 [2/2] [UU]
-      bitmap: 2/4 pages [8KB], 65536KB chunk
+md2 : active raid1 nvme0n1p2[1] nvme0n1p20]
+      931954688 blocks super 1.2 [2/2] [UU]
+      bitmap: 2/7 pages [8KB], 65536KB chunk
 
-md2 : active raid1 nvme1n1p2[1] nvme0n1p2[0]
-      1046528 blocks super 1.2 [2/2] [UU]
-
+md4 : active raid1 nvme0n1p4[0] nvme1n1p4[1]
+      1020767232 blocks super 1.2 [2/2] [UU]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+      
 unused devices: <none>
 ```
 
-This command shows us that we have two software RAID devices currently set up, with **md3** being the largest one. This array consists of two partitions, which are known as **nvme1n1p3** and **nvme0n1p3**. 
+This command shows us that we have two software RAID devices currently set up, with **md4** being the largest one. This array consists of two partitions, which are known as **nvme1n1p4** and **nvme0n1p4**. 
 
 The [UU] means that all the disks are working normally. A `_` would indicate a failed disk.
 
@@ -47,14 +49,16 @@ If you have a server with SATA disks, you would get the following results:
 
 ```sh
 cat /proc/mdstat
+
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md3 : active raid1 sda3[0] sdb3[1]
-      3904786432 blocks super 1.2 [2/2] [UU]
-      bitmap: 2/30 pages [8KB], 65536KB chunk
+md2 : active raid1 sda2[1] sdb2[0]
+      931954688 blocks super 1.2 [2/2] [UU]
+      bitmap: 2/7 pages [8KB], 65536KB chunk
 
-md2 : active raid1 sda2[0] sdb2[1]
-      1046528 blocks super 1.2 [2/2] [UU]
-
+md4 : active raid1 sda4[0] sdb4[1]
+      1020767232 blocks super 1.2 [2/2] [UU]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+      
 unused devices: <none>
 ```
 
@@ -252,15 +256,19 @@ sudo mdadm --manage /dev/md2 --remove /dev/sda2
 ```
 
 ```sh
-sudo mdadm --manage /dev/md3 --remove /dev/sda3
+sudo mdadm --manage /dev/md4 --remove /dev/sda4
 
-# mdadm: hot removed /dev/nvme0n1p3 from /dev/md3
+# mdadm: hot removed /dev/sda4 from /dev/md4
 ```
 
 To make sure that we get a disk that is similar to an empty disk, we use the following command. Replace **sda** with your own values:
 
 ```sh
-sudo shred -s10M -n1 /dev/sda
+shred -s10M -n1 /dev/sda1
+shred -s10M -n1 /dev/sda2
+shred -s10M -n1 /dev/sda3
+shred -s10M -n1 /dev/sda4
+shred -s10M -n1 /dev/sda
 ```
 
 The disk now appears as a new one:
@@ -293,7 +301,7 @@ The following steps document the RAID rebuild in rescue mode.
 
 #### Rebuilding the RAID after the main disk is replaced
 
-Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sdb ) to the new one (sda).
+Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sdb) to the new one (sda).
 
 > [!tabs]
 > **For GPT partitions**
@@ -396,17 +404,15 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-The RAID has now been rebuilt.
-
 #### Adding the label to the SWAP partition (if applicable)
 
-First, we mount the partition containing our files on `/mnt`. In our example, that partition is `md4`.
+Once the RAID rebuild is complete, we mount the partition containing our files on `/mnt`. In our example, that partition is `md4`.
 
 ```sh
 mount /dev/md4 /mnt
 ```
 
-We add the label back to our swap partition:
+We add the label back to our swap partition with the command `mkswap /dev/sdX -L swap-sdX`:
 
 ```sh
 mkswap /dev/sda4 -L swap-sda4
@@ -427,7 +433,7 @@ mount --bind /run /mnt/run
 mount --make-slave /mnt/run
 ```
 
-Next, we access the `chroot` environment again:
+Next, we access the `chroot` environment:
 
 ```sh
 chroot /mnt
@@ -452,7 +458,7 @@ blkid /dev/sdb4
 /dev/sdb4: LABEL="swap-sdb4" UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a" TYPE="swap" PARTLABEL="logical" PARTUUID="d037c35f-2ddb-40d5-be33-31cc496fe54b"
 ```
 
-Next, we replace the old UUID of the swap partition (**nvme0n1p4)** with the new one in `/etc/fstab`:
+Next, we replace the old UUID of the swap partition (**sda4**) with the new one in `/etc/fstab`:
 
 ```sh
 nano etc/fstab
@@ -482,6 +488,12 @@ swap                     : ignored
 swap                     : ignored
 ```
 
+We reload the system:
+
+```sh
+systemctl daemon-reload
+```
+
 We enable the swap partition:
 
 ```sh
@@ -505,7 +517,7 @@ We have now successfully completed the RAID rebuild on the server and we can now
 
 /// details | **Rebuilding the RAID after the secondary disk is replaced**
 
-The following steps are done in normal mode since it is the secondary disk that is was replaced. In our example, our secondary disk is named **sdb**.
+The following steps are done in normal mode. In our example, our secondary disk is named **sdb**.
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sda) to the new one (sdb).
 
