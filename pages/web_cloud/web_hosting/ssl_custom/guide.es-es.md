@@ -183,7 +183,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
 >>
 > **Etapa 4**
 >>
->> Cuando aparezca la pestaña, haga clic en el botón `Importar su propio certificado SSL`{.action}.
+>> Cuando aparezca la pestaña, haga clic en el botón `Importación de su propio certificado SSL`{.action}.
 >>
 >> ![SSL personalizado](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate.png){.thumbnail}
 >>

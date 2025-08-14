@@ -28,7 +28,6 @@ Możliwe, że w zależności od Twojej sytuacji będziesz chciał zainstalować 
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jednak w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). OVHcloud nie może udzielić Ci wsparcia w zakresie **instalacji lub subskrypcji certyfikatu SSL innego niż [ten proponowany przez OVHcloud](/links/web/hosting-options-ssl)**. Więcej informacji znajduje się w sekcji "[Sprawdź również](#go-further)" tego przewodnika.
->
 
 ### 1 - Uzyskanie certyfikatu Signing Request (CSR) SSL <a name="step-1"></a>
 
@@ -161,33 +160,46 @@ Jeśli potrzebujesz pomocy, zapoznaj się z naszymi przewodnikami:
 
 Po spełnieniu wszystkich tych wymagań możesz rozpocząć instalację spersonalizowanego certyfikatu SSL na Twoim hostingu.
 
-W tym celu wykonaj następujące czynności:
+Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **5**:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Hosting`{.action}.
-4. Wybierz odpowiedni hosting.
-5. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}.
-6. Przejdź do ramki zatytułowanej `Konfiguracja`.
-7. Po prawej stronie wzmianki `Certyfikat SSL` kliknij przycisk `...`{.action}, a następnie `Zamów certyfikat SSL`{.action}.
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
-
-W oknie, które się pojawi wybierz z listy dostępnych opcji opcję `Import własnego certyfikatu SSL`{.action}, następnie kliknij `Dalej`{.action}.
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-custom.png){.thumbnail}
-
-Pojawi się następujące okno z 3 formularzami do wypełnienia:
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-2-custom-empty.png){.thumbnail}
-
-- `Skopiuj zawartość swojego certyfikatu (tylko RSA)`{.action} : wprowadź treść pliku **certificate.crt** dostarczonego przez Twojego dostawcę SSL, w tym słowa `-----BEGIN CERTIFICATE-----` i `-----END CERTIFICATE-----` (lub ich odpowiedniki). Szyfrowanie RSA to standardowe szyfrowanie certyfikatów SSL.
-- `Skopiuj zawartość swojego klucza prywatnego (nie szyfrowanego)`{.action} : wprowadź treść pliku **private.key** dostarczonego przez Twojego dostawcę SSL, w tym słowa `-----BEGIN RSA PRIVATE KEY-----` i `-----END RSA PRIVATE KEY-----` (lub ich odpowiedniki). Informacja *nie szyfrowanego* oznacza, że klucz prywatny nie może być chroniony hasłem lub hasłem. W przeciwnym razie instalacja certyfikatu nie powiedzie się.
-- `Skopiuj zawartość łańcucha certyfikatów`{.action} : wprowadź zawartość pliku **ca_bundle.crt** dostarczonego przez Twojego dostawcę SSL, w tym słowa `-----BEGIN CERTIFICATE-----` i `-----END CERTIFICATE-----` (lub ich odpowiedniki).
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-2-custom.png){.thumbnail}
-
-Po wypełnieniu 3 formularzy kliknij przycisk `Zatwierdź`{.action}, aby zakończyć import spersonalizowanego certyfikatu SSL na hostingu.
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
+>>
+>> ![Certyfikaty SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Kiedy pojawi się zawartość karty, kliknij przycisk `Import własnego certyfikatu SSL`{.action}.
+>>
+>> ![Spersonalizowany SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate.png){.thumbnail}
+>>
+> **Etap 5**
+>>
+>> W następnym oknie zostanie wyświetlony formularz z 3 polami do wypełnienia:
+>>
+>> ![Zamówienie certyfikatu SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window.png){.thumbnail}
+>>
+>> - `Skopiuj zawartość swojego certyfikatu (tylko RSA)`{.action} : wprowadź treść pliku **certificate.crt** dostarczonego przez Twojego dostawcę SSL, w tym słowa `-----BEGIN CERTIFICATE-----` i `-----END CERTIFICATE-----` (lub ich odpowiedniki). Szyfrowanie RSA to standardowe szyfrowanie certyfikatów SSL.
+>> - `Skopiuj zawartość swojego klucza prywatnego (nie szyfrowanego)`{.action} : wprowadź treść pliku **private.key** dostarczonego przez Twojego dostawcę SSL, w tym słowa `-----BEGIN RSA PRIVATE KEY-----` i `-----END RSA PRIVATE KEY-----` (lub ich odpowiedniki). Informacja *nie szyfrowanego* oznacza, że klucz prywatny nie może być chroniony hasłem lub hasłem. W przeciwnym razie instalacja certyfikatu nie powiedzie się.
+>> - `Skopiuj zawartość łańcucha certyfikatów`{.action} : wprowadź zawartość pliku **ca_bundle.crt** dostarczonego przez Twojego dostawcę SSL, w tym słowa `-----BEGIN CERTIFICATE-----` i `-----END CERTIFICATE-----` (lub ich odpowiedniki).
+>>
+>> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
+>>
+>> Po wypełnieniu 3 formularzy kliknij przycisk `Zatwierdź`{.action}, aby zakończyć import spersonalizowanego certyfikatu SSL na hostingu.
 
 Jeśli certyfikat SSL został poprawnie wygenerowany przez dostawcę SSL i wymagania początkowe są spełnione, pojawia się komunikat informujący, że aktywacja certyfikatu SSL na Twoim hostingu jest w toku.
 
@@ -202,18 +214,32 @@ Jeśli certyfikat SSL został poprawnie wygenerowany przez dostawcę SSL i wymag
 
 Instalacja potrwa kilka minut.
 
-Aby sprawdzić, czy instalacja została zakończona, wykonaj następujące czynności:
+Aby sprawdzić, czy instalacja została zakończona, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Hosting`{.action}.
-4. Wybierz odpowiedni hosting.
-5. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}.
-6. Przejdź do ramki zatytułowanej `Konfiguracja`.
-
-Po zakończeniu operacji odnajdziesz, pod adnotacją `Certyfikat SSL`, taką samą wartość jak ta: `Tak - CUSTOM - CUSTOM`.
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-certificate-custom-enable.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
+>>
+>> ![Certyfikaty SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Kiedy pojawi się zawartość karty, sprawdź, czy każda domena i/lub subdomena figuruje w tabeli z typem certyfikatu SSL `Custom`.
+>>
+>> ![Tabela zarządzania certyfikatami SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
 
 Twój niestandardowy certyfikat SSL jest teraz zainstalowany i aktywny. Od tej chwili możesz korzystać z niej na Twojej stronie WWW, przechodząc na przykład do [strony WWW HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
