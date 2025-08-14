@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Instalar um certificado SSL personalizado"
 excerpt: "Saiba como importar e instalar um certificado SSL personalizado no seu alojamento Web OVHcloud"
-updated: 2025-06-16
+updated: 2025-11-05
 ---
 
 ## Objetivo
@@ -17,7 +17,7 @@ Em função da sua situação, é possível que pretenda instalar um certificado
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Encomendar ou dispor de um [alojamento partilhado OVHcloud](/links/web/hosting) no qual já não está instalado nenhum certificado SSL.
+- Encomendar ou dispor de um [alojamento partilhado OVHcloud](/links/web/hosting).
 - Encomendar ou dispor de um [nome de domínio](/links/web/domains) e dispor de direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
 - Ter OpenSSL ou uma aplicação compatível instalada localmente no seu dispositivo.
 
@@ -30,11 +30,11 @@ Em função da sua situação, é possível que pretenda instalar um certificado
 > Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). De facto, não poderemos fornecer-lhe assistência no **instalação ou subscrição de um certificado SSL que não seja o [certificado SSL proposto pela OVHcloud](/links/web/hosting-options-ssl)**. Mais informações na secção "[Quer saber mais?](#go-further)" deste guia.
 >
 
-### Etapa 1 - Obter um Certificate Signing Request (CSR) SSL <a name="step-1"></a>
+### 1 - Obter um Certificate Signing Request (CSR) SSL <a name="step-1"></a>
 
 > [!primary]
 >
-> Esta etapa é opcional se já tiver gerado e recuperado o certificado SSL junto do seu fornecedor SSL ou se este último propuser a geração do CSR durante a encomenda do certificado SSL. Se este for o caso, passe diretamente para [etapa 2](#step-2).
+> Esta etapa é opcional se já tiver gerado e recuperado o certificado SSL junto do seu fornecedor SSL ou se este último propuser a geração do CSR durante a encomenda do certificado SSL. Se este for o caso, passe diretamente para [parte 2](#step-2).
 
 #### 1.1 - Gerar a chave privada e a CSR em linha de comandos <a name="step-1.1"></a>
 
@@ -72,7 +72,7 @@ Para recuperar a chave privada gerada anteriormente e sempre a partir do seu ter
 cat my_private.key
 ```
 
-Substitua o termo `my_private` pelo nome do ficheiro que escolheu anteriormente no [etapa 1.1](#step-1.1) deste guia.
+Substitua o termo `my_private` pelo nome do ficheiro que escolheu anteriormente no [parte 1.1](#step-1.1) deste guia.
 
 A chave privada aparece no seu terminal desta forma:
 
@@ -96,7 +96,7 @@ Para recuperar a CSR gerada anteriormente e sempre a partir do seu terminal, exe
 cat your_file_name.csr
 ```
 
-Substitua o termo `your_file_name` pelo nome do ficheiro que escolheu anteriormente no [etapa 1.1](#step-1.1) deste guia.
+Substitua o termo `your_file_name` pelo nome do ficheiro que escolheu anteriormente no [parte 1.1](#step-1.1) deste guia.
 
 A CSR aparece no seu terminal da seguinte forma:
 
@@ -116,59 +116,48 @@ Guarde este ficheiro. Guarde-o preciosamente para a continuação deste manual, 
 >
 > O ficheiro que contém a chave privada e o ficheiro que contém a CSR estão ligados e não são permutáveis. Se tiver gerado várias chaves privadas ou vários CSR, certifique-se de que não mistura as suas diferentes chaves privadas com os seus diferentes CSR.
 
-### Etapa 2 - Encomendar o certificado SSL junto do seu fornecedor SSL <a name="step-2"></a>
+### 2 - Encomendar o certificado SSL junto do seu fornecedor SSL <a name="step-2"></a>
 
 > [!primary]
 >
-> Esta etapa é opcional se já tiver gerado e recuperado o certificado SSL junto do seu fornecedor SSL. Se este for o caso, passe diretamente para [etapa 3](#step-3).
+> Esta etapa é opcional se já tiver gerado e recuperado o certificado SSL junto do seu fornecedor SSL. Se este for o caso, passe diretamente para [parte 3](#step-3).
 
-Encomende o certificado SSL junto do seu fornecedor SSL. Caso seja necessário, transmita-lhe o conteúdo da CSR gerada na [etapa 1](#step-1) deste guia. Se ele solicitar a chave privada gerada na [etapa 1](#step-1), transmita-a também.
+Encomende o certificado SSL junto do seu fornecedor SSL. Caso seja necessário, transmita-lhe o conteúdo da CSR gerada na [parte 1](#step-1) deste guia. Se ele solicitar a chave privada gerada na [parte 1](#step-1), transmita-a também.
 
 Após a sua encomenda, o fornecedor do certificado SSL deve fornecer-lhe 3 ficheiros :
 
-- o ficheiro `certificate.crt`;
-- o ficheiro `private.key`;
-- o ficheiro `ca_bundle.crt`.
+- O ficheiro `certificate.crt`.
+- O ficheiro `private.key`.
+- O ficheiro `ca_bundle.crt`.
 
-O conteúdo de cada um dos ficheiros será necessário para realizar a [etapa 3](#step-3) deste guia.
+O conteúdo de cada um dos ficheiros será necessário para realizar a [parte 3](#step-3) deste guia.
 
 <a name="3files"></a>
 
 > [!warning]
 >
-> Alguns fornecedores SSL entregam o conteúdo dos ficheiros `certificate.crt` e `ca_bundle.crt` num único ficheiro. Deverá separar o conteúdo deste ficheiro de forma a reformar os ficheiros `certificate.crt` e `ca_bundle.crt`. Isto antes de realizar a [etapa 3](#step-3) deste guia.
+> Alguns fornecedores SSL entregam o conteúdo dos ficheiros `certificate.crt` e `ca_bundle.crt` num único ficheiro. Deverá separar o conteúdo deste ficheiro de forma a reformar os ficheiros `certificate.crt` e `ca_bundle.crt`. Isto antes de realizar a [parte 3](#step-3) deste guia.
 >
-> Outros fornecedores SSL entregam o ficheiro `ca_bundle.crt` em várias partes/ficheiros. Deverá concatenar os conteúdos destes ficheiros de forma a reformar um único ficheiro `ca_bundle.crt` e seguir a [etapa 3](#step-3) deste guia.
+> Outros fornecedores SSL entregam o ficheiro `ca_bundle.crt` em várias partes/ficheiros. Deverá concatenar os conteúdos destes ficheiros de forma a reformar um único ficheiro `ca_bundle.crt` e seguir a [parte 3](#step-3) deste guia.
 >
 > Se estiver preocupado com esta situação e tiver problemas na realização destas operações, contacte o seu fornecedor SSL. Especifique-lhe que o conjunto do conteúdo que lhe concedeu deve ser repartido unicamente em 3 ficheiros (`certificate.crt`, `ca_bundle.crt` e `private.key`) para que possa proceder à instalação do certificado SSL.
 
-### Etapa 3 - Instalar o certificado SSL personalizado no seu alojamento web <a name="step-3"></a>
+### 3 - Instalar o certificado SSL personalizado no seu alojamento web <a name="step-3"></a>
 
 Se iniciar diretamente a leitura deste manual nesta etapa, uma vez que já dispõe de um certificado SSL externo encomendado junto de um fornecedor SSL, verifique que dispõe apenas dos 3 ficheiros seguintes : `certificate.crt`, `private.key` e `ca_bundle.crt`. Se não estiver, consulte as informações [acima](#3files).
 
 **Antes de finalizar a instalação do certificado SSL no alojamento web**, verifique se **todos os domínios e/ou subdomínios** abrangidos pelo seu certificado SSL:
 
 - apontam para o endereço IP do seu alojamento web.
-- estão declarados em multi-site no seu alojamento web.
+- são declarados em multi-site no seu alojamento web.
+- não possuem já um certificado SSL ativo.
 
-> [!primary]
->
-> **Informações sobre a migração para a nova interface de gestão de certificados SSL:**
->
-> O resto deste guia destina-se aos clientes cujos serviços de alojamento web ainda não migraram para a nova interface de gestão dos certificados SSL.
-> Para detetar se esta migração foi efetuada, aceda ao seu alojamento web na Área de Cliente OVHcloud e verifique a presença do separador `Certificados SSL`.
-> Se estiver presente o separador `Certificados SSL`, o seu serviço já migrou para a nova interface de gestão. Neste caso, consulte diretamente [este manual](/pages/web_cloud/web_hosting/ssl_management) para gerir o seu certificado SSL.
->
-> Por razões técnicas, nem todos os serviços de alojamento web de todos os nossos clientes podem ser migrados de uma só vez. Esta migração é, por isso, repartida durante algumas semanas e é realizada de forma automática, sem qualquer incidência no funcionamento dos seus serviços de alojamento web, e sem qualquer intervenção ou ação necessária da sua parte.
->
-> A prazo, todos os serviços de alojamento web funcionarão com a nova interface de gestão dos certificados SSL.
+Para confirmar, consulte os guias abaixo sempre que necessário:
 
-Verifique também o seguinte:
-
-- A casa `SSL` não deve ser selecionada aquando da adição em multi-site de um nome de domínio/subdomínio afetado pelo seu certificado SSL externo.
-- O estado `A gerar / atualizar` ou `Ativado` não deve estar presente para cada um dos nomes de domínio/subdomínios abrangidos pelo seu certificado SSL externo.
-
-Se necessário, e para ficar a saber, consulte os nossos manuais "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" e "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+- [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+- [Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+- [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Alojamento web - Gerir um certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), parte **Desativar um certificado SSL num alojamento web**.
 
 Quando todos estes requisitos forem cumpridos, pode iniciar a finalização da instalação do seu certificado SSL personalizado no seu alojamento web.
 
