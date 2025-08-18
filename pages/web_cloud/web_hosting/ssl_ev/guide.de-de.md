@@ -56,7 +56,7 @@ Sie können über [diese Adresse](https://help.sectigostore.com/support/solution
 
 > [!warning]
 >
-> Die bei OVHcloud angebotenen Sectigo DV SSL-Zertifikate sind auf Ihrem Webhosting nur für einen der beiden folgenden Fälle gültig:
+> Die bei OVHcloud angebotenen Sectigo EV SSL-Zertifikate sind auf Ihrem Webhosting nur für einen der beiden folgenden Fälle gültig:
 >
 > - Ein Domainname und seine Subdomain "www" (Beispiel: `domain.tld` und `www.domain.tld`)
 > - Eine Subdomain (Beispiel: `sub.domain.tld`)
@@ -67,7 +67,7 @@ Sie können über [diese Adresse](https://help.sectigostore.com/support/solution
 > - Ein oder mehrere weitere kostenpflichtige SSL-Zertifikate aktivieren ([Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv) oder [Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev)).
 > - [Eigenes SSL-Zertifikat installieren](/pages/web_cloud/web_hosting/ssl_custom).
 
-**Bevor Sie das Sectigo DV SSL-Zertifikat bestellen**, überprüfen Sie, dass **Domainname und Subdomain**, die von Ihrem zukünftigen SSL-Zertifikat betroffen sind:
+**Bevor Sie das Sectigo EV SSL-Zertifikat bestellen**, überprüfen Sie, dass **Domainname und Subdomain**, die von Ihrem zukünftigen SSL-Zertifikat betroffen sind:
 
 - verweist auf die IP-Adresse Ihres Webhostings.
 - ist auf Ihrem Webhosting als Multisite deklariert.
@@ -119,7 +119,7 @@ Klicken Sie auf die Registerkarten unten, um die einzelnen **6** Schritte anzuze
 >>
 > **Schritt 5**
 >>
->> Wählen Sie im neu geöffneten Fenster über das Dropdown-Menü die betreffende Domain oder Subdomain aus und klicken Sie auf `Bestätigen`{.action}, um zum Bestellschein für Ihr Sectigo DV SSL-Zertifikat weitergeleitet zu werden.
+>> Wählen Sie im neu geöffneten Fenster über das Dropdown-Menü die betreffende Domain oder Subdomain aus und klicken Sie auf `Bestätigen`{.action}, um zum Bestellschein für Ihr Sectigo EV SSL-Zertifikat weitergeleitet zu werden.
 >>
 >> ![SSL Sectigo Domainauswahl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
