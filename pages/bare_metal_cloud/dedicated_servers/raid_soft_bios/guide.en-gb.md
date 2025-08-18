@@ -427,7 +427,7 @@ mount --bind /run /mnt/run
 mount --make-slave /mnt/run
 ```
 
-Next, we access the `chroot` environment again:
+Next, we access the `chroot` environment:
 
 ```sh
 chroot /mnt
@@ -452,7 +452,7 @@ blkid /dev/sdb4
 /dev/sdb4: LABEL="swap-sdb4" UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a" TYPE="swap" PARTLABEL="logical" PARTUUID="d037c35f-2ddb-40d5-be33-31cc496fe54b"
 ```
 
-Next, we replace the old UUID of the swap partition (**nvme0n1p4)** with the new one in `/etc/fstab`:
+Next, we replace the old UUID of the swap partition (**sda4**) with the new one in `/etc/fstab`:
 
 ```sh
 nano etc/fstab
@@ -495,7 +495,7 @@ swapon: /dev/sdb4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/sdb4
 ```
 
-We exit the Chroot environment with `Exit` and unmount all the disks:
+We exit the Chroot environment with `exit` and unmount all the disks:
 
 ```sh
 umount -a
@@ -505,7 +505,7 @@ We have now successfully completed the RAID rebuild on the server and we can now
 
 /// details | **Rebuilding the RAID after the secondary disk is replaced**
 
-The following steps are done in normal mode since it is the secondary disk that is was replaced. In our example, our secondary disk is named **sdb**.
+The following steps are performed in normal mode, as it is the secondary disk that has been replaced. In our example, our secondary disk is named **sdb**.
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sda) to the new one (sdb).
 
@@ -556,7 +556,7 @@ sudo mdadm --add /dev/md4 /dev/sdb4
 # mdadm: re-added /dev/sdb4
 ```
 
-Use the following command to follow the RAID rebuild `cat /proc/mdstat`.
+Use the following command to monitor the RAID rebuild: `cat /proc/mdstat`.
 
 Lastly, we add a label and mount the [SWAP] partition (if applicable):
 
@@ -571,7 +571,7 @@ sudo blkid /dev/sda4
 sudo blkid /dev/sdb4
 ```
 
-We replace the old UUID of the swap partition (**sdb4)** with the new one in `/etc/fstab`:
+We replace the old UUID of the swap partition (**sdb4**) with the new one in `/etc/fstab`:
 
 ```sh
 sudo nano etc/fstab
@@ -583,7 +583,7 @@ Make sure you replace the correct UUID. Reload the system with the following com
 sudo systemctl daemon-reload
 ```
 
-Next, run the following command to enable it:
+Next, run the following command to enable the swap partition:
 
 ```sh
 sudo swapon -av
