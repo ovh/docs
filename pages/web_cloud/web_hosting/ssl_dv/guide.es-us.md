@@ -104,7 +104,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
 >>
 >> En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Confirmar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo DV.
 >>
->> ![SSL Sectigo selection du domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
+>> ![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
 >> Continúe con el pedido hasta el pago para validar la solicitud de creación del certificado SSL Sectigo DV para su dominio y/o subdominio en su alojamiento web.
 

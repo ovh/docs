@@ -166,7 +166,7 @@ Poursuivez votre commande jusqu'au paiement pour initier l'installation de vos s
 
 > [!alert]
 >
-> Une fois la commande validée, la demande de certificat SSL Sectigo EV est envoyée à l'autorité de certification **Sectigo**. 
+> Une fois la commande validée, la demande de certificat SSL Sectigo EV est envoyée à l'autorité de certification **Sectigo**.
 >
 > Assurez-vous impérativement de votre éligibilité à la souscription d'un certificat SSL Sectigo EV **avant de payer le certificat**.
 >
@@ -218,7 +218,7 @@ Une fois les vérifications faites par Sectigo, vous serez contacté par leurs s
 
 > [!success]
 >
-> Pour plus de détails sur les opérations décrites dans la **partie 2** ci-dessus, consultez la [documentation officielle de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sur le sujet.
+> Pour plus de détails sur les opérations décrites dans la **partie 2** ci-dessus, consultez la [documentation officielle de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-) sur le sujet.
 
 ### 3 - Installation du certificat SSL Sectigo EV avec votre domaine et votre hébergement OVHcloud
 

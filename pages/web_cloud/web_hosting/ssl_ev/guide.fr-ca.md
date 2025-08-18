@@ -166,7 +166,7 @@ Poursuivez votre commande jusqu'au paiement pour initier l'installation de vos s
 
 > [!alert]
 >
-> Une fois la commande validée, la demande de certificat SSL Sectigo EV est envoyée à l'autorité de certification **Sectigo**. 
+> Une fois la commande validée, la demande de certificat SSL Sectigo EV est envoyée à l'autorité de certification **Sectigo**.
 >
 > Assurez-vous impérativement de votre éligibilité à la souscription d'un certificat SSL Sectigo EV **avant de payer le certificat**.
 >

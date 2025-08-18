@@ -98,13 +98,13 @@ Click on the tabs below to view each of the **5** steps in succession:
 >>
 >> When the content of the tab appears, click `Order a Sectigo SSL certificate`{.action}.
 >>
->>![Sectigo SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
+>> ![Sectigo SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
 >>
 > **Step 5**
 >>
 >> In the new window that opens, select the domain or subdomain concerned using the dropdown menu, then click `Confirm`{.action} to be redirected to the purchase order for your Sectigo DV SSL certificate.
 >>
->>![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
+>> ![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
 >>
 >> Proceed with the order until you pay in order to validate the request to create the Sectigo DV SSL certificate for your domain name and/or subdomain on your Web Hosting plan.
 
