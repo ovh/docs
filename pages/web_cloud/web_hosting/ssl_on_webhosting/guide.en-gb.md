@@ -34,18 +34,18 @@ You must have an SSL certificate in order to use HTTPS for your website.
 
 > [!warning]
 >
-> **Before you continue**, please check that **the domain name(s) and/or subdomain(s)** concerned by your future SSL certificate(s):
+> **Before you continue**, please ensure that **each domain name and/or subdomain** covered by a future SSL certificate:
 >
-> - points to your web hosting plan’s IP address.
-> - is/are declared as a multisite on your web hosting plan.
-> - do not already have an active SSL certificate.
+> - Points to the IP address of your web hosting plan.
+> - Is declared as a multisite on your web hosting plan.
+> - Does not already have an active SSL certificate.
 >
 > To check this, please refer to our guides below:
 >
-> - [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-> - [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
-> - [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**.
+> - [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+> - [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+> - [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**
 
 ### Activate an SSL certificate on your web hosting plan <a name="ssl-enable"></a>
 
@@ -54,8 +54,8 @@ OVHcloud offers 4 solutions for activating/installing an SSL certificate on a we
 Below are the 4 links to our guides dedicated to these 4 solutions:
 
 - [Web Hosting - How to activate a free Let's Encrypt SSL certificate](/pages/web_cloud/web_hosting/ssl_letsencrypt): Free certificate available with our web hosting plans.
-- [WWeb Hosting - Activate a Sectigo DV SSL certificate](/pages/web_cloud/web_hosting/ssl_dv): Certificate valid for a single domain name + its subdomain in “www” (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
-- [Web Hosting - Activate a Sectigo EV SSL certificate](/pages/web_cloud/web_hosting/ssl_ev): Certificate valid for a single domain name + its subdomain in “www” (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
+- [WWeb Hosting - Activate a Sectigo DV SSL certificate](/pages/web_cloud/web_hosting/ssl_dv): Certificate valid for a single domain name + its www subdomain (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
+- [Web Hosting - Activate a Sectigo EV SSL certificate](/pages/web_cloud/web_hosting/ssl_ev): Certificate valid for a single domain name + its www subdomain (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
 - [Web Hosting - How to install a custom SSL certificate](/pages/web_cloud/web_hosting/ssl_custom): If you have your own SSL certificate, or none of the 3 solutions listed above meet your needs.
 
 ### Delete an SSL certificate on a web hosting plan <a name="delete-ssl"></a>
