@@ -32,7 +32,7 @@ For OVHcloud web hosting plans, the certification authority delivering DV SSL ce
 ## Requirements
 
 - You have access to the [OVHcloud Control Panel](/links/manager).
-- Order or have an [OVHcloud web hosting plan](/links/web/hosting).
+- You plan to order or have an [OVHcloud web hosting plan](/links/web/hosting).
 - You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 
 ## Requirements
@@ -44,7 +44,7 @@ For OVHcloud web hosting plans, the certification authority delivering DV SSL ce
 > - A single domain name including the www subdomain (e.g. `domain.tld` and `www.domain.tld`).
 > - One subdomain (e.g. `sub.domain.tld`).
 >
-> If other domain names or sub-domains are declared on your web hosting plan, and you also want to assign them an SSL certificate, you can either:
+> If other domain names or subdomains are declared on your web hosting plan, and you also want to assign them an SSL certificate, you can either:
 >
 > - [Activate a free Let's Encrypt SSL certificate](/pages/web_cloud/web_hosting/ssl_letsencrypt) (if not already the default).
 > - Activate one or more other paid SSL certificate(s) ([Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv) or [Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev)).
@@ -58,18 +58,18 @@ For OVHcloud web hosting plans, the certification authority delivering DV SSL ce
 
 > [!primary]
 >
-> If you would like to subscribe to a Sectigo DV SSL certificate for a domain name (e.g.: `domain.tld`), please check that its subdomain in www (e.g.: `www.domain.tld`) also points to your web hosting plan’s IP address, and is correctly declared as a multisite.
+> If you would like to subscribe to a Sectigo DV SSL certificate for a domain name (e.g.: `domain.tld`), please check that its www subdomain (e.g.: `www.domain.tld`) also points to your web hosting plan’s IP address, and is correctly declared as a multisite.
 >
-> If you order a Sectigo DV SSL certificate without checking that it has been sent, you will need to make a correction at a later date. You will then need to delete the Sectigo DV SSL certificate you have previously subscribed to **without being refunded**, then order a new one. The goal is for the new Sectigo DV SSL certificate to include both your domain name `domain.tld` and its subdomain in “www” `www.domain.tld`.
+> If you order a Sectigo DV SSL certificate without checking that it has been sent, you will need to make a correction at a later date. You will then need to delete the Sectigo DV SSL certificate you have previously subscribed to **without being refunded**, then order a new one. The goal is for the new Sectigo DV SSL certificate to include both your domain name `domain.tld` and its its www subdomain `www.domain.tld`.
 >
 > As a reminder, if you subscribe to a Sectigo DV SSL certificate directly for a subdomain (example: `sub.domain.tld`), you are not affected by this situation.
 
 To check if this is the case, please refer to our guides below:
 
-- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
-- [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**.
+- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+- [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**
 
 ### Order the Sectigo DV SSL certificate
 
@@ -149,11 +149,11 @@ Your Sectigo DV SSL certificate is now installed and active. You can now use it 
 
 ## Go further <a name="go-further"></a>
 
-[Web Hosting - Managing an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+[Web Hosting - Managing an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-[Web Hosting - Switch your website to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+[Web Hosting - Switch your website to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-[Common errors related to securing your website with SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
+[Common errors related to securing your website with SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure)
  
 For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
