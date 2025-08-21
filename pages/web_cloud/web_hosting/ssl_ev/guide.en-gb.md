@@ -36,7 +36,7 @@ For OVHcloud web hosting plans, the certification authority delivering EV SSL ce
 ## Requirements <a name="requirements"></a>
 
 - You have access to the [OVHcloud Control Panel](/links/manager).
-- Order or have an [OVHcloud web hosting plan](/links/web/hosting).
+- You plan to order or have an [OVHcloud web hosting plan](/links/web/hosting).
 - You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 - You represent an organisation (company, government agency, etc.) registered with an official registry.
 - You have your organisation’s permission to order a Sectigo EV SSL certificate.
@@ -76,10 +76,10 @@ To check if you are eligible to subscribe to a Sectigo EV SSL certificate, go to
 
 To check if this is the case, please refer to our guides below:
 
-- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
-- [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**.
+- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+- [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**
 
 > [!primary]
 >
