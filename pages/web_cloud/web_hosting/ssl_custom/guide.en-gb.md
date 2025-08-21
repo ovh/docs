@@ -17,8 +17,8 @@ Depending on your situation, you may want to install a different SSL certificate
 ## Requirements
 
 - You have access to the [OVHcloud Control Panel](/links/manager).
-- Order or have an [OVHcloud web hosting plan](/links/web/hosting).
-- Order or have a [domain name](/links/web/domains) and have exclusive rights on its use. The domain name must not already be linked to an SSL certificate.
+- You plan to order or have an [OVHcloud web hosting plan](/links/web/hosting).
+- You plan to order or have a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 - You have OpenSSL or a compatible application installed on your local device.
 
 ## Instructions
@@ -125,9 +125,9 @@ Order the SSL certificate from your SSL provider. If the customer needs it, send
 
 Following your order, the SSL certificate provider must provide you with 3 files:
 
-- The `certificate.crt` file.
-- The `private.key` file.
-- The file `ca_bundle.crt`.
+- The `certificate.crt` file
+- The `private.key` file
+- The file `ca_bundle.crt`
 
 You will need the content of each file to complete [section 3](#step-3) of this guide.
 
@@ -147,16 +147,16 @@ If you start reading this guide in this step because you already have an externa
 
 **Before finalizing the SSL certificate installation on your web hosting plan**, please ensure that **all domain names and/or subdomains** included in your SSL certificate:
 
-- point to your web hosting plan’s IP address.
-- are declared as multisites on your web hosting plan.
-- do not already have an active SSL certificate.
+- Point to your web hosting plan’s IP address.
+- Are declared as multisites on your web hosting plan.
+- Do not already have an active SSL certificate.
 
 To check if this is the case, please refer to our guides below:
 
-- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
-- [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**.
+- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+- [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**
 
 Once you have met all of these requirements, you can start finalizing the installation of your custom SSL certificate on your web hosting plan.
 
