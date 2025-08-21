@@ -27,25 +27,25 @@ Sie benötigen ein SSL-Zertifikat für Ihre Website, um es über HTTPS zu verwen
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
-- Sie haben mindestens eine [Domain](/links/web/domains) registriert.
+- Sie haben mindestens einen [Domainnamen](/links/web/domains) registriert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
-> **Überprüfen Sie, bevor Sie fortfahren**, dass **die Domain(s) und/oder Subdomain(s)**, die von Ihrem/Ihren künftigen SSL Zertifikat(s) betroffen sind:
+> Bevor Sie fortfahren, **überprüfen Sie, dass Domainname und Subdomain**, die von Ihrem zukünftigen SSL-Zertifikat betroffen sind:
 >
-> - verweist(n) auf die IP-Adresse Ihres Webhostings.
-> - ist (sind) als Multisite auf Ihrem Webhosting deklariert.
-> - verfügt(en) noch nicht über ein aktives SSL-Zertifikat.
+> - Auf die IP-Adresse Ihres Webhostings verweisen.
+> - Auf Ihrem Webhosting als Multisite deklariert sind.
+> - Noch nicht über ein aktives SSL-Zertifikat verfügen.
 >
 > Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
 >
-> - [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-> - [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-> - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
-> - [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**.
+> - [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+> - [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+> - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+> - [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**
 
 ### SSL-Zertifikat auf seinem Webhosting aktivieren <a name="ssl-enable"></a>
 
@@ -54,8 +54,8 @@ OVHcloud bietet 4 Lösungen für die Aktivierung/Installation eines SSL-Zertifik
 Hier finden Sie die 4 Links zu unseren Anleitungen zu diesen 4 Lösungen:
 
 - [Webhosting - Kostenloses SSL-Zertifikat von Let's Encrypt aktivieren](/pages/web_cloud/web_hosting/ssl_letsencrypt): Kostenloses Zertifikat für unsere Webhostings verfügbar.
-- [Webhosting - Sectigo DV SSL-Zertifikat aktivieren](/pages/web_cloud/web_hosting/ssl_dv): Zertifikat gültig für einen Domainnamen + dessen Subdomain auf „www“ (zum Beispiel: `domain.tld` und `www.domain.tld`) oder **nur** eine Subdomain (zum Beispiel: `sub.domain.tld`).
-- [Webhosting - Sectigo EV SSL-Zertifikat aktivieren](/pages/web_cloud/web_hosting/ssl_ev): Zertifikat gültig für einen Domainnamen + dessen Subdomain auf „www“ (zum Beispiel: `domain.tld` und `www.domain.tld`) oder **nur** eine Subdomain (zum Beispiel: `sub.domain.tld`).
+- [Webhosting - Sectigo DV SSL-Zertifikat aktivieren](/pages/web_cloud/web_hosting/ssl_dv): Zertifikat gültig für einen Domainnamen + dessen www Subdomain (zum Beispiel: `domain.tld` und `www.domain.tld`) oder **nur** eine Subdomain (zum Beispiel: `sub.domain.tld`).
+- [Webhosting - Sectigo EV SSL-Zertifikat aktivieren](/pages/web_cloud/web_hosting/ssl_ev): Zertifikat gültig für einen Domainnamen + dessen www Subdomain (zum Beispiel: `domain.tld` und `www.domain.tld`) oder **nur** eine Subdomain (zum Beispiel: `sub.domain.tld`).
 - [Webhosting - Eigenes SSL-Zertifikat installieren](/pages/web_cloud/web_hosting/ssl_custom): Wenn Sie über Ihr eigenes SSL-Zertifikat verfügen oder keine der 3 vorherigen Lösungen Ihren Bedürfnissen entspricht.
 
 ### SSL-Zertifikat von einem Webhosting löschen <a name="delete-ssl"></a>
@@ -64,11 +64,11 @@ Hier finden Sie die 4 Links zu unseren Anleitungen zu diesen 4 Lösungen:
 >
 > Die Löschung eines kostenpflichtigen SSL-Zertifikats **Sectigo** (DV oder EV) ist endgültig, auch wenn das Zertifikat noch nicht abgelaufen ist. Für die verbleibende Zeit können keine anteiligen Rückerstattungen vorgenommen werden. Wenn Sie ein SSL-Zertifikat **Sectigo** (DV oder EV) neu installieren möchten, müssen Sie eine neue Bestellung aufgeben und das neue abonnierte SSL-Zertifikat vollständig bezahlen.
 >
-> Wenn Sie ein SSL-Zertifikat dauerhaft von Ihrem Webhosting deaktivieren möchten, stellen Sie bitte sicher, dass **bevor Sie fortfahren**, dass die endgültige Deaktivierung des SSL-Zertifikats Ihre Websites nicht unzugänglich macht. In diesem Fall erhalten Ihre Benutzer einen Sicherheitsfehler, wenn sie versuchen, auf Ihre Website über „HTTPS“ zuzugreifen.
+> Wenn Sie ein SSL-Zertifikat dauerhaft von Ihrem Webhosting deaktivieren möchten, stellen Sie bitte sicher, dass **bevor Sie fortfahren**, dass die endgültige Deaktivierung des SSL-Zertifikats Ihre Websites nicht unzugänglich macht. In diesem Fall erhalten Ihre Benutzer einen Sicherheitsfehler, wenn sie versuchen, auf Ihre Website über HTTPS zuzugreifen.
 >
 > Da diese Überprüfung von den Einstellungen Ihrer Website abhängt, empfehlen wir Ihnen, sich an einen [spezialisierten Dienstanbieter](/links/partner) zu wenden, falls Sie Probleme haben. Wir können Ihnen in dieser Hinsicht keine Unterstützung bieten.
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **5** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
