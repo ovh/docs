@@ -17,8 +17,8 @@ Je nach Ihrer Situation kann es sein, dass Sie ein anderes SSL-Zertifikat als da
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
-- Sie verfügen über einen [Domainnamen](/links/web/domains) und dessen exklusive Nutzungsrechte oder beabsichtigen, einen zu registrieren. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) oder beabsichtigen, eines zu bestellen.
+- Sie verfügen über einen [Domainnamen](/links/web/domains) und dessen exklusive Nutzungsrechte oder beabsichtigen, einen neu zu registrieren. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
 - Sie haben OpenSSL oder eine kompatible Anwendung lokal auf Ihrem Gerät installiert.
 
 ## In der praktischen Anwendung
@@ -38,7 +38,7 @@ Je nach Ihrer Situation kann es sein, dass Sie ein anderes SSL-Zertifikat als da
 #### 1.1 - Schlüsselpaar und CSR in der Befehlszeile generieren <a name="step-1.1"></a>
 
 Um die folgenden Befehle auszuführen, benötigen Sie das OpenSSL Toolkit, das in vielen Linux-Distributionen enthalten ist. Installieren Sie sie andernfalls über die Paketverwaltung des Systems. Unter Windows können Sie das Windows-Subsystem für Linux (WSL) verwenden oder OpenSSL über eine Drittanbieteranwendung installieren.  
-Diese Vorgehensweise ist betriebssystemspezifisch, daher können wir sie in dieser Anleitung nicht im Detail beschreiben.
+Diese Vorgehensweise ist betriebssystemspezifisch, daher ist sie in dieser Anleitung nicht im Detail beschrieben.
 
 Öffnen Sie Ihr Kommandozeileninterface (Terminal) und führen Sie folgenden Befehl aus:
 
@@ -125,9 +125,9 @@ Bestellen Sie das SSL-Zertifikat bei Ihrem SSL-Anbieter. Falls nötig, übermitt
 
 Nach Ihrer Bestellung muss der Anbieter des SSL-Zertifikats Ihnen 3 Dateien zur Verfügung stellen:
 
-- Die Datei `certificate.crt`.
-- Die Datei `private.key`.
-- Die Datei `ca_bundle.crt`.
+- Die Datei `certificate.crt`
+- Die Datei `private.key`
+- Die Datei `ca_bundle.crt`
 
 Der Inhalt jeder einzelnen Datei wird benötigt, um [Teil 3](#step-3) dieser Anleitung durchzuführen.
 
@@ -153,14 +153,14 @@ Wenn Sie diese Anleitung in diesem Schritt beginnen, da Sie bereits über ein ex
 
 Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
 
-- [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
-- [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**.
+- [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+- [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**
 
 Sobald alle diese Voraussetzungen erfüllt sind, können Sie mit der Fertigstellung der Installation Ihres personalisierten SSL-Zertifikats auf Ihrem Webhosting beginnen.
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **5** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
@@ -214,7 +214,7 @@ Wenn das SSL-Zertifikat vom SSL-Anbieter korrekt generiert wurde und die Vorauss
 
 Die Installation dauert mehrere Minuten.
 
-Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die folgenden Registerkarten, um nacheinander die einzelnen **4** Schritte anzuzeigen:
+Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die folgenden Tabs, um die **4** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
