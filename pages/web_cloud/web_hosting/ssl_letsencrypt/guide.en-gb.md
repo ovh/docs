@@ -27,17 +27,17 @@ Let's Encrypt is a free, automated, open, non-profit certification authority. Yo
 ## Requirements
 
 - You have access to the [OVHcloud Control Panel](/links/manager).
-- Order or have an [OVHcloud web hosting plan](/links/web/hosting).
+- You plan to order or have an [OVHcloud web hosting plan](/links/web/hosting).
 - You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 
 > [!primary]
 >
 > As of **06/08/2025**, the Let's Encrypt SSL certificate is automatically enabled by default for:
 >
-> - all new domain names/subdomains linked to a web hosting plan.
-> - all new domain name subscriptions with a new web hosting plan.
+> - All new domain names/subdomains linked to a web hosting plan.
+> - All new domain name subscriptions with a new web hosting plan.
 >
-> The goal is to save you time configuring your services. You can always disable the Let's Encrypt SSL certificate from your [OVHcloud Control Panel](/links/manager) if you want to install another SSL certificate (Sectigo DV, Sectigo EV or a custom SSL certificate).
+> The goal is to save you time configuring your services. You can always disable the Let's Encrypt SSL certificate from your [OVHcloud Control Panel](/links/manager) if you want to install another SSL certificate (Sectigo DV, Sectigo EV or a custom SSL certificate).  
 > Find more information in our guide "[How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting)", part **Disable an SSL certificate on a web hosting plan**.
 
 ## Instructions
@@ -52,10 +52,10 @@ Let's Encrypt is a free, automated, open, non-profit certification authority. Yo
 >
 > To check if this is the case, please refer to our guides below:
 >
-> - [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-> - [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
-> - [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**.
+> - [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+> - [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+> - [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting), part **Disable an SSL certificate on a web hosting plan**
 
 ### Activate the Let's Encrypt SSL certificate
 
