@@ -37,14 +37,14 @@ Let's Encrypt ist eine kostenlose, automatisierte, offene und gemeinnützige Zer
 > - Alle neuen Domainnamen/Subdomains, die mit einem Webhosting verbunden sind.
 > - Alle neuen Abonnements eines Domainnamens mit einem neuen Webhosting.
 >
-> Das Ziel ist es, Ihnen bei der Konfiguration Ihrer Dienste Zeit zu sparen. Sie können das Let's Encrypt SSL-Zertifikat jederzeit über Ihr [OVHcloud Kundencenter](/links/manager) deaktivieren, wenn Sie ein anderes SSL-Zertifikat installieren möchten (Sectigo DV, Sectigo EV oder ein personalisiertes SSL-Zertifikat).
+> Das Ziel ist, Ihnen bei der Konfiguration Ihrer Dienste Zeit zu sparen. Sie können das Let's Encrypt SSL-Zertifikat jederzeit über Ihr [OVHcloud Kundencenter](/links/manager) deaktivieren, wenn Sie ein anderes SSL-Zertifikat installieren möchten (Sectigo DV, Sectigo EV oder ein personalisiertes SSL-Zertifikat).  
 > Weitere Informationen finden Sie in unserer Anleitung „[SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting)“, Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**.
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
-> **Bevor Sie fortfahren**, überprüfen Sie bitte, dass **jeder Domainname und/oder jede Subdomain**, die von einem zukünftigen Let's Encrypt SSL Zertifikat betroffen ist:
+> **Bevor Sie fortfahren**, überprüfen Sie, dass **jeder Domainname und/oder jede Subdomain**, die von einem zukünftigen Let's Encrypt SSL Zertifikat betroffen ist:
 >
 > - verweist auf die IP-Adresse Ihres Webhostings.
 > - ist auf Ihrem Webhosting als Multisite deklariert.
@@ -52,14 +52,14 @@ Let's Encrypt ist eine kostenlose, automatisierte, offene und gemeinnützige Zer
 >
 > Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
 >
-> - [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-> - [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-> - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
-> - [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**.
+> - [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+> - [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+> - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+> - [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**
 
 ### Let's Encrypt SSL-Zertifikat aktivieren
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **4** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
@@ -92,7 +92,7 @@ Es kann mehrere Stunden dauern, bis das SSL-Zertifikat von Let's Encrypt eingeri
 
 ### Die Aktivierung des kostenlosen SSL-Zertifikats Let's Encrypt (DV) überprüfen
 
-Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die folgenden Registerkarten, um nacheinander die einzelnen **4** Schritte anzuzeigen:
+Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die folgenden Tabs, um die **4** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
