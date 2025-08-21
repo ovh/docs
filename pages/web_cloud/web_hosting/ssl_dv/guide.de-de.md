@@ -58,7 +58,7 @@ Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifik
 
 > [!primary]
 >
-> Wenn Sie ein Sectigo DV SSL-Zertifikat für eine Domain bestellen möchten (zum Beispiel: `domain.tld`), überprüfen Sie bitte, dass deren Subdomain auf „www“ (zum Beispiel: `www.domain.tld`) ebenfalls auf die IP-Adresse Ihres Webhostings verweist und korrekt für Multisite deklariert ist.
+> Wenn Sie ein Sectigo DV SSL-Zertifikat für eine Domain bestellen möchten (zum Beispiel: `domain.tld`), überprüfen Sie, dass die zugehörige Subdomain "www" (zum Beispiel: `www.domain.tld`) ebenfalls auf die IP-Adresse Ihres Webhostings verweist und korrekt für Multisite deklariert ist.
 >
 > Wenn Sie das Sectigo DV SSL-Zertifikat bestellen, ohne sich dessen zu vergewissern, müssen Sie nachträglich eine Korrektur vornehmen. In diesem Fall müssen Sie das zuvor abonnierte Sectigo DV SSL-Zertifikat **ohne Rückerstattung** löschen und anschließend ein neues Zertifikat bestellen. Das neue Sectigo DV SSL Zertifikat soll sowohl Ihre Domain `domain.tld` als auch deren Subdomain `www.domain.tld` umfassen.
 >
@@ -66,14 +66,14 @@ Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifik
 
 Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
 
-- [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
-- [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**.
+- [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+- [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**
 
 ### Sectigo DV SSL-Zertifikat bestellen
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **5** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
@@ -118,7 +118,7 @@ Die Installation des Sectigo DV SSL-Zertifikats kann bis zu **24** Stunden dauer
 
 ### Aktivierung des Sectigo DV SSL-Zertifikats überprüfen
 
-Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die folgenden Registerkarten, um nacheinander die einzelnen **4** Schritte anzuzeigen:
+Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die folgenden Tabs, um die **4** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
