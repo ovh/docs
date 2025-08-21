@@ -75,10 +75,10 @@ Sie können über [diese Adresse](https://help.sectigostore.com/support/solution
 
 Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
 
-- [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
-- [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**.
+- [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Webhosting - Liste der IP-Adressen pro Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+- [Webhosting - SSL-Zertifikat einrichten](/pages/web_cloud/web_hosting/ssl_on_webhosting), Teil **SSL-Zertifikat auf einem Webhosting deaktivieren**
 
 > [!primary]
 >
@@ -90,7 +90,7 @@ Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen unten:
 
 #### 1.1 - Für bereits bei OVHcloud existierende Domainnamen und Webhostings
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **6** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
@@ -192,7 +192,7 @@ Die in diesem Schritt beschriebenen Aktionen können über mehrere Tage hinweg e
 
 #### 2.1 - Bestätigung von Sectigo per E-Mail
 
-Sobald Ihre Bestellung ausgeführt wurde, sendet Sectigo Ihnen eine E-Mail mit einem Validierungslink und der Ablaufprozedur.
+Sobald Ihre Bestellung ausgeführt wurde, sendet Sectigo Ihnen eine E-Mail mit einem Validierungslink und der Ablaufprozedur.  
 Überprüfen Sie Ihre Angaben und bestätigen Sie Ihre Anfrage gemäß den Informationen in dieser E-Mail. 
 
 Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse in Ihrem [OVHcloud Kundencenter](/links/manager).
