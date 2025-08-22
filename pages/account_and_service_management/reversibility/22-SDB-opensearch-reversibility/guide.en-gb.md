@@ -1,6 +1,6 @@
 ---
-title: "Reversibility Policy for the Managed Search Engine Software Platform product"
-updated: 2025-07-15
+title: "OpenSearch - Reversibility Policy for the Managed Search Engine Software Platform product"
+updated: 2025-08-22
 ---
 
 ## Objective

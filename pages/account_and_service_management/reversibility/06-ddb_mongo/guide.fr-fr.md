@@ -1,6 +1,6 @@
 ---
-title: "Politique de réversibilité du produit Managed Document Database"
-updated: 2025-06-12
+title: "MongoDB - Politique de réversibilité du produit Managed Document Database"
+updated: 2025-08-22
 ---
 
 ## Objectif

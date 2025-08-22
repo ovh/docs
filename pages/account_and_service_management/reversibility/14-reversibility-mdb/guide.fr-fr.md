@@ -1,6 +1,6 @@
 ---
-title: "Politique de réversibilité du produit Managed Message Broker"
-updated: 2025-06-19
+title: "Kafka - Politique de réversibilité du produit Managed Message Broker"
+updated: 2025-08-22
 ---
 
 ## Objectif

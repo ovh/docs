@@ -1,6 +1,6 @@
 ---
-title: "Reversibility Policy for Managed Relational Database Product"
-updated: 2025-06-12
+title: "SQL - Reversibility Policy for Managed Relational Database Product"
+updated: 2025-08-22
 ---
 
 ## Objective

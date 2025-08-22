@@ -1,7 +1,7 @@
 ---
-title: "Comparison of Public Cloud Databases Deployment Modes - Understanding 3-AZ / 1-AZ"
+title: "Public Cloud Databases - Understanding Single AZ and Multi AZ deployment modes"
 excerpt: "Explore OVHcloud's Public Cloud Databases deployment modes"
-updated: 2025-06-11
+updated: 2025-08-22
 ---
 
 ## Objective

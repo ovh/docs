@@ -1,6 +1,6 @@
 ---
-title: "Reversibility Policy for the Managed Data Visualization product"
-updated: 2025-06-19
+title: "Dashboards - Reversibility Policy for the Managed Data Visualization product"
+updated: 2025-08-22
 ---
 
 ## Objective

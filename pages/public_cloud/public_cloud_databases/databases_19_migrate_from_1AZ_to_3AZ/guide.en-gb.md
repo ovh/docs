@@ -1,7 +1,7 @@
 ---
-title: "How to move a database service from a single AZ region to a 3-AZ region"
+title: "Public Cloud Databases - How to move a database service from a single AZ region to a 3-AZ region"
 excerpt: "Learn how to move your OVHcloud Public Cloud Database from a single AZ to a 3-AZ region and ensure high availability"
-updated: 2025-08-19
+updated: 2025-08-22
 ---
 
 ## Objective
