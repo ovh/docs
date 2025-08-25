@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Modificar un dominio ya asociado a un alojamiento"
 excerpt: "Descubra cómo modificar la configuración de asociación de un dominio o subdominio ya declarado en su plan de hosting"
-updated: 2025-02-20
+updated: 2025-11-05
 ---
 
 ## Objetivo
@@ -84,12 +84,6 @@ Este formulario le pedirá que sustituya el nombre de la carpeta cumplimentada p
 
 #### Otras opciones disponibles
 
-##### La opción "SSL"
-
-Marque o desmarque esta casilla únicamente si quiere activar o desactivar el SSL gratuito **Let's Encrypt** para su dominio o subdominio. No es necesario marcar esta casilla para el resto de productos SSL de OVHcloud.
-
-Para más información sobre las opciones y servicios SSL, consulte nuestra documentación específica "[Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
-
 ##### La opción "Activar la CDN"
 
 Para poder utilizar esta opción, es necesario haber contratado previamente un plan CDN de OVHcloud o disponer de un plan de hosting Performance.
@@ -122,7 +116,7 @@ Si todos los parámetros están configurados como desee, haga clic en el botón 
 
 Según las opciones seleccionadas, los cambios pueden tardar desde unos minutos hasta unas horas en aplicarse.
 
-Si las opciones **SSL**, **CDN**, **IP del país** y **logs separados** no se aplican después de 24 horas, consulte las guías (y páginas) correspondientes para todas las opciones descritas en el [etapa 1](#step1), con el fin de comprobar que se han cumplido, cumplido y cumplido todos los requisitos.
+Si las opciones **CDN** y **logs separados** no se aplican después de 24 horas, consulte las guías (y páginas) correspondientes para todas las opciones descritas en el [etapa 1](#step1), con el fin de comprobar que se han cumplido, cumplido y cumplido todos los requisitos.
 
 ## Más información
 
