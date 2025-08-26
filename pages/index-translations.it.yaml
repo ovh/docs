@@ -76,15 +76,6 @@ hosted-private-cloud-sap-ovhcloud-automated-deployments: Implementazioni automat
 hosted-private-cloud-sap-ovhcloud-resilience: Resilienza
 hosted-private-cloud-sap-ovhcloud-backups: Backups
 hosted-private-cloud-sap-ovhcloud-observability: Osservabilità
-ovhcloud-labs-data-collector: Data Collector
-ovhcloud-labs-data-collector-getting-started: Per iniziare
-ovhcloud-labs-power-web-hosting: POWER Web Hosting
-ovhcloud-labs-power-web-hosting-getting-started: Per iniziare
-ovhcloud-labs-power-web-hosting-nodejs: Node.js
-ovhcloud-labs-power-web-hosting-python: Python
-ovhcloud-labs-power-web-hosting-ruby: Ruby
-ovhcloud-labs-prescience: Prescience
-ovhcloud-labs-prescience-getting-started: Per iniziare
 public-cloud-ai-and-machine-learning: AI & machine learning
 public-cloud-ai-and-machine-learning-general-information: General information
 public-cloud-ai-and-machine-learning-command-line-interface: Command Line Interface
@@ -367,3 +358,7 @@ observability-logs-data-platform-opensearch-index: OpenSearch Index as a service
 observability-logs-data-platform-security-conformity: Security and conformity
 observability-logs-data-platform-usecases: Usecases
 observability-logs-data-platform-services-logs: OVHcloud Service Logs
+architecture-public-cloud: Public Cloud
+architecture-private-cloud: Private Cloud
+architecture-private-cloud-secnumcloud: SecNumCloud
+architecture-private-cloud-vmware: VMware on OVHcloud
