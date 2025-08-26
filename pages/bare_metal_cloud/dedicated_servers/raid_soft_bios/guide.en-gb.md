@@ -545,7 +545,7 @@ swapon: /dev/sdb4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/sdb4
 ```
 
-We exit the chroot environment with `Exit` and unmount all the disks:
+We exit the Chroot environment with `exit` and unmount all the disks:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
@@ -555,7 +555,7 @@ We have now successfully completed the RAID rebuild on the server and we can now
 
 /// details | **Rebuilding the RAID in normal mode**
 
-In our example, our disk is **sdb**.
+The following steps are performed in normal mode, as it is the secondary disk that has been replaced. In our example, our secondary disk is named **sdb**.
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sda) to the new one (sdb).
 
@@ -606,7 +606,7 @@ Next, we add the partitions to the RAID:
 # mdadm: re-added /dev/sdb4
 ```
 
-Use the following command to follow the RAID rebuild `cat /proc/mdstat`.
+Use the following command to monitor the RAID rebuild: `cat /proc/mdstat`.
 
 Lastly, we add a label and mount the [SWAP] partition (if applicable):
 
@@ -621,7 +621,7 @@ We retrieve the UUIDs of both swap partitions:
 [user@server_ip ~]# sudo blkid -S UUID /dev/sdb4
 ```
 
-We replace the old UUID of the swap partition (**sdb4)** with the new one in `/etc/fstab`:
+We replace the old UUID of the swap partition (**sdb4**) with the new one in `/etc/fstab`:
 
 ```sh
 [user@server_ip ~]# sudo nano etc/fstab
@@ -635,7 +635,7 @@ Then ensure systemd knows about the updated fstab with:
 [user@server_ip ~]# sudo systemctl daemon-reload
 ```
 
-Next, run the following command to activate the SWAP partition:
+Next, run the following command to enable the swap partition:
 
 ```sh
 [user@server_ip ~]# sudo swapon -av

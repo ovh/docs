@@ -323,7 +323,7 @@ sudo mdadm --manage /dev/md3 --remove /dev/nvme0n1p3
 # mdadm: hot removed /dev/nvme0n1p3 from /dev/md3
 ```
 
-To make sure that we get a disk that is similar to an empty disk, we use the following command on each partition, then on the disk.
+To make sure that we get a disk that is similar to an empty disk, we use the following command on each partition, then on the disk:
 
 ```sh
 shred -s10M -n1 /dev/nvme0n1p1
@@ -378,14 +378,14 @@ md2 : active raid1 nvme1n1p2[1]
       1046528 blocks super 1.2 [2/1] [_U]
 
 unused devices: <none>
+unused devices: <none>
 ```
 
 From the results above, we can see that only two partitions now appear in the RAID arrays. We have successfully failed the disk **nvme0n1** and we can now proceed with replacing it.
 
-For more information on how to prepare and request for a disk replacement, consult this [guide](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
+For more information on how to prepare and request for a disk replacement, consult this [guide](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
 
 If you run the following command, you can have more details on the RAID array (s):
-
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --detail /dev/md3
@@ -502,7 +502,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md3 /dev
 # mdadm: re-added /dev/nvme0n1p3
 ```
 
-You can check the rebuild process
+To check the rebuild process:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
@@ -516,7 +516,7 @@ md2 : active raid1 nvme0n1p2[2] nvme1n1p2[1]
       1046528 blocks super 1.2 [2/2] [UU]
 ```
 
-Once the RAID rebuild is complete, run the following command to make sure that the partitions were properly added to the RAID:
+Once the RAID rebuild is complete, run the following command to make sure that the partitions have been properly added to the RAID:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk -fA
@@ -599,6 +599,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md3 /mnt
 ```
 
 We mount the following directories to make sure any manipulation we make in the chroot environment works properly:
+We mount the following directories to make sure any manipulation we make in the chroot environment works properly:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ #
@@ -629,7 +630,7 @@ root@rescue12-customer-eu:/# blkid -t LABEL=EFI_SYSPART
 
 For EFI System Partitions not synchronised after a majpor system update, this extra step might be needed.
 
-Still in the `chroot` environment, we create the `/boot/efi` folder in order to mount the EFI partition **nvme0n1p1** in it:
+Still in the `chroot` environment, we create the `/boot/efi` folder in order to mount the EFI partition **nvme0n1p1**:
 
 ```sh
 root@rescue12-customer-eu:/# mount /boot
@@ -836,7 +837,7 @@ Next, we add the partitions to the RAID:
 # mdadm: re-added /dev/nvme1n1p3
 ```
 
-Use the following command to follow the RAID rebuild `cat /proc/mdstat`.
+Use the following command to follow the RAID rebuild: `cat /proc/mdstat`.
 
 **Recreating the EFI System Partition on the disk**
 
