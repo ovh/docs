@@ -1,6 +1,6 @@
 ---
-title: Managing and rebuilding software RAID on servers in BIOS boot mode
-excerpt: Find out how to manage and rebuild software RAID after a disk replacement on your server in BIOS mode
+title: Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode
+excerpt: Find out how to manage and rebuild software RAID after a disk replacement on your server in legacy boot (BIOS) mode
 updated: 2025-08-xx
 ---
 
@@ -10,9 +10,15 @@ Redundant Array of Independent Disks (RAID) is a technology that mitigates data 
 
 The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
 
-**This guide explains how to manage and rebuild software RAID after a disk replacement on your server in BIOS mode**
+**This guide explains how to manage and rebuild software RAID after a disk replacement on your server in legacy boot (BIOS) mode**
 
-Before we begin, please note that this guide focuses on Dedicated servers that use BIOS as the boot mode. If your server uses the UEFI mode (newer motherboards), refer to this guide [Managing and rebuilding software RAID on servers in UEFI boot mode]().
+Before we begin, please note that this guide focuses on Dedicated servers that use legacy boot (BIOS) mode. If your server uses the UEFI mode (newer motherboards), refer to this guide [Managing and rebuilding software RAID on servers in UEFI boot mode]().
+
+To check whether a server runs on legacy BIOS mode or UEFI mode, run the following command:
+
+```sh
+[user@server_ip ~]# [ -d /sys/firmware/efi ] && echo UEFI || echo BIOS
+```
 
 ## Requirements
 
@@ -22,12 +28,14 @@ Before we begin, please note that this guide focuses on Dedicated servers that u
 
 ## Instructions
 
+When you purchase a new server, you might feel the need to perform a series of tests and actions. One of those actions could be simulating a disk failure in order to understand the process of rebuilding the RAID and prepare yourself in case this happens.
+
 ### Basic Information
 
 In a command line session, type the following code to determine the current RAID status:
 
 ```sh
-cat /proc/mdstat
+[user@server_ip ~]# cat /proc/mdstat
 
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
 md2 : active raid1 nvme0n1p2[1] nvme0n1p20]
@@ -48,7 +56,7 @@ The [UU] means that all the disks are working normally. A `_` would indicate a f
 If you have a server with SATA disks, you would get the following results:
 
 ```sh
-cat /proc/mdstat
+[user@server_ip ~]# cat /proc/mdstat
 
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
 md2 : active raid1 sda2[1] sdb2[0]
@@ -65,7 +73,7 @@ unused devices: <none>
 Although this command returns our RAID volumes, it doesn't tell us the size of the partitions themselves. We can find this information with the following command:
 
 ```sh
-sudo fdisk -l
+[user@server_ip ~]# sudo fdisk -l
 
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
 Disk model: HGST HUS724020AL
@@ -109,51 +117,14 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 The `fdisk -l` command also allows you to identify your partition type. This is an important information when it comes to rebuilding your RAID in case of a disk failure.
 
-For **GPT** partitions, line 6 will display: `Disklabel type: gpt`.
+For **GPT** partitions, line 6 will display: `Disklabel type: gpt`. This information can only been seen when the server is in normal mode.
 
-For **MBR** partitions, line 6 will display: `Disklabel type: dos`.
-
-Still going by the results of `fdisk -l`, we can see that `/dev/md2` consists of 888.8GB and `/dev/md4` contains 973.5GB. If we were to run the mount command we can also find out the layout of the disk.
-
-```sh
-mount
-
-sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
-proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
-udev on /dev type devtmpfs (rw,nosuid,relatime,size=16315920k,nr_inodes=4078980,mode=755)
-devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
-tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=3266556k,mode=755)
-/dev/md2 on / type ext4 (rw,relatime)
-securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
-tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
-tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
-tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
-cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
-cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
-pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
-bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
-cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
-cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
-cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
-cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
-cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
-cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
-cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
-cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
-cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
-cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
-debugfs on /sys/kernel/debug type debugfs (rw,relatime)
-hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
-mqueue on /dev/mqueue type mqueue (rw,relatime)
-systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=45,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=10340)
-/dev/md4 on /home type ext3 (rw,relatime)
-tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3266552k,mode=700,uid=1000,gid=1000)
-```
+Still going by the results of `fdisk -l`, we can see that `/dev/md2` consists of 888.8GB and `/dev/md4` contains 973.5GB.
 
 Alternatively, the `lsblk` command offers a different view of the partitions:
 
 ```sh
-lsblk
+[user@server_ip ~]# lsblk
 
 NAME    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sda       8:0    0   1.8T  0 disk
@@ -179,26 +150,18 @@ We take note of the devices, partitions and their mount points. From the above c
 - Partitions part of the RAID: `/` and `/home`.
 - Partitions not part of the RAID: [SWAP].
 
-### System verification
-
-To check whether a server runs on BIOS mode or BIOS mode, run the following command:
-
-```sh
-[user@server_ip ~]# [ -d /sys/firmware/efi ] && echo BIOS || echo BIOS
-```
-
 ### Simulating a disk failure
 
-Now that we have all the necessary information, we can simulate a disk failure and proceed with the tests. In this example, we will fail the main disk `sda`.
+Now that we have all the necessary information, we can simulate a disk failure and proceed with the tests. In this example, we will fail the primary disk `sda`.
 
 The preferred way to do this is via the OVHcloud rescue mode environment.
 
-First reboot in rescue menu and log in with the credentials provided.
+First reboot the server in rescue mode and log in with the provided credentials.
 
 To remove a disk from the RAID, the first step is to mark it as **Failed** and remove the partitions from their respective RAID arrays.
 
 ```sh
-cat /proc/mdstat
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
 
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
 md2 : active raid1 sda2[1] sdb2[0]
@@ -211,6 +174,7 @@ md4 : active raid1 sda4[0] sdb4[1]
       
 unused devices: <none>
 ```
+
 From the above output, sda consists of two partitions in RAID which are **sda2** and **sda4**. 
 
 #### Removing the failed disk
@@ -218,13 +182,13 @@ From the above output, sda consists of two partitions in RAID which are **sda2**
 First we mark the partitions **sda2** and **sda4** as failed. 
 
 ```sh
-sudo mdadm --manage /dev/md2 --fail /dev/sda2
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md2 --fail /dev/sda2
 
 # mdadm: set /dev/sda2 faulty in /dev/md2
 ```
 
 ```sh
-sudo mdadm --manage /dev/md4 --fail /dev/sda4
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md4 --fail /dev/sda4
 
 # mdadm: set /dev/sda4 faulty in /dev/md4
 ```
@@ -232,7 +196,7 @@ sudo mdadm --manage /dev/md4 --fail /dev/sda4
 We have now simulated a failure of the RAID, when we run the `cat /proc/mdstat` command, we have the following output
 
 ```sh
-cat /proc/mdstat 
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat 
 
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
 md2 : active raid1 sda2[1](F) sdb2[0]
@@ -247,16 +211,16 @@ unused devices: <none>
 
 As we can see above, the [F] next to the partitions indicates that the disk has failed or is faulty.
 
-Next, we remove these partitions from the RAID arrays to completely remove the disk from RAID.
+Next, we remove these partitions from the RAID arrays.
 
 ```sh
-sudo mdadm --manage /dev/md2 --remove /dev/sda2
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --manage /dev/md2 --remove /dev/sda2
 
 # mdadm: hot removed /dev/sda2 from /dev/md2
 ```
 
 ```sh
-sudo mdadm --manage /dev/md4 --remove /dev/sda4
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --manage /dev/md4 --remove /dev/sda4
 
 # mdadm: hot removed /dev/sda4 from /dev/md4
 ```
@@ -271,10 +235,10 @@ shred -s10M -n1 /dev/sda4
 shred -s10M -n1 /dev/sda
 ```
 
-The disk now appears as a new one:
+The disk now appears as a new, empty drive:
 
 ```sh
-lsblk 
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk 
 NAME    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sda       8:0    0   1.8T  0 disk
 sdb       8:16   0   1.8T  0 disk
@@ -284,6 +248,78 @@ sdb       8:16   0   1.8T  0 disk
 ├─sdb3    8:19   0   512M  0 part  [SWAP]
 └─sdb4    8:20   0 973.6G  0 part
   └─md4   9:4    0 973.5G  0 raid1 /home
+```
+
+If we run the following command, we see that our disk has been successfully "wiped":
+
+```sh
+parted /dev/sda
+GNU Parted 3.5
+Using /dev/sda
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) p
+Error: /dev/sda: unrecognised disk label
+Model: HGST HUS724020AL (SATA)
+Disk /dev/sda: 1.8T
+Sector size (logical/physical): 512B/512B
+Partition Table: unknown
+Disk Flags:
+```
+
+Our RAID status should now look like this:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat 
+
+Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2 : active raid1 sdb2[0]
+      931954688 blocks super 1.2 [1/2] [_U]
+      bitmap: 2/7 pages [8KB], 65536KB chunk
+
+md4 : active raid1 sdb4[1]
+      1020767232 blocks super 1.2 [1/2] [_U]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+unused devices: <none>
+```
+
+From the results above, we can see that only two partitions now appear in the RAID arrays. We have successfully failed the disk **sda** and we can now proceed with the hypothetical disk replacement.
+
+For more information on how to prepare and request for a disk replacement, consult this [guide](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
+
+If you run the following command, you can have more details on the RAID array (s):
+
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --detail /dev/md4
+
+/dev/md4:
+           Version : 1.2
+     Creation Time : Tue Jan 24 15:35:02 2023
+        Raid Level : raid1
+        Array Size : 1020767232 (973.48 GiB 1045.27 GB)
+     Used Dev Size : 1020767232 (973.48 GiB 1045.27 GB)
+      Raid Devices : 2
+     Total Devices : 1
+       Persistence : Superblock is persistent
+
+     Intent Bitmap : Internal
+
+       Update Time : Tue Jan 24 16:28:03 2023
+             State : clean, degraded
+    Active Devices : 1
+   Working Devices : 1
+    Failed Devices : 0
+     Spare Devices : 0
+
+Consistency Policy : bitmap
+
+              Name : md4
+              UUID : 7b5c1d80:0a7ab4c2:e769b5e5:9c6eaa0f
+            Events : 21
+
+    Number   Major   Minor   RaidDevice State
+       -       0        0        0      removed
+       1       8       20        1      active sync   /dev/sdb4
 ```
 
 ### Rebuilding the RAID
@@ -299,7 +335,7 @@ The following steps document the RAID rebuild in rescue mode.
 > For most servers in software RAID, after a disk replacement, the server is able to reboot in normal mode (on the healthy disk) and the rebuild can be done in normal mode. However, if the server is not able to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode to proceed with the RAID rebuild.
 >
 
-#### Rebuilding the RAID after the main disk is replaced
+#### Rebuilding the RAID in rescue mode
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sdb) to the new one (sda).
 
@@ -307,7 +343,7 @@ Once the disk has been replaced, we need to copy the partition table from the he
 > **For GPT partitions**
 >>
 >> ```sh
->> sudo sgdisk -R /dev/sdX /dev/sdX
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/sdX /dev/sdX
 >> ```
 >>
 >> The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`
@@ -333,7 +369,7 @@ Once the disk has been replaced, we need to copy the partition table from the he
 >> The operation has completed successfully.
 >> ```
 >>
->> You can simply run the `partprobe` command or reboot the server when the raid rebuilt is done.
+>> You can simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
 >>
 > **For MBR partitions**
 >>
@@ -348,15 +384,17 @@ We can now rebuild the RAID array. The following code snippet shows how we can a
 
 
 ```sh
-sudo mdadm --add /dev/md2 /dev/sda2
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --add /dev/md2 /dev/sda2
 
 # mdadm: added /dev/sda2
 
-sudo mdadm --add /dev/md4 /dev/sda4
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --add /dev/md4 /dev/sda4
 
 # mdadm: re-added /dev/sda4
+```
 
-cat /proc/mdstat
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
 
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
 md2 : active raid1 sda2[0] sdb2[1]
@@ -373,7 +411,7 @@ unused devices: <none>
 We can verify the RAID details with the following command:
 
 ```sh
-mdadm --detail /dev/md4
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --detail /dev/md4
 
 /dev/md4:
         Version : 1.2
@@ -404,18 +442,20 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
+<a name="swap-partition"></a>
+
 #### Adding the label to the SWAP partition (if applicable)
 
-Once the RAID rebuild is complete, we mount the partition containing our files on `/mnt`. In our example, that partition is `md4`.
+Once the RAID rebuild is complete, we mount the partition containing the root of our operating system on `/mnt`. In our example, that partition is `md4`.
 
 ```sh
-mount /dev/md4 /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md4 /mnt
 ```
 
 We add the label back to our swap partition with the command `mkswap /dev/sdX -L swap-sdX`:
 
 ```sh
-mkswap /dev/sda4 -L swap-sda4
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/sda4 -L swap-sda4
 mkswap: /dev/sda4: warning: wiping old swap signature.
 Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
 LABEL=swap-nvme0n1p4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
@@ -424,6 +464,7 @@ LABEL=swap-nvme0n1p4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
 Next, we mount the following directories to make sure any manipulation we make in the chroot environment works properly:
 
 ```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ #
 mount --types proc /proc /mnt/proc
 mount --rbind /sys /mnt/sys
 mount --make-rslave /mnt/sys
@@ -436,32 +477,32 @@ mount --make-slave /mnt/run
 Next, we access the `chroot` environment:
 
 ```sh
-chroot /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
 ```
 
 We retrieve the UUIDs of both swap partitions:
 
 ```sh
-blkid /dev/sda4
-blkid /dev/sdb4
+root@rescue12-customer-eu:/# blkid -s UUID /dev/sda4
+root@rescue12-customer-eu:/# blkid -s UUID /dev/sdb4
 ```
 
 Example:
 
 ```sh
 blkid /dev/sda4
-/dev/sda4: LABEL="swap-sda4" UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15" TYPE="swap" PARTLABEL="logical" PARTUUID="cb6022d9-7631-449c-956a-116bcd0e2119"
+/dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
 ```
 
 ```sh
 blkid /dev/sdb4
-/dev/sdb4: LABEL="swap-sdb4" UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a" TYPE="swap" PARTLABEL="logical" PARTUUID="d037c35f-2ddb-40d5-be33-31cc496fe54b"
+/dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
 Next, we replace the old UUID of the swap partition (**sda4**) with the new one in `/etc/fstab`:
 
 ```sh
-nano etc/fstab
+root@rescue12-customer-eu:/# nano etc/fstab
 ```
 
 Example:
@@ -478,10 +519,7 @@ Make sure you replace the proper UUID. In our example above, the UUID to replace
 Next, we make sure everything is properly mounted:
 
 ```sh
- mount -av
-/                        : ignored
-mount: (hint) your fstab has been modified, but systemd still uses
-       the old version; use 'systemctl daemon-reload' to reload.
+root@rescue12-customer-eu:/# mount -av
 /boot                    : successfully mounted
 /boot/efi                : successfully mounted
 swap                     : ignored
@@ -491,13 +529,13 @@ swap                     : ignored
 We reload the system:
 
 ```sh
-systemctl daemon-reload
+root@rescue12-customer-eu:/# systemctl daemon-reload
 ```
 
-We enable the swap partition:
+We activate the swap partition:
 
 ```sh
-swapon -av
+root@rescue12-customer-eu:/# swapon -av
 
 swapon: /dev/sda4: found signature [pagesize=4096, signature=swap]
 swapon: /dev/sda4: pagesize=4096, swapsize=536870912, devsize=536870912
@@ -507,17 +545,17 @@ swapon: /dev/sdb4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/sdb4
 ```
 
-We exit the Chroot environment with `Exit` and unmount all the disks:
+We exit the chroot environment with `Exit` and unmount all the disks:
 
 ```sh
-umount -a
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
 ```
 
-We have now successfully completed the RAID rebuild on the server and we can now reboot the server in normal mode.
+We have now successfully completed the RAID rebuild on the server and we can now reboot it in normal mode.
 
-/// details | **Rebuilding the RAID after the secondary disk is replaced**
+/// details | **Rebuilding the RAID in normal mode**
 
-The following steps are done in normal mode. In our example, our secondary disk is named **sdb**.
+In our example, our disk is **sdb**.
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sda) to the new one (sdb).
 
@@ -545,12 +583,12 @@ Once the disk has been replaced, we need to copy the partition table from the he
 >> The operation has completed successfully.
 >> ```
 >>
->> You can simply run the `partprobe` command or reboot the server when the raid rebuilt is done.
+>> You can simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
 >>
 > **For MBR partitions**
 >>
 >> ```sh
->> sudo sfdisk -d /dev/sdX | sfdisk /dev/sdX 
+>> [user@server_ip ~]# sudo sfdisk -d /dev/sdX | sfdisk /dev/sdX 
 >> ```
 >>
 >> The command should be in this format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
@@ -559,11 +597,11 @@ Once the disk has been replaced, we need to copy the partition table from the he
 Next, we add the partitions to the RAID:
 
 ```sh
-sudo mdadm --add /dev/md2 /dev/sdb2
+[user@server_ip ~]# sudo mdadm --add /dev/md2 /dev/sdb2
 
 # mdadm: added /dev/sdb2
 
-sudo mdadm --add /dev/md4 /dev/sdb4
+[user@server_ip ~]# sudo mdadm --add /dev/md4 /dev/sdb4
 
 # mdadm: re-added /dev/sdb4
 ```
@@ -573,32 +611,34 @@ Use the following command to follow the RAID rebuild `cat /proc/mdstat`.
 Lastly, we add a label and mount the [SWAP] partition (if applicable):
 
 ```sh
-sudo  mkswap /dev/sdb4 -L swap-sdb4
+[user@server_ip ~]# sudo  mkswap /dev/sdb4 -L swap-sdb4
 ```
 
 We retrieve the UUIDs of both swap partitions:
 
 ```sh
-sudo blkid /dev/sda4
-sudo blkid /dev/sdb4
+[user@server_ip ~]# sudo blkid -s UUID /dev/sda4
+[user@server_ip ~]# sudo blkid -S UUID /dev/sdb4
 ```
 
 We replace the old UUID of the swap partition (**sdb4)** with the new one in `/etc/fstab`:
 
 ```sh
-sudo nano etc/fstab
+[user@server_ip ~]# sudo nano etc/fstab
 ```
 
-Make sure you replace the correct UUID. Reload the system with the following command:
+Make sure you replace the correct UUID.
+
+Then ensure systemd knows about the updated fstab with:
 
 ```sh
-sudo systemctl daemon-reload
+[user@server_ip ~]# sudo systemctl daemon-reload
 ```
 
-Next, run the following command to enable it:
+Next, run the following command to activate the SWAP partition:
 
 ```sh
-sudo swapon -av
+[user@server_ip ~]# sudo swapon -av
 ```
 
 We have now successfully completed the RAID rebuild.
