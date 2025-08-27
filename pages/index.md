@@ -1796,7 +1796,7 @@
             + [Web Cloud Databases EOS and EOL announcements](web_cloud/web_cloud_databases/clouddb-eos-eol)
             + [Managed databases EOL policy](web_cloud/web_cloud_databases/eol-policy)
             + [Reversibility Policy for the Managed Database System for Web Hosting product](/pages/account_and_service_management/reversibility/25-db-web-hosting-reversibility)
-+ Email & office tools
++ Emails & office tools
     + [Common email features](web-cloud-email-collaborative-solutions-common-email-features)
         + [Managing the security policy of an email service](web_cloud/email_and_collaborative_solutions/common_email_features/security-policy)
         + [Using email aliases and redirections](web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
@@ -2098,7 +2098,7 @@
             + [API SMS Cookbook](web_cloud/messaging/sms/api_sms_cookbook)
         + [SMPP](web-cloud-messaging-sms-smpp)
             + [Managing an SMS SMPP account](web_cloud/messaging/sms/smpp-control-panel)
-            + [SMPP Technical Specifications](web_cloud/messaging/sms/smpp-specification
+            + [SMPP Technical Specifications](web_cloud/messaging/sms/smpp-specification)
 + Network
     + [General Information](network-general-information)
         + [How to troubleshoot your network using OVHcloud tools](network/network_tools)
@@ -2428,7 +2428,6 @@
         + [AI Training - Tutorials](tutorials-ai-training)
             + [AI Training - Tutorial - Train your first ML model](public_cloud/ai_machine_learning/training_tuto_01_train_your_first_model)
             + [AI Training - Tutorial - Build & use custom Docker image](public_cloud/ai_machine_learning/training_tuto_02_build_custom_image)
-            + [AI Training - Tutorial - Run your first Tensorflow code with GPUs](public_cloud/ai_machine_learning/training_tuto_03_tensorflow_gpu)
             + [AI Training - Tutorial - Connect to VSCode via remote](public_cloud/ai_machine_learning/training_tuto_04_vscode_remote)
             + [AI Training - Tutorial - Use tensorboard inside a job](public_cloud/ai_machine_learning/training_tuto_05_tensorboard)
             + [AI Training - Tutorial - Compare models with W&B for audio classification task](public_cloud/ai_machine_learning/training_tuto_06_models_comparaison_weights_and_biases)
@@ -2475,7 +2474,6 @@
         + [FAQ Public Cloud databases](public_cloud/public_cloud_databases/information_04_faq)
         + [FAQ](public_cloud/containers_orchestration/managed_private_registry/managed-private-registry-faq)
         + [FAQ - AI Training](public_cloud/ai_machine_learning/gi_04_training_FAQ)
-        + [FAQ](public_cloud/data_analytics/data_processing/faq)
         + [Web Hosting FAQ](web_cloud/web_hosting/faq-web_hosting)
         + [Object Storage - FAQ](storage_and_backup/object_storage/s3_faq)
         + [Cold Archive - FAQ](storage_and_backup/object_storage/cold_archive_faq)
