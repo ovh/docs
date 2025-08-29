@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2025-05-15
+updated: 2025-08-27
 ---
 
 ## Ziel
@@ -144,6 +144,16 @@ Um eine bestehende Richtlinie zu löschen, klicken Sie auf `...`{.action} rechts
 In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen.
 
 <a name="create-users"></a>
+
+#### Richtlinien für andere OVHcloud Kunden-Accounts
+
+Zugriffsrichtlinien können auf andere Kunden-Accounts übertragen werden.  
+Der Ziel-Account der Richtlinie kann die auf diese Weise erhaltenen Rechte in seinen eigenen Richtlinien verwalten, aber niemals die in der Zugriffsrichtlinie festgelegten Berechtigungen überschreiten.
+
+Beispiel: Der Account **xx1111-ovh** gewährt die Rechte für `vps:apiovh:ips/*` dem Account **xx2222-ovh**.  
+Der Account **xx2222-ovh** kann dann seinen eigenen Nutzern das Recht `vps:apiovh:ips/delete` zuweisen, aber nicht das Recht `vps:apiovh:reboot`.
+
+Der Zugriff auf den Support bleibt weiterhin dem Inhaber der Ressource vorbehalten.
 
 ### Verwaltung von Identitäten
 

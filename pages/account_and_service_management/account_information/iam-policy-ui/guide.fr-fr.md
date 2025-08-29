@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2025-05-15
+updated: 2025-08-27
 ---
 
 ## Objectif
@@ -144,6 +144,16 @@ Pour supprimer une politique existante, cliquez sur le bouton `...`{.action} à 
 Une fenêtre contextuelle vous demandera de confirmer la suppression.
 
 <a name="create-users"></a>
+
+#### Cas des politiques ciblant d'autres comptes clients OVHcloud
+
+Les politiques d'accès peuvent cibler d'autres comptes clients.
+Le compte destinataire de cette politique pourra gérer les droits ainsi reçus dans ses propres politiques d'accès, mais ne pourra jamais outrepasser les droits tels que défini dans la politique d'accès.
+
+Par exemple un compte **xx1111-ovh** donnant des droits `vps:apiovh:ips/*` au compte **xx2222-ovh**.
+Le compte **xx2222-ovh** pourra donner le droit `vps:apiovh:ips/delete` à ses propres utilisateurs, mais ne pourra jamais donner le droit `vps:apiovh:reboot`.
+
+L'accès au support restera réservé au compte propriétaire de la ressource.
 
 ### Gestion des identités
 

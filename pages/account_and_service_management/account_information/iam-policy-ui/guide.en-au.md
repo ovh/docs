@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-05-15
+updated: 2025-08-27
 ---
 
 ## Objective
@@ -143,6 +143,16 @@ To delete an existing policy, click the `...`{.action} button to the right of th
 A popup window will ask you to confirm the deletion.
 
 <a name="create-users"></a>
+
+#### Policies targeting other OVHcloud customer accounts
+
+Access policies can target other OVHcloud customer accounts.  
+The targeted account of this policy will be able to manage the rights received that way on its own policies, but will never be able to override the rights set on the access policy.
+
+For example, an account **xx1111-ovh** gives rights on `vps:apiovh:ips/*` to account **xx2222-ovh**:  
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to its own users, but will never be able to grant the right `vps:apiovh:reboot`.
+
+Access to the support will still be reserved to the owner of the resource.
 
 ### Managing identities
 

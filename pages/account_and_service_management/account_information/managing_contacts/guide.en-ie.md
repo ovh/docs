@@ -1,7 +1,7 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2025-04-28
+updated: 2025-08-27
 ---
 
 ## Objective
@@ -9,6 +9,10 @@ updated: 2025-04-28
 Most services created with OVHcloud are managed by several contacts. Each of these contacts is linked to a unique NIC handle (Customer ID). 
 
 **Find out how to manage contacts for your OVHcloud services.**
+
+> [!primary]
+> OVHcloud offers an [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) system allowing to delegate access to other customer accounts.  
+> IAM policies enable precise access control while keeping tracability of the actions.
 
 ## Definition
 
@@ -24,11 +28,11 @@ The NIC handle is a personal username that you receive via email when you create
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
-- Access to the email address linked to any relevant customer account
-- Appropriate rights for the service concerned
-- The new contact’s NIC handle (the contact you want to add)
-- No outstanding payments on billing contacts
+- Access to the [OVHcloud Control Panel](/links/manager).
+- Access to the email address linked to any relevant customer account.
+- Appropriate rights for the service concerned.
+- The new contact’s NIC handle (the contact you want to add).
+- No outstanding payments on billing contacts.
 
 ## Instructions
 

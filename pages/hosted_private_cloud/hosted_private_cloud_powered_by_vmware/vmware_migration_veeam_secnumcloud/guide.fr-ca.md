@@ -1,7 +1,7 @@
 ---
 title: Move2Cloud - Migration de charges VMware vers OVHcloud SecNumCloud avec Veeam Replication
 excerpt: "Découvrez comment migrer vos charges de travail VMware on-premises vers un environnement Hosted Private Cloud SecNumCloud d’OVHcloud à l’aide de Veeam Replication."
-updated: 2025-04-18
+updated: 2025-08-27
 ---
 
 ## Objectif
@@ -147,11 +147,36 @@ Consultez le guide « [VMware Storage vMotion](/pages/hosted_private_cloud/hoste
 
 ### Étape 17 : Créer des jobs de sauvegarde
 
-Protégez vos VMs à long terme en créant des jobs de sauvegarde Veeam vers le **stockage objet OVHcloud** (compatible S3<sup>(1)</sup>).
+Protégez vos VMs à long terme en créant des jobs de sauvegarde Veeam vers le **stockage objet OVHcloud** (compatible S3<sup>1</sup>).
 
 Suivez les étapes décrites dans notre guide « [Object Storage - Utiliser Object Storage avec Veeam](/pages/storage_and_backup/object_storage/s3_veeam) ».
 
 <sup>1</sup> : S3 est une marque déposée d’Amazon Technologies, Inc. Le service d’OVHcloud n’est ni sponsorisé, ni approuvé, ni affilié de quelque manière que ce soit à Amazon Technologies, Inc.
+
+## Dépannage
+
+### Vérifier l’accessibilité des hôtes ESXi
+
+Si vous rencontrez des difficultés pour accéder à l’infrastructure Hosted Private Cloud lors de l’exécution de vos sauvegardes, testez l’accès pour chacun des hôtes du cluster depuis vos composants Veeam (serveur, proxy).
+
+Exemple pour l’hôte .50 :
+
+**Sous Windows (PowerShell)** :
+
+```powershell
+Test-NetConnection -ComputerName [IP_Host_PCC] -Port 950
+```
+
+**Sous Linux** :
+
+```bash
+nc -vz [IP_Host_PCC] 950
+```
+
+>[!primary]
+> - Si les hôtes ne sont pas accessibles, créez une règle sortante sur vos composants Veeam afin d’autoriser la plage de ports **950-999**.
+> - Selon le nombre d’hôtes, vous pouvez également devoir ouvrir les plages **1100-1255** et **1300-1551**.
+> - Si les hôtes sont accessibles malgré l’erreur rencontrée, rapprochez-vous du [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) afin d’analyser la problématique.
 
 ## Aller plus loin
 

@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar los contactos de los servicios'
 excerpt: 'Cómo gestionar los distintos contactos de los servicios de OVHcloud'
-updated: 2025-04-28
+updated: 2025-08-27
 ---
 
 ## Objetivo
@@ -10,12 +10,9 @@ La mayoría de servicios creados en OVHcloud los gestionan varios contactos. Cad
 
 **Esta guía explica cómo gestionar los contactos de los servicios de OVHcloud.**
 
-> [!warning]
->
-> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
->
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#mas-informacion) de esta guía.
->
+> [!primary]
+> OVHcloud pone a su disposición un sistema de gestión de [política de acceso IAM](/pages/account_and_service_management/account_information/iam-policy-ui/) que permite delegar los accesos a otras cuentas de cliente.  
+> Las políticas de acceso IAM permiten definir permisos de acceso granulares, conservando la trazabilidad de las acciones.
 
 ## Definición
 

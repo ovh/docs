@@ -1,7 +1,7 @@
 ---
 title: "Cómo utilizar las políticas de IAM con la API de OVHcloud (EN)"
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-07-17
+updated: 2025-08-27
 ---
 
 ## Objective
@@ -356,6 +356,16 @@ The available operators for condition types are:
 - **IN_RANGE**: The value must be in the specified IP subnet
 
 If not specified, the default operator is **EQ**.
+
+#### Policies targeting other OVHcloud customer accounts
+
+Access policies can target other OVHcloud customer accounts.  
+The targeted account of this policy will be able to manage the rights received that way on its own policies, but will never be able to override the rights set on the access policy.
+
+For example, an account **xx1111-ovh** gives rights on `vps:apiovh:ips/*` to account **xx2222-ovh**:  
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to its own users, but will never be able to grant the right `vps:apiovh:reboot`.
+
+Access to the support will still be reserved to the owner of the resource.
 
 ### Identities
 

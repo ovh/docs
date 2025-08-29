@@ -1,7 +1,7 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2025-05-15
+updated: 2025-08-27
 ---
 
 ## Wprowadzenie
@@ -144,6 +144,16 @@ Aby usunąć istniejącą politykę, kliknij przycisk `...`{.action} po prawej s
 W oknie podręcznym zostanie wyświetlona prośba o potwierdzenie usunięcia hosta.
 
 <a name="create-users"></a>
+
+#### Polityki kierowane do innego konta klienta OVHcloud
+
+Polityka dostępu może być skierowana do innego konta klienta OVHcloud.
+Konto docelowe tych zasad będzie mogło zarządzać prawami uzyskanymi w ten sposób zgodnie z jego własnymi zasadami, ale nigdy nie będzie mogło zastąpić praw ustawionych w zasadach dostępu.
+
+Na przykład konto **xx111-ovh** dające uprawnienia na koncie "vps:apiovh:ips/*" **xx222-ovh**.
+Konto **xx222-ovh** będzie mogło przyznać prawo `vps:apiovh:ip/delete` swoim użytkownikom, ale nigdy nie będzie mogło przyznać prawa `vps:apiovh:reboot`.
+
+Dostęp do pomocy technicznej będzie zawsze zarezerwowany dla właściciela zasobu.
 
 ### Zarządzanie tożsamością
 

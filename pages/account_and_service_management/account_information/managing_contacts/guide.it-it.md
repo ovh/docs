@@ -1,7 +1,7 @@
 ---
 title: 'Gestire i contatti dei servizi OVHcloud'
 excerpt: 'Come gestire i contatti dei tuoi servizi dallo Spazio Cliente OVHcloud'
-updated: 2025-04-28
+updated: 2025-08-27
 ---
 
 ## Obiettivo
@@ -10,12 +10,9 @@ Un servizio OVHcloud è generalmente associato a diversi contatti,  che possono 
 
 **Questa guida ti mostra quali contatti è possibile associare ai tuoi servizi, quali operazioni possono effettuare e come modificarli dallo Spazio Cliente OVHcloud.**
 
-> [!warning]
->
-> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
->
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#per-saperne-di-piu) su questa guida.
->
+> [!primary]
+> OVHcloud mette a disposizione un sistema di gestione di [politica di accesso IAM](/pages/account_and_service_management/account_information/iam-policy-ui/) che permette di delegare gli accessi ad altri account cliente.  
+> Le policy di accesso IAM consentono di definire permessi di accesso granulari mantenendo la tracciabilità delle azioni.
 
 ## Definizione
 

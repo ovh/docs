@@ -1,7 +1,7 @@
 ---
 title: Cómo utilizar las políticas IAM desde el área de cliente
 excerpt: Cómo conceder permisos de acceso específicos a los usuarios desde una cuenta de OVHcloud
-updated: 2025-05-15
+updated: 2025-08-27
 ---
 
 ## Objetivo
@@ -144,6 +144,16 @@ Para eliminar una política existente, haga clic en el botón `...`{.action} a l
 Aparecerá una ventana emergente en la que deberá confirmar la eliminación.
 
 <a name="create-users"></a>
+
+#### Casos de políticas dirigidas a otras cuentas de cliente de OVHcloud
+
+Las directivas de acceso pueden dirigirse a otras cuentas de cliente.
+La cuenta receptora de esta política podrá gestionar los derechos así recibidos en sus propias políticas de acceso, pero nunca podrá sobrepasar los derechos tal como se definen en la política de acceso.
+
+Por ejemplo, una cuenta **xx111-ovh** que concede permisos `vps:apiovh:ips/*` a la cuenta **xx222-ovh**.
+La cuenta **xx222-ovh** podrá conceder el derecho `vps:apiovh:ips/delete` a sus propios usuarios, pero no podrá conceder el derecho `vps:apiovh:reboot`.
+
+El acceso al soporte quedará reservado a la cuenta propietaria del recurso.
 
 ### Gestión de identidades
 

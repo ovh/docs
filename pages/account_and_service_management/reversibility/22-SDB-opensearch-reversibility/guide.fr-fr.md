@@ -1,6 +1,6 @@
 ---
 title: "Politique de réversibilité du produit Managed Search Engine Software Platform"
-updated: 2025-07-15
+updated: 2025-08-28
 ---
 
 ## Objectif
@@ -31,7 +31,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
 | Sauvegardes automatiques managées par OVHcloud | Sauvegardes quotidiennes gérées par OVHcloud (rétention variable selon l’offre choisie) | Snapshots internes OVHcloud | **Entrante** : non applicable. Fonctionnalité disponible par défaut et aucune action requise par l’utilisateur de la plateforme <br>**Sortante** : création d’un nouveau service, restauration locale d’un snapshot OVHcloud, puis export manuel vers le nouvel environnement | [Public Cloud Databases - Sauvegardes automatiques (EN)](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) |
-| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : <br>**Sortante** :  | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
+| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : activation et configuration de la connexion réseau <br>**Sortante** : prendre note de l'architecture réseau et la reproduire avec des VLANs. | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
 | Access Control List (ACL)  | Gestion des droits d’accès via l'interface OVHcloud | NA | **Entrante** : création manuelle des règles dans l’interface OVHcloud <br>**Sortante** : conversion des règles ACL au format du nouveau fournisseur | [OpenSearch - Capabilities and Limitations (EN)](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities) |
 | Métriques | Collecte de métriques intégrée à l’infrastructure OVHcloud | Prometheus metrics | **Entrante** : envoi des logs via un point d’entrée dédié <br>**Sortante** : export possible et reconfiguration nécessaire sur la nouvelle plateforme | [OpenSearch - Surveillez votre infra (avec Logstash ou Fluent Bit) (EN)](/pages/public_cloud/public_cloud_databases/opensearch_200_elk_like) |
 

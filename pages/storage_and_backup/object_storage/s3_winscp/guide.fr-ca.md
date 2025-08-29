@@ -22,15 +22,15 @@ Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages
 
 Démarrez WinSCP. La boîte de dialogue de connexion s'affiche. Dans la boîte de dialogue :
 
-1. Assurez-vous que le nœud « Nouveau site » est sélectionné.
+1\. Assurez-vous que le nœud « Nouveau site » est sélectionné.
 
 ![Login dialog](images/login_dialog.png)
 
-2. Sur le nœud Nouveau site, sélectionnez le protocole `Amazon S3`{.action}.
+2\. Sur le nœud Nouveau site, sélectionnez le protocole `Amazon S3`{.action}.
 
 ![Amazon S3 file protocol](images/S3_file_protocol.png)
 
-3. Entrez votre Endpoint (sans `https://`) correspondant à votre classe de stockage et définissez le champ `Port number` sur `443`.
+3\. Entrez votre Endpoint (sans `https://`) correspondant à votre classe de stockage et définissez le champ `Port number` sur `443`.
 
 > [!primary]
 >
@@ -39,17 +39,17 @@ Démarrez WinSCP. La boîte de dialogue de connexion s'affiche. Dans la boîte d
 
 ![Host name](images/hostname.png)
 
-4. Entrez votre `Clé d'accès`
+4\. Entrez votre `Clé d'accès`
 
 Afin de respecter les bonnes pratiques, veuillez ne renseigner que le champ `Acces key ID`
 
 ![Access key](images/access_key.png)
 
-5. Enregistrez les paramètres de votre site à l'aide du bouton `Save`{.action}.
+5\. Enregistrez les paramètres de votre site à l'aide du bouton `Save`{.action}.
 
 ![Save config](images/save_config.png)
 
-6. Connectez-vous à l'aide du bouton `Login`{.action}.
+6\. Connectez-vous à l'aide du bouton `Login`{.action}.
 
 ![Login](images/login.png)
 
@@ -57,7 +57,7 @@ Entrez ensuite votre `clé secrète`
 
 ![Clé secrète](images/secret_key.png)
 
-7. Résultat
+7\. Résultat
 
 Une fois connecté, vous verrez une liste de vos buckets Object Storage sous la forme de *dossiers* dans le dossier racine.
 

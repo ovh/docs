@@ -1,6 +1,6 @@
 ---
 title: "Reversibility Policy for the Managed Search Engine Software Platform product"
-updated: 2025-07-15
+updated: 2025-08-28
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ Features of the product line fall into three categories:
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
 | Automatic backups managed by OVHcloud | Daily backups managed by OVHcloud (retention varies depending on the chosen offer) | OVHcloud internal snapshots | **Inbound**: not applicable. Feature available by default and no action is required by the user of the platform <br>**Outbound**: create a new service, restore an OVHcloud snapshot locally, then export it manually to the new environment | [Public Cloud Databases - Automatic backups ](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) |
-| vRack | The vRack or virtual rack, is a private VLAN technology that enables the connection between OVHcloud services | NA | **Inbound**: <br>**Outbound**: | [Creating Public Cloud Databases V(x)LANs](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
+| vRack | The vRack, or virtual rack, is a private VLAN technology that enables the connection between OVHcloud services | NA | **Inbound**: enable and configure network connection <br>**Outbound**: take note of the network architecture and reproduce it with VLANs | [Creating Public Cloud Databases V(x)LANs](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
 | Access Control List (ACL) | Manage access rights via the OVHcloud interface | NA | **Inbound**: create rules manually in the OVHcloud interface <br>**Outbound**: convert ACL rules to new provider format | [OpenSearch - Capabilities and Limitations](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities) |
 | Metrics | Metrics collection integrated into the OVHcloud infrastructure | Prometheus metrics | **Inbound**: send logs via a dedicated entry point <br>**Outbound**: possible export and reconfiguration needed on the new platform | [OpenSearch - Monitor your infrastructure ](/pages/public_cloud/public_cloud_databases/opensearch_200_elk_like) |
 

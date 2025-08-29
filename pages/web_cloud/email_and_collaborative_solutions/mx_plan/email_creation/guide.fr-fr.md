@@ -49,7 +49,7 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-400}
 
-### OWA et Zimbra 
+### OWA et Zimbra
 
 Cette section documente les offres MX Plan utilisant la technologie webamil **OWA** et **Zimbra**.
 

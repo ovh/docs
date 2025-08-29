@@ -1,7 +1,7 @@
 ---
 title: 'Gérer les contacts de ses services'
 excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
-updated: 2025-04-28
+updated: 2025-08-27
 ---
 
 ## Objectif
@@ -10,21 +10,25 @@ La plupart des services créés chez OVHcloud sont gérés par plusieurs contact
 
 **Apprenez comment gérer les contacts de vos services OVHcloud.**
 
+> [!primary]
+> OVHcloud met à disposition un système de gestion de [politique d'accès IAM](/pages/account_and_service_management/account_information/iam-policy-ui/) permettant de déléguer des accès à d'autres comptes clients.  
+> Les politiques d'accès IAM permettent de définir des permissions d'accès granulaires tout en gardant la traçabilité des actions.
+
 ## Définition
 
 Trois types de contacts existent:
 
-- **le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du propriétaire d'un service, comme les noms de domaine par exemple .
-- **le contact technique** gère uniquement les aspects techniques d'un service .
-- **le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
+- **Le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du propriétaire d'un service, comme les noms de domaine par exemple .
+- **Le contact technique** gère uniquement les aspects techniques d'un service .
+- **Le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
 
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer de droits suffisants  sur le service concerné.
-- Disposer d'un accès à l'adresse e-mail renseignée dans votre compte OVHcloud
+- Disposer d'un accès à l'adresse e-mail renseignée dans votre compte OVHcloud.
 - Connaître l'adresse e-mail principale renseignée dans le compte OVHcloud du nouveau contact (pour qui vous réalisez la modification).
 - Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail principale renseignée dans son compte OVHcloud.
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
