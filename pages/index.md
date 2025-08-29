@@ -2388,7 +2388,6 @@
             + [Dashboards - Tutorial - How to use the Dashboards API](public_cloud/public_cloud_databases/grafana_tuto_02_using_api)
         + [Managed Kubernetes - Tutorials](tutorials-managed-kubernetes)
             + [Deploying a Hello World application with the OVHcloud Control Panel](public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world)
-            + [Deploying a Hello World with the OVHcloud API](public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world-ovh-api)
             + [Installing the Kubernetes Dashboard on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/installing-kubernetes-dashboard)
             + [Installing Helm on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/installing-helm)
             + [Installing WordPress on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/installing-wordpress)
