@@ -1,0 +1,203 @@
+---
+title: Transfert des logs (Log Forwarding) pour OVHcloud Connect
+excerpt: Découvrez comment transférer vos logs depuis un service OCC vers Logs Data Platform
+updated: 2025-08-28
+---
+
+## Objectif
+
+L'objectif de ce guide est de vous montrer comment activer la redirection de logs de votre service OVHcloud Connect vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
+Pour en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
+
+## Glossaire
+
+- **Logs Data Platform :** une plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](/links/manage-operate/ldp).
+- **Data Stream:** une partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
+- **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
+- **Abonnement à la redirection de logs :** lors de l'activation de la redirection de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *Abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
+
+## Prérequis
+
+- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous accompagnera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+    - Si vous ne connaissez pas toutes les possibilités de configuration d'un *Stream* LDP, il vous suffit d'en créer un nouveau avec les options par défaut (indexation & websocket activés, stockage longue durée désactivé) pour suivre ce guide.
+- Un service [OVHcloud Connect](/pages/network/ovhcloud_connect/occ-concepts-overview) opérationnel.
+- Le compte LDP et le compte OVHcloud Connect doivent appartenir au même compte OVHcloud.
+
+## Concepts & limites
+
+**Quels sont les logs d’un OVHcloud Connect ?**
+
+### Types de logs:
+
+Il existe quatre types de logs qui peuvent être transférés :
+
+- **service** : Événements liés au cycle de vie du service (suspendu, livré, etc).
+- **service_configuration** : Événements liés à la configuration du service, y compris l'ajout ou la suppression de configurations DC/POP.
+- **bgp** : Statut de la session BGP.
+- **interface** : Événements liés à l'interface de fibre optique, y compris les signaux entrant et sortant.
+
+### Contenu des logs : 
+
+| Nom du champ | Description | Type |
+|------------|-------------|---------| 
+| kind | Le type de log transféré | String |
+| message | Une description explicite de l'événement enregistré | String |
+| neighbor | L'adresse distante dans le sous-réseau établi entre le service OVHcloud Connect et le PoP | IP |
+| service_uuid | L'UUID du service OVHcloud Connect concerné par l'événement | String |
+| timestamp | L'horodatage auquel l'événement a été enregistré | datetime (with millisecond resolution) e.g. 08/Sep/2025:11:35:19.854 |
+
+## En pratique
+
+Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](/links/manage-operate/ldp).
+
+### Activation du Log Forwarding d'OVHcloud Connect via API
+
+Vous devrez définir le *Stream* ciblé de l’un de vos comptes LDP vers lequel vous souhaitez transférer vos logs. L'activation du *forwarding* va créer un abonnement pour cet ID de flux.
+
+Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](/links/api) :
+
+> [!api]
+>
+> @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/output/graylog/stream
+>
+
+#### Étape 1 - Récupérer le Stream (et l'ID) cible
+
+Listez les flux de données de votre compte Logs Data Platform (renseignez votre identifiant LDP sous la forme ldp-xx-xxxx dans le champ « serviceName ») :
+
+> [!api]
+>
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream
+>
+
+Obtenez les détails d'un flux de données :
+
+> [!api]
+>
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
+>
+
+#### Étape 2 - Créez votre abonnement
+
+Utilisez l'appel API suivant pour créer un abonnement :
+
+> [!api]
+>
+> @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/log/subscription
+>
+
+> [!primary]
+> Vous devrez remplacer :
+>
+> - **serviceName** : il s'agit du nom interne de votre service OVHcloud Connect, que vous pouvez retrouver sur la page de gestion du OVHcloud Connect de votre espace client OVHcloud ou en utilisant l'appel API suivant :
+>
+> > [!api]
+> >
+> > @api {v1} /ovhCloudConnect GET /ovhCloudConnect
+> >
+>
+
+La requête POST a une charge utile qui nécessite :
+
+- `kind` : le type de journal que vous voulez transférer, parmi "service", "service_configuration", "bgp" et "interface".
+- `streamId` : flux de données cible de votre compte LDP vers lequel vous souhaitez que vos logs du service OVHcloud Connect soient transférés.
+
+> [!primary]
+> Vous pouvez trouver les types (`kind`) disponibles en utilisant l'appel API suivant :
+>
+> > [!api]
+> >
+> > @api {v1} /ovhCloudConnect GET  /ovhCloudConnect/{serviceName}/log/kind
+> >
+>
+
+```shell
+POST /ovhCloudConnect/{serviceName}/log/subscription
+{
+  "kind": "string", // "http" or "tcp".
+  "streamId": "198ef9d5-c320-4000-8bee-236623da5b80" // Le streamID du stream ciblé.
+}
+```
+
+Vous obtiendrez en réponse un `operationId` :
+
+```shell
+{
+  "operationId": "f550aa1c-89ab-4b1a-81ae-4fba4959966f",
+  "serviceName": "occ-xxxxx"
+}
+```
+
+Vous pouvez utiliser le `operationId` pour récupérer le `subscriptionId` à des fins de gestion ultérieure à l'aide de l'appel API suivant :
+
+> [!api]
+>
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/operation/{operationId}
+>
+
+Une fois l'opération terminée, vous pouvez également récupérer les abonnements à l'aide de l'appel API suivant :
+
+> [!api]
+>
+> @api {v1} /ovhCloudConnect GET /ovhCloudConnect/{serviceName}/log/subscription
+>
+
+Une fois en possession du `subscriptionId`, vous pouvez obtenir les détails via l'appel API suivant :
+
+> [!api]
+>
+> @api {v1} /ovhCloudConnect GET /ovhCloudConnect/{serviceName}/log/subscription/{subscriptionId}
+>
+
+```shell
+GET /ovhCloudConnect/{serviceName}/log/subscription/{subscriptionId}
+
+{
+"createdAt": "2025-08-28T07:42:50.645Z",
+"kind": "string",
+"resource": {
+  "name": "string",
+  "type": "string"
+},
+"serviceName": "string",
+"streamId": "string",
+"subscriptionId": "198efa11-f150-4000-8e8d-871b1e482b80",
+"updatedAt": "2025-08-28T07:42:50.645Z"
+}
+```
+
+### Comment utiliser les logs OVHcloud Connect ?
+
+Maintenant que vos logs sont ingérés et stockés dans votre flux de données Logs Data Platform, vous pouvez interroger vos logs et créer des tableaux de bord pour avoir une représentation graphique de vos logs en utilisant l'interface web de Graylog.
+
+- Dans votre espace client, récupérez le nom d'utilisateur LDP (ex: logs-xxxx) et son mot de passe sur la page d'accueil de votre compte Logs Data Platform. Vous pouvez vous référer au [Guide de démarrage rapide pour Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+- Ouvrez l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est `https://gra1.logs.ovh.com/`).
+- Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
+- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries (EN)](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html) pour plus de détails sur la syntaxe de recherche.
+
+Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs (EN)](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec Logs Data Platform, y compris sur la façon de :
+
+- mettre en place des alertes
+- consulter les logs en temps réel via un WebSocket
+- créer une visualisation avec les tableaux de bord OpenSearch
+- créer une intégration avec l'API OpenSearch
+- se connecter avec Grafana
+
+### Comment gérer vos abonnements ?
+
+À tout moment, vous pouvez récupérer les abonnements attachés à votre flux Logs Data Platform et choisir de désactiver la redirection en annulant votre abonnement sur votre flux, de sorte que votre flux Logs Data Platform ne reçoive plus vos journaux d'audit.
+
+Notez que cela ne supprime pas les journaux stockés avant l'annulation de l'abonnement, car les données stockées dans un flux de journal sont immuables, sauf si vous supprimez le flux entier.
+
+Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
+
+> [!api]
+>
+> @api {v1} /ovhCloudConnect DELETE /ovhCloudConnect/{serviceName}/log/subscription/{subscriptionId}
+>
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demandez à nos experts Professional Services de vous aider sur votre cas d'utilisation spécifique de votre projet.
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
