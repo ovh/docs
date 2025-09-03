@@ -22,7 +22,7 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
     - A [Web Hosting](/links/web/hosting) offer.
     - A [100M free hosting](/links/web/domains-free-hosting) included with a domain name (activated beforehand).
     - An MX Plan solution ordered separately.
-- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
+- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
 
 > [!primary]
 >
@@ -108,7 +108,7 @@ Select the tab corresponding to the email technology of your MX Plan solution:
 >>
 > **OWA**
 >>
->> When you log in to the webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear. To find out how to use your email address via the Outlook Web App (OWA), please use our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) .
+>> When you log in to the webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear. To find out how to use your email address via the Outlook Web App (OWA), please use our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 >>
 >>![email](images/mxplan-creation-new-step5.png){.thumbnail .w-400}
 
