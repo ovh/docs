@@ -149,6 +149,28 @@ nvme0n1     259:1    0 476.9G  0 disk
 └─nvme0n1p5 259:6    0     2M  0 part
 ```
 
+Additionally, If we run  `lsblk -f` we have more information of these partitions such as their LABELS and UUID
+
+```sh
+[user@server_ip ~]# sudo lsblk -f
+NAME        FSTYPE            FSVER            LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINT
+nvme1n1
+├─nvme1n1p1 vfat              FAT16            EFI_SYSPART    B493-9DFA
+├─nvme1n1p2 linux_raid_member 1.2              md2            baae988b-bef3-fc07-615f-6f9043cfd5ea
+│ └─md2     ext4              1.0              boot           96850c4e-e2b5-4048-8c39-525194e441aa  851.8M     7% /boot
+├─nvme1n1p3 linux_raid_member 1.2              md3            ce0c7fac-0032-054c-eef7-7463b2245519
+│ └─md3     ext4              1.0              root           6fea39e9-6297-4ea3-82f1-bf1a3e88106a  441.3G     0% /
+└─nvme1n1p4 swap              1                swap-nvme1n1p4 483b9b41-ada3-4143-8cac-5bff7afb73c7                [SWAP]
+nvme0n1
+├─nvme0n1p1 vfat              FAT16            EFI_SYSPART    B486-9781                             504.9M     1% /boot/efi
+├─nvme0n1p2 linux_raid_member 1.2              md2            baae988b-bef3-fc07-615f-6f9043cfd5ea
+│ └─md2     ext4              1.0              boot           96850c4e-e2b5-4048-8c39-525194e441aa  851.8M     7% /boot
+├─nvme0n1p3 linux_raid_member 1.2              md3            ce0c7fac-0032-054c-eef7-7463b2245519
+│ └─md3     ext4              1.0              root           6fea39e9-6297-4ea3-82f1-bf1a3e88106a  441.3G     0% /
+├─nvme0n1p4 swap              1                swap-nvme0n1p4 51e7172b-adb0-4729-b0f8-613e5dede38b                [SWAP]
+└─nvme0n1p5 iso9660           Joliet Extension config-2       2025-08-05-14-55-41-00
+```
+
 We take note of the devices, partitions and their mount points.
 
 From the above commands and results, we have:
@@ -156,6 +178,8 @@ From the above commands and results, we have:
 - Two RAID arrays: `/dev/md2` and `/dev/md3`.
 - Partitions part of the RAID: `/boot` and `/`.
 - Partitions not part of the RAID: `/boot/efi` and [SWAP].
+
+The partition `nvme0n1p5`
 
 ### Understanding the EFI System Partition (ESP)
 
@@ -208,16 +232,16 @@ You will then be able to use rescue mode to recreate a new ESP and restore it fr
 
 ***What if the main disk mounted on `boot/efi` fails?***
 
-**Scenario 1** - There have been no changes or major system updates (grub) to the mounted ESP:
+**Case study 1** - There have been no changes or major system updates (GRUB) to the mounted ESP:
 
-- The server is rebooted in rescue mode, where you can rebuild the RAID, recreate the EFI System partition on the new disk and copy the content from the healthy disk. The server should be able to reboot in normal mode.
+- The server is rebooted in rescue mode where you can rebuild the RAID, recreate the EFI System partition on the new disk and copy the content from the healthy disk. The server should be able to reboot in normal mode.
 - The server is able to reboot in normal mode and you can proceed with the RAID rebuild.
 
-**Scenario 2** - There have been major system updates (grub) to the mounted ESP and the partitions have been synchronised:
+**Case study 2** - There have been major system updates (GRUB) to the mounted ESP and the partitions have been synchronised:
 
 - The server is rebooted in normal mode because all the ESPs contain up-to-date information and the RAID rebuild can be carried out in normal mode.
 
-**Scenario 3** - There have been major system updates (grub) to the mounted ESP and the partitions have not been synchronised:
+**Case study 3** - There have been major system updates (grub) to the mounted ESP and the partitions have not been synchronised:
 
 - The server is rebooted in rescue mode, where you can rebuild the RAID, recreate the EFI System partition on the new disk and reinstall the bootloader (e.g. GRUB).
 
@@ -570,7 +594,7 @@ The next step is to format **nvme0n1p1** to recreate the EFI System Partition, t
 Here, we assume that both partitions have been synchronised and contain up-to-date files.
 
 > [!warning]
-> If there was a kernel or grub update or a major update and both partitions were not synchronised, consult this [section](#rebuilding-raid-with-efi-partitions-not-synchronized-after-major-system-updates-eg-grub) or the following guide [Repairing the GRUB bootloader](/pages/public_cloud/compute/repairing_the_grub_bootloader) once you are done creating the new EFI System Partition.
+> If there was a kernel or grub update or a major update and both partitions were not synchronised, consult this [section](#rebuilding-raid-when-efi-partitions-are-not-synchronized-after-major-system-updates-eg-grub) once you are done creating the new EFI System Partition.
 >
 
 First, we format the partition:
@@ -672,6 +696,12 @@ Please note that you won't have to do this if the ESPs were kept in sync. In tha
 
 ```sh
 root@rescue12-customer-eu:/# grub-install --efi-directory=/boot/efi /dev/nvme0n1p1
+```
+
+Once done, run the following command:
+
+```sh
+root@rescue12-customer-eu:/# update-grub
 ```
 ///
 
@@ -786,7 +816,7 @@ swapon /dev/nvme1n1p4
 We exit the chroot environment with `exit` and reload the system:
 
 ```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # 
 ```
 
 We umount all the disks:
