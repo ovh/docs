@@ -1,7 +1,7 @@
 ---
 title: Managing and rebuilding software RAID on servers using EFI boot mode
 excerpt: Find out how to manage and rebuild software RAID after a disk replacement on your server using EFI boot mode
-updated: 2025-08-xx
+updated: 2025-xx-xx
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 **This guide explains how to manage and rebuild software RAID after a disk replacement on your server using EFI boot mode**
 
-Before we begin, please note that this guide focuses on Dedicated servers that use EFI as the boot mode. This is the case with modern motherboards. If your server uses the legacy boot (BIOS) mode, refer to this guide: [Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode]().
+Before we begin, please note that this guide focuses on Dedicated servers that use EFI as the boot mode. This is the case with modern motherboards. If your server uses the legacy boot (BIOS) mode, refer to this guide: [Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
 
 To check whether a server runs on legacy BIOS mode or EFI boot mode, run the following command:
 
@@ -36,6 +36,22 @@ Through out this guide, we use the words **main disk** and **secondary disk**. I
 ## Instructions
 
 When you purchase a new server, you might feel the need to perform a series of tests and actions. One of those actions could be simulating a disk failure in order to understand the process of rebuilding the RAID and prepare yourself in case this happens.
+
+### Content overview
+
+- [Basic Information](#basicinformation)
+- [Understanding the EFI System Partition (ESP)](#efisystemparition)
+- [Simulating a disk failure](#diskfailure)
+    - [Removing the failed disk](#diskremove)
+- [Rebuilding the RAID](#raidrebuild)
+    - [Rebuilding the RAID after the main disk is replaced (rescue mode)](#rescumode)
+    - [Recreating the EFI System Partition](#recreateesp)
+    - [Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)](efiraodgrub)
+    - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
+    - [Rebuilding the RAID in normal mode](#normalmode)
+
+
+<a name="basicinformation"></a>
 
 ### Basic Information
 
@@ -181,6 +197,8 @@ From the above commands and results, we have:
 
 The partition `nvme0n1p5`
 
+<a name="efisystempartition"></a>
+
 ### Understanding the EFI System Partition (ESP)
 
 > [!primary]
@@ -292,6 +310,8 @@ done < <(blkid -o device -t LABEL=EFI_SYSPART)
 
 When the script is ran, the contents of the partition will be synchronised and available on the mountpoint `/var/lib/grub/esp`.
 
+<a name="diskfailure"></a>
+
 ### Simulating a disk failure
 
 Now that we have all the necessary information, we can simulate a disk failure and proceed with the tests. In this example, we will fail `nvme0n1`.
@@ -315,7 +335,9 @@ md2 : active raid1 nvme0n1p2[2] nvme1n1p2[1]
 unused devices: <none>
 ```
 
-From the above output, nvme0n1 consists of two partitions in RAID which are **nvme0n1p2** and **nvme0n1p3**. 
+From the above output, nvme0n1 consists of two partitions in RAID which are **nvme0n1p2** and **nvme0n1p3**.
+
+<a name="removedisk"></a>
 
 #### Removing the failed disk
 
@@ -464,6 +486,8 @@ Consistency Policy : bitmap
 
 We can now proceed with the disk replacement.
 
+<a name="raidrebuild"></a>
+
 ### Rebuilding the RAID
 
 > [!primary]
@@ -475,6 +499,8 @@ We can now proceed with the disk replacement.
 > For most servers in software RAID, after a disk replacement, the server is able to reboot in normal mode (on the healthy disk) and the rebuild can be done in normal mode. However, if the server is not able to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode to proceed with the RAID rebuild.
 >
 > If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#rebuilding-the-raid-in-normal-mode).
+
+<a name="rescuemode"></a>
 
 #### Rebuilding the RAID after the main disk is replaced (rescue mode)
 
@@ -587,6 +613,8 @@ Based on the above results, we can see that the partitions on the new disk have 
 > If you require professional assistance with server administration, consider the details in the [Go further](#go-further) section of this guide.
 >
 
+<a name="recreateesp"></a>
+
 #### Recreating the EFI System Partition
 
 The next step is to format **nvme0n1p1** to recreate the EFI System Partition, then replicate the content from the healthy partition (in our example: nvme1n1p1) to the new one.
@@ -677,6 +705,8 @@ root@rescue12-customer-eu:/# blkid -t LABEL=EFI_SYSPART
 /dev/nvme1n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="4629-D183" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="889f241b-49c3-4031-b5c9-60df0746f98f"
 /dev/nvme0n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="521F-300B" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="02bf2b2d-7ada-4461-ba50-07683519f65d"
 ```
+
+<a name="efiraidgrub"></a>
 
 #### Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)
 
@@ -826,6 +856,8 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -Rl /mnt
 ```
 
 We have now successfully completed the RAID rebuild on the server and we can now reboot it in normal mode.
+
+<a name="normalmode"></a>
 
 #### Rebuilding the RAID in normal mode
 

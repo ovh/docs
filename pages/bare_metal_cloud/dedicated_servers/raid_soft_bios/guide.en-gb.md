@@ -1,7 +1,7 @@
 ---
 title: Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode
 excerpt: Find out how to manage and rebuild software RAID after a disk replacement on your server in legacy boot (BIOS) mode
-updated: 2025-08-xx
+updated: 2025-xx-xx
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 **This guide explains how to manage and rebuild software RAID after a disk replacement on your server in legacy boot (BIOS) mode**
 
-Before we begin, please note that this guide focuses on Dedicated servers that use legacy boot (BIOS) mode. If your server uses the UEFI mode (newer motherboards), refer to this guide [Managing and rebuilding software RAID on servers in UEFI boot mode]().
+Before we begin, please note that this guide focuses on Dedicated servers that use legacy boot (BIOS) mode. If your server uses the UEFI mode (newer motherboards), refer to this guide [Managing and rebuilding software RAID on servers in UEFI boot mode](/pages/bare_metal_cloud/dedicated_servers/raid_soft_uefi).
 
 To check whether a server runs on legacy BIOS mode or UEFI mode, run the following command:
 
@@ -29,6 +29,14 @@ To check whether a server runs on legacy BIOS mode or UEFI mode, run the followi
 ## Instructions
 
 When you purchase a new server, you might feel the need to perform a series of tests and actions. One of those actions could be simulating a disk failure in order to understand the process of rebuilding the RAID and prepare yourself in case this happens.
+
+- [Basic Information](#basicinformation)
+- [Simulating a disk failure](#diskfailure)
+    - [Removing the failed disk](#diskremove)
+- [Rebuilding the RAID](#raidrebuild)
+    - [Rebuilding the RAID in rescue mode](#rescumode)
+    - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
+    - [Rebuilding the RAID in normal mode](#normalmode)
 
 ### Basic Information
 
@@ -149,6 +157,8 @@ We take note of the devices, partitions and their mount points. From the above c
 - Two RAID arrays: `/dev/md2` and `/dev/md4`.
 - Partitions part of the RAID: `/` and `/home`.
 - Partitions not part of the RAID: [SWAP].
+
+<a name="diskfailure"></a>
 
 ### Simulating a disk failure
 
@@ -334,6 +344,8 @@ The following steps document the RAID rebuild in rescue mode.
 >
 > For most servers in software RAID, after a disk replacement, the server is able to reboot in normal mode (on the healthy disk) and the rebuild can be done in normal mode. However, if the server is not able to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode to proceed with the RAID rebuild.
 >
+
+<a name="rescuemode"></a>
 
 #### Rebuilding the RAID in rescue mode
 
@@ -552,6 +564,8 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
 ```
 
 We have now successfully completed the RAID rebuild on the server and we can now reboot it in normal mode.
+
+<a name="normalmode"></a>
 
 /// details | **Rebuilding the RAID in normal mode**
 
