@@ -1,20 +1,34 @@
 ---
-title: "Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud"
-excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hébergement mutualisé"
+title: "Hébergement web - Comment utiliser FileZilla"
+excerpt: "Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVHcloud et gérer les données qu'il contient grâce au logiciel FileZilla"
 updated: 2025-06-10
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!primary]
 > **Désactivation de l'outil FTP Explorer/Net2FTP**
 >
-> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne FTP Explorer/Net2FTP. Pour continuer à vous connecter en FTP à votre hébergement web, utilisez les logiciels [Filezilla](https://filezilla-project.org/download.php) ou [Cyberduck](https://cyberduck.io/).
+> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne FTP Explorer/Net2FTP. Pour continuer à vous connecter en FTP à votre hébergement web, utilisez les logiciels [FileZilla](https://filezilla-project.org/download.php) ou [Cyberduck](https://cyberduck.io/).
 
 ## Objectif
 
 FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'exploitations (Windows, macOS, etc).
-Il permet de mettre en ligne des fichiers ou votre site internet en vous [connectant à l'espace FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement.
+Il permet de mettre en ligne des fichiers ou votre site internet en vous [connectant à l'espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web.
 
-**Découvrez comment utiliser le logiciel Filezilla avec votre hébergement mutualisé.**
+**Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVHcloud et gérer les données qu'il contient grâce au logiciel FileZilla.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
@@ -22,23 +36,68 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Posséder une [offre d'hébergement web](/links/web/hosting).
-- Avoir installé le logiciel Filezilla sur votre ordinateur. Celui-ci est disponible gratuitement depuis la page [filezilla-project.org](https://filezilla-project.org/download.php)
+- Avoir installé le logiciel FileZilla sur votre ordinateur. Celui-ci est disponible gratuitement depuis la page [filezilla-project.org](https://filezilla-project.org/download.php)
 
 ## Présentation de l'interface <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Cliquez ici pour afficher le contenu de cette section.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La partie supérieure **encadrée** permet une connexion rapide à votre hébergement en y renseignant son nom d’**hôte**, le nom d’**utilisateur**, son **mot de passe** associé et le numéro de **port** utilisé.
-- **zone 1** : détails sur l’historique des opérations, la connexion à l’espace FTP, les transferts de fichiers, les erreurs, etc. Pour en savoir plus, rendez-vous sur la [documentation officielle de Filezilla](https://filezilla-project.org/).
+- **zone 1** : détails sur l’historique des opérations, la connexion à l’espace FTP, les transferts de fichiers, les erreurs, etc. Pour en savoir plus, rendez-vous sur la [documentation officielle de FileZilla](https://filezilla-project.org/).
 - **zone 2** : arborescence des répertoires/fichiers locaux sur votre ordinateur.
 - **zone 3** : arborescence des répertoires/fichiers distants lorsque vous êtes connecté à votre hébergement.
 - **zone 4** : liste des répertoires/fichiers dans le répertoire sélectionné en local sur votre ordinateur.
 - **zone 5** : liste des répertoires/fichiers distants dans le répertoire sélectionné sur votre hébergement.
 - **zone 6** : liste des opérations de transfert en cours, en attente ou en erreur entre votre ordinateur et votre hébergement.
 
+///
+
 ## En pratique
 
-### Connexion avec Filezilla en FTP
+### 1 - Récupérer les informations de connexion à l'espace de stockage de l'hébergement web.
+
+
+
+
+
+
+
+
+
+
+
+Pour récupérer les informations de connexion à l'espace de stockage de votre hébergement web, effectuez les actions suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+3. Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. 
+4. Sur la nouvelle page, les informations liées à votre espace de stockage apparaissent. Récupérez-y les éléments suivants :
+    - Le `Serveur FTP et SFTP` représenté sous la forme suivante : `ftp.clusterXXX.hosting.ovh.net` (où chacun des 3 `X` correspond à un chiffre compris entre `0` et `9`).
+    - L'un des utilisateurs présents dans la colonne `Login` du tableau situé en bas de page. Vous pouvez aussi utiliser `Login principal` si vous le souhaitez.
+    - Le numéro du `Port FTP` ou le numéro du `Port SFTP` en fonction du protocole de connexion que vous souhaiterez utiliser pour vous connecter à votre espace de stockage.
+
+
+
+
+>> Dans le tableau, repérez la colonne `SSH` afin de vérifier que l'utilisateur SSH (présent dans la colonne `Login` du tableau) concerné dispose bien d'un accès SSH actif. La mention `Désactivé` apparaît si ce n'est pas le cas.
+>>
+>> ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
+>>
+>> Si l'accès SSH de l'utilisateur concerné est `Désactivé` dans le tableau, effectuez les opérations suivantes :
+>>
+>> - 1 : Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur, puis sur `Modifier`{.action}.
+>> - 2 : Dans la fenêtre qui s'affiche, section `Protocoles de connexion`, sélectionnez le choix `FTP, SFTP et SSH`{.action}, puis cliquez sur `Suivant`{.action}.
+>> - 3 : Vérifiez le résumé de la modification demandée, puis cliquez sur `Valider`{.action}.
+>>
+>> > Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](/links/web/hosting) bénéficie bien d'un accès SSH.
+
+**Cliquez sur le protocole de connexion de votre choix pour afficher les explications.**
+
+/// details | Se connecter en FTP à l'espace de stockage de votre hébergement web grâce à FileZilla.
+
+
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
@@ -46,7 +105,7 @@ Depuis la barre de connexion rapide, complétez les informations en vous aidant 
 
 |Information à renseigner|Détails|
 |---|---|
-|Hôte| Adresse du serveur permettant d'accéder à l'espace de stockage de votre hébergement.<br><br> Pour les hébergements mutualisés, il a généralement cette forme : `ftp.clusterXXX.hosting.ovh.net` (les `XXX` représentent le numéro de cluster où se trouve votre hébergement)|
+|Hôte| Adresse du serveur permettant d'accéder à l'espace de stockage de votre hébergement web.<br><br> Il a généralement cette forme : `ftp.clusterXXX.hosting.ovh.net` (les `XXX` représentent le numéro du cluster où se trouve votre hébergement web)|
 |Utilisateur|Identifiant vous permettant d'accéder à l'espace de stockage de votre hébergement.|
 |Mot de passe|Mot de passe associé à l'utilisateur.|
 |Port|Il est généralement complété automatiquement par le logiciel. Sinon, renseignez :<br><br>- le port « 21 » pour une connexion FTP ;<br>- le port « 22 » pour une connexion SFTP (dans le cas où celui-ci est activé). Retrouvez plus d'informations sur le SFTP dans [la partie dédidée de ce tutoriel](#sftp).|
@@ -66,7 +125,7 @@ Une fois que tout est correctement saisi dans l'encadré **1** de l'image ci-des
 
 Si la connexion s'est bien effectuée avec succès, vous en serez informé via le statut présent dans l'encadré **2** de l'image ci-dessus. Vous pouvez ainsi voir vos répertoires/dossiers et fichiers déjà présents sur votre hébergement (encadré **3**).
 
-### Connexion avec Filezilla en SFTP <a name="sftp"></a>
+/// details | Se connecter en SFTP à l'espace de stockage de votre hébergement web grâce à FileZilla. <a name="sftp"></a>
 
 Le **SFTP** (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole similaire au **FTP**. Il utilise, comme le SSH, le port 22 par défaut au lieu du port 21. Si vous utilisez une offre d'hébergement Cloud Web, vous devez utiliser le port qui s'affiche dans votre [espace client OVHcloud](/links/manager). Le port 22 est par sécurité désactivé en SSH et en SFTP pour les hébergements Cloud Web.
 
@@ -103,7 +162,7 @@ S'il n'est pas actif :
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
-Dans la partie haute de Filezilla et afin d'établir la connexion au serveur distant (hébergement), renseignez les éléments ci-après :
+Dans la partie haute de FileZilla et afin d'établir la connexion au serveur distant (hébergement), renseignez les éléments ci-après :
 
 - Hôte : `ftp.clusterXXX.hosting.ovh.net` (n'oubliez pas de remplacer les `X` par ceux de votre cluster d'hébergement)
 - Identifiant : votre login FTP
@@ -135,7 +194,7 @@ Vérifiez alors ce dernier par rapport au nom d'hôte déclaré dans votre [espa
 
 ### Transfert des fichiers
 
-Pour réaliser le transfert de vos fichiers en FTP, vous pouvez les sélectionner puis réaliser un glisser-déposer des répertoires/fichiers depuis la fenêtre de gauche *(ordinateur)* vers la fenêtre de droite *(hébergement)* (**zones 4 et 5** décrites dans la section de ce tutoriel relative à [l'interface](#interface) de Filezilla).
+Pour réaliser le transfert de vos fichiers en FTP, vous pouvez les sélectionner puis réaliser un glisser-déposer des répertoires/fichiers depuis la fenêtre de gauche *(ordinateur)* vers la fenêtre de droite *(hébergement)* (**zones 4 et 5** décrites dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla).
 
 Faites attention à bien sélectionner le répertoire cible dans la fenêtre de droite.
 
@@ -145,7 +204,7 @@ Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en
 
 ### Vue sur la file d'attente
 
-Une vue sur la file d'attente est disponible (**zone 6** décrite dans la section de ce tutoriel relative à [l'interface](#interface) de Filezilla).
+Une vue sur la file d'attente est disponible (**zone 6** décrite dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla).
 
 Dans cete zone, vous retrouvez :
 
@@ -157,7 +216,7 @@ Dans cete zone, vous retrouvez :
 
 ### Menu contextuel Serveur
 
-Faites un clic-droit sur l'un des fichiers présents dans la **zone 5** (décrite dans la section de ce tutoriel relative à [l'interface](#interface) de Filezilla).
+Faites un clic-droit sur l'un des fichiers présents dans la **zone 5** (décrite dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla).
 
 Un menu contextuel apparait, et plusieurs choix vous sont proposés :
 
@@ -260,7 +319,7 @@ Pour modifier le type de transfert, sélectionnez `Transfert`{.action} dans le m
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
-L'option de comparaison de fichiers affiche des couleurs dans les  **zones 4** et **5** (présentées dans la section de ce tutoriel relative à [l'interface](#interface) de Filezilla). Cette option permet de mettre en évidence les différences entre les fichiers et dossiers locaux et ceux sur le serveur. 
+L'option de comparaison de fichiers affiche des couleurs dans les **zones 4** et **5** (présentées dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla). Cette option permet de mettre en évidence les différences entre les fichiers et dossiers locaux et ceux sur le serveur. 
 
 En effectuant un clic-droit sur l'icône, vous pouvez changer le mode de comparaison. Il vous sera alors proposé d'activer ou de désactiver l'option, mais également de :
 
@@ -280,7 +339,7 @@ Vous trouverez ci-après le lien vers notre documentation pour [résoudre les er
 
 Plus généralement, retrouvez [l'ensemble de nos guides relatifs aux hébergements mutualisés](/products/web-cloud-hosting).
 
-N'hésitez pas à consulter la [page officielle de Filezilla](https://filezilla-project.org/).
+N'hésitez pas à consulter la [page officielle de FileZilla](https://filezilla-project.org/).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
