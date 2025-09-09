@@ -58,15 +58,19 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 ### 1 - Récupérer les informations de connexion à l'espace de stockage de l'hébergement web <a name="part-1"></a>
 
-Pour récupérer les informations de connexion à l'espace de stockage de votre hébergement web, effectuez les actions suivantes :
+Effectuez les actions suivantes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 3. Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. 
 4. Sur la nouvelle page, les informations liées à votre espace de stockage apparaissent. Récupérez-y les éléments suivants :
     - Le `Serveur FTP et SFTP` représenté sous la forme suivante : `ftp.clusterXXX.hosting.ovh.net` (où chacun des 3 `X` correspond à un chiffre compris entre `0` et `9`).
-    - L'un des utilisateurs présents dans la colonne `Login` du tableau situé en bas de page. Vous pouvez aussi utiliser `Login principal` si vous le souhaitez.
+    - L'un des utilisateurs présents dans la colonne `Login` du tableau situé en bas de page. Vous pouvez aussi utiliser le `Login principal` si vous le souhaitez.
     - Le numéro du `Port FTP` ou le numéro du `Port SFTP` en fonction du protocole de connexion que vous souhaiterez utiliser pour vous connecter à votre espace de stockage.
+
+> [!primary]
+>
+> Pour des raisons de sécurité, le mot de passe d'un utilisateur n'apparaît pas sur la page de l'onglet `FTP-SSH`{.action}. Si vous l'ave oublié, consultez [ce guide](/pages/web_cloud/web_hosting/ftp_change_password) pour le modifier.
 
 ### 2 - Se connecter à l'espace de stockage de votre hébergement grâce à FileZilla
 
@@ -74,7 +78,7 @@ La connexion peut se faire grâce à deux protocoles, le **F**ile **T**ransfer *
 
 Dans la mesure du possible, nous vous recommandons de privilégier l'utilisation du protocole **SFTP** pour vous connecter à votre espace de stockage avec FileZilla.
 
-En effet, le protocole **SFTP** chiffre les échanges de données entre votre appareil et votre hébergement web. Cependant, si vous rencontre des contraintes d'utilisation, notamment sur la segmentation des utilisateurs ou des dossiers, vous devrez dans ce cas utiliser le protocole **FTP**.
+En effet, le protocole **SFTP** chiffre les échanges de données entre votre appareil et votre hébergement web. Cependant, si vous rencontrez des contraintes d'utilisation, notamment sur la segmentation des utilisateurs ou des dossiers, vous devrez dans ce cas utiliser le protocole **FTP**.
 
 **Cliquez sur le protocole de connexion de votre choix pour afficher les explications.**
 
@@ -90,11 +94,6 @@ Depuis la barre de connexion rapide, complétez les informations en vous aidant 
 |Utilisateur|Identifiant vous permettant d'accéder à l'espace de stockage de votre hébergement.|
 |Mot de passe|Mot de passe associé à l'utilisateur.|
 |Port|Il est généralement complété automatiquement par le logiciel. Sinon, renseignez le port `21` pour une connexion FTP|
-
-> [!warning]
->
-> Certaines offres OVHcloud n'utilisent pas le port 22 pour les connexions en SFTP et/ou SSH. Utilisez donc bien les ports qui s'affichent dans votre [espace client OVHcloud](/links/manager)
->
 
 Une fois que tout est correctement saisi dans l'encadré **1** de l'image ci-dessous, cliquez sur `Connexion rapide`{.action}.
 
@@ -131,14 +130,18 @@ Si l'accès SFTP de l'utilisateur concerné est `Désactivé` dans le tableau, e
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
-Dans la partie haute de FileZilla et afin d'établir la connexion au serveur distant (hébergement), renseignez les éléments ci-après :
+Depuis la barre de connexion rapide, complétez les informations en vous aidant du tableau ci-dessous :
 
-- Hôte : `ftp.clusterXXX.hosting.ovh.net` (n'oubliez pas de remplacer les `X` par ceux de votre cluster d'hébergement)
-- Identifiant : votre login FTP
-- Mot de passe : le mot de passe FTP associé au login
-- Port : 22
+|Information à renseigner|Détails|
+|---|---|
+|Hôte| Adresse du serveur permettant d'accéder à l'espace de stockage de votre hébergement web.<br><br> Il a généralement cette forme : `ftp.clusterXXX.hosting.ovh.net` (les `XXX` représentent le numéro du cluster où se trouve votre hébergement web)|
+|Utilisateur|Identifiant vous permettant d'accéder à l'espace de stockage de votre hébergement.|
+|Mot de passe|Mot de passe associé à l'utilisateur.|
+|Port|Renseignez le numéro du port SFTP récupéré précédemment dans la [première partie](#part-1) de ce guide pour une connexion SFTP|
 
-Après avoir cliqué sur le bouton `Connexion rapide`{.action}, une boîte de dialogue s'ouvre (voir l'image ci-dessous) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVHcloud, vous pouvez cocher la case *Toujours faire confiance à cet hôte, ajouter cette clé au cache* afin que le logiciel ne vous le redemande plus à l'avenir.
+Une fois que tout est correctement saisi dans l'encadré **1** de l'image ci-dessous, cliquez sur `Connexion rapide`{.action}.
+
+Une boîte de dialogue s'ouvre alors (voir l'image ci-dessous) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVHcloud, vous pouvez cocher la case *Toujours faire confiance à cet hôte, ajouter cette clé au cache* afin que le logiciel ne vous le redemande plus à l'avenir.
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
@@ -146,22 +149,29 @@ Après avoir cliqué sur le bouton `Connexion rapide`{.action}, une boîte de di
 
 #### Erreurs de connexion
 
+**Cliquez sur l'erreur que vous rencontrez pour afficher la solution.**
+
+/// details | Authentication failed - Could not connect to server 
+
 Le message affiché ci-dessous indique une erreur d'identification lors de la connexion en FTP ou SFTP à l'hébergement mutualisé :
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/authentification-failed-could-not-connect-server.png){.thumbnail}
 
 Ce type de message est généré par une erreur dans le couple Login/Mot de passe.
 
-Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseignée. Le cas échéant, vous pouvez modifier le mot de passe de l'accès FTP de votre hébergement directement dans l'[espace client OVHcloud](/links/manager).
+Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseignée. Le cas échéant, vous pouvez [modifier le mot de passe de l'accès FTP](/pages/web_cloud/web_hosting/ftp_change_password) de votre hébergement web directement dans l'[espace client OVHcloud](/links/manager).
 
-> [!success]
-> Un guide est disponible concernant la [modification du mot de passe FTP](/pages/web_cloud/web_hosting/ftp_change_password) sur les offres mutualisées.
+///
+
+/// details | Connectino timed out after 20 seconds of inactivity - Could not connect to server
 
 Dans le cas ci-dessous, l'erreur est générée par un nom d'hôte incorrect :
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/connection-timed-out-after-20s.png){.thumbnail}
 
 Vérifiez alors ce dernier par rapport au nom d'hôte déclaré dans votre [espace client OVHcloud](/links/manager).
+
+///
 
 ### 3 - Transfert des fichiers
 
