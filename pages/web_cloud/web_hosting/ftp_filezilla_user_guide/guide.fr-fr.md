@@ -56,17 +56,7 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 ## En pratique
 
-### 1 - Récupérer les informations de connexion à l'espace de stockage de l'hébergement web.
-
-
-
-
-
-
-
-
-
-
+### 1 - Récupérer les informations de connexion à l'espace de stockage de l'hébergement web <a name="part-1"></a>
 
 Pour récupérer les informations de connexion à l'espace de stockage de votre hébergement web, effectuez les actions suivantes :
 
@@ -78,26 +68,17 @@ Pour récupérer les informations de connexion à l'espace de stockage de votre 
     - L'un des utilisateurs présents dans la colonne `Login` du tableau situé en bas de page. Vous pouvez aussi utiliser `Login principal` si vous le souhaitez.
     - Le numéro du `Port FTP` ou le numéro du `Port SFTP` en fonction du protocole de connexion que vous souhaiterez utiliser pour vous connecter à votre espace de stockage.
 
+### 2 - Se connecter à l'espace de stockage de votre hébergement grâce à FileZilla
 
+La connexion peut se faire grâce à deux protocoles, le **F**ile **T**ransfer **P**rotocol (**FTP**) ou le **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**).
 
+Dans la mesure du possible, nous vous recommandons de privilégier l'utilisation du protocole **SFTP** pour vous connecter à votre espace de stockage avec FileZilla.
 
->> Dans le tableau, repérez la colonne `SSH` afin de vérifier que l'utilisateur SSH (présent dans la colonne `Login` du tableau) concerné dispose bien d'un accès SSH actif. La mention `Désactivé` apparaît si ce n'est pas le cas.
->>
->> ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
->>
->> Si l'accès SSH de l'utilisateur concerné est `Désactivé` dans le tableau, effectuez les opérations suivantes :
->>
->> - 1 : Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur, puis sur `Modifier`{.action}.
->> - 2 : Dans la fenêtre qui s'affiche, section `Protocoles de connexion`, sélectionnez le choix `FTP, SFTP et SSH`{.action}, puis cliquez sur `Suivant`{.action}.
->> - 3 : Vérifiez le résumé de la modification demandée, puis cliquez sur `Valider`{.action}.
->>
->> > Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](/links/web/hosting) bénéficie bien d'un accès SSH.
+En effet, le protocole **SFTP** chiffre les échanges de données entre votre appareil et votre hébergement web. Cependant, si vous rencontre des contraintes d'utilisation, notamment sur la segmentation des utilisateurs ou des dossiers, vous devrez dans ce cas utiliser le protocole **FTP**.
 
 **Cliquez sur le protocole de connexion de votre choix pour afficher les explications.**
 
 /// details | Se connecter en FTP à l'espace de stockage de votre hébergement web grâce à FileZilla.
-
-
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
@@ -108,11 +89,7 @@ Depuis la barre de connexion rapide, complétez les informations en vous aidant 
 |Hôte| Adresse du serveur permettant d'accéder à l'espace de stockage de votre hébergement web.<br><br> Il a généralement cette forme : `ftp.clusterXXX.hosting.ovh.net` (les `XXX` représentent le numéro du cluster où se trouve votre hébergement web)|
 |Utilisateur|Identifiant vous permettant d'accéder à l'espace de stockage de votre hébergement.|
 |Mot de passe|Mot de passe associé à l'utilisateur.|
-|Port|Il est généralement complété automatiquement par le logiciel. Sinon, renseignez :<br><br>- le port « 21 » pour une connexion FTP ;<br>- le port « 22 » pour une connexion SFTP (dans le cas où celui-ci est activé). Retrouvez plus d'informations sur le SFTP dans [la partie dédidée de ce tutoriel](#sftp).|
-
-Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors :
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+|Port|Il est généralement complété automatiquement par le logiciel. Sinon, renseignez le port `21` pour une connexion FTP|
 
 > [!warning]
 >
@@ -127,38 +104,30 @@ Si la connexion s'est bien effectuée avec succès, vous en serez informé via l
 
 /// details | Se connecter en SFTP à l'espace de stockage de votre hébergement web grâce à FileZilla. <a name="sftp"></a>
 
-Le **SFTP** (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole similaire au **FTP**. Il utilise, comme le SSH, le port 22 par défaut au lieu du port 21. Si vous utilisez une offre d'hébergement Cloud Web, vous devez utiliser le port qui s'affiche dans votre [espace client OVHcloud](/links/manager). Le port 22 est par sécurité désactivé en SSH et en SFTP pour les hébergements Cloud Web.
+Le **SFTP** utilise, comme le SSH, le port 22 par défaut au lieu du port 21. Si vous utilisez une offre d'hébergement Cloud Web, vous devez utiliser le port qui s'affiche dans votre [espace client OVHcloud](/links/manager). Le port 22 est par sécurité désactivé en SSH et en SFTP pour les hébergements Cloud Web.
 
 > [!success]
 >
 > SFTP est activable gratuitement pour toutes les offres d'hébergements OVHcloud (sauf les anciennes offres 60free/demo1g).
 > 
 
-#### Verifier l'activation de SFTP
+#### Verifier l'activation du protocole SFTP
 
-Vérifiez tout d'abord que le SFTP est activé pour votre **Login FTP**.
+Pour cela, retournez dans l'onglet `FTP-SSH`{.action} de votre [espace client OVHcloud](/links/manager) comme indiqué dans la [première partie](#part-1) de ce guide.
 
-Rendez-vous dans votre [espace client OVHcloud](/links/manager), dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}.
+Dans le tableau situé en bas de page, repérez la colonne `SFTP` afin de vérifier que l'utilisateur (présent dans la colonne `Login` du tableau) concerné dispose bien d'un accès SFTP actif. La mention `Désactivé` apparaît si ce n'est pas le cas.
 
-Vérifiez ensuite si le **SFTP** est actif dans le tableau en bas de page.
+Si l'accès SFTP de l'utilisateur concerné est `Désactivé` dans le tableau, effectuez les opérations suivantes:
 
-![Activation SFTP offre start](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
+- Pour les offres Perso, cochez la case située à gauche de la mention `Désactivé` dans le tableau.
 
-S'il n'est pas actif :
+ - Pour les offres Pro et Performance :
 
-- Cliquez sur le bouton `...`{.action} à droite du tableau puis sur `Editer`{.action}.
+    - 1 : Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur, puis sur `Modifier`{.action}.
+    - 2 : Dans la fenêtre qui s'affiche, section `Protocoles de connexion`, sélectionnez le choix `FTP et SFTP`{.action}, puis cliquez sur `Suivant`{.action}.
+    - 3 : Vérifiez le résumé de la modification demandée, puis cliquez sur `Valider`{.action}.
 
-![Activation SFTP 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-login.png){.thumbnail}
-
-- Dans la fenêtre qui s'affiche, vérifiez alors que l'une des 2 options suivantes est activée :
-    - **FTP et SFTP** : pour activer uniquement le SFTP en plus du FTP.
-    - **FTP, SFTP et SSH** : pour activer le FTP, le SFTP et le SSH.
-
-![Activation SFTP 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png){.thumbnail}
-
-- Cliquez ensuite sur `Suivant`{.action} puis sur `Valider`{.action}
-
-#### Lancer la connexion SFTP
+#### Se connecter en SFTP avec FileZilla
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
@@ -173,7 +142,9 @@ Après avoir cliqué sur le bouton `Connexion rapide`{.action}, une boîte de di
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
-### Erreurs de connexion
+///
+
+#### Erreurs de connexion
 
 Le message affiché ci-dessous indique une erreur d'identification lors de la connexion en FTP ou SFTP à l'hébergement mutualisé :
 
@@ -192,9 +163,9 @@ Dans le cas ci-dessous, l'erreur est générée par un nom d'hôte incorrect :
 
 Vérifiez alors ce dernier par rapport au nom d'hôte déclaré dans votre [espace client OVHcloud](/links/manager).
 
-### Transfert des fichiers
+### 3 - Transfert des fichiers
 
-Pour réaliser le transfert de vos fichiers en FTP, vous pouvez les sélectionner puis réaliser un glisser-déposer des répertoires/fichiers depuis la fenêtre de gauche *(ordinateur)* vers la fenêtre de droite *(hébergement)* (**zones 4 et 5** décrites dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla).
+Pour réaliser le transfert de vos fichiers en (S)FTP, vous pouvez les sélectionner puis réaliser un glisser-déposer des répertoires/fichiers depuis la fenêtre de gauche *(ordinateur)* vers la fenêtre de droite *(hébergement)* (**zones 4 et 5** décrites dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla).
 
 Faites attention à bien sélectionner le répertoire cible dans la fenêtre de droite.
 
@@ -202,7 +173,11 @@ Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/drag-drop-fr.png){.thumbnail}
 
-### Vue sur la file d'attente
+### 4 - Autres fonctionnalités de FileZilla
+
+**Cliquez sur les titres ci-dessous pour afficher leurs contenus respectifs.**
+
+/// details | Vue sur la file d'attente
 
 Une vue sur la file d'attente est disponible (**zone 6** décrite dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla).
 
@@ -214,7 +189,9 @@ Dans cete zone, vous retrouvez :
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
-### Menu contextuel Serveur
+///
+
+/// details | Menu contextuel Serveur
 
 Faites un clic-droit sur l'un des fichiers présents dans la **zone 5** (décrite dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla).
 
@@ -232,9 +209,9 @@ Un menu contextuel apparait, et plusieurs choix vous sont proposés :
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
-## Informations utiles <a name="useful-information"></a>
+///
 
-### Droits d'accès (Chmod) sur les fichiers et les dossiers
+/// details | Droits d'accès (Chmod) sur les fichiers et les dossiers
 
 Faites un clic-droit sur l'un des fichiers présents sur le serveur, puis sélectionnez `Permissions de fichier ...`{.action}.
 
@@ -263,7 +240,9 @@ Vous pouvez cocher la case « Récursion dans les sous-dossiers ».
 
 Cela aura pour effet de modifier les droits du dossier en question, ainsi que des dossiers et des fichiers qui pourraient être présents dans celui-ci.
 
-### Réouverture de site
+///
+
+/// details | Réouverture de site web
 
 > [!primary]
 >
@@ -307,7 +286,9 @@ SITE CHMOD 705 .
 > Si cela ne fonctionne toujours pas, veuillez contacter notre support.
 > 
 
-### Transfert de fichiers binaires
+///
+
+/// details | Transfert de fichiers binaires
 
 Pour les fichiers de type binaire, comme par exemple les fichiers de type **CGI**, il peut être intéressant de choisir la manière dont le transfert sera réalisé.
 
@@ -315,7 +296,9 @@ Pour modifier le type de transfert, sélectionnez `Transfert`{.action} dans le m
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
-### Comparaison de dossiers
+///
+
+/// details | Comparaison de dossiers
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
@@ -332,6 +315,8 @@ En effectuant un clic-droit sur l'icône, vous pouvez changer le mode de compara
 - Jaune : le fichier existe uniquement d'un seul côté.
 - Vert : le fichier est plus récent que le fichier non coloré de l'autre côté.
 - Rouge : les tailles des fichiers sont différentes.
+
+///
 
 ## Aller plus loin <a name="go-further"></a>
 
