@@ -1,7 +1,7 @@
 ---
 title: How to get started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2025-08-07
+updated: 2025-09-05
 ---
 
 ## Objective
@@ -119,7 +119,7 @@ These options refer to additional VPS services for backups and restoration of yo
 >>
 > Automated backup
 >>
->> A daily backup of the system (excluding additional disks) is created automatically and retained for 24 hours. By upgrading to the **Automatic Backup Premium** option, you will have the last 7 daily backups of your VPS available to mount and restore.  
+>> A daily backup of the system (excluding additional disks) is created automatically and retained for 24 hours (only applicable to services ordered from 7 AUG, 2025). By upgrading to the **Automatic Backup Premium** option, you will have the last 7 daily backups of your VPS available to mount and restore.  
 >> Compared to manual snapshots, this feature increases data security by creating several restore points at regular intervals.
 >>
 

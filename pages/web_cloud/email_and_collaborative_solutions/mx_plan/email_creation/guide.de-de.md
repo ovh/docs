@@ -246,7 +246,7 @@ Für den Versand von E-Mails verwenden Sie die folgenden **SMTP** Einstellungen:
 
 **Sie benötigen mehr E-Mail-Adressen?**
 
-- Fragen in [unseren E-Mail FAQ](pages/web_cloud/email_and_collaborative_solutions/mx_plan/email-faq).
+- Fragen in [unseren E-Mail FAQ](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - Sehen Sie sich alle unsere E-Mail-Angebote [Zimbra](/links/web/emails-zimbra) oder [Exchange](/links/web/emails) an, um Ihr MX Plan Angebot für dieselbe Domain zu vervollständigen.
 
 ## Weiterführende Informationen <a name="go-further"></a>

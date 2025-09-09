@@ -1,12 +1,12 @@
 ---
 title: "Instances Public Cloud - Passer d'une facturation horaire à mensuelle"
 excerpt: 'Découvrez comment modifier le type de facturation de votre instance Public Cloud'
-updated: 2023-01-23
+updated: 2025-09-05
 ---
 
 ## Objectif
 
-Lors de la création d’une instance Public Cloud, vous pouvez choisir entre une facturation à l’heure ou une facturation mensuelle. Les instances « à l'heure » sont facturées en *pay-as-you-go* , c'est-à-dire que chaque utilisateur paie en fin de mois, pour chaque heure commencée, la somme des ressources réellement consommées.
+Lors de la création d’une instance Public Cloud, vous pouvez choisir entre une facturation à l’heure ou une facturation mensuelle (sauf pour les instances Public Cloud de troisième génération, qui sont facturées à l'heure par défaut et n'offrent pas l'option mensuelle lors de la création de l'instance). Les instances « à l'heure » sont facturées en *pay-as-you-go*, c'est-à-dire que chaque utilisateur paie en fin de mois, pour chaque heure commencée, la somme des ressources réellement consommées.
 <br>Les instances assujetties à un taux mensuel sont jusqu'à 50 % moins chères que les instances assujetties à un taux horaire pour la même durée. Chaque mois entamé est facturé en fin de mois.
 <br>Si vous avez initialement choisi une facturation à l'heure, vous pouvez passer à la facturation mensuelle à tout moment.
 
@@ -32,7 +32,11 @@ Lors de la création d’une instance Public Cloud, vous pouvez choisir entre un
 
 ### Depuis l'espace client OVHcloud
 
-Dans [votre espace client](https://ca.ovh.com/auth/?action=alleraugestionnaire), cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
+> [!warning]
+> La procédure suivante ne fonctionne pas pour les instances de troisième génération (exemple : B3-32). Pour être facturé mensuellement pour ce type d’instance, vous devez créer un [plan d’épargne](/pages/public_cloud/public_cloud_cross_functional/save_plans) pour ce modèle d’instance.
+>
+
+Dans [votre espace client](/links/manager), cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
 
 ![Modifier le mode de calcul des factures](images/switch_to_monthly_updated.png){.thumbnail}
 

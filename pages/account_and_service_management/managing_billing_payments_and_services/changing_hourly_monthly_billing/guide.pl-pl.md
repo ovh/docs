@@ -1,12 +1,12 @@
 ---
 title: 'Public Cloud Compute - Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud'
 excerpt: 'Dowiedz się, jak zmienić typ rozliczenia za instancję Public Cloud'
-updated: 2023-01-23
+updated: 2025-09-05
 ---
 
 ## Wprowadzenie
 
-Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzinę lub miesięcznie. Instancje w typu godzinowym są płatne według faktycznego zużycia, czyli na koniec miesiąca użytkownicy są rozliczani za konkretne zasoby, z których korzystali. Instancje w subskrypcji miesięcznej są płatne z góry, ale rozliczane według niższej ceny (do 50% taniej niż w przypadku rozliczeń godzinowych). Jeśli początkowo zostało wybrane rozliczenie godzinowe, w dowolnym momencie można je zmienić na miesięczne.
+Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzinę lub miesięcznie (z wyjątkiem instancji Public Cloud trzeciej generacji, które są domyślnie fakturowane za godzinę i nie oferują opcji miesięcznej podczas tworzenia instancji). Instancje w typu godzinowym są płatne według faktycznego zużycia, czyli na koniec miesiąca użytkownicy są rozliczani za konkretne zasoby, z których korzystali. Instancje w subskrypcji miesięcznej są płatne z góry, ale rozliczane według niższej ceny (do 50% taniej niż w przypadku rozliczeń godzinowych). Jeśli początkowo zostało wybrane rozliczenie godzinowe, w dowolnym momencie można je zmienić na miesięczne.
 
 **Dowiedz się, jak zmienić typ rozliczenia godzinowego na miesięczne.**
 
@@ -29,6 +29,10 @@ Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzi
 ## W praktyce
 
 ### W Panelu klienta OVHcloud
+
+> [!warning]
+> Następująca procedura nie działa dla instancji trzeciej generacji (przykład: B3-32). Aby móc płacić za ten typ instancji w trybie miesięcznym, utwórz dla tego modelu instancji [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/save_plans).
+>
 
 W [Panelu klienta OVHcloud](/links/manager) wybierz instancję, dla której chcesz zmienić typ rozliczenia, i otwórz menu opcji, klikając ikonę z trzema kropkami (po prawej stronie instancji). Zobaczysz przycisk `Zmień na subskrypcję miesięczną`{.action}:
 

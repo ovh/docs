@@ -20,7 +20,6 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 
 - Tener una solución MX Plan. Esta está disponible a través de:
     - Un [plan de hosting](/links/web/hosting).
-    - Un [alojamiento gratuito 100M](/links/web/domains-free-hosting) incluido con un dominio (activado previamente).
     - Una solución MX Plan contratada por separado.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 

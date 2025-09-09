@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos con un VPS
 excerpt: Aprenda a gestionar un VPS en su área de cliente y descubra las primeras etapas de su uso, incluyendo las conexiones a distancia y las medidas de seguridad
-updated: 2025-08-07
+updated: 2025-09-05
 ---
 
 ## Objetivo
@@ -119,7 +119,7 @@ Estas opciones hacen referencia a servicios VPS adicionales que pueden solicitar
 >>
 > Backup automatizado
 >>
->> Automáticamente se crea una copia de seguridad diaria del sistema (excluyendo discos adicionales) y se conserva durante 24 horas. Al cambiar a la opción **Automatic Backup Premium**, dispondrá de las últimas 7 copias de seguridad diarias de su VPS para el montaje y la restauración.  
+>> Automáticamente se crea una copia de seguridad diaria del sistema (excluyendo discos adicionales) y se conserva durante 24 horas (solo aplicable a los servicios contratados a partir del 7 de agosto de 2025). Al cambiar a la opción **Automatic Backup Premium**, dispondrá de las últimas 7 copias de seguridad diarias de su VPS para el montaje y la restauración.  
 En comparación con las copias instantáneas manuales, esta función aumenta la seguridad de los datos al crear varios puntos de restauración a intervalos regulares.
 >>
 

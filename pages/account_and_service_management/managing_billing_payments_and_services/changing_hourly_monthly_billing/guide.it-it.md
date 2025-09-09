@@ -1,12 +1,12 @@
 ---
 title: 'Public Cloud Compute - Passare dalla fatturazione oraria a quella mensile'
 excerpt: 'Scopri come modificare il tipo di fatturazione delle tua istanza Public Cloud'
-updated: 2023-01-23
+updated: 2025-09-05
 ---
 
 ## Obiettivo
 
-Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o mensile. Le istanze 'orarie' sono fatturate in _pay-as-you-go_, in cui l’utente paga a fine mese la somma delle ore consumate. Per le istanze 'mensili', invece, è necessario effettuare il pagamento anticipato per il mese entrante ma ad un prezzo minore (fino al 50% di sconto). Se inizialmente hai scelto la fatturazione oraria, è comunque possibile passare alla fatturazione mensile in qualsiasi momento.
+Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o mensile (ad eccezione delle istanze Public Cloud di terza generazione, che vengono fatturate all’ora di default e non offrono l’opzione mensile durante la creazione dell’istanza). Le istanze 'orarie' sono fatturate in _pay-as-you-go_, in cui l’utente paga a fine mese la somma delle ore consumate. Per le istanze 'mensili', invece, è necessario effettuare il pagamento anticipato per il mese entrante ma ad un prezzo minore (fino al 50% di sconto). Se inizialmente hai scelto la fatturazione oraria, è comunque possibile passare alla fatturazione mensile in qualsiasi momento.
 
 **Questa guida ti mostra come passare da una fatturazione oraria ad una mensile.**
 
@@ -29,6 +29,10 @@ Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o m
 ## Procedura
 
 ### Dallo Spazio Cliente OVHcloud
+
+> [!warning]
+> La procedura seguente non funziona per le istanze di terza generazione (esempio: B3-32). Per essere fatturati mensilmente per questo tipo di istanza, è necessario creare un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/save_plans) per questo modello di istanza.
+>
 
 Nello [Spazio Cliente](/links/manager) seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
 

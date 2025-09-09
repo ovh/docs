@@ -246,7 +246,7 @@ Para o envio dos e-mails, encontre abaixo os parâmetros **SMTP** a utilizar:
 
 **Utilizou todos os endereços incluídos na sua oferta?**
 
-- Consulte as perguntas da [nossa FAQ e-mail](páginas/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+- Consulte as perguntas da [nossa FAQ e-mail](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - Consulte o conjunto das nossas ofertas e-mail [Zimbra](/links/web/emails-zimbra) ou [Exchange](/links/web/emails) para completar a sua oferta MX Plan no mesmo domínio.
 
 ## Quer saber mais? <a name="go-further"></a>

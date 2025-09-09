@@ -47,7 +47,7 @@ Nelle istruzioni seguenti viene descritto come creare e gestire coppie di chiavi
 
 Se si preferisce un'interfaccia utente grafica, è possibile trovare numerose applicazioni software per ogni tipo di sistema operativo che consentono di connettersi a host remoti tramite il protocollo OpenSSH.
 
-Ad esempio, [PuTTY](https://putty.org/) è un software client SSH open source dotato di numerose funzionalità utili. Scopri come utilizzarlo per le connessioni ai server e alle istanze OVHcloud nella nostra guida:
+Ad esempio, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) è un software client SSH open source dotato di numerose funzionalità utili. Scopri come utilizzarlo per le connessioni ai server e alle istanze OVHcloud nella nostra guida:
 
 - [Come utilizzare PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 

@@ -1,12 +1,12 @@
 ---
 title: 'Public Cloud Compute - Passar de uma faturação à hora para uma faturação ao mês'
 excerpt: 'Saiba como modificar o tipo de faturação da sua instância Public Cloud'
-updated: 2023-01-23
+updated: 2025-09-05
 ---
 
 ## Sumário
 
-Ao criar uma instância Public Cloud, é possível escolher entre uma faturação à hora e uma faturação ao mês. As instâncias «à hora» são faturadas como *pay-as-you-go*, ou seja, o utilizador paga ao fim do mês a soma das horas utilizadas. Já as instâncias «ao mês» devem ser pagas antecipadamente quanto ao mês seguinte e são menos onerosas (até 50% de desconto). Se escolher inicialmente a faturação à hora, em qualquer momento poderá optar pela faturação ao mês.
+Ao criar uma instância Public Cloud, é possível escolher entre uma faturação à hora e uma faturação ao mês (exceto para as instâncias Public Cloud de terceira geração, que são faturadas à hora predefinida e não oferecem a opção mensal no momento da criação da instância). As instâncias «à hora» são faturadas como *pay-as-you-go*, ou seja, o utilizador paga ao fim do mês a soma das horas utilizadas. Já as instâncias «ao mês» devem ser pagas antecipadamente quanto ao mês seguinte e são menos onerosas (até 50% de desconto). Se escolher inicialmente a faturação à hora, em qualquer momento poderá optar pela faturação ao mês.
 
 **Este guia explica como passar de uma faturação à hora para uma faturação ao mês.**
 
@@ -29,6 +29,10 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 ## Instruções
 
 ### Desde à Área de Cliente OVHcloud
+
+> [!warning]
+> O seguinte procedimento não funciona para instâncias de terceira geração (por exemplo: B3-32). Para ser faturado mensalmente para este tipo de instância, deve criar um [Savings Plan](/pages/public_cloud/public_cross_functional/save_plans) para este modelo de instância.
+>
 
 Na [Área de Cliente OVHcloud](/links/manager), escolha a instância para a qual deseja mudar o modo de faturação e abra o respetivo menu de opções clicando nos 3 pontos do lado direito da Instância. Terá então acesso ao botão `Passar para o plano mensal`{.action}:
 

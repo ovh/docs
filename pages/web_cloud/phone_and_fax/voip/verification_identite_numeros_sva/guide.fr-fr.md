@@ -1,7 +1,7 @@
 ---
 title: "Valider votre identité pour l'exploitation d'un numéro spécial SVA"
 excerpt: "Découvrez comment valider votre identité depuis l'espace client OVHcloud afin d'exploiter un numéro spécial SVA"
-updated: 2025-04-28
+updated: 2025-09-05
 ---
 
 ## Objectif
@@ -13,6 +13,23 @@ Lors de la commande ou de la portabilité d'un numéro SVA, vous devez renseigne
 OVHcloud, en partenariat avec Lemonway&#174;, vous accompagne dans la mise en oeuvre du KYC (*Know Your Customer* ou « Connaître vos clients ») via la fourniture d'éléments justificatifs depuis votre espace client OVHcloud.
 
 **Découvrez comment valider votre identité afin d'exploiter un numéro spécial SVA.**
+
+## À propos de Lemonway
+
+Lemonway est un **établissement de paiement européen réglementé**, spécialisé dans la gestion et la sécurisation des transactions financières.
+OVHcloud s'appuie sur Lemonway pour assurer la conformité et la sécurité de vos opérations.
+
+### Pourquoi ai-je reçu un e-mail de Lemonway ?
+
+Dans le cadre de la réglementation européenne (notamment la lutte contre le blanchiment d’argent et le financement du terrorisme), Lemonway est **tenu de vérifier régulièrement l’identité des utilisateurs**.
+
+Il s’agit d’une obligation légale qui s’applique à l’ensemble des prestataires de services financiers et qui permet de garantir la conformité et la sécurité de votre compte.
+
+### Que faire si je reçois un e-mail de Lemonway ?
+
+Si vous recevez un e-mail contenant un lien de la part de Lemonway, vous devez simplement **renseigner les informations demandées** et fournir les justificatifs nécessaires.
+
+Ces informations sont indispensables pour maintenir votre compte conforme et **actif**.
 
 ## Prérequis
 

@@ -1,7 +1,7 @@
 ---
 title: "Diagnosticar fallos de hardware en un servidor dedicado"
 excerpt: "Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor"
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 > [!primary]
@@ -74,10 +74,24 @@ Para más información sobre el resultado de este comando y su interpretación, 
 
 La prueba de las particiones analiza el acceso al disco y verifica el sistema de archivos. Respecto al acceso al disco, la aplicación comprueba que el sistema pueda comunicarse con los discos duros del servidor. En cuanto a la verificación del sistema de archivos, la aplicación utiliza el comando `fsck -fy`.
 
+Para comprobar el sistema de archivos, ejecute el siguiente comando:
+
 ```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+fsck -fy
+```
+
+Para una prueba de reproducción, ejecute el siguiente comando. Sustituya `sd(x)` por sus propios valores.
+
+```bash
+dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
+```
+
+Para una prueba de escritura, ejecute el siguiente comando. Sustituya `sd(x)` por sus propios valores
+
+```bash
+hdparm -t /dev/sd(x)
 ```
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

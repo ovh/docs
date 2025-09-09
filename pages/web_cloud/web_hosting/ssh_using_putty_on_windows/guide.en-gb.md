@@ -23,13 +23,13 @@ table, th, tr, td {
 
 ## Objective
 
-[PuTTY](https://putty.org/) is an open-source SSH client software with a graphical user interface. It was developed for Windows but is available for other operating systems as well and includes useful features, such as SSH key management.
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) is an open-source SSH client software with a graphical user interface. It was developed for Windows but is available for other operating systems as well and includes useful features, such as SSH key management.
 
 **This tutorial explains how to use PuTTY for secured connections to your OVHcloud service via the SSH protocol.**
 
 ## Requirements
 
-- [PuTTY](https://putty.org/) installed on your local device
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) installed on your local device
 - A basic understanding of the [SSH protocol and its usage](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 - Access to the [OVHcloud Control Panel](/links/manager)
 

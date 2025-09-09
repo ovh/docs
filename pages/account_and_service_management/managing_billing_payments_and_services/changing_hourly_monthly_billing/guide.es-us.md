@@ -1,12 +1,12 @@
 ---
 title: 'Public Cloud Compute - Cambiar de facturación por horas a mensual'
 excerpt: 'Cómo cambiar la modalidad de facturación de una instancia de Public Cloud'
-updated: 2023-01-23
+updated: 2025-09-05
 ---
 
 ## Objetivo
 
-Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas o mensual. Las instancias con tarifa por horas se facturan según el consumo, esto es, los usuarios reciben una factura por los recursos específicos que han utilizado al final de cada mes. Las instancias con tarifas mensuales se pueden pagar por adelantado y se facturan a un precio inferior (hasta un 50 % menos que aquellas según el consumo). Si inicialmente seleccionó la facturación por horas, puede cambiar a la facturación mensual en cualquier momento.
+Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas o mensual (excepto para las instancias de Public Cloud de tercera generación, que se facturan por horas por defecto y no ofrecen la opción mensual al crear la instancia). Las instancias con tarifa por horas se facturan según el consumo, esto es, los usuarios reciben una factura por los recursos específicos que han utilizado al final de cada mes. Las instancias con tarifas mensuales se pueden pagar por adelantado y se facturan a un precio inferior (hasta un 50 % menos que aquellas según el consumo). Si inicialmente seleccionó la facturación por horas, puede cambiar a la facturación mensual en cualquier momento.
 
 **Esta guía explica cómo cambiar de facturación por horas a facturación mensual.**
 
@@ -29,6 +29,10 @@ Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas 
 ## Procedimiento
 
 ### Desde el área de cliente de OVHcloud
+
+> [!warning]
+> El procedimiento siguiente no funciona para las instancias de tercera generación (por ejemplo, B3-32). Para facturar mensualmente este tipo de instancia, debe crear un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/save_plans) para este modelo de instancia.
+>
 
 Una vez iniciada sesión en el [área de cliente de OVHcloud](/links/manager), seleccione la instancia cuya tarifa de facturación desea cambiar en el panel de control y abra su menú de opciones haciendo clic en los tres puntos a la derecha de dicha instancia. A continuación, podrá ver el botón `«Cambiar a suscripción mensual»`{.action}:
 

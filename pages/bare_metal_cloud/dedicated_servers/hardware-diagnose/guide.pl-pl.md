@@ -1,7 +1,7 @@
 ---
 title: "Diagnostyka usterek sprzętowych serwera dedykowanego"
 excerpt: "Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze"
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 > [!primary]
@@ -73,10 +73,23 @@ Aby uzyskać więcej informacji na temat sposobu wprowadzenia polecenia i jego i
 
 Test partycji składa się z testu dostępu do dysku oraz weryfikacji systemu plików. Test dostępu do dysku pozwala sprawdzić, czy system może komunikować się z dyskami twardymi w Twoim serwerze. Do weryfikacji systemu plików służy komenda `fsck -fy`.
 
+Aby zweryfikować system plików, wprowadź następującą komendę:
+
 ```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+fsck -fy
 ```
 
+W celu przeprowadzenia testu odczytu wprowadź poniższą komendę. Zamień `sd(x)` na własne wartości.
+
+```bash
+dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
+```
+
+Aby wykonać test zapisu, wprowadź poniższą komendę. Zamień `sd(x)` na własne wartości
+
+```bash
+hdparm -t /dev/sd(x)
+```
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Przyłącz się do [społeczności użytkowników](/links/community).

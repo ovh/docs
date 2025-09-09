@@ -202,7 +202,7 @@ nutanix@CVMN's password:
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Putty](https://www.putty.org/)
+[Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 [Documentation Nutanix sur Logbay](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
 

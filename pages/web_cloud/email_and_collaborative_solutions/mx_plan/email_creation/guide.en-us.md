@@ -20,7 +20,6 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 
 - An MX Plan solution. This is available via:
     - A [Web Hosting](/links/web/hosting) offer.
-    - A [100M free hosting](/links/web/domains-free-hosting) included with a domain name (activated beforehand).
     - An MX Plan solution ordered separately.
 - Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
 

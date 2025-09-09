@@ -20,7 +20,6 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 
 - Disposer d'une offre MX Plan. Celle-ci est disponible via :
     - Une offre d’[hébergement web](/links/web/hosting).
-    - Un[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable).
     - Une offre MX Plan commandée séparément.
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 

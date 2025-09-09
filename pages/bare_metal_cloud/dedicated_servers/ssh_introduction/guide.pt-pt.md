@@ -223,7 +223,7 @@ Salve as alterações e saia do editor. Na próxima ligação ao servidor, terá
 
 Se preferir uma interface gráfica, poderá encontrar numerosas aplicações de software para cada tipo de sistema operativo que lhe permitem ligar-se a hosts distantes através do protocolo SSH.
 
-Por exemplo, [PuTTY](https://putty.org/) é um software cliente SSH open source com numerosas funcionalidades úteis. Saiba como utilizá-lo para as ligações aos servidores OVHcloud no nosso tutorial detalhado:
+Por exemplo, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) é um software cliente SSH open source com numerosas funcionalidades úteis. Saiba como utilizá-lo para as ligações aos servidores OVHcloud no nosso tutorial detalhado:
 
 [Como utilizar PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

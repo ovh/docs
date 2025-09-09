@@ -21,13 +21,13 @@ details[open]>summary::before {
 
 ## Ziel
 
-[PuTTY](https://putty.org/) ist ein Open-Source-SSH-Client mit grafischer Benutzeroberfläche. Es wurde für Windows entwickelt, ist aber auch für andere Betriebssysteme verfügbar und enthält nützliche Features wie die Verwaltung von SSH-Schlüsseln.
+[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) ist ein Open-Source-SSH-Client mit grafischer Benutzeroberfläche. Es wurde für Windows entwickelt, ist aber auch für andere Betriebssysteme verfügbar und enthält nützliche Features wie die Verwaltung von SSH-Schlüsseln.
 
 **Diese Anleitung erklärt, wie Sie PuTTY verwenden, um Verbindungen zu Ihrem OVHcloud-Dienst über SSH abzusichern.**
 
 ## Voraussetzungen
 
-- [PuTTY](https://putty.org/) ist auf Ihrem lokalen Gerät installiert.
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) ist auf Ihrem lokalen Gerät installiert.
 - Sie verfügen über Grundkenntnisse des [SSH-Protokolls und seiner Verwendung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 

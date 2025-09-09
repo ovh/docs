@@ -1,7 +1,7 @@
 ---
 title: "How to perform server hardware diagnostics in rescue mode"
 excerpt: "Find out how to use the OVHcloud rescue mode and diagnostic tools to identify hardware failures on your dedicated server"
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 ## Objective
@@ -69,8 +69,22 @@ To learn more about the output of this command and how to interpret it, consult 
 
 The partitions test is comprised of a disk access test and a file system check. The disk access test checks if the system can communicate with your server's hard drives. The file system check uses the `fsck -fy` command to check the entire file system.
 
+To check the file system, run the following command:
+
 ```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+fsck-fy
+```
+
+For a read test, run the command below. Replace `sd(x)` with your own values.
+
+```bash
+dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
+```
+
+For a write test, run the command below. Replace `sd(x)` with your own values
+
+```bash
+hdparm -t /dev/sd(x)
 ```
 
 ## Go further

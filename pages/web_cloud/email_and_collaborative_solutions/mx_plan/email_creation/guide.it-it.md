@@ -246,7 +246,7 @@ Di seguito sono riportati i parametri **SMTP** da utilizzare per l’invio delle
 
 **Hai utilizzato tutti gli indirizzi inclusi nella tua offerta?**
 
-- Consulta le domande della [nostra FAQ e-mail](pagine/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+- Consulta le domande della [nostra FAQ e-mail](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - Consulta tutte le nostre soluzioni email [Zimbra](/links/web/emails-zimbra) o [Exchange](/links/web/emails) per completare la soluzione MX Plan sullo stesso dominio.
 
 ## Per saperne di più <a name="go-further"></a>

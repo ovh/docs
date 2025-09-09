@@ -223,7 +223,7 @@ Salvare le modifiche e uscire dall'editor. Sarà necessario confermare la nuova 
 
 Se si preferisce un'interfaccia utente grafica, è possibile trovare molte applicazioni software per ogni tipo di sistema operativo che consentono di connettersi a host remoti tramite il protocollo SSH.
 
-Ad esempio, [PuTTY](https://putty.org/) è un software client SSH open source dotato di numerose funzionalità utili. Scopri come utilizzarlo per le connessioni ai server OVHcloud nella nostra guida:
+Ad esempio, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) è un software client SSH open source dotato di numerose funzionalità utili. Scopri come utilizzarlo per le connessioni ai server OVHcloud nella nostra guida:
 
 [Come utilizzare PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
