@@ -200,6 +200,9 @@ public-cloud-network-configuration: Configuration
 public-cloud-network-technical-resources: Ressources techniques
 public-cloud-network-tutorials: Tutoriels
 public-cloud-data-platform: Data Platform
+public_cloud-data_platform-general-signin_signup: Sign-up to Data Platform
+public-cloud-data-platform-getting-started: Getting Started
+public-cloud-data-platform-getting-started-app-init: Build your first app from scratch
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Premiers pas
 web-cloud-clouddb-configuration: Configuration
