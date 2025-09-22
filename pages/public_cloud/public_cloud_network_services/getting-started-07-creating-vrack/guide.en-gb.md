@@ -105,7 +105,30 @@ You will then be able to use the APIs dedicated to OpenStack as needed:
 > You may consult the [official OpenStack documentation](https://docs.openstack.org/) if you wish to go further in learning about its use.
 >
 
-For more information, consult this guide: [Configuring vRack for Public Cloud using OpenStack CLI](/pages/public_cloud/public_cloud_network_services/getting-started-09-creating-vrack-with-openstack).
+///
+
+/// details | OpenStack CLI
+
+You can manage your OVHcloud Public Cloud services and vRacks directly from your Linux or Windows terminal using the OpenStack CLI.
+
+This interface allows you to manage all OpenStack layers:
+
+- Nova: instances (compute)
+- Neutron: networks
+- Glance: images
+- Cinder: volumes
+
+The CLI centralizes these features and can be integrated into your scripts to automate your tasks.
+
+Before you begin, please consult the following guides:
+
+- [Prepare the environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Load OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+> [!primary]
+>
+> The OpenStack CLI is useful for managing your vRack, but some functions may vary depending on the version of the client or operating system. Please refer to the [official OpenStack documentation](https://docs.openstack.org/fr/).
+>
 
 ///
 
@@ -120,6 +143,11 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 ## Instructions
 
 ### Step 1: Activating and managing a vRack <a name="activation"></a>
+
+> [!warning]
+>
+> The vRack is managed at the OVHcloud infrastructure level, which means that you can only administer it in your OVHcloud Control Panel and the OVHcloud APIv6.
+>
 
 > [!tabs]
 > Via the OVHcloud Control Panel
@@ -533,6 +561,16 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> }
 >> ```
 >>
+> Via the Openstack CLI
+>> In the following example we specify the `VLAN_ID` to which we want the network to be part of through `--provider-network-type` and `--provider-segment`.
+>>
+>> You can remove those parameters. In that case, an available `VLAN_ID` will be used.
+>>
+>> ```bash 
+>> openstack network create --provider-network-type vrack --provider-segment 42 OS_CLI_private_network
+>> openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.0.0.0/16
+>> ```
+>>
 
 ### Step 3: Integrating an instance into vRack <a name="instance-integration"></a>
 
@@ -657,10 +695,176 @@ There are two possible scenarios:
 >> ><br>The other solution is to connect to the instance via another server in the same private network. You can also correct the network configuration of the instance through Rescue mode.
 >> >
 >>
+> Via the Openstack CLI
+>> The following steps are necessary to create an instance directly in the vRack.
+>>
+>> **Retrieving the required information**
+>>
+>> Public and private networks:
+>>
+>> ```bash
+>> openstack network list
+>> 
+>> +--------------------------------------+------------+-------------------------------------+
+>> | ID                                   | Name       | Subnets                             |
+>> +--------------------------------------+------------+-------------------------------------+
+>> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | xxxxxxxx-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
+>> | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | zzzzzzzz-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
+>> | 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0   | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
+>> +--------------------------------------+------------+-------------------------------------+
+>> ```
+>>
+>> or
+>>
+>> ```bash
+>> nova net-list
+>> 
+>> +--------------------------------------+------------+------+
+>> | ID                                   | Label      | CIDR |
+>> +--------------------------------------+------------+------+
+>> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | None |
+>> | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | None |
+>> | 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0   | None |
+>> +--------------------------------------+------------+------+
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > You will need to note the network IDs of interest:
+>> ><br> - Ext-Net for a public IP address
+>> ><br> - The VLAN(s) required for your configuration
+>> >
+>>
+>> Also note the information detailed in [this guide](/pages/public_cloud/compute/starting_with_nova):
+>>
+>> - ID or name of the OpenStack SSH key
+>> - ID of the instance type (flavor)
+>> - ID of the desired image (operating system, snapshot, etc.)
+>>
+>> **Deploying the instance**
+>>
+>> With the previously retrieved items, an instance can be created, including it directly in the vRack:
+>>
+>> ```bash
+>> nova boot --key-name SSHKEY --flavor [ID-flavor] --image [ID-Image] --nic net-id=[ID-Network 1] --nic net-id=[ID-Network 2] [instance name]
+>> ```
+>>
+>> Example:
+>>
+>> ```bash
+>> nova boot --key-name my-ssh-key --flavor xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --image yyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy --nic net-id=[id_Ext-Net] --nic net-id=[id_VLAN] NameOfInstance
+>>
+>> +--------------------------------------+------------------------------------------------------+
+>> | Property                             | Value                                                |
+>> +--------------------------------------+------------------------------------------------------+
+>> | OS-DCF:diskConfig                    | MANUAL                                               |
+>> | OS-EXT-AZ:availability_zone          |                                                      |
+>> | OS-EXT-STS:power_state               | 0                                                    |
+>> | OS-EXT-STS:task_state                | scheduling                                           |
+>> | OS-EXT-STS:vm_state                  | building                                             |
+>> | OS-SRV-USG:launched_at               | -                                                    |
+>> | OS-SRV-USG:terminated_at             | -                                                    |
+>> | accessIPv4                           |                                                      |
+>> | accessIPv6                           |                                                      |
+>> | adminPass                            | xxxxxxxxxxxx                                         |
+>> | config_drive                         |                                                      |
+>> | created                              | YYYY-MM-DDTHH:MM:SSZ                                 |
+>> | flavor                               | [Flavor type] (xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)   |
+>> | hostId                               |                                                      |
+>> | id                                   | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx                   |
+>> | image                                | [Image type] (xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)    |
+>> | key_name                             | [Name of key]                                        |
+>> | metadata                             | {}                                                   |
+>> | name                                 | [Name of instance]                                   |
+>> | os-extended-volumes:volumes_attached | []                                                   |
+>> | progress                             | 0                                                    |
+>> | security_groups                      | default                                              |
+>> | status                               | BUILD                                                |
+>> | tenant_id                            | zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                     |
+>> | updated                              | YYYY-MM-DDTHH:MM:SSZ                                 |
+>> | user_id                              | zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                     |
+>> +--------------------------------------+------------------------------------------------------+
+>> ```
+>>
+>> or
+>>
+>> ```bash
+>> openstack server create --key-name SSHKEY --flavor [ID-flavor] --image [ID-Image] --nic net-id=[ID-Network 1] --nic net-id=[ID-Network 2] [instance name]
+>> ```
+>>
+>> Example:
+>>
+>> ```bash
+>> openstack server create --key-name my-ssh-key --flavor xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --image yyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy --nic net-id=[id_Ext-Net] --nic net-id=[id_VLAN] NameOfInstance
+>>
+>> +--------------------------------------+------------------------------------------------------+
+>> | Property                             | Value                                                |
+>> +--------------------------------------+------------------------------------------------------+
+>> | OS-DCF:diskConfig                    | MANUAL                                               |
+>> | OS-EXT-AZ:availability_zone          |                                                      |
+>> | OS-EXT-STS:power_state               | 0                                                    |
+>> | OS-EXT-STS:task_state                | scheduling                                           |
+>> | OS-EXT-STS:vm_state                  | building                                             |
+>> | OS-SRV-USG:launched_at               | -                                                    |
+>> | OS-SRV-USG:terminated_at             | -                                                    |
+>> | accessIPv4                           |                                                      |
+>> | accessIPv6                           |                                                      |
+>> | adminPass                            | xxxxxxxxxxxx                                         |
+>> | config_drive                         |                                                      |
+>> | created                              | YYYY-MM-DDTHH:MM:SSZ                                 |
+>> | flavor                               | [Flavor type] (xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)   |
+>> | hostId                               |                                                      |
+>> | id                                   | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx                   |
+>> | image                                | [Image type] (xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)    |
+>> | key_name                             | [Name of key]                                        |
+>> | metadata                             | {}                                                   |
+>> | name                                 | [Name of instance]                                   |
+>> | os-extended-volumes:volumes_attached | []                                                   |
+>> | progress                             | 0                                                    |
+>> | security_groups                      | default                                              |
+>> | status                               | BUILD                                                |
+>> | tenant_id                            | zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                     |
+>> | updated                              | YYYY-MM-DDTHH:MM:SSZ                                 |
+>> | user_id                              | zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz                     |
+>> +--------------------------------------+------------------------------------------------------+
+>> ```
+>>
+>> You can set the IP address of the instance of your vRack interface at the OpenStack level.
+>>
+>> To do this, you can add a single argument to the function "--nic":
+>>
+>> `--nic net-id=[ID-Network],v4-fixed-ip=[IP_static_vRack]`
+>>
+>> Example:
+>>
+>> `--nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42`
+>>
+>> **Verifying the instance**
+>>
+>> After a few moments you can check the list of existing instances to find the server you created:
+>>
+>> ```bash
+>> openstack server list
+>> +--------------------------------------+---------------------+--------+--------------------------------------------------+--------------------+
+>> | ID                                   |       Name          | Status | Networks                                         |     Image Name     |
+>> +--------------------------------------+---------------------+--------+--------------------------------------------------+--------------------+
+>> | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxx | [Name of instance] | ACTIVE | Ext-Net=[IP_V4], [IP_V6]; MyVrack=[IP_V4_vRack] | [Name-of-instance]|
+>> +--------------------------------------+---------------------+--------+--------------------------------------------------+--------------------+
+>> ```
+>>
+>> ```bash
+>> nova list
+>> +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
+>> | ID                                   | Name               | Status | Task State | Power State | Networks                                         |
+>> +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
+>> | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   | [Name of instance]| ACTIVE | -          | Running     | Ext-Net=[IP_V4], [IP_V6]; MyVrack=[IP_V4_vRack] |
+>> +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
+>> ```
+>>
 
 ///
 
-/// details | In case of an existing instance**
+/// details | **In case of an existing instance**
 
 The OVHcloud Control Panel allows you to attach an instance to one or more private networks but does not offer advanced network interface configuration. If you want to customise further, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
 
@@ -839,12 +1043,163 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >>
 >> ![Horizon detach interface](images/horizon6.png){.thumbnail}
 >>
+> Via the Openstack CLI
+>> The following steps are necessary to integrate an existing instance into the vRack.
+>>
+>> **Retrieving the required information**
+>>
+>> Identify your instances:
+>>
+>> ```bash
+>> openstack server list
+>> 
+>> +--------------------------------------+--------------+--------+------------------------------------------------------------------------+------------+
+>> | ID                                   | Name         | Status | Networks                                                               | Image Name |
+>> +--------------------------------------+--------------+--------+------------------------------------------------------------------------+------------+
+>> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | My-Instance | ACTIVE | Ext-Net=xx.xx.xx.xx, 2001:41d0:yyyy:yyyy::yyyy; MyVrack=192.168.0.124 | Debian 9   |
+>> +--------------------------------------+--------------+--------+------------------------------------------------------------------------+------------+
+>> ```
+>>
+>> or
+>>
+>> ```bash
+>> nova list
+>> 
+>> +--------------------------------------+--------------+--------+------------+-------------+----------------------------------------------------------------------+
+>> | ID                                   | Name         | Status | Task State | Power State | Networks                                                             |
+>> +--------------------------------------+--------------+--------+------------+-------------+----------------------------------------------------------------------+
+>> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | My-Instance | ACTIVE | -          | Running     | Ext-Net=xx.xx.xx.xx,2001:41d0:yyyy:yyyy::yyyy;MyVrack=192.168.0.124 |
+>> +--------------------------------------+--------------+--------+------------+-------------+----------------------------------------------------------------------+
+>> ```
+>>
+>> Public and private networks:
+>>
+>> ```bash
+>> openstack network list
+>> 
+>> +--------------------------------------+------------+-------------------------------------+
+>> | ID                                   | Name       | Subnets                             |
+>> +--------------------------------------+------------+-------------------------------------+
+>> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | xxxxxxxx-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
+>> | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | zzzzzzzz-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
+>> | 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN-0   | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
+>> +--------------------------------------+------------+-------------------------------------+
+>> ```
+>>
+>> or
+>>
+>> ```bash
+>> nova net-list
+>> 
+>> +--------------------------------------+------------+------+
+>> | ID                                   | Label      | CIDR |
+>> +--------------------------------------+------------+------+
+>> | 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | None |
+>> | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | None |
+>> | 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN-0   | None |
+>> +--------------------------------------+------------+------+
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > You will need to note the network IDs of interest:
+>> ><br> - Ext-Net for a public IP address
+>> ><br> - The VLAN(s) required for your configuration
+>> >
+>>
+>> **Adding a private network interface**
+>>
+>> In order to attach a new interface, execute the following command:
+>>
+>> ```bash
+>> nova interface-attach --net-id <ID-VLAN> <ID-instance>
+>> ```
+>>
+>> Example:
+>>
+>> ```bash
+>> nova interface-attach --net-id 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx
+>> ```
+>>
+>> You can verify that the action has been performed:
+>>
+>> ```bash
+>> nova show <ID-instance>
+>> 
+>> +--------------------------------------+----------------------------------------------------------+
+>> | Property                             | Value                                                    |
+>> +--------------------------------------+----------------------------------------------------------+
+>> | Ext-Net network                      | xx.xx.xx.xx, 2001:41d0:xxx:xxxx::xxxx                    | => your public IP
+>> | MyVLAN-42 network                    | 192.168.0.x                                              | => your private IP
+>> [...]
+>> ```
+>>
+>> or
+>>
+>> ```bash
+>> openstack server show <ID-instance>
+>> +--------------------------------------+-------------------------------------------------------------------------+
+>> | Field                                | Value                                                                   |
+>> +--------------------------------------+-------------------------------------------------------------------------+
+>> [...]
+>> | addresses                            | Ext-Net=xx.xx.xx.xx, 2001:41d0:xxx:xxxx::xxxx ; MyVLAN-42=192.168.0.x  | => your public IP ; your private IP                                                                     
+>> [...]
+>> ```
+>>
+>> #### Removing a network interface
+>>
+>> > [!warning]
+>> >
+>> > Detaching a network interface is permanent.
+>> >
+>> > However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.
+>> ><br>This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
+>> >
+>>
+>> In order to detach an interface, you will first need to identify the Neutron port that has been created.
+>>
+>> You can do this by using the following commands:
+>>
+>> ```bash
+>> neutron port-list
+>> +--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
+>> | id                                   | name | mac_address       | fixed_ips                                                                                         |
+>> +--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
+>> | 12345678-abcd-ef01-2345-678910abcdef |      | fa:xx:xx:xx:xx:xx | {"subnet_id": "01234567-8901-abscdef12345678910abcd", "ip_address": "192.168.0.x"}                |
+>> | 09876543-210a-bcde-f098-76543210abcd |      | fa:yy:yy:yy:yy:yy | {"subnet_id": "65432109-abcd-ef09-8765-43210abcdef1", "ip_address": "2001:41d0:xxx:xxxx::xxxx"}   |
+>> |                                      |      |                   | {"subnet_id": "abcdef12-3456-7890-abcd-ef1234567890", "ip_address": "YY.YY.YY.YY"}                |
+>> +--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
+>> ```
+>>
+>> or
+>>
+>> ```bash
+>> openstack port list
+>> +--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
+>> | ID                                   | Name | MAC Address       | Fixed IP Addresses                                                                        |
+>> +--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
+>> | 12345678-abcd-ef01-2345-678910abcdef |      | fa:xx:xx:xx:xx:xx | ip_address='192.168.0.xx', subnet_id='301234567-8901-abscdef12345678910abcd'              |
+>> | 09876543-210a-bcde-f098-76543210abcd |      | fa:yy:yy:yy:yy:yy | ip_address='2001:41d0:xxx:xxxx::xxxx', subnet_id='65432109-abcd-ef09-8765-43210abcdef1'   |
+>> |                                      |      |                   | ip_address='YY.YY.YY.YY', subnet_id='abcdef12-3456-7890-abcd-ef1234567890'                |
+>> +--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
+>> ```
+>>
+>> Once you have identified the port to remove, you can execute the following command:
+>>
+>> ```bash
+>> nova interface-detach <ID_instance> <port_id>
+>> ```
+>>
+>> Example:
+>>
+>> ```bash
+>> nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-2345-678910abcdef
+>> ```
+>>
 
 ///
 
 ## Go further
-
-[Configuring vRack for Public Cloud using OVHcloud APIv6](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api)
 
 [Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
