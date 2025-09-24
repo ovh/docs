@@ -1,6 +1,6 @@
 ---
 title: flask-postgres-socketio
-date: 2025-09-28
+dare: 2025-09-24
 ---
 
 This tutorial will guide you through building a real-time inventory tracking dashboard using Flask, Postgres, and Socket.IO. You'll learn how to stream live data updates from the backend to the frontend using Postgres' [LISTEN](https://www.postgresql.org/docs/current/sql-listen.html)/[NOTIFY](https://www.postgresql.org/docs/current/sql-notify.html) and [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/)'s WebSocket support.
