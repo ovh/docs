@@ -60,11 +60,11 @@ The versions installed depends on the Kubernetes version:
 
 The CNI plugin installed for the `standard` plan is `cilium`. The versions installed depends on the Kubernetes version:
 
-* `1.30`: cilium 1.17.1
-* `1.31`: cilium 1.17.1
-* `1.32`: cilium 1.17.1
-* `1.33`: cilium 1.17.1
-* `1.34`: cilium 1.17.8
+* `1.30`: cilium 1.17.5
+* `1.31`: cilium 1.17.5
+* `1.32`: cilium 1.17.5
+* `1.33`: cilium 1.17.5
+* `1.34`: cilium 1.18.2
 
 ## CCM (Cloud-controller-manager)
 
