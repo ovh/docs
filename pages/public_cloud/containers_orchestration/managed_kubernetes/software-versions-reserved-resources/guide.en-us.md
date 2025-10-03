@@ -94,11 +94,11 @@ The versions depend on the Kubernetes cluster version:
 
 The versions are:
 
-* `1.29`: coredns v1.11.3, metrics-server v0.7.2
-* `1.30`: coredns v1.11.3, metrics-server v0.7.2
-* `1.31`: coredns v1.11.3, metrics-server v0.7.2
-* `1.32`: coredns v1.12.0, metrics-server v0.7.2
-* `1.33`: coredns v1.12.1, metrics-server v0.7.2
+* `1.29`: coredns v1.11.3, metrics-server v0.8.0
+* `1.30`: coredns v1.11.3, metrics-server v0.8.0
+* `1.31`: coredns v1.11.3, metrics-server v0.8.0
+* `1.32`: coredns v1.12.0, metrics-server v0.8.0
+* `1.33`: coredns v1.12.1, metrics-server v0.8.0
 
 ## Enabled policies
 
