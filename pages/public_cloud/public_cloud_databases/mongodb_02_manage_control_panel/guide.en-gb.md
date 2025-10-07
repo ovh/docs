@@ -62,7 +62,7 @@ You can specify the MongoDB connection string using either:
 - *Service -> mongoDB* for the Standard Connection String format **(soon deprecated)**.
 - *Service -> mongodbSrv* for the DNS Seed List Connection String format.
 
-![MongoDB General Information](images/mongodb_02_manage_control_panel-copy_uri.png){.thumbnail}
+![Copy URI](images/mongodb_02_manage_control_panel-copy_uri.png){.thumbnail}
 
 > [!primary]
 >

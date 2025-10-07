@@ -46,7 +46,7 @@ This way we can help prevent intrusive connection attempts.
 
 Click to authorise a new IP. In our case we will enter 109.190.200.59:
 
-![Add an IP](images/mongodb_02_manage_control_panel-20230313175157.png){.thumbnail}
+![Add an IP](images/mongodb_02_manage_control_panel-add_ip.png){.thumbnail}
 
 > [!primary]
 >
@@ -62,7 +62,7 @@ You can specify the MongoDB connection string using either:
 - *Service -> mongoDB* for the Standard Connection String format **(soon deprecated)**.
 - *Service -> mongodbSrv* for the DNS Seed List Connection String format.
 
-![MongoDB General Information](images/mongodb_02_manage_control_panel-20230313175545.png){.thumbnail}
+![Copy URI](images/mongodb_02_manage_control_panel-copy_uri.png){.thumbnail}
 
 > [!primary]
 >
