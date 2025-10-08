@@ -503,9 +503,7 @@ We can now proceed with the disk replacement.
 
 <a name="rescuemode"></a>
 
-#### Rebuilding the RAID after the main disk is replaced (rescue mode)
-
-Here, we assume that the EFI System Partitions have been kept in sync with or without major system updates. If your EFI System Partitions were not synchronized after major system updates (e.g GRUB), we have provided additional information on how to proceed [here](#rebuilding-raid-with-efi-partitions-not-synchronized-after-major-system-updates-eg-grub) 
+#### Rebuilding the RAID in rescue mode
 
 Once the disk has been replaced, the next step is to copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
 
@@ -711,7 +709,7 @@ root@rescue12-customer-eu:/# blkid -t LABEL=EFI_SYSPART
 
 /// details | Unfold this section
 
-When EFI System Partitions not synchronised after a major system update (e.g GRUB), and the primary disk is replaced, booting from an out-of-date ESP may not work. In this case, the server will be rebooted in rescue mode. where recreating the ESPs and reinstalling the grub bootloader is necessary.
+When EFI System Partitions are not synchronised after major system updates (e.g GRUB), and the primary disk where the partition is mounted is replaced, booting from an out-of-date ESP may not work. In this case, the server will be rebooted in rescue mode, where recreating the ESPs and reinstalling the grub bootloader is necessary.
 
 Still in the `chroot` environment, we create the `/boot/efi` folder in order to mount the new EFI System Partition **nvme0n1p1**:
 
@@ -864,7 +862,7 @@ We have now successfully completed the RAID rebuild on the server and we can now
 
 /// details | Unfold this section
 
-If your server is able to boot in normal mode after a disk replacement, you can proceed with the following steps to rebuild teh RAID:
+If your server is able to boot in normal mode after a disk replacement, you can proceed with the following steps to rebuild the RAID:
 
 In our example, we replaced the secondary disk **nvme1n1**.
 
@@ -873,7 +871,7 @@ Once the disk has been replaced, we copy the partition table from the healthy di
 **For GPT partitions**
 
 ```sh
-sgdisk -R /dev/nvme0n1 /dev/nvme1n1
+sgdisk -R /dev/nvme1n1 /dev/nvme0n1
 ```
 
 The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`.
