@@ -10,11 +10,11 @@ Redundant Array of Independent Disks (RAID) is a technology that mitigates data 
 
 The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
 
-**This guide explains how to manage and rebuild software RAID after a disk replacement on your server in legacy boot (BIOS) mode**
+**This guide explains how to manage and rebuild a software RAID in the event of a disk replacement on your server in legacy boot mode (BIOS).**
 
 Before we begin, please note that this guide focuses on Dedicated servers that use legacy boot (BIOS) mode. If your server uses the UEFI mode (newer motherboards), refer to this guide [Managing and rebuilding software RAID on servers in UEFI boot mode](/pages/bare_metal_cloud/dedicated_servers/raid_soft_uefi).
 
-To check whether a server runs on legacy BIOS mode or UEFI mode, run the following command:
+To check whether a server runs on legacy BIOS or UEFI mode, run the following command:
 
 ```sh
 [user@server_ip ~]# [ -d /sys/firmware/efi ] && echo UEFI || echo BIOS
@@ -36,9 +36,11 @@ When you purchase a new server, you may feel the need to perform a series of tes
 - [Simulating a disk failure](#diskfailure)
     - [Removing the failed disk](#diskremove)
 - [Rebuilding the RAID](#raidrebuild)
-    - [Rebuilding the RAID in rescue mode](#rescumode)
+    - [Rebuilding the RAID in rescue mode](#rescuemode)
     - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
     - [Rebuilding the RAID in normal mode](#normalmode)
+
+<a name="basicinformation"></a>
 
 ### Basic Information
 
@@ -394,6 +396,9 @@ Next, we add the partitions to the RAID:
 
 Use the following command to monitor the RAID rebuild:
 
+```sh
+[user@server_ip ~]# cat /proc/mdstat
+
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
 md2 : active raid1 sda2[0] sdb2[1]
       931954688 blocks super 1.2 [2/2] [UU]
@@ -406,9 +411,10 @@ md4 : active raid1 sda4[0](F) sdb4[1]
 unused devices: <none>
 ```
 
-Lastly, we add a label and mount the [SWAP] partition (if applicable). 
+Lastly, we add a label and mount the [SWAP] partition (if applicable).
 
-To add lable the SWAP partition:
+To add a label the SWAP partition:
+
 ```sh
 [user@server_ip ~]# sudo  mkswap /dev/sdb4 -L swap-sdb4
 ```
@@ -500,6 +506,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --add /dev/md4
 ```
 
 Use the `cat /proc/mdstat` command to monitor the RAID rebuild:
+
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
 
