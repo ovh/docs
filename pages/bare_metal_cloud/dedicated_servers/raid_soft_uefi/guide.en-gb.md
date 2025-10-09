@@ -989,7 +989,7 @@ Next, reload the system:
 Run the following command to enable the swap partition:
 
 ```sh
-[user@server_ip ~]# c
+[user@server_ip ~]# swapon -av
 ```
 
 We have now successfully completed the RAID rebuild.
