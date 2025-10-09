@@ -709,7 +709,7 @@ root@rescue12-customer-eu:/# blkid -t LABEL=EFI_SYSPART
 
 /// details | Unfold this section
 
-When EFI System Partitions are not synchronised after major system updates (e.g GRUB), and the primary disk where the partition is mounted is replaced, booting from an out-of-date ESP may not work. In this case, the server will be rebooted in rescue mode, where recreating the ESPs and reinstalling the grub bootloader is necessary.
+When EFI System partitions are not synchronised after major system updates (e.g. GRUB) and the primary disk on which the partition is mounted is replaced, booting from an outdated ESP may not work.
 
 Still in the `chroot` environment, we create the `/boot/efi` folder in order to mount the new EFI System Partition **nvme0n1p1**:
 
@@ -864,7 +864,7 @@ We have now successfully completed the RAID rebuild on the server and we can now
 
 If your server is able to boot in normal mode after a disk replacement, you can proceed with the following steps to rebuild the RAID:
 
-In our example, we replaced the secondary disk **nvme1n1**.
+In our example, we replaced the disk **nvme1n1**.
 
 Once the disk has been replaced, we copy the partition table from the healthy disk (in this example, nvme0n1) to the new one (nvme1n1).
 
@@ -989,7 +989,7 @@ Next, reload the system:
 Run the following command to enable the swap partition:
 
 ```sh
-[user@server_ip ~]# sudo swapon -av
+[user@server_ip ~]# c
 ```
 
 We have now successfully completed the RAID rebuild.
