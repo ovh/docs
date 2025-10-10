@@ -31,7 +31,7 @@ It also helps you select the most appropriate solution depending on your Hosted 
 | **LDP subscription** | ESXi, vCenter, NSX-T (filtered) | Public | Not PCI-DSS / SNC | Paid | Centralised log correlation and observability |
 
 > [!primary]
-> Syslog Forward is enabled on demand during the subscription to the **Log to Customer** service.  
+> Syslog Forward is enabled on demand during the subscription to the **Log to Customer** service.
 > Only about 13 % of Hosted Private Cloud customers use LDP forwarding.
 
 ## Step 2. Activate Syslog Forward
@@ -143,7 +143,6 @@ Monitored checks:
 - SSL certificate thumbprint validity
 
 If an issue is detected:
-
 - A **self-healing process** will try to re-establish the connection.
 - If the problem persists, the system triggers an incident for further investigation.
 - Customers receive an automatic email if the issue comes from their configuration.
