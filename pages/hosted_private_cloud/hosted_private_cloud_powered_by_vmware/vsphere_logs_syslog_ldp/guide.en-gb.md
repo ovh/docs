@@ -1,7 +1,7 @@
 ---
 title: "Activating Syslog and LDP subscription for vSphere logs"
 excerpt: "Learn how to forward vSphere logs to your own syslog server or subscribe to the OVHcloud Log Data Platform (LDP) service"
-updated: 2025-10-09
+updated: 2025-10-13
 ---
 
 ## Objective
@@ -31,10 +31,30 @@ It also helps you select the most appropriate solution depending on your Hosted 
 | **LDP subscription** | ESXi, vCenter, NSX-T (filtered) | Public | Not PCI-DSS / SNC | Paid | Centralised log correlation and observability |
 
 > [!primary]
-> Syslog Forward is enabled on demand during the subscription to the **Log to Customer** service.
-> Only about 13 % of Hosted Private Cloud customers use LDP forwarding.
+> Syslog Forward is the default method for most Hosted Private Cloud services.
+> The LDP option is recommended for advanced monitoring and observability use cases.
 
 ## Step 2. Activate Syslog Forward
+
+You can enable the Syslog Forward feature directly from the **OVHcloud Control Panel** or through the **OVHcloud API**.
+
+### Through the OVHcloud Control Panel
+
+1. Go to your `Hosted Private Cloud` service in the **OVHcloud Control Panel**.
+
+2. Select your VMware service, then click the `Logs` tab.
+
+3. Click `Activate log transfer via Syslog`.
+
+4. Wait for the activation process to complete (this may take up to 20 minutes).
+
+5. When activation is complete, a confirmation banner appears indicating that logs are now being sent via Syslog.
+
+> [!warning]
+> The `Logs` tab may not yet be visible in your OVHcloud Control Panel.  
+> It becomes available once the Syslog Forward feature is enabled for your PCC service.
+
+### Through the API
 
 1. Log in to the [OVHcloud API](/links/api).
 

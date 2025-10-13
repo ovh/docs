@@ -1,7 +1,7 @@
 ---
 title: "Activation du Syslog et de l’abonnement LDP pour les journaux vSphere"
 excerpt: "Découvrez comment transférer les journaux vSphere vers votre propre serveur syslog ou les centraliser via le service Log Data Platform (LDP) d’OVHcloud"
-updated: 2025-10-09
+updated: 2025-10-13
 ---
 
 ## Objectif
@@ -36,9 +36,25 @@ Il vous aide également à choisir la solution la plus adaptée à votre environ
 
 ## Étape 2. Activer le Syslog Forward
 
+Vous pouvez activer la fonctionnalité Syslog Forward directement depuis l’**Espace client OVHcloud** ou via l’**API OVHcloud**.
+
+### Depuis l’Espace client OVHcloud
+
+1. Accédez à votre service `Hosted Private Cloud` dans l’**Espace client OVHcloud**.
+
+2. Sélectionnez votre service VMware, puis cliquez sur l’onglet `Logs`.
+
+3. Cliquez sur `Activer le transfert de logs via le système Syslog`.
+
+4. Patientez le temps que l’activation se termine (jusqu’à 20 minutes).
+
+5. Une fois terminée, une bannière de confirmation s’affiche indiquant que les journaux sont désormais transférés via Syslog.
+
 > [!warning]
-> L’onglet `Logs` peut ne pas encore être visible dans votre interface Manager.
+> L’onglet `Logs` peut ne pas encore être visible dans votre Espace client OVHcloud.
 > Il devient disponible une fois la fonctionnalité Syslog Forward activée pour votre service PCC.
+
+### Via l’API
 
 1. Connectez-vous à l’[API OVHcloud](/links/api).
 
@@ -172,4 +188,3 @@ Cet appel supprime la configuration existante et interrompt le transfert des jou
 Si vous avez besoin d’une formation ou d’une assistance technique pour la mise en œuvre de nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet par notre équipe Professional Services.
 
 Rejoignez notre [communauté d’utilisateurs](/links/community).
-
