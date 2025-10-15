@@ -32,15 +32,15 @@ This guide explains how to enable IAM authentication and control user access to 
 
 ### Introduction to OVHcloud IAM
 
-OVHcloud IAM (Identity and Access Management) is a centralized system that lets you manage who can access your OVHcloud services and what they are allowed to do. It provides fine-grained access control through users, groups and roles.
+OVHcloud IAM (Identity and Access Management) is a centralized system that lets you control who can access your OVHcloud services and what actions they can perform. It provides fine-grained access management through users, groups, and roles.
 
-When used with Managed Rancher Service (MRS), OVHcloud IAM replaces Harbor’s local user database. This enables you to:
+When integrated with the Managed Rancher Service (MRS), OVHcloud IAM replaces Rancher’s local authentication system. This allows you to:
 
-- use SSO (Single Sign-On) with your OVHcloud credentials to access Harbor.
-- assign predefined IAM roles (base, ovhRestrictedAdmin, standard) to control access levels.
-- manage permissions at scale using IAM groups and projects.
+- Use Single Sign-On (SSO) with your OVHcloud credentials to access Rancher.
+- Assign predefined IAM roles (such as base, ovhRestrictedAdmin, standard) to define access levels.
+- Manage permissions efficiently at scale using IAM groups and projects.
 
-By integrating IAM with your registry, you ensure consistent access control across your OVHcloud services — reducing manual management and iMRSoving security.
+Integrating IAM with your Rancher service ensures consistent access control across all your OVHcloud resources, reducing manual management and improving overall security.
 
 ### Activate/disable authentication via OVHcloud IAM
 
@@ -48,85 +48,114 @@ By integrating IAM with your registry, you ensure consistent access control acro
 >
 > When you enable OVHcloud IAM authentication on your Managed Rancher Service:
 > 
-> - all existing Harbor users will be removed.
-> - existing robot accounts remain functional.
-> - new robot accounts can still be created and managed.
+> - Local users will remain functional, so you can continue logging in with your usual Rancher accounts.
+> - If the "admin" password is regenerated while IAM authentication is enabled, or if no user has ever logged in locally, the ability to log in with the IAM root user will be temporarily disabled.
+> - To restore access with the IAM root user, log in first with a local admin account.
 > 
-> From this point on, all users access are managed through OVHcloud IAM roles and policies.
+> From this point on, IAM roles and policies control access for users authenticated via OVHcloud IAM.
 >
 
-<!-- > [!tabs]
-> Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Rancher Service`{.action}.
->>
->> In the list of registries, click the `...`{.action} button for the relevant registry, then select:
->>
->> - `Activate authentication via OVHcloud IAM`{.action} to enable it.
->>
->> ![activate IAM](images/activate_iam.png){.thumbnail}
->>
->> - `Disable authentication via OVHcloud IAM`{.action} to disable it.
->>
->> ![disable IAM](images/disable_iam.png){.thumbnail}
+> [!tabs]
+> Via the OVHcloud Control Panel (Comming soon)
+>> > [!primary]
+>> >
+>> > Managing IAM from the OVHcloud Manager is not yet available and will be added in a future release.
+>> >
 >>
 > Via the OVHcloud API
->> /// details | Enable IAM authentication
->>
 >> > [!api]
 >> >
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/containerRegistry/{registryID}/iam
+>> > @api {v2} /publicCloud PUT /publicCloud/project/{projectId}/rancher/{rancherId}
 >> >
 >>
->> ///
+>> With the request body:
 >>
->> /// details | Disable IAM authentication
+>> ```json
+>> {
+>>   "targetSpec": {
+>>     "iamAuthEnabled": true, // true to enable IAM, false to disable
+>>     "name": "my_rancher", // Name of the Managed Rancher Service
+>>     "plan": "STANDARD", // Plan of the Managed Rancher Service
+>>     "version": "1.0.0" // Version of the Managed Rancher Service
+>>   }
+>> }
+>> ```
 >>
->> > [!api]
+>> > [!primary]
 >> >
->> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/containerRegistry/{registryID}/iam
+>> > Make sure all information in the JSON (service name, plan, version) is correct. Using incorrect values will result in an error when activating or disabling IAM.
 >> >
->>
->> ///
 >>
 >> Replace:
 >>
->> - `serviceName` with the ID of your Public Cloud project.
->> - `registryID` with the ID of the Managed Rancher Service.
+>> - `projectId` with the ID of your Public Cloud project.
+>> - `rancherId` with the ID of the Managed Rancher Service.
 >>
->> You can retrieve the `registryID` in two ways:
+>> You can retrieve the `rancherId` in two ways:
 >>
 >> - **Via API:**
 >> 
 >> > [!api]
 >> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/containerRegistry
+>> > @api {v2} /publicCloud GET /publicCloud/project/{projectId}/rancher
 >> >
 >>
 >> - **Via the OVHcloud Control Panel:**
 >>
 >> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Rancher Service`{.action}.
->> -->
+>>
 
 
 ### Authentication using SSO with OVHcloud IAM users
 
-Once IAM authentication is enabled, access to the Harbor UI is handled via OVHcloud Single Sign-On (SSO). Users no longer log in with Harbor-local credentials but authenticate directly using their OVHcloud IAM identity.
-
-To log in via SSO:
-
-- Open the `Harbor user interface`{.action} from the Control Panel.
-
-![harbor user interface](images/harbor_interface.png){.thumbnail}
-
-- You will be redirected to the OVHcloud authentication page, log in using your OVHcloud IAM credentials.
-
-![login with SSO](images/iam_authentication.png){.thumbnail}
-
-- Access to Harbor is granted based on the IAM role associated with your user account.
+Once IAM authentication is enabled on your Managed Rancher Service, access to the Rancher UI is managed via OVHcloud Single Sign-On (SSO). Users no longer log in with local Rancher credentials but authenticate directly using their OVHcloud IAM identity.
 
 > [!primary]
 >
-> Only users with the appropriate IAM role (admin or standard) can access the registry after IAM authentication is enabled.
+> Local Rancher users remain functional even after enabling OVHcloud IAM, but their use is not recommended. Access and permissions should be managed through OVHcloud IAM roles and policies for consistency and security.
+>
+
+To log in via SSO:
+
+- Open the `Rancher user interface`{.action} from the Control Panel.
+
+![rancher user interface](images/rancher_interface.png){.thumbnail}
+
+- You will be redirected to the Managed Rancher Service authentication page. 
+
+/// details | No user has ever logged in locally
+
+Click on `Use a local user`{.action} to go to the local login page.
+
+To recover the admin password required for authentication, use the following API call:
+
+> [!api]
+>
+> @api {v2} /publicCloud POST /publicCloud/project/{projectId}/rancher/{rancherId}/adminCredentials
+>
+
+Replace::
+
+- `projectId` with the ID of your Public Cloud project.
+- `rancherId` with the ID of the Managed Rancher Service.
+
+Copy the returned password, then paste it on the authentication page.
+
+Make sure to check the box to accept the `End User License Agreement & Terms & Conditions`{.action}, then click Continue.
+
+You can now log out and proceed with your normal workflow.
+
+///
+
+Click on `Log in with OIDC`, which will take you to the OVHcloud authentication page. There, log in using your OVHcloud IAM credentials.
+
+![login with SSO](images/iam_authentication.png){.thumbnail}
+
+- Access to Rancher is granted based on the IAM role associated with your user account.
+
+> [!primary]
+>
+> Only users with the appropriate IAM role (base, standard and ovhRestrictedAdmin) can access the registry after IAM authentication is enabled.
 >
 
 ### Managing access rights with OVHcloud IAM
@@ -139,12 +168,12 @@ OVHcloud IAM provides two predefined roles for managing access to your Managed R
 
 > [!primary]
 >
-> **base** role: Regardless of the user group defined in the Identities section, assigning the Admin role will grant full administrative privileges on the selected registry.
+> **base** role: Base users can only log in and have no additional permissions.
 >
-> **standard** role: Regardless of the user group defined in the Identities section, assigning the Admin role will grant full administrative privileges on the selected registry.
-> 
-> **ovhRestrictedAdmin** role:
-> 
+> **standard** role: Standard users can create new clusters and manage clusters and projects they have been granted access to.
+>
+> **ovhRestrictedAdmin** role: OVH Restricted Admins have full control over all resources in downstream clusters but no access to the local cluster.
+>
 
 These roles are assigned through IAM policies. To create and configure a policy, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.
 
@@ -156,12 +185,12 @@ Define users and groups, name your policy, add the users you want to include and
 
 Set permissions for MRS: 
 
-- In the `Product types` section, select `Public Cloud Project/Managed Registry`.
+- In the `Product types` section, select `Public Cloud / Managed Rancher Service (MRS) project`.
 - In the `Resources` section, choose the specific MRS instance to which the policy will apply.
 
 ![Create policy product types](images/create_policy_product_types.png){.thumbnail}
 
-Expand `Public Cloud Project/Managed Registry` and select the desired role for the users defined in the policy.
+Expand `Public Cloud / Managed Rancher Service (MRS) project` and select the desired role for the users defined in the policy.
 
 ![Create policy roles](images/create_policy_action.png){.thumbnail width="700"}
 

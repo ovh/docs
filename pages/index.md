@@ -1122,6 +1122,7 @@
                 + [Managing users and projects in Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/managing-users-and-projects)
                 + [Tutorial - How to use Rancher CLI](public_cloud/containers_orchestration/managed_rancher_service/using-rancher-cli)
                 + [Orchestration product reversibility policy](account_and_service_management/reversibility/12-reversibility-orchestration)
+                + [Configure access control using OVHcloud IAM on an OVHcloud Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/managing-iam-authentication)
             + [Resources](public-cloud-containers-orchestration-managed-rancher-service-resources)
                 + [Managed Rancher Service supported versions and lifecycle policy](public_cloud/containers_orchestration/managed_rancher_service/lifecycle-policy)
             + [Creating or importing a Kubernetes cluster](public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes)
