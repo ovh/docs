@@ -141,7 +141,7 @@ quit
 
 #### Step 3: Generate a token to connect to the game server (Game Server Login Token (GSLT))
 
-After creating a CS:GO server (anonymously), you will only be able to deploy the game on a local network. If you want to deploy the game as a public server, you need to link the game to a steam account.
+After creating a CS2 server (anonymously), you will only be able to deploy the game on a local network. If you want to deploy the game as a public server, you need to link the game to a steam account.
 
 Access the game server management of your steam account [here](https://steamcommunity.com/dev/managegameservers). Under `Create a new game server account`, enter the necessary information:
 
@@ -158,7 +158,7 @@ Please consult the steam [faq](https://help.steampowered.com/en/faqs/view/71D3-3
 
 #### Step 4: Opening the ports
 
-For your players to connect to the cs:go game from your server, you will need to open certain ports on your machine:
+For your players to connect to the CS2 game from your server, you will need to open certain ports on your machine:
 
    - TCP: 27015/27016
    - UDP: 27015/27016
@@ -190,20 +190,18 @@ Counter strike offers a variety of gamemodes, the commands to run depends on the
   - **Arms Race**. In this mode, players progress through a series of predefined weapons by eliminating enemies. The goal is to be the first to obtain the last weapon and get a kill with it to win the game.
   - **Deathmatch**. In this mode, participants compete for the largest number of kills within a defined time frame, with instant respawns.
   - **Demolition**. In this mode, people fight in fast rounds where each elimination gives you a new weapon. The goal is to win rounds by eliminating all members of the opposing team or by planting a bomb.
-  - Classic Casual:
+  - **Classic Casual**
   
+Connect to your server via remote desktop and access the directory where the CS2 server was installed and search for the `cs2\cfg` folder.
 
-Connect to your server via remote desktop and access the directory where cs:go server was installed and search for the `csgo\cfg` folder.
-
-
-#### Step 5: Launch the CS:GO server
+#### Step 5: Launch the CS2 server
 
 Connect to your server via remote desktop and open the command prompt. 
 
 Next, access the folder where the game was installed, in our example:
 
 ```powershell
-cd C:\csgo-server
+cd C:\cs2-server
 ```
 
 Next, you can start the CS:GO server in the directory. 
