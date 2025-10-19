@@ -1,7 +1,7 @@
 ---
-title: 'How to create a Minecraft server on a VPS'
-excerpt: 'Find out how to install your own Minecraft server'
-updated: 2025-06-06
+title: 'Tutorial - How to create a Minecraft server on a VPS or Dedicated server'
+excerpt: 'Learn how to install your own Minecraft server'
+updated: 2025-10-xx
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ Minecraft is a popular sandbox video game. It needs to be hosted on a server if 
 
 You can rent a pre-built Minecraft server or you can set it up yourself on a [VPS](/links/bare-metal/vps) or on a [dedicated server](/links/bare-metal/bare-metal). This will reduce the cost and give you full control over your game instance.
 
-**This tutorial explains how to launch a Minecraft Java Edition server on an OVHcloud VPS and test its connectivity.**
+**This tutorial explains how to launch a Minecraft Java Edition server on an OVHcloud VPS or Dedicated Server and test its connectivity.**
 
 > [!warning]
 > This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. ou may need to adapt the instructions according to your situation.
@@ -20,7 +20,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 ## Requirements
 
-- A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
+- A [Virtual Private Server](/links/bare-metal/vps) a [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - A GNU/Linux distribution installed on the server
 - Administrative access (sudo) via SSH to your server
 - A basic understanding of GNU/Linux administration
@@ -33,10 +33,10 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 ### Step 1: Prepare the server
 
-The first step is to set up your VPS for a Minecraft installation.
-<br>It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](/links/manager), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps) if necessary.
+The first step is to set up your server for a Minecraft installation.
+<br>For a new server or an existing server, make sure to install it or reinstall it using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide for VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps) or [Getting started guide for a Dedicated server](pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#install) if necessary.
 
-Once the OS is installed, connect to your VPS with SSH as described in the [Getting started guide](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps). 
+Once the OS is installed, connect to your server via SSH.
 
 First update the packages to their latest versions:
 
@@ -179,9 +179,9 @@ By default, no port needs to be specified.
 
 ### Conclusion
 
-Your Vanilla Minecraft server is now installed on your VPS.
+Your Vanilla Minecraft server is now installed on your server.
 
-Please note that this installation guide should also work on an OVHcloud [dedicated server](/links/bare-metal/bare-metal) or a [Public Cloud](/links/public-cloud/compute) instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
+Please note that this installation guide should also work on a [Public Cloud](/links/public-cloud/compute) instance. With a dedicated server or a VPS, you will have the advantage of better stability since the hardware is dedicated.
 
 ## Go further <a name="gofurther"></a>
 
