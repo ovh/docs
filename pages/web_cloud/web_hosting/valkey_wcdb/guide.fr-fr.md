@@ -26,7 +26,7 @@ Par défaut, votre instance Valkey refuse les connexions publiques. Pour autoris
 
 Répétez l’opération pour chaque machine qui doit accéder à votre instance Valkey.
 
-### Étape 2 — Configurer les paramètres de connexion
+### Étape 2 — Préparer les paramètres de connexion <a name="get-credentials"></a>
 
 #### Récupérer les paramètres de connexion
 
@@ -68,16 +68,14 @@ Ces éléments seront nécessaires lors des prochaines étapes pour tester la co
 
 ### Étape 3 — Tester la connexion avec un client en ligne de commande
 
-Connectez-vous une première fois à votre instance Valkey pour vérifier que tout est prêt (adresse IP autorisée, mot de passe, port, TLS, etc.).
+Pour vérifier que votre instance Valkey est fonctionnelle, connectez-vous une première fois à votre instance Valkey en suivant les étapes ci-dessous :
 
 #### Installer le client de connexion
 
-Dans cet exemple, nous utilisons le client `redis-cli`, compatible avec Valkey et facile à installer. Mais vous êtes libres d'installer le client de connexion de votre choix.
+Dans cet exemple, nous utilisons le client `redis-cli`, compatible avec Valkey et facile à installer. Mais vous êtes libres d'installer le client de connexion de votre choix. Ouvrez un terminal et exécutez la ligne de commande ci-dessous selon le système d'exploitation sur lequel vous vous trouvez.
 
 > [!tabs]
 > Debian/Ubuntu
->>
->>
 >> ```bash
 >> sudo apt update && sudo apt -y install redis-tools
 >> ```
@@ -90,45 +88,85 @@ Dans cet exemple, nous utilisons le client `redis-cli`, compatible avec Valkey e
 >> brew install redis
 >> ```
 > Windows
+>> Ouvrez PowerShell en administrateur : Démarrer → tapez « PowerShell » → clic droit `Exécuter en tant qu’administrateur`{.action}.
+>> 
+>> Installez [Chocolatey](https://chocolatey.org/install) en exécutant la ligne de commande ci-dessous :
+>> 
 >> ```powershell
->> winget install redis
+>> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 >> ```
+>>
+>> Installez redis-cli :
+>>
+>> ```powershell
+>> choco install redis-64 -y
+>> ```
+>>
 
-Une fois installé, ouvrez un terminal et vérifiez que le client fonctionne :
+Une fois installé, vérifiez que le client fonctionne en exécutant la ligne de commande ci-dessous :
 
 ```bash
 redis-cli --version
 ```
 
+#### Se connecter à l’instance
 
+Dans votre terminal, exécutez la commande ci-dessous :
 
-**Connexion (sans TLS) :**
 ```bash
-redis-cli -h HOSTNAME -p PORT -a PASSWORD
+redis-cli -u "redis://:<password>@<hostname>:6379"
 ```
 
-**Connexion (avec TLS) :**
-```bash
-redis-cli --tls -h HOSTNAME -p PORT -a PASSWORD
-# ou
-redis-cli -u "rediss://:PASSWORD@HOSTNAME:PORT"
+Remplacez :
+
+- `<password>` : par le mot de passe du compte `admin`.
+- `<hostname>` : par votre nom d'hôte.
+
+Pour récupérer ces valeurs, reportez vous à l'[Étape 2 — Préparer les paramètres de connexion](#get-credentials).
+
+#### Vérifier que tout fonctionne
+
+Si la connexion réussit, vous devez voir un message semblable à celui-ci :
+
+```console
+
 ```
 
-**Smoke test :**
-```bash
+Tapez ensuite :
+
+```console
 PING
-SET demo:key "hello"
-GET demo:key
-DEL demo:key
 ```
 
-Si vous obtenez `PONG` puis `"hello"`, la connexion et l’écriture fonctionnent. Votre instance Valkey est opérationnelle.
+La base de données doit répondre :
+
+```console
+PONG
+```
+
+Essayez aussi :
+
+```console
+SET test "hello"
+GET test
+```
+
+Vous devez voir :
+
+```console
+"hello"
+```
+
+Pour quitter, tapez :
+
+```console
+QUIT
+```
+
+Si les tests précédents fonctionnent, votre instance Valkey est opérationnelle.
 
 ## Aller plus loin
 
-- Portail Aide OVHcloud (catégorie **Web Cloud Databases**) : https://help.ovhcloud.com/csm/fr-documentation-web-cloud-clouddb
-- Guides utiles : *Autoriser une IP*, *Se connecter à une base de données*, *Réinitialiser le mot de passe* (même rubrique).
-- Concepts & optimisation Valkey : TTL, types (hashes, sets, sorted sets), pipelines, pooling.
-- Sécurité : rotation de secrets, journalisation et alertes.
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Pour des prestations spécialisées, contactez les **partenaires OVHcloud** (/links/partner) et échangez avec notre **communauté** (/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
