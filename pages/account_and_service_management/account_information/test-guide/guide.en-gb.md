@@ -635,21 +635,17 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
 <div>
 <p>When using OVHcloud guides, please be aware of the following conditions:</p>
 
-<ul>
-  <li>User instructions aim to provide as many details as possible but cannot cover individual use cases. You might need to adapt the pertinent actions to your requirements.</li>
-  <li>The OVHcloud ecosystem is built for flexibility and freedom of choice. Customers are therefore responsible for the secure and proper configuration of their services. To prevent data loss, we strongly recommend to apply backup strategies to all your important data.</li>
-  <li>Our guides and tutorials may reference third‑party software or services in combination with OVHcloud solutions.
-    <ul>
-      <li>The technical support provided by OVHcloud does not include the configuration of systems or products outside of our responsibility. This includes but is not limited to:
-        <ul>
-          <li>Operating systems and user interfaces (Windows, Debian, Plesk, etc.).</li>
-          <li>Any other third‑party software (FTP clients, email software, etc.).</li>
-          <li>Services offered by other providers (DNS, APIs, user interfaces, etc.).</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+  <ul>
+    <li>User instructions aim to provide as many details as possible but cannot cover individual use cases. You might need to adapt the pertinent actions to your requirements.</li>
+    <li>The OVHcloud ecosystem is built for flexibility and freedom of choice. Customers are therefore responsible for the secure and proper configuration of their services. To prevent data loss, we strongly recommend to apply backup strategies to all your important data.</li>
+    <li>Our guides and tutorials may reference third‑party software or services in combination with OVHcloud solutions.<br>The technical support provided by OVHcloud does not include the configuration of systems or products outside of our responsibility. This includes but is not limited to:
+      <ul>
+        <li>Operating systems and user interfaces (Windows, Debian, Plesk, etc.).</li>
+        <li>Any other third‑party software (FTP clients, email software, etc.).</li>
+        <li>Services offered by other providers (DNS, APIs, user interfaces, etc.).</li>
+      </ul>
+    </li>
+  </ul>
 
 <p>To receive the appropriate assistance for any issues you might experience, follow these guidelines:</p>
 
@@ -661,7 +657,7 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
     Use the buttons in the right‑hand sidebar under “Did this page help you?” to let us know.</li>
 
   <li><strong>You would like to propose a concrete documentation update?</strong><br>
-    Click the "Contribute" button to edit this page.</li>
+    Click the “Contribute” button to edit this page.</li>
 
   <li><strong>You need to report an incident regarding your OVHcloud service or you are experiencing difficulties in the OVHcloud Control Panel?</strong><br>
     Create a support request in our <a href="https://help.ovhcloud.com/csm?id=csm_get_help">Help Center</a>.</li>
