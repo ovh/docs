@@ -17,6 +17,51 @@ details>summary::before {
 details[open]>summary::before {
     content:'\25BC';
 }
+details.support {
+    margin: 0.5rem 0;
+    border: 2px solid #0050D5;
+    border-radius: 4px;
+    background: #73E3FF;
+}
+details.support > summary {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: #000E9C;
+    background: #73E3FF;
+    cursor: pointer;
+    list-style: none;
+}
+details.support > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details.support[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 2px solid #00185E;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details.support[open] > summary {
+    background: #4AB0F5;
+}
+details.support > :not(summary) {
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+}
+.img-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.img-row img {
+    max-width: 100%; /* keep images responsive */
+    height: auto;
+}
 </style>
  
 ## Objective
@@ -575,4 +620,60 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
 >>    open: True
 >> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin tristique porttitor. Curabitur sollicitudin auctor feugiat. Quisque quam nibh, efficitur nec ligula nec, mattis vulputate risus. Vivamus condimentum erat in felis dignissim eleifend. Phasellus justo nulla, iaculis eu bibendum vel, dictum non lacus. Nunc sodales sem a velit molestie sollicitudin. Duis sit amet condimentum massa, tristique accumsan nisi.
 >> ///
->>
+
+### Images side-by-side via flexbox
+
+<div class="img-row">
+  <img src="images/rescue-mode-001.png" alt="First">
+  <img src="images/rescue-mode-001.png" alt="Second">
+</div>
+
+### Styled info message html
+
+<details class="support">
+<summary>Information regarding the administration and configuration of OVHcloud services</summary>
+<div>
+<p>When using OVHcloud guides, please be aware of the following conditions:</p>
+
+<ul>
+  <li>User instructions aim to provide as many details as possible but cannot cover individual use cases. You might need to adapt the pertinent actions to your requirements.</li>
+  <li>The OVHcloud ecosystem is built for flexibility and freedom of choice. Customers are therefore responsible for the secure and proper configuration of their services. To prevent data loss, we strongly recommend to apply backup strategies to all your important data.</li>
+  <li>Our guides and tutorials may reference third‑party software or services in combination with OVHcloud solutions.
+    <ul>
+      <li>The technical support provided by OVHcloud does not include the configuration of systems or products outside of our responsibility. This includes but is not limited to:
+        <ul>
+          <li>Operating systems and user interfaces (Windows, Debian, Plesk, etc.).</li>
+          <li>Any other third‑party software (FTP clients, email software, etc.).</li>
+          <li>Services offered by other providers (DNS, APIs, user interfaces, etc.).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>To receive the appropriate assistance for any issues you might experience, follow these guidelines:</p>
+
+<ul>
+  <li><strong>You seek personalized advice or you would like to discuss a topic that is not covered in detail by our documentation?</strong><br>
+    Join the <a href="/links/community">OVHcloud Community</a> to search for your topic and reach out to other users.</li>
+
+  <li><strong>You would like to share feedback to improve a guide page or you want to report insufficient information on a specific page?</strong><br>
+    Use the buttons in the right‑hand sidebar under “Did this page help you?” to let us know.</li>
+
+  <li><strong>You would like to propose a concrete documentation update?</strong><br>
+    Click the "Contribute" button to edit this page.</li>
+
+  <li><strong>You need to report an incident regarding your OVHcloud service or you are experiencing difficulties in the OVHcloud Control Panel?</strong><br>
+    Create a support request in our <a href="https://help.ovhcloud.com/csm?id=csm_get_help">Help Center</a>.</li>
+
+  <li><strong>You require professional assistance for your project or you need help with tasks outside our support scope?</strong><br>
+    Visit our <a href="/links/partner">partner portal</a> to search for experts who are familiar with OVHcloud solutions.</li>
+
+  <li><strong>You are looking for more detailed information regarding our support levels and Professional Services?</strong><br>
+    Please visit our web pages for <a href="/links/support">OVHcloud support levels</a> and <a href="/links/professional-services">OVHcloud Professional Services</a>.</li>
+</ul>
+
+</div>
+</details>
+
+## Go further
