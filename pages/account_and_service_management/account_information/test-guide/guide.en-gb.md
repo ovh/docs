@@ -56,11 +56,9 @@ details.support > :not(summary) {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 .img-row img {
-    max-width: 100%; /* keep images responsive */
+    max-width: 99%;
     height: auto;
 }
 </style>
@@ -632,7 +630,16 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
 </div>
 
 <div markdown="block">
-    
+
+<ul>
+<li><strong>You seek personalized advice or you would like to discuss a topic that is not covered in detail by our documentation?</strong><br>
+    Join the [OVHcloud Community](/links/community) to search for your topic and reach out to other users.</li>
+</li>
+  <li>**You seek personalized advice or you would like to discuss a topic that is not covered in detail by our documentation?**<br>
+    Join the [OVHcloud Community](/links/community) to search for your topic and reach out to other users.</li>
+</ul>
+
+
 > Vivamus condimentum erat in felis dignissim eleifend.  
 > Phasellus justo nulla, **iaculis eu bibendum vel**, dictum non lacus. Nunc sodales sem a velit molestie sollicitudin. Duis sit amet condimentum massa, tristique accumsan nisi.
 
@@ -649,11 +656,13 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
 
 <div1">
 
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin tristique porttitor. Curabitur sollicitudin auctor feugiat. Quisque quam nibh, efficitur nec ligula nec, mattis vulputate risus.</p>
+
 **Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim velit suscipit. Nam cursus ipsum dui, sed vestibulum tellus accumsan ac. Mauris ullamcorper erat non commodo aliquam. Vivamus elementum tortor et neque ornare, quis placerat nisl suscipit.**
 
 - list item
 - list item
-  - list item
+    - list item
 
 > [!primary]
 >
@@ -661,6 +670,14 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
 >
 
 [partner portal](/links/partner)
+
+<ul>
+<li><strong>You seek personalized advice or you would like to discuss a topic that is not covered in detail by our documentation?</strong><br>
+    Join the [OVHcloud Community](/links/community) to search for your topic and reach out to other users.</li>
+</li>
+  <li>**You seek personalized advice or you would like to discuss a topic that is not covered in detail by our documentation?**<br>
+    Join the [OVHcloud Community](/links/community) to search for your topic and reach out to other users.</li>
+</ul>
 
 </div>
 
