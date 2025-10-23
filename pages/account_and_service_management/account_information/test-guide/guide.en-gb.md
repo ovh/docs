@@ -1,13 +1,13 @@
 ---
 title: New frontend - Preprod guide for testing purposes
 excerpt: This guide is created for testing purposes only, for new formats
-updated: 2025-10-22
+updated: 2025-10-23
 hidden: true
 ---
  
 <style>
 details>summary {
-    color:rgb(33, 153, 232) !important;
+    color:rgb(33, 153, 232);
     cursor: pointer;
 }
 details>summary::before {
@@ -40,7 +40,7 @@ details.support > summary::before {
 details.support[open] > summary::before {
     content: '\25BC';
 }
-details:hover {
+details.support:hover {
     border: 2px solid #00185E;
     border-radius: 4px;
     transition: border-color 0.5s ease;
@@ -54,7 +54,7 @@ details.support > :not(summary) {
 }
 .img-row {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
 }
