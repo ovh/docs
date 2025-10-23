@@ -57,6 +57,7 @@ details.support > :not(summary) {
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .img-row img {
     max-width: 100%; /* keep images responsive */
@@ -620,6 +621,48 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
 >>    open: True
 >> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin tristique porttitor. Curabitur sollicitudin auctor feugiat. Quisque quam nibh, efficitur nec ligula nec, mattis vulputate risus. Vivamus condimentum erat in felis dignissim eleifend. Phasellus justo nulla, iaculis eu bibendum vel, dictum non lacus. Nunc sodales sem a velit molestie sollicitudin. Duis sit amet condimentum massa, tristique accumsan nisi.
 >> ///
+
+
+### Test MD hackz
+
+<div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin tristique porttitor. Curabitur sollicitudin auctor feugiat. Quisque quam nibh, efficitur nec ligula nec, mattis vulputate risus.</p>
+
+</div>
+
+<div markdown="block">
+    
+> Vivamus condimentum erat in felis dignissim eleifend.  
+> Phasellus justo nulla, **iaculis eu bibendum vel**, dictum non lacus. Nunc sodales sem a velit molestie sollicitudin. Duis sit amet condimentum massa, tristique accumsan nisi.
+
+[partner portal](/links/partner)
+
+Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim velit suscipit. Nam cursus ipsum dui, sed vestibulum tellus accumsan ac. Mauris ullamcorper erat non commodo aliquam. Vivamus elementum tortor et neque ornare, quis placerat nisl suscipit. Cras finibus rhoncus dapibus. Nullam convallis laoreet urna, at iaculis nibh pellentesque quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi pellentesque vel ipsum id gravida.
+
+> [!primary]
+>
+> Nunc hendrerit augue at nisi porttitor, suscipit mattis risus malesuada. Nunc tincidunt ante sed tellus interdum, hendrerit porttitor sapien scelerisque.
+>
+
+</div>
+
+<div1">
+
+**Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim velit suscipit. Nam cursus ipsum dui, sed vestibulum tellus accumsan ac. Mauris ullamcorper erat non commodo aliquam. Vivamus elementum tortor et neque ornare, quis placerat nisl suscipit.**
+
+- list item
+- list item
+  - list item
+
+> [!primary]
+>
+> Nunc hendrerit augue at nisi porttitor, suscipit mattis risus malesuada. Nunc tincidunt ante sed tellus interdum, hendrerit porttitor sapien scelerisque.
+>
+
+[partner portal](/links/partner)
+
+</div>
 
 ### Images side-by-side via flexbox
 
