@@ -707,10 +707,9 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
 </details>
 
 #### Test
-
 <details class="support">
 <summary>Information regarding the administration and configuration of OVHcloud services</summary>
-<div>
+<div markdown="block">
 <p>When using OVHcloud guides, please be aware of the following conditions:</p>
 
   <ul>
@@ -729,7 +728,7 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
 
 <ul>
   <li><strong>You seek personalized advice or you would like to discuss a topic that is not covered in detail by our documentation?</strong><br>
-    <div markdown="1">Join the [OVHcloud Community](/links/community) to search for your topic and reach out to other users.</div></li>
+    Join the [OVHcloud Community](/links/community) to search for your topic and reach out to other users.</li>
 
   <li><strong>You would like to share feedback to improve a guide page or you want to report insufficient information on a specific page?</strong><br>
     Use the buttons in the right‑hand sidebar under “Did this page help you?” to let us know.</li>
@@ -741,10 +740,10 @@ Cras vitae suscipit risus. Curabitur tempus odio in mi congue, at dignissim veli
     Create a support request in our <a href="https://help.ovhcloud.com/csm?id=csm_get_help">Help Center</a>.</li>
 
   <li><strong>You require professional assistance for your project or you need help with tasks outside our support scope?</strong><br>
-    <div>Visit our <a href="/links/partner">partner portal</a> to search for experts who are familiar with OVHcloud solutions.</div></li>
+    Visit our <a href="/links/partner">partner portal</a> to search for experts who are familiar with OVHcloud solutions.</li>
 
   <li><strong>You are looking for more detailed information regarding our support levels and Professional Services?</strong><br>
-    <span markdown="1">Please visit our web pages for [OVHcloud support levels](/links/support) and [OVHcloud Professional Services](/links/professional-services).</span></li>
+    <span markdown="span">Please visit our web pages for [OVHcloud support levels](/links/support) and [OVHcloud Professional Services](/links/professional-services).</span></li>
 </ul>
 
 </div>
