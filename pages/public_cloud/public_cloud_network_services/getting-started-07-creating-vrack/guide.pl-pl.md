@@ -119,7 +119,7 @@ Na liście dostępnych usług zaznacz projekt, który chcesz dodać do szafy vRa
 
 ![Dodaj projekt](images/addprojectvrack.png){.thumbnail}
 
-Aby kontynuować konfigurację vRack, przejdź do sekcji [Tworzenie sieci VLAN w Panelu klienta](./#tworzenie-sieci-prywatnej-w-panelu-klienta-ovhcloud) niniejszego przewodnika.
+Aby kontynuować konfigurację vRack, przejdź do sekcji [Tworzenie sieci prywatnej w Panelu klienta OVHcloud](./#tworzenie-sieci-prywatnej-w-panelu-klienta-ovhcloud) niniejszego przewodnika.
 
 #### Za pomocą APIv6 OVHcloud
 

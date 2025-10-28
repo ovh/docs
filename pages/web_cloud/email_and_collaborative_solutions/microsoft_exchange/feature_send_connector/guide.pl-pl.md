@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja łącznika wysyłania na platformie Private lub Trusted Exchange
 excerpt: Dowiedz się, jak dodać łącznik do wysyłki SMTP do platformy Exchange OVHcloud
-updated: 2023-11-06
+updated: 2025-10-09
 ---
 
 <style>
@@ -78,7 +78,7 @@ Przed rozpoczęciem przygotuj poniższe informacje. Są one dostarczane przez do
 - Przypisana nazwa użytkownika (na przykład: adres e-mail) , **może być opcjonalna w zależności od konektora wysyłkowego**.
 - Hasło powiązane z nazwą użytkownika **może być opcjonalne w zależności od konektora nadawcy**.
 
-Następnie zaloguj się do API OVHcloud za pomocą danych identyfikacyjnych. Skorzystaj z naszego przewodnika [Pierwsze kroki z API OVHcloud ](/pages/manage_and_operate/api/first-steps).
+Następnie zaloguj się do API OVHcloud za pomocą danych identyfikacyjnych. Skorzystaj z naszego przewodnika [Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 Aby dodać łącznik wysyłania do platformy Exchange, użyj następującego wywołania API.
 
@@ -86,8 +86,13 @@ Aby dodać łącznik wysyłania do platformy Exchange, użyj następującego wyw
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-- `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
+W sekcji **PATH PARAMETERS**:
+
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
+- `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
+
+Wypełnij pola wartościami z karty **EXAMPLE** w sekcji **REQUEST BODY**:
+
 - `displayName` : wyświetlana nazwa łącznika przesyłania.
 - `maxSendSize` : maksymalny rozmiar w MB wiadomości e-mail podczas wysyłki (maksymalnie , jeśli nic nie wkładasz).
 - `password` : hasło przypisane do użytkownika łącznika wysyłania.
@@ -96,6 +101,12 @@ Aby dodać łącznik wysyłania do platformy Exchange, użyj następującego wyw
 - `smartHost` : adres łącznika wysyłania (SMTP).
 - `smartHostAuthMechanism` : mechanizm uwierzytelniania używany dla łącznika przesyłania.
 - `user` : użytkownik skojarzony z łącznikiem przesyłania.
+
+> [!primary]
+>
+> Przycisk `Only required fields` znajdujący się poniżej pola wprowadzania pozwala na wyświetlenie tylko pól obowiązkowych.
+
+Kliknij przycisk `Execute`{.action}, aby rozpocząć wywołanie API.
 
 Otrzymujesz ten rodzaj wyniku:
 
@@ -115,8 +126,12 @@ Po utworzeniu łącznika przesyłania, użyj następującego wywołania API, aby
 >
 > @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-- `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
+W sekcji **PATH PARAMETERS**:
+
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
+- `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
+
+Kliknij przycisk `Execute`{.action}, aby rozpocząć wywołanie API.
 
 Otrzymujesz ten rodzaj wyniku:
 
@@ -132,9 +147,13 @@ Szczegółowe informacje na temat konektora poczty wychodzącej można znaleźć
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-- `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
-- `id` : wprowadź ID łącznika wysyłania, otrzymany jako numer na poprzednim etapie.
+Nella sezione **PATH PARAMETERS**:
+
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
+- `id` : wprowadź ID łącznika wysyłania, otrzymany jako numer na poprzednim etapie.
+- `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
+
+Kliknij przycisk `Execute`{.action}, aby rozpocząć wywołanie API.
 
 Otrzymujesz ten rodzaj wyniku:
 
@@ -164,12 +183,18 @@ Skorzystaj z wywołania API konfiguracji konta Exchange, aby dodać identyfikato
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
+Nella sezione **PATH PARAMETERS**:
+
+- `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `primaryEmailAddress` : wprowadź jeden z adresów e-mail na platformie Exchange, do którego chcesz przypisać łącznik przesyłania.
-- `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
-- `Account` : Tutaj wprowadzane są informacje związane z adresem e-mail. **Przyjrzymy się tylko wierszowi dotyczącemu łącznika wysyłania**.
-    - `sendConnectorId` : wprowadź ID łącznika wysyłania, otrzymany jako numer na poprzednim [etapie](#idconnector).
-    - Zaznacz pole `deleteVirus` (jeśli nie jest jeszcze zaznaczone), aby nie wyświetlało się błąd podczas wykonywania wywołania API
+
+Zmień wartości w dwóch poniższych polach na karcie **EXAMPLE** w sekcji **REQUEST BODY**:
+
+- `sendConnectorId` : wprowadź ID łącznika wysyłania, otrzymany jako numer na poprzednim [etapie](#idconnector).
+- `deleteVirus`: Wpisz "true" zamiast "false", aby nie otrzymać błędu podczas wykonywania wywołania API.
+
+Kliknij przycisk `Execute`{.action}, aby rozpocząć wywołanie API.
 
 Otrzymasz następujący wynik:
 
@@ -245,12 +270,18 @@ Aby usunąć łącznik poczty wychodzącej przypisany do konta z platformy Excha
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
+W sekcji **PATH PARAMETERS**:
+
+- `exchangeService`: podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `organizationName`: podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `primaryEmailAddress` : wprowadź jeden z adresów e-mail na platformie Exchange, od którego chcesz odłączyć łącznik przesyłania.
-- `exchangeService`: podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
-- `Account`: w tym miejscu uzupełnij informacje dotyczące adresu e-mail podanego w polu "primaryEmailAddress". Przyjrzymy się tylko liniom związanym ze złączem wysyłania.
-    - `sendConnectorId`: wprowadź "0", aby zdefiniować identyfikator serwera poczty wychodzącej platformy Exchange.
-    - Zaznacz pole wyboru `deleteVirus` (jeśli nie jest jeszcze zaznaczone), aby nie wyświetlało się błąd.
+
+Zmień wartości w dwóch poniższych polach na karcie **EXAMPLE** w sekcji **REQUEST BODY**:
+
+- `sendConnectorId`: wprowadź "0", aby zdefiniować identyfikator serwera poczty wychodzącej platformy Exchange.
+- `deleteVirus`: Wpisz "true" zamiast "false", aby nie otrzymać błędu podczas wykonywania wywołania API.
+
+Kliknij przycisk `Execute`{.action}, aby rozpocząć wywołanie API.
 
 Otrzymasz następujący wynik:
 
@@ -270,11 +301,18 @@ W tym celu użyj następującego wywołania API:
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
+W sekcji **PATH PARAMETERS**:
+
 - `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `domainName` : wprowadź nazwę domeny, której będzie przysługiwać łącznik wysyłania.
+
+Wypełnij pola wartościami z karty **EXAMPLE** w sekcji **REQUEST BODY**:
+
 - `sbrDefault` : pozostaw puste.
 - `sendConnectorIdDefault` : wprowadź ID łącznika wysyłania, otrzymany jako numer na [tym etapie](#idconnector).
+
+Kliknij przycisk `Execute`{.action}, aby rozpocząć wywołanie API.
 
 Otrzymasz następujący wynik:
 

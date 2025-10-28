@@ -1,7 +1,7 @@
 ---
 title: "Comment réinitialiser le mot de passe administrateur avec Rescue-Customer-Windows"
 excerpt: "Comment réinitialiser le mot de passe administrateur avec Rescue-Customer-Windows"
-updated: 2025-03-06
+updated: 2025-10-22
 ---
 
 ## Objectif
@@ -11,6 +11,7 @@ Ce guide vous explique comment réinitialiser le mot de passe `Administrator` gr
 ## Prérequis
 
 - Microsoft Windows Server 2016 ou supérieur installé sur votre [serveur dédié](/links/bare-metal/bare-metal)
+- Au moins 16 Go de RAM installés sur le serveur
 - Accès à l’[espace client OVHcloud](/links/manager)
 
 > [!warning]

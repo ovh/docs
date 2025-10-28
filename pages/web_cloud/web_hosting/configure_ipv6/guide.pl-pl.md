@@ -79,7 +79,7 @@ Jeśli aktywna strefa DNS Twojej domeny jest obecna w OVHcloud, skorzystaj z nas
 
 W przeciwnym razie skontaktuj się z dostawcą DNS, podając pobrany wcześniej adres IPv6.
 
-## Przejdź dalej <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 

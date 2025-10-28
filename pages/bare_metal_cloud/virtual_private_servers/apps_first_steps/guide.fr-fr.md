@@ -22,6 +22,10 @@ Depuis [l'espace client OVHcloud](/links/manager) ou les API OVHcloud, installez
 
 #### cPanel
 
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
+
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de cPanel. Les étapes marquées d'un « * » seront suivies d'une FAQ.
 
 1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
@@ -53,6 +57,10 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 
 #### Plesk
 
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
+
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Plesk. Les étapes marquées d'un « * » seront suivies d'une FAQ.
 
 1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
@@ -72,6 +80,10 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 >> Vous pouvez commander votre licence Plesk pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
+
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
 
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Docker.
 

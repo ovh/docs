@@ -29,7 +29,7 @@ Zimbra Pro Accounts können unter Windows mithilfe des ActiveSync-Protokolls kon
 ## Voraussetzungen
 
 - Sie haben einen E-Mail-Account auf der OVHcloud [Zimbra Pro E-Mail-Lösung](/links/web/emails-zimbra) abonniert.
-Sie haben die Windows Anwendung [Outlook Classic](https://support.microsoft.com/de-de/office/installieren-oder-erneutes-installieren-des-klassischen-outlook-auf-einem-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5).
+- Sie haben die Windows Anwendung [Outlook Classic](https://support.microsoft.com/de-de/office/installieren-oder-erneutes-installieren-des-klassischen-outlook-auf-einem-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5).
 - Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
 

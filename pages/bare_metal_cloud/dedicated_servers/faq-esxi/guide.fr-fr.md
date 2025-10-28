@@ -4,9 +4,6 @@ excerpt: "Retrouvez les questions les plus fréquemment posées sur la vague d'a
 updated: 2024-09-13
 ---
 
-> [!warning]
-> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
-
 ## Objectif
 
 Suite à un événement majeur survenu sur des serveurs ESXi de version antérieure à la 7.0 U3i le 03 février 2023, une vague d'attaques est actuellement en cours sur ce type de serveurs.

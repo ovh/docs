@@ -1,12 +1,12 @@
 ---
 title: "Comment installer n8n sur un VPS OVHcloud"
 excerpt: "Découvrez comment héberger la plateforme d’automatisation n8n sur un VPS OVHcloud à l’aide de Docker et Traefik"
-updated: 2025-08-25
+updated: 2025-09-23
 ---
 
 ## Objectif
 
-Ce guide vous explique comment installer et exécuter [n8n](https://n8n.io), une plateforme open source d’automatisation de workflows, sur un VPS OVHcloud. L’installation s’appuie sur [Docker](https://www.docker.com/), avec le serveur [Traefik](https://doc.traefik.io/traefik/) pour gérer automatiquement les certificats SSL.
+Ce guide vous explique comment installer et exécuter [n8n](https://n8n.io), une plateforme open source d’automatisation de workflows, sur un VPS OVHcloud. [L’installation manuelle](#step3) s’appuie sur [Docker](https://www.docker.com/), avec le serveur [Traefik](https://doc.traefik.io/traefik/) pour gérer automatiquement les certificats SSL. Pour une [mise en route clé en main](#step2), optez pour un [VPS n8n préinstallé OVHcloud](/links/bare-metal/vps-n8n).
 
 ## Prérequis
 
@@ -37,15 +37,22 @@ ssh <user>@IP_VPS
 
 Si vous avez choisi un **VPS OVHcloud avec l’image n8n préinstallée**, **vous n’avez pas besoin d’installer Docker ni Docker Compose** : ces outils sont déjà présents et configurés.
 
-Retrouvez tous les fichiers nécessaires (y compris `docker-compose.yml` et `.env`) dans le dossier `/debian/n8n/` sur votre VPS.
+Retrouvez tous les fichiers nécessaires (y compris `docker-compose.yml` et `.env`) dans le dossier `/home/debian/n8n/` sur votre VPS.
 
-Modifiez le fichier `.env` situé dans ce dossier pour y renseigner les informations suivantes :
+Dirigez-vous dans le dossier `/home/debian/n8n/` et modifiez le fichier `.env` :
+
+```bash
+cd /home/debian/n8n/
+nano .env
+```
+
+Renseignez-y les informations suivantes :
 
 - `DOMAIN_NAME` : votre nom de domaine (ex : `vps.ovh.net`).
 - `SUBDOMAIN` : le sous-domaine utilisé pour accéder à n8n (ex : `vps-xxxxxxx`).
-- `EMAIL` : l’adresse e-mail utilisée pour générer les certificats SSL via Let’s Encrypt.
+- `SSL_EMAIL` : l’adresse e-mail utilisée pour générer les certificats SSL via Let’s Encrypt.
 
-Une fois le fichier `.env` mis à jour, exécutez la commande suivante depuis le dossier `/root/n8n-traefik/` :
+Une fois le fichier `.env` mis à jour, exécutez la commande suivante (depuis le dossier `/home/debian/n8n/`) :
 
 ```bash
 docker compose up -d
@@ -121,10 +128,10 @@ nano .env
 
 Collez-y le contenu suivant :
 
-```console
+```ini
 DOMAIN_NAME=exemple.com
 SUBDOMAIN=n8n
-EMAIL=admin@exemple.com
+SSL_EMAIL=admin@exemple.com
 ```
 
 Remplacez `exemple.com` par votre véritable nom de domaine et `admin@exemple.com` par l'e-mail de votre choix.
@@ -148,7 +155,7 @@ nano docker-compose.yml
 
 Collez le contenu suivant :
 
-```console
+```yaml
 services:
   traefik:
     image: traefik:v2.11
@@ -161,7 +168,7 @@ services:
       - "--entrypoints.websecure.address=:443"
       - "--certificatesresolvers.myresolver.acme.httpchallenge=true"
       - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
-      - "--certificatesresolvers.myresolver.acme.email=${EMAIL}"
+      - "--certificatesresolvers.myresolver.acme.email=${SSL_EMAIL}"
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
     ports:
       - "80:80"

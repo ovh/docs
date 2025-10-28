@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - View website statistics and logs"
 excerpt: "Find out how to view your website's statistics and logs with your web hosting plan"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -17,22 +17,37 @@ Access to your website’s logs and statistics is included in your web hosting p
 
 ## Instructions
 
-To access the different statistical data and logs on your web hosting plan, perform the following actions:
+To access the different statistical data and logs on your web hosting plan, click on the tabs below to view each of the **4** steps.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-2. Click on the `Web Cloud`{.action} tab.
-3. In the left-hand column, click on the `Hosting plans`{.action} menu.
-4. Select the web hosting plan concerned.
-5. On the page that appears, click on the `Statistics and logs`{.action} tab.
-
-The screen that opens has 4 sections:
-
-- [Website visit statistics](#website-stats): Presents a number of statistics concerning your web hosting plan.
-- [Website logs](#website-logs): Displays raw logs for your web hosting plan.
-- [Infrastructure statistics](#infra-stats): Presents graphical statistics (HTTP and SQL requests, FTP commands, CPU usage, outgoing connections, etc.).
-- [User administration](#admin-user): Displays users who are allowed to access statistics.
-
-![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `Statistics and logs`{.action} tab.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> The screen that opens has 4 sections:
+>>
+>> - [Website visit statistics](#website-stats): Presents a number of statistics concerning your web hosting plan.
+>> - [Website logs](#website-logs): Displays raw logs for your web hosting plan.
+>> - [Infrastructure statistics](#infra-stats): Presents graphical statistics (HTTP and SQL requests, FTP commands, CPU usage, outgoing connections, etc.).
+>> - [User administration](#admin-user): Displays users who are allowed to access statistics.
+>>
+>> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 ### Visit statistics <a name="website-stats"></a>
 

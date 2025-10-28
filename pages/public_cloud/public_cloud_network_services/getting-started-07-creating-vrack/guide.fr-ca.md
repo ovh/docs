@@ -122,7 +122,7 @@ Dans la liste des services éligibles, sélectionnez le projet que vous souhaite
 
 ![ajouter le projet](images/addprojectvrack.png){.thumbnail}
 
-Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#creer-un-reseau-prive-depuis-lespace-client-ovhcloud).
+Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un réseau privé depuis l'espace client OVHcloud](./#creer-un-reseau-prive-depuis-lespace-client-ovhcloud).
 
 #### Depuis les APIv6 OVHcloud
 

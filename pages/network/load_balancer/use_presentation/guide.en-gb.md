@@ -1,100 +1,91 @@
 ---
-title: Introduction to the OVH Load Balancer 
-excerpt: Find out more about the OVH Load Balancer solution 
-updated: 2018-01-17
+title: Introduction to the OVHcloud Load Balancer
+excerpt: Discover the OVHcloud Load Balancer solution for distributing and securing your traffic
+updated: 2025-09-29
 ---
 
 ## Objective
 
-The new **OVH Load Balancer** is a reliable service, with versatile configurations. You just need to configure your products with the OVH Load Balancer, and we’ll take care of the rest.
-
-**Find out more about the brand-new OVH Load Balancer solution.**
+The **OVHcloud Load Balancer** is a fully managed service designed to ensure high availability, performance, and scalability for your applications.
+Its main role is to distribute workloads across several servers or applications.
+Simply configure your services behind the Load Balancer — OVHcloud handles redundancy, security, and global traffic distribution.
 
 ## Requirements
 
-- No specific requirements.
+- Access to the [OVHcloud Control Panel](/links/manager)
+- At least one service to balance (Dedicated Server, VPS, Public Cloud instance, etc.)
 
 ## Instructions
 
-This new solution is based on robust open-source solutions: HAProxy for TCP traffic, and Nginx for UDP traffic.
+The Load Balancer leverages **industry-standard open-source technologies** to handle different traffic types:
 
-There are no limits to what you can do! The new OVH Load Balancer solution can be used to work with a variety of protocols:
-
-|Type|Description|Advantages|Technology|
+| Type | Description | Advantages | Technology |
 |---|---|---|---|
-|HTTP|All HTTP/HTTPS web services|Optimised for L7 (application layer) processing|HAProxy|
-|TCP|For any network services that aren’t HTTP|Supports all TCP applications|HAProxy|
-|UDP|For all UDP traffic types|Supports all UDP applications|Nginx|
+| HTTP/HTTPS | All web services and APIs | Optimized for L7 (application layer) processing, URL redirection, headers, ACLs | HAProxy |
+| TCP | Non-HTTP network services | Supports all TCP applications | HAProxy |
+| UDP | All UDP traffic | Supports all UDP applications | Nginx |
 
-With this new solution, you will get:
+### Key Features
 
-- OVH anti-DDoS protection
-- your services replicated worldwide (Anycast)
-- advanced HTTP/HTTPS support (redirections, headers, ACL, etc.)
-- a service compatible with an Additional IP
-- vRack supported
-- redundancy - your Load Balancer functions on separate instances, working individually on isolated, redundant hardware
+- **Built-in DDoS protection** across all traffic types
+- **Global Anycast network** for optimal latency and failover
+- **Advanced HTTP/HTTPS support**: redirections, headers, ACLs, etc.
+- **Additional IP and vRack compatibility**: improve availability and performance with advanced networking
+- **High availability**: isolated redundant instances ensure resilience
+- **Scalability**: add or remove servers and farms without downtime
 
-### Basic parts
+### Architecture Overview
 
-- The new OVH Load Balancer solution is made up of three basic parts:
+The Load Balancer consists of three main components:
 
-![General](images/diag_gen.png){.thumbnail}
-
-|Basic parts|Function|
+| Component | Function |
 |---|---|
-|Front-end|The front-end defines the protocol type (HTTP/TCP/UDP) of the OVH Load Balancer service. This part also has the service’s listening port|
-|Farm|The farm receives the incoming traffic from the front-end. This part takes care of the load balancing|
-|Server|These are the servers that receive the final traffic, and respond via the application|
+| **Front-end** | Defines the entry protocol (HTTP/TCP/UDP) and listening port |
+| **Farm** | Distributes traffic from the front-end across servers |
+| **Server** | Handles inbound and outbound application traffic |
 
-With these three basic parts that make up the Load Balancer, you can configure it to use nearly all possible load balancing methods.
+![General diagram](images/diag_gen.png){.thumbnail}
 
-### Why use the OVH Load Balancer?
+## Benefits
 
-#### Balance the load
+### Balance and Scale Seamlessly
 
-This is the basic function of a load balancer, but the OVH Load Balancer offers much more.
+Distribute workloads across multiple servers and scale horizontally without service interruption.
 
 ![Balance the load](images/distribute_load.png){.thumbnail}
 
-#### Eliminate downtime
+### High Availability and Uptime
 
-The OVH Load Balancer service can automatically detect when a server is not responding. When this happens, it redirects incoming traffic to another server, if possible. This resolves the problem without affecting your website.
+Automatic health checks detect unresponsive servers and reroute traffic instantly, minimizing downtime.
 
 ![Eliminate downtime](images/eliminate_downtimes.png){.thumbnail}
 
-#### Scale your infrastructure easily
+### Simplified Maintenance
 
-You can add or remove farms, front-ends or servers from the OVH Load Balancer solution without interrupting your service.
-
-![Scale your infrastructure easily](images/facilitate_maintenance.png){.thumbnail}
-
-#### Make maintenance easier
-
-If there is any maintenance scheduled for your solution, you can now easily place a farm in downtime mode to prevent it from receiving traffic. If you need to do this, it’s easy to add your server again once the maintenance has finished.
+Place a farm or server in downtime mode for maintenance without impacting users, then reintegrate it seamlessly.
 
 ![Make maintenance easier](images/scale_easily.png){.thumbnail}
 
-#### Combine your services
+### Service Integration
 
-You can now combine various OVH services in the Load Balancer, for example:
+Easily combine with other OVHcloud services:
 
-- Public Cloud instances with Additional IPs
-- VPS with Additional IPs
-- Dedicated servers with Additional IPs
-- vRacks
+- Public Cloud instances
+- VPS
+- Dedicated Servers
+- vRack private networking
 
 ![Combine your services](images/mix_and_match.png){.thumbnail}
 
-#### Anycast
+### Geographic Distribution (Anycast)
 
-You can balance your load across a variety of geographical zones.
+Serve users worldwide with low latency and resilient routing.
 
 ![Anycast](images/anycast.png){.thumbnail}
 
-#### Distribute any kind of traffic
+### Versatile Use Cases
 
-The OVH Load Balancer doesn’t just work with HTTP traffic any more! You can now use it with all TCP and UDP traffic types.
+Support multiple services over HTTP(S), TCP, and UDP traffic.
 
 #### Email server
 
@@ -108,12 +99,10 @@ Balance your databases, and make them redundant.
 
 ![Databases](images/database.png){.thumbnail}
 
-## Go further
+## Go Further
 
-[Find out more about load balancing](https://en.wikipedia.org/wiki/Load_balancing).
+- [Find out more about load balancing (Wikipedia)](https://en.wikipedia.org/wiki/Load_balancing)
+- [HAProxy official site](http://www.haproxy.org/#desc)
+- [Nginx documentation](https://nginx.org/en/docs/)
 
-[Find out more about HAProxy](http://www.haproxy.org/#desc).
-
-[Find out more about Nginx](https://en.wikipedia.org/wiki/Nginx).
-
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

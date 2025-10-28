@@ -1,7 +1,7 @@
 ---
 title: "End of Plesk and cPanel support for VPS - Ensuring continuity of your services"
 excerpt: "Find out the end-of-support dates for the operating systems on your OVHcloud VPS that affect Plesk and cPanel licenses"
-updated: 2025-07-22
+updated: 2025-09-29
 ---
 
 ## Objective
@@ -20,10 +20,10 @@ The **Plesk** and **cPanel** publishers announce the end of support for the foll
 
 | Operating system | Product      | End of Support       |
 | ---------------- | ------------ | -------------------- |
-| Ubuntu 18.04     | Plesk        | **1st January 2026** |
-| Debian 10        | Plesk        | **1st January 2026** |
-| CentOS 7         | Plesk/cPanel | **1st January 2026** |
-| CloudLinux 7     | Plesk/cPanel | **1st January 2026** |
+| Ubuntu 18.04     | Plesk        | **1st January 2027** |
+| Debian 10        | Plesk        | **1st January 2027** |
+| CentOS 7         | Plesk/cPanel | **1st January 2027** |
+| CloudLinux 7     | Plesk/cPanel | **1st January 2027** |
 
 For more details on support purposes, please refer to the official documentation:
 
@@ -88,6 +88,12 @@ If you cannot deploy a new VPS, you can use certain tools to **upgrade your oper
 > [!primary]
 >
 > These tools are not 100% guaranteed and require full backups before proceeding. Also make sure that your VPS has sufficient resources (RAM, CPU, disk).
+
+### Security Best Practices
+
+Regardless of Plesk/cPanel, it is essential to **keep your VPS operating system up to date** to benefit from security patches, software compatibility, and vendor support. If your distribution is **end of life (EOL)**, plan an **upgrade** or **migration** to a still-supported version.
+
+To find out the end-of-life and end-of-support dates for images and operating systems (VPS & Public Cloud), refer to our guide [Public Cloud & VPS - Lifecycle and End-of-Life/Support Announcements for Images and Distributions](/pages/public_cloud/compute/image-life-cycle).
 
 ## Go further <a name="go-further"></a>
 

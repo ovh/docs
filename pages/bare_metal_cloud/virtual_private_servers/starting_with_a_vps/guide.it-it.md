@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un VPS
 excerpt: Come gestire un VPS dallo Spazio Cliente OVHcloud e scopri gli step iniziali del suo utilizzo, incluse le connessioni remote e le misure di sicurezza
-updated: 2025-09-05
+updated: 2025-09-11
 ---
 
 ## Obiettivo
@@ -14,6 +14,11 @@ Un server privato virtuale (VPS) è un server dedicato virtualizzato che offre g
 
 - Disporre di un [VPS](/links/bare-metal/vps) nello Spazio Cliente OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+> [!warning]
+> Non tutte le funzionalità dei VPS citate in questa pagina sono disponibili nelle Local Zones di OVHcloud.
+>
+> Per maggiori informazioni, consulta la [pagina Web des Local Zones](/links/bare-metal/vps-lz).
 
 ## Procedura
 

@@ -17,6 +17,10 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, puoi aggiungere 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Avere accesso al VPS in SSH o in RDP per l'amministrazione.
 
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## Procedura
 
 Negli step successivi è necessario aver configurato un disco aggiuntivo seguendo le indicazioni di [questa guida](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk).

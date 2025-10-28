@@ -1,118 +1,165 @@
 ---
-title: "Tutorial - Utilizar FileZilla con su alojamiento de OVHcloud"
-excerpt: "Consulte aquí un tutorial sobre el uso de Filezilla en su alojamiento compartido"
-updated: 2025-06-10
+title: "Web hosting - Cómo utilizar FileZilla"
+excerpt: "Descubra cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloud y gestionar los datos alojados con el programa FileZilla"
+updated: 2025-09-12
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 > [!primary]
-> **Desactivación de FTP Explorer/Net2FTP**
+> **Desactivación de la herramienta FTP Explorer/Net2FTP**
 >
-> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
+> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [FileZilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
 
 ## Objetivo
 
 FileZilla es un programa gratuito disponible en varios sistemas operativos (Windows, macOS, etc.).
-Permite publicar archivos o su sitio web [conectándose al espacio FTP](/pages/web_cloud/web_hosting/ftp_connection) del alojamiento.
 
-**Esta guía explica cómo utilizar Filezilla en un alojamiento compartido.**
+Permite subir archivos o su sitio web [conectándose al espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web.
+
+**Descubra cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloud y gestionar los datos alojados con el programa FileZilla.**
 
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un [plan de hosting](/links/web/hosting).
-- Haber instalado Filezilla en su ordenador. Está disponible de forma gratuita en la página [filezilla-project.org.](https://filezilla-project.org/download.php)
+- Haber instalado FileZilla en su ordenador. Está disponible de forma gratuita en la página [filezilla-project.org](https://filezilla-project.org/download.php).
 
 ## Presentación de la interfaz <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Haga clic aquí para ver el contenido de esta sección.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La parte superior **del recuadro** permite una conexión rápida al alojamiento, introduciendo el nombre del **host**, el nombre de **usuario**, la **contraseña** asociada y el número de **puerto** utilizado.
-- **zona 1**: información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de Filezilla](https://filezilla-project.org/).
-- **zona 2**: árbol de directorios/archivos locales en su ordenador.
-- **zona 3**: árbol de directorios/ archivos remotos cuando se conecta al alojamiento.
-- **zone 4**: lista de carpetas/archivos en el directorio seleccionado localmente en su ordenador.
-- **zona 5**: lista de carpetas/archivos remotos en el directorio seleccionado en su alojamiento.
-- **zona 6**: lista de las operaciones de transferencia en curso, en espera o en error entre su ordenador y su alojamiento.
+- **zona 1**: Información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de FileZilla](https://filezilla-project.org/).
+- **zona 2**: Árbol de directorios/archivos locales en su ordenador.
+- **zona 3**: Árbol de directorios/archivos remotos cuando se conecta al alojamiento.
+- **zone 4**: Lista de carpetas/archivos en el directorio seleccionado localmente en su ordenador.
+- **zona 5**: Lista de carpetas/archivos remotos en el directorio seleccionado en su alojamiento.
+- **zona 6**: Lista de las operaciones de transferencia en curso, en espera o en error entre su ordenador y su alojamiento.
+
+///
 
 ## Procedimiento
 
-### Conexión con Filezilla por FTP
+### 1 - Obtener la información de conexión al espacio de almacenamiento del alojamiento web <a name="part-1"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+Realice las siguientes acciones:
 
-Introduzca la información en la siguiente tabla:
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+3. En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
+4. En la nueva página, aparecerá la información relativa al espacio de almacenamiento. Descubra los siguientes elementos:
+    - El `Servidor FTP y SFTP` representado con el siguiente formato: `ftp.clusterXXX.hosting.ovh.net` (donde cada uno de los 3 `X` corresponde a un número comprendido entre `0` y `9`).
+    - Uno de los usuarios presentes en la columna `Usuario` de la tabla situada en la parte inferior de la página. Si lo desea, puede utilizar el `Usuario principal`.
+    - El número del `Puerto FTP` o el número del `Puerto SFTP` en función del protocolo de conexión que quiera utilizar para conectarse a su espacio de almacenamiento.
 
-|Información solicitada|Detalles|
-|---|---|
-|Host| Dirección del servidor que permite acceder al espacio de almacenamiento de su alojamiento.<br><br> Para los alojamientos compartidos, suele tener esta forma: `ftp.clusterXXX.hosting.ovh.net` (los `XXX` representan el número de cluster en el que se encuentra el alojamiento)|
-|Usuario|Identificador que permite acceder al espacio de almacenamiento del alojamiento.|
-|Contraseña|Contraseña asociada al usuario.|
-|Puerto|Se suele completar automáticamente con el programa. En caso contrario, introduzca:<br><br>- el puerto "21" para una conexión FTP;<br>- el puerto "22" para una conexión SFTP (en caso de que esté activada). Más información sobre el SFTP en [la sección dedicada de este tutorial](#sftp).|
-
-Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento:
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!warning]
+> [!primary]
 >
-> Algunos productos de OVHcloud no utilizan el puerto 22 para las conexiones por SFTP y/o SSH. Utilice los puertos que se muestran en el [área de cliente de OVHcloud](/links/manager)
+> Por motivos de seguridad, la contraseña de un usuario no aparece en la pestaña `FTP - SSH`{.action}. Si ha olvidado la contraseña, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password) para modificarla.
+
+### 2 - Conectarse al espacio de almacenamiento de su alojamiento gracias a FileZilla
+
+Existen dos protocolos de transferencia de archivos para conectarse:
+
+- **F**ile **T**ransfer **P**rotocol (**FTP**).
+- **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**).
+
+> [!primary]
 >
+> Siempre que sea posible, le recomendamos que utilice el protocolo **SFTP** para conectarse a su espacio de almacenamiento con FileZilla.
+>
+> El protocolo **SFTP** cifra los intercambios de datos entre su dispositivo y su alojamiento web. Sin embargo, si tiene restricciones de uso, como la segmentación de usuarios o carpetas, deberá utilizar el protocolo **FTP**.
 
-Una vez que haya introducido todo correctamente en el recuadro **1** de la imagen inferior, haga clic en `Conexión rápida`{.action}.
+**Haga clic en el protocolo de conexión que desee para ver las explicaciones.**
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+/// details | Conectarse por SFTP al espacio de almacenamiento de un alojamiento web con FileZilla. <a name="sftp"></a>
 
-Si la conexión se ha realizado correctamente, se le informará de ello en el recuadro **2** de la imagen anterior. Así podrá ver los directorios, carpetas y archivos que ya tenga en su alojamiento (recuadro **3**).
-
-### Conexión con Filezilla por SFTP <a name="sftp"></a>
-
-El **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) es un protocolo similar al **FTP**. Utiliza, al igual que el SSH, el puerto 22 por defecto en lugar del puerto 21. Si utiliza un plan de hosting Cloud Web, debe utilizar el puerto que se muestra en el [área de cliente de OVHcloud](/links/manager). El puerto 22 está desactivado por seguridad en SSH y SFTP para los alojamientos Cloud Web.
+El **SFTP** utiliza, al igual que el SSH, el puerto 22 por defecto en lugar del puerto 21. Si utiliza un plan de hosting Cloud Web, deberá utilizar el puerto que aparece en su [área de cliente de OVHcloud](/links/manager). El puerto 22 está desactivado por seguridad en SSH y SFTP para los alojamientos Cloud Web.
 
 > [!success]
 >
-> SFTP puede activarse gratuitamente en todos los planes de hosting de OVHcloud (excepto en los antiguos planes 60free/demo1g).
-> 
+> SFTP puede activarse gratuitamente en todos los planes de hosting de OVHcloud (excepto en los antiguos planes 60free y demo1g).
+>
 
-#### Verificar la activación del SFTP
+**Comprobar la activación del protocolo SFTP**
 
-En primer lugar, compruebe que el SFTP esté activado en su **Usuario FTP**.
+Para ello, vuelva a la pestaña `FTP-SSH`{.action} de su [área de cliente de OVHcloud](/links/manager), tal y como se indica en la [primera parte](#part-1) de esta guía.
 
-Acceda al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
+En la tabla que aparece en la parte inferior de la página, localice la columna `SFTP` para comprobar que el usuario (presente en la columna `Usuario` de la tabla) dispone de un acceso SFTP activo. En caso contrario, aparecerá la indicación `Desactivado`.
 
-Compruebe si el **SFTP** está activo en la tabla de la parte inferior de la página.
+Si el acceso SFTP del usuario correspondiente es `Desactivado`, lleve a cabo los siguientes pasos:
 
-![Activación SFTP oferta start](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
+- Para los planes Personal, marque la casilla situada a la izquierda de la mención `Desactivado` en la tabla.
 
-Si no está activo:
+- Para los planes Profesional y Performance:
 
-- Haga clic en el botón `...`{.action} a la derecha de la tabla y, seguidamente, en `Editar`{.action}.
+    - 1: Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al usuario y luego en `Editar`{.action}.
+    - 2: En la nueva ventana, en la sección `Protocolos de conexión`, seleccione la opción `FTP y SFTP`{.action} y haga clic en `Siguiente`{.action}.
+    - 3: Compruebe el resumen del cambio solicitado y haga clic en `Aceptar`{.action}.
 
-![Activación SFTP 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-login.png){.thumbnail}
-
-- En la nueva ventana, compruebe que se haya activado una de las dos opciones siguientes:
-    - **FTP y SFTP**: para activar únicamente el SFTP, además del FTP.
-    - **FTP, SFTP y SSH**: para activar el FTP, el SFTP y el SSH.
-
-![Activación SFTP 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png){.thumbnail}
-
-- Haga clic en `Siguiente`{.action} y seleccione `Aceptar`{.action}.
-
-#### Iniciar la conexión SFTP
+**Conectarse por SFTP con FileZilla**
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
-En la parte alta de Filezilla, introduzca los siguientes datos para conectarse al servidor remoto (alojamiento):
+Complete la información en la Barra de conexión rápida siguiendo la siguiente tabla:
 
-- Host: `ftp.clusterXXX.hosting.ovh.net` (no olvide sustituir las `X` por las de su cluster de alojamiento)
-- Identificador: su login FTP
-- Contraseña: la contraseña FTP asociada al login
-- Puerto: 22
+|Información que debe introducir|Detalles|
+|---|---|
+|Host| Dirección del servidor que permite acceder al espacio de almacenamiento de su alojamiento web.<br> Normalmente tiene la siguiente forma: `ftp.clusterXXX.hosting.ovh.net` (los `XXX` representan el número del cluster en el que se encuentra su alojamiento web).|
+|Usuario|Identificador que le permite acceder al espacio de almacenamiento de su alojamiento.|
+|Contraseña|Contraseña asociada al usuario.|
+|Puerto|Introduzca el número del puerto SFTP recuperado anteriormente en la [primera parte](#part-1) de esta guía para una conexión SFTP.|
 
-Al hacer clic en el botón `Conexión rápida`{.action}, se abrirá un diálogo (ver la imagen inferior) para verificar la conexión al servidor al que se va a conectar. Al estar conectado a un host de OVHcloud, puede marcar la casilla *Confiar siempre en el host. Añadir esta llave a la caché* para que el programa no vuelva a solicitarla en el futuro.
+Una vez que haya introducido todo correctamente en el cuadro **1** de la imagen de abajo, haga clic en `Conexión rápida`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
+Se abrirá un cuadro de diálogo (ver la imagen a continuación) para certificar la conexión con el host al que se va a conectar. Al estar conectado a un host de OVHcloud, puede marcar la casilla *Confiar siempre en ese host y añadir esta clave a la caché* para que el software no se lo pida de nuevo en el futuro.
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
-### Errores de conexión
+///
+
+/// details | Conectarse por FTP al espacio de almacenamiento de un alojamiento web con FileZilla.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+
+Complete la información en la Barra de conexión rápida siguiendo la siguiente tabla:
+
+|Información que debe introducir|Detalles|
+|---|---|
+|Host| Dirección del servidor que permite acceder al espacio de almacenamiento de su alojamiento web.<br> Normalmente tiene la siguiente forma: `ftp.clusterXXX.hosting.ovh.net` (los `XXX` representan el número del cluster en el que se encuentra su alojamiento web).|
+|Usuario|Identificador que le permite acceder al espacio de almacenamiento de su alojamiento.|
+|Contraseña|Contraseña asociada al usuario.|
+|Puerto|Normalmente, el software lo completa automáticamente. De lo contrario, introduzca el puerto 21 para una conexión FTP.|
+
+Una vez que haya introducido todo correctamente en el cuadro **1** de la imagen de abajo, haga clic en `Conexión rápida`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
+Si la conexión se ha realizado correctamente, se le notificará a través del estado indicado en el recuadro **2** de la imagen anterior. Puede consultar los directorios/carpetas y archivos que ya tiene en su alojamiento (recuadro **3**).
+
+///
+
+#### Errores de conexión
+
+**Haga clic en el error que ha encontrado para ver la solución.**
+
+/// details | Authentication failed - Could not connect to server 
 
 El siguiente mensaje indica un error de identificación durante la conexión por FTP o SFTP al alojamiento compartido:
 
@@ -120,10 +167,11 @@ El siguiente mensaje indica un error de identificación durante la conexión por
 
 Este tipo de mensaje se genera por un error en el par Login/Contraseña.
 
-Compruebe las claves para asegurarse de que no se ha producido ningún error. En su caso, puede cambiar la contraseña del acceso FTP del alojamiento directamente en el [área de cliente de OVHcloud](/links/manager).
+Compruebe sus claves para asegurarse de que no se ha introducido ningún error. Si lo necesita, puede [cambiar la contraseña del acceso FTP](/pages/web_cloud/web_hosting/ftp_change_password) de su alojamiento web directamente en el [área de cliente de OVHcloud](/links/manager).
 
-> [!success]
-> Consulte nuestra guía sobre el [cambio de la contraseña FTP](/pages/web_cloud/web_hosting/ftp_change_password) en los planes de hosting.
+///
+
+/// details | Connection timed out after 20 seconds of inactivity - Could not connect to server
 
 En el siguiente caso, el error se genera con un nombre de host incorrecto:
 
@@ -131,9 +179,11 @@ En el siguiente caso, el error se genera con un nombre de host incorrecto:
 
 Compruebe que la contraseña del host se corresponde con el nombre del host que haya indicado en el [área de cliente de OVHcloud](/links/manager).
 
-### Transferencia de archivos
+///
 
-Para transferir sus archivos por FTP, puede seleccionarlos y arrastrarlos y soltarlos desde la ventana izquierda *(ordenador)* a la derecha *(alojamiento)* (**áreas 4 y 5** descritas en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla).
+### 3 - Transferencia de archivos
+
+Para transferir sus archivos por (S)FTP, puede seleccionarlos y arrastrarlos y soltarlos desde la ventana izquierda *(ordenador)* a la derecha *(alojamiento)* (**áreas 4 y 5** descritas en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla).
 
 Seleccione el directorio de destino en la ventana derecha.
 
@@ -141,9 +191,13 @@ Una vez realizada esta acción, los archivos se pondrán automáticamente en esp
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/drag-drop-en.png){.thumbnail}
 
-### Vista de la cola de espera
+### 4 - Otras funcionalidades de FileZilla
 
-Hay disponible una vista de la cola (**zona 6** descrita en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla).
+**Haga clic en los títulos de abajo para ver sus respectivos contenidos.**
+
+/// details | Vista de la cola de espera
+
+Hay disponible una vista de la cola (**zona 6** descrita en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla).
 
 En esta zona se encuentran:
 
@@ -153,27 +207,29 @@ En esta zona se encuentran:
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
-### Menú contextual del servidor
+///
 
-Haga clic derecho en uno de los archivos del **área 5** (descrito en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla).
+/// details | Menú contextual del servidor
+
+Haga clic derecho en uno de los archivos del **área 5** (descrito en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla).
 
 Aparecerá un menú contextual con varias opciones:
 
-- Descargar: descarga el archivo en la carpeta local abierta.
-- Añadir los archivos a la cola de espera: añade el archivo a la cola de espera, que le permite, por ejemplo, retrasar la descarga de los datos.
-- Mostrar/Editar: permite ver o editar directamente un archivo del alojamiento. Sin embargo, es necesario tener un programa capaz de leer el archivo instalado en su equipo.
-- Crear una carpeta: permite crear una nueva carpeta directamente en el alojamiento remoto.
-- Actualizar: actualiza la visualización de los datos para mostrar correctamente los diferentes archivos.
-- Eliminar: le permite borrar el archivo seleccionado.
-- Renombrar: le permite renombrar el archivo seleccionado.
-- Copiar la(s) dirección(s) al portapapeles: permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
-- Permisos de archivo: le permite cambiar los permisos de los archivos (Chmod)
+- Descargar: Descarga el archivo en la carpeta local abierta.
+- Añadir los archivos a la cola de espera: Añade el archivo a la cola de espera, que le permite, por ejemplo, retrasar la descarga de los datos.
+- Mostrar/Editar: Permite ver o editar directamente un archivo del alojamiento. Sin embargo, es necesario tener un programa capaz de leer el archivo instalado en su equipo.
+- Crear una carpeta: Permite crear una nueva carpeta directamente en el alojamiento remoto.
+- Actualizar: Actualiza la visualización de los datos para mostrar correctamente los diferentes archivos.
+- Eliminar: Le permite borrar el archivo seleccionado.
+- Renombrar: Le permite renombrar el archivo seleccionado.
+- Copiar la(s) dirección(s) al portapapeles: Permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/my_folder1/my_file.jpg`.
+- Permisos de archivo: Le permite cambiar los permisos de los archivos (Chmod).
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
-## Información útil <a name="useful-information"></a>
+///
 
-### Permisos de acceso (Chmod) a archivos y carpetas
+/// details | Permisos de acceso (Chmod) a archivos y carpetas
 
 Haga clic derecho en uno de los archivos del servidor y seleccione `Permisos de archivo...`{.action}.
 
@@ -202,13 +258,15 @@ Puede marcar la casilla "Seguridad en las subcarpetas".
 
 Esto modificará los permisos de la carpeta en cuestión, así como los archivos y carpetas que puedan estar presentes en ella.
 
-### Reapertura del sitio
+///
+
+/// details | Reapertura del sitio
 
 > [!primary]
 >
 > Independientemente de su acción, su alojamiento puede desactivarse debido a la detección de archivos maliciosos o no autorizados en su alojamiento por nuestros sistemas de seguridad.
 >
-> En ese caso, deberá [proteger sus soluciones](/pages/web_cloud/web_hosting/diagnostic_403_forbidden) corrigiendo los fallos de seguridad indicados en la notificación de bloqueo recibida por correo electrónico.
+> En ese caso, deberá [proteger sus soluciones](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) corrigiendo los fallos de seguridad indicados en la notificación de bloqueo recibida por correo electrónico.
 >
 
 A continuación, haga clic en `Servidor`{.action} y seleccione `Introducir un comando personalizado`{.action} (también puede llamarse `Introduzca un comando FTP`{.action}).
@@ -246,7 +304,9 @@ SITE CHMOD 705 .
 > Si todavía no funciona, contacte con el soporte.
 > 
 
-### Transferencia de archivos binarios
+///
+
+/// details | Transferencia de archivos binarios
 
 Para archivos binarios, como archivos de tipo **CGI**, puede ser interesante elegir cómo se realizará la transferencia.
 
@@ -254,11 +314,13 @@ Para cambiar el tipo de transferencia, seleccione `Transferencia`{.action} en el
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
-### Comparación de directorios
+///
+
+/// details | Comparación de directorios
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
-La opción de comparación de archivos muestra colores en los **cuadros 4** y **5** (presentados en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla). Esta opción permite destacar las diferencias entre los archivos y carpetas locales y los del servidor. 
+La opción de comparación de archivos muestra colores en los **cuadros 4** y **5** (presentados en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla). Esta opción permite destacar las diferencias entre los archivos y carpetas locales y los del servidor. 
 
 Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de comparación. A continuación, podrá activar o desactivar la opción, así como:
 
@@ -268,20 +330,22 @@ Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de co
 
 **Significado de los colores:**
 
-- Amarillo: el archivo sólo existe en un lado.
-- Verde: el archivo es más reciente que el archivo sin color del otro lado.
-- Rojo: los tamaños de los archivos son diferentes.
+- Amarillo: El archivo sólo existe en un lado.
+- Verde: El archivo es más reciente que el archivo sin color del otro lado.
+- Rojo: Los tamaños de los archivos son diferentes.
+
+///
 
 ## Más información <a name="go-further"></a>
 
-A continuación puede consultar nuestra guía para [solucionar los errores recurrentes en el uso de un programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems).
+A continuación puede consultar nuestra guía para [resolver los errores recurrentes durante el uso de un programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems).
 
 En términos más generales, consulte [todas nuestras guías relativas a los alojamientos compartidos](/products/web-cloud-hosting).
 
-No dude en consultar la [página oficial de Filezilla](https://filezilla-project.org/).
+No dude en consultar la [página oficial de FileZilla](https://filezilla-project.org/).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -17,6 +17,10 @@ Jeśli osiągnąłeś maksymalną pojemność dodatkowego dysku, możesz zwięks
 - Dostęp do [Panelu client OVHcloud](/links/manager).
 - Dostęp do serwera VPS przez SSH lub RDP.
 
+> [!warning]
+> Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## W praktyce
 
 Poniższe etapy zakładają, że skonfigurowałeś dodatkowy dysk zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk).

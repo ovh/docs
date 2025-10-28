@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW"
 excerpt: "Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVHcloud"
-updated: 2023-08-22
+updated: 2025-10-08
 ---
 
 ## Wprowadzenie 
@@ -46,9 +46,34 @@ Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w 
 
 ### Pobierz kopię zapasową, korzystając z narzędzia OVHcloud
 
-Aby uzyskać dostęp do narzędzia do tworzenia kopii zapasowych OVHcloud, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Aby uzyskać dostęp do narzędzia do tworzenia kopii zapasowych OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Teraz możesz wybrać jedną z dwóch dostępnych metod tworzenia nowej kopii zapasowej lub odzyskania kopii już istniejącej.
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Na nowej stronie pojawi się tabela zawierająca utworzone bazy danych.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+>>
+>> Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Teraz możesz wybrać jedną z dwóch dostępnych metod tworzenia nowej kopii zapasowej lub odzyskania kopii już istniejącej.
 
 ### Krok 1: utwórz nową kopię zapasową bazy danych
 

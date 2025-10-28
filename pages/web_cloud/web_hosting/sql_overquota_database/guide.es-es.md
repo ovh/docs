@@ -74,7 +74,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
@@ -249,7 +249,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>

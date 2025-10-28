@@ -51,7 +51,7 @@ Adquiriu um serviço de e-mail MX Plan. que lhe permite beneficiar de endereços
 
 ### OWA e Zimbra
 
-Esta secção documenta as ofertas MX Plan que utilizam a tecnologia webamil **OWA** e **Zimbra**.
+Esta secção documenta as ofertas MX Plan que utilizam a tecnologia webmail **OWA** e **Zimbra**.
 
 #### Criar uma conta de e-mail
 

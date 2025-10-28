@@ -1,7 +1,7 @@
 ---
 title: Backup einer Instanz herunterladen und in eine andere OpenStack-Region übertragen
 excerpt: Erfahren Sie hier, wie Sie ein Instanz-Backup herunterladen und von einer OpenStack-Region in eine andere verschieben und dabei die Konfiguration und den Zustand der Instanz beibehalten
-updated: 2024-12-03
+updated: 2025-10-15
 ---
 
 ## Ziel
@@ -16,7 +16,7 @@ Um den Transfer durchzuführen benötigen Sie eine Umgebung mit:
 
 - [OpenStack CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 - Anbindung an die OpenStack API von OVHcloud.
-- Verfügbarer Speicherplatz entsprechend der Größe der Instanz-Disk (für temporären Backup-Speicher).
+- Verfügbarem Speicherplatz entsprechend der Größe der Instanz-Disk (für temporären Backup-Speicher).
 
 Diese Umgebung wird als "Jump Host" verwendet, um das Backup von einer Region in eine andere zu übertragen. Bei dieser Umgebung kann es sich um eine bei OVHcloud oder auf Ihrem lokalen System gehostete Instanz handeln.
 
@@ -24,23 +24,10 @@ Sie benötigen auch eine [Public Cloud Instanz](/links/public-cloud/compute) in 
 
 ## In der praktischen Anwendung
 
-### Backup erstellen
-
-```bash
-$ openstack server list
- 
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID | Name | Status | Networks | Image Name |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-Führen Sie anschließend folgenden Befehl aus, um ein Backup Ihrer Instanz zu erstellen:
-
-```bash 
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
+> [!primary]
+>
+> Wenn Sie eine Sicherung mit OpenStack erstellen, verwenden Sie unsere Anleitung zur [Sicherung einer Instanz](/pages/public_cloud/compute/save_an_instance).
+>
 
 ### Backup herunterladen
 
@@ -146,9 +133,9 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 ### Instanz mithilfe Ihres Backups erstellen
 
-> [!warning]
+> [!primary]
 >
-> Wenn es sich bei Ihrer Instanz um einen Windows-Server handelt, müssen Sie einen Flavor vom Typ win-xx-xx-xx (z.B. win-b2-15) auswählen und über eine öffentliche Schnittstelle im Ext-Net-Netzwerk verfügen. Ohne diese Bedingungen ist die Authentifizierung beim OVHcloud KMS nicht möglich, und Ihr Server wird mit einer [nicht aktivierten Lizenz](/pages/public_cloud/compute/activate-windows-license-private-mode) weiter betrieben. Dies kann zu Einschränkungen führen, insbesondere zu fehlenden Updates. Es ist nicht möglich, eine Linux-Instanz (z.B. b2-15) in eine Windows-Instanz (z.B. win-b2-15) zu ändern. Für diesen Wechsel muss eine neue Instanz erstellt werden.
+> Wenn Sie Ihre Instanz aus diesem Backup wiederherstellen möchten, folgen Sie unserer Anleitung: „[Mit Sicherungen von Instanzen eine Instanz erstellen oder wiederherstellen](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)“.
 >
 
 Um eine Instanz aus Ihrem Backup zu erstellen, verwenden Sie die Backup-ID als Image mit folgendem Befehl:

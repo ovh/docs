@@ -17,6 +17,11 @@ account-and-service-management-managing-billing-payments-and-services-terminatin
 account-and-service-management-reversibility: Reversibilidade
 account-and-service-management-reversibility-reversibility-policies: Políticas de reversibilidade
 account-and-service-management-responsibility-sharing: Partilha de responsabilidades
+startup-program: Startup Program
+startup-program-general-information: General information
+startup-program-support-communication: Support & Communication
+startup-program-credits-billing: Credits & Billing
+startup-program-technical-resources: Technical resources
 bare-metal-cloud-dedicated-servers: Servidores dedicados
 bare-metal-cloud-dedicated-servers-advanced-usage: Utilização avançada
 bare-metal-cloud-dedicated-servers-getting-started: Primeiros passos
@@ -199,6 +204,7 @@ public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: Ope
 public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
 public-cloud-storage-block-storage: Block Storage
 public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
+public-cloud-storage-file-storage: File Storage
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
@@ -212,7 +218,8 @@ public-cloud-data-platform: Data Platform
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Primeiros passos
 web-cloud-clouddb-configuration: Configuração
-web-cloud-clouddb-technical-resources: Recursos técnicos
+web-cloud-clouddb-migration: Migração
+web-cloud-clouddb-additional-resources: Recursos adicionais
 web-cloud-email-collaborative-solutions: Soluções de e-mail e Ferramentas Colaborativas
 web-cloud-email-collaborative-solutions-common-email-features: Funcionalidades comuns às ofertas de e-mail
 web-cloud-email-collaborative-solutions-using-outlook-web-access-owa: Utilização do Outlook Web Application (OWA)
@@ -242,19 +249,27 @@ web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-c
 web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
 web-cloud-domains: Domínios
 web-cloud-domains-api: API
-web-cloud-domains-api-frequent-tasks: Tarefas frequentes
+web-cloud-domains-api-key-concepts: Conceitos-chave
+web-cloud-domains-api-getting-started: Primeiros passos
+web-cloud-domains-api-configuration: Configuração
+web-cloud-domains-api-migration: Migração
 web-cloud-domains-dns: DNS (Domain Name System)
-web-cloud-domains-dns-dns-options: Opções DNS
-web-cloud-domains-dns-dns-records: Registos DNS
-web-cloud-domains-dns-dns-servers: Servidores DNS
-web-cloud-domains-dns-dns-tools: Ferramentas DNS
-web-cloud-domains-dns-dns-zone: Zona DNS
+web-cloud-domains-dns-configuration-dns-options: Opções DNS
+web-cloud-domains-dns-configuration-dns-records: Registos DNS
+web-cloud-domains-dns-configuration-dns-servers: Servidores DNS
+web-cloud-domains-dns-key-concepts: Conceitos-chave
+web-cloud-domains-dns-configuration: Configuração
+web-cloud-domains-dns-configuration-dns-zone: Zona DNS
+web-cloud-domains-dns-security: Segurança
+web-cloud-domains-dns-tutorials: Tutoriais
 web-cloud-domains-domain-names: Nomes de domínio
-web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
+web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
 web-cloud-domains-domain-names-getting-started: Primeiros passos
-web-cloud-domains-domain-names-incoming-transfer-to-ovhcloud: Transferência de entrada para a OVHcloud
+web-cloud-domains-domain-names-configuration: Configuração
+web-cloud-domains-domain-names-migration-incoming-transfer-to-ovhcloud: Transferência de entrada para a OVHcloud
 web-cloud-domains-domain-names-outgoing-transfer-from-ovhcloud: Transferência de saída a partir da OVHcloud
 web-cloud-domains-domain-names-troubleshooting: Diagnóstico
+web-cloud-domains-domain-names-migration: Migração
 web-cloud-domains-domain-names-tutorials: Tutoriais
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Acesso Internet
@@ -293,23 +308,21 @@ web-cloud-phone-and-fax-voip-telephone-lines: Linhas telefónicas
 web-cloud-phone-and-fax-voip-troubleshooting: Diagnóstico
 web-cloud-phone-and-fax-voip-tutorials: Tutoriais
 web-cloud-hosting: Alojamento partilhado
-web-cloud-hosting-automating-tasks-cron: Automatização de tarefas (cron)
-web-cloud-hosting-cloud-web-configuration: Configuração de um alojamento Cloud Web
-web-cloud-hosting-cms: CMS
-web-cloud-hosting-configuring-web-hosting-plan: Configurar o alojamento web Perso, Pro ou Performance
-web-cloud-hosting-databases: Bases de dados
-web-cloud-hosting-ftp-and-ssh: FTP e SSH
+web-cloud-hosting-tutorials-cms: CMS
+web-cloud-hosting-configuration-ftp-and-ssh: FTP e SSH
 web-cloud-hosting-getting-started: Primeiros passos
-web-cloud-hosting-general-information: Informações gerais
+web-cloud-hosting-configuration: Configuração
+web-cloud-hosting-configuration-databases: Bases de dados
+web-cloud-hosting-configuration-cms: CMS
+web-cloud-hosting-additional-resources: Recursos adicionais
 web-cloud-hosting-php: PHP
-web-cloud-hosting-redirection-and-authentication: Reencaminhamento e autenticação
-web-cloud-hosting-ssl: SSL
+web-cloud-hosting-tutorials-redirection-and-authentication: Reencaminhamento e autenticação
+web-cloud-hosting-security: Segurança
 web-cloud-hosting-troubleshooting: Diagnóstico
 web-cloud-hosting-tutorials: Tutoriais
+web-cloud-hosting-migration: Migração
 web-cloud-hosting-tutorials-wordpress: Tutoriais WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutoriais Cloud Web
-web-cloud-hosting-website-optimisation: Otimização site
-web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Primeiros passos
 storage-object-storage: Object Storage
@@ -355,8 +368,10 @@ manage-operate-user-getting-started: Primeiros passos
 manage-operate-user-federation: Federação de identidades
 manage-operate-iam: IAM
 manage-operate-terraform: Terraform
+manage-operate-cli: CLI
 manage-operate-observability: Observability
 manage-operate-kms: KMS
+manage-operate-secret-manager: Secret Manager
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Getting Started
 observability-logs-data-platform-iam: IAM

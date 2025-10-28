@@ -1,120 +1,108 @@
 ---
 title: Présentation du service OVHcloud Load Balancer
-excerpt: Découvrez le service OVHcloud Load Balancer
-updated: 2018-01-17
+excerpt: Découvrez la solution OVHcloud Load Balancer pour distribuer et sécuriser votre trafic
+updated: 2025-09-29
 ---
 
 ## Objectif
 
-Le [Load Balancer OVHcloud](/links/network/load-balancer) répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
+Le **Load Balancer OVHcloud** est un service entièrement managé, conçu pour garantir la haute disponibilité, les performances et la scalabilité de vos applications.
+Son rôle principal est de distribuer la charge de travail entre différents serveurs ou applications.
+Il vous suffit de configurer vos services derrière le Load Balancer — OVHcloud prend en charge la redondance, la sécurité et la distribution mondiale du trafic.
 
-Vous pouvez ajouter des fontionnalités d'équilibrage de charge qui correspondent le mieux à vos besoins.
+## Prérequis
+
+- Être connecté à l’[espace client OVHcloud](/links/manager)
+- Au moins un service à équilibrer (Serveur Dédié, VPS, instance Public Cloud, etc.)
 
 ## En pratique
 
-### Qu’est-ce que le load balancing ? 
+Le Load Balancer s’appuie sur des **technologies open source de référence** pour gérer différents types de trafic :
 
-Le load balancing, ou répartition de charge, est une technologie conçue pour distribuer la charge de travail entre différents serveurs ou applications. Le but : optimiser la performance globale de l’infrastructure, son rendement et sa capacité.
-
-### Les types de trafic gérés par le load balancer
-
-Le service OVHcloud Load Balancer est basé sur de robustes solutions open-source : Haproxy pour les flux TCP et Nginx pour les flux UDP.<br>
-Il peut être utilisé pour fonctionner avec différents protocoles :
-
-|Type|Description|Avantages|Technologie|
+| Type | Description | Avantages | Technologie |
 |---|---|---|---|
-|HTTP|Tout type de service web HTTP/HTTPS|Optimisé pour du traitement L7 (applicatif)|Haproxy|
-|TCP|Pour tout service réseau qui n'est pas HTTP|Peut supporter toutes les applications TCP|Haproxy|
-|UDP|Pour tout type de flux UDP|Peut supporter toutes les applications UDP|Nginx|
+| HTTP/HTTPS | Tous les services web et API | Optimisé pour le traitement L7 (couche applicative), redirection d’URL, en-têtes, ACLs | HAProxy |
+| TCP | Services réseau non-HTTP | Compatible avec toutes les applications TCP | HAProxy |
+| UDP | Tout trafic UDP | Compatible avec toutes les applications UDP | Nginx |
 
-Le service OVHcloud Load Balancer contient de nombreuses fontionnalités :
+### Fonctionnalités principales
 
-- une protection Anti-DDoS OVHcloud ;
-- un support de zones multiples (Anycast) ;
-- un support HTTP/HTTPS avancé (redirections, headers, ACL...) ;
-- un service compatible avec une Additional IP ;
-- le vRack est supporté ;
-- la redondance : votre Load Balancer fonctionne sur des instances séparées, fonctionnant elles-mêmes sur des équipements séparés et redondants.
+- **Protection anti-DDoS intégrée** pour tous les types de trafic
+- **Réseau Anycast mondial** pour une latence optimisée et un basculement automatique
+- **Support avancé HTTP/HTTPS** : redirections, en-têtes, ACLs, etc.
+- **Compatibilité avec les IP supplémentaires et le vRack** : améliorez la disponibilité et les performances grâce au réseau avancé
+- **Haute disponibilité** : instances redondantes isolées pour assurer la résilience
+- **Scalabilité** : ajoutez ou retirez des serveurs et des fermes sans interruption de service
 
-### Parties élémentaires
+### Vue d’ensemble de l’architecture
 
-- Le service OVHcloud Load Balancer se compose de trois parties élémentaires :
+Le Load Balancer est constitué de trois composants principaux :
 
-![Général](images/diag_gen.png){.thumbnail}
-
-|Parties Élémentaires|Fonction|
+| Composant | Fonction |
 |---|---|
-|Frontend|Le frontend définit le type de protocole (HTTP/TCP/UDP) du service OVHcloud Load Balancer. C'est également la partie qui expose le port d'écoute du service|
-|Ferme|La ferme reçoit le trafic provenant du frontend, c'est la partie qui s'occupe de faire la répartition de charge|
-|Serveur|Ce sont les serveurs qui reçoivent le trafic final et qui répondent via l'application|
+| **Front-end** | Définit le protocole d’entrée (HTTP/TCP/UDP) et le port d’écoute |
+| **Ferme** | Répartit le trafic en provenance du front-end entre les serveurs |
+| **Serveur** | Taite le trafic applicatif entrant et sortant |
 
-Avec ces trois parties élémentaires qui composent le Load Balancer, il est possible de configurer à peu près tous les types de load-balancing possibles.
+![Schéma général](images/diag_gen.png){.thumbnail}
 
-### Pourquoi utiliser le Load Balancer OVHcloud ?
+## Avantages
 
-#### Répartir la charge
+### Répartir et scaler sans interruption
 
-C'est la fonction élémentaire d'un répartiteur de charge, mais le Load Balancer OVHcloud est capable de bien plus.
+Répartissez les charges entre plusieurs serveurs et augmentez horizontalement vos ressources sans interruption de service.
 
-![Distribute load](images/distribute_load.png){.thumbnail}
+![Répartition de charge](images/distribute_load.png){.thumbnail}
 
-#### Supprimer le downtime
+### Haute disponibilité et continuité de service
 
-Le service OVHcloud Load Balancer est capable de détecter automatiquement l'absence de réponse d'un serveur. Dans ce cas de figure, il redirige le trafic à destination de ce serveur vers un autre, si c'est possible. Cela permet de résoudre le problème sans affecter votre production.
+Des sondes automatiques détectent les serveurs non réactifs et redirigent instantanément le trafic, minimisant ainsi les interruptions.
 
-![Eliminate downtimes](images/eliminate_downtimes.png){.thumbnail}
+![Haute disponibilité](images/eliminate_downtimes.png){.thumbnail}
 
-#### Faire évoluer facilement votre infrastructure
+### Maintenance simplifiée
 
-Il est possible d'ajouter ou retirer une ferme, un frontend ou un serveur du service OVHcloud Load Balancer sans interruption de service.
+Mettez une ferme ou un serveur en mode maintenance sans impacter les utilisateurs, puis réintégrez-le facilement après intervention.
 
-![Scale your infra easily](images/facilitate_maintenance.png){.thumbnail}
+![Maintenance simplifiée](images/scale_easily.png){.thumbnail}
 
-#### Faciliter les maintenances
+### Intégration avec les services OVHcloud
 
-En cas de maintenance planifiée sur votre infrastructure, il est désormais facilement possible de placer une ferme en downtime pour qu'elle cesse préventivement de recevoir du trafic. Dans ce cas, il est facile d'intervenir et d'y rajouter votre serveur une fois la maintenance terminée.
+Combinez facilement le Load Balancer avec d’autres services OVHcloud :
 
-![Facilitates maintenance](images/scale_easily.png){.thumbnail}
+- Instances Public Cloud
+- VPS
+- Serveurs Dédiés
+- Réseau privé vRack
 
-#### Varier les services
+![Combiner vos services](images/mix_and_match.png){.thumbnail}
 
-Vous pouvez désormais mixer différents services d'OVHcloud dans le Load Balancer, comme par exemple :
+### Distribution géographique (Anycast)
 
-- les instances Public Cloud avec Additional IP;
-- les VPS avec Additional IP;
-- les serveurs dédiés avec Additional IP;
-- les vRack.
-
-![Mix and match service](images/mix_and_match.png){.thumbnail}
-
-#### Anycast
-
-Vous pouvez répartir votre charge sur différentes zones géographiques :
+Fournissez un service à vos utilisateurs partout dans le monde avec une faible latence et un routage résilient.
 
 ![Anycast](images/anycast.png){.thumbnail}
 
-#### Répartir n'importe quel type de trafic
+### Cas d’usage variés
 
-L'OVHcloud Load Balancer peut également être utilisé avec toutes sortes de trafics HTTP, TCP ou UDP.
+Prenez en charge de multiples services via du trafic HTTP(S), TCP et UDP.
 
-#### Serveur e-mail
+#### Serveurs de messagerie
 
-Répartissez la charge entre vos serveurs de messagerie :
+Équilibrez la charge entre vos serveurs de messagerie.
 
 ![Mail](images/mail.png){.thumbnail}
 
-#### Base de données
+#### Bases de données
 
-Équilibrez et redondez vos bases de données :
+Équilibrez vos bases de données et rendez-les redondantes.
 
-![Database](images/database.png){.thumbnail}
+![Bases de données](images/database.png){.thumbnail}
 
-## Aller plus loin
+## Pour aller plus loin
 
-[En apprendre plus sur la répartition de charge](https://fr.wikipedia.org/wiki/Repartition_de_charge).
+- [En apprendre plus sur la répartition de charge (Wikipedia)](https://fr.wikipedia.org/wiki/R%C3%A9partition_de_charge)  
+- [Site officiel HAProxy](http://www.haproxy.org/#desc)
+- [Documentation Nginx](https://nginx.org/en/docs/)
 
-[En apprendre plus sur Haproxy](http://www.haproxy.org/#desc).
-
-[En apprendre plus sur Nginx](https://fr.wikipedia.org/wiki/Nginx).
-
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Rejoignez notre [communauté d’utilisateurs](/links/community).

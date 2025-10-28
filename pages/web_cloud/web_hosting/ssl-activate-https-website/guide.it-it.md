@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Passare il proprio sito Web in HTTPS"
 excerpt: "Questa guida ti mostra come abilitare il protocollo HTTPS sul tuo sito Web dopo aver attivato un certificato SSL"
-updated: 2024-02-26
+updated: 2025-10-27
 ---
 
 ## Obiettivo
@@ -94,7 +94,7 @@ Se utilizzi un "sito chiavi in mano", la sua struttura gestisce automaticamente 
 
 ### Step 3 - Attiva il protocollo HTTPS sul tuo sito Web <a name="https-enable"></a>
 
-Una volta che l’hosting Web dispone di un certificato SSL attivo e che il [multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) usufruisce di una connessione SSL attiva e che il sito Web è pronto per *HTTPS*, è possibile attivarlo.
+Appena il tuo nome di dominio dispone di un [certificato SSL attivo tramite il tuo hosting web](/pages/web_cloud/web_hosting/ssl_on_webhosting) e il tuo sito web è pronto per passare a *HTTPS*, puoi attivarlo.
 
 > [!warning]
 >

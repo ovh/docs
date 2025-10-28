@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - View CDN statistics and logs"
 excerpt: "Find out how to view your website's statistics and CDN logs with your web hosting plan"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -37,7 +37,9 @@ Click on the tabs below to view each of the **5** steps.
 > **Step 3**
 >>
 >> On the page that pops up, click on the `Statistics and logs`{.action} tab.
->> 
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
 >> In the `Website visit statistics` section, click the `View statistics`{.action} button.
 >>
 >> ![Statistics and logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
@@ -74,7 +76,9 @@ Click on the tabs below to view each of the **5** steps.
 > **Step 3**
 >>
 >> On the page that pops up, click on the `Statistics and logs`{.action} tab.
->> 
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
 >> In the `Website logs` section, click the `View logs`{.action} button.
 >>
 >> ![View logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}

@@ -1,101 +1,185 @@
 ---
-title: 'MX Plan - Configurer son compte e-mail sur Courrier pour Windows'
-excerpt: "Apprenez à configurer une adresse e-mail de votre hébergement sur l'application Courrier pour Windows"
-updated: 2024-10-01
+title: 'MX Plan / Zimbra Starter - Ajouter un compte e-mail sur le nouvel Outlook pour Windows'
+excerpt: "Apprenez à configurer votre adresse e-mail sur le nouvel Outlook pour Windowss"
+updated: 2025-09-26
 ---
+
+<style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
+</style>
 
 ## Objectif
 
-Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
+Les adresses e-mail de l'offre **MX Plan** et [Zimbra Starter](/links/web/emails-zimbra) peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
 
-**Apprenez à configurer votre adresse e-mail MX Plan sur l'application Courrier pour Windows.**
+Le **nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'informations sur ce sujet, consultez la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ». 
 
-> [!warning]
->
-> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
+**Apprenez à configurer votre adresse e-mail MX Plan sur le nouvel Outlook pour Windows.**
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](/links/web/hosting)).
-- Disposer de l'application Courrier installée sur votre appareil.
+- Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
+    - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
+    - [Zimbra](/links/web/emails-zimbra) Starter (uniquement).
+- Disposer de la [nouvelle version d'Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installée sur votre Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
-> [!primary]
+> [!warning]
 >
-> Vous utilisez une version antérieure de Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur l'application Courrier pour Windows 8](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10).
->
+> Cette documentation s’applique uniquement au **nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
+
+/// details | Informations relatives à la gestion et la configuration des services OVHcloud
+
+OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+
+Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+
+///
 
 ## En pratique
 
-### Étape 1 : ajouter le compte
+### Ajouter le compte <a name="add-account"></a>
 
-Une fois l'application Courrier lancée sur votre appareil, l'ajout d'un compte peut être effectué de deux manières différentes.
+> [!warning]
+>
+> Il est nécessaire de choisir l'onglet de l'étape 3 correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**) pour obtenir les bonnes valeurs.
 
-- **Lors du premier démarrage de l'application** : une fenêtre vous invite à cliquer sur `Ajouter un compte`{.action}.
+> [!tabs]
+> **Etape 1**
+>> - Ouvrez Outlook. Dans la colonne de gauche, cliquez sur `Ajouter un compte`{.action} pour démarrer la configuration.
+>>
+>> ![outlook](images/configuration-newoutlook-windows-01.png){.thumbnail .w-600}
+>>
+> **Etape 2**
+>> - Saisissez votre adresse e-mail puis cliquez sur `Continuer`{.action}.
+>> - Saisissez votre mot de passe et cliquez sur le bouton `Afficher plus`{.action}.
+>>
+>> ![outlook](images/configuration-newoutlook-windows-02.png){.thumbnail .w-600}
+>>
+> **Etape 3 EUROPE**
+>> - Saisissez les paramêtres suivant:
+>>    - **Serveur d'entrée IMAP**: imap.mail.ovh.net **ou** ssl0.ovh.net.
+>>    - **Port**: 993.
+>>    - **Type de connexion sécurisée**: SSL/TLS.
+>>    - **Nom d'utilisateur SMTP**: Renseignez l'adresse e-mail **complète**.
+>>    - **Serveur sortant SMTP**: smtp.mail.ovh.net **ou** ssl0.ovh.net.
+>>    - **Port**: 465.
+>>    - **Type de connexion sécurisée**: SSL/TLS.
+>>    - **Mot de passe**: Ne rien saisir, le mot de passe saisi précédement sera utilisé.
+>> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
+>>
+>> ![outlook](images/configuration-newoutlook-windows-03.png){.thumbnail .w-600}
+>>
+> **Etape 3 AMERIQUE / ASIE-PACIFIQUE**
+>> - Saisissez les paramêtres suivant:
+>>    - **Serveur d'entrée IMAP**: imap.mail.ovh.ca.
+>>    - **Port**: 993.
+>>    - **Type de connexion sécurisée**: SSL/TLS.
+>>    - **Nom d'utilisateur SMTP**: Renseignez l'adresse e-mail **complète**.
+>>    - **Serveur sortant SMTP**: smtp.mail.ovh.ca.
+>>    - **Port**: 465.
+>>    - **Type de connexion sécurisée**: SSL/TLS.
+>>    - **Mot de passe**: Ne rien saisir, le mot de passe saisi précédement sera utilisé.
+>> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
+>>
+>> ![outlook](images/configuration-newoutlook-windows-03ca.png){.thumbnail .w-600}
 
-- **Si un compte a déjà été paramétré** : cliquez sur `Comptes`{.action} dans la barre de menu à gauche de l'application, puis sur `Ajouter un compte`{.action} dans le menu qui apparaît à droite.
+### Utiliser l'adresse e-mail <a name="use-account"></a>
 
-![mxplan](images/configuration-mail-windows-step1.png){.thumbnail}
+Une fois votre adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-Dans la fenêtre qui s'affiche, cliquez sur `Configuration avancée`{.action}, puis choisissez `Courrier Internet`{.action} comme type de compte.
+OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
-Renseignez à présent les informations demandées :
+### Modifier les paramètres existants <a name="modify-settings"></a>
 
-|Information|Description|
-|---|---|
-|Adresse de courrier|Renseignez l'adresse e-mail complète.|
-|Nom d'utilisateur|Indiquez l'adresse e-mail complète.|
-|Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Nom du compte|Précisez le nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Courrier.|
-|Envoyer vos messages en utilisant ce nom|Renseignez le nom qui s'affichera dans le champ d'expéditeur lorsque des e-mails seront envoyés avec cette adresse.|
-|Serveur de courrier entrant|Renseignez le serveur « imap.mail.ovh.ca:993 ».|
-|Type de compte|Nous vous conseillons une utilisation en **IMAP4**. Vous pouvez cependant sélectionner **POP** (stockage des e-mails en local sur votre application Mail) dans le menu déroulant.|
-|Serveur de courrier sortant|Renseignez le serveur « smtp.mail.ovh.ca:465 ».|
+L'application Outlook ne permet pas de modifier les paramètres serveur de votre compte e-mail.
 
-Assurez-vous que les cases sont bien cochées pour les choix suivants :
+Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétrer à nouveau, vous devez alors le supprimer et le recréer :
 
-- « Le serveur sortant requiert l'authentification » ;
-- « Utiliser le même nom d'utilisateur et mot de passe pour l'envoi du courrier » ;
-- « Exiger le protocole SSL pour le courrier entrant » ;
-- « Exiger le protocole SSL pour le courrier sortant ».
+- Cliquez sur l'icöne de réglage « &#9965; » dans le bas de la colonne de gauche.
+- Dans la section « Vos comptes » cliquez sur `Gérer` {.action} à droite de l'adresse e-mail concernée.
 
-Une fois les informations complétées, cliquez sur `Se connecter`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
+![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-600}
 
-Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctement paramétré.
+- Descendez dans le bas de la page.
+- Cliquez sur `Supprimer`{.action} pour lancer la suppression.
+- Déterminez si vous souhaitez supprimer seulement sur cet appareil ou sur les autres appareils utilisant Outlook.
 
-![mxplan](images/configuration-mail-windows-step2.png){.thumbnail}
+![outlook](images/configuration-newoutlook-windows-05.png){.thumbnail .w-600}
 
-Si vous êtes amené à renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre MX Plan :
+> [!success]
+>
+> Une fois votre compte e-mail supprimé, suivez les instructions de la partie « [Ajouter le compte](#add-account) » de cette documentation.
 
-- **Pour une configuration en IMAP4**
+### Paramètre généraux d'envoi et de réception <a name="settings-account"></a>
 
-|Type de serveur|Nom du serveur|SSL|Port|
-|---|---|---|---|
-|Entrant|imap.mail.ovh.ca|Oui|993|
-|Sortant|smtp.mail.ovh.ca|Oui|465|
+#### Paramètres de réception IMAP et POP <a name="imap-pop"></a>
 
-- **Pour une configuration en POP**
+Pour la réception des e-mails, lors du choix du type de compte, nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP**.
 
-|Type de serveur|Nom du serveur|SSL|Port|
-|---|---|---|---|
-|Entrant|pop.mail.ovh.ca|Oui|995|
-|Sortant|smtp.mail.ovh.ca|Oui|465|
+> [!warning]
+>
+> Il est nécessaire de bien relever la valeur correspondante à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
 
-### Étape 2 : utiliser l'adresse e-mail
+Sélectionnez l'onglet correspondant à votre type de configuration :
 
-Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
+> [!tabs]
+> **Configuration IMAP**
+>>
+>> - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
+>> - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+>> - **Serveur EUROPE (entrant)** : imap.mail.ovh.net **ou** ssl0.ovh.net.
+>> - **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : imap.mail.ovh.ca.
+>> - **Port** : 993.
+>> - **Type de sécurité** : SSL/TLS.
+>>
+> **Configuration POP**
+>>
+>> - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
+>> - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+>> - **Serveur EUROPE (entrant)** : pop.mail.ovh.net **ou** ssl0.ovh.net.
+>> - **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : pop.mail.ovh.ca.
+>> - **Port** : 995.
+>> - **Type de sécurité** : SSL/TLS.
 
-OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+#### Paramètres d'envoi SMTP <a name="smtp"></a>
+
+Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utiliser :
+
+**Configuration SMTP**
+
+- **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
+- **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
+- **Serveur EUROPE (sortant)** : smtp.mail.ovh.net **ou** ssl0.ovh.net.
+- **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : smtp.mail.ovh.ca.
+- **Port** : 465.
+- **Type de sécurité** : SSL/TLS.
 
 ## Aller plus loin
 
 > [!primary]
 >
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Courrier sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/fr-fr/office/configurer-l-e-mail-dans-l-application-courrier-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie nouvel Outlook sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
-[Configurer son compte Exchange sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
+[Premiers pas avec l'offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+
+[Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -26,7 +26,7 @@ updated: 2025-04-30
 </style>
 
 > [!primary]
-> This documentation covers the limitations of the Managed Kubernetes Service Standard Plan. For additional details on the Managed Kubernetes Service Premium plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium).
+> This documentation covers the limitations of the Managed Kubernetes Service Free Plan. For additional details on the Managed Kubernetes Service Standard plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium).
 
 ## Nodes and pods
 
@@ -50,7 +50,7 @@ Delivering a fully managed service, including OS and other component updates, yo
 
 If an incident is detected by the OVHcloud monitoring, as part of auto-healing, or in case of a version upgrade, the Nodes can be fully reinstalled. 
 
-We advise you to save your data in Persistent Volumes (PV), not to save data directly on Nodes if you don't want to lose your data. Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes) for more information.
+We advise you to save your data in Persistent Volumes (PV), not to save data directly on Nodes if you don't want to lose your data. Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) for more information.
 
 ## LoadBalancer
 

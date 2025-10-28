@@ -1,13 +1,13 @@
 ---
 title: Mutualized Inputs
 excerpt: Discover what inputs are and how to use them to ingest your logs in Logs Data Platform
-updated: 2023-06-02
+updated: 2025-10-16
 ---
 
 ## Objective
 
 This guide will help you understand how to use the mutualized inputs of Logs Data Platform to ingest your logs to the platform.
- 
+
 *Inputs* are the components from Logs Data Platform that you connect to ingest your logs in the platform. In this guide, we focus specifically on the mutualized inputs that are available to everyone by default.
 
 ## Prerequisites
@@ -27,7 +27,7 @@ Logs Data Platform imposes a few [constraints](/pages/manage_and_operate/observa
 
 The log formats that are accepted by Logs Data Platform are the following:
 
-- **GELF**: This is the native format of logs used by Graylog. This JSON format allows you to send logs really easily. See the [GELF Payload Specification](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification). The GELF input only accepts a null (`\0`) delimiter.
+- **GELF**: This is the native format of logs used by Graylog. This JSON format allows you to send logs really easily. See the [GELF Payload Specification](https://go2docs.graylog.org/4-0/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Logs%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification). The GELF input only accepts a null (`\0`) delimiter.
 - **LTSV**: This simple format is very efficient and human readable. You can learn more about it [here](http://ltsv.org). LTSV has two inputs that accept a line delimiter or a null delimiter.
 - **RFC 5424**: This format is commonly used by logs utilities such as syslog. It is extensible enough to allow you to send all your data. More information about it can be found [here](https://tools.ietf.org/html/rfc5424).
 - **Cap'n'Proto**: The most efficient log format. This is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/).
@@ -83,12 +83,11 @@ You should now have all the information you need to configure your software to i
 
 ## Go Further
 
-[Ingest your logs with Filebeat](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat) <br> 
-[Ingest your logs with syslog-ng](/pages/manage_and_operate/observability/logs_data_platform/ingestion_syslog_ng) <br> 
-[Ingest your logs with NXLog](/pages/manage_and_operate/observability/logs_data_platform/ingestion_windows_nxlog)<br> 
-[Push your logs with the OpenSearch API](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input)<br> 
+[Ingest your logs with Filebeat](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat) <br>
+[Ingest your logs with syslog-ng](/pages/manage_and_operate/observability/logs_data_platform/ingestion_syslog_ng) <br>
+[Ingest your logs with NXLog](/pages/manage_and_operate/observability/logs_data_platform/ingestion_windows_nxlog)<br>
+[Push your logs with the OpenSearch API](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input)<br>
 [Python 2 SDK](/pages/manage_and_operate/observability/logs_data_platform/ingestion_python_2_djehouty)<br>
-[Python 3 SDK](/pages/manage_and_operate/observability/logs_data_platform/ingestion_python_3_logging_ldp)<br> 
+[Python 3 SDK](/pages/manage_and_operate/observability/logs_data_platform/ingestion_python_3_logging_ldp)<br>
 [Rust SDK](/pages/manage_and_operate/observability/logs_data_platform/ingestion_rust_loggers) <br>
 [Ingest the logs from your Kubernetes cluster](/pages/manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit) <br>
-

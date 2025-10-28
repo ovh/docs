@@ -1,7 +1,7 @@
 ---
 title: "How to perform server hardware diagnostics in rescue mode"
 excerpt: "Find out how to use the OVHcloud rescue mode and diagnostic tools to identify hardware failures on your dedicated server"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -75,13 +75,7 @@ To check the file system, run the following command:
 fsck-fy
 ```
 
-For a read test, run the command below. Replace `sd(x)` with your own values.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
-```
-
-For a write test, run the command below. Replace `sd(x)` with your own values
+For a read test, run the command below. Replace `sd(x)` with your own values
 
 ```bash
 hdparm -t /dev/sd(x)

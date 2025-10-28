@@ -1,7 +1,7 @@
 ---
 title: "Jak zresetować hasło administratora za pomocą Rescue-Customer-Windows"
 excerpt: "Jak zresetować hasło administratora za pomocą Rescue-Customer-Windows"
-updated: 2025-03-06
+updated: 2025-10-22
 ---
 
 
@@ -12,6 +12,7 @@ Niniejszy przewodnik wyjaśnia, jak zresetować hasło `Administrator` przy uży
 ## Wymagania początkowe
 
 - Microsoft Windows Server 2016 lub nowszy zainstalowany na Twoim [serwerze dedykowanym](/links/bare-metal/bare-metal)
+- Co najmniej 16 GB RAM zainstalowanych na serwerze
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 
 > [!warning]

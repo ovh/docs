@@ -1,7 +1,7 @@
 ---
 title: 'Configurer une adresse IP en alias'
 excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configuration VPS'
-updated: 2024-11-05
+updated: 2025-09-11
 ---
 
 ## Objectif
@@ -23,6 +23,10 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 - Disposer d'une [adresse Additional IP](/links/bare-metal/ip)
 - Avoir un accès administrateur (sudo) via SSH ou GUI sur votre serveur
 - Avoir les connaissances de base sur les réseaux et leur administration
+
+> [!warning]
+> Les adresses Additional IP actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## En pratique
 

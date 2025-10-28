@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Administrar un bucket Object Storage con Terraform (EN)
-updated: 2025-05-05
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -55,7 +55,7 @@ terraform {
   required_providers {
     ovh = {
       source  = "ovh/ovh"
-      version = "2.1.0" # greater than or equal to 2.0
+      version = "~> 2.1" # greater than or equal to 2.1
     }
   }
 }

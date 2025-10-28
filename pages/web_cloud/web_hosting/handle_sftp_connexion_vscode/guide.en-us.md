@@ -1,7 +1,7 @@
 ---
 title: "Managing your web hosting plan with Visual Studio Code via SFTP"
 excerpt: "Administering a website on a web hosting plan with Visual Studio Code using an SFTP extension"
-updated: 2023-11-06
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -83,6 +83,8 @@ This file is located in the .vscode folder, which is located at the root of your
 ### Configure the sftp.json file
 
 Before you work on your project, upload it to your local folder that you created earlier. However, first, make sure that the “sftp.json” file is correctly configured. Useful information can be found in your [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click `Hosting plans`{.action}. Select the web hosting plan concerned, then click on the `FTP - SSH`{.action} tab.
+
+![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
 In the "sftp.json" file, enter the values for the following entries:
 

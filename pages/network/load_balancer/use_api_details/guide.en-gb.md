@@ -1,49 +1,38 @@
 ---
 title: Details of API functions
 excerpt: Details of API functionalities
-updated: 2022-04-04
+updated: 2025-09-29
 ---
 
 ## Objective
 
-Description of the different input points in the API for the Load Balancer OVH.
+This guide provides a detailed description of all API functions for the OVHcloud Load Balancer.
 
 ## Prerequisite
 
-## In Practice
+- Consult the guide [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) to familiarize yourself with the use of OVHcloud APIv6.
 
-### Manage your Load Balancer OVH service via the API
+## Instructions
 
-Details of the API functionality for the Load Balancer OVH
+### Manage your OVHcloud Load Balancer service via the API
 
-- All API calls are made in the section */ipLoadbalancing* available here : [https://api.ovh.com/console/#/ipLoadbalancing](https://api.ovh.com/console/#/ipLoadbalancing).
+All API calls that are made in the section */ipLoadbalancing* are available on [this page](/links/console).
 
-> [!warning]
+> [!primary]
 >
-> Caution, for compatibility reasons, the entry point of the former
-> system Load Balancer OVH is always present in the API /ip/loadBalancing,
-> not to be confused with the new /ipLoadbalancing.
+> In the calls below all fields marked with an asterisk `*` are mandatory.
 > 
 
 > [!primary]
 >
-> In the calls below all fields marked with an asterisk *
-> are mandatory.
-> 
-
-> [!primary]
->
-> The Frontend, Farm and Server are specific to the
-> protocol (among HTTP, TCP or UDP) in which they are defined.
-> Although they can be "combined" with each other, this is only possible within
-> of the same protocol. Thus, it is not possible to use a Frontend
-> UDP with an HTTP Farm. But it is possible (in the absence of other
-> limitation) to use an HTTP Frontend with an HTTP Farm.
+> The Frontends, Farms and Servers are specific to the protocol (HTTP, TCP or UDP) in which they are defined.
+> Compatibility between these components is only possible within the same protocol.
+> For example, an HTTP Frontend can only be paired with an HTTP Farm, and cannot be used with a UDP Farm.
 > 
 
 ## Services and zones
 
-### Load Balancer OVH
+### OVHcloud Load Balancer
 
 #### List active services
 
@@ -52,14 +41,14 @@ Details of the API functionality for the Load Balancer OVH
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
-#### List the zones available for the Load Balancer OVH
+#### List the zones available for the OVHcloud Load Balancer
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/availableZones
 > 
 
-#### Return details of a Load Balancer OVH service
+#### Return details of a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -75,7 +64,7 @@ Details of the API functionality for the Load Balancer OVH
 >> >> The identifier of your Load Balancer, ex: IP-1.2.3.4 (String of characters)
 >
 
-#### Modify a Load Balancer OVH service
+#### Modify a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -104,7 +93,7 @@ Details of the API functionality for the Load Balancer OVH
 >> >> > The SSL configuration you want to assign to the service (Value)
 >
 
-#### List the services attached to the Load Balancer OVH
+#### List the services attached to the OVHcloud Load Balancer
 
 > [!faq]
 >
@@ -146,7 +135,7 @@ Details of the API functionality for the Load Balancer OVH
 >> >> Allows filtering according to the vrack network
 >
 
-#### List the areas that can be attached to a Load Balancer OVH service
+#### List the areas that can be attached to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -320,7 +309,7 @@ Details of the API functionality for the Load Balancer OVH
 
 ### Zones
 
-#### List active zones for a Load Balancer OVH service
+#### List active zones for a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -416,7 +405,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 
 ### HTTP farms
 
-#### List HTTP farms attached to a Load Balancer OVH service
+#### List HTTP farms attached to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -439,7 +428,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >> The name of the zone (String of characters)
 >
 
-#### Adding a new HTTP farm to a Load Balancer OVH service
+#### Adding a new HTTP farm to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -840,7 +829,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 
 ### Frontends HTTP
 
-#### List HTTP frontends attached to a Load Balancer OVH service
+#### List HTTP frontends attached to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -871,7 +860,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Add an HTTP frontend to a Load Balancer OVH service
+#### Add an HTTP frontend to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -1071,7 +1060,7 @@ Routes are evaluated one by one, testing their routing rules. The first route va
 >> >> The identifier of an HTTP frontend (Number)
 >
 
-#### Add a new HTTP route to a Load Balancer OVH service
+#### Add a new HTTP route to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -1393,7 +1382,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 
 ### TCP Farms
 
-#### List TCP farms attached to a Load Balancer OVH service
+#### List TCP farms attached to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -1416,7 +1405,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Add a new TCP farm to a Load Balancer OVH service
+#### Add a new TCP farm to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -1809,7 +1798,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 
 ### Frontends TCP
 
-#### List TCP frontends attached to a Load Balancer OVH service
+#### List TCP frontends attached to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -1840,7 +1829,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Add a TCP frontend to a Load Balancer OVH service
+#### Add a TCP frontend to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -1993,7 +1982,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 ### Routes TCP
 Routes are evaluated one by one, testing their routing rules. The first route validating all its rules sees its action executed, and stops the evaluation of the remaining routes. The order of execution is defined by the type and weight of the route.
 
-#### List TCP routes attached to a Load Balancer OVH service
+#### List TCP routes attached to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2016,7 +2005,7 @@ Routes are evaluated one by one, testing their routing rules. The first route va
 >> >> The identifier of a TCP frontend (Number)
 >
 
-#### Add a new TCP route to a Load Balancer OVH service
+#### Add a new TCP route to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2330,7 +2319,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 
 ### UDP Farms
 
-#### List UDP trusses attached to a Load Balancer OVH service
+#### List UDP trusses attached to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2353,7 +2342,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Add a new UDP farm to a Load Balancer OVH service
+#### Add a new UDP farm to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2632,7 +2621,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 
 ### Frontends UDP
 
-#### List UDP frontends attached to a Load Balancer OVH service
+#### List UDP frontends attached to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2663,7 +2652,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >> The name of your zone, ex: all (String of characters)
 >
 
-#### Add a UDP frontend to a Load Balancer OVH service
+#### Add a UDP frontend to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2793,7 +2782,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 
 ### Additional IP
 
-#### List Additional IPs routed on a Load Balancer OVH service
+#### List Additional IPs routed on a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2814,7 +2803,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 
 ### Service Status
 
-#### Obtenir l'état des instances d'un service Load Balancer OVH
+#### Obtenir l'état des instances d'un service OVHcloud Load Balancer
 
 > [!faq]
 >
@@ -2852,7 +2841,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >> The identifier of your Load Balancer, for example : "loadbalancer-abcdef0123456789" (String of characters)
 >
 
-#### Apply changes to a Load Balancer OVH service
+#### Apply changes to a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2873,7 +2862,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 
 ### SSL Certificates
 
-#### List SSL certificates of a Load Balancer OVH service
+#### List SSL certificates of a OVHcloud Load Balancer service
 
 > [!faq]
 >
@@ -2983,7 +2972,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 
 ### Tasks
 
-#### List current tasks for a Load Balancer OVH service
+#### List current tasks for a OVHcloud Load Balancer service
 
 > [!faq]
 >

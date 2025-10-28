@@ -4,9 +4,6 @@ excerpt: "Find the most frequently asked questions about the wave of attacks tar
 updated: 2024-09-13
 ---
 
-> [!warning]
-> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
-
 ## Objective
 
 Following a major event on pre-7.0 U3i ESXi servers on February 3rd 2023, a wave of attacks is currently underway on these servers.

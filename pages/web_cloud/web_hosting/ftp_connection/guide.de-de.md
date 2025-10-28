@@ -1,7 +1,7 @@
 ---
 title: "Mit dem FTP-Speicherplatz eines Webhostings verbinden"
 excerpt: "Erfahren Sie hier, wie Sie sich im FTP-Speicherplatz Ihres OVHcloud Webhostings einloggen"
-updated: 2025-06-10
+updated: 2025-06-15
 ---
 
 ## Ziel 
@@ -22,7 +22,7 @@ Die OVHcloud Webhostings bieten Zugriff auf einen FTP-Speicherplatz, um die Date
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Erforderliche Verbindungsdaten abrufen
+### 1 - Erforderliche Verbindungsdaten abrufen
 
 Um sich mit Ihrem FTP-Speicherplatz zu verbinden, benötigen Sie folgende Informationen:
 
@@ -35,23 +35,42 @@ Um sich mit Ihrem FTP-Speicherplatz zu verbinden, benötigen Sie folgende Inform
 >
 > Diese Informationen wurden Ihnen in der E-Mail mitgeteilt, in der die Installation Ihres Webhostings nach Bestellung bestätigt wurde. Sie sind auch im [OVHcloud Kundencenter](/links/manager) verfügbar.
 >
-> **Wenn Sie diese Daten bereits haben**, gehen Sie direkt zu Schritt 2: [Zugang zu Ihrem FTP-Speicherplatz](#ftp_storage_access).
-> 
+> **Wenn Sie diese Daten bereits haben**, gehen Sie direkt zu Teil 2: [Zugang zu Ihrem FTP-Speicherplatz](#ftp_storage_access).
 
-Wenn Sie die Verbindungsdaten nicht zur Hand haben, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action}. Wählen Sie das betreffende Webhosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
+Wenn Sie die Verbindungsdaten nicht zur Hand haben, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-Die Informationen zu Ihrem Speicherplatz sowie eine Tabelle mit den auf Ihrem Webhosting erstellten FTP- und SSH-Benutzern werden angezeigt.
-
-![ftp login](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!primary]
->
-> Wenn Sie von diesem Tab aus einen neuen FTP/SSH-Benutzer erstellen möchten, klicken Sie rechts auf den Button `Benutzer erstellen`{.action}.
-> Definieren Sie die Namensendung für den neuen `Benutzer`{.action} sowie das `Wurzelverzeichnis`{.action}, in dem dieser Benutzer tätig werden kann, und klicken Sie dann auf `Weiter`{.action}.
-> Wählen Sie ein Passwort für diesen neuen Benutzer-Account aus, klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
->
-
-Alle für die Verbindung mit dem FTP-Speicherplatz erforderlichen Elemente finden Sie auf dieser Seite.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Die Informationen zu Ihrem Speicherplatz sowie eine Tabelle mit den auf Ihrem Webhosting erstellten FTP- und SSH-Benutzern werden angezeigt.
+>>
+>> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Wenn Sie von diesem Tab aus einen neuen FTP/SSH-Benutzer erstellen möchten, klicken Sie rechts auf den Button `Benutzer erstellen`{.action}.  
+>> > Definieren Sie die Namensendung für den neuen `Benutzer`{.action} sowie das `Wurzelverzeichnis`{.action}, in dem dieser Benutzer tätig werden kann, und klicken Sie dann auf `Weiter`{.action}.  
+>> > Wählen Sie ein Passwort für diesen neuen Benutzer-Account aus, klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
+>>
+>> Alle für die Verbindung mit dem FTP-Speicherplatz erforderlichen Elemente finden Sie auf dieser Seite.
 
 Nachstehend finden Sie eine Beschreibung der wesentlichen Informationen, die auf `FTP - SSH`{.action} angezeigt werden:
 
@@ -76,7 +95,7 @@ Wenn Sie das Passwort eines FTP- oder SSH-Benutzers nicht mehr kennen, lesen Sie
 
 An diesem Punkt verfügen Sie über alle notwendigen Elemente, um sich mit Ihrem FTP-Speicherplatz zu verbinden.
 
-### Schritt 2: Zugang zu Ihrem FTP-Speicherplatz <a name="ftp_storage_access"></a>
+### 2 - Zugang zu Ihrem FTP-Speicherplatz <a name="ftp_storage_access"></a>
 
 Die Verbindung zum FTP-Speicherplatz ist auf mehrere Arten möglich. Folgen Sie den Schritten dieser Anleitung je nach Ihrer gewünschten Methode.
 
@@ -130,7 +149,7 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 Ersetzen Sie im obigen Befehl diese Werte:
 
-- `sshlogin` mit dem in [Schritt 2.1](#ftpsoftware) beschriebenen FTP-Haupt-Login (oder einem FTP-Login bei SSH-Zugang)
+- `sshlogin` mit dem in [Teil 2.1](#ftpsoftware) beschriebenen FTP-Haupt-Login (oder einem FTP-Login bei SSH-Zugang)
 - `XXX` mit der Nummer des Clusters, auf dem sich Ihr Webhosting befindet.
 
 Anschließend werden Sie aufgefordert, das Passwort des SSH-Benutzers einzugeben.

@@ -1,12 +1,12 @@
 ---
 title: "How to install n8n on an OVHcloud VPS"
 excerpt: "Find out how to host the n8n automation platform on an OVHcloud VPS using Docker and Traefik"
-updated: 2025-08-25
+updated: 2025-09-23
 ---
 
 ## Objective
 
-This guide explains how to install and run [n8n](https://n8n.io), an open-source platform for workflow automation, on an OVHcloud VPS. The installation relies on [Docker](https://www.docker.com/), with the server [Traefik](https://doc.traefik.io/traefik/) to automatically manage SSL certificates.
+This guide explains how to install and run [n8n](https://n8n.io), an open-source platform for workflow automation, on an OVHcloud VPS. [Manual installation](#step3) relies on [Docker](https://www.docker.com/), with the server [Traefik](https://doc.traefik.io/traefik/) to automatically manage SSL certificates. For a [turn-key setup](#step2), opt for an [OVHcloud preinstalled n8n VPS](/links/bare-metal/vps-n8n).
 
 ## Requirements
 
@@ -37,15 +37,22 @@ ssh <user>@IP_VPS
 
 If you have chosen an OVHcloud **VPS with the n8n image pre-installed**, **you do not need to install Docker or Docker Compose** : these tools are already present and configured.
 
-Find all the necessary files (including `docker-compose.yml` and `.env`) in the `/debian/n8n/` folder on your VPS.
+Find all the necessary files (including `docker-compose.yml` and `.env`) in the `/home/debian/n8n/` folder on your VPS.
 
-Edit the file `.env` located in this folder to enter the following information:
+Navigate to the `/home/debian/n8n/` folder and edit the `.env` file:
+
+```bash
+cd /home/debian/n8n/
+nano .env
+```
+
+Enter the following information:
 
 - `DOMAIN_NAME`: your domain name (e.g. `vps.ovh.net`).
 - `SUBDOMAIN`: the subdomain used to access n8n (e.g. `vps-xxxxxxx`).
-- `EMAIL`: the email address used to generate SSL certificates via Let’s Encrypt.
+- `SSL_EMAIL`: the email address used to generate SSL certificates via Let’s Encrypt.
 
-Once you have updated the file `.env`, run the following command from the directory `/root/n8n-traefik/`:
+Once you have updated the file `.env`, run the following command from the directory `/home/debian/n8n/`:
 
 ```bash
 docker compose up -d
@@ -121,10 +128,10 @@ nano .env
 
 Paste the following content into it:
 
-```console
+```ini
 DOMAIN_NAME=example.com
 SUBDOMAIN=n8n
-EMAIL=admin@example.com
+SSL_EMAIL=admin@example.com
 ```
 
 Replace `example.com` with your real domain name and `admin@example.com` with the email of your choice.
@@ -148,7 +155,7 @@ nano docker-compose.yml
 
 Paste the following content:
 
-```console
+```yaml
 services:
   traefik:
     image: traefik:v2.11
@@ -161,7 +168,7 @@ services:
       - "--entrypoints.websecure.address=:443"
       - "--certificatesresolvers.myresolver.acme.httpchallenge=true"
       - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
-      - "--certificatesresolvers.myresolver.acme.email=${EMAIL}"
+      - "--certificatesresolvers.myresolver.acme.email=${SSL_EMAIL}"
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
     ports:
       - "80:80"

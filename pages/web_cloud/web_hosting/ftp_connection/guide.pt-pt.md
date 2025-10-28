@@ -1,7 +1,7 @@
 ---
 title: "Aceder ao espaço de armazenamento FTP do alojamento web"
 excerpt: "Descubra como aceder ao espaço de armazenamento FTP do alojamento web da OVHcloud"
-updated: 2025-06-10
+updated: 2025-06-15
 ---
 
 ## Objetivo
@@ -22,7 +22,7 @@ As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamen
 
 ## Instruções
 
-### Etapa 1 - recuperar as informações necessárias para se ligar
+### 1 - Recuperar as informações necessárias para se ligar
 
 Para se ligar ao espaço de armazenamento FTP, recupere os seguintes elementos:
 
@@ -35,25 +35,44 @@ Para se ligar ao espaço de armazenamento FTP, recupere os seguintes elementos:
 >
 > Estes elementos foram-lhe enviados por e-mail após a subscrição do seu alojamento web. Estão disponíveis a partir do seu [Área de Cliente OVHcloud](/links/manager).
 >
-> **Se já dispõe destes elementos**, consulte o etapa 2 "[Aceder ao espaço de armazenamento](#ftp_storage_access)" deste manual.
->
+> **Se já dispõe destes elementos**, consulte na parte 2 "[Aceder ao espaço de armazenamento](#ftp_storage_access)" deste manual.
 
-Se não dispõe destes elementos, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique na secção `Alojamentos`{.action} na coluna da esquerda. Escolha o nome do alojamento web em causa e aceda ao separador `FTP - SSH`{.action}. 
+Se não dispõe destes elementos, clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 
-Aparecerá a informação relativa ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento web.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Aparecerá a informação relativa ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento web.
+>>
+>> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Se deseja criar um novo utilizador FTP/SSH a partir da mesma página, clique no botão `Criar utilizador`{.action} à direita.
+>> > Defina a extensão do nome deste novo `Utilizador`{.action} e o `Pasta raiz`{.action} no qual este utilizador poderá agir e clique em `Seguinte`{.action}.
+>> > Escolha uma palavra-passe para esta nova conta de utilizador, clique em `Seguinte`{.action} e depois clique em `Confirmar`{.action}.
+>>
+>> Todos os elementos necessários para aceder ao espaço de armazenamento FTP estão presentes nesta página.
 
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!primary]
->
-> Se deseja criar um novo utilizador FTP/SSH a partir da mesma página, clique no botão `Criar utilizador`{.action} à direita.
-> Defina a extensão do nome deste novo `Utilizador`{.action} e o `Pasta raiz`{.action} no qual este utilizador poderá agir e clique em `Seguinte`{.action}.
-> Escolha uma palavra-passe para esta nova conta de utilizador, clique em `Seguinte`{.action} e depois clique em `Confirmar`{.action}.
->
-
-Todos os elementos necessários para aceder ao espaço de armazenamento FTP estão presentes nesta página.
-
-Encontre aqui uma descrição das informações essenciais exibidas na página `FTP-SSH`:
+Encontre aqui uma descrição das informações essenciais exibidas na página `FTP - SSH`:
 
 - **Servidor FTP e SFTP**: endereço do servidor FTP do seu alojamento web que permite aceder ao seu espaço de armazenamento FTP. Isto utilizando, por exemplo, um software FTP através do protocolo FTP ou SFTP.
 
@@ -76,7 +95,7 @@ Se já não sabe a palavra-passe de um utilizador FTP ou SSH, consulte o nosso g
 
 Nesta fase, dispõe de todos os elementos que lhe permitem aceder ao seu espaço de armazenamento FTP.
 
-### Etapa 2 - aceder ao seu espaço de armazenamento FTP <a name="ftp_storage_access"></a>
+### 2 - Aceder ao seu espaço de armazenamento FTP <a name="ftp_storage_access"></a>
 
 A ligação ao espaço de armazenamento FTP pode ser efetuada de várias formas. Consulte este manual em função da operação que pretende realizar.
 
@@ -130,7 +149,7 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 No comando acima, substitua:
 
-- o valor `sshlogin` pelo seu login FTP principal, descrito no [passo 2.1](#ftpsoftware) (ou por um login FTP com acesso SSH);
+- o valor `sshlogin` pelo seu login FTP principal, descrito na [parte 2.1](#ftpsoftware) (ou por um login FTP com acesso SSH);
 - os `XXX` pelos números correspondentes ao número do cluster onde se encontra o seu alojamento web.
 
 Uma vez enviado o comando, deverá introduzir a palavra-passe do utilizador SSH.

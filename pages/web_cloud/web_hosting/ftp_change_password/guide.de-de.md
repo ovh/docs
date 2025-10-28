@@ -1,7 +1,7 @@
 ---
 title: "Passwort eines FTP-Benutzers ändern"
 excerpt: "Erfahren Sie hier, wie Sie das Passwort eines auf Ihrem OVHcloud Webhosting erstellten FTP-Benutzers ändern"
-updated: 2024-02-29
+updated: 2025-10-14
 ---
 
 ## Ziel 
@@ -27,20 +27,41 @@ Dieser Zugang erlaubt unter anderem [Ihre Website online zu stellen](/pages/web_
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Auf die FTP-Benutzerverwaltung zugreifen
+### 1 - Auf die FTP-Benutzerverwaltung zugreifen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Öffnen Sie den Tab `FTP-SSH`{.action}.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-Eine Tabelle zeigt die *FTP-Benutzer*, die auf Ihrem Webhosting erstellt wurden. Mit diesen Benutzern können Sie auf Ihren FTP-Speicherplatz zugreifen, um dort die Dateien Ihrer Website online zu stellen. Bei der Installation Ihres Webhostings wird automatisch ein Benutzer erstellt.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `FTP - SSH`{.action}.
+>>
+>> ![FTP 6 SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Eine Tabelle zeigt die *FTP-Benutzer*, die auf Ihrem Webhosting erstellt wurden. Mit diesen Benutzern können Sie auf Ihren FTP-Speicherplatz zugreifen, um dort die Dateien Ihrer Website online zu stellen. Bei der Installation Ihres Webhostings wird automatisch ein Benutzer erstellt.
 
-### Schritt 2: Passwort eines FTP-Benutzers ändern
+### 2 - Passwort eines FTP-Benutzers ändern
 
 > [!primary]
 >
 > Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Je nach Ihrem [OVHcloud Webhosting](/links/web/hosting) erfolgt die Änderung des Passworts Ihres FTP-Benutzers im Tab `FTP-SSH`{.action} über zwei verschiedene Wege:
+Je nach Ihrem [OVHcloud Webhosting](/links/web/hosting) erfolgt die Änderung des Passworts Ihres FTP-Benutzers im Tab `FTP - SSH`{.action} über zwei verschiedene Wege:
 
 - **Für Hosting-Pakete, die keinen zweiten FTP-Benutzer erstellen können** (*Kostenloses Hosting 100M* und *Basic Hosting*):
 
@@ -58,7 +79,7 @@ Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden FTP-Benu
 >
 > Ihr neues Passwort muss folgenden **Richtlinien** entsprechen:
 >
->- Mindestens 8 Zeichen
+>- Mindestens 9 Zeichen
 >- Maximal 30 Zeichen
 >- Mindestens ein Großbuchstabe
 >- Mindestens ein Kleinbuchstabe
@@ -67,7 +88,7 @@ Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden FTP-Benu
 
 Gehen Sie dann zum Tab `Aktuelle Tasks`{.action} und laden Sie die Seite ggf. neu um den Fortschritt zu überprüfen. Die Änderung benötigt einige Minuten, bis sie wirksam ist.
 
-### Schritt 3: Auf Ihren Speicherplatz zugreifen
+### 3 - Auf Ihren Speicherplatz zugreifen
 
 Um auf Ihren FTP-Speicherplatz zuzugreifen, lesen Sie unsere Anleitung ["Mit dem Speicherplatz Ihres Webhostings verbinden"](/pages/web_cloud/web_hosting/ftp_connection).
 

@@ -1,7 +1,7 @@
 ---
 title: How to get started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2025-09-05
+updated: 2025-09-11
 ---
 
 ## Objective
@@ -14,6 +14,11 @@ A **V**irtual **P**rivate **S**erver is a virtualized dedicated server that give
 
 - An active [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
+
+> [!warning]
+> Not all VPS features mentioned on this page are available in OVHcloud Local Zones.
+>
+> Please visit our [Local Zones web page](/links/bare-metal/vps-lz) for more information.
 
 ## Instructions
 

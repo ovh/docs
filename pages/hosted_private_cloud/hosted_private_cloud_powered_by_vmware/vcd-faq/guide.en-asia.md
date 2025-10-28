@@ -1,7 +1,7 @@
 ---
 title: "Public VCF as-a-Service - FAQ"
 excerpt: "Find the most frequently asked questions about Public VCF as-a-Service"
-updated: 2024-10-23
+updated: 2025-09-30
 ---
 
 ## FAQ
@@ -48,6 +48,13 @@ updated: 2024-10-23
 > **Can I choose the Thin or Thick disk type with Public VCF as-a-Service when I create a new virtual machine or disk**?
 > > No. With Public VCF as-a-Service, each disk consumes storage in a Virtual Datacentre (vDC) organization. There is no associated Thin or Thick setting for a tenant.
 > >
+> **Can I use my existing Windows Server licenses in Public VCF as-a-Service?** <a name="windowsLicenses"></a>
+> > It depends on the type of license you own:
+> >
+> > - **Software Subscription licenses**: Yes, you can use these in OVHcloud Public VCF as-a-Service.
+> > - **Perpetual software licenses**: No, these cannot be used in OVHcloud Public VCF as-a-Service.
+> >
+> > If your organization holds both types of licenses, only the subscription ones are eligible for use within the solution.
 
 ## Go further
 

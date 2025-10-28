@@ -6,7 +6,7 @@ updated: 2025-03-20
 
 ## Ziel
 
-Mit dem *cloud-init* Modul können Sie Ihre [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) direkt bei der Erstellung und bei jedem Neustart anpassen. Wenn Sie Ihren Hostnamen neu konfigurieren möchten, weil beim Einrichten der Instanz ein Fehler aufgetreten ist oder um den E-Mail-Server neu einzurichten, muss deshalb zunächst das *cloud-init* Modul deaktiviert werden. Denn das Modul ist für die Konfiguration des Hostnamens zuständig und die Deaktivierung verhindert, dass dieser zurückgesetzt wird.
+Mit dem *cloud-init* Modul können Sie Ihre [Public Cloud Instanz](/links/public-cloud/public-cloud) direkt bei der Erstellung und bei jedem Neustart anpassen. Wenn Sie Ihren Hostnamen neu konfigurieren möchten, weil beim Einrichten der Instanz ein Fehler aufgetreten ist oder um den E-Mail-Server neu einzurichten, muss deshalb zunächst das *cloud-init* Modul deaktiviert werden. Denn das Modul ist für die Konfiguration des Hostnamens zuständig und die Deaktivierung verhindert, dass dieser zurückgesetzt wird.
 
 **Diese Anleitung erklärt, wie Sie *cloud-init* neu konfigurieren, damit Sie den Hostnamen Ihrer Instanz ändern können.**
 

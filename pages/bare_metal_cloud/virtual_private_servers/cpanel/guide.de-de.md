@@ -1,7 +1,7 @@
 ---
 title: "cPanel auf einem VPS installieren"
 excerpt: "Erfahren Sie hier, wie Sie einen VPS mit cPanel-Template einrichten"
-updated: 2025-07-14
+updated: 2025-09-11
 ---
 
 ## Ziel
@@ -22,6 +22,10 @@ Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erl
 
 - Sie haben einen [VPS](/links/bare-metal/vps) mit einer [kompatiblen Distribution](/links/bare-metal/vps-os).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+> [!warning]
+> Diese Funktion ist derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## In der praktischen Anwendung
 

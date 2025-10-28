@@ -63,7 +63,7 @@ Click on the tabs below to view each of the **4** steps in succession.
 >>
 >> On the page that pops up, click on the `FTP - SSH`{.action} tab.
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
 > **Step 4**
 >>
@@ -102,7 +102,7 @@ Click on the tabs below to view each of the **4** steps in succession.
 >>
 >> On the page that pops up, click on the `FTP - SSH`{.action} tab.
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
 > **Step 4**
 >>

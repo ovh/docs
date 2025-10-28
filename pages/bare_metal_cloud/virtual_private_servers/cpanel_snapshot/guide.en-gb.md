@@ -18,8 +18,12 @@ However, if Jailed Shell access is enabled, cPanel creates a *virtfs* which cann
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-gb/vps) solution with a [compatible distribution](https://www.ovhcloud.com/en-gb/vps/os/)
+- A [VPS](/links/bare-metal/vps) solution with a [compatible distribution](/links/bare-metal/vps-os)
 - cPanel installed on your server
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Instructions
 

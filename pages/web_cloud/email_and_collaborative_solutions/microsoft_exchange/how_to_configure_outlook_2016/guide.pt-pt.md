@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure sua conta de e-mail no Outlook para Windows'
 excerpt: 'Saiba como configurar uma conta Exchange no Outlook para Windows'
-updated: 2024-10-30
+updated: 2025-10-23
 ---
 
 ## Objetivo
@@ -21,7 +21,7 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 ## Requisitos
 
 - Ter o serviço [E-mail Pro](/links/web/emails).
-- Dispor do programa Microsoft Outlook ou posterior, instalado no seu computador.
+- Ter a aplicação [Outlook clássico](https://support.microsoft.com/pt-pt/office/instalar-ou-reinstalar-o-outlook-cl%C3%A1ssico-num-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) em Windows.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
 - O campo SRV da OVHcloud deve estar corretamente configurado na zona DNS do domínio. Por favor, consulte o nosso guia [Adicionar um domínio ao serviço Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
@@ -30,6 +30,16 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 > Utiliza o Outlook e posterior para Mac? consulte o nosso manual [Configurar uma conta Exchange no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac) (versão em inglês).
 
 ## Instruções
+
+> [!warning]
+>
+> Antes de iniciar a sua configuração, é importante notar que a aplicação Outlook incluída gratuitamente no Windows 11 é [incompatível](https://learn.microsoft.com/pt-pt/microsoft-365-apps/outlook/get-started/supported-account-types) com as ofertas Exchange OVHcloud, ditas *on-premises*. Deverá utilizar a versão **Outlook clássico**.
+>
+> Para instalar o Outlook clássico no seu computador Windows, transfira-o a partir da página Microsoft "[Instalar ou reinstalar o Outlook clássico num PC Windows](https://support.microsoft.com/pt-pt/office/instalar-ou-reinstalar-o-outlook-cl%C3%A1ssico-num-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", e instale-o.
+>
+> Quando a instalação for concluída, para distinguir as duas versões quando instaladas, digite "Outlook" na barra de pesquisa do Windows. Poderá verificar a diferença como se mostra a seguir.
+>
+>![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
 ### Adicionar a conta
 

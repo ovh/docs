@@ -127,11 +127,6 @@ Una vez iniciado el VPS, podrá pasar a las siguientes etapas, en función del s
 
 > [!warning]
 >
-> El hipervisor ESXi ya no es compatible con OVHcloud. Más información en [esta página dedicada](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
->
-
-> [!warning]
->
 > Las siguientes instrucciones se aplican a una máquina virtual creada anteriormente con un sistema operativo instalado. Si no ha creado ninguna MV, consulte la guía [Crear una máquina virtual en el cliente host de VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html) (EN) en la página VMware.
 >
 

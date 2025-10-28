@@ -1,7 +1,7 @@
 ---
 title: 'Importing a backup into a Web Hosting plan database'
 excerpt: 'Find out how to import a backup into a database on your OVHcloud Web Hosting plan'
-updated: 2023-12-11
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -43,7 +43,10 @@ We recommend reading this guide, and focusing on the import method you wish to u
 >
 
 ### Restore a backup from the Control Panel.
+
 First of all, log in to your [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action}, then select the plan concerned. Next, go to the `Databases`{.action} tab.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database that you want to restore to an earlier version, then `Restore backup`{.action}. Please note that this will replace the current contents of the database with the contents of the backup.
 
@@ -56,7 +59,10 @@ Click on the three dots to the right of the backup that you would like to restor
 ![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
 
 ### Import your own backup via your Control Panel.
+
 First of all, log in to your [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action}, then select the plan concerned. Next, go to the `Databases`{.action} tab.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now click on the three dots to the right of the database you want to import data into, then on `Import file`{.action}.
 
@@ -90,6 +96,8 @@ Once you have made your choice, click the `Confirm`{.action} button, and wait fo
 ### Carry out the import from the phpMyAdmin web interface.
 
 To carry out this procedure, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action}, then select the plan concerned. Next, go to the `Databases`{.action} tab.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 The table shown contains all the databases created as part of your Web Hosting plan. In the table, click on the three dots to the right of the database concerned, then on `Go to phpMyAdmin`{.action}.
 

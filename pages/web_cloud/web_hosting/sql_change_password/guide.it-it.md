@@ -1,7 +1,7 @@
 ---
 title: Modificare la password del database di un hosting Web
 excerpt: Scopri come modificare la password di un database creata nell'ambito di un piano di hosting Web
-updated: 2025-05-23
+updated: 2025-10-08
 ---
 
 ## Obiettivo
@@ -20,12 +20,12 @@ Finché la modifica non sarà effettuata **in entrambi i punti**, il tuo sito mo
 
 Per modificare la password del database è quindi necessario eseguire **tutte le operazioni** indicate in questa guida. In caso di dubbi sulle operazioni da effettuare, contatta il tuo webmaster o rivolgiti a un [provider specializzato](/links/partner).
 
-La modifica della password del database del tuo sito avviene in quattro step:
+Per modificare la password del database del tuo sito sono necessarie quattro azioni:
 
-- [Step 1: identificare il file di configurazione del tuo sito](#step1);
-- [Step 2: identificare il database del tuo sito](#step2);
-- [Step 3: modificare la password del database del tuo sito nel file di configurazione](#step3);
-- [Step 4: modificare la password del database del tuo sito sul server di database](#step4).
+- [1: Identificare il file di configurazione del tuo sito](#step1);
+- [2: Identificare il database del tuo sito](#step2);
+- [3: Modificare la password del database del tuo sito nel file di configurazione](#step3);
+- [4: Modificare la password del database del tuo sito sul server di database](#step4).
 
 **Questa guida ti mostra come modificare la password di un database in modo sicuro.**
 
@@ -45,7 +45,7 @@ La modifica della password del database del tuo sito avviene in quattro step:
 
 ## Procedura
 
-### Step 1: identifica il file di configurazione del tuo sito <a name="step1"></a>
+### 1: Identifica il file di configurazione del tuo sito <a name="step1"></a>
 
 Nello [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action} e su `Hosting`{.action} e infine sull'hosting interessato. Clicca sulla scheda `Multisito`{.action}. Identifica il nome della `Cartella di root` del tuo sito (la directory in cui si trovano file e cartelle).
 
@@ -67,14 +67,14 @@ Ricerca e apri il file di configurazione del tuo sito:
 - Per un sito DRUPAL, clicca sulla cartella "**sites"** e **"default"**. Il file di configurazione è **"settings.php"**;
 - Per un sito PRESTASHOP, clicca sulla cartella **"app"** e **"config"**. Il file di configurazione è **"parameters.php"**.
 
-### Step 2: identificare il database del tuo sito <a name="step2"></a>
+### 2: Identificare il database del tuo sito <a name="step2"></a>
 
 Sono possibili due casi:
 
 - Caso 1: il database del tuo sito fa parte della tua offerta di hosting;
 - Caso 2: è inclusa in un'offerta *Web Cloud Databases*, nel qual caso dovrai trovare il **nome del server** e il **nome utente** del tuo database per identificarlo senza rischio di errore.
 
-Per verificare quale caso si applica al tuo sito, nel file di configurazione identificato allo [Step 1](#step1), inserisci il nome del database:
+Per verificare quale caso si applica al tuo sito, nel file di configurazione identificato allo [1](#step1), inserisci il nome del database:
 
 - Per WORDPRESS: il nome appare sotto la dicitura **"DB_NAME"**;
 - Per JOOMLA: il nome appare sotto **"public $db"**;
@@ -87,7 +87,7 @@ Dopodiché torna allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cl
 - Clicca sulla scheda `Database`{.action} **a destra** dello schermo.
 - Cerca il nome del database trovato precedentemente nella colonna `Nome del database`;
 
-Se hai ritrovato in questa sezione del tuo Spazio Cliente il nome del database indicato nel file di configurazione, passa allo [Step 3](#step3).
+Se hai ritrovato in questa sezione del tuo Spazio Cliente il nome del database indicato nel file di configurazione, passa allo [3](#step3).
 
 In caso contrario, il database del tuo sito è associato a un'offerta [Web Cloud Databases](/links/web/databases).
 
@@ -104,7 +104,7 @@ Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [Web Clo
 
 Sempre in questa sezione del tuo Spazio Cliente OVHcloud, clicca sulla scheda `Utente e diritti`{.action}, per visualizzare anche il `Nome utente`{.action} del tuo database.
 
-### Step 3: Modifica la password del database del tuo sito nel file di configurazione <a name="step3"></a>
+### 3: Modifica la password del database del tuo sito nel file di configurazione <a name="step3"></a>
 
 > [!primary]
 >
@@ -120,7 +120,7 @@ Scegli la nuova password del tuo database e annotiamolo. Esso dovrà rispettare 
 - almeno una cifra;
 - Essere composto esclusivamente da cifre e lettere.
 
-Allo stesso modo del [Step 1](#step1), torna allo spazio di storage dei file del tuo hosting e modifica il file di configurazione del tuo sito.
+Allo stesso modo del [1](#step1), torna allo spazio di storage dei file del tuo hosting e modifica il file di configurazione del tuo sito.
 
 **Prima di apportare qualsiasi modifica**, registra localmente il contenuto di questo file in un documento di testo per conservarne una copia in caso di errore di manipolazione.
 
@@ -176,7 +176,7 @@ $databases['default']['default'] = array (
 
 Salva questa modifica.
 
-### Step 4: Modifica la password del database del tuo sito sul server di database <a name="step4"></a>
+### 4: Modifica la password del database del tuo sito sul server di database <a name="step4"></a>
 
 > [!primary]
 >
@@ -191,17 +191,38 @@ Di nuovo, sono possibili due casi:
 
 #### Caso 1: il database del tuo sito fa parte della tua offerta di hosting <a name="case1"></a>
 
-Accedi alla sezione `Hosting`{.action} dello Spazio Cliente OVHcloud, clicca sulla scheda `Database`{.action} in corrispondenza del tuo schermo:
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
-![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-
-Clicca sui tre puntini in corrispondenza del database del tuo sito e poi su `Modifica la password`{.action}.
-
-![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
-
-Nella nuova finestra, inserisci la nuova password del tuo database (definita allo [Step 3](#step3)), confermala e clicca su `Conferma`{.action}.
-
-![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `Database`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Clicca sui tre puntini in corrispondenza del database del tuo sito e poi su `Modificare la password`{.action}.
+>>
+>> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Nella nuova finestra, inserisci la nuova password del tuo database (definita allo [3](#step3)), confermala e clicca su `Conferma`{.action}.
+>>
+>> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 #### Caso 2: il database del tuo sito fa parte di un'offerta Web Cloud Databases <a name="case2"></a>
 
@@ -209,11 +230,11 @@ Accedi alla sezione `Database`{.action} del tuo Spazio Cliente e clicca sulla sc
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-Per modificare la password del tuo database sul server, clicca sui tre puntini in corrispondenza del `Nome utente`{.action} identificato allo [Step 2](#step2) e seleziona `Modifica la password`{.action}.
+Per modificare la password del tuo database sul server, clicca sui tre puntini in corrispondenza del `Nome utente`{.action} identificato allo [2](#step2) e seleziona `Modifica la password`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
-Nella nuova finestra, inserisci la nuova password del tuo database (definita allo [Step 3](#step3)), confermala e clicca su `Conferma`{.action}.
+Nella nuova finestra, inserisci la nuova password del tuo database (definito nella [parte 3](#step3)), confermala e clicca su `Conferma`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
 

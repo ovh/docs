@@ -1,7 +1,7 @@
 ---
 title: "IP-Adresse als Alias konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre VPS-Konfiguration einbinden"
-updated: 2024-11-05
+updated: 2025-09-11
 ---
 
 ## Ziel
@@ -22,6 +22,10 @@ Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für b
 - Sie verfügen über eine [Additional IP](/links/bare-metal/ip)-Adresse.
 - Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
+
+> [!warning]
+> Additional IP-Adressen sind derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## In der praktischen Anwendung
 

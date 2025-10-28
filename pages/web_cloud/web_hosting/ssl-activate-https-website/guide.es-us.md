@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Habilitar HTTPS en un sitio web"
 excerpt: "Decubra cómo activar un certificado SSL en un sitio web HTTPS"
-updated: 2024-02-26
+updated: 2025-10-27
 ---
 
 ## Objetivo
@@ -94,7 +94,7 @@ Tenga en cuenta que si utiliza un "sitio llave en mano", su estructura gestiona 
 
 ### Etapa 3 - Activar el protocolo HTTPS en su sitio web <a name="https-enable"></a>
 
-Una vez que el alojamiento web disponga de un certificado SSL activo, que el [multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite) correspondiente disponga de una conexión SSL activa y que el sitio web esté listo para pasar a *HTTPS*, podrá activarlo.
+Tan pronto como su nombre de dominio tenga un [certificado SSL activo a través de su alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting) y su sitio web esté listo para pasar a *HTTPS*, puede activarlo.
 
 > [!warning]
 >

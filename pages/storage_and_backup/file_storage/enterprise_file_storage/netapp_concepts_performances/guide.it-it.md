@@ -1,13 +1,8 @@
 ---
 title: Enterprise File Storage - Concetti di performance
 excerpt: "Scopri i concetti di approvvigionamento, monitoraggio e test delle performance della soluzione Enterprise File Storage"
-sezione: Enterprise File Storage
-updated: 2022-11-30
+updated: 2025-09-12
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -71,7 +66,48 @@ Il tool [FIO](https://github.com/axboe/fio) ti permette di testare diversi scena
 - Il numero di FIO workers.
 - Il modello di accesso (lettura/scrittura/sequenziale/casuale), ecc...
 
-Per maggiori informazioni, consulta la [documentazione di FIO](https://fio.readthedocs.io/en/latest/index.html).
+Ecco alcuni esempi di comandi fio che permettono di confermare che il numero massimo di IOPS (4000) o la banda passante massima (64 MB/s) possono essere raggiunti per un servizio EFS da 1TB:
+
+**Random read - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=8k -size=1G -time_based -runtime=60 -name=test1 -directory=/share-nfs
+```
+**Random write - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=8k -size=1G -time_based -runtime=60 -name=test2 -directory=/share-nfs
+```
+**Random read - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=64k -size=1G -time_based -runtime=60 -name=test3 -directory=/share-nfs
+```
+**Random write - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=64k -size=1G -time_based -runtime=60 -name=test4 -directory=/share-nfs
+```
+**Sequential read - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=8k -size=1G -time_based -runtime=60 -name=test5 -directory=/share-nfs
+```
+**Sequential write - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=8k -size=1G -time_based -runtime=60 -name=test6 -directory=/share-nfs
+```
+**Sequential Read - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=64k -size=1G -time_based -runtime=60 -name=test7 -directory=/share-nfs
+```
+**Sequential write - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=64k -size=1G -time_based -runtime=60 -name=test8 -directory=/share-nfs
+```
+
+Per maggiori informazioni consulta la [documentazione FIO](https://fio.readthedocs.io/en/latest/index.html).
+
+**È possibile utilizzare altri strumenti open source, ad esempio:**
+
+- [nfsiostat](https://man7.org/linux/man-pages/man8/nfsiostat.8.html)
+- [NFStest](https://wiki.linux-nfs.org/wiki/index.php/NFStest)
+- [nfstrace](https://github.com/epam/nfstrace)
 
 ## Per saperne di più
 

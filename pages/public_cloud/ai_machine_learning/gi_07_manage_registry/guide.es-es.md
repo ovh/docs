@@ -1,7 +1,7 @@
 ---
 title: Registries - Use & manage your registries
 excerpt: Learn how to use and manage your public and private registries
-updated: 2025-05-05
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ The Public Cloud provides a default registry called `shared registry`, where use
 
 > [!warning]
 >
->This `shared registry` can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary. The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
+> This `shared registry` can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary. The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 >
 
 This is why it can be interesting to add and manage other registries. We can either do this by using the OVHcloud Control Panel (UI) or the `ovhai` CLI.
@@ -82,6 +82,13 @@ Using your own and private registries is the best way to use your images without
 - Private Docker registry
 - GitHub registry / packages
 
+> [!warning]  
+>
+> **Port restriction:** Only port **443** is supported for registry connections. If you attempt to add a registry URL with a non-**443** port (e.g., `8443`), the system will enforce port 443. This may lead to errors or connection timeouts if the registry is not configured to accept HTTPS on port 443.
+>  
+> For self-hosted registries using non-443 ports, consider configuring a **reverse proxy** (e.g., Nginx, HAProxy) to map traffic from **443** to your desired port (e.g., 8443).
+>
+
 We will see how to implement each of these registries and use them through AI Tools.
 
 > [!primary]
@@ -119,35 +126,36 @@ To add your registry, you can either use the OVHcloud Control Panel (UI) or the 
 
 During this step, you will be asked your user's credentials (user ID and password). You can use the default user (administrator) credentials, which were obtained at the first part of the `Create and configure a new private registry` step, or those of another user if you have created one.
 
-##### Using UI
-
-To add your private registry via UI, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
-
-![image](images/training_menu.png){.thumbnail}
-
-By default, you will be redirected to the `Dashboard`{.action} panel. To add a custom registry URL, click the `Docker Registries`{.action} button. Once there, click the `+ Add`{.action} button to add your private Docker registry.
-
-Here, you will need to provide the credentials of your registry along with its URL.
-
-![add registry form](images/add_private_harbor_registry.png){.thumbnail}
-
-When you have finished filling in the form, click `Add`{.action}.
-
-##### Using CLI
-
-To add your private Harbor registry via CLI, use:
-
-``` {.console}
-ovhai registry add <registry-url>
-```
-
-Once your registry is added, you should see it in your registries list. You can then use any images pushed on this registry for your AI Training jobs and AI Deploy apps.
+> [!tabs]
+> Using the Control Panel (UI)
+>>
+>> To add your private registry via UI, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
+>> 
+>> ![image](images/training_menu.png){.thumbnail}
+>> 
+>> By default, you will be redirected to the `Dashboard`{.action} panel. To add a custom registry URL, click the `Docker Registries`{.action} button. Once there, click the `+ Add`{.action} button to add your private Docker registry.
+>> 
+>> Here, you will need to provide the credentials of your registry along with its URL.
+>> 
+>> ![add registry form](images/add_private_harbor_registry.png){.thumbnail}
+>> 
+>> When you have finished filling in the form, click `Add`{.action}. 
+>>
+> Using ovhai CLI
+>>
+> To add your private Harbor registry via CLI, use:
+> 
+> ``` {.console}
+> ovhai registry add <registry-url>
+> ```
+> 
+> Once your registry is added, you should see it in your registries list. You can then use any image pushed on this registry for your AI Training jobs and AI Deploy apps.
 
 #### Push an image to your registry
 
 > [!warning]
 >
->Be careful for the following, we will use the displayed URL. This version does not contain the `https://` part, which is present in the URL given by the Public Cloud.
+> Be careful with the following, as we will use the displayed URL. This version does not contain the `https://` part, which is present in the URL given by the Public Cloud.
 >
 
 Log in to your private registry, using a user with write rights to your registry project, with the following command:
@@ -261,27 +269,28 @@ Once your image is pushed on your GitHub account, you will need to add your GitH
 
 You will be asked your GitHub credentials.
 
-##### Using UI
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
-
-![image](images/training_menu.png){.thumbnail}
-
-By default, you will be redirected to the `Dashboard`{.action} panel. To add a custom registry URL, click the `Docker Registries`{.action} button. Once there, click the `+ Add`{.action} button to add your private Docker registry.
-
-Here, you will need to provide your GitHub credentials along with the registry URL.
-
-![add registry form](images/add_github_registry.png){.thumbnail}
-
-When you have finished filling in the form, click `Add`{.action}.
-
-##### Using CLI
-
-```console
-ovhai registry add ghcr.io
-```
-
-Once your registry is added, you should see it in your registries list.
+> [!tabs]
+> Using the Control Panel (UI)
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, then to the `AI Dashboard` section which is located under `AI & Machine Learning`.
+>> 
+>> ![image](images/training_menu.png){.thumbnail}
+>> 
+>> By default, you will be redirected to the `Dashboard`{.action} panel. To add a custom registry URL, click the `Docker Registries`{.action} button. Once there, click the `+ Add`{.action} button to add your private Docker registry.
+>> 
+>> Here, you will need to provide your GitHub credentials along with the registry URL.
+>> 
+>> ![add registry form](images/add_github_registry.png){.thumbnail}
+>> 
+>> When you have finished filling in the form, click `Add`{.action}.
+>>
+> Using ovhai CLI
+>>
+>> ```console
+>> ovhai registry add ghcr.io
+>> ```
+>> 
+>> Once your registry is added, you should see it in your registries list.
 
 #### Use your GitHub registry images with OVHcloud AI Tools
 

@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Nueva gestión de certificados SSL"
 excerpt: "Descubra cómo gestionar un certificado SSL en un alojamiento web de OVHcloud desde nuestra nueva interfaz de gestión"
-updated: 2025-06-30
+updated: 2025-10-01
 ---
 
 <style>
@@ -73,13 +73,26 @@ Para que el sitio web esté accesible en HTTPS, es necesario disponer de un cert
 >
 > A largo plazo, todos los servicios de alojamiento web funcionarán con la nueva interfaz de gestión de certificados SSL.
 
-Para acceder a la gestión de los certificados SSL desde su alojamiento web, siga los pasos que se indican a continuación:
+Para acceder a la gestión de los certificados SSL desde su alojamiento web, Haga clic en las fichas siguientes para ver cada uno de los **3** pasos:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 
 Desde ahí podrá gestionar íntegramente sus certificados SSL para todos los dominios y subdominios asociados a su alojamiento web.
 
@@ -93,13 +106,34 @@ OVHcloud ofrece 4 soluciones para activar o instalar un certificado SSL en un al
 
 El certificado SSL gratuito Let's Encrypt (DV) puede incluir hasta **99** nombres de dominio y subdominios declarados en un alojamiento web.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
-6. A continuación, seleccione el dominio o subdominio para el que quiera activar el certificado SSL gratuito Let's Encrypt (DV), bajo la indicación `Activar el certificado SSL`.
-7. A continuación, haga clic en el botón `Activar SSL Let's Encrypt`{.action}.
+Haga clic en las fichas siguientes para ver cada uno de los **4** pasos:
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Cuando aparezca el contenido de la pestaña, seleccione el nombre de dominio o subdominio para el que quiera activar el certificado SSL gratuito Let's Encrypt (DV), bajo la indicación `Activar el certificado SSL`.
+>>
+>> ![SSL Let's Encrypt](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/enable-ssl-lets-encrypt.png){.thumbnail}
+>>
+>> Haga clic en el botón `Activar SSL Let's Encrypt`{.action}.
 
 > [!success]
 >
@@ -111,15 +145,40 @@ El certificado SSL gratuito Let's Encrypt (DV) puede incluir hasta **99** nombre
 
 El certificado SSL de pago Sectigo (DV) es válido para un único dominio y su subdominio en "www" (por ejemplo: `domain.tld` y `www.domain.tld`) o **únicamente** un subdominio (por ejemplo: `sub.domain.tld`).
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
-6. Haga clic en el botón `Contratar un certificado SSL Sectigo`{.action}.
-7. En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Confirmar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo DV.
+Haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
 
-Continúe con el pedido hasta el pago para validar la solicitud de creación del certificado SSL Sectigo DV para su dominio y/o subdominio en su alojamiento web.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Cuando aparezca la pestaña, haga clic en el botón `Contratar un certificado SSL Sectigo`{.action}.
+>>
+>> ![SSL Sectigo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Confirmar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo DV.
+>>
+>> ![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
+>>
+>> Continúe con el pedido hasta el pago para validar la solicitud de creación del certificado SSL Sectigo DV para su dominio y/o subdominio en su alojamiento web.
 
 > [!alert]
 >
@@ -144,23 +203,50 @@ El certificado SSL de pago Sectigo (EV) es válido para un único dominio y su s
 >
 > Para comprobar si puede contratar un certificado SSL Sectigo EV, acceda a [este enlace](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
-6. Haga clic en el botón `Contratar un certificado SSL Sectigo`{.action}.
-7. En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Confirmar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo EV.
+Haga clic en las fichas siguientes para ver cada uno de los **6** etapas:
 
-En el túnel del pedido, seleccione el **Certificado SSL Sectigo EV** y continúe con el pedido.
-
-Introduzca con exactitud la información solicitada por **Sectigo** en el paso 2 del pedido.
-
-![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
-
-Haga clic en `Continuar`{.action} una vez **todos los elementos** correctamente introducidos.
-
-Continúe con el pedido hasta que abone el importe pendiente para validar la solicitud de creación del certificado SSL.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Cuando aparezca la pestaña, haga clic en el botón `Contratar un certificado SSL Sectigo`{.action}.
+>>
+>> ![SSL Sectigo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Confirmar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo EV.
+>>
+>> ![SSL Sectigo domain selection](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/order-a-sectigo-ssl-certificate-select-domain.png){.thumbnail}
+>>
+> **Etapa 6**
+>>
+>> Seleccione el **Certificado SSL Sectigo EV** una vez llegado al túnel del pedido y continúe con el pedido.
+>>
+>> Introduzca con exactitud la información solicitada por **Sectigo** antes de que se le emita el certificado SSL Sectigo EV. 
+>>
+>> ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
+>>
+>> Haga clic en `Continuar`{.action} una vez **todos los elementos** correctamente introducidos.
+>>
+>> Continúe con el pedido hasta que abone el importe pendiente para validar la solicitud de creación del certificado SSL.
 
 > [!alert]
 >
@@ -176,13 +262,46 @@ Continúe con el pedido hasta que abone el importe pendiente para validar la sol
 
 Esta solución le permite instalar su propio certificado SSL para su nombre de dominio, si ninguna de las 3 soluciones anteriores se corresponde con sus necesidades y quiere utilizar un certificado SSL del que ya dispone.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
-6. Haga clic en el botón `Importación de su propio certificado SSL`{.action}.
-7. En el formulario que se abrirá, complete los 3 campos y haga clic en `Confirmar`{.action} para finalizar la importación del certificado SSL personalizado en su alojamiento web.
+Haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Cuando aparezca la pestaña, haga clic en el botón `Importación de su propio certificado SSL`{.action}.
+>>
+>> ![SSL personalizado](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la siguiente ventana se muestra un formulario con 3 campos para completar:
+>>
+>> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window.png){.thumbnail}
+>>
+>> - `Copiar el contenido de su certificado (solo RSA)`{.action}: introduzca el contenido del archivo **certificate.crt** emitido por su proveedor SSL, incluidos los términos `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----` (o sus equivalentes). El cifrado RSA corresponde al cifrado estándar de los certificados SSL.
+>> - `Copiar el contenido de su clave privada (no cifrada)`{.action}: introduzca el contenido del archivo **private.key** emitido por su proveedor SSL, incluidos los términos `-----BEGIN RSA PRIVATE KEY-----` y `-----END RSA PRIVATE KEY-----` (o sus equivalentes). La mención *no cifrada* significa que la clave privada no debe estar protegida con una contraseña o una contraseña. En caso contrario, la instalación del certificado no se realizará correctamente.
+>> - `Copiar el contenido de su cadena de certificados`{.action}: introduzca el contenido del archivo **ca_bundle.crt** emitido por su proveedor SSL, incluidos los términos `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----` (o sus equivalentes).
+>>
+>> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
+>>
+>> Una vez que haya completado los 3 formularios, haga clic en `Aceptar`{.action} para finalizar la importación del certificado SSL personalizado en su alojamiento web.
 
 > [!success]
 >
@@ -192,21 +311,44 @@ Esta solución le permite instalar su propio certificado SSL para su nombre de d
 
 ### Desactivar un certificado SSL en un alojamiento web <a name="delete-ssl"></a>
 
- [!warning]
+> [!warning]
 >
 > **Antes de continuar**, asegúrese de que la eliminación del certificado SSL no desactivará el acceso a sus sitios web. En ese caso, los usuarios encontrarán un error de seguridad al intentar acceder a su sitio web en HTTPS.
 
 Esta comprobación es inherente a la configuración de su sitio web. Si necesita ayuda, le recomendamos que contacte con un proveedor de servicios especializado. No podremos asistirle.
 
-Para eliminar el certificado SSL instalado en el alojamiento web, lleve a cabo los siguientes pasos:
+Para eliminar el certificado SSL instalado en el alojamiento web, haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
-6. En la tabla que aparece en la parte inferior de la nueva página, haga clic en el botón `⁝`{.action}, situado a la derecha de la línea correspondiente al dominio en cuestión, y seleccione `Desactivar SSL`{.action}.
-7. En la nueva ventana, confirme la desactivación haciendo clic en `Confirmar`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece en la parte inferior de la nueva página, haga clic en el botón `⁝`{.action}, situado a la derecha de la línea correspondiente al dominio en cuestión, y seleccione `Desactivar SSL`{.action}.
+>>
+>> ![Desactivar SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/disable-ssl.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la nueva ventana, confirme la desactivación haciendo clic en `Confirmar`{.action}.
+>>
+>> ![Eliminar SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/ssl-deletion.png){.thumbnail}
 
 La desactivación del certificado SSL será efectiva en unas horas como máximo.
 

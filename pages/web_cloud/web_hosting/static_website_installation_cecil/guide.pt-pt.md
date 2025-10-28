@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalação e configuração de Cecil, um gerador de sites estáticos (SSG) em PHP"
 excerpt: "Descubra como Cecil lhe permite criar o seu site estático com a ajuda de um motor de template moderno (Jamstack)"
-updated: 2023-12-08
+updated: 2025-10-27
 ---
 
 ## Objetivo
@@ -17,14 +17,14 @@ Um website composto essencialmente por páginas web estáticas garante um melhor
 - Ter um [plano de alojamento web da OVHcloud](/links/web/hosting) que inclui um acesso SSH. Este acesso permite instalar em linha de comandos uma ou várias soluções alternativas às que são propostas por predefinição nas nossas ofertas de alojamento web.
 - estar familiarizado com a introdução em linha de comandos.
 - Ter capacidade para transferir ficheiros em FTP com um cliente como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-- Parametrizar a sua zona DNS para apontar o seu nome de domínio (ou subdomínio) para o seu alojamento web partilhado. Isto é particularmente útil se deseja alojar vários sites em [multi-sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web partilhado.
+- Configurar a sua zona DNS para apontar o seu nome de domínio (ou subdomínio) para o seu alojamento web partilhado. Isto revela-se particularmente útil se pretender alojar vários [sítios web](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web partilhado.
 - Instalar previamente [Composer](https://getcomposer.org/) com o ficheiro `composer.phar` na raiz do seu alojamento web partilhado ou na pasta alvo do seu domínio.
 
 ## Instruções
 
-Os [alojamentos web partilhados](/links/web/hosting) permitem declarar domínios ou subdomínios em multi-sites. Um domínio ou um subdomínio é necessário para implementar o seu website realizado com **Cecil**.
+Um [alojamento web partilhado](/links/web/hosting) permite declarar domínios ou subdomínios nos sítios web que contém. Um domínio ou subdomínio é necessário para implementar o seu sítio web criado com **Cecil**.
 
-Para o ajudar a declarar um domínio ou um subdomínio em multi-site no seu alojamento, consulte a nossa página "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+Para o ajudar a declarar um domínio ou subdomínio num dos sítios web do seu alojamento, consulte a nossa página « [Partilhar o seu alojamento entre vários sítios](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 ### Criar o diretório no qual serão os seus ficheiros
 
@@ -87,7 +87,7 @@ Agora pode ver o resultado ao aceder ao seu domínio:
 
 Para visualizar o resultado do seu website no seu browser, modifique o apontamento do seu nome de domínio ou de subdomínio no diretório `_site` criado anteriormente aquando da instalação de **Cecil**.
 
-Se o seu domínio ou subdomínio estiver alojado na OVHcloud, consulte os nossos guias relativos à [configuração DNS](/pages/web_cloud/domains/dns_zone_edit) e à implementação de um [multisite no seu alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Se o seu nome de domínio ou subdomínio estiver alojado na OVHcloud, consulte os nossos guias relativos à [configuração DNS](/pages/web_cloud/domains/dns_zone_edit) e à implementação de um [sítio web no seu alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ### Configurar o seu site
 

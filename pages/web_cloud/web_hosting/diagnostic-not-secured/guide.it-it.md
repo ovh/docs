@@ -1,7 +1,7 @@
 ---
 title: "Cosa fare in caso di errore « La connessione non è privata »?"
 excerpt: "Reagire in caso di messaggio di errore relativo alla sicurezza del tuo sito"
-updated: 2025-04-28
+updated: 2025-10-09
 ---
 
 ## Obiettivo <a name="objective"></a>
@@ -36,17 +36,34 @@ Per risolvere questa anomalia, è necessario:
 1. determinare l'hosting al quale è associato il tuo dominio, per intervenire sul server giusto;
 2. creare, attivare o rinnovare un [certificato SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) per il tuo dominio sull'hosting in questione.
 
-### Step 1: verifica l'hosting associato al tuo dominio
+### 1: Verifica l'hosting associato al tuo dominio
 
 #### Verifica l'indirizzo IP dell'hosting
 
 I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](/links/web/hosting). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](/links/web/domains).
 
-Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](/links/web/hosting), clicca su `Web Cloud`{.action} `Hosting`{.action} e seleziona l'hosting interessato.
+Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](/links/web/hosting), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IPV6 del tuo hosting.
-
-![hosting-general-informazioni](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nel riquadro **Informazioni generali**, troverete le informazioni **IPv4** e **IPv6**.
+>>
+>> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> Annotate l'indirizzo IPv4 e/o IPv6, poi prosegui nella lettura della guida.
 
 #### Verifica l'indirizzo IP nella zona DNS
 
@@ -69,7 +86,7 @@ Annota la destinazione d'ingresso di tipo `A` per il tuo dominio:
 |Nella scheda `Zona DNS`{.action}, un messaggio indica che il tuo dominio utilizza altri server [DNS](/pages/web_cloud/domains/dns_zone_edit) e questi non compaiono nella forma « ns **?** .ovh.net » o « dns **?** .net » :<br><br>![warning_external_DNS_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Contatta il tuo webmaster o i [partner OVHcloud](/links/partner) a questo proposito.|
 |Il tuo dominio non compare nella sezione `Domini`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager).<br><br>O la scheda `Zona DNS`{.action} del tuo dominio viene mostrata come segue:<br><br>![zonedns_ndd_pas_pas_sur_lec2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Questo significa che il tuo dominio non è gestito dal tuo [Spazio Cliente OVHcloud](/links/manager).<br><br>Verifica che non sia gestito da uno degli altri [account OVHcloud](/links/manager), se ne hai creato diversi.<br><br>Potrai anche determinare il suo Registrar e i server DNS a cui è associato tramite il nostro tool [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Se necessario, contatta il tuo webmaster o i [partner OVHcloud](/links/partner) a questo proposito.|
 
-### Step 2: verifica il certificato SSL del tuo hosting <a name="step2"></a>
+### 2: Verifica il certificato SSL del tuo hosting <a name="step2"></a>
 
 Nella scheda `Informazioni generali`{.action} dell'hosting OVHcloud, verifica la sezione `Certificato SSL`:
 

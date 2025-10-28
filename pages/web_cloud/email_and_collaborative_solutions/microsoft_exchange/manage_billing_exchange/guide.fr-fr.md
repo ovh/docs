@@ -1,7 +1,7 @@
 ---
 title: 'Gérer la facturation de vos comptes Exchange'
 excerpt: 'Découvrez comment gérer la facturation de votre service Exchange'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objectif
@@ -81,6 +81,20 @@ Dirigez-vous dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Act
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur `...`{.action} à droite du compte concerné puis cliquez sur `Supprimer`{.action}. Le compte sera immédiatement retiré de la plateforme, il n'y a pas de résiliation à effectuer.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
+
+### Résilier la plateforme
+
+Après avoir supprimé les comptes e-mail, il est nécessaire de supprimer le ou les noms de domaine associés à votre plateforme Exchange avant de la résilier. Pour cela, rendez-vous sur l'onglet `Domaines associés`{.action}. Cliquez sur le bouton `...`{.action} sur la ligne du nom de domaine à supprimer, puis cliquez sur `Supprimer ce domaine`{.action}.
+
+![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
+
+Depuis la fenêtre de gestion de votre plateforme Exchange, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Résilier`{.action}.
+
+![billing_exchange](images/billing-exchange-08.png){.thumbnail}
+
+> [!primary]
+>
+> Cette action entraine la suspension puis la suppression de l'ensemble des comptes de la plateforme Exchange à leur date d'expiration.
 
 ## Aller plus loin <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Zarządzaj hostingiem za pomocą Visual Studio Code przez SFTP"
 excerpt: "Zarządzanie stroną WWW na hostingu za pomocą kodu Visual Studio Code z rozszerzeniem SFTP"
-updated: 2023-11-06
+updated: 2025-10-21
 ---
 
 ## Wprowadzenie
@@ -83,6 +83,8 @@ Plik ten znajduje się w folderze .vscode, który jest umieszczony w katalogu g�
 ### Konfiguracja pliku sftp.json
 
 Zanim rozpoczniesz pracę nad Twoim projektem, przekaż go do utworzonego wcześniej lokalnego folderu. Najpierw jednak upewnij się, że plik "sftp.json" jest poprawnie skonfigurowany. Przydatne informacje można znaleźć w [Panelu klienta OVHcloud](/links/manager). W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action}. Wybierz odpowiedni hosting, następnie kliknij zakładkę `FTP - SSH`{.action}.
+
+![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
 W pliku "sftp.json" wprowadź wartości dla następujących wpisów:
 

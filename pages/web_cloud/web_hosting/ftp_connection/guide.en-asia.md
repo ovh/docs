@@ -1,7 +1,7 @@
 ---
 title: "Logging in to your web hosting plan’s FTP storage space"
 excerpt: "Find out how to log in to your OVHcloud web hosting plan’s FTP storage space"
-updated: 2025-06-10
+updated: 2025-06-15
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ OVHcloud web hosting plans provide you with access to an FTP storage space, whic
 
 ## Instructions
 
-### Step 1: Retrieve the information required to log in
+### 1 - Retrieve the information required to log in
 
 To connect to your FTP storage space, you will need the following:
 
@@ -35,25 +35,44 @@ To connect to your FTP storage space, you will need the following:
 >
 > These elements were sent to you in the email informing you that your web hosting plan has been set up after completing your order. You can access them via your [OVHcloud Control Panel](/links/manager).
 >
-> **If you already have these items**, proceed directly to step 2 "[Access your storage space](#ftp_storage_access)" in this guide.
->
+> **If you already have these items**, proceed directly to part 2 "[Access your storage space](#ftp_storage_access)" in this guide.
 
-If you do not have this information at hand, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. Click on the `Hosting plans`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, then go to the `FTP - SSH`{.action} tab. 
+If you do not have this information at hand, click on the tabs below to view each of the **4** steps.
 
-The information associated with your storage space will then appear, along with a table listing the FTP and SSH users created on your web hosting plan.
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `FTP - SSH`{.action} tab.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> The information associated with your storage space will then appear, along with a table listing the FTP and SSH users created on your web hosting plan.
+>>
+>> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > If you want to create a new FTP/SSH user in this tab, click the `Create User`{.action} button on the right.
+>> > Define the name extension for this new `User`{.action} and the `Root Folder`{.action} that this user can access and click `Next`{.action}.
+>> > Choose a password for this new user account, click `Next`{.action} and then click `Confirm`{.action}.
+>>
+>> All the elements required to log in to the FTP storage space are present on this page.
 
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!primary]
->
-> If you want to create a new FTP/SSH user in this tab, click the `Create User`{.action} button on the right.
-> Define the name extension for this new `User`{.action} and the `Root Folder`{.action} that this user can access and click `Next`{.action}.
-> Choose a password for this new user account, click `Next`{.action} and then click `Confirm`{.action}.
->
-
-All the elements required to log in to the FTP storage space are present on this page.
-
-Below is a description of the essential information displayed on the `FTP-SSH` page:
+Below is a description of the essential information displayed on the `FTP - SSH` page:
 
 - **FTP and SFTP server**: FTP server address of your web hosting plan to access your FTP storage space. You can do this by using, for example, client software capable of the (S)FTP protocol.
 
@@ -76,7 +95,7 @@ If you have forgotten your FTP or SSH user password, please refer to our guide o
 
 At this stage, you have everything you need to log in to your FTP storage space.
 
-### Step 2: Access your FTP storage space <a name="ftp_storage_access"></a>
+### 2 - Access your FTP storage space <a name="ftp_storage_access"></a>
 
 There are several ways you can access your FTP storage space. We recommend reading this guide, and focusing on the method you wish to follow.
 
@@ -130,7 +149,7 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 In the command above, replace:
 
-- The value `sshlogin` by your main FTP login, as described in [step 2.1](#ftpsoftware) (or by an FTP login with SSH access).
+- The value `sshlogin` by your main FTP login, as described in [part 2.1](#ftpsoftware) (or by an FTP login with SSH access).
 - `XXX` with the number of the cluster where your Web Hosting plan is located.
 
 Once the command has been sent, you will be prompted to enter the SSH user password.

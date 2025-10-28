@@ -17,6 +17,10 @@ If you have reached the maximum capacity on your additional disk, you can add mo
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access via SSH or RDP to your VPS
 
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## Instructions
 
 The following steps presume that you have configured an additional disk according to [our guide](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk).

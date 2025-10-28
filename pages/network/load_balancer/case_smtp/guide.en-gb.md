@@ -1,71 +1,67 @@
 ---
-title: 'Configuring SMTP on a Load Balancer service'
-excerpt: 'Find out how to use SMTP with the OVH Load Balancer'
-updated: 2018-12-28
+title: 'How to configure SMTP on a Load Balancer service'
+excerpt: 'Find out how to use SMTP with the OVHcloud Load Balancer'
+updated: 2025-10-24
 ---
 
 ## Objective
 
-In this guide, we will configure a basic TCP load balancing service, for one or more SMTP servers. A TCP front-end will listen to TCP traffic on port 25. It is configured to direct traffic to a TCP farm with one or more TCP servers, depending on how you choose to configure it.
+**This guide outlines how to configure the OVHcloud Load Balancer to distribute traffic across multiple SMTP servers.**
 
-**This guide is designed to help you configure an OVH Load Balancer service in order to balance load across several servers that respond in SMTP.**
+## Requirements
 
-> [!warning]
->
-> Questions on what an SMTP service is and how it works will not be covered here. This guide is aimed at readers who have a general understanding of SMTP, or practical experience with it.
-> 
+- An [OVHcloud Load balancer](/links/network/load-balancer) service in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A Postfix-type SMTP service installed and configured on your servers.
 
-> [!warning]
->
-> We will assume that you already have a Postfix SMTP service set up and configured your servers.
-> 
+## Instructions
 
 > [!warning]
 >
-> This guide will take you through the steps required. Depending on the way you have designed your architecture, some configurations may vary.
+> This guide assumes a working knowledge of SMTP protocol and service operation.
 > 
 
-As a reminder, each protocol (HTTP, TCP and UDP) in the OVH Load Balancer service has its own associated front-ends, farms and servers.
+As a reminder, each protocol (HTTP, TCP and UDP) in the OVHcloud Load Balancer service has its own associated front-ends, farms and servers.
 
 > [!warning]
 >
-> The order in which elements are created is important. In particular, the server farms must be configured before we can attach servers to them.
+> The order in which elements are created is important. In particular, the server farms must be configured before servers can be attached to them.
 > 
 
-In the Sunrise Control Panel, you will see the features detailed below:
+In the Control Panel, you will see the features detailed below:
 
-![OVH Load Balancer service](images/iplb_service.png){.thumbnail}
+![OVHcloud Load Balancer service](images/iplb_service.png){.thumbnail}
 
-Via the OVH API, in the section:
+Via the OVHcloud API, use the following call:
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
-For more information on the API’s features, you can refer to [the following guide in French](/pages/network/load_balancer/use_api_reference).
+For more information on the API features, you can refer to [the following guide](/pages/network/load_balancer/use_api_reference).
 
-## Add a server farm.
+### Add a server farm
 
-We will add a farm of TCP servers to our service, which is the part that balances traffic on the servers.
+A TCP server farm must be added to the service; this component manages traffic balancing across the servers.
 
-### Via the Sunrise Control Panel.
+#### Via the OVHcloud Control Panel
 
 In the `Farms`{.action} tab for servers, click on the `+TCP/TLS`{.action} button.
 
-Fill in the fields. The mandatory fields for a basic configuration are *Port* and *Zone*. In our case, for SMTP, port 25 is used. If no ports are specified, your OVH Load Balancer will automatically use the same port as the corresponding front-end.
+Fill in the fields. The mandatory fields for a basic configuration are *Port* and *Zone*. For SMTP, port 25 is used. If no ports are specified, your OVHcloud Load Balancer will automatically use the same port as the corresponding front-end.
 
-As an option, you can add an SMTP probe on your farm.
+Optionally, you can add an SMTP probe on your farm.
 
 ![Add a server farm via the Control Panel](images/add_farm.png){.thumbnail}
 
-Click `Add`{.action} once you have filled in the fields.
+Click on `Add`{.action} once you have filled in the fields.
 
 Your server farm should appear in the list, in the `Farms`{.action} tab.
 
 ![Details of the server farm created](images/resume_farm.png){.thumbnail}
 
-### Via the API
+#### Via the OVHcloud API
 
 - List of TCP server farms:
 
@@ -74,7 +70,7 @@ Your server farm should appear in the list, in the `Farms`{.action} tab.
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
-- Details of a specific TCP server:
+- Details of a specific TCP server farm:
 
 > [!api]
 >
@@ -102,30 +98,30 @@ Your server farm should appear in the list, in the `Farms`{.action} tab.
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
-## Add a server.
+### Add a server
 
-We will now add a server to our server farm.
+A server must now be added to the server farm.
 
-### Via the Sunrise Control Panel.
+#### Via the OVHcloud Control Panel
 
-In the `Farms`{.action} tab, select the farm you want to add a server to by clicking on the corresponding line. The list of servers already configured in the farm will appear beneath the list of farms, along with the `Add a server`{.action} button. Click on this button to add a new server.
+In the `Farms`{.action} tab, select the farm you want to add a server to by clicking on the corresponding line. The list of servers already configured in the farm will appear beneath the list of farms, along with the `Add a server`{.action} button. Click this button to add a new server.
 
-Only the *IPv4 address*,  *Status* and *ProxyProtocol version* fields are mandatory. If a server does not use the same port as the one defined earlier in the farm, you may overload it by configuring a server. However, to keep the configuration as standard as possible and easy to maintain, we recommend only using this parameter in advanced cases.
+The mandatory fields are the *IPv4 address*, *Status*, and *ProxyProtocol version*. If a server port is configured, it will override the port defined in the farm. To keep the configuration as standard as possible and easy to maintain, we recommend only using this parameter in advanced cases.
 
 > [!warning]
 >
-> It is important to configure ProxyProtocol in version v1, so that you can get the real source IP on your SMTP service. Postfix is compatible with this protocol.
+> It is important to configure ProxyProtocol in version v1 so that you can retrieve the real source IP on your SMTP service. Postfix is compatible with this protocol.
 > 
 
 ![Add a server to a farm.](images/add_server.png){.thumbnail}
 
-Click `Add`{.action} once you have filled in the fields.
+Click on `Add`{.action} once you have filled in the fields.
 
 Your server should appear in the server list, in the `Farms`{.action} tab, just below the list of farms.
 
 ![Details of the server created.](images/resume_server.png){.thumbnail}
 
-### Via the API
+#### Via the OVHcloud API
 
 - List of servers in the farm:
 
@@ -162,29 +158,29 @@ Your server should appear in the server list, in the `Farms`{.action} tab, just 
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
-## Add a front-end
+### Add a front-end
 
-We will now add a `front-end`{.action} to our service, and connect it to our server farm. The front-end is the part of your OVH Load Balancer that exposes your service on the internet.
+A `front-end`{.action} must now be added to the service and connected to the server farm. The front-end is the component of your OVHcloud Load Balancer that exposes your service to the internet.
 
-### Via the Sunrise Control Panel.
+#### Via the OVHcloud Control Panel
 
 Go to the `+ Front-ends`{.action} tab, and click `+TCP/TLS`{.action}.
 
-Fill in the fields. The only mandatory fields for a basic configuration are *Port* (25 for a standard SMTP service), *Zone* and *Probe*, if you configured a probe on your farm. If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a range of ports, in the format "start_port-end_port".
+Fill in the fields. The mandatory fields for a basic configuration are *Port* (25 for a standard SMTP service), *Zone*, *Default farm* and *Probe* (if a probe was configured on your farm). If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a port range, in the format "<start\_port>-<end\_port>".
 
-If you have routed Additional IPs to your OVH Load Balancer service, you can also attach a front-end to one or more specific Additional IPs.
+If you have routed Additional IPs to your OVHcloud Load Balancer service, you can also attach a front-end to one or more specific Additional IPs.
 
-Please remember to specify the farm you created earlier as a “default farm”.
+Ensure the farm you created earlier is specified as the “default farm”.
 
 ![Add a front-end](images/add_frontend.png){.thumbnail}
 
-Click `Add`{.action} once you have filled in the fields.
+Click `Add`{.action} once the fields are filled.
 
 Your front-end must appear in the list, in the `Front-ends`{.action} tab.
 
 ![Details of the front-end created](images/resume_frontend.png){.thumbnail}
 
-### Via the API
+#### Via the OVHcloud API
 
 - List of TCP front-ends:
 
@@ -221,17 +217,17 @@ Your front-end must appear in the list, in the `Front-ends`{.action} tab.
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
-## Apply the modifications
+### Apply the modifications
 
-The modifications made to your OVH Load Balancer must be *explicitly applied* in each of the zones configured for your service. Only at this point will they be visible to your website visitors. This way, you can make complex configuration changes several times, and only apply them once the configuration is ready.
+Modifications made to your OVHcloud Load Balancer must be **explicitly applied** in each of the zones configured for your service. They will only become visible to your users at this point. This process allows for complex configuration changes to be prepared and applied only when fully ready.
 
-If you have several zones, you must apply the same configuration for each of them.
+If you have several zones, the same configuration must be applied to each.
 
-### Via the Sunrise Control Panel.
+#### Via the OVHcloud Control Panel
 
-Go the homepage for the OVH Load Balancer, and click `Apply:Zone`{.action} for each of the zones concerned.
+Go to the homepage for the OVHcloud Load Balancer, and click `Apply:Zone`{.action} for each of the zones concerned.
 
-### Via the API.
+#### Via the OVHcloud API
 
 - Refresh a zone:
 
@@ -240,21 +236,22 @@ Go the homepage for the OVH Load Balancer, and click `Apply:Zone`{.action} for e
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
-## Postfix configuration.
+### Postfix configuration
 
 To make Postfix compatible with HAProxy *ProxyProtocol*, an option is required in the postfix main.cf configuration file:
 
-**smtp_upstream_proxy_protocol = haproxy**
+```bash
+smtp_upstream_proxy_protocol = haproxy
+```
 
-You then need to restart your Postfix daemon.
+The Postfix daemon must then be restarted.
 
-## Confirmation.
+### Confirmation
 
-After you have completed all of these steps, you should now have a functional Load Balancer service for your SMTP servers. You can now check the service status by requesting your IP Load Balancer as an SMTP server.
+Upon completing these steps, you will have a functional Load Balancer service for your SMTP servers. The service status can now be checked by requesting your IP Load Balancer as an SMTP server.
 
 ![Connection to SMTP via telnet](images/resume_validate.png){.thumbnail}
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
-
+Join our [community of users](/links/community).

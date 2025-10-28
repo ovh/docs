@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Choisir une classe de stockage adaptée à vos besoins
-updated: 2025-07-03
+updated: 2025-09-18
 ---
 
 Le stockage objet « Object Storage » est une famille d’offres de stockage proposant des espaces de stockage performants, scalables et sécurisés.
@@ -36,7 +36,7 @@ Cette offre est adaptée aux cas d'usage suivants : stockage long durée, sauveg
 | **High performance** | AI & Analytics, Datalake, High power Computing Multimedia / Content Platform | millisecondes | 1-AZ | régions 1-AZ : 99,9% | Aucune | Non | À l'objet, prise en charge de la gestion du cycle de vie |
 | **Standard** | media / content storage & delivery, datalake, website, backup, logs et métriques d'applications | millisecondes | 1-AZ et 3-AZ | régions 1-AZ : 99,9% - régions 3-AZ : 99,99% | Aucune | Non | À l'objet, prise en charge de la gestion du cycle de vie |
 | **Infrequent Access** | stockage longue durée, sauvegardes, reprise après sinistre | millisecondes | 1-AZ et 3-AZ | régions 1-AZ : 99,9% - régions 3-AZ : 99,99% | 30 jours | Oui | À l'objet, prise en charge de la gestion du cycle de vie |
-| **Cold Archive** *[en savoir plus](/pages/storage_and_backup/object_storage/cold_archive_overview)* | Stockage à très long terme, sauvegardes, reprise après sinistre | heures | 4 centres de données dédiés | 99,9% | 90 jours | Oui | Au bucket, pas de prise en charge de la gestion du cycle de vie pour le moment |
+| **Cold Archive** *[en savoir plus](/pages/storage_and_backup/object_storage/cold_archive_overview)* | Stockage à très long terme, sauvegardes, reprise après sinistre | heures | 4 centres de données dédiés | 99,9% | 180 jours | Oui | Au bucket, pas de prise en charge de la gestion du cycle de vie pour le moment |
 
 Retrouvez plus de détails concernant les régions OVHcloud [ici](/pages/storage_and_backup/object_storage/s3_location).
 

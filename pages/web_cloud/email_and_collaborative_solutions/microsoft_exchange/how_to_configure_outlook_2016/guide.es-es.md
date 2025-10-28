@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure su cuenta de correo electrónico en Outlook para Windows'
 excerpt: 'Cómo configurar una cuenta Exchange en Outlook para Windows'
-updated: 2024-10-30
+updated: 2025-10-23
 ---
 
 ## Objetivo
@@ -21,7 +21,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 ## Requisitos
 
 - Tener un servicio [Exchange](/links/web/emails).
-- Tener Microsoft Outlook o posterior instalado en su ordenador.
+- Tener la [versión clásica de Outlook](https://support.microsoft.com/es-es/office/instalar-o-reinstalar-la-versi%C3%B3n-cl%C3%A1sica-de-outlook-en-un-equipo-pc-con-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) en Windows.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 - El registro SRV de OVHcloud debe estar correctamente configurado en la zona DNS del dominio. No dude en consultar nuestra guía [Añadir un dominio a un servicio Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
@@ -30,6 +30,16 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 > Si utiliza Outlook y posterior para Mac, consulte nuestra guía [Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
 
 ## Procedimiento
+
+> [!warning]
+>
+> Antes de empezar a configurar, es importante tener en cuenta que la aplicación Outlook incluida gratuitamente con Windows 11 es [incompatible](https://learn.microsoft.com/es-es/microsoft-365-apps/outlook/get-started/supported-account-types) con los productos Exchange OVHcloud, llamados *on-premises*. Deberá utilizar la **versión clásica de Outlook**.
+>
+> Para instalar la versión clásica de Outlook en el equipo Windows, descárguela de la página de Microsoft "[Instalar o reinstalar la versión clásica de Outlook en un equipo PC con Windows](https://support.microsoft.com/es-es/office/instalar-o-reinstalar-la-versi%C3%B3n-cl%C3%A1sica-de-outlook-en-un-equipo-pc-con-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" e instálela.
+>
+> Una vez finalizada la instalación, para distinguir entre las dos versiones una vez instaladas, escriba "Outlook" en la barra de búsqueda de Windows. Podrá ver la diferencia como se muestra a continuación.
+>
+>![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
 ### Añadir la cuenta
 

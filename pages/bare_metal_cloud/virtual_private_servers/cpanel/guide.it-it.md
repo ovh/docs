@@ -1,7 +1,7 @@
 ---
 title: "Deploy di cPanel su un VPS"
 excerpt: "Come installare un VPS con l'applicazione cPanel preinstallata"
-updated: 2025-07-14
+updated: 2025-09-11
 ---
 
 ## Obiettivo
@@ -22,6 +22,10 @@ Grazie a un’interfaccia grafica che permette di automatizzare i parametri, l�
 
 - Disporre di una soluzione [VPS recente](/links/bare-metal/vps) con un [OS compatibile con cPanel](/links/bare-metal/vps-os).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Procedura
 

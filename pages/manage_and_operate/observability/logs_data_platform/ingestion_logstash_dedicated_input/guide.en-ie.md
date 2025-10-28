@@ -158,7 +158,7 @@ If we take the configuration example above and if we enable the SSL encryption, 
      ssl_certificate => "/etc/ssl/private/server.crt"
      ssl_key => "/etc/ssl/private/server.key"
      ssl_extra_chain_certs => ["/etc/ssl/private/ca.crt"]
- } 
+ }
 ```
 
 ![logstash_creation](images/input_section.png){.thumbnail}

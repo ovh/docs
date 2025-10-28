@@ -126,11 +126,6 @@ Now you can start the VM and proceed with the [configuration steps](#configurati
 
 > [!warning]
 >
-> The ESXi hypervisor is no longer supported by OVHcloud. More information can be found on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
-> 
-
-> [!warning]
->
 > The following instructions apply to a previously created VM with an OS already installed. If you have not created a VM, please review the guide [Create a Virtual Machine in the VMware Host Client](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html) on the VMware page.
 >
 

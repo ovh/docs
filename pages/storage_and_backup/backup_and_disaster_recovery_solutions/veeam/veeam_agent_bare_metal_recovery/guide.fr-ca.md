@@ -1,7 +1,7 @@
 ---
 title: "Restaurer un serveur Bare Metal avec Veeam Backup Agent"
 excerpt: "Découvrez comment restaurer l'intégralité de votre système - en ligne ou sur site - grâce à une image ISO de récupération et des sauvegardes Veeam hébergées chez OVHcloud"
-updated: 2025-04-17
+updated: 2025-09-30
 ---
 
 ## Objectif
@@ -17,10 +17,10 @@ Ce guide s’adresse à tous les clients OVHcloud utilisant la solution de sauve
 
 Il est adapté si vous utilisez :
 
-- Un [VPS](/links/bare-metal/vps) sous Windows.
-- Une instance [Public Cloud Compute](/links/public-cloud/compute) sous Windows.
+- Un [VPS](/links/bare-metal/vps) sous Windows ou Linux.
+- Une instance [Public Cloud Compute](/links/public-cloud/compute) sous Windows ou Linux.
 - Un serveur [Bare Metal](/links/bare-metal/bare-metal) avec Veeam Agent.
-- Une machine virtuelle [Hosted Private Cloud (PCC)](/links/hosted-private-cloud/hosted-private-cloud) sous Windows.
+- Une machine virtuelle [Hosted Private Cloud (PCC)](/links/hosted-private-cloud/hosted-private-cloud) sous Windows ou Linux.
 - Une machine physique ou virtuelle sur site, sous Windows ou Linux.
 
 > [!warning]

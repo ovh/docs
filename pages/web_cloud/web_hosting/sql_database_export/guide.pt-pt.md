@@ -1,7 +1,7 @@
 ---
 title: "Recuperar a cópia de segurança da base de dados de um alojamento web"
 excerpt: "Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVHcloud"
-updated: 2023-08-22
+updated: 2025-10-08
 ---
 
 ## Objetivo
@@ -46,9 +46,34 @@ Consulte este manual de acordo com o método de backup pretendido.
 
 ### Recuperar um backup através da ferramenta da OVHcloud
 
-Para aceder à ferramenta de backup da OVHcloud, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Bases de dados`{.action}.
+Para aceder à ferramenta de backup da OVHcloud, clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 
-Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Poderá optar por realizar um novo backup ou recuperar um já existente, através de duas operações distintas.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Bases de dados`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na nova página, é apresentada uma tabela com as bases de dados criadas.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+>>
+>> Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Poderá optar por realizar um novo backup ou recuperar um já existente, através de duas operações distintas.
 
 #### Etapa 1: efetuar um novo backup da base de dados
 

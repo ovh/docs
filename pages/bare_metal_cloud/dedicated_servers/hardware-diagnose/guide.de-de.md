@@ -1,12 +1,8 @@
 ---
 title: "Hardwarefehler auf einem dedizierten Server im Rescue-Modus diagnostizieren"
 excerpt: "Erfahren Sie hier, wie Sie mithilfe von OVHcloud Rescue-Modus und Diagnose-Tools Hardwarefehler auf Ihrem Dedicated Server identifizieren"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -79,13 +75,7 @@ Führen Sie den folgenden Befehl aus, um das Dateisystem zu überprüfen:
 fsck -fy
 ```
 
-Führen Sie den folgenden Befehl aus, um einen Wiedergabetest durchzuführen. Ersetzen Sie `sd(x)` durch eigene Werte.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
-```
-
-Führen Sie den folgenden Befehl aus, um einen Schreibtest durchzuführen. Ersetzen Sie `sd(x)` durch eigene Werte
+Führen Sie den folgenden Befehl aus, um einen *Read*-Test durchzuführen. Ersetzen Sie `sd(x)` durch eigene Werte.
 
 ```bash
 hdparm -t /dev/sd(x)

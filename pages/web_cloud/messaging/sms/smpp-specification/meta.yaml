@@ -1,4 +1,5 @@
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +7,6 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
+- pt-pt
 id: 9cf90830-310e-4e81-936f-8effd188dd56
 full_slug: sms-smpp-specifications

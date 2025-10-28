@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer le reverse DNS de votre serveur (enregistrement PTR)"
 excerpt: Découvrez comment mettre en place la résolution reverse DNS de votre adresse IP depuis votre espace client
-updated: 2025-04-28
+updated: 2025-09-18
 ---
 
 ## Objectif
@@ -44,7 +44,7 @@ Vous pouvez également éditer le reverse directement via l'icône en forme de p
 >  - le *reverse* ne peut pas contenir de caractères majuscules
 >  - le *reverse* doit se terminer par un `.`
 >
-> Exemple : « mydomain.ca » dans l'enregistrement *reverse* serait **mydomain.ca.**
+> Exemple : « domain.tld » dans l'enregistrement *reverse* serait `domain.tld.`.
 >
 
 > [!primary]

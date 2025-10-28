@@ -28,16 +28,16 @@ Las cuentas Zimbra Pro pueden configurarse en Windows utilizando el protocolo Ac
 ## Requisitos
 
 - Disponer de una dirección de correo electrónico [Zimbra Pro](/links/web/emails-zimbra).
-- Tener la aplicación [Outlook clásico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-clásico-en-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) en Windows.
+- Tener la [versión clásica de Outlook](https://support.microsoft.com/es-es/office/instalar-o-reinstalar-la-versi%C3%B3n-cl%C3%A1sica-de-outlook-en-un-equipo-pc-con-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) en Windows.
 - Disponer del nombre de usuario y la contraseña de la dirección de correo electrónico que quiera configurar.
 
 ## Procedimiento
 
 > [!warning]
 >
-> Antes de empezar a configurar, es importante tener en cuenta que la aplicación Outlook incluida gratuitamente con Windows 11 es incompatible con el protocolo ActiveSync, necesario para configurar una cuenta Zimbra Pro. Deberá utilizar la versión **Outlook clásica** para disfrutar de la compatibilidad con el protocolo ActiveSync.
+> Antes de empezar a configurar, es importante tener en cuenta que la aplicación Outlook incluida gratuitamente con Windows 11 es incompatible con el protocolo ActiveSync, necesario para configurar una cuenta Zimbra Pro. Deberá utilizar la **versión clásica de Outlook** para disfrutar de la compatibilidad con el protocolo ActiveSync.
 >
-> Para instalar Outlook clásico en el equipo Windows, descárguelo de la página de Microsoft "[Instalar o reinstalar Outlook clásico en un equipo Windows](https://support.microsoft.com/office/installer-o-r%C3%A9instalar-outlook-clásico-en-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" e instálelo.
+> Para instalar la versión clásica de Outlook en el equipo Windows, descárguela de la página de Microsoft "[Instalar o reinstalar la versión clásica de Outlook en un equipo PC con Windows](https://support.microsoft.com/es-es/office/instalar-o-reinstalar-la-versi%C3%B3n-cl%C3%A1sica-de-outlook-en-un-equipo-pc-con-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" e instálela.
 >
 > Una vez finalizada la instalación, para distinguir entre las dos versiones una vez instaladas, escriba "Outlook" en la barra de búsqueda de Windows. Podrá ver la diferencia como se muestra a continuación.
 >

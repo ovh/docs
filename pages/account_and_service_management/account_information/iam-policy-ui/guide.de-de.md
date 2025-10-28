@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2025-08-27
+updated: 2025-10-27
 ---
 
 ## Ziel
@@ -77,15 +77,15 @@ Das folgende Formular wird angezeigt:
 - **Ressourcen**: Fügen Sie Ressourcen oder Ressourcengruppen hinzu, die durch die Richtlinie abgedeckt werden sollen. Die verfügbaren Ressourcen werden nach dem zuvor ausgewählten Produkttyp gefiltert.
 - **Aktionen**.
 
-Es gibt drei Möglichkeiten, Aktionen hinzuzufügen:
+**Es gibt vier Möglichkeiten, Aktionen hinzuzufügen:**
 
-- Aktivieren der Option `Alle Aktionen zulassen`{.action}
+##### 1 - Option „Alle Aktionen zulassen” aktivieren
 
 ![Richtlinie erstellen](images/create_a_policy_02.png){.thumbnail}
 
 Wenn Sie diese Option aktivieren, lassen Sie alle Aktionen zu, die sich auf die ausgewählten Produkte beziehen. Dies schließt alle bestehenden und in Zukunft hinzugefügten Aktionen für diese Produktkategorien ein.
 
-- Auswählen einer verwalteten Berechtigungsgruppe
+##### 2 - Auswählen einer verwalteten Berechtigungsgruppe
 
 Wir stellen Berechtigungsgruppen zur Verfügung, die von OVHcloud vorkonfiguriert und verwaltet werden.
 Sie können eine oder mehrere Gruppen aus der verfügbaren Liste auswählen.
@@ -96,7 +96,7 @@ Details zum Inhalt verwalteter Berechtigungsgruppen finden Sie in der zugehörig
 
 Verwaltete Aktionsgruppen können als Ergänzung zu Komponentenaktionen verwendet werden.
 
-- Manuelles Hinzufügen von Aktionen
+##### 3 - Aktionen manuell hinzufügen
 
 Wenn Sie den Namen der Aktion kennen, können Sie sie manuell hinzufügen.
 
@@ -110,7 +110,7 @@ Wenn Sie beispielsweise `vps:apiovh:ips/*` hinzufügen, geben Sie folgende Recht
 - **vps:apiovh:ips/delete**
 - **vps:apiovh:ips/get**
 
-- Auswählen von Aktionen aus der Liste
+##### 4 - Aktionen aus der Liste auswählen
 
 Aktionen können in der Liste ausgewählt werden.
 
@@ -127,7 +127,27 @@ Die verfügbaren Aktionen hängen vom Ressourcentyp ab und gehören zu einer der
 Ein Suchfeld ist verfügbar, mit dem Sie eine bestimmte Aktion in der Liste identifizieren können.
 
 > [!primary]
-> Aktionen im Zusammenhang mit IP- und vRack-Produkten sowie Aktionen im Zusammenhang mit der Bestellung und Abrechnung sind im IAM von OVHcloud noch nicht verfügbar.
+> Aktionen im Zusammenhang mit Bestellungen und Rechnungen sind im OVHcloud IAM noch nicht verfügbar.
+
+#### Bedingungen für Richtlinien
+
+Es ist möglich, Bedingungen an IAM-Richtlinien anzuhängen.
+
+Eine Richtlinie mit Bedingungen ist gültig, wenn alle Bedingungen validiert sind.
+
+Es ist möglich, Bedingungen für folgende Elemente festzulegen:
+
+- Tag der Ressource
+- Name der Ressource
+- Produkttyp
+- IP-Adresse der Anfrage
+- Wochentag
+- Datum
+- Uhrzeit
+
+![Richtlinie erstellen](images/conditions.png){.thumbnail}
+
+Nachdem sie hinzugefügt wurden, werden die Bedingungen mit der [Syntax angezeigt, die in der API verwendet wird](/pages/account_and_service_management/account_information/iam-policies-api).
 
 #### Richtlinien bearbeiten
 

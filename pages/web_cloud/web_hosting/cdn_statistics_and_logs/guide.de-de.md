@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - CDN Statistiken und Logs einsehen"
 excerpt: "Erfahren Sie, wie Sie die CDN Statistiken und Logs Ihrer Website mit Ihrem Webhosting einsehen können"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Ziel
@@ -37,6 +37,8 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 > **Schritt 3**
 >>
 >> Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
 >> Klicken Sie im Bereich `Statistiken der Seitenaufrufe` auf die Schaltfläche `Die Statistiken anzeigen`{.action}.
 >>
@@ -74,6 +76,8 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 > **Schritt 3**
 >>
 >> Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
 >> Klicken Sie im Bereich `Logs der Website` auf den Button `Die Logs einsehen`{.action}.
 >>

@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki z serwerem VPS
 excerpt: Dowiedz się, jak zarządzać serwerem VPS w Panelu klienta i poznaj pierwsze kroki korzystania z niego, w tym zdalne połączenia i środki bezpieczeństwa
-updated: 2025-09-05
+updated: 2025-09-11
 ---
 
 ## Wprowadzenie
@@ -14,6 +14,11 @@ Prywatny serwer wirtualny (VPS) to zwirtualizowany serwer dedykowany, który zap
 
 - Posiadanie serwera [VPS](/links/bare-metal/vps) w Panelu klienta OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+> [!warning]
+> Nie wszystkie funkcje VPS wymienione na tej stronie są dostępne w Local Zones OVHcloud.
+>
+> Aby uzyskać więcej informacji, zobacz [stronie WWW Local Zones](/links/bare-metal/vps-lz).
 
 ## W praktyce
 

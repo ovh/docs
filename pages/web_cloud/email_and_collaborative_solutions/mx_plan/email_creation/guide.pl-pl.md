@@ -51,7 +51,7 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 
 ## OWA i Zimbra
 
-W tej sekcji udokumentowano usługi MX Plan wykorzystujące technologię webamil **OWA** i **Zimbra**.
+W tej sekcji udokumentowano usługi MX Plan wykorzystujące technologię webmail **OWA** i **Zimbra**.
 
 #### Załóż konto e-mail
 

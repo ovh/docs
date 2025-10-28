@@ -398,6 +398,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 
 ### Create a node pool
 
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> In the *Node pools* tab, click on the button `Add a node pool`{.action}.
 >>

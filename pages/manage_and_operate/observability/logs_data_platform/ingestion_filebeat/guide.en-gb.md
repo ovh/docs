@@ -1,6 +1,6 @@
 ---
 title: Pushing logs with a forwarder - Filebeat (Linux)
-updated: 2024-11-28
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -199,8 +199,8 @@ output.elasticsearch:
   protocol: "https"
 
   # Authentication credentials - either API key or username/password.
-  username: "<username>"
-  password: "<password>"
+  username: "pat_jwt_<your_suffix>"
+  password: "<iam-token>"
   index: "ldp-logs"
   # Header for OpenSearch 2.X
   headers:
@@ -214,7 +214,7 @@ output.elasticsearch:
 >
 
 
-This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your credentials **<username>** and **<password>** of your account. Like all Logs Data Platform APIs you can also use [tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens). Don't change **ldp-logs** since it is our special destination index.
+This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your IAM credentials **pat_jwt_<your_suffix>** and **<iam-token>** of your account. Like all Logs Data Platform backend APIs you can use [IAM tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens). Don't change **ldp-logs** since it is our special destination index.
 
 When you use our OpenSearch endpoint with filebeat, it will use the [ingest module](https://www.elastic.co/guide/en/logstash/7.12/use-ingest-pipelines.html) to parse and structure the logs.
 
@@ -310,8 +310,8 @@ Note the type value (apache or syslog or apache-error) that indicates the source
 
 Filebeat is a handy tool to send the content of your current log files to Logs Data Platform. It offers a clean and easy way to send your logs without changing the configuration of your software. Don't hesitate to check the links below to master this tool.
 
-- Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html)
-- Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html)
+- Getting started: [https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-overview.html](https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-overview.html){.external}
+- Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/7.12/configuring-howto-filebeat.html](https://www.elastic.co/guide/en/beats/filebeat/7.12/configuring-howto-filebeat.html){.external}
 - Learn how to configure Filebeat and Logstash to add your own extra filters: [Dedicated input - Logstash](/pages/manage_and_operate/observability/logs_data_platform/ingestion_logstash_dedicated_input)
 
 ## Going further

@@ -1,7 +1,7 @@
 ---
 title: "How to deploy cPanel on a VPS"
 excerpt: "Find out how to instantiate a VPS with the preinstalled cPanel application"
-updated: 2025-07-14
+updated: 2025-09-11
 ---
 
 ## Objective
@@ -22,6 +22,9 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 
 - A [VPS](/links/bare-metal/vps) solution with a [compatible distribution](/links/bare-metal/vps-os)
 - Access to the [OVHcloud Control Panel](/links/manager)
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
 
 ## Instructions
 

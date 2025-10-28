@@ -1,7 +1,7 @@
 ---
 title: "Télécharger et transférer la sauvegarde d'une instance d'une région OpenStack à une autre"
 excerpt: "Découvrez comment télécharger et transférer une sauvegarde d'instance d'une région OpenStack à une autre tout en préservant la configuration et l'état de l'instance"
-updated: 2024-12-03
+updated: 2025-10-15
 ---
 
 ## Objectif
@@ -24,23 +24,10 @@ Vous aurez également besoin d’une [instance Public Cloud](/links/public-cloud
 
 ## En pratique
 
-### Créer une sauvegarde
-
-```bash
-$ openstack server list
- 
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID | Name | Status | Networks | Image Name |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-Exécutez ensuite la commande suivante pour créer une sauvegarde de votre instance :
-
-```bash
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
+> [primary]
+>
+> Si vous devez créer une sauvegarde avec OpenStack, veuillez vous référer à [notre guide dédié](/pages/public_cloud/compute/save_an_instance) pour savoir comment sauvegarder une instance.
+>
 
 ### Télécharger la sauvegarde
 
@@ -144,18 +131,10 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Créer une instance à partir de votre sauvegarde
-
-> [!warning]
+> [!primary]
 >
-> Si votre instance est un serveur Windows, vous devez sélectionner une flavor de type win-xx-xx (par exemple, win-b2-15) et disposer d’une interface publique sur le réseau Ext-Net. Sans ces conditions, l’authentification auprès du KMS OVHcloud ne sera pas possible, et votre serveur restera avec une [licence non activée](/pages/public_cloud/compute/activate-windows-license-private-mode). Cela pourrait entraîner des limitations, notamment l’absence de mises à jour. À noter qu’il est impossible de redimensionner une instance Linux (par exemple b2-15) en une instance Windows (comme win-b2-15). Pour effectuer cette transition, il est nécessaire de recréer une nouvelle instance.
+> Si vous souhaitez recréer votre instance à partir de cette sauvegarde, suivez notre guide « [Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup) ».
 >
-
-Pour créer une instance à partir de votre sauvegarde, utilisez l'ID de sauvegarde comme image avec cette commande :
-
-```bash
-$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
-```
 
 ## Aller plus loin
 

@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2025-06-05
+updated: 2025-09-30
 ---
 
 ## Objectif
@@ -34,8 +34,7 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 
 Certaines limites techniques sont liées à l’utilisation de produits physiques comme les serveurs dédiés. Voici une liste non exhaustive à garder à l'esprit lors de la préparation de votre déploiement :
 
-- Type de démarrage : **uefi** ou **legacy**
-- Type de partition : **MBR** ou **GPT**
+- Type de démarrage : **UEFI** ou **legacy** (en fonction du type de démarrage de votre serveur)
 - Format de l'image : **qcow2**
 - Une seule partition dans l'image qcow2
 

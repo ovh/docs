@@ -1,7 +1,7 @@
 ---
 title: 'Importar una copia de seguridad en la base de datos de un alojamiento web'
 excerpt: 'Cómo importar una copia de seguridad en la base de datos de un alojamiento web de OVHcloud'
-updated: 2023-12-11
+updated: 2025-10-08
 ---
 
 ## Objetivo
@@ -46,6 +46,8 @@ Continúe leyendo esta guía en el apartado correspondiente al método de import
 
 Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos que quiera restaurar a una fecha anterior y seleccione `Restaurar una copia de seguridad`{.action}. Tenga en cuenta que esta acción sustituirá el contenido actual de la base de datos por el de la copia de seguridad.
 
 ![Importación de una base de datos](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
@@ -59,6 +61,8 @@ Haga clic en los tres puntos situados al final de la línea correspondiente al b
 ### Importar una copia de seguridad desde el área de cliente
 
 Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos en la que quiera importar datos y seleccione `Importar un archivo`{.action}.
 
@@ -92,6 +96,8 @@ A continuación haga clic en `Aceptar`{.action} y espere a que finalice la impor
 ### Realizar la importación desde la herramienta web phpMyAdmin
 
 En primer lugar deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos y seleccione `Acceder a phpMyAdmin`{.action}.
 

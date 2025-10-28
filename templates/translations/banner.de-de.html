@@ -1,13 +1,14 @@
 <style>
-    details>summary {
-        color:rgb(33, 153, 232) !important;
+    details.translation>summary {
+        color:rgb(33, 153, 232);
         cursor: pointer;
+        list-style: none;
     }
-    details>summary::before {
+    details.translation>summary::before {
         content:'\25B6';
         padding-right:1ch;
     }
-    details[open]>summary::before {
+    details.translation[open]>summary::before {
         content:'\25BC';
     }
     div#article-content article div.callout.note {
@@ -39,10 +40,17 @@
     }
 </style>
 
-/// details | Informationen zur Übersetzung
-
-> [!note]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
-///
+<details class="translation">
+    <summary>Informationen zur Übersetzung</summary>
+    <div class="callout note">
+        <p>
+            Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch
+            erstellt. In manchen Fällen können ungenaue Formulierungen verwendet
+            worden sein, z.B. bei der Beschriftung von Schaltflächen oder
+            technischen Details. Bitte ziehen Sie im Zweifelsfall die englische
+            oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen,
+            diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button
+            "Beitragen" auf dieser Seite.
+        </p>
+    </div>
+</details>

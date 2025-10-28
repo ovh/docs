@@ -30,7 +30,7 @@ details[open]>summary::before {
     - [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution à Public VCF as-a-Service (cf. grille tarifaire des sauvegardes Veeam Public VCF as-a-Service disponible via [ce lien](/links/hosted-private-cloud/veeam-managed-backup).
+- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution à Public VCF as-a-Service (cf. grille tarifaire des sauvegardes Veeam Public VCF as-a-Service disponible via [ce lien](/links/hosted-private-cloud/public-vcf-aas-veeam)).
 
 ## En pratique
 
@@ -141,11 +141,11 @@ Pour les machines virtuelles gérées par Public VCF as-a-Service, Veeam Backup 
 
 Vous allez créer votre premiere tâche de sauvegarde depuis le plugin Public VCF as-a-Service Veeam Data Platform  :
 
-Dans la console Public VCF as-a-Service Veeam, cliquez sur `Plus`{.action} et sélectionnez `Protection des données avec Veeam`{.action}
+Dans la console Public VCF as-a-Service Veeam, cliquez sur `Plus`{.action} et sélectionnez `Protection des données avec Veeam`{.action}.
 
 ![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
-Cliquez sur `Jobs`{.action} puis sur `Create`{.action}
+Cliquez sur `Jobs`{.action} puis sur `Create`{.action}.
 
 ![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
 
@@ -165,7 +165,7 @@ Cliquez sur `Next`{.action}.
 
 Votre machine virtuelle apparait alors dans la liste.
 
-Cliquez sur `Next.`{.action}
+Cliquez sur `Next`{.action}.
 
 ![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_5.png){.thumbnail}
 
@@ -178,7 +178,7 @@ Cliquez sur `Next.`{.action}
 >
 > Pour Windows, vous pouvez choisir un compte standard ou un compte de service managé.
 
-Cliquez sur `Next`{.action}
+Cliquez sur `Next`{.action}.
 
 ![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail}
 
@@ -247,13 +247,13 @@ Lorsque vous restaurez des VMs normales ou autonomes dans la hiérarchie vCloud 
 
 **Comment restaurer une machine virtuelle depuis le plugin Veeam Data Platform Public VCF as-a-Service ?**
 
-Pour effectuer une restauration complète, cliquez sur `Entire VM Restore`{.action}
+Pour effectuer une restauration complète, cliquez sur `Entire VM Restore`{.action}.
 
 ![VCD_Veeam_restore_vm_1](images/vcd_veeam_restore_vm.png){.thumbnail}
 
 Depuis la fenêtre que s'affiche, cliquez sur `Restore to the original location`{.action} pour la restauration d'une VM complète (full).
 
-Puis cliquez sur `Next.`{.action}.
+Puis cliquez sur `Next`{.action}.
 
 ![VCD_Veeam_restore_vm_2](images/vcd_veeam_restore_vm_2.png){.thumbnail}
 

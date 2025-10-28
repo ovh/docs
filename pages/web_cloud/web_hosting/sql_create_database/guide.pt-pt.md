@@ -1,7 +1,7 @@
 ---
 title: "Criar uma base de dados num alojamento web"
 excerpt: "Saiba como criar uma base de dados no seu alojamento web OVHcloud"
-updated: 2024-09-05
+updated: 2025-10-08
 ---
 
 ## Objetivo
@@ -21,6 +21,8 @@ Uma base de dados (BDD) é utilizada para armazenar elementos dinâmicos (dados 
 ### Etapa 1 - Aceder ao separador de gestão das bases de dados de um alojamento web
 
 Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha o alojamento que pretende criar e clique no separador `Bases de dados`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 A tabela desta secção contém todas as bases de dados criadas com o seu alojamento web.
 

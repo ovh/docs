@@ -1,7 +1,7 @@
 ---
 title: "Den Speicherplatz Ihres Webhostings wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen"
-updated: 2025-05-23
+updated: 2025-10-20
 ---
 
 ## Ziel 
@@ -47,15 +47,31 @@ Entscheiden Sie sich für eine Wiederherstellungsmethode, die Sie verwenden möc
 > Wenn Sie zum Beispiel über ein Webhosting **Performance** verfügen, müssen noch 250 GB der insgesamt 500 GB verfügbar sein.
 >
 > Unsere Roboter installieren das Backup auf Ihrem Hosting, bevor der FTP Inhalt gelöscht und von der Wiederherstellung überschrieben wird.
->
-> Um die auf Ihrem Webhosting verwendete Quota zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. 
->
-> Die Speicherplatzbelegung erscheint auf dieser Seite:
->
->![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->
-> Wenn mehr als die Hälfte des gesamten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) verwenden). Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung über das OVHcloud-Kundencenter starten.
->
+
+Um die auf Ihrem Webhosting verwendete Quota zu überprüfen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Im Feld **Allgemeine Informationen** finden Sie Speicherplatzauslastung unter **Speicherplatz**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> Wenn mehr als die Hälfte des hier angezeigten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) verwenden).
+>>
+>> Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung über das OVHcloud-Kundencenter starten.
 
 Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellungsmethode:
 
@@ -81,33 +97,59 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 > - Unsere Teams senden eine E-Mail über den Status an den [Administrator-Kontakt](/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
 > - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigt. Klicken Sie im Bereich `Web Cloud`{.action} auf Ihren Dienst unter `Hosting-Pakete`{.action} und dann auf den Tab `Allgemeine Informationen`{.action}.
 > - Die gehosteten Webseiten zeigen eine "403 Forbidden"-Meldung an.
->
 
-Loggen Sie sich in Ihr [OVHcloudcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann zum Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
+Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen:
 
-![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
-
-Wählen Sie im angezeigten Fenster über das Dropdown-Menü mithilfe folgender Informationen das gewünschte Backup-Datum aus:
-
-|Angezeigtes Datum|Backup-Datum|
-|---|---|
-|T-1|Vom selben Tag um 00:01 Uhr|
-|T-2|Vom Tag davor um 00:01 Uhr|
-|T-3|Zwei Tage zuvor um 00:01 Uhr|
-|1 Woche|Vom letzten Sonntag um 01:00 Uhr |
-|2 Wochen|Vom Sonntag zwei Wochen zuvor um 01:00 Uhr|
-
-Klicken Sie nach der Auswahl auf den Button `Weiter`{.action}. 
-
-![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
-
-Vergewissern Sie sich, dass bei der Wiederherstellung keine Datei verloren geht. Das könnte beispielsweise mit einer Datei passieren, die nach dem ausgewählten Datum in Ihren Speicherplatz hochgeladen wurde. Beachten Sie, dass bei der Wiederherstellung die aktuellen Daten vollständig mit den Backup-Daten überschrieben werden.
-
-Klicken Sie auf den Button `Bestätigen`{.action}, um die Wiederherstellung zu starten.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Klicken Sie auf der neu angezeigten Seite auf die Schaltfläche `Backup wiederherstellen`{.action}.
+>>
+>> ![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Wählen Sie im angezeigten Fenster über das Dropdown-Menü mithilfe folgender Informationen das gewünschte Backup-Datum aus:
+>>
+>> |Angezeigtes Datum|Backup-Datum|
+>> |---|---|
+>> |T-1|Vom selben Tag um 00:01 Uhr|
+>> |T-2|Vom Tag davor um 00:01 Uhr|
+>> |T-3|Zwei Tage zuvor um 00:01 Uhr|
+>> |1 Woche|Vom letzten Sonntag um 01:00 Uhr |
+>> |2 Wochen|Vom Sonntag zwei Wochen zuvor um 01:00 Uhr|
+>>
+>> Klicken Sie nach der Auswahl auf den Button `Weiter`{.action}. 
+>>
+> **Schritt 6**
+>>
+>> ![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
+>>
+>> Vergewissern Sie sich, dass bei der Wiederherstellung keine Datei verloren geht. Das könnte beispielsweise mit einer Datei passieren, die nach dem ausgewählten Datum in Ihren Speicherplatz hochgeladen wurde. Beachten Sie, dass bei der Wiederherstellung die aktuellen Daten vollständig mit den Backup-Daten überschrieben werden.
+>>
+>> Klicken Sie auf den Button `Bestätigen`{.action}, um die Wiederherstellung zu starten.
 
 > [!primary]
 >
-> Die automatische Wiederherstellung kann einige Minuten bis einige Stunden in Anspruch nehmen. Wenn der Vorgang **über 24 Stunden*** dauert, kontaktieren Sie den [OVHcloud Support](/links/support).
+> Die automatische Wiederherstellung kann einige Minuten bis einige Stunden in Anspruch nehmen. Wenn der Vorgang **über 24 Stunden** dauert, kontaktieren Sie den [OVHcloud Support](/links/support).
 >
 
 ### Datei mithilfe einer Software oder über ein Interface wiederherstellen
@@ -121,7 +163,7 @@ Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass 
 
 #### Schritt 1: Software oder Interface auswählen <a name="viainterface"></a>
 
-Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwenden möchten, um auf den Backup-Speicher zuzugreifen. Wenn Sie sich bereits entschieden haben, können Sie direkt zu Schritt 2 übergehen. Andernfalls empfehlen wir Ihnen eine der folgenden drei Lösungen:
+Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwenden möchten, um auf den Backup-Speicher zuzugreifen. Wenn Sie sich bereits entschieden haben, können Sie direkt zu Schritt 2 übergehen. Andernfalls empfehlen wir Ihnen eine der folgenden beiden Lösungen:
 
 - **FileZilla**: Laden Sie FileZilla zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von FileZilla eine Anleitung zur Verfügung](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 
@@ -133,7 +175,11 @@ Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren
 
 Mithilfe der ausgewählten Software bzw. über das Interface können Sie sich nun auf Ihrem Speicherplatz einloggen, um auf die gewünschten Backup-Daten zuzugreifen. Sie benötigen hierfür den FTP-Benutzernamen, das zugehörige Passwort sowie den Hostnamen Ihres FTP-Servers.
 
-Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres Webhostings. Wenn Sie kein FTP-Passwort besitzen, lesen Sie die Anleitung [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
+Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres Webhostings.
+
+![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+
+Wenn Sie kein FTP-Passwort besitzen, lesen Sie die Anleitung [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

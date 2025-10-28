@@ -74,7 +74,7 @@ To connect to the database via phpMyAdmin, click on the tabs below to view each 
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Step 4**
 >>
@@ -249,7 +249,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Step 4**
 >>

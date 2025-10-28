@@ -1,7 +1,7 @@
 ---
 title: Authentifizierungsschlüssel für SSH-Verbindungen zu Public Cloud Instanzen erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie Schlüsselpaare für OpenSSH auf Ihrem lokalen Gerät konfigurieren und für sichere Verbindungen zu Ihrer Instanz verwenden
-updated: 2024-09-02
+updated: 2024-12-09
 ---
 
 <style>

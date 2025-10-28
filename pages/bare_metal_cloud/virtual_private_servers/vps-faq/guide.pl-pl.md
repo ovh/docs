@@ -1,123 +1,416 @@
 ---
-title: FAQ VPS OVHcloud
-updated: 2025-08-07
+title: "OVHcloud VPS - często zadawane pytania"
+excerpt: "Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące ofert VPS"
+updated: 2025-10-02
 ---
 
-## FAQ VPS
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
 
-### Do czego służy serwer?
+## Ogólne pytania dotyczące oferty VPS
 
-VPS to serwer wirtualny (Virtual Private Server), na którym można instalować strony WWW (witryny, serwisy e-commerce, treści...) oraz aplikacje (portale wewnątrzfirmowe, rozwiązania do pracy zespołowej, wiki, CRM, ...).  
- W przeciwieństwie do hostingu, VPS umożliwia odizolowanie od siebie kilku aplikacji utrzymywanych na jednej wirtualnej maszynie, która należy do jednego klienta. 
+/// details | Co to jest VPS i do czego służy?
 
-VPS, rozwiązanie pośrednie między hostingiem a serwerem fizycznym, charakteryzuje się niezawodnością i wydajnością sprzętu dedykowanego, różni się jednak tym, że nie musisz nim zarządzać.
+Serwer wirtualny prywatny (VPS) służy do hostowania stron internetowych (e-commerce, treści, media wizualne) oraz aplikacji oprogramowania (portale, ekstranety, rozwiązania wspólne, wiki, CRM). Na odmienną od hostingu współdzielonego, VPS oferuje izolowane środowisko, dedykowane klientowi. Nasze rozwiązania VPS wypełniają lukę między hostingu webowym a serwerami dedykowanymi, łącząc w sobie wydajność i niezawodność bez obciążenia zarządzania sprzętem. Możesz również łatwo uaktualnić swoją konfigurację bez zmieniania serwerów.
 
-### VPS czy hosting?
+///
 
-Serwer VPS jest kolejnym wyborem po hostingu.  Daje Ci więcej swobody w zakresie konfiguracji i korzystania z różnych funkcjonalności (dostęp root, Apache PHP,init).  Możesz również zainstalować własny certyfikat SSL i dowolne oprogramowanie.
+/// details | Jakie są zalety VPS od OVHcloud?
 
-Pamiętaj jednak, żeby wybrać odpowiedni VPS.  Potrzebujesz konfiguracji dopasowanej do wymagań Twoich aplikacji oraz możliwości dostosowywania jej wraz z rozwojem Twoich projektów.
+Oferty VPS od OVHcloud oferują świetną wartość dla wydajności, z nieograniczonym ruchem i kilkoma globalnymi lokalizacjami, aby zapewnić niską opóźnienie i poprawić dostępność, w zależności od Twoich potrzeb. 
 
-### VPS czy serwer dedykowany?
+///
 
-Zaletą VPS jest to, że nie musisz zarządzać sprzętem, np. monitorować stanu dysków twardych, pamięci RAM i CPU. Oferta VPS jest odpowiednia dla większości zastosowań WWW wchodzących w zakres projektów o średniej wielkości. 
+/// details | Czy rozwiązanie VPS to właściwy wybór dla mnie?
 
-Serwer dedykowany jest zalecany, jeśli chcesz: całkowicie administrować środowiskiem, budować rozwiązania na bazie bardziej kompleksowych architektur, tworzyć infrastrukturę obejmującą sieć prywatną (vRack) czy wdrażać zaawansowane rozwiązania niezwiązane z usługami WWW.
+Użycie VPS wymaga podstawowej wiedzy na temat administracji serwerem. Ważne jest, aby to uwzględnić, skutecznie zarządzając swoim systemem operacyjnym (Linux lub Windows) oraz konfigurować swoje aplikacje, np. PrestaShop lub WordPress.
 
-Użytkownicy VPS, których projekty szybko się rozwijają, w kolejnym kroku mogą wybrać serwer dedykowany lub rozwiązania Public Cloud. W ramach tych usług zyskają bardziej złożoną i elastyczną infrastrukturę dostosowaną do dynamicznego wzrostu działalności.
+Jeśli potrzebujesz VPS, ale brakuje Ci technicznej wiedzy, aby go zarządzać, rozważ kontakt z jednym z naszych [partnerów](/links/partner) w celu uzyskania pomocy.
 
-### Jakie są różnice między rozwiązaniami VPS a Public Cloud?
+Jeśli potrzebujesz przydzielonych zasobów, ale nie chcesz mieć do czynienia z administracją serwerem, zalecamy wybór naszych planów hostingu webowego Performance.
 
-VPS to rozwiązanie przewidziane dla środowisk preprodukcyjnych i produkcyjnych, które nie wymagają stałej wydajności.  
-OVHcloud oferuje infrastrukturę z wieloma serwerami o wysokiej dostępności. W przeciwieństwie do VPS, Public Cloud obejmuje również usługę vRack.
+///
 
-### Jak wybrać serwer VPS?
+/// details | Czy mogę łatwo uaktualnić swój VPS do wyższego zakresu lub obniżyć konfigurację do niższego poziomu?
 
-Aby wybrać serwer VPS dostosowany do Twoich potrzeb, sprawdź:
+Tak, możesz uaktualnić swoją konfigurację z poziomu Panelu Kontrolnego OVHcloud, bez ręcznego migracji danych. Dostępne opcje uaktualnienia zależą od zakresu i modelu VPS.
 
-- ilość niezbędnych zasobów (procesor, pamięć, przestrzeń dyskowa, przepustowość,...);
-- wymagany system operacyjny (Linux lub Windows);
-- wymagania techniczne niezbędne do prawidłowego działania aplikacji (np. baza danych wymaga prędkości odczytu/zapisu).
+Jednak aby obniżyć konfigurację, musisz zasubskrybować nowy plan, przenieść swoje dane, a następnie anulować stary usługę. Nasz zespół wsparcia jest dostępny, aby pomóc Ci w razie potrzeby.
 
-Pozwoli Ci to dokonać właściwego wyboru spośród naszych rozwiązań VPS:
+///
 
-- **VPS Starter**: ekskluzywna maszyna do testowania naszej oferty (tylko z dystrybucją Linux);
-- **VPS Value, Essential i Comfort**: idealne do hostingu stron WWW, usług e-commerce lub systemów monitoringu;
-- **VPS Elite**: dostosowane do sklepów internetowych i aplikacji wymagających większych zasobów procesora i pamięci.
-- **VPS Limited Edition** (Ilość ograniczona): serwery VPS zapewniają większą wydajność i dużą zaletę w hostowaniu złożonych stron WWW, aplikacji wymagających ogromnych zasobów, a nawet serwerów gier. Ta oferta jest ważna do wyczerpania zapasów.
+/// details | Jaką lokalizację lub kraj powinienem wybrać dla mojego VPS?
 
-> [!primary]
-> Możesz zmienić VPS Limited Edition na inny VPS z tej samej gamy, ale ze względów technicznych nie można zmienić VPS Limited Edition na VPS z innej gamy (Starter, Value, Essential lub Comfort).
+Im bliżej Twojego centrum danych znajduje się Twoja odbiorców, tym niższe będzie opóźnienie, prowadząc do lepszego doświadczenia użytkownika i zwiększając zaufanie do Twoich usług.
 
-### Kto może korzystać z serwera VPS?
+///
 
-Każda osoba posiadająca podstawową wiedzę techniczną z zakresu administracji serwerami może korzystać z VPS.  Kompetencje te są niezbędne do zarządzania zainstalowanym na maszynie systemem operacyjnym (Linux lub Windows) i do konfigurowania aplikacji. Myślisz, że potrzebujesz serwera VPS, ale czy nie posiadasz wymaganych kompetencji? Prosimy o kontakt z jednym z naszych [partnerów](/links/partner).
+/// details | Jakie są zalety VPS zlokalizowanego w Europie?
 
-Jeśli chcesz korzystać z gwarantowanych zasobów bez znajomości administrowania serwerami, zalecamy nasze [hosting Performance](/links/web/hosting-performance-offer).
+Hosting VPS w Francji lub ogólnie w UE oferuje zalety takie jak konkurencyjne ceny i wzmocnione ochrony danych. Twoja usługa nie podlega amerykańskiemu aktowi CLOUD, co chroni ją przed wpływami poza Europą.
 
-### Jak się zalogować do mojego VPS?
+///
 
-Możesz łączyć się zdalnie z Twoim serwerem VPS, używając danych dostarczonych w wiadomości e-mail po udostępnieniu usługi.  
-Sposób połączenia zależy od używanego systemu operacyjnego.
+/// details | Czy kopie zapasowe są dołączone do mojego VPS?
 
-Szczegóły znajdziesz w przewodniku ["Pierwsze kroki z serwerem VPS"](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
+Tak, przy zamówieniu VPS, opcja codziennego backupu jest dołączona bezpłatnie.
 
-### Czy mogę zainstalować kilka stron WWW na jednym serwerze VPS?
+Dla jeszcze lepszej ochrony możesz również wybrać naszą opcję premium backupu. Oferuje ona:
 
-Tak Możesz podzielić serwer VPS i dostosować go do Twoich potrzeb. Możesz zainstalować kilka stron lub projektów, przydzielając każdemu prywatną przestrzeń o wybranym rozmiarze. Realizacja tych operacji będzie prostsza, jeśli zainstalujesz panel administracyjny Plesk lub cPanel.
+- Możliwość powrotu do kopii zapasowej, która może być starsza o do tygodnia.
+- Możliwość zaplanowania kopii zapasowych, optymalizując zarządzanie danymi i minimalizując wpływ na operacje biznesowe.
 
-### Czy mój VPS ma kopię zapasową?
+Dodatkowo oferujemy:
 
-W zależności od wrażliwości danych zalecamy zastosowanie odpowiedniej strategii tworzenia kopii zapasowych.  
-Przejdź na naszą [stronę WWW VPS](/links/bare-metal/vps-options), aby uzyskać więcej informacji na temat dostępnych opcji.
+- Zrzuty ekranu: Możesz tworzyć ręczne, natychmiastowe zrzuty ekranu, które przechwytują dokładny stan Twojego VPS tuż przed aktualizacją lub istotną zmianą.
+- Zewnętrzny backup: Przechowuj swoje dane na osobnym, zabezpieczonym dysku, umożliwiając łatwe odzyskanie w przypadku dużego incydentu.
 
-### Jak zabezpieczyć serwer VPS?
+Korzystając z tych rozwiązań, możesz dostosować zarządzanie kopiami zapasowymi do swoich potrzeb bezpieczeństwa i ciągłości działania.
 
-VPS jest dostarczany jako "goły" i nie ma na nim żadnej konfiguracji bezpieczeństwa. To pierwsza rzecz, którą musisz zrobić w recepcji
-W tym celu zapoznaj się z przewodnikiem ["Zabezpieczenie serwera VPS"](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+Wizytuj naszą [stronę internetową VPS](/links/bare-metal/vps), aby dowiedzieć się więcej o dostępnych opcjach.
 
-### Jaka jest przepustowość przypisana do mojego VPS? Czy jest gwarantowana?
+///
 
-Przepustowość podana na stronie produktowej VPS jest gwarantowana. Jest to minimalna przydzielona przepustowość.
+/// details | Czy mogę hostować kilka stron internetowych na VPS?
 
-### Jakie warunki SLA są stosowane na moim serwerze VPS?
+Tak, VPS można skonfigurować w taki sposób, aby obsługiwał wiele stron internetowych lub projektów. Możesz podzielić przestrzeń dyskową zgodnie z własnymi potrzebami i używać specjalistycznych interfejsów, takich jak Plesk lub cPanel, aby uprościć zarządzanie swoimi stronami internetowymi.
 
-OVHcloud oferuje SLA na poziomie 99,9% dla wszystkich ofert VPS.
+///
 
-### Jak uzyskać dostęp do usługi backup storage z innego adresu IP niż moja usługa? <a name="backupstorage"></a>
+/// details | Czy otrzymam nazwę domeny i usługę poczty e-mail wraz z moim VPS?
 
-Dostęp do backupu FTP może być ograniczony do usługi, do której jest on przypisany za pośrednictwem Panelu klienta OVHcloud.
+Nie, nasze rozwiązania VPS nie obejmują nazwy domeny ani usługi poczty e-mail. Te usługi można zamówić oddzielnie w Panelu Kontrolnym OVHcloud.
 
-Aby autoryzować dodatkowe adresy IP, z których chcesz uzyskać dostęp do Backup Storage, skorzystaj z API OVHcloud.  
-Dzięki temu będziesz mógł pobierać kopie zapasowe danych z innej usługi za pomocą różnych protokołów (FTP, NFS, CIFS).
+///
 
-> [!warning]
-> Zezwala się wyłącznie na adresy IP OVHcloud.
+/// details | Jak wybrać między VPS a planem hostingu webowego?
+
+- Plan hostingu webowego: idealny dla podstawowych potrzeb hostingu z gotową konfiguracją.
+- VPS: większa elastyczność i kontrola, idealny do skalowania projektów z złożonymi potrzebami konfiguracji.
+
+Hosting usług webowych na VPS pozwala Ci zainstalować preferowane oprogramowanie, dostosować ustawienia serwera i hostować wiele stron internetowych z dedykowanymi zasobami. Pamiętaj, że VPS należy skonfigurować w taki sposób, który odpowiada Twoim wymaganiom aplikacji i jest dostosowany do wzrostu Twojej działalności.
+
+///
+
+/// details | Jakie jest różnice między VPS a rozwiązaniami Public Cloud?
+
+- VPS: zoptymalizowana i dedykowana maszyna wirtualna odpowiednia zarówno do preprodukcji, jak i produkcji, zaprojektowana do hostowania kilku projektów internetowych.
+- Public Cloud od OVHcloud: oferuje infrastrukturę wielu serwerów z wysoką dostępnością i prywatną siecią (vRack), zaprojektowaną do złożonych, skalowalnych architektur.
+
+///
+
+/// details | Jakie są zalety VPS w porównaniu do serwera dedykowanego?
+
+- VPS: oferuje uproszczone zarządzanie bez konserwacji sprzętu, idealny dla projektów wymagających ścisłej kontroli.
+- Serwer dedykowany: zalecany dla złożonej infrastruktury, która wymaga pełnej kontroli nad sprzętem i gwarantowanej wydajności.
+
+VPS eliminuje konieczność zarządzania sprzętem fizycznym, takim jak pamięć, RAM i CPU, co sprawia, że jest dobrze dopasowany do większości aplikacji internetowych. W miarę wzrostu Twojej działalności możesz uaktualnić swój VPS lub przenieść się na serwer dedykowany lub rozwiązanie Public Cloud, aby uzyskać bardziej elastyczną i potężną infrastrukturę.
+
+///
+
+/// details | Jaka przepustowość jest przydzielona do mojego VPS? Czy jest ona gwarantowana?
+
+Przepustowość wymieniona na naszej [stronie internetowej VPS](/links/bare-metal/vps) jest gwarantowana. Jest to minimalna ilość przydzielona do Twojej usługi.
+
+///
+
+/// details | Który SLA jest stosowany do mojego VPS?
+
+VPS od OVHcloud obejmuje SLA na poziomie 99,9%.
+
+///
+</br>
+
+/// details | Jakie są unikalne cechy VPS z Local Zone?
+
+Z VPS z Local Zone możesz znacznie zmniejszyć czas dostępu do swoich stron i aplikacji, ponieważ dane są hostowane bliżej Twoich użytkowników. Tworzy to lepsze doświadczenie użytkownika, zmniejszając opóźnienie, kiedy aplikacje wymagają minimalnego czasu odpowiedzi. Po prostu wybierz jedną z naszych lokalizacji na całym świecie podczas składania zamówienia.
+
+Pamiętaj, że VPS z Local Zone, w przeciwieństwie do zwykłego VPS, nie obejmuje funkcji bezpieczeństwa, takich jak Anti-DDoS, czy zaawansowane opcje, takie jak Additional IP i Load Balancer.
+
+VPS z Local Zone spełnia również potrzeby projektów z wymaganiami dotyczącymi lokalizacji danych i suwerenności. Hostując swoje usługi w określonej lokalizacji, możesz łatwo spełnić lokalne przepisy dotyczące przetwarzania i przechowywania danych, takie jak europejski RODO.
+
+///
+
+/// details | Czy mogę przenieść swój VPS z Local Zone do centrum danych i odwrotnie?
+
+Nie, nie możesz bezpośrednio migrować usług. Musisz zasubskrybować wybrany VPS, przenieść swoje dane, a następnie anulować stary usługę. Nasz zespół wsparcia może Ci w tym pomóc, jeśli to konieczne.
+
+///
+
+/// details | Jakie są ryzyka korzystania z VPS bez ochrony przed DDoS?
+
+Wirtualne serwery prywatne bez ochrony przed atakami DDoS automatycznie narażają się na ataki dystrybuowane (DDoS), co może prowadzić do awarii usług i poważnych luk w zabezpieczeniach.
+
+- Bezpośrednie narażenie: Jeśli Twój serwer zostanie zaatakowany przez atak DDoS, strumień żądań może go zatopić, powodując, że Twoje strony i aplikacje staną się niedostępne.
+- Brak automatycznej neutralizacji: Aby chronić swój serwer, będziesz musiał odpierać ataki za pomocą oprogramowania zabezpieczeniowego trzecich firm lub konkretnych konfiguracji.
+- Dodatkowe obciążenie zarządzania: Brak solidnych, wbudowanych zabezpieczeń przedstawia poważne ryzyko, podkreślając konieczność czujnego monitorowania i strategii proaktywnych, szczególnie dla projektów o dużym ruchu.
+
+Jeśli odporność na ataki DDoS jest kluczowym czynnikiem dla Twojego projektu, zalecamy wybór VPS od OVHcloud hostowanego w jednym z naszych centrów danych, które oferują wbudowaną ochronę.
+
+///
+
+
+## Pytania dotyczące administrowania serwerem VPS
+
+/// details | Jak się zalogować do mojego VPS?
+
+Możesz zalogować się zdalnie do Twojego serwera VPS, korzystając z danych przesłanych w e-mailu po dostarczeniu usługi.  
+Metoda połączenia zależy od używanych systemów operacyjnych.
+
+Szczegóły znajdziesz w przewodniku [Jak rozpocząć pracę z VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
+
+///
+
+/// details | Czy OVHcloud zapewnia mi pomoc w konfiguracji oprogramowania do mojego serwera VPS?
+
+Chociaż nie możemy zaoferować pomocy w konfiguracji oprogramowania ani w administrowaniu, zapewniamy narzędzia i zasoby, które pomogą Ci rozpocząć pracę.
+
+Oferujemy na przykład gamę wstępnie skonfigurowanych szablonów i obrazów dla popularnych systemów operacyjnych i aplikacji, aby pomóc Ci szybko wdrożyć Twój VPS. Udostępniamy również Panel klienta OVHcloud, w którym możesz zarządzać serwerami VPS i wykonywać zadania, takie jak restart, reinstalacja i monitoring zasobów.
+
+Ponadto, nasza dokumentacja i baza wiedzy zawierają wiele informacji dotyczących konfiguracji i zarządzania serwerem VPS.
+
+Jednak w przypadku specyficznej pomocy w konfiguracji oprogramowania, zalecamy skontaktowanie się z naszą [społecznością](/links/community) lub uzyskanie pomocy wykwalifikowanego administratora systemu lub programisty poprzez nasz [portal partnera](/links/partner).
+
+///
+
+/// details | Czy mogę zainstalować kilka systemów operacyjnych na moim serwerze VPS?
+
+Instalacja OVHcloud jest możliwa tylko dla jednego systemu operacyjnego.  
+Konfiguracje spersonalizowane mogą być wdrażane po stronie klienta, za co odpowiedzialność ponosi administrator serwera. Usługi OVHcloud nie obejmują zadań administracyjnych, takich jak konfiguracja oprogramowania lub narzędzia zewnętrzne.
+
+W przypadku problemów z konfiguracją i administracją zalecamy kontakt z naszą [społecznością](/links/community) lub uzyskanie pomocy wykwalifikowanego administratora systemu lub programisty poprzez nasz [portal partnera](/links/partner).
+
+///
+
+/// details | Czy mogę zainstalować wirtualne maszyny na serwerze VPS za pomocą oprogramowania do wirtualizacji (takiego jak Proxmox)?
+
+Szablony instalacyjne OVHcloud dla serwerów VPS nie zawierają systemu operacyjnego Proxmox ani podobnego systemu operacyjnego do wirtualizacji.
+
+Konfiguracje spersonalizowane mogą być wdrażane po stronie klienta, za co odpowiedzialność ponosi administrator serwera. Usługi OVHcloud nie obejmują zadań administracyjnych, takich jak konfiguracja oprogramowania lub korzystanie z narzędzi zewnętrznych.
+
+W przypadku problemów z konfiguracją i administracją zalecamy kontakt z naszą [społecznością](/links/community) lub uzyskanie pomocy wykwalifikowanego administratora systemu lub programisty poprzez nasz [portal partnera](/links/partner).
+
+///
+
+/// details | Czy mogę wybrać odpowiedni sprzęt dla mojego VPS (GPU, CPU, itp.) i wykonać upgrade?
+
+Nie można spersonalizować ani zmodyfikować serwera VPS na poziomie sprzętowym.  
+Wybierz serwer [VPS model](/links/bare-metal/vps) zgodnie z Twoimi minimalnymi potrzebami i zaktualizuj go zgodnie z Twoimi potrzebami.
+
+///
+
+/// details | Mój VPS jest zbyt wolny, czy mogę przenieść swój VPS na inny host?
+
+Aby rozwiązać problemy z wydajnością na serwerze VPS, przekaż naszemu zespołowi obsługi klienta konkretne wyniki testów.
+
+Należy pamiętać, że serwer VPS musi zostać uruchomiony w [tryb rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue), aby wykluczyć ewentualne problemy z oprogramowaniem.
+
+Skontaktuj się z zespołem pomocy, [tworząc zgłoszenie w Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help), aby uzyskać pełną listę testów niezbędnych do prawidłowej oceny.
+
+///
+
+/// details | Czy mogę zamówić nowy VPS, przenieść niewykorzystany abonament na stary VPS czy zwrócić należność?
+
+Jest to zazwyczaj możliwe, ale proces ten wymaga [zapytania do naszego zespołu wsparcia za pośrednictwem Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+Zanim przystąpisz do tej operacji, upewnij się, że [przeniosłeś wszystkie dane, których nadal potrzebujesz](/pages/bare_metal_cloud/dedicated_servers/migrate_a_server_to_another) do nowej usługi lub utworzyłeś kopie zapasowe danych.
+
+///
+
+/// details | Czy mogę przenieść mój VPS do innego centrum danych OVHcloud w innym kraju?
+
+Nie można przenieść VPS do innego centrum danych. W tym celu możesz przeprowadzić [migrację ręczną](/pages/bare_metal_cloud/dedicated_servers/migrate_a_server_to_another):
+
+- Pobierz dane z aktualnego VPS.
+- Zamów nowy VPS.
+- Zapisanie danych na nowym VPS.
+- [Rezygnacja z serwera VPS poprzedniej generacji](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+
+///
+
+/// details | Ile dodatkowych adresów IP mogę skonfigurować na serwerze VPS?
+
+Liczba adresów VPS jest ograniczona do [16 Additional IP](/links/network/additional-ip).
+
+Zapoznaj się z przewodnikiem [Skonfiguruj adres IP jako alias](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing) aby uzyskać przykłady konfiguracji adresów IP.
+
+///
+
+/// details | Czy mogę dodać bloki adresów IP do mojego serwera VPS?
+
+Nie można dodawać bloków IP do serwera VPS.  
+Na serwerze VPS można skonfigurować do [16 dodatkowych adresów IP](/links/network/additional-ip).
+
+///
+
+/// details | Czy mogę zmienić serwer VPS przypisany do mojej licencji (Plesk, cPanel)?
+
+Licencje mogą być przenoszone między serwerami, ale istnieją ograniczenia.
+
+Najlepszą opcją jest zalogowanie się do naszego [API console](/links/api) za pomocą danych identyfikacyjnych konta klienta i sprawdzenie, czy licencja może zostać przeniesiona na inny VPS. [Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps).
+
+Po zalogowaniu, skorzystaj z następujących wywołań w zależności od używanego programu:
+
+**Plesk**
+
+> [!api]
+>
+> @api {v1} /license/plesk GET /license/plesk/{serviceName}/canLicenseBeMovedTo
 >
 
-Zaloguj się do [konsoli API OVHcloud](/links/api) przy użyciu danych logowania do konta klienta i wykonaj następujące wywołanie:
+**cPanel**
+
+> [!api]
+>
+> @api {v1} /license/cpanel GET /license/cpanel/{serviceName}/canLicenseBeMovedTo
+>
+
+![Licencja API](images/getlicense.png){.thumbnail}
+
+Wpisz parametry w następujący sposób:
+
+- `serviceName`: wpisz wewnętrzną nazwę licencji (patrz sekcja `Licencje` w [Panelu klienta OVHcloud](/links/manager)).
+- `destinationIp`: Wpisz adres IPv4 usługi docelowej.
+
+Kliknij przycisk `EXECUTE`{.action}.
+
+Jeśli wynik jest ujemny (`false`), powód zostanie uwzględniony w polu `RESPONSE`.
+
+![Licencja API](images/getlicense_response.png){.thumbnail}
+
+Jeśli IP docelowe jest kompatybilne z Twoją licencją ('true`), możesz przenieść je za pomocą odpowiedniego wywołania:
+
+**Plesk**
+
+> [!api]
+>
+> @api {v1} /license/plesk POST /license/plesk/{serviceName}/changeIp
+>
+
+**cPanel**
+
+> [!api]
+>
+> @api {v1} /license/cpanel POST /license/cpanel/{serviceName}/changeIp
+>
+
+///
+
+
+## Pytania dotyczące bezpieczeństwa i kopii zapasowych
+
+/// details | Jak zabezpieczyć serwer VPS?
+
+Domyślnie VPS jest dostarczany z zainstalowanym tylko wybranym systemem operacyjnym. Po dostarczeniu serwera VPS administrator serwera VPS wprowadził odpowiednią konfigurację zabezpieczeń.  
+W tym celu zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
+/// details | Jak mogę pobrać pliki lub kopię danych z serwera VPS?
+
+Istnieje kilka możliwości, na przykład:
+
+- Pobranie przez SFTP: Połącz się z prywatnym serwerem wirtualnym za pomocą klienta programowego dysponującego dostępem SFTP (na przykład [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), następnie prześlij wszystkie pliki z katalogu głównego systemu.
+
+- Pobierz za pomocą `rsync` (narzędzie wiersza poleceń): Wpisz polecenie `rsync -avz -e ssh nazwa użytkownika@vps_ip_address:/ /local_directory/`, aby pobrać z Twojego serwera VPS wszystkie pliki i foldery.
+
+- Pobierz za pomocą opcji **Automatyczne kopie zapasowe**: Zapoznaj się z przewodnikiem [Jak korzystać ze zautomatyzowanych kopii zapasowych na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps), aby pobrać pliki z kopii zapasowej.
+
+- Pobierz za pomocą opcji **Snapshot**: Zapoznaj się z przewodnikiem [Jak korzystać z Snapshotów na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps), aby pobrać snapshot z serwera VPS.
+
+///
+
+/// details | Jak mogę pobrać plik VPS jako plik VM?
+
+Nie można pobrać pliku VM z VPS OVHcloud. Do pobrania pliku obrazu możesz użyć opcji VPS **Snapshot** z poziomu Panelu klienta OVHcloud.
+
+Zapoznaj się z przewodnikiem [Jak używać migawek na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps), aby utworzyć i pobrać migawkę serwera VPS.
+
+Następnie możesz lokalnie przekonwertować pobrany plik snapshot na format odpowiadający Twoim potrzebom.
+
+Zastanów się nad skontaktowaniem z jednym z naszych [partnerów](/links/partner) w celu uzyskania dalszej pomocy.
+
+///
+
+/// details | Jak uzyskać dostęp do usługi backup storage z adresu IP spoza mojej usługi?
+
+Dostęp do usługi backup storage na serwerze VPS (przestrzeń FTP) może być ograniczony do adresów IP przypisanych do usługi w ramach konta klienta OVHcloud.
+
+Aby dodać inne adresy IP, z których można uzyskać dostęp, możesz skorzystać z interfejsu API OVHcloud.  
+Kopia zapasowa może być pobrana z innej usługi za pomocą różnych protokołów (FTP, NFS, CIFS).
+
+> [!warning]
+> Można autoryzować wyłącznie adresy IP OVHcloud.
+>
+
+Zaloguj się do [OVHcloud API console](/links/api) za pomocą danych identyfikacyjnych konta klienta i użyj następującego wywołania:
 
 > [!api]
 >
 > @api {v1} /vps POST /vps/{serviceName}/backupftp/access
 >
 
-Zmień parametry w następujący sposób:
+Edytuj parametry w następujący sposób:
 
-- `serviceName`: wprowadź wewnętrzną nazwę Twojego serwera VPS (`vps-x11x11xyy.vps.ovh.net`).
-- `cifs`: Jeśli używasz tego protokołu, ustaw dla tego parametru wartość `true`.
-- `ftp`: ustaw dla tego parametru wartość `true`, jeśli używasz tego protokołu.
-- `ipBlock`: wprowadź adres IP, który będzie miał do niego dostęp, w formie `203.0.113.100/32`.
-- `nfs`: Jeśli używasz tego protokołu, ustaw dla tego parametru wartość `true`.
+- `serviceName`: wpisz wewnętrzną nazwę serwera VPS (`vps-x11x11xyy.vps.ovh.net`).
+- `cifs`: Ustaw na `true`, jeśli dotyczy.
+- `ftp`: Ustaw na `true`, jeśli jest potrzebny.
+- `ipBlock`: w formie `203.0.113.100/32` wpisz adres IP, który będzie miał dostęp.
+- `nfs`: Ustaw na `true`, jeśli dotyczy.
 
 Kliknij przycisk `EXECUTE`{.action}.
 
-Aby sprawdzić, czy Twój adres IP jest poprawnie autoryzowany, użyj następującego połączenia:
+Aby sprawdzić, czy adres IP jest dozwolony, użyj następującego wywołania:
 
 > [!api]
 >
 > @api {v1} /vps GET /vps/{serviceName}/backupftp/access
 >
+
+///
+</br>
+
+/// details | Czy mój VPS jest chroniony przed zewnętrznymi atakami?
+
+Chociaż OVHcloud stosuje środki bezpieczeństwa w celu ochrony całej infrastruktury, administrator serwera VPS jest odpowiedzialny za bezpieczeństwo aplikacji i danych na nim hostowanych.
+
+- Zapoznaj się z przewodnikiem [Aktywacja i konfiguracja Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network), który jest zintegrowany z naszą infrastrukturą Anty-DDoS, ograniczając ekspozycję Twoich usług na ataki DDoS.
+
+- Ponadto, zapoznaj się z naszymi przewodnikami dotyczącymi [jak skonfigurować własny firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) z `iptable` dla dystrybucji opartych na systemie Linux oraz [jak włączyć firewall w systemie Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
+
+- W przypadku dystrybucji opartych na systemie Linux na serwerze VPS należy postępować zgodnie z instrukcjami zawartymi w przewodniku [How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), aby zastosować dodatkowe środki bezpieczeństwa.
+
+///
+
+/// details | Jak zabezpieczyć swój VPS przed atakami DDoS?
+
+OVHcloud zapewnia kilka funkcji bezpieczeństwa, które chronią Twój VPS przed złośliwym ruchem:
+
+- Ochrona Anty-DDoS: nasze usługi VPS są domyślnie chronione przez naszą [infrastrukturę Anty-DDoS](/links/security/antiddos), która wykrywa i mityguje ataki DDoS w czasie rzeczywistym.
+- Blokowanie IP: [Uniemożliwienie określonym adresom IP lub zakresom IP](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) połączenia z Twoim VPS.
+- Reguły firewall: [skonfiguruj spersonalizowane reguły firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) w celu monitorowania ruchu przychodzącego i wychodzącego bezpośrednio na serwerze VPS.
+- VAC (VPS Anty-DDoS): System VAC zapewnia dodatkową warstwę ochrony przed atakami DDoS, w tym filtrowanie ruchu i ograniczenie szybkości.
+
+///
+
+/// details | Czy chcę używać serwera VPS jako serwera gier. Czy będzie on korzystał z tego samego firewalla, który chroni serwery dedykowane Game?
+
+Ochrona DDoS Game OVHcloud jest dostępna tylko na serwerach dedykowanych Game. Jeśli zamawiasz VPS do hostingu gier, będziesz musiał skonfigurować firewall bezpośrednio w systemie, w zależności od wybranej gry. Więcej informacji zawiera przewodnik [Konfiguracja firewalla w systemie Linux z systemem iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable).
+
+Zaletą VPS w porównaniu do serwera dedykowanego jest możliwość skalowania zasobów w zależności od rzeczywistych zastosowań. Aby skorzystać z mocniejszego systemu, wystarczy kilka kliknięć, aby przejść na wyższy model VPS.
+
+///
 
 ## Sprawdź również
 

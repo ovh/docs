@@ -4,10 +4,6 @@ excerpt: Come implementare applicazioni preinstallate sul tuo VPS
 updated: 2022-08-25
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 OVHcloud offre ai clienti VPS immagini di applicazioni preinstallate per un'implementazione rapida e semplice in pochi click.
@@ -25,6 +21,10 @@ OVHcloud offre ai clienti VPS immagini di applicazioni preinstallate per un'impl
 Dallo [Spazio Cliente OVHcloud](/links/manager) o tramite le API OVHcloud è possibile installare l'applicazione che preferisci. Consulta la guida Iniziare [a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 #### cPanel
+
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
 
 Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di cPanel. Gli step contrassegnati con "\*" saranno seguiti da FAQ.
 
@@ -57,6 +57,10 @@ Per completare la prima configurazione dell'applicazione non sono necessari ulte
 
 #### Plesk
 
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
+
 Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di Plesk. Gli step contrassegnati con "\*" saranno seguiti da FAQ.
 
 1. Apri l'email ricevuta con le credenziali di accesso all'applicazione.
@@ -76,6 +80,10 @@ Per completare la prima configurazione dell'applicazione non sono necessari ulte
 >> È possibile ordinare la licenza Plesk per il tuo VPS dallo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
+
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
 
 Di seguito trovi i primi step per la messa in servizio dell'immagine preinstallata di Docker.
 

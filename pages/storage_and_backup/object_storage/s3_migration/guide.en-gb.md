@@ -115,7 +115,7 @@ region = <region>
 
 > [!primary]
 >
-> To get the list of OVHcloud region endpoints, see [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_locations).
+> To get the list of OVHcloud region endpoints, see [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
 >
 
 You can then test your source provider and your OVHcloud connections using the `rclone config` command by as below:

@@ -1,7 +1,7 @@
 ---
 title: "Implementar o cPanel num VPS"
 excerpt: "Saiba como instanciar um VPS com a aplicação cPanel pré-instalada"
-updated: 2025-07-14
+updated: 2025-09-11
 ---
 
 ## Objetivo
@@ -22,6 +22,10 @@ Graças a uma interface gráfica que permite a automatização dos parâmetros, 
 
 - Ter uma oferta [VPS recente](/links/bare-metal/vps) com uma distribuição [compatível com cPanel](/links/bare-metal/vps-os).
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
+
+> [!warning]
+> Esta funcionalidade está atualmente indisponível para os servidores privados virtuais nas [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Instruções
 

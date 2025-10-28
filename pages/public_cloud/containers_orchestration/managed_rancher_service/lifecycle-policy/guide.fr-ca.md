@@ -1,12 +1,12 @@
 ---
 title: 'Managed Rancher Service supported versions and lifecycle policy'
 excerpt: 'A complete guide including lifecycle policy, release calendar, and supported versions for OVHcloud Managed Rancher Service'
-updated: 2025-08-15
+updated: 2025-10-09
 ---
 
 ## Objective
 
-**This guide details Managed Rancher Service lifecycle policy, supported versions and release calendar.** 
+**This guide details Managed Rancher Service lifecycle policy, supported versions and release calendar.**
 
 ### Managed Rancher Service lifecycle policies
 
@@ -43,7 +43,8 @@ This schedule is subject to change and is provided for informational purposes on
 | 2.11            | 2025-03-31            | 2025-08-14       | 2026-04            | 2026-06         |
 | 2.10            | 2024-11-19            | 2025-01-30       | 2025-11            | 2026-Q1         |
 | 2.9             | 2024-07-30            | 2025-01-15       | 2025-08-14         | 2025-11         |
-**MRS release date:** Estimated date when this Rancher version is available for OVHcloud Managed Rancher Service. 
+
+**MRS release date:** Estimated date when this Rancher version is available for OVHcloud Managed Rancher Service.
 
 - The **Date format** follows the [international standard for numeric dates](https://en.wikipedia.org/wiki/ISO_8601#Week_dates). Dates listed by [quarter year](https://en.wikipedia.org/wiki/Calendar_year#Quarter_year) are estimates and will be updated once specific dates are known.
 - The abbreviation **TBD** is used when a date is to be determined.
@@ -61,6 +62,26 @@ Depending on the version of Rancher, the OVHcloud Managed Kubernetes Service (MK
 - **Rancher 2.9.x** -> MKS 1.28 to 1.30
 - **Rancher 2.10.x** -> MKS 1.28 to 1.31
 - **Rancher 2.11.x** -> MKS 1.30 to 1.32
+
+#### Support
+
+In addition to the OVHcloud Affiliated Companies listed in the OVHcloud Specific conditions for Public Cloud, SUSE Software Solutions Ireland Ltd, the publisher of the Rancher software, as well as its subsidiaries listed below, may, in exceptional cases and with the Client’s explicit consent, access certain Client data as part of the support provided to OVHcloud in the context of the Service.
+
+| SUSE Affiliate | Location |
+|-----------------|-----------------------|
+| SUSE Software Solutions Germany GmbH      | Germany            |
+| SUSE Linux s.r.o.	SUSE LINUX | Czech Republic           |
+| SUSE Software Solutions France Sarl          | France           |
+| SUSE Software Solutions Ireland   | Ireland            |
+| SUSE Software Solutions Japan          | Japan           |
+| SUSE (Bulgaria)          | Bulgaria           |
+| SUSE Software Solutions Australia         | Australia           |
+| SUSE Software Solutions Singapore          | Singapore           |
+| SUSE Software Solutions Brasil         | Brasil           |
+| SUSE Software Solutions Spain          | Spain           |
+| SUSE Software Solutions India Private Ltd      | India           |
+| SUSE Software Solutions UK Ltd          | UK           |
+| SUSE Software Solutions New Zealand Branch      | New-Zealand           |
 
 ## Go Further
 

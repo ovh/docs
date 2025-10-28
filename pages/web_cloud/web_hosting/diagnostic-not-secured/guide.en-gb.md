@@ -1,7 +1,7 @@
 ---
 title: What to do if you get a "Your connection is not private" error?
 excerpt: How to react to a security error message on your website
-updated: 2025-04-28
+updated: 2025-10-09
 ---
 
 ## Objective <a name="objective"></a>
@@ -35,17 +35,34 @@ To solve this issue, you will need to:
 1. Determine the hosting plan to which your domain name is linked, in order to intervene on the correct server.
 2. Create, activate or renew a [SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting) for your domain name on the concerned hosting plan.
 
-### Step 1: Check the hosting plan attached to your domain name
+### 1: Check the hosting plan attached to your domain name
 
 #### Check the hosting IP address
 
 The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](/links/web/hosting). For this reason, you will need to check the IP address of the server your [domain name](/links/web/domains) is attached to.
 
-To find the IP address of your [OVHcloud hosting plan](/links/web/hosting), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](/links/manager), then on `Hosting plans`{.action}.
+To find the IP address of your [OVHcloud hosting plan](/links/web/hosting), click on the tabs below to view each of the **3** steps.
 
-In the `General information`{.action} tab, note the IPv4 and/or IPv6 address of your web hosting.
-
-![hosting-general-informations](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> In the **General information** box, you will see the addresses under **IPv4** and **IPv6**.
+>>
+>> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> Note the IPv4 and/or IPv6 address, then continue reading the guide.
 
 #### Check the IP address in the DNS zone
 
@@ -68,7 +85,7 @@ Note the target of the `A` record for your domain name:
 |In the `DNS Zone`{.action} tab, a message indicates that your domain uses other [DNS](/pages/web_cloud/domains/dns_zone_edit) servers and these do not appear as "ns **?** .ovh.net" or "dns **?**.ovh.net" :<br><br>![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Contact your webmaster or the [OVHcloud partners](/links/partner) for further information.|
 |Your domain name does not appear in the `Domain names`{.action} section of your [OVHcloud Control Panel](/links/manager).<br><br>Or your domain's `DNS Zone`{.action} tab appears as follows:<br><br>![dns](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|It means that your domain name is not managed from your [OVHcloud Control Panel](/links/manager).<br><br>Check if it is managed from one of your other [OVHcloud customer accounts](/links/manager), if you have created more than one of them.<br><br>You can also check the registrar of your domain name and its actual DNS servers with our [WHOIS tool](/links/web/domains-whois).<br><br>If necessary, contact your webmaster or the [OVHcloud partners](/links/partner) about this.|
 
-### Step 2: check your Web Hosting plan’s SSL certificate <a name="step2"></a>
+### 2: check your Web Hosting plan’s SSL certificate <a name="step2"></a>
 
 In the `General information`{.action} tab of the concerned hosting plan within your [OVHcloud Control Panel](/links/manager), check the `SSL certificate` section:
 

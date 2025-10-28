@@ -1,7 +1,7 @@
 ---
 title: 'Optimizar el rendimiento de su sitio web'
 excerpt: 'Descubra cómo analizar la latencia de su sitio web y cómo mejorarla'
-updated: 2024-01-08
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -20,7 +20,7 @@ Esta guía le ayudará a obtener un entendimiento básico de los puntos que pued
 
 ## Procedimiento
 
-### Paso 1: definir el alcance
+### 1 - Definir el alcance
 
 #### Preguntas que debe hacerse a sí mismo:
 
@@ -50,7 +50,7 @@ Proporcionamos recomendaciones sobre qué oferta de hospedaje web utilizar para 
 
 Puede encontrar más información sobre qué plan elegir en [esta página](/links/web/hosting-best-web).
 
-### Paso 2: comprobar la versión del lenguaje PHP
+### 2 - Comprobar la versión del lenguaje PHP
 
 Utilizar la última versión compatible del lenguaje PHP en su sitio puede tener un efecto significativo en el rendimiento.
 Para comprobar si su sitio web es compatible con la última versión del lenguaje PHP, puede consultar [la documentación oficial del PHP](https://php.net/eol.php).
@@ -74,7 +74,7 @@ Para cambiar al uso de PHP-FPM en la versión _estable_ o para obtener informaci
 
 El archivo _.ovhconfig_ opera en la raíz del paquete de hospedaje o en un subdirectorio de nivel 1 (p. ej.: _/www/_), pero no en directorios de nivel 2 o superior (p. ej.: _/www/test/_ y _/www/test/test2/_)
 
-### Paso 3: comprobar el contenido multimedia (imágenes, vídeos, etc.)
+### 3 - Comprobar el contenido multimedia (imágenes, vídeos, etc.)
 
 A la hora de acceder a un sitio web, el navegador debe descargar todo el contenido.
 
@@ -86,19 +86,40 @@ Usted elige los que mejor se adapten a sus necesidades específicas.
 
 Puede encontrar más información sobre este tema más adelante, en el paso 5.
 
-### Paso 4: optimizar las secuencias de comandos
+### 4 - Optimizar las secuencias de comandos
 
 Correlacione los gráficos de recursos utilizados de su hospedaje (más información a continuación) para descubrir el origen de los retrasos y consulte los registros de las fechas de dichos picos.
 
 Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](/links/manager).
 
-Cómo acceder a las estadísticas y los logs:
+Cómo acceder a las estadísticas y logs:
 
-1. Haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente.
-2. En la página que se abre, haga clic en la pestaña `Estadísticas y logs`{.action}.
-3. Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las estadísticas de visita del sitio web o en `Ver los logs`{.action} para consultar los logs disponibles para su alojamiento web.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las estadísticas de visita del sitio web o en `Ver los logs`{.action} para consultar los logs disponibles para su alojamiento web.
+>>
+>> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Cómo acceder a los gráficos:
 
@@ -129,7 +150,7 @@ No se olvide de seleccionar el nombre de su base de datos y el periodo deseado.
 
 - **Peticiones SQL**: Muestra el número de peticiones.
 
-### Paso 5: comprobar las peticiones de la red
+### 5 - Comprobar las peticiones de la red
 
 Una herramienta de análisis muy útil es el [monitor de red](https://developer.mozilla.org/es/docs/Tools/Monitor_de_Red), el cual está directamente integrado en el navegador Mozilla Firefox y permite analizar con detalle el tiempo de carga de una página web.
 
@@ -148,7 +169,7 @@ Como resultado, mejorará los tiempos de respuesta para los visitantes de todo e
 
 Descubra nuestra [solución de red de distribución de contenidos (CDN) aquí](/links/web/hosting-options-cdn).
 
-### Paso 6: comprobar el sistema de gestión de contenidos (CMS) y los complementos utilizados
+### 6 - Comprobar el sistema de gestión de contenidos (CMS) y los complementos utilizados
 
 _Este paso es opcional si no está utilizando un sistema de gestión de contenidos._
 
@@ -158,7 +179,7 @@ Para garantizar que nuestra oferta de hospedaje se adapte a las necesidades de s
 
 - **Desactivación de los complementos no usados:** Podría ser una buena idea desactivar o, incluso, eliminar los complementos no utilizados para mejorar el rendimiento de su sitio web. Esto evitará la descarga de elementos innecesarios.
 
-### Paso 7: optimizar su base de datos
+### 7 - Optimizar su base de datos
 
 _Este paso es opcional si no está usando una base de datos._
 Puede acceder a su base de datos usando PHPMyAdmin. Las instrucciones sobre cómo usar PHPMyAdmin escapan del ámbito de esta guía, por lo que no se proporcionan más detalles.

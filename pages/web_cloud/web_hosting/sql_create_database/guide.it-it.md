@@ -1,7 +1,7 @@
 ---
 title: "Creare un database su un hosting Web"
 excerpt: "Questa guida ti mostra come creare un database sul tuo hosting Web OVHcloud"
-updated: 2024-09-05
+updated: 2025-10-08
 ---
 
 ## Obiettivo
@@ -21,6 +21,8 @@ Un database (BDD) è utilizzato per archiviare elementi dinamici (dati di connes
 ### Step 1 - Accedi alla scheda di gestione dei database di un hosting Web
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi creare un database e poi clicca sulla scheda `Database`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 La tabella di questa sezione contiene tutti i database creati con il tuo hosting Web.
 

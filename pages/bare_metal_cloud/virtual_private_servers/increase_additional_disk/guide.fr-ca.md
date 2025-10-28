@@ -17,6 +17,10 @@ Si vous avez atteint la capacité maximale de votre disque additionnel, vous pou
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir accès à votre VPS en SSH ou en RDP pour l'administration.
 
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## En pratique
 
 Les étapes ci-dessous supposent que vous avez configuré un disque additionnel en suivant les instructions de [ce guide](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk).

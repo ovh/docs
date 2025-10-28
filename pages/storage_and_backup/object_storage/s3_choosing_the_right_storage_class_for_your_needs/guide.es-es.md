@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Elegir la clase de almacenamiento adecuada para sus necesidades (EN)
-updated: 2025-07-03
+updated: 2025-09-18
 ---
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
@@ -38,7 +38,7 @@ This offer is suitable for the following use cases: long-term storage, backups, 
 | **High Performance** | AI & Analytics, Datalake, High power Computing Multimedia / Content Platform | milliseconds | 1-AZ | 1-AZ regions: 99,9% | No | No | Object-level, lifecycle management support |
 | **Standard** | Media/content storage, datalake, website, backup, logs, application metrics | milliseconds | 1-AZ and 3-AZ | 1-AZ regions: 99,9% - 3-AZ regions: 99,99% | No | No | Object-level, lifecycle management support |
 | **Infrequent Access** | Long-term storage, backups, disaster recovery. | milliseconds | 1-AZ and 3-AZ | 1-AZ regions: 99,9% - 3-AZ regions: 99,99% | 30 days | Yes | Object-level, lifecycle management support |
-| **Cold Archive** | Very long-term storage, backups, disaster recovery. | hours | 4 dedicated DCs | 99,9% | 90 days | Yes | Bucket-level, no lifeycle management support yet|
+| **Cold Archive** | Very long-term storage, backups, disaster recovery. | hours | 4 dedicated DCs | 99,9% | 180 days | Yes | Bucket-level, no lifeycle management support yet|
 
 More details about available regions [here](/pages/storage_and_backup/object_storage/s3_location).
 

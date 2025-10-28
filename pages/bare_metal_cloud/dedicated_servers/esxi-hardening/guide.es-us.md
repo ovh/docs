@@ -1,75 +1,68 @@
 ---
-title: 'Mantener y proteger su servidor dedicado ESXi desde el primer inicio'
+title: 'Mantener y proteger su servidor dedicado ESXi desde el primer inicio (EN)'
 excerpt: 'Cómo proteger eficazmente su servidor dedicado ESXi'
-updated: 2024-09-13
+updated: 2025-09-15
 ---
 
-> [!warning]
-> El hipervisor ESXi ya no es compatible con OVHcloud. Más información en [esta página dedicada](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
+## Objective
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
+The purpose of this guide is to help you optimise security for your ESXi system.
 
-## Objetivo
+In particular, this guide explains how to:
 
-Esta guía explica cómo mejorar la seguridad de su sistema ESXi.
+- Restrict access to your ESXi server to a specific IP address or network range.
+- Disable services that increase your server's attack surface.
 
-En particular, esta guía explica cómo:
-
-- Limitar el acceso a su ESXi a una dirección IP o rango de red específico;
-- Desactivar servicios que aumenten la superficie de ataque del servidor.
-
-Para ello, no solo nos basaremos en las funciones a bordo que ofrece VMware, sino también en las que ofrece OVHcloud.
+We will do this using the on-board features offered by VMware, as well as those offered by OVHcloud.
 
 > [!warning]
 > 
-> Recientemente, los sistemas ESXi han sido víctimas de un fallo que grupos malintencionados han explotado muy rápidamente a través de las redes públicas.
+> Recently, ESXi systems fell victim to a security flaw that malicious groups exploited very quickly across public networks.
 >
-> Más información sobre el ataque en [una FAQ adicional (EN)](/pages/bare_metal_cloud/dedicated_servers/faq-esxi).
+> You can find more information on this attack in [an additional FAQ](/pages/bare_metal_cloud/dedicated_servers/faq-esxi).
 >
 
-### Recordatorio de las buenas prácticas de seguridad:
+### Security best practices reminder
 
-- Actualice regularmente sus sistemas ESXi.
-- Restrice el acceso solo a las direcciones IP de confianza.
-- Desactive los puertos y servicios no utilizados.
-- Asegúrese de que los accesos a sus servidores o sus dispositivos de red sean limitados, controlados y protegidos con contraseñas sólidas.
-- Guarde sus datos críticos en discos externos y servidores de backup protegidos y aislados de internet.
+- Update your ESXi systems regularly.
+- Restrict access to trusted IP addresses only.
+- Disable unused ports and services.
+- Ensure access to your servers or network equipment is limited, controlled and protected with strong passwords.
+- Back up your critical data to protected, isolated external disks and backup servers.
 
-**Opcional**:
+**Optional**:
 
-- Ponga en marcha las soluciones de registro necesarias para controlar los eventos acaecidos en sus servidores críticos y sus dispositivos de red.
-- Cree packs de seguridad para la detección de acciones maliciosas, intrusiones (IPS/NIDS) y el control del ancho de banda del tráfico de red.
+- Set up the necessary logging solutions to monitor events on your critical servers and network equipment.
+- Set up security packs for malicious action detection, intrusion detection (IPS/NIDS) and network traffic bandwidth control.
 
-## Requisitos
+## Requirements
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Tener un servidor dedicado con la solución ESXi desplegada.
-- Tener contratado un servicio compatible con nuestra funcionalidad de [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) si quiere utilizarlo para filtrar.
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A dedicated server with the ESXi solution deployed
+- An offer compatible with our [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) feature, if you would like to use it for filtering
 
-## Procedimiento
+## Instructions
 
-### Protección antiintrusión nativa
+### Native intrusion protection
 
-Recordatorio de su definición y su principio de funcionamiento:
+Reminder of its definition and operating principle:
 
 > [!primary]
 > 
-> El sistema ESXi incluye un mecanismo de seguridad asociado a la cuenta de administrador.
-> En efecto, en caso de varios intentos de acceso erróneos, la cuenta de administrador se bloqueará temporalmente.
-> Este mecanismo permite proteger su sistema y así evitar los intentos de conexiones malintencionadas.
+> The ESXi system includes a security mechanism linked to the administrator account.
+> This is because, in the event of several incorrect access attempts, the administrator account is temporarily locked.
+> This mechanism helps protect your system from malicious connection attempts.
 
 > [!warning]
 > 
-> Si se activa este sistema y desea conectarse a su ESXi inmediatamente, deberá desbloquear manualmente la cuenta de administrador.
+> If this system triggers and you want to log into your ESXi immediately, you will need to manually unlock the administrator account.
 >
-> Para ello, deberá [reiniciar](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reinicio-del-servidor-dedicado) el servidor ESXi desde el área de cliente de OVHcloud.
+> To do this, you will need to [reboot](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#restarting-your-dedicated-server) your ESXi server via the OVHcloud Control Panel.
 > 
 
-Puede consultar el historial de los logs de acceso en los siguientes archivos desde un intérprete de órdenes SSH:
+You can view the access log history in the following files via SSH:
 
-- `/var/run/log/vobd.log` contiene los logs que pueden utilizarse para supervisar y resolver problemas:
+- `/var/run/log/vobd.log` contains the logs that can be used for monitoring and troubleshooting:
 
 ```
 2023-02-13T16:22:22.897Z: [UserLevelCorrelator] 410535559us: [vob.user.account.locked] Remote access for ESXi local user account 'root' has been locked for 900 seconds after 6 failed login attempts.
@@ -77,7 +70,7 @@ Puede consultar el historial de los logs de acceso en los siguientes archivos de
 2023-02-13T16:22:22.897Z: [UserLevelCorrelator] 410535867us: [esx.audit.account.locked] Remote access for ESXi local user account 'root' has been locked for 900 seconds after 6 failed login attempts.
 ```
 
-- `/var/run/log/hostd.log` contiene los logs del host ESXi (tareas, acceso a la interfaz web, etc.):
+- `/var/run/log/hostd.log` contains ESXi host logs (tasks, access to the web interface, etc.):
 
 ```
 2023-02-21T08:44:19.711Z error hostd[2101004] [Originator@6876 sub=Default opID=esxui-d48c-26a4] [module:pam_lsass]pam_do_authenticate: error [login:root][error code:2]
@@ -86,85 +79,95 @@ Puede consultar el historial de los logs de acceso en los siguientes archivos de
 2023-02-21T08:44:19.712Z info hostd[2101004] [Originator@6876 sub=Vimsvc.ha-eventmgr opID=esxui-d48c-26a4] Event 175 : Cannot login root@xxx.xxx.xxx.xxx
 ```
 
-Toda esta información también está disponible en el panel de administración web. Haga clic en el menú `Host`{.action} y acceda a la sección `Monitor`{.action} y haga clic en `Logs`{.action}.
+All this information is also available through the web administration interface. Click the `Host`{.action} menu and navigate to the `Monitor`{.action} section, and then click `Logs`{.action}.
 
-![interfaz](images/gui_logs_.png){.thumbnail}
+![interface](images/gui_logs_.png){.thumbnail}
 
-### La solución Network Firewall
+### The Network Firewall solution
 
 > [!primary]
 >
-> Le recordamos que el Network Firewall no se aplica en la red de OVHcloud. Por lo tanto, las reglas configuradas no afectan a las conexiones procedentes de esta red interna.
+> As a reminder, the Network Firewall is not taken into account within the OVHcloud network. As a result, the configured rules do not affect connections from this internal network.
 >
 
-Le ofrecemos activar y utilizar nuestra solución de filtrado [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
-Esta solución le permitirá gestionar fácilmente los accesos legítimos, además de los que haya configurado a través de su sistema ESXi.
+You can enable and use our [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) filtering solution.
+This solution will allow you to easily manage legitimate access, in addition to the access you have set up through your ESXi system.
 
-También evitará bloquear inesperadamente su cuenta de administrador en caso de ataque.
+It will also prevent you from unexpectedly locking your administrator account in the event of an attack.
 
-Se recomienda filtrar los accesos legítimos de esta manera:
+It is recommended that you filter legitimate access in this way:
 
-- La regla 1 (Priority 0) autoriza a las redes externas de confianza a acceder al sistema ESXi.
-- La regla 2 (Priority 1) bloquea todo lo demás.
+- Rule 1 (Priority 0) allows trusted external networks to access your ESXi system.
+- Rule 2 (Priority 1) blocks everything else.
 
 ![Network_Firewall](images/firewall_network_.png){.thumbnail}
 
-### Filtrado en ESXi
+### Filtering in ESXi
 
 > [!primary]
 >
-> También puede filtrar los accesos al sistema ESXi a través del firewall integrado.
-> En función de su uso, también podrá desactivar los servicios innecesarios.
+> You can also filter access to your ESXi system with the built-in firewall.
+> You can also disable unnecessary services, depending on your usage.
 >
 
 > [!warning]
 > 
-> Es altamente recomendable desactivar los servicios **SSH** y **SLP**.
-> Si, a pesar de todo, sigue utilizando el servicio SSH, limite al máximo su uso y sus accesos.
-> Esto también se aplica a los accesos al **intérprete**.
-> Preste especial atención a lo estrictamente necesario para cada una de sus necesidades.
+> We strongly advise disabling **SSH** and **SLP** services.
+> If you still use the SSH service, restrict its use and access as much as possible.
+> This also applies to **shell** access.
+> Prioritise only what is strictly necessary for each of your needs.
 
-#### Manipulación a través de la interfaz gráfica
+#### Manipulation via the graphical interface
 
-**Servicios**
+> [!primary]
+>
+> In ESXi 8.0 GA and newer, the SLP service is hardened, disabled by default, and filtered by the ESXi firewall. This means that you no longer have to disable it manually. You can find more information on [this official VMware blog post](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+>
 
-Haga clic en el menú `Host`{.action} y acceda a la sección `Manage`{.action} y, seguidamente, haga clic en `Services`{.action}.
+**Services**
 
-Encuentre en la lista el servicio `TSM-SSH` y haga clic derecho en la línea asociada.
+Click the `Host`{.action} menu and navigate to the `Manage`{.action} section, then click `Services`{.action}.
 
-Para el servicio, haga clic en `Stop`{.action}.
+In the list, find the `TSM-SSH` service and right-click on the associated line.
+
+Stop the service by clicking `Stop`{.action}:
 
 ![services_ssh](images/stop_service.png){.thumbnail}
 
-Seleccione la `Policy` y edítela como en el ejemplo que se muestra.
+Select the `Policy`, then edit it as shown in the example.
 
-Seleccione la opción `Start and stop manually`{.action} para evitar que el servicio esté activo al iniciar el servidor.
+Choose the `Start and stop manually`{.action} option to prevent the service from being active when the server starts.
 
 ![services_ssh](images/ssh_disabled_.png){.thumbnail} 
 
-Aplique los mismos parámetros para el servicio `slpd`.
+Apply the same settings for the `slpd` service:
 
 ![services_slp](images/slpd_.png){.thumbnail}
 
-**Reglas de cortafuegos**
+**Firewall rules**
 
-Haga clic en el menú `Networking`{.action}, luego en `Firewall Rules`{.action} y seleccione `Edit settings`{.action} para cada uno de los servicios que desea proteger:
+Click the `Networking`{.action} menu, then `Firewall rules`{.action}, and choose `Edit settings`{.action} for each service you want to protect:
 
-![rulas](images/firewall_web_.png){.thumbnail}
+![rules](images/firewall_web_.png){.thumbnail}
 
-Configure la regla para añadir únicamente las direcciones IP o las redes que deban tener acceso al sistema ESXi.
+Edit the rule to add only IP addresses or networks that need access to your ESXi system.
 
-Ejemplo que solo autoriza las conexiones desde la IP 192.168.1.10:
+Example that only allows connections from IP 192.168.1.10:
 
 ![custom](images/custom_fw_rule.png){.thumbnail}
 
-#### Manipulación a través del intérprete de órdenes
+#### Shell manipulation
 
-**Servicios**
+**Services**
 
-Desactive los servicios innecesarios:
+> [!primary]
+>
+> In ESXi 8.0 GA and newer, the SLP service is hardened, disabled by default, and filtered by the ESXi firewall. This means that you no longer have to disable it manually. You can find more information on [this official VMware blog post](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+>
 
-- Servicio SLP
+Disable unnecessary services:
+
+- SLP Service
 
 ```bash
 /etc/init.d/slpd stop
@@ -172,7 +175,7 @@ esxcli network firewall ruleset set -r CIMSLP -e 0
 chkconfig slpd off
 ```
 
-- Servicio SSH
+- SSH Service
 
 ```bash
 /etc/init.d/SSH stop
@@ -180,7 +183,7 @@ esxcli network firewall ruleset set -r sshServer -e 0
 chkconfig SSH off
 ```
 
-Compruebe todos los servicios activos al arrancar:
+Check all active services at startup:
 
 ```bash
 chkconfig --list | grep on
@@ -188,39 +191,39 @@ chkconfig --list | grep on
 <br/>
 <br/>
 
-**Reglas de cortafuegos**
+**Firewall rules**
 
-Establezca las reglas de firewall existentes:
+View existing firewall rules:
 
 ```bash
 esxcli network firewall ruleset list
 esxcli system account list
 ```
 
-> Explicaciones sobre los cambios/ajustes de las reglas de acceso: 
+> Explanations for changing/adapting access rules:
 > 
-> - Servicio `vSphereClient`: este servicio corresponde a la interfaz web de administración del puerto 443 (HTTPS).
-> - Servicio `SSHServer`: este servicio corresponde a los accesos por SSH al puerto 22.
+> - The `vSphereClient` service: This service corresponds to the web administration interface on port 443 (HTTPS).
+> - The `sshServer` service: This service corresponds to SSH access on port 22.
 
-Ejemplo de servicio vSphereClient:
+Example with the vSphereClient service:
 
 ```bash
 esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
 
-Asegúrese de que la regla de cortafuegos esté activa:
+Ensure that the firewall rule is active:
 
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --enabled true
 ```
 
-Muestra la lista de direcciones IP autorizadas para esta regla:
+Display the list of authorised IPs for this rule:
 
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
 
-Resultado:
+Result:
 
 ```
 Ruleset        Allowed IP Addresses
@@ -228,25 +231,25 @@ Ruleset        Allowed IP Addresses
 vSphereClient  All
 ```
 
-Cambie el estado de la etiqueta desactivándola:
+Change the status of the tag by disabling it:
 
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
 
-Autorice exclusivamente la dirección IP legítima 192.168.1.10:
+Authorise only the legitimate IP address 192.168.1.10:
 
 ```bash
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
 
-Compruebe la presencia de la dirección en la lista de acceso:
+Check the access list for the address:
 
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
 
-Resultado:
+Result:
 
 ```
 Ruleset        Allowed IP Addresses
@@ -256,15 +259,15 @@ vSphereClient  192.168.1.10
 <br/>
 <br/>
 
-Si quiere utilizar el servicio SSH, le explicamos cómo configurar un acceso por llave SSH.
+If you still want to use the SSH service, we will explain here how to set up SSH key access.
 
-Genere las llaves en la máquina que desea conectarse al servidor ESXi. Para una seguridad máxima, debe privilegiar el algoritmo **ECDSA** de 521 bits:  
+Generate the keys on the machine that needs to connect to the ESXi server. The 521-bit **ECDSA** algorithm should be used for maximum security:  
 
 > [!warning]
-> La autenticación funciona con un par de claves: una pública y otra privada.
-> No comparta en ningún caso su llave **privada**, esta debe permanecer en la máquina en la que se haya generado.
+> Authentication works with a key pair: one public and one private.
+> Do not share your **private** key, it must remain on the machine where it was generated.
 
-Ejecute el siguiente comando:
+Run the following command:
 
 ```bash
 ssh-keygen -t ecdsa -b 521 -C "key-ecdsa-esxi-host" -f /path-to-my-key/key-ecdsa
@@ -275,14 +278,14 @@ Generating public/private ecdsa key pair.
 Enter file in which to save the key (/path-to-my-key/key-ecdsa_rsa):
 ```
 
-Introduzca una contraseña sólida:
+Enter a strong password:
 
 ```
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
 
-En las máquinas a las que quiera conectarse, solo deberá introducir la llave pública (key-ecdsa.pub).
+Only the public key (key-ecdsa.pub) must be sent or stored on the machines you want to connect to.
 
 ```
 Your identification has been saved in /path-to-my-key/key-ecdsa.
@@ -291,14 +294,14 @@ The key fingerprint is:
 SHA256:******************************************* key-ecdsa-esxi-host
 ```
 
-Transfiera la llave pública al host ESXi para que pueda ser declarada de confianza:
+Transfer the public key to your ESXi host so that it can be declared as trusted:
 
 ```bash
 cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> /etc/ssh/keys-root/authorized_keys'
 ```
 
-## Más información
+## Go further
 
-Para más información sobre las buenas prácticas de seguridad, consulte [esta guía](https://core.vmware.com/security-configuration-guide) de VMware.
+You can find even more details on security best practices in [this VMware suggested guide](https://core.vmware.com/security-configuration-guide).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installazione e configurazione di Cecil, un generatore di siti statici (SSG) in PHP"
 excerpt: "Scopri come Cecil ti permette di creare il tuo sito statico con l'aiuto di un motore template moderno (Jamstack)"
-updated: 2023-12-08
+updated: 2025-10-27
 ---
 
 ## Obiettivo
@@ -17,14 +17,14 @@ Un sito Web composto principalmente da pagine Web statiche garantisce tempi di c
 - Disporre di una [offerta di hosting Web OVHcloud](/links/web/hosting) con accesso SSH Questo accesso permette di installare online una o più soluzioni alternative a quelle proposte di default nelle nostre soluzioni di hosting Web.
 - Aver familiarità con l'inserimento da riga di comando
 - Essere in grado di trasferire file in FTP con un cliente come [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
-- Impostare la tua zona DNS per far puntare il tuo dominio (o sottodominio) verso il tuo hosting Web condiviso. Questa operazione è utile se vuoi ospitare più siti in [multisiti](/pages/web_cloud/web_hosting/multisites_configure_multisite) sul tuo hosting web condiviso.
+- Configurare la vostra zona DNS in modo che il vostro nome di dominio (o sottodominio) punti al vostro hosting web condiviso. Questo risulta particolarmente utile se desiderate ospitare diversi [siti web](/pages/web_cloud/web_hosting/multisites_configure_multisite) sul vostro hosting web condiviso.
 - Installare preventivamente [Comporre](https://getcomposer.org/) con il file `composer.phar` alla radice del tuo hosting Web condiviso o nella cartella di destinazione del tuo dominio.
 
 ## Procedura
 
-I [hosting web condivisi](/links/web/hosting) permettono di dichiarare domini o sottodomini in multisiti. Per implementare il tuo sito Web con **Cecil** è necessario un dominio o un sottodominio.
+Un [hosting web condiviso](/links/web/hosting) permette di dichiarare domini o sottodomini sui siti web che contiene. È necessario disporre di un dominio o sottodominio per distribuire il vostro sito web realizzato con **Cecil**.
 
-Per aiutarti a dichiarare un dominio o un sottodominio su un multisito sul tuo hosting, consulta la nostra pagina "[Condivisione dell'hosting tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+Per aiutarvi a dichiarare un dominio o un sottodominio su uno dei siti web del vostro hosting, consultate la nostra pagina « [Condividere il proprio hosting tra diversi siti](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 ### Crea la directory in cui saranno presenti i tuoi file
 
@@ -87,7 +87,7 @@ Puoi visualizzare il risultato accedendo al tuo dominio:
 
 Per visualizzare il risultato del tuo sito sul browser, modifica il puntamento del tuo dominio o sottodominio nella directory `_site` creata precedentemente al momento dell'installazione di **Cecil**.
 
-Se il tuo dominio o sottodominio è ospitato in OVHcloud, consulta le nostre guide relative alla [configurazione DNS](/pages/web_cloud/domains/dns_zone_edit) e all'installazione di un [multisito sul tuo hosting web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Se il vostro nome di dominio o sottodominio è ospitato da OVHcloud, consultate i nostri guide riguardanti la [configurazione DNS](/pages/web_cloud/domains/dns_zone_edit) e l'implementazione di un [sito web sul vostro hosting web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ### Configura il tuo sito
 

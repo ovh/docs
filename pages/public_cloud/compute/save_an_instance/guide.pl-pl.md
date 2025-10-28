@@ -1,12 +1,22 @@
 ---
 title: 'Tworzenie kopii zapasowej instancji'
 excerpt: 'Dowiedz się, jak utworzyć kopię zapasową instancji Public Cloud w Panelu klienta OVHcloud'
-updated: 2025-04-28
+updated: 2025-10-14
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie
 
@@ -16,8 +26,9 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 
 ## Wymagania początkowe
 
-- Posiadanie instancji [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+- Posiadanie instancji [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud.
+- Dostęp do [Panelu client OVHcloud](/links/manager).
+- CLI OpenStack. Skorzystaj z naszego przewodnika "[Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)". (opcjonalnie)
 
 ## W praktyce
 
@@ -27,25 +38,116 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 > Ta opcja jest dostępna tylko przez **Cold Snapshot** dla instancji Metal. Instancja Metal przejdzie do trybu Rescue. Po wykonaniu kopii zapasowej instancja zostanie zrestartowana w trybie normalnym.
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Instancje`{.action} w menu po lewej stronie.
+> [!primary]
+>
+> Dostępne są dwa typy kopii zapasowych:
+>
+> - Lokalna: Kopia zapasowa lokalna jest przechowywana w tej samej regionie co Twoja instancja.
+> - Dystansowa: Kopia zapasowa dystansowa automatycznie tworzy kopię kopii zapasowej lokalnej w innej, wybranej przez Ciebie regionie.
+>
+> Każda kopia zapasowa jest rozliczana oddzielnie. Kopia zapasowa dystansowa zostanie rozliczona zgodnie z opłatami za przechowywanie danych w wybranej regionie dystansowej.
+>
+> Obecnie tworzenie kopii zapasowej dystansowej nie jest dostępne przez Panelu Klienta OVHcloud. Można to wykonać tylko za pomocą API OVHcloud i Openstack.
 
-Kliknij przycisk `...`{.action} po prawej stronie instancji i wybierz `Utwórz kopię zapasową`{.action}.
-
-![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
-
-Wpisz nazwę kopii zapasowej na następnej stronie. Zapoznaj się z informacjami dotyczącymi cennika i kliknij na `Zatwierdź`{.action}.
-
-![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
-
-Nie jest możliwe monitorowanie postępu tworzenia kopii zapasowej w czasie rzeczywistym. Jednak w sekcji `Instance Backup`{.action} pod **Compute** w menu po lewej stronie, status `Trwa tworzenie kopii` będzie wyświetlany podczas procesu.
-
-![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
-
-Po utworzeniu kopii zapasowej będzie ona dostępna w sekcji `Instance Backup`{.action} pod **Compute** w menu po lewej stronie.
-
-![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
+> [!tabs]
+> Przez Panelu Klienta OVHcloud
+>>
+>> Zaloguj się do [Panelu Klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.<br>
+>> Kliknij `Instancje`{.action} w lewym menu.<br>
+>> Na stronie instancji kliknij przycisk `...`{.action} obok instancji i wybierz `Utwórz kopię zapasową`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
+>>
+>> /// details | Lokalna kopia zapasowa
+>>
+>> Podaj nazwę kopii zapasowej, sprawdź informacje o cenach i kliknij `Potwierdź`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createbackup2bis.png){.thumbnail}
+>>
+>> ///
+>>
+>> Nie można śledzić postępu kopii zapasowej w czasie rzeczywistym. Można jednak sprawdzić jej status w sekcji `Instance Backup`{.action} pod sekcją **Compute** w lewym menu, gdzie zostanie wyświetlony stan `Kopia zapasowa w trakcie`.
+>>
+>> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>>
+>> Po zakończeniu kopii zapasowej będzie ona dostępna w sekcji `Instance Backup`{.action} pod sekcją **Compute** w lewym menu.
+>>
+>> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
+>>
+> Przez API OVHcloud <a name="createinstanceviaapi"></a>
+>>
+>> Zaloguj się do [API OVHcloud](/links/console) i użyj poniższego wywołania API:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/snapshot
+>> >
+>>
+>> Wypełnij zmienne:
+>>
+>> - **instanceId**: Unikalny identyfikator odpowiedniej instancji.
+>> - **regionName**: Nazwa regionu, w którym znajduje się źródłowa instancja.
+>> - **serviceName**: Identyfikator projektu OVHcloud.
+>> - **distantRegionName (opcjonalnie)**: Nazwa regionu, w którym zostanie przechowywana kopia zapasowa.
+>> - **distantSnapshotName (opcjonalnie)**: Nazwa kopii zapasowej w regionie docelowym.
+>> - **snapshotName**: Nazwa snapshotu (lokalnej kopii zapasowej) do utworzenia.
+>>
+>> > [!primary]
+>> >
+>> > Twórz kopię zapasową w regionie docelowym tylko wtedy, gdy parametry **distantRegionName** i **distantSnapshotName** są wypełnione.
+>> >
+>>
+> Za pośrednictwem CLI OpenStack
+>>
+>> Uruchom poniższe polecenie, aby wyświetlić listę instancji:
+>>
+>> ```bash
+>> $ openstack server list
+>>
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> | ID | Name | Status | Networks | Image Name |
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> /// details | Lokalna kopia zapasowa
+>>
+>> Uruchom poniższe polecenie, aby utworzyć kopię zapasową swojej instancji:
+>>
+>> ```bash
+>> $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
+>> ```
+>>
+>> ///
+>>
+>> /// details | Kopia zapasowa w regionie docelowym
+>>
+>> Uruchom poniższe polecenie po utworzeniu lokalnej kopii zapasowej:
+>>
+>> ```bash
+>> $ openstack workflow execution create ovh.glance.glance_download '{"src_image_id": "<image_id>", "src_region": "<current_region>", "dst_region": "<remote_region>"}'
+>> ```
+>>
+>> ///
+>>
+> Przez Horizon
+>>
+>> Kliknij menu `Compute`{.action} po lewej stronie i wybierz `Instancje`{.action}.<br>
+>> Kliknij przycisk `Create Snapshot`{.action} po prawej stronie wiersza odpowiadającego instancji.
+>>
+>> ![public-cloud-instance-backup-horizon1](images/createbackuphorizon1.png){.thumbnail}
+>>
+>> Podaj nazwę kopii zapasowej i kliknij `Create Snapshot`{.action}.
+>>
+>> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
+>>
 
 ### Tworzenie zautomatyzowanych kopii zapasowych instancji
+
+> [!primary]
+>
+> Jeśli chcesz automatyzować tę funkcję bezpośrednio za pomocą OpenStack, możesz utworzyć workflow Mistral powiązany z cron trigger.
 
 Kliknij przycisk `...`{.action} po prawej stronie instancji i wybierz `Utwórz automatyczną`{.action} kopię zapasową.
 

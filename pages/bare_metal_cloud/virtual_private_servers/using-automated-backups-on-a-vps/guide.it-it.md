@@ -1,8 +1,21 @@
 ---
 title: "Come utilizzare i backup automatizzati su un VPS"
 excerpt: "Come utilizzare l’opzione di Backup automatico nello Spazio Cliente OVHcloud per proteggere i dati"
-updated: 2025-08-07
+updated: 2025-10-17
 ---
+
+<style>
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+</style>
 
 ## Obiettivo
 
@@ -21,6 +34,10 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
 - Disporre di un [VPS OVHcloud](/links/bare-metal/vps) già configurato.
 - Avere accesso in SSH al tuo VPS (facoltativo) in SSH.
 
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## Procedura
 
 ### Panoramica del contenuto
@@ -38,8 +55,6 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
         - [Windows](#win)
 
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
-
 Quando ordini un VPS, come opzione di servizio gratuito è incluso un backup automatico giornaliero. Questa opzione di backup standard consente di:
 
 - Montare e ripristinare il backup giornaliero.
@@ -49,15 +64,21 @@ Per una maggiore flessibilità con i backup, è possibile attivare l'opzione Bac
 
 <a name="premium"></a>
 
-### Come passare a Backup automatico Premium
+### Come sottoscrivere Backup automatico Premium
 
-L'aggiornamento a Backup automatico Premium migliora l'opzione di backup automatico a un backup giornaliero attivo di 7 giorni. In questo modo è possibile ripristinare le versioni di backup precedenti rispetto alla rotazione di 24 ore dell'opzione standard.
+L'opzione di Backup automatico Premium crea un backup del tuo VPS ogni 24 ore all'ora specificata.  
+Avrai accesso a tutti i backup giornalieri degli ultimi 7 giorni. Una volta creati 7 backup, ogni nuovo backup sostituirà il più vecchio.
 
-Dopo aver selezionato il VPS, clicca sulla scheda `Backup automatico`{.action} nel menu orizzontale.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), apri la sezione `Bare Metal Cloud`{.action}, seleziona `Server Privati Virtual`{.action} e clicca quindi sul nome del tuo VPS.
 
-Clicca sul link `Ordina un backup Premium`{.action}.
+Clicca sulla scheda `Backup automatico`{.action} nel menu orizzontale.
 
-![autobackupvps](images/backup_vps.png){.thumbnail}
+Clicca sul link `Ordina un backup Premium`{.action} (per i servizi ordinati a partire dal 7 AGO, 2025) o sul pulsante `Attiva il Backup automatico`{.action}.
+
+<div class="grid-gallery">
+  <img src="/images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="/images/backup_vps_leg.png" alt="autobackup vps">
+</div>
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma.
 

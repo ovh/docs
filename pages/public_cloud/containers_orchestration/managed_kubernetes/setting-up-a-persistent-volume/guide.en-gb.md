@@ -1,21 +1,20 @@
 ---
-title: Setting-up a Persistent Volume on OVHcloud Managed Kubernetes
-excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Volumes (PV), attach a Pod to a PVC, change PV reclaim policy and delete created objects'
-updated: 2025-06-05
+title: Persistent Volumes on OVHcloud Managed Kubernetes Service
+excerpt: 'Learn how to create Persistent Volume Claims (PVCs) and Persistent Volumes (PVs), attach a Pod to a PVC, modify the PV reclaim policy, and delete the created objects.'
+updated: 2025-09-29
 ---
 
-In this tutorial we are going to guide you through a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
+This tutorial goes through the setup of a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on an OVHcloud Managed Kubernetes Service.
 
-You will create a `Persistent Volume Claim` (PVC), that will automatically create a `Persistent Volume` (PV) that will automatically create an associated Public Cloud __Block Storage__ volume.<br>
-Then you will create a `Pod` attached to the PVC.
+In order to provision a volume, a `Persistent Volume Claim` (PVC) is required. This will automatically create a `Persistent Volume` (PV) associated to a Public Cloud __Block Storage__ volume.<br>
+
+The Block Storage volume then becomes available for any pod that claims it via a PVC.
 
 ![Schema](images/schema.png){.thumbnail}
 
-## Before you begin
+## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
-
-It also supposes you have read our [Persistent Volumes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes) guide.
+A running MKS cluster, see the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) guide for more information.
 
 > [!warning]
 > When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
@@ -25,22 +24,12 @@ It also supposes you have read our [Persistent Volumes on OVHcloud Managed Kuber
 
 As the [official documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) states:
 
-- A `PersistentVolume` (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource.  
+- A `PersistentVolume` (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource.
 - A `PersistentVolumeClaim` (PVC) is a request for storage by a user. It is similar to a pod. Pods consume node resources and PVCs consume PV resources. Pods can request specific levels of resources (CPU and Memory). Claims can request specific size and access modes (e.g., they can be mounted once as read/write or many times as read-only).
 
-Or, if you prefer an analogy, **PVC are to PV like pods are to nodes**.
+## Create a PVC
 
-PVC consume abstract storage resources (the PVs) as Pods consume node resources.
-
-## So you want some persistent storage on your cluster
-
-Let's say you need some persistent storage on your cluster, some kind of network storage for OVHcloud Managed Kubernetes Service that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/). In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`.
-
-How do you get them? You simply need to create the PVC object in your cluster. Kubernetes will see your claim and, according to its available resources, allocate a PV corresponding to your claim.
-
-## Let's create a PVC
-
-Copy the next YAML fragment into a `test-pvc.yaml` file:
+The following `test-pvc.yaml` example reserves a `10Gi` volume, with the `csi-cinder-high-speed` storage class:
 
 ```yaml
 apiVersion: v1
@@ -56,18 +45,20 @@ spec:
   storageClassName: csi-cinder-high-speed
 ```
 
-And apply it to your cluster:
+To create it on a cluster:
 
 ```bash
 kubectl apply -f test-pvc.yaml
 ```
 
-Then you can see the PVC and the associated PV using `kubectl`:
+To check that the PersistentVolumeClaim (pvc) and its associated PersistenVolume (pv) were created:
 
 ```bash
 kubectl get pvc
 kubectl get pv | grep "test-pvc"
 ```
+
+Sample output:
 
 ```console
 $ kubectl apply -f test-pvc.yaml
@@ -83,9 +74,7 @@ ovh-managed-kubernetes-dmhe43-pvc-ac9493f5-e65f-41ee-a7fa-45d42fc37fe3   10Gi   
 
 ## Using the PVC
 
-Pods access storage by using the PVC as a volume. In the pod manifest you declare a volume and associate it to a PVC. The volume is then mounted to the host and into the pod.
-
-For our example, let's create a `test-pvc-pod.yaml` file: that deploys a simple Nginx server using our `test-pvc` PVC as external volume:
+This sample pod mounts the provisioned volume via its PVC:
 
 ```yaml
 apiVersion: v1
@@ -105,19 +94,19 @@ spec:
       claimName: test-pvc
 ```
 
-Apply it to the cluster:
+To create it on a cluster:
 
 ```bash
 kubectl apply -f test-pvc-pod.yaml
 ```
 
-Check that everything is working correctly:
+To check that the pod mounted the volume and started successfully:
 
 ```bash
 kubectl describe pod test-pvc-pod
 ```
 
-You should obtain a result like this:
+Sample output:
 
 ```console
 $ kubectl apply -f test-pvc-pod.yaml
@@ -178,22 +167,33 @@ Events:
 
 ## Storage Classes
 
-We currently support the following [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes:s
+Storage classes point to a particular storage technology used to provision a volume. This storage class is given in the `PersistentVolumeClaim` definition. See the [official documentation](https://kubernetes.io/docs/concepts/storage/storage-classes/) for more information.
+
+The following storage classes are currently supported on OVHcloud Managed Kubernetes:
 
 * `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as  scale up the storage space.
-* `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size. 
-* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). (Not supported yet on [MKS Premium plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium#storage-classes)).
+* `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size.
+* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). (Not supported yet on [MKS Standard plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium#storage-classes)).
+* `*-luks` storage classes add a layer of encryption on top of the storage class. It is only available in specific regions: see the [related GitHub issue](https://github.com/ovh/public-cloud-roadmap/issues/307) for more information.
 
 All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
 
-High Speed performance is theoretically best for volumes up to 100GB. Above 100GB per volume, you will get enhanced performance with a High Speed Gen2 volume.
+`csi-cinder-high-speed` is recommended for volumes up to 100GB. Above 100GB per volume, enhanced performance is achieved with `csi-cinder-high-speed-gen2` volumes.
+
+>> > [!warning]
+>> >
+>> > Creating a **-luks** volume automatically generates a dedicated key.
+>> >
+>> > Do not modify or delete this key if it is linked to a Block Storage volume. Doing so would make the data on that volume and all its snapshots permanently unrecoverable.
+>> >
 
 ```console
-$ kubectl get sc
-NAME                              PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
-csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   12d
-csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   12d
-csi-cinder-high-speed-gen2        cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
+$ kubectl get storageclass
+NAME                              PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          WaitForFirstConsumer   true                   11d
+csi-cinder-high-speed-gen-2       cinder.csi.openstack.org   Delete          WaitForFirstConsumer   true                   11d
+csi-cinder-high-speed-gen2-luks   cinder.csi.openstack.org   Delete          WaitForFirstConsumer   true                   11d
+csi-cinder-high-speed-luks        cinder.csi.openstack.org   Delete          WaitForFirstConsumer   true                   11d
 ```
 
 When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/).
@@ -208,31 +208,22 @@ The way a PV can be mounted on a host depends on the capabilities of the resourc
 * `ReadOnlyMany`: the PV can be mounted read-only by many nodes
 * `ReadWriteMany`: the PV can be mounted as read-write by many nodes
 
-Our storage resource, Cinder, doesn't allow to mount a PV on several nodes at the same time, so you need to use the `ReadWriteOnce` access mode.
+The default MKS storage classes don't allow mounting a PV on several nodes: only the `ReadWriteOnce` access mode is supported at the moment.
+
+Additional `ReadWriteMany` storage classes can be configured to have this capability:
+
+* The [Enterprise Filesystem Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-efs) offers a managed shared filesystem consumed via NFS.
+* The [OVHcloud Cloud Disk Array](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-cloud-disk-array) offers a managed shared filesystem consumed via CephFS.
 
 ## Reclaim policies
 
-When you are done with a volume, you can delete the PVC, to liberate the resource. At that instant you have an unbounded PV object on your cluster, and its fate depends on the reclaim policy you have chosen in your PVC.
+The behaviour of a volume when a PVC is deleted is configured using a reclaim policy. This policy is configured at the `StorageClass` level.
 
-There are 2 possible reclaim policies:
+All storage classes installed by default on MKS currently set the `RetainPolicy` to `Delete`: **when a PVC is deleted, the PV and its associated Public Cloud volume are deleted too**.
 
-* `Retain`: When the PVC is deleted, the PV still exists. The volume is considered *released*, but it is not yet available because the previous data remains on the volume. If you want to delete it, you must do it manually.
+To control this behaviour at the `PersistentVolume` level, the `persistentVolumeReclaimPolicy` attribute can be set in the PV Spec. See the [official documentation](https://kubernetes.io/docs/tasks/administer-cluster/change-pv-reclaim-policy/) for more information. A different value such as `Retain` can be set to prevent the volume from being deleted.
 
-* `Delete`: when the PVC is deleted, the PV and the associated storage in the external infrastructure (i.e. the Cinder storage in our case) are both deleted.
-
-For every [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/) there is a  reclaim policy set by default, that can be changed for individual instances of PV.  On our Cinder based storage classes, **the reclaim policy by default is `Delete`**, as you can verify:
-
-```bash
-kubectl get pv
-```
-
-```console
-$ kubectl get pv
-NAME                                       CAPACITY  ACCESS MODES  RECLAIM POLICY  STATUS  CLAIM             STORAGECLASS           AGE
-ovh-managed-kubernetes-btw8lc-pvc-LONG-ID  10Gi      RWO           Delete          Bound   default/test-pvc  csi-cinder-high-speed  15s
-```
-
-## Delete a PVC (and associated PV)
+### Example: Deleting a PVC and associated resources
 
 Thanks to the `Delete` reclaim policy, if you delete the PVC, the associated PV is also deleted:
 
@@ -259,10 +250,10 @@ No resources found.
 
 > [!warning]
 >
-> If you created a pod attached to a PVC and you want to delete the PVC, please note that the PVC can't be terminated while the pod is still on. 
+> If you created a pod attached to a PVC and you want to delete the PVC, please note that the PVC can't be terminated while the pod is still on.
 > So please delete the pod first, then delete the PVC.
 
-### Changing the reclaim policy
+### Example: Deleting a PVC while keeping its associated resources
 
 To illustrate how to change the reclaim policy, let's begin by creating a new PVC using the `test-pvc.yaml` file:
 
@@ -306,7 +297,7 @@ NAME                                       CAPACITY  ACCESS MODES  RECLAIM POLIC
 ovh-managed-kubernetes-btw8lc-pvc-LONG-ID  10Gi      RWO           Retain          Bound   default/test-pvc  csi-cinder-high-speed  19s
 ```
 
-In the preceding output, you can see that the volume bound to PVC `default/test-pvc` has reclaim policy `Retain`.  
+In the preceding output, you can see that the volume bound to PVC `default/test-pvc` has reclaim policy `Retain`.
 It will not be automatically deleted when a user deletes PVC `default/test-pvc`
 
 ## Go further

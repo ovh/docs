@@ -1,4 +1,5 @@
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +7,6 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
+- pt-pt
 id: 68a51d3f-84ac-4f2b-a4fc-5e451b5733d6
 full_slug: sms-sending-via-api-c

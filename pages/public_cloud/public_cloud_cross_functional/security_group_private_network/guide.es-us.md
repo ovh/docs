@@ -1,7 +1,7 @@
 ---
 title: Gestión de las reglas de firewall y port security en las redes que utilizan OpenStack CLI
 excerpt: Cómo funcionan los grupos de seguridad en Public Cloud
-updated: 2023-03-13
+updated: 2025-09-23
 ---
 
 > [!primary]
@@ -63,7 +63,7 @@ El resultado debería ser similar al siguiente:
 
 ```console
 $ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
-False
+True
 ```
 
 #### Para una nueva red privada:

@@ -1,12 +1,12 @@
 ---
 title: "How to use Zimbra webmail"
 excerpt: "Discover the Zimbra webmail interface for your OVHcloud MX Plan email accounts"
-updated: 2025-07-08
+updated: 2025-10-22
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 </style>
 
@@ -34,6 +34,7 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
  - [Email processing](#email-management)
     - [Action on a selected email](#email-action)
     - [Searching emails](#email-search)
+    - [Restore deleted emails](#restore)
 - [Write an email](#email-writing)
 - [Configure Zimbra interface preferences](#settings)
 - [Contacts](#contacts)
@@ -47,6 +48,7 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
 - [Filters](#filters)
     - [How to set filters](#filters-howto)
     - [Create a filter](#filters-creation)
+    - [Create a redirection](#filters-redirection)
 - [Delegations](#delegations)
 - [Signature](#signatures)
 - [Automatic Replies](#auto-reply)
@@ -55,11 +57,11 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
 
 Go to the page [Webmail](/links/web/email). Enter your email address and password, then click `Login`{.action}.
 
-![Zimbra - login](images/ovhcloud-login-webmail.png){.thumbnail}
+![Zimbra - login](images/ovhcloud-login-webmail.png){.thumbnail .w-600}
 
 You will then be redirected to the Zimbra interface.
 
-![Zimbra - interface](images/zimbra-01.png){.thumbnail}
+![Zimbra - interface](images/zimbra-01.png){.thumbnail .w-600}
 
 ### General interface of Zimbra webmail <a name="general-interface"></a>
 
@@ -72,13 +74,13 @@ Once you have logged in to your email account, you will have access to the main 
 >> - **(2)** A search bar allows you to find messages or contacts.
 >> - **(3)** The menu for managing your email account profile and the button to access the settings **(4)**.
 >>
->> ![Zimbra - top menu](images/zimbra-02.png){.thumbnail}
+>> ![Zimbra - top menu](images/zimbra-02.png){.thumbnail .w-600}
 >>
 > **Left Column**
 >>
 >> By default, this is the tree-view of your email account, made up of folders and subfolders. The main folder is `Inbox`.
 >>
->> ![Zimbra - tree view](images/zimbra-03.png){.thumbnail}
+>> ![Zimbra - tree view](images/zimbra-03.png){.thumbnail .w-600}
 >>
 > **Center Window**
 >>
@@ -87,14 +89,14 @@ Once you have logged in to your email account, you will have access to the main 
 >> - **(1)** The list of elements
 >> - **(2)** The contents of the selected item
 >>
->> ![Zimbra - Emails](images/zimbra-04.png){.thumbnail}
+>> ![Zimbra - Emails](images/zimbra-04.png){.thumbnail .w-600}
 >>
 
 ### Manage your email account folders (left-hand column) <a name="folders-management"></a>
 
 In this area, you will see the folders stored on your email account. You will find the **special** folders already there (in orange) and the folders you have **created** (in green).
 
-![Zimbra - folders](images/zimbra-05.png){.thumbnail}
+![Zimbra - folders](images/zimbra-05.png){.thumbnail .w-600}
 
 #### Special folders <a name="folders-specials"></a>
 
@@ -127,11 +129,17 @@ You can also create a subfolder by right-clicking the folder you want, and then 
 
 When you select a folder or subfolder in the left-hand column, the list of emails contained in it appears in the middle column. Then click on the email of your choice to display its contents in the window on the right.
 
+![Zimbra - Folders](images/zimbra-06.png){.thumbnail .w-600}
+
 > [!primary]
 >
 > **Display type**
 >
 > The display of your emails is in a form that can be modified. To do this, click the `View`{.action} button in the top right-hand corner of this window.
+
+It is possible to sort and display emails based on certain criteria by clicking on the existing filter (by default, `Date`{.action}) at the top of the email list.
+
+![Zimbra - carpetas](images/zimbra-06-date.png){.thumbnail .w-600}
 
 #### Action on a selected email <a name="email-action"></a>
 
@@ -154,7 +162,7 @@ When you select an email is selected, many actions are available:
     - **Print**: Print the selected conversation or email.
 - 9.**View**: Select one of the 3 layouts to view your folders and emails.
 
-![Zimbra - actions](images/zimbra-07.png){.thumbnail}
+![Zimbra - actions](images/zimbra-07.png){.thumbnail .w-600}
 
 You can access these options by right-clicking on each email in the middle column.
 
@@ -174,20 +182,34 @@ If you would like to find an email, use the search bar at the top of your interf
 >>
 >> > If you know where to search for your item, you can enter keywords ( **from**, **to**, **cc**, **subject**, etc.) followed by a colon (`:`) and search for the item in the search text box. For example, if you want to quickly find a sender, you can type "from:" and the email address you are looking for. Example: "from: address@example.com".
 >>
->> ![Zimbra - simple search](images/zimbra-08.png){.thumbnail}
+>> ![Zimbra - simple search](images/zimbra-08.png){.thumbnail .w-600}
 >>
 > **Advanced search**
 >>
 >> For a more precise search, click the arrow symbol on the right-hand side of your search bar. You can then restrict your search to a folder, a time condition, the subject or body of the message, and much more.
 >>
->> ![Zimbra - advanced search](images/zimbra-09.png){.thumbnail}
+>> ![Zimbra - advanced search](images/zimbra-09.png){.thumbnail .w-600}
 >>
+
+#### Recover deleted emails <a name="restore"></a>
+
+When you delete emails, they are placed by default in the trash.<br>
+If you delete emails from your trash or empty it, they are placed in retention. They can still be recovered for 30 days.
+
+We will review the steps to recover an email in retention by going through its deletion and restoration process:
+
+1. **Deleting an email**: When you view an email in the inbox or one of the folders and click `delete`{.action}, it will go by default to the trash.
+2. **Empty the Trash**: When you `Empty the Trash`{.action} or delete an email from it, the email no longer appears in the trash and enters its 30-day retention period.
+3. **Access restoration**: To recover an email deleted from the trash within 30 days, right-click on `Trash`{.action}, then click `Recover deleted mail`{.action}.
+4. **Choose emails to restore**: From this window, you can view emails that have been emptied from the trash. Select the email(s) you want to restore. Click `Next`{.action}, choose the folder where you want to restore the emails, then click `Save`{.action}.
+
+![Zimbra - simple search](images/zimbra-restore.png){.thumbnail .w-600}
 
 ### Write an email <a name="email-writing"></a>
 
 To create a new email, click the `New Message`{.action} (1) button in the top left of your Zimbra window.
 
-![Zimbra - write an email](images/zimbra-10.png){.thumbnail}
+![Zimbra - write an email](images/zimbra-10.png){.thumbnail .w-600}
 
 > [!tabs]
 > **Header**
@@ -204,18 +226,18 @@ To create a new email, click the `New Message`{.action} (1) button in the top le
 >>    - Click `Request Read Receipt` to request a read receipt from the recipient.<br>
 >>    - The `Plain Text` feature will disable the HTML layout features of your email.<br>
 >>
->> ![Zimbra - header](images/zimbra-11.png){.thumbnail}
+>> ![Zimbra - header](images/zimbra-11.png){.thumbnail .w-600}
 >>
 > **Email body**
 >>
 >> To compose the body of your email, there is an HTML toolbar at the bottom of your window. This will allow you to edit your emails with layout, directly via your browser. In addition, the `< >`{.action} button (on the far right of your toolbar) opens a window where you can paste an email that has been prewritten using an external tool.
 >>
->> ![Zimbra - body](images/zimbra-12.png){.thumbnail}
+>> ![Zimbra - body](images/zimbra-12.png){.thumbnail .w-600}
 >>
 
 After you have written your email, before you click `Send`{.action}, you can attach an attachment to it by clicking the paperclip icon next to the `Send`{.action} button.
 
-![Zimbra - attachment](images/zimbra-13.png){.thumbnail}
+![Zimbra - attachment](images/zimbra-13.png){.thumbnail .w-600}
 
 > [!success]
 > **Cancel a sending**
@@ -223,13 +245,13 @@ After you have written your email, before you click `Send`{.action}, you can att
 > If you have enabled the `Undo send` option in the "**Write an email**" section of Zimbra preferences, you can click `UNDO`{.action} to cancel sending.
 > This button will remain available for approximately 5 seconds.
 >
-> ![Zimbra - cancel a sending](images/zimbra-cancel-email.png){.thumbnail .w-400}
+> ![Zimbra - cancel a sending](images/zimbra-cancel-email.png){.thumbnail .w-600}
 
 ### Configure Zimbra interface preferences <a name="settings"></a>
 
 Your Zimbra interface has 2 configuration menus:
 
-![Zimbra - preferences](images/zimbra-14.png){.thumbnail}
+![Zimbra - preferences](images/zimbra-14.png){.thumbnail .w-600}
 
 - **(1) Profile**: Click on the name of your email account in the top right-hand corner of your interface. From this menu, you have the options "**Change password**", **Change Profile Image** and you can log out of the account by clicking on **Logout**.
 
@@ -238,7 +260,10 @@ Your Zimbra interface has 2 configuration menus:
 > [!tabs]
 > **General**
 >>
->> In this tab, you will find the space taken up by your email account, and the ability to set the format for displaying the date and time of your emails.
+>> From this tab, you can find:
+>>
+>> - a progress bar indicating the space used on your email account.
+>> - the ability to set the date and time display format for your emails.
 >>
 > **Viewing Email**
 >>
@@ -313,7 +338,7 @@ Click `Contacts` in the top bar to access the address book. It is divided into *
 - **(2) Contact list** (center): View the contacts in the selected address book or folder.
 - **(3) Contact Properties** or **New Contact** (right): This window appears when a contact is selected or is being created. You can read or modify a contact's information there.
 
-![Zimbra - contacts](images/zimbra-15.png){.thumbnail}
+![Zimbra - contacts](images/zimbra-15.png){.thumbnail .w-600}
 
 To create a new contact, click the `New Contact`{.action} button at the top of the left-hand column.
 
@@ -321,7 +346,7 @@ Fill the fields with the information of your contact. You can add an image to it
 
 Then click `Save`{.action}.
 
-![Zimbra - new contact](images/zimbra-16.png){.thumbnail}
+![Zimbra - new contact](images/zimbra-16.png){.thumbnail .w-600}
 
 #### Manage contact folders <a name="contacts-folders"></a>
 
@@ -339,7 +364,7 @@ You can also create a subfolder by right-clicking the folder you want, and then 
 
 To move a contact to one of the folders, select the contact in the middle column and then, in the contact window that appears on the right, click the `Move`{.action} button. Then select the folder you want to assign to the contact.
 
-![Zimbra - contact folders](images/zimbra-17.png){.thumbnail}
+![Zimbra - contact folders](images/zimbra-17.png){.thumbnail .w-600}
 
 > [!primary]
 >
@@ -353,7 +378,7 @@ To create a list, click in the box labeled `New List` at the bottom of the left-
 
 To assign a contact to one of your lists, select the contact in the middle column, and then in the window that appears on the right, click `Assign to Lists`{.action}. Select the list(s) you want to assign to the contact. Alternatively, enter a new list name and click `Add`{.action}.
 
-![Zimbra - lists](images/zimbra-list.png){.thumbnail}
+![Zimbra - lists](images/zimbra-list.png){.thumbnail .w-600}
 
 #### Import Contacts / Export Contacts <a name="import-export"></a>
 
@@ -365,14 +390,14 @@ Select one of the following two tabs:
 >> In the `Contacts` window, right-click on the contacts folder of your choice, with the exception of the "Email contacts" and "Trash" folders, which do not allow contacts to be imported and exported.<br>
 >>
 >> Then click `Import`{.action} to open the import window. With the `Browse...` button, you can retrieve the file containing your contacts in the formats .csv or .vcf. <br><br>
->> ![Zimbra - Import](images/zimbra-19.png){.thumbnail}
+>> ![Zimbra - Import](images/zimbra-19.png){.thumbnail .w-600}
 >>
 > **Export Contacts**
 >>
 >> In the `Contacts` window, right-click on the contacts folder of your choice, with the exception of the "Email contacts" and "Trash" folders, which do not allow contacts to be imported and exported.
 >>
 >> Then click `Export`{.action} to open the export window. Select the file type you want to export, and then click `Export`{.action}.<br><br>
->> ![Zimbra - Export](images/zimbra-20.png){.thumbnail}
+>> ![Zimbra - Export](images/zimbra-20.png){.thumbnail .w-600}
 >>
 
 ### Calendar <a name="calendar"></a>
@@ -383,7 +408,7 @@ Click on the `Calendar` icon in the top bar to access the address book. It is di
 - **(2) Calendar Content** (center): View the content of selected calendars and sub-calendars.
 - **(3) Task List** (right): Manage your tasks and task lists.
 
-![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
+![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail .w-600}
 
 #### Calendar management <a name="calendar-management"></a>
 
@@ -397,14 +422,14 @@ You can also create sub-calendars.
 
 - **(2)**: To create a sub-calendar, move your cursor over the calendar for which you want to create one, then right-click to display the drop-down menu. Click `Add sub-calendar`. Enter a name and colour, then click `Save`{.action}.
 
-![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-600}
 
 ##### 2 - Add an event <a name="calendar-add-event"></a>
 
 - **(1)**: Click on `New event`{.action} in the top left-hand corner.
 - **(2)**: Click on the time condition of your calendar in which you want to add an event. For a simple addition, simply define a title for the event and a location then click `Save`{.action}. To add more details about your event, click `Add more details`{.action}.
 
-![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-600}
 
 - **Start**: The date and time your event starts. If you tick `All day`, you will not have to enter a start and end time because the whole day will be taken into account.
 - **End**: The end date and time of your event.
@@ -419,7 +444,7 @@ You can also create sub-calendars.
 
 Once you have defined your event, click `Save`{.action}.
 
-![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-600}
 
 ##### 3 - Edit an event <a name="calendar-modify-event"></a>
 
@@ -433,13 +458,13 @@ The "Tasks" list exists by default, it cannot be deleted, but you can create you
 
 - **(2)**: To create a new task list, click the `...`{.action} button, then click `Create List...`{.action}.
 
-![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-600}
 
 When you create a task, you can set a due date and priority so that you can rank them according to their importance, as well as a drop-down menu to select the corresponding task list.
 
 Then click `Save`{.action} to finish creating your task.
 
-![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-600}
 
 ### Storage <a name="storage"></a>
 
@@ -462,7 +487,7 @@ Click the `Briefcase`{.action} icon in the top bar to access your storage space.
 
 3. In the right window, depending on the file type selected in the center column, a preview of the content is displayed. The top bar of the preview displays the possible actions on the file or files you selected.
 
-![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
 #### Add a file
 
@@ -472,7 +497,7 @@ To add a file to your storage space, follow the steps below:
 2. From the File Browse window, select the file(s) to upload to your storage space.
 3. Click `Open`{.action} to upload the item(s) to your storage space.
 
-![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
 #### Share a file/folder
 
@@ -491,7 +516,7 @@ Sharing allows you to give access to a folder or file on your storage to a third
 >> 4. Choose the permissions you want to assign to the guest.
 >> 5. Click `Save`{.action} to finalize the sharing.
 >>
->> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail .w-600}
 >>
 > **Share a folder**
 >>
@@ -500,12 +525,12 @@ Sharing allows you to give access to a folder or file on your storage to a third
 >> 3. Choose the permissions you want to assign to the guest.
 >> 4. Click `Save`{.action} to finalize the sharing.
 >>
->> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail .w-600}
 >>
 
 The guest receives an email inviting them to create a Zimbra account with a username and password. This account provides access to a Zimbra interface limited to the shared content only.
 
-![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
 
 ### Filters <a name="filters"></a>
 
@@ -520,9 +545,9 @@ A filtering rule in Zimbra is made up of 4 elements:
 3 - [Value](#filters-value): Which words/elements of the email will be targeted by the filter.<br>
 4 - [Filter Actions](#filters-action): What will the filter do on the email.<br>
 
-![Zimbra - filters](images/zimbra-filters.png){.thumbnail}
+![Zimbra - filters](images/zimbra-filters.png){.thumbnail .w-600}
 
-> Example : If the **Subject (1)** field of the email **contains (2)** the word `invoice` **(3)**, then **Forward to (4)** `billing@example.com`.
+> Example: If the **Subject (1)** field of the email **contains (2)** the word `invoice` **(3)**, then **Forward to (4)** `billing@example.com`.
 
 In the following paragraphs, you will find the details of each of the elements of a filtering rule.
 
@@ -583,7 +608,7 @@ The `Then` field defines the action to be taken on the email that meets the filt
 
 To create filters, click on the cogwheel icon in the top right-hand corner of your Zimbra interface, then click on `Settings`{.action}. Next, click on `Filters`{.action} in the left-hand column.
 
-![Zimbra - create filter](images/zimbra-21.png){.thumbnail}
+![Zimbra - create filter](images/zimbra-21.png){.thumbnail .w-600}
 
 If filters exist, you will see the list in the order in which they are applied:
 
@@ -596,12 +621,37 @@ Click the `+ Add a filter`{.action} button to start creating it. The basic mode 
 > [!tabs]
 > **Basic mode**
 >>
->> ![Zimbra - filters - single mode](images/zimbra-22.png){.thumbnail}
+>> ![Zimbra - filters - single mode](images/zimbra-22.png){.thumbnail .w-600}
 >>
 > **Advanced mode**
 >>
->> ![Zimbra - filters - advanced mode](images/zimbra-23.png){.thumbnail}
+>> ![Zimbra - filters - advanced mode](images/zimbra-23.png){.thumbnail .w-600}
 >>
+
+#### Create a redirection <a name="filters-redirection"></a>
+
+It is possible to use a filter to redirect incoming emails to another address via a forwarding rule.
+
+> [!primary]
+>
+> In our example below, we have chosen to redirect all incoming emails to another email address. To understand the example in the screenshots, we are logged in to the address **zimbra@mydomain.ovh** and want to redirect the emails from this account to the address **address@example.com**.
+>
+
+To access the filters and create your redirection, follow these instructions:
+
+- Click the `⚙`{.action} button in the top-right corner of your webmail window.
+- Click `Settings`{.action}.
+- Click the `Filters`{.action} section in the settings window.
+- Click the `Add a filter`{.action} button.
+    - First, click <u>Advanced mode</u> in the top-right corner to set up this rule.
+    - Give your filter a name in the `Filter name` field.
+    - Leave the dropdown menu on `all` in the phrase "If an incoming message meets ... of these conditions".
+    - On the next line, select `To`{.action} (To), leave `contains`{.action}, and enter the email address you are logged in to in the field just to the right.
+    - Under the "Then" section, select `Forward to` from the dropdown menu and enter the destination email address.
+    - Click `+ Add an action`{.action} further down, then select `Keep in Inbox`.
+    - Click `Save`{.action} in your filter window and also in the settings window.
+
+![zimbra](images/zimbra_redirection03.png){.thumbnail .w-600}
 
 ### Delegations <a name="delegations"></a>
 
@@ -613,7 +663,7 @@ You can delegate your email account to another email account. This requires both
 >
 > An email account with the same domain name but on another email solution cannot be delegated.
 
-![email](images/zimbra-delegation.png){.thumbnail}
+![email](images/zimbra-delegation.png){.thumbnail .w-600}
 
 **(1) Delegates**: To delegate your email account to another account, click `Add Delegates`{.action}.
 

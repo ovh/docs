@@ -1,6 +1,6 @@
 ---
 title: 'Annonces de fin de vente/vie Web Cloud Databases'
-updated: 2025-09-02
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -20,7 +20,6 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 |PostgreSQL 15|À définir|À définir|À définir|
 |PostgreSQL 16|À définir|À définir|À définir|
 |PostgreSQL 17|À définir|À définir|À définir|
-|Redis 7.0|2025-06-12|2025-09-12|2025-12-12|
 |Valkey 7.2|À définir|À définir|À définir|
 
 ## Aller plus loin

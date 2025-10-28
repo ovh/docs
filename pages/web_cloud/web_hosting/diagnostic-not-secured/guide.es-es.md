@@ -1,7 +1,7 @@
 ---
 title: "¿Qué hacer en caso de error « La conexión no es privada »?"
 excerpt: "Responder en caso de que aparezca un mensaje de error relacionado con la seguridad de su sitio web"
-updated: 2025-04-28
+updated: 2025-10-09
 ---
  
 ## Objetivo <a name="objective"></a>
@@ -36,17 +36,34 @@ Para resolver esta anomalía, deberá:
 1. determinar el alojamiento al que está asociado el dominio para intervenir en el servidor correcto;
 2. crear, activar o renovar un [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) para su nombre de dominio en el alojamiento correspondiente.
 
-### Etapa 1: comprobar el alojamiento asociado a su dominio
+### 1: Comprobar el alojamiento asociado a su dominio
 
 #### Comprobar la dirección IP del alojamiento
 
 Los mensajes de error mencionados [anteriormente](#objective) no significan necesariamente que su sitio web esté alojado en uno de nuestros [planes Web Cloud](/links/web/hosting). Por lo tanto, debe comprobar la dirección IP del servidor al que está asociado su [dominio](/links/web/domains).
 
-Para encontrar la dirección IP de su [hosting OVHcloud](/links/web/hosting), haga clic en el botón `Web Cloud`{.action} situado en la esquina superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione el alojamiento correspondiente.
+Para encontrar la dirección IP de su [alojamiento OVHcloud](/links/web/hosting), haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 
-En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o IPV6 de su alojamiento.
-
-![hosting-general-informations](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En el cuadro **Información general**, encontrará las menciones **IPv4** y **IPv6**.
+>>
+>> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> Anote la dirección IPv4 y/o IPv6, y continúe leyendo la guía.
 
 #### Verificar la dirección IP en la zona DNS
 
@@ -69,7 +86,7 @@ Anote el destino del registro de tipo `A` para su dominio:
 |En la pestaña `Zona DNS`{.action}, un mensaje indica que su dominio utiliza otros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) y estos no aparecen en el formato « ns **?** .ovh.net » o « dns **?** .ovh.net »:<br><br>![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.|
 |Su nombre de dominio no aparece en la sección `Dominios`{.action} de su [área de cliente OVHcloud](/links/manager).<br><br>O la pestaña `Zona DNS`{.action} de su dominio se muestra de la siguiente manera:<br><br>![zonedns_ndd_pas_en_lec2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Significa que su dominio no es gestionado desde su [área de cliente de OVHcloud](/links/manager).<br><br>Compruebe que no esté gestionado desde cualquiera de sus [cuentas OVHcloud](/links/manager), si ha creado varias.<br><br>También puede determinar su agente registrador y los servidores DNS a los que está asociado a través de nuestro herramienta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Si es necesario, contacte con su webmaster o los [partners de OVHcloud](/links/partner) al respecto.|
 
-### Etapa 2: verificar el certificado SSL de su alojamiento <a name="etape2"></a>
+### 2: Verificar el certificado SSL de su alojamiento <a name="etape2"></a>
 
 En la pestaña `Información general`{.action} de su alojamiento OVHcloud, consulte el apartado `Certificado SSL`.
 

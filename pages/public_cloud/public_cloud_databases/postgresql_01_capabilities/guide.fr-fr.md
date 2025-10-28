@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
-updated: 2025-07-31
+updated: 2025-09-30
 ---
 
 ## Objective
@@ -35,6 +35,7 @@ The Public Cloud Databases offer supports the following PostgreSQL versions:
 - PostgreSQL 15
 - PostgreSQL 16
 - PostgreSQL 17
+- PostgreSQL 18
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
 

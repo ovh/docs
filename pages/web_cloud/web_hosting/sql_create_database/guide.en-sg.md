@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2024-09-05
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -21,6 +21,8 @@ A database is used to store dynamic elements (connection data, user data, displa
 ### Step 1 - Access the web hosting database management tab
 
 Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, select the hosting plan on which you want to create a database, then click on the `Databases`{.action} tab.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 The table in this section contains all of the databases created with your web hosting plan.
 

@@ -1,99 +1,183 @@
 ---
-title: 'Exchange - Configure sua conta de e-mail no Thunderbird para macOS'
-excerpt: 'Encontre aqui o procedimento para adicionar uma conta Exchange para Thunderbird'
-updated: 2025-04-28
+title: 'Exchange - Configurar seu endereço de e-mail no Thunderbird para Windows'
+excerpt: 'Descubra como configurar seu endereço de e-mail Exchange no Thunderbird para Windows'
+updated: 2025-09-19
 ---
+
+<style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-400 {
+  max-width:400px !important;
+}
+</style>
 
 ## Objetivo
 
-As contas Exchange podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir. A Thunderbird é um cliente de e-mails livre e gratuito.
+As contas Exchange podem ser configuradas em diferentes softwares de e-mail compatíveis. Isso permite que você use seu endereço de e-mail a partir do dispositivo de sua escolha. O Thunderbird é um cliente de e-mail gratuito e de código aberto.
 
-**Saiba como configurar o seu endereço de Exchange no Thunderbird no Windows.**
-
-> [!warning]
->
-> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
-> 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
-> 
+**Descubra como configurar seu endereço de e-mail Exchange no Thunderbird para Windows.**
 
 ## Requisitos
 
-- Ter um endereço de [Exchange](/links/web/emails-hosted-exchange).
-- Dispor do software Thunderbird instalado no seu Windows.
-- Dispor das credenciais do endereço de e-mail que pretende configurar.
- 
+- Ter um endereço de e-mail [Hosted Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-private-exchange).
+- Ter o software Thunderbird instalado no seu dispositivo com Windows.
+- Possuir as credenciais relacionadas ao endereço de e-mail que deseja configurar.
+
+/// details | Informações sobre a gestão e configuração dos serviços OVHcloud
+
+Este guia mostra como usar soluções OVHcloud com ferramentas externas e as modificações necessárias em contextos específicos. Pode ser necessário adaptar as instruções de acordo com sua situação.
+
+Se você tiver dificuldades ao executar estas operações, recomendamos que entre em contato com um [provedor de serviços especializado](/links/partner) e/ou discuta com nossa comunidade. A OVHcloud não pode fornecer suporte técnico sobre o uso de ferramentas externas. Mais informações na seção [Quer saber mais?](#gofurther) deste guia.
+
+///
+
 ## Instruções
-
-> [!warning]
->
-> No nosso exemplo, utilizamos a menção servidor: ex?.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço Exchange.
->
-> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção `Web Cloud`{.action}.
-> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-> 1. Selecione a plataforma em causa.
-> 1. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
->
-
-### Adicionar a conta
-
-- **Se for a primeira vez que utiliza a aplicação**, aparecerá um assistente de configuração que lhe irá solicitar o seu endereço de e-mail.
-
-- **Se uma conta já estiver configurada**: clique em `Ficheiro`{.action} na barra de menu no topo do seu ecrã, depois em `Novo`{.action} e, por fim, em `Obter uma nova conta de correio...`{.action}.
-
-| | |
-|---|---|
-|![Thunderbird](images/thunderbird-win-exchange01.png){.thumbnail}|Na nova janela, introduza as seguintes 3 informações: <br>- O seu nome completo (Nome de apresentação)<br>- Endereço eletrónico <br>- Palavra-passe.|
-|A seguir, clique em `Configurar manualmente...`{.action} para introduzir os parâmetros do servidor **ENTRAANT**: <br>- Protocolo **IMAP** <br>- Servidor **ex?.mail.ovh.net** <br>- Porta **993** <br>- SSL **SSL/TLS** <br>- Autenticação da **password normal** <br>- Identificar **o seu endereço de e-mail completo**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Introduzir os parâmetros do servidor de **saída**: <br>- Protocolo **SMTP** <br>- Servidor **ex?.mail.ovh.net** <br>- Porta **587** <br>- SSL **STARTTLS** <br>- Autenticação da **password normal** <br>- Identificar **o seu endereço de e-mail completo**<br><br>Para terminar a configuração, clique em `Terminado`{.action}|
-
-No âmbito de uma configuração em **POP**, os valores são os seguintes:
-
-|Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
-|---|---|---|---|
-|De entrada|ex?.mail.ovh.net (a menção **"?"** é substituída pelo número do seu servidor)|SSL/TLS|995|
-|De saída|ex?.mail.ovh.net (a menção **"?"** é substituída pelo número do seu servidor)|STARTTLS|587|
-
-### Utilizar o endereço de e-mail
-
-Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
-
-A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
-
-### Recuperar um backup do seu endereço de e-mail
-
-Se tiver de efetuar uma operação suscetível de causar a perda dos dados da sua conta de e-mail, sugerimos que efetue uma cópia de segurança da conta de e-mail em questão. Para isso, consulte o parágrafo "**Exportar**" na secção "**Thunderbird**" do nosso guia [Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
-
-### Modificar os parâmetros existentes
-
-> [!warning]
->
-> No nosso exemplo, utilizamos a menção servidor: ex?.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço Exchange.
-> 
-> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}/`Exchange`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
-> 
-
-Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
-
-- Aceda às `Ferramentas`{.action} a partir da barra de menu no topo do ecrã.
-- Clique em `Parâmetros das contas`{.action}.
-
-![Thunderbird](images/thunderbird-win-exchange04.png){.thumbnail}
-
-- Para alterar os parâmetros associados à **receção** dos seus e-mails, clique em `Parâmetros do servidor`{.action} na coluna da esquerda do seu endereço de e-mail.
-
-![Thunderbird](images/thunderbird-win-exchange05.png){.thumbnail}
-
-- Para modificar os parâmetros associados ao **envio**dos seus e-mails, clique em `Servidor de saída (SMTP)`{.action} no fundo da coluna da esquerda.
-- Clique no endereço de e-mail em questão na lista e, a seguir, em `Alterar`{.action}.
-
-![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
-
-## Saiba mais
 
 > [!primary]
 >
-> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Thunderbird no Windows, consulte [Central de Ajuda do Mozilla](https://support.mozilla.org/pt-BR/kb/configuracao-manual-de-conta#thunderbird:win10:tb115).
+> No nosso exemplo, usamos o nome do servidor: ex?.mail.ovh.net. Você deverá substituir o "?" pelo número que identifica o servidor do seu serviço Exchange.
+>
+> Para encontrar o nome do servidor:
+>
+> 1. Faça login no seu [Área de Cliente OVHcloud](/links/manager).
+> 2. Acesse a seção `Web Cloud`{.action}.
+> 3. Na seção `MICROSOFT`, clique em `Exchange`{.action}.
+> 4. Selecione a plataforma desejada.
+> 5. O nome do servidor está visível no quadro **Ligação** da aba `Informações gerais`{.action}.
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+### Adicionar a conta
+
+- **Na primeira inicialização do aplicativo**: um assistente de configuração aparecerá e solicitará que você insira seu endereço de e-mail.
+
+- **Se uma conta já estiver configurada no aplicativo**:
+
+    1. Clique no menu `☰`{.action} na barra superior horizontal.
+    2. Clique em `Nova Conta`{.action}.
+    3. Clique em `Endereço de E-mail`{.action}.
+
+![thunderbird](images/configuration-thunderbird-win-01.png){.thumbnail .w-600}
+
+Siga as etapas de configuração clicando sucessivamente nos **5** abas abaixo:
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Na janela que aparece, insira as seguintes informações:
+>>
+>>  - Seu nome completo (nome exibido).
+>>  - O endereço de e-mail a ser configurado.
+>>
+>> Clique em `Continuar`{.action} para concluir as configurações.
+>>
+>> ![thunderbird](images/configuration-thunderbird-exchange-02.png){.thumbnail .w-600}
+>>
+> **Etapa 2**
+>>
+>> Quando o Thunderbird detectar um domínio OVHcloud, uma configuração automática relativa à oferta MX Plan será proposta. Clique em `MODIFICAR A CONFIGURAÇÃO`{.action}.
+>>
+>> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-600}
+>>
+> **Etapa 3**
+>>
+>> Configurações do servidor de recepção:
+>>
+>>  - **Protocolo** : IMAP
+>>  - **Nome do host** : ex?.mail.ovh.net (substitua o "?" pelo número do seu servidor)
+>>  - **Porta** : 993
+>>  - **Segurança da conexão** : SSL/TLS
+>>  - **Método de autenticação** : Senha normal
+>>  - **Nome de usuário** : Seu endereço de e-mail completo
+>>
+>> ![thunderbird](images/configuration-thunderbird-exchange-04.png){.thumbnail .w-600}
+>>
+> **Etapa 4**
+>>
+>> Configurações do servidor de envio:
+>>
+>>  - **Protocolo** : SMTP 
+>>  - **Nome do host** : ex?.mail.ovh.net (substitua o "?" pelo número do seu servidor)
+>>  - **Porta** : 587
+>>  - **Segurança da conexão** : STARTTLS
+>>  - **Método de autenticação** : Senha normal
+>>  - **Nome de usuário** : Seu endereço de e-mail completo
+>> 
+>> 1. Clique em `Testar`{.action} para verificar as configurações inseridas.
+>> 2. Clique em `Continuar`{.action} para confirmar estas configurações.
+>>
+>> ![thunderbird](images/configuration-thunderbird-exchange-05.png){.thumbnail .w-600}
+>>
+> **Etapa 5**
+>>
+>> Insira a senha associada ao endereço de e-mail, em seguida clique em `Continuar`{.action} para finalizar a configuração.
+>>
+>> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-600}
+>>
+
+> [!primary]
+>
+> **Configuração POP**
+>
+> Se desejar uma configuração POP para seu endereço de e-mail, substitua as configurações do **etapa 3** pelas seguintes:
+>
+> Configurações do servidor de recepção:
+>
+> - **Protocolo** : POP3
+> - **Nome do host** : ex?.mail.ovh.net (substitua o "?" pelo número do seu servidor)
+> - **Porta** : 995
+> - **Segurança da conexão** : SSL/TLS
+> - **Método de autenticação** : Senha normal
+> - **Nome de usuário** : Seu endereço de e-mail completo
+
+### Usar o endereço de e-mail
+
+Após configurar seu endereço de e-mail, você pode começar a usá-lo! Você pode enviar e receber e-mails imediatamente.
+
+A OVHcloud também oferece uma aplicação web que permite acessar seu endereço de e-mail a partir de um navegador. Para acessar o Webmail OVHcloud, clique [neste link](/links/web/email). Você pode se conectar usando as credenciais do seu endereço de e-mail.
+
+### Recuperar um backup do seu endereço de e-mail
+
+Se você precisar realizar uma operação que possa causar a perda de dados da sua conta de e-mail, recomendamos fazer um backup prévio da conta de e-mail afetada. Para isso, consulte o parágrafo "**Exportar**" na seção "**Thunderbird**" do nosso guia "[Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+
+### Modificar as configurações existentes
+
+Se sua conta de e-mail já estiver configurada e você precisar acessar as configurações da conta para modificá-las:
+
+1. Clique no menu `☰`{.action} na barra superior horizontal.
+2. Clique em `Configurações da conta`{.action}.
+
+![Thunderbird](images/configuration-thunderbird-win-07.png){.thumbnail .w-600}
+
+- Para modificar as configurações relacionadas à **recepção** de seus e-mails, clique em `Configurações do servidor`{.action} na coluna à esquerda sob seu endereço de e-mail.
+
+![thunderbird](images/configuration-thunderbird-exchange-win-08.png){.thumbnail .w-600}
+
+- Para modificar as configurações relacionadas ao **envio** de seus e-mails, clique em `Servidor de saída (SMTP)`{.action} no final da coluna à esquerda.
+- Clique no endereço de e-mail desejado na lista, em seguida clique em `Editar`{.action}.
+
+![thunderbird](images/configuration-thunderbird-exchange-win-09.png){.thumbnail .w-600}
+
+## Quer saber mais? <a name="go-further"></a>
+
+> [!primary]
+>
+> Para mais informações sobre a configuração de um endereço de e-mail a partir do cliente de e-mail Thunderbird, consulte [o centro de ajuda da Mozilla](https://support.mozilla.org/products/thunderbird).
+
+[Primeiros passos com o serviço Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+
+[Primeiros passos com um servidor Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Fale com a nossa [comunidade de utilizadores](/links/community).

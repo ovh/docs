@@ -126,6 +126,10 @@ Create a new bucket:
 aws s3 mb s3://velero-s3
 ```
 
+> [!primary]
+>
+> Make sure your bucket name is specific enough or a BucketAlreadyExists error will occur, as the bucket names should be unique across all s3 users.
+
 List your buckets:
 
 ```bash
@@ -136,40 +140,16 @@ aws s3 ls
 
 We strongly recommend that you use an [official release of Velero](https://github.com/vmware-tanzu/velero/releases). The tarballs for each release contain the velero command-line client. Expand the tarball and add it to your PATH.
 
+
 Install Velero, including all prerequisites, into the cluster and start the deployment. This will create a namespace called `velero`, and place a deployment named `velero` in it.
 
-> [!primary]
->
-> Starting with version 1.14 the plugin-for-csi is integrated in Velero. You can simply remove it from the install example if you install version 1.14 or newer. For upgrading an older version follow the upgrade notes: [Upgrade-to-1.17](https://velero.io/docs/v1.17/upgrade-to-1.17/).
->
-> Please refer to those links to check Velero's plugins comptability: [velero-plugin-for-aws](https://github.com/vmware-tanzu/velero-plugin-for-aws?tab=readme-ov-file#compatibility) and [velero-plugin-for-csi](https://github.com/vmware-tanzu/velero-plugin-for-csi?tab=readme-ov-file#compatibility).
->
-
-Example for 1.13 and older:
+Example for [velero v1.16.2](https://github.com/vmware-tanzu/velero/releases/tag/v1.16.2):
 
 ```bash
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.9.2,velero/velero-plugin-for-csi:v0.7.0 \
-  --bucket <your bucket name> \
-  --secret-file ~/.aws/credentials \
-  --backup-location-config region=<s3_region>,s3ForcePathStyle="true",s3Url=https://s3.<s3_region>.io.cloud.ovh.net,checksumAlgorithm="" \
-  --snapshot-location-config region=<s3_region>,enableSharedConfig=true
-```
-
-Example for 1.14 and newer:
-
-> [!primary]
->
-> Starting with Velero 1.14, the CSI plugin is included by default. It is no longer necessary to add it explicitly in the velero install command. This simplifies the command, so only the cloud provider plugin (e.g., AWS) needs to be specified.
->
-
-```bash
-velero install \
-  --features=EnableCSI \
-  --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.13.1 \
+  --plugins velero/velero-plugin-for-aws:v1.12.2 \
   --bucket <your bucket name> \
   --secret-file ~/.aws/credentials \
   --backup-location-config region=<s3_region>,s3ForcePathStyle="true",s3Url=https://s3.<s3_region>.io.cloud.ovh.net,checksumAlgorithm="" \
@@ -180,26 +160,11 @@ velero install \
 >
 > Replace `s3_region` by the Public Cloud Region with no digits (e.g.: gra, sbg, bhs).
 
-This command should return an output similar to this (we are taking GRA S3 Region as an example): 
+> [!primary]
+>
+> Starting with version 1.14 the plugin-for-csi is integrated in Velero. For upgrading an older version follow the upgrade notes: [Upgrade-to-1.14](https://velero.io/docs/v1.14/upgrade-to-1.14/).
+> Please refer to those links to check Velero's plugins comptability: [velero-plugin-for-aws](https://github.com/vmware-tanzu/velero-plugin-for-aws?tab=readme-ov-file#compatibility) and [velero-plugin-for-csi](https://github.com/vmware-tanzu/velero-plugin-for-csi?tab=readme-ov-file#compatibility).
 
-```console
-$ velero install \
-  --features=EnableCSI \
-  --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.9.2,velero/velero-plugin-for-csi:v0.7.0 \
-  --bucket velero-s3 \
-  --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.io.cloud.ovh.net,checksumAlgorithm="" \
-  --snapshot-location-config region=gra,enableSharedConfig=true
-CustomResourceDefinition/backups.velero.io: attempting to create resource
-CustomResourceDefinition/backups.velero.io: attempting to create resource client
-CustomResourceDefinition/backups.velero.io: created
-[...]
-Deployment/velero: attempting to create resource
-Deployment/velero: attempting to create resource client
-Deployment/velero: created
-Velero is installed! ⛵ Use 'kubectl logs deployment/velero -n velero' to view the status.
-```
 
 In order to allow Velero to do Volume Snapshots, we need to deploy a new `VolumeSnapshotClass`.
 Create a `velero-snapclass.yaml` file with this content:
@@ -231,10 +196,10 @@ $ kubectl apply -f velero-snapclass.yaml
 volumesnapshotclass.snapshot.storage.k8s.io/csi-cinder-snapclass-in-use-v1-velero created
 
 $ kubectl get volumesnapshotclass --show-labels
-NAME                                    DRIVER                     DELETIONPOLICY   AGE     LABELS
-csi-cinder-snapclass-in-use-v1          cinder.csi.openstack.org   Delete           74d   mks.ovh/version=1.29.3-0
-csi-cinder-snapclass-in-use-v1-velero   cinder.csi.openstack.org   Delete           6s    velero.io/csi-volumesnapshot-class=true
-csi-cinder-snapclass-v1                 cinder.csi.openstack.org   Delete           74d   mks.ovh/version=1.29.3-0
+NAME                                    DRIVER                     DELETIONPOLICY   AGE   LABELS
+csi-cinder-snapclass-in-use-v1          cinder.csi.openstack.org   Delete           50d   mks.ovh/version=1.31.6-2
+csi-cinder-snapclass-in-use-v1-velero   cinder.csi.openstack.org   Delete           82m   velero.io/csi-volumesnapshot-class=true
+csi-cinder-snapclass-v1                 cinder.csi.openstack.org   Delete           50d   mks.ovh/version=1.31.6-2
 ```
 
 ### Verifying Velero is working without Persistent Volumes
@@ -289,16 +254,19 @@ spec:
   type: ClusterIP
 ```
 
-And apply it to your cluster:
+Deploy it to your cluster:
 
 ```bash
-kubectl apply -f nginx-example-without-pv.yml
+kubectl create -f nginx-example-without-pv.yml
 ```
 
 Check Pods have been created:
 
 ```bash
 kubectl get pod -n nginx-example
+NAME                                READY   STATUS    RESTARTS   AGE
+nginx-deployment-7bfdb48f65-pz7v4   1/1     Running   0          65s
+nginx-deployment-7bfdb48f65-x7mnf   1/1     Running   0          65s
 ```
 
 Create a backup of the namespace:
@@ -309,13 +277,15 @@ Create a backup of the namespace:
 >
 
 ```bash
-velero backup create nginx-backup --include-namespaces nginx-example
+velero backup create nginx-backup --include-namespaces nginx-example --wait
 ```
 
 Verify that the backup is done:
 
 ```bash
-velero get backup nginx-backup
+velero get backups
+NAME           STATUS      ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
+nginx-backup   Completed   0        0          2025-08-27 17:25:13 +0200 CEST   29d       default            <none>
 ```
 
 > [!primary]
@@ -326,81 +296,38 @@ Simulate a disaster:
 
 ```bash
 kubectl delete namespace nginx-example
+namespace "nginx-example" deleted
 ```
 
 Restore the deleted namespace:
 
 ```bash
 velero restore create --from-backup nginx-backup
+...
 ```
 
 Verify that the restore is correctly done:
 
 ```bash
-kubectl get all -n nginx-example
+velero restore  get
+NAME                          BACKUP         STATUS      STARTED                          COMPLETED                        ERRORS   WARNINGS   CREATED                          SELECTOR
+nginx-backup-20250827173400   nginx-backup   Completed   2025-08-27 17:34:01 +0200 CEST   2025-08-27 17:34:03 +0200 CEST   0        1          2025-08-27 17:34:01 +0200 CEST   <none>
 ```
 
-In our case, the result looks like this:
+You can see that the resources were recreated as expected:
 
-```console
-$ kubectl apply -f nginx-example-without-pv.yml
-namespace/nginx-example created
-deployment.apps/nginx-deployment created
-service/my-nginx created
-
-$ kubectl get pod -n nginx-example
-
-NAME                                READY   STATUS    RESTARTS   AGE
-nginx-deployment-9d6cbcc65-5ss7j    1/1     Running   0          21s
-nginx-deployment-9d6cbcc65-dqvvn    1/1     Running   0          21s
-
-$ velero backup create nginx-backup --include-namespaces nginx-example
-
-Backup request "nginx-backup" submitted successfully.
-Run `velero backup describe nginx-backup` or `velero backup logs nginx-backup` for more details.
-
-$ velero get backup nginx-backup
-
-NAME           STATUS      ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
-nginx-backup   Completed   0        0          2024-06-17 12:11:23 +0200 CEST   29d       default            <none>
-
-$ kubectl delete namespace nginx-example
-
-namespace "nginx-example" deleted
-
-$ kubectl get all -n nginx-example
-No resources found in nginx-example namespace.
-
-$ velero restore create --from-backup nginx-backup
-
-Restore request "nginx-backup-20240617121341" submitted successfully.
-Run `velero restore describe nginx-backup-20240617121341` or `velero restore logs nginx-backup-20240617121341` for more details.
-
-$ velero restore logs nginx-backup-20240617121341
-time="2024-06-17T10:13:42Z" level=info msg="starting restore" logSource="pkg/controller/restore_controller.go:478" restore=velero/nginx-backup-20240617121341
-time="2024-06-17T10:13:42Z" level=info msg="Starting restore of backup velero/nginx-backup" logSource="pkg/restore/restore.go:392" restore=velero/nginx-backup-20240617121341
-time="2024-06-17T10:13:42Z" level=info msg="Resource 'customresourcedefinitions.apiextensions.k8s.io' will be restored at cluster scope" logSource="pkg/restore/restore.go:1891" restore=velero/nginx-backup-20240617121341
-time="2024-06-17T10:13:42Z" level=info msg="Getting client for apiextensions.k8s.io/v1, Kind=CustomResourceDefinition" logSource="pkg/restore/restore.go:882" restore=velero/nginx-backup-20240617121341
-time="2024-06-17T10:13:42Z" level=info msg="restore status includes excludes: <nil>" logSource="pkg/restore/restore.go:1134" restore=velero/nginx-backup-20240617121341
-time="2024-06-17T10:13:42Z" level=info msg="Executing item action for customresourcedefinitions.apiextensions.k8s.io" logSource="pkg/restore/restore.go:1141" restore=velero/nginx-backup-20240617121341
-[...]
-time="2024-06-17T10:13:48Z" level=warning msg="Cluster resource restore warning: could not restore, CustomResourceDefinition \"configauditreports.aquasecurity.github.io\" already exists. Warning: the in-cluster version is different than the backed-up version." logSource="pkg/controller/restore_controller.go:511" restore=velero/nginx-backup-20240617121341
-time="2024-06-17T10:13:48Z" level=info msg="restore completed" logSource="pkg/controller/restore_controller.go:518" restore=velero/nginx-backup-20240617121341
-
-$ kubectl get all -n nginx-example
-NAME                                   READY   STATUS    RESTARTS   AGE
-pod/nginx-deployment-9d6cbcc65-5ss7j   1/1     Running   0          3m28s
-pod/nginx-deployment-9d6cbcc65-dqvvn   1/1     Running   0          3m28s
-
-NAME               TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)        AGE
-service/my-nginx   ClusterIP      10.3.89.179                   80/TCP         3m28s
-
+```bash
 NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/nginx-deployment   2/2     2            2           3m29s
+deployment.apps/nginx-deployment   2/2     2            2           8m6s
 
-NAME                                         DESIRED   CURRENT   READY   AGE
-replicaset.apps/nginx-deployment-9d6cbcc65   2         2         2       3m29s
+NAME               TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/my-nginx   ClusterIP   10.3.40.25   <none>        80/TCP    8m6s
+
+NAME                                    READY   STATUS    RESTARTS   AGE
+pod/nginx-deployment-7bfdb48f65-pz7v4   1/1     Running   0          8m7s
+pod/nginx-deployment-7bfdb48f65-x7mnf   1/1     Running   0          8m6s
 ```
+
 
 Before continuing, clean the `nginx-example` namespace:
 
@@ -433,7 +360,7 @@ metadata:
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: nginx-logs
+  name: nginx-html
   namespace: nginx-example
   labels:
     app: nginx
@@ -463,17 +390,17 @@ spec:
         app: nginx
     spec:
       volumes:
-        - name: nginx-logs
+        - name: nginx-html
           persistentVolumeClaim:
-            claimName: nginx-logs
+            claimName: nginx-html
       containers:
         - image: nginx:1.27.3
           name: nginx
           ports:
             - containerPort: 80
           volumeMounts:
-            - mountPath: "/var/log/nginx"
-              name: nginx-logs
+            - mountPath: /usr/share/nginx/html
+              name: nginx-html
               readOnly: false
 ---
 apiVersion: v1
@@ -492,79 +419,34 @@ spec:
   type: ClusterIP
 ```
 
-Apply it to the cluster:
-
-```bash
-kubectl apply -f nginx-example-with-pv.yml
-```
-
 > [!primary]
 >
 > Pay attention to the deployment part of this manifest, you will see that we have defined a `.spec.strategy.type`. It specifies the strategy used to replace old Pods by new ones, and we have set it to `Recreate`, so all existing Pods are killed before new ones are created.
 >
 > We do so as the Storage Class we are using, `csi-cinder-high-speed`, only supports a `ReadWriteOnce`, so we can only have one pod writing on the Persistent Volume at any given time.
 
-Wait until you get an external IP:
+Deploy it to the cluster:
 
 ```bash
-kubectl -n nginx-example get svc nginx-service -w
+kubectl create -f nginx-example-with-pv.yml
 ```
 
-When you have a Load Balancer External IP, save it:
+Create an index.html file:
 
 ```bash
-export LB_IP=$(kubectl -n nginx-example get svc nginx-service -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+kubectl -n nginx-example exec -it deploy/nginx-deployment -- sh -c 'echo hello world > /usr/share/nginx/html/index.html'
+kubectl -n nginx-example exec -it deploy/nginx-deployment --  ls -lh /usr/share/nginx/html
+total 20K
+-rw-r--r-- 1 root root  12 Aug 27 15:53 index.html
+drwx------ 2 root root 16K Aug 27 15:51 lost+found
 ```
 
-And do some calls to the URL to generate some access logs:
+Check that the webserver responds as expected:
 
 ```bash
-curl -I $LB_IP
-```
-
-You should have a result like this:
-
-```console
-$ kubectl apply -f nginx-example-with-pv.yml
-
-namespace/nginx-example created
-persistentvolumeclaim/nginx-logs created
-deployment.apps/nginx-deployment created
-service/nginx-service created
-
-$ kubectl -n nginx-example get svc nginx-service -w
-
-NAME            TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
-nginx-service   ClusterIP      10.3.116.4                 80/TCP         12s
-nginx-service   ClusterIP      10.3.116.4                 80/TCP         2m36s
-nginx-service   ClusterIP      10.3.116.4                 80/TCP         2m36s
-```
-
-Now we need to connect to the Pod to read the log file and verify that our logs are written.
-
-First, get the name of the Nginx running pod:
-
-```bash
-export POD_NAME=$(kubectl -n nginx-example get pods -o name)
-```
-
-And then connect to it and see your access logs:
-
-```bash
-kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
-```
-
-You should have a result like this:
-
-```console
-$ export POD_NAME=$(kubectl -n nginx-example get pods -o name)
-
-$ echo $POD_NAME
-pod/nginx-deployment-56996c688d-l58kf
-
-$  kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
-xx.xx.xx.xx - - [17/Jun/2024:10:23:43 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/8.1.2" "-"
-10.2.2.0 - - [17/Jun/2024:10:24:29 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/8.1.2" "-"
+kubectl -n nginx-example port-forward svc/nginx-service 8080:80 > /dev/null&
+curl 0.0.0.0:8080
+hello world
 ```
 
 Now we can ask velero to do the backup of the namespace:
@@ -582,6 +464,8 @@ Check the backup has finished successfully:
 
 ```bash
 velero backup get nginx-backup-with-pv
+NAME                   STATUS                       ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
+nginx-backup-with-pv   Completed   0        0          2025-08-27 18:03:09 +0200 CEST   29d       default            <none>
 ```
 
 Describe the backup to confirm that the CSI `volumesnapshots` were included in the backup:
@@ -606,139 +490,19 @@ Verify that the restore is correctly done:
 
 ```bash
 kubectl get all -n nginx-example
-kubectl get pvc -n nginx-example
 ```
 
-Now we need to connect to the new Pod to read the log file and verify that our logs are written like before.
-
-Get the name of the Nginx running pod:
+Check that the webserver responds as expected:
 
 ```bash
-export POD_NAME=$(kubectl -n nginx-example get pods -o name)
+kubectl -n nginx-example port-forward svc/nginx-service 8080:80 > /dev/null&
+curl 0.0.0.0:8080
+hello world
 ```
 
-And then connect to it and see your access logs:
+The content of the file was restored!
 
-```bash
-kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
-```
-
-You should have a result like this:
-
-```console
-$ velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait
-
-Backup request "nginx-backup-with-pv" submitted successfully.
-Waiting for backup to complete. You may safely press ctrl-c to stop waiting - your backup will continue in the background.
-.........
-Backup completed with status: Completed. You may check for more information using the commands `velero backup describe nginx-backup-with-pv` and `velero backup logs nginx-backup-with-pv`.
-
-$ velero backup get nginx-backup-with-pv
-
-NAME                   STATUS      ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
-nginx-backup-with-pv   Completed   0        0          2024-06-17 12:25:34 +0200 CEST   29d       default            <none>
-
-$ velero describe backup nginx-backup-with-pv --details --features=EnableCSI
-
-Name:         nginx-backup-with-pv
-Namespace:    velero
-Labels:       velero.io/storage-location=default
-Annotations:  velero.io/source-cluster-k8s-gitversion=v1.29.3
-              velero.io/source-cluster-k8s-major-version=1
-              velero.io/source-cluster-k8s-minor-version=29
-
-Phase:  Completed
-
-Errors:    0
-Warnings:  0
-
-Namespaces:
-  Included:  nginx-example
-  Excluded:  <none>
-
-Resources:
-  Included:        *
-  Excluded:        <none>
-  Cluster-scoped:  auto
-
-Label selector:  <none>
-
-Storage Location:  default
-
-Velero-Native Snapshot PVs:  auto
-
-TTL:  720h0m0s
-
-Hooks:  <none>
-
-Backup Format Version:  1.1.0
-
-Started:    2024-06-17 12:25:34 +0200 CEST
-Completed:  2024-06-17 12:25:42 +0200 CEST
-
-Expiration:  2024-07-17 12:25:34 +0200 CEST
-
-Total items to be backed up:  32
-Items backed up:              32
-
-Resource List:
-  apiextensions.k8s.io/v1/CustomResourceDefinition:
-    - configauditreports.aquasecurity.github.io
-  apps/v1/Deployment:
-    - nginx-example/nginx-deployment
-  apps/v1/ReplicaSet:
-    - nginx-example/nginx-deployment-56996c688d
-  aquasecurity.github.io/v1alpha1/ConfigAuditReport:
-    - nginx-example/replicaset-nginx-deployment-56996c688d
-    - nginx-example/service-nginx-service
-  discovery.k8s.io/v1/EndpointSlice:
-    - nginx-example/nginx-service-4gv27
-  [...]
-
-Velero-Native Snapshots: <none included>
-
-CSI Volume Snapshots:
-Snapshot Content Name: snapcontent-299f505a-7598-4d9d-bc97-80c87b79a62c
-  Storage Snapshot ID: 786ef94b-b485-4d07-995a-f0ab84780cec
-  Snapshot Size (bytes): 1073741824
-  Ready to use: true
-
-$ kubectl delete namespace nginx-example
-
-namespace "nginx-example" deleted
-
-$ velero restore create --from-backup nginx-backup-with-pv --wait
-
-Restore request "nginx-backup-with-pv-20240617122624" submitted successfully.
-Waiting for restore to complete. You may safely press ctrl-c to stop waiting - your restore will continue in the background.
-......
-Restore completed with status: Completed. You may check for more information using the commands `velero restore describe nginx-backup-with-pv-20240617122624` and `velero restore logs nginx-backup-with-pv-20240617122624`.
-
-$ kubectl get all -n nginx-example
-
-NAME                                    READY   STATUS              RESTARTS   AGE
-pod/nginx-deployment-56996c688d-l58kf   0/1     ContainerCreating   0          6s
-
-NAME                    TYPE           CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
-service/nginx-service   ClusterIP      10.3.155.16                 80/TCP         6s
-
-NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/nginx-deployment   0/1     1            0           6s
-
-NAME                                          DESIRED   CURRENT   READY   AGE
-replicaset.apps/nginx-deployment-56996c688d   1         1         0       6s
-
-$ export POD_NAME=$(kubectl -n nginx-example get pods -o name)
-
-$ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
-
-xx.xx.xx.xx - - [17/Jun/2024:10:23:43 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/8.1.2" "-"
-10.2.2.0 - - [17/Jun/2024:10:24:29 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/8.1.2" "-"
-```
-
-Your namespace with resources and PVC have been correctly restored.
-
-### Scheduling backup with Velero
+### Scheduling backups with Velero
 
 With Velero you can schedule backups regularly, a good solution for disaster recovery.
 

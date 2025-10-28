@@ -1,7 +1,7 @@
 ---
 title: Modificar un Volume Block Storage
 excerpt: "Descubra cómo cambiar el tipo de un volume block storage utilizando OpenStack"
-updated: 2024-09-26
+updated: 2025-10-21
 ---
 
 > [!primary]
@@ -78,6 +78,8 @@ $ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_N
 ```
 
 ## Más información
+
+Para saber cómo migrar un volumen Block Storage hacia un volumen cifrado LUKS, consulte nuestra guía dedicada [Migrating a Block Storage volume to an encrypted LUKS volume](/pages/public_cloud/compute/migrating-non-encrypted-to-encrypted-volume) (EN).
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 

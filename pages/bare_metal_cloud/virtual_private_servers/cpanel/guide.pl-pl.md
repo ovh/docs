@@ -1,7 +1,7 @@
 ---
 title: "Instalacja cPanel na serwerze VPS"
 excerpt: "Dowiedz się, jak utworzyć instancję VPS przy użyciu wstępnie zainstalowanej aplikacji cPanel"
-updated: 2025-07-14
+updated: 2025-09-11
 ---
 
 ## Wprowadzenie
@@ -22,6 +22,10 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 
 - Wykupienie usługi [VPS](/links/bare-metal/vps) z dystrybucją [kompatybilną](/links/bare-metal/vps-os).
 - zalogowanie do [Panelu client OVHcloud](/links/manager).
+
+> [!warning]
+> Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## W praktyce
 

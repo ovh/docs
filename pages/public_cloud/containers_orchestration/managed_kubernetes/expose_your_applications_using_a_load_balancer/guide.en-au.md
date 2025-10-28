@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2025-02-17
+updated: 2025-10-23
 ---
 
 > [!warning]
@@ -284,15 +284,15 @@ Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer
 
 - `loadbalancer.openstack.org/timeout-client-data`
 
-  Frontend client inactivity timeout in milliseconds for the load balancer. Default value (ms) = 50000.
+  Frontend client inactivity timeout in milliseconds for the load balancer. Default value (s) = 50.
 
 - `loadbalancer.openstack.org/timeout-member-connect`
 
-  Backend member connection timeout in milliseconds for the load balancer. Default value (ms) = 5000.
+  Backend member connection timeout in milliseconds for the load balancer. Default value (s) = 5.
 
 - `loadbalancer.openstack.org/timeout-member-data`
 
-  Backend member inactivity timeout in milliseconds for the load balancer. Default value (ms) = 50000.
+  Backend member inactivity timeout in milliseconds for the load balancer. Default value (s) = 50.
 
 - `loadbalancer.openstack.org/timeout-tcp-inspect`
 

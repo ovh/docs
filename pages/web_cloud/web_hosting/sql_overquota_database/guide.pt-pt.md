@@ -74,7 +74,7 @@ Para se conectar ao banco de dados via phpMyAdmin, clique nas janelas abaixo par
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
@@ -249,7 +249,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>

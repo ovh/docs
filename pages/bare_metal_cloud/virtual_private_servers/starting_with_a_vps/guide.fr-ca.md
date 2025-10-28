@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2025-09-05
+updated: 2025-09-11
 ---
 
 ## Objectif
@@ -16,6 +16,11 @@ Un serveur privé virtuel (VPS) est un serveur dédié virtualisé qui vous offr
 
 - Disposer d'une offre [VPS](/links/bare-metal/vps) active dans votre espace client OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
+
+> [!warning]
+> Certaines fonctionnalités VPS mentionnées sur cette page ne sont pas disponibles dans les Local Zones OVHcloud.
+>
+> Veuillez visiter notre [page Web des Local Zones](/links/bare-metal/vps-lz) pour obtenir plus d'informations.
 
 ## En pratique
 

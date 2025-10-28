@@ -1,7 +1,7 @@
 ---
 title: 'Optimising your website’s performance'
 excerpt: 'Find out how to analyse latency on your website and how to improve it'
-updated: 2024-01-08
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -23,7 +23,7 @@ This guide will help you get a basic understanding on what points can affect per
 
 ## Instructions
 
-### Step 1: Define the scope
+### 1 - Define the scope
 
 #### Questions to ask yourself:
 
@@ -53,7 +53,7 @@ We provide recommendations on what web hosting offer to use for the above listed
 
 You can find more informations regarding which plan to choose from on [this page](/links/web/hosting-best-web).
 
-### Step 2: Checking the PHP version
+### 2 - Checking the PHP version
 
 Using the latest php version compatible with your site can impact performance significantly.
 To check if your website is compatible with the latest PHP version, you can consult [the official documentation of PHP](https://php.net/eol.php).
@@ -77,7 +77,7 @@ To switch to use PHP-FPM in the _stable_ version or to get details on more advan
 
 The _.ovhconfig_ file works at the root of the hosting package or in a level 1 sub-directory (ex.: _/www/_) but not in level two or higher directories (ex.: _/www/test/_ , _/www/test/test2/_)
 
-### Step 3: Checking the media content (images, videos, ...)
+### 3 - Checking the media content (images, videos, ...)
 
 When accessing a website all content has to be downloaded by the browser.
 
@@ -89,7 +89,7 @@ It's up to you to choose the ones fitting your specific needs.
 
 You can find more details on this topic in the Step 5 below.
 
-### Step 4: Optimising your scripts
+### 4 - Optimising your scripts
 
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
@@ -97,11 +97,32 @@ You can access your logs, statistics and graphs directly from the [OVHcloud Cont
 
 How to access statistics and logs:
 
-1. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned.
-2. In the pop-up window, click the `Statistics and logs`{.action} tab.
-3. Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
+Click on the tabs below to view each of the **4** steps.
 
-![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `Statistics and logs`{.action} tab.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
+>>
+>> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 How to access charts:
 
@@ -132,7 +153,7 @@ Don't forget to select the name of your database and the desired period.
 
 - **SQL requests**: Displays the amount of requests.
 
-### Step 5: Checking network requests
+### 5 - Checking network requests
 
 One useful tool for analysis is the [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor) which is directly integrated in the Mozilla Firefox browser and allows to analyze a web page's loading time in detail.
 
@@ -151,7 +172,7 @@ As a result you will improve response times for visitors all over the world beca
 
 Discover our [CDN solution here](/links/web/hosting-options-cdn).
 
-### Step 6: Checking the Content Management System (CMS) and plugins used
+### 6 - Checking the Content Management System (CMS) and plugins used
 
 _This step is optional if you are not using a CMS._
 
@@ -161,7 +182,7 @@ To ensure that your hosting offer is adapted to the needs of your CMS, you can f
 
 - **Deactivation of unused plugins:** It might be a good idea to deactivate or even delete unused plugins to improve website performance. This will prevent useless elements from being downloaded.
 
-### Step 7: Optimise your database
+### 7 - Optimise your database
 
 _This step is optional if you are not using a database._
 You can access your database using PHPMyAdmin; instructions on how to use PHPMyAdmin would go beyond the scope of this guide, therefore it won't be furtherly detailed.

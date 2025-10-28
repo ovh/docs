@@ -1,7 +1,7 @@
 ---
 title: "Recuperare il backup del database di un hosting Web"
 excerpt: "Questa guida ti mostra come ripristinare il backup di un database di un hosting Web OVHcloud"
-updated: 2023-08-22
+updated: 2025-10-08
 ---
 
 ## Obiettivo
@@ -46,9 +46,34 @@ Continua la lettura in base al metodo di backup scelto.
 
 ### Recuperare un backup tramite lo strumento di OVHcloud
 
-Per accedere allo strumento di backup di OVHcloud, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting interessato. e clicca sulla scheda `Database`{.action}.
+Per accedere allo strumento di backup di OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
-Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Da questo momento è possibile scegliere se effettuare un nuovo backup o ripristinarne uno esistente.
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `Database`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Sulla nuova pagina appare una tabella con i database creati.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+>>
+>> Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Da questo momento è possibile scegliere se effettuare un nuovo backup o ripristinarne uno esistente.
 
 #### Step 1: effettua un nuovo backup del database
 

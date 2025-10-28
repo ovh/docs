@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores recurrentes durante el uso de un programa FTP"
 excerpt: "Encuentre aquí las anomalías más frecuentes asociadas a su programa FTP"
-updated: 2025-05-23
+updated: 2025-10-20
 ---
 
 ## Objetivo
@@ -59,11 +59,28 @@ Si no puede autenticarse, modifique su contraseña FTP siguiendo las instruccion
 
 La falta de espacio en su alojamiento compartido puede provocar fallos de funcionamiento en su sitio web al intentar modificarlo o actualizarlo.
 
-Para comprobar el espacio de almacenamiento restante del alojamiento, conéctese al [área de cliente de OVHcloud](/links/manager). Haga clic en `Web Cloud`{.action} y, seguidamente, en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente.
+Para comprobar el espacio de almacenamiento restante del alojamiento, haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 
-La cantidad de datos almacenados en el servidor de alojamiento (excluyendo las bases de datos) se muestra en la sección `Información general`{.action} > `Espacio en disco`.
-
-![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En el cuadro **Información general**, encontrará la mención **Espacio en disco**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> El espacio de almacenamiento utilizado aparece debajo de esta mención.
 
 ### No puedo transferir mis archivos al servidor FTP.
 

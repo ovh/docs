@@ -25,10 +25,6 @@ Our infrastructure also allows you to configure IPv6 on your virtual machines.
 - You must have all the information related to your IPv6 (prefix, gateway, etc.).
 - Basic knowledge of SSH and networking.
 
-> [!warning]
-> Please note that [we no longer offer VMware EXSi as an operating system](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support). As a result, the configuration examples in this guide will focus on Proxmox VE and Windows Hyper-V.
->
-
 ## Instructions
 
 The following sections contain the configurations of the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to connect to your server via SSH or via a GUI (RDP for a Windows server) connection session.

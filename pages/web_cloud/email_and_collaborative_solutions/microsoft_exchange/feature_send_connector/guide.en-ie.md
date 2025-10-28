@@ -1,7 +1,7 @@
 ---
 title: Configure a send connector on your Private or Trusted Exchange platform
 excerpt: Find out how to add an SMTP send connector to your OVHcloud Exchange platform
-updated: 2023-11-06
+updated: 2025-10-09
 ---
 
 <style>
@@ -86,8 +86,13 @@ To add a send connector to your Exchange platform, use the following API call.
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-- `organizationName`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+In the section **PATH PARAMETERS**:
+
 - `exchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+- `organizationName`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+
+In the **EXAMPLE** tab in the **REQUEST BODY** section, fill in the fields with your values:
+
 - `displayName`: The display name of your send connector.
 - `maxSendSize`: Maximum size in MB of an email when sending (100MB maximum and default if left empty).
 - `password`: The password attached to the send connector user.
@@ -96,6 +101,12 @@ To add a send connector to your Exchange platform, use the following API call.
 - `smartHost`: Send connector (SMTP) address.
 - `smartHostAuthMechanism`: Authentication mechanism used for send connector.
 - `user`: The user associated with the send connector.
+
+> [!primary]
+>
+> The `Only required fields` button below the input box displays only the required fields.
+
+Click `Execute`{.action} to launch the API call.
 
 You get this type of result:
 
@@ -115,8 +126,12 @@ Once the send connector has been created, use the following API call to retrieve
 >
 > @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
+In the section **PATH PARAMETERS**:
+
+- `exchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
 - `organizationName` : Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
-- `ExchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+
+Click `Execute`{.action} to launch the API call.
 
 You get this type of result:
 
@@ -132,9 +147,13 @@ You can find the details of your send connector using this API call: <a name="id
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-- `organizationName`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+In the section **PATH PARAMETERS**:
+
+- `exchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
 - `id`: Enter the ID of your send connector, obtained as a number in the previous step.
-- `ExchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+- `organizationName`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+
+Click `Execute`{.action} to launch the API call.
 
 You get this type of result:
 
@@ -164,12 +183,18 @@ Use the Exchange account setup API call to add your send connector ID to an emai
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
+In the section **PATH PARAMETERS**:
+
+- `exchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
 - `organizationName` : Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
 - `primaryEmailAddress`: Enter one of the email addresses of your Exchange platform, to which you want to attach the send connector.
-- `ExchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
-- `Account`: This is where the information linked to the email address is entered. **We will only look at the line related to the send connector**.
-    - `sendConnectorId`: Enter the ID of your send connector, obtained as a number in [the previous](#idconnector) step.
-    - Tick the `deleteVirus` box (if it is not already ticked) to not get an error when executing the API call.
+
+In the **EXAMPLE** tab in the **REQUEST BODY** section, modify the values in the two fields below:
+
+- `sendConnectorId`: Enter the ID of your send connector, obtained as a number in [the previous](#idconnector) step.
+- `deleteVirus`: Enter “true” instead of “false” to avoid getting an error when executing the API call.
+
+Click `Execute`{.action} to launch the API call.
 
 The result is as follows:
 
@@ -245,12 +270,18 @@ To remove a send connector attached to an account from the Exchange platform, us
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
-- `organizationName` : enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
-- `primaryEmailAddress`: Enter one of the email addresses of your Exchange platform, to which you want to detach the send connector.
-- `ExchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
-- `Account`: Enter the information linked to the email address entered in the “primaryEmailAddress” box. We will only look at the lines related to the send connector.
-    - `sendConnectorId`: Type '0' to set the Send Server ID of the Exchange platform.
-    - Check the `deleteVirus` box (if it is not already ticked) to avoid getting an error.
+In the section **PATH PARAMETERS**:
+
+- `exchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+- `organizationName`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+- `primaryEmailAddress`: Enter one of the email addresses of your Exchange platform, to which you want to attach the send connector.
+
+In the **EXAMPLE** tab in the **REQUEST BODY** section, modify the values in the two fields below:
+
+- `sendConnectorId`: Enter the ID of your send connector, obtained as a number in [the previous](#idconnector) step.
+- `deleteVirus`: Enter “true” instead of “false” to avoid getting an error when executing the API call.
+
+Click `Execute`{.action} to launch the API call.
 
 The result is as follows:
 
@@ -270,11 +301,18 @@ To do this, use the following API call:
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
-- `organizationName`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
-- `ExchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+In the section **PATH PARAMETERS**:
+
 - `domainName`: Enter the domain name that will benefit from the send connector.
+- `exchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+- `organizationName`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+
+In the **EXAMPLE** tab in the **REQUEST BODY** section, modify the values in the two fields below:
+
 - `sbrDefault `: Leave empty.
 - `sendConnectorIdDefault`: Enter the ID of your send connector, obtained as a number in [this step](#idconnector).
+
+Click `Execute`{.action} to launch the API call.
 
 The result is as follows:
 

@@ -1,7 +1,7 @@
 ---
 title: "Hosting - sprawdzanie statystyk i logów strony www"
 excerpt: "Dowiedz się, jak sprawdzić statystyki i logi Twojej strony WWW dzięki rozwiązaniu hostingowemu"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie 
@@ -17,22 +17,37 @@ Dostęp do logów i statystyk Twojej strony WWW jest zawarty w wybranej przez Ci
 
 ## W praktyce
 
-Aby uzyskać dostęp do różnych danych statystycznych i logów Twojego hostingu, wykonaj następujące czynności: 
+Aby uzyskać dostęp do różnych danych statystycznych i logów Twojego hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Hosting`{.action}.
-4. Wybierz odpowiedni hosting.
-5. Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
-
-Ekran, który się wyświetla składa się z 4 sekcji:
-
-- [Statystyki odwiedzin na stronie](#website-stats): przedstawia liczne statystyki dotyczące Twojego hostingu.
-- [Logi strony WWW](#website-logs): Wyświetla logi hostingu www.
-- [Statystyki dotyczące infrastruktury](#infra-stats): przedstawia statystyki graficzne (zapytania HTTP i SQL, polecenia FTP, wykorzystanie CPU, połączenia wychodzące, itp.)
-- [Zarządzanie użytkownikami](#admin-user): Wyświetla użytkowników z uprawnieniami dostępu do statystyk
-
-![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Ekran, który się wyświetla składa się z 4 sekcji:
+>>
+>> - [Statystyki odwiedzin na stronie](#website-stats): Przedstawia liczne statystyki dotyczące Twojego hostingu.
+>> - [Logi strony WWW](#website-logs): Wyświetla logi hostingu WWW.
+>> - [Statystyki dotyczące infrastruktury](#infra-stats): Przedstawia statystyki graficzne (zapytania HTTP i SQL, polecenia FTP, wykorzystanie CPU, połączenia wychodzące, itp.).
+>> - [Zarządzanie użytkownikami](#admin-user): Wyświetla użytkowników z uprawnieniami dostępu do statystyk.
+>>
+>> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 ### Statystyki odwiedzin na stronie <a name="website-stats"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Logowanie do przestrzeni dyskowej FTP hostingu"
 excerpt: "Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud"
-updated: 2025-06-10
+updated: 2025-06-15
 ---
 
 ## Wprowadzenie 
@@ -22,7 +22,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ## W praktyce
 
-### Etap 1: pobierz informacje potrzebne do zalogowania
+### 1 - Pobierz informacje potrzebne do zalogowania
 
 Aby zalogować się do przestrzeni dyskowej FTP, pobierz następujące elementy:
 
@@ -35,25 +35,44 @@ Aby zalogować się do przestrzeni dyskowej FTP, pobierz następujące elementy:
 >
 > Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu podczas jego rejestracji. Są one dostępne w [Panelu klienta OVHcloud](/links/manager).
 > 
-> **Jeśli dysponujesz już tymi elementami**, przejdź bezpośrednio do etapu 2  [niniejszego przewodnika](#ftp_storage_access).
-> 
+> **Jeśli dysponujesz już tymi elementami**, przejdź bezpośrednio w części 2 [niniejszego przewodnika](#ftp_storage_access).
 
-Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
+Jeśli nie posiadasz tych elementów, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
-Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
+>>
+>> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Jeśli chcesz utworzyć nowego użytkownika FTP/SSH z tej samej strony, kliknij przycisk `Utwórz użytkownika`{.action} z prawej strony.
+>> > Zdefiniuj rozszerzenie nazwy nowego `Użytkownik`{.action} i `Folder główny`{.action}, w którym użytkownik będzie mógł działać, a następnie kliknij `Dalej`{.action}.
+>> > Wybierz hasło dla tego nowego konta użytkownika, kliknij na `Dalej`{.action}, następnie kliknij na `Potwierdź`{.action}.
+>>
+>> Wszystkie elementy potrzebne do zalogowania się do przestrzeni dyskowej FTP znajdują się na tej samej stronie.
 
-![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!primary]
->
-> Jeśli chcesz utworzyć nowego użytkownika FTP/SSH z tej samej strony, kliknij przycisk `Utwórz użytkownika`{.action} z prawej strony.
-> Zdefiniuj rozszerzenie nazwy nowego `Użytkownik`{.action} i `Folder główny`{.action}, w którym użytkownik będzie mógł działać, a następnie kliknij `Dalej`{.action}.
-> Wybierz hasło dla tego nowego konta użytkownika, kliknij na `Dalej`{.action}, następnie kliknij na `Potwierdź`{.action}.
->
-
-Wszystkie elementy potrzebne do zalogowania się do przestrzeni dyskowej FTP znajdują się na tej samej stronie.
-
-Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stronie `FTP-SSH`:
+Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stronie `FTP - SSH`:
 
 - **Serwer FTP i SFTP** : adres serwera FTP hostingu pozwalający na dostęp do przestrzeni dyskowej FTP. Używając na przykład oprogramowania FTP za pomocą protokołu FTP lub SFTP.
 
@@ -76,7 +95,7 @@ Jeśli nie znasz hasła użytkownika FTP lub SSH, zapoznaj się z naszym przewod
 
 W tym momencie dysponujesz wszystkimi elementami pozwalającymi na zalogowanie się do przestrzeni dyskowej FTP.
 
-### Etap 2: ddostęp do przestrzeni dyskowej FTP <a name="ftp_storage_access"></a>
+### 2 - Dostęp do przestrzeni dyskowej FTP <a name="ftp_storage_access"></a>
 
 Połączenie z przestrzenią dyskową FTP można wykonać na kilka sposobów. Przejdź do opisu operacji, której chcesz użyć.
 
@@ -130,7 +149,7 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 W powyższej komendzie zastąp:
 
-- wartość `sshlogin` przez główny login FTP opisany w [etap 2.1](#ftpsoftware) (lub przez login FTP z dostępem SSH);
+- wartość `sshlogin` przez główny login FTP opisany w [części 2.1](#ftpsoftware) (lub przez login FTP z dostępem SSH);
 - `XXX` przez cyfry odpowiadające numerowi klastra, w którym znajduje się Twój hosting.
 
 Po wysłaniu polecenia zostaniesz poproszony o wpisanie hasła użytkownika SSH.

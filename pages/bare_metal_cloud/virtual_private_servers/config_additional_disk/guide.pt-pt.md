@@ -16,6 +16,10 @@ Com os VPS OVHcloud, tem a possibilidade de adicionar um espaço de armazenament
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 - Ter acesso administrativo via SSH ou RDP ao VPS
 
+> [!warning]
+> Esta funcionalidade está atualmente indisponível para os servidores privados virtuais nas [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## Instruções
 
 Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.

@@ -1,7 +1,7 @@
 ---
 title: "Come utilizzare le policy di IAM utilizzando l’API OVHcloud (EN)"
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-09-08
+updated: 2025-10-10
 ---
 
 ## Objective
@@ -103,7 +103,7 @@ Items in policies are defined by URNs. These URNs are defined by the following p
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-The URNs and actions can end with a `*` wildcard character. This allows referring to multiple resources, identities or actions in a single line.
+The resources URNs and actions can end with a `*` wildcard character. This allows referring to multiple resources or actions in a single line.
 
 *Example of a resource URN with a wildcard :*
 

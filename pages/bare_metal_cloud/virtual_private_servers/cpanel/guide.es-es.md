@@ -1,7 +1,7 @@
 ---
 title: "Desplegar cPanel en un VPS"
 excerpt: "Descubra cómo instanciar un VPS con la aplicación cPanel preinstalada"
-updated: 2025-07-14
+updated: 2025-09-11
 ---
 
 ## Objetivo
@@ -16,14 +16,16 @@ cPanel es un panel de control que facilita la gestión de los alojamientos web. 
 
 Gracias a una interfaz gráfica que permite automatizar los parámetros, el alojamiento de sitios web se simplifica.
 
-**Descubra cómo desplegar cPanel con las aplicaciones preinstaladas en un VPS.**
-
 **Esta guía explica cómo desplegar cPanel con aplicaciones preinstaladas en un VPS.**
 
 ## Requisitos
 
 - Tener contratado un servicio [VPS reciente](/links/bare-metal/vps) con un [OS compatible con cPanel](/links/bare-metal/vps-os).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+> [!warning]
+> Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Procedimiento
 

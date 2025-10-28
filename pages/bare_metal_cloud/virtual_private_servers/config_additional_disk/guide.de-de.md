@@ -16,6 +16,10 @@ Bei den VPS von OVHcloud können Sie einen sicheren Speicherplatz als Dienstopti
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Administrativer Zugriff via SSH oder RDP auf Ihren VPS.
 
+> [!warning]
+> Diese Funktion ist derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## In der praktischen Anwendung
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Virtual Private Server`{.action} aus.

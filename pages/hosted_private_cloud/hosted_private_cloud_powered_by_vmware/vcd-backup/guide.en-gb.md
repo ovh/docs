@@ -31,13 +31,13 @@ details[open]>summary::before {
     - [How to log in to your organization](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [How to use the Public VCF as-a-Service user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 - You must be familiar with how Veeam Backup works. 
-- An understanding of the financial impact following the various load factors that apply when setting up this solution with Public VCF as-a-Service (see the [pricing grid for Veeam Managed Backup](/links/hosted-private-cloud/veeam-managed-backup).
+- An understanding of the financial impact following the various load factors that apply when setting up this solution with Public VCF as-a-Service (see the [pricing grid for Veeam Managed Backup](/links/hosted-private-cloud/public-vcf-aas-veeam)).
 
 ## Instructions
 
 Veeam Data Platform supports Public VCF as-a-Service. It uses the Public VCF as-a-Service API to back up the vApps and VMs and restore them directly in the Public VCF as-a-Service hierarchy.
 
-The Veeam Data Platform service is available and ready to use for all 3 OVHcloud solutions (see the [features catalog](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features).
+The Veeam Data Platform service is available and ready to use for all 3 OVHcloud solutions (see the [features catalog](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features)).
 
 > [!warning]
 >
@@ -56,7 +56,7 @@ When using Public VCF as-a-Service Data Protection integration with Veeam to cre
 
 To access the Data Protection Portal with Veeam from Cloud Director, log in to the Public VCF as-a-Service Client Portal with a vCloud Director account with the appropriate rights.
 
-In the menu of the top center bar, click `More`{.action} and select `Data Protection with Veeam`{.action}
+In the menu of the top center bar, click `More`{.action} and select `Data Protection with Veeam`{.action}.
 
 ![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
@@ -144,7 +144,7 @@ In the Veeam Public VCF as-a-Service console, click `More`{.action} and select `
 
 ![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
-Click `Jobs`{.action} then `Create`{.action}
+Click `Jobs`{.action} then `Create`{.action}.
 
 ![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
 
@@ -164,7 +164,7 @@ Click `Next`{.action}.
 
 Your virtual machine will then appear in the list.
 
-Click `Next.`{.action}
+Click `Next.`{.action}.
 
 ![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_5.png){.thumbnail}
 
@@ -177,7 +177,7 @@ Click `Next.`{.action}
 >
 > For Windows you can choose a standard account or a managed service account.
 
-Click `Next`{.action}
+Click `Next`{.action}.
 
 ![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail}
 

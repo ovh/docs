@@ -51,7 +51,7 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
 
 ### OWA e Zimbra
 
-Questa sezione documenta le offerte MX Plan che utilizzano la tecnologia webamil **OWA** e **Zimbra**.
+Questa sezione documenta le offerte MX Plan che utilizzano la tecnologia webmail **OWA** e **Zimbra**.
 
 #### Crea un account email
 

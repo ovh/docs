@@ -1,7 +1,7 @@
 ---
 title: Installation von WordPress auf einer Instanz
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz für das Hosting von WordPress-Webseiten verwenden
-updated: 2023-05-17
+updated: 2025-09-23
 ---
 
 ## Ziel
@@ -130,10 +130,10 @@ Die Konfiguration einer Firewall (*iptables*) verbessert die Sicherheit Ihrer Wo
 debian@instance:~$ sudo apt install ufw
 ```
 
-Die relevanten Profile haben in der Liste der Anwendungen den Vermerk "WWW":
+In der Liste der verfügbaren Anwendungen für UFW werden die Profile, die einem Webserver entsprechen, auf einer Debian-Instanz als "WWW" und auf einer Ubuntu-Instanz als "Apache" bezeichnet. Diese Profile ermöglichen es, die notwendigen Ports für den HTTP- und HTTPS-Datenverkehr auf einfache und sichere Weise zu öffnen.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # oder grep Apache
   WWW
   WWW Cache
   WWW Full

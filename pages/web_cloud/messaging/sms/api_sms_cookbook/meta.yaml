@@ -1,4 +1,5 @@
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +7,6 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
+- pt-pt
 id: f308db6b-f0d4-4996-a89b-cbdb9f5e459a
 full_slug: sms-api-cookbook

@@ -1,7 +1,7 @@
 ---
 title: Configurar un conector de envío en su plataforma Private o Trusted Exchange
 excerpt: Cómo añadir un conector de envío SMTP a la plataforma Exchange de OVHcloud
-updated: 2023-11-06
+updated: 2025-10-09
 ---
 
 <style>
@@ -78,7 +78,7 @@ Antes de empezar, necesitará la siguiente información. Deben ser proporcionado
 - El nombre de usuario asociado (por ejemplo, una dirección de correo electrónico) **puede ser opcional en función del conector de envío**.
 - La contraseña asociada al nombre de usuario , **puede ser opcional en función del conector de envío**.
 
-A continuación, conéctese a la API de OVHcloud con sus claves de acceso. Para más información, consulte nuestra guía [Primeros pasos con la API de OVHcloud ](/pages/manage_and_operate/api/first-steps).
+A continuación, conéctese a la API de OVHcloud con sus claves de acceso. Para más información, consulte nuestra guía [Primeros pasos con la API de OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 Para añadir un conector de envío a su plataforma Exchange, utilice la siguiente llamada a la API.
 
@@ -86,8 +86,13 @@ Para añadir un conector de envío a su plataforma Exchange, utilice la siguient
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-- `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+En la sección **PATH PARAMETERS**:
+
 - `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+- `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+
+En la pestaña **EXAMPLE** de la sección **REQUEST BODY**, rellene los campos con sus valores:
+
 - `displayName`: nombre mostrado del conector de envío.
 - `maxSendSize`: tamaño máximo, en MB, de un mensaje de correo electrónico cuando se envía (100MB máximo y por defecto si no se pone nada).
 - `password`: contraseña asociada al usuario del conector de envío.
@@ -96,6 +101,12 @@ Para añadir un conector de envío a su plataforma Exchange, utilice la siguient
 - `smartHost`: dirección del conector de envío (SMTP).
 - `smartHostAuthMechanism`: mecanismo de autenticación utilizado para el conector de envío.
 - `user`: usuario asociado al conector de envío.
+
+> [!principal]
+>
+> El botón `Only required fields` (Sólo campos obligatorios) situado debajo del cuadro de entrada muestra sólo los campos obligatorios.
+
+Haga clic en `Execute`{.action} para iniciar la llamada a la API.
 
 Este es el resultado:
 
@@ -115,8 +126,12 @@ Una vez creado el conector de envío, utilice la siguiente llamada a la API para
 >
 > @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-- `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+En la sección **PATH PARAMETERS**:
+
 - `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+- `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+
+Haga clic en `Execute`{.action} para iniciar la llamada a la API.
 
 Este es el resultado:
 
@@ -132,9 +147,13 @@ Puede consultar los detalles de su conector de envío utilizando esta API: <a na
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-- `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
-- `id`: Introduzca el ID del conector de envío, que se obtiene como número en el paso anterior.
+En la sección **PATH PARAMETERS**:
+
 - `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+- `id`: Introduzca el ID del conector de envío, que se obtiene como número en el paso anterior.
+- `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+
+Haga clic en `Execute`{.action} para iniciar la llamada a la API.
 
 Este es el resultado:
 
@@ -164,12 +183,18 @@ Utilizar la llamada API de configuración de una cuenta Exchange para añadir el
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
+En la sección **PATH PARAMETERS**:
+
 - `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `primaryEmailAddress` : Introduzca una de las direcciones de correo electrónico de su plataforma Exchange a la que quiera asociar el conector de envío.
 - `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
-- `Account`: Aquí es donde se introduce la información asociada a la dirección de correo electrónico. **Solo vamos a ver la línea relativa al conector de envío**.
-    - `sendConnectorId` : introduzca el ID del conector de envío, que se obtiene como número en [el paso anterior](#idconnector).
-    - Marque la casilla `deleteVirus` (si aún no está marcada) para evitar errores al ejecutar la llamada a la API
+
+En la pestaña **EXAMPLE** de la sección **REQUEST BODY**, modifique los valores de los dos campos siguientes:
+
+- `sendConnectorId` : introduzca el ID del conector de envío, que se obtiene como número en [el paso anterior](#idconnector).
+- `deleteVirus`: introduzca «true» en lugar de «false» para evitar errores al ejecutar la llamada a la API.
+
+Haga clic en `Execute`{.action} para iniciar la llamada a la API.
 
 El resultado es el siguiente:
 
@@ -245,12 +270,18 @@ Para retirar un conector de envío asociado a una cuenta de la plataforma Exchan
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
+En la sección **PATH PARAMETERS**:
+
+- `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `primaryEmailAddress` : Introduzca una de las direcciones de correo de su plataforma Exchange, a la que quiere desvincular el conector de envío.
-- `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
-- `Account` : Introduzca aquí la información relativa a la dirección de correo electrónico que ha indicado en el campo «primaryEmailAddress». Solo vamos a ver las líneas relacionadas con el conector de envío.
-    - `sendConnectorId`: escriba « 0 » para establecer el identificador del servidor de envío de la plataforma de Exchange.
-    - Marque la casilla de verificación `deleteVirus` (si aún no está marcada) para evitar errores.
+
+En la pestaña **EXAMPLE** de la sección **REQUEST BODY**, modifique los valores de los dos campos siguientes:
+
+- `sendConnectorId`: escriba « 0 » para establecer el identificador del servidor de envío de la plataforma de Exchange.
+- `deleteVirus`: introduzca «true» en lugar de «false» para evitar errores al ejecutar la llamada a la API.
+
+Haga clic en `Execute`{.action} para iniciar la llamada a la API.
 
 El resultado es el siguiente:
 
@@ -270,11 +301,18 @@ Para ello, utilice la siguiente llamada a la API:
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
-- `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
-- `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+En la sección **PATH PARAMETERS**:
+
 - `domainName`: introduzca el nombre de dominio que se beneficiará del conector de envío.
+- `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+- `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
+
+En la pestaña **EXAMPLE** de la sección **REQUEST BODY**, complete los campos con sus valores:
+
 - `sbrDefault `: Dejar en blanco.
 - `sendConnectorIdDefault`: Introduzca el ID del conector de envío, que se obtiene como número en [este paso](#idconnector).
+
+Haga clic en `Execute`{.action} para iniciar la llamada a la API.
 
 El resultado es el siguiente:
 

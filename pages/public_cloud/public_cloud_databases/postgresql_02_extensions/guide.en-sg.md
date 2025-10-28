@@ -110,7 +110,7 @@ Also some extensions may require disconnecting the client and reconnecting befor
 | `pg_buffercache` | <https://www.postgresql.org/docs/current/pgbuffercache.html> | Examine the shared buffer cache. |
 | `pg_cron` | <https://github.com/citusdata/pg_cron> | Job scheduler for PostgreSQL. |
 | `pg_partman` | <https://github.com/pgpartman/pg_partman> | Extension to manage partitioned tables by time or ID. |
-| `pg_prewarm` | h<ttps://www.postgresql.org/docs/current/pgprewarm.html> | Prewarm relation data. PG11 and newer |
+| `pg_prewarm` | <https://www.postgresql.org/docs/current/pgprewarm.html> | Prewarm relation data. PG11 and newer |
 | `pg_prometheus` | <https://github.com/timescale/pg_prometheus> | Prometheus metrics for PostgreSQL. `PG12 and earlier` |
 | `pg_repack` | <https://pgxn.org/dist/pg_repack/1.4.6/> | Reorganize tables in PostgreSQL databases with minimal locks. |
 | `pg_stat_statements` | <https://www.postgresql.org/docs/current/pgstatstatements.html> | Track planning and execution statistics of all SQL statements executed. |

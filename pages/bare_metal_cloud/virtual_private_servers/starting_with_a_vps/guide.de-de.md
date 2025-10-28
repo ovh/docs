@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem VPS
 excerpt: Erfahren Sie hier, wie Sie einen VPS in Ihrem Kundencenter verwalten sowie die ersten Schritte zum Start, inklusive Remote-Verbindungen und Sicherheitsmaßnahmen
-updated: 2025-09-05
+updated: 2025-09-11
 ---
 
 ## Ziel
@@ -14,6 +14,11 @@ Ein Virtual Private Server (VPS) ist ein virtualisierter Dedicated Server, der I
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kundencenter.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+> [!warning]
+> Nicht alle auf dieser Seite erwähnten VPS-Funktionen sind in OVHcloud Local Zones verfügbar.
+>
+> Beachten Sie dazu die Informationen auf unserer [Local Zones Webseite](/links/bare-metal/vps-lz).
 
 ## In der praktischen Anwendung
 

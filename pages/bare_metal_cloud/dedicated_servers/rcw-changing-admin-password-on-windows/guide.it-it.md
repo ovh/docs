@@ -1,7 +1,7 @@
 ---
 title: "Come reimpostare la password amministratore con Rescue-Customer-Windows"
 excerpt: "Come reimpostare la password amministratore con Rescue-Customer-Windows"
-updated: 2025-03-06
+updated: 2025-10-22
 ---
 
 ## Obiettivo
@@ -11,6 +11,7 @@ Questa guida ti mostra come ripristinare la password `Administrator` con **Windo
 ## Prerequisiti
 
 - Microsoft Windows Server 2016 o versione successiva installata sul tuo [server dedicato](/links/bare-metal/bare-metal)
+- Almeno 16 GB di RAM installati sul server
 - Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]

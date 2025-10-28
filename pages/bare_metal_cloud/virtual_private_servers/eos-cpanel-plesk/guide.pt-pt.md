@@ -1,7 +1,7 @@
 ---
 title: "Fim do suporte Plesk e cPanel para VPS - Assegurar a continuidade dos seus serviços"
 excerpt: "Descubra as datas de fim do suporte dos sistemas operativos do seu VPS OVHcloud que afetam as licenças Plesk e cPanel"
-updated: 2025-07-22
+updated: 2025-09-29
 ---
 
 ## Objetivo
@@ -20,10 +20,10 @@ Os editores **Plesk** e **cPanel** anunciam o fim do suporte para os seguintes s
 
 | Sistema operativo | Produto        | Fim do suporte           |
 | ----------------- | -------------- | ------------------------ |
-| Ubuntu 18.04      | Plesk          | **1 de janeiro de 2026** |
-| Debian 10         | Plesk          | **1 de janeiro de 2026** |
-| CentOS 7          | Plesk / cPanel | **1 de janeiro de 2026** |
-| CloudLinux 7      | Plesk / cPanel | **1 de janeiro de 2026** |
+| Ubuntu 18.04      | Plesk          | **1 de janeiro de 2027** |
+| Debian 10         | Plesk          | **1 de janeiro de 2027** |
+| CentOS 7          | Plesk / cPanel | **1 de janeiro de 2027** |
+| CloudLinux 7      | Plesk / cPanel | **1 de janeiro de 2027** |
 
 Para obter mais informações de apoio, consulte a documentação oficial:
 
@@ -88,6 +88,12 @@ Se não conseguir implementar um novo servidor VPS, algumas ferramentas permitem
 > [!primary]
 >
 > Estas ferramentas não têm uma garantia de 100% e necessitam de backups completos antes de serem utilizadas. Certifique-se igualmente de que o seu VPS dispõe de recursos suficientes (RAM, CPU, disco).
+
+### Boas práticas de segurança
+
+Independentemente do Plesk/cPanel, é essencial **manter o sistema operacional do seu VPS atualizado** para beneficiar-se dos patches de segurança, compatibilidade de software e suporte do editor. Se a sua distribuição estiver em **fim de vida (EOL)**, planeje uma **atualização** ou uma **migração** para uma versão ainda suportada.
+
+Para conhecer as datas de fim de vida e de fim de suporte das imagens e dos sistemas operacionais (VPS & Public Cloud), consulte nosso guia "[Public Cloud & VPS - Ciclo de vida e anúncios de fim de vida e suporte para imagens e distribuições](/pages/public_cloud/compute/image-life-cycle)".
 
 ## Quer saber mais? <a name="go-further"></a>
 

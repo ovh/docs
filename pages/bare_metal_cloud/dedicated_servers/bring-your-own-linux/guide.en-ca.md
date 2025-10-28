@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2025-06-05
+updated: 2025-09-30
 ---
 
 ## Objective
@@ -34,8 +34,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 
 There are some technical limitations linked to the use of physical products such as dedicated servers. Here is a non-exhaustive list, to keep in mind during your deployment preparation:
 
-- Boot type: **uefi** or **legacy**
-- Partition type: **MBR** or **GPT**
+- Boot type: **UEFI** or **legacy** (depending on the boot type of your server)
 - Image format: **qcow2**
 - Only one partition in the qcow2 image
 

@@ -1,7 +1,7 @@
 ---
 title: "Technical capabilities and limitations of Public VCF as-a-Service"
 excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka Public VCF as-a-Service)"
-updated: 2025-05-13
+updated: 2025-09-25
 ---
 
 ## Objective
@@ -33,6 +33,7 @@ Before getting started, review the following guides to better understand Public 
 | VMs (per vApp) | 128 | 128 | 128 | Maximum number of VMs allowed per vApp. |
 | VMs (per organization) | 2000 | 4000 | 4000 | Maximum number of VMs per organization. |
 | vApps (per organization) | 10,000 | 10,000 | 10,000 | Maximum number of vApps per organization. |
+| Segments (per organization) | 40 | 40 | 40 | Maximum number of segments per organization. |
 
 > **Note**: When creating a snapshot that includes the VM's memory, storage usage can quickly add up.
 > For example, if you have 1 VM with 1 GB of RAM and a 10 GB disk, and you create a snapshot that includes memory, your storage usage will be:

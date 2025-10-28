@@ -1,7 +1,7 @@
 ---
 title: "Zakończenie wsparcia Plesk i cPanel dla serwerów VPS - Jak zapewnić ciągłość działania usług"
 excerpt: "Dowiesz się, kiedy dobiega końca okres wsparcia dla systemów operacyjnych na VPS OVHcloud, które mają wpływ na licencje Plesk i cPanel"
-updated: 2025-07-22
+updated: 2025-09-29
 ---
 
 ## Cel
@@ -20,10 +20,10 @@ Producenci **Plesk** i **cPanel** ogłaszają zakończenie wsparcia dla następu
 
 | System operacyjny | Produkt        | Fin del Soporte     |
 | ----------------- | -------------- | ------------------- |
-| Ubuntu 18.04      | Plesk          | **stycznia 2026 r** |
-| Debian 10         | Plesk          | **stycznia 2026 r** |
-| CentOS 7          | Plesk / cPanel | **stycznia 2026 r** |
-| CloudLinux 7      | Plesk / cPanel | **stycznia 2026 r** |
+| Ubuntu 18.04      | Plesk          | **stycznia 2027 r** |
+| Debian 10         | Plesk          | **stycznia 2027 r** |
+| CentOS 7          | Plesk / cPanel | **stycznia 2027 r** |
+| CloudLinux 7      | Plesk / cPanel | **stycznia 2027 r** |
 
 Więcej informacji na temat pomocy znajdziesz w oficjalnej dokumentacji:
 
@@ -88,6 +88,12 @@ Jeśli nie możesz uruchomić nowego VPS, skorzystaj z narzędzi, dzięki który
 > [!primary]
 >
 > Narzędzia te nie są w 100% gwarantowane i wymagają pełnej kopii zapasowej przed kontynuowaniem. upewnij się również, że Twój VPS ma wystarczającą ilość zasobów (RAM, CPU, dysk).
+
+### Dobre praktyki bezpieczeństwa
+
+Niezależnie od Plesk/cPanel, ważne jest **utrzymanie systemu operacyjnego VPS na aktualnym poziomie**, aby skorzystać z poprawek bezpieczeństwa, kompatybilności oprogramowania i wsparcia producenta. Jeśli Twoja dystrybucja jest w **fazie końca wsparcia (EOL)**, zaplanuj **aktualizację** lub **migrację** na wersję nadal obsługiwana.
+
+Aby poznać daty końca życia i końca wsparcia dla obrazów i systemów operacyjnych (VPS & Public Cloud), skorzystaj z naszego przewodnika "[Public Cloud & VPS - Cykl życia i ogłoszenia o końcu wsparcia oraz życia dla obrazów i dystrybucji](/pages/public_cloud/compute/image-life-cycle)".
 
 ## Sprawdź również <a name="go-further"></a>
 

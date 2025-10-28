@@ -1,7 +1,7 @@
 ---
 title: Zainstaluj moduł WordPress w instancji
 excerpt: Dowiedz się, jak korzystać z instancji Public Cloud do hostowania stron WordPress
-updated: 2023-05-17
+updated: 2025-09-23
 ---
 
 > [!primary]
@@ -135,10 +135,10 @@ Konfiguracja zapory sieciowej (iptables* *) pozwala poprawić bezpieczeństwo Tw
 debian@instance:~$ sudo apt install ufw
 ```
 
-Profile, o których mowa, zawierają wpis "WWW" na liście aplikacji:
+Na liście dostępnych aplikacji dla UFW profile odpowiadające serwerowi sieciowemu są nazwane "WWW" na instancji Debian, a "Apache" na instancji Ubuntu. Te profile umożliwiają otwarcie niezbędnych portów dla ruchu HTTP i HTTPS w prosty i bezpieczny sposób.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # lub grep Apache
   WWW
   WWW Cache
   WWW Full

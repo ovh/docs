@@ -1,12 +1,8 @@
 ---
 title: "Usare snapshot su un VPS"
 excerpt: "Scopri come abilitare e utilizzare l’opzione Snapshot nello Spazio Cliente OVHcloud"
-updated: 2024-09-18
+updated: 2025-10-17
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -24,13 +20,17 @@ Prima di applicare opzioni di backup, consigliamo di fare riferimento alle pagin
 - avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - un servizio [VPS OVHcloud](/links/bare-metal/vps) già impostato
 
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
+
 ## Procedura
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 ### Step 1: Attivare l’opzione snapshot
 
-Partendo dalla scheda `Home`{.action}, scorri verso il basso fino al riquadro **Riassunto opzioni**.  
+Partendo dalla scheda `Home`{.action}, scorri verso il basso fino al riquadro **Backup**.  
 Se "Snapshot" è già in stato "Attivato", passa direttamente allo Step 2. Se "Snapshot" non è ancora attivo, clicca su `...`{.action} accanto all’opzione "Snapshot" e nel menu di scelta rapida clicca su `Ordina`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
@@ -43,7 +43,7 @@ Per disattivare l’opzione di servizio, clicca sul pulsante `...`{.action} acca
 
 ### Step 2: Acquisire uno snapshot
 
-Una volta attivata l’opzione, clicca su `...`{.action} accanto all’opzione "Snapshot" e nel menu a scelta rapida clicca su `Scatta uno snapshot`{.action}. È possibile digitare una descrizione che verrà allegata allo Snapshot. La durata della creazione dello Snapshot dipende dallo spazio di storage utilizzato. In seguito, nel riquadro “Sintesi opzioni” appariranno la data e l’ora dello scatto.
+Una volta attivata l’opzione, clicca su `...`{.action} accanto all’opzione "Snapshot" e nel menu a scelta rapida clicca su `Scatta uno snapshot`{.action}. È possibile digitare una descrizione che verrà allegata allo Snapshot. La durata della creazione dello Snapshot dipende dallo spazio di storage utilizzato. In seguito, nel riquadro “Backup” appariranno la data e l’ora dello scatto.
 
 ### Step 3: Cancellare/ripristinare uno snapshot
 

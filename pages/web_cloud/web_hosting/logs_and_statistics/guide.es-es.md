@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Consultar las estadísticas y logs de un sitio web"
 excerpt: "Descubra cómo consultar las estadísticas y los logs de un sitio web en un plan de hosting"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -17,22 +17,37 @@ El acceso a los logs y a las estadísticas de su sitio web está incluido en su 
 
 ## Procedimiento
 
-Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, lleve a cabo las siguientes acciones: 
+Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
-
-Se abrirá una pantalla que consta de 4 secciones:
-
-- [Estadísticas de visitas](#website-stats): presenta numerosas estadísticas relativas a su alojamiento web.
-- [Logs del sitio web](#website-logs): muestra los logs en bruto de su alojamiento web.
-- [Estadísticas de la infraestructura](#infra-stats): presenta estadísticas gráficas (peticiones HTTP y SQL, comandos FTP, uso de CPU, conexiones salientes, etc.)
-- [Administración de los usuarios](#admin-user): muestra los usuarios autorizados a acceder a las estadísticas
-
-![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Se abrirá una pantalla que consta de 4 secciones:
+>>
+>> - [Estadísticas de visitas](#website-stats): Presenta numerosas estadísticas relativas a su alojamiento web.
+>> - [Logs del sitio web](#website-logs): Muestra los logs en bruto de su alojamiento web.
+>> - [Estadísticas de la infraestructura](#infra-stats): Presenta estadísticas gráficas (peticiones HTTP y SQL, comandos FTP, uso de CPU, conexiones salientes, etc.).
+>> - [Administración de los usuarios](#admin-user): Muestra los usuarios autorizados a acceder a las estadísticas.
+>>
+>> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 ### Estadísticas de visitas <a name="website-stats"></a>
 

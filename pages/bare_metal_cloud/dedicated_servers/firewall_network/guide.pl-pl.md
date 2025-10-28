@@ -1,7 +1,7 @@
 ---
 title: 'Aktywacja i konfiguracja Edge Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować Edge Network Firewall dla Twoich usług'
-updated: 2025-09-08
+updated: 2025-10-21
 ---
 
 ## Wprowadzenie
@@ -15,9 +15,9 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 > Więcej informacji na temat rozwiązania Anty-DDoS znajdziesz na [naszej stronie WWW](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) |
+| Infrastruktura Anty-DDoS & usługi ochrony gier diagram w OVHcloud |
 |:--:|
-| Anty-DDoS - schemat infrastruktury i usług ochrony gier w OVHcloud |
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Wymagania początkowe
 

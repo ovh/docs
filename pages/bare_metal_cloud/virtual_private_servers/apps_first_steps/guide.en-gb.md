@@ -22,6 +22,11 @@ Using the [OVHcloud Control Panel](/pages/bare_metal_cloud/virtual_private_serve
 
 #### cPanel
 
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
+
 This section will explain the first steps specifically for the cPanel pre-installed image. Steps marked with \* will have FAQ at the end of the steps.
 
 1. Open the email from us which contains your application login details.
@@ -53,6 +58,10 @@ No further steps are necessary to complete the first configuration of this appli
 
 #### Plesk
 
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
+
 This section will explain the first steps specifically for the Plesk pre-installed image. Steps marked with \* will have FAQ at the end of the steps.
 
 1. Open the email from OVHcloud which contains your application login details.
@@ -72,6 +81,10 @@ No further steps are necessary to complete the first configuration of this appli
 >> You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 This section will explain the first steps specifically for the Docker pre-installed image.
 

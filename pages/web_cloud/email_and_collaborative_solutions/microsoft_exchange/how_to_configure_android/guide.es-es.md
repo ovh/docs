@@ -5,8 +5,8 @@ updated: 2025-04-28
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 .h-600 {
   max-height:600px !important;
@@ -58,7 +58,7 @@ Esta guía explica cómo configurar una cuenta Exchange en Android utilizando la
 
 Abra la aplicación `Gmail`{.action} desde la pantalla de inicio de su dispositivo.
 
-![Exchange Android](images/exchange-android-00.png){.thumbnail .w-400}
+![Exchange Android](images/exchange-android-00.png){.thumbnail .h-600 .w-600}
 
 La adición de una cuenta se realizará de forma diferente **si no hay ninguna cuenta configurada** o **si ya hay una cuenta configurada**. Seleccione la ficha correspondiente a una de las dos situaciones mencionadas:
 
@@ -66,37 +66,37 @@ La adición de una cuenta se realizará de forma diferente **si no hay ninguna c
 > **Primera configuración:**
 >>
 >> Seleccione `Añadir una dirección de correo`{.action}<br><br>
->> ![Exchange Android](images/android-first.png){.thumbnail .h-600}
+>> ![Exchange Android](images/android-first.png){.thumbnail .h-600 .w-600}
 >>
 > **Configuración existente**
 >>
 >> 1. Acceda al menú situado en la parte superior izquierda de la pantalla<br><br>
 >> 2. Seleccione `Configuración`{.action}<br><br>
 >> 3. Seleccione `Añadir una cuenta`{.action}<br><br>
->> ![Exchange Android](images/android-existing.png){.thumbnail}
+>> ![Exchange Android](images/android-existing.png){.thumbnail .h-600 .w-600}
 
 Siga los siguientes pasos de configuración en las fichas siguientes:
 
 > [!tabs]
 > **Paso 1**
 >> En el menú de tipos de cuentas de correo, seleccione `Exchange y Office`{.action}.<br><br>
->> ![Exchange Android](images/exchange-android-01.png){.thumbnail .h-600}
+>> ![Exchange Android](images/exchange-android-01.png){.thumbnail .h-600 .w-600}
 >>
 > **Paso 2**
 >> Introduzca su dirección de correo electrónico y pulse `Siguiente`{.action}.<br><br>
->> ![Exchange Android](images/exchange-android-02.png){.thumbnail .h-600}
+>> ![Exchange Android](images/exchange-android-02.png){.thumbnail .h-600 .w-600}
+>>
+> **Paso 3**
+>> Introduzca la contraseña de su dirección de correo electrónico y pulse `Siguiente`{.action}.<br><br>
+>> ![Exchange Android](images/exchange-android-03.png){.thumbnail .h-600 .w-600}
 >>
 > **Paso 4**
->> Introduzca la contraseña de su dirección de correo electrónico y pulse `Siguiente`{.action}.<br><br>
->> ![Exchange Android](images/exchange-android-03.png){.thumbnail .h-600}
+>> Rellene la página "**Configuración de la dirección**"<br><br>- **Correo** electrónico: su dirección de correo electrónico completa<br>- **Contraseña**: la contraseña de su dirección de correo<br>- **Certificado**: Deje "Ninguno"<br>- **Dominio\Nombre de usuario**: su dirección de correo electrónico completa<br>- **Servidor**: **ex?.mail.ovh.net** (sustituir el **?** por [el número de su servidor Exchange](#addaccount))<br>- **Puerto**: 443<br>- **Tipo de seguridad**: SSL/TLS<br><br>Pulse `Siguiente`{.action} para validar la configuración.<br><br>
+>> ![Exchange Android](images/exchange-android-04.png){.thumbnail .h-600 .w-600}
 >>
 > **Paso 5**
->> Rellene la página "**Configuración de la dirección**"<br><br>- **Correo** electrónico: su dirección de correo electrónico completa<br>- **Contraseña**: la contraseña de su dirección de correo<br>- **Certificado**: Deje "Ninguno"<br>- **Dominio\Nombre de usuario**: su dirección de correo electrónico completa<br>- **Servidor**: **ex?.mail.ovh.net** (sustituir el **?** por [el número de su servidor Exchange](#addaccount))<br>- **Puerto**: 443<br>- **Tipo de seguridad**: SSL/TLS<br><br>Pulse `Siguiente`{.action} para validar la configuración.<br><br>
->> ![Exchange Android](images/exchange-android-04.png){.thumbnail .h-600}
->>
-> **Paso 6**
 >> Debería aparecer el mensaje "Ya puede utilizar su cuenta" , presione `Aceptar`{.action} para finalizar la configuración.<br><br>
->> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600}
+>> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600 .w-600}
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla Ya puede enviar y recibir mensajes desde su aplicación Gmail.
 
@@ -113,5 +113,9 @@ Una vez que haya configurado la dirección de correo electrónico, ya puede empe
 [MX Plan - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [Email Pro - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

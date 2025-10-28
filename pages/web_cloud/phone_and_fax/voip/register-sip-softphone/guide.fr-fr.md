@@ -1,7 +1,7 @@
 ---
 title: 'Ligne SIP - Configuration sur un softphone / téléphone personnel'
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur un softphone tel que Linphone ou Zoiper ou sur votre téléphone personnel'
-updated: 2025-05-16
+updated: 2025-10-06
 ---
 
 > [!success]
@@ -20,7 +20,7 @@ OVHcloud propose des lignes SIP sans matériel pouvant être enregistrées sur d
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
+>
 > Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
@@ -41,17 +41,18 @@ Contrairement aux lignes pré-configurées sur des téléphones OVHcloud, vous a
 
 ### Etape 1 : retrouver vos identifiants SIP
 
-Vous devez **impérativement** disposer des trois informations suivantes afin de pouvoir enregistrer votre ligne :
+Vous devez **impérativement** disposer des quatre informations suivantes afin de pouvoir enregistrer votre ligne :
 
 |Information|Description|
 |---|---|
 | Login / User name | Il s'agit du numéro de votre ligne, au format international.|
 | Mot de passe SIP | Vous pouvez modifier ce mot de passe depuis votre espace client OVHcloud.|
 | Domain / Registrar | Le nom du serveur de téléphonie qui héberge votre ligne.|
+| Proxy sortant | C'est l'adresse du serveur qui reçevra les requêtes de votre ligne.|
 
-#### Login et Domain
+#### Login, Domain et Proxy sortant
 
-Afin de retrouver votre **Login** et votre **Domain**, suivez les étapes ci-dessous :
+Afin de retrouver votre **Login**, **Domain** et **Proxy sortant**, suivez les étapes ci-dessous :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
@@ -60,12 +61,13 @@ Afin de retrouver votre **Login** et votre **Domain**, suivez les étapes ci-des
 
 ![informations générales](images/general-information.png){.thumbnail}
 
-Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login** et votre **Domain**.
+Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login**, **Domain** et **Proxy sortant**.
 
 ![username - domain](images/username-domain.png){.thumbnail}
 
 > [!warning]
-> Dans l'exemple ci-dessus, le **Domain** est `sip5.ovh.fr`. Prenez soin de vérifier quel est le **Domain** de votre ligne, celui-ci pouvant être différent.
+> Dans l'exemple ci-dessus, le **Domain** est `sip-domain.io`. Prenez soin de vérifier quel est le **Domain** de votre ligne SIP, celui-ci pouvant être différent.
+> Le **Proxy sortant** est `outbound-ovh-1.sip-proxy.io`, mais il sera différent pour votre ligne SIP.
 >
 
 #### Mot de passe SIP

@@ -1,7 +1,7 @@
 ---
 title: "Was tun, wenn Ihre Website nicht erreichbar ist?"
 excerpt: Diagnose der Ursachen für die Unverfügbarkeit Ihrer Website
-updated: 2022-08-02
+updated: 2025-10-09
 ---
 
 ## Ziel 
@@ -30,7 +30,7 @@ Wenn Ihre Website nicht erreichbar ist, können in Ihrem Browser mehrere Fehlerm
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Die Gültigkeit Ihrer Domain überprüfen
+### 1: Die Gültigkeit Ihrer Domain überprüfen
 
 > [!warning]
 >
@@ -50,7 +50,7 @@ Wenn nötig verlängern Sie Ihre Domain mit Klick auf den Button `...`{.action} 
 
 Nach dieser Verlängerung ist Ihre Website innerhalb von maximal 48 Stunden verfügbar.
 
-### Schritt 2: DNS Server überprüfen
+### 2: DNS Server überprüfen
 
 Um die Gültigkeit Ihrer [DNS Server](/pages/web_cloud/domains/dns_server_edit) zu überprüfen, klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Domainnamen`{.action} und dann auf die Domain Ihrer Website.
 
@@ -105,17 +105,34 @@ Klicken Sie anschließend auf `Meine DNS-Zone zurücksetzen`{.action} und wähle
 
 Ihre Website wird dann innerhalb von maximal 24 Stunden verfügbar sein.
 
-### Schritt 3: Die DNS Zone überprüfen <a name="step3"></a>
+### 3: Die DNS Zone überprüfen <a name="step3"></a>
 
 In diesem Schritt ermitteln Sie die IP-Adresse Ihres Hostings und fügen sie zu Ihrer `DNS-Zone`{.action} hinzu.
 
 Wenn Ihre Website nicht auf der OVHcloud Infrastruktur gehostet ist oder von einem anderen Anbieter verwaltet wird, kontaktieren Sie bitte den zuständigen Support.
 
-Wenn Ihre Website auf einem unserer [Hosting-Angebote](/links/web/hosting) gehostet wird, wählen Sie aus `Hosting-Pakete`{.action} den entsprechenden Dienst aus.
+Wenn Ihre Website auf einem unserer [Hosting-Angebote](/links/web/hosting) gehostet wird, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Kopieren Sie im Tab `Allgemeine Informationen`{.action} die IPv4- und/oder IPv6-Adresse Ihrer Domain.
-
-![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Im Feld **Allgemeine Informationen** finden Sie die Adressen unter **IPv4** und **IPv6**.
+>>
+>> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> Kopieren Sie im Tab `Allgemeine Informationen`{.action} die IPv4- und/oder IPv6-Adresse Ihrer Domain.
 
 Tragen Sie diese dann in die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) Ihrer Domain ein, indem Sie einen oder mehrere Einträge vom Typ `A` bearbeiten oder erstellen.
 

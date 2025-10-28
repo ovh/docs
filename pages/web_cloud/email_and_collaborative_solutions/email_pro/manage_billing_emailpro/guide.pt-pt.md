@@ -1,7 +1,7 @@
 ---
 title: 'Gerir a faturação das contas E-mail Pro'
 excerpt: 'Saiba como gerir a faturação do serviço E-mail Pro.'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objetivo
@@ -44,7 +44,7 @@ Aparecerá uma janela, a tabela permite-lhe gerir o período de renovação de c
 >
 > Para uma gestão simplificada, a faturação de cada conta Email Pro é automaticamente alinhada no início do mês. Para proceder a este alinhamento, e assim deslocar a data de subscrição caso seja necessário, receberá uma fatura da sua conta Email Pro numa base pro rata temporis.
 >
->Exemplo: Uma encomenda efetuada no dia 08 de Janeiro com um plano de subscrição mensal levará à sua próxima faturação no dia 08 de fevereiro. A fatura seguinte abrangerá o período de 8 de fevereiro a 1 de março.
+> **Exemplo**: Uma encomenda efetuada no dia 08 de Janeiro com um plano de subscrição mensal levará à sua próxima faturação no dia 08 de fevereiro. A fatura seguinte abrangerá o período de 8 de fevereiro a 1 de março.
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
@@ -61,6 +61,10 @@ Aceda ao separador `Contas de e-mail`{.action} da sua plataforma, clique no bot�
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Cancelar a plataforma
+
+Depois de eliminar as contas de e-mail, é necessário eliminar o(s) domínio(s) associado(s) à sua plataforma E-mail Pro antes de a cancelar. Para isso, aceda ao separador `Domínios associados`{.action}. Clique no botão `...`{.action} na linha do nome de domínio a eliminar e, a seguir, clique em `Eliminar este domínio`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 Na janela de gestão da plataforma E-mail Pro, clique no botão `Ações`{.action} no canto superior direito e, a seguir, em `Cancelar`{.action}. 
 

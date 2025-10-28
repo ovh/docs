@@ -1,7 +1,7 @@
 ---
-title: Configuring IP aliasing
+title: How to configure IP aliasing
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
-updated: 2024-11-05
+updated: 2025-09-11
 ---
 
 ## Objective
@@ -22,6 +22,10 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 - An [Additional IP address](/links/bare-metal/ip)
 - Administrative access (sudo) via SSH or GUI to your server
 - Basic networking and administration knowledge
+
+> [!warning]
+> Additional IP addresses are currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Instructions
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C ou SSE-OMK
 excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C ou SSE-OMK
-updated: 2024-11-29
+updated: 2025-09-12
 ---
 
 <style>
@@ -231,19 +231,38 @@ aws s3api get-object --bucket votre-bucket --key votre-objet chemin/vers/destina
 - Remplacez `chemin/vers/destination/fichier` par le chemin où vous souhaitez sauvegarder le fichier téléchargé.
 - Le paramètre `--endpoint-url https://s3.io.cloud.ovh.net` doit être ajusté à la région de votre service Object Storage.
 
-Attention de ne pas inclure de headers de chiffrement spécifiques lors du téléchargement d'un objet chiffré avec SSE-OMK pour éviter des erreurs, telles qu'une erreur 400 Bad Request. 
+Attention de ne pas inclure de headers de chiffrement spécifiques lors du téléchargement d'un objet chiffré avec SSE-OMK pour éviter des erreurs, telles qu'une erreur 400 Bad Request.
 
 #### Ajout du chiffrement à un bucket existant sur Object Storage
 
-Pour ajouter le chiffrement SSE-OMK à un bucket Object Storage existant sur OVHcloud, vous devez utiliser la commande `put-bucket-encryption` de l'AWS CLI. Cette commande configure le chiffrement du bucket pour que tous les nouveaux objets ajoutés soient automatiquement chiffrés avec SSE-OMK. Voici la commande spécifique que vous utiliseriez :
+> [!primary]
+>
+> **Note:** Si vous souhaitez activer le chiffrement SSE-OMK lors de la création du bucket, consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+>
 
-```bash
-aws s3api put-bucket-encryption --bucket votre-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.io.cloud.ovh.net
-```
-
-- Remplacez `votre-bucket` par le nom de votre bucket Object Storage.
-
-Cela va configurer le bucket pour utiliser le chiffrement SSE-OMK avec les clés gérées par Object Storage (AES256) pour tous les nouveaux objets.
+> [!tabs]
+> Avec AWS S3api
+>> Pour ajouter le chiffrement SSE-OMK à un bucket Object Storage existant sur OVHcloud, vous devez utiliser la commande `put-bucket-encryption` de l'AWS CLI. Cette commande configure le chiffrement du bucket pour que tous les nouveaux objets ajoutés soient automatiquement chiffrés avec SSE-OMK. Voici la commande spécifique que vous utiliseriez :
+>>
+>> ```bash
+>> aws s3api put-bucket-encryption --bucket votre-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.io.cloud.ovh.net
+>> ```
+>>
+>> - Remplacez `votre-bucket` par le nom de votre bucket Object Storage.
+>>
+>> Cela va configurer le bucket pour utiliser le chiffrement SSE-OMK avec les clés gérées par Object Storage (AES256) pour tous les nouveaux objets.
+>>
+> Avec l'espace client OVHcloud
+>> Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Object Storage`{.action} dans le menu de gauche.
+>>
+>> Sélectionnez ensuite le bucket Object Storage concerné, puis dans le menu d'informations, cliquez sur `Activer le chiffrement`{.action}.
+>>
+>> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
+>>
+>> Cliquez sur le bouton `Activer`{.action}.
+>>
+>> ![Object Storage enabling encryption window](images/object_storage_enabling_encryption.png){.thumbnail}
+>>
 
 > [!primary]
 > Les objets existants ne seront pas affectés. Si vous souhaitez également les chiffrer, vous devrez les copier ou les uploader à nouveau après avoir changé cette configuration.
@@ -251,17 +270,25 @@ Cela va configurer le bucket pour utiliser le chiffrement SSE-OMK avec les clés
 
 ##### Affichage de la configuration du chiffrement du Bucket
 
-Après avoir configuré le chiffrement de votre bucket via `PutBucketEncryption` pour utiliser SSE-OMK, assurez-vous que tout est correctement mis en place en utilisant la commande suivante avec l'AWS CLI :
+Après avoir configuré le chiffrement de votre bucket via `PutBucketEncryption` ou via l'espace client OVHcloud pour utiliser SSE-OMK, assurez-vous que tout est correctement mis en place:
 
-```bash
-aws s3api get-bucket-encryption --bucket votre-bucket --endpoint-url https://s3.io.cloud.ovh.net
-```
-
-- Remplacez `votre-bucket` par le nom de votre bucket.
-
-Cette commande vous permet de vérifier la configuration actuelle du chiffrement de votre bucket pour vous assurer que le chiffrement SSE-OMK est bien activé.
-
-Dans cette commande, remplacez `votre-bucket` par le nom de votre bucket. Cette commande vous renvoie les détails de la configuration du chiffrement actuelle de votre bucket, vous confirmant l'utilisation de SSE-OMK pour le chiffrement des données au repos.
+> [!tabs]
+> Avec AWS s3api
+>> ```bash
+>> aws s3api get-bucket-encryption --bucket votre-bucket --endpoint-url https://s3.io.cloud.ovh.net
+>> ```
+>>
+>> - Remplacez `votre-bucket` par le nom de votre bucket.
+>>
+>> Cette commande vous permet de vérifier la configuration actuelle du chiffrement de votre bucket pour vous assurer que le chiffrement SSE-OMK est bien activé.
+>>
+>> Dans cette commande, remplacez `votre-bucket` par le nom de votre bucket. Cette commande vous renvoie les détails de la configuration de chiffrement actuelle de votre bucket, vous confirmant l'utilisation de SSE-OMK pour le chiffrement des données au repos.
+>>
+> Avec l'espace client OVHcloud
+>> Accédez au menu d'informations du bucket concerné puis consultez la section `Sécurité et permissions `. Vous y trouverez l’option de chiffrement par défaut, qui indique si le chiffrement SSE-OMK est activé ou non.
+>>
+>> ![Object Storage information panel encryption](images/object_storage_information_panel_encryption_enable.png){.thumbnail}
+>>
 
 Cette étape supplémentaire garantit une transparence totale et vous permet de vous assurer que la sécurité de vos données est maintenue selon les normes les plus élevées, avec la simplicité et l'efficacité que propose le chiffrement SSE-OMK gérée par OVHcloud.
 
