@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie serwera VPS"
 excerpt: "Dowiedz się, jak wdrożyć podstawowe środki bezpieczeństwa, aby chronić Twój serwer VPS przed atakami i nieautoryzowanym dostępem"
-updated: 2024-10-07
+updated: 2025-10-31
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 > [!warning]
 > OVHcloud świadczy usługi, za które jesteś odpowiedzialny w związku z ich konfiguracją i zarządzaniem. Jesteś więc odpowiedzialny za ich prawidłowe funkcjonowanie.
 >
->Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub przedyskutuj problem z naszą społecznością użytkowników na stronie https://community.ovh.com/en/. OVHcloud nie może udzielić Ci wsparcia technicznego w tym zakresie.
+> Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub przedyskutuj problem z naszą społecznością użytkowników na stronie https://community.ovh.com/en/. OVHcloud nie może udzielić Ci wsparcia technicznego w tym zakresie.
 >
 
 ## Wymagania początkowe
@@ -95,14 +95,22 @@ sudo nano /etc/ssh/sshd_config
 Należy znaleźć następujące lub równoważne linie:
 
 ```console
-#Port 49152
+#Port 22
 #AddressFamily any
 #ListenAddress 0.0.0.0
 ```
 
 Zamień liczbę **22** na wybrany numer portu.<br>
 **Pamiętaj, aby nie wpisywać numeru portu już używanego w systemie**.
-Aby zwiększyć bezpieczeństwo, wprowadź numer 49152 i 65535.<br>Zapisz i wyjdź z pliku konfiguracyjnego.
+Aby zwiększyć bezpieczeństwo, wprowadź numer 49152 i 65535.
+
+Możesz również wyświetlić porty przypisane do Twojego systemu za pomocą następującego polecenia:
+
+```bash
+sudo cat /etc/services
+```
+
+Zapisz i wyjdź z pliku konfiguracyjnego.
 
 Jeśli linia jest "zakomentowana" (tj. poprzedzona znakiem "#"), jak w powyższym przykładzie, należy usunąć znak "#" przed zapisaniem pliku, aby zmiana została uwzględniona. Przykład:
 
@@ -112,6 +120,11 @@ Port 49152
 #ListenAddress 0.0.0.0
 ```
 
+> [!warning]
+> Jeśli w systemie operacyjnym skonfigurowano zaporę ogniową (UFW lub iptables), przed ponownym uruchomieniem usługi należy dostosować jej ustawienia, aby zezwolić na ruch w nowym porcie. Jeśli używasz iptables, zapoznaj się z tym przewodnikiem: [Konfiguracja firewalla w systemie Linux z systemem iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/).
+Jeśli domyślnie nie skonfigurowano żadnej zapory ogniowej, uruchom ponownie usługę.
+>
+
 Zrestartuj usługę:
 
 ```bash
@@ -120,16 +133,33 @@ sudo systemctl restart sshd
 
 Powinno to wystarczyć do wdrożenia zmian. W przeciwnym razie zrestartuj serwer VPS (`sudo reboot`).
 
-**Dla systemu Ubuntu 23.04 i nowszych wersji**
+**Dla systemu Ubuntu 24.04 i nowszych wersji**
 
 W przypadku najnowszych wersji Ubuntu, konfiguracja SSH jest zarządzana w pliku `ssh.socket`.
 
 Aby zaktualizować port SSH, edytuj wiersz `ListenStream` w pliku konfiguracyjnym za pomocą wybranego edytora tekstu (`nano` użyty w tym przykładzie):
 
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+Twój plik powinien wyglądać podobnie do poniższych przykładów, w zależności od zainstalowanej wersji Ubuntu:
+
 ```console
 [Socket]
 ListenStream=49152
 Accept=no
+```
+
+lub
+
+```console
+[Socket]
+ListenStream=0.0.0.0:49152
+ListenStream=[::]:22
+BindIPv6Only=ipv6-only
+Accept=no
+FreeBind=yes
 ```
 
 Zapisz zmiany i wykonaj następujące polecenia:
@@ -138,11 +168,19 @@ Zapisz zmiany i wykonaj następujące polecenia:
 sudo systemctl daemon-reload
 ```
 
+Uruchom ponownie usługę:
+
 ```bash
 sudo systemctl restart ssh.service
 ```
 
-Jeśli włączona jest zapora systemu operacyjnego, upewnij się, że zezwalasz na nowy port w regułach zapory.
+**Ubuntu 25.04**
+
+Uruchom ponownie usługę:
+
+```bash
+sudo systemctl restart ssh.socket
+```
 
 Pamiętaj, że podczas każdego zlecenia [połączenia SSH z Twoim serwerem](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) należy wskazać nowy port:
 
@@ -155,6 +193,8 @@ Przykład:
 ```bash
 ssh ubuntu@203.0.113.100 -p 49152
 ```
+
+Jeśli nie masz dostępu do swojego systemu, możesz skorzystać z naszego środowiska [trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue/), aby przywrócić swoje zmiany.
 
 ### Utworzenie użytkownika z ograniczonymi prawami <a name="createuser"></a>
 
