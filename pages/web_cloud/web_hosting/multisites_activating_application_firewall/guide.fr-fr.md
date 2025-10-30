@@ -109,11 +109,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
 >>
->> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-website/tab.png){.thumbnail}
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
 >> Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Modifier le domaine`{.action}.
 >>
->> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-website/associated-domains-options.png){.thumbnail}
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Étape 5**
 >>
