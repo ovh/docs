@@ -110,8 +110,6 @@ Możesz również wyświetlić porty przypisane do Twojego systemu za pomocą na
 sudo cat /etc/services
 ```
 
-Zapisz i wyjdź z pliku konfiguracyjnego.
-
 Jeśli linia jest "zakomentowana" (tj. poprzedzona znakiem "#"), jak w powyższym przykładzie, należy usunąć znak "#" przed zapisaniem pliku, aby zmiana została uwzględniona. Przykład:
 
 ```console
@@ -121,9 +119,10 @@ Port 49152
 ```
 
 > [!warning]
-> Jeśli w systemie operacyjnym skonfigurowano zaporę ogniową (UFW lub iptables), przed ponownym uruchomieniem usługi należy dostosować jej ustawienia, aby zezwolić na ruch w nowym porcie. Jeśli używasz iptables, zapoznaj się z tym przewodnikiem: [Konfiguracja firewalla w systemie Linux z systemem iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/).
-Jeśli domyślnie nie skonfigurowano żadnej zapory ogniowej, uruchom ponownie usługę.
+> Jeśli w systemie operacyjnym skonfigurowano zaporę ogniową (UFW lub iptables), przed ponownym uruchomieniem usługi należy dostosować jej ustawienia, aby zezwolić na ruch w nowym porcie. Jeśli używasz iptables, zapoznaj się z tym przewodnikiem: [Konfiguracja firewalla w systemie Linux z systemem iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). Jeśli domyślnie nie skonfigurowano żadnej zapory ogniowej, uruchom ponownie usługę.
 >
+
+Zapisz i wyjdź z pliku konfiguracyjnego.
 
 Zrestartuj usługę:
 

@@ -119,8 +119,7 @@ Port 49152
 ```
 
 > [!warning]
-> Se estiver configurado um firewall no seu sistema operativo (UFW ou iptables), terá de ajustar as suas definições para autorizar o tráfego na nova porta antes de reiniciar o serviço. Se estiver a utilizar o iptables, consulte este guia: [Configurar a firewall em Linux com iptables ](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/).
-Se não estiver configurado nenhum firewall por predefinição, reinicie o serviço.
+> Se estiver configurado um firewall no seu sistema operativo (UFW ou iptables), terá de ajustar as suas definições para autorizar o tráfego na nova porta antes de reiniciar o serviço. Se estiver a utilizar o iptables, consulte este guia: [Configurar a firewall em Linux com iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). Se não estiver configurado nenhum firewall por predefinição, reinicie o serviço.
 >
 
 Guarde e saia do ficheiro de configuração.
@@ -146,7 +145,7 @@ sudo nano /lib/systemd/system/ssh.socket
 
 O seu ficheiro deve ser semelhante aos exemplos a seguir, dependendo da versão do Ubuntu que você instalou:
 
-```consola
+```console
 [Socket]
 ListenStream=49152
 Accept=no

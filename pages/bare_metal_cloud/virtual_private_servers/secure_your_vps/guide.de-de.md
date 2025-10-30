@@ -118,8 +118,7 @@ Port 49152
 ```
 
 > [!warning]
-> Wenn auf Ihrem Betriebssystem eine Firewall konfiguriert ist (UFW oder iptables), müssen Sie deren Einstellungen anpassen, um den Datenverkehr auf dem neuen Port zuzulassen, bevor Sie den Dienst neu starten. Wenn Sie iptables verwenden, lesen Sie diese Anleitung: [Konfiguration der Linux Firewall mit iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/)
-Wenn standardmäßig keine Firewall konfiguriert ist, starten Sie den Dienst neu.
+> Wenn auf Ihrem Betriebssystem eine Firewall konfiguriert ist (UFW oder iptables), müssen Sie deren Einstellungen anpassen, um den Datenverkehr auf dem neuen Port zuzulassen, bevor Sie den Dienst neu starten. Wenn Sie iptables verwenden, lesen Sie diese Anleitung: [Konfiguration der Linux Firewall mit iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). Wenn standardmäßig keine Firewall konfiguriert ist, starten Sie den Dienst neu.
 >
 
 Speichern und schließen Sie die Konfigurationsdatei.

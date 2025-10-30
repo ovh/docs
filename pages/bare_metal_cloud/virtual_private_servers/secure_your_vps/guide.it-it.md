@@ -118,7 +118,7 @@ Port 49152
 ```
 
 > [!warning]
->  Se sul sistema operativo è configurato un firewall (UFW o iptables), è necessario modificarne le impostazioni per consentire il traffico sulla nuova porta prima di riavviare il servizio. Se si utilizza iptables, consultare questa guida: [ Configura il firewall su Linux con iptables ](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). Se non è configurato alcun firewall predefinito, riavviare il servizio.
+>  Se sul sistema operativo è configurato un firewall (UFW o iptables), è necessario modificarne le impostazioni per consentire il traffico sulla nuova porta prima di riavviare il servizio. Se si utilizza iptables, consultare questa guida: [Configura il firewall su Linux con iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). Se non è configurato alcun firewall predefinito, riavviare il servizio.
 >
 
 Salva e lascia il file di configurazione.

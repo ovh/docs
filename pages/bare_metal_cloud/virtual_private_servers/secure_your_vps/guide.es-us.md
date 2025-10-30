@@ -119,8 +119,7 @@ Port 49152
 ```
 
 > [!warning]
-> Si hay un cortafuegos configurado en su sistema operativo (UFW o iptables), debe ajustar su configuración para permitir el tráfico en el nuevo puerto antes de reiniciar el servicio. Si utiliza iptables, consulte esta guía: [Configurar el firewall de Linux con iptables ](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/).
-Si no hay ningún cortafuegos configurado por defecto, reinicie el servicio.
+> Si hay un cortafuegos configurado en su sistema operativo (UFW o iptables), debe ajustar su configuración para permitir el tráfico en el nuevo puerto antes de reiniciar el servicio. Si utiliza iptables, consulte esta guía: [Configurar el firewall de Linux con iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). Si no hay ningún cortafuegos configurado por defecto, reinicie el servicio.
 >
 
 Guarde y cierre el archivo de configuración.
