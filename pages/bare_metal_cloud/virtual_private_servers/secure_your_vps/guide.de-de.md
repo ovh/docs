@@ -1,7 +1,7 @@
 ---
 title: "Einen VPS absichern"
 excerpt: "Erfahren Sie hier, wie Sie grundsätzliche Sicherheitsmaßnahmen anwenden, um Ihren VPS vor Angriffen und unbefugtem Zugriff zu schützen"
-updated: 2024-10-07
+updated: 2025-10-31
 ---
 
 > [!primary]
@@ -101,7 +101,13 @@ Sie sollten diese oder ähnliche Zeilen vorfinden:
 ```
 
 Ersetzen Sie die Nummer **22** mit der Port-Nummer Ihrer Wahl.<br>
-**Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Um sicher zu gehen, verwenden Sie eine Zahl zwischen 49152 und 65535. <br>Speichern und schließen Sie die Konfigurationsdatei.
+**Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Um sicher zu gehen, verwenden Sie eine Zahl zwischen 49152 und 65535.
+
+Sie können die Ihrem System zugewiesenen Ports auch mit dem folgenden Befehl anzeigen:
+
+```bash
+sudo cat /etc/services
+```
 
 Wenn die Zeile "auskommentiert" ist (d. h. wenn ihr ein "#" vorangestellt ist) wie im Beispiel oben zu sehen, achten Sie darauf, das "#" vor dem Speichern der Datei zu entfernen, damit die Änderung wirksam wird. Beispiel:
 
@@ -111,24 +117,48 @@ Port 49152
 #ListenAddress 0.0.0.0
 ```
 
+> [!warning]
+> Wenn auf Ihrem Betriebssystem eine Firewall konfiguriert ist (UFW oder iptables), müssen Sie deren Einstellungen anpassen, um den Datenverkehr auf dem neuen Port zuzulassen, bevor Sie den Dienst neu starten. Wenn Sie iptables verwenden, lesen Sie diese Anleitung: [Konfiguration der Linux Firewall mit iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/)
+Wenn standardmäßig keine Firewall konfiguriert ist, starten Sie den Dienst neu.
+>
+
+Speichern und schließen Sie die Konfigurationsdatei.
+
 Starten Sie den Dienst neu:
 
 ```bash
-systemctl restart sshd
+sudo systemctl restart sshd
 ```
 
 Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den VPS neu starten (`sudo reboot`).
 
-**Für Ubuntu 23.04 und höher**
+**Für Ubuntu 24.04 und höher**
 
 Für die neuesten Ubuntu Versionen wird die SSH-Konfiguration nun in der Datei `ssh.socket` verwaltet.
 
 Um den SSH-Port zu aktualisieren, bearbeiten Sie die Zeile `ListenStream` in der Konfigurationsdatei mit einem Texteditor Ihrer Wahl (`nano` in diesem Beispiel verwendet):
 
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+Ihre Datei sollte je nach der von Ihnen installierten Ubuntu-Version wie in den folgenden Beispielen aussehen:
+
 ```console
 [Socket]
 ListenStream=49152
 Accept=no
+```
+
+oder
+
+```console
+[Socket]
+ListenStream=0.0.0.0:49152
+ListenStream=[::]:22
+BindIPv6Only=ipv6-only
+Accept=no
+FreeBind=yes
 ```
 
 Speichern Sie die Änderungen, und führen Sie die folgenden Befehle aus:
@@ -137,11 +167,19 @@ Speichern Sie die Änderungen, und führen Sie die folgenden Befehle aus:
 sudo systemctl daemon-reload
 ```
 
+Starten Sie den Dienst neu:
+
 ```bash
 sudo systemctl restart ssh.service
 ```
 
-Wenn Sie die Betriebssystemfirewall aktiviert haben, stellen Sie sicher, dass der neue Port in den Firewallregeln zugelassen ist.
+**Ubuntu 25.04**
+
+Starten Sie den Dienst neu:
+
+```bash
+sudo systemctl restart ssh.socket
+```
 
 Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine [SSH-Verbindung mit Ihrem Server aufbauen](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
@@ -154,6 +192,8 @@ Beispiel:
 ```bash
 ssh ubuntu@203.0.113.100 -p 49152
 ```
+
+Wenn Sie aus Ihrem System ausgesperrt sind, können Sie unsere [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue/) verwenden, um Ihre Änderungen wiederherzustellen.
 
 ### Erstellen eines Benutzers mit eingeschränkten Rechten <a name="createuser"></a>
 
