@@ -48,7 +48,11 @@ You can then create a policy with the basic rights to access the OVHcloud Contro
 
 ![basic policy](images/basic_policy_1.png){.thumbnail}
 
-After attaching the group, you can add the **controlPanelAccess** right to it.
+After attaching the group, you can select the Product **OVHcloud customer account**, and select your account ID in the resources.
+
+![basic policy3](images/basic_policy_3.png){.thumbnail}
+
+Finally, you can add the **controlPanelAccess** right to it.
 
 ![basic policy 2](images/basic_policy_2.png){.thumbnail}
 
