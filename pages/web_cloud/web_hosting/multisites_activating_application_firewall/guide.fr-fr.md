@@ -1,8 +1,22 @@
 ---
 title: "Activation du pare-feu applicatif"
 excerpt: "Découvrez comment activer le pare-feu applicatif sur une offre d'hébergement Web"
-updated: 2025-08-22
+updated: 2025-11-20
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -17,12 +31,11 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 - Injections de type SQL ou XSS
 - etc.
 
-**Ce guide vous explique comment activer le pare-feu applicatif depuis votre espace client OVHcloud, afin d'obtenir une protection améliorée.**
+**Découvrez comment activer le pare-feu applicatif depuis votre espace client OVHcloud, afin d'obtenir une protection améliorée.**
 
 > [!primary]
 >
 > Du fait que votre hébergement web est présent sur une infrastructure mutualisée, vous ne pouvez pas modifiez les paramètres de configuration du pare-feu.
->
 
 ## Prérequis
 
@@ -32,41 +45,89 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
+**Cliquez sur les titres ci-dessous pour afficher les explications.**
 
-### Activer le pare-feu applicatif dans la configuration PHP
+/// details | Activer le pare-feu applicatif à l'ensemble de votre hébergement web dans la configuration PHP
 
-Cliquez sur l'onglet `Informations générales`{.action}. La `version PHP globale` actuelle s'affiche dans la zone **Configuration**. Cliquez sur le bouton `...`{.action} et sélectionnez `Modifier la configuration`{.action}. Dans la fenêtre qui s'ouvre, sélectionnez l'élément `Modifier la configuration actuelle`{.action} et cliquez sur le bouton `Suivant`{.action}.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Dans le cadre **Configuration**, vous trouverez la mention **Version PHP Globale**.
+>>
+>> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
+>>
+>> Cliquez sur le bouton `...`{.action} à droite de la mention **Version PHP Globale**, puis sur `Modifier la configuration`{.action}.
+>>
+> **Étape 4**
+>>
+>> Dans la fenêtre qui s'ouvre, sélectionnez l'élément `Modifier la configuration actuelle`{.action} et cliquez sur le bouton `Suivant`{.action}.
+>>
+>> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+>>
+>> Dans la nouvelle fenêtre, assurez-vous que **Application firewall** est défini sur `Activé`{.action}. Cliquez ensuite sur le bouton `Confirmer`{.action}.
 
-Dans la nouvelle fenêtre, assurez-vous que **Application firewall** est défini sur `Activé`{.action}. Pour confirmer la configuration, cliquez sur le bouton `Confirmer`{.action}.
+///
 
-### Activer le pare-feu applicatif pour les noms de domaine individuels sur un multisite
+/// details | Activer le pare-feu applicatif uniquement sur un nom de domaine ou sous-domaine spécifique
 
-Cliquez sur l'onglet `Multisite`{.action} de votre offre d'hébergement. Cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné et sélectionnez l'option `Modifier le domaine`{.action}.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-website/tab.png){.thumbnail}
+>>
+>> Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Modifier le domaine`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-website/associated-domains-options.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case en haut (si ce dernier est également déclaré sur le même site web).
+>>
+>> ![Modify a domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour valider la modifiction des paramètres.
+>>
+>> Dès lors où le pare-feu est activé pour votre nom de domaine ou sous-domaine concerné, la mention **Activé** apparaît dans la colonne **Firewall**.
+>>
+>> Si la mention **Activé** n'apparaît pas au bout de quelques minutes sur la ligne correspondante à votre nom de domaine ou sous-domaine concerné, rechargez la page.
 
-Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case en haut.
-
-Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour modifier les paramètres multisites.
-
-![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
-
-### Vérifier l'état de la tâche d'activation
-
-![gestion en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
-
-Les tâches de mise à jour de votre configuration multisite seront répertoriées dans l'onglet `Opérations en cours`{.action} (le statut initial est « Planifié »). Le pare-feu sera actif dès que sa tâche de mise à jour n'apparaîtra plus dans la liste.
-
-### Vérification des noms domaine pour lesquels le pare-feu est activé
-
-L'onglet `Multisite`{.action} de votre offre d'hébergement fournit des informations sur les noms domaine pour lesquels l'option de pare-feu est activée.
-
-![gérageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
-
-Le tableau affiché contient tous les noms de domaine qui ont été ajoutés à votre offre d'hébergement Web. Dans la colonne « Pare-feu » s'affiche le statut d'activation de chaque nom de domaine.
+///
 
 ## Aller plus loin
 
