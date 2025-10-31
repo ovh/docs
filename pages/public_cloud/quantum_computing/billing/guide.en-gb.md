@@ -37,10 +37,11 @@ Quantum Notebooks is a **pay-per-use solution**. You only pay for the **resource
 
 **Included** in Quantum Notebooks resources:
 
-- Dedicated CPU/GPU compute resources (based on the selected amount during notebook creation)
+- Dedicated CPU/GPU compute resources (based on the selected amount during notebook creation).
+- For **Quantum QPU**, an additional remote Quantum Processing Unit compute resource is available on your notebook.
 - Ephemeral local notebook storage (the size depends on the selected compute resources). The first 10GB are free.
-- Workspace remote storage (Optional)
-- Ingress/Egress network traffic (Optional)
+- Workspace remote storage (Optional).
+- Ingress/Egress network traffic (Optional).
 
 Here is a detailed graph that illustrates every step that is billed or not during the Quantum Notebooks workflow:
 
@@ -49,6 +50,8 @@ Here is a detailed graph that illustrates every step that is billed or not durin
 ### Compute resources details
 
 During the notebook creation, you can select **compute resources**, known as CPUs or GPUs. Their official pricing is available in the [OVHcloud Control Panel](/links/manager) or on the [OVHcloud Public Cloud website](/links/public-cloud/prices).
+
+When your program needs to access to the remote QPU. QPU time is charged by the second. You will only be charged for your QPU usage time.
 
 Rates for compute are mentioned per hour to facilitate reading of the prices, but the billing granularity remains **per minute**.
 
@@ -62,7 +65,7 @@ There are three types of storage within Quantum Notebooks:
 - Workspace storage
 - Ephemeral local storage
 
-The pricing of these different storages is different.
+The pricing of these storages is different.
 
 #### Remote Object storage
 
@@ -90,51 +93,71 @@ This storage is not billed as it is directly linked to the compute resource(s) y
 
 ### Pricing examples
 
-#### Example 1: one GPU notebook for 10 hours then deleted
-
-We start one Quantum Notebook, with two GPUs and we keep it running for 10 hours then we **delete it**.
-
-- compute resources: 2 x GPU NVIDIA V100s (1,93€ / hour)
-- remote storage: nothing
-- duration: 10 hours then deleted
-
-Price calculation for compute: 10 (hours) x 2 (GPU) x 1,93€ (price / GPU) = **38,6 euros**, billed at the end of the month.
-
-#### Example 2: one GPU notebook for 10 hours but stopped, not deleted
-
-We start one Quantum Notebook, with two GPUs and we keep it running for 10 hours then we stop it and finally we **delete it after 10 days**.
-
-- compute resources: 2 x GPU NVIDIA V100s (1,93 / hour)
-- remote storage: nothing
-- workspace storage: 100GB used. The first 10GB are free.
-- duration: 10 hours then stopped for 10 days
-
-Price calculation for compute : 10 (hours) x 2 (GPU) x 1,93 (price / GPU) = **38,6 euros**, billed at the end of the month.
-Price calculation for workspace : 90 (GB) x 0,01€ (price for object storage / GB) = **0,9 euros**, billed at the end of the month.
-
-#### Example 3: one GPU notebook for 10 hours with 1TB remote storage
-
-We start one Quantum Notebook, with two GPUs and 1TB remote storage. We keep it running for 10 hours then we delete it.
-
-- compute resources: 2 x GPU NVIDIA V100s (1,93 / hour)
-- remote storage: 1TB in OVHcloud Object Storage
-- workspace storage: 100GB used. The first 10GB are free.
-- duration: 10 hours then we delete it.
-
-Price calculation for compute: 10 (hours) x 2 (GPU) x 1,93 (price / GPU) = **38,6 euros**, billed at the end of the month.
-Price calculation for workspace: 90 (GB) x 0,01€ (price for object storage / GB) = **0,9 euros**, billed at the end of the month.
-
-Also, price calculation for remote Object Storage : 1000 (GB) x 0,01€ (price for object storage / GB) = **10 euros**, billed at the end of the month.
-
-#### Example 4: 15 CPU notebooks for 5 hours then deleted
-
-We start 15 Quantum Notebooks, each of them with one vCPU
-
-- compute resources: 1 x vCPU (0,03€ /hour /cpu)
-- remote storage: nothing
-- duration: 5 hours then we delete it.
-
-Price calculation for compute: 15 (notebooks) x 5 (hours) x 1 (CPU) x 0,03€ (price / CPU) = **2,25 euros**, billed at the end of the month.
+> [!tabs]
+> ** For Quantum emulators**
+>>
+>> #### Example 1: one GPU notebook for 10 hours then deleted
+>> 
+>> We start one Quantum Notebook, with two GPUs and we keep it running for 10 hours then we **delete it**.
+>> 
+>> - compute resources: 2 x GPU NVIDIA V100s (1,93€ / hour)
+>> - remote storage: nothing
+>> - duration: 10 hours then deleted
+>> 
+>> Price calculation for compute: 10 (hours) x 2 (GPU) x 1,93€ (price / GPU) = **38,6 euros**, billed at the end of the month.
+>> 
+>> #### Example 2: one GPU notebook for 10 hours but stopped, not deleted
+>> 
+>> We start one Quantum Notebook, with two GPUs and we keep it running for 10 hours then we stop it and finally we **delete it after 10 days**.
+>> 
+>> - compute resources: 2 x GPU NVIDIA V100s (1,93 / hour)
+>> - remote storage: nothing
+>> - workspace storage: 100GB used. The first 10GB are free.
+>> - duration: 10 hours then stopped for 10 days
+>> 
+>> Price calculation for compute : 10 (hours) x 2 (GPU) x 1,93 (price / GPU) = **38,6 euros**, billed at the end of the month.
+>> Price calculation for workspace : 90 (GB) x 0,01€ (price for object storage / GB) = **0,9 euros**, billed at the end of the month.
+>> 
+>> #### Example 3: one GPU notebook for 10 hours with 1TB remote storage
+>> 
+>> We start one Quantum Notebook, with two GPUs and 1TB remote storage. We keep it running for 10 hours then we delete it.
+>> 
+>> - compute resources: 2 x GPU NVIDIA V100s (1,93 / hour)
+>> - remote storage: 1TB in OVHcloud Object Storage
+>> - workspace storage: 100GB used. The first 10GB are free.
+>> - duration: 10 hours then we delete it.
+>> 
+>> Price calculation for compute: 10 (hours) x 2 (GPU) x 1,93 (price / GPU) = **38,6 euros**, billed at the end of the month.
+>> Price calculation for workspace: 90 (GB) x 0,01€ (price for object storage / GB) = **0,9 euros**, billed at the end of the month.
+>> 
+>> Also, price calculation for remote Object Storage : 1000 (GB) x 0,01€ (price for object storage / GB) = **10 euros**, billed at the end of the month.
+>> 
+>> #### Example 4: 15 CPU notebooks for 5 hours then deleted
+>> 
+>> We start 15 Quantum Notebooks, each of them with one vCPU
+>> 
+>> - compute resources: 1 x vCPU (0,03€ /hour /cpu)
+>> - remote storage: nothing
+>> - duration: 5 hours then we delete it.
+>> 
+>> Price calculation for compute: 15 (notebooks) x 5 (hours) x 1 (CPU) x 0,03€ (price / CPU) = **2,25 euros**, billed at the end of the month.
+>>
+> **For Quantum QPUs**
+>>
+>> Pricing of Quantum QPUs notebooks are the same than Quantum Emulators but you will pay only for the time you use a QPU.
+>>
+>> #### Example 1: one CPU used during 10 hours + one Pasqal QPU Orion Beta used during 1 hour
+>> 
+>> We start one Quantum QPU Notebook, with one CPU and we keep it running for 10 hours then we **delete it**.
+>> We use one hour of the Orion Pasqal QPU which costs 3000€ / hour.
+>> 
+>> - compute resources: 1 x Intel CPU VCores (0,03€ / hour)
+>> - remote storage: nothing
+>> - duration: 10 hours then deleted
+>> - QPU usage: 1 x Pasqal QPU Orion Beta (3000€ / hour)
+>> 
+>> Price calculation for compute: 10 (hours) x 1 (CPU) x 0,03€ (price / CPU) + 1 (hour) x 3000€ (price / QPU) = **3000,3 euros**, billed at the end of the month.
+>>
 
 ## Going further
 
