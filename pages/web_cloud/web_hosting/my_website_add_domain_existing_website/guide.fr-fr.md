@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web, même si les noms de domaine ne sont pas enregistrés chez OVHcloud. De plus, vou pouvez associer un ou plusieurs noms de domaine ou sous-domaines à un même site web.
+Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web, même si les noms de domaine ne sont pas enregistrés chez OVHcloud. De plus, vous pouvez associer un ou plusieurs noms de domaine ou sous-domaines à un même site web.
 
 > [!primary]
 > Si vous n'avez pas encore créé le site web concerné sur votre hébergement web, consultez **directement** [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
