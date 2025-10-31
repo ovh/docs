@@ -1280,7 +1280,7 @@
             + [Troubleshooting](public_cloud/quantum_computing/troubleshooting)
         + [Emulators](products/public-cloud-quantum-computing-emulator)
             + [Guides](public-cloud-quantum-computing-emulators-guides)
-                + [Quantum emulators - Getting started](public_cloud/quantum_computing/getting-started-emulators)
+                + [Quantum emulators - Getting started](public_cloud/quantum_computing/emulators/getting-started)
     + [Analytics](products/public-cloud-data-analytics)
         + [General information](products/public-cloud-data-analytics-general-information)
             + [Analytics - Security overview](public_cloud/public_cloud_databases/information_01_security_overview)
