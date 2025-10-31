@@ -192,7 +192,7 @@ N'hésitez pas à consulter notre [guide](/pages/web_cloud/web_hosting/activate-
 
 [Éditer une zone DNS OVHcloud.](/pages/web_cloud/domains/dns_zone_edit)
 
-[Mettre en ligne un site Internet sur son hébergement web.](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
+[Mettre en ligne un site web sur son hébergement web.](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
