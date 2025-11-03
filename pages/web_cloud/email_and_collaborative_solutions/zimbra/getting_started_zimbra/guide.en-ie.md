@@ -1,7 +1,7 @@
 ---
 title: "Getting started with the Zimbra solution"
 excerpt: "Find out how to get started with your Zimbra solution via the OVHcloud Control Panel"
-updated: 2025-05-19
+updated: 2025-11-04
 ---
 
 <style>
@@ -38,6 +38,7 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
     - [Modify a domain name](#domains-modify)
 - [Email accounts](#emails)
     - [Create an email account](#emails-create)
+    - [Change offer](#emails-offer)
 - [Check your email account](#emails-consult)
 - [Redirections](#redirections)
 - [Alias](#alias)
@@ -132,7 +133,8 @@ Select the tab that corresponds to your choice:
 >> - **Custom configuration**: If you have already configured an email solution on your domain name, you can choose the elements that interest you.
 >>    - *Configure the MX record automatically*: This allows you to enter the OVHcloud incoming servers automatically (applies to all OVHcloud email solutions).
 >>    - *Configure the SPF record automatically*: This allows you to enter the record automatically, authorizing the OVHcloud sending email servers to send your emails. This registration is valid for all OVHcloud email solutions.
->>    - *Configure the DKIM record automatically*: it allows you to automatically enter the records required to authenticate your email sending.
+>>    - *Configure the DKIM record automatically*: it allows you to automatically enter the records required to authenticate your email sending
+>>    - *Automatically configure the SRV record*: it allows the automatic configuration of the parameters of an email account when you add it to an email software (Outlook, Mail for Mac, Thunderbird, etc.).
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500}
 >>
@@ -167,6 +169,7 @@ In the `Domain`{.action} tab of your Zimbra service, click on the "&#8285;" icon
     - **MX**: Essential for receiving your emails.
     - **SPF**: Security record that is required by the majority of recipient email servers to legitimize OVHcloud email sending servers with your domain name.
     - **DKIM**: Provides a signature system for each email sent by your Zimbra service. The signature is verified by the recipient using the public key visible in your DNS zone.
+    - **SRV**: Facilitates the configuration of your Zimbra account when you configure it on an email software (Outlook, Mail for Mac, Thunderbird, etc.).
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
@@ -217,6 +220,26 @@ Fill in the information displayed.
 Click `Confirm`{.action} to start creating the account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
+
+### Change offer <a name="emails-offer"></a>
+
+It is possible to change the offer of any Zimbra account to a higher or lower offer.
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. Click on `Zimbra Mail`{.action}.
+1. Click on `Email account`{.action}.
+1. To the right of the email account for which you want to switch to a higher offer, click on `⁝`{.action}.
+1. Click on `Change offer`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+> [!warning]
+>
+> Before switching to a lower offer, make sure the following points:
+>
+> - No file is stored on your storage volume "Briefcase" if you are switching to the STARTER offer.
+> - The content of your email account must be less than 15 GB if you are switching to the STARTER offer.
 
 ### View your email account <a name="mail-consult"></a>
 

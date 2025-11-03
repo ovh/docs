@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sulla soluzione Zimbra OVHcloud
 excerpt: "Ritrova le domande relative alla migrazione a Zimbra per il servizio MX Plan di OVHcloud"
-updated: 2024-11-15
+updated: 2025-11-04
 ---
 
 <style>
@@ -58,6 +58,34 @@ Una guida all’utilizzo di Zimbra è già disponibile a [questo indirizzo](/pag
 /// details | Come configurare un indirizzo email su un client di posta?
 
 Consulta la nostra pagina "[Configurare un indirizzo email Zimbra su un client di posta](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
+
+///
+
+/// details | Come modificare la mia offerta Zimbra ?
+
+I tuoi bisogni cambiano: desideri disporre di funzionalità aggiuntive sul tuo account Zimbra, oppure non ne hai più bisogno. Le offerte Zimbra sono flessibili, segui le istruzioni seguenti in base alla tua situazione:
+
+**Desideri passare a un piano superiore?**
+
+1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
+1. Vai alla sezione `Web Cloud`{.action}.
+1. Clicca su `Zimbra Mail`{.action}.
+1. Clicca su `Account email`{.action}.
+1. A destra dell'account email per cui desideri passare a un piano superiore, clicca su `⁝`{.action}.
+1. Clicca su `Cambia piano`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+**Desideri passare a un piano inferiore?**
+
+Le fasi sono le stesse del cambio a un piano superiore (dettagliate sopra).
+
+> [!warning]
+>
+> Prima di passare a un piano inferiore, assicurati dei seguenti punti:
+>
+> - Nessun file è archiviato sul tuo volume di archiviazione "Briefcase" se passi all'offerta STARTER.
+> - Il contenuto del tuo account email deve essere inferiore a 15 Go se passi all'offerta STARTER.
 
 ///
 

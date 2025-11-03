@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Here you will find the most frequently asked questions about the migration of OVHcloud MX Plan solution to Zimbra
-updated: 2024-11-15
+updated: 2025-11-04
 ---
 
 <style>
@@ -58,6 +58,34 @@ A user guide for Zimbra is now available at [this address](/pages/web_cloud/emai
 /// details | How do I configure my email address on an email client?
 
 Visit our page “[Configuring your Zimbra email address in an email client](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)”.
+
+///
+
+/// details | How to change my Zimbra offer ?
+
+Your needs change: you want to benefit from more features on your Zimbra account, or on the contrary, you no longer need them. Zimbra offers are flexible, follow the instructions below depending on your situation:
+
+**Do you want to switch to a higher offer ?**
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. Click on `Zimbra Mail`{.action}.
+1. Click on `Email account`{.action}.
+1. To the right of the email account for which you want to switch to a higher offer, click on `⁝`{.action}.
+1. Click on `Change offer`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+**Do you want to switch to a lower offer ?**
+
+The steps are the same as for switching to a higher offer (detailed above).
+
+> [!warning]
+>
+> Before switching to a lower offer, make sure the following points:
+>
+> - No file is stored on your storage volume "Briefcase" if you are switching to the STARTER offer.
+> - The content of your email account must be less than 15 GB if you are switching to the STARTER offer.
 
 ///
 

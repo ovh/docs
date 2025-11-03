@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos con el producto Zimbra"
 excerpt: "Cómo empezar a utilizar la solución Zimbra desde el área de cliente de OVHcloud"
-updated: 2025-05-19
+updated: 2025-11-04
 ---
 
 <style>
@@ -38,6 +38,7 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
     - [Modificar un dominio](#domains-modify)
 - [Cuentas de correo electrónico](#emails)
     - [Crear una cuenta de correo electrónico](#emails-create)
+    - [Cambiar de oferta](#emails-offer)
 - [Consultar la cuenta de correo](#emails-consult)
 - [Redirecciones](#redirections)
 - [Alias](#alias)
@@ -133,6 +134,7 @@ Seleccione la pestaña correspondiente a su elección:
 >>    - *Configurar el registro MX automáticamente*: Permite introducir automáticamente los servidores de recepción de OVHcloud (se aplica a todos los productos de correo de OVHcloud).
 >>    - *Configurar el registro SPF automáticamente*: Permite introducir automáticamente el registro que autoriza a los servidores de correo de envío de OVHcloud a transmitir sus mensajes de correo. Este registro es válido para todas las soluciones de correo de OVHcloud.
 >>    - *Configurar el registro DKIM automáticamente*: Permite introducir automáticamente los registros necesarios para autenticar los envíos de correo.
+>>    - *Configurar el registro SRV automáticamente* : permite la configuración automática de los parámetros de una cuenta de correo cuando la añade a un software de mensajería (Outlook, Mail para Mac, Thunderbird, etc.).
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500}
 >>
@@ -167,6 +169,7 @@ En la pestaña `Dominio`{.action} del servicio Zimbra, haga clic en el icono &#8
     - **MX**: indispensable para recibir mensajes de correo.
     - **SPF**: Seguridad requerida por la mayoría de los servidores de correo de destino para legitimar los servidores de envío de correo de OVHcloud con su dominio.
     - **DKIM**: Permite implementar un sistema de firma para cada mensaje de correo electrónico enviado por su servicio Zimbra. El destinatario comprueba la firma con la clave pública visible en la zona DNS.
+     - **SRV** : Facilita la configuración de su cuenta Zimbra cuando la configura en un software de mensajería (Outlook, Mail para Mac, Thunderbird, etc.).
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
@@ -217,6 +220,26 @@ Complete la información que se muestra.
 Haga clic en `Confirmar`{.action} para crear la cuenta.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
+
+### Cambiar de oferta <a name="emails-offer"></a>
+
+Es posible cambiar la oferta de cualquier cuenta Zimbra por una oferta superior o inferior.
+
+1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
+1. Vaya a la sección `Web Cloud`{.action}.
+1. Haga clic en `Zimbra Mail`{.action}.
+1. Haga clic en `Cuenta de correo`{.action}.
+1. A la derecha de la cuenta de correo para la que desea cambiar a una oferta superior, haga clic en `⁝`{.action}.
+1. Haga clic en `Cambiar de oferta`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+> [!warning]
+>
+> Antes de cambiar a una oferta inferior, asegúrese de los siguientes puntos:
+>
+> - No hay ningún archivo almacenado en su volumen de almacenamiento « Breifcase » si cambia a la oferta STARTER.
+> - El contenido de su cuenta de correo debe ser inferior a 15 Go si cambia a la oferta STARTER.
 
 ### Consultar su cuenta de correo <a name="mail-consult"></a>
 
