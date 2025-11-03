@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 OVHcloud Managed Rancher Service (MRS) supports authentication through OVHcloud IAM, allowing you to manage access using centralized user identities and roles.
 
-This guide explains how to enable IAM authentication and control user access to your registry using OVHcloud IAM users and roles.
+This guide explains how to enable IAM authentication and control user access to your Rancher service using OVHcloud IAM users and roles.
 
 ## Requirements
 
@@ -133,7 +133,7 @@ To recover the admin password required for authentication, use the following API
 > @api {v2} /publicCloud POST /publicCloud/project/{projectId}/rancher/{rancherId}/adminCredentials
 >
 
-Replace::
+Replace:
 
 - `projectId` with the ID of your Public Cloud project.
 - `rancherId` with the ID of the Managed Rancher Service.
@@ -167,11 +167,11 @@ OVHcloud IAM provides three predefined roles for managing access to your Managed
 
 > [!primary]
 >
-> **base** role: Base users can only log in and have no additional permissions.
+> **base** role: Base users can only log in and do not have any additional permissions.
 >
 > **standard** role: Standard users can create new clusters and manage clusters and projects they have been granted access to.
 >
-> **ovhRestrictedAdmin** role: OVH Restricted Admins have full control over all resources in downstream clusters but no access to the local cluster.
+> **ovhRestrictedAdmin** role: OVH Restricted Admins have full control over all resources in downstream clusters but do not have access to the local cluster.
 >
 
 These roles are assigned through IAM policies. To create and configure a policy, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.
@@ -185,7 +185,7 @@ Define users and groups, name your policy, add the users you want to include and
 Set permissions for MRS: 
 
 - In the `Product types` section, select `Public Cloud / Managed Rancher Service (MRS) project`.
-- In the `Resources` section, choose the specific MRS instance to which the policy will apply.
+- In the `Resources` section, choose the specific MRS service to which the policy will apply.
 
 ![Create policy product types](images/create_policy_product_types.png){.thumbnail}
 
