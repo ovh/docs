@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre a solução Zimbra OVHcloud
 excerpt: "Encontre as questões relativas à migração para Zimbra para a oferta MX Plan da OVHcloud"
-updated: 2024-11-15
+updated: 2025-11-04
 ---
 
 <style>
@@ -58,6 +58,34 @@ Um guia de utilização do Zimbra está desde já disponível em [este endereço
 /// details | Como posso configurar o meu endereço de e-mail num software de e-mail?
 
 Consulte a nossa página « [Configurar o seu endereço de e-mail Zimbra num programa de correio eletrónico](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
+
+///
+
+/// details | Como alterar a sua oferta Zimbra ?
+
+Os seus requisitos mudam: pretende beneficiar de mais funcionalidades na sua conta Zimbra ou, pelo contrário, já não necessita delas. As ofertas Zimbra são flexíveis, siga as instruções abaixo de acordo com a sua situação:
+
+**Pretende passar para uma oferta superior ?**
+
+1. Inicie sessão na sua [área de cliente OVHcloud](/links/manager).
+1. Dirija-se à secção `Web Cloud`{.action}.
+1. Clique em `Zimbra Mail`{.action}.
+1. Clique em `Compte email`{.action}.
+1. À direita da conta de correio electrónico para a qual pretende passar para uma oferta superior, clique em `⁝`{.action}.
+1. Clique em `Changer d'offre`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+**Pretende passar para uma oferta inferior ?**
+
+As etapas são as mesmas que para a mudança para uma oferta superior (detalhadas acima).
+
+> [!warning]
+>
+> Antes de passar para uma oferta inferior, certifique-se dos seguintes pontos :
+>
+> - Nenhum ficheiro está armazenado no seu volume de armazenamento « Breifcase » se mudar para a oferta STARTER.
+> - O conteúdo da sua conta de correio electrónico deve ser inferior a 15 Go se mudar para a oferta STARTER.
 
 ///
 

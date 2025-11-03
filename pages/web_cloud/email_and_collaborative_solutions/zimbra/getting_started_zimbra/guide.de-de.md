@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit Zimbra"
 excerpt: "Erfahren Sie hier, wie Sie Ihr Zimbra Angebot über Ihr OVHcloud Kundencenter verwalten"
-updated: 2025-05-19
+updated: 2025-11-04
 ---
 
 <style>
@@ -38,6 +38,7 @@ Mit dem Zimbra Dienst bietet Ihnen OVHcloud eine kollaborative Open Source Messa
     - [Domainnamen bearbeiten](#domains-modify)
 - [E-Mail Accounts](#emails)
     - [E-Mail-Account erstellen](#emails-create)
+    - [Angebot ändern](#emails-offer)
 - [E-Mail-Account einsehen](#emails-consult)
 - [Weiterleitungen](#redirections)
 - [Alias](#alias)
@@ -133,6 +134,7 @@ Wählen Sie den betreffenden Tab aus:
 >>    - *MX-Eintrag automatisch konfigurieren*: Ermöglicht die automatische Eingabe der Empfangsserver von OVHcloud (gilt für alle E-Mail-Angebote von OVHcloud).
 >>    - *SPF-Eintrag automatisch konfigurieren*: Ermöglicht die automatische Eingabe des Eintrags, der den OVHcloud E-Mail-Servern den Versand Ihrer E-Mails erlaubt. Diese Registrierung gilt für alle OVHcloud E-Mail-Angebote.
 >>    - *DKIM-Eintrag automatisch konfigurieren*: Damit werden automatisch die erforderlichen Einträge für die Authentifizierung des Versands von E-Mails eingegeben.
+>>    - *SRV-Eintrag automatisch konfigurieren* : ermöglicht die automatische Konfiguration der Parameter eines E-Mail-Kontos, wenn Sie es in einer E-Mail-Software (Outlook, Mail für Mac, Thunderbird usw.) hinzufügen.
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500}
 >>
@@ -167,6 +169,7 @@ Klicken Sie im Tab `Domain`{.action} Ihres Zimbra Dienstes auf das Symbol &#8285
     - **MX**: Notwendig zum Empfang Ihrer E-Mails.
     - **SPF**: Sicherheitseintrag, der von den meisten E-Mail-Empfänger-Servern verlangt wird, um die OVHcloud Server für den E-Mail-Versand mit Ihrem Domainnamen zu legitimieren.
     - **DKIM**: Ermöglicht die Einrichtung eines Signatursystems für jede E-Mail, die von Ihrem Zimbra-Dienst gesendet wird. Die Signatur wird vom Empfänger anhand des öffentlichen Schlüssels überprüft, der in Ihrer DNS-Zone hinterlegt ist.
+    - **SRV** : Ermöglicht die Konfiguration Ihres Zimbra-Kontos, wenn Sie es in einer E-Mail-Software (Outlook, Mail für Mac, Thunderbird usw.) einrichten.
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
@@ -217,6 +220,26 @@ Geben Sie die angezeigten Informationen ein.
 Klicken Sie auf `Bestätigen`{.action}, um die Erstellung des Accounts zu starten.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
+
+### Angebot ändern <a name="emails-offer"></a>
+
+Es ist möglich, das Angebot jedes Zimbra-Kontos auf ein höheres oder niedrigeres Angebot zu ändern.
+
+1. Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an.
+1. Gehen Sie in den Bereich `Web Cloud`{.action}.
+1. Klicken Sie auf `Zimbra Mail`{.action}.
+1. Klicken Sie auf `E-Mail-Konto`{.action}.
+1. Rechts neben dem E-Mail-Konto, für das Sie auf ein höheres Angebot wechseln möchten, klicken Sie auf `⁝`{.action}.
+1. Klicken Sie auf `Angebot ändern`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+> [!warning]
+>
+> Bevor Sie auf ein niedrigeres Angebot wechseln, stellen Sie sicher, dass folgende Punkte erfüllt sind:
+>
+> - Keine Dateien sind auf Ihrem Speichervolumen « Briefcase » gespeichert, wenn Sie auf das Angebot STARTER wechseln.
+> - Der Inhalt Ihres E-Mail-Kontos muss kleiner als 15 Go sein, wenn Sie auf das Angebot STARTER wechseln.
 
 ### E-Mail-Account einsehen <a name="mail-consult"></a>
 
