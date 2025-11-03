@@ -47,7 +47,7 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 **Cliquez sur les titres ci-dessous pour afficher les explications.**
 
-/// details | Activer le pare-feu applicatif à l'ensemble de votre hébergement web dans la configuration PHP
+/// details | Activer le pare-feu applicatif sur l'ensemble de votre hébergement web dans la configuration PHP
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -74,20 +74,20 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 4**
 >>
->> Dans la fenêtre qui s'ouvre, sélectionnez l'élément `Modifier la configuration actuelle`{.action} et cliquez sur le bouton `Suivant`{.action}.
+>> Dans la fenêtre qui s'ouvre, sélectionnez l'élément `Modifier la configuration courante`{.action} et cliquez sur le bouton `Suivant`{.action}.
 >>
 >> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 >>
->> Dans la nouvelle fenêtre, assurez-vous que **Application firewall** est défini sur `Activé`{.action}. Cliquez ensuite sur le bouton `Confirmer`{.action}.
+>> Dans la nouvelle fenêtre, assurez-vous que l'option **Pare-feu applicatif** est définie sur `Activé`{.action}. Cliquez ensuite sur le bouton `Valider`{.action}.
 
 ///
 
-/// details | Activer le pare-feu applicatif uniquement sur un nom de domaine ou sous-domaine spécifique
+/// details | Activer le pare-feu applicatif uniquement sur un nom de domaine ou un sous-domaine spécifique
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
@@ -117,15 +117,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 5**
 >>
->> Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case en haut (si ce dernier est également déclaré sur le même site web).
+>> Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case correspondante en haut (si ce dernier est également déclaré sur le même site web).
 >>
 >> ![Modify a domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 >>
->> Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour valider la modifiction des paramètres.
+>> Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour valider la modification des paramètres.
 >>
->> Dès lors où le pare-feu est activé pour votre nom de domaine ou sous-domaine concerné, la mention **Activé** apparaît dans la colonne **Firewall**.
+>> Une fois le pare-feu activé pour votre nom de domaine ou sous-domaine, la mention **Activé** apparaît dans la colonne **Firewall**.
 >>
->> Si la mention **Activé** n'apparaît pas au bout de quelques minutes sur la ligne correspondante à votre nom de domaine ou sous-domaine concerné, rechargez la page.
+>> Si la mention **Activé** n'apparaît pas au bout de quelques minutes sur la ligne correspondante au nom de domaine ou sous-domaine concerné, rechargez la page.
 
 ///
 
