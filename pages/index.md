@@ -1601,8 +1601,6 @@
             + [Migrating an MX Plan email account to an Email Pro or Exchange account](web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
             + [Manually migrate your email account](web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
             + [Migrating email accounts using OVHcloud Mail Migrator](web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
-            + [Migrating a Gmail account to an OVHcloud email account via the OVHcloud Mail Migrator](web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)
-            + [Authorising less secure connections on Gmail](web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
             + [Migrating your email account from one OVHcloud email platform to another](web_cloud/email_and_collaborative_solutions/migrating/migration_platform)
         + [Troubleshooting](web-cloud-email-collaborative-solutions-troubleshooting)
             + [Unable to send or receive emails](web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)
