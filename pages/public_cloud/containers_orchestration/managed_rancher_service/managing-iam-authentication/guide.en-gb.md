@@ -49,8 +49,7 @@ Integrating IAM with your Rancher service ensures consistent access control acro
 > When you enable OVHcloud IAM authentication on your Managed Rancher Service:
 > 
 > - Local users will remain functional, so you can continue logging in with your usual Rancher accounts.
-> - To restore access with the IAM root user, log in first with a local admin account.
-> - If the "admin" password is regenerated while IAM authentication is enabled, or if no user has ever logged in locally, the ability to log in with the IAM root user will be impossible.
+> - If the "admin" password is regenerated while IAM authentication is enabled, or if no user has ever logged in locally, the ability to log in with the IAM root user will be impossible. To restore access with the IAM root user, log in first with a local admin account.
 > 
 > From this point on, IAM roles and policies control access for users authenticated via OVHcloud IAM.
 >
