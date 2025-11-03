@@ -37,8 +37,6 @@ OVHcloud propose deux types de sauvegardes, avec des comportements différents s
 >
 > Les sauvegardes locales sont accessibles depuis toutes les zones de disponibilité d’une région 3AZ. Vous pouvez directement passer à l’étape de recréation de l’instance.
 >
-> Actuellement, la création d'une sauvegarde distante n'est pas disponible via l'espace client OVHcloud. Vous ne pouvez effectuer cette action que via l'API OVHcloud ou OpenStack.
->
 
 La sauvegarde d'une instance peut être réalisée :
 

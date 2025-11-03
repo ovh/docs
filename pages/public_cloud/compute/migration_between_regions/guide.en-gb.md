@@ -37,8 +37,6 @@ OVHcloud offers two types of backup, with different behaviors depending on the t
 >
 > Local backups are accessible from all availability zones within a 3AZ region. You can proceed directly to the instance re-creation stage.
 >
-> Currently, creating a distant backup is not available through the OVHcloud Control Panel. You can only perform this action via the OVHcloud API or OpenStack.
->
 
 An instance can be backed up:
 

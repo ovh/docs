@@ -47,7 +47,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >
 > Chaque sauvegarde est facturée séparément. La sauvegarde distante sera facturée selon la tarification du stockage dans la région distante sélectionnée.
 >
-> Actuellement, la création d’une sauvegarde distante n’est pas disponible via l'espace client OVHcloud. Vous pouvez l’effectuer uniquement via l’API OVHcloud et Openstack.
+> **Note :** les local zones ne sont pas éligibles pour les sauvegardes distantes
 >
 
 > [!tabs]
@@ -67,15 +67,27 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> ///
 >>
->> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, vous pouvez consulter le statut de la sauvegarde dans la section `Instance Backup`{.action} sous la rubrique **Compute** du menu de gauche, où l'état `Backup en cours` sera affiché pendant le processus.
+>> /// details | Sauvegarde distante
 >>
->> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>> Entrez un nom pour la sauvegarde. Vérifiez les informations tarifaires. Cliquez sur `Ajouter un backup distant (Option)`{.action}, entrez un nom pour la sauvegarde distante, sélectionnez une région et cliquez sur `Confirmer`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
+>>
+>> ///
+>>
+>> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, vous pouvez consulter le statut de la sauvegarde dans la section `Instance Backup`{.action} sous la rubrique **Compute** du menu de gauche, où l'état `Backup en cours` sera affiché pendant le processus.
 >>
 >> Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Via l'API OVHcloud <a name="createinstanceviaapi"></a>
+>> Vous pouvez répertorier toutes les régions disponibles à l'aide de l'appel API suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
+>> >
 >>
 >> Authentifiez-vous sur [l'API OVHcloud](/links/console) et utilisez l'appel API suivant :
 >>
@@ -110,6 +122,12 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> Vous pouvez répertorier toutes les régions disponibles à l'aide de la commande suivante :
+>>
+>> ```bash
+>> $ openstack region list
 >> ```
 >>
 >> /// details | Sauvegarde locale
