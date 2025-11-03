@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la solution Zimbra OVHcloud
 excerpt: "Retrouvez les questions concernant la migration vers Zimbra pour l'offre MX Plan OVHcloud"
-updated: 2025-11-04
+updated: 2025-11-05
 ---
 
 <style>
@@ -63,7 +63,7 @@ Consultez notre page « [Configurer son adresse e-mail Zimbra sur un logiciel de
 
 /// details | Comment changer mon offre Zimbra ?
 
-Vos besoins évoluent, vous souhaitez davantage de fonctionnalités pour votre compte Zimbra ou au contraire vous ne les utilisez plus. Les offres Zimbra sont flexibles, selon votre besoin, suivez les instructions suivantes.
+Vos besoins changent : vous souhaitez bénéficier de plus de fonctionnalités sur votre compte Zimbra, ou au contraire, vous n’en avez plus l’utilité. Les offres Zimbra sont flexibles, suivez les instructions ci-dessous en fonction de votre situation :
 
 **Vous souhaitez basculer vers une offre supérieure ?**
 
@@ -71,18 +71,18 @@ Vos besoins évoluent, vous souhaitez davantage de fonctionnalités pour votre c
 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 1. Cliquez sur `Zimbra Mail`{.action}.
 1. Cliquez sur `Compte email`{.action}.
-1. À droite du compte email pour lequel vous souhaitez basculer vers l'offre supérieure, cliquez sur `⁝`.
+1. À droite du compte e-mail pour lequel vous souhaitez basculer vers l'offre supérieure, cliquez sur `⁝`{.action}.
 1. Cliquez sur `Changer d'offre`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
 **Vous souhaitez basculer vers une offre inférieure ?**
 
-Les étapes sont les mêmes que pour changer vers une offre supérieure (ci-dessus).
+Les étapes sont les mêmes que pour le changement vers une offre supérieure (détaillé ci-dessus).
 
 > [!warning]
 >
-> Avant de basculer vers une offre inférieur, assurez-vous que:
+> Avant de basculer vers une offre inférieure, assurez-vous des points suivants :
 >
 > - Aucun fichier n'est stocké sur votre volume de stockage « Breifcase » si vous changez vers l'offre STARTER.
 > - Le contenu de votre compte e-mail doit être inférieur à 15 Go si vous basculez vers l'offre STARTER.
