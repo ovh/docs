@@ -29,13 +29,13 @@ Pour les sites web principalement consultés à l'étranger et hébergés sur no
 Pour utiliser l'option de géolocalisation par IP, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
@@ -63,7 +63,7 @@ Pour utiliser l'option de géolocalisation par IP, cliquez sur les onglets ci-de
 >>
 >> ![geolocation option](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/country-ip-selection.png){.thumbnail}
 >>
->> Choisissez l'adresse IP du pays pour lequel vous souhaitez géolocaliser votre site, parmi les 12 pays proposés : *République Tchèque, Finlande, France, Allemagne, Irlande, Italie, Littuanie, Pays-bas, Pologne, Portugal, Espagne, Royaumes-Uni*.
+>> Choisissez l'adresse IP du pays pour lequel vous souhaitez géolocaliser votre site, parmi les 12 pays proposés : *République tchèque, Finlande, France, Allemagne, Irlande, Italie, Lituanie, Pays-Bas, Pologne, Portugal, Espagne, Royaume-Uni*.
 >>
 >> Cliquez sur `Suivant`{.action} puis sur `Valider`{.action} dans la fenêtre récapitulative.
 
