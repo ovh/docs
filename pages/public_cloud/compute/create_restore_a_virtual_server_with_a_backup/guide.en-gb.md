@@ -21,6 +21,19 @@ You can make use of these instance backups for two basic purposes:
 
 ## Instructions
 
+
+> [!primary]
+>
+> Two types of backups are available:
+>
+> - Local: Stored in the same region as your instance.
+> - Distant: Automatically replicated in another region of your choice.
+>
+> Distant backup operations including **creation** and **restoration** are fully supported via the OVHcloud API and OpenStack, enabling greater flexibility and integration within your automation workflows.
+>
+> **Note :** These operations are not yet available through the OVHcloud Control Panel.
+>
+
 ### Creating an instance from a backup
 
 > [!tabs]

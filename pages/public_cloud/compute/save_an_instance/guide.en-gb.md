@@ -47,7 +47,8 @@ You can create a single backup of an instance or configure a schedule in order t
 >
 > Each backup is billed separately — the distant backup will be charged based on the storage pricing of the selected remote region.
 >
-> Currently, creating a distant backup is not available through the OVHcloud Control Panel. You can only perform this action via the OVHcloud API or OpenStack.
+> **Note:** Local zones are not eligible for distant backups.
+>
 
 > [!tabs]
 > Via the OVHcloud Control Panel
@@ -66,15 +67,27 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> ///
 >>
->> It is not possible to monitor backup progress in real time. However, in the `Instance Backup`{.action} section under **Compute** in the left-hand menu, the status `Backup in progress` will be displayed during the process.
+>> /// details | Distant backup
 >>
->> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>> Enter a name for the backup. Review the pricing information. Click `Add a remote backup (Option)`{.action}, enter a name for distant backup, select a region and click `Confirm`{.action}
+>>
+>> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
+>>
+>> ///
+>>
+>> It is not possible to monitor backup progress in real time. However, in the `Instance Backup`{.action} section under **Compute** in the left-hand menu, the status `Backup in progress` will be displayed during the process.
 >>
 >> Once the backup is complete, it will be available in the `Instance Backup`{.action} section under **Compute** in the left-hand menu.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Via the OVHcloud API <a name="createinstanceviaapi"></a>
+>> You can list all available regions using the following API call:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
+>> >
 >>
 >> Log in to the [OVHcloud API](/links/console) and use the following API call:
 >>
@@ -109,6 +122,12 @@ You can create a single backup of an instance or configure a schedule in order t
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> You can list all available regions using the following command:
+>>
+>> ```bash
+>> $ openstack region list
 >> ```
 >>
 >> /// details | Local backup

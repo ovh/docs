@@ -21,6 +21,18 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 
 ## En pratique
 
+> [!primary]
+>
+> Deux types de sauvegardes sont disponibles :
+>
+> - Locale : stockée dans la même région que votre instance.
+> - Distante : automatiquement répliquée dans une autre région de votre choix.
+>
+> Les opérations sur les sauvegardes distantes **création** et **restauration** sont entièrement prises en charge via l’API OVHcloud, offrant une plus grande flexibilité et une intégration facilitée dans vos processus d’automatisation.
+>
+> **Note :** Ces opérations ne sont pas encore disponibles depuis l’espace client OVHcloud.
+>
+
 ### Créer une instance a partir d'une sauvegarde
 
 > [!tabs]
