@@ -366,11 +366,8 @@ Per farlo, si prega di fare riferimento alla nostra guida su [come proteggere un
 Sono disponibili diverse opzioni, ad esempio:
 
 - Scarica via SFTP: Connetti il tuo VPS con un client software in grado di utilizzare SFTP (ad esempio [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), quindi trasferisci tutti i file nella directory radice del sistema.
-
 - Scarica via `rsync` (strumento da riga di comando): Utilizza il comando `rsync -avz -e ssh username@vps_ip_address:/ /local_directory/` per scaricare tutti i file e le cartelle dal tuo VPS.
-
 - Scarica tramite l'opzione **Backup automatico**: Segui la nostra guida su [come utilizzare i backup automatici su un VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) per scaricare file da un backup.
-
 - Scarica tramite l'opzione **Snapshot**: Segui la nostra guida su [come utilizzare gli snapshot su un VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps) per scaricare uno snapshot del VPS.
 
 ///
@@ -430,9 +427,7 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza la seguente chi
 Sebbene OVHcloud applichi misure di sicurezza per proteggere l'intera infrastruttura, l'amministratore di un VPS è responsabile della sicurezza delle applicazioni e dei dati ospitati su di esso.
 
 - Segui la nostra guida su [come configurare il firewall della rete Edge di OVHcloud](/pages/bare_metal_cloud/dedicated_servers/firewall_network) integrato nella nostra infrastruttura Anti-DDoS, limitando l'esposizione dei tuoi servizi agli attacchi DDoS.
-
 - Inoltre, puoi utilizzare le nostre guide su [come configurare il tuo firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) con `iptables` su distribuzioni basate su Linux e [come abilitare il firewall su Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
-
 - Per distribuzioni basate su Linux su un VPS, puoi seguire le istruzioni nella nostra guida su [come proteggere un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) per applicare misure di sicurezza aggiuntive.
 
 ///

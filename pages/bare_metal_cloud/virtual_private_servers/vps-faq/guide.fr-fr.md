@@ -371,11 +371,8 @@ Pour cela, aidez-vous de notre guide « [Sécuriser un VPS](/pages/bare_metal_cl
 Plusieurs possibilités s'offrent à vous, par exemple :
 
 - Téléchargement via SFTP : Connectez-vous à votre VPS avec un logiciel client SFTP (par exemple [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), puis transférez tous les fichiers du répertoire racine du système.
-
 - Téléchargement via `rsync` (outil en ligne de commande) : Utilisez la commande `rsync -avz -e ssh username@vps_ip_address:/ /local_directory/` pour télécharger tous les fichiers et dossiers de votre VPS.
-
 - Téléchargement via l'option **Backup automatisé** : Suivez notre guide sur [l'utilisation des sauvegardes automatisées sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) pour télécharger des fichiers à partir d'une sauvegarde.
-
 - Téléchargement via l'option **Snapshot** : Suivez notre guide sur [l'utilisation des snapshots sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps) pour télécharger un snapshot du VPS.
 
 ///
@@ -434,12 +431,10 @@ Pour vérifier que votre adresse IP est autorisée, utilisez l'appel suivant :
 
 Bien qu’OVHcloud applique des mesures de sécurité pour protéger l’ensemble de l’infrastructure, l’administrateur d’un VPS est responsable de la sécurité des applications et des données qui y sont hébergées.
 
-- Suivez notre guide « [Comment configurer le Edge Network Firewall OVHcloud](/pages/bare_metal_cloud/dedicated_servers/firewall_network) », service intégré à notre infrastructure Anti-DDoS afin de limiter l'exposition de vos services aux attaques DDoS.
-
+- Suivez notre guide « [Comment configurer le Edge Network Firewall OVHcloud](/pages/bare_metal_cloud/dedicated_servers/firewall_network) », service intégré à notre infrastructure Anti-DDoS afin de limiter l'exposition de vos services aux attaques DDoS. 
 - De plus, vous pouvez utiliser nos guides :
     - [Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
     - [Configurer le pare-feu sous Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
-
 - Pour les distributions Linux sur un VPS, vous pouvez suivre les instructions de notre guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) » pour appliquer des mesures de sécurité supplémentaires.
 
 ///

@@ -366,11 +366,8 @@ Beachten Sie auch unserere Anleitung zur [Absicherung eines VPS](/pages/bare_met
 Es gibt mehrere Optionen, z. B.:
 
 - Download über SFTP: Verbinden Sie sich mit Ihrem VPS mit einem Software-Client, der SFTP unterstützt (z. B. [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), und übertragen Sie alle Dateien im Root-Verzeichnis des Systems.
-
 - Download über `rsync` (Kommandozeilentool): Verwenden Sie den Befehl `rsync -avz -e ssh username@vps_ip_address:/ /local_directory/`, um alle Dateien und Ordner Ihres VPS herunterzuladen.
-
 - Download über die Option **Automatisches Backup**: Folgen Sie unserer Anleitung zur [Verwendung von automatischen Backups auf einem VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps), um Dateien aus einem Backup herunterzuladen.
-
 - Download über die Option **Snapshot**: Folgen Sie unserer Anleitung zur [Verwendung von Snapshots auf einem VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps), um einen VPS-Snapshot herunterzuladen.
 
 ///
@@ -430,9 +427,7 @@ Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie den folgen
 Obwohl OVHcloud Sicherheitsmaßnahmen anwendet, um die gesamte Infrastruktur zu schützen, ist der Administrator eines VPS für die Sicherheit der darauf gehosteten Anwendungen und Daten verantwortlich.
 
 - Folgen Sie unserer Anleitung zur [Konfiguration der OVHcloud Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network), die in unserer Anti-DDoS-Infrastruktur integriert ist und die Exposition Ihrer Dienste gegenüber DDoS-Angriffen begrenzt.
-
 - Darüber hinaus können Sie unsere Anleitungen zur [Firewall-Konfiguration](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) mit `iptables` auf Linux-basierten Distributionen und zur [Windows-Firewall](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win) verwenden.
-
 - Für Linux-basierte Distributionen auf einem VPS können Sie die Anweisungen in unserer Anleitung zur [Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) befolgen, um zusätzliche Sicherheitsmaßnahmen anzuwenden.
 
 ///
