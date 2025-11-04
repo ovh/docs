@@ -70,7 +70,7 @@ Vos besoins changent : vous souhaitez bénéficier de plus de fonctionnalités s
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 1. Cliquez sur `Zimbra Mail`{.action}.
-1. Cliquez sur `Compte email`{.action}.
+1. Cliquez sur l'onglet `Compte email`{.action}.
 1. À droite du compte e-mail pour lequel vous souhaitez basculer vers l'offre supérieure, cliquez sur `⁝`{.action}.
 1. Cliquez sur `Changer d'offre`{.action}.
 
@@ -84,8 +84,8 @@ Les étapes sont les mêmes que pour le changement vers une offre supérieure (d
 >
 > Avant de basculer vers une offre inférieure, assurez-vous des points suivants :
 >
-> - Aucun fichier n'est stocké sur votre volume de stockage « Breifcase » si vous changez vers l'offre STARTER.
-> - Le contenu de votre compte e-mail doit être inférieur à 15 Go si vous basculez vers l'offre STARTER.
+> - Aucun fichier n'est stocké sur votre volume de stockage « Breifcase » si vous changez vers l'offre Starter.
+> - Le contenu de votre compte e-mail doit être inférieur à 15 Go si vous basculez vers l'offre Starter.
 
 ///
 
