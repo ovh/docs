@@ -45,7 +45,7 @@ O **novo Outlook** substitui, desde 1º de janeiro de 2025, o aplicativo **Corre
 
 OVHcloud fornece serviços cuja configuração, gerenciamento e responsabilidade cabem a você. Portanto, é sua responsabilidade garantir o funcionamento correto.
 
-Fornecemos esta guia para ajudá-lo nas tarefas mais comuns. No entanto, recomendamos que você contate um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou o fornecedor do serviço se encontrar dificuldades. Não estaremos em condições de fornecer assistência. Mais informações na seção "[Quer saber mais?](#go-further)" desta guia.
+Fornecemos esta guia para ajudá-lo nas tarefas mais comuns. No entanto, recomendamos que você contate um [parceiro especializado](/links/partner) e/ou o fornecedor do serviço se encontrar dificuldades. Não estaremos em condições de fornecer assistência. Mais informações na seção "[Quer saber mais?](#go-further)" desta guia.
 
 ///
 

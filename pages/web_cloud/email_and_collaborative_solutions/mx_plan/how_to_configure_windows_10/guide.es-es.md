@@ -45,7 +45,7 @@ El **nuevo Outlook** reemplaza desde el 1 de enero de 2025 a la aplicación **Co
 
 OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen en usted. Por lo tanto, es su responsabilidad asegurar su correcto funcionamiento.
 
-Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin embargo, le recomendamos contactar a un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) y/o contactar al editor del servicio si encuentra dificultades. De hecho, no podremos proporcionarle asistencia. Más información en la sección "[Más información](#go-further)" de esta guía.
+Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin embargo, le recomendamos contactar a un [partner especializado](/links/partner) y/o contactar al editor del servicio si encuentra dificultades. De hecho, no podremos proporcionarle asistencia. Más información en la sección "[Más información](#go-further)" de esta guía.
 
 ///
 
