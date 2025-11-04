@@ -1,7 +1,7 @@
 ---
 title: 'Migration of instances between different regions'
 excerpt: 'This guide describes how to migrate an OVHcloud Public Cloud instance between two regions, 1AZ and 3AZ. It covers the backup, transfer and re-creation steps, with instructions via the Manager, Horizon or the OpenStack CLI.'
-updated: 2025-10-15
+updated: 2025-11-04
 ---
 
 ## Objectives

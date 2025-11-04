@@ -1,7 +1,7 @@
 ---
 title: Backup einer Instanz erstellen
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz in Ihrem OVHcloud Kundencenter sichern
-updated: 2025-10-14
+updated: 2025-11-04
 ---
 
 <style>
@@ -47,7 +47,7 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >
 > Jede Sicherung wird gesondert berechnet. Die ferne Sicherung wird gemäß der Speicherplatzkosten der ausgewählten fernen Region berechnet.
 >
-> Momentan ist die Erstellung einer entfernten Sicherung nicht über das OVHcloud Kundencenter verfügbar. Sie können dies nur über die OVHcloud API und OpenStack durchführen.
+> **Hinweis:** Local Zones sind für entfernte Backups nicht geeignet.
 
 > [!tabs]
 > Über das OVHcloud Kundencenter
@@ -66,9 +66,15 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >>
 >> ///
 >>
->> Der Fortschritt der Sicherung kann nicht in Echtzeit verfolgt werden. Sie können jedoch den Status der Sicherung im Bereich `Instance Backup`{.action} unter dem Menüpunkt **Compute** im linken Menü einsehen, wo der Status `Sicherung läuft` angezeigt wird.
+>> /// details | Entferntes Backup
 >>
->> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>> Geben Sie einen Namen für das Backup ein. Überprüfen Sie die Preisinformationen. Klicken Sie auf `Fern-Backup hinzufügen (Option)`{.action}, geben Sie einen Namen für das entfernte Backup ein, wählen Sie eine Region aus und klicken Sie auf `Bestätigen`{.action}
+>>
+>> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
+>>
+>> ///
+>>
+>> Es ist nicht möglich, den Fortschritt des Backups in Echtzeit zu überwachen. Allerdings wird im Bereich `Instance Backup`{.action} unter **Compute** im linken Menü während des Vorgangs der Status `Backup in Bearbeitung` angezeigt.
 >>
 >> Nach Abschluss der Sicherung wird diese im Bereich `Instance Backup`{.action} unter dem Menüpunkt **Compute** im linken Menü angezeigt.
 >>
@@ -76,7 +82,16 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >>
 > Über die OVHcloud API <a name="createinstanceviaapi"></a>
 >>
->> Loggen Sie sich in die [OVHcloud API-Konsole](/links/console) ein und verwenden Sie den folgenden API-Aufruf:
+>> Loggen Sie sich in die [OVHcloud API-Konsole](/links/console).
+>>
+>> Sie können anschließend alle verfügbaren Regionen mit folgender API-Anfrage auflisten:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
+>> >
+>>
+>> Verwenden Sie anschließend folgende API-Anfrage:
 >>
 >> > [!api]
 >> >
@@ -109,6 +124,12 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | AKTIV | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> Sie können alle verfügbaren Regionen mit folgendem Befehl auflisten:
+>>
+>> ```bash
+>> $ openstack region list
 >> ```
 >>
 >> /// details | Lokale Sicherung

@@ -28,7 +28,7 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 > - Lokalna: przechowywana w tej samej regionie co Twoja instancja.
 > - Dystansowa: automatycznie replikowana w innym regionie, który wybierzesz.
 >
-> Działy dotyczące kopii zapasowych dystansowych, w tym **tworzenie** i **przywracanie**, są w pełni obsługiwane przez API OVHcloud i OpenStack, umożliwiając większą elastyczność oraz integrację w obrębie Twoich procesów automatyzacji.
+> Operacje **tworzenia** i **przywracania** instancji z odległej kopii zapasowej są w pełni obsługiwane przez API OVHcloud, co zapewnia większą elastyczność i łatwą integrację z procesami automatyzacji.
 >
 > **Uwaga :** Te operacje nie są jeszcze dostępne za pośrednictwem Panelu klienta OVHcloud.
 

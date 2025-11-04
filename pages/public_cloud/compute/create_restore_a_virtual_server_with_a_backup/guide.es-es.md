@@ -28,7 +28,7 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 > - Local: almacenada en la misma región que su instancia.
 > - Remota: automáticamente replicada en otra región de su elección.
 >
-> Las operaciones de **creación** y **restauración** en copias de seguridad remotas están totalmente soportadas a través de la API de OVHcloud, ofreciendo mayor flexibilidad y una integración facilitada en sus procesos de automatización.
+> Las operaciones de **creación** y **restauración** de una instancia desde un backup remoto son totalmente compatibles a través de la API OVHcloud, ofreciendo una mayor flexibilidad y una integración más sencilla en sus procesos de automatización.
 >
 > **Nota:** Estas operaciones no están disponibles aún desde el área de cliente de OVHcloud.
 

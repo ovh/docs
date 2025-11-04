@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie kopii zapasowej instancji'
 excerpt: 'Dowiedz się, jak utworzyć kopię zapasową instancji Public Cloud w Panelu klienta OVHcloud'
-updated: 2025-10-14
+updated: 2025-11-04
 ---
 
 <style>
@@ -47,7 +47,7 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 >
 > Każda kopia zapasowa jest rozliczana oddzielnie. Kopia zapasowa dystansowa zostanie rozliczona zgodnie z opłatami za przechowywanie danych w wybranej regionie dystansowej.
 >
-> Obecnie tworzenie kopii zapasowej dystansowej nie jest dostępne przez Panelu Klienta OVHcloud. Można to wykonać tylko za pomocą API OVHcloud i Openstack.
+> **Uwaga:** Local Zones nie są uprawnione do odległych kopii zapasowych.
 
 > [!tabs]
 > Przez Panelu Klienta OVHcloud
@@ -66,17 +66,31 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 >>
 >> ///
 >>
->> Nie można śledzić postępu kopii zapasowej w czasie rzeczywistym. Można jednak sprawdzić jej status w sekcji `Instance Backup`{.action} pod sekcją **Compute** w lewym menu, gdzie zostanie wyświetlony stan `Kopia zapasowa w trakcie`.
+>> /// details | Dystansowa kopia zapasowa
 >>
->> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>> Wprowadź nazwę kopii zapasowej. Przejrzyj informacje o cenach. Kliknij `Dodaj odległą kopię zapasową (Opcja)`{.action}, wprowadź nazwę dla odległej kopii zapasowej, wybierz region i kliknij `Potwierdź`{.action}
+>>
+>> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
+>>
+>> ///
+>>
+>> Nie jest możliwe monitorowanie postępu kopii zapasowej w czasie rzeczywistym. Jednak w sekcji `Instance Backup`{.action} pod **Compute** w lewym menu, podczas procesu będzie wyświetlany status `Kopia zapasowa w trakcie wykonywania`.
 >>
 >> Po zakończeniu kopii zapasowej będzie ona dostępna w sekcji `Instance Backup`{.action} pod sekcją **Compute** w lewym menu.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Przez API OVHcloud <a name="createinstanceviaapi"></a>
+>> Zaloguj się do [API OVHcloud](/links/console).
 >>
->> Zaloguj się do [API OVHcloud](/links/console) i użyj poniższego wywołania API:
+>> Możesz następnie wyświetlić listę wszystkich dostępnych regionów za pomocą poniższego wywołania API:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
+>> >
+>>
+>> Następnie użyj poniższego wywołania API:
 >>
 >> > [!api]
 >> >
@@ -109,6 +123,12 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> Możesz wyświetlić listę wszystkich dostępnych regionów za pomocą poniższego polecenia:
+>>
+>> ```bash
+>> $ openstack region list
 >> ```
 >>
 >> /// details | Lokalna kopia zapasowa
