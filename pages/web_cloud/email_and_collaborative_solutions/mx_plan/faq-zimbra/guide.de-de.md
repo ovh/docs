@@ -61,9 +61,9 @@ Besuchen Sie unsere Seite „[Zimbra-E-Mail-Adresse auf einem E-Mail-Client konf
 
 ///
 
-/// details | Wie kann ich mein Zimbra-Angebot ändern?
+/// details | Wie kann ich mein Zimbra Angebot wechseln?
 
-Ihre Anforderungen ändern sich: Sie möchten mehr Funktionen auf Ihrem Zimbra-Konto nutzen oder umgekehrt, Sie benötigen sie nicht mehr. Die Zimbra-Angebote sind flexibel. Folgen Sie den unten stehenden Anweisungen entsprechend Ihrer Situation:
+Ihre Anforderungen ändern sich und Sie möchten mehr Funktionen für Ihr Zimbra nutzen oder benötigen sie nicht mehr. Die Zimbra Angebote sind flexibel. Folgen Sie den unten stehenden Anweisungen entsprechend Ihrer Situation:
 
 **Möchten Sie auf ein höheres Angebot wechseln?**
 
@@ -71,8 +71,8 @@ Ihre Anforderungen ändern sich: Sie möchten mehr Funktionen auf Ihrem Zimbra-K
 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
 1. Klicken Sie auf `Zimbra Mail`{.action}.
 1. Klicken Sie auf `E-Mail-Konto`{.action}.
-1. Rechts neben dem E-Mail-Konto, für das Sie auf ein höheres Angebot wechseln möchten, klicken Sie auf `⁝`{.action}.
-1. Klicken Sie auf `Angebot ändern`{.action}.
+1. Rechts neben dem E-Mail-Account, den Sie auf ein höheres Angebot wechseln möchten, klicken Sie auf `⁝`{.action}.
+1. Klicken Sie auf `Angebot wechseln`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
@@ -84,8 +84,8 @@ Die Schritte sind dieselben wie für den Wechsel zu einem höheren Angebot (sieh
 >
 > Bevor Sie auf ein niedrigeres Angebot wechseln, stellen Sie sicher, dass folgende Punkte erfüllt sind:
 >
-> - Keine Dateien sind auf Ihrem Speichervolumen « Briefcase » gespeichert, wenn Sie auf das Angebot STARTER wechseln.
-> - Der Inhalt Ihres E-Mail-Kontos muss kleiner als 15 Go sein, wenn Sie auf das Angebot STARTER wechseln.
+> - Keine Dateien sind auf Ihrem Speichervolumen "Briefcase" gespeichert, wenn Sie auf das Angebot Starter wechseln.
+> - Der Inhalt Ihres E-Mail-Accounts muss weniger als 15 GB sein, wenn Sie auf das Angebot Starter wechseln.
 
 ///
 
