@@ -43,9 +43,9 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 > Zwei Arten von Sicherungen sind verfügbar:
 >
 > - *Local*: Eine lokale Sicherung wird in derselben Region wie Ihre Instanz gespeichert.
-> - *Distant*: Eine entfernte Sicherung erstellt automatisch eine Kopie der lokalen Sicherung in einer anderen von Ihnen ausgewählten Region.
+> - *Distant*: Eine Distanz-Sicherung erstellt automatisch eine Kopie der lokalen Sicherung in einer anderen, von Ihnen ausgewählten Region.
 >
-> Jede Sicherung wird gesondert berechnet. Die ferne Sicherung wird gemäß der Speicherplatzkosten der ausgewählten fernen Region berechnet.
+> Jede Sicherung wird gesondert berechnet. Die Distanz-Sicherung wird gemäß der Speicherplatzkosten der ausgewählten Region berechnet.
 >
 > **Hinweis:** Local Zones sind für entfernte Backups nicht geeignet.
 
@@ -68,13 +68,13 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >>
 >> /// details | Entferntes Backup
 >>
->> Geben Sie einen Namen für das Backup ein. Überprüfen Sie die Preisinformationen. Klicken Sie auf `Fern-Backup hinzufügen (Option)`{.action}, geben Sie einen Namen für das entfernte Backup ein, wählen Sie eine Region aus und klicken Sie auf `Bestätigen`{.action}
+>> Geben Sie einen Namen für das Backup ein. Überprüfen Sie die Preisinformationen. Klicken Sie auf `Fern-Backup hinzufügen (Option)`{.action}, geben Sie einen Namen für das Backup ein, wählen Sie eine Region aus und klicken Sie auf `Bestätigen`{.action}
 >>
 >> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
 >>
 >> ///
 >>
->> Es ist nicht möglich, den Fortschritt des Backups in Echtzeit zu überwachen. Allerdings wird im Bereich `Instance Backup`{.action} unter **Compute** im linken Menü während des Vorgangs der Status `Backup in Bearbeitung` angezeigt.
+>> Der Fortschritt der Sicherung kann nicht in Echtzeit verfolgt werden. Allerdings wird im Bereich `Instance Backup`{.action} unter **Compute** im linken Menü während des Vorgangs der Status `Backup in Bearbeitung` angezeigt.
 >>
 >> Nach Abschluss der Sicherung wird diese im Bereich `Instance Backup`{.action} unter dem Menüpunkt **Compute** im linken Menü angezeigt.
 >>
@@ -84,14 +84,14 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 >>
 >> Loggen Sie sich in die [OVHcloud API-Konsole](/links/console).
 >>
->> Sie können anschließend alle verfügbaren Regionen mit folgender API-Anfrage auflisten:
+>> Sie können anschließend alle verfügbaren Regionen mit folgendem API-Aufruf anzeigen:
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
 >> >
 >>
->> Verwenden Sie anschließend folgende API-Anfrage:
+>> Verwenden Sie anschließend folgenden API-Aufruf:
 >>
 >> > [!api]
 >> >
