@@ -1,7 +1,7 @@
 ---
 title: CLI - Manage access tokens
 excerpt: Learn how to create Application tokens with the ovhai CLI
-updated: 2023-05-11
+updated: 2025-11-06
 ---
 
 ## Objective

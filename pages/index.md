@@ -1282,7 +1282,7 @@
             + [Guides](public-cloud-quantum-computing-emulators-guides)
                 + [Quantum emulators - Getting started](public_cloud/quantum_computing/emulators/getting-started)
         + [QPUs](products/public-cloud-quantum-computing-qpu)
-            + [Guides](public-cloud-quantum-computing-qpu)
+            + [Guides](public-cloud-quantum-computing-qpu-guides)
                 + [QPUs - Getting started](public_cloud/quantum_computing/qpus/getting-started)
     + [Analytics](products/public-cloud-data-analytics)
         + [General information](products/public-cloud-data-analytics-general-information)

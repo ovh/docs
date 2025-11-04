@@ -1,7 +1,7 @@
 ---
 title: Quantum computing - Getting started with QPUs Notebooks
-excerpt: Learn how to bootstrap a Quantum Notebook
-updated: 2025-06-17
+excerpt: Learn how to set up a Quantum Notebook
+updated: 2025-11-06
 ---
 
 > [!warning]
@@ -57,7 +57,7 @@ Click the `Create a Notebook`{.action} button and follow the prompts to specify 
 >> 
 >> ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
 >> 
->> **1\. Notebook Name**
+>> **1\. Notebook name**
 >> 
 >> Give a name to your notebook. This will make it easier to manage when you have multiple Quantum Notebooks created.
 >> 
@@ -67,7 +67,7 @@ Click the `Create a Notebook`{.action} button and follow the prompts to specify 
 >> 
 >> ![Create a Notebook Control Panel manager 02](images/creating-a-notebook-using-UI-02.png){.thumbnail}
 >> 
->> **3\. Compute Resources**
+>> **3\. Compute resources**
 >> 
 >> Specify and adjust the type and amount of computing resources (CPU / GPU) for your Quantum Notebook. Use the `+`{.action} and `-`{.action} buttons to increase or decrease the number of CPUs and GPUs, depending on your needs.
 >> 
@@ -75,9 +75,9 @@ Click the `Create a Notebook`{.action} button and follow the prompts to specify 
 >> 
 >> ![Create a Notebook Control Panel manager 03](images/creating-a-notebook-using-UI-03.png){.thumbnail}
 >> 
->> **4\. Pre-configured Frameworks**
+>> **4\. Pre-configured frameworks**
 >> 
->> Choose the Quantum python framework you want to use, which will be pre-installed and ready to use when your notebook is launched. Select the version that suits your needs. Then, click the `Next`{.action} button to continue.
+>> Choose the Quantum Python framework you want to use, which will be pre-installed and ready to use when your notebook is launched. Select the version that suits your needs. Then, click the `Next`{.action} button to continue.
 >> 
 >> ![Create a Notebook Control Panel manager 04](images/creating-a-notebook-using-UI-04.png){.thumbnail}
 >> 
@@ -87,20 +87,20 @@ Click the `Create a Notebook`{.action} button and follow the prompts to specify 
 >> 
 >> ![Create a Notebook Control Panel manager 05](images/creating-a-notebook-using-UI-05.png){.thumbnail}
 >> 
->> **6\. Privacy Settings**
+>> **6\. Privacy settings**
 >> 
 >> Next, select your privacy settings and click the `Next`{.action} button.
 >> 
 >> > [!warning]
 >> >
->> > *Public access* will expose your data and code to anyone getting the Quantum Notebook link. Be careful and don't use it with sensitive data. On the other hand, *Restricted access* will ask a user and password combination or a Quantum token to access the Notebook content, ensuring a secure environment.
+>> > *Public access* will expose your data and code to anyone getting the Quantum Notebook link. Be careful not to use it with sensitive data. On the other hand, *Restricted access* will require a user and password combination or a Quantum token to access the Notebook content to ensure a secure environment.
 >> >
 >> 
 >> ![Create a Notebook Control Panel manager 06](images/creating-a-notebook-using-UI-06.png){.thumbnail}
 >> 
 >> **7\. Advanced configuration**
 >> 
->> By default, your Quantum Notebook comes with **ephemeral storage** (local storage). But in this step, you can also link Object Storage containers and Git repositories to your notebook, to easily access your remote data.
+>> By default, your Quantum Notebook comes with **ephemeral storage** (local storage). But in this step, you can also link Object Storage containers and Git repositories to your notebook to easily access your remote data.
 >> 
 >> If you want to learn more about configuring containers and Git repositories in the Notebook, you can refer to this [AI & Machine learning documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_data_ui). For now, we will launch a classic Notebook without any external volumes added to it.
 >> 
@@ -112,7 +112,7 @@ Click the `Create a Notebook`{.action} button and follow the prompts to specify 
 >> 
 >> **9\. Launch the Quantum Notebook**
 >> 
->> At the end of the process, review your settings and click the `Order now`{.action} button to confirm and launch the creation of your Notebook. You will be redirected to you notebook dashboard:
+>> At the end of the process, review your settings and click the `Order now`{.action} button to confirm and launch the creation of your Notebook. You will be redirected to your notebook dashboard:
 >> 
 ![Create a Notebook Control Panel manager 10](images/creating-a-notebook-using-UI-08b.png){.thumbnail}
 >> 
@@ -153,7 +153,7 @@ Click the `Create a Notebook`{.action} button and follow the prompts to specify 
 >>
 >> > [!warning]
 >> > 
->> > **Alpha Warning**: This package is currently in the **alpha phase** of development. The APIs and functionalities of the package may not be fully tested.
+>> > **Alpha version warning**: This package is currently in the **alpha phase** of development. The APIs and functionalities of the package may not be fully tested.
 >>
 >> 1. Create a bearer token from the *ovhai* CLI. For more detailed instructions on creating a token, check the [manage access tokens](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli) documentation.
 >> 2. Install the `ovhai` Python SDK and follow the instructions in the [ovhai PyPI](https://pypi.org/project/ovhai/) page to create a Quantum Notebook.
@@ -212,7 +212,6 @@ Click the `Create a Notebook`{.action} button and follow the prompts to specify 
 >> ```
 >>
 
-
 ### Accessing your Quantum Notebook
 
 Once your Quantum Notebook is created and running, you can access it using the `JupyterLab` link in the Quantum Notebooks board or through the `ovhai` CLI, Quantum API, or Python SDK.
@@ -240,7 +239,7 @@ Once your Quantum Notebook is created and running, you can access it using the `
 >>
 > **Using the Quantum API**
 >>
->> The `URL` of your Notebook should be displayed in the 'Response' panel:
+>> The `URL` of your Notebook should appear in the `Response` panel:
 >>
 >> ![Access a Notebook API](images/accessing-a-notebook-using-API.png){.thumbnail}
 >>
@@ -316,12 +315,11 @@ Enter your Public Cloud project user's username and password to log in to your Q
 
 Click the `Login with token` button and enter your access token to log in to your Quantum Notebook.
 
-![Notebook Authentication Token](images//notebook-authentication-token.png){.thumbnail}
-
+![Notebook Authentication Token](images/notebook-authentication-token.png){.thumbnail}
 
 ### Stopping a Quantum Notebook
 
-You can stop your Quantum Notebook at any time to release its compute resources. This will release its compute resources but will keep your Notebook data and installed libraries. Therefore, you will not incur any further charges for compute unless you restart the Notebook. However, attached storage will be billed at the price of OVHcloud Object Storage (consult the [Quantum Notebooks Billing documentation](/pages/public_cloud/quantum_computing/billing) for more information). To do so, follow these steps:
+You can stop your Quantum Notebook at any time to release its compute resources. This will keep your Notebook data and installed libraries. Therefore, you will not incur any further charges for compute unless you restart the Notebook. However, attached storage will be billed at the price of OVHcloud Object Storage (consult the [Quantum Notebooks Billing documentation](/pages/public_cloud/quantum_computing/billing) for more information). To do so, follow these steps:
 
 > [!tabs]
 > **Using the Control Panel (UI)**
@@ -448,11 +446,10 @@ The notebook must be stopped before deleting it. To delete a Notebook, follow th
 >> ```
 >>
 
-
 ## Going further
 
 - Discover how to access your Object Storage data and Git repositories from your Notebooks using the UI [here](/pages/public_cloud/ai_machine_learning/notebook_guide_data_ui).
-- Learn about the technical features, capabilities, and limitations of the Public Cloud Quantum Notebooks offer [here](/pages/public_cloud/quantum_computing/capabilities).
+- Learn about the technical features, capabilities, and limitations of the Public Cloud Quantum Notebooks offering [here](/pages/public_cloud/quantum_computing/capabilities).
 - Get some hints on how to debug your Notebooks if things go wrong [here](/pages/public_cloud/quantum_computing/troubleshooting).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
