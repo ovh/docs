@@ -1,7 +1,7 @@
 ---
 title: "OKMS - Aperçu de l'architecture"
 excerpt: "Découvrez comment nous gérons la sécurité de l'infrastructure OKMS"
-updated: 2025-10-24
+updated: 2025-11-04
 ---
 
 ## Objectif
@@ -85,6 +85,12 @@ L'emplacement de la sauvegarde dépend de l'emplacement du service OKMS.
 - **EU-WEST-LIM**
     - KMS Backup Region 1 : EU-WEST-LIM
     - KMS Backup Region 2 : EU-WEST-SBG
+- **EU-WEST-ERI**
+    - KMS Backup Region 1 : EU-WEST-GRA
+    - KMS Backup Region 2 : EU-WEST-SBG
+- **EU-CENTRAL-WAW**
+    - KMS Backup Region 1 : EU-WEST-GRA
+    - KMS Backup Region 2 : EU-WEST-SBG
 - **EU-SOUTH-MIL**
     - KMS Backup Region 1 : EU-WEST-GRA
     - KMS Backup Region 2 : EU-WEST-SBG
@@ -129,6 +135,8 @@ Les régions concernées par la certification PCI-DSS sont :
 - EU-WEST-SBG
 - EU-WEST-GRA
 - EU-WEST-LIM
+- EU-WEST-ERI
+- EU-CENTRAL-WAW
 - CA-EAST-BHS
 
 ## Aller plus loin
