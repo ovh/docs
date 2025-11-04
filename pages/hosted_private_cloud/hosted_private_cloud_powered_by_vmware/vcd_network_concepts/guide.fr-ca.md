@@ -1,7 +1,7 @@
 ---
 title: "Public VCF as-a-Service - Concepts réseaux et bonnes pratiques"
 excerpt: "Découvrez les puissantes capacités de mise en réseau de Public VCF as-a-Service avec ce guide complet sur les concepts et fonctionnalités clés"
-updated: 2025-03-03
+updated: 2025-11-04
 ---
 
 <style>
@@ -97,7 +97,6 @@ Voici un comparatif des 3 offres proposées par Public VCF as-a-Service.
 |:-----------------:|:---------------------------:|:------------:|
 | **Public VCF as-a-ServiceStandard.** |              -              |      -       |
 | **Public VCF as-a-ServiceAdvanced.** |              ✅              |       -      |
-| **Public VCF as-a-ServicePremium.**  |              ✅              |      ✅       |
 
 Les fonctionnalités de réseau avancé et de sécurité au sein de Public VCF as-a-Service ne sont disponibles que dans les offres **Advanced et Premium**.
 
