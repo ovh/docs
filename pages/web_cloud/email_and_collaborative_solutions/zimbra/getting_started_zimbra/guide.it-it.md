@@ -38,7 +38,7 @@ Con l'offerta Zimbra, OVHcloud ti propone una piattaforma di messaggeria collabo
     - [Modificare un dominio](#domains-modify)
 - [Account email](#emails)
     - [Crea un account email](#emails-create)
-    - [Cambiare piano](#emails-offer)
+    - [Modificare soluzione](#emails-offer)
 - [Visualizza il tuo account email](#emails-consult)
 - [Reindirizzamenti](#redirections)
 - [Alias](#alias)
@@ -221,16 +221,16 @@ Clicca su `Conferma`{.action} per avviare la creazione dell’account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Cambiare piano <a name="emails-offer"></a>
+### Modificare soluzione <a name="emails-offer"></a>
 
 È possibile cambiare piano per qualsiasi account Zimbra per un piano superiore o inferiore.
 
 1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
 1. Vai alla sezione `Web Cloud`{.action}.
 1. Clicca su `Zimbra Mail`{.action}.
-1. Clicca su `Account email`{.action}.
+1. Clicca sulla scheda `Account email`{.action}.
 1. A destra dell'account email per cui desideri passare a un piano superiore, clicca su `⁝`{.action}.
-1. Clicca su `Cambia piano`{.action}.
+1. Clicca su `Modificare soluzione`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
@@ -238,8 +238,8 @@ Clicca su `Conferma`{.action} per avviare la creazione dell’account.
 >
 > Prima di passare a un piano inferiore, assicurati dei seguenti punti:
 >
-> - Nessun file è archiviato sul tuo volume di archiviazione "Briefcase" se passi all'offerta STARTER.
-> - Il contenuto del tuo account email deve essere inferiore a 15 Go se passi all'offerta STARTER.
+> - Nessun file è archiviato sul tuo volume di archiviazione "Briefcase" se passi all'offerta Starter.
+> - Il contenuto del tuo account email deve essere inferiore a 15 Go se passi all'offerta Starter.
 
 ### Consultare il proprio account email <a name="mail-consult"></a>
 

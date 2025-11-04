@@ -169,7 +169,7 @@ Depuis l'onglet `Domaine`{.action} de votre service Zimbra, cliquez sur l'icône
     - **MX** : indispensable pour la réception de vos e-mails.
     - **SPF** : sécurité exigée par la majorité des serveurs e-mail destinataires pour légitimer les serveurs d'envoi e-mail d'OVHcloud avec votre nom de domaine.
     - **DKIM** : permet de mettre en place un système de signature pour chaque e-mail envoyé par votre service Zimbra. La signature est vérifiée par le destinataire à l'aide de la clé publique visible dans votre zone DNS.
-    - **SRV** : Facilite la configuration de votre compte Zimbra lorsque vous le configurez sur un logiciel de messagerie (Outlook, Mail pour Mac, Thunderbird, etc.).
+    - **SRV** : facilite la configuration de votre compte Zimbra lorsque vous le configurez sur un logiciel de messagerie (Outlook, Mail pour Mac, Thunderbird, etc.).
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500 .h400}
 
@@ -228,7 +228,7 @@ Il est possible de changer l'offre de n'importe quel compte Zimbra pour une offr
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 1. Cliquez sur `Zimbra Mail`{.action}.
-1. Cliquez sur `Compte email`{.action}.
+1. Cliquez sur l'onglet `Compte email`{.action}.
 1. À droite du compte e-mail pour lequel vous souhaitez basculer vers l'offre supérieure, cliquez sur `⁝`{.action}.
 1. Cliquez sur `Changer d'offre`{.action}.
 
@@ -238,8 +238,8 @@ Il est possible de changer l'offre de n'importe quel compte Zimbra pour une offr
 >
 > Avant de basculer vers une offre inférieure, assurez-vous des points suivants :
 >
-> - Aucun fichier n'est stocké sur votre volume de stockage « Breifcase » si vous changez vers l'offre STARTER.
-> - Le contenu de votre compte e-mail doit être inférieur à 15 Go si vous basculez vers l'offre STARTER.
+> - Aucun fichier n'est stocké sur votre volume de stockage « Breifcase » si vous changez vers l'offre Starter.
+> - Le contenu de votre compte e-mail doit être inférieur à 15 Go si vous basculez vers l'offre Starter.
 
 ### Consulter son compte e-mail <a name="emails-consult"></a>
 

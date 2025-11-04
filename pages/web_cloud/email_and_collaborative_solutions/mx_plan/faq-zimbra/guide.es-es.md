@@ -61,31 +61,31 @@ Consulte nuestra página "[Configurar una dirección de correo electrónico de Z
 
 ///
 
-/// details | ¿Cómo cambiar mi oferta Zimbra?
+/// details | ¿Cómo cambiar mi plan Zimbra?
 
-Sus necesidades cambian: desea beneficiarse de más funcionalidades en su cuenta Zimbra, o por el contrario, ya no las necesita. Las ofertas Zimbra son flexibles, siga las instrucciones que se detallan a continuación según su situación:
+Sus necesidades cambian: desea disfrutar de más funciones en su cuenta Zimbra o, por el contrario, ya no la necesita. Las ofertas Zimbra son flexibles, siga las instrucciones que se indican a continuación en función de su situación:
 
-**¿Desea cambiar a una oferta superior?**
+**¿Desea cambiar a un plan superior?**
 
 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
 1. Vaya a la sección `Web Cloud`{.action}.
 1. Haga clic en `Zimbra Mail`{.action}.
-1. Haga clic en `Cuenta de correo`{.action}.
-1. A la derecha de la cuenta de correo para la que desea cambiar a una oferta superior, haga clic en `⁝`{.action}.
-1. Haga clic en `Cambiar de oferta`{.action}.
+1. Haga clic en la pestaña `Cuenta de correo`{.action}.
+1. A la derecha de la cuenta de correo para la que desea cambiar a un plan superior, haga clic en `⁝`{.action}.
+1. Haga clic en `Cambiar de plan`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
-**¿Desea cambiar a una oferta inferior?**
+**¿Desea cambiar a un plan inferior?**
 
-Los pasos son los mismos que para el cambio a una oferta superior (detallado anteriormente).
+Los pasos son los mismos que para el cambio a un plan superior (detallado anteriormente).
 
 > [!warning]
 >
-> Antes de cambiar a una oferta inferior, asegúrese de los siguientes puntos:
+> Antes de cambiar a un plan inferior, asegúrese de los siguientes puntos:
 >
-> - No hay ningún archivo almacenado en su volumen de almacenamiento « Breifcase » si cambia a la oferta STARTER.
-> - El contenido de su cuenta de correo debe ser inferior a 15 Go si cambia a la oferta STARTER.
+> - No hay ningún archivo almacenado en su volumen de almacenamiento "Breifcase" si cambia a el plan Starter.
+> - El contenido de su cuenta de correo debe ser inferior a 15 Go si cambia a el plan Starter.
 
 ///
 

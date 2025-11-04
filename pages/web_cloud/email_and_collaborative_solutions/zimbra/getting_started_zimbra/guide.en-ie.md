@@ -38,7 +38,7 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
     - [Modify a domain name](#domains-modify)
 - [Email accounts](#emails)
     - [Create an email account](#emails-create)
-    - [Change offer](#emails-offer)
+    - [Change plan](#emails-offer)
 - [Check your email account](#emails-consult)
 - [Redirections](#redirections)
 - [Alias](#alias)
@@ -221,25 +221,25 @@ Click `Confirm`{.action} to start creating the account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Change offer <a name="emails-offer"></a>
+### Change plan <a name="emails-offer"></a>
 
-It is possible to change the offer of any Zimbra account to a higher or lower offer.
+It is possible to upgrade or downgrade any Zimbra account.
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 1. Go to the `Web Cloud`{.action} section.
 1. Click on `Zimbra Mail`{.action}.
-1. Click on `Email account`{.action}.
-1. To the right of the email account for which you want to switch to a higher offer, click on `⁝`{.action}.
-1. Click on `Change offer`{.action}.
+1. Click on the `Email account`{.action} tab.
+1. To the right of the email account for which you want to switch to a higher plan, click on `⁝`{.action}.
+1. Click on `Change plan`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
 > [!warning]
 >
-> Before switching to a lower offer, make sure the following points:
+> Before switching to a lower plan, make sure the following points:
 >
-> - No file is stored on your storage volume "Briefcase" if you are switching to the STARTER offer.
-> - The content of your email account must be less than 15 GB if you are switching to the STARTER offer.
+> - No file is stored on your storage volume "Briefcase" if you are switching to the Starter plan.
+> - The content of your email account must be less than 15 GB if you are switching to the Starter plan.
 
 ### View your email account <a name="mail-consult"></a>
 

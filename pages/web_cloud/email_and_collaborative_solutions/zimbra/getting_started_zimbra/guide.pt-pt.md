@@ -38,7 +38,7 @@ Com a oferta Zimbra, a OVHcloud propõe-lhe uma plataforma de mensagens colabora
     - [Editar um domínio](#domains-modify)
 - [Contas de e-mail](#emails)
     - [Criar uma conta de e-mail](#emails-create)
-    - [Alterar a oferta](#emails-offer)
+    - [Mudar de oferta](#emails-offer)
 - [Consultar a respetiva conta de e-mail](#emails-consult)
 - [Reencaminhamentos](#redirections)
 - [alias](#alias)
@@ -169,7 +169,7 @@ No separador `Domínio`{.action} do seu serviço Zimbra, clique no ícone «&#82
     - **MX**: indispensável para a receção dos seus e-mails.
     - **SPF**: segurança exigida pela maioria dos servidores de e-mail de destino para legitimar os servidores de envio de e-mail da OVHcloud com o seu nome de domínio.
     - **DKIM**: permite implementar um sistema de assinatura para cada e-mail enviado pelo seu serviço Zimbra. A assinatura é verificada pelo destinatário graças à chave pública visível na sua zona DNS.
-     - **SRV** : Facilita a configuração da sua conta Zimbra quando a configura em um software de mensagens (Outlook, Mail para Mac, Thunderbird, etc.).
+     - **SRV** : facilita a configuração da sua conta Zimbra quando a configura em um software de mensagens (Outlook, Mail para Mac, Thunderbird, etc.).
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
@@ -221,16 +221,16 @@ Clique em `Confirmar`{.action} para lançar a criação da conta.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Alterar a oferta <a name="emails-offer"></a>
+### Mudar de oferta <a name="emails-offer"></a>
 
 É possível alterar a oferta de qualquer conta Zimbra para uma oferta superior ou inferior.
 
 1. Inicie sessão na sua [área de cliente OVHcloud](/links/manager).
 1. Dirija-se à secção `Web Cloud`{.action}.
 1. Clique em `Zimbra Mail`{.action}.
-1. Clique em `Compte email`{.action}.
+1. Clique no separador `Conta de e-mail`{.action}.
 1. À direita da conta de correio electrónico para a qual pretende passar para uma oferta superior, clique em `⁝`{.action}.
-1. Clique em `Changer d'offre`{.action}.
+1. Clique em `Mudar de oferta`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
@@ -238,8 +238,8 @@ Clique em `Confirmar`{.action} para lançar a criação da conta.
 >
 > Antes de passar para uma oferta inferior, certifique-se dos seguintes pontos :
 >
-> - Nenhum ficheiro está armazenado no seu volume de armazenamento « Breifcase » se mudar para a oferta STARTER.
-> - O conteúdo da sua conta de correio electrónico deve ser inferior a 15 Go se mudar para a oferta STARTER.
+> - Nenhum ficheiro está armazenado no seu volume de armazenamento « Breifcase » se mudar para a oferta Starter.
+> - O conteúdo da sua conta de correio electrónico deve ser inferior a 15 Go se mudar para a oferta Starter.
 
 ### Consultar a conta de e-mail <a name="mail-consult"></a>
 

@@ -61,31 +61,31 @@ Visit our page “[Configuring your Zimbra email address in an email client](/pa
 
 ///
 
-/// details | How to change my Zimbra offer ?
+/// details | How to change my Zimbra plan ?
 
-Your needs change: you want to benefit from more features on your Zimbra account, or on the contrary, you no longer need them. Zimbra offers are flexible, follow the instructions below depending on your situation:
+Your needs are changing: you want to benefit from more features on your Zimbra account, or, conversely, you no longer need it. Zimbra plans are flexible, so follow the instructions below according to your situation:
 
-**Do you want to switch to a higher offer ?**
+**Want to upgrade to a higher plan?**
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 1. Go to the `Web Cloud`{.action} section.
 1. Click on `Zimbra Mail`{.action}.
-1. Click on `Email account`{.action}.
+1. Click on the `Email account`{.action} tab.
 1. To the right of the email account for which you want to switch to a higher offer, click on `⁝`{.action}.
-1. Click on `Change offer`{.action}.
+1. Click on `Change plan`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
-**Do you want to switch to a lower offer ?**
+**Would you like to downgrade?**
 
-The steps are the same as for switching to a higher offer (detailed above).
+The steps are the same as for upgrading (detailed above).
 
 > [!warning]
 >
-> Before switching to a lower offer, make sure the following points:
+> Before switching to a lower plan, please ensure the following:
 >
-> - No file is stored on your storage volume "Briefcase" if you are switching to the STARTER offer.
-> - The content of your email account must be less than 15 GB if you are switching to the STARTER offer.
+> - No files are stored on your "Briefcase" storage volume if you are switching to the Starter plan.
+> - The content of your email account must be less than 15 GB if you are switching to the Starter plan.
 
 ///
 

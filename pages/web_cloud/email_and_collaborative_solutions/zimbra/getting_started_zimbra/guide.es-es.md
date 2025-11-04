@@ -38,7 +38,7 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
     - [Modificar un dominio](#domains-modify)
 - [Cuentas de correo electrónico](#emails)
     - [Crear una cuenta de correo electrónico](#emails-create)
-    - [Cambiar de oferta](#emails-offer)
+    - [Cambiar de plan](#emails-offer)
 - [Consultar la cuenta de correo](#emails-consult)
 - [Redirecciones](#redirections)
 - [Alias](#alias)
@@ -166,7 +166,7 @@ En la pestaña `Dominio`{.action} del servicio Zimbra, haga clic en el icono &#8
 
 - Haga clic en `Configurar`{.action} para modificar la organización asociada a su dominio.
 - Haga clic en `Diagnósticos`{.action} para ver la interfaz de diagnóstico de los registros DNS del dominio. Es necesario asegurarse de que no se muestran alertas para cada uno de los registros DNS mencionados en las fichas. Siga las instrucciones detalladas en cada ficha de alertas para configurar los registros DNS:
-    - **MX**: indispensable para recibir mensajes de correo.
+    - **MX**: Indispensable para recibir mensajes de correo.
     - **SPF**: Seguridad requerida por la mayoría de los servidores de correo de destino para legitimar los servidores de envío de correo de OVHcloud con su dominio.
     - **DKIM**: Permite implementar un sistema de firma para cada mensaje de correo electrónico enviado por su servicio Zimbra. El destinatario comprueba la firma con la clave pública visible en la zona DNS.
      - **SRV** : Facilita la configuración de su cuenta Zimbra cuando la configura en un software de mensajería (Outlook, Mail para Mac, Thunderbird, etc.).
@@ -221,25 +221,25 @@ Haga clic en `Confirmar`{.action} para crear la cuenta.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Cambiar de oferta <a name="emails-offer"></a>
+### Cambiar de plan <a name="emails-offer"></a>
 
-Es posible cambiar la oferta de cualquier cuenta Zimbra por una oferta superior o inferior.
+Es posible cambiar el plan de cualquier cuenta Zimbra por un plan superior o inferior.
 
 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
 1. Vaya a la sección `Web Cloud`{.action}.
 1. Haga clic en `Zimbra Mail`{.action}.
-1. Haga clic en `Cuenta de correo`{.action}.
-1. A la derecha de la cuenta de correo para la que desea cambiar a una oferta superior, haga clic en `⁝`{.action}.
-1. Haga clic en `Cambiar de oferta`{.action}.
+1. Haga clic en la pestaña `Cuenta de correo`{.action}.
+1. A la derecha de la cuenta de correo para la que desea cambiar a un plan superior, haga clic en `⁝`{.action}.
+1. Haga clic en `Cambiar de plan`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
 > [!warning]
 >
-> Antes de cambiar a una oferta inferior, asegúrese de los siguientes puntos:
+> Antes de cambiar a un plan inferior, asegúrese de los siguientes puntos:
 >
-> - No hay ningún archivo almacenado en su volumen de almacenamiento « Breifcase » si cambia a la oferta STARTER.
-> - El contenido de su cuenta de correo debe ser inferior a 15 Go si cambia a la oferta STARTER.
+> - No hay ningún archivo almacenado en su volumen de almacenamiento "Breifcase" si cambia a el plan Starter.
+> - El contenido de su cuenta de correo debe ser inferior a 15 Go si cambia a el plan Starter.
 
 ### Consultar su cuenta de correo <a name="mail-consult"></a>
 

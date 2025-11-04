@@ -228,7 +228,7 @@ Można zmienić ofertę dowolnego konta Zimbra na wyższą lub niższą ofertę.
 1. Zaloguj się do [panelu klienta OVHcloud](/links/manager).
 1. Przejdź do sekcji `Web Cloud`{.action}.
 1. Kliknij `Zimbra Mail`{.action}.
-1. Kliknij `Adres e-mail`{.action}.
+1. Kliknij zakładkę `Konto e-mail`{.action}.
 1. Po prawej stronie konta e-mail, dla którego chcesz przejść na wyższą ofertę, kliknij `⁝`{.action}.
 1. Kliknij `Zmień ofertę`{.action}.
 
@@ -238,8 +238,8 @@ Można zmienić ofertę dowolnego konta Zimbra na wyższą lub niższą ofertę.
 >
 > Przed przejściem na niższą ofertę upewnij się, że:
 >
-> - Na Twoim wolumenie magazynowym „Briefcase” nie ma żadnych plików, jeśli zmieniasz ofertę na STARTER.
-> - Zawartość Twojego konta e-mail musi być mniejsza niż 15 Go, jeśli przechodzisz na ofertę STARTER.
+> - Na Twoim wolumenie magazynowym "Briefcase" nie ma żadnych plików, jeśli zmieniasz ofertę na Starter.
+> - Zawartość Twojego konta e-mail musi być mniejsza niż 15 Go, jeśli przechodzisz na ofertę Starter.
 
 ### Sprawdź konto e-mail <a name="mail-consult"></a>
 

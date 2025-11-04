@@ -70,9 +70,9 @@ I tuoi bisogni cambiano: desideri disporre di funzionalità aggiuntive sul tuo a
 1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
 1. Vai alla sezione `Web Cloud`{.action}.
 1. Clicca su `Zimbra Mail`{.action}.
-1. Clicca su `Account email`{.action}.
+1. Clicca sulla scheda `Account email`{.action}.
 1. A destra dell'account email per cui desideri passare a un piano superiore, clicca su `⁝`{.action}.
-1. Clicca su `Cambia piano`{.action}.
+1. Clicca su `Modificare soluzione`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
@@ -84,8 +84,8 @@ Le fasi sono le stesse del cambio a un piano superiore (dettagliate sopra).
 >
 > Prima di passare a un piano inferiore, assicurati dei seguenti punti:
 >
-> - Nessun file è archiviato sul tuo volume di archiviazione "Briefcase" se passi all'offerta STARTER.
-> - Il contenuto del tuo account email deve essere inferiore a 15 Go se passi all'offerta STARTER.
+> - Nessun file è archiviato sul tuo volume di archiviazione "Briefcase" se passi all'offerta Starter.
+> - Il contenuto del tuo account email deve essere inferiore a 15 Go se passi all'offerta Starter.
 
 ///
 
