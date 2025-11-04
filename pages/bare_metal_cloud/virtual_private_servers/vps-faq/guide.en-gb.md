@@ -367,11 +367,8 @@ To do this, please refer to our guide on [how to secure a VPS](/pages/bare_metal
 There are several options available, for example:
 
 - Download via SFTP: Connect to your VPS with a software client capable of SFTP (for example [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), then transfer all files in the system's root directory.
-
 - Download via `rsync` (command line tool): Use the command `rsync -avz -e ssh username@vps_ip_address:/ /local_directory/` to download all files and folders from your VPS.
-
 - Download via the option **Automated Backup**: Follow our guide on [how to use automated backups on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) to download files from a backup.
-
 - Download via the option **Snapshot**: Follow our guide on [how to use snapshots on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps) to download a VPS snapshot.
 
 ///
@@ -431,9 +428,7 @@ To verify that your IP address is authorized, use the following call:
 Although OVHcloud applies security measures to protect the entire infrastructure, the administrator of a VPS is responsible for the security of the applications and data hosted on it.
 
 - Follow our guide on [how to configure the OVHcloud Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) which is integrated in our Anti-DDoS infrastructure, limiting the exposure of your services to DDoS attacks.
-
 - In addition, you can use our guides on [how to configure your own firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) with `iptables` on Linux-based distributions and [how to enable the firewall on Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
-
 - For Linux-based distributions on a VPS, you can follow the instructions in our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) to apply additional security measures.
 
 ///

@@ -368,11 +368,8 @@ Para isso, consulte nosso guia sobre [como proteger um VPS](/pages/bare_metal_cl
 Existem várias opções disponíveis, por exemplo:
 
 - Baixar via SFTP: Conecte-se ao seu VPS com um cliente de software capaz de SFTP (por exemplo, [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), depois transfira todos os arquivos no diretório raiz do sistema.
-
 - Baixar via `rsync` (ferramenta de linha de comando): Use o comando `rsync -avz -e ssh username@vps_ip_address:/ /local_directory/` para baixar todos os arquivos e pastas do seu VPS.
-
 - Baixar via a opção **Backup Automático**: Siga nosso guia sobre [como usar backups automáticos em um VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) para baixar arquivos de um backup.
-
 - Baixar via a opção **Snapshot**: Siga nosso guia sobre [como usar snapshots em um VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps) para baixar um snapshot do VPS.
 
 ///
@@ -432,9 +429,7 @@ Para verificar se seu endereço IP está autorizado, use a seguinte chamada:
 Embora a OVHcloud aplique medidas de segurança para proteger toda a infraestrutura, o administrador de um VPS é responsável pela segurança das aplicações e dados hospedados nele.
 
 - Siga nosso guia sobre [como configurar a firewall da OVHcloud Edge Network](/pages/bare_metal_cloud/dedicated_servers/firewall_network), integrada em nossa infraestrutura Anti-DDoS, limitando a exposição dos seus serviços a ataques DDoS.
-
 - Além disso, você pode usar nossos guias sobre [como configurar sua própria firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) com `iptables` em distribuições baseadas em Linux e [como ativar a firewall no Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
-
 - Para distribuições baseadas em Linux em um VPS, você pode seguir as instruções em nosso guia sobre [como proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) para aplicar medidas de segurança adicionais.
 
 ///

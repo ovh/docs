@@ -367,11 +367,8 @@ W tym celu zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](/pages/bar
 Istnieje kilka możliwości, na przykład:
 
 - Pobranie przez SFTP: Połącz się z prywatnym serwerem wirtualnym za pomocą klienta programowego dysponującego dostępem SFTP (na przykład [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), następnie prześlij wszystkie pliki z katalogu głównego systemu.
-
 - Pobierz za pomocą `rsync` (narzędzie wiersza poleceń): Wpisz polecenie `rsync -avz -e ssh nazwa użytkownika@vps_ip_address:/ /local_directory/`, aby pobrać z Twojego serwera VPS wszystkie pliki i foldery.
-
 - Pobierz za pomocą opcji **Automatyczne kopie zapasowe**: Zapoznaj się z przewodnikiem [Jak korzystać ze zautomatyzowanych kopii zapasowych na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps), aby pobrać pliki z kopii zapasowej.
-
 - Pobierz za pomocą opcji **Snapshot**: Zapoznaj się z przewodnikiem [Jak korzystać z Snapshotów na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps), aby pobrać snapshot z serwera VPS.
 
 ///
@@ -431,9 +428,7 @@ Aby sprawdzić, czy adres IP jest dozwolony, użyj następującego wywołania:
 Chociaż OVHcloud stosuje środki bezpieczeństwa w celu ochrony całej infrastruktury, administrator serwera VPS jest odpowiedzialny za bezpieczeństwo aplikacji i danych na nim hostowanych.
 
 - Zapoznaj się z przewodnikiem [Aktywacja i konfiguracja Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network), który jest zintegrowany z naszą infrastrukturą Anty-DDoS, ograniczając ekspozycję Twoich usług na ataki DDoS.
-
 - Ponadto, zapoznaj się z naszymi przewodnikami dotyczącymi [jak skonfigurować własny firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) z `iptable` dla dystrybucji opartych na systemie Linux oraz [jak włączyć firewall w systemie Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
-
 - W przypadku dystrybucji opartych na systemie Linux na serwerze VPS należy postępować zgodnie z instrukcjami zawartymi w przewodniku [How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), aby zastosować dodatkowe środki bezpieczeństwa.
 
 ///
