@@ -30,7 +30,7 @@ Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre 
 - File Injections auf Ihrem Hosting
 - SQL oder XSS Injection
 
-**Erfahren Sie, wie Sie die Anwendungsfirewall in Ihrem OVHcloud Kundencenter aktivieren können, um eine verbesserte Schutzfunktion zu erhalten.**
+**Diese Anleitung erklärt, wie Sie die Application Firewall in Ihrem OVHcloud Kundencenter aktivieren können, um eine verbesserte Schutzfunktion zu erhalten.**
 
 > [!primary]
 >
@@ -44,11 +44,11 @@ Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre 
 
 ## In der praktischen Anwendung
 
-**Klicken Sie auf die untenstehenden Titel, um die Erklärungen anzuzeigen.**
+**Klicken Sie auf die Titel, um die Erklärungen anzuzeigen.**
 
-/// details | Anwendungsfirewall für die gesamte Webhosting-Konfiguration in PHP aktivieren
+/// details | Application Firewall für die gesamte Webhosting-Konfiguration in PHP aktivieren
 
-Klicken Sie auf die untenstehenden Registerkarten, um nacheinander jede der **4** Schritte anzuzeigen.
+Klicken Sie auf die nachfolgenden Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -69,7 +69,7 @@ Klicken Sie auf die untenstehenden Registerkarten, um nacheinander jede der **4*
 >>
 >> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 >>
->> Klicken Sie auf den Button `...`{.action} rechts neben der Bezeichnung **VGlobale PHP-Version** und anschließend auf `Konfiguration ändern`{.action}.
+>> Klicken Sie auf den Button `...`{.action} rechts neben **Globale PHP-Version** und anschließend auf `Konfiguration ändern`{.action}.
 >>
 > **Schritt 4**
 >>
@@ -81,9 +81,9 @@ Klicken Sie auf die untenstehenden Registerkarten, um nacheinander jede der **4*
 
 ///
 
-/// details | Anwendungsfirewall nur für einen bestimmten Domainnamen oder Unterdomain aktivieren
+/// details | Application Firewall nur für einen bestimmten Domainnamen oder Subdomain aktivieren
 
-Klicken Sie auf die untenstehenden Registerkarten, um nacheinander jede der **5** Schritte anzuzeigen.
+Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -100,31 +100,31 @@ Klicken Sie auf die untenstehenden Registerkarten, um nacheinander jede der **5*
 >>
 > **Schritt 3**
 >>
->> Klicken Sie auf den Tab `Mes sites`{.action}.
+>> Klicken Sie auf den Tab `Meine Websites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
 > **Schritt 4**
 >>
->> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Unterdomains anzuzeigen.
+>> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem gewünschten Domainnamen oder Unterdomain und dann auf `Domain bearbeiten`{.action}.
+>> Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem gewünschten Domainnamen oder Subdomain und dann auf `Domain bearbeiten`{.action}.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Schritt 5**
 >>
->> Im Konfigurationsfenster aktivieren Sie das Feld `Firewall aktivieren`{.action}. Sie können auch die Unterdomain `www` in diese Konfiguration einbeziehen, indem Sie das entsprechende Feld oben ankreuzen (sofern diese ebenfalls auf der gleichen Website deklariert ist).
+>> Im Konfigurationsfenster aktivieren Sie das Feld `Firewall aktivieren`{.action}. Sie können auch die Subdomain `www` in diese Konfiguration einbeziehen, indem Sie das entsprechende Feld oben ankreuzen (sofern diese ebenfalls auf der gleichen Website deklariert ist).
 >>
 >> ![Modify a domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action} und anschließend auf `Bestätigen`{.action}, um die Änderung der Einstellungen zu bestätigen.
 >>
->> Sobald die Firewall für Ihren Domainnamen oder Unterdomain aktiviert ist, wird die Bezeichnung **Aktiviert** in der Spalte **Firewall** angezeigt.
+>> Sobald die Firewall für Ihren Domainnamen oder Subdomain aktiviert ist, wird die Bezeichnung **Aktiviert** in der Spalte **Firewall** angezeigt.
 >>
->> Falls die Bezeichnung **Aktiviert** nach einigen Minuten nicht in der entsprechenden Zeile des Domainnamens oder Unterdomain angezeigt wird, laden Sie die Seite erneut.
+>> Falls die Bezeichnung **Aktiviert** nach einigen Minuten nicht in der entsprechenden Zeile des Domainnamens oder Subdomain angezeigt wird, laden Sie die Seite erneut.
 
 ## Weiterführende Informationen
 
