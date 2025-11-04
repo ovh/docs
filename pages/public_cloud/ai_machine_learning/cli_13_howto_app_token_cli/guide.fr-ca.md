@@ -1,7 +1,7 @@
 ---
 title: "CLI - Se servir des tokens d'accès (EN)"
 excerpt: "Découvrez comment créer des tokens d'accès avec la CLI ovhai"
-updated: 2023-05-11
+updated: 2025-11-06
 ---
 
 ## Objective
@@ -21,11 +21,13 @@ If you need any help while creating a new token, run `ovhai token create --help`
 ``` {.console}
 Usage: ovhai token create [OPTIONS] --role <ROLE> <NAME>
 
+Create an application token
+
 Arguments:
   <NAME>  Token's name
 
 Options:
-  -r, --role <ROLE>                  Operator role gives all access, read role only allow to access job's APIs [possible values: read, operator]
+  -r, --role <ROLE>                  Operator role gives all access, read role only allow to access job's APIs. DEPRECATED VALUES: "read", "operator" => replaced by "ai_training_read", "ai_training_operator" [possible values: read, operator, ai_training_read, ai_training_operator, quantum_operator, quantum_reader]
       --token <TOKEN>                Authentication using Token rather than OAuth
   -l, --label-selector <name=value>  Only jobs with this label's name and value will be accessible using this token
   -o, --output <OUTPUT>              Command output format [possible values: json, yaml, description]

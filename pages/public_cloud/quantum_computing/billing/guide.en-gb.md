@@ -1,7 +1,7 @@
 ---
 title: Quantum computing - Billing and lifecycle
 excerpt: Learn how we bill Quantum Notebooks
-updated: 2025-06-17
+updated: 2025-11-06
 ---
 
 > [!warning]
@@ -51,7 +51,7 @@ Here is a detailed graph that illustrates every step that is billed or not durin
 
 During the notebook creation, you can select **compute resources**, known as CPUs or GPUs. Their official pricing is available in the [OVHcloud Control Panel](/links/manager) or on the [OVHcloud Public Cloud website](/links/public-cloud/prices).
 
-When your program needs to access to the remote QPU. QPU time is charged by the second. You will only be charged for your QPU usage time.
+When your program needs to access to the remote QPU, QPU time is charged by the second. You will only be charged for your QPU usage time.
 
 Rates for compute are mentioned per hour to facilitate reading of the prices, but the billing granularity remains **per minute**.
 
