@@ -144,42 +144,52 @@ public-cloud-containers-orchestration-managed-rancher-service-resources: Resourc
 public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
 public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
 public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
-public-cloud-data-analytics: Analytics
-public-cloud-data-analytics-general-information: Informations générales
-public-cloud-data-analytics-general-guides: Guides généraux
-public-cloud-databases: Bases de données Public Cloud
-public-cloud-databases-general-information: Informations générales
-public-cloud-databases-general-guides: Guides généraux
-public-cloud-databases-mongodb: MongoDB
-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
-public-cloud-databases-mongodb-guides: MongoDB - User guides
+public-cloud-databases-cassandra-guides: Cassandra - Guides
+public-cloud-databases-cassandra: Cassandra
+public-cloud-databases-common-configuration: Configuration
+public-cloud-databases-common-getting-started: Premiers pas
+public-cloud-databases-common-key-concepts: Concepts clés
+public-cloud-databases-common-migration: Migration
+public-cloud-databases-common-security: Sécurité
+public-cloud-databases-common-troubleshooting: Diagnostic
+public-cloud-databases-common: Commun
 public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
-public-cloud-databases-mysql: MySQL
+public-cloud-databases-mongodb-getting-started: MongoDB - Premiers pas
+public-cloud-databases-mongodb-guides: MongoDB - Guides utilisateur
+public-cloud-databases-mongodb-tutorials: MongoDB - Tutoriels
+public-cloud-databases-mongodb: MongoDB
 public-cloud-databases-mysql-guides: MySQL - Guides
 public-cloud-databases-mysql-tutorials: MySQL - Tutoriels
-public-cloud-databases-postgresql: PostgreSQL
+public-cloud-databases-mysql: MySQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
-public-cloud-databases-valkey: Valkey
+public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-valkey-guides: Valkey - Guides
 public-cloud-databases-valkey-tutorials: Valkey - Tutoriels
-public-cloud-data-analytics-grafana: Dashboards
+public-cloud-databases-valkey: Valkey
+public-cloud-databases: Bases de données Public Cloud
+public-cloud-data-analytics-common-configuration: Configuration
+public-cloud-data-analytics-common-getting-started: Premiers pas
+public-cloud-data-analytics-common-key-concepts: Concepts clés
+public-cloud-data-analytics-common-migration: Migration
+public-cloud-data-analytics-common-security: Sécurité
+public-cloud-data-analytics-common-troubleshooting: Diagnostic
+public-cloud-data-analytics-common: Commun
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutoriels
-public-cloud-data-analytics-kafka: Kafka
+public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
+public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
 public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
 public-cloud-data-analytics-kafka-getting-started: Kafka - Premiers pas
 public-cloud-data-analytics-kafka-guides: Kafka - Guides utilisateur
+public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
 public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
 public-cloud-data-analytics-kafka-tutorials: Kafka - Tutoriels
-public-cloud-databases-cassandra: Cassandra
-public-cloud-databases-cassandra-guides: Cassandra - Guides
+public-cloud-data-analytics-kafka: Kafka
+public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
-public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
+public-cloud-data-analytics: Analytics
 public-cloud-compute: Compute
 public-cloud-compute-getting-started: Premiers pas
 public-cloud-compute-general-information: Informations générales
