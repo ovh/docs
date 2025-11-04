@@ -97,7 +97,6 @@ Voici un comparatif des 3 offres proposées par Public VCF as-a-Service.
 |:-----------------:|:---------------------------:|:------------:|
 | **Public VCF as-a-ServiceStandard.** |              -              |      -       |
 | **Public VCF as-a-ServiceAdvanced.** |              ✅              |       -      |
-| **Public VCF as-a-ServicePremium.**  |              ✅              |      ✅       |
 
 Les fonctionnalités de réseau avancé et de sécurité au sein de Public VCF as-a-Service ne sont disponibles que dans les offres **Advanced et Premium**.
 
