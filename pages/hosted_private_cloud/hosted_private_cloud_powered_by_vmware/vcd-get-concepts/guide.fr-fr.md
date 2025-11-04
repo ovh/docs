@@ -1,7 +1,7 @@
 ---
 title: "Public VCF as-a-Service - Les concepts fondamentaux de Public VCF as-a-Service"
 excerpt: "Decouvrez les concepts fondamentaux de Public VCF as-a-Service"
-updated: 2024-12-19
+updated: 2025-11-04
 ---
 
 ## Objectif
@@ -57,7 +57,6 @@ Les membres autorisés au sein d'une organisation peuvent accéder à ces catalo
 De plus, les administrateurs d'organisation ont la capacité de copier des éléments provenant de catalogues publics dans le catalogue spécifique à leur organisation.
 
 <a name="key-features"></a>
-
 
 ### Fonctionnalités de Public VCF as-a-Service chez OVHcloud
 

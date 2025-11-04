@@ -1,7 +1,7 @@
 ---
 title: "Public VCF as-a-Service - The fundamentals of Public VCF as-a-Service"
 excerpt: "Discover the basic concepts of Public VCF as-a-Service"
-updated: 2024-12-19
+updated: 2025-11-04
 ---
 
 ## Objective
@@ -66,7 +66,6 @@ Below is a comparison of the features provided by OVHcloud on its 3 Public VCF a
 |:------------:|:---------------------------:|:------------:|
 |Public VCF as-a-Service Standard |              -              |       -      |
 |Public VCF as-a-Service Advanced |              ✅              |       -      |
-|Public VCF as-a-Service Premium  |              ✅              |       ✅      |
 
 #### Cluster Management
 
@@ -83,65 +82,64 @@ Below is a comparison of the features provided by OVHcloud on its 3 Public VCF a
 
 ##### Virtual Machine Management
 
-|         Features        	| Standard 	| Advanced 	| Premium 	|                                    Comments                                   	|
-|:-----------------------:	|:--------:	|:--------:	|:-------:	|:-----------------------------------------------------------------------------:	|
-|        Create VM        	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
-| Manage Virtual Machines 	|     ✅    	|     ✅    	|    ✅    	|                  Start, Stop, Suspend, Delete, Copy/clone...                  	|
-|      Affinity Rules     	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
-|   Anti-Affinity Rules   	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
-|    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged software solutions  	                    |
-|    Create VM catalogs   	|     ✅    	|     ✅     |    ✅     	|                     Build your own catalog of VM templates                    	|
+|         Features        	| Standard 	| Advanced 	|                                    Comments                                   	|
+|:-----------------------:	|:--------:	|:--------:	|:-----------------------------------------------------------------------------:	|
+|        Create VM        	|     ✅    	|     ✅    	|                                                                               	|
+| Manage Virtual Machines 	|     ✅    	|     ✅    	|                  Start, Stop, Suspend, Delete, Copy/clone...                  	|
+|      Affinity Rules     	|     ✅    	|     ✅    	|                                                                               	|
+|   Anti-Affinity Rules   	|     ✅    	|     ✅    	|                                                                              	|
+|    VMware Marketplace   	|     ✅    	|     ✅     | Allowed to deploy VMs with pre-packaged software solutions  	                    |
+|    Create VM catalogs   	|     ✅    	|     ✅     |                     Build your own catalog of VM templates                    	|
 
 #### Organisation / Virtual Datacenter Management
 
-|               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
-|:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
-|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Manage users in a Public VCF as-a-Service           	|
-| Identity Provider Integration - SSO 	|          	|          	|         	| In Roadmap (via OVHcloud uIAM service)                                                                  	|
-| vCPU over-allocation                	|         	|        	|       	| In Roadmap - Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
+|               Features              	| Standard 	| Advanced 	|                                                 Comments                                                	|
+|:-----------------------------------:	|:--------:	|:--------:	|:-------------------------------------------------------------------------------------------------------:	|
+|           User Management           	|     ✅    	|     ✅    	|            Manage users in a Public VCF as-a-Service           	|
+| Identity Provider Integration - SSO 	|     ⏳    	|     ⏳    	| In Roadmap (via OVHcloud uIAM service)                                                                  	|
+| vCPU over-allocation                	|     ⏳   	|     ⏳  	| In Roadmap - Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
 #### Networking
 
-| Features                        	| Standard 	| Advanced 	| Premium 	| Comments                                                                                                                                                                                           	|
+| Features                        	| Standard 	| Advanced 	|Comments                                                                                                                                                                                           	|
 |---------------------------------	|----------	|----------	|---------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Routing & Switching IPv4        	|         	| ✅        	| ✅       	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	|
-| Public IPv4 Range               	| ✅        	| ✅        	| ✅       	|                                                                                                                                                                                                    	|
-| Private Network - vRack support 	| ✅        	| ✅        	| ✅       	| in Roadmap                                                                                                                                                                                                   	|
-| Routing & Switching IPv6        	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	|
-| VPN                             	|          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	|
-| Load Balancing                  	|          	|          	|         	| Not supported with native Public VCF as-a-Service network capabilities                                                                                                                                                 	|
-| Advanced Load Balancing         	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	|
+| Routing & Switching IPv4        	| -       	| ✅        	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	|
+| Public IPv4 Range               	| ✅        	| ✅        	|                                                                                                                                                                                                     	|
+| Private Network - vRack support 	| ✅        	| ✅        	|  in Roadmap                                                                                                                                                                                                   	|
+| Routing & Switching IPv6        	| -        	| ⏳        	| in Roadmap                                                                                                                                                                                         	|
+| VPN                             	| -        	| ✅        	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	|
+| Load Balancing                  	| -        	| -        	| Not supported with native Public VCF as-a-Service network capabilities                                                                                                                                                 	|
+| Advanced Load Balancing         	| -         	| ⏳        	| in Roadmap                                                                                                                                                                                         	|
 
 #### Security
 
-|       Features       	| Standard 	| Advanced 	| Premium 	|  Comments  	|
-|:--------------------:	|:--------:	|:--------:	|:-------:	|:----------:	|
-|   Stateful Firewall  	|        	|     ✅    	|    ✅    	|            	|
-| Distributed Firewall 	|        	|     ✅    	|    ✅    	|            	|
-|    Security groups   	|         	|     ✅    	|    ✅    	|            	|
-|       IDS / IPS      	|          	|          	|         	| in Roadmap 	|
-|          WAF         	|          	|          	|         	| in Roadmap 	|
+|       Features       	| Standard 	| Advanced 	| |  Comments  	|
+|:--------------------:	|:--------:	|:--------:	|:----------:	|
+|   Stateful Firewall  	| -      	|     ✅    	|            	|
+| Distributed Firewall 	| -      	|     ✅    	|            	|
+|    Security groups   	| -       	|     ✅    	|            	|
+|       IDS / IPS      	| -        	|     ⏳    	| in Roadmap 	|
+|          WAF         	| -        	|     ⏳    	| in Roadmap 	|
 
 #### Data protection
 
-|           Features           	| Standard 	| Advanced 	| Premium 	|           Comments          	|
-|:----------------------------:	|:--------:	|:--------:	|:-------:	|:---------------------------:	|
-|      Backup as a Service     	|     ✅    	|     ✅    	|    ✅    	| Veeam Managed Backup Option 	|
-|   Virtual Machine Snapshots  	|     ✅    	|     ✅    	|    ✅    	|           1 per VM          	|
-| Protection / Replication VMs 	|          	|          	|         	|          in Roadmap         	|
+|           Features           	| Standard 	| Advanced 	|           Comments          	|
+|:----------------------------:	|:--------:	|:--------:	|:---------------------------:	|
+|      Backup as a Service     	|     ✅    	|     ✅    	| Veeam Managed Backup Option 	|
+|   Virtual Machine Snapshots  	|     ✅    	|     ✅    	|           1 per VM          	|
+| Protection / Replication VMs 	|     ⏳    	|     ⏳    	|          in Roadmap         	|
 
 #### Storage
 
-|              Features             	| Standard 	| Advanced 	| Premium 	| Comments 	|
-|:---------------------------------:	|:--------:	|:--------:	|:-------:	|:--------:	|
-|           NFS datastore           	|     ✅    	|     ✅    	|    ✅    	|          	|
-| High performance datastore (vSAN) 	|          	|          	|    ✅    	|          	|
+|              Features             	| Standard 	| Advanced 	| Comments 	|
+|:---------------------------------:	|:--------:	|:--------:	|:--------:	|
+|           NFS datastore           	|     ✅    	|     ✅    	|          	|
 
 #### Monitoring
 
-|     Features    	| Standard 	| Advanced 	| Premium 	|                      Comments                     	|
-|:---------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------:	|
-| Aria operations 	|         	|         	|        	| In Roadmap - Resource management Metrics, Dashboard, Reporting 	|
+|     Features    	| Standard 	| Advanced 	|                      Comments                     	|
+|:---------------:	|:--------:	|:--------:	|:-------------------------------------------------:	|
+| Aria operations 	|   ⏳    	|    ⏳    	| In Roadmap - Resource management Metrics, Dashboard, Reporting 	|
 
 ## Go further
 
