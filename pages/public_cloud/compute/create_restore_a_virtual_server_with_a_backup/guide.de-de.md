@@ -30,7 +30,7 @@ Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
 >
 > Die Operationen des **Erstellens** und **Wiederherstellens** einer Instanz aus einem entfernten Backup werden vollständig über die OVHcloud API unterstützt, was eine größere Flexibilität und mühelose Integration in Ihre Automatisierungsprozesse bietet.
 >
-> **Hinweis :** Diese Vorgänge stehen noch nicht über das OVHcloud Kundencenter zur Verfügung.
+> **Hinweis:** Diese Vorgänge stehen noch nicht über das OVHcloud Kundencenter zur Verfügung.
 
 ### Eine Instanz aus einem Backup erstellen
 
