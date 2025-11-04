@@ -1,7 +1,7 @@
 ---
 title: 'Crear o restaurar un servidor virtual a partir de un snapshot'
 excerpt: 'Descubra cómo crear o restaurar la copia de seguridad de una instancia'
-updated: 2025-10-15
+updated: 2025-11-04
 ---
 
 ## Objetivo
@@ -20,6 +20,17 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
+
+> [!primary]
+>
+> Están disponibles dos tipos de copias de seguridad:
+>
+> - Local: almacenada en la misma región que su instancia.
+> - Remota: automáticamente replicada en otra región de su elección.
+>
+> Las operaciones de **creación** y **restauración** en copias de seguridad remotas están totalmente soportadas a través de la API de OVHcloud, ofreciendo mayor flexibilidad y una integración facilitada en sus procesos de automatización.
+>
+> **Nota:** Estas operaciones no están disponibles aún desde el área de cliente de OVHcloud.
 
 ### Crear una instancia a partir de un snapshot
 
@@ -120,7 +131,7 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 >> ```
 >>
 
-### Restaurar una instancia a partir de un snapshot
+### Restaurar una instancia desde una copia de seguridad
 
 > [!tabs]
 > A través del área de cliente de OVHcloud

@@ -1,7 +1,7 @@
 ---
 title: 'Verwenden von Backups zum Erzeugen oder Wiederherstellen von Instanzen'
 excerpt: 'Erfahren Sie hier, wie Sie Instanzen aus Backups oder wiederherstellen'
-updated: 2025-10-15
+updated: 2025-11-04
 ---
 
 ## Ziel
@@ -20,6 +20,17 @@ Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
+
+> [!primary]
+>
+> Es stehen Ihnen zwei Arten von Backups zur Verfügung:
+>
+> - Lokal: In derselben Region wie Ihre Instanz gespeichert.
+> - Fern: Automatisch in eine andere von Ihnen gewählte Region repliziert.
+>
+> Fern-Backup-Vorgänge einschließlich **Erstellung** und **Wiederherstellung** werden vollständig über die OVHcloud API und OpenStack unterstützt, wodurch eine größere Flexibilität und Integration in Ihre Automatisierungsvorgänge ermöglicht wird.
+>
+> **Hinweis :** Diese Vorgänge stehen noch nicht über das OVHcloud Kundencenter zur Verfügung.
 
 ### Eine Instanz aus einem Backup erstellen
 
