@@ -1,7 +1,7 @@
 ---
 title: 'Crea/ripristina il tuo server virtuale da un backup'
 excerpt: 'Scopri come creare o ripristinare il backup di un’istanza'
-updated: 2025-10-15
+updated: 2025-11-04
 ---
 
 ## Obiettivo
@@ -20,6 +20,17 @@ Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se ha
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
+
+> [!primary]
+>
+> Sono disponibili due tipi di backup:
+>
+> - Locale: memorizzato nella stessa regione della tua istanza.
+> - Remoto: automaticamente replicato in un'altra regione a tua scelta.
+>
+> Le operazioni di **creazione** e **ripristino** sui backup remoti sono interamente supportate tramite l'API OVHcloud, offrendo una maggiore flessibilità e un facile integrazione nei tuoi processi di automazione.
+>
+> **Nota:** Queste operazioni non sono ancora disponibili dallo Spazio Cliente OVHcloud.
 
 ### Crea un’istanza a partire da un backup
 

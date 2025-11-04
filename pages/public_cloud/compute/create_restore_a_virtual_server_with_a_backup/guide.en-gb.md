@@ -1,7 +1,7 @@
 ---
 title: Using instance backups to create or restore an instance
 excerpt: Find out how to restore an instance or create a new one from a backup
-updated: 2025-10-15
+updated: 2025-11-04
 ---
 
 ## Objective
@@ -20,7 +20,6 @@ You can make use of these instance backups for two basic purposes:
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
-
 
 > [!primary]
 >

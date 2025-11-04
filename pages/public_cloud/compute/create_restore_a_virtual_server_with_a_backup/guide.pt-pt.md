@@ -1,7 +1,7 @@
 ---
 title: 'Criar / Restaurar um servidor virtual a partir de um backup'
 excerpt: 'Saiba como criar ou restaurar o backup de uma instância'
-updated: 2025-10-15
+updated: 2025-11-04
 ---
 
 ## Objetivo
@@ -20,6 +20,17 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
+
+> [!primary]
+>
+> Dois tipos de cópias de segurança estão disponíveis:
+>
+> - Local: armazenada na mesma região que a sua instância.
+> - Remota: automaticamente replicada noutra região à sua escolha.
+>
+> As operações de **criação** e **restauração** nas cópias de segurança remotas são totalmente suportadas através da API OVHcloud, oferecendo maior flexibilidade e uma integração facilitada nos seus processos de automação.
+>
+> **Nota:** Estas operações ainda não estão disponíveis a partir da área de cliente OVHcloud.
 
 ### Criar uma instância a partir de um backup
 
