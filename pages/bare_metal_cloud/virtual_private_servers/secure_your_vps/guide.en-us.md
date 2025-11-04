@@ -1,7 +1,7 @@
 ---
 title: "How to secure a VPS"
 excerpt: "Find out how to apply basic security measures to protect your VPS against attacks and unauthorised access"
-updated: 2025-10-31
+updated: 2025-11-04
 ---
 
 ## Objective
@@ -185,7 +185,7 @@ Example:
 ssh ubuntu@203.0.113.100 -p 49152
 ```
 
-If you are locked out of your system, you can use our [rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue/)environment to revert your changes.
+If you are locked out of your system, you can use our [rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue/) environment to revert your changes.
 
 ### Creating a user with restricted rights <a name="createuser"></a>
 
