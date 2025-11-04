@@ -1,5 +1,5 @@
 ---
-title: "Comment vérifier l'association nom de domaine / site web ?"
+title: "Comment vérifier l'association « nom de domaine / site web » ?"
 excerpt: "Découvrez notre outil de diagnostic et vérifiez que votre nom de domaine ou sous-domaine est bien déclaré avec votre site web sur votre hébergement web."
 updated: 2025-11-20
 ---
