@@ -1,7 +1,7 @@
 ---
 title: 'Configure access control using OVHcloud IAM on an OVHcloud Managed Rancher Service'
-excerpt: 'Learn how to enable and manage OVHcloud IAM authentication to control access to your Managed Rancher Service (MRS) using centralized identities and roles.'
-updated: 2025-10-16
+excerpt: 'Learn how to enable and manage OVHcloud IAM authentication to control access to your Managed Rancher Service (MRS) using centralized identities and roles'
+updated: 2025-11-04
 ---
 
 <style>
@@ -55,13 +55,14 @@ Integrating IAM with your Rancher service ensures consistent access control acro
 >
 
 > [!tabs]
-> Via the OVHcloud Control Panel (Comming soon)
+> Via the OVHcloud Control Panel (coming soon)
 >> > [!primary]
 >> >
->> > Managing IAM from the OVHcloud Manager is not yet available and will be added in a future release.
+>> > Managing IAM from the OVHcloud Control Panel is not yet available and will be added in a future release.
 >> >
 >>
 > Via the OVHcloud API
+>>
 >> > [!api]
 >> >
 >> > @api {v2} /publicCloud PUT /publicCloud/project/{projectId}/rancher/{rancherId}
@@ -82,7 +83,7 @@ Integrating IAM with your Rancher service ensures consistent access control acro
 >>
 >> > [!primary]
 >> >
->> > Make sure all information in the JSON (service name, plan, version) is correct. Using incorrect values will result in an error when activating or disabling IAM.
+>> > Make sure all the information in the JSON (service name, plan, version) is correct. Using incorrect values will result in an error when activating or disabling IAM.
 >> >
 >>
 >> Replace:
@@ -104,7 +105,6 @@ Integrating IAM with your Rancher service ensures consistent access control acro
 >> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Rancher Service`{.action}.
 >>
 
-
 ### Authentication using SSO with OVHcloud IAM users
 
 Once IAM authentication is enabled on your Managed Rancher Service, access to the Rancher UI is managed via OVHcloud Single Sign-On (SSO). Users no longer log in with local Rancher credentials but authenticate directly using their OVHcloud IAM identity.
@@ -120,7 +120,7 @@ To log in via SSO:
 
 ![rancher user interface](images/rancher_interface.png){.thumbnail}
 
-- You will be redirected to the Managed Rancher Service authentication page. 
+- You will be redirected to the Managed Rancher Service authentication page.
 
 /// details | No user has ever logged in locally
 
@@ -140,7 +140,7 @@ Replace:
 
 Copy the returned password, then paste it on the authentication page.
 
-Make sure to check the box to accept the `End User License Agreement & Terms & Conditions`{.action}, then click Continue.
+Make sure to check the box to accept the `End User License Agreement & Terms & Conditions`{.action}, then click `Continue`{.action}.
 
 You can now log out and proceed with your normal workflow.
 
@@ -171,7 +171,7 @@ OVHcloud IAM provides three predefined roles for managing access to your Managed
 >
 > **standard** role: Standard users can create new clusters and manage clusters and projects they have been granted access to.
 >
-> **ovhRestrictedAdmin** role: OVH Restricted Admins have full control over all resources in downstream clusters but do not have access to the local cluster.
+> **ovhRestrictedAdmin** role: OVHcloud Restricted Admins have full control over all resources in downstream clusters but do not have access to the local cluster.
 >
 
 These roles are assigned through IAM policies. To create and configure a policy, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.
@@ -184,12 +184,12 @@ Define users and groups, name your policy, add the users you want to include and
 
 Set permissions for MRS: 
 
-- In the `Product types` section, select `Public Cloud / Managed Rancher Service (MRS) project`.
-- In the `Resources` section, choose the specific MRS service to which the policy will apply.
+- In the `Product types`{.action} section, select `Public Cloud / Managed Rancher Service (MRS) project`{.action}.
+- In the `Resources`{.action} section, choose the specific MRS service to which the policy will apply.
 
 ![Create policy product types](images/create_policy_product_types.png){.thumbnail}
 
-Expand `Public Cloud / Managed Rancher Service (MRS) project` and select the desired role for the users defined in the policy.
+Expand `Public Cloud / Managed Rancher Service (MRS) project`{.action} and select the desired role for the users defined in the policy.
 
 ![Create policy roles](images/create_policy_action.png){.thumbnail width="700"}
 
@@ -199,3 +199,9 @@ To go further you can look at our guides on:
 
 - [Managing users and projects](/pages/public_cloud/containers_orchestration/managed_private_registry/managing-users-and-projects).
 - [Creating and using a private image](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-and-using-a-private-image).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+
+Join our [community of users](/links/community).
