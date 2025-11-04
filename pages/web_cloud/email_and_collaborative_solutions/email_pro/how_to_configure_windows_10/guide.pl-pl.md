@@ -43,7 +43,7 @@ Adresy e-mail w ramach oferty [E-Mail Pro](/links/web/email-pro) mogą być konf
 
 OVHcloud udostępnia usługi, za których konfigurację, zarządzanie i działanie jesteś odpowiedzialny. Należy do Ciebie zapewnić ich poprawne funkcjonowanie.
 
-Zapewniamy tę dokumentację, aby ułatwić Ci wykonywanie typowych zadań. W przypadku problemów zalecam skontaktowanie się z [specjalistycznym partnerem](https://marketplace.ovhcloud.com/c/support-collaboration) lub producentem usługi. Nie będziemy mogli udzielić dalszej pomocy. Więcej informacji w sekcji "[Sprawdź również](#go-further)" niniejszej dokumentacji.
+Zapewniamy tę dokumentację, aby ułatwić Ci wykonywanie typowych zadań. W przypadku problemów zalecam skontaktowanie się z [specjalistycznym partnerem](/links/partner) lub producentem usługi. Nie będziemy mogli udzielić dalszej pomocy. Więcej informacji w sekcji "[Sprawdź również](#go-further)" niniejszej dokumentacji.
 
 ///
 

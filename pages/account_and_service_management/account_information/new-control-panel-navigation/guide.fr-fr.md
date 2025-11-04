@@ -75,7 +75,7 @@ En bas à gauche de l'espace client, des raccourcis vous permettent de découvri
 /// details | Liens utiles
 
 - [Le Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
-- [OVHcloud Marketplace](https://marketplace.ovhcloud.com/)
+- [OVHcloud Marketplace](/links/transversal/marketplace)
 - [OVHcloud Status](https://www.status-ovhcloud.com/)
 - [Comment obtenir l'empreinte carbone de vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/carbon_footprint)
 

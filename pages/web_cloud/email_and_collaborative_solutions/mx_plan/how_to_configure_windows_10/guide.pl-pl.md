@@ -45,7 +45,7 @@ Od dnia 1 stycznia 2025 roku **nowy Outlook** zastąpił aplikację **Poczta** w
 
 OVHcloud udostępnia usługi, za których konfigurację, zarządzanie i odpowiedzialność odpowiadasz Ty. Należy więc do Ciebie zapewnić ich prawidłowe działanie.
 
-Udostępniamy tę instrukcję, aby pomóc w najczęstszych zadaniach. Jednakże, jeśli napotkasz trudności, zalecam skontaktowanie się z [partnerem specjalistą](https://marketplace.ovhcloud.com/c/support-collaboration) lub producentem usługi. Nie będziemy w stanie udzielić pomocy technicznej. Więcej informacji w sekcji "[Sprawdź również](#go-further)" tej instrukcji.
+Udostępniamy tę instrukcję, aby pomóc w najczęstszych zadaniach. Jednakże, jeśli napotkasz trudności, zalecam skontaktowanie się z [partnerem specjalistą](/links/partner) lub producentem usługi. Nie będziemy w stanie udzielić pomocy technicznej. Więcej informacji w sekcji "[Sprawdź również](#go-further)" tej instrukcji.
 
 ///
 
