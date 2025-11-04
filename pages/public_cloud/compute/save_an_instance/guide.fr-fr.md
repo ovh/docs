@@ -47,7 +47,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >
 > Chaque sauvegarde est facturée séparément. La sauvegarde distante sera facturée selon la tarification du stockage dans la région distante sélectionnée.
 >
-> **Note :** les local zones ne sont pas éligibles pour les sauvegardes distantes
+> **Note :** les Local Zones ne sont pas éligibles pour les sauvegardes distantes
 >
 
 > [!tabs]
@@ -69,7 +69,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> /// details | Sauvegarde distante
 >>
->> Entrez un nom pour la sauvegarde. Vérifiez les informations tarifaires. Cliquez sur `Ajouter un backup distant (Option)`{.action}, entrez un nom pour la sauvegarde distante, sélectionnez une région et cliquez sur `Confirmer`{.action}.
+>> Entrez un nom pour la sauvegarde et vérifiez les informations tarifaires. Cliquez sur `Ajouter un backup distant (Option)`{.action}, entrez un nom pour la sauvegarde distante, sélectionnez une région et cliquez sur `Confirmer`{.action}.
 >>
 >> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
 >>
@@ -82,6 +82,8 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Via l'API OVHcloud <a name="createinstanceviaapi"></a>
+>> Authentifiez-vous sur [l'API OVHcloud](/links/console).
+>>
 >> Vous pouvez répertorier toutes les régions disponibles à l'aide de l'appel API suivant :
 >>
 >> > [!api]
@@ -89,7 +91,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
 >> >
 >>
->> Authentifiez-vous sur [l'API OVHcloud](/links/console) et utilisez l'appel API suivant :
+>> Utilisez ensuite l'appel API suivant :
 >>
 >> > [!api]
 >> >

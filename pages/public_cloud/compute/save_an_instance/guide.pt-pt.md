@@ -1,7 +1,7 @@
 ---
 title: 'Guardar uma instância'
 excerpt: 'Saiba como efetuar o backup de uma instância Public Cloud a partir da Área de Cliente OVHcloud'
-updated: 2025-10-14
+updated: 2025-11-04
 ---
 
 <style>
@@ -47,7 +47,7 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 >
 > Cada backup é cobrado separadamente. O backup remoto será cobrado de acordo com a tarifa de armazenamento da região remota selecionada.
 >
-> Atualmente, a criação de um backup remoto não está disponível por meio do área de cliente OVHcloud. Você pode fazê-lo apenas por meio da API OVHcloud e Openstack.
+> **Nota :** as Local Zones não são elegíveis para cópias de segurança remotas.
 
 
 > [!tabs]
@@ -67,17 +67,31 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 >>
 >> ///
 >>
->> Não é possível acompanhar o progresso do backup em tempo real. No entanto, você pode consultar o status do backup na seção `Instance Backup`{.action} sob a seção **Compute** no menu à esquerda, onde será exibido o status `Backup em andamento`.
+>> /// details | Cópia de segurança remota
 >>
->> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>> Introduza um nome para a cópia de segurança e verifique as informações tarifárias. Clique em `Adicionar backup remoto (Opção)`{.action}, introduza um nome para a cópia de segurança remota, selecione uma região e clique em `Confirmar`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
+>>
+>> ///
+>>
+>> Não é possível seguir o progresso da cópia de segurança em tempo real. No entanto, pode consultar o estado da cópia de segurança na secção `Instance Backup`{.action} sob a rubrica **Compute** do menu à esquerda, onde será exibido o estado `Backup em curso` durante o processo.
 >>
 >> Após o término do backup, ele estará disponível na seção `Instance Backup`{.action} sob a seção **Compute** no menu à esquerda.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Através da API OVHcloud <a name="createinstanceviaapi"></a>
+>> Autentique-se na [API OVHcloud](/links/console).
 >>
->> Faça login na [API OVHcloud](/links/console) e utilize a seguinte chamada de API:
+>> Pode listar todas as regiões disponíveis utilizando o seguinte pedido API :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
+>> >
+>>
+>> Utilize em seguida o seguinte pedido API :
 >>
 >> > [!api]
 >> >
@@ -110,6 +124,12 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> Pode listar todas as regiões disponíveis utilizando o seguinte comando :
+>>
+>> ```bash
+>> $ openstack region list
 >> ```
 >>
 >> /// details | Backup local

@@ -1,7 +1,7 @@
 ---
 title: 'Migração de instâncias entre zonas de disponibilidade (AZ)'
 excerpt: 'Este guia descreve como migrar uma instância Public Cloud OVHcloud entre duas zonas de disponibilidade (AZ), 1AZ e 3AZ. Ele abrange as etapas de backup, transferência e recriação, com instruções via Manager, Horizon ou CLI OpenStack.'
-updated: 2025-10-15
+updated: 2025-11-04
 ---
 
 ## Objetivo
@@ -36,8 +36,6 @@ OVHcloud oferece dois tipos de backups, com comportamentos diferentes dependendo
 > Se o seu backup local foi feito em uma região 3AZ e você deseja recriar a instância em outra AZ da mesma região, nenhuma transferência é necessária.
 >
 > Os backups locais estão disponíveis a partir de todas as zonas de disponibilidade de uma região 3AZ. Você pode passar diretamente para a etapa de recriação da instância.
->
-> Atualmente, a criação de um backup remoto não está disponível via Área de Cliente OVHcloud. Você só pode realizar esta ação via API OVHcloud ou OpenStack.
 >
 
 O backup de uma instância pode ser realizado:

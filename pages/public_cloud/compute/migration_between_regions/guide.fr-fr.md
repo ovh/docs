@@ -1,7 +1,7 @@
 ---
 title: 'Migration d’instances entre zones de disponibilité (AZ)'
 excerpt: 'Ce guide décrit comment migrer une instance Public Cloud OVHcloud entre deux zones de disponibilité (AZ), 1AZ et 3AZ. Il couvre les étapes de sauvegarde, transfert et recréation, avec instructions via le Manager, Horizon ou la CLI OpenStack.'
-updated: 2025-10-15
+updated: 2025-11-04
 ---
 
 ## Objectifs

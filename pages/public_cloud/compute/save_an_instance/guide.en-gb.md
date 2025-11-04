@@ -1,7 +1,7 @@
 ---
 title: Backing up an instance
 excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel or via OpenStack
-updated: 2025-10-14
+updated: 2025-11-04
 ---
 
 <style>
@@ -47,7 +47,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >
 > Each backup is billed separately — the distant backup will be charged based on the storage pricing of the selected remote region.
 >
-> **Note:** Local zones are not eligible for distant backups.
+> **Note:** Local Zones are not eligible for distant backups.
 >
 
 > [!tabs]
@@ -82,14 +82,16 @@ You can create a single backup of an instance or configure a schedule in order t
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Via the OVHcloud API <a name="createinstanceviaapi"></a>
->> You can list all available regions using the following API call:
+>> Log in to the [OVHcloud API](/links/console).
+>>
+>> You can then list all available regions using the following API call:
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
 >> >
 >>
->> Log in to the [OVHcloud API](/links/console) and use the following API call:
+>>  Then use the following API call:
 >>
 >> > [!api]
 >> >

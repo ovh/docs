@@ -28,7 +28,7 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 > - Local: armazenada na mesma região que a sua instância.
 > - Remota: automaticamente replicada noutra região à sua escolha.
 >
-> As operações de **criação** e **restauração** nas cópias de segurança remotas são totalmente suportadas através da API OVHcloud, oferecendo maior flexibilidade e uma integração facilitada nos seus processos de automação.
+> As operações de **criação** e de **restauro** de uma instância a partir de um backup remoto são inteiramente suportadas através da API OVHcloud, oferecendo uma maior flexibilidade e uma integração facilitada nos seus processos de automatização.
 >
 > **Nota:** Estas operações ainda não estão disponíveis a partir da área de cliente OVHcloud.
 

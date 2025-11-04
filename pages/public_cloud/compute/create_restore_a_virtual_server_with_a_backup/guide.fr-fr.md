@@ -28,7 +28,7 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 > - Locale : stockée dans la même région que votre instance.
 > - Distante : automatiquement répliquée dans une autre région de votre choix.
 >
-> Les opérations de **création** et de **restauration** sur les sauvegardes distantes sont entièrement prises en charge via l’API OVHcloud, offrant une plus grande flexibilité et une intégration facilitée dans vos processus d’automatisation.
+> Les opérations de **création** et de **restauration** d'une instance depuis une sauvegarde distante sont entièrement prises en charge via l’API OVHcloud, offrant une plus grande flexibilité et une intégration facilitée dans vos processus d’automatisation.
 >
 > **Note :** Ces opérations ne sont pas encore disponibles depuis l’espace client OVHcloud.
 >

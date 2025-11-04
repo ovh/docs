@@ -47,7 +47,7 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 >
 > Ogni backup è fatturato separatamente. Il backup remoto verrà fatturato in base alla tariffa di archiviazione della regione remota selezionata.
 >
-> Al momento, la creazione di un backup remoto non è disponibile tramite il Spazio Cliente OVHcloud. Puoi eseguirla solo tramite l'API OVHcloud e Openstack.
+> **Nota :** le Local Zones non sono idonee per i backup remoti.
 
 > [!tabs]
 > Attraverso il Spazio Cliente OVHcloud
@@ -66,17 +66,31 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 >>
 >> ///
 >>
->> Non è possibile seguire in tempo reale l'avanzamento del backup. Tuttavia, puoi consultare lo stato del backup nella sezione `Instance Backup`{.action} sotto la voce **Compute** del menu a sinistra, dove verrà visualizzato lo stato `Backup in corso`.
+>> /// details | Backup remoto
 >>
->> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>> Inserisci un nome per il backup e verifica le informazioni sui costi. Clicca su `Aggiungi un backup remoto (Opzione)`{.action}, inserisci un nome per il backup remoto, seleziona una regione e clicca su `Conferma`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
+>>
+>> ///
+>>
+>> Non è possibile seguire in tempo reale l'avanzamento del backup. Tuttavia, puoi consultare lo stato del backup nella sezione `Instance Backup`{.action} sotto la voce **Compute** del menu a sinistra, dove verrà visualizzato lo stato `Backup in corso` durante il processo.
 >>
 >> Una volta completato il backup, sarà disponibile nella sezione `Instance Backup`{.action} sotto la voce **Compute** nel menu a sinistra.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > Attraverso l'API OVHcloud <a name="createinstanceviaapi"></a>
+>> Accedi a [l'API OVHcloud](/links/console).
 >>
->> Accedi all'[API OVHcloud](/links/console) e utilizza la seguente chiamata API:
+>> Puoi elencare tutte le regioni disponibili utilizzando il seguente chiamata API :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
+>> >
+>>
+>> Utilizza quindi la seguente chiamata API :
 >>
 >> > [!api]
 >> >
@@ -109,6 +123,12 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> Puoi elencare tutte le regioni disponibili utilizzando il seguente comando :
+>>
+>> ```bash
+>> $ openstack region list
 >> ```
 >>
 >> /// details | Backup locale
