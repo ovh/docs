@@ -30,7 +30,7 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 - File injections on your hosting system
 - SQL or XSS type injections
 
-**Find out how to activate the application firewall from your OVHcloud Control Panel, in order to benefit from enhanced protection.**
+**This guide explains how to enable the application firewall from your OVHcloud Control Panel, in order to benefit from enhanced protection.**
 
 > [!primary]
 >
@@ -65,11 +65,11 @@ Click on the tabs below to view each of the **4** steps.
 >>
 > **Step 3**
 >> 
->> In the **Configuration** section, you will find the **Global PHP Version** mention.
+>> In the **Configuration** section, you will find the **Global PHP Version**.
 >> 
 >> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 >> 
->> Click on the `...`{.action} button to the right of the **Global PHP Version** mention, then on `Modify configuration`{.action}.
+>> Click on the `...`{.action} button to the right of **Global PHP Version**, then on `Modify configuration`{.action}.
 >> 
 > **Step 4**
 >> 
@@ -124,7 +124,7 @@ Click on the tabs below to view each of the **5** steps.
 >> 
 >> Once the firewall is enabled for your domain name or subdomain, the **Enabled** label appears in the **Firewall** column.
 >> 
->> If the **Enabled** label does not appear after a few minutes on the line corresponding to the relevant domain name or subdomain, refresh the page.
+>> If the **Enabled** label does not appear after a few minutes on the row corresponding to the relevant domain name or subdomain, refresh the page.
 
 ///
 
