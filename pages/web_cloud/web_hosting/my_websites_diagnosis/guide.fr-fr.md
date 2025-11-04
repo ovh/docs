@@ -1,6 +1,6 @@
 ---
 title: "Comment vérifier l'association « nom de domaine / site web » ?"
-excerpt: "Découvrez notre outil de diagnostic et vérifiez que votre nom de domaine ou sous-domaine est bien déclaré avec votre site web sur votre hébergement web."
+excerpt: "Utilisez notre outil de diagnostic pour vérifier que votre nom de domaine ou sous-domaine est bien déclaré avec votre site web sur votre hébergement web"
 updated: 2025-11-20
 ---
 
@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web, même si les noms de domaine ne sont pas enregistrés chez OVHcloud. De plus, vous pouvez associer un ou plusieurs noms de domaine ou sous-domaines à un même site web.
 
-**Découvrez notre outil de diagnostic et vérifiez que votre nom de domaine ou sous-domaine est bien déclaré avec votre site web sur votre hébergement web.**
+**Utilisez notre outil de diagnostic pour vérifier que votre nom de domaine ou sous-domaine est bien déclaré avec votre site web sur votre hébergement web.**
 
 ## Prérequis
 
