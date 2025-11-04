@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie serwera VPS"
 excerpt: "Dowiedz się, jak wdrożyć podstawowe środki bezpieczeństwa, aby chronić Twój serwer VPS przed atakami i nieautoryzowanym dostępem"
-updated: 2025-10-31
+updated: 2025-11-04
 ---
 
 > [!primary]
@@ -193,7 +193,7 @@ Przykład:
 ssh ubuntu@203.0.113.100 -p 49152
 ```
 
-Jeśli nie masz dostępu do swojego systemu, możesz skorzystać z naszego środowiska [trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue/), aby przywrócić swoje zmiany.
+Jeśli nie masz dostępu do swojego systemu, możesz skorzystać z naszego środowiska [trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue/), aby anulować wprowadzone zmiany.
 
 ### Utworzenie użytkownika z ograniczonymi prawami <a name="createuser"></a>
 
