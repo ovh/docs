@@ -1,7 +1,7 @@
 ---
 title: VPS-Partitionierung nach einem Storage-Upgrade
 excerpt: Erfahren Sie hier, wie Sie den verwendbaren Speicherplatz nach einem Upgrade vergrößern
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 > [!primary]
@@ -171,6 +171,18 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 ```
 
 Vergewissern Sie sich, dass der Standardwert in der Zeile `First sector` mit dem Wert übereinstimmt, den Sie zuvor notiert haben. Stimmt er nicht überein, verwenden Sie den von Ihnen aufgeschriebenen Wert.
+
+Wenn die folgende Meldung angezeigt wird:
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Geben Sie `n` ein und fahren Sie fort.
+
+Die Antwort `y` würde bedeuten, dass das vorhandene ext4-Dateisystem auf Partition 1 überschrieben und die darin enthaltenen Daten gelöscht werden.
 
 ### Die Partition bootfähig machen
 
