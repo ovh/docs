@@ -95,8 +95,6 @@ As part of the MX Plan solution upgrade, a migration is planned from the current
 
 If you are affected by this migration, you will find the most frequently asked questions here.
 
-///
-
 /// details | What are the differences between Outlook Web App (OWA) and Zimbra webmail?
 
 Zimbra offers similar features and a user experience close to OWA. A user guide for Zimbra is now available at [this address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).

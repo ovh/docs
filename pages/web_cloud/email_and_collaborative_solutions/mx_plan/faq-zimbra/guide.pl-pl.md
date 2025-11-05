@@ -95,8 +95,6 @@ W ramach rozwoju oferty MX Plan zaplanowana jest migracja z aktualnego rozwiąza
 
 Jeśli jesteś zainteresowany migracją, odnajdziesz tutaj najczęściej zadawane pytania na ten temat.
 
-///
-
 /// details | Czym się różni Webmail Outlook Web App (OWA) od Zimbry?
 
 Zimbra oferuje te same funkcje i ergonomię, co interfejs OWA. Przewodnik dotyczący korzystania z usługi Zimbra jest już dostępny pod adresem [ten adres](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
