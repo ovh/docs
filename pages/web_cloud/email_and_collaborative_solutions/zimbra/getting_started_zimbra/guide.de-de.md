@@ -238,7 +238,7 @@ Es ist möglich, jeden Zimbra Account auf ein höheres oder niedrigeres Angebot 
 >
 > Bevor Sie auf ein niedrigeres Angebot wechseln, stellen Sie sicher, dass folgende Punkte erfüllt sind:
 >
-> - Keine Dateien sind auf Ihrem Speichervolumen "Briefcase" gespeichert, wenn Sie auf das Angebot Starter wechseln.
+> - Keine Dateien sind auf Ihrem Speichervolumen "Aktentasche" gespeichert, wenn Sie auf das Angebot Starter wechseln.
 > - Der Inhalt Ihres E-Mail-Accounts muss weniger als 15 GB sein, wenn Sie auf das Angebot Starter wechseln.
 
 ### E-Mail-Account einsehen <a name="mail-consult"></a>

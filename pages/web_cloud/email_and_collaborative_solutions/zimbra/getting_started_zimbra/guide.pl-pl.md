@@ -238,7 +238,7 @@ Można zmienić ofertę dowolnego konta Zimbra na wyższą lub niższą ofertę.
 >
 > Przed przejściem na niższą ofertę upewnij się, że:
 >
-> - Na Twoim wolumenie magazynowym "Briefcase" nie ma żadnych plików, jeśli zmieniasz ofertę na Starter.
+> - Na Twoim wolumenie magazynowym "Aktówka" nie ma żadnych plików, jeśli zmieniasz ofertę na Starter.
 > - Zawartość Twojego konta e-mail musi być mniejsza niż 15 Go, jeśli przechodzisz na ofertę Starter.
 
 ### Sprawdź konto e-mail <a name="mail-consult"></a>

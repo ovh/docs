@@ -238,7 +238,7 @@ Clique em `Confirmar`{.action} para lançar a criação da conta.
 >
 > Antes de passar para uma oferta inferior, certifique-se dos seguintes pontos :
 >
-> - Nenhum ficheiro está armazenado no seu volume de armazenamento « Breifcase » se mudar para a oferta Starter.
+> - Nenhum ficheiro está armazenado no seu volume de armazenamento « Porta-documentos » se mudar para a oferta Starter.
 > - O conteúdo da sua conta de correio electrónico deve ser inferior a 15 Go se mudar para a oferta Starter.
 
 ### Consultar a conta de e-mail <a name="mail-consult"></a>
