@@ -323,6 +323,7 @@ Run the following command to deploy your application:
 >>   --env VAE_FILE=ae.safetensors \
 >>   --env CLIP_FILE_1=clip_l.safetensors \
 >>   --env CLIP_FILE_2=t5xxl_fp16.safetensors
+>> ```
 >>
 > **Kontext Dev**
 >>
