@@ -238,7 +238,7 @@ Es posible cambiar el plan de cualquier cuenta Zimbra por un plan superior o inf
 >
 > Antes de cambiar a un plan inferior, asegúrese de los siguientes puntos:
 >
-> - No hay ningún archivo almacenado en su volumen de almacenamiento "Breifcase" si cambia a el plan Starter.
+> - No hay ningún archivo almacenado en su volumen de almacenamiento "Maletín" si cambia a el plan Starter.
 > - El contenido de su cuenta de correo debe ser inferior a 15 Go si cambia a el plan Starter.
 
 ### Consultar su cuenta de correo <a name="mail-consult"></a>

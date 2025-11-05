@@ -238,7 +238,7 @@ Il est possible de changer l'offre de n'importe quel compte Zimbra pour une offr
 >
 > Avant de basculer vers une offre inférieure, assurez-vous des points suivants :
 >
-> - Aucun fichier n'est stocké sur votre volume de stockage « Breifcase » si vous changez vers l'offre Starter.
+> - Aucun fichier n'est stocké sur votre volume de stockage « Malette » si vous changez vers l'offre Starter.
 > - Le contenu de votre compte e-mail doit être inférieur à 15 Go si vous basculez vers l'offre Starter.
 
 ### Consulter son compte e-mail <a name="emails-consult"></a>

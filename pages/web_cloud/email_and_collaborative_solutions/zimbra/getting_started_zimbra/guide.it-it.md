@@ -238,7 +238,7 @@ Clicca su `Conferma`{.action} per avviare la creazione dell’account.
 >
 > Prima di passare a un piano inferiore, assicurati dei seguenti punti:
 >
-> - Nessun file è archiviato sul tuo volume di archiviazione "Briefcase" se passi all'offerta Starter.
+> - Nessun file è archiviato sul tuo volume di archiviazione "Valigetta" se passi all'offerta Starter.
 > - Il contenuto del tuo account email deve essere inferiore a 15 Go se passi all'offerta Starter.
 
 ### Consultare il proprio account email <a name="mail-consult"></a>
