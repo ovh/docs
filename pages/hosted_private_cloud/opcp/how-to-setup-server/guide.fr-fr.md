@@ -102,7 +102,6 @@ Avant de déployer votre serveur, il est généralement nécessaire de créer un
 |--------|--------------|
 | **Boot Source** | Sélectionnez la source de démarrage : *Image* ou *Instance Snapshot*. |
 | **Image Name** | Choisissez l’image à utiliser (ex. : *Debian 12 BMPOD*). |
-| **Instance Snapshot** | Sélectionnez un instantané si vous souhaitez démarrer depuis une instance sauvegardée. |
 
 #### Onglet : Flavor
 
