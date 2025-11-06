@@ -109,7 +109,7 @@ Si vous n’indiquez pas d’adresse MAC avec `--address`, l’adresse d’un de
 
 > [!note]
 > Vous pouvez créer :
->> - un **groupe de ports unique** pour un bond 1×4, ou  
+> - un **groupe de ports unique** pour un bond 1×4, ou  
 > - deux **groupes de ports** pour des bonds 2×2.
 
 **Exemple :**
