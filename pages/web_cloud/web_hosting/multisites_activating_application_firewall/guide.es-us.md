@@ -45,9 +45,9 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 ## Procedimiento
 
-**Haga clic en los títulos de abajo para ver las explicaciones.**  
+**Haga clic en los títulos de abajo para ver las explicaciones.**
 
-/// details | Activar el firewall de aplicación en todo su alojamiento web en la configuración PHP  
+/// details | Activar el firewall de aplicación en todo su alojamiento web en la configuración PHP
 
 Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
@@ -66,23 +66,23 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 >>
 > **Etapa 3**
 >>
->> En el cuadro **Configuración**, encontrará la mención **Versión PHP global**.  
->>  
->> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}  
->>  
->> Haga clic en el botón `...`{.action} a la derecha de la mención **Versión PHP global**, y luego en `Editar la configuración`{.action}.  
->>  
-> **Etapa 4**  
->>  
->> En la ventana que se abre, seleccione el elemento `Modificar la configuración actual`{.action} y haga clic en el botón `Siguiente`{.action}.  
->>  
->> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}  
->>  
->> En la nueva ventana, asegúrese de que la opción **Firewall de aplicación** esté definida en `Activado`{.action}. Haga clic después en el botón `Aceptar`{.action}.  
+>> En el cuadro **Configuración**, encontrará la mención **Versión PHP global**.
+>>
+>> ![Global PHP version](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
+>>
+>> Haga clic en el botón `...`{.action} a la derecha de la mención **Versión PHP global**, y luego en `Editar la configuración`{.action}.
+>>
+> **Etapa 4**
+>>
+>> En la ventana que se abre, seleccione el elemento `Modificar la configuración actual`{.action} y haga clic en el botón `Siguiente`{.action}.
+>>
+>> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+>>
+>> En la nueva ventana, asegúrese de que la opción **Firewall de aplicación** esté definida en `Activado`{.action}. Haga clic después en el botón `Aceptar`{.action}.
 
-///  
+///
 
-/// details | Activar el firewall de aplicación únicamente en un dominio o subdominio específico  
+/// details | Activar el firewall de aplicación únicamente en un dominio o subdominio específico
 
 Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
@@ -101,31 +101,31 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 > **Etapa 3**
 >>
->> En la nueva página, haga clic en la pestaña `Mes sites`{.action}.  
->>  
->> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}  
->>  
-> **Etapa 4**  
->>  
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.  
->>  
->> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}  
->>  
->> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el dominio`{.action}.  
->>  
->> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}  
->>  
-> **Etapa 5**  
->>  
->> En la ventana de configuración, marque la casilla `Activar el firewall`{.action}. También puede incluir el subdominio `www` en esta configuración marcando la casilla correspondiente en la parte superior (si también está declarado en el mismo sitio web).  
->>  
->> ![Modify a domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}  
->>  
->> Haga clic en `Siguiente`{.action}, y luego en `Aceptar`{.action} para validar la modificación de los parámetros.  
->>  
->> Una vez activado el firewall para su dominio o subdominio, la mención **Activado** aparece en la columna **Firewall**.  
->>  
->> Si la mención **Activado** no aparece al cabo de unos minutos en la línea correspondiente al dominio o subdominio en cuestión, recargue la página.  
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el dominio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la ventana de configuración, marque la casilla `Activar el firewall`{.action}. También puede incluir el subdominio `www` en esta configuración marcando la casilla correspondiente en la parte superior (si también está declarado en el mismo sitio web).
+>>
+>> ![Modify a domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+>>
+>> Haga clic en `Siguiente`{.action}, y luego en `Aceptar`{.action} para validar la modificación de los parámetros.
+>>
+>> Una vez activado el firewall para su dominio o subdominio, la mención **Activado** aparece en la columna **Firewall**.
+>>
+>> Si la mención **Activado** no aparece al cabo de unos minutos en la línea correspondiente al dominio o subdominio en cuestión, recargue la página.
 
 ///
 
