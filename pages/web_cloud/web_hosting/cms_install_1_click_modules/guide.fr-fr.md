@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2024-10-04
+updated: 2025-11-20
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 - Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Découvrez l'état des différentes versions disponibles sur cette [page](https://webhosting-infos.hosting.ovh.net/). Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
 - Un fichier « [.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting) » configuré doit être présent à la racine FTP de votre hébergement web.
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
-- Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web OVHcloud.
+- Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré dessus via l'onglet [Mes sites](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) de votre hébergement web.
 
 ## En pratique
 
@@ -56,7 +56,7 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez l
 
 ![Choix du module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) si besoin.
+Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Mes sites`{.action} pour l'ajouter. Consultez notre guide [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) si besoin.
 
 > [!primary]
 >
@@ -65,7 +65,6 @@ Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{
 > Pour rappel, ce répertoire doit être totalement vide.
 >
 > Si besoin, consulter notre guide « [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » pour modifier le répertoire cible de votre nom de domaine.
->
 
 Une fois votre domaine correctement ajouté, essayez à nouveau d'ajouter un « module en 1 clic ».
 
@@ -154,7 +153,7 @@ Renseignez les informations suivantes pour la configuration du module :
 
 - *nom ou e-mail de l'administrateur :* identifiant que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS (Back Office).
 - *mot de passe :* mot de passe que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS.
-- *domaine :* nom de domaine avec lequel vous souhaitez installer votre CMS. Si besoin, consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+- *domaine :* nom de domaine avec lequel vous souhaitez installer votre CMS. Si besoin, consultez notre guide [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 - *langue :* langue dans laquelle le CMS sera installé.
 - *chemin d’installation :* ce dernier est automatiquement renseigné à la sélection du nom de domaine. Vous pouvez le compléter en y renseignant des sous-répertoires (pour les utilisateurs avertis).
 
@@ -168,14 +167,12 @@ Renseignez les informations suivantes pour la configuration du module :
 > Par exemple, si je renseigne dans le formulaire un sous répertoire *test*, l'URL d'accès à mon « module en 1 clic » aura cette forme : **http://domain.tld/test/**.
 >
 > Si besoin, consulter notre guide « [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » pour modifier le répertoire cible de votre nom de domaine.
->
 
 Une fois ces informations complétées, cliquez sur le bouton `Suivant`{.action} :
 
 > [!warning]
 >
 > Le dossier final indiqué dans le chemin d'installation renseigné doit être obligatoirement et entièrement vide pour que l'installation aboutisse.
-> 
 
 ![Configuration du module pour installation avancée](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
