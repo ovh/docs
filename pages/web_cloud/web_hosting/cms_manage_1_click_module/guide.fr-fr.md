@@ -1,7 +1,7 @@
 ---
 title: "Comment gérer votre module en 1 clic ?"
 excerpt: "Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud"
-updated: 2024-11-15
+updated: 2025-11-20
 ---
 
 ## Objectif
@@ -76,9 +76,9 @@ Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa ba
 
 Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [Cloud Database](/links/web/databases), vous pouvez considérer qu'il s'agit de celle de votre site.
 
-Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
+Dans le cas contraire, rendez-vous pour cela dans votre [espace client OVHcloud](/links/manager). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis dans l'onglet `Mes sites`{.action}. Notez le nom du `Dossier racine` présent dans la ligne du site web concerné : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 
-Connectez-vous ensuite à [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
+Connectez-vous ensuite à [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Mes sites`{.action} et recherchez le fichier de configuration de votre module :
 
 - Pour WordPress : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
 - Pour Joomla! : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).
