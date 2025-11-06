@@ -1,13 +1,13 @@
 ---
-title: "OPCP -  Comment installer un serveur depuis l'interface Horizon"
-excerpt: "Découvrez comment déployer un serveur OPCP via Horizon, en configurant réseaux, sous-réseaux, instances et clés SSH."
-updated: 2025-11-03
+title: "OPCP - Comment installer un noeud depuis l'interface Horizon"
+excerpt: "Découvrez comment déployer un noeud OPCP via Horizon, en configurant réseaux, sous-réseaux, instances et clés SSH."
+updated: 2025-11-06
 ---
 
 ## Objectif
 
-Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer d’un serveur installé et actif.  
-Ce guide détaille les étapes à suivre pour installer un serveur OPCP à partir de l’interface **Horizon**.
+Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer d’un noeud installé et actif.  
+Ce guide détaille les étapes à suivre pour installer un noeud OPCP à partir de l’interface **Horizon**.
 
 ---
 
@@ -25,12 +25,12 @@ Ce guide détaille les étapes à suivre pour installer un serveur OPCP à parti
 Connectez-vous à l’interface **Horizon** de votre environnement OPCP.  
 ![horizon-interface](images/01-log-to-horizon-step01.png){.thumbnail}
 
-Une fois connecté, sélectionnez le **projet** dans lequel vous souhaitez installer votre serveur.  
+Une fois connecté, sélectionnez le **projet** dans lequel vous souhaitez installer votre noeud.  
 ![horizon-select-project](images/01-log-to-horizon-step02.png){.thumbnail}
 
 ### 2. Création d’un réseau privé
 
-Avant de déployer votre serveur, il est généralement nécessaire de créer un **réseau privé** afin qu’il soit accessible au sein de votre infrastructure locale.
+Avant de déployer votre noeud, il est généralement nécessaire de créer un **réseau privé** afin qu’il soit accessible au sein de votre infrastructure locale.
 
 1. Dans le menu de gauche, cliquez sur **Network > Networks**.  
 ![horizon-network-networks](images/02-create-network-step01.png){.thumbnail}  
@@ -71,16 +71,16 @@ Avant de déployer votre serveur, il est généralement nécessaire de créer un
 |--------|--------------|
 | **Enable DHCP** | Laissez activé si vous souhaitez que les adresses IP soient attribuées automatiquement. |
 | **Allocation Pools** | Optionnel. Permet de définir une plage d’adresses IP spécifique. |
-| **DNS Name Servers** | Optionnel. Permet de spécifier un ou plusieurs serveurs DNS. |
+| **DNS Name Servers** | Optionnel. Permet de spécifier un ou plusieurs noeuds DNS. |
 | **Host Routes** | Optionnel. Permet d’ajouter des routes statiques. |
 
 ---
 
-### 3. Création d’un serveur
+### 3. Création d’un noeud
 
 1. Dans le menu de gauche, cliquez sur **Compute > Instances**.  
 ![horizon-compute-instances](images/03-create-instance-horizon-step01.png){.thumbnail}  
-2. Cliquez sur **Launch Instance** pour lancer la création d’un nouveau serveur.
+2. Cliquez sur **Launch Instance** pour lancer la création d’un nouveau noeud.
 ![horizon-compute-instances-launch-instance](images/03-create-instance-horizon-step02.png){.thumbnail}  
 
 #### Onglet : Details
@@ -89,10 +89,10 @@ Avant de déployer votre serveur, il est généralement nécessaire de créer un
 
 | Champ | Description |
 |--------|--------------|
-| **Instance Name** | Saisissez le nom du serveur à créer. |
+| **Instance Name** | Saisissez le nom du noeud à créer. |
 | **Description** | Optionnel. Ajoutez une description si nécessaire. |
 | **Availability Zone** | Laissez la valeur par défaut **nova**. |
-| **Count** | Indiquez le nombre de serveurs à déployer. |
+| **Count** | Indiquez le nombre de noeuds à déployer. |
 
 #### Onglet : Source
 
@@ -120,7 +120,7 @@ Vous pouvez également attacher un **port réseau** existant depuis l’onglet *
 
 ### 4. Gestion des paires de clés SSH
 
-> Bien que la sélection d’une clé SSH ne soit pas obligatoire dans Horizon, elle est **indispensable pour se connecter au serveur** une fois celui-ci créé.  
+> Bien que la sélection d’une clé SSH ne soit pas obligatoire dans Horizon, elle est **indispensable pour se connecter au noeud** une fois celui-ci créé.  
 
 ![horizon-compute-instances-launch-instance-key-pairs](images/03-create-instance-horizon-key-pairs.png){.thumbnail}  
 
@@ -138,7 +138,7 @@ Vous pouvez également attacher un **port réseau** existant depuis l’onglet *
 4. Copiez la clé privée avec **Copy Private Key to Clipboard**, puis cliquez sur **Done**.  
 ![horizon-compute-instances-launch-instance-key-pairs-create-step01](images/03-create-instance-horizon-key-pairs-create-step01.png){.thumbnail}  
 
-5. La clé est désormais sélectionnée par défaut. Cliquez sur **Launch Instance** pour démarrer la création du serveur.  
+5. La clé est désormais sélectionnée par défaut. Cliquez sur **Launch Instance** pour démarrer la création du noeud.  
 ![horizon-compute-instances-launch-instance-key-pairs-create-step02](images/03-create-instance-horizon-key-pairs-create-step02.png){.thumbnail}  
 
 #### Importer une clé existante
@@ -155,7 +155,7 @@ Vous pouvez également attacher un **port réseau** existant depuis l’onglet *
 3. Cliquez sur **Import Key Pair**.  
 ![horizon-compute-instances-launch-instance-key-pairs-import-step01](images/03-create-instance-horizon-key-pairs-import-step01.png){.thumbnail}  
 
-4. La clé est désormais sélectionnée par défaut. Cliquez sur **Launch Instance** pour démarrer la création du serveur.  
+4. La clé est désormais sélectionnée par défaut. Cliquez sur **Launch Instance** pour démarrer la création du noeud.  
 ![horizon-compute-instances-launch-instance-key-pairs-import-step02](images/03-create-instance-horizon-key-pairs-import-step02.png){.thumbnail}  
 
 ---
