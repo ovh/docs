@@ -1,41 +1,45 @@
 ---
-title: "OPCP - Comment configurer LACP sur un serveur"
-excerpt: "Apprenez à configurer un serveur dans OpenStack pour utiliser LACP (Link Aggregation Control Protocol)"
+title: "OPCP - Comment configurer LACP sur un noeud"
+excerpt: "Apprenez à configurer un noeud dans OpenStack pour utiliser LACP (Link Aggregation Control Protocol)"
 updated: 2025-11-06
 ---
 
 
 ## Objectif
 
-Ce guide explique comment configurer un **serveur** dans **OPCP** pour activer **LACP (Link Aggregation Control Protocol)**.  
-LACP permet d’agréger plusieurs interfaces réseau physiques afin d’augmenter la bande passante disponible et d’assurer la redondance réseau.  
-Cette configuration s’effectue au niveau du serveur et permet à OpenStack de déployer une instance avec les interfaces configurées correctement.
+Ce guide explique comment configurer un **noeud** dans **OPCP** pour activer **LACP (Link Aggregation Control Protocol)**.  
+La configuration de LACP doit être appliquée sur le noeud (serveur physique) avant de déployer une instance, afin que les interfaces réseau soient correctement agrégées.
+Nous verrons également comment configurer le bonding au niveau de votre instance pour tirer pleinement parti du **LACP**.
 
 > [!warning]
 > Un utilisateur standard ne peut pas configurer LACP lui-même.  
-> Vous devez être **opérateur**, ou disposer de **serveur disponible** dans votre projet OpenStack.
+> Vous devez être **opérateur**, ou disposer de **noeud disponible** dans votre projet OpenStack.
 >
 > Il est recommandé de configurer LACP **avant** le déploiement d’une instance.  
-> Ce guide **ne couvre pas** la configuration sur un système déjà en production.
+> Ce guide **ne couvre pas** la configuration sur un noeud déjà en production.
+
+## Pourquoi utiliser LACP ?
+
+LACP peut être utilisé dans deux cas d'usage précis :  
+
+- **Augmenter la capacité réseau.** En agrégeant plusieurs cartes réseau, vous pourrez ajouter la bande passante de chaque carte réseau ajoutée à cet agrégat, pour les mêmes réseaux.
+- **Augmenter la résilience.** Chaque serveur de OPCP bénéficie de 4 interfaces 25G. Chaque serveur est relié à deux switchs réseau (A&B) pour assurer la résilience en cas de panne matérielle de l'un d'entre eux. LACP permet de créer des interfaces virtuelles résilientes en cas de panne matérielle en aggrégant deux cartes réseau reliées sur des switchs distincts.
 
 ## Prérequis
 
 Avant de commencer, assurez-vous de disposer des éléments suivants :
 
 - Un accès **OpenStack CLI** configuré avec les droits nécessaires (`clouds.yaml` ou variables d’environnement).
-- Le rôle **operator** ou des serveur transférés dans votre projet.
-- Une compréhension basique des concepts suivants :
-  - serveur (Ironic)
-  - ports et groupes de ports dans OpenStack
-  - commandes `openstack baremetal`
+- Le rôle **operator** et/ou ou des noeuds transférés dans votre projet.
+- LACP est une configuration réseau spécifique, nécessitant des connaissances réseau et système avancées. Nous vous conseillons d'appliquer ce guide si vous connaissez déjà l'un ou plusieurs des concepts suivants : configuration de noeuds au sein de OpenStack Ironic, gestion des ports au sein de OpenStack Neutron, et la connaissance de la CLI OpenStack
 
 ## En pratique
 
-### Configuration du serveur
+### Configuration du noeud
 
-#### 1. Lister les serveur
+#### 1. Lister les noeuds
 
-La liste des serveurs disponibles dans votre projet peut être affichée avec la commande suivante :
+La liste des noeuds disponibles dans votre projet peut être affichée avec la commande suivante :
 
 ```bash
 openstack baremetal node list
@@ -55,21 +59,21 @@ openstack baremetal node list
 
 ---
 
-#### 2. Transférer la propriété d’un serveur (opérateur uniquement)
+#### 2. Transférer la propriété d’un noeud (admin uniquement)
 
-Un opérateur peut transférer la propriété d’un serveur à un projet (tenant) donné :
+Un admin peut transférer la propriété d’un noeud à un projet donné :
 
 ```bash
-openstack baremetal node set <node-id> --owner <tenant-id>
+openstack baremetal node set <node-id> --owner <project-id>
 ```
 
 ---
 
 #### 3. Lister les ports réseau
 
-Chaque carte réseau physique (NIC) d’un serveur est représentée dans OpenStack par un **port**.
+Chaque carte réseau physique, appelée Network Interface Card (NIC), d’un nœud est représentée dans OpenStack par un port.
 
-Pour afficher la liste des ports associés à un serveur :
+Pour afficher la liste des ports associés à un noeud :
 
 ```bash
 openstack baremetal port list --node <node-id>
@@ -88,11 +92,40 @@ openstack baremetal port list --node <node-id>
 +--------------------------------------+-------------------+
 ```
 
+Pour visualiser les détails d'un port, y compris les informations sur la connexion physique.
+Cela est particulièrement utile si vous souhaitez configurer un **bonding LACP 2x2**, en répartissant les NIC sur deux switches différents pour assurer une **meilleure redondance et tolérance aux pannes**.  
+
+```bash
+openstack baremetal port show <port-id>
+```
+
+**Exemple de sortie :**
+
+```bash
+openstack baremetal port show 71899d54-546d-4fdd-8d8b-52ad986bf425
++-----------------------+------------------------------------------------------------------------------------------------+
+| Field                 | Value                                                                                          |
++-----------------------+------------------------------------------------------------------------------------------------+
+| address               | 85:32:f2:89:66:f9                                                                             |
+| created_at            | 2025-01-06T10:43:38.020574+00:00                                                               |
+| extra                 | {}                                                                                             |
+| internal_info         | {}                                                                                             |
+| is_smartnic           | False                                                                                          |
+| local_link_connection | {'switch_id': 'c0:00:15:8c:33:78', 'port_id': 'Ethernet25/2', 'switch_info': 'demo-tor1b-a70'} |
+| node_uuid             | ddc7c763-74fc-4900-b9e6-5463233836b0                                                           |
+| physical_network      | None                                                                                           |
+| portgroup_uuid        | c3d3fcb3-7a92-4257-b944-736d222e8c4a                                                           |
+| pxe_enabled           | False                                                                                          |
+| updated_at            | 2025-11-06T09:52:46.355883+00:00                                                               |
+| uuid                  | 71899d54-546d-4fdd-8d8b-52ad986bf425                                                           |
++-----------------------+------------------------------------------------------------------------------------------------+
+```
+
 ---
 
 #### 4. Activer le mode maintenance
 
-Avant toute modification de configuration réseau, le serveur doit être placé en **mode maintenance** :
+Avant toute modification de configuration réseau, le noeud doit être placé en **mode maintenance**. Cela assure que ce noeud ne puisse pas être déployé durant toute l'opération  :
 
 ```bash
 openstack baremetal node maintenance set <node-id>
@@ -141,7 +174,7 @@ openstack baremetal port group create \
 
 #### 6. Associer les ports au groupe
 
-Chaque port du serveur doit être associé au groupe de ports créé :
+Chaque port du noeud doit être associé au groupe de ports créé :
 
 ```bash
 openstack baremetal port set --port-group <port-group-id> <port-id>
@@ -168,22 +201,13 @@ openstack baremetal node maintenance unset  <node-id>
 
 ---
 
-#### 8. Créer une instance sur le serveur configuré
+#### 8. Créer une instance sur le noeud configuré
 
-Une fois votre serveur configuré avec LACP, vous pouvez déployer une instance.
+Une fois votre noeud configuré avec LACP, vous pouvez déployer une instance.
 
-Par défaut, OpenStack sélectionne un hôte selon le **flavor** choisi et les **règles du scheduler**, ce qui ne garantit pas que le serveur que vous venez de configuré sera utilisé.
+Par défaut, OpenStack sélectionne un hôte en fonction du **flavor** choisi et des **règles du scheduler**, ce qui ne garantit pas que le noeud que vous venez de configurer sera utilisé.
 
-Deux solutions existent :
-
-##### Option 1 — Créer un flavor spécifique
-
-Définissez un flavor qui ne correspond qu’à votre serveur  
-Cependant, cela peut être peu pratique si chaque projet doit avoir son propre flavor.
-
-##### Option 2 — Utiliser une zone de disponibilité
-
-Vous pouvez cibler un serveur précis en utilisant sa **zone de disponibilité** :
+Pour vous assurer que votre instance sera déployée sur ce nœud précis, vous pouvez cibler ce dernier utilisant sa **zone de disponibilité** :
 
 ```bash
 openstack server create --availability-zone "nova::<node-id>"
@@ -206,7 +230,7 @@ openstack server create --image <image-name> \
 
 | Étape | Action | Commande |
 |-------|---------|-----------|
-| 1 | Lister les serveurs | `openstack baremetal node list` |
+| 1 | Lister les noeuds | `openstack baremetal node list` |
 | 2 | Transférer la propriété | `openstack baremetal node set <node-id> --owner <tenant-id>` |
 | 3 | Lister les ports | `openstack baremetal port list --node <node-id>` |
 | 4 | Activer le mode maintenance | `openstack baremetal node maintenance set <node-id>` |
@@ -216,6 +240,8 @@ openstack server create --image <image-name> \
 | 8 | Créer une instance | `openstack server create --image <image-name> --nic net-id=<network-1> --flavor <flavor-id> --key-name <keypair-name> --availability-zone "nova::<node-id>" <instance-name>` |
 
 ### Configuration du système d’exploitation de l’instance
+
+Après avoir configuré votre noeud dans OpenStack et déployé un système d’exploitation, il reste à configurer le réseau afin de bénéficier du network bonding, qui permet d’agréger plusieurs interfaces réseau pour plus de performance et de redondance.
 
 #### Vérifier la configuration du bonding
 
@@ -258,9 +284,13 @@ Transmit Hash Policy: layer2 (0)
 
 ##### 1. Changement à chaud (non persistant)
 
+Si vous souhaitez tester votre configuration manuellement, vous pouvez utiliser la commande suivante :
+
 ```bash
 sudo ip link set bond0 type bond xmit_hash_policy layer3+4
 ```
+
+Attention, cette configuration sera réinitialisée si votre machine redémarre.
 
 #### 2. Changement persistant (exemple via Netplan et cloud-init)
 
@@ -296,20 +326,20 @@ Puis appliquez la configuration en rédémarrant l'instance.
 
 #### 3. Tester la bande passante avec `iperf3`
 
-Pour tester correctement LACP, vous devez disposer de **2 serveurs** dans le **même réseau**, tous deux configurés avec LACP.
+Pour tester correctement LACP, vous devez disposer de **2 noeuds** dans le **même réseau**, tous deux configurés avec LACP.
 
-##### Serveur Iperf3 (serveur 1)
+##### noeud Iperf3 (noeud 1)
 
 ```bash
 iperf3 -s
 ```
 
-##### Client Iperf3 (serveur 2)
+##### Client Iperf3 (noeud 2)
 
 Utilisez `-P` pour générer plusieurs flux parallèles, afin d’atteindre la bande passante maximale.
 
 ```bash
-iperf3 -c <ip-du-serveur> -P 64
+iperf3 -c <ip-du-noeud> -P 64
 ```
 
 ##### Exemple de résultat
@@ -318,7 +348,7 @@ iperf3 -c <ip-du-serveur> -P 64
 [SUM] 0.0000-10.0121 sec   110 GBytes  94.0 Gbits/sec
 ```
 
-Avec un lien 4×25 Gbps, vous devriez atteindre environ **100 Gbps**.
+Avec un lien 4×25 Gbps, vous devriez atteindre environ **100 Gbps**.  
 Il peux être nécessaire d'ajuster certains paramètres système pour exploiter pleinement cette capacité.
 
 ---
@@ -327,7 +357,7 @@ Il peux être nécessaire d'ajuster certains paramètres système pour exploiter
 
 Vous avez configuré :
 
-- Le **LACP (802.3ad)** au niveau du serveur Baremetal OpenStack,  
+- Le **LACP (802.3ad)** au niveau du noeud Baremetal OpenStack,  
 - Le **paramétrage du bonding** dans l’OS invité,  
 - Et validé la **performance réseau** via `iperf3`.
 
