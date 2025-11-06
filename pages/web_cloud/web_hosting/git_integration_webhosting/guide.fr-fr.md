@@ -68,7 +68,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> - Clé SSH (pour un dépôt GitHub privé)
 >> - Webhook (optionnel)
 >>
->> Poursuivez la lecture de ce guide pour remplir les champs demandés.
+>> Poursuivez la lecture de ce guide afin d'obtenir les informations nécessaires pour compléter les champs requis.
 
 #### Définir le dépôt GitHub
 
@@ -174,7 +174,7 @@ Une bannière verte vous indique que Git est en cours d'activation. Suivez l'act
 
 Le statut `En cours`{.action} indique que l'association de Git est en cours. Le processus peut prendre plusieurs minutes. Lorsque la tâche est achevée, le statut `Activé`{.action} s'affiche.
 
-Vous pouvez également suivre l'évolution de l'activation de Git depuis l'onglet `Mes sites`{.action}. Dans la colonne `Git`{.action} du tableau, la mention `En cours`{.action} présente dans la ligne du site web concerné vous indique que Git est en cours d'activation.
+Vous pouvez également suivre l'évolution de l'activation de Git depuis l'onglet `Mes sites`{.action}. Dans la colonne `Git`{.action} du tableau, la mention `En cours`{.action} présente sur la ligne du site web concerné vous indique que Git est en cours d'activation.
 
 Lorsque l'association de Git est effectuée, le statut `Activé`{.action} apparaît dans la colonne `Git`{.action} pour le site web concerné.
 
@@ -232,7 +232,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> >
 >> > Pour éviter de perdre vos modifications locales, pensez à les enregistrer avant de les écraser par les modifications de la branche distante.
 >>
->> La nouvelle version de votre site web a bien été déployée sur votre hébergement OVHcloud. Si d'autres personnes travaillent sur le même projet et qu'ils apportent des modifications sur le dépôt GitHub, alors vous pouvez [configurer un webhook sur GitHub](#configureWebhook) pour que leurs modifications soient déployées automatiquement sur votre hébergement web. Cela vous évite de déployer Git manuellement, et votre hébergement web restera toujours à jour.
+>> La nouvelle version de votre site web a bien été déployée sur votre hébergement web OVHcloud. Si d'autres personnes travaillent sur le même projet et apportent des modifications au dépôt GitHub, vous pouvez [configurer un webhook sur GitHub](#configureWebhook) afin que leurs modifications soient automatiquement déployées sur votre hébergement web. Cela vous évite de déployer Git manuellement, et votre site web restera toujours à jour.
 
 ### Modifier un nom de domaine
 
@@ -263,7 +263,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Modifier le domaine`{.action}
+>> Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Modifier le domaine`{.action}.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
@@ -271,21 +271,21 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >>  Deux scénarios sont possibles :
 >>
->> **1 - Le nom de domaine n'est pas le seul attaché au site web**
+>> **1 - Un ou plusieurs autres noms de domaine sont attachés au site web**
 >>
->> La fenêtre suivante s'affiche.
+>> La fenêtre suivante s'affiche :
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step1.png){.thumbnail}
 >>
->> Modifiez les informations de votre choix et cliquez sur `Suivant`{.action}.
+>> Modifiez les informations selon vos besoins et cliquez sur `Suivant`{.action}.
 >>
->> Une deuxième fenêtre de confirmation s'affiche avec le récapitulatif de vos changements.
+>> Une deuxième fenêtre de confirmation s'affiche avec le récapitulatif de vos changements :
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 >>
->> Cliquez sur `Confirmer`{.action} pour validez les modifications de votre nom de domaine.
+>> Cliquez sur `Confirmer`{.action} pour valider les modifications de votre nom de domaine.
 >>
->> **2 - Le nom de domaine est le seul attaché au site web**
+>> **2 - Un seul nom de domaine est attaché au site web**
 >>
 >> La fenêtre suivante s'affiche :
 >>
@@ -330,15 +330,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >>  Deux scénarios sont possibles :
 >>
->> **1 - Le nom de domaine n'est pas le seul attaché au site web**
+>> **1 - Un ou plusieurs autres noms de domaine sont attachés au site web**
 >>
 >> La fenêtre suivante s'affiche.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 >>
->> Cliquez sur `Confirmer`{.action} pour validez le détachement de votre nom de domaine.
+>> Cliquez sur `Confirmer`{.action} pour valider le détachement de votre nom de domaine.
 >>
->> **2 - Le nom de domaine est le seul attaché au site web**
+>> **2 - Un seul nom de domaine est attaché au site web**
 >>
 >> La fenêtre suivante s'affiche :
 >>
@@ -379,10 +379,10 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Les informations suivantes s'affichent :
 >>
->> - Clé SSH : si vous ne l'avez pas déjà fait, [enregistrez votre clé SSH dans votre compte GitHub](#linkSSHKey).
->> - Dépôt : adresse de votre dépôt Git. Ce champ est grisé car vous ne pouvez pas modifier l'adresse du dépôt Git. Pour changer l'URL du dépôt Git, vous devez [supprimer l'association Git de votre répertoire](#deleteGitAssociation) puis à nouveau [associer le répertoire à Git](#associateGitRepo).
->> - Branche : nom de la branche du dépôt GitHub. Vous pouvez modifier ce champ.
->> - URL de webhook : si vous souhaitez optimisez vos déploiements sur Git, [configurez le webhook sur GitHub](#configureWebhook).
+>> - Clé SSH : Si vous ne l'avez pas déjà fait, [enregistrez votre clé SSH dans votre compte GitHub](#linkSSHKey).
+>> - Dépôt : Adresse de votre dépôt Git. Ce champ est grisé car vous ne pouvez pas modifier l'adresse du dépôt Git. Pour changer l'URL du dépôt Git, vous devez [supprimer l'association Git de votre répertoire](#deleteGitAssociation) puis à nouveau [associer le répertoire à Git](#associateGitRepo).
+>> - Branche : Nom de la branche du dépôt GitHub. Vous pouvez si besoin modifier ce champ.
+>> - URL de webhook : Si vous souhaitez optimisez vos déploiements sur Git, [configurez le webhook sur GitHub](#configureWebhook).
 
 ### Informations du dernier déploiement
 
@@ -458,7 +458,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
 >>
->> Cliquez sur `Confirmer`{.action} pour valider la suppression de l'association Git de votre répertoire ainsi que son contenu.
+>> Cliquez sur `Confirmer`{.action} pour valider la suppression de l'association Git de votre répertoire ainsi que de son contenu.
 >>
 >> 2\.	Si vous ne cochez pas la case, la fenêtre suivante s'affiche :
 >>
@@ -503,7 +503,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 5**
 >>
->> En bas du formulaire qui s'affiche, identifiez l'adresse du champ `URL de webhook`{.action} et copiez-la. Vous devez maintenant enregistrer l'URL et configurer le webhook sur votre compte GitHub.
+>> En bas du formulaire qui s'affiche, copiez l'adresse contenue dans le champ `URL de webhook`{.action}. Vous devez maintenant enregistrer l'URL et configurer le webhook sur votre compte GitHub.
 
 #### Configurer le webhook <a name="configureWebhook"></a>
 
