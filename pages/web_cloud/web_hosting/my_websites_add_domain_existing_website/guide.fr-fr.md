@@ -188,7 +188,7 @@ Cette option e-mail peut être activée pour **un seul** nom de domaine. Cela si
 
 N'hésitez pas à consulter [notre guide dédié](/pages/web_cloud/web_hosting/activate-email-hosting) pour plus de détails sur l'activation de cette option.
 
-## Aller
+## Aller plus loin
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
