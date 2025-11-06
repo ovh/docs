@@ -25,14 +25,12 @@ Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamique
 > [!primary]
 >
 > Pour l'association et la configuration de Git, vous devrez effectuer des modifications dans votre compte GitHub. Avant de commencer le guide, connectez-vous à votre compte GitHub.
->
 
 ### Associer un répertoire à Git <a name="associateGitRepo"></a>
 
 > [!warning]
 >
 > Lorsque vous associez un répertoire à Git, tous les noms de domaine présents sur ce répertoire seront également associés à Git. Par exemple, si le répertoire correspondant au site web que vous associez est `www`, alors tous les noms de domaine associés au répertoire `www` seront également associés à Git.
->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
