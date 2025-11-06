@@ -182,7 +182,7 @@ Do you want to remove the signature? [Y]es/[N]o:
 
 Geben Sie `n` ein und fahren Sie fort.
 
-Die Antwort `y` würde bedeuten, dass das vorhandene ext4-Dateisystem auf Partition 1 überschrieben und die darin enthaltenen Daten gelöscht werden.
+Die Antwort `y` bewirkt, dass das vorhandene ext4-Dateisystem auf Partition 1 überschrieben und die darin enthaltenen Daten gelöscht werden.
 
 ### Die Partition bootfähig machen
 
@@ -221,7 +221,7 @@ The filesystem on /dev/sdb1 is now 5242624 blocks long.
 
 ### Überprüfung der Ergebnisse
 
-Um zu überprüfen, ob das Erweitern funktioniert hat, können Sie die neu erstellte Partition einhängen und sich die Größe ansehen.
+Um zu überprüfen, ob das Erweitern funktioniert hat, können Sie die neu erstellte Partition mounten und sich die Größe ansehen.
 
 ```sh
 mount /dev/sdb1 /mnt
