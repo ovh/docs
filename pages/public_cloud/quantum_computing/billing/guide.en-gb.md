@@ -132,7 +132,7 @@ This storage is not billed as it is directly linked to the compute resource(s) y
 >> 
 >> Also, price calculation for remote Object Storage : 1000 (GB) x 0,01€ (price for object storage / GB) = **10 euros**, billed at the end of the month.
 >> 
->> **#### **Example 4: 15 CPU notebooks for 5 hours then deleted**
+>> **Example 4: 15 CPU notebooks for 5 hours then deleted**
 >> 
 >> We start 15 Quantum Notebooks, each of them with one vCPU
 >> 
