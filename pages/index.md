@@ -553,6 +553,7 @@
     + [OPCP](hosted-private-cloud-opcp)
         + [Getting started](hosted-private-cloud-opcp-getting-started)
             + [How to use API and get credentials](hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
+            + [Node lifecycle](hosted_private_cloud/opcp/node-lifecycle)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix-on-ovhcloud)
         + [Getting started](hosted-private-cloud-nutanix-on-ovhcloud-getting-started)
             + [Nutanix global high-level documentation](hosted_private_cloud/nutanix_on_ovhcloud/01-global-high-level-doc)
