@@ -1,7 +1,7 @@
 ---
 title: 'Migration d’instances entre zones de disponibilité (AZ)'
 excerpt: 'Ce guide décrit comment migrer une instance Public Cloud OVHcloud entre deux zones de disponibilité (AZ), 1AZ et 3AZ. Il couvre les étapes de sauvegarde, transfert et recréation, avec instructions via le Manager, Horizon ou la CLI OpenStack.'
-updated: 2025-11-04
+updated: 2025-10-15
 ---
 
 ## Objectifs
@@ -36,6 +36,8 @@ OVHcloud propose deux types de sauvegardes, avec des comportements différents s
 > Si votre sauvegarde locale a été effectuée dans une région 3AZ et que vous souhaitez recréer l’instance dans une autre AZ de cette même région, aucun transfert n’est nécessaire.
 >
 > Les sauvegardes locales sont accessibles depuis toutes les zones de disponibilité d’une région 3AZ. Vous pouvez directement passer à l’étape de recréation de l’instance.
+>
+> Actuellement, la création d'une sauvegarde distante n'est pas disponible via l'espace client OVHcloud. Vous ne pouvez effectuer cette action que via l'API OVHcloud ou OpenStack.
 >
 
 La sauvegarde d'une instance peut être réalisée :

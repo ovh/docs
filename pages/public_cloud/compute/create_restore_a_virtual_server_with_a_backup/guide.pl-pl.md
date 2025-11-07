@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie / przywracanie serwera wirtualnego na podstawie kopii zapasowej'
 excerpt: 'Dowiedz się, jak utworzyć lub przywrócić kopię zapasową instancji'
-updated: 2025-11-04
+updated: 2025-10-15
 ---
 
 ## Wprowadzenie
@@ -20,17 +20,6 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
-
-> [!primary]
->
-> Dostępne są dwa typy kopii zapasowych:
->
-> - Lokalna: przechowywana w tej samej regionie co Twoja instancja.
-> - Dystansowa: automatycznie replikowana w innym regionie, który wybierzesz.
->
-> Operacje **tworzenia** i **przywracania** instancji z odległej kopii zapasowej są w pełni obsługiwane przez API OVHcloud, co zapewnia większą elastyczność i łatwą integrację z procesami automatyzacji.
->
-> **Uwaga :** Te operacje nie są jeszcze dostępne za pośrednictwem Panelu klienta OVHcloud.
 
 ### Tworzenie instancji na podstawie kopii zapasowej
 

@@ -1,7 +1,7 @@
 ---
 title: "Migration von Instanzen zwischen verschiedenen Regionen"
 excerpt: "Erfahren Sie, wie Sie eine OVHcloud Public Cloud-Instanz zwischen 1AZ und 3AZ Regionen migrieren."
-updated: 2025-11-04
+updated: 2025-10-15
 ---
 
 ## Ziel
@@ -36,6 +36,8 @@ OVHcloud bietet zwei Arten von Backups an, mit unterschiedlichem Verhalten, abh�
 > Wenn Ihr lokales Backup in einer 3AZ-Region durchgeführt wurde und Sie die Instanz in einer anderen AZ innerhalb derselben Region wiederherstellen möchten, ist keine Übertragung erforderlich.
 >
 > Lokale Backups sind in allen Verfügbarkeitszonen innerhalb einer 3AZ-Region zugänglich. Sie können direkt zum Schritt der Instanzneuanlage übergehen.
+>
+> Derzeit ist die Erstellung eines Distanz-Backups nicht über das OVHcloud Kundencenter möglich. Diesen Vorgang können Sie nur über die OVHcloud API oder OpenStack durchführen.
 >
 
 Eine Instanz kann gesichert werden:

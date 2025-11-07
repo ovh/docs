@@ -47,8 +47,7 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 >
 > Cada copia de seguridad se factura por separado. La copia de seguridad remota se facturará según la tarifa de almacenamiento de la región remota seleccionada.
 >
-> **Nota :** las Local Zones no son compatibles con copias de seguridad remotas.
-
+> Actualmente, la creación de una copia de seguridad remota no está disponible a través del área de cliente de OVHcloud. Solo puede hacerlo a través de la API OVHcloud y Openstack.
 
 > [!tabs]
 > A través del área de cliente de OVHcloud
@@ -67,31 +66,17 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 >>
 >> ///
 >>
->> /// details | Copia de seguridad remota
+>> No es posible seguir el progreso del backup en tiempo real. Sin embargo, puede consultar el estado del backup en la sección `Instance Backup`{.action} bajo la sección **Compute** del menú de la izquierda, donde se mostrará el estado `Backup en curso`.
 >>
->> Introduzca un nombre para la copia de seguridad y revise la información de precios. Haga clic en `Añadir una copia de seguridad remota (Opción)`{.action}, introduzca un nombre para la copia de seguridad remota, seleccione una región y haga clic en `Confirmar`{.action}.
->>
->> ![public-cloud-instance-backup](images/createdistantbackup.png){.thumbnail}
->>
->> ///
->>
->> No es posible seguir el progreso de la copia de seguridad en tiempo real. Sin embargo, puede consultar el estado de la copia de seguridad en la sección `Instance Backup`{.action} bajo la sección **Compute** del menú izquierdo, donde se mostrará el estado `Copia de seguridad en curso` durante el proceso.
+>> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 >>
 >> Una vez finalizado el backup, este estará disponible en la sección `Instance Backup`{.action} bajo la sección **Compute** en el menú de la izquierda.
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
 > A través de la API de OVHcloud <a name="createinstanceviaapi"></a>
->> Inicie sesión en [la API de OVHcloud](/links/console).
 >>
->> Puede listar todas las regiones disponibles utilizando la siguiente llamada a la API:
->>
->> > [!api]
->> >
->> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region
->> >
->>
->> Utilice a continuación la siguiente llamada a la API:
+>> Inicie sesión en la [API de OVHcloud](/links/console) y utilice la siguiente llamada a la API:
 >>
 >> > [!api]
 >> >
@@ -124,12 +109,6 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
->> ```
->>
->> Puede listar todas las regiones disponibles utilizando el siguiente comando:
->>
->> ```bash
->> $ openstack region list
 >> ```
 >>
 >> /// details | Backup local

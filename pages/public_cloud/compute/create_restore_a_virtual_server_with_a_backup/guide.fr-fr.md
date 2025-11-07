@@ -1,7 +1,7 @@
 ---
 title: 'Créer / restaurer un serveur virtuel a partir d’une sauvegarde'
 excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d’une instance'
-updated: 2025-11-04
+updated: 2025-10-15
 ---
 
 ## Objectif
@@ -20,18 +20,6 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 - Être connecté à [l'espace client OVHcloud](/links/manager).
 
 ## En pratique
-
-> [!primary]
->
-> Deux types de sauvegardes sont disponibles :
->
-> - Locale : stockée dans la même région que votre instance.
-> - Distante : automatiquement répliquée dans une autre région de votre choix.
->
-> Les opérations de **création** et de **restauration** d'une instance depuis une sauvegarde distante sont entièrement prises en charge via l’API OVHcloud, offrant une plus grande flexibilité et une intégration facilitée dans vos processus d’automatisation.
->
-> **Note :** Ces opérations ne sont pas encore disponibles depuis l’espace client OVHcloud.
->
 
 ### Créer une instance a partir d'une sauvegarde
 

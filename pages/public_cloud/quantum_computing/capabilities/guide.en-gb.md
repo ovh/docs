@@ -148,14 +148,12 @@ OVHcloud Quantum Notebooks comes with pre-installed Quantum environments.
 List of available Quantum Environments:
 
 - Alice & Bob Felis
-- Atos myQLM
 - C12
-- IBM Qiskit
-- IQM SQK
+- Atos myQLM
 - Pasqal Pulser
-- Pasqal Pulser for QPU
-- QPerfect MIMIQ
 - Quandela Perceval
+- IBM Qiskit
+- QPerfect MIMIQ
 - Quobly
 
 #### Environment customization

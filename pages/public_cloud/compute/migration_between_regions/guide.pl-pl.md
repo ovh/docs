@@ -1,7 +1,7 @@
 ---
 title: 'Migracja instancji między różnymi regionami'
 excerpt: 'Przewodnik opisuje, jak migrować instancję OVHcloud Public Cloud między dwoma regionami, 1AZ i 3AZ. Obejmuje kroki tworzenia kopii zapasowej, transferu i ponownego tworzenia, z instrukcjami za pomocą Managera, Horizon lub OpenStack CLI.'
-updated: 2025-11-04
+updated: 2025-10-15
 ---
 
 ## Wprowadzenie
@@ -36,6 +36,8 @@ OVHcloud oferuje dwa typy kopii zapasowych, z różnymi zachowaniami w zależno�
 > Jeśli Twoja lokalna kopia zapasowa została wykonana w regionie 3AZ i chcesz ponownie utworzyć instancję w innym AZ w tym samym regionie, nie jest wymagany transfer.
 >
 > Lokalne kopie zapasowe są dostępne ze wszystkich stref dostępności w regionie 3AZ. Możesz przejść bezpośrednio do etapu ponownego tworzenia instancji.
+>
+> Obecnie tworzenie odległej kopii zapasowej nie jest dostępne za pomocą Panelu klienta OVHcloud. Można to zrobić tylko za pomocą API OVHcloud lub OpenStack.
 >
 
 Instancję można zabezpieczyć:

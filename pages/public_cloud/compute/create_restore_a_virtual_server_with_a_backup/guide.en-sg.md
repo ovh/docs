@@ -1,7 +1,7 @@
 ---
 title: Using instance backups to create or restore an instance
 excerpt: Find out how to restore an instance or create a new one from a backup
-updated: 2025-11-04
+updated: 2025-10-15
 ---
 
 ## Objective
@@ -20,18 +20,6 @@ You can make use of these instance backups for two basic purposes:
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
-
-> [!primary]
->
-> Two types of backups are available:
->
-> - Local: Stored in the same region as your instance.
-> - Distant: Automatically replicated in another region of your choice.
->
-> The operations of **creating** and **restoring** an instance from a distant backup are fully supported via the OVHcloud API, offering greater flexibility and effortless integration into your automation processes.
->
-> **Note :** These operations are not yet available through the OVHcloud Control Panel.
->
 
 ### Creating an instance from a backup
 
