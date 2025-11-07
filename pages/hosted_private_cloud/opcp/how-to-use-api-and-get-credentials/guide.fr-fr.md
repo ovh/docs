@@ -1,27 +1,26 @@
 ---
 title: "OPCP - Comment utiliser les API et obtenir les informations d'identification"
 excerpt: "Découvrez les étapes nécessaires pour configurer Keycloak et le CLI OpenStack afin de permettre l’authentification via Keycloak"
-updated: 2025-11-05
+updated: 2025-11-07
 ---
 
 ## Objectif
 
-**OPCP** intégre une authentification centralisée avec **Keycloak**. Il est donc nécessaire de configurer le **CLI OpenStack** afin qu’il utilise Keycloak comme fournisseur d’identité (Identity Provider).
+**OPCP** intégre une authentification centralisée avec **Keycloak**. Il est donc nécessaire de configurer la **CLI OpenStack** afin qu’il utilise Keycloak comme fournisseur d’identité (Identity Provider).
 
-**Ce guide décrit les étapes nécessaires pour configurer **Keycloak** et le **CLI OpenStack** afin de permettre l’authentification via Keycloak.**
-  
+**Ce guide décrit les étapes nécessaires pour configurer **Keycloak** et la **CLI OpenStack** afin de permettre l’authentification via Keycloak.**
+
 ## Prérequis
 
 - Être administrateur de l'infrastructure [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) et avoir accès à l'interface d'administration (admin.dashboard).
 - Avoir accès à l'interface d'administration Keyloack admin.
-- Avoir un utilisateur avec les droits suffisants pour se connecter à Horizon sur l'offre OPCP.
-
+- Avoir un utilisateur avec les droits suffisants pour se connecter à [Horizon](https://horizon.cloud.ovh.net/auth/login/) sur l'offre OPCP.
 
 ## En pratique
 
-### 1. Création d’un client Keycloak pour le CLI OpenStack
+### Création d’un client Keycloak pour la CLI OpenStack
 
-Un **client Keycloak dédié** est requis afin de permettre au CLI OpenStack de communiquer de manière sécurisée avec le serveur Keycloak.
+Un client **Keycloak dédié** est nécessaire pour permettre à la CLI OpenStack de communiquer de manière sécurisée avec le serveur Keycloak.
 
 #### Étapes
 
@@ -39,7 +38,7 @@ Un **client Keycloak dédié** est requis afin de permettre au CLI OpenStack de 
    - Cliquez sur `Suivant`{.action}.
 
 3. **Activation de l’authentification du client**
-   - Activez **Client Authentication** (mettre sur **ON**).  
+   - Activez le **Client Authentication** (mettre sur **ON**).  
    - Cliquez sur `Suivant`{.action}, puis sur `Enregistrer`{.action}.
 
 4. **Configuration des portées (Client Scopes)**
@@ -70,9 +69,9 @@ Un **client Keycloak dédié** est requis afin de permettre au CLI OpenStack de 
   
 ---
 
-### 2. Configuration du CLI OpenStack
+### Configuration de la CLI OpenStack
 
-Une fois le client Keycloak créé, le CLI OpenStack doit être configuré pour utiliser ce client comme fournisseur d’identité OIDC (OpenID Connect).
+Une fois le client Keycloak créé, la CLI OpenStack doit être configurée pour utiliser ce client comme fournisseur d'identité OIDC (OpenID Connect).
 
 #### Étapes
 
@@ -164,7 +163,7 @@ Une fois le client Keycloak créé, le CLI OpenStack doit être configuré pour 
     export http_proxy=http://your-adress-ip:port/
     ```
 
-### 3. Vérification de la configuration
+### Vérification de la configuration
 
 Vous pouvez tester votre configuration à l’aide de quelques commandes simples :
 
@@ -178,7 +177,7 @@ Si ces commandes retournent des résultats, l’intégration **Keycloak ↔ Open
 
 ---
 
-### 4. Dépannage (Troubleshooting)
+### Dépannage (Troubleshooting)
 
 | Problème | Cause possible | Solution |
 |-----------|----------------|-----------|
@@ -188,7 +187,7 @@ Si ces commandes retournent des résultats, l’intégration **Keycloak ↔ Open
 
 ---
 
-### 5. Références
+### Références
 
 - [Documentation Keycloak – OpenID Connect](https://www.keycloak.org/docs/latest/server_admin/#_oidc)
 - [Documentation OpenStack Keystone](https://docs.openstack.org/keystone/latest/)
