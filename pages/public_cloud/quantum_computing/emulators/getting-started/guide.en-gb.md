@@ -17,7 +17,7 @@ A **Notebook** is a document that integrates code, rich text elements, and multi
 
 ## Objective
 
-This guide demonstrates how to create, configure, access, stop, restart, and delete a Quantum Emulators Notebook from the **OVHcloud Control Panel (UI)**. This method is user-friendly and ideal for beginners.
+This guide demonstrates how to create, configure, access, stop, restart and delete a Quantum Emulators Notebook from the **OVHcloud Control Panel (UI)**. This method is user-friendly and ideal for beginners.
 
 Alternatively, you can use one of the following methods:
 
@@ -40,7 +40,7 @@ Each method offers its distinct advantages, depending on your expertise and pref
 If you're using the CLI, API, or SDK, you will need to complete an authorization process before creating a Quantum Emulators Notebook. To do so, follow these steps:
 
 1. Log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Public Cloud`{.action} section.
-2. Select the Public Cloud project you want to use and click the `Quantum QPUs`{.action} category.
+2. Select the Public Cloud project you want to use and click the `Quantum Emulators`{.action} category.
 3. Click the `Create a Notebook`{.action} button. The authorization process will take place silently in the background.
 
 ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
@@ -52,7 +52,7 @@ To create a Quantum Notebook, follow these steps:
 > [!tabs]
 > **Using the Control Panel (UI)**
 >> 
->> Navigate to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager) and click the `Quantum computing`{.action} category.
+>> Navigate to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager), click the `Quantum Emulators`{.action} category.
 >> Click the `Create a Notebook`{.action} button and follow the prompts to specify the configuration of your Quantum Notebook.
 >>
 >> ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
@@ -216,7 +216,7 @@ Once your Quantum Notebook is created and running, you can access it using the `
 > [!tabs]
 > **Using the Control Panel (UI)**
 >> 
->> Click the `JupyterLab`{.action} link in the `Access` column:
+>> Click the `JupyterLab`{.action} link in the `Publisher` column:
 >> 
 >> ![Accessing a Notebook Control Panel manager 1](images/accessing-a-notebook-using-UI-1.png){.thumbnail}
 >> 
@@ -321,7 +321,7 @@ You can stop your Quantum Notebook at any time to release its compute resources.
 > **Using the Control Panel (UI)**
 >> 
 >> Go to the Quantum Notebooks board and click on the `...`{.action} button next to the Notebook you want to stop.
-Click the `Stop`{.action} button to stop the Notebook. Or, on the notebook board, you can click on the `red button`{.action} at the top of the page.
+>> Click the `Stop`{.action} button to stop the Notebook. Or, on the notebook board, you can click on the `red button`{.action} at the top of the page.
 >> 
 >> ![Stop a Notebook Control Panel manager](images/stopping-a-notebook-using-UI.png){.thumbnail}
 >> 
@@ -363,7 +363,7 @@ To restart a stopped Notebook, follow these steps:
 > **Using the Control Panel (UI)**
 >> 
 >> Go to the Quantum Notebooks board and click on the `...`{.action} button next to the Notebook you want to restart.
-Click the `Start` button to restart the Notebook. Or, on the notebook board, you can click on the `blue button`{.action} at the top of the page.
+>> Click the `Start` button to restart the Notebook. Or, on the notebook board, you can click on the `blue button`{.action} at the top of the page.
 >> 
 >> ![Restart a Notebook Control Panel manager](images/restarting-a-notebook-using-UI.png){.thumbnail}
 >> 

@@ -52,7 +52,7 @@ To create a Quantum Notebook, follow these steps:
 > [!tabs]
 > **Using the Control Panel (UI)**
 >> 
->> Navigate to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager) and click the `Quantum computing`{.action} category.
+>> Navigate to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager) and click the `Quantum QPUs`{.action} category.
 >> Click the `Create a Notebook`{.action} button and follow the prompts to specify the configuration of your Quantum Notebook.
 >>
 >> ![Create a Notebook Control Panel manager 01](images/creating-a-notebook-using-UI-01.png){.thumbnail}
@@ -324,7 +324,7 @@ You can stop your Quantum Notebook at any time to release its compute resources.
 > **Using the Control Panel (UI)**
 >> 
 >> Go to the Quantum Notebooks board and click on the `...`{.action} button next to the Notebook you want to stop.
-Click the `Stop`{.action} button to stop the Notebook. Or, on the notebook board, you can click on the `red button`{.action} at the top of the page.
+>> Click the `Stop`{.action} button to stop the Notebook. Or, on the notebook board, you can click on the `red button`{.action} at the top of the page.
 >> 
 >> ![Stop a Notebook Control Panel manager](images/stopping-a-notebook-using-UI.png){.thumbnail}
 >> 
@@ -366,7 +366,7 @@ To restart a stopped Notebook, follow these steps:
 > **Using the Control Panel (UI)**
 >> 
 >> Go to the Quantum Notebooks board and click on the `...`{.action} button next to the Notebook you want to restart.
-Click the `Start` button to restart the Notebook. Or, on the notebook board, you can click on the `blue button`{.action} at the top of the page.
+>> Click the `Start` button to restart the Notebook. Or, on the notebook board, you can click on the `blue button`{.action} at the top of the page.
 >> 
 >> ![Restart a Notebook Control Panel manager](images/restarting-a-notebook-using-UI.png){.thumbnail}
 >> 
