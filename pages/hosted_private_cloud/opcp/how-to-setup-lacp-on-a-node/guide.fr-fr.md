@@ -1,22 +1,22 @@
 ---
 title: "OPCP - Comment configurer LACP sur un noeud"
 excerpt: "Apprenez à configurer un noeud dans OpenStack pour utiliser LACP (Link Aggregation Control Protocol)"
-updated: 2025-11-06
+updated: 2025-11-07
 ---
 
 
 ## Objectif
 
-Ce guide explique comment configurer un **noeud** dans **OPCP** pour activer **LACP (Link Aggregation Control Protocol)**.  
-La configuration de LACP doit être appliquée sur le noeud (serveur physique) avant de déployer une instance, afin que les interfaces réseau soient correctement agrégées.
-Nous verrons également comment configurer le bonding au niveau de votre instance pour tirer pleinement parti du **LACP**.
+Ce guide explique comment configurer un **noeud** (serveur physique) dans **OPCP** pour activer **LACP (Link Aggregation Control Protocol)**.  
+La configuration de LACP doit être appliquée sur le noeud avant de déployer une instance, afin que les interfaces réseau soient correctement agrégées.
+Nous verrons également comment configurer le **bonding** (association logique de plusieurs interfaces réseau pour former une seule interface virtuelle) au niveau de votre instance, afin de tirer pleinement parti du **LACP**.
 
 > [!warning]
 > Un utilisateur standard ne peut pas configurer LACP lui-même.  
-> Vous devez être **opérateur**, ou disposer de **noeud disponible** dans votre projet OpenStack.
+> Vous devez être **admin**, ou disposer de **noeud disponible** dans votre projet OpenStack.
 >
 > Il est recommandé de configurer LACP **avant** le déploiement d’une instance.  
-> Ce guide **ne couvre pas** la configuration sur un noeud déjà en production.
+> Ce guide **ne couvre pas** la configuration d'un noeud déjà en production.
 
 ## Pourquoi utiliser LACP ?
 
@@ -29,8 +29,9 @@ LACP peut être utilisé dans deux cas d'usage précis :
 
 Avant de commencer, assurez-vous de disposer des éléments suivants :
 
-- Un accès **OpenStack CLI** configuré avec les droits nécessaires (`clouds.yaml` ou variables d’environnement).
-- Le rôle **operator** et/ou ou des noeuds transférés dans votre projet.
+- Disposer d'un service [OPCP](/links/hosted-private-cloud/onprem-cloud-platform) actif.
+- Un accès **[OpenStack CLI configuré](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** avec les droits nécessaires (`clouds.yaml` ou variables d’environnement).
+- Le rôle **admin** et/ou ou des noeuds transférés dans votre projet.
 - LACP est une configuration réseau spécifique, nécessitant des connaissances réseau et système avancées. Nous vous conseillons d'appliquer ce guide si vous connaissez déjà l'un ou plusieurs des concepts suivants : configuration de noeuds au sein de OpenStack Ironic, gestion des ports au sein de OpenStack Neutron, et la connaissance de la CLI OpenStack
 
 ## En pratique
@@ -241,11 +242,11 @@ openstack server create --image <image-name> \
 
 ### Configuration du système d’exploitation de l’instance
 
-Après avoir configuré votre noeud dans OpenStack et déployé un système d’exploitation, il reste à configurer le réseau afin de bénéficier du network bonding, qui permet d’agréger plusieurs interfaces réseau pour plus de performance et de redondance.
+Après avoir configuré votre noeud dans OpenStack et déployé un système d’exploitation, il reste à configurer le réseau afin de bénéficier du network **bonding**, qui permet d’agréger plusieurs interfaces réseau pour plus de performance et de redondance.
 
 #### Vérifier la configuration du bonding
 
-Sur certaines images (comme **Debian 12** ou **Ubuntu 22.04**), la configuration du bonding est automatiquement détectée et configurée.  
+Sur certaines images (comme **Debian 12** ou **Ubuntu 22.04**), la configuration du **bonding** est automatiquement détectée et configurée.  
 Cependant, d’autres distributions peuvent nécessiter un ajustement manuel.
 
 ##### 1. Vérifier les bonds actifs
@@ -275,8 +276,8 @@ Transmit Hash Policy: layer2 (0)
 ```
 
 > [!warning]  
-> Pour exploiter toute la bande passante, la politique `layer3+4` doit être configurée.  
-> Par défaut, certain OS utilise `layer2`, moins performante.
+> Pour exploiter toute la bande passante, configurez la politique `layer3+4` (par défaut, certains OS utilisent `layer2`, moins performante).  
+> Plus de détails : [Ubuntu Bonding Documentation](https://help.ubuntu.com/community/UbuntuBonding?utm_source=chatgpt.com)
 
 ---
 
