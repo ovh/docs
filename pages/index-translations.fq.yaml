@@ -111,11 +111,13 @@ public-cloud-ai-and-machine-learning-ai-ecosystem-guides: AI Partners - Guides
 public-cloud-ai-and-machine-learning-ai-endpoints: AI Endpoints
 public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
 public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutoriels
-public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-quantum-computing: Quantum computing
 public-cloud-quantum-computing-general-information: General information
 public-cloud-quantum-computing-emulator: Quantum emulators
 public-cloud-quantum-computing-emulators-guides: Guides
+public-cloud-quantum-computing-qpus: Quantum QPUs
+public-cloud-quantum-computing-qpus-guides: Guides
+public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
 public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
