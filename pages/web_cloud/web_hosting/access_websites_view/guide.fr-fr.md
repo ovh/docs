@@ -1,7 +1,7 @@
 ---
 title: "Visualiser et gérer tous ses sites web depuis son espace client OVHcloud"
 excerpt: "Découvrez comment consulter et gérer l'ensemble de vos sites web depuis votre espace client OVHcloud"
-updated: 2025-05-27
+updated: 2025-11-20
 ---
 
 ## Objectif
@@ -25,9 +25,9 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vo
 
 #### Nom de Domaine
 
-Affiche le nom de domaine principal du site web, tel qu’il est configuré dans l’onglet Multisite de votre hébergement.
+Affiche le nom de domaine principal du site web, tel qu’il est configuré dans l’onglet Mes sites de votre hébergement.
 
-Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
+Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
 #### Diagnostic
 
@@ -37,15 +37,15 @@ Vous informe si votre nom de domaine pointe correctement vers l'hébergement web
 - `A/AAAA` jaune : Les enregistrements A et/ou AAAA de votre nom de domaine pointent vers une adresse IP différente de celle de votre hébergement web.
 - `A/AAAA` gris : Aucun enregistrement A ou AAAA n'est configuré, votre nom de domaine ne pointe vers aucune adresse IP.
 
-Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
+Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
-Pour plus de détails concernant le diagnostic, consultez la section « Diagnostiquer vos noms de domaine » de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+Pour plus de détails concernant le diagnostic, consultez notre guide « [Comment vérifier l'association « nom de domaine / site web » ?](/pages/web_cloud/web_hosting/my_websites_diagnosis) ».
 
 #### Dossier racine
 
 Indique le répertoire de votre hébergement (par exemple : www, app, public_html, etc.) vers lequel le domaine pointe.
 
-Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
+Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
 #### Nom du service
 
@@ -74,13 +74,13 @@ Affiche le statut de l’intégration Git sur le site web :
 - En cours : Le dépôt Git est en cours de configuration.
 - Erreur : Une erreur est détectée dans la configuration du dépôt Git.
 
-Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
+Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
 #### Logs séparés
 
 Indique si un espace de logs est activé sur le domaine sélectionné.
 
-Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
+Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
 Consultez notre page « [Suivez et analysez le trafic de vos sites web](/links/web/hosting-traffic-analysis) » pour plus d'informations.
 
@@ -97,7 +97,7 @@ Affiche le statut du CDN (**C**ontent **D**elivery **N**etwork) sur le nom de do
 - Inactif : Le CDN est désactivé.
 - N/A : Non applicable (offre non compatible).
 
-Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
+Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
 Le CDN permet de mettre en cache des éléments statiques de votre site web, comme des images. Consultez notre page « [Shared CDN](/links/web/hosting-options-cdn) » pour plus d'informations.
 
@@ -105,7 +105,7 @@ Le CDN permet de mettre en cache des éléments statiques de votre site web, com
 
 Indique si le SSL est activé ou non sur le nom de domaine concerné.
 
-Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
+Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
 Le SSL vous permet de bénéficier d'une connexion sécurisée (**https://**) sur le nom de domaine sélectionné. Consultez notre page « [Sécurisez efficacement votre site web OVHcloud avec un certificat SSL premium](/links/web/hosting-options-ssl) » pour plus d'informations.
 
@@ -113,7 +113,7 @@ Le SSL vous permet de bénéficier d'une connexion sécurisée (**https://**) su
 
 Indique si le pare-feu applicatif est activé ou non sur le domaine.
 
-Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
+Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
 Consultez notre page « [Les options indispensables pour votre hébergement web](/links/web/hosting-options) » pour plus d'informations.
 
