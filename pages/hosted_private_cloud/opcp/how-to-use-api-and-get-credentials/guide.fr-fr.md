@@ -6,7 +6,7 @@ updated: 2025-11-07
 
 ## Objectif
 
-**OPCP** intégre une authentification centralisée avec **Keycloak**. Il est donc nécessaire de configurer la **CLI OpenStack** afin qu’il utilise Keycloak comme fournisseur d’identité (Identity Provider).
+**OPCP** intègre une authentification centralisée avec **Keycloak**. Il est donc nécessaire de configurer la **CLI OpenStack** afin qu’il utilise Keycloak comme fournisseur d’identité (Identity Provider).
 
 **Ce guide décrit les étapes nécessaires pour configurer **Keycloak** et la **CLI OpenStack** afin de permettre l’authentification via Keycloak.**
 
