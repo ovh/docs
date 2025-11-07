@@ -47,7 +47,7 @@ A tabela abaixo permite-lhe diferenciar as opções disponíveis nas suas instâ
     - [Da interface Horizon](#horizon-unshelve)
     - [Utilização das API OpenStack/Nova](#openstack-nova-unshelve)
 - [Desativar (suspend) uma instância](#stop-suspend-instance)
-    - [Da Área de Cliente OVHcloudl](#stop-control-panel)
+    - [Da Área de Cliente OVHcloud](#stop-control-panel)
     - [Da interface Horizon](#stop-horizon)
     - [Utilização das API OpenStack/Nova](#stop-openstack-nova)
 - [Colocar em pausa uma instância (*pause*)](#pause-instance)

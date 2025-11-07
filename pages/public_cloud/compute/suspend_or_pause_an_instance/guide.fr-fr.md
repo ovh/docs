@@ -47,7 +47,7 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
     - [Depuis l’interface Horizon](#horizon-unshelve)
     - [Depuis les API Openstack/Nova](#openstack-nova-unshelve)
 - [Éteindre (suspend) une instance](#stop-suspend-instance)
-    - [Depuis l’espace client OVHcloudl](#stop-control-panel)
+    - [Depuis l’espace client OVHcloud](#stop-control-panel)
     - [Depuis l’interface Horizon](#stop-horizon)
     - [Depuis les API Openstack/Nova](#stop-openstack-nova)
 - [Mettre en pause une instance](#pause-instance)

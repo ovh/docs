@@ -94,7 +94,7 @@ All diagnostics in step 1 must be performed **without exception** to determine w
 
 To ensure that your services (shared hosting **and** database) are not undergoing maintenance or an incident, retrieve the cluster and filer information of your web hosting as well as the general information relating to your database. You can then check their status at [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-o find out the cluster and filer of your hosting, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the web hosting plan concerned. In the `General information`{.action} tab you can see the `Datacenter` and `Filer` of your web hosting.
+To find out the cluster and filer of your hosting, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the web hosting plan concerned. In the `General information`{.action} tab you can see the `Datacenter` and `Filer` of your web hosting.
 
 ![Retrieve Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
 

@@ -48,7 +48,7 @@ La tabella qui sotto ti permette di differenziare le opzioni disponibili sulle t
     - [Dall'interfaccia Horizon](#horizon-unshelve)
     - [Dalle API OpenStack/Nova](#openstack-nova-unshelve)
 - [Spegnere (suspend) un'istanza](#stop-suspend-instance)
-    - [Nello Spazio Cliente OVHcloudl](#stop-control-panel)
+    - [Nello Spazio Cliente OVHcloud](#stop-control-panel)
     - [Dall'interfaccia Horizon](#stop-horizon)
     - [Dalle API OpenStack/Nova](#stop-openstack-nova)
 - [Mettere in pausa un'istanza](#pause-instance)

@@ -68,7 +68,7 @@ Para uma maior flexibilidade dos seus backups, pode ativar a opção Backup auto
 A opção de Backup automatizado Premium cria um backup do seu VPS a cada 24 horas no horário especificado.  
 Você terá acesso a todos os backups diários dos últimos 7 dias. Uma vez criados 7 backups, cada novo backup substituirá o mais antigo.
 
-Faça login no seu [Área de Cliente OVHcloudl](/links/manager), abra a seção `Bare Metal Cloud`{.action}, selecione `Servidor privado virtual`{.action} e, em seguida, clique no nome do seu VPS.
+Faça login no seu [Área de Cliente OVHcloud](/links/manager), abra a seção `Bare Metal Cloud`{.action}, selecione `Servidor privado virtual`{.action} e, em seguida, clique no nome do seu VPS.
 
 Clique na aba `Backup automatizado`{.action} no menu horizontal.
 
