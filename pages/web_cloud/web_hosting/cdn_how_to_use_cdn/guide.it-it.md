@@ -25,6 +25,10 @@ Per funzionare correttamente, ciascun server salva nella memoria cache una parte
 
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 ###  Attiva l'opzione CDN
 
 > [!primary]

@@ -25,6 +25,10 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 ###  Wdrożenie opcji CDN
 
 > [!primary]

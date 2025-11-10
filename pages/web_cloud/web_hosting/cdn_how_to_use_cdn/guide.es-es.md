@@ -25,6 +25,10 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 ### Activar la opción CDN
 
 > [!primary]

@@ -25,6 +25,10 @@ Para funcionar, cada servidor guarda na sua memória cache uma parte do seu webs
 
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 ### Implementar a opção CDN
 
 > [!primary]
