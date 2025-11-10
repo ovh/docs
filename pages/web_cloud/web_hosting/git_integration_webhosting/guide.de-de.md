@@ -22,6 +22,10 @@ In der heutigen digitalen Landschaft sind Unternehmen dynamischer und innovative
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 > [!primary]
 >
 > Für die Zuordnung und Konfiguration von Git müssen Sie Änderungen in Ihrem GitHub-Konto vornehmen. Bevor Sie beginnen, loggen Sie sich in Ihrem GitHub-Konto ein.

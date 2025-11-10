@@ -22,6 +22,10 @@ W dzisiejszym świecie cyfrowym społeczeństwa stają się coraz bardziej dynam
 
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 > [!primary]
 >
 > Aby powiązać i skonfigurować Git, wprowadź zmiany na koncie GitHub. Przed rozpoczęciem korzystania z przewodnika zaloguj się do konta GitHub.

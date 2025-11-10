@@ -22,6 +22,10 @@ Nel panorama digitale di oggi, le società sono sempre più dinamiche e innovati
 
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 > [!primary]
 >
 > Per l'associazione e la configurazione di Git, è necessario apportare modifiche all'account GitHub. Prima di iniziare la guida, accedi al tuo account GitHub.

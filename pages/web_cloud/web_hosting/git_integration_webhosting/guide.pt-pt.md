@@ -22,6 +22,10 @@ No atual panorama digital, as empresas estão a tornar-se cada vez mais dinâmic
 
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 > [!primary]
 >
 > Para a associação e configuração do Git, deverá efetuar alterações na sua conta GitHub. Antes de começar o guia, aceda à sua conta GitHub.
