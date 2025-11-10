@@ -30,6 +30,10 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 ### Comprender el origen de la página "Index of"
 
 Su nombre de dominio se declara para acceder a un directorio de destino (un "`Carpeta raíz`") en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Para ello, abra la pestaña [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su alojamiento web alojado en el [área de cliente de OVHcloud](/links/manager).

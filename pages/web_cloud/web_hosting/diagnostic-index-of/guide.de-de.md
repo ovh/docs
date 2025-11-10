@@ -29,6 +29,10 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 ### Den Ursprung der "Index of"-Seite verstehen
 
 Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Zielverzeichnis im [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings verknüpft. Dies geschieht über den Tab [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) Ihres Webhostings in Ihrem [OVHcloud Kundencenter](/links/manager).
