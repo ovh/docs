@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas de page « Index of » ?"
 excerpt: "Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »"
-updated: 2025-10-28
+updated: 2025-11-20
 ---
 
 ## Objectif
@@ -46,13 +46,13 @@ Pour afficher votre site web, vous devrez donc, depuis l'onglet `Mes sites`{.act
 
 ### Résoudre le cas le plus courant d’une page « Index of »
 
-Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par [FTP](/pages/web_cloud/web_hosting/ftp_connection). Hors, le site web où est associé votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre site web.
+Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par [FTP](/pages/web_cloud/web_hosting/ftp_connection). Or, le site web auquel est associé votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine`.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Le `Dossier racine` n'est, à date, pas modifiable dès lors où un site web est créé.
+Le `Dossier racine` n'est, à date, pas modifiable une fois le site web créé.
 
-Vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action} de votre hébergement web. Pour cela, consultez notre guide : « [Comment détacher un nom de domaine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
+Vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action} de votre hébergement web. Pour cela, consultez notre guide « [Comment détacher un nom de domaine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 Vous pourrez ensuite ajouter un nouveau site web avec votre nom de domaine à l'aide de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **avant** de `Détacher le domaine`{.action}.
 
