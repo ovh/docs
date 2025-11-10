@@ -23,6 +23,10 @@ Vous devez changer le dossier racine associé à votre site web et vous devez re
 
 ## En pratique
 
+> [!warning]
+>
+> Détacher un nom de domaine ou un sous-domaine d'un site web présent sur votre hébergement web est une manipulation sensible. En effet et suite à cela, votre site web ne sera plus accessible sur Internet avec votre nom de domaine et / ou sous-domaine.
+
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
@@ -60,7 +64,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 >>
->> Selon votre choix, cohcez ou non la case `Configuration automatique (recommandée)`{.action}, puis cliquez sur `Valider`{.action} pour confirmer votre choix.
+>> Selon votre choix, cochez ou non la case `Configuration automatique (recommandée)`{.action}, puis cliquez sur `Valider`{.action} pour confirmer votre choix.
 >>
 >> > !(!warning]
 >> >
