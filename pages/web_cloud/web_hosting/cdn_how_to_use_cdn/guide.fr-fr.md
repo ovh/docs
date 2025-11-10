@@ -1,7 +1,7 @@
 ---
 title: "Accélérer mon site web en utilisant le CDN"
 excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement web grâce au CDN"
-updated: 2025-10-20
+updated: 2025-11-20
 ---
 
 ## Objectif
@@ -68,7 +68,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -122,7 +122,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -155,7 +155,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -167,7 +167,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> > [!warning]
 >> > 
->> > Certaines options sont verrouillées sur l'offre Basic et nécessitent la souscription au [CDN security](/links/web/hosting-options-cdn) ou au [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Certaines options sont verrouillées sur l'offre Basic et nécessitent la souscription au [CDN security](/links/web/hosting-options-cdn) ou au [CDN Advanced](/links/web/hosting-options-cdn).
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-option-settings.png){.thumbnail}
 >>
@@ -175,11 +175,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> - **HTTP/2** : Protocole permettant de meilleures performances de votre site web en termes de sécurité et de latence.
 >>
->> - **Dev-mode** : vous permet une désactivation du cache pendant le développement de votre site.
+>> - **Dev-mode** : Vous permet une désactivation du cache pendant le développement de votre site.
 >>
->> - **Brotli** : type de compression permettant une optimisation de la taille de vos fichiers en cache.
+>> - **Brotli** : Type de compression permettant une optimisation de la taille de vos fichiers en cache.
 >>
->> - **Règle de cache** : Créez jusqu'à 5 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](#cacherules)). 
+>> - **Règle de cache** : Créez jusqu'à 5 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site ([suivre la prochaine étape](#cacherules)). 
 >>
 >> Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
@@ -208,7 +208,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -226,7 +226,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 >> - **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL. Pour les offres CDN-Basic et CDN-Security, il n'est possible de saisir qu'une extension de fichier. 
 >>
->> - **Durée** : indiquez la durée de mise en cache de la ressource choisie.
+>> - **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
 >>
 >> - **Classement** : Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 >>
@@ -242,7 +242,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 >> > [!warning]
 >> >
->> > Pour bénéficier d'un quota de règles plus élevé et d'avantage de paramètres sur la création de règle de mise en cache, vous pouvez opter pour l'option [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Pour bénéficier d'un quota de règles plus élevé et davantage de paramètres sur la création de règle de mise en cache, vous pouvez opter pour l'option [CDN Advanced](/links/web/hosting-options-cdn).
 
 #### Configurer les options du CDN Security
 
@@ -269,7 +269,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -280,9 +280,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > **Étape 5**
 >>
 >> > [!primary]
->> >  les options présentées ci-dessous nécessitent la souscription au [CDN security](/links/web/hosting-options-cdn) ou au [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Les options présentées ci-dessous nécessitent la souscription au [CDN security](/links/web/hosting-options-cdn) ou au [CDN Advanced](/links/web/hosting-options-cdn).
 >>
->> - **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms de domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
+>> - **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms de domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager.
 >>
 >>    Une fois la fonction activée, cliquez sur `Éditer la liste des ressources externes`{.action} pour ajouter les noms de domaine autorisés à partager vos ressources.
 >>
@@ -312,7 +312,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> - **Mixed content** : Forcez le chargement de l’intégralité du contenu de vos pages web de manière sécurisée, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur de sécurité du navigateur.
 >>
->> - **Pare-feu applicatif** : Le **W**eb **A**pplication **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour pour étendre votre protection).  
+>> - **Pare-feu applicatif** : Le **W**eb **A**pplication **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour pour étendre votre protection).
 >>
 >> > [!warning]
 >> >
@@ -347,7 +347,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -359,15 +359,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> > [!primary]
 >> >
->> >  Les options présentées ci-dessous nécessitent la souscription au [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Les options présentées ci-dessous nécessitent la souscription au [CDN Advanced](/links/web/hosting-options-cdn)
 >>
->> - **Header HTTP de géolocalisation** : Déterminez le pays du visiteur pour personnaliser l'expérience proposée. Le code pays est ajouté automatiquement dans le header de chaque requête pour être manipulé par votre serveur d'origine. Les éléments d'identification dans le header se présentent sous les appellations  `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
+>> - **Header HTTP de géolocalisation** : Déterminez le pays du visiteur pour personnaliser l'expérience proposée. Le code pays est ajouté automatiquement dans le header de chaque requête pour être manipulé par votre serveur d'origine. Les éléments d'identification dans le header se présentent sous les appellations `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 >>
->> - **Prefetch** : Anticipez le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au *header link* de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
+>> - **Prefetch** : Anticipez le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au *header link* de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web.
 >>
->>    Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hi », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css` .  
+>>    Dans l'exemple ci-dessous, lorsque vous êtes sur la page courante affichant « Hi », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css`.
 >>
->>    ```	
+>>    ```
 >>    <?php
 >>    header("Link: </cache/style.css>; rel=prefetch");
 >>    print 'Hi'
@@ -378,7 +378,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> - **Purge avancée** : Personnalisez votre purge en choisissant les éléments du cache à vider : tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
 >>
->>    Depuis l'onglet `Mes sites`{.action}, cliquez sur le bouton `...`{.action} à droite du nom de domaine ou sous-domaine concerné puis sur `Purger le CDN`{.action}.
+>>    Depuis l'onglet `Mes sites`{.action}, cliquez sur le bouton `...`{.action} à droite du nom de domaine ou sous-domaine concerné, puis sur `Purger le CDN`{.action}.
 >>
 >>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 >>
@@ -426,7 +426,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -440,15 +440,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
 >>
->> * **Nom de règle** : Attribuez un nom à votre règle.
->> * **Type de ressource** : Choisissez parmi les choix ci-dessous:
->>    * **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : CSS.
->>    * **Dossier** : Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
->>    * **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
->>    * **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
->> * **Ressource** : Définissez les attributs en fonction du type de ressource choisie.
->> * **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
->> * **Classement** : Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
+>> - **Nom de règle** : Attribuez un nom à votre règle.
+>> - **Type de ressource** : Choisissez parmi les choix ci-dessous :
+>>    - **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : CSS.
+>>    - **Dossier** : Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
+>>    - **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
+>>    - **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
+>> - **Ressource** : Définissez les attributs en fonction du type de ressource choisie.
+>> - **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
+>> - **Classement** : Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 >>
 >> Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
 >>
@@ -529,7 +529,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
