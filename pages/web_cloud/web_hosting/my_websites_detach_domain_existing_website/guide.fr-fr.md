@@ -10,7 +10,7 @@ Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web
 
 Vous ne souhaitez plus utiliser un nom de domaine ou un sous-domaine pour votre site web ?
 Vous voulez associer votre nom de domaine ou votre sous-domaine à un autre site web sur l'un de vos hébergements web ?
-Vous devez changer le dossier racine associé à votre site web et vous devez recréer un nouveau site web sur votre hébergement web pour cela ?
+Vous devez changer le dossier racine associé à votre site web et créer un nouveau site web sur votre hébergement web pour cela ?
 
 **Découvrez comment détacher un nom de domaine ou un sous-domaine d'un site web déjà existant sur votre hébergement web.**
 
@@ -25,7 +25,7 @@ Vous devez changer le dossier racine associé à votre site web et vous devez re
 
 > [!warning]
 >
-> Détacher un nom de domaine ou un sous-domaine d'un site web présent sur votre hébergement web est une manipulation sensible. En effet et suite à cela, votre site web ne sera plus accessible sur Internet avec votre nom de domaine et / ou sous-domaine.
+> Détacher un nom de domaine ou un sous-domaine d'un site web présent sur votre hébergement web est une manipulation sensible. En effet, après cette opération, votre site web ne sera plus accessible sur Internet avec votre nom de domaine et/ou sous-domaine.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
@@ -50,7 +50,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -60,30 +60,30 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 5**
 >>
->> La nouvelle fenêtre qui s'ouvre vous demande de confirmer le détachement du nom de domaine ou du sous domaine.
+>> La nouvelle fenêtre qui s'ouvre vous demande de confirmer le détachement du nom de domaine ou du sous-domaine.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 >>
 >> Selon votre choix, cochez ou non la case `Configuration automatique (recommandée)`{.action}, puis cliquez sur `Valider`{.action} pour confirmer votre choix.
 >>
->> > !(!warning]
+>> > ![!warning]
 >> >
->> > **Cas particulier si vous avez associé Git sur votre site web et si un seul nom de domaine est attaché au site web**
+>> > **Cas particulier : Vous avez associé Git sur votre site web et un seul nom de domaine est attaché au site web**
 >> >
 >> > Si tel est le cas, vous rencontrerez la fenêtre suivante :
 >> >
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
->> > Comme le message l'indique, vous devrez [supprimez votre association Git](/pages/web_cloud/web_hosting/git_integration_webhosting) dans un premier temps avant de détacher votre nom de domaine.
+>> > Comme le message l'indique, vous devrez [supprimer votre association Git](/pages/web_cloud/web_hosting/git_integration_webhosting) dans un premier temps, **avant** de détacher votre nom de domaine.
 
-### Cas particulier - Détachement d'un nom de domaine ou d'un sous-domaine pour l'utiliser avec un autre site web
+### Cas particulier : Détachement d'un nom de domaine ou d'un sous-domaine pour l'utiliser avec un autre site web
 
 - Si vous souhaitez ajouter votre nom de domaine ou votre sous-domaine à un autre site web existant sur un hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 - Si vous souhaitez créer un nouveau site web sur un hébergement web avec votre nom de domaine ou sous-domaine récemment détaché, consultez [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
