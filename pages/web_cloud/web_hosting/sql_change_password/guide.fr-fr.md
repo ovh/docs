@@ -70,17 +70,17 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
 > **Étape 5**
 >>
->> Identifiez le nom du `Dossier racine` de votre site web (le répertoire dans lequel se trouvent ses fichiers et dossiers).
+>> Identifiez le nom du `Dossier racine` de votre site web. Il s'agit du répertoire dans lequel se trouvent ses fichiers et dossiers.
 >>
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
->> Accédez ensuite à l'espace contenant les fichiers et dossiers de votre site (*espace FTP*) en consultant ce [guide](/pages/web_cloud/web_hosting/ftp_connection).
+>> Accédez ensuite à l'espace de stockage FTP contenant les fichiers et dossiers de votre site en consultant [ce guide](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
@@ -102,7 +102,7 @@ Deux cas sont possibles :
 - Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement;
 - Cas n°2 : elle est incluse dans une offre *Web Cloud Databases*, auquel cas vous devrez retrouver le **nom du serveur** et le **nom d'utilisateur** de votre base de données, afin d'identifier cette dernière sans risque d'erreur.
 
-Afin de déterminer quel cas s'applique à votre site, dans le fichier de configuration identifié la [partie 1](#step1), commencez par noter le nom de sa base de données :
+Afin de déterminer quel cas s'applique à votre site, dans le fichier de configuration identifié dans la [partie 1](#step1), commencez par noter le nom de sa base de données :
 
 - Pour WORDPRESS : le nom apparaît sous la mention **« DB_NAME »**;
 - Pour JOOMLA : le nom apparaît sous **« public $db »**;
@@ -241,7 +241,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> 
 > **Étape 4**
 >>
->> Cliquez ensuite sur le bouton `...`{.action} à droite de la base de données de votre site puis sur `Changer le mot de passe`{.action}.
+>> Cliquez ensuite sur le bouton `...`{.action} à droite de la base de données de votre site, puis sur `Changer le mot de passe`{.action}.
 >>
 >> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 >>
@@ -257,7 +257,7 @@ Rendez-vous dans la partie `Bases de données`{.action} de votre espace client e
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-Pour modifier le mot de passe de votre base de données sur le serveur, cliquez sur les trois points à droite du `Nom d'utilisateur`{.action} identifié la [partie 2](#step2) puis sur `Changer le mot de passe`{.action}.
+Pour modifier le mot de passe de votre base de données sur le serveur, cliquez sur le bouton `...`{.action} à droite du `Nom d'utilisateur`{.action} identifié dans la [partie 2](#step2), puis sur `Changer le mot de passe`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
