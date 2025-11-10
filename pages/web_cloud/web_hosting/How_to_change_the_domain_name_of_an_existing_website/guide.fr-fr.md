@@ -36,7 +36,7 @@ Pour changer le nom de domaine d'accès à votre site web, plusieurs étapes son
 
 ### Etape 1 - déclarer le nouveau domaine sur votre hébergement mutualisé <a name="step1"></a>
 
-Déclarez votre nouveau nom de domaine à l'aide de notre documentation [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website). Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
+Déclarez votre nouveau nom de domaine en suivant notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
 
 Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
@@ -113,7 +113,7 @@ Si vous avez fait appel à un prestataire pour la création de votre site, conta
 
 ### Etape 3 - retirer l'ancien nom de domaine <a name="step3"></a>
 
-Pour éviter le « *Duplicate-content* » et lorsque votre nouveau nom de domaine est pleinement opérationnel avec votre site web, vous devrez supprimer la déclaration de votre ancien nom de domaine sur votre site web à l'aide du guide suivant : « [Comment détacher un nom de domaine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
+Pour éviter le « *Duplicate-content* » et lorsque votre nouveau nom de domaine est pleinement opérationnel avec votre site web, vous devrez supprimer la déclaration de votre ancien nom de domaine sur votre site web à l'aide du guide « [Comment détacher un nom de domaine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 > [!warning]
 >
