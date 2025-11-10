@@ -86,9 +86,9 @@ Cette réécriture d'URL peut favoriser le référencement SEO de votre site web
 
 ### Rediriger les requêtes vers un dossier en particulier sans afficher le dossier concerné
 
-Lorsque vous utilisez un hébergement mutualisé OVHcloud, votre nom de domaine (par exemple **domain.tld**) est déclaré sur un site web présent sur votre hébergement web pour afficher le contenu d'un dossier cible que l'on appelle aussi `dossier racine`. Vous pouvez personnaliser le nom de ce `dossier racine` au moment de l'ajout du site web sur votre hébergement via votre espace client OVHcloud.
+Lorsque vous utilisez un hébergement mutualisé OVHcloud, votre nom de domaine (par exemple : **domain.tld**) est déclaré sur un site web présent sur votre hébergement web. Ceci afin d'afficher le contenu d'un dossier cible que l'on appelle aussi `dossier racine`. C'est ce dossier qui contient les fichiers de votre site web. Vous pouvez personnaliser le nom de ce `dossier racine` au moment de l'ajout du site web sur votre hébergement via votre espace client OVHcloud.
 
-Consultez notre guide sur le [partage d'un hébergement entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) si vous souhaitez plus d'informations sur le sujet.
+Consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » si vous souhaitez obtenir plus d'informations sur le sujet.
 
 Certains utilisateurs ne placent pas leur site web directement à la base du `dossier racine`. Ils créent alors un sous-dossier (par exemple : **MyWebsite**) dans leur `dossier racine` pour y placer leur site web.
 
