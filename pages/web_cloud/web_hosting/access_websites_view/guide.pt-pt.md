@@ -17,6 +17,10 @@ A vista `Websites` permite centralizar a apresentação do conjunto dos seus web
 
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 ### Aceder à vista `Websites`
 
 Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. No menu à esquerda, clique em `Websites`{.action}. Aparecerá uma tabela com o conjunto dos seus websites e as suas principais informações.

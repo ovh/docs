@@ -37,6 +37,10 @@ Pode criar infinitos subdomínios a partir de um único domínio.
   
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 **Índice**
 
 - [Introdução](#introduction)

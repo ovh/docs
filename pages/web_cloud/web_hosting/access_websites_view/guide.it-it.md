@@ -17,6 +17,10 @@ La visualizzazione `Siti Internet` permette di visualizzare in modo centralizzat
 
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 ### Accedi alla visualizzazione `Siti Internet`
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nel menu a sinistra, clicca su `Siti Internet`{.action}. Visualizzi una tabella con tutti i tuoi siti Web e le informazioni principali.

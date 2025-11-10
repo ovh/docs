@@ -17,6 +17,10 @@ La vista `Sitios web` permite centralizar la visualización de todos sus sitios 
 
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 ### Acceder a la vista `Sitios web`
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a `Web Cloud`{.action}. En el menú de la izquierda, haga clic en `Sitios web`{.action}. Se mostrará una tabla que recoge todos sus sitios web y su información principal.

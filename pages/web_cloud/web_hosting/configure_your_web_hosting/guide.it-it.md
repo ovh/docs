@@ -49,6 +49,10 @@ Per riassumere, modificare la configurazione dell’hosting Web dallo [Spazio Cl
 
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 ### 1 - Descrizione dei parametri di configurazione disponibili sugli hosting Web OVHcloud <a name="all-parameters"></a>
 
 Prima di iniziare, consulta la descrizione tecnica di ogni parametro modificabile sugli hosting Web OVHcloud.

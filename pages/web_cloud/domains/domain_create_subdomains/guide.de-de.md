@@ -37,6 +37,10 @@ Sie können für einen Domainnamen eine unbegrenzte Anzahl an Subdomains erstell
   
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 **Inhaltsübersicht**
 
 - [Einleitung](#introduction)

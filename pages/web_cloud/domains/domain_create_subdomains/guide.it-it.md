@@ -37,6 +37,10 @@ Ad esempio, *www.ovhcloud.com* è un sottodominio del dominio *ovhcloud.com*.
   
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 **Riepilogo**
 
 - [Introduzione](#introduction)

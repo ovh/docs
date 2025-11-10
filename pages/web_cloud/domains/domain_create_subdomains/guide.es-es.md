@@ -37,6 +37,10 @@ Puede crear infinidad de subdominios a partir de un único nombre de dominio.
   
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 **Índice**
 
 - [Introducción](#introduction)

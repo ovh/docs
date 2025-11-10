@@ -37,6 +37,10 @@ Możesz utworzyć nieskończoną liczbę subdomen na podstawie jednej domeny.
   
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 **Podsumowanie**
 
 - [Preambuła](#introduction)

@@ -49,6 +49,10 @@ Zmiana konfiguracji hostingu w [Panelu klienta OVHcloud](/links/manager) lub zmi
 
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 ### 1 - Opis parametrów konfiguracyjnych dostępnych na hostingu OVHcloud <a name="all-parameters"></a>
 
 Zanim rozpoczniesz pracę z hostingiem OVHcloud, zapoznaj się z opisem technicznym każdego z parametrów, które można zmienić.

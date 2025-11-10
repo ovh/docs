@@ -49,6 +49,10 @@ Diese Konfigurationseinstellungen können auf zwei Arten geändert werden:
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 ### 1 - Beschreibung der auf OVHcloud Webhostings verfügbaren Konfigurationseinstellungen <a name="all-parameters"></a>
 
 Sie finden hier vorab die technische Beschreibung der verfügbaren Einstellungen eines OVHcloud Webhostings.

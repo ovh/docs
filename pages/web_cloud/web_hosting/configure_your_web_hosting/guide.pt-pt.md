@@ -49,6 +49,10 @@ Em resumo, alterar a configuração do seu alojamento web a partir da [Área de 
 
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 ### 1 - Descrição dos parâmetros de configuração disponíveis nos alojamentos web da OVHcloud <a name="all-parameters"></a>
 
 Antes de começar, encontrará de seguida a descrição técnica de cada um dos parâmetros editáveis nos alojamentos web da OVHcloud.

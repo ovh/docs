@@ -49,6 +49,10 @@ En resumen, modificar la configuración de un alojamiento web desde el [área de
 
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 ### 1 - Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud <a name="all-parameters"></a>
 
 A continuación ofrecemos una descripción técnica de cada uno de los parámetros que puede modificar en los planes de hosting de OVHcloud.

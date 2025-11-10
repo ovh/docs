@@ -17,6 +17,10 @@ Widok `Strony WWW` pozwala na scentralizowane wyświetlanie wszystkich stron nie
 
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 ### Przejdź do widoku `Strony WWW`
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}. W lewym menu kliknij `Strony WWW`{.action}. Pojawi się tabela z listą wszystkich Twoich stron WWW i ich głównymi informacjami.

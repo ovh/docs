@@ -17,6 +17,10 @@ Die Ansicht `Websites` ermöglicht es Ihnen, alle Ihre Websites zentral anzuzeig
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 ### Ansicht `Websites`
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie zum Bereich `Web Cloud`{.action}. Klicken Sie im linken Menü auf `Websites`{.action}. Eine Tabelle mit allen Websites und den wichtigsten Informationen wird angezeigt.
