@@ -10,9 +10,10 @@ Lors de l'utilisation de votre hébergement web ou de la mise à jour de votre s
 
 > [!primary]
 >
-> Ce guide explique uniquement comment modifier un nom de domaine ou un sous-domaine déjà déclaré sur un hébergement web OVHcloud. Si vous souhaitez :
-> - Associer un nouveau nom de domaine/sous-domaine à votre site web présent sur votre hébergement web, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
-> - Ajouter un nouveau site web sur votre hébergement web, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+> Ce guide explique uniquement comment modifier un nom de domaine ou un sous-domaine déjà déclaré sur un hébergement web OVHcloud.
+>
+> - Pour associer un nouveau nom de domaine ou sous-domaine à votre site web présent sur votre hébergement web, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+> - Pour ajouter un nouveau site web sur votre hébergement web, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 **Découvrez comment modifier les paramètres d'association d'un nom de domaine/sous-domaine déjà déclaré sur votre offre d'hébergement web.**
 
@@ -27,7 +28,7 @@ Lors de l'utilisation de votre hébergement web ou de la mise à jour de votre s
 
 > [!warning]
 >
-> La modification des paramètres d'association d'un nom de domaine ou d'un sous-domaine peut, en cas de mauvaise manipulation, entraîner une interruption d'accès à vos services (votre site web). Si vous avez des doutes sur les modifications à réaliser, n'hésitez pas à faire appel à un prestataire spécialisé
+> La modification des paramètres d'association d'un nom de domaine ou d'un sous-domaine peut, en cas de mauvaise manipulation, entraîner une interruption d'accès à vos services (votre site web). Si vous avez des doutes sur les modifications à réaliser, n'hésitez pas à faire appel à un prestataire spécialisé.
 
 Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-domaine déjà déclaré sur votre offre d'hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
@@ -52,7 +53,7 @@ Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-dom
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -66,19 +67,22 @@ Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-dom
 >>
 >> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
->> Dans la suite de ce guide, vous trouverez un descriptif de chacun des paramètres disponibles dans la fenêtre ci-dessus. Suite à la lecture des différentes descriptions présentes dans la partie [Description des paramètres modifiables](#step1) et une fois vos modifications faites, cliquez sur le bouton `Suivant`{.action} situé en bas à droite de la fenêtre, puis passez à la [partie 2](#step2).
+>> Dans la suite de ce guide, vous trouverez un descriptif de chacun des paramètres disponibles dans la fenêtre ci-dessus. Suite à la lecture des différentes descriptions présentes dans la partie « [Description des paramètres modifiables](#step1) » et une fois vos modifications faites, cliquez sur le bouton `Suivant`{.action} situé en bas à droite de la fenêtre, puis passez à la [partie 2](#step2).
 
 ### 1 - Description des paramètres modifiables <a name="step1"></a>
 
 > [!primary]
 >
-> Les formulaires `Nom du domaine`{.action} et `Dossier racine`{.action} ne sont pas modifiables car il s'agit de modifications des paramètres relatifs au site web présent sur votre hébergement web. Si l'action souhaitée consiste à : 
+> Les champs `Nom du domaine`{.action} et `Dossier racine`{.action} ne sont pas modifiables, car il s'agit de paramètres relatifs au site web présent sur votre hébergement web.
 >
-> - Associer un nouveau nom de domaine/sous-domaine à un site web présent sur votre hébergement web, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
-> - Changer le dossier racine de votre site web, vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action}. Pour cela, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés. Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Détacher le domaine`{.action}.
-> Vous pourrez ensuite ajouter un nouveau site web avec votre nom de domaine à l'aide de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **avant** de `Détacher le domaine`{.action}.
+> - Pour associer un nouveau nom de domaine ou sous-domaine à un site web présent sur votre hébergement web, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+> - Pour changer le dossier racine de votre site web, vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action}. Pour cela :
+>      - Cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
+>      - Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Détacher le domaine`{.action}.
+>
+> Vous pourrez ensuite ajouter un nouveau site web avec votre nom de domaine à l'aide de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) », **avant** de `Détacher le domaine`{.action}.
 
-#### L'option « Activer CDN »
+#### Option « Activer CDN »
 
 Pour pouvoir utiliser cette option, vous devez avoir au préalable souscrit à une offre CDN OVHcloud ou disposer d'une offre d'hébergement web Performance.
 
@@ -86,19 +90,19 @@ Cochez/décochez cette case afin d'activer/désactiver l'option CDN pour votre n
 
 Retrouvez plus d'informations sur les options/offres CDN disponibles dans notre documentation dédiée « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
 
-#### L'option « IP du pays »
+#### Option « IP du pays »
 
 Cette option est principalement utilisée pour les sites web dont le public cible est situé à l'étranger. Cela permet d'améliorer le référencement SEO du site web dans le pays choisi.
 
 Retrouvez plus d'informations sur cette option dans notre documentation dédiée « [Geolocaliser votre site web dans un pays spécifique](/pages/web_cloud/web_hosting/multisites_geolocation) ».
 
-#### L'option « Activer le firewall »
+#### Option « Activer le firewall »
 
 Cette option permet de filtrer les requêtes entrantes pour protéger votre hébergement web des attaques les plus courantes.
 
 Retrouvez plus d'informations sur cette option dans notre documentation dédiée « [Activation du pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall) ».
 
-#### L'option « Logs séparés »
+#### Option « Logs séparés »
 
 Cochez/décochez cette option uniquement si vous souhaitez séparer les logs de votre nom de domaine des autres noms de domaines déclarés en parallèle sur votre hébergement web.
 
