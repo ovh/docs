@@ -25,7 +25,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vo
 
 #### Nom de Domaine
 
-Affiche le nom de domaine principal du site web, tel qu’il est configuré dans l’onglet Mes sites de votre hébergement.
+Affiche le nom de domaine principal du site web, tel qu’il est configuré dans l’onglet « Mes sites » de votre hébergement.
 
 Au clic, vous êtes redirigé vers l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
