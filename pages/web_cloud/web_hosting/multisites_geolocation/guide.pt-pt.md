@@ -24,6 +24,10 @@ A opção de geolocalização no seu alojamento pode ser útil para o referencia
   
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 Para os websites principalmente consultados no estrangeiro e alojados na nossa infraestrutura de alojamento partilhado OVHcloud, propomos uma opção de geolocalização por endereço IP. Permite uma melhor referenciação dos websites no país onde está situado o endereço IP escolhido com a opção.
 
 Para utilizar a opção de geolocalização por IP, clique nas janelas abaixo para visualizar cada uma das etapas **5**.

@@ -24,6 +24,10 @@ Opcja geolokalizacji na Twoim hostingu może być przydatna w pozycjonowaniu (SE
   
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 Dla stron www odwiedzanych głównie za granicą i hostowanych na naszej infrastrukturze hostingu współdzielonego OVHcloud proponujemy opcję geolokalizacji za pomocą adresu IP. Umożliwia lepsze pozycjonowanie stron www w kraju, w którym znajduje się wybrany adres IP z opcją.
 
 Aby skorzystać z opcji geolokalizacji IP, kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
