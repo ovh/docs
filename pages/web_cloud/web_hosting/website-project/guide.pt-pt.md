@@ -47,6 +47,10 @@ Isto permite-lhe poupar tempo "administração de servidores" e concentrar-se ap
 
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 O objetivo deste guia é indicar-lhe as principais ações possíveis com as nossas soluções de [alojamento web](/links/web/hosting). 
 Cada ação será acompanhada de uma ou várias ligações para guias específicos (relacionados com a ação em questão).
 

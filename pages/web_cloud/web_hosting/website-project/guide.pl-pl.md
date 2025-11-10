@@ -47,6 +47,10 @@ Pozwalają one zaoszczędzić czas potrzebny na "administrowanie serwerem" i sku
 
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 Celem niniejszego przewodnika jest wskazanie najważniejszych działań, jakie należy podjąć w związku z naszymi rozwiązaniami [hostingowymi web](/links/web/hosting). 
 Każdemu z tych działań będzie towarzyszyć jedno lub więcej łączy do konkretnych przewodników (związanych z danym działaniem).
 

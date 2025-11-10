@@ -47,6 +47,10 @@ So sparen Sie Zeit bei der Administration und können sich etwa auf Folgendes ko
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 Ziel dieser Anleitung ist es, Ihnen die wichtigsten Aktionen aufzuzeigen, die mit unseren [Webhosting](/links/web/hosting) Lösungen durchgeführt werden können.  
 Jede dieser Aktionen wird durch einen oder mehrere Links zu spezifischen Leitfäden (im Zusammenhang mit der jeweiligen Aktion) begleitet.
 

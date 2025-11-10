@@ -47,6 +47,10 @@ Le permiten ahorrar tiempo en la "administración del servidor" y concentrarse �
 
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 El objetivo de esta guía es mostrarle las principales acciones que podemos realizar con nuestras soluciones de [web hosting](/links/web/hosting). 
 Cada una de estas acciones irá acompañada de uno o varios enlaces a guías específicas (relativas a la acción en cuestión).
 

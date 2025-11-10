@@ -47,6 +47,10 @@ che permettono di risparmiare tempo sull’"amministrazione server" e di concent
 
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 L’obiettivo di questa guida è quello di indicare le principali azioni realizzabili con le nostre soluzioni di [hosting Web](/links/web/hosting). 
 Ciascuna di tali azioni sarà accompagnata da uno o più link verso guide specifiche (relative all'azione in questione).
 
