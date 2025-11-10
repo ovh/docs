@@ -192,15 +192,18 @@ public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutorials
 public-cloud-cross-functional: Public Cloud - Allgemeine Informationen
 public-cloud-cross-functional-getting-started: Erste Schritte
-public-cloud-cross-functional-general-information: Allgemeine Informationen
-public-cloud-cross-functional-project-management: Public Cloud Projektverwaltung
+public-cloud-cross-functional-key-concepts: Schlüsselkonzepte
+public-cloud-cross-functional-configuration: Konfiguration
+public-cloud-cross-functional-configuration-billing-information: Abrechnungsinformationen
+public-cloud-cross-functional-configuration-project-management: Public Cloud Projektverwaltung
 public-cloud-cross-functional-migration: Migration
 public-cloud-cross-functional-tutorials: Tutorials
-public-cloud-cross-functional-services-management: Verwaltung von Dienstleistungen
-public-cloud-cross-functional-horizon: Verwaltung über Horizon
-public-cloud-cross-functional-openstack: Verwaltung über OpenStack
-public-cloud-cross-functional-infrastructure: Infrastruktur
-public-cloud-cross-functional-billing-information: Abrechnungsinformationen
+public-cloud-cross-functional-tutorials-horizon: Verwaltung über Horizon
+public-cloud-cross-functional-tutorials-openstack: Verwaltung über OpenStack
+public-cloud-cross-functional-tutorials-terraform: Verwaltung über Terraform
+public-cloud-cross-functional-security: Sicherheit
+public-cloud-cross-functional-troubleshooting: Störungsbehebung
+public-cloud-cross-functional-additional-resources: Zusätzliche Ressourcen
 public-cloud-storage: Storage and Backup
 public-cloud-storage-object-storage: Object Storage
 public-cloud-storage-object-storage-general-information: General information
