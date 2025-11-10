@@ -26,6 +26,10 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 > [!primary]
 >
 > Di seguito sono riportati gli errori più comuni. Se ti trovi di fronte a una situazione diversa da quelle presentate, consulta la nostra [FAQ sugli hosting Web](/pages/web_cloud/web_hosting/faq-web_hosting).

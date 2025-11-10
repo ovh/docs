@@ -27,6 +27,10 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 > [!primary]
 >
 > Hier finden Sie die häufigsten Fehler. Wenn Sie eine andere Situation als die hier beschriebenen haben, lesen Sie unsere [Webhosting FAQ](/pages/web_cloud/web_hosting/faq-web_hosting).

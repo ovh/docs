@@ -26,6 +26,10 @@ No entanto, se a configuração destes últimos não for realizada corretamente,
 
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 > [!primary]
 >
 > Aqui, poderá encontrar os erros mais habituais. Se encontrar uma situação diferente das apresentadas, consulte a nossa [FAQ sobre os alojamentos web](/pages/web_cloud/web_hosting/faq-web_hosting).
