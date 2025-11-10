@@ -29,6 +29,10 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 
 > [!warning]
 >
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
+> [!warning]
+>
 > El cambio del dominio para acceder a su sitio puede tener consecuencias en su posicionamiento. 
 > Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](/links/partner) en el posicionamiento, si es necesario.
 >

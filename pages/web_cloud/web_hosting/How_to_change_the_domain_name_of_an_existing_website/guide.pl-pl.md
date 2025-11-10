@@ -29,6 +29,10 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 
 > [!warning]
 >
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
+> [!warning]
+>
 > Zmiana nazwy domeny dotycząca dostępu do Twojej strony WWW może mieć wpływ na jej pozycjonowanie. 
 > Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner) w celu pozycjonowania strony, jeśli to konieczne.
 >

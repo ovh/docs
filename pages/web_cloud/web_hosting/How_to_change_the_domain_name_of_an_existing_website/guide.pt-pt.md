@@ -29,6 +29,10 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 
 > [!warning]
 >
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
+> [!warning]
+>
 > A alteração do nome de domínio para aceder ao seu site pode afetar o seu referenciamento. 
 > Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](/links/partner) no referenciamento, se necessário.
 >

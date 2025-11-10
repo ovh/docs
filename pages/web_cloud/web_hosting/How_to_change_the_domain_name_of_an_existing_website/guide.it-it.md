@@ -29,6 +29,10 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 
 > [!warning]
 >
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
+> [!warning]
+>
 > La modifica del dominio per accedere al tuo sito può avere conseguenze sul suo posizionamento nei motori di ricerca. 
 > Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](/links/partner) nel referenziamento se necessario.
 >

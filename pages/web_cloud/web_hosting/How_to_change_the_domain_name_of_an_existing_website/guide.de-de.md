@@ -28,6 +28,10 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 
 > [!warning]
 >
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
+> [!warning]
+>
 > Die Änderung des Domainnamens, über den auf Ihre Website zugegriffen wird, kann Auswirkungen auf deren SEO haben.  
 > Achten Sie daher genau auf die Änderungen, die Sie vornehmen, und kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](/links/partner) für SEO.
 >
