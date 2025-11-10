@@ -18,6 +18,10 @@ details[open]>summary::before {
 }
 </style>
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 **Kliknij na poniższe pytania, aby zobaczyć wyjaśnienia.**
 
 ## Zarządzanie usługą

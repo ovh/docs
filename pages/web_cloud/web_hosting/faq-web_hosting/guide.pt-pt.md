@@ -18,6 +18,10 @@ details[open]>summary::before {
 }
 </style>
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 **Clique nas perguntas abaixo para ver as explicações.**
 
 ## Gestão da sua oferta

@@ -18,6 +18,10 @@ details[open]>summary::before {
 }
 </style>
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 **Haga clic en las preguntas siguientes para ver las explicaciones.**
 
 ## Gestión de su producto

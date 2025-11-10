@@ -18,6 +18,10 @@ details[open]>summary::before {
 }
 </style>
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 **Klicken Sie auf die unten stehenden Fragen, um die Erläuterungen anzuzeigen.**
 
 ## Verwaltung Ihres Angebots
