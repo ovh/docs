@@ -23,6 +23,10 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 > [!primary]
 >
 > Si experimenta alguna dificultad al seguir uno de los pasos que se describen a continuación, consulte nuestra documentación específica sobre los [errores más frecuentes relacionados con los módulos en un clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 

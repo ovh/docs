@@ -23,6 +23,10 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 > [!primary]
 >
 > In caso di difficoltà durante l’esecuzione di uno degli step descritti qui sotto, consulta la nostra documentazione specifica sugli [errori più frequenti associati ai "moduli in 1 click"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 

@@ -23,6 +23,10 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 > [!primary]
 >
 > Se encontrar dificuldades durante qualquer uma das etapas descritas abaixo, consulte a nossa documentação específica sobre [os erros mais frequentes associados aos "módulos 1 clique"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
