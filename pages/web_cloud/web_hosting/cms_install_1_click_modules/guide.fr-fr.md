@@ -56,7 +56,7 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez l
 
 ![Choix du module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Mes sites`{.action} pour l'ajouter. Consultez notre guide [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) si besoin.
+Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Mes sites`{.action} pour l'ajouter. Consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) » si besoin.
 
 > [!primary]
 >
@@ -151,10 +151,10 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 Renseignez les informations suivantes pour la configuration du module :
 
-- *nom ou e-mail de l'administrateur :* identifiant que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS (Back Office).
-- *mot de passe :* mot de passe que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS.
-- *domaine :* nom de domaine avec lequel vous souhaitez installer votre CMS. Si besoin, consultez notre guide [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
-- *langue :* langue dans laquelle le CMS sera installé.
+- *nom ou e-mail de l'administrateur* : identifiant que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS (Back Office).
+- *mot de passe* : mot de passe que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS.
+- *domaine* : nom de domaine avec lequel vous souhaitez installer votre CMS. Si besoin, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+- *langue* : langue dans laquelle le CMS sera installé.
 - *chemin d’installation :* ce dernier est automatiquement renseigné à la sélection du nom de domaine. Vous pouvez le compléter en y renseignant des sous-répertoires (pour les utilisateurs avertis).
 
 > [!primary]
