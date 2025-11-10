@@ -24,6 +24,10 @@ updated: 2024-11-15
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 ### Login zu Ihrer Seite
 
 Um nach der Installation eines 1-Klick-Moduls auf den öffentlichen Teil Ihrer Website zuzugreifen, gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action}, `Hosting-Pakete`{.action}, das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.

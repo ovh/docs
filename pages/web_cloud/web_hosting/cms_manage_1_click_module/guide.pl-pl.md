@@ -25,6 +25,10 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 ### Dostęp do strony
 
 Aby uzyskać dostęp do publicznej strony po zainstalowaniu modułu za 1 kliknięciem, przejdź do [Panelu klienta OVHcloud](/links/manager), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły CMS`{.action}.

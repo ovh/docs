@@ -25,6 +25,10 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 ### Acceder al sitio web
 
 Para acceder a la parte pública de su sitio web tras la instalación de un módulo en 1 clic, acceda al [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y, seguidamente, en la pestaña `Módulos en 1 clic`{.action}.
