@@ -52,7 +52,7 @@ Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `
 
 Le `Dossier racine` n'est, à date, pas modifiable dès lors où un site web est créé.
 
-Vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action} de votre hébergement web. Pour cela, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés. Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Détacher le domaine`{.action}.
+Vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action} de votre hébergement web. Pour cela, consultez notre guide : « [Comment détacher un nom de domaine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 Vous pourrez ensuite ajouter un nouveau site web avec votre nom de domaine à l'aide de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **avant** de `Détacher le domaine`{.action}.
 
