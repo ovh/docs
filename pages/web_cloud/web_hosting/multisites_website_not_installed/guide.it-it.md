@@ -31,6 +31,10 @@ La pagina di errore "**Sito non installato**" può essere visualizzata sul brows
 
 ## Procedura
 
+> [!warning]
+>
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
 La pagina "**Sito non installato**" viene visualizzata per due motivi:
 
 - 1: [Il tuo dominio o sottodominio non è dichiarato correttamente sul tuo hosting Web](#check-multisites).

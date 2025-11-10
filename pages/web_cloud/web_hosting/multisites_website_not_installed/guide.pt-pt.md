@@ -31,6 +31,10 @@ updated: 2025-08-25
 
 ## Instruções
 
+> [!warning]
+>
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
 A página “**Site não instalado**” é apresentada por dois motivos:
 
 - 1: [O seu domínio ou subdomínio não foi corretamente declarado no seu alojamento web](#check-multisites).

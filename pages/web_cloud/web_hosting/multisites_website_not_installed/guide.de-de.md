@@ -31,6 +31,10 @@ Möglicherweise wird in Ihrem Webbrowser die Fehlerseite "**Seite nicht installi
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
 Die Seite "**Seite nicht installiert**" wird aus zwei Gründen angezeigt:
 
 - 1: [Ihr Domainname oder Ihre Subdomain ist auf Ihrem Webhosting nicht korrekt deklariert](#check-multisites).

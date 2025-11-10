@@ -31,6 +31,10 @@ Es posible que aparezca en su navegador de internet la página de error "**Sitio
 
 ## Procedimiento
 
+> [!warning]
+>
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
 La página "**Sitio no instalado**" aparece por dos motivos:
 
 - 1: [Su dominio o subdominio no está correctamente declarado en su alojamiento web](#check-multisites).

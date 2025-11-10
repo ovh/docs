@@ -31,6 +31,10 @@ W przeglądarce internetowej może pojawić się komunikat o błędzie "**Niezai
 
 ## W praktyce
 
+> [!warning]
+>
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
 Strona "**Strona nie została zainstalowana**" wyświetla się z dwóch powodów:
 
 - 1: [Twoja domena lub subdomena nie jest poprawnie zadeklarowana na Twoim hostingu](#check-multisites).
