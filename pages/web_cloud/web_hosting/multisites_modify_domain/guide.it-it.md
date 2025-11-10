@@ -26,6 +26,10 @@ Durante l’utilizzo dell’hosting Web o l’aggiornamento del sito Web, potreb
 
 > [!warning]
 >
+> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
+
+> [!warning]
+>
 > La modifica delle impostazioni di associazione di un dominio o sottodominio può, in caso di errori, comportare l’interruzione dell’accesso ai servizi (il sito Web). In caso di dubbi sulle modifiche da apportare, ti consigliamo di rivolgerti a un professionista specializzato
 >
 

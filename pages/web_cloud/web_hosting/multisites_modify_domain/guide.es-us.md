@@ -26,6 +26,10 @@ Al utilizar el alojamiento web o actualizar el sitio web, es posible que deba mo
 
 > [!warning]
 >
+> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
+
+> [!warning]
+>
 > La modificación de la configuración de asociación de un dominio o subdominio puede, en caso de mala manipulación, provocar la interrupción del acceso a sus servicios (su sitio web). Si no está seguro de los cambios que debe realizar, puede ponerse en contacto con un proveedor especializado
 >
 

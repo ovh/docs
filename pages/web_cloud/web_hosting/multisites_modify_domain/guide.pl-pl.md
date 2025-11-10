@@ -26,6 +26,10 @@ W przypadku korzystania z hostingu lub aktualizacji strony WWW może być koniec
 
 > [!warning]
 >
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
+> [!warning]
+>
 > Zmiana parametrów przypisania domeny lub subdomeny może, w przypadku błędnej operacji, spowodować przerwę w dostępie do Twoich usług (Twojej strony WWW). W razie wątpliwości co do konieczności modyfikacji skontaktuj się z wyspecjalizowanym dostawcą
 >
 

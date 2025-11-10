@@ -26,6 +26,10 @@ Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de a
 
 > [!warning]
 >
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
+> [!warning]
+>
 > A modificação das configurações de associação de um domínio ou de um subdomínio pode, em caso de má manipulação, levar a uma interrupção do acesso aos seus serviços (o seu website). Se não tiver a certeza quanto às alterações a realizar, não hesite em contactar um fornecedor especializado
 >
 

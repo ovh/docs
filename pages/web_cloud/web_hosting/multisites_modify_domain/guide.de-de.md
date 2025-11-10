@@ -26,6 +26,10 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 
 > [!warning]
 >
+> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
+
+> [!warning]
+>
 > Die Änderung der Zuordnungseinstellungen einer Domain oder Subdomain kann zu einer Unterbrechung des Zugangs zu Ihren Diensten (Ihrer Website) führen. Wenn Sie sich nicht sicher sind, welche Änderungen notwendig sind, wenden Sie sich an einen spezialisierten Dienstleister.
 >
 
