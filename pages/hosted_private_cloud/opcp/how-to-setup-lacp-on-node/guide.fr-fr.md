@@ -308,7 +308,7 @@ Puis appliquez la configuration en rédémarrant l'instance.
 
 Pour tester correctement LACP, vous devez disposer de **2 noeuds** dans le **même réseau**, tous deux configurés avec LACP.
 
-**Noeud Iperf3 (noeud 1)**
+**Serveur Iperf3 (noeud 1)**
 
 ```bash
 iperf3 -s
