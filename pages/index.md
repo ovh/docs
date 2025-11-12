@@ -555,7 +555,7 @@
             + [OPCP - How to use the APIs and obtain the credentials](hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)
             + [OPCP - How to install an instance from the Horizon interface](hosted_private_cloud/opcp/how-to-setup-instance)
             + [OPCP - How to setup LACP on a Node](hosted_private_cloud/opcp/how-to-setup-lacp-on-node)
-        + [Additional resources](hosted-private-cloud-hosted-private-cloud-opcp-additional-resources)
+        + [Additional resources](hosted-private-cloud-opcp-additional-resources)
             + [OPCP - Object Storage features and specifications](hosted_private_cloud/opcp/s3-opcp-limitations)
             + [OPCP - Ceph RBD Block Storage - Performance, Resilience and Scalability with OpenStack](hosted_private_cloud/opcp/storage-ceph-rbd-overview)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix-on-ovhcloud)
