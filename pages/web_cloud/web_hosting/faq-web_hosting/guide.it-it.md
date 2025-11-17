@@ -29,7 +29,7 @@ Segui questi passaggi:
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 2. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 
-Potrai gestire i tuoi certificati SSL, la versione PHP applicata al tuo spazio web, l'opzione CDN, i tuoi siti web, i database, ecc.
+Potrai gestire i tuoi certificati SSL, la versione PHP applicata al tuo hosting Web, l'opzione CDN, i tuoi siti web, i database, ecc.
 
 > [!success]
 >
@@ -166,7 +166,7 @@ Se il tuo [hosting Web](/links/web/hosting) è compatibile, segui questi step:
 2. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 3. Clicca sulla scheda `I miei siti`{.action}.
 
-Potrai gestire i nomi di dominio/sottodomini dichiarati sui siti web presenti sul tuo spazio web.
+Potrai gestire i nomi di dominio/sottodomini dichiarati sui siti web presenti sul tuo hosting Web.
 
 > [!success]
 >

@@ -29,7 +29,7 @@ Postępuj zgodnie z poniższymi instrukcjami:
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 
-Zarządzaj tutaj swoimi certyfikatami SSL, wersją PHP zastosowaną do Twojego hostingu, opcją CDN, swoimi stronami internetowymi, bazami danych itp.
+Zarządzaj tutaj swoimi certyfikatami SSL, wersją PHP zastosowaną do Twojego hostingu, opcją CDN, swoimi stronami internetowymi, bazami danych, itp.
 
 > [!success]
 >

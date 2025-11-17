@@ -166,7 +166,7 @@ Si su [alojamiento web](/links/web/hosting) es compatible, siga estos pasos:
 2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 3. En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 
-Podrá gestionar allí los nombres de dominio/subdominio declarados en los sitios web presentes en su alojamiento web.
+Podrá gestionar allí los nombres de dominio/subdominios declarados en los sitios web presentes en su alojamiento web.
 
 > [!success]
 >
