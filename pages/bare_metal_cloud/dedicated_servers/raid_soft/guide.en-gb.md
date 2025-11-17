@@ -1,7 +1,7 @@
 ---
 title: Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode
 excerpt: Find out how to manage and rebuild software RAID after a disk replacement on your server in legacy boot (BIOS) mode
-updated: 2025-xx-xx
+updated: 2025-11-12
 ---
 
 ## Objective
@@ -416,28 +416,43 @@ Lastly, we add a label and mount the [SWAP] partition (if applicable).
 To add a label the SWAP partition:
 
 ```sh
-[user@server_ip ~]# sudo  mkswap /dev/sdb4 -L swap-sdb4
+[user@server_ip ~]# sudo  mkswap /dev/sda4 -L swap-sda4
 ```
 
 Next, retrieve the UUIDs of both swap partitions:
 
 ```sh
 [user@server_ip ~]# sudo blkid -s UUID /dev/sda4
+/dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
 [user@server_ip ~]# sudo blkid -S UUID /dev/sdb4
+/dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-We replace the old UUID of the swap partition (**sda4**) with the new one in `/etc/fstab`:
+We replace the old UUID of the swap partition (**sda4**) with the new one in `/etc/fstab`.
+
+Example:
 
 ```sh
 [user@server_ip ~]# sudo nano etc/fstab
+
+UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
+UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
+LABEL=BIOS       /boot       vfat    defaults        0     1
+UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0       0
+UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
 ```
 
-Make sure you replace the correct UUID.
+Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Make sure you replace the coorect UUID.
 
-Then reload the system with the following command:
+Next, we verify that everything is properly mounted with the following command:
 
 ```sh
-[user@server_ip ~]# sudo systemctl daemon-reload
+[user@server_ip ~]# sudo mount -av
+/                        : ignored
+/boot                    : successfully mounted
+/boot/efi                : successfully mounted
+swap                     : ignored
+swap                     : ignored
 ```
 
 Run the following command to enable the swap partition:
@@ -446,11 +461,21 @@ Run the following command to enable the swap partition:
 [user@server_ip ~]# sudo swapon -av
 ```
 
+Then reload the system with the following command:
+
+```sh
+[user@server_ip ~]# sudo systemctl daemon-reload
+```
+
 We have now successfully completed the RAID rebuild.
 
 <a name="rescuemode"></a>
 
 /// details | **Rebuilding the RAID in rescue mode**
+
+If you server is unable to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode.
+
+In this example, we are replacing the disk `sdb`.
 
 Once the disk has been replaced, we need to copy the partition table from the healthy disk (in this example, sda) to the new one (sdb).
 
@@ -484,7 +509,7 @@ Once the disk has been replaced, we need to copy the partition table from the he
 >> The operation has completed successfully.
 >> ```
 >>
->> You can simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
+>> You can simply run the `partprobe` command.
 >>
 > **For MBR partitions**
 >>
@@ -552,8 +577,8 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --detail /dev/md4
          Events : 0.95
 
     Number   Major   Minor   RaidDevice State
-       0       8        2        0      spare rebuilding   /dev/sda4
-       1       8       18        1      active sync   /dev/sdb4
+       0       8        2        0      active sync    /dev/sda4
+       1       8       18        1      spare rebuilding  /dev/sdb4
 ```
 
 <a name="swap-partition"></a>
@@ -569,10 +594,10 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md4 /mnt
 We add the label to our swap partition with the command:
 
 ```sh
-root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/sda4 -L swap-sda4
-mkswap: /dev/sda4: warning: wiping old swap signature.
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/sdb4 -L swap-sdb4
+mkswap: /dev/sdb4: warning: wiping old swap signature.
 Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
-LABEL=swap-nvme0n1p4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
+LABEL=swap-sdb4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
 ```
 
 Next, we mount the following directories to make sure any manipulation we make in the chroot environment works properly:
@@ -606,9 +631,6 @@ Example:
 ```sh
 blkid /dev/sda4
 /dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
-```
-
-```sh
 blkid /dev/sdb4
 /dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
@@ -640,12 +662,6 @@ swap                     : ignored
 swap                     : ignored
 ```
 
-Reload the system with the following command:
-
-```sh
-root@rescue12-customer-eu:/# systemctl daemon-reload
-```
-
 Activate the swap partition the following command:
 
 ```sh
@@ -659,7 +675,13 @@ swapon: /dev/sdb4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/sdb4
 ```
 
-Exit the Chroot environment with `exit` and unmount all the disks:
+We exit the `chroot` environment with exit and reload the system:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
+```
+
+We umount all the disks:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
