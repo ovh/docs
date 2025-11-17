@@ -866,7 +866,7 @@ We have now successfully completed the RAID rebuild on the server and we can now
 
 /// details | Unfold this section
 
-If your server is able to boot in normal mode after a disk replacement, you can proceed with the following steps to rebuild the RAID:
+If your server is able to boot in normal mode after a disk replacement, you can proceed with the following steps to rebuild the RAID.
 
 Once the disk has been replaced, we copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
 
@@ -962,7 +962,7 @@ while read -r partition; do
 done < <(blkid -o device -t LABEL=EFI_SYSPART)
 ```
 
-We verify thatthe new EFI System Partition has been properly created and the system recongnises it:
+We verify that the new EFI System Partition has been properly created and the system recongnises it:
 
 ```sh
 [user@server_ip ~]# sudo blkid -t LABEL=EFI_SYSPART
