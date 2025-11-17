@@ -29,7 +29,7 @@ Führen Sie die folgenden Schritte aus:
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 
-Sie können dort Ihre SSL-Zertifikate, die PHP-Version, die auf Ihrem Webhosting angewandt wird, die CDN-Option, Ihre Webseiten, Datenbanken usw. verwalten.
+Sie können dort Ihre SSL-Zertifikate, die auf Ihrem Webhosting angewendete PHP Version, die CDN-Option, Ihre Webseiten, Datenbanken, etc. verwalten.
 
 > [!success]
 >
@@ -166,7 +166,7 @@ Wenn Ihr [Webhosting](/links/web/hosting) kompatibel ist, folgen Sie diesen Schr
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 3. Klicken Sie auf der angezeigten Seite auf den Tab `Meine Seiten`{.action}.
 
-Sie können dort die Domänennamen/Unterdomänen verwalten, die auf Ihren Webseiten in Ihrem Webhosting deklariert sind.
+Dort können Sie die für Ihre Webseiten Ihres Webhosting deklarierten Domains/Subdomains verwalten.
 
 > [!success]
 >
