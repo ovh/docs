@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Poznaj najważniejsze pytania dotyczące hostingu WWW OVHcloud"
-updated: 2025-11-10
+updated: 2025-11-20
 ---
 
 <style>
@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!warning]
->
-> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
-
 **Kliknij na poniższe pytania, aby zobaczyć wyjaśnienia.**
 
 ## Zarządzanie usługą
@@ -33,7 +29,7 @@ Postępuj zgodnie z poniższymi instrukcjami:
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 
-Będziesz mógł zarządzać swoimi certyfikatami SSL, wersją PHP zastosowaną do twojego hostingu, opcją CDN, opcjami MultiSite, bazami danych, etc.
+Zarządzaj tutaj swoimi certyfikatami SSL, wersją PHP zastosowaną do Twojego hostingu, opcją CDN, swoimi stronami internetowymi, bazami danych itp.
 
 > [!success]
 >
@@ -168,9 +164,9 @@ Jeśli Twój [hosting WWW](/links/web/hosting) jest kompatybilny, wykonaj nastę
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}.
+3. Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 
-Będziesz mógł zarządzać domenami/subdomenami zadeklarowanymi w opcji MultiSite na twoim hostingu.
+Zarządzaj tutaj nazwami domen/poddomen zadeklarowanymi na stronach internetowych znajdujących się na Twoim hostingu.
 
 > [!success]
 >

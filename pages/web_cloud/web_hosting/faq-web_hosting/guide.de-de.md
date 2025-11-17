@@ -1,7 +1,7 @@
 ---
 title: "FAQ Webhosting"
 excerpt: "Hier finden Sie Antworten zu den am häufigsten gestellten Fragen zu den OVHcloud Webhostings"
-updated: 2025-11-10
+updated: 2025-11-20
 ---
 
 <style>
@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!warning]
->
-> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
-
 **Klicken Sie auf die unten stehenden Fragen, um die Erläuterungen anzuzeigen.**
 
 ## Verwaltung Ihres Angebots
@@ -33,7 +29,7 @@ Führen Sie die folgenden Schritte aus:
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 
-Dort können Sie Ihre SSL Zertifikate, die auf Ihrem Webhosting angewendete PHP Version, die CDN Option, Multisites, Datenbanken, etc. verwalten.
+Sie können dort Ihre SSL-Zertifikate, die PHP-Version, die auf Ihrem Webhosting angewandt wird, die CDN-Option, Ihre Webseiten, Datenbanken usw. verwalten.
 
 > [!success]
 >
@@ -168,9 +164,9 @@ Wenn Ihr [Webhosting](/links/web/hosting) kompatibel ist, folgen Sie diesen Schr
 
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}.
+3. Klicken Sie auf der angezeigten Seite auf den Tab `Meine Seiten`{.action}.
 
-Dort können Sie die auf Ihrem Webhosting als Multisite deklarierten Domains/Subdomains verwalten.
+Sie können dort die Domänennamen/Unterdomänen verwalten, die auf Ihren Webseiten in Ihrem Webhosting deklariert sind.
 
 > [!success]
 >
