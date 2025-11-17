@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Environment, PHP version, .ovhconfig"
 excerpt: "Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig"
-updated: 2025-10-27
+updated: 2025-11-20
 ---
 
 ## Objective
@@ -385,7 +385,7 @@ Once you have modified the .ovhconfig file, upload it to your [FTP storage space
 
 If you are using your web hosting to host multiple websites, there may be various reasons why you want to use a different PHP version for some of your websites.
 
-Create a ".ovhconfig" file containing the desired PHP version for the relevant website or websites. Refer to the section "[3.3 - Modify the contents of the ".ovhconfig" file](#update-ovhconfig)" in this guide for assistance if needed. When you upload the ".ovhconfig" file to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), do so in the root folder where the files that make up the relevant website are located. You can find the root folder of your website from your [OVHcloud Control Panel](/links/manager) in the `Multisite`{.action} tab of the relevant hosting.
+Create a ".ovhconfig" file containing the desired PHP version for the relevant website or websites. Refer to the section "[3.3 - Modify the contents of the ".ovhconfig" file](#update-ovhconfig)" in this guide for assistance if needed. When you upload the ".ovhconfig" file to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), do so in the root folder where the files that make up the relevant website are located. You can find the root folder of your website from your [OVHcloud Control Panel](/links/manager) in the `My sites`{.action} tab of the relevant hosting.
 
 If needed, consult our guide detailing how to [configure a website on a web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 

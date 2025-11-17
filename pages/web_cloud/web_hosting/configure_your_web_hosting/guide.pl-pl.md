@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Środowisko, wersja PHP, .ovhconfig"
 excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i .ovhconfig na hostingu WWW"
-updated: 2025-10-27
+updated: 2025-11-20
 ---
 
 ## Wprowadzenie
@@ -48,10 +48,6 @@ Zmiana konfiguracji hostingu w [Panelu klienta OVHcloud](/links/manager) lub zmi
 - Dostęp do hostingu z poziomu [Panelu klienta OVHcloud](/links/manager) lub informacje potrzebne do zalogowania się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## W praktyce
-
-> [!warning]
->
-> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
 
 ### 1 - Opis parametrów konfiguracyjnych dostępnych na hostingu OVHcloud <a name="all-parameters"></a>
 
@@ -392,7 +388,7 @@ Po zmodyfikowaniu pliku ".ovhconfig" prześlij go na swoją [przestrzeń dyskow�
 
 Jeśli korzystasz z hostingu webowego, aby hostować wiele witryn internetowych, mogą istnieć różne powody, dla których chcesz użyć innej wersji PHP dla niektórych z tych witryn.
 
-Utwórz plik ".ovhconfig" zawierający żądaną wersję PHP dla danej lub danych witryn internetowych. Skorzystaj z procedur opisanych w sekcji "[3.3 - Modyfikowanie zawartości pliku ".ovhconfig"](#update-ovhconfig) tego przewodnika, jeśli to konieczne. Po przesłaniu pliku ".ovhconfig" na swój [przestrzeń dyskową FTP](/pages/web_cloud/web_hosting/ftp_connection), umieść go w katalogu głównym, w którym znajdują się pliki tworzące daną witrynę internetową. Katalog główny swojej witryny znajdziesz w [Panelu klienta OVHcloud](/links/manager) w zakładce `MultiSite`{.action} danego hostingu.
+Utwórz plik ".ovhconfig" zawierający żądaną wersję PHP dla danej lub danych witryn internetowych. Skorzystaj z procedur opisanych w sekcji "[3.3 - Modyfikowanie zawartości pliku ".ovhconfig"](#update-ovhconfig) tego przewodnika, jeśli to konieczne. Po przesłaniu pliku ".ovhconfig" na swój [przestrzeń dyskową FTP](/pages/web_cloud/web_hosting/ftp_connection), umieść go w katalogu głównym, w którym znajdują się pliki tworzące daną witrynę internetową. Katalog główny swojej witryny znajdziesz w [Panelu klienta OVHcloud](/links/manager) w zakładce `Moje strony`{.action}danego hostingu.
 
 W razie potrzeby zapoznaj się z naszym przewodnikiem opisującym, jak [skonfigurować witrynę internetową na hostingu webowym](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 

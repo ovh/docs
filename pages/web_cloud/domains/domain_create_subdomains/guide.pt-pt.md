@@ -1,7 +1,7 @@
 ---
 title: "Como criar um subdomínio?"
 excerpt: "Saiba a definição de um subdomínio e como criá-lo na OVHcloud"
-updated: 2025-10-27
+updated: 2025-11-20
 ---
 
 <style>
@@ -36,10 +36,6 @@ Pode criar infinitos subdomínios a partir de um único domínio.
 - Dispor de direitos suficientes sobre o conjunto dos serviços em causa. Encontre mais informações no nosso guia [Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## Instruções
-
-> [!warning]
->
-> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
 
 **Índice**
 
@@ -177,11 +173,11 @@ Para serviços que não sejam indicados, consulte a documentação do serviço. 
 
 #### Casos 1: Ver um website presente no meu alojamento web da OVHcloud com um subdomínio <a name="link-subdomain-case-1"></a>
 
-Tal como para um domínio e para autorizar um subdomínio a apresentar o conteúdo de uma pasta *de destino* presente num alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, selecione o serviço em causa onde se encontra o seu website e escolha o separador `Multisite`{.action}.
+Assim como para um nome de domínio, para autorizar um subdomínio a exibir o conteúdo de uma pasta « alvo » declarada para um site alojado num serviço de alojamento web, faça login na [Área de cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna à esquerda, selecione a oferta correspondente onde se encontra o seu site e, em seguida, escolha o separador `Meus sites`{.action}.
 
-É aqui que autoriza o acesso do seu subdomínio ao seu alojamento web onde se encontra o seu website.
+É aqui que autoriza o acesso do seu subdomínio ao seu site alojado no seu alojamento web.
 
-Para mais informações sobre a configuração de um domínio ou subdomínio num alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Quer se trate de um nome de domínio ou de um subdomínio, o procedimento é o mesmo.
+Para mais detalhes sobre a configuração de um domínio ou subdomínio num alojamento web, consulte o nosso guia « [Como associar um nome de domínio a um site web existente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Trata-se de um nome de domínio ou de um subdomínio, o procedimento é o mesmo.
 
 > [!warning]
 >

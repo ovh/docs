@@ -1,7 +1,7 @@
 ---
 title: "How to create a subdomain"
 excerpt: "Find out how to define a subdomain and how to create one at OVHcloud"
-updated: 2025-10-27
+updated: 2025-11-20
 ---
 
 <style>
@@ -172,11 +172,11 @@ For services that are not mentioned, please refer to the documentation for the s
 
 #### Case 1: Display a website on my OVHcloud web hosting plan with a subdomain <a name="link-subdomain-case-1"></a>
 
-As with a domain name, and to authorize a subdomain to display the contents of a *target* folder on a web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click on `Hosting plans`{.action} in the left-hand column, select the plan concerned where your website is located, then select the `Multisite`{.action} tab.
+Just like for a domain name, to allow a subdomain to display the content of a declared "target" folder for a website hosted on a web hosting plan, log in to the [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click on `Hosting plans`{.action} in the left-hand column, select the relevant offer where your website is located, and then choose the `My sites`{.action} tab.
 
-This is where you authorize your subdomain to access your web hosting plan, where your website is located.
+This is where you authorise your subdomain to access your website on your web hosting plan.
 
-For more details on setting up a domain or subdomain on a web hosting plan, please read our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite). The procedure is the same whether you are using a domain name or a subdomain.
+For more details on configuring a domain or subdomain on a web hosting plan, please refer to our guide « [How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Whether it is a domain name or a subdomain, the procedure is the same.
 
 > [!warning]
 >

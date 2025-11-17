@@ -1,7 +1,7 @@
 ---
 title: "Jak utworzyć subdomenę?"
 excerpt: "Dowiedz się, jak zdefiniować subdomenę i jak ją utworzyć w OVHcloud"
-updated: 2025-10-27
+updated: 2025-11-20
 ---
 
 <style>
@@ -36,10 +36,6 @@ Możesz utworzyć nieskończoną liczbę subdomen na podstawie jednej domeny.
 - Wystarczające uprawnienia dotyczące wszystkich usług. Więcej informacji znajdziesz w naszym przewodniku [Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## W praktyce
-
-> [!warning]
->
-> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
 
 **Podsumowanie**
 
@@ -177,11 +173,11 @@ W przypadku usług, które nie zostały wymienione, zapoznaj się z dokumentacj�
 
 #### Przypadek 1: Wyświetl stronę WWW z subdomeną na moim hostingu OVHcloud <a name="link-subdomain-case-1"></a>
 
-Podobnie jak w przypadku nazwy domeny i aby subdomena mogła wyświetlać zawartość *docelowego* katalogu na hostingu, zaloguj się do [panelu klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, wybierz odpowiednią ofertę, w której znajduje się Twoja strona WWW, następnie wybierz zakładkę `MultiSite`{.action}.
+Tak jak w przypadku nazwy domeny, aby zezwolić subdomenie na wyświetlanie zawartości folderu „docelowego” przypisanego do strony internetowej znajdującej się na serwisie webowym, zaloguj się do [panela klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} w lewym pasku, wybierz ofertę, w której znajduje się Twoja strona internetowa, a następnie kliknij kartę `Moje strony`{.action}.
 
-To tutaj zezwalasz na dostęp Twojej subdomeny do hostingu, na którym znajduje się Twoja strona WWW.
+To tutaj zezwalasz subdomenie na dostęp do strony internetowej znajdującej się na Twoim serwisie webowym.
 
-Więcej informacji na temat konfigurowania domeny lub subdomeny na hostingu znajdziesz w przewodniku "[Udostępnianie hostingu dla kilku stron](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Bez względu na to, czy jest to domena czy subdomena, procedura jest taka sama.
+Aby uzyskać więcej informacji na temat konfiguracji domeny lub subdomeny na serwisie webowym, zapoznaj się z naszym przewodnikiem „[Jak przypisać nazwę domeny do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”. Niezależnie od tego, czy chodzi o nazwę domeny, czy subdomenę, procedura jest taka sama.
 
 > [!warning]
 >

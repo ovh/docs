@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Ambiente, versione PHP, .ovhconfig"
 excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e .ovhconfig di un hosting Web"
-updated: 2025-10-27
+updated: 2025-11-20
 ---
 
 ## Obiettivo
@@ -48,10 +48,6 @@ Per riassumere, modificare la configurazione dell’hosting Web dallo [Spazio Cl
 - Avere accesso al piano di hosting Web dallo [Spazio Cliente OVHcloud](/links/manager) o conoscere le informazioni di accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Procedura
-
-> [!warning]
->
-> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
 
 ### 1 - Descrizione dei parametri di configurazione disponibili sugli hosting Web OVHcloud <a name="all-parameters"></a>
 
@@ -390,7 +386,7 @@ Una volta modificato il file ".ovhconfig", caricalo sul tuo [spazio di storage F
 
 Se utilizzi il tuo spazio web per ospitare diversi siti web, potrebbero esserci diverse motivazioni che ti spingono a voler utilizzare una versione diversa di PHP per alcuni dei tuoi siti web.
 
-Crea un file ".ovhconfig" contenente la versione di PHP desiderata per il sito web o i siti web interessati. Segui le operazioni descritte nella sezione "[3.3 - Modifica il contenuto del file ".ovhconfig"](#update-ovhconfig)" di questa guida, se necessario. Quando caricherai il file ".ovhconfig" sul tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), fallo nella cartella radice dove si trovano i file che compongono il sito web interessato. Trova la cartella radice del tuo sito web dal tuo [Spazio Cliente OVHcloud](/links/manager) nell'onghetta `Multisito`{.action} dell'hosting interessato.
+Crea un file ".ovhconfig" contenente la versione di PHP desiderata per il sito web o i siti web interessati. Segui le operazioni descritte nella sezione "[3.3 - Modifica il contenuto del file ".ovhconfig"](#update-ovhconfig)" di questa guida, se necessario. Quando caricherai il file ".ovhconfig" sul tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), fallo nella cartella radice dove si trovano i file che compongono il sito web interessato. Trova la cartella radice del tuo sito web dal tuo [Spazio Cliente OVHcloud](/links/manager) nell'onghetta `I miei siti`{.action} dell'hosting interessato.
 
 Consulta la nostra guida che dettaglia come [configurare un sito web su un'hosting web](/pages/web_cloud/web_hosting/multisites_configure_multisite) se necessario.
 

@@ -1,7 +1,7 @@
 ---
 title: "Come creare un sottodominio?"
 excerpt: "Questa guida ti mostra la definizione di un sottodominio e come crearlo in OVHcloud"
-updated: 2025-10-27
+updated: 2025-11-20
 ---
 
 <style>
@@ -36,10 +36,6 @@ Ad esempio, *www.ovhcloud.com* è un sottodominio del dominio *ovhcloud.com*.
 - Disporre dei diritti necessari per tutti i servizi in questione. Per maggiori informazioni consulta la nostra guida [Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## Procedura
-
-> [!warning]
->
-> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
 
 **Riepilogo**
 
@@ -177,11 +173,11 @@ Per i servizi non menzionati, consulta la documentazione relativa al servizio in
 
 #### Caso 1: visualizza un sito Web presente sul tuo hosting Web OVHcloud con un sottodominio <a name="link-subdomain-case-1"></a>
 
-Come per i domini e per autorizzare un sottodominio a visualizzare il contenuto di una cartella *di destinazione* presente su un hosting Web, accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona la tua offerta in cui si trova il sito Web e poi clicca sulla scheda `Multisito`{.action}.
+Come per un dominio, per autorizzare un sottodominio a visualizzare il contenuto di una directory "target" dichiarata per un sito web presente su un hosting web, accedi all'[Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona l'offerta in cui si trova il tuo sito web e poi clicca sull'etichetta `I miei siti`{.action}.
 
-È qui che autorizzi l'accesso del sottodominio al tuo hosting Web in cui si trova il tuo sito Web.
+Ecco dove autorizzi l'accesso del tuo sottodominio al tuo sito web sull'hosting web.
 
-Per maggiori informazioni sulla configurazione di un dominio o sottodominio su un hosting Web, consulta la nostra guida "[Condivisione dell’hosting tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Che si tratti di un dominio o di un sottodominio, la procedura è la stessa.
+Per ulteriori informazioni sulla configurazione di un dominio o sottodominio su un hosting web, consulta la nostra guida « [Come associare un nome a dominio a un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Che si tratti di un nome a dominio o di un sottodominio, la procedura è la stessa.
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
-updated: 2025-10-27
+updated: 2025-11-20
 ---
 
 ## Objetivo
@@ -48,10 +48,6 @@ Em resumo, alterar a configuração do seu alojamento web a partir da [Área de 
 - Ter acesso à sua oferta de alojamento web a partir da [Área de Cliente OVHcloud](/links/manager) ou conhecer as informações que permitem ligar-se à [Área de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Instruções
-
-> [!warning]
->
-> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
 
 ### 1 - Descrição dos parâmetros de configuração disponíveis nos alojamentos web da OVHcloud <a name="all-parameters"></a>
 
@@ -390,7 +386,7 @@ Depois de" alterado o ficheiro ".ovhconfig, transfira-o para o seu [espaço de a
 
 Se está a utilizar o seu alojamento web para alojar vários sítios web, pode haver diversas razões pelas quais pretende beneficiar de uma versão de PHP diferente para alguns dos seus sítios web.
 
-Crie um ficheiro ".ovhconfig" contendo a versão de PHP desejada para o(s) sítio(s) web em questão. Utilize as manipulações descritas na parte "[3.3 - Modificar o conteúdo do ficheiro ".ovhconfig"](#update-ovhconfig)" deste guia, se necessário. Quando fizer o upload do ficheiro ".ovhconfig" para o seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), faça-o na pasta raiz onde se encontram os ficheiros que compõem o sítio web em questão. Encontre a pasta raiz do seu sítio web a partir do seu [Área de Cliente OVHcloud](/links/manager) no separador `Multisite`{.action} do alojamento em questão.
+Crie um ficheiro ".ovhconfig" contendo a versão de PHP desejada para o(s) sítio(s) web em questão. Utilize as manipulações descritas na parte "[3.3 - Modificar o conteúdo do ficheiro ".ovhconfig"](#update-ovhconfig)" deste guia, se necessário. Quando fizer o upload do ficheiro ".ovhconfig" para o seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), faça-o na pasta raiz onde se encontram os ficheiros que compõem o sítio web em questão. Encontre a pasta raiz do seu sítio web a partir do seu [Área de Cliente OVHcloud](/links/manager) no separador `Meus sites`{.action} do alojamento em questão.
 
 Consulte o nosso guia detalhado sobre como [configurar um sítio web num alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite), se necessário.
 

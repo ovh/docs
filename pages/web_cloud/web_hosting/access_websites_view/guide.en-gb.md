@@ -1,7 +1,7 @@
 ---
 title: "View and manage all your websites from the OVHcloud Control Panel"
 excerpt: "Find out how to view and manage all of your websites via the OVHcloud Control Panel"
-updated: 2025-05-27
+updated: 2025-11-20
 ---
 
 ## Objective
@@ -25,9 +25,9 @@ Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Clo
 
 #### Domain name
 
-Displays the website’s primary domain name, as configured on your hosting plan’s Multisite tab.
+Displays the main domain name of the website, as it is configured in the "My sites" tab of your hosting.
 
-Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
+Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 
 #### Diagnostic
 
@@ -37,15 +37,15 @@ Notifies you if your domain name points correctly to the associated web hosting 
 - `A/AAAA` yellow: The A and/or AAAA records for your domain name point to an IP address different from your Web Hosting plan’s IP address.
 - `A/AAAA` gray: No A or AAAA record is configured, your domain name does not point to any IP address.
 
-Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
+Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 
-For more details on the diagnostic, please read the “Diagnose your domain names” section of our guide “[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
+For more details about the diagnosis, please refer to our guide "[How to check the domain name / website association?](/pages/web_cloud/web_hosting/my_websites_diagnosis)".
 
 #### Root folder
 
 Specifies the directory on your hosting plan (for example: www, app, public_html, etc.) to which the domain points.
 
-Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
+Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 
 #### Service name
 
@@ -74,13 +74,13 @@ Shows the status of the Git integration on the website:
 - In progress: The Git repository is being configured.
 - Error: An error is detected in the configuration of the Git repository.
 
-Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
+Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 
 #### Separate logs
 
 Indicates whether a log space is enabled on the selected domain.
 
-Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
+Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 
 Visit our page “[Monitor and analyze website traffic](/links/web/hosting-traffic-analysis)” for more information.
 
@@ -97,7 +97,7 @@ Displays the status of the CDN (**C**content **D**elivery **N**etwork) on the do
 - Inactive: The CDN is disabled.
 - N/A: Not applicable (offer not compatible).
 
-Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
+Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 
 With the CDN, you can cache static elements of your website, such as images. See our page “[Shared CDN](/links/web/hosting-options-cdn)” for more information.
 
@@ -105,7 +105,7 @@ With the CDN, you can cache static elements of your website, such as images. See
 
 Indicates whether or not SSL is enabled on the domain name concerned.
 
-Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
+Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 
 With an SSL certificate, you get a secure connection (**https://**) to the selected domain. Visit our page “[Secure your OVHcloud website effectively with a premium SSL certificate](/links/web/hosting-options-ssl)” for more information.
 
@@ -113,7 +113,7 @@ With an SSL certificate, you get a secure connection (**https://**) to the selec
 
 Indicates whether the application firewall is enabled on the domain.
 
-Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
+Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 
 See our page “[Essential options for your web hosting](/links/web/hosting-options)” for more information.
 

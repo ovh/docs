@@ -1,7 +1,7 @@
 ---
 title: "Wyświetl wszystkie strony WWW w Panelu klienta OVHcloud i zarządzaj nimi"
 excerpt: "Dowiedz się, jak wyświetlać wszystkie Twoje strony WWW i zarządzać nimi w Panelu klienta"
-updated: 2025-05-27
+updated: 2025-11-20
 ---
 
 ## Wprowadzenie
@@ -17,10 +17,6 @@ Widok `Strony WWW` pozwala na scentralizowane wyświetlanie wszystkich stron nie
 
 ## W praktyce
 
-> [!warning]
->
-> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
-
 ### Przejdź do widoku `Strony WWW`
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}. W lewym menu kliknij `Strony WWW`{.action}. Pojawi się tabela z listą wszystkich Twoich stron WWW i ich głównymi informacjami.
@@ -29,9 +25,9 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź
 
 #### Domena
 
-Wyświetla główną nazwę domeny hostingu skonfigurowaną w zakładce MultiSite Twojego hostingu.
+Wyświetla główną domenę strony internetowej, tak jak jest ona skonfigurowana na karcie „Moje strony” w Twoim hostingu.
 
-Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `MultiSite`{.action} danego hostingu.
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
 #### Diagnostyka
 
@@ -41,15 +37,15 @@ Informuje, czy domena prawidłowo wskazuje na przypisany hosting. Dla każdej na
 - `A/AAAA` yellow: Wpisy A i/lub AAAA dla Twojej domeny wskazują na adres IP inny niż adres IP Twojego hostingu.
 - `A/AAAA`szary: Nie skonfigurowałeś żadnego rekordu A lub AAAA. Twoja domena nie wskazuje na żaden adres IP.
 
-Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `MultiSite`{.action} danego hostingu.
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
-Aby uzyskać więcej informacji, zapoznaj się z częścią "Diagnostyka domen" naszego przewodnika "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+Aby uzyskać więcej informacji na temat diagnostyki, zapoznaj się z naszym przewodnikiem „[Jak sprawdzić powiązanie „domena / strona internetowa”?](/pages/web_cloud/web_hosting/my_websites_diagnosis)”.
 
 #### Katalog główny
 
 Określa katalog na hostingu (na przykład: www, app, public_html, etc.), na który wskazuje domena.
 
-Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `MultiSite`{.action} danego hostingu.
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
 #### Nazwa usługi
 
@@ -78,13 +74,13 @@ Pokazuje stan integracji Git na stronie WWW:
 - W trakcie: Trwa konfiguracja repozytorium Git.
 - Błąd: Wykryto błąd w konfiguracji repozytorium Git.
 
-Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `MultiSite`{.action} danego hostingu.
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
 #### Rozdzielone logi
 
 Wskazuje, czy w wybranej domenie jest włączona przestrzeń logów.
 
-Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `MultiSite`{.action} danego hostingu.
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
 Przejdź na stronę "[Monitorowanie i analiza ruchu na stronie internetowej](/links/web/hosting-traffic-analysis)", aby uzyskać więcej informacji.
 
@@ -101,7 +97,7 @@ Wyświetla status usługi CDN (**C**content **D**delivery **N**network) dla dome
 - Nieaktywny: CDN jest wyłączony.
 - ND: Nie dotyczy (oferta nie jest kompatybilna).
 
-Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `MultiSite`{.action} danego hostingu.
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
 CDN pozwala na umieszczanie w pamięci cache statycznych elementów Twojej strony WWW, takich jak obrazy. Aby uzyskać więcej informacji, przejdź na stronę "[Shared CDN](/links/web/hosting-options-cdn)".
      
@@ -109,7 +105,7 @@ CDN pozwala na umieszczanie w pamięci cache statycznych elementów Twojej stron
 
 Wskazuje, czy certyfikat SSL jest aktywny dla danej domeny.
 
-Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `MultiSite`{.action} danego hostingu.
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
 Certyfikat SSL zapewnia bezpieczne połączenie (**https://**) z wybraną nazwą domeny. Przejdź na stronę "[Zabezpiecz Twoją stronę OVHcloud dzięki certyfikatowi SSL premium](/links/web/hosting-options-ssl)", aby uzyskać więcej informacji.
 
@@ -117,7 +113,7 @@ Certyfikat SSL zapewnia bezpieczne połączenie (**https://**) z wybraną nazwą
 
 Wskazuje, czy zapora aplikacyjna jest włączona w domenie.
 
-Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `MultiSite`{.action} danego hostingu.
+Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
 Więcej informacji znajdziesz na stronie "[Opcje niezbędne dla Twojego hostingu](/links/web/hosting-options)".
 
