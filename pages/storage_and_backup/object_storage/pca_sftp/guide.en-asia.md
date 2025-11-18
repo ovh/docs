@@ -8,7 +8,7 @@ updated: 2022-05-13
 Object Storage is a storage solution that is managed primarily through the OpenStack API. However, you might not be familiar with managing storage space via command line. Therefore, we have developed a gateway which makes it possible to connect to your PCA container with an SFTP client.
 
 ## Requirements
-- SFTP Client: [WinSCP](https://winscp.net/eng/download.php){.external}
+- SFTP Client: [WinSCP](https://winscp.net/eng/download.php)
 - OpenStack login & password
 - TenantName of the project
 
@@ -21,7 +21,7 @@ In this example, we use WinSCP but you can use any SFTP client. Configurations o
 You can generate your OpenStack login & password using this [guide](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 ### TenantName
-The TenantName corresponds to the name of your Horizon Project. To get the TenantName, you need to connect to the OpenStack web interface: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/){.external}. Once logged in, the TenantName is visible at the top of page.
+The TenantName corresponds to the name of your Horizon Project. To get the TenantName, you need to connect to the OpenStack web interface: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/). Once logged in, the TenantName is visible at the top of page.
 
 ![horizon](images/image1.png){.thumbnail}
 

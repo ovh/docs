@@ -34,7 +34,7 @@ Il existe deux types d'adresses IP :
 
 Pour utiliser l'option de restriction par IP de l'espace client OVHcloud, vous devrez renseigner **uniquement** votre/vos adresse(s) IP publique(s).
 
-Pour récupérer l'adresse IP publique d'un appareil qui sera autorisé à accéder à votre espace client OVHcloud, rendez-vous sur le site [mon-ip.com](https://mon-ip.com){.external} (non géré par OVHcloud).
+Pour récupérer l'adresse IP publique d'un appareil qui sera autorisé à accéder à votre espace client OVHcloud, rendez-vous sur le site [mon-ip.com](https://mon-ip.com) (non géré par OVHcloud).
 
 Prenez note de l'adresse IP qui s'affiche puis répétez l'opération pour chacun des appareils qui sera autorisé à accéder à votre espace client OVHcloud.
 
@@ -78,7 +78,7 @@ Deux sections sont présentes pour la mise en place des restrictions par IP :
 >
 > Veillez à **avoir autorisé** correctement au moins une de vos adresses IP publiques dans la section `IP configurées` **avant** de valider la règle par défaut en statut `Refusé`, dans la section `Règle par défaut`. 
 >
-> Dans le cas contraire, vous bloquerez **absolument toutes les IP publiques (y compris les vôtres)** sans aucune exception. Plus personne n'aura accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et vous devrez réaliser une procédure administrative pour débloquer votre situation.
+> Dans le cas contraire, vous bloquerez **absolument toutes les IP publiques (y compris les vôtres)** sans aucune exception. Plus personne n'aura accès à votre [espace client OVHcloud](/links/manager) et vous devrez réaliser une procédure administrative pour débloquer votre situation.
 >
 > Soyez donc extrêmement vigilant sur ce point.
 >

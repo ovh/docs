@@ -19,9 +19,9 @@ Questo tutorial contiene alcuni esempi di situazioni in cui proteggere il sito W
 
 ## Prerequisiti
 
-- Disporre di un [hosting Web OVHcloud](/links/web/hosting){.external}.
-- Aver registrato almeno un [dominio](/links/web/domains){.external}.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione "Web cloud".
+- Disporre di un [hosting Web OVHcloud](/links/web/hosting).
+- Aver registrato almeno un [dominio](/links/web/domains).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione "Web cloud".
 
 ## Procedura
 
@@ -41,7 +41,7 @@ Nella maggior parte dei casi, si tratta di script esterni, provenienti da altri 
 
 Come sapere se il tuo sito è interessato?
 
-Gli strumenti di debug disponibili in *Mozilla Firefox* e *Google Chrome* possono indicare se il sito Web contiene o meno elementi bloccati a causa di contenuto misto. La documentazione disponibile sul [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} spiega l’utilizzo di questi strumenti per individuare i contenuti misti.
+Gli strumenti di debug disponibili in *Mozilla Firefox* e *Google Chrome* possono indicare se il sito Web contiene o meno elementi bloccati a causa di contenuto misto. La documentazione disponibile sul [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) spiega l’utilizzo di questi strumenti per individuare i contenuti misti.
 
 ### Contenuto duplicato (duplicate content)
 

@@ -1,7 +1,7 @@
 ---
 title: Configurer le vRack sur le load balancer
 excerpt: Voici comment configurer le vRack sur un Load Balancer
-updated: 2022-04-04
+updated: 2025-09-02
 ---
 
 ## Introduction
@@ -25,7 +25,7 @@ Le `serviceName` dans l'API ci-dessous est celui de votre vRack, ex : `pn-1234`.
 
 > [!api]
 >
-> @api {v1} /vrack GET /vrack/{serviceName}/allowedServices
+> @api {v1} /vrack GET /vrack/{serviceName}/eligibleServices
 >
 
 Vous trouverez vos services Load Balancer à l'index : `ipLoadbalancing`.

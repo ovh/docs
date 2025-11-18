@@ -12,7 +12,7 @@ Le clonage d'une VM permet de créer une copie de la VM source.
 
 ## Prérequis
 
-- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
+- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/).
 - Disposer d'au moins une VM dans votre cluster.
 - Être connecté à votre [interface vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 

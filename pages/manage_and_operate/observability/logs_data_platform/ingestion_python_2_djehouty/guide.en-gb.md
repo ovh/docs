@@ -7,14 +7,14 @@ updated: 2023-01-16
 
 This guide will show you how to push your logs to Logs Data Platform using Python 2.x.
 
-[Djehouty](https://github.com/ovh/djehouty){.external} is intended to be a set of logging formatters and handlers to easily send log entries into Logs Data Platform.
+[Djehouty](https://github.com/ovh/djehouty) is intended to be a set of logging formatters and handlers to easily send log entries into Logs Data Platform.
 
 This package includes:
 
-- for [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}:
+- for [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification):
     - a TCP/TLS handler to send log entries over TCP with TLS support.
     - a formatter to convert logging record into GELF(1.1).
-- for [LTSV](http://ltsv.org/){.external}:
+- for [LTSV](http://ltsv.org/):
     - a TCP/TLS handler to send log entries over TCP with TLS support.
     - a formatter to convert logging record into LTSV.
 
@@ -22,8 +22,8 @@ This package includes:
 
 To complete this guide you will need:
 
-- Python 2, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/){.external}.
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- Python 2, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/).
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29)
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ## Instructions
@@ -32,7 +32,7 @@ To complete this guide you will need:
 
 #### Using pip
 
-You can use [pip](https://pip.pypa.io/en/stable/){.external} to install Djehouty, make sure you have the latest version:
+You can use [pip](https://pip.pypa.io/en/stable/) to install Djehouty, make sure you have the latest version:
 
 ```shell-session
 $ pip install --upgrade pip
@@ -45,7 +45,7 @@ Successfully installed djehouty-<version> setuptools-18.3.1
 
 #### Using sources
 
-Djehouty is available on the [OVH github repository](https://github.com/ovh/djehouty){.external} and can be installed manually:
+Djehouty is available on the [OVH github repository](https://github.com/ovh/djehouty) and can be installed manually:
 
 ```shell-session
 $ git clone git@github.com:ovh/djehouty.git
@@ -77,7 +77,7 @@ The following examples assume that you already have a working stream. Moreover, 
 |static_fields *|`{"X-OVH-TOKEN": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"}`||
 |null_character|True|Not Supported|
 
-The complete list of parameters supported by Djehouty can be found on [github](https://github.com/ovh/djehouty){.external}.
+The complete list of parameters supported by Djehouty can be found on [github](https://github.com/ovh/djehouty).
 
 #### Example&#58; Use case with GELF over TCP/TLS
 
@@ -120,7 +120,7 @@ ltsv_logger.info('test')
 
 ### Send additional meta data
 
-If you have many handler, you can use the [logging.LoggerAdapter](https://docs.python.org/2/library/logging.html#loggeradapter-objects){.external} class to add extra.
+If you have many handler, you can use the [logging.LoggerAdapter](https://docs.python.org/2/library/logging.html#loggeradapter-objects) class to add extra.
 
 The following example uses the LTSV logger defined above:
 
@@ -143,6 +143,6 @@ ltsv_logger.info("Bonjour '%s'", 'John', extra={"lang": 'fr'})
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)
 

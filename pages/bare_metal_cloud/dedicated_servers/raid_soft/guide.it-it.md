@@ -18,7 +18,7 @@ Il livello RAID implementato di default sui server OVHcloud è RAID 1, un sistem
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external} con configurazione RAID software
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) con configurazione RAID software
 - Avere accesso al server via SSH con l’utente root
 
 ## Procedura
@@ -380,12 +380,12 @@ mount /dev/md4 /home
 
 ## Per saperne di più
 
-[Hot Swap – RAID Software](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft){.external}
+[Hot Swap – RAID Software](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
 [OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
-[Hot Swap - RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard){.external}
+[Hot Swap - RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
-[Gestire il RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} (in inglese)
+[Gestire il RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

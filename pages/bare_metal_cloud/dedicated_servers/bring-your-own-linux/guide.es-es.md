@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux) (EN)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2025-06-05
+updated: 2025-09-30
 ---
 
 ## Objective
@@ -34,8 +34,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 
 There are some technical limitations linked to the use of physical products such as dedicated servers. Here is a non-exhaustive list, to keep in mind during your deployment preparation:
 
-- Boot type: **uefi** or **legacy**
-- Partition type: **MBR** or **GPT**
+- Boot type: **UEFI** or **legacy** (depending on the boot type of your server)
 - Image format: **qcow2**
 - Only one partition in the qcow2 image
 
@@ -66,7 +65,7 @@ For more information and examples about Cloud-Init's ConfigDrive, please read th
 
 ### Deploy your image via the APIs <a name="viaapi"></a>
 
-Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
+Log in to the [API console](/links/api) and go to the `/dedicated/server`{.action} section.
 
 > [!api]
 >
@@ -176,7 +175,7 @@ The following table gives an overview of well known customer errors and how to f
 |image provided has a size of `n` bytes which is larger than `device` of `m` bytes|Image provided has a size that is bigger than the size of the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
 |Can't write qcow2 on disk|Impossible to write qcow2 image on disk.|Modify your image so that the command `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` works.|
 |Could not download, qcow2 image is too big to download in memory.|Your server doesn't have enough RAM to download the image.|You need to reduce the size of your image.|
-|Could not download image located: `url`|Cannot download image from `imageURL`.|Check that a download with the `curl` command from your server works in rescue mode. If some HTTP specific headers are required, you can precise them with the `httpHeaders` argument.|
+|Could not download image: `<error message>`|Cannot download image from `imageURL`.|Check that a download with the `curl` command from your server works in rescue mode. If some HTTP specific headers are required, you can provide them with the `httpHeaders` argument.|
 |Bad `checkSumType` for downloaded file, got: `n` while expecting `m`.|Incorrect checksum.|- Please ensure that you have specified the correct checksum.<br />- Check that a download with the `curl` command from your server works in rescue mode.|
 
 See OVHcloud API and Storage [Common customer errors](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#errors) for related partitioning issues.

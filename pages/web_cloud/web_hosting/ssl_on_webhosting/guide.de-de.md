@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - SSL-Zertifikat einrichten"
 excerpt: "Erfahren Sie hier, wie Sie ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting installieren und verwalten"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Ziel 
@@ -68,6 +68,18 @@ Hier finden Sie die Anleitungen zu diesen 4 Lösungen:
 > Wenn Sie ein SSL-Zertifikat von Ihrem Webhosting löschen möchten und stellen Sie sicher, dass durch das Löschen des SSL-Zertifikats Ihre Websites nicht unzugänglich werden, **bevor Sie fortfahren**. In diesem Fall erhalten Ihre Benutzer eine Sicherheitswarnung, wenn sie versuchen, auf Ihre Website über HTTPS zuzugreifen.
 
 Da diese Überprüfung von den Einstellungen Ihrer Website abhängig ist, empfehlen wir Ihnen, sich im Falle von Problemen mit einem spezialisierten Dienstleister in Verbindung zu setzen. Wir können Ihnen in dieser Hinsicht keine Unterstützung bieten.
+
+> [!primary]
+>
+> **Informationen zur Migration auf das neue SSL-Zertifikat-Verwaltungsinterface:**
+>
+> Diese Anleitung richtet sich an Kunden, deren Webhosting-Dienste noch nicht auf das neue Verwaltungsinterface für SSL-Zertifikate migriert sind.
+> Gehen Sie in Ihrem OVHcloud Kundencenter auf Ihr Webhosting und überprüfen Sie den Tab `SSL-Zertifikate`, um festzustellen, ob diese Migration durchgeführt wurde.
+> Wenn der Tab `SSL-Zertifikate` vorhanden ist, wurde Ihr Dienst bereits zum neuen Verwaltungsinterface migriert. In diesem Fall konsultieren Sie bitte [diese Anleitung](/pages/web_cloud/web_hosting/ssl_management), um Ihr SSL-Zertifikat zu verwalten.
+>
+> Aus technischen Gründen können nicht alle Webhosting-Dienste unserer Kunden auf einmal migriert werden. Diese Migration erfolgt automatisch über mehrere Wochen, ohne dass die Funktionsweise Ihrer Webhosting-Dienste beeinträchtigt wird oder dass dazu weitere Eingriffe oder Aktionen Ihrerseits erforderlich sind.
+>
+> Im Laufe der Zeit werden alle Webhosting-Dienste mit dem neuen Verwaltungsinterface für SSL-Zertifikate funktionieren.
 
 So entfernen Sie das auf Ihrem Webhosting installierte SSL-Zertifikat:
 

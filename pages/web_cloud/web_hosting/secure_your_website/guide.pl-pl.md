@@ -24,7 +24,7 @@ Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i tr
 - [OVHcloud Web Hosting plan](/links/web/hosting)
 - posiadanie [login details](/pages/web_cloud/web_hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
 - dostęp do [OVHcloud Control Panel](/links/manager)
-- dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
+- dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/)
 
 ## W praktyce
 
@@ -91,10 +91,10 @@ Formularze stron internetowych są głównym celem hakerów/spammerów. Chroń s
 
 Dodaj do swojej strony wtyczkę bezpieczeństwa zalecaną przez producenta CMS:
 
-- [WordPress](https://pl.wordpress.org/){.external}
-- [Joomla](https://downloads.joomla.org/pl/){.external}
-- [Drupal](https://www.drupal.org.pl/){.external}
-- [PrestaShop](https://www.prestashop.com/pl){.external}
+- [WordPress](https://pl.wordpress.org/)
+- [Joomla](https://downloads.joomla.org/pl/)
+- [Drupal](https://www.drupal.org.pl/)
+- [PrestaShop](https://www.prestashop.com/pl)
 
 ### Etap 10 - Sprawdzanie, czy na Twoim hostingu znajdują się złośliwe pliki
 
@@ -108,7 +108,7 @@ Kopie [zapasowe danych](#backup) Twojej strony WWW (pliki FTP i baza danych) mus
 
 Nie stanowią one jednak absolutnego bezpieczeństwa. Sprawdź również, czy kopie zapasowe Twojej bazy danych nie są uszkodzone.
 
-Testy te będą przeprowadzane lokalnie, na przykład poprzez zaimportowanie danych do programu typu [WAMP](https://www.wampserver.com/){.external}. Skonfiguruj następnie Twoje lokalne rozwiązanie, aby wszystkie jego konfiguracje odpowiadały konfiguracji naszych [serwerów hostingowych](https://webhosting-infos.hosting.ovh.net/).
+Testy te będą przeprowadzane lokalnie, na przykład poprzez zaimportowanie danych do programu typu [WAMP](https://www.wampserver.com/). Skonfiguruj następnie Twoje lokalne rozwiązanie, aby wszystkie jego konfiguracje odpowiadały konfiguracji naszych [serwerów hostingowych](https://webhosting-infos.hosting.ovh.net/).
 
 Możesz również utworzyć **wersję testową** Twojej strony (np.: test.mojadomena.tld) w innym katalogu Twojego hostingu (możesz korzystać z szablonu bazowego).
 

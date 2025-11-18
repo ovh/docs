@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le snapshot"
 excerpt: "Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud"
-updated: 2024-09-18
+updated: 2025-10-17
 ---
 
 ## Objectif
@@ -14,13 +14,17 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pazh9ozbkEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!primary]
-> Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr/vps/options/) afin de comparer les détails et tarifs de chaque option.
+> Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](/links/bare-metal/vps-options) afin de comparer les détails et tarifs de chaque option.
 >
 
 ## Prérequis
 
 - Avoir accès à votre [espace client OVHcloud](/links/manager).
-- Un [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/) déjà configuré.
+- Un [VPS OVHcloud](/links/bare-metal/vps) déjà configuré.
+
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## En pratique
 
@@ -28,7 +32,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous da
 
 ### Étape 1 : souscrire l'option snapshot
 
-Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ».  
+Depuis l'onglet `Accueil`{.action}, descendez jusqu'au cadre « Sauvegarde ».  
 Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Commander`{.action} dans le menu qui s'affiche.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
@@ -41,7 +45,7 @@ Pour résilier l'option, cliquez sur le bouton `...`{.action} à côté de « Sn
 
 ### Étape 2 : prendre un snapshot
 
-Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez tapez une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affiche dans le menu « Résumé des options ».
+Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez renseigner une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affichera le cadre « Sauvegarde ».
 
 ### Étape 3 : supprimer/restaurer un snapshot
 

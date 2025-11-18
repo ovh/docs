@@ -16,7 +16,7 @@ Le istanze Public Cloud possono essere gestite direttamente dallo [Spazio Client
 
 ## Prerequisiti
 
-- Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
+- Un [progetto Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
 - Un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) nel tuo progetto
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 

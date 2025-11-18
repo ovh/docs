@@ -1,11 +1,11 @@
 ---
 title: "Utilizza Hyper-V con indirizzi Additional IP su una vRack"
 excerpt: "Scopri come configurare una macchina virtuale con Additional IP e Hyper-V su una vRack"
-updated: 2021-02-25
+updated: 2025-07-22
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+> Questo articolo riguarda la configurazione di indirizzi Additional IPv4 aggiuntivi su una vRack. È inoltre possibile configurare indirizzi Additional IPv6 sulla vRack utilizzando [questa guida](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Obiettivo
@@ -23,9 +23,9 @@ Segui il processo di installazione di Hyper-V, l'associazione di uno switch virt
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 ## Procedura
 

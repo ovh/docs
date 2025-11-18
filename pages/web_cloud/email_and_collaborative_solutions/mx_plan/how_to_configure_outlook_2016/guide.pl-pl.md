@@ -13,7 +13,10 @@ updated: 2024-10-01
 }
 </style>
 
- 
+> [!success]
+> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
+> Podziel się z nami swoją opinią i pomysłami.<br>
+> [przejdź do ankiety.](https://s.elq.fr/ovhext/RULMVWH)
 
 ## Wprowadzenie
 

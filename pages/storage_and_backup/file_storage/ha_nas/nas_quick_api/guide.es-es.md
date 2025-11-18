@@ -16,7 +16,7 @@ El servicio NAS-HA de OVHcloud le permite gestionar el almacenamiento de archivo
 
 ## Requisitos
 
-- Un servicio [NAS-HA de OVHcloud](https://www.ovh.es/nas/)
+- Un servicio [NAS-HA de OVHcloud](/links/storage/nas-ha)
 - Consulte nuestra guía de [primeros pasos con la API de OVHcloud](/pages/manage_and_operate/api/first-steps) para familiarizarse con la APIv6 de OVHcloud.
 
 ## Procedimiento
@@ -208,6 +208,6 @@ Utilice la siguiente ruta para eliminar una partition:
 
 [Montar un NAS en Windows Server a través de CIFS](/pages/storage_and_backup/file_storage/ha_nas/nas_cifs)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

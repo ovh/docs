@@ -1,12 +1,8 @@
 ---
 title: Reverse DNS Ihres Servers konfigurieren (PTR record)
 excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IP-Adresse über Ihr Kundencenter einrichten
-updated: 2025-04-28
+updated: 2025-09-18
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -48,7 +44,7 @@ Sie können den Reverse-Pfad auch direkt mithilfe des Stift-Icons in der Spalte 
 >  - Der *Reverse* darf keine Großbuchstaben enthalten.
 >  - Der *Reverse* muss mit einem `.` enden.
 >
-> Beispiel: Für "domain.tld" wäre der *Reverse*: **domain.tld.**
+> Beispiel: Für "domain.tld" wäre der *Reverse* `domain.tld.`
 >
 
 > [!primary]

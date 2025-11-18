@@ -12,7 +12,7 @@ I database server Cloud Database ti danno la possibilità di agire sui parametri
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) (inclusa in un'offerta di[hosting web Performance](/links/web/hosting).
+- Disporre di una [istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di[hosting web Performance](/links/web/hosting).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

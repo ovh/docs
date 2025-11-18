@@ -170,7 +170,7 @@ Para más información sobre la creación de una llave SSH, consulte [esta guía
 
 **Otras opciones**
 
-Atención: Estas opciones no son obligatorias para la creación de una instancia base. Para más información sobre estas opciones, consulte la [documentación oficial de OpenStack](https://docs.openstack.org/horizon/latest/user/launch-instances.html){.external}.
+Atención: Estas opciones no son obligatorias para la creación de una instancia base. Para más información sobre estas opciones, consulte la [documentación oficial de OpenStack](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
 
 |Información|Detalles|
 |---|---|

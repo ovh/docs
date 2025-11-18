@@ -223,7 +223,7 @@ Zapisz zmiany i zamknij edytor. Przy następnym połączeniu z serwerem musisz p
 
 Jeśli preferujesz graficzny interfejs użytkownika, możesz znaleźć wiele aplikacji dla każdego typu systemu operacyjnego, które umożliwiają łączenie się ze zdalnymi hostami za pomocą protokołu SSH.
 
-Na przykład [PuTTY](https://putty.org/) to oprogramowanie open source z wieloma przydatnymi funkcjami. Dowiedz się, jak z niego korzystać podczas łączenia się z serwerami OVHcloud, korzystając z naszego szczegółowego tutoriala:
+Na przykład [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to oprogramowanie open source z wieloma przydatnymi funkcjami. Dowiedz się, jak z niego korzystać podczas łączenia się z serwerami OVHcloud, korzystając z naszego szczegółowego tutoriala:
 
 [Jak używać PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

@@ -6,7 +6,7 @@ updated: 2025-06-06
 
 ## Objectif
 
-Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](/links/bare-metal/bare-metal) à l'aide de l'[API OVHcloud](https://api.ovh.com/).
+Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](/links/bare-metal/bare-metal) à l'aide de l'[API OVHcloud](/links/api).
 
 ## Prérequis
 

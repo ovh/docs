@@ -35,7 +35,7 @@ Vous pourrez également gérer la facturation de vos services au travers de votr
 
 ### Interface Horizon
 
-Interface visuelle indépendante d'OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} est l'implémentation d’origine du tableau de bord d'OpenStack, qui fournit une interface utilisateur web aux services OpenStack, notamment Nova, Swift, Keystone, etc.
+Interface visuelle indépendante d'OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/) est l'implémentation d’origine du tableau de bord d'OpenStack, qui fournit une interface utilisateur web aux services OpenStack, notamment Nova, Swift, Keystone, etc.
 
 Cette interface complète et technique vous permet de gérer la quasi totalité des actions OpenStack. Ce sera une des interfaces nécessaires si vous souhaitez gérer plus de deux VLAN, ajouter des interfaces réseau privées à vos instances, gérer des images personnalisées, etc.
 
@@ -47,14 +47,14 @@ Consultez le guide [Accéder à l'interface Horizon](/pages/public_cloud/public_
 
 ### APIv6 OVHcloud
 
-Chaque action que vous effectuez dans l'espace client OVHcloud fait appel aux [APIv6 OVHcloud](https://eu.api.ovh.com/). 
+Chaque action que vous effectuez dans l'espace client OVHcloud fait appel aux [APIv6 OVHcloud](/links/api). 
 Vous pouvez même aller plus loin dans les API que dans votre espace client.
 
 L'interface est moins visuelle que l'espace client OVHcloud mais vous permettra d'effectuer un grand nombre d'actions. Vous pourrez par ce biais gérer et personnaliser vos VLAN, ajouter des interfaces à vos instances ou encore créer des serveurs hautement personnalisés.
 
 Il vous sera parfois nécessaire de récupérer plusieurs informations avant l'utilisation d'une API spécifique.
 
-Vous pouvez simplement accéder aux API depuis [notre page web](https://eu.api.ovh.com/), mais aussi créer vos scripts PHP ou Python pour y faire appel.
+Vous pouvez simplement accéder aux API depuis [notre page web](/links/api), mais aussi créer vos scripts PHP ou Python pour y faire appel.
 
 Ainsi, il vous sera possible de librement automatiser les tâches de base au moyen de scripts, optimiser vos propres fonctions, etc.
 
@@ -87,7 +87,7 @@ Vous pourrez alors, suivant votre besoin, utiliser les API dédiées à OpenStac
 >
 > De même, certaines fonctionnalités peuvent être absentes de l'API OpenStack selon la version de votre client et de votre système d'exploitation.
 > Dans le cadre de ce guide, le choix a été fait de vous proposer les alternatives les plus simples et les plus intuitives.
-> Vous pouvez consulter à tout moment la [documentation officielle d'OpenStack](https://docs.openstack.org/fr/){.external} si vous souhaitez aller plus loin dans leur utilisation.
+> Vous pouvez consulter à tout moment la [documentation officielle d'OpenStack](https://docs.openstack.org/fr/) si vous souhaitez aller plus loin dans leur utilisation.
 >
 
 Pour plus d'informations, consultez ce guide : [Configuration du vRack Public Cloud l'aide de l'OpenStack CLI](/pages/public_cloud/public_cloud_network_services/getting-started-09-creating-vrack-with-openstack).
@@ -122,7 +122,7 @@ Dans la liste des services éligibles, sélectionnez le projet que vous souhaite
 
 ![ajouter le projet](images/addprojectvrack.png){.thumbnail}
 
-Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un VLAN dans le vRack depuis l'espace client OVHcloud](./#creer-un-reseau-prive-depuis-lespace-client-ovhcloud).
+Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursuivez la lecture de ce guide à partir de [Créer un réseau privé depuis l'espace client OVHcloud](./#creer-un-reseau-prive-depuis-lespace-client-ovhcloud).
 
 #### Depuis les APIv6 OVHcloud
 
@@ -284,7 +284,7 @@ Cliquez [ici](/pages/public_cloud/public_cloud_network_services/getting-started-
 
 #### Gestion des interfaces réseaux depuis OpenStack Horizon
 
-Connectez-vous à l'interface [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} en suivant la méthode indiquée dans la [première partie de ce guide](./#interface-horizon).
+Connectez-vous à l'interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) en suivant la méthode indiquée dans la [première partie de ce guide](./#interface-horizon).
 
 Connectez-vous bien sur votre zone de travail :
 

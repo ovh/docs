@@ -1,5 +1,6 @@
 ---
-title: Pushing logs with a forwarder - Syslog-ng 3.12.1+ (Linux)
+title: "Pushing logs with a forwarder - Syslog-ng 3.12.1+ (Linux)"
+excerpt: "Find out how to send logs from your Linux instance to Logs Data Platform"
 updated: 2024-03-08
 ---
 
@@ -15,7 +16,7 @@ In this tutorial will show you how to send Logs from your Linux instance to Logs
 
 - A **Linux** based instance (server, VPS, Cloud instance, Raspberry Pi, ...). Command lines will be for **DEBIAN 12** in this tutorial
 - A root access to this instance
-- [Activated your Logs Data Platform account](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29)
 - [To create at least one Stream and get its token](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ## Instructions
@@ -39,7 +40,7 @@ Conclusion: lot of info, with a date, a process, a description. but hard to foll
 
 ### Configure your Account
 
-First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) Read it? Let's go to the next step then !
+First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)), a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) Read it? Let's go to the next step then !
 
 ### Install and configure a log collector
 
@@ -106,13 +107,13 @@ log { source(s_src); rewrite(ovh-token); destination(ovhPaaSLogs); };
 >
 > - Copy the **data-gathering tools certificate** from the manager Home page in SSL Configuration section, and paste it in file "/usr/local/share/ca-certificates/ldp.pem"
 > - Ensure the permission on this file is 644
-> 
+>
 > <pre class="highlight language-console"><code class="language-console">$ debian@server:~$ sudo chmod 644 /usr/share/ca-certificates/ldp.pem</code></pre>
-> 
+>
 > - Import this certificate to your system's trusted CA repository
-> 
+>
 > <pre class="highlight language-console"><code class="language-console">$ debian@server:~$ sudo update-ca-certificates</code></pre>
-> 
+>
 
 Let's review this configuration.
 
@@ -135,7 +136,7 @@ Let's recap: you have a Linux instance, and it's sending log locally and remotel
 
 The last step is to create a dashboard displaying the results:
 
-- Connect to the Logs Data Platform manager, ensure you that you have a Stream and that the token in the syslog configuration file is OK. Ensure that you have a Dashboard created.
+- Connect to the Logs Data Platform manager, ensure that you have a Stream and that the token in the syslog configuration file is OK. Ensure that you have a Dashboard created.
 - Head to your stream by using the button `Graylog access`{.action} located in the **...** menu of your stream, or head directly to the graylog access of your cluster.
 - Once in Graylog, Go in Stream Tab, click on your stream. In the top-left corner, chose a 1 Day range and click on the green button to search.
 - You should have some results like this:
@@ -144,7 +145,7 @@ The last step is to create a dashboard displaying the results:
 
 - On the top right corner of the histogram, click on `Add to dashboard`{.action}.
 
-Alright, you just created the first widget in you dashboard. Now, let's create a Pie chart:
+Alright, you just created the first widget in your dashboard. Now, let's create a Pie chart:
 
 - On the left, click on the small blue triangle before "facility"
 - Click on "Quick Values"
@@ -158,5 +159,5 @@ The best feature is the ability to mix criteria, based on what is important to y
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

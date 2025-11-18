@@ -5,7 +5,7 @@ updated: 2021-05-05
 
 ## Objective
 
-Reversibility is one of OVHcloud SMART (Simple, Mulit-local, Accessible, Reversible, Transparent) cloud commitments. We promote an open and interoperable ecosystem to ensure our customers' freedom of choice. As such, we affirm our compliance with the [SWIPO (SWItching and POrting)](https://swipo.eu/download-section/copyrighted-downloads/){.external} IaaS code of conduct for Cloud Providers, designed with the European Commission.
+Reversibility is one of OVHcloud SMART (Simple, Mulit-local, Accessible, Reversible, Transparent) cloud commitments. We promote an open and interoperable ecosystem to ensure our customers' freedom of choice. As such, we affirm our compliance with the [SWIPO (SWItching and POrting)](https://swipo.eu/download-section/copyrighted-downloads/) IaaS code of conduct for Cloud Providers, designed with the European Commission.
 
 Our principles for implementing reversibility are as follows: an open, standard environment, in which our customers have very broad control over their systems and data; detailed customer documentation to best facilitate ingress and egress migration.
 

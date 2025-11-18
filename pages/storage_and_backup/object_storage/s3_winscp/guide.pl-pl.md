@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Skorzystaj z oferty Object Storage z WinSCP (EN)
 excerpt: Learn how to configure WinSCP to manage your buckets and objects
-updated: 2023-10-16
+updated: 2025-08-25
 ---
 
 ## Objective

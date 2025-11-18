@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Build a RAG Chatbot with LangChain
 excerpt: Learn how to build a RAG (Retrieval Augmented Generation) chatbot using Python, LangChain and AI Endpoints
-updated: 2025-04-28
+updated: 2025-10-30
 ---
 
 > [!primary]
@@ -70,8 +70,9 @@ Once this is done, you can create a Python file named `chat-bot-streaming-rag.py
 from dotenv import load_dotenv
 import argparse
 import time
+import os
 
-from langchain import hub
+from langchain_classic import hub
 
 from langchain_mistralai import ChatMistralAI
 
@@ -124,7 +125,7 @@ def chat_completion(new_message: str):
   # Split documents into chunks and vectorize them
   text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
   splits = text_splitter.split_documents(docs)
-  vectorstore = Chroma.from_documents(documents=splits, embedding=OVHCloudEmbeddings(model_name=_OVH_AI_ENDPOINTS_EMBEDDING_MODEL_NAME))
+  vectorstore = Chroma.from_documents(documents=splits, embedding=OVHCloudEmbeddings(model_name=_OVH_AI_ENDPOINTS_EMBEDDING_MODEL_NAME, access_token=_OVH_AI_ENDPOINTS_ACCESS_TOKEN))
 
   prompt = hub.pull("rlm/rag-prompt")
 
@@ -153,7 +154,7 @@ if __name__ == '__main__':
 
 ### Prepare your knowledge base
 
-Create a folder named rag-files and place your `.txt`, .`md`, or other text-based documents there. These will be converted into embeddings and used during retrieval.
+Create a folder named `rag-files` and place your `.txt`, .`md`, or other text-based documents there. These will be converted into embeddings and used during retrieval.
 
 You can find example files in our [public-cloud-examples GitHub repository](https://github.com/ovh/public-cloud-examples/tree/main/ai/ai-endpoints/python-langchain-chatbot/rag-files).
 

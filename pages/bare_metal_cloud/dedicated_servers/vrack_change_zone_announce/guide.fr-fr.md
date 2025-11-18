@@ -17,9 +17,9 @@ Le [vRack](/links/network/vrack) est un réseau privé vous permettant de config
 - Disposer de connaissances avancées en réseau.
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
-> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+> Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 
 ## En pratique
 
@@ -50,7 +50,7 @@ Rendez-vous sur le lien <https://api.ovh.com/console/>, puis connectez-vous avec
 > @api {v1} /vrack GET /vrack
 > 
 
-Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez pas à identifier le service concerné grâce à ces références, aidez-vous de votre [espace client OVHcloud](/links/manager){.external} pour le récupérer. Pour cela, positionnez-vous dans la partie `Bare Metal Cloud`{.action}, puis `Network`{.action} et ensuite « vRack ».
+Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez pas à identifier le service concerné grâce à ces références, aidez-vous de votre [espace client OVHcloud](/links/manager) pour le récupérer. Pour cela, positionnez-vous dans la partie `Bare Metal Cloud`{.action}, puis `Network`{.action} et ensuite « vRack ».
 
 > [!api]
 >

@@ -62,15 +62,15 @@ Lorsque le serveur de réception (Inbound Mail Server) reçoit l'e-mail, celui-c
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager){.external}.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS OVHcloud).
 
 > [!warning]
 >
 > Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification du SPF depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si celui-ci utilise notre configuration OVHcloud dans votre [espace client](/links/manager){.external} depuis l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné.
+> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si celui-ci utilise notre configuration OVHcloud dans votre [espace client](/links/manager) depuis l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné.
 >
 
 ## En pratique
@@ -81,7 +81,7 @@ Si votre domaine utilise la configuration OVHcloud, vous pouvez vérifier si un 
 
 /// details | Comment vérifier une configuration SPF existante ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Zone DNS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Zone DNS`{.action}.
 
 Un tableau devrait apparaître. Ce dernier affiche la zone DNS de votre nom de domaine chez OVHcloud. Elle est constituée de plusieurs enregistrements, tous symbolisés par une ligne du tableau.
 
@@ -109,7 +109,7 @@ Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filt
 
 ### Configurer l'enregistrement SPF
 
-Pour ajouter un enregistrement SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné, puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
+Pour ajouter un enregistrement SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](/links/manager). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné, puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
 
 Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
@@ -117,7 +117,7 @@ Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
 Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont proposés. Concernant l’ajout d’un SPF, deux possibilités s’offrent à vous :
 
-- [Ajouter un enregistrement SPF OVHcloud](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](/links/web/emails-hosted-exchange){.external} et Exchange Provider).
+- [Ajouter un enregistrement SPF OVHcloud](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](/links/web/emails-hosted-exchange) et Exchange Provider).
 - [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
 - [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur.
 
@@ -129,7 +129,7 @@ Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont propos
 
 Vous avez choisi l'enregistrement `SPF`{.action} et souhaitez appliquer la configuration OVHcloud. Celle-ci permet d'inclure l'ensemble des serveurs e-mail sortants OVHcloud pour les offres e-mail suivantes :
 
-- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](/links/web/hosting){.external} .
+- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](/links/web/hosting) .
 - [E-mail Pro](/links/web/email-pro).
 - [Hosted Exchange](/links/web/emails-hosted-exchange).
 
@@ -199,7 +199,7 @@ Pour finaliser l'action, cliquez sur `Suivant`{.action}. Assurez-vous que les in
 
 ### Modifier un enregistrement SPF <a name="modifyspf"></a>
 
-Pour modifier le SPF dans la configuration OVHcloud de votre domaine, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
+Pour modifier le SPF dans la configuration OVHcloud de votre domaine, connectez-vous à votre [espace client OVHcloud](/links/manager). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
 
 Le tableau affiche la configuration OVHcloud de votre domaine. Chaque ligne correspond à un enregistrement DNS. Repérez votre enregistrement TXT ou SPF dans ce tableau et cliquez sur le bouton `...`{.action} afin d'éditer l'entrée.
 
@@ -265,9 +265,9 @@ Dirigez-vous ensuite dans la section `Noms de domaine`{.action}, sélectionnez l
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
+[Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit){.external}.
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

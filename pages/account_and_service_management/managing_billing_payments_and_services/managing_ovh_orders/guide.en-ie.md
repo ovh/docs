@@ -95,7 +95,7 @@ The terms and conditions for the right of withdrawal can be found in the remaind
 >
 > In addition, the right of withdrawal does not apply to unpaid orders, as they are automatically cancelled when the purchase order expires.
 >
-> Finally, it does not apply to certain services (notably [domain names](https://www.ovhcloud.com/en-ie/domains/) and [Sectigo SSL certificates](https://www.ovhcloud.com/en-ie/web-hosting/options/ssl/)). When you order these products, you are therefore asked to expressly waive your right of withdrawal, in accordance with article L.221-28 of the French Consumer Code.
+> Finally, it does not apply to certain services (notably [domain names](/links/web/domains) and [Sectigo SSL certificates](/links/web/hosting-options-ssl)). When you order these products, you are therefore asked to expressly waive your right of withdrawal, in accordance with article L.221-28 of the French Consumer Code.
 >
 
 If the eligibility criteria for the right of withdrawal are met, it can be applied directly from the [OVHcloud Control Panel](/links/manager):

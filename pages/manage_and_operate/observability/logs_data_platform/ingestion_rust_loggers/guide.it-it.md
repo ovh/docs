@@ -7,10 +7,10 @@ updated: 2024-08-07
 
 This guide will explain how to push your logs to Logs Data Platform using Rust with two differents libraries. Use the one you prefer.
 
-Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external}) which is widely used. OVHcloud has implemented this system to support the [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification#gelf-payload-specification){.external}:
+Rust has a logging implementation ([log](https://docs.rs/log/*/log/)) which is widely used. OVHcloud has implemented this system to support the [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification#gelf-payload-specification):
 
 - **gelf_logger**: This is a minimal logger.
-- **log4rs-gelf**: Based on _gelf_logger_, this implementation is compatible with the complex configurable framework [log4rs](https://docs.rs/log4rs/*/log4rs/){.external}.
+- **log4rs-gelf**: Based on _gelf_logger_, this implementation is compatible with the complex configurable framework [log4rs](https://docs.rs/log4rs/*/log4rs/).
 
 Those loggers will:
 
@@ -24,10 +24,10 @@ Those loggers will:
 To complete this guide you will need:
 
 - Rust. We recommend the last stable version.
-- [An activated Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [An activated Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29)
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
-- To install the [**serde**](https://serde.rs/){.external} crate with the **derive** feature.
-- To install the [**log**](https://crates.io/crates/log){.external} crate with the **serde** feature.
+- To install the [**serde**](https://serde.rs/) crate with the **derive** feature.
+- To install the [**log**](https://crates.io/crates/log) crate with the **serde** feature.
 
 ## Instructions
 
@@ -112,11 +112,11 @@ Don't forget to modify the placeholder **<YOUR-LDP-CLUSTER-ADDRESS>** to the clu
 
 Don't forget to modify the placeholder **<YOUR-WRITE-TOKEN>** to the actual value of the write token of your stream.
 
-You could also look at the [generated API documentaton](https://docs.rs/gelf_logger/*){.external}.
+You could also look at the [generated API documentaton](https://docs.rs/gelf_logger/*).
 
 ### Second method: log4rs-gelf
 
-This method is an alternative to the previous one. Please consider the following as a different rust project. You need to be familiar with the [log4rs framework](https://docs.rs/log4rs/latest/log4rs/){.external}
+This method is an alternative to the previous one. Please consider the following as a different rust project. You need to be familiar with the [log4rs framework](https://docs.rs/log4rs/latest/log4rs/)
 
 Install **log4rs** and **log4rs-gelf** in your Rust project.
 
@@ -203,11 +203,11 @@ fn main() {
 
 ```
 
-You could also look at the [generated API documentation](https://docs.rs/log4rs-gelf/*){.external}.
+You could also look at the [generated API documentation](https://docs.rs/log4rs-gelf/*).
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

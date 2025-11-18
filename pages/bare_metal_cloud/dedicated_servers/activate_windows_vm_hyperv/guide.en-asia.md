@@ -11,20 +11,20 @@ updated: 2024-10-30
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
 >
-> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
+> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#go-further) section of this tutorial.
 >
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal){.external} with Windows Server installed
+- A [dedicated server](/links/bare-metal/bare-metal) with Windows Server installed
 - The Hyper-V role installed
 - A Windows License provided by OVHcloud
 
 ## Instructions
 
-This tutorial assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}.
+This tutorial assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server).
 
-The steps below are for standard activation only. If you have a Windows Datacenter licence, we recommend proceeding with [Automatic Virtual Machine Activation (AVMA)](https://learn.microsoft.com/en-us/windows-server/get-started/automatic-vm-activation?tabs=server2019#system-requirements){.external}.
+The steps below are for standard activation only. If you have a Windows Datacenter licence, we recommend proceeding with [Automatic Virtual Machine Activation (AVMA)](https://learn.microsoft.com/en-us/windows-server/get-started/automatic-vm-activation?tabs=server2019#system-requirements).
 
 ### Creating a NAT Network
 

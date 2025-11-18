@@ -18,8 +18,8 @@ Dies passiert, weil der Snapshot Ihrer virtuellen Maschine auf dem Backup Proxy 
 ## Voraussetzungen
 
 - Sie sind Administrator-Kontakt für die [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur, um Login-Daten zu erhalten.
-- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben die Option [Veeam Managed Backup](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external} aktiviert.
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](/links/manager).
+- Sie haben die Option [Veeam Managed Backup](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/veeam-backup-managed/) aktiviert.
 
 ## In der praktischen Anwendung
 

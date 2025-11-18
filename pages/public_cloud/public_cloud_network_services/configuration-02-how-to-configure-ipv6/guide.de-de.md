@@ -20,7 +20,7 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 > [!primary]
 > 
-> Floating IP und Gateway sind derzeit nicht mit IPv6 kompatibel. Sie können IPv6 nur mit Instanzen im [Public Mode](#/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts#publicmode) verwenden.
+> Floating IP und Gateway sind derzeit nicht mit IPv6 kompatibel. Sie können IPv6 nur mit Instanzen im [Public Mode](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts#publicmode) verwenden.
 >
 
 ## Voraussetzungen
@@ -327,6 +327,6 @@ Zögern Sie jedenfalls nicht, sich mit Testergebnissen zu den oben erwähnten An
 
 ## Weiterführende Informationen
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

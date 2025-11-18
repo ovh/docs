@@ -1,49 +1,38 @@
 ---
 title: Détails des fonctions API
 excerpt: Détails des fonctionnalités de l’API
-updated: 2022-04-04
+updated: 2025-09-29
 ---
 
 ## Objectif
 
-Description des différents points d'entrées dans l'API pour le Load Balancer OVHcloud.
+Ce guide fournit une description détaillée de toutes les fonctions de l'API pour le Load Balancer OVHcloud.
 
 ## Prérequis
 
+- Consulter le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+
 ## En pratique
 
-### Gérer son service Load Balancer OVH via l'API
+### Gérer son service OVHcloud Load Balancer via l'API
 
-Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
+Toutes les fonctions d'API qui sont utilisées dans la section */ipLoadbalancing* sont disponibles sur [cette page](/links/console).
 
-- Tous les appels API se font dans la section */ipLoadbalancing* disponible ici : [https://ca.api.ovh.com/console/#/ipLoadbalancing](https://ca.api.ovh.com/console/#/ipLoadbalancing){.external}.
-
-> [!warning]
+> [!primary]
 >
-> Attention, pour des raisons de compatibilité, le point d'entrée de l'ancien
-> système Load Balancer OVH est toujours présent dans l'API /ip/loadBalancing,
-> à ne pas confondre avec le nouveau /ipLoadbalancing.
+> Dans les appels ci-dessous, tous les champs marqués d'une astérisque `*` sont obligatoires.
 > 
 
 > [!primary]
 >
-> Dans les appels ci-dessous tous les champs marqués d'une astérisque *
-> sont obligatoires.
-> 
-
-> [!primary]
->
-> Les Frontend, Ferme et Serveur sont spécifiques au
-> protocole (parmis HTTP, TCP ou UDP) dans lequel ils sont définis.
-> Bien qu'ils puissent être "combinés" entre eux, ce n'est possible qu'au sein
-> d'un même protocole. Ainsi, il n'est pas possible d'utiliser un Frontend
-> UDP avec une Ferme HTTP. Mais il est possible (en l'absence d'autre
-> limitation) d'utiliser un Frontend HTTP avec une Ferme HTTP.
+> Les frontends, fermes et serveurs sont spécifiques au protocole (HTTP, TCP ou UDP) dans lequel ils sont définies.
+> La compatibilité entre ces composants n'est possible qu'au sein du même protocole.
+> Par exemple, un frontend HTTP ne peut être associé qu'à une ferme HTTP, et ne peut pas être utilisé avec une ferme UDP.
 > 
 
 ## Services et zones
 
-### Load Balancer OVH
+### Load Balancer OVHcloud
 
 #### Lister les services actifs
 
@@ -52,14 +41,14 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
-#### Lister les zones disponibles pour le Load Balancer OVH
+#### Lister les zones disponibles pour le Load Balancer OVHcloud
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/availableZones
 > 
 
-#### Retourner les détails d'un service Load Balancer OVH
+#### Retourner les détails d'un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -72,10 +61,10 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >>
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
-#### Modifier un service Load Balancer OVH
+#### Modifier un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -91,20 +80,20 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >> >
 >> > **Ip** *
 >> >
 >> >> **displayName**
 >> >> >
->> >> > Le nom que vous souhaitez attribuer au service (Chaîne de caractères)
+>> >> > Le nom que vous souhaitez attribuer au service (chaîne de caractères)
 >> >
 >> >> **sslConfiguration**
 >> >>
->> >> > La configuration SSL que vous souhaitez attribuer au service (Valeur)
+>> >> > La configuration SSL que vous souhaitez attribuer au service (valeur)
 >
 
-#### Lister les services attachés au Load Balancer OVH
+#### Lister les services attachés au Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -120,7 +109,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
 #### Lister les fermes existantes et leur type
@@ -139,14 +128,14 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >> >
 >> > **vrackNetworkId**
 >> >
 >> >> Permet de filtrer selon le réseau vrack
 >
 
-#### Lister les zones pouvant être attachées à un service Load Balancer OVH
+#### Lister les zones pouvant être attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -162,7 +151,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
 #### Lister les différentes sondes pouvant être utilisées
@@ -181,7 +170,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
 #### Lister les différents types de fermes pouvant être utilisées
@@ -200,7 +189,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
 #### Lister les différents types de frontends pouvant être utilisés
@@ -219,10 +208,10 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
-#### Lister les différents types d'actions de routage pouvant etre utilisées
+#### Lister les différents types d'actions de routage pouvant etre utilisés
 
 > [!faq]
 >
@@ -238,7 +227,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
 #### Lister les différents types de règles de routage pouvant être utilisés
@@ -257,7 +246,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
 ### Service
@@ -278,7 +267,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >
 
 #### Modifier les informations du service
@@ -297,30 +286,30 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 >> >
 >> > **Service** *
 >> >
 >> >> - **automatic**
 >> >> >
->> >> > Active le renouvellement automatique du service (Booléen))
+>> >> > Active le renouvellement automatique du service (booléen))
 >> >>
 >> >> - **deleteAtExpiration**
 >> >> >
->> >> > Active la suppression du service lors de l'expiration (Booléen)
+>> >> > Active la suppression du service lors de l'expiration (booléen)
 >> >>
 >> >> - **forced**
 >> >> >
->> >> > Force le renouvellement automatique (Booléen)
+>> >> > Force le renouvellement automatique (booléen)
 >> >>
 >> >> - **period**
 >> >> >
->> >> > Renseigne la durée de renouvellement (Chaîne de caractères)
+>> >> > Renseigne la durée de renouvellement (chaîne de caractères)
 >
 
 ### Zones
 
-#### Lister les zones actives pour un service Load Balancer OVH
+#### Lister les zones actives pour un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -336,7 +325,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, ex. : IP-1.2.3.4 (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, ex. : IP-1.2.3.4 (chaîne de caractères)
 >
 
 #### Obtenir les détails d'une zone
@@ -355,7 +344,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **name** *
 >> >
@@ -381,7 +370,7 @@ Le service sera supprimé à la date d'expiration.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **name** *
 >> >
@@ -404,7 +393,7 @@ Le service sera supprimé à la date d'expiration.
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **name** *
 >> >
@@ -412,11 +401,12 @@ Le service sera supprimé à la date d'expiration.
 >
 
 ## Protocole HTTP
-Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
+
+Accéder aux éléments relatifs au protocole HTTP (frontend, ferme, etc.).
 
 ### Fermes HTTP
 
-#### Lister les fermes HTTP attachées à un service Load Balancer OVH
+#### Lister les fermes HTTP attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -432,14 +422,14 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **zone**
 >> >
->> >> Le nom de la zone (Chaîne de caractères)
+>> >> Le nom de la zone (chaîne de caractères)
 >
 
-#### Ajouter une nouvelle ferme HTTP à un service Load Balancer OVH
+#### Ajouter une nouvelle ferme HTTP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -455,39 +445,39 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **zone** *
 >> >
->> >> Le nom de la zone (Chaîne de caractères)
+>> >> Le nom de la zone (chaîne de caractères)
 >> >
 >> > **displayName**
 >> >
->> >> le nom que vous souhaitez attribuer à votre ferme (Chaîne de caractères)
+>> >> le nom que vous souhaitez attribuer à votre ferme (chaîne de caractères)
 >> >
 >> > **balance**
 >> >>
->> >> La méthode de répartition de charge de votre ferme (Valeur)
+>> >> La méthode de répartition de charge de votre ferme (valeur)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre ferme. Hérité du frontend si non défini (Nombre, 1..65535)
+>> >> Le port d'écoute de votre ferme. Hérité du frontend si non-défini (nombre, 1..65535)
 >> >
 >> > **stickiness**
 >> >
->> >> Le type de persistence de connexion à utiliser pour votre ferme (Valeur)
+>> >> Le type de persistence de connexion à utiliser pour votre ferme (valeur)
 >> >
 >> > **probe**
 >> >
->> >> Le type de sonde à utiliser sur votre ferme (Sonde HTTP)
+>> >> Le type de sonde à utiliser sur votre ferme (sonde HTTP)
 >> >> >
 >> >> > - **forceSsl**
 >> >> >
->> >> >> L'activation du SSL est forcée pour la sonde (Booléen)
+>> >> >> L'activation du SSL est forcée pour la sonde (booléen)
 >> >> >
 >> >> > - **interval**
 >> >> >
->> >> >> L'intervalle en secondes entre chaque test de la sonde. Doit être supérieur à 30. 30 par défaut (Nombre)
+>> >> >> L'intervalle en secondes entre chaque test de la sonde. Doit être supérieur à 30. 30 par défaut (nombre)
 >> >> >
 >> >> > - **match**
 >> >> >
@@ -495,7 +485,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >> >
 >> >> > - **negate**
 >> >> >
->> >> >> Le comportement de l'opérateur 'match' est inversé (Booléen)
+>> >> >> Le comportement de l'opérateur 'match' est inversé (booléen)
 >> >> >
 >> >> > - **method**
 >> >> >
@@ -503,11 +493,11 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >> >
 >> >> > - **pattern**
 >> >> >
->> >> >> Le format de la réponse du serveur quand "UP". Vide pour 'default', liste de status séparés par des virgules pour 'status', texte pour 'contains', expression régulière pour 'matches' (Chaîne de caractères)
+>> >> >> Le format de la réponse du serveur quand "UP". Vide pour 'default', liste de statuts séparés par des virgules pour 'status', texte pour 'contains', expression régulière pour 'matches' (chaîne de caractères)
 >> >> >
 >> >> > - **port**
 >> >> >
->> >> >> Le port que la sonde doit utiliser pour tester les serveurs attachés à votre ferme. Ignoré pour les sondes 'oco'. Si non défini, le port de la ferme est utilisé (Nombre)
+>> >> >> Le port que la sonde doit utiliser pour tester les serveurs attachés à votre ferme. Ignoré pour les sondes 'oco'. Si non-défini, le port de la ferme est utilisé (nombre)
 >> >> >
 >> >> > - **type**
 >> >> >
@@ -515,7 +505,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >> >
 >> >> > - **url**
 >> >> >
->> >> >> L'adresse à utiliser par la sonde pour les sondes de type HTTP. Le type est ignoré si ce paramètre est définit (Chaîne de caractères)
+>> >> >> L'adresse à utiliser par la sonde pour les sondes de type HTTP. Le type est ignoré si ce paramètre est défini (chaîne de caractères)
 >
 
 #### Obtenir les détails d'une ferme HTTP
@@ -534,11 +524,11 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme HTTP (Nombre)
+>> >> L'identifiant de votre ferme HTTP (nombre)
 >
 
 #### Modifier les propriétés d'une ferme HTTP
@@ -557,33 +547,33 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme HTTP (Nombre)
+>> >> L'identifiant de votre ferme HTTP (nombre)
 >> >
 >> > **BackendHttp** *
 >> >
 >> >> - **displayName**
 >> >> >
->> >> > Le nom de la ferme (Chaîne de caractères)
+>> >> > Le nom de la ferme (chaîne de caractères)
 >> >>
 >> >> - **balance**
 >> >> >
->> >> > Le type de répartition de charge (Valeur)
+>> >> > Le type de répartition de charge (valeur)
 >> >>
 >> >> - **port**
 >> >> >
->> >> > Le port d'écoute de la ferme (Nombre, 1..65000)
+>> >> > Le port d'écoute de la ferme (nombre, 1..65000)
 >> >>
 >> >> - **probe**
 >> >> >
->> >> > Le type de sonde à utiliser (Sonde HTTP)
+>> >> > Le type de sonde à utiliser (sonde HTTP)
 >> >>
 >> >> - **stickiness**
 >> >> >
->> >> > Le type de persistence de connexion (Valeur)
+>> >> > Le type de persistence de connexion (valeur)
 >
 
 #### Supprimer une ferme HTTP
@@ -602,11 +592,11 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme HTTP (Nombre)
+>> >> L'identifiant de votre ferme HTTP (nombre)
 >
 
 ### Serveurs HTTP
@@ -627,15 +617,15 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme HTTP (Nombre)
+>> >> L'identifiant de votre ferme HTTP (nombre)
 >> >
 >> > **cookie**
 >> >
->> >> Filtrer les valeurs par Cookie (Chaîne de caractères)
+>> >> Filtrer les valeurs par cookie (chaîne de caractères)
 >> >
 >> > **address**
 >> >
@@ -643,7 +633,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >
 >> > **status**
 >> >
->> >> Filtrer les valeurs par statut du serveur (Valeur)
+>> >> Filtrer les valeurs par statut du serveur (valeur)
 >
 
 #### Ajouter un serveur à une ferme HTTP
@@ -662,11 +652,11 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **address** *
 >> >
@@ -674,44 +664,44 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >
 >> > **backup**
 >> >
->> >> Si votre serveur est configuré comme serveur de secours (Booléen)
+>> >> Si votre serveur est configuré comme serveur de secours (booléen)
 >> >
 >> > **chain**
 >> >
->> >> La valeur du certificat SSL intermédiaire (Chaîne de caractères)
+>> >> La valeur du certificat SSL intermédiaire (chaîne de caractères)
 >> >
 >> > **cookie**
 >> >
->> >> La valeur de votre Cookie (Chaîne de caractères)
+>> >> La valeur de votre cookie (chaîne de caractères)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom donné à votre serveur (Chaîne de caractères)
+>> >> Le nom donné à votre serveur (chaîne de caractères)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre serveur. Hérité de votre ferme si non défini (Nombre, 1..65535)
+>> >> Le port d'écoute de votre serveur. Hérité de votre ferme si non-défini (nombre, 1..65535)
 >> >
 >> > **probe**
 >> >
->> >> Le type de sonde à utiliser (Valeur)
+>> >> Le type de sonde à utiliser (valeur)
 >> >
 >> > **proxyProtocolVersion**
 >> >
 >> >> La version de proxyProtocol à utiliser,
->> >>            voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (Valeur)
+>> >>            voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (valeur)
 >> >
 >> > **ssl** *
 >> >
->> >> Si les requêtes envoyées à vos serveurs doivent être chiffrées avec SSL (Booléen)
+>> >> Si les requêtes envoyées à vos serveurs doivent être chiffrées avec SSL (booléen)
 >> >
 >> > **weight** *
 >> >
->> >> Le poids de votre serveur pour votre ferme. Un serveur à poids élevé reçoit plus de requêtes (Nombre)
+>> >> Le poids de votre serveur pour votre ferme. Un serveur à poids élevé reçoit plus de requêtes (nombre)
 >> >
 >> > **status** *
 >> >
->> >> Si votre serveur est activé ou non (Booléen)
+>> >> Si votre serveur est activé ou non (booléen)
 >
 
 #### Obtenir les détails d'un serveur lié à une ferme HTTP
@@ -730,15 +720,15 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre server (Nombre)
+>> >> L'identifiant de votre serveur (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >
 
 #### Modifier les propriétés d'un serveur HTTP
@@ -757,58 +747,58 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre server-link (Nombre)
+>> >> L'identifiant de votre server-link (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **BackendHttpServer** *
 >> >
 >> >> - **backup**
 >> >> >
->> >> > Si votre serveur est configuré comme serveur de secours (Booléen)
+>> >> > Si votre serveur est configuré comme serveur de secours (booléen)
 >> >>
 >> >> - **chain**
 >> >> >
->> >> > La valeur du certificat SSL intermédiaire (Chaîne de caractères)
+>> >> > La valeur du certificat SSL intermédiaire (chaîne de caractères)
 >> >>
 >> >> - **cookie**
 >> >> >
->> >> > La valeur de votre Cookie (Chaîne de caractères)
+>> >> > La valeur de votre cookie (chaîne de caractères)
 >> >>
 >> >> - **displayName**
 >> >> >
->> >> > Le nom de votre serveur (Chaîne de caractères)
+>> >> > Le nom de votre serveur (chaîne de caractères)
 >> >>
 >> >> - **port**
 >> >> >
->> >> > Le port d'écoute de votre serveur (Nombre, 1..65535)
+>> >> > Le port d'écoute de votre serveur (nombre, 1..65535)
 >> >>
 >> >> - **probe**
 >> >> >
->> >> > Le type de sonde à utiliser (Valeur)
+>> >> > Le type de sonde à utiliser (valeur)
 >> >>
 >> >> - **proxyProtocolVersion**
 >> >> >
 >> >> > La version de proxyProtocol à utiliser,
->> >> > voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (Valeur)
+>> >> > voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (valeur)
 >> >>
 >> >> - **ssl**
 >> >> >
->> >> > Si les requêtes envoyées à vos serveurs doivent être chiffrées avec SSL (Booléen)
+>> >> > Si les requêtes envoyées à vos serveurs doivent être chiffrées avec SSL (booléen)
 >> >>
 >> >> - **status**
 >> >> >
->> >> > Si votre serveur est activé ou non (Booléen)
+>> >> > Si votre serveur est activé ou non (booléen)
 >> >>
 >> >> - **weight**
 >> >> >
->> >> > Le poids de votre serveur pour votre ferme (Nombre)
+>> >> > Le poids de votre serveur pour votre ferme (nombre)
 >
 
 #### Supprimer un serveur d'une ferme HTTP
@@ -827,20 +817,20 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre server (Nombre)
+>> >> L'identifiant de votre serveur (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >
 
 ### Frontends HTTP
 
-#### Lister les frontends HTTP attachés à un service Load Balancer OVH
+#### Lister les frontends HTTP attachés à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -856,22 +846,22 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **defaultFarmId**
 >> >
->> >> L'identifiant de la ferme HTTP à laquelle le frontend HTTP est lié (Nombre)
+>> >> L'identifiant de la ferme HTTP à laquelle le frontend HTTP est lié (nombre)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre frontend (Nombre, 1..65535)
+>> >> Le port d'écoute de votre frontend (nombre, 1..65535)
 >> >
 >> > **zone**
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, par exemple: all (chaîne de caractères)
 >
 
-#### Ajouter un frontend HTTP à un service Load Balancer OVH
+#### Ajouter un frontend HTTP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -887,7 +877,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **allowedSource**
 >> >
@@ -901,43 +891,43 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >
 >> > **defaultFarmId**
 >> >
->> >> L'identifiant de la ferme HTTP par défaut pour votre frontend (Nombre)
+>> >> L'identifiant de la ferme HTTP par défaut pour votre frontend (nombre)
 >> >
 >> > **defaultSslId**
 >> >
->> >> L'identifiant du certificat SSL par défaut (Nombre)
+>> >> L'identifiant du certificat SSL par défaut (nombre)
 >> >
 >> > **disabled**
 >> >
->> >> Si votre frontend HTTP est désactivé ou activé (Booléen)
+>> >> Si votre frontend HTTP est désactivé ou activé (booléen)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom de votre frontend HTTP (Chaîne de caractères)
+>> >> Le nom de votre frontend HTTP (chaîne de caractères)
 >> >
 >> > **hsts**
 >> >
->> >> Si le support du *https strict, HTTP Strict Transport Security* est activé ou désactivé (Booléen)
+>> >> Si le support du *https strict, HTTP Strict Transport Security* est activé ou désactivé (booléen)
 >> >
 >> > **httpHeader**
 >> >
->> >> L'entête *http* personnalisé à ajouter (Chaîne de caractères)
+>> >> L'entête *http* personnalisé à ajouter (chaîne de caractères)
 >> >
 >> > **port** *
 >> >
->> >> Le port d'écoute de votre frontend (Nombre, 1..65535)
+>> >> Le port d'écoute de votre frontend (nombre, 1..65535)
 >> >
 >> > **redirectLocation**
 >> >
->> >> L'URL de redirection *http* (Chaîne de caractères)
+>> >> L'URL de redirection *http* (chaîne de caractères)
 >> >
 >> > **ssl**
 >> >
->> >> Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou non (Booléen)
+>> >> Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou non (booléen)
 >> >
 >> > **zone** *
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, ex: all (chaîne de caractères)
 >
 
 ### Obtenir les détails d'un frontend HTTP
@@ -956,11 +946,11 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId** *
 >> >
->> >> L'identifiant de votre frontend HTTP (Nombre)
+>> >> L'identifiant de votre frontend HTTP (nombre)
 >
 
 #### Modifier les propriétés d'un frontend HTTP
@@ -979,11 +969,11 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId** *
 >> >
->> >> L'identifiant de votre frontend HTTP (Nombre)
+>> >> L'identifiant de votre frontend HTTP (nombre)
 >> >
 >> > **FrontendHttp** *
 >> >
@@ -999,27 +989,27 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >>
 >> >> - **defaultSslId**
 >> >> >
->> >> > L'identifiant du certificat SSL par défaut (Nombre)
+>> >> > L'identifiant du certificat SSL par défaut (nombre)
 >> >>
 >> >> - **disabled** 
 >> >> >
->> >> > Si votre frontend HTTP est désactivé ou activé (Booléen)
+>> >> > Si votre frontend HTTP est désactivé ou activé (booléen)
 >> >>
 >> >> - **displayName** 
 >> >> >
->> >> > Le nom de votre frontend HTTP (Chaîne de caractères)
+>> >> > Le nom de votre frontend HTTP (chaîne de caractères)
 >> >>
 >> >> - **hsts** 
 >> >> >
->> >> > Si le support du *https strict, HTTP Strict Transport Security* est activé ou désactivé (Booléen)
+>> >> > Si le support du *https strict, HTTP Strict Transport Security* est activé ou désactivé (booléen)
 >> >>
 >> >> - **httpHeader** 
 >> >> >
->> >> > L'entête *http* personnalisé à ajouter (Chaîne de caractères)
+>> >> > L'en-tête *http* personnalisé à ajouter (chaîne de caractères)
 >> >>
 >> >> - **ssl** 
 >> >> >
->> >> > Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou non (Booléen)
+>> >> > Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou non (booléen)
 >
 
 #### Supprimer un frontend HTTP
@@ -1038,14 +1028,15 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId** *
 >> >
->> >> L'identifiant de votre frontend (Nombre)
+>> >> L'identifiant de votre frontend (nombre)
 >
 
 ### Routes HTTP
+
 Les routes sont évaluées une par une, en testant leurs règles de routage. La première route validant toutes ses règles voit son action exécutée, et arrête l'évaluation des routes restantes. L'ordre d'exécution est défini par le type et le poids de la route.
 
 #### Lister les routes HTTP attachées à un service Load Balancer
@@ -1064,14 +1055,14 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId**
 >> >
->> >> L'identifiant d'un frontend HTTP (Nombre)
+>> >> L'identifiant d'un frontend HTTP (nombre)
 >
 
-#### Ajouter une nouvelle route HTTP à un service Load Balancer OVH
+#### Ajouter une nouvelle route HTTP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1087,7 +1078,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **action** *
 >> >
@@ -1095,27 +1086,27 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >>
 >> >> - **status** 
 >> >>
->> >> > Le code de retour HTTP attendu (Nombre)
+>> >> > Le code de retour HTTP attendu (nombre)
 >> >>
 >> >> - **target** 
 >> >>
->> >> > L'identifiant de la ferme, ou le modèle pour l'URL (Chaîne de caractères)
+>> >> > L'identifiant de la ferme, ou le modèle pour l'URL (chaîne de caractères)
 >> >>
 >> >> - **type** 
 >> >>
->> >> > L'action de votre route (Chaîne de caractères)
+>> >> > L'action de votre route (chaîne de caractères)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom de votre route (Chaîne de caractères)
+>> >> Le nom de votre route (chaîne de caractères)
 >> >
 >> > **frontendId**
 >> >
->> >> L'Identifiant du frontend HTTP pour lequel votre route est appliquée (Nombre)
+>> >> L'identifiant du frontend HTTP pour lequel votre route est appliquée (nombre)
 >> >
 >> > **weight**
 >> >
->> >> La priorité de votre route. (Nombre) [0 - 255]
+>> >> La priorité de votre route. (nombre) [0 - 255]
 >
 
 #### Obtenir les détails d'une route HTTP
@@ -1134,11 +1125,11 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route (Nombre)
+>> >> L'identifiant de votre route (nombre)
 >
 
 #### Modifier les propriétés d'une route HTTP
@@ -1157,11 +1148,11 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route (Nombre)
+>> >> L'identifiant de votre route (nombre)
 >> >
 >> > **routeHttp** *
 >> >
@@ -1171,27 +1162,27 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >> >
 >> >> > - **status** 
 >> >> >
->> >> >> Le code de retour HTTP attendu (Nombre)
+>> >> >> Le code de retour HTTP attendu (nombre)
 >> >> >
 >> >> > - **target** 
 >> >> >
->> >> >> L'identifiant de la ferme, ou le modèle pour l'URL (Chaîne de caractères)
+>> >> >> L'identifiant de la ferme, ou le modèle pour l'URL (chaîne de caractères)
 >> >> >
 >> >> > - **type** 
 >> >> >
->> >> >> L'action de votre route (Chaîne de caractères)
+>> >> >> L'action de votre route (chaîne de caractères)
 >> >>
 >> >> **displayName**
 >> >>
->> >> > Le nom de votre route (Chaîne de caractères)
+>> >> > Le nom de votre route (chaîne de caractères)
 >> >>
 >> >> **frontendId**
 >> >>
->> >> > L'Identifiant du frontend HTTP pour lequel votre route est appliquée (Nombre)
+>> >> > L'identifiant du frontend HTTP pour lequel votre route est appliquée (nombre)
 >> >>
 >> >> **weight**
 >> >>
->> >> > La priorité de votre route. (Nombre) [0 - 255]
+>> >> > La priorité de votre route. (nombre) [0 - 255]
 >
 
 #### Supprimer une route HTTP
@@ -1210,11 +1201,11 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route (Nombre)
+>> >> L'identifiant de votre route (nombre)
 >
 
 ### Règles de routage
@@ -1235,11 +1226,11 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route HTTP (Nombre)
+>> >> L'identifiant de votre route HTTP (nombre)
 >
 
 #### Ajouter les règles de routages attachées à une route HTTP
@@ -1258,15 +1249,15 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route HTTP (Nombre)
+>> >> L'identifiant de votre route HTTP (nombre)
 >> >
 >> > **field** *
 >> >
->> >> Le nom du champs à tester avec l'opérateur "match" (Chaîne de caractères)
+>> >> Le nom du champ à tester avec l'opérateur "match" (chaîne de caractères)
 >> >
 >> > **match** *
 >> >
@@ -1274,7 +1265,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >
 >> > **negate**
 >> >
->> >> Le comportement de l'opérateur :code:`match` est inversé (Booléen)
+>> >> Le comportement de l'opérateur :code:`match` est inversé (booléen)
 >> >
 >> > **pattern**
 >> >
@@ -1282,7 +1273,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >
 >> > **subField**
 >> >
->> >> Le nom du sous-champs, si applicable. Peut être un cookie ou un nom d'en-tête, par exemple (Chaîne de caractères)
+>> >> Le nom du sous-champ, si applicable. Peut être un cookie ou un nom d'en-tête, par exemple (chaîne de caractères)
 >
 
 #### Obtenir les détails d'une règle de routage
@@ -1301,15 +1292,15 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route HTTP (Nombre)
+>> >> L'identifiant de votre route HTTP (nombre)
 >> >
 >> > **ruleId** *
 >> >
->> >> L'identifiant de votre règle de routage HTTP (Nombre)
+>> >> L'identifiant de votre règle de routage HTTP (nombre)
 >
 
 #### Modifier les propriétés d'une règle de routage
@@ -1328,21 +1319,21 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route HTTP (Nombre)
+>> >> L'identifiant de votre route HTTP (nombre)
 >> >
 >> > **ruleId** *
 >> >
->> >> L'identifiant de votre règle de routage HTTP (Nombre)
+>> >> L'identifiant de votre règle de routage HTTP (nombre)
 >> >
 >> > **RouteRule** *
 >> >
 >> >> - **field**
 >> >>
->> >> > Le nom du champs à tester via l'opérateur "match" (Chaîne de caractères)
+>> >> > Le nom du champ à tester via l'opérateur "match" (chaîne de caractères)
 >> >>
 >> >> - **match** 
 >> >>
@@ -1350,7 +1341,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >>
 >> >> - **negate** 
 >> >>
->> >> > Si l'opérateur "match" est inversé ou non (Booléen)
+>> >> > Si l'opérateur "match" est inversé ou non (booléen)
 >> >>
 >> >> - **pattern** 
 >> >>
@@ -1358,7 +1349,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >>
 >> >> - **subField** 
 >> >>
->> >> > Le nom du sous-champs si applicable (Chaîne de caractères)
+>> >> > Le nom du sous-champ si applicable (chaîne de caractères)
 >
 
 #### Supprimer une règle de routage
@@ -1377,23 +1368,24 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route HTTP (Nombre)
+>> >> L'identifiant de votre route HTTP (nombre)
 >> >
 >> > **ruleId** *
 >> >
->> >> L'identifiant de votre règle de routage HTTP (Nombre)
+>> >> L'identifiant de votre règle de routage HTTP (nombre)
 >
 
 ## Protocole TCP
-Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
+
+Accéder aux éléments relatifs au protocole TCP (frontend, ferme, etc.).
 
 ### Fermes TCP
 
-#### Lister les fermes TCP attachées à un service Load Balancer OVH
+#### Lister les fermes TCP attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1409,14 +1401,14 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **zone**
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, ex: all (chaîne de caractères)
 >
 
-#### Ajouter une nouvelle ferme TCP à un service Load Balancer OVH
+#### Ajouter une nouvelle ferme TCP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1432,31 +1424,31 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **balance**
 >> >
->> >> La méthode de répartition de charge de votre ferme (Valeur)
+>> >> La méthode de répartition de charge de votre ferme (valeur)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom que vous souhaitez donner à votre ferme (Chaîne de caractères)
+>> >> Le nom que vous souhaitez donner à votre ferme (chaîne de caractères)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre ferme. Hérité du frontend si non défini (Nombre, 1..65535)
+>> >> Le port d'écoute de votre ferme. Hérité du frontend si non-défini (nombre, 1..65535)
 >> >
 >> > **probe**
 >> >
->> >> Le type de sonde à utiliser sur votre ferme (Sonde HTTP)
+>> >> Le type de sonde à utiliser sur votre ferme (sonde HTTP)
 >> >>
 >> >> - **forceSsl**
 >> >>
->> >> > L'activation du SSL est forcée pour la sonde (Booléen)
+>> >> > L'activation du SSL est forcée pour la sonde (booléen)
 >> >>
 >> >> - **interval**
 >> >>
->> >> > L'intervalle (en secondes) entre chaque test de la sonde. Doit être supérieur à 30. 30 par défaut (Nombre)
+>> >> > L'intervalle (en secondes) entre chaque test de la sonde. Doit être supérieur à 30. 30 par défaut (nombre)
 >> >>
 >> >> - **match**
 >> >>
@@ -1464,7 +1456,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >>
 >> >> - **negate**
 >> >>
->> >> > Le comportement de l'opérateur :code:`match` est inversé (Booléen)
+>> >> > Le comportement de l'opérateur :code:`match` est inversé (booléen)
 >> >>
 >> >> - **method**
 >> >>
@@ -1472,11 +1464,11 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >>
 >> >> - **pattern**
 >> >>
->> >> > réponse du serveur quand "UP". Vide pour 'default', liste de statuts séparés par des virgules pour 'status', texte pour 'contains', expression régulière pour 'matches' (Chaîne de caractères)
+>> >> > réponse du serveur quand "UP". Vide pour 'default', liste de statuts séparés par des virgules pour 'status', texte pour 'contains', expression régulière pour 'matches' (chaîne de caractères)
 >> >>
 >> >> - **port**
 >> >>
->> >> > Le port que la sonde doit utiliser pour tester les serveurs attachés à votre ferme. Ignoré pour les sondes 'oco'. Si non défini, le port de la ferme est utilisé (Nombre)
+>> >> > Le port que la sonde doit utiliser pour tester les serveurs attachés à votre ferme. Ignoré pour les sondes 'oco'. Si non-défini, le port de la ferme est utilisé (nombre)
 >> >>
 >> >> - **type**
 >> >>
@@ -1484,15 +1476,15 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >>
 >> >> - **url**
 >> >>
->> >> > L'adresse à utiliser par la sonde pour les sondes de type HTTP. Le :code:`type` est ignoré si ce paramètre est définit (Chaîne de caractères)
+>> >> > L'adresse à utiliser par la sonde pour les sondes de type HTTP. Le :code:`type` est ignoré si ce paramètre est défini (chaîne de caractères)
 >> >>
 >> > **stickiness**
 >> >
->> >> Le type de persistence de connexion à utiliser pour votre ferme (Valeur)
+>> >> Le type de persistence de connexion à utiliser pour votre ferme (valeur)
 >> >
 >> > **zone** *
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, ex: all (chaîne de caractères)
 >
 
 #### Obtenir les détails d'une ferme TCP
@@ -1511,11 +1503,11 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >
 
 #### Modifier les propriétés d'une ferme TCP
@@ -1534,33 +1526,33 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **BackendTcp** *
 >> >
 >> >> - **balance**
 >> >>
->> >> > Le type de répartition de charge (Valeur)
+>> >> > Le type de répartition de charge (valeur)
 >> >>
 >> >> - **displayName** 
 >> >>
->> >> > Le nom de la ferme (Chaîne de caractères)
+>> >> > Le nom de la ferme (chaîne de caractères)
 >> >>
 >> >> - **port** 
 >> >>
->> >> > Le port d'écoute de la ferme (Nombre, 1..65000)
+>> >> > Le port d'écoute de la ferme (nombre, 1..65000)
 >> >>
 >> >> - **probe** 
 >> >>
->> >> > Le type de sonde à utiliser (Sonde TCP)
+>> >> > Le type de sonde à utiliser (sonde TCP)
 >> >>
 >> >> - **stickiness** 
 >> >>
->> >> > Le type de persistence de connexion (Valeur)
+>> >> > Le type de persistence de connexion (valeur)
 >
 
 #### Supprimer une ferme TCP
@@ -1579,11 +1571,11 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >
 
 ### Serveurs TCP
@@ -1604,15 +1596,15 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **cookie**
 >> >
->> >> Filtrer les valeurs par Cookie (Chaîne de caractères)
+>> >> Filtrer les valeurs par cookie (chaîne de caractères)
 >> >
 >> > **address**
 >> >
@@ -1620,7 +1612,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >
 >> > **status**
 >> >
->> >> Filtrer les valeurs par statut du serveur (Valeur)
+>> >> Filtrer les valeurs par statut du serveur (valeur)
 >
 
 #### Ajouter un serveur à une ferme TCP
@@ -1639,11 +1631,11 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **address** *
 >> >
@@ -1651,40 +1643,40 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >
 >> > **backup**
 >> >
->> >> Si votre serveur est configuré comme serveur de secours (Booléen)
+>> >> Si votre serveur est configuré comme serveur de secours (booléen)
 >> >
 >> > **chain**
 >> >
->> >> La valeur du certificat SSL intermédiaire (Chaîne de caractères)
+>> >> La valeur du certificat SSL intermédiaire (chaîne de caractères)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom donné à votre serveur (Chaîne de caractères)
+>> >> Le nom donné à votre serveur (chaîne de caractères)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre serveur. Hérité de votre ferme si non défini (Nombre, 1..65535)
+>> >> Le port d'écoute de votre serveur. Hérité de votre ferme si non-défini (nombre, 1..65535)
 >> >
 >> > **probe**
 >> >
->> >> Le type de sonde à utiliser (Valeur)
+>> >> Le type de sonde à utiliser (valeur)
 >> >
 >> > **proxyProtocolVersion**
 >> >
 >> >> La version de proxyProtocol à utiliser,
->> >> voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (Valeur)
+>> >> voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (valeur)
 >> >
 >> > **ssl** *
 >> >
->> >> Si les requêtes envoyées à vos serveurs doivent être chiffrées avec SSL (Booléen)
+>> >> Si les requêtes envoyées à vos serveurs doivent être chiffrées avec SSL (booléen)
 >> >
 >> > **weight** *
 >> >
->> >> Le poids de votre serveur pour votre ferme. Un serveur à poids élevé reçoit plus de requêtes (Nombre)
+>> >> Le poids de votre serveur pour votre ferme. Un serveur à poids élevé reçoit plus de requêtes (nombre)
 >> >
 >> > **status** *
 >> >
->> >> Si votre serveur est activé ou non (Booléen)
+>> >> Si votre serveur est activé ou non (booléen)
 >
 
 #### Obtenir les détails d'un serveur lié à une ferme TCP
@@ -1703,15 +1695,15 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre server (Nombre)
+>> >> L'identifiant de votre serveur (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 > >
 
 #### Modifier les propriétés d'un serveur TCP
@@ -1730,37 +1722,37 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre server-link (Nombre)
+>> >> L'identifiant de votre server-link (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **BackendTcpServer** *
 >> >
 >> >> - **backup**
 >> >>
->> >> > Si votre serveur est configuré comme serveur de secours (Booléen)
+>> >> > Si votre serveur est configuré comme serveur de secours (booléen)
 >> >>
 >> >> - **chain** 
 >> >>
->> >> > La valeur du certificat SSL intermédiaire (Chaîne de caractères)
+>> >> > La valeur du certificat SSL intermédiaire (chaîne de caractères)
 >> >>
 >> >> - **displayName** 
 >> >>
->> >> > Le nom de votre serveur (Chaîne de caractères)
+>> >> > Le nom de votre serveur (chaîne de caractères)
 >> >>
 >> >> - **port** 
 >> >>
->> >> > Le port d'écoute de votre serveur (Nombre, 1..65535)
+>> >> > Le port d'écoute de votre serveur (nombre, 1..65535)
 >> >>
 >> >> - **probe** 
 >> >>
->> >> > Le type de sonde à utiliser (Valeur)
+>> >> > Le type de sonde à utiliser (valeur)
 >> >>
 >> >> - **proxyProtocolVersion** 
 >> >>
@@ -1769,15 +1761,15 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >>
 >> >> - **ssl** 
 >> >>
->> >> > Si les requêtes envoyées à vos serveurs doivent être chiffrées avec SSL (Booléen)
+>> >> > Si les requêtes envoyées à vos serveurs doivent être chiffrées avec SSL (booléen)
 >> >>
 >> >> - **status**
 >> >>
->> >> > Si votre serveur est activé ou non (Booléen)
+>> >> > Si votre serveur est activé ou non (booléen)
 >> >>
 >> >> - **weight** 
 >> >>
->> >> > Le poids de votre serveur pour votre ferme (Nombre)
+>> >> > Le poids de votre serveur pour votre ferme (nombre)
 >
 
 #### Supprimer un serveur d'une ferme TCP
@@ -1796,20 +1788,20 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre server (Nombre)
+>> >> L'identifiant de votre serveur (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >
 
 ### Frontends TCP
 
-#### Lister les frontends TCP attachés à un service Load Balancer OVH
+#### Lister les frontends TCP attachés à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1825,22 +1817,22 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **defaultFarmId**
 >> >
->> >> L'identifiant de la ferme TCP à laquelle le frontend TCP est lié (Nombre)
+>> >> L'identifiant de la ferme TCP à laquelle le frontend TCP est lié (nombre)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre frontend (Nombre, 1..65535)
+>> >> Le port d'écoute de votre frontend (nombre, 1..65535)
 >> >
 >> > **zone**
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, ex: all (chaîne de caractères)
 >
 
-#### Ajouter un frontend TCP à un service Load Balancer OVH
+#### Ajouter un frontend TCP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1856,7 +1848,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **allowedSource**
 >> >
@@ -1868,31 +1860,31 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >
 >> > **defaultFarmId**
 >> >
->> >> L'identifiant de la ferme TCP par défaut pour votre frontend (Nombre)
+>> >> L'identifiant de la ferme TCP par défaut pour votre frontend (nombre)
 >> >
 >> > **defaultSslId**
 >> >
->> >> L'identifiant du certificat SSL par défaut (Nombre)
+>> >> L'identifiant du certificat SSL par défaut (nombre)
 >> >
 >> > **disabled**
 >> >
->> >> Si votre frontend TCP est désactivé ou activé (Booléen)
+>> >> Si votre frontend TCP est désactivé ou activé (booléen)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom de votre frontend TCP (Chaîne de caractères)
+>> >> Le nom de votre frontend TCP (chaîne de caractères)
 >> >
 >> > **port** *
 >> >
->> >> Le port d'écoute de votre frontend (Nombre, 1..65535)
+>> >> Le port d'écoute de votre frontend (nombre, 1..65535)
 >> >
 >> > **ssl**
 >> >
->> >> Si les requêtes envoyées à la ferme TCP doivent être chiffrées avec SSL ou non (Booléen)
+>> >> Si les requêtes envoyées à la ferme TCP doivent être chiffrées avec SSL ou non (booléen)
 >> >
 >> > **zone** *
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, ex: all (chaîne de caractères)
 >
 
 #### Obtenir les détails d'un frontend TCP
@@ -1911,11 +1903,11 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> >  **serviceName** *
 >> >>
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> >  **frontendId** *
 >> >>
->> >> L'identifiant de votre frontend TCP (Nombre)
+>> >> L'identifiant de votre frontend TCP (nombre)
 >> 
 
 #### Modifier les propriétés d'un frontend TCP
@@ -1934,37 +1926,37 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId** *
 >> >
->> >> L'identifiant de votre frontend TCP (Nombre)
+>> >> L'identifiant de votre frontend TCP (nombre)
 >> >
 >> > **FrontendTcp** *
 >> >
 >> >> - **allowedSource**
 >> >>
->> >> > La liste des adresses IPs clientes qui ont accès au Load Balancer (IPv4[])
+>> >> > La liste des adresses IP clientes qui ont accès au Load Balancer (IPv4[])
 >> >>
 >> >> - **dedicatedIpfo** 
 >> >>
->> >> > La liste des adresses IPs des serveurs distants auxquels votre Load Balancer est connecté (IPv4[])
+>> >> > La liste des adresses IP des serveurs distants auxquels votre Load Balancer est connecté (IPv4[])
 >> >>
 >> >> - **defaultSslId**
 >> >>
->> >> > L'identifiant du certificat SSL par défaut (Nombre)
+>> >> > L'identifiant du certificat SSL par défaut (nombre)
 >> >>
 >> >> - **disabled** 
 >> >>
->> >> > Si votre frontend HTTP est désactivé ou activé (Booléen)
+>> >> > Si votre frontend HTTP est désactivé ou activé (booléen)
 >> >>
 >> >> - **displayName** 
 >> >>
->> >> > Le nom de votre frontend HTTP (Chaîne de caractères)
+>> >> > Le nom de votre frontend HTTP (chaîne de caractères)
 >> >>
 >> >> - **ssl** 
 >> >>
->> >> > Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou non (Booléen)
+>> >> > Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou non (booléen)
 >
 
 #### Supprimer un frontend TCP
@@ -1983,17 +1975,18 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId** *
 >> >
->> >> L'identifiant de votre frontend (Nombre)
+>> >> L'identifiant de votre frontend (nombre)
 >
 
 ### Routes TCP
+
 Les routes sont évaluées une par une, en testant leurs règles de routage. La première route validant toutes ses règles voit son action exécutée, et arrête l'évaluation des routes restantes. L'ordre d'exécution est défini par le type et le poids de la route.
 
-#### Lister les routes TCP attachées à un service Load Balancer OVH
+#### Lister les routes TCP attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2009,14 +2002,14 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId**
 >> >
->> >> L'identifiant d'un frontend TCP (Nombre)
+>> >> L'identifiant d'un frontend TCP (nombre)
 >
 
-#### Ajouter une nouvelle route TCP à un service Load Balancer OVH
+#### Ajouter une nouvelle route TCP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2032,7 +2025,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **action** *
 >> >
@@ -2040,23 +2033,23 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >>
 >> >> - **target** 
 >> >>
->> >> > L'identifiant de la ferme, ou le modèle pour l'URL (Chaîne de caractères)
+>> >> > L'identifiant de la ferme, ou le modèle pour l'URL (chaîne de caractères)
 >> >>
 >> >> - **type** 
 >> >>
->> >> > L'action de votre route (Chaîne de caractères)
+>> >> > L'action de votre route (chaîne de caractères)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom de votre route (Chaîne de caractères)
+>> >> Le nom de votre route (chaîne de caractères)
 >> >
 >> > **frontendId**
 >> >
->> >> L'Identifiant du frontend TCP pour lequel votre route est appliquée (Nombre)
+>> >> L'identifiant du frontend TCP pour lequel votre route est appliquée (nombre)
 >> >
 >> > **weight**
 >> >
->> >> La priorité de votre route. (Nombre) [0 - 255]
+>> >> La priorité de votre route. (nombre) [0 - 255]
 >
 
 #### Obtenir les détails d'une route TCP
@@ -2075,11 +2068,11 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route (Nombre)
+>> >> L'identifiant de votre route (nombre)
 >
 
 #### Modifier les propriétés d'une route TCP
@@ -2098,11 +2091,11 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route (Nombre)
+>> >> L'identifiant de votre route (nombre)
 >> >
 >> > **routeTcp** *
 >> >
@@ -2112,23 +2105,23 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >> >
 >> >> > - **target** 
 >> >> >
->> >> >> L'identifiant de la ferme, ou le modèle pour l'URL (Chaîne de caractères)
+>> >> >> L'identifiant de la ferme, ou le modèle pour l'URL (chaîne de caractères)
 >> >> >
 >> >> > - **type** 
 >> >> >
->> >> >> L'action de votre route (Chaîne de caractères)
+>> >> >> L'action de votre route (chaîne de caractères)
 >> >>
 >> >> - **displayName** 
 >> >>
->> >> > Le nom de votre route (Chaîne de caractères)
+>> >> > Le nom de votre route (chaîne de caractères)
 >> >>
 >> >> - **frontendId** 
 >> >>
->> >> > Le frontend TCP pour lequel votre route est appliquée (Nombre)
+>> >> > Le frontend TCP pour lequel votre route est appliquée (nombre)
 >> >>
 >> >> - **weight** 
 >> >>
->> >> > La priorité de votre route (Nombre) [0 - 255]
+>> >> > La priorité de votre route (nombre) [0 - 255]
 >
 
 #### Supprimer une route TCP
@@ -2147,11 +2140,11 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route (Nombre)
+>> >> L'identifiant de votre route (nombre)
 >
 
 ### Règles de routage
@@ -2172,11 +2165,11 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route TCP (Nombre)
+>> >> L'identifiant de votre route TCP (nombre)
 >
 
 #### Ajouter les règles de routages attachées à une route TCP
@@ -2195,15 +2188,15 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route TCP (Nombre)
+>> >> L'identifiant de votre route TCP (nombre)
 >> >
 >> > **field** *
 >> >
->> >> Le nom du champs à tester avec l'opérateur "match" (Chaîne de caractères)
+>> >> Le nom du champ à tester avec l'opérateur "match" (chaîne de caractères)
 >> >
 >> > **match** *
 >> >
@@ -2211,7 +2204,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >
 >> > **negate**
 >> >
->> >> Le comportement de l'opérateur :code:`match` est inversé (Booléen)
+>> >> Le comportement de l'opérateur :code:`match` est inversé (booléen)
 >> >
 >> > **pattern**
 >> >
@@ -2219,7 +2212,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >
 >> > **subField**
 >> >
->> >> Le nom du sous-champs, si applicable. Peut être un cookie ou un nom d'en-tête, par exemple (Chaîne de caractères)
+>> >> Le nom du sous-champ, si applicable. Peut être un cookie ou un nom d'en-tête, par exemple (chaîne de caractères)
 >
 
 #### Obtenir les détails d'une règle de routage
@@ -2238,15 +2231,15 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route TCP (Nombre)
+>> >> L'identifiant de votre route TCP (nombre)
 >> >
 >> > **ruleId** *
 >> >
->> >> L'identifiant de votre règle de routage HTTP (Nombre)
+>> >> L'identifiant de votre règle de routage HTTP (nombre)
 >
 
 #### Modifier les propriétés d'une règle de routage
@@ -2265,21 +2258,21 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route TCP (Nombre)
+>> >> L'identifiant de votre route TCP (nombre)
 >> >
 >> > **ruleId** *
 >> >
->> >> L'identifiant de votre règle de routage HTTP (Nombre)
+>> >> L'identifiant de votre règle de routage HTTP (nombre)
 >> >
 >> > **RouteRule** *
 >> >
 >> >> - **field**
 >> >>
->> >> > Le nom du champs à tester via l'opérateur "match" (Chaîne de caractères)
+>> >> > Le nom du champ à tester via l'opérateur "match" (chaîne de caractères)
 >> >>
 >> >> - **match** 
 >> >>
@@ -2287,7 +2280,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >>
 >> >> - **negate** 
 >> >>
->> >> > Si l'opérateur "match" est inversé ou non (Booléen)
+>> >> > Si l'opérateur "match" est inversé ou non (booléen)
 >> >>
 >> >> - **pattern** 
 >> >>
@@ -2295,7 +2288,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >>
 >> >> - **subField** 
 >> >>
->> >> > Le nom du sous-champs si applicable (Chaîne de caractères)
+>> >> > Le nom du sous-champ si applicable (chaîne de caractères)
 >
 
 #### Supprimer une règle de routage
@@ -2314,23 +2307,24 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **routeId** *
 >> >
->> >> L'identifiant de votre route TCP (Nombre)
+>> >> L'identifiant de votre route TCP (nombre)
 >> >
 >> > **ruleId** *
 >> >
->> >> L'identifiant de votre règle de routage HTTP (Nombre)
+>> >> L'identifiant de votre règle de routage HTTP (nombre)
 >
 
 ## Protocole UDP
-Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
+
+Accéder aux éléments relatifs au protocole UDP (frontend, ferme, etc.).
 
 ### Fermes UDP
 
-#### Lister les fermes UDP attachées à un service Load Balancer OVH
+#### Lister les fermes UDP attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2346,14 +2340,14 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **zone**
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, ex: all (chaîne de caractères)
 >
 
-#### Ajouter une nouvelle ferme UDP à un service Load Balancer OVH
+#### Ajouter une nouvelle ferme UDP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2369,19 +2363,19 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom que vous souhaitez donner à votre ferme (Chaîne de caractères)
+>> >> Le nom que vous souhaitez donner à votre ferme (chaîne de caractères)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre ferme. Hérité du frontend si non défini (Nombre, 1..65535)
+>> >> Le port d'écoute de votre ferme. Hérité du frontend si non-défini (nombre, 1..65535)
 >> >
 >> > **zone** *
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, par exemple : all (chaîne de caractères)
 >
 
 #### Obtenir les détails d'une ferme UDP
@@ -2400,11 +2394,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >
 
 #### Modifier les propriétés d'une ferme UDP
@@ -2423,21 +2417,21 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **BackendUdp** *
 >> >
 >> >> - **displayName**
 >> >>
->> >> > Le nom de la ferme (Chaîne de caractères)
+>> >> > Le nom de la ferme (chaîne de caractères)
 >> >>
 >> >> - **port** 
 >> >>
->> >> > Le port d'écoute de la ferme (Nombre, 1..65000)
+>> >> > Le port d'écoute de la ferme (nombre, 1..65000)
 >
 
 #### Supprimer une ferme UDP
@@ -2456,11 +2450,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >
 
 ### Serveurs UDP
@@ -2481,11 +2475,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **address**
 >> >
@@ -2493,7 +2487,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >
 >> > **status**
 >> >
->> >> Filtrer les valeurs par statut du serveur (Valeur)
+>> >> Filtrer les valeurs par statut du serveur (valeur)
 >
 
 #### Ajouter un serveur à une ferme UDP
@@ -2512,11 +2506,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **address** *
 >> >
@@ -2524,15 +2518,15 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >
 >> > **displayName**
 >> >
->> >> Le nom donné à votre serveur (Chaîne de caractères)
+>> >> Le nom donné à votre serveur (chaîne de caractères)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre serveur. Hérité de votre ferme si non défini (Nombre, 1..65535)
+>> >> Le port d'écoute de votre serveur. Hérité de votre ferme si non-défini (nombre, 1..65535)
 >> >
 >> > **status** *
 >> >
->> >> Si votre serveur est activé ou non (Booléen)
+>> >> Si votre serveur est activé ou non (booléen)
 >
 
 #### Obtenir les détails d'un serveur lié à une ferme UDP
@@ -2551,15 +2545,15 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre server (Nombre)
+>> >> L'identifiant de votre serveur (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >
 
 #### Modifier les propriétés d'un serveur UDP
@@ -2578,29 +2572,29 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre serveur (Nombre)
+>> >> L'identifiant de votre serveur (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme (Nombre)
+>> >> L'identifiant de votre ferme (nombre)
 >> >
 >> > **BackendUdpServer** *
 >> >
 >> >> - **displayName**
 >> >>
->> >> > Le nom de votre serveur (Chaîne de caractères)
+>> >> > Le nom de votre serveur (chaîne de caractères)
 >> >>
 >> >> - **port** 
 >> >>
->> >> > Le port d'écoute de votre serveur (Nombre, 1..65535)
+>> >> > Le port d'écoute de votre serveur (nombre, 1..65535)
 >> >>
 >> >> - **status**
 >> >>
->> >> > Si votre serveur est activé ou non (Booléen)
+>> >> > Si votre serveur est activé ou non (booléen)
 >
 
 #### Supprimer un serveur d'une ferme UDP
@@ -2619,20 +2613,20 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **serverId** *
 >> >
->> >> L'identifiant de votre serveur UDP (Nombre)
+>> >> L'identifiant de votre serveur UDP (nombre)
 >> >
 >> > **farmId** *
 >> >
->> >> L'identifiant de votre ferme UDP (Nombre)
+>> >> L'identifiant de votre ferme UDP (nombre)
 >
 
 ### Frontends UDP
 
-#### Lister les frontends UDP attachés à un service Load Balancer OVH
+#### Lister les frontends UDP attachés à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2648,22 +2642,22 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **defaultFarmId**
 >> >
->> >> L'identifiant de la ferme UDP à laquelle le frontend UDP est lié (Nombre)
+>> >> L'identifiant de la ferme UDP à laquelle le frontend UDP est lié (nombre)
 >> >
 >> > **port**
 >> >
->> >> Le port d'écoute de votre frontend (Nombre, 1..65535)
+>> >> Le port d'écoute de votre frontend (nombre, 1..65535)
 >> >
 >> > **zone**
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, par exemple : all (chaîne de caractères)
 >
 
-#### Ajouter un frontend UDP à un service Load Balancer OVH
+#### Ajouter un frontend UDP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2679,7 +2673,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **dedicatedIpfo**
 >> >
@@ -2687,23 +2681,23 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >
 >> > **defaultFarmId** *
 >> >
->> >> L'identifiant de la ferme UDP par défaut pour votre frontend (Nombre)
+>> >> L'identifiant de la ferme UDP par défaut pour votre frontend (nombre)
 >> >
 >> > **disabled**
 >> >
->> >> Si votre frontend UDP est désactivé ou activé (Booléen)
+>> >> Si votre frontend UDP est désactivé ou activé (booléen)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom de votre frontend UDP (Chaîne de caractères)
+>> >> Le nom de votre frontend UDP (chaîne de caractères)
 >> >
 >> > **port** *
 >> >
->> >> Le port d'écoute de votre frontend (Nombre, 1..65535)
+>> >> Le port d'écoute de votre frontend (nombre, 1..65535)
 >> >
 >> > **zone** *
 >> >
->> >> Le nom de votre zone, ex: all (Chaîne de caractères)
+>> >> Le nom de votre zone, ex: all (chaîne de caractères)
 >
 
 #### Obtenir les détails d'un frontend UDP
@@ -2722,11 +2716,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId** *
 >> >
->> >> L'identifiant de votre frontend UDP (Nombre)
+>> >> L'identifiant de votre frontend UDP (nombre)
 >
 
 #### Modifier les propriétés d'un frontend UDP
@@ -2745,11 +2739,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId** *
 >> >
->> >> L'identifiant de votre frontend UDP (Nombre)
+>> >> L'identifiant de votre frontend UDP (nombre)
 >> >
 >> > **FrontendUdp** *
 >> >
@@ -2759,11 +2753,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >>
 >> >> - **disabled** 
 >> >>
->> >> > Si votre frontend UDP est désactivé ou activé (Booléen)
+>> >> > Si votre frontend UDP est désactivé ou activé (booléen)
 >> >>
 >> >> - **displayName** 
 >> >>
->> >> > Le nom de votre frontend UDP (Chaîne de caractères)
+>> >> > Le nom de votre frontend UDP (chaîne de caractères)
 >
 
 #### Supprimer un frontend UDP
@@ -2782,18 +2776,18 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **frontendId** *
 >> >
->> >> L'identifiant de votre frontend UDP (Nombre)
+>> >> L'identifiant de votre frontend UDP (nombre)
 >
 
 ## Autres fonctionnalités
 
 ### Additional IP
 
-#### Lister les Additional IPs routées sur un service Load Balancer OVH
+#### Lister les Additional IPs routées sur un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2809,12 +2803,12 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >
 
 ### État du service
 
-#### Obtenir l'état des instances d'un service Load Balancer OVH
+#### Obtenir l'état des instances d'un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2830,10 +2824,10 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >
 
-#### Lister les IPs de sortie utilisées par OVH pour le NAT
+#### Lister les IPs de sortie utilisées par OVHcloud pour le NAT
 
 > [!faq]
 >
@@ -2849,10 +2843,10 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >
 
-#### Appliquer les modifications d'un service Load Balancer OVH
+#### Appliquer les modifications d'un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2868,12 +2862,12 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >
 
 ### Certificats SSL
 
-#### Lister les certificats SSL d'un service Load Balancer OVH
+#### Lister les certificats SSL d'un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2889,19 +2883,19 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **fingerprint**
 >> >
->> >> Liste l'empreinte du certificat SSL (Chaîne de caractères)
+>> >> Liste l'empreinte du certificat SSL (chaîne de caractères)
 >> >
 >> > **serial**
 >> >
->> >> Liste le numéro d'indentification du certificat SSL (Chaîne de caractères)
+>> >> Liste le numéro d'identification du certificat SSL (chaîne de caractères)
 >> >
 >> > **type**
 >> >
->> >> Type de certificat SSL (Valeur)
+>> >> Type de certificat SSL (valeur)
 >
 
 #### Ajouter un nouvel objet SSL
@@ -2920,19 +2914,19 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **certificate** *
 >> >
->> >> Ajout du certificat SSL (Chaîne de caractères)
+>> >> Ajout du certificat SSL (chaîne de caractères)
 >> >
 >> > **chain**
 >> >
->> >> Ajout du certificat SSL intermédiaire (Chaîne de caractères)
+>> >> Ajout du certificat SSL intermédiaire (chaîne de caractères)
 >> >
 >> > **key** *
 >> >
->> >> Ajout de la clé privée (Chaîne de caractères)
+>> >> Ajout de la clé privée (chaîne de caractères)
 >
 
 #### Obtenir les détails d'un objet SSL
@@ -2951,11 +2945,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **id** *
 >> >
->> >> L'identifiant de votre certificat SSL (Nombre)
+>> >> L'identifiant de votre certificat SSL (nombre)
 >
 
 #### Supprimer un objet SSL
@@ -2974,16 +2968,16 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **id** *
 >> >
->> >> L'identifiant de votre certificat SSL (Nombre)
+>> >> L'identifiant de votre certificat SSL (nombre)
 >
 
 ### Tâches
 
-#### Lister les tâches en cours pour un service Load Balancer OVH
+#### Lister les tâches en cours pour un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2999,7 +2993,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **action** *
 >> >
@@ -3022,11 +3016,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **id** *
 >> >
->> >> L'identifiant de votre tâche (Nombre)
+>> >> L'identifiant de votre tâche (nombre)
 >
 
 ### Contact
@@ -3047,22 +3041,27 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **contactAdmin**
 >> >
->> >> Le NIC OVH à configurer pour le contact Admin de ce service (Chaîne de caractères)
+>> >> L'identifiant client OVHcloud à configurer pour le contact administrateur de ce service (chaîne de caractères)
 >> >
 >> > **contactBilling**
 >> >
->> >> Le NIC OVH à configurer pour le contact Admin de ce service (Chaîne de caractères)
+>> >> L'identifiant client OVHcloud à configurer pour le contact facturation de ce service (chaîne de caractères)
 >> >
 >> > **contactTech**
 >> >
->> >> Le NIC OVH à configurer pour le contact Admin de ce service (Chaîne de caractères)
+>> >> L'identifiant client OVHcloud à configurer pour le contact technique de ce service (chaîne de caractères)
 >
 
-### Vrack
+> [!primary]
+>
+> Pour plus d'informations sur la gestion des contacts OVHcloud, consultez le guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
+>
+
+### vRack
 
 #### Description des réseaux privés attachés au load balancer
 
@@ -3080,7 +3079,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **subnet**
 >> >
@@ -3107,11 +3106,11 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **displayName**
 >> >
->> >> Le nom que vous souhaitez attribuer au réseau (Chaîne de caractères)
+>> >> Le nom que vous souhaitez attribuer au réseau (chaîne de caractères)
 >> >
 >> > **farmId**
 >> >
@@ -3123,7 +3122,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >
 >> > **subnet**
 >> >
->> >> Le bloc d'Ip du réseau privé
+>> >> Le bloc d'IP du réseau privé
 >> >
 >> > **vlan**
 >> >
@@ -3148,7 +3147,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **vrackNetworkId** *
 >> >
@@ -3171,7 +3170,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > **serviceName** *
 >> >
->> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
+>> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (chaîne de caractères)
 >> >
 >> > **vrackNetworkId** *
 >> >

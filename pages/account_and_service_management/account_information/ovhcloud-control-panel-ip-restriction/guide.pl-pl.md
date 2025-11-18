@@ -8,7 +8,7 @@ updated: 2025-04-28
   
 OVHcloud daje do Twojej dyspozycji opcje służące zwiększeniu bezpieczeństwa Twojego Panelu klienta OVHcloud i Twoich usług.
 
-W szczególności możesz ograniczyć dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) do niektórych adresów IP.
+W szczególności możesz ograniczyć dostęp do [Panelu klienta OVHcloud](/links/manager) do niektórych adresów IP.
 Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [weryfikację dwuetapową](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), pozwala na optymalne zabezpieczenie Twojego panelu klienta OVHcloud przed ewentualnymi próbami włamania.
 
 **Dowiedz się, jak zabezpieczyć konto OVHcloud ograniczając dostęp do adresów IP**
@@ -17,10 +17,10 @@ Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [we
 >
 > Ograniczenie dostępu z adresu IP i/lub weryfikacja dwuetapowa zabezpiecza dostęp do Panelu klienta OVHcloud, z którego możesz zamawiać, zarządzać, odnawiać lub usuwać usługi OVHcloud. Opcje te nie zabezpieczają Twoich usług samodzielnie, w przypadku których należy zastosować określone środki bezpieczeństwa.
 >
-  
+
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/pages/account_and_service_management/account_information/manage-ovh-password).
   
 ## W praktyce
@@ -34,7 +34,7 @@ Istnieją dwa rodzaje adresów IP:
 
 Aby skorzystać z opcji ograniczenia IP w Panelu klienta OVHcloud, należy wpisać **tylko** Twój publiczny adres IP.
 
-Aby uzyskać publiczny adres IP urządzenia, które będzie uprawnione do dostępu do Panelu klienta OVHcloud, przejdź na stronę [whatismyip.com](https://www.whatismyip.com/){.external} (nie zarządzany przez OVHcloud).
+Aby uzyskać publiczny adres IP urządzenia, które będzie uprawnione do dostępu do Panelu klienta OVHcloud, przejdź na stronę [whatismyip.com](https://www.whatismyip.com/) (nie zarządzany przez OVHcloud).
 
 Przypisz do wiadomości adres IP, który się wyświetli, po czym powtórzyj operację dla każdego urządzenia, który będzie miał dostęp do Twojego Panelu klienta OVHcloud.
 
@@ -78,7 +78,7 @@ Istnieją dwie sekcje dotyczące wprowadzania ograniczeń dla adresu IP:
 >
 > W sekcji `Domyślna reguła`{.action} nie zatwierdź **nigdy** domyślnej reguły w statusie `Odrzucony`{.action} **bez wcześniejszej zgody** poprawnie i wcześniej co najmniej jeden z publicznych adresów IP w sekcji `skonfigurowane IP` domyślnie. 
 >
-> W przeciwnym razie blokujesz **absolutnie wszystkie publiczne adresy IP (w tym twoje)** bez żadnych wyjątków. Nikt już nie będzie miał dostępu do Twojej [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przeprowadź procedurę administracyjną, aby odblokować Twoją sytuację.
+> W przeciwnym razie blokujesz **absolutnie wszystkie publiczne adresy IP (w tym twoje)** bez żadnych wyjątków. Nikt już nie będzie miał dostępu do Twojej [Panelu klienta OVHcloud](/links/manager) i przeprowadź procedurę administracyjną, aby odblokować Twoją sytuację.
 >
 > Bądźcie więc niezwykle czujny w tej kwestii.
 >
@@ -133,7 +133,7 @@ Reguła powinna pojawić się w sekcji `Skonfigurowane IP`.
 
 > [!primary]
 >
-> **Przed*** wykonaniem operacji opisanych w tym etapie należy powtórzyć operację dla wszystkich pozostałych adresów IP, które chcesz zablokować dostęp do Panelu klienta OVHcloud.
+> **Przed** wykonaniem operacji opisanych w tym etapie należy powtórzyć operację dla wszystkich pozostałych adresów IP, które chcesz zablokować dostęp do Panelu klienta OVHcloud.
 >
 
 Po wprowadzeniu wszystkich publicznych adresów IP w sekcji `Skonfigurowane IP`, w sekcji `Domyślna reguła` pozostaw regułę w statusie `Autoryzowany`{.action}. Zaznacz kratkę `Alert`{.action}, jeśli chcesz zostać powiadomiony e-mailem o próbach logowania, następnie kliknij `Zatwierdź`{.action}.

@@ -1,7 +1,7 @@
 ---
 title: 'Aktywacja i konfiguracja Edge Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować Edge Network Firewall dla Twoich usług'
-updated: 2025-06-04
+updated: 2025-10-21
 ---
 
 ## Wprowadzenie
@@ -10,29 +10,24 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 
 **Ten przewodnik wyjaśnia, jak skonfigurować Edge Network Firewall dla Twoich usług.**
 
-> [!warning]
->
-> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
->
-
 > [!primary]
 >
 > Więcej informacji na temat rozwiązania Anty-DDoS znajdziesz na [naszej stronie WWW](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) |
-|:—:|
-| Anty-DDoS - schemat infrastruktury i usług ochrony gier w OVHcloud |
+| Infrastruktura Anty-DDoS & usługi ochrony gier diagram w OVHcloud |
+|:--:|
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Wymagania początkowe
 
-- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pl/vps/), [Public Cloud instance](https://www.ovhcloud.com/pl/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip) itd.)
+- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip) itd.)
 - Dostęp do [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line](https://eco.ovhcloud.com/pl/about/).
+> Ta funkcja może być niedostępna lub ograniczona na serwerach [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Aby uzyskać więcej informacji, odwiedź stronę pod adresem [comparison page](https://eco.ovhcloud.com/pl/compare/).
+> Aby uzyskać więcej informacji, odwiedź stronę pod adresem [comparison page](/links/bare-metal/eco-compare).
 
 > [!warning]
 > Edge Network Firewall nie obsługuje protokołu QUIC.
@@ -67,13 +62,13 @@ Następnie wymagane jest potwierdzenie. Firewall zostanie utworzony i będziesz 
 >
 
 | ![Enabling the configuration](images/activationconfig.png) |
-|:—:|
+|:--:|
 | Kliknij pozycję `Edge Network Firewall configuration`{.action}, aby rozpocząć konfigurację. |
 
 Na tej stronie można wybrać opcję **Aktywuj** lub **Wyłącz** zaporę za pomocą przycisku switch.
 Można to również zrobić w inny sposób wyjaśniony poniżej.
 
-Dla każdego adresu IP można skonfigurować do **20 reguł **.
+Dla każdego adresu IP można skonfigurować do **20 reguł**.
 
 > [!warning]
 >
@@ -101,19 +96,19 @@ Dla każdego adresu IP można skonfigurować do **20 reguł **.
 **Aby dodać regułę:**
 
 | ![add-rule-btn](images/enf_add_rule.png) | 
-|:—:| 
+|:--:| 
 | Kliknij opcję `Dodaj regułę`{.action}. |
 
 Dla każdej reguły (poza TCP) wybierz:
 
 | ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
-|:—| 
+|:-| 
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) |
 
 Dla każdej reguły **TCP** należy wybrać:
 
 | ![add-rule-btn](images/enf_add_rule_tcp.png) | 
-|:—| 
+|:-| 
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) <br>&bull; Port źródłowy (opcjonalnie) <br>&bull; Port docelowy (opcjonalnie) <br>&bull; Stan TCP (opcjonalnie) <br>&bull; Fragmenty (opcjonalnie)|
 
 > [!primary]
@@ -133,7 +128,7 @@ Dla każdej reguły **TCP** należy wybrać:
 **Włącz firewall:**
 
 | ![activate-desactivate](images/enf_enabled_button_01.png) |
-|:—:|
+|:--:|
 | `Włącz`{.action}, aby włączyć |
 
 Po potwierdzeniu firewall zostanie włączony.
@@ -141,7 +136,7 @@ Po potwierdzeniu firewall zostanie włączony.
 **Wyłącz firewall:**
 
 | ![activate-desactivate](images/enf_enabled_button_04.png) |
-|:—:|
+|:--:|
 | `Włącz`{.action}, aby włączyć |
 
 Po potwierdzeniu konfiguracja firewalla zostanie wyłączona.
@@ -164,29 +159,9 @@ Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez re
 
 ### Filtrowanie ataku — działanie centrum oczyszczania
 
-Infrastruktura Anty-DDoS (VAC) może działać w dwóch trybach: **automatyczne** i **stałe**. Proces mitygacji realizowany jest za pośrednictwem zautomatyzowanego centrum oczyszczania. To w tym miejscu nasze zaawansowane technologie wnikliwie analizują pakiety i podejmują próby usunięcia ruchu DDoS, umożliwiając jednocześnie przepływ pożadanego ruchu.
+Nasza infrastruktura Anty-DDoS (VAC) działa automatycznie. Proces mitygacji realizowany jest za pośrednictwem zautomatyzowanego centrum płukania. To tutaj nasza zaawansowana technologia przygląda się bliżej pakietom i próbuje usunąć ruch DDoS pozwalając jednocześnie na przechodzenie przez nie legalnego ruchu.
 
-- **Domyślna wartość dla automatycznego filtrowania**: Wszystkie adresy IP OVHcloud są automatycznie filtrowane. Zazwyczaj jest to najlepszy wybór dla Twojej usługi. W przypadku wykrycia złośliwego ruchu, centrum oczyszczania zostaje włączone. Stan ten jest wskazywany przez status "Wymuszony" dla danego adresu IP. W tym momencie Edge Network Firewall jest również aktywny. Sytuacja wraca do normy, gdy atak jest złagodzony i nie obserwuje się już podejrzanej aktywności.
-
-- **Stały tryb filtrowania** można włączyć lub wyłączyć w Panelu klienta OVHcloud. Dzięki stałej mitygacji stosujesz na stałe pierwszy poziom filtrowania, dzięki czemu cały ruch będzie zawsze przechodził przez system mitygacji przed dotarciem do serwera. Nie zalecamy włączania tej opcji przez dłuższy czas, jeśli nie występują wahania czasu oczekiwania spowodowane zbyt częstym przekierowywaniem ruchu przez centrum szybkiej kontroli.
-
-Pamiętaj, że w porównaniu do trybu automatycznego, po jego włączeniu następuje **no** wzrost poziomu ochrony.
-
-Aby go aktywować, wykonaj następujące kroki:
-
-- Kliknij menu `Bare Metal Cloud`{.action}.
-- Przejdź do `Network`{.action} na lewym pasku bocznym.
-- Przejdź do sekcji `IP`{.action}.
-
-| ![menu-ipv4](images/mitigation_menu.png) |
-|:—:|
-| Następnie kliknij `...`{.action} Przycisk po prawej stronie odpowiedniego adresu IPv4. |
-
-
-| ![mitigation-option](images/mitigation_menu_step_2.png) |
-|:—:|
-| Wybierz `Filtrowanie: tryb stały`{.action}. |
-
+Wszystkie adresy IP OVHcloud są objęte automatyczną mitygacją. W przypadku wykrycia jakiegokolwiek złośliwego ruchu centrum płukania zostaje aktywowane. Stan ten jest określony statusem "Wymuszony" dla danego adresu IP. W tym momencie aktywny jest również Edge Firewall Network. Kiedy atak zostanie zmitygowany, sytuacja powraca do normy i nie obserwuje się już podejrzanych działań.
 
 > [!success]
 > **Porady**
@@ -212,4 +187,4 @@ Po przeczytaniu tego tutoriala będziesz potrafił skonfigurować Edge Network F
 
 - [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

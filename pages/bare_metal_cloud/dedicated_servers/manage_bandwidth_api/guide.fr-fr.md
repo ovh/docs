@@ -13,7 +13,7 @@ Chacun de nos serveurs dédiés dispose d'une bande passante publique minimale d
 ## Prérequis
 
 - Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
-- Avoir accès à l’[API OVHcloud](pages/manage_and_operate/api/first-steps)
+- Avoir accès à l’[API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
 > [!warning]
 > Veuillez noter que cette option est disponible sur la plupart des serveurs dédiés, mais pas sur tous. Bien que nos serveurs soient livrés avec une bande passante publique minimale de 500Mbps, l'option de mise à niveau de la bande passante publique n'est pas disponible sur toutes les gammes de serveurs dédiés.

@@ -8,7 +8,7 @@ ou can find here some details on the APIs: the one we expose on OVHcloud and the
 
 ## OVHcloud API
 
-We have added a [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVHcloud API](https://ca.api.ovh.com/).  
+We have added a [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVHcloud API](/links/api).  
 Using it allows you to add and remove nodes, update and reset your clusters or get `kubectl` configuration.
 
 > [!primary]
@@ -25,8 +25,8 @@ Admission plugins (defaults are not listed here):
 
 Authorization modes:
 
-* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/){.external}: Authorise API requests made by Kubelets.
-* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external}: Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
+* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/): Authorise API requests made by Kubelets.
+* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/): Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
 
 Feature gates:
 
@@ -38,6 +38,6 @@ Feature gates:
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](/links/community).

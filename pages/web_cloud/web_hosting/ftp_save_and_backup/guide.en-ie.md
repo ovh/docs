@@ -1,7 +1,7 @@
 ---
 title: "Restoring your Web Hosting plan’s storage space"
 excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
-updated: 2025-05-23
+updated: 2025-10-20
 ---
 
 ## Objective
@@ -19,8 +19,8 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 
 ## Requirements
 
-- A [Web Hosting plan](/links/web/hosting){.external} (please note that this does not work with [Cloud Web](/links/web/hosting-cloud-web-offer)).
-- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](/links/manager){.external}, or have the FTP user password required to access your storage space. 
+- A [Web Hosting plan](/links/web/hosting) (please note that this does not work with [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](/links/manager), or have the FTP user password required to access your storage space. 
 
 ## Instructions
 
@@ -41,23 +41,39 @@ You also need to decide which restore method you will use:
 |Restoring via the OVHcloud Control Panel|Restores the entire content of your storage space. The current content will be fully replaced by the content of the backup you have selected.|
 |Restoring via software or an interface|Gives you read-only access to a backup of the storage space. Although this method is more technical, you can use it to recover one or more files from a previous date, without having to overwrite the entire contents of the storage space.|
 
+Once you are ready to do so, carry on reading the section of this guide that is relevant to the restore method you have chosen.
+
 > [!warning]
 >
 > Regarding the **restore from OVHcloud Control Panel** method, check that at least **half of the total FTP storage space** included with your hosting plan is still available.
 > For example, if you have a **Performance** hosting plan, 250 GB must still be available out of the 500 GB provided.
 >
 > This is because our robots install the backup on your hosting before deleting the FTP content which will be replaced by the restoration.
->
-> To check the quota used on your web hosting, log in to your [OVHcloud Control Panel](/links/manager). Go to the `Web Cloud`{.action} section and click on `Hosting plans`{.action}. Then choose the name of the hosting concerned. 
->
-> The quota used appears on the page that appears:
->
-> ![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->
-> If the FTP storage space used is more than half of the total FTP storage space of your hosting package, retrieve locally some of the large items from your website (you can use [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). Then remove them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
->
 
-Once you are ready to do so, carry on reading the section of this guide that is relevant to the restore method you have chosen.
+To check the quota used on your web hosting, click on the tabs below to view each of the **3** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> In the **General information** box, you will find the quota under **Disk space**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> If the space in use is more than half of the total FTP storage space of your hosting plan, you can free up space by removing large files from your website (you can use [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
+>>
+>> Download these files, then delete them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
 
 - [Restore the storage space via the OVHcloud Control Panel](#viacontrolpanel)
 
@@ -80,31 +96,57 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > In this case:
 >
 > - Our teams send an email to the hosting [administrator contact](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management).
-> - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/manager){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
+> - The “maintenance” status will appear in your [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
->
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Hosting plans`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
+Click on the tabs below to view each of the **6** steps.
 
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
-
-In the popup window that appears, select the restore date you want in the dropdown menu, using the information below:
-
-|Date shown|Technical backup date|
-|---|---|
-|D-1|The same day, at 00:01 (UTC+1)|
-|D-2|One day ago, at 00:01 (UTC+1)|
-|D-3|Two days ago, at 00:01 (UTC+1)|
-|1 week|Last Sunday, at 01:00 (UTC+1)|
-|2 weeks|Sunday, 2 weeks ago, at 01:00 (UTC+1)|
-
-Once you have selected a date, click `Next`{.action}. 
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
-
-Take a few minutes to check that none of your files will be lost after the restoration, e.g. any files saved on your storage space after the restore date you have selected. As a reminder, the restoration will effectively overwrite all of your current data, and replace it with the backup data.
-
-Once you are ready to start restoring the backup, click `Confirm`{.action}.
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `FTP - SSH`{.action} tab.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> On the new page that appears, click `Retrieve backup`{.action}.
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
+>>
+> **Step 5**
+>>
+>> In the popup window that appears, select the restore date you want in the dropdown menu, using the information below:
+>>
+>> |Date shown|Technical backup date|
+>> |---|---|
+>> |D-1|The same day, at 00:01 (UTC+1)|
+>> |D-2|One day ago, at 00:01 (UTC+1)|
+>> |D-3|Two days ago, at 00:01 (UTC+1)|
+>> |1 week|Last Sunday, at 01:00 (UTC+1)|
+>> |2 weeks|Sunday, 2 weeks ago, at 01:00 (UTC+1)|
+>>
+>> Once you have selected a date, click `Next`{.action}. 
+>>
+> **Step 6**
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
+>>
+>> Take a few minutes to check that none of your files will be lost after the restoration, e.g. any files saved on your storage space after the restore date you have selected. As a reminder, the restoration will effectively overwrite all of your current data, and replace it with the backup data.
+>>
+>> Once you are ready to start restoring the backup, click `Confirm`{.action}.
 
 > [!primary]
 >
@@ -122,11 +164,11 @@ There are several stages to this procedure. Ensure that you have your FTP user p
 
 #### Step 1: Decide on the software or interface you want to use.
 
-First of all, decide which software or interface you would like to use in order to connect to your storage space backup.  If you have already decided on one, you can move straight to step 2. Otherwise, we recommend using one of the following three solutions:
+First of all, decide which software or interface you would like to use in order to connect to your storage space backup.  If you have already decided on one, you can move straight to step 2. Otherwise, we recommend using one of the following two solutions:
 
-- **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
+- **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
+- **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac). Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
 Once you are ready to start making changes, continue to the next step.
 
@@ -134,7 +176,11 @@ Once you are ready to start making changes, continue to the next step.
 
 To access the backup data you would like to restore, you will need to log in to your storage space via the interface or software you have selected. To do this, you will need to have the FTP username, its password and your FTP server’s host name.
 
-You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan.
+
+![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+
+If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 

@@ -1,12 +1,8 @@
 ---
 title: "Hardwarefehler auf einem dedizierten Server im Rescue-Modus diagnostizieren"
 excerpt: "Erfahren Sie hier, wie Sie mithilfe von OVHcloud Rescue-Modus und Diagnose-Tools Hardwarefehler auf Ihrem Dedicated Server identifizieren"
-updated: 2024-05-06
+updated: 2025-10-16
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -73,10 +69,18 @@ Weitere Informationen zur Ausgabe dieses Befehls und deren Interpretation finden
 
 Der Partitionstest umfasst einen Zugriffstest auf die Disk und eine Prüfung des Dateisystems. Der Zugriffstest prüft, ob das System mit den Disks Ihres Server kommunizieren kann. Die Überprüfung des Dateisystems führt den Befehl `fsck -fy` aus.
 
+Führen Sie den folgenden Befehl aus, um das Dateisystem zu überprüfen:
+
 ```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+fsck -fy
+```
+
+Führen Sie den folgenden Befehl aus, um einen *Read*-Test durchzuführen. Ersetzen Sie `sd(x)` durch eigene Werte.
+
+```bash
+hdparm -t /dev/sd(x)
 ```
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer [User Community](/links/community).

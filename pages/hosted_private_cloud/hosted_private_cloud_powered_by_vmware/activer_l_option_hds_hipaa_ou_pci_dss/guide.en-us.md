@@ -6,7 +6,7 @@ updated: 2020-05-27
 
 ## Objective
 
-You can adapt your Private Cloud for PCI DSS certifications, which could be essential if you need to host [bank/payment card data](https://www.ovh.co.uk/private-cloud/payment-infrastructure/pci-dss.xml){.external} (PCI DSS). This adaptation is carried out in a few steps.
+You can adapt your Private Cloud for PCI DSS certifications, which could be essential if you need to host [bank/payment card data](https://www.ovh.co.uk/private-cloud/payment-infrastructure/pci-dss.xml) (PCI DSS). This adaptation is carried out in a few steps.
 
 **Find out how to adapt your Private Cloud for PCI DSS certifications.**
 
@@ -18,13 +18,13 @@ You can adapt your Private Cloud for PCI DSS certifications, which could be esse
 >
 
 - a Private Cloud infrastructure in version 6.0 or higher
-- access to the `Dedicated`{.action} section of the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- access to the `Dedicated`{.action} section of the [OVH Control Panel](/links/manager)
 
 ## Instructions
 
 ### Ensure that the security option is enabled.
 
-In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), and make sure you are in the “Dedicated” section. Click `Private Cloud`{.action} and select the service concerned. 
+In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVH Control Panel](/links/manager), and make sure you are in the “Dedicated” section. Click `Private Cloud`{.action} and select the service concerned. 
 
 In the window that appears, make sure you are on the `General Information`{.action} tab. Then check the activation status of the security options in the "Security Options" section. **It should be noted that it is currently not possible to accumulate several security options for the same Private Cloud.**
 
@@ -32,7 +32,7 @@ In the window that appears, make sure you are on the `General Information`{.acti
 
 If the desired security option is not enabled, activate it by clicking on the `...`{.action} button, then on `Activate`{.action}. Several requirements are essential.
 
-- **[NSX](https://www.ovh.co.uk/private-cloud/options/nsx.xml){.external} and [vROps](https://www.ovh.co.uk/private-cloud/options/vrops.xml){.external} options must be installed**: from the `General Information`{.action} tab in the "Private Cloud Options" section, you can check the activation status of these options. If they are not enabled, activate them by clicking on the `...`{.action} button and then on `Activate`{.action}.
+- **[NSX](https://www.ovh.co.uk/private-cloud/options/nsx.xml) and [vROps](https://www.ovh.co.uk/private-cloud/options/vrops.xml) options must be installed**: from the `General Information`{.action} tab in the "Private Cloud Options" section, you can check the activation status of these options. If they are not enabled, activate them by clicking on the `...`{.action} button and then on `Activate`{.action}.
 
 - **The vCenter access policy must be restricted**: from the "Security" tab, you can check the status of the access policy. If it is not restricted, make the change by clicking on the `vCenter Access Policy`{.action} button, then following the steps. Our documentation “[Introduction to the OVH Private Cloud Control Panel](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)” can assist you in this process.
 

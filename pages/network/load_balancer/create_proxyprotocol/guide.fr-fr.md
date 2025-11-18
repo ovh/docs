@@ -58,7 +58,7 @@ La liste des IPv4 de sortie potentiellement utilisées par votre service OVHclou
 
 ### Présentation du ProxyProtocol
 
-Le ProxyProtocol a été développé par l'équipe du Load Balancer [HAPRoxy](http://haproxy.org/){.external} comme l'homologue en TCP des en-têtes HTTP standards tels que X-Forwarded-For. Il a été pensé pour faire suivre au minimum :
+Le ProxyProtocol a été développé par l'équipe du Load Balancer [HAPRoxy](http://haproxy.org/) comme l'homologue en TCP des en-têtes HTTP standards tels que X-Forwarded-For. Il a été pensé pour faire suivre au minimum :
 
 - le nom du protocole L4 utilisé (TCP4 pour l'IPv4 ou TCP6 pour l'IPv6);
 - l'adresse IPv4 ou IPv6 source;
@@ -73,7 +73,7 @@ En effet, ce protocole existe en 2 versions :
 
 La version 1 étant largement suffisante pour la plupart des usages (bien que moins optimisée), elle est souvent la seule version gérée par les logiciels compatibles. La version 2 étant un format binaire, elle est plus rapide à analyser. Elle ajoute également la possibilité d'indiquer si la connexion d'origine était chiffrée (l'équivalent de l'en-tête X-Forwarded-Proto) ainsi que le domaine spécifié dans le champ Common Name du certificat utilisé le cas échéant.
 
-Pour en savoir plus sur le ProxyProtocol, nous vous invitons à consulter la [spécification du ProxyProtocol](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt){.external}.
+Pour en savoir plus sur le ProxyProtocol, nous vous invitons à consulter la [spécification du ProxyProtocol](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt).
 
 ### Activation du ProxyProtocol pour un de vos serveurs
 
@@ -112,7 +112,7 @@ Le champ d'API correspondant dans le serveur est proxyProtocolVersion.
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 > 
 
-- Appliquer les modifications:
+- Appliquer les modifications :
 
 > [!api]
 >
@@ -123,7 +123,7 @@ Le champ d'API correspondant dans le serveur est proxyProtocolVersion.
 
 #### Nginx
 
-Nginx gère la version 1 du ProxyProtocol. Il est capable d'en extraire les principales informations, à savoir l'adresse IP et le port source du client tels que vus par votre service OVHcloud Load Balancer. Dans Nginx, ces informations sont exposées à travers la variable proxy_protocol_addr. De même que pour son homologue HTTP X-Forwarded-For, Nginx se servira de cette variable pour prendre en compte la bonne adresse source dans les logs avec le module ngx_http_realip.
+Nginx gère la version 1 du ProxyProtocol. Il est capable d'en extraire les principales informations, à savoir l'adresse IP et le port source du client tels que vus par votre service OVHcloud Load Balancer. Dans Nginx, ces informations sont exposées à travers la variable `proxy_protocol_addr`. De même que pour son homologue HTTP `X-Forwarded-For`, Nginx se servira de cette variable pour prendre en compte la bonne adresse source dans les logs avec le module `ngx_http_realip`.
 
 Pour utiliser le ProxyProtocol avec Nginx, vous pouvez configurer le section server de votre configuration avec :
 
@@ -137,12 +137,12 @@ Pour utiliser le ProxyProtocol avec Nginx, vous pouvez configurer le section ser
 7.     set_real_ip_from 10.108.0.0/14;
 8.     real_ip_header proxy_protocol;
 9.
-10.     # (optional) Set some headers
-11.     proxy_set_header X-Real-IP        $proxy_protocol_addr;
-12.     proxy_set_header X-Forwarded-For  $proxy_protocol_addr;
+10.    # (optional) Set some headers
+11.    proxy_set_header X-Real-IP        $proxy_protocol_addr;
+12.    proxy_set_header X-Forwarded-For  $proxy_protocol_addr;
 13.
-14.     # Insert your regular configuration here
-15.     ...
+14.    # Insert your regular configuration here
+15.    ...
 16. }
 ```
 
@@ -157,15 +157,15 @@ service nginx reload
 > Cet exemple utilise le protocole HTTP pour plus de simplicité. Si vous utilisez du HTTP, nous vous recommandons vivement d'utiliser les en-têtes HTTP au lieu du ProxyProtocol, sauf si votre service OVHcloud Load Balancer est configuré en TCP. Cela peut se produire dans le cas d'une terminaison SSL pour du HTTP/2 par exemple.
 > 
 
-Pour plus d'informations sur la configuration du ProxyProtocol dans Nginx, nous vous invitons à consulter la documentation officielle du projet: [https://www.nginx.com/resources/admin-guide/proxy-protocol/](https://www.nginx.com/resources/admin-guide/proxy-protocol/){.external}
+Pour plus d'informations sur la configuration du ProxyProtocol dans Nginx, nous vous invitons à consulter [la documentation officielle du projet](https://www.nginx.com/resources/admin-guide/proxy-protocol/).
 
 #### Apache
 
-La gestion du ProxyProtocol dans Apache est encore jeune. Une implémentation non-officielle et compatible avec Apache 2.4 est disponible sur Github ([https://github.com/roadrunner2/mod-proxy-protocol](https://github.com/roadrunner2/mod-proxy-protocol){.external}) mais n'est plus maintenue depuis 2014. Une implémentation officielle se trouve dans le module mod_remoteip qui est également utilisé pour gérer les en-têtes de la famille X-Forwarded-For.
+La gestion du ProxyProtocol dans Apache est encore jeune. Une implémentation non-officielle et compatible avec Apache 2.4 est disponible sur Github ([https://github.com/roadrunner2/mod-proxy-protocol](https://github.com/roadrunner2/mod-proxy-protocol)) mais n'est plus maintenue depuis 2014. Une implémentation officielle se trouve dans le module `mod_remoteip` qui est également utilisé pour gérer les en-têtes de la famille X-Forwarded-For.
 
-mod-proxy-protocol gère les versions 1 et 2 du ProxyProtocol. En revanche, il ne permet pas de spécifier une liste d'adresses IP source autorisées à utiliser le ProxyProtocol, bien que ce soit évoqué dans les projets du module.
+`mod-proxy-protocol` gère les versions 1 et 2 du ProxyProtocol. En revanche, il ne permet pas de spécifier une liste d'adresses IP source autorisées à utiliser le ProxyProtocol, bien que ce soit évoqué dans les projets du module.
 
-mod_remoteip gère également les versions 1 et 2 du ProxyProtocol. Il ajoute également la possibilité de spécifier une liste d'adresses pour lesquelles le ProxyProtocol ne doit pas être activé. Ce qui reste limitant du point de vue de la configuration. Ce module est uniquement disponible dans la version expérimentale Apache 2.5, bien que la documentation mentionne une disponibilité à partir de Apache 2.4.26.
+`mod_remoteip` gère également les versions 1 et 2 du ProxyProtocol. Il ajoute également la possibilité de spécifier une liste d'adresses pour lesquelles le ProxyProtocol ne doit pas être activé. Ce qui reste limitant du point de vue de la configuration. Ce module est uniquement disponible dans la version expérimentale Apache 2.5, bien que la documentation mentionne une disponibilité à partir de Apache 2.4.26.
 
 Quelle que soit l'approche choisie, nous vous recommandons vivement de bien restreindre les connexions à vos serveurs aux adresses de sortie de votre service OVHcloud Load Balancer.<br>
 Cela peut être aisément configuré avec iptables:
@@ -201,7 +201,7 @@ sudo apxs -i -a -c mod_proxy_protocol.c
 4. </VirtualHost>
 ```
 
-- Remplacez les variables `%h` par `%a` dans les directives LogFormat de la configuration Apache
+- Remplacez les variables `%h` par `%a` dans les directives LogFormat de la configuration Apache.
 - Enfin, activez la nouvelle configuration avec :
 
 ```bash
@@ -209,7 +209,7 @@ sudo apxs -i -a -c mod_proxy_protocol.c
 service apache2 restart
 ```
 
-Pour en savoir plus sur la configuration du module mod-proxy-protocol nous vous invitons à consulter [sa documentation](http://roadrunner2.github.io/mod-proxy-protocol/mod_proxy_protocol.html){.external}.
+Pour en savoir plus sur la configuration du module mod-proxy-protocol nous vous invitons à consulter [sa documentation](http://roadrunner2.github.io/mod-proxy-protocol/mod_proxy_protocol.html).
 
 ##### **Avec mod_remoteip**
 
@@ -223,7 +223,7 @@ Pour en savoir plus sur la configuration du module mod-proxy-protocol nous vous 
 4. </VirtualHost>
 ```
 
-- Remplacez les variables `%h` par `%a` dans les directives LogFormat de la configuration Apache
+- Remplacez les variables `%h` par `%a` dans les directives LogFormat de la configuration Apache.
 - Enfin, activez la nouvelle configuration avec :
 
 ```bash
@@ -234,7 +234,7 @@ a2enmod remoteip
 service apache2 restart
 ```
 
-Pour en savoir plus sur la configuration du module mod_remoteip, nous vous invitons à consulter [sa documentation](https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html#remoteipproxyprotocol){.external}.
+Pour en savoir plus sur la configuration du module `mod_remoteip`, nous vous invitons à consulter [sa documentation](https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html#remoteipproxyprotocol).
 
 #### HAProxy
 
@@ -244,13 +244,13 @@ Dans ce cas, une astuce est de placer une instance HAProxy locale, en frontal du
 
 Ce guide vous propose un exemple de configuration possible pour le port TCP 3306 utilisé par MySQL. Cette configuration n'a pas vocation a être un exemple complet mais plutôt à servir de base, de manière à partir sur une configuration fonctionnelle.
 
-- Installez HAProxy
+- Installez HAProxy :
 
 ```bash
 sudo apt install haproxy
 ```
 
-- Configurez votre proxy
+- Configurez votre proxy :
 
 ```haproxy
 1. listen mysql

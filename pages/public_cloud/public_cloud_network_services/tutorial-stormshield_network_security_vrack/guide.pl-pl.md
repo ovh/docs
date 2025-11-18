@@ -24,10 +24,10 @@ Niniejszy przewodnik zawiera instrukcje krok po kroku dotyczące wdrażania i ko
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
 - [użytkownik OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (opcjonalnie).
 - Podstawowa znajomość sieci.
-- Konto Stormshield utworzone w [witrynie Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}.
+- Konto Stormshield utworzone w [witrynie Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm).
 - Upewnić się, że vRack jest włączony i skonfigurowany w taki sposób, aby umożliwić bezpieczną komunikację między komponentami infrastruktury.
 - Blok adresów [Additional IP](/links/network/additional-ip) (/29) umożliwiający failover i konfigurację wysokiej dostępności.
-- Licencja Stormshield Elastic Virtual Appliance BYOL (**B**ring **Y**our **O**wn **L**icence) uzyskana od [zewnętrznych partnerów lub resellerów](https://www.stormshield.com/partner/partner-finder/){.external}, którą należy dostarczyć podczas instalacji i konfiguracji.
+- Licencja Stormshield Elastic Virtual Appliance BYOL (**B**ring **Y**our **O**wn **L**icence) uzyskana od [zewnętrznych partnerów lub resellerów](https://www.stormshield.com/partner/partner-finder/), którą należy dostarczyć podczas instalacji i konfiguracji.
 
 ## W praktyce
 
@@ -47,7 +47,7 @@ Oprócz instalacji i konfiguracji Stormshield Network Security, ten tutorial pre
 > Pamiętaj, że wszystkie sekcje dotyczące "Wysokiej dostępności" lub "Stormshield-2" są opcjonalne, podobnie jak korzystanie z sieci vRack z Additional IP. Zostały one dołączone, aby pokazać, jak skonfigurować system z dwoma instancjami w trybie aktywnym/pasywnym, aby zapewnić wysoką dostępność. W minimalnej wersji może również działać z jedną instancją, jeśli to wystarczy do Twoich potrzeb.
 
 > [!primary]
-> W tym scenariuszu wykorzystamy dwie wirtualne maszyny skonfigurowane jako urządzenie zabezpieczające, aby osiągnąć wysoką dostępność (**H**igh **A**vailability lub HA), a także dodatkową wirtualną maszynę do administrowania urządzeniem zabezpieczającym i zarządzania nim. Konfiguracja ta gwarantuje ochronę przed awariami i ciągłą dostępność usługi. Więcej przykładów i szczegółowych wskazówek dotyczących opcji skalowalności można znaleźć w [dokumentacji Stormshield](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-EN.htm){.external}.
+> W tym scenariuszu wykorzystamy dwie wirtualne maszyny skonfigurowane jako urządzenie zabezpieczające, aby osiągnąć wysoką dostępność (**H**igh **A**vailability lub HA), a także dodatkową wirtualną maszynę do administrowania urządzeniem zabezpieczającym i zarządzania nim. Konfiguracja ta gwarantuje ochronę przed awariami i ciągłą dostępność usługi. Więcej przykładów i szczegółowych wskazówek dotyczących opcji skalowalności można znaleźć w [dokumentacji Stormshield](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-EN.htm).
 
 #### Konfiguracja usługi vRack
 
@@ -99,7 +99,7 @@ openstack subnet create --network stormshield-ha --subnet-range 192.168.2.0/29 -
 
 #### Wdrażanie instancji SNS EVA
 
-Przejdź do sekcji `download` na [oficjalnej stronie Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/PAYG_Deployment_Guide/Downloading_installation_file.htm){.external}. Zaloguj się do konta Stormshield i postępuj zgodnie z instrukcjami, aby pobrać obraz Stormshield OpenStack.
+Przejdź do sekcji `download` na [oficjalnej stronie Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/PAYG_Deployment_Guide/Downloading_installation_file.htm). Zaloguj się do konta Stormshield i postępuj zgodnie z instrukcjami, aby pobrać obraz Stormshield OpenStack.
 
 Przejdź do katalogu, do którego załadowałeś obraz SNS EVA OpenStack i zaimportujesz obraz (w tym tutorialu używamy obrazu `utm-SNS-EVA-4.8.3-openstack.qcow2`):
 
@@ -169,7 +169,7 @@ ennetwork
 
 Skonfiguruj drugi SNS EVA, ale z drugim adresem IP `147.135.161.154` naszego bloku IP dla interfejsu zewnętrznego zamiast `147.135.161.153`.
 
-Dodaj inną licencję do obu instancji SNS EVA, postępując zgodnie z [oficjalną dokumentacją](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}.
+Dodaj inną licencję do obu instancji SNS EVA, postępując zgodnie z [oficjalną dokumentacją](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm).
 
 Utwórz regułę zapory podobną do tej w obu usługach SNS EVA w graficznym interfejsie sieciowym:
 
@@ -228,7 +228,7 @@ Jeśli wszystko jest skonfigurowane poprawnie, po ponownym uruchomieniu drugiego
 Synchronizacja między dwoma instancjami SNS EVA jest niezbędna, aby zapewnić aktualność obu zapór przy tej samej konfiguracji. Można to zrobić za pomocą wiersza poleceń SSH lub bezpośrednio w graficznym interfejsie użytkownika (GUI).
 
 > [!primary]
-> W tym przykładzie używamy wiersza poleceń SSH. Jeśli chcesz skorzystać z graficznego interfejsu użytkownika do synchronizacji, zapoznaj się z sekcją "Ekran wysokiej dostępności" w [dokumentacji Stormshield SNS EVA](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/High_Availability/High_availability_screen.htm){.external}, aby poznać szczegółowe etapy.
+> W tym przykładzie używamy wiersza poleceń SSH. Jeśli chcesz skorzystać z graficznego interfejsu użytkownika do synchronizacji, zapoznaj się z sekcją "Ekran wysokiej dostępności" w [dokumentacji Stormshield SNS EVA](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/High_Availability/High_availability_screen.htm), aby poznać szczegółowe etapy.
 
 Na tym etapie obie instancje SNS EVA nie muszą być synchronizowane, ponieważ skonfigurowaliśmy dużą liczbę parametrów w pierwszej instancji, o której druga instancja nie wie.
 
@@ -257,13 +257,13 @@ W tym przykładzie wirtualna zapora będzie działać jako bezpieczna brama dla 
 
 ![SNS EVA vrack](images/stormshield-gateway.png){.thumbnail}
 
-- Utwórz obiekt sieciowy dla , postępując zgodnie z [tą częścią oficjalnej dokumentacji Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external}.
+- Utwórz obiekt sieciowy dla , postępując zgodnie z [tą częścią oficjalnej dokumentacji Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm).
 
-- [Utwórz nową regułę filtrowania](https://documentation.stormshield.com/SNS/v4/en/Content/HowTo_-_IPSec_VPN_-_Authentication_by_certificate/Setup-Main-Site-30-Creating-Filtering-policy.htm){.external} podobną do tej, aby umożliwić ruch z wychodzący:
+- [Utwórz nową regułę filtrowania](https://documentation.stormshield.com/SNS/v4/en/Content/HowTo_-_IPSec_VPN_-_Authentication_by_certificate/Setup-Main-Site-30-Creating-Filtering-policy.htm) podobną do tej, aby umożliwić ruch z wychodzący:
 
 ![SNS EVA vrack](images/gateway-2.png){.thumbnail}
 
-- [Utwórz podobną regułę NAT](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Filtering_and_NAT/NAT_tab.htm){.external}:
+- [Utwórz podobną regułę NAT](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Filtering_and_NAT/NAT_tab.htm):
 
 ![SNS EVA vrack](images/gateway-3.png){.thumbnail}
 
@@ -276,7 +276,7 @@ hasync
 
 ##### Sprawdzanie, czy instancja może dotrzeć do Internetu z poziomu
 
-[Importuj publiczny klucz SSH](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external}:
+[Importuj publiczny klucz SSH](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html):
 
 ```bash
 openstack keypair create --public-key ~/.ssh/id_rsa.pub <name>
@@ -366,9 +366,9 @@ Powtórz wszystkie kroki w innym regionie, używając sieci VLAN 201 zamiast VLA
 
 #### **Skonfiguruj pierwszą stronę**
 
-- [Dodaj obiekt hosta](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external} dla zdalnego serwera SNS EVA i dodaj obiekt sieciowy dla zdalnej sieci prywatnej .
+- [Dodaj obiekt hosta](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm) dla zdalnego serwera SNS EVA i dodaj obiekt sieciowy dla zdalnej sieci prywatnej .
 
-- [Utwórz standardowy tunel typu site-to-site](https://documentation.stormshield.eu/SNS/v4/fr/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/Encryption_policy-Tunnels_tab-Site_to_Site-Creating.htm){.external}.
+- [Utwórz standardowy tunel typu site-to-site](https://documentation.stormshield.eu/SNS/v4/fr/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/Encryption_policy-Tunnels_tab-Site_to_Site-Creating.htm).
 
 > [!tabs]
 > **Etap 1**
@@ -445,7 +445,7 @@ W tym przykładzie zdalny klient OpenVPN połączy się z siecią prywatną wewn
 
 ##### **Konfiguracja katalogu LDAP**
 
-- [Utwórz wewnętrzny katalog LDAP](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Directory_configuration/Creating_an_internal_LDAP.htm){.external}, aby zarządzać użytkownikami VPN.
+- [Utwórz wewnętrzny katalog LDAP](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Directory_configuration/Creating_an_internal_LDAP.htm), aby zarządzać użytkownikami VPN.
 
 W scenariuszu produkcji ten protokół LDAP/AD musi być zdalny, a nie lokalny.
 
@@ -513,7 +513,7 @@ hasync
 > [!primary]
 > Aby przetestować połączenie SSL/TLS, użyj dowolnego urządzenia, na którym zainstalowany jest OpenVPN. Przykład ten obejmuje test klienta OpenVPN na instancji OpenStack w innym regionie.
 >
-> W tym przykładzie korzystamy z klienta OpenVPN, ale możesz również użyć [wersji pakietu Stormshield](https://vpn.stormshield.eu/){.external}.
+> W tym przykładzie korzystamy z klienta OpenVPN, ale możesz również użyć [wersji pakietu Stormshield](https://vpn.stormshield.eu/).
 
 Pobierz plik konfiguracyjny VPN (`Configuration` > `VPN` > `SSL VPN` > `Advanced configuration` > `Export the configuration file`).
 

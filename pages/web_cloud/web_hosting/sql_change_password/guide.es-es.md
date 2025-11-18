@@ -1,7 +1,7 @@
 ---
 title: Cambiar la contraseña de la base de datos de un alojamiento web
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
-updated: 2025-05-23
+updated: 2025-10-08
 ---
 
 ## Objetivo
@@ -20,12 +20,12 @@ Mientras no se realice el cambio **en estos dos lugares**, el sitio web mostrar�
 
 Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](/links/partner).
 
-La modificación de la contraseña de la base de datos del sitio web se realiza en cuatro pasos:
+La modificación de la contraseña de la base de datos del sitio web se realiza en cuatro partes:
 
-- [1. identificar el archivo de configuración del sitio web](#step1);
-- [2. identificar la base de datos del sitio web](#step2);
-- [3. cambiar la contraseña de la base de datos del sitio web en el archivo de configuración](#step3);
-- [4. cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos](#step4).
+- [1. Identificar el archivo de configuración del sitio web](#step1);
+- [2. Identificar la base de datos del sitio web](#step2);
+- [3. Cambiar la contraseña de la base de datos del sitio web en el archivo de configuración](#step3);
+- [4. Cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos](#step4).
 
 **Esta guía explica cómo cambiar la contraseña de una base de datos de forma segura.**
 
@@ -40,12 +40,12 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Utilizar una [base de datos asociada a su plan de hosting](/links/web/hosting-options-startsql) o a un [servidor Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+- Utilizar una [base de datos asociada a su plan de hosting](/links/web/hosting-options-startsql) o a un [servidor Web Cloud Databases](/links/web/databases).
 - Disponer de las claves FTP para conectarse al [espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) del alojamiento.
 
 ## Procedimiento
 
-### Etapa 1: identificar el archivo de configuración del sitio web <a name="step1"></a>
+### 1: Identificar el archivo de configuración del sitio web <a name="step1"></a>
 
 En el [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
@@ -67,7 +67,7 @@ Busque y abra el archivo de configuración de su sitio web:
 - Para un sitio web DRUPAL, haga clic en el directorio **"sites"** y luego en **"default"**. El archivo de configuración es **"settings.php"**;
 - Para un sitio web PRESTASHOP, haga clic en el directorio **"app"** y luego en **"config"**. El archivo de configuración es **"parameters.php"**.
 
-### Etapa 2: identificar la base de datos del sitio web <a name="step2"></a>
+### 2: Identificar la base de datos del sitio web <a name="step2"></a>
 
 Existen dos posibilidades:
 
@@ -89,7 +89,7 @@ Vuelva al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cl
 
 Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, vaya al [Etapa 3](#step3).
 
-En caso contrario, la base de datos del sitio web está asociada a un servicio [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+En caso contrario, la base de datos del sitio web está asociada a un servicio [Web Cloud Databases](/links/web/databases).
 
 En ese caso, deberá volver al archivo de configuración del sitio web para registrar el *nombre del servidor* y el *nombre de usuario* de la base de datos:
 
@@ -100,11 +100,11 @@ En ese caso, deberá volver al archivo de configuración del sitio web para regi
 
 A continuación, haga clic en `Bases de datos`{.action} en el apartado `Web Cloud`{.action}. 
 
-En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/), con el `Nombre del host`{.action}.
+En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [Web Cloud Databases](/links/web/databases), con el `Nombre del host`{.action}.
 
 En el área de cliente de OVHcloud, abra la pestaña `Usuario y permisos`{.action} para identificar también el `Nombre de usuario`{.action} de la base de datos.
 
-### Etapa 3: Cambiar la contraseña de la base de datos del sitio web en el archivo de configuración <a name="step3"></a>
+### 3: Cambiar la contraseña de la base de datos del sitio web en el archivo de configuración <a name="step3"></a>
 
 > [!primary]
 >
@@ -176,7 +176,7 @@ $databases['default']['default'] = array (
 
 Guarde el cambio.
 
-### Etapa 4: Cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos <a name="step4"></a>
+### 4: Cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos <a name="step4"></a>
 
 > [!primary]
 >
@@ -191,17 +191,38 @@ De nuevo, existen dos posibles situaciones:
 
 #### Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting <a name="case1"></a>
 
-En la sección `Alojamientos`{.action} del área de cliente, acceda a la pestaña `Bases de datos`{.action} que aparece a la derecha de la pantalla.
+Haga clic en las pestañas siguientes para ver cada una de las **5** etapas.
 
-![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-
-Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos del sitio web y seleccione `Cambiar la contraseña`{.action}.
-
-![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
-
-Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en el [etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
-
-![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos del sitio web y seleccione `Cambiar la contraseña`{.action}.
+>>
+>> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en la [sección 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
+>>
+>> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 #### Caso n° 2: la base de datos de su sitio web forma parte de una solución Web Cloud Databases. <a name="case2"></a>
 

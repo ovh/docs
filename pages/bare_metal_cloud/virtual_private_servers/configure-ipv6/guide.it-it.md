@@ -1,11 +1,11 @@
 ---
 title: "Configurare IPv6 su un server VPS"
 excerpt: "Come configurare IPv6 sul tuo VPS OVHcloud"
-updated: 2024-09-11
+updated: 2025-09-30
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+> Questo articolo riguarda la configurazione di indirizzi IPv6 principali su un'interfaccia pubblica. È inoltre possibile configurare gli indirizzi Additional IP sul VPS utilizzando [questa guida](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
 >
 
 ## Obiettivo
@@ -16,15 +16,15 @@ L’IPv6 è la versione più recente dell’*Internet Protocol*(IP). Ogni server
 
 > [!warning]
 >
-> OVHcloud mette a disposizione i server,  ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più”.
+> OVHcloud mette a disposizione i server,  ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further).
 > 
 
 ## Prerequisiti
 
-- Disporre di un [server VPS OVHcloud](https://www.ovhcloud.com/it/vps/){.external}
+- Disporre di un [server VPS OVHcloud](/links/bare-metal/vps)
 - Essere connesso al tuo VPS in SSH (accesso root) o tramite desktop remoto (Windows)
 - Possedere conoscenze base di rete
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external} o all'[API OVHcloud](https://api.ovh.com/)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) o all'[API OVHcloud](/links/api)
 
 ## Procedura
 
@@ -62,7 +62,12 @@ Nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 a
 
 #### Tramite le API OVHcloud <a name="viaapi"></a>
 
-Accedi al sito <https://api.ovh.com/console/> e inserisci il tuo identificativo OVHcloud. ed esegui le chiamate API indicate di seguito.
+Accedi alla pagina delle [API OVHcloud](/links/console):
+
+- Clicca su `Autentication`{.action} in alto a sinistra.
+- Clicca su `Login with OVHcloud SSO`{.action}.
+- Inserisci le tue credenziali OVHcloud.
+- Clicca sul pulsante `Authorize`{.action} per autorizzare le chiamate alle API da questo sito.
 
 Per ottenere l’indirizzo IPv6 assegnato al VPS:
 
@@ -82,7 +87,7 @@ Dopo aver recuperato gli indirizzi, continua allo Step 2: [Applica la configuraz
 
 ### Step 2: applicare la configurazione IPv6 <a name="applyipv6"></a>
 
-Una volta che disponi dei dati necessari per la configurazione dell’IPv6, accedi al VPS in SSH. Se hai bisogno di aiuto per questa operazione, consulta la guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external}.
+Una volta che disponi dei dati necessari per la configurazione dell’IPv6, accedi al VPS in SSH. Se hai bisogno di aiuto per questa operazione, consulta la guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 La configurazione IPv6 può essere applicata in diversi modi. Prosegui nella lettura di questa guida in base alle tue esigenze:
 
@@ -119,7 +124,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Esistono due metodi per configurare la tua rete in base al sistema operativo installato sul tuo server:
 
-- **Per Debian 10 e 11**: utilizza il [metodo basato sul file *interfaces*](#interfaces).
+- **Per Debian 11**: utilizza il [metodo basato sul file *interfaces*](#interfaces).
 
 - **Per Debian 12, Ubuntu 20.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
@@ -206,7 +211,7 @@ I file di configurazione di rete si trovano nella directory `/etc/netplan/`. Di 
 
 Se l'indirizzo IPv6 non è stato configurato, l'approccio migliore consiste nel creare un file di configurazione separato per configurare l'indirizzo IPv6 nella directory `/etc/netplan/`. In questo modo è possibile annullare le modifiche in caso di errore.
 
-È inoltre consigliabile modificare i permessi per il file appena creato. Per maggiori informazioni sui permessi dei file, consulta la [documentazione ufficiale di ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+È inoltre consigliabile modificare i permessi per il file appena creato. Per maggiori informazioni sui permessi dei file, consulta la [documentazione ufficiale di ubuntu](https://help.ubuntu.com/community/FilePermissions).
 
 Nel nostro esempio, il nome del file è `51-cloud-init-ipv6.yaml`:
 
@@ -482,6 +487,6 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 
 Per ripristinare la gestione automatica del server tramite cloud-Init, rimuovi il file creato o spostalo in un’altra cartella.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

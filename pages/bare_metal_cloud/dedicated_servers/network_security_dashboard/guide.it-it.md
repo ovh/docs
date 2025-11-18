@@ -1,21 +1,16 @@
 ---
 title: "Monitoraggio degli attacchi DDoS con il Network Security Dashboard"
 excerpt: "Scopri come navigare attraverso il dashboard di sicurezza di rete"
-updated: 2025-06-04
+updated: 2025-10-31
 ---
 
 ## Obiettivo
 
 Questa guida ti mostra il Dashboard di Sicurezza di Rete e ti fornisce una panoramica delle contromisure attivate dalla nostra infrastruttura di protezione DDoS quando viene rilevata un'attività di rete malevola. Puoi trovare dettagli su quali protezioni aggiuntive sono state attivate per mantenere attivi i tuoi servizi. Inoltre, i grafici del traffico sono disponibili sulla dashboard per i periodi di attività dei centri di pulitura, in modo da visualizzare meglio la situazione.
 
-> [!warning]
->
-> **Avviso**: la funzionalità "Scrubbing Center: modalità permanente" ha raggiunto la fine del ciclo di vita (EOL) e sarà disattivata definitivamente l'8 settembre 2025.
->
-
 ## Prerequisiti
 
-- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/it/vps/), [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud) cloud/), [Additional IP](/links/network/additional-ip), ecc.
+- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([Server Dedicato](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Istanza Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud)), [Additional IP](/links/network/additional-ip), ecc.
 - Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
@@ -53,8 +48,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.acti
 Le colonne corrispondono allo stato di protezione anti-DDoS (**Mitigation**), allo stato di Edge Network **Firewall** e **GAME firewall*** e alla disponibilità delle funzionalità e ai relativi stati.
 
 - Lo stato **Mitigazione** può essere:
-    - **Automatico** - Il centro di pulitura è in modalità **Automatico**. Si tratta della modalità di utilizzo consigliata, che reindirizza il traffico per un’analisi più approfondita quando necessario.
-    - **Permanente** - Il centro di pulitura è **abilitato in modo permanente**. Non è consigliabile attivarlo in modo permanente, a meno che non venga rilevato un jitter della latenza dovuto al reindirizzamento del traffico avanti e indietro.
+    - **Automatico** - Il centro di pulitura è in modalità **Automatico** e reindirizza il traffico per un’analisi più approfondita quando necessario.
     - **Forzato** - Indica che il centro di pulitura è in fase di **azione**.
 
 - La colonna **Firewall** indica lo stato di Edge Network Firewall, che può essere:
@@ -75,7 +69,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.acti
 
 Nella scheda **scrubbing center log** è possibile recuperare tutte le informazioni sugli attacchi rilevati in passato (o in corso).
 
-![red-line-attack](images/nsd_main_blur.png)
+![red-line-attack](images/nsd_main_blur.png){.thumbnail}
 
 Nella tabella sono presenti le seguenti colonne: 
 
@@ -84,6 +78,8 @@ Nella tabella sono presenti le seguenti colonne:
 - **IP di destinazione** - L'IP che è stato l'obiettivo dell'attacco
 - **Vettori di attacco** - Fornisce informazioni sui tipi di attacco rilevati, ad esempio UDP, TCP e così via.
 
+**Il periodo di conservazione dei dati per i log del centro di pulizia è di 1 anno.**
+
 > [!warning]
 >
 > Si noti che gli indirizzi IP sorgente per gli eventi rilevati non vengono visualizzati perché sono solitamente falsificati (gli attacchi DDoS possono puntare a fonti diverse da quelle da cui provengono davvero) e che tali informazioni sono fuorvianti o inutilizzabili.
@@ -91,9 +87,11 @@ Nella tabella sono presenti le seguenti colonne:
 
 Nella scheda **Traffic chart**, è possibile visualizzare un grafico che mostra il traffico verso il proprio indirizzo IP (bps o pps).
 
-![red-line-attack](images/nsd_graph_tab_blur.png)
+![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Presenta il traffico malevolo che è caduto (**in rosso**) e il traffico pulito recapitato al tuo indirizzo IP (**in verde**). Vengono inoltre visualizzate le statistiche di base relative alla mitigazione, ad esempio il numero di attacchi rilevati per un IP selezionato, la quantità di traffico (o pacchetti) pulito durante gli attacchi o il numero di volte che i centri di pulitura hanno eseguito un'azione per ispezionare il traffico (il numero di eventi) in un determinato periodo di tempo.
+
+**Il periodo di conservazione dei dati per il grafico del traffico è di 2 mesi.**
 
 ## FAQ
 
@@ -114,7 +112,7 @@ Questi dati sono disponibili solo per gli indirizzi IP pubblici durante gli even
 
 ### Il grafico del traffico per alcune posizioni nei registri del centro di pulitura non è disponibile.
 
-I dati dei grafici del traffico sono disponibili solo per le ultime due settimane, mentre le voci dei log possono essere riviste per l'anno precedente.
+I dati del grafico del traffico sono disponibili solo per gli ultimi due mesi, mentre le voci dei log possono essere visionate per l'ultimo anno.
 
 ### Un attacco al mio servizio persiste, come posso proteggere meglio il mio server?
 
@@ -171,4 +169,4 @@ In tutti i casi in cui sarà necessario apportare modifiche al nostro sistema an
 
 [Proteggere un server GAME con il firewall dell’applicazione](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

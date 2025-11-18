@@ -1,7 +1,7 @@
 ---
 title: "How to reset the Windows Administrator password with the Windows customer rescue system"
 excerpt: "Find out how to use the OVHcloud Windows rescue mode to reset the password of the Administrator account on a Windows dedicated server"
-updated: 2025-03-06
+updated: 2025-10-22
 ---
 
 ## Objective
@@ -11,6 +11,7 @@ This guide will help you to reset your `Administrator` account password with the
 ## Requirements
 
 - Microsoft Windows Server 2016 or greater installed on your [dedicated server](/links/bare-metal/bare-metal)
+- At least 16 GB of RAM installed on the server
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]

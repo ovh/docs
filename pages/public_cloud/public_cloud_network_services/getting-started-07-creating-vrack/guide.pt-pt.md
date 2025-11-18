@@ -35,7 +35,7 @@ Também poderá gerir a faturação dos seus serviços através da Área de Clie
 
 ### Interface Horizon
 
-Interface visual independente da OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} é a implementação inicial do painel de controlo da OpenStack, que fornece uma interface de utilizador web aos serviços OpenStack, incluindo Nova, Swift, Keystone, etc.
+Interface visual independente da OVHcloud, [Horizon](https://horizon.cloud.ovh.net/auth/login/) é a implementação inicial do painel de controlo da OpenStack, que fornece uma interface de utilizador web aos serviços OpenStack, incluindo Nova, Swift, Keystone, etc.
 
 Esta interface completa e técnica permite-lhe gerir a quase totalidade das ações OpenStack. Esta será uma das interfaces necessárias se deseja gerir mais de duas VLAN, adicionar interfaces de rede privadas às suas instâncias, gerir imagens personalizadas, etc..
 
@@ -47,14 +47,14 @@ Consulte o guia: [Criar um acesso à interface Horizon](/pages/public_cloud/publ
 
 ### APIv6 OVHcloud
 
-Cada ação que efetuar na Área de Cliente OVHcloud recorre às [APIv6 OVHcloud](https://api.ovh.com/).
+Cada ação que efetuar na Área de Cliente OVHcloud recorre às [APIv6 OVHcloud](/links/api).
 Pode mesmo ir mais longe nas API do que na sua Área de Cliente.
 
 A interface é menos visual que a Área de Cliente OVHcloud, mas permitir-lhe-á realizar um grande número de ações. Desta forma, poderá gerir e personalizar as suas VLAN, adicionar interfaces às suas instâncias ou ainda criar servidores altamente personalizados.
 
 Por vezes, será necessário recuperar várias informações antes da utilização de uma API específica.
 
-Pode simplesmente aceder às API a partir da [nossa página web](https://api.ovh.com/), mas também criar os seus scripts PHP ou Python para as contactar.
+Pode simplesmente aceder às API a partir da [nossa página web](/links/api), mas também criar os seus scripts PHP ou Python para as contactar.
 
 Assim, poderá automatizar livremente as tarefas de base através de scripts, otimizar as suas próprias funções, etc.
 
@@ -87,7 +87,7 @@ Poderá, em função das suas necessidades, utilizar as API dedicadas ao OpenSta
 >
 > Da mesma forma, algumas funcionalidades podem estar ausentes da API OpenStack de acordo com a versão do seu cliente e do seu sistema operativo.
 No âmbito deste manual, foi escolhido propor-lhe as alternativas mais simples e mais intuitivas.
-Pode consultar a [documentação oficial do OpenStack](https://docs.openstack.org/){.external} a qualquer momento, se pretender ir mais longe na sua utilização.
+Pode consultar a [documentação oficial do OpenStack](https://docs.openstack.org/) a qualquer momento, se pretender ir mais longe na sua utilização.
 >
 
 Para mais informações, consulte este guia: [Configuração do vRack Public Cloud com a ajuda do OpenStack CLI](/pages/public_cloud/public_cloud_network_services/getting-started-09-creating-vrack-with-openstack).
@@ -122,7 +122,7 @@ Na lista dos serviços elegíveis, selecione o projeto que deseja adicionar ao v
 
 ![Adicionar o projeto](images/addprojectvrack.png){.thumbnail}
 
-Para continuar a configuração do vRack a partir da Área de Cliente OVHcloud, prossiga a leitura deste guia a partir de [Criar uma VLAN no vRack a partir da Área de Cliente OVHcloud](./#criar-uma-rede-privada-a-partir-da-area-de-cliente-ovhcloud).
+Para continuar a configuração do vRack a partir da Área de Cliente OVHcloud, prossiga a leitura deste guia a partir de [Criar uma rede privada a partir da Área de Cliente OVHcloud](./#criar-uma-rede-privada-a-partir-da-área-de-cliente-ovhcloud).
 
 #### A partir das APIv6 OVHcloud
 
@@ -286,7 +286,7 @@ Clique [aqui](/pages/public_cloud/public_cloud_network_services/getting-started-
 
 #### Gestão das interfaces de rede a partir do OpenStack Horizon
 
-Ligue-se à interface [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} de acordo com o método indicado na [primeira parte deste guia](./#interface-horizon).
+Ligue-se à interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) de acordo com o método indicado na [primeira parte deste guia](./#interface-horizon).
 
 Ligue-se bem à sua zona de trabalho:
 

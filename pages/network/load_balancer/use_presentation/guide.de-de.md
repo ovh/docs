@@ -1,120 +1,108 @@
 ---
-title: Einführung zum OVH Loadbalancer 
-excerpt: In dieser Anleitung erhalten Sie einen ersten Überblick über die neue OVH Loadbalancer Lösung 
-updated: 2018-01-17
+title: Introduction to the OVHcloud Load Balancer
+excerpt: Discover the OVHcloud Load Balancer solution for distributing and securing your traffic
+updated: 2025-10-29
 ---
 
-## Einleitung
+## Objective
 
-Unser neues **OVH Loadbalancer** Angebot dient der Lastverteilung (engl. Load Balancing) und verbindet eine einfache Konfiguration mit maximaler Zuverlässigkeit. Konfigurieren Sie einfach Ihre Produkte mit dem OVH Loadbalancer. Wir kümmern uns um den Rest.
+The **OVHcloud Load Balancer** is a fully managed service designed to ensure high availability, performance, and scalability for your applications.
+Its main role is to distribute workloads across several servers or applications.
+Simply configure your services behind the Load Balancer — OVHcloud handles redundancy, security, and global traffic distribution.
 
-**Erfahren Sie jetzt alles Wichtige zum neuen OVH Loadbalancer Angebot.**
+## Requirements
 
-## Voraussetzungen
+- Access to the [OVHcloud Control Panel](/links/manager)
+- At least one service to balance (Dedicated Server, VPS, Public Cloud instance, etc.)
 
-- Keine spezifischen Voraussetzungen
+## Instructions
 
-## Beschreibung
+The Load Balancer leverages **industry-standard open-source technologies** to handle different traffic types:
 
- 
-Dieses neue Angebot basiert auf bewährten Open-Source-Lösungen: HAProxy für TCP-Traffic und Nginx für UDP-Traffic.
+| Type | Description | Advantages | Technology |
+|---|---|---|---|
+| HTTP/HTTPS | All web services and APIs | Optimized for L7 (application layer) processing, URL redirection, headers, ACLs | HAProxy |
+| TCP | Non-HTTP network services | Supports all TCP applications | HAProxy |
+| UDP | All UDP traffic | Supports all UDP applications | Nginx |
 
-Der OVH Loadbalancer bietet Ihnen Lastverteilung ohne Limits und funktioniert problemlos mit verschiedenen Protokollen: 
+### Key Features
 
-|Typ|Beschreibung|Vorteile|Technologie| 
-|---|---|---|---| 
-|HTTP|Für alle Webservices mit HTTP/HTTPS|Optimiert für L7-Verarbeitung (Anwendungsebene)|HAProxy| 
-|TCP|Für alle Netzwerkdienste, die kein HTTP verwenden|Unterstützt alle TCP-Anwendungen|HAProxy| 
-|UDP|Für alle Arten von UDP-Traffic|Unterstützt alle UDP-Anwendungen|Nginx|
+- **Built-in DDoS protection** across all traffic types
+- **Global Anycast network** for optimal latency and failover
+- **Advanced HTTP/HTTPS support**: redirections, headers, ACLs, etc.
+- **Additional IP and vRack compatibility**: improve availability and performance with advanced networking
+- **High availability**: isolated redundant instances ensure resilience
+- **Scalability**: add or remove servers and farms without downtime
 
-Folgende Leistungen sind bei dem neuen Dienst inklusive:
+### Architecture Overview
 
- - OVH DDoS-Schutz
- - Unterstützung verschiedener geografischer Zonen (Anycast)
- - erweiterte HTTP/HTTPS-Funktionen (Weiterleitungen, Header, ACL, …)
- - kompatibel mit Additional IP
- - vRack Unterstützung
- - Redundanz: Ihr OVH Loadbalancer läuft auf isolierten Instanzen, die ihrerseits auf komplett getrennter und redundanter Hardware laufen
+The Load Balancer consists of three main components:
 
-### Grundbestandteile
+| Component | Function |
+|---|---|
+| **Front-end** | Defines the entry protocol (HTTP/TCP/UDP) and listening port |
+| **Farm** | Distributes traffic from the front-end across servers |
+| **Server** | Handles inbound and outbound application traffic |
 
-- Das neue OVH Loadbalancer Angebot besteht aus drei wesentlichen Komponenten:
+![General diagram](images/diag_gen2025.png){.thumbnail}
 
-![Allgemein](images/diag_gen.png){.thumbnail}
+## Benefits
 
-|Komponente|Funktion| 
-|---|---| 
-|Frontend|Das Frontend bestimmt den Protokolltyp (HTTP/TCP/UDP) des OVH Loadbalancers. Außerdem enthält es den Listening-Port des Dienstes.| 
-|Farm|Die Farm empfängt den Traffic des Frontends und ist zuständig für die eigentliche Lastverteilung| 
-|Server|Die Server erhalten den verteilten Traffic und antworten über die Applikation|
+### Balance and Scale Seamlessly
 
-Mit diesen drei Grundbestandteilen, die gemeinsam den Loadbalancer bilden, können fast alle möglichen Loadbalancing-Methoden konfiguriert werden.
+Distribute workloads across multiple servers and scale horizontally without service interruption.
 
-### Was spricht für die Verwendung des OVH Loadbalancers?
+![Balance the load](images/distribute_load2025.png){.thumbnail}
 
-#### Traffic-Last verteilen
+### High Availability and Uptime
 
-Dies ist die zentrale Funktion eines jeden Lastverteilers, der OVH Loadbalancer kann jedoch viel mehr.
+Automatic health checks detect unresponsive servers and reroute traffic instantly, minimizing downtime.
 
-![Traffic-Last verteilen](images/distribute_load.png){.thumbnail}
+![Eliminate downtime](images/eliminate_downtimes2025.png){.thumbnail}
 
-#### Downtime verhindern
+### Simplified Maintenance
 
-Der OVH Loadbalancer erkennt automatisch, wenn ein Server nicht antwortet. In diesem Fall leitet er wenn möglich den für den betroffenen Server bestimmten Traffic auf einen anderen Server weiter. So wird das Problem behoben, ohne Ihre Webdienste zu beeinträchtigen.
+Place a farm or server in downtime mode for maintenance without impacting users, then reintegrate it seamlessly.
 
-![Downtimes verhindern](images/eliminate_downtimes.png){.thumbnail}
+![Make maintenance easier](images/facilitate_maintenance2025.png){.thumbnail}
 
-#### Ihre Infrastruktur nach Bedarf skalieren
+### Service Integration
 
-Sie können jederzeit und ohne Dienstunterbrechung Farmen, Frontends oder Server zu Ihrem OVH Loadbalancer hinzufügen oder entfernen.
+Easily combine with other OVHcloud services:
 
-![Ihre Infrastruktur flexibel skalieren](images/facilitate_maintenance.png){.thumbnail}
+- Public Cloud instances
+- VPS
+- Dedicated Servers
+- vRack private networking
 
-#### Wartungen vereinfachen
+![Combine your services](images/mix_and_match2025.png){.thumbnail}
 
-Für geplante Wartungen Ihrer Infrastruktur können Sie eine Farm ganz einfach in Downtime setzen, damit sie vorübergehend keinen Datenverkehr mehr empfängt. So können Sie leicht eingreifen und Ihren Server wieder hinzufügen, sobald die Wartung abgeschlossen ist.
+### Geographic Distribution (Anycast)
 
-![Wartungen vereinfachen](images/scale_easily.png){.thumbnail}
+Serve users worldwide with low latency and resilient routing.
 
-#### Dienste kombinieren
+![Anycast](images/anycast2025.png){.thumbnail}
 
-Sie können verschiedene OVH Dienstleistungen im Loadbalancer kombinieren, zum Beispiel:
+### Versatile Use Cases
 
-- Public Cloud Instanzen mit Additional IP
-- VPS mit Additional IP
-- Dedicated Server mit Additional IP
-- vRack
+Support multiple services over HTTP(S), TCP, and UDP traffic.
 
-![Dienste kombinieren](images/mix_and_match.png){.thumbnail}
+#### Email server
 
-#### Anycast
+Balance the load between your email servers.
 
-Sie können die Last auf verschiedene geografische Zonen verteilen:
+![Mail](images/mail2025.png){.thumbnail}
 
-![Anycast](images/anycast.png){.thumbnail}
+#### Databases
 
-#### Jede Art von Traffic verteilen
+Balance your databases, and make them redundant.
 
-Der OVH Loadbalancer ist nicht länger auf HTTP-Traffic begrenzt. Sie können ihn auch für alle Arten von TCP- oder UDP-Traffic verwenden.
+![Databases](images/database2025.png){.thumbnail}
 
-#### E-Mail-Server
+## Go Further
 
-Verteilen Sie die Last zwischen Ihren E-Mail-Servern:
+- [Find out more about load balancing (Wikipedia)](https://en.wikipedia.org/wiki/Load_balancing)
+- [HAProxy official site](http://www.haproxy.org/#desc)
+- [Nginx documentation](https://nginx.org/en/docs/)
 
-![E-Mail](images/mail.png){.thumbnail}
-
-#### Datenbanken
-
-Sorgen Sie für gleichmäßige Verteilung und Redundanz Ihrer Datenbanken:
-
-![Database](images/database.png){.thumbnail}
-
-## Weiterführende Informationen
-
-[Mehr zum Thema Lastverteilung](http://ovh.to/PhFmeK8){.external}.
-
-[Mehr zum Thema HAProxy](http://www.haproxy.org/#desc){.external}.
-
-[Mehr zum Thema Nginx](https://de.wikipedia.org/wiki/Nginx){.external}.
-
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

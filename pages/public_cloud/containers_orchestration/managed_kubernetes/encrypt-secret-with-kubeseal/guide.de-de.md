@@ -18,7 +18,7 @@ In this guide you will:
 - Deploy Sealed Secrets in your OVHcloud Managed Kubernetes
 - Generate and deploy a SealedSecret
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) to reinitialize your cluster before following this tutorial.
 
 ## Kubernetes Secrets
 
@@ -404,6 +404,6 @@ helm uninstall sealed-secrets-controller sealed-secrets/sealed-secrets --namespa
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

@@ -1,11 +1,11 @@
 ---
 title: "IPv6 auf einem VPS einrichten"
 excerpt: "Erfahren Sie hier, wie Sie IPv6 auf Ihrem OVHcloud VPS konfigurieren"
-updated: 2024-09-11
+updated: 2025-09-30
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+> In dieser Anleitung wird die Konfiguration primärer IPv6-Adressen auf einer öffentlichen Schnittstelle erläutert. Sie können auch Additional IP-Adressen auf Ihrem VPS konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing) verwenden.
 >
 
 ## Ziel
@@ -17,15 +17,15 @@ IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wi
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](/links/community) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [OVHcloud VPS](https://www.ovhcloud.com/de/vps/).
+- Sie verfügen über einen [OVHcloud VPS](/links/bare-metal/vps).
 - Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder RDP (Windows).
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) / die [OVHcloud API](https://api.ovh.com/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) / die [OVHcloud API](/links/api).
 
 ## In der praktischen Anwendung
 
@@ -63,7 +63,12 @@ Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway wer
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 
-Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein. 
+Öffnen Sie die [OVHcloud API-Konsole](/links/console).
+
+- Klicken Sie oben links auf `Authentication`{.action}.
+- Wählen Sie `Login with OVHcloud SSO`{.action}.
+- Geben Sie Ihre Login-Daten für OVHcloud ein.
+- Klicken Sie auf `Authorize`{.action}, um die Ausführung von API-Aufrufen über die Konsole zu erlauben.
 
 Verwenden Sie diesen Aufruf, um die zu Ihrem Server gehörige IPv6-Adresse zu erhalten:
 
@@ -120,7 +125,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Es gibt zwei Methoden, um Ihr Netzwerk entsprechend dem auf Ihrem Server installierten Betriebssystem zu konfigurieren:
 
-- **Für Debian 10 und 11**: Verwenden Sie [die auf der Datei *interfaces* basierende Methode](#interfaces).
+- **Für Debian 11**: Verwenden Sie [die auf der Datei *interfaces* basierende Methode](#interfaces).
 
 - **Für Debian 12, Ubuntu 20.04 und spätere Versionen**: Verwenden Sie [die *Netplan*-Methode](#netplan).
 
@@ -203,7 +208,7 @@ Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`. 
 
 Wenn die IPv6-Adresse noch nicht konfiguriert wurde, sollten Sie eine separate Konfigurationsdatei erzeugen, um IPv6-Adressen im Verzeichnis `/etc/netplan/` zu konfigurieren. Auf diese Weise können Sie Änderungen im Falle eines Fehlers leicht rückgängig machen.
 
-Außerdem empfehlen wir, die Berechtigungen für die neu erstellte Datei anzupassen. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+Außerdem empfehlen wir, die Berechtigungen für die neu erstellte Datei anzupassen. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions).
 
 In unserem Beispiel heißt diese Datei `51-cloud-init-ipv6.yaml`:
 

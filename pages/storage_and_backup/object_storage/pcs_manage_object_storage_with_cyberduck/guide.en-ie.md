@@ -16,13 +16,13 @@ If you're not familiar with managing storage through command lines, there are so
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
 - [Cyberduck](https://cyberduck.io/) installed on your computer.
-- your username (*OS_USERNAME*) and project credentials (*OS_PROJECT_NAME* or *OS_TENANT_NAME*). Retrieve them by downloading the OpenRC file from the [Users and Roles](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables#step-1-retrieve-the-variables) menu in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- your username (*OS_USERNAME*) and project credentials (*OS_PROJECT_NAME* or *OS_TENANT_NAME*). Retrieve them by downloading the OpenRC file from the [Users and Roles](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables#step-1-retrieve-the-variables) menu in the [OVHcloud Control Panel](/links/manager).
 - your OpenStack user password.
 
 In case you have forgotten your OpenStack user password, you can change it by following [this guide](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
@@ -58,7 +58,7 @@ Then click `Connect`{.action}. Once you're logged in, you will have access to th
 
 ## Go further
 
-[Cyberduck documentation](https://trac.cyberduck.io/wiki/help/en){.external}
+[Cyberduck documentation](https://trac.cyberduck.io/wiki/help/en)
 
 [Getting started with the Swift API](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

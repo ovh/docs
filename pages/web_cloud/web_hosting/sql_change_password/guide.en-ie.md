@@ -1,7 +1,7 @@
 ---
 title: "Changing the password for a Web Hosting plan’s database"
 excerpt: Find out how to change the password for a database created as part of a Web Hosting plan
-updated: 2025-05-23
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -20,12 +20,12 @@ Until this change is made **in both locations**, your site will display a "[data
 
 For this reason, if you would like to change your database password, you will need to carry out  **all of the operations** listed in this guide. If you have any doubts about how to proceed, contact your webmaster or contact a [specialised service provider](/links/partner).
 
-There are four steps to changing your website’s database password:
+Changing your website’s database password involves four parts:
 
-- [Step 1: identify your website configuration file](#step1)
-- [Step 2: identify your website database](#step2)
-- [Step 3: change the password for your website database in its configuration file](#step3)
-- [Step 4: change the password for your website database on the database server](#step4)
+- [1: Identify your website configuration file](#step1)
+- [2: Identify your website database](#step2)
+- [3: Change the password for your website database in its configuration file](#step3)
+- [4: Change the password for your website database on the database server](#step4)
 
 **This guide explains how to change a database password securely.**
 
@@ -39,12 +39,12 @@ There are four steps to changing your website’s database password:
 
 - An OVHcloud [Web Hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [database associated with your hosting](/links/web/hosting-options-startsql) or a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/)
+- A [database associated with your hosting](/links/web/hosting-options-startsql) or a [Web Cloud Databases](/links/web/databases)
 - FTP login details to log in to your [hosting’s storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions
 
-### Step 1: Identify your website’s configuration file <a name="step1"></a>
+### 1: Identify your website’s configuration file <a name="step1"></a>
 
 In the [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
 
@@ -66,7 +66,7 @@ Locate and open your site's configuration file:
 - For a DRUPAL site, click on the "**sites**" folder, then "**default**". The configuration file is "**settings.php**".
 - For a PRESTASHOP website, click on the "**app**" folder, then "**config**". The configuration file is "**parameters.php**".
 
-### Step 2: Identify your website’s database <a name="step2"></a>
+### 2: Identify your website’s database <a name="step2"></a>
 
 There are two possible cases:
 
@@ -88,7 +88,7 @@ Then go back to the [OVHcloud Control Panel](/links/manager) and open the `Web C
 
 If you have found the database name listed in the configuration file in this section of the OVHcloud Control Panel, go to [step 3](#step3).
 
-Otherwise, your website’s database is linked to a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) solution.
+Otherwise, your website’s database is linked to a [Web Cloud Databases](/links/web/databases) solution.
 
 You will need to go back to your website’s configuration file to note the *server name* and *database username*:
 
@@ -99,11 +99,11 @@ You will need to go back to your website’s configuration file to note the *ser
 
 Then click in the `Databases`{.action} section of the `Web Cloud`{.action} section.
 
-For [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) solutions, open the tab `General information`{.action}. Check for the database server name identified previously under `Host name`{.action}.
+For [Web Cloud Databases](/links/web/databases) solutions, open the tab `General information`{.action}. Check for the database server name identified previously under `Host name`{.action}.
 
 In this section of the OVHcloud Control Panel, go to the `Users and rights`{.action} tab to find your database’s `Username`{.action}.
 
-### Step 3: Change the password for your website’s database in its configuration file <a name="step3"></a>
+### 3: Change the password for your website’s database in its configuration file <a name="step3"></a>
 
 > [!primary]
 >
@@ -175,7 +175,7 @@ $databases['default']['default'] = array (
 
 Save this change.
 
-### Step 4: Change the password for your website’s database on the database server <a name="step4"></a>
+### 4: Change the password for your website’s database on the database server <a name="step4"></a>
 
 > [!primary]
 >
@@ -186,21 +186,40 @@ Again, two cases are possible:
 
 - If your database is located in the section of the [OVHcloud Control Panel](/links/manager) that is dedicated to your [Web Hosting plan](/links/web/hosting), follow [these instructions](#case1).
 
-- If your database is located in the section of the [OVHcloud Control Panel](/links/manager) dedicated to your [Web Cloud Databases solutions](https://www.ovh.ie/cloud/cloud-databases/), follow [these instructions](#case2).
+- If your database is located in the section of the [OVHcloud Control Panel](/links/manager) dedicated to your [Web Cloud Databases solutions](/links/web/databases), follow [these instructions](#case2).
 
 #### Case 1: Your website’s database is part of your hosting plan <a name="case1"></a>
 
-In the `Hosting Plans`{.action} section of the OVHcloud Control Panel, go to the `Databases`{.action} tab on the right-hand side of your screen:
-
-![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-
-Next, click on the three dots to the right of your website’s database, then on `Change password`{.action}.
-
-![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
-
-In the window that pops up, enter your database’s new password (defined at [step 3](#step3)), confirm it, then click on `Confirm`{.action}.
-
-![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `Databases`{.action} tab.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Next, click on the three dots to the right of your website’s database, then on `Change password`{.action}.
+>>
+>> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
+>>
+> **Step 5**
+>>
+>> In the window that pops up, enter your database’s new password (defined at [part 3](#step3)), confirm it, then click on `Confirm`{.action}.
+>>
+>> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 #### Case 2: Your website’s database is part of a Web Cloud Databases solution <a name="case2"></a>
 

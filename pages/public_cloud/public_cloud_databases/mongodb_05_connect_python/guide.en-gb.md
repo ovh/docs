@@ -14,8 +14,8 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.5.
@@ -48,7 +48,7 @@ To interact with your MongoDB instance using Python, your development environmen
 
 This guide will focus on the use of **PyMongo**, which covers most of the use cases.
 
-Please follow the official [MongoDB documentation for Python drivers](https://docs.mongodb.com/drivers/python/){.external} to get the latest information.
+Please follow the official [MongoDB documentation for Python drivers](https://docs.mongodb.com/drivers/python/) to get the latest information.
 
 At the end of the documentation page for PyMongo, you will find a **compatibility matrix** between Python versions and PyMongo driver.
 Follow this accordingly.
@@ -73,7 +73,7 @@ This is compliant with our current MongoDB 5.0 instance.
 ### Configure your MongoDB instance to accept incoming connections
 
 In order to be able to connect to your MongoDB instance, you will need to configure your instance to accept incoming connections from the IP address of your Python environment.
-If you don't know how to retrieve your IP, please visit a website such as [myip.ovh](https://myip.ovh/){.external} from the station hosting the Python environment.
+If you don't know how to retrieve your IP, please visit a website such as [myip.ovh](https://myip.ovh/) from the station hosting the Python environment.
 
 Once you know the IP address, follow the steps from this guide : [Configure your MongoDB instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel).
 
@@ -168,6 +168,6 @@ Congratulations! Everything is working properly.
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,21 +1,16 @@
 ---
 title: "Monitoring des attaques DDoS avec le Network Security Dashboard"
 excerpt: "Apprenez à naviguer dans le Network Security Dashboard"
-updated: 2025-06-04
+updated: 2025-10-31
 ---
 
 ## Objectif
 
 Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Network Security Dashboard*), un outil d'aperçu de ce qui se passe lorsqu'une activité réseau malveillante est détectée et que l'infrastructure de protection DDoS est impliquée. Vous y trouverez des détails sur ce qui a déclenché la mise en place de protections supplémentaires pour maintenir vos services opérationnels. Des graphiques de trafic correspondant aux périodes d’activité du centre de nettoyage (*Scrubbing Center*) y sont également disponibles afin de mieux visualiser la situation.
 
-> [!warning]
->
-> **Avertissement** : la fonctionnalité « Centre de Scrubbing: mode permanent » atteint sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
->
-
 ## Prérequis
 
-- Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/fr-ca/vps/), [Instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Instance Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -53,8 +48,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `N
 Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scrubbing (**Mitigation**), du Edge Network **Firewall** et du **GAME firewall**.
 
 - L'état **Mitigation** peut être :
-    - **Automatique** - Le centre de nettoyage est en mode **automatique**. Il s'agit du mode recommandé, car il redirige le trafic pour une analyse plus approfondie lorsque cela est nécessaire.
-    - **Permanent**** - Le centre de nettoyage est **activé en permanence**. Il est déconseillé de l'activer de manière permanente, sauf en cas de gigue (*jitter*) de latence due à un réacheminement du trafic en va-et-vient.
+    - **Automatique** - Le centre de nettoyage est en mode **automatique**, et redirige le trafic pour une analyse plus approfondie lorsque cela est nécessaire.
     - **Forcé** - Ceci indique que le centre de nettoyage est **en train d'effectuer une action**.
 
 - La colonne **Firewall** indique l'état du Edge Firewall Network qui peut être :
@@ -84,6 +78,8 @@ Dans le tableau, les colonnes suivantes sont présentes :
 - **IP de destination** - l'IP qui a été la cible de l'attaque.
 - **Vecteurs d’attaque** - gournit des informations sur les types d’attaques détectés, tels que les attaques UDP ou TCP, etc.
 
+**La durée de rétention des logs du centre de nettoyage est d'un an.**
+
 > [!warning]
 >
 > Veuillez noter que les adresses IP sources des événements détectés ne sont pas affichées. C'est intentionnel de notre part car, la plupart du temps, elles sont usurpées (*spoofed*) (les attaques DDoS peuvent pointer vers des sources autres que celles dont elles proviennent réellement) et ces informations seraient trompeuses ou inutilisables.
@@ -94,6 +90,8 @@ Dans l'onglet **Graphique du trafic**, vous pouvez voir un graphique illustrant 
 ![red-line-attack](images/nsd_graph_tab_blur.png)
 
 Il présente le trafic malveillant qui a été supprimé (**en rouge**) et le trafic « propre » livré à votre adresse IP (**en vert**). Des statistiques de mitigation de base sont également affichées, c'est-à-dire : combien d'attaques ont été détectées pour une IP sélectionnée, quel volume de trafic (ou de paquets) a été nettoyé pendant les attaques ou combien de fois les centres de nettoyage ont entrepris une action pour inspecter votre trafic (nombre d'événements) dans une période de temps sélectionnée.
+
+**La durée de rétention des données de trafic est de deux mois.**
 
 ## FAQ
 
@@ -114,7 +112,7 @@ Ces données ne sont disponibles que pour les adresses IP publiques lors des év
 
 ### Je ne peux pas afficher le graphique de trafic pour certains périodes dans les logs du centre de nettoyage
 
-Les données du Network Security Dashboard ne sont disponibles que pour les deux dernières semaines, tandis que les entrées du journal peuvent être examinées pour l'année écoulée.
+Le graphique de trafic n'est disponible que pour les deux derniers mois, tandis que les logs peuvent être examinés pour l'année écoulée.
 
 ### Je suis attaqué, comment protéger au mieux mon serveur ?
 

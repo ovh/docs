@@ -49,7 +49,7 @@ W wyświetlonym oknie znajdziesz parametry takie jak:
 - Reguły bezpieczeństwa logowania
 - Opcje monitorowania zapory sieciowej serwera
 
-Wybierając ` `{.action}Reguły ruchu przychodzącego, wyświetlają się wszystkie wstępnie skonfigurowane reguły Windows Server związane z połączeniami sieciowymi i przychodzącymi pakietami. Niektóre z tych reguł nie są domyślnie aktywowane. Jeśli chcesz je włączyć, kliknij prawym przyciskiem myszy regułę i wybierz opcję `Włącz regułę`{.action}.
+Wybierając `Reguły ruchu przychodzącego`{.action}, wyświetlają się wszystkie wstępnie skonfigurowane reguły Windows Server związane z połączeniami sieciowymi i przychodzącymi pakietami. Niektóre z tych reguł nie są domyślnie aktywowane. Jeśli chcesz je włączyć, kliknij prawym przyciskiem myszy regułę i wybierz opcję `Włącz regułę`{.action}.
 
 ![Step1](images/step2.PNG){.thumbnail}
 
@@ -114,4 +114,4 @@ Następnie możesz wprowadzić zmiany w zakresie bezpieczeństwa nowej reguły u
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

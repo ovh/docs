@@ -12,7 +12,7 @@ updated: 2024-02-27
 >
 
 In the [OVHcloud Control Panel](/links/manager), it is possible to specify a boot mode among a predefined list: primary disk or rescue.<br>
-With the [OVHcloud API](https://api.ovh.com/), you can define custom scripts.
+With the [OVHcloud API](/links/api), you can define custom scripts.
 
 Using a custom script can be useful in the following use cases:
 
@@ -23,7 +23,7 @@ Using a custom script can be useful in the following use cases:
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) **ready to be booted/rebooted** in your OVHcloud account.
-- Access to the [OVHcloud API](https://api.ovh.com/).
+- Access to the [OVHcloud API](/links/api).
 
 > [!warning]
 >
@@ -83,7 +83,7 @@ You can now reboot your server and it will use your [iPXE](https://ipxe.org/) to
 
 ### Changing boot modes <a name="leaveIpxeScript"></a>
 
-You can now switch back to disk or rescue boot from the [OVHcloud Control Panel](/links/manager) (see our guide on [Activating and using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)), or the [OVHcloud API](https://api.ovh.com/).
+You can now switch back to disk or rescue boot from the [OVHcloud Control Panel](/links/manager) (see our guide on [Activating and using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)), or the [OVHcloud API](/links/api).
 
 #### Switch to disk <a name="switchToDisk"></a>
 

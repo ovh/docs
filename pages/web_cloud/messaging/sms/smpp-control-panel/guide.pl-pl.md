@@ -21,7 +21,7 @@ W Panelu klienta OVHcloud możesz odnaleźć dane do logowania SMPP, zmienić ha
 ## Wymagania początkowe
 
 - Posiadanie [konta SMS SMPP OVHcloud](https://www.ovhcloud.com/pl/sms/api-sms/)
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części `Telecom`{.action} następnie `SMS`{.action}.
+- Zalogowanie do [Panelu klienta OVHcloud](/links/manager) w części `Telecom`{.action} następnie `SMS`{.action}.
 
 ## W praktyce
 

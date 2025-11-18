@@ -1,21 +1,16 @@
 ---
 title: "Monitoring ataków DDoS za pomocą Network Security Dashboard"
 excerpt: "Dowiedz się, jak nawigować za pomocą pulpitu nawigacyjnego zabezpieczeń sieciowych"
-updated: 2025-06-04
+updated: 2025-10-31
 ---
 
 ## Wprowadzenie
 
 Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci. Zawiera on przegląd środków zaradczych uruchamianych przez infrastrukturę ochrony Anty-DDoS w przypadku wykrycia złośliwej aktywności sieciowej. Dowiedz się, jakie dodatkowe zabezpieczenia należy wdrożyć, aby zapewnić ciągłość działania usług. Co więcej, na dashboardzie dostępne są wykresy ruchu pozwalające na lepszą wizualizację sytuacji podczas operacji centrum kontroli.
 
-> [!warning]
->
-> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
->
-
 ## Wymagania początkowe
 
-- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pl/vps/), [Public Cloud instance](https://www.ovhcloud.com/pl/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip) itd.)
+- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip) itd.)
 - Dostęp do [OVHcloud Control Panel](/links/manager)
 
 ## W praktyce
@@ -50,11 +45,10 @@ W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}. Upewnij się, że `Tryb zaawansowany` jest włączony, aby sprawdzić stan infrastruktury anty-DDoS i konfigurację jej komponentów
 
-Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Network **Firewall* i **GAME firewall** charakteryzują się dostępnością i statusami.
+Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Network **Firewall** i **GAME firewall** charakteryzują się dostępnością i statusami.
 
 - Stan **Filtrowanie** może być następujący:
-    - **Automatycznie** - Centrum czyszczenia jest w trybie **automatycznym**. Jest to tryb zalecany do użycia. W razie potrzeby przekierowuje ruch w celu głębszej analizy.
-    - **Stałe** - Centrum czyszczenia jest **trwale włączone**. Nie zalecamy włączania połączenia w sposób stały, o ile nie zostanie zanotowane fluktuacja czasu odpowiedzi spowodowane przekierowaniem ruchu w tę i z powrotem.
+    - **Automatycznie** - Centrum czyszczenia jest w trybie **automatycznym** i w razie potrzeby przekierowuje ruch w celu głębszej analizy.
     - **Wymuszone** - Oznacza to, że centrum oczyszczania jest **podejmowane działanie** teraz.
 
 - Kolumna **Firewall** wskazuje stan Edge Network Firewall, który może być:
@@ -75,7 +69,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.ac
 
 Karta **dziennik centrum oczyszczania** umożliwia pobranie wszystkich informacji o atakach wykrytych w przeszłości (lub w toku).
 
-![red-line-attack](images/nsd_main_blur.png)
+![red-line-attack](images/nsd_main_blur.png){.thumbnail}
 
 W tabeli występują następujące kolumny: 
 
@@ -84,6 +78,8 @@ W tabeli występują następujące kolumny:
 - **IP docelowe** - IP, które było celem ataku.
 - **Wektory ataków** - Dostarcza informacji o wykrytych typach ataków, takich jak ataki UDP lub TCP, itp.
 
+**Okres przechowywania danych dla logów centrum oczyszczania wynosi 1 rok.**
+
 > [!warning]
 >
 > Uwaga: źródłowe adresy IP dla wykrytych zdarzeń nie są wyświetlane, ponieważ są zazwyczaj zafałszowane (ataki DDoS mogą wskazywać na inne źródła niż te, które w rzeczywistości pochodzą z danego serwera). Informacje te mogą być mylące lub nie nadawać się do użytku.
@@ -91,9 +87,11 @@ W tabeli występują następujące kolumny:
 
 W karcie **Traffic chart** możesz wyświetlić wykres przedstawiający ruch do Twojego adresu IP (bps lub pps).
 
-![red-line-attack](images/nsd_graph_tab_blur.png)
+![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Jest to złośliwy ruch, który został porzucony (**na czerwono**) i ruch wyczyszczony dostarczony do Twojego adresu IP (**zielony**). Dostępne są również podstawowe statystyki mitygacji, czyli: ile ataków zostało wykrytych dla wybranego adresu IP, ile ruchu (lub pakietów) zostało oczyszczonych podczas ataku lub ile razy centra szybkiej kontroli podjęły działanie w celu sprawdzenia ruchu (liczba zdarzeń) w wybranym okresie czasu.
+
+**Okres przechowywania danych dla wykresu ruchu wynosi 2 miesiące.** 
 
 ## FAQ
 
@@ -114,7 +112,7 @@ Dane te są dostępne wyłącznie dla publicznych adresów IP w przypadku wykryc
 
 ### Wykres ruchu dla niektórych pozycji w dziennikach centrum oczyszczania jest niedostępny.
 
-Dane z wykresów ruchu dostępne są tylko w ciągu ostatnich dwóch tygodni, a wpisy w dziennikach mogą być weryfikowane w ciągu ostatniego roku.
+Dane wykresu ruchu są dostępne tylko dla ostatnich dwóch miesięcy, podczas gdy wpisy w logach można przeglądać przez ostatni rok.
 
 ### Atak na moją usługę trwa, w jaki sposób mogę lepiej chronić swój serwer?
 
@@ -171,4 +169,4 @@ W każdym przypadku, kiedy konieczne będą zmiany w naszym systemie Anty-DDoS, 
 
 [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

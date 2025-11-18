@@ -31,7 +31,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 **Quels sont les logs d'un Load Balancer Public Cloud ?**
 
-Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wiki/HAProxy){.external} (le composant open source utilisé pour la répartition de charge).
+Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wiki/HAProxy) (le composant open source utilisé pour la répartition de charge).
 
 ### Contenu des logs pour listeners TCP : `TCP`, `HTTP`,  `TERMINATED_HTTPS`, `HTTPS`
 
@@ -53,7 +53,7 @@ Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wik
 | project_id | ID du projet Public Cloud auquel appartient le Load Balancer | uuid |
 | region | La région Public Cloud à laquelle appartient le load balancer | Chaine (*String*) |
 | tcp_total_session_duration_time_int | Durée en millisecondes pendant laquelle la session TCP a été ouverte lorsque cette demande est effectuée | *Integer* |
-| termination_state | L'indicateur de fin de session : 2 lettres pour TCP, 4 lettres pour HTTP tous les détails sur [page de documentation HAProxy](https://docs.haproxy.org/2.6/configuration.html#8.5){.external}| Chaine (*String*) (par exemple « ---- ») |
+| termination_state | L'indicateur de fin de session : 2 lettres pour TCP, 4 lettres pour HTTP tous les détails sur [page de documentation HAProxy](https://docs.haproxy.org/2.6/configuration.html#8.5)| Chaine (*String*) (par exemple « ---- ») |
 | timestamp | Horodatage d'émission du journal | Chaine (*String*) |
 
 ### Contenu supplémentaire pour les listeners `HTTP` & `TERMINATED_HTTPS`
@@ -177,7 +177,7 @@ Maintenant que vos logs sont ingérés et stockés dans votre flux de données L
 - Depuis votre espace client, récupérez l'identifiant LDP (ex: logs-xxxx) et son mot de passe sur la page d'accueil de votre compte Logs Data Platform. Vous pouvez vous référer à la documentation [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Ouvrez l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est https://gra1.logs.ovh.com/).
 - Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
-- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
+- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html) pour plus de détails sur la syntaxe de recherche.
 
 Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec Logs Data Platform, y compris sur la façon de :
 
@@ -202,6 +202,6 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

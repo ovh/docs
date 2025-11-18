@@ -25,7 +25,7 @@ Per accedere al tuo server in [modalità Rescue OVHcloud](/pages/bare_metal_clou
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](/links/bare-metal/vps) nel proprio account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
@@ -72,4 +72,4 @@ A questo punto hai accesso al server con la tua nuova coppia di chiavi SSH.
 
 [VPS modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

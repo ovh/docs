@@ -4,6 +4,11 @@ excerpt: "Scopri come ottimizzare la sicurezza del tuo account OVHcloud, gestire
 updated: 2025-05-22
 ---
 
+> [!success]
+> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
+> Condividi con noi le tue opinioni e idee.<br>
+> [Accedi al sondaggio.](https://s.elq.fr/ovhext/DItXnvw)
+
 ## Obiettivo
 
 La gestione dei tuoi servizi e dati avviene principalmente tramite lo Spazio Cliente OVHcloud.
@@ -111,11 +116,11 @@ Una volta inseriti tutti i dati, clicca sul pulsante `Conferma`{.action}.
 
 #### Esercita i tuoi diritti sui tuoi dati personali
 
-In conformità con il Regolamento generale sulla protezione dei dati (GDPR), è possibile esercitare i propri diritti in materia di protezione dei dati personali, compilando[questo form](https://www.ovh.it/protezione-dati-personali/esercita-i-tuoi-diritti){.external}.
+In conformità con il Regolamento generale sulla protezione dei dati (GDPR), è possibile esercitare i propri diritti in materia di protezione dei dati personali, compilando [questo form](https://www.ovh.it/protezione-dati-personali/esercita-i-tuoi-diritti).
 
 #### Elimina un account OVHcloud
 
-Per eliminare il tuo account OVHcloud e i dati ad esso associati, compila [il form per l'esercizio dei diritti GDPR](https://www.ovh.it/protezione-dati-personali/esercita-i-tuoi-diritti){.external} e scegli il "Diritto di cancellazione".
+Per eliminare il tuo account OVHcloud e i dati ad esso associati, compila [il form per l'esercizio dei diritti GDPR](https://www.ovh.it/protezione-dati-personali/esercita-i-tuoi-diritti) e scegli il "Diritto di cancellazione".
 
 > [!warning]
 >
@@ -165,6 +170,6 @@ Se riscontri un'attività sospetta sul tuo account, [contatta il supporto OVHclo
 
 [Accedi allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Se la connessione allo Spazio Cliente OVH non funziona](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
+[Se la connessione allo Spazio Cliente non funziona](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Contatta la nostra [Community di utenti](/links/community).

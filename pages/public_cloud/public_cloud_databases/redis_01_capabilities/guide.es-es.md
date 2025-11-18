@@ -1,12 +1,12 @@
 ---
-title: Caching/Valkey - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Databases for Caching/Valkey
-updated: 2025-05-05
+title: Valkey - Capabilities and Limitations
+excerpt: Discover the capabilities and limitations of Public Cloud Databases for Valkey
+updated: 2025-07-31
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases for Caching/Valkey offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases for Valkey offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
@@ -21,38 +21,38 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
 Database nodes have to be in the same region. Multi-AZ is currently not supported.
 
-### Caching/Valkey versions
+### Valkey versions
 
 The Public Cloud Databases offer uses the following Redis® open source and Valkey versions:
 
-- Redis® open source 7.2
 - Valkey 7.2
 - Valkey 8.0
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Redis® release cycle on their official page: <https://redis.io/topics/releases>
 
-### Caching/Valkey clients
+### Valkey clients
 
-You can use any of the [clients recommended by Redis®](https://redis.io/clients){.external} to access your instance.
+You can use any of the [clients recommended by Redis®](https://redis.io/clients) to access your instance.
 
 ### Plans
 
 Two plans are available:
 
 - *Essential*
-- *Business*
+- *Business/Production*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes |
-| ------------ | -------------------------- | ---------------- |
-| *Essential*  | 1                          | No               |
-| *Business*   | 2                          | No               |
+| Plan                  | Number of nodes by default | Additional nodes |
+| --------------------- | -------------------------- | ---------------- |
+| *Essential*           | 1                          | No               |
+| *Business/Production* | 2                          | No               |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
@@ -62,15 +62,13 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
-- **Business**: the cluster is delivered with 2 nodes by default.
+- **Business/Production**: the cluster is delivered with 2 nodes by default.
 
 #### License type
 
-Redis® open source software prior version 7.4 is under the 3-Clause-BSD license, a liberal open-source license.
+Valkey is provided under BSD 3-Clause License.
 
-Redis® open source software starting from version 7.4, Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model prohibits OVHcloud, and any other service provider, from offering these softwares and modules to third parties as a service. So **these softwares and modules are not available**.
-
-More information on <https://redis.com/legal/licenses/>.
+More information on <https://valkey.io/topics/license/>.
 
 ### Hardware resources
 
@@ -79,7 +77,7 @@ For information on node types and pricing, please refer to the [price page](http
 ### Features
 
 #### Network
-Caching/Valkey clusters are reachable through default port 20182.
+Valkey clusters are reachable through default port 20182.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
@@ -102,7 +100,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for Caching/Valkey depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
+The number of simultaneous connections in Public Cloud Databases for Valkey depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
 
 So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672 simultaneous connections.
 
@@ -114,7 +112,7 @@ You can further customise your service by using advanced parameters. See the [Ad
 
 *Essential* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 1 day.
 
-*Business* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 3 days.
+*Business/Production* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 3 days.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
@@ -171,6 +169,6 @@ Here is the list of unsupported commands:
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

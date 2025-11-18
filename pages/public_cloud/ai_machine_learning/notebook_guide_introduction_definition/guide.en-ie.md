@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Getting started
 excerpt: Learn how to simply bootstrap an AI Notebook
-updated: 2024-12-10
+updated: 2025-11-17
 ---
 
 ## Introduction
@@ -429,7 +429,7 @@ With your new Notebook open, enter some Python code in the first code cell. We c
 print("Hello World")
 ```
 
-To execute the code, simply press the `▶️`{.action} located in the toolbar above the code cell. You should then see the output:
+To execute the code, simply press the ▶️ button located in the toolbar above the code cell. You should then see the output:
 
 ```bash
 Hello World
@@ -442,6 +442,29 @@ Your code is executed in your browser and will consume the CPU and GPU resources
 ![Accessing a Notebook Control Panel manager 4](images/accessing-a-notebook-using-UI-4.png){.thumbnail}
 
 To save your Notebook, click on the sub-menu `Save`{.action} of the `File` menu. Alternatively, you can use the keyboard shortcut `Ctrl+S`, or `CMD+S`, to save the Notebook quickly.
+
+### Getting started with code examples
+
+To help you get started with your AI Notebook, we provide a [GitHub repository](https://github.com/ovh/ai-training-examples) named `ai-training-examples`, containing code examples and tutorials. This repository is already cloned in your Notebook [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) when you launch it, so you can start exploring the examples right away.
+
+We currently provide a variety of tutorials, including for examples:
+
+- [Tensorflow](https://www.tensorflow.org/) tutorials as `ipython notebooks`
+    - Basic computation using single CPU or GPU: accessible on `notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb`. GitHub preview available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb).
+    - Basic computation using multiple GPUs: accessible on `notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb`. GitHub preview available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb).
+- A [PyTorch](https://pytorch.org/) version of this multi-GPU benchmarking tutorial, available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/pytorch/multi_gpu_benchmark.ipynb).
+
+These tutorials demonstrate how to perform simple tensor computations and compare the performance of running them on CPU versus GPU. 
+
+In addition to these tutorials, we also provide examples for more advanced topics, including:
+
+- Audio classification
+- Image classification
+- Image Generation
+- Image Segmentation
+- Object detection
+
+You can also learn to compare AI models based on resource consumption, accuracy, and training time. Refer to [this tutorial](/pages/public_cloud/ai_machine_learning/training_tuto_06_models_comparaison_weights_and_biases) for more information.
 
 ### Stopping an AI Notebook
 
@@ -557,7 +580,7 @@ Once the Notebook has reached the `Stopped` state, you may be interested in rest
 >> Please replace `YOUR_AI_TOKEN` with your actual AI token and `YOUR_NOTEBOOK_UUID` with the `UUID` of the Notebook you want to stop.
 >>
 
-Restarting a Notebook will transition its state to `RUNNING`, once the Notebook is restarted. However, there will be a short waiting period while your data synchronizes back to your Notebook. During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
+Restarting a Notebook will transition its state to `RUNNING`, once the Notebook is restarted. However, there will be a short waiting period while your data synchronizes back to your Notebook (internal workspace and remotely mounted volumes if any). During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
 
 ### Deleting a Notebook
 

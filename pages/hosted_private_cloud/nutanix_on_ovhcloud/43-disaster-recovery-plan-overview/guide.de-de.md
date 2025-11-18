@@ -11,7 +11,7 @@ This guide will take you through the possibilities offered by Nutanix clusters i
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure  that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/de/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements
@@ -19,7 +19,7 @@ This guide will take you through the possibilities offered by Nutanix clusters i
 - Multiple Nutanix clusters with either organisation:
     - Multiple Nutanix clusters at physically different sites at OVHcloud
     - A Nutanix cluster provided by OVHcloud and another Nutanix cluster from another provider
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via Prism Central
 - A vRack or IPSEC VPN connection between the two clusters, as required
 
@@ -32,7 +32,7 @@ The two clusters must be fully visible to each other through a secure connection
 
 To do this, you can use various methods such as:
 
-- Connecting all sites via the same [vRack](https://www.ovh.de/loesungen/vrack/).
+- Connecting all sites via the same [vRack](/links/network/vrack).
 
 ![Interconnection with vRack diagram](images/vrackinterconnection.png){.thumbnail}
 
@@ -62,6 +62,6 @@ The management of disaster recovery plans can be improved via third-party tools 
 
 [Asynchronous or *NearSync* replication through Prism Element](/pages/hosted_private_cloud/nutanix_on_ovhcloud/46-prism-element-replication)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

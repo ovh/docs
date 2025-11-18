@@ -1,14 +1,14 @@
 ---
 title: Configuring the vRack on the load balancer
 excerpt: How to configure vRack on a Load Balancer
-updated: 2022-04-04
+updated: 2025-09-02
 ---
 
 ## Introduction
 
 The purpose of this guide is to help you link and configure your Load Balancer in vRack via the APIv6 OVH.
 
-The vRack is a dedicated private network that creates a link between all your cloud products. For more information please visit the page on [vRack](https://www.ovhcloud.com/en-gb/network/vrack/)
+The vRack is a dedicated private network that creates a link between all your cloud products. For more information please visit the page on [vRack](/links/network/vrack)
 
 Before starting, if you haven't read it yet, we advise you to read the general presentation of the [Load Balancer](/pages/network/load_balancer/use_presentation) service.
 
@@ -25,7 +25,7 @@ The `serviceName` in the API below is the one for your vRack, ex : `pn-1234`.
 
 > [!api]
 >
-> @api {v1} /vrack GET /vrack/{serviceName}/allowedServices
+> @api {v1} /vrack GET /vrack/{serviceName}/eligibleServices
 >
 
 You will find your Load Balancer services in the index : `ipLoadbalancing`.

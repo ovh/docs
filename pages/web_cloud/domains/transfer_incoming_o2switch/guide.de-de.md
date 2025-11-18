@@ -65,7 +65,7 @@ Für den Transfer eines O2Switch-Domainnamens ist ein spezieller Ansatz erforder
 
 ### Domainnamen freigeben und Transfer-Code erhalten
 
-Um den Domainnamen zu entsperren und den Transfer-Code abzurufen, folgen Sie den Schritten in der [Dokumentation von O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert){.external}.
+Um den Domainnamen zu entsperren und den Transfer-Code abzurufen, folgen Sie den Schritten in der [Dokumentation von O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert).
 
 ### Den Domaintransfer zu OVHcloud starten
 

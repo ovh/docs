@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un VPS"
 excerpt: "Découvrez comment mettre en place des mesures de sécurité basiques pour protéger votre VPS des attaques et des accès non autorisés"
-updated: 2024-10-07
+updated: 2025-11-04
 ---
 
 ## Objectif
@@ -92,15 +92,20 @@ sudo nano /etc/ssh/sshd_config
 Vous devriez trouver les lignes suivantes ou équivalentes :
 
 ```console
-#Port 49152
+#Port 22
 #AddressFamily any
 #ListenAddress 0.0.0.0
 ```
 
 Remplacez le nombre **22** par le numéro de port de votre choix.<br>
 **Veillez toutefois à ne pas renseigner un numéro de port déjà utilisé sur votre système**. 
-Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.<br>Enregistrez et quittez le fichier de configuration.
+Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.
 
+Vous pouvez également afficher les ports attribués à votre système à l'aide de la commande suivante :
+
+```bash
+sudo cat /etc/services
+```
 
 Si la ligne est "commentée" (c'est-à-dire si elle est précédée d'un "#") comme dans l'exemple ci-dessus, veillez à supprimer le "#" avant d'enregistrer le fichier pour que la modification soit prise en compte. Exemple :
 
@@ -110,6 +115,12 @@ Port 49152
 #ListenAddress 0.0.0.0
 ```
 
+> [!warning]
+> Si un pare-feu est configuré sur votre système d'exploitation (UFW ou iptables), vous devez ajuster ses paramètres pour autoriser le trafic sur le nouveau port avant de redémarrer le service. Si vous utilisez iptables, consultez ce guide : [Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). Si aucun pare-feu n'est configuré par défaut, redémarrez le service.
+>
+
+Enregistrez et quittez le fichier de configuration.
+
 Redémarrez le service :
 
 ```bash
@@ -118,16 +129,33 @@ sudo systemctl restart sshd
 
 Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le VPS (`sudo reboot`).
 
-**Pour Ubuntu 23.04 et versions ultérieures**
+**Pour Ubuntu 24.04 et versions ultérieures**
 
 Pour les dernières versions d'Ubuntu, la configuration SSH est désormais gérée dans le fichier `ssh.socket`.
 
 Pour mettre à jour le port SSH, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
 
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+Votre fichier devrait ressembler aux exemples suivants, en fonction de la version d'Ubuntu que vous avez installée :
+
 ```console
 [Socket]
 ListenStream=49152
 Accept=no
+```
+
+ou
+
+```console
+[Socket]
+ListenStream=0.0.0.0:49152
+ListenStream=[::]:22
+BindIPv6Only=ipv6-only
+Accept=no
+FreeBind=yes
 ```
 
 Enregistrez vos modifications et exécutez les commandes suivantes :
@@ -136,11 +164,19 @@ Enregistrez vos modifications et exécutez les commandes suivantes :
 sudo systemctl daemon-reload
 ```
 
+Redémarrez le service :
+
 ```bash
 sudo systemctl restart ssh.service
 ```
 
-Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port dans les règles du pare-feu.
+**Ubuntu 25.04**
+
+Redémarrez le service :
+
+```bash
+sudo systemctl restart ssh.socket
+```
 
 N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de [connexion SSH à votre serveur](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) :
 
@@ -153,6 +189,8 @@ Exemple :
 ```bash
 ssh ubuntu@203.0.113.100 -p 49152
 ```
+
+Si vous êtes bloqué hors de votre système, vous pouvez utiliser notre [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue/) pour annuler vos modifications.
 
 ### Créer un utilisateur avec des droits restreints <a name="createuser"></a>
 
@@ -260,7 +298,7 @@ sudo service fail2ban restart
 
 Fail2ban dispose de nombreux paramètres et filtres de personnalisation ainsi que d’options prédéfinies, par exemple lorsque vous souhaitez ajouter une couche de protection à un serveur web Nginx.
 
-Pour toute information complémentaire et pour des recommandations concernant Fail2ban, n'hésitez pas à consulter [la documentation officielle](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} de cet outil.
+Pour toute information complémentaire et pour des recommandations concernant Fail2ban, n'hésitez pas à consulter [la documentation officielle](https://www.fail2ban.org/wiki/index.php/Main_Page) de cet outil.
 
 ### Configurer le Network Firewall OVHcloud 
 

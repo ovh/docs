@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Gestire un certificato SSL"
 excerpt: "Questa quiga ti mostra come attivare e utilizzare un certificato SSL sugli hosting Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Obiettivo
@@ -70,10 +70,22 @@ Trovi qui sotto i 4 link verso le nostre guide dedicate a queste 4 soluzioni:
 
 Queste operazioni sono relative ai parametri dei tuoi siti Web, per cui OVH non fornisce assistenza. In caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore. OVH non sarà in grado di fornirti assistenza.
 
+> [!primary]
+>
+> **Informazioni sulla migrazione alla nuova interfaccia di gestione dei certificati SSL:**
+>
+> La continuazione di questa guida è rivolta ai clienti i cui servizi di hosting Web non sono ancora stati migrati verso la nuova interfaccia di gestione dei certificati SSL.
+> Per sapere se la migrazione è stata effettuata, accedi al tuo hosting Web dallo Spazio Cliente OVHcloud e verifica la presenza della scheda `Certificati SSL`.
+> Se la scheda `Certificati SSL` è presente, il servizio è già migrato sulla nuova interfaccia di gestione. In questo caso, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/ssl_management) per gestire il tuo certificato SSL.
+>
+> Per motivi tecnici, non tutti i servizi di hosting Web dei nostri clienti possono essere migrati in una sola volta. Il trasferimento viene quindi effettuato in poche settimane e automaticamente, senza alcuna conseguenza sul funzionamento dei servizi di hosting Web e senza alcun intervento o azione da parte tua.
+>
+> Tutti i servizi di hosting Web funzioneranno col nuovo sistema di gestione dei certificati SSL.
+
 Per rimuovere il certificato SSL installato sull’hosting Web, esegui queste operazioni:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
@@ -163,7 +175,7 @@ In caso di difficoltà o dubbi, consulta la guida "[Hosting Web - Passare il pro
 
 [Errori comuni associati alla protezione del sito Web con il certificato SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  

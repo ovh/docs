@@ -10,7 +10,7 @@ updated: 2024-01-22
 
 ## Ziel
 
-Sie können anhand des in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigten Referenznamens feststellen, ob ein VPS aus einer alten Reihe stammt: Wenn diese interne Referenz im Format *vpsXXXX.ovh.net* vorliegt (wobei *X* für eine Zahl steht) und Sie den entsprechenden VPS nicht auf [unsere aktuelle Produktreihe](https://www.ovhcloud.com/de/vps/) migriert haben, handelt es sich um einen *Legacy* VPS. 
+Sie können anhand des in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigten Referenznamens feststellen, ob ein VPS aus einer alten Reihe stammt: Wenn diese interne Referenz im Format *vpsXXXX.ovh.net* vorliegt (wobei *X* für eine Zahl steht) und Sie den entsprechenden VPS nicht auf [unsere aktuelle Produktreihe](/links/bare-metal/vps) migriert haben, handelt es sich um einen *Legacy* VPS. 
 
 Die Referenz für einen VPS der aktuellen Reihe has das Format: *vps-XXXXXXX.vps.ovh.net* (wobei *X* eine Ziffer oder ein Buchstabe sein kann).
 
@@ -20,7 +20,7 @@ Für einen *Legacy* VPS bestehen einige Unterschiede bezüglich dessen Verwaltun
 
 ## Voraussetzungen
 
-- Sie haben einen [*Legacy* VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben einen [*Legacy* VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

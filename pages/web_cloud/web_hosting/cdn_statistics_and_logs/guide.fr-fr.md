@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - Consulter les statistiques et logs CDN"
 excerpt: "Découvrez comment consulter les statistiques et les logs CDN de votre site web grâce à votre offre d'hébergement web"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Objectif
@@ -37,6 +37,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}. 
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
 >> Dans la partie `Statistiques de visites`, cliquez sur le bouton `Voir les statistiques`{.action}.
 >>
@@ -74,6 +76,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
 >> Dans la partie `Logs du site web`, cliquez sur le bouton `Voir les logs`{.action}.
 >>

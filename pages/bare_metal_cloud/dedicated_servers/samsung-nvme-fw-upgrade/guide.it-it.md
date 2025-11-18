@@ -355,7 +355,7 @@ At this point the firmware update is complete, you need to reboot your server.
 
 #### Step 5 - Check the firmware version after the server reboot
 
-You can use the same command as in [step 2](#windos-step2) to list all NVMe drives on your server:
+You can use the same command as in [step 2](#windows-step2) to list all NVMe drives on your server:
 
 ```bash
 C:\Users\admin\Downloads>Samsung_SSD_DC_Toolkit_for_Windows_1.exe -L

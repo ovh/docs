@@ -1,14 +1,14 @@
 ---
 title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
-updated: 2023-05-04
+updated: 2025-10-28
 ---
 
 ## Ziel 
 
 Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
-- Ihr Domainname ist in der [Multisite-Konfiguration](/pages/web_cloud/web_hosting/multisites_configure_multisite) nicht korrekt auf Ihr Zielverzeichnis eingestellt.
+- Die [Einrichtung Ihres Domainnamens mit Ihrer Website](/pages/web_cloud/web_hosting/multisites_configure_multisite) ist nicht korrekt auf Ihr Zielverzeichnis eingestellt.
 - Das Zielverzeichnis, auf das Ihr Domainname verweist, enthält keine Datei namens **index.html** oder **index.php**.
 
 ![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
@@ -41,11 +41,11 @@ Ihr Domainname muss daher im Bereich `Multisite`{.action} Ihres Webhostings mit 
 >
 > Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verknüpfen möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [diesem Tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern [mit einem Passwort schützen](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> Wir empfehlen Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams sind nicht in der Lage, Sie bei Änderungen an der internen Programmierung Ihrer Webseite zu unterstützen.
+> Wir empfehlen Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams können keine Unterstützung bei Änderungen der internen Programmierung Ihrer Website anbieten.
 
 ### Die häufigste Ursache einer "Index of"-Seite beheben
 
-Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](/pages/web_cloud/web_hosting/ftp_connection) in den `www`-Ordner Ihres OVHcloud Webhostings importiert. Ihr Domainname ist jedoch nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer `Multisite`-Konfiguration verknüpft.
+Sie haben die Dateien Ihrer Website **mydomain.ovh** in das Verzeichnis `www` über [FTP](/pages/web_cloud/web_hosting/ftp_connection) hochgeldaen. Allerdings ist Ihr Domainname nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer Website verknüpft.
 
 ![index_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

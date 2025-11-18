@@ -20,7 +20,7 @@ Pulumi offers an intuitive command line interface (CLI), to provision, update or
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Installing the [Pulumi CLI](https://www.pulumi.com/docs/install/){.external}
+- Installing the [Pulumi CLI](https://www.pulumi.com/docs/install/)
 - An account in [Pulumi](https://www.pulumi.com/)
 - A [Pulumi access token](https://app.pulumi.com/account/tokens)
 - Installing the [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
@@ -38,15 +38,15 @@ v3.86.0
 
 #### OVHcloud Pulumi provider
 
-In order to create a Private Registry (Harbor instance) and other resources, you will use the [OVHcloud Pulumi provider](https://github.com/ovh/pulumi-ovh). This provider is a bridge to our official [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external}.
+In order to create a Private Registry (Harbor instance) and other resources, you will use the [OVHcloud Pulumi provider](https://github.com/ovh/pulumi-ovh). This provider is a bridge to our official [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest).
 
 All available Pulumi resources have their definition and [documentation](https://www.pulumi.com/registry/packages/ovh).
 
 In this guide, we will create several resources:
 
-- a [capabilities datasource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/getcapabilitiescontainerregistry/){.external} that represents the configuration of the registry
-- a [registry resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/containerregistry/){.external} that represents an OVHcloud Managed Private Registry
-- a [registry user resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/containerregistryuser/){.external} that represents a user in the private registry
+- a [capabilities datasource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/getcapabilitiescontainerregistry/) that represents the configuration of the registry
+- a [registry resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/containerregistry/) that represents an OVHcloud Managed Private Registry
+- a [registry user resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/containerregistryuser/) that represents a user in the private registry
 
 You will also use the [Harbor Pulumi provider](https://www.pulumi.com/registry/packages/harbor/) to create a project inside the private registry (harbor).
 
@@ -349,7 +349,7 @@ Resources:
 Duration: 2m30s
 ```
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
 As you can see, your registry has been successfuly created:
 
 ![Managed private registry](images/private-registry.png){.thumbnail}

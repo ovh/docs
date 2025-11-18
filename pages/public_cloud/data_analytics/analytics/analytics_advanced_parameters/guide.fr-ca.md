@@ -67,7 +67,7 @@ When ready, click on `Update advanced configuration`{.action}.
 
 You first need to identify the service and the cluster you want to apply the changes to.
 
-##### **Get the desired service ID**
+##### Get the desired service ID
 
 Execute the following API call:
 
@@ -80,7 +80,7 @@ Execute the following API call:
 
 From the resulting list, select and copy the service identifier corresponding to the desired service, also known as serviceName.
 
-##### **Get the desired cluster ID**
+##### Get the desired cluster ID
 
 Open the following API call, paste your service ID into the `serviceName` input field and click `Execute`{.action}:
 

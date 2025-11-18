@@ -31,10 +31,10 @@ Es gibt mehrere Möglichkeiten, das Administratorpasswort Ihres CMS anzupassen:
 >
 > Um den Herausgeber eines der oben genannten CMS zu kontaktieren, finden Sie hier die Links zu deren offiziellen Seiten:
 >
-> - [WordPress](https://wordpress.com/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [WordPress](https://wordpress.com/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
 
 ### Administratorpasswort per automatischer E-Mail ändern ("Passwort vergessen") <a name="via-email"></a>
 

@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
+> No dude en compartir su opinión y sus ideas con nosotros.<br>
+> [Ir a la encuesta.](https://s.elq.fr/ovhext/kbyLL9x)
+
 ## Objetivo
 
 ¿Quiere crear un sitio web para su empresa o un blog personal? ¿Necesita una tienda online para vender sus productos? Esta guía explica los primeros pasos con el alojamiento web de OVHcloud y explica cómo configurarlo. También encontrará instrucciones para crear direcciones de correo electrónico profesionales asociadas a su dominio. Le permitirá publicar su proyecto en Internet fácil y rápidamente para comunicarse con su audiencia de forma eficaz.

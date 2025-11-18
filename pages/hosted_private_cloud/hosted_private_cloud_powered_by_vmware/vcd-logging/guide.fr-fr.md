@@ -1,12 +1,12 @@
 ---
-title: "VMware Cloud Director - Se connecter à son organisation"
+title: "Public VCF as-a-Service - Se connecter à son organisation"
 excerpt: "Comment se connecter à son organisation et changer son mot de passe"
 updated: 2024-04-16
 ---
 
 ## Objectif
 
-**Ce guide fournit des instructions détaillées pour se connecter à VMware Cloud Director.**
+**Ce guide fournit des instructions détaillées pour se connecter à Public VCF as-a-Service.**
 
 ## Prérequis
 
@@ -17,13 +17,13 @@ updated: 2024-04-16
 
 ### Premiere connexion
 
-Ouvrez votre navigateur web et rendez-vous sur la page de connexion du VCD. Renseignez votre nom d'organisation (celui-ci est fourni dans l'e-mail de création de compte).
+Ouvrez votre navigateur web et rendez-vous sur la page de connexion du Public VCF as-a-Service. Renseignez votre nom d'organisation (celui-ci est fourni dans l'e-mail de création de compte).
 
 ![First page connection](images/vcd-organization-connection.png){.thumbnail}
 
 Vous êtes maintenant invité à entrer votre nom d'utilisateur et votre mot de passe dans les champs appropriés (ces informations sont fournies dans l'e-mail de création de votre compte).
 
-Cliquez sur le bouton `Se connecter`{.action} pour accéder à VMware Cloud Director.
+Cliquez sur le bouton `Se connecter`{.action} pour accéder à Public VCF as-a-Service.
 
 ![Login connection](images/vcd-login-connection.png){.thumbnail}
 
@@ -51,6 +51,6 @@ Vous devriez recevoir un mail de confirmation du changement de mot de passe.
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

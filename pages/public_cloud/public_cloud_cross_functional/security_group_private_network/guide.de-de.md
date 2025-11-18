@@ -1,7 +1,7 @@
 ---
 title: Verwaltung von Firewall-Regeln und Port Security für Netzwerke über die OpenStack CLI
 excerpt: Erfahren Sie hier, wie Sicherheitsgruppen in der Public Cloud funktionieren
-updated: 2023-03-13
+updated: 2025-09-23
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2023-03-13
 
 Die OpenStack-Plattform verwaltet Sicherheit via Firewalls, indem sie Verbindungsregeln in **Sicherheitsgruppen** (*security groups*) zusammenfasst. Die Regeln werden dann angewendet, indem Sicherheitsgruppen Netzwerk-Ports zugewiesen werden.
 
-Ein **Port** im Kontext von [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} ist ein Verbindungspunkt zwischen Subnetzen und Netzwerkelementen (Instanzen, Loadbalancer, Router etc.).
+Ein **Port** im Kontext von [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html) ist ein Verbindungspunkt zwischen Subnetzen und Netzwerkelementen (Instanzen, Loadbalancer, Router etc.).
 
 **Diese Anleitung erklärt, wie Sicherheitsgruppen für private und öffentliche Netzwerke in der Public Cloud verwaltet werden.**
 
@@ -63,7 +63,7 @@ Das Ergebnis sollte entsprechend der folgenden Ausgabe sein:
 
 ```console
 $ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
-False
+True
 ```
 
 #### Für ein neues privates Netzwerk:

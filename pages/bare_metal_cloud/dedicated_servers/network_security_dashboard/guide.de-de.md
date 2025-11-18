@@ -1,21 +1,16 @@
 ---
 title: Monitoring von DDoS-Angriffen mit dem Network Security Dashboard
 excerpt: Erfahren Sie hier, wie Sie das Network Security Dashboard im OVHcloud Kundencenter verwenden
-updated: 2025-06-04
+updated: 2025-10-31
 ---
 
 ## Ziel
 
 In dieser Anleitung wird das Network Security Dashboard erläutert. Außerdem erhalten Sie einen Überblick über Gegenmaßnahmen, die von unserer DDoS-Schutzinfrastruktur ausgelöst werden, wenn angreifende Netzwerkaktivitäten erkannt werden. Hier finden Sie Details zu den Auslösern zusätzlicher Schutzmaßnahmen, die eingerichtet werden müssen, um Ihre Dienste am Laufen zu halten. Darüber hinaus stehen im Dashboard Traffic-Diagramme für Aktivitätsperioden im Scrubbing Center zur Verfügung, um die Situation besser darzustellen.
 
-> [!warning]
->
-> **Achtung**: Die Funktion "Scrubbing-Center: permanenter Modus" erreicht End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
->
-
 ## Voraussetzungen 
 
-- Sie haben eine OVHcloud Dienstleistung abonniert, die über eine dedizierte öffentliche IP-Adresse erreichbar ist ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/de/vps/), [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/de/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.).
+- Sie haben eine OVHcloud Dienstleistung abonniert, die über eine dedizierte öffentliche IP-Adresse erreichbar ist ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud Instanz](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip), etc.).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -46,15 +41,14 @@ Während eines Angriffs wird eine aktive Abwehraktion durch ein Warnsymbol auf d
 
 ### Netzwerksicherheitsbenachrichtigungen
 
-![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}{.thumbnail}
+![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Stellen Sie sicher, dass der `Erweiterte Modus` aktiviert ist, um den Status der Anti-DDoS-Infrastruktur und die Konfiguration ihrer Komponenten anzuzeigen.
 
 Die Spalten entsprechen dem Status des Anti-DDoS-Scrubbing (**Mitigation**) sowie der Verfügbarkeit von Edge Network **Firewall** und **GAME Firewall** und deren Status.
 
 - Der Status der **Mitigation** kann sein:
-    - **Automatisch** - Das Scrubbing Center befindet sich im **Automatisch**-Modus. Der empfohlene Modus ist die Umleitung des Traffics für eine gründlichere Analyse bei Bedarf.
-    - **Permanent** - Das Scrubbing Center ist **permanent aktiviert**. Es wird nicht empfohlen, es dauerhaft zu aktivieren, es sei denn, zu starkes Latenzschwanken aufgrund von Umleitung des Datenverkehrs festgestellt.
+    - **Automatisch** - Das Scrubbing Center befindet sich im **Automatisch**-Modus und leitet den Datenverkehr bei Bedarf zur weiteren Analyse um.
     - **Erzwungen** - Dies weist darauf hin, dass das Scrubbing Center **gerade Maßnahmen anwendet**.
 
 - In der Spalte **Firewall** wird der Status der Edge Network Firewall angegeben:
@@ -84,6 +78,8 @@ In der Tabelle sind die folgenden Spalten vorhanden:
 - **Ziel-IP** - Die IP, die Ziel des Angriffs war
 - **Angriffsvektoren** - Stellt Informationen über erkannte Angriffstypen bereit, wie UDP- oder TCP-Angriffe etc.
 
+**Die Aufbewahrungsfrist für die Log-Dateien des Scrubbing-Centers beträgt 1 Jahr.**
+
 > [!warning]
 >
 > Beachten Sie, dass Quell-IP-Adressen für erkannte Ereignisse nicht angezeigt werden, da sie in der Regel gefälscht sind (DDoS-Angriffe können auf Quellen verweisen, von denen Sie nicht stammen). Solche Informationen wären also irreführend oder nicht verwendbar.
@@ -94,6 +90,8 @@ Auf **Traffic Chart** sehen Sie ein Diagramm, das den Traffic zu Ihrer IP-Adress
 ![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Sie zeigt schädlichen Datenverkehr, der verworfen wurde (**in rot**) und gesäuberten Datenverkehr, der an Ihre IP-Adresse übertragen wurde (**in grün**).  Darüber hinaus werden grundlegende Abwehrstatistiken angezeigt, z.B. wie viele Angriffe für eine ausgewählte IP entdeckt wurden, wie viel Traffic (oder Pakete) während der Angriffe gesäubert wurde oder wie oft die Scrubbing Center in einem bestimmten Zeitraum eine Aktion zur Überprüfung Ihres Traffics (Anzahl der Ereignisse) durchgeführt haben.
+
+**Die Aufbewahrungsfrist für den Traffic-Chart beträgt 2 Monate.**
 
 ## FAQ
 
@@ -114,7 +112,7 @@ Solche Daten stehen nur für öffentliche IP-Adressen zur Verfügung, wenn autom
 
 ### Das Traffic-Diagramm ist für einige Positionen in den Scrubbing Center-Protokollen nicht verfügbar.
 
-Traffic-Chart-Daten sind nur für die letzten zwei Wochen verfügbar, während Log-Einträge für das vergangene Jahr überprüft werden können.
+Traffic-Chart-Daten sind nur für die letzten zwei Monate verfügbar, während Log-Einträge für das letzte Jahr überprüft werden können.
 
 ### Ein Angriff auf meinen Dienst hält an. Wie kann ich meinen Server besser schützen?
 
@@ -171,4 +169,4 @@ In allen Fällen, für die Anpassungen unseres DDoS-Schutzes erforderlich sein w
 
 [Game Server mit der Application Firewall schützen](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Treten Sie unserer User-Community bei: <https://community.ovh.com/de/>.
+Treten Sie unserer [User Community](/links/community) bei.

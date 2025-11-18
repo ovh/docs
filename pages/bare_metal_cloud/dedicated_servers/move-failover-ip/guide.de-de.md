@@ -1,12 +1,15 @@
 ---
 title: Eine Additional IP umziehen
 excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Diese Anleitung befasst sich mit dem Umzug von Additional IPv4-Adressen, die nach [regionalen Beschränkungen](#limitations) limitiert ist.
 >
-> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](/links/network/additional-ip). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
+> Die Konfiguration von Additional IPs in einem vRack (privates Netzwerk) umgeht diese regionalen Einschränkungen, da die Abhängigkeit von einer einzelnen Region nicht besteht und gleichzeitig die Anbindung an eine breite Palette von OVHcloud Diensten vereinfacht wird.
+>
+> Erfahren Sie, wie Sie Additional IPs in einem vRack mithilfe unserer Anleitungen für [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) und [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) konfigurieren.
 >
 
 ## Ziel
@@ -16,8 +19,7 @@ Additional IP-Adressen können zwischen den von Ihnen verwendeten Diensten versc
 Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in weniger als einer Minute austauschen, praktisch ohne Unterbrechung für Ihre Nutzer. Dies ist nützlich für Service-Migrationen (z.B. Verschieben von Projekten von der Entwicklung in die Produktion) oder beim Wechsel zu einem Sicherungsserver während eines technischen Problems.
 
 > [!primary]
-> Sie können Ihre IP-Adressblöcke jedem kompatiblen Dienst innerhalb einer Region zuweisen.
-IP-Adressblöcke in einer Region können innerhalb dieser Region von einem Rechenzentrum in ein anderes verschoben werden, aber nicht aus dieser Region heraus.
+> Sie können Ihre IP-Adressblöcke jedem kompatiblen Dienst innerhalb einer Region zuweisen. IP-Adressblöcke in einer Region können innerhalb dieser Region von einem Rechenzentrum in ein anderes verschoben werden, aber nicht aus dieser Region heraus.
 >
 > Eine Ausnahme bilden die Regionen eu-west-gra, eu-west-rbx und eu-west-sbg, da hier IP-Adressblöcke zwischen diesen 3 Regionen verschoben werden können.
 >
@@ -32,9 +34,9 @@ IP-Adressblöcke in einer Region können innerhalb dieser Region von einem Reche
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
-> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
 >
-> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 >
 
 > [!warning]
@@ -84,7 +86,7 @@ Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
 ### IP-Adresse über die API umziehen
 
-Loggen Sie sich auf der [Webseite der OVHcloud API](https://api.ovh.com/) ein.
+Loggen Sie sich auf der [Webseite der OVHcloud API](/links/api) ein.
 
 Es ist am besten, zunächst zu prüfen, ob die IP-Adresse umgezogen werden kann.  
 Um zu überprüfen, ob die IP auf einen Ihrer Dedicated Server umgezogen werden kann, verwenden Sie folgenden Aufruf:

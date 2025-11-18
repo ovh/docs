@@ -12,14 +12,14 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
-- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
+- Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/).
 
 ## En pratique
 
 ### Onglet général
 
-Une fois dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, vous aurez accès à un aperçu général de votre Managed Bare Metal :
+Une fois dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action} de votre [espace client OVHcloud](/links/manager), vous aurez accès à un aperçu général de votre Managed Bare Metal :
 
 ![Informations générales](images/controlpanel1-e.png){.thumbnail}
 
@@ -168,7 +168,7 @@ L'onglet `Licence Windows`{.action} permet d'activer les licences SPLA Windows s
 
 ![Licence SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr-ca/managed-bare-metal/options/){.external}.
+Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr-ca/managed-bare-metal/options/).
 
 ### Vue datacentre
 

@@ -15,7 +15,7 @@ La función principal de **VMware HA**(Alta disponibilidad) es reiniciar las má
 ## Requisitos
 
 - Estar conectado a la [interfaz vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
-- Tener contratado un [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
+- Tener contratado un [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es/managed-bare-metal/).
 
 ## Procedimiento
 

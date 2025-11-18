@@ -1,7 +1,7 @@
 ---
 title: "Cómo restablecer la contraseña de administrador con Rescue-Customer-Windows"
 excerpt: "Cómo restablecer la contraseña de administrador con Rescue-Customer-Windows"
-updated: 2025-03-06
+updated: 2025-10-22
 ---
 
 ## Objetivo
@@ -11,6 +11,7 @@ Esta guía explica cómo restaurar la contraseña de `Administrator` con **Windo
 ## Requisitos
 
 - Microsoft Windows Server 2016 o superior instalado en su [servidor dedicado](/links/bare-metal/bare-metal)
+- Al menos 16 GB de RAM instalados en el servidor
 - Acceso al [área de cliente de OVHcloud](/links/manager)
 
 > [!warning]

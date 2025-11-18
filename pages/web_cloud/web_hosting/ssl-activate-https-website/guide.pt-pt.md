@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Passar o seu website em HTTPS"
 excerpt: "Saiba como passar o seu website em HTTPS após ter ativado um certificado SSL"
-updated: 2024-02-26
+updated: 2025-10-27
 ---
 
 ## Objetivo
@@ -12,9 +12,9 @@ Graças ao seu alojamento web da OVHcloud, pode beneficiar de um [certificado SS
 
 ## Requisitos
 
-- Dispor de um [certificado SSL](/links/web/hosting-options-ssl){.external} instalado no seu [alojamento web OVHcloud](/links/web/hosting){.external}.
+- Dispor de um [certificado SSL](/links/web/hosting-options-ssl) instalado no seu [alojamento web OVHcloud](/links/web/hosting).
 - Ter pelo menos um website instalado e acessível no alojamento web da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, parte `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -94,7 +94,7 @@ Repare que, se utilizar um "site chave-na-mão", a sua estrutura irá gerir auto
 
 ### Etapa 3 - Ativar o HTTPS no website <a name="https-enable"></a>
 
-Se o seu alojamento web dispuser de um certificado SSL ativo, o [multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) beneficiar de uma ligação SSL ativa e o seu website estiver pronto para utilizar *HTTPS*, pode ativá-lo.
+Assim que o seu nome de domínio tiver um [certificado SSL ativo através do seu alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting) e o seu site estiver pronto para passar para *HTTPS*, pode ativá-lo.
 
 > [!warning]
 >

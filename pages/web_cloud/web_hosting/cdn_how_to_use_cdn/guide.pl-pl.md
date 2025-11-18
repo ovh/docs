@@ -1,7 +1,7 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2025-05-22
+updated: 2025-10-27
 ---
 
 ## Wprowadzenie 
@@ -33,7 +33,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli opcja CDN nie jest zamówiona lub włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
 
 > [!primary]
 > 
@@ -45,15 +45,16 @@ Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana 
 
 #### Jeśli opcja CDN jest już włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij przycisk `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij `Zmień domenę`{.action}.
 
-Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+Zaznacz opcję "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
 ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
 
 > [!warning]
 > 
-> W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.
+> W przypadku domeny zewnętrznej dodanej do jednej z witryn na Twoim serwisie, musisz dodać adres IP CDN Twojego serwisu do strefy DNS tej domeny.
+>
 > Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
  
 **Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?**
@@ -65,15 +66,15 @@ Jeśli chodzi o SEO (pozycjonowanie w wyszukiwarkach), szybkość wyświetlania 
 
 #### Wyczyść cache usługi Shared CDN
 
-Czasem konieczne może okazać się usunięcie pamięci podręcznej z GeoCache, zwłaszcza po wprowadzeniu zmian w plikach statycznych. Na przykład przy publikowaniu nowej wersji swojej witryny. Możesz wyczyścić cache dla każdego wpisu w opcji MultiSite.
+Czasem warto wyczyścić pamięć podręczną CDN, zwłaszcza gdy zmieniasz swoje pliki statyczne. Na przykład podczas wdrażania nowej wersji Twojej witryny. Możesz wyczyścić pamięć podręczną dla każdej z Twoich domen i poddomen.
 
-Przejdź do karty `MultiSite`{.action} Twojego hostingu, kliknij `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Wyczyść CDN`{.action}.
+Przejdź do karty `MultiSite`{.action} Twojego hostingu, kliknij `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij `Wyczyść CDN`{.action}.
 
 ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Konfiguracja opcji usługi Shared CDN
 
-Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawej stronie MultiSite, a następnie  `Zmień CDN`{.action}. 
+Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij  `Zmień CDN`{.action}. 
 
 > [!warning]
 > 
@@ -97,7 +98,7 @@ Po wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwi
 
 ##### **Utwórz regułę cache** <a name="cacherules"></a>
 
-Aby dodać regułę cache do jednego z elementów Twojej strony, przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Skonfiguruj CDN`{.action}.
+Aby dodać regułę cache do jednego z elementów Twojej strony, przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij `Zmień CDN`{.action}.
 
 W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
@@ -125,7 +126,7 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 #### Konfiguracja opcji CDN Security
 
-Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawej stronie MultiSite, a następnie `Zmień CDN`{.action}. 
+Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij `Zmień CDN`{.action}. 
 
 > [!primary]
 >
@@ -157,7 +158,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 > [!primary]
 >
-> Po włączeniu funkcji HSTS na Twojej stronie, zmusi ona protokół HTTPS do Twojej przeglądarki aż do końca tzw. „wieku maksymalnego”, nawet po wyłączeniu funkcji w Panelu klienta. Jeśli pamięć podręczna jest usuwana z przeglądarki, która już przeprowadziła wizytę na Twojej stronie WWW, strona ta zastosuje nowy stan funkcji HSTS.
+> Po włączeniu funkcji HSTS na Twojej stronie, zmusi ona protokół HTTPS do Twojej przeglądarki aż do końca tzw. "wieku maksymalnego", nawet po wyłączeniu funkcji w Panelu klienta. Jeśli pamięć podręczna jest usuwana z przeglądarki, która już przeprowadziła wizytę na Twojej stronie WWW, strona ta zastosuje nowy stan funkcji HSTS.
 
 - **Mixed content**: Wymuś załadowanie całej zawartości stron www w bezpieczny sposób, przyczyniając się tym samym do optymalnego doświadczenia użytkownika. Wszystkie zasoby Twojej strony WWW, zarówno wewnętrzne, jak i zewnętrzne, muszą być dostępne za pomocą protokołu HTTPS, aby uniknąć błędu w zakresie bezpieczeństwa przeglądarki.
 
@@ -173,7 +174,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 #### Konfiguracja opcji CDN Advanced
 
-Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawej stronie MultiSite, a następnie `Zmień CDN`{.action}. 
+Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij `Zmień CDN`{.action}. 
 
 > [!primary]
 >
@@ -183,7 +184,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 - **Prefetch**: Przewiduj załadowanie tego zasobu. Prześlij ją automatycznie do pamięci cache CDN za pomocą *header link* Twojej strony WWW. Mechanizm ten jest używany przede wszystkim do ładowania CSS, JavaScript, zdjęć, plików wideo lub czcionek www, które są wymagane przez motyw strony internetowej. 
 
-	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej „Hi”, zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
+	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej "Hi", zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
 
 	```	
 	<?php
@@ -192,11 +193,11 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 	?> 
 	```
 
-- **Telefon komórkowy**: Przekieruj automatycznie użytkowników „Mobile” na zoptymalizowaną stronę www. Do wyboru: systematycznie przekierowywać stronę główną innej strony lub zachować adres URL, zastępując tylko domenę (lub subdomenę).
+- **Telefon komórkowy**: Przekieruj automatycznie użytkowników "Mobile" na zoptymalizowaną stronę www. Do wyboru: systematycznie przekierowywać stronę główną innej strony lub zachować adres URL, zastępując tylko domenę (lub subdomenę).
 
 - **Czyszczenie zaawansowane**: Spersonalizuj wyczyszczenie, wybierając elementy pamięci cache, które chcesz opróżnić: cała strona, folder, URI, rozszerzenie plików lub za pomocą regularnych ustawień. 
 
-	W zakładce MultiSite kliknij przycisk `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Wyczyść CDN`{.action}. 
+	W zakładce `MultiSite`{.action} kliknij przycisk `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij `Wyczyść CDN`{.action}. 
 
 	![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
@@ -221,7 +222,7 @@ Po wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwi
 
 ##### **Tworzenie reguły zaawansowanego cache** <a name="cacherulesadv"></a>
 
-Aby dodać regułę cache do jednego z elementów Twojej strony, przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Skonfiguruj CDN `{.action}.
+Aby dodać regułę cache do jednego z elementów Twojej strony, przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij `Zmień CDN `{.action}.
 
 W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
@@ -247,7 +248,7 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 ### Wyświetl statystyki i logi usługi CDN
 
-Aby wyświetlić statystyki i/lub logi usługi CDN, zapoznaj się z naszym przewodnikiem: „[Hosting WWW - Sprawdzanie statystyk i logów CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)”.
+Aby wyświetlić statystyki i/lub logi usługi CDN, zapoznaj się z naszym przewodnikiem: "[Hosting WWW - Sprawdzanie statystyk i logów CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
 ### Jak przenieść pliki do pamięci cache w usłudze GeoCache?
 
@@ -278,7 +279,7 @@ Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi GeoCache. 
 
 ### Wyłącz opcję CDN dla strony www
 
-Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w opcji MultiSite, bez usuwania opcji GeoCache z Twojego hostingu WWW.
+Ta akcja pozwala wyłączyć CDN dla jednej lub kilku Twoich domen lub poddomen, bez usuwania opcji CDN z Twojego serwisu Web Cloud.
 
 > [!warning]
 >
@@ -287,15 +288,15 @@ Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w o
 >
 > W przeciwnym razie należy wykonać następujące dwa działania:
 >
-> - uzyskaj domyślny adres IP **klastra**, w którym znajduje się Twój hosting, korzystając z naszego przewodnika „[Hosting WWW: adresy IP klastrów OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”;
+> - uzyskaj domyślny adres IP **klastra**, w którym znajduje się Twój hosting, korzystając z naszego przewodnika "[Hosting WWW: adresy IP klastrów OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)";
 > - ręcznie zmień adres IP w aktywnej strefie DNS Twojej domeny lub skontaktuj się z dostawcą strefy DNS, aby zaktualizował się za Ciebie.
 >
 > Modyfikacja wpisu w aktywnej strefie DNS domeny wiąże się z opóźnieniem propagacji wynoszącym **4** do **24** godzin, zanim wejdzie on w życie. W tym czasie może pojawić się losowo strona z kodem **520**. Zjawisko to jest związane z faktem, że niektóre części sieci DNS nadal przekierowują zapytania na adres IP usługi CDN powiązanej z Twoim hostingiem.
 >
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} obok nazwy domeny lub poddomeny, a następnie kliknij `Zmień domenę`{.action}.
 
-Usuń zaznaczenie opcji „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
 ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
 
@@ -303,7 +304,7 @@ Usuń zaznaczenie opcji „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action
 
 Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Rezygnacja z GeoCache`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
 
 ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
 

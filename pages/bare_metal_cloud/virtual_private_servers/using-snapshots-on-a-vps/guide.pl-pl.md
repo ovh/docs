@@ -1,12 +1,8 @@
 ---
 title: "Korzystanie z migawek na prywatnym serwerze wirtualnym"
 excerpt: "Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud i korzystać z niej"
-updated: 2024-09-18
+updated: 2025-10-17
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -16,13 +12,17 @@ Utworzenie migawki jest szybkim i prostym sposobem na zabezpieczenie działania 
 
 > [!primary]
 >
-Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](https://www.ovhcloud.com/pl/vps/options/) w celu porównania cen i uzyskania szczegółowych informacji.
+Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](/links/bare-metal/vps-options) w celu porównania cen i uzyskania szczegółowych informacji.
 >
 
 ## Wymagania początkowe
 
 - dostęp do [Panelu klienta OVHcloud](/links/manager)
-- skonfigurowana [usługa VPS](https://www.ovhcloud.com/pl/vps/) OVHcloud
+- skonfigurowana [usługa VPS](/links/bare-metal/vps) OVHcloud
+
+> [!warning]
+> Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## W praktyce
 
@@ -30,7 +30,7 @@ Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Ba
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 
-Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem **Podsumowanie opcji**.  
+Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem **Kopia zapasowa**.  
 Jeśli opcja "Snapshot" jest już w stanie "Włączona", przejdź od razu do etapu 2. Jeśli "Snapshot" nie jest jeszcze aktywny, kliknij na `...`{.action} obok opcji "Snapshot" i wybierz z menu kontekstowego pozycję `Zamówienie`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
@@ -43,7 +43,7 @@ Aby zrezygnować z opcji usługi, kliknij przycisk `...`{.action} obok "Snapshot
 
 ### Krok 2: tworzenie migawki
 
-Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Możesz wpisać opis, który będzie dołączony do kopii zapasowej snapshot. Czas tworzenia snapshota zależy od użytej przestrzeni dyskowej. Po utworzeniu migawki w obszarze “Podsumowanie opcji” pojawi się jej znacznik czasu.
+Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Możesz wpisać opis, który będzie dołączony do kopii zapasowej snapshot. Czas tworzenia snapshota zależy od użytej przestrzeni dyskowej. Po utworzeniu migawki w obszarze “Kopia zapasowa” pojawi się jej znacznik czasu.
 
 ### Krok 3: usuwanie / przywracanie migawki
 

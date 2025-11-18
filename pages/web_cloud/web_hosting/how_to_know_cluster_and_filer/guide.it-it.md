@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come conoscere cluster e filer"
 excerpt: "Questa guida ti mostra come trovare il numero del cluster e/o il numero del filer in cui si trova il tuo hosting Web"
-updated: 2025-05-21
+updated: 2025-08-12
 ---
 
 ## Obiettivo
@@ -18,37 +18,6 @@ Durante l’utilizzo dell’hosting Web, potrebbe essere necessario conoscere il
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
-
-### Ritrova il numero del cluster di un hosting Web
-
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
-
-> [!tabs]
-> **Passaggio 1**
->>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Passaggio 3**
->>
->> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}. 
->>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->>
-> **Passaggio 4**
->>
->> Nella nuova pagina, recupera il numero di cluster dell’hosting Web su questa pagina come **Server FTP e SFTP** (3 cifre comprese tra `0` e `9`).
->>
->> ![FTP-SSH - numero del cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
-
-### Ritrova il numero del filer di un hosting Web
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
@@ -67,9 +36,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Passaggio 3**
 >>
->> Nel riquadro **Informazioni generali** della pagina che appare, recupera il numero del filer sotto la dicitura `Filer`{.action}.
+>> Nel riquadro **Informazioni generali** della pagina che appare, recupera il numero del cluster sotto la dicitura **Cluster** (3 cifre comprese tra `0` e `9`) e il numero del filer sotto la dicitura **Filer**.
 >>
->> ![Numero del filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
+>> ![Numeri del cluster e del filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ## Per saperne di più
 

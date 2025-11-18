@@ -1,7 +1,7 @@
 ---
 title: "Restaurar el espacio de almacenamiento de un alojamiento web"
 excerpt: "Descubra cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web"
-updated: 2025-05-23
+updated: 2025-10-20
 ---
 
 ## Objetivo
@@ -19,8 +19,8 @@ Los planes de hosting de OVHcloud incluyen un espacio de almacenamiento en el qu
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external} (salvo el hosting [Cloud Web](/links/web/hosting-cloud-web-offer)).
-- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager){.external} o disponer de la contraseña FTP necesaria para conectarse al espacio de almacenamiento. 
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting) (salvo el hosting [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager) o disponer de la contraseña FTP necesaria para conectarse al espacio de almacenamiento. 
 
 ## Procedimiento
 
@@ -46,16 +46,32 @@ Asimismo, deberá decidir el método de restauración que quiera utilizar:
 > En cuanto al método de **restauración desde el área de cliente de OVHcloud**, compruebe que al menos **la mitad del espacio total de almacenamiento FTP** incluido en su paquete de alojamiento sigue disponible.
 > Por ejemplo, si tiene un paquete de alojamiento **Performance**, aún deberían estar disponibles 250 GB de los 500 GB disponibles.
 >
-> Esto se debe a que nuestros robots instalan la copia de seguridad en su alojamiento antes de borrar el contenido FTP que será reemplazado por la restauración.
->
-> Para comprobar la cuota utilizada en su alojamiento web, inicie sesión en su [área de cliente OVHcloud](/links/manager). Vaya a la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. A continuación, elija el nombre del alojamiento en cuestión. 
->
-> La cuota utilizada aparece en la página que aparece:
->
-> ![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->
-> Si el espacio de almacenamiento FTP utilizado es superior a la mitad del espacio de almacenamiento FTP total de su paquete de alojamiento, recupere localmente algunos de los elementos de gran tamaño de su sitio web (puede utilizar [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). A continuación, elimínelos de su almacenamiento FTP. Esto reducirá el tamaño del espacio de almacenamiento FTP que está utilizando y entonces podrá lanzar su restauración desde el área de cliente de OVHcloud.
->
+>  se debe a que nuestros robots instalan la copia de seguridad en su alojamiento antes de borrar el contenido FTP que será reemplazado por la restauración.
+
+Para comprobar la cuota utilizada en su alojamiento web, haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En el cuadro **Información general**, encontrará la mención **Espacio en disco**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> Si el espacio de almacenamiento FTP utilizado es superior a la mitad del espacio de almacenamiento FTP total de su paquete de alojamiento, recupere localmente algunos de los elementos de gran tamaño de su sitio web (puede utilizar [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
+>>
+>> A continuación, elimínelos de su almacenamiento FTP. Esto reducirá el tamaño del espacio de almacenamiento FTP que está utilizando y entonces podrá lanzar su restauración desde el área de cliente de OVHcloud.
 
 Una vez que haya elegido el método de restauración más adecuado en función de sus necesidades, continúe la lectura de esta guía en el apartado correspondiente:
 
@@ -79,31 +95,57 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 > En este caso:
 >
 > - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
-> - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](/links/manager){.external}. En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
+> - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](/links/manager). En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
 > - Los sitios web alojados muestran una página "403 Forbidden".
->
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Restaurar una copia de seguridad`{.action}.
+Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
-![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
-
-Se abrirá una ventana en la que deberá seleccionar la fecha de restauración deseada en el menú desplegable.
-
-|Fecha|Momento de la copia de seguridad|
-|---|---|
-|1 día antes|El mismo día, a las 00:01|
-|2 días antes|El día anterior, a las 00:01|
-|3 días antes|Dos días antes, a las 00:01|
-|1 semana|El domingo anterior, a la 01:00|
-|2 semanas|El domingo de dos semanas antes, a la 01:00|
-
-Una vez seleccionada la fecha, haga clic en el botón `Siguiente`{.action}. 
-
-![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
-
-Asegúrese de que no se ha perdido ningún archivo en el proceso de restauración (por ejemplo, cualquier archivo que hubiera guardado en su espacio de almacenamiento después de la fecha de restauración seleccionada). Como ya hemos indicado, la restauración borrará todos los datos actuales para sustituirlos por los de la copia de seguridad.
-
-Haga clic en `Aceptar`{.action} para restaurar la copia de seguridad.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la nueva página, haga clic en el botón `Restaurar una copia de seguridad`{.action}.
+>>
+>> ![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Se abrirá una ventana en la que deberá seleccionar la fecha de restauración deseada en el menú desplegable.
+>>
+>> |Fecha|Momento de la copia de seguridad|
+>> |---|---|
+>> |1 día antes|El mismo día, a las 00:01|
+>> |2 días antes|El día anterior, a las 00:01|
+>> |3 días antes|Dos días antes, a las 00:01|
+>> |1 semana|El domingo anterior, a la 01:00|
+>> |2 semanas|El domingo de dos semanas antes, a la 01:00|
+>>
+>> Una vez seleccionada la fecha, haga clic en el botón `Siguiente`{.action}. 
+>>
+> **Etapa 6**
+>>
+>> ![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
+>>
+>> Asegúrese de que no se ha perdido ningún archivo en el proceso de restauración (por ejemplo, cualquier archivo que hubiera guardado en su espacio de almacenamiento después de la fecha de restauración seleccionada). Como ya hemos indicado, la restauración borrará todos los datos actuales para sustituirlos por los de la copia de seguridad.
+>>
+>> Haga clic en `Aceptar`{.action} para restaurar la copia de seguridad.
 
 > [!primary]
 >
@@ -121,11 +163,11 @@ Esta operación se realiza en varios pasos. Asegúrese de tener la contraseña d
 
 #### 1. Elegir el programa o la interfaz web que vaya a utilizar
 
-En primer lugar, debe decidir qué programa o interfaz web va a utilizar para conectarse a la copia de seguridad de su espacio de almacenamiento. Si ya lo ha decidido, vaya al paso 2. En caso contrario, le recomendamos que utilice una de las siguientes soluciones:
+En primer lugar, defina el software o la interfaz que va a utilizar para conectarse a la copia de seguridad de su espacio de almacenamiento. Si ya lo sabe, pase directamente al paso 2. De lo contrario, le recomendamos que utilice una de las dos soluciones siguientes:
 
-- **FileZilla**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}. Esta guía no sustituye a la documentación oficial del editor.
+- **FileZilla**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Esta guía no sustituye a la documentación oficial del editor.
 
-- **Cyberduck**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de Cyberduck (Mac)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Esta guía no sustituye a la documentación oficial del editor.
+- **Cyberduck**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de Cyberduck (Mac)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac). Esta guía no sustituye a la documentación oficial del editor.
 
 Una vez que esté listo para continuar, vaya al siguiente paso.
 
@@ -133,7 +175,11 @@ Una vez que esté listo para continuar, vaya al siguiente paso.
 
 Una vez en la interfaz web o el programa elegido, deberá conectarse a su espacio de almacenamiento para acceder a los datos de la copia de seguridad que quiera recuperar. Para realizar esta operación, necesitará el nombre de usuario FTP, la contraseña y el nombre de host del servidor FTP.
 
-Puede consultar esta información en la pestaña `FTP - SSH`{.action} de su alojamiento. Si no tiene la contraseña FTP, siga las indicaciones de la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Puede consultar esta información en la pestaña `FTP - SSH`{.action} de su alojamiento.
+
+![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+
+Si no tiene la contraseña FTP, siga las indicaciones de la guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
@@ -175,9 +221,9 @@ Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. 
 
 ## Más información
 
-[Web hosting: guía de uso de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}
+[Web hosting: guía de uso de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Web hosting: Guía de uso de Cyberduck (Mac)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}
+[Web hosting: Guía de uso de Cyberduck (Mac)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)
 
 [Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)
 

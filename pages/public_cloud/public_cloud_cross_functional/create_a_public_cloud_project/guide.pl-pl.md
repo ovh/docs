@@ -10,7 +10,7 @@ updated: 2025-04-28
 
 ## Objective
 
-Utworzenie projekt jest pierwszym krokiem we wdrażaniu [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
+Utworzenie projekt jest pierwszym krokiem we wdrażaniu [instancji Public Cloud](/links/public-cloud/public-cloud).
 
 **Dowiedz się, jak utworzyć pierwszy projekt Public Cloud.**
 

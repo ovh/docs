@@ -12,7 +12,7 @@ This tutorial will help you install Joomla! CMS (Content Management System) manu
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [Joomla! support](https://www.joomla.org/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [Joomla! support](https://www.joomla.org/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 > [!success]
@@ -130,7 +130,7 @@ The installation is complete, but you can add additional languages to your CMS i
 
 ## Go further <a name="go-further"></a>
 
-[Joomla! official website](https://joomla.org){.external}
+[Joomla! official website](https://joomla.org)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

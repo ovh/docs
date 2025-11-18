@@ -67,7 +67,7 @@ Follow the official guide if you want to [install Keycloack on an OVHcloud Manag
 
 #### The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](/links/api) which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVHcloud account credentials.
 
@@ -295,6 +295,6 @@ This request will delete all the users.
 
 To have an overview of OVHcloud Managed Private Registry service, read the [OVHcloud Managed Private Registry documentation](/products/public-cloud-containers-orchestration-managed-private-registry).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

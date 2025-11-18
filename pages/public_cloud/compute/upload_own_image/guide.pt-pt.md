@@ -25,10 +25,10 @@ A OVHcloud oferece aos clientes Public Cloud imagens prontas a usar, mas também
 
 As imagens cloud compatíveis estão disponíveis aqui:
 
-- <https://cloud.centos.org/centos/>{.external}
-- <https://cloud.debian.org/images/cloud/>{.external}
-- <https://cloud-images.ubuntu.com/releases/>{.external}
-- <https://alt.fedoraproject.org/cloud/>{.external}
+- <https://cloud.centos.org/centos/>
+- <https://cloud.debian.org/images/cloud/>
+- <https://cloud-images.ubuntu.com/releases/>
+- <https://alt.fedoraproject.org/cloud/>
 
 Outros sistemas operativos também oferecem imagens ISO que são igualmente aplicáveis aquando da [criação de imagens com a Packer](https://www.packer.io/docs/builders), como a QEMU e a VirtualBox.
 

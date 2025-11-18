@@ -1,6 +1,6 @@
 ---
 title: Shelve or pause an instance
-updated: 2025-05-26
+updated: 2025-10-30
 ---
 
 ## Objective
@@ -16,7 +16,7 @@ As part of the configuration of a high-availability infrastructure, you may enco
 ## Requirements
 
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) on **hourly** billing
-- Access to the [OVHcloud Control Panel](/links/manager){.external} or [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Access to the [OVHcloud Control Panel](/links/manager) or [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Knowledge of [Openstack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) and [Openstack variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 ## Instructions
@@ -25,15 +25,15 @@ As part of the configuration of a high-availability infrastructure, you may enco
 >
 > This guide only applies to instances on **hourly billing**. If your instances are on **monthly billing**, standard billing will continue regardless of the status of the service.
 > 
-> Whether your instance is shelved, paused or suspended, you will still be billed for it. If you do not wish to be billed, you must delete the instance.
+> Whether your instance is suspended (*shelved*), turned off (*suspend*) or paused, you will **still be billed for it**. If you do not wish to be billed, you **must delete** the instance.
 >
 
-The table below allows you to differentiate the options available on your instances. Continue reading this guide by clicking on the option of your choice. We put the terminology used in the Horizon interface in brackets.
+The table below allows you to differentiate the options available on your instances. Continue reading this guide by clicking on the option of your choice. We put the terminology used in the **Horizon interface** in brackets.
 
 |Term|Description|Billing|
 |---|---|---|
-|[Suspend (*shelve*)](#shelve-instance)|Retains the resources and data in your disk by creating a snapshot, all other resources are released.|You are only billed for the snapshot.|
-|[Stop (*suspend*)](#stop-suspend-instance)|Stores the VM state on disk, the resources dedicated to instance are still reserved.|You will still be billed the same price for your instance.|
+|[Suspend (*shelve*)](#shelve-instance)|Retains the resources and data in your disk by creating a snapshot, all other resources are released. The main IP is also maintained|You are only billed for the snapshot.|
+|[Turn off (*suspend*)](#stop-suspend-instance)|Stores the VM state on disk, the resources dedicated to instance are still reserved.|You will still be billed the same price for your instance.|
 |[Pause](#pause-instance)|Stores the state of the VM in RAM, a paused instance becomes frozen.|You will still be billed the same price for your instance.|
 
 ### Content overview
@@ -42,11 +42,11 @@ The table below allows you to differentiate the options available on your instan
     - [From the OVHcloud Control Panel](#control-panel)
     - [From the Horizon Interface](#horizon)
     - [Using Openstack/Nova APIs](#openstack-nova)
--[Reactivate (*unshelve*) an instance](#unshelve-instance)
+- [Reactivate (*unshelve*) an instance](#unshelve-instance)
     - [From the OVHcloud Control Panel](#control-panel-unshelve)
     - [From the Horizon Interface](#horizon-unshelve)
     - [Using Openstack/Nova APIs](#openstack-nova-unshelve)
-- [Stop (*suspend*) an instance](#stop-suspend-instance)
+- [Turn off (*suspend*) an instance](#stop-suspend-instance)
     - [From the OVHcloud Control Panel](#stop-control-panel)
     - [From the Horizon Interface](#stop-horizon)
     - [Using Openstack/Nova APIs](#stop-openstack-nova)
@@ -72,21 +72,25 @@ This option will allow you to release the resources dedicated to your Public Clo
 
 In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section. Click on `Instances`{.action} in the left side menu.
 
-Click on the `...`{.action} button to the right of the instance you want to suspend, then click on `Suspend`{.action}.
+Click on the `⋮`{.action} button to the right of the instance you want to suspend, then click on `Suspend`{.action}.
 
-![suspend instance](images/suspend_an_instance.png){.thumbnail}
+![suspend instance](images/suspend_instance_2025.png){.thumbnail}
 
 In the pop-up window, take note of the message and click on `Confirm`{.action}.
 
-![confirm suspension](images/suspend_an_instance_2024.png){.thumbnail}
+![confirm suspension](images/confirm_suspension_2025.png){.thumbnail}
+
+A message will appear while the operation is in progress:
+
+![](images/suspension_message_2025.png){.thumbnail}
 
 Once the process is completed, your instance will now appear as *Suspended*.
 
-![suspended status](images/instance_suspended.png){.thumbnail}
+![suspended status](images/instance_suspended_2025.png){.thumbnail}
 
 To view the snapshot, click on `Instance Backup`{.action} underneath the **Compute** tab in the left side menu. A snapshot named *xxxxx-shelved* will now be visible:
 
-![snapshot tab](images/shelved_backup.png){.thumbnail}
+![snapshot tab](images/shelved_backup_2025.png){.thumbnail}
 
 <a name="horizon"></a>
 
@@ -152,13 +156,13 @@ This option will allow you to re-up your instance so that you can continue using
 
 In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section and click on `Instances`{.action} in the left side menu.
 
-Click on the `...`{.action} button to the right of the instance, then click on `Reactivate`{.action}.
+Click on the `⋮`{.action} button to the right of the instance, then click on `Reactivate`{.action}.
 
-![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
+![reactivate instance](images/reactivate_instance_2025.png){.thumbnail}
 
 In the pop-up window, take note of the message and click on `Confirm`{.action}.
 
-Once the process is completed, your instance will now appear as *Activated*.
+Once the process is completed, the status of your instance will now appear as *Enabled*.
 
 <a name="horizon-unshelve"></a>
 
@@ -186,7 +190,7 @@ Once your environment is ready, type the following at the command line:
 
 <a name="stop-suspend-instance"></a>
 
-### Stop (*suspend*) an instance
+### Turn off (*suspend*) an instance
 
 This option will allow you to shutdown your instance and store the VM state on disk, the memory will be written to the disk as well.
 
@@ -196,15 +200,23 @@ This option will allow you to shutdown your instance and store the VM state on d
 
 In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section and click on `Instances`{.action} in the left side menu.
 
-Click on the `...`{.action} button to the right of the instance you want to stop, then click on `Stop`{.action}.
+Click on the `⋮`{.action} button to the right of the instance you want to stop, then click on `Turn off`{.action}.
 
-![stop instance](images/stopinstance.png){.thumbnail}
+![stop instance](images/turn_off_instance_2025.png){.thumbnail}
 
 In the pop-up window, take note of the message and click on `Confirm`{.action}.
 
+![stop instance](images/confirm_turn_off.png){.thumbnail}
+
 Once the process is completed, your instance will now appear as *Off*.
 
-To **resume** the instance, perform the same steps as mentioned above. Click on the `...`{.action} button to the right of the instance and select `Boot`{.action}. In some cases, you might need to do a cold reboot.
+![off status](images/instance_status_off.png){.thumbnail}
+
+To **resume** the instance, perform the same steps as mentioned above. Click on the `⋮`{.action} button to the right of the instance and select `Start`{.action}. In some cases, you might need to do a cold reboot.
+
+![start instance](images/start_instance_2025.png){.thumbnail}
+
+Once the process is completed, the status of your instance will now appear as *Enabled*.
 
 <a name="stop-horizon"></a>
 
@@ -286,6 +298,6 @@ To **unpause** the instance, type the following at the command line:
 
 ## Go further
 
-[OpenStack documentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
+[OpenStack documentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
 
 Join our [community of users](/links/community).

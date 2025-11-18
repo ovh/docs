@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > È necessario adattare l'argomento --numjobs al numero di CPU della tua istanza.
 >
-> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analizzare i dati
@@ -145,7 +145,7 @@ Possiamo vedere che le prestazioni del disco supplementare sono di circa 3052 IO
 
 Il comando necessario per verificare la velocità del disco è `fio`. Non è presente di default sul tuo server.
 
-Per installare `fio`, connettiti alla tua istanza tramite RDP e scarica questo binario: [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
+Per installare `fio`, connettiti alla tua istanza tramite RDP e scarica questo binario: [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
 
 ### Testare la velocità del disco
 
@@ -159,7 +159,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > È necessario adattare l'argomento --numjobs al numero di CPU della tua istanza.
 >
-> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analizza i dati

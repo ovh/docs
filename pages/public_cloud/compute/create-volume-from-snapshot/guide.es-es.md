@@ -22,8 +22,8 @@ Esto puede ser útil en los siguientes casos:
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
-- Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} en su cuenta de OVHcloud.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
+- Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
 - Tener una copia de seguridad del disco en la misma región de OpenStack.
 - Tener acceso a su instancia por SSH como administrador (sudo).
 

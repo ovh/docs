@@ -17,7 +17,7 @@ La modifica di questi contatti permette di dissociare la gestione tecnica dalla 
 
 ## Prerequisiti
 
-- Disporre di un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel proprio account OVHcloud
+- Disporre di un progetto [Public Cloud](/links/public-cloud/public-cloud) nel proprio account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Contatti amministratore e fatturazione nella stessa filiale OVHcloud
 

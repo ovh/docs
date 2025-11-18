@@ -12,12 +12,12 @@ updated: 2020-07-07
 
 ## Requisitos
 
-- Dispor de uma oferta [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Dispor de uma oferta [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a secção `Hosted Private Cloud`. Clique em `Private Cloud` na barra de serviços à esquerda e selecione a infraestrutura correspondente.
+Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione a secção `Hosted Private Cloud`. Clique em `Private Cloud` na barra de serviços à esquerda e selecione a infraestrutura correspondente.
 
 ![utilizador vsphere](images/addMailOnUser01.png){.thumbnail}
 
@@ -37,4 +37,4 @@ Clique no botão Validar para confirmar as suas modificações.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/).

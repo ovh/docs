@@ -1,7 +1,7 @@
 ---
 title: '3CX - Configuration et utilisation'
 excerpt: "Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI"
-updated: 2022-10-25
+updated: 2025-10-16
 ---
 
 ## Objectif
@@ -39,61 +39,89 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
-### Création du Trunk dans 3CX Phone System
+### Création du trunk dans 3CX Phone System
 
-Nous allons configurer le trunk sur 3CX, à l'aide du Template. 
+> [!success]
+> Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 6 étapes.
 
-- Connectez-vous à l'interface d'administration de 3CX.
-
-![3CX Phone Systeme](images/3cx_phone_system-login.png){.thumbnail}
-
-- Cliquez sur `Trunk SIP`{.action}.
-
-![3CX Phone Systeme](images/3cx_phone_system-trunk01.png){.thumbnail}
-
-- Cliquez sur `Ajouter un Trunk SIP`{.action}.
-
-![3CX Phone Systeme](images/3cx_phone_system-trunk02.png){.thumbnail}
-
-Complétez le formulaire pour sélectionner le template OVHcloud. 
-
-- Dans le champ **Choisir un Pays**, sélectionnez le pays de votre Trunk. Dans ce guide nous sélectionnons `FR`.
-- Dans le champ **Sélectionner un opérateur de votre pays**, sélectionnez `OVH`.
-- Dans **Numéro principal**, entrez le numéro de votre trunk (ici, `0033XXXXXXX90`).
-- Vérifiez les informations et cliquez sur `OK`{.action}.
-
-L'écran suivant affiche les informations de configuration du Trunk (Proxy, ports, etc).
-
-![3CX Phone Systeme](images/3cx_phone_system-trunk03.png){.thumbnail}
-
-Veuillez saisir les informations d'authentification du trunk dans le formulaire suivant : 
-
-- Dans le champ **ID d'authentification (aka SIP User ID)**, saisissez le nom d'utilisateur de votre trunk. (Dans notre exemple 0033XXXXXXX90)
-- Dans le champ **Mot de passe d'authentification**, tapez le mot de passe SIP de votre trunk. 
-- Dans le champ **Nombre d'appels simultanés maximum**, saisissez la valeur correspondante à votre trunk. 
-
-Choisissez ensuite la terminaison des appels passés directement sur le trunk. Dans l'exemple, l'option `Messagerie vocale de l'extension` est sélectionnée avec l'extension `1000...`. 
-
-![3CX Phone Systeme](images/3cx_phone_system-trunk04.png){.thumbnail}
-
-Nous allons associer les DDI au trunk, cliquez sur l'onglet en haut de la page appelé `SDAs`{.action}.
-
-- Cliquez sur le bouton `Ajouter un SDA`{.action}.
-- Entrez les DDI souhaités.
-- Cliquez sur `OK`{.action} en haut de la page pour sauvegarder la configuration.
-
-![3CX Phone Systeme](images/3cx_phone_system-trunk07.png){.thumbnail}
-
-La configuration du trunk sur 3CX est maintenant terminée !
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à l'interface d'administration de 3CX.
+>> 
+>> ![3CX Phone Systeme](images/3cx_phone_system-login.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur `Trunks SIP`{.action}, puis sur `Ajouter Trunk SIP`{.action}.
+>>
+>> ![3CX Phone Systeme](images/3cx_phone_system-trunk01.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Complétez le formulaire pour ajouter votre ligne SIP Trunk et l'opérateur OVHcloud :
+>>
+>> - Dans le champ **Choisir un Pays**, sélectionnez le pays de votre ligne SIP Trunk en fonction de son préfixe. Dans ce guide nous sélectionnons `FR`.
+>> - Dans le champ **Sélectionner un opérateur de votre pays**, sélectionnez `OVH`.
+>> - Dans le champ **Numéro principal**, entrez le numéro de votre trunk (dans notre exemple : `0033XXXXXXX90`).
+>> - Vérifiez les informations et cliquez sur `OK`{.action}.
+>>
+>> ![3CX Phone Systeme](images/3cx_phone_system-trunk02.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> L'écran suivant affiche les informations de configuration du trunk (proxy, ports, etc.).
+>>
+>> ![3CX Phone Systeme](images/3cx_phone_system-trunk03.png){.thumbnail}
+>>
+>> > [!primary]
+>> > Pour retrouver vos informations de connexion :
+>> >
+>> > 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Telecom`{.action}.
+>> > 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP Trunk.
+>> > 1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP Trunk concernée.
+>> > 1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+>> >
+>> > Vous retrouvez alors, dans la partie « Informations SIP », le **Login**, **Domain** et **Proxy sortant** de votre ligne SIP Trunk.
+>>
+>> Saississez les informations d'authentification du trunk dans le formulaire en complétant les champs suivants :
+>>
+>> - **Nom d'hôte** : Renseignez le **Domain** de votre trunk.
+>> - **Proxy sortant** : Renseignez le **Proxy sortant** de votre trunk.
+>> - **ID d'authentification (SIP User ID)** : Renseignez le **Login** de votre trunk (dans notre exemple : `0033XXXXXXX90`).
+>> - **Nombre d'appels simultanés** : Saisissez la valeur maximale autorisée pour votre trunk.
+>> - **Mot de passe d'authentification** : Renseignez le mot de passe SIP de votre trunk.
+>>
+> **Étape 5**
+>>
+>> Personnalisez ensuite le comportement souhaité lors d'un appel à destination du trunk. Dans notre exemple, nous routons les appels vers le répondeur de l'extension 1000.
+>>
+>> Pour ce faire, nous sélectionnons l'option  `Messagerie vocale de l'extension` avec l'extension `1000...`, pendant et en dehors des heures de bureau.
+>>
+>> ![3CX Phone Systeme](images/3cx_phone_system-trunk04.png){.thumbnail}
+>>
+> **Étape 6**
+>>
+>> Nous allons associer les DDI au trunk. Cliquez sur l'onglet `SDAs`{.action} en haut de la page, puis :
+>>
+>> - Cliquez sur le bouton `Ajouter un SDA`{.action}.
+>> - Entrez les DDI souhaités.
+>> - Cliquez sur `OK`{.action} en haut de la page pour sauvegarder la configuration.
+>>
+>> ![3CX Phone Systeme](images/3cx_phone_system-trunk07.png){.thumbnail}
+>>
+>> > [!success]
+>> > La création du trunk sur 3CX est maintenant terminée !
 
 ### Création et configuration des extensions
 
 L'objectif de cette étape est de configurer les extensions 1000 et 1001.
+
 Configurez l’extension 1000 pour lui permettre de présenter le DDI XX XX XX XX 26.
 
-- Dans l'interface d'administration de 3CX, rendez-vous sur la catégorie `Utilisateurs`{.action}
-- Double cliquez sur l'extension `1000`
-- Dans le champ **Numéro présenté**, saisissez le DDI à présenter. Dans notre cas : 0033XXXXXXX26
+- Dans l'interface d'administration de 3CX, rendez-vous sur la catégorie `Utilisateurs`{.action}.
+- Double cliquez sur l'extension `1000`.
+- Dans le champ **Numéro présenté**, saisissez le DDI à présenter. Dans notre cas : 0033XXXXXXX26.
 - Cliquez sur `OK`{.action} pour prendre en compte la modification.
 
 ![3CX Phone Systeme](images/3cx_phone_system-trunk05.png){.thumbnail}
@@ -126,7 +154,7 @@ Pour configurer le second DDI il vous faut appliquer la même procédure, à la 
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

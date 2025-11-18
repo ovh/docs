@@ -1,7 +1,7 @@
 ---
 title: "How to secure a VPS"
 excerpt: "Find out how to apply basic security measures to protect your VPS against attacks and unauthorised access"
-updated: 2024-10-07
+updated: 2025-11-04
 ---
 
 ## Objective
@@ -94,8 +94,13 @@ Find the following or similar lines:
 #ListenAddress 0.0.0.0
 ```
 
-Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.  
-Save and exit the configuration file.
+Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535. 
+
+Alternatively, you can view the ports assigned on your system with the following command:
+
+```bash
+sudo cat /etc/services
+```
 
 If the line is "commented out" (i.e. if it is preceded by a "#") as shown in the example above, make sure to remove the "#" before saving the file so that the change takes effect. Example:
 
@@ -105,6 +110,12 @@ Port 49152
 #ListenAddress 0.0.0.0
 ```
 
+> ![warning]
+> If a firewall is configured on your operating system (UFW or iptables), you must adjust its settings to allow traffic on the new port before restarting the service. If you are using iptables, refer to this guide: [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable/). If no firewall is configured by default, restart the service.
+>
+
+Save and exit the configuration file.
+
 Restart the service:
 
 ```bash
@@ -113,7 +124,7 @@ sudo systemctl restart sshd
 
 This should be sufficient to apply the changes. Alternatively, reboot the VPS (`sudo reboot`).
 
-**For Ubuntu 23.04 and later**
+**For Ubuntu 24.04 and later**
 
 For the latest Ubuntu versions, the SSH configuration is now managed in the `ssh.socket` file.
 
@@ -123,10 +134,23 @@ To update the SSH port, edit the `Listenstream` line in the configuration file w
 sudo nano /lib/systemd/system/ssh.socket
 ```
 
+Your file should resemble the following examples, depending on the version of Ubuntu you have installed:
+
 ```console
 [Socket]
 ListenStream=49152
 Accept=no
+```
+
+or
+
+```console
+[Socket]
+ListenStream=0.0.0.0:49152
+ListenStream=[::]:22
+BindIPv6Only=ipv6-only
+Accept=no
+FreeBind=yes
 ```
 
 Save your changes and run the following commands:
@@ -135,11 +159,19 @@ Save your changes and run the following commands:
 sudo systemctl daemon-reload
 ```
 
+Restart the service:
+
 ```bash
 sudo systemctl restart ssh.service
 ```
 
-If you have enabled your operating system's firewall, make sure you allow the new port in your firewall rules.
+**Ubuntu 25.04**
+
+Restart the service:
+
+```bash
+sudo systemctl restart ssh.socket
+```
 
 Remember that you will have to indicate the new port any time you [establish an SSH connection to your server](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
@@ -152,6 +184,8 @@ Example:
 ```bash
 ssh ubuntu@203.0.113.100 -p 49152
 ```
+
+If you are locked out of your system, you can use our [rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue/) environment to revert your changes.
 
 ### Creating a user with restricted rights <a name="createuser"></a>
 
@@ -258,7 +292,7 @@ sudo service fail2ban restart
 
 Fail2ban has many settings and filters for customization as well as preset options, for example when you want to add a layer of protection to an Nginx web server.
 
-For any additional information and recommendations concerning Fail2ban, please refer to the [official documentation](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} of this tool.
+For any additional information and recommendations concerning Fail2ban, please refer to the [official documentation](https://www.fail2ban.org/wiki/index.php/Main_Page) of this tool.
 
 ### Configuring the OVHcloud Network Firewall 
 

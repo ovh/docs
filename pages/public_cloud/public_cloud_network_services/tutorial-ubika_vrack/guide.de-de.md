@@ -23,13 +23,13 @@ Diese Anleitung enthält detaillierte Anweisungen zur Inbetriebnahme und Konfigu
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional).
 - Sie haben Grundkenntnisse in Networking.
-- Sie haben auf der [Ubika-Website](https://my.ubikasec.com/){.external} einen Ubika-Account erstellt.
+- Sie haben auf der [Ubika-Website](https://my.ubikasec.com/) einen Ubika-Account erstellt.
 - Sie haben einen ausreichenden Block von Additional IP-Adressen verfügbar.
 - Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
 - Sie haben eine [Additional IP-Adresse](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
-- Sie haben eine Ubika WAAP Gateway Lizenz (**B**ring **Y**our **O**wn **L**icence), die über die [offizielle Website von Ubika](https://my.ubikasec.com/){.external} erworben wurde. Diese ist zur Installation und Konfiguration erforderlich.
+- Sie haben eine Ubika WAAP Gateway Lizenz (**B**ring **Y**our **O**wn **L**icence), die über die [offizielle Website von Ubika](https://my.ubikasec.com/) erworben wurde. Diese ist zur Installation und Konfiguration erforderlich.
 
 ## In der praktischen Anwendung
 
@@ -68,7 +68,7 @@ Hier die Architektur, die wir implementieren werden:
 ### Konfigurieren des Ubika WAAP Gateway Verwaltungsnetzwerk
 
 > [!primary]
-> In diesem Szenario verwenden wir zwei virtuelle Maschinen, die für die Sicherheitsanwendung konfiguriert sind, um hohe Verfügbarkeit (HA) zu erreichen, sowie einen zusätzliche virtuelle Maschine für die Verwaltung der Sicherheitsanwendung. Diese Konfiguration gewährleistet den Schutz vor Ausfällen und die kontinuierliche Verfügbarkeit des Dienstes. Weitere Beispiele und ausführliche Hilfe zu den Skalierungsoptionen finden Sie in der [Ubika-Dokumentation](https://www.ubikasec.com/resources/){.external}.
+> In diesem Szenario verwenden wir zwei virtuelle Maschinen, die für die Sicherheitsanwendung konfiguriert sind, um hohe Verfügbarkeit (HA) zu erreichen, sowie einen zusätzliche virtuelle Maschine für die Verwaltung der Sicherheitsanwendung. Diese Konfiguration gewährleistet den Schutz vor Ausfällen und die kontinuierliche Verfügbarkeit des Dienstes. Weitere Beispiele und ausführliche Hilfe zu den Skalierungsoptionen finden Sie in der [Ubika-Dokumentation](https://www.ubikasec.com/resources/).
 
 Erstellen Sie ein privates Netzwerk für die Verwaltung der Infrastruktur:
 
@@ -118,7 +118,7 @@ openstack router add subnet 2481bcaf-efa2-419a-ad92-d6d27737dfd1 ubika-workload
 
 UWG Image auf OpenStack hochladen:
 
-Gehen Sie in den Bereich `Download`{.action} auf der [offiziellen Website von Ubika](https://my.ubikasec.com/){.external}. Loggen Sie sich in Ihren Ubika-Account ein und folgen Sie den Anweisungen zum Herunterladen des UWG OpenStack Images.
+Gehen Sie in den Bereich `Download`{.action} auf der [offiziellen Website von Ubika](https://my.ubikasec.com/). Loggen Sie sich in Ihren Ubika-Account ein und folgen Sie den Anweisungen zum Herunterladen des UWG OpenStack Images.
 
 Gehen Sie in den Ordner, in den Sie Ihr UWG OpenStack Image hochgeladen haben, und importieren Sie das UWG OpenStack Image (für diese Anleitung verwenden wir das Image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`):
 
@@ -126,7 +126,7 @@ Gehen Sie in den Ordner, in den Sie Ihr UWG OpenStack Image hochgeladen haben, u
 openstack image create --disk-format raw --container-format bare --file ~/Downloads/UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2 Ubika-WAAP-Gateway-6.11.10
 ```
 
-[Importieren Sie Ihren öffentlichen SSH-Schlüssel](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html){.external}:
+[Importieren Sie Ihren öffentlichen SSH-Schlüssel](https://docs.openstack.org/python-openstackclient/pike/cli/command-objects/keypair.html):
 
 ```bash
 openstack keypair create --public-key ~/.ssh/id_rsa.pub <username>
@@ -264,7 +264,7 @@ Konfiguration anwenden (Button oben rechts im Interface):
 
 ### Lizenzen konfigurieren
 
-Die Ubika WAAP Gateway Lizenzen sind über die [offizielle Website von Ubika](https://my.ubikasec.com/){.external} verfügbar. Abhängig von Ihren Bereitstellungsanforderungen können Sie zwischen einer einzelnen VM Lizenz oder einer High Availability Lizenz wählen, die eine Active Backup Konfiguration mit zwei Data Plane Instanzen und einer oder mehreren Control Plane Instanzen unterstützt.  
+Die Ubika WAAP Gateway Lizenzen sind über die [offizielle Website von Ubika](https://my.ubikasec.com/) verfügbar. Abhängig von Ihren Bereitstellungsanforderungen können Sie zwischen einer einzelnen VM Lizenz oder einer High Availability Lizenz wählen, die eine Active Backup Konfiguration mit zwei Data Plane Instanzen und einer oder mehreren Control Plane Instanzen unterstützt.  
 Die Lizenzen variieren auch abhängig vom TPS SSL (Transaktionen pro Sekunde), wobei mehrere SSL-Zertifikate oder Failover-Funktionen unterstützt werden.
 
 Es wird dringend empfohlen, die neuesten Generationen von Compute-Instanzen für Appliance-Bereitstellungen zu verwenden. Beispiel:

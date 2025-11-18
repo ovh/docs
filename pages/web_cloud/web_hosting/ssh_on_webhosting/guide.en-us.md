@@ -1,20 +1,33 @@
 ---
-title: "Accessing a web hosting plan via SSH"
-excerpt: "Find out how to connect and use SSH access on an OVHcloud web hosting plan"
-updated: 2024-01-30
+title: "Web Hosting - How to use SSH access"
+excerpt: "Find out how to log in and use SSH access on an OVHcloud Web Hosting plan"
+updated: 2025-09-08
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
-OVHcloud web hosting plans provide you with access to a storage space you can use to put your website and application files online. You can access this space using an FTP or SSH user account and password.
+OVHcloud web hosting plans provide you with access to a storage space you can use to put your website and application files online. You can access this space via FTP or SSH credentials.
 
 **Find out how to connect and use SSH access on an OVHcloud web hosting plan.**
 
 ## Requirements
 
-- an [OVHcloud web hosting plan](/links/web/hosting){.external} with SSH access
-- the login credentials required to connect to your storage space via SSH
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager){.external}
+- An [OVHcloud web hosting plan](/links/web/hosting) with SSH access.
+- Access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 
 > [!warning]
 > 
@@ -22,64 +35,132 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 ## Instructions
 
-### Step 1: Ensure that SSH access is enabled <a name="sshcheck"></a>
+To log in and use SSH access to your web hosting plan, you will need the following:
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
+- the active SSH user;
+- the password associated with this SSH user;
+- the SSH server address of your web hosting plan;
+- the connection port to your web hosting plan’s SSH server.
 
-Find the table in the ‘SSH’ column to check if the SSH user (or ‘login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
+### 1 - Make sure that SSH access is enabled for the SSH user you have chosen <a name="user-ssh-enablement"></a>
 
-![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
+Click on the tabs below to view each of the **4** steps in succession.
 
-If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](/links/web/hosting){.external} offers SSH access.
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `FTP - SSH`{.action} tab.
+>>
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> On the new page, the information related to your storage space will appear.
+>>
+>> In the table, locate the `SSH` column to check that the SSH user (in the `Login` column of the table) concerned has SSH access enabled. If this is not the case, the words `Disabled` will appear.
+>>
+>> ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
+>>
+>> If the SSH access of the user concerned is `Disabled` in the table, perform the following steps:
+>>
+>> - 1 : Click the `...`{.action} button to the right of the user’s line, then `Edit`{.action}.
+>> - 2 : In the window that pops up, in the `Connection protocols` section, select the `FTP, SFTP and SSH`{.action} choice, then click `Next`{.action}.
+>> - 3: Check the summary of the requested change, then click `Confirm`{.action}.
+>>
+>> > If you cannot enable it, please ensure that [your OVHcloud web hosting plan](/links/web/hosting) has SSH access.
 
-### Step 2: Retrieve your connection information <a name="sshlogin"></a>
+### 2 - Retrieve the information you need to log in via SSH <a name="sshlogin"></a>
 
-To log in to your storage space via SSH, find the information you need in the `FTP - SSH`{.action} tab:
+Click on the tabs below to view each of the **4** steps in succession.
 
-- **Active** SSH user: Locate it in the “**Login**” column of the table. As a reminder, the [user’s SSH access must be enabled](#sshcheck).
-- **SSH** user password: If you have forgotten this password, you can change it by clicking `...`{.action}, then `Change password`{.action}.
-- **SSH** server address: Locate the “**SSH** server” comment.
-- **SSH** server connection port: Locate the “**SSH** Port” comment
+>> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `FTP - SSH`{.action} tab.
+>>
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> On the new page, retrieve the elements described in the following table:
+>>
+>> |Element|Description|
+>> |---|---|
+>> |**SSH server address**| Locate `SSH server`. It is in the form `ssh.clusterXXX.hosting.ovh.net` (where each of the 3 `X` corresponds to a number between `0` and `9`).|
+>> |**SSH server connection port**| Locate `SSH port`. The default SSH port number is `22`.|
+>> |**Active SSH user**| In the table at the bottom of the page, find them in the `Login` column.<br>As a reminder, this user must [have active SSH access](#user-ssh-enablement).|
+>> |**SSH user password**| If you have forgotten this password, click the `...`{.action} button to the right of the row corresponding to the user concerned in the table at the bottom of the page, then `Change password`{.action}.|
 
-### Step 3: Log in to your storage space via SSH
+### 3 - Log in to your Web Hosting plan’s storage space via SSH
 
-To log in via SSH, use a terminal to interact directly with your storage space via command lines. 
+To connect via SSH, use a terminal to interact directly with your storage space via command lines.
 
 > [!primary]
 >
-> This tool is installed by default on macOS, Linux, and Windows 10. With an older Windows environment, you will need to install a program like [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows), or add the OpenSSH feature.
+> Command terminals are installed by default on macOS, Linux and Windows 10. An older Windows environment will require the installation of software such as [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) or the addition of OpenSSH functionality.
 
-There are now two ways of connecting to your storage space, depending on the method you use:
+There are now two ways of connecting to your web hosting plan via SSH. 
 
-#### 3.1 From a terminal.
+**Please click on your preferred connection method below to see explanations.**
+
+/// details | From a terminal
 
 > [!warning]
+>
 > There is no superuser (or root) access via SSH on our shared hosting plans.
 
-Once you have opened the terminal, use the following command, replacing the ‘yourlogin’, ‘ssh.cluster000.hosting.ovh.net’ and ‘22’ elements with those corresponding to your SSH credentials. 
+Once the terminal is open, use the following command, replacing the `yourlogin`, `ssh.clusterXXX.hosting.ovh.net` and `22` elements with those corresponding to your SSH credentials.
 
 ```bash
-ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
+ssh yourlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
-When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh).
+After sending the command, you will be prompted to enter the SSH user password.
 
 ![usessh](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-login.png){.thumbnail}
 
-#### 3.2 From a software application.
+///
 
-Open your software application (e.g. PuTTY), and enter your SSH connection details. This action will vary depending on the application you choose to use, so we cannot go into further detail on this in the guide. As a reminder, you will need to enter the following information:
+/// details | From a software application
 
-- **SSH** server: Enter the SSH server address you retrieved during [step 2](#sshlogin). Depending on which software you are using, the field may be labelled as "Server address" or "Host Name".
-- **Connection port**: Enter the SSH connection port you retrieved during [step 2](#sshlogin).
-- **SSH** login: Enter the SSH user. Depending on the software application you use, this field may be labelled as “Login” or “Username”.
-- **SSH** user password: Enter the password associated with the SSH login. Depending on which software you are using, the field should be labelled as "Password".
+Once you have opened the software (e.g. PuTTY), enter your SSH connection details. Since this procedure involves several steps, we cannot detail this in this documentation. Here is a reminder of the information you will need to enter:
 
-Once you have connected, move on to the next step.
+- **SSH server**: Enter the SSH server address retrieved in the [part 2](#sshlogin). Depending on the software you are using, the domain name may look like “Server Address” or “Hostname”.
+- **Connection port**: Enter the SSH connection port retrieved in [part 2](#sshlogin).
+- **SSH login**: Enter the SSH user. Depending on the software you are using, the domain name may look like “ID”, “Login” or even “Username”.
+- **SSH user password**: Enter the password associated with the SSH login.
 
-### Step 4: Interact with your storage space via SSH.
+///
 
-To interact with your storage space, you can use commands, which each have a direct meaning. Use the list below if you need to. Please note that **this list is not exhaustive**.
+Once you have logged in, continue to the next section.
+
+### 4 - Interact with your storage space via SSH <a name="ssh-using"></a>
+
+To interact with your storage space, you will need to use commands. These have a direct meaning derived from English. Use the list below if you need to. Important: **this information is not exhaustive**.
 
 |Command|Meaning|Description| 
 |---|---|---|
@@ -93,34 +174,32 @@ To interact with your storage space, you can use commands, which each have a dir
 |touch `arg`|Touch|Creates an empty file with the name mentioned in the `arg` argument, if a file with this name does not already exist.|
 |rm `arg`|Remove|Removes the file mentioned in the `arg` argument.| 
 |rm -r `arg`|Remove|Removes the directory mentioned as an `arg` argument, as well as all of its contents, recursively.| 
-|mv `arg1` `arg2`|Move|Renames or moves an element (specified as `arg1`) to a new area (specified as `arg2`).| 
+|mv `arg1` `arg2`|Move|Renames or moves an element (specified as `arg1`) to a new area (specified as `arg2`).|
 
-You can also run a command to launch a script using a specific PHP version. E.g. for PHP version 7.1, use the following command, and adapt the elements to match your details.
+You can also launch a script using a specific PHP version. For example, for PHP version 7.1, use the following command. Adapt its elements to your personal situation.
 
 ```sh
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation "[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
+Depending on the PHP version you want to use, the runtime environment may need to be modified for compatibility reasons. Refer to our documentation “[Web Hosting - Environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)” to find out more.
 
 > [!primary]
 >
-> Files and folders can also be copied using the **S**ecure **C**opy **P**protocol (**SCP**).
-> This protocol uses the SSH protocol to duplicate content securely between:
+> Files and/or folders can also be copied using the **S**ecure **C**opy **P**rotocol (**SCP**).
+> This protocol uses SSH protocol to securely duplicate content between:
 >
-> - A local computer/device and a remote server.
-> - A remote server and a local computer/device.
-> - Two remote servers.
+> - a local computer/device and a remote server
+> - two remote servers
 >
-> Find more information on using the `scp` command with our OVHcloud web hosting plans in our guide "[Web Hosting - Copying files with the SCP command](/pages/web_cloud/web_hosting/using-scp-command)"
->
+> Find more information on using the `scp` command with our OVHcloud web hosting plans in our guide “[Web Hosting - Copy files using SCP command](/pages/web_cloud/web_hosting/using-scp-command)”.
 
 ## Go further
 
-[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Web Hosting - Environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community).
+Join our [community of users](/links/community). 

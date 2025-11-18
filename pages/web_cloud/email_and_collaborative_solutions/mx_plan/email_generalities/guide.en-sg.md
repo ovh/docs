@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
-updated: 2025-05-19
+updated: 2025-06-26
 ---
 
 <style>
@@ -20,6 +20,11 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+> [!success]
+> Participate in our survey and help us improve this guide!<br>
+> Feel free to share your thoughts and ideas with us.<br>
+> [Go to the survey.](https://s.elq.fr/ovhext/EsCB5sR)
 
 ## Objective
 
@@ -204,8 +209,8 @@ Below are the **SMTP** settings to use when sending emails:
 
 - **Username**: Enter the **full** email address.
 - **Password**: Enter the password for the email account.
-- **EUROPE server (outgoing)**: pop.mail.ovh.net **or** ssl0.ovh.net.
-- **AMERICA/ASIA-PACIFIC server (outgoing)**: pop.mail.ovh.ca.
+- **EUROPE server (outgoing)**: smtp.mail.ovh.net **or** ssl0.ovh.net.
+- **AMERICA/ASIA-PACIFIC server (outgoing)**: smtp.mail.ovh.ca.
 - **Port**: 465.
 - **Security type**: SSL/TLS.
 

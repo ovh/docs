@@ -1,36 +1,36 @@
 ---
 title: Configuring an Additional IP
 excerpt: "Find out how to add Additional IP addresses to your instance's configuration"
-updated: 2025-04-28
+updated: 2025-11-12
 ---
 
 > [!primary]
+> This article is about Additional IPv4 configuration on a public interface. You can also configure IPv6 addresses on your Public Cloud instances using [this guide](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+> 
+> Please note that Additional IP addresses can also be configured in a vRack (private network), which allows interconnection over a wide range of OVHcloud services, offering more flexibility.
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
+> You can find more information about configuring Additional IP addresses in a vRack for usage with Public Cloud instances in the following guides:
 >
-
-## Objective
+> - [Configuring a public IP block in a vRack on a Public Cloud instance](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
+> - [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
 
 You may need to configure Additional IP addresses on your instances, for example if you are hosting multiple websites or international services. OVHcloud Additional IPs allow you to associate multiple IP addresses with a single network interface.
 
 **This guide explains how to add Additional IP addresses to your network configuration.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) or an Additional IP block
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- An [Additional IP address](/links/bare-metal/ip) or an Additional IP block
 - Administrative access (sudo) via SSH or GUI to your instance
 - Basic networking and administration knowledge
-
-> [!warning]
-> This feature is currently not available for Metal instances.
->
 
 ## Instructions
 
@@ -52,238 +52,253 @@ Concerning different distribution releases, please note that the proper procedur
 > [!primary]
 >
 > When configuring an Additional IP on a Public Cloud instance, you do not need a gateway and subnet mask.
-> 
-
-### Debian 11
-
-#### Step 1: Disable automatic network configuration
-
-Open the following file path with a text editor:
-
-```bash
-sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-```
-Enter the following line, then save and exit the editor.
-
-```bash
-network: {config: disabled}
-```
-Creating this configuration file will prevent changes to your network configuration from being made automatically.
-
-#### Step 2: Edit the network configuration file
-
-You can verify your network interface name with this command:
-
-```bash
-ip a
-```
-
-Open the network configuration file for editing with the following command:
-
-```bash
-sudo nano /etc/network/interfaces.d/50-cloud-init
-```
-Then add the following lines:
-
-```bash
-auto NETWORK_INTERFACE:ID
-iface NETWORK_INTERFACE:ID inet static
-address ADDITIONAL_IP
-netmask 255.255.255.255
-```
-
-#### Step 3: Restart the interface
-
-Apply the changes with the following command:
-
-```bash
-sudo systemctl restart networking
-```
-
-### Ubuntu 22.04 & Debian 12
-
-The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each Additional IP address will need its own line within the file.
-
-#### Step 1: Disable automatic network configuration
-
-Open the following file path with a text editor:
-
-```bash
-sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-```
-Enter the following line, then save and exit the editor.
-
-```bash
-network: {config: disabled}
-```
-Creating this configuration file will prevent changes to your network configuration from being made automatically.
-
-#### Step 2: Edit the configuration file
-
-You can verify your network interface name with this command:
-
-```bash
-ip a
-```
-
-Open the network configuration file for editing with the following command:
-
-```bash
-sudo nano /etc/netplan/50-cloud-init.yaml
-```
-
-Do not change the existing lines in the file; add your Additional IP address according to the example below:
-
-```yaml
-network:
-    version: 2
-    ethernets:
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE
-            addresses:
-            - ADDITIONAL_IP/32
-```
-
-> [!warning]
->
-> It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing.
 >
 
-Save and close the file.
+> [!success]
+> Select the tab corresponding to your operating system.
 
-#### Step 3: Apply the new network configuration
-
-You can test your configuration using this command:
-
-```bash
-sudo netplan try
-```
-
-If it is correct, apply it using the following command:
-
-```bash
-sudo netplan apply
-```
-
-Repeat this procedure for each Additional IP address.
-
-### Windows Server (2016)
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-Open `Instances`{.action} in the left-hand menu and click on the name of your instance. Switch to the tab `VNC console`{.action}.
-
-#### Step 1: Verify the network configuration
-
-Right-click on the `Start Menu`{.action} button and open `Run`{.action}.
-
-Type `cmd` and click `OK`{.action} to open the command line application.
-
-![cmdprompt](images/pci_win07.png){.thumbnail}
-
-In order to retrieve the current IP configuration, enter `ipconfig` at the command prompt.
-
-![check main IP configuration](images/image1-1.png){.thumbnail}
-
-#### Step 2: Change the IPv4 Properties
-
-Now you need to change the IP properties to a static configuration.
-
-Open the adapter settings in the Windows control panel and then open the `Properties`{.action} of `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
-
-![change the ip configuration](images/image2.png){.thumbnail}
-
-In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the IP address which you have retrieved in the first step, then click on `Advanced`{.action}.
-
-#### Step 3: Add the Additional IP in the "Advanced TCP/IP Settings"
-
-In the new window, click on `Add...`{.action} under "IP addresses". Enter your Additional IP address and the subnet mask (255.255.255.255).
-
-![advance configuration section](images/image4-4.png){.thumbnail}
-
-Confirm by clicking on `Add`{.action}.
-
-![Additional IP configuration](images/image5-5.png){.thumbnail}
-
-#### Step 4: Restart the network interface
-
-Back in the control panel (`Network Connections`{.action}), right-click on your network interface and then select `Disable`{.action}.
-
-![disabling network](images/image6.png){.thumbnail}
-
-To restart it, right-click on it again and then select `Enable`{.action}.
-
-![enabling network](images/image7.png){.thumbnail}
-
-#### Step 5: Check the new network configuration
-
-Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new Additional IP address.
-
-![check current network configuration](images/image8-8.png){.thumbnail}
-
-### cPanel (CentOS 7) / Red Hat derivatives
-
-#### Step 1: Edit the network configuration file
-
-You can verify your network interface name with this command:
-
-```bash
-ip a
-```
-
-Open the network configuration file for editing:
-
-```bash
-sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
-```
-
-Then add these lines:
-
-```bash
-DEVICE=NETWORK_INTERFACE:ID
-BOOTPROTO=static
-IPADDR=ADDITIONAL_IP
-NETMASK=255.255.255.255
-BROADCAST=ADDITIONAL_IP
-ONBOOT=yes
-```
-
-#### Step 2: Restart the interface
-
-Apply the changes with the following command:
-
-```bash
-sudo systemctl restart networking
-```
-
-### Plesk
-
-#### Step 1: Access the Plesk IP management section
-
-In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
-
-![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
-
-Click on `IP Addresses`{.action} under **Tools & Resources**.
-
-#### Step 2: Add the additional IP information
-
-In this section, click on the button `Add IP Address`{.action}.
-
-![add ip information](images/pleskip2-2.png){.thumbnail}
-
-Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
-
-![add ip information](images/pleskip3-3.png){.thumbnail}
-
-#### Step 3: Check the current IP configuration
-
-Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
-
-![current IP configuration](images/pleskip4-4.png){.thumbnail}
+> [!tabs]
+> **Debian 11**
+>>
+>> Debian 11
+>>
+>> Step 1: Disable automatic network configuration
+>>
+>> Open the following file path with a text editor:
+>>
+>> ```bash
+>> sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+>> ```
+>> Enter the following line, then save and exit the editor.
+>>
+>> ```bash
+>> network: {config: disabled}
+>> ```
+>>
+>> Creating this configuration file will prevent changes to your network configuration from being made automatically.
+>>
+>> Step 2: Edit the network configuration file
+>>
+>> You can verify your network interface name with this command:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> Open the network configuration file for editing with the following command:
+>>
+>> ```bash
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
+>> ```
+>> 
+>> Then add the following lines:
+>>
+>> ```bash
+>> auto NETWORK_INTERFACE:ID
+>> iface NETWORK_INTERFACE:ID inet static
+>> address ADDITIONAL_IP
+>> netmask 255.255.255.255
+>> ```
+>>
+>> Step 3: Restart the interface
+>>
+>> Apply the changes with the following command:
+>>
+>> ```bash
+>> sudo systemctl restart networking
+>> ```
+>>
+> **Debian 12, Ubuntu 22.04+**
+>> *Debian 12, Ubuntu 22.04+ and following
+>>
+>> The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each Additional IP address will need its own line within the file.
+>>
+>> Step 1: Disable automatic network configuration
+>>
+>> Open the following file path with a text editor:
+>>
+>> ```bash
+>> sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+>> ```
+>>
+>> Enter the following line, then save and exit the editor.
+>>
+>> ```bash
+>> network: {config: disabled}
+>> ```
+>>
+>> Creating this configuration file will prevent changes to your network configuration from being made automatically.
+>>
+>> Step 2: Edit the configuration file
+>>
+>> You can verify your network interface name with this command:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> Open the network configuration file for editing with the following command:
+>>
+>> ```bash
+>> sudo nano /etc/netplan/50-cloud-init.yaml
+>> ```
+>>
+>> Do not change the existing lines in the file; add your Additional IP address according to the example below:
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         NETWORK_INTERFACE:
+>>             dhcp4: true
+>>             match:
+>>                 macaddress: fa:xx:xx:xx:xx:63
+>>             set-name: NETWORK_INTERFACE
+>>             addresses:
+>>             - ADDITIONAL_IP/32
+>> ```
+>>
+>> > [!warning]
+>> >
+>> > It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing.
+>> >
+>>
+>> Save and close the file.
+>>
+>> Step 3: Apply the new network configuration
+>>
+>> You can test your configuration using this command:
+>>
+>> ```bash
+>> sudo netplan try
+>> ```
+>>
+>> If it is correct, apply it using the following command:
+>>
+>> ```bash
+>> sudo netplan apply
+>> ```
+>>
+>> Repeat this procedure for each Additional IP address.
+>>
+> **CentOS 7 / Red Hat derivatives**
+>> CentOS 7 / Red Hat derivatives
+>>
+>> Step 1: Edit the network configuration file
+>>
+>> You can verify your network interface name with this command:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> Open the network configuration file for editing:
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+>> ```
+>>
+>> Then add these lines:
+>>
+>> ```bash
+>> DEVICE=NETWORK_INTERFACE:ID
+>> BOOTPROTO=static
+>> IPADDR=ADDITIONAL_IP
+>> NETMASK=255.255.255.255
+>> BROADCAST=ADDITIONAL_IP
+>> ONBOOT=yes
+>> ```
+>>
+>> Step 2: Restart the interface
+>>
+>> Apply the changes with the following command:
+>>
+>> ```bash
+>> sudo systemctl restart networking
+>> ```
+>>
+> **Plesk**
+>> Plesk
+>>
+>> Step 1: Access the Plesk IP management section
+>>
+>> In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
+>>
+>> ![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+>>
+>> Click on `IP Addresses`{.action} under **Tools & Resources**.
+>>
+>> Step 2: Add the additional IP information
+>>
+>> In this section, click on the button `Add IP Address`{.action}.
+>>
+>> ![add ip information](images/pleskip2-2.png){.thumbnail}
+>>
+>> Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
+>>
+>> ![add ip information](images/pleskip3-3.png){.thumbnail}
+>>
+>> Step 3: Check the current IP configuration
+>>
+>> Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
+>>
+>> ![current IP configuration](images/pleskip4-4.png){.thumbnail}
+>>
+> **Windows Server**
+>> Windows Server
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>>
+>> Open `Instances`{.action} in the left-hand menu and click on the name of your instance. Switch to the tab `VNC console`{.action}.
+>>
+>> Step 1: Verify the network configuration
+>>
+>> Right-click on the `Start Menu`{.action} button and open `Run`{.action}.
+>>
+>> Type `cmd` and click `OK`{.action} to open the command line application.
+>>
+>> ![cmdprompt](images/pci_win07.png){.thumbnail}
+>>
+>> In order to retrieve the current IP configuration, enter `ipconfig` at the command prompt.
+>>
+>> ![check main IP configuration](images/image1-1.png){.thumbnail}
+>>
+>> Step 2: Change the IPv4 Properties
+>>
+>> Now you need to change the IP properties to a static configuration.
+>>
+>> Open the adapter settings in the Windows control panel and then open the `Properties`{.action} of `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
+>>
+>> ![change the ip configuration](images/image2.png){.thumbnail}
+>>
+>> In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the IP address which you have retrieved in the first step, then click on `Advanced`{.action}.
+>>
+>> Step 3: Add the Additional IP in the "Advanced TCP/IP Settings"
+>>
+>> In the new window, click on `Add...`{.action} under "IP addresses". Enter your Additional IP address and the subnet mask (255.255.255.255).
+>>
+>> ![advance configuration section](images/image4-4.png){.thumbnail}
+>>
+>> Confirm by clicking on `Add`{.action}.
+>>
+>> ![Additional IP configuration](images/image5-5.png){.thumbnail}
+>>
+>> Step 4: Restart the network interface
+>>
+>> Back in the control panel (`Network Connections`{.action}), right-click on your network interface and then select `Disable`{.action}.
+>>
+>> ![disabling network](images/image6.png){.thumbnail}
+>>
+>> To restart it, right-click on it again and then select `Enable`{.action}.
+>>
+>> ![enabling network](images/image7.png){.thumbnail}
+>>
+>> Step 5: Check the new network configuration
+>>
+>> Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new Additional IP address.
+>>
+>> ![check current network configuration](images/image8-8.png){.thumbnail}
+>>
 
 ### Troubleshooting
 
@@ -303,6 +318,6 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 [Migrating an Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

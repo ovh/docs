@@ -18,7 +18,7 @@ Lors de la création d'une sauvegarde de votre VPS (dans le cas d'une souscripti
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr-ca/vps/) avec une distribution [compatible](https://www.ovhcloud.com/fr-ca/vps/os/)
+- Disposer d'un [VPS](/links/bare-metal/vps) avec une distribution [compatible](https://www.ovhcloud.com/fr-ca/vps/os/)
 - cPanel doit être installé sur votre serveur
 
 ## En pratique

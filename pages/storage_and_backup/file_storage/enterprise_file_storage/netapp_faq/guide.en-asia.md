@@ -24,7 +24,7 @@ This solution can also be used to address more complex, practical cases, such as
 
 ### Can Enterprise File Storage be managed from the OVHcloud Control Panel?
 
-Yes, you can access this service directly from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) by going to the `Bare Metal Cloud`{.action} section, then `Storage and Backup`{.action}.
+Yes, you can access this service directly from your [OVHcloud Control Panel](/links/manager) by going to the `Bare Metal Cloud`{.action} section, then `Storage and Backup`{.action}.
 
 ## Availability
 
@@ -132,6 +132,6 @@ Enterprise File Storage is a service that is billed monthly by volume (from 1 TB
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

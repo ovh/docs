@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-05-15
+updated: 2025-10-27
 ---
 
 ## Objective
@@ -61,8 +61,6 @@ Each policy is displayed with its name, the number of identities linked to it, a
 
 ### Managing policies
 
-<a name="create-policy"></a>
-
 #### Creating a policy
 
 Click the `Create a policy`{.action} button.
@@ -77,15 +75,15 @@ The following form will be displayed:
 - **Resources**: Add resources or resource groups to be covered by the policy. The resources available are filtered by the product type selected beforehand.
 - **Actions**.
 
-There are 4 different ways to add actions:
+**There are 4 different ways to add actions:**
 
-- Activating the `Authorise all actions`{.action} option
+##### 1 - Activating the "Authorise all actions" option
 
 ![Create a policy](images/create_a_policy_02.png){.thumbnail}
 
 When activating this option, you allow all actions related to the selected products. This includes all existing actions as well as actions added in the future for these product types.
 
-- Selecting a group of managed permissions
+##### 2 - Selecting a group of managed permissions
 
 We provide permission groups that are preconfigured and managed by OVHcloud. You can select one or more groups by selecting them from the available list.
 
@@ -95,7 +93,7 @@ Details of the content of the managed permission groups are available in the [as
 
 Managed action groups can be used in addition to unit actions.
 
-- Adding actions manually
+##### 3 - Adding actions manually
 
 If you know the action name, you can add it manually.
 
@@ -109,7 +107,7 @@ For example, adding `vps:apiovh:ips/*` will grant the following rights:
 - **vps:apiovh:ips/delete**
 - **vps:apiovh:ips/get**
 
-- Selecting actions from the list
+##### 4 - Selecting actions from the list
 
 Finally, you can select actions from the list.
 
@@ -126,7 +124,27 @@ The available actions depend on the resource type and belong to one of five cate
 A search field is available to help identify a specific action on the list.
 
 > [!primary]
-> Actions related to IP and vRack products, as well as actions related to ordering and billing, are not yet available in the OVHcloud IAM.
+> Actions related to ordering and billing are not yet available in the OVHcloud IAM.
+
+#### Conditions on policies
+
+It's possible to add conditions on IAM policies.
+
+A policy with conditions is valid only if all conditions are validated.
+
+It's possible to add conditions on these elements:
+
+- A resource tag
+- The resource name
+- The product type
+- The IP of the request
+- The day of the week
+- The date
+- The time
+
+![Créer une politique](images/conditions.png){.thumbnail}
+
+Once added, conditions are displayed with the [syntax used on API](/pages/account_and_service_management/account_information/iam-policies-api)
 
 #### Editing a policy
 
@@ -143,6 +161,16 @@ To delete an existing policy, click the `...`{.action} button to the right of th
 A popup window will ask you to confirm the deletion.
 
 <a name="create-users"></a>
+
+#### Policies targeting other OVHcloud customer accounts
+
+Access policies can target other OVHcloud customer accounts.  
+The targeted account of this policy will be able to manage the rights received that way on its own policies, but will never be able to override the rights set on the access policy.
+
+For example, an account **xx1111-ovh** gives rights on `vps:apiovh:ips/*` to account **xx2222-ovh**:  
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to its own users, but will never be able to grant the right `vps:apiovh:reboot`.
+
+Access to the support will still be reserved to the owner of the resource.
 
 ### Managing identities
 

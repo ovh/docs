@@ -17,7 +17,7 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 
 ## Prerequisites
 
-- At least two [Public Cloud instances](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- At least two [Public Cloud instances](/links/public-cloud/public-cloud) in your OVHcloud account
 - An Additional IP address
 - Access to the [OVHcloud Control Panel](/links/manager)
 

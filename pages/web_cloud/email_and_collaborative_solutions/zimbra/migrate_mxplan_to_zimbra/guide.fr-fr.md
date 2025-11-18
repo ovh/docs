@@ -53,7 +53,7 @@ Utilisez l’outil de migration [**O**VH **M**ail **M**igrator](https://omm.ovh.
 
 #### Étape 1 : Accéder à OVH Mail Migrator
 
-Rendez-vous sur [OVH Mail Migrator](https://omm.ovh.net/){.external}.
+Rendez-vous sur [OVH Mail Migrator](https://omm.ovh.net/).
 
 Sur la page <https://omm.ovh.net/>, dans l'onglet `Migration`{.action}, cliquez sur `New migration`{.action}.
 

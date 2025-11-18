@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Criptografe seus objetos do lado do servidor com SSE-C ou SSE-OMK (EN)
 excerpt: This guide explains how to encrypt your server-side objects with SSE-C or SSE-OMK
-updated: 2024-11-29
+updated: 2025-09-12
 ---
 
 <style>
@@ -234,15 +234,34 @@ Be careful not to include specific encryption headers when downloading an encryp
 
 #### Adding encryption to an existing bucket on Object Storage
 
-To add SSE-OMK encryption to an existing Object Storage bucket on OVHcloud, you must use the `put-bucket-encryption` command from the AWS CLI. This command configures bucket encryption so that all newly added objects are automatically encrypted with SSE-OMK. Here is the specific command you would use:
+> [!primary]
+>
+> **Note:** If you want to enable SSE-OMK encryption at bucket creation, see our [Object Storage - Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
+>
 
-```bash
-aws s3api put-bucket-encryption --bucket your-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.io.cloud.ovh.net
-```
-
-- Replace `your-bucket` with the name of your Object Storage bucket.
-
-This will configure the bucket to use SSE-OMK encryption with keys managed by Object Storage (AES256) for all new objects.
+> [!tabs]
+> Via AWS S3api
+>> To add SSE-OMK encryption to an existing Object Storage bucket on OVHcloud, you must use the `put-bucket-encryption` command from the AWS CLI. This command configures bucket encryption so that all newly added objects are automatically encrypted with SSE-OMK. Here is the specific command you would use:
+>>
+>> ```bash
+>> aws s3api put-bucket-encryption --bucket your-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.io.cloud.ovh.net
+>> ```
+>>
+>> - Replace `your-bucket` with the name of your Object Storage bucket.
+>>
+>> This will configure the bucket to use SSE-OMK encryption with keys managed by Object Storage (AES256) for all new objects. 
+>>
+> Via the OVHcloud Control Panel
+>> In your OVHcloud Control Panel, click on the `Public Cloud`{.action} tab, select your Public Cloud project, then click on` Object Storage`{.action} in the left-hand menu.
+>>
+>> Next, select the Object Storage bucket you want to manage, and in the information panel, click on `Enable encryption`{.action}.
+>>
+>> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
+>>
+>> Click on the `Enable`{.action} button.
+>>
+>> ![Object Storage enabling encryption window](images/object_storage_enabling_encryption.png){.thumbnail}
+>>
 
 > [!primary]
 > Existing objects will not be affected. If you also wish to encrypt them, you will need to copy or upload them again after changing this configuration.
@@ -250,17 +269,26 @@ This will configure the bucket to use SSE-OMK encryption with keys managed by Ob
 
 ##### Viewing bucket encryption configuration
 
-After configuring your bucket encryption via `PutBucketEncryption` to use SSE-OMK, make sure everything is set up correctly using the following command with the AWS CLI:
+After configuring bucket encryption using `PutBucketEncryption` or through the OVHcloud Control Panel to enable SSE-OMK, make sure that everything has been set up correctly:
 
-```bash
-aws s3api get-bucket-encryption --bucket your-bucket --endpoint-url https://s3.io.cloud.ovh.net
-```
-
-- Replace `your-bucket` with the name of your bucket.
-
-With this command, you can check your bucket’s current encryption configuration to ensure that SSE-OMK encryption is enabled.
-
-In this order, replace `your-bucket` with the name of your bucket. This command returns the details of your bucket’s current encryption configuration, confirming the use of SSE-OMK for data encryption at rest.
+> [!tabs]
+> Via the AWS S3api
+>>
+>> ```bash
+>> aws s3api get-bucket-encryption --bucket your-bucket --endpoint-url https://s3.io.cloud.ovh.net
+>> ```
+>>
+>> - Replace `your-bucket` with the name of your bucket.
+>>
+>> With this command, you can check your bucket’s current encryption configuration to ensure that SSE-OMK encryption is enabled.
+>>
+>> In this order, replace `your-bucket` with the name of your bucket. This command returns the details of your bucket’s current encryption configuration, confirming the use of SSE-OMK for data encryption at rest.
+>>
+> Via the OVHcloud Control Panel
+>> Go to the information panel of the bucket concerned, then check the `Security and permissions` section. There you will find the `Encryption default` option, which indicates whether SSE-OMK encryption is enabled or not.
+>>
+>> ![Object Storage information panel encryption](images/object_storage_information_panel_encryption_enable.png){.thumbnail}
+>>
 
 This extra step ensures full transparency and helps ensure your data is kept safe to the highest standards, with the simplicity and efficiency offered by SSE-OMK encryption managed by OVHcloud.
 

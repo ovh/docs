@@ -16,7 +16,7 @@ Usługa NAS-HA OVHcloud pozwala na zarządzanie przestrzenią dyskową plików d
 
 ## Wymagania początkowe
 
-- Usługa [NAS-HA OVHcloud](https://www.ovh.pl/nas/)
+- Usługa [NAS-HA OVHcloud](/links/storage/nas-ha)
 - Zapoznaj się z naszym przewodnikiem Pierwsze kroki z [API OVHcloud](/pages/manage_and_operate/api/first-steps), aby zapoznać się z APIv6 OVHcloud
 
 ## W praktyce
@@ -208,6 +208,6 @@ Użyj następującej drogi, aby usunąć partycję:
 
 [Skonfigurować NAS na serwerze Windows poprzez CIFS](/pages/storage_and_backup/file_storage/ha_nas/nas_cifs)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

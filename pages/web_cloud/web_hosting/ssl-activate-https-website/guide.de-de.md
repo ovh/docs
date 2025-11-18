@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Website auf HTTPS umstellen"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website auf HTTPS umstellen, nachdem Sie ein SSL-Zertifikat aktiviert haben"
-updated: 2024-02-26
+updated: 2025-10-27
 ---
 
 ## Ziel
@@ -12,7 +12,7 @@ Mit Ihrem OVHcloud Webhosting verfügen Sie über ein [SSL-Zertifikat](/links/we
 
 ## Voraussetzungen
 
-- Auf Ihrem [OVHcloud Webhosting](/links/web/hosting){.external} ist ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl){.external} installiert.
+- Auf Ihrem [OVHcloud Webhosting](/links/web/hosting) ist ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl) installiert.
 - Sie verfügen über mindestens eine Website, die auf Ihrem OVHcloud Webhosting installiert und verfügbar ist.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
 
@@ -93,7 +93,7 @@ Wenn Sie eine *turn-key* Website verwenden, verwaltet deren Struktur automatisch
 
 ### Schritt 3 - HTTPS auf Ihrer Website aktivieren <a name="https-enable"></a>
 
-Sobald Ihr Webhosting über ein aktives SSL-Zertifikat verfügt, die betreffende [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) über eine aktive SSL-Verbindung verfügt und Ihre Website für die Umstellung auf *HTTPS* bereit ist, können Sie diese aktivieren.
+Sobald Ihr Domainname über [ein aktives SSL-Zertifikat auf Ihrem Webhosting](/pages/web_cloud/web_hosting/ssl_on_webhosting) verfügt und Ihre Website bereit ist, auf *HTTPS* umgestellt zu werden, können Sie dies aktivieren.
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask
 excerpt: How to deploy an app to analyse text sentiment with Hugging Face and Flask
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 > [!primary]
@@ -22,8 +22,8 @@ For more information about Hugging Face, please visit <https://huggingface.co/>.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt);
-- An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](/links/manager);
+- An AI Deploy project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
@@ -155,24 +155,25 @@ ENV HOME=/workspace
 
 ### Build the Docker image from the Dockerfile
 
-Launch the following command from the **Dockerfile** directory to build your application image:
+From the directory containing your **Dockerfile**, run one of the following commands to build your application image:
 
 ```console
+# Build the image using your machine's default architecture
 docker build . -t sentiment_analysis_app:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t sentiment_analysis_app:latest .
 ```
+
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
 
 > [!primary]
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **sentiment_analysis_app:latest**.
->
-
-> [!warning]
->
-> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
->
-> `docker buildx build --platform linux/amd64 ...`
 >
 
 ### Test it locally (optional)
@@ -243,11 +244,10 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/sentime
 - You can also imagine deploying an Object Detection model with **Flask** in this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_04_flask_yolov5).
 - Discover an other tool to deploy easily AI models: **Gradio**. Refer to this [documentation](/pages/public_cloud/ai_machine_learning/deploy_tuto_05_gradio_sketch_recognition).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
-

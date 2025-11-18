@@ -1,7 +1,7 @@
 ---
 title: Gestire la fatturazione dei tuoi account Email Pro
 excerpt: Come gestire la fatturazione del tuo servizio Email Pro
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Obiettivo
@@ -44,7 +44,7 @@ Si apre una finestra con la tabella che ti permette di gestire il periodo di rin
 >
 > Per una gestione semplificata, la fatturazione di ogni account Email Pro viene automaticamente allineata all'inizio del mese. Per effettuare l'allineamento e quindi spostare la data di iscrizione, riceverai una fattura dal tuo account Email Pro, prorata temporis.
 >
->Esempio: Un ordine effettuato il 08 gennaio con un abbonamento mensile genererà la sua prossima fatturazione il 08 febbraio. La fattura successiva copre il periodo compreso tra il 08 febbraio e il 1o marzo.
+> **Esempio**: Un ordine effettuato il 08 gennaio con un abbonamento mensile genererà la sua prossima fatturazione il 08 febbraio. La fattura successiva copre il periodo compreso tra il 08 febbraio e il 1o marzo.
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
@@ -61,6 +61,10 @@ Clicca sulla scheda `Account email`{.action} della tua piattaforma e poi sul pul
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Rimuovi la piattaforma
+
+Dopo aver eliminato gli account email, è necessario eliminare il o i domini associati alla piattaforma Email Pro prima di disattivarla. Per farlo, clicca sulla scheda `Domini associati`{.action}. Clicca sul pulsante `...`{.action} sulla riga del nome di dominio da eliminare e poi clicca su `Elimina questo dominio`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 Dalla finestra di gestione della piattaforma Email Pro, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Disattiva`{.action}. 
 

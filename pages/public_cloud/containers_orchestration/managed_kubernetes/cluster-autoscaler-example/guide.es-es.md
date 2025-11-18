@@ -33,7 +33,7 @@ You can activate the autoscaler on several node pools, each of which can have a 
 >
 > The source code of the following example is available in the public Github repository [public-cloud-examples](https://github.com/ovh/public-cloud-examples/tree/main/containers-orchestration/managed-kubernetes/autoscaler)
 
-When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) or directly [using the Kubernetes API](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes).
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) or directly [using the Kubernetes API](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes).
 
 
 ## Deploying a test workload
@@ -304,10 +304,10 @@ In this tutorial we have seen how to enable the autoscaler on a node pool on you
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
 
 Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

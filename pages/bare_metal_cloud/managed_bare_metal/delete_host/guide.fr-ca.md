@@ -12,7 +12,7 @@ Dans certains cas il peut être utile de supprimer un serveur hôte (_host_) de 
 
 ## Prérequis
 
-* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
+* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/).
 * Accéder à l’interface de gestion vSphere.
 
 ## En pratique

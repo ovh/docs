@@ -1,7 +1,7 @@
 ---
 title: "Die Größe einer Public Cloud Instanz über OpenStack CLI ändern"
 excerpt: Erfahren Sie hier, wie Sie die Ressourcen Ihrer Instanz skalieren können, um auf erhöhte Anforderungen zu reagieren
-updated: 2023-09-26
+updated: 2025-08-25
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ Ihre Instanz kann aufgrund erhöhter Aktivität oder einfach aufgrund neuer Anfo
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/).
+- Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/public-cloud).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 - Sie haben [OpenStack CLI auf Ihrem System installiert](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 - Sie haben die [OpenStack Umgebungsvariablen konfiguriert](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).

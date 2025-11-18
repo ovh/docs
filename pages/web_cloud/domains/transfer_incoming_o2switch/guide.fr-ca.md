@@ -68,7 +68,7 @@ Vous devez aussi :
 
 ### Déverrouiller le nom de domaine et récupérer le code de transfert
 
-Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert){.external}.
+Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert).
 
 ### Initier le transfert de domaine chez OVHcloud
 

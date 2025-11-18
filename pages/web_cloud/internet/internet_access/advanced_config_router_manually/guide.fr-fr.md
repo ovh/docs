@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un routeur manuellement'
 excerpt: 'Découvrez comment configurer votre accès Internet OVHcloud sur votre propre routeur'
-updated: 2025-06-05
+updated: 2025-10-14
 ---
 
 ## Objectif
@@ -47,11 +47,12 @@ Le profil de votre accès est disponible sur l'espace client. Pour le retrouver,
 
 Par défaut, l'onglet affiché est `Mon accès`.
 
-Vous retrouverez, dans les `Caractéristiques`, les informations sur le profil du modem dans la section `Connexion`.
+Le type de l'accès est disponible dans le cadre `Informations générales`.
+Le profil du modem est disponible dans la section `Connexion` du cadre `Caractéristiques`.
 
-![modem profil dans espace client](images/profil-2023.png){.thumbnail}
+![profil du modem dans l'espace client](images/profil-2025.png){.thumbnail}
 
-### Profil Standard
+### Profil A
 
 Ce profil s'applique aux typologies d'accès suivantes :
 
@@ -59,7 +60,7 @@ Ce profil s'applique aux typologies d'accès suivantes :
 - Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) en collecte SFR
 - Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) en collecte AXIONE
 - Accès ADSL (Cuivre) en collecte ORANGE
-- Accès FTTO (Fibre) Bouygues
+- Accès FTTO/FTTE (Fibre dédiée) Bouygues
 
 Les paramètres à configurer sont :
 
@@ -77,13 +78,13 @@ Les paramètres à configurer sont :
     - **Service Category** : UBR without PCR
 - **Pour le VDSL** :
     - **Type** : VDSL over PTM
-- **Pour le FTTH et le FTTO** :
+- **Pour le FTTH, FTTE et FTTO** :
     - **Type** : Ethernet
 
-### Profil Orange
+### Profil B
 
 > [!primary]
-> La différence avec le profil Standard est l'activation du VLAN 835.
+> La différence avec le « profil A » est l'activation du VLAN 835.
 >
 
 Ce profil s'applique aux typologies d'accès suivantes :
@@ -103,10 +104,10 @@ Les paramètres à configurer sont :
 - **Pour le FTTH** :
     - **Type** : Ethernet
 
-### Profil Bouygues
+### Profil C
 
 > [!primary]
-> La différence avec le profil Standard est l'activation du VLAN 4001.
+> La différence avec le « profil A » est l'activation du VLAN 4001.
 >
 
 Ce profil s'applique aux typologies d'accès suivantes :
@@ -124,15 +125,15 @@ Les paramètres à configurer sont :
 - **Pour le FTTH** :
     - **Type** : Ethernet
 
-### Profil Celan
+### Profil D
 
 > [!primary]
-> La différence avec le profil Standard est l'activation du VLAN 4070.
+> La différence avec le « profil A » est l'activation du VLAN 4070.
 >
 
 Ce profil s'applique aux typologies d'accès suivantes :
 
-- Accès FTTE (Fibre) en collecte Celan
+- Accès FTTE (Fibre dédiée) en collecte Celan
 
 Les paramètres à configurer sont :
 

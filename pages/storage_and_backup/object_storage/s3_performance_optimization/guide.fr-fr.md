@@ -45,7 +45,7 @@ Les avantages des *multipart uploads- sont les suivants :
 Vous aurez besoin des éléments suivants :
 
 - Avoir créé un [bucket OVHcloud](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
-- Avoir installé et configuré [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}
+- Avoir installé et configuré [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - Avoir un fichier volumineux divisé en plusieurs parties
 
 > [!primary]
@@ -67,7 +67,7 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
 ```
 
 > [!primary]
-> N'oubliez pas de sauvegarder les **upload ID**, **key*- et **bucket name*- pour les utiliser avec la commande `upload-part`.
+> N'oubliez pas de sauvegarder les **upload ID**, **key** et **bucket name** pour les utiliser avec la commande `upload-part`.
 >
 
 Pour chaque partie, vous devez exécuter la commande `upload-part` dans laquelle vous spécifiez les *bucket*, *key- et *upload ID- :
@@ -191,7 +191,7 @@ SIZE est exprimé en méga-octets, la taille de bloc par défaut est de 15 Mo, l
 $ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
 ```
 
-Pour plus d'informations sur *s3cmd*, consultez la documentation officielle [ici](https://s3tools.org/usage){.external}.
+Pour plus d'informations sur *s3cmd*, consultez la documentation officielle [ici](https://s3tools.org/usage).
 
 #### rclone
 
@@ -219,7 +219,7 @@ Cette commande représente le nombre de segments uploadés simultanément.
 $ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M testfile s3:test-bucket
 ```
 
-Pour plus d'informations sur *rclone*, consultez la [documentation officielle](https://rclone.org/s3/){.external}.
+Pour plus d'informations sur *rclone*, consultez la [documentation officielle](https://rclone.org/s3/).
 
 ### Augmentation du nombre de demandes simultanées
 
@@ -239,7 +239,7 @@ OpenIO est une solution de *Software Defined Storage- sur laquelle repose l’Ob
 
 Dans OpenIO, un **conteneur*- est essentiellement une entité logique interne qui contient tous les objets d'un bucket donné. Chaque conteneur est associé à une base de données de métadonnées interne qui répertorie toutes les adresses du cluster des objets qu'il contient. Par défaut, un bucket Object Storage est associé à un conteneur, mais cela peut changer avec le mécanisme de *sharding*.
 
-Le *sharding- est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets*- appelé **shards**.
+Le *sharding* est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets** appelé **shards**.
 
 Le *sharding- permet :
 

@@ -1,7 +1,7 @@
 ---
 title: Activación del firewall de aplicación
 excerpt: Cómo activar el firewall de aplicación en un plan de hosting.
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Objetivo
@@ -26,13 +26,13 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
-- Tener al menos un [dominio](/links/web/domains){.external} asociado al alojamiento.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
+- Tener al menos un [dominio](/links/web/domains) asociado al alojamiento.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 ### Activar el firewall de aplicación en la configuración de PHP
 

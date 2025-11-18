@@ -43,8 +43,8 @@ Thanks to the `Node Pool's template`, you will:
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -462,7 +462,7 @@ And if you edit the Node Pool configuration to activate the AutoScaling and scal
 
 ### Create a Node Pool Template through API
 
-You can also create a Node Pool template through the API. You can use the [API Explorer](https://api.ovh.com/) for example to interact with our API.
+You can also create a Node Pool template through the API. You can use the [API Explorer](/links/api) for example to interact with our API.
 
 To create a Node Pool with a template (labels, annotations, taints...), you have to make a call on:
 
@@ -605,8 +605,8 @@ with the following information:
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/asia/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

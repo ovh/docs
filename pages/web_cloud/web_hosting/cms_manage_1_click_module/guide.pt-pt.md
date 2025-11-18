@@ -56,8 +56,8 @@ Também pode procurar o e-mail recebido durante a criação do módulo a partir 
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal : O editor deste programa não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do Drupal. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte a página oficial [drupal.org](https://www.drupal.org/){.external}.
-> - PrestaShop : O editor deste software não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do PrestaShop. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://www.prestashop.com){.external} para aceder à sua página oficial.
+> - Drupal : O editor deste programa não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do Drupal. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte a página oficial [drupal.org](https://www.drupal.org/).
+> - PrestaShop : O editor deste software não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do PrestaShop. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://www.prestashop.com) para aceder à sua página oficial.
 >
 Também é possível alterar a palavra-passe de acesso à interface de administração do seu CMS diretamente a partir da sua base de dados.<br>
 No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a operação com a documentação proposta pelo editor do seu CMS ou que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
@@ -73,7 +73,7 @@ No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a opera
 
 Para eliminar o módulo 1 clique, deve começar por identificar a sua base de dados de forma **segura**. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Bases de dados`{.action}.
 
-Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/), pode considerar que se trata do seu site.
+Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [Web Cloud Databases](/links/web/databases), pode considerar que se trata do seu site.
 
 Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da `Pasta raiz`: trata-se do diretório no qual se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
 
@@ -129,10 +129,10 @@ Adicione ferramentas de teste do tipo CAPTCHA aos formulários do seu site.
 
 Não instale no seu site plugins ou templates que não foram recomendados pelas comunidades oficiais do seu CMS: 
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://community.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/community){.external}
-- [PrestaShop](https://www.prestashop.com/pt){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://community.joomla.org/)
+- [Drupal](https://www.drupal.org/community)
+- [PrestaShop](https://www.prestashop.com/pt)
 
 ## Quer saber mais? <a name="go-further"></a>
 

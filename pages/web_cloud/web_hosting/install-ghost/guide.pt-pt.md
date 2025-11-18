@@ -6,9 +6,9 @@ updated: 2022-05-04
 
 ## Introdução
 
-[Ghost](https://ghost.org/){.external} é um gestor de conteúdos open source destinado a blogueiros ou jornalistas que simplifica o processo de publicação na Internet. O programa está escrito em JavaScript e utiliza [Node.js](https://nodejs.org/){.external}, uma plataforma que permite criar websites e API em JavaScript do lado do servidor.
+[Ghost](https://ghost.org/) é um gestor de conteúdos open source destinado a blogueiros ou jornalistas que simplifica o processo de publicação na Internet. O programa está escrito em JavaScript e utiliza [Node.js](https://nodejs.org/), uma plataforma que permite criar websites e API em JavaScript do lado do servidor.
 
-O [alojamento Cloud Web da OVHcloud](/links/web/hosting-cloud-web-offer){.external} permite utilizar Node.js como motor de execução para os seus websites e, assim, instalar e alojar o Ghost ou qualquer outra aplicação concebida para Node.js.
+O [alojamento Cloud Web da OVHcloud](/links/web/hosting-cloud-web-offer) permite utilizar Node.js como motor de execução para os seus websites e, assim, instalar e alojar o Ghost ou qualquer outra aplicação concebida para Node.js.
 
 Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento Cloud Web da OVHcloud e publicá-lo através do seu domínio.
 
@@ -16,10 +16,10 @@ Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento 
 
 ### O que precisa de ter
 
-- Ter um serviço de [alojamento Cloud Web da OVHcloud](/links/web/hosting-cloud-web-offer){.external}.
+- Ter um serviço de [alojamento Cloud Web da OVHcloud](/links/web/hosting-cloud-web-offer).
 - Ter ativado Node.js como motor de execução.
 - Ter adicionado o domínio em questão como multisite e ter definido Node.js como o motor de execução.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 - O que precisa de saber:
     - Conhecer as bases do ecossistema Node.js
     - Aceder através de SSH.
@@ -29,7 +29,7 @@ Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento 
 
 ### 1 - Ativar Node.js como motor de execução
 
-Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente](/links/manager){.external}. Clique em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecione o alojamento Cloud Web correspondente. Por fim, clique no separador `Motores de execução`{.action}.
+Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente](/links/manager). Clique em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecione o alojamento Cloud Web correspondente. Por fim, clique no separador `Motores de execução`{.action}.
 
 A tabela que aparece indica os motores de execução que se encontram adicionados. Certifique-se de que o motor de execução Node.js está ativo. Se tal for o caso, consulte o passo “[2 - Associar o Node.js a um multisite](./#2-associar-o-nodejs-a-um-multisite)”.
 
@@ -50,7 +50,7 @@ No nova janela, insira as informações solicitadas com os valores do nosso exem
 |Ambiente da aplicação|production|
 |Script de lançamento da aplicação|server.js|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Para mais informações sobre os motores de execução, consulte o nosso manual [Gerir os motores de execução de um alojamento Cloud Web](/pages/web_cloud/web_hosting/manage-runtime){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Para mais informações sobre os motores de execução, consulte o nosso manual [Gerir os motores de execução de um alojamento Cloud Web](/pages/web_cloud/web_hosting/manage-runtime).
 
 ![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Na nova janela que aparecerá, preencha as informações necessárias em funçã
 |Pasta raiz|ghost|
 |Motor de execução|NodeJS 8|
 
-No que diz respeito às opções adicionais, selecione as que pretende ativar. Uma vez as informações introduzidas, clique em `Seguinte`{.action} e finalize a operação. Esta operação pode demorar até uma hora. No entanto, a alteração da configuração DNS pode demorar até 24 horas antes de ficar totalmente efetiva. Se pretender obter mais informações sobre a gestão dos multisites, consulte o nosso manual “[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}”.
+No que diz respeito às opções adicionais, selecione as que pretende ativar. Uma vez as informações introduzidas, clique em `Seguinte`{.action} e finalize a operação. Esta operação pode demorar até uma hora. No entanto, a alteração da configuração DNS pode demorar até 24 horas antes de ficar totalmente efetiva. Se pretender obter mais informações sobre a gestão dos multisites, consulte o nosso manual “[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
 
 ![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
 
@@ -165,7 +165,7 @@ demonon@cloudweb-ssh:~ $ cd ghost/
 demonon@cloudweb-ssh:~/ghost $
 ```
 
-Obtenha a [versão mais recente do Ghost](https://ghost.org/){.external} e descomprima o seu conteúdo.
+Obtenha a [versão mais recente do Ghost](https://ghost.org/) e descomprima o seu conteúdo.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ ls
@@ -184,7 +184,7 @@ demonon@cloudweb-ssh:~/ghost $ ls
 Gruntfile.js  LICENSE  MigratorConfig.js  PRIVACY.md  README.md  content  core  index.js  package.json  public  server.js  yarn.lock
 ```
 
-Ghost utiliza [Yarn](https://yarnpkg.com/){.external}, uma alternativa ao **npm**, para gerir as dependências Node.js. Instale o Yarn através de **npm** e adicione estes binários ao seu “PATH”:
+Ghost utiliza [Yarn](https://yarnpkg.com/), uma alternativa ao **npm**, para gerir as dependências Node.js. Instale o Yarn através de **npm** e adicione estes binários ao seu “PATH”:
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ npm-node8 install yarn
@@ -242,7 +242,7 @@ A instalação e a configuração de Ghost ficam assim concluídas. Só falta re
 
 ### 7 - Reiniciar o *daemon* Node.js
 
-Para reiniciar o *daemon* Node.js, aceda à sua [Área de Cliente OVHcloud](/links/manager){.external}. No separador `Multi-site`{.action}, clique no botão `...`{.action} no final da linha correspondente ao domínio à direita, em `Reiniciar`{.action}.
+Para reiniciar o *daemon* Node.js, aceda à sua [Área de Cliente OVHcloud](/links/manager). No separador `Multi-site`{.action}, clique no botão `...`{.action} no final da linha correspondente ao domínio à direita, em `Reiniciar`{.action}.
 
 Depois de realizar esta operação, a aplicação ficará acessível através do nome de domínio escolhido na configuração do seu multisite.
 
@@ -263,17 +263,17 @@ Neste tutorial, foi-lhe explicado como instalar uma aplicação Node.js num aloj
 
 ## Quer saber mais? Veja os guias abaixo
 
-[Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} (Versão PT disponível em breve)
+[Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) (Versão PT disponível em breve)
 
-[Colocar o meu site online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Colocar o meu site online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Instalar um CMS com os Módulos 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Instalar um CMS com os Módulos 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-[Como criar um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+[Como criar um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)
 
-[Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
+[Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

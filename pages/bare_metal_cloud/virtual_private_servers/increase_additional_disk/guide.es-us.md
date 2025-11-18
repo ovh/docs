@@ -1,12 +1,8 @@
 ---
 title: "Aumentar el tamaño de un disco adicional"
 excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partición principal"
-updated: 2023-03-14
+updated: 2025-07-24
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -16,10 +12,14 @@ Si ha alcanzado la capacidad máxima de su disco adicional, puede añadir almace
 
 ## Requisitos
 
-- Un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
+- Un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
 - Un [disco adicional](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) configurado en el VPS.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 - Tener acceso al VPS por SSH o RDP para la administración.
+
+> [!warning]
+> Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Procedimiento
 
@@ -29,7 +29,7 @@ Los pasos que se indican a continuación suponen que ha configurado un disco adi
 
 Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor entre los `Servidores privados virtuales`{.action}.
 
-En el cuadro **Resumen de las opciones**, haga clic en el botón `...`{.action} situado en la sección `Discos adicionales`. Seleccione `Aumentar el tamaño del disco`{.action}.
+En la pestaña `Inicio`{.action}, en la sección **Su configuración**, haga clic en `...`{.action} junto a la opción `Discos adicionales` y seleccione `Aumentar el tamaño del disco`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 
@@ -37,7 +37,7 @@ Seleccione el nuevo tamaño de disco en la ventana que aparece y haga clic en `A
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Aparecerá un mensaje confirmando su solicitud. Haga clic en el enlace dentro del mensaje y siga el proceso de pedido. Es posible que se haya abierto automáticamente una nueva pestaña de navegación para el pedido.
+Aparecerá un mensaje confirmando su solicitud. Haga clic en el enlace dentro del mensaje y siga el proceso de pedido. Se abrirá una nueva pestaña del navegador para finalizar el pedido.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
@@ -55,7 +55,7 @@ El aumento de la capacidad del disco tardará unos minutos después de la valida
 > [!warning]
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con [nuestra comunidad](https://community.ovh.com/en/).
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [nuestra comunidad](https://community.ovh.com/en/).
 >
 
 #### En un VPS Linux
@@ -213,4 +213,4 @@ El volumen redimensionado incluye ahora el espacio en disco adicional.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

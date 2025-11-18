@@ -12,7 +12,7 @@ In alcuni casi eliminare un server host può risultare utile, ad esempio per res
 
 ## Prerequisiti
 
-* Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
+* Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/)
 * Avere accesso all’interfaccia di gestione vSphere
 
 ## Procedura

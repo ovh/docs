@@ -4,6 +4,11 @@ excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrem OVHcloud Kunden-Account verb
 updated: 2025-04-28
 ---
 
+> [!success]
+> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
+> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
+> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/OiIwy54)
+
 ## Ziel
 
 Die Verwaltung Ihrer Dienste erfolgt hauptsächlich über das OVHcloud Kundencenter.
@@ -70,7 +75,7 @@ Nachdem diese Umstellung erfolgt ist, [richten Sie **erneut** eine Backup-Adress
 
 In diesem Fall kann Ihnen der Telefonsupport von OVHcloud nicht unmittelbar helfen.
 
-Folgen Sie diesem [Vorgang](https://www.ovh.de/cgi-bin/de/procedure/procedureChangeEmail.cgi){.external}, damit Ihre Identität überprüft werden kann.
+Folgen Sie diesem [Vorgang](https://www.ovh.de/cgi-bin/de/procedure/procedureChangeEmail.cgi), damit Ihre Identität überprüft werden kann.
 
 Nach Eingang der E-Mail bei OVHcloud ersetzen wir Ihre Kontakt-E-Mail-Adresse, sofern alle angeforderten Nachweise übereinstimmen.
 

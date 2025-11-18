@@ -1,126 +1,124 @@
 ---
-title: Managing the Load Balancer from the customer control panel
-excerpt: Summary of the main features and Load Balancer ownership through the customer control panel
-updated: 2017-12-01
+title: Managing your Load Balancer service via the Control Panel
+excerpt: An overview of the main features, and how to get started using the Load Balancer service from the Control Panel
+updated: 2025-07-30
 ---
 
 ## Objective
 
-The goal of this guide is to assist you when you first operate your Load Balancer by introducing the solution’s main features.
+This guide is designed to help you get started using the Load Balancer, by introducing the main features of the solution.
 
 ## Requirements
 
-- Access to your customer control panel
-- Owning a [Load Balancer](https://www.ovh.com/ca/en/solutions/load-balancer/)
+- You must have access to your OVH Control Panel.
+- You must have ordered a [Load Balancer](/links/network/load-balancer).
 
-## In practice
+## Instructions
 
-### Managing your Load Balancer from the customer control panel
+### Managing your Load Balancer via the Control Panel
 
 To manage your Load Balancer via the Control Panel, go to the `Bare Metal Cloud`{.action} section, click `Network`{.action} and `Load Balancer`{.action}. The main page for the service will then appear:
 
 ![Load Balancer](images/lbip-main.png){.thumbnail}
 
-On this home page, you will find the following information:
+On this page, you will see the following information:
 
-|Element|Function|
+|Element|Purpose|
 |---|---|
-|Status|Summary of your Load Balancer with IP, front-ends, operational farms and added servers|
-|Usage|A summary of your LoadBalancer usage|
-|Graphs|Here you will find the graphs in relation to your service and based on simultaneous connections or the number of requests per minute|
-|Details|Your IPv4 and the Additional IPs attached as well as the number of outbound IPv4 (details available by clicking on the ellipsis)|
-|Configuration|This is where you can customize the name of your service (which will appear at the top in the left column) The cipher(s), which are customizable, as well as the data centre where your Load Balancer is located|
-|Subscription|You will find below all the administrative details pertaining to your offer|
+|Status|An overview of your Load Balancer with the IP, front-ends, functional clusters and servers added|
+|Use|A summary of how to use your Load Balancer|
+|Graphs|In this section, you will see the graphs linked to service, by concurrent connections or requests per minute|
+|Information|Your IPv4 and IPv6 addresses and the Additional IPs linked to them, as well as the number of outgoing IPv4s (see more details by clicking on the `...`{.action} button)|
+|Configuration|Here, you can customise the name of your solution (which will appear at the top of the left-hand column) The cipher(s) are customisable, as well as the availability zone where your Load Balancer is based|
+|Subscription|Here, you will see the admin details for your solution|
 
-To add a `front-end`{.action} or some `server farms`{.action}, simply click on their respective buttons. A context menu will then help you to configure each part of your service.
+To add `front-ends`{.action} or `Server clusters`{.action}, simply click on their respective buttons. A form will then help you configure each part of your solution.
 
-### Managing your frontends
+### Managing front-ends
 
-In order to add front-ends, all you need to do is go to the `Frontends`{.action} section and click on `Add a front-end`{.action}. You will then gain access to the following menu:
+To add front-ends, simply go to the `Front-ends`{.action} section, and click `Add a front-end`{.action}. The following menu will then appear:
 
-![Add front-end](images/iplb-add-front-end.png){.thumbnail}
+![Add front-end](images/add_frontend.png){.thumbnail}
 
-Details of a front-end component
+Details of front-end parts:
 
-|Element|Function|
+|Element|Purpose|
 |---|---|
-|Name|You can name your frontend if you wish; this can be very useful when you have several of them to identify them quickly|
+|Name|If you want, you can choose a name for your front-end. This is very useful when you have several front-ends, so you can tell them apart quickly|
 |Protocol|You can choose between HTTP, HTTPS, TCP, SSL TCP (or TLS) and UDP|
-|Port|Choose which listening port to use|
-|Data centre|You can choose between your data centre or all of them to create your front-end|
-|Default farm|If you have several configured farms, you can choose one by default for each front-end|
+|Port|Choose the listening port you wish to use|
+|Datacentre|Choose between your availability zone or all availability zones to create your front-end|
+|Default cluster|If you have several clusters configured, you can choose one of them as a default for each front-end|
 
-You also have access to advanced settings:
+You can also access advanced settings:
 
 ![Advanced settings](images/advanced_frontend.png){.thumbnail}
 
-|Element|Function|
+|Element|Purpose|
 |---|---|
 |Dedicated Additional IP|List of Additional IPs for remote servers|
-|Restricting access to some IPs|List that allows restricting remote access to the Load Balancer, only in IPv4|
-|HTTP redirection|Adding an HTTP redirect URL|
-|HTTP header|Add an HTTP header here|
+|Restrict access to IPs|List for restricting remote access to the Load Balancer, for IPv4 only|
+|HTTP redirection|Add a HTTP redirection URL|
+|HTTP header|Add a HTTP header here|
 
-### Managing your server cluster
+### Managing your clusters
 
-In order to add a server cluster, all you need to do is go to the `Server clusters`{.action} section and click on `Add a server cluster`{.action}. You will gain access to the same main features as for the frontend However, advanced options will be different:
+To add a server cluster, simply go to the `Server clusters`{.action} section, and click `Add a server cluster`{.action}. You will get the same main options as for the front-end. However, the advanced options are different:
 
-![Adding a farm](images/iplb-cluster-adv.png){.thumbnail}
+![Add a cluster](images/advanced_cluster.png){.thumbnail}
 
-|Element|Function|
+|Element|Purpose|
 |---|---|
-|Distribution mode|Choice between Round-robin, First, Last, Source or URI for your IP balancing|
-|Session tracking|Session tracking can be done through Cookie or IP Source, to be determined here|
-|Probe|Probe choice and activation|
+|Distribution method|Choosing between Round-robin, First, Last, Source or URI for your IP load balancing|
+|Track session|You can track sessions via Cookie or source IP, this can be defined here|
+|Probe|Choosing and activating a probe|
 
 ### Managing your servers
 
-Once your server farm has been created, you need to add servers to it. Below are the details for advanced options:
+Once you have created your server cluster, you just need to add servers to it. Details on these options are below, as well as advanced options:
 
-![Add a server](images/iplb-cluster-add-server.png){.thumbnail}
-![Add a server](images/iplb-cluster-add-server-1.png){.thumbnail}
-![Add a server](images/iplb-cluster-add-server-2.png){.thumbnail}
+![Add server](images/add_server.png){.thumbnail}
+![Add server](images/add_server_advanced.png){.thumbnail}
 
-|Element|Function|
+|Element|Purpose|
 |---|---|
-|Name|You can name your server if you wish; this can be very useful when you have several of them to identify them quickly|
-|IPv4 address|Adding the IP of the service that will be used as a server|
+|Name|If you want, you can choose a name for your server. This is very useful when you have several servers, so you can tell them apart quickly|
+|IPv4 address|Adding the IP address of the service that will act as a server|
 |Port|Server port|
-|Backup server|Making sure to specify that this is a backup server|
-|Use the farm’s availability probe|Choosing the probe that was approved during the creation of the farm|
-|Encrypting requests with SSL|Encrypting requests with an SSL certificate|
-|Cookie|Adding a customized session cookie|
-|Certificate chain|Adding a certificate chain|
-|Load balancing weight|Choosing the balancing weight for load distribution|
+|Backup server|Selecting which server is a backup server|
+|Use the server cluster’s probe|Choosing the probe that was validated when you created the cluster|
+|Encrypt requests with SSL|Encrypting requests with an SSL certificate|
+|Cookie|Add a customised session cookie|
+|Certificate chain|Add a certificate chain|
+|Balancing weight|Choose the balancing weight for the load balancer|
+|PROXY Protocol version|**Only if you have configured it**, choose the version of the PROXY protocol you wish to use on the server. </br> You can find more information on the PROXY protocol and how to use it with the OVHcloud Load Balancer in [this guide](/pages/network/load_balancer/create_proxyprotocol/).|
 
-### Managing SSL Certificates
-
-An SSL certificate can be added to the Load Balancer in the `SSL Certificate`{.action} section You will then have two possibilities: either ordering an SSL certificate through OVH or adding an external certificate.
+### Managing SSL certificates
+You can add an SSL certificate to the Load Balancer in the `SSL Certificate`{.action} section. You have two options: you can order an SSL certificate from OVH, or add an external certificate.
 
 #### OVH SSL certificate
+To order an SSL certificate, simply go to the `SSL Certificate`{.action} section, then click `Order an SSL certificate`{.action} and browse the options available:
 
-To order an SSL certificate, simply go to the `SSL Certificate`{.action} section, then click on `Order an SSL Certificate`{.action} and let us guide you:
+![Ordering an SSL certificate](images/ordering_ssl.png){.thumbnail}
 
-![Ordering an SSL Certificate](images/iplb-order-ssl.png){.thumbnail}
-
-|Element|Function|
+|Element|Purpose|
 |---|---|
-|Types of certificate|Free (Let's Encrypt), Comodo DV or Comodo EV (find details here: https://www.ovh.com/ca/en/web-hosting/shared-ssl.xml)|
-|Fully Qualified Domain Name (FQDN)|Affected domains|
+|Name|If you want, you can choose a name for your certificate. This is very useful when you have several certificates, so you can tell them apart quickly|
+|Certificate type|Free (Let's Encrypt), Comodo DV or Comodo EV (For more details, [see this page](/links/web/hosting-options-ssl))|
+|Fully Qualified Domain Name (FQDN)|Domain(s) concerned|
 
 #### Adding an external SSL certificate
-
 If you already have your own SSL certificate, you can add it directly:
 
-![Adding an SSL Certificate](images/iplb-add-ssl.png){.thumbnail}
+![Adding an SSL certificate](images/external_ssl.png){.thumbnail}
 
-|Element|Function|
+|Element|Purpose|
 |---|---|
-|Name|You can name your certificate if you wish; this can be very useful when you have several of them to identify them quickly|
-|Private key|Field where a private key can be added to the service|
-|Certificate|Certificate field|
-|Chain|Field where a root certificate can be added if necessary|
+|Name|If you want, you can choose a name for your certificate. This is very useful when you have several certificates, so you can tell them apart quickly|
+|Private key|Field for entering the private key to add to the service|
+|Certificate|Field for adding the certificate|
+|Chain|Field for adding the root certificate, if required|
 
-## Going further
+## Go further
 
-Discuss with our user community at <https://community.ovh.com> .
+Join our [community of users](/links/community).

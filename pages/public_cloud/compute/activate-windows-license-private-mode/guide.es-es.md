@@ -17,7 +17,7 @@ En ese caso, deberá activar la licencia manualmente para poder acceder a todos 
 
 ## Requisitos
 
-- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
+- Un [proyecto de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
 - Estar conectado al [área de cliente de OVHcloud](/links/manager)
 - [Haber creado un usuario de OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 

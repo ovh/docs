@@ -1,7 +1,7 @@
 ---
 title: Gestire il Load Balancer dallo Spazio Cliente OVH
 excerpt: Principali funzionalità e gestione del servizio Load Balancer dallo Spazio Cliente OVH
-updated: 2017-12-01
+updated: 2025-07-30
 ---
 
 ## Obiettivo
@@ -11,7 +11,7 @@ Questa guida ti mostra come utilizzare il Load Balancer e presenta le principali
 ## Prerequisiti
 
 - Avere accesso allo Spazio Cliente OVH
-- Disporre di un [Load Balancer](https://www.ovh.it/soluzioni/ip-load-balancing/){.external} attivo
+- Disporre di un [Load Balancer](/links/network/load-balancer) attivo
 
 ## Procedura
 
@@ -28,8 +28,8 @@ In questa interfaccia sono disponibili le seguenti informazioni:
 |Stato|Riepilogo delle informazioni relative al tuo Load Balancer: nome del servizio, frontend, server farm attive e server aggiunti|
 |Utilizzo|Riepilogo dei dati relativi ai consumi del tuo Load Balancer|
 |Grafici|Grafici associati al tuo servizio, elaborati in base alle connessioni simultanee o al numero di richieste al minuto|
-|Informazioni|IPv4 e Additional IP associati e numero di IPv4 di uscita (per visualizzare i dettagli, clicca sui tre puntini di sospensione)|
-|Configurazione|Sezione in cui è possibile personalizzare il nome del tuo servizio (che verrà visualizzato in alto e nella colonna di sinistra), i Cipher e il datacenter in cui è localizzato il Load Balancer |
+|Informazioni|I tuoi indirizzi IPv4 e IPv6 e gli Additional IP associati, e il numero di IPv4 di uscita (ottieni i dettagli cliccando sul pulsante `...`{.action})|
+|Configurazione|Personalizza qui il nome della tua offerta. Trova anche i cipher, che sono personalizzabili, e la zona di disponibilità in cui si trova il tuo Load Balancer|
 |Abbonamento|Sezione in cui vengono mostrati i dettagli amministrativi del servizio|
 
 Per aggiungere `Frontend`{.action} e `Server Farm`{.action}, è sufficiente cliccare sul pulsante corrispondente: un form ti guiderà nella configurazione. 
@@ -47,7 +47,7 @@ Ecco gli elementi del frontend:
 |Nome|È possibile assegnare un nome al tuo frontend per identificarlo più facilmente|
 |Protocollo|Puoi scegliere tra HTTP, HTTPS, TCP, TCP SSL (TLS) e UDP|
 |Porta|Scegli la porta da utilizzare|
-|Datacenter|Scegli un datacenter o seleziona “Tutti”|
+|Datacenter|È possibile scegliere tra una zona di disponibilità specifica o tutte le zone di disponibilità per la creazione del front-end|
 |Farm predefinita|Se hai configurato più farm, puoi sceglierne una predefinita per ogni frontend|
 
 Inoltre, hai accesso alle opzioni avanzate
@@ -62,6 +62,7 @@ Inoltre, hai accesso alle opzioni avanzate
 |Header HTTP|Aggiunta di un header HTTP|
 
 ### Gestisci le server farm
+
 Per aggiungere una server farm, seleziona la scheda `Server Farm`{.action} e clicca su `Aggiungi una Server Farm`{.action}. Le opzioni principali disponibili sono le stesse del frontend. Le opzioni avanzate sono invece differenti:
 
 ![Aggiungi una Server Farm](images/advanced_cluster.png){.thumbnail}
@@ -90,6 +91,7 @@ Una volta creata la farm, non ti resta che aggiungervi dei server. Di seguito, i
 |Cookie|Aggiunta di un cookie di sessione personalizzato|
 |Catena di certificazione|Aggiunta di una catena di certificazione|
 |Peso di bilanciamento|Scelta del peso di bilanciamento per la ripartizione del carico|
+|Versione protocollo PROXY|**Solo se è già stato configurato**, scegliere la versione del protocollo PROXY da utilizzare su questo server. </br> Per maggiori informazioni sul protocollo PROXY e sul suo utilizzo con il servizio OVHcloud Load Balancer, consulta [questa guida](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Gestisci i certificati SSL
 
@@ -104,7 +106,7 @@ Per ordinare un certificato SSL, seleziona la scheda `Certificati SSL`{.action},
 |Elemento|Descrizione|
 |---|---|
 |Nome|È possibile assegnare un nome al tuo certificato per identificarlo più facilmente|
-|Tipo di certificato|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (per maggiori dettagli, consulta la pagina <https://www.ovhcloud.com/it/web-hosting/options/ssl/>)|
+|Tipo di certificato|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (Per maggiori dettagli, [consulta questa pagina](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|I domini interessati|
 
 #### Aggiungi un certificato SSL
@@ -122,4 +124,4 @@ Se hai già attivato il tuo certificato SSL, è possibile aggiungerlo direttamen
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

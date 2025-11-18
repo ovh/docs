@@ -110,6 +110,8 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Repita este procedimento para os seus outros servidores e atribua a cada um deles um endereço IP não utilizado a partir do seu intervalo privado. A partir daí, os seus servidores poderão comunicar entre si na rede privada.
 >>
+> **Ubuntu e Debian 12**
+>>
 >> Com a ajuda do editor de texto à sua escolha, abra o ficheiro de configuração de rede que se encontra em `/etc/netplan/` para o editar. Aqui, o ficheiro chama-se `50-cloud-init.yaml`.
 >>
 >> ```bash
@@ -249,7 +251,7 @@ link ether f0:00:00:ef:0e:f0
 >> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
 >> ```
 >>
->> - Alterar a configuração de **auto** para **manual*:
+>> - Alterar a configuração de **auto** para **manual**:
 >>
 >> ```bash
 >> sudo nmcli connection modify CONNECTION_NAME IPv4.method manual

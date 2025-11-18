@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer un certificat SSL gratuit Let's Encrypt"
 excerpt: "Découvrez comment activer ou regénérer un certificat SSL gratuit Let's Encrypt sur votre hébergement Web"
-updated: 2025-02-20
+updated: 2025-06-15
 ---
 
 ## Objectif
@@ -31,6 +31,18 @@ Let's Encrypt est une autorité de certification gratuite, automatisée, ouverte
 - Commander ou disposer d'un [nom de domaine](/links/web/domains) et disposer des droits exclusifs sur son utilisation. Le ou les noms de domaine/sous-domaines ne doivent pas déjà être liés à un certificat SSL.
 
 ## En pratique
+
+> [!primary]
+>
+> **Informations sur la migration vers la nouvelle interface de gestion des certificats SSL :**
+>
+> La suite de ce guide s'adresse aux clients dont les services d'hébergement web n'ont pas encore migré vers la nouvelle interface de gestion des certificats SSL.
+> Pour repérer si cette migration est effectuée, positionnez-vous sur votre hébergement web dans votre espace client OVHcloud et vérifiez la présence de l’onglet `Certificats SSL`.
+> Si l'onglet `Certificats SSL` est présent, votre service a déjà migré sur la nouvelle interface de gestion. Dans ce cas, consultez directement [ce guide](/pages/web_cloud/web_hosting/ssl_management) pour gérer votre certificat SSL.
+>
+> Pour des raisons techniques, l'ensemble des services d'hébergement web de tous nos clients ne peut pas être migré en une seule fois. Cette migration est donc répartie sur quelques semaines et se réalise automatiquement, sans aucune incidence sur le fonctionnement de vos services d'hébergement web, et sans aucune intervention ou action nécessaire de votre part. 
+>
+> À terme, tous les services d'hébergement web fonctionneront avec la nouvelle interface de gestion des certificats SSL.
 
 ### 1. Pré-attribuer le futur certificat SSL Let's Encrypt à votre (vos) nom(s) de domaine/sous-domaine(s) <a name="ssl-multisite"></a>
 
@@ -152,7 +164,7 @@ Cette étape peut prendre plusieurs heures.
 
 > [!warning]
 >
-> Let's Encrypt, l'autorité qui fournit le certificat SSL, [limite à cinq le nombre de régénérations possibles par semaine](https://letsencrypt.org/docs/rate-limits/){.external}. Par conséquent, soyez vigilant sur les différentes régénérations que vous pourriez entreprendre à court terme afin de ne pas être temporairement bloqué.
+> Let's Encrypt, l'autorité qui fournit le certificat SSL, [limite à cinq le nombre de régénérations possibles par semaine](https://letsencrypt.org/docs/rate-limits/). Par conséquent, soyez vigilant sur les différentes régénérations que vous pourriez entreprendre à court terme afin de ne pas être temporairement bloqué.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

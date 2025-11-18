@@ -33,7 +33,7 @@ This option is currently available via the OVHcloud [API](/links/api).
 
 ### Requirements
 
-- Access to the OVHcloud [API](/links/api){.external} (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
+- Access to the OVHcloud [API](/links/api) (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ### Instructions

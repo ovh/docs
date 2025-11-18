@@ -36,7 +36,7 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 
 - El dominio no debe estar en período de **redención** o de eliminación.
 - El dominio no debe ser bloqueado en su registrador.
-- Los datos del propietario deben estar bien actualizados en el [Whois](https://www.nominet.uk/whois/){.external} del dominio.
+- Los datos del propietario deben estar bien actualizados en el [Whois](https://www.nominet.uk/whois/) del dominio.
 - Deberá obtener el código de autorización que se enviará a la dirección de correo electrónico del propietario.
 
 > [!primary]
@@ -61,7 +61,7 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 
 #### Etapa 1: Modificación del TAG del dominio
 
-Para poder transferir su dominio a OVHcloud, es necesario indicar previamente el TAG de OVHcloud a su registrador actual. El TAG de OVHcloud es "OVH-FR". La lista de TAGS de los diferentes registradores está disponible en el sitio oficial del Registro [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
+Para poder transferir su dominio a OVHcloud, es necesario indicar previamente el TAG de OVHcloud a su registrador actual. El TAG de OVHcloud es "OVH-FR". La lista de TAGS de los diferentes registradores está disponible en el sitio oficial del Registro [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
 > [!primary]
 >

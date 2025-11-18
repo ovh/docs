@@ -8,7 +8,7 @@ updated: 2024-03-28
 
 Pour rendre vos infrastructures et plateformes Public Cloud conformes à [l’hébergement des données de santé](https://www.ovhcloud.com/fr-ca/enterprise/certification-conformity/hds/) en France, celles-ci doivent nécessairement être certifiées « Hébergeur de données de santé (HDS) ».
 
-Les services OVHcloud Public Cloud sont certifiés HDS pour certaines activités listées dans le [référentiel de certification](https://esante.gouv.fr/labels-certifications/hds/certification-des-hebergeurs-de-donnees-de-sante){.external} de l'Agence Numérique en Santé.
+Les services OVHcloud Public Cloud sont certifiés HDS pour certaines activités listées dans le [référentiel de certification](https://esante.gouv.fr/labels-certifications/hds/certification-des-hebergeurs-de-donnees-de-sante) de l'Agence Numérique en Santé.
 
 La liste des produits OVHcloud certifiés est disponible sur la page « [OVHcloud products HDS certification](/pages/account_and_service_management/account_information/hds_certification) ».
 
@@ -16,8 +16,8 @@ La liste des produits OVHcloud certifiés est disponible sur la page « [OVHclou
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-- Avoir souscrit au [niveau de support Business ou Enterprise](https://www.ovhcloud.com/fr-ca/support-levels/) pour votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Avoir souscrit au [niveau de support Business ou Enterprise](/links/support) pour votre compte OVHcloud.
 
 ## En pratique
 

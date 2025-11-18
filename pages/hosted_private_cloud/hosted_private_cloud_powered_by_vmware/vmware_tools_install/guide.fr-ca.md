@@ -12,7 +12,7 @@ Les VMware Tools améliorent les performances d'une machine virtuelle et permett
 
 ## Prérequis
 
-- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](/links/manager))
 
 ## En pratique
 

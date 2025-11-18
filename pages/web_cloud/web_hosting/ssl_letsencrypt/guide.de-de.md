@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Kostenloses SSL-Zertifikat von Let's Encrypt aktivieren"
 excerpt: "Erfahren Sie hier, wie Sie ein kostenloses SSL-Zertifikat von Let's Encrypt auf Ihrem Webhosting aktivieren oder erneuern"
-updated: 2025-02-20
+updated: 2025-06-15
 ---
   
 ## Ziel  
@@ -31,6 +31,18 @@ Let's Encrypt ist eine kostenlose, automatisierte, offene und gemeinnützige Zer
 - Sie verfügen über einen [Domainnamen](/links/web/domains) und dessen exklusive Nutzungsrechte oder beabsichtigen, einen zu registrieren. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
 
 ## In der praktischen Anwendung
+
+> [!primary]
+>
+> **Informationen zur Migration auf das neue SSL-Zertifikat-Verwaltungsinterface:**
+>
+> Diese Anleitung richtet sich an Kunden, deren Webhosting-Dienste noch nicht auf das neue Verwaltungsinterface für SSL-Zertifikate migriert sind.
+> Gehen Sie in Ihrem OVHcloud Kundencenter auf Ihr Webhosting und überprüfen Sie den Tab `SSL-Zertifikate`, um festzustellen, ob diese Migration durchgeführt wurde.
+> Wenn der Tab `SSL-Zertifikate` vorhanden ist, wurde Ihr Dienst bereits zum neuen Verwaltungsinterface migriert. In diesem Fall konsultieren Sie bitte [diese Anleitung](/pages/web_cloud/web_hosting/ssl_management), um Ihr SSL-Zertifikat zu verwalten.
+>
+> Aus technischen Gründen können nicht alle Webhosting-Dienste unserer Kunden auf einmal migriert werden. Diese Migration erfolgt automatisch über mehrere Wochen, ohne dass die Funktionsweise Ihrer Webhosting-Dienste beeinträchtigt wird oder dass dazu weitere Eingriffe oder Aktionen Ihrerseits erforderlich sind.
+>
+> Im Laufe der Zeit werden alle Webhosting-Dienste mit dem neuen Verwaltungsinterface für SSL-Zertifikate funktionieren.
 
 ### 1. Das künftige SSL Let's Encrypt Zertifikat Ihrem Domainnamen zuweisen <a name="ssl-multisite"></a>
 
@@ -152,7 +164,7 @@ Dieser Schritt kann mehrere Stunden dauern.
 
 > [!warning]
 >
-> Let's Encrypt [begrenzt die Anzahl der Erneuerungen pro Woche auf fünf](https://letsencrypt.org/docs/rate-limits/){.external}. Achten Sie daher auf die Regenerierungen, um nicht vorübergehend blockiert zu werden.
+> Let's Encrypt [begrenzt die Anzahl der Erneuerungen pro Woche auf fünf](https://letsencrypt.org/docs/rate-limits/). Achten Sie daher auf die Regenerierungen, um nicht vorübergehend blockiert zu werden.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

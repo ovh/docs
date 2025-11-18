@@ -1,7 +1,7 @@
 ---
 title: "Gérer son hébergement web avec Visual Studio Code via SFTP"
 excerpt: "Administrer un site internet sur un hébergement web avec Visual Studio Code grâce à une extension SFTP"
-updated: 2023-11-06
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -26,7 +26,7 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur de l'IDE Visual Studio Code](https://code.visualstudio.com/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur de l'IDE Visual Studio Code](https://code.visualstudio.com/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 ### Installer l’extension SFTP pour Visual Studio Code
@@ -83,6 +83,8 @@ Ce fichier est présent dans le dossier .vscode, lui-même positionné à la rac
 ### Configurer le fichier sftp.json
 
 Avant de travailler sur votre projet, téléchargez-le dans votre dossier local précédemment créé. Cependant, dans un premier temps, assurez-vous que le fichier « sftp.json » est correctement configuré. Les informations utiles sont présentes dans votre [espace client OVHcloud](/links/manager). Dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `FTP - SSH`{.action}.
+
+![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
 Dans le fichier « sftp.json » , rentrez les valeurs pour les entrées suivantes :
 
@@ -155,7 +157,7 @@ S'il est demandé, saisissez le mot de passe associé à l’utilisateur renseig
 
 > [!primary]
 >
-> Pour rappel, la bonne configuration du fichier « sftp.json » est primordiale. Si vous rencontrez une erreur avant le téléchargement de votre projet, elle est généralement causée par un défaut de configuration du fichier « sftp.json ». Pour toute question, reportez-vous à la section [FAQ de l'extension](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md){.external}.
+> Pour rappel, la bonne configuration du fichier « sftp.json » est primordiale. Si vous rencontrez une erreur avant le téléchargement de votre projet, elle est généralement causée par un défaut de configuration du fichier « sftp.json ». Pour toute question, reportez-vous à la section [FAQ de l'extension](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md).
 >
 
 ### Effectuer des modifications sur les fichiers
@@ -170,7 +172,7 @@ Jusqu'à présent, nous avons seulement mentionné les commandes : `SFTP: Config
 
 ![hosting](/pages/assets/screens/other/web-tools/vscode/list_commands.png){.thumbnail}
 
-Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
+Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands).
 
 À présent, vous êtes en mesure d'accéder et de modifier le contenu de votre hébergement web via Visual Studio Code.
 Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet depuis Visual Studio Code. Il convient pour une première expérience. Néanmoins, si vous modifiez plusieurs fichiers et que ces derniers sont synchronisés sur votre hébergement web, il vous sera impossible de voir l'historique de vos modifications pour éventuellement revenir dessus ou rattraper une erreur.

@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Gestionar un certificado SSL"
 excerpt: "Descubra cómo gestionar un certificado SSL en un alojamiento web de OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objetivo
@@ -69,6 +69,18 @@ Consulte a continuación los cuatro enlaces a nuestras guías dedicadas a estas 
 > Si quiere eliminar un certificado SSL de su alojamiento web y **antes de continuar**, asegúrese de que la supresión del certificado SSL no hará que sus sitios web dejen de estar accesibles. En ese caso, los usuarios encontrarán un error de seguridad al intentar acceder a su sitio web en HTTPS.
 
 Esta comprobación es inherente a la configuración de su sitio web. Si necesita ayuda, le recomendamos que contacte con un proveedor de servicios especializado. No podremos asistirle.
+
+> [!primary]
+>
+> **Información sobre la migración a la nueva interfaz de gestión de certificados SSL:**
+>
+> El resto de esta guía se dirige a los clientes cuyos servicios de alojamiento web aún no hayan migrado a la nueva interfaz de gestión de certificados SSL.
+> Para consultar si se ha realizado la migración, conéctese al área de cliente de OVHcloud, y compruebe si la pestaña `Certificados SSL` está presente.
+> Si la pestaña `Certificados SSL` está presente, su servicio ya ha migrado a la nueva interfaz de gestión. En ese caso, consulte directamente [esta guía](/pages/web_cloud/web_hosting/ssl_management) para gestionar su certificado SSL.
+>
+> Por razones técnicas, todos los servicios de alojamiento web de todos nuestros clientes no pueden migrarse de una sola vez. Esta migración se realiza de forma automática, a lo largo de varias semanas, sin que afecte al funcionamiento de los servicios de alojamiento web y sin que usted tenga que realizar ninguna intervención o acción.
+>
+> A largo plazo, todos los servicios de alojamiento web funcionarán con la nueva interfaz de gestión de certificados SSL.
 
 Para eliminar el certificado SSL instalado en el alojamiento web, lleve a cabo los siguientes pasos:
 

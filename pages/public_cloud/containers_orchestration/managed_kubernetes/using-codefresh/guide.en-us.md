@@ -4,11 +4,11 @@ excerpt: 'Find out how to use Codefresh CI/CD with an OVHcloud Managed Kubernete
 updated: 2019-07-01
 ---
 
-In this tutorial we will see how you can connect [Codefresh](https://codefresh.io){.external}, a CI/CD platform for Kubernetes, to an OVHcloud Managed Kubernetes cluster.
+In this tutorial we will see how you can connect [Codefresh](https://codefresh.io), a CI/CD platform for Kubernetes, to an OVHcloud Managed Kubernetes cluster.
 
 ## Before you begin
 
-The first thing you need to follow this tutorial is a Codefresh account, you can get it directly at [Codefresh](https://codefresh.io){.external} site.
+The first thing you need to follow this tutorial is a Codefresh account, you can get it directly at [Codefresh](https://codefresh.io) site.
 
 ![Codefresh](images/using-codefresh-01.jpg){.thumbnail}
 
@@ -151,12 +151,12 @@ Then click on *Save* to save your cluster on your Codefresh Dashboard.
 
 ### And now?
 
-Now you can follow [Codefresh official tutorial](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/){.external} to deploy a Docker image to a Kubernetes cluster and also how to setup an automated pipeline to automatically redeploy it when the source code changes.
+Now you can follow [Codefresh official tutorial](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/) to deploy a Docker image to a Kubernetes cluster and also how to setup an automated pipeline to automatically redeploy it when the source code changes.
 
 ![Connect an OVH Kubernetes cluster to Codefresh dashboard](images/using-codefresh-08.jpg){.thumbnail}
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

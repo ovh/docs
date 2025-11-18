@@ -40,7 +40,7 @@ Esistono diversi modi efficaci per creare una password, come il **metodo fonetic
 
 In rete sono inoltre disponibili numerosi strumenti gratuiti che permettono di generare password del tutto sicure, difficili da decifrare e semplici da ricordare.
 
-Per maggiori informazioni sulla sicurezza delle password, consulta la sezione [Per saperne di più](/pages/account_and_service_management/account_information/manage-ovh-password#per-saperne-di-piu){.external} di questa guida.
+Per maggiori informazioni sulla sicurezza delle password, consulta la sezione [Per saperne di più](/pages/account_and_service_management/account_information/manage-ovh-password#per-saperne-di-piu) di questa guida.
 
 ### Utilizza un software per la gestione di password 
 
@@ -112,10 +112,10 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 ## Per saperne di più
 
-[Raccomandazioni della Polizia Postale per scegliere password efficaci](https://www.commissariatodips.it/notizie/articolo/scegli-password-efficaci/index.html){.external}
+[Raccomandazioni della Polizia Postale per scegliere password efficaci](https://www.commissariatodips.it/notizie/articolo/scegli-password-efficaci/index.html)
 
-[“Pillole di Sicurezza” di Clusit, l’Associazione Italiana per la Sicurezza Informatica](https://clusit.it/pubblicazioni/){.external}
+[“Pillole di Sicurezza” di Clusit, l’Associazione Italiana per la Sicurezza Informatica](https://clusit.it/pubblicazioni/)
 
-[Gestionale di password KeePass](https://keepass.info/){.external}
+[Gestionale di password KeePass](https://keepass.info/)
 
 Contatta la nostra [Community di utenti](/links/community).

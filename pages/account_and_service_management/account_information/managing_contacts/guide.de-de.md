@@ -1,20 +1,16 @@
 ---
 title: 'Die Kontakte Ihrer Dienste verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten'
-updated: 2025-04-28
+updated: 2025-08-27
 ---
-
-> [!warning]
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
-> 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
->
-
-## Ziel
 
 Die meisten OVHcloud Dienste werden mithilfe mehrerer Kontakte verwaltet. Jedem dieser Kontakte ist eine eigene Kundenkennung zugewiesen. 
 
 **Diese Anleitung erklärt, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten.**
+
+> [!primary]
+> OVHcloud bietet ein [Richtlinien-System (IAM Policy)](/pages/account_and_service_management/account_information/iam-policy-ui/) an, mit dem der Zugriff auf andere Kunden-Accounts delegiert werden kann.  
+> IAM-Richtlinien ermöglichen die Definition eines detaillierten Zugriffs bei gleichzeitiger Nachvollziehbarkeit der Aktionen.
 
 ## Definition
 
@@ -109,7 +105,7 @@ Die Kontaktänderung wird einige Minuten nach Bestätigung der Anfrage durch die
 
 ### Beispiel: Ihrem Webmaster die technische Verwaltung Ihrer Website erlauben
 
-Sie haben gerade einen OVHcloud Dienst abonniert, um Ihren eigenen [Onlineshop zu hosten](https://www.ovhcloud.com/de/web-hosting/ecommerce-website/). Sie haben einen unserer [Partner kontaktiert](https://partner.ovhcloud.com/de/directory/) und Sie werden um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website erstellen zu können.
+Sie haben gerade einen OVHcloud Dienst abonniert, um Ihren eigenen [Onlineshop zu hosten](https://www.ovhcloud.com/de/web-hosting/ecommerce-website/). Sie haben einen unserer [Partner kontaktiert](/links/partner) und Sie werden um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website erstellen zu können.
 
 > [!warning]
 >
@@ -122,7 +118,7 @@ Wenn Ihre Domain noch nicht mit Ihrem Webhosting verbunden ist und Sie die notwe
 
 Die Zugangsberechtigung eines ["technischen Kontakts"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenfalls nicht möglich ist es, die [Verwaltung Ihres Domainnamens auf einen anderen Hosting-Provider zu übertragen](/pages/web_cloud/domains/transfer_outgoing_domain) oder den [Inhaber zu ändern](/pages/web_cloud/domains/trade_domain). 
 
-Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste jederzeit den ["technischen Kontakt"](#technique)" Ihrer Dienstleistung ändern.
+Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste jederzeit den ["technischen Kontakt"](#technique) Ihrer Dienstleistung ändern.
 
 ### Sonderfall bei Domaininhabern
 

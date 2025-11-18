@@ -1,12 +1,12 @@
 ---
 title: CLI - Launch an AI notebook
 excerpt: Learn how to run an AI Notebook using the CLI
-updated: 2024-09-12
+updated: 2025-11-17
 ---
 
 ## Objective
 
-This guide covers the submission of new [** AI Notebooks**](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition) through the **ovhai** CLI.
+This guide covers the submission of new [**AI Notebooks**](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition) through the **ovhai** CLI.
 
 ## Requirements
 
@@ -269,7 +269,7 @@ Now that the notebook is in the `RUNNING` state, a https address is defined in t
 
 You can now start writing code in your notebook. Since we used the PyTorch framework in our example, we will be able to use it without having to install anything ourselves.
 
-As you explore your notebook, you will find an `ai-training-examples` folder already included in your workspace. This repository is automatically cloned for each notebook and includes a variety of examples that you can use with OVHcloud AI products, such as AI Notebooks.
+As you explore your notebook, you will find an `ai-training-examples` folder already included in your [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace). This repository is automatically cloned for each notebook and includes a variety of examples that you can use with OVHcloud AI products, such as AI Notebooks.
 
 ### Stopping a notebook
 
@@ -321,7 +321,7 @@ Learn how to access your Object Storage data and Git repositories from your note
 
 Learn how to share your notebooks with other people [here](/pages/public_cloud/ai_machine_learning/cli_14_howto_cli_sharing).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -47,7 +47,7 @@ A continuación, configure los parámetros recomendados por OVHcloud:
 - **Port binding**: Static (reserva y asignación del puerto a una máquina virtual)
 - **Port allocation**: Elastic (Permite ampliar en caliente el número de puertos)
 - **Number of ports**: 24
-- **VLAN type** : VLAN (los demás son [PVLAN](https://kb.vmware.com/s/article/1010691){.external} y Trunk)
+- **VLAN type** : VLAN (los demás son [PVLAN](https://kb.vmware.com/s/article/1010691) y Trunk)
 - **VLAN ID** : 21 (sabiendo que el ID puede configurarse de 1 a 4096)
 - Marque la opción *Customize default policies configuracion*.
 
@@ -66,7 +66,7 @@ Tiene 3 parámetros de seguridad que pueden activarse en función de sus necesid
 
 ![configuración de seguridad](images/11network4.png){.thumbnail}
 
-Permite desactivar el [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external}.
+Permite desactivar el [Traffic shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html).
 
 ![suavizado de tráfico](images/12network5.png){.thumbnail}
 

@@ -19,9 +19,9 @@ Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Shopify, E
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
-- Tener un [dominio](/links/web/domains){.external} registrado con OVHcloud.
-- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Tener un [dominio](/links/web/domains) registrado con OVHcloud.
+- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un plan de hosting con Shopify.
 - Tener acceso a la gestión de este alojamiento web en Shopify.
 
@@ -35,7 +35,7 @@ Antes de seguir los dos pasos de esta guía, le recomendamos que se familiarice 
 
 ### Configurar los registros DNS en su cuenta de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 Se mostrará una tabla con todos los registros DNS del dominio seleccionado.
 
@@ -85,7 +85,7 @@ La zona DNS ya está configurada para conectarse a un alojamiento de Shopify.
 
 ### Conectar un dominio a Shopify
 
-Las operaciones de este paso deben realizarse desde el área de cliente de Shopify. Para ello, acceda directamente al paso 2 de la guía en el sitio web de Shopify y haga clic en [**este enlace**](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){.external}.
+Las operaciones de este paso deben realizarse desde el área de cliente de Shopify. Para ello, acceda directamente al paso 2 de la guía en el sitio web de Shopify y haga clic en [**este enlace**](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-manual).
 
 > [!primary]
 >

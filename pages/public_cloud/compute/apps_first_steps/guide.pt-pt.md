@@ -30,7 +30,7 @@ Na [Área de Cliente OVHcloud](/links/manager), nas API OVHcloud ou na API OpenS
 
 Depois de escolher a instância criada e uma aplicação pré-instalada, pode recuperar as suas informações de ligação unicamente através da API OVHcloud.
 
-1. Ligue-se à [consola API](https://api.ovh.com/)
+1. Ligue-se à [consola API](/links/api)
 2. A seguir, utilize [esta chamada API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
 
 > Chamada API

@@ -1,7 +1,7 @@
 ---
 title: "Hosting www - Poznaj klaster i syn"
 excerpt: "Dowiedz się, jak znaleźć numer klastra i/lub numer filera, w którym znajduje się Twój hosting"
-updated: 2025-05-21
+updated: 2025-08-12
 ---
 
 ## Wprowadzenie
@@ -18,37 +18,6 @@ Podczas korzystania z hostingu może być konieczne poznanie numeru klastra i/lu
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
-
-### Znajdź numer klastra dla hostingu WWW
-
-Kliknij poniższe zakładki, aby wyświetlić kolejno wszystkie **4** etapy.
-
-> [!tabs]
-> **Etap 1**
->>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Etap 3**
->>
->> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}. 
->>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->>
-> **Etap 4**
->>
->> Na nowej stronie znajdziesz numer klastra hostingu WWW dostępny na tej stronie pod nazwą **Serwer FTP i SFTP** (3 cyfry: od `0` do `9`).
->>
->> ![FTP-SSH - numer klastra](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
-
-### Znalezienie numeru kolejki dla hostingu WWW
 
 Kliknij poniższe zakładki, aby wyświetlić kolejno wszystkie **3** etapy.
 
@@ -67,9 +36,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno wszystkie **3** etapy.
 >>
 > **Etap 3**
 >>
->> W ramce **Informacje ogólne** na stronie, która się wyświetla, pobierz numer kolejki, używając frazy `Serwer Filer`{.action}.
+>> W ramce **Informacje ogólne** na stronie, która się wyświetla, pobierz numer klastra oznaczony jako **Klaster** (3 cyfry zawarte między `0` i `9`) oraz numer kolejki oznaczony jako **Serwer Filer**.
 >>
->> ![Numer kolejki](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
+>>![Numery klastra i pliku](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ## Sprawdź również
 

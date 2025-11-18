@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting recurring errors when using FTP software"
 excerpt: "Find out how to resolve the most common FTP software related issues"
-updated: 2025-05-23
+updated: 2025-10-20
 ---
 
 ## Objective
@@ -58,11 +58,26 @@ If you are unable to log in, change your FTP password as described in this [guid
 
 A lack of file storage capacity on your Web Hosting plan may cause your site to malfunction when you try to modify or update it.
 
-To check the remaining storage space on your hosting, log in to your [OVHcloud Control Panel](/links/manager). Click on `Web Cloud`{.action}, then on `Hosting plans`{.action}. Select the concerned hosting plan.
+To check the remaining storage space on your hosting, click on the tabs below to view each of the **3** steps.
 
-The amount of data storage used on your Web Hosting server (excluding databases) appears in the `General information`{.action} section under `Disk space`.
-
-![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 ### I can't transfer my files to the FTP server.
 

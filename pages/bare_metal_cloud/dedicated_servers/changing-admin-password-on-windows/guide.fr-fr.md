@@ -7,7 +7,7 @@ flag: hidden
 
 ## Objectif
 
-Lors de l’installation ou de la réinstallation d’un système d’exploitation Windows, un mot de passe pour l’accès administrateur vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide intitulé « [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server){.external} ». Si vous avez perdu votre mot de passe admin, vous devrez le réinitialiser en mode rescue.
+Lors de l’installation ou de la réinstallation d’un système d’exploitation Windows, un mot de passe pour l’accès administrateur vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide intitulé « [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) ». Si vous avez perdu votre mot de passe admin, vous devrez le réinitialiser en mode rescue.
 
 **Ce guide vous accompagnera tout au long du processus de modification du mot de passe admin de votre serveur, via les configurations de mode rescue disponibles pour un système d'exploitation Windows.**
 
@@ -20,8 +20,8 @@ Lors de l’installation ou de la réinstallation d’un système d’exploitati
 
 ## Prérequis
 
-- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external} avec Windows installé.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal) avec Windows installé.
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 
 ## En pratique
 

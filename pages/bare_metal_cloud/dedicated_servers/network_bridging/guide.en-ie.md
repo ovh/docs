@@ -1,12 +1,15 @@
 ---
 title: 'Configuring Additional IPs in bridge mode on your virtual machines'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2025-05-16
+updated: 2025-07-22
 ---
 
 > [!primary]
->
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
+> This article is about Additional IPv4 configuration on a public interface. You can also configure IPv6 addresses on your virtual machines using [this guide](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm).
+> 
+> Please note that Additional IP addresses can also be configured in a vRack (private network), which allows interconnection over a wide range of OVHcloud services, offering more flexibility.
+> 
+> Learn how to configure Additional IP addresses in a vRack with our guides for [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) and [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objective
@@ -81,7 +84,7 @@ The IPv4 gateway assigned to your server will appear in the `Network` section of
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
-On the [OVHcloud API page](https://eu.api.ovh.com/console/), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
+On the [OVHcloud API page](/links/console), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
 
 Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 
@@ -101,7 +104,7 @@ For all operating systems and distributions, you **must** configure your virtual
 
 > [!warning]
 >
-> The following instructions apply to a previously created VM with an OS already installed. If you have not created a VM, please review the options on the [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} page by Proxmox.
+> The following instructions apply to a previously created VM with an OS already installed. If you have not created a VM, please review the options on the [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines) page by Proxmox.
 >
 
 After creating the VM and while it is still powered off, right-click the VM and click `Edit settings`.
@@ -123,12 +126,7 @@ Now you can start the VM and proceed with the [configuration steps](#configurati
 
 > [!warning]
 >
-> The ESXi hypervisor is no longer supported by OVHcloud. More information can be found on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
-> 
-
-> [!warning]
->
-> The following instructions apply to a previously created VM with an OS already installed. If you have not created a VM, please review the guide [Create a Virtual Machine in the VMware Host Client](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} on the VMware page.
+> The following instructions apply to a previously created VM with an OS already installed. If you have not created a VM, please review the guide [Create a Virtual Machine in the VMware Host Client](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html) on the VMware page.
 >
 
 After you've created the virtual machine and while it's powered off, right click the VM and click `Edit settings`.
@@ -324,7 +322,7 @@ rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
 
 If you receive a response, this means that the Additional IP has been correctly configured. If not, reboot your virtual machine and retry the ping command.
 
-For more information on `nmcli`, consult [this page](https://docs.redhat.com/fr/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-using_the_networkmanager_command_line_tool_nmcli).
+For more information on `nmcli`, consult [this page](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli).
 
 #### FreeBSD
 

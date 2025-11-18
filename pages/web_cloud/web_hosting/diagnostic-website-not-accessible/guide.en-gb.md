@@ -1,7 +1,7 @@
 ---
 title: What do I do if my website is down?
 excerpt: How to diagnose the causes of inaccessibility of your web site
-updated: 2022-08-02
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ Several error returns may appear on your browser if your website becomes inacces
 
 ## Instructions
 
-### Step 1: Check the validity of your domain name subscription
+### 1: Check the validity of your domain name subscription
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ Several error returns may appear on your browser if your website becomes inacces
 > As a result, we strongly recommend that you enable [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instructions) for all of your OVHcloud subscriptions.
 >
 
-To ensure that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `My solutions & services`{.action} within the right-hand menu.
+To ensure that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `My offers and services`{.action} within the right-hand menu.
 
 ![control-panel](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}|
 
@@ -51,7 +51,7 @@ Renew your domain if necessary by clicking on the `...`{.action} button, then se
 
 After the renewal of your offer is completed, your website will be available within a maximum of 48 hours.
 
-### Step 2: Check the DNS servers
+### 2: Check the DNS servers
 
 To check that your [DNS servers](/pages/web_cloud/domains/dns_server_edit) are valid, click on `Domain names`{.action} in your [OVHcloud Control Panel](/links/manager), then on your domain name.
 
@@ -106,17 +106,34 @@ Then click on `Reset my DNS zone`{.action} and select `No, but I want to reset m
 
 Your website will then be available again within a maximum of 24 hours.
 
-### Step 3: Check the DNS zone <a name="step3"></a>
+### 3: Check the DNS zone <a name="step3"></a>
 
 In this step, you will find your hosting plan’s IP address, then add it to your `DNS zone`{.action}.
 
 If your site is not hosted on the OVHcloud infrastructure or is managed by another provider, please contact the concerned support service.
 
-If your site is hosted on one of our [Web Hosting offers](/links/web/hosting), click on the `Hosting plans`{.action} tab and choose the Web Hosting offer which contains your website.
+If your site is hosted on one of our [Web Hosting offers](/links/web/hosting), click on the tabs below to view each of the **3** steps.
 
-In the `General information`{.action} tab, copy the IPv4 and/or IPv6 address of your domain name.
-
-![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> In the **General information** box, you will see the addresses under **IPv4** and **IPv6**.
+>>
+>> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> In the `General information`{.action} tab, copy the IPv4 and/or IPv6 address of your domain name.
 
 Then refer to it in your domain’s [DNS zone](/pages/web_cloud/domains/dns_zone_edit), by modifying or creating one or more `A` entries.
 

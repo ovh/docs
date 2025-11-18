@@ -56,7 +56,7 @@ openstack --help
 
 > [!primary]
 >
-> The documentation for the OpenStack API is available [here](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> The documentation for the OpenStack API is available [here](https://docs.openstack.org/python-openstackclient/latest/).
 >
 
 ### On CentOS
@@ -89,7 +89,7 @@ openstack --help
 
 > [!primary]
 >
-> The documentation for the OpenStack API is available [here](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> The documentation for the OpenStack API is available [here](https://docs.openstack.org/python-openstackclient/latest/).
 >
 
 ### On Windows

@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Workspace
 excerpt: Learn how AI Notebooks workspaces work
-updated: 2023-06-23
+updated: 2025-11-17
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ Indeed, **every notebook has by default an internal object storage volume attach
 
 When your **notebook is created**, a `/workspace` directory is automatically created. It **contains configuration information** such as **the Machine Learning framework** you have chosen to launch your notebook *(Miniconda, PyTorch, TensorFlow, ...)*, but also all **your installed python libraries**. This directory also allows you to store your data (datasets, codes, etc.).
 
-When you **stop your notebook**, your workspace (`/workspace`) is pushed to your [Object Storage](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data). This means that all files contained in your `/workspace` directory will be saved for future use.
+When you **stop your notebook**, your workspace (`/workspace`) is automatically saved and pushed to your [Object Storage](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data). This means that all files contained in your `/workspace` directory will be saved for future use.
 
 Therefore, the next time you **restart your notebook**, your workspace will be pulled directly from your Object Storage into `/workspace`. You will not need **to reinstall your python libraries, re-import your data** or anything else you put in the `/workspace` directory.
 
@@ -37,27 +37,35 @@ Here is a graph summarizing your notebook's workspace and ephemeral storage usag
 
 ![image](images/ai-notebooks_workspace.svg){.thumbnail}
 
+
 ### Deleting workspace files
 
-If you run the `ls -a` command in your notebook's `/workspace` directory, you will see all the files and directories that your workspace contains, including hidden ones (whose names begin with a dot (.)). 
+If you run the `ls -a` command in your notebook's `/workspace` directory, you will see all the files and directories that your workspace contains, including hidden ones (whose names begin with a dot (.)).
 
 > [!primary]
 >
-> Hidden files and directories often contain temporary files and configuration files. 
-> 
+> Hidden files and directories often contain temporary files and configuration files.
+>
 > It may be worth deleting some of these files, such as cache, to free up storage space in your workspace.
-> 
+>
 
 > [!warning]
 >
 > Be careful, some configuration files must not be removed under any circumstances, to prevent workspace initialization errors. This is the case of the `.workspace.initialized` file. Never delete it and therefore never delete the entire contents of the `/workspace` directory.
-> 
+>
 > If you delete this file and stop your notebook, you will not be able to restart it in the future, as it will reach the `Error` status.
 >
 
+### Notebook deletion and workspace backup
+
+When you delete a notebook, its workspace data stored in Object Storage is not automatically cleaned up.
+You can find and delete this data in the `notebooks_workspace` container of your Object Storage, under the notebook ID directory.
+
+This means that even if a notebook is deleted, its state stored in Object Storage (including your notebook files) remains accessible.
+
 ### Workspace billing
 
-The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](https://www.ovhcloud.com/en-ie/public-cloud/prices/#439) is applied for each GB. To learn how we bill AI Notebooks, refer to the [Billing and lifecycle documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept).
+The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](/links/public-cloud/prices-object-storage) is applied for each GB. To learn how we bill AI Notebooks, refer to the [Billing and lifecycle documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept).
 
 ## Feedback
 
@@ -65,4 +73,4 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

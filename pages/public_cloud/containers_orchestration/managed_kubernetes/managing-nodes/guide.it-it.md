@@ -21,7 +21,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 ## Requirements
 
 - You have an OVHcloud Managed Kubernetes cluster.
-- If you plan to manage node pools using the `NodePools` CRD, make sure you have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed. You can find [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} on the official Kubernetes website.
+- If you plan to manage node pools using the `NodePools` CRD, make sure you have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed. You can find [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/) on the official Kubernetes website.
 
 ### On nodes and node pools
 
@@ -398,6 +398,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 
 ### Create a node pool
 
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> In the *Node pools* tab, click on the button `Add a node pool`{.action}.
 >>

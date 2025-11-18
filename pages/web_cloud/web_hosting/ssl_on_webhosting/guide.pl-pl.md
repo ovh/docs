@@ -1,7 +1,7 @@
 ---
 title: "Hosting - Zarządzanie certyfikatem SSL"
 excerpt: "Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Wprowadzenie 
@@ -69,6 +69,18 @@ Zapoznaj się z 4 linkami do przewodników dotyczących tych 4 rozwiązań:
 > Jeśli chcesz usunąć certyfikat SSL z Twojego hostingu i **przed kontynuacją**, upewnij się, że usunięcie certyfikatu SSL nie zakłóci dostępności Twoich stron WWW. W przeciwnym razie użytkownicy napotkają błąd bezpieczeństwa podczas próby uzyskania dostępu do Twojej strony WWW przy użyciu protokołu "HTTPS".
 
 Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skorzystanie z pomocy webmastera. Niestety firma OVH nie jest w stanie udzielić wsparcia w tym zakresie.
+
+> [!primary]
+>
+> **Informacje o migracji do nowego interfejsu zarządzania certyfikatami SSL:**
+>
+> Dalsza część tego przewodnika jest skierowana do klientów, których usługi hostingowe nie zostały jeszcze przeniesione do nowego interfejsu zarządzania certyfikatami SSL.
+> Aby sprawdzić, czy migracja została wykonana, przejdź do strony Hosting w Panelu klienta i w zakładce `Certyfikaty SSL`.
+> Jeśli zakładka `Certyfikaty SSL` jest aktywna, Twoja usługa została już przeniesiona do nowego panelu zarządzania. W takim przypadku zapoznaj się z [ten przewodnik](/pages/web_cloud/web_hosting/ssl_management) i zarządzaj certyfikatem SSL.
+>
+> Ze względów technicznych nie wszystkie usługi hostingowe naszych klientów mogą zostać migrowane za jednym razem. Migracja jest rozdzielona na kilka tygodni i jest wykonywana automatycznie. Nie wpływa ona na działanie usług hostingowych, nie wymaga interwencji ani nie wymaga żadnego działania ze strony użytkownika.
+>
+> Po pewnym czasie wszystkie usługi hostingowe będą działały w nowym interfejsie zarządzania certyfikatami SSL.
 
 Aby usunąć certyfikat SSL zainstalowany na Twoim hostingu, wykonaj następujące czynności:
 

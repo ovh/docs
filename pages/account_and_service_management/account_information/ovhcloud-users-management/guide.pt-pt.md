@@ -46,7 +46,7 @@ Na janela que se abrir, complete os campos obrigatórios. Clique em `Validar`{.a
 |--|--|
 | ID de utilizador | Introduza, por exemplo, o nome do utilizador ou a sua função. |
 | E-mail | Introduza o endereço de e-mail do utilizador. |
-| Palavra-passe | Defina a palavra-passe do utilizador. Mais tarde, ele poderá alterar esta palavra-passe. <br>Sugerimos que consulte [o guia sobre a gestão de palavras-passe](/pages/account_and_service_management/account_information/manage-ovh-password){.external} antes de a definir. |
+| Palavra-passe | Defina a palavra-passe do utilizador. Mais tarde, ele poderá alterar esta palavra-passe. <br>Sugerimos que consulte [o guia sobre a gestão de palavras-passe](/pages/account_and_service_management/account_information/manage-ovh-password) antes de a definir. |
 | Grupo | Escolha um dos grupos disponíveis (ver quadro abaixo). |
 | Descrição | Pode acrescentar uma descrição do utilizador. Por exemplo, a função que desempenha. |
 
@@ -55,7 +55,7 @@ Na janela que se abrir, complete os campos obrigatórios. Clique em `Validar`{.a
 | Papel | Detalhes |
 |--|--|
 | UNPRIVILEGED (Apenas leitura) | Dá acesso de leitura à Área de Cliente OVHcloud e a todas as suas secções. |
-| DEFAULT (Administrador restrito) | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção** da gestão de** utilizadores. |
+| DEFAULT (Administrador restrito) | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção da gestão de utilizadores**. |
 | ADMIN (Administrador) | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **incluindo** a gestão dos utilizadores. |
 
 O utilizador receberá um ID próprio, composto pelo ID digital da conta (indicado no menu «Gestão de utilizadores») e pelo nome de utilizador, com as duas referências separadas por uma barra.
@@ -66,7 +66,7 @@ Por exemplo: **1234-567-89/johnsmith**.
 
 O utilizador em causa poderá desde logo aceder à [Área de Cliente OVHcloud](/links/manager) por meio desse ID de utilizador.
 
-Ele poderá igualmente alterar a sua própria palavra-passe e proteger o seu próprio acesso à conta ativando uma medida de dupla autenticação (esta última só será aplicada ao acesso desse utilizador). Para esse efeito, aconselhamos a consulta do [guia respeitante à implementação da dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
+Ele poderá igualmente alterar a sua própria palavra-passe e proteger o seu próprio acesso à conta ativando uma medida de dupla autenticação (esta última só será aplicada ao acesso desse utilizador). Para esse efeito, aconselhamos a consulta do [guia respeitante à implementação da dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 #### Gerir os utilizadores
 
@@ -96,7 +96,7 @@ Os grupos atribuem um nível de privilégio por defeito aos utilizadores que con
 |--|--|
 | Nenhum | Não dá acesso à Área de Cliente OVHcloud se não for implementada uma política IAM. |
 | Apenas leitura | Dá acesso de leitura à Área de Cliente OVHcloud e a todas as suas secções. |
-| Administrador restrito | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção** da gestão de** utilizadores. |
+| Administrador restrito | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção da gestão de utilizadores**. |
 | Administrador | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **incluindo** a gestão dos utilizadores. |
 
 #### Gerir os grupos

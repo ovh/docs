@@ -1,7 +1,7 @@
 ---
 title: Utilizzare il Backup Storage su un server dedicato
 excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
-updated: 2025-02-12
+updated: 2025-10-09
 ---
 
 ## Obiettivo
@@ -18,8 +18,8 @@ I server dedicati OVHcloud includono uno spazio di backup aggiuntivo per salvare
 
 ## Prerequisiti
 
-* Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external} sul proprio account OVHcloud
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+* Disporre di un [server dedicato](/links/bare-metal/bare-metal) sul proprio account OVHcloud
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
@@ -31,7 +31,7 @@ I server dedicati OVHcloud includono uno spazio di backup aggiuntivo per salvare
 
 ### Attiva il tuo Backup Storage
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Nella scheda `Backup Storage`{.action}, clicca sul pulsante `Attiva il Backup Storage`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Nella scheda `Backup Storage`{.action}, clicca sul pulsante `Attiva il Backup Storage`{.action}.
 
 ![Attiva il tuo Backup Storage](images/backup-storage01.png){.thumbnail}
 
@@ -47,7 +47,7 @@ L'accesso allo spazio di storage è limitato per indirizzi IP tramite una lista 
 
 #### Aggiungere un accesso backup
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Aggiungi un accesso`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Aggiungi un accesso`{.action}.
 
 ![Aggiungere un accesso backup](images/backup-storage03.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Per eliminare l'autorizzazione di un blocco IP, clicca su `Elimina l'accesso`{.a
 L'accesso al Backup Storage può essere limitato al servizio associato tramite lo Spazio Cliente OVHcloud.
 
 Per poter aggiungere altri indirizzi IP di diversi servizi, utilizza [l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
-per recuperare i backup da un servizio di un'altra localizzazione.
+Per recuperare i backup da un servizio di un'altra localizzazione.
 
 > [!warning]
 > Possono essere autorizzati solo gli indirizzi IP OVHcloud.
@@ -113,19 +113,19 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata
 
 ### Reimposta la password
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Password dimenticata`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Password dimenticata`{.action}.
 
 Dopo aver cliccato su `Conferma`{.action} nella nuova finestra, riceverai un'email di recupero password all'indirizzo email salvato sul tuo account amministratore. Segui le istruzioni riportate per reimpostare la password.
 
 ### Eliminare il Backup Storage
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Elimina il Backup Storage`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Elimina il Backup Storage`{.action}.
 
 Clicca su `Conferma`{.action} sul messaggio di avvertimento per procedere all'eliminazione. Il tuo Backup Storage sarà eliminato dopo pochi minuti. Tutti i dati dello spazio di storage verranno eliminati.
 
 ### Ordina spazio disco aggiuntivo
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante Ordina `spazio disco`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante Ordina `spazio disco`{.action}.
 
 ![Ordina spazio disco aggiuntivo](images/backup-storage06.png){.thumbnail}
 
@@ -146,6 +146,10 @@ Verrà creato un buono d'ordine. Una volta effettuato il pagamento, riceverai un
 > Il servizio di Backup Storage ha un limite di tre connessioni simultanee su un IP.
 >
 
+> [!primary]
+> Per recuperare il *Hostname* del Backup Storage, clicca sulla scheda `Backup Storage`{.action} nell’interfaccia del server dedicato interessato. *Hostname* è generalmente scritto in formato `ftpback-rbxX-YYY.ip-Z.Z.Z.net` o `ftpback-bhsX-YYY.ip-Z.Z.net`.
+>
+
 #### FTP/FTPS
 
 ##### NcFTP (per Linux)
@@ -160,11 +164,11 @@ ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **FolderLocation**: percorso completo della cartella di destinazione in cui salvare il file
-* **File**: nome del file di cui vuoi effettuare un backup
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **FolderLocation**: percorso completo della cartella di destinazione in cui salvare il file
+- **File**: nome del file di cui vuoi effettuare un backup
 
 Per realizzare il backup di una directory è sufficiente archiviarla e trasferirla nello spazio di backup, con il comando: 
 
@@ -174,11 +178,11 @@ tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName Archi
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **FolderName**: percorso completo della cartella di cui vuoi effettuare un backup
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **ArchiveName**: nome della cartella di cui vuoi effettuare un backup
+- **FolderName**: percorso completo della cartella di cui vuoi effettuare un backup
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **ArchiveName**: nome della cartella di cui vuoi effettuare un backup
 
 Per scaricare un file di backup dallo spazio di storage, utilizza questo il comando:
 
@@ -188,17 +192,18 @@ ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **LocalFolder**: percorso completo della cartella locale in cui vuoi salvare il file
-* **File**: percorso completo del file da scaricare
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **LocalFolder**: percorso completo della cartella locale in cui vuoi salvare il file
+- **File**: percorso completo del file da scaricare
 
 ##### cURL (per Linux)
 
 > [!primary]
 >
-> Per utilizzare il protocollo FTPS è necessario modificare il nome del Backup Storage: “ftpback-rbxX-YYY.ip- Z.Z.Z.Z.net”, ad esempio, dovrà essere cambiato in “ftpback-rbxX-YYY.mybackup.ovh.net”. Dovrai inoltre aggiungere l'argomento `-ssl` al seguente comando.
+> Per utilizzare il protocollo FTPS è necessario modificare il nome del Backup Storage: “ftpback-rbxX-YYY.ip- Z.Z.Z.Z.net”, ad esempio, dovrà essere cambiato in “ftpback-rbxX-YYY.mybackup.ovh.net”. Dovrai inoltre aggiungere l'argomento `-ssl` al seguente comando.  
+> Se il Backup Storage si trova in Canada (BHS), è necessario cambiarlo nel formato “ftpback-bhsX-YYY.mybackup.ovh.ca”.
 >
 
 Per salvare un solo file, esegui il comando:
@@ -209,11 +214,11 @@ curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **File**: nome del file di cui vuoi effettuare un backup
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **FolderLocation**: percorso completo della cartella di destinazione in cui vuoi salvare il file
+- **File**: nome del file di cui vuoi effettuare un backup
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **FolderLocation**: percorso completo della cartella di destinazione in cui vuoi salvare il file
 
 Per realizzare il backup di una directory è sufficiente archiviarla e trasferirla nello spazio di backup, con il comando: 
 
@@ -223,12 +228,12 @@ tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocati
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **FolderName**: percorso di accesso alla cartella di cui vuoi effettuare un backup
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **FolderLocation**: percorso completo della cartella locale di destinazione in cui vuoi salvare il file
-* **ArchiveName**: nome della cartella di cui vuoi effettuare un backup
+- **FolderName**: percorso di accesso alla cartella di cui vuoi effettuare un backup
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **FolderLocation**: percorso completo della cartella locale di destinazione in cui vuoi salvare il file
+- **ArchiveName**: nome della cartella di cui vuoi effettuare un backup
 
 Per scaricare un file di backup dallo spazio di storage, utilizza questo il comando:
 
@@ -239,17 +244,18 @@ curl -u FtpUsername:FtpPassword ftp://HostName/File
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **LocalFolder**: nome della cartella locale in cui salvare il file
-* **File**: percorso completo del file da scaricare
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **LocalFolder**: nome della cartella locale in cui salvare il file
+- **File**: percorso completo del file da scaricare
 
 #### lftp (per Linux)
 
 > [!primary]
 >
-> Di default, lftp utilizza FTP+SSL/TLS. È quindi necessario modificare il nome del Backup Storage: “ftpback-rbxX-YYY.ip- Z.Z.Z.Z.net”, ad esempio, dovrà essere cambiato in “ftpback-rbxX-YYY.mybackup.ovh.net”.
+> Di default, lftp utilizza FTP+SSL/TLS. È quindi necessario modificare il nome del Backup Storage: “ftpback-rbxX-YYY.ip- Z.Z.Z.Z.net”, ad esempio, dovrà essere cambiato in “ftpback-rbxX-YYY.mybackup.ovh.net”.  
+> Se il Backup Storage si trova in Canada (BHS), è necessario cambiarlo nel formato “ftpback-bhsX-YYY.mybackup.ovh.ca”.
 >
 
 Per salvare un solo file, esegui il comando:
@@ -260,11 +266,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; 
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **File**: nome del file di cui vuoi effettuare un backup
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **FolderLocation**: percorso di accesso alla cartella di destinazione in cui salvare il file
+- **File**: nome del file di cui vuoi effettuare un backup
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **FolderLocation**: percorso di accesso alla cartella di destinazione in cui salvare il file
 
 Per realizzare il backup di una directory è sufficiente archiviarla e trasferirla nello spazio di backup, con il comando: 
 
@@ -274,12 +280,12 @@ tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderL
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **FolderName**: percorso di accesso alla cartella di cui vuoi effettuare un backup
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **FolderLocation**: percorso completo della cartella locale di destinazione in cui vuoi salvare il file
-* **ArchiveName**: nome della cartella di cui vuoi effettuare un backup
+- **FolderName**: percorso di accesso alla cartella di cui vuoi effettuare un backup
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **FolderLocation**: percorso completo della cartella locale di destinazione in cui vuoi salvare il file
+- **ArchiveName**: nome della cartella di cui vuoi effettuare un backup
 
 Per scaricare un file archiviato dal tuo spazio di backup storage, utilizza questo comando:
 
@@ -290,11 +296,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **FtpUsername**: nome utente FTP
-* **FtpPassword**: password FTP
-* **HostName**: nome del Backup Storage
-* **LocalFolder**: nome della cartella locale in cui salvare il file
-* **File**: percorso completo del file da scaricare
+- **FtpUsername**: nome utente FTP
+- **FtpPassword**: password FTP
+- **HostName**: nome del Backup Storage
+- **LocalFolder**: nome della cartella locale in cui salvare il file
+- **File**: percorso completo del file da scaricare
 
 ##### FileZilla
 
@@ -310,9 +316,9 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **HostName**: nome del Backup Storage
-* **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
-* **FolderMount**: cartella in cui vuoi eseguire il mount della share NFS
+- **HostName**: nome del Backup Storage
+- **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
+- **FolderMount**: cartella in cui vuoi eseguire il mount della share NFS
 
 Una volta effettuato il mount della share, è possibile utilizzare comandi come **cp** e **rsync** come in una normale directory.
 
@@ -328,8 +334,8 @@ net use z: \\HostName\ServiceName
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **HostName**: nome del Backup Storage
-* **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
+- **HostName**: nome del Backup Storage
+- **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
 
 È possibile che venga visualizzato il seguente messaggio di errore:
 
@@ -339,7 +345,11 @@ System error 1272 has occurred.
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
 
-Questo problema può essere risolto modificando il Registro di sistema di Windows: aprire l'utilità Windows *regedit* e cercare la voce `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Impostare il valore di `AllowInsecureGuestAuth` su "1". Per maggiori informazioni al riguardo, visitare le [pagine di supporto Microsoft](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
+> [!primary]
+>
+> Per correggere questo errore, è necessario modificare il registro di sistema di Windows. A tal fine, aprire l'editor del registro (regedit), quindi accedere alla chiave `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
+> Assegnare il valore "1" al parametro `AllowInsecureGuestAuth`.<br>
+> Trova ulteriori informazioni su questo argomento sulle [pagine di supporto Microsoft](https://learn.microsoft.com/it-it/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 
@@ -368,9 +378,9 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
-* **HostName**: nome del Backup Storage
-* **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
-* **FolderMount**: la cartella in cui vuoi effettuare il mount della share (dovrebbe essere già esistente)
+- **HostName**: nome del Backup Storage
+- **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
+- **FolderMount**: la cartella in cui vuoi effettuare il mount della share (dovrebbe essere già esistente)
 
 ## Per saperne di più
 

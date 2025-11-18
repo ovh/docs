@@ -70,11 +70,11 @@ Si tiene más preguntas sobre Zonemaster, consulte las [FAQ](https://zonemaster.
 
 ## Más información <a name="go-further"></a>
 
-[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information){.external}
+[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
-[Modificación de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
+[Modificación de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}
+[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

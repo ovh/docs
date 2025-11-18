@@ -113,7 +113,7 @@ Substitua apenas `plain_text_password1`, `plain_text_password2` e `plain_text_pa
 >
 > Os dois scripts acima utilizam, na data, o método de encriptação mais seguro com recurso ao algoritmo **bcrypt** recomendado pelo Apache.
 >
-> Para mais informações sobre o assumpto, consulte a [documentação oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
+> Para mais informações sobre o assumpto, consulte a [documentação oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html).
 >
 
 Se dispõe de um alojamento [Pro](/links/web/hosting-professional-offer) ou [Performance](/links/web/hosting-performance-offer), aceda em [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) ao seu alojamento web. Desça à "**pasta raiz**" onde está o script "crypt.php".
@@ -200,7 +200,7 @@ No script acima, substitua os seguintes elementos pelos seus próprios valores:
 
 #### Bloquear o acesso a um ou vários ficheiros
 
-Para bloquear o acesso a um ou vários ficheiros precisos, adicione uma [Direction "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} no ficheiro ".htaccess":
+Para bloquear o acesso a um ou vários ficheiros precisos, adicione uma [Direction "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) no ficheiro ".htaccess":
 
 ```bash
 <Files test.php>
@@ -222,7 +222,7 @@ No script acima, substitua os seguintes elementos pelos seus próprios valores:
 
 > [!warning]
 >
-> Deverá indicar uma [diretiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} para **cada ficheiro** a proteger.
+> Deverá indicar uma [diretiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) para **cada ficheiro** a proteger.
 >
 > As diretivas "Files" aplicam - se a todos os ficheiros com o mesmo nome ou que terminem com o nome especificado. Isto desde que estejam contidos no mesmo diretório que o ".htaccess" ou num dos seus sub-diretórios.
 >
@@ -238,7 +238,7 @@ No script acima, substitua os seguintes elementos pelos seus próprios valores:
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Documentação oficial Apache](https://httpd.apache.org/docs/2.4/) {.external}
+[Documentação oficial Apache](https://httpd.apache.org/docs/2.4/) 
 
 [Aceder ao espaço FTP do alojamento web](/pages/web_cloud/web_hosting/ftp_connection)
 

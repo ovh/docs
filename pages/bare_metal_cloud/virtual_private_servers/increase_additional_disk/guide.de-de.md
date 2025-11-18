@@ -1,12 +1,8 @@
 ---
 title: "Die Größe einer zusätzlichen Disk erweitern"
 excerpt: "Erfahren Sie hier, wie Sie die Kapazität eines zusätzlichen Volumes vergrößern und die Hauptpartition anpassen"
-updated: 2023-03-14
+updated: 2025-07-24
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -16,10 +12,14 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kunden-Account.
 - Sie haben eine [zusätzliche Disk konfiguriert](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff auf Ihren VPS über SSH (Linux) oder RDP (Windows).
+
+> [!warning]
+> Diese Funktion ist derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## In der praktischen Anwendung
 
@@ -29,15 +29,15 @@ In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzlich
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Bare Metal Cloud`{.action}. Wählen Sie Ihren Server unter `Virtual Private Server`{.action} aus.
 
-Klicken Sie im Rahmen **Zusammenfassung der Optionen** auf den Button `...`{.action} im Bereich `Zusätzliche Festplatten`{.action}. Wählen Sie `Festplattengröße erhöhen`{.action} aus.
- 
+Im Tab `Start`{.action} finden Sie im Bereich **Ihre Konfiguration** den Abschnitt mit der Bezeichnung `Zusätzliche Festplatten`. Klicken Sie auf `...`{.action} und im Kontextmenü auf `Festplattengröße erhöhen`{.action}.
+
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 
 Wählen Sie im neuen Fenster die gewünschte Größe aus und klicken Sie dann auf `Erweitern`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Es erscheint eine Nachricht, um Ihre Anfrage zu bestätigen. Klicken Sie auf den Link innerhalb der Nachricht und folgen Sie dem Bestellprozess. (Es ist auch möglich, dass sich automatisch ein neuer Browser-Tab für die Bestellung geöffnet hat.)
+Es erscheint eine Nachricht, um Ihre Anfrage zu bestätigen. Klicken Sie auf den Link innerhalb der Nachricht und folgen Sie dem Bestellprozess. Ein neuer Browser-Tab öffnet sich zum Abschließen der Bestellung.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
@@ -53,9 +53,9 @@ Die Erhöhung der Disk-Kapazität wird nach der Bestätigung der Zahlung einige 
 ### Erweiterung der Partition
 
 > [!warning]
->Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Denken Sie daran, diese Aktionen nötigenfalls an Ihre Situation anzupassen.
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Denken Sie daran, diese Aktionen nötigenfalls an Ihre Situation anzupassen.
 >
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Sie Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Sie Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
 >
 
 #### Auf einem Linux VPS
@@ -213,4 +213,6 @@ Das erweiterte Volume beinhaltet nun den zusätzlichen Speicherplatz.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+Treten Sie unserer [User Community](/links/community) bei.

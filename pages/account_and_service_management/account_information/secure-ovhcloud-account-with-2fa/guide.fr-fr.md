@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
+> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
+> [Accédez à l'enquête.](https://s.elq.fr/ovhext/g3zPMWe)
+
 ## Objectif
 
 OVHcloud met à votre disposition des outils pour renforcer la sécurité de votre compte et de vos services.
@@ -138,7 +143,7 @@ Une fois la première méthode ajoutée, vous pouvez également **ajouter une ou
 
 Lorsque vous ajoutez une double authentification pour la première fois, 10 codes de secours **à usage unique** vous sont affichés dans l'espace client.
 
-**Conservez-les précieusement**. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe, tel que [KeePass](https://keepass.info/){.external} ou [Bitwarden](https://bitwarden.com/) (ces deux applications sont gratuites).
+**Conservez-les précieusement**. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe, tel que [KeePass](https://keepass.info/) ou [Bitwarden](https://bitwarden.com/) (ces deux applications sont gratuites).
 
 ![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
@@ -154,7 +159,7 @@ Vous pouvez regénérer ou supprimer les code de secours depuis votre espace cli
 
 ### Étape 3 - Se connecter à l'espace client OVHcloud avec la double authentification <a name="login-2fa"></a>
 
-Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](/links/manager){.external} et saisissez votre identifiant (ou votre adresse e-mail principale) et votre mot de passe.
+Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](/links/manager) et saisissez votre identifiant (ou votre adresse e-mail principale) et votre mot de passe.
 
 L'écran d'identification affiche la dernière méthode de double authentification utilisée ou renseignée. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 

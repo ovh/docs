@@ -12,14 +12,14 @@ Uma base de dados (*database*, «DB» ou «BDD») permite armazenar elementos co
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web Performance](/links/web/hosting)
+- Dispor de uma [instância Web Cloud Databases](/links/web/databases)  (incluída numa oferta de [alojamento web Performance](/links/web/hosting)
 - Ter acesso à Área de Cliente OVHcloud (/links/manager)
 
 ## Instruções
 
 ### Criar uma base de dados
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 
 Clique no separador `Bases de dados` e em `Adicionar uma base de dados`{.action}.
 
@@ -45,7 +45,7 @@ Por fim, clique em `Validar`{.action}.
 
 Para utilizar um servidor de bases de dados OVHcloud, é necessário criar utilizadores com permissões específicas de conexão a uma base de dados. 
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 
 Clique no separador `Utilizadores e permissões` e, a seguir, em `Adicionar um utilizador`{.action}.
 
@@ -57,7 +57,7 @@ Depois de introduzir um «nome de utilizador» e uma «palavra-passe», clique e
 
 Para autorizar um utilizador a realizar ações numa base de dados, é necessário atribuir-lhe permissões.
 
-Para gerir as permissões de cada utilizador, aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. Clique no separador `Utilizadores e permissões`.
+Para gerir as permissões de cada utilizador, aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. Clique no separador `Utilizadores e permissões`.
 
 Clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Gerir as permissões`{.action}.
 
@@ -88,7 +88,7 @@ Segue-se a descrição dos três tipos de permissões possíveis:
 > um backup e o seu respetivo descarregamento antes de qualquer operação de eliminação.
 > 
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 
 Para eliminar uma base de dados, aceda ao separador `Bases de dados` e clique no botão `...`{.action} à direita da base em causa. Por fim, clique em `Eliminar a base`{.action}.
 

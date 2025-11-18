@@ -28,7 +28,7 @@ Mit dieser Lösung können auch komplexere praktische Fälle wie "on-premise" Wo
 
 ### Kann Enterprise File Storage über das Kundencenter verwaltet werden?
 
-Ja, diese Dienstleistung ist direkt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erreichbar, im Bereich `Bare Metal Cloud`{.action}, dann `Storage und Backup`{.action}.
+Ja, diese Dienstleistung ist direkt über Ihr [OVHcloud Kundencenter](/links/manager) erreichbar, im Bereich `Bare Metal Cloud`{.action}, dann `Storage und Backup`{.action}.
 
 ## Verfügbarkeit
 
@@ -136,6 +136,6 @@ Enterprise File Storage ist ein Dienst, der monatlich nach Volumen abgerechnet w
 
 ## Weiterführende Informationen
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

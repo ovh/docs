@@ -173,7 +173,7 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 >> El protocolo DANE permite que un cliente (navegador de internet, cliente de correo electrónico, cliente FTP, cliente SSH, etc.) consulte el registro TLSA. Así, se asegura de que un certificado SSL/TLS utilizado para un nombre de dominio sea el que certifique el mismo nombre de dominio.
 >>
->> Si lo necesita, puede consultar más información en la página web del [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>> Si lo necesita, puede consultar más información en la página web del [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
 
 #### Caso particular de uso: el uso de los registros CNAME <a name="cnameusecase"></a>

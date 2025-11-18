@@ -6,7 +6,7 @@ updated: 2020-06-29
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
+- Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/)
 
 ## Obiettivi
 

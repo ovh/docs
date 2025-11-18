@@ -15,7 +15,7 @@ Si votre valeur actuelle de la MTU est supérieure à 1500, vous pouvez rencontr
 
 ## Prérequis
 
-- Une [infrastructure VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/)
+- Une [infrastructure VMware on OVHcloud](/links/hosted-private-cloud/vmware)
 
 ## En pratique
 
@@ -58,6 +58,6 @@ netsh int ipv4 set subinterface **<Interface_name>** mtu=**<mtu_size>** store=pe
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

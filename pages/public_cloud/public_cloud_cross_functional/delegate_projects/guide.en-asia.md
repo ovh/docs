@@ -14,7 +14,7 @@ To this end, you can delegate read-only or read/write permissions for your proje
 
 ### Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

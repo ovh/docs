@@ -297,7 +297,6 @@ Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/e
 - [Migrar las direcciones de correo electrónico de una plataforma de correo de OVHcloud a otra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrar cuentas de correo electrónico mediante OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
-- [Migrar una cuenta de Gmail a una cuenta de correo electrónico de OVHcloud mediante OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
 
 ///
 

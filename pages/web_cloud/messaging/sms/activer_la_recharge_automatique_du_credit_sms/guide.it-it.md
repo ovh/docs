@@ -15,8 +15,8 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso alle [API OVHcloud](https://api.ovh.com/)(soltanto per trasferire i crediti)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso alle [API OVHcloud](/links/api)(soltanto per trasferire i crediti)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -26,14 +26,14 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 
 0,7 credito SMS corrisponde al costo per l’invio di 1 SMS in Italia, la tariffa è decrescente in base al numero di crediti SMS acquistati in una sola volta . 
 
-Per visualizzare la lista completa dei Pack SMS clicca qui: [https://www.ovh.it/sms/](https://www.ovh.it/sms/).
+Per visualizzare la lista completa dei Pack SMS clicca [qui](/links/telecom/sms).
 
 **Ad esempio, per l’acquisto di un pack di 100 crediti SMS, il costo di ciascun credito è pari a 0,042 € IVA esclusa :**
 
 Il costo per l’invio di 1 SMS in Italia è pari a 0,7 credito. Con questo pack, è possibile inviare fino a 142 SMS in Italia.<br>
 Il costo per l’invio di 1 SMS in India è pari a 0,4 crediti. Con questo pack è possibile inviare fino a 250 SMS i, India.
 
-Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle loro destinazioni, clicca qui: [https://www.ovh.it/sms/tariffe/](https://www.ovh.it/sms/tariffe/).
+Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle loro destinazioni, clicca [qui](/links/telecom/sms-prices).
 
 > [!primary]
 >
@@ -53,7 +53,7 @@ Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile e a
 > - sul tuo account OVHcloud è presente e validato un metodo di pagamento di tipo SEPA.
 > - il tuo servizio SMS deve avere almeno 2 mesi di anzianità.
 
-Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sulla scheda `ADSL e telefono`{.action} e poi sulla sezione `SMS`{.action}. Seleziona l’account SMS su cui attivare la ricarica automatica.
+Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `ADSL e telefono`{.action} e poi sulla sezione `SMS`{.action}. Seleziona l’account SMS su cui attivare la ricarica automatica.
 
 Clicca sul menu `Opzioni`{.action} (1) e poi su `Ricarica automatica`{.action} (2).
 

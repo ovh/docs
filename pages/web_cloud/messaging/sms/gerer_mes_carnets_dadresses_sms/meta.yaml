@@ -1,4 +1,5 @@
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +7,7 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
+- pt-pt
 id: 3ed893bf-e0ff-43c2-8139-e5022bad0090
 full_slug: sms-managing-address-books
+translation_banner: true

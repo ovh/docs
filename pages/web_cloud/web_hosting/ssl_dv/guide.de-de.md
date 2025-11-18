@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Sectigo DV SSL-Zertifikat aktivieren"
 excerpt: "Erfahren Sie hier, wie Sie ein Sectigo DV SSL-Zertifikat auf Ihrem OVHcloud Webhosting aktivieren"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Ziel
@@ -20,7 +20,7 @@ Die SSL-Verschlüsselungsstufen zwischen diesen drei Zertifikattypen sind identi
 
 Der Hauptunterschied besteht in den Überprüfungen, mit denen die ausstellende Zertifikatsstelle (Certificate Authority, CA) die Legitimität verifiziert und dessen Authentizität bescheinigt.
 
-Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifikate ausstellt [Sectigo](https://sectigostore.com){.external}.
+Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifikate ausstellt [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -75,6 +75,18 @@ Um dies zu überprüfen, lesen Sie unsere Anleitungen:
 - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
 ### Sectigo DV SSL-Zertifikat bestellen
+
+> [!primary]
+>
+> **Informationen zur Migration auf das neue SSL-Zertifikat-Verwaltungsinterface:**
+>
+> Diese Anleitung richtet sich an Kunden, deren Webhosting-Dienste noch nicht auf das neue Verwaltungsinterface für SSL-Zertifikate migriert sind.
+> Gehen Sie in Ihrem OVHcloud Kundencenter auf Ihr Webhosting und überprüfen Sie den Tab `SSL-Zertifikate`, um festzustellen, ob diese Migration durchgeführt wurde.
+> Wenn der Tab `SSL-Zertifikate` vorhanden ist, wurde Ihr Dienst bereits zum neuen Verwaltungsinterface migriert. In diesem Fall konsultieren Sie bitte [diese Anleitung](/pages/web_cloud/web_hosting/ssl_management), um Ihr SSL-Zertifikat zu verwalten.
+>
+> Aus technischen Gründen können nicht alle Webhosting-Dienste unserer Kunden auf einmal migriert werden. Diese Migration erfolgt automatisch über mehrere Wochen, ohne dass die Funktionsweise Ihrer Webhosting-Dienste beeinträchtigt wird oder dass dazu weitere Eingriffe oder Aktionen Ihrerseits erforderlich sind.
+>
+> Im Laufe der Zeit werden alle Webhosting-Dienste mit dem neuen Verwaltungsinterface für SSL-Zertifikate funktionieren.
 
 So bestellen Sie das Sectigo DV SSL-Zertifikat:
 

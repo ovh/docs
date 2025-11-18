@@ -17,7 +17,7 @@ W tym celu możesz przekazać innym kontom klienta OVHcloud uprawnienia do odczy
 
 ## Wymagania początkowe
 
-- Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
+- Posiadanie instancji [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce 

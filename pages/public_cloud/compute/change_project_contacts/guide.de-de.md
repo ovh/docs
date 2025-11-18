@@ -17,7 +17,7 @@ Die Änderung dieser Kontakte erlaubt es, die technische Verwaltung der Dienste 
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud) Projekt in Ihrem OVHcloud Kunden-Account.
+- Sie haben ein [Public Cloud](/links/public-cloud/public-cloud) Projekt in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Administrator- und Rechnungskontakt gehören zu derselben OVHcloud Filiale.
 

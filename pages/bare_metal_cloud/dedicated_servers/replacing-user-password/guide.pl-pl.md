@@ -1,13 +1,8 @@
 ---
 title: "Jak odzyskać dostęp do serwera w przypadku utraty hasła użytkownika"
 excerpt: "Dowiedz się, jak skonfigurować nowe hasło dla konta użytkownika w systemie operacyjnym GNU/Linux w trybie rescue OVHcloud"
-updated: 2024-02-19
+updated: 2025-10-02
 ---
-
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji” na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -24,10 +19,11 @@ W takim przypadku możesz zalogować się do Twojego serwera za pomocą trybu Re
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](/links/bare-metal/vps) na koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!primary]
+>
 > Ten przewodnik nie dotyczy instalacji **Windows* Server. Zapoznaj się z naszymi przewodnikami "[Jak zmienić hasło administratora na serwerze dedykowanym Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)" i "[Jak zmienić hasło administratora na serwerze VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
 >
 
@@ -48,7 +44,7 @@ Sprawdź również nasze przewodniki:
 
 <a name="step1"></a>
 
-### Etap 1: restart serwera w trybie rescue
+### Etap 1 - Restart serwera w trybie rescue
 
 Postępuj zgodnie z instrukcjami zawartymi w przewodnikach dotyczących trybu Rescue, aby połączyć się z serwerem i zamontować partycje:
 
@@ -69,28 +65,59 @@ Dokładne sterowanie zależy od użytego punktu montowania. Na przykład, jeśli
 chroot /mnt/
 ```
 
-### Etap 2: resetowanie hasła użytkownika
+### Etap 2 - Identyfikacja konta użytkownika (kont użytkowników) i resetowanie hasła
 
-Uwaga: w dystrybucji GNU/Linux **wiersz hasła nie wyświetla wpisów klawiaturowych**.
+Po zamontowaniu partycji i uruchomieniu `chroot /mnt` (lub odpowiednika), masz uprawnienia **root** w zainstalowanym systemie.
 
-Zmień hasło użytkownika za pomocą następującego polecenia (zastąp `username` rzeczywistą nazwą konta użytkownika):
+Jeśli to konieczne, przed zmianą hasła **zidentyfikuj istniejące konta** za pomocą następującego polecenia:
 
 ```bash
-passwd username
+cat /etc/passwd
 ```
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+Przykład wyniku (skrócony):
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
 ```
+
+Znajdź Twoją nazwę użytkownika (lub nazwy użytkowników) na liście kont.
+
+Aby zmienić hasło dla wybranego konta (na przykład: **user1**), wpisz poniższe polecenie:
+
+```bash
+passwd user1
+```
+
+Dwukrotnie wpisz nowe hasło i potwierdź:
+
+```console
+# New password:
+# Retype new password:
+# passwd: password updated successfully
+```
+
+W dystrybucji GNU/Linux **monit o hasło nie wyświetla danych wejściowych z klawiatury**.
+
+> [!primary]
+>
+> Unikaj uruchamiania polecenia `passwd` bez argumentów: to polecenie zmienia hasło dla konta bieżącego (które często jest **root** po uruchomieniu `chroot`).
+> Zawsze podawaj `passwd <użytkownik>`.
 
 Pamiętaj, aby podczas restartu serwera z poziomu [Panelu klienta OVHcloud](/links/manager) użyć trybu uruchamiania **normalnego** Twojego serwera.
 
 W razie potrzeby sprawdź przewodnik [Tryb ratunkowy](#step1).
 
-Teraz masz dostęp do serwera za pomocą nowego hasła.
-
+Zmodyfikowane konto użytkownika ma teraz dostęp do serwera z nowym hasłem.
 
 ## Sprawdź również
 

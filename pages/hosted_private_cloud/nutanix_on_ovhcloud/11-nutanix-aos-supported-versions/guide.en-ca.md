@@ -17,8 +17,8 @@ updated: 2022-11-25
 ## Requirements
 
 - a Nutanix Cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- access to the [OVHcloud API page](https://ca.api.ovh.com/)
+- access to the [OVHcloud Control Panel](/links/manager)
+- access to the [OVHcloud API page](/links/api)
 
 ## Overview of versions supported on an OVHcloud Nutanix cluster
 
@@ -71,6 +71,6 @@ The query result appears below `availableVersions` with both versions supported 
 
 [Using the OVHcloud API](/products/manage-operate-api-apiv6)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

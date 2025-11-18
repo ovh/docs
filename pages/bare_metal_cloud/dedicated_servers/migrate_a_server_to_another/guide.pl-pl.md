@@ -18,7 +18,7 @@ W miarę jak zmieniają się Twoje potrzeby i gama produktów OVHcloud, czasami 
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również”.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług [wyspecjalizowanej firmy](/links/partner). Więcej informacji znajduje się w sekcji “Sprawdź również”.
 >
 
 ## Wymagania początkowe
@@ -49,7 +49,7 @@ Migracja danych zazwyczaj wiąże się z skopiowaniem plików z jednego serwera 
 
 ### Korzystanie z backup storage (dostępne tylko w OVHcloud i So you Start)
 
-Opcja [Backup Storage](https://www.ovhcloud.com/pl/bare-metal/backup-storage/) umożliwia przechowywanie danych w usłudze zewnętrznej. Jest przypisana wyłącznie do usługi, którą zamówiłeś.
+Opcja [Backup Storage](/links/bare-metal/backup-storage) umożliwia przechowywanie danych w usłudze zewnętrznej. Jest przypisana wyłącznie do usługi, którą zamówiłeś.
 
 > [!warning]
 >
@@ -60,7 +60,7 @@ Opcja [Backup Storage](https://www.ovhcloud.com/pl/bare-metal/backup-storage/) u
 
 Możesz zezwolić na dostęp do usługi backup storage z Twojego nowego serwera. W ten sposób zyskujesz dostęp do bramki umożliwiającej transfer danych.
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korzystanie z Backup Storage na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage#korzystanie-z-backup-storage){.external}.
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korzystanie z Backup Storage na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage#korzystanie-z-backup-storage).
 
 ### Przeniesienie adresu Additional IP (dostępnego tylko w OVHcloud i So you Start)
 

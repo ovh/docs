@@ -1,7 +1,7 @@
 ---
 title: "Partilhado: ativação da firewall"
 excerpt: "Partilhado: ativação da firewall"
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Objetivo
@@ -26,13 +26,13 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting){.external}.
-- Dispor de, pelo menos, um [domínio](/links/web/domains){.external} associado ao alojamento.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting).
+- Dispor de, pelo menos, um [domínio](/links/web/domains) associado ao alojamento.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager){.external} e selecione `Web Cloud`{.action}. Na barra à esquerda, clique em `Alojamentos`{.action} e, a seguir, no alojamento correspondente.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Na barra à esquerda, clique em `Alojamentos`{.action} e, a seguir, no alojamento correspondente.
 
 ### Ativar a firewall aplicativa na configuração PHP
 

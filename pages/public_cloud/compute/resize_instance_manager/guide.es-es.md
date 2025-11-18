@@ -27,7 +27,7 @@ En algunos casos, bien debido a un aumento de la actividad o a sus nuevas necesi
 
 ## Requisitos
 
-- Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
+- Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 ## Procedimiento

@@ -11,14 +11,14 @@ This guide explains how to add a new ESXi server storage to an existing vSAN clu
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](/links/manager))
 - A deployed [vSan Datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
 
 ## Instructions
 
 ### Order a new vSan host
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) with your administrative credentials.
+Log in to the [OVHcloud Control Panel](/links/manager) with your administrative credentials.
 
 In the `Hosted Private Cloud`{.action} section, select your datacenter and go to the `Hosts`{.action} tab.<br>
 Click on the `Order a Host`{.action} button.
@@ -47,7 +47,7 @@ Click on `Claim Unused Disks`{.action}.
 
 ![vSAN](images/en08cluster.png){.thumbnail}
 
-Available disks are assigned to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} for explanation) depending on types and sizes. You can customize it to your need.
+Available disks are assigned to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html) for explanation) depending on types and sizes. You can customize it to your need.
 
 Click on `Create`{.action} when ready.
 

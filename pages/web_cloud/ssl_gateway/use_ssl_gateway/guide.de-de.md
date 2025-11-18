@@ -18,7 +18,7 @@ updated: 2022-12-01
 Hier erfahren Sie, wie Sie Ihr SSL Gateway verwenden.
 
 ### Konfiguration Ihrer Dienstleistung
-- Loggen Sie sich in [Ihr Kundencenter](/links/manager){.external} ein.
+- Loggen Sie sich in [Ihr Kundencenter](/links/manager) ein.
 - Klicken Sie dann auf den Bereich `Sunrise`{.action}.
 
 ![Button Sunrise](images/4.PNG){.thumbnail}
@@ -290,7 +290,7 @@ a2enconf remoteip
 service apache2 restart
 ```
 
-Weitere Informationen zu diesem Thema finden Sie in der [offiziellen Dokumentation von Apache](https://httpd.apache.org/docs/current/de/mod/mod_remoteip.html){.external}.
+Weitere Informationen zu diesem Thema finden Sie in der [offiziellen Dokumentation von Apache](https://httpd.apache.org/docs/current/de/mod/mod_remoteip.html).
 
 #### Nginx
 - Öffnen Sie die Konfigurationsdatei der zu sichernden Seite. Sie finden diese in der Regel unter:
@@ -304,7 +304,7 @@ set_real_ip_from 213.32.4.0/24;
 real_ip_header X-Forwarded-For;
 ```
 
-Weitere Informationen zu diesem Thema finden Sie in der [offiziellen Dokumentation von Nginx](http://nginx.org/en/docs/http/ngx_http_realip_module.html){.external}.
+Weitere Informationen zu diesem Thema finden Sie in der [offiziellen Dokumentation von Nginx](http://nginx.org/en/docs/http/ngx_http_realip_module.html).
 
 ## Weiterführende Informationen
 

@@ -17,7 +17,7 @@ Neste guia, saiba como gerir as snapshots dos volumes para a oferta OVHcloud Ent
 ## Requisitos
 
 - Dispor de uma oferta OVHcloud Enterprise File Storage com um volume
-- Ter acesso à página das [API OVHcloud](https://api.ovh.com/)
+- Ter acesso à página das [API OVHcloud](/links/api)
 
 ## O essencial
 
@@ -171,6 +171,6 @@ Substitua o `serviceName` pelo ID do seu serviço, `shareId` pelo ID do volume e
 
 ## Quer saber mais?
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

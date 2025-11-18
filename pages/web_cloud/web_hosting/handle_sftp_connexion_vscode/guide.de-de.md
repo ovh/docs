@@ -1,7 +1,7 @@
 ---
 title: "Webhosting mit Visual Studio Code über SFTP verwalten"
 excerpt: "Eine Website auf einem Webhosting mit Visual Studio Code mithilfe einer SFTP-Erweiterung verwalten"
-updated: 2023-11-06
+updated: 2025-10-21
 ---
 
 ## Ziel
@@ -26,7 +26,7 @@ Wenn Sie über ein OVHcloud Webhosting verfügen, können Sie auf einen Speicher
 >
 > OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit in Ihrer Verantwortung, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bestmöglich bei gängigen Aufgaben zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Anbieter](/links/partner) oder den Herausgeber von [Visual Studio Code IDE](https://code.visualstudio.com/){.external} zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [„Weiterführende Informationen“](#go-further) dieser Anleitung.
+> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bestmöglich bei gängigen Aufgaben zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Anbieter](/links/partner) oder den Herausgeber von [Visual Studio Code IDE](https://code.visualstudio.com/) zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [„Weiterführende Informationen“](#go-further) dieser Anleitung.
 >
 
 ### SFTP-Erweiterung für Visual Studio Code installieren
@@ -83,6 +83,8 @@ Diese Datei befindet sich im Ordner .vscode, der sich wiederum im Wurzelverzeich
 ### Datei sftp.json konfigurieren
 
 Bevor Sie an Ihrem Projekt arbeiten, laden Sie es in Ihren zuvor erstellten lokalen Ordner herunter. Stellen Sie jedoch zunächst sicher, dass die Datei „sftp.json“ richtig konfiguriert ist. Die relevanten Informationen finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager). Klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann auf `FTP - SSH`{.action}.
+
+![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
 Geben Sie in der Datei „sftp.json“ Werte für die folgenden Einträge ein:
 
@@ -155,7 +157,7 @@ Wenn Sie dazu aufgefordert werden, geben Sie das Passwort für den in der Datei 
 
 > [!primary]
 >
-> Zur Erinnerung: Die richtige Konfiguration der Datei „sftp.json“ ist entscheidend. Wenn Sie vor dem Hochladen Ihres Projekts auf einen Fehler stoßen, wird dies normalerweise durch einen Konfigurationsfehler in der Datei „sftp.json“ verursacht. Weitere Informationen hierzu finden Sie in den [FAQ](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md){.external}.
+> Zur Erinnerung: Die richtige Konfiguration der Datei „sftp.json“ ist entscheidend. Wenn Sie vor dem Hochladen Ihres Projekts auf einen Fehler stoßen, wird dies normalerweise durch einen Konfigurationsfehler in der Datei „sftp.json“ verursacht. Weitere Informationen hierzu finden Sie in den [FAQ](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md).
 >
 
 ### Änderungen an Dateien vornehmen
@@ -170,7 +172,7 @@ Bisher haben wir nur die Befehle: `SFTP: Config` und `SFTP: Download Project` er
 
 ![hosting](/pages/assets/screens/other/web-tools/vscode/list_commands.png){.thumbnail}
 
-Die Liste der Befehle finden Sie [hier](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
+Die Liste der Befehle finden Sie [hier](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands).
 
 Sie können nun über Visual Studio Code auf den Inhalt Ihres Webhostings zugreifen und diesen bearbeiten.
 

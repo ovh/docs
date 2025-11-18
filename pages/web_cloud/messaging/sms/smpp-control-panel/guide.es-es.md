@@ -21,7 +21,7 @@ Desde el área de cliente de OVHcloud podrá encontrar las claves SMPP, cambiar 
 ## Requisitos
 
 - Disponer de [una cuenta SMS SMPP OVHcloud](https://www.ovhcloud.com/es-es/sms/api-sms/).
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Telecom`{.action} > `SMS`{.action}.
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager) en la sección `Telecom`{.action} > `SMS`{.action}.
 
 ## Procedimiento
 

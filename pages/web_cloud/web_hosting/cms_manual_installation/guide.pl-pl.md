@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ręczna instalacja CMS na hostingu"
 excerpt: "Dowiedz się, jak ręcznie zainstalować CMS na Twoim hostingu"
-updated: 2024-03-28
+updated: 2025-10-28
 ---
   
 ## Wprowadzenie
@@ -16,14 +16,14 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 >
 > Aby skontaktować się z poszczególnymi edytorami systemów zarządzania treścią, zapoznaj się z poniższymi linkami do ich odpowiednich oficjalnych stron:
 >
-> - [WordPress](https://wordpress.com/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
-> - [Pico](https://picocms.org/){.external}
-> - [Grav](https://getgrav.org/){.external}
-> - [Typo3](https://typo3.com/){.external}
-> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+> - [WordPress](https://wordpress.com/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
+> - [Pico](https://picocms.org/)
+> - [Grav](https://getgrav.org/)
+> - [Typo3](https://typo3.com/)
+> - [SPIP](https://www.spip.net/en_rubrique25.html)
 >
 
 > [!success]
@@ -37,7 +37,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 
 - Posiadanie oferty [hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -51,7 +51,7 @@ Poniżej znajdziesz krótki opis każdego z systemów CMS, o których mowa powy�
 
 Więcej informacji znajduje się na naszej stronie dotyczącej [modułu WordPress](/links/web/hosting-wordpress)
 
-- Oficjalna strona [WordPress](https://wordpress.com/){.external}
+- Oficjalna strona [WordPress](https://wordpress.com/)
 
 #### Joomla!
 
@@ -61,7 +61,7 @@ Społeczność **Joomla!** jest bardzo duża i może udzielać wsparcia i usług
 
 Więcej informacji znajduje się na naszej stronie dotyczącej [modułu Joomla!](/links/web/hosting-joomla)
 
-- Oficjalna strona [Joomla!](https://www.joomla.org/){.external}
+- Oficjalna strona [Joomla!](https://www.joomla.org/)
 
 #### Drupal
 
@@ -69,7 +69,7 @@ Więcej informacji znajduje się na naszej stronie dotyczącej [modułu Joomla!]
 
 Więcej informacji znajduje się na naszej stronie dotyczącej [modułu Drupal](/links/web/hosting-drupal)
 
-- Oficjalna strona [Drupal](https://www.drupal.org/){.external}
+- Oficjalna strona [Drupal](https://www.drupal.org/)
 
 #### PrestaShop
 
@@ -77,31 +77,31 @@ CMS, utworzony w 2005 roku i przeznaczony do tworzenia stron e-commerce. Oprogra
 
 Więcej informacji znajduje się na naszej stronie dotyczącej [modułu PrestaShop](/links/web/hosting-prestashop)
 
-- Oficjalna strona [PrestaShop](https://www.prestashop.com/){.external}
+- Oficjalna strona [PrestaShop](https://www.prestashop.com/)
 
 #### Pico
 
 **Pico** to oparty na PHP lekki CMS, idealny do tworzenia stron WWW lub blogów. Nie posiada bazy danych i używa plików Markdown do zarządzania zawartością. Posiada rozszerzenia służące do personalizacji Twojej strony WWW.
 
-- Oficjalna strona [Pico](https://picocms.org/){.external}
+- Oficjalna strona [Pico](https://picocms.org/)
 
 #### Grav
 
 **Grav** to nowoczesny i elastyczny CMS oparty na PHP. Jest on zaprojektowany bez użycia baz danych i wykorzystuje pliki Markdown do przechowywania i zarządzania treścią. Grav wyróżnia się systemem zarządzania pakietami, który ułatwia instalację i aktualizację wtyczek i szablonów dla Twojej strony WWW.
 
-- Oficjalna strona [Grav](https://getgrav.org/){.external}
+- Oficjalna strona [Grav](https://getgrav.org/)
 
 #### Typo3
 
 **Typo3** to oparty na PHP CMS przeznaczony do tworzenia stron WWW każdej wielkości, od małych po duże firmy. Do przechowywania treści wykorzystuje on bazę danych. Oferuje szeroką gamę rozszerzeń do rozszerzania swoich funkcjonalności, aby dostosować stronę WWW do swoich potrzeb.
 
-- Oficjalna strona [Typo3](https://typo3.com/){.external}
+- Oficjalna strona [Typo3](https://typo3.com/)
 
 #### SPIP
 
 **SPIP** jest systemem CMS przeznaczonym głównie do publikacji i zarządzania witrynami wydawniczymi, takimi jak gazety i czasopisma internetowe. Jest on oparty na PHP i bazie danych SQL, ułatwia tworzenie stron www wzbogaconych o treści tekstowe, graficzne i / lub multimedialne.
 
-- Oficjalna strona [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+- Oficjalna strona [SPIP](https://www.spip.net/en_rubrique25.html)
 
 > [!warning]
 >
@@ -114,9 +114,9 @@ Aby zainstalować CMS na Twoim [hostingu](/links/web/hosting), potrzebne są jak
 
 #### 1.1 - Sprawdź zgłoszenie w katalogu głównym
 
-"Katalog główny" to katalog, w którym Twój przyszły CMS zostanie zainstalowany na Twoim hostingu. Zalecamy wybór pustego katalogu, aby uniknąć konfliktów z innymi potencjalnymi stronami podpiętymi w opcji MultiSite.
+"Katalog główny" odpowiada katalogowi, w którym zostanie zainstalowany Twój przyszły system CMS na Twoim serwisie internetowym. Zaleca się wybranie pustego katalogu, aby uniknąć konfliktów z Twoimi innymi potencjalnymi stronami internetowymi.
 
-Zapoznaj się z naszą dokumentacją [jak dodać stronę podpiętą w opcji MultiSite na hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite), aby zdefiniować katalog główny, z którego chcesz korzystać w systemie CMS.
+Zapoznaj się z naszą dokumentacją, która opisuje [jak utworzyć stronę internetową na swoim hosting web](/pages/web_cloud/web_hosting/multisites_configure_multisite), aby określić katalog główny do użycia z Twoim CMS.
 
 > [!primary]
 >
@@ -191,14 +191,14 @@ Przejdź na stronę producenta systemu CMS, który wybrałeś, aby pobrać pliki
 
 Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tutorialu:
 
-- [WordPress](https://wordpress.org/download/#download-install){.external}
-- [Joomla!](https://downloads.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/download){.external}
-- [Prestashop](https://www.prestashop.com/en/download){.external}
-- [Pico](https://picocms.org/download/){.external}
-- [Grav](https://getgrav.org/downloads){.external}
-- [Typo3](https://get.typo3.org/#download){.external}
-- [SPIP](https://www.spip.net/en_download){.external}
+- [WordPress](https://wordpress.org/download/#download-install)
+- [Joomla!](https://downloads.joomla.org/)
+- [Drupal](https://www.drupal.org/download)
+- [Prestashop](https://www.prestashop.com/en/download)
+- [Pico](https://picocms.org/download/)
+- [Grav](https://getgrav.org/downloads)
+- [Typo3](https://get.typo3.org/#download)
+- [SPIP](https://www.spip.net/en_download)
 
 > [!primary]
 >
@@ -206,14 +206,14 @@ Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tuto
 >
 > W tym celu zapoznaj się z linkiem do oficjalnej strony systemu CMS, który chcesz zainstalować:
 >
-> - [WordPress](https://wordpress.org/about/requirements/){.external}
-> - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
-> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
-> - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
-> - [Pico](https://picocms.org/download/){.external}
-> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
-> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
-> - [SPIP](https://www.spip.net/en_article6659.html){.external}
+> - [WordPress](https://wordpress.org/about/requirements/)
+> - [Joomla!](https://downloads.joomla.org/technical-requirements)
+> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements)
+> - [Prestashop](https://www.prestashop.com/en/system-requirements)
+> - [Pico](https://picocms.org/download/)
+> - [Grav](https://learn.getgrav.org/17/basics/requirements)
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html)
+> - [SPIP](https://www.spip.net/en_article6659.html)
 >
 > Skonfiguruj następnie wersję PHP na Twoim hostingu, korzystając z dokumentacji [OVHcloud dotyczącej zmiany wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -398,13 +398,13 @@ Aby kontynuować instalację, kliknij w przewodnik dotyczący systemu CMS:
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-Zobacz nasze [rozwiązania hostingu WWW](/links/web/hosting){.external}
+Zobacz nasze [rozwiązania hostingu WWW](/links/web/hosting)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

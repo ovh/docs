@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Train a Rasa chatbot inside a Docker container 
 excerpt: Understand how simple it is to train a chatbot with AI Training
-updated: 2023-05-11
+updated: 2025-06-27
 ---
 
 ## Objective
@@ -92,11 +92,19 @@ EXPOSE 5005
 CMD rasa train --force --out trained-models
 ```
 
-Secondly, you have to build the Docker image and push it inside your public repository (such as Dockerhub) or in a private directory.
-Here are the two commands to run inside the folder `rasa_bot`:
+Secondly, you have to build the Docker image and push it inside your public repository (such as Dockerhub) or in a private directory. To do that, run one of the following commands inside the folder `rasa_bot`:
+
+```console
+# Build the image using your machine's default architecture
+docker build . -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest .
+```
+
+Then, push your image:
 
 ```bash
-docker build .  -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest
 docker push <yourdockerhubId>/rasa-chatbot:latest
 ```
 

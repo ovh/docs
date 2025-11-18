@@ -23,17 +23,17 @@ Po zaplanowaniu prac konserwacyjnych na Twojej usłudze Hosted Private Cloud otr
 
 - Otrzymałeś e-mail z powiadomieniem o pracach konserwacyjnych informujący, że możesz **zmienić datę wykonania prac konserwacyjnych**. W przeciwnym razie data utrzymania nie może zostać zmieniona.
 - Posiadanie kontaktu administracyjnego lub technicznego w infrastrukturze [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub [interfejsu administracyjnego usług przez API](https://eu.api.ovh.com/).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [interfejsu administracyjnego usług przez API](/links/api).
 
 ## W praktyce
 
 > [!success]
-> E-maile wysłane przez OVHcloud są również dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br>
+> E-maile wysłane przez OVHcloud są również dostępne w [Panelu klienta OVHcloud](/links/manager).<br>
 > Kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie `E-maile usługi`{.action} w menu po prawej stronie.
 
 ### W Panelu klienta OVHcloud
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) za pomocą konta administratora.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) za pomocą konta administratora.
 
 W menu `Hosted Private Cloud`{.action} kliknij zakładkę `Dział operacyjny`{.action}. Wybierz `Do wykonania`{.action} z rozwijanego menu, w którym mają być filtrowane operacje.
 
@@ -54,7 +54,7 @@ Następnie kliknij przycisk `Zmień`{.action}, aby zatwierdzić zmiany.
 
 ### Za pośrednictwem API OVHcloud
 
-Zaloguj się do [interfejsu administracyjnego Twoich usług przez API](https://eu.api.ovh.com/). Zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps)".
+Zaloguj się do [interfejsu administracyjnego Twoich usług przez API](/links/api). Zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps)".
 
 Wykonaj następujące wywołanie API:
 

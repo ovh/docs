@@ -39,7 +39,7 @@ In this tutorial we are going to:
 - install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster
 - configure a Keycloak instance in our Kubernetes cluster as an OIDC provider
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -344,7 +344,7 @@ $ echo $INGRESS_URL
 135.125.84.194
 ```
 
-If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/asia/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+If you are using the [OVHcloud Domain name product](/links/web/domains), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 If you are using an external DNS provider, please configure your domain before reading the rest of this tutorial.
 
@@ -774,14 +774,14 @@ kubectl delete namespaces cert-manager
 
 ## Useful resources
 
-- [Keycloack documentation](https://www.keycloak.org/documentation){.external}
-- [ArtifactHUB keycloack](https://artifacthub.io/packages/helm/codecentric/keycloak){.external}  
-- [Cert-manager Securing Ingress Resources](https://cert-manager.io/docs/usage/ingress/){.external}  
-- [Keycloak on Kubernetes](https://www.keycloak.org/getting-started/getting-started-kube){.external}
-- [Kubernetes API Access Control documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator){.external}
+- [Keycloack documentation](https://www.keycloak.org/documentation)
+- [ArtifactHUB keycloack](https://artifacthub.io/packages/helm/codecentric/keycloak)  
+- [Cert-manager Securing Ingress Resources](https://cert-manager.io/docs/usage/ingress/)  
+- [Keycloak on Kubernetes](https://www.keycloak.org/getting-started/getting-started-kube)
+- [Kubernetes API Access Control documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#option-1-oidc-authenticator)
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

@@ -21,23 +21,23 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu OVHcloud](/links/web/hosting-multisite){.external}.
-- Zarejestrowana domena lub kilka [domen](/links/web/domains){.external}.
+- Posiadanie kompatybilnego [hostingu OVHcloud](/links/web/hosting-multisite).
+- Zarejestrowana domena lub kilka [domen](/links/web/domains).
 - Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit))
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 > [!primary]
 >
-> Większość ofert [hostingu OVHcloud](/links/web/hosting){.external} dysponuje opcją tworzenia spersonalizowanego(ych) adresu(ów) e-mail powiązanego z Twoją domeną.
+> Większość ofert [hostingu OVHcloud](/links/web/hosting) dysponuje opcją tworzenia spersonalizowanego(ych) adresu(ów) e-mail powiązanego z Twoją domeną.
 > Ta opcja e-mail może zostać włączona dla **jednej** domeny. Oznacza to, że jeśli korzystasz z opcji *MultiSite* dla kilku różnych domen, możesz włączyć tę opcję tylko dla jednej domeny.
 > Zapoznaj się z [przewodnikiem](/pages/web_cloud/web_hosting/activate-email-hosting), aby uzyskać więcej informacji na temat aktywacji tej opcji.
 >
 
 ### Etap 1: zarządzanie opcją MultiSite <a name="multisite-menu"></a>
 
-Po pierwsze, zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, wybierz odpowiednią ofertę, następnie wybierz zakładkę `MultiSite`{.action}.
+Po pierwsze, zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, wybierz odpowiednią ofertę, następnie wybierz zakładkę `MultiSite`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodanych do Twojego rozwiązania hostingowego. Niektóre z nich zostały utworzone automatycznie podczas instalacji Twojego hostingu.
 
@@ -67,7 +67,7 @@ W przypadku nazwy domeny zewnętrznej (inny identyfikator klienta) lub zewnętrz
 #### Etap 2.1: dodaj domenę zarejestrowaną w OVHcloud <a name="add-ovhcloud-domain"></a>
 
 > [!warning]
-> Ten etap ma zastosowanie jedynie, jeśli zaznaczyłeś opcję "Dodaj domenę zarejestrowaną w OVHcloud". Domena lub jej strefa DNS muszą znajdować się **w Panelu klienta**. W przypadku domen zewnętrznych przejdź do [etap 2.2: dodaj domenę zewnętrzną](#add-external-domain){.external}.
+> Ten etap ma zastosowanie jedynie, jeśli zaznaczyłeś opcję "Dodaj domenę zarejestrowaną w OVHcloud". Domena lub jej strefa DNS muszą znajdować się **w Panelu klienta**. W przypadku domen zewnętrznych przejdź do [etap 2.2: dodaj domenę zewnętrzną](#add-external-domain).
 
 Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego w OVHcloud hostingu niektóre z oferowanych elementów mogą być dostępne, inne zaś nie.
 
@@ -80,25 +80,25 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 |---|---|
 |Domena|Nazwa wybranej domeny wprowadzana jest automatycznie. Możesz dodać subdomenę (np. **blog**.domain.tld) i jednocześnie utworzyć jej wersję wraz z WWW (np. **www.blog**.domain.tld). Domena ta stanie się adresem strony WWW, którą chcesz umieścić w Internecie.|
 |Katalog główny|Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.domain.tld katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
-|SSL|Umożliwia korzystanie z bezpiecznego połączenia (HTTPS: //) z wybraną nazwą domeny. Dowiedz się więcej na [naszej stronie SSL](/links/web/hosting-options-ssl){.external}. Aktywując SSL i CDN (Content Delivery Network), możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
-|Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](/links/web/hosting-options-cdn){.external}. Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
-|Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](/links/web/hosting-options){.external}.|
-|Włącz firewall|Umożliwia aktywację zapory (analiza zapytań) dla danej domeny. Dowiedz się więcej na [naszej stronie ModSecurity](/links/web/hosting-options){.external}.|
-|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](/links/web/hosting-traffic-analysis){.external} statystyk.|
+|SSL|Umożliwia korzystanie z bezpiecznego połączenia (HTTPS: //) z wybraną nazwą domeny. Dowiedz się więcej na [naszej stronie SSL](/links/web/hosting-options-ssl). Aktywując SSL i CDN (Content Delivery Network), możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
+|Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](/links/web/hosting-options-cdn). Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
+|Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](/links/web/hosting-options).|
+|Włącz firewall|Umożliwia aktywację zapory (analiza zapytań) dla danej domeny. Dowiedz się więcej na [naszej stronie ModSecurity](/links/web/hosting-options).|
+|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](/links/web/hosting-traffic-analysis) statystyk.|
 
 > [!warning]
 >
 > Nie będziesz mógł włączyć oddzielnych logów dla domeny zewnętrznej. Ta opcja jest dostępna tylko dla domen zarejestrowanych w OVHcloud.
 >
 
-Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
+Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
 ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
 
 Po wybraniu domeny zarejestrowanej w OVHcloud możesz automatycznie lub ręcznie zmienić jej konfigurację DNS:
 
 - **w przypadku automatycznej konfiguracji DNS**: zaznacz kratkę `Konfiguracja automatyczna (zalecana)`{.action};
-- **w przypadku ręcznej konfiguracji DNS**: usuń zaznaczenie w kratce `Konfiguracja automatyczna (zalecana)`{.action}, następnie pobierz informacje odnośnie zmian, które się wyświetlają. Jeśli chcesz przeprowadzić tę konfigurację, skorzystaj z dokumentacji ["Modyfikacja strefy DNS OVHcloud"](/pages/web_cloud/domains/dns_zone_edit){.external}.
+- **w przypadku ręcznej konfiguracji DNS**: usuń zaznaczenie w kratce `Konfiguracja automatyczna (zalecana)`{.action}, następnie pobierz informacje odnośnie zmian, które się wyświetlają. Jeśli chcesz przeprowadzić tę konfigurację, skorzystaj z dokumentacji ["Modyfikacja strefy DNS OVHcloud"](/pages/web_cloud/domains/dns_zone_edit).
 
 Kliknij przycisk `Zatwierdź`{.action}, aby rozpocząć dodawanie domeny. Może do potrwać do godziny. Efekty modyfikacji domeny staną się widoczne po upływie 4-24 godzin ze względu na niezbędny czas propagacji.
 
@@ -112,7 +112,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 
  > Przed dodaniem strony podpiętej w opcji MultiSite lepiej jest zmodyfikować strefę DNS domeny zewnętrznej.
  >
- > Modyfikacja konfiguracji domeny zewnętrznej (jej strefy DNS) powinna zostać przeprowadzona w interfejsie dostawcy zarządzającego domeną. Jeśli chodzi o OVHcloud, skorzystaj z naszej dokumentacji ["Modyfikacja strefy DNS OVHcloud"](/pages/web_cloud/domains/dns_zone_edit){.external}. Efekty modyfikacji domeny staną się widoczne po upływie 1-24 godzin ze względu na niezbędny czas propagacji.
+ > Modyfikacja konfiguracji domeny zewnętrznej (jej strefy DNS) powinna zostać przeprowadzona w interfejsie dostawcy zarządzającego domeną. Jeśli chodzi o OVHcloud, skorzystaj z naszej dokumentacji ["Modyfikacja strefy DNS OVHcloud"](/pages/web_cloud/domains/dns_zone_edit). Efekty modyfikacji domeny staną się widoczne po upływie 1-24 godzin ze względu na niezbędny czas propagacji.
 >
 > Poniżej znajdziesz 2 elementów do zmiany konfiguracji DNS Twojej zewnętrznej domeny:
 >
@@ -135,9 +135,9 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 |---|---|
 |Domena|Wpisz nazwę domeny, której chcesz używać. Dodaj subdomenę (np. **blog**.domain.tld) i utwórz jednocześnie jej wersję wraz z WWW (np. **www.blog**.domain.tld). Domena ta będzie odpowiadała adresowi strony WWW, którą chcesz umieścić w Internecie. Pamiętaj, że musisz mieć uprawnienia do modyfikacji konfiguracji domeny (jej strefy DNS), aby proces dodania domeny został ukończony.|
 |Katalog główny| Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.domain.tld katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
-|Włącz obsługę IPv6|Umożliwia aktywację protokołu IPv6 dla danej domeny. Dowiedz się więcej na [naszej stronie IP](/links/web/hosting-options){.external}.|
+|Włącz obsługę IPv6|Umożliwia aktywację protokołu IPv6 dla danej domeny. Dowiedz się więcej na [naszej stronie IP](/links/web/hosting-options).|
 
-Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
+Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
 ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 
@@ -194,24 +194,24 @@ Aby dodać rekordy **A** lub **AAAA** i poprawnie skonfigurować domenę, postę
 
 Po dodaniu domeny wystarczy umieścić w Internecie powiązaną z nią stronę WWW. Przeprowadź tę operację w katalogu głównym, który zdefiniowałeś na poprzednim etapie.
 
-Aby wesprzeć Cię w tym procesie, możesz skorzystać z gotowej do użycia struktury strony WWW, która jest dostępna za 1 kliknięciem od OVHcloud. Strona zostanie wówczas automatycznie zainstalowana w uprzednio skonfigurowanym katalogu głównym. O modułach dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}. 
+Aby wesprzeć Cię w tym procesie, możesz skorzystać z gotowej do użycia struktury strony WWW, która jest dostępna za 1 kliknięciem od OVHcloud. Strona zostanie wówczas automatycznie zainstalowana w uprzednio skonfigurowanym katalogu głównym. O modułach dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](/pages/web_cloud/web_hosting/cms_install_1_click_modules). 
 
-Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej. Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}.
+Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej. Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 > [!primary]
 >
 > Jeśli chcesz dodać kilka stron WWW, powtórz ten etap.
 >
-> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](/links/web/hosting){.external} znajdziesz liczbę zalecanych stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
+> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](/links/web/hosting) znajdziesz liczbę zalecanych stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
 >
 
 ## Sprawdź również
 
-[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
-[Uruchomienie strony WWW na Twoim hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Uruchomienie strony WWW na Twoim hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 

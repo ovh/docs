@@ -17,7 +17,7 @@ But for some specific usecases, you may have to customize nodes parameters.
 - Access to the [OVHcloud Control Panel](/links/manager)
 - An OVHcloud Managed Kubernetes cluster
 - Access to your OVHcloud Managed Kubernetes cluster through the Kubeconfig file
-- You must have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed
+- You must have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed
 - Your Kubeconfig is exported into your terminal following this guide : [Configuring Kubectl](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster)
 
 ## Instructions

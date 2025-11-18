@@ -81,7 +81,7 @@ Commencez en relevant l'état des trois voyants mentionnés ci-dessous sur l'app
 |Voyant|États et significations|
 |---|---|
 |Power|**Vert fixe** : l'équipement ONT est bien alimenté électriquement.<br> **Éteint** : l'équipement ONT n'est pas raccordé électriquement ou n'est pas allumé (bouton ON/OFF) ou est hors service.|
-|Alarm|**Éteint** : l'équipement ONT fonctionne correctement.<br>**Rouge fixe** : le signal optique présente des anomalies LOF/LOS (pertes de frames/pertes de signal)|
+|Alarm (ou LOS)|**Éteint** : l'équipement ONT fonctionne correctement.<br>**Rouge fixe** : le signal optique présente des anomalies LOF/LOS (pertes de frames/pertes de signal)|
 |PON|**Vert fixe** : la synchronisation optique (fibre) est établie.<br> **Vert clignotant** : un signal optique (fibre) est détecté, la synchronisation est en train de s'établir.<br> **Éteint** : le signal optique (fibre) n'est pas/plus détecté par l'équipement ONT.|
 |LAN|**Vert clignotant** : fonctionnement normal, des données sont échangées entre l'équipement ONT et le routeur.<br>**Éteint** : il n'y a pas/plus de communication entre l'équipement ONT et le routeur OVHcloud, via un câble RJ45.<br>**Vert fixe** : cela signifie que l'équipement ONT est bien relié au routeur via un câble RJ45 mais il n'y a pas de communication de données entre ces deux éléments.|
 
@@ -91,7 +91,7 @@ Dès lors, plusieurs possibilités selon l'état des voyants.
 
 - **Le voyant PON est éteint** : assurez-vous que le câble de fibre optique est correctement relié à votre ONT et que celui-ci est en bon état (non plié ou non coincé sous un meuble). Essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 
-- **Le voyant « Alarm » est allumé en rouge fixe ou clignote rapidement** : essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
+- **Le voyant « Alarm » (ou « LOS ») est allumé en rouge fixe ou clignote rapidement** : essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que l'ONT est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](/pages/web_cloud/internet/internet_access/ftth_fix_access#etape-3-verifier-le-fonctionnement-jusqua-la-box-ovh) ».
 
@@ -139,7 +139,7 @@ Si le voyant « WAN » de votre box OVHcloud n'est pas allumé vert fixe, réali
 
 1. **Vérifier le branchement entre l'ONT et la box OVHcloud** : assurez-vous qu'un câble Ethernet est bien relié de la box OVHcloud sous l'emplacement « **WAN** » prévu à cet effet jusqu'à l'équipement ONT sous l'emplacement « **LAN** » prévu à cet effet. 
 
-2. **Vérifier l'état de fonctionnement du port « **WAN** » de la box OVHcloud** : changez de place le câble Ethernet actuellement relié sous l'emplacement « **WAN** » sur l'un des ports « **LAN** » (n'importe lequel), puis vérifiez si le voyant « **LAN** » s'est allumé sur l'ONT. Si tel est le cas, ceci indique que le port « **WAN** » de votre box OVHcloud est défectueux. [Prenez alors contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help) afin de procéder à un échange de celle-ci. 
+2. **Vérifier l'état de fonctionnement du port « WAN » de la box OVHcloud** : changez de place le câble Ethernet actuellement relié sous l'emplacement « **WAN** » sur l'un des ports « **LAN** » (n'importe lequel), puis vérifiez si le voyant « **LAN** » s'est allumé sur l'ONT. Si tel est le cas, ceci indique que le port « **WAN** » de votre box OVHcloud est défectueux. [Prenez alors contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help) afin de procéder à un échange de celle-ci. 
 
 3. **Vérifier l'état du câble Ethernet** : assurez-vous que le câble Ethernet reliant l'ONT à la box OVHcloud est en bon état (non dénudé, non plié ou non coincé sous un meuble). Si possible, essayez de changer ce câble par un autre.
 

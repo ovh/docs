@@ -1,12 +1,15 @@
 ---
 title: 'Konfiguracja Additional IP w trybie bridge na wirtualnych maszynach'
 excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
-updated: 2025-05-16
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Ten artykuł dotyczy konfiguracji adresów Additional IPv4 w interfejsie publicznym. Możesz również skonfigurować adresy IPv6 na swoich serwerach wirtualnych, używając [tego przewodnika](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm).
 >
-> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](/links/network/additional-ip). To nie ma wpływu na jego funkcje.
+> Pamiętaj, że adresy Additional IP mogą być również skonfigurowane w sieci vRack (sieć prywatna), co pozwala na połączenie szerokiej gamy usług OVHcloud i zapewnia większą elastyczność.
+>
+> Dowiedz się, jak skonfigurować dodatkowe adresy IP w sieci vRack za pomocą przewodników dla [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) i [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Wprowadzenie
@@ -81,7 +84,7 @@ Adres bramy IPv4 przypisany do Twojego serwera wyświetla się w sekcji `Sieć` 
 
 #### Za pośrednictwem API OVHcloud <a name="viaapi"></a>
 
-Na [stronie API OVHcloud](https://eu.api.ovh.com/console/) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
+Na [stronie API OVHcloud](/links/console) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
 
 Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 
@@ -101,7 +104,7 @@ Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (pr
 
 > [!warning]
 >
-> Poniższe instrukcje dotyczą utworzonej wcześniej maszyny wirtualnej z zainstalowanym systemem operacyjnym. Jeśli nie posiadasz wirtualnej maszyny, sprawdź opcje na stronie [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} firmy Proxmox.
+> Poniższe instrukcje dotyczą utworzonej wcześniej maszyny wirtualnej z zainstalowanym systemem operacyjnym. Jeśli nie posiadasz wirtualnej maszyny, sprawdź opcje na stronie [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines) firmy Proxmox.
 >
 
 Po utworzeniu wirtualnej maszyny i jej zakończeniu:
@@ -123,12 +126,7 @@ Teraz możesz uruchomić wirtualną maszynę i przejść do kolejnych etapów, w
 
 > [!warning]
 >
-> Hypervisor ESXi nie jest już wspierany przez OVHcloud. Więcej informacji na temat [tej strony dedykowanej](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
->
-
-> [!warning]
->
-> Poniższe instrukcje dotyczą utworzonej wcześniej maszyny wirtualnej z zainstalowanym systemem operacyjnym. Jeśli nie posiadasz wirtualnej maszyny, zapoznaj się z przewodnikiem [Tworzenie maszyny wirtualnej w kliencie hosta VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID--F968-4983-A230-.html){.external} na stronie VMware.
+> Poniższe instrukcje dotyczą utworzonej wcześniej maszyny wirtualnej z zainstalowanym systemem operacyjnym. Jeśli nie posiadasz wirtualnej maszyny, zapoznaj się z przewodnikiem [Tworzenie maszyny wirtualnej w kliencie hosta VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID--F968-4983-A230-.html) na stronie VMware.
 >
 
 Po utworzeniu wirtualnej maszyny i po jej wyłączeniu kliknij prawym przyciskiem myszy i kliknij `Zmień parametry`{.action}.
@@ -318,7 +316,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Jeśli otrzymasz odpowiedź, oznacza to, że adres Additional IP został poprawnie skonfigurowany. Jeśli tak się nie stanie, zrestartuj maszynę wirtualną i ponownie wprowadź polecenie ping.
 
-Aby uzyskać więcej informacji na temat `nmcli`, zobacz [ta strona](https://docs.redhat.com/pl/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-using_the_networkmanager_command_line_tool_nmcli).
+Aby uzyskać więcej informacji na temat `nmcli`, zobacz [ta strona (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli).
 
 #### FreeBSD
 

@@ -118,7 +118,7 @@ passwd
 
 Numa distribuição GNU/Linux, **uma indicação de palavra-passe não apresentará as suas entradas de teclado**.
 
-Introduza a sua palavra-passe atual e prima "Enter"{.action}. Introduza a nova frase secreta e introduza-a novamente no seguinte prompt para a confirmar.
+Introduza a sua palavra-passe atual e prima `Enter`{.action}. Introduza a nova frase secreta e introduza-a novamente no seguinte prompt para a confirmar.
 
 ```console
 Changing password for ubuntu.

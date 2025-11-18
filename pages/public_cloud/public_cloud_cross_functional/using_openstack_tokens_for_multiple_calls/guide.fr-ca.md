@@ -33,7 +33,7 @@ Ce guide vous montrera comment émettre un jeton OpenStack, l'utiliser pour les 
 
 ## Prérequis 
 
-- Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
+- Être connecté à l’[espace client OVHcloud](/links/manager).
 - Ce guide nécessite l'installation de l'outil OpenStack CLI sur votre machine.
 
 > [!primary]

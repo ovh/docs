@@ -15,13 +15,13 @@ You can upload a file easily, but for real-time data such as metrics and logs, c
 
 This tutorial requires:
 
-- An access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account, running at least:
+- An access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account, running at least:
     - one Public Cloud Database for OpenSearch service running;
     - one or more additional compute instance running Linux, acting as a data injector. It can also be your computer, a Kubernetes cluster, etc.
 
 > [!warning]
-> Make sure that you have a user account with enough privileges to write to the OpenSearch database, and that the IP addresses that you will use to run your agents (Logstash and Fluent Bit) are part of the authorized list. Check our [Getting Started guide](/pages/public_cloud/public_cloud_databases/opensearch_02_getting_Started){.external} for more information.
+> Make sure that you have a user account with enough privileges to write to the OpenSearch database, and that the IP addresses that you will use to run your agents (Logstash and Fluent Bit) are part of the authorized list. Check our [Getting Started guide](/pages/public_cloud/public_cloud_databases/opensearch_02_getting_Started) for more information.
 
 ### Software environment
 
@@ -34,7 +34,7 @@ The main software components used to create this tutorial are:
 
 ### OpenSearch Agents and ingestion tools compatibility Matrix
 
-Due to the fork from ElasticSearch, it is recommended to verify the version of software that you will use:[OpenSearch compatibility Matrices](https://opensearch.org/docs/latest/clients/agents-and-ingestion-tools/index/#compatibility-matrices){.external}.
+Due to the fork from ElasticSearch, it is recommended to verify the version of software that you will use:[OpenSearch compatibility Matrices](https://opensearch.org/docs/latest/clients/agents-and-ingestion-tools/index/#compatibility-matrices).
 
 ## Instructions
 
@@ -44,9 +44,9 @@ Due to the fork from ElasticSearch, it is recommended to verify the version of s
 
 To collect data, you need to install the collector agent on the data source. In our case it's a Linux Ubuntu virtual machine, but it can be anything.
 
-Please refer to the official [OpenSearch Logstash installation documentation](https://opensearch.org/docs/latest/clients/logstash/index/){.external}
+Please refer to the official [OpenSearch Logstash installation documentation](https://opensearch.org/docs/latest/clients/logstash/index/)
 
-As detailed in the compatibility matrix, select and download a compatible release from ElasticSearch: [download OSS past releases](https://www.elastic.co/fr/downloads/past-releases#logstash-oss){.external}
+As detailed in the compatibility matrix, select and download a compatible release from ElasticSearch: [download OSS past releases](https://www.elastic.co/fr/downloads/past-releases#logstash-oss)
 
 #### Configure Logstash
 
@@ -88,7 +88,7 @@ output {
 
 #### Grok patterns and debugger
 
-As an example of the main pattern matching that are currently used, or to test some more specific ones, you can use some tools like [Grok Debugger](https://grokdebug.herokuapp.com){.external} :
+As an example of the main pattern matching that are currently used, or to test some more specific ones, you can use some tools like [Grok Debugger](https://grokdebug.herokuapp.com) :
 
 ![Grok Debugger](images/grok_debugger.png){.thumbnail}
 
@@ -182,7 +182,7 @@ We now have a real time dashboard showing us the unique IP address per day, foun
 
 ### Step 3: Fluent Bit alternative as the data log source
 
-Multiple agents exist. Fluent Bit is a strong, full open source, alternative to Logstash, and works natively with OpenSearch: [official website for Fluent Bit](https://fluentbit.io){.external}.
+Multiple agents exist. Fluent Bit is a strong, full open source, alternative to Logstash, and works natively with OpenSearch: [official website for Fluent Bit](https://fluentbit.io).
 
 We propose now to parse the Apache access logs and push these information to the OpenSearch database for this agent.
 
@@ -190,7 +190,7 @@ We propose now to parse the Apache access logs and push these information to the
 
 #### Install Fluent Bit
 
-To install Fluent Bit on our Linux Ubuntu instance, we will install the td-agent-bit package, as described in the Fluent Bit installation process from the [Official Documentation](https://docs.fluentbit.io/manual/installation/linux){.external}.
+To install Fluent Bit on our Linux Ubuntu instance, we will install the td-agent-bit package, as described in the Fluent Bit installation process from the [Official Documentation](https://docs.fluentbit.io/manual/installation/linux).
 
 Check that the service is running and is enabled to start automatically when the system boots:
 
@@ -228,7 +228,7 @@ Let's modify the configuration file /etc/td-agent-bit/td-agent-bit.conf for the 
     Logstash_Prefix my-fluent
 ```
 
-If required, please refer to parameters in the [Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit){.external}.
+If required, please refer to parameters in the [Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit).
 
 All Apache access logs will now be pushed to the OpenSearch database under the "my-fluent" index.
 
@@ -244,14 +244,14 @@ Congratulations, you are now able to collect data from multiple sources and push
 
 [OpenSearch capabilities](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities)
 
-[OpenSearch Official documentation](https://opensearch.org/docs/latest){.external}
+[OpenSearch Official documentation](https://opensearch.org/docs/latest)
 
-[OpenSearch Dashboard Official documentation](https://opensearch.org/docs/latest){.external}
+[OpenSearch Dashboard Official documentation](https://opensearch.org/docs/latest)
 
-[OpenSearch Project GitHub](https://github.com/opensearch-project){.external}
+[OpenSearch Project GitHub](https://github.com/opensearch-project)
 
-[Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/){.external}
+[Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/)
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

@@ -1,6 +1,6 @@
 ---
 title: 'Web Cloud Databases EOS and EOL announcements'
-updated: 2025-06-11
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -9,10 +9,10 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|
-|MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|2025-02-12|2026-01-04|2026-07-06|
 |MariaDB 10.11|To be defined|To be defined|To be defined|
 |MariaDB 11.4|To be defined|To be defined|To be defined|
+|MariaDB 11.8|To be defined|To be defined|To be defined|
 |MySQL 8.0|2025-03-17|2025-09-30|2026-04-01|
 |MySQL 8.4|To be defined|To be defined|To be defined|
 |PostgreSQL 13|2023-11-14|2025-05-14|2025-11-13|
@@ -20,7 +20,6 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |PostgreSQL 15|To be defined|To be defined|To be defined|
 |PostgreSQL 16|To be defined|To be defined|To be defined|
 |PostgreSQL 17|To be defined|To be defined|To be defined|
-|Redis 7.0|2025-06-12|2025-09-12|2025-12-12|
 |Valkey 7.2|To be defined|To be defined|To be defined|
 
 ## Go further

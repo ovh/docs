@@ -12,14 +12,14 @@ A Área de Cliente OVHcloud oferece-lhe várias opções de personalização da 
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Managed Bare Metal`{.action}.
-- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager) e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Managed Bare Metal`{.action}.
+- Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
 
 ## Instruções
 
 ### Separador geral
 
-Depois de aceder à secção  `Bare Metal Cloud`{.action} e `Managed Bare Metal`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, visualizará um panorama geral da sua Managed Bare Metal:
+Depois de aceder à secção  `Bare Metal Cloud`{.action} e `Managed Bare Metal`{.action} da [Área de Cliente OVHcloud](/links/manager), visualizará um panorama geral da sua Managed Bare Metal:
 
 ![Informações gerais](images/controlpanel1-e.png){.thumbnail}
 
@@ -219,7 +219,7 @@ O separador Backup permite-lhe ativar a solução `Veeam Backup`.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-Para mais informações acerca desta opção, consulte [este guia](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service){.external}.
+Para mais informações acerca desta opção, consulte [este guia](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service).
 
 ## Quer saber mais?
 

@@ -15,19 +15,19 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 
 > [!warning]
 > 
-> Attention : le RAID 0 n’offre ni **tolérance aux pannes** ni ** redondance des données**. Cela rend très probable la perte d’informations en cas de panne de disque.
+> Attention : le RAID 0 n’offre ni **tolérance aux pannes** ni **redondance des données**. Cela rend très probable la perte d’informations en cas de panne de disque.
 > 
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal){.external} avec un RAID matériel.
+- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) avec un RAID matériel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 ## En pratique
 
 ### Utiliser votre espace client OVHcloud
 
-Dans votre [espace client OVHcloud](/links/manager){.external}, sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
+Dans votre [espace client OVHcloud](/links/manager), sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
 Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
@@ -57,7 +57,7 @@ df -h
 
 ### Utiliser le mode rescue
 
-Dans votre [espace client OVHcloud](/links/manager){.external}, sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}.
+Dans votre [espace client OVHcloud](/links/manager), sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}.
 
 Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action} pour changer le système de démarrage.
 
@@ -110,10 +110,10 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 ## Aller plus loin
 
-[« Remplacer à chaud un disque sur un serveur en RAID matériel. »](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard){.external}
+[« Remplacer à chaud un disque sur un serveur en RAID matériel. »](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
-[« Remplacer à chaud un disque sur un serveur en RAID logiciel. »](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft){.external}
+[« Remplacer à chaud un disque sur un serveur en RAID logiciel. »](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-[« Gestion du RAID matériel. »](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} 
+[« Gestion du RAID matériel. »](/pages/bare_metal_cloud/dedicated_servers/raid_hard) 
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -31,7 +31,7 @@ Hai ricevuto un’email a nome di OVHcloud e vuoi essere sicuro che sia corretta
 |---|---|---|
 |1 - Mittente|Controlla che l’indirizzo utilizzato per l’invio dell’email termini per “@ovhcloud.com”, “@ovh.com”, “@soyoustart.com” o “@kimsufi.com”.|Il più delle volte, l’email sarà contrassegnata come spam tra parentesi e il tuo nome utente non comparirà oppure sarà errato.|
 |2 - Oggetto|Verifica che il tuo nome utente **(che inizia con la prima lettera del cognome e la prima lettera del nome registrati su OVHcloud)** e/o l’indirizzo email del tuo account figurino nell’oggetto del messaggio.|Il più delle volte, l’email sarà contrassegnata come spam tra parentesi e il tuo nome utente non comparirà oppure sarà errato.|
-|3 - Link|Passa il mouse sul link in modo da visualizzarne direttamente il contenuto senza doverci cliccare (in fondo alla pagina del tuo browser). Il link dovrà reindirizzare alla pagina `https://www.ovh.com/`.|Nel nostro esempio, passando il mouse sul link, vedrai che quest’ultimo non ha niente a che vedere con OVHcloud, pertanto non cliccarci.|
+|3 - Link|Passa il mouse sul link in modo da visualizzarne direttamente il contenuto senza doverci cliccare (in fondo alla pagina del tuo browser). Il link dovrà reindirizzare alla pagina <https://www.ovh.com/>.|Nel nostro esempio, passando il mouse sul link, vedrai che quest’ultimo non ha niente a che vedere con OVHcloud, pertanto non cliccarci.|
 
 #### Segnalare una email di phishing
 

@@ -28,7 +28,7 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ### Configuring OLA in the OVHcloud Control Panel
 
-To start configuring OLA, log in to the [OVHcloud Control Panel](/links/manager){.external} and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} and select your server from the list.
+To start configuring OLA, log in to the [OVHcloud Control Panel](/links/manager) and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} and select your server from the list.
 
 ![network interfaces](images/network_interfaces2022.png){.thumbnail}
 

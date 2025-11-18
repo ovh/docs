@@ -1,7 +1,7 @@
 ---
 title: Wysyłanie wiadomości SMS z Panelu klienta
 excerpt: Dowiedz się, jak w łatwy sposób wysyłać wiadomości SMS z Panelu klienta OVHcloud
-updated: 2024-10-10
+updated: 2025-10-28
 ---
 
 ## Wprowadzenie
@@ -24,6 +24,9 @@ Pole „Wyślij SMS” jest pierwszym dostępnym elementem na liście działań.
 ![menedżer wysyłki smsów](images/sms-send-control-panel01E.png){.thumbnail}
 
 ### Etap 1: konfigurowanie nadawcy i odbiorcy
+
+> [!primary]
+> Aby uzyskać więcej informacji na temat tworzenia i korzystania z nadawcy, zapoznaj się z naszym przewodnikiem "[Wszystko, co musisz wiedzieć o nadawcach SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
 
 Po przejściu na stronę wysyłania wiadomości SMS możesz uzupełnić różne parametry, aby jak najlepiej dostosować wysyłanie wiadomości do Twoich potrzeb.
 
@@ -68,48 +71,6 @@ Użycie znaków niewymienionych w tych tabelach spowoduje przejście na kodowani
 W tej sekcji możesz przeprowadzić wysyłkę natychmiastową lub odroczoną (1).
 
 Proponujemy trzy formaty wysyłki (Standard / Flash / Sim) (2), ale ta funkcja jest przestarzała.
-
-### Etap 3: wybór nadawcy wiadomości SMS
-
-#### Numer skrócony umożliwiający otrzymanie odpowiedzi
-
-**Tylko dla kont OVHcloud we Francji z wyłączeniem DOM-TOM.**
-
-Umożliwia otrzymanie odpowiedzi za pośrednictwem karty Otrzymane wiadomości SMS.
-
-#### Wirtualny numer komórkowy
-
-**Tylko dla kont OVHcloud we Francji.**
-
-Jeśli posiadasz ofertę SMS obejmującą wirtualny numer komórkowy, możesz go podać jako nadawcę. Aby uzyskać więcej informacji, przejdź na [stronę dotyczącą wirtualnego numeru komórkowego](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
-
-> [!primary]
->
->Jeśli masz już konto SMS, utworzenie wirtualnego numeru komórkowego dla istniejącego konta jest niemożliwe. W takim wypadku musisz zamówić nowe konto SMS przez stronę oferty wirtualnego numeru komórkowego.
->
-
-#### Nadawca alfanumeryczny
-
-Możesz dostosować Twojego nadawcę. Otrzymanie odpowiedzi od odbiorcy Twojej wiadomości SMS nie będzie już wówczas możliwe. Aby uzyskać dostęp do zarządzania nadawcami wiadomości SMS, będąc na danym koncie SMS, wybierz pozycję `Nadawcy`{.action}(1).
-
-![menedżer wysyłki smsów](images/sms-send-control-panel04E.png){.thumbnail}
-
-Jeśli chcesz dodać kolejnego nadawcę wiadomości SMS, na środku kliknij przycisk `Działania`{.action}, a następnie `Dodaj`{.action}(2).
-
-![menedżer wysyłki smsów](images/sms-send-control-panel05E.png){.thumbnail}
-
-Na stronie dodawania masz do dyspozycji kilka opcji, aby skonfigurować nowego nadawcę wiadomości SMS (3):
-
-- **Dodaj nadawców ręcznie**: Podaj żądanego nadawcę, opis i uzasadnienie wykorzystania tego nadawcy (4). Potrzebna jest również dokumentacja uzupełniająca.
-
-> [!primary]
->
-> W związku z prowadzoną przez nas polityką bezpieczeństwa prosimy o dostarczenie dowodu potwierdzającego tożsamość firmy. Może to być oświadczenie wystawione na papierze firmowym przez pracownika kadry zarządzającej, opatrzone jego podpisem i pieczęcią firmową lub inny dowód umożliwiający identyfikację podmiotu gospodarczego, np. opdis z KRS.
->
-
-- **Dodaj nadawców na podstawie danych osobowych**: Możesz wybrać nadawcę na podstawie danych kontaktowych na Twoim koncie OVHcloud. Wówczas wyświetli się lista rozwijana dostępnych nadawców.
-
-- **Dodaj nadawców na podstawie Twoich domen OVHcloud**: Jako nadawcę możesz wykorzystać domenę dostępną na Twoim koncie OVHcloud. Wówczas wyświetli się lista rozwijana dostępnych nadawców.
 
 ## Sprawdź również
 

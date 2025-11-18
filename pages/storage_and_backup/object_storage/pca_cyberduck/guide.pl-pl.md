@@ -64,7 +64,7 @@ Kliknij `Połącz`{.action}. Po zalogowaniu będziesz miał dostęp do drzewa sw
 
 ## Sprawdź również
 
-[Dokumentacja Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
+[Dokumentacja Cyberduck](https://trac.cyberduck.io/wiki/help/en)
 
 [Pierwsze kroki z API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

@@ -12,7 +12,7 @@ Afin de vous assurer une continuité de service et éviter la perte de données,
 
 ## Prérequis
 
-* Posséder une [infrastructure Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external} sur votre compte OVHcloud.
+* Posséder une [infrastructure Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/) sur votre compte OVHcloud.
 * Accéder à l’interface de gestion vSphere Web Client HTML.
 
 ## En pratique

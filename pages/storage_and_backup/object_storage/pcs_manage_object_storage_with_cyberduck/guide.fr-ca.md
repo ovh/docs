@@ -16,7 +16,7 @@ Si vous n'êtes pas familiarisé avec la gestion du stockage en ligne de command
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
@@ -58,7 +58,7 @@ Cliquez alors sur `Connecter`{.action}. Une fois connecté, vous aurez accès à
 
 ## Aller plus loin
 
-[Documentation de Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
+[Documentation de Cyberduck](https://trac.cyberduck.io/wiki/help/en)
 
 [Débuter avec l'API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

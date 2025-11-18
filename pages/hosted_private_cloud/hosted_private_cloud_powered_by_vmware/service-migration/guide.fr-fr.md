@@ -20,8 +20,8 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 
 ## Prérequis
 
-- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
 
 ## En pratique
 
@@ -125,7 +125,7 @@ Voici une liste des éléments à prendre en compte:
 
 La migration nécessite la reconstruction des pools de ressources, notamment les réservations, les partages et les applications virtuelles. Cela s'applique également aux vApps et à toute configuration de commande de démarrage définie dans les vApps.
 
-Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
+Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html).
 
 Voici une liste d'éléments à prendre en compte:
 
@@ -162,7 +162,7 @@ Voici une liste des éléments à prendre en compte:
 - Paramètres de Teaming et de Failover
 - Allocation des ressources réseau du client
 
-Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html).
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Export-VDPortGroup » peut récupérer des informations de Portgroups virtuels distribués qui peuvent ensuite être importées dans le Distributed Switch de destination à l'aide de l'applet de commande « New-VDPortgroup -BackupPath ».
 
@@ -211,7 +211,7 @@ Les objets NSX incluent les ensembles IP, les ensembles MAC, les services, les g
 Ces objets auront des ID localement significatifs dans l'infrastructure d'origine et, une fois recréés dans le Hosted Private Cloud de destination, généreront des ID différents.
 Le suivi de ces ID est essentiel pour automatiser la migration des règles de pare-feu Edge et des règles de pare-feu distribuées.
 
-**Conseils d'automatisation :** Le [guide de l'API NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} donne des exemples sur la façon de récupérer les ID d'objets et de les créer.
+**Conseils d'automatisation :** Le [guide de l'API NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf) donne des exemples sur la façon de récupérer les ID d'objets et de les créer.
 
 Exemple: Récupérer un « Service Object » : `GET /api/2.0/services/application/scope/{scopeId}`
 <br>
@@ -225,7 +225,7 @@ Sur le Hosted Private Cloud de destination, il sera nécessaire de recréer les 
 - Interfaces sur le Edge de destination afin qu'il reflète le Edge d'origine
 - Services Edge (pare-feu, NAT, IPSEC, etc.) sur le Edge de destination afin qu'il reflète le Edge d'origine (**REMARQUE :** En cas d'automatisation de ce processus, veillez à faire correspondre les ID d'objets référencés aux ID d'objets qui existent dans le Hosted Private Cloud de destination)
 
-**Conseils d'automatisation :** le [guide de l'API NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} donne des exemples pour récupérer des configurations Edge et pour ajouter des configurations de services sur de nouveaux Edges.
+**Conseils d'automatisation :** le [guide de l'API NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf) donne des exemples pour récupérer des configurations Edge et pour ajouter des configurations de services sur de nouveaux Edges.
 
 Exemple: Obtenir une configuration Edge actuelle : `GET /api/4.0/edges/{edgeId}`
 <br>
@@ -238,7 +238,7 @@ Sur le Hosted Private Cloud de destination, il sera nécessaire de recréer les 
 - Sections DFW sur le DFW de destination afin qu'il reflète le DFW d'origine
 - Règles DFW sur le DFW de destination afin qu'il reflète le DFW d'origine (**Remarque**: Si vous automatisez ce processus, veillez à faire correspondres les ID d'objet référencés aux ID d'objet qui existent dans le Hosted Private Cloud de destination)
 
-**Conseils d'automatisation :** Le [guide de l'API NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} donne des exemples sur la façon d'obtenir la configuration DFW et de créer des règles et sections FDW.
+**Conseils d'automatisation :** Le [guide de l'API NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf) donne des exemples sur la façon d'obtenir la configuration DFW et de créer des règles et sections FDW.
 
 Exemple: Obtenir la configuration actuelle de DFW : `GET /api/4.0/firewall/globalroot-0/config`
 <br>
@@ -264,7 +264,7 @@ La vidéo ci-dessous vous détaillera comment configurer un Hosted Private Cloud
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqNtKrJSH8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br>Vous pouvez également consulter [la documentation de Veeam](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external}.
+<br>Vous pouvez également consulter [la documentation de Veeam](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf).
 
 #### Etape 3 : tâches post-migration
 

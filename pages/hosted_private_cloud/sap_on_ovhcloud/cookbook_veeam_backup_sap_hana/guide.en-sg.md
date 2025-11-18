@@ -8,7 +8,7 @@ updated: 2024-09-17
 
 This guide provides instructions for backing up SAP HANA databases using Veeam Backup and Replication 12.2 and the Veeam Plug-in for SAP HANA.
 
-[Veeam Enterprise Plus with OVHcloud](https://www.ovhcloud.com/en-sg/storage-solutions/veeam-enterprise/) allows you to use Veeam Backup and Replication 12 within your OVHcloud infrastructure and benefiting from a Veeam Enterprise Plus licence.
+[Veeam Enterprise Plus with OVHcloud](/links/hosted-private-cloud/veeam-enterprise) allows you to use Veeam Backup and Replication 12 within your OVHcloud infrastructure and benefiting from a Veeam Enterprise Plus licence.
 
 ## Requirements
 

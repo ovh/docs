@@ -55,7 +55,7 @@ In den folgenden Anweisungen wird erläutert, wie Sie Schlüsselpaare für Remot
 
 Wenn Sie eine grafische Benutzeroberfläche bevorzugen, können Sie für jede Art von Betriebssystem zahlreiche Anwendungen finden, mit denen Sie sich über das OpenSSH-Protokoll mit Remote-Hosts verbinden können.
 
-Beispielsweise ist [PuTTY](https://putty.org/) eine Open Source-SSH-Clientsoftware mit vielen nützlichen Funktionen. In unserem detaillierten Tutorial erfahren Sie, wie Sie damit Verbindungen zu OVHcloud Servern konfigurieren:
+Beispielsweise ist [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) eine Open Source-SSH-Clientsoftware mit vielen nützlichen Funktionen. In unserem detaillierten Tutorial erfahren Sie, wie Sie damit Verbindungen zu OVHcloud Servern konfigurieren:
 
 - [Verwendung von PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
@@ -249,7 +249,7 @@ Anschließend können Sie sich folgendermaßen mit dem zweiten Host verbinden:
 ssh vps
 ```
 
-Weitere Informationen zur Datei `config` finden Sie auf [der entsprechenden `man`-Seite](https://manpages.org/ssh_config/5).
+Weitere Informationen zur Datei `config` finden Sie auf [der entsprechenden `man`-Seite](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 
@@ -443,7 +443,7 @@ Anschließend können Sie sich folgendermaßen mit dem zweiten Host verbinden:
 ssh vps
 ```
 
-Weitere Informationen zur Datei `config` finden Sie auf [der entsprechenden `man`-Seite](https://manpages.org/ssh_config/5).
+Weitere Informationen zur Datei `config` finden Sie auf [der entsprechenden `man`-Seite](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 

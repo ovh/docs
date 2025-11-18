@@ -1,7 +1,7 @@
 ---
 title: Resize an instance via Horizon
 excerpt: "Find out how to resize an instance in the Horizon interface"
-updated: 2023-05-24
+updated: 2025-07-17
 ---
 
 ## Objective

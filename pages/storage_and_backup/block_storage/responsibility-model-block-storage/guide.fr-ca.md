@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Block Storage - Partage des responsabilités
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du Block Storage Public Cloud"
-updated: 2022-12-23
+updated: 2025-08-19
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Choisir la gamme de Block Storage en fonction des besoins (Classic, High speed, ...) | RA | I |
+| Choisir la gamme de Block Storage en fonction des besoins (Classic, High speed, High speed gen2, LUKS ...) | RA | I |
 | Renseigner les données à caractère personnel nécessaires pour la souscription au service | RA | I |
 | Choisir la localisation du service en cohérence avec la localisation des instances | RA | I |
 
@@ -31,13 +31,13 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Produire, acheminer, livrer et maintenir les instances physiques et les bâtiments d’hébergement | I | RA |
+| Produire, acheminer, livrer et maintenir le matériel et les bâtiments d’hébergement | I | RA |
 
 #### 2.2. Modèle de réversibilité
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Importer des images aux formats supportés par l'infrastructure OpenStack | RA | I |
+| Importer des formats pris en charge pour les sauvegardes de volumes block ou snapshots dans l'infrastructure OpenStack | RA | I |
 
 #### 2.3. Installation du SI client
 
@@ -79,7 +79,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer et monitorer la capacité des serveurs physiques en support des services Public Cloud |  | RA |
 | Suivre les performances des clusters de Block Storage | I | RA |
 | Conserver les logs du control plane qui supervise l'instance (API, hyperviseur) |  | RA |
-| Conserver les logs du système d’information hébergé sur l'instance | RA |  |
+| Conserver les logs du système d’information hébergé sur l'instance | RA | |
 | Monitorer et surveiller le bon fonctionnement des dispositifs physiques (utilités) en support du stockage | I | RA |
 | Créer, modifier, contrôler, restaurer, supprimer les jobs de backups | RA |  |
 | Créer les jobs des backups suite à la souscription à l'option Automated backups | AI | R |
@@ -89,7 +89,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Assurer le chiffrement des données sur l'espace de stockage alloué | RA |  |
+| Assurer le chiffrement des données sur l'espace de stockage alloué | RA | CI |
 
 ##### **3.1.5. Gestion**
 

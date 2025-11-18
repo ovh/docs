@@ -4,6 +4,11 @@ excerpt: "Découvrez comment gérer vos services et leur renouvellement dans vot
 updated: 2025-01-28
 ---
 
+> [!success]
+> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
+> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
+> [Accédez à l'enquête.](https://s.elq.fr/ovhext/XAWBEVc)
+
 ## Objectif
 
 Le menu **Mes offres & services** de votre espace client OVHcloud vous permet de vérifier le statut de vos services, de les renouveler, de modifier leur type de renouvellement, de régulariser des factures ou d'anticiper leur paiement.

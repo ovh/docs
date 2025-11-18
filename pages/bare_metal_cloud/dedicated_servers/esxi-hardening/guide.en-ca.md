@@ -1,11 +1,8 @@
 ---
 title: 'Manage and secure your ESXi dedicated server from the outset'
 excerpt: 'Discover the various ways you can effectively secure your ESXi dedicated server'
-updated: 2024-09-13
+updated: 2025-09-15
 ---
-
-> [!warning]
-> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objective
 
@@ -40,7 +37,7 @@ We will do this using the on-board features offered by VMware, as well as those 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager){.external}
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A dedicated server with the ESXi solution deployed
 - An offer compatible with our [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) feature, if you would like to use it for filtering
 
@@ -122,6 +119,11 @@ It is recommended that you filter legitimate access in this way:
 
 #### Manipulation via the graphical interface
 
+> [!primary]
+>
+> In ESXi 8.0 GA and newer, the SLP service is hardened, disabled by default, and filtered by the ESXi firewall. This means that you no longer have to disable it manually. You can find more information on [this official VMware blog post](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+>
+
 **Services**
 
 Click the `Host`{.action} menu and navigate to the `Manage`{.action} section, then click `Services`{.action}.
@@ -157,6 +159,11 @@ Example that only allows connections from IP 192.168.1.10:
 #### Shell manipulation
 
 **Services**
+
+> [!primary]
+>
+> In ESXi 8.0 GA and newer, the SLP service is hardened, disabled by default, and filtered by the ESXi firewall. This means that you no longer have to disable it manually. You can find more information on [this official VMware blog post](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+>
 
 Disable unnecessary services:
 

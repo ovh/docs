@@ -36,7 +36,7 @@ Si vous cherchez une version particulière, d'autres options sont disponible sur
 
 Si une version du logiciel OverTheBox est déjà installée sur votre appareil, vous pouvez simplement la mettre à jour depuis l'interface web locale.
 
-- Rendez-vous sur [http://overthebox.ovh](http://overthebox.ovh){.external} ou [http://192.168.100.1](http://192.168.100.1).
+- Rendez-vous sur [http://overthebox.ovh](http://overthebox.ovh) ou [http://192.168.100.1](http://192.168.100.1).
 - Rendez-vous dans l'onglet `System > Backup/Flash Firmware`{.action}.
 - Cliquez sur le bouton `Flash image...`{.action}.
 
@@ -72,9 +72,9 @@ Si le système n'est pas installé sur votre appareil, vous pouvez créer une cl
 #### Création d'une clé USB bootable sous Windows
 
 - Téléchargez la dernière image **OverTheBox** sur votre ordinateur
-- Décompressez l'image grâce à un logiciel tel que [WinRAR](https://www.rarlab.com/download.htm){.external} afin d'obtenir le fichier **.img**.
+- Décompressez l'image grâce à un logiciel tel que [WinRAR](https://www.rarlab.com/download.htm) afin d'obtenir le fichier **.img**.
 - Branchez la clé USB sur l'ordinateur.
-- Téléchargez le logiciel [Win32 Disk Imager](https://win32diskimager.org/#download){.external} et ouvrez-le.
+- Téléchargez le logiciel [Win32 Disk Imager](https://win32diskimager.org/#download) et ouvrez-le.
 - Cliquez sur `Parcourir`{.action} pour retrouver le fichier **.img**.
 - Sélectionnez la clé USB dans le champ **Device**.
 - Cliquez sur `Write`{.action}.
@@ -200,7 +200,7 @@ Dans le cas d'un autre appareil non fourni par OVHcloud, vous devez installer l'
 
 #### Booter depuis une distribution Linux live
 
-Vous pouvez par exemple créer une clé USB bootable sous Ubuntu en vous aidant de [cette documentation](http://doc.ubuntu-fr.org/live_usb){.external}.
+Vous pouvez par exemple créer une clé USB bootable sous Ubuntu en vous aidant de [cette documentation](http://doc.ubuntu-fr.org/live_usb).
 Vous aurez besoin d'un clavier et d'un écran.
 
 #### Identifier l'espace disque de destination
@@ -224,7 +224,7 @@ Dans cet exemple, on identifie que la destination d'installation sera **mmcblk0*
 
 #### Télécharger l'image OverTheBox
 
-La page suivante liste les images d'**OverTheBox** compilées : [http://downloads.overthebox.net/stable/](http://downloads.overthebox.net/stable/){.external}
+La page suivante liste les images d'**OverTheBox** compilées : [http://downloads.overthebox.net/stable/](http://downloads.overthebox.net/stable/)
 
 ```bash
 wget http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz

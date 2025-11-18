@@ -13,7 +13,7 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 ## Requirements
 
 - A dedicated server compatible with the [SGX option](https://www.ovhcloud.com/en-sg/bare-metal/intel-software-guard-extensions/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager) or the [OVHcloud API](https://ca.api.ovh.com/)
+- Access to the [OVHcloud Control Panel](/links/manager) or the [OVHcloud API](/links/api)
 - Login credentials received via email after the installation
 - Ubuntu 18.04 or equivalent installed on the server
 
@@ -61,7 +61,7 @@ Continue with [Step 3](#sgx-softwares) of the instructions below.
 
 #### Step 1: Logging in to the API console
 
-On the [OVHcloud API page](https://ca.api.ovh.com/) click on `Login`{.action} in the top-right corner. On the following page, enter the credentials of your OVHcloud account.
+On the [OVHcloud API page](/links/api) click on `Login`{.action} in the top-right corner. On the following page, enter the credentials of your OVHcloud account.
 
 #### Step 2: Enabling SGX
 
@@ -209,11 +209,11 @@ Hit a key....
 
 To go further (develop your own application, register for remote attestation, etc.), here are some useful resources:
 
-- [Intel SGX](https://software.intel.com/en-us/sgx){.external}
-- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services){.external}
-- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
-- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
-- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
-- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
+- [Intel SGX](https://software.intel.com/en-us/sgx)
+- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
+- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/)
+- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver)
+- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample)
 
 Join our [community of users](/links/community).

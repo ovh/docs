@@ -84,7 +84,7 @@ Une fois le traitement effectué, votre IP sera débloquée.
 
 #### Débloquer votre adresse IP depuis l'API OVHcloud
 
-Connectez-vous à l'interface [API d'OVHcloud](https://ca.api.ovh.com/) et suivez les étapes ci-dessous. Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
+Connectez-vous à l'interface [API d'OVHcloud](/links/api) et suivez les étapes ci-dessous. Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
 Récupérez tout d'abord la liste des IPs de chaque service OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serveur Dédié) :
 
@@ -266,9 +266,9 @@ Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur
 
 - **Vers un serveur Gmail**
 
-L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr){.external}.
+L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr).
 
-Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en){.external} à la prévention du spam pour les utilisateurs de Gmail.
+Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en) à la prévention du spam pour les utilisateurs de Gmail.
 
 ### Déclarer un faux positif
 

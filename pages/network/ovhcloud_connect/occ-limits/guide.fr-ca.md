@@ -1,7 +1,7 @@
 ---
 title: Capacités et limites techniques
 excerpt: 'Découvrez les capacités et limites techniques de l offre OVHcloud Connect'
-updated: 2022-08-25
+updated: 2025-10-03
 ---
 
 ## Objectif
@@ -14,6 +14,7 @@ updated: 2022-08-25
 
 * 1000Base-LX/LH pour 1Gb
 * 10GBase-LR pour 10Gb
+* 100GBase-LR4 pour 100Gb
 * Jumbo Frame: jusqu'à 9000 bytes
 * Auto-négociation non supportée
 
@@ -22,6 +23,7 @@ updated: 2022-08-25
 #### Mode Layer 2
 
 * Le nombre d'adresses MAC coté client est limité à 512 par port
+* La bande passante maximale est de 10Gb par port
 
 #### Mode Layer-3
 
@@ -63,6 +65,6 @@ Les problèmes suivants sont présents sur OVHcloud Connect.
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

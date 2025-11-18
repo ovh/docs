@@ -28,7 +28,7 @@ Esta solución también permite dar respuesta a casos prácticos más complejos,
 
 ### ¿Se puede gestionar Enterprise File Storage desde el área de cliente?
 
-Sí, puede acceder directamente a este servicio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Bare Metal Cloud`{.action} y, seguidamente, en la sección `Almacenamiento y Backup`{.action}".
+Sí, puede acceder directamente a este servicio desde el [área de cliente de OVHcloud](/links/manager), en la sección `Bare Metal Cloud`{.action} y, seguidamente, en la sección `Almacenamiento y Backup`{.action}".
 
 ## Disponibilidad
 
@@ -136,6 +136,6 @@ Enterprise File Storage es un servicio con facturación mensual por volumen (de 
 
 ## Más información
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

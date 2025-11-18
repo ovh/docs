@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą MX Plan'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan'
-updated: 2025-05-19
+updated: 2025-06-26
 ---
 
 <style>
@@ -20,6 +20,11 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+> [!success]
+> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
+> Podziel się z nami swoją opinią i pomysłami.<br>
+> [przejdź do ankiety.](https://s.elq.fr/ovhext/EsCB5sR)
 
 ## Wprowadzenie
 
@@ -204,8 +209,8 @@ Do wysyłki e-maili należy użyć następujących ustawień **SMTP**:
 
 - **Nazwa użytkownika**: Wpisz pełny adres e-mail **complete**.
 - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
-- **Serwer EUROPE (ruch wychodzący)**: pop.mail.ovh.net **ou** ssl0.ovh.net.
-- **Serwer amerykański/AZJA-PACYFIK (ruch wychodzący)**: pop.mail.ovh.ca.
+- **Serwer EUROPE (ruch wychodzący)**: smtp.mail.ovh.net **ou** ssl0.ovh.net.
+- **Serwer amerykański/AZJA-PACYFIK (ruch wychodzący)**: smtp.mail.ovh.ca.
 - **Port**: 465.
 - **Typ bezpieczeństwa**: SSL/TLS.
 

@@ -25,7 +25,7 @@ Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pa
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](/links/bare-metal/vps) na koncie OVHcloud
 - Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
@@ -72,4 +72,4 @@ Teraz masz dostęp do serwera z nową parą kluczy SSH.
 
 [VPS w trybie rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

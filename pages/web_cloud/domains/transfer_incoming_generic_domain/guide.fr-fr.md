@@ -74,7 +74,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 > [!primary]
 >
-> Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](/links/web/domains-whois){.external}, peuvent vous fournir des informations sur son identité.
+> Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](/links/web/domains-whois), peuvent vous fournir des informations sur son identité.
 >
 
 ### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert <a name="step2"></a>
@@ -92,7 +92,7 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 
 ### Étape 3 : demander un transfert de nom de domaine vers OVHcloud <a name="step3"></a>
 
-Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](/links/web/domains){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
+Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](/links/web/domains). Entrez votre nom de domaine, puis suivez la procédure de commande.
 
 ![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail}
 
@@ -100,7 +100,7 @@ Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la
 
 ![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
-Vous pouvez également terminer votre commande avec un [hébergement web](/links/web/hosting){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} » vous fournira des instructions sur la façon de procéder.
+Vous pouvez également terminer votre commande avec un [hébergement web](/links/web/hosting) et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » vous fournira des instructions sur la façon de procéder.
 
 > [!warning]
 >

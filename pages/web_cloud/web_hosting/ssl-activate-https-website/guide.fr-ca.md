@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Passer son site web en HTTPS"
 excerpt: "Découvrez comment passer votre site web en HTTPS après avoir activé un certificat SSL"
-updated: 2024-02-26
+updated: 2025-10-27
 ---
 
 ## Objectif
@@ -12,9 +12,9 @@ Grâce à votre hébergement web OVHcloud, vous pouvez bénéficier d'un [certif
 
 ## Prérequis
 
-- Disposer d'un [certificat SSL](/links/web/hosting-options-ssl){.external} installé sur votre [hébergement web OVHcloud](/links/web/hosting){.external}.
+- Disposer d'un [certificat SSL](/links/web/hosting-options-ssl) installé sur votre [hébergement web OVHcloud](/links/web/hosting).
 - Disposer d'au moins un site web installé et accessible sur votre hébergement web OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Web Cloud`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 ## En pratique
 
@@ -94,7 +94,7 @@ Sachez que si vous utilisez un « site clés en main », sa structure gère au
 
 ### Étape 3 - Activer le HTTPS sur votre site web <a name="https-enable"></a>
 
-Dès que votre hébergement web dispose d'un certificat SSL actif, que le [multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) concerné bénéficie bien d'une connexion SSL active et que votre site web est prêt à passer en *HTTPS*, vous pouvez l'activer.
+Dès que votre nom de domaine dispose d'un [certificat SSL actif via votre hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) et que votre site web est prêt à passer en *HTTPS*, vous pouvez l'activer.
 
 > [!warning]
 >

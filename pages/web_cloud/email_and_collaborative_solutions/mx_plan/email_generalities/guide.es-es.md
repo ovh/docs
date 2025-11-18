@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con la solución MX Plan'
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico MX Plan'
-updated: 2025-05-19
+updated: 2025-06-26
 ---
 
 <style>
@@ -20,6 +20,12 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+> [!success]
+> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
+> No dude en compartir su opinión y sus ideas con nosotros.<br>
+> [Ir a la encuesta.](https://s.elq.fr/ovhext/EsCB5sR)
+
 
 ## Objetivo
 
@@ -204,8 +210,8 @@ Para el envío de mensajes de correo, consulte a continuación los parámetros *
 
 - **Nombre de usuario**: Introduzca la dirección de correo electrónico **completa**.
 - **Contraseña**: Introduzca la contraseña de la dirección de correo electrónico.
-- **Servidor EUROPA (saliente)**: pop.mail.ovh.net **o** ssl0.ovh.net.
-- **Servidor AMERICANO/ASIA-PACÍFICO (saliente)**: pop.mail.ovh.ca.
+- **Servidor EUROPA (saliente)**: smtp.mail.ovh.net **o** ssl0.ovh.net.
+- **Servidor AMERICANO/ASIA-PACÍFICO (saliente)**: smtp.mail.ovh.ca.
 - **Puerto**: 465.
 - **Tipo de seguridad**: SSL/TLS.
 

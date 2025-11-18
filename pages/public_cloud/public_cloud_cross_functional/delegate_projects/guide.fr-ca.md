@@ -13,7 +13,7 @@ Dans cet objectif, vous pouvez déléguer à d'autres comptes client OVHcloud de
 
 ## Prérequis
 
-- Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
+- Avoir une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique 

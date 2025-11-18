@@ -1,7 +1,7 @@
 ---
 title: 'Habilitar e configurar o Edge Network Firewall'
 excerpt: 'Saiba como configurar a Edge Network Firewall para os seus serviços'
-updated: 2025-06-04
+updated: 2025-10-21
 ---
 
 ## Objetivo
@@ -10,29 +10,24 @@ Para proteger os serviços dos clientes expostos aos IPs públicos, a OVHcloud o
 
 **Este guia explica como configurar a Edge Network Firewall para os seus serviços.**
 
-> [!warning]
->
-> **Aviso** : a funcionalidade "Centro de Scrubbing: modo permanente" foi atingida o seu fim de vida útil (EOL) será definitivamente desativado em 8 de setembro de 2025.
->
-
 > [!primary]
 >
 > Encontrará mais informações sobre a nossa solução Anti-DDoS no [nosso website](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) | 
-|:--:| 
-| Esquema da infraestrutura Anti-DDoS e dos serviços de proteção de jogos da OVHcloud |
+| Infraestrutura anti-DDoS e proteção DDoS Game na OVHcloud |
+|:--:|
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Requisitos
 
-- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Instância Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
 - Acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]
-> Esta funcionalidade poderá estar indisponível ou limitada nos servidores da linha de produto [**Eco**](https://eco.ovhcloud.com/pt/about/).
+> Esta funcionalidade poderá estar indisponível ou limitada nos servidores da linha de produto [**Eco**](/links/bare-metal/eco-about).
 >
-> Visite a nossa [página de comparação](https://eco.ovhcloud.com/pt/compare/) para mais informações.
+> Visite a nossa [página de comparação](/links/bare-metal/eco-compare) para mais informações.
 
 > [!warning]
 > A Edge Firewall Network não suporta o protocolo QUIC.
@@ -164,29 +159,9 @@ Por exemplo, um pacote para a porta TCP 80 será intercetado pela regra 2 e as r
 
 ### Mitigação do ataque - limpeza da atividade do centro
 
-A nossa infraestrutura Anti-DDoS (VAC) funciona de duas formas: **auto** e **permanente**. O processo de mitigação é efetuado através do centro de depuração automático. É aqui que a nossa tecnologia avançada analisa detalhadamente os pacotes e tenta eliminar o tráfego DDoS, permitindo a passagem de tráfego legítimo.
+A nossa infraestrutura anti-DDoS (VAC) funciona automaticamente. O processo de mitigação é efetuado através do centro de depuração automático. É aqui que a nossa tecnologia avançada analisa detalhadamente os pacotes e tenta eliminar o tráfego DDoS, permitindo a passagem de tráfego legítimo.
 
-- **A mitigação automática** é a predefinição: Todos os IPs da OVHcloud estão sob mitigação automática. Geralmente, esta é a melhor escolha para os seus serviços. Caso seja detetado algum tráfego malicioso, o centro de depuração é ativado. Este estado é indicado pelo estado "Forçado" para um determinado endereço IP. Neste momento, a Firewall Edge Network também está ativa. A situação volta ao normal quando o ataque é mitigado e não se observa mais nenhuma atividade suspeita.
-
-- ** O modo de mitigação permanente** pode ser ativado ou desativado a partir da Área de Cliente OVHcloud. Com a mitigação permanente, aplica de forma permanente o primeiro nível de filtragem, pelo que todo o tráfego passa sempre pelo sistema de mitigação antes de chegar ao servidor. Não recomendamos que ative esta opção por períodos mais longos, exceto se observar um certo nervosismo devido ao facto de o centro de limpeza redirecionar o tráfego com demasiada frequência.
-
-Note que, quando comparado com o modo automático, o nível de proteção aumenta **não** quando o modo atual é ativado.
-
-Para ativá-la, siga estes passos:
-
-- Clique no menu `Bare Metal Cloud`{.action}.
-- Aceder a `Network`{.action} na barra lateral esquerda.
-- Aceda à secção `IP`{.action}.
-
-| ![menu-ipv4](images/mitigation_menu.png) | 
-|:--:| 
-| Em seguida, clique no botão `...`{.action} à direita do IPv4 correspondente. |
-
-
-| ![opção-mitigação](images/mitigation_menu_step_2.png) | 
-|:--:| 
-| Selecione `Mitigação: modo permanente`{.action}. |
-
+Todos os IPs da OVHcloud sofrem uma mitigação automática. Caso seja detetado algum tráfego malicioso, o centro de depuração é ativado. Este estado é indicado pelo estado "Forçado" para um determinado endereço IP. Neste momento, a Firewall Edge Network também está ativa. A situação volta ao normal quando o ataque é mitigado e não se observa mais nenhuma atividade suspeita.
 
 > [!success]
 > **Dicas**
@@ -212,4 +187,4 @@ Depois de ler este manual, deverá poder configurar a Edge Network Firewall para
 
 - [Proteger um servidor de jogos com a firewall de aplicações](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

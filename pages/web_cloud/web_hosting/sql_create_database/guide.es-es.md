@@ -1,7 +1,7 @@
 ---
 title: "Crear una base de datos en un alojamiento web"
 excerpt: "Descubra cómo crear una base de datos en un alojamiento web de OVHcloud"
-updated: 2024-09-05
+updated: 2025-10-08
 ---
 
 ## Objetivo
@@ -21,6 +21,8 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 ### Etapa 1 - Acceder a la pestaña de gestión de las bases de datos de un alojamiento web
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea crear una base de datos y abra la pestaña `Bases de datos`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
 

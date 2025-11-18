@@ -14,8 +14,8 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au);
-- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](/links/manager);
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your PostgreSQL instance](/pages/public_cloud/public_cloud_databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 8.0.8.
@@ -40,7 +40,7 @@ To interact with your PostgreSQL instance with PHP, your development environment
 - A compatible version of PHP;
 - PostgresSQL and PDO PHP extension;
 
-Please follow the official [PostgreSQL](https://www.php.net/manual/en/book.pgsql.php){.external} to get the latest information.
+Please follow the official [PostgreSQL](https://www.php.net/manual/en/book.pgsql.php) to get the latest information.
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in the documentation page linked above.
 
@@ -131,6 +131,6 @@ array(4) {
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

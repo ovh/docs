@@ -34,7 +34,7 @@ Este manual explica-lhe como emitir um token OpenStack, como utilizá-lo para as
 
 ## Requisitos 
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Este guia requer a instalação da ferramenta OpenStack CLI na sua máquina.
 
 > [!primary]

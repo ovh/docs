@@ -59,7 +59,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>

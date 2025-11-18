@@ -295,7 +295,6 @@ Deseja mudar [de oferta de e-mail](/links/web/emails) para beneficiar de mais es
 - [Migrar os seus endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
-- [Migrar uma conta Gmail para uma conta de e-mail OVHcloud através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
 
 ///
 

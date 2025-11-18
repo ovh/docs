@@ -1,12 +1,8 @@
 ---
 title: 'Configura un disco aggiuntivo'
 excerpt: Come aggiungere e configurare spazio di storage aggiuntivo su un VPS
-updated: 2023-02-15
+updated: 2025-07-24
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -16,9 +12,13 @@ Con i VPS OVHcloud è possibile aggiungere spazio di storage sicuro come opzione
 
 ## Prerequisiti
 
-- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
+- Disporre di un [VPS](/links/bare-metal/vps) nel proprio account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Avere accesso amministrativo via SSH o RDP al VPS
+
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Procedura
 
@@ -35,9 +35,9 @@ Annota le informazioni relative alla tariffazione e clicca su `Ordina`{.action}.
 ### Montare il nuovo spazio di storage
 
 > [!warning]
-> OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
->In caso di difficoltà nell'effettuare queste azioni, contatta un fornitore di servizi specializzato e/o discuta il problema con la nostra Community di utenti all'indirizzo https://community.ovh.com/en/. OVHcloud non può fornirti assistenza tecnica su questo argomento.
+> In caso di difficoltà nell'esecuzione di queste operazioni, contattare un [fornitore di servizi specializzato](/links/partner) e/o discutere il problema con la nostra [comunità di utenti](/links/community). OVHcloud non può fornirti assistenza tecnica su questo argomento.
 >
 
 #### Su un VPS Linux
@@ -219,19 +219,19 @@ Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga d
 
 Nel prompt dei comandi, apri DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Per configurare il disco online, utilizza questo set di comandi DISKpart:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy: Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -245,19 +245,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -269,7 +269,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -297,10 +297,10 @@ Nell'ultima finestra, clicca su `Terminare`{.action} per formattare il disco. Do
 
 ### Disattiva l'opzione di disco aggiuntivo
 
-Nella scheda `Home`{.action}, sposta lo schermo fino all'area intitolata **Sintesi delle opzioni**. Clicca sui tre puntini `...`{.action} in corrispondenza dell'opzione "Dischi aggiuntivi". Clicca su `Disattiva`{.action} il menu contestuale.
+Nella scheda `Home page`{.action}, nella sezione **La tua configurazione**, clicca su `...`{.action} accanto all’opzione `Dischi aggiuntivi` e poi clicca su `Disattiva`{.action}.
 
 ![disattivazione disco aggiuntivo](images/disk_vps02.png){.thumbnail}
 
 ## Per saperne di più
 
-Unisciti alla nostra Community di utenti <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

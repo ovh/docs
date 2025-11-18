@@ -71,13 +71,13 @@ También debe:
 El bloqueo de un dominio lo protege contra los intentos de transferencia no autorizados.
 GoDaddy habilita esta protección de forma predeterminada. Para transferir su dominio a OVHcloud, deberá desactivar esta opción.
 
-Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.godaddy.com/help/bloquear-o-desbloquear-mi-dominio-410){.external}.
+Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.godaddy.com/help/bloquear-o-desbloquear-mi-dominio-410).
 
 ### Etapa 2 - Obtener el código de autorización 
 
 OVHcloud le solicitará el código de autorización o «Auth code» antes de iniciar el procedimiento de transferencia del dominio. Puede obtenerlo abriendo la página de su cartera de dominios`{.action} en GoDaddy.
 
-Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.godaddy.com/help/transferir-mi-dominio-fuera-de-godaddy-3560){.external}.
+Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.godaddy.com/help/transferir-mi-dominio-fuera-de-godaddy-3560).
 
 ### Etapa 3 - Iniciar la transferencia del dominio a OVHcloud
 

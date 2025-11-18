@@ -30,7 +30,7 @@ Dallo [Spazio Cliente OVHcloud](/links/manager), le API OVHcloud o l'API OpenSta
 
 Dopo aver creato l'istanza e aver scelto un'applicazione preinstallata, è possibile recuperare le informazioni di connessione solo via API OVHcloud.
 
-1. Accedi alla [console API](https://api.ovh.com/)
+1. Accedi alla [console API](/links/api)
 2. Utilizza [questa chiamata API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
 
 > Chiamata API

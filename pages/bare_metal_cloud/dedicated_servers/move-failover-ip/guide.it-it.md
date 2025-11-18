@@ -1,12 +1,15 @@
 ---
 title:  Trasferisci un Additional IP
 excerpt: Questa guida ti mostra come spostare un Additional IP dallo Spazio Cliente OVHcloud o via API OVHcloud
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Questo articolo riguarda lo spostamento di indirizzi Additional IPv4, che è limitato secondo le [restrizioni regionali](#limitations).
 >
-> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](/links/network/additional-ip). Questo non ha alcun impatto sulla sua funzionalità.
+> La configurazione di Additional IP in una vRack (rete privata) aggira queste restrizioni regionali, perdendo la dipendenza da una sola regione e facilitando l'interconnessione su un'ampia gamma di servizi OVHcloud.
+>
+> Scopri come configurare gli Additional IP in una vRack utilizzando le nostre guide per [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) e [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Obiettivo
@@ -27,14 +30,14 @@ I blocchi di indirizzi IP di una Region possono essere trasferiti da un datacent
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external} nello Spazio Cliente OVHcloud
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) nello Spazio Cliente OVHcloud
 - Disporre di un [indirizzo Additional IP](/links/network/additional-ip)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 >
 
 > [!warning]
@@ -83,7 +86,7 @@ Clicca su `Seguente`{.action} e poi su `Conferma`{.action}.
 
 ### Trasferisci un IP via API
 
-Accedi alla pagina web delle [API OVHcloud](https://api.ovh.com/).
+Accedi alla pagina web delle [API OVHcloud](/links/api).
 
 Per prima cosa, è meglio verificare se l'indirizzo IP può essere spostato.
 <br>Per verificare se l'IP può essere spostato verso uno dei tuoi server dedicati, utilizza questa chiamata:

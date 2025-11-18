@@ -17,22 +17,22 @@ Creating an OVHcloud Managed Private Registry (MPR) through the OVHcloud Control
 [Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, written in Go. It aims to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
 
 This tool has a powerful and very intuitive command line interface (CLI).
-If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat Sheet](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external} exists.
+If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat Sheet](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf) exists.
 
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
+- Installing [Terraform CLI](https://www.terraform.io/downloads.html)
 
 ## Before you begin
 
-* You should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following [detailed installation instructions](https://www.terraform.io/docs/cli/index.html){.external} or with the tool [tfenv](https://github.com/tfutils/tfenv){.external}.
+* You should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following [detailed installation instructions](https://www.terraform.io/docs/cli/index.html) or with the tool [tfenv](https://github.com/tfutils/tfenv).
 
 ## OVHcloud Terraform provider
 
 ![Terraform](images/ovh-loves-terraform.png){.thumbnail}
 
-In order to create a private registry and other resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} which is available in the official Terraform registry.
+In order to create a private registry and other resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest) which is available in the official Terraform registry.
 
 ![Terraform registry](images/terraform-registry.png){.thumbnail}
 
@@ -40,8 +40,8 @@ All available resources and data sources have their definition and documentation
 
 In this guide, we will create two resources:
 
-* a [ovh_cloud_project_containerregistry](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry){.external}, that represents an OVHcloud managed private registry
-* and a [ovh_cloud_project_containerregistry_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry_user){.external}, that represents a user associated to a private registry
+* a [ovh_cloud_project_containerregistry](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry), that represents an OVHcloud managed private registry
+* and a [ovh_cloud_project_containerregistry_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry_user), that represents a user associated to a private registry
 
 ![OVHcloud Managed Private Registry Harbor](images/ovh-managed-private-registry-harbor.png){.thumbnail}
 
@@ -334,7 +334,7 @@ user = "myuser"
 > If after running the `terraform apply` command, you get the error message `Error: Your query returned no results. Please change your search criteria and try again`, it means you have entered an incorrect `region`.
 >
 
-Now, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
+Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
 As you can see, your registry has been successfuly created:
 
 ![Private registry created](images/registry-created.png){.thumbnail}

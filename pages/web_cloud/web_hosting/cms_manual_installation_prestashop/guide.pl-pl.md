@@ -12,7 +12,7 @@ Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS PrestaShop](https://www.prestashop.com/en/support){.external}. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS PrestaShop](https://www.prestashop.com/en/support). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 
 - Posiadanie oferty[hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
   
 ## W praktyce
 
@@ -151,7 +151,7 @@ Pobierz dane do logowania modułu PrestaShop przed opuszczeniem strony.
 >
 > **Ze względów bezpieczeństwa zalecamy usunięcie folderu instalacyjnego z przestrzeni FTP.**
 >
-> Aby wykonać tę operację, zapoznaj się z naszym przewodnikiem ["Jak zalogować się do przestrzeni dyskowej FTP hostingu OVHcloud"](/pages/web_cloud/web_hosting/ftp_connection) i naciśnij [forum PrestaShop](https://www.prestashop.com/forums/){.external}, aby upewnić się, że usuniesz odpowiednie pliki.
+> Aby wykonać tę operację, zapoznaj się z naszym przewodnikiem ["Jak zalogować się do przestrzeni dyskowej FTP hostingu OVHcloud"](/pages/web_cloud/web_hosting/ftp_connection) i naciśnij [forum PrestaShop](https://www.prestashop.com/forums/), aby upewnić się, że usuniesz odpowiednie pliki.
 >
 
 > [!success]

@@ -1,7 +1,7 @@
 ---
 title: "Rinnovare i miei domini OVHcloud"
 excerpt: "Questa guida ti mostra perché e come rinnovare un dominio OVHcloud"
-updated: 2025-02-17
+updated: 2025-06-13
 ---
 
 ## Obiettivo
@@ -107,6 +107,21 @@ Eseguire le operazioni seguenti:
 È possibile rinnovare il servizio in qualsiasi momento prima della sua scadenza e scegliere la durata di rinnovo.
 In questo caso, il periodo di validità sottoscritto sarà aggiunto a quello in corso. Il periodo di validità rimanente non andrà perso.
 
+### Segui il rinnovo del tuo dominio
+
+Una volta effettuato il rinnovo, il dominio verrà rinnovato il giorno prima della sua scadenza (circa un mese dopo la data di scadenza).
+
+I dati visualizzati nel WHOIS saranno aggiornati, a conferma del corretto rinnovo del dominio.
+
+Per verificare lo stato del rinnovo del dominio:
+
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+1. Accedi alla sezione `Web Cloud`{.action}.
+1. Clicca su `Domini`{.action} nella sezione `Domini e DNS`{.action}.
+1. Nella tabella che appare, verifica lo stato del rinnovo nella colonna `Stato` della riga del nome di dominio pertinente.
+
+Una volta effettuato il pagamento, comparirà la dicitura `Rinnovo in corso` fino al rinnovo effettivo del dominio presso il Registro.
+
 ### Disattiva il tuo dominio
 
 - Nella tabella, identifica il dominio che vuoi rinnovare.
@@ -124,11 +139,6 @@ Per maggiori informazioni sulla disattivazione dei servizi OVHcloud, segui le is
 
 ### Accedi alla fattura del rinnovo del tuo dominio
 
-> [!primary]
->
-> La fattura è disponibile solo il giorno del rinnovo del dominio (30 giorni dopo il prelievo in caso di rinnovo automatico).
->
-
 Visualizzi la dicitura `Fatture da pagare` se una fattura è in attesa di pagamento e quando:
 
 - Disponi di servizi con rinnovo automatico.
@@ -138,18 +148,48 @@ Ti basta scegliere l’azione `Salda la tua fattura`{.action} per essere reindir
 
 ## FAQ
 
-> [!faq]
->
-> Ho dimenticato di rinnovare il mio dominio in tempo, cosa devo fare?
->> Per prima cosa controlla lo stato del dominio utilizzando lo strumento [Whois di un dominio](/links/web/domains-whois).
->> Se il dominio è generico (.com, .org, .net, ecc...), il dominio resta "riservato" per un periodo di "*grazia*" (circa 7 giorni) e poi per un periodo di "*redemption*" (circa 35-40 giorni aggiuntivi). Questi limiti di tempo sono variabili e dipendono dall'estensione e dalle regole del Registro che gestisce l'estensione. Durante questi due periodi, solo tu puoi rinnovare il dominio.
->> Durante il periodo di prova, potrai rinnovarlo dallo Spazio Cliente, seguendo le istruzioni riportate in questa guida.
->> Durante il periodo di redemption, il dominio non è più gestito da OVHcloud. Il suo rinnovo tramite lo Spazio Cliente comporterà spese supplementari (spese di ripristino), che variano in base all'estensione. Visualizza le tariffe cliccando sull’estensione interessata [qui](/links/web/domains-tld).).
->> Al termine del periodo di redemption, il dominio entra in una fase di eliminazione che può richiedere diversi giorni, prima di ritornare disponibile nel dominio pubblico. Per recuperarne l’utilizzo, ti consigliamo di utilizzare il tool [Whois di un dominio](/links/web/domains-whois) per verificarne regolarmente la disponibilità.
-> Non voglio rinnovare il mio dominio ma trasferirlo verso un altro Registrar che non sia OVHcloud. Come fai?
->> Segui le istruzioni della nostra guida "[Trasferire un dominio verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain)".
-> Il rinnovo automatico è attivo e il prelievo automatico è stato effettuato. Ora, non voglio conservare il mio dominio e voglio essere rimborsato.
->> Fino a 10 giorni prima della data di rinnovo effettiva del dominio è possibile ottenere il rimborso automatico. Per farlo, annulla il dominio.
+/// details | Ho dimenticato di rinnovare il mio dominio in tempo, cosa devo fare?
+
+Per prima cosa controlla lo stato del dominio utilizzando lo strumento [Whois di un dominio](/links/web/domains-whois).
+
+Se il dominio è generico (.com, .org, .net, ecc...), il dominio resta "riservato" per un periodo di "*grazia*" (circa 7 giorni) e poi per un periodo di "*redemption*" (circa 35-40 giorni aggiuntivi). Questi limiti di tempo sono variabili e dipendono dall'estensione e dalle regole del Registro che gestisce l'estensione. Durante questi due periodi, solo tu puoi rinnovare il dominio.
+
+Durante il periodo di prova, potrai rinnovarlo dallo Spazio Cliente, seguendo le istruzioni riportate in questa guida.
+
+Durante il periodo di redemption, il dominio non è più gestito da OVHcloud. Il suo rinnovo tramite lo Spazio Cliente comporterà spese supplementari (spese di ripristino), che variano in base all'estensione. Visualizza le tariffe cliccando sull’estensione interessata [qui](/links/web/domains-tld).
+
+Al termine del periodo di redemption, il dominio entra in una fase di eliminazione che può richiedere diversi giorni, prima di ritornare disponibile nel dominio pubblico. Per recuperarne l’utilizzo, ti consigliamo di utilizzare il tool [Whois di un dominio](/links/web/domains-whois) per verificarne regolarmente la disponibilità.
+
+///
+
+/// details | Non voglio rinnovare il mio dominio ma trasferirlo verso un altro Registrar che non sia OVHcloud. Come fai?
+
+Segui le istruzioni della nostra guida "[Trasferire un dominio verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain)".
+
+Il rinnovo automatico è attivo e il prelievo automatico è stato effettuato. Ora, non voglio conservare il mio dominio e voglio essere rimborsato.
+
+Fino a 10 giorni prima della data di rinnovo effettiva del dominio è possibile ottenere il rimborso automatico. Per farlo, annulla il dominio.
+
+///
+
+/// details | Hai rinnovato il tuo dominio ma il WHOIS non è ancora aggiornato. Come posso assicurarmi che il dominio venga rinnovato correttamente?
+
+Una volta effettuato il pagamento delle spese di rinnovo, trasmetteremo la richiesta al registro appropriato.
+
+Lo stato del dominio passa in `Rinnovo in corso`.
+
+Una volta effettuato il rinnovo (circa un mese dopo il pagamento delle spese di rinnovo), lo stato del dominio passerà alla dicitura `registrato`.
+
+I dati del WHOIS si aggiorneranno in seguito.
+
+Per verificare lo stato del rinnovo del dominio:
+
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+1. Accedi alla sezione `Web Cloud`{.action}.
+1. Clicca su `Domini`{.action} nella sezione `Domini e DNS`{.action}.
+1. Nella tabella che appare, verifica lo stato del rinnovo nella colonna `Stato` della riga del nome di dominio pertinente.
+
+///
 
 ## Per saperne di più
 

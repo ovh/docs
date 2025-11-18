@@ -15,7 +15,7 @@ En un alojamiento web compartido, usted es responsable de las copias de segurida
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [el editor del CMS WordPress](https://wordpress.com/support/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [el editor del CMS WordPress](https://wordpress.com/support/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 >
 
 **Descubra cómo guardar copia de seguridad del contenido de su sitio web WordPress y su base de datos.**
@@ -68,7 +68,7 @@ Haga clic en `Ejecutar`{.action} y descargue la base de datos completa en format
 
 ### Método n°2 - Realizar una copia de seguridad con una extensión
 
-Las extensiones de WordPress permiten gestionar las copias de seguridad. La más popular es [UdraftPlus](https://wordpress.org/plugins/updraftplus/){.external}, que cuenta con varios millones de instalaciones activas. La versión gratuita es suficiente para guardar copia de su sitio web. La versión premium ofrece más opciones, como copias de seguridad incrementales, herramienta de migración, backup multisitio, más opciones en los clouds destinados a almacenar los datos, etc.
+Las extensiones de WordPress permiten gestionar las copias de seguridad. La más popular es [UdraftPlus](https://wordpress.org/plugins/updraftplus/), que cuenta con varios millones de instalaciones activas. La versión gratuita es suficiente para guardar copia de su sitio web. La versión premium ofrece más opciones, como copias de seguridad incrementales, herramienta de migración, backup multisitio, más opciones en los clouds destinados a almacenar los datos, etc.
 
 Descargue la extensión en formato directo `.zip` en su equipo. En aras de la claridad, el archivo descargado de la extensión se renombrará **updraftplus.zip** en el resto de este tutorial.
 
@@ -143,7 +143,7 @@ Aplicando estas buenas prácticas, podrá volver a una versión anterior sana.
 
 ## Más información <a name="go-further"></a>
 
-- [Sitio oficial de WordPress](https://wordpress.org){.external}
+- [Sitio oficial de WordPress](https://wordpress.org)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

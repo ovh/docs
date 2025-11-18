@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Eigenes SSL-Zertifikat installieren"
 excerpt: "Erfahren Sie hier, wie Sie ein SSL-Zertifikat eines externen Anbieters auf Ihrem OVHcloud Webhosting importieren und installieren"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
   
 ## Ziel  
@@ -51,7 +51,7 @@ Ersetzen Sie `my_private` und `your_file_name` durch die gewünschten Dateinamen
 
 Sobald die Bestellung gestartet wurde, fragt das Terminal Sie nach den folgenden Informationen (zu Ihrer Person, Ihrem Unternehmen, Verein, etc.). Drücken Sie jeweils die `EINGABETASTE`{.action} auf der Tastatur, um die folgenden Fragen schrittweise anzuzeigen:
 
-- `Country Name (2 letter code) [AU]`: Geben Sie den **Country Code** Ihres Landes in Großbuchstaben ein. Alle Ländercodes sind [hier](https://www.iban.com/country-codes){.external} aufgelistet.
+- `Country Name (2 letter code) [AU]`: Geben Sie den **Country Code** Ihres Landes in Großbuchstaben ein. Alle Ländercodes sind [hier](https://www.iban.com/country-codes) aufgelistet.
 - `State or Province Name (full name) [Some-State]`: Geben Sie den Namen Ihrer Region oder Ihres Bundeslandes in Großbuchstaben ein.
 - `Locality Name (eg, city) []`: Geben Sie den Namen Ihrer Stadt in Großbuchstaben ein.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: Geben Sie den Namen Ihrer Organisation bzw. Ihres Unternehmens ein. **Wenn Sie eine Privatperson sind, beantworten Sie diese Frage nicht und drücken Sie die `EINGABETASTE`{.action} auf Ihrer Tastatur, um die nächste Frage anzuzeigen**.
@@ -150,6 +150,18 @@ Wenn Sie diese Anleitung in diesem Schritt beginnen, da Sie bereits über ein ex
 
 - Auf die IP-Adresse Ihres Webhostings verweisen.
 - Auf Ihrem Webhosting als Multisite deklariert sind.
+
+> [!primary]
+>
+> **Informationen zur Migration auf das neue SSL-Zertifikat-Verwaltungsinterface:**
+>
+> Diese Anleitung richtet sich an Kunden, deren Webhosting-Dienste noch nicht auf das neue Verwaltungsinterface für SSL-Zertifikate migriert sind.
+> Gehen Sie in Ihrem OVHcloud Kundencenter auf Ihr Webhosting und überprüfen Sie den Tab `SSL-Zertifikate`, um festzustellen, ob diese Migration durchgeführt wurde.
+> Wenn der Tab `SSL-Zertifikate` vorhanden ist, wurde Ihr Dienst bereits zum neuen Verwaltungsinterface migriert. In diesem Fall konsultieren Sie bitte [diese Anleitung](/pages/web_cloud/web_hosting/ssl_management), um Ihr SSL-Zertifikat zu verwalten.
+>
+> Aus technischen Gründen können nicht alle Webhosting-Dienste unserer Kunden auf einmal migriert werden. Diese Migration erfolgt automatisch über mehrere Wochen, ohne dass die Funktionsweise Ihrer Webhosting-Dienste beeinträchtigt wird oder dass dazu weitere Eingriffe oder Aktionen Ihrerseits erforderlich sind.
+>
+> Im Laufe der Zeit werden alle Webhosting-Dienste mit dem neuen Verwaltungsinterface für SSL-Zertifikate funktionieren.
 
 Überprüfen Sie außerdem Folgendes:
 

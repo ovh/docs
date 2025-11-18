@@ -92,7 +92,7 @@ Wyświetl listę i administruj sieciami oraz grupami zabezpieczeń.
 ##### **Orchestration**
 
 Z tego menu możesz zarządzać kilkoma aplikacjami cloud.<br>
-Więcej informacji znajdziesz w [dokumentacji OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
+Więcej informacji znajdziesz w [dokumentacji OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html).
 
 ![orkiestracja](images/orchestration2021.png){.thumbnail}
 

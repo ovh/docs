@@ -1,7 +1,7 @@
 ---
 title: "Modifier le mot de passe d'une adresse e-mail"
 excerpt: "Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud"
-updated: 2025-04-28
+updated: 2025-08-12
 ---
 
 ## Objectif
@@ -15,36 +15,46 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting), incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**Email Pro**](/links/web/email-pro)).
 - Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](/links/web/email).
+- Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
+    - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
+    - [Exchange](/links/web/emails).
+    - [Email Pro](/links/web/email-pro).
+    - [Zimbra](/links/web/emails-zimbra).
+
+## En pratique
 
 > [!primary]
 >
-> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consulter nos guides de configurations pour votre logiciel de messagerie depuis la page d'accueil de votre offre e-mail:
->
-> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
-> - [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
-> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
->
-
-## En pratique
+> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consulter le guide de configuration correspondant à votre logiciel de messagerie.
 
 ### Modifier le mot de passe depuis l'espace client <a name="controlpanel"></a>
 
 > [!warning]
+>
 > Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
+
+> [!primary]
+>
+> **Identifier la technologie e-mail de votre offre MX Plan.**
+>
+> En fonction de la date d’activation de votre offre MX Plan ou d’une migration récente, la technologie e-mail associée peut différer. Celle-ci est caractérisée par l'interface de son webmail. Pour l'identifier :
+>
+> - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} sous `Webmail`{.action}.
+>
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre :
 
 > [!tabs]
-> **Emails MX Plan (version historique)**
+> **MX Plan - Roundcube**
 >>
 >> Si vous ne connaissez pas le type d'offre MX Plan que vous possédez, consultez notre paragraphe [Identifiez votre offre MX Plan](#whichmxplan).<br><br>
 >> Cliquez sur `MX Plan`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
 >> Cliquez sur le bouton `...`{.action} puis sur `Changer le mot de passe`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
-> **Emails MX Plan (nouvelle version)**
+> **MX Plan Zimbra et OWA**
 >>
 >> Si vous ne connaissez pas le type d'offre MX Plan que vous possédez, consultez notre paragraphe [Identifiez votre offre MX Plan](#whichmxplan).<br><br>
 >> Cliquez sur `MX Plan`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
@@ -63,19 +73,29 @@ Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la part
 >> Cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.<br><br>
 >>![email](images/email-password-exchange01.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>>
+>> Cliquez sur `Zimbra Mail`{.action} puis dirigez-vous vers l'onglet `Compte email`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
+>> Cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.<br><br>
+>>![email](images/email-password-zimbra01.png){.thumbnail}<br>
+>>
 
 ### Modifier le mot de passe depuis le webmail
 
-La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pp) :
+La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pp) et Zimbra :
 
-- Emails MX Plan (Nouvelle version)
+- MX Plan OWA
 - Email Pro
 - Exchange
+- MX Plan Zimbra
+- Zimbra Starter / Pro
 
 > [!warning]
 >
-> L'offre **Emails MX Plan (version historique)** utilise le webmail Roundcube, le changement de mot de passe se fait uniquement [via l'espace client](#controlpanel).
+> Pour l'offre **MX Plan Roundcube** le changement de mot de passe se fait uniquement [via l'espace client](#controlpanel).
 >
+
+#### OWA
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -100,6 +120,14 @@ Sur la nouvelle fenêtre qui apparaît, commencez par renseigner votre mot de pa
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
+#### Zimbra
+
+Rendez-vous sur la page [Webmail](/links/web/email). Saisissez votre adresse e-mail et le mot de passe puis cliquez sur `Connexion`{.action}.
+
+Cliquez sur le nom de votre compte e-mail dans la partie supérieure droite de votre interface. Depuis ce menu, vous pourrez `Changer le mot de passe`{.action}.
+
+![Zimbra - préférences](images/zimbra-password.png){.thumbnail}
+
 ### Récupérer un mot de passe
 
 Pour des raisons de sécurité et de confidentialité, il n'est pas possible de **récupérer** un mot de passe. Comme cela est décrit dans les étapes précédentes, il est nécessaire de réinitialiser votre mot de passe si vous ne le connaissez plus.
@@ -108,14 +136,6 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 >
 > Si vous souhaitez stocker un mot de passe, il est conseillé d'utiliser un gestionnaire de mot de passe, comme **Keepass** par exemple.
 
-### Identifiez votre offre MX Plan <a name="whichmxplan"></a>
-
-Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour identifier votre offre MX Plan.
-
-|Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
-|---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> L'offre apparait dans le cadre « **Abonnement** » sur la droite, l'offre historique *ne possède pas* de référence serveur.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>La nouvelle offre possède une « **Référence serveur** » dans le cadre « **Résumé** » sur la gauche.|
-
 ## Aller plus loin
 
 [Premiers pas avec la solution MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
@@ -123,6 +143,8 @@ Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour i
 [Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 [Premiers pas avec la solution Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+
+[Premiers pas avec la solution Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

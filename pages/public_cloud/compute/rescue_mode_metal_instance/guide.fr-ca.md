@@ -17,7 +17,7 @@ Contrairement aux autres instances Public Cloud pour lesquelles le mode rescue p
 
 ## Prérequis
 
-- Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
+- Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Une [instance Metal Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre projet.
 
 ## En pratique

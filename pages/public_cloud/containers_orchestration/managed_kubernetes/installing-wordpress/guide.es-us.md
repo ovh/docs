@@ -4,7 +4,7 @@ excerpt: "Find out how to install WordPress on OVHcloud Managed Kubernetes"
 updated: 2021-12-17
 ---
 
-In this tutorial, we will guide you through the installation of [WordPress](https://wordpress.org/){.external} on your OVHcloud Managed Kubernetes Service.
+In this tutorial, we will guide you through the installation of [WordPress](https://wordpress.org/) on your OVHcloud Managed Kubernetes Service.
 
 ## Before you begin
 
@@ -74,7 +74,7 @@ persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
 
 ## Installing the WordPress Helm chart
 
-For this tutorial we are using the [WordPress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
+For this tutorial we are using the [WordPress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress) found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
 
 > [!primary]
 >
@@ -82,7 +82,7 @@ For this tutorial we are using the [WordPress Helm chart](https://github.com/bit
 >
 > Maybe you would like your username to be different, or be able to set your password, or choose an external database instead of deploying the MariaDB container...
 >
-> In order to customize your install, without having to leave the simplicity of using Helm and the WordPress Helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}. Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
+> In order to customize your install, without having to leave the simplicity of using Helm and the WordPress Helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration). Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
 
 ```
 helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=true
@@ -220,6 +220,6 @@ Don't hesitate to go to our [Managed Kubernetes guides and tutorials](/products/
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

@@ -12,9 +12,9 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou [editor do CMS Drupal](https://www.drupal.org/support){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou [editor do CMS Drupal](https://www.drupal.org/support). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 >
-> Se pretender atualizar um CMS Drupal existente ou se tiver dúvidas sobre a utilização do CMS Drupal, contacte diretamente o [editor do CMS Drupal](https://www.drupal.org/support){.external}.
+> Se pretender atualizar um CMS Drupal existente ou se tiver dúvidas sobre a utilização do CMS Drupal, contacte diretamente o [editor do CMS Drupal](https://www.drupal.org/support).
 >
 
 > [!success]
@@ -30,7 +30,7 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
 
 - Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](/links/web/domains)
-- Ter acesso [Área de Cliente OVHcloud](/links/manager){.external}
+- Ter acesso [Área de Cliente OVHcloud](/links/manager)
   
 ## Instruções
 
@@ -145,7 +145,7 @@ Se tudo correr bem, aparecerá a seguinte página:
   
 ## Quer saber mais? <a name="go-further"></a>
 
-[Site oficial Drupal](https://www.drupal.org/){.external}
+[Site oficial Drupal](https://www.drupal.org/)
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  

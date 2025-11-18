@@ -12,7 +12,7 @@ Es kann vorkommen, dass ein Eingriff eines OVHcloud Administrators auf Ihrer ded
 
 ## Voraussetzungen
 
-- Sie sind [via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} eingeloggt (Root-Zugriff). 
+- Sie sind [via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) eingeloggt (Root-Zugriff). 
 
 ## Beschreibung
 
@@ -114,6 +114,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Weiterführende Informationen
 
-[SSH Einführung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external}
+[SSH Einführung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

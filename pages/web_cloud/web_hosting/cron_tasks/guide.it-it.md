@@ -152,11 +152,11 @@ Un semplice test per verificare se il tuo script produce un errore è eseguirlo 
 
 #### Verifica dell'utilizzo dei percorsi assoluti
 
-Ti consigliamo di utilizzare percorsi di accesso assoluti ai file dei tuoi script. La costante "DIR", ad esempio, può aiutare a ricevere il percorso corrente negli script PHP ([documentazione PHP](https://www.php.net/manual/en/language.constants.predefined.php){.external}).
+Ti consigliamo di utilizzare percorsi di accesso assoluti ai file dei tuoi script. La costante "DIR", ad esempio, può aiutare a ricevere il percorso corrente negli script PHP ([documentazione PHP](https://www.php.net/manual/en/language.constants.predefined.php)).
  
 #### Verifica dei log di esecuzione
 
-Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}, visualizzerai la categoria di log intitolata "CRON".
+Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](/links/manager), visualizzerai la categoria di log intitolata "CRON".
 
 Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'offerta condivisa"](/pages/web_cloud/web_hosting/logs_and_statistics) per maggiori dettagli.
 

@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capacités et limitations (EN)
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2025-04-08
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -19,6 +19,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -30,11 +31,11 @@ The Public Cloud Databases offer supports the following MongoDB versions:
 - MongoDB 7.0
 - MongoDB 8.0
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
+Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/) for more information.
 
 ### MongoDB Drivers
 
-[MongoDB drivers](https://www.mongodb.com/docs/drivers/){.external} provide the interface for applications to interact with MongoDB databases. They offer:
+[MongoDB drivers](https://www.mongodb.com/docs/drivers/) provide the interface for applications to interact with MongoDB databases. They offer:
 
 - **Native Language Support**: Drivers are available for various programming languages, including JavaScript (Node.js), Python, Java, C#, PHP, Ruby, Go, and more.
 - **Asynchronous Operations**: Many drivers support non-blocking, asynchronous operations to improve performance.
@@ -103,7 +104,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 *Production* plan clusters are automatically backed up daily. Backup retention is 7 days.
 
-*Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
+*Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery) support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 

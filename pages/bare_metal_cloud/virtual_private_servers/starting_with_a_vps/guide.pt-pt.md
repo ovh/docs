@@ -1,7 +1,7 @@
 ---
 title: Primeiros passos com um VPS
 excerpt: Aprenda a gerir um VPS na sua Área de Cliente e descubra as primeiras etapas da sua utilização, nomeadamente as ligações remotas e as medidas de segurança
-updated: 2024-11-22
+updated: 2025-09-11
 ---
 
 ## Objetivo
@@ -14,6 +14,11 @@ Um servidor privado virtual (VPS) é um servidor dedicado virtualizado que lhe o
 
 - Ter um [VPS](/links/bare-metal/vps) na Área de Cliente OVHcloud
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+> [!warning]
+> Nem todas as funcionalidades VPS mencionadas nesta página estão disponíveis nas Zonas Locais da OVHcloud.
+>
+> Para mais informações, visite a nossa [página Web das Local Zones](/links/bare-metal/vps-lz).
 
 ## Instruções
 
@@ -110,7 +115,7 @@ Clique nas guias abaixo para ver os detalhes da secção.
 
 #### Backup
 
-Estas opções referem-se a serviços VPS suplementares que podem ser encomendados na Área de Cliente.
+Estas opções referem-se a serviços VPS adicionais para backups e restauro do seu sistema.
 
 > [!tabs]
 > Snapshot
@@ -119,11 +124,13 @@ Estas opções referem-se a serviços VPS suplementares que podem ser encomendad
 >>
 > Backup automatizado
 >>
->> A opção `Backup automatizado` permite programar backups regulares do seu VPS. Ao contrário das snapshots manuais, esta funcionalidade conserva vários pontos de restauro ao longo do tempo, oferecendo-lhe uma proteção contínua e automática dos seus dados (exceto discos adicionais).
+>> É automaticamente criado um backup diário do sistema (excluindo discos adicionais), que é guardado durante 24 horas (apenas aplicável a serviços encomendados a partir de 7 de AGO de 2025). Ao passar para a opção **Backup Premium automático**, fica com disponíveis 7 últimos backups diários do seu VPS para montagem e restauro.  
+Em comparação com instantâneos manuais, esta funcionalidade aumenta a segurança dos dados através da criação de vários pontos de restauro em intervalos regulares.
+>>
 
-Encontre todas as informações sobre as soluções de backup disponíveis para o seu serviço na [página do produto VPS](/links/bare-metal/vps-options) e nos nossos [guias respetivos](/products/bare-metal-cloud-virtual-private-servers-backups).
+Encontre todas as informações sobre as soluções de backup disponíveis para o seu serviço na [página do produto VPS](/links/bare-metal/vps-options) e nos nossos [guias respetivos](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
-### Assinatura
+### A minha oferta
 
 Estas secções apresentam as informações mais importantes sobre a faturação do serviço. Encontre todas as informações sobre este assumpto na [documentação correspondente](/products/account-and-service-management-managing-billing-payments-and-services).
 
@@ -257,6 +264,8 @@ Salvo indicação em contrário, todas as ações administrativas descritas na n
 Tenha em conta que se selecionou uma **distribuição com aplicação** (Plesk, cPanel, Docker), as medidas de segurança genéricas podem não se aplicar ao seu sistema. Sugerimos que consulte os nossos manuais [Primeiros passos com as aplicações pré-instaladas](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) e [Implementar o cPanel num VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), assim como a documentação oficial do editor em causa.
 >
 
+Se perdeu a sua palavra-passe de utilizador ou root, consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password) para saber como reinicializá-la.
+
 <a name="winconnect"></a>
 
 #### VPS Windows
@@ -373,5 +382,7 @@ Para um processo mais automatizado, a OVHcloud propõe igualmente a solução SS
 [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [Como proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[Como recuperar o acesso ao servidor em caso de perda da palavra-passe do utilizador](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

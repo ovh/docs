@@ -19,9 +19,9 @@ W tym tutorialu znajdziesz przykłady sytuacji dotyczących zabezpieczenia Twoje
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}.
-- Zarejestrowanie co najmniej jednej [domeny](/links/web/domains){.external}.
-- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}, sekcja "Web cloud".
+- Posiadanie [hostingu OVHcloud](/links/web/hosting).
+- Zarejestrowanie co najmniej jednej [domeny](/links/web/domains).
+- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja "Web cloud".
 
 ## W praktyce
 
@@ -41,7 +41,7 @@ W większości przypadków są to skrypty zewnętrzne pochodzące z innych stron
 
 Skąd mam wiedzieć, czy dotyczy to mojej strony?
 
-Narzędzia do debugowania dostarczone przez *Mozilla Firefox* i *Google Chrome* mogą informować, czy Twoja strona WWW zawiera elementy zablokowane z powodu mieszanych treści. W dokumentacji dostępnej w witrynie [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} wyjaśniono sposób użycia tych narzędzi do wyszukiwania mieszanych treści.
+Narzędzia do debugowania dostarczone przez *Mozilla Firefox* i *Google Chrome* mogą informować, czy Twoja strona WWW zawiera elementy zablokowane z powodu mieszanych treści. W dokumentacji dostępnej w witrynie [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) wyjaśniono sposób użycia tych narzędzi do wyszukiwania mieszanych treści.
 
 ### Treść zduplikowana (duplicate content)
 

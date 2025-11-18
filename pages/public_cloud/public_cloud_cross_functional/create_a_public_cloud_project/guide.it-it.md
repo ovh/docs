@@ -10,7 +10,7 @@ updated: 2025-04-28
 
 ## Obiettivo
 
-La creazione di un progetto è il primo passo nella distribuzione delle [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/).
+La creazione di un progetto è il primo passo nella distribuzione delle [istanze Public Cloud](/links/public-cloud/public-cloud).
 
 **Questa guida ti guiderà attraverso i passi della creazione del tuo primo progetto di Public Cloud.**
 

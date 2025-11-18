@@ -199,10 +199,10 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 |CMS|Dokumentation|
 |---|---|
-|WordPress|[First steps with WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
-|PrestaShop|[Getting started with PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started){.external}|
-|Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
-|Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
+|WordPress|[First steps with WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/)|
+|PrestaShop|[Getting started with PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started)|
+|Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html)|
+|Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview)|
 
 ## Weiterführende Informationen
 
@@ -212,7 +212,7 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Alles zu unseren Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/)
+[Alles zu unseren Web Cloud Databases](/links/web/databases)
 
 [CMS verwalten](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 

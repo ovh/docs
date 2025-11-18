@@ -15,9 +15,9 @@ O Intel SGX oferece funcionalidades avançadas de encriptação de segurança pa
 
 ## Requisitos
 
-- Um servidor dedicado compatível com a opção [SGX](https://www.ovhcloud.com/pt/bare-metal/intel-software-guard-extensions/){.external}
+- Um servidor dedicado compatível com a opção [SGX](https://www.ovhcloud.com/pt/bare-metal/intel-software-guard-extensions/)
 - Ter acesso a credenciais de início de sessão que recebeu por correio eletrónico após a instalação
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager) ou à [API OVHcloud](https://api.ovh.com/)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager) ou à [API OVHcloud](/links/api)
 - Ubuntu 18.04 ou semelhante instalado no servidor
 
 ## Instruções
@@ -211,9 +211,9 @@ Hit a key....
 
 Seguem-se alguns recursos úteis que lhe permitem ir mais longe (desenvolver a sua própria aplicação, registar-se para atestado remoto...):
 
-- [Intel SGX](https://software.intel.com/en-us/sgx){.external}
-- [Serviços de Atestado Intel SGX](https://software.intel.com/en-us/sgx/attestation-services){.external}
-- [Documentação Intel SGX Linux-2.6](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
-- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
-- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
-- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
+- [Intel SGX](https://software.intel.com/en-us/sgx)
+- [Serviços de Atestado Intel SGX](https://software.intel.com/en-us/sgx/attestation-services)
+- [Documentação Intel SGX Linux-2.6](https://download.01.org/intel-sgx/linux-2.6/docs/)
+- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver)
+- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample)

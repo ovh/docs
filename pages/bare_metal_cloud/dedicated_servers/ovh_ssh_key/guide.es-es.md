@@ -16,7 +16,7 @@ Hay situaciones que pueden requerir la intervención de un técnico de OVHcloud 
 
 ## Requisitos
 
-- [Estar conectado por SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} (acceso *root*).
+- [Estar conectado por SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) (acceso *root*).
 
 ## Procedimiento
 

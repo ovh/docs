@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie usługą Load Balancer z Panelu klienta
 excerpt: Podsumowanie najważniejszych funkcji i rozpoczęcie korzystania z usługi Load Balancer z Panelu klienta
-updated: 2018-01-12
+updated: 2025-07-30
 ---
 
 ## Wprowadzenie
@@ -10,7 +10,7 @@ Niniejsza instrukcja ma na celu zapewnienie użytkownikowi pomocy we wdrożeniu 
 ## Wymagania początkowe
 
 - Dostęp do Twojego Panelu klienta
-- Zamówienie rozwiązania [Load Balancer]( https://www.ovh.pl/rozwiazania/load-balancer/)
+- Zamówienie rozwiązania [Load Balancer](/links/network/load-balancer)
 
 ## W praktyce
 
@@ -27,8 +27,8 @@ Na stronie głównej znajdują się następujące informacje:
 |Status|Podsumowanie usługi Load Balancer zawierające adres IP, front-endy, farmy serwerów oraz dodane serwery|
 |Zużycie|Raport o wykorzystanym przesyle danych LoadBalancer|
 |Wykresy|Tu znajdują się wykresy dotyczące usługi pokazujące ilość jednoczesnych logowań lub ilość żądań na minutę|
-|Informacje|Twoje IPv4 i powiązane adresy Additional IP oraz ilość IPv4 wyjściowych (szczegóły po kliknięciu wielokropka)|
-|Konfiguracja|Tu możesz nadać swojej usłudze własną nazwę (która pojawi się u góry w lewej kolumnie), ustawić szyfrowanie oraz określić centrum danych, w którym znajduje się Twój Load Balancer|
+|Informacje|Twoje adresy IPv4 i IPv6 oraz powiązane z nimi dodatkowe adresy IP, a także liczba wychodzących adresów IPv4 (więcej informacji kliknij przycisk `...`{.action})|
+|Konfiguracja|W tym miejscu możesz spersonalizować nazwę usługi (która będzie widoczna na górze po lewej stronie). Spersonalizowane są algorytmy oraz strefa dostępności, w której znajduje się Load Balancer|
 |Abonament|Tu znajdują się szczegóły administracyjne Twojej oferty|
 
 W celu dodania `Front-endu`{.action} lub `Farmy serwerów`{.action}, należy po prostu kliknąć odpowiedni przycisk, po czym kontekstowe menu pomoże Ci skonfigurować poszczególne elementy usługi.
@@ -46,7 +46,7 @@ Szczegóły elementów front-endu:
 |Nazwa|Zdecyduj czy chcesz nadać front-endowi nazwę, co może przydać się do szybkiej identyfikacji, jeśli ma się ich kilka|
 |Protokół|Możesz wybrać spośród HTTP, HTTPS, TCP, SSL TCP (lub TLS) oraz UDP|
 |Port|Tu wybierz port nasłuchu, którego będziesz używać|
-|Datacenter|Wybór pomiędzy tylko swoim lub wszystkimi centrami danych przy tworzeniu front-endu|
+|Datacenter||Wybierz strefę lub wszystkie strefy dostępności, aby utworzyć front-end|
 |Farma domyślna|Jeśli masz kilka skonfigurowanych farm serwerów, możesz wskazać domyślną farmę dla każdego front-endu|
 
 Masz również dostęp do ustawień zaawansowanych:
@@ -90,6 +90,7 @@ Po utworzeniu farmy serwerów pozostaje dodać do niej serwery (poniżej przedst
 |Cookie|Dodanie indywidualnego pliku cookie sesji|
 |Łańcuch certyfikatu|Dodanie łańcucha certyfikatu SSL|
 |Waga (weight) równoważenia|Wybór wagi (weight) na potrzeby równoważenia obciążenia|
+|Wersja protokołu PROXY|**Tylko jeśli jest już skonfigurowana**, wybierz wersję protokołu PROXY, której chcesz używać na tym serwerze. </br> Więcej informacji na temat protokołu PROXY i korzystania z niego z usługą Load Balancer można znaleźć w [tym przewodniku](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Zarządzanie certyfikatami SSL
 
@@ -104,7 +105,7 @@ W celu zamówienia certyfikatu SSL wystarczy przejść do sekcji `Certyfikat SSL
 |Element|Opis|
 |---|---|
 |Nazwa|Zdecyduj czy chcesz nadać certyfikatowi nazwę, co może przydać się do szybkiej identyfikacji, jeśli ma się ich kilka|
-|Rodzaj certyfikatu|Darmowy (Let's Encrypt), Comodo DV lub Comodo EV (szczegóły pod tym adresem: https://www.ovh.pl/ssl/)|
+|Rodzaj certyfikatu|Darmowy (Let's Encrypt), Comodo DV lub Comodo EV (Więcej informacji [patrz ta strona](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Powiązana/-e domena/-y|
 
 #### Dodanie zewnętrznego certyfikatu SSL
@@ -122,4 +123,4 @@ Jeśli masz już swój certyfikat SSL, masz możliwość dodania go bezpośredni
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Dołącz do [grona naszych użytkowników](/links/community).

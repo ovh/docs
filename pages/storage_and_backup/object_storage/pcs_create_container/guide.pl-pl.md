@@ -23,7 +23,7 @@ Pierwszy etap polega na utworzeniu kontenera, który gromadzi Twoje pliki.
 
 ## Wymagania początkowe
 
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager){.external}
+- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 Jeśli korzystasz z interfejsu Horizon:
 
@@ -33,7 +33,7 @@ Jeśli korzystasz z interfejsu Horizon:
 
 ### Tworzenie kontenera Object Storage w Panelu klienta OVHcloud <a name="controlpanel"></a>
 
-Zaloguj się do swojego [panelu klienta](/links/manager){.external}, przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Object Storage`{.action} na pasku nawigacji po lewej stronie w `Storage`.
+Zaloguj się do swojego [panelu klienta](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Object Storage`{.action} na pasku nawigacji po lewej stronie w `Storage`.
 
 Następnie kliknij `Utwórz kontener obiektów`{.action}.
 
@@ -83,7 +83,7 @@ Kontener został utworzony:
 > Nie można utworzyć kontenera Public Cloud Archive w interfejsie Horizon
 >
 
-Zaloguj się do [panelu Horizon](https://horizon.cloud.ovh.net){.external}:
+Zaloguj się do [panelu Horizon](https://horizon.cloud.ovh.net):
 
 ![logiczny horyzont czasowy](images/create-container-20211005155245752.png)
 

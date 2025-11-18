@@ -62,7 +62,7 @@ The following countries are available for IP geolocation:
 >
 > IP geolocation is solely based on benchmark organisations.
 > 
-> For example, [RIPE NCC](https://www.ripe.net/){.external} is serving Europe as the Regional Internet Registry.
+> For example, [RIPE NCC](https://www.ripe.net/) is serving Europe as the Regional Internet Registry.
 >
 > If you need to verify geolocation otherwise, contact the concerned organisations directly. OVHcloud cannot be involved in this regard.
 

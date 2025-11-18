@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets (EN)
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2025-06-04
+updated: 2025-09-30
 ---
 
 ## Introduction
@@ -60,19 +60,19 @@ At its core, the asynchronous replication is designed to facilitate several key 
 
 - **Exact replica creation**
 
-![Schema 1](images/1.png)
+![Schema 1](images/1.png){.thumbnail}
 
 - **Replicate data within the same region**
 
-![Schema 2](images/2.png)
+![Schema 2](images/2.png){.thumbnail}
 
 - **Replicate data to a different region**
   
-![Schema 3](images/3.png)
+![Schema 3](images/3.png){.thumbnail}
 
 - **Replicate data to two different regions**
 
-![Schema 4](images/4.png)
+![Schema 4](images/4.png){.thumbnail}
 
 
 ### What is replicated and what is not
@@ -231,15 +231,9 @@ Object Lock can be used with replication to enable automatic copying of locked o
 > [!warning]
 > To replicate data in buckets with object lock on, you must have the following prerequisites:
 >
+> - Versioning must be enabled on both source and destination buckets.
 > - Object Lock must be enabled on both source and destination buckets.
-> - You must provide a token when uploading your replication configuration on the source bucket.
 >
-
-You can obtain a token by [contacting our support team](https://help.ovhcloud.com/csm?id=csm_get_help). Once you are provided with a token, you can set it via the cli in the `--token` parameter of the `put-bucket-replication` command:
-
-```bash
-$AWS s3api put-bucket-replication --replication-configuration "file://path_to_replication_conf_file" --bucket bucket_name --token $TOKEN
-```
 
 #### Example of replication configuration
 
@@ -368,9 +362,14 @@ Suppose the source bucket, `region1-destination-bucket` and `region2-destination
 > [!warning]
 > Versioning must be activated in source bucket and destination bucket(s).
 
-### Using the CLI
+### Instructions
 
 #### Create source and destination buckets
+
+> [!primary]
+>
+> To create a bucket via the OVHcloud Control Panel, please refer to our guide [Object Storage - Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
+>
 
 The source bucket is the bucket whose objects are automatically replicated and the destination bucket is the bucket which will contain your object replicas.
 
@@ -388,6 +387,11 @@ $ aws s3 mb s3://my-destination-bucket
 
 #### Activate versioning in source and destination bucket
 
+> [!primary]
+>
+> To enable versioning in a bucket via the OVHcloud Control Panel, please refer to our guide [Object Storage - Getting Started with Versioning](/pages/storage_and_backup/object_storage/s3_versioning)
+>
+
 ```bash
 $ aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
 ```
@@ -401,44 +405,92 @@ $ aws s3api put-bucket-versioning --bucket my-destination-bucket --versioning-co
 
 #### Apply replication configuration
 
-Using the AWS CLI, replication configuration is applied on the source bucket.
+> [!tabs]
+> Via the AWS S3api
+>> Using the AWS CLI, replication configuration is applied on the source bucket.
+>>
+>> ```bash
+>> $ aws s3api put-bucket-replication --bucket <source> --replication-configuration file://<conf.json>
+>> ```
+>>
+>> **_Example:_**: Replicate all objects with prefix "docs" having a tag "importance" with value "high" to `my-destination-bucket` and replicate the delete markers i.e objects marked as deleted in source will be marked as deleted in destination.
+>>
+>> ```bash
+>> {
+>>    "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
+>>    "Rules": [
+>>     {
+>>       "ID": "replication-rule-456",
+>>       "Status": "Enabled",
+>>       "Priority": 1,
+>>       "Filter": {
+>>         "And": {
+>>           "Prefix": "docs",
+>>           "Tags": [
+>>             {
+>>               "Key": "importance",
+>>               "Value": "high"
+>>             }
+>>           ]
+>>         }
+>>       },
+>>       "Destination": {
+>>         "Bucket": "arn:aws:s3:::my-destination-bucket"
+>>       },
+>>       "DeleteMarkerReplication": {
+>>         "Status": "Enabled"
+>>       }
+>>     }
+>>   ]
+>>
+>> }
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> > [!primary]
+>> >
+>> > You will need the following prerequisites:
+>> >
+>> > - A source bucket and a destination bucket.
+>> > - Versioning **must** be enabled on both the source bucket **and** the destination bucket.
+>> >
+>>
+>> Go directly to the information panel for the bucket concerned, then click on `Manage replication`{.action}:
+>>
+>> ![replication_screenshot_2](images/object_storage_information_panel.png){.thumbnail}
+>>
+>> Select `Add a replication rule`{.action}.
+>>
+>> ![replication_screenshot_3](images/object_storage_replication_dashboard.png){.thumbnail}
+>>
+>> Specify a name for your rule to help you identify it later. This name is required and must be unique within your bucket.
+>>
+>> ![replication_screenshot_4](images/object_storage_replication_creation.png){.thumbnail}
+>>
+>> You can specify a prefix and/or tags to limit the scope of the objects to be replicated.
+>>
+>> > [!warning]
+>> >
+>> > As a reminder, you cannot replicate delete markers if you are using tags to filter your objects.
+>> >
+>>
+>> Under **Destination**, select a destination bucket. The selected bucket must have versioning enabled and if object lock has been enabled on the source bucket then it also must be enabled on the destination bucket.
+>>
+>> - By default, the objects will be replicated with the same storage class. However, you can choose to replicate the objects to another storage class.
+>> - If there are two or more rules with the same destination bucket, objects will be replicated according to the rule with the highest priority. The higher the number, the higher the priority.
+>>
+>> Under **Status**, `Enabled` is selected by default. An enabled rule starts to work as soon as you save it. If you want to disable the rule at creation and activate it later, choose `Disabled`.
+>>
+>> To finish, click on `Create the rule`{.action}.
+>>
+>> ![replication_screenshot_5](images/object_storage_replication_creation_success.png){.thumbnail}
+>>
 
-```bash
-$ aws s3api put-bucket-replication --bucket <source> --replication-configuration file://<conf.json>
-```
+#### Delete a replication rule
 
-**_Example:_**: Replicate all objects with prefix "docs" having a tag "importance" with value "high" to `my-destination-bucket` and replicate the delete markers i.e objects marked as deleted in source will be marked as deleted in destination.
+In the Replication rules management view, you can delete a rule from the menu.
 
-```bash
-{
-   "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
-   "Rules": [
-    {
-      "ID": "replication-rule-456",
-      "Status": "Enabled",
-      "Priority": 1,
-      "Filter": {
-        "And": {
-          "Prefix": "docs",
-          "Tags": [
-            {
-              "Key": "importance",
-              "Value": "high"
-            }
-          ]
-        }
-      },
-      "Destination": {
-        "Bucket": "arn:aws:s3:::my-destination-bucket"
-      },
-      "DeleteMarkerReplication": {
-        "Status": "Enabled"
-      }
-    }
-  ]
-
-}
-```
+![replication_screenshot_6](images/object_storage_replication_dashboard_deletion.png){.thumbnail}
 
 ### Offsite Replication option in 3-AZ regions
 
@@ -449,15 +501,21 @@ This feature is only available for primary Object Storage in a 3-AZ region (to k
 - Objects stored in the replica bucket are stored in an **Infrequent Access** class and are billed differently. View pricing on [this page](/links/public-cloud/prices). This class is designed for less frequently accessed data and allow you to reduce your overall Object Storage bill together with Standard-class performance level. This said, if the destination bucket storage class doesn’t suit your needs, you can choose another approach and use the asynchronous replication feature and manage the replication rule configuration by yourself. 
 - The replica bucket and the replication rule configuration are then available for modification if needed.
 
+### Offsite Replication Q&A
+
 #### How can I access the option in the OVHcloud Control Panel?
 
 When creating a new bucket/container in a **3-AZ region**, you will be asked if you want to activave or not the Offsite Replication option. If enabled, and because it relies on the asynchronous replication feature, the versioning will be automatically enabled too.
 
-![OffsiteReplication](images/01-offsite-replication01.PNG){.thumbnail}
+![OffsiteReplication](images/enabling-offsite-replication.png){.thumbnail}
 
 #### What are the differences between the asynchronous replication feature and the Offsite Replication feature available in 3-AZ regions?
 
 The Offsite Replication option offered in 3-AZ regions is based on the asynchronous replication feature. With this Offsite Replication option, OVHcloud automatically generates a replication rule configuration with pre-filled parameters, whereas the S3-compatible asynchronous replication functionality allows the user to take control of the entire function (configuration and deployment).
+
+#### Where will the replicated data be stored, since the replication rule configuration is managed by OVHcloud?
+
+Replicated data is stored like all other data, in a bucket automatically created by OVHcloud. The user can choose the destination region or let OVHcloud automatically select the most suitable region.
 
 #### What if a replica bucket is deleted?
 

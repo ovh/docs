@@ -12,7 +12,7 @@ W niektórych przypadkach może zaistnieć potrzeba usunięcia serwera hosta z T
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
+* Posiadanie oferty [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
 * Dostęp do interfejsu zarządzania vSphere
 
 ## W praktyce

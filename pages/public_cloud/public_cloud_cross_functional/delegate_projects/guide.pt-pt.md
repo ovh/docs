@@ -17,7 +17,7 @@ Para isso, pode delegar noutras contas de cliente da OVHcloud direitos de leitur
 
 ## Requisitos
 
-- Ter uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
+- Ter uma instância [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções 

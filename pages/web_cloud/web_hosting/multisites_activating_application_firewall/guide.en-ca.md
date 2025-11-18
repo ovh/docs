@@ -1,7 +1,7 @@
 ---
 title: "Activating the application firewall"
 excerpt: "Find out how to activate the application firewall on a Web Hosting plan"
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Objective
@@ -25,8 +25,8 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](/links/web/hosting){.external}
-- at least one [domain name](/links/web/domains){.external} attached to the hosting
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
+- at least one [domain name](/links/web/domains) attached to the hosting
 - access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

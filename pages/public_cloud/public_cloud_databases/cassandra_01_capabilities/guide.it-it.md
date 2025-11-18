@@ -1,8 +1,17 @@
 ---
 title: Cassandra - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2025-02-19
+updated: 2025-08-25
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Sale (EOS)**
+>
+> Sale of our Cassandra managed database service will end on 15 September 2025.
+>
+> Existing services will continue to operate until the End Of Life (EOL) on 15 December 2025.
+>
 
 ## Objective
 
@@ -24,13 +33,12 @@ The Public Cloud Databases offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Entire database instances have to be in the same region. Multi-AZ is currently not supported.
+Entire database instances have to be in the same region.
 
 ### Cassandra versions
 
 The Public Cloud Databases offer supports the following Cassandra versions:
 
-- Cassandra 4.0 (soon depreciated)
 - Cassandra 4.1
 
 Cassandra recommends always installing and using the latest stable version.
@@ -40,24 +48,24 @@ Cassandra recommends always installing and using the latest stable version.
 Three plans are available:
 
 - *Essential*
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Read replicas  |
-| ------------ | -------------------------- | -------------  |
-| *Essential*  | 3                          | No             |
-| *Business*   | 3                          | Planned        |
-| *Enterprise* | 6                          | Planned        |
+| Plan                  | Number of nodes by default |
+| --------------------- | -------------------------- |
+| *Essential*           | 3                          |
+| *Business/Production* | 3                          |
+| *Enterprise/Advanced* | 6                          |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
 #### Nodes and replicas
 
 - **Essential**: The cluster is delivered with 3 nodes by default.
-- **Business**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
-- **Enterprise**: The cluster is delivered with 6 nodes by default. Adding read replicas is planned.
+- **Business/Production**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Enterprise/Advanced**: The cluster is delivered with 6 nodes by default. Adding read replicas is planned.
 
 #### License type
 
@@ -116,6 +124,6 @@ Please note that if the database instance is deleted, logs and metrics are also 
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

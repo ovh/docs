@@ -6,7 +6,7 @@ updated: 2023-06-15
  
 ## Objectif
 
-OVHcloud propose des templates OVF que vous pouvez déployer directement depuis votre vSphere *(version 7.0 ou ultérieure)* à travers les [bibliothèques de contenu (*content libraries*)](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-254B2CE8-20A8-43F0-90E8-3F6776C2C896.html){.external}.
+OVHcloud propose des templates OVF que vous pouvez déployer directement depuis votre vSphere *(version 7.0 ou ultérieure)* à travers les [bibliothèques de contenu (*content libraries*)](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-254B2CE8-20A8-43F0-90E8-3F6776C2C896.html).
 
 **Ce guide vous explique comment procéder pour déployer ces templates.**
 
@@ -56,6 +56,6 @@ Les templates n'offrant pas de personnalisation auront les identifiants par déf
   
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

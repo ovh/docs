@@ -21,14 +21,14 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 > [!warning]
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d’assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
 
 - Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud.
 - Avoir toutes les informations relatives à votre IPv6 (préfix, passerelle...).
-- Avoir des connaissances de base en SSH et en réseau.
+- Avoir des connaissances de base en [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) et en réseau.
 
 > [!warning]
 > À noter que les serveurs Kimsufi sont fournis avec un seul bloc IPv6 (/128). IPv6 sera configuré automatiquement à l’installation du système d’exploitation.
@@ -63,7 +63,7 @@ La première étape consiste à récupérer la passerelle (gateway) IPv6 assign�
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur dédiés`{.action}.
 
-La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}. Une fois copié, poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
+La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}. Une fois copiés, poursuivez vers l'application de la configuration IPv6.
 
 ![configureipv6](images/ipv6_information.png){.thumbnail}
 
@@ -89,6 +89,10 @@ IPv6_GATEWAY : `2607:5300:60:62FF:00FF:00FF:00FF:00FF` peut aussi être écrit c
 > Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original, pour pouvoir y revenir en cas de problème. 
 > 
 
+> [!primary]
+> Avec certains systèmes d'exploitation, l'ajout de routes IPv6 statiques dans le fichier de configuration d'origine est nécessaire et se fait par défaut. Si c'est le cas, ajoutez simplement votre configuration pour IPv6 comme indiqué dans le guide, ne modifiez aucune ligne du fichier d'origine.
+>
+
 ### Debian et systèmes d’exploitation basés sur Debian (à l'exception de Debian 12)
 
 L'exemple de configuration ci-dessous est basé sur Debian 11 (Bullseye).
@@ -113,7 +117,11 @@ ssh user@serverIP
 
 #### Étape 2 : Créer une sauvegarde
 
-Le fichier de configuration réseau de votre serveur est situé dans `/etc/network/interfaces.d`. Avant de continuer, créez une sauvegarde de votre fichier en utilisant la commande suivante :
+Le fichier de configuration réseau de votre serveur est situé dans `/etc/network/interfaces.d`. Dans notre exemple, il s'appelle `50-cloud-init`. Avant de continuer, créez une sauvegarde de votre fichier en utilisant la commande suivante :
+
+```sh
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
 
 ```sh
 sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
@@ -628,6 +636,6 @@ Dans tous les cas, n'hésitez pas à [contacter notre équipe de support](https:
 - le nom et le répertoire du fichier de configuration du réseau ;
 - le contenu de ce fichier. 
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

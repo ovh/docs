@@ -1,7 +1,7 @@
 ---
 title: "Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur"
 excerpt: "Découvrez comment configurer un nouveau mot de passe pour un compte utilisateur sur un système d'exploitation GNU/Linux avec le mode rescue OVHcloud"
-updated: 2024-02-19
+updated: 2025-10-02
 ---
 
 ## Objectif
@@ -19,10 +19,11 @@ Dans ce cas, vous pouvez vous connecter à votre serveur via le mode rescue d’
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!primary]
+>
 > Ce guide ne s'applique pas aux installations de **Windows** Server. Consultez nos guides « [Comment changer le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) » et « [Comment changer le mot de passe administrateur sur un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password) ».
 >
 
@@ -38,12 +39,12 @@ N'oubliez pas de consulter également nos guides de premiers pas :
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de contacter [notre communauté](/links/community) si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en œuvre de services sur un serveur.
+> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou de contacter [notre communauté](/links/community) si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en œuvre de services sur un serveur.
 >
 
 <a name="step1"></a>
 
-### Étape 1 : redémarrer le serveur en mode rescue
+### Étape 1 - Redémarrer le serveur en mode rescue
 
 Suivez les étapes de nos guides sur le mode rescue pour vous connecter à votre serveur et monter vos partitions :
 
@@ -64,27 +65,59 @@ La commande exacte dépend du point de montage utilisé. Par exemple, si vous av
 chroot /mnt/
 ```
 
-### Étape 2 : réinitialiser le mot de passe de l'utilisateur
+### Étape 2 - Identifier le(s) compte(s) utilisateur et réinitialiser le mot de passe
 
-Remarque : sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
+Après avoir monté la partition et exécuté `chroot /mnt` (ou l'équivalent), vous disposez des privilèges **root** sur le système monté.
 
-Changez le mot de passe de l'utilisateur avec la commande suivante (remplacez `username` par le nom réel du compte utilisateur) :
+Si besoin, avant de modifier un mot de passe, **identifiez les comptes existants** avec la commande suivante :
 
 ```bash
-passwd username
+cat /etc/passwd
 ```
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+Exemple de résultat (raccourci) :
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
 ```
+
+Retrouvez le nom de l'utilisateur dans la liste des comptes.
+
+Pour changer le mot de passe d’un compte précis (par exemple : **user1**), utilisez cette commande :
+
+```bash
+passwd user1
+```
+
+Renseignez deux fois le nouveau mot de passe :
+
+```console
+# New password:
+# Retype new password:
+# passwd: password updated successfully
+```
+
+Sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
+
+> [!primary]
+>
+> Évitez d'exécuter la commande `passwd` sans argument : cette commande modifie le mot de passe du compte courant (qui est souvent **root** après l'exécution d'un `chroot`).
+> Indiquez systématiquement `passwd <utilisateur>`.
 
 Pensez à utiliser le mode de démarrage **normal** de votre serveur lorsque vous le redémarrez depuis votre [espace client OVHcloud](/links/manager).
 
 Consultez le [guide du mode rescue](#step1) si nécessaire.
 
-Vous avez maintenant accès au serveur avec votre nouveau mot de passe.
+Le compte utilisateur modifié a désormais accès au serveur avec le nouveau mot de passe.
 
 ## Aller plus loin
 

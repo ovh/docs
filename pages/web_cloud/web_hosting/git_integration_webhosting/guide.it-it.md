@@ -1,7 +1,7 @@
 ---
 title: "Configurare e utilizzare Git con un hosting Web OVHcloud"
 excerpt: "Scopri come configurare e utilizzare Git con il tuo hosting Web nello Spazio Cliente OVHcloud"
-updated: 2025-01-31
+updated: 2025-07-03
 ---
 
 ## Obiettivo
@@ -14,7 +14,7 @@ Nel panorama digitale di oggi, le società sono sempre più dinamiche e innovati
 
 - Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione Web Cloud.
-- Disporre di un account [GitHub](https://github.com/){.external} ed essere connesso.
+- Disporre di un account [GitHub](https://github.com/) ed essere connesso.
 
 > [!primary]
 >
@@ -73,8 +73,8 @@ Infine clicca su `Create Repository`{.action}.
 
 Copia l'indirizzo del tuo repository GitHub. La forma deve essere:
 
-- `https://github.com/<username>/<repository_name.git>` per un deposito pubblico.
-- `git@github.com:<username>/<repository_name.git>` per un deposito privato.
+- `https://github.com/<username>/<repository_name>.git` per un deposito pubblico.
+- `git@github.com:<username>/<repository_name>.git` per un deposito privato.
 
 Tornare al modulo di associazione di Git e incollare l'indirizzo del repository GitHub nel campo `Repository`{.action}. Se il formato dell'indirizzo non è corretto, viene visualizzato il seguente messaggio di errore:
 
@@ -91,12 +91,13 @@ Definisci il ramo del tuo repository GitHub. Il ramo predefinito è `main`, ma s
 
 Tornando al modulo di associazione Git disponibile nello Spazio Cliente OVHcloud, è possibile inserire il nome del nuovo ramo appena creato.
 
-#### Associare una chiave SSH a GitHub (solo per i repository GitHub privati) <a name="linkSSHKey"></a>
+Se inserisci l’indirizzo di un repository GitHub privato (di tipo `git@github.com:<username>/<repository_name>.git`), sotto il campo `Branch` apparirà un campo `SSH key` (chiave SSH).
 
-> [!primary]
->
-> La generazione di una chiave SSH è uno step cruciale, in quanto stabilisce una connessione sicura e cifrata tra la directory del tuo sito Web e il repository GitHub. Questa chiave garantisce che i trasferimenti di dati e le modifiche del codice avvengano in modo sicuro e autenticato, impedendo gli accessi non autorizzati e garantendo l'integrità del codice.
->
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
+
+Per configurare la chiave SSH, consulta lo step "Associare una chiave SSH a GitHub (solo per i repository GitHub privati)" qui sotto.
+
+#### Associare una chiave SSH a GitHub (solo per i repository GitHub privati) <a name="linkSSHKey"></a>
 
 > [!primary]
 >
@@ -104,7 +105,16 @@ Tornando al modulo di associazione Git disponibile nello Spazio Cliente OVHcloud
 >
 > Quando il tuo repository GitHub è pubblico, i file possono essere recuperati senza autenticazione, il che significa che Git può clonare e aggiornare il codice senza la necessità di una chiave SSH. Se il tuo repository è privato, GitHub richiede un'autenticazione per accedervi. La chiave SSH permette di stabilire questa connessione protetta e garantire che solo gli utenti autorizzati possano interagire con il repository.
 
-Copia e salva la chiave SSH sul tuo account GitHub. In questo modo è possibile stabilire una connessione protetta senza dover immettere una password ogni volta che si esegue un'operazione Git.
+> [!primary]
+>
+> La generazione di una chiave SSH è uno step cruciale, in quanto stabilisce una connessione sicura e cifrata tra la directory del tuo sito Web e il repository GitHub. Questa chiave garantisce che i trasferimenti di dati e le modifiche del codice avvengano in modo sicuro e autenticato, impedendo gli accessi non autorizzati e garantendo l'integrità del codice.
+>
+
+Copia la chiave SSH cliccando sul pulsante a destra.
+
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key-copy.png){.thumbnail}
+
+Registra la chiave SSH sul tuo account GitHub:
 
 - Accedi al tuo account GitHub.
 - Clicca sull’immagine del profilo in alto a destra e poi su `Settings`{.action}.
@@ -128,7 +138,7 @@ Nella parte inferiore del modulo di associazione di Git, viene visualizzata la s
 Prima di convalidare il modulo di associazione di Git, assicurarsi che:
 
 - La chiave SSH è stata registrata correttamente nel tuo account GitHub.
-- L'indirizzo del tuo repository GitHub è corretto. Il formato deve essere `https://github.com/<username>/<repository_name.git>`.
+- L'indirizzo del tuo repository GitHub è corretto. Il formato deve essere `https://github.com/<username>/<repository_name>.git`.
 - Il nome del ramo del repository GitHub è corretto.
 - La directory di installazione è vuota.
 

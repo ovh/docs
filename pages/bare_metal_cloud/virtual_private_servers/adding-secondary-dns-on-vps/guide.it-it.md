@@ -17,7 +17,7 @@ Se configuri il tuo VPS come server DNS, puoi utilizzare il servizio DNS seconda
 ## Prerequisiti
 
 - Un dominio a cui hai accesso in qualità di amministratore
-- Un server [VPS](https://www.ovhcloud.com/it/vps/) nello Spazio Cliente OVHcloud
+- Un server [VPS](/links/bare-metal/vps) nello Spazio Cliente OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]

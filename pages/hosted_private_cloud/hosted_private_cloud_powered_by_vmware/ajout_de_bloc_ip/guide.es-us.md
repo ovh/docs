@@ -13,7 +13,7 @@ Los bloques de IP permiten que sus servicios estén accesibles online.
 ## Requisitos
 
 - Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), para recibir claves de conexión.
-- Tener un usuario activo (creado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -93,7 +93,7 @@ Si más adelante tiene que desvincular el bloque IP, puede utilizar la siguiente
 > Esta llamada interrumpe la red en las MV que utilizan las IP en cuestión.
 >
 
-Podrá seguir la migración del bloque de IP desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en el menú `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Haga clic en su servicio Hosted Private Cloud y, a continuación, en la pestaña `Operaciones`{.action}.
+Podrá seguir la migración del bloque de IP desde su [área de cliente de OVHcloud](/links/manager) en el menú `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Haga clic en su servicio Hosted Private Cloud y, a continuación, en la pestaña `Operaciones`{.action}.
 
 La referencia de la operación es «removeIpRipeBlock».
 

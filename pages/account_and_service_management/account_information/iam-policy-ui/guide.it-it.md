@@ -1,7 +1,7 @@
 ---
 title: Come utilizzare le politiche IAM dallo Spazio Cliente
 excerpt: Come assegnare diritti di accesso specifici agli utenti da un account OVHcloud
-updated: 2025-05-15
+updated: 2025-10-27
 ---
 
 ## Obiettivo
@@ -77,15 +77,15 @@ Compare il seguente form:
 - **Risorse**: aggiungete risorse o gruppi di risorse che saranno coperti dalla politica. Le risorse disponibili sono filtrate per tipo di prodotto selezionato in precedenza.
 - **Azioni**
 
-Esistono 3 modi per aggiungere azioni:
+**Esistono 4 modi per aggiungere azioni:**
 
-- Attivando l'opzione `Autorizza tutte le azioni`{.action}
+##### 1 - Attivare l'opzione "Autorizza tutte le azioni"
 
 ![Crea una politica](images/create_a_policy_02.png){.thumbnail}
 
 Al momento dell'attivazione di questa opzione, autorizzi tutte le azioni relative ai prodotti selezionati. Ciò comprende tutte le azioni esistenti e le azioni aggiunte in futuro per queste categorie di prodotti.
 
-- Selezionando un gruppo di permessi gestiti
+##### 2 - Selezionare un gruppo di autorizzazioni gestite
 
 OVHcloud mette a disposizione gruppi di permessi preconfigurati e gestiti da OVHcloud.
 È possibile selezionare uno o più gruppi selezionandoli dall'elenco disponibile.
@@ -96,7 +96,7 @@ I dettagli del contenuto dei gruppi di permessi gestiti sono disponibili nella [
 
 I gruppi di azioni gestite possono essere utilizzati in aggiunta alle azioni unitarie.
 
-- Aggiungendo manualmente azioni
+##### 3 - Aggiungere manualmente delle azioni
 
 Se conosci il nome dell'azione, puoi aggiungerla manualmente.
 
@@ -110,7 +110,7 @@ Ad esempio, l'aggiunta di `vps:apiovh:ips/*` conferirà i seguenti diritti:
 - **vps:apiovh:ips/delete**
 - **vps:apiovh:ips/get**
 
-- Selezionando azioni nell'elenco
+##### 4 - Selezionare le azioni dall'elenco
 
 Le azioni possono essere selezionate nell'elenco.
 
@@ -127,7 +127,27 @@ Le azioni disponibili dipendono dal tipo di risorsa e appartengono ad una delle 
 Per aiutarti a identificare un'azione specifica nella lista, è disponibile un campo di ricerca.
 
 > [!primary]
-> Le azioni relative ai prodotti IP e vRack, così come le azioni relative all'ordine e alla fatturazione, non sono ancora disponibili nello IAM OVHcloud.
+> Le azioni legate all'acquisto e alla fatturazione non sono ancora disponibili nell'IAM di OVHcloud.
+
+#### Condizioni sulle politiche
+
+È possibile aggiungere condizioni alle politiche IAM.
+
+Una politica con condizioni è valida quando tutte le condizioni sono validate.
+
+È possibile applicare condizioni su:
+
+- un tag della risorsa;
+- il nome della risorsa;
+- il tipo di prodotto;
+- l'indirizzo IP della richiesta;
+- il giorno della settimana;
+- la data;
+- l'ora.
+
+![Creare una politica](images/conditions.png){.thumbnail}
+
+Una volta aggiunte, le condizioni vengono visualizzate con la sintassi [utilizzata nell'API](/pages/account_and_service_management/account_information/iam-policies-api)
 
 #### Modifica una politica
 
@@ -145,9 +165,19 @@ Una finestra contestuale ti chiederà di confermare l'eliminazione.
 
 <a name="create-users"></a>
 
+#### Caso di policy relative ad altri account cliente OVHcloud
+
+Le policy di accesso possono essere indirizzate ad altri account cliente.
+L'account destinatario di questa politica potrà gestire i diritti ricevuti nelle proprie politiche di accesso, ma non potrà mai oltrepassare i diritti definiti nella politica di accesso.
+
+Ad esempio un account **xx1111-ovh** con diritti `vps:apiovh:ips/*` all’account **xx2222-ovh**.
+L’account **xx2222-ovh** potrà assegnare il diritto `vps:apiovh:ips/delete` ai propri utenti, ma non potrà mai assegnare il diritto `vps:apiovh:reboot`.
+
+L'accesso al supporto resterà riservato all'account proprietario della risorsa.
+
 ### Gestione delle identità
 
-Per gestire le identità disponibili per le politiche, accedi al menu `Identità, Sicurezza e Operazioni`{.action}, poi alla sezione `Identità`{.action}.
+Per gestire le identità disponibili per le policy, accedi al menu `Identità, Sicurezza e Operazioni`{.action}, poi alla sezione `Identità`{.action}.
 
 Visualizza i dettagli della gestione degli utenti nella [documentazione dedicata](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

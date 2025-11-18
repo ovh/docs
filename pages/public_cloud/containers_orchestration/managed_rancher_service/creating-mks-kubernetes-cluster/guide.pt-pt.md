@@ -84,7 +84,7 @@ You can click on the `Explore`{.action} button to manage your MKS Cluster.
 
 > [!warning]
 >
-> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/pt/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/pt/public-cloud/prices/) pricing pages.
+> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/pt/public-cloud/prices/#568) and [Compute](/links/public-cloud/prices) pricing pages.
 >
 > Once your Managed Kubernetes clusters are created, we do recommend performing all actions (upgrade, nodepool management, cluster modification) from the Rancher console and not performing any action directly via the OVHcloud API, OVHcloud Terraform provider or the OVHcloud Control Panel as this can lead to desynchronization.
 >

@@ -12,7 +12,7 @@ Como resultado, se introdujo el protocolo **IPv6** para conectar a la red Intern
 
 Al estar menos disponibles las direcciones IPv4, es más difícil añadir nuevas máquinas a la red de Internet con la norma IPv4. No obstante, las conexiones con una dirección IPv6 solo son útiles si, por ejemplo, su sitio web también está disponible con el mismo protocolo. De este modo, cuanto más sitios web estén disponibles en IPv6, mayor será el número de actores presentes en la red de internet que transferirán sus dispositivos o máquinas a este nuevo protocolo.
 
-Para más información, consulte el artículo de [Wikipedia](https://es.wikipedia.org/wiki/IPv6){.external} sobre el protocolo IPv6.
+Para más información, consulte el artículo de [Wikipedia](https://es.wikipedia.org/wiki/IPv6) sobre el protocolo IPv6.
 
 Nuestros planes de hosting son compatibles con IPv6 desde 2011. Sin embargo, la activación de este protocolo ha sido hasta hace poco una opción opcional de configuración. 
 
@@ -20,9 +20,9 @@ Nuestros planes de hosting son compatibles con IPv6 desde 2011. Sin embargo, la 
 
 ## Requisitos
 
-- Disponer de un [dominio](/links/web/domains){.external} en el área de cliente de OVHcloud.
-- Tener contratado un [plan de hosting](/links/web/hosting){.external}.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
+- Disponer de un [dominio](/links/web/domains) en el área de cliente de OVHcloud.
+- Tener contratado un [plan de hosting](/links/web/hosting).
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -37,7 +37,7 @@ Si su sitio no está configurado para funcionar con una dirección IPv6, puede a
 
 ### 1 - Comprobar la compatibilidad IPv6 de su sitio web
 
-Para comprobar si su sitio web ya utiliza una dirección IPv6, utilice el sitio web [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. Indica si el sitio web responde al nuevo protocolo IP. Si no es el caso, lea más nuestra guía.
+Para comprobar si su sitio web ya utiliza una dirección IPv6, utilice el sitio web [ipv6-test.com](https://ipv6-test.com/validate.php). Indica si el sitio web responde al nuevo protocolo IP. Si no es el caso, lea más nuestra guía.
 
 ### 2 - descargar la dirección IPv6 de su alojamiento web
 

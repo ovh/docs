@@ -34,7 +34,7 @@ Il existe deux types d'adresses IP :
 
 Pour utiliser l'option de restriction par IP de l'espace client OVHcloud, vous devrez renseigner **uniquement** votre/vos adresse(s) IP publique(s).
 
-Pour récupérer l'adresse IP publique d'un appareil qui sera autorisé à accéder à votre espace client OVHcloud, rendez-vous sur le site [mon-ip.com](https://mon-ip.com){.external} (non géré par OVHcloud).
+Pour récupérer l'adresse IP publique d'un appareil qui sera autorisé à accéder à votre espace client OVHcloud, rendez-vous sur le site [mon-ip.com](https://mon-ip.com) (non géré par OVHcloud).
 
 Prenez note de l'adresse IP qui s'affiche puis répétez l'opération pour chacun des appareils qui sera autorisé à accéder à votre espace client OVHcloud.
 

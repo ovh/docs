@@ -1,7 +1,7 @@
 ---
 title: Modificare un Volume Block Storage
 excerpt: "Scopri come modificare il tipo di un volume block storage utilizzando Openstack"
-updated: 2024-09-26
+updated: 2025-10-21
 ---
 
 > [!primary]
@@ -15,7 +15,7 @@ L’obiettivo di questa guida è mostrarti come modificare un tipo di volume Blo
 ## Prerequisiti
 
 - [Accedere all'interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
-- Un volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/)
+- Un volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto [Public Cloud](/links/public-cloud/public-cloud)
 
 ## Procedura
 
@@ -78,6 +78,8 @@ $ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_N
 ```
 
 ## Per saperne di più
+
+Per scoprire come migrare un volume Block Storage verso un volume crittografato LUKS, consulta la nostra guida dedicata [Migrating a Block Storage volume to an encrypted LUKS volume](/pages/public_cloud/compute/migrating-non-encrypted-to-encrypted-volume) (EN).
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

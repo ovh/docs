@@ -101,7 +101,7 @@ Wenn Sie alle Ihre Zahlungsarten löschen möchten, müssen alle Ihre Dienstleis
 
 #### Löschen einer Zahlungsart über die OVHcloud API
 
-Die Löschung einer Zahlungsart kann über die API erfolgen. Verbinden Sie sich hierzu über [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+Die Löschung einer Zahlungsart kann über die API erfolgen. Verbinden Sie sich hierzu über [https://eu.api.ovh.com/](/links/api).
 
 Fordern Sie zuerst die ID der Zahlungsart an:
 

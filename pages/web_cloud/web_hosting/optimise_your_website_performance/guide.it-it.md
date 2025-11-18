@@ -1,7 +1,7 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
 excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
-updated: 2024-01-08
+updated: 2025-10-09
 ---
 
 ## Obiettivo
@@ -13,14 +13,14 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 
 ## Prerequisiti
 
-- Una [soluzione Web Hosting OVHcloud](/links/web/hosting){.external}
+- Una [soluzione Web Hosting OVHcloud](/links/web/hosting)
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
-- Un [dominio](/links/web/domains){.external}per accedere al tuo sito
-- avere accesso allo [Spazio Cliente](/links/manager){.external}OVHcloud
+- Un [dominio](/links/web/domains)per accedere al tuo sito
+- avere accesso allo [Spazio Cliente](/links/manager)OVHcloud
 
 ## Procedura
 
-### Step 1: Definisci il campo di applicazione
+### 1 - Definisci il campo di applicazione
 
 #### Domande da porsi in caso di rallentamenti:
 
@@ -46,14 +46,14 @@ Le risposte a queste domande possono aiutarti a concentrarti su aspetti ben spec
 
 I CMS come WordPress, PrestaShop, Drupal o Joomla! utilizzano numerose librerie, in modo che una sola pagina possa contenere molti elementi.
 Questi devono essere caricati e letti dal browser Internet dei tuoi utenti.
-Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](/links/web/hosting){.external}.
+Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](/links/web/hosting).
 
-Per maggiori informazioni clicca [qui](/links/web/hosting-best-web){.external}.
+Per maggiori informazioni clicca [qui](/links/web/hosting-best-web).
 
-### Step 2: Verifica la versione PHP
+### 2 - Verifica la versione PHP
 
 L’utilizzo dell’ultima versione php compatibile con il tuo sito può influenzare significativamente le performance del tuo sito.
-Per verificarne la compatibilità, consulta [la documentazione ufficiale di PHP](https://php.net/eol.php){.external}.
+Per verificarne la compatibilità, consulta [la documentazione ufficiale di PHP](https://php.net/eol.php).
 
 **PHP-FPM**
 
@@ -74,7 +74,7 @@ Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informaz
 
 Il file _.ovhconfig_ funziona nella root del tuo hosting o nella sottodirectory di livello 1 (es.:_/www/_), ma non nella directory di livello 2 o superiore (es.: _/www/test/_, _/www/test/test2/_)
 
-### Step 3: Verifica i contenuti media (immagini, video, ecc.)
+### 3 - Verifica i contenuti media (immagini, video, ecc.)
 
 Quando si accede ad un sito web tutti i contenuti devono essere scaricati dal browser.
 
@@ -86,19 +86,40 @@ Spetta a te scegliere quelli che più si adattano alle tue esigenze.
 
 Puoi trovare maggiori informazioni più avanti, allo step 5.
 
-### Step 4: Ottimizza i tuoi script
+### 4 - Ottimizza i tuoi script
 
 Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulteriori informazioni qui di seguito) per trovare l’origine dei ritardi e poi consulta i log per rilevare le date dei picchi.
 
-Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](/links/manager)){.external}.
+Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](/links/manager)).
 
 Come accedere alle statistiche e ai log:
 
-1. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione.
-2. Clicca sulla scheda `Statistiche e log`{.action}.
-3. Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
-![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `Statistiche e log`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
+>>
+>> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Come accedere ai grafici:
 
@@ -110,7 +131,7 @@ Come accedere ai grafici:
 
 Che tipo di informazioni è possibile visualizzare?
 
-- **Richieste HTTP **: indica il numero di hit medio al sito. (Hit: richiesta di accesso a un qualsiasi file - testo, immagine, ecc. - di una pagina web effettuata dal tuo browser).  Gli hit sono classificati per codice http: 2xx/3xx - 4xx - 5xx
+- **Richieste HTTP**: indica il numero di hit medio al sito. (Hit: richiesta di accesso a un qualsiasi file - testo, immagine, ecc. - di una pagina web effettuata dal tuo browser).  Gli hit sono classificati per codice http: 2xx/3xx - 4xx - 5xx
 
 - **Tempo medio di risposta**: corrisponde al tempo medio di risposta delle pagine, distinguendo tra quelle dinamiche e quelle statiche.
 
@@ -129,9 +150,9 @@ Ricordati di selezionare il nome del tuo database e il periodo che ti interessa.
 
 - **Richieste SQL**: mostra la quantità di richieste
 
-### Step 5: Controlla le richieste della rete
+### 5 - Controlla le richieste della rete
 
-Uno strumento utile di analisi è rappresentato dal [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external}, che è direttamente integrato nel browser Mozilla Firefox e permette di analizzare nel dettaglio i tempi di caricamento di una pagina.
+Uno strumento utile di analisi è rappresentato dal [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor), che è direttamente integrato nel browser Mozilla Firefox e permette di analizzare nel dettaglio i tempi di caricamento di una pagina.
 
 Questo strumento è in grado di verificare quali elementi del tuo sito sono più lenti o più pesanti nel caricare.
 Può essere utile ridurre le immagini e i contenuti che aumentano i tempi di caricamento del sito e stabilire le priorità riguardo alle ottimizzazioni da effettuare.
@@ -146,25 +167,25 @@ Per migliorare l’accessibilità, il download e il posizionamento naturale del 
 
 In questo modo, migliorano i tempi di risposta degli utenti finali in tutto il mondo, dato che le parti statiche del tuo sito vengono caricate direttamente dall’utente nel POP a lui più vicino.
 
-Trovi tutte le offerte CDN OVHcloud [qui](https://www.ovh.it/cdn/){.external}.
+Trovi tutte le offerte CDN OVHcloud [qui](https://www.ovh.it/cdn/).
 
-### Step 6: Verifica i CMS (Content Management System) e i plugin utilizzati
+### 6 - Verifica i CMS (Content Management System) e i plugin utilizzati
 
 _Se non utilizzi un CMS, questo step è facoltativo_
 
-Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo CMS, puoi confrontare i nostri servizi in [questa pagina](/links/web/hosting){.external}.
+Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo CMS, puoi confrontare i nostri servizi in [questa pagina](/links/web/hosting).
 
 - **Utilizzo dei plugin di cache:** I CMS utilizzano molte librerie in modo che una sola pagina Web possa contenere una grande quantità di elementi. Per ottimizzare l’utilizzo del tuo CMS, ti consigliamo di usare dei plugin di cache che ti permettono di evitare di rigenerare completamente il contenuto del tuo sito ogni volta che la pagina viene caricata. Cercane uno sul sito del CMS che utilizzi (Joomla! - PrestaShop - WordPress) per ottimizzare il tuo sito.
 
 - **Disattivazione o eliminazione dei plugin inutili:** Sempre al fine di migliorare le performance del tuo CMS, può essere utile disattivare o cancellare i plugin non utilizzati. In questo modo eviterai che il browser carichi gli elementi inutili.
 
-### Step 7: ottimizza il tuo database
+### 7 - Ottimizza il tuo database
 
 _Se non usi un database, questo step è facoltativo_
 È possibile accedere al database utilizzando PHPMyAdmin. (Dato che le istruzioni su come utilizzare PHPMyAdmin andrebbero oltre lo scopo di questa guida, non saranno forniti ulteriori dettagli).
 Tuttavia, sono disponibili numerose guide esterne su questo argomento.
 
-**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](/links/manager){.external}:
+**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](/links/manager):
 
 - Clicca sul tuo dominio nella sezione `Hosting`{.action}
 - Vai alla scheda `Database`{.action}
@@ -227,15 +248,15 @@ Ad esempio, evita di utilizzare “HAVING” (che appesantisce le tue richieste)
 #### Web Cloud Databases
 
 Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è lento, o se vengono inviate numerose richieste al database, ti consigliamo di passare alla nostra soluzione Web Cloud Databases per avere più risorse disponibili.
-[Consulta l'offerta Web Cloud Databases sul nostro sito](https://www.ovh.it/cloud/cloud-databases/){.external}.
+[Consulta l'offerta Web Cloud Databases sul nostro sito](/links/web/databases).
 
 ## Per saperne di più 
 
 [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[Gestisci un database dal tuo hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Gestisci un database dal tuo hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
+[Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

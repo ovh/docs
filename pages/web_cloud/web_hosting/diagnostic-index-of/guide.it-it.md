@@ -1,14 +1,14 @@
 ---
 title: Cosa fare in caso di pagina "Index of"?
 excerpt: Come caricare il tuo sito online, quando visualizza una pagina "Index of"
-updated: 2023-05-04
+updated: 2025-10-28
 ---
 
 ## Obiettivo
 
 Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 
-- La configurazione [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo dominio non è correttamente configurata verso la tua directory di destinazione
+- La [configurazione del tuo nome dominio con il tuo sito web](/pages/web_cloud/web_hosting/multisites_configure_multisite) non è correttamente configurata verso la tua directory di destinazione.
 - La cartella di destinazione verso cui il tuo dominio punta non contiene file **"index.html"** o **"index.php"**
 
 ![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
@@ -33,7 +33,7 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 
 ### Comprendere l'origine della pagina "Index of"
 
-Il tuo dominio è stato dichiarato per accedere a una directory di destinazione (una "`Cartella root`") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. accedendo alla scheda [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting Web presente nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=i).
+Il tuo dominio è stato dichiarato per accedere a una directory di destinazione (una "`Cartella root`") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. accedendo alla scheda [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting Web presente nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
 La pagina **Index of** indica che la directory di destinazione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito Web. Il nome del file è normalizzato.
 
@@ -43,11 +43,11 @@ Per visualizzare il tuo sito Web, accedi alla sezione `Multisito`{.action} del t
 >
 > Per collegare temporaneamente il tuo dominio a una `Cartella root` che non contiene file **index.php** o **index.html***, puoi vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questo [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> In caso di difficoltà nell'implementare questa configurazione, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner). Il nostro team di supporto non sarà infatti in grado di fornirti assistenza su eventuali modifiche della programmazione interna del tuo sito.
+> Ti consigliamo di contattare un [fornitore specializzato](/links/partner) se riscontri difficoltà nell'implementare questa configurazione. Infatti, i nostri team di supporto non saranno in grado di fornirti un supporto per qualsiasi modifica alla programmazione interna del tuo sito web.
 
 ### Risolvere il caso più comune di una pagina "Index of"
 
-Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo hosting tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Il tuo dominio non è associato a questa cartella nella colonna `Cartella di root` del tuo `Multisito`{.action}.
+Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo spazio di storage del tuo hosting Web tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Tuttavia, il tuo nome dominio non è collegato a questa cartella nella colonna `Cartella di root` del tuo sito web.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

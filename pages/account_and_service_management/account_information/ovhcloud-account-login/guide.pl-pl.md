@@ -4,6 +4,11 @@ excerpt: 'Dowiedz się, jak zalogować się do Twojego konta OVHcloud'
 updated: 2025-04-28
 ---
 
+> [!success]
+> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
+> Podziel się z nami swoją opinią i pomysłami.<br>
+> [przejdź do ankiety.](https://s.elq.fr/ovhext/OiIwy54)
+
 ## Wprowadzenie
 
 Zarządzanie usługami odbywa się głównie w Panelu klienta OVHcloud.
@@ -70,7 +75,7 @@ Po przeprowadzeniu tego kroku należy [wpisać do Twojego konta **nowy** adres z
 
 W takim przypadku pomoc telefoniczna OVHcloud nie będzie mogła zostać udzielona.
 
-Należy postępować zgodnie z tą [procedurą](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeEmail.cgi){.external} do nas pocztą, aby Twoja tożsamość została zweryfikowana.
+Należy postępować zgodnie z tą [procedurą](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeEmail.cgi) do nas pocztą, aby Twoja tożsamość została zweryfikowana.
 <br>Po otrzymaniu wiadomości e-mail przez nasze służby wykonamy wymianę Twojego kontaktowego adresu e-mail, jeśli wszystkie żądane dokumenty są zgodne z przepisami.
 <br>Procedura ta może potrwać kilka dni, biorąc pod uwagę czas przekierowania poczty i jej obsługi przez nasze usługi.
 

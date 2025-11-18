@@ -12,7 +12,7 @@ OVHcloud garantiza en sus contratos la sustitución de los hosts que no están a
 
 ## Requisitos
 
-- Tener una solución [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
+- Tener una solución [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
 
 ## Procedimiento
 

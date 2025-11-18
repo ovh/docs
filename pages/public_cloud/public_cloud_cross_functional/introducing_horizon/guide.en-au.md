@@ -88,7 +88,7 @@ List and manage your networks and security groups here.
 ##### **Orchestration**
 
 This menu allows you to orchestrate multiple composite cloud applications.<br>
-For more information, please refer to the [OpenStack documentation](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
+For more information, please refer to the [OpenStack documentation](https://docs.openstack.org/horizon/pike/user/stacks.html).
 
 ![orchestration](images/orchestration2021.png){.thumbnail}
 

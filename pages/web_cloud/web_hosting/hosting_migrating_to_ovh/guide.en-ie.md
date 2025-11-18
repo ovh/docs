@@ -1,7 +1,7 @@
 ---
 title: "Migrating your website and associated services to OVHcloud"
 excerpt: "Find out how to migrate your website, domain name, database and emails to OVHcloud without any service interruptions"
-updated: 2025-01-08
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ This guide will outline the steps you need to take to migrate your entire websit
 - Access to your domain name’s active DNS (Domain Name System) zone
 - Access to your website’s files and database at your current hosting provider
 - Credentials (user, password, server) for your current email accounts
-- Access to the [OVHcloud Control Panel](/links/manager).
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -134,7 +134,7 @@ To do this, replace the login details for your old database with the login detai
 > If you are using a Content Management System (CMS) like WordPress, Joomla!, Drupal or PrestaShop, you can find the information in their configuration files. See **Step 2** of the guide “[Changing a database password](/pages/web_cloud/web_hosting/sql_change_password)”.
 >
 
-Declare and authorise your external domain name on your OVHcloud web hosting plan by referring to our guide on [Managing multiple websites on an OVHcloud web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite). Enter the name of the folder you chose at the beginning of [step 4](#step4) as the Multisite "Root folder". As a reminder, this is the folder in which you have placed your files in your FTP storage space.
+Declare and authorise your external domain name on your OVHcloud web hosting via our guide [Managing multiple websites on an OVHcloud web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite). Enter the name of the folder you chose at the beginning of [step 4](#step4) as the Multisite "Root folder". As a reminder, this is the folder in which you have placed your files in your FTP storage space.
 
 > [!warning]
 >
@@ -188,7 +188,7 @@ After the DNS propagation, all your new emails are received by your new email ac
 
 There are two ways of migrating the content of your old email accounts.
 
-**Option 1**: Use our [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} tool, which allows you to copy the content of email accounts at your old service provider to your new OVHcloud accounts. You can refer to our guide [Migrating email accounts using OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+**Option 1**: Use our [OVH Mail Migrator (OMM)](https://omm.ovh.net/) tool, which allows you to copy the content of email accounts at your old service provider to your new OVHcloud accounts. You can refer to our guide [Migrating email accounts using OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 We recommend that you do not use the `Server type`{.action} **POP** in the `Source account`{.action} section. This protocol deletes emails from your old server, and sends them to the destination OVHcloud server. You will no longer be able to compare the content of the old accounts with the new email accounts.
 

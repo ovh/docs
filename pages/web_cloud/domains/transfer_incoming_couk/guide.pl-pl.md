@@ -36,7 +36,7 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
 - Twoja domena nie może być **odkupienia** ani usunięta.
 - Domena nie może zostać zablokowana u Twojego operatora. 
-- Dane kontaktowe właściciela muszą być aktualne w [bazie whois](https://www.nominet.uk/whois/){.external} domeny.
+- Dane kontaktowe właściciela muszą być aktualne w [bazie whois](https://www.nominet.uk/whois/) domeny.
 - Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail właściciela.
 
 > [!primary]
@@ -61,7 +61,7 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
 #### Etap 1: Zmiana APR dla domeny
 
-Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
+Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
 > [!primary]
 >

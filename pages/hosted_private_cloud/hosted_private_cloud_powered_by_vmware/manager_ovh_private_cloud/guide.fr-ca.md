@@ -12,14 +12,14 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
+- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
 
 ## En pratique
 
 ### Onglet général
 
-Une fois dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, vous aurez accès à un aperçu général de votre Private Cloud :
+Une fois dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action} de votre [espace client OVHcloud](/links/manager), vous aurez accès à un aperçu général de votre Private Cloud :
 
 ![Informations générales](images/controlpanel1.png){.thumbnail}
 
@@ -178,7 +178,7 @@ L'onglet `Licence Windows`{.action} permet d'activer les licences SPLA Windows s
 
 ![Licence SPLA Windows](images/controlpanel10.png){.thumbnail}
 
-Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/images-licenses/).
 
 ### Vue datacentre
 
@@ -231,7 +231,7 @@ L'onglet de backup vous permet d'activer la solution `Veeam backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Pour plus d'informations sur cette option, vous pouvez consulter ce [guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service){.external}.
+Pour plus d'informations sur cette option, vous pouvez consulter ce [guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service).
 
 ## Aller plus loin
 

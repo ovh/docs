@@ -1,7 +1,7 @@
 ---
 title: "Comment créer un sous-domaine ?"
 excerpt: "Découvrez la définition d'un sous-domaine et comment en créer chez OVHcloud"
-updated: 2025-02-05
+updated: 2025-10-27
 ---
 
 <style>
@@ -168,7 +168,7 @@ Pour les services qui ne seraient pas mentionnés, consultez la documentation re
 
 #### Cas 1 - Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine <a name="link-subdomain-case-1"></a>
 
-Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](/links/manager){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web puis choisissez l'onglet `Multisite`{.action}.
+Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web puis choisissez l'onglet `Multisite`{.action}.
 
 C'est ici que vous autorisez l'accès de votre sous-domaine à votre hébergement web où se trouve votre site web.
 
@@ -176,12 +176,12 @@ Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur
 
 > [!warning]
 >
-> L'ajout en multisite d'un nom de domaine ou d'un sous-domaine peut nécessiter la mise en place d'un token de validation. Pour un sous-domaine, ce même token n'est pas pris en compte et doit être ajouté non pas pour le sous-domaine mais pour le nom de domaine. Dans ce cas, ajoutez en complément, dans la zone DNS active de votre nom de domaine, le token sous la forme d'un enregistrement DNS de type TXT pour le nom de domaine.
->
+> L'ajout d'un nom de domaine ou d'un sous-domaine sur l'un des sites web de votre hébergement web peut nécessiter la mise en place d'un **token de validation**.
+> Pour un sous-domaine, ce même token n'est pas pris en compte et doit être ajouté non pas pour le sous-domaine mais pour le nom de domaine. Dans ce cas, ajoutez en complément, dans la zone DNS active de votre nom de domaine, le token sous la forme d'un enregistrement DNS de type TXT pour le nom de domaine.
 
 #### Cas 2 - Créer des adresses e-mail Exchange avec un sous-domaine <a name="link-subdomain-case-2"></a>
 
-Pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à l'[espace client OVHcloud](/links/manager){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
+Pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme Exchange.
 
@@ -207,7 +207,7 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 [Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

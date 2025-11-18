@@ -50,7 +50,7 @@ Il est important de noter que les listes de blocage peuvent inclure des noms de 
     Si [l’IP figure dans la liste de blocage (SBL) de Spamhaus](https://check.spamhaus.org/sbl/listings/ovh.net/), cela signifie que vous avez déjà été contacté par e-mail par notre équipe en charge des signalements d'abus.<br>
     L'e-mail envoyé par notre équipe provient d'une adresse similaire à celle-ci : `ticket+ABCDEFGHIJ.ID@abuse.ovh.net` (le numéro de ticket est toujours en lettres capitales et l'ID qui suit est composé de 4 caractères alphanumériques).<br>
     Suivez les instructions fournies dans cet e-mail afin de remédier à la situation. Une fois des mesures correctives prises par vos soins, nous transmettrons ces mesures à Spamhaus pour leur demander que votre IP soit retirée de la liste, Spamhaus étant seul décisionnaire des suites à donner à notre demande.
-    - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) ou [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/mixed-spam-sources/)  
+    - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) ou [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/combined-spam-sources/)  
     Si votre IP figure dans la *Exploits Block List* et/ou dans la liste combinée des sources de spam, cela est dû à des problèmes de configuration. Veuillez suivre les étapes mentionnées sur le site Spamhaus pour retirer l'IP de la liste (voir l'exemple ci-dessous). Une fois les étapes suivies, vous pouvez le retirer vous-même de la liste.
     /// details | Exemple
 
@@ -146,7 +146,7 @@ Le retrait de la liste devrait prendre entre 20 et 30 minutes.
 
 /// details | Plus d'informations...
 
-Pour [retirer une IP de MIPSpace](https://www.mipspace.com/remove.php), connectez-vous d'abord à [votre espace client OVHcloud](/links/manager) et assurez-vous que les informations suivantes sont à jour :
+Pour [retirer une IP de MIPSpace](https://www.mipspace.com/removal.php), connectez-vous d'abord à [votre espace client OVHcloud](/links/manager) et assurez-vous que les informations suivantes sont à jour :
 
 - [La résolution reverse DNS](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (champ PTR).
 - Les détails de votre organisation (*RWhois*) dans la section `Network`{.action} : Ouvrez `IP`{.action} puis cliquez sur le bouton `Engrenage`{.action} à droite. Sélectionnez `Gérer mes organisations`{.action} dans le menu déroulant.

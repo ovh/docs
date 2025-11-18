@@ -12,13 +12,13 @@ Ramki Jumbo, inaczej *Jumbo frames*, to ramki Ethernet o ładowności ponad 1500
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
+- Posiadanie usługi [vRack](/links/network/vrack)
 - Otwórz shell z prawami root
 
 > [!warning]
-> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
 >
-> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](/links/bare-metal/eco-compare).
 
 > [!primary]
 >

@@ -19,17 +19,17 @@ The first step is to create a container that will hold your files.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 If you use Horizon :
 
-- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user){.external}
+- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 ## Instructions
 
 ### Creating an Object Storage container from the OVHcloud Control Panel <a name="controlpanel"></a>
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Object Storage`{.action} in the left-hand navigation bar under "Storage".
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Object Storage`{.action} in the left-hand navigation bar under "Storage".
 Finally, click `Create an object container`{.action}.
 
 If this is your first container:
@@ -78,7 +78,7 @@ Your container is now created:
 > It is not possible to create a Public Cloud Archive container from Horizon.
 >
 
-Log in to [Horizon](https://horizon.cloud.ovh.net){.external} :
+Log in to [Horizon](https://horizon.cloud.ovh.net) :
 
 ![horizon login](images/create-container-20211005155245752.png)
 

@@ -12,7 +12,7 @@ This guide details how to transfer data from one HA-NAS to another.
 
 - An OVHcloud HA-NAS
 - An NFS-compatible distribution
-- You need to have mounted your HA-NAS beforehand by following the guide to [mount your HA-NAS via an NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs){.external} share.
+- You need to have mounted your HA-NAS beforehand by following the guide to [mount your HA-NAS via an NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs) share.
 
 ## Instructions
 
@@ -38,6 +38,6 @@ rsync -Pva /mnt/SrcNas /mnt/DstNas
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

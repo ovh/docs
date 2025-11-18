@@ -1,6 +1,7 @@
 ---
-title: FAQ Public Cloud databases (EN)
-updated: 2024-05-15
+title: Public Cloud Databases - FAQ
+excerpt: Public Cloud Databases Frequently Asked Questions
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -44,17 +45,15 @@ We expose our roadmap publicly on [Github](https://github.com/ovh/public-cloud-r
 
 ## Service Plans and instances
 
-### What are the major differences between Essential, Business, Production, Advanced, and Enterprise plans?
+### What are the major differences between Essential, Business/Production and Advanced/Enterprise plans?
 
 We built service plans based on business use-cases. They have major differentiators, related to each DBMS.
 
 Overall, we designed 5 services plans with these usages in mind:
 
 - Essential: perfect fit for test, proof-of-concept, development. Not for production purposes, mainly due to the lack of SLA, High Resiliency via clustering or Private Network.
-- Business: First level for development or production infrastructure. High resiliency is provided, with SLA.
-- Production: Same as Business.
-- Advanced: Highest level of services, with all the features and better SLA. For some DBMS such as MongoDB, you also benefit from the highest level of licensing.
-- Enterprise: Same as Advanced.
+- Business/Production: First level for development or production infrastructure. High resiliency is provided, with SLA.
+- Enterprise/Advanced: Highest level of services, with all the features and better SLA. For some DBMS such as MongoDB, you also benefit from the highest level of licensing.
 
 ### What is exactly managed by OVHcloud on my behalf?
 
@@ -85,10 +84,10 @@ We use official and un-modified (vanilla) versions of DBMS, allowing you to rely
 
 Please refer to the official website for each DBMS documentation:
 
-- [MongoDB](https://docs.mongodb.com/manual/){.external}
-- [MySQL](https://dev.mysql.com/doc/){.external}
-- [PostgreSQL](https://www.postgresql.org/docs/){.external}
-- [Redis® open source](https://redis.io/documentation){.external}
+- [MongoDB](https://docs.mongodb.com/manual/)
+- [MySQL](https://dev.mysql.com/doc/)
+- [PostgreSQL](https://www.postgresql.org/docs/)
+- [Valkey](https://valkey.io/docs/)
 
 ## DBMS software and versions
 
@@ -192,12 +191,8 @@ If you already have database instances, you can check what is consumed today. Fo
 
 For each DB instance, you can:
 
-- Select a higher service plan if required (Essential to Business or Enterprise, Business to Enterprise).
+- Select a higher service plan if required (Essential to Business/Production or Enterprise/Advanced, Business/Production to Enterprise/Advanced).
 - Select a higher or lower range of compute and storage, provided that the new storage is enough to contain your data.
-
-For each DB instance, you cannot:
-
-- Select a lower service plan.
 
 ### Will my DB instance remain available during scaling?
 
@@ -262,10 +257,10 @@ We use official and unmodified (vanilla) versions of DBMS, allowing you to rely 
 
 Please refer to the official website for each DBMS documentation:
 
-- [MongoDB](https://docs.mongodb.com/manual/){.external}
-- [MySQL](https://dev.mysql.com/doc/){.external}
-- [PostgreSQL](https://www.postgresql.org/docs/){.external}
-- [Redis® open source](https://redis.io/documentation){.external}
+- [MongoDB](https://docs.mongodb.com/manual/)
+- [MySQL](https://dev.mysql.com/doc/)
+- [PostgreSQL](https://www.postgresql.org/docs/)
+- [Valkey](https://valkey.io/docs/)
 
 ### Can I directly download backups made by OVHcloud?
 
@@ -429,6 +424,6 @@ If your data is corrupted, you have 2 options:
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

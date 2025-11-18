@@ -1,9 +1,8 @@
 ---
 title: How to recover server access if your user password is lost
 excerpt: Find out how to configure a new password for a user account on a GNU/Linux operating system with the OVHcloud rescue mode
-updated: 2024-02-19
+updated: 2025-10-02
 ---
-
 
 ## Objective
 
@@ -20,10 +19,11 @@ To recover access to a server that you log in to with an SSH key, refer to our g
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en-au/vps/) with a Linux-based OS in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](/links/bare-metal/vps) with a Linux-based OS in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!primary]
+>
 > This guide is not applicable for **Windows** server installations. Please refer to our guides on [How to change the admin password on a Windows dedicated server](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) and [How to change the admin password on a Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
 >
 
@@ -36,14 +36,15 @@ Be sure to consult our "Getting started" guides as well:
 - For a [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 <a name="step1"></a>
 
-### Step 1: Restart the server into rescue mode
+### Step 1 - Restart the server into rescue mode
 
 Use the corresponding rescue mode guide to connect to your server and mount your partitions:
 
@@ -64,28 +65,58 @@ The exact command depends on the mountpoint you used. For example, if you have m
 chroot /mnt/
 ```
 
-### Step 2: Reset the user password
+### Step 2 - Identify the user account(s) and reset the password
 
-Note: On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs**.
+After mounting the partition and running `chroot /mnt` (or the equivalent), you have **root** privileges on the mounted system.
 
-Change the user password with the following command (replace `username` with the actual name of the user account):
+If needed, before changing a password, **identify existing accounts** using the following command:
 
 ```bash
-passwd username
+cat /etc/passwd
 ```
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+Example output (shortened):
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
 ```
+
+Find your user name(s) in the list of accounts.  
+To change the password for a specific account (e.g. **user1**), enter this command:
+
+```bash
+passwd user1
+```
+
+Enter the new password twice and confirm:
+
+```console
+# New password:
+# Retype new password:
+# passwd: password updated successfully
+```
+
+On a GNU/Linux distribution, **a password prompt does not display your keyboard input**.
+
+> [!primary]
+>
+> Avoid running the `passwd` command without arguments: This command modifies the password of the current account (which is **root** after executing `chroot`).  
+> Always specify `passwd <user>`.
 
 Remember to use the regular boot mode of your server when restarting it in your [OVHcloud Control Panel](/links/manager).
 
 Refer to the corresponding [rescue mode guide](#step1) if necessary.
 
-You have now access to the server with your new password.
-
+The modified user account has now access to the server with the new password.
 
 ## Go further
 

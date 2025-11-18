@@ -12,7 +12,7 @@ updated: 2024-02-27
 >
 
 Dans l'[espace client OVHcloud](/links/manager), il est possible de choisir un amorçage parmi une liste prédéfinie restreinte : disque ou rescue principalement.<br>
-Via l’[API OVHcloud](https://api.ovh.com/), vous pouvez aussi définir des scripts personnalisés.
+Via l’[API OVHcloud](/links/api), vous pouvez aussi définir des scripts personnalisés.
 
 Utiliser un script personnalisé peut-être intéressant dans les cas suivants :
 
@@ -22,7 +22,7 @@ Utiliser un script personnalisé peut-être intéressant dans les cas suivants :
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) **prêt à être booté/rebooté** sur votre compte OVHcloud.
-- Avoir accès à l'[API OVHcloud](https://api.ovh.com/).
+- Avoir accès à l'[API OVHcloud](/links/api).
 
 > [!warning]
 >
@@ -82,7 +82,7 @@ Vous pouvez maintenant redémarrer votre serveur et celui-ci utilisera votre scr
 
 ### Autres modes de boot <a name="leaveIpxeScript"></a>
 
-Vous pouvez à tout moment basculer à nouveau sur le disque ou sur le mode rescue à partir de l'[espace client OVHcloud](/links/manager) (consultez notre guide « [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) »), ou via l’[API OVHcloud](https://api.ovh.com/).
+Vous pouvez à tout moment basculer à nouveau sur le disque ou sur le mode rescue à partir de l'[espace client OVHcloud](/links/manager) (consultez notre guide « [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) »), ou via l’[API OVHcloud](/links/api).
 
 #### Basculer sur disque <a name="switchToDisk"></a>
 

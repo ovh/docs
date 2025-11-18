@@ -1,7 +1,7 @@
 ---
 title: 'Optimierung der Performance Ihrer Webseite'
 excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verbessern können'
-updated: 2024-01-08
+updated: 2025-10-09
 ---
 
 ## Ziel 
@@ -20,7 +20,7 @@ Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis 
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Den Anwendungsbereich definieren
+### 1 - Den Anwendungsbereich definieren
 
 #### Fragen, die Sie sich stellen sollten:
 Wenn Ihre Webseite langsam ist, kann es hilfreich sein, sich die folgenden Fragen zu stellen um den Untersuchungsumfang einzugrenzen.
@@ -42,9 +42,9 @@ Wir geben Empfehlungen dazu, welches Webhosting-Angebot für das oben aufgeführ
 
 Weitere Informationen dazu, welches Hostingpaket sich eignet, finden Sie auf [dieser Seite](/links/web/hosting-best-web).
 
-### Schritt 2: Überprüfen der PHP-Version
+### 2 - Überprüfen der PHP-Version
 Durch die Verwendung der neuesten PHP-Version, die mit Ihrer Seite kompatibel ist, könnte die Leistung erheblich beeinflusst werden.
-Um zu überprüfen, ob Ihre Webseite mit der neuesten PHP-Version kompatibel ist, können Sie [in der offiziellen Dokumentation von PHP](https://php.net/eol.php){.external} nachlesen.
+Um zu überprüfen, ob Ihre Webseite mit der neuesten PHP-Version kompatibel ist, können Sie [in der offiziellen Dokumentation von PHP](https://php.net/eol.php) nachlesen.
 
 **PHP-FPM**
 
@@ -65,7 +65,7 @@ Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details 
 
 Die Datei _.ovhconfig_ befindet sich im Stammverzeichnis des Hosting-Pakets oder in einem Unterverzeichnis der Ebene 1 (z.B.: _/www/_), jedoch nicht in Verzeichnissen der Ebene 2 oder darunter (z.B.: _/www/test/_ , _/www/test/test2/_)
 
-### Schritt 3: Überprüfen der Medieninhalte (Bilder, Videos, ...)
+### 3 - Überprüfen der Medieninhalte (Bilder, Videos, ...)
 Beim Zugriff auf eine Webseite müssen alle Inhalte vom Browser heruntergeladen werden.
 
 Dieser Vorgang kann insbesondere dann problematisch sein, wenn Sie über ein mobiles Gerät auf eine nicht hierfür optimierte Webseite zugreifen.
@@ -76,7 +76,7 @@ Es liegt an Ihnen, diejenigen auszuwählen, die Ihren spezifischen Anforderungen
 
 Weitere Details zu diesem Thema finden Sie unten in Schritt 5.
 
-### Schritt 4: Optimieren Ihrer Skripte
+### 4 - Optimieren Ihrer Skripte
 
 Vergleichen Sie die Grafiken der Ressourcennutzung Ihres Hostings (weitere Informationen unten), um den Ursprung der Verzögerungen zu ermitteln, und entnehmen Sie die Daten dieser Spitzenwerte aus den Protokollen.
 
@@ -84,11 +84,32 @@ Sie können direkt über das [OVHcloud Kundencenter](/links/manager) auf Ihre Lo
 
 Zugriff auf Statistiken und Logs:
 
-1. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-2. Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
-3. Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die Besucherstatistiken der Website zuzugreifen, oder auf `Die Logs einsehen`{.action}, um die für Ihr Webhosting verfügbaren Logs anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
-![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die Besucherstatistiken der Website zuzugreifen, oder auf `Die Logs einsehen`{.action}, um die für Ihr Webhosting verfügbaren Logs anzuzeigen.
+>>
+>> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Zugriff auf Nutzungsgraphen:
 
@@ -119,8 +140,8 @@ Vergessen Sie nicht, den Namen Ihrer Datenbank und den gewünschten Zeitraum aus
 
 - **SQL Requests**: Zeigt die Anzahl der Anfragen an.
 
-### Schritt 5: Überprüfen von Netzwerkanfragen
-Ein nützliches Tool für die Analyse ist der [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external}, der direkt in den Mozilla Firefox-Browser integriert ist und die detaillierte Analyse der Ladezeit einer Webseite ermöglicht.
+### 5 - Überprüfen von Netzwerkanfragen
+Ein nützliches Tool für die Analyse ist der [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor), der direkt in den Mozilla Firefox-Browser integriert ist und die detaillierte Analyse der Ladezeit einer Webseite ermöglicht.
 
 So können Sie überprüfen, welche Elemente Ihrer Seite schwerfällig geladen werden.
 Es kann hilfreich sein, einzugrenzen, welche Bilder und welche Inhalte die Ladezeit der Webseite verlängern, und damit Prioritäten zu setzen, wo Optimierungen vorgenommen werden sollten.
@@ -135,9 +156,9 @@ Um den Webseitenzugriff auf Downloads zu verbessern und ein optimiertes Ranking 
 
 Infolgedessen verbessern Sie die Reaktionszeiten für Besucher auf der ganzen Welt, da die statischen Teile Ihrer Website direkt von Ihrem Besucher an der nächstgelegenen Präsenzstelle (PoP) heruntergeladen werden.
 
-Entdecken Sie hier unsere [CDN Lösung](https://www.ovh.de/cdn/).
+Entdecken Sie hier unsere [CDN Lösung](/links/web/hosting-options-cdn).
 
-### Schritt 6: Überprüfen des verwendeten Content Management Systems (CMS) und der verwendeten Plugins
+### 6 - Überprüfen des verwendeten Content Management Systems (CMS) und der verwendeten Plugins
 
 _Dieser Schritt ist optional, wenn Sie kein CMS verwenden._
 
@@ -147,7 +168,7 @@ Um sicherzustellen, dass Ihr Hosting-Angebot an die Anforderungen Ihres CMS ange
 
 - **Deaktivierung nicht verwendeter Plugins:** Es ist meist eine gute Idee, nicht verwendete Plugins zu deaktivieren oder gar zu löschen, um die Leistung der Webseite zu verbessern. Dadurch wird verhindert, dass nutzlose Elemente heruntergeladen werden.
 
-### Schritt 7: Ihre Datenbank optimieren
+### 7 - Ihre Datenbank optimieren
 
 _Dieser Schritt ist optional, wenn Sie keine Datenbank verwenden._
 Sie können mit PHPMyAdmin auf Ihre Datenbank zugreifen. Anweisungen zur Verwendung von PHPMyAdmin würden den Rahmen dieser Anleitung sprengen und werden daher nicht weiter ausgeführt.
@@ -212,14 +233,14 @@ Vermeiden Sie die Verwendung der „HAVING“ -Klausel, die Abfragen verlangsame
 
 #### Web Cloud Databases
 Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenommen haben, zu langsam läuft oder wenn eine große Anzahl von Anfragen regelmäßig an die Datenbank gestellt werden, können Sie gegebenenfalls zu unserem Web Cloud Databases-Angebot wechseln; dort stehen Ihnen dann mehr Ressourcen zur Verfügung.
-[Das Web Cloud Databases Angebot auf unserer Website](https://www.ovh.de/cloud/cloud-databases/){.external}.
+[Das Web Cloud Databases Angebot auf unserer Website](/links/web/databases).
 
 ## Weiterführende Informationen
 
 [Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
+[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 Treten Sie unserer [User Community](/links/community) bei.

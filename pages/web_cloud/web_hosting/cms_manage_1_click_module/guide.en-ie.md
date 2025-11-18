@@ -55,8 +55,8 @@ You can also search for the email received after the creation of your module fro
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal: The publisher of this software does not currently offer any documentation for changing the password for accessing the Drupal administration interface. Please contact the publisher directly on this subject. For more information, see the official page [drupal.org](https://www.drupal.org/){.external}.
-> - PrestaShop : The software publisher does not currently offer any documentation for changing the password for accessing the PrestaShop administration interface. Please contact the publisher directly on this subject. For more information, click [here](https://www.prestashop.com){.external} to go to their official page.
+> - Drupal: The publisher of this software does not currently offer any documentation for changing the password for accessing the Drupal administration interface. Please contact the publisher directly on this subject. For more information, see the official page [drupal.org](https://www.drupal.org/).
+> - PrestaShop : The software publisher does not currently offer any documentation for changing the password for accessing the PrestaShop administration interface. Please contact the publisher directly on this subject. For more information, click [here](https://www.prestashop.com) to go to their official page.
 >
 You can also change the password for accessing your CMS admin interface directly from your database.<br>
 However, we strongly recommend using the documentation provided by your CMS publisher, or contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
@@ -72,7 +72,7 @@ However, we strongly recommend using the documentation provided by your CMS publ
 
 To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](/links/manager) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
 
-If you have only one database in this part of your Control Panel and you do not have a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) offer, you can consider this to be your website's database.
+If you have only one database in this part of your Control Panel and you do not have a [Web Cloud Databases](/links/web/databases) offer, you can consider this to be your website's database.
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
@@ -128,10 +128,10 @@ Add CAPTCHA-type verification tools to the forms on your website.
 
 Do not install plugins or templates that have not been recommended by the official website or the community of your CMS:
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://community.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/community){.external}
-- [PrestaShop](https://www.prestashop.com/en){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla](https://community.joomla.org/)
+- [Drupal](https://www.drupal.org/community)
+- [PrestaShop](https://www.prestashop.com/en)
 
 ## Go further <a name="go-further"></a>
 

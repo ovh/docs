@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Capacités et Limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases
-updated: 2025-04-15
+updated: 2025-07-31
 ---
 
 ## Public Cloud Databases
@@ -30,10 +30,10 @@ See our [PostgreSQL Capabilities and limitations](/pages/public_cloud/public_clo
 MongoDB is a fully managed and scalable document-oriented database management system which does not require a predefined data schema.<br>
 See our [MongoDB Capabilities and limitations](/pages/public_cloud/public_cloud_databases/mongodb_01_concept_capabilities) guide.
 
-### Caching/Valkey
+### Valkey
 
-Caching/Valkey is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
-See our [Caching/Valkey Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
+Valkey is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
+See our [Valkey Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
 
 ### Cassandra
 
@@ -42,7 +42,7 @@ See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_clou
 
 ## Feature Availability
 
-| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Caching/Valkey | Cassandra |
+| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Valkey | Cassandra |
 |--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|-----------|
 | End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     | ✓         |
 | Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     | ✓         |
@@ -61,24 +61,24 @@ See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_clou
 The Essential plan typically offers the basic features and functionalities required for managing a database.
 It is designed for test and development environments or non-critical projects.
 
-### Business
+### Business/Production
 
-The Business plan is more comprehensive and suitable for organizations with higher database demands.
+The Business/Production plan is more comprehensive and suitable for organizations with higher database demands.
 This is the first production-ready offering.
 
-### Enterprise
+### Enterprise/Advanced
 
-The enterprise pricing plan is the most advanced and robust option available for managed databases.
+The Enterprise/Advanced pricing plan is the most advanced and robust option available for managed databases.
 It is dedicated to organizations with complex and high-performance database requirements.
 
 ### Plan capabilities overview
 
 Here is an overview of the various plans' capabilities:
 
-| Feature           | Essential | Business | Enterprise |
-|-------------------|-----------|----------|------------|
-| SLA               | None      | 99.9%    | 99.95%     |
-| High availability |           | ✓        | ✓          |
+| Feature           | Essential | Business/Production Single AZ | Enterprise/Advanced Single AZ | Production Multi AZ | Advanced Multi AZ |
+|-------------------|-----------|-------------------------------|-------------------------------|---------------------|-------------------|
+| SLA               | None      | 99.9%                         | 99.95%                        | 99.95%              | 99.99%            |
+| High availability |           | ✓                             | ✓                             | ✓                   | ✓                 |
 
 Your choice of plan affects the number of nodes your cluster can run.
 

@@ -12,7 +12,7 @@ Pour des raisons de sécurité, il est possible de configurer et d'utiliser des 
 
 ## Prérequis
 
-- Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
+- Un [projet Public Cloud](/links/public-cloud/public-cloud).
 - [Être connecté à l'interface Horizon](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 ## En pratique

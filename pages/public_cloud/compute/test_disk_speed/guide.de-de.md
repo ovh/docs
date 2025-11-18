@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 > 
 > Das Argument `--numjobs` muss abhängig von der Anzahl der CPUs angepasst werden, über die Ihre Instanz verfügt.
 >
-> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analyse der Daten
@@ -144,7 +144,7 @@ Wir können sehen, dass die Leistung der zusätzlichen Disks etwa 3052 IOPS betr
 
 Das hier verwendete Tool, um die Geschwindigkeit Ihrer Disks zu überprüfen, heißt `fio`. Es ist auf Ihrem Server nicht standardmäßig vorhanden.
 
-Um `fio` zu installieren, verbinden Sie sich mit Ihrer Instanz über RDP und laden Sie diese Binärdatei herunter: [Microsoft Windows Binaries for fio](https://bsdio.com/fio/){.external}.
+Um `fio` zu installieren, verbinden Sie sich mit Ihrer Instanz über RDP und laden Sie diese Binärdatei herunter: [Microsoft Windows Binaries for fio](https://bsdio.com/fio/).
 
 
 ### Testen Sie die Geschwindigkeit Ihrer Disks
@@ -159,7 +159,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 > 
 > Das Argument `--numjobs` muss abhängig von der Anzahl der CPUs angepasst werden, über die Ihre Instanz verfügt.
 >
-> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Daten analysieren

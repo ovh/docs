@@ -15,7 +15,7 @@ Na hostingu możesz zarządzać kopiami zapasowymi Twojej strony WWW. Nawet jeś
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS WordPress](https://wordpress.com/support/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
 **Dowiedz się, jak zapisać zawartość strony WordPress i jej bazy danych.**
@@ -68,7 +68,7 @@ Kliknij polecenie `Uruchom`{.action}, pobierz Twoją bazę danych w formacie SQL
 
 ### Metoda 2 - wykonanie kopii zapasowej z rozszerzeniem
 
-Dzięki licznym rozszerzeniom WordPress możesz zarządzać kopiami zapasowymi. Najbardziej popularną opcją jest [UdraftPlus](https://wordpress.org/plugins/updraftplus/){.external}, który zawiera kilka milionów aktywnych instalacji. Darmowa wersja wystarczy, aby zapisać Twoją stronę WWW. Wersja premium oferuje więcej opcji, takich jak przyrostowe kopie zapasowe, narzędzie do migracji, kopie zapasowe dla wielu stron, większy wybór w chmurze do przechowywania danych, etc.
+Dzięki licznym rozszerzeniom WordPress możesz zarządzać kopiami zapasowymi. Najbardziej popularną opcją jest [UdraftPlus](https://wordpress.org/plugins/updraftplus/), który zawiera kilka milionów aktywnych instalacji. Darmowa wersja wystarczy, aby zapisać Twoją stronę WWW. Wersja premium oferuje więcej opcji, takich jak przyrostowe kopie zapasowe, narzędzie do migracji, kopie zapasowe dla wielu stron, większy wybór w chmurze do przechowywania danych, etc.
 
 Pobierz rozszerzenie w formacie `.zip` na komputerze. W celu zachowania jasności plik przesłany do rozszerzenia otrzymuje nazwę **updraftplus.zip** w dalszej części tego tutoriala.
 
@@ -143,7 +143,7 @@ Stosując te dobre praktyki będziesz miał możliwość powrotu do zdrowej wers
 
 ## Sprawdź również <a name="go-further"></a>
 
-- [Oficjalna strona WordPress](https://wordpress.org){.external}
+- [Oficjalna strona WordPress](https://wordpress.org)
 - [Więcej informacji na temat kopii zapasowych Twojego hostingu](/pages/web_cloud/web_hosting/hosting_technical_specificities#informacje-o-automatycznych-kopiach-zapasowych)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).

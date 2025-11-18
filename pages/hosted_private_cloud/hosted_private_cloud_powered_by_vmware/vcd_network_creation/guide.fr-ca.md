@@ -1,7 +1,7 @@
 ---
-title: "VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud"
-excerpt: "Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud"
-updated: 2024-09-17
+title: "Public VCF as-a-Service - Création de composants réseaux via Public VCF as-a-Service"
+excerpt: "Découvrez comment créer facilement des composants réseau depuis l'interface Public VCFaaS"
+updated: 2025-07-07
 ---
 
 <style>
@@ -20,32 +20,32 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc évoluer et être mis à jour à l'avenir avec les avancées de nos équipes en charge de ce produit.
+> Ce guide est susceptible d'évoluer et d'être mis à jour à l'avenir, au rythme des avancées de nos équipes en charge de ce produit.
 >
 
 ## Objectif
 
-**Ce guide vous montre comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis l'interface VCD on OVHcloud.**
+**Ce guide vous montre comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis l'interface Public VCF as-a-Servive.**
 
 ## Prérequis
 
 >[!primary]
 > 
-> Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord le guide « [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) ».
+> Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord le guide « [Comment se connecter à Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) ».
 >
 
 - Un navigateur Web (avec de préférence avec une base chromium et la traduction activée en français).
-- Avoir un compte VMware Cloud Director on OVHcloud phase Alpha avec les droits suffisants.
+- Avoir un compte Public VCF as-a-Service phase Alpha avec les droits suffisants.
 
-Avoir lu les guides VCD : 
+Avoir lu les guides Public VCF as-a-Service : 
 
-- [VMware Cloud Director - Networking - Concepts réseau](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
-- [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
-- [VMware Cloud Director - Se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
+- [Public VCF as-a-Service - Networking - Concepts réseau](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
+- [Public VCF as-a-Service - Les concepts fondamentaux de Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
+- [Public VCF as-a-Service - Se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 ## En pratique
 
-Avant de créer un réseau, le concept principal à comprendre avec VMware Cloud Director est **l’espace IP**. Prenons en exemple celui par défaut créé avec votre organisation VCD :
+Avant de créer un réseau, le concept principal à comprendre avec Public VCF as-a-Service est **l’espace IP**. Prenons en exemple celui par défaut créé avec votre organisation Public VCF as-a-Service :
 
 **Le périmètre interne (Internal Scope)** représente l'IP entière de votre futur réseau, e.g. : `192.168.0.0/24`{.action}.
 
@@ -57,16 +57,16 @@ Avant de créer un réseau, le concept principal à comprendre avec VMware Cloud
 
 > [!primary]
 >
-> Vous pouvez utiliser une nouvelle méthode de gestion de votre espace IP dans VMware Cloud Director avec le nouveau sous-système de gestion de l'espace IP.
+> Vous pouvez utiliser une nouvelle méthode de gestion de votre espace IP dans Public VCF as-a-Service avec le nouveau sous-système de gestion de l'espace IP.
 >
 
-/// details | Comment créer un Espace IP avec VMware CLoud Director on OVHcloud ?
+/// details | Comment créer un Espace IP avec Public VCF as-a-Service ?
 
-Pour vous connecter à votre environnement VCD, suivez le guide : [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
+Pour vous connecter à votre environnement Public VCF as-a-Service, suivez le guide : [Comment se connecter à Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 1\. Cliquez sur : `Réseaux`{.action} > `Espaces IP`{.action} > `Nouveau`{.action}.
 
-![VCD Networking IP Spaces](images/ESPACE_IP.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces](images/ESPACE_IP.png){.thumbnail}
 
 Vous retrouvez la fenêtre de création **d'Espace IP** pour votre réseau. Nommez le de la manière dont vous le désirez :
 
@@ -75,11 +75,11 @@ Vous retrouvez la fenêtre de création **d'Espace IP** pour votre réseau. Nomm
 - **Nom :** `Espace IP 01`.
 - **Description :** `Espace IP Privé > Public`.
 
-![VCD Networking IP Spaces 01](images/ESPACE_IP_1_1.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 01](images/ESPACE_IP_1_1.png){.thumbnail}
 
 2\. Laissez ces options désactivées pour l'instant.
 
-![VCD Networking IP Spaces 02](images/ESPACE_IP_2.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 02](images/ESPACE_IP_2.png){.thumbnail}
 
 3\. Choisissez le périmètre (porté/étendu), (interne/externe), avec lequel vous souhaitez accéder à votre réseau :
 
@@ -88,7 +88,7 @@ Vous retrouvez la fenêtre de création **d'Espace IP** pour votre réseau. Nomm
 
 Cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking IP Spaces 03](images/ESPACE_IP_3.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 03](images/ESPACE_IP_3.png){.thumbnail}
 
 Les plages IP doivent correspondre à la portée interne de cet espace IP (le range d'IP que vous souhaitez rendre disponible pour vos machines) :
 
@@ -98,7 +98,7 @@ Exemple : `172.19.0.2-172.19.0.100`.
 
 Cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking IP Spaces 04](images/ESPACE_IP_4.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 04](images/ESPACE_IP_4.png){.thumbnail}
 
 Les préfixes IP doivent correspondre à la portée interne de cet espace IP.
 
@@ -112,15 +112,15 @@ Vous pouvez augmenter ou diminuer vos nombres de préfixes avec la flèche (haut
 
 L'ajout de la séquence passe automatiquement en preview s'il est concluant.
 
-![VCD Networking IP Spaces 05](images/ESPACE_IP_5.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 05](images/ESPACE_IP_5.png){.thumbnail}
 
 Cliquez sur `SUIVANT`{.action} pour terminer l'étape n°5.
 
 6\. La dernière section consiste en un examen approfondi de tous les réglages que vous avez établis. Vous pouvez ainsi procéder à vos vérifications et confirmer votre choix en cliquant sur le bouton `FINISH`{.action}.
 
-![VCD Networking IP Spaces 06](images/ESPACE_IP_6.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 06](images/ESPACE_IP_6.png){.thumbnail}
 
-Nous allons ensuite passer de la section de VCD `Mise en Réseau | Espace IP`{.action} à `Mise en Réseau | Réseaux`{.action}.
+Nous allons ensuite passer de la section de Public VCF as-a-Service `Mise en Réseau | Espace IP`{.action} à `Mise en Réseau | Réseaux`{.action}.
 
 ///
 
@@ -128,7 +128,7 @@ Nous allons ensuite passer de la section de VCD `Mise en Réseau | Espace IP`{.a
 
 > [!primary]
 >
-> Vous pouvez utiliser une nouvelle méthode de gestion de votre espace IP dans VMware Cloud Director avec le nouveau sous-système de gestion de l'espace IP.
+> Vous pouvez utiliser une nouvelle méthode de gestion de votre espace IP dans Public VCF as-a-Service avec le nouveau sous-système de gestion de l'espace IP.
 >
 
 /// details | Comment créer un groupe de centre de données ?
@@ -137,37 +137,37 @@ Nous allons ensuite passer de la section de VCD `Mise en Réseau | Espace IP`{.a
 
 Cette étape est optionnelle, mais recommandée pour la grande majorité des cas d'usages (exemple : quand deux réseaux VDC ont besoin de s'additionner).
 
-Nous allons à présent créer un groupe de centre de donnée pour optimiser la gestion de notre réseau grâce à cette nouvelle fonctionnalité VCD.
+Nous allons à présent créer un groupe de centre de donnée pour optimiser la gestion de notre réseau grâce à cette nouvelle fonctionnalité Public VCF as-a-Service.
 
 Allez donc dans la section Mise en réseau en cliquant sur : `Mise en réseaux`{.action} > `Groupe de centre de données`{.action}.
 
 Puis, cliquez sur `NOUVEAU`{.action}.
 
-![VCD Networking Data Center Groups 00](images/DATA_CENTER_GROUPS_00.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 00](images/DATA_CENTER_GROUPS_00.png){.thumbnail}
 
 Sélectionnez un vDC qui fera partie du groupe. Lorsque vous sélectionnez un vDC de démarrage, vous pourrez créer un groupe dans lequel ce vDC peut participer.
 
 1\. Choisissez le vDC que vous désirez, puis cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Data Center Groups 01](images/DATA_CENTER_GROUPS_01.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 01](images/DATA_CENTER_GROUPS_01.png){.thumbnail}
 
 2\. Dans la section 2, choisissez le nom de votre groupe de centre de donnée ainsi qu'une courte description, puis cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Data Center Groups 02](images/DATA_CENTER_GROUPS_02.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 02](images/DATA_CENTER_GROUPS_02.png){.thumbnail}
 
 3\. Sélectionnez ensuite les vDC supplémentaires devant faire partie du groupe, puis cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Data Center Groups 03](images/DATA_CENTER_GROUPS_03.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 03](images/DATA_CENTER_GROUPS_03.png){.thumbnail}
 
 Pour finir, cliquez sur `TERMINER`{.action}.
 
-![VCD Networking Data Center Groups 04](images/DATA_CENTER_GROUPS_04.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 04](images/DATA_CENTER_GROUPS_04.png){.thumbnail}
 
 ///
 
 ### Étape 3 - Création d'une Passerelle Edge (optionnel)
 
-/// details | Comment créer une Passerelle Edge avec VMware Cloud Director on OVHcloud ?
+/// details | Comment créer une Passerelle Edge avec Public VCF as-a-Service ?
 
 Cette étape est nécessaire sinon vous ne pourrez pas finir de créer votre réseau à l'étape 3.
 
@@ -177,9 +177,9 @@ Pour accéder à la section Passerelles Edge (Edge Gateway), cliquez sur : `Mise
 
 Pour créer une nouvelle Passerelle Edge, cliquez sur `NOUVEAU`{.action}.
 
-![VCD Networking Edge Gateway 00](images/EDGE_GATEWAY.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 00](images/EDGE_GATEWAY.png){.thumbnail}
 
-Vous retrouvez la fenêtre de création de **Passerelle Edge** pour votre environnement VCD :
+Vous retrouvez la fenêtre de création de **Passerelle Edge** pour votre environnement Public VCF as-a-Service :
 
 Vous avez ensuite le choix entre `Centre de données virtuel d'organisation`{.action} et/ou `Groupe de centres de données`{.action}.
 
@@ -188,9 +188,9 @@ Vous avez ensuite le choix entre `Centre de données virtuel d'organisation`{.ac
 
 1\. Choisissez `Centre de données virtuel d'organisation`{.action} ou `Groupe de centres de données`{.action} pour sélectionner le centre de données virtuel avec lequel vous souhaitez installer votre nouvelle **Edge Gateway**.
 
-![VCD Networking Edge Gateway 01](images/EDGE_GATEWAY_1-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 01](images/EDGE_GATEWAY_1-optimized.png){.thumbnail}
 
-![VCD Networking Edge Gateway 01_1](images/EDGE_GATEWAY_1_1-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 01_1](images/EDGE_GATEWAY_1_1-optimized.png){.thumbnail}
 
 2\. Vous pouvez, après la section générale, nommer votre **passerelle edge** de la manière dont vous le souhaitez :
 
@@ -203,7 +203,7 @@ Cliquez ensuite sur `Utiliser les espaces IP`{.action}.
 
 **Pourquoi ?** 
 
-Cela force l'utilisation des espaces IP aux passerelles Provider, et permet ainsi d'optimiser l'application des nouvelles techniques intelligentes de gestion de l'espace réseau VCD.
+Cela force l'utilisation des espaces IP aux passerelles Provider, et permet ainsi d'optimiser l'application des nouvelles techniques intelligentes de gestion de l'espace réseau Public VCF as-a-Service.
 
 Quand vous avez fini, cliquez sur `SUIVANT`{.action}.
 
@@ -215,9 +215,9 @@ Choisissez la passerelle par défaut de votre fournisseur vDC : `graveline-gatew
 
 Une fois votre choix effectué (étape 3 : Création d'une Passerelle Edge), cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Edge Gateway 02](images/EDGE_GATEWAY_2-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 02](images/EDGE_GATEWAY_2-optimized.png){.thumbnail}
 
-![VCD Networking Edge Gateway 03](images/EDGE_GATEWAY_3-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 03](images/EDGE_GATEWAY_3-optimized.png){.thumbnail}
 
 4\. Choisissez l'option Edge Cluster pour créer cette passerelle edge fournisseur :
 
@@ -225,19 +225,19 @@ Le paramètre `Utiliser le cluster edge du fournisseur Tier-0 Gateway` permet de
 
 Quand vous avez défini vos réglages, cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Edge Gateway 04](images/EDGE_GATEWAY_4-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 04](images/EDGE_GATEWAY_4-optimized.png){.thumbnail}
 
 Une fois les réglages ajoutés, vous pouvez contrôler que tout est correct depuis la section 5 `Prêt à Completer`{.action}.
 
 Cliquez enfin sur `TERMINER`{.action}.
 
-![VCD Networking Edge Gateway 05](images/EDGE_GATEWAY_5-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 05](images/EDGE_GATEWAY_5-optimized.png){.thumbnail}
 
 ///
 
 ### Étape 4 - Création d'un réseau privé
 
-/// details | Comment créer un réseau avec VMware Cloud Director on OVHcloud ?
+/// details | Comment créer un réseau avec Public VCF as-a-Service ?
 
 Nous allons à présent créer un nouveau réseau et joindre nos réglages préconfigurés.
 
@@ -245,7 +245,7 @@ Rendez-vous dans la section Mise en réseau, en cliquant sur `Mise en réseaux`{
 
 Puis, cliquez sur `NOUVEAU`{.action}.
 
-![VCD Networking Network 00](images/NETWORK_0.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 00](images/NETWORK_0.png){.thumbnail}
 
 1\. Vous retrouvez la section Scope 1.
 
@@ -256,9 +256,9 @@ Vous avez le choix entre :
 
 Sélectionnez **l'Organisation du Centre de Données Virtuel vDC** ou le **Groupe de Centre de données** dans le scope avec lequel vous souhaitez créer votre réseau.
 
-![VCD Networking Network 01](images/NETWORK_1.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 01](images/NETWORK_1.png){.thumbnail}
 
-![VCD Networking Network 01_1](images/NETWORK_1_1.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 01_1](images/NETWORK_1_1.png){.thumbnail}
 
 Sélectionnez ensuite le type de réseau que vous voulez créer.
 
@@ -268,7 +268,7 @@ Vous avez la possibilité de créer un type de **Réseau routé** ou **isolé** 
 
 Le réseau **"routé"** autorise le trafic entrant, tandis que le réseau **"isolé"** l'interdit.
 
-Définition VCD :
+Définition Public VCF as-a-Service :
 
 - **Routé** : ce type de réseau fournit un accès contrôlé aux machines et aux réseaux en dehors du vDC ou du groupe de vDC par le biais d'une passerelle périphérique.
 - **Isolé** : ce type de réseau fournit un environnement entièrement isolé, accessible uniquement par ce vDC ou ce groupe de vDC de l'organisation.
@@ -284,7 +284,7 @@ Vous pouvez soit créer une autre **Passerelle Edge**, soit utiliser les **Group
 
 Le type de réseau **routé** (à travers une Edge Gateway "ovh-Edge-GW-GRA") fournit un accès contrôlé aux machines et aux réseaux en dehors du vDC ou du groupe de vDC par le biais d'une passerelle edge.
 
-![VCD Networking Network 02](images/NETWORK_2.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 02](images/NETWORK_2.png){.thumbnail}
 
 2\. Dans la section `Passerelle Edge`{.action}, vous retrouvez votre passerelle précédemment créée : `ovh-Edge-gra-demo`.
 
@@ -296,7 +296,7 @@ Choisissez donc votre **Passerelle Edge**, en cliquant sur le bouton rond de gau
 
 Pour conclure, cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Network 03](images/NETWORK_3.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 03](images/NETWORK_3.png){.thumbnail}
 
 3\. Dans la section générale, vous pouvez ajouter le nom de votre réseau, une description, ainsi que l'espace IP créé auparavant.
 
@@ -315,7 +315,7 @@ Nous n'avons nullement besoin d'IPv6, c'est pourquoi nous choisissons de laisser
 
 Pour continuer (étape 3 : Création d'un réseau privé), cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Network 04](images/NETWORK_4.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 04](images/NETWORK_4.png){.thumbnail}
 
 4\. Vous allez ici allouer la plage IP de votre réseau, nous choisissons d'allouer 98 IP : 
 
@@ -331,7 +331,7 @@ Ainsi qu'au début et à la fin de vos 2 IP, ->**172.16.1.2**<- et ->**172.16.1.
 
 Pour continuer, cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Network 05](images/NETWORK_5.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 05](images/NETWORK_5.png){.thumbnail}
 
 5\. Dans la cinquième section, ajoutez les serveurs DNS de votre réseau.
 
@@ -347,56 +347,49 @@ Mais vous pouvez laisser ceux utilisés par défaut dans l'univers Hosted Privat
 
 Pour continuer l'étape 5 (de création d'un réseau privé), cliquez sur `SUIVANT`{.action}.
 
-![VCD Networking Network 06](images/NETWORK_6.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 06](images/NETWORK_6.png){.thumbnail}
 
-6\. Il est possible ici de définir des modèles de profil de segments (optionnel).
+6\. (Facultatif) Des modèles de profil de segment peuvent être définis ici.
 
-Ces modèles peuvent être utilisés pour des besoins avancés en matière de réseaux (par exemple avec pfSense : Promiscuous mode).
+Les profils de segment peuvent être utilisés pour des cas d’usage réseau avancés, comme l’activation du protocole CARP ou le mode Promiscuous dans des environnements imbriqués.
 
-Il existe **3 modes** :
+**Trois modes sont disponibles** :
 
-- **Non défini (le mode de ce guide).**
-- **Allow-DHCP.**
-- **Promiscuous mode.**
+- **Par défaut** (appliqué automatiquement)
+- **Allow-DHCP**
+- **Promiscuous**
 
-| Détails du modèle        | Promiscuous mode                   |
-|--------------------------|------------------------------------|
-| Découverte d'adresses IP | Profil de segment par défaut NSX-T |
-| Découverte MAC           | Promiscuous mode                   |
-| SpoofGuard               | Profil de segment par défaut NSX-T |
-| Qualité de service       | Profil de segment par défaut NSX-T |
-| Sécurité des segments    | Profil de segment par défaut NSX-T |
+> Ces profils sont nécessaires dans certaines situations spécifiques :
+>
+> - Apprentissage MAC ou IP dans des environnements imbriqués
+> - Profils de sécurité personnalisés pour autoriser le trafic DHCP
+> - Besoins en protection contre l'usurpation
 
-| Détails du modèle        | Allow-DHCP                         |
-|--------------------------|------------------------------------|
-| Découverte d'adresses IP | Profil de segment par défaut NSX-T |
-| Découverte MAC           | Promiscuous mode                   |
-| SpoofGuard               | Profil de segment par défaut NSX-T |
-| Qualité de service       | Profil de segment par défaut NSX-T |
-| Sécurité des segments    | Allow-DHCP                         |
+Pour configurer le mode Promiscuous ou Allow-DHCP :
 
-Des profils de segments personnalisés sont nécessaires dans un certain nombre de situations spécifiques.
+1. Rendez-vous dans `Mise en réseau`{.action} > `Tous les réseaux`{.action}.
+2. Sélectionnez le réseau cible.
+3. Dans la section `Profils de segment`{.action}, cliquez sur `Modifier`{.action}.
+4. Choisissez le profil approprié.
 
-**Celles-ci incluent notamment :**
+![Public VCF as-a-Service Networking Network 06](images/NETWORK_6_1.png){.thumbnail}
 
-- L'apprentissage MAC ou IP doit être activé pour les environnements imbriqués.
-- Profils de sécurité personnalisés pour autoriser le trafic DHCP provenant d'un réseau.
-- Activation des protections contre l'usurpation.
+| Paramètre               | Mode Promiscuous                          | Mode Allow-DHCP                          |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| Découverte d'adresses IP | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| MAC Discovery        | `ovh-default-promiscuous-mac-discovery-profile` | `ovh-default-promiscuous-mac-discovery-profile` |
+| SpoofGuard           | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| Qualité de service   | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| Sécurité des segments     | Profil de segment par défaut NSX-T             | `ovh-default-dhcp-security-segment-profile` |
 
-![VCD Networking Network 06_2](images/NETWORK_6_2.png){.thumbnail}
+> [!warning]
+> Les profils Promiscuous et Allow-DHCP doivent être configurés manuellement après la création du réseau si nécessaire.
 
-7\. Suivant le choix de votre configuration, vous pouvez arriver à l'étape 7 ou 8.
+Vérifiez une dernière fois les paramètres, puis cliquez sur `TERMINER`{.action}.
 
-**Exemple :**
+![Finaliser la création du réseau](images/NETWORK_7.png)
 
-- **Étape 7** : Avec "Modèle de profil de segment".
-- **Étape 8** : Sans "Modèle de profil de segment".
-
-Vérifiez les réglages définis puis lancee la création du réseau en cliquant sur `TERMINER`{.action}.
-
-![VCD Networking Network 07](images/NETWORK_7.png){.thumbnail}
-
-Votre réseau est maintenant entièrement créé et prêt à l'emploi.
+Votre réseau est maintenant entièrement créé et prêt à être utilisé.
 
 **Glossaire :**
 
@@ -408,9 +401,9 @@ Votre réseau est maintenant entièrement créé et prêt à l'emploi.
 
 Vous pouvez maintenant suivre les étapes du prochain guide :
 
-- **Bientôt disponible** : Guide 3 : « VMware Cloud Director on OVHcloud - Network - Comment créer un tunnel IPsec avec VCD on OVHcloud ?».
+- **Bientôt disponible** : Guide 3 : « Public VCF as-a-Service - Network - Comment créer un tunnel IPsec avec Public VCF as-a-Service ? ».
 
-Si vous rencontrez des difficultés avec le réseau au sein de VCD on OVHcloud, consultez le guide « [VMware Cloud Director on OVHcloud - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) ».
+Si vous rencontrez des difficultés avec le réseau au sein de Public VCF as-a-Service, consultez le guide « [Public VCF as-a-Service - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) ».
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou [cliquez ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

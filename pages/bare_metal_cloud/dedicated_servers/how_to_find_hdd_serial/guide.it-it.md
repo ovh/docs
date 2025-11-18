@@ -12,15 +12,15 @@ Per ridurre al minimo il rischio di errore durante la sostituzione di un hard di
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato OVHcloud](https://www.ovh.it/server_dedicati/){.external}
+- Disporre di un [server dedicato OVHcloud](https://www.ovh.it/server_dedicati/)
 - Avere accesso al server via SSH con l’utente root
-- Su server Windows, aver installato l’utility **sas2ircu** (distribuita da [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external})
+- Su server Windows, aver installato l’utility **sas2ircu** (distribuita da [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu))
 
 ## Procedura
 
 > [!primary]
 >
-> Per i dischi NVMe è necessario attivare sul server la modalità [Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} e utilizzare il tool preinstallato **nvme-cli**.
+> Per i dischi NVMe è necessario attivare sul server la modalità [Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) e utilizzare il tool preinstallato **nvme-cli**.
 > 
 
 ### Recupera il numero di serie di un disco con RAID software
@@ -68,7 +68,7 @@ La periferica viene rilevata dal sistema operativo e mostrata in questo modo: `/
 
 ### Recupera il numero di serie di un disco con RAID hardware
 
-Per maggiori informazioni relativamente ai comandi da utilizzare e a come eseguire test sugli hard disk, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} (in inglese).
+Per maggiori informazioni relativamente ai comandi da utilizzare e a come eseguire test sugli hard disk, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (in inglese).
 
 #### Controller MegaRaid
 
@@ -155,7 +155,7 @@ L’ID della periferica RAID verrà mostrato in questo modo: `/dev/sda` = 1° RA
 
 Il controller RAID LSI utilizza un modulo chiamato `sg-map`, che associa le periferiche in `/dev/sgX` (dove "X" corrisponde al numero della periferica).
 
-Per identificare quale hard disk corrisponde alle diverse periferiche _sg_, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} (in inglese).
+Per identificare quale hard disk corrisponde alle diverse periferiche _sg_, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (in inglese).
 
 Una volta individuato quale dispositivo _sg_ è associato all’hard disk che intendi analizzare, utilizza il comando:
 
@@ -167,10 +167,10 @@ Il numero del dispositivo _sg_ verrà mostrato in questo modo: `/dev/sg0`, `/dev
 
 ## Per saperne di più
 
-[Sostituire un disco difettoso](/pages/bare_metal_cloud/dedicated_servers/disk_replacement){.external}
+[Sostituire un disco difettoso](/pages/bare_metal_cloud/dedicated_servers/disk_replacement)
 
-[Configurare un RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+[Configurare un RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[Configurare un RAID hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} (in inglese)
+[Configurare un RAID hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

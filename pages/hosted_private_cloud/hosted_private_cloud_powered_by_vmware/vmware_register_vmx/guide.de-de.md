@@ -17,7 +17,7 @@ Nach einem Dienstausfall erscheinen virtuelle Maschinen nicht mehr in Ihrem vSph
 ## Voraussetzungen
 
 - Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um die Login-Daten zu erhalten.
-- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](/links/manager))
 
 ## In der praktischen Anwendung
 
@@ -55,9 +55,9 @@ Wenn Sie mehrere VMs und/oder Datastores verwalten, kann der Prozess automatisie
 
 #### Mit PowerCLI
 
-VMware bietet VMware Administratoren [PowerCLI für PowerShell](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
+VMware bietet VMware Administratoren [PowerCLI für PowerShell](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
 
-Nach der Installation können Sie das folgende PS-Skript verwenden (Quelle: [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}):
+Nach der Installation können Sie das folgende PS-Skript verwenden (Quelle: [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/)):
 
 ```powershell
 function register-vmxX {

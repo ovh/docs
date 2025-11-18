@@ -1,38 +1,60 @@
 ---
 title: "Configuration des sondes sur un service OVHcloud Load Balancer"
 excerpt: "Découvrez les principes généraux et des cas d'usage pour les sondes"
-updated: 2022-03-25
+updated: 2025-11-12
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
+</style>
 
 ## Objectif
 
 L'OVHcloud Load Balancer permet de répartir le trafic entrant sur un frontend vers un ensemble de serveurs d'une ferme de destination.
 
-Il peut arriver que l'un des serveurs de votre ferme ne soit plus disponible pour différentes raisons, comme une surcharge, un incident ou une maintenance planifiée. Lorsqu'il rencontre une erreur de connexion, votre OVHcloud Load Balancer va tenter de basculer le trafic sur un autre serveur. La connexion sera ralentie, mais continuera de fonctionner.
+Il peut arriver que l'un des serveurs de votre ferme ne soit plus disponible pour diverses raisons, telles qu'une surcharge, un incident ou une maintenance planifiée. Lorsqu'il rencontre une erreur de connexion, votre OVHcloud Load Balancer tente de basculer le trafic sur un autre serveur. La connexion sera ralentie, mais continuera de fonctionner.
 
-Cependant, les causes de certaines indisponibilités sont plus subtiles. Par exemple, si une nouvelle version du code est en cours de déploiement, l'application peut se trouver momentanément dans un état transitoire et retourner des erreurs 500. Dans ce cas précis, une solution serait de marquer les serveurs concernés comme indisponibles dans l'API avant le début de la maintenance, appliquer la configuration et la mise à jour, puis marquer à nouveau le serveur comme disponible. Cette méthode n'est pas idéale mais fonctionne.<br> 
+Cependant, les causes de certaines indisponibilités sont plus subtiles. Par exemple, si une nouvelle version du code est en cours de déploiement, l'application peut se trouver momentanément dans un état transitoire et retourner des erreurs 500. Dans ce cas précis, une solution consisterait à marquer les serveurs concernés comme indisponibles dans l'API avant le début de la maintenance, appliquer la configuration et la mise à jour, puis marquer à nouveau le serveur comme disponible. Cette méthode n'est pas idéale, mais elle fonctionne.<br> 
 Pour plus de détails sur le déploiement d'une architecture Blue-Green avec votre OVHcloud Load Balancer, référez-vous à [ce guide](/pages/network/load_balancer/case_blue_green).
 
 Les sondes (*probes* en anglais) sont des tests de santé. Elles interrogent périodiquement chacun de vos serveurs pour s'assurer qu'ils sont opérationnels. Si une erreur est détectée, le serveur est automatiquement désactivé jusqu'à ce que la situation soit rétablie.
 
-Ce service étant encore jeune, l'essentiel de ses fonctionnalités est uniquement disponible dans l'API.
-
-**Ce guide vous présentera les principes généraux, ainsi que des scénarios d'utilisation des sondes, tirés de cas d'usages réels.**
+**Ce guide vous présente les principes généraux des sondes, ainsi que des scénarios d'utilisation inspirés de cas d'usage réels.**
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud. Le service doit être correctement configuré, avec un paramétrage des fermes et des serveurs.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud. Le service doit être correctement configuré, avec un paramétrage des fermes et des serveurs.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-### Présentation de l'API des sondes
+## Sommaire
 
-L'API des sondes de votre OVHcloud Load Balancer a été pensée pour être souple et évolutive.
+- [Présentation de l'API des sondes](#probe-api)
+- [Exemples](#examples)
+- [Référence](#reference)
+- [Depuis l'espace client OVHcloud](#manager)
+
+### Présentation de l'API des sondes <a name="probe-api"></a>
+
+L'API des sondes de votre service OVHcloud Load Balancer a été conçue pour être souple et évolutive.
 
 Les sondes se configurent directement sur les fermes. Tous les serveurs d'une même ferme appliquent ainsi exactement la même sonde. Cependant, l'activation ou la désactivation d'une sonde est spécifique à chaque serveur. Il est donc possible de ne « surveiller » que certains serveurs d'une même ferme.
 
-La liste des sondes disponibles et de leurs paramètres peut être consultée avec l'appel d'API :
+La liste des sondes disponibles et de leurs paramètres peut être consultée avec l'appel API suivant :
 
 > [!api]
 >
@@ -65,7 +87,7 @@ Les sondes retournées par cette liste peuvent être configurées sur les fermes
 
 Pour plus d'informations sur ces appels, vous pouvez consulter la section [Manipulation des sondes](#handling-probes) de ce guide.
 
-### Exemples
+### Exemples <a name="examples"></a>
 
 #### Vérifier si le serveur accepte des connexions TCP
 
@@ -79,14 +101,14 @@ Dans la pratique, cela donne une sonde :
 |farmId|Identifiant de votre ferme TCP ou HTTP|
 |probe.type|"tcp"|
 
-Tous les autres champs probe peuvent rester à leur valeur par défaut. Il ne reste ensuite qu'à appliquer la configuration dans la zone concernée.
+Tous les autres champs `probe` peuvent rester à leur valeur par défaut. Il ne reste ensuite qu'à appliquer la configuration dans la zone concernée.
 
 #### Tester une page HTTP spécifique
 
 Par défaut, la sonde HTTP envoie une requête `OPTIONS` sur `/` en HTTP/1.0, sans nom de domaine. Cela suffit dans beaucoup de cas, mais certains serveurs ne gèrent pas cette méthode.<br>
-Il est possible de faire des tests beaucoup plus puissants avec la sonde HTTP. Par exemple, une bonne pratique lors de l'exposition d'un service HTTP consiste à ajouter une route dédiée aux sondes. Il est courant de retrouver des `/status`, `/health`, `/check` qui renvoient une synthèse de l'état du service.
+Il est possible de réaliser des tests beaucoup plus puissants avec la sonde HTTP. Par exemple, une bonne pratique lors de l'exposition d'un service HTTP consiste à ajouter une route dédiée aux sondes. Il est courant de retrouver des `/status`, `/health`, `/check` qui renvoient une synthèse de l'état du service.
 
-Dans la pratique, si vous voulez configurer la sonde pour envoyer une requête `GET` sur [http://api.example.com/status](http://api.example.com/status){.external}, cela donne :
+Dans la pratique, si vous voulez configurer la sonde pour envoyer une requête `GET` sur [http://api.example.com/status](http://api.example.com/status), cela donne :
 
 |Champ|Valeur et description|
 |---|---|
@@ -94,16 +116,16 @@ Dans la pratique, si vous voulez configurer la sonde pour envoyer une requête `
 |farmId|Identifiant de votre ferme TCP ou HTTP|
 |probe.type|http|
 |probe.method|GET|
-|probe.url|[http://api.example.com/status](http://api.example.com/status){.external}|
+|probe.url|[http://api.example.com/status](http://api.example.com/status)|
 |probe.match|status|
 |probe.pattern|200 (plusieurs codes d'état peuvent être ajoutés, en les séparant par des virgules)|
 
-Tous les autres champs probe peuvent rester à leur valeur par défaut. Il suffit ensuite d'appliquer la configuration dans la zone concernée.
+Tous les autres champs `probe` peuvent rester à leur valeur par défaut. Il suffit ensuite d'appliquer la configuration dans la zone concernée.
 
 #### Utiliser un test HTTP externe
 
 Que se passe-t-il si votre service est, par exemple, un serveur IMAP qui repose sur un serveur LDAP pour l'authentification ?<br>
-Il est possible que le serveur accepte des connexions mais qu'il ait un souci temporaire de connexion avec le serveur LDAP. Si cela arrive, les clients qui seraient dirigés vers ce serveur pourraient se connecter mais pas s'authentifier. Le serveur devrait donc être retiré de la ferme.
+Il est possible que le serveur accepte des connexions, mais qu'il ait un souci temporaire de connexion avec le serveur LDAP. Si cela arrive, les clients qui seraient dirigés vers ce serveur pourraient se connecter mais pas s'authentifier. Le serveur devrait donc être retiré de la ferme.
 
 Si une sonde de type `tcp` est utilisée, elle arrivera à se connecter et considérera que le service est disponible bien que ce ne soit pas le cas.
 
@@ -129,7 +151,7 @@ Il ne reste ensuite qu'à appliquer la configuration dans la zone concernée.
 > Si le service HTTP dédié à la surveillance de votre service IMAP tombe lui-même en panne, le service IMAP sera considéré comme en panne lui aussi, même s'il est en parfait état de fonctionnement.
 > 
 
-### Référence
+### Référence <a name="reference"></a>
 
 #### Manipulation des sondes <a name="handling-probes"></a>
 
@@ -207,8 +229,8 @@ Les sondes peuvent être configurées sur une nouvelle ferme (`POST`) ou une fer
 >> >
 >> >> **forceSsl**
 >> >>
->> >> > Cela définit si la sonde doit fonctionner en SSL/TLS même si la ferme est configurée pour se connecter en TCP classique.
->> >> > Cela peut servir par exemple lorsque votre OVHcloud Load Balancer est configuré pour faire suivre le trafic HTTPS en TCP sans le déchiffrer.
+>> >> > Définit si la sonde doit fonctionner en SSL/TLS même si la ferme est configurée pour se connecter en TCP classique.
+>> >> > Ceci peut être utile, par exemple, lorsque votre OVHcloud Load Balancer est configuré pour faire suivre le trafic HTTPS en TCP sans le déchiffrer.
 >
 
 D'autres paramètres peuvent être édités via cet appel. Dans la mesure où ce guide se concentre sur les sondes, ils ne sont pas documentés ici.
@@ -217,7 +239,7 @@ Si un port autre que le port de base de la ferme est configuré sur la sonde, le
 
 > [!warning]
 >
-> Lorsqu'une sonde est configurée sur une ferme, elle doit être activée sur les serveurs.
+> Lorsqu'une sonde est configurée sur une ferme, elle doit également être activée sur les serveurs.
 > 
 
 ##### **Activer les sondes sur un serveur**
@@ -250,7 +272,7 @@ Pour qu'une sonde soit active, il faut qu'elle ait été configurée sur la ferm
 >> >
 >> > **probe**
 >> >
->> >> Si les `probe` doivent être prises en compte ou non.
+>> >> Indique si les `probe` doivent être prises en compte ou non.
 >
 
 D'autres paramètres peuvent être édités via cet appel. Dans la mesure où ce guide se concentre sur les sondes, ils ne sont pas documentés ici.
@@ -262,9 +284,9 @@ Quatre comparateurs sont disponibles pour valider le résultat d'une sonde :
 |Comparateur|Description|
 |---|---|
 |default|Lance un test de base, sans paramètre.|
-|status|Liste séparée par des virgules de code de retour HTTP valides.|
+|status|Liste de codes de retour HTTP valides, séparés par des virgules.|
 |contains|Vérifie que le pattern se trouve dans la réponse.|
-|matches|Vérifie que la réponse correspond à l'expression régulière pattern.|
+|matches|Vérifie que la réponse correspond à l'expression régulière du pattern.|
 
 Les comparateurs `contains` et `matches` cherchent une correspondance dans les 16 premiers ko de la réponse. Si celle-ci est plus longue, la partie au-delà sera ignorée lors de la recherche. Notez que pour de meilleures performances, nous vous recommandons de retourner le moins d'informations possible dans vos sondes.
 
@@ -304,15 +326,15 @@ La liste des sondes disponibles peut être obtenue avec l'appel API :
 >> >
 >> > **port**
 >> >
->> >> Cela définit si le port peut être configuré pour cette sonde.
+>> >> Indique si le port peut être configuré pour cette sonde.
 >> >
 >> > **method**
 >> >
->> >> La liste de méthodes HTTP gérées ou `null` s'il n'en existe aucune.
+>> >> La liste des méthodes HTTP gérées ou `null` s'il n'en existe aucune.
 >> >
 >> > **url**
 >> >
->> >> Cela définit si l'URL de la sonde peut être configurée.
+>> >> Indique si l'URL de la sonde peut être configurée.
 >> >
 >> > **matches**
 >> >
@@ -353,7 +375,7 @@ Cette sonde tente d'établir une connexion HTTP avec le serveur. Si ce dernier r
 |URL|URL de la forme [[https?://]www.example.com]/path/to/check|
 |matches|`default`, `contains` ou `matches`|
 
-Si une URL est spécifiée, le nom de domaine et le protocole sont opérationels. Si un nom de domaine est spécifié, le champ "Host" de la requête sera renseigné et la requête sera envoyée en HTTP/1.1. Si le protocole est spécifié, il doit être cohérent avec la configuration SSL de la ferme.
+Si une URL est spécifiée, le nom de domaine et le protocole sont opérationnels. Si un nom de domaine est spécifié, le champ "Host" de la requête sera renseigné et la requête sera envoyée en HTTP/1.1. Si le protocole est spécifié, il doit être cohérent avec la configuration SSL de la ferme.
 
 > [!primary]
 >
@@ -409,9 +431,9 @@ Cette sonde tente d'établir une connexion TCP sur le port 79 de votre serveur e
 |URL|Non supporté|
 |matches|`default`|
 
-### Depuis l'espace client OVHcloud
+### Depuis l'espace client OVHcloud <a name="manager"></a>
 
-La configuration des sondes se fait lors de l'ajout (ou modification) d'une ferme de serveurs, dans les paramètres avancés.
+La configuration des sondes se fait lors de l'ajout ou de la modification d'une ferme de serveurs, dans les paramètres avancés.
 
 ![Paramètres avancés d'une ferme](images/farm_advanced_settings.png){.thumbnail}
 

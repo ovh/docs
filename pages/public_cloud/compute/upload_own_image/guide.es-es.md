@@ -25,10 +25,10 @@ Es recomendable utilizar imágenes cloud compatibles proporcionadas por el distr
 
 Las imágenes cloud compatibles están disponibles aquí:
 
-- <https://cloud.centos.org/centos/>{.external}
-- <https://cloud.debian.org/images/cloud/>{.external}
-- <https://cloud-images.ubuntu.com/releases/>{.external}
-- <https://alt.fedoraproject.org/cloud/>{.external}
+- <https://cloud.centos.org/centos/>
+- <https://cloud.debian.org/images/cloud/>
+- <https://cloud-images.ubuntu.com/releases/>
+- <https://alt.fedoraproject.org/cloud/>
 
 Otros sistemas operativos también ofrecen imágenes ISO, que también se aplican al [crear imágenes con Packer](https://www.packer.io/docs/builders), como QEMU y VirtualBox.
 

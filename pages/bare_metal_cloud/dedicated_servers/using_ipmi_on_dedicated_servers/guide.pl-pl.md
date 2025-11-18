@@ -38,14 +38,14 @@ Logowanie do IPMI można wykonać kilkoma dostępnymi metodami. Klucze SSH przec
 ² Funkcja pozwalająca na zamontowanie obrazu ISO przechowywanego lokalnie na Twojej maszynie na zdalnym serwerze dedykowanym i tym samym na zainstalowanie systemu operacyjnego za pośrednictwem IPMI.<br />
 ³ KVM = Keyboard Video and Mouse<br />
 ⁴ w zależności od kompatybilności sprzętowej Twojego serwera dedykowanego: użyj KVM Java zamiast niego, jeśli jest on niekompatybilny.<br />
-⁵ Jeśli system operacyjny, który chcesz zainstalować, nie jest dostępny w [katalogu systemów operacyjnych dostępnych na serwerach dedykowanych OVHcloud](/links/bare-metal/os), możesz również użyć spersonalizowanego obrazu: zobacz [Porównanie Bring Your Own Image (BYOI) i Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)], aby uzyskać więcej informacji.<br />
-⁶ SoL = numer seryjny
+⁵ Jeśli system operacyjny, który chcesz zainstalować, nie jest dostępny w [katalogu systemów operacyjnych dostępnych na serwerach dedykowanych OVHcloud](/links/bare-metal/os), możesz również użyć spersonalizowanego obrazu: zobacz [Porównanie Bring Your Own Image (BYOI) i Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux), aby uzyskać więcej informacji.<br />
+⁶ SoL = Serial over Lan
 
 Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud](/links/manager). W sekcji `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} i wybierz swój serwer, a następnie kliknij zakładkę `IPMI/KVM`{.action}.
 
 ### Otwórz KVM za pomocą apletu Java <a name="applet-java"></a>
 
-Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jeszcze tego nie zrobiłeś, przejdź do [oficjalnej strony](https://www.java.com/en/download/){.external}.
+Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jeszcze tego nie zrobiłeś, przejdź do [oficjalnej strony](https://www.java.com/en/download/).
 
 W sekcji `Remote KVM`{.action} Panelu klienta OVHcloud kliknij `Z apletu Java (KVM)`{.action}:
 
@@ -95,7 +95,7 @@ Gdy sesja jest gotowa, pojawia się komunikat potwierdzenia i URI, dzięki czemu
 
 ### Otwórz SoL w przeglądarce sieci Web <a name="sol-browser"></a>
 
-W sekcji `Serial over LAN (SoL)`{.action} Panelu klienta OVHcloud kliknij z poziomu przeglądarki (SoL)`{.action}.
+W sekcji `Serial over LAN (SoL)`{.action} w obszarze klienta OVHcloud kliknij `Z poziomu przeglądarki (SoL)`{.action}.
 
 ![Dostęp SoL JavaScript](images/ipmi-sol-html-01.png){.thumbnail}
 

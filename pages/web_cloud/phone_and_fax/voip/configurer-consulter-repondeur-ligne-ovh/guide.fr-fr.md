@@ -1,7 +1,7 @@
 ---
 title: 'Configurer et consulter le répondeur de sa ligne'
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-updated: 2025-04-28
+updated: 2025-08-12
 ---
 
 ## Objectif
@@ -16,7 +16,7 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 > Consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time) ».
 >
 > Attention ! Si vos appelants connaissent un autre numéro que celui de votre ligne directe, vous disposez alors probablement d'un « numéro alias ».
-> Vous devez alors configurer les plages horaires sur ce numéro et non sur votre ligne. Pour en savoir plus, consultez notre [FAQ](/pages/web_cloud/phone_and_fax/voip/faq-voip) et nos [guides de configuration des numéro alias](/products/web-cloud-phone-and-fax-voip-numbers-and-aliases).
+> Vous devez alors configurer les plages horaires sur ce numéro et non sur votre ligne. Pour en savoir plus, consultez notre [FAQ](/pages/web_cloud/phone_and_fax/voip/faq-voip) et nos [guides de configuration des numéro alias](/products/web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases).
 >
 
 ## Prérequis
@@ -106,7 +106,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 
 - **Accueil et enregistrement des messages** : faites votre choix parmi les paramètres proposés, puis appuyez sur le bouton `Appliquer les options`{.action} pour valider les modifications que vous venez d'effectuer.
 
-|Paramètres|Détail|
+|Paramètres|Détails|
 |---|---|
 |Enregistrement des messages|Permet d'activer ou désactiver l'enregistrement de messages audio par vos appelants. Ceux-ci n'auront alors que votre message d'accueil du répondeur, sans possibilité de laisser un message.|
 |Message d'accueil du répondeur|Permet d'importer un message d'accueil personnalisé qui sera lu par votre répondeur.|
@@ -115,7 +115,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 
 - **Options de notification** : faites votre choix parmi les paramètres proposés, puis appuyez sur le bouton `Appliquer les options`{.action} pour valider les modifications que vous venez d'effectuer.
 
-|Paramètres|Détail|
+|Paramètres|Détails|
 |---|---|
 |Format des fichiers audio|Définit le format des fichiers audio que vous recevrez en pièce jointe dans les notifications e-mail lorsqu'un nouveau message sera reçu.|
 |Activation des notifications|Active ou désactive la réception des notifications.|
@@ -126,10 +126,10 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 
 - **Adresses e-mail à notifier** : visualisez, grâce au tableau, les adresses qui recevront une notification, supprimez-en grâce à l'icône en forme de poubelle et ajoutez-en des nouvelles en cliquant sur le bouton `Ajouter une adresse e-mail`{.action}, puis en remplissant les champs demandés.
 
-|Champs|Détail|
+|Champs|Détails|
 |---|---|
 |E-mail|Renseignez l'adresse e-mail que vous souhaitez notifier.|
-|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.|
+|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.<br><br>**Nouvelle fonctionnalité en Bêta** : Il est à présent possible de recevoir par e-mail une transcription écrite du message générée par Intelligence Artificielle.<br> Pour cela, choisissez « Transcription et message joint en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir la transcription écrite et le message vocal au format souhaité en pièce jointe, ou « Transcription en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir uniquement la transcription écrite du message en pièce jointe.|
 
 ![repondeur](images/voicemail-step6.png){.thumbnail}
 

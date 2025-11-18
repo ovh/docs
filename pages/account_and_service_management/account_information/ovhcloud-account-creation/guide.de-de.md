@@ -4,6 +4,11 @@ excerpt: Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account anlegen
 updated: 2025-04-28
 ---
 
+> [!success]
+> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
+> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
+> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/s9Kt5lG)
+
 ## Ziel
 
 Um die Dienste von OVHcloud zu nutzen muss zuerst ein Kunden-Account erstellt werden.

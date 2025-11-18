@@ -102,7 +102,7 @@ Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensembl
 
 #### Supprimer un moyen de paiement via les API OVHcloud
 
-La suppression d'un moyen de paiement peut être effectuée via les API en vous connectant sur [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+La suppression d'un moyen de paiement peut être effectuée via les API en vous connectant sur [https://eu.api.ovh.com/](/links/api).
 
 Commencez par obtenir l'ID du moyen de paiement :
 

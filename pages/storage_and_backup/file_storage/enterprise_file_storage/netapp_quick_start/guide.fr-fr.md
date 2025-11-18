@@ -13,7 +13,7 @@ Dans ce guide de démarrage rapide, découvrez comment débuter sur votre offre 
 ## Prérequis
 
 - Disposer d'une offre OVHcloud Enterprise File Storage
-- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
+- Être connecté sur la page des [API OVHcloud](/links/api)
 - Savoir [monter un partage NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs)
 
 ## L'essentiel
@@ -234,6 +234,6 @@ Vous pouvez supprimer votre volume à l'aide de la route API suivante :
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

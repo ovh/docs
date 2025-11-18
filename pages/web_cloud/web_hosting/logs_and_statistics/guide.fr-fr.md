@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Consulter les statistiques et logs d'un site web"
 excerpt: "Découvrez comment consulter les statistiques et les logs de votre site web grâce à votre offre d'hébergement web"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Objectif
@@ -17,22 +17,37 @@ L'accès aux logs et aux statistiques de votre site web est compris dans votre o
 
 ## En pratique
 
-Pour accéder aux différentes données statistiques et logs de votre hébergement web, effectuez les actions suivantes : 
+Pour accéder aux différentes données statistiques et aux logs de votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Cliquez sur l'onglet `Web Cloud`{.action}.
-3. Dans la colonne de gauche, cliquez sur le menu `Hébergements`{.action}.
-4. Sélectionnez l'hébergement web concerné.
-5. Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}.
-
-L'écran qui s’affiche est composé de 4 sections :
-
-- [Statistiques de visite](#website-stats) : présente de nombreuses statistiques concernant votre hébergement web.
-- [Logs du site web](#website-logs) : affiche les logs bruts de votre hébergement web.
-- [Statistiques de l'infrastructure](#infra-stats) : présente des statistiques graphiques (requêtes HTTP et SQL, commandes FTP, utilisation CPU, connexions sortantes, etc.)
-- [Administration des utilisateurs](#admin-user) : affiche les utilisateurs autorisés à accéder aux statistiques
-
-![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}. 
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>> 
+> **Étape 4**
+>>
+>> L'écran qui s’affiche est composé de 4 sections :
+>>
+>> - [Statistiques de visite](#website-stats) : Présente de nombreuses statistiques concernant votre hébergement web.
+>> - [Logs du site web](#website-logs) : Affiche les logs bruts de votre hébergement web.
+>> - [Statistiques de l'infrastructure](#infra-stats) : Présente des statistiques graphiques (requêtes HTTP et SQL, commandes FTP, utilisation CPU, connexions sortantes, etc.).
+>> - [Administration des utilisateurs](#admin-user) : Affiche les utilisateurs autorisés à accéder aux statistiques.
+>>
+>> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 ### Statistiques de visite <a name="website-stats"></a>
 
@@ -99,7 +114,7 @@ Il est possible d'afficher différent types de graphiques, depuis le menu dérou
 
 La création d'un utilisateur permettra à une personne d'accéder aux statistiques de votre hébergement web sans avoir accès à votre espace client OVHcloud.
 
-Dans la section `Administration des utilisateurs`{.action}, cliquez sur `Créer un nouvel utilisateur`{.action} puis suivez les intructions pour finaliser la création d'un nouvel utilisateur.
+Dans la section `Administration des utilisateurs`{.action}, cliquez sur `Créer un nouvel utilisateur`{.action} puis suivez les instructions pour finaliser la création d'un nouvel utilisateur.
 
 ![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
 

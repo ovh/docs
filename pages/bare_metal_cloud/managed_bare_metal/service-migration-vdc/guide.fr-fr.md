@@ -22,7 +22,7 @@ La migration d'une infrastructure vers un nouveau vDC comporte deux aspects:
 ## Prérequis
 
 * Une infrastructure PCC
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
+* Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
 
 ## En pratique
 
@@ -97,7 +97,7 @@ Voici une liste des éléments à prendre en compte:
 
 La migration nécessite la reconstruction des pools de ressources, notamment les réservations, les partages et les applications virtuelles. Cela s'applique également aux vApps et à toute configuration de commande de démarrage définie dans les vApps.
 
-Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
+Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html).
 
 Voici une liste d'éléments à prendre en compte:
 

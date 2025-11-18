@@ -47,7 +47,7 @@ If your hosting plan includes the Web Cloud Databases option, click on the tabs 
 
 ### View general information about the instance
 
-In the services bar on the left-hand side of the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ You can also view important information about your instance. Please take a few m
 |RAM|Shows the RAM available for your instance and indicates RAM overflow. Your Web Cloud Databases instance uses dedicated, guaranteed RAM resources. If required, you can scale the RAM and receive warnings when your RAM usage exceeds the limit.|
 |Infrastructure|Shows the infrastructure that your instance uses. This information relates to the OVHcloud infrastructure.|
 |Datacenter|Shows the data centre where the instance has been created.|
-|Host|Shows the OVHcloud server where your instance is. This information relates to the OVHcloud infrastructure, and we may use it in our communication on [OVHcloud incidents](http://status.ovh.net/){.external}.|
+|Host|Shows the OVHcloud server where your instance is. This information relates to the OVHcloud infrastructure, and we may use it in our communication on [OVHcloud incidents](http://status.ovh.net/).|
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 

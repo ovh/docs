@@ -14,7 +14,7 @@ updated: 2024-08-05
 
 Un réseau privé vous permet de construire une infrastructure réseau isolée, fiable et performante pour votre application dans le cloud.
 
-Les réseaux privés du Public Cloud permettent de configurer votre réseau de manière totalement gérée, à l'aide de concepts réseau courants tels que les sous-réseaux et le routage. Associés à des composants réseau tels que la [Gateway](#gateway), le [Load Balancer](#lodbalancer) ou la [Floating IP](#floatingip), ils vous permettent de construire rapidement et simplement une infrastructure complète de bout en bout, de vos serveurs back end à vos utilisateurs.
+Les réseaux privés du Public Cloud permettent de configurer votre réseau de manière totalement gérée, à l'aide de concepts réseau courants tels que les sous-réseaux et le routage. Associés à des composants réseau tels que la [Gateway](#gateway), le [Load Balancer](#loadbalancer) ou la [Floating IP](#floatingip), ils vous permettent de construire rapidement et simplement une infrastructure complète de bout en bout, de vos serveurs back end à vos utilisateurs.
 
 ### Réseaux privés du Public Cloud
 
@@ -29,7 +29,7 @@ Chaque type de réseau privé peut alors avoir des sous-réseaux attachés pour 
 
 Un sous-réseau (ou des parties de celui-ci) peut être assigné à des instances utilisant le protocole DHCP pour une configuration automatique.
 
-Les réseaux privés du Public Cloud utilisent les VLAN L2 (*Layer-2*) pour séparer les domaines de broadcast les uns des autres. Pour plus d'informations, lisez [la section VLAN ci-dessous](#VLANcluster).
+Les réseaux privés du Public Cloud utilisent les VLAN L2 (*Layer-2*) pour séparer les domaines de broadcast les uns des autres. Pour plus d'informations, lisez [la section VLAN ci-dessous](#vlancluster).
 
 Pour plus d'informations sur les réseaux et sous-réseaux privés, consultez la documentation OpenStack :
 

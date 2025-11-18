@@ -45,7 +45,7 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Offer standard solutions and protocols for importing and exporting data using API for logs and dashboards | I | RA |
-| Decide to use [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror){.external} for data export and local analysis  | RA |  |
+| Decide to use [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) for data export and local analysis  | RA |  |
 
 #### 2.3. Customer Information System setup
 
@@ -164,7 +164,7 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage reversibility operations : manual extract, using API, [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror){.external} | RA |  |
+| Manage reversibility operations : manual extract, using API, [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) | RA |  |
 | Migrate/transfer data | RA |  |
 
 ### 5. End of service
@@ -189,5 +189,5 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

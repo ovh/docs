@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy Stable Diffusion WebUI
 excerpt: How to deploy Automatic1111’s Stable Diffusion WebUI
-updated: 2023-12-20
+updated: 2025-06-27
 ---
 
 > [!primary]
@@ -87,18 +87,26 @@ ENV HOME=/workspace
 
 As you can see from the comments, this `Dockerfile` installs several packages, downloads the interface installation script and then runs it. These instructions will be executed step by step during the build process.
 
-To launch this process, make sure you are in the `Dockerfile` folder (`ai-training-examples/apps/gradio/stable-diffusion/`). Once you are in it, launch the following command to build your application image.
+To launch this process, make sure you are in the `Dockerfile` folder (`ai-training-examples/apps/gradio/stable-diffusion/`). Once you are in it, run one of the following commands to build your application image:
 
 ```console
+# Build the image using your machine's default architecture
 docker build . -t sd_webui:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t sd_webui:latest .
 ```
 
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
+
 > [!primary]
-> **Command explanation**
 >
-> - The dot `.` argument indicates that our build context (place of the **Dockerfile** and other needed files) is the current directory.
+> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-> - The `-t` argument allows us to choose the identifier to give to our image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we choose **sd_webui:latest**. You can change the image name if you wish, but make sure you keep the same identifier throughout the next commands.
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **sd_webui:latest**.
+>
 
 #### Push the image into a registry
 

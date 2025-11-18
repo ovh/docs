@@ -115,7 +115,7 @@ Sustituya únicamente por `plain_text_password1`, `plain_text_password2` y `plai
 >
 > Los dos scripts anteriores utilizan, en la fecha, el método de cifrado más seguro utilizando el algoritmo **bcrypt** recomendado por Apache.
 >
-> Para más información sobre el asunto, consulte la [documentación oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
+> Para más información sobre el asunto, consulte la [documentación oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html).
 >
 
 Si dispone de un alojamiento [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), conéctese a su alojamiento web en [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Vaya a la carpeta "**raíz*" en la que se encuentra su script "crypt.php".
@@ -200,7 +200,7 @@ Require valid-user
 
 #### Bloquear el acceso a uno o más archivos
 
-Para bloquear el acceso a uno o varios archivos específicos, añada una [Directiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} en el archivo ".htaccess":
+Para bloquear el acceso a uno o varios archivos específicos, añada una [Directiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) en el archivo ".htaccess":
 
 ```bash
 <Files test.php>
@@ -222,7 +222,7 @@ En el script anterior, sustituya los siguientes elementos por sus propios valore
 
 > [!warning]
 >
-> Deberá indicar una [Directiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} para **cada archivo** que quiera proteger.
+> Deberá indicar una [Directiva "Files"](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) para **cada archivo** que quiera proteger.
 >
 > Las directivas "Files" se aplican a todos los archivos del mismo nombre o que terminan con el nombre especificado. Siempre que estén contenidos en el mismo directorio que el ".htaccess" o en uno de sus subdirectorios.
 >
@@ -238,7 +238,7 @@ Además, mientras no se haya autenticado para acceder a los archivos afectados p
 
 ## Más información <a name="go-further"></a>
 
-[Documentación oficial Apache](https://httpd.apache.org/docs/2.4/){.external}
+[Documentación oficial Apache](https://httpd.apache.org/docs/2.4/)
 
 [Conectarse al espacio FTP de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
 

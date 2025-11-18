@@ -180,7 +180,7 @@ A few other options are available for your jobs.
 -   `--timeout` timeout after which the job will stop even if the process in the job did not end, helps you control your consumption
 -   `--label` free labels to help you organize your jobs, labels are also used to scope `app_token`, learn more about `app_token` and how to create them [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli)
 -   `--read-user` you can add a `read-user` to a job, a read user will only have access to the service exposed behind the `job_url`. The read-user must match with the username of an AI Platform user with an `AI Training read` role.
--   `--ssh-public-keys` allows you to access your job through SSH, it is particularly useful to [setup a VSCode Remote](/pages/public_cloud/ai_machine_learning/training_tuto_04_vscode_remote)
+-   `--ssh-public-keys` allows you to access your job through SSH, it is particularly useful to [setup a VSCode Remote](/pages/public_cloud/ai_machine_learning/gi_03_remote_connection)
 -   `--from` run a job based on the specification of a previous one. All options will override the base job values. The `--image` is the flag used to override the image of the base job.
 
 ### Run a job
@@ -212,7 +212,7 @@ For more information about the job and its lifecycle refer to the [jobs page](/p
 
 To know more about the CLI and available commands to interact with your job check out the [overview of `ovhai`](/pages/public_cloud/ai_machine_learning/cli_15_commands_reference)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

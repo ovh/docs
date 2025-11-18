@@ -1,7 +1,7 @@
 ---
 title: "Déployer une machine virtuelle avec SAP HANA et OVHcloud Backint Agent pré-installés"
 excerpt: "Ce guide fournit les instructions pour le déploiement d'une machine virtuelle SLES for SAP avec SAP HANA, OVHcloud Backint Agent et SAP logs on OVHcloud Logs Data Platform pré-installés"
-updated: 2024-09-06
+updated: 2025-09-16
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Ce guide vous détaille les étapes pour le déploiement d'une machine virtuelle
 
 ## Prérequis
 
-- Un accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un accès à l’[espace client OVHcloud](/links/manager)
 - Une [solution SAP HANA on Private Cloud](https://www.ovhcloud.com/fr/hosted-private-cloud/sap-hana/) déployée
 - [Un projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) dans votre compte OVHcloud avec :
     - [Un bucket Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et [un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture
@@ -64,9 +64,11 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage, vous 
 
 L'URL ci-dessous est un exemple, vous devez remplacer la valeur `pcc-xxx-xxx-xxx-xxx.ovh.xxx` par l'URL de votre service VMware on OVHcloud.
 
-```console
-https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
-```
+| Version            | URL                                                                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| SLES4SAP-SLE15-SP5 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP6 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP6-Full-x86_64/sles4sap-sap-hana-SLE15-SP6-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP7 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP7-Full-x86_64/sles4sap-sap-hana-SLE15-SP7-Full-x86_64.ovf |
 
 ![deploy-from-template](images/step-2.png){.thumbnail}
 
@@ -182,22 +184,20 @@ Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP
 |--------------------------------------------|-----------------------------------|
 | Type de stockage                           | VSAN                              |
 | Tolérance aux pannes du site               | Aucun - cluster standard          |
-| Pannes tolérées                            | 1 panne : RAID-1 (mise en miroir) |
-| Nombre de bandes de disque par objet       | 6*                                |
+| Pannes tolérées                            | 1 panne : RAID-1 (mise en miroir)<sup>1</sup> |
+| Nombre de bandes de disque par objet       | 2                                 |
 | Limite d'IOPS pour un objet                | 0                                 |
 | Réservation d'espace d'objet               | Provisionnement statique          |
 | Réservation de Flash Read Cache            | 0 %                               |
 | Désactiver le total de contrôle de l'objet | Non                               |
 | Forcer le provisionnement                  | Non                               |
 | Services de chiffrement                    | Aucune préférence                 |
-| Efficacité de l'utilisation de l'espace    | Déduplication et compression      |
+| Efficacité de l'utilisation de l'espace    | Aucune préférence                 |
 | Niveau de stockage                         | Intégralement Flash               |
 
-<sup>* Pour la solution SAP HANA on Private Cloud.</sup>  
-<sup>Cette valeur va dépendre du nombre de disques (vSAN Capacity) sur vos hosts.</sup>
+<sup>1</sup> *Si votre cluster a plus de 3 hosts, il est plus avantageux de basculer sur un RAID-5.*
 
-Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes
-/hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
+Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes /hana/shared (Hard disk 3), /hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
 
 6\. Vous pouvez à présent démarrer votre machine virtuelle.
 

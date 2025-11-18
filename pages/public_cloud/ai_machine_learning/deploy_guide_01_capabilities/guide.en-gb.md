@@ -207,4 +207,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-Are you on Discord? Connect to [our channel](https://discord.gg/KbrKSEettv) and interact directly with the team that builds our AI services!
+Are you on Discord? Connect to [our channel](https://discord.gg/ovhcloud) and interact directly with the team that builds our AI services!

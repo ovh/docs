@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie płatnościami za Twoje konta E-mail Pro'
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi E-mail Pro'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 
@@ -45,7 +45,7 @@ Pojawi się okno. W tabeli możesz zarządzać czasem odnowienia każdego konta.
 >
 > W przypadku uproszczonego zarządzania, fakturowanie każdego konta Email Pro jest automatycznie ustawione na początku miesiąca. Aby to wyrównać i przenieść w razie potrzeby datę subskrypcji, otrzymasz proporcjonalną fakturę z konta Email Pro.
 >
->Przykład: Następne zamówienie złożone w dniu 08 stycznia wraz z abonamentem miesięcznym wiąże się z opłaceniem w dniu 08 lutego. Poniższa faktura będzie dotyczyć okresu od 08 lutego do 1 marca.
+> **Przykład**: Następne zamówienie złożone w dniu 08 stycznia wraz z abonamentem miesięcznym wiąże się z opłaceniem w dniu 08 lutego. Poniższa faktura będzie dotyczyć okresu od 08 lutego do 1 marca.
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
@@ -62,6 +62,10 @@ Przejdź do karty `Konta e-mail`{.action} Twojej platformy, następnie kliknij p
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Rezygnacja z platformy
+
+Po usunięciu kont e-mail należy usunąć domenę lub domeny powiązane z Twoją platformą E-mail Pro przed jej usunięciem. W tym celu przejdź do zakładki `Przypisane domeny`{.action}. Kliknij przycisk `...`{.action} w linii nazwy domeny, którą chcesz usunąć, następnie kliknij `Usuń tę domenę`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 W oknie zarządzania Twoją usługą E-mail Pro kliknij przycisk `Operacje`{.action} w prawym górnym rogu, a następnie `Rezygnacja`{.action}. 
 

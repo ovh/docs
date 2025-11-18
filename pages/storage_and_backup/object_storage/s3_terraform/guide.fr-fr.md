@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Gérer un bucket Object Storage avec Terraform
-updated: 2025-05-05
+updated: 2025-10-16
 ---
 
 ## Objectif
@@ -9,10 +9,10 @@ Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour uti
 
 ## Prérequis
 
-- Installation de [la CLI Terraform](https://www.terraform.io/downloads.html){.external}
+- Installation de [la CLI Terraform](https://www.terraform.io/downloads.html)
 - Accès à l'[API OVHcloud](/links/api) (créez vos identifiants en consultant [ce guide](/pages/manage_and_operate/api/first-steps))
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
-- OVHcloud fournit un [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} qui est disponible dans le registre officiel de Terraform. Vous devez avoir installé une version >= 2.0. Vous pouvez suivre le guide [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
+- OVHcloud fournit un [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest) qui est disponible dans le registre officiel de Terraform. Vous devez avoir installé une version >= 2.0. Vous pouvez suivre le guide [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 
 ## Obtenir des informations sur vos jetons cluster/API
 
@@ -22,7 +22,7 @@ Le « provider OVH » doit être configuré avec un ensemble d'informations d'id
 - une `application_secret`
 - une `consumer_key`
 
-Pourquoi ?
+### Pourquoi ?
 
 Parce que, dans les coulisses, le « OVH Terraform provider » fait des requêtes aux API d'OVHcloud.
 
@@ -32,7 +32,7 @@ Lorsque vous avez généré avec succès vos tokens OVHcloud, conservez-les. Vou
 
 La dernière information nécessaire est le `service_name` : c'est l'ID de votre projet Public Cloud.
 
-Comment l'obtenir ?
+### Comment l'obtenir ?
 
 Dans la section Public Cloud, vous pouvez récupérer l'ID de votre nom de service grâce au bouton `Copier dans le presse-papier`{.action}.
 
@@ -42,7 +42,7 @@ Vous utiliserez également ces informations dans les fichiers de définition des
 
 ## En pratique
 
-Si vous souhaitez accéder à la documentation du provider sur Object Storage, [cliquez-ici](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_storage.){.external}
+Si vous souhaitez accéder à la documentation du provider sur Object Storage, [cliquez-ici](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_storage)
 
 ### Configuration
 
@@ -55,7 +55,7 @@ terraform {
   required_providers {
     ovh = {
       source  = "ovh/ovh"
-      version = "2.1.0" # greater than or equal to 2.0
+      version = "~> 2.1" # greater than or equal to 2.1
     }
   }
 }

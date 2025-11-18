@@ -11,7 +11,7 @@ Dieses Tutorial erklärt, wie Sie einen Onlineshop mit der Open-Source-Anwendung
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/){.external} oder dem [Herausgeber von WooCommerce](https://woocommerce.com/){.external} zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/) oder dem [Herausgeber von WooCommerce](https://woocommerce.com/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
@@ -117,7 +117,7 @@ Die Verwaltung der Produkte erfolgt über eine Reihe von Unterkategorien:
 
 #### Shipping
 
-Wenn Sie bei der Installation die kostenlosen Erweiterungen aktiviert haben, verfügen Sie bereits über [WooCommerce Shipping](https://woocommerce.com/de-de/woocommerce-shipping/){.external}. Ist das nicht der Fall, können Sie die Installation in dem Menü `Erweiterungen`{.action} durchführen.
+Wenn Sie bei der Installation die kostenlosen Erweiterungen aktiviert haben, verfügen Sie bereits über [WooCommerce Shipping](https://woocommerce.com/de-de/woocommerce-shipping/). Ist das nicht der Fall, können Sie die Installation in dem Menü `Erweiterungen`{.action} durchführen.
 
 - **Versandgebiete**: Ermöglicht die Festlegung und Konfiguration von Liefergebieten.
 - **Lieferoptionen**: Zur Verwaltung der Anwendung von Versandkosten.
@@ -137,7 +137,7 @@ Erlaubt die Konfiguration der von der Anwendung versendeten *Standardmails* (Anm
 
 #### Integration
 
-Um Ihre Kunden anhand ihrer IP-Adressen zu geolokalisieren, können Sie in diesem Unterbereich den Lizenzschlüssel für [MaxMind](https://www.maxmind.com/){.external} hinterlegen, ein kostenpflichtiger Geolokalisierungsdienst.
+Um Ihre Kunden anhand ihrer IP-Adressen zu geolokalisieren, können Sie in diesem Unterbereich den Lizenzschlüssel für [MaxMind](https://www.maxmind.com/) hinterlegen, ein kostenpflichtiger Geolokalisierungsdienst.
 
 #### Fortgeschritten
 
@@ -152,10 +152,10 @@ Um Ihre Kunden anhand ihrer IP-Adressen zu geolokalisieren, können Sie in diese
 
 Nützliche Links:
 
-- [Offizielle WordPress-Website](https://wordpress.org){.external}
-- [Jetpack Erweiterung](https://jetpack.com/){.external} 
-- [WooCommerce](https://woocommerce.com/){.external}
-- [WooCommerce Shop für Erweiterungen](https://woocommerce.com/products/){.external}
+- [Offizielle WordPress-Website](https://wordpress.org)
+- [Jetpack Erweiterung](https://jetpack.com/) 
+- [WooCommerce](https://woocommerce.com/)
+- [WooCommerce Shop für Erweiterungen](https://woocommerce.com/products/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

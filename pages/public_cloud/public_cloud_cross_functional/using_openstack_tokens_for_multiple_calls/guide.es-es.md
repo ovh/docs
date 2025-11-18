@@ -33,7 +33,7 @@ Esta guía explica cómo enviar un token OpenStack, utilizarlo para las acciones
 
 ## Requisitos 
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Esta guía explica cómo instalar en su máquina OpenStack CLI.
 
 > [!primary]

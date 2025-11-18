@@ -92,7 +92,7 @@ Enumere y administre sus redes y grupos de seguridad aquí.
 ##### **Orchestration**
 
 Este menú le permite orquestar varias aplicaciones de cloud compuesta.<br>
-Para obtener más información, consulte la [documentación de OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
+Para obtener más información, consulte la [documentación de OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html).
 
 ![orquestación](images/orchestration2021.png){.thumbnail}
 

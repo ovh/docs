@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objective
 
-Creating a project is the first step in deploying [Public Cloud instances](https://www.ovhcloud.com/en-au/public-cloud/).
+Creating a project is the first step in deploying [Public Cloud instances](/links/public-cloud/public-cloud).
 
 **This guide will take you through the steps of creating your first Public Cloud project.**
 

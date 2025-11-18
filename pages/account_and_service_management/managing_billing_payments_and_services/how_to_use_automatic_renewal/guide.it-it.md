@@ -4,6 +4,11 @@ excerpt: Scopri come gestire i tuoi servizi e i loro rinnovi nella tua area clie
 updated: 2025-01-28
 ---
 
+> [!success]
+> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
+> Condividi con noi le tue opinioni e idee.<br>
+> [Accedi al sondaggio.](https://s.elq.fr/ovhext/FFBTC2m)
+
 ## Obiettivo
 
 Il menu **Le mie offerte e servizi** dello Spazio Cliente OVHcloud ti permette di verificare lo stato dei tuoi servizi, rinnovarli, modificare il tipo di rinnovo, saldare fatture o anticipare il pagamento.
@@ -63,7 +68,7 @@ Questa guida ti mostra come:
 >> Se scegli il rinnovo manuale, riceverai diverse email di promemoria prima della scadenza, ciascuna contenente un link che permette di rinnovare online i servizi in scadenza.
 >> Potrai anche effettuare semplicemente il pagamento dal tuo Spazio Cliente.
 >>
->> **Attenzione**, se non effettui il pagamento di un servizio con rinnovo manuale, questo verrà **sospeso** alla data di scadenza e poi **eliminato*** dopo alcuni giorni.
+>> **Attenzione**, se non effettui il pagamento di un servizio con rinnovo manuale, questo verrà **sospeso** alla data di scadenza e poi **eliminato** dopo alcuni giorni.
 >> Se non vuoi mantenere il servizio attivo, non è necessario richiederne la disattivazione.
 
 ## Procedura

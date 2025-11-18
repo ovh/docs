@@ -1,4 +1,5 @@
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +7,7 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
+- pt-pt
 id: 55349f96-666b-4c9b-a9da-48f21a71ea23
 full_slug: sms-sending-via-api-nodejs
+translation_banner: true

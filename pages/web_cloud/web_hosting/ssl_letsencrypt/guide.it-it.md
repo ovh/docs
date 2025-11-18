@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attivare un certificato SSL gratuito Let's Encrypt"
 excerpt: "Scopri come attivare o rigenerare un certificato SSL gratuito Let's Encrypt sul tuo hosting Web"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Obiettivo
@@ -32,6 +32,18 @@ Let's Encrypt è un'autorità di certificazione gratuita, automatizzata, aperta 
 
 ## Procedura
 
+> [!primary]
+>
+> **Informazioni sulla migrazione alla nuova interfaccia di gestione dei certificati SSL:**
+>
+> La continuazione di questa guida è rivolta ai clienti i cui servizi di hosting Web non sono ancora stati migrati verso la nuova interfaccia di gestione dei certificati SSL.
+> Per sapere se la migrazione è stata effettuata, accedi al tuo hosting Web dallo Spazio Cliente OVHcloud e verifica la presenza della scheda `Certificati SSL`.
+> Se la scheda `Certificati SSL` è presente, il servizio è già migrato sulla nuova interfaccia di gestione. In questo caso, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/ssl_management) per gestire il tuo certificato SSL.
+>
+> Per motivi tecnici, non tutti i servizi di hosting Web dei nostri clienti possono essere migrati in una sola volta. Il trasferimento viene quindi effettuato in poche settimane e automaticamente, senza alcuna conseguenza sul funzionamento dei servizi di hosting Web e senza alcun intervento o azione da parte tua.
+>
+> Tutti i servizi di hosting Web funzioneranno col nuovo sistema di gestione dei certificati SSL.
+
 ### 1. Preattribuire il futuro certificato SSL Let's Encrypt al(i) dominio(i)/sottodominio(i) <a name="ssl-multisite"></a>
 
 A differenza di altri certificati, il [certificato SSL gratuito Let's Encrypt](/links/web/hosting-options-ssl) può essere attivato per più domini o sottodomini contemporaneamente. Nel limite di **99** domini o sottodomini per ogni hosting Web.
@@ -41,7 +53,7 @@ Di conseguenza, prima di installare il certificato SSL Let's Encrypt, è necessa
 Per effettuare questa operazione, esegui le operazioni seguenti:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Multisito`{.action}.
@@ -95,7 +107,7 @@ Prima di procedere con questa configurazione, assicurati che lo [step precedente
 Per attivare il certificato SSL Let's Encrypt, esegui queste operazioni:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
@@ -115,7 +127,7 @@ L’implementazione del certificato SSL Let’s Encrypt può richiedere diverse 
 Per verificare che l'installazione sia stata completata, eseguire le operazioni seguenti:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
@@ -137,7 +149,7 @@ A tale scopo, eseguire **nell'ordine** le operazioni seguenti:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 2. Preattribuire il certificato SSL Let's Encrypt ai nuovi domini/sottodomini come specificato nella [prima parte](#ssl-multisite) di questa guida.
-3. Clicca sulla scheda `Web Cloud`{.action}.
+3. Accedi alla sezione `Web Cloud`{.action}.
 4. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 5. Seleziona il tuo hosting Web.
 6. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
@@ -152,7 +164,7 @@ Questa operazione potrebbe richiedere qualche ora.
 
 > [!warning]
 >
-> Let's Encrypt, l'autorità che fornisce il certificato SSL, [limita a cinque il numero di rigenerazioni possibili alla settimana](https://letsencrypt.org/docs/rate-limits/){.external}. Pertanto, prestare attenzione alle diverse rigenerazioni che si possono eseguire a breve termine in modo da non essere temporaneamente bloccati.
+> Let's Encrypt, l'autorità che fornisce il certificato SSL, [limita a cinque il numero di rigenerazioni possibili alla settimana](https://letsencrypt.org/docs/rate-limits/). Pertanto, prestare attenzione alle diverse rigenerazioni che si possono eseguire a breve termine in modo da non essere temporaneamente bloccati.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
@@ -166,7 +178,7 @@ Il tuo certificato SSL Let's Encrypt è stato rigenerato ed è attivo. Da questo
 
 [Errori comuni associati alla protezione del sito Web con il certificato SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  

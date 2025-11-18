@@ -20,7 +20,7 @@ Il gestore degli aggiornamenti di VMware permette di mantenere aggiornati i tuoi
 ## Prerequisiti
 
 - Essere contatto amministratore di [Hosted Private Cloud Infrastructure](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
-- Avere un utente attivo con diritti specifici per NSX (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
+- Avere un utente attivo con diritti specifici per NSX (creato nello [Spazio Cliente OVHcloud](/links/manager))
 
 ## Procedura
 

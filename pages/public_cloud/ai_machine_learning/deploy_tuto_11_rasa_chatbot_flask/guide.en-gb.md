@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a Rasa chatbot with a simple Flask app
 excerpt: Understand how simple it is to deploy a chatbot with AI Deploy
-updated: 2023-05-11
+updated: 2025-06-27
 ---
 
 > [!primary]
@@ -133,12 +133,38 @@ EXPOSE 5005
 CMD rasa run -m trained-models --cors "*" --debug --connector socketio --credentials "crendentials.yml" --endpoints "endpoints.yml" & rasa run actions
 ```
 
-Now run the following command in this folder (`/apps/flask/conversational-rasa-chatbot/back-end/`) to build and push the container:
+#### Build the Docker image from the Dockerfile
+
+From the directory containing your **Dockerfile** (`/apps/flask/conversational-rasa-chatbot/back-end/`), run one of the following commands to build your application image:
+
+```console
+# Build the image using your machine's default architecture
+docker build . -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot-backend:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot-backend:latest .
+```
+
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
+
+> [!primary]
+>
+> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
+>
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **<yourdockerhubId>/rasa-chatbot-backend:latest**.
+>
+
+#### Push the image
+
+Run the following command:
 
 ```bash
-docker build .  -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot-backend:latest
 docker push <yourdockerhubId>/rasa-chatbot-backend:latest
 ```
+
+#### Deploy the app 
 
 Now that your container is created, let's run our application and deploy our model!
 
@@ -200,10 +226,19 @@ EXPOSE 5000
 CMD python3 app.py
 ```
 
-Let's now run the app on AI Deploy! To do so, you will need to create a Docker image. Go into the `front-end` folder (`ai-training-examples/apps/flask/conversational-rasa-chatbot/front-end`) and run:
+Let's now run the app on AI Deploy! To do so, you will need to create a Docker image. Go into the `front-end` folder (`ai-training-examples/apps/flask/conversational-rasa-chatbot/front-end`) and run one of the following commands:
+
+```console
+# Build the image using your machine's default architecture
+docker build . -f flask.Dockerfile -t <yourdockerhubId>/flask-app-frontend:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -f flask.Dockerfile -t <yourdockerhubId>/flask-app-frontend:latest .
+```
+
+Then push your image: 
 
 ```bash
-docker build . -f flask.Dockerfile -t <yourdockerhubId>/flask-app-frontend:latest
 docker push <yourdockerhubId>/flask-app-frontend:latest
 ```
 

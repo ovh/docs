@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Train a Rasa chatbot inside a Docker container 
 excerpt: Understand how simple it is to train a chatbot with AI Training
-updated: 2023-05-11
+updated: 2025-06-27
 ---
 
 ## Objective
@@ -17,7 +17,7 @@ Both of the frameworks are Python packages.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
@@ -92,11 +92,19 @@ EXPOSE 5005
 CMD rasa train --force --out trained-models
 ```
 
-Secondly, you have to build the Docker image and push it inside your public repository (such as Dockerhub) or in a private directory.
-Here are the two commands to run inside the folder `rasa_bot`:
+Secondly, you have to build the Docker image and push it inside your public repository (such as Dockerhub) or in a private directory. To do that, run one of the following commands inside the folder `rasa_bot`:
+
+```console
+# Build the image using your machine's default architecture
+docker build . -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest .
+```
+
+Then, push your image:
 
 ```bash
-docker build .  -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest
 docker push <yourdockerhubId>/rasa-chatbot:latest
 ```
 
@@ -198,7 +206,7 @@ If you want to deploy your model created with the chatbot, you can follow this t
 
 [How to deploy a chatbot](/pages/public_cloud/ai_machine_learning/deploy_tuto_11_rasa_chatbot_flask)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

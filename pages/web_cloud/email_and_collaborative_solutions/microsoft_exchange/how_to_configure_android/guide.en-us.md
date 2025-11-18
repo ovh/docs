@@ -5,8 +5,8 @@ updated: 2025-04-28
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 .h-600 {
   max-height:600px !important;
@@ -51,7 +51,7 @@ Email accounts of the Exchange solution can be configured on various compatible 
 
 On your device’s homepage, open the `Gmail`{.action} app.
 
-![Android Exchange](images/exchange-android-00.png){.thumbnail .w-400}
+![Android Exchange](images/exchange-android-00.png){.thumbnail .h-600 .w-600}
 
 Adding an account will be done differently **if no account is set up**, or **if an account has already been set up**. Select the tab corresponding to one of the two situations mentioned:
 
@@ -59,37 +59,37 @@ Adding an account will be done differently **if no account is set up**, or **if 
 > **First configuration**
 >>
 >> Select `Add email address`{.action}.<br><br>
->> ![Android Exchange](images/android-first.png){.thumbnail .h-600}
+>> ![Android Exchange](images/android-first.png){.thumbnail .h-600 .w-600}
 >>
 > **Existing configuration**
 >>
 >> 1. Go to the menu at the top left of the screen.<br><br>
 >> 2. Select `Settings`{.action}.<br><br>
 >> 3. Select `Add Account`{.action}.<br><br>
->> ![Android Exchange](images/android-existing.png){.thumbnail}
+>> ![Android Exchange](images/android-existing.png){.thumbnail .h-600 .w-600}
 
 Follow the next steps in the configuration process by clicking on the tabs below:
 
 > [!tabs]
 > **Step 1**
 >> From the menu of email account types, select `Exchange and Office`{.action}.<br><br>
->> ![Android Exchange](images/exchange-android-01.png){.thumbnail .h-600}
+>> ![Android Exchange](images/exchange-android-01.png){.thumbnail .h-600 .w-600}
 >>
 > **Step 2**
 >> Enter your email address, then tap `Next`{.action}.<br><br>
->> ![Android Exchange](images/exchange-android-02.png){.thumbnail .h-600}
+>> ![Android Exchange](images/exchange-android-02.png){.thumbnail .h-600 .w-600}
+>>
+> **Step 3**
+>> Enter the password for your email account, then tap `Next`{.action}.<br><br>
+>> ![Android Exchange](images/exchange-android-03.png){.thumbnail .h-600 .w-600}
 >>
 > **Step 4**
->> Enter the password for your email account, then tap `Next`{.action}.<br><br>
->> ![Android Exchange](images/exchange-android-03.png){.thumbnail .h-600}
+>> Complete the "**Address configuration**" page.<br><br>- **Email**: Your full email address<br>- **Password**: Your email password<br>- **Certificate**: Leave "None"<br>- **Domain\Username**: Your full email address<br>- **Server**: **ex?.mail.ovh.ca** (replace the **?** by [your Exchange server number](#addaccount))<br>- **Port**: 443<br>- **Security type**: SSL/TLS<br><br>Press `Next`{.action} to confirm the configuration.<br><br>
+>> ![Android Exchange](images/exchange-android-04.png){.thumbnail .h-600 .w-600}
 >>
 > **Step 5**
->> Complete the "**Address configuration**" page.<br><br>- **Email**: Your full email address<br>- **Password**: Your email password<br>- **Certificate**: Leave "None"<br>- **Domain\Username**: Your full email address<br>- **Server**: **ex?.mail.ovh.ca** (replace the **?** by [your Exchange server number](#addaccount))<br>- **Port**: 443<br>- **Security type**: SSL/TLS<br><br>Press `Next`{.action} to confirm the configuration.<br><br>
->> ![Android Exchange](images/exchange-android-04.png){.thumbnail .h-600}
->>
-> **Step 6**
 >> The message "You can now use your account" should appear. Tap `OK`{.action} to finish configuring your account.<br><br>
->> ![Android Exchange](images/exchange-android-05.png){.thumbnail .h-600}
+>> ![Android Exchange](images/exchange-android-05.png){.thumbnail .h-600 .w-600}
 
 Once you have configured your email account, you can start using it! You can now send and receive messages from your Gmail application.
 
@@ -106,5 +106,9 @@ Once you have configured your email account, you can start using it! You can now
 [MX Plan - Configuring an email address in Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [Email Pro - Configuring an email address in Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).

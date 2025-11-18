@@ -17,7 +17,7 @@ W tym przewodniku dowiesz się, jak zarządzać snapshotami wolumenów w ramach 
 ## Wymagania początkowe
 
 - Posiadanie oferty OVHcloud Enterprise File Storage z wolumenem
-- Dostęp do strony [API OVHcloud](https://api.ovh.com/)
+- Dostęp do strony [API OVHcloud](/links/api)
 
 ## Podstawowe
 
@@ -171,6 +171,6 @@ Zastąp `serviceName` ID Twojej usługi, `shareId` ID wolumenu i `snapshotId` ID
 
 ## Sprawdź również
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

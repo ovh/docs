@@ -14,7 +14,7 @@ updated: 2021-03-29
 
 ## Requisitos
 
-- Estar conectado a la [API de OVHcloud.](https://api.ovh.com/)
+- Estar conectado a la [API de OVHcloud.](/links/api)
 - [Veeam Managed Backup activado](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service) en su Managed Bare Metal
 
 ## Procedimiento
@@ -25,7 +25,7 @@ Si no está familiarizado con el funcionamiento de las API de OVHcloud, consulte
 
 En primer lugar, debe identificar los backups que desea restaurar.
 
-Conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente llamada:
+Conéctese a [https://api.ovh.com/](/links/api) y utilice la siguiente llamada:
 
 > [!api]
 >
@@ -59,7 +59,7 @@ Tenga en cuenta que el backup repository permite restaurar las copias de segurid
 
 La llamada a la API restaurará los últimos puntos de restauración válidos de cada backup presente en el directorio de almacenamiento.
 
-Conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente llamada:
+Conéctese a [https://api.ovh.com/](/links/api) y utilice la siguiente llamada:
 
 > [!api]
 >

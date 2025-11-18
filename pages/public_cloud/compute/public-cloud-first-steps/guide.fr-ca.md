@@ -151,7 +151,7 @@ Pour plus d'informations, veuillez consulter nos guides dans la section [Public 
 
 Le mode privé local ne s'applique que si vous créez une instance dans une **Local Zone**. Les instances peuvent être exposées à Internet directement via IPv4/IPv6. Seules les instances d'une même Local Zone peuvent être connectées via des réseaux privés. Les Local Zones ne sont pas compatibles avec le [vRack](/links/network/vrack). Dans ce mode, DHCP fournit automatiquement des adresses IP à vos instances.
 
-Pour en savoir plus, consultez la [page Web des Local Zones](/links/public-cloud/local-zones).
+Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud/local-zones).
 
 ///
 
@@ -217,7 +217,7 @@ Une **région** est définie comme un emplacement dans le monde composé d'un ou
 
 **Local Zones**
 
-Les Local Zones sont une extension des **régions** qui rapprochent les services OVHcloud de sites spécifiques, offrant une latence réduite et des performances améliorées pour les applications. Vous pouvez trouver plus d'informations sur la [page Web des Local Zones](/links/public-cloud/local-zones) et dans la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+Les Local Zones sont une extension des **régions** qui rapprochent les services OVHcloud de sites spécifiques, offrant une latence réduite et des performances améliorées pour les applications. Vous pouvez trouver plus d'informations sur la [page web des Local Zones](/links/public-cloud/local-zones) et dans la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
 ///
 
@@ -227,7 +227,7 @@ Les Local Zones sont une extension des **régions** qui rapprochent les services
 
 Sélectionnez une [région](/links/public-cloud/regions-pci) la plus proche de vos utilisateurs ou clients. Cette option peut être limitée, selon le choix du modèle à l'**étape 4.1**. Notez que si vous sélectionnez une **Local Zone** à cette étape, des limitations de réseau s'appliqueront à l'instance (voir [Étape 3](#networking-modes)).
 
-Reportez-vous également aux informations de la [page Web des Local Zones](/links/public-cloud/local-zones) et de la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+Reportez-vous également aux informations de la [page web des Local Zones](/links/public-cloud/local-zones) et de la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
 ![sélection de région](images/24-instance-creation03.png){.thumbnail}
 

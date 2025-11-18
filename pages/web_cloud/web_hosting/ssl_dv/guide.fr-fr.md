@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer un certificat SSL Sectigo DV"
 excerpt: "Découvrez comment activer un certificat SSL Sectigo DV sur votre hébergement Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ Les niveaux de chiffrement SSL sont identiques entre ces trois types de certific
 
 La principale différence réside dans le niveau de vérifications qui sera réalisé par l'Autorité de Certification (AC) qui délivre le certificat SSL et atteste de son authenticité.
 
-Pour les hébergements mutualisés OVHcloud, l'autorité de certification délivrant les certificats SSL DV est [Sectigo](https://sectigostore.com){.external}.
+Pour les hébergements mutualisés OVHcloud, l'autorité de certification délivrant les certificats SSL DV est [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -75,6 +75,18 @@ Si besoin et pour vous en assurer, consultez nos guides :
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Commander le certificat SSL Sectigo DV
+
+> [!primary]
+>
+> **Informations sur la migration vers la nouvelle interface de gestion des certificats SSL :**
+>
+> La suite de ce guide s'adresse aux clients dont les services d'hébergement web n'ont pas encore migré vers la nouvelle interface de gestion des certificats SSL.
+> Pour repérer si cette migration est effectuée, positionnez-vous sur votre hébergement web dans votre espace client OVHcloud et vérifiez la présence de l’onglet `Certificats SSL`.
+> Si l'onglet `Certificats SSL` est présent, votre service a déjà migré sur la nouvelle interface de gestion. Dans ce cas, consultez directement [ce guide](/pages/web_cloud/web_hosting/ssl_management) pour gérer votre certificat SSL.
+>
+> Pour des raisons techniques, l'ensemble des services d'hébergement web de tous nos clients ne peut pas être migré en une seule fois. Cette migration est donc répartie sur quelques semaines et se réalise automatiquement, sans aucune incidence sur le fonctionnement de vos services d'hébergement web, et sans aucune intervention ou action nécessaire de votre part. 
+>
+> À terme, tous les services d'hébergement web fonctionneront avec la nouvelle interface de gestion des certificats SSL.
 
 Pour commander le certificat SSL Sectigo DV, réalisez les actions suivantes :
 

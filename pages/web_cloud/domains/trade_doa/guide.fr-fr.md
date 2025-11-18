@@ -7,36 +7,36 @@ updated: 2024-10-10
 ## Objectif
 
 Un [changement de propriétaire d'un nom de domaine](/pages/web_cloud/domains/trade_domain) se fait conventionnellement via une double validation par e-mail.<br>
-Dans certains cas de figure, cette méthode ne peut pas être mise en oeuvre. Pour pallier à cela, le registre de [l'AFNIC (Association Française pour le Nommage Internet en Coopération)](https://www.afnic.fr/){.external} met à disposition un document pour récupérer la propriété d'un domaine géré par ce registre : **La Demande d'Opération AFNIC (DOA)**.
+Dans certains cas de figure, cette méthode ne peut pas être mise en oeuvre. Pour pallier à cela, le registre de [l'AFNIC (Association Française pour le Nommage Internet en Coopération)](https://www.afnic.fr/) met à disposition un document pour récupérer la propriété d'un domaine géré par ce registre : **La Demande d'Opération AFNIC (DOA)**.
 
-Cette opération permet de récupérer la propriété d'un domaine dont l'extension est [gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} dans les cas suivants :
+Cette opération permet de récupérer la propriété d'un domaine dont l'extension est [gérée par l'AFNIC](https://www.afnic.fr/produits-services/) dans les cas suivants :
 
 - **Transmission volontaire (Trade)** : utile si, par exemple, vous ne pouvez pas valider l'e-mail reçu sur l'adresse de contact du propriétaire actuel du domaine.
 - **Transmission forcée (Recover)** : permet de récupérer la propriété du domaine dans le cadre d'une décision judiciaire, d'une liquidation judiciaire ou d'un décès.
 
-Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AFNIC met à disposition [d'autres procédures pour résoudre vos litiges](https://www.afnic.fr/noms-de-domaine/resoudre-un-litige/){.external}.
+Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AFNIC met à disposition [d'autres procédures pour résoudre vos litiges](https://www.afnic.fr/noms-de-domaine/resoudre-un-litige/).
 
 > [!primary]
-> Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud et est limitée uniquement aux [extensions gérées par l'AFNIC](https://www.afnic.fr/produits-services/){.external}.
+> Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud et est limitée uniquement aux [extensions gérées par l'AFNIC](https://www.afnic.fr/produits-services/).
 >
 > Vous pourrez être amené à [modifier les contacts](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine une fois le domaine récupéré avec la DOA.
 >
 > La DOA doit obligatoirement être effectuée auprès de l'actuel bureau d'enregistrement du nom de domaine. Si le nom de domaine n'est pas enregistré chez OVHcloud, contactez le bureau d'enregistrement actuel du nom de domaine concerné pour réaliser une DOA à leur niveau.
 >
-> Exception faite de la procédure [SYRELI](https://www.syreli.fr/fr/){.external} évoquée [plus bas](#doa-syreli) dans ce guide, une DOA ne peut pas être couplée à une opération de transfert du nom de domaine. Vous devrez d'abord réaliser votre DOA, puis réaliser une [opération de transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) ou [sortant](/pages/web_cloud/domains/transfer_outgoing_domain) de votre nom de domaine.
+> Exception faite de la procédure [SYRELI](https://www.syreli.fr/fr/) évoquée [plus bas](#doa-syreli) dans ce guide, une DOA ne peut pas être couplée à une opération de transfert du nom de domaine. Vous devrez d'abord réaliser votre DOA, puis réaliser une [opération de transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) ou [sortant](/pages/web_cloud/domains/transfer_outgoing_domain) de votre nom de domaine.
 
 **Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)**
 
 ## Prérequis
 
-- Avoir **initié une demande de changement de propriétaire** pour un domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} et pour lequel les procédures indiquées dans notre documentation sur le [changement de propriétaire d'un domaine](/pages/web_cloud/domains/trade_domain) **ne peuvent pas être appliquées**.
+- Avoir **initié une demande de changement de propriétaire** pour un domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/) et pour lequel les procédures indiquées dans notre documentation sur le [changement de propriétaire d'un domaine](/pages/web_cloud/domains/trade_domain) **ne peuvent pas être appliquées**.
 - Avoir un bon de commande de **changement de propriétaire d'un domaine** dans le statut "en cours".
 - Télécharger la **Demande d'Opération AFNIC (DOA)** via le lien suivant : <https://www.afnic.fr/wp-media/uploads/2021/03/doa.pdf>.
 - Accéder à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-La première étape consiste à initier une demande de changement de propriétaire pour votre domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} à l'aide de notre documentation sur le [changement de propriétaire d'un domaine](/pages/web_cloud/domains/trade_domain).
+La première étape consiste à initier une demande de changement de propriétaire pour votre domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/) à l'aide de notre documentation sur le [changement de propriétaire d'un domaine](/pages/web_cloud/domains/trade_domain).
 
 Téléchargez ensuite le document présent sur la page <https://www.afnic.fr/wp-media/uploads/2021/03/doa.pdf>.
 
@@ -157,9 +157,9 @@ Retrouvez ci-dessous la liste des documents à fournir en fonction de la situati
 
 ### Cas particulier : DOA dans le cadre d'une SYRELI (transmission forcée : Recover) + transfert entrant du nom de domaine chez OVHcloud <a name="doa-syreli"></a>
 
-La [procédure de **SY**stème de **RE**solution de **LI**tiges (**SYRELI**)](https://www.syreli.fr/fr/){.external} a été mise au point par [l'AFNIC](https://www.afnic.fr/produits-services/){.external} pour résoudre des situations particulières sur un nom de domaine au sens des articles [L.45-2 et L.45-6 du **C**ode des **P**ostes et des **C**ommunications **E**lectroniques (**CPCE**)](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006150688){.external}. 
+La [procédure de **SY**stème de **RE**solution de **LI**tiges (**SYRELI**)](https://www.syreli.fr/fr/) a été mise au point par [l'AFNIC](https://www.afnic.fr/produits-services/) pour résoudre des situations particulières sur un nom de domaine au sens des articles [L.45-2 et L.45-6 du **C**ode des **P**ostes et des **C**ommunications **E**lectroniques (**CPCE**)](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006150688). 
 
-La procédure SYRELI étant payante, nous vous recommandons de vous assurer qu'elle correspond parfaitement à votre situation. Pour cela, n'hésitez pas à consulter le **règlement**, les **ressources** et les **cas de jurisprudence** mis à disposition par l'AFNIC sur leur site web dédié à la [procédure SYRELI](https://www.syreli.fr/fr/){.external}.
+La procédure SYRELI étant payante, nous vous recommandons de vous assurer qu'elle correspond parfaitement à votre situation. Pour cela, n'hésitez pas à consulter le **règlement**, les **ressources** et les **cas de jurisprudence** mis à disposition par l'AFNIC sur leur site web dédié à la [procédure SYRELI](https://www.syreli.fr/fr/).
 
 Si vous bénéficiez par la suite d'une décision SYRELI favorable pour récupérer la propriété de votre nom de domaine et que vous souhaitez transférer ce dernier chez OVHcloud, suivez les **4 étapes** ci-dessous :
 

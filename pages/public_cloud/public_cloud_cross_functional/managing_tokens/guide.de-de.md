@@ -34,7 +34,7 @@ Da die Token eine festgelegte Gültigkeitsdauer haben, laufen sie aus und müsse
 
 Sollte ein Token vor seinem Ablaufdatum widerrufen werden müssen, kann dies auch über die API erfolgen.
 
-Weitere Informationen finden Sie in der [Dokumentation der OpenStack API](https://docs.openstack.org/keystone/train/api_curl_examples.html){.external}.
+Weitere Informationen finden Sie in der [Dokumentation der OpenStack API](https://docs.openstack.org/keystone/train/api_curl_examples.html).
 
 ### Manuelle Operationen
 
@@ -167,7 +167,7 @@ Connection: close
 
 Es wird empfohlen, Bibliotheken (Libraries) zu verwenden, die eine transparente Verwaltung von Token ermöglichen. Auf diese Weise werden die Token automatisch erstellt, verwendet und verlängert, ohne diese auf Anwendungsebene verwalten zu müssen, indem Sie lediglich der Bibliothek Logindaten bereitstellen.
 
-Es gibt viele Bibliotheken in verschiedenen Sprachen. Für weitere Informationen überprüfen Sie die [offizielle Liste](https://wiki.openstack.org/wiki/SDKs){.external}.
+Es gibt viele Bibliotheken in verschiedenen Sprachen. Für weitere Informationen überprüfen Sie die [offizielle Liste](https://wiki.openstack.org/wiki/SDKs).
 
 #### Löschen des Tokens
 

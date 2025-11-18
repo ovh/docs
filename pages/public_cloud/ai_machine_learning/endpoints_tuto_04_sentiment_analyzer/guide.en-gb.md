@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create a sentiment analyzer
 excerpt: Build a sentiment analyzer with AI Endpoints and Java using Quarkus
-updated: 2025-04-28
+updated: 2025-07-31
 ---
 
 > [!primary]
@@ -90,7 +90,7 @@ Start by adding the necessary dependencies in your `pom.xml`:
 
 ### Define the AI Endpoints client
 
-We define a REST client interface using MicroProfile annotations to interact with the AI Endpoint.
+We define a REST client interface using MicroProfile annotations to interact with the AI Endpoint, in a `AISentimentService.java` file:
 
 ```java
 package com.ovhcloud.examples.aiendpoints.nlp.sentiment;
@@ -119,7 +119,7 @@ public interface AISentimentService {
 
 ### Implement the REST resource
 
-Now let’s create the actual REST resource that uses the `AISentimentService`:
+Now let’s create the actual REST resource that uses the `AISentimentService`, in a `SentimentsAnalysisResource.java` file:
 
 ```java
 package com.ovhcloud.examples.aiendpoints.nlp.sentiment;

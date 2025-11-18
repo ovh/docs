@@ -45,7 +45,7 @@ Data migration usually involves copying files from one server to another. There 
 
 ### Using the backup storage (available only on OVHcloud and So you Start)
 
-With the [Backup Storage](https://www.ovhcloud.com/en-sg/bare-metal/backup-storage/) option, you can store data on a service that is external to your server. It is only linked to the service you ordered it from.
+With the [Backup Storage](/links/bare-metal/backup-storage) option, you can store data on a service that is external to your server. It is only linked to the service you ordered it from.
 
 > [!warning]
 >
@@ -56,7 +56,7 @@ With the [Backup Storage](https://www.ovhcloud.com/en-sg/bare-metal/backup-stora
 
 You can authorise access to the Backup Storage from your new server. This way, you will have a gateway for transferring your data.
 
-See our guide on [using Backup Storage on a dedicated server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage){.external} for more information.
+See our guide on [using Backup Storage on a dedicated server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) for more information.
 
 ### Migrating an Additional IP (only available on OVHcloud and So you Start)
 

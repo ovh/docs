@@ -13,11 +13,11 @@ Access to your vCenter is restricted only to authorized IP addresses.
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Switch to the `Hosted Private Cloud`{.action} tab and click again on `Hosted Private Cloud`{.action} to the left. 
+Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Hosted Private Cloud`{.action} tab and click again on `Hosted Private Cloud`{.action} to the left. 
 
 Select your infrastructure and go to the `Security`{.action} tab.
 

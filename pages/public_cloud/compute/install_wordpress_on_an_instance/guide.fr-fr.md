@@ -1,7 +1,7 @@
 ---
 title: Installer WordPress sur une instance
 excerpt: Découvrez comment utiliser une instance Public Cloud pour héberger des sites WordPress
-updated: 2023-05-17
+updated: 2025-09-23
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPr
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Avoir une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) avec Debian ou Ubuntu installé
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d’un accès administratif (sudo) à votre instance via SSH
@@ -126,10 +126,10 @@ La configuration d’un pare-feu (*iptables*) permet d’améliorer la sécurit�
 debian@instance:~$ sudo apt install ufw
 ```
 
-Les profils concernés portent la mention « WWW » dans la liste des applications :
+Dans la liste des applications disponibles pour UFW, les profils correspondant à un serveur web sont nommés « WWW » sur une instance Debian, et « Apache » sur une instance Ubuntu. Ces profils permettent d’ouvrir les ports nécessaires au trafic HTTP et HTTPS de manière simple et sécurisée.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # ou grep Apache
   WWW
   WWW Cache
   WWW Full
@@ -226,9 +226,9 @@ Une fois validé, vous pourrez vous connecter à l'espace d'administration de vo
 
 > [!primary]
 >
-> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme [Let’s Encrypt](https://letsencrypt.org/){.external} qui propose des certificats gratuits. Vous devrez installer un outil client (comme « Certbot ») et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`.
+> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme [Let’s Encrypt](https://letsencrypt.org/) qui propose des certificats gratuits. Vous devrez installer un outil client (comme « Certbot ») et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`.
 > 
-> En alternative, OVHcloud vous propose la solution [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
+> En alternative, OVHcloud vous propose la solution [SSL Gateway](/links/web/ssl-gateway). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
 >
 
 ### Étape 6 (facultatif) : activer des connexions sécurisées avec Let’s Encrypt

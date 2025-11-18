@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Getting started
 excerpt: Discover AI Deploy and unfold your first application
-updated: 2024-05-29
+updated: 2025-07-01
 ---
 
 > [!primary]
@@ -17,14 +17,14 @@ This guide explains how to get started with OVHcloud AI Deploy, covering the dep
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
-- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions
 
 ### Subscribe to AI Deploy
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `AI Deploy`{.action} in the left-hand navigation bar under **AI & Machine Learning**.
+Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Deploy`{.action}.
 
 Click on the `Deploy an app`{.action} button and accept the terms and conditions if any.
 
@@ -34,7 +34,13 @@ Once clicked, you will be redirected to the creation process detailed below.
 
 ### Deploying your first application
 
-#### Step 1: Select the location
+#### Step 1: Name your application
+
+First, choose a name for your AI Deploy app, or accept the automatically generated name if it meets your needs, to make it easier to manage all your apps.
+
+![AI Deploy app name](images/step-1-name-app.png){.thumbnail}
+
+#### Step 2: Select the location
 
 Select where your AI Deploy app will be hosted, meaning the physical location.
 
@@ -43,55 +49,59 @@ Select where your AI Deploy app will be hosted, meaning the physical location.
 > OVHcloud provides multiple datacenters. You can find the capabilities for AI Deploy in the guide [AI Deploy capabilities](/pages/public_cloud/ai_machine_learning/deploy_guide_01_capabilities).
 >
 
-#### Step 2: Select the application to deploy
+![AI Deploy app location](images/step-2-select-location.png){.thumbnail}
+
+#### Step 3: Assign compute resources and specify scaling strategy
+
+To deploy an AI Deploy app, you must allocate compute resources. The app supports a range of resource configurations:
+
+- **GPU Resources**: 1 to 4 GPUs
+- **CPU Resources**: 1 to 12 CPUs
+
+Note that each instance is billed based on its running time.
+
+Each compute resource includes:
+
+- **CPU or GPU cores**: Processing power for your app
+- **RAM**: Memory of your app
+- **Local Storage**: Storage space for your app
+
+You can adjust the **Resource Size** to customize the allocation of CPU or GPU cores, RAM, and local storage to meet your app's specific needs.
+
+![AI Deploy app resources](images/step-3-app-resources.png){.thumbnail}
+
+#### Step 4: Select the application to deploy
 
 AI Deploy allows a user to deploy applications from two sources:
 
-- From an OVHcloud catalog with already built-in AI models and applications.
 - From your own Docker image, giving you the full flexibility to deploy what you want. This image can be stored on many types of registry ([OVHcloud Managed Private Registry](/links/public-cloud/managed-private-registry), [Docker Hub](https://hub.docker.com/), [GitHub packages](https://github.com/features/packages), ...) and the expected format is `<registry-address>/<image-identifier>:<tag-name>`.
+- From an OVHcloud catalog with already built-in AI models and applications.
 
-In this tutorial, we will select an OVHcloud Docker image to deploy your first **AI Deploy app**.
+In this tutorial, we will use a demonstration OVHcloud Docker image to deploy your first **AI Deploy app**. The objective is to deploy and call a simple **Flask API** which will welcome you by sending back `Hello` followed by the `name` you sent in your request. There is no web interface. What is given is an API endpoint that you can reach via HTTP.
 
-Enter the name of the image: `ovhcom/ai-deploy-hello-world`
+> [!primary]
+>
+> If you want to deploy your own image, you need to comply with a few rules like adding a specific user. Follow our [Build and use custom images](/pages/public_cloud/ai_machine_learning/training_tuto_02_build_custom_image) guide. You might also be interested in [Using and managing your public and private registries](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+>
+
+To use this demonstration OVHcloud docker image, enter the following name as the Custom Docker image: `ovhcom/ai-deploy-hello-world`. Then click on the `+`{.action} button to confirm.
 
 > [!primary]
 >
 > You can find this image on the [OVHcloud DockerHub](https://hub.docker.com/r/ovhcom/ai-deploy-hello-world). For more information about this Docker image, please check the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/apps/getting-started/flask/hello-world-api/Dockerfile).
 >
 
-![AI Deploy app subscribe](images/ai_app_image.png){.thumbnail}
+![AI Deploy app docker image](images/step-4-app-image.png){.thumbnail}
 
-The objective is to deploy and call a simple **Flask API** for a kind of *Hello World*. The API welcomes you on your first **AI Deploy app** by sending back `Hello` followed by the `name` you sent and the end of the sentence.
+#### Step 5: Assign compute resources and specify scaling strategy
 
-> [!primary]
->
-> If you want to deploy your own image, you need to comply with a few rules like adding a specific user. Follow our [Build and use custom images](/pages/public_cloud/ai_machine_learning/training_tuto_02_build_custom_image) guide.
->
+Then you can modify the **Number of replicas** on which your AI Deploy app will be deployed, according to the selected **scaling strategy**.
 
-You can also provide a new Docker command, entrypoint by enabling the `Enter the Docker command to launch in the container` section. This will override the one of your Docker image, if existing.
-
-#### Step 3: Assign compute resources and specify scaling strategy
-
-An AI Deploy app needs compute resources to be deployed, from a minimum of one instance to a maximum of ten.
-Each instance will be billed based on the amount of running time, whether you use your AI Deploy app.
-
-Each node is composed of:
-
-- CPU or GPU resources
-- Local storage
-- Network bandwidth
-
-You can modify the **Resource Size** to adjust the amount of CPU or GPU cores, RAM and Network Bandwidth.
-
-![AI Deploy app details](images/ai_app_gpus.png){.thumbnail}
-
-Then you can modify the **Number of instances** on which your AI Deploy app will be deployed, according to the selected scaling strategy.
-
-![AI Deploy app details](images/ai_app_scaling_strategies.png){.thumbnail}
+![AI Deploy app scaling strategies](images/step-5-scaling-strategies.png){.thumbnail}
 
 **When to choose static scaling?**
 
-The **static scaling** strategy allows you to choose the number of replicas on which the app will be deployed. For this method, the minimum number of replicas is **1** and the maximum is **10**.
+The **static scaling** strategy allows you to choose a fixed number of replicas on which the app will be deployed. For this method, the minimum number of replicas is **1** and the maximum is **10**.
 
 - Static scaling can be used if you want to have fixed costs.
 - This scaling strategy is also useful when your consumption or inference load is fixed.
@@ -104,15 +114,42 @@ With the **autoscaling strategy**, it is possible to choose both the minimum num
 
 More generally, a minimum of 2 instances are required to benefit from High Availability.
 
-For our first deployment, we will select two instances.
+#### Step 6: HTTP default port
 
-#### Step 4: Attach containers (optional)
+The default HTTP exposed port for your app's URL is `8080`. However, if you are using a specific framework that requires a different port, you can override the default port and configure your application to use the desired alternative port.
 
-If your application is based on external data, such as scripts or models, you can upload this data to an Object Storage or a GitHub repository beforehand. 
+![AI Deploy app port](images/step-6-app-port.png){.thumbnail}
 
-This data can be mounted on your app during this step. Indeed, you will have the option to import some Object Storage or GitHub repositories, ensuring all required components are integrated for the successful operation of your AI application. You can attach as many volumes as you want to your app with various options.
+#### Step 7: Access rule
+
+Next parameter to set is the **Confidentiality**. You can opt for **public access** (open to the internet) or **restricted access**.
+
+Public access means that everyone is authorized. Use this option carefully. Usually public access is used for tests, but not in production since everyone will be able to use your app.
+
+On the other hand, a secured access will require credentials to access the app. Two options are available in this case:
+
+- An AI Platform user. It can be seen as a user and password restriction. Quite simple but not a lot of granularity.
+- An AI token (preferred solution). A token is very effective since you can link them with labels. This will be explained in [Step 8](#step-8-advanced-configuration-optional).
+
+We will select **Restricted Access** for this deployment.
+
+![AI Deploy app confidentiality](images/step-7-app-confidentiality.png){.thumbnail}
+
+#### Step 8: Advanced configuration (optional)
+
+This step allows you to customize your AI Deploy app with additional features. You can choose to configure one, several, or none of the options below.
+
+**Commands**
+
+You can override the default Docker command (entrypoint) with a custom command. This is useful if your Docker image has a specific entrypoint that you want to modify.
+
+**Volumes**
+
+If your application requires external data to work, such as scripts or models, you can upload this data to Swift, S3 compatible containers, or private/public Git repositories, and then mount these storage solutions on your app.
 
 You can also mount an Object Storage as an output folder for example, to retrieve the data generated by your application.
+
+You can attach as many volumes as you want to your app with various options.
 
 In both cases, you will have to specify:
 
@@ -121,72 +158,65 @@ In both cases, you will have to specify:
 
 There are also optional parameters:
 
-- `Prefix`: Objects in the container are filtered on the basis of this prefix, only matching objects are synced.
-- `Authorisation`: The permission rights on the mounted data. Available rights are **Read Only (ro)**, **Read Write (rw)**. Default value is rw.
+- `Authorisation`: The permission rights on the mounted data. Available rights are **Read Only (ro)**, **Read Write (rw)**. Default value is ro.
 - `Cache`: Whether the synced data should be added to the project cache. Data in the cache can be used by other apps without additional synchronization. To benefit from the cache, the new apps also need to mount the data with the cache option.
 
-To learn more about data, volumes and permissions, check out the [data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) page.
+To learn more about data, volumes and permissions, check out the [data page](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data).
 
-#### Step 5: Configure your AI Deploy app
+![AI Deploy app volumes](images/step-8-app-volumes.png){.thumbnail}
 
-First, choose a name for your AI Deploy app, or accept the automatically generated name if it meets your needs, to make it easier to manage all your apps.
+**Labels**
 
-Then, you have the option to add some Key/Value labels to filter or organize your AI Deploy app access.
+Then, you have the option to add some Key/Value labels to filter or organize access to your AI Deploy app.
 
 As an example, add a label with **Key=owner** and **Value=elea**.
 
-![AI Deploy app label](images/ai_app_labels.png){.thumbnail}
+![AI Deploy app labels](images/step-8-app-labels.png){.thumbnail}
 
-This will make the application accessible only to users who have the token associated with this label (key/value).
+This will make the application accessible only to users who have the token associated with this label (key/value). This will restrict access to users with a token associated with this label (key-value).
 
-Moreover, the default exposed port for your app's URL is `8080`. However, if you are using a specific framework that requires a different port, you can override the default port and configure your application to use the desired alternative port.
+Learn more about this feature in the [dedicated tutorial](/pages/public_cloud/ai_machine_learning/deploy_guide_03_tokens).
 
-![AI Deploy app configuration](images/ai_app_configuration.png){.thumbnail}
+**Availability probe**
 
-The last parameter to select is the **Access rule**. You can opt for unrestricted access (open to the internet) or secured access.
+Finally, you can enable the `Readliness probe` feature. To do so, provide:
+- **Probe API endpoint**: the `/health` endpoint of your app.
+- **Probe port**: The port associated with the probe endpoint.
 
-Unrestricted access means that everyone is authorized. Use this option carefully. Usually public access is used for tests, but not in production since everyone will be able to use your app.
+This allows you to monitor the health of your app and ensure it is ready to receive traffic.
 
-On the other hand, a secured access will require credentials to access the app. Two options are available in this case:
+#### Step 9: Review and launch your AI Deploy app
 
-- An AI Platform user. It can be seen as a user and password restriction. Quite simple but not a lot of granularity.
-- An AI token (preferred solution). A token is very effective since you can link them with labels as we did in step 5 (**Key=owner**; **Value=elea**). For example, a token for a specific app ID, for a team, ...
+This final step provides a summary of your AI Deploy app deployment, allowing you to review the previously selected options and parameters.
 
-We will select **Restricted Access** for this deployment.
+You can also generate the equivalent `ovhai` CLI command, which enables you to deploy the same application using the command line interface. This CLI can be downloaded [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). For more information, consult the [CLI - Launch an AI Deploy app](/pages/public_cloud/ai_machine_learning/cli_18_howto_deploy_app) documentation.
 
-#### Step 6: Review and launch your AI Deploy app
+To launch your AI Deploy app, click on `Order now`{.action}. Please note that your app will not be immediately available, as it requires some time to:
 
-This final step is a summary of your AI Deploy app deployment. You can review the previously selected options and parameters.
-Launch your AI Deploy app by clicking on `Deploy an AI Deploy app`{.action}.
+- Pull the Docker image
+- Mount any configured data volumes 
 
-Congratulations, your first AI Deploy app is now running on production!
+Once the deployment is complete, your first AI Deploy app will be running on production and ready to be accessed.
 
-The same deployment process can be carried out with the `ovhai` CLI, which can be downloaded [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). For more information, consult the [CLI - Launch an AI Deploy app](/pages/public_cloud/ai_machine_learning/cli_18_howto_deploy_app) documentation.
-
-### Connect to your first AI Deploy app
-
-AI Deploy can be your own Docker container or applications proposed by the OVHcloud ecosystem.
-
-In this tutorial, we deployed a Flask API allowing us to return.
-There is no web interface. What is given is an API endpoint that you can reach via HTTP.
+### Connect to your AI Deploy app
 
 #### Step 1: Check your AI Deploy app status
 
-First, go check your app details and verify that your AI Deploy app has reached the **RUNNING** status. Please also verify that your labels are clearly mentioned.
-
-In this example, we added the label **owner=elea** and two labels were automatically added by OVHcloud.
+First, go check your app details and verify that your AI Deploy app has reached the **In service** status.
 
 ![AI Deploy app details](images/ai_app_details.png){.thumbnail}
 
+For your information, you can access your deployed application by clicking the `HTTP access`{.action} blue button, which will expose the default HTTP port of your app. However, since we have deployed a Flask API in this tutorial, you won't be able to access it through the `HTTP access`{.action} button as no interface was deployed.
+
 #### Step 2: Generate a security token
 
-During the AI Deploy apps deployment process, we selected "restricted access". To query your app, you first need a valid security token.
+During the AI Deploy apps deployment process, we selected `Restricted access`. To query your app, you first need a valid security token.
 
-In your OVHcloud Control Panel left menu, go to the `AI Dashboard`{.action} in the `AI & Machine Learning`{.action} section. Select the `Users & tokens`{.action} tab.
+In your OVHcloud Control Panel left menu, go to the `AI Dashboard`{.action} in the `AI & Machine Learning`{.action} section. Select the `Tokens`{.action} tab.
 
-Click on the `Create a token`{.action} button then fill in a name, a label selector, a role and region as below:
+Click on the `+ Create a token`{.action} button then fill in a name, a label selector, a role and region as below:
 
-![AI Deploy app details](images/ai_app_token.png){.thumbnail}
+![AI Deploy token creation](images/step-10-token-creation.png){.thumbnail}
 
 A few explanations:
 
@@ -209,7 +239,7 @@ In our case, the exact cURL code is:
 ```bash
  curl --request POST
     --url https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.ai.cloud.ovh.net
-    -H "Authorization: Bearer WixOC/dmSoK3d0YSd20UvLMzbSVxMTMosnz6FcBQOQDlqxAsR5BezCVKtYfu18e"
+    -H "Authorization: Bearer $YOURTOKENHERE"
     --header 'Content-Type: application/json'
     --data ' "Elea" '
 ```
@@ -226,9 +256,14 @@ If you see this message with the **name** you provided, you have successfully la
 
 If you want to query this API with Python, this code sample with Python Request library may suit you:
 
+```bash
+export AI_APP_TOKEN=token_value
+``````
+
 ``` python
 import requests
 import json
+import os
 from requests.structures import CaseInsensitiveDict
 
 url = "https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.ai.cloud.ovh.net"
@@ -236,7 +271,8 @@ url = "https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.ai.cloud.ovh.net"
 headers = CaseInsensitiveDict()
 headers = {'content-type': 'application/json',
            'Accept-Charset': 'UTF-8',
-           'Authorization': 'Bearer WixOC/dmSoK3d0YSd20UvLMzbSVxMTMosnz6FcBQOQDlqxAsR5BezCVKtYfu18eC'}
+           'Authorization': f"Bearer {os.getenv('AI_APP_TOKEN')}
+           }
 
 data = "Elea"
 j_data = json.dumps(data)
@@ -265,16 +301,16 @@ You have the flexibility to keep your AI Deploy app running for an indefinite pe
 >>
 >> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
->> Then, select the `AI Deploy`{.action} section (in the Storage category) and access the details of your application by clicking on its UUID. 
+>> Then, select the `AI Deploy`{.action} section, which allows you to manage and access all your created apps.
 >> 
->> Then, you will be able to click the `...`{.action} button, and stop your AI Deploy application.
+>> Locate the specific AI Deploy app you want to stop. Click the `...`{.action} button and stop your AI Deploy application by selecting `Stop`{.action} from the context menu.
 >>
->> ![image](images/ai_app_stop.png){.thumbnail}
+>> ![image](images/step-11-stop-app.png){.thumbnail}
 >>
 >> Once stopped, your AI Deploy app will free up the previously allocated compute resources. Your endpoint is kept and if you restart your AI Deploy app, the same endpoint can be reused seamlessly.
 >> Also, when you stop your app, you no longer book compute resources which means you don't have expenses for this part. Only expenses for attached storage may occur.
 >>
->> If you want to completely **delete** your AI Deploy app, just click on the `delete`{.action} action.
+>> If you want to completely **delete** your AI Deploy app, select the `Delete`{.action} action.
 >> Be sure to also delete your Object Storage data if you don't need it anymore, by going in the `Object Storage`{.action} section (in the Storage category).
 >>
 > **Using ovhai CLI**
@@ -301,7 +337,7 @@ You have the flexibility to keep your AI Deploy app running for an indefinite pe
 >> ovhai app delete <APP_UUID>
 >> ```
 >> 
->> Be sure to also delete your Object Storage data if you don't need it anymore. To do this, you will need to empty it first, then delete it:  
+>> Be sure to also delete your Object Storage data if you don't need it anymore. To do this, you will need to empty it first, then delete it:
 >>
 >> ```bash
 >> ovhai bucket object delete --all <object_storage_name>@<region>

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Introdução ao Object Storage (EN)
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2025-06-04
+updated: 2025-09-30
 ---
 
 <style>
@@ -51,7 +51,7 @@ This guide is designed to familiarise you with the management of your containers
 
 /// details | To use the AWS CLI
 
-To find out how to install the AWS CLI in your environment, we recommend you to read [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions){.external}.
+To find out how to install the AWS CLI in your environment, we recommend you to read [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
 
 **Check installation**
 
@@ -61,7 +61,7 @@ user@host:~$ aws --version
 
 > [!primary]
 >
-> If you need more information about AWS CLI installation, read the [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}.
+> If you need more information about AWS CLI installation, read the [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 >
 
 #### Collect Credentials
@@ -73,7 +73,7 @@ user@host:~$ aws --version
 
 Click on the name of your bucket to view its details and content:
 
-![Bucket details](images/highperf-create-container-20220928091433895.png){.thumbnail}
+![Bucket details](images/object_storage_information_panel.png){.thumbnail}
 
 #### Configuration
 
@@ -178,7 +178,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 > Via the OVHcloud Control Panel
 >> Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
 >>
->> ![My Dashboard containers](images/01-object-storage-bucket-listing.png){.thumbnail}
+>> ![My Dashboard containers](images/object_storage_list.png){.thumbnail}
 
 #### Create a bucket
 
@@ -225,27 +225,27 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ![Select a region](images/object-storage-bucket-creation-step3.png){.thumbnail}
 >>
->> You must link a user to the bucket:
->>
->> ![Link to user](images/object-storage-bucket-creation-step4_1.png){.thumbnail}
->>
->> To do this, you can link an existing Object Storage user:
->>
->> ![Link to user](images/object-storage-bucket-creation-step4_2.png){.thumbnail}
->>
->> You can view the user credentials by clicking on `View credentials`{.action}:
->>
->> ![view credentials](images/object-storage-bucket-creation-step4_3.png){.thumbnail}
->>
->> Or you can create a new Object Storage user:
->>
->> ![Create an Object Storage user](images/object-storage-bucket-creation-step4_4.png){.thumbnail}
+>> > [!primary]
+>> >
+>> > If you selected the 3AZ deployment mode, an additional step will appear to configure offsite replication.
+>> >
+>> > ![enabling offsite replication](images/object-storage-creation-step-offsite-replication.png){.thumbnail}
+>> >
 >>
 >> At this stage, you can decide whether or not to enable **versioning**.
 >>
 >> Versioning allows you to keep multiple variants of an object in the same bucket. This feature helps **preserve, retrieve, and restore every version of every object stored in your buckets**, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it. Find more information about versioning on our [dedicated guide](/pages/storage_and_backup/object_storage/s3_versioning).
 >>
->> ![Enabling versioning](images/object-storage-bucket-creation-step5.png){.thumbnail}
+>> ![Enabling versioning](images/object-storage-bucket-creation-step4.png){.thumbnail}
+>>
+>> You must link a user to the bucket:
+>>
+>> ![Link to user](images/object-storage-bucket-creation-step5.png){.thumbnail}
+>>
+>> To do this, you can either:
+>>
+>> - Link an existing Object Storage user. To check the credentials, click on `View credentials`{.action}.
+>> - Or create a new Object Storage user.
 >>
 >> You can now decide whether or not you wish to **encrypt your data** using [SSE-OMK (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 >>
@@ -262,7 +262,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> Congratulations, your bucket is created:
 >>
->> ![Result](images/01-object-storage-bucket-listing.png)
+>> ![Result](images/object_storage_list.png){.thumbnail}
 >>
 
 #### Uploading your files as objects in your bucket
@@ -316,15 +316,15 @@ As part of the object upload process to an Object Storage bucket, users can sele
 > Via the OVHcloud Control Panel
 >> Click on the `name of your container`{.action}:
 >>
->> ![Go in bucket](images/go-in-bucket.png){.thumbnail}
+>> ![Go in bucket](images/object_storage_list_selection.png){.thumbnail}
 >>
 >> Click on `Add objects`{.action}
 >>
->> ![Upload file](images/upload-file.png){.thumbnail}
+>> ![Upload file](images/object_storage_add_object.png){.thumbnail}
 >>
 >> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class. Finally, select the file you are about to download and click on the `Import`{.action} button.
 >>
->> ![upload file window](images/upload-files-window.png)
+>> ![upload file window](images/object_storage_add_object_window.png){.thumbnail}
 
 #### Downloading an object from a bucket
 
@@ -372,7 +372,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 > Via the OVHcloud Control Panel
 >> Click on the `...`{.action} button on the object line, then click `Download`{.action}.
 >>
->> ![Download file from bucket](images/download-file-from-bucket.png){.thumbnail}
+>> ![Download file from bucket](images/object_storage_items_download.png){.thumbnail}
 
 #### Synchronising buckets
 
@@ -384,7 +384,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> aws s3 sync s3://<bucket_name> s3://<bucket_name_2> # Synchronising an S3 bucket to another one
 >> ```
 
-**Deleting objects and buckets**
+#### Deleting objects and buckets
 
 > [!primary]
 >
@@ -469,7 +469,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> In the list of object storage containers, click on the `...`{.action} button on the containers line, then click `Delete`{.action}.
 >>
->> ![Delete bucket](images/delete-bucket.png){.thumbnail}
+>> ![Delete bucket](images/object_storage_list_delete.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action}.
 >>
@@ -477,12 +477,12 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> Go to the relevant bucket and click on the `...`{.action} button on the object line, then click `Delete`{.action}.
 >>
->> ![Delete file](images/delete-file.png){.thumbnail}
+>> ![Delete file](images/object_storage_items_delete.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action}.
 >>
 
-**Manage tags**
+#### Manage tags
 
 > [!tabs]
 > Via AWS CLI

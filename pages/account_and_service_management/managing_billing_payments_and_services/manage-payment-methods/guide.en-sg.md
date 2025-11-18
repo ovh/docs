@@ -89,7 +89,7 @@ If you would like to delete all of your payment methods, all of your services mu
 
 #### Delete a payment method via the OVHcloud API
 
-You can delete a payment method via the API by connecting to [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+You can delete a payment method via the API by connecting to [https://eu.api.ovh.com/](/links/api).
 
 Start by getting the payment method’s ID:
 

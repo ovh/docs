@@ -1,12 +1,8 @@
 ---
 title: "Instalacja cPanel na serwerze VPS"
 excerpt: "Dowiedz się, jak utworzyć instancję VPS przy użyciu wstępnie zainstalowanej aplikacji cPanel"
-updated: 2024-01-31
+updated: 2025-09-11
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -24,12 +20,16 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [VPS](https://www.ovhcloud.com/pl/vps/){.external} z dystrybucją [kompatybilną](https://www.ovhcloud.com/pl/vps/os/).
+- Wykupienie usługi [VPS](/links/bare-metal/vps) z dystrybucją [kompatybilną](/links/bare-metal/vps-os).
 - zalogowanie do [Panelu client OVHcloud](/links/manager).
+
+> [!warning]
+> Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## W praktyce
 
-Jeśli posiadasz już serwer VPS i chcesz na nim zainstalować cPanel, możesz wykonać reinstalację serwera VPS z poziomu [Panelu klienta OVHcloud](/links/manager) przez [OS kompatybilny z cPanelem](https://www.ovhcloud.com/pl/vps/os/).
+Jeśli posiadasz już serwer VPS i chcesz na nim zainstalować cPanel, możesz wykonać reinstalację serwera VPS z poziomu [Panelu klienta OVHcloud](/links/manager) przez [OS kompatybilny z cPanelem](/links/bare-metal/vps-os).
 
 > [!warning]
 >
@@ -38,7 +38,7 @@ Jeśli posiadasz już serwer VPS i chcesz na nim zainstalować cPanel, możesz w
 
 Aby zainstalować serwer cPanel, zamów VPS z dystrybucją cPanel.
 
-![cPanel](images/cpanel_order.png){.thumbnail}
+![cPanel](images/cpanel-order.png){.thumbnail}
 
 Gdy VPS jest gotowy, otrzymasz wiadomość e-mail dającą dostęp do logowania do serwera cPanel:
 
@@ -110,4 +110,4 @@ Zalecamy również zapoznanie się z naszym przewodnikiem dotyczącym [zabezpiec
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

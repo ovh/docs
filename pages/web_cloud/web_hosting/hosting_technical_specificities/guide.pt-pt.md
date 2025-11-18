@@ -12,8 +12,8 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting){.external} compatível.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting) compatível.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -170,7 +170,7 @@ Descubra como [aceder ao espaço de armazenamento FTP do seu alojamento web](/pa
 > A OVHcloud fornece um serviço de backup automático dos dados, bem como a disponibilização desses backups. No entanto, continua a ser um *não contratual* e está presente em complemento dos seus serviços. Efetivamente, é da sua responsabilidade implementar a sua própria política de restauro e determinar pontos de restauro nos momentos que julgar oportunos.
 >
 
-Para as bases de dados partilhadas (incluídas na sua oferta de alojamento web) ou os servidores de bases de dados (Web Cloud Databases), propostos em Gravelines (GRA), em França e em Beauharnois (BHS), no Canadá, o backup das bases de dados é efetuado todos os dias. Estes backups estão acessíveis (através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pt/&ovhSubsidiary=pt){.external} ou através das [API OVHcloud](https://api.ovh.com/)). Os backups são também armazenados noutra infraestrutura. Estes dados são replicados num datacenter situado em Estrasburgo (SBG). A política de retenção dos backups é de 30 dias.
+Para as bases de dados partilhadas (incluídas na sua oferta de alojamento web) ou os servidores de bases de dados (Web Cloud Databases), propostos em Gravelines (GRA), em França e em Beauharnois (BHS), no Canadá, o backup das bases de dados é efetuado todos os dias. Estes backups estão acessíveis (através da [Área de Cliente OVHcloud](/links/manager) ou através das [API OVHcloud](/links/api)). Os backups são também armazenados noutra infraestrutura. Estes dados são replicados num datacenter situado em Estrasburgo (SBG). A política de retenção dos backups é de 30 dias.
 
 Saiba como é que [Obter a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export) no manual.
 

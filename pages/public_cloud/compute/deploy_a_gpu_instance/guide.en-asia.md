@@ -47,7 +47,7 @@ lspci | grep -i nvidia
 00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
 ```
 
-The graphics card is there, but cannot be used yet. To do so, you must first install the NVIDIA driver. You can find the list of packages at this address: [List of available Linux packages](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+The graphics card is there, but cannot be used yet. To do so, you must first install the NVIDIA driver. You can find the list of packages at this address: [List of available Linux packages](https://developer.download.nvidia.com/compute/cuda/repos/).
 
 You will then need to enter the following commands:
 
@@ -149,7 +149,7 @@ Enter the IPv4 address of your instance and "Administrator" as the user, then ty
 If you experience any issues with this procedure, verify that remote (RDP) connections are allowed on your device by checking your system settings, firewall rules and possible network restrictions.
 >
 
-Once you have connected to your instance, you will need to install the NVIDIA driver from the [official website](https://www.nvidia.com/Download/index.aspx){.external}.
+Once you have connected to your instance, you will need to install the NVIDIA driver from the [official website](https://www.nvidia.com/Download/index.aspx).
 
 Afterwards, all that’s left to do is to install the required driver, which will then be displayed here:
 

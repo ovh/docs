@@ -1,7 +1,7 @@
 ---
 title: 'Gérer les contacts de ses services'
 excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
-updated: 2025-04-28
+updated: 2025-08-27
 ---
 
 ## Objectif
@@ -10,20 +10,17 @@ La plupart des services créés chez OVHcloud sont gérés par plusieurs contact
 
 **Apprenez à gérer les contacts de vos services OVHcloud.**
 
-> [!warning]
->
-> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
->
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
->
+> [!primary]
+> OVHcloud met à disposition un système de gestion de [politique d'accès IAM](/pages/account_and_service_management/account_information/iam-policy-ui/) permettant de déléguer des accès à d'autres comptes clients.  
+> Les politiques d'accès IAM permettent de définir des permissions d'accès granulaires tout en gardant la traçabilité des actions.
 
 ## Définition
 
 Trois types de contacts existent:
 
-- **le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du propriétaire d'un service, comme les noms de domaine par exemple.
-- **le contact technique** gère uniquement les aspects techniques d'un service.
-- **le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
+- **Le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du propriétaire d'un service, comme les noms de domaine par exemple.
+- **Le contact technique** gère uniquement les aspects techniques d'un service.
+- **Le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
 
 L'identifiant client est un identifiant personnel que vous recevez par e-mail lors de la création de votre compte client chez OVHcloud. Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **aa00000-ovh**. Lorsque vous commandez des services, cet identifiant leur est associé en tant que contact.
 
@@ -31,12 +28,15 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
 - Disposer de droits suffisants sur le service concerné.
 - Posséder l'identifiant client du nouveau contact (pour qui vous réalisez la modification).
 - Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail renseignée dans son profil.
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
+
+> [!warning]
+> Si vous souhaitez effectuer un changement de contacts pour vos services de téléphonie OVHcloud, veuillez suivre [notre guide dédié](/pages/web_cloud/phone_and_fax/voip/effectuer_un_changement_de_contact_pour_les_services_voip).
 
 ## En pratique
 
@@ -112,7 +112,7 @@ Le changement de contact sera effectif quelques minutes après que les deux cont
 
 ### Exemple de cas concret : confier la gestion technique de votre site à votre webmaster <a name="use-case"></a>
 
-Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
+Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](/links/partner) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
 
 > [!warning]
 >
@@ -142,7 +142,7 @@ Le suivi de chaque procédure s'effectue par e-mail et une vérification d'ident
 
 ## Aller plus loin <a name="gofurther"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

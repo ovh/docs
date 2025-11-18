@@ -32,14 +32,14 @@ The easiest way to deploy services behind the Load Balancer while keeping the so
 
 The `Ingress` is exposed to the outside of the cluster either via  `LoadBalancer`, and it routes incoming traffic to your services according to configured rules. And additional advantage of this setting is the cost: you can have lots of services behind a single `LoadBalancer`.
 
-In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx){.external}, where an NGINX server take the role of reverse proxy.
+In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx), where an NGINX server take the role of reverse proxy.
 
 ### 1. Installing the NGINX Ingress Controller
 
 We can deploy the official **NGINX Ingress Controller** with the manifest file or with the Helm chart.  
 Please choose one way or the other and follow the corresponding paragraph.
 
-#### 1. Installing with the manifest file
+#### Installing with the manifest file
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
@@ -69,7 +69,7 @@ rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
 serviceaccount/ingress-nginx-admission created
 ```
 
-#### 2. Installing with the Helm chart
+#### Installing with the Helm chart
 
 ```bash
 helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace
@@ -127,7 +127,7 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
   type: kubernetes.io/tls
 ```
 
-#### 3. Check your deployment
+#### Check your deployment
 
 You can use `kubectl` to get the state of the service and recover the Load Balancer's IP:
 
@@ -153,7 +153,7 @@ Now you need to patch the Ingress controller to support the proxy protocol.
 > [!warning]
 > Depends on your Kubernetes cluster is working with private network or not, the proxy protocol configuration differs. Follow the tutorial parts according to your setup.
 
-#### 1a. [PUBLIC NETWORK ONLY] Get the list of the egress load balancer IPs
+#### a. [PUBLIC NETWORK ONLY] Get the list of the egress load balancer IPs
 
 ```bash
 kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
@@ -166,7 +166,7 @@ $ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metad
 aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
 ```
 
-#### 1b. [PRIVATE NETWORK ONLY] Get the list of the egress load balancer IPs
+#### b. [PRIVATE NETWORK ONLY] Get the list of the egress load balancer IPs
 
 When your Managed Kubernetes cluster is attached to a vRack, load balancers will take two random IP addresses each. **Your egress IP list is your subnet range**.
 
@@ -176,7 +176,7 @@ For the rest of this documentation, we consider our subnet uses the `10.0.0.0/20
 
 We can update the NGINX Ingress Controller configuration with manifest files or with Helm. Please choose one way or the other and follow the corresponding paragraph.
 
-#### 2. Patching with manifest files
+#### Patching with manifest files
 
 Copy the next YAML snippet in a `patch-ingress-controller-service.yml` file:
 
@@ -236,7 +236,7 @@ $ kubectl -n ingress-nginx patch configmap  ingress-nginx-controller -p "$(cat p
 configmap/ ingress-nginx-controller patched
 ```
 
-#### 3. Patching with Helm
+#### Patching with Helm
 
 Copy the next YAML snippet in a `values.yaml` file and modify the `proxy-real-ip-cidr` parameter according to your cluster configuration:
 
@@ -257,7 +257,7 @@ controller:
     proxy-real-ip-cidr: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32"
 ```
 
-#### a. [PRIVATE NETWORK ONLY]
+#### b. [PRIVATE NETWORK ONLY]
 
 ```yaml
 controller:
@@ -285,6 +285,7 @@ helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx -f value
 ```
 
 You should see your Helm release being upgraded:
+
 ```console
 $ helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx -f values.yaml
 Release "ingress-nginx" has been upgraded. Happy Helming!
@@ -332,7 +333,7 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
   type: kubernetes.io/tls
 ```
 
-### 4. Testing
+### 3. Testing
 
 > [!warning]
 > Due to DNS propagation the actual resolving of your Load Balancer FQDN can take an additional 2-5 minutes to be fully usable. In the meantime, you can use the included IP to access the load balancer.  
@@ -479,6 +480,6 @@ The precedent method should work in a similar way for any Ingress Controller. We
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

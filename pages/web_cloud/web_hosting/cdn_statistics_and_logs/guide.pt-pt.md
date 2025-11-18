@@ -1,7 +1,7 @@
 ---
 title: "Alojamento Web - Consultar as estatísticas e logs CDN"
 excerpt: "Saiba como consultar as estatísticas e os logs CDN do seu website graças à sua oferta de alojamento web"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -37,6 +37,8 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 > **Etapa 3**
 >>
 >> Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
 >> Na parte `Estatísticas das visitas`, clique no botão `Ver estatísticas`{.action}.
 >>
@@ -74,6 +76,8 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 > **Etapa 3**
 >>
 >> Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
 >> Na parte `Logs do website`, clique no botão `Consultar o logs`{.action}.
 >>

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Create an application to play rock paper scissors with YoloV8
 excerpt: How to build an application based on the computer vision with YoloV8
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ In order to do this, you will use [Streamlit](https://streamlit.io/), a Python f
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have created an AI Deploy project inside a Public Cloud project.
 - You have created a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 - You have [Docker](https://www.docker.com/get-started) installed on your machine.
@@ -111,11 +111,19 @@ ENV HOME=/workspace
 ```
 ### Build the Docker image from the Dockerfile
 
-Launch the following command from the **Dockerfile** directory to build your application image:
+Launch one of the following commands from the **Dockerfile** directory to build your application image:
 
-```bash
+```console
+# Build the image using your machine's default architecture
 docker build . -f Dockerfile -t <shared-regristry-name>/rock-paper-scissors-app:1.0.0
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -f Dockerfile -t <shared-regristry-name>/rock-paper-scissors-app:1.0.0 .
 ```
+
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
 
 ### Push the image into the shared registry
 
@@ -166,7 +174,7 @@ ovhai app run \
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

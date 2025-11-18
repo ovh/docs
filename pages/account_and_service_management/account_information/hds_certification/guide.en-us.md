@@ -32,7 +32,6 @@ Clients using HDS products must subscribe to a Business or Enterprise support. T
 | AI Deploy | yes | 
 | AI Notebooks | yes | 
 | AI Training | yes | 
-| Data Processing | yes | 
 | Kubernetes | yes |
 | Search engine software platform | yes excluding Essential and Discovery plans | 
 | Timeseries | yes excluding Essential and Discovery plans |

@@ -1,7 +1,7 @@
 ---
 title: "Comment connecter un produit compatible en utilisant le protocole KMIP"
 excerpt: "Comment communiquer avec le KMS OVHcloud avec le protocole KMIP"
-updated: 2025-05-12
+updated: 2025-07-11
 ---
 
 ## Objectif
@@ -52,30 +52,31 @@ Vous pouvez aussi utiliser notre SDK pour Go : <https://github.com/ovh/kmip-go>
 
 Les opérations KMIP avec un utilisateur IAM nécessitent des droits spécifiques listés ci-dessous
 
-| Opération KMIP | Description | Action |
-| -------------- | ----------- | ------ |
-| Create | Créer un objet managé | okms:kmip:create |
-| Get | Lister un objet managé | okms:kmip:get |
-| Register | Enregistrer un objet managé| okms:kmip:register |
-| Activate | Activer un objet managé | okms:kmip:activate |
-| Revoke | Révoquer un objet managé | okms:kmip:revoke |
-| Destroy | Détruire un objet managé | okms:kmip:destroy |
-| CreateKeyPair | Créer une paire de clé | okms:kmip:createKeyPair |
-| AddAttribute | Ajouter un attribut à un objet managé | okms:kmip:addAttribute |
-| GetAttributes | Lister les attributs d'un objet managé | okms:kmip:getAttributes |
-| GetAttributeList | Lister les noms d'attributs | okms:kmip:getAttributeList |
-| ModifyAttribute | Modifier l'attribut d'un objet managé | okms:kmip:modifyAttribute |
-| DeleteAttribute | Supprimer l'attribut d'un objet managé | okms:kmip:deleteAttribute |
-| Locate | Localiser un objet managé | okms:kmip:locate |
-| Archive | Archiver un objet managé | okms:kmip:archive |
-| Recover | Restorer un objet managé | okms:kmip:recover |
-| ReKey | Rekey un objet managé | okms:kmip:rekey |
-| ObtainLease | Obtenir le lease d'un objet managé | okms:kmip:obtainLease |
+| Opération KMIP     | Description                                    | Action                       |
+| ------------------ | ---------------------------------------------- | ---------------------------- |
+| Create             | Créer un objet managé                          | okms:kmip:create             |
+| Get                | Lister un objet managé                         | okms:kmip:get                |
+| Register           | Enregistrer un objet managé                    | okms:kmip:register           |
+| Activate           | Activer un objet managé                        | okms:kmip:activate           |
+| Revoke             | Révoquer un objet managé                       | okms:kmip:revoke             |
+| Destroy            | Détruire un objet managé                       | okms:kmip:destroy            |
+| CreateKeyPair      | Créer une paire de clés                        | okms:kmip:createKeyPair      |
+| AddAttribute       | Ajouter un attribut à un objet managé          | okms:kmip:addAttribute       |
+| GetAttributes      | Lister les attributs d'un objet managé         | okms:kmip:getAttributes      |
+| GetAttributeList   | Lister les noms d'attributs                    | okms:kmip:getAttributeList   |
+| ModifyAttribute    | Modifier l'attribut d'un objet managé          | okms:kmip:modifyAttribute    |
+| DeleteAttribute    | Supprimer l'attribut d'un objet managé         | okms:kmip:deleteAttribute    |
+| Locate             | Localiser un objet managé                      | okms:kmip:locate             |
+| Archive            | Archiver un objet managé                       | okms:kmip:archive            |
+| Recover            | Restaurer un objet managé                      | okms:kmip:recover            |
+| ReKey              | Regénérer une clé                              | okms:kmip:rekey              |
+| Re-key Key Pair    | Regénérer une paire de clés                    | okms:kmip:rekeyKeyPair       |
+| ObtainLease        | Obtenir le lease d'un objet managé             | okms:kmip:obtainLease        |
 | GetUsageAllocation | Lister l'allocation d'usage  d'un objet managé | okms:kmip:getUsageAllocation |
-| Encrypt | Chiffer avec un objet managé | okms:kmip:encrypt |
-| Decrypt | Déchiffrer avec un objet managé | okms:kmip:decrypt |
-| Sign | Signé avec un objet managé | okms:kmip:sign |
-| Signature Verify | Vérifier avec un objet managé | okms:kmip:signatureVerify |
+| Encrypt            | Chiffrer avec un objet managé                  | okms:kmip:encrypt            |
+| Decrypt            | Déchiffrer avec un objet managé                | okms:kmip:decrypt            |
+| Sign               | Signer avec un objet managé                    | okms:kmip:sign               |
+| Signature Verify   | Vérifier avec un objet managé                  | okms:kmip:signatureVerify    |
 
 ### Couverture KMIP
 
@@ -92,169 +93,169 @@ Le détail de la couverture est disponible ci-dessous.
 
 #### Messages
 
-|                      | v1.0 | v1.1 | v1.2 | v1.3 | v1.4 |
-| -------------------- | ---- | ---- | ---- | ---- | ---- |
-| Request Message      |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Response Message     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
+|                  | v1.0 | v1.1 | v1.2 | v1.3 | v1.4 |
+| ---------------- | ---- | ---- | ---- | ---- | ---- |
+| Request Message  | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Response Message | ✅    | ✅    | ✅    | ✅    | ✅    |
 
 #### Operations
 
 | Operation            | v1.0 | v1.1 | v1.2 | v1.3 | v1.4 |
 | -------------------- | ---- | ---- | ---- | ---- | ---- |
-| Create               |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Create Key Pair      |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Register             |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Re-key               |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| DeriveKey            |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Certify              |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Re-certify           |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Locate               |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Check                |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Get                  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Get Attributes       |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Get Attribute List   |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Add Attribute        |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Modify Attribute     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Delete Attribute     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Obtain Lease         |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Get Usage Allocation |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Activate             |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Revoke               |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Destroy              |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Archive              |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Recover              |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Validate             |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Query                |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Cancel               |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Poll                 |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Notify               |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Put                  |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| Discover             |  N/A |  ✅  |  ✅  |  ✅  |  ✅  |
-| Re-key Key Pair      |  N/A |  ❌  |  ❌  |  ❌  |  ❌  |
-| Encrypt              |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Decrypt              |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Sign                 |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Signature Verify     |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| MAC                  |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| MAC Verify           |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| RNG Retrieve         |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| RNG Seed             |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Hash                 |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Create Split Key     |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Join Split Key       |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Export               |  N/A |  N/A |  N/A |  N/A |  ❌  |
-| Import               |  N/A |  N/A |  N/A |  N/A |  ❌  |
+| Create               | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Create Key Pair      | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Register             | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Re-key               | ✅    | ✅    | ✅    | ✅    | ✅    |
+| DeriveKey            | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Certify              | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Re-certify           | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Locate               | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Check                | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Get                  | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Get Attributes       | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Get Attribute List   | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Add Attribute        | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Modify Attribute     | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Delete Attribute     | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Obtain Lease         | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Get Usage Allocation | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Activate             | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Revoke               | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Destroy              | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Archive              | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Recover              | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Validate             | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Query                | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Cancel               | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Poll                 | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Notify               | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Put                  | ❌    | ❌    | ❌    | ❌    | ❌    |
+| Discover             | N/A  | ✅    | ✅    | ✅    | ✅    |
+| Re-key Key Pair      | N/A  | ✅    | ✅    | ✅    | ✅    |
+| Encrypt              | N/A  | N/A  | ✅    | ✅    | ✅    |
+| Decrypt              | N/A  | N/A  | ✅    | ✅    | ✅    |
+| Sign                 | N/A  | N/A  | ✅    | ✅    | ✅    |
+| Signature Verify     | N/A  | N/A  | ✅    | ✅    | ✅    |
+| MAC                  | N/A  | N/A  | ❌    | ❌    | ❌    |
+| MAC Verify           | N/A  | N/A  | ❌    | ❌    | ❌    |
+| RNG Retrieve         | N/A  | N/A  | ❌    | ❌    | ❌    |
+| RNG Seed             | N/A  | N/A  | ❌    | ❌    | ❌    |
+| Hash                 | N/A  | N/A  | ❌    | ❌    | ❌    |
+| Create Split Key     | N/A  | N/A  | ❌    | ❌    | ❌    |
+| Join Split Key       | N/A  | N/A  | ❌    | ❌    | ❌    |
+| Export               | N/A  | N/A  | N/A  | N/A  | ❌    |
+| Import               | N/A  | N/A  | N/A  | N/A  | ❌    |
 
 #### Managed Objects
 
 | Object        | v1.0 | v1.1 | v1.2 | v1.3 | v1.4 |
 | ------------- | ---- | ---- | ---- | ---- | ---- |
-| Certificate   |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Symmetric Key |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Public Key    |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Private Key   |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Split Key     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Template      |  ✅  |  ✅  |  ✅  |  🚫  |  🚫  |
-| Secret Data   |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Opaque Object |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| PGP Key       |  N/A |  N/A |  ✅  |  ✅  |  ✅  |
+| Certificate   | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Symmetric Key | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Public Key    | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Private Key   | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Split Key     | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Template      | ✅    | ✅    | ✅    | 🚫    | 🚫    |
+| Secret Data   | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Opaque Object | ✅    | ✅    | ✅    | ✅    | ✅    |
+| PGP Key       | N/A  | N/A  | ✅    | ✅    | ✅    |
 
 #### Base Objects
 
 | Object                                   | v1.0 | v1.1 | v1.2 | v1.3 | v1.4 |
 | ---------------------------------------- | ---- | ---- | ---- | ---- | ---- |
-| Attribute                                |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Credential                               |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Key Block                                |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Key Value                                |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Key Wrapping Data                        |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Key Wrapping Specification               |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Transparent Key Structures               |  🚧  |  🚧  |  🚧  |  🚧  |  🚧  |
-| Template-Attribute Structures            |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Extension Information                    |  N/A |  ✅  |  ✅  |  ✅  |  ✅  |
-| Data                                     |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Data Length                              |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Signature Data                           |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| MAC Data                                 |  N/A |  N/A |  ❌  |  ❌  |  ❌  |
-| Nonce                                    |  N/A |  N/A |  ✅  |  ✅  |  ✅  |
-| Correlation Value                        |  N/A |  N/A |  N/A |  ❌  |  ❌  |
-| Init Indicator                           |  N/A |  N/A |  N/A |  ❌  |  ❌  |
-| Final Indicator                          |  N/A |  N/A |  N/A |  ❌  |  ❌  |
-| RNG Parameter                            |  N/A |  N/A |  N/A |  ✅  |  ✅  |
-| Profile Information                      |  N/A |  N/A |  N/A |  ✅  |  ✅  |
-| Validation Information                   |  N/A |  N/A |  N/A |  ✅  |  ✅  |
-| Capability Information                   |  N/A |  N/A |  N/A |  ✅  |  ✅  |
-| Authenticated Encryption Additional Data |  N/A |  N/A |  N/A |  N/A |  ❌  |
-| Authenticated Encryption Tag             |  N/A |  N/A |  N/A |  N/A |  ❌  |
+| Attribute                                | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Credential                               | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Key Block                                | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Key Value                                | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Key Wrapping Data                        | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Key Wrapping Specification               | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Transparent Key Structures               | 🚧    | 🚧    | 🚧    | 🚧    | 🚧    |
+| Template-Attribute Structures            | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Extension Information                    | N/A  | ✅    | ✅    | ✅    | ✅    |
+| Data                                     | N/A  | N/A  | ❌    | ❌    | ❌    |
+| Data Length                              | N/A  | N/A  | ❌    | ❌    | ❌    |
+| Signature Data                           | N/A  | N/A  | ❌    | ❌    | ❌    |
+| MAC Data                                 | N/A  | N/A  | ❌    | ❌    | ❌    |
+| Nonce                                    | N/A  | N/A  | ✅    | ✅    | ✅    |
+| Correlation Value                        | N/A  | N/A  | N/A  | ❌    | ❌    |
+| Init Indicator                           | N/A  | N/A  | N/A  | ❌    | ❌    |
+| Final Indicator                          | N/A  | N/A  | N/A  | ❌    | ❌    |
+| RNG Parameter                            | N/A  | N/A  | N/A  | ✅    | ✅    |
+| Profile Information                      | N/A  | N/A  | N/A  | ✅    | ✅    |
+| Validation Information                   | N/A  | N/A  | N/A  | ✅    | ✅    |
+| Capability Information                   | N/A  | N/A  | N/A  | ✅    | ✅    |
+| Authenticated Encryption Additional Data | N/A  | N/A  | N/A  | N/A  | ❌    |
+| Authenticated Encryption Tag             | N/A  | N/A  | N/A  | N/A  | ❌    |
 
 ##### Transparent Key Structures
 
 | Object                   | v1.0 | v1.1 | v1.2 | v1.3 | v1.4 |
 | ------------------------ | ---- | ---- | ---- | ---- | ---- |
-| Symmetric Key            |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| DSA Private/Public Key   |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| RSA Private/Public Key   |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| DH Private/Public Key    |  ❌  |  ❌  |  ❌  |  ❌  |  ❌  |
-| ECDSA Private/Public Key |  ✅  |  ✅  |  ✅  |  🚫  |  🚫  |
-| ECDH Private/Public Key  |  ❌  |  ❌  |  ❌  |  🚫  |  🚫  |
-| ECMQV Private/Public     |  ❌  |  ❌  |  ❌  |  🚫  |  🚫  |
-| EC Private/Public        |  N/A |  N/A |  N/A |  ✅  |  ✅  |
+| Symmetric Key            | ✅    | ✅    | ✅    | ✅    | ✅    |
+| DSA Private/Public Key   | ❌    | ❌    | ❌    | ❌    | ❌    |
+| RSA Private/Public Key   | ✅    | ✅    | ✅    | ✅    | ✅    |
+| DH Private/Public Key    | ❌    | ❌    | ❌    | ❌    | ❌    |
+| ECDSA Private/Public Key | ✅    | ✅    | ✅    | 🚫    | 🚫    |
+| ECDH Private/Public Key  | ❌    | ❌    | ❌    | 🚫    | 🚫    |
+| ECMQV Private/Public     | ❌    | ❌    | ❌    | 🚫    | 🚫    |
+| EC Private/Public        | N/A  | N/A  | N/A  | ✅    | ✅    |
 
 #### Attributes
 
 | Attribute                        | v1.0 | v1.1 | v1.2 | v1.3 | v1.4 |
 | -------------------------------- | ---- | ---- | ---- | ---- | ---- |
-| Unique Identifier                |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Name                             |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Object Type                      |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Cryptographic Algorithm          |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Cryptographic Length             |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Cryptographic Parameters         |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Cryptographic Domain Parameters  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Certificate Type                 |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Certificate Identifier           |  ✅  |  🚫  |  🚫  |  🚫  |  🚫  |
-| Certificate Subject              |  ✅  |  🚫  |  🚫  |  🚫  |  🚫  |
-| Certificate Issuer               |  ✅  |  🚫  |  🚫  |  🚫  |  🚫  |
-| Digest                           |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Operation Policy Name            |  ✅  |  ✅  |  ✅  |  🚫  |  🚫  |
-| Cryptographic Usage Mask         |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Lease Time                       |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Usage Limits                     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| State                            |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Initial Date                     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Activation Date                  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Process Start Date               |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Protect Stop Date                |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Deactivation Date                |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Destroy Date                     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Compromise Occurence Date        |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Compromise Date                  |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Revocation Reason                |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Archive Date                     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Object Group                     |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Link                             |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Application Specific Information |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Contact Information              |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Last Change Date                 |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Custom Attribute                 |  ✅  |  ✅  |  ✅  |  ✅  |  ✅  |
-| Certificate Length               |  N/A |  ✅  |  ✅  |  ✅  |  ✅  |
-| X.509 Certificate Identifier     |  N/A |  ✅  |  ✅  |  ✅  |  ✅  |
-| X.509 Certificate Subject        |  N/A |  ✅  |  ✅  |  ✅  |  ✅  |
-| X.509 Certificate Issuer         |  N/A |  ✅  |  ✅  |  ✅  |  ✅  |
-| Digital Signature Algorithm      |  N/A |  ✅  |  ✅  |  ✅  |  ✅  |
-| Fresh                            |  N/A |  ✅  |  ✅  |  ✅  |  ✅  |
-| Alternative Name                 |  N/A |  N/A |  ✅  |  ✅  |  ✅  |
-| Key Value Present                |  N/A |  N/A |  ✅  |  ✅  |  ✅  |
-| Key Value Location               |  N/A |  N/A |  ✅  |  ✅  |  ✅  |
-| Original Creation Date           |  N/A |  N/A |  ✅  |  ✅  |  ✅  |
-| Random Number Generator          |  N/A |  N/A |  N/A |  ✅  |  ✅  |
-| PKCS#12 Friendly Name            |  N/A |  N/A |  N/A |  N/A |  ✅  |
-| Description                      |  N/A |  N/A |  N/A |  N/A |  ✅  |
-| Comment                          |  N/A |  N/A |  N/A |  N/A |  ✅  |
-| Sensitive                        |  N/A |  N/A |  N/A |  N/A |  ✅  |
-| Always Sensitive                 |  N/A |  N/A |  N/A |  N/A |  ✅  |
-| Extractable                      |  N/A |  N/A |  N/A |  N/A |  ✅  |
-| Never Extractable                |  N/A |  N/A |  N/A |  N/A |  ✅  |
+| Unique Identifier                | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Name                             | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Object Type                      | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Cryptographic Algorithm          | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Cryptographic Length             | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Cryptographic Parameters         | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Cryptographic Domain Parameters  | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Certificate Type                 | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Certificate Identifier           | ✅    | 🚫    | 🚫    | 🚫    | 🚫    |
+| Certificate Subject              | ✅    | 🚫    | 🚫    | 🚫    | 🚫    |
+| Certificate Issuer               | ✅    | 🚫    | 🚫    | 🚫    | 🚫    |
+| Digest                           | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Operation Policy Name            | ✅    | ✅    | ✅    | 🚫    | 🚫    |
+| Cryptographic Usage Mask         | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Lease Time                       | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Usage Limits                     | ✅    | ✅    | ✅    | ✅    | ✅    |
+| State                            | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Initial Date                     | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Activation Date                  | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Process Start Date               | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Protect Stop Date                | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Deactivation Date                | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Destroy Date                     | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Compromise Occurence Date        | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Compromise Date                  | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Revocation Reason                | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Archive Date                     | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Object Group                     | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Link                             | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Application Specific Information | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Contact Information              | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Last Change Date                 | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Custom Attribute                 | ✅    | ✅    | ✅    | ✅    | ✅    |
+| Certificate Length               | N/A  | ✅    | ✅    | ✅    | ✅    |
+| X.509 Certificate Identifier     | N/A  | ✅    | ✅    | ✅    | ✅    |
+| X.509 Certificate Subject        | N/A  | ✅    | ✅    | ✅    | ✅    |
+| X.509 Certificate Issuer         | N/A  | ✅    | ✅    | ✅    | ✅    |
+| Digital Signature Algorithm      | N/A  | ✅    | ✅    | ✅    | ✅    |
+| Fresh                            | N/A  | ✅    | ✅    | ✅    | ✅    |
+| Alternative Name                 | N/A  | N/A  | ✅    | ✅    | ✅    |
+| Key Value Present                | N/A  | N/A  | ✅    | ✅    | ✅    |
+| Key Value Location               | N/A  | N/A  | ✅    | ✅    | ✅    |
+| Original Creation Date           | N/A  | N/A  | ✅    | ✅    | ✅    |
+| Random Number Generator          | N/A  | N/A  | N/A  | ✅    | ✅    |
+| PKCS#12 Friendly Name            | N/A  | N/A  | N/A  | N/A  | ✅    |
+| Description                      | N/A  | N/A  | N/A  | N/A  | ✅    |
+| Comment                          | N/A  | N/A  | N/A  | N/A  | ✅    |
+| Sensitive                        | N/A  | N/A  | N/A  | N/A  | ✅    |
+| Always Sensitive                 | N/A  | N/A  | N/A  | N/A  | ✅    |
+| Extractable                      | N/A  | N/A  | N/A  | N/A  | ✅    |
+| Never Extractable                | N/A  | N/A  | N/A  | N/A  | ✅    |
 
 ## Aller plus loin
 

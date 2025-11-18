@@ -86,7 +86,7 @@ scrape_configs:
 
 Public Cloud Databases offer service metrics via Prometheus for the following engines:
 
-- Caching/Valkey
+- Valkey
 - Cassandra
 - MongoDB
 - MySQL
@@ -100,4 +100,4 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

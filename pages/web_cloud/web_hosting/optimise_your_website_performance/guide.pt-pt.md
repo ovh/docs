@@ -1,7 +1,7 @@
 ---
 title: 'Otimizar o desempenho do seu website'
 excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
-updated: 2024-01-08
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -13,14 +13,14 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 
 ## Requisitos
 
-- um [plano de Alojamento Web OVHcloud](/links/web/hosting){.external}
+- um [plano de Alojamento Web OVHcloud](/links/web/hosting)
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
-- um [nome de domínio](/links/web/domains){.external} que pode ser utilizado para aceder ao seu website
-- acesso à [Área de Cliente OVHcloud](/links/manager){.external}
+- um [nome de domínio](/links/web/domains) que pode ser utilizado para aceder ao seu website
+- acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
-### Passo 1: Definir o âmbito
+### 1 - Definir o âmbito
 
 #### Questões que deve colocar:
 
@@ -46,14 +46,14 @@ A resposta a estas questões pode ajudá-lo a centrar-se em pontos específicos 
 
 A utilização de um CMS, como o WordPress, PrestaShop, Drupal ou Joomla!, requer muitas bibliotecas para permitir que uma única página web possa gerir diversos elementos.
 Os browsers têm de carregar e ler todos estes elementos.
-Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](/links/web/hosting){.external}.
+Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](/links/web/hosting).
 
-Encontrará mais informações acerca do plano a escolher [nesta página](/links/web/hosting-best-web){.external}.
+Encontrará mais informações acerca do plano a escolher [nesta página](/links/web/hosting-best-web).
 
-### Passo 2: Verificar a versão PHP
+### 2 - Verificar a versão PHP
 
 A utilização da versão php mais recente do seu site pode ter um impacto significativo no desempenho.
-Para verificar se o seu website é compatível com a versão PHP mais recente, pode consultar [a documentação oficial do PHP](https://php.net/eol.php){.external}.
+Para verificar se o seu website é compatível com a versão PHP mais recente, pode consultar [a documentação oficial do PHP](https://php.net/eol.php).
 
 **PHP-FPM**
 
@@ -74,7 +74,7 @@ Para mudar para a utilização do PHP-FPM na versão _estável_ ou para obter de
 
 O ficheiro _.ovhconfig_ funciona na raiz do pacote de alojamento ou num subdiretório de nível 1 (por ex.: _/www/_), mas não em diretórios de nível 2 ou superiores (por ex.: _/www/test/_ , _/www/test/test2/_)
 
-### Passo 3: Verificar o conteúdo multimédia (imagens, vídeos...)
+### 3 - Verificar o conteúdo multimédia (imagens, vídeos...)
 
 Ao aceder a um website, todos os conteúdos têm de ser descarregados pelo browser.
 
@@ -86,19 +86,40 @@ Cabe-lhe a si escolher os mais adequados às suas necessidades específicas.
 
 Encontrará mais informações sobre este tópico no Passo 5 abaixo.
 
-### Passo 4: Otimizar os seus scripts
+### 4 - Otimizar os seus scripts
 
 Correlacione os gráficos da utilização de recursos do seu alojamento (mais informações abaixo) para encontrar a origem dos atrasos e consultar os logs nas datas destes picos.
 
-Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](/links/manager){.external}.
+Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](/links/manager).
 
 Como aceder às estatísticas e logs:
 
-1. Clique em `Alojamento`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web correspondente.
-2. Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
-3. De seguida, clique no botão `Ver estatísticas`{.action} apresentado para aceder às estatísticas de visita do website ou em `Consultar os logs`{.action} para consultar os logs disponíveis para o seu alojamento web.
+Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 
-![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> De seguida, clique no botão `Ver estatísticas`{.action} apresentado para aceder às estatísticas de visita do website ou em `Consultar os logs`{.action} para consultar os logs disponíveis para o seu alojamento web.
+>>
+>> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Como aceder aos gráficos:
 
@@ -129,9 +150,9 @@ Não se esqueça de selecionar o nome da sua base de dados e o período desejado
 
 - **Pedidos SQL**: Apresenta o número de pedidos.
 
-### Passo 5: Analisar os pedidos de rede
+### 5 - Analisar os pedidos de rede
 
-Uma ferramenta útil para análise é a [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} que está diretamente integrada no browser Mozilla Firefox e permite analisar em detalhe o tempo de carregamento de uma página.
+Uma ferramenta útil para análise é a [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor) que está diretamente integrada no browser Mozilla Firefox e permite analisar em detalhe o tempo de carregamento de uma página.
 
 Esta ferramenta permite analisar quais os elementos do seu site mais lentos/pesados a carregar.
 Pode ajudar a restringir quais as imagens e os conteúdos que estão a aumentar o tempo de carregamento do website e a dar prioridade aos locais onde as otimizações devem ser feitas.
@@ -146,25 +167,25 @@ Para melhorar o acesso ao website, o descarregamento no website e obter uma clas
 
 Por conseguinte, irá melhorar os tempos de resposta dos visitantes em todo o mundo, porque as partes estáticas do seu website serão descarregadas diretamente pelo visitante no ponto de presença mais próximo do mesmo.
 
-Conheça a nossa [solução CDN aqui](https://www.ovh.pt/cdn/){.external}.
+Conheça a nossa [solução CDN aqui](/links/network/cdn-infrastructure).
 
-### Passo 6: Analisar o sistema de gestão de conteúdos (CMS) e os plugins utilizados
+### 6 - Analisar o sistema de gestão de conteúdos (CMS) e os plugins utilizados
 
 _Este passo é opcional se não utilizar um CMS._
 
-Para garantir a adaptação da sua oferta de alojamento às necessidades do seu CMS, pode encontrar uma comparação dos nossos serviços na [página de produto](/links/web/hosting){.external}.
+Para garantir a adaptação da sua oferta de alojamento às necessidades do seu CMS, pode encontrar uma comparação dos nossos serviços na [página de produto](/links/web/hosting).
 
 - **Utilização de um plugin de cache:** A utilização de um CMS requer várias bibliotecas para que uma única página web consiga gerir uma grande quantidade de elementos. Para otimizar o seu CMS, deve utilizar diversos plugins de cache para evitar regenerar todo o conteúdo do seu website sempre que uma página é carregada. Recomendamos que procure plugins de cache em websites da comunidade relacionados com o CMS que utiliza (Joomla! - PrestaShop - WordPress) para evitar regenerar todo o conteúdo do seu website sempre que carrega a página web.
 
 - **Desativação de plugins não utilizados:** Pode ser uma boa ideia desativar ou até mesmo eliminar plugins não utilizados para melhorar o desempenho do website. Isto evitará que elementos inúteis sejam descarregados.
 
-### Passo 7: Otimizar a sua base de dados
+### 7 - Otimizar a sua base de dados
 
 _Este passo é opcional se não estiver a utilizar uma base de dados._
 Pode aceder à sua base de dados utilizando o PHPMyAdmin; as instruções sobre como utilizar o PHPMyAdmin sairiam do âmbito deste guia pelo que não serão detalhadas em maior pormenor.
 No entanto, existem vários guias externos sobre esta matéria.
 
-**Como aceder à base de dados via phpMyAdmin:** Para aceder à sua base de dados via phpMyAdmin, siga o procedimento disponibilizado na [Área de Cliente OVHcloud](/links/manager){.external}:
+**Como aceder à base de dados via phpMyAdmin:** Para aceder à sua base de dados via phpMyAdmin, siga o procedimento disponibilizado na [Área de Cliente OVHcloud](/links/manager):
 
 - Clique no seu domínio na secção `Alojamento`{.action}.
 - Aceda ao separador `Base de dados`{.action}.
@@ -224,15 +245,15 @@ Evite utilizar a cláusula “HAVING”, por exemplo, que atrasa as suas consult
 
 #### Web Cloud Databases
 Se, apesar de todas as alterações e otimizações realizadas, a base de dados estiver lenta, ou se for efetuado um grande número de consultas na base de dados, é aconselhável mudar para a nossa oferta de Web Cloud Databases para ter mais recursos disponíveis.
-[Consultar a oferta Web Cloud Databases no nosso site](https://www.ovh.pt/cloud/cloud-databases/){.external}.
+[Consultar a oferta Web Cloud Databases no nosso site](/links/web/databases).
 
 ## Quer saber mais?
 
 [Alterar a configuração de um plano de alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[Gestão de uma base de dados num pacote de alojamento web](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Gestão de uma base de dados num pacote de alojamento web](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
+[Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

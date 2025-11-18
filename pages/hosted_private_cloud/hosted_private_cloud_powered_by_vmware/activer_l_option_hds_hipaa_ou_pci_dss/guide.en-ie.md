@@ -18,13 +18,13 @@ To configure your Hosted Private Cloud for [healthcare data hosting](https://www
 >
 
 - a Private Cloud infrastructure in version 6.0 or higher
-- access to the `Hosted Private Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the `Hosted Private Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Ensure that the security option is enabled
 
-In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and make sure you are in the “Server” section. Click `Private Cloud`{.action} and select the service concerned. 
+In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVHcloud Control Panel](/links/manager), and make sure you are in the “Server” section. Click `Private Cloud`{.action} and select the service concerned. 
 
 In the window that appears, make sure you are on the `General information`{.action} tab. Then check the activation status of the security options in the "Options and compliance" section. 
 
@@ -32,7 +32,7 @@ In the window that appears, make sure you are on the `General information`{.acti
 
 If the desired security option is not enabled, activate it by clicking on the `...`{.action} button, then on `Activate`{.action}. Several requirements are essential.
 
-- **[NSX](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/){.external} and [vROps](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/vrops/){.external} options must be installed**: from the `General information`{.action} tab in the "Options and compliance" section, you can check the activation status of these options. If they are not enabled, activate them by clicking on the `...`{.action} button and then on `Activate`{.action}.
+- **[NSX](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) and [vROps](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/vrops/) options must be installed**: from the `General information`{.action} tab in the "Options and compliance" section, you can check the activation status of these options. If they are not enabled, activate them by clicking on the `...`{.action} button and then on `Activate`{.action}.
 
 - **The vCenter access policy must be restricted**: from the `Security`{.action} tab, you can check the status of the access policy. If it is not restricted, make the change by clicking on the `Modify vCenter Access Policy`{.action} button, then following the steps. Our documentation “[Introduction to the OVHcloud Private Cloud Control Panel](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)” can assist you in this process.
 

@@ -1,7 +1,7 @@
 ---
 title: "Dominio - Come cambiare il titolare?"
 excerpt: "Questa guida ti mostra come modificare il proprietario di un dominio e aggiornare le informazioni associate a quest’ultimo"
-updated: 2025-04-28
+updated: 2025-06-11
 ---
 
 ## Obiettivo
@@ -22,9 +22,9 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un dominio registrato in OVHcloud e per il quale non sono in corso operazioni (modifica del titolare, trasferimento, creazione). Se un'operazione è stata ultimata di recente sul tuo dominio, prima di eseguire una nuova operazione è necessario almeno 60 giorni di calendario.
-- Essere il [contatto amministratore](/pages/account_and_service_management/account_information/managing_contacts) del dominio.
+- Il tuo account cliente è il [contatto amministratore e di fatturazione](/pages/account_and_service_management/account_information/managing_contacts) del dominio interessato.
 - Disporre del consenso del titolare attuale del dominio per effettuare il cambio di titolare.
 
 ## Procedura
@@ -124,7 +124,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 
 [Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

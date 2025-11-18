@@ -16,7 +16,7 @@ Em casos excecionais, a sua infraestrutura pode necessitar duma intervenção do
 
 ## Requisitos
 
-- Estar [ligado ao servidor usando o protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} (acesso root).
+- Estar [ligado ao servidor usando o protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) (acesso root).
 
 ## Instruções
 
@@ -118,6 +118,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Quer saber mais?
 
-Consulte o guia [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external}.
+Consulte o guia [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 Ou fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -12,7 +12,7 @@ Z poziomu interfejsu vSphere możesz wdrażać maszyny wirtualne na wiele różn
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
+- Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
 - Dostęp do [interfejsu vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion)
 
 ## W praktyce

@@ -14,7 +14,7 @@ The OVHcloud vRack feature makes it possible to connect different cloud services
 
 ### OVHcloud Control Panel
 
-After your [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en/managed-bare-metal/) is delivered, it will be displayed in the section `vRack` (under "Bare Metal Cloud" in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)) and the "datacenter" will be automatically included into a vRack.
+After your [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en/managed-bare-metal/) is delivered, it will be displayed in the section `vRack` (under "Bare Metal Cloud" in your [OVHcloud Control Panel](/links/manager)) and the "datacenter" will be automatically included into a vRack.
 
 ![Data centre](images/vRackDatacenter.PNG){.thumbnail}
 

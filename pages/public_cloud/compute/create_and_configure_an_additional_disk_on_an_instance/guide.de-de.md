@@ -1,7 +1,7 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
 excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
-updated: 2025-06-03
+updated: 2025-09-19
 ---
 
 <style>
@@ -46,7 +46,7 @@ Das kann in folgenden Fällen hilfreich sein:
 
 ### Die verschiedenen Volume-Typen
 
-OVHcloud bietet drei Arten von Block Storage Volumes, die jeweils an spezifische Leistungs-, Kapazitäts- und Kostenanforderungen angepasst sind. Mit diesen Lösungen können Sie Ihren Instanzen persistenten Speicher zuweisen und so ein hohes Maß an Zuverlässigkeit und Verfügbarkeit sicherstellen.
+OVHcloud bietet drei Arten von Block Storage-Volumes, die jeweils an spezifische Leistungs-, Kapazitäts- und Kostenanforderungen angepasst sind. Mit diesen Lösungen können Sie Ihren Instanzen persistente Speichervolumes zuweisen und so ein hohes Maß an Zuverlässigkeit und Verfügbarkeit sicherstellen. Wenn die Funktion verfügbar ist, kann Verschlüsselung bei der Erstellung eines Volumes für alle Volume-Typen außer Classic Multi-Attach-Volumes in 3AZ-Regionen aktiviert werden.
 
 /// details | **Classic - 500 IOPS garantiert**
 
@@ -82,6 +82,11 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 
 ![standardvolumes](images/volume-types.png){.thumbnail}
 
+> [!primary]
+>
+> Jeder Volume-Typ ist auch als verschlüsselte Version verfügbar (**LUKS**). Diese Volumes gewährleisten die Vertraulichkeit der Daten, ohne die Leistung zu beeinträchtigen. Sie sind über das OVHcloud Kundencenter sowie mit den im nächsten Abschnitt beschriebenen Tools verfügbar, indem Sie den `<volume_type>-luks`-Typ angeben.
+>
+
 ### Ein neues Volume hinzufügen
 
 > [!tabs]
@@ -92,7 +97,7 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >>
 >> ![Projekt auswählen](images/avolume01.png){.thumbnail}
 >>
->> Folgen Sie den Konfigurationsschritten, um die Optionen für Standort, Volumetyp und Volumekapazität auszuwählen. Geben Sie einen Namen für das Volume ein und bestätigen Sie, indem Sie auf `Volume erstellen klicken`{.action}.
+>> Folgen Sie den Konfigurationsschritten, um die Optionen für Standort, Volumetyp, Verschlüsselung und Volumekapazität auszuwählen. Geben Sie einen Namen für das Volume ein und bestätigen Sie durch Klicken auf `Volume erstellen`{.action}.
 >>
 >> > [!warning]
 >> >
@@ -121,11 +126,34 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> >
 >>
 > **Via Terraform**
+>> > [!warning]
+>> >
+>> > Achten Sie darauf, nicht vom aktuellen Bereich weg zu navigieren, während das Volume angehängt wird. Der Vorgang könnte unterbrochen werden.
+>> >
+>>
+>> Volume-Typen:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> Typen, die mit "-luks" enden, sind verschlüsselt (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Beim Erstellen eines **-luks** Datenträgers wird automatisch ein dedizierter Schlüssel erstellt.
+>> >
+>> > Dieser Schlüssel sollte nicht geändert oder gelöscht werden, wenn er mit einem Block Storage Volume verknüpft ist. Ansonsten können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
+>> >
+>>
 >> Um ein einfaches Block Storage Volume zu erstellen, benötigen Sie 3 Elemente:
 >>
->> * Name des Volumes
->> * Region
->> * Die Größe des Volumes in GB
+>> - Name des Volumes
+>> - Region
+>> - Größe des Volumes in GB
 >>
 >> In unserem Beispiel erstellen wir einen Block Storage in der Region **GRA11** mit einer Größe von **10 GB**. Fügen Sie der Datei *simple_blockstorage.tf* die folgenden Zeilen hinzu:
 >>
@@ -134,7 +162,8 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
 >>   name   = "terraform_blockstorage" # Name des Block Storage-Volumes
 >>   size   = 10                       # Volumegröße
->>   region = "GRA11"                  # Region oder Volume muss erstellt werden
+>>   region = "GRA11"                  # Region
+>>   volume_type = "volume_type"       # classic, high-speed, high-speed-gen2 oder equivalent `-luks`
 >> }
 >> ```
 >> 
@@ -207,6 +236,81 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >>
 >> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 >> ```
+>>
+> **Über das Horizon-Interface**
+>> Gehen Sie in den Dropdown-Bereich `Volumes`{.action}, klicken Sie auf `Volumes`{.action} und dann auf `Create Volume`{.action}.
+>>
+>> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
+>>
+>> Füllen Sie das Feld `Volume Name`{.action} aus und wählen Sie den gewünschten Volume-Typ. Klicken Sie dann auf  `Create Volume`{.action}
+>>
+>> > [!warning]
+>> >
+>> > Wenn der Volume-Typ "high-speed-gen2" or "luks" in der Liste nicht aufgeführt ist, ist er in dieser Region nicht verfügbar.
+>> >
+>>
+>> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
+>>
+>> Klicken Sie zum Anfügen dieses Volumes an eine Instanz in der Zeile des Volumes auf den Pfeil am Ende der Zeile neben `Edit Volume`{.action}. Klicken Sie auf `Manage Attachments`{.action}.
+>>
+>> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
+>>
+>> Wählen Sie die Instanz aus, an die Sie Ihr Volume anhängen möchten, und klicken Sie dann auf `Attach Volume`{.action}.
+>>
+>> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
+>>
+> **Via the OpenStack CLI**
+>> > [!warning]
+>> >
+>> > Wenn der Volume-Typ "high-speed-gen2" or "luks" in der Liste nicht aufgeführt ist, ist er in dieser Region nicht verfügbar.
+>> >
+>>
+>> Volume-Typen:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> Typen, die mit "-luks" enden, sind verschlüsselt (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Beim Erstellen eines **-luks** Datenträgers wird automatisch ein dedizierter Schlüssel erstellt.
+>> >
+>> > Dieser Schlüssel sollte nicht geändert oder gelöscht werden, wenn er mit einem Block Storage Volume verknüpft ist. Ansonsten können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
+>> >
+>>
+>> In der Region verfügbare Volume-Typen auflisten:
+>>
+>> ```bash
+>> openstack volume type list
+>> ```
+>>
+>> Erstellen Sie ein Volume, indem Sie mindestens dessen Größe (in GB) und einen der oben aufgeführten Typen angeben. Sie können auch einen Namen für Ihr Volume anfügen.
+>>
+>> ```bash
+>> openstack volume create --size 1 --type high-speed-gen2 volumeName # classic, high-speed, high-speed-gen2 or equivalent `-luks`
+>> ```
+>>
+>> Verwenden Sie den folgenden Befehl, um ein Volume an eine in der Region verfügbare Instanz anzufügen:
+>>
+>> ```bash
+>> openstack server add volume <server-id|server-name> <volume-id|volume-name>
+>>
+>> +-----------+-------------------------------------+
+>> | Field | Value |
+>> +-----------+-------------------------------------+
+>> | ID | 7d3d670f- ****-****-****-60dd1e6**** |
+>> | Server ID | 74317f97-****-****-80cf2d4**** |
+>> | Volume ID | 7d3d670f-****-****-****-60dd1e6**** |
+>> | Device | /dev/sdb |
+>> | Tag | None |
+>> +-----------+-------------------------------------+
+>> ```
+>>
 
 ### Konfiguration des neuen Volumes
 

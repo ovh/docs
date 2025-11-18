@@ -1,7 +1,7 @@
 ---
 title: "Per iniziare con l'offerta Zimbra"
 excerpt: "Scopri come iniziare a utilizzare la soluzione Zimbra dallo Spazio Cliente OVHcloud"
-updated: 2025-05-19
+updated: 2025-11-04
 ---
 
 <style>
@@ -38,6 +38,7 @@ Con l'offerta Zimbra, OVHcloud ti propone una piattaforma di messaggeria collabo
     - [Modificare un dominio](#domains-modify)
 - [Account email](#emails)
     - [Crea un account email](#emails-create)
+    - [Modificare soluzione](#emails-offer)
 - [Visualizza il tuo account email](#emails-consult)
 - [Reindirizzamenti](#redirections)
 - [Alias](#alias)
@@ -133,6 +134,7 @@ Seleziona la scheda che preferisci:
 >>    - *Configurare la registrazione MX automaticamente*: permette di inserire automaticamente i server di posta in arrivo di OVHcloud (si applica a tutte le soluzioni di posta elettronica OVHcloud).
 >>    - *Configurare il record SPF automaticamente*: questa opzione permette di inserire automaticamente il record che autorizza i server di posta elettronica di invio OVHcloud a trasmettere le email. Questo record è valido per tutte le soluzioni di posta elettronica OVHcloud.
 >>    - *Configura il record DKIM automaticamente*: permette di inserire automaticamente i record necessari ad autenticare l’invio delle email.
+>>    - *Configura automaticamente l'entry SRV* : permette la configurazione automatica dei parametri di un account email quando lo aggiungi su un software di messaggistica (Outlook, Mail per Mac, Thunderbird, ecc.).
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500}
 >>
@@ -167,6 +169,7 @@ Dalla scheda `Dominio`{.action} del servizio Zimbra, clicca sull’icona "&#8285
     - **MX**: indispensabile per la ricezione delle tue email.
     - **SPF**: la sicurezza richiesta dalla maggior parte dei server di posta elettronica di destinazione per legittimare i server di posta elettronica di OVHcloud con il tuo dominio.
     - **DKIM**: permette di impostare un sistema di firma per ogni email inviata dal tuo servizio Zimbra. La firma viene verificata dal destinatario tramite la chiave pubblica visibile nella zona DNS.
+    - **SRV** : facilita la configurazione del tuo account Zimbra quando lo configuri su un software di messaggistica (Outlook, Mail per Mac, Thunderbird, ecc.).
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
@@ -217,6 +220,26 @@ Inserisci le informazioni richieste.
 Clicca su `Conferma`{.action} per avviare la creazione dell’account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
+
+### Modificare soluzione <a name="emails-offer"></a>
+
+È possibile cambiare piano per qualsiasi account Zimbra per un piano superiore o inferiore.
+
+1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
+1. Vai alla sezione `Web Cloud`{.action}.
+1. Clicca su `Zimbra Mail`{.action}.
+1. Clicca sulla scheda `Account email`{.action}.
+1. A destra dell'account email per cui desideri passare a un piano superiore, clicca su `⁝`{.action}.
+1. Clicca su `Modificare soluzione`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+> [!warning]
+>
+> Prima di passare a un piano inferiore, assicurati dei seguenti punti:
+>
+> - Nessun file è archiviato sul tuo volume di archiviazione "Valigetta" se passi all'offerta Starter.
+> - Il contenuto del tuo account email deve essere inferiore a 15 Go se passi all'offerta Starter.
 
 ### Consultare il proprio account email <a name="mail-consult"></a>
 

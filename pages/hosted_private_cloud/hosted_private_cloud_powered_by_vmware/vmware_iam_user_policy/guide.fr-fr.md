@@ -59,6 +59,6 @@ Puis, pour terminer votre politique, cliquez sur `Modifier la politique`{.action
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Notre équipe reste disponible sur notre canal [Discord](https://discord.gg/ovh) dédié. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud.
+Notre équipe reste disponible sur notre canal [Discord](https://discord.gg/ovhcloud) dédié. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

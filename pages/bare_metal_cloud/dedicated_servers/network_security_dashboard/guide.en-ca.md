@@ -1,21 +1,16 @@
 ---
 title: "Monitoring DDoS attacks with the Network Security Dashboard"
 excerpt: "Learn how to navigate through the Network Security Dashboard"
-updated: 2025-06-04
+updated: 2025-10-31
 ---
 
 ## Objective
 
 This guide explains the Network Security Dashboard and provides an overview of counter measures triggered by our DDoS protection infrastructure when malicious network activity is detected. You can find details on which additional protections should be implemented to keep your services up and running. Moreover, traffic charts are available on the dashboard for scrubbing centre activity periods to better visualize the situation.
 
-> [!warning]
->
-> **Warning**: Permanent Mitigation is reaching its End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
->
-
 ## Requirements
 
-- An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/en-ca/vps/), [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -53,8 +48,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.acti
 The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the Edge Network **Firewall** and **GAME firewall** features availability and their statuses.
 
 - The **Mitigation** state can be:
-    - **Automatic** - The scrubbing centre is in **automatic** mode. It is the recommended mode to use, it reroutes traffic for deeper analysis when needed.
-    - **Permanent** - The scrubbing centre is **permanently enabled**. We do not recommend it to be enabled permanently, unless latency jitter is noted due to rerouting traffic back and forth.
+    - **Automatic** - The scrubbing centre is in **automatic** mode, and reroutes traffic for deeper analysis when needed.
     - **Forced** - This indicates the scrubbing centre is **taking action** right now.
 
 - The **Firewall** column indicates the state of the Edge Network Firewall which can be:
@@ -84,6 +78,8 @@ In the table, the following columns are present:
 - **Destination IP** - The IP that was the target of the attack
 - **Attack vectors** - Provides information about detected types of attacks, such as UDP or TCP attack, etc.
 
+**The data retention period for scrubbing centre logs is 1 year.**
+
 > [!warning]
 >
 > Please note that source IP addresses for detected events are not displayed because they are usually spoofed (DDoS attacks may point to other sources than the ones really comes from) and such information would be misleading or not usable.
@@ -94,6 +90,8 @@ In the **Traffic chart** tab, you can see a graph showing traffic to your IP add
 ![red-line-attack](images/nsd_graph_tab_blur.png)
 
 It presents malicious traffic that was dropped (**in red**) and clean traffic delivered to your IP address (**in green**). There are also basic mitigation statistics displayed, i.e.: how many attacks were detected for a selected IP, how much traffic (or packets) was cleaned during attacks or how many times scrubbing centres took an action to inspect your traffic (number of events) in a selected period of time.
+
+**The data retention period for the traffic chart is 2 months.**
 
 ## FAQ
 
@@ -114,7 +112,7 @@ Such data is available only for public IP addresses during automatic Anti-DDoS i
 
 ### The traffic chart for some positions in the scrubbing centre logs is not available.
 
-Traffic chart data is available only for the past two weeks, while log entries can be reviewed for the past year.
+Traffic chart data is available only for the past two months, while log entries can be reviewed for the past year.
 
 ### An attack on my service is persisting, how can I better protect my server?
 

@@ -6,20 +6,20 @@ updated: 2020-05-27
 
 ## Sumário
 
-É possível ativar a certificação PCI DSS na solução Private Cloud. Esta certificação é necessária, por exemplo, para alojar [dados de cartões de pagamento](https://www.ovh.pt/private-cloud/payment-infrastructure/pci-dss.xml){.external} (PCI DSS).  
+É possível ativar a certificação PCI DSS na solução Private Cloud. Esta certificação é necessária, por exemplo, para alojar [dados de cartões de pagamento](https://www.ovh.pt/private-cloud/payment-infrastructure/pci-dss.xml) (PCI DSS).  
 
 **Este manual explica como ativar a certificação PCI DSS no serviço Private Cloud da OVH.**
 
 ## Requisitos
 
 - Dispor de uma infraestrutura Private Cloud com versão 6.0 ou superior.
-- Aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Serviços Dedicados`{.action}.
+- Aceder à [Área de Cliente OVHcloud](/links/manager), na secção `Serviços Dedicados`{.action}.
 
 ## Instruções
 
 ### Ativar a opção de segurança
 
-Para poder ativar a certificação PCI DSS no seu Private Cloud, deve ter ativado a opção de segurança correspondente. Para verificar isto, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e certifique-se de que está na secção “Serviços Dedicados”. Clique em `Private Cloud`{.action} na coluna à esquerda e selecione o seu Private Cloud. 
+Para poder ativar a certificação PCI DSS no seu Private Cloud, deve ter ativado a opção de segurança correspondente. Para verificar isto, aceda à [Área de Cliente OVHcloud](/links/manager) e certifique-se de que está na secção “Serviços Dedicados”. Clique em `Private Cloud`{.action} na coluna à esquerda e selecione o seu Private Cloud. 
 
 A seguir, na janela `Informações gerais`{.action}, verifique que a opção <b>Payment Card Industry Data Security Standard (PCI DSS) </b>da parte “Opções de segurança” está ativada. **Tenha em conta que não é possível ativar simultaneamente várias opções de segurança num mesmo Private Cloud.**
 
@@ -27,7 +27,7 @@ A seguir, na janela `Informações gerais`{.action}, verifique que a opção <b>
 
 Se a opção não estiver ativa, clique no botão `...`{.action} situado à direita e selecione `Ativar`{.action}. Para a poder ativar, é necessário cumprir os seguintes requisitos:
 
-- **As opções [NSX](https://www.ovh.pt/private-cloud/opcoes/nsx.xml){.external} e [vROps](https://www.ovh.pt/private-cloud/opcoes/vrops.xml){.external} devem estar ativas**: pode verificar isto na janela `Informações gerais`{.action} na parte “Opção do Private Cloud”. Se alguma delas não estiver ativa, clique no botão `...`{.action} situado à direita da opção correspondente e selecione `Ativar`{.action}.
+- **As opções [NSX](https://www.ovh.pt/private-cloud/opcoes/nsx.xml) e [vROps](https://www.ovh.pt/private-cloud/opcoes/vrops.xml) devem estar ativas**: pode verificar isto na janela `Informações gerais`{.action} na parte “Opção do Private Cloud”. Se alguma delas não estiver ativa, clique no botão `...`{.action} situado à direita da opção correspondente e selecione `Ativar`{.action}.
 
 - **A política de acesso ao vCenter deve ser restringida**: pode verificar isto no separador “Segurança”. Se tiver configurado uma política aberta, pode mudá-la para restringida clicando no botão `Política de acesso ao vCenter`{.action} e seguindo os passos indicados. Para mais informações, pode consultar o manual “[Apresentação da Área de Cliente do Private Cloud da OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#seguranca)”.
 

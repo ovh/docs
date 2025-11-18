@@ -88,7 +88,7 @@ Listez et administrez ici vos réseaux ainsi que les différents groupes de séc
 ##### **Orchestration**
 
 Ce menu vous permet d'orchestrer plusieurs applications cloud composites.<br>
-Pour plus d'informations, veuillez consulter la [documentation OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
+Pour plus d'informations, veuillez consulter la [documentation OpenStack](https://docs.openstack.org/horizon/pike/user/stacks.html).
 
 ![orchestration](images/orchestration2021.png){.thumbnail}
 

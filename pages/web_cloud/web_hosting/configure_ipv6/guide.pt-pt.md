@@ -12,7 +12,7 @@ Na sequência disso, foi introduzido o protocolo **IPv6** para permitir a ligaç
 
 Uma vez que os endereços IPv4 estão menos disponíveis, é mais difícil adicionar novas máquinas à rede com a norma IPv4. No entanto, as ligações com um endereço IPv6 só são úteis se, por exemplo, o seu website também estiver disponível com este protocolo. Desta forma, quanto mais sites estiverem disponíveis em IPv6, mais os diferentes atores presentes na rede irão transferir os seus aparelhos/máquinas para este novo protocolo.
 
-Para saber mais, consulte o artigo da [Wikipédia](https://pt.wikipedia.org/wiki/IPv6){.external} sobre o protocolo IPv6.
+Para saber mais, consulte o artigo da [Wikipédia](https://pt.wikipedia.org/wiki/IPv6) sobre o protocolo IPv6.
 
 Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativação deste protocolo manteve-se até recentemente como uma opção facultativa de configuração. 
 
@@ -20,9 +20,9 @@ Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativaçã
 
 ## Requisitos
 
-- Dispor de um [nome de domínio](/links/web/domains){.external} na sua Área de Cliente OVHcloud.
-- Dispor de um [serviço de alojamento web](/links/web/hosting){.external}.
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
+- Dispor de um [nome de domínio](/links/web/domains) na sua Área de Cliente OVHcloud.
+- Dispor de um [serviço de alojamento web](/links/web/hosting).
+- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -37,7 +37,7 @@ Se o seu site não estiver configurado para funcionar com um endereço IPv6, pod
 
 ### 1 - Verificar a compatibilidade IPv6 do seu website
 
-Para verificar se o seu website já utiliza um endereço IPv6, utilize o site [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. Indicará se o seu website responde a este novo protocolo IP. Caso contrário, continue a ler o nosso guia.
+Para verificar se o seu website já utiliza um endereço IPv6, utilize o site [ipv6-test.com](https://ipv6-test.com/validate.php). Indicará se o seu website responde a este novo protocolo IP. Caso contrário, continue a ler o nosso guia.
 
 ### 2 - recuperar o endereço IPv6 do seu alojamento web
 

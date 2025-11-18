@@ -10,7 +10,7 @@ updated: 2025-04-28
 
 Your domain name is currently managed by another **registrar** and you want to move it to OVHcloud? You can do this by following a transfer procedure.
 
-By transferring your domain name, you will its **registrar**. You can transfer your domain name to OVHcloud by creating an order. The transfer process usually takes between one and ten days.
+By transferring your domain name, you will change its **registrar**. You can transfer your domain name to OVHcloud by creating an order. The transfer process usually takes between one and ten days.
 
 **This guide explains how to transfer a generic domain name to OVHcloud.**
 
@@ -65,7 +65,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 ### Step 1: Check the information associated with the domain <a name="step1"></a>
 
-**To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](/links/web/domains-whois){.external} has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
+**To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](/links/web/domains-whois) has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
 
 - **If the information is correct:** Go to the next step of this guide.
 
@@ -73,7 +73,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!primary]
 >
-> If you do not know which registrar is responsible for your domain name, the "Registrar" lines retrieved as part of the [WHOIS](/links/web/domains-whois){.external} search result can help you identify it.
+> If you do not know which registrar is responsible for your domain name, the "Registrar" lines retrieved as part of the [WHOIS](/links/web/domains-whois) search result can help you identify it.
 >
 
 ### Step 2: Unlock your domain and retrieve the transfer code <a name="step2"></a>
@@ -91,7 +91,7 @@ Please note that OVHcloud is not your current domain name registrar. We are ther
 
 ### Step 3: Request a domain name transfer to OVHcloud <a name="step3"></a>
 
-Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](/links/web/domains-transfer){.external}. Enter your domain name, and follow the order process.
+Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](/links/web/domains-transfer). Enter your domain name, and follow the order process.
 
 ![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail}
 
@@ -99,7 +99,7 @@ When you are asked to provide your transfer code, enter it into the field. If yo
 
 ![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
-Domains can also be ordered in addition to a [Web Hosting plan](/links/web/hosting). Our guide on [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} provides useful information for an optimised approach.
+Domains can also be ordered in addition to a [Web Hosting plan](/links/web/hosting). Our guide on [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) provides useful information for an optimised approach.
 
 > [!warning]
 >

@@ -1,12 +1,8 @@
 ---
 title: 'Configurar un disco adicional'
 excerpt: 'Cómo añadir y configurar espacio de almacenamiento adicional en un VPS'
-updated: 2023-02-15
+updated: 2025-07-24
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
@@ -16,9 +12,13 @@ Con los VPS de OVHcloud, puede añadir un espacio de almacenamiento seguro como 
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud.
+- Tener un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener acceso administrativo a su VPS por SSH o RDP.
+
+> [!warning]
+> Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Procedimiento
 
@@ -35,9 +35,9 @@ Tome nota de la información sobre los precios y haga clic en `Contratar`{.actio
 ### Montar el nuevo espacio de almacenamiento
 
 > [!warning]
-> OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
+> OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
->Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle soporte técnico sobre este asunto.
+> Si tiene problemas para realizar estas acciones, póngase en contacto con un [proveedor de servicios especializado](/links/partner) o hable del problema con nuestra [comunidad de usuarios](/links/community). OVHcloud no puede proporcionarle soporte técnico sobre este tema.
 >
 
 #### En un VPS Linux
@@ -219,19 +219,19 @@ Pulse `cmd` y haga clic en `Aceptar`{.action} para abrir la aplicación de líne
 
 En la línea de comandos, abra DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Utilice la siguiente serie de comandos DISKPART para configurar el disco en línea:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -245,19 +245,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -269,7 +269,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -297,10 +297,10 @@ En la última ventana, haga clic en `Finalizar`{.action} para dar formato al dis
 
 ### Dar de baja la opción de disco adicional
 
-En la pestaña `Inicio`{.action}, desplace la pantalla hasta el cuadro **Resumen de las opciones**. Haga clic en `...`{.action} delante de la opción "Discos adicionales". Haga clic en `Dar de baja`{.action} en el menú contextual.
+En la pestaña `Inicio`{.action}, en la sección **Su configuración**, haga clic en `...`{.action} junto a la opción `Discos adicionales` y seleccione `Dar de baja`{.action}.
 
 ![baja del disco adicional](images/disk_vps02.png){.thumbnail}
 
 ## Más información
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

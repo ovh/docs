@@ -19,7 +19,7 @@ updated: 2023-10-26
 
 > [!primary]
 >
-> Il est à noter que les offres [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases) ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci.
+> Il est à noter que les offres [Web Cloud Databases](/links/web/databases) ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci.
 > <br> - Il n'y a pas d'accès super utilisateur « root ».
 > <br> - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
 > 

@@ -1,7 +1,7 @@
 ---
 title: 'Gestire i contatti dei servizi OVHcloud'
 excerpt: 'Come gestire i contatti dei tuoi servizi dallo Spazio Cliente OVHcloud'
-updated: 2025-04-28
+updated: 2025-08-27
 ---
 
 ## Obiettivo
@@ -10,12 +10,9 @@ Un servizio OVHcloud è generalmente associato a diversi contatti,  che possono 
 
 **Questa guida ti mostra quali contatti è possibile associare ai tuoi servizi, quali operazioni possono effettuare e come modificarli dallo Spazio Cliente OVHcloud.**
 
-> [!warning]
->
-> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
->
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
->
+> [!primary]
+> OVHcloud mette a disposizione un sistema di gestione di [politica di accesso IAM](/pages/account_and_service_management/account_information/iam-policy-ui/) che permette di delegare gli accessi ad altri account cliente.  
+> Le policy di accesso IAM consentono di definire permessi di accesso granulari mantenendo la tracciabilità delle azioni.
 
 ## Definizione
 
@@ -31,7 +28,7 @@ L'identificativo cliente è un codice personale che viene inviato via email al m
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Avere accesso all'indirizzo email inserito nel tuo profilo
 - Disporre dei diritti sufficienti sul servizio interessato
 - Avere a disposizione l’identificativo cliente del nuovo contatto (per cui si sta effettuando la modifica)
@@ -56,7 +53,7 @@ Visualizzi una tabella con i diversi servizi per cui il tuo identificativo clien
 
 ### Modifica i contatti di un servizio
 
-Accedi alla pagina di gestione dei contatti e clicca sui`...`{.action}in corrispondenza del servizio che vuoi modificare e poi clicca su `Modifica i contatti`{.action}. Inserisci i nuovi contatti e infine clicca su`Conferma`{.action}.
+Accedi alla pagina di gestione dei contatti e clicca sui `...`{.action}in corrispondenza del servizio che vuoi modificare e poi clicca su `Modifica i contatti`{.action}. Inserisci i nuovi contatti e infine clicca su `Conferma`{.action}.
 
 ![Gestione dei contatti](images/managing_contacts_03.png){.thumbnail}
 
@@ -103,7 +100,7 @@ Se uno dei contatti non ha ricevuto l'email, l'indirizzo di contatto inserito ne
 
 ![Gestione dei contatti](images/managing_contacts_06.png){.thumbnail}
 
-Se la modifica viene confermata da uno solo dei contatti, verrà visualizzato un messaggio che informa che la richiesta è ancora in attesa di convalida da parte dell'altro contatto. Nel caso che uno dei contatti abbia appena confermato la richiesta, è possibile che l’aggiornamento della pagina nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} richieda alcuni minuti.
+Se la modifica viene confermata da uno solo dei contatti, verrà visualizzato un messaggio che informa che la richiesta è ancora in attesa di convalida da parte dell'altro contatto. Nel caso che uno dei contatti abbia appena confermato la richiesta, è possibile che l’aggiornamento della pagina nello [Spazio Cliente OVHcloud](/links/manager) richieda alcuni minuti.
 
 ![Gestione dei contatti](images/managing_contacts_007.png){.thumbnail}
 
@@ -111,11 +108,11 @@ La modifica del contatto diventerà effettiva entro pochi minuti dalla conferma 
 
 ### Esempio: assegna la gestione tecnica del tuo sito al tuo webmaster
 
-Hai appena sottoscritto un abbonamento OVHcloud che permette di creare il tuo [negozio online](https://www.ovhcloud.com/it/web-hosting/ecommerce-website/). Hai contattato uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/) e ti chiede i diritti di accesso ai tuoi servizi OVHcloud per iniziare a creare il tuo sito.
+Hai appena sottoscritto un abbonamento OVHcloud che permette di creare il tuo [negozio online](https://www.ovhcloud.com/it/web-hosting/ecommerce-website/). Hai contattato uno dei nostri [partner](/links/partner) e ti chiede i diritti di accesso ai tuoi servizi OVHcloud per iniziare a creare il tuo sito.
 
 > [!warning]
 >
-> Ti consigliamo di non dare a terzi le credenziali di accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> Ti consigliamo di non dare a terzi le credenziali di accesso allo [Spazio Cliente OVHcloud](/links/manager).
 >
 
 In questo caso, assegna al tuo provider il diritto di [contatto tecnico](#gestion_des_contacts) sul tuo hosting OVHcloud. Questo accesso permette di effettuare le operazioni necessarie alla pubblicazione online del tuo sito (aggiunta di un dominio o sottodominio nel multisito, installazione di un modulo in 1 click, modifica della password FTP o del database, creazione di un certificato SSL, ecc...).

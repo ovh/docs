@@ -1,7 +1,7 @@
 ---
-title: MKS Premium Plan
-excerpt: 'Features and limitations of the MKS Premium Plan in Beta version'
-updated: 2025-06-05
+title: MKS Standard Plan
+excerpt: 'Features and limitations of the MKS Standard'
+updated: 2025-09-10
 ---
 
 <style>
@@ -26,31 +26,21 @@ updated: 2025-06-05
 </style>
 
 > [!primary]
-> This document describes the features and "how-to" for the Managed Kubernetes Service Premium Plan currently in beta version. For additional details on the Managed Kubernetes Service Standard plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits).
+> This document describes the features and "how-to" for the Managed Kubernetes Service Standard Plan currently in beta version. For additional details on the Managed Kubernetes Service Free plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits).
 
-## Standard vs Premium comparison
+## Free vs Standard comparison
 
-| Plan                  | Standard                                            | Premium                                   |
+| Plan                  | Free                                                | Standard                                   |
 | --------------------- | --------------------------------------------------- | ----------------------------------------- |
 | ControlPlane          | Managed                                             | Managed & Cross-AZ resilient              |
 | Availability          | 99,5% SLO                                           | 99,99 SLA (at General Availability stage) |
 | etcd                  | Shared, up to 400MB                                 | Dedicated, up to 8GB                      |
 | Max cluster size      | Up to 100 nodes                                     | Up to 500 nodes                           |
-| Regional availability | Single-zone regions (3-AZ regions planned for 2025) | 3-AZ region for now                       |
+| Regional availability | Single-zone regions                                 | 3-AZ region for now                       |
 
 ## Limitations / Upcoming features
 
-In order to help you make the best use of our new Managed Kubernetes Service (MKS) Premium Plan, we have listed some limitations and guidelines related to specific features.
-
-This list is subject to change as new features will be introduced during the Beta period. The end of the Beta phase and General Availability are planned for the end of summer 2025.
-
-### Cluster upgrade
-
-Upgrading an existing cluster is not supported at the moment, we'll deliver this functionality once we support the next Kubernetes release (1.33).
-
-### Logs Data Platform integration
-
-Audit logs forwarding to the [Logs Data Platform](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) is not supported at the moment.
+In order to help you make the best use of our new Managed Kubernetes Service (MKS) Standard Plan, we have listed some limitations and guidelines related to specific features.
 
 ### ETCD Quota
 
@@ -66,12 +56,6 @@ Retrieve the gateway IP of your cluster's gateway in the [OVHcloud Control Panel
 ```bash
 openstack router show ROUTER_ID -c external_gateway_info
 ```
-
-### Anti-affinity
-
-This feature allows worker nodes to be deployed on different hypervisors (physical servers) within the same availability zone, guaranteeing better fault tolerance. It is currently supported on the MKS Premium Plan (region EU-WEST-PAR).
-
-We recommend using multiple Availability Zones (AZs) instead by using node pool to spread worker nodes between AZ.
 
 ### Ports
 
@@ -104,19 +88,23 @@ These ranges will be configurable in a future version.
 
 ### Storage classes
 
-MKS Premium only supports two out of the [three Storage Classes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume#storage-classes): `csi-cinder-high-speed` and `csi-cinder-high-speed-gen2`.
+MKS Standard only supports two out of the [three Storage Classes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume#storage-classes): `csi-cinder-high-speed` and `csi-cinder-high-speed-gen2`.
 
 They allow to create **zone specific** volumes: a PVC provisioned on a zone `X` will only be accessible from the nodes on the zone `X`.
 
 The [classic multi-attach](/pages/public_cloud/compute/classic_block_multi_az_limitations#introduction) is not supported yet for MKS clusters on regions with multiple availability zones, since the currently available file systems (ext(2,3,4), xfs and btrfs) can be subject to data corruptions if volumes are attached to multiple instances.
 
-To create a volume on MKS Premium, use the same process as a [standard Managed Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume).
+To create a volume on MKS Standard, use the same process as a [Free Managed Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume).
+
+### Reset kubeconfig
+
+At the moment, it is not possible to reset your kubeconfig file.
 
 ## Getting started
 
 ### Prerequisites
 
-To create an MKS Premium cluster, a private network and subnet with an attached [OVHcloud Gateway](/links/public-cloud/gateway) (an OpenStack router) is mandatory. Before starting the cluster creation process, please make sure that you have an existing subnet that meets these requirements or create a new one accordingly.
+To create an MKS Standard cluster, a private network and subnet with an attached [OVHcloud Gateway](/links/public-cloud/gateway) (an OpenStack router) is mandatory. Before starting the cluster creation process, please make sure that you have an existing subnet that meets these requirements or create a new one accordingly.
 
 If you want to use an use an existing subnet:
 
@@ -136,9 +124,9 @@ If you want to use an use an existing subnet:
 > ![network-creation](images/network-creation01.png){.thumbnail}
 >
 
-### Create a MKS Premium cluster
+### Create a MKS Standard cluster
 
-The following methods are supported to create an MKS Premium cluster:
+The following methods are supported to create an MKS Standard cluster:
 
 > [!tabs]
 > Using the OVHcloud Control Panel
@@ -161,7 +149,7 @@ The following methods are supported to create an MKS Premium cluster:
 >>
 >> ![Location](images/creating-a-cluster4.png){.thumbnail}
 >>
->> Select the `Premium`{.action} plan and click `Next`{.action}.
+>> Select the `Standard`{.action} plan and click `Next`{.action}.
 >>
 >> ![Plan](images/creating-a-cluster5.png){.thumbnail}
 >>
@@ -211,7 +199,7 @@ The following methods are supported to create an MKS Premium cluster:
 >>
 >> Refer to the [dedicated documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) to create a Managed Kubernetes cluster.
 >>
->> Here is a sample Terraform file that creates an MKS Premium cluster and three nodepools on three different availability zones in the `EU-WEST-PAR` region.
+>> Here is a sample Terraform file that creates an MKS Standard cluster and three nodepools on three different availability zones in the `EU-WEST-PAR` region.
 >>
 >> ```bash
 >> terraform {

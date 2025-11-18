@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Configurer son compte e-mail sur Outlook pour Android"
 excerpt: "Découvrez comment configurer votre adresse E-mail Pro sur l'application mobile Outlook pour Android"
-updated: 2024-12-19
+updated: 2025-08-18
 ---
 
 <style>
@@ -23,7 +23,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/transversal/marketplace-support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 
 ## Prérequis
 
@@ -40,7 +40,6 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 > Dans nos exemples, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
->
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche, appuyez sur `Ajouter un compte`{.action}.
 
@@ -81,9 +80,9 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 >> - **Nom complet** : saisissez votre adresse e-mail complète
 >> - **Description**
 >> - **Serveur de courrier entrant IMAP** :<br>- **Nom d'hôte IMAP** : saisissez pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur).<br>- **Port** : 993<br>- **Type de sécurité** : SSL/TLS<br>- **Nom d'utilisateur IMAP** : votre adresse e-mail complète<br>- **Mot de passe IMAP** : celui de votre adresse e-mail
->> - **Serveur de courrier entrant SMTP** :<br>- **Nom d'hôte SMTP** : saisissez pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur).<br>- **Port** : 587<br>- **Type de sécurité** : SSL/TLS<br>- **Nom d'utilisateur SMTP** : votre adresse e-mail complète<br>- **Mot de passe SMTP** : celui de votre adresse e-mail
+>> - **Serveur de courrier sortant SMTP** :<br>- **Nom d'hôte SMTP** : saisissez pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur).<br>- **Port** : 587<br>- **Type de sécurité** : STARTTLS<br>- **Nom d'utilisateur SMTP** : votre adresse e-mail complète<br>- **Mot de passe SMTP** : celui de votre adresse e-mail
 >>
->> Pour finaliser la configuration, cliquez sur le bouton « &#10003; »
+>> Pour finaliser la configuration, cliquez sur le bouton « &#10003; ».
 >>
 >> ![outlook android email pro](images/outlook-app-android-add-step03-imap-emailpro.png){.thumbnail .w-400 .h-600}
 >>
@@ -95,9 +94,9 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 >> - **Nom complet** : Saisissez votre adresse e-mail complète
 >> - **Description**
 >> - **Serveur de courrier entrant POP3** :<br>- **Nom d'hôte POP3** : saisissez pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur).<br>- **Port** : 995<br>- **Type de sécurité** : SSL/TLS<br>- **Nom d'utilisateur POP3** : votre adresse e-mail complète<br>- **Mot de passe POP3** : celui de votre adresse e-mail
->> - **Serveur de courrier entrant SMTP** :<br>- **Nom d'hôte SMTP** : saisissez pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur).<br>- **Port** : 587<br>- **Type de sécurité** : SSL/TLS<br>- **Nom d'utilisateur SMTP** : votre adresse e-mail complète<br>- **Mot de passe SMTP** : celui de votre adresse e-mail
+>> - **Serveur de courrier sortant SMTP** :<br>- **Nom d'hôte SMTP** : saisissez pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur).<br>- **Port** : 587<br>- **Type de sécurité** : STARTTLS<br>- **Nom d'utilisateur SMTP** : votre adresse e-mail complète<br>- **Mot de passe SMTP** : celui de votre adresse e-mail
 >>
->> Pour finaliser la configuration, cliquez sur le bouton « &#10003; »
+>> Pour finaliser la configuration, cliquez sur le bouton « &#10003; ».
 >>
 >> ![outlook android email pro](images/outlook-app-android-add-step03-pop-emailpro.png){.thumbnail .w-400 .h-600}
 >>
@@ -126,7 +125,7 @@ Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétr
 
 - Sélectionnez le compte e-mail concerné.
 - Appuyez sur `Supprimer le compte`{.action}.
-- Appuyez sur `Supprimer`{.action} à la question  « Voulez-vous supprimer le compte ? ».
+- Appuyez sur `Supprimer`{.action} à la question « Voulez-vous supprimer le compte ? ».
 
 ![outlook android email pro](images/outlook-app-android-delete-account-02.png){.thumbnail .w-400 .h-600}
 
@@ -169,7 +168,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail
 - **Serveur (entrant)** : pro?.mail.ovh.net
 - **Port** : 587
-- **Type de sécurité** : SSL/TLS
+- **Type de sécurité** : STARTTLS
 
 > [!primary]
 >
@@ -177,7 +176,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 >
 > Si votre adresse e-mail est configurée en **IMAP** et que vous souhaitez changer cette configuration en **POP**, vous devez supprimer le compte  puis le recréer en **POP**. Consultez le chapitre « [Modifier les paramètres existants](#modify-settings) » de ce guide.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 > [!primary]
 >

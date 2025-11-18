@@ -17,7 +17,7 @@ Zu diesem Zweck können Sie anderen OVHcloud Kunden-Accounts Lese- oder Schreibr
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Instanz in Ihrem OVHcloud Account.
+- Sie haben eine [Public Cloud](/links/public-cloud/public-cloud) Instanz in Ihrem OVHcloud Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung 

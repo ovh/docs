@@ -12,7 +12,7 @@ Aquí encontrará todos los elementos necesarios para instalar manualmente el CM
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o [el editor del CMS PrestaShop](https://www.prestashop.com/en/support){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o [el editor del CMS PrestaShop](https://www.prestashop.com/en/support). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 > [!success]
@@ -28,7 +28,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
 - Disponer de un [dominio](/links/web/domains)
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}
+- Estar conectado al [área de cliente de OVHcloud](/links/manager)
   
 ## Procedimiento
 
@@ -149,7 +149,7 @@ Consulte las claves de conexión de su PrestaShop antes de abandonar la página.
 >
 > **Por seguridad, le recomendamos que elimine la carpeta de instalación presente en su espacio FTP.**
 >
-> Para ello, consulte nuestra guía ["Cómo conectarse al espacio de almacenamiento FTP de su alojamiento web de OVHcloud"](/pages/web_cloud/web_hosting/ftp_connection) y pulse [forum PrestaShop](https://www.prestashop.com/forums/){.external} para asegurarse de eliminar los archivos adecuados.
+> Para ello, consulte nuestra guía ["Cómo conectarse al espacio de almacenamiento FTP de su alojamiento web de OVHcloud"](/pages/web_cloud/web_hosting/ftp_connection) y pulse [forum PrestaShop](https://www.prestashop.com/forums/) para asegurarse de eliminar los archivos adecuados.
 >
 
 > [!success]

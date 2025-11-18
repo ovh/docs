@@ -4,6 +4,11 @@ excerpt: Saiba como gerir os seus serviços e à sua renovação na sua Área de
 updated: 2025-01-28
 ---
 
+> [!success]
+> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
+> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
+> [Aceda ao inquérito.](https://s.elq.fr/ovhext/FFBTC2m)
+
 ## Objetivo
 
 O menu **As minhas ofertas e serviços** da sua Área de Cliente OVHcloud permite-lhe verificar o estado dos seus serviços, renová-los, alterar o tipo de renovação, regularizar faturas ou antecipar o pagamento.

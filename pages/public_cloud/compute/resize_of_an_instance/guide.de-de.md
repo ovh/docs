@@ -1,7 +1,7 @@
 ---
 title: Änderung der Größe einer Instanz mit Horizon
 excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in Horizon ändern
-updated: 2023-05-24
+updated: 2025-07-17
 ---
 
 > [!primary]

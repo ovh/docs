@@ -12,7 +12,7 @@ This tutorial will help you install PrestaShop CMS (Content Management System) m
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [PrestaShop support](https://www.prestashop.com/en/support){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [PrestaShop support](https://www.prestashop.com/en/support) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 > [!success]
@@ -148,7 +148,7 @@ Retrieve your PrestaShop login details before you leave the page.
 >
 > **For security reasons, we recommend deleting the installation folder located on your FTP space.**
 >
-> To do this, please refer to our guide [“How to log in to your OVHcloud web hosting plan’s FTP storage space”](/pages/web_cloud/web_hosting/ftp_connection) and visit [PrestaShop forum](https://www.prestashop.com/forums/){.external} to ensure that you delete the correct files.
+> To do this, please refer to our guide [“How to log in to your OVHcloud web hosting plan’s FTP storage space”](/pages/web_cloud/web_hosting/ftp_connection) and visit [PrestaShop forum](https://www.prestashop.com/forums/) to ensure that you delete the correct files.
 >
 
 > [!success]

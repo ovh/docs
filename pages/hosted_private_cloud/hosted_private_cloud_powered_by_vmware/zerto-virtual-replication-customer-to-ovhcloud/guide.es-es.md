@@ -1,344 +1,349 @@
 ---
-title: Utilizar Zerto entre OVHcloud y una plataforma tercera
-excerpt: 'Cómo conectar su Zerto OVHcloud a otra plataforma'
-updated: 2023-12-04
+title: Using Zerto between OVHcloud and a third-party platform
+excerpt: Learn how to set up Zerto between your OVHcloud Private Cloud and another platform
+updated: 2025-09-15
 ---
 
+## Objective
+
+This guide provides an outline of how to configure a virtual private network between an OVHcloud Hosted Private Cloud and a different platform.
+
+We will use the OPNsense open-source VPN Solution as an example, and explain the simplest way to set up a VPN tunnel to the Zerto network. 
+
+Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service) for the other scenario.
+
+**Find out how to get started with a VPN for OVHcloud Zerto DRP.**
+
+## Requirements
+
+- One public IP, available on the target Hosted Private Cloud for the VPN endpoint
+- A Zerto platform installed on the on-premises platform
+- VRAs (Virtual Replication Appliances) on both sides that are able to connect to the counterpart on TCP ports 4007 and 4008
+- Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9071
+- A **Read Write (RW)** vCenter account is required to access and operate the Zerto interface.
+
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
-
-## Objetivo:
-
-Esta guía explica cómo configurar la red privada virtual (VPN) para conectar una plataforma de terceros a su Hosted Private Cloud de OVHcloud e implementar la solución de recuperación ante desastres Zerto.<br>.
-Para mostrar el procedimiento, vamos a utilizar como ejemplo la solución VPN de OPNSense, una plataforma firewall/VPN open source.
-Para facilitar la explicación, vamos a describir la forma más sencilla de establecer un túnel VPN con la red de la interfaz Zerto Virtual Manager (ZVM).
-
-Para el segundo caso, consulte nuestra guía "[Zerto entre dos datacenters de OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)".
-
-## Requisitos:
-
-- Una dirección IP pública disponible en el Private Cloud de destino para el punto de conexión VPN.
-- Una plataforma Zerto instalada y operativa en la infraestructura del cliente.
-- Las máquinas de replicación Zerto (VRA: Virtual Replication Appliance) tanto del lado del cliente como del lado de OVHcloud deben poder intercambiar datos en los puertos TCP 4007 y 4008.
-- Las máquinas de administración Zerto (ZVM: Zerto Virtual Manager) del lado del cliente y del lado de OVHcloud deben poder intercambiar datos en los puertos TCP 9071.
-
-> [!primary]
+> For an operational Zerto installation:
 >
-> Para una instalación operativa de Zerto:
+> - [Download Zerto](https://www.zerto.com/myzerto/login/?redirect_to=%2Fmyzerto%2Fsupport%2Fdownloads%2F). You need to have an account.
+> - [Read the Zerto installation documentation](https://help.zerto.com/bundle/Install.VC.HTML/page/Installing_the_Zerto_Solution.htm).
 >
-> - [Descargar Zerto](https://www.zerto.com/myzerto/login/?redirect_to=%2Fmyzerto%2Fsupport%2Fdownloads%2F) (es necesario tener una cuenta).
-> - [Documentación de instalación Zerto](https://help.zerto.com/bundle/Install.VC.HTML/page/Installing_the_Zerto_Solution.htm)
->
-
 
 > [!warning]
 >
-> OVHcloud soporta las versiones N-1 de Zerto (Actualmente hasta la versión 9.7 incluida).
+> OVHcloud supports the N-1 version of Zerto (currently up to and including version 10).
+> You can find the different versions available here : <https://help.zerto.com/kb/000004585>.
 >
-> Puede consultar las distintas versiones disponibles aquí: <https://help.zerto.com/kb/00004585>.
->
 
-## Procedimiento
+### Solution overview
 
-### Presentación de la arquitectura de la solución
+![](images/image-EN-1.png){.thumbnail}
 
-![zerto vpn](images/image-EN-1.png){.thumbnail}
+**Listed parameters**:
 
-**Definición de los parámetros de esta arquitectura:**
+On-premises side:
 
-Del lado del cliente:
+- VPN endpoint public IP address (1)
+- VPN endpoint internal IP address (2)
+- ZVM internal IP address (3)
+- ZVM internal network (4)
 
-- Dirección pública del punto de conexión VPN (1)
-- Dirección interna del punto de conexión VPN (2)
-- Dirección interna de la ZVM (3)
-- Plan de direccionamiento de la red ZVM (4)
+OVHcloud side:
 
-Del lado de OVHcloud:
+- VPN endpoint public IP address (5)
+- ZVM internal network (6)
+- ZVM internal IP address (7)
 
-- Dirección pública del punto de conexión VPN (5)
-- Plan de direccionamiento de la red ZVM (6)
-- Dirección de la ZVM (7)
+## Instructions
 
 > [!primary]
 >
->Debe elegir el rango de red en el que desea que OVHcloud despliegue la ZVM remota, para evitar que interfiera con sus direcciones internas. 
+>You need to decide which network to deploy the OVHcloud ZVM in. This avoids any overlap with local networks, which would prevent routing.
 >
->Si le conviene, puede simplemente aceptar la que se propone por defecto en la interfaz del área de cliente.
+>You can either accept the suggested network or provide your own, as long as it is within a valid /23 range.
 >
 
-### 1: Activar la función Zerto en sentido cliente - OVHcloud
+### Step 1: Activate Zerto features.
 
-La activación se lleva a cabo directamente desde el área de cliente de OVHcloud. Primero debe seleccionar el datacenter asociado al Private Cloud, y hacer clic en la pestaña `Plan de Recuperación ante desastres (DRP)`{.action}.
+It is easy to activate Zerto features from the OVHcloud Control Panel. You just need to select the data centre linked to the Hosted Private Cloud solution that you want to use, from the `Disaster Recovery Plan`{.action} tab.
 
-![zerto vpn](images/image-EN-2-nucp.png){.thumbnail}
+![](images/image-EN-2-nucp.png){.thumbnail}
 
-Seleccione la opción `Entre su infraestructura y un Private Cloud OVHcloud`{.action} y haga clic en `Activar Zerto DRP`{.action}.
+First select `Between your infrastructure and an OVHcloud Private Cloud`{.action}, then click `Activate Zerto DRP`{.action}. Next, select a free public IP from the dropdown menu and enter the desired network range for the ZVM deployment. Confirm the VRA Network range and then click `Install`{.action}.
 
-![zerto vpn](images/image-EN-3.png){.thumbnail}
+![](images/image-EN-3.png){.thumbnail}
 
-Seleccione una dirección pública disponible dentro del rango propuesto.
+![](images/image-EN-4.png){.thumbnail}
 
-![zerto vpn](images/image-EN-4.png){.thumbnail}
+![](images/image-EN-5.png){.thumbnail}
 
-Introduzca el rango de red deseado para el despliegue de la ZVM.
+![](images/image-EN-6.png){.thumbnail}
 
-![zerto vpnzerto vpn](images/image-EN-5.png){.thumbnail}
+### Step 2: Activate IPSec service.
 
-Haga clic en `Instalar`{.action} para continuar.
+From the OPNsense interface, go to the `VPN`{.action} menu on the left, `IPSec`{.action} section and select `Tunnel Setting`{.action}. Click `Enable IPsec`{.action} and click save. 
 
-![zerto vpn](images/image-EN-6.png){.thumbnail}
+![](images/image-EN-7.png){.thumbnail}
 
-### 2: Activar el servicio IPSec
+![](images/image-EN-8.png){.thumbnail}
 
-En la consola OPNSense, diríjase al menú `VPN`{.action} de la izquierda, y en `IPSec`{.action} seleccione `Tunnel Setting`{.action}.
+### Step 3: Set up IPSec tunnel.
 
-![zerto vpn](images/image-EN-7.png){.thumbnail}
+You can configure the IPSec tunnel by defining two sets of parameters: **Phase 1** and **Phase 2**.
 
-Active la casilla `Enable IPsec`{.action}.
+##### 3.1 Set up Phase 1.
 
-![zerto vpn](images/image-EN-8.png){.thumbnail}
+In the `VPN`{.action} menu, go to `Tunnel settings`{.action}, and click on the `+`{.action} to add a new **Phase 1**:
 
-Haga clic en `Save`{.action} para guardar.
+![](images/image-EN-9.png){.thumbnail}
 
-### 3: Configurar el túnel IPSec
+##### 3.1.1 Phase 1: General information.
 
-Para configurar el túnel hay que completar dos conjuntos de parámetros llamados **Fase 1** y **Fase 2**.
+> ![](images/image-EN-10.png){.thumbnail}
 
-#### 3.1. Añadir la Fase 1
+If the default values are correct:
 
-En el menú `VPN`{.action}, vaya a la sección `Tunnel setting`{.action} y haga clic en el icono `+`{.action} a la derecha de la pantalla.
+- Connection Method: Default
+- Key Exchange version: V2
+- Internet Protocol: IPv4
+- Interface: WAN
 
-![zerto vpn](images/image-EN-9.png){.thumbnail}
+The only required parameter is the OVHcloud IPSec endpoint IP address.
 
-##### 3.1.1 Fase 1: añadir información general
+##### 3.1.2 Phase 1: Authentication.
 
-![](images/image-EN-10.png){.thumbnail}
+Once the default values are valid, you only need to provide the shared secret for authentication.
 
-Puede mantener los valores por defecto:
+![](images/image-EN-11.png){.thumbnail}
 
-- Método de conexión: Default
-- Protocolo de intercambio de claves: V2
-- Protocolo de Internet: IPv4
-- Interfaz: WAN
+##### 3.1.3 Phase 1: Encryption algorithms.
 
-Hay que rellenar obligatoriamente la IP del punto de conexión IPSec de OVHcloud, en el campo `Remote gateway`{.action}.
+![](images/image-EN-12.png){.thumbnail}
 
-##### 3.1.2.Fase 1: Autenticación
+Supported values for each parameter:
 
-En este apartado también se puede mantener la configuración por defecto. Solo hay que introducir la contraseña compartida en el campo `Pre-Shared Key`{.action}.
+- Encryption algorithms: AES 256 bits
+- Hash algorithms: SHA256
+- Diffie-Hellman key group: 14 (2048 bits)
+- Lifetime: 28,800 seconds
 
-![zerto vpn](images/image-EN-11.png){.thumbnail}
+You can keep the default values for the other parameters. Click `Save`{.action}, then `Apply changes`{.action}.
 
-##### 3.1.3 Fase 1: elección de los algoritmos de cifrado
+The new Phase 1 is now present in the interface:
 
-![zerto vpn](images/image-EN-12.png){.thumbnail}
+![](images/image-EN-13.png){.thumbnail}
 
-Los valores admitidos para cada parámetro son:
+#### 3.2 Set up Phase 2.
 
-- Algoritmo de cifrado: AES 256 bits
-- Algoritmo de hash: SHA256
-- Grupo de claves Diffie-Hellman: 14 (2048 bits)
-- Vida útil: 28 800 segundos
+Click on `Show Phase 2 entries`{.action}.
 
-En la configuración avanzada se pueden mantener los valores por defecto. Haga clic en `Save`{.action} y en `aplicar los cambios`{.action}.
+![](images/image-EN-14.png){.thumbnail}
 
-La Fase 1 estará ahora disponible en la interfaz.
+There is no phase 2 available, so you will need to add one:
 
-![zerto vpn](images/image-EN-13.png){.thumbnail}
+![](images/image-EN-15.png){.thumbnail}
 
-#### 3.2 Añadir una entrada Fase 2
+Click on `+`{.action}.
 
-Haga clic en el botón `Mostrar las entradas Fase 2`{.action}.
+![](images/image-EN-16.png){.thumbnail}
 
-![zerto vpn](images/image-EN-14.png){.thumbnail}
+##### 3.2.1 Phase 2: General information
 
-No aparece disponible ninguna fase 2, hay que añadir una:
+Check that the mode is set to  "Tunnel IPv4".
 
-![zerto vpn](images/image-EN-15.png){.thumbnail}
+![](images/image-EN-17.png){.thumbnail}
 
-Haga clic en el icono `+ `{.action}.
+##### 3.2.2 Phase 2: Local Network
 
-![zerto vpn](images/image-EN-16.png){.thumbnail}
+The local network type must be set to  "Lan subnet".
 
-##### 3.2.1 Fase 2: Información general
+![](images/image-EN-18.png){.thumbnail}
 
-![zerto vpn](images/image-EN-17.png){.thumbnail}
+##### 3.2.3 Phase 2: Remote Network
 
-Compruebe que el modo está en «Túnel IPv4».
+You need to give the ZVM IP and the associated network range.
 
-##### 3.2.2 Fase 2: Red Local
-
-![zerto vpn](images/image-EN-18.png){.thumbnail}
-
-El tipo de red local seleccionado debe ser «Subred Local».
-
-##### 3.2.3 Fase 2: Red remota
-
-En este paso hay que introducir el plan de direccionamiento de la red en la que se encuentra la ZVM OVHcloud. 
-
-La red deberá ser /23 (512 direcciones IP).
+On OVHcloud side, the ZVM network is always a /23 network (512 IPs).
 
 > [!warning]
 >
-> Asegúrese de comprobar dos veces la configuración, porque si se comete algún error en este paso, la VPN no funcionará. 
+>Make sure to double-check the parameters, otherwise the VPN tunnel won't come up.
 >
 
-![zerto vpn](images/image-EN-19.png){.thumbnail}
+![](images/image-EN-19.png){.thumbnail}
 
-##### 3.2.4 Fase 2: Intercambio de claves
+##### 3.2.4 Phase 2: Key exchange
 
-Los valores admitidos para cada parámetro son:
+Supported values are:
 
-- Protocolo: ESP
-- Algoritmos de cifrado: AES 256 bits
-- Algoritmos de hash: SHA256
+- Protocol: ESP
+- Encryption algorithm: AES 256 bits
+- Hash algorithms: SHA256
 - PFS: Off
 
-![zerto vpn](images/image-EN-20.png){.thumbnail}
+![](images/image-EN-20.png){.thumbnail}
 
-No es necesario modificar las opciones avanzadas. Haga clic en `Save`{.action} y en `Aplicar los cambios`{.action}.
+You can leave advanced parameters to their default value. Click `Save`{.action}, then `Apply changes`{.action}.
 
-#### 3.3 Comprobación del estado de la VPN:
+#### 3.3. Check VPN status.
 
-![zerto vpn](images/image-EN-21.png){.thumbnail}
+![](images/image-EN-21.png){.thumbnail}
 
-Haga clic en el triángulo naranja de la derecha para iniciar la conexión.
+Click the orange triangle on the right to initialise the connection:
 
-![zerto vpn](images/image-EN-22.png){.thumbnail}
+![](images/image-EN-22.png){.thumbnail}
 
-Si la configuración es correcta, el túnel se establecerá. Aparecerán dos nuevos iconos:
+If all the parameters are correct, the tunnel will come up and two new icons will appear:
 
-- Desactivar el túnel
-- Obtener información sobre el estado del túnel
+* tear down tunnel
+* tunnel information
 
-![zerto vpn](images/image-EN-23.png){.thumbnail}
+![](images/image-EN-23.png){.thumbnail}
 
-Haga clic en el icono de información.
+Click on the information icon.
 
-![zerto vpn](images/image-EN-24.png){.thumbnail}
+![](images/image-EN-24.png){.thumbnail}
 
-El túnel está ahora operativo. No olvide añadir, en caso necesario, una ruta de la ZVM local hacia la red ZVM OVHcloud.
+The tunnel is now up. Make sure to add, if required, a route to the OVHcloud ZVM network on your local ZVM.
 
-**En caso de fallo**:
+**Troubleshooting**
 
-Si no se establece el túnel, verifique que se han introducido correctamente los siguientes parámetros:
+If the tunnel is not coming up, make sure that the parameters values are identical on both sides:
 
-- La contraseña compartida
-- La IP del punto de conexión remota.
-- El rango IP de la red remota
+- Shared secret
+- Remote endpoint IP address
+- Remote network range
 
-Compruebe además que no haya un firewall bloqueando el tráfico entre los dos extremos de la VPN.
+Make sure that a firewall is not interfering in the dialog between the local and remote endpoints.
 
-También puede consultar el archivo de log IPSec en /var/log/ipsec.log.
+You can check the IPSec logfile in /var/log/ipsec.log on the OPNsense appliance to get more information.
 
-### 4: Configuración del firewall
+### Step 4: Set up firewall.
 
-Para permitir el emparejamiento de la infraestructura del cliente con la de OVHcloud, se debe autorizar el tráfico entre:
+To allow pairings of on-premises and OVHcloud instances, traffic must be authorised on the following ports:
 
-- El puerto 9071 y las ZVM
-- Los puertos 4007/4008 y las vRAs
+* TCP 9071 between ZVMs
+* TCP 4007/4008 between vRAs
 
-#### 4.1 Abrir puertos en ZVM
+#### 4.1 ZVM opening.
 
-Diríjase al menú `Firewall`{.action}, y en la sección `Rules`{.action} seleccione `IPSec`{.action}.
+Go to the `Firewall`{.action} menu, `Rules`{.action}  section, `IPSec`{.action} interface:
 
-![zerto vpn](images/image-EN-25.png){.thumbnail}
+![](images/image-EN-25.png){.thumbnail}
 
-Haga clic en `Add`{.action} para crear una nueva regla.
+Click on `Add`{.action} to create a new rule.
 
-![zerto vpn](images/image-EN-26.png){.thumbnail}
+![](images/image-EN-26.png){.thumbnail}
 
-![zerto vpn](images/image-EN-27.png){.thumbnail}
+![](images/image-EN-27.png){.thumbnail}
 
-Esta regla debe tener la siguiente configuración:
+Rule parameters are as follow:
 
-- Acción: «Pass» (Autorizar el tráfico)
-- Interfaz: «IPSec» (el tráfico entrante que se debe autorizar proviene de la VPN)
-- Protocolo: «TCP»
+- Action: "Pass" (authorise traffic)
+- Interface: "IPsec" (incoming traffic coming from the VPN tunnel)
+- Protocol: "TCP"
 
-En los campos «Source» y «Destination» seleccione el tipo «Single host or Network». Estos campos hacen referencia respectivamente a las direcciones IP de la ZVM OVHcloud hacia la ZVM del cliente.
+For "Source" and "Destination", select "Single host or Network" type. The source is the OVHcloud ZVM, and the destination is your on-premises ZVM.
 
-![zerto vpn](images/image-EN-28.png){.thumbnail}
+![](images/image-EN-28.png){.thumbnail}
 
-El puerto TCP de destino autorizado es el 9071.
+Destination TCP port is 9071. Click `Save`{.action} and `Apply Changes`{.action}.
 
-Guarde la regla y aplique los cambios.
+#### 4.2 vRAs opening.
 
-#### 4.2 Abrir puertos en vRA
+vRAs opening is a bit more complex since there are multiple vRAs on each side that need to be able to exchange information on TCP ports 4007 and 4008.
+To simplify this setup, we are going to use the alias feature of OPNsense. An alias is a group of objects IPs, networks, URLs…) that can be used in firewall rules.
 
-Abrir puertos en vRa es un poco más complejo ya que hay tantas vRA como ESXi, tanto del lado del cliente como del lado de OVHcloud. 
+We will define three aliases:
 
-Todas deben comunicarse por los puertos TCP 4007 y 4008. 
+* one for vRA IPs on the customer side
+* one for vRA IPs on the OVHcloud side
+* one for the ports
 
-Para simplificar esta configuración, OPNSense ofrece los alias. Un alias es un grupo de objetos (direcciones IP, redes, URL, etc.) que se pueden usar para definir reglas de firewall.
+You can get the OVHcloud vRAs IP from the destination Private Cloud vCenter interface.  
 
-En nuestro caso, necesitamos 3 alias:
+![](images/image-EN-29.png){.thumbnail}
 
-- Uno para las direcciones IP de las vRA del lado del cliente
-- Uno para las direcciones IP de las vRA del lado de OVHcloud
-- Uno para los puertos que se deben autorizar
+Let's create the OVH_VRA alias for OVHcloud vRAs:
 
-La dirección IP de las vRA del lado de OVHcloud se puede consultar en la interfaz vSphere del Private Cloud de destino:
+![](images/image-EN-30.png){.thumbnail}
 
-![zerto vpn](images/image-EN-29.png){.thumbnail}
+Similarly, we can create an alias for the on-premises vRAs:
 
-Cree el alias OVH_VRA para los vRA del lado de OVHcloud:
+![](images/image-EN-31.png){.thumbnail}
 
-![zerto vpn](images/image-EN-30.png){.thumbnail}
+Finally, you need to create the ports alias:
 
-Hay que crear un alias para las máquinas del lado del cliente de la misma forma:
+![](images/image-EN-32.png){.thumbnail}
 
-![zerto vpn](images/image-EN-31.png){.thumbnail}
+We have now all the elements we need to implement the required firewall rules to authorise data coming from the OVHcloud platform. It is the same procedure as before, we just need to use the aliases instead of explicit IPs or ports:
 
-Y por último, hay que crear el alias para los puertos:
+![](images/image-EN-33.png){.thumbnail}
 
-![zerto vpn](images/image-EN-32.png){.thumbnail}
+At this point, we have a functional and secure link between our on-premises platform and cloud instance.
 
-Ahora ya tiene todos los elementos para poder crear las reglas firewall que autoricen el tráfico desde OVHcloud hacia la plataforma del cliente. El procedimiento es el mismo, tan solo hay que utilizar los alias en la configuración:
+![](images/image-EN-34.png){.thumbnail}
 
-![zerto vpn](images/image-EN-33.png){.thumbnail}
+### Step 5: ZVM Pairing
 
-Ahora la conexión VPN es segura y está operativa.
+Before starting the pairing process, you need to retrieve a **pairing token**.
 
-![zerto vpn](images/image-EN-34.png){.thumbnail}
+There are two possible ways to do this:
 
-### 5: Emparejar las ZVM
+- From [the OVHcloud API](/links/console) with the request below:
 
-Una vez instalada la ZVM en la infraestructura del cliente, ya se puede conectar a la interfaz Zerto. 
+> [!api]
+>
+> @api {v1} POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zertoSingle/requestPairingToken
+>
 
-Aparecerá la siguiente pantalla.
+- On request to OVHcloud support by opening a ticket via the [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
-![zerto vpn](images/image-EN-35.png){.thumbnail}
+Once your request has been processed, you will receive an email containing the pairing token, which you can add to the Zerto interface in order to pair it with the PCC.
 
-Elija la opción `Pair to a site with a licence`{.action}. Introduzca la dirección IP de la ZVM de OVHcloud y haga clic en `Start`{.action}.
+Then, log in to your on-premises ZVM. The following screen is displayed:
 
-En el panel de control, aparecerá un mensaje informando de que el emparejamiento está en curso.
+![](images/image-EN-35.png){.thumbnail}
 
-![zerto vpn](images/image-EN-36.png){.thumbnail}
+Select `Pair to a site with a licence`{.action}, enter the OVHcloud ZVM IP and press `Start`{.action}.
 
-Si la operación se ha desarrollado correctamente, aparecerá el siguiente mensaje:
+In the dashboard, you can see the pairing is ongoing:
 
-![zerto vpn](images/image-EN-37.png){.thumbnail}
+![](images/image-EN-36.png){.thumbnail}
 
-Compruebe que el nombre de su Private Cloud OVHcloud aparece ahora en la pestaña `Sites`{.action}.
+You will be notified when the pairing is successful:
 
-![zerto vpn](images/image-EN-38.png){.thumbnail}
+![](images/image-EN-37.png){.thumbnail}
 
-Su solución Zerto ya está operativa y se pueden crear grupos de protección virtual. (VPG).
+You can check that your OVHcloud PCC is visible in the `Sites`{.action} tab.
 
-#### **Diagnóstico**:
+![](images/image-EN-38.png){.thumbnail}
 
-En caso de que sea imposible establecer un diálogo entre las ZVM (sobre todo en caso de haber configurado erróneamente las reglas de firewall), aparecerá el siguiente mensaje:
+At this point, your Zerto setup is functional and you can start to create your virtual protection groups (VPGs).
 
-![zerto vpn](images/image-EN-39.png){.thumbnail}
+> [!warning]
+>
+> When enabling Zerto, a `Z-VRAH` VM may appear in your inventory.
+> This deployment is **not systematic**; it depends notably on the data volume to process.
+> If present, it is essential to the service and **must not be modified or deleted**.
 
-Será redirigido a la pantalla de acceso a la ZVM con el siguiente mensaje de error.
+#### Troubleshooting
 
-![zerto vpn](images/image-EN-40.png){.thumbnail}
+If the on-premises ZVM is not able to successfully contact the OVHcloud ZVM (due to an incorrect firewall setup, for example) you will get the following message:
 
-La causa más probable es que la ZVM OVHcloud no pueda comunicarse con la ZVM del cliente en el puerto TCP 9071. Es necesario que se pueda iniciar la conexión.
+![](images/image-EN-39.png){.thumbnail}
 
-## Más información
+You will then be brought back to the log-in screen, with the following error message:
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+![](images/image-EN-40.png){.thumbnail}
+
+The most probable cause is that the OVHcloud ZVM is not authorised to contact your on-premises ZVM on TCP 9071 (it needs to be able to initiate the connection).
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
+
+Join our [community of users](/links/community).

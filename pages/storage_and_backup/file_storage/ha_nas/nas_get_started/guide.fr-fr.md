@@ -11,12 +11,12 @@ Le NAS (Network Attached Storage) est un serveur de fichiers relié à un résea
 ## Prérequis
 
 - Disposer d'une adresse IP attachée à un service OVHcloud (Hosted Private Cloud, Serveur Dédié, VPS, Instance Public Cloud, Offre Internet, etc...)
-- Disposer d'un [NAS-HA](https://www.ovh.com/fr/nas/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'un [NAS-HA](/links/storage/nas-ha)
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-La gestion de votre NAS-HA s'effectue via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+La gestion de votre NAS-HA s'effectue via l'[espace client OVHcloud](/links/manager).
 
 Une fois connecté, cliquez sur `Bare Metal Cloud`{.action} puis sur `NAS and CDN`{.action} dans le menu à gauche. Cliquez sur votre service pour avoir accès au menu d'administration.
 
@@ -112,6 +112,6 @@ Pour supprimer une partition, cliquez sur le bouton `(...)`{.action} situé à d
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -5,7 +5,7 @@ updated: 2025-04-25
 
 ## Objective
 
-[Logstash](https://github.com/elastic/logstash){.external} is an open source software developed by Elastic. Based on its features, it is possible to send messages from several inputs to different types of output using a variety of codecs, while processing them and transforming them in the process. You can learn a lot more about it on [the official website](https://www.elastic.co/products/logstash){.external}.
+[Logstash](https://github.com/elastic/logstash) is an open source software developed by Elastic. Based on its features, it is possible to send messages from several inputs to different types of output using a variety of codecs, while processing them and transforming them in the process. You can learn a lot more about it on [the official website](https://www.elastic.co/products/logstash).
 
 This guide will demonstrate how to deploy a personalized Logstash having a specific configuration, and send logs from any source to your stream directly on the Logs Data Platform.
 
@@ -15,9 +15,9 @@ If you are new to Logs Data Platform, completion of the [Quick Start Tutorial](/
 
 The following links can help you get a head start on Logstash in order to get started with the basics:
 
-- [What is Logstash?](#what-is-logstash){.external}
-- [How do I configure Logstash Collector on Logs Data Platform?](#host-a-logstash-collector-on-logs-data-platform){.external}
-- [What is special about our hosted Logstash? Available plugins, SSL Certificates and more.](#additional-information_1){.external}
+- [What is Logstash?](#what-is-logstash)
+- [How do I configure Logstash Collector on Logs Data Platform?](#host-a-logstash-collector-on-logs-data-platform)
+- [What is special about our hosted Logstash? Available plugins, SSL Certificates and more.](#additional-information)
 
 This is "All you need to know about the Logstash Collector on the Logs Data Platform"!
 
@@ -212,7 +212,7 @@ This is an address of your collector for the cluster on Logs Data Platform. Send
 The version hosted by Logs Data Platform is the Latest Logstash 7 version (7.8 as of July 2020). Of course we will update to the new versions as soon as they become available.
 
 #### Logstash Plugins
-For your information, here is the list of Logstash plugins we support. Of course we will welcome any suggestion on additional plugins. Don't hesitate to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
+For your information, here is the list of Logstash plugins we support. Of course we will welcome any suggestion on additional plugins. Don't hesitate to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms).
 
 ##### Inputs plugins
 
@@ -359,11 +359,11 @@ To do this, please go to the dedicated page by clicking on the `Console output`{
 
 Here are some links to help you go further with Logstash
 
-- [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html){.external}
-- [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html){.external}
+- [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html)
+- [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html)
 - [Logstash + Groks + Filebeat = Awesome](/pages/manage_and_operate/observability/logs_data_platform/ingestion_filebeat)
-- [Grok Constructor](http://grokconstructor.appspot.com/do/match){.external}
-- [A Ruby regular expression editor](https://rubular.com/){.external}
+- [Grok Constructor](http://grokconstructor.appspot.com/do/match)
+- [A Ruby regular expression editor](https://rubular.com/)
 
 That's all you need to know about the Logstash Collector on Logs Data Platform.
 
@@ -371,5 +371,5 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

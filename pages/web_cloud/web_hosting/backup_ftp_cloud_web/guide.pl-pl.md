@@ -21,8 +21,8 @@ Twój hosting Cloud Web dysponuje przestrzenią dyskową, na której możesz hos
 
 ## Wymagania początkowe
 
-- Hosting [Cloud Web](/links/web/hosting-cloud-web-offer){.external}
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Hosting [Cloud Web](/links/web/hosting-cloud-web-offer)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Dostęp do konta e-mail do kontaktu przypisanego do Twojego identyfikatora klienta
 
 ## W praktyce
@@ -38,13 +38,13 @@ OVHcloud może zaproponować wyłącznie kopie zapasowe, o których mowa powyże
 
 ### Pobierz kopię zapasową
 
-W przeciwieństwie do hostingu współdzielonego OVHcloud, przywracanie przestrzeni FTP nie jest możliwe za pomocą jednego kliknięcia w [Panelu klienta OVHcloud](/links/manager){.external}.
+W przeciwieństwie do hostingu współdzielonego OVHcloud, przywracanie przestrzeni FTP nie jest możliwe za pomocą jednego kliknięcia w [Panelu klienta OVHcloud](/links/manager).
 
 Link do pobrania kopii zapasowej jest generowany, a następnie wysyłany e-mailem na adres e-mail powiązany z identyfikatorem klienta administratora hostingu Cloud Web.
 
 #### Etap 1 - Wygeneruj link do pobrania wysłany e-mailem
 
-Aby wygenerować link do pobrania, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie odpowiednią usługę Cloud Web. 
+Aby wygenerować link do pobrania, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie odpowiednią usługę Cloud Web. 
 
 Wybierz kartę `FTP - SSH`{.action} i kliknij przycisk `Wygeneruj kopię zapasową`{.action} po prawej stronie.
 
@@ -60,7 +60,7 @@ Pojawi się drugie okno z informacją, że link do pobrania pliku kopii zapasowe
 
 Kliknij na `Zatwierdź`{.action}, aby potwierdzić zlecenie.
 
-Jeśli wygenerowana zostanie kopia zapasowa, w [Panelu klienta OVHcloud](/links/manager){.external} pojawi się następujący komunikat:
+Jeśli wygenerowana zostanie kopia zapasowa, w [Panelu klienta OVHcloud](/links/manager) pojawi się następujący komunikat:
 
 ![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Po pobraniu plików możesz [połączyć się z przestrzenią FTP](/pages/web_cl
 
 > [!primary]
 >
-> Korzystaj z portów podanych w [Panelu klienta OVHcloud](/links/manager){.external} do połączenia SFTP i SSH, ponieważ port 22 nie będzie działał dla Twojego hostingu Cloud Web.
+> Korzystaj z portów podanych w [Panelu klienta OVHcloud](/links/manager) do połączenia SFTP i SSH, ponieważ port 22 nie będzie działał dla Twojego hostingu Cloud Web.
 >
 
 ## Sprawdź również 

@@ -8,7 +8,7 @@ updated: 2018-02-12
 
 Dans certains cas, l'intervention d'un administrateur OVHcloud peut être nécessaire sur votre infrastructure dédiée. 
 
-** Ce guide vous décrit l'installation d'une clé SSH OVHcloud pour permettre l'intervention de nos administrateurs, puis sa désactivation. **
+**Ce guide vous décrit l'installation d'une clé SSH OVHcloud pour permettre l'intervention de nos administrateurs, puis sa désactivation.**
 
 ## Prérequis
 

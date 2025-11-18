@@ -1,30 +1,30 @@
 ---
 title: "Publicar un sitio web en internet"
 excerpt: "Descubra cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet"
-updated: 2025-05-23
+updated: 2025-10-28
 ---
 
 ## Objetivo
 
-Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVHcloud](/links/web/hosting){.external} le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](https://webhosting-infos.hosting.ovh.net){.external}.
+Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere crear un blog o una tienda online como compartir una afición o promover una actividad profesional, los [planes de hosting de OVHcloud](/links/web/hosting) le permiten alojar cualquier sitio web, siempre que sea compatible con la [configuración de nuestras infraestructuras](https://webhosting-infos.hosting.ovh.net).
 
 **Esta guía explica cómo publicar en internet un sitio web alojado en un plan de hosting de OVHcloud.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
-- Disponer de un [dominio](/links/web/domains){.external} con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
+- Disponer de un [dominio](/links/web/domains) con el que poder acceder a su sitio web.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 
-### 1. Definir el proyecto
+### 1 - Definir el proyecto
 
 Para llevar su proyecto a buen puerto, es importante tener una visión clara de su objetivo. ¿Qué quiere conseguir con su sitio web? ¿Cómo quiere publicarlo? Los alojamientos web de OVHcloud le ofrecen diversas posibilidades para hacer realidad su proyecto:
 
-- **Crear un sitio web llave en mano con los módulos en un clic de OVHcloud**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, para descubrirlos en la página web de OVHcloud ["Crear un sitio web con los módulos en un clic"](/links/web/hosting-website){.external}. También puede consultar la guía ["Instalar su sitio web con los módulos en un clic"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Crear un sitio web llave en mano con los módulos en un clic de OVHcloud**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, para descubrirlos en la página web de OVHcloud [«Crear un sitio web con los módulos en un clic»](/links/web/hosting-website). También puede consultar la guía [«Instalar su sitio web con los módulos en un clic»](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Crear un sitio web llave en mano con instalación manual**: Esta solución permite tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.), pero que deberá instalar usted mismo en su alojamiento web de OVHcloud.
 
@@ -43,9 +43,8 @@ Según el método elegido para llevar a cabo su proyecto, tendrá dos posibilida
 > La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
->
 
-### 2. Colocar los archivos del sitio web en el espacio de almacenamiento
+### 2 - Colocar los archivos del sitio web en el espacio de almacenamiento
 
 Para subir un sitio web a un alojamiento manualmente es necesario realizar diversas acciones. Puede haber varias formas de realizarlas y, en función del sitio web, algunas de ellas son opcionales. No obstante, en la mayoría de los proyectos actuales, podemos diferenciar dos grandes etapas a la hora de publicar un sitio web en internet. La primera de ellas, que consiste en subir los archivos del sitio web al espacio de almacenamiento, se explica en este apartado.
 
@@ -64,21 +63,46 @@ Para conectarse al espacio de almacenamiento, necesitará lo siguiente:
 - la dirección del servidor;
 - el puerto de conexión al servidor.
 
-Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección **Web** y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
+Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection). Si no recuerda la contraseña, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último.
+>>
+>> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+>>
+>> Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection).
+>>
+>> Si no tiene la contraseña, consulte la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Una vez que disponga de todos los datos necesarios, podrá conectarse a su espacio de almacenamiento de dos formas diferentes:
 
 - **Cliente FTP o SFTP**: Deberá instalar en su ordenador un programa compatible con el protocolo FTP o SFTP (por ejemplo, FileZilla). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa.
 
-- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](/links/web/hosting){.external} son compatibles.
+- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](/links/web/hosting) son compatibles.
 
 #### 2.3. Cargar los archivos en el espacio de almacenamiento
 
-Una vez que se haya conectado al espacio de almacenamiento, solo tendrá que subir los archivos del sitio web. **Preste especial atención al directorio en el que vaya a colocar los archivos**. Para un uso convencional, deberá cargar el sitio web en la carpeta «www». Sin embargo, si quiere utilizar el alojamiento para alojar varios sitios web, deberá utilizar la opción de multisitio.
+Una vez conectado a su espacio de almacenamiento, solo le queda subir los archivos de su sitio web. **Le recomendamos encarecidamente que preste especial atención al directorio en el que vaya a cargar los archivos**. En un caso de uso habitual, el sitio debe cargarse en la carpeta "www". Sin embargo, si está utilizando su alojamiento para varios sitios web, es probable que haya declarado varios sitios web.
 
 Para conocer la carpeta en la que debe colocar el sitio web, vaya a la pestaña `Multisitio`{.action} del área de cliente de OVHcloud. Aparecerá una tabla en la que podrá consultar la **Carpeta raíz** del dominio correspondiente. Ese es el directorio en el que debe colocar los archivos del sitio web.
 
@@ -90,7 +114,7 @@ Es posible que en el espacio de almacenamiento ya haya un archivo denominado ind
 
 ![Instalación de un sitio web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### 3. Conectar el sitio web a una base de datos
+### 3 - Conectar el sitio web a una base de datos
 
 > [!primary]
 >
@@ -107,9 +131,11 @@ Si va a migrar un sitio web que ya existe, descargue la base de datos desde su a
 
 #### 3.2. Crear la base de datos en OVHcloud 
 
-Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](/links/web/hosting){.external}, necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
+Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](/links/web/hosting), una solución [Cloud Databases](/links/web/databases)), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
 
-Si quiere crear una nueva base de datos en OVHcloud, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
+Si quiere crear una nueva base de datos en OVHcloud, conéctese al [área de cliente de OVHcloud](/links/manager) y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 A continuación, haga clic en `Crear una base de datos`{.action} o, si este botón no aparece, en `Acciones`{.action} > `Crear una base de datos`{.action}. Introduzca la información solicitada.
 
@@ -127,7 +153,7 @@ Una vez que la base de datos esté disponible y que haya cargado los archivos en
 
 La forma de realizar la conexión con la base de datos dependerá del sitio web que quiera publicar. Esta operación no forma parte de la configuración de los servicios de OVHcloud sino del sitio web, por lo que, si necesita ayuda para realizarla, le recomendamos que se ponga en contacto con el editor del sitio web o con un profesional especializado.
 
-### 4. Acceder al sitio web
+### 4 - Acceder al sitio web
 
 Una vez que haya cargado los archivos en el espacio de almacenamiento y que la base de datos (si el sitio web utiliza una) esté conectada, ya podrá visitar su sitio web, que debería mostrarse correctamente al introducir la dirección en el navegador.
 

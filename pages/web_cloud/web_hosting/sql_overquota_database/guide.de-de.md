@@ -45,7 +45,7 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 >
 > Alle folgenden in diesem Tutorial beschriebenen Aktionen werden über das **phpMyAdmin**-Interface ausgeführt.
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} ist für alle Webhosting-Datenbanken von OVHcloud verfügbar.
+> [phpMyAdmin](https://www.phpmyadmin.net/) ist für alle Webhosting-Datenbanken von OVHcloud verfügbar.
 > Mit dieser Anwendung zur Datenbankverwaltung können Sie manuelle Datenbank-Aktionen einfach durchführen.
 >
 > Wenn Ihre Datenbank auf einer [Web Cloud Databases](/links/web/databases) Lösung vorhanden ist, lesen Sie unsere Anleitung „[Web Cloud Databases - Verbindung mit Ihrer Datenbank herstellen](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)“ und fahren Sie dann direkt mit [Schritt 1.2](#step1.2) dieser Anleitung fort.
@@ -73,7 +73,7 @@ Um sich über phpMyAdmin mit der Datenbank zu verbinden, klicken Sie auf die Tab
 >>
 >> Klicken Sie auf den Tab `Datenbanken`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Schritt 4**
 >>
@@ -125,10 +125,10 @@ Für andere CMS-Typen empfehlen wir Ihnen, sich an den entsprechenden Herausgebe
 
 Hier finden Sie die Links zu den offiziellen CMS-Websites für die **1-Klick-Module** von OVHcloud:
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://www.joomla.org){.external}
-- [PrestaShop](https://www.prestashop.com/){.external}
-- [Drupal](https://drupal.org){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://www.joomla.org)
+- [PrestaShop](https://www.prestashop.com/)
+- [Drupal](https://drupal.org)
 
 > [!primary]
 >
@@ -248,7 +248,7 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Klicken Sie auf den Tab `Datenbanken`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Schritt 4**
 >>

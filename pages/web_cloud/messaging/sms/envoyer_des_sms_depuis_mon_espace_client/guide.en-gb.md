@@ -1,7 +1,7 @@
 ---
 title: Sending SMS messages via the OVHcloud Control Panel
 excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
-updated: 2024-10-10
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -24,6 +24,9 @@ The “Send an SMS” field is the first item available in the list of actions.
 ![send sms control panel](images/sms-send-control-panel01E.png){.thumbnail}
 
 ### Step 1: Configure the sender and recipient.
+
+> [!primary]
+> For more information on creating and using a sender, refer to our guide "[Everything you need to know about SMS senders](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
 
 Once you have landed on the sending page for SMS messages, you will have different settings to enter, in order to adapt your SMS sending to suit your needs. 
 
@@ -68,48 +71,6 @@ If you use characters that do not appear in these tables, the encoding with swit
 In this section, you can either send messages immediately, or set up delayed sending (1).
 
 Three sending formats (Standard/Flash/Sim) are also visible (2) but this feature is deprecated.
-
-### Step 3: Choose an SMS sender.
-
-#### A short number enabling recipients to send replies
-
-**Only for OVHcloud accounts in France excluding French overseas departments and territories.**
-
-Short numbers enable you to receive replies via the Received SMS tab.
-
-#### Virtual mobile number
-
-**Only for OVHcloud accounts in France.**
-
-If you have an SMS solution with a virtual mobile number, you can enter it as a sender. For further information, please refer to our French webpage on [virtual mobile numbers](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
-
-> [!primary]
->
->If you already have an SMS account, you cannot create a virtual mobile number for an existing account. You will need to order a new SMS account via the page for the virtual mobile number solution.
->
-
-#### Alpha-numeric sender
-
-You can customise your sender. This would mean you are no longer able to receive replies from the recipient of your SMS. To access SMS sender management, select `Senders`{.action} (1) when you are on the SMS account concerned.
-
-![send sms control panel](images/sms-send-control-panel04E.png){.thumbnail}
-
-If you would like to add an additional SMS sender, click the `Actions`{.action} button in the middle, then `Add`{.action} (2).
-
-![send sms control panel](images/sms-send-control-panel05E.png){.thumbnail}
-
-Once you are on the ‘Add’ page, you will see several options for configuring a new SMS sender (3).
-
-- **Manually add senders**: You will need to enter the sender you want, their description, and a reason for using this sender (4). A supporting document is also required. 
-
-> [!primary]
->
-> As part of our security policy, we ask for a supporting document. By default, this is a company or trademark letterhead, including the authorisation of an official with signature and stamp of the same company, a proof of identity.
->
-
-- **Add senders based on personal data**: You can request a sender based on the contact details saved on your OVHcloud account. A dropdown list of available senders will then appear.
-
-- **Add senders based on OVHcloud domain names**: You can use a domain name available in the OVHcloud Control Panel as a sender. A dropdown list of available senders will then appear.
 
 ## Go further
 

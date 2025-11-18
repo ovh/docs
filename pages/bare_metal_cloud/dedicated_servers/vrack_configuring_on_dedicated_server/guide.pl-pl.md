@@ -311,7 +311,7 @@ Kliknij dwukrotnie `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 
-Kliknij **Użyj następującego** adresu IP. W odpowiednim polu wpisz dowolny adres **IP** z Twojego zakresu prywatnego oraz odpowiednią **maskę** podsieci (`255.255.0.00` w tym przykładzie).
+Kliknij **Użyj następującego** adresu IP. W odpowiednim polu wpisz dowolny adres **IP** z Twojego zakresu prywatnego oraz odpowiednią **maskę** podsieci (`255.255.0.0` w tym przykładzie).
 
 ![Użyj następującego adresu IP](images/windows_use_following_ip_address.png){.thumbnail}
 

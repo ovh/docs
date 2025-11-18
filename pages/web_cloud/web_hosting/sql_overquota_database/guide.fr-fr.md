@@ -46,7 +46,7 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 >
 > Toutes les actions suivantes décrites dans ce tutoriel seront réalisées à partir de **phpMyAdmin**.
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} est disponible sur l'ensemble des bases de données mutualisées OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/) est disponible sur l'ensemble des bases de données mutualisées OVHcloud.
 > Cette application de gestion de base de données facilite la réalisation des actions manuelles que vous pouvez effectuer avec votre base de données.
 >
 > Si votre base de données est présente sur une solution [Web Cloud Databases](/links/web/databases), consultez notre guide « [Web Cloud Databases - Se connecter à votre base de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) », puis passez directement à l'[étape 1.2](#step1.2) du présent guide.
@@ -75,7 +75,7 @@ Pour vous connectez à la base de données via phpMyAdmin, cliquez sur les ongle
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >> 
 > **Etape 4**
 >>
@@ -127,10 +127,10 @@ Pour les autres cas liés aux CMS, nous vous recommandons de contacter directeme
 
 Retrouvez ci-dessous les liens vers les sites officiels des CMS proposés en installation « **En un clic** » par OVHcloud :
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://www.joomla.org){.external}
-- [PrestaShop](https://www.prestashop.com/){.external}
-- [Drupal](https://drupal.org){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://www.joomla.org)
+- [PrestaShop](https://www.prestashop.com/)
+- [Drupal](https://drupal.org)
 
 > [!primary]
 >
@@ -250,7 +250,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >> 
 > **Etape 4**
 >>

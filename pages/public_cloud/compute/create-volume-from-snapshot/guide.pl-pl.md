@@ -22,8 +22,8 @@ Może to być przydatne w następujących przypadkach:
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
-- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- Posiadanie [instancji Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 - Posiadanie kopii zapasowej dysku w tym samym regionie OpenStack
 - Dostęp do instancji przez SSH jako administrator (sudo)
 

@@ -4,7 +4,7 @@ excerpt: Find out how to manage traffic with Istio on OVHcloud Managed Kubernete
 updated: 2021-09-22
 ---
 
-[Istio](https://istio.io){.external} is a open source service mesh and platform to reduce the complexity of deploying, securing, controlling and observing distributed services. As the Istio site explains, Istio helps you to:
+[Istio](https://istio.io) is a open source service mesh and platform to reduce the complexity of deploying, securing, controlling and observing distributed services. As the Istio site explains, Istio helps you to:
 
 - Control the flow of traffic between services
 - Secure the services and manage the authentication, authorization and encryption of inter-service communications
@@ -17,11 +17,11 @@ In this tutorial we are showing some of the traffic management features of Istio
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
 
-It also supposes you have a basic knowledge of Istio, and that you have installed it in your Kubernetes cluster. If it isn't the case, please follow the [Installing Istio on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-istio) tutorial. We are going to use the [Bookinfo](https://istio.io/docs/examples/bookinfo/){.external} example application, as we did in that tutorial, so if you haven't installed it, please do it now.
+It also supposes you have a basic knowledge of Istio, and that you have installed it in your Kubernetes cluster. If it isn't the case, please follow the [Installing Istio on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-istio) tutorial. We are going to use the [Bookinfo](https://istio.io/docs/examples/bookinfo/) example application, as we did in that tutorial, so if you haven't installed it, please do it now.
 
 ## Preparing the Bookinfo app
 
-Before you can use Istio to control the Bookinfo version routing, you need to define the available versions, called `subsets`, in [destination rules](https://istio.io/docs/concepts/traffic-management/#destination-rules){.external}.
+Before you can use Istio to control the Bookinfo version routing, you need to define the available versions, called `subsets`, in [destination rules](https://istio.io/docs/concepts/traffic-management/#destination-rules).
 
 Go to your Istio install folder and apply the `DestinationRules` for Bookinfo:
 
@@ -319,11 +319,11 @@ And now the `v2` of `reviews` receives all the traffic, and our Rolling Deployme
 
 ## What's next?
 
-Now you have seem some of the traffic management capabilities of Istio, you can explore other [examples of Istio traffic management](https://istio.io/docs/tasks/traffic-management/){.external}: [fault injection](https://istio.io/docs/tasks/traffic-management/fault-injection/){.external}, [circuit breaking](https://istio.io/docs/tasks/traffic-management/circuit-breaking/){.external}, [mirroring](https://istio.io/docs/tasks/traffic-management/mirroring/){.external}... 
+Now you have seem some of the traffic management capabilities of Istio, you can explore other [examples of Istio traffic management](https://istio.io/docs/tasks/traffic-management/): [fault injection](https://istio.io/docs/tasks/traffic-management/fault-injection/), [circuit breaking](https://istio.io/docs/tasks/traffic-management/circuit-breaking/), [mirroring](https://istio.io/docs/tasks/traffic-management/mirroring/)... 
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).
 

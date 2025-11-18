@@ -12,13 +12,13 @@ I *Jumbo frame* sono frame Ethernet con un payload compreso tra 1500 e 9000 byte
 
 ## Prerequisiti
 
-- Disporre di una [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
+- Disporre di una [vRack](https://www.ovh.it/soluzioni/vrack/)
 - Avviare una shell con i permessi di root
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 > [!primary]
 >

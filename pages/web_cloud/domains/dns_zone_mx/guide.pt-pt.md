@@ -21,7 +21,7 @@ O registo MX permite associar um domínio ao servidor da sua plataforma de e-mai
 >
 > - Se o domínio não usar os servidores DNS da OVHcloud, os registos MX deverão ser alterados a partir da interface do agente responsável pela gestão da configuração do seu domínio.
 >
-> - Se o seu domínio for gerido pela OVHcloud, pode verificar se este último utiliza a nossa configuração OVHcloud a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/pt/&ovhSubsidiary=pt). Uma vez posicionado no domínio em causa, no separador `Informações gerais`{.action}, na parte `Servidores DNS`{.action}, se a menção `Ativo` estiver presente « **servidores DNS** », utiliza bem os servidores DNS da OVHcloud.
+> - Se o seu domínio for gerido pela OVHcloud, pode verificar se este último utiliza a nossa configuração OVHcloud a partir da [Área de Cliente](/links/manager). Uma vez posicionado no domínio em causa, no separador `Informações gerais`{.action}, na parte `Servidores DNS`{.action}, se a menção `Ativo` estiver presente « **servidores DNS** », utiliza bem os servidores DNS da OVHcloud.
 >
 > ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 

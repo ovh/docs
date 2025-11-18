@@ -21,23 +21,23 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 ## Prérequis
 
-- Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting-multisite){.external} compatible.
-- Disposer d'un ou plusieurs [noms de domaine](/links/web/domains){.external}.
+- Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
+- Disposer d'un ou plusieurs [noms de domaine](/links/web/domains).
 - Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 > [!primary]
 >
-> La plupart des offres d'[hébergement web OVHcloud](/links/web/hosting){.external} disposent d'une option incluse de création d'adresse(s) e-mail personnalisée(s) avec votre nom de domaine.
+> La plupart des offres d'[hébergement web OVHcloud](/links/web/hosting) disposent d'une option incluse de création d'adresse(s) e-mail personnalisée(s) avec votre nom de domaine.
 > Cette option e-mail peut être activée pour **un seul** nom de domaine. Cela signifie que si vous effectuez du *multisite* avec plusieurs noms de domaine différents, vous ne pourrez activer cette option que pour un seul de vos noms de domaine.
 > N'hésitez pas à consulter notre [guide](/pages/web_cloud/web_hosting/activate-email-hosting) pour plus de détails sur l'activation de cette option.
 >
 
 ### Étape 1 : accéder à la gestion multisite <a name="multisite-menu"></a>
 
-Tout d'abord, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, sélectionnez l'offre concernée, puis choisissez l'onglet `Multisite`{.action}.
+Tout d'abord, connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, sélectionnez l'offre concernée, puis choisissez l'onglet `Multisite`{.action}.
 
 Le tableau qui s'affiche liste tous les noms de domaine et sous-domaines ajoutés à votre solution d'hébergement web. Certains d’entre eux ont été créés automatiquement lors de l’installation de votre hébergement.
 
@@ -67,9 +67,9 @@ Dans le cas d'un nom de domaine externe à votre compte client (autre identifian
 #### Étape 2.1 : ajouter un domaine enregistré chez OVHcloud <a name="add-ovhcloud-domain"></a>
 
 > [!warning]
-> Cette étape ne s'applique que si vous avez sélectionné « Ajouter un domaine enregistré chez OVHcloud ». Le nom de domaine ou sa zone DNS doivent se trouver **dans votre espace client**. Pour les noms de domaine externes, passez à l'[étape 2.2 : ajouter un nom de domaine externe](#add-external-domain){.external}.
+> Cette étape ne s'applique que si vous avez sélectionné « Ajouter un domaine enregistré chez OVHcloud ». Le nom de domaine ou sa zone DNS doivent se trouver **dans votre espace client**. Pour les noms de domaine externes, passez à l'[étape 2.2 : ajouter un nom de domaine externe](#add-external-domain).
 
-Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](/links/web/hosting){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
+Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 
 > [!primary]
 > Pour ajouter un sous-domaine, vous devez d’abord sélectionner le domaine principal dans la liste (exemple: domain.tld). L’étape suivante vous permettra d’indiquer le sous-domaine (exemple: **blog**.domain.tld).
@@ -80,11 +80,11 @@ Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon
 |---|---|
 |Domaines|Par défaut, le nom de domaine que vous avez sélectionné est renseigné automatiquement. Vous pouvez y ajouter un sous-domaine (par exemple, **blog**.domain.tld) et créer simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.domain.tld). En définitive, ce domaine sera l'adresse Internet du site que vous souhaitez mettre en ligne.|
 |Dossier racine|Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe. C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.domain.tld, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
-|SSL|Vous permet de bénéficier d'une connexion sécurisée (HTTPS://) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page SSL](/links/web/hosting-options-ssl){.external}. En activant le SSL et le CDN (Content Delivery Network), vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
-|Activer le CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site, comme des images) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page CDN](/links/web/hosting-options-cdn){.external}. En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
-|IP du pays|Permet de bénéficier d'une adresse IP géolocalisée (parmi une liste de pays) pour le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page IP](/links/web/hosting-options){.external}.|
-|Activer le firewall|Permet d'activer un pare-feu (analyse des requêtes) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page ModSecurity](/links/web/hosting-options){.external}.|
-|Logs séparés|Permet d'activer un nouvel espace de logs sur le domaine sélectionné. Vous devrez choisir un nom de domaine dans une liste qui déterminera le nom d'accès à ce nouvel espace. Apprenez-en plus grâce à [notre page sur les statistiques détaillées](/links/web/hosting-traffic-analysis){.external}.|
+|SSL|Vous permet de bénéficier d'une connexion sécurisée (HTTPS://) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page SSL](/links/web/hosting-options-ssl). En activant le SSL et le CDN (Content Delivery Network), vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
+|Activer le CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site, comme des images) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page CDN](/links/web/hosting-options-cdn). En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
+|IP du pays|Permet de bénéficier d'une adresse IP géolocalisée (parmi une liste de pays) pour le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page IP](/links/web/hosting-options).|
+|Activer le firewall|Permet d'activer un pare-feu (analyse des requêtes) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page ModSecurity](/links/web/hosting-options).|
+|Logs séparés|Permet d'activer un nouvel espace de logs sur le domaine sélectionné. Vous devrez choisir un nom de domaine dans une liste qui déterminera le nom d'accès à ce nouvel espace. Apprenez-en plus grâce à [notre page sur les statistiques détaillées](/links/web/hosting-traffic-analysis).|
 
 > [!warning]
 >
@@ -98,7 +98,7 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 En ayant sélectionné un nom de domaine enregistré chez OVHcloud, vous avez la possibilité de modifier automatiquement ou manuellement sa configuration DNS :
 
 - **pour une configuration DNS automatique** : cochez la case `Configuration automatique (recommandée)`{.action} ;
-- **pour une configuration DNS manuelle** : décochez la case `Configuration automatique (recommandée)`{.action} puis notez les informations qui s'affichent. Lorsque vous souhaiterez réaliser ce paramétrage, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](/pages/web_cloud/domains/dns_zone_edit){.external}.
+- **pour une configuration DNS manuelle** : décochez la case `Configuration automatique (recommandée)`{.action} puis notez les informations qui s'affichent. Lorsque vous souhaiterez réaliser ce paramétrage, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](/pages/web_cloud/domains/dns_zone_edit).
 
 Cliquez alors sur `Valider`{.action} pour lancer l’ajout du domaine. Cela peut prendre jusqu'à une heure. Cependant, la modification de la configuration DNS de votre domaine nécessite un temps de propagation de 1 à 24 heures avant d’être pleinement effective.
 
@@ -112,7 +112,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 
  > Avant de poursuivre, il est préférable de modififer la zone DNS du nom de domaine externe avant l'ajout de l'entrée multisite.
  >
- > La modification de la configuration du nom de domaine externe (sa zone DNS) doit être réalisée depuis l’interface du prestataire gérant celle-ci. S’il s’agit d’OVHcloud, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](/pages/web_cloud/domains/dns_zone_edit){.external}. Une fois la modification effectuée, un temps de propagation de 1 à 24 heures est requis avant qu’elle ne soit pleinement effective.
+ > La modification de la configuration du nom de domaine externe (sa zone DNS) doit être réalisée depuis l’interface du prestataire gérant celle-ci. S’il s’agit d’OVHcloud, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](/pages/web_cloud/domains/dns_zone_edit). Une fois la modification effectuée, un temps de propagation de 1 à 24 heures est requis avant qu’elle ne soit pleinement effective.
 >
 > Retrouvez ci-dessous les 2 éléments à modifier concernant la configuration DNS de votre nom de domaine externe :
 >
@@ -129,13 +129,13 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 > ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- Vous devez à présent personnaliser l’ajout du domaine. À noter que certaines options comprises dans votre offre d'[hébergement web](/links/web/hosting){.external} ne peuvent pas être activées pendant ce processus. Vous devrez finaliser la manipulation avant de pouvoir les utiliser, en modifiant les paramètres du multisite lorsqu’il sera ajouté.
+ Vous devez à présent personnaliser l’ajout du domaine. À noter que certaines options comprises dans votre offre d'[hébergement web](/links/web/hosting) ne peuvent pas être activées pendant ce processus. Vous devrez finaliser la manipulation avant de pouvoir les utiliser, en modifiant les paramètres du multisite lorsqu’il sera ajouté.
 
 |Information|Description|
 |---|---|
 |Domaine|Renseignez le nom de domaine que vous souhaitez utiliser. Ajoutez-y au besoin un sous-domaine (par exemple, **blog**.domain.tld) et créez simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.domain.tld). En définitive, celui-ci correspondra à l'adresse Internet du site que vous souhaitez mettre en ligne. Sachez que vous devez être en mesure de modifier la configuration du domaine (sa zone DNS) afin que l'ajout puisse être finalisé.|
 |Dossier racine| Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe . C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.domain.tld, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
-|Activer l'IPv6|Permet d'activer le protocole IPv6 sur le domaine renseigné. Apprenez-en plus grâce à [notre page IP](/links/web/hosting-options){.external}.|
+|Activer l'IPv6|Permet d'activer le protocole IPv6 sur le domaine renseigné. Apprenez-en plus grâce à [notre page IP](/links/web/hosting-options).|
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}. Vérifiez ensuite le récapitulatif qui s'affiche.
 
@@ -194,24 +194,24 @@ Pour ajouter les enregistrements **A** ou **AAAA** et configurer correctement vo
 
 Une fois le nom de domaine ajouté, il ne vous reste plus qu’à mettre en ligne le site associé à ce dernier. Pour rappel, vous devez réaliser cette manipulation dans le dossier racine que vous avez défini lors de l’étape précédente.
 
-Pour vous aider dans cette démarche, vous pouvez bénéficier d’une structure de site prête à l’emploi grâce aux modules en 1 clic d’OVHcloud. Le site sera alors installé automatiquement dans le dossier racine configuré précédemment. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
+Pour vous aider dans cette démarche, vous pouvez bénéficier d’une structure de site prête à l’emploi grâce aux modules en 1 clic d’OVHcloud. Le site sera alors installé automatiquement dans le dossier racine configuré précédemment. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-A contrario, si vous souhaitez installer manuellement votre site, munissez-vous de ses fichiers puis mettez-les en ligne dans le bon dossier racine sur votre espace de stockage. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Mettre en ligne un site Internet sur son hébergement web »](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}.
+A contrario, si vous souhaitez installer manuellement votre site, munissez-vous de ses fichiers puis mettez-les en ligne dans le bon dossier racine sur votre espace de stockage. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Mettre en ligne un site Internet sur son hébergement web »](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 > [!primary]
 >
 > Si vous souhaitez ajouter plusieurs sites web, vous devrez répéter cette étape.
 >
-> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](/links/web/hosting){.external} indique le nombre de sites Internet recommandés que vous pouvez accueillir sur votre espace.
+> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](/links/web/hosting) indique le nombre de sites Internet recommandés que vous pouvez accueillir sur votre espace.
 >
 
 ## Aller plus loin
 
-[Installer son site avec les modules en 1 clic.](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Installer son site avec les modules en 1 clic.](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Éditer une zone DNS OVHcloud.](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Éditer une zone DNS OVHcloud.](/pages/web_cloud/domains/dns_zone_edit)
 
-[Mettre en ligne un site Internet sur son hébergement web.](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Mettre en ligne un site Internet sur son hébergement web.](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

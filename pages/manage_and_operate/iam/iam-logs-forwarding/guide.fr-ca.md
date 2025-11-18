@@ -236,7 +236,7 @@ Pour chaque action évaluée par l’IAM d’OVHcloud, une entrée est généré
 |requested_actions_array|Array of String|Liste des actions demandées par l'utilisateur|
 |resource|String|URN de la ressource OVHcloud concernée par l'action|
 |authorized_actions_array|Array of String|Liste des actions autorisées après l'évaluation de la stratégie|
-|authorized_actions_array|Array of String|Liste des actions non autorisées après l'évaluation de la stratégie|
+|unauthorized_actions_array|Array of String|Liste des actions non autorisées après l'évaluation de la stratégie|
 
 ### Gérer les abonnements
 

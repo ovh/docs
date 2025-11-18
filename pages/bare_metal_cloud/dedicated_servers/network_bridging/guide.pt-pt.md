@@ -1,12 +1,15 @@
 ---
 title: 'Configurar os Additional IP em modo bridge nas suas máquinas virtuais'
 excerpt: 'Saiba como utilizar o modo bridge para configurar o acesso à Internet das suas máquinas virtuais'
-updated: 2025-05-16
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Este artigo diz respeito à configuração de endereços Additional IPv4 numa interface pública. Pode igualmente configurar endereços IPv6 nos seus servidores virtuais utilizando [este guia](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm).
 >
-> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](/links/network/additional-ip). Isto não afeta as suas funcionalidades.
+> Tenha em conta que os Additional IP podem igualmente ser configurados num vRack (rede privada), o que permite interligar uma vasta gama de serviços OVHcloud, oferecendo uma maior flexibilidade.
+>
+> Saiba como configurar o Additional IP num vRack com os nossos manuais para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) e [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo
@@ -83,7 +86,7 @@ A gateway IPv4 atribuída ao seu servidor é apresentada na secção `Rede` do s
 
 #### Através das API OVHcloud <a name="viaapi"></a>
 
-Na [página API da OVHcloud](https://api.ovh.com/), clique no canto superior direito em `Login`{.action}. Na página seguinte, introduza o seu identificador de cliente OVHcloud.
+Na [página API da OVHcloud](/links/api), clique no canto superior direito em `Login`{.action}. Na página seguinte, introduza o seu identificador de cliente OVHcloud.
 
 Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
 >
@@ -104,7 +107,7 @@ Para todos os sistemas operativos e distribuições, deve configurar a sua máqu
 
 > [!warning]
 >
-> As seguintes instruções aplicam-se a uma máquina virtual criada anteriormente com um sistema operativo já instalado. Se não criou nenhuma VM, consulte as opções na página [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} (EN) de Proxmox.
+> As seguintes instruções aplicam-se a uma máquina virtual criada anteriormente com um sistema operativo já instalado. Se não criou nenhuma VM, consulte as opções na página [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines) (EN) de Proxmox.
 >
 
 Depois de ter criado a máquina virtual e quando esta ainda estiver desligada:
@@ -126,12 +129,7 @@ Pode desde já iniciar a sua máquina virtual e passar às etapas seguintes, em 
 
 > [!warning]
 >
-> O hipervisor ESXi já não é suportado pela OVHcloud. Encontre mais informações em [esta página dedicada](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
->
-
-> [!warning]
->
-> As seguintes instruções aplicam-se a uma máquina virtual criada anteriormente com um sistema operativo já instalado. Se não criou nenhuma VM, consulte o guia [Criar uma máquina virtual no cliente host VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) na página VMware.
+> As seguintes instruções aplicam-se a uma máquina virtual criada anteriormente com um sistema operativo já instalado. Se não criou nenhuma VM, consulte o guia [Criar uma máquina virtual no cliente host VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html) (EN) na página VMware.
 >
 
 Depois de criar a máquina virtual e quando estiver fora de tensão, clique com o botão direito do rato sobre a máquina e clique em `Alterar os parâmetros`{.action}.
@@ -330,6 +328,8 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 ```
 
 Se receber uma resposta, significa que o Additional IP foi corretamente configurado. Se não for o caso, reinicie a sua máquina virtual e repita o comando ping.
+
+Se desejar mais informações sobre `nmcli`, consulte [esta página (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli).
 
 #### FreeBSD
 

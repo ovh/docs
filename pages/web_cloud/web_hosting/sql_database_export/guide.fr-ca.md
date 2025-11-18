@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde de la base de données d'un hébergement web"
 excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud"
-updated: 2023-08-22
+updated: 2025-10-08
 ---
 
 ## Objectif
@@ -12,21 +12,21 @@ Les bases de données sont utilisées par la plupart des sites web et des **C**o
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVHcloud](/links/web/hosting){.external}.
-- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
-- Selon la méthode de sauvegarde utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](/links/manager){.external} ou des informations permettant de se connecter à la base de données.
+- Disposer d'une offre d’[hébergement web OVHcloud](/links/web/hosting).
+- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
+- Selon la méthode de sauvegarde utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](/links/manager) ou des informations permettant de se connecter à la base de données.
 
 ## En pratique
 
 Avant de commencer, définissez la méthode que vous allez suivre pour récupérer la sauvegarde de votre base de données. Plusieurs possibilités s’offrent à vous :
 
-- **Utiliser l'outil de sauvegarde d'OVHcloud** : cette solution permet de récupérer des sauvegardes de vos bases de données depuis l'[espace client OVHcloud](/links/manager){.external}. Cette méthode ne nécessite pas de compétences techniques particulières.
+- **Utiliser l'outil de sauvegarde d'OVHcloud** : cette solution permet de récupérer des sauvegardes de vos bases de données depuis l'[espace client OVHcloud](/links/manager). Cette méthode ne nécessite pas de compétences techniques particulières.
 
 - **Réaliser la sauvegarde depuis l'interface web phpMyAdmin** : cette méthode nécessite de se connecter à l'interface *phpMyAdmin* pour effectuer la manipulation. Cela nécessite de maîtriser l'interface *phpMyAdmin*.
 
 - **Utiliser un script réalisant la sauvegarde** : cette méthode nécessite de créer un script enregistré sur votre hébergement web OVHcloud afin de pouvoir réaliser la sauvegarde. Des connaissances spécifiques pour cette création sont nécessaires.
 
-- **Réaliser la sauvegarde depuis une commande SSH** : cette méthode nécessite de vous connecter à votre espace de stockage FTP via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](/links/web/hosting){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+- **Réaliser la sauvegarde depuis une commande SSH** : cette méthode nécessite de vous connecter à votre espace de stockage FTP via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](/links/web/hosting) spécifique sont nécessaires pour utiliser ce type d’accès.
 
 > [!success]
 >
@@ -46,9 +46,34 @@ Poursuivez la lecture de cette documentation selon la méthode de sauvegarde sou
 
 ### Récupérer une sauvegarde via l'outil d'OVHcloud
 
-Pour accéder à l'outil de sauvegarde d'OVHcloud, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour accéder à l'outil de sauvegarde d'OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
-Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, vous pourrez choisir entre réaliser une nouvelle sauvegarde ou en récupérer une déjà existante, via deux manipulations distinctes.
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>> 
+> **Etape 4**
+>>
+>> Sur la nouvelle page, un tableau contenant vos bases de données créées apparaît.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+>>
+>> Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, vous pourrez choisir entre réaliser une nouvelle sauvegarde ou en récupérer une déjà existante, via deux manipulations distinctes.
 
 #### Étape 1 : effectuer une nouvelle sauvegarde de la base de données
 
@@ -76,7 +101,7 @@ Pour télécharger une sauvegarde, cliquez sur le bouton `...`{.action} à droit
 
 ### Récupérer une sauvegarde depuis l'interface web phpMyAdmin
 
-Pour réaliser la manipulation, connectez-vous à *phpMyAdmin*. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour réaliser la manipulation, connectez-vous à *phpMyAdmin*. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Cliquez dans ce dernier sur le bouton `...`{.action} à droite de la base de données concernée puis sur `Accéder à phpMyAdmin`{.action}.
 

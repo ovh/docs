@@ -1,14 +1,14 @@
 ---
 title: Exposing your logs to third-party tools via the OpenSearch API
 excerpt: 'Leverage any software that can use the OpenSearch API with Logs Data Platform.'
-updated: 2023-09-08
+updated: 2025-10-16
 ---
 
 ## Objective
 
-As explained in our [introductory documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP), Logs Data Platform heavily relies on [OpenSearch](https://github.com/opensearch-project/OpenSearch) to work. 
+As explained in our [introductory documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP), Logs Data Platform heavily relies on [OpenSearch](https://github.com/opensearch-project/OpenSearch) to work.
 
-**This documentation will explain to you how you can use third-party software that integrate with OpenSearch.**
+**This documentation will explain to you how you can use third-party software that integrates with OpenSearch.**
 
 ## Instructions
 
@@ -50,7 +50,7 @@ In this section, you can:
 
 #### Third-party tool configuration
 
-To connect to your alias as if it were an OpenSearch index, third-party tools usually require a few information:
+To connect to your alias as if it were an OpenSearch index, third-party tools usually require some information:
 
 - A URL/Port: this is your cluster's URL, found on your Logs Data Platform account homepage under the "Access point" name in the "Configuration" section. The port is **9200** for OpenSearch. The resulting URL should be `https://<your_cluster>.logs.ovh.com:9200`.
 - An index name. This is your alias name, found on the left column of your alias homepage like in the following picture. It should look like that: `<ldp_service_name>-a-<alias_name>`.
@@ -68,7 +68,7 @@ We currently have specific documentation illustrating the usage of *aliases* in 
 - Using Grafana to visualize logs: [here](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
 - Using ElastAlert to set up alerting on logs: [here](/pages/manage_and_operate/observability/logs_data_platform/alerting_elastalert).
 
-### Alias for OpenSearch *indices* 
+### Alias for OpenSearch *indices*
 
 If you use a single [managed OpenSearch index as a service](/pages/manage_and_operate/observability/logs_data_platform/opensearch_index), the configuration of any third-party software is straightforward. However, as mentioned above, you can also attach multiple *indices* to an *alias*. In that case, the creation of an *alias* and configuration of your third-party software follow the same steps as described above.
 
@@ -81,5 +81,5 @@ Like most features of Logs Data Platform, aliases can be shared with other Logs 
 - [Introduction to Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
 - [Getting Started with Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - [Our documentation](/products/public-cloud-data-platforms-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

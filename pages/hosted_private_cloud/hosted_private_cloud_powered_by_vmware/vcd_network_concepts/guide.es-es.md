@@ -1,7 +1,7 @@
 ---
-title: "VMware Cloud Director - Network concepts and best practices"
-excerpt: "Discover the powerful networking capabilities of VMware Cloud Director on OVHcloud with this comprehensive guide (key concepts and features)"
-updated: 2025-03-03
+title: "Public VCF as-a-Service - Network concepts and best practices"
+excerpt: "Discover the powerful networking capabilities of Public VCF as-a-Service with this comprehensive guide (key concepts and features)"
+updated: 2025-11-04
 ---
 
 <style>
@@ -20,34 +20,34 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> VCD on OVHcloud is currently in Alpha phase. This guide can evolve and be updated in the future as our teams continue to develop this product.
+>Public VCF as-a-Service is currently in Alpha phase. This guide can evolve and be updated in the future as our teams continue to develop this product.
 >
 
 ## Objective
 
-**The guide details the fundamental principles and notions of networking within VMware Cloud Director on OVHcloud.**
+**The guide details the fundamental principles and notions of networking within Public VCF as-a-Service.**
 
 ## Requirements
 
 > [!primary] 
 > 
-> If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in to VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
+> If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in to Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 >
 
 - A web browser (with preferably a Chromium-based one, and translation enabled in English).
-- A VMware Cloud Director account with required user rights (make sure your user account has the necessary permissions).
-- You need to have followed the guide: "[VMware Cloud Director - Basic VCD concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)".
+- A Public VCF as-a-Service account with required user rights (make sure your user account has the necessary permissions).
+- You need to have followed the guide: "[Public VCF as-a-Service - Basic Public VCF as-a-Service concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)".
 
 ## Instructions
 
-/// details | Introduction to networking within VCD.
+/// details | Introduction to networking within Public VCF as-a-Service.
 
 In this introductory guide, we will explore:
 
-- The different networking concepts within VMware Cloud Director on OVHcloud.
+- The different networking concepts within Public VCF as-a-Service.
 - Concepts related to optimizing network space, such as IP space, Edge Gateways, and Datacentre Groups.
 
-To ensure a flexible and secure network infrastructure in a versatile cloud environment, VMware Cloud Director uses a layered networking architecture that includes four categories of networks:
+To ensure a flexible and secure network infrastructure in a versatile cloud environment, Public VCF as-a-Service uses a layered networking architecture that includes four categories of networks:
 
 - **External networks**
 - **Organizational vDC networks**
@@ -56,7 +56,7 @@ To ensure a flexible and secure network infrastructure in a versatile cloud envi
 
 Most of these networks require additional infrastructure elements, such as "**Edge Gateways**" and "**Network Pools**".
 
-The VCD control panel has a network banner with 6 sections: 
+the Public VCF as-a-Service control panel has a network banner with 6 sections: 
 
 - `Network`
 - `Edge Gateways`
@@ -65,7 +65,7 @@ The VCD control panel has a network banner with 6 sections:
 - `Data Center Groups`
 - `Security Tags`
 
-![VCD Control Panel Network Overview Gif](images/vcd_network_overview.gif){.thumbnail}
+![Public VCF as-a-ServiceControl Panel Network Overview Gif](images/vcd_network_overview.gif){.thumbnail}
 
 As well as a network section within each vDC in `Data Center Groups > My vDC Name > Networking > Network > Edge Gateway`.
 
@@ -76,9 +76,9 @@ As well as a network section within each vDC in `Data Center Groups > My vDC Nam
 
 /// details | What capabilities, features and functions are offered? 
 
-**VCD on OVHcloud networking capabilities**
+**Public VCF as-a-Serviceon OVHcloud networking capabilities**
 
-Here are the main network features offered with the VCD on OVHcloud solutions.
+Here are the main network features offered with the Public VCF as-a-Service solutions.
 
 | Features                        	| Standard 	| Advanced 	| Premium 	| Comments                                                                                                                                                                                           	                        |
 |---------------------------------	|----------	|----------	|---------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -87,36 +87,35 @@ Here are the main network features offered with the VCD on OVHcloud solutions.
 | Private Network - vRack support 	| ✅        	| ✅        	| ✅       	| - in Roadmap                                                                                                                                                                                                  	             |
 | Routing & Switching IPv6        	|          	|          	|         	| - in Roadmap                                                                                                                                                                                         	                      |
 | VPN                             	|          	| ✅        	| ✅       	| - L2VPN, VPN IPsec Policy Based Not Supported: SSL VPN, route-based IPsec VPN.                                                                                                                      	                     |
-| Load Balancing                  	|          	|          	|         	| - Not supported with native VCD network capabilities                                                                                                                                                 	                      |
+| Load Balancing                  	|          	|          	|         	| - Not supported with native Public VCF as-a-Service network capabilities                                                                                                                                                 	                      |
 | Advanced Load Balancing         	|          	|          	|         	| - in Roadmap                                                                                                                                                                                         	                      |                                                                                          	|
 
 **Network features**
 
-Here is a comparison of the 3 solutions offered by VMware Cloud Director on OVHcloud.
+Here is a comparison of the 3 solutions offered by Public VCF as-a-Service.
 
 |              | Advanced Network & Security | vSAN Storage |
 |:------------:|:---------------------------:|:------------:|
-| Standard VCD |              -              |      -       |
-| VCD Advanced |              ✅              |      -       |
-| VCD Premium  |              ✅               |       ✅       |
+| Standard Public VCF as-a-Service |              -              |      -       |
+| Public VCF as-a-Service Advanced |              ✅              |      -       |
 
-Here we see that only the advanced networking and security features within VCD on OVHcloud are available in the **Advanced and Premium** offers.
+Here we see that only the advanced networking and security features within Public VCF as-a-Service are available in the **Advanced and Premium** offers.
 
 ///
 
 ### Step 2 - Concepts and best practices
 
-/// details | What are the best practices within the VCD control panel?
+/// details | What are the best practices within the Public VCF as-a-Service control panel?
 
 **Recommendations in network space design and administration**
 
 | Design Recommendation                                                                                                 | Design Justification                                               | Design Involvement                                        |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------|
 | Create one or more Edge Gateways (Level 1 Gateways) per organization vDC.                                             | Enables networking services for the organization's vDC.            | None.                                                     |
-| Create datacenter groups, if there is a need to have Org vDC networks spanning multiple Org vDCs in an organization. | Simplifies Org vDC cross-functional connectivity.                  | Requires creation of datacenter groups in the VCD tenant. |
+| Create datacenter groups, if there is a need to have Org vDC networks spanning multiple Org vDCs in an organization. | Simplifies Org vDC cross-functional connectivity.                  | Requires creation of datacenter groups in the Public VCF as-a-Service tenant. |
 | Use the IP Spaces feature instead of traditional IP block addressing.                                                 | Note: The delivery of all Spaces IP features spans several phases. | None.                                                     |
 
-**The network within VCD (concept)**
+**The network within Public VCF as-a-Service (concept)**
 
 The types of network supported within an organization’s vDC:
 
@@ -156,7 +155,7 @@ Network pools must be set up before organization vDC networks and vApp networks.
 
 > [!primary]
 > 
-> You can use a new way to manage your IP space in VMware Cloud Director on OVHcloud with the new IP space management subsystem.
+> You can use a new way to manage your IP space in Public VCF as-a-Service with the new IP space management subsystem.
 > 
 > An Edge Gateway can only connect to provider gateways that use IP spaces.
 > 
@@ -170,11 +169,11 @@ There are two types of IP spaces that you can use as the Organization Administra
 - **Public IP space**: A public IP space is used by multiple organizations and is controlled by the Service Provider through a quota-based system.
 - **Private IP space**: Private IP spaces are dedicated to a single tenant: a private IP space is used only by an organization specified when the IP space was created. For this organization, the consumption of IP addresses is unlimited.
 
-![VCD Network IP Prefixe](images/vcd_network_ipspace_banner.png){.thumbnail}
+![Public VCF as-a-Service Network IP Prefixe](images/vcd_network_ipspace_banner.png){.thumbnail}
 
-#### Via the VCD control panel
+#### Via the Public VCF as-a-Service control panel
 
-![VCD Network IP Prefixe 02](images/vcd_network_ipspace.gif){.thumbnail}
+![Public VCF as-a-Service Network IP Prefixe 02](images/vcd_network_ipspace.gif){.thumbnail}
 
 **Configuration:**
 
@@ -188,21 +187,21 @@ There are two types of IP spaces that you can use as the Organization Administra
 
 **IP prefixes (recommended)**
 
-You can set an IP prefix for automatic or manual use and prevent VMware Cloud Director from randomly assigning it.
+You can set an IP prefix for automatic or manual use and prevent Public VCF as-a-Service from randomly assigning it.
 
 If you no longer use an IP prefix that has been allocated to your IP space, you can free it up in the pool.
 
-![VCD IP Spaces Prefixe 00](images/vcd_network_prefixe_ip.png){.thumbnail}
+![Public VCF as-a-ServiceIP Spaces Prefixe 00](images/vcd_network_prefixe_ip.png){.thumbnail}
 
-![VCD IP Spaces Prefixe 02](images/vcd_network_prefixe_ip_2.png){.thumbnail}
+![Public VCF as-a-ServiceIP Spaces Prefixe 02](images/vcd_network_prefixe_ip_2.png){.thumbnail}
 
 **Network topologies (concept)**
 
-You can view the network topology from the VCD control panel by clicking on: `Networking | IP Spaces | IP space's name | Configuration | Network Topology`{.action}
+You can view the network topology from the Public VCF as-a-Service control panel by clicking on: `Networking | IP Spaces | IP space's name | Configuration | Network Topology`{.action}
 
 Network topologies are used to configure IP spaces to enable north-south traffic.
 
-![VCD Network IP Spaces Topology](images/vcd_network_ip_space_topology.png){.thumbnail}
+![Public VCF as-a-Service Network IP Spaces Topology](images/vcd_network_ip_space_topology.png){.thumbnail}
 
 **Default auto-configuration rules:**
 
@@ -212,7 +211,7 @@ Network topologies are used to configure IP spaces to enable north-south traffic
 
 Datacentre group networks are a type of organizational vDC networks that are shared between one or more vDCs and to which vApps can connect.
 
-![VCD Network Datacenter Groups Overview Gif](images/vcd_network_datacenter-groups_overview.gif){.thumbnail}
+![Public VCF as-a-Service Network Datacenter Groups Overview Gif](images/vcd_network_datacenter-groups_overview.gif){.thumbnail}
 
 When creating a network, you can join your datacentre group, which will then provide connectivity to the vApps/VMs of all participating vDC.
 
@@ -220,21 +219,21 @@ When creating a network, you can join your datacentre group, which will then pro
 
 You can also synchronize them. This synchronization action will check all associated vDC to ensure that they are always realized and correctly configured.
 
-![VCD Network Datacenter Groups Sync](images/vcd_network_datacenter-groups_sync.png){.thumbnail}
+![Public VCF as-a-Service Network Datacenter Groups Sync](images/vcd_network_datacenter-groups_sync.png){.thumbnail}
 
 **Create or import network into datacenter group (optional)**
 
-![VCD Network Datacenter Groups Network Creation](images/vcd_network_datacenter-groups_network_creation.png){.thumbnail}
+![Public VCF as-a-Service Network Datacenter Groups Network Creation](images/vcd_network_datacenter-groups_network_creation.png){.thumbnail}
 
-![VCD Network Datacenter Groups Network Import](images/vcd_network_datacenter-groups_network_import.png){.thumbnail}
+![Public VCF as-a-Service Network Datacenter Groups Network Import](images/vcd_network_datacenter-groups_network_import.png){.thumbnail}
 
 **Edge Gateway (required)**
 
-VCD Edge Gateway allows an organization vDC network to route connectivity to internal networks, network address translation (NAT), firewall, IPsec tunnel mounting,
+Public VCF as-a-ServiceEdge Gateway allows an organization vDC network to route connectivity to internal networks, network address translation (NAT), firewall, IPsec tunnel mounting,
 
-- **VCD supports**: `IPv4 and IPv6` Edge Gateways.
+- **Public VCF as-a-Servicesupports**: `IPv4 and IPv6` Edge Gateways.
 
-![VCD Network Edge Overview Gif](images/vcd_network_edge_overview.gif)
+![Public VCF as-a-Service Network Edge Overview Gif](images/vcd_network_edge_overview.gif)
 
 **DHCP mode (optional)**
 
@@ -251,13 +250,13 @@ DHCP automates the assignment of IP addresses to virtual machines connected to t
 - **Relay:** DHCP messages are relayed from virtual machines to designated DHCP servers in your physical DHCP infrastructure.
 - **Gateway:** The Edge Gateway DHCP service is used to obtain DHCP IPs.
 
-![VCD Network DHCP Activation](images/vcd_network_dhcp.png)
+![Public VCF as-a-Service Network DHCP Activation](images/vcd_network_dhcp.png)
 
 **vApp networks (concept)**
 
 vApp networks allow virtual machines to communicate with each other or, by connecting to an organizational vDC network, with virtual machines in other vApps.
 
-![VCD Network vApp Network Gif](images/vcd_network_vapp.gif)
+![Public VCF as-a-Service Network vApp Network Gif](images/vcd_network_vapp.gif)
 
 ///
 
@@ -265,7 +264,7 @@ vApp networks allow virtual machines to communicate with each other or, by conne
 
 /// details | What are the known network limitations?
 
-From a general point of view, the only limitations you can find within VCD on OVHcloud are those of a managed service.
+From a general point of view, the only limitations you can find within Public VCF as-a-Service are those of a managed service.
 
 A little less granularity when it comes to low-level configuration.
 
@@ -273,7 +272,7 @@ Of course, this can impact advanced networking features, although these features
 
 **IPsec VPN Limitations**
 
-When adding an IPsec tunnel, the parameter of adding a route-based IPsec session (route based IPsec tunnel) is not supported within VCD on OVHcloud to date (see: [docs / VMware NSX / NSX administration guide / Adding an IPSec session based on a route](https://knowledge.broadcom.com/external/article/319147/vmware-cloud-director-nsx-feature-suppor.html){.external}).
+When adding an IPsec tunnel, the parameter of adding a route-based IPsec session (route based IPsec tunnel) is not supported within Public VCF as-a-Service to date (see: [docs / VMware NSX / NSX administration guide / Adding an IPSec session based on a route](https://knowledge.broadcom.com/external/article/319147/vmware-cloud-director-nsx-feature-suppor.html)).
 
 **Provider gateways limitations**
 
@@ -281,29 +280,29 @@ Provider gateways are clearly visible, but cannot be modified (like a managed se
 
 **NSX limitations**
 
-You do not have access to the NSX control panel for your Hosted Private VMware Cloud Director on OVHcloud.
+You do not have access to the NSX control panel for your Hosted Private Public VCF as-a-Service.
 
 **Load Balancer limitations**
 
-The features of Load Balancing within VCD on OVHcloud are not available at the moment.
+The features of Load Balancing within Public VCF as-a-Service are not available at the moment.
 
 **IAM limitations**
 
-IAM is not available within VMware Cloud Director on OVHcloud at this time.
+IAM is not available within Public VCF as-a-Service at this time.
 
 ///
 
 ## Go further
 
-You can now follow the steps in the following guide: [“Guide 2 - VMware Cloud Director on OVHcloud - Network - Creating network components via the VCD on OVHcloud control panel”](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
+You can now follow the steps in the following guide: [“Guide 2 - Public VCF as-a-Service - Network - Creating network components via the Public VCF as-a-Service control panel”](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
 
-**Networking for VMware Cloud Director on OVHcloud - Guide index:**
+**Networking for Public VCF as-a-Service - Guide index:**
 
-- « Guide 1: VMware Cloud Director on OVHcloud - Network - Concepts »
-- [« Guide 2: VMware Cloud Director on OVHcloud - Network - Creating network components via the control panel VCD on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
-- **Coming soon** : « Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud? »
-- **Coming soon** : « Guide 4 - VMware Cloud Director on OVHcloud - Network - How to operate an IP block with VCD on OVHcloud? »
-- **Coming soon** : « Guide 5 - VMware Cloud Director on OVHcloud - Network - How to use distributed firewalling (East - West)? »
+- « Guide 1: Public VCF as-a-Service - Network - Concepts »
+- [« Guide 2: Public VCF as-a-Service - Network - Creating network components via the Public VCF as-a-Service control panel »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation).
+- **Coming soon** : « Guide 3 - Public VCF as-a-Service - Network - How to create an IPsec tunnel with Public VCF as-a-Service? »
+- **Coming soon** : « Guide 4 - Public VCF as-a-Service - Network - How to operate an IP block with Public VCF as-a-Service? »
+- **Coming soon** : « Guide 5 - Public VCF as-a-Service - Network - How to use distributed firewalling (East - West)? »
 
 **Useful network concept**
 

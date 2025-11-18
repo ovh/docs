@@ -21,7 +21,7 @@ Dzięki temu mogą przekierować przychodzące strumienie Twojej domeny na włas
 > Opcja DNSSEC jest aktualnie niedostępna dla domen zarejestrowanych w OVHcloud, z rozszerzeniem **.it**.
 >
 
-Aby uzyskać więcej informacji na temat działania usługi **DNSSEC**, sprawdź naszą stronę "[Dowiedz się więcej o DNSSEC](/links/web/domains-dnssec){.external}".
+Aby uzyskać więcej informacji na temat działania usługi **DNSSEC**, sprawdź naszą stronę "[Dowiedz się więcej o DNSSEC](/links/web/domains-dnssec)".
 
 Zapoznaj się również z naszymi przewodnikami dotyczącymi [serwerów DNS OVHcloud](/pages/web_cloud/domains/dns_server_general_information) oraz [edycji strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit), jeśli chcesz uzyskać więcej informacji na temat tych tematów.
 
@@ -29,7 +29,7 @@ Zapoznaj się również z naszymi przewodnikami dotyczącymi [serwerów DNS OVHc
 
 - Zarejestrowana domena.
 - Nazwa domeny musi posiadać rozszerzenie kompatybilne z DNSSEC.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}, część `Web Cloud`{.action}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager), część `Web Cloud`{.action}.
 
 ## W praktyce
 

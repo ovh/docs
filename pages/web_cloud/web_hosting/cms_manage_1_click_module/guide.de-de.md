@@ -55,8 +55,8 @@ Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr 
 >
 > - WordPress: <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla!: <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum Drupal-Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://www.drupal.org/){.external}.
-> - PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum PrestaShop Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie [hier](https://www.prestashop.com){.external} auf der offiziellen Seite.
+> - Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum Drupal-Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://www.drupal.org/).
+> - PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum PrestaShop Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie [hier](https://www.prestashop.com) auf der offiziellen Seite.
 >
 > Sie können auch das Passwort für den Zugang zum Verwaltungsinterface Ihres CMS direkt über Ihre Datenbank ändern.<br>
 > Wir empfehlen Ihnen jedoch dringend, die Operation mithilfe der vom Herausgeber Ihres CMS zur Verfügung gestellten Dokumentation durchzuführen oder bei Problemen einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
@@ -73,7 +73,7 @@ Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr 
 
 Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst sein Datenbank mit Sicherheit **identifizieren**. Gehen Sie dazu im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
 
-Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
+Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [Web Cloud Databases](/links/web/databases) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
 
 Andernfalls gehen Sie zum Tab `Multisite`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`: Dieses Verzeichnis enthält die Dateien, aus denen Ihr 1-Klick-Modul auf dem FTP-Server besteht.
 
@@ -129,10 +129,10 @@ Fügen Sie den Formularen Ihrer Website CAPTCHA-Verifizierungen hinzu.
 
 Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die nicht auf der offiziellen Webseite oder von der Community Ihres CMS empfohlen wurden: 
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://community.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/community){.external}
-- [PrestaShop](https://www.prestashop.com/de){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://community.joomla.org/)
+- [Drupal](https://www.drupal.org/community)
+- [PrestaShop](https://www.prestashop.com/de)
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

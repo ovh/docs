@@ -18,8 +18,8 @@ Une interface spécifique vous propose également de suivre en temps réel les d
 
 ## Prérequis
 
-- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros){.external}.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros).
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 

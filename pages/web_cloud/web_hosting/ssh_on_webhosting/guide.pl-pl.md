@@ -1,19 +1,32 @@
 ---
-title: "Korzystanie z dostępu do hostingu WWW przez SSH"
-excerpt: "Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH"
-updated: 2024-01-30
+title: "Hosting WWW - Jak korzystać z dostępu SSH"
+excerpt: "Dowiedz się, jak się zalogować i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH"
+updated: 2025-09-08
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie 
 
-Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej umożliwiającej umieszczanie w Internecie plików z Twoich stron www lub Twoich aplikacji. Do przestrzeni dyskowej możesz zalogować się używając, między innymi, protokołu FTP lub SSH oraz odpowiadających im haseł.
+Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej umożliwiającej umieszczanie w Internecie plików z Twoich stron WWW. Możesz logować się do przestrzeni dyskowej, używając identyfikatorów FTP lub SSH.
 
 **Odkryj jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW OVHcloud](/links/web/hosting) z dostępem przez protokół SSH.
-- Posiadanie informacji umożliwiających logowanie się do przestrzeni dyskowej za pomocą SSH.
+- Posiad(/linanie [hostingu WWW OVHcloud]ks/web/hosting) z dostępem przez protokół SSH.
 - Mieć dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!warning]
@@ -22,64 +35,132 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ## W praktyce
 
-### Etap 1: upewnij się, że dostęp przez SSH jest aktywny <a name="sshcheck"></a>
+Aby zalogować się i korzystać z dostępu do Twojego hostingu przez SSH, będziesz potrzebował następujących elementów:
 
-Rozpocznij od zalogowania się do [panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. 
+- aktywnego użytkownika SSH;
+- hasło powiązane z tym użytkownikiem SSH;
+- adres serwera SSH Twojego hostingu;
+- port do połączenia z serwerem SSH Twojego hostingu.
 
-Odnajdź w tabeli kolumnę „SSH”, aby sprawdzić, czy dany użytkownik SSH (lub „Login”) posiada aktywny dostęp przez protokół SSH. Jeżeli tak nie jest, pojawi się informacja „Wyłączony”.
+### 1 - Upewnij się, że dostęp SSH jest aktywny dla wybranego użytkownika SSH <a name="user-ssh-enablement"></a>
 
-![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
-Jeżeli dostęp nie jest aktywny, kliknij przycisk `...`{.action} po prawej stronie wybranego użytkownika, a następnie `Zmień`{.action}. W oknie, które się wyświetli, włącz dostęp SSH, a następnie dokończ procedurę zmiany ustawienia. Jeżeli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa www OVHcloud](/links/web/hosting) posiada dostęp przez protokół SSH.
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}. 
+>>
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Na nowej stronie pojawią się informacje związane z przestrzenią dyskową.
+>>
+>> W tabeli odnajdź kolumnę `SSH`, aby sprawdzić, czy użytkownik SSH (w kolumnie `Login` danej tabeli) posiada aktywny dostęp przez protokół SSH. Jeśli tak nie jest, pojawi się informacja `Wyłączona`.
+>>
+>> ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
+>>
+>> Jeśli dostęp przez SSH dla danego użytkownika to `Wyłączona` w tabeli, wykonaj następujące czynności:
+>>
+>> - 1: Kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego użytkownikowi, a następnie `Zmodyfikuj`{.action}.
+>> - 2: W oknie, które się wyświetli, wybierz `Protokoły logowania`, wybierz opcję `FTP, SFTP i SSH`{.action}, następnie kliknij `Dalej`{.action}.
+>> - 3: Sprawdź podsumowanie żądanej zmiany, następnie kliknij `Zatwierdź`{.action}.
+>>
+>> > Jeśli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa WWW OVHcloud](/links/web/hosting) posiada dostęp przez protokół SSH.
 
-### Etap 2: pobranie informacji niezbędnych do logowania <a name="sshlogin"></a>
+### 2 - Pobierz informacje potrzebne do logowania przez SSH <a name="sshlogin"></a>
 
-Aby zalogować się przez SSH do Twojej przestrzeni dyskowej, przejdź do sekcji `FTP - SSH`{.action}:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
-- **Aktywny** użytkownik SSH: Znajdź go w kolumnie "**Login**" w tabeli. Przypominamy, że użytkownik ten musi [posiadać aktywny dostęp przez SSH](#sshcheck).
-- **Hasło użytkownika SSH**: Jeżeli nie pamiętasz hasła, możesz je zmienić klikając przycisk `...`{.action}, a następnie `Zmień hasło`{.action}.
-- **Adres serwera SSH**: Znajdź opcję "**Serwer SSH**".
-- **Port połączenia z serwerem SSH**: Znajdź opcję "**Port SSH**"
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}. 
+>>
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Na nowej stronie znajdź elementy opisane w poniższej tabeli:
+>>
+>> |Element|Opis|
+>> |---|---| 
+>> |**Adres serwera SSH**| Znajdź wzmiankę `Serwer SSH`. Ma on formę `ssh.clusterXXX.hosting.ovh.net` (gdzie każda z 3 `X` odpowiada cyfrze między `0` i `9`).|
+>> |**Port połączenia z serwerem SSH**| Znajdź opcję `Port SSH`. Domyślnie numerem portu SSH jest `22`.|
+>> |**Aktywny użytkownik SSH**| W tabeli na dole strony odnajdziesz go w kolumnie `Login`.<br>Przypominamy, że ten użytkownik musi [posiadać aktywny dostęp SSH](#user-ssh-enable).|
+>> |**Hasło użytkownika SSH**| Jeśli nie pamiętasz hasła, kliknij przycisk `...`{.action} po prawej stronie linii odpowiadającej danemu użytkownikowi w tabeli na dole strony, a następnie `Zmień hasło`{.action}.|
 
-### Etap 3: zaloguj się do przestrzeni dyskowej przez protokół SSH
+### 3 - Zaloguj się przez SSH do przestrzeni dyskowej Twojego hostingu
 
-Aby zalogować się przez SSH, użyj terminala, dzięki któremu będziesz mógł(mogła) działać bezpośrednio na Twojej przestrzeni dyskowej za pomocą wierszy poleceń.  
+Aby zalogować się przez SSH, użyj terminala, dzięki któremu będziesz mógł działać bezpośrednio na Twojej przestrzeni dyskowej za pomocą wierszy poleceń.
 
 > [!primary]
 >
-> Narzędzie to jest zainstalowane domyślnie na MacOS, Linuxie i Windows 10. Starsza wersja środowiska Windows wymagać będzie instalacji programu, takiego jak [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) lub dodania funkcji OpenSSH.
+> Terminale poleceń są zainstalowane domyślnie w systemach macOS, Linux i Windows 10. Starsze środowisko Windows wymaga instalacji oprogramowania, takiego jak [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) lub dodania funkcji OpenSSH.
 
-Masz teraz dwie możliwości zalogowania się, w zależności od używanej przez Ciebie metody:
+Istnieją dwie metody logowania się przez SSH do hostingu WWW. 
 
-#### 3.1 Za pośrednictwem terminala
+**Kliknij poniżej na wybraną metodę połączenia, aby wyświetlić objaśnienia.**
+
+/// details | Za pośrednictwem terminala
 
 > [!warning]
-> Nasza oferta hostingowa na posiada dostępu „super użytkownik” (lub „root”) przez protokół SSH.
+>
+> Nasza oferta hostingowa na posiada dostępu "super użytkownik" (lub "root") przez protokół SSH.
 
-Po otworzeniu terminala użyj następującego polecenia, zastępując elementy "yourlogin", "ssh.cluster000.hosting.ovh.net" i "22" elementami odpowiadającymi Twojemu identyfikatorowi SSH. 
+Po otworzeniu terminala, zastosuj poniższe polecenie, zastępując elementy `yourlogin`, `ssh.clusterXXX.hosting.ovh.net` oraz `22` przez Twoje dane identyfikacyjne SSH.
 
 ```bash
-ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
+ssh yourlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 ```
 
-Po wysłaniu polecenia zostaniesz poproszony(-a) o wpisanie hasła użytkownika SSH. Po zalogowaniu przejdź do etapu kolejnego: „[Operacje na przestrzeni dyskowej za pomocą SSH](./#etap-4-przeprowadzanie-operacji-na-przestrzeni-dyskowej-z-wykorzystaniem-ssh)”.
+Po wysłaniu zamówienia zostaniesz poproszony o wprowadzenie hasła użytkownika SSH.
 
 ![usessh](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-login.png){.thumbnail}
 
-#### 3.2 Za pomocą oprogramowania
+///
 
-Po otwarciu danego oprogramowania (np. PuTTY), wpisz dane do logowania SSH. Ponieważ operacja ta jest nieodłącznie związana z tym oprogramowaniem, nie możemy opisać jej szczegółowo w niniejszej dokumentacji. W ramach przypomnienia zamieszczamy poniżej informacje, które należy wprowadzić:
+/// details | Za pomocą programu
 
-- **Serwer SSH**: Podaj adres serwera SSH otrzymany [w trakcie realizacji etapu 2](#sshlogin). W zależności od użytego oprogramowania, jego nazwa może być określona jako: „Adres serwera”, „Nazwa hosta” lub „Host name”.
-- **Port połączenia**: Wpisz port połączenia SSH otrzymany [w trakcie realizacji etapu 2](#sshlogin).
-- **Login SSH**: Podaj użytkownika SSH. W zależności od użytego oprogramowania, może być on nazwany „Nazwa użytkownika”, „Identyfikator”, „Login” albo „Username”.
-- **Hasło użytkownika SSH**: Wpisz hasło powiązane z loginem SSH. W zależności od użytego oprogramowania, jego nazwa może również przybrać formę angielskiego „Password”.
+Po otwarciu danego oprogramowania (na przykład PuTTY), wpisz dane do logowania SSH. Ponieważ operacja ta jest nieodłącznie związana z tym oprogramowaniem, nie możemy opisać jej szczegółowo w niniejszej dokumentacji. Przypomnienie informacji, które należy w nim wprowadzić:
 
-Po zalogowaniu, przejdź do następnego etapu.
+- **Serwer SSH**: Podaj pobrany adres serwera SSH w [część 2](#sshlogin). W zależności od użytego oprogramowania, może być on nazwany "Adres serwera", "Nazwa hosta" albo "Host Name".
+- **Port połączenia**: Wpisz port połączenia SSH pobrany w [część 2](#sshlogin).
+- **Login SSH**: Podaj użytkownika SSH. W zależności od użytego oprogramowania, może być on nazwany "Nazwa użytkownika", "Identyfikator", "Login" albo "Username".
+- **Hasło użytkownika SSH**: Wpisz hasło powiązane z loginem SSH.<br><br> W zależności od używanego programu, może również zostać nazwane "Password".
 
-### Etap 4: przeprowadzanie operacji na przestrzeni dyskowej z wykorzystaniem SSH
+///
 
-Do przeprowadzania operacji na przestrzeni dyskowej musisz posłużyć się odpowiednimi poleceniami. Polecenia te mają konkretne znaczenie w języku angielskim. Dla ułatwienia możesz posłużyć się zamieszczoną poniżej listą. Uwaga, **lista nie jest kompletna**.
+Po zalogowaniu, przejdź do następnej części.
+
+### 4 - Korzystaj z przestrzeni dyskowej przez SSH <a name="ssh-using"></a>
+
+Do przeprowadzania operacji na przestrzeni dyskowej musisz posłużyć się odpowiednimi poleceniami. Polecenia te mają konkretne znaczenie w języku angielskim. W razie potrzeby skorzystaj z poniższej listy. Uwaga, **lista nie jest wyczerpująca**.
 
 |Zamówienie|Znaczenie w języku angielskim|Opis| 
 |---|---|---|
@@ -95,32 +176,30 @@ Do przeprowadzania operacji na przestrzeni dyskowej musisz posłużyć się odpo
 |rm -r `arg`|Remove|Usuwa w sposób rekurencyjny katalog wskazany jako argument `arg` wraz z całą jego zawartością| 
 |mv `arg1` `arg2`|Move|Zmienia nazwę lub przenosi dany element (określony jako `arg1`) do nowej lokalizacji (określonej jako `arg2`).| 
 
-Za pomocą specjalnego polecenia możesz również uruchomić skrypt korzystający z określonej wersji PHP. Przykładowo, w przypadku wersji PHP 7.1, użyj następującego polecenia, dostosowując jego elementy do Twojej profilu:
+Możesz również uruchomić skrypt za pomocą określonej wersji PHP. Na przykład w przypadku wersji PHP 7.1 użyj następującego polecenia. dostosowując jego elementy do Twojego przypadku.
 
 ```sh
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniowe może wymagać modyfikacji, aby zagwarantować kompatybilność. Sprawdź naszą dokumentację [Hosting WWW : środowisko, wersja PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniowe może wymagać modyfikacji ze względu na kompatybilność. Zapoznaj się z naszą dokumentacją "[Hosting WWW - Środowisko, wersja PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)", aby dowiedzieć się więcej.
 
 > [!primary]
 >
 > Można również kopiować pliki i/lub foldery za pomocą **S**ecure **C**opy **P**rotocol (**SCP**).
-> Protokół SSH służy do bezpiecznego duplikowania treści między:
-> 
-> - z komputera/urządzenia lokalnego na serwer zdalny
-> - serwer zdalny i komputer/urządzenie lokalne
+> Ten protokół używa protokołu SSH do duplikowania zawartości w bezpieczny sposób między:
+>
+> - lokalny komputer/urządzenie i zdalny serwer
 > - dwa zdalne serwery
 >
-> Więcej informacji na temat korzystania z komendy `scp` z naszym hostingiem OVHcloud znajdziesz w przewodniku "[Hosting WWW - Kopiowanie plików za pomocą komendy SCP](/pages/web_cloud/web_hosting/using-scp-command)"
->
+> Więcej informacji na temat korzystania z komendy `scp` z naszym hostingiem OVHcloud znajdziesz w naszym przewodniku "[Hosting WWW - Kopiowanie plików za pomocą polecenia SCP](/pages/web_cloud/web_hosting/using-scp-command)".
 
 ## Sprawdź również
 
-[Hosting WWW : środowisko, wersja PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+[Hosting WWW - Środowisko, wersja PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community). 
+Dołącz do [grona naszych użytkowników](/links/community).

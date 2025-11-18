@@ -1,7 +1,7 @@
 ---
 title: Zmiana hasła do bazy danych na hostingu
 excerpt: Dowiedz się, jak zmienić hasło do bazy danych utworzonej w ramach pakietu hostingowego
-updated: 2025-05-23
+updated: 2025-10-08
 ---
 
 ## Wprowadzenie 
@@ -20,12 +20,12 @@ Dopóki zmiana nie zostanie dokonana **w tych dwóch miejscach**, Twoja strona W
 
 Jeśli chcesz zmienić hasło do bazy danych, wykonaj **wszystkie operacje** opisane w tym przewodniku. W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z webmasterem lub skontaktuj się z [wyspecjalizowanym](/links/partner) dostawcą usług hostingowych.
 
-Zmiana hasła do bazy danych składa się z czterech etapów:
+Zmiana hasła do bazy danych składa się z czterech częściach:
 
-- [Etap 1: zidentyfikować plik konfiguracyjny Twojej strony](#step1);
-- [Etap 2: zidentyfikować bazę danych Twojej strony](#step2);
-- [Etap 3: zmienić hasło do bazy danych Twojej strony WWW w pliku konfiguracyjnym](#step3);
-- [Etap 4: zmienić hasło do bazy danych na serwerze baz danych](#step4).
+- [1: Zidentyfikować plik konfiguracyjny Twojej strony](#step1);
+- [2: Zidentyfikować bazę danych Twojej strony](#step2);
+- [3: Zmienić hasło do bazy danych Twojej strony WWW w pliku konfiguracyjnym](#step3);
+- [4: Zmienić hasło do bazy danych na serwerze baz danych](#step4).
 
 **Dowiedz się, jak zmienić hasło do bazy danych w bezpieczny sposób.**
 
@@ -40,12 +40,12 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 - Posiadanie [hostingu WWW OVHcloud](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Korzystanie z [bazy danych powiązanej z hostingiem](/links/web/hosting-options-startsql) lub z [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
+- Korzystanie z [bazy danych powiązanej z hostingiem](/links/web/hosting-options-startsql) lub z [Web Cloud Databases](/links/web/databases).
 - Posiadanie danych dostępowych FTP umożliwiających zalogowanie się do [przestrzeni dyskowej Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## W praktyce
 
-### Etap 1: zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
+### 1: Zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
 
 W [Panelu klienta OVHcloud](/links/manager) kliknij pozycję `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
 
@@ -67,7 +67,7 @@ Wyszukaj i otwórz plik konfiguracyjny Twojej strony:
 - W przypadku strony DRUPAL kliknij folder **"sites"**, a następnie **"default"**. Plik konfiguracyjny to **"settings.php"**;
 - W przypadku strony PRESTASHOP kliknij folder **"app"**, a następnie **"config"**. Plik konfiguracyjny to **"parameters.php"**.
 
-### Etap 2: zidentyfikować bazę danych twojej strony <a name="step2"></a>
+### 2: Zidentyfikować bazę danych twojej strony <a name="step2"></a>
 
 Możliwe są dwa przypadki:
 
@@ -89,7 +89,7 @@ Następnie wróć do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Clo
 
 Jeśli w tej części Twojego Panelu klienta znalazłeś nazwę bazy znajdującej się w pliku konfiguracyjnym, przejdź do [Etap 3](#step3).
 
-W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
+W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [Web Cloud Databases](/links/web/databases).
 
 Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *nazwę serwera* oraz *nazwę użytkownika* bazy danych:
 
@@ -100,11 +100,11 @@ Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *
 
 Następnie w części `Bazy danych`{.action} w sekcji `Web Cloud`{.action}. 
 
-W zakładce `Informacje ogólne`{.action} podaj w ofercie [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) nazwę serwera Twojej bazy danych, która zawiera `Nazwa hosta`{.action}.
+W zakładce `Informacje ogólne`{.action} podaj w ofercie [Web Cloud Databases](/links/web/databases) nazwę serwera Twojej bazy danych, która zawiera `Nazwa hosta`{.action}.
 
 W tej części Panelu klienta przejdź do zakładki `Użytkownik i uprawnienia`{.action}, aby również znaleźć `Nazwę użytkownika`{.action} Twojej bazy danych.
 
-### Etap 3: zmiana hasła do bazy danych Twojej strony WWW w pliku konfiguracyjnym <a name="step3"></a>
+### 3: Zmiana hasła do bazy danych Twojej strony WWW w pliku konfiguracyjnym <a name="step3"></a>
 
 > [!primary]
 >
@@ -176,7 +176,7 @@ $databases['default']['default'] = array (
 
 Zapisz tę zmianę.
 
-### Etap 4: Zmiana hasła do bazy danych na serwerze baz danych <a name="step4"></a>
+### 4: Zmiana hasła do bazy danych na serwerze baz danych <a name="step4"></a>
 
 > [!primary]
 >
@@ -191,17 +191,38 @@ Ponownie, możliwe są dwa przypadki:
 
 #### Przypadek nr 1: baza danych twojej strony jest częścią twojej oferty hostingowej <a name="case1"></a>
 
-W części `Hosting`{.action} w Panelu klienta przejdź do zakładki `Bazy danych`{.action} po prawej stronie ekranu:
+Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
-![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
-
-Kliknij trzy kropki po prawej stronie bazy danych, a następnie `Zmień hasło`{.action}.
-
-![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
-
-W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [Etap 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
-
-![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Kliknij trzy kropki po prawej stronie bazy danych, a następnie `Zmień hasło`{.action}.
+>>
+>> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
+>>
+> **Etap 5**
+>>
+>> W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zdefiniowane w [Część 3](#step3)), potwierdź je, następnie kliknij przycisk `Zatwierdź`{.action}.
+>>
+>> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 #### Przypadek nr 2: baza danych strony jest częścią oferty Web Cloud Databases <a name="case2"></a>
 

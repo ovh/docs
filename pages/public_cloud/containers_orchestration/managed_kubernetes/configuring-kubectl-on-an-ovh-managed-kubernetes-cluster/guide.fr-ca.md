@@ -12,18 +12,18 @@ This guide will cover how to retrieve the `kubectl` configuration file to intera
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You must have an OVHcloud Managed Kubernetes cluster.
-- You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed.
+- You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed.
 
-You can find the detailed installation instructions for `kubectl` in Kubernetes' [official documentation](https://kubernetes.io/docs/home/){.external}.
+You can find the detailed installation instructions for `kubectl` in Kubernetes' [official documentation](https://kubernetes.io/docs/home/).
 
 ## Instructions
 
 ### Step 1 - Configure the default settings for kubectl
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
@@ -112,6 +112,6 @@ Or you can install and use [kubectx](https://github.com/ahmetb/kubectx).
 
 To deploy your first application on your Kubernetes cluster, we suggest you refer to our guide to [Deploying an application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-an-application).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

@@ -25,7 +25,7 @@ Una volta indicati i motori di esecuzione da utilizzare, segui la procedura desc
 
 ### Step 1: accedi alla gestione dei motori di esecuzione
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio Cloud Web nella sezione `Hosting`{.action} nel menu a sinistra  e clicca sulla scheda `Motori di esecuzione`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), seleziona il tuo servizio Cloud Web nella sezione `Hosting`{.action} nel menu a sinistra  e clicca sulla scheda `Motori di esecuzione`{.action}.
 
 Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzione di hosting Cloud Web. Considera che durante l’installazione dell’hosting, sul tuo servizio viene creato automaticamente un motore.
 
@@ -35,7 +35,7 @@ Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzi
 
 La gestione dei motori di esecuzione di un hosting Cloud Web comprende diverse operazioni: 
 
-- [aggiungere o modificare un motore di esecuzione](./#21-aggiungere-o-modificare-un-motore-di-esecuzione){.external} (il numero massimo dei motori dipende dal[ servizio attivato](/links/web/hosting-cloud-web-offer){.external})
+- [aggiungere o modificare un motore di esecuzione](./#21-aggiungere-o-modificare-un-motore-di-esecuzione) (il numero massimo dei motori dipende dal[ servizio attivato](/links/web/hosting-cloud-web-offer))
 - impostare un motore come predefinito
 - eliminare un motore di esecuzione
 
@@ -54,10 +54,10 @@ Per aggiungere o modificare un motore di esecuzione, seleziona l’hosting Cloud
 
 Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettura di questa guida in base al motore scelto:
 
-- [PHP](./#php){.external} 
-- [Node.js](./#nodejs){.external}
-- [Ruby](./#ruby){.external} 
-- [Python](./#python){.external} 
+- [PHP](./#php) 
+- [Node.js](./#nodejs)
+- [Ruby](./#ruby) 
+- [Python](./#python) 
 
 ##### **PHP**
 
@@ -66,7 +66,7 @@ Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettu
 |Nome personalizzato|Assegna al motore un nome che ti permetta di riconoscerlo tra quelli presenti nel tuo Spazio Cliente OVHcloud.|  
 |Motore di esecuzione|Seleziona il nuovo motore di esecuzione.|  
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite).
 
 ##### **Node.js**
 
@@ -78,7 +78,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 |Ambiente dell’applicazione|Specifica se si tratta di un ambiente di produzione (production), di prova (test) o di sviluppo (development). Ti ricordiamo che quest’ultimo ha un comportamento diverso rispetto agli altri, in quanto mostra gli eventuali errori direttamente nell’interfaccia Web.|
 |Script per l’avvio dell'applicazione|Assegna un nome allo script che invierà la richiesta alla tecnologia Node.js.|
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
@@ -92,7 +92,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 |Ambiente dell’applicazione|Specifica se si tratta di un ambiente di produzione (production), di prova (test) o di sviluppo (development). Ti ricordiamo che quest’ultimo ha un comportamento diverso rispetto agli altri, in quanto mostra gli eventuali errori direttamente nell’interfaccia Web.|
 |Script di avvio dell'applicazione|Assegna un nome allo script che invierà la richiesta al motore di esecuzione Ruby.|
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 |Ambiente dell’applicazione|Specifica se si tratta di un ambiente di produzione (production), di prova (test) o di sviluppo (development). Ti ricordiamo che quest’ultimo ha un comportamento diverso rispetto agli altri, in quanto mostra gli eventuali errori direttamente nell’interfaccia Web.|
 |Script di avvio dell'applicazione|Assegna un nome allo script che invierà la richiesta al motore di esecuzione Python.|
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 > Nel nostro esempio, sono stati creati solo i motori PHP e Node.js. È possibile che, nel tuo progetto, tu stia utilizzando Ruby o Python. In questo caso, le operazioni descritte qui di seguito sono
 > applicabili.
 > 
-> L’utilizzo di due motori di esecuzione allo stesso tempo sul tuo hosting Cloud Web dipende dal[piano scelto.]/links/web/hosting-cloud-web-offer){.external}
+> L’utilizzo di due motori di esecuzione allo stesso tempo sul tuo hosting Cloud Web dipende dal[piano scelto.]/links/web/hosting-cloud-web-offer)
 > 
 
 Una volta impostati i motori di esecuzione per il tuo progetto, assicurati che siano correttamente associati ai multisiti: clicca sulla scheda `Multisito`{.action} dell’hosting Cloud Web in questione 

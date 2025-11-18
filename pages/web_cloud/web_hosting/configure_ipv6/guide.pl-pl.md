@@ -12,7 +12,7 @@ W rezultacie wprowadzono protokół **IPv6**, aby umożliwić podłączenie do s
 
 Ponieważ adresy IPv4 są obecnie mniej dostępne, trudniej jest dodać nowe maszyny do sieci internetowej z normą IPv4. Połączenia z adresem IPv6 są jednak użyteczne tylko wtedy, gdy Twoja strona WWW jest również dostępna z tym samym protokołem. Im więcej stron internetowych będzie dostępnych w IPv6, tym bardziej różne podmioty działające w sieci internetowej będą przełączać swoje urządzenia/maszyny na nowy protokół.
 
-Więcej informacji znajdziesz w artykule [Wikipedia](https://pl.wikipedia.org/wiki/IPv6){.external} dotyczącym protokołu IPv6.
+Więcej informacji znajdziesz w artykule [Wikipedia](https://pl.wikipedia.org/wiki/IPv6) dotyczącym protokołu IPv6.
 
 Nasze pakiety hostingowe są kompatybilne z IPv6 od 2011 roku. Aktywacja tego protokołu była do niedawna opcjonalną opcją podczas konfiguracji. 
 
@@ -20,9 +20,9 @@ Nasze pakiety hostingowe są kompatybilne z IPv6 od 2011 roku. Aktywacja tego pr
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](/links/web/domains){.external} w Panelu klienta OVHcloud.
-- Posiadanie [hostingu](/links/web/hosting){.external}.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie [domeny](/links/web/domains) w Panelu klienta OVHcloud.
+- Posiadanie [hostingu](/links/web/hosting).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -37,7 +37,7 @@ Jeśli Twoja strona nie jest skonfigurowana tak, aby działała z adresem IPv6, 
 
 ### 1 - Sprawdź kompatybilność IPv6 ze stroną www
 
-Aby sprawdzić, czy Twoja strona WWW używa już adresu IPv6, użyj strony [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. Dowiedz się, czy Twoja strona WWW odpowiada na ten nowy protokół IP. Jeśli tak nie jest, przejdź do opisu w naszym przewodniku.
+Aby sprawdzić, czy Twoja strona WWW używa już adresu IPv6, użyj strony [ipv6-test.com](https://ipv6-test.com/validate.php). Dowiedz się, czy Twoja strona WWW odpowiada na ten nowy protokół IP. Jeśli tak nie jest, przejdź do opisu w naszym przewodniku.
 
 ### 2 - Pobrać adres IPv6 Twojego hostingu
 
@@ -79,7 +79,7 @@ Jeśli aktywna strefa DNS Twojej domeny jest obecna w OVHcloud, skorzystaj z nas
 
 W przeciwnym razie skontaktuj się z dostawcą DNS, podając pobrany wcześniej adres IPv6.
 
-## Przejdź dalej <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 

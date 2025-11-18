@@ -15,9 +15,9 @@ Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguri
 **Esta guía ofrece algunos consejos para proteger un servidor basado en GNU/Linux.**
 
 > [!warning]
->OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
+> OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
 >
->Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle soporte técnico.
+> Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra [comunidad de usuarios](/links/community). OVHcloud no puede ofrecerle soporte técnico.
 >
 
 ## Requisitos
@@ -228,7 +228,7 @@ sudo service fail2ban restart
 
 Fail2ban dispone de múltiples parámetros y filtros de personalización, así como de opciones predefinidas, por ejemplo, cuando desea añadir una capa de protección a un servidor web Nginx.
 
-Para más información y recomendaciones sobre Fail2ban, consulte [la documentación oficial](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} de esta herramienta.
+Para más información y recomendaciones sobre Fail2ban, consulte [la documentación oficial](https://www.fail2ban.org/wiki/index.php/Main_Page) de esta herramienta.
 
 ### Configuración del firewall de red de OVHcloud 
 
@@ -247,7 +247,7 @@ La noción de seguridad va más allá de proteger un sistema frente a posibles a
 
 Para replicar sus datos y transferirlos a su espacio de backup, necesitará una solución de backup externa.
 
-Para más información sobre este espacio de backup, consulte nuestra guía [Backup Storage](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage){.external}.
+Para más información sobre este espacio de backup, consulte nuestra guía [Backup Storage](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Más información
 

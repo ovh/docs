@@ -15,8 +15,8 @@ Wysyłanie SMS-ów do Stanów Zjednoczonych podlega szczególnym zasadom. Celem 
 ## Wymagania początkowe
 
 - Posiadanie konta SMS OVHcloud z kredytami SMS.
-- Zalogowanie do [API OVHcloud](https://api.ovh.com/) (tylko dla metody wysyłki przez API)
-- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+- Zalogowanie do [API OVHcloud](/links/api) (tylko dla metody wysyłki przez API)
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Zatwierdzenie modeli wiadomości jest wykonywane nieodpłatne przez zespoły OVH
 
 #### 2.1 Za pośrednictwem Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Telefonia`{.action}. Następnie kliknij `SMS`{.action} i wybierz Twoje konto SMS. Kliknij kartę `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz `Telefonia`{.action}. Następnie kliknij `SMS`{.action} i wybierz Twoje konto SMS. Kliknij kartę `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}.
 
 Następnie kliknij polecenie `Zarządzanie modelami`{.action}.
 
@@ -64,7 +64,7 @@ Pojawi się okienko pop-up zawierające pola do wypełnienia.
 > [!success]
 > Jeśli nie wiesz, jak korzystać z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps)".
 
-Zaloguj się na [api.ovh.com/](https://api.ovh.com/) i użyj następującego interfejsu API:
+Zaloguj się na [api.ovh.com/](/links/api) i użyj następującego interfejsu API:
 
 > [!api]
 >

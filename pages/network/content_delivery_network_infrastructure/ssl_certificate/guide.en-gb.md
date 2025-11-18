@@ -6,13 +6,13 @@ updated: 2018-02-22
 
 ## Objective
 
-You can add an [SSL certificate](https://www.ovh.co.uk/ssl/){.external} to your Content Delivery Network (CDN), so that your users can connect securely, even if they do so via the CDN.
+You can add an [SSL certificate](/links/web/hosting-options-ssl) to your Content Delivery Network (CDN), so that your users can connect securely, even if they do so via the CDN.
 
 **In this guide, we will show you how to do this with a Let's Encrypt certificate, delivered by OVH.**
 
 ## Requirements
 
-- an [OVH CDN solution](https://www.ovh.co.uk/cdn/){.external}
+- an [OVH CDN solution](/links/network/cdn-infrastructure).
 - the permissions needed to manage your domain’s DNS zone
 
 ## Instructions
@@ -22,7 +22,7 @@ You can add an [SSL certificate](https://www.ovh.co.uk/ssl/){.external} to your 
 - If you have not configured any certificates and you are adding your first subdomain to the CDN, a Let's Encrypt certificate will be created automatically for the domain name.
 - If you are adding another subdomain to the CDN, the certificate will be automatically regenerated to include the new subdomain that you have just added.
 
-To ensure that the certificate is generated properly, the subdomain you add will need to point correctly to the CDN. To check that this is the case, please follow the instructions listed in our guide to [Configuring a domain name for the first time](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external}.
+To ensure that the certificate is generated properly, the subdomain you add will need to point correctly to the CDN. To check that this is the case, please follow the instructions listed in our guide to [Configuring a domain name for the first time](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration).
 
 The certificate is renewed automatically 20 days before its expiry date.
 
@@ -59,6 +59,6 @@ If you already have a Let's Encrypt certificate, then you can use the `Replace w
 
 ## Go further
 
-[Configuring a domain name for the first time](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration){.external}
+[Configuring a domain name for the first time](/pages/network/content_delivery_network_infrastructure/first_domain_name_configuration)
 
 Join our community of users on <https://community.ovh.com/en/>.

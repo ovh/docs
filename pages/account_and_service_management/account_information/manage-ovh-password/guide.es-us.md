@@ -36,9 +36,9 @@ La seguridad de sus soluciones depende de la eficacia de la contraseña de acces
 
 - debe ser diferente que las utilizadas anteriormente.
 
-Existen varios métodos eficaces para crear contraseñas. Entre ellos, le recomendamos el **método de las primeras letras** y el **método fonético** que se explican en [esta guía del sitio web de la Oficina de Seguridad del Intaernauta (OSI)](https://www.osi.es/es/contrasenas#robustas){.external}.
+Existen varios métodos eficaces para crear contraseñas. Entre ellos, le recomendamos el **método de las primeras letras** y el **método fonético** que se explican en [esta guía del sitio web de la Oficina de Seguridad del Intaernauta (OSI)](https://www.osi.es/es/contrasenas#robustas).
 
-Para ahondar más en el tema, consulte la sección [«Más información»](/pages/account_and_service_management/account_information/manage-ovh-password#utilizar-un-gestor-de-contrasenas){.external} al final de esta guía.
+Para ahondar más en el tema, consulte la sección [«Más información»](/pages/account_and_service_management/account_information/manage-ovh-password#utilizar-un-gestor-de-contrasenas) al final de esta guía.
 
 ### Utilizar un gestor de contraseñas 
 
@@ -112,16 +112,16 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 ## Más información
 
-[Instituto Nacional de Ciberseguridad (INCIBE)](https://www.incibe.es){.external}
+[Instituto Nacional de Ciberseguridad (INCIBE)](https://www.incibe.es)
 
-[Oficina de Seguridad del Internauta (OSI)](https://www.osi.es){.external}
+[Oficina de Seguridad del Internauta (OSI)](https://www.osi.es)
 
-[Aprende a gestionar tus contraseñas](https://www.osi.es/es/contrasenas){.external}
+[Aprende a gestionar tus contraseñas](https://www.osi.es/es/contrasenas)
 
-[¿Por qué son importantes las contraseñas?]( https://www.osi.es/sites/default/files/docs/contrasenas01.pdf){.external}
+[¿Por qué son importantes las contraseñas?]( https://www.osi.es/sites/default/files/docs/contrasenas01.pdf)
 
-[Herramientas gratuitas](https://www.osi.es/es/herramientas-gratuitas?herramienta_selec%5B0%5D=118){.external}
+[Herramientas gratuitas](https://www.osi.es/es/herramientas-gratuitas?herramienta_selec%5B0%5D=118)
 
-[El gestor de contraseñas KeePass](https://keepass.info/){.external}
+[El gestor de contraseñas KeePass](https://keepass.info/)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

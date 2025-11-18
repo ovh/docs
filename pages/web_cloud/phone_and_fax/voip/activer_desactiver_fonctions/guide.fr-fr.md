@@ -1,6 +1,6 @@
 ---
 title: Activer ou désactiver des services depuis le téléphone
-updated: 2018-03-26
+updated: 2025-09-04
 ---
 
 ## Objectif
@@ -33,8 +33,13 @@ Vous devez taper le code correspondant sur votre téléphone, établir la commun
 |Refus d'appel entrant si le numéro de votre correspondant est caché|* 82#|#82#|* #82#|** 82#|
 |Masquer / Afficher votre numéro de téléphone|* 31#|#31#|* #31#|** 31#|
 |Service « ne pas déranger »|* 26#|#26#|* #26#|** 26#|
-|Bloquer le téléphone par son code pin|* 33 * (CODE)# Ou * 33#|#33*(CODE)#|* #33 * (CODE)#|* #33#|
+|Bloquer le téléphone par son code PIN|* 33 * (CODE)# Ou * 33#|#33*(CODE)#|* #33 * (CODE)# Ou * #33#|-|
 |Intercepter un appel|* 11 * (NUMERO) Ou * 11#|-|-|-|
+
+> [!warning]
+>
+> Le code PIN par défaut pour le blocage du téléphone est 0000, il peut être modifié via [l'espace client OVHcloud](/links/manager).
+> 
 
 ### Cas particuliers
 

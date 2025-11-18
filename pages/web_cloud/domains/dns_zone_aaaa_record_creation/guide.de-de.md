@@ -66,7 +66,7 @@ Lesen Sie unsere detaillierten Anleitungen:
 2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
 3. Wählen Sie im angezeigten Fenster das Feld `AAAA`{.action} aus.
 4. Geben Sie anschließend in das Feld `Subdomain` die betreffende Subdomain (zum Beispiel `www` für die Subdomain `www.domain.tld`) und im Feld `Ziel *` die IP-Adresse (zum Beispiel `2001:db8:1:1b00:203:0:113:0`) des Dienstes ein, auf dem sich Ihre Website befindet (Webhosting, Dedicated Server, VPS, etc.). Klicken Sie anschließend auf `Weiter`{.action}.
-5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu  **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
+5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Es dauert bis zu **24** Stunden, bis die Änderung im DNS-Netzwerk voll wirksam ist.
 
 /// details | Klicken Sie hier für weitere Informationen.
 

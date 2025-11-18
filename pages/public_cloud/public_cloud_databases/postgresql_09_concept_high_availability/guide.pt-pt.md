@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Concepts - High availability and failure scenarios
 excerpt: Learn the concepts of high-availability for PostgreSQL offers
-updated: 2023-03-21
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -13,11 +13,11 @@ We then describe multiple failure scenarios and consequences.
 
 Public Cloud Databases for PostgreSQL are available on three service plans, offering different levels of high availability. The selected plan defines the features available. A summary is provided in the table below:
 
-| Service plan | Cluster topology                         | High Availability Features             | Backup retention |
-|--------------|------------------------------------------|----------------------------------------|------------------|
-| Essential    | Single-node                              | No high availability                   | 2 days           |
-| Business     | Two nodes: Primary + replica             | Higher availability                    | 14 days          |
-| Enterprise   | Three nodes: One primary +  two replicas | Best high availability characteristics | 30 days          |
+| Service plan        | Cluster topology                         | High Availability Features             | Backup retention |
+|---------------------|------------------------------------------|----------------------------------------|------------------|
+| Essential           | Single-node                              | No high availability                   | 2 days           |
+| Business/Production | Two nodes: Primary + replica             | Higher availability                    | 14 days          |
+| Enterprise/Advanced | Three nodes: One primary +  two replicas | Best high availability characteristics | 30 days          |
 
 ## About primary and replica nodes
 
@@ -65,7 +65,7 @@ The table below summarizes the scenarios detailed in the following paragraphs.
 **RPO** is the **Recovery Point Objective**, meaning how far back before the incident you can recover the data.
 **RTO** is the **Recovery Time Objective**, meaning how long it takes to go back to a normal situation.
 
-| Scenario                                   | Essential (1 node)                                                                                             | Business (2 nodes) or Enterprise (3 nodes)                                                           |
+| Scenario                                   | Essential (1 node)                                                                                             | Business/Production (2 nodes) or Enterprise/Advanced (3 nodes)                                                           |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | Primary node failure                       | **RPO**: approx. 5 minutes or 1 WAL file. **RTO**: multiple hours (time to restore your backup)                | **RPO**: Near zero. **RTO**: Approx. 60 seconds then auto failover                                   |
 | Replica node failure                       | N/A                                                                                                            | **RP0**: zero, no data loss. **RTO**: zero, no downtime                                              |
@@ -103,9 +103,9 @@ In case of datacenter failure, the recovery strategy involves creating a new ser
 You will then need to configure the newly created service (e.g. adding users, IP restrictions, etc.) and reconfigure applications consuming the database service to use new services URIs and credentials.
 In both cases the Recovery Time Objective will vary, depending on multiple parameters such as the amount of data to restore, network congestion and latency or node performances. It can take from a few hours up to a few days.
 
-### Scenarios for Highly available Business and Enterprise service plans
+### Scenarios for Highly available Business/Production and Enterprise/Advanced service plans
 
-The Business plan provides a primary and a replica node, the Enterprise plan starts with a primary and two replica nodes.
+The Business/Production plan provides a primary and a replica node, the Enterprise/Advanced plan starts with a primary and two replica nodes.
 
 #### Replica node failure
 
@@ -154,6 +154,6 @@ In both cases the Recovery Time Objective will vary, depending on multiple param
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

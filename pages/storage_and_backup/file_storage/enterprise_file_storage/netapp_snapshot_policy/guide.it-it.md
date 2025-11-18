@@ -17,7 +17,7 @@ Questa guida ti mostra la gestione delle politiche di Snapshot per i volumi Ente
 ## Prerequisiti
 
 - Un servizio Enterprise File Storage OVHcloud con un volume disponibile
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Nozioni di base
 
@@ -27,7 +27,7 @@ Una politica di Snapshot permette di automatizzare la creazione degli Snapshot u
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona la scheda `Bare Metal Cloud`{.action} nella barra di navigazione superiore. Apri `Storage e Backup`{.action} poi `Enterprise File Storage`{.action} nel menu a sinistra e seleziona il servizio dalla lista.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona la scheda `Bare Metal Cloud`{.action} nella barra di navigazione superiore. Apri `Storage e Backup`{.action} poi `Enterprise File Storage`{.action} nel menu a sinistra e seleziona il servizio dalla lista.
 
 ### Crea la tua politica di Snapshot
 
@@ -91,6 +91,6 @@ Per eliminare una politica di Snapshot:
 
 ## Per saperne di più <a name="go-further"></a>
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

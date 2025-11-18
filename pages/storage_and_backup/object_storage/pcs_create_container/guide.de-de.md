@@ -83,7 +83,7 @@ Ihr Container wurde erstellt:
 > Es ist nicht möglich, über Horizon einen Public Cloud Archive Container zu erstellen.
 >
 
-Loggen Sie sich im [Horizon Interface ein](https://horizon.cloud.ovh.net){.external}:
+Loggen Sie sich im [Horizon Interface ein](https://horizon.cloud.ovh.net):
 
 ![Login](images/create-container-20211005155245752.png)
 

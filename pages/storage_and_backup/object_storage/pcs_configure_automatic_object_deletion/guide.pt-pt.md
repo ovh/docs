@@ -36,7 +36,7 @@ O ficheiro test.txt será então eliminado dentro de 1 hora
 ### Numa data em concreto
 
 Num primeiro tempo deverá conhecer a data de eliminação em formato epoch.
-É possível que utilize um [conversor](http://www.epochconverter.com/){.external} para que consiga recuperar facilmente o valor a introduzir.
+É possível que utilize um [conversor](http://www.epochconverter.com/) para que consiga recuperar facilmente o valor a introduzir.
 
 Depois do valor recuperado, basta que o introduza no header `X-Delete-At` :
 

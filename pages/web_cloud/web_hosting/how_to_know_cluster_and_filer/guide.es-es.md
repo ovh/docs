@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo conocer su cluster y su filer"
 excerpt: "Cómo encontrar el número de cluster y/o el número de filer en el que se encuentra su alojamiento web"
-updated: 2025-05-21
+updated: 2025-08-12
 ---
 
 ## Objetivo
@@ -18,37 +18,6 @@ Al utilizar un alojamiento web, es posible que deba conocer el número del clust
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
-
-### Obtener el número de cluster de un alojamiento web
-
-Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
-
-> [!tabs]
-> **Etapa 1**
->>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Etapa 3**
->>
->> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}. 
->>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->>
-> **Etapa 4**
->>
->> En la nueva página, consulte el número de cluster del alojamiento web en la columna izquierda, bajo el epígrafe **Servidor FTP y SFTP** (3 cifras entre `0` y `9`).
->>
->> ![FTP-SSH - número del cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
-
-### Consultar el número del filer de un alojamiento web
 
 Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 
@@ -67,9 +36,9 @@ Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 >>
 > **Etapa 3**
 >>
->> En el recuadro **Información general** de la página que se abre, obtenga el número del filer bajo la indicación `Servidor de archivos`{.action}.
+>> En el recuadro **Información general** de la página que se abre, obtenga el número del cluster bajo la mención **Clúster** (3 cifras comprendidas entre `0` y `9`) y el número del filer bajo la mención **Servidor de archivos**.
 >>
->> ![Número del filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
+>> ![Números de cluster y filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ## Más información
 

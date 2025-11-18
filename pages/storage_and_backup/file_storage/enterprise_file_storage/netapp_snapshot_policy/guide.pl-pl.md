@@ -17,7 +17,7 @@ W niniejszym przewodniku wyjaśnimy, jak zarządzać politykami wykonywania snap
 ## Wymagania początkowe
 
 - Usługa Enterprise File Storage od OVHcloud z dostępnym wolumenem
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## Podstawowe zasady
 
@@ -27,7 +27,7 @@ Polityka wykonywania snapshotów pozwala na zautomatyzowanie tworzenia snapshot�
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i na górnym pasku nawigacji wybierz zakładkę `Bare Metal Cloud`{.action}. Otwórz `Storage i Backup`{.action}, następnie `Enterprise File Storage`{.action} w menu po lewej stronie i wybierz swoją usługę z listy.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i na górnym pasku nawigacji wybierz zakładkę `Bare Metal Cloud`{.action}. Otwórz `Storage i Backup`{.action}, następnie `Enterprise File Storage`{.action} w menu po lewej stronie i wybierz swoją usługę z listy.
 
 ### Utwórz politykę wykonywania snapshotów
 
@@ -91,6 +91,6 @@ Aby usunąć politykę wykonywania snapshotów:
 
 ## Sprawdź również <a name="go-further"></a>
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

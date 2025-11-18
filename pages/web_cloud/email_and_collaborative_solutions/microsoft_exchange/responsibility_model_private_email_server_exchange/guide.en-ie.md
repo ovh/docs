@@ -71,7 +71,7 @@ This shared model can help relieve the customer’s operational burden.
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage access to the OVHcloud Control Panel and and the private server following access control policy defined  | RA | I |
+| Manage access to the OVHcloud Control Panel and the private server following access control policy defined  | RA | I |
 | Restrict use of security protocols following business needs (IMAP, POP, MAPI, EWS, SMTP) and security associated | A | R |
 | Manage physical and logical access to infrastructures for OVHcloud teams |  | RA |
 

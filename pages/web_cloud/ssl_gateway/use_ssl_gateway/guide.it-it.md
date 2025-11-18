@@ -18,7 +18,7 @@ updated: 2022-12-01
 Questa guida ti mostra come configurare e rinnovare il tuo servizio SSL Gateway OVHcloud.
 
 ### Configurazione del servizio
-- Accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
+- Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
 - Clicca su `Sunrise`{.action}.
 
 ![pulsante Sunrise](images/4.PNG){.thumbnail}
@@ -82,7 +82,7 @@ Questa guida ti mostra come configurare e rinnovare il tuo servizio SSL Gateway 
 > <cite>Il livello più elevato garantirà una protezione maggiore ma potrebbe non funzionare con i browser più datati.</cite>
 >
 
-[Maggiori informazioni sui Cipher](https://it.wikipedia.org/wiki/Cipher){.external}
+[Maggiori informazioni sui Cipher](https://it.wikipedia.org/wiki/Cipher)
 
 ### Configurazione del dominio
 Il riquadro successivo include 4 schede:
@@ -273,7 +273,7 @@ a2enconf remoteip
 service apache2 restart
 ```
 
-Per maggiori informazioni su questa funzionalità, consulta la [documentazione ufficiale](https://httpd.apache.org/docs/current/en/mod/mod_remoteip.html){.external} di Apache.
+Per maggiori informazioni su questa funzionalità, consulta la [documentazione ufficiale](https://httpd.apache.org/docs/current/en/mod/mod_remoteip.html) di Apache.
 
 #### Nginx
 - Apri il file di configurazione relativo al sito da proteggere. In genere si trova in: `/etc/nginx/sites-enabled`
@@ -286,7 +286,7 @@ set_real_ip_from 213.32.4.0/24;
 real_ip_header X-Forwarded-For;
 ```
 
-Per maggiori informazioni su questa funzionalità, consulta la [documentazione ufficiale](http://nginx.org/en/docs/http/ngx_http_realip_module.html){.external} (in inglese).
+Per maggiori informazioni su questa funzionalità, consulta la [documentazione ufficiale](http://nginx.org/en/docs/http/ngx_http_realip_module.html) (in inglese).
 
 ## Per saperne di più
 

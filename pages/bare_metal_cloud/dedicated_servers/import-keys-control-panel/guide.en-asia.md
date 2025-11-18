@@ -29,7 +29,7 @@ If you have not created a key pair yet, consult our guides first:
 - [How to create and use keys for SSH authentication](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 - [How to create and use keys for SSH authentication with PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
-Log in to the [OVHcloud Control Panel](/links/manager), click on the account name at the top right and open `Products and services`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), click on the account name at the top right and open `My offers and services`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

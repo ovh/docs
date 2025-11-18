@@ -1,4 +1,5 @@
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +7,7 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
+- pt-pt
 id: 5f573ee0-c8ed-40fb-9c9b-af2655fa6197
 full_slug: sms-sending-via-url-http2sms
+translation_banner: true

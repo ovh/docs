@@ -1,7 +1,7 @@
 ---
 title: "Meine Website lädt zu langsam. Was soll ich tun?" 
 excerpt: "Ermitteln Sie den Ursprung der Ladezeiten Ihrer Website und erfahren Sie, wie Sie diese Situation verbessern"
-updated: 2023-10-26
+updated: 2025-11-17
 ---
   
 ## Ziel
@@ -32,25 +32,22 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 > Wenn Sie einen Dienst mit einer Verfügbarkeitsgarantie von mehr als 99% benötigen, empfehlen wir die Verwendung eines [Virtual Private Server (VPS)](/links/bare-metal/vps) oder eines [Dedicated Server](/links/bare-metal/bare-metal).
 >
 > Darüber hinaus wird die Performance der Hosting-Infrastruktur von OVHcloud permanent überwacht. Damit wird eine generell hohe Verfügbarkeit und gegebenenfalls eine schnelle Wiederherstellung Ihrer Dienste im Falle einer Überlastung sichergestellt.
->
 
 ## Voraussetzungen
 
 - Sie hosten eine Website auf einem [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
-## Voraussetzungen
+## In der praktischen Anwendung
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
 > Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten, sofern die **Ausfälle nicht auf Ebene der Hosting-Infrastruktur verursacht werden**. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
->
 
 > [!success]
 >
 > Wir empfehlen Ihnen, die Ergebnisse Ihrer Diagnosen festzuhalten, während Sie dieser Anleitung folgen. Diese Daten werden für Verbesserungsmaßnahmen nützlich sein, unabhängig von der Ursache der Langsamkeit.
->
 
 ### Verständnis des Konzepts "Time To First Byte" (TTFB)
 
@@ -92,13 +89,7 @@ Alle Diagnosen in Schritt 1 sind **ausnahmslos** durchzuführen, um festzustelle
 
 Um sicherzustellen, dass Ihre Dienste (Webhosting **und** Datenbank) derzeit von keiner Störung oder Wartung beeinträchtigt werden, benötigen Sie die Cluster- und Filer-Nummer des Hostings sowie die allgemeinen Daten zur entsprechenden Datenbank. Damit können Sie den Status auf [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/) überprüfen.
 
-Um Cluster und Filer Ihres Webhostings zu ermitteln, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie `Rechenzentrum` und `Filer` des Webhostings einsehen.
-
-![Filer abrufen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
-
-Klicken Sie anschließend auf den Tab `Multisite`{.action}, um die Cluster-Nummer Ihres Hostings zu ermitteln.
-
-![Cluster abrufen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
+Um den Cluster und den Filer zu ermitteln, auf dem sich Ihr Webhosting befindet, konsultieren Sie: „[Webhosting - Cluster und Filer eines Webhostings finden](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)“.
 
 > [!success]
 >
@@ -107,7 +98,6 @@ Klicken Sie anschließend auf den Tab `Multisite`{.action}, um die Cluster-Numme
 > Sie können mit Ihrer E-Mail-Adresse die Update-Meldungen zur Störung oder Wartung abonnieren, um über den Fortschritt der Arbeiten benachrichtigt zu werden.
 >
 > Sobald der Störungs- oder Wartungsstatus als **resolved** gekennzeichnet ist, kann es bis zur Stabilisierung der akkumulierten Belastung maximal **3 Stunden** dauern.
->
 
 Wenn keine Störungen oder Wartungsarbeiten aktiv sind, fahren Sie mit Ihrer Diagnose fort.
 
@@ -134,7 +124,6 @@ phpinfo();
 > Änderungen an einer **.htaccess** können Auswirkungen auf die korrekte Anzeige Ihrer Website haben. Wenden Sie sich an [spezialisierter Dienstleister](/links/partner), wenn Sie Schwierigkeiten haben, die folgenden Maßnahmen durchzuführen.
 >
 > **Als sachkundiger Nutzer** benennen Sie in diesem Fall Ihre **.htaccess** in **.htaccess_OLD** um, damit der Server sie nicht mehr während Ihres Tests ausführt. Benennen Sie die Datei(en) nach Ihrer Diagnose wieder korrekt.
->
 
 **Beispiel**: Wenn der Domainname für den Zugang zu Ihrer Website "domain.tld" ist und die Datei **phpinfo.php** im Wurzelverzeichnis Ihrer Website (*document root*) platziert wurde, dann ist diese über folgende URL verfügbar: `http://domain.tld/phpinfo.php` (oder: `https://domain.tld/phpinfo.php`)
 
@@ -143,7 +132,6 @@ phpinfo();
 > Wenn der Aufruf der Datei **phpinfo.php** die Konfigurationstabelle **unverzögert** anzeigt, bedeutet dies, dass die Verlangsamung nicht vom Hosting ausgeht. Andernfalls wird diese Datei genauso langsam wie Ihre anderen Seiten angezeigt.
 >
 > Mit anderen Worten: Wenn Langsamkeit nur auf einem Teil der Seiten oder des Inhalts Ihrer Website auftritt, bedeutet dies, dass das Hosting **nicht die Ursache für Verzögerungen** auf Ihrer Website ist.
->
 
 #### 1.4 - Testen Sie die Konnektivität Ihrer Datenbank
 
@@ -158,7 +146,6 @@ Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 > [!warning]
 >
 > Falls Sie einen Fehler feststellen, lesen Sie unsere [Anleitung zur Behebung von Datenbankfehlern](/pages/web_cloud/web_hosting/diagnosis_database_errors). Loggen Sie sich nach der Fehlerbehebung erneut ein.
->
 
 #### 1.5 - Auswertung der durchgeführten Diagnosen
 
@@ -187,7 +174,6 @@ An dieser Stelle sollte eindeutig sein, dass Verlangsamungen von Seiten/Skripte/
 > [!warning]
 >
 > Wenn Sie Schwierigkeiten haben, die folgenden Aktionen durchzuführen, können Sie einen [sachverständigen Partner](/links/partner) kontaktieren. OVHcloud kann keine Unterstützung bei der Entwicklung oder Optimierung Ihrer Website anbieten.
->
 
 Im Folgenden finden Sie die notwendigen Aktionen, um die Quelle(n) der Langsamkeit zu ermitteln und Ihre Website zu optimieren.
 
@@ -237,21 +223,18 @@ Je weniger Anfragen es gibt, desto weniger werden die Ressourcen für Ihr Hostin
 > Klicken Sie hierzu auf die Taste `F12` im Browserfenster und wählen Sie dann den Tab `Netzwerk` aus. Laden Sie Ihre Webseite neu idem Sie `Ctrl + Shift + R` drücken. Das Tool listet die beim Laden Ihrer Seite durchgeführten Anfragen auf. Identifizieren Sie die Elemente, deren Aufruf Ladezeit erzeugt, um diese anschließend zu optimieren.
 >
 >![Firefox Netzwerk-Analyse](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
->
 
 Um das Aufkommen an Abfragen für jeden Seitenaufbau zu reduzieren, können Sie auch ein Content Delivery Network (CDN) einsetzen. Es legt den statischen Inhalt Ihrer Website im Cache ab. Ihr Webhosting wird somit weniger beansprucht und verfügt über mehr Ressourcen für die Bearbeitung der übrigen Anfragen, die nicht für den Cache geeignet sind.
 
 > [!primary]
 >
 > OVHcloud bietet mehrere [CDN-Optionen](/links/web/hosting-options) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
->
 
 #### 2.4 - Optimieren Sie Ihre Datenbank
 
 > [!warning]
 >
 > Änderungen in Ihrer Datenbank können irreversible Folgen haben, wenn sie nicht systematisch und korrekt durchgeführt werden. Wenden Sie sich an einen [spezialisierten Dienstleister](/links/partner), falls Sie sich der geeigneten Maßnahmen nicht sicher sind. 
->
 
 Überprüfen Sie, ob eine große Anzahl an Anfragen an Ihre Datenbank erfolgt.<br>
 Diese Situation kann zu einer Überbeanspruchung führen und damit zu Verzögerungen oder sogar zum Fehler **504 Gateway Timeout**.
@@ -278,7 +261,7 @@ Passen Sie alle Ihre Bilddateien an, um den Ressourcenverbrauch möglichst gerin
 
 Lesen Sie auch unsere Anleitung zur [Optimierung der Performance Ihrer Website](/pages/web_cloud/web_hosting/optimise_your_website_performance).
 
-Sie können weitere Optimierungsmöglichkeiten für Ihre Website finden, indem Sie diese auf [gtmetrix.com](https://gtmetrix.com){.external} analysieren lassen. (Dieses externe Tool hat keine geschäftliche Verbindung zu OVHcloud).
+Sie können weitere Optimierungsmöglichkeiten für Ihre Website finden, indem Sie diese auf [gtmetrix.com](https://gtmetrix.com) analysieren lassen. (Dieses externe Tool hat keine geschäftliche Verbindung zu OVHcloud).
 
 > [!success]
 >

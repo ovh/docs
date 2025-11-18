@@ -73,7 +73,7 @@ Services and data are protected against localised incidents thanks to effective 
 
 > [!success]
 >
-> To improve resilience for critical applications in a 1-AZ Region, consider using asynchronous replication for added protection. This can help reinforce both application and data resiliency. Another option to mitigate this risk is using a [**3-AZ deployment mode**](#3azregion).
+> To improve resilience for critical applications in a 1-AZ Region, consider using asynchronous replication for added protection. This can help reinforce both application and data resiliency. Another option to mitigate this risk is using a [**3-AZ deployment mode**](#3-az-region).
 
 #### Redundancy Specifications for 1-AZ
 

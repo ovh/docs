@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to modify a domain name already associated to a hosting plan"
 excerpt: "Find out how to change the association settings for a domainname or subdomain already declared on your web hosting plan"
-updated: 2025-02-20
+updated: 2025-11-05
 ---
 
 ## Objective
@@ -18,8 +18,8 @@ When you use your web hosting plan or update your website, you may need to modif
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [OVHcloud Web Hosting plan](/links/web/hosting){.external}
-- One or more [domain names](/links/web/domains){.external}
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
+- One or more [domain names](/links/web/domains)
 - Sufficient rights to all the services concerned, find more information in our guide “[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)”
 
 ## Instructions
@@ -84,12 +84,6 @@ In this form, replace the name of the pre-filled folder with the name of the new
 
 #### Other options available
 
-##### The "SSL" option
-
-Tick/untick this box only if you want to enable/disable free SSL **Let's Encrypt** for your domainname or subdomain. You do not need to tick this box for the other SSL solutions offered with OVHcloud.
-
-You can find more information on SSL options and offers in our dedicated documentation “[Managing SSL certificates on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)”.
-
 ##### The "Activate the CDN" option
 
 To use this option, you must have already subscribed to an OVHcloud CDN solution, or have a Performance web hosting plan.
@@ -128,7 +122,7 @@ If all the settings are configured as you want, click the `Confirm`{.action} but
 
 Depending on the options you have selected, the changes may take between a few minutes and a few hours to be applied.
 
-If modifications of the **SSL**, **CDN**, **Country IP** and **separate logs** options are not taken into account after 24 hours, please refer to the respective resources listed for all of the options described in [step 1](#step1), in order to check that all of the required conditions have been met.
+If modifications of the **CDN**, **Country IP** and **separate logs** options are not taken into account after 24 hours, please refer to the respective resources listed for all of the options described in [step 1](#step1), in order to check that all of the required conditions have been met.
 
 ## Go further
 

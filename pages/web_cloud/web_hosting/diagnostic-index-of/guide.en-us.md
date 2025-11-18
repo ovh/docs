@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting an "Index of" page
 excerpt: Find out how to get your website back online if it displays an "Index of" page
-updated: 2023-05-04
+updated: 2025-10-28
 ---
 
 ## Objective
 
 An "**Index of**" page appears in at least one of the following cases:
 
-- Your domain name’s [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) configuration has not been correctly set to your target directory.
+- The [configuration of your domain name with your website](/pages/web_cloud/web_hosting/multisites_configure_multisite) is not correctly set to your target directory.
 - The target folder to which your domain name points does not contain **index.html** or **index.php** files.
 
 ![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
@@ -31,7 +31,7 @@ An "**Index of**" page appears in at least one of the following cases:
 
 ### Understanding the origin of the "Index of" page
 
-Your domain name is declared to access a target directory (a `Root Folder`) on the server [FTP](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan. You can do this via the [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) tab in your web hosting plan, in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=wea).
+Your domain name is declared to access a target directory (a `Root Folder`) on the server [FTP](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan. You can do this via the [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) tab in your web hosting plan, in your [OVHcloud Control Panel](/links/manager).
 
 The "**Index of**" page indicates that the target directory does not contain a **index.php** or **index.html** file. A file of this type is the *entry point* for your website. This file name is standardised.
 
@@ -41,11 +41,11 @@ To view your website, you will need to link your domain to the `Root folder` con
 >
 > If you want to temporarily link your domain to a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the list of folders from being displayed on your site by following this [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#prevent-the-content-of-a-directory-from-being-listed). You can also protect access to your folders with a [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> We recommend contacting a [specialist provider](/links/partner) if you experience any difficulties setting up this configuration. Our support teams will not be able to assist you with any changes to your website’s internal programming.
+> We recommend that you contact a [specialist provider](/links/partner) if you have difficulties setting up this configuration. Indeed, our support teams will not be able to assist you with any changes to the internal programming of your website.
 
 ### Resolving the most common cause of an "Index of" page
 
-You have imported the files of your website **mydomain.ovh** into the `www` folder on your OVHcloud Web Hosting plan through an [FTP connection](/pages/web_cloud/web_hosting/ftp_connection). Your domain name however is not linked to this folder in the `Root folder` column of your `Multisite` configuration.
+You have imported the files of your site **mydomain.ovh** into the `www` folder of your hosting. However, your domain name is not linked to this folder in the `Root folder` column of your website.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

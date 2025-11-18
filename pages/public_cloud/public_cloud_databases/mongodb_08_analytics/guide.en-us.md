@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Configure an Analytics node
 excerpt: Configure a dedicated Analytics node in your Public Cloud Databases for MongoDB to support analytics workloads
-updated: 2023-12-06
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -11,9 +11,9 @@ This guide shows how to configure a node in your cluster dedicated to analytics-
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- A multi-node capable (so, either *Business*, *Production*, *Enterprise* or *Advanced* plan) MongoDB database cluster running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A multi-node capable (so, either *Production* or *Advanced* plan) MongoDB database cluster running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 
 ## What purpose does an Analytics node serve?
@@ -95,5 +95,5 @@ Join our community of users on <https://community.ovh.com/en/>.
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 Are you on Discord? Connect to our channel at [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) and interact directly with the team that builds our databases service!

@@ -4,6 +4,11 @@ excerpt: 'Find out how to optimise your OVHcloud account security, manage your p
 updated: 2025-05-22
 ---
 
+> [!success]
+> Participate in our survey and help us improve this guide!<br>
+> Feel free to share your thoughts and ideas with us.<br>
+> [Go to the survey.](https://s.elq.fr/ovhext/DItXnvw)
+
 ## Objective
 
 Your data and services are mainly managed via the OVHcloud Control Panel.

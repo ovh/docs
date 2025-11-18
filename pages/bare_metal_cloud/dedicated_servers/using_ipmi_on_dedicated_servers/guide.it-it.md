@@ -31,10 +31,10 @@ Per connettersi all’IPMI è possibile utilizzare diversi metodi¹. Le chiavi S
 |---|---|---|---|---|---|
 |**KVM**³ via **browser Web**|**KVM HTML**|Emulazione dello schermo video attraverso un **canvas HTML**, esattamente come se si collegasse fisicamente una tastiera/mouse in USB e uno schermo video in VGA al proprio server dedicato.|❌|⚠️⁴|-- Diagnosi di un problema di boot del server dedicato.|
 |**KVM**³ via **applet Java**|**KVM Java**|Come per il KVM HTML, ad eccezione che l'emulazione si effettua tramite un **applet Java** al posto del canale HTML.|❌|✅|- Diagnosticare un problema di boot del server dedicato. <br />- Eseguire l'installazione di un OS specifico (escluso [catalogo](/links/bare-metal/os)) manualmente.|
-|**SoL**─ via **browser Web**|**SoL JavaScript**|Emulazione di un collegamento seriale tramite browser Web, esattamente come se si collegasse una console seriale in RS-232 fisicamente al server dedicato.|✅|❌|- Diagnosticare un problema di rete: recuperare i log e modificare i file di configurazione.|
-|**SoL**∕via **SSH**|**SoL SSH**|Come per SoL JavaScript, ad eccezione del fatto che l'emulazione avviene tramite un gateway SSH. Accedi con il tuo client SSH preferito a un server remoto in SSH, che trasferisce in seguito gli ordini in collegamento seriale al server dedicato.|✅|❌|- Idem SoL JavaScript ma da una macchina che non ha interfaccia grafica.|
+|**SoL**⁶ via **browser Web**|**SoL JavaScript**|Emulazione di un collegamento seriale tramite browser Web, esattamente come se si collegasse una console seriale in RS-232 fisicamente al server dedicato.|✅|❌|- Diagnosticare un problema di rete: recuperare i log e modificare i file di configurazione.|
+|**SoL**⁶ via **SSH**|**SoL SSH**|Come per SoL JavaScript, ad eccezione del fatto che l'emulazione avviene tramite un gateway SSH. Accedi con il tuo client SSH preferito a un server remoto in SSH, che trasferisce in seguito gli ordini in collegamento seriale al server dedicato.|✅|❌|- Idem SoL JavaScript ma da una macchina che non ha interfaccia grafica.|
 
-¹ In base alla compatibilità hardware del server dedicato (alcuni metodi non saranno disponibili nello [Spazio Cliente OVHcloud](/links/manager).<br />
+¹ In base alla compatibilità hardware del server dedicato (alcuni metodi non saranno disponibili nello [Spazio Cliente OVHcloud](/links/manager)).<br />
 ² Funzionalità che permette di montare un'immagine ISO memorizzata localmente sulla tua macchina sul server dedicato remoto, e quindi di installare un OS tramite l'IPMI.<br />
 ³ KVM = Keyboard Video and Mouse<br />
 ⁴ In base alla compatibilità hardware del tuo server dedicato: utilizza il KVM Java al posto del server se incompatibile.<br />
@@ -45,7 +45,7 @@ Per attivare uno di questi metodi, accedi allo [Spazio Cliente OVHcloud](/links/
 
 ### Aprire un KVM tramite applet Java <a name="applet-java"></a>
 
-Per il corretto funzionamento dell'applet, è necessario che Java sia installato sul dispositivo. Se non lo hai ancora fatto, accedi alla [pagina ufficiale](https://www.java.com/en/download/){.external}.
+Per il corretto funzionamento dell'applet, è necessario che Java sia installato sul dispositivo. Se non lo hai ancora fatto, accedi alla [pagina ufficiale](https://www.java.com/en/download/).
 
 Nella sezione `Remote KVM`{.action} dello Spazio Cliente OVHcloud, clicca su `Da applet Java (KVM)`{.action}:
 

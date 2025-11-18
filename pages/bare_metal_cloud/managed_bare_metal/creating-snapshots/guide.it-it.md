@@ -12,7 +12,7 @@ updated: 2020-11-18
 
 ## Prerequisiti
 
-- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo.
+- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) attivo.
 - Essere connesso al client vSphere HTML
 
 ## Procedura
@@ -78,7 +78,7 @@ Per effettuare un consolidamento, clicca con il tasto destro sulla VM, seleziona
 
 ![consolidate snapshots](images/consolidate.png){.thumbnail}
 
-Per maggiori informazioni, consulta [la documentazione di VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
+Per maggiori informazioni, consulta [la documentazione di VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html).
 
 ## Per saperne di più
 

@@ -10,7 +10,7 @@ updated: 2025-03-20
 
 ## Wprowadzenie
 
-Moduł Cloud-init pozwala na skonfigurowanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} podczas jej tworzenia oraz podczas każdego restartu. Jeśli chcesz ponownie skonfigurować hostname, na przykład na skutek błędu podczas tworzenia instancji lub aby zmienić konfigurację serwera mailowego, musisz wyłączyć moduł Cloud-init, który zajmuje się konfiguracją hostname, aby nie został on przywrócony. 
+Moduł Cloud-init pozwala na skonfigurowanie [instancji Public Cloud](/links/public-cloud/public-cloud) podczas jej tworzenia oraz podczas każdego restartu. Jeśli chcesz ponownie skonfigurować hostname, na przykład na skutek błędu podczas tworzenia instancji lub aby zmienić konfigurację serwera mailowego, musisz wyłączyć moduł Cloud-init, który zajmuje się konfiguracją hostname, aby nie został on przywrócony. 
 
 **Przewodnik ten wyjaśnia, jak skonfigurować Cloud-init, aby móc zmienić hostname instancji.**
 
@@ -25,7 +25,7 @@ Moduł Cloud-init pozwala na skonfigurowanie [instancji Public Cloud](https://ww
 
 ## Wymagania początkowe
 
-* Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}
+* Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * [Połączenie przez SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) (sudo) z instancją
 
 ## W praktyce

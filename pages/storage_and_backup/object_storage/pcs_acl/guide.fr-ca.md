@@ -564,7 +564,7 @@ X-Iplb-Instance: 33617
 ## Le cas des Large Objects
 
 Si un objet de plus de 5Gb à été déposé, cela génère un conteneur tel que : `<conteneur_segments>`.<br>
-Les "larges objets" peuvent être de type SLO ou DLO. Vous trouverez plus d'informations à ce sujet sur [la documentation OpenStack](https://docs.openstack.org/swift/latest/overview_large_objects.html){.external}.
+Les "larges objets" peuvent être de type SLO ou DLO. Vous trouverez plus d'informations à ce sujet sur [la documentation OpenStack](https://docs.openstack.org/swift/latest/overview_large_objects.html).
 
 ### SLO
 

@@ -16,7 +16,7 @@ Para garantizar la continuidad del servicio y evitar la pérdida de datos, OVHcl
 
 ## Requisitos
 
-* Disponer de una [infraestructura Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external} en su cuenta de OVHcloud.
+* Disponer de una [infraestructura Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/) en su cuenta de OVHcloud.
 * Acceder al panel de control vSphere Web Client HTML.
 
 ## Procedimiento

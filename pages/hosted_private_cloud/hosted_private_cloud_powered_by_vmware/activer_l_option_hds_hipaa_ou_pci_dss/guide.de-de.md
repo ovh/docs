@@ -13,13 +13,13 @@ Sie haben die Möglichkeit, für Ihre Private Cloud die PCI-DSS-Zertifizierung z
 ## Voraussetzungen
 
 - Sie verfügen über eine Private Cloud Infrastruktur mit Version 6.0 oder höher.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 ### Überprüfen, dass die Sicherheitsoption aktiviert ist
 
-Um eine Zertifizierung wie PCI-DSS für Ihre Private Cloud zu aktivieren, muss die entsprechende Sicherheitsoption aktiviert sein. Um dies zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich „Server“ (vormals „Dedicated“). Klicken Sie auf `Private Cloud`{.action} und wählen Sie den betreffenden Dienst aus. 
+Um eine Zertifizierung wie PCI-DSS für Ihre Private Cloud zu aktivieren, muss die entsprechende Sicherheitsoption aktiviert sein. Um dies zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich „Server“ (vormals „Dedicated“). Klicken Sie auf `Private Cloud`{.action} und wählen Sie den betreffenden Dienst aus. 
 
 Gehen Sie im angezeigten Fenster in den Tab `Allgemeine Informationen`{.action}. Überprüfen Sie dort den Aktivierungsstatus der Sicherheitsoptionen im Bereich „Sicherheitsoptionen“. **Bitte beachten Sie, dass es aktuell nicht möglich ist, mehrere Sicherheitsoptionen für dieselbe Private Cloud zu aktivieren.**
 

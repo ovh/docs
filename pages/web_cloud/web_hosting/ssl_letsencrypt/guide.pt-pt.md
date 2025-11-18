@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar um certificado SSL gratuito Let's Encrypt"
 excerpt: "Saiba como ativar ou regenerar um certificado SSL gratuito Let's Encrypt no seu alojamento web"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objetivo
@@ -31,6 +31,18 @@ A Let's Encrypt é uma autoridade de certificação gratuita, automatizada, aber
 - Encomendar ou dispor de um [nome de domínio](/links/web/domains) e dispor de direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
 
 ## Instruções
+
+> [!primary]
+>
+> **Informações sobre a migração para a nova interface de gestão de certificados SSL:**
+>
+> O resto deste guia destina-se aos clientes cujos serviços de alojamento web ainda não migraram para a nova interface de gestão dos certificados SSL.
+> Para detetar se esta migração foi efetuada, aceda ao seu alojamento web na Área de Cliente OVHcloud e verifique a presença do separador `Certificados SSL`.
+> Se estiver presente o separador `Certificados SSL`, o seu serviço já migrou para a nova interface de gestão. Neste caso, consulte diretamente [este manual](/pages/web_cloud/web_hosting/ssl_management) para gerir o seu certificado SSL.
+>
+> Por razões técnicas, nem todos os serviços de alojamento web de todos os nossos clientes podem ser migrados de uma só vez. Esta migração é, por isso, repartida durante algumas semanas e é realizada de forma automática, sem qualquer incidência no funcionamento dos seus serviços de alojamento web, e sem qualquer intervenção ou ação necessária da sua parte.
+>
+> A prazo, todos os serviços de alojamento web funcionarão com a nova interface de gestão dos certificados SSL.
 
 ### 1. Pré-atribuir o futuro certificado SSL Let's Encrypt ao(s) seu(s) domínio(s)/subdomínio(s) <a name="ssl-multisite"></a>
 
@@ -142,7 +154,7 @@ Para isso, efetue **por ordem** as seguintes ações:
 5. Selecione o alojamento web em causa.
 6. Na página que vai aparecer, permaneça no separador `Informações gerais`{.action}.
 7. Aceda à caixa chamada `Configuração`.
-8. À direita da menção `Certificado SSL`, clique no botão `..`{.action} e, a seguir, em `Gerar / atualizar certificado SSL`{.action}.
+8. À direita da menção `Certificado SSL`, clique no botão `...`{.action} e, a seguir, em `Gerar / atualizar certificado SSL`{.action}.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
 
@@ -152,7 +164,7 @@ Esta etapa pode levar várias horas.
 
 > [!warning]
 >
-> Let's Encrypt, a autoridade que fornece o certificado SSL, [limita a cinco o número de regenerações possíveis por semana](https://letsencrypt.org/docs/rate-limits/){.external}. Portanto, esteja atento às diferentes regenerações que possa realizar a curto prazo para não ficar temporariamente bloqueado.
+> Let's Encrypt, a autoridade que fornece o certificado SSL, [limita a cinco o número de regenerações possíveis por semana](https://letsencrypt.org/docs/rate-limits/). Portanto, esteja atento às diferentes regenerações que possa realizar a curto prazo para não ficar temporariamente bloqueado.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 

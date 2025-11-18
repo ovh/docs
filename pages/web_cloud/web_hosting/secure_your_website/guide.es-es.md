@@ -24,7 +24,7 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 - un [plan OVHcloud Web Hosting](/links/web/hosting)
 - tener los detalles de [inicio de sesión](/pages/web_cloud/web_hosting/ftp_connection#1-obtener-los-datos-de-conexion) para acceder al espacio de almacenamiento de su plan de alojamiento
 - acceso al [panel de control de OVHcloud](/links/manager)
-- acceso a la [interfaz de administración de su sitio web](https://codex.wordpress.org/es:First_Steps_With_WordPress){.external}
+- acceso a la [interfaz de administración de su sitio web](https://codex.wordpress.org/es:First_Steps_With_WordPress)
 
 ## Procedimiento
 
@@ -32,7 +32,7 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 
 Este primer paso es fundamental. De hecho, la infección de su equipo informático por un programa malicioso puede dar acceso, a una persona malintencionada, al conjunto de las incautaciones efectuadas en su teclado. Por lo tanto, las claves que utilice para conectarse al área de cliente de OVHcloud o al panel de administración del sitio web pueden estar en peligro.
 
-Por otro lado, el creciente fenómeno de los [ransomware](https://www.osi.es/es/actualidad/avisos/2017/06/nueva-oleada-de-ransomware-afectando-multiples-equipos){.external} (aproximadamente 400 casos en Francia en 2020) puede no solo conducir al cifrado de todos sus datos personales, sino también poner en peligro su actividad, haciendo inaccesible todos sus datos, dispositivos y programas.
+Por otro lado, el creciente fenómeno de los [ransomware](https://www.osi.es/es/actualidad/avisos/2017/06/nueva-oleada-de-ransomware-afectando-multiples-equipos) (aproximadamente 400 casos en Francia en 2020) puede no solo conducir al cifrado de todos sus datos personales, sino también poner en peligro su actividad, haciendo inaccesible todos sus datos, dispositivos y programas.
 
 Compruebe en primer lugar la seguridad de su equipo Windows, Mac o Linux:
 
@@ -91,10 +91,10 @@ Los formularios de los sitios web son un objetivo principal de los piratas infor
 
 Añada a su sitio web un plugin de seguridad recomendado por el editor del CMS:
 
-- [WordPress](https://es.wordpress.org/){.external}
-- [Joomla](https://downloads.joomla.org/es/){.external}
-- [Drupal](https://www.drupal.org/drupal-7.0/es){.external}
-- [PrestaShop](https://www.prestashop.com/es){.external}
+- [WordPress](https://es.wordpress.org/)
+- [Joomla](https://downloads.joomla.org/es/)
+- [Drupal](https://www.drupal.org/drupal-7.0/es)
+- [PrestaShop](https://www.prestashop.com/es)
 
 ### Etapa 10 - Compruebe si hay archivos maliciosos en su alojamiento web
 
@@ -108,7 +108,7 @@ Es necesario realizar regularmente [copias de seguridad de los datos](#backup) d
 
 Pero no son una seguridad absoluta. También es necesario probar las copias de seguridad de la base de datos para comprobar que no estén dañadas.
 
-Puede realizar estas pruebas localmente, por ejemplo importando sus datos en un programa de tipo [WAMP](https://www.wampserver.com/){.external}. Asegúrese de configurar su solución local para que su configuración se corresponda plenamente con la de nuestros [servidores de alojamiento compartido](https://webhosting-infos.hosting.ovh.net/).
+Puede realizar estas pruebas localmente, por ejemplo importando sus datos en un programa de tipo [WAMP](https://www.wampserver.com/). Asegúrese de configurar su solución local para que su configuración se corresponda plenamente con la de nuestros [servidores de alojamiento compartido](https://webhosting-infos.hosting.ovh.net/).
 
 También puede crear una **versión de prueba** del sitio web (p. ej.: test.mondominio.tld) en otra carpeta de su alojamiento (podrá utilizar una plantilla de base).
 

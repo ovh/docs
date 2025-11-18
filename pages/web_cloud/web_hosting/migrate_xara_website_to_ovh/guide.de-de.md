@@ -12,7 +12,7 @@ In dieser Anleitung erfahren Sie Schritt für Schritt, wie Sie Ihre Xara Website
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder die [offizielle Website von Xara Web Designer](https://www.xara.com/de/webdesigner-plus/){.external} zu besuchen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder die [offizielle Website von Xara Web Designer](https://www.xara.com/de/webdesigner-plus/) zu besuchen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 **Diese Anleitung erklärt, wie Sie Ihre Xara Website und zugehörige Dienste zu OVHcloud migrieren.**
@@ -25,7 +25,7 @@ In dieser Anleitung erfahren Sie Schritt für Schritt, wie Sie Ihre Xara Website
 
 ### Schritt 1: Backup der Dateien und Datenbanken Ihrer Xara Website
 
-Der erste Schritt besteht darin, alle Dateien Ihrer Xara Website abzurufen. Dazu gehören die Xara-Dateien sowie Ihre Datenbank, falls vorhanden. Weitere Informationen finden Sie auf der Seite „[Exporting a Website](https://webdesigner.xara.com/bhavtest/test1/xara_desktop/product_support/web_features/exporting_website.html?rhhlterm=website){.external}“ oder in Schritt 3 der Anleitung „[Website und zugehörige Dienste zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)“.
+Der erste Schritt besteht darin, alle Dateien Ihrer Xara Website abzurufen. Dazu gehören die Xara-Dateien sowie Ihre Datenbank, falls vorhanden. Weitere Informationen finden Sie auf der Seite „[Exporting a Website](https://webdesigner.xara.com/bhavtest/test1/xara_desktop/product_support/web_features/exporting_website.html?rhhlterm=website)“ oder in Schritt 3 der Anleitung „[Website und zugehörige Dienste zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)“.
 
 ### Schritt 2: Ihre Xara Website zu OVHcloud übertragen
 

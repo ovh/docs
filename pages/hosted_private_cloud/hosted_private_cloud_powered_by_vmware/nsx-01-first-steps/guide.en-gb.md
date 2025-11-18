@@ -30,13 +30,13 @@ By default, routes are not enabled. The segments created behind the **ovh-T1-gw*
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](/links/partner) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
-- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A user account with access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -53,7 +53,7 @@ Enter your credentials and click `LOG IN`{.action}.
 > [!warning]
 > To authenticate on the NSX interface, you need to use a vSphere account with NSX rights. Ensure that the Dedicated Cloud name (FQDN, in the form `pcc-x-x-x-x.ovh.xx`) is selected in the login form.
 >
-> If you are not using the NSX interface, but rather the API or another external tool (such as VMware Cloud Director, VCD), you will need to use the account provided by OVHcloud as an identifier, followed by the PCC FQDN. For example `login@pcc-1-2-3-4.ovh.eu` in the example below.
+> If you are not using the NSX interface, but rather the API or another external tool (such as Public VCF as-a-Service), you will need to use the account provided by OVHcloud as an identifier, followed by the PCC FQDN. For example `login@pcc-1-2-3-4.ovh.eu` in the example below.
 >
 
 ![01 NSX Connection 02](images/01-nsxt-connection02.png){.thumbnail}
@@ -151,6 +151,6 @@ You have just seen the default configuration. You can refer to the other OVHclou
 
 [Managing segments in NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

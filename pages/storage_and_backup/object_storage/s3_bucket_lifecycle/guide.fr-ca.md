@@ -220,7 +220,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 **Exemple** : Obtenir la date d'expiration via le CLI
 
 ```bash
-~$ aws s3api head-bucket --bucket $bucket --key $object_name
+~$ aws s3api head-object --bucket $bucket --key $object_name
 {
   ...
   "Expiration" : "expiry-date=\"Fri, 21 Dec 2024 00:00:00 GMT\", rule-id=\"123456789\"",

@@ -26,11 +26,11 @@ Nutanix Leap allows:
 ## Requirements
 
 - Two Nutanix clusters in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via **Prism Central**
 - An interconnection between two clusters, for example using these technologies:
     - via an IPsec VPN as detailed in the guide [Interconnecting IPsec between two sites](/pages/hosted_private_cloud/nutanix_on_ovhcloud/44-ipsec-interconnection)
-    - or via a [vRack](https://www.ovhcloud.com/es/network/vrack/) connection.
+    - or via a [vRack](/links/network/vrack) connection.
 - **Prism Central** needs more resources depending on the mode:
     - Single Mode: 4GB additional RAM.
     - Scale Mode with 3 **Prism Central** virtual machines: 8 GB additional RAM per virtual machine.
@@ -139,7 +139,7 @@ From the main menu, click `Availability Zones`{.action} on the `Administration` 
 ### Implementation of replication from Canada to France
 
 > [!warning]
-> Virtual machines that will be protected with **Nutanix Leap** should not be members of a **Domain Protection** created from **Prism Element**. There is a procedure on the Nutanix website to perform this migration: [Migrating from a Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html){.external}. 
+> Virtual machines that will be protected with **Nutanix Leap** should not be members of a **Domain Protection** created from **Prism Element**. There is a procedure on the Nutanix website to perform this migration: [Migrating from a Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html). 
 >
 
 #### Creating a category containing the virtual machines to replicate
@@ -505,10 +505,10 @@ The virtual machine that is a member of the disaster recovery plan will boot to 
 
 [IPsec interconnect between two sites](/pages/hosted_private_cloud/nutanix_on_ovhcloud/44-ipsec-interconnection)
 
-[OVHcloud vRack](https://www.ovhcloud.com/es/network/vrack/)
+[OVHcloud vRack](/links/network/vrack)
 
 [Nutanix Leap documentation](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

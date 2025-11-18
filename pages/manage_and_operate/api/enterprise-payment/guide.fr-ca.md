@@ -10,9 +10,9 @@ Nous allons décrire une partie du cycle de gestion de votre paiement et de votr
 
 ## Prérequis
 
-* Être connecté aux [API OVHcloud](https://api.ovh.com/){.external}.
-* Avoir [créé ses identifiants pour l'API OVHcloud](/pages/manage_and_operate/api/first-steps){.external}.
-* Avoir [créé des sous-comptes pour l'API OVHcloud si nécéssaire](/pages/manage_and_operate/api/account){.external}.
+* Être connecté aux [API OVHcloud](/links/api).
+* Avoir [créé ses identifiants pour l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
+* Avoir [créé des sous-comptes pour l'API OVHcloud si nécéssaire](/pages/manage_and_operate/api/account).
 * Avoir a minima le niveau de support de type Business ou Enterprise.
 
 ## En pratique

@@ -8,7 +8,7 @@ updated: 2025-04-28
 
 OVHcloud mette a tua disposizione opzioni per rafforzare la sicurezza del tuo Spazio Cliente OVHcloud e dei tuoi servizi.
 
-In particolare, è possibile limitare l'accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+In particolare, è possibile limitare l'accesso al tuo [Spazio Cliente OVHcloud](/links/manager).
 L'attivazione di questa opzione, associata alla protezione del tuo account con una [doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), permette di proteggere in modo ottimale il tuo Spazio Cliente OVHcloud contro eventuali tentativi di intrusione.
 
 **Questa guida ti mostra come proteggere il tuo account OVHcloud limitando gli indirizzi IP autorizzati ad accedervi**
@@ -20,8 +20,8 @@ L'attivazione di questa opzione, associata alla protezione del tuo account con u
 
 ## Prerequisiti
   
-- Avere accesso allo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](/pages/account_and_service_management/account_information/manage-ovh-password)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+- Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](/pages/account_and_service_management/account_information/manage-ovh-password).
 
 ## Procedura
 
@@ -34,7 +34,7 @@ Esistono due tipi di indirizzi IP:
 
 Per utilizzare l'opzione di restrizione IP dello Spazio Cliente OVHcloud è necessario inserire **solo** il tuo indirizzo IP pubblico.
 
-Per recuperare l'indirizzo IP pubblico di un dispositivo che sarà autorizzato ad accedere al tuo Spazio Cliente OVHcloud, accedi al sito [whatismyip.com](https://www.whatismyip.com/){.external} (non gestito da OVHcloud).
+Per recuperare l'indirizzo IP pubblico di un dispositivo che sarà autorizzato ad accedere al tuo Spazio Cliente OVHcloud, accedi al sito [whatismyip.com](https://www.whatismyip.com/) (non gestito da OVHcloud).
 
 Annota l'indirizzo IP che appare e ripeti l'operazione per ogni dispositivo che sarà autorizzato ad accedere al tuo Spazio Cliente OVHcloud.
 
@@ -78,7 +78,7 @@ Per l'implementazione delle restrizioni IP sono presenti due sezioni:
 >
 > Nella sezione `Regola predefinita`{.action}, conferma **mai** la regola di default in `Rifiutato`{.action} **senza aver autorizzato***correttamente e preventivamente almeno uno dei tuoi indirizzi IP pubblici nella sezione `IP configurati`. 
 >
-> In caso contrario, bloccherai **assolutamente tutti gli IP pubblici (inclusi i tuoi)** senza alcuna eccezione. Nessuno avrà più accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e dovrai effettuare una procedura amministrativa per sbloccare la tua situazione.
+> In caso contrario, bloccherai **assolutamente tutti gli IP pubblici (inclusi i tuoi)** senza alcuna eccezione. Nessuno avrà più accesso al tuo [Spazio Cliente OVHcloud](/links/manager) e dovrai effettuare una procedura amministrativa per sbloccare la tua situazione.
 >
 > Prestare la massima attenzione su questo punto.
 >

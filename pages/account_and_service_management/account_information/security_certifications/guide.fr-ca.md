@@ -33,7 +33,6 @@ We monitor the new versions of ISO27017, ISO27018 and ISO27701 actually under re
 | AI Deploy | yes | 
 | AI Notebooks | yes | 
 | AI Training | yes | 
-| Data Processing | yes | 
 | Kubernetes | yes |
 | Search engine software platform | yes | 
 | Timeseries | yes |

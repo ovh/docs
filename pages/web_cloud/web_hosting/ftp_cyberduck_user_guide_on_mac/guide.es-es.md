@@ -27,12 +27,12 @@ Para descargar Cyberduck, acceda al [sitio web oficial](https://cyberduck.io/) d
 
 ## Requisitos
 
-- Tener contratado un plan de hosting [web hosting](/links/web/hosting){.external}.
+- Tener contratado un plan de hosting [web hosting](/links/web/hosting).
 - Haber descargado e instalado la aplicación Cyberduck en su ordenador.
 
 > [!primary]
 >
-> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
+> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
 
 ## Procedimiento
 

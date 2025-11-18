@@ -1,7 +1,7 @@
 ---
 title: "Cómo utilizar las políticas de IAM con la API de OVHcloud (EN)"
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2024-08-21
+updated: 2025-10-10
 ---
 
 ## Objective
@@ -42,7 +42,7 @@ Resources, resource groups and actions needed to create a policy will be describ
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
+<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -103,7 +103,7 @@ Items in policies are defined by URNs. These URNs are defined by the following p
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-The URNs and actions can end with a `*` wildcard character. This allows referring to multiple resources, identities or actions in a single line.
+The resources URNs and actions can end with a `*` wildcard character. This allows referring to multiple resources or actions in a single line.
 
 *Example of a resource URN with a wildcard :*
 
@@ -126,6 +126,7 @@ The URNs and actions can end with a `*` wildcard character. This allows referrin
   - **deny**: Array of actions explicitely denied for the identities regarding the resources. A denied action will be prevent no matter what others policies could allow
   - **except**: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it is necessary to exclude a specific action that otherwise would be included in the wildcard. Contrary to **deny**, **except** is limited to the current policy scope.
 - **permissionsGroups**: List of [permissions groups](/pages/account_and_service_management/account_information/iam-permission-groups) applied to this policy.
+- **conditions**: List conditions applied to the policy
 - **expiredAt**: Date after which the policy will be disabled.
 - **createdAt**: Creation date of the policy.
 - **updateAt**: Last update date of the policy.
@@ -288,6 +289,84 @@ Check it via `GET /iam/policy`:
 
 The policies have been created successfully. Now, "***user1***" can **carry out reboots and create snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***". "***user2***" can **execute any vps action except for the deletion of snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
+#### Conditions
+
+It is possible to add conditions to policies. The policy will only be valid if the conditions are met.
+Conditions are added to an access policy in the following form:
+
+```json
+{
+  "operator": "AND",
+  "conditions": [
+    {
+        "operator": "MATCH",
+        "values": {
+            "resource.Tag(environment)": "prod",
+            "resource.Type": "dnsZone"
+      }
+    },
+    {
+      "operator": "NOT",
+      "conditions": [
+        {
+            "operator": "MATCH",
+            "values": {
+                "date(Europe/Paris).WeekDay.IN": "Saturday,Sunday"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+For example, a policy with this condition is valid if the targeted resources are of type **dnsZone** with the tag **"environment:prod"**, except on **Saturday and Sunday** in the Paris time zone.
+
+The operator field specifies how the conditions will be evaluated:
+
+- **AND**: All conditions must be validated
+- **NOT**: None of the conditions must be validated
+- **OR**: At least one condition must be validated
+- **MATCH**: Condition evaluation operator
+
+The available conditions are:
+
+|       Condition        |                         Operator                          | Data Type |            Description             |                   Example                   |
+| :--------------------: | :--------------------------------------------------------: | :--------: | :--------------------------------: | :-----------------------------------------: |
+|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |  YYYY-MM-DD  |  Filter on calendar days   | "date(America/New_York).Date": "2024-12-25" |
+|  date(location).Hour   | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |     int      |       Filter on hours        |   "date(Europe/Paris).Hour.IN" : "7,8,9"    |
+| date(location).WeekDay | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |    string    | Filter on days of the week | "date(Europe/Berlin).WeekDay.AFTER": "monday" |
+| resource.Tag(tag_key)  |              EQ <br>STARTS_WITH <br>ENDS_WITH              |    string    |        Filter on tags         |      "resource.Tag(environment): "dev"      |
+|     resource.Name      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |    string    | Filter on resource names  |     "resource.Name.Start_with": "vps-"      |
+|     resource.Type      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |    string    |  Filter on resource types  |      "resource.Type.In": "dnsZone,vps"      |
+|       request.IP       |                   EQ <br>IN <br>IN_RANGE                   |    IP v4     |  Filter on client source IP  |    "request.IP.IN_RANGE": "10.23.0.0/16"    |
+
+Dates use time zones based on [IANA database names](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). If not specified, the date will be evaluated in UTC time zone.
+
+The available operators for condition types are:
+
+- **EQ**: The value must exactly match the specified value
+- **BEFORE** or **LT** (less than): The value must be strictly less than
+- **AFTER** or **GE** (greater or equal): The value must be equal to or greater than
+- **GT** (greater than): The value must be strictly greater than
+- **LE** (less or equal): The value must be equal to or less than
+- **IN**: The value must be included in the list
+- **START_WITH**: The value must start with the specified value
+- **END_WITH**: The value must end with the specified value
+- **IN_RANGE**: The value must be in the specified IP subnet
+
+If not specified, the default operator is **EQ**.
+
+#### Policies targeting other OVHcloud customer accounts
+
+Access policies can target other OVHcloud customer accounts.  
+The targeted account of this policy will be able to manage the rights received that way on its own policies, but will never be able to override the rights set on the access policy.
+
+For example, an account **xx1111-ovh** gives rights on `vps:apiovh:ips/*` to account **xx2222-ovh**:  
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to its own users, but will never be able to grant the right `vps:apiovh:reboot`.
+
+Access to the support will still be reserved to the owner of the resource.
+
 ### Identities
 
 Policies apply to users, which can be accounts, users or user groups.
@@ -296,7 +375,7 @@ This section describes how to retrieve or create user for the policy.
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
+<https://api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -383,7 +462,7 @@ This section describes how to retrieve resources information to use in a policy.
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
+<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -442,7 +521,7 @@ To ease the policy management for a large number of resources, it is possible to
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
+<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -535,7 +614,7 @@ These actions are specific to every product, such as rebooting a database server
 
 #### API definition
 
-<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
+<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |

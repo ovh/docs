@@ -34,7 +34,7 @@ Before following the two steps in this guide, we recommend that you get familiar
 
 ### Configure your DNS records on your OVHcloud account
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 The table lists all of the DNS records for the selected domain name.
 
@@ -87,17 +87,17 @@ These steps are performed in the SquareSpace control panel.
 > [!primary]
 >
 > - You can connect your domain name to a trial or paid SquareSpace website. You cannot connect it to an expired site.
-> - If you have an email account associated with your domain name, you can continue using it once the domain is logged in to SquareSpace. Before you connect your domain name, we recommend reading this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/217601877-Using-a-custom-domain-email-you-already-own-with-Squarespace){.external}.
+> - If you have an email account associated with your domain name, you can continue using it once the domain is logged in to SquareSpace. Before you connect your domain name, we recommend reading this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/217601877-Using-a-custom-domain-email-you-already-own-with-Squarespace).
 > - You can use multiple custom domain names for your website. You can connect or save as many as you want.
 > - You cannot connect a custom domain name to SquareSpace if the domain name includes the word “squarespace” or “sqsp”.
 
-To get started, follow the login steps described in step 1 of this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site){.external}.
+To get started, follow the login steps described in step 1 of this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
 
 > [!warning]
 >
 > If you receive the alert message “This domain is already connected to another Squarespace site,” check your other SquareSpace websites to determine which site the domain name is connected to. Then disconnect it from this website.
 
-To continue the process, go to step 2 of this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site){.external}.
+To continue the process, go to step 2 of this [SquareSpace guide](https://support.squarespace.com/hc/en-us/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
 
 If you are using an OVHcloud email solution, or if you plan to subscribe to one of [our email solutions](/links/web/emails), prepare your DNS zone accordingly. Read our guide on “[Configuring an MX record](/pages/web_cloud/domains/dns_zone_mx)”.
 

@@ -1,12 +1,12 @@
 ---
 title: 'Public Cloud Compute - Von der stündlichen auf monatliche Abrechnung umstellen'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnungsart Ihrer Public Cloud Instanz ändern'
-updated: 2023-01-23
+updated: 2025-09-05
 ---
 
 ## Ziel
 
-Wenn Sie eine Public Cloud Instanz erstellen, können Sie wählen, ob die Abrechnung stündlich oder monatlich erfolgen soll. Instanzen mit Stundensatz werden nach dem Verfahren *Pay as you go* abgerechnet, d.h. am Monatsende werden den Nutzern die spezifischen Ressourcen in Rechnung gestellt, die sie verwendet haben.
+Wenn Sie eine Public Cloud Instanz erstellen, können Sie wählen, ob die Abrechnung stündlich oder monatlich erfolgen soll (Ausgenommen sind Public Cloud-Instanzen der dritten Generation, die standardmäßig stundenweise abgerechnet werden und bei deren Erstellung keine monatliche Option angeboten wird). Instanzen mit Stundensatz werden nach dem Verfahren *Pay as you go* abgerechnet, d.h. am Monatsende werden den Nutzern die spezifischen Ressourcen in Rechnung gestellt, die sie verwendet haben.
 
 Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werden zu einem niedrigeren Preis berechnet (bis zu 50% weniger als bei der verbrauchsspezifischen Abrechnung). Wenn Sie ursprünglich die stündliche Abrechnung ausgewählt haben, können Sie jederzeit zur monatlichen Abrechnung wechseln.
 
@@ -25,12 +25,16 @@ Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werde
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/public-cloud).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 ### Über das OVHcloud Kundencenter
+
+> [!warning]
+> Das folgende Verfahren funktioniert nicht bei Instanzen der dritten Generation (Beispiel: B3-32). Um die monatliche Abrechnung für diese Art von Instanz zu erhalten, müssen Sie einen [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) für diese Instanz erstellen.
+>
 
 Wählen Sie im [OVHcloud Kundencenter](/links/manager) unter `Instances`{.action} die Instanz für welche Sie das Abrechnungsintervall ändern möchten. Öffnen Sie das Kontextmenü indem Sie auf `...`{.action} rechts neben der Instanz klicken. Sie sehen dann die Option `Auf monatliche Abrechnung umstellen`{.action}:
 
@@ -54,7 +58,7 @@ Ersetzen Sie "InstanceID" mit der ID der entsprechenden Instanz. Diese Kennung k
 
 ### Über die OVHcloud API
 
-Loggen Sie sich gemäß der [entsprechenden Anleitung](/pages/manage_and_operate/api/first-steps) in das [OVHcloud API Interface](https://eu.api.ovh.com/) ein und folgen Sie den nachstehenden Schritten.
+Loggen Sie sich gemäß der [entsprechenden Anleitung](/pages/manage_and_operate/api/first-steps) in das [OVHcloud API Interface](/links/api) ein und folgen Sie den nachstehenden Schritten.
 
 Verwenden Sie folgenden Aufruf:
 
@@ -65,7 +69,7 @@ Verwenden Sie folgenden Aufruf:
 
 ### Mit einem Terraform-Skript
 
-Dies ist möglich dank des `metadata` [Attributs](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} aus der Ressource [*openstack_compute_instance_v2*](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Dies ist möglich dank des `metadata` [Attributs](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) aus der Ressource [*openstack_compute_instance_v2*](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
 
 ```terraform
 metadata = {

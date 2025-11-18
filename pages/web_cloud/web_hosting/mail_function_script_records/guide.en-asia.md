@@ -1,7 +1,7 @@
 ---
 title: "Monitoring and managing automated emails in your web hosting plan"
 excerpt: "Find out how to monitor and manage automated emails sent from your OVHcloud web hosting plan"
-updated: 2024-12-16
+updated: 2025-10-21
 ---
 
 ## Objective 
@@ -12,7 +12,7 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 >
 > This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting plan](/links/web/hosting) using the PHP "mail()" function.
 >
-> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](/links/web/hosting){.external} , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](/links/web/hosting) , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,16 +24,37 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 
 # Requirements
 
-- An [OVHcloud web hosting plan](/links/web/hosting){.external} solution.
-- Access to the [OVHcloud Control Panel](/links/manager){.external}.
+- An [OVHcloud web hosting plan](/links/web/hosting) solution.
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
-You can monitor and manage automated emails from your OVHcloud web hosting plan in your [OVHcloud Control Panel](/links/manager){.external}. Once you have logged in, go to the `Web Cloud`{.action} section, open `Hosting plans`{.action} and select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
+You can monitor and manage automated emails from your OVHcloud web hosting plan in your [OVHcloud Control Panel](/links/manager).
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
+Click on the tabs below to view each of the **3** steps.
 
-This page enables you to monitor and manage automated emails sent from your [OVHcloud web hosting plan](/links/web/hosting).
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `More`{.action} tab, then click `Email scripts`{.action}.
+>>
+>> ![More tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more.png){.thumbnail}
+>>
+>> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
+>>
+>> This page enables you to monitor and manage automated emails sent from your [OVHcloud web hosting plan](/links/web/hosting).
 
 ### Overview of the “Email scripts” section
 

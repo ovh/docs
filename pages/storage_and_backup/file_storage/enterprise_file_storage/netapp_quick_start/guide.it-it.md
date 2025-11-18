@@ -17,7 +17,7 @@ In questa guida, scopri come iniziare a utilizzare la soluzione Enterprise File 
 ## Prerequisiti
 
 - Disporre di una soluzione OVHcloud Enterprise File Storage
-- Essere connesso alla pagina delle [API OVHcloud](https://api.ovh.com/)
+- Essere connesso alla pagina delle [API OVHcloud](/links/api)
 - Saper [eseguire il mount di un NAS tramite NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs)
 
 ## L'essenziale
@@ -238,6 +238,6 @@ Puoi eliminare il tuo volume utilizzando la strada API seguente:
 
 ## Per saperne di più
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

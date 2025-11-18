@@ -1,36 +1,29 @@
 ---
 title: Load Balancer API Quick Reference
 excerpt: Quick description of the different API functions used to manage the Load Balancer
-updated: 2022-04-04
+updated: 2025-09-26
 ---
 
 ## List of API functions
-This section briefly describes the main functions of the API for the OVH Load Balancer under /ipLoadbalancing
+
+This section briefly describes the main functions of the API for the OVHcloud Load Balancer under /ipLoadbalancing.
+
+For a comprehensive reference to the API functions of the OVHcloud Load Balancer service, please consult [this detailed guide](/pages/network/load_balancer/use_api_details).
+
+> [!primary]
+>
+> The Frontends, Farms and Servers are specific to the protocol (HTTP, TCP or UDP) in which they are defined.
+> Compatibility between these components is only possible within the same protocol.
+> For example, an HTTP Frontend can only be paired with an HTTP Farm, and cannot be used with a UDP Farm.
+> 
 
 > [!warning]
 >
-> Attention, for compatibility reasons the entry point of the old OVH Load Balancer system is still present in the /ip/loadBalancing API, not to be confused with the new /ipLoadbalancing.
-> 
-
-For a complete reference to the API functions of the OVH Load Balancer service, it's [here](/pages/network/load_balancer/use_api_details).
-
-> [!primary]
->
-> The Frontend, Farm and Server are specific to the
-> protocol (among HTTP, TCP or UDP) in which they are defined.
-> Although they can be "combined" with each other, this is only possible within the same protocol.
-> of the same protocol. Thus, it is not possible to use a Frontend
-> UDP with an HTTP Farm. But it is possible (in the absence of other
-> limitation) to use an HTTP Frontend with an HTTP Farm.
+> Each category that falls under Frontend, Farm and Server management consists of 3 API functions, one for each protocol (HTTP, TCP or UDP).
+> You must execute the API function that corresponds to the specific protocol of the desired service.
 > 
 
 ## Frontend
-
-> [!primary]
->
-> As you can see, each category consists of 3 API functions.
-> It is necessary to properly execute the API function that corresponds to the type of service you want.
-> 
 
 ### Return the list of IDs of existing frontends
 
@@ -79,12 +72,6 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 
 ## Server farm
 
-> [!primary]
->
-> As for the frontend, each category is composed of 3 API functions.
-> It is necessary to execute the API function that corresponds to the type of service desired.
-> 
-
 ### Return the list of IDs of existing farms
 
 > [!api]
@@ -131,12 +118,6 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > 
 
 ## Server
-
-> [!primary]
->
-> As for the frontend and farm, each category is composed of 3 API functions.
-> It is necessary to properly execute the API function that corresponds to the type of the   desired service.
-> 
 
 ### Return the list of server IDs linked to a particular farm
 

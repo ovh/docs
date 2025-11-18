@@ -17,7 +17,7 @@ Unser Hosted Private Cloud Angebot entspricht nicht mehr Ihren Anforderungen? Od
 
 ## In der praktischen Anwendung
 
-Bei Hosted Private Cloud gibt es keine Mindestvertragslaufzeit. Wie jedoch in den [Besonderen Geschäftsbedingungen](https://www.ovh.de/support/agb-vertrage/){.external} beschrieben, ist jeder angebrochene Monat fällig und im Voraus zu bezahlen.
+Bei Hosted Private Cloud gibt es keine Mindestvertragslaufzeit. Wie jedoch in den [Besonderen Geschäftsbedingungen](https://www.ovh.de/support/agb-vertrage/) beschrieben, ist jeder angebrochene Monat fällig und im Voraus zu bezahlen.
 
 >[!warning]
 >
@@ -26,7 +26,7 @@ Bei Hosted Private Cloud gibt es keine Mindestvertragslaufzeit. Wie jedoch in de
 
 ### Schritt 1: Beantragen Sie die Kündigung in Ihrem OVHcloud Kundencenter
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} an, gehen Sie in den Bereich `Hosted Private Cloud`{.action} (1), klicken Sie auf `Private Cloud`{.action} (2) und wählen Sie die Private Cloud aus der Liste aus (3), die Sie kündigen möchten.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an, gehen Sie in den Bereich `Hosted Private Cloud`{.action} (1), klicken Sie auf `Private Cloud`{.action} (2) und wählen Sie die Private Cloud aus der Liste aus (3), die Sie kündigen möchten.
 
 Klicken Sie im Reiter „Allgemeine Informationen“ in der Tabelle  „Dienstverwaltung“ auf den Button `...`{.action} (4) rechts neben dem Datum der Verlängerung. Klicken Sie dann auf `Dienst löschen`{.action} (5).
 

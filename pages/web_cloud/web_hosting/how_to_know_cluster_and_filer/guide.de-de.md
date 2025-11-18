@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Cluster und Filer eines Webhostings finden"
 excerpt: "Erfahren Sie hier, wie Sie die Cluster-Nummer und die Filer-Nummer Ihres Webhostings herausfinden"
-updated: 2025-05-20
+updated: 2025-08-12
 ---
 
 ## Ziel
@@ -18,37 +18,6 @@ Während der Verwendung Ihres Webhostings müssen Sie für bestimmte Anwendungsf
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
-
-### Nummer eines Webhosting Clusters
-
-Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
-
-> [!tabs]
-> **Schritt 1**
->>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Schritt 3**
->>
->> Klicken Sie auf den Tab `FTP - SSH`{.action}.
->>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->> 
-> **Schritt 4**
->>
->> Auf dieser Seite finden Sie die *Cluster*-Nummer des Webhostings unter **FTP- und SFTP-Server** (3 Ziffern von `0` bis `9`).
->>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
-
-### Nummer eines Webhosting Filers
 
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
@@ -67,9 +36,9 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 > **Schritt 3**
 >>
->> Finden Sie in **Allgemeine Informationen** die Nummer unter `Filer`{.action}.
+>> Suchen Sie in der Randleiste **Allgemeine Informationen** auf der angezeigten Seite die Cluster-Nummer unter **Cluster** (3 Ziffern von `0` bis `9`) und die Filer-Nummer unter **Filer**.
 >>
->> ![Filer-Nummer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
+>> ![Cluster-Nummer und Filer-Nummer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ## Weiterführende Informationen
 

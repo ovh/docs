@@ -18,9 +18,9 @@ Your database usage may result in anomalies on your website or error messages in
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
 - access to the [OVHcloud Control Panel](/links/manager)
-- an OVHcloud database service: [Start SQL](https://www.ovh.co.uk/web-hosting/sql-options.xml) or [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/)
+- an OVHcloud database service: [Start SQL](/links/web/hosting-options-startsql) or [Web Cloud Databases](/links/web/databases)
 
 ## Instructions
 
@@ -99,7 +99,7 @@ There are three ways you can unblock your database in this situation.
 
 #### Method 1: Upgrade your subscription
 
-If you have a **Starter** or **Personal** Web Hosting plan, we recommend that you switch to the [high-performance offer](https://www.ovh.co.uk/web-hosting/). This subscription change will increase the size of your database which will automatically reopen it. This method is the simplest and does not require any particular technical expertise.
+If you have a **Starter** or **Personal** Web Hosting plan, we recommend that you switch to the [high-performance offer](/links/web/hosting). This subscription change will increase the size of your database which will automatically reopen it. This method is the simplest and does not require any particular technical expertise.
 
 > [!warning]
 >
@@ -118,7 +118,7 @@ If you are already subscribing to a **Performance** offer, refer to [method 2](#
 
 You can also migrate your data to a new database:
 
-- Order a larger [database service](https://www.ovh.co.uk/cloud/cloud-databases/) if necessary, then [create the new database](/pages/web_cloud/web_hosting/sql_create_database);
+- Order a larger [database service](/links/web/databases) if necessary, then [create the new database](/pages/web_cloud/web_hosting/sql_create_database);
 - [Duplicate the content of the old database](/pages/web_cloud/web_hosting/copy_database) to the new database **or** perform an [export of your data](/pages/web_cloud/web_hosting/sql_database_export), then [import your data](/pages/web_cloud/web_hosting/sql_importing_mysql_database) in the new database;
 - Integrate the credentials of the new database into the [configuration file](#config_file) of your site.
 
@@ -149,7 +149,7 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 ### RAM overflows (Web Cloud Databases only)
 
-The following message in the `Web Cloud Databases`{.action} section of your [OVHcloud Control Panel](/links/manager) indicates that your [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
+The following message in the `Web Cloud Databases`{.action} section of your [OVHcloud Control Panel](/links/manager) indicates that your [Web Cloud Databases](/links/web/databases) server has consumed too much resources on the OVHcloud infrastructure:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
@@ -157,7 +157,7 @@ In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_clo
 
 > [!warning]
 >
-> To increase the amount of RAM, the database needs to be a standalone service and not one of those included with a Performance web hosting plan. If you want to increase the amount of RAM of a database included in the [Performance offers](/links/web/hosting-performance-offer){.external}, you first need to detach it.
+> To increase the amount of RAM, the database needs to be a standalone service and not one of those included with a Performance web hosting plan. If you want to increase the amount of RAM of a database included in the [Performance offers](/links/web/hosting-performance-offer), you first need to detach it.
 > 
 > To detach the database, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the web hosting plan that has the database activated.
 >
@@ -244,7 +244,7 @@ In this situation, [check the credentials entered](/pages/web_cloud/web_cloud_da
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-The maximum number of active connections for databases delivered with a shared hosting ([Start SQL](https://www.ovh.co.uk/cloud/cloud-databases/)) is **30**.
+The maximum number of active connections for databases delivered with a shared hosting ([Start SQL](/links/web/databases)) is **30**.
 
 This number increases to **200** for the [Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (This setting can be modified in the `Configuration`{.action} section of your database service.)
 

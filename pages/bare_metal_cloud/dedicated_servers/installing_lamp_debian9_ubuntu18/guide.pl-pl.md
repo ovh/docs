@@ -16,7 +16,7 @@ Uruchomienie serwera www i powiązanych z nim aplikacji pozwala serwerowi cloud 
 
 ## Wymagania początkowe
 
-- Serwer [dedykowany](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pl/vps/) lub instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
+- Serwer [dedykowany](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps) lub instancja [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny do Twojej usługi przez SSH
 
@@ -237,7 +237,7 @@ Aby dowiedzieć się więcej, zapoznaj się z przewodnikiem "[Modyfikacja strefy
 >
 > Aby zbudować bezpieczne połączenia (`https`), serwer www musi być zabezpieczony przez Oficjalny Organ Certyfikacyjny jako "[Let's Encrypt](https://letsencrypt.org/)", który oferuje bezpłatne certyfikaty. Musisz zainstalować narzędzie klienta (takie jak Certbot) i odpowiednio skonfigurować Apache. Bez tego etapu Twoja strona WWW lub aplikacja mogą akceptować tylko niezaszyfrowane zapytania `http`.
 > 
-> OVHcloud oferuje również rozwiązanie [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Więcej informacji znajdziesz w [dokumentacji](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
+> OVHcloud oferuje również rozwiązanie [SSL Gateway](/links/web/ssl-gateway). Więcej informacji znajdziesz w [dokumentacji](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
 Upewnij się najpierw, czy Twoja domena jest poprawnie wpisana w strefie DNS, czyli zaznaczona na adres IP Twojego serwera.

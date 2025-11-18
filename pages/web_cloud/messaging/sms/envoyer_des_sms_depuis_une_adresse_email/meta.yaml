@@ -1,4 +1,5 @@
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +7,7 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
+- pt-pt
 id: 9e3022f0-c887-46c6-bcd5-8a21c74ba5a0
 full_slug: sms-sending-from-email-address
+translation_banner: true

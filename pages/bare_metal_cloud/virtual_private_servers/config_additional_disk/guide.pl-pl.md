@@ -1,12 +1,8 @@
 ---
 title: 'Konfiguracja dodatkowego dysku'
 excerpt: "Dowiedz się, jak dodać i skonfigurować dodatkową przestrzeń dyskową na serwerze VPS"
-updated: 2023-02-15
+updated: 2025-07-24
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -16,9 +12,13 @@ Wraz z ofertą VPS OVHcloud możesz dodać bezpieczną przestrzeń dyskową jako
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie [serwera VPS](/links/bare-metal/vps) na koncie OVHcloud
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny przez SSH lub RDP do serwera VPS
+
+> [!warning]
+> Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## W praktyce
 
@@ -35,9 +35,9 @@ Zapisz informacje dotyczące płatności i kliknij na `Zamów`{.action}. Po zain
 ### Zamontuj nową przestrzeń dyskową
 
 > [!warning]
-> OVHcloud świadczy usługi, za które jesteś odpowiedzialny w związku z ich konfiguracją i zarządzaniem. Jesteś więc odpowiedzialny za ich prawidłowe funkcjonowanie.
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Do Ciebie należy zatem zapewnienie ich prawidłowego działania.
 >
->Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub przedyskutuj problem z naszą społecznością użytkowników na stronie https://community.ovh.com/en/. OVHcloud nie może udzielić Ci wsparcia technicznego w tym zakresie.
+> Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z [dostawcą usług specjalistycznych](/links/partner) lub kontakt z [naszą społecznością użytkowników](/links/community).
 >
 
 #### Na serwerze VPS Linux
@@ -219,19 +219,19 @@ Wpisz `cmd` i kliknij `OK`{.action}, aby otworzyć aplikację wiersza poleceń.
 
 W wierszu zamówień otwórz DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Aby skonfigurować dysk online, użyj następującej serii poleceń DISKPART:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -245,19 +245,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -269,7 +269,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -297,10 +297,10 @@ W ostatnim oknie kliknij `Zakończ`{.action}, aby sformatować dysk. Będzie on 
 
 ### Zrezygnuj z opcji dodatkowego dysku
 
-W zakładce `Strona główna`{.action} przewiń ekran do strefy zatytułowanej **Podsumowanie opcji**. Kliknij `...`{.action} naprzeciwko opcji "Dodatkowe dyski". Kliknij `Zrezygnuj`{.action} z menu PPM.
+W zakładce `Strona główna`{.action}, w sekcji **Twoja konfiguracja** kliknij `...`{.action} obok opcji `Dodatkowe dyski` i kliknij `Rezygnacja`{.action}.
 
 ![rozwiązanie dodatkowego dysku](images/disk_vps02.png){.thumbnail}
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

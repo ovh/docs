@@ -1,11 +1,11 @@
 ---
 title: "Hyper-V mit Additional IPs in einem vRack verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Hyper-V mit Additional IPs in einem vRack konfigurieren"
-updated: 2021-02-25
+updated: 2025-07-22
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+> Die folgenden Informationen beziehen sich auf die Konfiguration von Additional IPv4-Adressen im vRack. Sie können auch Additional IPv6-Adressen in Ihrem vRack konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) verwenden.
 >
 
 ## Ziel
@@ -17,13 +17,13 @@ updated: 2021-02-25
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account (vRack-kompatibel), auf dem Windows Server installiert ist.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben ein ISO-Image für das zu installierende Betriebssystem der VM (CentOS 7 wird in dieser Anleitung beispielhaft verwendet).
-- Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
+- Sie haben ein [vRack](/links/network/vrack) in Ihrem Kunden-Account eingerichtet.
 - Sie verfügen über einen IP-Block von 4 oder mehr IP-Adressen.
 
 > [!warning]
-> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
 >
-> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 
 ## In der praktischen Anwendung
 

@@ -20,7 +20,7 @@ El gestor de actualizaciones de VMware permite mantener los hosts actualizados i
 ## Requisitos
 
 - Ser contacto administrador del [Hosted Private Cloud Infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) para recibir las claves de conexión.
-- Tener un usuario activo con los permisos específicos de NSX (creado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)).
+- Tener un usuario activo con los permisos específicos de NSX (creado en el [área de cliente de OVHcloud](/links/manager)).
 
 ## Procedimiento
 

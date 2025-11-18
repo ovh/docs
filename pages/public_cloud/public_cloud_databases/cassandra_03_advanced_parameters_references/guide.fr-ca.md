@@ -1,7 +1,7 @@
 ---
 title: Cassandra - Références des paramètres avancés (EN)
 excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Cassandra according to your use cases
-updated: 2023-02-06
+updated: 2025-07-07
 ---
 
 <style>
@@ -27,15 +27,24 @@ updated: 2023-02-06
 }
 </style>
 
+> [!warning]
+>
+> **Important Notice – End of Sale (EOS)**
+>
+> Sale of our Cassandra managed database service will end on 15 September 2025.
+>
+> Existing services will continue to operate until the End Of Life (EOL) on 15 December 2025.
+>
+
 ## Objective
 
 This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Cassandra according to your use cases.
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account   
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account   
 - A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)   
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) or to the [OVHcloud API](https://api.ovh.com/console/)   
+- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](https://api.ovh.com/console/)   
 
 ## Instructions
 
@@ -84,6 +93,6 @@ Below you can find a summary of every configuration option available for Cassand
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

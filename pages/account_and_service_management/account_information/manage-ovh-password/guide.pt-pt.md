@@ -39,7 +39,7 @@ A segurança das suas soluções depende da eficácia da palavra-passe de acesso
 
 Há vários métodos eficazes para criar palavras-passe. Recomendamos-lhe, nomeadamente, o **método das primeiras letras** e o **método fonético**.
 
-Para ficar a saber mais, consulte a secção [Quer saber mais?](/pages/account_and_service_management/account_information/manage-ovh-password#quer-saber-mais){.external} na parte de baixo deste guia.
+Para ficar a saber mais, consulte a secção [Quer saber mais?](/pages/account_and_service_management/account_information/manage-ovh-password#quer-saber-mais) na parte de baixo deste guia.
 
 ### Utilizar um gestor de palavras-passe
 
@@ -113,6 +113,6 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 ## Quer saber mais?
 
-[O gestor de palavras-passe KeePass](https://keepass.info/){.external}
+[O gestor de palavras-passe KeePass](https://keepass.info/)
 
 Fale com nossa [comunidade de utilizadores](/links/community).

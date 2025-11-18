@@ -13,8 +13,8 @@ The OVH Load Balancer acts by default as a proxy. It can also be configured to r
 
 ## Requirements
 
-- an [OVH Load Balancer](https://www.ovh.com.au/solutions/load-balancer/){.external}
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/){.external}, or the [OVH API](https://ca.api.ovh.com/){.external}
+- an [OVH Load Balancer](https://www.ovh.com.au/solutions/load-balancer/)
+- access to the [OVH Control Panel](https://ca.ovh.com/auth/), or the [OVH API](/links/api)
 
 ## Instructions
 
@@ -35,7 +35,7 @@ Custom redirections can be specified via the OVH Control Panel and via the API, 
 
 ### Add a custom redirection via the OVH Control Panel.
 
-You can define custom redirections from the [OVH Control Panel](https://ca.ovh.com/auth/){.external} by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
+You can define custom redirections from the [OVH Control Panel](https://ca.ovh.com/auth/) by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
 
 You can either do this on a new front-end as you create it, or on an existing front-end.
 
@@ -67,7 +67,7 @@ Once the front-end has been configured, click `Add`{.action} or `Edit`{.action},
 
 ### Add a custom redirection via the API.
 
-In the [OVH API](https://ca.api.ovh.com/){.external}, redirections are specified in the redirectLocation character chain.
+In the [OVH API](/links/api), redirections are specified in the redirectLocation character chain.
 
 * If you are creating a new front-end:
 

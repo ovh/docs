@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to install a custom SSL certificate"
 excerpt: "Find out how to import and install a custom SSL certificate on your OVHcloud Web Hosting plan"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objective
@@ -51,7 +51,7 @@ Replace the terms `my_private` and `your_file_name` with the file names of your 
 
 Once the command is launched, the terminal will ask you for each of the following information (for yourself, your company or your association). Once you have answered the question asked, then press the `ENTER`{.action} key on your keyboard to display the following question:
 
-- `Country Name (2 letter code) [AU]`: Enter the **Country Code** of your country in upper case. If you need to, you can find the list of all **Country Codes** [here](https://www.iban.com/country-codes){.external}.
+- `Country Name (2 letter code) [AU]`: Enter the **Country Code** of your country in upper case. If you need to, you can find the list of all **Country Codes** [here](https://www.iban.com/country-codes).
 - `State or Province Name (full name) [Some-State]`: Enter the name of your region (or state if you are in the USA, for example) in upper-case letters.
 - `Locality Name (eg, city) []`: Enter the name of your city in upper case.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: Enter the name of your organization, company, or association. **If you are an individual, do not answer this question and press the `ENTER`{.action} key on your keyboard to display the next question**.
@@ -150,6 +150,18 @@ If you start reading this guide in this step because you already have an externa
 
 - Point to your web hosting plan’s IP address.
 - Are declared as multisites on your web hosting plan.
+
+> [!primary]
+>
+> **Information on migrating to the new SSL certificate management interface:**
+>
+> The rest of this guide is aimed at customers whose web hosting services have not yet migrated to the new SSL certificate management interface.
+> To check if this migration has been carried out, go to your Web Hosting plan in the OVHcloud Control Panel, and check the `SSL certificates` tab.
+> If the `SSL certificates` tab is present, your service has already migrated to the new management interface. If this is the case, please refer to [this guide](/pages/web_cloud/web_hosting/ssl_management) directly to manage your SSL certificate.
+>
+> For technical reasons, not all of our customers' web hosting services can be migrated at once. This migration process is carried out automatically over a period of a few weeks, with no impact on the operation of your web hosting services, and no intervention or action required on your part.
+>
+> All web hosting services will eventually work with the new SSL certificate management interface.
 
 Also check the following:
 

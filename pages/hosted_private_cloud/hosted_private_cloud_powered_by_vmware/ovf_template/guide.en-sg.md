@@ -14,13 +14,13 @@ Windows VMs deployed from a template automatically use the SPLA licences provide
 
 > [!primary]
 > 
-> You can find the prices of the images offered by OVHcloud on this [page](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/images-licenses/).
+> You can find the prices of the images offered by OVHcloud on this [page](/links/hosted-private-cloud/vmware-images-licenses).
 >
 
 ## Requirements
 
 - Web client access (HTML5)
-- [active Windows licences](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-licence){.external} (activate via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, in the `Windows licence`{.action} tab for the datacentre)
+- [active Windows licences](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-licence) (activate via the [OVHcloud Control Panel](/links/manager), in the `Windows licence`{.action} tab for the datacentre)
 
 ## Instructions
 

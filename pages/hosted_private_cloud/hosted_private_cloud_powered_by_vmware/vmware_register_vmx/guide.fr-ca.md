@@ -13,7 +13,7 @@ Suite à un incident, des machines virtuelles n'apparaissent plus dans votre inv
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](/links/manager))
 
 ## En pratique
 
@@ -51,9 +51,9 @@ Dans le cas où vous auriez plusieurs dizaines de VM et/ou datastores, il est po
 
 #### Avec PowerCLI
 
-VMware fournit les PowerCLI pour les administrateurs VMware utilisant PowerShell : [Installez PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
+VMware fournit les PowerCLI pour les administrateurs VMware utilisant PowerShell : [Installez PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
 
-Vous pouvez ensuite utiliser le script ci-dessous, adapté de celui écrit par [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
+Vous pouvez ensuite utiliser le script ci-dessous, adapté de celui écrit par [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/).
 
 ```powershell
 function register-vmxX {

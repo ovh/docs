@@ -16,7 +16,7 @@ updated: 2024-02-27
 >
 
 En el [área de cliente de OVHcloud](/links/manager) puede especificar un modo de arranque de una lista predefinida: disco principal o rescue.
-A través de la [API de OVHcloud](https://api.ovh.com/), también puede definir scripts personalizados.
+A través de la [API de OVHcloud](/links/api), también puede definir scripts personalizados.
 
 Utilizar un script personalizado puede ser interesante en los siguientes casos:
 
@@ -26,7 +26,7 @@ Utilizar un script personalizado puede ser interesante en los siguientes casos:
 ## Requisitos
 
 - Un [servidor dedicado](/links/bare-metal/bare-metal) **listo para ser booteado/reiniciado** en su cuenta de OVHcloud.
-- Tener acceso a la [API de OVHcloud](https://api.ovh.com/).
+- Tener acceso a la [API de OVHcloud](/links/api).
 
 > [!warning]
 >
@@ -86,7 +86,7 @@ Ya puede reiniciar el servidor y este utilizará su script [iPXE](https://ipxe.o
 
 ### Otros modos de arranque <a name="leaveIpxeScript"></a>
 
-En cualquier momento puede volver al disco o al modo de rescate desde el [área de cliente de OVHcloud](/links/manager) (consulte nuestra guía "[Activar y utilizar el modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)") o a través de la [API de OVHcloud](https://api.ovh.com/).
+En cualquier momento puede volver al disco o al modo de rescate desde el [área de cliente de OVHcloud](/links/manager) (consulte nuestra guía "[Activar y utilizar el modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)") o a través de la [API de OVHcloud](/links/api).
 
 #### Cambiar a disco <a name="switchToDisk"></a>
 

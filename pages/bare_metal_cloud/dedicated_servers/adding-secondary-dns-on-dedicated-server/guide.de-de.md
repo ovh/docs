@@ -17,7 +17,7 @@ Wenn Sie Ihren dedizierten Server als DNS-Server konfigurieren, können Sie den 
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
-- Sie haben adminstrativen Zugriff auf einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie haben adminstrativen Zugriff auf einen [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
@@ -77,4 +77,4 @@ Nachdem Sie den TXT-Eintrag erfolgreich zur DNS-Zone des Domainnamens hinzugefü
 
 [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

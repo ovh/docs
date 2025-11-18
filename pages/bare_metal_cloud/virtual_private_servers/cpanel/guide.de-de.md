@@ -1,12 +1,8 @@
 ---
 title: "cPanel auf einem VPS installieren"
 excerpt: "Erfahren Sie hier, wie Sie einen VPS mit cPanel-Template einrichten"
-updated: 2024-01-31
+updated: 2025-09-11
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -24,12 +20,16 @@ Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erl
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) mit einer [kompatiblen Distribution](https://www.ovhcloud.com/de/vps/os/).
+- Sie haben einen [VPS](/links/bare-metal/vps) mit einer [kompatiblen Distribution](/links/bare-metal/vps-os).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+> [!warning]
+> Diese Funktion ist derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## In der praktischen Anwendung
 
-Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](/links/manager) und dann ein [Betriebssystem, das mit cPanel kompatibel ist](https://www.ovhcloud.com/de/vps/os/).
+Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](/links/manager) und dann ein [Betriebssystem, das mit cPanel kompatibel ist](/links/bare-metal/vps-os).
 
 > [!warning]
 >
@@ -38,7 +38,7 @@ Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten
 
 Um Ihren cPanel Server zu installieren, bestellen Sie einen VPS mit cPanel Distribution.
 
-![horizon](images/cpanel_order.png){.thumbnail}
+![horizon](images/cpanel-order.png){.thumbnail}
 
 Wenn Ihr VPS bereit ist, erhalten Sie eine E-Mail mit den Zugangsdaten, um sich mit Ihrem cPanel-Server zu verbinden, nach dem folgenden Schema:
 
@@ -108,4 +108,4 @@ Wir empfehlen Ihnen außerdem unsere Anleitung [zum Sichern eines VPS](/pages/ba
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

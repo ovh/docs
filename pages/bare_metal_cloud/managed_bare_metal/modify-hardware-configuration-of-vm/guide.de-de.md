@@ -13,7 +13,7 @@ Wenn Sie Ihre virtuelle Maschine erstellt haben, stehen deren Ressourcen nicht p
 ## Voraussetzungen
 
 - Sie haben eine virtuelle Maschine auf einer [Managed Bare Metal Infrastruktur](https://www.ovhcloud.com/de/managed-bare-metal/) erstellt.
-- Sie haben einen Benutzeraccount mit Zugriff auf vSphere (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)).
+- Sie haben einen Benutzeraccount mit Zugriff auf vSphere (erstellt im [OVHcloud Kundencenter](/links/manager)).
 
 ## In der praktischen Anwendung
 

@@ -191,6 +191,8 @@ The next time your server boots, logs will be saved into a `.txt` file. The file
 To access the log file in rescue mode, please follow the instructions in the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 
+<a name="reboot"></a>
+
 ### Restarting your dedicated server
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:

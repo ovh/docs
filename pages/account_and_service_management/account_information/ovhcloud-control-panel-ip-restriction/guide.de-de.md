@@ -25,7 +25,7 @@ Die Einrichtung dieser Option, kombiniert mit der [Zwei-Faktor-Authentifizierung
 
 ## In der praktischen Anwendung
 
-## Schritt 1: Bestimmung der öffentlichen IP-Adressen, die zum Zugriff auf Ihr OVHcloud Kundencenter berechtigt sind
+### Schritt 1: Bestimmung der öffentlichen IP-Adressen, die zum Zugriff auf Ihr OVHcloud Kundencenter berechtigt sind
 
 Es gibt grundsätzlich zwei Arten IP-Adressen:
 
@@ -34,7 +34,7 @@ Es gibt grundsätzlich zwei Arten IP-Adressen:
 
 Um die IP-basierte Zugriffsbeschränkung im OVHcloud Kundencenter zu verwenden, geben Sie **ausschließlich** öffentliche IP-Adressen ein.
 
-Um die öffentliche IP-Adresse eines Geräts abzurufen, dem der Zugriff auf Ihr OVHcloud Kundencenter gestattet wird, gehen Sie auf die Seite [whatismyip.com](https://www.whatismyip.com/){.external} (nicht von OVHcloud verwaltet).
+Um die öffentliche IP-Adresse eines Geräts abzurufen, dem der Zugriff auf Ihr OVHcloud Kundencenter gestattet wird, gehen Sie auf die Seite [whatismyip.com](https://www.whatismyip.com/) (nicht von OVHcloud verwaltet).
 
 Notieren Sie die angezeigte IP-Adresse und wiederholen Sie dies für jedes Gerät, das Zugriff auf Ihr OVHcloud Kundencenter erhalten soll.
 

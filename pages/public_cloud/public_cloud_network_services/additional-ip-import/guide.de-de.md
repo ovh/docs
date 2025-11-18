@@ -25,7 +25,7 @@ Im OVHcloud Kundencenter können Sie eine Additional IP-Adresse, die mit einem a
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie verfügen über eine [Additional IP-Adresse](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie verfügen über eine [Additional IP-Adresse](/links/bare-metal/ip).
 
 > [!warning]
 > Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.

@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como conhecer o seu cluster e o seu filer"
 excerpt: "Saiba como encontrar o número do cluster e/ou o número do filer onde se encontra o seu alojamento web"
-updated: 2025-05-21
+updated: 2025-08-12
 ---
 
 ## Objetivo
@@ -18,37 +18,6 @@ Durante a utilização do alojamento web, poderá ser necessário conhecer o nú
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
-
-### Encontre o número do cluster de um alojamento web
-
-Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
-
-> [!tabs]
-> **Etapa 1**
->>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Etapa 3**
->>
->> Na página que se abrir, clique no separador `FTP - SSH`{.action}. 
->>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->>
-> **Etapa 4**
->>
->> Na nova página, obtenha o número do cluster do alojamento web nesta página com a menção **Servidor FTP e SFTP** (3 algarismos entre `0` e `9`).
->>
->> ![FTP-SSH - número do cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
-
-### Encontre o número do filer de um alojamento web
 
 Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 
@@ -67,9 +36,9 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 >>
 > **Etapa 3**
 >>
->> No quadro **Informações gerais** da página que é apresentada, obtenha o número do filer sob a menção `Filer`{.action}.
+>> No quadro **Informações gerais** da página que se apresenta, recupere o número do cluster com a menção **Cluster** (3 algarismos compreendidos entre `0` e `9`) e o número do filer com a menção **Filer**.
 >>
->> ![Número do filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
+>> ![Números do cluster e do filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ## Quer saber mais?
 

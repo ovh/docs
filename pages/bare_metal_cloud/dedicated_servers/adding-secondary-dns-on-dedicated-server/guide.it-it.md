@@ -16,9 +16,9 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external}
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} di gestione amministrativa o tecnica
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal)
+- Disporre di un [dominio](/links/web/domains) di gestione amministrativa o tecnica
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -29,7 +29,7 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 
 ## Procedura
 
-### Aggiungi un dominio <a name="ajoutdomaine"></a>
+### Aggiungi un dominio <a name="addingdomain"></a>
 
 Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server da `Server dedicati`{.action}.
 
@@ -41,7 +41,7 @@ Inserisci il tuo indirizzo IP e il dominio da aggiungere e clicca su `Seguente`{
 
 ![DNS secondario](images/cp-02.png){.thumbnail}
 
-Una volta cliccato su `Seguente`{.action}, la verifica del dominio verrà attivata. Se non hai già aggiunto un record TXT alla tua zona DNS, segui prima le istruzioni [descritte qui sotto](#verificationdomaine). Altrimenti clicca su `Avanti`{.action}.
+Una volta cliccato su `Seguente`{.action}, la verifica del dominio verrà attivata. Se non hai già aggiunto un record TXT alla tua zona DNS, segui prima le istruzioni [descritte qui sotto](#verifyingdomain). Altrimenti clicca su `Avanti`{.action}.
 
 ![DNS secondario](images/cp-03.png){.thumbnail}
 
@@ -61,20 +61,20 @@ I domini aggiunti saranno elencati in questa scheda e potranno essere eliminati 
 >
 > Per completare questi compiti amministrativi, consulta la documentazione esterna pertinente.
 
-### Verifica dell'autorizzazione per il dominio <a name="verificationdomaine"></a>
+### Verifica dell'autorizzazione per il dominio <a name="verifyingdomain"></a>
 
 Prima di poterlo aggiungere al DNS secondario OVHcloud, è necessario confermare l'autorizzazione a gestire il dominio. tramite una ricerca DNS automatizzata sul sottodominio *ownercheck.tuodominio*. A questo scopo viene generata una stringa di caratteri unica, visualizzata nello Spazio Cliente OVHcloud.
 
-- Se il dominio è gestito da un provider esterno o utilizza server DNS esterni allo stadio attuale, accedi allo Spazio Cliente del tuo provider DNS e aggiungi un record TXT con il sottodominio "ownercheck" e il valore fornito allo Step 2 dell'[Aggiungi un dominio"](#ajoutdomaine).
+- Se il dominio è gestito da un provider esterno o utilizza server DNS esterni allo stadio attuale, accedi allo Spazio Cliente del tuo provider DNS e aggiungi un record TXT con il sottodominio "ownercheck" e il valore fornito allo Step 2 dell'[Aggiungi un dominio"](#addingdomain).
 
 - Se il dominio è gestito da OVHcloud come server di registrazione e utilizza server DNS OVHcloud, chiudi la finestra cliccando su `Annulla`{.action}. Segui le istruzioni di [questa guida](/pages/web_cloud/domains/dns_zone_edit) per aggiungere il record TXT nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
 ![DNS secondario](images/cp-04.png){.thumbnail}
 
-Dopo aver aggiunto correttamente il record TXT alla zona DNS del dominio, ripeti gli [step](#ajoutdomaine) e chiudi la procedura.
+Dopo aver aggiunto correttamente il record TXT alla zona DNS del dominio, ripeti gli [step](#addingdomain) e chiudi la procedura.
 
 ## Per saperne di più
 
-[Modifica una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Modifica una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

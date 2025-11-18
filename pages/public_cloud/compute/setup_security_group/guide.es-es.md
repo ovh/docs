@@ -16,7 +16,7 @@ Por motivos de seguridad, es posible configurar y utilizar reglas de filtrado qu
 
 ## Requisitos
 
-- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/)
+- Un [proyecto de Public Cloud](/links/public-cloud/public-cloud)
 - [Estar conectado a Horizon](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 ## Procedimiento

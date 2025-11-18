@@ -1,7 +1,7 @@
 ---
 title: "Cambiar la contraseña de un usuario FTP"
 excerpt: "Descubra cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud"
-updated: 2024-02-29
+updated: 2025-10-14
 ---
 
 ## Objetivo
@@ -28,22 +28,43 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Procedimiento
 
-### Etapa 1: Acceder a la gestión de los usuarios FTP
+### 1 - Acceder a la gestión de los usuarios FTP
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Seleccione la pestaña `FTP-SSH`{.action}.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-Se mostrará una tabla con los *usuarios FTP* creados en su alojamiento web. Estos usuarios le permiten acceder a su espacio de almacenamiento FTP para publicar los archivos de su sitio web. Al instalar el alojamiento web, se crea un usuario automáticamente.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Se mostrará una tabla con los *usuarios FTP* creados en su alojamiento web. Estos usuarios le permiten acceder a su espacio de almacenamiento FTP para publicar los archivos de su sitio web. Al instalar el alojamiento web, se crea un usuario automáticamente.
 
-### Etapa 2: Cambiar la contraseña de un usuario FTP
+### 2 - Cambiar la contraseña de un usuario FTP
 
 > [!primary]
 >
 > Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Según el plan de [hosting de OVHcloud](/links/web/hosting), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
+Según el plan de [hosting de OVHcloud](/links/web/hosting), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP - SSH`{.action} se realizará por dos caminos diferentes:
 
-- **productos que no permiten crear un segundo usuario FTP** (*Personal*): haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action} de la tabla que aparece, introduzca la nueva contraseña **respetando la política de contraseñas** y luego confirme el cambio haciendo clic en *botón verde* de validación.
+- **productos que no permiten crear un segundo usuario FTP** (*Alojamiento gratuito 100M* y *Personal*): haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action} de la tabla que aparece, introduzca la nueva contraseña **respetando la política de contraseñas** y luego confirme el cambio haciendo clic en *botón verde* de validación.
 
 ![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
@@ -55,7 +76,7 @@ Según el plan de [hosting de OVHcloud](/links/web/hosting), la modificación de
 >
 > La nueva contraseña debe respetar la **política de las siguientes contraseñas** :
 >
->- Mínimo 8 caracteres;
+>- Mínimo 9 caracteres;
 >- Máximo 30 caracteres;
 >- Al menos una letra mayúscula;
 >- Al menos una letra minúscula;
@@ -64,7 +85,7 @@ Según el plan de [hosting de OVHcloud](/links/web/hosting), la modificación de
 
 Por último, abra la pestaña `Tareas en curso`{.action} y vuelva a actualizar la página periódicamente. El cambio de contraseña tarda unos minutos en aplicarse.
 
-### Etapa 3: Acceder al espacio de almacenamiento
+### 3 - Acceder al espacio de almacenamiento
 
 Para acceder a su espacio de almacenamiento FTP, consulte nuestra guía ["Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection).
 

@@ -16,7 +16,7 @@ Zur Erhöhung der Sicherheit können Filterregeln konfiguriert und verwendet wer
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
+- Sie haben ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf das [Horizon-Interface](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 ## In der praktischen Anwendung

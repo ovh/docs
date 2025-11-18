@@ -12,7 +12,7 @@ updated: 2025-06-06
 
 Minecraft è un videogioco da costruzione di successo globale. Per giocare in modalità multiplayer, il server deve essere ospitato su un server.
 
-È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](https://www.ovhcloud.com/it/vps/) o su un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
+È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](/links/bare-metal/vps) o su un [server dedicato](/links/bare-metal/bare-metal) per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
 
 **Questa guida ti mostra come avviare un server Minecraft Java Edition su un VPS OVHcloud e testarne la connettività.**
 
@@ -24,7 +24,7 @@ Minecraft è un videogioco da costruzione di successo globale. Per giocare in mo
 
 ## Prerequisiti
 
-- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) sul proprio account OVHcloud
+- Disporre di un [VPS](/links/bare-metal/vps) sul proprio account OVHcloud
 - Aver installato una distribuzione GNU/Linux sul server
 - Avere accesso amministratore (sudo) via SSH al server
 - Comprendere principalmente l'amministrazione GNU/Linux
@@ -100,9 +100,9 @@ $ mkdir ~/server && cd ~/server
 >
 
 Per prima cosa, copia e incolla il link di download del software server.
-<br>Sul [sito ufficiale di Minecraft](https://minecraft.net/download/server){.external}, clicca con il tasto destro sul link di download e seleziona `Copia l'indirizzo del link`{.action}.
+<br>Sul [sito ufficiale di Minecraft](https://minecraft.net/download/server), clicca con il tasto destro sul link di download e seleziona `Copia l'indirizzo del link`{.action}.
 
-![Download del server](images/download_jar_file.png){.thumbnail}
+![Download del server](images/jar_file_download.png){.thumbnail}
 
 Nel tuo terminale da riga di comando, verifica di essere ancora nella cartella `server` e utilizza `wget` per scaricare il file.
 <br>Sostituisci il `link_di_telecaricamento` con l'URL reale che hai copiato in precedenza.
@@ -118,7 +118,7 @@ Prima di avviare il server, è necessario accettare la licenza del software (EUL
 ```
 
 A questo punto viene creato un file chiamato `eula.txt` nella root del tuo server, contenente la linea `eula=true`. Questo indica al software che accetta le condizioni di utilizzo di Minecraft.
-<br>Per maggiori informazioni, consulta il [sito ufficiale di Minecraft](https://www.minecraft.net/){.external}.
+<br>Per maggiori informazioni, consulta il [sito ufficiale di Minecraft](https://www.minecraft.net/).
 
 Il server è pronto per il lancio.
 
@@ -173,7 +173,7 @@ Per arrestare il server, inserisci il comando `stop`.
 
 ### Step 3: connettersi al server
 
-L'istanza di server è attiva Per giocare a gioco, scarica il client Minecraft dal [sito web ufficiale](https://www.minecraft.net/){.external}.
+L'istanza di server è attiva Per giocare a gioco, scarica il client Minecraft dal [sito web ufficiale](https://www.minecraft.net/).
 
 Installa e avvia il client per il tuo sistema operativo e collegati.
 
@@ -189,7 +189,7 @@ Nessuna porta da inserire di default
 
 Il tuo server Vanilla Minecraft è installato sul tuo VPS.
 
-Questa guida è valida anche per un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/). Con queste soluzioni, potrai usufruire anche di risorse fisiche garantite e stabili in qualsiasi momento della giornata, dato che l'hardware è dedicato.
+Questa guida è valida anche per un [server dedicato OVHcloud](/links/bare-metal/bare-metal) o un'istanza [Public Cloud](/links/public-cloud/public-cloud). Con queste soluzioni, potrai usufruire anche di risorse fisiche garantite e stabili in qualsiasi momento della giornata, dato che l'hardware è dedicato.
 
 ## Per saperne di più <a name="gofurther"></a>
 

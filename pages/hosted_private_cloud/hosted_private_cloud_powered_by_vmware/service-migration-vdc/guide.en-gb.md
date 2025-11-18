@@ -1,7 +1,7 @@
 ---
 title: Migrating an infrastructure to a new vDC
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-updated: 2024-02-19
+updated: 2025-08-25
 ---
 
 <style>
@@ -34,7 +34,7 @@ There are two aspects involved in this process:
 ## Requirements
 
 - A PCC infrastructure (PREMIER or SDDC)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`VMware`{.action} in the `Hosted Private Cloud`{.action} section)
+- Access to the [OVHcloud Control Panel](/links/manager) (`VMware`{.action} in the `Hosted Private Cloud`{.action} section)
 - Access to the vSphere Control Panel
 
 ## Instructions
@@ -191,6 +191,12 @@ Run the OVHcloud API to convert the datastore to global:
 >
 
 **Expected return:** Task information
+
+> [!warning]
+>
+> **Be careful**: converting a datastore to global may conflict with some VMware features, such as **Storage DRS**.
+> For more details, see the [VMware documentation](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-troubleshooting-6-5/troubleshooting-resource-management/troubleshooting-storage-drs/storage-drs-cannot-operate-on-a-datastore.html).
+
 <a name="preparevdcovhcontext"></a>
 ### Step 3 Prepare your destination vDC in the OVHcloud context
 <a name="checkovhcontext"></a>
@@ -271,7 +277,7 @@ Here is a checklist of aspects to take into account:
 
 Setting up a new vDC requires rebuilding resource pools including reservations, shares, and vApps. This also applies to vApps and any start-up order configuration set in the vApps.
 
-For more information, consult [VMware's documentation for managing resource pools](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
+For more information, consult [VMware's documentation for managing resource pools](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html).
 
 Here is a checklist of aspects to take into account:
 
@@ -308,7 +314,7 @@ Here is a checklist of aspects to take into account:
 - Teaming and Failover settings
 - Customer network resource allocation
 
-For more information, consult OVHcloud's guide [How to create a V(x)LAN within a vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) and VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+For more information, consult OVHcloud's guide [How to create a V(x)LAN within a vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) and VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html).
 
 **Automation tips:** Powercli cmdlet “Export-VDPortGroup” can retrieve Distibuted Virtual Portgroup information which can then be imported into the destination Distributed Switch with the use of the “New-VDPortgroup -BackupPath” cmdlet.
 
@@ -333,7 +339,7 @@ If you still need this organisation, you will need to create it again in the des
 As part of an NSX-V to NSX-T migration, several NSX-V services need to be migrated to NSX-T. If you are using any of the services listed below, here is a step-by-step guide on how to migrate them. 
 
 > [!primary]
-> If you need technical support, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can help you rebuild your network architecture with customised services.
+> If you need technical support, our [Professional Services](/links/professional-services) team can help you rebuild your network architecture with customised services.
 
 As a first step, please read our documentation on [getting started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
@@ -367,7 +373,7 @@ Generally, depending on the number of edges deployed via NSX-V in the source vDC
 
 Additionally, if your production requires zero service interruption, solutions can be implemented to avoid these disruptions.
 
-In both cases mentioned above, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can assist you in this process.
+In both cases mentioned above, our [Professional Services](/links/professional-services) team can assist you in this process.
 
 <a name="t1seg"></a>
 ##### Step 4.8.3.1 Create T1 and segments
@@ -432,7 +438,7 @@ For this step, you will need two elements:
 - The IP block initially associated with the NSX-V vDC.
 - The public IP of the VIP associated with the NSX-T0 (visible in `Networking`{.action} => `Tier-0 Gateways`{.action} => `ovh-T0-XXXX`{.action} => expand => `HA VIP Configuration`{.action} => click on `1`{.action} => `IP Address / Mask`{.action} section)
 
-Next, in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), follow the instructions in our [Move an Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip) guide to move the initial NSX-V block to the PCC service you are migrating, but specify the VIP IP of the T0 as the "next hop", as shown in the example below:
+Next, in the [OVHcloud Control Panel](/links/manager), follow the instructions in our [Move an Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip) guide to move the initial NSX-V block to the PCC service you are migrating, but specify the VIP IP of the T0 as the "next hop", as shown in the example below:
 
 ![NSX IP Migration](images/MoveIPNextHop.png){.thumbnail}
 
@@ -774,6 +780,6 @@ Below is a list of frequently asked questions about vDC migration.
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

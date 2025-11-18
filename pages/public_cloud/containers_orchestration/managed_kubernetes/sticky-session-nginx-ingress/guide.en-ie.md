@@ -11,7 +11,7 @@ Sticky sessions or session affinity, is a feature that allows you to keep a sess
 In this tutorial we are going to:
 
 - deploy an application on your OVHcloud Managed Kubernetes cluster through a `deployment` with several replicas
-- setup an [Nginx Ingress](https://github.com/kubernetes/ingress-nginx){.external}
+- setup an [Nginx Ingress](https://github.com/kubernetes/ingress-nginx)
 - deploy an `Ingress` to configure the Nginx Ingress Controller to use sticky sessions/session affinity
 - test the session affinity
 
@@ -19,7 +19,7 @@ In this tutorial we are going to:
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
 ## Instructions
 
@@ -118,7 +118,7 @@ what-is-my-pod   ClusterIP   10.3.57.203   <none>        8080/TCP   3m35s
 
 ### Installing the Nginx Ingress Controller Helm chart
 
-For this tutorial, we are using the [Nginx Ingress Controller Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx){.external} found on its own Helm repository.
+For this tutorial, we are using the [Nginx Ingress Controller Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx) found on its own Helm repository.
 
 The chart is fully configurable, but here we are using the default configuration.
 
@@ -320,6 +320,6 @@ Hello "what-is-my-pod-deployment-78f7cd684f-xvwvh"!
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

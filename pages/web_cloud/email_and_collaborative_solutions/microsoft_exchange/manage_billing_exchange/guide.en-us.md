@@ -1,7 +1,7 @@
 ---
 title: 'Managing the billing for Exchange accounts'
 excerpt: 'Find out how to manage the billing for your Exchange service'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objective
@@ -78,10 +78,30 @@ Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} bu
 >
 > To delete an email account on a Private Exchange platform, **it is necessary that it has been created** (attached to a domain name on your Exchange platform). An unconfigured account cannot be deleted.
 
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
+
 In the `Email accounts`{.action} tab, click `...`{.action} to the right of the account concerned, then click `Delete`{.action}. The account will be immediately removed from the platform, and you will not need to cancel it.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
-## Go further
+### Cancel the platform
+
+Once you have deleted the email accounts, you will need to delete the domain name(s) associated with your Exchange platform before cancelling it. To do this, go to the `Associated domains`{.action} tab. Click the `...`{.action} button on the line for the domain name you want to delete, then click `Delete this domain`{.action}.
+
+![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
+
+In the window for managing your Exchange platform, click on the `Actions`{.action} button in the top right-hand corner, then `Cancel`{.action}.
+
+![billing_exchange](images/billing-exchange-08.png){.thumbnail}
+
+> [!primary]
+>
+> This action suspends and then deletes all of the accounts on the Exchange platform on their expiry date.
+
+# Go further <a name="go-further"></a>
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).

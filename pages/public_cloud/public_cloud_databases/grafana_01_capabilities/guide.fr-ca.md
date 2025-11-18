@@ -1,7 +1,7 @@
 ---
 title: Dashboards - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Dashboards
-updated: 2025-02-19
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -21,16 +21,17 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Dashboards nodes have to be in the same region. Multi-AZ is currently not supported.
+Dashboards nodes have to be in the same region.
 
 ### Dashboards versions
 
 The Public Cloud Databases offer supports the following Dashboards versions:
 
-- Grafana® open source 10
+- Grafana® open source 11.2
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana® Release Cycle on their official page: <https://grafana.com/>.
 
@@ -41,19 +42,14 @@ You can use your browser to access your Dashboards service.
 
 ### Plans
 
-The only plan available is *Essential*.
+Here is an overview of the *Essential* and *Production* plans capabilities:
 
-Here is an overview of the *Essential* plan capabilities:
+| Plan                  | Number of nodes by default | Additional nodes |
+| --------------------- | -------------------------- | ---------------- |
+| *Essential*           | 1                          | No               |
+| *Business*            | 1                          | No               |
 
-| Plan         | Number of nodes by default | Additional nodes |
-| ------------ | -------------------------- | ---------------- |
-| *Essential*  | 1                          | No               |
-
-The *Essential* plan offers an automatic backup retention of 2 days. It supports public or private networks (vRack).
-
-#### Nodes and replicas
-
-- **Essential**: the cluster is delivered with 1 node.
+Both plans offers an automatic backup retention of 2 days. It supports public or private networks (vRack).
 
 #### License type
 
@@ -120,6 +116,6 @@ Only one user is created by default and its name is `admin`. You must reset its 
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

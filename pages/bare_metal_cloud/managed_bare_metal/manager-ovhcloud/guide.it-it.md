@@ -12,14 +12,14 @@ Lo Spazio Cliente OVHcloud propone numerose opzioni di configurazione della tua 
 
 ## Prerequisiti
 
-- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}.
-- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo
+- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}.
+- Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/) attivo
 
 ## Procedura
 
 ### Informazioni generali
 
-Accedendo alla sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, visualizzi le informazioni relative alla tua piattaforma:
+Accedendo alla sezione `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager), visualizzi le informazioni relative alla tua piattaforma:
 
 ![Informazioni generali](images/controlpanel1-e.png){.thumbnail}
 
@@ -167,7 +167,7 @@ Dalla scheda `Licenza Windows`{.action} è possibile attivare sul tuo datacenter
 
 ![Licenza SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Per consultare le tariffe, [clicca qui](https://www.ovhcloud.com/it/managed-bare-metal/options/){.external}.
+Per consultare le tariffe, [clicca qui](https://www.ovhcloud.com/it/managed-bare-metal/options/).
 
 ### Panoramica dei datacenter
 
@@ -219,7 +219,7 @@ La scheda di backup consente di attivare la soluzione `Veeam backup`.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-Per maggiori informazioni su questa opzione, consulta [questa guida](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service){.external}.
+Per maggiori informazioni su questa opzione, consulta [questa guida](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service).
 
 ## Per saperne di più
 

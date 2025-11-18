@@ -1,12 +1,26 @@
 ---
 title: Attacher une adresse Floating IP à une instance Public Cloud
 excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la configurer
-updated: 2024-03-26
+updated: 2025-07-17
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
-Les Floating IP sont des adresses IP publiques sur [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/), utilisées pour exposer une instance privée ou un service de réseau privé sur le réseau public. Retrouvez plus d'informations sur [notre page concepts](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip) dédiée.
+Les Floating IP sont des adresses IP publiques sur [Public Cloud](/links/public-cloud/public-cloud), utilisées pour exposer une instance privée ou un service de réseau privé sur le réseau public. Retrouvez plus d'informations sur [notre page concepts](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip) dédiée.
 
 **Découvrez comment attacher des adresses Floating IP à vos instances.**
 
@@ -14,7 +28,7 @@ Les Floating IP sont des adresses IP publiques sur [Public Cloud](https://www.ov
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) existant sur votre compte OVHcloud
 - Avoir accès à [l’API OVHcloud](/links/api) ou à [l’espace client OVHcloud](/links/manager) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
-- L’outil [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} installé sur votre environnement de travail (facultatif)
+- L’outil [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) installé sur votre environnement de travail (facultatif)
 
 ## Comprendre le service Floating IP
 
@@ -380,7 +394,67 @@ $
 
 ///
 
-### Depuis l'API OVHcloud
+#### Depuis l’interface Horizon
+
+/// details | Dépliez cette section
+
+Les étapes suivantes décrivent comment attacher une Floating IP à une instance existante.
+
+> [!primary]
+> Avant de continuer, assurez-vous que votre instance est liée à un réseau privé **uniquement** et que le réseau privé est lié à une passerelle (*gateway*).
+>
+
+> [!tabs]
+>>
+>> Connectez-vous à l'interface Horizon et assurez-vous d'être dans la bonne région. Vous pouvez le vérifier en haut à gauche.
+>>
+>> ![Sélection de la région](images/region2021.png){.thumbnail}
+>>
+>> Dans le menu de gauche, cliquez sur `Network`{.action} puis sur `Floating IPs`{.action}.
+>>
+>> ![network](images/network_floating_ip.png){.thumbnail}
+>>
+>> Cliquez sur `Associate`{.action} à côté de l'instance correspondante.
+>>
+>> ![associer](images/associate_floating_ip.png){.thumbnail}
+>>
+>> Une fenêtre pop-up s'affiche. Cliquez sur la flèche déroulante en dessous de « Port to be assiociated » et sélectionner le port/l'instance auquel attacher l'adresse Floating IP.
+>>
+>> ![associer](images/select_port.png){.thumbnail}
+>>
+>> Ensuite, cliquez sur `Associate`{.action}
+>>
+>> Une fois fait, l'adresse Floating IP sera associée à l'instance.
+>>
+>> ![linked](images/instance_floating_ip.png){.thumbnail}
+>>
+>>
+
+#### Détacher une Floating IP <a name="disassociateip"></a>
+
+Vous pouvez détacher une Floating IP de votre instance à tout moment.
+
+Une fois connecté à l'interface Horizon, cliquez sur `Network`{.action}, puis sur `Floating IPs`{.action}.
+
+Cliquez sur `Disassociate`{.action} à côté de l'adresse Floating IP correspondante.
+
+![dissocier](images/disassociate_floating_ip.png){.thumbnail}
+
+Une fenêtre contextuelle s'affiche vous invitant à confirmer la sélection. Cliquez sur `Disassociate`{.action}.
+
+![confirm](images/confirm_disassociate_ip.png){.thumbnail}
+
+Une fois cette opération effectuée, l'adresse Floating IP sera détachée de l'instance et réintégrée dans votre pool d'adresses Floating IP.
+
+#### Supprimer une Floating IP
+
+Pour supprimer une Floating IP, cliquez sur la flèche déroulante à côté de l'instance correspondante, puis cliquez sur `Release Floating IP`{.action}.
+
+![delete](images/release_floating_ip.png){.thumbnail}
+
+///
+
+#### Depuis l'API OVHcloud
 
 /// details | Dépliez cette section
 

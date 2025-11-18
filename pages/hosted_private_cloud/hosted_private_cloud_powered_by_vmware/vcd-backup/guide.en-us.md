@@ -1,5 +1,5 @@
 ---
-title: "VMware Cloud Director - Backup with Veeam Data Platform"
+title: "Public VCF as-a-Service - Backup with Veeam Data Platform"
 excerpt: "Find out how to perform backups and restores with Veeam Data Platform integration"
 updated: 2025-02-24
 ---
@@ -24,18 +24,18 @@ details[open]>summary::before {
 
 ## Requirements
 
-- An administrator vCloud Director account with a VCD Organization.
+- An administrator vCloud Director account with a Public VCF as-a-Service Organization.
 - A user with the Organization Administrator role to connect to the Veeam Data Platform Self-Service Portal (the new admin user in a virtual datacentre has the default role).
-- You need to have read the VCD guides:
-    - [VCD Basic concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
+- You need to have read the Public VCF as-a-Service guides:
+    - [Public VCF as-a-Service Basic concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [How to log in to your organization](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
-    - [How to use the VCD user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
+    - [How to use the Public VCF as-a-Service user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 - You must be familiar with how Veeam Backup works. 
-- An understanding of the financial impact following the various load factors that apply when setting up this solution with VCD (see the [pricing grid for Veeam vCD on OVHcloud backups](/links/hosted-private-cloud/veeam-managed-backup).
+- An understanding of the financial impact following the various load factors that apply when setting up this solution with Public VCF as-a-Service (see the [pricing grid for Veeam Managed Backup](/links/hosted-private-cloud/veeam-managed-backup).
 
 ## Instructions
 
-Veeam Data Platform supports VCD. It uses the VMware Cloud Director API to back up the vApps and VMs and restore them directly in the VMware Cloud Director hierarchy.
+Veeam Data Platform supports Public VCF as-a-Service. It uses the Public VCF as-a-Service API to back up the vApps and VMs and restore them directly in the Public VCF as-a-Service hierarchy.
 
 The Veeam Data Platform service is available and ready to use for all 3 OVHcloud solutions (see the [features catalog](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features).
 
@@ -48,37 +48,37 @@ The Veeam Data Platform service is available and ready to use for all 3 OVHcloud
 
 ### Step 1 - Backup with Veeam Data Platform
 
-The **Veeam Data Platform** service has a VCD plugin to back up VMs and vApps from any Virtual Data Center (VDC) in the organization. It is available at the organization level for any VMware Cloud Director user with the organization administrator role.
+The **Veeam Data Platform** service has a Public VCF as-a-Service plugin to back up VMs and vApps from any Virtual Data Center (VDC) in the organization. It is available at the organization level for any Public VCF as-a-Service user with the organization administrator role.
 
 /// details | Access the Veeam Data Platform administration console
 
-When using VCD Data Protection integration with Veeam to create backup jobs, you can choose any VM instance from any virtual datacentre in the organization.
+When using Public VCF as-a-Service Data Protection integration with Veeam to create backup jobs, you can choose any VM instance from any virtual datacentre in the organization.
 
-To access the Data Protection Portal with Veeam from Cloud Director, log in to the VCD Client Portal with a vCloud Director account with the appropriate rights.
+To access the Data Protection Portal with Veeam from Cloud Director, log in to the Public VCF as-a-Service Client Portal with a vCloud Director account with the appropriate rights.
 
 In the menu of the top center bar, click `More`{.action} and select `Data Protection with Veeam`{.action}
 
-![VCD access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
+![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
-The Veeam VCD Plugin window will open with a grey/black headband.
+The Veeam Public VCF as-a-Service Plugin window will open with a grey/black headband.
 
-![VCD access to Veeam Backup](images/vcd_veeam_backup_repo_2.png){.thumbnail}
+![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup_repo_2.png){.thumbnail}
 
 #### Repository
 
 By default, you have the following repositories:
 
-- **Bronze Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a bucket closer to your VCD environment.
-- **Silver Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
+- **Bronze Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a bucket closer to your Public VCF as-a-Service environment.
+- **Silver Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your Public VCF as-a-Service environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
 - **Gold Repository**: This repository is based on the [OVHcloud Object Storage High performance](/links/public-cloud/object-storage) class. This repository includes the previous options + OVHcloud Object Storage "High performance".
 
 From the OVHcloud Control Panel, you can activate the `Gold Repository`.
 
 All these repositories have a storage quota of 100 TB. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
 
-Here is an example of the primary and destination sites used for Veeam VCD copying of offsite backups (for the **Advanced/Premium** offers):
+Here is an example of the primary and destination sites used for Veeam Public VCF as-a-Service copying of offsite backups (for the **Advanced/Premium** offers):
 
-![VCD Veeam 4 VCD Sites](images/vcd_veeam_zones.png){.thumbnail}
+![Public VCF as-a-Service Veeam 4 Sites](images/vcd_veeam_zones.png){.thumbnail}
 
 - `Bronze Repository`: Roubaix (Europe)
 - `Silver Repository`: Roubaix -> Strasbourg (Europe)
@@ -123,7 +123,7 @@ The metadata for virtual applications (vApp) and VMs includes:
 - The quota.
 - Storage templates.
 
-The vApp/VM metadata is stored with the virtual machine content. Capturing vApp/VM metadata is important for recovery: without it, you will not be able to restore vApps and VMs to VMware Cloud Director.
+The vApp/VM metadata is stored with the virtual machine content. Capturing vApp/VM metadata is important for recovery: without it, you will not be able to restore vApps and VMs to Public VCF as-a-Service.
 
 - **Backup jobs:**
 
@@ -134,39 +134,39 @@ Backup jobs require 4 default settings:
 3. Guest Processing: Application-aware processing / Guest file system indexing / Guest operating system credentials
 4. Email notifications: Enabling email notifications
 
-For virtual machines managed by VMware Cloud Director, Veeam Backup & Replication offers a special type of backup job: VMware Cloud Director backup jobs. VMware Cloud Director backup jobs process VMware Cloud Director objects, ensure their proper recovery, and support Cloud Director specific features.
+For virtual machines managed by Public VCF as-a-Service, Veeam Backup & Replication offers a special type of backup job: Public VCF as-a-Service backup jobs. Public VCF as-a-Service backup jobs process Public VCF as-a-Service objects, ensure their proper recovery, and support Cloud Director specific features.
 
 - **How do I create a backup job with the Veeam Data Platform?**
 
-You are about to create your first backup job using the Veeam Data Platform VCD plugin:
+You are about to create your first backup job using the Veeam Data Platform Public VCF as-a-Service plugin:
 
-In the Veeam VCD console, click `More`{.action} and select `Data Protection with Veeam`{.action}
+In the Veeam Public VCF as-a-Service console, click `More`{.action} and select `Data Protection with Veeam`{.action}
 
-![VCD access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
+![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
 Click `Jobs`{.action} then `Create`{.action}
 
-![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
 
 In the window that opens, specify the backup job name, description, and retention policy. Once you have defined the elements (Job name, description, retention), click `Next`{.action}.
 
-![VCD Backup Job Veeam creation](images/vcd_veeam_backup_jobs.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_jobs.png){.thumbnail}
 
 You then need to choose your virtual machine (VM). To do this, click `Add`{.action}.
 
-![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_3.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_3.png){.thumbnail}
 
-You can drill down into your VMware Cloud Director organization and select your VM.
+You can drill down into your Public VCF as-a-Service organization and select your VM.
 
 Click `Next`{.action}.
 
-![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_4.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_4.png){.thumbnail}
 
 Your virtual machine will then appear in the list.
 
 Click `Next.`{.action}
 
-![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_5.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_5.png){.thumbnail}
 
 > [!warning]
 >
@@ -179,7 +179,7 @@ Click `Next.`{.action}
 
 Click `Next`{.action}
 
-![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail}
 
 If necessary, you can add monitoring options for your backup tasks. Finally, click `Finish`{.action}.
 
@@ -187,7 +187,7 @@ If necessary, you can add monitoring options for your backup tasks. Finally, cli
 > If you add multiple email addresses for monitoring, use a semicolon (`;`) as a separator between each address.
 > **Example**: `email1@example.com; email2@example.com`
 
-![VCD Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_7.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_7.png){.thumbnail}
 
 The backup job is listed.
 
@@ -204,7 +204,7 @@ The backup job is listed.
 > To add a backup job from a VM (... action -> ... Add a task to Veeam), it must be created beforehand.
 >
 
-In the VMware Cloud Director console, click `Datacenter`{.action} , then `Virtual machines`{.action}.
+In the Public VCF as-a-Service console, click `Datacenter`{.action} , then `Virtual machines`{.action}.
 
 Choose a VM. Click `Actions`{.action}, then `Data Protection with Veeam`{.action} and finally `Add a task to Veeam`{.action}.
 
@@ -223,7 +223,7 @@ Veeam Backup has several restore features:
 
 **Data included in restores:**
 
-Veeam Backup & Replication enables full recovery of VMs to VMware Cloud Director. You can restore separate VMs to vApps, as well as VM data.
+Veeam Backup & Replication enables full recovery of VMs to Public VCF as-a-Service. You can restore separate VMs to vApps, as well as VM data.
 
 Restore options include:
 
@@ -237,14 +237,14 @@ In this case, perform a **Full (full/full)** restore.
 
 **Full restoration of a VM (virtual machine):**
 
-With the OVHcloud Managed Backup service, you can restore standard VMs that are part of vApps, and standalone VMs that have been created in your OVHcloud VMware Cloud Director portal.
+With the OVHcloud Managed Backup service, you can restore standard VMs that are part of vApps, and standalone VMs that have been created in your OVHcloud Public VCF as-a-Service portal.
 
 When you restore normal or standalone VMs in the vCloud Director hierarchy, the restoration process includes the following steps:
 
-- Veeam uses the captured vApp metadata to define the vApp settings and the original location of the virtual machine in the VMware Cloud Director hierarchy.
+- Veeam uses the captured vApp metadata to define the vApp settings and the original location of the virtual machine in the Public VCF as-a-Service hierarchy.
 - Veeam restores the VMs in the backup file to their original location or to another location. In addition, Veeam restores all VM settings.
 
-**How do I restore a VM using the Veeam Data Platform VCD plugin?**
+**How do I restore a VM using the Veeam Data Platform Public VCF as-a-Service plugin?**
 
 To perform a full restore, click `Entire VM Restore`{.action}
 
@@ -260,9 +260,9 @@ In the final step, click `Finish`{.action}. If you wish, you can also launch the
 
 ![VCD_Veeam_restore_vm_3](images/vcd_veeam_restore_vm_3.png){.thumbnail}
 
-This process is simplified with VCD, Veeam and OVHcloud.
+This process is simplified with Public VCF as-a-Service, Veeam and OVHcloud.
 
-**How do I restore a file using the Veeam Data Platform VCD plugin?**
+**How do I restore a file using the Veeam Data Platform Public VCF as-a-Service plugin?**
 
 - **File level restore**: This option is not yet available.
 

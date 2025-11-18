@@ -4,6 +4,11 @@ excerpt: 'Esta guía explica cómo optimizar la seguridad de su cuenta de OVHclo
 updated: 2025-05-22
 ---
 
+> [!success]
+> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
+> No dude en compartir su opinión y sus ideas con nosotros.<br>
+> [Ir a la encuesta.](https://s.elq.fr/ovhext/DItXnvw)
+
 ## Objetivo
 
 La gestión de sus servicios y datos se realiza principalmente desde el área de cliente de OVHcloud.
@@ -84,7 +89,7 @@ Modifique sus datos y haga clic en el botón `«Aceptar»`{.action}.
 
 > [!warning]
 >
-> Es importante que los datos personales proporcionados sean **exactos** y estén **actualizados**. Se le pedirá que proporcione los datos necesarios cuando se ponga en contacto con el equipo de asistencia de OVHcloud. Asimismo, deberá ser capaz de justificar su exactitud si procede (por ejemplo, durante el procedimiento de cambio de dirección de correo electrónico, se le puede solicitar un justificante de domicilio idéntico a la dirección indicada en su cuenta.
+> Es importante que los datos personales proporcionados sean **exactos** y estén **actualizados**. Se le pedirá que proporcione los datos necesarios cuando se ponga en contacto con el equipo de asistencia de OVHcloud. Asimismo, deberá ser capaz de justificar su exactitud si procede (por ejemplo, durante el procedimiento de cambio de dirección de correo electrónico, se le puede solicitar un justificante de domicilio idéntico a la dirección indicada en su cuenta).
 >
 
 #### Editar la dirección de correo electrónico principal
@@ -111,11 +116,11 @@ Una vez introducidos los datos, haga clic en el botón `Aceptar`{.action}.
 
 #### Ejercer mis derechos sobre mis datos personales
 
-De acuerdo con el Reglamento General de Protección de Datos (RGPD), puede solicitar ejercer los derechos relacionados con la protección de sus datos personales rellenando [este formulario](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos){.external}.
+De acuerdo con el Reglamento General de Protección de Datos (RGPD), puede solicitar ejercer los derechos relacionados con la protección de sus datos personales rellenando [este formulario](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos).
 
 #### Eliminar mi cuenta de OVHcloud
 
-Puede solicitar la eliminación de su cuenta de OVHcloud y los datos asociados rellenando [el formulario para el ejercicio de los derechos RGPD](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos){.external} y eligiendo el "Derecho de supresión".
+Puede solicitar la eliminación de su cuenta de OVHcloud y los datos asociados rellenando [el formulario para el ejercicio de los derechos RGPD](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos) y eligiendo el "Derecho de supresión".
 
 > [!warning]
 >

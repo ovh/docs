@@ -21,7 +21,7 @@ There are two aspects to migrating a PCC infrastructure:
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
+- access to the [OVHcloud Control Panel](/links/manager) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
 
 ## Instructions
 
@@ -123,7 +123,7 @@ Here is a checklist of aspects to take into account:
 
 The migration requires rebuilding resource pools including reservations, shares, and vApps. This also applies to vApps and any start-up order configuration set in the vApps.
 
-For more information, consult [VMware's documentation for managing resource pools](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
+For more information, consult [VMware's documentation for managing resource pools](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html).
 
 Here is a checklist of aspects to take into account:
 
@@ -160,7 +160,7 @@ Here is a checklist of aspects to take into account:
 - Teaming and Failover settings
 - Customer network resource allocation
 
-For more information, consult VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external} and on [how to edit distributed port teaming and failover policies](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-BB8EC262-5F85-4F42-AFC5-5FED456E2C11.html){.external}.
+For more information, consult VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html) and on [how to edit distributed port teaming and failover policies](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-BB8EC262-5F85-4F42-AFC5-5FED456E2C11.html).
 
 **Automation tips:** Powercli cmdlet “Export-VDPortGroup” can retrieve Distibuted Virtual Portgroup information which can then be imported into the destination Distributed Switch with the use of the “New-VDPortgroup -BackupPath” cmdlet.
 
@@ -209,7 +209,7 @@ NSX objects include IP Sets, MAC Sets, Services, Service Groups, Security Groups
 These objects will have locally significant IDs in the source PCC and, when re-created in the destination Hosted Private Cloud, will generate a different ID.
 Keeping track of these IDs is crucial to automating the migration of Edge firewall rules and distributed firewall rules.
 
-**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} gives examples on how to get object IDs and how to create them.
+**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf) gives examples on how to get object IDs and how to create them.
 
 Example: Get a "Service Object": `GET /api/2.0/services/application/scope/{scopeId}`
 <br>
@@ -223,7 +223,7 @@ On the destination Hosted Private Cloud, it will be necessary to recreate any NS
 - Interfaces on the destination Edge so that it mirrors the source Edge
 - Edge services (Firewall, NAT, IPSEC, etc) on the destination Edge so that it mirrors the source Edge (**NOTE:** If automating this process, be sure to map any referenced object IDs to object IDs that exist in the destination Hosted Private Cloud)
 
-**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} gives examples on how to GET Edge configurations and how to add service
+**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf) gives examples on how to GET Edge configurations and how to add service
 configurations onto new Edges.
 
 Example: Get an Edge current configuration: `GET /api/4.0/edges/{edgeId}`
@@ -237,7 +237,7 @@ On the destination Hosted Private Cloud, it will be necessary to recreate any Di
 - DFW sections on the destination DFW so that it mirrors the source DFW
 - DFW rules on the destination DFW so that it mirrors the source DFW (**Note**: If automating this process, be sure to map any referenced object IDs to object IDs that exist in the destination Hosted Private Cloud)
 
-**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf){.external} gives examples on how to GET the DFW configuration and how to create DFW
+**Automation tips:** The [NSX API guide](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf) gives examples on how to GET the DFW configuration and how to create DFW
 rules and sections.
 
 Example: Get DFW current configuration: `GET /api/4.0/firewall/globalroot-0/config`
@@ -264,7 +264,7 @@ The video below shows how to configure Hosted Private Cloud with the Veeam Backu
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqNtKrJSH8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br>You can also refer to the [Veeam documentation](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external} (PDF).
+<br>You can also refer to the [Veeam documentation](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf) (PDF).
 
 #### Step 3: Post migration tasks
 

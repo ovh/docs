@@ -20,8 +20,8 @@ Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external} con Windows instalado.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) con Windows instalado.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 

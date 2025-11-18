@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
+> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
+> [Accédez à l'enquête.](https://s.elq.fr/ovhext/lcrZM31)
+
 ## Objectif
 
 Vous souhaitez créer un site Internet pour votre entreprise ou un blog personnel ? Vous avez besoin d'une boutique e-commerce pour vendre vos produits en ligne ? Ce guide dédié aux premiers pas avec l'hébergement web OVHcloud vous indiquera les étapes clés pour le configurer. Vous trouverez également les explications pour créer des adresses e-mail professionnelles associées à votre nom de domaine. Il vous permettra une mise en ligne facile et rapide de votre projet afin de communiquer avec votre audience de manière efficace.

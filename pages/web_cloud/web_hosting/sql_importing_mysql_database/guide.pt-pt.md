@@ -1,7 +1,7 @@
 ---
 title: 'Importar um backup para a base de dados de um alojamento web'
 excerpt: 'Saiba como importar um backup para a base de dados de um alojamento web da OVHcloud'
-updated: 2023-12-11
+updated: 2025-10-08
 ---
 
 ## Sumário
@@ -12,24 +12,24 @@ As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting){.external}.
-- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVHcloud](/links/web/hosting){.external}.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting).
+- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVHcloud](/links/web/hosting).
 - Ter acesso ao backup que pretende importar na base de dados.
-- Consoante o método de importação utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager){.external} ou às informações que lhe permitem aceder à base de dados.
+- Consoante o método de importação utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager) ou às informações que lhe permitem aceder à base de dados.
 
 ## Instruções
 
 Antes de começar, deve escolher o método que quer utilizar para importar o backup na base de dados. Existem várias opções com diferentes níveis de dificuldade técnica.
 
-- **Restaurar a base de dados numa data anterior**: esta solução permite restaurar o conteúdo da base de dados utilizando as cópias de segurança armazenadas na ferramenta de backup da OVHcloud. Esta operação não requer conhecimentos técnicos especiais e realiza-se a partir da [Área de Cliente](/links/manager){.external}.
+- **Restaurar a base de dados numa data anterior**: esta solução permite restaurar o conteúdo da base de dados utilizando as cópias de segurança armazenadas na ferramenta de backup da OVHcloud. Esta operação não requer conhecimentos técnicos especiais e realiza-se a partir da [Área de Cliente](/links/manager).
 
-- **Importar o seu próprio ficheiro de backup**: esta solução permite importar os dados do seu próprio ficheiro de backup numa das suas bases de dados. Esta operação pode ser realizada a partir da [Área de Cliente OVHcloud](/links/manager){.external}.
+- **Importar o seu próprio ficheiro de backup**: esta solução permite importar os dados do seu próprio ficheiro de backup numa das suas bases de dados. Esta operação pode ser realizada a partir da [Área de Cliente OVHcloud](/links/manager).
 
 - **Realizar a importação a partir da interface web phpMyAdmin**: para isso, deverá aceder à interface phpMyAdmin. Tenha em atenção que esta operação requer conhecimentos técnicos e que existe um limite para o tamanho do ficheiro de configuração.
 
 - **Realizar a importação utilizando um script**: para isso, deverá criar um script alojado no seu alojamento web da OVHcloud. São necessários conhecimentos específicos para criar este script.
 
-- **Realizar a importação utilizando um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançado e ter adquirido um plano de [alojamento web da OVHcloud](/links/web/hosting){.external} concreto.
+- **Realizar a importação utilizando um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançado e ter adquirido um plano de [alojamento web da OVHcloud](/links/web/hosting) concreto.
 
 Tenha em conta que algumas destas operações se realizam fora da interface da OVHcloud e, por isso, deverá executá-las você mesmo. A seguir, disponibilizamos informações sobre os diferentes métodos de importação. No entanto, se precisar de ajuda, pode entrar em contacto com um webmaster.
 
@@ -44,7 +44,9 @@ Consulte a documentação correspondente ao método de importação pretendido.
 
 ### Restaurar um backup a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados que pretende restaurar numa data anterior e selecione `Restaurar um backup`{.action}. Tenha em atenção que esta ação substituirá o conteúdo atual da base de dados pelo backup.
 
@@ -58,7 +60,9 @@ Clique nos três pontos à direita da linha correspondente à base de dados que 
 
 ### Importar o seu próprio backup a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados na qual pretende importar dados e selecione `Importar ficheiro`{.action}.
 
@@ -91,7 +95,9 @@ Uma vez selecionada a opção, clique em `Confirmar`{.action} e aguarde até que
 
 ### Realizar a importação a partir da interface phpMyAdmin
 
-Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external}, clique em `Alojamentos`{.action} e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Alojamentos`{.action} e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
 
@@ -135,7 +141,7 @@ Substitua a informação genérica do script pela informação da base de dados 
 
 #### 2 - Carregar o script e o backup no espaço de armazenamento
 
-Depois de criar o script de importação, deverá carregá-lo juntamente com o ficheiro de backup que quer importar no espaço de armazenamento do seu alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2 do nosso manual “[Publicar um website no alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}”.
+Depois de criar o script de importação, deverá carregá-lo juntamente com o ficheiro de backup que quer importar no espaço de armazenamento do seu alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2 do nosso manual “[Publicar um website no alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)”.
 
 Para poder realizar as seguintes ações, carregue o script de importação e o ficheiro de backup na pasta “www”. **Preste especial atenção ao nome do ficheiro do script de importação.** Certifique-se de que não apaga um ficheiro já existente com o mesmo nome no espaço de armazenamento quando carregar o script. Se aparecer uma mensagem de aviso, altere o nome do script que acabou de criar por outro diferente e tente carregá-lo novamente.
 

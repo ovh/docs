@@ -1,18 +1,18 @@
 ---
-title: Migrer des comptes e-mail via OVH Mail Migrator
-excerpt: Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator
-updated: 2023-08-29
+title: 'Migrer des comptes e-mail via OVH Mail Migrator'
+excerpt: 'Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator'
+updated: 2025-11-10
 ---
 
 ## Objectif
 
-[OVH Mail Migrator](https://omm.ovh.net/) est un outil créé par OVHcloud. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVHcloud ou un service e-mail externe. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mails.
+[OVH Mail Migrator](https://omm.ovh.net/) est un outil créé par OVHcloud qui répond au besoin de réversibilité. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVHcloud ou un service e-mail externe. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mails.
 
 **Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator.**
 
 ## Prérequis
 
-- Disposer d'un service e-mail chez OVHcloud, tel qu'une offre [Exchange](/links/web/emails) ou MX Plan (via l'offre MX Plan seule ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)).
+- Disposer d'un service e-mail externe ou chez OVHcloud.
 - Disposer des identifiants relatifs aux comptes e-mail que vous souhaitez migrer (les comptes e-mail source).
 - Disposer des identifiants relatifs aux comptes e-mail de destination.
 
@@ -56,7 +56,7 @@ Cliquez sur `Démarrer la migration`{.action} une fois les informations complét
 
 La page qui apparaît alors détaille le suivi de la migration. Pensez à conserver l'`Identifiant de migration`{.action} affiché et patientez jusqu'à ce que le processus arrive à son terme ; ce délai est variable selon le nombre d'éléments à migrer. Si vous souhaitez accéder de nouveau à ce suivi, poursuivez vers la section « Suivre une migration unique » ci-dessous.
 
-#### Suivre la migration  
+#### Suivre la migration
 
 Il existe deux chemins pour accéder au suivi d'une migration unique :
 

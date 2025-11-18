@@ -14,7 +14,7 @@ updated: 2021-03-29
 
 ## Prerequisiti
 
-- Essere connesso alle [API OVHcloud](https://api.ovh.com/)
+- Essere connesso alle [API OVHcloud](/links/api)
 - [Veeam Managed Backup attivo](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service) sulla soluzione Hosted Private Cloud
 
 ## Procedura
@@ -25,7 +25,7 @@ Se non sei abituato al funzionamento delle API OVHcloud, consulta la nostra guid
 
 Per prima cosa, seleziona i backup da ripristinare.
 
-Accedi alla pagina [https://api.ovh.com/](https://api.ovh.com/) e utilizza questa chiamata:
+Accedi alla pagina [https://api.ovh.com/](/links/api) e utilizza questa chiamata:
 
 > [!api]
 >
@@ -59,7 +59,7 @@ Annota la cartella di storage (BackupRepository), che ti permetterà di ripristi
 
 La chiamata API ripristina gli ultimi punti di ripristino validi di ogni backup presente sulla cartella di storage.
 
-Accedi alla pagina [https://api.ovh.com/](https://api.ovh.com/) e utilizza questa chiamata:
+Accedi alla pagina [https://api.ovh.com/](/links/api) e utilizza questa chiamata:
 
 > [!api]
 >

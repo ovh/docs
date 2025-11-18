@@ -30,7 +30,7 @@ updated: 2022-04-15
  }
 </style>
 
-OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management. 
+OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/) [chart](https://helm.sh/docs/topics/charts/) management. 
 
 **This guide will explain how to activate the vulnerabilities scanner and manually scan an image in an OVHcloud Managed Private Registry service.**
 

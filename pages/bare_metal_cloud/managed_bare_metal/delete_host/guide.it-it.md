@@ -12,7 +12,7 @@ In alcuni casi eliminare un server host può risultare utile, ad esempio per res
 
 ## Prerequisiti
 
-* Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
+* Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/)
 * Avere accesso all’interfaccia di gestione vSphere
 
 ## Procedura

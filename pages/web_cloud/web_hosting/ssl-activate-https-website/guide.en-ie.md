@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Switching your website to HTTPS"
 excerpt: "Find out how to switch your website to HTTPS after activating an SSL certificate"
-updated: 2024-02-28
+updated: 2025-10-27
 ---
 
 ## Objective
@@ -12,9 +12,9 @@ With an OVHcloud Web Hosting plan, you can get an [SSL certificate](/links/web/h
 
 ## Requirements
 
-- An [SSL certificate](/links/web/hosting-options-ssl){.external} set up on your [OVHcloud Web Hosting plan](/links/web/hosting){.external}
+- An [SSL certificate](/links/web/hosting-options-ssl) set up on your [OVHcloud Web Hosting plan](/links/web/hosting)
 - At least one website set up and accessible via your OVHcloud Web Hosting plan
-- Access to the [OVHcloud Control Panel](/links/manager){.external}, part `Web Cloud`{.action}
+- Access to the [OVHcloud Control Panel](/links/manager), part `Web Cloud`{.action}
 
 ## Instructions
 
@@ -94,7 +94,7 @@ Please note that if you are using a turn-key website, its structure automaticall
 
 ### Step 3 - Activate HTTPS on your website <a name="https-enable"></a>
 
-As soon as your Web Hosting plan has an active SSL certificate, and the [multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) concerned has an active SSL connection, and your website is ready to switch to *HTTPS*, you can activate it.
+As soon as your domain name has an [active SSL certificate via your web hosting](/pages/web_cloud/web_hosting/ssl_on_webhosting) and your website is ready to switch to *HTTPS*, you can activate it.
 
 > [!warning]
 >

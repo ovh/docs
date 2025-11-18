@@ -6,9 +6,9 @@ updated: 2022-05-04
 
 ## Wprowadzenie
 
-[Ghost](https://ghost.org/){.external} to silnik bloga z otwartym kodem źródłowym. Ma on na celu uproszczenie procesu publikacji online dla blogerów i dziennikarzy. To oprogramowanie jest napisane w JavaScript i wykorzystuje [Node.js](https://nodejs.org/){.external}, platformę programową do tworzenia witryn i interfejsów API w JavaScript po stronie serwera.
+[Ghost](https://ghost.org/) to silnik bloga z otwartym kodem źródłowym. Ma on na celu uproszczenie procesu publikacji online dla blogerów i dziennikarzy. To oprogramowanie jest napisane w JavaScript i wykorzystuje [Node.js](https://nodejs.org/), platformę programową do tworzenia witryn i interfejsów API w JavaScript po stronie serwera.
 
-[Hosting Cloud Web](/links/web/hosting-cloud-web-offer){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
+[Hosting Cloud Web](/links/web/hosting-cloud-web-offer) umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
 
 W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Ghost na hostingu Cloud Web w OVHcloud oraz jak udostępnić go pod Twoją domeną.
 
@@ -16,10 +16,10 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 
 ### Powinieneś posiadać:
 
-- Hosting [Cloud Web](/links/web/hosting-cloud-web-offer){.external} od OVHcloud
+- Hosting [Cloud Web](/links/web/hosting-cloud-web-offer) od OVHcloud
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
-- Dostęp do [Panelu klienta](/links/manager){.external} > sekcja `Web Cloud`{.action}
+- Dostęp do [Panelu klienta](/links/manager) > sekcja `Web Cloud`{.action}
 -Co powinieneś umieć:
     - Znać podstawy ekosystemu Node.js
     - Łączyć się z serwerem za pomocą protokołu SSH
@@ -29,7 +29,7 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 
 ### Etap 1: włącz Node.js jako framework
 
-Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](/links/manager){.external}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Teraz przejdź do zakładki `Frameworki`{.action}.
+Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](/links/manager). Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Teraz przejdź do zakładki `Frameworki`{.action}.
 
 Wyświetli się tabela z listą frameworków obecnie dodanych do Twojego hostingu Cloud Web. Upewnij się, czy framework Node.js jest aktywowany. Jeśli tak, przejdź do etapu 2 [Powiąż Node.js ze stroną podpiętą w opcji MultiSite](./#etap-2-powiaz-nodejs-ze-strona-podpieta-w-opcji-multisite).
 
@@ -50,7 +50,7 @@ W oknie, które się wyświetla uzupełnij pola informacjami z poniższego przy
 |Środowisko aplikacji|produkcja|
 |Skrypt uruchamiania aplikacji|server.js|
 
-Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Jeśli potrzebujesz więcej informacji o zarządzaniu frameworkami, skorzystaj z naszego przewodnika [Zarządzanie frameworkami Cloud Web](/pages/web_cloud/web_hosting/manage-runtime){.external}.
+Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Jeśli potrzebujesz więcej informacji o zarządzaniu frameworkami, skorzystaj z naszego przewodnika [Zarządzanie frameworkami Cloud Web](/pages/web_cloud/web_hosting/manage-runtime).
 
 ![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
@@ -80,7 +80,7 @@ W oknie, które się wyświetla, wprowadź wymagane informacje: Poniższa tabela
 |Katalog główny|ghost|
 |Framework|NodeJS 8|
 
-Wybierz opcje dodatkowe, które chcesz aktywować. Po wpisaniu informacji kliknij `Dalej`{.action} i zakończ operację. Może to potrwać do godziny. Zmiana konfiguracji DNS może potrwać do 24 godzin, zanim stanie się w pełni aktywna. Jeśli potrzebujesz więcej informacji o zarządzaniu stronami podpiętymi w opcji MultiSite, skorzystaj z naszego przewodnika [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
+Wybierz opcje dodatkowe, które chcesz aktywować. Po wpisaniu informacji kliknij `Dalej`{.action} i zakończ operację. Może to potrwać do godziny. Zmiana konfiguracji DNS może potrwać do 24 godzin, zanim stanie się w pełni aktywna. Jeśli potrzebujesz więcej informacji o zarządzaniu stronami podpiętymi w opcji MultiSite, skorzystaj z naszego przewodnika [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
 
@@ -166,7 +166,7 @@ demonon@cloudweb-ssh:~ $ cd ghost/
 demonon@cloudweb-ssh:~/ghost $
 ```
 
-Pobierz [najnowszą wersję silnika Ghost](https://ghost.org/){.external} i rozpakuj jego zawartość.
+Pobierz [najnowszą wersję silnika Ghost](https://ghost.org/) i rozpakuj jego zawartość.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ ls
@@ -185,7 +185,7 @@ demonon@cloudweb-ssh:~/ghost $ ls
 Gruntfile.js  LICENSE  MigratorConfig.js  PRIVACY.md  README.md  content  core  index.js  package.json  public  server.js  yarn.lock
 ```
 
-Ghost używa [Yarn](https://yarnpkg.com/){.external}, będącego alternatywą dla **npm**, jako menedżera zależności Node.js. Zainstaluj Yarn za pośrednictwem **npm** i dodaj następujące pliki binarne do „PATH”:
+Ghost używa [Yarn](https://yarnpkg.com/), będącego alternatywą dla **npm**, jako menedżera zależności Node.js. Zainstaluj Yarn za pośrednictwem **npm** i dodaj następujące pliki binarne do „PATH”:
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ npm-node8 install yarn
@@ -243,7 +243,7 @@ Instalacja i konfiguracja silnika Ghost są zakończone. Teraz uruchom ponownie 
 
 ### Etap 7: ponowne uruchomienie *daemona* Node.js
 
-Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](/links/manager){.external}. Przejdź do zakładki `MultiSite`{.action}, po prawej stronie nazwy wybranej domeny kliknij na przycisk `...`{.action} po prawej stronie, po czym kliknij `Uruchom ponownie`{.action}.
+Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](/links/manager). Przejdź do zakładki `MultiSite`{.action}, po prawej stronie nazwy wybranej domeny kliknij na przycisk `...`{.action} po prawej stronie, po czym kliknij `Uruchom ponownie`{.action}.
 
 W wyniku tej operacji aplikacja będzie dostępna za pośrednictwem nazwy domeny wybranej w konfiguracji Twojej strony podpiętej w opcji MultiSite.
 
@@ -264,13 +264,13 @@ W tym tutorialu przedstawiliśmy poszczególne etapy instalacji aplikacji Node.j
 
 ## Sprawdź również
 
-[Przeniesienie strony WWW do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Przeniesienie strony WWW do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Umieszczenie strony w Internecie](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Umieszczenie strony w Internecie](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

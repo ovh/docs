@@ -6,7 +6,7 @@ updated: 2021-02-05
 
 ## Objectif
 
-Le service [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} offre différents types de suivi de connexion pour vos services.
+Le service [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/) offre différents types de suivi de connexion pour vos services.
 
 Chaque session du service OVH Load Balancer est maintenue par un système de persistence de connexion. Ce dernier est configuré au niveau de la couche applicative du service OVH Load Balancer, c'est elle qui assure la persistence de la connexion vers le serveur.
 
@@ -16,10 +16,10 @@ Cette documentation présente différentes façon de configurer cette options po
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external}.
+- Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/).
 - Avoir accès :
-    - à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, ou bien
-    - à l'[API OVH](https://ca.api.ovh.com/){.external}.
+    - à l'[espace client OVH](/links/manager), ou bien
+    - à l'[API OVH](/links/api).
 
 ## En pratique
 

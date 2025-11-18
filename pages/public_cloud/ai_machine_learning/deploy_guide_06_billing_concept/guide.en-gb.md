@@ -28,7 +28,7 @@ During its lifetime, the app will go through the following status:
 - `INITIALIZING`: the app is being started and, if any, the remote data is synchronized from the Object Storage. To learn more about data synchronization, please check out the [Data - Concept and best practices](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data#how-it-works) documentation.
 - `SCALING`: First, the system allocates the necessary compute resources (CPU/GPU) for the app. Then, the specified Docker image is pulled for use in the app. This status is also entered when the number of app replicas is being increased or decreased.
 - `RUNNING`: At least one replica of the app is available and accessible via its endpoint. As the app scales up to create new replicas, the status transitions back to `SCALING`. However, there is no interruption in service, and the original replica(s) remain accessible during this time.
-- `STOPPING`: the app is stopping, your compute resources are freed. Ephemeral data is deleted. If any, remote data is synchronized back to the Object Storage.
+- `STOPPING`: the app is stopping, your compute resources are freed. Ephemeral data is deleted.
 - `STOPPED`: the app ended normally. You can restart it whenever you want or delete it. It will keep the same endpoint.
 - `FAILED`: the app ended in error, e.g. the Docker image is invalid (unreachable, built with linux/arm, ...).
 - `ERROR`: the app ended due to a backend error (issue on OVHcloud side). You may reach our support.

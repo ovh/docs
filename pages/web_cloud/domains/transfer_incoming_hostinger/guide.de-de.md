@@ -73,7 +73,7 @@ Für den Transfer eines Hostinger-Domainnamens ist ein spezieller Ansatz erforde
 
 Für Domainnamen, die bei Hostinger registriert sind, können Sie den Sperrstatus verwalten, indem Sie den Bereich `Domains`{.action} öffnen und den Domainnamen auswählen, der transferiert werden soll.
 
-Folgen Sie den Schritten in der [Hostinger Dedicated Documentation](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger){.external}.
+Folgen Sie den Schritten in der [Hostinger Dedicated Documentation](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger).
 
 ### EPP- oder Auth-Code abrufen
 
@@ -87,7 +87,7 @@ Um sich mit der Änderung des Inhabers eines Domainnamens vertraut zu machen, le
 > Wir empfehlen Ihnen, bei Hostinger die geeigneten Schritte zur Übertragung Ihrer Domainnamen zu prüfen.
 > 
 
-Um den **EPP**- oder **Auth**-Code bei Hostinger zu erhalten, folgen Sie den Schritten in der [Hostinger Dokumentation](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+Um den **EPP**- oder **Auth**-Code bei Hostinger zu erhalten, folgen Sie den Schritten in der [Hostinger Dokumentation](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger).
 
 ### Den Domaintransfer zu OVHcloud starten
 

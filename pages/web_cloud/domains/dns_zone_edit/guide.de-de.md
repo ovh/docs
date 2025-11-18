@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
+> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
+> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/8NwNKiG)
+
 ## Ziel
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

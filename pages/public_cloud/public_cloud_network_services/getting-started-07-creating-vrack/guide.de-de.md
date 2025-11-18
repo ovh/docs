@@ -35,7 +35,7 @@ Sie können auch die Abrechnung Ihrer Dienste über Ihr OVHcloud Kundencenter ve
 
 ### Horizon <a name="horizon"></a>
 
-Das [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/){.external} (unabhängig von OVHcloud) ist die originale Implementierung eines Dashboards für OpenStack, das ein Web-Benutzerinterface für OpenStack Dienste, insbesondere Nova, Swift und Keystone bereitstellt.
+Das [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) (unabhängig von OVHcloud) ist die originale Implementierung eines Dashboards für OpenStack, das ein Web-Benutzerinterface für OpenStack Dienste, insbesondere Nova, Swift und Keystone bereitstellt.
 
 Dieses umfassende technische Interface erlaubt es Ihnen, fast alle Aktionen in OpenStack zu verwalten. Dies wird eines der notwendigen Interfaces sein, wenn Sie mehr als zwei VLANs verwalten, private Netzwerkinterfaces zu Ihren Instanzen hinzufügen und personalisierte Images verwalten.
 
@@ -47,14 +47,14 @@ Lesen Sie die [Anleitung zu Horizon](/pages/public_cloud/public_cloud_cross_func
 
 ### OVHcloud APIv6
 
-Jede Aktion, die Sie im OVHcloud Kundencenter durchführen, erfolgt auf der Grundlage der [OVHcloud APIv6](https://api.ovh.com/).
+Jede Aktion, die Sie im OVHcloud Kundencenter durchführen, erfolgt auf der Grundlage der [OVHcloud APIv6](/links/api).
 Sie können mit der API darüber hinaus noch mehr Funktionen nutzen als über Ihr Kundencenter verfügbar sind.
 
 Das Interface ist weniger visuell als das OVHcloud Kundencenter, ermöglicht Ihnen aber die Durchführung zahlreicher Aktionen. So können Sie Ihre VLANs verwalten und personalisieren, Interfaces zu Ihren Instanzen hinzufügen oder hochpersonalisierte Server erstellen.
 
 Vor der Verwendung eines bestimmten API-Aufrufs müssen Sie möglicherweise mehrere Parameter abfragen.
 
-Sie können einfach von unserer Webseite aus auf die [API](https://api.ovh.com/) zugreifen, aber auch Ihre PHP- oder Python-Skripte verwenden, um API-Funktionen auszuführen.
+Sie können einfach von unserer Webseite aus auf die [API](/links/api) zugreifen, aber auch Ihre PHP- oder Python-Skripte verwenden, um API-Funktionen auszuführen.
 
 So können Sie Ihre Tasks frei automatisieren, Skripte verwenden, Ihre eigenen Funktionen optimieren etc.
 
@@ -86,7 +86,7 @@ Sie können dann bei Bedarf die dedizierten OpenStack APIs verwenden:
 > In einigen Fällen wird es einfacher sein, die OpenStack API zu verwenden, in anderen Fällen die APIs von Nova oder Neutron. 
 >
 > Je nach Version Ihres Clients und Betriebssystems können auch bestimmte Funktionen der OpenStack API fehlen. In dieser Anleitung werden je die einfachsten und intuitivsten Vorgehensweisen erklärt.<br>
-> Sie können auch [die offizielle Dokumentation von OpenStack einsehen](https://docs.openstack.org/xena/){.external}, wenn Sie die API tiefergehend verwenden möchten.
+> Sie können auch [die offizielle Dokumentation von OpenStack einsehen](https://docs.openstack.org/xena/), wenn Sie die API tiefergehend verwenden möchten.
 >
 
 ### Terraform
@@ -282,7 +282,7 @@ Lesen Sie [diesen Abschnitt](/pages/public_cloud/public_cloud_network_services/g
 
 #### Verwaltung der Netzwerkinterfaces über OpenStack Horizon
 
-Loggen Sie sich in [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} mit der im [ersten Teil dieser Anleitung](#horizon) beschriebenen Methode ein.
+Loggen Sie sich in [Horizon](https://horizon.cloud.ovh.net/auth/login/) mit der im [ersten Teil dieser Anleitung](#horizon) beschriebenen Methode ein.
 
 Wählen Sie die korrekte Zone im Menü aus.
 

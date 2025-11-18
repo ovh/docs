@@ -5,8 +5,8 @@ updated: 2025-04-28
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 .h-600 {
   max-height:600px !important;
@@ -54,7 +54,7 @@ Konta e-mail Exchange mogą być skonfigurowane w jednym z kompatybilnych progra
 
 Na ekranie Twojego urządzenia wybierz aplikację `Gmail`{.action}.
 
-![Exchange Android](images/exchange-android-00.png){.thumbnail .w-400}
+![Exchange Android](images/exchange-android-00.png){.thumbnail .h-600 .w-600}
 
 Dodanie konta zostanie wykonane w inny sposób, **jeśli żadne konto nie jest skonfigurowane** lub **jeśli konto zostało już skonfigurowane**. Wybierz jedną z 2 opisanych sytuacji:
 
@@ -62,37 +62,37 @@ Dodanie konta zostanie wykonane w inny sposób, **jeśli żadne konto nie jest s
 > **Pierwsza konfiguracja**
 >>
 >> Wybierz `Dodaj adres e-mail`{.action}<br><br>
->> ![Exchange Android](images/android-first.png){.thumbnail .h-600}
+>> ![Exchange Android](images/android-first.png){.thumbnail .h-600 .w-600}
 >>
 > **Istniejąca konfiguracja**
 >>
 >> 1. Przejdź do menu w lewym górnym rogu ekranu<br><br>
 >> 2. Wybierz `Ustawienia`{.action}<br><br>
 >> 3. Wybierz `Dodaj konto`{.action}<br><br>
->> ![Exchange Android](images/android-existing.png){.thumbnail}
+>> ![Exchange Android](images/android-existing.png){.thumbnail .h-600 .w-600}
 
 Postępuj zgodnie z kolejnymi instrukcjami, przechodząc przez poniższe karty:
 
 > [!tabs]
 > **Etap 1**
 >> Z menu Typy kont e-mail wybierz `Exchange i Office`{.action}.<br><br>
->> ![Exchange Android](images/exchange-android-01.png){.thumbnail .h-600}
+>> ![Exchange Android](images/exchange-android-01.png){.thumbnail .h-600 .w-600}
 >>
 > **Etap 2**
 >> Wpisz swój adres e-mail i kliknij `Dalej`{.action}.<br><br>
->> ![Exchange Android](images/exchange-android-02.png){.thumbnail .h-600}
+>> ![Exchange Android](images/exchange-android-02.png){.thumbnail .h-600 .w-600}
+>>
+> **Etap 3**
+>> Wpisz hasło wybrane dla Twojego konta e-mail i kliknij `Dalej`{.action}.<br><br>
+>> ![Exchange Android](images/exchange-android-03.png){.thumbnail .h-600 .w-600}
 >>
 > **Etap 4**
->> Wpisz hasło wybrane dla Twojego konta e-mail i kliknij `Dalej`{.action}.<br><br>
->> ![Exchange Android](images/exchange-android-03.png){.thumbnail .h-600}
+>> Uzupełnij stronę "**Konfiguracja adresu**"<br><br>- **E-mail**: Twój kompletny adres e-mail<br>- **Hasło**: hasło do Twojego konta e-mail<br>- **Certyfikat**: zostaw "Brak"<br>- **Domena\Nazwa użytkownika**: Twój kompletny adres e-mail<br>- **Serwer** : **ex?.mail.ovh.net** ( zastąp **?** przez [numer serwera Exchange](#addaccount))<br>- **Port**: 443<br>- **Rodzaj zabezpieczenia**: SSL/TLS<br><br>Kliknij `Dalej`{.action}, aby zatwierdzić konfigurację.<br><br>
+>> ![Exchange Android](images/exchange-android-04.png){.thumbnail .h-600 .w-600}
 >>
 > **Etap 5**
->> Uzupełnij stronę "**Konfiguracja adresu**"<br><br>- **E-mail**: Twój kompletny adres e-mail<br>- **Hasło**: hasło do Twojego konta e-mail<br>- **Certyfikat**: zostaw "Brak"<br>- **Domena\Nazwa użytkownika**: Twój kompletny adres e-mail<br>- **Serwer** : **ex?.mail.ovh.net** ( zastąp **?** przez [numer serwera Exchange](#addaccount))<br>- **Port**: 443<br>- **Rodzaj zabezpieczenia**: SSL/TLS<br><br>Kliknij `Dalej`{.action}, aby zatwierdzić konfigurację.<br><br>
->> ![Exchange Android](images/exchange-android-04.png){.thumbnail .h-600}
->>
-> **Etap 6**
 >> Wyświetli się komunikat "Możesz od tej chwili korzystać ze swojego konta". Naciśnij przycisk `OK`{.action}, aby zakończyć konfigurację.<br><br>
->> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600}
+>> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600 .w-600}
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz wysyłać i odbierać wiadomości e-mail, korzystając z aplikacji Gmail.
 
@@ -109,5 +109,9 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz wysyła
 [MX Plan - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [E-mail Pro - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do [grona naszych użytkowników](/links/community).

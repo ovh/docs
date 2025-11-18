@@ -21,7 +21,7 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 
 ## Voraussetzungen
 
-- Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting/).
+- Sie verfügen über ein kompatibles [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben die Option [1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules) verwendet, um eine neue Website zu erstellen.
 

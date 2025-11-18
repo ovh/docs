@@ -1,12 +1,14 @@
 ---
 title:  Déplacer une Additional IP
 excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
->
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
+> Cet article concerne le déplacement d'adresses Additional IPv4, qui est limité selon des [restrictions régionales](#limitations).
+> 
+> La configuration d'Additional IP dans un vRack (réseau privé) contourne ces restrictions régionales en perdant la dépendance à une seule région, tout en facilitant l'interconnexion sur une large gamme de services OVHcloud.
+> Apprenez à configurer des Additional IP dans un vRack avec nos guides pour [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) et [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objectif
@@ -29,14 +31,14 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal){.external} dans votre espace client OVHcloud.
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) dans votre espace client OVHcloud.
 - Disposer d'une [adresse Additional IP](/links/network/additional-ip).
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
-> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+> Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 >
 
 > [!warning]
@@ -84,7 +86,7 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ### Déplacer une IP via les API
 
-Connectez-vous sur la page web des [API OVHcloud](https://ca.api.ovh.com/).
+Connectez-vous sur la page web des [API OVHcloud](/links/api).
 
 Dans un premier temps, il est préférable de vérifier si l'adresse IP peut bien être déplacée.
 <br>Pour vérifier si l'IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :

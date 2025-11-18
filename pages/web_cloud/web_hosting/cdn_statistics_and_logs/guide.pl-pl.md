@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Sprawdzanie statystyk i logów CDN"
 excerpt: "Dowiedz się, jak sprawdzić statystyki i logi CDN Twojej strony WWW w ramach Twojego pakietu hostingowego"
-updated: 2025-05-22
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie
@@ -37,6 +37,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
 > **Etap 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
 >> W sekcji `Statystyki odwiedzin na stronie` kliknij przycisk `Wyświetl statystyki`{.action}.
 >>
@@ -74,6 +76,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
 > **Etap 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
 >> W części `Logi strony WWW` kliknij przycisk `Sprawdź logi`{.action}.
 >>

@@ -25,7 +25,7 @@ However, if you experience any difficulties completing some of these steps, plea
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
 - having the [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - access to the [OVHcloud Control Panel](/links/manager)
-- access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
+- access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/)
 
 ## Instructions
 
@@ -33,7 +33,7 @@ However, if you experience any difficulties completing some of these steps, plea
 
 This first step is essential. Infecting your computer with a malicious software can potentially give to a dishonest person access to all of your keyboard input. As a result, the credentials you use to log in on your OVHcloud Control Panel or the admin interface for your website would be compromised.
 
-In addition, the growing phenomenon of [ransomwares](https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks){.external} (about 400 cases in France in 2020) may not only lead to the encryption of all your personal data, but also jeopardise your business by making all your data, devices and softwares inaccessible. 
+In addition, the growing phenomenon of [ransomwares](https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks) (about 400 cases in France in 2020) may not only lead to the encryption of all your personal data, but also jeopardise your business by making all your data, devices and softwares inaccessible. 
 
 First, check the security of your Windows, Mac or Linux desktop:
 
@@ -92,10 +92,10 @@ Forms on websites can be targeted by hackers/spammers. Protect your forms agains
 
 Add a security plugin recommended by the CMS publisher to your website:
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla](https://www.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/){.external}
-- [PrestaShop](https://www.prestashop.com/en){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla](https://www.joomla.org/)
+- [Drupal](https://www.drupal.org/)
+- [PrestaShop](https://www.prestashop.com/en)
 
 ### Step 10 - Check that your hosting does not contain any malwares
 
@@ -109,7 +109,7 @@ As said in the [step 2](#backup) of this guide, to regurlaly perform [backups of
 
 But even having backups of your website on your desktop can not be considered as sufficient: you also need to test theses backups (especially the databases) to ensure that they will work properly the day you need them.
 
-You can perform these tests locally, for example by importing your data on [WAMP](https://www.wampserver.com/en/){.external}. Then you need also to be sure that you configure your WAMP server with the same parameters than OVHcloud [web hosting servers](https://webhosting-infos.hosting.ovh.net/).
+You can perform these tests locally, for example by importing your data on [WAMP](https://www.wampserver.com/en/). Then you need also to be sure that you configure your WAMP server with the same parameters than OVHcloud [web hosting servers](https://webhosting-infos.hosting.ovh.net/).
 
 You can also create a **test version** of your website (e.g.: test.mydomain.tld) within another folder in your FTP server (you can still use a basic template).
 

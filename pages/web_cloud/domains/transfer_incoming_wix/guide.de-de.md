@@ -64,7 +64,7 @@ Für den Transfer eines Wix-Domainnamens ist ein spezieller Ansatz erforderlich.
 
 ### Domain freigeben und Transfer-Code erhalten
 
-Um die Domain freizugeben und den Transfer-Code abzurufen, folgen Sie den Schritten in der [Wix Dokumentation](https://support.wix.com/de/article/deine-domain-von-wix-wegtransferieren){.external}.
+Um die Domain freizugeben und den Transfer-Code abzurufen, folgen Sie den Schritten in der [Wix Dokumentation](https://support.wix.com/de/article/deine-domain-von-wix-wegtransferieren).
 
 ### Den Domaintransfer zu OVHcloud starten
 

@@ -17,11 +17,11 @@ Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taill
 - [Avoir une plage d'IP non utilisée sur Internet](#notinuseontheinternet)
 - [Avoir une plage d'IP ou numéro AS avec une réputation propre](#cleanipreputation)
 - [Choix de la région](#choosearegion)
-- [Prouver que vous êtes propriétaire de la plage d'IP](#proveownership)
+- [Prouver que vous êtes propriétaire de la plage d'IP](#proveownershipip)
 - [Prouver que vous êtes propriétaire du numéro AS](#proveownershipas)
 - [Permettre à OVHcloud d'annoncer la plage d'IP](#announceip)
 
-### Avoir une plage d'IP dans un RIR pris en charge <a name="haveaniprangeinasupportedRIR"></a>
+### Avoir une plage d'IP dans un RIR pris en charge <a name="supportedrir"></a>
 
 Un Registre Internet régional (RIR) est une autorité régionale qui gère les adresses IP dans une région donnée. 
 
@@ -42,9 +42,9 @@ Pour que le bloc soit considéré comme valide, les blocs importés doivent êtr
 | ARIN (object « Network type ») | RIPE (object « status ») | APNIC (object « status »)
 | :--- | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |  &bull; Allocated-Portable <br>&bull; Allocated-Non-Portable <br>&bull; Assigned-Portable <br>&bull; Assigned-Non-Portable  |
-| **Pour plus d’informations :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |  **Pour plus d'informations :** <br>&bull; [« INETNUM Quick Guide »](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [« Recording network assignments »](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
+| **Pour plus d’informations :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[« Description of the INETNUM Object »](https://docs.db.ripe.net/entire-documentation-HTML.html#description-of-the-inetnum-object) |  **Pour plus d'informations :** <br>&bull; [« INETNUM Quick Guide »](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [« Recording network assignments »](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
 
-### Avoir une plage d'IP d'une taille prise en charge <a name="haveaniprangeofasupportedsize"></a>
+### Avoir une plage d'IP d'une taille prise en charge <a name="supportedsize"></a>
 
 Nous acceptons les blocs IP de tailles comprises entre /24 et /19. Vous trouverez ci-dessous le nombre de /24 que vous recevrez en fonction de la plage importée :
 
@@ -57,11 +57,11 @@ Nous acceptons les blocs IP de tailles comprises entre /24 et /19. Vous trouvere
 | /20 | 16 |
 | /19 | 32 |
 
-### Avoir une plage d'IP non utilisée sur Internet <a name="haveaniprangenotinuseontheinternet"></a>
+### Avoir une plage d'IP non utilisée sur Internet <a name="notinuseontheinternet"></a>
 
 La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annonce en terme de Border Gateway Protocol (BGP) sur au moins un réseau public). Vous êtes libre de ne pas satisfaire à ce prérequis, auquel cas OVHcloud ne pourra assurer le bon fonctionnement et le support de ce service.
 
-### Avoir une plage d'IP ou numéro AS avec une réputation propre <a name="haveacleanipreputation"></a>
+### Avoir une plage d'IP ou numéro AS avec une réputation propre <a name="cleanipreputation"></a>
 
 Nous pouvons refuser l’utilisation d’adresses IP ou de numéros AS ayant une mauvaise réputation, et nous nous réservons le droit de ne plus les annoncer si leur réputation a un impact négatif sur la réputation d’OVHcloud.
 
@@ -73,7 +73,7 @@ Vous devrez choisir une région où votre IP sera utilisée. Une fois la livrais
 
 Pour choisir une région, veuillez vous référer à la liste des régions disponibles accessible sur [cette page](/links/network/byoip).
 
-### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipontheiprange"></a>
+### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipip"></a>
 
 Afin de prouver que vous êtes le propriétaire de la plage d'adresses IP, il vous sera demandé de renseigner un *token* spécial que nous mettrons à disposition, dans l'objet *whois* public correspondant à votre plage.<br>
 Cela se fera via le portail web du RIR gérant vos adresses IP. Ce token sera fourni lors de la commande (il peut aussi être trouvé directement dans l'espace client OVHcloud, dans la section IP).
@@ -84,7 +84,7 @@ Cela se fera via le portail web du RIR gérant vos adresses IP. Ce token sera fo
 
 Il est nécessaire que le token apparaisse dans le champ de description (voir ci-dessus) de l'objet WHOIS, sur une ligne dédiée. D'autres lignes peuvent être présentes, à condition que le token soit présent dans sa propre ligne dédiée dans la description. Le token doit être ajouté avant la commande et ne doit pas être supprimé avant la fin de la livraison.
 
-### Prouver que vous êtes propriétaire du numéro AS (requis uniquement si vous fournissez un numéro AS) <a name="proveownershipoftheasnumber"></a>
+### Prouver que vous êtes propriétaire du numéro AS (requis uniquement si vous fournissez un numéro AS) <a name="proveownershipas"></a>
 
 Afin de prouver que vous êtes le propriétaire du numéro AS, il vous sera demandé de réutiliser le même *token* précédemment utilisé pour prouver la propriété de la plage d'adresses IP, et de l'insérer dans l'objet WHOIS public correspondant au numéro AS.<br>
 Cela se fera via le portail web du RIR gérant votre numéro AS. Ce token sera fourni lors de la commande.
@@ -95,7 +95,7 @@ Cela se fera via le portail web du RIR gérant votre numéro AS. Ce token sera f
 
 Il est nécessaire que le token apparaisse dans le champ de description (voir ci-dessus) de l'objet WHOIS, sur une ligne dédiée. D'autres lignes peuvent être présentes, à condition que le token soit présent dans sa propre ligne dédiée dans la description. Le token doit être ajouté avant la commande et ne doit pas être supprimé avant la fin de la livraison.
 
-### Permettre à OVHcloud d'annoncer la plage d'IP
+### Permettre à OVHcloud d'annoncer la plage d'IP <a name="announceip"></a>
 
 Sur le RIR où la plage d'adresses IP est inscrite, il faudra créer un objet de routage (*route object*) pour celle-ci (correspondant exactement à la plage d'IP), avec le numéro **AS** de OVHcloud ("AS16276") ou votre propre numéro AS dans le champ **origin** de l'objet de routage.
 

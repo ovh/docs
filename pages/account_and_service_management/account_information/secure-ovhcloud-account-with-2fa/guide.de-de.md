@@ -18,9 +18,14 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
+> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
+> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/QBbCw6r)
+
 ## Ziel
 
-OVHcloud stellt mit der Zwei-Faktor-Authentifizierung (2FA) Möglichkeiten zur Verfügung, um die Sicherheit Ihres Accounts und Ihrer Dienste zu erhöhen.
+OVHcloud stellt mit der Zwei-Faktor-Authentifizierung (2FA) Möglichkeiten zur Verfügung, um die Sicherheit Ihres Accounts und Ihrer Dienste zu erhöhen.  
 2FA ergänzt Ihre Anmeldung im Kundencenter mit Kennung und Passwort mithilfe eines zusätzlichen Geräts: z.B. Mobiltelefon, Tablet oder USB-Sicherheitsschlüssel.  
 
 **Diese Anleitung erklärt die verschiedenen Sicherheitsmethoden und deren Aktivierung.**
@@ -49,7 +54,7 @@ Wir bieten vier verschiedene Methoden an (klicken Sie jeweils auf die Tabs, um d
 > SMS
 >>![2FA SMS](images/sms.svg)<br>
 >> Für diese Methode müssen Sie Ihre Mobiltelefonnummer angeben.
->> Sie erhalten bei jedem Versuch, sich mit Ihrem OVHcloud-Konto zu verbinden, einen Einmalcode per SMS zugesandt.
+>> Sie erhalten bei jedem Versuch, sich mit Ihrem OVHcloud Kunden-Account zu verbinden, einen Einmalcode per SMS zugesandt.
 >>
 >> Der Hauptvorteil dieser Methode ist, dass Codes an ein Gerät separat von Ihrem Computer gesendet werden. Bei einer Kompromittierung Ihres Systems, zum Beispiel über Malware, bliebe Ihr Account dennoch abgesichert.
 >> Sie müssen jedoch über eine ausreichende Netzwerkabdeckung verfügen, um SMS empfangen zu können.
@@ -72,16 +77,16 @@ Wir bieten vier verschiedene Methoden an (klicken Sie jeweils auf die Tabs, um d
 >>
 > USB-Token
 >>![2FA U2F](images/key.svg)<br>
->> Für diese Methode benötigen Sie einen USB-"Schlüssel" **U2F**, den Sie bei jeder Verbindung mit Ihrem OVHcloud Kunden-Account an einen USB-Port Ihres Computers anschließen. Die Authentifizierung erfolgt dann automatisch.
+>> Für diese Methode benötigen Sie einen USB-"Schlüssel" (**U2F**), den Sie bei jeder Verbindung mit Ihrem OVHcloud Kunden-Account an einen USB-Port Ihres Computers anschließen. Die Authentifizierung erfolgt dann automatisch.
 >>
 >> Diese Methode bietet ein höheres Sicherheitsniveau, da sie auf einem separaten physischen Sicherheitsfaktor basiert, der vollständig von Ihrem Computer, Smartphone oder Tablet getrennt ist und weniger anfällig für Hacks ist.
 > Notfall-Codes
 >>![2FA codes](images/code.svg)<br>
->> Wenn Sie eine Zwei-Faktor-Authentifizierung konfigurieren (zum ersten Mal mit **SMS**, **OTP App** oder **U2F**), werden Ihnen im Kundencenter 10 Notfall-Codes zur **Einmalverwendung*** angezeigt.
+>> Wenn Sie eine Zwei-Faktor-Authentifizierung konfigurieren (zum ersten Mal mit **SMS**, **OTP App** oder **U2F**), werden Ihnen im Kundencenter 10 Notfall-Codes zur **Einmalverwendung** angezeigt.
 >>
 >> Diese Methode der Zwei-Faktor-Authentifizierung ergänzt eine bereits aktivierte Methode (mit **SMS**, **OTP App** oder **U2F**) und kann nicht alleinstehend aktiviert werden.
 >>
->> Bei jedem Anmeldeversuch können Sie einen der 10 Einmalcodes eingeben.
+>> Bei jedem Anmeldeversuch können Sie einen der 10 Einmalcodes eingeben.  
 >> Es ist wichtig, immer mindestens einen Notfall-Code übrig zu haben. Denken Sie daran, diese über Ihr Kundencenter zu erneuern, wenn Sie alle verwendet oder sie verloren haben.
 
 ### Schritt 1: Aktivieren Sie Ihre erste Methode der Zwei-Faktor-Authentifizierung <a name="enabling-2fa"></a>
@@ -97,7 +102,7 @@ Klicken Sie danach auf `Sicherheit`{.action}, und schließlich auf `Die Zwei-Fak
 >> Wählen Sie die Methode SMS aus und klicken Sie auf `Weiter`{.action}.
 >>
 >>![2FA SMS](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
->> Geben Sie Ihre Mobiltelefonnummer im internationalen Format ein (zum Beispiel +33612345678 für ein Mobiltelefon in Frankreich) und bestätigen Sie.
+>> Geben Sie Ihre Mobiltelefonnummer im internationalen Format ein (zum Beispiel +49612345678 für eine Nummer in Deutschland) und bestätigen Sie.
 >> Ein Validierungscode wird dann per SMS an die von Ihnen angegebene Nummer gesendet.
 >>
 >>![2FA SMS](images/2fasms3edit.png){.thumbnail width="400"}<br>
@@ -136,7 +141,7 @@ Nachdem Sie die erste Methode hinzugefügt haben, können Sie auch **eine oder z
 
 Wenn Sie zum ersten Mal eine Zwei-Faktor-Authentifizierung hinzufügen, werden Ihnen im Kundencenter 10 **Notfall-Codes** zur einmaligen Verwendung angezeigt.
 
-**Bewahren Sie diese gut auf**. Wir empfehlen Ihnen, sie in einem Passwort-Manager wie [Keepass](https://keepass.info/){.external} oder [Bitwarden](https://bitwarden.com/) zu speichern (beide Apps sind kostenlos).
+**Bewahren Sie diese gut auf**. Wir empfehlen Ihnen, sie in einem Passwort-Manager wie [Keepass](https://keepass.info/) oder [Bitwarden](https://bitwarden.com/) zu speichern (beide Apps sind kostenlos).
 
 ![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
@@ -152,7 +157,7 @@ Sie können die Notfall-Codes über Ihr Kundencenter neu generieren oder lösche
 
 ### Schritt 3 - Loggen Sie sich mit der Zwei-Faktor-Authentifizierung in Ihr OVHcloud Kundencenter ein <a name="login-2fa"></a>
 
-Gehen Sie auf die [Authentifizierungsseite im OVHcloud Kundencenter](/links/manager){.external} und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
+Gehen Sie auf die [Authentifizierungsseite im OVHcloud Kundencenter](/links/manager) und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
 
 Im Anmeldebildschirm wird die zuletzt verwendete oder aufgefüllte Methode der Zwei-Faktor-Authentifizierung angezeigt. Wenn Sie eine andere Methode verwenden möchten, klicken Sie auf den Button `Eine andere Methode verwenden`{.action}.
 
@@ -172,11 +177,11 @@ Wenn Ihr Peripheriegerät (Mobiltelefon/Smartphone/Sicherheitsschlüssel) verlor
 
 - Verwenden Sie [die aktiven Notfall-Codes](#codes), die Sie gesichert haben.
 - Sie können ein anderes Gerät zur Zwei-Faktor-Authentifizierung verwenden, wenn Sie mehrere Geräte zur Zwei-Faktor-Authentifizierung aktiviert haben.
-- [Die Zwei-Faktor-Authentifizierung deaktivieren](#desactivation).
+- [Die Zwei-Faktor-Authentifizierung deaktivieren](#disable-2fa).
 
 > [!warning]
 >
-> Wenn eines Ihrer Geräte verloren gegangen ist oder gestohlen wurde, kann dies die Sicherheit Ihres OVHcloud-Accounts gefährden.
+> Wenn eines Ihrer Geräte verloren gegangen ist oder gestohlen wurde, kann dies die Sicherheit Ihres OVHcloud Kunden-Accounts gefährden.
 > Sobald Sie wieder Zugang zu Ihrem Kundencenter haben, entfernen Sie **dieses Gerät aus der Liste der Geräte, die für die Zwei-Faktor-Authentifizierung verwendet werden**.
 >
 > Weitere Informationen zum Entfernen eines Geräts finden Sie im nächsten Abschnitt.
@@ -202,7 +207,7 @@ Klicken Sie danach auf `Sicherheit`{.action}, dann auf die `...`{.action} rechts
 Anschließend wird ein letzter Bestätigungscode an das zu löschende Gerät gesendet. Geben Sie diesen Code in das angezeigte Fenster ein und klicken Sie auf `Bestätigen`{.action}, um den Löschvorgang abzuschließen.
 
 Wenn Sie keinen Zugriff mehr auf das Gerät haben, das Sie löschen möchten, können Sie es nicht selbst aus dem OVHcloud Kundencenter löschen.
-In diesem Fall **kontaktieren Sie unsere Support-Teams direkt**, indem Sie [ein Ticket über das Help Center erstellen](https://help.ovhcloud.com/csm?id=csm_get_help) oder indem Sie den unten beschriebenen Vorgang ausführen [#2FA-deletion].
+In diesem Fall **kontaktieren Sie unsere Support-Teams direkt**, indem Sie [ein Ticket über das Help Center erstellen](https://help.ovhcloud.com/csm?id=csm_get_help) oder durch Befolgen des [unten](#2FA-deletion) beschriebenen Vorgangs.
 
 > [!warning]
 >

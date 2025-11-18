@@ -1,7 +1,7 @@
 ---
 title: HA-NAS über NFS mounten
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
-updated: 2024-11-08
+updated: 2025-10-09
 ---
 
 ## Ziel 
@@ -133,6 +133,24 @@ root@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_na
 ```
 
 Sie können nun über den angegebenen Ordner auf Ihre gemountete Partition zugreifen.
+
+### Microsoft Windows - Besonderheiten
+
+Stellen Sie sicher, dass der Windows-Benutzer, der auf Ihr NAS-HA zugreifen muss, über die erforderlichen Rechte verfügt.
+
+Das UID/GID-Paar muss auf „0” (UNIX-Root-Rechte) gesetzt sein.
+
+Ist dies nicht der Fall, können beim Zugriff auf das NAS-HA Fehler auftreten. Der Grund dafür ist, dass bei Aktivierung des NFS-Protokolls auf einem Windows-Rechner automatisch ein UNIX-Benutzer mit einer Standard-UID und -GID von „-2” (oder 4294967294) erstellt wird, wodurch der Zugriff eingeschränkt wird.
+
+Als Workaround können die UID und GID auf dem Windows-Rechner, der auf Ihr NAS-HA zugreift, auf „0“ gesetzt werden:
+
+1. Öffnen Sie den Registrierungseditor (regedit) auf dem Client-Rechner.
+1. Navigieren Sie zu folgendem Schlüssel: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Erstellen Sie die folgenden zwei DWORD-Einträge: **AnonymousUid** und **AnonymousGid**.
+1. Weisen Sie jedem dieser Einträge den Wert „0“ zu.
+1. Starten Sie den NFS-Dienst auf dem Client-Computer neu, um die Änderungen zu übernehmen.
+
+Alle Mount-Optionen sind auf der [Microsoft-Website](https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/mount) verfügbar.
 
 ### Proxmox
 

@@ -68,7 +68,7 @@ Musisz również:
 
 ### Odblokowanie domeny i pobranie kodu transferu
 
-Aby odblokować domenę i uzyskać kod transferu, wykonaj kroki opisane w [dedykowanej dokumentacji home.pl](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form){.external}.
+Aby odblokować domenę i uzyskać kod transferu, wykonaj kroki opisane w [dedykowanej dokumentacji home.pl](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form).
 
 ### Rozpocznij transfer domeny do OVHcloud
 

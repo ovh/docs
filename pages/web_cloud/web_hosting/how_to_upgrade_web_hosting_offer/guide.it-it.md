@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come far evolvere la tua offerta"
 excerpt: "Questa guida ti mostra come modificare il piano di abbonamento di un hosting Web OVHcloud"
-updated: 2024-10-30
+updated: 2025-10-21
 ---
 
 ## Obiettivo
@@ -12,7 +12,7 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 - più spazio di archiviazione FTP;
 - banche dati supplementari; 
 - di indirizzi email aggiuntivi;
-- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](/links/web/hosting-professional-offer)) o il [servizio Web Cloud Databases](/links/web/databases){.external} (incluso nelle [offerte Performance](/links/web/hosting-performance-offer).
+- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](/links/web/hosting-professional-offer)) o il [servizio Web Cloud Databases](/links/web/databases) (incluso nelle [offerte Performance](/links/web/hosting-performance-offer)).
 
 **Questa guida ti mostra come far evolvere la tua soluzione di hosting OVHcloud senza interruzioni del servizio.**
 
@@ -38,13 +38,28 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 
 ### Modificare il piano di hosting Web <a name="modify"></a>
 
-Per modificare l’abbonamento, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting interessato.
+Per modificare l’abbonamento, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Nel riquadro `Abbonamento`, clicca sul pulsante `...`{.action} a destra di `Servizio` e poi su `Modifica offerta`{.action}.
-
-![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
-
-Seleziona il nuovo abbonamento e la durata. Conferma i contratti corrispondenti e clicca su `Invia`{.action}.
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nel riquadro **Abbonamento**, clicca sul pulsante `...`{.action} a destra di **Servizio** e poi su `Modifica offerta`{.action}.
+>>
+>> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
+>>
+>> Seleziona il nuovo abbonamento e la durata. Conferma i contratti corrispondenti e clicca su `Invia`{.action}.
 
 ### Verifica la compatibilità dell’hosting Web con una soluzione della gamma inferiore <a name="checks"></a>
 
@@ -62,9 +77,41 @@ Assicurati che la nuova offerta includa un numero sufficiente di [database](/lin
 
 In caso contrario, eliminare i database inutilizzati e, se necessario, ridurre la quantità di dati in essi contenuti. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta. Per assistenza sulle operazioni da effettuare, contatta i [partner OVHcloud](/links/partner).
 
-In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina, clicca sulla scheda `Database`{.action} e poi sul pulsante `...`{.action} a destra del database in questione e poi su `Ricalcola la quota`{.action}.
+In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
-![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `Database`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> Sulla nuova pagina appare una tabella con i database creati. A destra del database, clicca sul pulsante `...`{.action} e poi su `Ricalcola la quota`{.action}.
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Step 5**
+>>
+>> Nella nuova finestra, clicca direttamente sul pulsante `Conferma`{.action}.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Una volta avviata, l'operazione potrebbe richiedere alcuni minuti. Al termine, lo stato "READ ONLY" del database scompare.
+>> Il database sarà di nuovo pienamente operativo.
 
 > [!primary]
 >
@@ -73,10 +120,28 @@ In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizza
 
 #### 2 - Web Cloud Databases
 
-Se utilizzi l’offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) inclusa con il tuo hosting Web [Performance](/links/web/hosting-performance-offer) e vuoi passare il tuo hosting Web su un’offerta [Pro](/links/web/hosting-professional-offer), dovrai innanzitutto dissociare l’offerta Web Cloud dal tuo hosting Web.<br>
-Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina, rimani sulla scheda `Informazioni generali`{.action}. Nella colonna centrale `Configurazione`, clicca sul pulsante `...`{.action} a destra della voce `Web Cloud Databases`{.action} e poi su `Scollega`{.action}.
+Se utilizzi l’offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) inclusa con il tuo hosting Web [Performance](/links/web/hosting-performance-offer) e vuoi passare il tuo hosting Web su un’offerta [Pro](/links/web/hosting-professional-offer), dovrai innanzitutto dissociare l’offerta Web Cloud dal tuo hosting Web.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
+Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra della voce **Web Cloud Databases** e poi su `Scollega`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 
 Questa azione permette di ordinare una soluzione Web Cloud Databases indipendente dal proprio abbonamento *Performance*. I dati del tuo server saranno conservati.
 
@@ -89,9 +154,28 @@ Se non vuoi conservare questi dati, puoi anche eliminare la tua soluzione Web Cl
 
 Assicurati che la nuova soluzione offra [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection) sufficiente per importare i file dell’hosting corrente.
 
-Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Visualizzi la pagina `Informazioni generali`{.action} con la voce `Spazio Disco`.
+Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nel riquadro **Informazioni generali**, trovi la dicitura **Spazio disco**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> Lo spazio di storage utilizzato compare sotto questa voce.
 
 #### 4 - Indirizzi email
 
@@ -153,17 +237,55 @@ Con l'[opzione Boost](/links/web/hosting-options-boost), disponibile sulle nostr
 
 Se l’opzione **Boost** è adatta alle tue esigenze, trovi qui sotto le istruzioni per **attivare** o **disattivare** questa opzione sul tuo hosting.
 
+Per **attivare l’opzione Boost**, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+
 > [!tabs]
-> **Attiva l'opzione Boost**
+> **Passaggio 1**
 >>
->> Per attivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nel riquadro `Informazioni generali` della pagina che appare, clicca sul pulsante `...`{.action} a destra di `Boost` e poi su `Boost`{.action}.<br><br>
->>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
-> **Disattiva l'opzione Boost**
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
->> Per disattivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Accedi alla scheda `Più` e clicca su `Boost`{.action}.<br>
->> Visualizzi la tabella di utilizzo dell’opzione Boost e clicca su `Disattiva l’offerta Boost`{.action}.<br><br>
->>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nel riquadro **Informazioni generali** della pagina che appare, clicca sul pulsante `...`{.action} a destra di **Boost** e poi su `Boost`{.action}.
+>>
+>> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+
+Per **disattivare l’opzione Boost**, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `Più`{.action} e clicca su `Boost`{.action}.
+>>
+>> ![More tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more.png){.thumbnail}
+>>
+>> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Visualizzi la tabella di utilizzo dell’opzione Boost e clicca su `Disattiva l’offerta Boost`{.action}.
+>>
+>> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
 
 #### La fatturazione in caso di modifica dell'offerta <a name="billing"></a>
 

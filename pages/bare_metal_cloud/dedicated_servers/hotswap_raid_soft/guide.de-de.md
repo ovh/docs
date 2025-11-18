@@ -15,7 +15,7 @@ Wenn eine Festplatte Ihres Servers nicht mehr funktioniert, können Sie diese im
 - Sie verfügen über einen mHG, HG oder BHG Server.
 - Sie haben ein Software-RAID (mit LSI-Karte).
 - Sie haben Zugriff via SSH (Linux) oder RDP (Windows).
-- Sie haben das Tool “sas2ircu” installiert (Sie finden dieses über die Suchmaschine [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
+- Sie haben das Tool “sas2ircu” installiert (Sie finden dieses über die Suchmaschine [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu)).
 
 ## Beschreibung
 
@@ -236,7 +236,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ### Windows
 
@@ -288,7 +288,7 @@ Sie können das Blinken der Festplatte deaktivieren, indem Sie im Befehl “on�
 
 Führen Sie diese Aktion über das Interface “**Datenträgerverwaltung**” Ihres Windows Servers aus.
 
-Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Weiterführende Informationen
 

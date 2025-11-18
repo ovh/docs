@@ -4,6 +4,11 @@ excerpt: Erfahren Sie hier, wie Sie Ihre Dienstleistungen und deren Verlängerun
 updated: 2025-01-28
 ---
 
+> [!success]
+> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
+> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
+> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/FFBTC2m)
+
 ## Ziel
 
 Das Menü **Meine Angebote und Dienste** in Ihrem OVHcloud Kundencenter ermöglicht es Ihnen, den Status Ihrer Dienstleistungen zu überprüfen, diese zu verlängern, den Verlängerungstyp zu ändern, Rechnungen zu begleichen oder deren Zahlung im Voraus zu planen.
@@ -29,7 +34,7 @@ Folgende Themen werden erläutert:
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über aktive OVHcloud Dienste.
 - Sie sind [Rechnungskontakt](/pages/account_and_service_management/account_information/managing_contacts#definition) Ihrer OVHcloud Dienste.
-- Sie verfügen über ein gültiges Zahlungsmittel in Ihrem OVHcloud Account, siehe auch unsere Anleitung „[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)“.
+- Sie verfügen über ein gültiges Zahlungsmittel in Ihrem OVHcloud Account, siehe auch unsere Anleitung “[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”.
 
 <a name="auto-vs-manual"></a>
 
@@ -202,11 +207,11 @@ In der folgenden Tabelle sind die möglichen gruppierten Aktionen aufgeführt.
 > Ich kann mich nicht bei meinem OVHcloud Kunden-Account anmelden, um meine Dienste zu verlängern. Was kann ich tun?
 >> Lesen Sie den Abschnitt „[Was, wenn ich mich nicht einloggen kann?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)“ unserer Anleitung „[In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)“.
 > Ich möchte die automatische Verlängerung aktivieren, erhalte aber eine Fehlermeldung. Was soll ich tun?
->> Damit die automatische Verlängerung für Ihre Dienste aktiviert werden kann, muss Ihrem OVHcloud Kunden-Account ein gültiges Zahlungsmittel hinzugefügt worden sein. Ist das nicht der Fall oder ist das Zahlungsmittel abgelaufen, erscheint beim Versuch, die automatische Verlängerung zu aktivieren, eine Fehlermeldung im Kundencenter. Lesen Sie unsere Anleitung „[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)“, um eine Zahlungsart zu überprüfen oder hinzuzufügen.
+>> Damit die automatische Verlängerung für Ihre Dienste aktiviert werden kann, muss Ihrem OVHcloud Kunden-Account ein gültiges Zahlungsmittel hinzugefügt worden sein. Ist das nicht der Fall oder ist das Zahlungsmittel abgelaufen, erscheint beim Versuch, die automatische Verlängerung zu aktivieren, eine Fehlermeldung im Kundencenter. Lesen Sie unsere Anleitung “[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”, um eine Zahlungsart zu überprüfen oder hinzuzufügen.
 > Meine Zahlungsart ist nicht mehr gültig. Wie füge ich eine neue Zahlungsart hinzu?
->> Lesen Sie unsere Anleitung „[Meine Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)“. Bevor Sie ein veraltetes Zahlungsmittel löschen können, müssen Sie ein neues gültiges Zahlungsmittel zu Ihrem OVHcloud Kunden-Account hinzufügen.
+>> Lesen Sie unsere Anleitung “[Meine Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”. Bevor Sie ein veraltetes Zahlungsmittel löschen können, müssen Sie ein neues gültiges Zahlungsmittel zu Ihrem OVHcloud Kunden-Account hinzufügen.
 > Ich habe eine Frage zur Verlängerung meiner Domain
->> Lesen Sie unsere Anleitung „[Meine OVHcloud Domainnamen verlängern](/pages/web_cloud/domains/autorenew_domain_name)“.
+>> Lesen Sie unsere Anleitung “[Meine OVHcloud Domainnamen verlängern](/pages/web_cloud/domains/autorenew_domain_name)”.
 > Ich möchte keine weiteren automatischen Zahlungen mehr, aber meine Dienstleistung nicht kündigen. Was soll ich tun?
 >> Wenn Ihr Dienst dies erlaubt, können Sie die Aktion [Verlängerung konfigurieren](#actions) verwenden und so eine manuelle Verlängerung auswählen.
 > Ich habe meine Dienstleistung für 12 Monate verlängert. Kann ich meine Auswahl ändern?

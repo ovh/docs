@@ -6,7 +6,7 @@ updated: 2024-01-22
 
 ## Objective
 
-You can identify an old-range VPS by the reference name displayed in your [OVHcloud Control Panel](/links/manager): If this internal identifier has the format *vpsXXXX.ovh.net* (in which *X* stands for a number) and you have not migrated the corresponding VPS to our [current product line](https://www.ovhcloud.com/en-gb/vps/), this is a legacy VPS. There are a few differences to consider when managing such a service.
+You can identify an old-range VPS by the reference name displayed in your [OVHcloud Control Panel](/links/manager): If this internal identifier has the format *vpsXXXX.ovh.net* (in which *X* stands for a number) and you have not migrated the corresponding VPS to our [current product line](/links/bare-metal/vps), this is a legacy VPS. There are a few differences to consider when managing such a service.
 
 The reference name of a current VPS looks like this: *vps-XXXXXXX.vps.ovh.net* (where *X* can be a number or a letter).
 

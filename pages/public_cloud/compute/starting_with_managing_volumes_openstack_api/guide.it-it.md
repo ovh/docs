@@ -61,7 +61,7 @@ optional arguments:
 
 > [!primary]
 >
-> Puoi consultare anche la documentazione del client Openstack direttamente [sul sito OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Puoi consultare anche la documentazione del client Openstack direttamente [sul sito OpenStack](https://docs.openstack.org/python-openstackclient/latest/).
 >
 
 ### Operazioni basiche

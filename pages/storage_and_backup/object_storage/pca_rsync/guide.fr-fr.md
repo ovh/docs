@@ -23,7 +23,7 @@ Vous pouvez générer votre identifiant et votre mot de passe OpenStack à l'aid
 
 ### TenantName
 
-Le TenantName correspond au nom de votre projet Horizon. Pour obtenir le TenantName, vous devez vous connecter à l'interface web OpenStack : [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/){.external}.
+Le TenantName correspond au nom de votre projet Horizon. Pour obtenir le TenantName, vous devez vous connecter à l'interface web OpenStack : [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/).
 
 Une fois connecté, le TenantName est visible en haut de la page.
 

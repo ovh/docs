@@ -1,7 +1,7 @@
 ---
 title: "Migrer son site web et ses services associés vers OVHcloud"
 excerpt: "Découvrez comment migrer votre site web, votre nom de domaine, votre base de données et vos e-mails chez OVHcloud sans interruption de services"
-updated: 2025-01-08
+updated: 2025-10-28
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Ce guide vous présente les différentes actions à réaliser pour migrer l'ense
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -133,7 +133,7 @@ Pour cela, remplacez les informations de connexion de votre ancienne base de don
 > Pour lier votre nouvelle base de données si vous utilisez un Content Management System (CMS) comme WordPress, Joomla!, Drupal ou PrestaShop, retrouvez les informations sur leurs fichiers de configuration depuis **l'étape 2** du guide « [modification du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password) ».
 >
 
-Déclarez/autorisez votre nom de domaine externe sur votre hébergement web OVHcloud via notre guide « [gestion des multisites d'un hébergement web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Déclarez bien le « nom » du dossier racine que vous avez choisi au début de l'[étape 4](#step4). Pour rappel, il s'agit du dossier dans lequel vous avez placé vos fichiers dans votre espace de stockage FTP.
+Déclarez/autorisez votre nom de domaine externe sur votre hébergement web OVHcloud via notre guide « [gestion des sites web d'un hébergement web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Déclarez bien le « nom » du dossier racine que vous avez choisi au début de l'[étape 4](#step4). Pour rappel, il s'agit du dossier dans lequel vous avez placé vos fichiers dans votre espace de stockage FTP.
 
 > [!warning]
 >
@@ -184,7 +184,7 @@ Après la propagation DNS, vos nouveaux e-mails sont désormais tous reçus sur 
 
 Pour migrer le contenu de vos anciennes adresses e-mail, deux options s'offrent à vous.
 
-**Option 1** : utilisez notre outil [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} qui permet de copier le contenu des adresses e-mail enregistrées chez votre ancien prestataire vers celles créées chez OVHcloud. Vous pouvez vous aider de notre guide « [Migrer des comptes e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) ».
+**Option 1** : utilisez notre outil [OVH Mail Migrator (OMM)](https://omm.ovh.net/) qui permet de copier le contenu des adresses e-mail enregistrées chez votre ancien prestataire vers celles créées chez OVHcloud. Vous pouvez vous aider de notre guide « [Migrer des comptes e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) ».
 
 Nous vous conseillons de ne pas utiliser le `Type de serveur`{.action} **POP** dans la partie `Compte source`{.action}. En effet, ce protocole efface les e-mails de votre ancien serveur pour les envoyer vers le serveur OVHcloud de destination. Vous ne pourriez alors plus comparer le contenu de l'ancienne et de la nouvelle adresse e-mail.
 
@@ -252,7 +252,7 @@ Après avoir suivi les dix étapes dans l'ordre, l'intégralité de votre site w
 
 [Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

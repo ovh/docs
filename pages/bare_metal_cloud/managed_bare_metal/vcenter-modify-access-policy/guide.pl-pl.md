@@ -12,12 +12,12 @@ Aby zwiększyć bezpieczeństwo infrastruktury Managed Bare Metal, można ograni
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Wykupienie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swoją usługę w sekcji `Managed Bare Metal`{.action} na pasku nawigacji po lewej stronie.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swoją usługę w sekcji `Managed Bare Metal`{.action} na pasku nawigacji po lewej stronie.
 
 Na stronie głównej serwisu kliknij zakładkę `Bezpieczeństwo`{.action}, a następnie `Zmień politykę dostępu do vCenter`{.action}.
 
@@ -36,4 +36,4 @@ W oknie, które się wyświetli rozwiń menu i wybierz “Otwarta” lub "Ograni
 
 [Autoryzacja IP, które mogą łączyć się z vCenter](/pages/bare_metal_cloud/managed_bare_metal/vcenter-authorise-ip-access)
 
-Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/)

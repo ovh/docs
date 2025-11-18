@@ -12,7 +12,7 @@ This tutorial will show you how to configure certain features of your web hostin
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 **This tutorial explains how to secure your WordPress with one or more .htaccess files.**
@@ -24,9 +24,9 @@ This tutorial will show you how to configure certain features of your web hostin
 
 **.htaccess** files can be created and modified with text editors, for example:
 
-- [Notepad](https://support.microsoft.com/en-us/windows/help-in-notepad-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} on Windows
-- [TextEdit](https://support.apple.com/en-au/guide/textedit/welcome/mac){.external} on macOS 
-- [Notepad++](https://notepad-plus-plus.org/){.external}.
+- [Notepad](https://support.microsoft.com/en-us/windows/help-in-notepad-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c) on Windows
+- [TextEdit](https://support.apple.com/en-au/guide/textedit/welcome/mac) on macOS 
+- [Notepad++](https://notepad-plus-plus.org/).
 
 > [!primary]
 >

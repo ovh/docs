@@ -19,15 +19,15 @@ This line already gives a lot of information but it can be difficult to extract 
 This guide will present you with three non-intrusive ways to send logs to the Logs Data platform:
 
 - ask Apache to pipe log entries directly to the platform.
-- use [syslog-ng](https://syslog-ng.org/){.external} to parse and send all of your logs
-- setup [filebeat](https://www.elastic.co/fr/products/beats/filebeat){.external} with apache module
+- use [syslog-ng](https://syslog-ng.org/) to parse and send all of your logs
+- setup [filebeat](https://www.elastic.co/fr/products/beats/filebeat) with apache module
 
 ## Requirements
 
 In order to follow this guide you will need:
 
 - The openssl package: as we are using it to send the logs securely.
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29)
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ## Instructions
@@ -169,7 +169,7 @@ If you want to use your own log format and include some useful information here 
 |runtime_num|Execution time for processing some request,  e.g. X-Runtime header for application server or processing time of SQL for DB server.|`%{X-Runtime}o`|$upstream_http_x_runtime|
 |apptime_num|Response time from the upstream server|-|$upstream_response_time|
 
-The full list of logs formats that can be used in Apache are described here [mod_log_config.html](http://httpd.apache.org/docs/current/en/mod/mod_log_config.html){.external}
+The full list of logs formats that can be used in Apache are described here [mod_log_config.html](http://httpd.apache.org/docs/current/en/mod/mod_log_config.html)
 
 ### Using Filebeat
 
@@ -180,5 +180,5 @@ The complete procedure of its installation is described [on this page](/pages/ma
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

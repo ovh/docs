@@ -141,12 +141,12 @@ ubuntu@ubuntu:~$ dmesg | grep SEV
 
 ## References and additional resources
 
-- [AMD Secure Encrypted Virtualization (SEV)](https://developer.amd.com/sev/){.external}
-- [libvirt : Launch security with AMD SEV](https://libvirt.org/kbase/launch_security_sev.html){.external}
-- [libvirt XML domain format - launchSecurity](https://libvirt.org/formatdomain.html#launchSecurity){.external}
-- [libvirt domain capabilities - SEV](https://libvirt.org/formatdomaincaps.html#elementsSEV){.external}
-- [github.com/AMDESE/AMDSEV](https://github.com/AMDESE/AMDSEV){.external}
-- [github.com/AMDESE/sev-tool](https://github.com/AMDESE/sev-tool){.external}
+- [AMD Secure Encrypted Virtualization (SEV)](https://developer.amd.com/sev/)
+- [libvirt : Launch security with AMD SEV](https://libvirt.org/kbase/launch_security_sev.html)
+- [libvirt XML domain format - launchSecurity](https://libvirt.org/formatdomain.html#launchSecurity)
+- [libvirt domain capabilities - SEV](https://libvirt.org/formatdomaincaps.html#elementsSEV)
+- [github.com/AMDESE/AMDSEV](https://github.com/AMDESE/AMDSEV)
+- [github.com/AMDESE/sev-tool](https://github.com/AMDESE/sev-tool)
 
 ## Go further
 

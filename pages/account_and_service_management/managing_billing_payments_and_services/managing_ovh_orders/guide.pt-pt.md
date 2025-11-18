@@ -82,7 +82,7 @@ Aparecerá a janela seguinte, que lhe permite um acompanhamento em quatro etapas
 
 ### Direito de arrependimento
 
-O artigo 12.4 das [Condições Gerais de Serviço](https://www.ovhcloud.com/pt/terms-and-conditions/contracts/) especifica que "*Consumidores possuem direito de arrependimento, tal qual previsto na legislação. e podem exercer este direito no prazo de catorze (14) dias a contar do dia seguinte ao da Encomenda, sem ter de justificar qualquer motivo nem pagar qualquer penalização, salvo despesas de devolução, se aplicável.*".
+O artigo 12.4 das [Condições Gerais de Serviço](/links/terms-conditions-contracts) especifica que "*Consumidores possuem direito de arrependimento, tal qual previsto na legislação. e podem exercer este direito no prazo de catorze (14) dias a contar do dia seguinte ao da Encomenda, sem ter de justificar qualquer motivo nem pagar qualquer penalização, salvo despesas de devolução, se aplicável.*".
 
 > [!warning]
 >

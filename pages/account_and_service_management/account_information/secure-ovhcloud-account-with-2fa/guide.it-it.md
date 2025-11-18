@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
+> Condividi con noi le tue opinioni e idee.<br>
+> [Accedi al sondaggio.](https://s.elq.fr/ovhext/QBbCw6r)
+
 ## Obiettivo
 
 OVHcloud mette a disposizione gli strumenti per rafforzare la sicurezza del tuo account e dei tuoi servizi.
@@ -135,9 +140,9 @@ Una volta aggiunto il primo metodo, **aggiungi uno o due altri metodi** per aver
 
 ### Step 2 - salvare i codici di sicurezza <a name="codes"></a>
 
-Quando aggiungi per la prima volta un metodo di autenticazione a due fattori, nello Spazio Cliente vengono visualizzati 10 codici di sicurezza** monouso.
+Quando si aggiunge la doppia autenticazione per la prima volta, nell'area clienti vengono visualizzati 10 codici di emergenza **utilizzati una sola volta**.
 
-**Conservali con cura**. Ti consigliamo di salvarli con un gestore di password, come [KeePass](https://keepass.info/){.external} o [Bitwarden](https://bitwarden.com/) (queste due applicazioni sono gratuite).
+**Conservali con cura**. Ti consigliamo di salvarli con un gestore di password, come [KeePass](https://keepass.info/) o [Bitwarden](https://bitwarden.com/) (queste due applicazioni sono gratuite).
 
 ![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
@@ -153,7 +158,7 @@ I codici di sicurezza possono essere rigenerati o eliminati direttamente dallo S
 
 ### Step 3 - Accedi allo Spazio Cliente OVHcloud con la doppia autenticazione <a name="login-2fa"></a>
 
-Accedi alla [pagina di accesso allo Spazio Cliente OVHcloud](/links/manager){.external} e inserisci identificativo (o indirizzo email principale) e password.
+Accedi alla [pagina di accesso allo Spazio Cliente OVHcloud](/links/manager) e inserisci identificativo (o indirizzo email principale) e password.
 
 Nella schermata di login viene visualizzato l’ultimo metodo di autenticazione a due fattori utilizzato o inserito. Per utilizzarne un altro, clicca sul pulsante `Prova un altro metodo`{.action}.
 

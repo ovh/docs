@@ -12,7 +12,7 @@ You can manage your Public Cloud instances in the [OVHcloud Control Panel](/link
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your project
 - Access to the [OVHcloud Control Panel](/links/manager)
 

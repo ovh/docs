@@ -47,11 +47,11 @@ Zapoznaj się z następującą [instrukcją](/pages/public_cloud/public_cloud_cr
 
 ### APIv6 OVHcloud
 
-Każde działanie podejmowane w Panelu klienta OVHcloud można wywołać za pomocą interfejsu [APIv6 OVHcloud](https://api.ovh.com/). Oferuje on nawet więcej możliwości niż interfejs graficzny.
+Każde działanie podejmowane w Panelu klienta OVHcloud można wywołać za pomocą interfejsu [APIv6 OVHcloud](/links/api). Oferuje on nawet więcej możliwości niż interfejs graficzny.
 
 Interfejs API jest mniej wizualny niż Panel klienta OVHcloud, ale pozwala na wykonanie dużej liczby operacji. Możesz zarządzać i dostosowywać VLAN, dodawać interfejsy do instancji lub tworzyć wysoko spersonalizowane serwery.
 
-Możesz po prostu uzyskać do niej dostęp z [naszej strony internetowej](https://api.ovh.com/), ale również wykorzystać go do tworzenia skryptów PHP lub Python. Dzięki temu możesz swobodnie automatyzować podstawowe zadania za pomocą skryptów, zoptymalizować własne funkcje i wiele więcej.
+Możesz po prostu uzyskać do niej dostęp z [naszej strony internetowej](/links/api), ale również wykorzystać go do tworzenia skryptów PHP lub Python. Dzięki temu możesz swobodnie automatyzować podstawowe zadania za pomocą skryptów, zoptymalizować własne funkcje i wiele więcej.
 
 Przed użyciem niektórych wywołań API może być konieczne pobranie różnych informacji, ponieważ wymagane jest wprowadzenie określonych danych.
 
@@ -84,7 +84,7 @@ Następnie, w razie potrzeby, będziesz mógł korzystać z API dedykowanych dla
 >
 > Ponadto w API OpenStack może brakować niektórych funkcji w zależności od wersji klienta i systemu operacyjnego.
 Niniejszy przewodnik prezentuje najprostsze i najbardziej intuicyjne opcje.
-Możesz zapoznać się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/){.external}, jeśli chcesz dowiedzieć się więcej o jej używaniu.
+Możesz zapoznać się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/), jeśli chcesz dowiedzieć się więcej o jej używaniu.
 >
 
 Więcej informacji znajdziesz w przewodniku: [Konfiguracja Public Cloud vRack przy użyciu OpenStack CLI](/pages/public_cloud/public_cloud_network_services/getting-started-09-creating-vrack-with-openstack).
@@ -119,7 +119,7 @@ Na liście dostępnych usług zaznacz projekt, który chcesz dodać do szafy vRa
 
 ![Dodaj projekt](images/addprojectvrack.png){.thumbnail}
 
-Aby kontynuować konfigurację vRack, przejdź do sekcji [Tworzenie sieci VLAN w Panelu klienta](./#tworzenie-sieci-prywatnej-w-panelu-klienta-ovhcloud) niniejszego przewodnika.
+Aby kontynuować konfigurację vRack, przejdź do sekcji [Tworzenie sieci prywatnej w Panelu klienta OVHcloud](./#tworzenie-sieci-prywatnej-w-panelu-klienta-ovhcloud) niniejszego przewodnika.
 
 #### Za pomocą APIv6 OVHcloud
 
@@ -282,7 +282,7 @@ Przejdź do [tej sekcji](/pages/public_cloud/public_cloud_network_services/getti
 
 #### Zarządzanie interfejsami sieciowymi za pomocą OpenStack Horizon
 
-Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}, przy użyciu metody określonej w [pierwszej części niniejszego przewodnika](./#interfejs-horizon).
+Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/), przy użyciu metody określonej w [pierwszej części niniejszego przewodnika](./#interfejs-horizon).
 
 Wybierz właściwą strefę roboczą.
 

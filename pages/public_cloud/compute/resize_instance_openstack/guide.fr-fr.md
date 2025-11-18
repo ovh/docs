@@ -1,7 +1,7 @@
 ---
 title: "Redimensionner une instance Public Cloud à l'aide du CLI OpenStack"
 excerpt: Découvrez comment faire évoluer les ressources de votre instance pour faire face à une activité accrue
-updated: 2023-09-22
+updated: 2025-08-25
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ En raison d'une activité accrue, ou simplement pour répondre à de nouveaux be
 
 ## Prérequis
 
-- Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Un [utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - Avoir un [environnement OpenStack préparé pour le CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - Avoir défini les [variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
@@ -51,7 +51,7 @@ $ openstack server list
 +--------------------------------------+----------------------------------------------------------------+--------+----------------------------------------------+
 ```
 
-### Lister les modèles <a name=« flavorlist »></a>
+### Lister les modèles <a name="flavorlist"></a>
 
 Vous devez afficher à présent la liste des modèles (*flavors*) disponibles dans votre région afin de récupérer l'ID du nouveau modèle. Dans notre exemple, nous voulons redimensionner notre instance sur un modèle b2-30 avec l'ID `098889e6-d1fc-4967-baea-19fd97fd83a8`.
 

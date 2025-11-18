@@ -6,7 +6,7 @@ updated: 2021-02-05
 
 ## Objective
 
-The [OVH Load Balancer](https://www.ovh.com/world/solutions/load-balancer/){.external} service offers a number of ways of tracking connections to your services.
+The [OVH Load Balancer](https://www.ovh.com/world/solutions/load-balancer/) service offers a number of ways of tracking connections to your services.
 
 Each session on the OVH Load Balancer service is maintained by a persistent connection system. The system is configured on the application layer of the OVH Load Balancer service, and it maintains a persistent connection to the server.
 
@@ -16,8 +16,8 @@ This guide provides an introduction to the ways in which you can configure these
 
 ## Requirements
 
-- an [OVH Load Balancer](https://www.ovh.com/world/solutions/load-balancer/){.external}
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, or the [OVH API](https://ca.api.ovh.com/){.external}
+- an [OVH Load Balancer](https://www.ovh.com/world/solutions/load-balancer/)
+- access to the [OVH Control Panel](/links/manager), or the [OVH API](/links/api)
 
 ## Instructions
 

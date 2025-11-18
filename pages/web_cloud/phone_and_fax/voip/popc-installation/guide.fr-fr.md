@@ -17,7 +17,7 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 - Disposer d'un PC sous Windows (7, 8, 10).
 - Disposer de la [solution POPC OVHcloud](/links/telecom/telephonie-standard) ainsi que de la ligne SIP associée.
 - **Uniquement pour la version d'essai de POPC** : disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone Plug & Phone associé.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **login** et v
 
 Si vous ne connaissez pas votre **mot de passe SIP** ou que vous ne l'avez jamais modifié au profit d'un mot de passe fort, consultez notre guide pour [Modifier le mot de passe d'une ligne SIP](/pages/web_cloud/phone_and_fax/voip/modifier-mot-de-passe-ligne-sip).
 
-Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://keepass.info/){.external} afin de sauvegarder en toute sécurité votre mot de passe SIP.
+Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://keepass.info/) afin de sauvegarder en toute sécurité votre mot de passe SIP.
 
 ### Étape 2 : télécharger le logiciel POPC
 

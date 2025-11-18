@@ -1,7 +1,7 @@
 ---
 title: 'Diagnostiquer des dysfonctionnements matériels sur un serveur dédié'
 excerpt: 'Découvrez comment utiliser les outils de diagnostic pour identifier des dysfonctionnements matériels sur votre serveur'
-updated: 2024-05-06
+updated: 2025-10-16
 ---
 
 ## Objectif
@@ -69,8 +69,16 @@ Pour en savoir plus sur la sortie de cette commande et son interprétation, cons
 
 Le test des partitions comprend un test d'accès au disque et une vérification du système de fichiers. Le test d'accès au disque vérifie si le système peut communiquer avec les disques durs de votre serveur. La vérification du système de fichiers utilise la commande `fsck -fy`.
 
+Pour vérifier le système de fichiers, exécutez la commande suivante :
+
 ```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+fsck -fy
+```
+
+Pour un test de lecture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs
+
+```bash
+hdparm -t /dev/sd(x)
 ```
 
 ## Aller plus loin

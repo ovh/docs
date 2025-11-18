@@ -1,11 +1,11 @@
 ---
 title: Using Grafana with Logs Data Platform
-updated: 2024-11-28
+updated: 2025-10-16
 ---
 
 ## Objective
 
-[Grafana](http://grafana.org/){.external} provides a powerful and elegant way to create, explore, and share dashboards and data with your team and the world. Since release 7, Grafana is able to communicate with OpenSearch and so allow you to mix data from Logs Data Platform and other data sources like IoT in the same place. This guide will show you how to achieve this.
+[Grafana](http://grafana.org/) provides a powerful and elegant way to create, explore, and share dashboards and data with your team and the world. Since release 7, Grafana is able to communicate with OpenSearch and so allow you to mix data from Logs Data Platform and other data sources like IoT in the same place. This guide will show you how to achieve this.
 
 ## Requirements
 
@@ -38,12 +38,12 @@ So here you go, now Logs Data Platform knows what stream you want to browse. Now
 
 ### Setup your own grafana
 
-Get the latest Grafana release here: [http://grafana.org/download/](http://grafana.org/download/){.external} (v9.0.0 at the time of writing).
-Then follow the Grafana installation guide according to your platform: [http://docs.grafana.org/installation/](http://docs.grafana.org/installation/){.external}
+Get the latest Grafana release here: [http://grafana.org/download/](http://grafana.org/download/) (v9.0.0 at the time of writing).
+Then follow the Grafana installation guide according to your platform: [http://docs.grafana.org/installation/](http://docs.grafana.org/installation/)
 
 ### Launch it!
 
-If everything is setup properly, launch your favorite browser, and point it to [http://localhost:3000](http://localhost:3000){.external} Once logged in with your grafana credentials, reach data sources panel to setup your Logs Data Platform datasource:
+If everything is setup properly, launch your favorite browser, and point it to [http://localhost:3000](http://localhost:3000) Once logged in with your grafana credentials, reach data sources panel to setup your Logs Data Platform datasource:
 
 ![Data source_1](images/datasource_1.png){.thumbnail}
 
@@ -52,7 +52,7 @@ If everything is setup properly, launch your favorite browser, and point it to [
 > To make the magic happen, please ensure to:
 >
 > - Set `https://<your_cluster>.logs.ovh.com:9200` as **URL** value
-> - Set your Logs Data Platform credentials for **Basic auth values**
+> - Set your [Logs Data Platform credentials](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) for **Basic auth values**
 > - Set the **Index name** as the Logs Data Platform alias linked to Grafana
 > - Change default **Time field name** to timestamp
 > - Set the **Version** by clicking `Get Version and Save`{.action}.
@@ -64,11 +64,11 @@ If your configuration is correct, it should display: " _Index Ok. Timefield Ok._
 ![Data source 2](images/datasource_2.png){.thumbnail}
 
 To explore further, you can create a new dashboard and add different styles of visualizations.
-If you want to know what you can do with Grafana and OpenSearch, read the [official documentation](https://grafana.com/grafana/plugins/grafana-opensearch-datasource/){.external}.
+If you want to know what you can do with Grafana and OpenSearch, read the [official documentation](https://grafana.com/grafana/plugins/grafana-opensearch-datasource/).
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

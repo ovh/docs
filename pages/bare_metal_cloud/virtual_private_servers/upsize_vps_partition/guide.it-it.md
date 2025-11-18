@@ -1,7 +1,7 @@
 ---
 title: Partizionare un VPS dopo un upgrade di storage
 excerpt: "Come aumentare lo spazio su disco utilizzabile in seguito a un aggiornamento"
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 ## Obiettivo
@@ -52,7 +52,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Se il risultato è simile a quello dell'esempio precedente e la colonna `MOUNTPOINT` è vuota nella riga corrispondente, è possibile passare [allo step successivo](#checkfs).
+Se il risultato è simile a quello dell'esempio precedente e la colonna `MOUNTPOINT` è vuota nella riga corrispondente, è possibile passare [allo step successivo](#filesystemcheck).
 
 Tuttavia, se il risultato indica l’esistenza di un punto di mount per la partizione VPS, è necessario smontarla.
 
@@ -78,7 +78,7 @@ In questo esempio di configurazione, il comando sarebbe:
 umount /dev/sdb1
 ```
 
-#### Verifica il file system <a name="checkfs"></a>
+#### Verifica il file system <a name="filesystemcheck"></a>
 
 Prima di continuare, si consiglia di controllare il file system (`filesystem check`) per vedere se ci sono errori nella partizione. Il comando è il seguente:
 
@@ -165,6 +165,18 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 ```
 
 Assicurati che il valore predefinito indicato nella riga `First sector` corrisponda a quello annotato precedentemente (se differente, utilizza quest’ultimo).
+
+Se viene visualizzato il seguente messaggio:
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Digita `n` e continua.
+
+Rispondere `y` significherebbe sovrascrivere il file system ext4 esistente sulla partizione 1 e accettare di distruggere i dati in essa contenuti.
 
 ### Rendi la partizione avviabile (bootable)
 
@@ -279,4 +291,4 @@ Inserisci la dimensione desiderata e clicca su `OK`{.action}. Il volume verrà p
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

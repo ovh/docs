@@ -70,7 +70,7 @@ Folgende Länder sind für die Geolokalisierung von IPs verfügbar:
 >
 > Die Geolokalisierung referenziert ausschließlich die jeweils authoritative Organisation.
 > 
-> Zum Beispiel bedient [RIPE NCC](https://www.ripe.net/){.external} Europa als die *Regional Internet Registry*.
+> Zum Beispiel bedient [RIPE NCC](https://www.ripe.net/) Europa als die *Regional Internet Registry*.
 >
 > Wenn Sie die Geolokalisierung anderweitig überprüfen möchten, wenden Sie sich direkt an die betreffenden Organisationen. OVHcloud kann Ihnen diesbezüglich keine Unterstützung gewähren.
 
@@ -90,6 +90,6 @@ Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert we
 
 ## Weiterführende Informationen
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

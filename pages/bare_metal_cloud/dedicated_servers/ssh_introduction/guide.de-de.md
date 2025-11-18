@@ -223,7 +223,7 @@ Speichern Sie die Änderungen und beenden Sie den Editor. Sie müssen den neuen 
 
 Wenn Sie eine grafische Benutzeroberfläche bevorzugen, können Sie für jeden Betriebssystemtyp verschiedne Softwareanwendungen nutzen, um über das SSH-Protokoll eine Verbindung zu Remote-Hosts herzustellen.
 
-Beispielsweise ist [PuTTY](https://putty.org/) ein Open-Source-SSH-Client mit einigen nützlichen Funktionen. In unserer detaillierten Anleitung erfahren Sie, wie Sie dieses Tool für Verbindungen zu OVHcloud Servern verwenden:
+Beispielsweise ist [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) ein Open-Source-SSH-Client mit einigen nützlichen Funktionen. In unserer detaillierten Anleitung erfahren Sie, wie Sie dieses Tool für Verbindungen zu OVHcloud Servern verwenden:
 
 [Tutorial zur Verwendung von PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

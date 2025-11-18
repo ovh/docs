@@ -20,7 +20,7 @@ With OVHcloud, you can create additional local users with read or write access t
 ## Requirements
 
 - An active OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

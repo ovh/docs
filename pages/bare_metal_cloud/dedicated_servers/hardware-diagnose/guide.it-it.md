@@ -1,12 +1,8 @@
 ---
 title: "Diagnosticare problemi hardware su un server dedicato"
 excerpt: "Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server"
-updated: 2024-05-06
+updated: 2025-10-16
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -73,10 +69,18 @@ Per maggiori informazioni sull'output di questo comando e sulla sua interpretazi
 
 Questo test comprende sia una verifica dell’accesso al disco che un controllo del file system. Il test di accesso al disco serve per verificare che il sistema sia in grado di comunicare con gli hard disk del server. Riguardo al test del file system, si utilizza il comando `fsck -fy`.
 
+Per verificare il file system, esegui il comando:
+
 ```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+fsck -fy
+```
+
+Per effettuare un test di lettura, esegui il comando seguente. Sostituisci `sd(x)` con i tuoi valori
+
+```bash
+hdparm -t /dev/sd(x)
 ```
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

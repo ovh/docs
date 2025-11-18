@@ -53,7 +53,7 @@ Si la página **"403 forbidden"** ha aparecido como consecuencia de una modifica
 
 Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](/links/partner).
 
-Si la página **"403 forbidden" ** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si, por motivos de seguridad, ha recibido un mensaje de correo electrónico de nuestros servicios informándole de que desea cerrar su alojamiento web, vaya directamente al [etapa 2](#step-2) de la presente guía.
+Si la página **"403 forbidden"** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si, por motivos de seguridad, ha recibido un mensaje de correo electrónico de nuestros servicios informándole de que desea cerrar su alojamiento web, vaya directamente al [etapa 2](#step-2) de la presente guía.
 
 Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún email de nuestros servicios al respecto, compruebe los permisos de acceso FTP (CHMOD) de sus ficheros/carpetas así como el código contenido en su(s) archivo(s) **.htaccess**. Compruebe también si este fallo no se ha producido por un plugin de seguridad o por un firewall de aplicación. Si lo necesita, contacte con un [proveedor especializado](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie regułami firewalla i port security w sieciach korzystających OpenStack CLI
 excerpt: Sprawdź działanie grup zabezpieczeń w usłudze Public Cloud
-updated: 2023-03-13
+updated: 2025-09-23
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2023-03-13
 
 Platforma OpenStack zarządza bezpieczeństwem zapory sieciowej, łącząc reguły połączenia w **grupy zabezpieczeń**. Reguły są następnie stosowane przez przypisanie grup bezpieczeństwa do portów sieciowych.
 
-**Port** w ramach [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} jest punktem połączenia między podsieciami i elementami sieci (takimi jak instancje, Load Balancer, routery, itp...).
+**Port** w ramach [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html) jest punktem połączenia między podsieciami i elementami sieci (takimi jak instancje, Load Balancer, routery, itp...).
 
 **Dowiedz się, jak zarządzać grupami zabezpieczeń w sieciach publicznych i prywatnych w systemie Public Cloud.**
 
@@ -63,7 +63,7 @@ Wynik powinien być podobny do tego:
 
 ```console
 $ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
-False
+True
 ```
 
 #### W przypadku nowej sieci prywatnej:

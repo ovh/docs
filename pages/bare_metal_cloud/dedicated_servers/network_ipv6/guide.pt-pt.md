@@ -21,7 +21,7 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 > [!warning]
 > A OVHcloud presta-lhe serviços cuja configuração e gestão é da sua inteira responsabilidade, cabendo-lhe a si assegurar o seu correto funcionamento. 
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/). Para mais informações, consulte a secção «Saiba mais» neste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Para mais informações, consulte a secção [«Quer saiba mais»](#go-further) neste guia.
 >
 
 ## Requisitos
@@ -63,7 +63,7 @@ O primeiro passo consiste em recuperar a gateway (gateway) IPv6 associada ao seu
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção 'Servidor dedicado`{.action}.
 
-A gateway IPv6 associada ao seu servidor é apresentada na secção "Rede" do separador `Informações gerais`{.action}. Depois de copiar, prossiga para o passo 2 « [Aplicar configuração IPv6](#applyipv6) ».
+A gateway IPv6 associada ao seu servidor é apresentada na secção "Rede" do separador `Informações gerais`{.action}. Uma vez copiado, continue para a aplicação de configuração IPv6.
 
 ![configureipv6](images/ipv6_information.png){.thumbnail}
 
@@ -86,6 +86,10 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 > [!warning]
 > 
 > Antes de alterar um ficheiro de configuração, crie sempre uma cópia de segurança do original para que possa voltar a ela em caso de problema. 
+>
+
+> [!primary]
+> Alguns sistemas operativos exigem que as rotas IPv6 estáticas sejam adicionadas ao ficheiro de configuração original por predefinição. Se for esse o caso, basta adicionar a sua configuração para IPv6 como indicado no guia, não modificando nenhuma linha do ficheiro original.
 >
 
 ### Debian e sistemas operativos baseados em Debian (exceto Debian 12)
@@ -111,7 +115,7 @@ ssh user@serverIP
 
 #### Passo 2: Criar um backup
 
-O ficheiro de configuração de rede do seu servidor está situado em `/etc/network/interfaces.d`. Antes de continuar, crie uma cópia de segurança do seu ficheiro utilizando o seguinte comando:
+O ficheiro de configuração de rede do seu servidor está situado em `/etc/network/interfaces.d`. No nosso exemplo, ele é chamado de `50-cloud-init`. Antes de continuar, crie uma cópia de segurança do seu ficheiro utilizando o seguinte comando:
 
 ```sh
 sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bakà
@@ -618,6 +622,6 @@ De qualquer forma, não hesite em [contactar a nossa equipa de suporte](https://
 - O nome e o diretório do ficheiro de configuração de rede.
 - O conteúdo desse ficheiro. 
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

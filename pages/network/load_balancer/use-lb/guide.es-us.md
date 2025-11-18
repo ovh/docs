@@ -1,15 +1,17 @@
 ---
 title: Gestionar el servicio Load Balancer desde el área de cliente
 excerpt: Principales funcionalidades y toma de contacto con el servicio Load Balancer en el área de cliente
-updated: 2017-12-01
+updated: 2025-07-30
 ---
 
 ## Objetivo
+
 Esta guía explica los primeros pasos con el servicio Load Balancer y presenta sus principales funcionalidades.
 
 ## Requisitos
-- Tener acceso al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Haber contratado un [Load Balancer](https://www.ovh.com/world/es/soluciones/load-balancer/).
+
+- Tener acceso al [área de cliente](/links/manager).
+- Haber contratado un [Load Balancer](/links/network/load-balancer).
 
 ## Procedimiento
 
@@ -26,8 +28,8 @@ En dicha página, encontrará la siguiente información:
 |Estado|Resumen del Load Balancer, con el nombre asignado al servicio, los frontends, las granjas operativas y los servidores añadidos|
 |Uso|Resumen del uso del Load Balancer|
 |Gráficas|Gráficas del servicio, en conexiones simultáneas o peticiones por minuto|
-|Información|IPv4 y las Additional IP asociadas, así como el número de IPv4 salientes (para ver el detalle, haga clic en los tres puntos)|
-|Configuración|Personalización del nombre del servicio (que puede ver en la parte superior y en la columna izquierda) y de los ciphers, y datacenter en el que está localizado el Load Balancer|
+Información|Sus direcciones IPv4 e IPv6 y las direcciones Additional IP asociadas, así como el número de IPv4 de salida (para más información, haga clic en el botón `...`{.action})|
+|Configuración|Personalice aquí el nombre de su producto. También encontrará el cipher o los ciphers que pueden personalizarse, así como la zona de disponibilidad en la que se encuentra el Load Balancer|
 |Suscripción|Información administrativa del servicio|
 
 A continuación se explica cómo realizar las principales operaciones de administración del Load Balancer, relativas a los frontends, las granjas, los servidores y los certificados.
@@ -45,7 +47,7 @@ Estos son los parámetros que pueden configurarse en un frontend:
 |Nombre|Puede asignarle un nombre a su frontend para poder identificarlo rápidamente|
 |Protocolo|Elija entre HTTP, HTTPS, TCP, SSL TCP (o TLS) o UDP|
 |Puerto|Seleccione el puerto de escucha|
-|Datacenter|Seleccione entre su datacenter o todos para la creación del frontend|
+|Datacenter|Puede elegir entre una zona de disponibilidad en particular o todas las zonas de disponibilidad para la creación del frontend|
 |Granja por defecto |Si tiene varias granjas configuradas, podrá elegir una por defecto para cada frontend|
 
 En función de la configuración anterior, aparecerán algunas de las siguientes posibilidades de configuración avanzada:
@@ -90,6 +92,7 @@ Una vez haya creado la granja, solo tendrá que añadir los servidores haciendo 
 |Cookie|Añada una cookie de sesión personalizada|
 |Cadena de certificación|Añada una cadena de certificación|
 |Peso de balanceo|Elija el peso del balanceo para el reparto de la carga|
+|Versión del protocolo de PROXY|**Sólo si ya lo ha configurado**, elija la versión del protocolo de PROXY que desea utilizar en este servidor. </br> Encontrará más información sobre el protocolo PROXY y su uso con el servicio Load Balancer de OVHcloud en [esta guía](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Administrar los certificados SSL
 En la pestaña `Certificados SSL`{.action}, puede añadir un SSL al Load Balancer, eligiendo entre dos opciones: contratar un certificado SSL en OVH o añadir un certificado externo.
@@ -101,7 +104,7 @@ Para contratar un certificado SSL, abra la pestaña `Certificado SSL`{.action} y
 
 |Elemento|Función|
 |---|---|
-|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (más información en la [web de ovh](https://www.ovhcloud.com/es/web-hosting/options/ssl/))|
+|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (más información en la [web de ovh](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Indique el dominio o dominios correspondientes|
 
 Si opta por un certificado Comodo EV, también deberá introducir la información de contacto y jurisdiccional.
@@ -120,4 +123,4 @@ Si ya tiene su propio certificado SSL, puede añadirlo directamente:
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

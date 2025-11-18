@@ -4,6 +4,11 @@ excerpt: 'Find out how to log in to your OVHcloud account'
 updated: 2025-04-28
 ---
 
+> [!success]
+> Participate in our survey and help us improve this guide!<br>
+> Feel free to share your thoughts and ideas with us.<br>
+> [Go to the survey.](https://s.elq.fr/ovhext/OiIwy54)
+
 ## Objective
 
 Your services are managed mainly via the OVHcloud Control Panel.
@@ -70,7 +75,7 @@ Once this action has been completed, please [enter a **new** backup email addres
 
 In this case, the OVHcloud telephone support will not be able to help you.
 
-Please follow this [procedure](https://www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi){.external} so that we can verify your identity.
+Please follow this [procedure](https://www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi) so that we can verify your identity.
 
 Once the procedure has been received by our services, we will replace your contact email address if all of the documents requested are valid.
 

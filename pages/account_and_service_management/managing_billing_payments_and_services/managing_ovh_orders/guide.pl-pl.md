@@ -95,7 +95,7 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 >
 > Ponadto prawo do odstąpienia od umowy nie ma zastosowania do zamówień nieopłaconych, ponieważ zamówienia są automatycznie anulowane po wygaśnięciu zamówienia.
 >
-> Nie dotyczy on również niektórych usług (w szczególności [domen](https://www.ovhcloud.com/pl/domains/) i [certyfikatów SSL Sectigo](https://www.ovhcloud.com/pl/web-hosting/options/ssl/)). W momencie składania zamówienia na te produkty zostaniesz poproszony o wyraźne zrzeczenie się prawa do odstąpienia od umowy zgodnie z artykułem L.221-28 Kodeksu konsumenckiego.
+> Nie dotyczy on również niektórych usług (w szczególności [domen](/links/web/domains) i [certyfikatów SSL Sectigo](/links/web/hosting-options-ssl)). W momencie składania zamówienia na te produkty zostaniesz poproszony o wyraźne zrzeczenie się prawa do odstąpienia od umowy zgodnie z artykułem L.221-28 Kodeksu konsumenckiego.
 >
 
 Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta OVHcloud](/links/manager):

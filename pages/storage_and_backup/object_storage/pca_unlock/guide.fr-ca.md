@@ -15,16 +15,16 @@ Destinée aux données rarement consultées, une requête de déblocage est néc
 ## Prérequis
 
 - Dégel via l'espace client OVHcloud :
-    - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+    - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Dégel via python-swiftclient :
-    - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api){.external} en installant python-swiftclient.
-    - [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables){.external}.
+    - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) en installant python-swiftclient.
+    - [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
 ## En pratique
 
 ### Dégeler vos objets depuis l'espace client
 
-Dans votre [espace client OVHcloud](/links/manager){.external}, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Cloud Archive`{.action} dans le menu de gauche.
+Dans votre [espace client OVHcloud](/links/manager), cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Cloud Archive`{.action} dans le menu de gauche.
 
 Pour dégeler une archive, cliquez sur le bouton `...`{.action} à droite de celle-ci, puis sur `Dégeler`{.action} afin d'entamer le processus de récupération.
 

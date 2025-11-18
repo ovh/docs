@@ -12,7 +12,7 @@ OVHcloud offers VPS customers pre-installed application images for quick and eas
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- A [VPS](/links/bare-metal/vps) in your OVHcloud account
 
 ## Instructions
 
@@ -21,6 +21,11 @@ OVHcloud offers VPS customers pre-installed application images for quick and eas
 Using the [OVHcloud Control Panel](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) / API, install your chosen application on your VPS.
 
 #### cPanel
+
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 This section will explain the first steps specifically for the cPanel pre-installed image. Steps marked with \* will have FAQ at the end of the steps.
 
@@ -53,6 +58,10 @@ No further steps are necessary to complete the first configuration of this appli
 
 #### Plesk
 
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
+
 This section will explain the first steps specifically for the Plesk pre-installed image. Steps marked with \* will have FAQ at the end of the steps.
 
 1. Open the email from OVHcloud which contains your application login details.
@@ -72,6 +81,10 @@ No further steps are necessary to complete the first configuration of this appli
 >> You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 This section will explain the first steps specifically for the Docker pre-installed image.
 

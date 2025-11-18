@@ -51,9 +51,9 @@ Create the file `/etc/ceph/ceph.client.<ceph_user_name>.keyring`
 key = <my_user_key>
 ```
 
-`<mon_X_IP>` has to be replaced by monitors IP you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/){.external}.
+`<mon_X_IP>` has to be replaced by monitors IP you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/).
 
-`<my_user_key>` has to be replaced by the users's key you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/){.external}.
+`<my_user_key>` has to be replaced by the users's key you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/).
 
 ## Configuration check
 You can check the configuration by listing the images inside your pool.

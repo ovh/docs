@@ -1,7 +1,7 @@
 ---
 title: "Moja strona jest powolna. Co robić?"
 excerpt: "Dowiedz się, skąd pochodzą opóźnienia Twojej strony WWW i jak je rozwiązać"
-updated: 2023-10-26
+updated: 2025-11-17
 ---
 
 ## Wprowadzenie
@@ -32,7 +32,6 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 > Jeśli potrzebujesz usługi ze współczynnikiem dostępności SLA większym niż 99%, zalecamy rozważenie korzystania z [Prywatnego Serwera Wirtualnego (VPS)](/links/bare-metal/vps) lub [Serwera dedykowanego](/links/bare-metal/bare-metal).
 >
 > Ponadto wydajność infrastruktury hostingu współdzielonego OVHcloud jest monitorowana 24 godziny na 24 i 7 dni na 7. W celu zapewnienia wysokiego poziomu dostępności oraz, w razie potrzeby, szybkiego przywrócenia usług w przypadku stwierdzonego przeciążenia.*
->
 
 ## Wymagania początkowe
 
@@ -43,15 +42,17 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 
 > [!warning]
 >
+> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
+
+> [!warning]
+>
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
 > Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety nie będziemy w stanie udzielić Ci wsparcia **w przypadku, gdy infrastruktura, na której hostowana jest Twoja oferta hostingu współdzielonego, nie jest istotna**. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
->
 
 > [!success]
 >
 > W tym przewodniku zalecamy zapoznanie się z wynikami diagnostyki. Wyniki te będą bardzo przydatne w rozwiązywaniu Twojej sytuacji, niezależnie od źródła powolnego tempa.
->
 
 ### Zrozumieć pojęcie Time To First Byte (TTFB)
 
@@ -69,13 +70,13 @@ Do obsługi Content Managment System (CMS), takich jak WordPress, Joomla!, Prest
 >
 > Po wpłynięciu zapytania na plik "**index.php**" jest on uruchamiany przez serwer www hostingu. 
 >
->W trakcie wykonywania pliku "**index.php**" pobiera informacje z innych plików tworzących Twoją stronę WWW lub z elementów znajdujących się w bazie danych. 
+> W trakcie wykonywania pliku "**index.php**" pobiera informacje z innych plików tworzących Twoją stronę WWW lub z elementów znajdujących się w bazie danych. 
 >
->Każde z tych żądań generuje wewnętrzne zapytanie dotyczące Twojej usługi hostingowej. 
+> Każde z tych żądań generuje wewnętrzne zapytanie dotyczące Twojej usługi hostingowej. 
 >
->Plik "**index.php**" będzie czekał na wynik wszystkich żądań wewnętrznych **przed**, aby przesłać pierwszy bajt danych do przeglądarki internetowej.
+> Plik "**index.php**" będzie czekał na wynik wszystkich żądań wewnętrznych **przed**, aby przesłać pierwszy bajt danych do przeglądarki internetowej.
 >
->Jeśli Twój plik "**index.php**" generuje "powolne" lub ciężkie zapytania do wykonania, TTFB będzie wówczas wysoki, a Twoja strona będzie wyświetlać się kilka sekund. Wydajność Twojego hostingu nie jest zatem istotna.
+> Jeśli Twój plik "**index.php**" generuje "powolne" lub ciężkie zapytania do wykonania, TTFB będzie wówczas wysoki, a Twoja strona będzie wyświetlać się kilka sekund. Wydajność Twojego hostingu nie jest zatem istotna.
 
 Narzędzia diagnostyczne online pozwalają pobrać TTFB z Twojego hostingu. Jednak większość z nich działa jak przeglądarki internetowe, więc ich wyniki są relatywistyczne.<br>
 Narzędzia te nie są bowiem w stanie uwzględnić żądań wewnętrznych, o które wystąpił plik wywoływany przez przeglądarkę, jak w powyższym przykładzie z plikiem "**index.php***".
@@ -93,13 +94,7 @@ Wszystkie diagnozy z etapu 1 muszą być wykonane **bez wyjątku**, aby określi
 
 Aby mieć pewność, że Twoje usługi (hosting współdzielony **i** baza danych) nie podlegają konserwacji lub awarii, pobierz informacje o klastrze i przędz z hostingu współdzielonego oraz ogólne informacje dotyczące bazy danych. Następnie możesz sprawdzić ich status na stronie [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Aby dowiedzieć się, gdzie znajduje się Twój hosting, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action} i wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdziesz `centrum` danych hostingu współdzielonego oraz `filer`, w którym znajduje się ono.
-
-![Pobierz Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
-
-Następnie kliknij zakładkę `MultiSite`{.action}, aby pobrać numer klastra, na którym znajduje się Twój hosting.
-
-![Pobranie klastra](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
+Aby poznać klaster i filer, w których znajduje się Twoje hostingowanie współdzielone, zapoznaj się z naszym przewodnikiem "[Hosting www - Poznaj klaster i syn](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >
@@ -108,7 +103,6 @@ Następnie kliknij zakładkę `MultiSite`{.action}, aby pobrać numer klastra, n
 > Możesz się zarejestrować na swój adres e-mail w celu zgłoszenia awarii lub utrzymania, aby otrzymać e-mail z powiadomieniem o postępach operacji.
 >
 > Po oznaczeniu statusu zdarzenia lub jego konserwacji jako **rozwiązany**, ustabilizowanie nagromadzonego obciążenia może wymagać czasu **3 godzin** maksymalnie po powiadomieniu o rozwiązaniu problemu, aby w pełni się wycofać.
->
 
 Jeśli nie zgłoszono żadnego problemu lub nie zgłoszono żadnych prac konserwacyjnych, kontynuuj diagnostykę.
 
@@ -135,7 +129,6 @@ phpinfo();
 > Operacje na pliku "**.htaccess**" mogą mieć wpływ na wyświetlanie strony. W przypadku trudności z realizacją tego zadania, należy skontaktować się z [wyspecjalizowanym dostawcą](/links/partner).
 >
 > Jeśli nie wyświetla się i **tylko dla zaawansowanych użytkowników**, należy zmienić nazwę plików "**.htaccess**" na "**.htaccess_OLD***", aby serwer nie wykonywał już testu. Zmień nazwę poprawnie po zakończeniu diagnostyki.
->
 
 **Przykład**: jeśli nazwa domeny umożliwiająca dostęp do Twojej strony WWW to "domain.tld", a plik "**phpinfo.php**" został umieszczony na katalogu głównym Twojej strony WWW, będzie on dostępny pod linkiem: `http://domain.tld/phpinfo.php\` (lub `https://domain.tld/phpinfo.php`)
 
@@ -144,7 +137,6 @@ phpinfo();
 > Jeśli wywołanie pliku "**phpinfo.php**" wyświetla **natychmiast** tabelę konfiguracyjną, oznacza to, że zwolnienia nie pochodzą z hostingu współdzielonego, na którym znajduje się Twoja strona WWW. W przeciwnym razie plik ten wyświetlałby się tak wolno, jak inne strony. 
 >
 > Oznacza to, że jeśli powolne tempo jest obecne tylko na niektórych stronach lub zawartości strony www, oznacza to, że hosting **nie jest przyczyną powolnego działania** na Twojej stronie WWW.
->
 
 #### 1.4 - Przetestuj połączenie z bazą danych:
 
@@ -159,7 +151,6 @@ Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 > [!warning]
 >
 > Jeśli wystąpi błąd, zapoznaj się z naszą dokumentacją dotyczącą [błędów występujących w bazie danych](/pages/web_cloud/web_hosting/diagnosis_database_errors). Następnie skorzystaj z powyższego przewodnika, aby poprawić Twoją sytuację, po czym spróbuj ponownie zalogować się do bazy danych.
->
 
 #### 1.5 - Interpretacja wykonanych diagnoz
 
@@ -188,7 +179,6 @@ Na tym etapie już wiesz, że spowolnienia są generowane przez strony/skrypty/p
 > [!warning]
 >
 > Jeśli masz trudności z wykonaniem kolejnych działań, możesz skontaktować się z naszym [wyspecjalizowanym usługodawcą](/links/partner). OVHcloud nie będzie wspierać rozwoju i/lub optymalizacji zawartości Twojej strony WWW.
->
 
 Poniżej znajdziesz działania, które należy przeprowadzić, aby zidentyfikować źródło(-a) powolnego czasu i zoptymalizować Twoją stronę WWW.
 
@@ -238,21 +228,18 @@ Im mniejsza liczba zapytań, tym mniej zasobów przypisanych do hostingu.
 > W tym celu naciśnij klawisz `F12`, gdy jesteś w przeglądarce Firefox, a następnie wybierz kartę `Sieć`. Przeładuj swoją stronę www za pomocą klawiszy `Ctrl + Maj + R`, aby narzędzie wyświetlało zapytania wykonane w celu załadowania strony. Wyszukaj najdłuższe elementy do załadowania i następnie zoptymalizuj.
 >
 >![Analiza sieci Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
->
 
 Aby zmniejszyć przepływ zapytań do każdego załadowania strony, możesz również uruchomić usługę Content Delivery Network (CDN). Pozwoli to na umieszczenie w pamięci cache statycznej zawartości Twojej strony WWW. Twój hosting WWW będzie mniej obciążony i będzie dysponował większą liczbą zasobów do obsługi pozostałych zapytań, które nie mogą być zapisane w pamięci cache.
 
 > [!primary]
 >
 > OVHcloud oferuje kilka [oferty CDN](/links/web/hosting-options). Jeśli chcesz korzystać z tej usługi lub ją włączyć dla Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie zapoznaj się z naszym przewodnikiem dotyczącym [korzystania z usługi CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
->
 
 #### 2.4 - zoptymalizuj bazę danych
 
 > [!warning]
 >
 > Operacje, które wykonujesz w bazie danych mogą mieć nieodwracalne konsekwencje, jeśli nie są przeprowadzane metodycznie i prawidłowo. Skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner), jeśli nie masz pewności co do działań, jakie należy przeprowadzić. 
->
 
 Sprawdź, czy do Twojej bazy danych wykonywana jest znaczna liczba zapytań.<br>
 Sytuacja ta może spowodować nadmierne obciążenie i doprowadzić do spowolnienia, a nawet do powstania kodów "504 Gateway Timeout".
@@ -279,12 +266,11 @@ Zmień rozmiar wszystkich obrazów, aby zminimalizować zużycie zasobów.
 
 Zapoznaj się z naszym przewodnikiem dotyczącym [optymalizacji wydajności dla Twojej strony internetowej](/pages/web_cloud/web_hosting/optimise_your_website_performance).
 
-Możesz sprawdzić ścieżki optymalizacji dla Twojej strony, analizując ją na stronie [gtmetrix.com](https://gtmetrix.com){.external} (strona ta nie jest powiązana z OVHcloud).
+Możesz sprawdzić ścieżki optymalizacji dla Twojej strony, analizując ją na stronie [gtmetrix.com](https://gtmetrix.com) (strona ta nie jest powiązana z OVHcloud).
 
 > [!success]
 >
 > Bez względu na powolne tempo rozwoju Twojej strony WWW zostanie zoptymalizowane, tym lepsze będzie jej naturalne pozycjonowanie w wyszukiwarkach.
->
 
 ### Podsumowanie
 

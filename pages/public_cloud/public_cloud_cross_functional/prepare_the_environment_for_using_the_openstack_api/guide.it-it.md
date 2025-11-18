@@ -53,7 +53,7 @@ openstack --help
 
 > [!primary]
 > 
-> Per consultare la documentazione relativa all’API OpenStack [clicca qui](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Per consultare la documentazione relativa all’API OpenStack [clicca qui](https://docs.openstack.org/python-openstackclient/latest/).
 > 
 
 ### Con CentOS
@@ -86,7 +86,7 @@ openstack --help
 
 > [!primary]
 > 
-> Per consultare la documentazione relativa all’API OpenStack [clicca qui](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Per consultare la documentazione relativa all’API OpenStack [clicca qui](https://docs.openstack.org/python-openstackclient/latest/).
 > 
 
 ### Con Windows

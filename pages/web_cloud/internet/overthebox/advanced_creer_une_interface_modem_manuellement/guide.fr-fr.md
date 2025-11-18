@@ -135,7 +135,7 @@ Si vous souhaitez qu'une interface utilise une IP statique plutôt que le DHCP d
 Si vous souhaitez qu'une interface utilise le PPPoE plutôt que le DHCP de votre modem.
 
 - Pour un **accès fibre**, vous pouvez directement brancher l'**OverTheBox** à l'**ONT**.
-- Pour un **accès DSL**, vous devez brancher l'**OverTheBox** sur un **modem en bridge**. Voir le guide « [Comment activer le mode bridge sur un modem Zyxel](pages/web_cloud/internet/internet_access/comment_activer_bridge_zyxel) ».
+- Pour un **accès DSL**, vous devez brancher l'**OverTheBox** sur un **modem en bridge**. Voir le guide « [Comment activer le mode bridge sur un modem Zyxel](/pages/web_cloud/internet/internet_access/comment_activer_bridge_zyxel) ».
 
 Tout d'abord, consultez le guide « [Configurer un routeur manuellement](/pages/web_cloud/internet/internet_access/advanced_config_router_manually) » pour obtenir vos **identifiants de connexion PPP** ainsi que votre **profil d'accès internet**
 
@@ -204,7 +204,7 @@ Tout d'abord, consultez le guide « [Configurer un routeur manuellement](/pages/
 
 > [!warning]
 >
-> Cette section est pour un usage avancé, veuillez d'abord consulter le guide « [Comment configurer un lien 4G sur OverTheBox?](pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
+> Cette section est pour un usage avancé, veuillez d'abord consulter le guide « [Comment configurer un lien 4G sur OverTheBox?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
 >
 
 Cette section est indiquée pour vous si :

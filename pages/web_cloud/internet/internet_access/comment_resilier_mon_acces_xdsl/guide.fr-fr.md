@@ -20,7 +20,7 @@ La résiliation sera effective à la prochaine facturation de votre accès à In
 ![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 > [!primary]
-> La résiliation d'un [pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/) doit faire l'objet d'une [demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) via le centre d'aide OVHcloud afin que les équipes du support la mettent en place.
+> La résiliation d'un [pack SIP Trunk](/links/telecom/telephonie-sip-trunk) doit faire l'objet d'une [demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) via le centre d'aide OVHcloud afin que les équipes du support la mettent en place.
 >
 
 ## En pratique
@@ -52,7 +52,7 @@ Pour cela, il vous suffit de cocher les cases correspondant aux services que vou
 
 Une fois vos choix effectués, cliquez sur le bouton `Résilier`{.action} en bas de page.
 
-Vous recevrez un e-mail vous confirmant la prise en compte de la demande de résiliation ainsi qu'un e-mail contenant le bon de retour de votre modem.
+Vous recevrez un e-mail vous confirmant la prise en compte de la demande de résiliation ainsi qu'un e-mail contenant le [bon de retour de votre modem](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma).
 
 ### Annuler la résiliation
 

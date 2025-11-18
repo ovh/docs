@@ -16,13 +16,13 @@ Las MV Windows desplegadas a partir de una plantilla utilizan automáticamente l
 
 > [!primary]
 > 
-> En [esta página](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/images-licenses/) puede consultar el precio del licenciamiento de las imágenes que OVHcloud pone a su disposición.
+> En [esta página](/links/hosted-private-cloud/vmware-images-licenses) puede consultar el precio del licenciamiento de las imágenes que OVHcloud pone a su disposición.
 >
 
 ## Requisitos
 
 - Tener acceso al cliente web (HTML5).
-- Haber activado las [licencias de Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#licencia-windows) desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} (en la pestaña `Licencia Widows`{.action} de la plataforma). 
+- Haber activado las [licencias de Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#licencia-windows) desde el [área de cliente de OVHcloud](/links/manager) (en la pestaña `Licencia Widows`{.action} de la plataforma). 
 
 Desde un navegador de internet, vaya a la página de inicio de su Private Cloud y haga clic en `OVH Templates`{.action}.
 

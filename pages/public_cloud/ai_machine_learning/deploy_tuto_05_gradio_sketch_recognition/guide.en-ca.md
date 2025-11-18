@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition
 excerpt: How to build and use a custom Docker image containing a Gradio application
-updated: 2023-11-27
+updated: 2025-06-25
 ---
 
 > [!primary]
@@ -23,8 +23,8 @@ Overview of the app:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
-- An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager).
+- An AI Deploy project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 - [Docker](https://www.docker.com/get-started) installed on your local computer.
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
@@ -87,7 +87,7 @@ Load the previously trained model for handwritten digits classification.
 >
 
 ```python
-model = tf.keras.models.load_model("model/sketch_recognition_numbers_model.h5")
+model = tf.keras.models.load_model("model/sketch_recognition_numbers_model.h5", compile=False)
 ```
 
 Create the function that recognizes the written number.
@@ -158,24 +158,25 @@ CMD [ "python3" , "/workspace/app.py" ]
 
 ### Build the Docker image from the Dockerfile
 
-Launch the following command from the **Dockerfile** directory to build your application image:
+From the directory containing your **Dockerfile**, run one of the following commands to build your application image:
 
 ```console
+# Build the image using your machine's default architecture
 docker build . -t gradio_app:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t gradio_app:latest .
 ```
+
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
 
 > [!primary]
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **gradio_app:latest**.
->
-
-> [!warning]
->
-> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
->
-> `docker buildx build --platform linux/amd64 ...`
 >
 
 ### Push the image into the shared registry
@@ -211,7 +212,7 @@ The following command starts a new AI Deploy app running your Gradio application
 ```console
 ovhai app run \
       --cpu 1 \
-      --volume <my_saved_model>@<region>/:/workspace/model:RO \
+      --volume <my_saved_model>@<region>/model/:/workspace/model:RO \
       <shared-registry-address>/gradio_app:latest
 ```
 
@@ -241,11 +242,10 @@ If you want your **AI Deploy app** to be accessible without the need to authenti
 - You can imagine deploying an AI model with an other tool: **Flask**. Refer to this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_06_flask_hugging_face).
 - Do you want to use **Streamlit** to create a audio classification app? [Here it is](/pages/public_cloud/ai_machine_learning/deploy_tuto_03_streamlit_sounds_classification).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
-

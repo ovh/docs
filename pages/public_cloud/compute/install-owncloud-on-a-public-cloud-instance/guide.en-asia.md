@@ -6,14 +6,14 @@ updated: 2019-04-10
 
 - Level: Intermediate
 - OS used: Ubuntu 18.04
-- Infrastructure used: B2-15 [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/){.external}
+- Infrastructure used: B2-15 [Public Cloud Instance](/links/public-cloud/public-cloud)
 - Additional information: If you have intensive storage requirements, it is recommended to use a high-performance additional disk or object storage
 
 > [!warning]
 >
 > While OVHcloud provides you with the devices, the responsibility for their security rests solely in your hands. Since we have no access to these machines, we are not their administrators. It is your responsibility to manage the software, and apply proper security measures on an ongoing basis.
 >   
-> This tutorial is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+> This tutorial is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
 ## Objective
@@ -32,10 +32,10 @@ Before following this tutorial, please refer to these guides:
 
 ## Requirements
 
-- A [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/prices/){.external} in the [OVHcloud Control Panel](/links/manager){.external} with Ubuntu 18.04 installed
+- A [Public Cloud Instance](/links/public-cloud/prices) in the [OVHcloud Control Panel](/links/manager) with Ubuntu 18.04 installed
 - Root SSH access on the Instance
-- [Object Storage](https://www.ovhcloud.com/asia/public-cloud/object-storage/){.external} in the same datacentre as your Public Cloud Instance (optional)
-- [High-performance additional disk](https://www.ovhcloud.com/asia/public-cloud/block-storage/){.external} in the same datacentre as your Public Cloud Instance (optional)
+- [Object Storage](/links/public-cloud/object-storage) in the same datacentre as your Public Cloud Instance (optional)
+- [High-performance additional disk](/links/public-cloud/block-storage) in the same datacentre as your Public Cloud Instance (optional)
 
 ## Instructions
 
@@ -224,14 +224,14 @@ There are advantages and disadvantages to using local disk storage to store your
 
 Using OpenStack Object Storage by OVHcloud, you can store your files externally, with no limit on the total volume of data or how long you store it for. Furthermore, OVHcloud guarantees 100% data durability, and replicates your data in three different locations, delivering exceptional value for money.
 
-Find out more about [OVHcloud Object Storage](https://www.ovhcloud.com/asia/public-cloud/object-storage/){.external}.
-Read out guide to using Object Storage for ownCloud: [Object Storage for ownCloud](/pages/storage_and_backup/object_storage/pcs_configure_owncloud_with_object_storage){.external}.
+Find out more about [OVHcloud Object Storage](/links/public-cloud/object-storage).
+Read out guide to using Object Storage for ownCloud: [Object Storage for ownCloud](/pages/storage_and_backup/object_storage/pcs_configure_owncloud_with_object_storage).
 
 ### Using an additional disk as storage (optional)
 
 As with Object Storage, the advantage of using an additional disk is that you are less restricted by storage problems. You can also increase the size of an additional disk after its creation, up to 10TB.
 
-Find out more about [Public Cloud additional disks](https://www.ovhcloud.com/asia/public-cloud/block-storage/){.external}.
+Find out more about [Public Cloud additional disks](/links/public-cloud/block-storage).
 
 > [!warning]
 >
@@ -242,11 +242,11 @@ Find out more about [Public Cloud additional disks](https://www.ovhcloud.com/asi
 
 #### Step 1: Create and attach the disk to your Public Cloud Instance
 
-To do this, just follow the steps in this guide: [Create an additional disk on Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance){.external}.
+To do this, just follow the steps in this guide: [Create an additional disk on Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
 #### Step 2: Configure the additional disk
 
-To do this, just follow the steps in this guide: [Configure an additional disk on Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#from-an-instance-on-linux){.external}.
+To do this, just follow the steps in this guide: [Configure an additional disk on Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#from-an-instance-on-linux).
 
 > [!primary]
 >
@@ -266,7 +266,7 @@ To backup the files, there are two options with Public Cloud. The first is to si
 Option 1 - create a snapshot of the Instance:
 Use the following guide to make a snapshot of your Instance:
 
-[Backing Up an Instance](/pages/public_cloud/compute/save_an_instance){.external}
+[Backing Up an Instance](/pages/public_cloud/compute/save_an_instance)
 
 Option 2 - create copy of the folder using the command below:
 

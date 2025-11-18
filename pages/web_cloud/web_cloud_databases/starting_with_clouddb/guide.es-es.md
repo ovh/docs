@@ -13,8 +13,8 @@ Su solución Cloud Databases está asociada por defecto a la red de alojamientos
 
 ## Requisitos
 
-- Tener una instancia [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluido en un [plan de hosting performance](/links/web/hosting)).
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener una instancia [Cloud Databases](/links/web/databases) (incluido en un [plan de hosting performance](/links/web/hosting)).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -47,7 +47,7 @@ Si el plan de hosting incluye la opción Web Cloud Databases, haga clic en las f
 
 ### Ver la información general del servicio
 
-En la columna izquierda de la sección Web del [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Web Cloud Databases`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+En la columna izquierda de la sección Web del [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud Databases`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ En dicha pestaña podrá consultar la información más importante relativa al s
 |RAM|Muestra la memoria RAM disponible para la instancia e indica si se ha sobrepasado dicha cantidad de memoria. La instancia Cloud Databases tiene recursos de RAM dedicados y garantizados. Si lo necesita, puede aumentar la capacidad de RAM de la instancia, así como recibir alertas si consume todos los recursos de RAM asignados.|
 |Infraestructura|Muestra la infraestructura utilizada por la instancia. Se trata de una información inherente a la infraestructura de OVHcloud.|
 |Datacenter|Muestra el centro de datos en el que se ha creado la instancia Cloud Databases. Asegúrese de que el datacenter sea el mismo que el del servicio (VPS, servidor dedicado, Public Cloud...) que aloje su sitio web.|
-|Host|Indica el servidor de OVHcloud en el que se ha creado la instancia. Se trata de una información inherente a la infraestructura de OVHcloud y se utiliza en nuestras comunicaciones relacionadas con [incidencias](http://status.ovh.es){.external}.|
+|Host|Indica el servidor de OVHcloud en el que se ha creado la instancia. Se trata de una información inherente a la infraestructura de OVHcloud y se utiliza en nuestras comunicaciones relacionadas con [incidencias](http://status.ovh.es).|
 
 ![Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 

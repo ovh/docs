@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Como alterar o domínio de um site existente"
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
-updated: 2022-10-25
+updated: 2025-10-28
 ---
 
 ## Objetivo
@@ -37,7 +37,7 @@ Para alterar o domínio de acesso ao seu website, deverá realizar várias etapa
 
 ### Etapa 1 - declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
 
-Declare o seu novo nome de domínio através da nossa documentação sobre a [adição de um multi-site no seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite). Declare também o seu sub-domínio em `www` se deseja, por exemplo, que `www.NewDomain.tld` apareça também o seu website `NewDomain.tld`.
+Declare o seu novo nome de domínio com a nossa documentação sobre [como adicionar um site web ao seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite). Declare também o seu subdomínio em `www` se quiser, por exemplo, que `www.NewDomain.tld` também mostre o seu site, em adição a `NewDomain.tld`.
 
 Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
@@ -53,20 +53,11 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
 > **Certificados SSL**
 >
-> Se o domínio inicialmente utilizado para aceder ao seu website dispuser de um certificado SSL, consulte os nossos dois guias para efetuar ou verificar as ações descritas imediatamente abaixo destes dois links:
+> Se o domínio inicialmente utilizado para aceder ao seu site web tem um certificado SSL, consulte os nossos 2 guias:
 > - [Gerir um certificado SSL no alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Ativar o HTTPS num website com certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
->
-> Para o certificado SSL *Let's Encrypt* gratuito, basta-lhe ativar a opção `SSL` **a a partir de agora** para o seu novo domínio através do separador `multi-sites`{.action} do seu alojamento. A seguir, clique no botão `ações`{.action} na parte superior da tabela, indicando os seus multistas e depois `Regenerar o certificado SSL`{.action}. A regeneração demorará, no mínimo, 2 horas para ser realizada.
->
-> Para os certificados SSL pagos *Sectigo DV* e *Sectigo EV* propostos pela OVHcloud, estes últimos são válidos apenas para um domínio e o seu subdomínio em `www`.<br>
-> **Uma vez chegado a [etapa 3](#step3) deste guia**, deverá eliminar o seu certificado SSL pago a fim de subscrever outro para o seu novo domínio.<br>
-> *Atenção, a eliminação é irreversível e nenhum reembolso será efetuado durante o resto do tempo do seu antigo certificado SSL. Certifique-se de que os passos 1 e 2 estão a ser realizados corretamente.*
->
-> Para os outros certificados SSL *custom* que instalou por si mesmo, contacte o seu fornecedor de certificados SSL para conhecer as possibilidades que se lhe oferecem nesta situação.
->
 
-Se todas as ações foram corretamente realizadas, as declarações em multi-sites dos seus domínios devem ser estritamente idênticas **exceto se utilizar um certificado SSL pago de tipo *Sectigo DV*, *Sectigo EV* ou *custom**.
+Se todas as ações foram corretamente realizadas, as declarações dos seus nomes de domínio devem ser estritamente idênticas **a menos que utilize um certificado SSL pago do tipo *Sectigo DV*, *Sectigo EV* ou *custom***.
 
 ![multi-sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
@@ -100,9 +91,9 @@ A maioria dos CMS permite diretamente, a partir do seu espaço de administraçã
 Uma vez que os CMS são desenvolvidos por organismos terceiros não geridos pela OVHcloud, encontrará de seguida os links para a documentação oficial dos diferentes CMS propostos em instalação nos nossos alojamentos partilhados:
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
-- Joomla! : O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [docs.joomla.org](https://docs.joomla.org/){.external} ou [forum.joomla.org](https://forum.joomla.org/){.external}.
-- Drupal: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [drupal.org](https://drupal.org){.external} ou [drupal.fr](https://drupal.fr){.external}.
-- PrestaShop: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://help-center.prestashop.com){.external} para aceder à sua página oficial.
+- Joomla! : O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [docs.joomla.org](https://docs.joomla.org/) ou [forum.joomla.org](https://forum.joomla.org/).
+- Drupal: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [drupal.org](https://drupal.org) ou [drupal.fr](https://drupal.fr).
+- PrestaShop: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://help-center.prestashop.com) para aceder à sua página oficial.
 
 Note que, para estes CMS, também é possível efetuar as alterações diretamente [na base de dados](/pages/web_cloud/web_hosting/sql_create_database). Deverá alterar o URL de acesso ao seu site na tabela prevista para esse efeito.
 
@@ -123,14 +114,14 @@ Se tiver contactado um fornecedor para a criação do seu site, contacte-o para 
 
 ### Etapa 3 - retirar o antigo nome de domínio <a name="step3"></a>
 
-Para evitar o "*Duplicate-content*" e quando o seu novo domínio estiver plenamente operacional com o seu site, deverá eliminar a declaração em multi-sites para o seu antigo domínio através do guia sobre a gestão dos [multi-sites no seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Para evitar o "*Duplicate-content*" e quando o seu novo nome de domínio estiver plenamente operacional com o seu site web, deverá eliminar a declaração do seu antigo nome de domínio no seu site web com o guia sobre a gestão dos [sites web no seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > Não se esqueça de ocupar o seu certificado SSL *Sectigo EV*, *Sectigo DV* ou *Custom*, conforme especificado na [etapa 1](#step1).
 >
 
-Uma vez o domínio antigo retirado do separador multi-sites e registado na OVHcloud, poderá reencaminhá-lo através de um [reencaminhamento visível permanente 301](/pages/web_cloud/domains/redirect_domain_name). Isto permitirá que os visitantes sejam automaticamente reencaminhados para o seu site ao visualizar o seu novo domínio na barra de endereço/URL do seu browser.
+Assim que o seu antigo nome de domínio estiver dissociado do seu site web no seu alojamento web e se estiver registado na OVHcloud, poderá redirecioná-lo com uma [redirecionamento permanente visível 301](/pages/web_cloud/domains/redirect_domain_name). Isto permitirá que os seus visitantes sejam automaticamente redirecionados para o seu site, visualizando o seu novo domínio na barra de endereços/URL do seu navegador.
 
 ## Quer saber mais? <a name="go-further"></a>
 

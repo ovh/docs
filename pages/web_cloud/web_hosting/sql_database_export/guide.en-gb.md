@@ -1,7 +1,7 @@
 ---
 title: "Retrieving the backup of a Web Hosting plan’s database"
 excerpt: 'Find out how to retrieve a database backup from your OVHcloud Web Hosting plan'
-updated: 2023-08-22
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -12,21 +12,21 @@ Databases are used by most websites and **C**ontent **M**anagement **S**ystems (
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](/links/web/hosting){.external}
-- a database created as part of an [OVHcloud Web Hosting plan](/links/web/hosting){.external}
-- Depending on which backup method you use, you must be able to administer the Web Hosting plan from your [OVHcloud Control Panel](/links/manager){.external}, or have the information you need in order to connect to the database.
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
+- a database created as part of an [OVHcloud Web Hosting plan](/links/web/hosting)
+- Depending on which backup method you use, you must be able to administer the Web Hosting plan from your [OVHcloud Control Panel](/links/manager), or have the information you need in order to connect to the database.
 
 ## Instructions
 
 Before you begin, define the method you will follow to retrieve the backup of your database. There are several ways to do this:
 
-- **Use the OVHcloud backup tool**: this solution allows you to retrieve backups of your databases from the [OVHcloud Control Panel](/links/manager){.external}. This method does not require any particular technical skills.
+- **Use the OVHcloud backup tool**: this solution allows you to retrieve backups of your databases from the [OVHcloud Control Panel](/links/manager). This method does not require any particular technical skills.
 
 - **Carry out the backup from the phpMyAdmin web interface**: this method requires you to log in to the *phpMyAdmin* interface to carry out the manipulation. You will need to be familiar with the *phpMyAdmin* interface.
 
 - **Use a script that performs the backup**: this method involves creating a script saved on your OVHcloud Web Hosting plan, which will perform the backup. Specific knowledge is required for this creation.
 
-- **Backing up from an SSH command** : this method involves connecting to your FTP storage space via the SSH protocol, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting](/links/web/hosting){.external} solution are required to use this type of access.
+- **Backing up from an SSH command** : this method involves connecting to your FTP storage space via the SSH protocol, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting](/links/web/hosting) solution are required to use this type of access.
 
 > [!success]
 >
@@ -46,9 +46,34 @@ We recommend reading this guide, and focusing on the backup method you wish to u
 
 ### Retrieve a backup via the OVHcloud tool
 
-To access the OVHcloud backup tool, log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then choose the name of the web hosting plan concerned. Go to the `Databases`{.action} tab.
+To access the OVHcloud backup tool, click on the tabs below to view each of the **4** steps.
 
-The table that opens will contain all of the databases created as part of your Web Hosting plan. You can now choose between creating a new backup, or recovering an existing one, in two separate steps.
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `Databases`{.action} tab.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> On the new page, a table will appear containing the databases you have created.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
+>>
+>> The table that opens will contain all of the databases created as part of your Web Hosting plan. You can now choose between creating a new backup, or recovering an existing one, in two separate steps.
 
 #### Step 1: Create a new backup of the database
 
@@ -76,7 +101,7 @@ To download a backup, click on the `...`{.action} button to the right of the bac
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
-To do this, log in to *phpMyAdmin*. To find the access link for this interface, log in to your [OVHcloud Control Panel](/links/manager){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Go to the `Databases`{.action} tab.
+To do this, log in to *phpMyAdmin*. To find the access link for this interface, log in to your [OVHcloud Control Panel](/links/manager) , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Go to the `Databases`{.action} tab.
 
 The table that opens will contain all of the databases created as part of your Web Hosting plan. In this window, click the `...`{.action} button to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
 

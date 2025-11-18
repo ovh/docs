@@ -1,14 +1,14 @@
 ---
 title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-updated: 2024-10-18
+updated: 2025-08-25
 ---
 
 ## Objectif
 
 Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de Zerto Virtual Replication entre deux datacenters OVHcloud.
 
-Pour les autres cas de figure., consultez notre guide sur comment [utiliser Zerto entre OVHcloud et une plateforme tierce](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
+Pour les autres cas de figure, consultez notre guide sur comment [utiliser Zerto entre OVHcloud et une plateforme tierce](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
 
 **Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité (PRA) entre deux offres Hosted Private Cloud.**
 
@@ -16,6 +16,11 @@ Pour les autres cas de figure., consultez notre guide sur comment [utiliser Zert
 
 * Posséder deux offres [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) sur deux hôtes différents.
 * Avoir sur chacune d'entre elles une adresse IP publique libre.
+
+> [!primary]
+>
+> Un compte **Read Write (RW)** sur vCenter est nécessaire pour accéder et manipuler l’interface Zerto.
+
 
 ### Concepts Zerto Virtual Replication
 
@@ -37,11 +42,11 @@ Les VRA sont ainsi déployés sur chaque hyperviseur et vont consommer des resso
 
 La réplication des données se fait entre deux (2) sites appairés, ainsi les VRA de chaque côté peuvent établir leur flux de réplication.
 
-Par défaut les flux de réplication Zerto ne sont pas chiffrés et la sécurité étant une priorité pour OVHcloud, nous mettons en place entre les deux sites un tunnel chiffré (via IPSec) au moyen d'une applicance réseau appelée L2VPN.
+Par défaut les flux de réplication Zerto ne sont pas chiffrés et la sécurité étant une priorité pour OVHcloud, nous mettons en place entre les deux sites un tunnel chiffré (via IPSec) au moyen d'une appliance réseau appelée L2VPN.
 
 #### Groupe de réplication (VPG)
 
-L'activation et le pilotage de la réplication des VM se fait au travers d'un Groupe de réplication (VPG).
+L'activation et le pilotage de la réplication des VM se fait au travers d'un groupe de réplication (VPG).
 Il permet de regrouper logiquement un groupe de VM correspondant à un besoin métier ou opérationnel (ex: une application avec sa base de données) afin de configurer l'objectif de perte de données maximale admissible (**RPO**), l'ordre de démarrage (la base avant l'application), les configurations réseau pour les exercices ou en cas réel. 
 
 À noter qu'il est aussi possible de définir un niveau de priorité entre les VPG afin de prioriser le transfert de données en cas de problème de bande passante réseau.
@@ -63,9 +68,9 @@ Sélectionnez **Between two OVH Private Cloud solutions** puis cliquez sur `Acti
 
 La sélection du **Private Cloud** Primaire ainsi que le **datacenter** se font automatiquement en se basant sur l'infrastructure par laquelle vous avez accédé.
 
-Sélectionnz dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP publiques attaché au **Private Cloud**. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
+Sélectionnez dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP publiques attaché au **Private Cloud**. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
 
-Cliquer sur `Next`{.action},
+Cliquez sur `Next`{.action},
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_03.png){.thumbnail}
 
@@ -106,6 +111,12 @@ Une fois l'activation effectuée, vous recevrez par e-mail une configuration de 
 > Vous pourrez vous authentifier avec vos comptes administrateurs de la même façon que pour vSphere.
 > 
 
+> [!warning]
+>
+> Lors de l’activation de Zerto, une VM nommée `Z-VRAH` peut apparaître dans votre inventaire.
+> Ce déploiement n’est **pas systématique** : il dépend notamment de la volumétrie de données à traiter.
+> Si elle est présente, cette VM est essentielle au service et **ne doit pas être modifiée ni supprimée**.
+
 #### Depuis l'API OVHcloud
 
 ### Interface Zerto Replication
@@ -116,7 +127,7 @@ L'interface est accessible depuis les deux (2) infrastructures via l'adresse :
 
 > [!warning]
 >
-> Comme indiqué dans le corps de l'e-amil, les identifiants pour se connecter sont les même que ceux utilisés pour se connecter à l'interface vSphere.
+> Comme indiqué dans le corps de l'e-mail, les identifiants pour se connecter sont les mêmes que ceux utilisés pour se connecter à l'interface vSphere.
 >
 
 Une fois identifié, vous arrivez sur un écran affichant le tableau de bord :
@@ -142,7 +153,7 @@ Depuis le menu `Actions`{.action}, sélectionnez `Create VPG`{.action}
 Sur le premier écran :
 
 * Saisissez un nom pour le VPG, idéalement celui-ci doit être parlant dans un contexte opérationnel.
-* Sauf besoin particulier, la priorité définie a **Medium** peut-être laissée telle-quelle.
+* Sauf besoin particulier, la priorité définie à **Medium** peut être laissée telle quelle.
 
 Continuez en cliquant sur `NEXT`{.action}
 
@@ -253,7 +264,7 @@ Si le texte du bouton est en gris, c'est qu'il n'y a pas de VPG éligible pour l
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_01.png){.thumbnail}
 
-Immédiatement, un écran apparait avec les VGP disponibles, le sens de réplication, le site de destination et si le niveau de protection est correct (**Meeting SLA**).
+Immédiatement, un écran apparaît avec les VPG disponibles, le sens de réplication, le site de destination et si le niveau de protection est correct (**Meeting SLA**).
 
 Vous avez alors plusieurs choix :
 
@@ -264,9 +275,9 @@ Validez et passez à l'étape suivante en cliquant sur `NEXT`{.action}.
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_02.png){.thumbnail}
 
-Nous sommes partis sur le choix 1,  à savoir un test sur un VPG.
+Nous avons sélectionné le choix 1, à savoir un test sur un VPG.
 
-À cette étape on retrouve un résumé des actions lié au VPG :
+À cette étape on retrouve un résumé des actions liées au VPG :
 
 * Sens de réplication
 * Site distant
@@ -318,7 +329,7 @@ Pour cela connectez-vous à l'interface Zerto Replication, basculez le sélecteu
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_03.png){.thumbnail}
 
-Immédiatement, un écran apparait avec les VGP disponibles, le sens de réplication, le site de destination et si le niveau de protection est correct (**Meeting SLA**).
+Immédiatement, un écran apparaît avec les VPG disponibles, le sens de réplication, le site de destination et si le niveau de protection est correct (**Meeting SLA**).
 
 Vous aurez plusieurs choix :
 
@@ -331,7 +342,7 @@ Validez et passez à l'étape suivante en cliquant sur `NEXT`{.action}.
 
 Le choix 1, le test sur un VPG, est sélectionné à des fins d'exemple.
 
-À cette étape on retrouve un résumé des actions lié au VPG :
+À cette étape on retrouve un résumé des actions liées au VPG :
 
 * Sens de réplication
 * Site distant
@@ -348,7 +359,7 @@ Au niveau de la **Commit Policy**, vous avez trois (3) options :
 
 * Auto-Rollback : sans action de votre part, le retour en arrière est déclenché au bout du temps prévu.
 * Auto-Commit : sans action de votre part, la validation des données sur la plateforme secondaire est déclenchée au bout du temps prévu (il n'est plus possible de revenir simplement sur la plateforme principale).
-* None : les actions de **Rollback** ou de **Commit** doivent être validées par votre part.
+* None : les actions de **Rollback** ou de **Commit** doivent être validées de votre part.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_06.png){.thumbnail}
 
@@ -382,11 +393,11 @@ Il ne vous reste plus qu'à contrôler si tout fonctionne correctement sur le si
 Après avoir lancé la bascule, vous pouvez voir une alerte au niveau de l'interface Zerto Replication.
 Celle-ci est liée à la **Commit Policy** et sera présente tant que le commit n'est pas confirmé ou annulé.
 
-Lle cas échéant, les actions sont à faire via les icônes à droite du VPG.
+Le cas échéant, les actions sont à faire via les icônes à droite du VPG.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_11.png){.thumbnail}
 
-Au moment de la validation du commit, vous pouvez automatiquement configurer le VPG en sens inverse (appeler **Reverse Protection**).
+Au moment de la validation du commit, vous pouvez automatiquement configurer le VPG en sens inverse (appelé **Reverse Protection**).
 
 Validez en cliquant sur `COMMIT`{.action}
 
@@ -396,12 +407,16 @@ Au niveau du VPG, vous pouvez noter que la direction (via la flèche) de réplic
 
 ### Préparer et effectuer un retour en arrière
 
-Suivant comment a éfé fait le **Failover**, l'éventuel retour sur le site principal (cela n'est pas une obligation) peut nécessiter plusieurs actions.
+En fonction de la configuration du **Failover**, l'éventuel retour sur le site principal (cela n'est pas une obligation) peut nécessiter plusieurs actions.
 
-Si vous avez basculé avec du **Reverse Protection**, le retour arrière consiste à faire un **Failover Live** (se reporter à la partie idoine pour les actions à faire).
+Si vous avez basculé avec le **Reverse Protection**, le retour arrière consiste à faire un **Failover Live** (se reporter à la partie idoine pour les actions à faire).
 
-Si vous avez basculé **sans** du **Reverse Protection**, le retour arrière consiste à créer un VPG **puis** faire un **Failover Live** (se reporter aux sections précédentes pour les actions à faire).
+Si vous avez basculé **sans** le **Reverse Protection**, le retour arrière consiste à créer un VPG **puis** faire un **Failover Live** (se reporter aux sections précédentes pour les actions à faire).
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
+
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: Configuring HTTP/2 on an OVHcloud Load Balancer service
 excerpt: Configuring HTTP/2 on an OVHcloud Load Balancer service
-updated: 2018-01-15
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -11,6 +11,13 @@ The OVHcloud Load Balancer does not currently support the HTTP/2 protocol. Howev
 ALPN (Application-Layer Protocol Negotiation) is a TLS extension that enables the application layer to negotiate which protocol will be used (h2 in this case).
 
 **This guide is designed to help you create an HTTP/2 service with the OVHcloud Load Balancer solution. Here, we will configure this service to balance the load across several servers responding with HTTP/2.**
+
+> [!primary]
+>
+> Since June 2025, HTTP and TLS frontends used by OVHcloud Load Balancer services natively support the HTTP/2 protocol.
+>
+> However, the following guide remains applicable for TCP frontends.
+>
 
 ## Requirements
 

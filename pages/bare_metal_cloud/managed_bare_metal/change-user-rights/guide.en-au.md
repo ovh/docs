@@ -13,7 +13,7 @@ The purpose of this guide is to explain the user rights management regarding the
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-au/managed-bare-metal/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

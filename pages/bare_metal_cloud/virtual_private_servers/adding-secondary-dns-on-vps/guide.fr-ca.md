@@ -13,13 +13,13 @@ Si vous configurez votre VPS comme serveur DNS, vous pouvez utiliser le service 
 ## Prérequis
 
 - Un nom de domaine auquel vous avez accès en tant qu’administrateur
-- Un serveur [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre espace client OVHcloud
+- Un serveur [VPS](/links/bare-metal/vps) dans votre espace client OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
 >
-> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## En pratique

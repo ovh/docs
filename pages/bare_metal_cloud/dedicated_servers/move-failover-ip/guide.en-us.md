@@ -1,12 +1,14 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
->
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
+> This article is about moving Additional IPv4, which follows [specific regional limitations](#limitations).
+> 
+> Configuring Additional IP addresses in a vRack (private network) circumvents those regional restrictions by not being dependent on a single region, while facilitating interconnection over a wide range of OVHcloud services.
+> Learn how to configure Additional IP addresses in a vRack with our guides for [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) and [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objective
@@ -33,9 +35,9 @@ With this technology, you can switch IP addresses from one solution to another i
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 > [!warning]
 > If the Additional IP address or one of the block IP addresses has a virtual MAC attached, the target server must support the vMAC functionality.
@@ -83,7 +85,7 @@ Click `Next`{.action}, then `Confirm`{.action}.
 
 ### Moving an IP via the API
 
-Log in to the OVHcloud [API webpage](https://ca.api.ovh.com/).
+Log in to the OVHcloud [API webpage](/links/api).
 
 First, it is best to check if the IP address can be moved.
 <br>To check if the IP can be moved to one of your dedicated servers, use the following call:

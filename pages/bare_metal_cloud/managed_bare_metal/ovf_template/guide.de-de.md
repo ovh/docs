@@ -24,7 +24,7 @@ Windows VMs, die von einem Template aus eingerichtet werden, verwenden automatis
 ## Voraussetzungen
 
 - Sie haben Zugriff auf den Web Client (HTML5).
-- [Sie haben die Windows Lizenzen](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#windows-lizenz) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)  aktiviert.
+- [Sie haben die Windows Lizenzen](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#windows-lizenz) über Ihr [OVHcloud Kundencenter](/links/manager)  aktiviert.
 
 ## In der praktischen Anwendung
 

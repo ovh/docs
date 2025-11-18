@@ -89,7 +89,7 @@ Se deseja eliminar a integralidade dos seus métodos de pagamento, o conjunto do
 
 #### Eliminar um método de pagamento através das API OVHcloud
 
-A eliminação de um método de pagamento pode ser realizada através das API, ligando-se a [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+A eliminação de um método de pagamento pode ser realizada através das API, ligando-se a [https://eu.api.ovh.com/](/links/api).
 
 Comece por obter a ID do método de pagamento:
 

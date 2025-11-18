@@ -1,7 +1,7 @@
 ---
 title: VPS-Partitionierung nach einem Storage-Upgrade
 excerpt: Erfahren Sie hier, wie Sie den verwendbaren Speicherplatz nach einem Upgrade vergrößern
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 > [!primary]
@@ -57,7 +57,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Wenn Ihr Ergebnis ähnlich aussieht wie die Ausgabe oben und die Spalte `MOUNTPOINT` in der entsprechenden Zeile leer ist, können Sie mit dem [nächsten Schritt](#checkfs) fortfahren.
+Wenn Ihr Ergebnis ähnlich aussieht wie die Ausgabe oben und die Spalte `MOUNTPOINT` in der entsprechenden Zeile leer ist, können Sie mit dem [nächsten Schritt](#filesystemcheck) fortfahren.
 
 Wenn Ihr Ergebnis jedoch zeigt, dass es einen Mountpunkt für die VPS-Partition gibt, muss sie zuerst ausgehängt werden (*unmount*).
 
@@ -81,6 +81,8 @@ In dieser Beispielkonfiguration wäre der Befehl:
 ```bash
 umount /dev/sdb1
 ```
+
+<a name="filesystemcheck"></a>
 
 ### Überprüfung des Dateisystems
 
@@ -170,6 +172,18 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 
 Vergewissern Sie sich, dass der Standardwert in der Zeile `First sector` mit dem Wert übereinstimmt, den Sie zuvor notiert haben. Stimmt er nicht überein, verwenden Sie den von Ihnen aufgeschriebenen Wert.
 
+Wenn die folgende Meldung angezeigt wird:
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Geben Sie `n` ein und fahren Sie fort.
+
+Die Antwort `y` bewirkt, dass das vorhandene ext4-Dateisystem auf Partition 1 überschrieben und die darin enthaltenen Daten gelöscht werden.
+
 ### Die Partition bootfähig machen
 
 Jetzt muss sichergestellt werden, dass die Partition bootfähig ist. Das ist über den Befehl `a`{.action} möglich.
@@ -207,7 +221,7 @@ The filesystem on /dev/sdb1 is now 5242624 blocks long.
 
 ### Überprüfung der Ergebnisse
 
-Um zu überprüfen, ob das Erweitern funktioniert hat, können Sie die neu erstellte Partition einhängen und sich die Größe ansehen.
+Um zu überprüfen, ob das Erweitern funktioniert hat, können Sie die neu erstellte Partition mounten und sich die Größe ansehen.
 
 ```sh
 mount /dev/sdb1 /mnt

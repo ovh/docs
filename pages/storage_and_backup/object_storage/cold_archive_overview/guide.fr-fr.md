@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Présentation
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
-updated: 2024-08-05
+updated: 2025-10-20
 ---
 
 <style>
@@ -82,7 +82,7 @@ Vous pouvez suivre les différentes étapes de vos données par le statut de vot
 | État de l'archive (=bucket) | Description | Permissions des objets | Durée | Tarification des données |
 | --- | --- | --- | --- | --- |
 | **`None`** | Aucune configuration Intelligent-Tiering appliquée au bucket pour l'instant. | Tous | illimité | Standard |
-| **`Archiving`** | Archivage en cours sur bandes. | Listing | <48h | Archive |
+| **`Archiving`** | Archivage en cours sur bandes. | Listing | N/A | Archive |
 | **`Archived`** | Objets archivés sur bandes uniquement. | Listing | illimité | Archive |
 | **`Restoring`** | Restauration en cours à partir des bandes. | Listing | <48h | Archive |
 | **`Restored`** | Objets restaurés et accessibles. | Lecture seule + Listing | 30 jours | Archive |

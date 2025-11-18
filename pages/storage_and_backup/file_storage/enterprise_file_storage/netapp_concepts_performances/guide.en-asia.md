@@ -1,12 +1,12 @@
 ---
 title: Enterprise File Storage - Performance Concepts
 excerpt: "Learn about the concepts of provisioning, tracking, and performance testing for Enterprise File Storage"
-updated: 2022-11-30
+updated: 2025-09-12
 ---
 
 ## Objective
 
-Learn about the concepts of provisioning, tracking, and performance testing for [Enterprise File Storage](https://www.ovhcloud.com/asia/storage-solutions/enterprise-file-storage/).
+Learn about the concepts of provisioning, tracking, and performance testing for [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## Instructions
 
@@ -27,7 +27,7 @@ This information is important when you design your storage architecture. Let’s
 
 - **Example 2**: Your infrastructure requires **4500 IOPS** and a data volume of **1 TB**. To do this, you need to provision **2 TB** to get the **required 4500 IOPS**. Specifically, you will get **8000 IOPS** on provisioned capacity. This involves overprovisioning your service to ensure the level of performance you want.
 
-- **Example 3**: Your application does not require any particular performance but a storage volume of more than **60TB**. In this case, it is best to switch to the more economical storage service [HA-NAS](https://www.ovhcloud.com/asia/storage-solutions/nas-ha/), which can reach capacities higher than 58 TB per service.
+- **Example 3**: Your application does not require any particular performance but a storage volume of more than **60 TB**. In this case, it is best to switch to the more economical storage service [HA-NAS](/links/storage/nas-ha), which can reach capacities higher than 58 TB per service.
 
 ### Volumes and quality of services (QoS)
 
@@ -66,10 +66,52 @@ The [FIO](https://github.com/axboe/fio) tool allows you to test several scenario
 - The number of FIO workers
 - The access model (read/write/sequential/random), etc.
 
-For more information, see [the FIO documentation](https://fio.readthedocs.io/en/latest/index.html){.external}.
+
+Below are some examples of fio commands to validate that the maximum number of IOPS (4000) or the maximum bandwidth (64MB/s) can be reached for a 1TB EFS service:
+
+**Random read - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=8k -size=1G -time_based -runtime=60 -name=test1 -directory=/share-nfs
+```
+**Random write - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=8k -size=1G -time_based -runtime=60 -name=test2 -directory=/share-nfs
+```
+**Random read - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=64k -size=1G -time_based -runtime=60 -name=test3 -directory=/share-nfs
+```
+**Random write - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=64k -size=1G -time_based -runtime=60 -name=test4 -directory=/share-nfs
+```
+**Sequential read - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=8k -size=1G -time_based -runtime=60 -name=test5 -directory=/share-nfs
+```
+**Sequential write - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=8k -size=1G -time_based -runtime=60 -name=test6 -directory=/share-nfs
+```
+**Sequential Read - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=64k -size=1G -time_based -runtime=60 -name=test7 -directory=/share-nfs
+```
+**Sequential write - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=64k -size=1G -time_based -runtime=60 -name=test8 -directory=/share-nfs
+```
+
+For more information, see [the FIO documentation](https://fio.readthedocs.io/en/latest/index.html).
+
+**You can also use other open-source tools such as:**
+
+- [nfsiostat](https://man7.org/linux/man-pages/man8/nfsiostat.8.html)
+- [NFStest](https://wiki.linux-nfs.org/wiki/index.php/NFStest)
+- [nfstrace](https://github.com/epam/nfstrace)
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of Discord users: <https://discord.gg/jW2FgBJ72h>
+Join our community of Discord users: <https://discord.gg/ovhcloud>

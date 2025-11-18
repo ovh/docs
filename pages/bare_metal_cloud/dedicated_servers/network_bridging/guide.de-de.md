@@ -1,12 +1,15 @@
 ---
 title: Konfiguration von Additional IPs im Bridge-Modus auf Ihren virtuellen Maschinen
 excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang für Ihre virtuellen Maschinen konfigurieren
-updated: 2025-05-16
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Diese Anleitung befasst sich mit der Konfiguration von Additional IPv4-Adressen auf einer öffentlichen Schnittstelle. Sie können auch IPv6-Adressen auf Ihren virtuellen Servern konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm) verwenden.
 >
-> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](/links/network/additional-ip). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
+> Beachten Sie, dass Additional IPs auch in einem vRack (privates Netzwerk) konfiguriert werden können, was die Anbindung eines breiten Spektrums von OVHcloud Diensten ermöglicht und somit für mehr Flexibilität sorgt.
+>
+> Erfahren Sie mithilfe unserer Anleitungen, wie Sie Additional IPs in einem vRack für [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) und [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) konfigurieren.
 >
 
 ## Ziel
@@ -79,7 +82,7 @@ Das Ihrem Server zugewiesene IPv4-Gateway wird im Tab `Allgemeine Informationen`
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 
-Klicken Sie auf der [OVHcloud API Seite](https://eu.api.ovh.com/console/) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein.
+Klicken Sie auf der [OVHcloud API Seite](/links/console) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein.
 
 Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
 
@@ -99,7 +102,7 @@ Für alle Betriebssysteme und Distributionen **muss**** Ihre virtuelle Maschine 
 
 > [!warning]
 >
-> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie noch keine VM erstellt haben, gehen Sie zu den Optionen auf der Seite [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} (EN) von Proxmox.
+> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie noch keine VM erstellt haben, gehen Sie zu den Optionen auf der Seite [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines) (EN) von Proxmox.
 >
 
 Nach Erstellung der VM und während diese noch ausgeschaltet ist:
@@ -121,12 +124,7 @@ Sie können nun Ihre VM starten und zu den nächsten Schritten, abhängig vom in
 
 > [!warning]
 >
-> Der ESXi Hypervisor wird von OVHcloud nicht mehr unterstützt. Weitere Informationen finden Sie auf [dieser Seite](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
->
-
-> [!warning]
->
-> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie keine VM erstellt haben, lesen Sie die Anleitung [Eine virtuelle Maschine im VMware Host-Client erstellen](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) auf der VMware-Seite.
+> Die folgenden Anweisungen gelten für einen virtuellen Rechner, der zuvor mit einem bereits installierten Betriebssystem erstellt wurde. Wenn Sie keine VM erstellt haben, lesen Sie die Anleitung [Eine virtuelle Maschine im VMware Host-Client erstellen](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html) (EN) auf der VMware-Seite.
 >
 
 Nach Erstellung der VM und während diese noch ausgeschaltet ist klicken Sie mit der rechten Maustaste darauf und klicken dann auf `Edit settings`.
@@ -323,7 +321,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Wenn Sie eine Antwort erhalten, wurde die Additional IP korrekt konfiguriert. Ist das nicht der Fall, starten Sie die virtuelle Maschine neu, und wiederholen Sie den Ping-Befehl.
 
-Weitere Informationen zu `nmcli` finden Sie auf [dieser Seite](https://docs.redhat.com/de/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-using_the_networkmanager_command_line_tool_nmcli).
+Weitere Informationen zu `nmcli` finden Sie auf [dieser Seite (EN)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli).
 
 #### FreeBSD
 

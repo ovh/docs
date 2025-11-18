@@ -22,7 +22,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la
 
 > [!warning]
 >
-Notez que les crédits ajoutés dans cette section ne peuvent pas être transférés ni remboursés. Il n'ont aucune valeur monétaire et tout crédit non utilisé dans les 13 mois suivant son achat est perdu.
+> Notez que les crédits ajoutés dans cette section ne peuvent pas être transférés ni remboursés. Il n'ont aucune valeur monétaire et tout crédit non utilisé dans les 13 mois suivant son achat est perdu.
 >
 
 ### Ajouter du crédit
@@ -55,7 +55,7 @@ Le solde du voucher apparaîtra dans la liste `Crédits & Vouchers`.
 
 > [!primary]
 >
-Les périodes de validité des vouchers étant généralement plus limitées, le solde du voucher sera utilisé avant le crédit Public Cloud.
+> Les périodes de validité des vouchers étant généralement plus limitées, le solde du voucher sera utilisé avant le crédit Public Cloud.
 >
 
 ## Aller plus loin

@@ -19,7 +19,7 @@ It is based on the YOLOv8 open source [repository](https://github.com/ultralytic
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have created a Public Cloud project.
 - The ovhai CLI interface is installed on your system (find more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
 - You have [Docker](https://www.docker.com/get-started) installed and configured to build images.
@@ -277,7 +277,7 @@ All the source code is available on the [OVHcloud GitHub organization](https://g
 
 To create the application using the trained model, you can follow this tutorial: [Deploy an app for playing "rock paper scissors"](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project. 
 
 ## Feedback
 

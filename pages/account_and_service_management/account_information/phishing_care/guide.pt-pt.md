@@ -31,7 +31,7 @@ Recebeu um e-mail em nome da OVHcloud e quer ter a certeza de que é autêntico?
 |---|---|---|
 |1 - Remetente|Certifique-se de que o endereço utilizado para o envio do e-mail termina em «@ovhcloud.com», «@ovh.com», «@soyoustart.com» ou «@kimsufi.com».|Na maioria dos casos, o e-mail será identificado como «spam» entre parêntesis retos e o seu ID não aparecerá OU estará incorreto.|O remetente do e-mail será forçosamente um endereço que não pertence à OVHcloud.|
 |2 - Assunto|Certifique-se de que o seu ID **(que começa pela primeira letra do sobrenome registado na OVHcloud, seguida da primeira letra do nome)** e/ou o endereço de e-mail da sua conta figuram no assunto da mensagem.|Na maioria dos casos, o e-mail será identificado como «spam» entre parêntesis retos e o seu ID não aparecerá OU estará incorreto.|
-|3 - Ligação|Passe o ponteiro do rato sobre a ligação e, sem ter de clicar nela, verá diretamente o conteúdo (na parte inferior do navegador). Aqui, a ligação reencaminha efetivamente para `https://www.ovh.com/`.|No nosso exemplo, ao passar o ponteiro do rato sobre a ligação, verá que esta não tem nada que ver com a OVHcloud. Não clique nela.|
+|3 - Ligação|Passe o ponteiro do rato sobre a ligação e, sem ter de clicar nela, verá diretamente o conteúdo (na parte inferior do navegador). Aqui, a ligação reencaminha efetivamente para <https://www.ovh.com/>.|No nosso exemplo, ao passar o ponteiro do rato sobre a ligação, verá que esta não tem nada que ver com a OVHcloud. Não clique nela.|
 
 #### Denunciar um e-mail de phishing
 

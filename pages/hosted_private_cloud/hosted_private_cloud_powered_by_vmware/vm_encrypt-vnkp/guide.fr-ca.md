@@ -33,7 +33,7 @@ Il est possible d'exporter la clé **vSphere Native Key provider** et de la réi
 
 Dans le détail, lorsque l'on chiffre une machine virtuelle, le Vcenter génère une clé **KDK** (Key Derivation Key).<br>
 Cette clé est poussée aux ESXi et permet de générer une autre clé, la **DEK** (Data Encryption Key) qui servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données.<br>
-La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chiffrée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chiffrée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 ## En pratique
 
@@ -185,7 +185,7 @@ Revenez sur **Services de données** et vous constaterez que le **Chiffrement de
 
 ![Activate vSAN data at rest encryption 03](images/04-activate-vsan-data-at-rest-encryption-03.png)
 
-## Aller plus loin <a name="gofurther"></a>
+## Aller plus loin
 
 [Présentation VMware de vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
 

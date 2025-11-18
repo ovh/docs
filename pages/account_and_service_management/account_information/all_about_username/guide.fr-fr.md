@@ -4,6 +4,11 @@ excerpt: "Découvrez comment optimiser la sécurité de votre compte OVHcloud, g
 updated: 2025-05-22
 ---
 
+> [!success]
+> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
+> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
+> [Accédez à l'enquête.](https://s.elq.fr/ovhext/gKNtOly)
+
 ## Objectif
 
 La gestion de vos services et données s'effectue principalement via l'espace client OVHcloud.
@@ -115,11 +120,11 @@ Une fois vos informations complétées, cliquez sur le bouton `Valider`{.action}
 
 #### Exercer mes droits sur mes données personnelles
 
-Conformément au Réglement général sur la protection des données (RGPD), vous pouvez demander à exercer les droits relatifs à la protection de vos données à caractère personnel en complétant [ce formulaire](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/){.external}.
+Conformément au Réglement général sur la protection des données (RGPD), vous pouvez demander à exercer les droits relatifs à la protection de vos données à caractère personnel en complétant [ce formulaire](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/).
 
 #### Supprimer mon compte OVHcloud
 
-Vous pouvez demander à supprimer votre compte OVHcloud et les données liées en complétant [le formulaire d'exercice des droits RGPD](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/){.external} et en y choisissant le « Droit d'effacement ».
+Vous pouvez demander à supprimer votre compte OVHcloud et les données liées en complétant [le formulaire d'exercice des droits RGPD](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/) et en y choisissant le « Droit d'effacement ».
 
 > [!warning]
 >

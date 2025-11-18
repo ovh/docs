@@ -62,7 +62,7 @@ Clicca su `Connetti`{.action}. Una volta effettuato l'accesso, visualizzerai i d
 
 ## Per saperne di più
 
-[Documentazione di Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
+[Documentazione di Cyberduck](https://trac.cyberduck.io/wiki/help/en)
 
 [Come utilizzare l'API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

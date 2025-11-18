@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Principales preguntas sobre los planes de hosting de OVHcloud"
-updated: 2025-04-25
+updated: 2025-11-10
 ---
 
 <style>
@@ -43,7 +43,7 @@ Si ha olvidado su ID de cliente de OVHcloud o la contraseña, siga estos pasos:
 
 1. Acceda a la [interfaz de conexión al área de cliente de OVHcloud](/links/manager).
 {.action} 2. Haga clic en el enlace `¿Ha olvidado el identificador o la contraseña?`{.action}, situado bajo la ventana de inicio de sesión.
-3. Introduzca su ID de cliente de OVHcloud (por ejemplo, **aa00000-ovh**) o la dirección de correo electrónico de contacto asociada a su ID de cliente de OVHcloud.
+3. Introduzca su ID de cliente de OVHcloud (por ejemplo: **aa00000-ovh**) o la dirección de correo electrónico de contacto asociada a su ID de cliente de OVHcloud.
 4. Haga clic en el botón `Enviar`{.action}.
 
 El procedimiento de restauración se enviará a su dirección de correo electrónico de contacto.
@@ -115,7 +115,7 @@ Desde ahí podrá cambiar la contraseña de su dirección de correo (asegúrese 
 
 Para publicar su sitio web, debe disponer en primer lugar de los siguientes elementos:
 
-- Un [nombre de dominio](/links/web/domains) que corresponderá a la dirección web desde la que se accederá a su sitio web a través de un navegador de internet (por ejemplo, *domain.tld*). Este dominio también debe estar asociado a su alojamiento web para poder mostrar el sitio web.
+- Un [nombre de dominio](/links/web/domains) que corresponderá a la dirección web desde la que se accederá a su sitio web a través de un navegador de internet (por ejemplo: *domain.tld*). Este dominio también debe estar asociado a su alojamiento web para poder mostrar el sitio web.
 - Un [alojamiento web](/links/web/hosting) en el que instalar su sitio web.
 
 Estos son los pasos clave que debe seguir:
@@ -176,7 +176,7 @@ Desde ahí podrá gestionar los dominios o subdominios declarados en multisitio 
 
 /// details | ¿Cómo ver un sitio web con una URL en HTTPS?
 
-Para que su sitio web esté accesible con una URL en HTTPS (por ejemplo, `https://domain.tld`), es necesario cumplir dos requisitos:
+Para que su sitio web esté accesible con una URL en HTTPS (por ejemplo: `https://domain.tld`), es necesario cumplir dos requisitos:
 
 - Debe disponer de un certificado SSL activo para su nombre de dominio (o instalado en su alojamiento web).
 - En el código fuente de su sitio web, este debe forzar la reescritura de las URL en HTTPS.
@@ -187,8 +187,9 @@ Para activar un certificado SSL en un alojamiento web para su sitio web, siga es
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la página que se abre y en el recuadro **Configuración**, haga clic en el botón `...`{.action} de la derecha de la indicación **Certificado SSL** y seleccione `Contratar un certificado SSL`{.action}.
-4. Seleccione el certificado que desee de la [lista de certificados disponibles](/pages/web_cloud/web_hosting/ssl_on_webhosting) y continúe hasta finalizar la orden de pedido.
+3. En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+4. Elija el certificado que desee de entre los [certificados disponibles](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+5. Continúe hasta finalizar la instalación del certificado SSL (habiendo validado previamente la orden de pedido si elige uno de los certificados SSL Sectigo).
 
 > [!success]
 >
@@ -562,22 +563,23 @@ Este error también puede aparecer en caso de una petición HTTP que tenga como 
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-Este mensaje indica que el tipo de solicitud HTTP que intenta realizar en su sitio web está prohibido por un tiempo limitado, generalmente por razones de seguridad.
+La página "Your request has been blocked" puede aparecer por diversos motivos (lista no exhaustiva):
+
+- La solicitud se realiza desde un navegador de internet (Firefox, Chrome, Safari, Edge, etc.) no actualizado.
+- Un gran número de peticiones, similares o no, se realizan en un plazo extremadamente corto.
+- La consulta intenta realizar acciones no autorizadas en la infraestructura compartida en la que se encuentra el alojamiento web.
 
 En esta situación, es necesario realizar varias acciones:
 
-- Examine los [logs](/pages/web_cloud/web_hosting/logs_and_statistics) de su sitio web para determinar qué peticiones han provocado el bloqueo.
-- Utilice un programa antivirus o antisoftware espía para comprobar que sus dispositivos (ordenadores, smartphones, etc.) no estén infectados con software espía o malintencionado.
-- Compruebe el código fuente de su sitio web (espacio de almacenamiento FTP y base(s) de datos).
+- Compruebe que su navegador de Internet esté actualizado.
+- Obtenga la dirección URL (por ejemplo: `https://www.domain.tld`) y toda la información de la página "Your request has been blocked" (`IP address`, `Date` y `Request ID`).
+- Transmita los elementos recuperados al soporte creando un [tíquet de asistencia](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Si no está seguro de las operaciones que debe realizar, póngase en contacto con su Webmaster o con uno de nuestros [partners](/links/partner).
 
 > [!success]
 >
-> Consulte también nuestras guías detalladas:
->
-> - [Web hosting - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Casos prácticos - Consejos sobre la piratería de su sitio Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Consulte también nuestra guía detallada: [¿Qué hacer si aparece la página "Your request has been blocked"?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 
@@ -585,22 +587,21 @@ Si no está seguro de las operaciones que debe realizar, póngase en contacto co
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-Este mensaje indica que la dirección IP que utiliza para conectarse a su sitio web se bloquea durante un tiempo limitado, por lo general por motivos de seguridad.
+La página "Your IP has been banned" puede aparecer por diversos motivos (lista no exhaustiva):
+
+- Un gran número de peticiones, similares o no, se realizan en un plazo extremadamente corto desde la misma dirección IP.
+- Las peticiones realizadas desde la dirección IP en cuestión son sospechosas.
 
 En esta situación, es necesario realizar varias acciones:
 
-- Examine los [logs](/pages/web_cloud/web_hosting/logs_and_statistics) de su sitio web para determinar qué peticiones han provocado el bloqueo.
-- Utilice un programa antivirus o antisoftware espía para comprobar que sus dispositivos (ordenadores, smartphones, etc.) no estén infectados con software espía o malintencionado.
-- Compruebe el código fuente de su sitio web (espacio de almacenamiento FTP y base(s) de datos).
+- Obtenga la dirección URL (por ejemplo: `https://www.domain.tld`) y toda la información de la página "Your IP has been banned" (`IP address`, `Date` y `Request ID`).
+- Transmita los elementos recuperados al soporte creando un [tíquet de asistencia](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Si no está seguro de las operaciones que debe realizar, póngase en contacto con su Webmaster o con uno de nuestros [partners](/links/partner).
 
 > [!success]
 >
-> Consulte también nuestras guías detalladas:
->
-> - [Web hosting - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Casos prácticos - Consejos sobre la piratería de su sitio Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Consulte también nuestra guía detallada: [¿Qué hacer si aparece la página "Your IP has been banned"?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
 
@@ -608,7 +609,7 @@ Si no está seguro de las operaciones que debe realizar, póngase en contacto co
 
 ![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado){.external} en su área de cliente, funcionará y se mostrará de forma totalmente normal en otro lugar. La dirección web del sitio web se mostrará tal y como usted lo haya solicitado. Sus direcciones de correo también se mostrarán como desee con sus interlocutores.
+No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado) en su área de cliente, funcionará y se mostrará de forma totalmente normal en otro lugar. La dirección web del sitio web se mostrará tal y como usted lo haya solicitado. Sus direcciones de correo también se mostrarán como desee con sus interlocutores.
 
 > [!alert]
 >

@@ -12,7 +12,7 @@ OVHcloud offre aux clients VPS des images d'applications préinstallées pour un
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) sur votre compte OVHcloud.
+- Disposer d'un [VPS](/links/bare-metal/vps) sur votre compte OVHcloud.
 
 ## En pratique
 
@@ -21,6 +21,10 @@ OVHcloud offre aux clients VPS des images d'applications préinstallées pour un
 Depuis [l'espace client OVHcloud](/links/manager) ou les API OVHcloud, installez l'application de votre choix. Vous pouvez également consulter notre guide [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 #### cPanel
+
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
 
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de cPanel. Les étapes marquées d'un « * » seront suivies d'une FAQ.
 
@@ -53,6 +57,10 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 
 #### Plesk
 
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
+
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Plesk. Les étapes marquées d'un « * » seront suivies d'une FAQ.
 
 1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
@@ -72,6 +80,10 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 >> Vous pouvez commander votre licence Plesk pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
+
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
 
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Docker.
 

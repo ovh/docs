@@ -17,9 +17,9 @@ El [vRack](/links/network/vrack) es una red privada que permite configurar el di
 - Tener conocimientos avanzados de redes.
 
 > [!warning]
-> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+> Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 
 ## Procedimiento
 
@@ -43,7 +43,7 @@ En el ejemplo anterior, la dirección IP está anunciada en **Roubaix**. Puede v
 
 ### 2. Modificar el anuncio del bloque de IP
 
-Conéctese a la [API de OVHcloud](https://api.ovh.com/) con su ID de cliente y contraseña. Utilice las siguientes llamadas a la API para modificar el anuncio del bloque de IP:
+Conéctese a la [API de OVHcloud](/links/api) con su ID de cliente y contraseña. Utilice las siguientes llamadas a la API para modificar el anuncio del bloque de IP:
 
 > [!api]
 >

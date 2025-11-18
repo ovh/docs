@@ -46,7 +46,7 @@ At OVHcloud, we listen to our users and improve our products and services accord
 
 #### The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](/links/api) which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVHcloud NIC handle.
 
@@ -643,8 +643,8 @@ Destroy complete! Resources: 1 destroyed.
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-ca/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

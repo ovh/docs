@@ -32,7 +32,7 @@ Wenn Sie ein Problem mit Ihrem System feststellen, können Sie mithilfe des Resc
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
 >
 
 ## In der praktischen Anwendung
@@ -54,7 +54,7 @@ Nach dem Neustart zeigt eine Statusleiste den Fortschritt des Tasks an. Bitte be
 
 > [!primary]
 >
-> Sie erhalten eine automatische E-Mail mit den SSH-Login-Daten, um im Rescue-Modus auf den VPS zuzugreifen. Bitte warten Sie auf den Eingang der E-Mail, bevor Sie weitere Maßnahmen ergreifen. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) verfügbar. Klicken Sie in der rechten oberen Ecke auf den mit Ihrem OVHcloud Kunden-Account assoziierten Namen und wählen Sie `E-Mails von OVHcloud`{.action} aus.
+> Sie erhalten eine automatische E-Mail mit den SSH-Login-Daten, um im Rescue-Modus auf den VPS zuzugreifen. Bitte warten Sie auf den Eingang der E-Mail, bevor Sie weitere Maßnahmen ergreifen. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbar. Klicken Sie in der rechten oberen Ecke auf den mit Ihrem OVHcloud Kunden-Account assoziierten Namen und wählen Sie `E-Mails von OVHcloud`{.action} aus.
 >
 
 Anschließend müssen Sie [über SSH auf Ihren Server zugreifen](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), indem Sie das für den Rescue-Modus generierte temporäre Root-Passwort verwenden.

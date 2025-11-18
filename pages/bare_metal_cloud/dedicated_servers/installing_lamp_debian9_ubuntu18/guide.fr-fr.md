@@ -12,14 +12,14 @@ La mise en place d'un serveur web et des logiciels associés permet à votre ser
 
 ## Prérequis
 
-- Un [serveur dédié](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/fr/vps/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud (hors systèmes Windows)
+- Un [serveur dédié](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) ou une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud (hors systèmes Windows)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Un accès administratif à votre service via SSH
 
 > [!warning]
 > Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Il vous faudra peut-être adapter les consignes à votre situation.
 >
-> Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de vous rapprocher de [notre communauté](/links/community) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place de services sur un serveur.
+> Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou de vous rapprocher de [notre communauté](/links/community) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place de services sur un serveur.
 >
 
 ## En pratique
@@ -233,7 +233,7 @@ Consultez le guide « [Éditer une zone DNS](/pages/web_cloud/domains/dns_zone_e
 >
 > Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification officielle comme « [Let’s Encrypt](https://letsencrypt.org/) » qui propose des certificats gratuits. Vous devrez installer un outil client (tel que Certbot) et configurer Apache en conséquence. Sans cette étape, votre site web ou votre application ne peut accepter que des requêtes `http` non chiffrées.
 > 
-> En alternative, OVHcloud vous propose la solution [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
+> En alternative, OVHcloud vous propose la solution [SSL Gateway](/links/web/ssl-gateway). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
 > 
 
 Assurez-vous d’abord que votre nom de domaine est correctement renseigné dans la zone DNS, c’est-à-dire mappé sur l’adresse IP de votre serveur.

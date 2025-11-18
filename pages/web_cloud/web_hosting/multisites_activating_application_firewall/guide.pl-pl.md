@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja zapory systemowej"
 excerpt: "Hosting www: Aktywacja zapory systemowej"
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Wprowadzenie 
@@ -26,13 +26,13 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}.
-- Posiadanie co najmniej jednej [domeny](/links/web/domains){.external} przypisanej do hostingu
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie [hostingu OVHcloud](/links/web/hosting).
+- Posiadanie co najmniej jednej [domeny](/links/web/domains) przypisanej do hostingu
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
-Zaloguj się do swojego [panelu klienta OVHcloud](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij sekcję `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu.
+Zaloguj się do swojego [panelu klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij sekcję `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu.
 
 ### Włącz firewall aplikacyjny w konfiguracji PHP
 

@@ -12,7 +12,7 @@ Clonar una MV permite crear una copia de la máquina virtual original.
 
 ## Requisitos
 
-- Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
+- Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/).
 - Disponer de al menos una MV en su cluster.
 - Estar conectado a la [interfaz vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface).
 

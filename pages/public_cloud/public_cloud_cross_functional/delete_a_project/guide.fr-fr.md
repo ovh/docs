@@ -6,7 +6,7 @@ updated: 2022-10-14
 
 ## Objectif
 
-Lorsque vous n’avez plus besoin d'un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), vous pouvez le supprimer directement depuis votre espace client [OVHcloud](/links/manager).
+Lorsque vous n’avez plus besoin d'un [projet Public Cloud](/links/public-cloud/public-cloud), vous pouvez le supprimer directement depuis votre espace client [OVHcloud](/links/manager).
 
 Lorsque vous supprimez un projet Public Cloud, une facture finale est émise qui contient le montant restant à payer.
 
@@ -20,7 +20,7 @@ Lorsque vous supprimez un projet, les ressources qu'il contient sont définitive
 
 ## Prérequis
 
-- Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique

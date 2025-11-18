@@ -45,7 +45,7 @@ Para activar uno de estos métodos, conéctese al [área de cliente de OVHcloud]
 
 ### Abrir un KVM a través de un applet Java <a name="applet-java"></a>
 
-Para que el applet funcione, debe tener Java instalado en su equipo. Si todavía no lo ha hecho, visite la [página oficial](https://www.java.com/en/download/){.external}.
+Para que el applet funcione, debe tener Java instalado en su equipo. Si todavía no lo ha hecho, visite la [página oficial](https://www.java.com/en/download/).
 
 En la sección `Remote KVM`{.action} del área de cliente de OVHcloud, haga clic en `Desde un applet Java (KVM)`{.action}:
 
@@ -79,7 +79,7 @@ Haga clic en `Acceder a la consola (KVM)`{.action} para abrir la consola en su n
 
 Para más información sobre la creación de pares de claves SSH, consulte [esta página](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
-En la sección `Serial over LAN» (SoL)`{.action} del área de cliente de OVHcloud, haga clic en `Añadir la llave SSH`{.action}.
+En la sección `«Serial over LAN» (SoL)`{.action} del área de cliente de OVHcloud, haga clic en `Añadir la llave SSH`{.action}.
 
 ![Acceso SoL SSH](images/ipmi-sol-sshkey-01.png){.thumbnail}
 

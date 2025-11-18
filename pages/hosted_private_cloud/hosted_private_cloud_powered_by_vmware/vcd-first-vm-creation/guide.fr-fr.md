@@ -1,6 +1,6 @@
 ---
-title: "VMware Cloud Director - Création d'une nouvelle machine virtuelle"
-excerpt: "Comment créer une nouvelle machine virtuelle dans VCD"
+title: "Public VCF as-a-Service - Création d'une nouvelle machine virtuelle"
+excerpt: "Comment créer une nouvelle machine virtuelle dans Public VCF as-a-Service"
 updated: 2024-05-23
 ---
 
@@ -13,7 +13,7 @@ Ce guide vous détaille comment créer votre première machine virtuelle (VM) de
 
 ## Prérequis
 
-- Avoir un VMware Cloud Director
+- Avoir un Public VCF as-a-Service
 - Un ISO d'un systeme d'exploitation
 
 ## En pratique
@@ -22,7 +22,7 @@ Ce guide vous détaille comment créer votre première machine virtuelle (VM) de
 
 Pour créer votre machine virtuelle, accédez d'abord au datacenter où vous prévoyez de la déployer. Ensuite, naviguez vers la section `Calculer`{.action} > `Machines Virtuelles`{.action} > `Nouvelle VM`{.action}.
 
-![dashboard vcd](images/vcd-dashboard-vcd.png){.thumbnail}
+![dashboard Public VCF as-a-Service](images/vcd-dashboard-vcd.png){.thumbnail}
 
 ![dashboard vm](images/vcd-vm-dashboad.png){.thumbnail}
 
@@ -58,7 +58,7 @@ La liste déroulante **« Mode IP »** vous propose différents modes d'attribut
 - **Statique (Manuel)** : vous devez définir l'IP manuellement.
 
 > [!warning]
-> Attention, ce mode IP vous permet uniquement d'organiser votre inventaire VCD mais vous devrez tout de même configurer l'adresse IP statique (ou DHCP) à l'intérieur même de la VM.
+> Attention, ce mode IP vous permet uniquement d'organiser votre inventaire Public VCF as-a-Service mais vous devrez tout de même configurer l'adresse IP statique (ou DHCP) à l'intérieur même de la VM.
 >
 
 En ce qui concerne la section `Stratégies de stockage`{.action}, vous ne trouverez qu'une seule possibilité : la politique de stockage par défaut de vSAN.
@@ -79,6 +79,6 @@ Si vous avez utilisé la méthode **From scratch** il ne vous reste plus qu'à a
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

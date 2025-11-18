@@ -46,7 +46,7 @@ Se abrirá una ventana, donde deberá completar los campos obligatorios. Haga cl
 |--|--|
 | Usuario | Introduzca, por ejemplo, el nombre de usuario o su función. |
 | Correo electrónico | Introduzca la dirección de correo electrónico del usuario. |
-| Contraseña | Especifique la contraseña del usuario. El usuario podrá cambiarla una vez creado su acceso. <br>Para establecer esta contraseña, también le recomendamos consultar [la guía sobre la gestión de contraseñas](/pages/account_and_service_management/account_information/manage-ovh-password){.external}. |
+| Contraseña | Especifique la contraseña del usuario. El usuario podrá cambiarla una vez creado su acceso. <br>Para establecer esta contraseña, también le recomendamos consultar [la guía sobre la gestión de contraseñas](/pages/account_and_service_management/account_information/manage-ovh-password). |
 | Grupo | Seleccione uno de los grupos disponibles (ver la tabla a continuación). |
 | Descripción | Puede añadir una descripción del usuario. Por ejemplo, su función en la empresa. |
 
@@ -55,7 +55,7 @@ Se abrirá una ventana, donde deberá completar los campos obligatorios. Haga cl
 | Rol | Detalles |
 |--|--|
 | UNPRIVILEGED (Solo Lectura) | Proporciona acceso de lectura al área de cliente de OVHcloud y a todas sus secciones. |
-| DEFAULT (Administrador restringido) | Concede acceso de escritura al área de cliente de OVHcloud y a todas sus secciones,**excepto para la gestión de los** usuarios. |
+| DEFAULT (Administrador restringido) | Concede acceso de escritura al área de cliente de OVHcloud y a todas sus secciones, **excepto para la gestión de los** usuarios. |
 | ADMIN (Administrador) | Proporciona acceso de escritura al área de cliente de OVHcloud y a todas sus secciones, **incluyendo** la gestión de usuarios. |
 
 A continuación, el usuario obtendrá su identificador conformado por el id. numérico de su cuenta (que se indica en el menú «Gestión de usuarios») y su nombre de usuario, con los dos valores separados por una barra (/).
@@ -66,7 +66,7 @@ Por ejemplo: **1234-567-89/johnsmith**.
 
 A partir de ese momento, el usuario creado podrá iniciar sesión en el [área de cliente de OVHcloud](/links/manager) con este identificador. 
 
-También podrá cambiar su contraseña y proteger el acceso a su cuenta activando la doble autenticación (esta última medida solo se aplicará a su acceso como usuario). A tal fin, puede consultar [la guía sobre la instrumentación de la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
+También podrá cambiar su contraseña y proteger el acceso a su cuenta activando la doble autenticación (esta última medida solo se aplicará a su acceso como usuario). A tal fin, puede consultar [la guía sobre la instrumentación de la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 #### Gestionar los usuarios
 

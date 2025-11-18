@@ -12,9 +12,9 @@ Qui trovi tutti gli elementi per installare manualmente il CMS (Content Manageme
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o [amministratore del CMS Drupal](https://www.drupal.org/support){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o [amministratore del CMS Drupal](https://www.drupal.org/support). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
-> Per aggiornare un CMS Drupal esistente o avere domande sull'utilizzo del CMS Drupal, contatta direttamente [l'editor del CMS Drupal](https://www.drupal.org/support){.external}.
+> Per aggiornare un CMS Drupal esistente o avere domande sull'utilizzo del CMS Drupal, contatta direttamente [l'editor del CMS Drupal](https://www.drupal.org/support).
 >
 
 > [!success]
@@ -30,7 +30,7 @@ Qui trovi tutti gli elementi per installare manualmente il CMS (Content Manageme
 
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
   
 ## Procedura
 
@@ -145,7 +145,7 @@ Se tutto è andato a buon fine, visualizzi la pagina seguente:
   
 ## Per saperne di più <a name="go-further"></a>
 
-[Sito ufficiale Drupal](https://www.drupal.org/){.external}
+[Sito ufficiale Drupal](https://www.drupal.org/)
  
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  

@@ -14,7 +14,7 @@ Avec le réseau privé, les serveurs dédiés compatibles bénéficient d'une ba
 
 - Un service [vRack](/links/network/vrack) activé dans votre compte
 - Un [serveur dédié](/links/bare-metal/bare-metal) compatible avec le vRack
-- Avoir accès à l’[API OVHcloud](pages/manage_and_operate/api/first-steps)
+- Avoir accès à l’[API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
 > [!warning]
 > Veuillez noter que cette option n'est pas disponible sur les serveurs dédiés situés dans la région APAC (Asie Pacifique) qui sont livrés avec une bande passante privée de 25Gbit/s non mesurée.

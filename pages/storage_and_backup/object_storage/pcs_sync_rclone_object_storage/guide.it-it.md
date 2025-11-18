@@ -9,12 +9,12 @@ L’Object Storage OVH può essere sincronizzato tramite Rclone.
 
 **Questa guida ti mostra la procedura da eseguire per configurare il tool dallo Spazio Cliente OVH.**
 
-Rclone è un software di sincronizzazione esterno: per maggiori dettagli sul suo utilizzo, consulta la [documentazione ufficiale](https://Rclone.org/){.external}.
+Rclone è un software di sincronizzazione esterno: per maggiori dettagli sul suo utilizzo, consulta la [documentazione ufficiale](https://Rclone.org/).
 
 ## Prerequisiti
 
-- Aver creato un container *Object Storage* (dallo Spazio Cliente OVH o dall’interfaccia [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container){.external})
-- Aver creato un [utente OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user){.external}
+- Aver creato un container *Object Storage* (dallo Spazio Cliente OVH o dall’interfaccia [Horizon](/pages/storage_and_backup/object_storage/pcs_create_container))
+- Aver creato un [utente OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 ## Procedura
 
@@ -22,7 +22,7 @@ Rclone è un software di sincronizzazione esterno: per maggiori dettagli sul suo
 
 - recuperare il file di configurazione per Rclone
 
-Dopo aver creato il tuo utente OpenStack, è possibile recuperare nello Spazio Cliente OVH il file di configurazione necessario per Rclone: seleziona il tuo progetto nel menu a sinistra e accedi alla pagina degli utenti OpenStack. Clicca sull’icona con i tre puntini in corrispondenza del nome dell’utente e poi su `Scarica un file di configurazione rClone`{.external}.
+Dopo aver creato il tuo utente OpenStack, è possibile recuperare nello Spazio Cliente OVH il file di configurazione necessario per Rclone: seleziona il tuo progetto nel menu a sinistra e accedi alla pagina degli utenti OpenStack. Clicca sull’icona con i tre puntini in corrispondenza del nome dell’utente e poi su `Scarica un file di configurazione rClone`.
 
 ![Scarica un file di configurazione rClone](images/download_file.png){.thumbnail}
 
@@ -49,7 +49,7 @@ Rclone lsd BackupStorage
 
 *BackupStorage* corrisponde al nome assegnato al tuo spazio di storage.
 
-Per sincronizzare il tuo Object Storage con Rclone, consulta la documentazione dettagliata disponibile sul [sito ufficiale](https://Rclone.org/swift/){.external}.
+Per sincronizzare il tuo Object Storage con Rclone, consulta la documentazione dettagliata disponibile sul [sito ufficiale](https://Rclone.org/swift/).
 
 ## Per saperne di più
 

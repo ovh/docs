@@ -1,7 +1,7 @@
 ---
 title: "Add or Remove Nodes in a Nutanix Cluster (Scale In/Out)"
 excerpt: 'Scale your Nutanix on OVHcloud cluster by adding or removing nodes via the Control Panel or the API'
-updated: 2025-05-23
+updated: 2025-08-05
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **
 
 ## Technical Information
 
-- Your cluster must have between **3 and 15 nodes**
+- Your cluster must have between **3 and 32 nodes**
 - All new nodes must run the **same AOS version** as the existing cluster
 
 ## Instructions

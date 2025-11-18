@@ -18,12 +18,12 @@ Pode adicionar um servidor secundário ou substituir esta configuração pela su
 > [!warning]
 > A OVHcloud fornece-lhe serviços cuja configuração e gestão são da sua responsabilidade. Por conseguinte, é da sua responsabilidade garantir que estes serviços funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de um serviço num servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção [Quer saber mais](#gofurther).
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de um serviço num servidor, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Para mais informações, aceda à secção [Quer saber mais](#gofurther).
 >
 
 ## Requisitos
 
-- Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
+- Ter uma [instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud.
 - Dispor de um acesso de administrador à instância através de SSH ou RDP.
 - Conhecimentos básicos de rede e administração.
 

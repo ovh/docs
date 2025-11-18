@@ -13,18 +13,18 @@ updated: 2022-10-06
 
 An Additional IP is an IP address that can be switched from one service to another. In doing so, it helps you avoid a wide range of issues for your infrastructure (hardware failures, overload for your services, maintenance, etc.).
 
-For more information on Additional IPs, you can consult our [webpage](https://www.ovhcloud.com/en-gb/bare-metal/ip/){.external}.
+For more information on Additional IPs, you can consult our [webpage](/links/bare-metal/ip).
 
 The OVH Load Balancer solution offers load balancing features for a range of different protocols: HTTP, HTTPS, TCP and UDP. When you link it to an Additional IP, you can switch over your existing infrastructure to a Load Balancer without disturbing or interrupting services for your customers. Effectively, you will not need to change the IP address any longer if you are still using the Additional IP, so you will not need to wait for your DNS zone to propagate any changes.
 
-For more information on the OVH Load Balancer solution, you can read our [Introduction to the OVH Load Balancer](/pages/network/load_balancer/use_presentation){.external}.
+For more information on the OVH Load Balancer solution, you can read our [Introduction to the OVH Load Balancer](/pages/network/load_balancer/use_presentation).
 
 **This guide will explain how to use the Additional IP with the OVH Load Balancer service.**
 
 ## Requirements
 
-- a correctly configured [OVH Load Balancer](https://www.ovh.co.uk/solutions/load-balancer/){.external}
-- an [Additional IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/){.external}
+- a correctly configured [OVH Load Balancer](/links/network/load-balancer)
+- an [Additional IP](/links/bare-metal/ip)
 
 > [!primary]
 >
@@ -51,7 +51,7 @@ In this document, we will look at two distinct uses:
 
 ### Add an Additional IP.
 
-You can link these IPs to your OVH Load Balancer via the [OVH API](https://api.ovh.com){.external}.
+You can link these IPs to your OVH Load Balancer via the [OVH API](https://api.ovh.com).
 The API call for this is as follows:
 
 > [!api]
@@ -76,7 +76,7 @@ No matter what kind of front-end you wish to use, you can define a list of dedic
 
 #### If you are creating a front-end:
 
-From the [OVH API](https://api.ovh.com){.external}, you can use the following call to define one or more Additional IPs on a front-end as you create it:
+From the [OVH API](https://api.ovh.com), you can use the following call to define one or more Additional IPs on a front-end as you create it:
 
 * HTTP protocol
 
@@ -101,7 +101,7 @@ From the [OVH API](https://api.ovh.com){.external}, you can use the following ca
 
 #### If you are updating an existing front-end:
 
-From the [OVH API](https://api.ovh.com){.external}, you can use the following call to define one or more Additional IPs on an existing front-end:
+From the [OVH API](https://api.ovh.com), you can use the following call to define one or more Additional IPs on an existing front-end:
 
 * HTTP protocol
 
@@ -126,7 +126,7 @@ From the [OVH API](https://api.ovh.com){.external}, you can use the following ca
 
 ### Via the OVH Control Panel.
 
-You can define dedicated Additional IPs via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
+You can define dedicated Additional IPs via the [OVH Control Panel](/links/manager) by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
 
 Once you have selected the Load Balancer you want to modify, create a new front-end, or edit an existing one.
 

@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 title: AI Endpoints - Function Calling
 excerpt: Learn how to use Function Calling with OVHcloud AI Endpoints
 updated: 2025-04-28
+=======
+title: AI Endpoints - Structured Output
+excerpt: Learn how to use Structured Output with OVHcloud AI Endpoints
+updated: 2025-08-06
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 ---
 
 > [!primary]
@@ -15,6 +21,7 @@ updated: 2025-04-28
 
 **Structured Output** is a powerful feature that allows you to enforce specific formats for the responses from AI models. By using the `response_format` parameter in your API calls, you can define how you want the output to be structured, ensuring consistency and ease of integration with your applications.
 This is particularly useful when you need the AI model to return data in a specific JSON format.
+<<<<<<< HEAD
 The [JSON schema](https://json-schema.org/) specification can be used to describe what data structure should the output adhere to, and the AI model will generate responses that match it. 
 This feature allows for seamless integration of AI-generated data into your applications, enabling you to build robust and consistent workflows.
 
@@ -29,12 +36,28 @@ The examples provided in this guide will be using the [Llama 3.3 70b model](http
 
 Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Structured Output.
 The output formats managed by each model are defined in the Response Format section:
+=======
+The [JSON schema](https://json-schema.org/) specification can be used to describe what data structure should the output adhere to, and the AI model will generate responses that match it.
+This feature allows for seamless integration of AI-generated data into your applications, enabling you to build robust and consistent workflows.
+
+## Objective
+
+This documentation provides an overview on how to use structured outputs with the various AI models offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+
+The examples provided in this guide will be using the [Llama 3.3 70b model](https://endpoints.ai.cloud.ovh.net/models/c968b503-27fa-451d-b59d-1b0ff91d304d).
+
+Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Structured Output.
+
+The output formats managed by each model are defined in the Response Format section:
+
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 ![Model Specs](images/model_specs.png)
 
 ## Requirements
 
 The examples provided during this guide can be used with one of the following environments:
 
+<<<<<<< HEAD
 ### Python
 
 A [Python](https://www.python.org/) environment with the [openai client](https://pypi.org/project/openai/) and the pydantic library installed.
@@ -59,22 +82,65 @@ A standard terminal, with [curl](https://curl.se/) installed on the system.
 All the examples provided in this guide are using the anynomous authentication which makes it simpler to use but may cause rate limiting issues.
 If you wish to enable authentication using your own token, simply specify your API key within the requests.
 Follow the following instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) for more information on authentication.
+=======
+> [!tabs]
+> **Python**
+>> 
+>> A [Python](https://www.python.org/) environment with the [openai client](https://pypi.org/project/openai/) and the pydantic library installed.
+>>
+>> ```sh
+>> pip install openai pydantic
+>> ```
+>> 
+>> **JavaScript**
+>> 
+>> A [Node.js](https://nodejs.org/en) environment with the [request](https://www.npmjs.com/package/request) library.
+>> Request can be installed using [NPM](https://www.npmjs.com/):
+>> 
+>> ```sh
+>> npm install request
+>> ```
+>> 
+>> **Curl**
+>> 
+>> A standard terminal, with [curl](https://curl.se/) installed on the system.
+>> 
+
+### Authentication & rate limiting
+
+Most of the examples provided in this guide use anonymous authentication, which makes it simpler to use but may cause rate limiting issues.
+If you wish to enable authentication using your own token, simply specify your API key within the requests.
+
+Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide for more information on authentication.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 ## Instructions
 
 The `response_format` parameter of the Chat Completion API allows us to enable and configure the Structured Output features.
+<<<<<<< HEAD
+=======
+
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 Models that support structured output can manage the three following modes:
 
 - `{"type": "text"}`
 The default textual format. This is the same as specifying no `response_format`.
 
 - `{"type": "json_object"}`
+<<<<<<< HEAD
 The JSON object format is a legacy format that was introduced with the first iteration of Structured Outputs.
 This mode is non-deterministic and allows the model to output a JSON object without strict validation.
 
 - `{"type": "json_schema", "json_schema": .. }`
 [JSON schema](https://json-schema.org/) is a very powerful tool used to specify and validate a JSON data structure.
 This latest kind of response_format allows us to enforce custom output formats in LLM outputs using this specification and ensure consistency and interoperability with a variety of platforms and applications.
+=======
+The JSON object format is a legacy format that was introduced with the first iteration of Structured Outputs. This mode is non-deterministic and allows the model to output a JSON object without strict validation.
+
+- `{"type": "json_schema", "json_schema": .. }`
+[JSON schema](https://json-schema.org/) is a very powerful tool used to specify and validate a JSON data structure. This latest kind of `response_format` allows us to enforce custom output formats in LLM outputs using this specification and ensure consistency and interoperability with a variety of platforms and applications.
+
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 When using the JSON schema mode, outputs are deterministic and will always adhere to the schema specified.
 
 We recommend using JSON schema over JSON object whenever possible.
@@ -132,6 +198,10 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> ```
 >>
 >> Output:
+<<<<<<< HEAD
+=======
+>> 
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >> ```sh
 >> JSON schema: {'$defs': {'Language': {'properties': {'name': {'title': 'Name', 'type': 'string'}, 'website': {'title': 'Website', 'type': 'string'}, 'ranking': {'title': 'Ranking', 'type': 'integer'}}, 'required': ['name', 'website', 'ranking'], 'title': 'Language', 'type': 'object'}}, 'properties': {'languages': {'items': {'$ref': '#/$defs/Language'}, 'title': 'Languages', 'type': 'array'}}, 'required': ['languages'], 'title': 'LanguageRankings', 'type': 'object'}
 >> JavaScript is the n°1 language (https://www.javascript.com/)
@@ -144,6 +214,10 @@ The following code samples provide a simple example on how to specify a JSON sch
 > **Curl**
 >>
 >> Input query:
+<<<<<<< HEAD
+=======
+>>
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >> ```sh
 >> curl -X POST "https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions" \
 >>     -H 'accept: application/json'\
@@ -195,13 +269,23 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> ```
 >>
 >> Output response:
+<<<<<<< HEAD
+=======
+>>
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >> ```sh
 >> {"id":"chatcmpl-9276e3e305e04c73bd05224abcb7532b","object":"chat.completion","created":1750772047,"model":"Meta-Llama-3_3-70B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"{\"languages\": [\n    {\"name\": \"JavaScript\", \"ranking\": 1, \"website\": \"https://www.javascript.com/\"},\n    {\"name\": \"Python\", \"ranking\": 2, \"website\": \"https://www.python.org/\"},\n    {\"name\": \"Java\", \"ranking\": 3, \"website\": \"https://www.java.com/\"}\n]}"},"finish_reason":"stop","logprobs":null}],"usage":{"prompt_tokens":65,"completion_tokens":80,"total_tokens":145}}
 >> ```
 >>
+<<<<<<< HEAD
 >> As we can see, the response is matching the expected JSON schema, and OVHcloud is the n°1 European cloud provider! 
 >>
 > **Javascript**
+=======
+>> As we can see, the response is matching the expected JSON schema!
+>>
+> **JavaScript**
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >>
 >> ```javascript
 >> const request = require('request');
@@ -284,6 +368,10 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> ```
 >>
 >> Output:
+<<<<<<< HEAD
+=======
+>>
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >> ```sh
 >> {"languages": [
 >>     {"name": "JavaScript", "ranking": 1, "website": "https://www.javascript.com/"},
@@ -295,12 +383,21 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> Java is the n°3 most popular language (https://www.java.com/)
 >> ```
 >>
+<<<<<<< HEAD
 >> This example shows us how to use the JSON schema response format with Javascript.
 
 ### JSON object
 
 The following code samples provide a simple example on how to use the legacy JSON object mode, using the `response_format` parameter.
 Note that when using the JSON object mode, we cannot explicitly specify the schema of the output.
+=======
+>> This example shows us how to use the JSON schema response format with JavaScript.
+>>
+
+### JSON object
+
+The following code samples provide a simple example on how to use the legacy JSON object mode, using the `response_format` parameter. Note that when using the JSON object mode, we cannot explicitly specify the schema of the output.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 > [!tabs]
 > **Python**
@@ -339,6 +436,10 @@ Note that when using the JSON object mode, we cannot explicitly specify the sche
 >> ```
 >>
 >> Output:
+<<<<<<< HEAD
+=======
+>>
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >> ```sh
 >> {
 >>   "rank": [
@@ -364,6 +465,10 @@ Note that when using the JSON object mode, we cannot explicitly specify the sche
 > **Curl**
 >>
 >> Input query:
+<<<<<<< HEAD
+=======
+>>
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >> ```sh
 >> curl -X POST "https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions" \
 >>     -H 'accept: application/json' \
@@ -383,11 +488,19 @@ Note that when using the JSON object mode, we cannot explicitly specify the sche
 >> ```
 >>
 >> Output:
+<<<<<<< HEAD
+=======
+>>
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >> ```sh
 >> {"id":"chatcmpl-dfdbf074ab864199bac48ec929179fed","object":"chat.completion","created":1750773314,"model":"Meta-Llama-3_3-70B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"{\"rank\": [\n    {\"position\": 1, \"language\": \"JavaScript\", \"popularity\": \"94.5%\"},\n    {\"position\": 2, \"language\": \"HTML/CSS\", \"popularity\": \"93.2%\"},\n    {\"position\": 3, \"language\": \"Python\", \"popularity\": \"87.3%\"}\n]}"},"finish_reason":"stop","logprobs":null}],"usage":{"prompt_tokens":65,"completion_tokens":77,"total_tokens":142}}%
 >> ```
 >>
+<<<<<<< HEAD
 > **Javascript**
+=======
+> **JavaScript**
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >>
 >> ```javascript
 >> const request = require('request');
@@ -431,6 +544,10 @@ Note that when using the JSON object mode, we cannot explicitly specify the sche
 >> ```
 >>
 >> Output:
+<<<<<<< HEAD
+=======
+>>
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 >> ```sh
 >> {
 >>   rank: [
@@ -440,6 +557,10 @@ Note that when using the JSON object mode, we cannot explicitly specify the sche
 >>   ]
 >> }
 >> ```
+<<<<<<< HEAD
+=======
+>> 
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 ### Tips and best practices
 
@@ -447,9 +568,16 @@ This section contains additional tips that may improve the performance of Struct
 
 #### Streaming
 
+<<<<<<< HEAD
 All kinds of response_format are compatible with streaming. To enable streaming, simply use `"streaming": true` in your request's body and process the stream accordingly.
 
 Example with python:
+=======
+All kinds of `response_format` are compatible with streaming. To enable streaming, simply use `"streaming": true` in your request's body and process the stream accordingly.
+
+Example with python:
+
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 ```python
 from pydantic import BaseModel
 import openai
@@ -506,6 +634,10 @@ for language in language_rankings.languages:
 ```
 
 Streamed output response:
+<<<<<<< HEAD
+=======
+
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 ```sh
 {"languages": [
     {"name": "JavaScript", "ranking": 1, "website": "https://www.javascript.com/"},
@@ -520,15 +652,23 @@ Java is the n°3 language (https://www.java.com/)
 #### Schema definition
 
 Some considerations about the JSON schema definition:
+<<<<<<< HEAD
 - Structured output currently supports a subset of the [JSON schema specification](https://json-schema.org/specification). Some features may not be compatible.
 - The models will generate the output following alphabetical order of the JSON schema keys. It may be useful to rename your fields to enforce a specific order during generation.
 - To avoid divergence, we recommend setting [additional properties](https://json-schema.org/understanding-json-schema/reference/object#additionalproperties) to `false` and explicity setting the [required fields](https://json-schema.org/learn/getting-started-step-by-step#define-required-properties)
+=======
+
+- Structured output currently supports a subset of the [JSON schema specification](https://json-schema.org/specification). Some features may not be compatible.
+- The models will generate the output following alphabetical order of the JSON schema keys. It may be useful to rename your fields to enforce a specific order during generation.
+- To avoid divergence, we recommend setting [additional properties](https://json-schema.org/understanding-json-schema/reference/object#additionalproperties) to `false` and explicity setting the [required fields](https://json-schema.org/learn/getting-started-step-by-step#define-required-properties).
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 Don't hesitate to experiment with different variations of your JSON schemas to reach the best performance!
 
 #### Prompting & additional parameters
 
 Some additional considerations regarding prompts and model parameters:
+<<<<<<< HEAD
 - Even though the response_format can be used to enable structured outputs, models can generally perform better when asked to produce json outputs within the prompt (`messages` field).
 - Most models tend to perform better when using lower temperature for structured outputs.
 - Some model providers may recommend specific system prompts and parameters to use for structured outputs and function calling. Don't hesitate to visit the model pages to dive deeper into model specifics ([example for Llama 3.3 on HuggingFace](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)).
@@ -537,18 +677,35 @@ Some additional considerations regarding prompts and model parameters:
 
 In this guide, we have explained how to use Structured Output with the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models.
 We have provided a comprehensive overview of the feature which can help you perfect your integration of LLM for your own application.
+=======
+
+- Even though the `response_format` can be used to enable structured outputs, models can generally perform better when asked to produce json outputs within the prompt (`messages` field).
+- Most models tend to perform better when using lower temperature for structured outputs.
+- Some model providers may recommend specific system prompts and parameters to use for structured outputs and function calling. Don't hesitate to visit the model pages to dive deeper into model specifics ([An example for Llama 3.3 on HuggingFace](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)).
+
+## Conclusion
+
+In this guide, we have explained how to use Structured Output with the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models. We have provided a comprehensive overview of the feature which can help you perfect your integration of LLM for your own application.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 ## Go further
 
 Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to further understand the main concepts and get started.
 
+<<<<<<< HEAD
 To discover how to build complete and powerful applications using AI Endpoints, explore our dedicated [AI Endpoints guides](/products/public-cloud-ai-and-machine-learning-ai-endpoints).
 
+=======
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
+<<<<<<< HEAD
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
+=======
+- On the OVHcloud [Discord server](https://discord.gg/ovhcloud).
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7

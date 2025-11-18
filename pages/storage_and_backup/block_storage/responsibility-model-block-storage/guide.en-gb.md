@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Block Storage - Shared responsibilities
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Block Storage"
-updated: 2022-12-23
+updated: 2025-08-19
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Choose the Block Storage scale following business needs (Classic, High speed, ...) | RA | I |
+| Choose the Block Storage scale following business needs (Classic, High speed, High speed gen2, LUKS...) | RA | I |
 | Provide personal data needed for service subscription | RA | I |
 | Choose service location aligned with location of Instances | RA | I |
 
@@ -31,13 +31,13 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Produce, route, deliver and maintain physical Instances and hosting buildings | I | RA |
+| Produce, route, deliver and maintain hardware and hosting buildings | I | RA |
 
 #### 2.2. Reversibility model
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Import format images supported by OpenStack infrastructure | RA | I |
+| Import supported formats for block volume backups or snapshots in OpenStack infrastructure | RA | I |
 
 #### 2.3. Customer Information System setup
 
@@ -78,10 +78,10 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage and monitor physical servers capacity in support of Public Cloud services |  | RA |
 | Monitor Block Storage clusters' performances | I | RA |
-| Retain logs of control plane for Instances monitoring (API, hypervisor)
-| Retain logs of Information System hosted on Instances
-| Monitor the proper functioning of physical devices (utilities) in support of the service
-| Create, modify, control, restore, delete jobs of backups
+| Retain logs of control plane for Instances monitoring (API, hypervisor) | | RA |
+| Retain logs of Information System hosted on Instances | RA | |
+| Monitor the proper functioning of physical devices (utilities) in support of the service | I | RA |
+| Create, modify, control, restore, delete jobs of backups | RA | |
 | Create jobs of backups following subscription to Automated backups option | AI | R |
 | Maintain storage and backups devices used for the service |  | RA |
 
@@ -89,7 +89,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage data encryption of storage space allocated | RA |  |
+| Manage data encryption of storage space allocated | RA | CI |
 
 ##### **3.1.5. Management**
 

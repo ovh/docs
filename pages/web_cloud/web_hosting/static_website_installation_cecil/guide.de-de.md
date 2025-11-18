@@ -1,12 +1,12 @@
 ---
 title: "Tutorial - Installation und Konfiguration von Cecil, einem Static Site Generator (SSG) in PHP"
-excerpt: "Erfahren Sie hier, wie Sie mit Cecil Ihre statische Website mithilfe einer modernen Template-Engine erstellen (Jamstack)"
-updated: 2023-12-08
+excerpt: "Erfahren Sie, wie Sie mit Cecil Ihre statische Website mithilfe einer modernen Template-Engine erstellen (Jamstack)"
+updated: 2025-10-27
 ---
 
 ## Ziel
 
-Dieses Tutorial zeigt Ihnen, wie Sie [Cecil](https://cecil.app/){.external} installieren und konfigurieren können. Es ist eine in PHP geschriebene Anwendung, die statische Webseiten generieren und verwalten kann.
+Dieses Tutorial zeigt Ihnen, wie Sie [Cecil](https://cecil.app/) installieren und konfigurieren können. Es ist eine in PHP geschriebene Anwendung, die statische Webseiten generieren und verwalten kann.
 
 Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren Besuchern eine bessere Ladezeit und eine höhere Sicherheit. Ohne dynamischen Inhalt sind Ihre Seiten robuster gegen Cyber-Angriffe. Das Erzeugen von statischen Seiten erlaubt mehr Freiheiten bei der Seiten-Erstellung. Sie sparen auch Zeit, da Sie nicht bei Null anfangen müssen.
 
@@ -23,14 +23,14 @@ Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren B
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
 - Sie sind mit der Befehlszeileneingabe vertraut.
 - Sie können Ihre Dateien per FTP mit einem Client wie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) übertragen.
-- Sie haben Ihre DNS-Zone konfiguriert, um Ihren Domainnamen (oder eine Subdomain) auf Ihr Webhosting zu verweisen. Dies ist besonders relevant, wenn Sie auf Ihrem Hosting mehrere Websites als [Multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) hosten möchten.
-- Sie haben [Composer](https://getcomposer.org/){.external} installiert, mit der Datei `composer.phar` im Wurzelverzeichnis Ihres Webhostings oder im Zielordner Ihres Domainnamens.
+- Ihre DNS-Zone ist konfiguriert, damit Ihr Domainname (oder Subdomain) auf Ihr Webhosting weitergeleitet wird. Dies ist insbesondere nützlich, wenn Sie mehrere [Webseiten](/pages/web_cloud/web_hosting/multisites_configure_multisite) auf Ihrem Webhosting einrichten möchten.  
+- Sie haben [Composer](https://getcomposer.org/) installiert, mit der Datei `composer.phar` im Wurzelverzeichnis Ihres Webhostings oder im Zielordner Ihres Domainnamens.
 
 ## In der praktischen Anwendung
 
-Mit [Webhostings](/links/web/hosting) können Sie Domainnamen oder Subdomains für mehrere Websites deklarieren. Sie benötigen einen Domainnamen oder eine Subdomain, um Ihre mit **Cecil** erstellte Seite zu veröffentlichen.
+Ein [Webhosting](/links/web/hosting) ermöglicht es, Domains oder Subdomains auf den darin enthaltenen Webseiten zu deklarieren. Eine Domain oder Subdomain ist erforderlich, um Ihre mit **Cecil** erstellte Website bereitzustellen.  
 
-Um Ihnen dabei zu helfen, einen Domainnamen oder eine Subdomain zu deklarieren, verwenden Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+Um Ihnen bei der Einrichtung einer Domain oder Subdomain auf einer der Webseiten Ihres Webhostings zu helfen, konsultieren Sie unsere Seite „[Mehrere Webseiten auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.  
 
 ### Erstellen Sie das Verzeichnis für Ihre Dateien
 
@@ -93,7 +93,7 @@ Sie können nun das Ergebnis sehen, indem Sie Ihren Domainnamen aufufen:
 
 Um die Ergebnisse in Ihrem Browser anzuzeigen, muss Ihr Domainname auf das Verzeichnis `_site` verweisen, das Sie bei der Installation von **Cecil** erstellt haben.
 
-Wenn Ihr Domainname bei OVHcloud gehostet wird, können Sie unsere Anleitungen zur [DNS-Konfiguration](/pages/web_cloud/domains/dns_zone_edit) und Einrichtung von [Multisites auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) zu Hilfe nehmen.
+Wenn Ihr Domainname oder Subdomain bei OVHcloud gehostet wird, konsultieren Sie unsere Anleitungen zu der [DNS-Konfiguration](/pages/web_cloud/domains/dns_zone_edit) und zur Einrichtung einer [Webseite auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ### Ihre Webseite konfigurieren
 
@@ -109,7 +109,7 @@ Ersetzen Sie die Standardinformationen durch Ihre eigenen, und speichern Sie die
 
 ### Neue Seite erstellen
 
-Sie können Webseiten mithilfe von Dateien im Markdown-Format erstellen. Diese Seiten können angepasst werden. **Cecil** enthält [Twig](https://twig.symfony.com/){.external}, die Template Engine, die standardmäßig für das [Symfony](https://symfony.com/){.external} Framework verwendet wird.
+Sie können Webseiten mithilfe von Dateien im Markdown-Format erstellen. Diese Seiten können angepasst werden. **Cecil** enthält [Twig](https://twig.symfony.com/), die Template Engine, die standardmäßig für das [Symfony](https://symfony.com/) Framework verwendet wird.
 
 Ordner und Dateien sind wie folgt organisiert:
 
@@ -153,7 +153,7 @@ Sie können sie auf dem Server öffnen, indem Sie die URL Ihrer Seite gefolgt vo
 
 #### Auf dem Server arbeiten
 
-Markdown-Dateien können direkt auf dem Webhosting-Server bearbeitet werden. Mit dem SSH-Zugang der [Performance Hostings](/links/web/hosting-performance-offer) können Sie [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} oder [vim](https://www.vim.org/){.external} verwenden.
+Markdown-Dateien können direkt auf dem Webhosting-Server bearbeitet werden. Mit dem SSH-Zugang der [Performance Hostings](/links/web/hosting-performance-offer) können Sie [GNU nano](https://nano-editor.org/), [vi](https://ex-vi.sourceforge.net/) oder [vim](https://www.vim.org/) verwenden.
 
 Die Screenshots dieses Tutorials wurden unter **GNU nano** erstellt.
 
@@ -216,9 +216,9 @@ Die Verwendung einer Template Engine, die in der Web-Entwickler-Community weit v
 
 [Dynamischen Inhalt auf einer statischen Webseite hinzufügen, die mit Cecil erstellt wurde](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
 
-[Offizielle Webseite von Cecil](https://cecil.app/){.external}
+[Offizielle Webseite von Cecil](https://cecil.app/)
 
-[Hilfe zum Markdown-Format](https://www.markdownguide.org/){.external}
+[Hilfe zum Markdown-Format](https://www.markdownguide.org/)
 
 [Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

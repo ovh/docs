@@ -21,7 +21,7 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 > [!warning]
 > OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Więcej informacji znajduje się w sekcji "Sprawdź również".
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further).
 >
 
 ## Wymagania początkowe
@@ -61,9 +61,9 @@ Pierwszy etap polega na pobraniu bramy (gateway) IPv6 przypisanej do Twojego ser
 
 ### W Panelu klienta <a name="viacontrolpanel"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Serwer dedykowany`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Serwer dedykowany`{.action}.
 
-Brama IPv6 przypisana do Twojego serwera jest wyświetlana w sekcji `Sieć` w zakładce `Informacje ogólne`{.action}. Po skopiowaniu przejdź do etapu 2 « [Zastosuj konfigurację adresu IPv6](#applyipv6) ».
+Brama IPv6 przypisana do Twojego serwera jest wyświetlana w sekcji `Sieć` w zakładce `Informacje ogólne`{.action}. Po skopiowaniu przejdź do aplikacji konfiguracyjnej IPv6.
 
 ![configureipv6](images/ipv6_information.png){.thumbnail}
 
@@ -88,6 +88,9 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 > Zanim zmodyfikujesz plik konfiguracyjny, zawsze utwórz kopię zapasową oryginału, aby móc powrócić w przypadku problemu. 
 > 
 
+> [!primary]
+> Niektóre systemy operacyjne wymagają domyślnego dodania statycznych tras IPv6 do oryginalnego pliku konfiguracyjnego. W takim przypadku wystarczy dodać konfigurację dla IPv6 zgodnie z instrukcją, nie modyfikując żadnych linii w oryginalnym pliku.
+>
 
 ### Debian i systemy operacyjne oparte na Debianie (z wyjątkiem Debiana 12)
 
@@ -112,7 +115,7 @@ ssh user@serverIP
 
 #### Krok 2: Tworzenie kopii zapasowej
 
-Plik konfiguracyjny sieci serwera znajduje się w `/etc/network/interfaces.d`. Przed kontynuowaniem utwórz kopię zapasową pliku za pomocą następującego polecenia:
+Plik konfiguracyjny sieci serwera znajduje się w `/etc/network/interfaces.d`. W naszym przykładzie nazywa się on `50-cloud-init`. Przed kontynuowaniem utwórz kopię zapasową pliku za pomocą następującego polecenia:
 
 ```sh
 sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
@@ -632,6 +635,6 @@ W każdym przypadku nie wahaj się [skontaktować się z naszym zespołem pomocy
 - Nazwa pliku konfiguracji sieci i katalog, w którym się on znajduje. 
 - Treść tego pliku.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,124 +1,164 @@
 ---
-title: "Tutorial - Using FileZilla with your OVHcloud hosting"
-excerpt: "Find here a tutorial for using the FileZilla software on your web hosting"
-updated: 2025-06-10
+title: "Web Hosting - How to use FileZilla"
+excerpt: "Find out how to log in to your OVHcloud Web Hosting plan’s storage space, and manage the data stored on it, using FileZilla software"
+updated: 2025-09-12
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
+> [!primary]
+> **FTP Explorer/Net2FTP tool deactivated**
+>
+> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [FileZilla](https://filezilla-project.org/download.php) or [Cyberduck](https://cyberduck.io/) software.
 
 ## Objective
 
-FileZilla is free software available on several operating systems (Windows, macOS, etc.).
-You can use it to put files or your website online by [connecting to your web hosting plan’s FTP space](/pages/web_cloud/web_hosting/ftp_connection).
+FileZilla is free software available on several operating systems (Windows, macOS, etc.).  
+You can use it to put files or your website online by [connecting to your web hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection).
 
-**Find out how to use the FileZilla software on your web hosting plan.**
-
-> [!warning]
->
-> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
->
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [`Go further`](#go-further) section of this guide.
->
+**Find out how to log in to your OVHcloud Web Hosting plan’s storage space, and manage the data stored on it, using FileZilla software.**
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
-- An [OVHcloud Web Hosting plan](/links/web/hosting)
-- You need to have installed the FileZilla client on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php){.external}.
-
-> [!primary]
->
-> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php){.external} or [Cyberduck](https://cyberduck.io/){.external} software.
+- Access to the [OVHcloud Control Panel](/links/manager).
+- An [OVHcloud Web Hosting plan](/links/web/hosting).
+- You need to have installed the FileZilla client on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php).
 
 ## Interface overview <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Click here to see the contents of this section.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - The top **connection bar** allows you to log in to your hosting plan quickly, by entering its **host** name, **user** name, associated **password** and **port** number.
-- **Section 1**: Displays details on the operation history, connection to the FTP space, file transfers, errors, etc. For more information, please refer to the official FileZilla [documentation](https://filezilla-project.org/){.external}.
-- **Section 2**: The directory tree of local files on your computer
-- **Section 3**: The directory tree of remote files when you are connected to your hosting
-- **Section 4**: The list of directories/files in the directory selected locally on your computer
-- **Section 5**: The list of remote directories/files in the selected directory on your hosting
-- **Section 6**: The list of pending transfer operations or transfers in error status between your computer and your hosting
+- **Section 1**: Displays details on the operation history, connection to the FTP space, file transfers, errors, etc. For more information, please refer to the official FileZilla [documentation](https://filezilla-project.org/).
+- **Section 2**: The directory tree of local files on your computer.
+- **Section 3**: The directory tree of remote files when you are connected to your hosting.
+- **Section 4**: The list of directories/files in the directory selected locally on your computer.
+- **Section 5**: The list of remote directories/files in the selected directory on your hosting.
+- **Section 6**: The list of pending transfer operations or transfers in error status between your computer and your hosting.
+
+///
 
 ## Instructions
 
-### Connecting via FTP in FileZilla 
+### 1 - Retrieve the login information for the web hosting plan storage space <a name="part-1"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+Perform the following actions:
 
-In the quick connection bar, enter the information using the table below:
+1. Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+3. On the page that pops up, click on the `FTP - SSH`{.action} tab.
+4. On the new page, information related to your storage space will appear. In it, you can retrieve the following elements:
+    - The `FTP and SFTP server` represented as follows: `ftp.clusterXXX.hosting.ovh.net` (where each of the 3 `X` corresponds to a number between `0` and `9`).
+    - One of the users listed in the `Login` column of the table at the bottom of the page. You can also use the `Main login` if you wish.
+    - The number of the `FTP port` or the number of the `SFTP port` depending on the connection protocol you will want to use to connect to your storage space.
 
-|Information to enter|Details|
-|---|---|
-|Host|The server address for accessing your hosting plan’s storage space.<br><br> For shared hosting, it usually has this form: `ftp.clusterXXX.hosting.ovh.net` (in which `XXX` stands for the cluster number where your hosting is located).|
-|User|The login/username for accessing your web hosting plan’s storage space.|
-|Password|The password associated with the user.|
-|Port|It is usually filled in automatically by the software. Otherwise, enter:<br><br>\- Port `21` for an FTP connection.<br>\- Port `22` for an SFTP connection (if it is enabled). You can find more information on SFTP in [the dedicated section of this tutorial](#sftp).|
-
-In case you do not have this information, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting plans`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will then appear:
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!warning]
+> [!primary]
 >
-> Some OVHcloud solutions do not use port 22 for SFTP and/or SSH connections. In case of doubt, check the port information displayed in your [OVHcloud Control Panel](/links/manager){.external}.
+> For security reasons, a user’s password does not appear on the page of the `FTP - SSH`{.action} tab. If you have forgotten it, please refer to [this guide](/pages/web_cloud/web_hosting/ftp_change_password) to modify it.
+
+### 2 - Log in to your hosting plan’s storage space using FileZilla
+
+You can connect via two file transfer protocols:
+
+- **F**ile **T**ransfer **P**rotocol (**FTP**).
+- **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**).
+
+> [!primary]
 >
+> Whenever possible, we recommend that you use the **SFTP** protocol to log in to your storage space with FileZilla.
+>
+> The **SFTP** protocol encrypts the data exchanged between your device and your web hosting plan. However, if you experience any usage constraints, such as user or folder segmentation, you will need to use the **FTP** protocol.
 
-Once everything is entered correctly into section **1** as shown in the image below, click on `Quickconnect`{.action}.
+**Click on the connection protocol of your choice to view explanations.**
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+/// details | Log in to your Web Hosting plan’s storage space via SFTP using FileZilla. <a name="sftp"></a>
 
-If the connection is successful, you will be informed via the status in section **2** of the image above. You can see your directories and files already present on your hosting (section **3**).
-
-### Logging in to FileZilla via SFTP <a name="sftp"></a>
-
-The **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) is a protocol similar to **FTP**. Like SSH, it uses port 22 by default instead of port 21. If you are using a Cloud Web hosting plan, you will need to use the port listed in the [OVHcloud Control Panel](/links/manager){.external} instead. Port 22 on Cloud Web hostings is disabled for security reasons and therefore not used for SSH and SFTP connections.
+The **SFTP** uses, like SSH, port 22 by default instead of port 21. If you are using a Cloud Web hosting plan, you will need to use the port that appears in your [OVHcloud Control Panel](/links/manager). Port 22 is disabled in SSH and SFTP for Cloud Web hosting.
 
 > [!success]
 >
-> SFTP can be enabled free of charge for all OVHcloud hosting plans (with the exception of the old 60free/demo1g solutions).
-> 
+> SFTP can be activated for free for all OVHcloud hosting plans (except the legacy 60free and demo1g plans).
+>
 
-#### Check SFTP activation
+**Check SFTP protocol activation**
 
-First, check that SFTP is enabled for your **FTP** login.
+To do this, go back to the `FTP - SSH`{.action} tab in your [OVHcloud Control Panel](/links/manager), as detailed in the [first part](#part-1) of this guide.
 
-Go to the `Web Cloud`{.action} section of your `Web Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager), then click on `Hosting plans`{.action}. Select the name of the web hosting plan and click on the `FTP - SSH`{.action} tab.
+In the table at the bottom of the page, locate the `SFTP` column to check that the user (in the `Login` column of the table) concerned has active SFTP access. If this is not the case, `Disabled` will appear.
 
-Then check if **SFTP** is active in the table at the bottom of the page.
+If the SFTP access of the user concerned is `Disabled` in the table, perform the following steps:
 
-![Activate SFTP offer start](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
+- For Personal offers, tick the box to the left of `Disabled` in the table.
 
-If **SFTP** is not active:
+- For Professional and Performance plans:
 
-- Click on the `...`{.action} button to the right of the table, then `Edit`{.action}.
+    - 1: Click the `...`{.action} button to the right of the line corresponding to the user, then `Edit`{.action}.
+    - 2: In the window that pops up, in the `Connection protocols` section, select the `FTP and SFTP`{.action} choice, then click `Next`{.action}.
+    - 3: Check the summary of the requested modification, then click `Confirm`{.action}.
 
-![Activation SFTP 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-login.png){.thumbnail}
-
-- In the window that appears, check that one of the following 2 options is enabled:
-    - **FTP and SFTP**: To activate SFTP in addition to FTP.
-    - **FTP, SFTP and SSH**: To activate FTP, SFTP and SSH.
-
-![Activation SFTP 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png){.thumbnail}
-
-- Then click `Next`{.action} and `Confirm`{.action}.
-
-#### Launch the SFTP connection
+**Log in via SFTP with FileZilla**
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
-To establish a connection to the remote server (your hosting), enter the following information into the quick connection bar:
+Using the quick connection bar, enter the information using the table below:
 
-- Host: `ftp.clusterXXX.hosting.ovh.net` (Replace `XXX` with the number of your hosting cluster)
-- ID: Your FTP login
-- Password: The FTP password associated with the login
-- Port: 22
+|Information to enter|Details|
+|---|---|
+|Host| Server address used to access your Web Hosting plan’s storage space.<br> This usually takes the form of: `ftp.clusterXXX.hosting.ovh.net` (the `XXX` represents the cluster number where your Web Hosting plan is located).|
+|Username|The ID you need to access your web hosting plan’s storage space.|
+|Password|The password associated with the user.|
+|Port|Enter the SFTP port number you retrieved earlier in the [first part](#part-1) of this guide for an SFTP connection.|
 
-After clicking the `Quickconnect`{.action} button, a dialogue box opens (see image below) to certify the connection to the host you are about to connect to. When you are logged in to an OVHcloud host, you can tick the option *Always trust this host, add this key to the cache* so that the software will not ask again for future connections to this host.
+Once you have entered everything correctly in the **1** box in the image below, click `Quick Connect`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
+A dialog box will then open (see the image below) to certify the connection to the host you are about to connect to. By being logged in to an OVHcloud host, you can tick the *Always trust this host, add this key to the cache* box so that the software won't ask you again in the future.
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
-### Connection errors
+///
+
+/// details | Log in to your Web Hosting plan’s storage space via FTP using FileZilla.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+
+Using the quick connection bar, enter the information using the table below:
+
+|Information to enter|Details|
+|---|---|
+|Host| Server address used to access your Web Hosting plan’s storage space.<br> This usually takes the form of: `ftp.clusterXXX.hosting.ovh.net` (the `XXX` represents the cluster number where your Web Hosting plan is located).|
+|Username|The ID you need to access your web hosting plan’s storage space.|
+|Password|The password associated with the user.|
+|Port|It is usually completed automatically by the software. Otherwise, enter port `21` for an FTP connection.|
+
+Once you have entered everything correctly in the **1** box in the image below, click `Quick Connect`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
+If the connection is successful, you will be informed via the status in the **2** box in the image above. You can then see your folders and files already on your hosting (box **3**).
+
+///
+
+#### Connection errors
+
+**Click on the error you are experiencing to view the solution.**
+
+/// details | Authentication failed - Could not connect to server 
 
 The message displayed below indicates an identification error when connecting to the shared hosting plan using FTP or SFTP:
 
@@ -126,20 +166,23 @@ The message displayed below indicates an identification error when connecting to
 
 This type of message is generated by an error in the Login/Password pair.
 
-Check your login details to ensure that no errors are entered. If required, you can change the FTP access password for your web hosting plan directly in the [OVHcloud Control Panel](/links/manager){.external}.
+Check your login details to ensure that no errors are entered. If applicable, you can [change the FTP access password](/pages/web_cloud/web_hosting/ftp_change_password) of your web hosting plan directly in the [OVHcloud Control Panel](/links/manager).
 
-> [!success]
-> A guide is available for [changing the FTP password](/pages/web_cloud/web_hosting/ftp_change_password) on shared hosting plans.
+///
+
+/// details | Connection timed out after 20 seconds of inactivity - Could not connect to server
 
 In the following case, the error is generated by an incorrect host name:
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/connection-timed-out-after-20s.png){.thumbnail}
 
-Check that it is linked to the host name declared in your [OVHcloud Control Panel](/links/manager){.external}.
+Check that it is linked to the host name declared in your [OVHcloud Control Panel](/links/manager).
 
-### File transfer
+///
 
-To transfer your files via FTP, you can select them, then drag and drop the directories/files from the left window (*Local site*) to the right window (*Remote site*) (**sections 4 and 5** described in this tutorial under [Interface overview](#interface)).
+### 3 - File transfer
+
+To transfer your files via (S)FTP, you can select them, then drag and drop the directories/files from the left window (*Local site*) to the right window (*Remote site*) (**sections 4 and 5** described in this tutorial under [Interface overview](#interface)).
 
 Be sure to select the correct target directory on the hosting in the right-hand window.
 
@@ -147,7 +190,11 @@ Once this is done, your files will automatically queue to be uploaded to the ser
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/drag-drop-en.png){.thumbnail}
 
-### Queue view
+### 4 - Other features of FileZilla
+
+**Click on the headings below to view their respective contents.**
+
+/// details | Queue view
 
 A view of the queue is available (**section 6** described in this tutorial under [Interface overview](#interface)).
 
@@ -159,7 +206,9 @@ In this zone, you will find:
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
-### Server context menu
+///
+
+/// details | Server context menu
 
 You can right-click on one of the files in **section 5** (described in this tutorial under [Interface overview](#interface)).
 
@@ -172,14 +221,14 @@ A popup menu will appear, and you can choose from:
 - **Refresh**: Refreshes the data display to provide an up-to-date view of the files.
 - **Delete**: Allows you to delete the selected file.
 - **Rename**: Allows you to rename the selected file.
-- **Copy URL(s) to clipboard**: Allows you to automatically copy the direct link to the selected file. Example of a URL that can be generated: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/MY_FOLDER/my_file.jpg`
+- **Copy URL(s) to clipboard**: Allows you to automatically copy the direct link to the selected file. Example of a URL that can be generated: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/MY_FOLDER/my_file.jpg`.
 - **File permissions...**: Allows you to modify access permissions (*chmod*).
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
-## Useful information <a name="useful-information"></a>
+///
 
-### File and folder access rights (CHMOD)
+/// details | File and folder access rights (CHMOD)
 
 Right-click on one of the files on the server, then select `File permissions...`{.action}.
 
@@ -206,13 +255,15 @@ Enter the permissions you want to assign. The *chmod* value will be automaticall
 
 You can select the “Recurse into subdirectories” option to not only change the rights of the folder in question but those of the folders and files located inside this folder as well.
 
-### Site reopening
+///
+
+/// details | Site reopening
 
 > [!primary]
 >
-> Regardless of your actions, your hosting plan may be disabled if our security systems detect malicious files or files that are not authorised on your hosting plan.
+> Regardless of your actions, your hosting plan may be disabled if our security systems detect malicious files or files that are not authorized on your hosting plan.
 >
-> You must then [secure your services](/pages/web_cloud/web_hosting/diagnostic_403_forbidden) while correcting the security vulnerabilities mentioned in the block notification received via email.
+> You must then [secure your services](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) while correcting the security vulnerabilities mentioned in the notification received via email.
 >
 
 Then click `Server`{.action} and select `Enter custom command`{.action}. (This option may also be called `Enter FTP command`{.action}).
@@ -243,14 +294,16 @@ SITE CHMOD 705 .
 
 > [!warning]
 >
-> Be sure to test the website display after a maximum waiting time of 3 hours.<br>
+> Be sure to test the website display after a waiting time of 3 hours.<br>
 > Our robots check status changes every 3 hours.<br>
 > Depending on when the above changes are made, your website may be restored more or less quickly.<br>
 > If the 3-hour time limit has passed and your website is still not online, verify that the command you have entered has been applied by retrying the operation.<br>
 > If it still does not work, please contact our support team.
 > 
 
-### Binary file transfer
+///
+
+/// details | Binary file transfer
 
 For binary type files, such as **CGI** files, it may be of interest to choose how the transfer will be done.
 
@@ -258,7 +311,9 @@ To change the transfer type, select `Transfer`{.action} from the main menu, then
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
-### Folder comparison
+///
+
+/// details | Folder comparison
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
@@ -275,6 +330,8 @@ By right-clicking on the icon, you can change the comparison mode. You have the 
 - Yellow: The file exists only on one side.
 - Green: The file is newer than the uncoloured file on the other side.
 - Red: The file sizes are different.
+
+///
 
 ## Go further <a name="go-further"></a>
 

@@ -9,7 +9,7 @@ updated: 2025-04-29
 
 An **OVHgateway** virtual machine is installed when deploying a **Nutanix on OVHcloud** cluster. This virtual machine serves as the outgoing Internet gateway for the cluster. The maximum throughput is 1 GB/s.
 
-If you need more bandwidth, you can replace this gateway with a [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) and choose a solution that allows you to connect between 1 GB/s and 10 GB/s on the public network.<br>
+If you need more bandwidth, you can replace this gateway with a [dedicated server](/links/bare-metal/bare-metal) and choose a solution that allows you to connect between 1 GB/s and 10 GB/s on the public network.<br>
 Contact OVHcloud Sales to help you choose the right server. 
 
 **This guide explains how to replace the default gateway with an OVHcloud dedicated server to increase bandwidth.**
@@ -23,9 +23,9 @@ Contact OVHcloud Sales to help you choose the right server.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You must be connected to the cluster via **Prism Central**. 
-- You have a [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account with several network cards, some on the public network, others on the private network. This server must be in the same data centre as the Nutanix cluster.
+- You have a [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account with several network cards, some on the public network, others on the private network. This server must be in the same data centre as the Nutanix cluster.
 
 ## Instructions
 
@@ -41,7 +41,7 @@ To replace the OVHgateway VM, we will use these settings:
 
 ### Retrieving information needed to deploy your server
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click `Hosted Private Cloud`{.action} in the tab bar. Select your Nutanix cluster on the left-hand side, and note the name of the vRack associated with your Nutanix cluster in `Private network (vRack)`.
+In your [OVHcloud Control Panel](/links/manager), click `Hosted Private Cloud`{.action} in the tab bar. Select your Nutanix cluster on the left-hand side, and note the name of the vRack associated with your Nutanix cluster in `Private network (vRack)`.
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
@@ -352,7 +352,7 @@ The gateway is available for the Nutanix Cluster in VLAN 1.
 
 ### Test bandwidth
 
-You can control your server's bandwidth with a tool called Iperf that you can find on [Iperf's official website](https://iperf.fr/){.external}.
+You can control your server's bandwidth with a tool called Iperf that you can find on [Iperf's official website](https://iperf.fr/).
 
 To perform a full test, create a virtual machine on Linux, install iperf3 software and run this command:
 
@@ -375,6 +375,6 @@ The test takes 10 seconds, and you will get your cluster’s bandwidth via your 
 
 ## Go further <a name="gofurther"></a>
   
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

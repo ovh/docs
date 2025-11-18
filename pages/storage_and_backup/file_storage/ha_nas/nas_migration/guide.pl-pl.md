@@ -18,7 +18,7 @@ Aby wykonać transfer danych, musisz:
 
 - NAS-HA OVHcloud
 - Dystrybucja kompatybilna z NFS
-- Uruchomienie usługi NAS-HA przed jej rozpoczęciem zgodnie z instrukcją [montowania usługi NAS-HA przy użyciu protokołu NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs){.external}.
+- Uruchomienie usługi NAS-HA przed jej rozpoczęciem zgodnie z instrukcją [montowania usługi NAS-HA przy użyciu protokołu NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs).
 
 ## W praktyce
 
@@ -44,6 +44,6 @@ rsync -Pva /mnt/SrcNas /mnt/DstNas
 
 ## Sprawdź również
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
-Dołącz do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Dołącz do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/)

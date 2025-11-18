@@ -17,7 +17,7 @@ Now that you can send logs, you may be wondering how to tell Logs Data Platform 
 
 ### What is a valid log for Logs Data Platform?
 
-Each log received on Logs Data Platform is transformed into a [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}-formatted log. What is GELF? A standardized JSON way to send logs. GELF stands for Graylog Extended Log Format. Using this format gives us two advantages: It is directly compatible with Graylog and it is still extensible enough to enrich your logs as you would like to.
+Each log received on Logs Data Platform is transformed into a [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification)-formatted log. What is GELF? A standardized JSON way to send logs. GELF stands for Graylog Extended Log Format. Using this format gives us two advantages: It is directly compatible with Graylog and it is still extensible enough to enrich your logs as you would like to.
 
 This format impose a few conventions that if you don't follow can have many consequences:
 
@@ -107,7 +107,7 @@ will become:
 }
 ```
 
-So this is everything you need to know to send valid messages format and not shoot yourself in the foot. If you have any question you can always reach us [on the community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
+So this is everything you need to know to send valid messages format and not shoot yourself in the foot. If you have any question you can always reach us [on the community hub](https://community.ovh.com/en/c/Platform/data-platforms).
 
 Happy Logging
 
@@ -115,5 +115,5 @@ Happy Logging
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))

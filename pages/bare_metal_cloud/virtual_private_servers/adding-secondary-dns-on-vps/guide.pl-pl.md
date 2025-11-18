@@ -17,7 +17,7 @@ Jeśli skonfigurujesz serwer VPS jako serwer DNS, możesz użyć Secondary DNS O
 ## Wymagania początkowe
 
 - Domena, do której masz dostęp jako administrator
-- Serwer [VPS](https://www.ovhcloud.com/pl/vps/) w Panelu klienta OVHcloud
+- Serwer [VPS](/links/bare-metal/vps) w Panelu klienta OVHcloud
 - Dostęp do [Panelu client OVHcloud](/links/manager)
 
 > [!warning]

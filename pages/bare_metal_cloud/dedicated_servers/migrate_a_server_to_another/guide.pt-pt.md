@@ -18,7 +18,7 @@ Como as suas necessidades e as gamas OVHcloud evoluem constantemente, é por vez
 >
 > A utilização e a gestão dos serviços OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso à parte lógica dos sistemas. O cliente é o único responsável pela gestão e pela segurança destes serviços.
 >
-> Este guia explica como implementar algumas medidas para tornar o seu sistema mais seguro. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste guia intitulada: «Quer saber mais?»
+> Este guia explica como implementar algumas medidas para tornar o seu sistema mais seguro. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um [serviço especializado](/links/partner). Para mais informações, aceda à secção deste guia intitulada: «Quer saber mais?»
 >
 
 ## Requisitos
@@ -49,7 +49,7 @@ A migração dos dados implica normalmente a cópia de ficheiros de um servidor 
 
 ### Utilização do Backup Storage (disponível apenas na OVHcloud e So you Start)
 
-Com a opção [Backup Storage](https://www.ovhcloud.com/pt/bare-metal/backup-storage/), pode armazenar dados num serviço externo ao seu servidor. Está unicamente ligado ao serviço a partir do qual o encomendou.
+Com a opção [Backup Storage](/links/bare-metal/backup-storage), pode armazenar dados num serviço externo ao seu servidor. Está unicamente ligado ao serviço a partir do qual o encomendou.
 
 > [!warning]
 >
@@ -60,7 +60,7 @@ Com a opção [Backup Storage](https://www.ovhcloud.com/pt/bare-metal/backup-sto
 
 Pode autorizar o acesso ao armazenamento de backup a partir do seu novo servidor. Assim, disporá de uma gateway para transferir os seus dados.
 
-Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage num servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage){.external}.
+Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage num servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ### Migração de um Additional IP (disponível apenas na OVHcloud e So you Start)
 

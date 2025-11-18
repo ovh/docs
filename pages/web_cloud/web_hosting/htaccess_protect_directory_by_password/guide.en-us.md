@@ -113,7 +113,7 @@ Replace `plain_text_password1`, `plain_text_password2` and `plain_text_password3
 >
 > The two scripts above use, to date, the most secure encryption method via the **bcrypt** algorithm recommended by Apache.
 >
-> For more information on this subject, see the [official Apache documentation](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
+> For more information on this subject, see the [official Apache documentation](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html).
 >
 
 If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](/links/web/hosting-performance-offer) hosting plan, then log in with [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) to your web hosting. Go to the **root folder** where your script “crypt.php” is located.
@@ -200,7 +200,7 @@ In the script above, replace the following with your own values:
 
 #### Blocking access to one or more files
 
-To block access to one or more specific files, add a [Files directive](https://httpd.apache.org/docs/2.4/eb/mod/core.html#files){.external} to the ".htaccess" file:
+To block access to one or more specific files, add a [Files directive](https://httpd.apache.org/docs/2.4/eb/mod/core.html#files) to the ".htaccess" file:
 
 ```bash
 <Files test.php>
@@ -222,7 +222,7 @@ In the script above, replace the following with your own values:
 
 > [!warning]
 >
-> You will need to specify a [Files directive](https://httpd.apache.org/docs/2.4/en/mod/core.html#files){.external} for **each file** to be protected.
+> You will need to specify a [Files directive](https://httpd.apache.org/docs/2.4/en/mod/core.html#files) for **each file** to be protected.
 >
 > `Files` directives apply to all files with the same name or ending with the specified name. This is provided that they are contained in the same directory as the ".htaccess" or in one of its subdirectories.
 >
@@ -238,7 +238,7 @@ In the script above, replace the following with your own values:
 
 ## Go further <a name="go-further"></a>
 
-[Official Apache documentation](https://httpd.apache.org/docs/2.4/){.external}
+[Official Apache documentation](https://httpd.apache.org/docs/2.4/)
 
 [Logging in to your Web Hosting plan’s FTP space](/pages/web_cloud/web_hosting/ftp_connection)
 

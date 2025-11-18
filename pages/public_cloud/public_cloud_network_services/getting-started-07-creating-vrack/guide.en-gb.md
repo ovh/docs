@@ -47,11 +47,11 @@ Please refer to [this guide](/pages/public_cloud/public_cloud_cross_functional/i
 
 ### OVHcloud APIv6
 
-Every action you take in your OVHcloud Control Panel can be called with the [OVHcloud APIv6](https://eu.api.ovh.com/). It even offers more possibilities than the graphical interface.
+Every action you take in your OVHcloud Control Panel can be called with the [OVHcloud APIv6](/links/api). It even offers more possibilities than the graphical interface.
 
 The API interface is less visual than the OVHcloud Control Panel but will allow you to perform a large number of actions. You can manage and customise your VLAN, add interfaces to your instances, or create highly customised servers.
 
-You can simply access it from [our web page](https://eu.api.ovh.com/) but also use it to create your PHP or Python scripts. This way, you can freely automate basic tasks with scripts, optimise your own functions and much more.
+You can simply access it from [our web page](/links/api) but also use it to create your PHP or Python scripts. This way, you can freely automate basic tasks with scripts, optimise your own functions and much more.
 
 You may need to retrieve various information before using some API calls because a specific input is required.
 
@@ -84,7 +84,7 @@ You will then be able to use the APIs dedicated to OpenStack as needed:
 >
 > Moreover, some features may be missing from the OpenStack API depending on the version of your client and operating system.
 > For the purpose of making this guide more accessible, it presents the simplest and most intuitive options.
-> You may consult the [official OpenStack documentation](https://docs.openstack.org/){.external} if you wish to go further in learning about its use.
+> You may consult the [official OpenStack documentation](https://docs.openstack.org/) if you wish to go further in learning about its use.
 >
 
 For more information, consult this guide: [Configuring vRack for Public Cloud using OpenStack CLI](/pages/public_cloud/public_cloud_network_services/getting-started-09-creating-vrack-with-openstack).
@@ -119,7 +119,7 @@ From the list of eligible services, select the project you want to add to the vR
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
-To continue the configuration of your vRack in the OVHcloud Control Panel, skip to the section [Creating a VLAN in the OVHcloud Control Panel](./#creating-a-private-network-in-the-ovhcloud-control-panel) of this guide.
+To continue the configuration of your vRack in the OVHcloud Control Panel, skip to the section [Creating a private network in the OVHcloud Control Panel](./#creating-a-private-network-in-the-ovhcloud-control-panel) of this guide.
 
 #### With the OVHcloud APIv6
 
@@ -282,7 +282,7 @@ Please refer to [this section](/pages/public_cloud/public_cloud_network_services
 
 #### With OpenStack Horizon
 
-Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/){.external} as mentioned [above](./#horizon).
+Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) as mentioned [above](./#horizon).
 
 Choose the proper work zone.
 

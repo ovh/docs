@@ -36,7 +36,7 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 ## Instructions
 
-1. In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), select your `Managed Private Registry`{.action}, click on the *more options* (`...`{.action}) button at the right end and click on `Harbor user interface`{.action}:
+1. In your [OVHcloud Control Panel](/links/manager), select your `Managed Private Registry`{.action}, click on the *more options* (`...`{.action}) button at the right end and click on `Harbor user interface`{.action}:
 
     ![Managing users and projects](images/connecting-to-the-ui-002.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Getting started with APIs
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
-updated: 2024-02-29
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -12,8 +12,8 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 ## Requirements
 
-- access to the [OVHcloud API](https://api.ovh.com/){.external} (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
-- a [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
+- access to the [OVHcloud API](/links/api) (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
+- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions
 
@@ -21,8 +21,8 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 In order to create a database service, you will need to specify at minimum:
 
-- an _engine_, and its _version_ (e.g. "MongoDB "6.0")
-- the _plan_ (e.g. "business")
+- an _engine_, and its _version_ (e.g. "MongoDB "8.0")
+- the _plan_ (e.g. "production")
 - the _nodes_ of the cluster (e.g. "3 nodes with 4 cores, 15 GiB memory, 100 GiB disk")
 
 #### List the capabilities
@@ -40,7 +40,7 @@ The call returns an object listing allowed values for:
 
 #### Get the availability
 
-The _availability_ endpoint lists what combination of parameters the service allows. For example, a MongoDB `Essential` plan currently allows clusters with a single node, whereas `Business` services allow clusters of 3 to 8 nodes. You should decide what set of parameters among that list best fit your needs.
+The _availability_ endpoint lists what combination of parameters the service allows. For example, a MongoDB `Production` plan currently allows clusters of 3 nodes, whereas `Advanced` services allow clusters to scale up to 7 nodes. You should decide what set of parameters among that list best fit your needs.
 
 > [!api]
 > @api {v1} /cloud GET /cloud/project/{serviceName}/database/availability
@@ -114,6 +114,6 @@ You’ll find the cluster connection information in your Control Panel; you can 
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -22,7 +22,7 @@ Kiedy zamawiasz serwer dedykowany, możesz wybrać dystrybucję lub system opera
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal)
 - Dostęp administratora (sudo) do serwera przez SSH
 
 ## W praktyce
@@ -228,7 +228,7 @@ sudo service fail2ban restart
 
 Fail2ban ma wiele ustawień i filtrów personalizacji oraz wstępnie zdefiniowanych opcji, np. jeśli chcesz dodać warstwę ochronną do serwera Nginx.
 
-W celu uzyskania dodatkowych informacji oraz uzyskania zaleceń dotyczących Fail2ban zapoznaj się [z oficjalną](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} dokumentacją tego narzędzia.
+W celu uzyskania dodatkowych informacji oraz uzyskania zaleceń dotyczących Fail2ban zapoznaj się [z oficjalną](https://www.fail2ban.org/wiki/index.php/Main_Page) dokumentacją tego narzędzia.
 
 ### Konfiguracja Network Firewall OVHcloud 
 
@@ -247,7 +247,7 @@ Pojęcie bezpieczeństwa nie ogranicza się wyłącznie do ochrony systemu przed
 
 Będziesz potrzebował zewnętrznego rozwiązania do replikacji danych i przesłania ich na przestrzeń dyskową do przechowywania kopii zapasowych.
 
-Więcej informacji o naszych rozwiązaniach do przechowywania kopii zapasowych znajdziesz w [przewodniku](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage){.external}.
+Więcej informacji o naszych rozwiązaniach do przechowywania kopii zapasowych znajdziesz w [przewodniku](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Sprawdź również
 

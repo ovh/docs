@@ -1,12 +1,23 @@
 ---
 title: Domande frequenti sul NAS-HA
 excerpt: Hai una domanda sul NAS-HA? Ecco le risposte alle domande più frequenti
-updated: 2024-02-26
+updated: 2025-07-15
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 
 ## Obiettivo
 
@@ -14,11 +25,13 @@ updated: 2024-02-26
 
 ## Domande generali
 
-### Cos'è la soluzione NAS-HA OVHcloud?
+/// details | Cos'è la soluzione NAS-HA OVHcloud?
 
 NAS-HA è un servizio di archiviazione file condiviso e totalmente gestito, basato sulla tecnologia open-source OpenZFS.
 
-### Cosa posso fare con NAS-HA?
+///
+
+/// details | Cosa posso fare con NAS-HA?
 
 NAS-HA permette di centralizzare i dati di diversi carichi di lavoro Linux e Windows per diversi scenari:
 
@@ -26,41 +39,57 @@ NAS-HA permette di centralizzare i dati di diversi carichi di lavoro Linux e Win
 - gestione dei contenuti web; 
 - condivisione di file sulla rete, ecc...
 
-### È possibile gestire il NAS-HA tramite un’interfaccia di amministrazione?
+///
 
-Sì, questo spazio è accessibile dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Bare Metal Cloud`{.action}, poi `NAS e CDN`{.action}.
+/// details | È possibile gestire il NAS-HA tramite un’interfaccia di amministrazione?
+
+Sì, questo spazio è accessibile dal tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Bare Metal Cloud`{.action}, poi `NAS e CDN`{.action}.
+
+///
 
 ## Disponibilità
 
-### Qual è lo SLA fornito con NAS-HA?
+/// details | Qual è lo SLA fornito con NAS-HA?
 
 NAS-HA è fornito con un tasso di disponibilità del 99,99%.
 
+///
+
 ## Rete e Sicurezza
 
-### Quali protocolli di trasferimento di file sono supportati sul NAS-HA?
+/// details | Quali protocolli di trasferimento di file sono supportati sul NAS-HA?
 
-NAS-HA supporta il trasferimento di file tramite NFS (NFSv3) e CIFS (SMB).
+NAS-HA supporta il trasferimento di file tramite NFS (NFSv3, NFSv4.1, NFNSv4.2) e CIFS (SMB).
 
-### Da quali servizi OVHcloud è possibile caricare dati?
+///
+
+/// details | Da quali servizi OVHcloud è possibile caricare dati?
 
 NAS-HA è un servizio che può ricevere dati da tutti i servizi esistenti OVHcloud: Bare Metal Cloud (VPS, server dedicati OVHcloud, So you Start, Kimsufi), Public Cloud, Hosted Private Cloud, ecc...
 
-### Come gestire gli accessi al NAS-HA?
+///
+
+/// details | Come gestire gli accessi al NAS-HA?
 
 La lista dei controlli degli accessi (ACL) è configurabile dallo Spazio Cliente OVHcloud. Inserisci semplicemente l'indirizzo IP del servizio per il quale vuoi autorizzare l'accesso al NAS-HA.
 
-### Il servizio NAS-HA è compatibile con altri server al di fuori di OVHcloud?
+///
+
+/// details | Il servizio NAS-HA è compatibile con altri server al di fuori di OVHcloud?
 
 No, è possibile accedere al NAS-HA solo dalla rete OVHcloud.
 
-### NAS-HA è ammissibile all'offerta vRack?
+///
+
+/// details | NAS-HA è ammissibile all'offerta vRack?
 
 Al momento il NAS-HA non può essere integrato nella rete privata vRack. Tuttavia, l'utilizzo del NAS-HA e della vRack non è incompatibile tramite il percorso IP pubblico del server connesso alla vRack.
 
+///
+
 ## Capacità e performance
 
-### Quali sono le capacità di storage disponibili?
+/// details | Quali sono le capacità di storage disponibili?
 
 La dimensione minima di un servizio è di 3 TB e la dimensione massima è di 144 TB.<br>
 OVHcloud ti offre queste capacità di storage su un database da 3 TB:
@@ -81,40 +110,56 @@ OVHcloud ti offre queste capacità di storage su un database da 12 TB:
 
 La capacità di storage offerta è la capacità utilizzabile.
 
-### Le risorse del tuo NAS-HA sono dedicate?
+///
+
+/// details | Le risorse del tuo NAS-HA sono dedicate?
 
 I dischi del tuo NAS-HA ti sono dedicati. Le altre risorse della macchina sono condivise (RAM, CPU, banda passante).
 
 **Caso particolare:** se sottoscrivi l'offerta da 144 TB, tutte le risorse del server host sono dedicate (RAM, CPU, banda passante).
 
-### Quanti servizi NAS-HA posso creare dal mio account cliente?
+///
+
+/// details | Quanti servizi NAS-HA posso creare dal mio account cliente?
 
 Non ci sono limiti al numero di servizi per account cliente.
 
-### Qual è il numero massimo di partizioni per servizio?
+///
+
+/// details | Qual è il numero massimo di partizioni per servizio?
 
 È possibile creare tutte le partizioni che vuoi. La dimensione minima è di 10 GB e la dimensione massima è definita dalla dimensione massima del servizio.
 
-### La velocità di trasferimento e il livello di disponibilità sono garantiti?
+///
+
+/// details | La velocità di trasferimento e il livello di disponibilità sono garantiti?
 
 - Trasferimento: la banda passante del servizio è condivisa. La velocità di trasferimento non può essere garantita da OVHcloud.
 - Disponibilità: la disponibilità del servizio è garantita e regolata da un accordo di livello di servizio. I dettagli sono consultabili nelle nostre specifiche condizioni di utilizzo.
 
+///
+
 ## Utilizzo del prodotto
 
-### È possibile connettere il NAS-HA a più server contemporaneamente?
+/// details | È possibile connettere il NAS-HA a più server contemporaneamente?
 
 Sì È possibile far interagire contemporaneamente il tuo NAS con diversi servizi OVHcloud.
 
-### È possibile installare un sistema operativo su un NAS-HA?
+///
+
+/// details | È possibile installare un sistema operativo su un NAS-HA?
 
 No, sui servizi NAS-HA non è possibile installare un OS.
 
-### Lo spazio assegnato è partizionabile?
+///
+
+/// details | Lo spazio assegnato è partizionabile?
 
 Sì, è necessario creare una o più partizioni in base al tuo utilizzo. La creazione delle partizioni è illimitata.
 
-### Come cambiare capacità di storage sul mio NAS-HA?
+///
+
+/// details | Come cambiare capacità di storage sul mio NAS-HA?
 
 Al momento non è possibile modificare dinamicamente il NAS-HA. Per aumentare o ridurre la copertura è quindi necessario:
 
@@ -122,21 +167,27 @@ Al momento non è possibile modificare dinamicamente il NAS-HA. Per aumentare o 
 2. Migrare i dati consultando la nostra guida "[Migrazione dei dati da un NAS-HA a un altro via NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration)".
 3. Disattiva il vecchio NAS-HA.
 
+///
+
 ## Snapshot
 
-### Cosa sono gli Snapshot?
+/// details | Cosa sono gli Snapshot?
 
 Gli Snapshot sono immagini dello stato del disco e dei dati presenti nella sua partizione in un istante specifico. Che permettono di offrire un primo livello di backup. La configurazione e la gestione degli Snapshot sono disponibili nello Spazio Cliente OVHcloud.
 
 La funzione Snapshot è attiva di default durante la creazione della partizione e la sua frequenza è preimpostata su "ogni ora".
 
-### Qual è la politica di backup associata al NAS-HA?
+///
+
+/// details | Qual è la politica di backup associata al NAS-HA?
 
 Gli utenti sono responsabili della gestione dei loro backup (strumenti e regole) all'interno e all'esterno del servizio, così come dei loro piani di continuità operativa e di ripresa delle attività. Per ragioni di sicurezza e resilienza dell'infrastruttura, OVHcloud può effettuare Snapshot del servizio su un server remoto, senza alcun obbligo.
 
 In caso di malfunzionamenti o attacchi, se OVHcloud ha effettuato uno Snapshot su un server remoto, è possibile ripristinare i dati dell'ultimo Snapshot disponibile. Ti ricordiamo tuttavia che questa operazione viene eseguita su richiesta e costituisce un servizio opzionale fatturato.
 
-### Qual è la frequenza degli Snapshot? <a name="frequency"></a>
+///
+
+/// details | Qual è la frequenza degli Snapshot? <a name="frequency"></a>
 
 La frequenza degli Snapshot è gestibile dallo Spazio Cliente OVHcloud. Le opzioni disponibili sono:
 
@@ -147,7 +198,7 @@ La frequenza degli Snapshot è gestibile dallo Spazio Cliente OVHcloud. Le opzio
 - ogni 3 giorni
 - settimanale
 
-In qualsiasi momento è inoltre possibile creare Snapshot manuali, conservarli senza limite di durata o eliminarli. Questa funzionalità è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o tramite [API](https://api.ovh.com/):
+In qualsiasi momento è inoltre possibile creare Snapshot manuali, conservarli senza limite di durata o eliminarli. Questa funzionalità è disponibile nello [Spazio Cliente OVHcloud](/links/manager) o tramite [API](/links/api):
 
 > [!api]
 >
@@ -158,50 +209,71 @@ In qualsiasi momento è inoltre possibile creare Snapshot manuali, conservarli s
 > Consulta la nostra guida Iniziare a [utilizzare le API OVHcloud](/pages/manage_and_operate/api/first-steps) per familiarizzare con l'utilizzo delle API OVHcloud.
 >
 
-### Come funziona il sistema di gestione degli Snapshot?
+///
+
+/// details | Come funziona il sistema di gestione degli Snapshot?
 
 È possibile configurare Snapshot automatici con una delle diverse frequenze disponibili. Indipendentemente dalla frequenza impostata, l’ultimo Snapshot eseguito sostituirà il precedente. È inoltre possibile creare e rimuovere Snapshot on demand.
 
-### È possibile eliminare uno Snapshot?
+///
+
+/// details | È possibile eliminare uno Snapshot?
 
 Solo gli Snapshot creati "on demand" possono essere eliminati (vedi domanda precedente "[Qual è la frequenza degli snapshot?](#frequency)").<br>
 Gli Snapshot con frequenza fissa vengono eliminati automaticamente e non prevedono la possibilità di eseguire l’operazione manualmente.
 
-### Gli Snapshot sono inclusi nella capacità di un servizio?
+///
+
+/// details | Gli Snapshot sono inclusi nella capacità di un servizio?
 
 Per assicurare lo storage dei tuoi Snapshot, hai a disposizione uno spazio aggiuntivo sullo stesso supporto fisico. Questo spazio corrisponde ad almeno il 15 % del volume principale. In caso di superamento del limite, gli Snapshot saranno salvati sul tuo spazio di archiviazione principale. Lo spazio aggiuntivo non può essere utilizzato per scopi diversi dallo storage dei tuoi Snapshot.
 
 Ad esempio, per un servizio da 3 TB, 450 GB aggiuntivi sono riservati agli Snapshot.
 
-### Qual è il numero massimo di Snapshot eseguibili?
+///
+
+/// details | Qual è il numero massimo di Snapshot eseguibili?
 
 - Snapshot automatici: uno per partizione
 - Snapshot manuali: dieci per partizione
 
-### Dove sono salvati gli Snapshot?
+///
 
-Gli Snapshot sono salvati allo stesso livello del tuo servizio. Gli Snapshot vengono replicati su due server distinti in due rack diversi. OVHcloud esegue uno Snapshot giornaliero su un sito remoto.
+/// details | Dove sono salvati gli Snapshot?
 
-### Dove è possibile recuperare gli Snapshot?
+Gli Snapshot sono salvati allo stesso livello del tuo servizio.
+In aggiunta, OVHcloud effettua uno Snapshot giornaliero (con una retention di 24 ore) su un server di backup situato in un rack distinto.
+
+///
+
+/// details | Dove è possibile recuperare gli Snapshot?
 
 Nella partizione interessata, troverai una directory nascosta chiamata `.zfs` che contiene una directory `snapshot`. I file sono disponibili in read only.
 
-### Quante politiche di Snapshot puoi creare per volume?
+///
+
+/// details | Quante politiche di Snapshot puoi creare per volume?
 
 1
 
+///
+
 ## Tariffe
 
-### Che tipo di tariffazione è associata al servizio?
+/// details | Che tipo di tariffazione è associata al servizio?
 
 NAS-HA è un servizio fatturato mensilmente al volume (da 3 a 144 TB per incrementi).
 
-### Qual è la durata di sottoscrizione di un NAS-HA?
+///
+
+/// details | Qual è la durata di sottoscrizione di un NAS-HA?
 
 I periodi proposti sono di 1, 12, 24 e 36 mesi. Alla fine del periodo contrattuale sottoscritto, l'abbonamento viene rinnovato automaticamente se non è stata presentata alcuna [richiesta di rescissione](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services). e può essere effettuata per tutta la durata dell'abbonamento tramite lo Spazio Cliente OVHcloud.
 
+///
+
 ## Per saperne di più
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

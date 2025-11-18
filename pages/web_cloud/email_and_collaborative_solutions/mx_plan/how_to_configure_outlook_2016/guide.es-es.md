@@ -13,6 +13,11 @@ updated: 2024-10-01
 }
 </style>
 
+> [!success]
+> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
+> No dude en compartir su opinión y sus ideas con nosotros.<br>
+> [Ir a la encuesta.](https://s.elq.fr/ovhext/RULMVWH)
+
 
 ## Objetivo
 

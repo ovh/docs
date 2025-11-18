@@ -6,34 +6,34 @@ updated: 2025-05-22
 
 ## Objetivo
 
-A nossa oferta de alojamento [Cloud Web](/links/web/hosting-cloud-web-offer){.external} combina os nossos 20 anos de experiência no alojamento web e a robustez da nossa Public Cloud. Como nos alojamentos web clássicos, os seus sites são alojados num serviço gerido 24 horas por dia, mas com muitas mais funcionalidades, como o elevado desempenho dos nossos discos SSD.
+A nossa oferta de alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) combina os nossos 20 anos de experiência no alojamento web e a robustez da nossa Public Cloud. Como nos alojamentos web clássicos, os seus sites são alojados num serviço gerido 24 horas por dia, mas com muitas mais funcionalidades, como o elevado desempenho dos nossos discos SSD.
 
 **Saiba como começar num plano de alojamento Cloud Web.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento Cloud Web](/links/web/hosting-cloud-web-offer){.external}.
+- Ter um serviço de [alojamento Cloud Web](/links/web/hosting-cloud-web-offer).
 - Ter recebido o e-mail com a confirmação da instalação do alojamento Cloud Web.
-- Ter um [domínio](/links/web/domains){.external} (endereço que permite identificar e aceder ao seu site).
+- Ter um [domínio](/links/web/domains) (endereço que permite identificar e aceder ao seu site).
 - Aceder à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### 1 - Tipo de Projeto: Criar ou Transferir um Site.
 
-De modo a adequar-se ao máximo ao seu projeto, o alojamento [Cloud Web](/links/web/hosting-cloud-web-offer){.external} oferece mais possibilidades de configuração do que um alojamento web clássico. É importante que tenha uma visão clara do seu objetivo, de forma a levá-lo a cabo o melhor possível. Para isso, aconselhamos o seguinte:
+De modo a adequar-se ao máximo ao seu projeto, o alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) oferece mais possibilidades de configuração do que um alojamento web clássico. É importante que tenha uma visão clara do seu objetivo, de forma a levá-lo a cabo o melhor possível. Para isso, aconselhamos o seguinte:
 
 - **definir o que deseja instalar**: Pretende partilhar um hobby ou promover uma atividade profissional? Criar um blogue ou uma loja online? Defina claramente o seu projeto antes de começar;
 
 - **reunir os pré-requisitos técnicos necessários à instalação**: é possível que o projeto que deseja instalar exija pré-requisitos técnicos particulares. Certifique-se de os conhecer previamente;
 
-- **certificar-se da compatibilidade técnica do seu projeto com o alojamento Cloud Web**\: precisa de um motor de execução ou de um SQL em particular?  Se ainda não o fez, assegure-se de que este último se encontra disponível com o seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer){.external}.
+- **certificar-se da compatibilidade técnica do seu projeto com o alojamento Cloud Web**\: precisa de um motor de execução ou de um SQL em particular?  Se ainda não o fez, assegure-se de que este último se encontra disponível com o seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer).
 
 Depois de ter avaliado as diferentes possibilidades ao seu dispor e de ter delimitado o seu projeto com precisão, já pode começar a pô-lo online.
 
 ### 2 - Escolher o motor de execução
 
-A [Cloud Web](/links/web/hosting-cloud-web-offer){.external} disponibiliza-lhe múltiplas linguagens de desenvolvimento para construir o seu projeto. Se deseja utilizar outra linguagem que não PHP, que é a escolha padrão, deverá selecionar um «motor de execução» que corresponda à sua linguagem.
+A [Cloud Web](/links/web/hosting-cloud-web-offer) disponibiliza-lhe múltiplas linguagens de desenvolvimento para construir o seu projeto. Se deseja utilizar outra linguagem que não PHP, que é a escolha padrão, deverá selecionar um «motor de execução» que corresponda à sua linguagem.
 
 As linguagens atualmente disponíveis são:
 
@@ -56,7 +56,7 @@ Assim, antes de prosseguir, certifique-se de que dispõe do ou dos motores de ex
 
 ### 3 - Criar variáveis de ambiente (facultativo)
 
-Quando deseja implementar várias vezes o seu projeto em ambientes diferentes (por exemplo: desenvolvimento, teste ou produção), deverá fornecer variáveis de modo que o código reaja em conformidade. Para isso, a [Cloud Web](/links/web/hosting-cloud-web-offer){.external} possibilita a definição de variáveis de ambiente acessíveis pelo código do seu site ou da sua aplicação web.
+Quando deseja implementar várias vezes o seu projeto em ambientes diferentes (por exemplo: desenvolvimento, teste ou produção), deverá fornecer variáveis de modo que o código reaja em conformidade. Para isso, a [Cloud Web](/links/web/hosting-cloud-web-offer) possibilita a definição de variáveis de ambiente acessíveis pelo código do seu site ou da sua aplicação web.
 
 Por exemplo, desta forma pode deixar de fora um ficheiro «.env» no framework PHP Laravel, como indica a documentação do framework: <https://laravel.com/docs/5.6/configuration>.
 
@@ -90,7 +90,7 @@ Tenha o cuidado de substituir a informação genérica presentes nestes scripts 
 
 ### 4 - Configurar domínios adicionais enquanto Multisite (facultativo)
 
-Agora que o ambiente técnico do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer){.external} está pronto, pode configurar domínios adicionais enquanto Multisite. Isto permite-lhe partilhar o seu espaço, de forma a alojar nele vários sites, por exemplo. Se isto se adequa ao seu projeto, e ainda posicionado no alojamento Cloud Web em causa, clique no separador `Multisite`{.action}.
+Agora que o ambiente técnico do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) está pronto, pode configurar domínios adicionais enquanto Multisite. Isto permite-lhe partilhar o seu espaço, de forma a alojar nele vários sites, por exemplo. Se isto se adequa ao seu projeto, e ainda posicionado no alojamento Cloud Web em causa, clique no separador `Multisite`{.action}.
 
 O quadro que vai aparecer contém os domínios adicionados ao seu alojamento. Alguns de entre eles foram criados automaticamente durante a instalação do alojamento. Para adicionar um novo, clique no botão `Adicionar um domínio ou subdomínio`{.action} e siga as instruções que surgirem. A manipulação pode ser diferente se o domínio em causa estiver registado junto da OVHcloud ou não. 
 
@@ -105,7 +105,7 @@ Por isso, sugerimos que tenha muita atenção durante a introdução das informa
 > Se adicionou um domínio considerado externo, deverá parametrizar um campo TXT chamado **ovhcontrol** na sua configuração DNS. Ele permitirá que a OVHcloud confirme que a operação é legítima. Portanto, é um passo indispensável e, se não for realizado, a operação será anulada. 
 >
 
-Repita esta manipulação se deseja adicionar vários domínios ao seu alojamento Cloud Web. Para obter mais informação acerca da adição de um domínio enquanto Multisite, consulte o guia: [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
+Repita esta manipulação se deseja adicionar vários domínios ao seu alojamento Cloud Web. Para obter mais informação acerca da adição de um domínio enquanto Multisite, consulte o guia: [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-domain-or-subdomain.png){.thumbnail}
 
@@ -115,11 +115,11 @@ Tem ao dispor duas formas de efetuar a instalação do seu projeto. Repita o pro
 
 #### 1. Utilizar os nossos módulos em 1 clique
 
-Esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar ainda por personalizar (tema, textos, etc.). A OVHcloud disponibiliza quatro com os módulos em 1 clique, a descobrir na página [Criar um site com os módulos em 1 clique](/links/web/hosting-website){.external}.
+Esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar ainda por personalizar (tema, textos, etc.). A OVHcloud disponibiliza quatro com os módulos em 1 clique, a descobrir na página [Criar um site com os módulos em 1 clique](/links/web/hosting-website).
 
-Se optar pela utilização dos nossos módulos em 1 clique, e ainda posicionado no alojamento [Cloud Web](/links/web/hosting-cloud-web-offer){.external} em causa, clique no separador `Módulos em 1 clique`{.action} e, a seguir, em `Adicionar um módulo`{.action}. Então, poderá iniciar uma instalação em modo «simples» (não personalizável) ou em modo «avançado» (com a possibilidade de personalizar certos elementos).
+Se optar pela utilização dos nossos módulos em 1 clique, e ainda posicionado no alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) em causa, clique no separador `Módulos em 1 clique`{.action} e, a seguir, em `Adicionar um módulo`{.action}. Então, poderá iniciar uma instalação em modo «simples» (não personalizável) ou em modo «avançado» (com a possibilidade de personalizar certos elementos).
 
-Para mais informações sobre os módulos, consulte o guia: [Instalar um site com os módulos em 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
+Para mais informações sobre os módulos, consulte o guia: [Instalar um site com os módulos em 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 > [!primary]
 >
@@ -134,13 +134,13 @@ Quer se trate de um novo site ou da migração de um site já existente, a insta
 
 Se optou pela instalação manual, deverá ter na sua posse o conjunto dos ficheiros do site ou da aplicação que deseja instalar, assim como (se for necessário para o seu bom funcionamento) as informações de uma base de dados criada previamente no seu alojamento Cloud Web. No quadro da migração de um site, assegure-se de ter uma cópia integral deste último.
 
-Como os projetos podem variar muito entre si, não existe um processo universal a seguir, mas os nossos guias [Colocar o meu website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} e [Como migrar um site e e-mails para a OVHcloud?](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} podem ajudá-lo quanto às operações a realizar.
+Como os projetos podem variar muito entre si, não existe um processo universal a seguir, mas os nossos guias [Colocar o meu website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) e [Como migrar um site e e-mails para a OVHcloud?](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) podem ajudá-lo quanto às operações a realizar.
 
 ### 6 - Alterar a configuração do domínio
 
 Por esta altura, o seu site está alojado nos serviços da OVHcloud e os endereços de e-mail estão criados. Se estes últimos ainda não estiverem operacionais, é possível que a configuração do domínio não esteja correta. Se for esse o caso, ou se não tiver a certeza, siga as instruções abaixo.
 
-Contudo, repare que, se está a migrar os seus serviços para a OVHcloud, as manipulações ligadas aos DNS podem provocar uma indisponibilidade dos serviços se elas não foram efetuadas num momento adequado. Como tal, deverá seguir as instruções indicadas no guia [Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, e modificar os servidores DNS do seu domínio no final do processo.
+Contudo, repare que, se está a migrar os seus serviços para a OVHcloud, as manipulações ligadas aos DNS podem provocar uma indisponibilidade dos serviços se elas não foram efetuadas num momento adequado. Como tal, deverá seguir as instruções indicadas no guia [Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), e modificar os servidores DNS do seu domínio no final do processo.
 
 #### 6.1. Consultar registos DNS do alojamento OVHcloud 
 
@@ -153,7 +153,7 @@ Há vários registos DNS inerentes à OVHcloud. Vamos referir-nos a dois deles e
 
 #### 6.2. Verificar e/ou alterar os registos DNS
 
-Agora que conhece os registos DNS inerentes ao seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer){.external} e ao seu serviço de e-mail OVHcloud, deve verificar se estes últimos estão bem configurados e fazer alterações se necessário. É imperativo que estas duas manipulações sejam feitas junto do prestatário que gere a configuração DNS (a zona DNS) do seu domínio.
+Agora que conhece os registos DNS inerentes ao seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) e ao seu serviço de e-mail OVHcloud, deve verificar se estes últimos estão bem configurados e fazer alterações se necessário. É imperativo que estas duas manipulações sejam feitas junto do prestatário que gere a configuração DNS (a zona DNS) do seu domínio.
 
 > [!warning]
 >
@@ -181,21 +181,21 @@ Caso precise de ajuda relativamente às funcionalidades do seu site, pedimos-lhe
 
 Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de webmail incluído na oferta de alojamento OVHcloud. Para isso, a OVHcloud disponibiliza uma aplicação online (webmail): RoundCube. Aceda a <https://www.ovh.pt/mail/> e preencha os dados associados ao endereço de e-mail criado através do sistema OVHcloud.
 
-Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external} Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
+Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube) Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
 
 ## Quer saber mais?
 
-[Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} (Versão PT disponível em breve)
+[Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) (Versão PT disponível em breve)
 
-[Colocar o meu site online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Colocar o meu site online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Instalar um CMS com os Módulos 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Instalar um CMS com os Módulos 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-[Como criar um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+[Como criar um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)
 
-[Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
+[Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 

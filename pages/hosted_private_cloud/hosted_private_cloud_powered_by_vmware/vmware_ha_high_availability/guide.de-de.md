@@ -15,7 +15,7 @@ Die Hauptfunktion von **VMware HA** (High Availability) ist, virtuelle Maschinen
 ## Voraussetzungen
 
 - Sie sind auf Ihrem [vSphere Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) eingeloggt.
-- Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Produkt.
+- Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Produkt.
 
 ## Beschreibung
 

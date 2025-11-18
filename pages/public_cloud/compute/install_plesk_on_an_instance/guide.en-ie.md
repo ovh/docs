@@ -67,13 +67,13 @@ To add your Plesk licence, take the key that was sent to you by your service pro
 
 > [!primary]
 >
-> We do not sell Plesk licences for our Public Cloud solutions. However, you can order one from the [Plesk](https://www.plesk.com/){.external} website.
+> We do not sell Plesk licences for our Public Cloud solutions. However, you can order one from the [Plesk](https://www.plesk.com/) website.
 >
 
 Want to change your licence, to replace a test key or change your solution, for example? From the Plesk interface, go to the section `Tools & Settings`{.action}. Then go to the **Plesk** section, and select `License information`{.action}.
 
 ## Go further
 
-[Official Plesk documentation](https://docs.plesk.com/en-US/obsidian/){.external}.
+[Official Plesk documentation](https://docs.plesk.com/en-US/obsidian/).
 
 Join our [community of users](/links/community).

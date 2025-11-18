@@ -14,7 +14,7 @@ Von OVHcloud verwaltete Datenbanken (*Managed Databases*) verwenden verschiedene
 Sie verfügen über einen der folgenden Dienste:
 
 - Eine in einem [Webhosting](/links/web/hosting) enthaltene Datenbank.
-- Eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (auch in einem [Performance Webhosting](/links/web/hosting) enthalten).
+- Eine [Web Cloud Databases Instanz](/links/web/databases) (auch in einem [Performance Webhosting](/links/web/hosting) enthalten).
 - Ein [Start SQL Datenbank-Paket](/links/web/hosting-options-startsql).
 
 ## In der praktischen Anwendung

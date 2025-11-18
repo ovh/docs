@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
+> No dude en compartir su opinión y sus ideas con nosotros.<br>
+> [Ir a la encuesta.](https://s.elq.fr/ovhext/QBbCw6r)
+
 ## Objetivo
 
 OVHcloud pone a su disposición herramientas para reforzar la seguridad de su cuenta y de sus servicios.
@@ -136,7 +141,7 @@ Una vez añadido el primer método, también puede **añadir uno o dos métodos 
 
 Al añadir la doble autenticación por primera vez, se mostrarán 10 códigos de seguridad **de un solo uso** en el área de cliente.
 
-**Guárdelos cuidadosamente**. Le recomendamos que los guarde en un gestor de contraseñas, como [KeePass](https://keepass.info/){.external} o [Bitwarden](https://bitwarden.com/) (estas dos aplicaciones son gratuitas).
+**Guárdelos cuidadosamente**. Le recomendamos que los guarde en un gestor de contraseñas, como [KeePass](https://keepass.info/) o [Bitwarden](https://bitwarden.com/) (estas dos aplicaciones son gratuitas).
 
 ![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
@@ -152,7 +157,7 @@ Puede regenerar o eliminar los códigos de seguridad desde su área de cliente:
 
 ### Etapa 3 - Conectarse al área de cliente de OVHcloud con la doble autenticación <a name="login-2fa"></a>
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external} e introduzca su identificador (o dirección de correo electrónico principal) y contraseña.
+Conéctese al [área de cliente de OVHcloud](/links/manager) e introduzca su identificador (o dirección de correo electrónico principal) y contraseña.
 
 La pantalla de identificación muestra el último método de doble autenticación utilizado o introducido. Si desea utilizar otro método, haga clic en el botón `Probar con otro método`{.action}.
 
@@ -204,7 +209,7 @@ A continuación, haga clic en `Seguridad`{.action}, luego en los `...`{.action} 
 Recibirá el último código de verificación en el dispositivo que quiera eliminar. Introduzca este código en la ventana que se abre y haga clic en `Validar`{.action} para completar la eliminación.
 
 Si ya no tiene acceso al dispositivo que desea eliminar, no podrá eliminarlo usted mismo del área de cliente de OVHcloud.
-En este caso, **póngase en contacto directamente con el equipo de soporte técnico de OVHcloud [creando un tíquet desde el Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) o siguiendo el proceso descrito [a continuación](#2FA-deletion).
+En este caso, **póngase en contacto directamente** con el equipo de soporte técnico de OVHcloud [creando un tíquet desde el Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) o siguiendo el proceso descrito [a continuación](#2FA-deletion).
 
 > [!warning]
 >

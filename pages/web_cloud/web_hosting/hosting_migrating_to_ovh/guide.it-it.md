@@ -1,7 +1,7 @@
 ---
 title: "Migrare un sito Web e i servizi associati a OVHcloud"
 excerpt: "Scopri come migrare il tuo sito Web, il tuo dominio, il tuo database e le tue email in OVHcloud senza interruzione di servizi"
-updated: 2025-01-08
+updated: 2025-10-28
 ---
 
 ## Obiettivo
@@ -134,7 +134,7 @@ Sostituisci le informazioni di connessione del tuo database precedente con quell
 > Per collegare il tuo nuovo database se utilizzi un Content Management System (CMS) come WordPress, Joomla!, Drupal o PrestaShop, consulta le informazioni sui file di configurazione nello **Step 2** della guida ["Modificare la password di un database"](/pages/web_cloud/web_hosting/sql_change_password).
 >
 
-Dichiarare/autorizzare un dominio esterno su un hosting Web OVHcloud tramite la nostra guida ["Gestione dei multisiti di un hosting Web OVHcloud"](/pages/web_cloud/web_hosting/multisites_configure_multisite). Dichiarare correttamente il "nome" della cartella di root scelta all'inizio dello [step 4](#step4). Ti ricordiamo che questa è la cartella in cui hai inserito i tuoi file nel tuo spazio di storage FTP.
+Dichiarate/autorizzate il vostro nome di dominio esterno sull'ospedaggio web OVHcloud tramite la nostra guida "[gestione dei siti web di un ospedaggio web OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Dichiarare correttamente il "nome" della cartella di root scelta all'inizio dello [step 4](#step4). Ti ricordiamo che questa è la cartella in cui hai inserito i tuoi file nel tuo spazio di storage FTP.
 
 > [!warning]
 >
@@ -188,7 +188,7 @@ Dopo la propagazione DNS, tutte le nuove email vengono ricevute sui nuovi indiri
 
 Per migrare il contenuto dei vecchi indirizzi email, hai due opzioni.
 
-**Opzione 1**: utilizza il nostro tool [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} che permette di copiare il contenuto degli indirizzi email registrati presso il tuo precedente provider a quelli creati presso OVHcloud. Per maggiori informazioni, consulta la guida [Migrare account email via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+**Opzione 1**: utilizza il nostro tool [OVH Mail Migrator (OMM)](https://omm.ovh.net/) che permette di copiare il contenuto degli indirizzi email registrati presso il tuo precedente provider a quelli creati presso OVHcloud. Per maggiori informazioni, consulta la guida [Migrare account email via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 Ti consigliamo di non utilizzare `Tipo di server`{.action} **POP** nella sezione `Account sorgente`{.action}. Questo protocollo cancella le email del tuo vecchio server per inviarle verso il server OVHcloud di destinazione. In questo modo non è più possibile confrontare il contenuto del vecchio e del nuovo indirizzo email.
 

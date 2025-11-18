@@ -15,9 +15,9 @@ Rozszerzenie Intel SGX zapewnia zaawansowane funkcje szyfrowania sprzętowego or
 
 ## Wymagania początkowe
 
-- Dedykowany serwer kompatybilny z opcją [SGX](https://www.ovhcloud.com/pl/bare-metal/intel-software-guard-extensions/){.external}
+- Dedykowany serwer kompatybilny z opcją [SGX](https://www.ovhcloud.com/pl/bare-metal/intel-software-guard-extensions/)
 - Posiadanie danych do logowania otrzymanych w e-mailu po zakończonej instalacji
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [API OVHcloud](https://api.ovh.com/)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [API OVHcloud](/links/api)
 - Zainstalowana na serwerze dystrybucja Ubuntu 18.04 lub podobna
 
 ## W praktyce
@@ -211,9 +211,9 @@ Hit a key....
 
 Oto kilka zasobów przydatnych do dalszych działań (utworzenia własnej aplikacji, rejestracji w usłudze zdalnego zaświadczania itd.):
 
-- [Rozwiązanie Intel SGX](https://www.intel.pl/content/www/pl/pl/architecture-and-technology/software-guard-extensions.html){.external}
-- [Usługi Intel SGX Attestation](https://software.intel.com/en-us/sgx/attestation-services){.external}
-- [Dokumentacja Intel SGX linux-2.6](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
-- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
-- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
-- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
+- [Rozwiązanie Intel SGX](https://www.intel.pl/content/www/pl/pl/architecture-and-technology/software-guard-extensions.html)
+- [Usługi Intel SGX Attestation](https://software.intel.com/en-us/sgx/attestation-services)
+- [Dokumentacja Intel SGX linux-2.6](https://download.01.org/intel-sgx/linux-2.6/docs/)
+- [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+- [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver)
+- [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample)

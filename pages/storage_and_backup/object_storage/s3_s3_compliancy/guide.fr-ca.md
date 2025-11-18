@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité
 excerpt: "Découvrez nos fonctionnalités Object Storage compatibles avec S3*"
-updated: 2025-05-30
+updated: 2025-06-27
 ---
 
 <style>
@@ -481,7 +481,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités supportées par Objec
         <td>no</td>
     </tr>
     <tr>
-        <td rowspan="6">Web content</td>
+        <td rowspan="8">Web content</td>
         <td rowspan="3">Static web site</td>
         <td>put bucket website</td>
         <td>yes</td>
@@ -498,7 +498,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités supportées par Objec
         <td>yes</td>
     </tr>
     <tr>
-        <td rowspan="3">Pre-signed urls</td>
+        <td rowspan="4">Presigned urls</td>
         <td>GET</td>
         <td>yes</td>
         <td>yes</td>
@@ -509,6 +509,17 @@ Ce guide a pour objectif d'énumérer les fonctionnalités supportées par Objec
         <td>yes</td>
     </tr>
     <tr>
+        <td>HEAD</td>
+        <td>yes</td>
+        <td>yes</td>
+    </tr>
+    <tr>
+        <td>DELETE</td>
+        <td>yes</td>
+        <td>yes</td>
+    </tr>
+    <tr>
+        <td>Browser-based uploads</td>
         <td>POST</td>
         <td>no</td>
         <td>yes</td>

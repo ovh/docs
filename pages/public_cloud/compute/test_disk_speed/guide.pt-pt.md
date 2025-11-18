@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > É necessário adaptar o argumento --numjobs em função do número de CPUs que a sua instância dispõe.
 >
-> Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analisar os dados
@@ -144,7 +144,7 @@ Podemos ver que o desempenho do disco suplementar é de cerca de 3052 IOPS.
 
 O comando de que precisa para verificar a velocidade do seu disco chama-se `fio`. Por predefinição, não está presente no seu servidor.
 
-Para instalar `fio`, ligue-se à sua instância através de RDP e descarregue este binário: [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
+Para instalar `fio`, ligue-se à sua instância através de RDP e descarregue este binário: [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
 
 ### Testar a velocidade do seu disco
 
@@ -158,7 +158,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > É necessário adaptar o argumento --numjobs em função do número de CPUs que a sua instância dispõe.
 >
-> Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> Além disso, é possível encontrar a lista dos argumentos e as suas funções diretamente no [manual do fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analisar os dados

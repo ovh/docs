@@ -16,7 +16,7 @@ updated: 2024-02-27
 >
 
 Im [OVHcloud Kundencenter](/links/manager) kann der Boot-Modus nur aus einer vorgegebenen Liste ausgewählt werden: Primäre Disk oder Rescue.
-Über die [OVHcloud API](https://api.ovh.com/) können Sie auch personalisierte Skripte definieren.
+Über die [OVHcloud API](/links/api) können Sie auch personalisierte Skripte definieren.
 
 Personalisierte Skripte können in folgenden Fällen interessant sein:
 
@@ -26,7 +26,7 @@ Personalisierte Skripte können in folgenden Fällen interessant sein:
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account, der zum **Boot oder Reboot** bereit ist.
-- Sie haben Zugriff auf die [OVHcloud API](https://api.ovh.com/).
+- Sie haben Zugriff auf die [OVHcloud API](/links/api).
 
 > [!warning]
 >
@@ -79,13 +79,14 @@ Zum Beispiel:
     "serverId": 123456,
     "powerState": "poweron",
     "monitoring": false
+}
 ```
 
 Sie können nun Ihren Server neu starten; er wird unter Verwendung des neuen [iPXE Skripts](https://ipxe.org/) booten.
 
 ### Boot-Modus ändern <a name="leaveIpxeScript"></a>
 
-Sie können nun im [OVHcloud Kundencenter](/links/manager) oder über die [OVHcloud API](https://api.ovh.com/) auf Disk- oder [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) umstellen.
+Sie können nun im [OVHcloud Kundencenter](/links/manager) oder über die [OVHcloud API](/links/api) auf Disk- oder [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) umstellen.
 
 #### Zum Disk-Modus wechseln <a name="switchToDisk"></a>
 

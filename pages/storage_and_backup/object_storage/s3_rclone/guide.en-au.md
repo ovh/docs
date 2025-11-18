@@ -6,7 +6,7 @@ updated: 2024-12-19
 
 ## Objective
 
-[Rclone](https://rclone.org/){.external} is a backup tool that can sync to and from various storage backends, and can be used on Windows, macOS and Linux. A detailed documentation is also available on the official Rclone website: [Rclone Official Documentation](https://rclone.org/docs/){.external}.
+[Rclone](https://rclone.org/) is a backup tool that can sync to and from various storage backends, and can be used on Windows, macOS and Linux. A detailed documentation is also available on the official Rclone website: [Rclone Official Documentation](https://rclone.org/docs/).
 
 **This guide explains how to set up Rclone to synchronize your files to and from Object Storage.**
 
@@ -87,7 +87,7 @@ Download a file `file.txt` from a bucket:
 $ rclone copy <remote_name>:mybucket/file.txt fichier.txt
 ```
 
-You will find on the official Rclone website a detailed documentation of the possible actions: [Official Rclone documentation](https://rclone.org/docs/){.external}.
+You will find on the official Rclone website a detailed documentation of the possible actions: [Official Rclone documentation](https://rclone.org/docs/).
 
 ## Go further
 

@@ -13,7 +13,7 @@ Si vous constatez un défaut de disque ou que notre système vous a envoyé une 
 > [!warning]
 > OVHcloud fournit des services dont la configuration et la gestion relèvent de votre responsabilité. Il est donc de votre responsabilité de vous assurer de leur bon fonctionnement.
 >
-> Ce guide est conçu pour vous aider avec les tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) ou de contacter la [communauté OVHcloud](/links/community) si vous rencontrez des difficultés. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
+> Ce guide est conçu pour vous aider avec les tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) ou de contacter la [communauté OVHcloud](/links/community) si vous rencontrez des difficultés. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis

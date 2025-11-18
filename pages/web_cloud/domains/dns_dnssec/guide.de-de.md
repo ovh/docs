@@ -21,7 +21,7 @@ Die **D**omain **N**ame **S**ystem **SEC**urity Extensions (**DNSSEC**) ermögli
 > Die DNSSEC-Option steht derzeit für bei OVHcloud registrierte Domainnamen mit der Endung **.it** nicht zur Verfügung.
 >
 
-Weitere Informationen zur Funktionsweise von **DNSSEC** finden Sie auf unserer Seite "[DNSSEC verstehen](/links/web/domains-dnssec){.external}".
+Weitere Informationen zur Funktionsweise von **DNSSEC** finden Sie auf unserer Seite "[DNSSEC verstehen](/links/web/domains-dnssec)".
 
 Lesen Sie dazu auch unsere Anleitungen zu [OVHcloud DNS-Servern](/pages/web_cloud/domains/dns_server_general_information) und zur [Bearbeitung von OVHcloud DNS-Zonen](/pages/web_cloud/domains/dns_zone_edit).
 

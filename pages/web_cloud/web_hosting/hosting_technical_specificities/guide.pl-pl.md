@@ -12,8 +12,8 @@ Pakiety hostingowe OVHcloud są współdzielone. W związku z tym konfiguracja t
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu WWW](/links/web/hosting){.external}
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie kompatybilnego [hostingu WWW](/links/web/hosting)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -170,7 +170,7 @@ Dowiedz się, jak [zalogować się do przestrzeni dyskowej FTP Twojego hostingu]
 > OVHcloud dostarcza usługę automatycznego tworzenia kopii zapasowych danych oraz udostępnienia tych kopii. Pozostaje jednak *poza umową* i jest obecny jako uzupełnienie Twoich usług. Twoim obowiązkiem jest wdrożenie własnej polityki gastronomicznej i wskazanie punktów przywracania usług w chwilach, które uznasz za stosowne.
 >
 
-W przypadku baz danych współdzielonych (zawartych w Twojej ofercie hostingu WWW) lub serwerów baz danych (Web Cloud Databases), oferowanych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie, tworzenie kopii zapasowych baz jest wykonywane codziennie. Kopie zapasowe są dostępne (w [Panelu klienta OVHcloud](/links/manager){.external} lub [API OVHcloud](https://api.ovh.com/)). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane są kopiowane w centrum danych zlokalizowanym w Strasburgu (SBG). Czas przechowywania kopii zapasowych to 30 dni.
+W przypadku baz danych współdzielonych (zawartych w Twojej ofercie hostingu WWW) lub serwerów baz danych (Web Cloud Databases), oferowanych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie, tworzenie kopii zapasowych baz jest wykonywane codziennie. Kopie zapasowe są dostępne (w [Panelu klienta OVHcloud](/links/manager) lub [API OVHcloud](/links/api)). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane są kopiowane w centrum danych zlokalizowanym w Strasburgu (SBG). Czas przechowywania kopii zapasowych to 30 dni.
 
 Dowiedz się, jak [Pobrać kopię zapasową bazy danych hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export) znaleźć w naszej dokumentacji.
 

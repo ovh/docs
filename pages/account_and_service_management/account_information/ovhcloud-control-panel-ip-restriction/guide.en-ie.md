@@ -35,7 +35,7 @@ There are two types of IP addresses:
 
 To use the IP restriction option in the OVHcloud Control Panel, you will need to enter your public IP address(es) **only**.
 
-To retrieve the public IP address of a device that will be authorised to access your OVHcloud Control Panel, go to [whatismyip.com](https://www.whatismyip.com/){.external} (not managed by OVHcloud).
+To retrieve the public IP address of a device that will be authorised to access your OVHcloud Control Panel, go to [whatismyip.com](https://www.whatismyip.com/) (not managed by OVHcloud).
 
 Take note of the IP address that appears, then repeat the operation for each device that will be authorised to access your OVHcloud Control Panel.
 

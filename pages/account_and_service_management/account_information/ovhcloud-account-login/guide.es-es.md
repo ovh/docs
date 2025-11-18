@@ -4,6 +4,11 @@ excerpt: 'Cómo autenticarse en su cuenta de OVHcloud'
 updated: 2025-04-28
 ---
 
+> [!success]
+> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
+> No dude en compartir su opinión y sus ideas con nosotros.<br>
+> [Ir a la encuesta.](https://s.elq.fr/ovhext/OiIwy54)
+
 ## Objetivo
 
 La gestión de sus servicios se realiza principalmente desde el área de cliente de OVHcloud.
@@ -70,7 +75,7 @@ Una vez realizada esta operación, deberá [introducir una **nueva** dirección 
 
 En ese caso, el soporte telefónico de OVHcloud no podrá ayudarle.
 
-Debe seguir este [procedimiento](https://www.ovh.es/cgi-bin/es/procedure/procedureChangeEmail.cgi){.external} a enviarnos por correo para que se verifique su identidad.
+Debe seguir este [procedimiento](https://www.ovh.es/cgi-bin/es/procedure/procedureChangeEmail.cgi) a enviarnos por correo para que se verifique su identidad.
 <br>Una vez recibido el correo por nuestros servicios, procederemos a la sustitución de su dirección e-mail de contacto si todos los justificantes son conformes.
 
 <br>Este procedimiento puede tardar varios días en completarse, teniendo en cuenta los plazos de envío del correo y el tratamiento que nos prestan nuestros servicios.

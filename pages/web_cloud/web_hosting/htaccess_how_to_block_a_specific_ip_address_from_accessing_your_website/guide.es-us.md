@@ -50,8 +50,8 @@ En caso de error, puede conectarse a [el espacio FTP](/pages/web_cloud/web_hosti
 >
 > Para más información sobre la nueva sintaxis, puede consultar las siguientes páginas oficiales:
 >
-> - [Documentación sobre el control de acceso Apache 2.4](https://httpd.apache.org/docs/2.4/en/howto/access.html) {.external}
-> - [Documentación sobre el módulo mod_authz_core Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html) {.external}
+> - [Documentación sobre el control de acceso Apache 2.4](https://httpd.apache.org/docs/2.4/en/howto/access.html) 
+> - [Documentación sobre el módulo mod_authz_core Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html) 
 >
 
 #### Bloquear una IP
@@ -185,7 +185,7 @@ Para bloquear un dominio, introduzca uno de los dos códigos siguientes en el ar
 >
 > Los bloqueos a través del ".htaccess" se realizan a través de los "Country Codes" de dos letras (Norma ISO 3166-1 alpha2) de los países.
 >
-> Varios sitios web enumeran los países y sus respectivos "Country Codes", de los que [https://www.iban.com/country-codes](https://www.iban.com/country-codes) {.external} (independiente de OVHcloud).
+> Varios sitios web enumeran los países y sus respectivos "Country Codes", de los que [https://www.iban.com/country-codes](https://www.iban.com/country-codes)  (independiente de OVHcloud).
 >
 
 Para bloquear todas las IP de un país, introduzca uno de los siguientes códigos en su archivo ".htaccess":

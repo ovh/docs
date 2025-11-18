@@ -1,89 +1,88 @@
 ---
-title: Gestion du service de Répartiteur de charge via l'espace client
-excerpt: Résumé des principales fonctionnalités et prise en main du service de Répartiteur de charge via l'espace client
-updated: 2017-12-01
+title: "Gestion du service OVHcloud Load Balancer via l'espace client"
+excerpt: "Résumé des principales fonctionnalités et prise en main du service Load Balancer via l'espace client OVHcloud"
+updated: 2025-07-30
 ---
 
 ## Objectif
 
-Ce guide a pour but de vous aider lors de la première prise en main de votre Répartiteur de charge en vous présentant les fonctionnalités principales de l'offre.
+Ce guide a pour but de vous aider lors de la première prise en main de votre Load Balancer en vous présentant les fonctionnalités principales de l'offre.
 
 ## Prérequis
 
-- Avoir accès à votre espace client
-- Avoir commandé un [Répartiteur de charge](https://www.ovh.com/ca/fr/solutions/load-balancer/)
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-### Gérer son Répartiteur de charge via l'espace client
+### Gérer son Load Balancer via l'espace client
 
 Pour gérer votre Load Balancer via l'espace client, rendez-vous dans la partie `Bare metal Cloud`{.action} puis cliquez sur `Network`{.action} et `Load Balancer`{.action}. Sélectionnez votre service.
 
 ![Load Balancer](images/lbip-main.png){.thumbnail}
 
-Sur cette page principale, vous trouverez les informations suivantes:
+Sur la page de résumé de votre service Load Balancer, vous trouverez les menus suivants :
+
+|Menu|Détails|
+|---|---|
+|Statut|Résumé de votre Load Balancer avec le nom du service, les frontends, les fermes fonctionnelles et les serveurs ajoutés|
+|Utilisation|Un récapitulatif de l'utilisation de votre LoadBalancer|
+|Graphiques|Des graphiques présentant le nombre de connexions simultanées ou le nombre de requêtes par minute|
+|Informations|Vos adresses IPv4 et IPv6 et les Additional IP liées, ainsi que le nombre d'IPv4 de sortie (obtenez des détails en cliquant sur le bouton `...`{.action})|
+|Configuration|Personnalisez ici le nom de votre offre. Retrouvez aussi le(s) cipher(s), qui sont personnalisables, ainsi que la zone de disponibilité où se situe votre Load Balancer|
+|Abonnement|Vous trouverez ici les détails administratifs de votre offre|
+
+Pour ajouter des `Frontends`{.action} ou des `Fermes de serveurs`{.action}, cliquez simplement sur les onglets respectifs. Un formulaire vous aidera ensuite à configurer chaque partie de votre service.
+
+### Gérer ses frontends
+
+Afin d'ajouter des frontends, il vous suffit de vous rendre dans l'onglet `Frontends`{.action} et de cliquer sur `Ajouter un frontend`{.action}. Vous aurez alors accès au menu suivant :
+
+![Ajout frontend](images/add_frontend.png){.thumbnail}
+
+Détails des éléments d'un frontend :
 
 |Élément|Fonction|
 |---|---|
-|Statut|Résumé de votre Répartiteur de charge avec le nom du service, les serveurs frontaux (frontends), les fermes fonctionnelles et les serveurs ajoutés|
-|Utilisation|Un récapitulatif de l'utilisation de votre Répartiteur de charge|
-|Graphiques|Ici vous trouverez les graphiques liés à votre service en connexions simultanées ou en nombre de requêtes par minute|
-|Informations|Votre IPv4 et les Additional IP liées ainsi que le nombre d'IPv4 de sortie (détail en cliquant sur les points de suspension)|
-|Configuration|Ici vous pourrez personnaliser le nom de votre solution (qui apparaîtra en haut et dans la colonne de gauche). Le(s) texte(s) chiffré(s), qui sont personnalisables, ainsi que le centre de données où se situe votre Répartiteur de charge|
-|Abonnement|Vous trouverez ici les détails administratifs de votre solution|
-
-Pour ajouter un `serveur frontal`{.action} ou des `fermes de serveurs`{.action}, cliquez simplement sur leurs boutons respectifs. Un formulaire vous aidera ensuite à configurer chaque partie de votre service.
-
-### Gérer ses serveurs frontaux
-
-Afin d'ajouter des serveurs frontaux, il vous suffit de vous rendre dans la partie `Serveurs frontaux`{.action} et de cliquer sur `Ajouter un serveur frontal`{.action}. Vous aurez alors accès au menu suivant:
-
-![Ajouter un serveur frontal](images/iplb-add-front-end.png){.thumbnail}
-
-Détails des éléments d'un serveur frontal:
-
-|Élément|Fonction|
-|---|---|
-|Nom|Si vous le souhaitez, vous pouvez nommer votre serveur frontal, très utile quand vous en avez plusieurs afin de les identifier rapidement|
+|Nom|Vous pouvez nommer ici votre frontend, afin notamment de l'identifier rapidement si vous en avez plusieurs |
 |Protocole|Vous avez le choix entre le HTTP, HTTPS, TCP, SSL TCP (ou TLS) et l'UDP|
 |Port|Choisissez ici le port d'écoute à utiliser|
-|Centre de données|Vous pouvez choisir entre votre centre de données ou tous pour la création du serveur frontal|
-|Ferme par défaut|Si vous avez plusieurs fermes paramétrées, vous pourrez en choisir une par défaut pour chaque serveur frontal|
+|Datacenter|Vous pouvez choisir entre une zone de disponibilité en particulier ou toutes les zones de disponibilité pour la création du frontend|
+|Ferme par défaut|Si vous avez plusieurs fermes paramétrées, vous pourrez en choisir une par défaut pour chaque frontend|
 
-Vous avez également accès à des paramètres avancés:
+Vous avez également accès à des paramètres avancés :
 
-![Paramètres avancés](images/advanced_frontend.png){.thumbnail}
+![Parametres avances](images/advanced_frontend.png){.thumbnail}
 
 |Élément|Fonction|
 |---|---|
-|Additional IP dédiée|La liste des Additional IP des serveurs distants|
-|Resteindre l'accès à des IP|Liste permettant de restreindre l'accès distant au répartiteur de charge, uniquement en IPv4|
+|Dedicated Additional IP|La liste des Additional IP des serveurs distants|
+|Restreindre l'accès à des IPs|Liste permettant de restreindre l'accès distant au Load Balancer, uniquement en IPv4|
 |Redirection HTTP|Ajout d'une URL de redirection HTTP|
-|Entête HTTP|Ajout ici d'un en-tête HTTP|
+|Entête HTTP|Ajout d'un en-tête HTTP|
 
 ### Gérer ses fermes
 
-Afin d'ajouter une ferme de serveurs, il vous suffit de vous rendre dans la partie `Fermes de serveurs`{.action} et de cliquer sur `Ajouter une ferme de serveurs`{.action}. Vous accéderez aux mêmes options principales que pour le serveur frontal. Les options avancées seront par contre différentes:
+Afin d'ajouter une ferme de serveurs, il vous suffit de vous rendre dans l'onglet `Fermes de serveurs`{.action} et de cliquer sur `Ajouter une ferme de serveurs`{.action}. Vous accéderez aux mêmes options principales que pour le frontend. Les options avancées seront par contre différentes :
 
-![Ajout d'une ferme](images/iplb-cluster-adv.png){.thumbnail}
+![Ajout d'une ferme](images/advanced_cluster.png){.thumbnail}
 
 |Élément|Fonction|
 |---|---|
 |Mode de répartition|Choix entre Round-robin, First, Last, Source ou URI pour votre balancement d'IP|
-|Suivi de session|Le suivi de session peut se faire par Cookie ou IP source, à définir ici|
+|Suivi de session|Le suivi de session peut se faire par cookie ou IP Source, à définir ici|
 |Sonde|Choix et activation de la sonde|
 
 ### Gérer ses serveurs
 
-Une fois votre ferme de serveurs créée il vous reste à y ajouter des serveurs. Ci-essous le détail des options ainsi que des options avancées:
+Une fois votre ferme de serveurs créée, il vous reste à y ajouter des serveurs. Retrouvez ci-dessous le détail des options ainsi que des options avancées :
 
-![Ajout de serveur](images/iplb-cluster-add-server.png){.thumbnail}
-![Ajout de serveur](images/iplb-cluster-add-server-1.png){.thumbnail}
-![Ajout de serveur](images/iplb-cluster-add-server-2.png){.thumbnail}
+![Ajout serveur](images/add_server.png){.thumbnail}
+![Ajout serveur](images/add_server_advanced.png){.thumbnail}
 
 |Élément|Fonction|
 |---|---|
-|Nom|Si vous le souhaitez, vous pouvez nommer votre serveur; ceci est très utile quand vous en avez plusieurs afin de les identifier rapidement|
+|Nom|Si vous le souhaitez, vous pouvez nommer votre serveur, afin de l'identifier rapidement quand vous en avez plusieurs|
 |Adresse IPv4|Ajout de l'IP du service qui agira comme serveur|
 |Port|Port du serveur|
 |Serveur de secours|Préciser que ce serveur est un serveur de secours|
@@ -92,32 +91,35 @@ Une fois votre ferme de serveurs créée il vous reste à y ajouter des serveurs
 |Cookie|Ajout d'un cookie de session personnalisé|
 |Chaîne de certification|Ajout d'une chaîne de certification|
 |Poids de balancement|Choix du poids de balancement pour la répartition de charge|
+|Version du protocole de PROXY|**Uniquement si vous l'avez déjà configuré**, choisissez la version du protocole de PROXY que vous souhaitez utiliser sur ce serveur. </br> Vous pouvez trouver plus d'informations sur le protocole PROXY et sur son utilisation avec le service OVHcloud Load Balancer dans [ce guide](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Gérer ses certificats SSL
 
-Il est possible d'ajouter un SSL au Répartiteur de charge dans la section `Certificat SSL`{.action}. Vous aurez alors deux possibilités: commander un certificat SSL via OVH ou  ajouter un certificat externe.
+Il est possible d'ajouter un SSL au Load Balancer depuis l'onglet `Certificats SSL`{.action}. Vous aurez alors deux possibilités : commander un certificat SSL via OVHcloud ou ajouter un certificat externe.
 
-#### Certificat SSL OVH
+#### Certificat SSL OVHcloud
 
-Pour commander un certificat SSL il suffit d'aller dans la section `Certificat SSL`{.action} puis de cliquer sur `Commander un certificat SSL`{.action} et de vous laisser guider:
+Pour commander un certificat SSL, sélectionnez l'onglet `Certificat SSL`{.action} puis cliquez sur `Commander un certificat SSL`{.action}.
 
-![Commande d'un certificat SSL](images/iplb-order-ssl.png){.thumbnail}
+![Commande d'un certificat SSL](images/ordering_ssl.png){.thumbnail}
 
 |Élément|Fonction|
 |---|---|
-|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV (détails à cette adresse: https://www.ovh.com/ca/fr/hebergement-web/ssl_mutualise.xml)|
+|Nom|Si vous le souhaitez, vous pouvez nommer votre certificat, afin de l'identifier rapidement quand vous en avez plusieurs|
+|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV (Pour plus de détails, [consultez cette page](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Le(s) domaine(s) concerné(s)|
 
 #### Ajout d'un certificat SSL externe
 
-Si vous possédez déjà votre propre certificat SSL, il vous est possible de l'ajouter directement:
+Si vous possédez déjà votre propre certificat SSL, il vous est possible de l'ajouter directement :
 
-![Ajout d'un certificat SSL](images/iplb-add-ssl.png){.thumbnail}
+![Ajout d'un certificat SSL](images/external_ssl-00.png){.thumbnail}
+![Ajout d'un certificat SSL](images/external_ssl.png){.thumbnail}
 
 |Élément|Fonction|
 |---|---|
-|Nom|Choisssez si vous le souhaitez un nom à votre certificat, très utile quand vous en avez plusieurs afin de les identifier rapidement|
-|Clé privée|Champ d'ajout de la clef privée à ajouter au service|
+|Nom|Choisissez si vous le souhaitez un nom à votre certificat, afin de l'identifier rapidement quand vous en avez plusieurs|
+|Clef privée|Champ d'ajout de la clef privée à ajouter au service|
 |Certificat|Champ d'ajout du certificat|
 |Chaîne|Champ d'ajout du certificat racine si nécessaire|
 

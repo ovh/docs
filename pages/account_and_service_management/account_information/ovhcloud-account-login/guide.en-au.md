@@ -4,6 +4,11 @@ excerpt: 'Find out how to log in to your OVHcloud account'
 updated: 2025-04-28
 ---
 
+> [!success]
+> Participate in our survey and help us improve this guide!<br>
+> Feel free to share your thoughts and ideas with us.<br>
+> [Go to the survey.](https://s.elq.fr/ovhext/OiIwy54)
+
 ## Objective
 
 Your services are managed mainly via the OVHcloud Control Panel.

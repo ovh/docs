@@ -12,12 +12,12 @@ Możliwe jest powiązanie imienia, nazwiska, numeru telefonu i adresu e-mail z u
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Hosted Private Cloud`. Kliknij `Private Cloud` na pasku usług po lewej stronie, po czym wybierz odpowiednią infrastrukturę.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Hosted Private Cloud`. Kliknij `Private Cloud` na pasku usług po lewej stronie, po czym wybierz odpowiednią infrastrukturę.
 
 ![Użytkownik vsphere](images/addMailOnUser01.png){.thumbnail}
 
@@ -37,4 +37,4 @@ Kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić zmiany.
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/)

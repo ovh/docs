@@ -19,7 +19,7 @@ To carry out the various steps of this guide, you must:
 - Have a server that is mHG, HG, or bHG.
 - Have a server using software RAID (with a LSI card).
 - Have access to SSH (Linux) or RDP (Windows).
-- Have the sas2ircu utility installed beforehand. (Available via the search engine [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external})
+- Have the sas2ircu utility installed beforehand. (Available via the search engine [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu))
 
 In this guide, we will assume that you have received an alert for the disk /dev/sdb, Serial Number **K4GW439B**, which is defective and you want to hotswap it.
 
@@ -223,7 +223,7 @@ The Windows-based guide will be similar to the replacement guide for Linux. We w
 - an mHG, HG or BHG server
 - a software RAID (with an LSI card)
 - SSH (Linux) or RDP (Windows) access
-- the "sas2ircu" utility (use the [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} search engine to find it).
+- the "sas2ircu" utility (use the [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu) search engine to find it).
 
 ## Instructions
 
@@ -444,7 +444,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 ### On Windows
 
@@ -496,7 +496,7 @@ You can disable the disk flashing, by replacing "on" with "off" in the command.
 
 You can do this from the **Disk Management** interface of your Windows server.
 
-The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 ## Go Further
 

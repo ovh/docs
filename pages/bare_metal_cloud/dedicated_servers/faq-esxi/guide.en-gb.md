@@ -4,9 +4,6 @@ excerpt: "Find the most frequently asked questions about the wave of attacks tar
 updated: 2024-09-13
 ---
 
-> [!warning]
-> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
-
 ## Objective
 
 Following a major event on pre-7.0 U3i ESXi servers on February 3rd 2023, a wave of attacks is currently underway on these servers.
@@ -29,14 +26,14 @@ Enter your IP or server name in a browser to determine if a ransom message is di
 If you want to attempt to recover the data on your server, you can rely on the steps in the following documentation: [Enable and use rescue mode - Mounting a datastore](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#mounting-a-datastore).
 However, we don't have all the devices we need to recover all of your data.
 
-The US National Cybersecurity and Infrastructure Security Agency ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) also made available [a tool](https://github.com/cisagov/ESXiArgs-Recover) to retrieve data from an ESXi server targeted by the ESXiArgs ransomware.<br>
+The US National Cybersecurity and Infrastructure Security Agency ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script)) also made available [a tool](https://github.com/cisagov/ESXiArgs-Recover) to retrieve data from an ESXi server targeted by the ESXiArgs ransomware.<br>
 Using this tool requires advanced system administration skills. We advise you to use it only with knowledge of the facts, since OVHcloud cannot provide you with assistance on its use.
 
 In case of difficulties, we recommend that you contact a [specialist provider](/links/partner) or contact our teams by [creating a support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ### Does OVHcloud have a backup to restore my data?
 
-The Dedicated Server offering is optionally supported by [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-storage/). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) guide.
+The Dedicated Server offering is optionally supported by [Backup Storage](/links/bare-metal/backup-storage). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) guide.
 
 Our dedicated servers are also compatible with our [different backup solutions](https://www.ovhcloud.com/en-gb/storage-solutions/).
 
@@ -79,7 +76,7 @@ Not to our knowledge on this wave of attack.
 
 ### Is the VMware on OVHcloud affected by this incident?
 
-Our customers using [VMware on OVHcloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/) solutions are not affected by the ransomware. Specifically, the SSL gateway makes it possible to avoid this type of attack by blocking external access to this port (OpenSLP 427).
+Our customers using [VMware on OVHcloud](/links/hosted-private-cloud/hosted-private-cloud) solutions are not affected by the ransomware. Specifically, the SSL gateway makes it possible to avoid this type of attack by blocking external access to this port (OpenSLP 427).
 
 ## Go further
 

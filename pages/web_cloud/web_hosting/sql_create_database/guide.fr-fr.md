@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2024-09-05
+updated: 2025-10-08
 ---
 
 ## Objectif
@@ -21,6 +21,8 @@ Une base de données (BDD) est utilisée pour stocker des éléments dynamiques 
 ### Étape 1 - Accéder à l'onglet de gestion des bases de données d'un hébergement web
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez créer une base de données puis cliquez sur l'onglet `Bases de données`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 

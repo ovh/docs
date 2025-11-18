@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Activar un certificado SSL Sectigo DV"
 excerpt: "Descubra cómo activar un certificado SSL Sectigo DV en un alojamiento web de OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objetivo
@@ -20,7 +20,7 @@ Los niveles de cifrado SSL son idénticos entre los tres tipos de certificado.
 
 La principal diferencia reside en el nivel de comprobaciones que realizará la Autoridad de Certificación (CA) que emite el certificado SSL y certifica su autenticidad.
 
-Para los alojamientos compartidos de OVHcloud, la autoridad de certificación que expide los certificados SSL DV es [Sectigo](https://sectigostore.com){.external}.
+Para los alojamientos compartidos de OVHcloud, la autoridad de certificación que expide los certificados SSL DV es [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -76,10 +76,22 @@ Para más información, consulte nuestras guías:
 
 ### Contratar el certificado SSL Sectigo DV
 
+> [!primary]
+>
+> **Información sobre la migración a la nueva interfaz de gestión de certificados SSL:**
+>
+> El resto de esta guía se dirige a los clientes cuyos servicios de alojamiento web aún no hayan migrado a la nueva interfaz de gestión de certificados SSL.
+> Para consultar si se ha realizado la migración, conéctese al área de cliente de OVHcloud, y compruebe si la pestaña `Certificados SSL` está presente.
+> Si la pestaña `Certificados SSL` está presente, su servicio ya ha migrado a la nueva interfaz de gestión. En ese caso, consulte directamente [esta guía](/pages/web_cloud/web_hosting/ssl_management) para gestionar su certificado SSL.
+>
+> Por razones técnicas, todos los servicios de alojamiento web de todos nuestros clientes no pueden migrarse de una sola vez. Esta migración se realiza de forma automática, a lo largo de varias semanas, sin que afecte al funcionamiento de los servicios de alojamiento web y sin que usted tenga que realizar ninguna intervención o acción.
+>
+> A largo plazo, todos los servicios de alojamiento web funcionarán con la nueva interfaz de gestión de certificados SSL.
+
 Para contratar el certificado SSL Sectigo DV, lleve a cabo las siguientes acciones:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
+2. Acceda a la sección `Web Cloud`{.action} de la página.
 3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. A continuación, siga en la pestaña `Información general`{.action}.
@@ -109,7 +121,7 @@ La instalación del certificado SSL Sectigo DV puede tardar hasta **24** horas.
 Para comprobar que la instalación se ha completado, lleve a cabo los siguientes pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
+2. Acceda a la sección `Web Cloud`{.action} de la página.
 3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. A continuación, siga en la pestaña `Información general`{.action}.

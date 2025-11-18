@@ -12,7 +12,7 @@ Alarmmeldungen können für alle Komponenten Ihrer Private Cloud erstellt werden
 
 ## Voraussetzungen
 
-- Sie nutzen ein Produkt der Art [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external}.
+- Sie nutzen ein Produkt der Art [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/).
 - Sie sind in Ihrem [vSphere Interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) angemeldet.
 
 ## Praktische Anwendung

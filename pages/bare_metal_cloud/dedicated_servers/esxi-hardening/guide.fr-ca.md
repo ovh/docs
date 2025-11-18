@@ -1,11 +1,8 @@
 ---
 title: 'Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage'
 excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
-updated: 2024-09-13
+updated: 2025-09-15
 ---
-
-> [!warning]
-> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objectif
 
@@ -40,7 +37,7 @@ Nous nous appuierons pour cela sur les fonctions embarquées que propose VMware,
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Posséder un serveur dédié avec la solution ESXi déployée.
 - Avoir souscrit à une offre compatible avec notre fonctionnalité [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) si vous souhaitez l'utiliser pour effectuer le filtrage.
 
@@ -120,7 +117,13 @@ Il est donc recommandé de filtrer les accès légitimes de cette manière :
 > Ceci est valable également pour les accès au **shell**.
 > Ne prévilégiez que le strict nécessaire pour chacun de vos besoins.
 
+
 #### Manipulation via l'interface graphique
+
+> [!primary]
+>
+> Dans ESXi 8.0 GA et les versions ultérieures, le service SLP est renforcé, désactivé par défaut et filtré par le pare-feu ESXi. Cela signifie que vous n’avez plus besoin de le désactiver manuellement. Vous trouverez plus d’informations dans [cet article officiel du blog VMware](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+
 
 **Services**
 
@@ -155,6 +158,11 @@ Exemple autorisant uniquement les connexions depuis l'IP 192.168.1.10 :
 ![custom](images/custom_fw_rule.png){.thumbnail}
 
 #### Manipulation via le shell
+
+> [!primary]
+>
+> Dans ESXi 8.0 GA et les versions ultérieures, le service SLP est renforcé, désactivé par défaut et filtré par le pare-feu ESXi. Cela signifie que vous n’avez plus besoin de le désactiver manuellement. Vous trouverez plus d’informations dans [cet article officiel du blog VMware](https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html)
+
 
 **Services**
 

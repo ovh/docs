@@ -20,7 +20,7 @@ updated: 2023-09-20
 
 ## Prerequisiti
 
-- un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
+- un [VPS](/links/bare-metal/vps) nel tuo account OVHcloud
 - avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

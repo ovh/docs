@@ -12,8 +12,8 @@ Celem niniejszego przewodnika jest wyjaśnienie szczegółów dotyczących konfi
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}.
-- Posiadanie kompatybilnego zewnętrznego serwera zarządzania kluczami (KMS) **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** i znajdującego się w [matrycy zgodności](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
+- Posiadanie oferty [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/).
+- Posiadanie kompatybilnego zewnętrznego serwera zarządzania kluczami (KMS) **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)) 1.1** i znajdującego się w [matrycy zgodności](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc) VMware.
 - Dostęp do interfejsu zarządzania vSphere.
 - Posiadanie maszyn wirtualnych z wersją Hardware 13 lub wyższą.
 
@@ -136,7 +136,7 @@ Wybierz następujące opcje:
 
 #### Import certyfikatu KMS
 
-Większość dostawców KMS potrzebuje certyfikatu, aby [nawiązać bezpieczne połączenie](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} z vCenter.
+Większość dostawców KMS potrzebuje certyfikatu, aby [nawiązać bezpieczne połączenie](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html) z vCenter.
 
 W vCenter wybierz uprzednio dodany serwer KMS. W sekcji “Wszystkie opcje” kliknij `Ustal zaufane połączenie z KMS`{.action}.
 

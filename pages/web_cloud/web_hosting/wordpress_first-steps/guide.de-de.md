@@ -11,7 +11,7 @@ Mithilfe dieser Anleitung können Sie Ihre ersten Inhalte erstellen, organisiere
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/){.external} zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der [WordPress Community](https://wordpress.com/support/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 **Dieses Tutorial erklärt, wie Sie eine Website mit dem CMS WordPress erstellen.**
@@ -173,15 +173,15 @@ Ihre Links werden auf dem *Slug* basierend erstellt, der zuvor beim Editieren Ih
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-- Speichern Sie Ihre Zugangsdaten in einem Passwortmanager wie [KeePass](https://keepass.info/){.external}.
-- Testen Sie den Standardeditor [Gutenberg](https://wordpress.org/gutenberg/){.external} online.
+- Speichern Sie Ihre Zugangsdaten in einem Passwortmanager wie [KeePass](https://keepass.info/).
+- Testen Sie den Standardeditor [Gutenberg](https://wordpress.org/gutenberg/) online.
 - Einige Ressourcen, um **WordPress** *Themes* zu finden:
-    - [WordPress Themes](https://wordpress.com/themes){.external}
-    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php){.external}
-    - [Elegant Themes](https://www.elegantthemes.com/){.external}
-    - [Elementor](https://elementor.com/){.external}
-- Finden Sie mehr Informationen auf der offiziellen Website von [WordPress](https://wordpress.org/){.external}.
-- [Verwenden Sie SFTP, um Dateien oder Seiten auf Ihr WordPress zu übertragen](https://wordpress.com/de/support/sftp/){.external}.
+    - [WordPress Themes](https://wordpress.com/themes)
+    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php)
+    - [Elegant Themes](https://www.elegantthemes.com/)
+    - [Elementor](https://elementor.com/)
+- Finden Sie mehr Informationen auf der offiziellen Website von [WordPress](https://wordpress.org/).
+- [Verwenden Sie SFTP, um Dateien oder Seiten auf Ihr WordPress zu übertragen](https://wordpress.com/de/support/sftp/).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

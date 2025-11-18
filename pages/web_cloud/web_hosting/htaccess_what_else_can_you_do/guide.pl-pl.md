@@ -91,7 +91,7 @@ ErrorDocument Error_Code_Number Message_Or_Destination
 
 Zastąp tylko "**Error_Code_Number**" odpowiednim kodem błędu HTTP Apache. 
 
-Więcej informacji o tej funkcji znajdziesz w [oficjalnej dokumentacji Apache](https://httpd.apache.org/docs/trunk/en/custom-error.html){.external}.
+Więcej informacji o tej funkcji znajdziesz w [oficjalnej dokumentacji Apache](https://httpd.apache.org/docs/trunk/en/custom-error.html).
 
 Najpopularniejsze kody błędów HTTP to:
 

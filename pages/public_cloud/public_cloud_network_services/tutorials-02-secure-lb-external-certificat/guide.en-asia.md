@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-Our Public Cloud Load Balancer is based on [OpenStack Octavia](https://wiki.openstack.org/wiki/Octavia){.external} and is fully integrated into the Public Cloud universe. 
+Our Public Cloud Load Balancer is based on [OpenStack Octavia](https://wiki.openstack.org/wiki/Octavia) and is fully integrated into the Public Cloud universe. 
 
 After setting up your Load Balancer, you can configure it with a certificate in order to process HTTPS connections.
 

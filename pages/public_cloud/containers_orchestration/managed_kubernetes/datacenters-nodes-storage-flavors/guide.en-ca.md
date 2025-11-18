@@ -41,7 +41,7 @@ Here is a comparative table of flavours available by region:
 | `T2-*`   | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / UK1 / WAW1 | | | | | | |
 
 Each family offers contains different flavors, consisting of a five amount of vCores, RAM and local storage.  
-For more information, please refer to the following page: [OVHcloud Public Cloud instances](https://www.ovhcloud.com/en-ca/public-cloud/prices/)
+For more information, please refer to the following page: [OVHcloud Public Cloud instances](/links/public-cloud/prices)
 
 Note that we are both compatible with the standard and flex variations (Flex offering the same disk size for each flavor).
 Note however that Managed Kubernetes Service does not currently offer worker nodes resize.  
@@ -62,6 +62,6 @@ When adding a persistent volume though Kubernetes API (or `kubectl`), it will ac
 All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
 
 High Speed performance is theoretically best for volumes up to 100GB. Above 100GB per volume, you will get enhanced performance with a High Speed Gen2 volume.
-This is detailed in the [Persistent Volumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes) guide.
+This is detailed in the [Persistent Volumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) guide.
 
 We will support future classes as soon they are made available in OVHcloud Public Cloud.

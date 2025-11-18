@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos services VoIP'
 excerpt: "Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud"
-updated: 2025-04-28
+updated: 2025-10-30
 ---
 
 ## Objectif
@@ -22,9 +22,6 @@ Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouve
 - [Modifier le nombre d'appels simultanés](#simultaneous-calls)
 - [Convertir une ligne SIP en numéro alias](#sip-to-alias)
 - [Convertir un numéro alias en ligne SIP](#alias-to-sip)
-- [Résilier une ligne SIP / Trunk](#cancel-sip)
-- [Résilier un numéro alias](#cancel-alias)
-- [Résilier une ligne Fax](#cancel-fax)
 - [Transférer une ou plusieurs lignes à un autre compte OVHcloud](#contacts)
 
 <a name="change-offer"></a>
@@ -148,57 +145,6 @@ Toute demande de conversion sera prise en compte lors de votre prochaine factura
 Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](/pages/web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
 Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/secure-sip-line).
 
-<a name="cancel-sip"></a>
-
-### Résilier une ligne SIP / Trunk <a name="resilier-sip-trunk"></a>
-
-Pour résilier une ligne **SIP** ou **Trunk** OVHcloud, sélectionnez-la dans votre espace client OVHcloud puis, depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation de la ligne`{.action}.
-
-![résiliation sip](images/resiliation-sip.png){.thumbnail}
-
-Prenez connaissance des informations fournies, précisez la raison de votre résiliation puis confirmez-la en cliquant sur `Résilier`{.action}.
-
-Toute demande de résiliation sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une résiliation restera possible.
-
-> [!warning]
-> 
-> Si un téléphone Plug And Phone est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un [retour de matériel (RMA)](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma).
->
-
-<a name="cancel-alias"></a>
-
-### Résilier un numéro alias
-
-Pour résilier un numéro alias, sélectionnez-le dans votre espace client OVHcloud puis, depuis l'onglet `Mon numéro`{.action}, cliquez sur `Résilier mon numéro`{.action}.
-
-![résiliation alias](images/resiliation-alias.png){.thumbnail}
-
-Prenez connaissance des informations fournies, précisez la raison de votre résiliation puis confirmez-la en cliquant sur `Résilier`{.action}.
-
-Toute demande de résiliation sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une résiliation restera possible.
-
-> [!warning]
-> 
-> Si le numéro fait partie d'un pool de numéros, sa résiliation entraînera la résiliation de l'ensemble du pool.
->
-
-<a name="cancel-fax"></a>
-
-### Résilier une ligne Fax
-
-Pour résilier une ligne Fax OVHcloud, sélectionnez-la dans votre espace client OVHcloud puis, depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation du fax`{.action}.
-
-![résiliation fax](images/resiliation-fax.png){.thumbnail}
-
-Prenez connaissance des informations fournies, précisez la raison de votre résiliation puis confirmez-la en cliquant sur `Résilier`{.action}.
-
-Toute demande de résiliation sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une résiliation restera possible.
-
-> [!warning]
-> 
-> Si un équipement de type Plug & Fax est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un [retour de matériel (RMA)](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma).
->
-
 <a name="contacts"></a>
 
 ### Transférer une ou plusieurs lignes à un autre compte OVHcloud
@@ -208,5 +154,7 @@ Vous pouvez transférer partiellement ou totalement la gestion de vos services V
 Pour plus d'informations sur cette procédure, consultez le guide « [Effectuer un changement de contacts pour vos groupes de téléphonie](/pages/web_cloud/phone_and_fax/voip/effectuer_un_changement_de_contact_pour_les_services_voip) ».
 
 ## Aller plus loin
+
+[Comment résilier un service VoIP ou une ligne Fax](/pages/web_cloud/phone_and_fax/voip/resilier-services-voip)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

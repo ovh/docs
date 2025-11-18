@@ -15,8 +15,8 @@ El envío de SMS a Estados Unidos está sujeto a normas específicas. Esta guía
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
-- Conectarse a la [API de OVHcloud](https://api.ovh.com/) (solo para el método de envío a través de la API).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
+- Conectarse a la [API de OVHcloud](/links/api) (solo para el método de envío a través de la API).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Telecom`{.action} > `SMS`{.action}.
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -38,7 +38,7 @@ La validación de las plantillas de mensajes, realizada por el equipo de OVHclou
 
 #### 2.1. Desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Telecom`{.action}. Haga clic en `SMS`{.action} y seleccione su cuenta de SMS. A continuación, haga clic en la pestaña `Mensaje y campaña`{.action} y, seguidamente, en `Gestión de SMS`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Telecom`{.action}. Haga clic en `SMS`{.action} y seleccione su cuenta de SMS. A continuación, haga clic en la pestaña `Mensaje y campaña`{.action} y, seguidamente, en `Gestión de SMS`{.action}.
 
 Por último, haga clic en `Gestionar las plantillas`{.action}.
 
@@ -64,7 +64,7 @@ Rellene los campos en la ventaja emergente que aparece.
 > [!success]
 > Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps).
 
-Conéctese a [api.ovh.com](https://api.ovh.com/) y realice la siguiente llamada:
+Conéctese a [api.ovh.com](/links/api) y realice la siguiente llamada:
 
 > [!api]
 >

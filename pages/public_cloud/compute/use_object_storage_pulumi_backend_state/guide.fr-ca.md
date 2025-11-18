@@ -16,27 +16,27 @@ In this tutorial you will:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud Instance](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account
-- [Pulumi CLI](https://www.pulumi.com/docs/install/){.external} installed
+- A [Public Cloud Instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- [Pulumi CLI](https://www.pulumi.com/docs/install/) installed
 
 **Before you begin**
 
-- You should have installed Pulumi CLI, on your machine. You can install it by following the [detailed installation instructions](https://www.pulumi.com/docs/install/){.external}.
+- You should have installed Pulumi CLI, on your machine. You can install it by following the [detailed installation instructions](https://www.pulumi.com/docs/install/).
 
 **Pulumi**
 
 ![Pulumi](images/pulumi.jpg){.thumbnail}
 
-[Pulumi](https://www.pulumi.com/){.external} is an Infrastructure as Code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
+[Pulumi](https://www.pulumi.com/) is an Infrastructure as Code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
 Users define the desired state in Pulumi programs and Pulumi creates the desired resources.
 
-Pulumi offers an intuitive command line interface (CLI), to provision, update or delete your infrastructure. If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/){.external} too.
+Pulumi offers an intuitive command line interface (CLI), to provision, update or delete your infrastructure. If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/) too.
 
-At OVHcloud we created a [Pulumi provider](https://www.pulumi.com/registry/packages/ovh/){.external} that you can use to interact with and manage OVHcloud resources.
+At OVHcloud we created a [Pulumi provider](https://www.pulumi.com/registry/packages/ovh/) that you can use to interact with and manage OVHcloud resources.
 
 **Pulumi states and backend**
 
-Pulumi stores metadata about your infrastructure so that it can manage your cloud resources, for example your OVHcloud resources. This metadata is called `state` and is typically JSON files. Each [stack](https://www.pulumi.com/docs/concepts/stack/){.external} has its own state, and state is how Pulumi knows when and how to create, read, delete, or update cloud resources.
+Pulumi stores metadata about your infrastructure so that it can manage your cloud resources, for example your OVHcloud resources. This metadata is called `state` and is typically JSON files. Each [stack](https://www.pulumi.com/docs/concepts/stack/) has its own state, and state is how Pulumi knows when and how to create, read, delete, or update cloud resources.
 
 A Pulumi state is updated when you run the `pulumi login`, `pulumi up` or `pulumi destroy` commands.
 

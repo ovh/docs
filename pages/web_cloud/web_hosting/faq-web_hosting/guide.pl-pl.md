@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Poznaj najważniejsze pytania dotyczące hostingu WWW OVHcloud"
-updated: 2025-04-25
+updated: 2025-11-10
 ---
 
 <style>
@@ -187,8 +187,9 @@ Aby aktywować certyfikat SSL na twoim hostingu, wykonaj następujące kroki:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-3. Na stronie, która się wyświetli i w ramce **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie wzmianki **Certyfikat SSL**, a następnie kliknij przycisk `Zamów certyfikat SSL`{.action}.
-4. Wybierz odpowiedni certyfikat z [listy dostępnych certyfikatów](/pages/web_cloud/web_hosting/ssl_on_webhosting). Następnie kontynuuj aż do zakończenia operacji.
+3. Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
+4. Wybierz odpowiedni certyfikat spośród [dostępnych certyfikatów](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+5. Kontynuuj aż do zakończenia instalacji certyfikatu SSL (po uprzednim zatwierdzeniu zamówienia, jeśli wybierzesz jeden z certyfikatów SSL Sectigo).
 
 > [!success]
 >
@@ -562,22 +563,23 @@ Błąd ten może się pojawić również w przypadku żądania HTTP, które koń
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-Ten komunikat wskazuje, że typ zapytania HTTP, które próbujesz wykonać na twojej stronie WWW, jest zabroniony przez ograniczony czas, zwykle ze względów bezpieczeństwa.
+Strona "Your request has been blocked" może się wyświetlać z różnych powodów (lista nie jest wyczerpująca):
+
+- Zapytanie jest wykonywane z poziomu niezaktualizowanej przeglądarki internetowej (Firefox, Chrome, Safari, Edge, itp.).
+- Bardzo duża liczba zapytań, podobnych lub nie, jest wykonywana w niezwykle krótkim czasie.
+- Zapytanie próbuje wykonać nieautoryzowane operacje na infrastrukturze współdzielonej, na której znajduje się Twój hosting.
 
 W tej sytuacji należy podjąć kilka działań:
 
-- Sprawdź [logi](/pages/web_cloud/web_hosting/logs_and_statistics) twojej strony WWW, aby ustalić, które zapytania spowodowały tę blokadę.
-- Za pomocą oprogramowania antywirusowego lub antyspyware sprawdź, czy twoje urządzenia (komputery, smartfony itp.) nie są zainfekowane oprogramowaniem szpiegującym lub złośliwym.
-- Sprawdź kod źródłowy twojej strony WWW (przestrzeń FTP i baza(y) danych).
+- Upewnij się, że Twoja przeglądarka internetowa jest aktualna.
+- Pobierz wywołany adres URL (na przykład: `https://www.domain.tld`) oraz wszystkie informacje dostępne na stronie "Your request has been blocked" (`IP address`, `Date` i `Request ID`).
+- Prześlij odzyskane elementy do pomocy technicznej, tworząc [zgłoszenie serwisowe](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z webmasterem lub jednym z naszych [partnerów](/links/partner).
 
 > [!success]
 >
-> Sprawdź nasze szczegółowe przewodniki:
->
-> - [Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Przykłady zastosowania - Porady po włamaniu się na stronę WWW](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Zapoznaj się również z przewodnikiem: [Co zrobić, jeśli wyświetla się strona 'Your request has been blocked'?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 
@@ -585,22 +587,21 @@ Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z we
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-Komunikat ten oznacza, że adres IP, którego używasz do logowania się na twojej stronie WWW, jest zablokowany na ograniczony czas, zazwyczaj ze względów bezpieczeństwa.
+Strona "Your IP has been banned" może się wyświetlać z różnych powodów (lista nie jest wyczerpująca):
+
+- Bardzo duża liczba zapytań, podobnych lub nie, jest wykonywana w bardzo krótkim czasie z tego samego adresu IP.
+- Zapytania wykonane z danego adresu IP są podejrzane.
 
 W tej sytuacji należy podjąć kilka działań:
 
-- Sprawdź [logi](/pages/web_cloud/web_hosting/logs_and_statistics) twojej strony WWW, aby ustalić, które zapytania spowodowały tę blokadę.
-- Za pomocą oprogramowania antywirusowego lub antyspyware sprawdź, czy twoje urządzenia (komputery, smartfony itp.) nie są zainfekowane oprogramowaniem szpiegującym lub złośliwym.
-- Sprawdź kod źródłowy twojej strony WWW (przestrzeń FTP i baza(y) danych).
+- Pobierz wywołany adres URL (na przykład: `https://www.domain.tld`) oraz wszystkie informacje dostępne na stronie "Your IP has been banned" (`IP address`, `Date` i `Request ID`).
+- Prześlij odzyskane elementy do pomocy technicznej, tworząc [zgłoszenie serwisowe](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z webmasterem lub jednym z naszych [partnerów](/links/partner).
 
 > [!success]
 >
-> Sprawdź nasze szczegółowe przewodniki:
->
-> - [Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Przykłady zastosowania - Porady po włamaniu się na stronę WWW](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Zapoznaj się również ze szczegółowym przewodnikiem: [Co zrobić, jeśli wyświetla się strona 'Your IP has been banned'?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
 
@@ -608,7 +609,7 @@ Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z we
 
 ![rating_idn](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name){.external} w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
+Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name) w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
 
 > [!alert]
 >

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a web service for YOLOv5 using Flask
 excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 > [!primary]
@@ -19,12 +19,12 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
--   an AI Deploy project created inside a Public Cloud project
--   a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
--   [Docker](https://www.docker.com/get-started) installed on your local computer
--   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
--   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov5/notebook_object_detection_yolov5_coco.ipynb)
+- access to the [OVHcloud Control Panel](/links/manager)
+- an AI Deploy project created inside a Public Cloud project
+- a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+- [Docker](https://www.docker.com/get-started) installed on your local computer
+- some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+- your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov5/notebook_object_detection_yolov5_coco.ipynb))
 
 ## Instructions
 
@@ -204,25 +204,26 @@ ENV HOME=/workspace
 
 ### Build the Docker image from the Dockerfile
 
-Launch the following command from the **Dockerfile** directory to build your application image:
+From the directory containing your **Dockerfile**, run one of the following commands to build your application image:
 
-``` {.console}
+```console
+# Build the image using your machine's default architecture
 docker build . -t flask-yolov5:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t flask-yolov5:latest .
 ```
+
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
 
 > [!primary]
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
-
-> [!primary]
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **flask-yolov5:latest**.
-
-> [!warning]
 >
-> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
->
-> `docker buildx build --platform linux/amd64 ...`
 
 ### Test it locally (optional)
 
@@ -292,11 +293,10 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/flask-y
 - You can imagine deploying a **Flask** app in order to classify the feelings in a text. Refer to this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_06_flask_hugging_face).
 - Another way to create an AI Deploy app is to use **Streamlit**! [Here it is](/pages/public_cloud/ai_machine_learning/deploy_tuto_01_streamlit).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
-

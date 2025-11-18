@@ -86,13 +86,13 @@ Vous devez aussi :
 > Tant que le verrouillage est actif, le transfert n'est pas possible.
 >
 
-Pour déverrouiller votre nom de domaine chez Gandi, suivez les étapes décrites dans la [documentation dédiée de Gandi](https://docs.gandi.net/fr/noms_domaine/transfert_sortant/transfert_lock.html){.external}.
+Pour déverrouiller votre nom de domaine chez Gandi, suivez les étapes décrites dans la [documentation dédiée de Gandi](https://docs.gandi.net/fr/noms_domaine/transfert_sortant/transfert_lock.html).
 
 ### Etape 2 - Obtenir le code d'autorisation
 
 Le code d'autorisation sécurise votre nom de domaine contre des transferts non autorisés et réalisés par des tiers. Ce code est requis pour autoriser le transfert de votre nom de domaine vers un nouveau bureau d'enregistrements.
 
-Pour récupérer le code de transfert de votre nom de domaine, suivez les étapes décrites dans la [documentation dédiée de Gandi](https://docs.gandi.net/fr/noms_domaine/transfert_sortant/auth_code.html){.external}.
+Pour récupérer le code de transfert de votre nom de domaine, suivez les étapes décrites dans la [documentation dédiée de Gandi](https://docs.gandi.net/fr/noms_domaine/transfert_sortant/auth_code.html).
 
 ### Etape 3 - Initier le transfert de votre nom de domaine vers OVHcloud
   

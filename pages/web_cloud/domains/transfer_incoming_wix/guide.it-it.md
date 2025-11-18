@@ -69,7 +69,7 @@ Il trasferimento di un dominio Wix richiede una procedura specifica.
 
 ### Sblocca il dominio e recupera il codice di trasferimento
 
-Per sbloccare il dominio e recuperare il codice di trasferimento, segui i passaggi descritti nella [documentazione dedicata di Wix](https://support.wix.com/it/article/trasferire-il-tuo-dominio-wix-fuori-da-wix-6225331){.external}.
+Per sbloccare il dominio e recuperare il codice di trasferimento, segui i passaggi descritti nella [documentazione dedicata di Wix](https://support.wix.com/it/article/trasferire-il-tuo-dominio-wix-fuori-da-wix-6225331).
 
 ### Avvia il trasferimento di dominio in OVHcloud
 

@@ -44,7 +44,7 @@ We use `containerd` as the default CRI
 
 ## CNI (Cluster Network Interface)
 
-The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.external} which embedded [calico](https://github.com/projectcalico/calico){.external} for policy and [flannel](https://github.com/coreos/flannel/){.external} for networking.
+The CNI plugin installed is [canal](https://github.com/projectcalico/canal) which embedded [calico](https://github.com/projectcalico/calico) for policy and [flannel](https://github.com/coreos/flannel/) for networking.
 
 The versions installed depends on the Kubernetes version:
 
@@ -95,14 +95,14 @@ The versions are:
 
 ## Enabled policies
 
-* [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/){.external}
-* [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/){.external}
-* [Limit range](https://kubernetes.io/docs/concepts/policy/limit-range/){.external}
+* [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+* [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
+* [Limit range](https://kubernetes.io/docs/concepts/policy/limit-range/)
 
 Authorization modes:
 
-* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/){.external}: Authorise API requests made by Kubelets.
-* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external}: Role-Based Access Control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
+* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/): Authorise API requests made by Kubelets.
+* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/): Role-Based Access Control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
 
 Feature gates:
 
@@ -146,6 +146,6 @@ This table sums up the reserved resources on b2 and b3 flavors:
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

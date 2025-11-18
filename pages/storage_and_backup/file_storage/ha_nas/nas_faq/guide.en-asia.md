@@ -1,8 +1,22 @@
 ---
 title: HA-NAS - Frequently Asked Questions
 excerpt: Do you have questions about HA-NAS? Here are the most frequently asked questions
-updated: 2024-02-26
+updated: 2025-07-15
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -10,11 +24,13 @@ updated: 2024-02-26
 
 ## General questions
 
-### What is the OVHcloud HA-NAS solution?
+/// details | What is the OVHcloud HA-NAS solution?
 
 HA-NAS is a fully managed, shared file storage service, based on OpenZFS open-source technology.
 
-### What can I do with HA-NAS?
+///
+
+/// details | What can I do with HA-NAS?
 
 HA-NAS enables data to be centralised across different Linux workloads, as well as Windows for multiple scenarios:
 
@@ -22,41 +38,57 @@ HA-NAS enables data to be centralised across different Linux workloads, as well 
 - web content management 
 - file sharing on the network, etc.
 
-### Can I manage my HA-NAS via a configuration panel?
+///
 
-Yes, you can access it from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) by going to the `Bare Metal Cloud`{.action} section, then `NAS and CDN`{.action}.
+/// details | Can I manage my HA-NAS via a configuration panel?
+
+Yes, you can access it from your [OVHcloud Control Panel](/links/manager) by going to the `Bare Metal Cloud`{.action} section, then `NAS and CDN`{.action}.
+
+///
 
 ## Availability
 
-### Which SLA comes with HA-NAS?
+/// details | Which SLA comes with HA-NAS?
 
 HA-NAS comes with a 99.99% availability rate.
 
+///
+
 ## IP and Security
 
-### What file transfer protocols are currently supported on the HA-NAS solution?
+/// details | What file transfer protocols are currently supported on the HA-NAS solution?
 
 HA-NAS supports file transfer through NFS (NFSv3) and CIFS (SMB).
 
-### Which OVHcloud services can I push data from?
+///
+
+/// details | Which OVHcloud services can I push data from?
 
 HA-NAS is a service that can receive data from all existing OVHcloud services: Bare Metal Cloud (VPS, OVHcloud Dedicated Servers, So you Start, Kimsufi), Public Cloud, Hosted Private Cloud, etc.
 
-### How do I manage access to a HA-NAS solution?
+///
+
+/// details | How do I manage access to a HA-NAS solution?
 
 You can configure the access control list (ACL) in your OVHcloud Control Panel. Simply enter the IP address of the service for which you want to authorise access to the HA-NAS.
 
-### Is the HA-NAS service compatible with other servers outside of OVHcloud?
+///
+
+/// details | Is the HA-NAS service compatible with other servers outside of OVHcloud?
 
 No. You can only access your HA-NAS from the OVHcloud network.
 
-### Is HA-NAS eligible for the vRack solution?
+///
+
+/// details | Is HA-NAS eligible for the vRack solution?
 
 Currently, HA-NAS cannot be integrated into the vRack private network. However, HA-NAS and vRack are not incompatible if you go via the public IP path of the server connected to vRack.
 
+///
+
 ## Capacity and performance
 
-### What storage capacity options are available?
+/// details | What storage capacity options are available?
 
 The minimum size of a service is 3 TB, and the maximum size is 144 TB.<br>
 We offer the following storage capacities based on 3 TB disks:
@@ -77,40 +109,56 @@ We offer the following storage capacities on a 12 TB disk base:
 
 The storage capacities offered are the usable capacities.
 
-### Are the resources of my HA-NAS dedicated to my services?
+///
+
+/// details | Are the resources of my HA-NAS dedicated to my services?
 
 The disks of your HA-NAS are dedicated to your services. The machine’s other resources are shared (RAM, CPU, bandwidth).
 
 **Special case:** If you sign up to the 144 TB solution, all of the host server’s resources are dedicated to you (RAM, CPU, bandwidth).
 
-### How many HA-NAS services can I create from my customer account?
+///
+
+/// details | How many HA-NAS services can I create from my customer account?
 
 There is no limit to the number of services per customer account.
 
-### What is the maximum number of partitions per service?
+///
+
+/// details | What is the maximum number of partitions per service?
 
 You can create as many partitions as you want. The minimum size is 10 GB and the maximum size is defined by the maximum size of the service.
 
-### Are the transfer and availability rates guaranteed?
+///
+
+/// details | Are the transfer and availability rates guaranteed?
 
 - Transfer: the service’s bandwidth is shared. Transfer rates cannot be guaranteed by OVHcloud.
 - Availability: service availability is guaranteed, and is the subject of a service level agreement. You can view the details in our Terms of Use.
 
+///
+
 ## Using the product
 
-### Can HA-NAS be connected to several servers at once?
+/// details | Can HA-NAS be connected to several servers at once?
 
 Yes. You can have your NAS interacted simultaneously with several OVHcloud services.
 
-### Can I install an operating system on a HA-NAS?
+///
+
+/// details | Can I install an operating system on a HA-NAS?
 
 No, you cannot install operating systems on HA-NAS solutions.
 
-### Can the allocated space be partitioned?
+///
+
+/// details | Can the allocated space be partitioned?
 
 Yes, you will need to create one or several partitions, depending on how you will use it. There are no limits to creating partitions.
 
-### How can I change the storage capacity on my HA-NAS?
+///
+
+/// details | How can I change the storage capacity on my HA-NAS?
 
 Currently it is not yet possible to dynamically scale up or down our HA-NAS. To do so, you have to:
 
@@ -118,21 +166,27 @@ Currently it is not yet possible to dynamically scale up or down our HA-NAS. To 
 2. Migrate your data by following the guide [Migrating data from one HA-NAS to another via NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration).
 3. Cancel the old HA-NAS.
 
+///
+
 ## Snapshots
 
-### What are snapshots?
+/// details | What are snapshots?
 
 Snapshots are instantaneous images of your disk’s state and the data stored on it at that particular point in time. They offer you the first level of backup. You can configure and manage snapshots from your OVHcloud Control Panel.
 
 By default, the snapshot feature is enabled when you create your partition, and the frequency is set at “once every hour” by default.
 
-### Which backup policy is associated with HA-NAS?
+///
+
+/// details | Which backup policy is associated with HA-NAS?
 
 Users are responsible for managing their backups (tools and policies) inside and outside the service, as well as their business continuity and disaster recovery plans. However, for reasons of infrastructure security and resilience, OVHcloud can take snapshots of the service on a remote server, without any obligation.
 
 In the event of an outage or attack, if OVHcloud has taken a snapshot on a remote server, we can then restore the data from the last available snapshot. Please note, however, that this is done on request and is an optional service that will be billed.
 
-### How often are snapshots taken? <a name="frequency"></a>
+///
+
+/// details | How often are snapshots taken? <a name="frequency"></a>
 
 You can manage the frequency of snapshots from your OVHcloud Control Panel. You can choose the frequency from the following options:
 
@@ -143,7 +197,7 @@ You can manage the frequency of snapshots from your OVHcloud Control Panel. You 
 - once every 3 days
 - once every week
 
-You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or via the following [API](https://ca.api.ovh.com/) call:
+You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](/links/manager) or via the following [API](/links/api) call:
 
 > [!api]
 >
@@ -154,50 +208,71 @@ You can also create manual snapshots at any time, save them without any time lim
 > Please refer to our [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to get familiar with using OVHcloud APIs.
 >
 
-### How does the snapshot management system work?
+///
+
+/// details | How does the snapshot management system work?
 
 You can configure automatic snapshots, and a selection of frequencies are available. No matter what frequency is set, the most recent snapshot taken will replace and delete the previous one. You can also create and delete snapshots on demand.
 
-### Can I delete a snapshot?
+///
+
+/// details | Can I delete a snapshot?
 
 Only snapshots created “on demand” can be deleted (see previous question [How often are snapshots taken?](#frequency)).<br>
 Snapshots with a set frequency are automatically deleted, and cannot be deleted manually.
 
-### Are snapshots included in the capacity of a service?
+///
+
+/// details | Are snapshots included in the capacity of a service?
 
 You are allocated additional space on the same physical media to ensure that your snapshots are stored. This space corresponds to at least 15% of the primary volume. In case you exceed this limit, the snapshots will be stored on your main storage space. You cannot use the additional space for anything other than storing your snapshots.
 
 For example, for a 3 TB service, an additional 450 GB is reserved for snapshots.
 
-### What is the maximum number of snapshots I can create?
+///
+
+/// details | What is the maximum number of snapshots I can create?
 
 - For automatic snapshots: one per partition
 - For manual snapshots: ten per partition
 
-### Where are snapshots stored?
+///
 
-Snapshots are stored at the same level as your service. Snapshots are replicated on two separate servers in two different racks. In addition, OVHcloud takes a daily snapshot at a remote site.
+/// details | Where are snapshots stored?
 
-### Where can I retrieve my snapshots?
+Snapshots are stored on the same level as your service.
+In addition, OVHcloud takes a daily snapshot (with a 24-hour retention) on a backup server located in a separate rack.
+
+///
+
+/// details | Where can I retrieve my snapshots?
 
 In the partition concerned, you will find a hidden directory called `.zfs`, which contains a `snapshots` directory. The files are available in read only.
 
-### How many snapshot policies can I create per volume?
+///
+
+/// details | How many snapshot policies can I create per volume?
 
 1
 
+///
+
 ## Billing
 
-### What type of pricing is linked to the service?
+/// details | What type of pricing is linked to the service?
 
 HA-NAS is a service billed monthly by volume (from 3 to 144 TB in stages).
 
-### How long can I subscribe to a HA-NAS solution?
+///
+
+/// details | How long can I subscribe to a HA-NAS solution?
 
 The subscription periods offered are 1 month, 12 months, 24 months and 36 months. At the end of your subscription period, your subscription will be renewed automatically unless you submit a [cancellation request](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services). You can do this for the entire duration of your subscription, via the OVHcloud Control Panel.
 
+///
+
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our user community on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

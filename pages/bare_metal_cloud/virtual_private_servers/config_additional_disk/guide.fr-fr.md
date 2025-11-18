@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un disque additionnel'
 excerpt: "Découvrez comment ajouter et configurer de l'espace de stockage supplémentaire sur un VPS"
-updated: 2023-02-15
+updated: 2025-07-24
 ---
 
 ## Objectif
@@ -12,9 +12,13 @@ Avec les VPS OVHcloud, vous avez la possibilité d'ajouter un espace de stockage
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Disposer d'un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d'un accès administratif via SSH ou RDP à votre VPS
+
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## En pratique
 
@@ -31,9 +35,9 @@ Prenez note des informations de tarification, puis cliquez sur `Commander`{.acti
 ### Monter le nouvel espace de stockage
 
 > [!warning]
-> OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
->Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contacter un prestataire de services spécialisé et/ou discuter du problème avec notre [communauté d'utilisateurs](/links/community). OVHcloud ne peut pas vous fournir de support technique sur ce sujet.
+> Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contacter un [prestataire de services spécialisé](/links/partner) et/ou discuter du problème avec notre [communauté d'utilisateurs](/links/community). OVHcloud ne peut pas vous fournir de support technique sur ce sujet.
 >
 
 #### Sur un VPS Linux
@@ -215,19 +219,19 @@ Tapez `cmd` et cliquez sur `OK`{.action} pour ouvrir l'application de ligne de c
 
 Dans l'invite de commandes, ouvrez DISKPART :
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Utilisez la série de commandes DISKPART suivante pour configurer le disque en ligne :
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -241,19 +245,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -265,7 +269,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -293,7 +297,7 @@ Dans la dernière fenêtre, cliquez sur `Terminer`{.action} pour formater le dis
 
 ### Résilier l'option de disque additionnel
 
-Sous l'onglet `Accueil`{.action}, faites défiler l'écran jusqu'à la zone intitulée **Résumé des options**. Cliquez sur `...`{.action} en face de l'option « Disques additionnels ». Cliquez  sur `Résilier`{.action} dans le menu contextuel.
+Depuis l'onglet `Accueil`{.action}, dans la section **Votre configuration**, cliquez sur `...`{.action} à côté de l'option `Disques additionnels` puis cliquez sur `Résilier`{.action}.
 
 ![résiliation disque additionnel](images/disk_vps02.png){.thumbnail}
 

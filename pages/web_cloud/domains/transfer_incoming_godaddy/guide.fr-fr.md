@@ -71,13 +71,13 @@ Vous devez aussi :
 Le verrouillage d'un nom de domaine le protège contre les tentatives de transfert non autorisées.
 GoDaddy active cette protection par défaut. Vous devez donc la désactiver pour transférer votre domaine chez OVHcloud.
 
-Suivez les étapes décrites dans la [documentation dédiée de GoDaddy](https://fr.godaddy.com/help/deverrouiller-ou-verrouiller-mon-domaine-410){.external}.
+Suivez les étapes décrites dans la [documentation dédiée de GoDaddy](https://fr.godaddy.com/help/deverrouiller-ou-verrouiller-mon-domaine-410).
 
 ### Etape 2 - Obtenir le code d’autorisation 
 
 OVHcloud vous demandera de fournir le code d’autorisation ou « Auth code » avant d’initier la procédure de transfert de nom de domaine. Vous pouvez l’obtenir en ouvrant la page de votre portfolio de `Noms de domaines`{.action} chez GoDaddy.
 
-Suivez les étapes décrites dans la [documentation dédiée de GoDaddy](https://fr.godaddy.com/help/transferer-mon-domaine-hors-de-godaddy-3560){.external}.
+Suivez les étapes décrites dans la [documentation dédiée de GoDaddy](https://fr.godaddy.com/help/transferer-mon-domaine-hors-de-godaddy-3560).
 
 ### Etape 3 - Initier le transfert de domaine chez OVHcloud
 

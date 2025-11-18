@@ -67,7 +67,7 @@ To transfer a home.pl domain name, you will need to follow a specific procedure.
 
 ### Unlock the domain name and retrieve the transfer code
 
-To unlock the domain name and retrieve the transfer code, follow the steps described in the [home.pl dedicated documentation](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form){.external}.
+To unlock the domain name and retrieve the transfer code, follow the steps described in the [home.pl dedicated documentation](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form).
 
 ### Initiate domain transfer to OVHcloud
 

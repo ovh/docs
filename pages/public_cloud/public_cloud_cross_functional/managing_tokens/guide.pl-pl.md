@@ -18,7 +18,7 @@ updated: 2024-12-10
 
 ### Definicje
 
-- Endpoint: Adres HTTP wskazujący bezpośrednio na API usługi. na przykład [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/){.external} dla punktu uwierzytelniania lub [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/){.external} dla punktu zarządzania obrazami w strefie GRA1.
+- Endpoint: Adres HTTP wskazujący bezpośrednio na API usługi. na przykład [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) dla punktu uwierzytelniania lub [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/) dla punktu zarządzania obrazami w strefie GRA1.
 
 - Token: Kanał o unikalnym charakterze związany z uwierzytelnianiem i prawami dostępu. Użytkownik żąda tokena, przekazując swoje dane identyfikacyjne (dane logowania) do API uwierzytelniania. Jest generowany i dostarczany z ograniczonym okresem ważności wynoszącym 24 godziny. Token może być "scoped" lub "unscoped", czyli może być bezpośrednio związany z posiadaczem lub nie może być powiązany z żadnym posiadaczem.
 
@@ -35,7 +35,7 @@ Ponieważ tokeny mają określony okres ważności, wygasają i są odnawiane w 
 
 Podobnie, jeśli token ma zostać usunięty przed datą wygaśnięcia, możliwe jest jego usunięcie za pomocą API.
 
-Więcej informacji znajdziesz w dokumentacji OpenStack [API](https://docs.openstack.org/keystone/train/api_curl_examples.html){.external}.
+Więcej informacji znajdziesz w dokumentacji OpenStack [API](https://docs.openstack.org/keystone/train/api_curl_examples.html).
 
 ### Operacje ręczne
 
@@ -168,7 +168,7 @@ Connection: close
 
 Zalecamy korzystanie z bibliotek umożliwiających przejrzyste zarządzanie tokenami. W ten sposób, poprzez prosty dostęp do przechowywanych danych, tokeny będą automatycznie generowane, używane i odnawiane bez konieczności zarządzania nimi na poziomie aplikacji.
 
-Istnieje wiele bibliotek w różnych językach. Aby uzyskać więcej informacji, [zapoznaj się z oficjalną listą](https://wiki.openstack.org/wiki/SDKs){.external}.
+Istnieje wiele bibliotek w różnych językach. Aby uzyskać więcej informacji, [zapoznaj się z oficjalną listą](https://wiki.openstack.org/wiki/SDKs).
 
 #### Usuwanie tokena
 

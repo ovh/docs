@@ -1,7 +1,7 @@
 ---
 title: "Alojamento partilhado Seguimento dos emails automatizados"
 excerpt: "Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud"
-updated: 2024-12-16
+updated: 2025-10-21
 ---
 
 ## Objetivo
@@ -12,7 +12,7 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 >
 > Este guia trata principalmente dos e-mails enviados a partir de scripts situados no seu [alojamento web da OVHcloud](/links/web/hosting) com a ajuda da função "mail()" de PHP.
 >
-> Se pretender gerir os endereços de e-mail incluídos na sua oferta MX Plan ou na sua oferta de[alojamento web OVHcloud](/links/web/hosting){.external}, consulte a nossa documentação sobre os [E-mails partilhados - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Se pretender gerir os endereços de e-mail incluídos na sua oferta MX Plan ou na sua oferta de[alojamento web OVHcloud](/links/web/hosting), consulte a nossa documentação sobre os [E-mails partilhados - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,18 +24,35 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting){.external}.
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting).
+- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](/links/manager){.external}. Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
+O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](/links/manager).
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
+Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 
-A página que aparece permite-lhe seguir e gerir os e-mails automatizados enviados a partir do seu [alojamento web da OVHcloud](/links/web/hosting).
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Mais`{.action} e clique em `Scripts e-mails`{.action}.
+>>
+>> A página que aparece permite-lhe seguir e gerir os e-mails automatizados enviados a partir do seu [alojamento web da OVHcloud](/links/web/hosting).
 
-### Apresentação da parte "Scripts emails"
+### Apresentação da parte "Scripts e-mails"
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 

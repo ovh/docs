@@ -160,7 +160,7 @@ Once the version is downloaded and the upgrade process has been initiated, the s
 Verify if your applications are working as expected. In case there are issues, we recommend [restoring your backup](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup) that was taken prior to the upgrade.
 
 > [!primary]
-> If you encounter any issues, you may find answers to your questions on the [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.
+> If you encounter any issues, you may find answers to your questions on the [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/).
 >
 
 ## Go further

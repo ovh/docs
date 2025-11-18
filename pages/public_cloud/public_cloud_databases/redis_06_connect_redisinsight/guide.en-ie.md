@@ -1,6 +1,6 @@
 ---
-title: Caching/Valkey - Connect with RedisInsight
-excerpt: Connect to your Public Cloud Databases for Caching/Valkey using RedisInsight
+title: Valkey - Connect with RedisInsight
+excerpt: Connect to your Public Cloud Databases for Valkey using RedisInsight
 updated: 2024-06-12
 ---
 
@@ -8,34 +8,34 @@ updated: 2024-06-12
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to connect to a Caching/Valkey service with the free GUI: RedisInsight.**
+**This guide explains how to connect to a Valkey service with the free GUI: RedisInsight.**
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- A [Caching/Valkey service project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- A Caching/Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- [Configure your Caching/Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Valkey service project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 - A RedisInsight stable version installed and public network connectivity (Internet). This guide was made in RedisInsight 1.11.1
 
 ## Concept
 
-A Caching/Valkey service can be managed through multiple ways.
+A Valkey service can be managed through multiple ways.
 One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect with CLI](/pages/public_cloud/public_cloud_databases/redis_03_connect_cli) or by using programming languages, such as [PHP](/pages/public_cloud/public_cloud_databases/redis_04_connect_php).
 
 Another way is to interact directly using the GUI: RedisInsight.
 
-In order to do so, we will need to install RedisInsight, then configure our Public Cloud Databases for Caching/Valkey services to accept incoming connections, and finally configure RedisInsight.
+In order to do so, we will need to install RedisInsight, then configure our Public Cloud Databases for Valkey services to accept incoming connections, and finally configure RedisInsight.
 
 ## Instructions
 
 ### Installation
 
-To interact with your Caching/Valkey service with RedisInsight you need to install it.
+To interact with your Valkey service with RedisInsight you need to install it.
 
 Please follow the official [RedisInsight](https://docs.redis.com/latest/ri/installing) to get the latest information.
 
-We are now ready to learn how to connect to our Caching/Valkey service.
+We are now ready to learn how to connect to our Valkey service.
 
 ### Connect with RedisInsight
 
@@ -51,19 +51,19 @@ Once connected to the RedisInsight interface, click on the `I already have a dat
 
 ![Redis first screen](images/redis_06_connect_redisinsight-20220207114821477.png)
 
-Then on `Connect to a Caching/Valkey service` :
+Then on `Connect to a Valkey service` :
 
-![Configure your Caching/Valkey service](images/redis_06_connect_redisinsight-2022020711515517.png)
+![Configure your Valkey service](images/redis_06_connect_redisinsight-2022020711515517.png)
 
 Fill in the form with the previously collected credentials. Check the `Use TLS` check box and uncheck the `Verify TLS Certificate` check box. Then click on `ADD REDIS DATABASE` :
 
 ![Add Redis database](images/redis_06_connect_redisinsight-20220207120005204.png)
 
-Finally, select your Caching/Valkey service:
+Finally, select your Valkey service:
 
 ![Dashboard](images/redis_06_connect_redisinsight-20220209095424435.png)
 
-Congratulations! You are now connected to your Caching/Valkey instance!
+Congratulations! You are now connected to your Valkey instance!
 
 ![Result](images/redis_06_connect_redisinsight-20220209095533690.png)
 

@@ -1,7 +1,7 @@
 ---
 title: "Speicherplatz eines E-Mail-Accounts verwalten"
 excerpt: "Erfahren Sie hier, wie Sie den Speicherplatz von E-Mail-Accounts verwalten und optimieren"
-updated: 2025-04-28
+updated: 2025-08-19
 ---
 
 ## Ziel
@@ -12,8 +12,12 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) oder **MX Plan** (enthalten in einem [Webhosting](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über eine vorkonfigurierte OVHcloud E-Mail-Lösung, darunter:
+    - **MX Plan** mit unseren [Webhosting Angeboten](/links/web/hosting) oder in einem [100M Gratis-Hosting](/links/web/domains-free-hosting) inklusive.
+    - [Exchange](/links/web/emails).
+    - [Email Pro](/links/web/email-pro).
+    - [Zimbra](/links/web/emails-zimbra).
 - Sie verfügen über Anmeldeinformationen für den zu konfigurierenden E-Mail-Account.
 
 > [!primary]
@@ -22,6 +26,16 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 >
 > - Hinweis zu Kostenloses Hosting 100M: Dieses muss zuerst aktiviert werden, um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](/links/manager) durchführen, indem Sie den betreffenden Domainnamen aufrufen.
 > - Bei einem [Webhosting](/links/web/hosting) müssen Sie den zugehörigen MX Plan aktivieren, bevor Sie mit dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting enthaltenen E-Mail-Accounts aktivieren](/pages/web_cloud/web_hosting/activate-email-hosting)".
+
+> [!primary]
+>
+> **E-Mail-Technologie Ihres MX Plan Angebots identifizieren.**
+>
+> Abhängig vom Aktivierungsdatum Ihres MX Plan Angebots oder einer kürzlich durchgeführten Migration kann die zugehörige E-Mail-Technologie variieren. Diese Version ist durch das Webmail-Interface gekennzeichnet.
+>
+> - Gehen Sie in den Tab `Allgemeine Informationen`{.action} und wählen Sie die Technologie aus, die unter **Webmail** in der Randleiste `Abonnement`{.action} oder `Webmail`{.action} verwendet wird.
+>
+>![mx plan](images/technology-email.png){.thumbnail .w-500}
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
@@ -42,20 +56,25 @@ Sie können diese Aktion über das Kundencenter durchführen, wenn Sie den zugeh
 Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
 
 > [!tabs]
-> **E-Mails (MX Plan)**
+> **MX Plan**
 >>
 >> Klicken Sie auf `MX Plan`{.action} und wählen Sie den Namen des betreffenden MX Plans aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Hier werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den aktuellen Verbrauch Ihrer E-Mail-Accounts sehen.<br><br>
->>![E-Mail](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
+>> ![E-Mail](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
 >>
 > **E-Mail Pro**
 >>
 >> Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie den betreffenden Dienst aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Hier werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den laufenden Verbrauch Ihrer E-Mail-Account einsehen.<br><br>
->>![E-Mail](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
+>> ![E-Mail](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Klicken Sie auf `Microsoft`{.action}, dann `Exchange`{.action} und wwählen Sie den betreffenden Dienst aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Hier werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den laufenden Verbrauch Ihrer E-Mail-Account einsehen.<br><br>
->>![E-Mail](images/email-quota-quotacontrolpanel03.png){.thumbnail}<br>
+>> ![E-Mail](images/email-quota-quotacontrolpanel03.png){.thumbnail}<br>
+>>
+> **Zimbra**
+>>
+>> Klicken Sie auf `Zimbra Mail`{.action}. Gehen Sie auf den Tab `E-Mail-Account`{.action}. Das angezeigte Fenster zeigt die bestehenden E-Mail-Accounts an. Sie können in der Spalte `Quota` den aktuellen Speicherverbrauch Ihrer E-Mail-Adresse einsehen.<br><br>
+>> ![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
 >>
 
 #### Über das Webmail <a name="quotawebmail"></a>
@@ -63,15 +82,20 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web C
 Um sich im Webmail einzuloggen, gehen Sie auf die Seite [Webmail](/links/web/email) und geben Sie die Login-Daten zu Ihrem E-Mail-Account ein. Wählen Sie anschließend das zu Ihrem Angebot passende Webmail-Interface aus:
 
 > [!tabs]
-> **OWA**: **E-Mails (MX Plan)** / **E-Mail Pro** / **Exchange**
+> **OWA**: **MX Plan** / **E-Mail Pro** / **Exchange**
 >>
 >> Klicken Sie auf das Zahnrad oben rechts und klicken Sie auf `Optionen`{.action}. Klicken Sie unter `Allgemein`{.action} auf `Mein Konto`{.action} in der linken Spalte. Sie können die aktuelle Speicherbelegung Ihres Accounts auf unten auf der Seite einsehen.<br><br>
 >>![E-Mail](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
-> **Roundcube**: **E-Mails (MX Plan)**
+> **Roundcube**: **MX Plan**
 >>
->> Wenn Sie im Roundcube Webmail eingeloggt sind, wird die Quota im linken Bereich als Kreisdiagramm mit Prozentangabe angezeigt.<br><br>
+>> Wenn Sie im Roundcube Webmail eingeloggt sind, sehen Sie unten links das Quota in einem Kreisdiagramm und den prozentualen Verbrauch.<br><br>
 >>![E-Mail](images/email-quota-webmail02.png){.thumbnail}<br>
+>>
+> **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
+>>
+>> Wenn Sie im Zimbra Webmail eingeloggt sind, klicken Sie auf das Zahnrad `&#9881;` oben rechts in Ihrem Interface und dann auf `Einstellungen`{.action}. Im Tab `Allgemein`{.action} wird das verwendete Quota unter dem Vermerk "Stauraum" angezeigt.<br><br>
+>> ![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
 ### 2. **Optimieren** Ihres E-Mail-Accounts <a name="optimise"></a>
@@ -96,7 +120,7 @@ Sie können dann noch E-Mails versenden, diese werden aber nicht im Ordner für 
 Sie können die Speicherkapazität Ihres E-Mail-Accounts erhöhen, sofern er seine maximale Größe nicht erreicht hat. Folgen Sie der Vorgehensweise für Ihren Dienst:
 
 > [!tabs]
-> **E-Mails (MX Plan)**
+> **MX Plan**
 >>
 >> Die Größe eines MX Plan Accounts kann zwischen 2,5 MB und 5 GB betragen. Sie können die Kapazität bei Bedarf über das [OVHcloud Kundencenter](/links/manager)<br> ändern.
 >> Klicken Sie im Tab `E-Mail-Accounts`{.action} rechts neben dem zu ändernden Account auf `...`{.action} und dann auf `Ändern`{.action}.
@@ -115,6 +139,11 @@ Sie können die Speicherkapazität Ihres E-Mail-Accounts erhöhen, sofern er sei
 >>
 >> Wenn der betreffende Account in Exchange **Hosted** oder **Provider** bereits 300 GB Speicherplatz belegt, müssen Inhalte gelöscht oder lokal auf Ihrem Computer [archiviert werden](#archiveorswitch). Dies gilt auch für **Private** Exchange Accounts mit 50 GB Speicherplatz.
 >>
+> **Zimbra**
+>>
+>> Das Zimbra Starter Angebot umfasst 15 GB Storage. Wenn Sie die Kapazität erhöhen möchten, können Sie auf das Zimbra Pro Angebot wechseln.
+>> Klicken Sie im Tab `E-Mail-Account`{.action} auf Ihrer Plattform auf den Button `...`{.action} rechts neben dem zu ändernden Account und klicken Sie dann auf `Upgrade`{.action}.
+>> Wenn Sie ein Zimbra Pro oder Business Angebot haben, verfügen Sie bereits über die maximale Kapazität von 50 GB. Sie müssen Speicherplatz in Ihrem Zimbra-Konto freigeben, indem Sie nicht benötigte Elemente löschen oder [E-Mails archivieren](#archiveorswitch) lokal auf Ihrem Computer.
 
 ### 3. **Archivieren** oder **E-Mail-Dienst wechseln** <a name="archiveorswitch"></a>
 
@@ -139,7 +168,7 @@ Nachfolgend finden Sie eine nicht erschöpfende Liste der Konfigurationsanleitun
 - EWS Protokoll für **Exchange** mit macOS Outlook 
 
 > [!tabs]
-> **E-Mails (MX Plan)**
+> **MX Plan und Zimbra Starter**
 >>
 >> Konfiguration eines MX Plan Accounts auf **Windows**:<br><br>
 >> - [Windows 10 Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (bei Windows inklusive)<br>
@@ -171,7 +200,15 @@ Nachfolgend finden Sie eine nicht erschöpfende Liste der Konfigurationsanleitun
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos) (inklusive mit macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird_mac) (kostenlos)<br>
->
+>>
+> **Zimbra Pro**
+>>
+>> Konfiguration eines Zimbra Accounts auf **Windows**:<br><br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_windows)<br>
+>> Konfiguration eines Zimbra Accounts auf **macOS**:<br><br>
+>> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_macos)<br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_macos)<br>
+>>
 
 Wenn Ihr E-Mail-Client installiert ist, folgen Sie den nachstehenden Anweisungen, um den Archivordner zu konfigurieren.
 
@@ -198,7 +235,7 @@ Wenn Ihr E-Mail-Client installiert ist, folgen Sie den nachstehenden Anweisungen
 Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 
 > [!tabs]
-> **E-Mails (MX Plan)**
+> **MX Plan**
 >>
 >> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei 5 GB beträgt, können Sie sich für eine Migration auf [**E-Mail Pro** mit 10 GB](/links/web/email-pro) oder [**Hosted Exchange** mit 50 GB](/links/web/emails-hosted-exchange) entscheiden. Bestellen Sie hierzu das gewünschte Angebot und folgen Sie unserer Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>
@@ -212,6 +249,10 @@ Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 >> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihres Exchange Dienstes auf `...`{.action} rechts neben dem zu ändernden Account und danach auf `Kapazität auf 300 GB erhöhen`{.action}.<br><br>
 >> ![E-Mail](images/email-quota-more02.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>> Das Zimbra Starter Angebot umfasst 15 GB Storage. Wenn Sie die Kapazität erhöhen möchten, können Sie auf das Zimbra Pro Angebot wechseln.
+>> Klicken Sie im Tab `E-Mail-Account`{.action} auf Ihrer Plattform auf den Button `...`{.action} rechts neben dem zu ändernden Account und dann auf `Upgrade`{.action}.<br><br>
+>> ![email](images/email-quota-more03.png){.thumbnail}<br>
 
 ## Weiterführende Informationen
 

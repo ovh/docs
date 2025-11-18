@@ -1,7 +1,7 @@
 ---
 title: Zmiana rozmiaru instancji Public Cloud przy użyciu CLI OpenStack
 excerpt: "Dowiedz się, jak skalować zasoby instancji w celu zwiększenia aktywności"
-updated: 2023-09-26
+updated: 2025-08-25
 ---
 
 > [!primary]

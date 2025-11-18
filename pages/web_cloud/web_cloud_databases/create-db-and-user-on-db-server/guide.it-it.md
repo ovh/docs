@@ -12,14 +12,14 @@ Un database («DB») permette di conservare elementi cosiddetti dinamici quali, 
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
+- Disporre di una [istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 ### Crea un database
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
 
 Clicca sulla scheda `Database` e infine su `Aggiungi un database`{.action}
 
@@ -45,7 +45,7 @@ Clicca su `Conferma`{.action}.
 
 Per utilizzare un database server OVHcloud è necessario creare utenti con diritti specifici per connettersi a un database.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
 
 Clicca sulla scheda `Utenti e diritti` e poi su `Aggiungi un utente`{.action}
 
@@ -57,7 +57,7 @@ Inserisci un "nome utente" e una "password" e clicca su `Conferma`{.action}.
 
 Per autorizzare un utente ad effettuare azioni su un database, è necessario assegnargli dei diritti.
 
-Per gestire i diritti di ogni utente accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`.
+Per gestire i diritti di ogni utente accedi al tuo [Spazio Cliente OVHcloud](/links/manager). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza dell'utente interessato e seleziona `Gestisci i permessi`{.action}.
 
@@ -88,7 +88,7 @@ Ecco la descrizione dei 3 tipi di diritti proposti:
 > un backup personale prima dell'eliminazione.
 > 
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
 
 Per eliminare un database sul tuo database server, vai nella scheda `Database`, poi clicca sul pulsante `...`{.action} a destra del database in questione e infine clicca su `Elimina il database`{.action}.
 

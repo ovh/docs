@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
+> Podziel się z nami swoją opinią i pomysłami.<br>
+> [przejdź do ankiety.](https://s.elq.fr/ovhext/QBbCw6r)
+
 ## Wprowadzenie
 
 OVHcloud oddaje do Twojej dyspozycji narzędzia pozwalające zwiększyć bezpieczeństwo Twojego konta i naszych usług.
@@ -136,7 +141,7 @@ Po dodaniu pierwszej metody możesz również **dodać jedną lub dwie inne meto
 
 Przy pierwszym dodaniu weryfikacji dwuetapowej w Panelu klienta wyświetlanych jest 10 jednorazowych kodów zapasowych **jednorazowych**.
 
-**Zachowaj je w bezpiecznym miejscu**. Zalecamy, aby przechowywać je w menedżerze haseł, takim jak [KeePass](https://keepass.info/){.external} lub [Bitwarden](https://bitwarden.com/) (obie aplikacje są bezpłatne).
+**Zachowaj je w bezpiecznym miejscu**. Zalecamy, aby przechowywać je w menedżerze haseł, takim jak [KeePass](https://keepass.info/) lub [Bitwarden](https://bitwarden.com/) (obie aplikacje są bezpłatne).
 
 ![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
@@ -146,13 +151,13 @@ Możesz wygenerować lub usunąć kody zapasowe w Panelu klienta:
 
 > [!warning]
 >
-> Stanowczo zaleca się wykonanie kopii zapasowej tych kodów zapasowych** i upewnienie się, że są one prawidłowe.
+> **Zdecydowanie zalecamy zapisanie tych kodów awaryjnych i upewnienie się, że są one ważne.**
 > Bez posiadanego kodu bezpieczeństwa, w przypadku kradzieży lub utraty telefonu/smartfona/tabletu lub klucza sprzętowego, dostęp do Twojego panelu klienta i usług może zostać zablokowany.
 >
 
 ### Etap 3 - Logowanie do Panelu klienta OVHcloud z weryfikacją dwuetapową <a name="login-2fa"></a>
 
-Przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](/links/manager){.external} i wpisz swój identyfikator (lub główny adres e-mail) oraz hasło.
+Przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](/links/manager) i wpisz swój identyfikator (lub główny adres e-mail) oraz hasło.
 
 Na ekranie identyfikacji wyświetlana jest ostatnia użyta lub podana metoda weryfikacji dwuetapowej. Jeśli chcesz skorzystać z innej metody, kliknij przycisk `Wypróbuj inną metodę`{.action}.
 

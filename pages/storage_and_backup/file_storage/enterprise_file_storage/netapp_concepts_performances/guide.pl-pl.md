@@ -1,16 +1,12 @@
 ---
 title: Enterprise File Storage - Koncepcje wydajności
 excerpt: "Poznaj koncepcje związane z tworzeniem rezerw, monitoringiem oraz testowaniem wydajności rozwiązania Enterprise File Storage"
-updated: 2022-11-30
+updated: 2025-09-12
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
-Poznaj pojęcia związane z tworzeniem rezerw, monitorowaniem oraz testowaniem wydajności rozwiązania [Enterprise File Storage](https://www.ovhcloud.com/pl/storage-solutions/enterprise-file-storage/).
+Poznaj pojęcia związane z tworzeniem rezerw, monitorowaniem oraz testowaniem wydajności rozwiązania [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## W praktyce
 
@@ -31,7 +27,7 @@ Informacja ta jest ważna w przypadku architektury przestrzeni dyskowej. Przytoc
 
 - **Przykład nr 2**: Twoja infrastruktura wymaga **4500 IOPS** i ilości danych **1 TB**. W tym celu należy zapewnić zapasy **2 TB**, aby otrzymać **niezbędne 4500 IOPS**. W tym przypadku skorzystasz z **8000 IOPS** w przypadku wykorzystania dodatkowej pojemności. Chodzi zatem o nadmierne dostarczanie usługi, aby zapewnić pożądany poziom wydajności.
 
-- **Przykład nr 3**: Twoja aplikacja nie wymaga szczególnie dużej wydajności, ale przestrzeni dyskowej większej niż **60 TB**. W takim przypadku lepiej jest wybrać usługę przestrzeni dyskowej [NAS-HA](https://www.ovhcloud.com/pl/storage-solutions/nas-ha/), która jest bardziej ekonomiczna i pozwala na osiągnięcie wydajności przekraczającej 58 TB na usługę.
+- **Przykład nr 3**: Twoja aplikacja nie wymaga szczególnie dużej wydajności, ale przestrzeni dyskowej większej niż **60 TB**. W takim przypadku lepiej jest wybrać usługę przestrzeni dyskowej [NAS-HA](/links/storage/nas-ha), która jest bardziej ekonomiczna i pozwala na osiągnięcie wydajności przekraczającej 58 TB na usługę.
 
 ### Liczba woluminów i jakości usług (QoS)
 
@@ -70,10 +66,51 @@ Narzędzie [FIO](https://github.com/axboe/fio) pozwala na przetestowanie kilku s
 - Liczbę FIO workers.
 - Model dostępu (odczyt/zapis/sekwencyjny/losowy) itp.
 
-Więcej informacji znajduje się na stronie [dokumentacja FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
+Poniżej znajdziesz kilka przykładowych poleceń fio pozwalających na potwierdzenie, że maksymalna liczba IOPS (4000) lub maksymalna przepustowość (64MB/s) mogą zostać osiągnięte dla usługi EFS 1TB:
+
+**Random read - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=8k -size=1G -time_based -runtime=60 -name=test1 -directory=/share-nfs
+```
+**Random write - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=8k -size=1G -time_based -runtime=60 -name=test2 -directory=/share-nfs
+```
+**Random read - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=64k -size=1G -time_based -runtime=60 -name=test3 -directory=/share-nfs
+```
+**Random write - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=64k -size=1G -time_based -runtime=60 -name=test4 -directory=/share-nfs
+```
+**Sequential read - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=8k -size=1G -time_based -runtime=60 -name=test5 -directory=/share-nfs
+```
+**Sequential write - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=8k -size=1G -time_based -runtime=60 -name=test6 -directory=/share-nfs
+```
+**Sequential Read - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=64k -size=1G -time_based -runtime=60 -name=test7 -directory=/share-nfs
+```
+**Sequential write - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=64k -size=1G -time_based -runtime=60 -name=test8 -directory=/share-nfs
+```
+
+Więcej informacji znajduje się na stronie [dokumentacja FIO](https://fio.readthedocs.io/en/latest/index.html).
+
+**Możesz również korzystać z innych narzędzi open-source, takich jak:**
+
+- [nfsiostat](https://man7.org/linux/man-pages/man8/nfsiostat.8.html)
+- [NFStest](https://wiki.linux-nfs.org/wiki/index.php/NFStest)
+- [nfstrace](https://github.com/epam/nfstrace)
 
 ## Sprawdź również
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
-Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/jW2FgBJ72h>
+Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/ovhcloud>

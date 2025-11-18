@@ -16,7 +16,7 @@ Mit der Einrichtung eines Webservers und verwandter Software kann Ihr Cloud Serv
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/de/vps/) oder eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Kunden-Account (ausgenommen Windows-Systeme).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps) oder eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem Kunden-Account (ausgenommen Windows-Systeme).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff (sudo) auf Ihren Dienst über SSH.
 
@@ -237,9 +237,9 @@ Weitere Informationen finden Sie in der [Anleitung zum Bearbeiten der DNS-Zone](
 
 > [!primary]
 >
-> Um sichere Verbindungen (`https`) herstellen zu können, muss der Webserver über eine Zertifizierungsstelle wie [Let's Encrypt](https://letsencrypt.org/){.external}, die kostenlose Zertifikate anbietet, abgesichert werden. Hierzu muss ein Client-Tool ("Certbot" in diesem Beispiel) installiert und Apache entsprechend konfiguriert werden. Ohne diesen Schritt wird Ihre Website oder Anwendung nur unverschlüsselte Anfragen über `http` akzeptieren können.
+> Um sichere Verbindungen (`https`) herstellen zu können, muss der Webserver über eine Zertifizierungsstelle wie [Let's Encrypt](https://letsencrypt.org/), die kostenlose Zertifikate anbietet, abgesichert werden. Hierzu muss ein Client-Tool ("Certbot" in diesem Beispiel) installiert und Apache entsprechend konfiguriert werden. Ohne diesen Schritt wird Ihre Website oder Anwendung nur unverschlüsselte Anfragen über `http` akzeptieren können.
 > 
-> Alternativ dazu bietet Ihnen OVHcloud die Lösung [SSL Gateway](https://www.ovh.de/ssl-gateway/). Weitere Informationen dazu finden Sie in [unseren Anleitungen](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
+> Alternativ dazu bietet Ihnen OVHcloud die Lösung [SSL Gateway](/links/web/ssl-gateway). Weitere Informationen dazu finden Sie in [unseren Anleitungen](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
 Überprüfen Sie zunächst, dass Ihr Domainname über die richtigen Einträge in der DNS-Zone verfügt, d.h. diese müssen auf die IP-Adresse Ihres Servers verweisen.

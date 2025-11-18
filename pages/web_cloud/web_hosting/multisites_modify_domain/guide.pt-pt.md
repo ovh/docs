@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Alterar um nome de domínio já associado a um alojamento"
 excerpt: "Saiba como alterar as configurações de associação de um domínio/subdomínio já declarado na sua oferta de alojamento web"
-updated: 2025-02-20
+updated: 2025-11-05
 ---
 
 ## Objetivo
@@ -84,12 +84,6 @@ Durante a utilização dos seus serviços, poderá ser necessário alterar a `Pa
 
 #### Outras opções disponíveis
 
-##### A opção "SSL"
-
-Selecione/desmarque esta caixa unicamente se deseja ativar/desativar o SSL gratuito **Let's Encrypt** para o seu nome de domínio/subdomínio. Não é necessário selecionar esta opção para as outras ofertas SSL disponibilizadas na OVHcloud.
-
-Encontre mais informações sobre as opções/ofertas SSL disponíveis na nossa documentação dedicada "[Gerir um certificado SSL num alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
-
 ##### A opção "Ativar o CDN"
 
 Para poder utilizar esta opção, deve ter previamente subscrito uma oferta CDN da OVHcloud ou dispor de um serviço de alojamento web Performance.
@@ -128,7 +122,7 @@ Se o conjunto dos parâmetros estiver configurado de acordo com os seus desejos,
 
 Dependendo das opções selecionadas, as alterações podem levar de alguns minutos ou algumas horas para serem aplicadas.
 
-Se, para as opções **SSL**, **CDN**, **IP do país** e **logs separados**, as modificações não forem aplicadas após 24 horas, consulte os respetivos manuais (e páginas) indicados para o conjunto das opções descritas no [etapa 1](#step1), a fim de verificar que todas as condições exigidas foram corretamente respeitadas e realizadas.
+Se, para as opções **CDN**, **IP do país** e **logs separados**, as modificações não forem aplicadas após 24 horas, consulte os respetivos manuais (e páginas) indicados para o conjunto das opções descritas no [etapa 1](#step1), a fim de verificar que todas as condições exigidas foram corretamente respeitadas e realizadas.
 
 ## Quer saber mais?
 

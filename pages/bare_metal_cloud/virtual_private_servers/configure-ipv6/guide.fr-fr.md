@@ -1,8 +1,12 @@
 ---
 title: "Configurer l'IPv6 sur un serveur VPS"
 excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
-updated: 2024-09-11
+updated: 2025-09-30
 ---
+
+> [!primary]
+> Cet article concerne la configuration d'adresses IPv6 principales sur une interface publique. Vous pouvez également configurer des adresses Additional IP sur votre VPS en utilisant [ce guide](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>
 
 ## Objectif
 
@@ -12,15 +16,15 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 
 > [!warning]
 >
-> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section [Aller plus loin](#go-further) de ce guide.
 > 
 
 ## Prérequis
 
-- Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
+- Disposer d'un [serveur VPS OVHcloud](/links/bare-metal/vps).
 - Être connecté à votre VPS en SSH (accès root) ou via un bureau à distance (Windows).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external} ou à l'[API OVHcloud](https://api.ovh.com/).
+- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[API OVHcloud](/links/api).
 
 ## En pratique
 
@@ -58,16 +62,21 @@ L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans 
 
 #### Via les API OVHcloud <a name="viaapi"></a>
 
-Rendez-vous sur le site <https://api.ovh.com/console/> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
+Rendez-vous sur la page des [API OVHcloud](/links/console) :
 
-La première vous permet de récupérer l'adresse IPv6 assignée à votre serveur.
+- Cliquez sur `Authentication`{.action} en haut à gauche.
+- Cliquez ensuite `Login with OVHcloud SSO`{.action}.
+- Saisissez vos identifiants OVHcloud.
+- Cliquez sur le bouton `Authorize`{.action} pour autoriser les appels aux API depuis ce site.
+
+La première fonction vous permet de récupérer l'adresse IPv6 assignée à votre serveur.
 
 > [!api]
 >
 > @api {v1} /vps GET /vps/{serviceName}/ips
 >
 
-La seconde vous permet de récupérer la gateway IPv6 assignée à votre serveur.
+La seconde fonction vous permet de récupérer la gateway IPv6 assignée à votre serveur.
 
 > [!api]
 >
@@ -78,7 +87,7 @@ Une fois les adresses récupérées, continuez à l'étape 2 « [Appliquer la co
 
 ### Étape 2 : appliquer la configuration IPv6 <a name="applyipv6"></a>
 
-Une fois les informations nécessaires pour la configuration IPv6 en votre possession, connectez-vous en SSH à votre VPS. Si besoin, aidez-vous des informations de notre documentation « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} ».
+Une fois les informations nécessaires pour la configuration IPv6 en votre possession, connectez-vous en SSH à votre VPS. Si besoin, aidez-vous des informations de notre documentation « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) ».
 
 Il existe plusieurs méthodes pour appliquer la configuration IPv6. En fonction de votre situation et de vos besoins, poursuivez vers celle que vous souhaitez utiliser.
 
@@ -115,7 +124,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
-- **pour Debian 10 et 11** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
+- **pour Debian 11** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
 
 - **pour Debian 12, Ubuntu 20.04 et versions ultérieures** : utilisez la [méthode basée sur la fonction *Netplan*](#netplan).
 
@@ -200,7 +209,7 @@ Les fichiers de configuration du réseau sont situés dans le répertoire `/etc/
 
 Si l'adresse IPv6 n'a pas été configurée, la meilleure approche est de créer un fichier de configuration séparé pour configurer l'adresse IPv6 dans le répertoire `/etc/netplan/`. De cette façon, vous pouvez facilement revenir sur les modifications en cas d'erreur.
 
-De plus, nous vous recommandons d'ajuster les permissions pour le fichier nouvellement créé. Pour plus d'informations sur les permissions des fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+De plus, nous vous recommandons d'ajuster les permissions pour le fichier nouvellement créé. Pour plus d'informations sur les permissions des fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions).
 
 Dans notre exemple, notre fichier est nommé `51-cloud-init-ipv6.yaml` :
 
@@ -476,6 +485,6 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 
 Pour revenir à une gestion automatique de votre réseau par Cloud-init, supprimez le fichier nouvellement créé ou déplacez-le dans un autre répertoire.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

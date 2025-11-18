@@ -16,13 +16,13 @@ updated: 2022-09-28
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - You must be connected to your clusters via Prism Central.
 
 ## Instructions
 
 We are going to interconnect two remote Nutanix clusters, one in Gravelines and the other in Roubaix through the same vRack.<br>
-See our [vRack overview](https://www.ovh.pl/rozwiazania/vrack/) to learn more about the OVHcloud vRack solution.
+See our [vRack overview](/links/network/vrack) to learn more about the OVHcloud vRack solution.
 
 ### Preparing both clusters before interconnection
 
@@ -73,7 +73,7 @@ Access to Prism Central is maintained using the Load Balancer.
 
 This operation involves deleting the vRack assignment in Roubaix and then extending the vRack from Gravelines to Roubaix. You can modify the vRack via the OVHcloud Control Panel. 
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). 
+Log in to your [OVHcloud Control Panel](/links/manager). 
 
 #### Deleting Roubaix vRack elements.
 
@@ -204,8 +204,8 @@ The Load Balancer is connected to the vRack shared by both sites, and access to 
 
 [Advanced replication with Leap](/pages/hosted_private_cloud/nutanix_on_ovhcloud/47-nutanix-leap)
 
-[Introduction to vRacks](https://www.ovh.pl/rozwiazania/vrack/)
+[Introduction to vRacks](/links/network/vrack)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

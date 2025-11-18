@@ -94,7 +94,7 @@ annotations:
 > Therefore, please **read the entire guide** (and especially the "How to perform a DNS switch" section) before you proceed with the steps below.
 >
 
-### **Migration**
+### Migration
 
 Migrating from an existing [Load Balancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud Load Balancer](/links/public-cloud/load-balancer) involves creating a new Load Balancer service using Public Cloud Load Balancer with the same label selector to expose your application. For a short period of time, your application will be accessible using both Load Balancers.
 
@@ -167,7 +167,7 @@ Once you confirm that traffic is flowing through the new Load Balancer and the o
 kubectl delete svc old-loadbalancer-service
 ```
 
-### **Replacement**
+### Replacement
 
 Replacing an existing [Load Balancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) with a [Public Cloud Load Balancer](/links/public-cloud/load-balancer) involves modifying the existing service and changing the loadbalancer class from `iolb` to `octavia`. This will lead to Kubernetes reconciling the loadbalancer class by deleting the old one and creating a new loadbalancer.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar la contraseña de una dirección de correo'
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo de OVHcloud'
-updated: 2025-04-28
+updated: 2025-08-12
 ---
 
 ## Objetivo
@@ -15,24 +15,34 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](/links/web/hosting), incluida en un [alojamiento Start10M gratuito](/links/web/domains-free-hosting) o contratada por separado como solución autónoma, como [**Hosted Exchange**](/links/web/emails-hosted-exchange) o [**Email Pro**](/links/web/email-pro)).
 - Según el método utilizado: Estar conectado al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} o estar conectado a la dirección de correo electrónico desde el [webmail](/links/web/email).
+- Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
+    - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting) o incluido en un [alojamiento gratuito 100M](/links/web/domains-free-hosting).
+    - [Exchange](/links/web/emails).
+    - [Email Pro](/links/web/email-pro).
+    - [Zimbra](/links/web/emails-zimbra).
+
+## Procedimiento
 
 > [!primary]
 >
-> Al cambiar la contraseña de una dirección de correo, también deberá modificarla en todos los dispositivos en los que esté configurada la dirección de correo. No dude en consultar nuestras guías de configuración para su cliente de correo desde la página de inicio de su solución de correo:
->
-> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
-> - [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
-> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
->
-
-## Procedimiento
+> Al cambiar la contraseña de una dirección de correo, también deberá modificarla en todos los dispositivos en los que esté configurada la dirección de correo. No dude en consultar nuestras guías de configuración para su cliente de correo desde la página de inicio de su solución de correo.
 
 ### Cambiar la contraseña desde el área de cliente <a name="controlpanel"></a>
 
 > [!warning]
+>
 > Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
+
+> [!primary]
+>
+> **Identificar la tecnología de correo electrónico de su solución MX Plan.**
+>
+> En función de la fecha de activación de su MX Plan o de una migración reciente, la tecnología de correo asociada puede diferir. Esta versión se caracteriza por la interfaz de su webmail. Para identificarlo:
+>
+> - En la pestaña `Información general`{.action}, consulte la tecnología utilizada bajo la mención **Webmail** que aparece en el recuadro `Suscripción`{.action} o `Webmail`{.action}.
+>
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
 
@@ -63,19 +73,29 @@ Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web
 >> Haga clic en el botón `...`{.action} y seleccione `Editar`{.action}.<br><br>
 >>![Correo electrónico](images/email-password-exchange01.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>>
+>> Haga clic en `Zimbra Mail`{.action} y diríjase a la pestaña `Cuenta email`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. <br>
+>> Haga clic en el botón `...`{.action} y luego en `Modificar`{.action}.<br><br>
+>>![email](images/email-password-zimbra01.png){.thumbnail}<br>
+>>
 
 ### Cambiar la contraseña desde el webmail
 
 La modificación de su contraseña a través del webmail está disponible para los servicios de correo electrónico de OVHcloud que utilizan **OWA** (**O**utlook **W**eb **A**pp):
 
-- Emails MX Plan (nueva versión)
+- MX Plan OWA
 - Email Pro
 - Exchange
+- MX Plan Zimbra
+- Zimbra Starter / Pro
 
 > [!warning]
 >
-> La solución **MXplan (versión histórica)** utiliza el webmail Roundcube. La modificación de la contraseña solo se realiza [desde el área de cliente](#controlpanel).
+> Para la solución **MX Plan Roundcube**, el cambio de contraseña solo se realiza [desde el área de cliente](#controlpanel).
 >
+
+#### OWA
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -100,6 +120,14 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
 
+#### Zimbra
+
+Acceda a la página [Webmail](/links/web/email). Introduzca su dirección de correo electrónico y la contraseña y haga clic en `Conectar`{.action}.
+
+Haga clic en el nombre de su cuenta de correo en la parte superior derecha de su interfaz. Desde este menú, podrá `Cambiar la contraseña`{.action}.
+
+![Zimbra - preferencias](images/zimbra-password.png){.thumbnail}
+
 ### Recupera una password
 
 Per motivi di sicurezza e riservatezza non è possibile **recuperare** una password. Come descritto nei passaggi precedenti, è necessario reimpostare la password nel caso in cui non sia più nota.
@@ -108,14 +136,6 @@ Per motivi di sicurezza e riservatezza non è possibile **recuperare** una passw
 >
 > Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
 
-#### Identifique su solución MX Plan <a name="whichmxplan"></a>
-
-En la siguiente tabla encontrará la información necesaria para identificar su solución MX Plan.
-
-|Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
-|---|---|
-|![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> La oferta aparece en el recuadro "**Suscripción**", a la derecha, y el producto histórico *no posee* un servidor de referencia.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nuevo producto tiene una "**Referencia del servidor**" en el recuadro "**Resumen**" a la izquierda.|
-
 ## Más información
 
 [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
@@ -123,6 +143,8 @@ En la siguiente tabla encontrará la información necesaria para identificar su 
 [Primeros pasos con la solución Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 [Primeros pasos con la solución Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+
+[Primeros pasos con la solución Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 

@@ -20,7 +20,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
-- Sie verwenden einen unserer Datenbankdienste: [Web Cloud](/links/web/hosting-options-startsql) oder [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/).
+- Sie verwenden einen unserer Datenbankdienste: [Web Cloud](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 ## In der praktischen Anwendung
 
@@ -149,7 +149,7 @@ Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung
 
 ### Überschreitungen der RAM-Kapazität (nur Web Cloud Databases)
 
-In der unten abgebildeten Nachricht im Bereich `Web Cloud Databases`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) wird darauf hingewiesen, dass Ihre [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
+In der unten abgebildeten Nachricht im Bereich `Web Cloud Databases`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) wird darauf hingewiesen, dass Ihre [Web Cloud Databases](/links/web/databases) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
@@ -157,7 +157,7 @@ In diesem Fall können Sie die [RAM-Kapazität](/pages/web_cloud/web_cloud_datab
 
 > [!warning]
 >
-> Diese Erweiterung des RAM funktioniert nur bei einer Web Cloud Databases, die nicht Teil eines Performance Webhostings ist. Wenn Sie die RAM-Kapazität einer in den [Performance Angeboten](/links/web/hosting-performance-offer){.external} enthaltenen Datenbank erhöhen möchten, müssen Sie diese zuerst abtrennen.
+> Diese Erweiterung des RAM funktioniert nur bei einer Web Cloud Databases, die nicht Teil eines Performance Webhostings ist. Wenn Sie die RAM-Kapazität einer in den [Performance Angeboten](/links/web/hosting-performance-offer) enthaltenen Datenbank erhöhen möchten, müssen Sie diese zuerst abtrennen.
 > 
 > Loggen Sie sich zum Abtrennen der Datenbank in Ihr [OVHcloud Kundencenter](/links/manager) ein und öffnen Sie `Web Cloud`{.action}. Klicken Sie links auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting mit der aktiven Web Cloud Databases aus.
 >

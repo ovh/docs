@@ -23,7 +23,7 @@ So if you have not done so yet, **please ensure that your project is compatible 
 
 ### Step 1: Access the runtime environment management interface.
 
-To access your Cloud Web hosting plan’s runtime environments, log in to the [OVHcloud Control Panel](/links/manager){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime environments`{.action} tab.
+To access your Cloud Web hosting plan’s runtime environments, log in to the [OVHcloud Control Panel](/links/manager). Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime environments`{.action} tab.
 
 The table that appears will list the runtime environments currently added to your Cloud Web hosting plan. Please note that a runtime environment will be created automatically when you set up your web hosting plan.
 
@@ -33,7 +33,7 @@ The table that appears will list the runtime environments currently added to you
 
 There are several different ways you can manage the runtime environments on your Cloud Web hosting plan:
 
-- [add or modify a runtime environment](./#21-add-or-modify-a-runtime-environment){.external} (the maximum number of runtime environments will vary depending on the [plan you have selected](/links/web/hosting-cloud-web-offer){.external})
+- [add or modify a runtime environment](./#21-add-or-modify-a-runtime-environment) (the maximum number of runtime environments will vary depending on the [plan you have selected](/links/web/hosting-cloud-web-offer))
 - define a runtime environment as a default choice
 - delete a runtime environment
 
@@ -52,10 +52,10 @@ To add or modify a runtime environment, go to the `Runtime environment`{.action}
 
 Enter the information requested in the pop-up window. Follow the remaining steps depending on the runtime environment you have selected:
 
-- [PHP](./#php){.external} 
-- [Node.js](./#nodejs){.external}
-- [Ruby](./#ruby){.external} 
-- [Python](./#python){.external} 
+- [PHP](./#php) 
+- [Node.js](./#nodejs)
+- [Ruby](./#ruby) 
+- [Python](./#python) 
 
 ##### **PHP**
 
@@ -64,7 +64,7 @@ Enter the information requested in the pop-up window. Follow the remaining steps
 |Custom name|Enter a name that will distinguish this runtime environment from any other environments in the OVHcloud Control Panel.|  
 |Runtime environment|Choose the new runtime environment you want.|  
 
-Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
+Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite).
 
 ##### **Node.js**
 
@@ -76,7 +76,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 |Application environment|Specify whether it is a "production", "test" or "development" environment. Please keep in mind that development environments behave differently from production and test environments, displaying errors directly in the web interface.|
 |Application launch script|Name the script that will call the Node.js technology.|
 
-Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
+Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 |Application environment|Specify whether it is a "production", "test" or "development" environment. Please keep in mind that development environments behave differently from production and test environments, displaying errors directly in the web interface.|
 |Application launch script|Name the script that will call the Ruby runtime environment.|
 
-Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
+Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
@@ -104,7 +104,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 |Application environment|Specify whether it is a "production", "test" or "development" environment. Please keep in mind that development environments behave differently from production and test environments, displaying errors directly in the web interface.|
 |Application launch script|Name the script that will call the Python runtime environment.|
 
-Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
+Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite).
 
 ![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 > In our example, only PHP and Node.js environments have been created. In your project, you may be using Ruby or Python. In this case, the operations described below are
 > applicable.
 > 
-> You can use two different runtime environments alongside each other depending on which [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer){.external} you choose.
+> You can use two different runtime environments alongside each other depending on which [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer) you choose.
 > 
 
 Once you have the runtime environments you need for your project, make sure they are linked to your multi-sites. To do this, go to the `Multi-site`{.action} tab of the Cloud Web hosting plan concerned. 

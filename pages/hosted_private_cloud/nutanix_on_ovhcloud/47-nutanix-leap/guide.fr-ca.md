@@ -26,11 +26,11 @@ Nutanix Leap permet :
 ## Prérequis
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters, par exemple à l'aide de ces technologies :
     - via un VPN IPsec comme détaillé dans le guide « [Interconnexion IPsec entre deux sites](/pages/hosted_private_cloud/nutanix_on_ovhcloud/44-ipsec-interconnection) »;
-    - ou via une connexion [vRack](https://www.ovhcloud.com/fr-ca/network/vrack/).
+    - ou via une connexion [vRack](/links/network/vrack).
 - **Prism Central** a besoin de plus de ressources en fonction du mode :
     - Single Mode : 4Go de RAM supplémentaires.
     - Scale Mode avec 3 machines virtuelles **Prism Central** : 8 Go de RAM supplémentaires par machine virtuelle.
@@ -139,7 +139,7 @@ Depuis le menu principal, cliquez sur `Availability Zones`{.action} dans le sous
 ### Mise en place d'une réplication à partir du Canada vers la France
 
 > [!warning]
-> Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membres d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour effectuer cette migration : [Migration depuis un Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html){.external}. 
+> Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membres d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour effectuer cette migration : [Migration depuis un Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html). 
 >
 
 #### Création d'une catégorie contenant les machines virtuelles à répliquer
@@ -505,10 +505,10 @@ La machine virtuelle membre du plan de reprise d'activité va démarrer sur le c
 
 [Interconnexion IPsec entre deux sites](/pages/hosted_private_cloud/nutanix_on_ovhcloud/44-ipsec-interconnection)
 
-[OVHcloud vRack](https://www.ovhcloud.com/fr-ca/network/vrack/)
+[OVHcloud vRack](/links/network/vrack)
 
 [Documentation Nutanix Leap](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -74,7 +74,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 > [!primary]
 >
-> Si no sabe qué agente registrador es responsable del dominio, las líneas Registrar, que aparecerán en el resultado de la búsqueda de la [herramienta Whois](/links/web/domains-whois){.external}, le facilitarán información sobre su identidad.
+> Si no sabe qué agente registrador es responsable del dominio, las líneas Registrar, que aparecerán en el resultado de la búsqueda de la [herramienta Whois](/links/web/domains-whois), le facilitarán información sobre su identidad.
 >
 
 ### 2. Desbloquear el dominio y obtener el código de transferencia <a name="step2"></a>
@@ -92,7 +92,7 @@ Tenga en cuenta que OVHcloud no es el agente registrador del dominio al iniciar 
 
 ### 3. solicitar la transferencia del dominio a OVHcloud <a name="step3"></a>
 
-Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](/links/web/domains){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
+Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](/links/web/domains). Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 
 ![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail
 
@@ -100,7 +100,7 @@ Cuando se le pida el código de transferencia, introdúzcalo en el campo situado
 
 ![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
-También puede completar el pedido con un [alojamiento web](/links/web/hosting){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) explica cómo hacerlo.
+También puede completar el pedido con un [alojamiento web](/links/web/hosting) y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) explica cómo hacerlo.
 
 > [!warning]
 >

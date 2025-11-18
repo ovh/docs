@@ -1,14 +1,14 @@
 ---
 title: O que fazer em caso de página "Index of"?
 excerpt: Descubra como repor o seu site online quando exibe uma página "Index of".
-updated: 2023-05-04
+updated: 2025-10-28
 ---
 
 ## Objetivo
 
 Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
 
-- A configuração [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) do seu nome de domínio não está corretamente configurada para o seu diretório alvo
+- A [configuração do seu nome de domínio com o seu site web](/pages/web_cloud/web_hosting/multisites_configure_multisite) não está corretamente configurada para o seu diretório alvo.
 - A pasta alvo para a qual o seu nome de domínio aponta não contém ficheiros **"index.html"** ou **"index.php"**
 
 ![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
@@ -41,13 +41,12 @@ Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que 
 > [!primary]
 >
 > Para associar temporariamente o seu domínio a um `Pasta raiz` que não contém ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do). Pode também proteger o acesso às suas pastas com uma [palavra-passe](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-
 >
-> Se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). As nossas equipas de suporte não poderão fornecer-lhe assistência relativamente a qualquer alteração da programação interna do seu site.
+> Recomendamos que contacte um [provedor especializado](/links/partner) se tiver dificuldades em configurar esta configuração. De facto, as nossas equipas de apoio não poderão prestar assistência para qualquer modificação da programação interna do seu site.
 
 ### Resolver o caso mais comum de uma página "Index of"
 
-Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento por [FTP](/pages/web_cloud/web_hosting/ftp_connection). Se o domínio não estiver associado a esta pasta, consulte a coluna `Pasta raiz` do `Multisite`{.action}.
+Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento através de [FTP](/pages/web_cloud/web_hosting/ftp_connection). No entanto, o seu nome de domínio não está ligado a esta pasta na coluna `Pasta raiz` do seu site.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

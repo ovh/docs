@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Notebooks
-updated: 2023-11-21
+updated: 2025-10-07
 ---
 
 > [!primary]
@@ -23,10 +23,10 @@ AI Notebooks are Managed Jupyter or VS Code notebooks, linked to compute resourc
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Live code editor and AI environments**   |                                                                                                                                                                                                                                              |
 | Jupyter and VS Code                        | You can use Jupyter or VS Code as your preferred live-code editor. If you opt for VS Code, you can also set up a remote connection (for example, from your laptop).                                                                          |
-| Preinstalled Machine Learning environments | AI Notebooks comes with a generic Python environment (Conda) or pre-installed ones, such as Pytorch, Tensorflow, FastAI, HuggingFace and more                                                                                                |
+| Preinstalled Machine Learning environments | AI Notebooks comes with a generic Python environment (Conda) or pre-installed ones, such as Pytorch, Tensorflow, HuggingFace and more                                                                                                |
 | Easy customization                         | AI Notebooks allows installation of almost any Conda or Pip packages. You can easily customize your environment to suit your needs.                                                                                                          |
 | **Management**                             |                                                                                                                                                                                                                                              |
-| Multiple ways to manage your notebooks     | You can manage your AI Notebooks through the OVHcloud Control Panel, API or CLI. Depending on your needs, you can easily automate their creation and deletion as well.                                                                           |
+| Multiple ways to manage your notebooks     | You can manage your AI Notebooks through the OVHcloud Control Panel, CLI, API or Python SDK. Depending on your needs, you can easily automate their creation and deletion as well.                                                                           |
 | Easy start and Stop                        | You can start and stop a notebook in one click. Once stopped, your notebook environment is kept and you can restart it later, without losing your data and experiments.                                                                      |
 | **Compute resources**                      |                                                                                                                                                                                                                                              |
 | Guaranteed compute resources               | Select the amount of CPUs or GPUs required during the creation of the AI Notebooks. Once launched, you will keep these resources as long as your notebook is running.                                                                        |
@@ -88,7 +88,7 @@ If you choose `CPU`:
 
 - Memory and local storage resources are not customizable but scaled linearly with each additional CPU.
 
-The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](https://www.ovhcloud.com/asia/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](/links/public-cloud/prices-ai), Control Panel and the `ovhai` CLI.
 
 ``` {.console}
 ovhai capabilities flavor list
@@ -103,7 +103,15 @@ For your information, the current limits are:
 
 Currently, we provide:
 
-- **NVIDIA V100S** ([pricing available here](https://www.ovhcloud.com/asia/public-cloud/prices/#ai-&-machine-learning)).
+- **NVIDIA H100**
+- **NVIDIA Ampere A100**
+- **NVIDIA Ampere A10**
+- **NVIDIA Tesla V100S**
+- **NVIDIA L4**
+- **NVIDIA L40s**
+- **Intel CPU vCores**
+
+Pricing is available [here](/links/public-cloud/prices-ai).
 
 #### Available storage
 
@@ -118,8 +126,16 @@ This storage space depends on the selected instances during the notebook creatio
 
 ##### **Attached storage**
 
-You can attach data volumes from Public Cloud Object Storage. The Object Storage bucket should be in the same region as your AI Notebooks.
-Attached storage allows you to work on several TB of data, while being persistent when you delete your AI Notebooks.
+When attaching data volumes to your AI Notebooks, you can use storage from Public Cloud Object Storage. This allows you to work with large datasets, while ensuring persistence even if you delete your notebooks.
+
+> [!primary]
+>
+> Ensure that the Object Storage bucket is **located in the same region** as your AI Notebook.
+>
+> Your Public Cloud Project can store unlimited data in Object Storage buckets. However, when you mount an Object Storage bucket as a volume, there is a **usage limit of 10 TB per Public Cloud Project**. This limit applies to the total storage consumed by all volumes attached simultaneously across your AI Notebooks, AI Training jobs, and AI Deploy apps.
+>
+> When the same volume is used across multiple resources, **enabling caching** allows shared access to the volume data, preventing multiple copies from consuming additional storage quota. Without caching, each instance will maintain a separate copy of the volume data, increasing the total storage usage linearly.
+>
 
 #### Maximum execution time
 
@@ -142,26 +158,19 @@ OVHcloud AI Notebooks comes with pre-installed AI environments.
 
 List of available AI Environments:
 
-- AutoGluon + MXNet
-- FastAI
-- HuggingFace
+- HuggingFace Transformers
 - Miniconda (Python generic)
-- MXNet
-- One image to rule them all
+- Miniconda with Colab Compatibility
+- MLR3 (collection of R Packages)
 - PyTorch
 - Scikit-Learn
 - TensorFlow
-
-Quantum environments:
-
-- Atos myQLM
-- Quandela Perceval
 
 #### Environment customization
 
 Each environment can be customized directly with PIP or CONDA (we support almost any package and library).
 
-**Limitations**:
+**Limitations**: 
 
 - You are **not administrator (root)**. You cannot install linux packages (such as *apt-get*).
 
@@ -192,9 +201,9 @@ Each Public Cloud project grants a customer by default a maximum of 4 GPUs used 
 
 ## Go further
 
-Browse the full [AI Notebooks documentation](/products/public-cloud-ai-and-machine-learning) to further understand the main concepts and get started.
+Browse the full [AI Notebooks documentation](/products/public-cloud-ai-and-machine-learning-ai-notebooks) to further understand the main concepts and get started.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

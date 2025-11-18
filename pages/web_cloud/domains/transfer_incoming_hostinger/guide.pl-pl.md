@@ -77,7 +77,7 @@ Musisz również:
 
 W przypadku domen zarejestrowanych w Hostingerze możesz zarządzać statusem blokady Twojej domeny otwierając sekcję `Domeny`{.action} i wybierając nazwę domeny, którą chcesz przenieść.
 
-Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej dla Hostinger](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger){.external}.
+Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej dla Hostinger](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger).
 
 ### Uzyskaj kod EPP lub Auth
 
@@ -91,7 +91,7 @@ Aby zapoznać się ze zmianą właściciela domeny, zapoznaj się z tym [przewod
 > Zapraszamy do zapoznania się z informacjami o odpowiednich krokach podjętych przez OVH w celu transferu Twojej domeny.
 > 
 
-Aby uzyskać kod **EPP** lub **Auth** w usłudze Hostinger, wykonaj kroki opisane w [dokumentacji dedykowanej usłudze Hostinger](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+Aby uzyskać kod **EPP** lub **Auth** w usłudze Hostinger, wykonaj kroki opisane w [dokumentacji dedykowanej usłudze Hostinger](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger).
 
 ### Rozpocznij transfer domeny do OVHcloud
 

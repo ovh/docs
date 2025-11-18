@@ -13,6 +13,11 @@ updated: 2024-10-01
 }
 </style>
 
+> [!success]
+> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
+> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
+> [Aceda ao inquérito.](https://s.elq.fr/ovhext/RULMVWH)
+
 ## Objetivo
 
 As contas MX Plan podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.

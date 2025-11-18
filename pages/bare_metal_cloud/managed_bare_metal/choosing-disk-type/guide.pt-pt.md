@@ -8,7 +8,7 @@ updated: 2020-11-18
 
 VMware propõe três formatos de disco para as máquinas virtuais.
 
-** Este manual explica as diferenças entre esses formatos **
+**Este manual explica as diferenças entre esses formatos**
 
 ## Instruções
 

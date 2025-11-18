@@ -12,12 +12,12 @@ Es posible restringir y gestionar el acceso al vCenter para mejorar la seguridad
 
 ## Requisitos
 
-- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Servidores`{.action} y, en el menú de la izquierda, seleccione su servicio en la columna `Managed Bare Metal.`{.action}
+Desde el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Servidores`{.action} y, en el menú de la izquierda, seleccione su servicio en la columna `Managed Bare Metal.`{.action}
 
 Desde la página principal del servicio, haga clic en la pestaña `Seguridad`{.action} y, a continuación, en `Modificar la política de acceso al vCenter`{.action}.
 
@@ -36,5 +36,5 @@ En la ventana que aparece, seleccione «Abierta» o «Restringida» en el menú 
 
 [Autorizar direcciones IP a conectarse al vCenter](/pages/bare_metal_cloud/managed_bare_metal/vcenter-authorise-ip-access)
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).
 

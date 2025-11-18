@@ -34,7 +34,7 @@ Existen dos tipos de direcciones IP:
 
 Para utilizar la opción de restricción por IP del área de cliente de OVHcloud, deberá introducir **únicamente** su(s) IP pública(s).
 
-Para obtener la dirección IP pública de un dispositivo que estará autorizado a acceder al área de cliente de OVHcloud, acceda al sitio web [whatismyip.com](https://www.whatismyip.com/){.external} (no gestionado por OVHcloud).
+Para obtener la dirección IP pública de un dispositivo que estará autorizado a acceder al área de cliente de OVHcloud, acceda al sitio web [whatismyip.com](https://www.whatismyip.com/) (no gestionado por OVHcloud).
 
 Anote la dirección IP que se indica y repita la operación para cada uno de los dispositivos que tengan acceso al área de cliente de OVHcloud.
 
@@ -78,7 +78,7 @@ Existen dos secciones para implementar las restricciones por IP:
 >
 > En la sección `Regla por defecto`{.action}, no acepte **nunca** la regla por defecto en estado `Denegado`{.action} **sin haber autorizado correctamente** y previamente al menos una de sus direcciones IP públicas en la sección `IP configuradas`. 
 >
-> En caso contrario, bloqueará **absolutamente todas las IP públicas (incluidas las suyas)* sin excepción. Nadie tendrá acceso a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y deberá realizar un procedimiento administrativo para desbloquear su situación.
+> En caso contrario, bloqueará **absolutamente todas las IP públicas (incluidas las suyas)* sin excepción. Nadie tendrá acceso a su [área de cliente de OVHcloud](/links/manager) y deberá realizar un procedimiento administrativo para desbloquear su situación.
 >
 > Esté muy atento a este punto.
 >

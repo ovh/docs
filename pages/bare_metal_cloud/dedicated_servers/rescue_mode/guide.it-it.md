@@ -372,7 +372,7 @@ reboot
 
 È inoltre possibile utilizzare la funzione `Riavvia`{.action} nello Spazio Cliente.
 
-<a name="rescue"></a>
+<a name="rescuessh"></a>
 
 ### Come aggiungere una chiave di autenticazione di default per la modalità Rescue
 

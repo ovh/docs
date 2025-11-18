@@ -12,7 +12,7 @@ Wtyczka OVHcloud w usłudze Private Cloud umożliwia dodanie w ciągu kilku minu
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
+* Posiadanie oferty [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
 * Dostęp do interfejsu zarządzania vSphere
 
 ## W praktyce

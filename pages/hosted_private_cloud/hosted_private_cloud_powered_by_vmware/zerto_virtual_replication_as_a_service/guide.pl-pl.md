@@ -1,411 +1,387 @@
 ---
-title: Korzystanie z Replikacji Zerto Virtual między dwoma centrami danych OVHcloud
-excerpt: Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie awaryjnym w dwóch ofertach Private Cloud
-updated: 2024-10-18
+title: Setting up Zerto Virtual Replication between two OVHcloud data centres
+excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms
+updated: 2025-08-25
 ---
 
+## Objective
+
+This guide will present the concepts and steps required to set up Zerto Virtual Replication between two OVHcloud datacenters.
+
+For instructions for cross platforms set up, please see our guide on [using Zerto between OVHcloud and a third party platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
+
+**Discover how to set up Zerto Virtual Replication between your Hosted Private Cloud platforms.**
+
+## Requirements 
+
+- 2 [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) platform environments on 2 different hosts.
+- A public IP must be available in each datacenter.
+
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
+> A **Read Write (RW)** vCenter account is required to access and operate the Zerto interface.
 
-## Wprowadzenie
+### Zerto Virtual Replication Concepts
 
-Niniejszy przewodnik wyjaśnia, w jaki sposób skonfigurować Zerto Virtual Replication w infrastrukturze Private Cloud.
+Zerto Virtual Replication is a disaster recovery solution for vSphere. It enables replication of virtual machines between Private Cloud platforms by capturing and propagating all disk operations to secondary site.
 
-Niniejszy przewodnik wyjaśnia, w jaki sposób wdrożyć Zerto Virtual Replication między dwoma centrami danych OVHcloud.
-
-W pozostałych przypadkach zapoznaj się z naszym przewodnikiem dotyczącym sposobu [korzystania z usługi Zerto między OVHcloud a platformą zewnętrzną](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
-
-**Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie odzyskiwania awaryjnego (DRP, Disaster Recovery Plan) w dwóch ofertach Hosted Private Cloud.**
-
-## Wymagania początkowe
-
-- Posiadanie dwóch ofert [Private Cloud](/links/hosted-private-cloud/vmware-prices) w dwóch różnych hostach
-- Posiadanie wolnego publicznego adresu IP w przypadku każdej z nich
-
-### Koncepcja Zerto Virtual Replication
-
-Zerto Virtual Replication jest technicznym rozwiązaniem umożliwiającym skonfigurowanie replikacji danych między infrastrukturami do wirtualizacji lub w chmurze. W tym celu opiera się ono na hipernadzorcach platformy, wdrażając maszyny wirtualne (VM) zwane Virtual Replication Appliance (VRA), które zajmują się powielaniem zapisów do jednostek przechowywania i przekazywaniem ich do zdalnej lokalizacji zapisu.
+It allows  automation and orchestration of actual failover or failover tests between sites.  
 
 #### Virtual Replication Appliance (VRA)
 
-W ten sposób VRA są wdrażane na każdym hipernadzorcy i zużywają zasoby do wykonywania replikacji:
+Zerto works by deploying specific virtual machines on each hypervisor called Virtual Replication Appliance.
+They have a predefined configuration: 
 
 - vCPU: 2
 - RAM: 6 GB
-- Przestrzeń dyskowa: 36 GB
+- Storage: 36 GB
 
-Do przestrzeni dyskowej OVHcloud dodaje bezpłatny dedykowany magazyn danych dla wszystkich VRA.
+All VRAs are stored on a specific datastore, provided by OVHcloud.
 
-#### Lokalizacje
+#### Sites
 
-Replikacja danych odbywa się pomiędzy dwiema (2) powiązanymi lokalizacjami, dzięki czemu VRA po każdej ze stron mogą ustalić ich przepływ replikacji.
+During deployment, VRAs are deployed on source and destination sites, and then are paired together to start replication.  
+Since Zerto does not encrypt the dialog between VRAs, OVHcloud automatically deploys a VPN tunnel between the VRAs through the L2VPN appliance, to protect in-flight data.
 
-Domyślnie przepływy replikacji Zerto nie są szyfrowane, a ponieważ bezpieczeństwo jest priorytetem dla OVHcloud, pomiędzy tymi dwiema lokalizacjami wykorzystujemy szyfrowany tunel (poprzez IPSec) za pomocą aplikacji sieciowej o nazwie L2VPN.
+#### Virtual Protection Group (VPG)
 
-#### Grupa replikacji (VPG)
+Before starting the replication, VMs must be grouped in a logical container called Virtual Protection Group, on which all replication parameters will be defined.  
+It allows to apply consistent parameters across a group of VMs that share the same replication requirements, (typically VMs that belong to the same function or application),
+ 
+VPGs can be prioritised to make the most efficient usage of available bandwidth.
 
-Replikacja maszyn wirtualnych jest aktywowana i zarządzana przez Grupę replikacji (VPG).
-Pozwala ona na logiczne pogrupowanie grupy maszyn wirtualnych odpowiadających potrzebom biznesowym lub operacyjnym (np. aplikacja z bazą danych) w celu skonfigurowania maksymalnej dopuszczalnej utraty danych (**RPO**), kolejności uruchamiania (baza danych przed aplikacją), konfiguracji sieci dla ćwiczeń lub w rzeczywistym przypadku. 
+## Instructions
 
-Możliwe jest również określenie poziomu priorytetu pomiędzy VPG w celu nadania priorytetu transferu danych w przypadku problemów z przepustowością sieci.
+### Service activation
 
-## W praktyce
+#### From OVHcloud dashboard
 
-### Aktywacja usługi
-
-#### W Panelu klienta OVHcloud
-
-W Panelu klienta OVHcloud przejdź do sekcji `Serwer` -> `Private Cloud` –> wybierz Twoją główną platformę Private Cloud –> wybierz
-żądane centrum danych -> kliknij kartę `Disaster Recovery Plan (DRP)`{.action}.
+From your OVHcloud Control Panel, go to "Server/Private Cloud". Select your primary site, then go to the "Disaster Recovery" tab.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_01.png){.thumbnail}
 
-Wybierz **Between two OVH Private Cloud solutions**, a następnie kliknij `Activate Zerto DRP`{.action}.
+Select **Between two OVHcloud Private Cloud solutions** then click `Activate Zerto DRP`{.action}.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_02.png){.thumbnail}
 
-Wybór głównej infrastruktury **Private Cloud** oraz **centrum danych** następuje automatycznie w oparciu o infrastrukturę, przez którą uzyskujesz dostęp.
+Selection of the primary **Private Cloud** and **data centre** is done automatically depending on where you are connecting from.
 
-Z rozwijanego menu wybierz **wolny** publiczny adres IP pochodzący z puli publicznych IP powiązanych z **Private Cloud**. Zostanie on wykorzystany do uruchomienia bezpiecznego połączenia między infrastrukturami.
-
-Kliknij `Next`{.action}.
+From the drop-down menu, select a **free**  public IP from the IP range attached to the **Private Cloud**. It will be used to setup the VPN tunnel between the 2 platforms.
+Click `Next`{.action}.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_03.png){.thumbnail}
 
-Dodatkowa lokalizacja jest wybierana spośród Twoich infrastruktur **Private Cloud** widocznych w menu rozwijanym. 
+Secondary site selection must be done from available **Private Cloud** in the drop-down menu.  
+Please note that the list will show only Private Clouds meeting all the following requirements:
 
-Należy pamiętać, że widoczne są tylko kwalifikujące się infrastruktury. W tym celu muszą one spełniać następujące kryteria:
+- Being located in another geographical area
+- Not already involved in a Zerto replication
 
-- fizyczna obecność w innej lokalizacji,
-- brak już wdrożonej replikacji Zerto.
+Select the **data centre** from the secondary **Private Cloud** in the drop-down menu.  
+Then, select an **unused** IP address from the public IP range attached to the secondary **Private Cloud**. It will be used for the secondary VPN endpoint.
 
-Następnie z menu rozwijanego wybierz **centrum danych** docelowej infrastruktury **Private Cloud**.
-
-Z rozwijanego menu wybierz **wolny** publiczny adres IP pochodzący z puli publicznych IP powiązanych z **Private Cloud**. Zostanie on wykorzystany do uruchomienia bezpiecznego połączenia między infrastrukturami.
-
-Kliknij `Next`{.action}.
+Click `Next`{.action}.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_04.png){.thumbnail}
 
-Realizacja żądania aktywacji może potrwać do godziny, pod warunkiem, że podane informacje są poprawne (np. adres IP nie jest już używany przez jedną z maszyn wirtualnych – w takim przypadku aktywacja nie powiedzie się).
+Activation request confirmation, as shown on screen, deployment can take up to one hour, if all provided information is correct (for example, if the IPs given in the wizard are already in use, the activation will fail).
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_05.png){.thumbnail}
 
-Po aktywacji otrzymasz wiadomość e-mail z konfiguracją systemu i linki dostępu do interfejsu Zerto dla każdej infrastruktury.
+Once the activation has successfully completed, you will receive an email summary of the configuration and the links to the Zerto interface of both sites.
 
 > [!primary]
-> Drogi Kliencie,
-> 
-> Między Twoimi dwiema infrastrukturami Private Cloud zostało aktywowane rozwiązanie DRP Zerto.
-> 
-> Możesz zalogować się do lokalizacji głównej pod następującym adresem:
-> 
->   - URL        : https://zerto.pcc-192-0-2-1.ovh.com/
-> 
-> Możesz zalogować się do lokalizacji dodatkowej pod następującym adresem:
-> 
->   - URL        : https://zerto.pcc-192-0-2-2.ovh.com/
-> 
-> Do uwierzytelnienia możesz użyć swoich kont administratora, tak samo jak w przypadku interfejsu vSphere.
-> 
-
-#### Za pośrednictwem API OVHcloud
-
-### Interfejs Zerto Replication
-
-Interfejs jest dostępny z dwóch (2) infrastruktur pod adresem:
-
-- URL: https://zerto.pcc-x-x-x-x.ovh.com/ (do zmiany w zależności od platformy)
+>Dear Customer,
+>
+>You have just enabled the Zerto DRP solution between 2 of your Private Cloud solutions.
+>
+>You can log in to the main website via the following address:
+>
+>  - URL: https://zerto.pcc-x-x-x-x.ovh.com/ 
+>
+>You can log in to the secondary website via the following address:
+>
+>  - URL: https://zerto.pcc-x-x-x-x.ovh.com/ 
+>
+>You can authenticate with your administrator accounts the same way you do for
+>vSphere.
 
 > [!warning]
 >
-> Jak wskazano w treści e-maila, dane do logowania są takie same jak dane używane do logowania do interfejsu vSphere.
+> When activating Zerto, you may notice a VM named `Z-VRAH` in your inventory.
+> This VM is automatically deployed by OVHcloud to secure communications between your sites.
+> It is **essential for the service to work correctly** and **must not be modified or deleted**.
+
+###  Zerto Replication Interface
+
+The interface is reachable both from primary and secondary platforms through:
+
+- https://zerto.pcc-x-x-x-x.ovh.com/ (replace with the PCC URL)
+
+> [!warning]
+>
+> As indicated in the summary email, you can log in with your PCC account.
 >
 
-Po zalogowaniu zobaczysz ekran z dashboardem:
+Once logged in, you arrive on the Zerto dashboard:
 
 ![Zerto Dashboard](images/zerto_OvhToOvh_int_01.png){.thumbnail}
 
-Na tym ekranie znajdują się następujące elementy:
+You will find there:
 
-- graficzne podsumowanie kondycji VPG,
-- globalny status Zerto Replication z czterema wskaźnikami,
-- tabela wyników Zerto Replication,
-- graficzne podsumowanie statusów wszystkich VPG,
-- lista ostatnich alertów, działań i zdarzeń Zerto Replication.
+- A status of VPGs health
+- Key indicators for the Zerto platform
+- Network and IO consumption figures
+- An alerts and messages log
 
-### Konfigurowanie grupy replikacji (VPG)
+### Configure a Virtual Protection Group (VPG)
 
-W menu `Actions`{.action} wybierz `Create VPG`{.action}.
+From `Actions`{.action}, select `Create VPG`{.action}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_01.png){.thumbnail}
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_02.png){.thumbnail}
 
-Na pierwszym ekranie:
+First step **General**:
 
-- Wprowadź nazwę VPG, najlepiej wskazującą na kontekst operacyjny.
-- Jeśli nie ma szczególnej potrzeby, można pozostawić ustawiony priorytet na **Medium**.
+- Enter a name for the new VPG
+- Except specific requirements, you can leave the Priority set to **Medium**
 
-Kliknij `NEXT`{.action}, aby kontynuować.
+Click `NEXT`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_03.png){.thumbnail}
 
-W kolejnym etapie należy wybrać VM, które będą należeć do VPG.
+In the next step you need to select the VMs that will be in the VPG.
 
 > [!warning]
 >
-> Jedna VM nie może należeć do kilku VPG.
+> A VM can only belong to a single VPG.
 > 
 
-- Wyfiltruj VM według nazwy w polu **Search**
-- Zaznacz pola po lewej stronie odpowiednich VM
+- You can filter the VMs by name through the  **Search** dialog box
+- Tick the box of every VM to be added
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_04.png){.thumbnail}
 
-- Kliknij strzałkę skierowaną w prawą stronę, aby umieścić VM w VPG
+- Click on the arrow pointing to the right to place VMs in the VPG
 
-Kliknij `NEXT`{.action}, aby kontynuować.
+Click `NEXT`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_05.png){.thumbnail}
 
-Następnie przechodzimy do etapu wyboru lokalizacji zdalnej:
+Next step is the selection of the secondary site:
 
-- **Recovery Site**: z listy wybierz lokalizację zdalną (inną niż lokalna). 
-- **ZORG**: z listy wybierz **No Organization**. Każda inna wartość spowoduje wyświetlenie błędu podczas przechodzenia do kolejnego etapu.
+- **Recovery Site**: select the remote site (the primary site will be tagged as (Local)).  
+- **ZORG**: scroll down and select **No Organization**. The other values are present for backwards compatibility but will trigger an error message if selected.
 
-Następnie przechodzimy do etapu definiowania zasobów zdalnych.
+Now you must define the default recovery resources:
 
-- **Hosts**: Wybierz zasób obliczeniowy, którym może być **sam host** (określany przez jego adres IP i w stosownych przypadkach poprzedzony nazwą klastra w nawiasach kwadratowych), **Ressource Pool** (najpierw RP, następnie nazwa klastra, a potem nazwa Ressource Pool) lub **Klaster** (określany przez nazwę). Należy wybrać tylko **Ressource Pool** lub **Klaster** (tutaj: Cluster1).
-- **Datastore**: Wybierz zasób przechowywania, którym może być **sam magazyn danych** (określany przez jego nazwę i w stosownych przypadkach poprzedzony nazwą **Storage Cluster** w nawiasach kwadratowych) lub **Storage Cluster** (określany przez nazwę).
+- **Hosts**: select a vSphere Resource Pool, a DRS Cluster or a specific host in it (Cluster1 in our example).  
+- **Datastore**: likewise you can select a specific datastore or datastore cluster in the drop-down list.
 
-Jeśli nie masz zaawansowanych potrzeb, zostaw wartości innych ustawień bez zmian.
-
-Kliknij `NEXT`{.action}, aby kontynuować.
+You can keep the default values for the other settings. Click `NEXT`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_06.png){.thumbnail}
 
-W kolejnym etapie możemy ewentualnie dostosować konfigurację przestrzeni dyskowej.
-
-Jeśli nie masz zaawansowanych potrzeb, zostaw wartości innych ustawień bez zmian.
-
-Kliknij `NEXT`{.action}, aby kontynuować.
+In this step you can override the default recovery resources for specific VMs.
+If it is not necessary, you can click `NEXT`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_07.png){.thumbnail}
 
-Teraz następuje ważna część: pierwszy etap konfiguracji sieci.
+Now you need to define the default network to use during test failovers and actual failovers.
 
-- **Failover/Move Network**: wybierz domyślny portgroup do przełączania awaryjnego.
-- **Failover Test Network**: wybierz portgroup do testów przełączania awaryjnego.
-- **Recovery Folder**: wybierz folder (lub znak „/”, aby wybrać katalog główny), do którego zostaną dodane VM przeniesione do lokalizacji.
+- **Failover/Move Network**: Choose the default vSphere portgroup for an actual failover.
+- **Failover Test Network**: Choose the default vSphere portgroup for a test failover.
+- **Recovery Folder**: If you want to regroup the failover VMs on the secondary site, you can select a folder or just "/" to place the VMs at the root of the vSphere inventory.
 
 > [!primary]
-> Opcji **Pre-recovery Script** i **Post-recovery Script** nie można używać.
+> **Pre-recovery Script** and  **Post-recovery Script** are locked down, these features are not enabled.
 > 
 
-Kliknij `NEXT`{.action}, aby kontynuować.
+Click `NEXT`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_08.png){.thumbnail}
 
-Jest to drugi etap konfiguracji sieci:
-
-- Dla każdej VM wybierz portgroup do testów lub przełączania awaryjnego.
-- W każdej sytuacji można też zmienić konfigurację IP maszyn wirtualnych.
+In this second step, you have the possibility to override the default recovery networks for each VM, and specify the IP addresses to use in case of a test or an actual failover.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_09.png){.thumbnail}
 
 > [!warning]
 >
-> Zmiana IP jest możliwa tylko w przypadku VM z obsługiwanym systemem operacyjnym i z uruchomionymi **VMware Tools**
+> The modification of the IP address during failover is only possible for supported OSes with functioning VMware Tools
 > 
 
-Kliknij `NEXT`{.action}, aby kontynuować.
+Click `NEXT`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_10.png){.thumbnail}
 
-Kliknij `NEXT`{.action}, aby pominąć ten etap.
+Long term retention is disabled, click `NEXT`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_11.png){.thumbnail}
 
-Na ostatnim ekranie widzimy podsumowanie wszystkich skonfigurowanych elementów.
-
-Po weryfikacji potwierdź utworzenie, klikając `DONE`{.action}.
+The last screen summarizes the settings for the new VPG. If everything is OK, click `DONE`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_13.png){.thumbnail}
 
-Nowo utworzoną VPG oraz jej status (początkowo będzie to **Initializing**) znajdziesz na liście.
+On the dashboard, you will see the new VPG with a status "Initializing".
 
-### Uruchamianie testu odzyskiwania po awarii (Disaster Recovery) 
+### Start a failover 
 
-Po skonfigurowaniu replikacji i umożliwieniu jej działania przez kilka dni, możesz przetestować, czy Twój DRP działa z operacjami zarządzanymi przez Zerto Replication.
+After having configured your VPG and once the initial replication has completed, you can now test Zerto failover features.
 
 > [!warning]
 >
-> Test failover w Zerto Replication odbywa się **bez** odcięcia od lokalizacji głównej, dlatego należy zwrócić uwagę na prawidłową konfigurację testowanych sieci, aby uniknąć wszelkich konfliktów związanych z adresowaniem IP i uniknąć wpływu tego testu na produkcję.
->
-> Wszelkich zasobów, które zostaną uruchomione w lokalizacji dodatkowej przez test, nie można ręcznie modyfikować ani usuwać. Po zakończeniu operacji test zostanie dezaktywowany przez Zerto Replication.
->
-> Podczas testu replikacja nadal się odbywa między tymi dwiema lokalizacjami.
+> A failover test has **NO** impact on the production site, you only need to make sure that the VMs that are being failed-over are starting in an isolated network and/or different IPs to avoid network conflicts.  
+> All the VMs instantiated during the failover test are fully managed by Zerto. You should not remove or modify them; they will be removed automatically at the end of the failover test.  
+> The replication keeps running during the failover tests and is not impacted in any way.
 >
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_00.png){.thumbnail}
 
-W tym celu zaloguj się do interfejsu Zerto Replication i kliknij `FAILOVER`{.action} (przycisk wyboru po lewej stronie, domyślnie ustawiony na **TEST**).
-
-Jeśli tekst przycisku jest szary, to znaczy, że nie ma VPG kwalifikującej się do testu (być może inicjalizacja jest jeszcze w toku).
+From the interface, click on the bottom right button `FAILOVER`{.action} (the toggle is by default on **TEST**).
+If the button is greyed out, it is because there is no available VPG to perform a test (initialisation is not finished or there is an issue with the VPG).
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_01.png){.thumbnail}
 
-Natychmiast pojawia się ekran z dostępnymi VPG, kierunkiem replikacji, docelową lokalizacją oraz informacją o tym, czy poziom ochrony jest prawidłowy (**Meeting SLA**).
+The failover wizard appears with eligible VPGs, their replication direction (in or out), destination site and service level status (**Meeting SLA**).
 
-Masz teraz klika możliwości:
+You have 2 options:
 
-1. Zaznacz pole, aby wybrać do testu VPG i wszystkie należące do niej VM.
-2. Kliknij ikonę po prawej stronie nazwy VPG, aby wyświetlić listę VM należących do VPG. Możesz teraz wybrać, które VM należące do VPG wezmą udział w teście.
+1. Select the VPGs itself to perform the test, failing over all the VMs within.
+2. Click on the square icon on the left of the VPG name to display all the VMs in the VPG. You can then choose to failover only the selected VMs within the VPG.
 
-Kliknij `NEXT`{.action}, aby zatwierdzić i przejść do kolejnego etapu.
+Click `NEXT`{.action}.
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_02.png){.thumbnail}
 
-W tym przykładzie wybieramy opcję 1, czyli test VPG.
+In this case we have chosen to do a full VPG failover.
 
-Na tym etapie widzimy podsumowanie operacji związanych z VPG:
+You can now check the settings for the failovers:
 
-- kierunek replikacji;
-- lokalizacja zdalna;
-- informacja, czy została określona kolejność uruchamiania VM;
-- informacja, czy są obecne skrypty przed i po przełączeniu awaryjnym (funkcja niedostępna).
+- Replication direction
+- Remote site
+- Boot order (locked down)
+- Pre/Post scripts (locked down)
 
-Kliknij `NEXT`{.action}, aby kontynuować.
+Click `NEXT`{.action}.
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_03.png){.thumbnail}
 
-Ostatni ekran z podsumowaniem przedstawia widok różnych lokalizacji wraz z liczbą VPG przeznaczonych do testu.
-
-Kliknij `START FAILOVER TEST`{.action}, aby potwierdzić uruchomienie testu.
-
-Test przełączania awaryjnego uruchamia się natychmiast wraz z operacjami na vCenter lokalizacji zdalnej.
-
-Teraz wystarczy sprawdzić, czy w lokalizacji zdalnej wszystko działa poprawnie.
+The summary screen is displayed. If everything is OK, you can start the test by clicking `START FAILOVER TEST`{.action}.
+You can log in on the remote site vCenter and see the VMs starting. You can then check if everything is working correctly on the remote site.
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_05.png){.thumbnail}
 
-Po sprawdzeniu maszyn wyznaczonych do testu przełączania awaryjnego, kliknij czerwony kwadracik po prawej stronie pozycji **Testing Failover**.
+When all checks have been performed, you can stop the test by clicking on the little red box right next to **Testing Failover**.
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_06.png){.thumbnail}
 
-Pojawi się nowe okno z informacją o tym, czy test się powiódł – można dodać w nim komentarz.
+At this stage, you can add a result of the test for future reference.
 
-Kliknij `STOP`{.action}, aby potwierdzić zakończenie testu.
+Confirm the end of the test by clicking `STOP`{.action}.
 
-Dezaktywacja testu uruchamia się natychmiast za sprawą operacji na vCenter lokalizacji zdalnej.
+Clean-up operations are launched right away on the remote site.
 
-### Uruchamianie odzyskiwania po awarii (Disaster Recovery)
+### Launch an actual failover
 
-W razie poważnego zdarzenia w lokalizacji głównej lub podczas testu w warunkach rzeczywistych, uruchomienie migracji odbywa się logicznie z lokalizacji dodatkowej (awaryjnej).
+You can launch a full failover from the secondary site, in case the primary site has been rendered unusable by a disaster.
 
 > [!warning]
+> If you trigger an actual failover when the primary site is still available, you have the possibility to properly shut down the VMs on the primary site.
 >
-> Failover w trybie **LIVE** w Zerto Replication odbywa się po uznaniu lokalizacji głównej za niedostępną, dlatego konieczne jest zwrócenie uwagi na konfigurację sieci w celu uniknięcia konfliktu adresowania IP.
+> If not, be careful with the network configuration to make sure to prevent IP conflicts between primary and secondary instances of VMs.
 >
-> Ponadto, jeśli dwie infrastruktury Hosted Private Cloud znajdują się w dwóch różnych krajach, nie ma możliwości przeniesienia bloku IP z jednej infrastruktury Private Cloud do innej.
+> Furthermore, if the two Private Cloud solutions are located in 2 different countries, it is not possible to move your IP block from one Private Cloud solution to another.
 >
-> Wszelkie zasoby, które zostaną uruchomione w lokalizacji dodatkowej, staną się aktywne na poziomie przetwarzania danych.
->
-> Należy pamiętać, że replikacja między dwiema lokalizacjami jest zmodyfikowana lub przerwana (patrz dalej).
+> Please note that, contrary to what happens during a test failover, replication operations are stopped during an actual failover.
 >
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_02.png){.thumbnail}
 
-W tym celu zaloguj się do interfejsu Zerto Replication, przełącz przycisk znajdujący się w prawym dolnym rogu do pozycji **LIVE** (kolor baneru zmieni się, sygnalizując, że operacje, które zostaną wykonane, mogą mieć wpływ na VM) i kliknij `FAILOVER`{.action}.
+To start a complete failover, you need to set the toggle on **LIVE** before pushing the failover button. (The banner at the bottom of the page becomes red to warn you that going further may have an impact on your VMs.)
+
+Click `FAILOVER`{.action}.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_03.png){.thumbnail}
 
-Natychmiast pojawia się ekran z dostępnymi VPG, kierunkiem replikacji, docelową lokalizacją oraz informacją o tym, czy poziom ochrony jest prawidłowy (**Meeting SLA**).
+A screen will appear indicating the available VPGs, the direction of replication, the destination site, and if the level of protection is correct (**Meeting SLA**).
+You can decide on the failover parameters, just like during a test failover: which VPGs to failover, the replication direction, VPGs status (**Meeting SLA**).
 
-Masz kilka możliwości:
+1. You can select one or several VPGs
+2. If you want to partially migrate some VPGs, you can click on the square icon and select which VMs to failover.
 
-1. Zaznacz pole, aby wybrać VPG, wraz z wszystkimi należącymi do niej VM, do przełączenia awaryjnego.
-2. Kliknij ikonę po prawej stronie nazwy VPG, aby wyświetlić listę VM należących do VPG. Teraz możesz wybrać, które VM należące do VPG mają być objęte przełączeniem awaryjnym.
-
-Kliknij `NEXT`{.action}, aby zatwierdzić i przejść do kolejnego etapu.
+Click `NEXT`{.action}.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_04.png){.thumbnail}
 
-Opcja 1 – test na VPG – został wybrany przykładowo.
+We have decided to failover a single VPG.
 
-Na tym etapie widzimy podsumowanie operacji związanych z VPG:
+We have a summary of the failover parameters:
 
-- kierunek replikacji;
-- lokalizacja zdalna;
-- **Checkpoint**: jest to data, dla której dane zostaną przywrócone. Różnica między wybranym punktem a bieżącą datą określi **RPO**;
-- **Commit Policy**: patrz dalej;
-- **VM Shutdown**: określa zachowanie, które należy przyjąć w lokalizacji głównej: brak wyłączenia VM, wyłączenie, wymuszone wyłączenie;
-- **Reverse Protection**: wskazuje, czy replikację VPG należy skonfigurować w odwrotnym kierunku po zakończeniu trybu failover, tak aby w razie potrzeby można było przeprowadzić później powrót po awarii.
-- informacja, czy została określona kolejność uruchamiania VM;
-- informacja, czy są obecne skrypty przed i po przełączeniu awaryjnym (funkcja niedostępna).
+- Replication direction
+- Remote site
+- The **checkpoint** to use: what version should use Zerto to restart from. Usually the latest version will minimize the data loss and improve **RPO**.
+- What **commit policy** to use: see further down the page.
+- **VM Shutdown**: what should Zerto do with the VMs on the primary site if they are still running, leave them running, shutdown, forced shutdown.
+- **Reverse Protection**: after the failover, should the replication enabled again to allow a failback or be left as-is.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_05.png){.thumbnail}
 
-W przypadku **Commit Policy** masz do wyboru trzy (3) opcje:
+There are 3 **Commit Policy** settings:
 
-- Auto-Rollback: bez żadnego działania ze strony użytkownika, wycofywanie jest uruchamiane po upływie ustawionego czasu.
-- Auto-Commit: bez żadnego działania ze strony użytkownika, zatwierdzenie danych na platformie dodatkowej jest przeprowadzane po upływie ustawionego czasu (nie można po prostu wrócić do platformy głównej).
-- None: operacja **Rollback** lub **Commit** muszą zostać zatwierdzone przez użytkownika.
+- Auto-Rollback: If no action is taken, the rollback starts automatically after the timer is elapsed.
+- Auto-Commit: If no action is taken, data changed on the secondary site is now committed on VMs, and to be able to fail back, a reverse replication needs to be set up.
+- None: **Rollback** or **Commit** have to be launched manually.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_06.png){.thumbnail}
 
-W przypadku opcji **Auto** domyślne opóźnienie czasowe wnosi sześćdziesiąt (60) minut.
+For all automatic actions, the default timer is 60 minutes.
 
-Kliknij `NEXT`{.action}, aby kontynuować.
+Click `NEXT`{.action}.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_07.png){.thumbnail}
 
-Ostatni ekran to podsumowanie z widokiem różnych lokalizacji i liczbą VPG do przełączenia awaryjnego.
+The summary screen is displayed. If everything is OK, you can start the test by clicking `START FAILOVER`{.action}.
 
 > [!warning]
 >
-> Zalecamy przeczytanie podsumowania i wszystkich ostrzeżeń.
+> Please read the summary and all associated warnings carefully.
 >
-
-Kliknij `START FAILOVER`{.action}, aby uruchomić przełączenie awaryjne.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_08.png){.thumbnail}
 
-Jeśli wybrano zasadę **Commit Policy** typu **Auto**, pojawi się komunikat ostrzegający o jej możliwym skutku.
+If you have selected an **Automatic Policy**, you will receive a warning about its impact.
 
-Kliknij `START FAILOVER`{.action}, aby potwierdzić uruchomienie.
+Confirm with `START FAILOVER`{.action}.
 
-Migracja uruchamia się natychmiast wraz z operacjami na vCenter w lokalizacji zdalnej.
-
-Teraz wystarczy sprawdzić, czy w lokalizacji zdalnej wszystko działa poprawnie.
+Failover starts, you can follow the actions from the secondary vCenter.
+Validate the successful start of VMs on secondary platform.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_10.png){.thumbnail}
 
-Po uruchomieniu przełączania awaryjnego w interfejsie Zerto Replication może pojawić się alert.
-Jest on związany z zasadą **Commit Policy** i będzie widoczny do momentu zatwierdzenia (commit) lub anulowania.
-
-W razie potrzeby czynności te należy wykonać za pomocą ikon po prawej stronie VPG.
+After the failover has completed, you will see a pending task as long as you have not committed or failed back the operation (through the small icons near the VPG name).
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_11.png){.thumbnail}
 
-W razie zatwierdzenia możesz automatycznie skonfigurować VPG w przeciwnym kierunku (wywołać **Reverse Protection**).
+When you commit the data on the secondary site, you can automatically set up the protection (**Reverse Protection**).
 
-Kliknij `COMMIT`{.action}, aby potwierdzić.
+Validate with `COMMIT`{.action}.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_13.png){.thumbnail}
 
-Zauważ, że strzałka replikacji przy VPG zmieniła kierunek.
+If you check the VPG, you will see that the replication direction has changed.
 
-### Przygotowanie i wykonanie powrotu po awarii
+### Prepare and trigger the failback
 
-W zależności od tego, jak został przeprowadzony **Failover**, ewentualny powrót do lokalizacji głównej (nie jest to konieczność) może wymagać kilku działań.
+Depending on failover options, the failback (if needed) may require different steps.
 
-Jeśli migracja odbywała się przy użyciu **Reverse Protection**, powrót po awarii odbywa się przy użyciu **Failover Live** (zapoznaj się z odpowiednią sekcją dotyczącą działań, które należy podjąć).
+- If you have selected **Reverse Protection** during the failover, the failback is just a  **Failover Live** (refer to the relevant part of this guide).
+- If you have not enabled **Reverse Protection**, you need to create a new VPG, do a full sync and then do a **Failover Live** (refer to the relevant part of this guide).
 
-Jeśli migracja odbywała się **bez** **Reverse Protection**, powrót po awarii polega na utworzeniu VPG, a **następnie** przeprowadzeniu **Failover Live** (zapoznaj się z poprzednimi sekcjami dotyczącymi działań, które należy podjąć).
+## Go further 
 
-## Sprawdź również
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Dołącz do społeczności [naszych użytkowników](/links/community).
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
+
+Join our [community of users](/links/community).

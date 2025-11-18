@@ -25,7 +25,7 @@ Once you have created your container and OpenStack account, you only need to do 
 
 Once your OpenStack user account has been created, you can retrieve the config file you need for Rclone from your Control Panel.
 
-To do this, when you are on the OpenStack user page in your Control Panel, click the wrench symbol on the right, then on `Download an Rclone config file`{.external}.
+To do this, when you are on the OpenStack user page in your Control Panel, click the wrench symbol on the right, then on `Download an Rclone config file`.
 
 ![Download an Rclone config file](images/download_file.png){.thumbnail}
 
@@ -52,7 +52,7 @@ Rclone lsd BackupStorage
 
 (Where *BackupStorage* is the name given to your storage space.)
 
-You can find more detailed instructions on how to synchronise your object storage and Rclone on the official Rclone website: [Official Rclone documentation](https://Rclone.org/swift/){.external}.
+You can find more detailed instructions on how to synchronise your object storage and Rclone on the official Rclone website: [Official Rclone documentation](https://Rclone.org/swift/).
 
 ## Go further
 

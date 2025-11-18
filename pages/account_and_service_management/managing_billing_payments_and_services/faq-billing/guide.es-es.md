@@ -98,7 +98,7 @@ Las soluciones que tengan activada la renovación automática se renovarán el p
 
 #### Ideas y consejos
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}{.action}. Desde ahí podrá modificar la frecuencia con la que renueva sus soluciones. 
+Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}. Desde ahí podrá modificar la frecuencia con la que renueva sus soluciones. 
 Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### ¿Qué forma de pago se utiliza para abonar los servicios?
@@ -144,7 +144,7 @@ Tanto los pagos realizados a través de nuestro sitio web como las renovaciones 
 
 ### ¿Cómo dar de baja un servicio? <a name="cancelservice"></a>
 
-Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}{.action}. Será redirigido a la página `Gestión de mis soluciones y servicios`{.action}. Una vez allí, localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
+Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}. Será redirigido a la página `Gestión de mis soluciones y servicios`{.action}. Una vez allí, localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
 
 La baja será efectiva una vez finalizado el período de validez o de compromiso del servicio. Puede realizar la solicitud o cancelarla hasta 24 horas antes de la fecha de expiración.
 

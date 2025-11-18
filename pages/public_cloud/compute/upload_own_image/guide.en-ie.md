@@ -25,12 +25,12 @@ It is advisable to either use cloud-ready images already provided by the distrib
 
 Cloud-ready images can be found here:
 
-- <https://cloud.centos.org/centos/>{.external}
-- <https://cloud.debian.org/images/cloud/>{.external}
-- <https://cloud-images.ubuntu.com/releases/>{.external}
-- <https://alt.fedoraproject.org/cloud/>{.external}
+- <https://cloud.centos.org/centos/>
+- <https://cloud.debian.org/images/cloud/>
+- <https://cloud-images.ubuntu.com/releases/>
+- <https://alt.fedoraproject.org/cloud/>
 
-Other operating systems tend to offer ISO images which are also applicable when [building images with Packer](https://www.packer.io/docs/builders){.external} such as QEMU and VirtualBox builders.
+Other operating systems tend to offer ISO images which are also applicable when [building images with Packer](https://www.packer.io/docs/builders) such as QEMU and VirtualBox builders.
 
 We recommend ensuring the following is installed on your images for them to be cloud-ready:
 
@@ -41,7 +41,7 @@ Finally we recommend images to be either in RAW or QCOW2 format. As best practic
 
 ### Uploading your image
 
-With OpenStack there are two ways of uploading your own image. You can either upload it via the OpenStack command line interface or with the [Horizon web interface](https://horizon.cloud.ovh.net/auth/login/){.external}.
+With OpenStack there are two ways of uploading your own image. You can either upload it via the OpenStack command line interface or with the [Horizon web interface](https://horizon.cloud.ovh.net/auth/login/).
 
 #### Using CLI
 

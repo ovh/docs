@@ -36,7 +36,7 @@ At the end of this tutorial you should have the following flow:
 - The [OpenStack API CLI](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) installed.
 - Being familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 - Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you wish to use it.
-- The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
+- The JSON parser tool [jq](https://stedolan.github.io/jq/) installed.
 
 ## Initialization
 
@@ -396,11 +396,11 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> > 
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 >> 
->> ![Attach a Vrack gateway to an OVHcloud Managed Kubernetes cluster](images/attach-vrack-gateway-to-kubernetes-cluster.png)
+>> ![Attach a vRack gateway to an OVHcloud Managed Kubernetes cluster](images/attach-vrack-gateway-to-kubernetes-cluster.png)
 > Terraform
 >> > [!primary]
 >> > 
@@ -444,7 +444,7 @@ Now wait until your OVHcloud Managed Kubernetes cluster is READY.
 
 For that, you can check its status in the OVHcloud Control Panel:
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 

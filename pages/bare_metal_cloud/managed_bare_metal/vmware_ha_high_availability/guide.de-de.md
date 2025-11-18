@@ -15,7 +15,7 @@ Die Hauptfunktion von **VMware HA** (High Availability) ist, virtuelle Maschinen
 ## Voraussetzungen
 
 - Sie sind auf Ihrem [vSphere Interface](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface) eingeloggt.
-- Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
+- Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Produkt.
 
 ## Beschreibung
 

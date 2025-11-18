@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2025-02-26
+updated: 2025-07-03
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -10,12 +10,12 @@ We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) &
 
 Currently, we support the following Kubernetes releases:
 
-* `1.27`
 * `1.28`
 * `1.29`
 * `1.30`
 * `1.31`
 * `1.32`
+* `1.33`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](/pages/public_cloud/containers_orchestration/managed_kubernetes/upgrading-kubernetes-version) to receive official support for your cluster.
 
@@ -35,16 +35,16 @@ The OS, kernel and Docker demon version on your nodes will be regularly updated.
 
 We use `containerd` as the default CRI
 
-* `1.27`: 1.7.18
 * `1.28`: 1.7.18
 * `1.29`: 1.7.18
 * `1.30`: 1.7.18
 * `1.31`: 1.7.18
 * `1.32`: 1.7.25
+* `1.33`: 2.1.3
 
 ## CNI (Cluster Network Interface)
 
-The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.external} which embedded [calico](https://github.com/projectcalico/calico){.external} for policy and [flannel](https://github.com/coreos/flannel/){.external} for networking.
+The CNI plugin installed is [canal](https://github.com/projectcalico/canal) which embedded [calico](https://github.com/projectcalico/calico) for policy and [flannel](https://github.com/coreos/flannel/) for networking.
 
 The versions installed depends on the Kubernetes version:
 
@@ -54,6 +54,7 @@ The versions installed depends on the Kubernetes version:
 * `1.30`: calico v3.28.0, flannel v0.24.3
 * `1.31`: calico v3.28.1, flannel v0.24.4
 * `1.32`: calico v3.29.1, flannel v0.24.4
+* `1.33`: calico v3.30.1, flannel v0.24.4
 
 ## CCM (Cloud-controller-manager)
 
@@ -64,8 +65,8 @@ Our cloud-controller-manager (CCM) is based on the OpenStack cloud-controller-ma
 * `1.29`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
 * `1.30`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
 * `1.31`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-* `1.32`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-
+* `1.32`: OVH Octavia CCM based on OpenstackCCM 1.29
+* `1.33`: OVH Octavia CCM based on OpenstackCCM 1.33
 
 ## CSI (Container Storage Interface)
 
@@ -92,17 +93,18 @@ The versions are:
 * `1.30`: coredns v1.11.3, metrics-server v0.7.2
 * `1.31`: coredns v1.11.3, metrics-server v0.7.2
 * `1.32`: coredns v1.12.0, metrics-server v0.7.2
+* `1.33`: coredns v1.12.1, metrics-server v0.7.2
 
 ## Enabled policies
 
-* [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/){.external}
-* [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/){.external}
-* [Limit range](https://kubernetes.io/docs/concepts/policy/limit-range/){.external}
+* [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+* [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
+* [Limit range](https://kubernetes.io/docs/concepts/policy/limit-range/)
 
 Authorization modes:
 
-* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/){.external}: Authorise API requests made by Kubelets.
-* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external}: Role-Based Access Control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
+* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/): Authorise API requests made by Kubelets.
+* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/): Role-Based Access Control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
 
 Feature gates:
 
@@ -146,6 +148,6 @@ This table sums up the reserved resources on b2 and b3 flavors:
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

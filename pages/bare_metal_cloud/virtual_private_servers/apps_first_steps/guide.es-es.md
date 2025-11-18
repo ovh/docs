@@ -4,10 +4,6 @@ excerpt: Cómo desplegar aplicaciones preinstaladas en un VPS
 updated: 2022-08-25
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
 OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para un despliegue rápido y fácil en pocos clics.
@@ -16,7 +12,7 @@ OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para 
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
+- Tener un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
 
 ## Procedimiento
 
@@ -25,6 +21,10 @@ OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para 
 Instale [la aplicación que desee desde el área de cliente de OVHcloud](/links/manager) o las API de OVHcloud. También puede consultar nuestra guía [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
  
 #### cPanel
+
+> [!warning]
+> Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
+>
 
 A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de cPanel. A las etapas marcadas con un "*", seguiremos una FAQ.
 
@@ -57,6 +57,10 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 
 #### Plesk
 
+> [!warning]
+> Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
+>
+
 A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de Plesk. A las etapas marcadas con un "\*", seguiremos una FAQ.
 
 1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
@@ -76,6 +80,10 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 >> Puede contratar una licencia Plesk para su VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
+
+> [!warning]
+> Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
+>
 
 A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de Docker.
 

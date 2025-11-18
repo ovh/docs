@@ -20,7 +20,7 @@ updated: 2023-09-20
 
 ## Wymagania początkowe
 
-- jednego [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- jednego [VPS](/links/bare-metal/vps) na koncie OVHcloud
 - dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

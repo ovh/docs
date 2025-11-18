@@ -14,7 +14,7 @@ updated: 2024-08-05
 
 A private network enables you to build an isolated, reliable, and high performance network infrastructure for your application in the cloud.
 
-Public Cloud private networks provide the ability to configure your network in a fully managed way, using common networking concepts such as subnets and routing. Combined with network components such as [Gateway](#gateway), [Load Balancer](#lodbalancer) and [Floating IP](#floatingip), it allows you to quickly and easily build a complete end-to-end infrastructure, from your backend servers to your users.
+Public Cloud private networks provide the ability to configure your network in a fully managed way, using common networking concepts such as subnets and routing. Combined with network components such as [Gateway](#gateway), [Load Balancer](#loadbalancer) and [Floating IP](#floatingip), it allows you to quickly and easily build a complete end-to-end infrastructure, from your backend servers to your users.
 
 ### Public Cloud private networks
 
@@ -29,7 +29,7 @@ Each type can then have subnets attached to allow resources to communicate. Thos
 
 A subnet (or parts of it) can be assigned to instances using the DHCP protocol for automatic configuration.
 
-Public Cloud private networks use Layer-2 VLANs to separate broadcast domains from each other. For more information, see [the VLAN section below](#VLANcluster).
+Public Cloud private networks use Layer-2 VLANs to separate broadcast domains from each other. For more information, see [the VLAN section below](#vlancluster).
 
 You can find more information about private networks and subnets in the OpenStack documentation:
 

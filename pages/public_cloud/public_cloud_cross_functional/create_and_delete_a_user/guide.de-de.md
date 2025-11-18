@@ -49,7 +49,7 @@ Sobald der OpenStack User erstellt ist, können Sie seine Zugangsdaten für den 
 
 ### Passwörter von OpenStack-Benutzern verwalten
 
-Nachdem Sie sich bei [OpenStack Horizon](https://horizon.cloud.ovh.net){.external} eingeloggt haben, können Sie ein OpenStack-Passwort erstellen:
+Nachdem Sie sich bei [OpenStack Horizon](https://horizon.cloud.ovh.net) eingeloggt haben, können Sie ein OpenStack-Passwort erstellen:
 
 ![Login Horizon](images/1_H_login_window.png){.thumbnail}
 

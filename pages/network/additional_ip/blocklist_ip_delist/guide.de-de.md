@@ -128,7 +128,7 @@ Wenn Sie derzeit davon betroffen sind, empfehlen wir Ihnen diese Optionen:
 
 ///
 
-### Fabel Spamsources
+#### Fabel Spamsources
 
 /// details | Weitere Informationen...
 
@@ -148,7 +148,7 @@ Das Entfernen von der Liste sollte zwischen 20 und 30 Minuten dauern.
 
 /// details | Weitere Informationen...
 
-Um [eine IP aus MIPSpace zu entfernen](https://www.mipspace.com/remove.php), loggen Sie sich zunächst im [OVHcloud Kundencenter](/links/manager) ein und stellen Sie sicher, dass die folgenden Informationen aktuell sind:
+Um [eine IP aus MIPSpace zu entfernen](https://www.mipspace.com/removal.php), loggen Sie sich zunächst im [OVHcloud Kundencenter](/links/manager) ein und stellen Sie sicher, dass die folgenden Informationen aktuell sind:
 
 - [DNS Reverse-Auflösung](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (PTR-Eintrag).
 - Details Ihrer Organisation (*RWhois*) im Bereich `Network`{.action}: Öffnen Sie `IP`{.action} und klicken Sie dann rechts auf das `Zahnrad`{.action}. Wählen Sie im Dropdown-Menü `Meine Organisationen verwalten`{.action} aus.

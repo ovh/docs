@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilidad (EN)
 excerpt: "Discover our S3* compatible Object Storage features list"
-updated: 2025-05-30
+updated: 2025-06-27
 ---
 
 <style>
@@ -481,7 +481,7 @@ This guide lists the features supported by Object Storage.
         <td>no</td>
     </tr>
     <tr>
-        <td rowspan="6">Web content</td>
+        <td rowspan="8">Web content</td>
         <td rowspan="3">Static web site</td>
         <td>put bucket website</td>
         <td>yes</td>
@@ -498,7 +498,7 @@ This guide lists the features supported by Object Storage.
         <td>yes</td>
     </tr>
     <tr>
-        <td rowspan="3">Pre-signed urls</td>
+        <td rowspan="4">Presigned urls</td>
         <td>GET</td>
         <td>yes</td>
         <td>yes</td>
@@ -509,6 +509,17 @@ This guide lists the features supported by Object Storage.
         <td>yes</td>
     </tr>
     <tr>
+        <td>HEAD</td>
+        <td>yes</td>
+        <td>yes</td>
+    </tr>
+    <tr>
+        <td>DELETE</td>
+        <td>yes</td>
+        <td>yes</td>
+    </tr>
+    <tr>
+        <td>Browser-based uploads</td>
         <td>POST</td>
         <td>no</td>
         <td>yes</td>

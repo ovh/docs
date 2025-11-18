@@ -16,9 +16,9 @@ Jeśli skonfigurujesz serwer dedykowany jako serwer DNS, możesz użyć DNS seco
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}
-- Posiadanie [domeny](https://www.ovh.pl/domeny/){.external} podlegającej administracjom lub zarządzaniu technicznym
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal)
+- Posiadanie [domeny](/links/web/domains) podlegającej administracjom lub zarządzaniu technicznym
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -29,7 +29,7 @@ Jeśli skonfigurujesz serwer dedykowany jako serwer DNS, możesz użyć DNS seco
 
 ## W praktyce
 
-### Dodanie domeny <a name="ajoutdomaine"></a>
+### Dodanie domeny <a name="addingdomain"></a>
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swój serwer z `Serwery dedykowane`{.action}.
 
@@ -41,7 +41,7 @@ Wprowadź adres IP i domenę, którą chcesz dodać, następnie kliknij `Dalej`{
 
 ![DNS secondary](images/cp-02.png){.thumbnail}
 
-Po kliknięciu `Dalej`{.action} w tym etapie zostanie aktywowana weryfikacja domeny. Jeśli nie dodałeś jeszcze rekordu TXT do strefy DNS, postępuj zgodnie z instrukcjami [podanymi poniżej](#verificationdomaine). W przeciwnym razie kliknij Dalej, `klikając Dalej`{.action}.
+Po kliknięciu `Dalej`{.action} w tym etapie zostanie aktywowana weryfikacja domeny. Jeśli nie dodałeś jeszcze rekordu TXT do strefy DNS, postępuj zgodnie z instrukcjami [podanymi poniżej](#verifyingdomain). W przeciwnym razie kliknij Dalej, `klikając Dalej`{.action}.
 
 ![DNS secondary](images/cp-03.png){.thumbnail}
 
@@ -61,20 +61,20 @@ Dodane domeny zostaną wymienione w tej zakładce i mogą zostać usunięte po k
 >
 > Jeśli potrzebujesz dodatkowych informacji, aby uzupełnić te zadania administracyjne, skorzystaj z odpowiednich zewnętrznych dokumentów.
 
-### Weryfikacja zezwolenia dla domeny <a name="verificationdomaine"></a>
+### Weryfikacja zezwolenia dla domeny <a name="verifyingdomain"></a>
 
-Zanim dodasz domenę do DNS secondary OVHcloud, musisz potwierdzić, że zezwalasz na zarządzanie tą domeną. Przeprowadza się to przez zautomatyzowane wyszukiwanie DNS subdomeny *ownercheck.twojej domeny*. W tym celu generowany jest unikalny ciąg znaków widoczny w Panelu klienta OVHcloud.
+Zanim dodasz domenę do DNS secondary OVHcloud, musisz potwierdzić, że zezwalasz na zarządzanie tą domeną. Przeprowadza się to przez zautomatyzowane wyszukiwanie DNS subdomeny *ownercheck.twojadomena*. W tym celu generowany jest unikalny ciąg znaków widoczny w Panelu klienta OVHcloud.
 
-- Jeśli domena jest zarządzana przez zewnętrznego operatora domeny lub na tym etapie korzysta z zewnętrznych serwerów DNS, zaloguj się do panelu klienta dostawcy DNS i dodaj rekord TXT z subdomeną "ownercheck" oraz wartością przedstawioną w etapie 2 [Dodania domeny"](#ajoutdomaine).
+- Jeśli domena jest zarządzana przez zewnętrznego operatora domeny lub na tym etapie korzysta z zewnętrznych serwerów DNS, zaloguj się do panelu klienta dostawcy DNS i dodaj rekord TXT z subdomeną "ownercheck" oraz wartością przedstawioną w etapie 2 ["Dodania domeny"](#addingdomain).
 
 - Jeśli domena jest zarządzana przez OVHcloud jako serwer do rejestracji i korzysta z serwerów DNS OVHcloud, zamknij okno klikając wcześniej na `Anuluj`{.action}. Następnie postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit), aby dodać rekord TXT do Panelu [klienta OVHcloud](/links/manager).
 
 ![DNS secondary](images/cp-04.png){.thumbnail}
 
-Po poprawnym dodaniu rekordu TXT do strefy DNS domeny powtórzyć [powyższe](#ajoutdomaine) kroki i zakończyć procedurę.
+Po poprawnym dodaniu rekordu TXT do strefy DNS domeny powtórzyć [powyższe](#addingdomain) kroki i zakończyć procedurę.
 
 ## Sprawdź również
 
-[Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

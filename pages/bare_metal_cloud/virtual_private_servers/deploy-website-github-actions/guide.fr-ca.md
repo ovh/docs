@@ -147,7 +147,7 @@ Pour permettre à GitHub Actions de se connecter automatiquement à votre VPS, a
 
 #### Créer un dépôt GitHub
 
-Pour créer un dépôt GitHub, suivez les étapes de la page « Création d'un dépôt » de la [documentation officielle de GitHub](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-new-repository){.external}.
+Pour créer un dépôt GitHub, suivez les étapes de la page « Création d'un dépôt » de la [documentation officielle de GitHub](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-new-repository).
 
 #### Initialiser le dépôt Git sur le VPS
 

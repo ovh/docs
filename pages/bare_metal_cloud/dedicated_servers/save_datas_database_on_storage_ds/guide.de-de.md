@@ -8,7 +8,7 @@ updated: 2018-09-12
 
 Ihre elektronischen Daten sind äußerst wichtig: Verlust oder Beschädigung dieser Daten führen schnell zu echten Problemen für Ihr Business. Es besteht immer ein gewisses Risiko. Daher empfehlen wir, mindestens täglich Backups durchzuführen und diese idealerweise auf einer Storage-Lösung zu speichern, die von Ihren Produktionsinfrastrukturen getrennt ist.
 
-OVHcloud bietet Ihnen hierfür eine spezielle [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external} Reihe, die für Ihre Speichervorgänge optimiert und mit mindestens vier Festplatten je Server ausgestattet ist. Sie können diese Server für Backups von bei OVHcloud gehosteten Infrastrukturen verwenden, sowie über das öffentliche Internetnetzwerk Infrastrukturen von Drittanbietern sichern.
+OVHcloud bietet Ihnen hierfür eine spezielle [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/storage/) Reihe, die für Ihre Speichervorgänge optimiert und mit mindestens vier Festplatten je Server ausgestattet ist. Sie können diese Server für Backups von bei OVHcloud gehosteten Infrastrukturen verwenden, sowie über das öffentliche Internetnetzwerk Infrastrukturen von Drittanbietern sichern.
 
 In diesem Tutorial lernen Sie, wie Sie einen OVHcloud Storage Server nach Ihren Anforderungen konfigurieren, eine Ordnerstruktur zum Speichern der Backups erstellen und das Daten-Backup zweier Remote-Server via SCP automatisieren.
 
@@ -24,16 +24,16 @@ In diesem Tutorial lernen Sie, wie Sie einen OVHcloud Storage Server nach Ihren 
 
 ### Sie benötigen:
 
-- einen [OVHcloud Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external}
-- eine Produktionsinfrastruktur ([VPS](https://www.ovhcloud.com/de/vps/){.external}, [Dedicated Server](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/de/public-cloud/){.external}, ...)
+- einen [OVHcloud Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/)
+- eine Produktionsinfrastruktur ([VPS](/links/bare-metal/vps), [Dedicated Server](/links/bare-metal/bare-metal), [Public Cloud](/links/public-cloud/public-cloud), etc.)
 - eine SSH-Verbindung zwischen dem Storage Server und der Produktionsinfrastruktur
-- empfohlen: ein privates Netzwerk zwischen Ihren Servern ([OVHcloud vRack](https://www.ovh.de/loesungen/vrack/){.external})
+- empfohlen: ein privates Netzwerk zwischen Ihren Servern ([OVHcloud vRack](/links/network/vrack))
 
 ## Beschreibung
 
 ### Schritt 1: Passenden RAID-Modus auswählen
 
-OVHcloud bietet eine [Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external} Reihe, deren Hardwarekonfigurationen mehrere Festplatten enthalten. In unserem Beispiel verwenden wir ein Software-RAID (oder _SoftRAID_) mit vier Festplatten mit einer Speicherkapazität von jeweils 6 TB.
+OVHcloud bietet eine [Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/) Reihe, deren Hardwarekonfigurationen mehrere Festplatten enthalten. In unserem Beispiel verwenden wir ein Software-RAID (oder _SoftRAID_) mit vier Festplatten mit einer Speicherkapazität von jeweils 6 TB.
 
 Bei OVHcloud können Sie nun die Speicherkonfiguration selbst festlegen und aus RAID 0, 1, 5, 6 und 10 wählen. Jeder dieser Modi hat seine Vor- und Nachteile in Bezug auf Leistung und Fehlertoleranz. So können wir mit vier Festplatten effizient Daten in RAID 5, 6 oder 10 speichern (RAID 0 und 1 sind hier nicht relevant).
 
@@ -61,7 +61,7 @@ Kein RAID-Typ ist grundsätzlich besser als die anderen. Alle erfüllen bestimmt
 
 ### Schritt 2: Server installieren und konfigurieren
 
-Gehen Sie in Ihr [OVHcloud Kundencenter ](/links/manager){.external} und installieren Sie Ihren Server. Wie bereits erwähnt, verwenden wir Debian 9.4. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ihren-dedizierten-server-installieren-oder-reinstallieren){.external}.
+Gehen Sie in Ihr [OVHcloud Kundencenter ](/links/manager) und installieren Sie Ihren Server. Wie bereits erwähnt, verwenden wir Debian 9.4. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ihren-dedizierten-server-installieren-oder-reinstallieren).
 
 Wenn Sie das Betriebssystem für die Installation ausgewählt haben, setzen Sie einen Haken in dem Feld `Konfiguration der Partitionen anpassen`{.action}.
 

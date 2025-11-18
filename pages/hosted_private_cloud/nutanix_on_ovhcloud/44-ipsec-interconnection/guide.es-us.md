@@ -11,13 +11,13 @@ This guide will show you how to interconnect two Nutanix clusters, provided by O
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure  that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/es/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements
 
 - Two Nutanix clusters provided by OVHcloud, on different sites
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via Prism Central
 - A different private IP addressing scheme applied per cluster
 - Being familiar with uses for an IPsec VPN using the [Nutanix Disaster Recovery Plan guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/43-disaster-recovery-plan-overview)
@@ -76,7 +76,7 @@ To allow this configuration, we will replace the **OVHgateway** virtual machine 
 <a name="downloadsources"></a>
 #### Step 2.1 Downloading sources for pfSense installation
 
-Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
+Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/).
 
 Using [this documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import), add the **pfSense ISO** image to your Nutanix cluster.
 
@@ -122,7 +122,7 @@ From the `More` menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), select your Nutanix cluster, and find the information in the `IPFO` field.
+Log in to the [OVHcloud Control Panel](/links/manager), select your Nutanix cluster, and find the information in the `IPFO` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -412,7 +412,7 @@ We will install the **GW-PFSENSE** gateway in France on the IP plan **192.168.0.
 <a name="downloadsourcesfr"></a>
 #### Step 3.1 Downloading sources for pfSense installation
 
-Download the ISO image of **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
+Download the ISO image of **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/).
 
 Using [this documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import), add the pfSense **ISO image** to your Nutanix cluster.
 
@@ -458,7 +458,7 @@ From the `More` menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), select your Nutanix cluster, and find the information in the `IPFO` field.
+Log in to the [OVHcloud Control Panel](/links/manager), select your Nutanix cluster, and find the information in the `IPFO` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -974,6 +974,6 @@ VPN setup is complete on both clusters. It is now possible to set up replicas th
 
 [Asynchronous or *NearSync* replication through Prism Element](/pages/hosted_private_cloud/nutanix_on_ovhcloud/46-prism-element-replication)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

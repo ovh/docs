@@ -15,7 +15,7 @@ Ce document montre comment effacer ces fichiers et remettre la VPG en fonction.
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour Zerto (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour Zerto (créé dans l'[espace client OVHcloud](/links/manager))
 - Avoir déployé [Zerto Virtual Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
 
 ## En pratique

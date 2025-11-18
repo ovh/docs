@@ -1,7 +1,7 @@
 ---
 title: "My website is slow. What to do?"
 excerpt: "Identify the cause of your website's slowdowns and find out how to improve this situation"
-updated: 2023-10-26
+updated: 2025-11-17
 ---
 
 ## Objective
@@ -27,12 +27,11 @@ In rare cases, the slow display may also be caused by your Internet service prov
 >
 > Users share the resources of the web hosting infrastructure their websites are using. If one of them overloads the shared infrastructure, this can have consequences for the other hosting services on the same infrastructure.
 >
-> Our shared hosting plans do not have a Service Level Agreement (SLA).
+> Our web hosting plans do not have a Service Level Agreement (SLA).
 >
 > If you need a service with a guaranteed availability rate higher than 99%, we recommend that you consider using a [Virtual Private Server (VPS)](/links/bare-metal/vps) or a [Dedicated Server](/links/bare-metal/bare-metal).
 >
 > Furthermore, the performance of OVHcloud shared hosting infrastructures is monitored 24/7. This is to enable a general high availability, and where applicable, a quick recovery of your services in the event of an overload.
->
 
 ## Requirements
 
@@ -47,12 +46,10 @@ In rare cases, the slow display may also be caused by your Internet service prov
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
 > This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you with issues **not caused by the relevant hosting infrastructure itself**. You can find more information in the [Go further](#go-further) section of this guide.
->
 
 > [!success]
 >
 > We recommend noting your diagnostic results as you progress in this guide. This data will prove useful for resolving your issue, whatever the cause of the slowness.
->
 
 ### Understanding the notion of Time To First Byte (TTFB)
 
@@ -92,24 +89,17 @@ All diagnostics in step 1 must be performed **without exception** to determine w
 
 #### 1.1 - Check the status of your OVHcloud services
 
-To ensure that your services (shared hosting **and** database) are not undergoing maintenance or an incident, retrieve the cluster and filer information of your web hosting as well as the general information relating to your database. You can then check their status at [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
+To ensure that your services (web hosting **and** database) are not undergoing maintenance or an incident, retrieve the cluster and filer information of your web hosting as well as the general information relating to your database. You can then check their status at [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-To find out the cluster and filer of your hosting, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the web hosting plan concerned. In the `General information`{.action} tab you can see the `Datacenter` and `Filer` of your web hosting.
-
-![Retrieve Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
-
-Then click on the `Multisite`{.action} tab to retrieve the cluster number where your shared hosting is located.
-
-![Recover cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
+To find out the cluster and filer where your web hosting is located, refer to our guide "[Web hosting - How to know your cluster and filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >
-> If an incident or maintenance is reported on the infrastructure on which your shared hosting is located, wait until they are resolved by our administrators. **No further action is required on your side**.
+> If an incident or maintenance is reported on the infrastructure on which your web hosting is located, wait until they are resolved by our administrators. **No further action is required on your side**.
 >
 > You can subscribe to the incident or maintenance updates with your email address, in order to receive an email notification of the progress of the operations.
 >
 > Once the incident or maintenance status has been marked as **resolved**, the accumulated load stabilisation may require a maximum of **3 hours** to take effect.
->
 
 If no incidents or maintenance are reported, continue with your diagnostic.
 
@@ -119,7 +109,7 @@ Test your website from another device/computer, then from another Internet acces
 
 #### 1.3 - Test the hosting with a file independent from your website
 
-Place a file called **phpinfo.php** at the root of your website in the [FTP storage space on your shared hosting](/pages/web_cloud/web_hosting/ftp_connection).
+Place a file called **phpinfo.php** at the root of your website in the [FTP storage space on your web hosting](/pages/web_cloud/web_hosting/ftp_connection).
 
 In this file, insert the following code:
 
@@ -136,16 +126,14 @@ phpinfo();
 > Changes to a **.htaccess** file may affect your website’s display. Contact a [specialist provider](/links/partner) if you have difficulty in doing the following.
 >
 > If it does not appear and **only for informed users**, rename your files **.htaccess** to **.htaccess_OLD** so that the server does not run them for your test. Rename them correctly after your diagnostic.
->
 
 **Example**: if your website’s domain name is “domain.tld” and the file **phpinfo.php** has been placed in the document root folder of your website, you can access it via the following URL: `http://domain.tld/phpinfo.php` (or `https://domain.tld/phpinfo.php`).
 
 > [!primary]
 >
-> If the call to the file **phpinfo.php*** displays a configuration table **instantly**, this means that the slowdowns do not come from the shared hosting where your website is located. Otherwise, this file will appear as slowly as your other pages. 
+> If the call to the file **phpinfo.php*** displays a configuration table **instantly**, this means that the slowdowns do not come from the web hosting where your website is located. Otherwise, this file will appear as slowly as your other pages. 
 >
-> In other words, if the delays are only present on some pages or content of your website, this means that the shared hosting **is not the cause of the delays** encountered on your website.
->
+> In other words, if the delays are only present on some pages or content of your website, this means that the web hosting **is not the cause of the delays** encountered on your website.
 
 #### 1.4 - Test your database connectivity
 
@@ -160,7 +148,6 @@ If the connection is successful, you will land on the following interface:
 > [!warning]
 >
 > If you encounter an error, please refer to our documentation on [common errors encountered with a database](/pages/web_cloud/web_hosting/diagnosis_database_errors). Then use the guide above to resolve the issue, and try connecting to your database again.
->
 
 #### 1.5 - Interpretation of diagnostics performed
 
@@ -189,7 +176,6 @@ At this point, you know that slowdowns are generated by the pages/scripts/files 
 > [!warning]
 >
 > If you have any difficulties taking the following actions, you can contact a [specialised service provider](/links/partner). OVHcloud cannot assist with developing or optimising the content on your website.
->
 
 Below, you will find the actions you need to take to identify the source(s) of the slowdowns, and optimise your website.
 
@@ -239,21 +225,18 @@ The lower the number of requests, the less resources will be required for your w
 > To do this, press the `F12` key in the Firefox browser and then select the `Network` tab. Reload your web page with the `Ctrl + Shift + R` keys so that the tool will show you the queries that were executed to load your page. Identify the elements taking the longest to load and then optimise them.
 >
 >![Firefox Network Scan](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
->
 
 To reduce the flow of requests each time your pages load, you can also set up a Content Delivery Network (CDN). This will cache the static content of your website. Your web hosting plan will receive fewer requests, and have more resources for handling the requests that cannot be cached.
 
 > [!primary]
 >
 > OVHcloud offers several [CDN options](/links/web/hosting-options). If you would like to use or activate one for your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) then read our guide on [Using the OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
->
 
 #### 2.4 - Optimise your database
 
 > [!warning]
 >
 > The actions you carry out in your database can have irreversible consequences if they are not carried out methodically and correctly. Contact a [specialist provider](/links/partner) if you are unsure about what you need to do. 
->
 
 Check to see if a significant number of queries are made to your database.<br>
 This situation can lead to over-solicitation and slowdowns, or even **504 Gateway Timeout** codes.
@@ -280,7 +263,7 @@ Resize all of your images to minimise resource consumption.
 
 See our guide on [optimising performance for your website](/pages/web_cloud/web_hosting/optimise_your_website_performance).
 
-You can find optimisation suggestions for your site by analysing it at [gtmetrix.com](https://gtmetrix.com){.external} (not affiliated with OVHcloud).
+You can find optimisation suggestions for your site by analysing it at [gtmetrix.com](https://gtmetrix.com) (not affiliated with OVHcloud).
 
 > [!success]
 >

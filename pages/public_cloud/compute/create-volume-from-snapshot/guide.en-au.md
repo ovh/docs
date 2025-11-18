@@ -19,7 +19,7 @@ This may be useful in the following cases:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/){.external} in your OVHcloud account
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - A volume snapshot in the same OpenStack region
 - Administrative access (sudo) to your instance via SSH or RDP
 

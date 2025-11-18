@@ -1,7 +1,7 @@
 ---
-title: 'Configuring an additional disk'
-excerpt: 'Find out how to add and configure additional storage space on a VPS'
-updated: 2023-02-15
+title: "How to configure an additional disk"
+excerpt: "Find out how to add and configure additional storage space on a VPS"
+updated: 2025-07-24
 ---
 
 ## Objective
@@ -12,9 +12,13 @@ With OVHcloud Virtual Private Servers you have the possibility to add a secure s
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- A [VPS](/links/bare-metal/vps) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access via SSH or RDP to your VPS
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Instructions
 
@@ -31,9 +35,9 @@ Take note of the pricing information, then click on `Order`{.action}. You will b
 ### Mounting the new storage space
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community of users](/links/community) if you experience any issues.
 >
 
 #### On a Linux VPS
@@ -215,19 +219,19 @@ Type `cmd` and click `OK`{.action} to open the command line application.
 
 At the command prompt, open DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Use the following series of DISKPART commands to set the disk to online:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -241,19 +245,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -265,7 +269,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -291,9 +295,9 @@ Label the volume (optional) and confirm the formatting options by clicking `Next
 
 In the last window, click `Finish`{.action} to format the disk. It will be available as a drive in File Explorer after the operation.
 
-### Cancelling the additional disk option
+### How to cancel the additional disk option
 
-From the `Home`{.action} tab, scroll down to the box labelled **Summary of options**. Click on `...`{.action} next to the option "Additional disks" and in the context menu click on `Cancel`{.action}.
+In the `Home`{.action} tab, in the **Your configuration** section, click `...`{.action} next to the `Additional disks` option, then click `Close`{.action}.
 
 ![canceldiskvps](images/disk_vps02.png){.thumbnail}
 

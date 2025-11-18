@@ -92,7 +92,7 @@ Verwalten Sie hier Ihre Netzwerke und die verschiedenen Sicherheitsgruppen.
 ##### **Orchestration**
 
 Dieses Menü erlaubt es Ihnen, mehrere Cloud-Anwendungen zu orchestrieren.<br>
-Weitere Informationen finden Sie in der [OpenStack Dokumentation](https://docs.openstack.org/horizon/pike/user/stacks.html){.external}.
+Weitere Informationen finden Sie in der [OpenStack Dokumentation](https://docs.openstack.org/horizon/pike/user/stacks.html).
 
 ![orchestrierung](images/orchestration2021.png){.thumbnail}
 

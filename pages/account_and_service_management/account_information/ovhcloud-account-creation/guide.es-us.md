@@ -4,6 +4,11 @@ excerpt: 'Cómo crear una cuenta de OVHcloud'
 updated: 2025-04-28
 ---
 
+> [!success]
+> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
+> No dude en compartir su opinión y sus ideas con nosotros.<br>
+> [Ir a la encuesta.](https://s.elq.fr/ovhext/s9Kt5lG)
+
 ## Objetivo
 
 Para utilizar los servicios de OVHcloud, es necesario crear primero su cuenta.

@@ -12,7 +12,7 @@ updated: 2022-02-14
 
 - Una cuenta OVHcloud
 
-Si aún no tiene una, puede crear una [aca](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Si aún no tiene una, puede crear una [aca](/links/manager).
 
 ## Instrucciones
 

@@ -73,6 +73,6 @@ set OS_PASSWORD="Your Horizon user password"
 
 ## Go further
 
-To learn how to use OpenStack: [OpenStack documentation](https://docs.openstack.org/){.external}
+To learn how to use OpenStack: [OpenStack documentation](https://docs.openstack.org/)
 
 Join our [community of users](/links/community).

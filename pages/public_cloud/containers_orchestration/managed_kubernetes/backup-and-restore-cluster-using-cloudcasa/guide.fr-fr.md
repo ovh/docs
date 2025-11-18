@@ -29,7 +29,7 @@ updated: 2022-10-31
 
 In this quick start guide you will learn how to deploy CloudCasa to your OVHcloud Managed Kubernetes cluster, create backup policies, define schedules, run backups and run restores.
 
-[CloudCasa™ by Catalogic](https://cloudcasa.io){.external} is a powerful and easy to use Kubernetes and cloud database backup service for DevOps and IT Ops teams.
+[CloudCasa™ by Catalogic](https://cloudcasa.io) is a powerful and easy to use Kubernetes and cloud database backup service for DevOps and IT Ops teams.
 With CloudCasa, you do not need to be a storage or data protection expert to backup and restore your Kubernetes clusters.
 Let CloudCasa helps you with arduous work of protecting your cluster resources and persistent data from human error, security breaches, and service failures, to provide the business continuity and compliance that your business requires.
 
@@ -294,6 +294,6 @@ Now you can sit back and relax, knowing that you can now take ad-hoc or schedule
 
 In case you have questions, you can read the [FAQ page](https://cloudcasa.io/faq/) and access the [dedicated forum](https://cloudcasa.io/forum/forum/cloudcasa/).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](/links/community).

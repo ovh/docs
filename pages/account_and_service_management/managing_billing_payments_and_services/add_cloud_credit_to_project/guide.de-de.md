@@ -13,7 +13,7 @@ Das bedeutet, dass dieses Guthabenkonto zuerst belastet wird und dann noch verbl
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
+- Sie verfügen über ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -22,7 +22,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager), gehen Sie in
 
 > [!warning]
 >
-Bitte beachten Sie, dass die in diesem Abschnitt hinzugefügten Mittel nicht übertragen oder erstattet werden können. Sie haben keinen Geldwert, und nicht genutztes Guthaben verfällt 13 Monate nach dem Kauf.
+> Bitte beachten Sie, dass die in diesem Abschnitt hinzugefügten Mittel nicht übertragen oder erstattet werden können. Sie haben keinen Geldwert, und nicht genutztes Guthaben verfällt 13 Monate nach dem Kauf.
 >
 
 ### Guthaben aufladen
@@ -55,7 +55,7 @@ Der Gutschein-Saldo erscheint in der Liste `Guthaben und Gutscheine` .
 
 > [!primary]
 >
-Da die Gültigkeitsdauer der Gutscheine in der Regel kürzer ist, wird der Guthaben des Gutscheins vor dem Public Cloud Guthaben verwendet.
+> Da die Gültigkeitsdauer der Gutscheine in der Regel kürzer ist, wird der Guthaben des Gutscheins vor dem Public Cloud Guthaben verwendet.
 >
 
 ## Weiterführende Informationen

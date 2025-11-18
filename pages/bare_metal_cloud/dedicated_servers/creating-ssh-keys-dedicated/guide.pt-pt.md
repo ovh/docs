@@ -51,11 +51,11 @@ Não se esqueça de consultar os nossos manuais "Primeiros passos":
 
 ### Criação de pares de chaves para as ligações OpenSSH
 
-As seguintes instruções explicam como criar e gerir pares de chaves para ligações remotas com **OpenSSH** em linha de comandos**. A maioria dos sistemas operativos atuais incluem esse recurso sem a necessidade de instalar qualquer software adicional.
+As seguintes instruções explicam como criar e gerir pares de chaves para ligações remotas com **OpenSSH** em **linha de comandos**. A maioria dos sistemas operativos atuais incluem esse recurso sem a necessidade de instalar qualquer software adicional.
 
 Se preferir uma interface gráfica, existem numerosas aplicações de software para cada tipo de sistema operativo que lhe permitem ligar-se a hosts distantes através do protocolo OpenSSH.
 
-Por exemplo, [PuTTY](https://putty.org/) é um software cliente SSH open source com numerosas funcionalidades úteis. Saiba como utilizá-lo para as ligações aos servidores OVHcloud no nosso tutorial detalhado:
+Por exemplo, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) é um software cliente SSH open source com numerosas funcionalidades úteis. Saiba como utilizá-lo para as ligações aos servidores OVHcloud no nosso tutorial detalhado:
 
 - [Como utilizar PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
@@ -249,7 +249,7 @@ De seguida, poderá ligar-se a este segundo host ao seguinte endereço:
 ssh vps
 ```
 
-Para mais informações sobre o ficheiro `config`, consulte a [página `man` correspondente](https://manpages.org/ssh_config/5).
+Para mais informações sobre o ficheiro `config`, consulte a [página `man` correspondente](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 
@@ -443,7 +443,7 @@ De seguida, poderá ligar-se a este segundo host ao seguinte endereço:
 ssh vps
 ```
 
-Para mais informações sobre o ficheiro `config`, consulte a [página `man` correspondente](https://manpages.org/ssh_config/5).
+Para mais informações sobre o ficheiro `config`, consulte a [página `man` correspondente](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 

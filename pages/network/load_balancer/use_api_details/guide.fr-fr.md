@@ -1,12 +1,12 @@
 ---
 title: Détails des fonctionnalités API
 excerpt: "Détails des fonctionnalités de l’API OVHcloud pour l’offre OVHcloud Load Balancer"
-updated: 2022-04-04
+updated: 2025-09-29
 ---
 
 ## Objectif
 
-Retrouvez ici la description des différents points d'entrées dans l'API pour le Load Balancer OVHcloud.
+Ce guide fournit une description détaillée de toutes les fonctions de l'API pour le Load Balancer OVHcloud.
 
 ## Prérequis
 
@@ -16,29 +16,18 @@ Retrouvez ici la description des différents points d'entrées dans l'API pour l
 
 ### Gérer son service OVHcloud Load Balancer via l'API
 
-Tous les appels API se font dans la section */ipLoadbalancing* disponible ici : [https://api.ovh.com/console/#/ipLoadbalancing](https://api.ovh.com/console/#/ipLoadbalancing){.external}.
+Toutes les fonctions d'API qui sont utilisées dans la section */ipLoadbalancing* sont disponibles sur [cette page](/links/console).
 
-> [!warning]
+> [!primary]
 >
-> Attention, pour des raisons de compatibilité, le point d'entrée de l'ancien
-> système Load Balancer OVHcloud est toujours présent dans l'API /ip/loadBalancing,
-> à ne pas confondre avec le nouveau /ipLoadbalancing.
+> Dans les appels ci-dessous, tous les champs marqués d'une astérisque `*` sont obligatoires.
 > 
 
 > [!primary]
 >
-> Dans les appels ci-dessous, tous les champs marqués d'une astérisque *
-> sont obligatoires.
-> 
-
-> [!primary]
->
-> Les frontend, ferme et ferveur sont spécifiques au
-> protocole (parmi HTTP, TCP ou UDP) dans lequel ils sont définis.
-> Bien qu'ils puissent être « combinés » entre eux, ce n'est possible qu'au sein
-> d'un même protocole. Ainsi, il n'est pas possible d'utiliser un frontend
-> UDP avec une ferme HTTP. Mais il est possible (en l'absence d'autres
-> limitations) d'utiliser un frontend HTTP avec une ferme HTTP.
+> Les frontends, fermes et serveurs sont spécifiques au protocole (HTTP, TCP ou UDP) dans lequel ils sont définies.
+> La compatibilité entre ces composants n'est possible qu'au sein du même protocole.
+> Par exemple, un frontend HTTP ne peut être associé qu'à une ferme HTTP, et ne peut pas être utilisé avec une ferme UDP.
 > 
 
 ## Services et zones
@@ -3072,7 +3061,7 @@ Accéder aux éléments relatifs au protocole UDP (frontend, ferme, etc.).
 > Pour plus d'informations sur la gestion des contacts OVHcloud, consultez le guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 >
 
-### Vrack
+### vRack
 
 #### Description des réseaux privés attachés au load balancer
 

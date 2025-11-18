@@ -21,7 +21,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 - Disponer de un [plan de hosting](/links/web/hosting) OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Utilizar uno de nuestros productos de bases de datos [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+- Utilizar uno de nuestros productos de bases de datos [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
 
 ## Procedimiento
 
@@ -150,7 +150,7 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 
 ### Memoria RAM rebasada (solo Web Cloud Databases)
 
-El siguiente mensaje, situado en la sección `Web Cloud Databases`{.action} de su [área de cliente de OVHcloud](/links/manager), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
+El siguiente mensaje, situado en la sección `Web Cloud Databases`{.action} de su [área de cliente de OVHcloud](/links/manager), indica que su servidor [Web Cloud Databases](/links/web/databases) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
@@ -158,7 +158,7 @@ En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cl
 
 > [!warning]
 >
-> Para aumentar la RAM, el Web Cloud Databases no debe activarse a través de un hosting Performance. Si quiere aumentar la cantidad de memoria RAM de una base de datos incluida en los [planes Performance](/links/web/hosting-performance-offer){.external}, deberá desvincularla primero.
+> Para aumentar la RAM, el Web Cloud Databases no debe activarse a través de un hosting Performance. Si quiere aumentar la cantidad de memoria RAM de una base de datos incluida en los [planes Performance](/links/web/hosting-performance-offer), deberá desvincularla primero.
 > 
 > Para desvincular la base de datos, conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web en el que esté activado el Web Cloud Databases.
 >

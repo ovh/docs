@@ -1,12 +1,8 @@
 ---
 title: "Diagnosticar avarias materiais num servidor dedicado"
 excerpt: "Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor"
-updated: 2024-05-06
+updated: 2025-10-16
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Sumário
 
@@ -73,10 +69,18 @@ Para saber mais sobre a saída deste comando e a sua interpretação, consulte [
 
 O teste das partições abrange um teste de acesso ao disco e uma verificação do sistema de ficheiros. O teste de acesso ao disco verifica se o sistema pode comunicar com os discos rígidos do seu servidor. A verificação do sistema de ficheiros utiliza o comando `fsck -fy`.
 
+Para verificar o sistema de arquivos, execute o comando a seguir:
+
 ```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+fsck -fy
+```
+
+Para efetuar um teste de leitura, execute o comando abaixo. Substitua `sd(x)` pelos seus próprios valores
+
+```bash
+hdparm -t /dev/sd(x)
 ```
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -32,10 +32,10 @@ Plusieurs méthodes existent pour modifier le mot de passe administrateur de vot
 >
 > Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-après les liens vers leurs pages officielles respectives :
 >
-> - [WordPress](https://wordpress.com/fr/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [WordPress](https://wordpress.com/fr/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
 
 ### Modifier son mot de passe administrateur via l'e-mail automatique (mot de passe oublié) <a name="via-email"></a>
 

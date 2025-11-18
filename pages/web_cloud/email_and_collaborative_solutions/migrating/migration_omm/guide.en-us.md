@@ -1,18 +1,18 @@
 ---
 title: Migrating email accounts using OVH Mail Migrator
 excerpt: Find out how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool
-updated: 2023-08-29
+updated: 2025-11-10
 ---
 
 ## Objective
 
-[OVH Mail Migrator](https://omm.ovh.net/) is a tool created by OVHcloud. You can use it to migrate your email accounts to your OVHcloud email accounts, or to an external email service. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email accounts.
+[OVH Mail Migrator](https://omm.ovh.net/) is a tool created by OVHcloud to meet the need for reversibility. You can use it to migrate your email accounts to your OVHcloud email accounts, or to an external email service. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email accounts.
 
 **Find out how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool.**
 
 ## Requirements
 
-- An email service with OVHcloud: [Exchange](/links/web/emails) or MX Plan (via the MX Plan or included in an [OVHcloud Web Hosting](/links/web/hosting))
+- An external email service or one from OVHcloud.
 - Login details for the email accounts you want to migrate (the source accounts)
 - Login details for the OVHcloud email accounts that will be receiving the migrated data (the destination accounts)
 
@@ -127,8 +127,10 @@ You can now start migrating your accounts. The interface has multiple tabs:
 - `Multiple Import`: Used to add several migrations to the queue, by importing a file (CSV or Excel format). The file syntax must be accurate; we recommend using the templates provided. The file has this form:
 
 ```
+
 "Source Type(IMAP/Exchange/POP)";Source Server url;Source Login/Mail;Source Password;Destination Type;"Destination Url(can be leaved empty if hosted by OVH)";Destination Mail;Destination Password;Source admin mail (delegation);Destination Admin Mail (delegation)
 IMAP;myimap.server.com;mywonderfulmail@myserver.com;My_password;Exchange;https://ex3.mail.ovh.net/ews/exchange.asmx;mygreatmailaddress@mydomain.ovh;My_password2;"";""
+
 ```
 
 It is best to open the file with a spreadsheet software to edit it.

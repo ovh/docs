@@ -27,7 +27,7 @@ Za pomocą tego [przewodnika](/pages/public_cloud/public_cloud_cross_functional/
 
 ### TenantName
 
-TenantName odpowiada nazwie Twojego projektu Horizon. Aby uzyskać TenantName, zaloguj się do interfejsu OpenStack: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/){.external}.
+TenantName odpowiada nazwie Twojego projektu Horizon. Aby uzyskać TenantName, zaloguj się do interfejsu OpenStack: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/).
 
 Po zalogowaniu TenantName jest widoczny na górze strony.
 

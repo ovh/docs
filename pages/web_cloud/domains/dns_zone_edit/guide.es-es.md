@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
+> No dude en compartir su opinión y sus ideas con nosotros.<br>
+> [Ir a la encuesta.](https://s.elq.fr/ovhext/8NwNKiG)
+
 ## Objetivo
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -315,9 +320,9 @@ Si quiere reducir este plazo en las próximas ediciones de la zona DNS de OVHclo
 
 [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 
-[Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf){.external}
+[Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf)
 
-[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}
+[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  

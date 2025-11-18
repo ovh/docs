@@ -20,7 +20,7 @@ Por exemplo, se deseja partilhar uma imagem de um projeto A com um projeto B (na
 
 Por isso, é importante ter isto em mente antes de nos envolvermos nesta configuração.
 
-Para mais informações, consulte a [documentação oficial OpenStack](https://docs.openstack.org/image-guide/share-images.html){.external}.
+Para mais informações, consulte a [documentação oficial OpenStack](https://docs.openstack.org/image-guide/share-images.html).
 
 **Este manual explica-lhe como partilhar imagens entre um ou vários projetos, mantendo a configuração e o estado da imagem.**
 
@@ -32,12 +32,12 @@ Antes de seguir estes passos, recomendamos que consulte primeiro este guia:
 
 Necessitará igualmente de:
 
-- Dispor de uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
+- Dispor de uma [Instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
 - [Ter criado um utilizador OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 > [!primary]
 >
-> Este manual refere-se à utilização de [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Este manual refere-se à utilização de [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/).
 >
 
 ## Instruções

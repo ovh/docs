@@ -12,12 +12,12 @@ Es posible asociar un nombre, un apellido, un número de teléfono y una direcci
 
 ## Requisitos
 
-- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Servidores`. En la barra de servicios de la izquierda, haga clic en `Managed Bare Metal` y seleccione la infraestructura correspondiente.
+Conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Servidores`. En la barra de servicios de la izquierda, haga clic en `Managed Bare Metal` y seleccione la infraestructura correspondiente.
 
 ![Usuario vSphere](images/addMailOnUser01.png){.thumbnail}
 
@@ -37,4 +37,4 @@ Haga clic en `Aceptar`{.action} para confirmar los cambios.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

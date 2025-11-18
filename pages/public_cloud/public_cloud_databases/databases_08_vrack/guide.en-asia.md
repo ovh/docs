@@ -14,8 +14,8 @@ The OVHcloud vRack is a private network solution that enables our customers to r
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 
 ## Considerations
 Here are some considerations to take into account when using private network:
@@ -82,7 +82,7 @@ Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to cre
 >If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
 >
 
-### Step 5 - Example of verification with a Public Cloud Databases for Caching/Valkey
+### Step 5 - Example of verification with a Public Cloud Databases for Valkey
 
 We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) page.
 
@@ -98,7 +98,7 @@ Now install the client by installing the `redis-server` package:
 sudo apt-get update && sudo apt-get install redis-server -y
 ```
 
-Now connect to the Caching/Valkey service using the URL retrieved from the OVHcloud Control Panel, with a command such as:
+Now connect to the Valkey service using the URL retrieved from the OVHcloud Control Panel, with a command such as:
 
 ```bash
 redis-cli --tls -u "rediss://my-redis-user@redis-2612345abc-abcd1234defg.database.cloud.ovh.net:20185"
@@ -125,6 +125,6 @@ redis-2612345abc-abcd1234defg.database.cloud.ovh.net:20185> GET mykey.test
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

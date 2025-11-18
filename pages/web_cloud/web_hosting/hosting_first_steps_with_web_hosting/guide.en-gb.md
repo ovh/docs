@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> Participate in our survey and help us improve this guide!<br>
+> Feel free to share your thoughts and ideas with us.<br>
+> [Go to the survey.](https://s.elq.fr/ovhext/kbyLL9x)
+
 ## Objective
 
 Want to create a website for your business or a personal blog? Need an e-commerce store to sell your products online? This guide to getting started with an OVHcloud web hosting plan will show you the key steps for setting it up. You will also find instructions for creating professional email addresses associated with your domain name. It will enable you to put your project online quickly and easily, so that you can communicate effectively with your audience.

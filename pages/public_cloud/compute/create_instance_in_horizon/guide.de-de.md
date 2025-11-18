@@ -168,7 +168,7 @@ Weitere Informationen zum Erstellen eines SSH-Schlüssels finden Sie in [dieser 
 
 **Weitere Optionen**
 
-Achtung, diese Optionen sind für die Erstellung einer Instanz nicht zwingend erforderlich. Weitere Informationen zu diesen Optionen finden Sie in der [offiziellen OpenStack-Dokumentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html){.external}.
+Achtung, diese Optionen sind für die Erstellung einer Instanz nicht zwingend erforderlich. Weitere Informationen zu diesen Optionen finden Sie in der [offiziellen OpenStack-Dokumentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
 
 
 |Information|Details|

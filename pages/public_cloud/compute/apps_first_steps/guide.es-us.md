@@ -30,7 +30,7 @@ Desde [el área de cliente de OVHcloud](/links/manager), las API de OVHcloud o l
 
 Una vez que haya creado la instancia y haya elegido una aplicación preinstalada, solo podrá consultar los datos de conexión a través de la API de OVHcloud.
 
-1. Conéctese a la [consola API](https://api.ovh.com/).
+1. Conéctese a la [consola API](/links/api).
 2. Utilice a continuación [esta llamada a la API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST).
 
 > Llamada a la API

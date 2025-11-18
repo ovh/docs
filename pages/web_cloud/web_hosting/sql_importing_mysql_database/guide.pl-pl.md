@@ -1,7 +1,7 @@
 ---
 title: 'Import kopii zapasowej do bazy danych hostingu'
 excerpt: 'Dowiedz się, jak importować kopię zapasową do bazy danych Twojego hostingu WWW OVHcloud'
-updated: 2023-12-11
+updated: 2025-10-08
 ---
 
 ## Wprowadzenie 
@@ -12,24 +12,24 @@ Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania 
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW OVHcloud](/links/web/hosting){.external}
-- Posiadanie bazy danych utworzonej w ramach [pakietu hostingowego WWW OVHcloud](/links/web/hosting){.external}
+- Posiadanie [hostingu WWW OVHcloud](/links/web/hosting)
+- Posiadanie bazy danych utworzonej w ramach [pakietu hostingowego WWW OVHcloud](/links/web/hosting)
 - Posiadanie kopii zapasowej danych, które chcesz importować do bazy lub które chcesz przywrócić
-- W zależności od metody importu, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
+- W zależności od metody importu, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager) lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
 ## W praktyce
 
 Przed rozpoczęciem operacji określ metodę, której użyjesz do importu kopii zapasowej do odpowiedniej bazy danych.  W zależności od Twoich kompetencji technicznych masz do wyboru kilka możliwości.
 
-- **Przywrócenie bazy danych z wcześniejszej daty**: rozwiązanie to umożliwia przywrócenie zawartości Twoich baz danych dzięki kopiom zapasowym zapisanym w narzędziu do tworzenia kopii zapasowych OVHcloud. Rozwiązanie to nie wymaga specjalnych kompetencji technicznych, a operację można przeprowadzić w [Panelu klienta](/links/manager){.external}.
+- **Przywrócenie bazy danych z wcześniejszej daty**: rozwiązanie to umożliwia przywrócenie zawartości Twoich baz danych dzięki kopiom zapasowym zapisanym w narzędziu do tworzenia kopii zapasowych OVHcloud. Rozwiązanie to nie wymaga specjalnych kompetencji technicznych, a operację można przeprowadzić w [Panelu klienta](/links/manager).
 
-- **Import pliku z kopią zapasową**: rozwiązanie to umożliwia import danych z pliku kopii zapasowej do jednej z Twoich baz danych.  Operacja ta przeprowadzana jest w [Panelu klienta](/links/manager){.external}.
+- **Import pliku z kopią zapasową**: rozwiązanie to umożliwia import danych z pliku kopii zapasowej do jednej z Twoich baz danych.  Operacja ta przeprowadzana jest w [Panelu klienta](/links/manager).
 
 - **Import realizowany w interfejsie phpMyAdmin**: rozwiązanie wymaga zalogowania się do interfejsu phpMyAdmin. Aby skorzystać z tej metody, konieczna jest znajomość interfejsu phpMyAdmin. Ponadto należy pamiętać, że plik kopii zapasowej nie może przekraczać określonego rozmiaru.
 
 - **Import przy użyciu skryptu**: rozwiązanie wymaga utworzenia skryptu służącego do wykonania importu. Skrypt przechowywany jest na Twoim hostingu OVHcloud. W przypadku tej metody konieczna jest odpowiednia wiedza umożliwiająca utworzenie skryptu. 
 
-- **Import przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVHcloud](/links/web/hosting){.external}.
+- **Import przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVHcloud](/links/web/hosting).
 
 Niektóre z powyższych metod nie są powiązane z interfejsem OVHcloud. W takich przypadkach wykonaj operację, bazując na własnej wiedzy. Poniżej zamieszczamy kilka pomocnych informacji, nie zastąpią one jednak pomocy technicznej webmastera.
 
@@ -44,7 +44,9 @@ Przejdź do metody importu, która Cię interesuje opisanej w dalszej części d
 
 ### Przywracanie kopii zapasowej w Panelu klienta.
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie bazy danych, którą chcesz przywrócić do wcześniejszej daty, a następnie kliknij `Przywróć kopię zapasową`{.action}. Pamiętaj, że operacja ta spowoduje zastąpienie zawartości aktualnej bazy danych zawartością kopii zapasowej.
 
@@ -58,7 +60,9 @@ Kliknij trzy kropki po prawej stronie kopii zapasowej, którą chcesz przywróci
 
 ### Import Twojej kopii zapasowej w Panelu klienta.
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie bazy danych, do której chcesz importować dane, a następnie kliknij `Importuj plik`{.action}.
 
@@ -91,7 +95,9 @@ Po dokonaniu wyboru, kliknij przycisk `Zatwierdź`{.action}, następnie zaczekaj
 
 ### Import za pomocą interfejsu phpMyAdmin
 
-W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie odpowiedniej bazy danych, po czym kliknij `Dostęp do phpMyAdmin`{.action}.
 
@@ -135,7 +141,7 @@ Pamiętaj, aby zastąpić informacje ogólne występujące w skrypcie informacja
 
 #### Etap 2: pobierz skrypt oraz kopię zapasową i wykonaj import do przestrzeni dyskowej
 
-Po poprawnym utworzeniu skryptu importu pobierz skrypt oraz plik kopii zapasowej, którą chcesz zaimportować do przestrzeni dyskowej Twojego hostingu. W tym celu zaloguj się do przestrzeni dyskowej. Jeśli nie potrafisz tego zrobić, zapoznaj się z informacjami zawartymi w dokumentacji [Umieszczenie strony WWW w Internecie](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}.
+Po poprawnym utworzeniu skryptu importu pobierz skrypt oraz plik kopii zapasowej, którą chcesz zaimportować do przestrzeni dyskowej Twojego hostingu. W tym celu zaloguj się do przestrzeni dyskowej. Jeśli nie potrafisz tego zrobić, zapoznaj się z informacjami zawartymi w dokumentacji [Umieszczenie strony WWW w Internecie](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 Aby móc przejść od kolejnych etapów, pobierz skrypt importu oraz plik kopii zapasowej do katalogu „WWW”. **Zalecamy szczególną ostrożność podczas nadawania nazwy plikowi skryptu importu.** Sprawdź, czy pobierając skrypt, nie nadpisujesz istniejącego wcześniej na przestrzeni dyskowej pliku noszącego tę samą nazwę. Jeśli pojawi się tego typu komunikat ostrzegawczy, zmieć nazwę nowo utworzonego skryptu, a następnie spróbuj ponownie go pobrać.
 

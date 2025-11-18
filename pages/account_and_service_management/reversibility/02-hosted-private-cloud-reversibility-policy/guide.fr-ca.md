@@ -1,75 +1,62 @@
 ---
-title: Politique de réversibilité de Hosted Private Cloud
-updated: 2021-05-05
+title: Politique de réversibilité du produit Managed Dedicated Cloud
+updated: 2025-08-08
 ---
 
 ## Objectif
 
-Ce document est la politique de réversibilité du produit [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
+Ce document est la politique de réversibilité du produit Managed Dedicated Cloud correspondant à l'offre commerciale VMware on OVHcloud.
 
-Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
 ## Liste des fonctionnalités
 
-Les fonctionnalités Hosted Private Cloud sont divisées en trois catégories :
+Les fonctionnalités du produit sont réparties en trois catégories :
 
-- Les [fonctionnalités principales](#fonctionnalites-principales) pour lesquelles nous garantissons la capacité de migrer.
-- L'[implémentation OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
-- Les [fonctionnalités spécifiques](#fonctionnalites-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
+1. Les **fonctionnalités principales** pour lesquelles nous garantissons la capacité de migration.
+2. Les **implémentation OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
+3. Les **fonctionnalités spécifiques** qui ne peuvent pas être garanties pour la migration car elles sont liées à l'environnement OVHcloud ou impliquent des développements personnalisés.
 
-### Fonctionnalités principales <a name="fonctionnalites-principales"></a>
 
-|Fonction|Description|Formats disponibles|
-|---|---|---|
-|Compute (Software-defined Compute)|Ensemble de machines virtuelles gérées par VMware vSphere|Chaque format de fichier pris en charge par vSphere, tel que .vmsd, .vmx, ...|
-|Stockage (Software-defined Storage)|Ensemble de datastores rattachés aux machines virtuelles.|N/A|
-|Réseau (Software-defined Network)|Service de virtualisation réseau basé sur NSX|N/A|
+### 1. Fonctionnalités principales
 
-The following migration models and available documentation apply to all the features described in the table above.
+| **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
+| --- | --- | --- | --- | --- |
+| Virtualisation | Gestion des VM via vSphere, vCenter, vMotion, et support de formats standards VMware | OVA, OVF | **Entrante** : import de VM, disques, snapshots via l’interface vSphere ou les outils spécialisés (exemple Veeam, Zerto, etc …)  <br>**Sortante** : export des VM, disques via vSphere, et réutilisation sur tout environnement VMware ou compatible. Des outils spécialisés peuvent être utilisés (exemple Veeam, Zerto, PowerCLI, etc …) | [Se connecter à l’interface web vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion)<br><br>[Déploiement d’une machine virtuelle](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Comment connecter une image ISO à une VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_connect_an_iso_image_to_a_vm) <br><br>[Création de cluster et activation EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc) |
+| Gestion des utilisateurs et des droits | Création, gestion et suppression des utilisateurs. Gestion des permissions et rôles via l’interface utilisateur  | JSON, CSV (exports)  | **Entrante** : import manuel ou automatisé des utilisateurs et des permissions <br>**Sortante** : export des listes d’utilisateurs, permissions et adaptation sur la cible.  | [IAM pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started) |
+| Gestion des réseaux virtuels  | Configuration réseau via NSX, gestion des VLAN, routage, firewall, sécurité des réseaux via API ou UI | YAML, JSON, scripts | **Entrante** : définition des réseaux, VLAN, règles firewall <br>**Sortante** : export des configurations réseau à travers les API VMWare disponibles  | [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) |
+| Stockage dédié (vSAN et/ou NFS) | Utilisation de datastores dediés vSAN et/ou NFS, gestion des snapshots et des clones. | NA | **Entrante** : ajout de datastores, restauration de VM et snapshots <br>**Sortante** : export des VM et snapshots vers stockage cible compatible.  | [Mettre en oeuvre l'hyperconvergence VMware avec vSAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)|
 
-|Modèle de migration|Documentation disponible|
-|---|---|
-|**Migration entrante**:<br>- Souscrivez un projet Hosted Private Cloud<br>-Commandez le nombre approprié d'hôtes et de datastores sur le projet pour obtenir une capacité comparable à celle de l'infrastructure d'origine.<br>-Migrez à l'aide d'un outil spécialisé (Veeam, Zerto...)<br><br>**Migration sortante**: <br> -Configurez un hyperviseur vSphere dans l'environnement cible<br>- Planifiez les capacités de l'environnement cible comparativement à l'environnement d'origine<br>- Migrez via un outil spécialisé (par exemple Veeam, Zerto...)|La [Documentation vSphere standard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) s'applique.<br><br>[Déployer un template OVF Linux, Windows Server et Windows SQL Server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)<br><br>[Déploiement d'une machine virtuelle avec vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Création de cluster et activation EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)|
+### 2. Implémentations OVHcloud
 
-### Implémentation OVHcloud <a name="ovhcloud-implementation"></a>
-
-|Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
+| **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 |---|---|---|---|---|
-|vRack|Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud|N/A|**Migration entrante**: Les services Hosted private Cloud sont inclus par défaut dans vRack.<br><br>**Migration sortante**: Prenez note de l'architecture réseau et reproduisez-la avec des VLAN.|[Utiliser le Hosted Private Cloud au sein d’un vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/using_private_cloud_in_vrack)<br><br>[Création de V(x)LAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan)|
-|vROps|Solution standard de Monitoring VMware.|N/A|**Migration entrante**: vROps est inclus par défaut avec chaque Hosted Private Cloud.<br><br>**Migration sortante**: Installer et configurer vROps dans un environnement vSphere.|[First connection on vROps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrops_introduction)|
-|Managed Veeam backup|Solution de sauvegarde en tant que service pour vos VMs|VBK, VIB, VBM|**Migration entrante**: Activez une option de sauvegarde Veeam dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).<br><br>**Migration sortante**: Importez des sauvegardes manuellement, puis restaurez-les.|[Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)<br><br>[Importer des sauvegardes](https://helpcenter.veeam.com/docs/backup/hyperv/importing_backups.html?ver=110)(EN)|
-|Zerto|Plateforme de continuité et de reprise d'activité après sinistre.|N/A|**Migration entrante**: Activez le service Zerto dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou directement dans l'interface de réplication Zerto fournie.<br><br>**Migration sortante**:  Exportez les paramètres VPG de Zerto et importez-les dans le nouvel environnement.|[Mise en oeuvre de Zerto Virtual Replication pour votre PRA](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)<br><br>[Exporter les paramètres VPG Zerto](https://www.zerto.com/myzerto/knowledge-base/exporting-and-importing-vpg-settings-with-zerto-diagnostic-tool/)(EN)|
+|vRack|Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud|N/A|**Entrante** : les services Hosted private Cloud sont inclus par défaut dans vRack.<br><br>**Sortante** : prendre note de l'architecture réseau et reproduisez-la avec des VLAN.|[Utiliser le Hosted Private Cloud au sein d’un vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/using_private_cloud_in_vrack)<br><br>[Création de V(x)LAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan)|
+|Monitoring et supervision|Solution standard de Monitoring VMware via vROps| plusieurs formats supportés par la plateforme (e.g JSON, Syslog, etc)|**Entrante** : vROps est inclus par défaut avec chaque Hosted Private. Adaptation des dashboards et agents de monitoring  Cloud.<br><br>**Sortante** : Installation et configuration vROps dans un environnement vSphere. Export des métriques/logs, reconfiguration sur la cible. |[First connection on vROps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrops_introduction)|
+|Sauvegarde et restauration|Solution de sauvegarde en tant que service pour les VMs|VBK, VIB, VBM|**Entrante** : activation de l'option de sauvegarde Veeam dans l'[espace client OVHcloud](/links/manager).<br><br>**Sortante** : import des sauvegardes manuellement, puis restauration|[Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)<br><br>[Move2Cloud - Migrer des workloads VMware vers OVHcloud Hosted Private Cloud avec Veeam Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam)|
+|Zerto|Plateforme de continuité et de reprise d'activité après sinistre.|N/A|**Entrante** : activation de l'option Zerto dans l'[espace client OVHcloud](/links/manager) ou directement dans l'interface de réplication Zerto fournie.<br><br>**Sortante** : export des paramètres VPG de Zerto et import dans le nouvel environnement.|[Mise en oeuvre de Zerto Virtual Replication pour votre PRA](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)<br><br>[Move2Cloud - Migration de charges de travail VMware vers OVHcloud Hosted Private Cloud avec Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto)<br><br>[Exporter les paramètres VPG Zerto](https://www.zerto.com/myzerto/knowledge-base/exporting-and-importing-vpg-settings-with-zerto-diagnostic-tool/)(EN)|
 
-### Fonctionnalités spécifiques <a name="fonctionnalites-specifiques"></a>
+### 3. Fonctionnalités spécifiques
 
-|Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
+| **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 |---|---|---|---|---|
-|Monitoring vScope|Outil de monitoring de l'état et de l'utilisation des ressources conçu par OVHcloud pour Hosted Private Cloud.|N/A|N/A ; vScope est une interface statique.|[Comment utiliser vScope](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_vscope)|
-|Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Migration entrante**: Le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise.<br><br>**Migration sortante**: Commandez et configurez un anti-DDoS avec le nouveau fournisseur.|[Protection anti-DDoS OVHcloud](https://www.ovh.com/fr/anti-ddos/)<br><br>[Technologie anti-DDoS](https://www.ovh.com/fr/anti-ddos/technologie-anti-ddos.xml)|
-|Sécurité avancée pour SDDC|Ensemble de fonctionnalités améliorant la sécurité, telles que l'implémentation de Sécurité Zero Trust, MFA, IDS pour l'accès vSphere...|N/A|**Migration entrante**: Commandez l'activation de la sécurité avancée depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).<br><br>**Migration sortante**: Commandez et configurez les fonctionnalités de sécurité appropriées avec le nouveau fournisseur.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
+|Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Entrante** : le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise.<br><br>**Sortante** : commande et configuration d'un anti-DDoS avec le nouveau fournisseur.|[Protection anti-DDoS OVHcloud](/links/security/antiddos)|
+|Sécurité avancée|Ensemble de fonctionnalités améliorant la sécurité, telles que l'implémentation de Sécurité Zero Trust, MFA, IDS pour l'accès vSphere...|N/A|**Entrante** : commande et activation de la sécurité avancée depuis l'[espace client OVHcloud](/links/manager).<br><br>**Sortante** : commande et configuration les fonctionnalités de sécurité appropriées avec le nouveau fournisseur.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)<br><br>[Interface sécurisée](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure)|
 
 ### Liste des architectures
 
-Les informations relatives à l'architecture (serveurs, stockage, etc.) sont centralisées et visibles dans la console vSphere.
-
-### Outils de migration disponibles
-
-[Importer/exporter des machnes virtuelles](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool).
-
-[Convertir une machine physique/virtuelle en une infrastructure Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vcenter_converter).
+Le produit repose sur une solution VMware dédiée, incluant des briques commme vSphere, vCenter, stockage NFS, vROps, des options avancées de sécurité (chiffrement, MFA) et options NSX (SDN) et/ou vSAN à activer. Les ressources (compute, stockage, réseau) sont isolées physiquement et logiquement, avec une gestion fine des droits (IAM), et l'intégration de services de réseaux privés. L’architecture est opérée dans des les datacentres OVHcloud.
 
 ### Services Partenaires
 
-Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr-ca/directory/).
+Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OVHcloud](/links/partner) sous les mots-clés « **Data center expansion and Migration** ».
+
+OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](/links/professional-services).
 
 ### Coût et frais
 
-Aucune facturation supplémentaire n'est prévue de la part de OVHcloud pour les fonctionnalités de migration répertoriées ici.
+La facturation est mensuelle, avec ou sans engagement de durée. Aucun frais de résiliation spécifique n’est appliqué : la suppression du service arrête la facturation immédiatement. Les fonctionnalités de migration (export VM, disques, configuration) sont incluses sans surcoût. Les coûts sont liés à la consommation des ressources et options souscrites (hôtes, stockage, etc.). 
 
 ### Conservation des données après la résiliation du contrat
 
-Les données sont conservées jusqu'à la fin du mois suivant la résiliation du service, puis supprimées définitivement.
-
-## Aller plus loin
-
-[Migrer une infrastructure vers Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration).
+Après résiliation ou suppression du service, OVHcloud procède à un effacement sécurisé des données, VM, snapshots et configurations. Il est impératif d’exporter toutes les données nécessaires avant la suppression définitive, car aucune restauration ne sera possible après coup.

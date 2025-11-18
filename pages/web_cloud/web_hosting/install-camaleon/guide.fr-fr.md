@@ -6,7 +6,7 @@ updated: 2022-05-04
 
 ## Objectif
 
-[Camaleon CMS](http://camaleon.tuzitio.com/){.external} est un système de gestion de contenu (Content System Management, CMS en anglais) écrit en Ruby, basé sur le framework web [Ruby on Rails](https://rubyonrails.org/){.external}. L’[hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer) permet d’utiliser Ruby comme moteur d’exécution pour vos sites web et donc d’y installer et héberger Camaleon CMS ou toute autre application web conçue en Ruby. Dans ce tutoriel, nous allons installer un site web avec Camaleon CMS sur un hébergement Cloud Web d’OVH et le mettre à disposition derrière votre nom de domaine.
+[Camaleon CMS](http://camaleon.tuzitio.com/) est un système de gestion de contenu (Content System Management, CMS en anglais) écrit en Ruby, basé sur le framework web [Ruby on Rails](https://rubyonrails.org/). L’[hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer) permet d’utiliser Ruby comme moteur d’exécution pour vos sites web et donc d’y installer et héberger Camaleon CMS ou toute autre application web conçue en Ruby. Dans ce tutoriel, nous allons installer un site web avec Camaleon CMS sur un hébergement Cloud Web d’OVH et le mettre à disposition derrière votre nom de domaine.
 
 **Découvrez comment installer un Camaleon CMS sur Cloud Web**
 
@@ -154,7 +154,7 @@ run  bundle exec spring binstub --all
 
 ### Étape 5 : Installer et configurer Camaleon CMS
 
-Modification du Gemfile pour installer Camaleon CMS ( source : [https://github.com/owen2345/camaleon-cms](https://github.com/owen2345/camaleon-cms){.external} )
+Modification du Gemfile pour installer Camaleon CMS ( source : [https://github.com/owen2345/camaleon-cms](https://github.com/owen2345/camaleon-cms) )
 
 ```bash
 democld@cloudweb-ssh:~/camaleon $ echo 'gem "camaleon_cms",  ">= 2.4.6"' >> Gemfile
@@ -245,17 +245,17 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 ## Conclusion
 
-Nous avons vu comment installer une application Ruby sur un hébergement Cloud Web en respectant les différentes étapes. Il ne vous reste plus qu’à utiliser Camaleon CMS et y publier vos premiers contenus! Vous trouverez plus de documentation propre à Camaleon CMS et ses fonctionnalités sur la [documentation officielle du projet](http://camaleon.tuzitio.com/){.external}.
+Nous avons vu comment installer une application Ruby sur un hébergement Cloud Web en respectant les différentes étapes. Il ne vous reste plus qu’à utiliser Camaleon CMS et y publier vos premiers contenus! Vous trouverez plus de documentation propre à Camaleon CMS et ses fonctionnalités sur la [documentation officielle du projet](http://camaleon.tuzitio.com/).
 
 ## Aller plus loin
 
-[Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

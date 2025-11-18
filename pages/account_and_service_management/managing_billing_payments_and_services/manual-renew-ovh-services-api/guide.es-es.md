@@ -12,12 +12,12 @@ OVHcloud ofrece de forma nativa la renovación automática de sus soluciones, au
 
 ## Requisitos
 
-- Estar conectado a la [API de OVHcloud](https://api.ovh.com/){.external}.
-- Disponer de las [claves para conectarse a la API de OVHcloud - EN](/pages/manage_and_operate/api/first-steps){.external}.
+- Estar conectado a la [API de OVHcloud](/links/api).
+- Disponer de las [claves para conectarse a la API de OVHcloud - EN](/pages/manage_and_operate/api/first-steps).
 
 ## Procedimiento
 
-Para utilizar la [función de renovación de la API](https://api.ovh.com/console/#/service/{serviceId}/renew#GET){.external}, necesitará el **serviceId**. Puede obtener este dato con la función **serviceInfos**, como en el siguiente ejemplo:
+Para utilizar la [función de renovación de la API](https://api.ovh.com/console/#/service/{serviceId}/renew#GET), necesitará el **serviceId**. Puede obtener este dato con la función **serviceInfos**, como en el siguiente ejemplo:
 
 > [!api]
 >

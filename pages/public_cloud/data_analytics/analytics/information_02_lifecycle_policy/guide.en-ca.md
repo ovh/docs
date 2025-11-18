@@ -25,7 +25,7 @@ Continued use of outdated services means they no longer offer our customers the 
 
 This lifecycle policy is applicable to:
 
-- All Analytics services except Data Processing.
+- All Analytics services.
     - Including all the service plans (Essential, Business, Enterprise, Production, Advanced).
     - And all proposed analytics engine, such as Kafka, Grafana, ...
     - Whatever the state is, if they are **up and running** or in a **sleeping state** (powered off, waiting for payment).

@@ -113,7 +113,7 @@ You can consult these guides to setup your configurations:
 #### 8.3 HDS option
 
 The HDS option can be activated on the service.<br>
-The subscription to the [Business support level](https://www.ovhcloud.com/en/support-levels/business/)is mandatory, at least to maintain necessary requirements.
+The subscription to the [Business support level](/links/support-business)is mandatory, at least to maintain necessary requirements.
 
 ### 9. Reversibility
 

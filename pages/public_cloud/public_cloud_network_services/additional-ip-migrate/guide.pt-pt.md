@@ -21,7 +21,7 @@ Este guia explica como poderá migrar um Additional IP de uma instância para ou
 
 ## Requisitos
 
-- Dispor de, no mínimo, duas instâncias [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) iniciadas
+- Dispor de, no mínimo, duas instâncias [Public Cloud](/links/public-cloud/public-cloud) iniciadas
 - Um Additional IP
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
@@ -67,6 +67,6 @@ O Additional IP pode ser configurado no servidor de destino antes ou depois da m
 
 [Importar um Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-import)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

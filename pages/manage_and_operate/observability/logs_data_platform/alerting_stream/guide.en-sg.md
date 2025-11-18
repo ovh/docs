@@ -45,7 +45,7 @@ For this tutorial, we will configure the 3 alerts that we can use for a website.
 
 #### Apache Server Configuration
 
-We will use the [Filebeat Apache format](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-apache.html#_virtual_host){.external} to send logs, this format allows the filebeat module to parse the relevant information. Here is a configuration file sample:
+We will use the [Filebeat Apache format](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-apache.html#_virtual_host) to send logs, this format allows the filebeat module to parse the relevant information. Here is a configuration file sample:
 
 ```ApacheConf
 <VirtualHost *:80>
@@ -108,7 +108,7 @@ Fill the value of **/etc/ssl/certs/ldp.pem** with the "Data-gathering tools" cer
 
 ![SSL input](images/ssl_input.png){.thumbnail}
 
-Ensure to enable [Apache support on Filebeat](https://www.elastic.co/guide/en/beats/filebeat/7.x/filebeat-module-apache.html#_virtual_host){.external} by running:
+Ensure to enable [Apache support on Filebeat](https://www.elastic.co/guide/en/beats/filebeat/7.x/filebeat-module-apache.html#_virtual_host) by running:
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo filebeat modules enable apache
@@ -201,5 +201,5 @@ You will then receive an email with the messages included. You can then directly
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

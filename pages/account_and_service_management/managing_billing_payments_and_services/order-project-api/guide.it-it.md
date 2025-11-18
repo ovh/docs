@@ -6,7 +6,7 @@ updated: 2020-12-09
 
 ## Obiettivo
 
-La creazione di un progetto è il primo step per l'implementazione di [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/).
+La creazione di un progetto è il primo step per l'implementazione di [istanze Public Cloud](/links/public-cloud/public-cloud).
 
 **Questa guida ti mostra come ordinare un progetto Public Cloud tramite l'APIv6 OVHcloud.**
 
@@ -18,7 +18,7 @@ La creazione di un progetto è il primo step per l'implementazione di [istanze P
 
 ## Procedura
 
-Accedi all'[interfaccia API OVHcloud](https://api.ovh.com/) e segui gli step qui sotto.
+Accedi all'[interfaccia API OVHcloud](/links/api) e segui gli step qui sotto.
 
 ### Step 1: costruire il carrello
 

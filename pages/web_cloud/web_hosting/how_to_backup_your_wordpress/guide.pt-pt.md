@@ -15,7 +15,7 @@ Num alojamento web partilhado, é responsável pelos backups do seu website. Mes
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou ao [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou ao [editor do CMS WordPress](https://wordpress.com/support/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
 >
 
 **Descubra como guardar o conteúdo do seu site WordPress e a sua base de dados.**
@@ -68,7 +68,7 @@ Clique em `Executar`{.action}, e poderá descarregar a sua base de dados complet
 
 ### Método n°2 - realizar um backup com uma extensão
 
-Muitas extensões WordPress permitem gerir os seus backups. A mais popular é [UdraftPlus](https://wordpress.org/plugins/updraftplus/){.external} que conta vários milhões de instalações ativas. A versão gratuita é suficiente para guardar o seu website. A versão premium oferece mais opções como os backups incrementais, uma ferramenta de migração, o backup multi-site, mais opções sobre as clouds destinadas a armazenar os dados, etc.
+Muitas extensões WordPress permitem gerir os seus backups. A mais popular é [UdraftPlus](https://wordpress.org/plugins/updraftplus/) que conta vários milhões de instalações ativas. A versão gratuita é suficiente para guardar o seu website. A versão premium oferece mais opções como os backups incrementais, uma ferramenta de migração, o backup multi-site, mais opções sobre as clouds destinadas a armazenar os dados, etc.
 
 Faça o download da extensão em formato `.zip` para o seu computador. Por razões de clareza, o ficheiro descarregado da extensão será renomeado **updraftplus.zip**.
 
@@ -144,7 +144,7 @@ Ao aplicar estas boas práticas, poderá voltar a uma versão anterior saudável
 
 ## Quer saber mais? <a name="go-further"></a>
 
-- [Site oficial da WordPress](https://wordpress.org){.external}
+- [Site oficial da WordPress](https://wordpress.org)
 - [Mais informações sobre os backups do seu alojamento web](/pages/web_cloud/web_hosting/hosting_technical_specificities#informacoes-sobre-backups-automaticos)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).

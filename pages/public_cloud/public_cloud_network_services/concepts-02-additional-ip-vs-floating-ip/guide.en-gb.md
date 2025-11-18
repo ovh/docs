@@ -30,7 +30,7 @@ More information about configuring Additional IP addresses is available in [this
 
 ### Floating IP
 
-This type of public IP address is only available for [Public Cloud services](https://www.ovhcloud.com/en-gb/public-cloud/), designed for cloud-native use cases and especially automation (e.g. Terraform, Ansible). They serve to expose a private instance or a private network service (Load Balancer for example) to the public network.
+This type of public IP address is only available for [Public Cloud services](/links/public-cloud/public-cloud), designed for cloud-native use cases and especially automation (e.g. Terraform, Ansible). They serve to expose a private instance or a private network service (Load Balancer for example) to the public network.
 
 The backend (instance/Load Balancer) system configuration when using Floating IP is entirely automatic (via DHCP protocol), no manual setup is needed. However, they require a Gateway in order to map a public IP address to an instance or network service.
 
@@ -55,6 +55,6 @@ Depending on your choice, you can select from the different regions and further 
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

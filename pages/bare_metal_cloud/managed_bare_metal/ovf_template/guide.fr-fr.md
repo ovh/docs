@@ -14,13 +14,13 @@ Les VM Windows déployées à partir d'un template utilisent automatiquement les
 
 > [!primary]
 > 
-> Retrouvez sur cette [page](https://www.ovhcloud.com/fr/managed-bare-metal/options/){.external} les tarifs des images proposées par OVHcloud.
+> Retrouvez sur cette [page](https://www.ovhcloud.com/fr/managed-bare-metal/options/) les tarifs des images proposées par OVHcloud.
 >
 
 ## Prérequis
 
 - Avoir accès au client Web (HTML5)
-- [Avoir activé les licences Windows](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#licence-windows) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- [Avoir activé les licences Windows](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#licence-windows) depuis votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 

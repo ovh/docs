@@ -12,7 +12,7 @@ In certain cases — like replacing a datastore or scaling it up to a higher cap
 
 ## Requirements
 
-* an [OVHcloud Managed Bare Metal](https://www.ovhcloud.com/en/managed-bare-metal/){.external} solution
+* an [OVHcloud Managed Bare Metal](https://www.ovhcloud.com/en/managed-bare-metal/) solution
 * access to the vSphere management interface
 
 ## Instructions

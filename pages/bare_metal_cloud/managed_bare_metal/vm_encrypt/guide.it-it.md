@@ -12,8 +12,8 @@ Per abilitare la funzionalità di crittografia delle macchine virtuali sul servi
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Managed Bare Metal](https://www.ovh.com/it/private-cloud/){.external}
-- Disporre di un KMS esterno compatibile con **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** e presente nella [matrice di compatibilità](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware
+- Disporre di una soluzione [Managed Bare Metal](https://www.ovh.com/it/private-cloud/)
+- Disporre di un KMS esterno compatibile con **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)) 1.1** e presente nella [matrice di compatibilità](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc) VMware
 - Avere accesso all’interfaccia di gestione vSphere
 - Disporre di macchine virtuali con almeno una versione hardware 13
 
@@ -135,7 +135,7 @@ Scegli le seguenti opzioni:
 
 #### Importazione del certificato KMS
 
-La maggior parte dei fornitori di KMS hanno bisogno di un certificato per [stabilire una connessione sicura](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} con il vCenter.
+La maggior parte dei fornitori di KMS hanno bisogno di un certificato per [stabilire una connessione sicura](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html) con il vCenter.
 
 Accedi al vCenter in cui hai aggiunto il KMS e selezionalo. Nella sezione “All options”, clicca su “Establish a trust relationship with KMS”.
 

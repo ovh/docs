@@ -30,7 +30,7 @@ Wolumen Snapshot oraz Backup Wolumenu pozwalają na:
 ## Wymagania początkowe
 
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
-- Wolumen [Block storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
+- Wolumen [Block storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](/links/public-cloud/public-cloud)
 
 ## W praktyce
 

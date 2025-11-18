@@ -45,9 +45,9 @@ Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kunden
 
 ### KVM über Java-Applet öffnen <a name="applet-java"></a>
 
-Damit das Java Applet funktionieren kann, muss Java auf Ihrem Computer installiert sein. Ist das nicht der Fall, gehen Sie auf die [offizielle Seite](https://www.java.com/en/download/){.external}.
+Damit das Java Applet funktionieren kann, muss Java auf Ihrem Computer installiert sein. Ist das nicht der Fall, gehen Sie auf die [offizielle Seite](https://www.java.com/en/download/).
 
-Klicken Sie in Ihrem OVHcloud Kundencenter im Bereich `Remote KVM`{.action} auf `Von einem Java Applet (KVM)`{.action} :
+Klicken Sie in Ihrem OVHcloud Kundencenter im Bereich `Remote KVM`{.action} auf `Von einem Java Applet (KVM)`{.action}:
 
 ![Java KVM Zugang](images/ipmi-kvm-java-01.png){.thumbnail}
 

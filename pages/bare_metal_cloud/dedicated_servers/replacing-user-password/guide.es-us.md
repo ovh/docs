@@ -1,12 +1,8 @@
 ---
 title: "Cómo recuperar el acceso al servidor en caso de pérdida de la contraseña del usuario"
 excerpt: "Cómo configurar una nueva contraseña para una cuenta de usuario en un sistema operativo GNU/Linux con el modo de rescate de OVHcloud"
-updated: 2024-02-19
+updated: 2025-10-02
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -23,7 +19,7 @@ En ese caso, puede conectarse a su servidor a través del modo de rescate de OVH
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) o un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 > [!primary]
@@ -47,7 +43,7 @@ No olvide consultar también nuestras guías de primeros pasos:
 
 <a name="step1"></a>
 
-### Paso 1: reiniciar el servidor en modo de rescate
+### Paso 1 - Reiniciar el servidor en modo de rescate
 
 Siga los pasos de nuestras guías sobre el modo de rescate para conectarse a su servidor y montar sus particiones:
 
@@ -69,27 +65,59 @@ El comando exacto depende del punto de montaje utilizado. Por ejemplo, si ha mon
 chroot /mnt/
 ```
 
-### Paso 2: restablecer la contraseña del usuario
+### Paso 2 - Identificar la(s) cuenta(s) de usuario y restablecer la contraseña
 
-Nota: en una distribución GNU/Linux, **una petición de contraseña no muestra las entradas de teclado**.
+Después de montar la partición y ejecutar `chroot /mnt` (o el equivalente), dispone de privilegios **root** en el sistema montado.
 
-Cambie la contraseña del usuario con el siguiente comando (sustituya `username` por el nombre real de la cuenta de usuario):
+Si es necesario, antes de modificar una contraseña, **identifique las cuentas existentes** con el siguiente comando:
 
 ```bash
-passwd username
+cat /etc/passwd
 ```
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+Ejemplo de resultado (abreviado):
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
 ```
+
+Encuentre el nombre del usuario en la lista de cuentas.
+
+Para cambiar la contraseña de una cuenta específica (por ejemplo, **user1**), utilice este comando:
+
+```bash
+passwd user1
+```
+
+Introduzca la nueva contraseña dos veces:
+
+```console
+# New password:
+# Retype new password:
+# passwd: password updated successfully
+```
+
+En una distribución GNU/Linux, **una petición de contraseña no muestra las entradas de teclado**.
+
+> [!primary]
+>
+> Evite ejecutar el comando `passwd` sin argumentos: este comando modifica la contraseña de la cuenta actual (que suele ser **root** después de ejecutar `chroot`).
+> Indiquez systématiquement `passwd <usuario>`.
 
 Recuerde utilizar el modo de arranque **normal** del servidor al reiniciarlo desde el [área de cliente de OVHcloud](/links/manager).
 
 Consulte la [guía del modo de rescate](#step1) si es necesario.
 
-Ya puede acceder al servidor con su nueva contraseña.
+La cuenta de usuario modificada ahora tiene acceso al servidor con la nueva contraseña.
 
 ## Más información
 

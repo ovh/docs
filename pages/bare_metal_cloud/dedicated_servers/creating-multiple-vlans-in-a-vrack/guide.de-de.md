@@ -16,7 +16,7 @@ Bei der [Standardkonfiguration des vRack](/pages/bare_metal_cloud/dedicated_serv
 
 ## Voraussetzungen
 
-- Sie verfügen über einen oder mehrere mit dem vRack kompatible [Dedicated Server](https://www.ovh.de/dedicated_server/).
+- Sie verfügen über einen oder mehrere mit dem vRack kompatible [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben ein [vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server) in Ihrem Kunden-Account eingerichtet.
 - Sie haben einen privaten IP-Adressbereich für das vRack festgelegt.
 - Sie sind via SSH als Root-Benutzer eingeloggt (Linux).
@@ -24,9 +24,9 @@ Bei der [Standardkonfiguration des vRack](/pages/bare_metal_cloud/dedicated_serv
 - Sie haben die [Konfiguration des vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server) abgeschlossen.
 
 > [!warning]
-> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
 >
-> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 
 ## In der praktischen Anwendung
 
@@ -216,6 +216,6 @@ Klicken Sie abschließend auf den Button `OK`{.action}, um die Änderungen zu sp
 
 ## Weiterführende Informationen
 
-[Mehrere dedizierte Server im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
+[Mehrere dedizierte Server im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -8,7 +8,7 @@ updated: 2025-04-29
 
 Une machine virtuelle **OVHgateway** est installée lors d'un déploiement d'un cluster **Nutanix on OVHcloud**. Cette machine virtuelle sert de passerelle Internet sortante pour le cluster. Le débit maximal est de 1 GB/s.
 
-Si vous avez besoin d'une bande passante plus importante, vous pouvez remplacer cette passerelle par un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) et choisir une offre vous permettant entre 1 GB/s et 10 GB/s sur le réseau public.<br>
+Si vous avez besoin d'une bande passante plus importante, vous pouvez remplacer cette passerelle par un [serveur dédié](/links/bare-metal/bare-metal) et choisir une offre vous permettant entre 1 GB/s et 10 GB/s sur le réseau public.<br>
 Contactez le service commercial OVHcloud pour vous aider à choisir le bon serveur. 
 
 **Découvrez comment remplacer la passerelle par défaut par un serveur dédié OVHcloud afin d'augmenter la bande passante.**
@@ -22,9 +22,9 @@ Contactez le service commercial OVHcloud pour vous aider à choisir le bon serve
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur le cluster via Prism Central. 
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public, d'autres sur le réseau privé. Ce serveur doit être sur le même Data Center que le cluster Nutanix.
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public, d'autres sur le réseau privé. Ce serveur doit être sur le même Data Center que le cluster Nutanix.
 
 ## En pratique
 
@@ -40,7 +40,7 @@ Pour remplacer la VM OVHgateway, nous allons utiliser ces paramètres :
 
 ### Récupération des informations nécessaires au déploiement de votre serveur
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglets. Sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
+Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglets. Sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
@@ -351,7 +351,7 @@ La passerelle est disponible pour le Cluster Nutanix dans le VLAN 1.
 
 ### Test de la bande passante
 
-Vous pouvez contrôler la bande passante de votre serveur avec un outil nommé Iperf que vous pouvez trouver sur le [site officiel de Iperf](https://iperf.fr/){.external}.
+Vous pouvez contrôler la bande passante de votre serveur avec un outil nommé Iperf que vous pouvez trouver sur le [site officiel de Iperf](https://iperf.fr/).
 
 Pour effectuer un test complet, créez une machine virtuelle sous Linux, installez le logiciel iperf3 et lancez cette commande :
 
@@ -374,6 +374,6 @@ Le test dure 10 secondes et vous obtiendrez la bande passante de votre cluster a
 
 ## Aller plus loin <a name="gofurther"></a>
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

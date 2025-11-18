@@ -10,8 +10,8 @@ This guide provides instructions for using the SAP Application Servers Terraform
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en).
-- [VMware on OVHcloud solution](https://www.ovhcloud.com/en-au/hosted-private-cloud/vmware/) deployed.
+- Access to the [OVHcloud Control Panel](/links/manager).
+- [VMware on OVHcloud solution](/links/hosted-private-cloud/vmware) deployed.
 - Terraform binary (version >= 1.4).
 
 ## Instructions

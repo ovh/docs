@@ -1,22 +1,22 @@
 ---
 title: "Configuration d'un vRack sur le load balancer"
 excerpt: Voici comment configurer le vRack sur un Load Balancer
-updated: 2022-04-04
+updated: 2025-09-02
 ---
 
 ## Objectif
 
 Ce guide a pour but de vous aider à lier et à configurer votre Load Balancer dans le vRack via l'APIv6 OVHcloud.
 
-Le vRack est un réseau privé dédié qui crée un lien entre tous vos produits cloud. Pour plus d'informations n'hésitez pas à consulter la page sur le [vRack](https://www.ovh.com/fr/solutions/vrack/)
+Le vRack est un réseau privé dédié qui crée un lien entre tous vos produits cloud. Pour plus d'informations n'hésitez pas à consulter la page sur le [vRack](/links/network/vrack)
 
 Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons de consulter la [présentation générale du service Load Balancer](/pages/network/load_balancer/use_presentation).
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté à l'[API OVHcloud](https://api.ovh.com/){.external}.
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Être connecté à l'[API OVHcloud](/links/api).
 - Posséder une ferme configurée
 - Posséder un frontend configuré
 
@@ -27,7 +27,7 @@ Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons 
 
 ## En pratique
 
-Connectez-vous à l'[interface API OVHcloud](https://api.ovh.com/) et suivez les étapes ci-dessous.
+Connectez-vous à l'[interface API OVHcloud](/links/api) et suivez les étapes ci-dessous.
 
 ### Lister les services Load Balancer éligibles au vRack
 
@@ -37,7 +37,7 @@ Le `serviceName` dans l'API ci-dessous est celui de votre vRack, par exemple : `
 
 > [!api]
 >
-> @api {v1} /vrack GET /vrack/{serviceName}/allowedServices
+> @api {v1} /vrack GET /vrack/{serviceName}/eligibleServices
 >
 
 Vous trouverez vos services Load Balancer à l'index : `ipLoadbalancing`.

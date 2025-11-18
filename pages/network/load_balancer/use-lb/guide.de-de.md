@@ -1,7 +1,7 @@
 ---
 title: Verwaltung des Loadbalancers über das Kundencenter
 excerpt: Zusammenfassung der wesentlichen Funktionen zur Verwaltung des Loadbalancers über das Kundencenter
-updated: 2017-12-01
+updated: 2025-07-30
 ---
 
 ## Einleitung
@@ -11,7 +11,7 @@ Ziel dieser Anleitung ist es, Sie bei der erstmaligen Verwendung des Loadbalance
 ## Voraussetzungen
 
 - Zugang zu Ihrem OVHcloud Kundencenter
-- Bestellung des [Loadbalancers](https://www.ovh.com/fr/solutions/load-balancer)
+- Bestellung des [Loadbalancers](/links/network/load-balancer)
 
 ## Beschreibung
 
@@ -28,8 +28,8 @@ Auf der Hauptseite finden Sie folgende Informationen:
 |Status|Zusammenfassung Ihres Loadbalancers mit dem Namen des Dienstes, den Frontends, den funktionsfähigen Farmen und den hinzugefügten Servern|
 |Verwendung|Zusammenfassung der Verwendung Ihres Loadbalancers|
 |Graphen|Hier finden Sie die mit Ihrer Dienstleistung verbundenen Graphen zur Anzahl der Simultanverbindungen oder der Anfragen pro Minute|
-|Informationen|Ihre IPv4 und die verbundenen Additional IPs sowie die Anzahl der ausgehenden IPv4 (Details durch Klicken auf die Auslassungspunkte)|
-|Konfiguration|Hier können Sie den Namen Ihres Angebots (er erscheint oben und in der Spalte links) sowie die Ciphers anpassen. Außerdem wird hier das Rechenzentrum Ihres Loadbalancers angezeigt.|
+|Information|Ihre IPv4- und IPv6-Adressen und die damit verbundenen Additional IPs sowie die Anzahl der ausgehenden IPv4-Adressen (weitere Informationen erhalten Sie, wenn Sie auf die Schaltfläche `...`{.action} klicken)|
+|Konfiguration|Hier können Sie den Namen Ihrer Lösung anpassen (der oben in der linken Spalte angezeigt wird). Die Verschlüsselung(en) kann/können angepasst werden, ebenso wie die Verfügbarkeitszone, in der sich Ihr Loadbalancer befindet|
 |Abo|Hier finden Sie die administrativen Details zu Ihrem Angebot|
 
 Um ein `Frontend`{.action} oder eine `Serverfarm`{.action} hinzuzufügen, gehen Sie in den jeweiligen Tab und klicken Sie einfach auf die entsprechenden Schaltflächen. Ein Formular hilft Ihnen anschließend dabei, jeden Bestandteil Ihres Dienstes zu konfigurieren.
@@ -47,7 +47,7 @@ Details zu den Elementen eines Frontends:
 |Name|Wenn Sie möchten, können Sie Ihrem Frontend einen Namen geben. Wenn Sie mehrere Frontends besitzen, können Sie diese so schneller unterscheiden.|
 |Protokoll|Sie haben die Wahl zwischen HTTP, HTTPS, TCP, SSL TCP (TLS) und UDP|
 |Port|Wählen Sie den zu verwendenden Eingangsport aus|
-|Rechenzentrum|Für die Erstellung Ihres Frontends können Sie zwischen Ihrem Rechenzentrum oder allen wählen|
+|Rechenzentrum|Wählen Sie zwischen Ihrer Verfügbarkeitszone oder allen Verfügbarkeitszonen, um Ihr Front-End zu erstellen|
 |Standardfarm|Wenn Sie mehrere Serverfarmen eingestellt haben, können Sie für jedes Frontend eine Standardfarm auswählen.|
 
 Sie haben außerdem Zugriff auf die erweiterten Einstellungen:
@@ -89,6 +89,7 @@ Nachdem Ihre Serverfarm angelegt wurde, müssen Sie ihr nur noch Server zuweisen
 |Cookie|Fügen Sie einen personalisierten Sitzungscookie hinzu|
 |Zertifikatskette|Fügen Sie eine Zertfikatskette hinzu|
 |Verteilungsgewicht|Auswahl des Verteilungsgewichts für die Lastverteilung|
+|Proxy-Protokollversion|**Nur wenn Sie das Proxy-Protokoll bereits konfiguriert haben**, wählen Sie die Proxy-Protokollversion aus, die Sie auf diesem Server verwenden möchten. </br> Weitere Informationen zum Proxy-Protokoll und dessen Verwendung mit dem Loadbalancer von OVHcloud finden Sie in [dieser Anleitung](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Verwaltung der SSL-Zertifikate
 Im Bereich `SSL-Zertifikate`{.action} ist es möglich, den Loadbalancer um eine SSL-Verschlüsselung zu ergänzen. Sie haben zwei Möglichkeiten: Sie können ein SSL-Zertifikat über OVH bestellen oder ein externes Zertifikat hinzufügen.
@@ -101,7 +102,7 @@ Um ein SSL-Zertifikat zu bestellen, gehen Sie einfach in den Bereich `SSL-Zertif
 |Element|Funktion|
 |---|---|
 |Name|Wenn Sie möchten, können Sie Ihrem Zertifikat einen Namen geben. Wenn Sie mehrere Zertifikate verwenden, können Sie diese so schneller unterscheiden.|
-|Zertifikattyp|Kostenlos (Let's Encrypt), Comodo DV oder Comodo EV (Details unter dieser Adresse: https://www.ovh.de/ssl/)|
+|Zertifikattyp|Kostenlos (Let's Encrypt), Comodo DV oder Comodo EV (Weitere Informationen finden Sie [auf dieser Seite](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|Die betroffene(n) Domain(s)|
 
 #### Hinzufügen eines externen SSL-Zertifikats
@@ -118,4 +119,4 @@ Wenn Sie bereits über ein eigenes SSL-Zertifikat verfügen, können Sie es dire
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

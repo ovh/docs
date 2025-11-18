@@ -11,12 +11,12 @@ Découvrez comment utiliser votre service SSL Gateway afin de sécuriser les con
 ### Prérequis
 
 - Disposer d’un service SSL Gateway.
-- Être connecté à votre  [espace client OVHcloud](/links/manager){.external}, partie `Sunrise`{.action}.
+- Être connecté à votre  [espace client OVHcloud](/links/manager), partie `Sunrise`{.action}.
 
 ## En pratique
 
 ### Configurer le service
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager).
 Cliquez ensuite sur la section `Sunrise`{.action}.
 
 ![Bouton d'ouverture](images/4.PNG){.thumbnail}
@@ -68,7 +68,7 @@ La page qui s’affiche concerne la gestion de votre solution.
 > <cite>Le niveau le plus élevé offre la meilleure protection, mais il peut ne pas fonctionner sur les navigateurs plus anciens.</cite>
 >
 
-Pour plus d'informations sur le chiffrement, cliquez sur [ce lien](https://fr.wikipedia.org/wiki/Chiffre_(cryptologie)){.external}.
+Pour plus d'informations sur le chiffrement, cliquez sur [ce lien](https://fr.wikipedia.org/wiki/Chiffre_(cryptologie)).
 
 ### Configurer le nom de domaine
 Le bloc suivant comprend quatre onglets :
@@ -224,7 +224,7 @@ a2enconf remoteip
 service apache2 restart
 ```
 
-Vous pourrez trouver plus d'informations à propos de cette fonctionnalité Apache dans la [ documentation officielle](https://httpd.apache.org/docs/current/fr/mod/mod_remoteip.html){.external}.
+Vous pourrez trouver plus d'informations à propos de cette fonctionnalité Apache dans la [ documentation officielle](https://httpd.apache.org/docs/current/fr/mod/mod_remoteip.html).
 
 #### NGINX
 Ouvrez le fichier de configuration correspondant au site internet à sécuriser. Il se trouve généralement dans le dossier :
@@ -238,7 +238,7 @@ set_real_ip_from 213.32.4.0/24;
 real_ip_header X-Forwarded-For;
 ```
 
-Vous trouverez plus d'informations sur cette fonctionnalité Nginx dans la [documentation officielle](http://nginx.org/en/docs/http/ngx_http_realip_module.html){.external}.
+Vous trouverez plus d'informations sur cette fonctionnalité Nginx dans la [documentation officielle](http://nginx.org/en/docs/http/ngx_http_realip_module.html).
 
 ## Aller plus loin
 

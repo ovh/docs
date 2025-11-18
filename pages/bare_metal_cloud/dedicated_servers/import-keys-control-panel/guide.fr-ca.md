@@ -28,7 +28,7 @@ Si vous n'avez pas encore créé de paire de clés SSH, consultez d'abord nos gu
 - [Créer et utiliser des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 - [Tutoriel - Comment utiliser PuTTY pour les connexions SSH et l'authentification](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
-Connectez-vous sur votre [espace client OVHcloud](/links/manager), cliquez sur le nom du compte en haut à droite et ouvrez `Catalogue de produits`{.action}.
+Connectez-vous sur votre [espace client OVHcloud](/links/manager), cliquez sur le nom du compte en haut à droite et ouvrez `Mes offres & services`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

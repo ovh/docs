@@ -43,7 +43,7 @@ La liste des IPv4 de sortie potentiellement utilisées par votre service OVH Loa
 > 
 
 ## Presentation du ProxyProtocol
-Le ProxyProtocol a été développé par l'équipe du Load Balancer [HAPRoxy](http://haproxy.org/){.external} comme l'homologue en TCP des En-Têtes HTTP standards telles que X-Forwarded-For. Il a été pensé pour faire suivre au minimum :
+Le ProxyProtocol a été développé par l'équipe du Load Balancer [HAPRoxy](http://haproxy.org/) comme l'homologue en TCP des En-Têtes HTTP standards telles que X-Forwarded-For. Il a été pensé pour faire suivre au minimum :
 
 - le nom du protocole L4 utilisé (TCP4 pour l'IPv4 ou TCP6 pour l'IPv6) ;
 - l'adresse IPv4 ou IPv6 source ;
@@ -55,7 +55,7 @@ En effet, ce protocole existe en 2 versions: - La version 1, au format texte - L
 
 La version 1 étant largement suffisante pour la plupart des usages (bien que moins optimisée), elle est souvent la seule version gérée par les logiciels compatibles. La version 2 étant un format binaire, est plus rapide à analyser. Elle ajoute également la possibilité d'indiquer si la connexion d'origine était chiffrée (l'équivalent de l'En-Tête X-Forwarded-Proto) ainsi que le domaine spécifiée dans le champ Common Name du certificat utilisé le cas échéant.
 
-Pour en savoir plus sur le ProxyProtocol, nous vous invitons à consulter la [spécification du ProxyProtocol](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt){.external}.
+Pour en savoir plus sur le ProxyProtocol, nous vous invitons à consulter la [spécification du ProxyProtocol](http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt).
 
 ## Activation du ProxyProtocol pour un de vos serveurs
 Le ProxyProtocol doit être activé pour chaque serveur enregistré dans une Ferme de serveurs. Cette fonctionnalité étant intrusive et ne pouvant être activée de manière transparente, cela permet de la tester sur une machine en particulier puis de déployer progressivement la configuration sur une ferme active.
@@ -134,10 +134,10 @@ service nginx reload
 > Cet exemple utilise le protocole HTTP pour plus de simplicité. Si vous utilisez du HTTP, nous vous recommandons vivement d'utiliser les En-Têtes HTTP au lieu du ProxyProtocol sauf si votre service OVH Load Balancer est configuré en TCP. Cela peut se produire dans le cas d'une terminaison SSL pour du HTTP/2 par exemple.
 > 
 
-Pour plus d'informations sur la configuration du ProxyProtocol dans Nginx, nous vous invitons à consulter la documentation officielle du projet: [https://www.nginx.com/resources/admin-guide/proxy-protocol/](https://www.nginx.com/resources/admin-guide/proxy-protocol/){.external}
+Pour plus d'informations sur la configuration du ProxyProtocol dans Nginx, nous vous invitons à consulter la documentation officielle du projet: [https://www.nginx.com/resources/admin-guide/proxy-protocol/](https://www.nginx.com/resources/admin-guide/proxy-protocol/)
 
 ### Apache
-La gestion du ProxyProtocol dans Apache est encore jeune. Une implémentation non-officielle et compatible avec Apache 2.4 est disponible sur Github ([https://github.com/roadrunner2/mod-proxy-protocol](https://github.com/roadrunner2/mod-proxy-protocol){.external}) mais n'est plus maintenue depuis 2014. Une implémentation officielle se trouve dans le module mod_remoteip qui est également utilisé pour gérer les En-Têtes de la famille X-Forwarded-For.
+La gestion du ProxyProtocol dans Apache est encore jeune. Une implémentation non-officielle et compatible avec Apache 2.4 est disponible sur Github ([https://github.com/roadrunner2/mod-proxy-protocol](https://github.com/roadrunner2/mod-proxy-protocol)) mais n'est plus maintenue depuis 2014. Une implémentation officielle se trouve dans le module mod_remoteip qui est également utilisé pour gérer les En-Têtes de la famille X-Forwarded-For.
 
 mod-proxy-protocol gère les version 1 et 2 du ProxyProtocol. En revanche, il ne permet pas de spécifier une liste d'IP source autorisées à utiliser le ProxyProtocol, bien que ce soit évoqué dans les projets du module.
 
@@ -183,7 +183,7 @@ sudo apxs -i -a -c mod_proxy_protocol.c
 service apache2 restart
 ```
 
-Pour en savoir plus sur la configuration du module mod-proxy-protocol nous vous invitons à consulter sa documentation: [http://roadrunner2.github.io/mod-proxy-protocol/mod_proxy_protocol.html](http://roadrunner2.github.io/mod-proxy-protocol/mod_proxy_protocol.html){.external}
+Pour en savoir plus sur la configuration du module mod-proxy-protocol nous vous invitons à consulter sa documentation: [http://roadrunner2.github.io/mod-proxy-protocol/mod_proxy_protocol.html](http://roadrunner2.github.io/mod-proxy-protocol/mod_proxy_protocol.html)
 
 #### Avec mod_remoteip
 - Le module étant expérimental, il faudra au préalable installé une version expérimentale de Apache, ce qui n'est pas recommandé dans une environnement de production, à moins de savoir précisément ce que l'on fait !
@@ -207,7 +207,7 @@ a2enmod remoteip
 service apache2 restart
 ```
 
-Pour en savoir plus sur la configuration du module mod_remoteip nous vous invitons à consulter sa documentation: [https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html#remoteipproxyprotocol](https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html#remoteipproxyprotocol){.external}
+Pour en savoir plus sur la configuration du module mod_remoteip nous vous invitons à consulter sa documentation: [https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html#remoteipproxyprotocol](https://httpd.apache.org/docs/trunk/mod/mod_remoteip.html#remoteipproxyprotocol)
 
 ### HAProxy
 Le ProxyProtocol a été conçu par l'équipe de HAProxy. Il est donc le logiciel gérant le mieux ce protocole. Cela pourra être utile dans un scénario où le suivi de la véritable IP source du client est indispensable mais le logiciel cible ne gère pas ce protocole. Ce sera le cas par exemple de MySQL et PostgreSQL pour n'en citer que 2.

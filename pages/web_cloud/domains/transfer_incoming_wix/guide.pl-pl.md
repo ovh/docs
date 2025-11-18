@@ -68,7 +68,7 @@ Musisz również:
 
 ### Odblokowanie domeny i pobranie kodu transferu
 
-Aby odblokować domenę i uzyskać kod transferu, wykonaj kroki opisane w [dedykowanej dokumentacji Wix](https://support.wix.com/en/article/transferring-your-wix-domain-away-from-wix-2477749){.external}.
+Aby odblokować domenę i uzyskać kod transferu, wykonaj kroki opisane w [dedykowanej dokumentacji Wix](https://support.wix.com/en/article/transferring-your-wix-domain-away-from-wix-2477749).
 
 ### Rozpocznij transfer domeny do OVHcloud
 

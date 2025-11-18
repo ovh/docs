@@ -223,7 +223,7 @@ Save the changes and exit the editor. You will have to confirm the new fingerpri
 
 If you prefer a graphical user interface, you can find many software applications for every type of OS that enable you to connect to remote hosts via the SSH protocol.
 
-For example, [PuTTY](https://putty.org/) is an open-source SSH client software with many useful features. Find out how to use it for connections to OVHcloud servers in our detailed tutorial:
+For example, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) is an open-source SSH client software with many useful features. Find out how to use it for connections to OVHcloud servers in our detailed tutorial:
 
 [How to use PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

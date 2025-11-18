@@ -12,7 +12,7 @@ This tutorial explains how to create an online store with the open-source plugin
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/){.external} or [the publisher of WooCommerce](https://woocommerce.com/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/) or [the publisher of WooCommerce](https://woocommerce.com/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -118,7 +118,7 @@ Product management is done through a set of subcategories:
 
 #### Shipping
 
-If you enabled the default extensions that were free when you installed, you have the extension [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. Otherwise, you can install it by going to the `Extensions`{.action} submenu.
+If you enabled the default extensions that were free when you installed, you have the extension [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/). Otherwise, you can install it by going to the `Extensions`{.action} submenu.
 
 - **Shipping zones**: Allows you to define and configure shipping areas.
 - **Delivery options**: Is used to set up the application for all shipping costs.
@@ -138,7 +138,7 @@ Allows you to configure the *standard emails* sent by the application (registrat
 
 #### Integration
 
-To geolocate your customers based on their IP addresses, you can enter the licence key for [MaxMind](https://www.maxmind.com/){.external}, a paid geolocation service.
+To geolocate your customers based on their IP addresses, you can enter the licence key for [MaxMind](https://www.maxmind.com/), a paid geolocation service.
 
 #### Advanced
 
@@ -153,10 +153,10 @@ To geolocate your customers based on their IP addresses, you can enter the licen
 
 Some useful links:
 
-- [Official WordPress website](https://wordpress.org){.external}
-- [Jetpack plugin](https://jetpack.com/){.external}
-- [WooCommerce](https://woocommerce.com/){.external}
-- [WooCommerce extensions shop](https://woocommerce.com/products/){.external}
+- [Official WordPress website](https://wordpress.org)
+- [Jetpack plugin](https://jetpack.com/)
+- [WooCommerce](https://woocommerce.com/)
+- [WooCommerce extensions shop](https://woocommerce.com/products/)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

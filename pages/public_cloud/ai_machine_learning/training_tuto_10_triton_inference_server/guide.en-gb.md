@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Get started with NVIDIA Triton Inference Server and AI Training
 excerpt: How to use optimally AI models with NVIDIA Triton Inference Server and AI Training
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 ## Objective
@@ -253,24 +253,25 @@ ENV HOME=/workspace
 
 ##### Build the Docker image from the Dockerfile
 
-Launch the following command from the **Dockerfile** directory to build the image:
+From the directory containing your **Dockerfile**, run one of the following commands to build your application image:
 
 ```console
+# Build the image using your machine's default architecture
 docker build . -t triton-inference-server:23.03-py3
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t triton-inference-server:23.03-py3 .
 ```
+
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
+
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
 
 > [!primary]
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **triton-inference-server:23.03-py3**.
->
-
-> [!warning]
->
-> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
->
-> `docker buildx build --platform linux/amd64 ...`
 >
 
 ##### Push the server image into the shared registry

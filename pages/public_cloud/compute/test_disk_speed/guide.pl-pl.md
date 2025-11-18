@@ -39,7 +39,7 @@ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate
 >
 > Należy dostosować argument --numjobs do liczby CPU, którą dysponuje Twoja instancja. 
 >
-> Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analizuj dane
@@ -144,7 +144,7 @@ Widzimy, że wydajność dodatkowego dysku wynosi około 3052 IOPS.
 
 Komenda, której potrzebujesz, aby sprawdzić prędkość dysku, nazywa się `fio`. Nie jest on dostępny domyślnie na Twoim serwerze.
 
-Aby zainstalować `fio`, zaloguj się do instancji za pomocą protokołu RDP i pobierz plik binarny: [Microsoft Windows binaries for fio](https://bsdio.com/fio/){.external}.
+Aby zainstalować `fio`, zaloguj się do instancji za pomocą protokołu RDP i pobierz plik binarny: [Microsoft Windows binaries for fio](https://bsdio.com/fio/).
 
 ### Test prędkości dysku
 
@@ -158,7 +158,7 @@ fio --name=rand-write --ioengine=windowsaio --iodepth=32 --rw=randwrite --invali
 >
 > Należy dostosować argument --numjobs do liczby CPU, którą dysponuje Twoja instancja. 
 >
-> Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO.rst){.external}.
+> Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 ### Analiza danych

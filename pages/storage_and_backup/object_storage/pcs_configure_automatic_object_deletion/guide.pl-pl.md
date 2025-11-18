@@ -35,7 +35,7 @@ Plik test.txt zostanie usunięty po 1 godzinie.
 ### W określonym terminie
 
 Najpierw trzeba poznać datę usunięcia w formacie epoch.
-Można korzystać z [konwertera](http://www.epochconverter.com/){.external}, aby sprawdzić wartość do wpisania.
+Można korzystać z [konwertera](http://www.epochconverter.com/), aby sprawdzić wartość do wpisania.
 
 Następnie można wpisać tę datę w nagłówku (header) `X-Delete-At`:
 

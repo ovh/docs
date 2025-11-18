@@ -8,7 +8,7 @@ category_l3: Tutorials
 updated: 2023-11-27
 ---
 
-OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management.
+OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/) [chart](https://helm.sh/docs/topics/charts/) management.
 
 This guide will explain how to deploy a Helm chart from your OVHcloud Managed Private Registry in a Kubernetes cluster.
 

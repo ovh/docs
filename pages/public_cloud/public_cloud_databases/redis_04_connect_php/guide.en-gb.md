@@ -1,6 +1,6 @@
 ---
-title: Caching/Valkey - Connect with PHP
-excerpt: Connect to your Public Cloud Databases for Caching/Valkey using the PHP programming language
+title: Valkey - Connect with PHP
+excerpt: Connect to your Public Cloud Databases for Valkey using the PHP programming language
 updated: 2024-06-12
 ---
 
@@ -8,28 +8,28 @@ updated: 2024-06-12
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to connect to a Caching/Valkey service instance with one of the world's most famous programming language: PHP.**
+**This guide explains how to connect to a Valkey service instance with one of the world's most famous programming language: PHP.**
 
 You can find an example on the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/redis/php/hello-world).
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- A Caching/Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- [Configure your Caching/Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
 
 ## Concept
 
-A Caching/Valkey service can be managed through multiple ways.
+A Valkey service can be managed through multiple ways.
 One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect with CLI](/pages/public_cloud/public_cloud_databases/redis_03_connect_cli).
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
-Redis® has multiple PHP clients, allowing us to connect and manage an instance from code. Please follow the official [Redis® documentation for PHP clients](https://redis.io/clients#php){.external} to get the latest clients information.
+Redis® has multiple PHP clients, allowing us to connect and manage an instance from code. Please follow the official [Redis® documentation for PHP clients](https://redis.io/clients#php) to get the latest clients information.
 
-We will need to set up our PHP environment with phpredis client, then configure our Public Cloud Databases for Caching/Valkey services to accept incoming connections, and finally code in PHP to perform a few example actions.
+We will need to set up our PHP environment with phpredis client, then configure our Public Cloud Databases for Valkey services to accept incoming connections, and finally code in PHP to perform a few example actions.
 
 ## Instructions
 
@@ -87,7 +87,7 @@ Congratulations! Everything is working properly.
 ## Go further
 
 - [Redis® official tutorial: simple Twitter clone using PHP](https://redis.io/topics/twitter-clone)
-- [Caching/Valkey - Capabilities and Limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities)
+- [Valkey - Capabilities and Limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities)
 - [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)
 
 Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds our databases services.

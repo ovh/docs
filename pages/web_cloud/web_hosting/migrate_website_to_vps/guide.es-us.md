@@ -1,7 +1,7 @@
 ---
 title: "Cómo migrar un sitio web desde un alojamiento web compartido hacia un VPS"
 excerpt: "Descubra cómo migrar un sitio web de un alojamiento compartido a un VPS de OVHcloud"
-updated: 2024-11-06
+updated: 2025-10-23
 ---
 
 ## Objetivo
@@ -114,9 +114,63 @@ Siga nuestra [guía de uso de FileZilla](/pages/bare_metal_cloud/dedicated_serve
 
 #### Etapa 3.2 - Transferir los archivos de su sitio web al VPS
 
-Una vez que se haya conectado al VPS, el árbol de archivos local aparecerá a la izquierda de la interfaz FileZilla y a la derecha de su VPS.
+Una vez conectado a su VPS, la estructura de archivos locales aparece a la izquierda de la interfaz de FileZilla, y la de su VPS a la derecha.
 
-Seleccione los archivos de su sitio web y la base de datos que haya descargado en el [etapa 1.2](#step1.2). Arrástrelos hasta el directorio web de su VPS, a la derecha de la interfaz. El directorio web es el lugar donde los archivos de su sitio web serán almacenados para ser accesibles en Internet. Por defecto, puede ser una carpeta denominada `/var/www/html` u otro directorio configurado durante la instalación del servidor web en el [etapa 2.2](#step2.2). Asegúrese de colocar los archivos en la carpeta configurada como raíz web para que su sitio web funcione correctamente.
+El directorio web (o raíz web) es el lugar donde se almacenarán los archivos de su sitio web para que sean accesibles en Internet. **Por defecto, puede ser un directorio llamado `/var/www/html` o otro directorio configurado durante la instalación de su servidor web en el [paso 2.2](#step2.2)**. Asegúrese de colocar sus archivos en la carpeta configurada como **raíz web** para que su sitio funcione correctamente.
+
+> [!warning]
+>
+> Si se conecta a través de SFTP con un usuario no root (ej. `debian`), no tendrá permiso para escribir directamente en `/var/www/html`.
+
+**Procedimiento simple: depositar en `/home` y luego mover con `sudo`**
+
+##### En FileZilla (SFTP)
+
+- En el lado "Sitio remoto" (panel derecho), vaya a: `/home/debian/`
+- Arrastre y suelte el archivo de su base de datos (ej. `backup.sql`) en `/home/debian/`. **No coloque esta copia de seguridad ni en la carpeta que va a copiar hacia la raíz web** (ej. `/home/debian/site/`) **ni en la raíz web** (ej. `/var/www/html`), de lo contrario podría ser descargada públicamente.
+- Cree una carpeta `site` en `/home/debian/` (haga clic derecho → `Crear un directorio`{.action}), y ábrala.
+- Seleccione todos los archivos de su sitio web (la base de datos ya no debe estar allí) y arrástrelos y suéltelos en `/home/debian/site/`. **No deposite sus volcados SQL en esta carpeta**. Manténgalos fuera de la raíz web, (ej. `/home/debian/backup.sql`.)
+
+##### En su VPS
+
+Conéctese al VPS mediante SSH consultando la sección "Conexión a su VPS" de nuestro guía "[Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
+
+Ejecute los siguientes comandos:
+
+> [!warning]
+>
+> En este ejemplo, la raíz web es `/var/www/html`. Si su raíz web es diferente (configurada en el paso 2.2), reemplace `/var/www/html` por su ruta real.
+
+Cree la raíz web si no existe:
+
+```bash
+sudo mkdir -p /var/www/html
+```
+
+Copie el contenido de `/home/debian/site/` hacia la raíz web preservando la estructura y las metadatos:
+
+```bash
+sudo rsync -a /home/debian/site/ /var/www/html/
+```
+
+Alternativa si `rsync` no está instalado: 
+
+```bash
+sudo cp -a /home/debian/site/. /var/www/html/
+```
+
+Asigne la propiedad de los archivos al servicio web (`www-data` para Nginx/Apache en Debian/Ubuntu):
+
+```bash
+sudo chown -R www-data:www-data /var/www/html
+```
+
+Fije los permisos de los directorios en `755` (navegable) y de los archivos en `644` (legible):
+
+```bash
+sudo find /var/www/html -type d -exec chmod 755 {} \;
+sudo find /var/www/html -type f -exec chmod 644 {} \;
+```
 
 ### Etapa 4 - Importar la base de datos en su VPS (opcional)
 
@@ -124,22 +178,36 @@ Seleccione los archivos de su sitio web y la base de datos que haya descargado e
 >
 > Si la base de datos ya está alojada en un servicio Web Cloud Databases, no es necesario migrarla al VPS. Puede conservar la base de datos en el servicio Web Cloud Databases y configurar su VPS para que se conecte a esta base de datos ([etapa 5](#step5)).
 
-Si quiere importar la base de datos en su VPS, siga los pasos que se indican a continuación.
+#### Antes de comenzar
 
-Conéctese al VPS por SSH en la sección "Conectarse a su VPS" de nuestra guía "[Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
+- Su archivo de respaldo (`.sql`) ha sido depositado en el paso 3.2 (por ejemplo: `/home/debian/backup.sql`).
+- El **S**istema de **G**estión de **B**ase de **D**atos (**SGBD**) (MySQL / MariaDB) y su cliente de línea de comandos han sido instalados en el [paso 2.2](#step2.2).
+- La base **`db_name`**:
+    - **ya existe** si la ha creado durante el paso 2.2 (o a través de su panel de administración).
+    - **puede ser creada automáticamente** si su respaldo `.sql` contiene `CREATE DATABASE`.
+    - **de lo contrario, créela antes de la importación**:
 
-Una vez que se haya conectado al VPS por SSH, utilice la línea de comandos siguiente para importar la base de datos.
+    ```bash
+    sudo mysql -e "CREATE DATABASE db_name CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+    ```
 
-En el ejemplo siguiente, utilizamos MySQL como **S**istema de **G**estión de **B**ase de **D**atos (**SGBD**). Utilice la documentación oficial del SGBD que haya instalado en el [etapa 2.2](#step2.2) para utilizar la línea de comandos adecuada para importar la base de datos en su VPS.
+    (reemplace `db_name` por el nombre deseado).
 
-```php
-<?php
-system("mysql -u user_name -p db_name < root/to/file.sql
-");
-?>
-```
+#### Importar la base de datos
 
-Sustituya `user_name` por su nombre de usuario MySQL, `db_name` por el nombre de la base de datos que desea importar, y `root/to/file.sql` por la ruta del archivo SQL de la copia de seguridad.
+1. Conéctese al VPS mediante SSH consultando la sección "Conexión a su VPS" de nuestro guía "[Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
+2. Inicie la importación utilizando el cliente del SGBD:
+
+    En el ejemplo siguiente, utilizamos MySQL como SGBD. Utilice la documentación oficial del SGBD que ha instalado durante el [paso 2.2](#step2.2) para utilizar el comando adecuado para importar la base de datos en su VPS.
+
+    ```bash
+    mysql -u user_name -p db_name < /home/debian/backup.sql
+    ```
+
+    - Reemplace `user_name` por su nombre de usuario MySQL (MySQL/MariaDB), y no por su login SSH.
+    - Reemplace `db_name` por el nombre de la base de datos a importar.
+
+3. Introduzca la contraseña del usuario SGBD cuando se le pida y espere a que finalice la importación.
 
 ### Etapa 5 - Configurar los archivos de configuración de su sitio web <a name="step5"></a>
 

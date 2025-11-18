@@ -1,7 +1,7 @@
 ---
 title: 'Optymalizacja wydajności witryny internetowej'
 excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i ulepszyć jej działanie'
-updated: 2024-01-08
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie 
@@ -13,14 +13,14 @@ Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetow
 
 ## Wymagania początkowe
 
-- [plan hostingu WWW OVHcloud](/links/web/hosting){.external}
+- [plan hostingu WWW OVHcloud](/links/web/hosting)
 - e-mail potwierdzający skonfigurowanie planu hostingu WWW
-- [nazwa domeny](/links/web/domains){.external} umożliwiająca dostęp do witryny internetowej
-- dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
+- [nazwa domeny](/links/web/domains) umożliwiająca dostęp do witryny internetowej
+- dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
-### Krok 1: zdefiniowanie zakresu
+### 1 - Zdefiniowanie zakresu
 
 #### Pytania, które należy sobie zadać:
 
@@ -46,14 +46,14 @@ Odpowiedzi na te pytania pomogą skoncentrować się na konkretnych kwestiach i 
 
 Do korzystania z systemów zarządzania treścią (CMS), takich jak WordPress, PrestaShop, Joomla! czy Drupal, jest potrzebnych wiele bibliotek, aby jedna strona internetowa mogła obsłużyć wiele elementów.
 Przeglądarki internetowe muszą załadować i odczytać te wszystkie elementy.
-Na [stronie produktu](/links/web/hosting){.external} przestawiamy oferty hostingu WWW zalecane do wskazanych powyżej systemów CMS.
+Na [stronie produktu](/links/web/hosting) przestawiamy oferty hostingu WWW zalecane do wskazanych powyżej systemów CMS.
 
-Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](/links/web/hosting-best-web){.external}.
+Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](/links/web/hosting-best-web).
 
-### Krok 2: sprawdzenie wersji PHP
+### 2 - Sprawdzenie wersji PHP
 
 Na wydajność witryny internetowej znacząco może wpłynąć korzystanie ze zgodnej z nią, najnowszej wersji języka PHP.
-Aby sprawdzić, czy witryna jest kompatybilna z najnowszą wersją PHP, zapoznaj się z [oficjalną dokumentacją języka PHP](https://php.net/eol.php){.external}.
+Aby sprawdzić, czy witryna jest kompatybilna z najnowszą wersją PHP, zapoznaj się z [oficjalną dokumentacją języka PHP](https://php.net/eol.php).
 
 **PHP-FPM**
 
@@ -74,7 +74,7 @@ Aby zmienić wersję PHP-FPM na _stabilną_ lub uzyskać szczegółowe informacj
 
 Plik _.ovhconfig_ działa w katalogu głównym hostingu albo w podkatalogu poziomu 1 (na przykład: _/www/_), ale nie w katalogach poziomu drugiego lub wyższego (na przykład: _/www/test/_, _/www/test/test2/_).
 
-### Krok 3: sprawdzenie treści multimedialnej
+### 3 - Sprawdzenie treści multimedialnej
 
 Podczas korzystania z witryny internetowej cała jej treść musi zostać pobrana przez przeglądarkę.
 
@@ -86,19 +86,40 @@ Można więc wybrać sposób, który najlepiej zaspokoi konkretne potrzeby.
 
 Więcej informacji na ten temat zawiera poniższy krok 5.
 
-### Krok 4: optymalizacja skryptów
+### 4 - Optymalizacja skryptów
 
 Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów hostingu (więcej informacji poniżej). Następnie sprawdź w logach wpisy z okresów, w których wystąpiło szczytowe wykorzystanie.
 
-Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](/links/manager){.external}.
+Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](/links/manager).
 
 Dostęp do statystyk i logów:
 
-1. W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www.
-2. Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
-3. Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do statystyk odwiedzin strony www lub `Sprawdź logi`{.action}, aby sprawdzić logi dostępne dla Twojego hostingu www.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
-![logi](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do statystyk odwiedzin strony www lub `Sprawdź logi`{.action}, aby sprawdzić logi dostępne dla Twojego hostingu www.
+>>
+>> ![logi](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Dostęp do wykresów:
 
@@ -129,9 +150,9 @@ Aby je wyświetlić, wybierz nazwę bazy danych i okres.
 
 - **Żądania SQL**: wyświetla liczbę żądań.
 
-### Krok 5: sprawdzenie żądań sieciowych
+### 5 - Sprawdzenie żądań sieciowych
 
-Użytecznym narzędziem do analizy jest [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external}. Narzędzie jest zintegrowane z przeglądarką Mozilla Firefox i umożliwia szczegółowe analizowane czasu ładowania strony internetowej.
+Użytecznym narzędziem do analizy jest [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor). Narzędzie jest zintegrowane z przeglądarką Mozilla Firefox i umożliwia szczegółowe analizowane czasu ładowania strony internetowej.
 
 Dzięki niemu możesz sprawdzić, które elementy witryny internetowej ładują się najwolniej i stanowią największe obciążenie.
 Ułatwia to wykrycie, które obrazy i elementy treści powodują zwiększenie czasu ładowania witryny, a tym samym określenie priorytetów optymalizacji.
@@ -146,25 +167,25 @@ Aby usprawnić dostęp do witryny internetowej i pobieranie oraz uzyskać optyma
 
 Efektem będzie skrócenie czasów odpowiedzi dla wszystkich odwiedzających na całym świecie, ponieważ elementy statyczne witryny będą pobierane bezpośrednio z miejsca, które znajduje się najbliżej nich.
 
-Poznaj [nasze rozwiązanie CDN](https://www.ovh.pl/cdn/){.external}.
+Poznaj [nasze rozwiązanie CDN](/links/network/cdn-infrastructure).
 
-### Krok 6: sprawdzenie używanego System zarządzania treścią (CMS) i wtyczek
+### 6 - Sprawdzenie używanego System zarządzania treścią (CMS) i wtyczek
 
 _Ten krok jest opcjonalny, jeśli nie korzystasz z systemu CMS._
 
-Aby mieć pewność, że korzystasz z oferty hostingu dopasowanej do potrzeb Twojego systemu CMS, zapoznaj się z porównaniem usług na [stronie produktu](/links/web/hosting){.external}.
+Aby mieć pewność, że korzystasz z oferty hostingu dopasowanej do potrzeb Twojego systemu CMS, zapoznaj się z porównaniem usług na [stronie produktu](/links/web/hosting).
 
 - **Korzystanie z wtyczki pamięci podręcznej:** Korzystanie z systemów zarządzania treścią (CMS) wiąże się z odwołaniami do wielu bibliotek, aby na jednej stronie internetowej mogło działać mnóstwo elementów. W celu optymalizacji systemu CMS zaleca się korzystanie z wtyczek pamięci podręcznej. Dzięki temu treść witryny internetowej nie musi być ponownie generowana przy każdym ładowaniu strony. Zalecamy wyszukanie wskazówek dotyczących wtyczek pamięci podręcznej w witrynach społeczności używanego systemu CMS (PrestaShop, WordPress, Joomla!). Pozwoli to uniknąć ponownego generowania całej treści witryny przy każdym załadowaniu strony internetowej.
 
 - **Dezaktywacja nieużywanych wtyczek:** Aby poprawić wydajność witryny internetowej, warto zdezaktywować lub nawet usunąć nieużywane wtyczki. Dzięki temu nie będą pobierane niepotrzebne elementy.
 
-### Krok 7: optymalizacja bazy danych
+### 7 - Optymalizacja bazy danych
 
 _Ten krok jest opcjonalny, jeśli nie korzystasz z bazy danych._
 Dostęp do bazy danych umożliwia narzędzie PHPMyAdmin. Instrukcja korzystania z narzędzia PHPMyAdmin wykracza poza zakres tego przewodnika, więc to zagadnienie nie zostanie rozwinięte.
 Szczegółowe informacje można znaleźć w wielu przewodnikach zewnętrznych.
 
-**Dostęp do bazy danych za pośrednictwem narzędzia phpMyAdmin:** Aby uzyskać dostęp do bazy danych za pomocą narzędzia phpMyAdmin, skorzystaj z[Panelu klienta OVHcloud](/links/manager){.external}:
+**Dostęp do bazy danych za pośrednictwem narzędzia phpMyAdmin:** Aby uzyskać dostęp do bazy danych za pomocą narzędzia phpMyAdmin, skorzystaj z[Panelu klienta OVHcloud](/links/manager):
 
 - Kliknij domenę w sekcji `Hosting`{.action}.
 - Przejdź do karty `Baza danych`{.action}.
@@ -224,15 +245,15 @@ Na przykład klauzuli „HAVING”, która może spowolnić zapytania. Nie używ
 
 #### Web Cloud Databases
 Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — Web Cloud Databases. Będziesz mieć do dyspozycji więcej zasobów.
-[Sprawdź ofertę Web Cloud Databases na naszej stronie](https://www.ovh.pl/cloud/cloud-databases/){.external}.
+[Sprawdź ofertę Web Cloud Databases na naszej stronie](/links/web/databases).
 
 ## Sprawdź również
 
 [Zmiana konfiguracji hostingu WWW](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[Zarządzanie bazą danych w hostingu WWW](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Zarządzanie bazą danych w hostingu WWW](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Pierwsze kroki z usługą Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
+[Pierwsze kroki z usługą Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

@@ -4,6 +4,11 @@ excerpt: 'Dowiedz się, jak zoptymalizować bezpieczeństwo konta OVHcloud, zarz
 updated: 2025-05-22
 ---
 
+> [!success]
+> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
+> Podziel się z nami swoją opinią i pomysłami.<br>
+> [przejdź do ankiety.](https://s.elq.fr/ovhext/DItXnvw)
+
 ## Wprowadzenie
 
 Zarządzanie usługami i danymi odbywa się głównie w Panelu klienta OVHcloud.
@@ -111,11 +116,11 @@ Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}.
 
 #### Korzystanie z moich praw do danych osobowych
 
-Zgodnie z ogólnym rozporządzeniem o ochronie danych osobowych (RODO) możesz skorzystać z przysługujących Ci praw dotyczących ochrony danych osobowych, wypełniając [ten formularz](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw){.external}.
+Zgodnie z ogólnym rozporządzeniem o ochronie danych osobowych (RODO) możesz skorzystać z przysługujących Ci praw dotyczących ochrony danych osobowych, wypełniając [ten formularz](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw).
 
 #### Usuń moje konto OVHcloud
 
-Możesz zażądać usunięcia konta OVHcloud i powiązanych z nim danych, wypełniając [formularz korzystania z praw RODO](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw){.external} i wybierając w nim pozycję "Prawo do usunięcia danych".
+Możesz zażądać usunięcia konta OVHcloud i powiązanych z nim danych, wypełniając [formularz korzystania z praw RODO](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw) i wybierając w nim pozycję "Prawo do usunięcia danych".
 
 > [!warning]
 >

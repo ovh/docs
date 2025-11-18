@@ -69,7 +69,7 @@ También debe:
 
 ### Desbloquear el dominio y obtener el código de transferencia
 
-Para desbloquear el dominio y obtener el código de transferencia, siga los pasos descritos en la [documentación dedicada de O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert){.external}.
+Para desbloquear el dominio y obtener el código de transferencia, siga los pasos descritos en la [documentación dedicada de O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert).
 
 ### Iniciar la transferencia del dominio a OVHcloud
 

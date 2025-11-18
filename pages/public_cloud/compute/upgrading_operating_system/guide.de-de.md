@@ -168,7 +168,7 @@ Sobald die Version heruntergeladen wurde und der Update-Prozess gestartet wurde,
 Überprüfen Sie, dass Ihre Anwendungen wie gewohnt funktionieren. Im Falle eines Problems empfehlen wir Ihnen, das vor dem Update [durchgeführte Backup](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup) wiederherzustellen.
 
 > [!primary]
-> Bei Schwierigkeiten finden Sie möglicherweise Antworten auf Ihre Fragen in der [Fedora Dokumentation](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.
+> Bei Schwierigkeiten finden Sie möglicherweise Antworten auf Ihre Fragen in der [Fedora Dokumentation](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/).
 >
 
 ## Weiterführende Informationen

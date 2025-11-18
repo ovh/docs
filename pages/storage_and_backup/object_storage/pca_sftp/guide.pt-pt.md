@@ -14,7 +14,7 @@ O Public Cloud Archive é uma solução de armazenamento que pode ser utilizada 
 
 ## Requisitos
 
-- Um cliente SFTP: [WinSCP](https://winscp.net/eng/download.php){.external}
+- Um cliente SFTP: [WinSCP](https://winscp.net/eng/download.php)
 - Login & Password OpenStack
 - Nome do projeto
 
@@ -30,7 +30,7 @@ Pode gerar o seu login e password OpenStack seguindo este [guia](/pages/public_c
 
 ### O TenantName
 
-O TenantName corresponde ao nome do seu projeto no Horizon. Para recuperar o TenantName, deverá ligar-se ao manager OpenStack através dos acessos gerados anteriormente: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/){.external}. Uma vez ligado, o TenantName pode ser acedido no topo da página.
+O TenantName corresponde ao nome do seu projeto no Horizon. Para recuperar o TenantName, deverá ligar-se ao manager OpenStack através dos acessos gerados anteriormente: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/). Uma vez ligado, o TenantName pode ser acedido no topo da página.
 
 ![horizon](images/image1.png){.thumbnail}
 

@@ -8,7 +8,7 @@ updated: 2018-09-12
 
 Sus datos informáticos son activos muy valiosos: su pérdida o alteración podría afectar al desarrollo normal de su actividad. Aunque no es posible eliminar estos riesgos por completo, es aconsejable hacer copias de seguridad al menos una vez al día, preferentemente en un servidor o una solución de almacenamiento distinta de la que alberga la producción.
 
-OVHcloud ofrece una [gama de servidores dedicados](https://www.ovhcloud.com/es/bare-metal/storage/){.external} específica para operaciones de almacenamiento. Estos servidores disponen de un mínimo de cuatro discos duros, y en ellos es posible realizar el backup de infraestructuras alojadas tanto en OVHcloud como en otro proveedor, en este último caso a través de la red pública de internet.
+OVHcloud ofrece una [gama de servidores dedicados](https://www.ovhcloud.com/es/bare-metal/storage/) específica para operaciones de almacenamiento. Estos servidores disponen de un mínimo de cuatro discos duros, y en ellos es posible realizar el backup de infraestructuras alojadas tanto en OVHcloud como en otro proveedor, en este último caso a través de la red pública de internet.
 
 Esta guía explica cómo configurar un servidor de almacenamiento de OVHcloud para adaptarlo a sus necesidades, cómo crear el árbol de directorios en el que se guardarán las copias de seguridad y, por último, cómo automatizar la copia de seguridad de los datos de dos servidores remotos mediante el protocolo SCP.
 
@@ -24,16 +24,16 @@ Esta guía explica cómo configurar un servidor de almacenamiento de OVHcloud pa
 
 ### Hardware y software necesarios
 
-- Un [servidor de almacenamiento](https://www.ovhcloud.com/es/bare-metal/storage/){.external} de OVHcloud.
-- Una infraestructura de producción ([VPS](https://www.ovhcloud.com/es/vps/){.external}, [servidor dedicado](/links/bare-metal/bare-metal){.external}, [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}…).
+- Un [servidor de almacenamiento](https://www.ovhcloud.com/es/bare-metal/storage/) de OVHcloud.
+- Una infraestructura de producción ([VPS](/links/bare-metal/vps), [servidor dedicado](/links/bare-metal/bare-metal), [instancia de Public Cloud](/links/public-cloud/public-cloud), etc.).
 - Conexión SSH configurada entre el servidor de almacenamiento y la infraestructura de producción.
-- Una [red privada](https://www.ovh.com/world/es/soluciones/vrack/){.external} entre los servidores (recomendado).
+- Una [red privada](https://www.ovh.com/world/es/soluciones/vrack/) entre los servidores (recomendado).
 
 ## Procedimiento
 
 ### 1. Elegir el nivel de RAID adecuado
 
-Los [servidores de almacenamiento](https://www.ovhcloud.com/es/bare-metal/storage/){.external} de OVHcloud incluyen varios discos duros en su configuración de hardware. Para este tutorial, vamos a utilizar un servidor con RAID por software (o softRAID) y cuatro discos con una capacidad de 6 TB cada uno.
+Los [servidores de almacenamiento](https://www.ovhcloud.com/es/bare-metal/storage/) de OVHcloud incluyen varios discos duros en su configuración de hardware. Para este tutorial, vamos a utilizar un servidor con RAID por software (o softRAID) y cuatro discos con una capacidad de 6 TB cada uno.
 
 OVHcloud permite elegir entre los siguientes niveles de RAID para configurar el almacenamiento de los datos: 0, 1, 5, 6 y 10. Cada uno de estos niveles presenta ventajas e inconvenientes en cuanto a rendimiento y resiliencia. Con cuatro discos podríamos elegir entre RAID 5, 6 o 10 para almacenar nuestros datos eficazmente (en este caso, RAID 0 y 1 no son adecuados).
 
@@ -61,8 +61,8 @@ No existe un modo RAID mejor que otro, ya que cada uno responde a necesidades di
 
 ### 2. Instalar y configurar el servidor
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external} e instale el servidor.
- Como indicamos al principio, utilizaremos Debian 9.4. Para más información, consulte nuestra guía [Primeros pasos con un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#instalar-o-reinstalar-el-servidor-dedicado){.external}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) e instale el servidor.
+ Como indicamos al principio, utilizaremos Debian 9.4. Para más información, consulte nuestra guía [Primeros pasos con un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#instalar-o-reinstalar-el-servidor-dedicado).
 
 Una vez seleccionado el sistema operativo, marque la casilla `Personalizar la configuración de las particiones`{.action} y haga clic en `Siguiente`{.action}.
 

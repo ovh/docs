@@ -1,12 +1,12 @@
 ---
 title: 'Public Cloud Instances - Switching from hourly to monthly billing'
 excerpt: 'Find out how to change the billing rate for your Public Cloud instance'
-updated: 2023-01-23
+updated: 2025-09-05
 ---
 
 ## Objective
 
-When you create a Public Cloud instance, you can choose to be billed at either an hourly or monthly rate. Hourly-rate instances are billed on a pay-as-you-go basis, i.e. at the end of each month, users are billed for every commenced hour per actual resources used.<br>
+When you create a Public Cloud instance, you can choose to be billed at either an hourly or monthly rate (except for third-generation Public Cloud instances, which are billed on an hourly basis by default and do not offer the monthly option when you create the instance). Hourly-rate instances are billed on a pay-as-you-go basis, i.e. at the end of each month, users are billed for every commenced hour per actual resources used.<br>
 Monthly-rate instances are up to 50% less expensive compared to an hourly rate for the same duration. Each month commenced will be billed at the end of the month.<br>
 If you initially selected hourly billing, you can switch to monthly billing at any time.
 
@@ -32,7 +32,11 @@ If you initially selected hourly billing, you can switch to monthly billing at a
 
 ### From the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](/links/manager){.external}, choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
+> [!warning]
+> The following procedure does not work for third-generation instances (example: B3-32). To be billed monthly for this type of instance, you must create a [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) for this instance model.
+>
+
+In the [OVHcloud Control Panel](/links/manager), choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
@@ -54,7 +58,7 @@ Replace "InstanceID" with the ID of the corresponding instance. This ID can be r
 
 ### From the OVHcloud API
 
-Log in to the [OVHcloud API interface](https://eu.api.ovh.com/) according to the [relevant guide](/pages/manage_and_operate/api/first-steps) and follow the steps below.
+Log in to the [OVHcloud API interface](/links/api) according to the [relevant guide](/pages/manage_and_operate/api/first-steps) and follow the steps below.
 
 Use the following call:
 
@@ -65,7 +69,7 @@ Use the following call:
 
 ### From a Terraform script
 
-This is possible thanks to the `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} from the resource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+This is possible thanks to the `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) from the resource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
 
 ```terraform
 metadata = {

@@ -112,5 +112,5 @@ Happy development !
 
 ## Go further
 
-- [API Console](https://api.ovh.com/){.external}
+- [API Console](/links/api)
 

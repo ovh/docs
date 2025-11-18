@@ -17,7 +17,7 @@ No seguimento de um incidente, máquinas virtuais já não aparecem no seu inven
 ## Requisitos
 
 - Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), a fim de receber os identificadores de ligação.
-- Ter um identificador de utilizador ativo (criado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
+- Ter um identificador de utilizador ativo (criado na [Área de Cliente OVHcloud](/links/manager))
 
 ## Instruções
 
@@ -55,9 +55,9 @@ Caso tenha várias dezenas de VMs e/ou datastores, é possível utilizar scripts
 
 #### Com PowerCLI
 
-A VMware fornece PowerCLI para os administradores VMware que utilizam PowerShell: [Installez PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
+A VMware fornece PowerCLI para os administradores VMware que utilizam PowerShell: [Installez PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
 
-De seguida, pode utilizar o script abaixo, adaptado ao escrito pelo [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
+De seguida, pode utilizar o script abaixo, adaptado ao escrito pelo [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/).
 
 ```powershell
 function register-vmxX {

@@ -19,9 +19,9 @@ En este tutorial encontrará algunos ejemplos de situaciones relativas a la segu
 
 ## Requisitos
 
-- Tener un [alojamiento web de OVHcloud](/links/web/hosting){.external}.
-- Haber registrado al menos un [dominio](/links/web/domains){.external}.
-- Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}, parte "Web cloud".
+- Tener un [alojamiento web de OVHcloud](/links/web/hosting).
+- Haber registrado al menos un [dominio](/links/web/domains).
+- Tener acceso al [área de cliente de OVHcloud](/links/manager), parte "Web cloud".
 
 ## Procedimiento
 
@@ -41,7 +41,7 @@ En la mayoría de los casos, se trata de scripts externos de otros sitios web, c
 
 ¿Cómo sé si afecta a mi sitio web?
 
-Las herramientas de depuración proporcionadas por *Mozilla Firefox* y *Google Chrome* pueden indicarle si su sitio web contiene elementos bloqueados debido a contenido mixto. La documentación disponible en la [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} explica cómo utilizar estas herramientas para identificar el contenido mixto.
+Las herramientas de depuración proporcionadas por *Mozilla Firefox* y *Google Chrome* pueden indicarle si su sitio web contiene elementos bloqueados debido a contenido mixto. La documentación disponible en la [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) explica cómo utilizar estas herramientas para identificar el contenido mixto.
 
 ### Contenido duplicado (duplicate content)
 

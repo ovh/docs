@@ -6,7 +6,7 @@ updated: 2023-01-16
 
 ## Ziel
 
-In dieser Anleitung erfahren Sie, wie Sie das Web-Entwicklungstool [Cecil](https://cecil.app){.external} verwenden, um den Inhalt einer dynamischen Seite wiederzugeben. Dazu wird eine externe API eingebunden, die Informationen auf einer mit **Cecil** erstellten Seite anzeigt.
+In dieser Anleitung erfahren Sie, wie Sie das Web-Entwicklungstool [Cecil](https://cecil.app) verwenden, um den Inhalt einer dynamischen Seite wiederzugeben. Dazu wird eine externe API eingebunden, die Informationen auf einer mit **Cecil** erstellten Seite anzeigt.
 
 **In diesem Tutorial wird erläutert, wie Sie API-Aufrufe von Ihrer statischen Webseite aus hinzufügen.**
 
@@ -47,7 +47,7 @@ cd myWebSite
 
 ### Verwendung der API von OpenWeather
 
-Für dieses Tutorial verwenden wir eine API, die von [OpenWeather](https://openweathermap.org/){.external} bereitgestellt wird. Sie ermöglicht es, die meteorologischen Informationen je nach einer spezifizierten Stadt abzurufen.
+Für dieses Tutorial verwenden wir eine API, die von [OpenWeather](https://openweathermap.org/) bereitgestellt wird. Sie ermöglicht es, die meteorologischen Informationen je nach einer spezifizierten Stadt abzurufen.
 
 Erstellen Sie einen Account auf <https://home.openweathermap.org/users/sign_up>.<br>
 Sobald Ihr Account validiert wurde (per E-Mail), gehen Sie auf zum Menü "My API keys". Es wurde ein Schlüssel erstellt, den Sie hier kopieren und für die Fortsetzung dieses Tutorials speichern können.
@@ -185,7 +185,7 @@ Erstellen Sie die zuvor erwähnte Datei `script.js` im Wurzelverzeichnis `assets
 nano assets/script.js
 ```
 
-Ersetzen Sie den Wert der Variable `apiKey` mit Ihrem zuvor auf [OpenWeather](https://openweathermap.org/){.external} erhaltenen Schlüssel.
+Ersetzen Sie den Wert der Variable `apiKey` mit Ihrem zuvor auf [OpenWeather](https://openweathermap.org/) erhaltenen Schlüssel.
 
 ```javascript
 let apiKey = '123456789'; // Ersetzen Sie diesen Wert
@@ -241,12 +241,12 @@ Dynamische Daten, die über APIs externer Quellen bezogen wurden, können wie ob
 ## Weiterführende Informationen <a name="go-further"></a>
 
 - Weitere APIs für Ihre Website:
-    - [Numbers API](http://numbersapi.com/#42){.external}
-    - [NASA](https://api.nasa.gov/){.external}
-    - [News API](https://newsapi.org/){.external}
-    - [Polygon.io](https://polygon.io/){.external}
-    - [Liste öffentlicher APIs](https://github.com/public-api-lists/public-api-lists){.external}
-- [Cecil Befehlsreferenz](https://cecil.app/documentation/commands/){.external}
+    - [Numbers API](http://numbersapi.com/#42)
+    - [NASA](https://api.nasa.gov/)
+    - [News API](https://newsapi.org/)
+    - [Polygon.io](https://polygon.io/)
+    - [Liste öffentlicher APIs](https://github.com/public-api-lists/public-api-lists)
+- [Cecil Befehlsreferenz](https://cecil.app/documentation/commands/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

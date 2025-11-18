@@ -56,8 +56,8 @@ Vous pouvez également rechercher l'e-mail reçu lors de la création de votre m
 >
 > -	WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > -	Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> -	Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de Drupal. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, consultez les pages officielles [drupal.org](https://www.drupal.org/){.external} ou [drupal.fr](https://www.drupal.fr/){.external}.
-> -	PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de PrestaShop. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, cliquez [ici](https://www.prestashop.com){.external} pour vous rendre sur leur page officielle.
+> -	Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de Drupal. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, consultez les pages officielles [drupal.org](https://www.drupal.org/) ou [drupal.fr](https://www.drupal.fr/).
+> -	PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de PrestaShop. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, cliquez [ici](https://www.prestashop.com) pour vous rendre sur leur page officielle.
 >
 
 Il est également possible de changer le mot de passe d’accès à l’interface d’administration de votre CMS directement depuis votre base de données.<br>
@@ -130,10 +130,10 @@ Ajoutez des outils de test de type CAPTCHA sur les formulaires de votre site.
 
 N'installez pas sur votre site de plugins ou de templates qui n'ont pas été recommandés par les communautés officielles de votre CMS : 
 
-- [WordPress](https://wpfr.net/){.external}
-- [Joomla!](https://forum.joomla.fr/){.external}
-- [Drupal](https://www.drupal.fr/forum){.external}
-- [PrestaShop](https://www.prestashop.com/forums/){.external}
+- [WordPress](https://wpfr.net/)
+- [Joomla!](https://forum.joomla.fr/)
+- [Drupal](https://www.drupal.fr/forum)
+- [PrestaShop](https://www.prestashop.com/forums/)
 
 ## Aller plus loin <a name="go-further"></a>
 

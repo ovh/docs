@@ -78,7 +78,7 @@ Il trasferimento di un dominio Hostinger richiede una procedura specifica.
 
 Per i domini registrati in Hostinger, è possibile gestire lo stato di blocco del dominio aprendo la sezione `Domini`{.action} e selezionando il dominio da trasferire.
 
-Segui gli step descritti nella [documentazione dedicata di Hostinger](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger){.external}.
+Segui gli step descritti nella [documentazione dedicata di Hostinger](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger).
 
 ### Ottenere il codice EPP o Auth
 
@@ -92,7 +92,7 @@ Per familiarizzare con la modifica del proprietario di un dominio, consulta ques
 > Per conoscere le procedure appropriate per il trasferimento del dominio, contatta Hostinger.
 > 
 
-Per ottenere un codice **EPP** o **Auth** in Hostinger, segui gli step descritti nella [documentazione dedicata di Hostinger](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+Per ottenere un codice **EPP** o **Auth** in Hostinger, segui gli step descritti nella [documentazione dedicata di Hostinger](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger).
 
 ### Avvia il trasferimento di dominio in OVHcloud
 

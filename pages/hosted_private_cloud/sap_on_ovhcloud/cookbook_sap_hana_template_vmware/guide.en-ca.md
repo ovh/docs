@@ -1,7 +1,7 @@
 ---
 title: "Deploy a virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
 excerpt: "This guide provides instructions for deploying a SLES for SAP virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
-updated: 2024-09-06
+updated: 2025-09-16
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ This guide provides instructions for deploying a SLES for SAP virtual machine wi
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [SAP HANA on Private Cloud solution](https://www.ovhcloud.com/en-ca/hosted-private-cloud/sap-hana/) deployed
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account with:
     - [An Object Storage bucket](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) and [an Object Storage user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read right
@@ -64,9 +64,11 @@ Once the SAP HANA sources have been uploaded to your Object Storage bucket, you 
 
 The below URL is an example, you must replace the value `pcc-xxx-xxx-xxx-xxx.ovh.xxx` with the URL of your VMware on OVHcloud service.
 
-```console
-https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
-```
+| Version            | URL                                                                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| SLES4SAP-SLE15-SP5 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP6 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP6-Full-x86_64/sles4sap-sap-hana-SLE15-SP6-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP7 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP7-Full-x86_64/sles4sap-sap-hana-SLE15-SP7-Full-x86_64.ovf |
 
 ![deploy-from-template](images/step-2.png){.thumbnail}
 
@@ -180,21 +182,20 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 |-----------------------------------|--------------------------------|
 | Storage Type                      | VSAN                           |
 | Site disaster tolerance           | None - standard cluster        |
-| Failures to tolerate              | 1 failure - RAID-1 (Mirroring) |
-| Number of disk stripes per object | 6*                             |
+| Failures to tolerate              | 1 failure - RAID-1 (Mirroring)<sup>1</sup> |
+| Number of disk stripes per object | 2                              |
 | IOPS limit for object             | 0                              |
 | Object space reservation          | Thick provisioning             |
 | Flash read cache reservation      | 0%                             |
 | Disable object checksum           | No                             |
 | Force provisioning                | No                             |
 | Encryption services               | No preference                  |
-| Space efficiency                  | Deduplication and compression  |
+| Space efficiency                  | No preference                  |
 | Storage tier                      | All flash                      |
 
-<sup>* For a SAP HANA on Private Cloud solution.</sup>  
-<sup>The value for this rule will depend on the number of capacity disks (vSAN Capacity) on your hosts.</sup>
+<sup>1</sup> *If your cluster has more than 3 hosts, it is more advantageous to switch to RAID-5.*
 
-This VM Storage Policy must be applied to the disks that host the /hana/data (on Hard Disk 4) and /hana/log (on Hard Disk 5) volumes of your virtual machine.
+This VM storage strategy should be applied to the disks hosting your virtual machine’s /hana/shared (Hard disk 3), /hana/data (Hard disk 4) and /hana/log (Hard disk 5) volumes.
 
 6\. You can now start your virtual machine.
 

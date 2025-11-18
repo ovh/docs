@@ -19,9 +19,9 @@ Si tiene un dominio con OVHcloud y quiere conectarlo a un Google Site, Esta guí
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
-- Tener un [dominio](/links/web/domains){.external} registrado con OVHcloud.
-- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Tener un [dominio](/links/web/domains) registrado con OVHcloud.
+- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links/manager).
 - Disponer de un Google Site y ser su propietario.
 
 ## Procedimiento
@@ -42,7 +42,7 @@ Si utiliza un sitio web de Google con un dominio de OVHcloud, deberá configurar
 
 ### Etapa 2 - Configurar los registros DNS en su cuenta de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 Se mostrará una tabla con todos los registros DNS del dominio seleccionado.
 

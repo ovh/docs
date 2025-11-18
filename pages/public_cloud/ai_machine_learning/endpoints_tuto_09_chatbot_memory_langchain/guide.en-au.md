@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Enable conversational memory in your chatbot using LangChain
 excerpt: How to integrate conversational memory into your chatbot using AI Endpoints and LangChain’s memory modules
-updated: 2025-04-28
+updated: 2025-07-31
 ---
 
 > [!primary]
@@ -66,6 +66,7 @@ Then, create a `requirements.txt` file with the required libraries:
 python-dotenv==1.0.1
 langchain_openai==0.1.14
 openai==1.68.2
+langchain==0.2.17
 ```
 
 Then, launch the installation of these dependencies:

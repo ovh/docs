@@ -12,7 +12,7 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du CMS WordPress](https://wordpress.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du CMS WordPress](https://wordpress.com/support/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 **Découvrez comment créer un site web avec le CMS WordPress.**
@@ -22,7 +22,7 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](/links/web/domains)
 - Avoir [installé Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur votre hébergement web
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
+- Être connecté à l'[espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -176,15 +176,15 @@ Vos liens seront alors construits à partir du slug précédemment renseigné lo
 
 ## Aller plus loin <a name="go-further"></a>
 
-- Stockez vos accès dans un gestionnaire de mots de passe comme [KeePass](https://keepass.info/){.external}.
-- Testez en ligne l'éditeur par défaut [Gutenberg](https://fr.wordpress.org/gutenberg/){.external}.
+- Stockez vos accès dans un gestionnaire de mots de passe comme [KeePass](https://keepass.info/).
+- Testez en ligne l'éditeur par défaut [Gutenberg](https://fr.wordpress.org/gutenberg/).
 - Quelques ressources où trouver des thèmes WordPress :
-    - [WordPress Themes](https://wordpress.com/fr/themes){.external}
-    - [TemplaMonster](https://www.templatemonster.com/fr/type/themes-wordpress/){.external}.
-    - [Elegant Themes](https://www.elegantthemes.com/){.external}, éditeur du constructeur de thèmes Divi.
-    - [Elementor](https://elementor.com/){.external}, un autre éditeur de thèmes.
-- Le site officiel [WordPress](https://wordpress.org/){.external}.
-- [Utiliser le SFTP pour transférer des fichiers ou des pages vers votre WordPress](https://wordpress.com/fr/support/sftp/){.external}.
+    - [WordPress Themes](https://wordpress.com/fr/themes)
+    - [TemplaMonster](https://www.templatemonster.com/fr/type/themes-wordpress/).
+    - [Elegant Themes](https://www.elegantthemes.com/), éditeur du constructeur de thèmes Divi.
+    - [Elementor](https://elementor.com/), un autre éditeur de thèmes.
+- Le site officiel [WordPress](https://wordpress.org/).
+- [Utiliser le SFTP pour transférer des fichiers ou des pages vers votre WordPress](https://wordpress.com/fr/support/sftp/).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

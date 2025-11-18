@@ -32,7 +32,7 @@ Drugi serwer vDS dysponuje również jednym rodzajem *portGroup*, czyli siecią 
 
 W tym switchu 11 sieci VLAN są tworzone w oparciu o podstawowe projekty (VLAN10 w VLAN20). Dzięki uprawnieniu `administratora` do `dostępu do sieci VLAN` w [zarządzaniu użytkownikami w Panelu klienta](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#uzytkownicy){.external-link}, będziesz mógł utworzyć dodatkowe sieci VLAN.
 
-Po pierwsze, przejdź do widoku `tworzenia sieci` Twojego klienta vSphere. Uruchom folder **vrack**, kliknij prawym przyciskiem myszy **na serwer **dVS** kończący się *-vrack*, a następnie kliknij `New Distributed Port Group`{.action}.
+Po pierwsze, przejdź do widoku `tworzenia sieci` Twojego klienta vSphere. Uruchom folder **vrack**, kliknij prawym przyciskiem myszy na serwer **dVS** kończący się *-vrack*, a następnie kliknij `New Distributed Port Group`{.action}.
 
 ![vRack](images/07network.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Następnie skonfiguruj parametry zalecane przez OVHcloud:
 - **Port Binding**: Static (Rezerwacja i przypisanie portu do wirtualnej maszyny)
 - **Port przydział**: Elastic (Pozwala na zwiększenie liczby portów bez przerwy w działaniu)
 - **Numer portu**: 24
-- **VLAN typu**: VLAN (inne to [PVLAN](https://kb.vmware.com/s/article/1010691){.external} i Trunk)
+- **VLAN typu**: VLAN (inne to [PVLAN](https://kb.vmware.com/s/article/1010691) i Trunk)
 - **VLAN ID**: 21 (wiedząc, że ID może być skonfigurowany w zakresie od 1 do 4096)
 - Zaznacz opcję *Customize default policies configuration*.
 
@@ -66,7 +66,7 @@ Masz 3 ustawień bezpieczeństwa, które mogą być aktywowane w zależności od
 
 ![parametry bezpieczeństwa](images/11network4.png){.thumbnail}
 
-Pozostawiamy [wygładzanie ruchu](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} wyłączony.
+Pozostawiamy [wygładzanie ruchu](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html) wyłączony.
 
 ![wygładzanie ruchu](images/12network5.png){.thumbnail}
 

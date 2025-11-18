@@ -8,23 +8,23 @@ updated: 2018-09-12
 
 Your data is sensitive. Any loss or alteration of it could quickly result in serious issues for your business. Since there is no such thing as a risk-free approach, we strongly recommend creating backups at least daily, and preferably storing them on a server or storage solution that is separate to your production infrastructures.
 
-OVHcloud offers a range of [Dedicated Servers](https://www.ovhcloud.com/en-sg/bare-metal/storage/){.external} that are adapted to fit your storage operations, and equipped with at least four hard drives. You can use these resources to back up an infrastructure hosted with OVHcloud or with another service provider, via the public network.
+OVHcloud offers a range of [Dedicated Servers](https://www.ovhcloud.com/en-sg/bare-metal/storage/) that are adapted to fit your storage operations, and equipped with at least four hard drives. You can use these resources to back up an infrastructure hosted with OVHcloud or with another service provider, via the public network.
 
 In this guide, we will show you how to configure an OVHcloud Storage Server to suit your needs, generate a tree-view for receiving backups, then automate backups for two remote servers via SCP protocol.
 
 ## Requirements
 
-- an [OVHcloud Storage Server](https://www.ovhcloud.com/en-sg/bare-metal/storage/){.external}
-- a production infrastructure ([VPS](https://www.ovhcloud.com/en-sg/vps/){.external}, [Dedicated Servers](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/en-sg/public-cloud/){.external}, etc.)
+- an [OVHcloud Storage Server](https://www.ovhcloud.com/en-sg/bare-metal/storage/)
+- a production infrastructure ([VPS](/links/bare-metal/vps), [Dedicated Servers](/links/bare-metal/bare-metal), [Public Cloud](/links/public-cloud/public-cloud), etc.)
 - an SSH connection between the Storage Servers and production infrastructure
-- a private network between your servers ([OVHcloud vRack](/links/network/vrack){.external}) is recommended
+- a private network between your servers ([OVHcloud vRack](/links/network/vrack)) is recommended
 - To follow this guide you need knowledge of: Linux administration, logging in via SSH, connecting to/backing up databases, installing operating systems (here we’re using Debian 9.4).
 
 ## Instructions
 
 ### Step 1: Choose the right RAID mode.
 
-OVHcloud offers a range of [Storage Servers](https://www.ovhcloud.com/en-sg/bare-metal/storage/){.external} with hardware configurations that contain several hard disks. In our example, we are using a software RAID (or softRAID) with four disks, which each have 6 TB capacity.
+OVHcloud offers a range of [Storage Servers](https://www.ovhcloud.com/en-sg/bare-metal/storage/) with hardware configurations that contain several hard disks. In our example, we are using a software RAID (or softRAID) with four disks, which each have 6 TB capacity.
 
 With OVHcloud, you can choose between RAID 0, 1, 5, 6 and 10 as configurations for storing your data. Each of these configurations have pros and cons in terms of performance and resilience. So with four disks, we can store data efficiently with RAID 5, 6 or 10 configuration (RAID 0 and 1 are not relevant here).
 
@@ -52,7 +52,7 @@ There is no such thing as a ‘best’ RAID configuration, as they all suit diff
 
 ### Step 2: Set up and configure your server.
 
-Go to the [OVHcloud Control Panel](/links/manager){.external}, and set up your server. As a reminder, we’re using Debian 9.4 in this guide. For further information, please refer to our guide on [Getting started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server){.external}.
+Go to the [OVHcloud Control Panel](/links/manager), and set up your server. As a reminder, we’re using Debian 9.4 in this guide. For further information, please refer to our guide on [Getting started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
 
 Once you have selected the operating system you want to install, tick `Customise the partition configuration`{.action}.
 
@@ -171,7 +171,7 @@ Add the following line to automate sending for your SQL dump files, every day of
 0 2 * * * scp your_dump_file user@IP_Storage:/home/backups/server1/dump >/dev/null 2>&1
 ```
 
-The syntax for a *crontab* is specific. We will not detail it here, but there are several websites you can use to generate it easily, such as [Crontab Generator](https://crontab-generator.org/){.external}.
+The syntax for a *crontab* is specific. We will not detail it here, but there are several websites you can use to generate it easily, such as [Crontab Generator](https://crontab-generator.org/).
 
 ## Conclusion
 

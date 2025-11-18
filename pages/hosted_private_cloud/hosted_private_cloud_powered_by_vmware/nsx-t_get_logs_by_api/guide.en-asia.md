@@ -6,7 +6,7 @@ updated: 2023-10-20
 
 ## Objective
 
-NSX is a Software-Defined Networking (SDN) solution provided by VMware. OVHcloud is offering this service in place of NSX-V in its [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/) solution.
+NSX is a Software-Defined Networking (SDN) solution provided by VMware. OVHcloud is offering this service in place of NSX-V in its [VMware on OVHcloud](/links/hosted-private-cloud/vmware) solution.
 
 At the moment (18th September 2023), due to the implementation by OVHcloud, it is not possible to export the logs of an NSX-T via a syslog server. To remedy this, you can retrieve a few logs via API calls.
 

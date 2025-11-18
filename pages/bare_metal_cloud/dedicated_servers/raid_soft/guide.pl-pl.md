@@ -18,7 +18,7 @@ Domyślny poziom RAID dla serwerów OVHcloud to RAID 1. Dzięki temu przestrzeń
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} ze skonfigurowaną programową macierzą RAID
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) ze skonfigurowaną programową macierzą RAID
 - Dostęp do serwera przez SSH przy użyciu uprawnień administratora (sudo)
 
 ## W praktyce
@@ -379,10 +379,10 @@ mount /dev/md4 /home
 
 ## Sprawdź również
 
-[Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft){.external}
+[Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
 [OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
-[Sprzętowa macierz RAID (EN)](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
+[Sprzętowa macierz RAID (EN)](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

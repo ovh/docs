@@ -18,13 +18,13 @@ Windows VMs, die von einem Template aus eingerichtet werden, verwenden automatis
 
 > [!primary]
 > 
-> Auf dieser Seite [finden](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/images-licenses/) Sie die Preise der von OVHcloud angebotenen Images.
+> Auf dieser Seite [finden](/links/hosted-private-cloud/vmware-images-licenses) Sie die Preise der von OVHcloud angebotenen Images.
 >
 
 ## Voraussetzungen
 
 - Sie haben Zugriff auf den Web Client (HTML5).
-- [Sie haben die Windows Lizenzen](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-lizenz) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)  aktiviert.
+- [Sie haben die Windows Lizenzen](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-lizenz) über Ihr [OVHcloud Kundencenter](/links/manager)  aktiviert.
 
 ## In der praktischen Anwendung
 

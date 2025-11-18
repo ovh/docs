@@ -1,3 +1,4 @@
 id: e6439700-9f54-4e2a-9344-85522eb3bc05
 full_slug: billing-public-administration
-translation_banner: true
+disable_languages:
+- fr-ca

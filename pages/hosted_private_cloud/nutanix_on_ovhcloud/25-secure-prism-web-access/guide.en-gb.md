@@ -6,26 +6,26 @@ updated: 2022-01-11
 
 ## Objective
 
-After delivery, Prism Central is accessible on the public Internet. Access restriction to one or more IP addresses can be achieved through the [OVHcloud Load Balancer](https://www.ovh.co.uk/solutions/load-balancer/){.external}.
+After delivery, Prism Central is accessible on the public Internet. Access restriction to one or more IP addresses can be achieved through the [OVHcloud Load Balancer](/links/network/load-balancer).
 
 **This guide explains how to secure access to Prism Central.**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](https://www.ovhcloud.com/en-gb/professional-services/) or a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](/links/professional-services) or a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Step 1: Find the relevant Load Balancer
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the Nutanix cluster vRack configuration page.
+Log in to the [OVHcloud Control Panel](/links/manager) and open the Nutanix cluster vRack configuration page.
 
 Identify the name of your Load Balancer.
 
@@ -55,6 +55,6 @@ In the advanced settings, you can now add your public ISP IP address or any IP a
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

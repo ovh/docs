@@ -15,7 +15,7 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting) zawierającej co najmniej jedną bazę danych.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Użycie najnowszej wersji PHP i kompatybilnego środowiska wykonawczego na Twoim hostingu OVHcloud. Sprawdź stan poszczególnych wersji dostępnych na tej [stronie](https://webhosting-infos.hosting.ovh.net/). W razie potrzeby sprawdź [przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting), aby szybko zmienić tę konfigurację.
 - Skonfigurowany plik "[.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" musi znajdować się w katalogu głównym FTP Twojego hostingu.
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
@@ -202,14 +202,14 @@ Jeśli chcesz uzyskać pomoc w zakresie funkcji Twojego CMS-a, skontaktuj się z
 
 |CMS|Oficjalna dokumentacja|
 |---|---|
-|WordPress|[Pierwsze kroki z CMS WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
-|PrestaShop|[Jak zacząć z PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started){.external}|
-|Joomla!|[Jak zaczać z Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
-|Drupal|[Zrozumieć Drupala](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
+|WordPress|[Pierwsze kroki z CMS WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/)|
+|PrestaShop|[Jak zacząć z PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started)|
+|Joomla!|[Jak zaczać z Joomla!](https://www.joomla.org/about-joomla/getting-started.html)|
+|Drupal|[Zrozumieć Drupala](https://www.drupal.org/docs/7/understanding-drupal/overview)|
 
 ## Sprawdź również
 
-[Porównanie rozwiązań CMS](/links/web/hosting-cms-comparison){.external}.
+[Porównanie rozwiązań CMS](/links/web/hosting-cms-comparison).
 
 [Jak rozdzielić hosting WWW na wiele stron](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
@@ -221,7 +221,7 @@ Jeśli chcesz uzyskać pomoc w zakresie funkcji Twojego CMS-a, skontaktuj się z
 
 Jeśli chcesz zachować pełną kontrolę nad instalacją Twojego CMS-a, możesz [zainstalować ręcznie CMS na Twoim hostingu OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
-Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}.
+Poznaj ofertę [Cloud Databases](/links/web/databases).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

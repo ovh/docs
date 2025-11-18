@@ -6,7 +6,7 @@ updated: 2025-03-20
 
 ## Objetivo
 
-El módulo **cloud-init** permite configurar una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} al crearla, pero también cada vez que se reinicie. Por eso, si quiere volver a configurar el hostname, bien porque se produjo un error al crear la instancia, o bien para reconfigurar el servidor de correo, deberá desactivar primero el módulo cloud-init, que es el encargado de configurar el hostname para que no se restablezca.
+El módulo **cloud-init** permite configurar una [instancia de Public Cloud](/links/public-cloud/public-cloud) al crearla, pero también cada vez que se reinicie. Por eso, si quiere volver a configurar el hostname, bien porque se produjo un error al crear la instancia, o bien para reconfigurar el servidor de correo, deberá desactivar primero el módulo cloud-init, que es el encargado de configurar el hostname para que no se restablezca.
 
 **Esta guía explica cómo reconfigurar cloud-init para poder cambiar el hostname de una instancia.**
 
@@ -14,7 +14,7 @@ El módulo **cloud-init** permite configurar una [instancia de Public Cloud](htt
 >
 > OVHcloud pone a su disposición servicios cuya responsabilidad recae en usted. No tenemos acceso a estas máquinas, por lo que no somos los administradores de las mismas y no podremos asistirle. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#mas-informacion) de esta guía.
 >
 > Esta guía está destinada a las instancias basadas en distribuciones Linux **únicam**
 >

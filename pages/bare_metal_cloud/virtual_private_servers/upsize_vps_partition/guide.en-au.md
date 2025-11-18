@@ -1,7 +1,7 @@
 ---
 title: Repartitioning a VPS after a storage upgrade
 excerpt: Find out how to increase the usable disk space following an upgrade
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 ## Objective
@@ -51,7 +51,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-If your result looks similar to the output above and the column `MOUNTPOINT` is empty in the corresponding line, you can proceed with the [next step](#checkfs).
+If your result looks similar to the output above and the column `MOUNTPOINT` is empty in the corresponding line, you can proceed with the [next step](#filesystemcheck).
 
 However, if your result shows that there is a mount point for the VPS partition, it needs to be unmounted first.
 
@@ -76,7 +76,7 @@ In this example configuration, the command would be:
 umount /dev/sdb1
 ```
 
-#### Check the filesystem <a name="checkfs"></a>
+#### Check the filesystem <a name="filesystemcheck"></a>
 
 Before you proceed, it is recommended to check the filesystem to see if there are errors in the partition. The command is as follows:
 
@@ -145,7 +145,7 @@ Selected partition 1
 
 The single partition will automatically be deleted.
 
-### Create a new partition
+#### Create a new partition
 
 You now need to create a new partition with the command `n`{.action}. It is recommended that you use the default values.
 
@@ -162,7 +162,19 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 
 On the `First sector` line, check that the default value is the same as the one you have previously written down. If it is different, use the value you have written down.
 
-### Make the partition bootable
+If you see the following message:
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Enter `n` and proceed.
+
+Answering `y` would mean overwriting the existing ext4 file system on Partition 1 and agreeing to destroy the data on it.
+
+#### Make the partition bootable
 
 You now need to ensure that the partition is bootable. You can do this using the command `a`{.action}.
 
@@ -274,4 +286,4 @@ Enter your desired size and click `OK`{.action}. Your volume will now be extende
 
 ## Go further
 
-Join our community of users at <https://community.ovh.com/en/> .
+Join our [community of users](/links/community).

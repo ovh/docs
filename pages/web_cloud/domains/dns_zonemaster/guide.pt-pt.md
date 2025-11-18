@@ -69,11 +69,11 @@ Se tiver questões adicionais sobre Zonemaster, consulte a secção [FAQ](https:
 
 ## Saiba mais <a name="go-further"></a>
 
-[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information){.external}
+[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
-[Modificação de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
+[Modificação de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-[Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](/links/web/domains-dnssec){.external}
+[Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](/links/web/domains-dnssec)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 

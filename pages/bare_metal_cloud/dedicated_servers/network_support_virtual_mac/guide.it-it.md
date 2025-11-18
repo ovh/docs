@@ -18,8 +18,8 @@ Il supporto di questa funzionalità è un prerequisito per tutte le azioni relat
 
 ## Prerequisiti
 
-- Possedere un [server dedicato](/links/bare-metal/bare-metal){.external}
-- Essere connesso all'[API OVHcloud](https://api.ovh.com/){.external}
+- Possedere un [server dedicato](/links/bare-metal/bare-metal)
+- Essere connesso all'[API OVHcloud](/links/api)
 
 > [!primary]
 > Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida Iniziare a utilizzare le [API OVHcloud](/pages/manage_and_operate/api/first-steps).

@@ -6,23 +6,23 @@ updated: 2023-09-12
 
 ## Objective
 
-The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external} enables you to create only one vLAN. This means that you can only use each IP address once. However, with the vRack version 2.0 configuration, you can create up to 4,000 vLANs within a single vRack. This means that you can use each IP address up to 4,000 times.
+The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server) enables you to create only one vLAN. This means that you can only use each IP address once. However, with the vRack version 2.0 configuration, you can create up to 4,000 vLANs within a single vRack. This means that you can use each IP address up to 4,000 times.
 
 **This guide will show you how to create multiple vLANs within the vRack.**
 
 ## Requirements
 
-* An active [vRack](/links/network/vrack){.external} service in your account
-* Two or more [vRack-compatible servers](/links/bare-metal/bare-metal){.external}
+* An active [vRack](/links/network/vrack) service in your account
+* Two or more [vRack-compatible servers](/links/bare-metal/bare-metal)
 * Administrative (sudo) access to the server via SSH
-* access to the [OVHcloud Control Panel](/links/manager){.external}
+* access to the [OVHcloud Control Panel](/links/manager)
 * Your chosen private IP address range
-* You must have completed the [vRack configuration guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
+* You must have completed the [vRack configuration guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 
@@ -196,6 +196,6 @@ Finally, click the `OK`{.action} button to save the changes, then reboot your se
 
 ## Go further
 
-[Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
+[Configuring the vRack on your Dedicated Servers](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Join our [community of users](/links/community).

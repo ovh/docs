@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Comment mettre à jour votre plan de service (EN)
 excerpt: Find out how to upgrade the service plan of your cluster
-updated: 2025-01-06
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ To upgrade or downgrade the service plan of your cluster, use the following API 
 
 ```console
 body : {
-    plan: <essential|business|enterprise>
+    plan: <essential|business|production|enterprise|advanced>
 }
 ```
 
@@ -56,4 +56,4 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

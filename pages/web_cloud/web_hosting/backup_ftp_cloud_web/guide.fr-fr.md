@@ -21,8 +21,8 @@ Votre hébergement Cloud Web dispose d'un espace de stockage dans lequel vous po
 
 ## Prérequis
 
-- Disposer d'un [hébergement Cloud Web](/links/web/hosting-cloud-web-offer){.external}
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'un [hébergement Cloud Web](/links/web/hosting-cloud-web-offer)
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir accès à l'adresse e-mail de contact associée à votre identifiant client.
 
 ## En pratique
@@ -38,13 +38,13 @@ Seules les sauvegardes mentionnées ci-dessus pourront être proposées par OVHc
 
 ### Récupérer une sauvegarde
 
-Contrairement aux hébergements mutualisés OVHcloud, il est impossible d'effectuer une restauration de l'espace FTP en un clic depuis [l'espace client OVHcloud](/links/manager){.external}.
+Contrairement aux hébergements mutualisés OVHcloud, il est impossible d'effectuer une restauration de l'espace FTP en un clic depuis [l'espace client OVHcloud](/links/manager).
 
 Un lien de téléchargement de la sauvegarde est généré puis envoyé par e-mail à l'adresse e-mail associée à l'identifiant client administrateur de l'hébergement Cloud Web.
 
 #### Etape 1 - Générer le lien de récupération envoyé par e-mail
 
-Pour générer le lien de récupération, connectez-vous sur votre [espace client OVHcloud](/links/manager){.external}, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis sur le Cloud Web concerné. 
+Pour générer le lien de récupération, connectez-vous sur votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis sur le Cloud Web concerné. 
 
 Sélectionnez l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Générer une sauvegarde`{.action} à droite.
 
@@ -60,7 +60,7 @@ Une seconde fenêtre apparaît, vous précisant que le lien de récupération du
 
 Cliquez sur `Confirmer`{.action} pour valider votre demande.
 
-Si la génération de la sauvegarde est bien lancée, le message suivant apparaît dans votre [espace client OVHcloud](/links/manager){.external} :
+Si la génération de la sauvegarde est bien lancée, le message suivant apparaît dans votre [espace client OVHcloud](/links/manager) :
 
 ![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espa
 
 > [!primary]
 >
-> Utilisez bien les ports indiqués dans votre [espace client OVHcloud](/links/manager){.external} pour les connexions en SFTP et SSH car le port 22 ne sera pas fonctionnel pour votre hébergement Cloud Web.
+> Utilisez bien les ports indiqués dans votre [espace client OVHcloud](/links/manager) pour les connexions en SFTP et SSH car le port 22 ne sera pas fonctionnel pour votre hébergement Cloud Web.
 >
 
 ## Aller plus loin 

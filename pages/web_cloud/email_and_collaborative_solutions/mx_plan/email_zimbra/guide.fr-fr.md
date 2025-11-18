@@ -1,12 +1,12 @@
 ---
 title: "Utiliser le webmail Zimbra"
 excerpt: "Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud"
-updated: 2025-02-12
+updated: 2025-10-22
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 </style>
 
@@ -31,9 +31,10 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
 - [Gestion des dossiers de votre compte e-mail](#folders-management)
     - [Les dossiers spéciaux](#folders-specials)
     - [Créer des dossiers](#folders-creation)
- - [Traitement des e-mails](#email-management)
+- [Traitement des e-mails](#email-management)
     - [Action sur un e-mail sélectionné](#email-action)
     - [Rechercher un e-mail](#email-search)
+    - [Récupérer des e-mails supprimés](#restore)
 - [Rédiger un e-mail](#email-writing)
 - [Configurer les préférences de l'interface Zimbra](#settings)
 - [Contacts](#contacts)
@@ -43,9 +44,11 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
 - [Calendrier](#calendar)
     - [Gestion des calendriers](#calendar-management)
     - [Tâches](#tasks)
+- [Stockage](#storage)
 - [Filtres](#filters)
     - [Comprendre comment paramètrer ses filtres](#filters-howto)
     - [Créer un filtre](#filters-creation)
+    - [Créer une redirection](#filters-redirection)
 - [Délégations](#delegations)
 - [Signatures](#signatures)
 - [Réponses automatiques / Répondeur](#auto-reply)
@@ -54,11 +57,11 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
 
 Rendez-vous sur la page [Webmail](/links/web/email). Saisissez votre adresse e-mail et le mot de passe puis cliquez sur `Connexion`{.action}.
 
-![Zimbra - connexion](images/ovhcloud-login-webmail.png){.thumbnail}
+![Zimbra - connexion](images/ovhcloud-login-webmail.png){.thumbnail .w-600}
 
 Vous serez alors redirigé vers l'interface Zimbra.
 
-![Zimbra - interface](images/zimbra-01.png){.thumbnail}
+![Zimbra - interface](images/zimbra-01.png){.thumbnail .w-600}
 
 ### Interface générale du webmail Zimbra <a name="general-interface"></a>
 
@@ -71,13 +74,13 @@ Une fois connecté à votre compte e-mail, vous avez accès à la fenêtre princ
 >> - **(2)** Une barre de recherche vous permet de retrouver des messages ou des contacts.
 >> - **(3)** Le menu de gestion du profil de votre compte e-mail et le bouton d'accès aux réglages **(4)**.
 >>
->> ![Zimbra - menu supérieur](images/zimbra-02.png){.thumbnail}
+>> ![Zimbra - menu supérieur](images/zimbra-02.png){.thumbnail .w-600}
 >>
 > **Colonne de gauche**
 >>
 >> Par défaut, c'est l'arborescence de votre compte de messagerie, composée de dossiers et sous-dossiers. Le dossier principal étant `Réception`.
 >>
->> ![Zimbra - arborescence](images/zimbra-03.png){.thumbnail}
+>> ![Zimbra - arborescence](images/zimbra-03.png){.thumbnail .w-600}
 >>
 > **Fenêtre centrale**
 >>
@@ -86,14 +89,14 @@ Une fois connecté à votre compte e-mail, vous avez accès à la fenêtre princ
 >> - **(1)** la liste des éléments
 >> - **(2)** le contenu de l'élément sélectionné
 >>
->> ![Zimbra - E-mails](images/zimbra-04.png){.thumbnail}
+>> ![Zimbra - E-mails](images/zimbra-04.png){.thumbnail .w-600}
 >>
 
 ### Gestion des dossiers de votre compte e-mail (colonne de gauche) <a name="folders-management"></a>
 
 Dans cette zone apparaissent les dossiers présents sur votre compte e-mail. Vous y trouverez les dossiers **spéciaux** déjà présents (en orange) et les dossiers que vous aurez **créés** (en vert).
 
-![Zimbra - dossiers](images/zimbra-05.png){.thumbnail}
+![Zimbra - dossiers](images/zimbra-05.png){.thumbnail .w-600}
 
 #### Les dossiers spéciaux <a name="folders-specials"></a>
 
@@ -126,15 +129,21 @@ Vous pouvez également créer un sous-dossier en effectuant un clic droit sur le
 
 Lorsque vous sélectionnez un dossier ou sous-dossier dans la colonne de gauche, la liste des e-mails contenus dans celui-ci s'affiche dans la colonne au centre. Cliquez ensuite sur l'e-mail de votre choix pour afficher son contenu dans la fenêtre de droite.
 
+![Zimbra - dossiers](images/zimbra-06.png){.thumbnail .w-600}
+
 > [!primary]
 >
 > **Type d'affichage**
 >
 > L'affichage de vos e-mails se présente sous une forme qui peut être modifiée. Pour cela, cliquez le bouton `Afficher`{.action} situé en haut à droite de cette fenêtre.
 
+Il est possible de trier et d'afficher les e-mails en fonction de certains critères en cliquant sur le filtre en place (par défaut, `Date`{.action}) en haut de la liste des e-mails.
+
+![Zimbra - dossiers](images/zimbra-06-date.png){.thumbnail .w-600}
+
 #### Action sur un e-mail sélectionné <a name="email-action"></a>
 
-Lorsque vous sélectionnez un e-mail est sélectionné, de nombreuses actions sont alors disponibles :
+Lorsque vous sélectionnez un e-mail, de nombreuses actions sont alors disponibles :
 
 - 1.**Répondre** : répondre directement à l'expéditeur.
 - 2.**Répondre à tous** : répondre directement à tous les destinataires présents dans les champs « A » et « Cc ».
@@ -153,7 +162,7 @@ Lorsque vous sélectionnez un e-mail est sélectionné, de nombreuses actions so
     - **Imprimer** : imprimer la conversation ou l'e-mail sélectionné.
 - 9.**Afficher** : sélectionner l'une des 3 dispositions pour visualiser vos dossiers et e-mails.
 
-![Zimbra - actions](images/zimbra-07.png){.thumbnail}
+![Zimbra - actions](images/zimbra-07.png){.thumbnail .w-600}
 
 Il est possible d'accéder à ces options en réalisant un clic droit sur chacun des e-mails de la colonne centrale.
 
@@ -173,20 +182,34 @@ Si vous souhaitez retrouver un e-mail, utilisez la barre de recherche dans la pa
 >>
 >> > Si vous savez où rechercher votre élément, vous pouvez saisir des mots-clés ( **from**, **to**, **cc**, **subject**, etc.) suivis de deux points (`:`) et rechercher l'élément dans la zone de texte de recherche. Par exemple, si vous souhaitez rechercher rapidement un expéditeur, vous pouvez tapez « from: » avant l'adresse e-mail que vous recherchez. Par exemple « from: address@example.com ».
 >>
->> ![Zimbra - recherche simple](images/zimbra-08.png){.thumbnail}
+>> ![Zimbra - recherche simple](images/zimbra-08.png){.thumbnail .w-600}
 >>
 > **Recherche avancée**
 >>
 >> Pour une recherche plus précise, cliquez sur le chevron dans la partie droite de votre barre de recherche. Vous pourrez ainsi restreindre votre recherche à un dossier, une plage horaire, l'objet ou le corps du message, etc.
 >>
->> ![Zimbra - recherche avancée](images/zimbra-09.png){.thumbnail}
+>> ![Zimbra - recherche avancée](images/zimbra-09.png){.thumbnail .w-600}
 >>
+
+#### Récupérer des e-mails supprimés <a name="restore"></a>
+
+Lorsque vous supprimez des e-mails, ceux-ci sont placés par défaut dans la corbeille.<br>
+Si vous supprimez des e-mails de votre corbeille ou que vous la videz, ces derniers sont placés en rétention. Il est encore possible de les récupérer pendant 30 jours.
+
+Nous allons voir comment récupérer un e-mail en rétention en passant en revue les étapes de sa suppression et de sa restauration :
+
+1. **Suppression d'un e-mail** : Lorsque vous affichez un e-mail dans la boite de réception ou l'un des dossiers et que vous cliquez sur `supprimer`{.action}, celui-ci ira par défaut dans la corbeille.
+2. **Vider la Corbeille** : Lorsque vous `Videz la corbeille`{.action} ou supprimez un e-mail depuis celle-ci, l'e-mail n'apparaît plus dans la corbeille et rentre dans sa période de rétention de 30 jours.
+3. **Accéder à la restauration** : Pour récupérer un e-mail supprimé de la corbeille depuis moins de 30 jours, faites un clic droit sur `Corbeille`{.action}, puis cliquez sur `Récupérer le courrier jeté`{.action}.
+4. **Choisir les e-mails à restaurer** : Depuis cette fenêtre vous pouvez observer les e-mails qui ont été vidés de la corbeille. Sélectionnez le ou les e-mails que vous souhaitez restaurer. Cliquez sur `Suivant`{.action}, choisissez le dossier dans lequel vous souhaitez restaurer les e-mails, puis cliquez sur `Enregistrer`{.action}.
+
+![Zimbra - recherche simple](images/zimbra-restore.png){.thumbnail .w-600}
 
 ### Rediger un e-mail <a name="email-writing"></a>
 
 Pour rédiger un nouvel e-mail, cliquez sur le bouton `Nouveau Message`{.action} (1) dans la partie supérieure gauche de votre fenêtre Zimbra.
 
-![Zimbra - rédiger un e-mail](images/zimbra-10.png){.thumbnail}
+![Zimbra - rédiger un e-mail](images/zimbra-10.png){.thumbnail .w-600}
 
 > [!tabs]
 > **En-tête**
@@ -203,18 +226,18 @@ Pour rédiger un nouvel e-mail, cliquez sur le bouton `Nouveau Message`{.action}
 >>    - Cliquez sur `Demander un accusé de lecture` pour demander une confirmation de lecture du destinataire.<br>
 >>    - La fonction `Texte brut` désactivera les fonctions de mise en page HTML de votre e-mail. <br>
 >>
->> ![Zimbra - en-tête](images/zimbra-11.png){.thumbnail}
+>> ![Zimbra - en-tête](images/zimbra-11.png){.thumbnail .w-600}
 >>
 > **Corps de l'e-mail**
 >>
 >> Pour rédiger le corps de votre e-mail, vous disposez d'une barre d'outils HTML dans la partie inférieure de votre fenêtre. Cela vous permettra une rédaction de vos e-mails avec mise en page, directement via votre navigateur. De plus, le bouton `< >`{.action} (tout à droite dans votre barre d'outils) vous ouvre une fenêtre dans laquelle vous pouvez coller un e-mail pré-rédigé depuis un outil externe.
 >>
->> ![Zimbra - corps](images/zimbra-12.png){.thumbnail}
+>> ![Zimbra - corps](images/zimbra-12.png){.thumbnail .w-600}
 >>
 
 Après avoir rédigé votre e-mail, avant de cliquer sur `Envoyer`{.action}, vous pouvez y attacher une pièce jointe en cliquant sur l'icône de trombone situé à côté du bouton `Envoyer`{.action}.
 
-![Zimbra - pièce jointe](images/zimbra-13.png){.thumbnail}
+![Zimbra - pièce jointe](images/zimbra-13.png){.thumbnail .w-600}
 
 > [!success]
 > **Annuler un envoi**
@@ -222,13 +245,13 @@ Après avoir rédigé votre e-mail, avant de cliquer sur `Envoyer`{.action}, vou
 > Si vous avez activé l'option `Annuler l'envoi` dans la rubrique « **Écrire un mail** » des préférences Zimbra, vous pouvez cliquer sur `DEFAIRE`{.action} pour annuler l'envoi.
 > Ce bouton reste disponible pendant environ 5 secondes.
 >
-> ![Zimbra - annuler un envoi](images/zimbra-cancel-email.png){.thumbnail .w-400}
+> ![Zimbra - annuler un envoi](images/zimbra-cancel-email.png){.thumbnail .w-600}
 
 ### Configurer les préférences de l'interface Zimbra <a name="settings"></a>
 
 Votre interface Zimbra dispose de 2 menus de configuration :
 
-![Zimbra - préférences](images/zimbra-14.png){.thumbnail}
+![Zimbra - préférences](images/zimbra-14.png){.thumbnail .w-600}
 
 - **(1) Profil** : cliquez sur le nom de votre compte e-mail dans la partie supérieure droite de votre interface. Depuis ce menu, vous pourrez « **Changer le mot de passe** » de votre adresse e-mail, « **Changer l'image du profil** » ou vous déconnecter en cliquant sur« **Déconnexion** ».
 
@@ -237,7 +260,10 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 > [!tabs]
 > **Général**
 >>
->> Depuis cet onglet vous retrouvez l'espace occupé sur votre compte e-mail et la possibilité de définir le format d'affichage de la date et l'heure de vos e-mails.
+>> Depuis cet onglet vous retrouvez :
+>>
+>> - une barre de progression indiquant l'espace occupé sur votre compte e-mail.
+>> - la possibilité de définir le format d'affichage de la date et de l'heure de vos e-mails.
 >>
 > **Afficher le mail**
 >>
@@ -312,7 +338,7 @@ Cliquez sur `Contacts`, dans la barre supérieure, pour accéder au carnet de co
 - **(2) Liste des contacts** (au centre) : visualisez les contacts du carnet d'adresses ou du dossier sélectionné.
 - **(3) Propriétés du contact** ou **Nouveau contact** (à droite) : cette fenêtre s'affiche lorsqu'un contact est sélectionné ou lorsqu'il est en cours de création. Vous pouvez y lire ou modifier les informations d'un contact.
 
-![Zimbra - contacts](images/zimbra-15.png){.thumbnail}
+![Zimbra - contacts](images/zimbra-15.png){.thumbnail .w-600}
 
 Pour créer un contact, cliquez sur le bouton `Nouveau contact`{.action} en haut de la colonne de gauche.
 
@@ -320,7 +346,7 @@ Complétez les champs selon les informations que vous possédez sur votre contac
 
 Cliquez ensuite sur `Enregistrer`{.action}.
 
-![Zimbra - nouveau contact](images/zimbra-16.png){.thumbnail}
+![Zimbra - nouveau contact](images/zimbra-16.png){.thumbnail .w-600}
 
 #### Gestion des dossiers de contacts <a name="contacts-folders"></a>
 
@@ -338,7 +364,7 @@ Vous pouvez également créer un sous-dossier en effectuant un clic droit sur le
 
 Pour déplacer un contact dans un des dossiers, sélectionnez le contact dans la colonne du milieu puis, dans la fenêtre du contact qui apparaît à droite, cliquez sur le bouton `Déplacer`{.action}. Sélectionnez alors le dossier que vous souhaitez attribuer au contact.
 
-![Zimbra - dossiers de contacts](images/zimbra-17.png){.thumbnail}
+![Zimbra - dossiers de contacts](images/zimbra-17.png){.thumbnail .w-600}
 
 > [!primary]
 >
@@ -352,7 +378,7 @@ Pour créer une liste, cliquez dans l'encadré intitulé `Nouvelle liste` en bas
 
 Pour affecter un contact à l'une de vos listes, sélectionnez le contact dans la colonne du milieu puis, dans la fenêtre qui apparaît à droite, cliquez sur `Affecter à des listes`{.action}. Cochez la ou les listes que vous souhaitez attribuer au contact. Vous pouvez également saisir le nom d'une nouvelle liste et cliquer sur `Ajouter`{.action}.
 
-![Zimbra - listes](images/zimbra-list.png){.thumbnail}
+![Zimbra - listes](images/zimbra-list.png){.thumbnail .w-600}
 
 #### Importer / Exporter des Contacts <a name="import-export"></a>
 
@@ -364,14 +390,14 @@ Sélectionnez l'un des deux onglets suivants :
 >> Depuis la fenêtre `Contacts`, faites un clic droit sur le dossier de contacts de votre choix, à l'exception des dossiers « Contacts par e-mail » et « Corbeille » qui ne permettent pas l'import et l'export de contacts.<br>
 >>
 >> Cliquez ensuite sur `Importer`{.action} pour ouvrir la fenêtre d'importation. Le bouton `Browse...` vous permet d'aller récupérer le fichier contenant vos contacts au format « .csv » ou « .vcf ». <br><br>
->> ![Zimbra - Importer](images/zimbra-19.png){.thumbnail}
+>> ![Zimbra - Importer](images/zimbra-19.png){.thumbnail .w-600}
 >>
 > **Exporter les Contacts**
 >>
 >> Depuis la fenêtre `Contacts`, faites un clic droit sur le dossier de contacts de votre choix, à l'exception des dossiers « Contacts par e-mail » et « Corbeille » qui ne permettent pas l'import et l'export de contacts.
 >>
 >> Cliquez ensuite sur `Exporter`{.action} pour ouvrir la fenêtre d'exportation. Choisissez le type de fichier que vous souhaitez exporter puis cliquez sur `Exporter maintenant`{.action}.<br><br>
->> ![Zimbra - Exporter](images/zimbra-20.png){.thumbnail}
+>> ![Zimbra - Exporter](images/zimbra-20.png){.thumbnail .w-600}
 >>
 
 ### Calendrier <a name="calendar"></a>
@@ -382,7 +408,7 @@ Cliquez sur l'icône `Agenda`, dans la barre supérieure, pour accéder au carne
 - **(2) Contenu des calendriers** (au centre) : visualisez le contenu des calendriers et sous-calendriers sélectionnés.
 - **(3) Liste des tâches** (à droite) : gérez vos tâches et listes de tâches.
 
-![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
+![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail .w-600}
 
 #### Gestion des calendriers <a name="calendar-management"></a>
 
@@ -396,14 +422,14 @@ Il est également possible de créer des sous-calendriers.
 
 - **(2)** : Pour créer un sous-calendrier, passez votre curseur sur le calendrier pour lequel vous souhaitez en créer un, puis faites un clic droit pour afficher le menu déroulant. Cliquez sur `Ajouter un sous-calendrier`. Saisissez un nom et définissez une couleur, puis cliquez sur `Enregistrer`{.action}
 
-![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-600}
 
 ##### 2- Ajouter un évènement <a name="calendar-add-event"></a>
 
 - **(1)** : Cliquez sur `Nouvel évènement`{.action} dans le coin supérieur gauche.
 - **(2)** : Cliquez sur la plage horaire de votre calendrier dans laquelle vous souhaitez ajouter un événement. Pour un ajout simplifié, il vous suffit de définir un titre pour l'évènement et un lieu puis de cliquer sur `Enregistrer`{.action}. Pour ajouter plus de détails sur votre évènement, cliquez sur `Ajouter d'autres détails`{.action}
 
-![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-600}
 
 - **Début** : la date et l'heure de début de votre évènement. Si vous cochez `Toute la journée`, vous n'aurez pas d'heure de début et de fin à saisir car l'ensemble de la journée sera pris en compte.
 - **Fin** : la date et l'heure de fin de votre évènement.
@@ -418,7 +444,7 @@ Il est également possible de créer des sous-calendriers.
 
 Une fois votre évènement défini, cliquez sur `Enregistrer`{.action}.
 
-![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-600}
 
 ##### 3- Modifier un évènement <a name="calendar-modify-event"></a>
 
@@ -428,19 +454,85 @@ Les tâches sont des éléments dissociés de vos calendriers. Elles ont pour ob
 
 La liste « Tâches » existe par défaut, elle ne peut pas être supprimée mais vous pouvez créer vos propres listes de tâches.
 
-- **(1)** : Pour créer une tâche, cliquez sur le bouton `...`{.action} puis sur `Nouvelle tâche`{.action}  ou simplement sur le bouton `+`{.action} à côté de votre liste de tâches.
+- **(1)** : Pour créer une tâche, cliquez sur le bouton `...`{.action} puis sur `Nouvelle tâche`{.action} ou simplement sur le bouton `+`{.action} à côté de votre liste de tâches.
 
 - **(2)** : Pour créer une nouvelle liste de tâches, cliquez sur le bouton `...`{.action} puis sur `Créer une liste`{.action}.
 
-![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-600}
 
 Lorsque vous créez une tâche, il est possible de définir une date d'échéance et une priorité qui vous permettront de les classer selon leur importance, ainsi qu'un menu déroulant pour sélectionner la liste de tâches correspondante.
 
 Cliquez ensuite sur `Enregistrer`{.action} pour finaliser la création de votre tâche.
 
-![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-600}
 
-#### Filtres <a name="filters"></a>
+### Stockage <a name="storage"></a>
+
+> [!success]
+>
+> La fonctionnalité de stockage appelée « Mallette » n'est disponible qu'à partir de l'offre Zimbra Pro.
+
+> [!warning]
+>
+> L'offre Zimbra Pro est actuellement en version bêta, certaines fonctionnalités sont toujours en cours d'amélioration.
+
+Cliquez sur l'icône `Mallette`{.action} située dans la barre supérieure pour accéder à votre espace de stockage. Vous pourrez y déposer vos fichiers et les partager.
+
+1. Dans la colonne de gauche, vous retrouvez les dossiers de votre espace de stockage.
+
+    - Pour créer un nouveau dossier, cliquez sur `+ Ajouter un dossier`{.action} en bas de la colonne. Renseignez le nom souhaité puis validez en appuyant sur la touche `Entrée`{.action}.
+    - Pour créer un sous-dossier, faites un clic droit sur l'un des dossiers, puis cliquez sur `Créer un sous-dossier`{.action}. Renseignez le nom souhaité puis validez en appuyant sur la touche `Entrée`{.action}.
+
+2. Dans la colonne centrale, vous retrouvez la liste des fichiers présents dans le dossier sélectionné.
+
+3. Dans la fenêtre de droite, selon le type de fichier sélectionné dans la colonne centrale, un aperçu du contenu s'affiche. La barre supérieure de l'aperçu affiche les actions possibles sur le ou les fichiers que vous avez sélectionnés.
+
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
+
+#### Ajouter un fichier
+
+Pour ajouter un fichier dans votre espace de stockage, suivez les étapes ci-dessous :
+
+1. Cliquez sur `Télécharger`{.action} (Upload) dans la colonne de gauche.
+2. Depuis la fenêtre d'exploration de fichiers, sélectionnez le ou les fichiers à téléverser sur votre espace de stockage.
+3. Cliquez sur `Ouvrir`{.action} pour téléverser le ou les éléments sur votre espace de stockage.
+
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
+
+#### Partager un fichier ou un dossier
+
+Le partage vous permet de donner accès à un dossier ou à un fichier sur votre stockage à une personne tierce, hors de votre compte Zimbra.
+
+> [!warning]
+>
+> Le partage permettant l'administration des dossiers et fichiers est possible uniquement avec un autre compte Zimbra Pro.
+
+> [!tabs]
+> **Partager un fichier**
+>>
+>> 1. Sélectionnez le fichier à partager et cliquez sur `Suite...`{.action}.
+>> 2. Cliquez sur `Partager...`{.action}.
+>> 3. Saisissez l'adresse e-mail de l'invité, puis cliquez sur `Ajouter`{.action}. Vous pouvez ajouter plusieurs adresses e-mail.
+>> 4. Choisissez les droits que vous souhaitez attribuer à l'invité.
+>> 5. Cliquez sur `Enregistrer`{.action} pour finaliser le partage.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail .w-600}
+>>
+> **Partager un dossier**
+>>
+>> 1. Faites un clic droit sur le dossier à partager, puis cliquez sur `Partager...`{.action}.
+>> 2. Saisissez l'adresse e-mail de l'invité, puis cliquez sur `Ajouter`{.action}. Vous pouvez ajouter plusieurs adresses e-mail.
+>> 3. Choisissez les droits que vous souhaitez attribuer à l'invité.
+>> 4. Cliquez sur `Enregistrer`{.action} pour finaliser le partage.
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail .w-600}
+>>
+
+L'invité reçoit un e-mail l'invitant à créer un compte Zimbra composé d'un identifiant et d'un mot de passe. Ce compte permet d'accéder à une interface Zimbra limitée à ce qui a été partagé.
+
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
+
+### Filtres <a name="filters"></a>
 
 #### Comprendre comment paramétrer ses filtres <a name="filters-howto"></a>
 
@@ -453,7 +545,7 @@ Une règle de filtrage dans Zimbra est composée de 4 éléments :
 3 - [Valeur](#filters-value) : quels mots/éléments de l'e-mail seront ciblés par le filtre.<br>
 4 - [Actions du filtre](#filters-action) : que va faire le filtre sur l'e-mail.<br>
 
-![Zimbra - filtres](images/zimbra-filters.png){.thumbnail}
+![Zimbra - filtres](images/zimbra-filters.png){.thumbnail .w-600}
 
 > Exemple : Si le champ **Objet (1)** de l'e-mail **contient (2)** le mot `facture`**(3)**, alors **transférer à (4)** l'adresse `comptabilite@example.com`.
 
@@ -516,7 +608,7 @@ Le champ `Alors` définit l'action à effectuer sur l'e-mail qui remplit les con
 
 Pour accèder à la création de filtres, cliquez sur la roue crantée en haut à droite de votre interface Zimbra puis sur `Paramètres`{.action} et enfin sur `Filtres`{.action} dans la colonne de gauche.
 
-![Zimbra - créer un filtre](images/zimbra-21.png){.thumbnail}
+![Zimbra - créer un filtre](images/zimbra-21.png){.thumbnail .w-600}
 
 Si des filtres existent, vous retrouverez la liste selon leur ordre d'application :
 
@@ -529,16 +621,41 @@ Cliquez sur le bouton `+ Ajouter un filtre`{.action} pour lancer sa création. L
 > [!tabs]
 > **Mode simple**
 >>
->> ![Zimbra - filtres - mode simple](images/zimbra-22.png){.thumbnail}
+>> ![Zimbra - filtres - mode simple](images/zimbra-22.png){.thumbnail .w-600}
 >>
 > **Mode avancé**
 >>
->> ![Zimbra - filtres - mode avancé](images/zimbra-23.png){.thumbnail}
+>> ![Zimbra - filtres - mode avancé](images/zimbra-23.png){.thumbnail .w-600}
 >>
+
+#### Créer une redirection <a name="filters-redirection"></a>
+
+Il est possible d'utiliser un filtre pour rediriger les e-mails reçus vers une autre adresse, via une règle de transfert.
+
+> [!primary]
+>
+> Dans notre exemple ci-dessous, nous avons choisi de rediriger l'ensemble des e-mails entrants vers une autre adresse e-mail. Pour comprendre l'exemple dans les captures d'écran, nous sommes connectés sur l'adresse **zimbra@mydomain.ovh** et nous souhaitons rediriger les e-mails de ce compte vers l'adresse **address@example.com**.
+>
+
+Pour accéder aux filtres et créer votre redirection, suivez les instructions suivantes : 
+
+- Cliquez sur le bouton `⚙`{.action} en haut à droite de votre fenêtre de webmail.
+- Cliquez sur `Paramètres`{.action}.
+- Cliquez sur la section `Filtres`{.action} depuis la fenêtre des paramètres.
+- Cliquez sur le bouton `Ajouter un filtre`{.action}.
+    - Cliquez d'abord sur <u>Mode avancé</u> en haut à droite pour mettre en place cette règle.
+    - Donnez un nom à votre filtre dans le champ `Nom du filtre`.
+    - Laissez le menu déroulant sur `toutes` dans la phrase « Si un message entrant réunit ... de ces conditions ».
+    - Sur la ligne suivante, choisissez `À`{.action} (To), laissez `contient`{.action} (contains), puis saisissez l'adresse e-mail sur laquelle vous êtes connecté dans le champ juste à droite.
+    - Sous la mention « Alors » (Then), sélectionnez `Transférer à` (Forward to) dans le menu déroulant, puis saisissez l'adresse e-mail de destination.
+    - Cliquez sur `+ Ajouter une action`{.action} (Add an action) plus bas, puis sélectionnez `Garder dans le dossier de réception` (Keep in Inbox).
+    - Cliquez sur `Enregistrer`{.action} depuis la fenêtre de votre filtre et également depuis celle des paramètres.
+
+![zimbra](images/zimbra_redirection03.png){.thumbnail .w-600}
 
 ### Délégations <a name="delegations"></a>
 
-Pour accèder au paramètre de délégation, cliquez sur la roue crantée en haut à droite de votre interface Zimbra puis sur `Paramètres`{.action} et enfin sur `Ecrire un mail`{.action} dans la colonne de gauche.
+Pour accéder au paramètre de délégation, cliquez sur la roue crantée en haut à droite de votre interface Zimbra puis sur `Paramètres`{.action} et enfin sur `Ecrire un mail`{.action} dans la colonne de gauche.
 
 Il est possible de déléguer votre compte e-mail à un autre compte e-mail. Celui-ci doit impérativement partager la même plateforme e-mail.
 
@@ -546,7 +663,7 @@ Il est possible de déléguer votre compte e-mail à un autre compte e-mail. Cel
 >
 > Un compte e-mail du même nom de domaine mais sur une autre offre e-mail ne peut pas recevoir la délégation.
 
-![email](images/zimbra-delegation.png){.thumbnail}
+![email](images/zimbra-delegation.png){.thumbnail .w-600}
 
 **(1) Délégués**. Pour déléguer votre compte e-mail à un autre compte, cliquez sur `Ajouter des délégués`{.action}.
 
@@ -557,7 +674,7 @@ Il est possible de déléguer votre compte e-mail à un autre compte e-mail. Cel
 
 - **Enregistrer les mails envoyés dans mon dossier « Envoyés »** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans votre dossier « Envoyés ».
 - **Enregistrer les mails envoyés dans le dossier « Envoyés » du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans son dossier « Envoyés ».
-- **Enregistrer les mails envoyés dans mon dossier « Envoyés » et dans celui du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans votre dossier « Envoyés »  ainsi que dans son dossier « Envoyés ».
+- **Enregistrer les mails envoyés dans mon dossier « Envoyés » et dans celui du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans votre dossier « Envoyés » ainsi que dans son dossier « Envoyés ».
 - **Ne pas enregistrer de copie des mails envoyés** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, il n'y aura aucune copie de faite.
 
 ### Signature <a name="signatures"></a>
@@ -570,7 +687,7 @@ Retrouvez les détails de configuration dans la section « [Configurer les préf
 
 Lorsque vous êtes absent et que vous ne pouvez pas consulter votre compte e-mail, vous pouvez mettre en place un message d'absence qui sera automatiquement envoyé a l'expéditeur. Dans le webmail Zimbra, cette fonctionnalité est nommée « Absent du bureau ».
 
-Pour accèder à la gestion de votre répondeur, cliquez sur la roue crantée en haut à droite de votre interface, puis sur `Paramètres`{.action} et enfin sur `Absent du bureau`{.action}.
+Pour accéder à la gestion de votre répondeur, cliquez sur la roue crantée en haut à droite de votre interface, puis sur `Paramètres`{.action} et enfin sur `Absent du bureau`{.action}.
 
 Par défaut, l'option `Activer la réponse automatique pendant ces dates (incluses)` est désactivée. Cochez cette case pour activer la réponse automatique. Vous avez maintenant la possibilité de saisir le contenu de votre message d'absence dans le champ de saisie.
 

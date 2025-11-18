@@ -13,13 +13,13 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 ## Prérequis
 
 - Une [Infrastrucure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- Un accès à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un accès à l'[espace client OVHcloud](/links/manager)
 
 ## En pratique
 
 ### Accès à l'Interface
 
-Naviguez vers l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et connectez vous avec un compte administrateur.
+Naviguez vers l'[espace client OVHcloud](/links/manager) et connectez vous avec un compte administrateur.
 
 ![LOGIN](images/en01login.png){.thumbnail}
 

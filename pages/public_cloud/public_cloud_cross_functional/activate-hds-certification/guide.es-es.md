@@ -8,7 +8,7 @@ updated: 2024-03-28
 
 To make your Public Cloud infrastructure and platforms compliant with [healthcare data hosting](https://www.ovhcloud.com/es-es/enterprise/certification-conformity/hds/) in France, they must necessarily be certified as a healthcare data hosting provider (HDS).
 
-OVHcloud Public Cloud services are HDS certified for certain activities listed in the [certification reference](https://esante.gouv.fr/labels-certifications/hds/certification-des-hebergeurs-de-donnees-de-sante){.external} of the French Digital Health Agency.
+OVHcloud Public Cloud services are HDS certified for certain activities listed in the [certification reference](https://esante.gouv.fr/labels-certifications/hds/certification-des-hebergeurs-de-donnees-de-sante) of the French Digital Health Agency.
 
 The list of certified OVHcloud products is available on the page “[OVHcloud products HDS certification](/pages/account_and_service_management/account_information/hds_certification)”.
 
@@ -16,8 +16,8 @@ The list of certified OVHcloud products is available on the page “[OVHcloud pr
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](/links/manager){.external}.
-- You must have signed up to the [Business or Enterprise level of support](https://www.ovhcloud.com/es-es/support-levels/) for your OVHcloud account.
+- You must be logged in to your [OVHcloud Control Panel](/links/manager).
+- You must have signed up to the [Business or Enterprise level of support](/links/support) for your OVHcloud account.
 
 ## Instructions
 

@@ -11,7 +11,7 @@ updated: 2018-07-03
 http://docs.uxci.ovh/admin/git
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie){.external}.
+- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
 - Avoir réceptionné et installé le téléphone Yealink CP860 fourni par OVH.
 
 ## En pratique

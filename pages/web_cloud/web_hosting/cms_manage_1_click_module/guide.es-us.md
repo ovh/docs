@@ -56,8 +56,8 @@ También puede consultar el mensaje de correo electrónico recibido al crear el 
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal : El editor de este programa no ofrece ninguna documentación en la fecha para cambiar la contraseña de acceso al panel de administración de Drupal. Por favor, contacte directamente con el editor sobre este asunto. Para más información, consulte la página oficial [drupal.org](https://www.drupal.org/){.external}.
-> - PrestaShop : El editor de este programa no ofrece documentación en la fecha para cambiar la contraseña de acceso al panel de administración de PrestaShop. Por favor, contacte directamente con el editor sobre este asunto. Para más información, haga clic [aquí](https://www.prestashop.com){.external} para acceder a su página oficial.
+> - Drupal : El editor de este programa no ofrece ninguna documentación en la fecha para cambiar la contraseña de acceso al panel de administración de Drupal. Por favor, contacte directamente con el editor sobre este asunto. Para más información, consulte la página oficial [drupal.org](https://www.drupal.org/).
+> - PrestaShop : El editor de este programa no ofrece documentación en la fecha para cambiar la contraseña de acceso al panel de administración de PrestaShop. Por favor, contacte directamente con el editor sobre este asunto. Para más información, haga clic [aquí](https://www.prestashop.com) para acceder a su página oficial.
 >
 También es posible cambiar la contraseña de acceso al panel de administración del CMS directamente desde la base de datos.<br>
 No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la documentación que le ofrezca el editor del CMS o que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Más información en la sección (#go-further) de esta guía.
@@ -127,10 +127,10 @@ Añada herramientas de test de tipo CAPTCHA a los formularios de su sitio web.
 
 No instale en su sitio plugins ni plantillas que no hayan sido recomendados por las comunidades oficiales de su CMS: 
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://community.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/community){.external}
-- [PrestaShop](https://www.prestashop.com/es){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://community.joomla.org/)
+- [Drupal](https://www.drupal.org/community)
+- [PrestaShop](https://www.prestashop.com/es)
 
 ## Más información <a name="go-further"></a>
 

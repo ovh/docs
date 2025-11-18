@@ -1,7 +1,7 @@
 ---
 title: "Activation du pare-feu applicatif"
 excerpt: "Découvrez comment activer le pare-feu applicatif sur une offre d'hébergement Web"
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Objectif
@@ -10,29 +10,29 @@ updated: 2024-09-05
 
 L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de notre *ModSecurity* protège vos sites Web contre les attaques les plus courantes, par exemple :
 
-- Trojans,
-- Injections d'emails,
-- Faille des fichiers PDF,
-- Injection de fichiers sur votre hébergement,
-- injection de type SQL ou XSS,
+- Trojans
+- Injections d'emails
+- Failles des fichiers PDF
+- Injections de fichiers sur votre hébergement
+- Injections de type SQL ou XSS
 - etc.
 
 **Ce guide vous explique comment activer le pare-feu applicatif depuis votre espace client OVHcloud, afin d'obtenir une protection améliorée.**
 
 > [!primary]
 >
-> Du fait que votre hébergement web est présent sur une infrastructure mutualisée, la modification des paramètres de configuration du pare-feu est indisponible.
+> Du fait que votre hébergement web est présent sur une infrastructure mutualisée, vous ne pouvez pas modifiez les paramètres de configuration du pare-feu.
 >
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
-- Disposer d'au moins un [nom de domaine](/links/web/domains){.external} attaché à l'hébergement.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
+- Disposer d'au moins un [nom de domaine](/links/web/domains) attaché à l'hébergement.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
 
 ### Activer le pare-feu applicatif dans la configuration PHP
 

@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un VPS
 excerpt: Come gestire un VPS dallo Spazio Cliente OVHcloud e scopri gli step iniziali del suo utilizzo, incluse le connessioni remote e le misure di sicurezza
-updated: 2024-11-22
+updated: 2025-09-11
 ---
 
 ## Obiettivo
@@ -14,6 +14,11 @@ Un server privato virtuale (VPS) è un server dedicato virtualizzato che offre g
 
 - Disporre di un [VPS](/links/bare-metal/vps) nello Spazio Cliente OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+> [!warning]
+> Non tutte le funzionalità dei VPS citate in questa pagina sono disponibili nelle Local Zones di OVHcloud.
+>
+> Per maggiori informazioni, consulta la [pagina Web des Local Zones](/links/bare-metal/vps-lz).
 
 ## Procedura
 
@@ -110,7 +115,7 @@ Fare clic sulle schede seguenti per visualizzare i dettagli di questa sezione.
 
 #### Backup
 
-Queste opzioni si riferiscono a servizi VPS aggiuntivi ordinabili dallo Spazio Cliente.
+Queste opzioni si riferiscono a servizi VPS aggiuntivi per il backup e il ripristino del sistema.
 
 > [!tabs]
 > Snapshot
@@ -119,11 +124,13 @@ Queste opzioni si riferiscono a servizi VPS aggiuntivi ordinabili dallo Spazio C
 >>
 > Backup automatizzato
 >>
->> L’opzione `Backup automatizzato` permette di programmare backup regolari del VPS. A differenza degli Snapshot manuali, questa funzionalità conserva diversi punti di ripristino nel tempo, offrendoti una protezione continua e automatica dei dati (esclusi i dischi aggiuntivi).
+>> Il backup giornaliero del sistema viene creato automaticamente (esclusi i dischi aggiuntivi) e conservato per 24 ore (applicabile solo ai servizi ordinati a partire dal 7 agosto 2025). Passando all'opzione **Backup automatico Premium**, disporrai degli ultimi 7 backup giornalieri del tuo VPS disponibili per il montaggio e il ripristino.  
+Rispetto alle copie istantanee manuali, questa funzione aumenta la sicurezza dei dati creando diversi punti di ripristino a intervalli regolari.
+>>
 
-Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-servers-backups).
+Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
-#### Abbonamento
+#### Il mio servizio
 
 In queste sezioni vengono fornite le informazioni più importanti relative alla fatturazione del servizio. Tutte le informazioni su questo argomento sono disponibili nella [documentazione corrispondente](/products/account-and-service-management-managing-billing-payments-and-services).
 
@@ -257,6 +264,8 @@ Se non diversamente specificato, tutte le operazioni di amministrazione descritt
 Ti ricordiamo che se hai selezionato una **distribuzione con applicazione** (Plesk, cPanel, Docker), le misure di sicurezza generiche potrebbero non essere applicabili al tuo sistema. Per maggiori informazioni, consulta le nostre guide [Iniziare a utilizzare le applicazioni preinstallate](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) e [Distribuire cPanel su un VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), oltre alla documentazione ufficiale del produttore.
 >
 
+Se hai perso la password utente o root, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password) per sapere come reimpostarla.
+
 <a name="winconnect"></a>
 
 #### VPS Windows
@@ -375,5 +384,7 @@ Per un processo più automatizzato, OVHcloud propone anche la soluzione SSL Gate
 [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [Mettere in sicurezza un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[Come recuperare l'accesso al server in caso di perdita della password dell'utente](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Contatta la nostra [Community di utenti](/links/community).

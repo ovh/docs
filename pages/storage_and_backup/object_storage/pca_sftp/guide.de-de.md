@@ -14,7 +14,7 @@ Public Cloud Archive ist eine Speicherlösung, die mit OpenStack-APIs verwendet 
 
 ## Voraussetzungen
 
-- Ein SFTP Client: [WinSCP](https://winscp.net/eng/download.php){.external}
+- Ein SFTP Client: [WinSCP](https://winscp.net/eng/download.php)
 - Login & Password OpenStack
 - TenantName des Projekts
 
@@ -30,7 +30,7 @@ Sie können OpenStack Login und Passwort anhand [dieser Anleitung](/pages/public
 
 ### TenantName
 
-Der TenantName entspricht dem Namen Ihres Projekts auf Horizon. Um den TenantName abzurufen, loggen Sie sich mit dem OpenStack-Manager über die zuvor erstellten Zugänge ein: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/){.external}. Wenn Sie eingeloggt sind, wird der TenantName oben angezeigt.
+Der TenantName entspricht dem Namen Ihres Projekts auf Horizon. Um den TenantName abzurufen, loggen Sie sich mit dem OpenStack-Manager über die zuvor erstellten Zugänge ein: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/). Wenn Sie eingeloggt sind, wird der TenantName oben angezeigt.
 
 ![cPanel](images/image1.png){.thumbnail}
 

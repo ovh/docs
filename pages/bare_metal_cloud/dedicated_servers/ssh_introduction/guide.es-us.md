@@ -222,7 +222,7 @@ Guarde los cambios y salga del editor. Tendrá que confirmar la nueva huella dig
 
 Si prefiere una interfaz gráfica de usuario, puede encontrar numerosas aplicaciones de software para cada tipo de sistema operativo que le permiten conectarse a hosts remotos a través del protocolo SSH.
 
-Por ejemplo, [PuTTY](https://putty.org/) es un cliente SSH de código abierto con muchas funciones útiles. Para más información sobre cómo utilizarlo para conectarse a los servidores de OVHcloud, consulte nuestro tutorial:
+Por ejemplo, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) es un cliente SSH de código abierto con muchas funciones útiles. Para más información sobre cómo utilizarlo para conectarse a los servidores de OVHcloud, consulte nuestro tutorial:
 
 [Cómo usar PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 

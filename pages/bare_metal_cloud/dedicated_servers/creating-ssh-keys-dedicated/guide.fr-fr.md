@@ -55,7 +55,7 @@ Les instructions suivantes expliquent comment créer et gérer des paires de cl�
 
 Si vous préférez une interface utilisateur graphique, il existe de nombreuses applications logicielles pour chaque type de système d'exploitation qui vous permettent de vous connecter à des hôtes distants via le protocole OpenSSH.
 
-Par exemple, [PuTTY](https://putty.org/) est un logiciel client SSH open source doté de nombreuses fonctionnalités utiles. Découvrez comment l’utiliser pour les connexions aux serveurs OVHcloud dans notre tutoriel détaillé :
+Par exemple, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) est un logiciel client SSH open source doté de nombreuses fonctionnalités utiles. Découvrez comment l’utiliser pour les connexions aux serveurs OVHcloud dans notre tutoriel détaillé :
 
 - [Comment utiliser PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
@@ -249,7 +249,7 @@ Vous pourrez ensuite vous connecter à ce second host en renseignant :
 ssh vps
 ```
 
-Pour plus d'informations sur le fichier `config`, consultez la [page `man` correspondante](https://manpages.org/ssh_config/5).
+Pour plus d'informations sur le fichier `config`, consultez la [page `man` correspondante](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 
@@ -443,7 +443,7 @@ Vous pourrez ensuite vous connecter à ce second host en renseignant :
 ssh vps
 ```
 
-Pour plus d'informations sur le fichier `config`, consultez la [page `man` correspondante](https://manpages.org/ssh_config/5).
+Pour plus d'informations sur le fichier `config`, consultez la [page `man` correspondante](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 

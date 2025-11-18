@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Überblick (EN)
 excerpt: Discover the service, understand the capabilities and billing
-updated: 2024-08-05
+updated: 2025-10-20
 ---
 
 <style>
@@ -82,7 +82,7 @@ You can track the different steps of your data by the status of your bucket
 | Archive (=bucket) status | Description | Objects permissions | Duration | Data pricing |
 | --- | --- | --- | --- | --- |
 | **`None`** | No Intelligent-Tiering configuration pushed on the bucket yet. | All | unlimited | Standard |
-| **`Archiving`** | Archiving in progress on tapes. | Listing | <48 hrs | Archive |
+| **`Archiving`** | Archiving in progress on tapes. | Listing | N/A | Archive |
 | **`Archived`** | Objects archived on tapes only. | Listing | unlimited | Archive |
 | **`Restoring`** | Restoration in progress from tapes. | Listing | <48 hrs | Archive |
 | **`Restored`** | Objects restored and accessible. | Read-only + Listing | 30 days | Archive |

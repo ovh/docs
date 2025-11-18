@@ -1,7 +1,7 @@
 ---
 title: "Public Cloud Databases - How to handle 'Disk Full' situations"
 excerpt: Find out how to avoid, analyse and fix a Public Cloud Databases service reaching its full disk capacity
-updated: 2023-07-24
+updated: 2025-08-18
 ---
 
 ## Objective
@@ -33,10 +33,10 @@ When the disk usage increases even more and reaches a critical level (depending 
 
 Different engines react in different ways, thus Public Cloud Databases services react differently when facing disk full conditions:
 
-- `Caching/Valkey` does not store any user data on disk. Thus, it will not fill up the underlying disk storage.
+- `Valkey` does not store any user data on disk. Thus, it will not fill up the underlying disk storage.
 - `Cassandra` turns to read-only.
 - `MySQL` and `PostgreSQL` turn to read-only with a way to temporarily revert to read-write.
-- `MongoDB` forbids writes but allows deletes.
+- `MongoDB` forbids writes but allows deletes only for the Admin users.
 
 #### Upgrading your service
 
@@ -48,7 +48,7 @@ It may be that you have reached the full disk situation because of a runaway app
 
 ##### **MongoDB**
 
-`MongoDB` refuses any query that inserts data, but allows queries deleting data. You can thus execute any `MongoDB` command that allows to reclaim disk space.
+`MongoDB` blocks all write operations when the disk is full, except for the Admin users who can execute any `MongoDB` command to reclaim disk space.
 
 ##### **PostgreSQL**, **MySQL**
 

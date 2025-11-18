@@ -89,7 +89,7 @@ Jeśli chcesz usunąć wszystkie Twoje sposoby płatności, wszystkie Twoje usł
 
 #### Usuwanie sposobu płatności przez API OVHcloud
 
-Sposób płatności można usunąć poprzez interfejs API, logując się do [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
+Sposób płatności można usunąć poprzez interfejs API, logując się do [https://eu.api.ovh.com/](/links/api).
 
 Zacznij od uzyskania identyfikatora sposobu płatności:
 

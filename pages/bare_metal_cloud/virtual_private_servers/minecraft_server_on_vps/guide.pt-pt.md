@@ -95,9 +95,9 @@ $ mkdir ~/server && cd ~/server
 >
 
 Primeiro, deve copiar/colar o link de download do software do servidor.
-<br>No [site oficial do Minecraft](https://minecraft.net/download/server){.external}, clique com o botão direito do rato no link de download e selecione `Copiar o endereço do link`{.action}.
+<br>No [site oficial do Minecraft](https://minecraft.net/download/server), clique com o botão direito do rato no link de download e selecione `Copiar o endereço do link`{.action}.
 
-![Download do servidor](images/download_jar_file.png){.thumbnail}
+![Download do servidor](images/jar_file_download.png){.thumbnail}
 
 No seu terminal de linha de comandos, verifique se ainda está na pasta `server` e utilize o `wget` para descarregar o ficheiro.
 <br>Substitua o `link_para_descarregar` pelo URL real que copiou anteriormente.
@@ -113,7 +113,7 @@ Antes de lançar o servidor, deve aceitar a licença do software (EULA ou _End U
 ```
 
 Um ficheiro chamado `eula.txt` está agora localizado ao nível da raiz do seu servidor, contendo a linha `eula=true`. Isto indica ao software que aceita as condições de utilização do Minecraft.
-<br>Consulte as condições gerais no [site oficial do Minecraft](https://www.minecraft.net/){.external}.
+<br>Consulte as condições gerais no [site oficial do Minecraft](https://www.minecraft.net/).
 
 O seu servidor está pronto para ser lançado.
 
@@ -168,7 +168,7 @@ Para parar o seu servidor, insira o comando de `stop`.
 
 ### Etapa 3: ligar-se ao servidor
 
-A sua instância de servidor está agora funcional. Para jogar jogos, descarregue o cliente Minecraft a partir [do website oficial](https://www.minecraft.net/){.external}.
+A sua instância de servidor está agora funcional. Para jogar jogos, descarregue o cliente Minecraft a partir [do website oficial](https://www.minecraft.net/).
 
 Instale e lance o cliente para o seu sistema operativo e ligue-se.
 

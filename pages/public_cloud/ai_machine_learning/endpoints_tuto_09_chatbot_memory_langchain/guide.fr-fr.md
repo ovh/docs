@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Activer la mémoire de conversation dans votre chatbot avec LangChain (EN)
 excerpt: Intégrez la mémoire de conversation à votre chatbot en utilisant AI Endpoints et LangChain
-updated: 2025-04-28
+updated: 2025-07-31
 ---
 
 > [!primary]
@@ -66,6 +66,7 @@ Then, create a `requirements.txt` file with the required libraries:
 python-dotenv==1.0.1
 langchain_openai==0.1.14
 openai==1.68.2
+langchain==0.2.17
 ```
 
 Then, launch the installation of these dependencies:

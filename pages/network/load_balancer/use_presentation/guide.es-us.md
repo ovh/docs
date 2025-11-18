@@ -1,120 +1,108 @@
 ---
-title: Presentación del Load Balancer de OVHcloud
-excerpt: Descubra el nuevo Load Balancer de OVHcloud
-updated: 2018-01-17
+title: Introduction to the OVHcloud Load Balancer
+excerpt: Discover the OVHcloud Load Balancer solution for distributing and securing your traffic
+updated: 2025-10-29
 ---
 
-## Objetivo
+## Objective
 
-El nuevo [Load Balancer de OVHcloud](https://www.ovh.com/world/es/soluciones/load-balancer/){.external} es un balanceador de carga (*load balancer*) que combina fiabilidad y una gran flexibilidad en la configuración. Usted solo tiene que configurar sus productos con el Load Balancer de OVHcloud y nosotros nos encargamos del resto.
+The **OVHcloud Load Balancer** is a fully managed service designed to ensure high availability, performance, and scalability for your applications.
+Its main role is to distribute workloads across several servers or applications.
+Simply configure your services behind the Load Balancer — OVHcloud handles redundancy, security, and global traffic distribution.
 
-**Esta guía explica brevemente el funcionamiento del nuevo Load Balancer de OVHcloud.**
+## Requirements
 
-## Requisitos
+- Access to the [OVHcloud Control Panel](/links/manager)
+- At least one service to balance (Dedicated Server, VPS, Public Cloud instance, etc.)
 
-- No hay requisitos específicos.
+## Instructions
 
-## Procedimiento
+The Load Balancer leverages **industry-standard open-source technologies** to handle different traffic types:
 
- 
-Este nuevo producto está basado en tecnologías *open source* muy robustas: HAProxy para el tráfico TCP y Nginx para el tráfico UDP.
-
-¡Se acabaron las limitaciones! El nuevo [Load Balancer de OVHcloud](https://www.ovh.com/world/es/soluciones/load-balancer/){.external} se puede utilizar con diferentes protocolos:
-
-|Tipo|Descripción|Ventajas|Tecnología|
+| Type | Description | Advantages | Technology |
 |---|---|---|---|
-|HTTP|Todo tipo de servicios web HTTP/HTTPS|Optimizado para tratamiento L7 (aplicaciones)|HAProxy|
-|TCP|Para cualquier servicio de red que no sea HTTP|Compatible con todas las aplicaciones TCP|HAProxy|
-|UDP|Para todo tipo de tráfico UDP|Compatible con todas las aplicaciones UDP|Nginx|
+| HTTP/HTTPS | All web services and APIs | Optimized for L7 (application layer) processing, URL redirection, headers, ACLs | HAProxy |
+| TCP | Non-HTTP network services | Supports all TCP applications | HAProxy |
+| UDP | All UDP traffic | Supports all UDP applications | Nginx |
 
-Este nuevo servicio incluye:
+### Key Features
 
-- protección anti-DDoS de OVHcloud
-- soporte de zonas múltiples (Anycast)
-- soporte HTTP/HTTPS avanzado (redireccionamiento, cabeceras, ACL...)
-- compatibilidad con una Additional IP
-- compatibilidad con el vRack
-- redundancia: el Load Balancer funciona en instancias separadas, que a su vez funcionan en equipos separados y redundantes
+- **Built-in DDoS protection** across all traffic types
+- **Global Anycast network** for optimal latency and failover
+- **Advanced HTTP/HTTPS support**: redirections, headers, ACLs, etc.
+- **Additional IP and vRack compatibility**: improve availability and performance with advanced networking
+- **High availability**: isolated redundant instances ensure resilience
+- **Scalability**: add or remove servers and farms without downtime
 
-### Principales elementos
+### Architecture Overview
 
-El nuevo Load Balancer de OVHcloud está formado principalmente por tres elementos, que se describen a continuación.
+The Load Balancer consists of three main components:
 
-![General](images/diag_gen.png){.thumbnail}
-
-|Principales elementos|Función|
+| Component | Function |
 |---|---|
-|Frontend|El frontend determina el tipo de protocolo (HTTP, TCP o UDP) del servicio Load Balancer de OVHcloud. Es el elemento que expone el puerto de escucha del servicio.|
-|Granja|La granja recibe el tráfico procedente del frontend. Es el que se ocupa de balancear la carga.|
-|Servidor|Los servidores son los que reciben el tráfico final y responden a través de la aplicación.|
+| **Front-end** | Defines the entry protocol (HTTP/TCP/UDP) and listening port |
+| **Farm** | Distributes traffic from the front-end across servers |
+| **Server** | Handles inbound and outbound application traffic |
 
-Con estos tres elementos fundamentales que componen el Load Balancer, se pueden configurar casi todos los tipos de balanceo de carga posibles.
+![General diagram](images/diag_gen2025.png){.thumbnail}
 
-### ¿Para qué utilizar el Load Balancer de OVHcloud?
+## Benefits
 
-#### Balancear la carga
+### Balance and Scale Seamlessly
 
-Es la principal función de un balanceador de carga, pero el Load Balancer de OVHcloud puede hacer mucho más.  
+Distribute workloads across multiple servers and scale horizontally without service interruption.
 
-![Distribuir la carga](images/distribute_load.png){.thumbnail}
+![Balance the load](images/distribute_load2025.png){.thumbnail}
 
-#### Eliminar el riesgo de *downtime*
+### High Availability and Uptime
 
-El servicio Load Balancer de OVHcloud es capaz de detectar automáticamente si un servidor no responde y, en ese caso, redirige el tráfico que tiene como destino ese servidor hacia otro, siempre que sea posible. Esto permite resolver el problema sin que afecte a los servicios en producción. 
+Automatic health checks detect unresponsive servers and reroute traffic instantly, minimizing downtime.
 
-![Eliminar el downtime](images/eliminate_downtimes.png){.thumbnail}
+![Eliminate downtime](images/eliminate_downtimes2025.png){.thumbnail}
 
-#### Escalar una infraestructura fácilmente
+### Simplified Maintenance
 
-Es posible añadir o quitar una granja, frontend o servidor del Load Balancer de OVHcloud sin interrumpir el servicio.
+Place a farm or server in downtime mode for maintenance without impacting users, then reintegrate it seamlessly.
 
-![Escalar una infraestructura fácilmente](images/facilitate_maintenance.png){.thumbnail}
+![Make maintenance easier](images/facilitate_maintenance2025.png){.thumbnail}
 
-#### Facilitar las operaciones de mantenimiento
+### Service Integration
 
-En caso de mantenimiento planificado en su infraestructura, es posible deshabilitar fácilmente los servidores de una granja para que dejen de recibir tráfico temporalmente. De esa forma, puede realizar la intervención y, una vez finalizado el mantenimiento, volver a añadir los servidores.
+Easily combine with other OVHcloud services:
 
-![Facilitar las operaciones de mantenimiento](images/scale_easily.png){.thumbnail}
+- Public Cloud instances
+- VPS
+- Dedicated Servers
+- vRack private networking
 
-#### Combinar los servicios
+![Combine your services](images/mix_and_match2025.png){.thumbnail}
 
-Es posible combinar diferentes servicios de OVHcloud en el Load Balancer, como por ejemplo:
+### Geographic Distribution (Anycast)
 
-- instancias de Public Cloud con Additional IP
-- VPS con Additional IP
-- servidores dedicados con Additional IP
-- vRack
+Serve users worldwide with low latency and resilient routing.
 
-![Combinar servicios](images/mix_and_match.png){.thumbnail}
+![Anycast](images/anycast2025.png){.thumbnail}
 
-#### Anycast
+### Versatile Use Cases
 
-Es posible balancear la carga en diferentes zonas geográficas.
+Support multiple services over HTTP(S), TCP, and UDP traffic.
 
-![Anycast](images/anycast.png){.thumbnail}
+#### Email server
 
-#### Balancear cualquier tipo de tráfico
+Balance the load between your email servers.
 
-El Load Balancer de OVHcloud ya no está limitado al tráfico HTTP. Ahora puede utilizarlo con cualquier tipo de tráfico TCP o UDP.
+![Mail](images/mail2025.png){.thumbnail}
 
-#### Servidores de correo
+#### Databases
 
-Balancee la carga entre sus servidores de correo.
+Balance your databases, and make them redundant.
 
-![Correo electrónico](images/mail.png){.thumbnail}
+![Databases](images/database2025.png){.thumbnail}
 
-#### Bases de datos
+## Go Further
 
-Equilibre y redunde sus bases de datos. 
+- [Find out more about load balancing (Wikipedia)](https://en.wikipedia.org/wiki/Load_balancing)
+- [HAProxy official site](http://www.haproxy.org/#desc)
+- [Nginx documentation](https://nginx.org/en/docs/)
 
-![Bases de datos](images/database.png){.thumbnail}
-
-## Más información
-
-[Más información sobre el balanceo de carga](https://es.wikipedia.org/wiki/Balanceador_de_carga){.external}
-
-[Más información sobre HAProxy](http://www.haproxy.org/#desc){.external}
-
-[Más información sobre Nginx](https://es.wikipedia.org/wiki/Nginx){.external}
-
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: Comment changer mon offre xDSL/Fibre
 excerpt: "Découvrez comment modifier votre offre d'accès Internet depuis votre espace client OVHcloud"
-updated: 2025-04-28
+updated: 2025-10-29
 ---
 
 ## Objectif
@@ -34,6 +34,13 @@ Les options suivantes ne peuvent pas être conservées en tant qu'**options incl
 - Compte(s) Exchange
 
 Lors d'un changement d'offre vers les nouvelles offres Fibre Pro et xDSL Pro, vous pourrez choisir de résilier ces options ou de les conserver aux tarifs en vigueur.
+
+> [!primary]
+>
+> Lors d'un changement d'offre xDSL vers Fibre, l'adresse IP publique de l'accès xDSL ne peut pas être conservée.
+>
+> Si un [bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) est actif sur l'offre actuelle, il sera automatiquement conservé. Vous recevrez un e-mail indiquant la date de migration des adresses IP du bloc vers le nouvel accès, et vous aurez la possibilité d'avancer cette migration via API si besoin.
+>
 
 ### Changer d’offre
 
@@ -99,5 +106,7 @@ En fonction de votre offre actuelle, un remplacement du modem peut s'avérer né
 Les nouveaux services liés à votre nouvelle offre Pro seront accessibles une fois le changement d'offre effectif. 
 
 ## Aller plus loin
+
+[VoIP / Accès Internet - Déroulement d'un RMA](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

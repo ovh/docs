@@ -70,7 +70,7 @@ Per la geolocalizzazione degli IP sono disponibili i seguenti Paesi:
 >
 > La geolocalizzazione di IP è basata esclusivamente su organismi di riferimento.
 > 
-> Ad esempio, il [RIPE NCC](https://www.ripe.net/){.external} serve l'Europa come Registro Internet Regionale.
+> Ad esempio, il [RIPE NCC](https://www.ripe.net/) serve l'Europa come Registro Internet Regionale.
 >
 > Se hai bisogno di verificare la geolocalizzazione in un altro modo, contatta direttamente le organizzazioni interessate. OVHcloud non potrà fornirti assistenza al riguardo.
 
@@ -92,6 +92,6 @@ Il prossimo step consiste nel configurare l'IP nel tuo sistema operativo. Consul
 
 [Configura un Additional IP](/pages/public_cloud/public_cloud_network_services/getting-started-04-configure-additional-ip-to-instance)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

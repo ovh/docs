@@ -18,7 +18,7 @@ Para proteger de forma óptima su sistema, su servidor con Windows Server dispon
 >
 > La responsabilidad sobre los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la seguridad de un servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la seguridad de un servidor, le recomendamos que contacte con un [proveedor de servicios especializado](/links/partner). Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -112,6 +112,6 @@ Haga clic en el botón `Finalizar`{.action} para finalizar el proceso y crear la
 
 A continuación, podrá realizar cambios en la seguridad de la nueva regla creada.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -86,7 +86,7 @@ Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/e
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Chaque service [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) peut être supprimé depuis l'onglet `Public Cloud`{.action} de l'espace client.
+Chaque service [Public Cloud](/links/public-cloud/public-cloud) peut être supprimé depuis l'onglet `Public Cloud`{.action} de l'espace client.
 
 Sélectionnez un service à gauche, cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
 

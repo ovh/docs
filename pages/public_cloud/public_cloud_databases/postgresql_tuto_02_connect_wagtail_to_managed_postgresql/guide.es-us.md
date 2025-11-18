@@ -6,9 +6,9 @@ updated: 2022-02-11
 
 ## Objective
 
-[Wagtail](https://wagtail.org/){.external} is a free and open source content management system (CMS) written in Python. It is popular amongst websites using the [Django framework](https://www.djangoproject.com/){.external}.
+[Wagtail](https://wagtail.org/) is a free and open source content management system (CMS) written in Python. It is popular amongst websites using the [Django framework](https://www.djangoproject.com/).
 
-In this tutorial, we are going to show you how to install [Wagtail](https://wagtail.org/){.external} and how to connect it to the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} [database service](https://www.ovhcloud.com/es/public-cloud/postgresql/).
+In this tutorial, we are going to show you how to install [Wagtail](https://wagtail.org/) and how to connect it to the OVHcloud managed [PostgreSQL](https://www.postgresql.org/) [database service](https://www.ovhcloud.com/es/public-cloud/postgresql/).
 
 > [!warning]
 >
@@ -19,8 +19,8 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An up and running Public Cloud Database for PostgreSQL.
 - A Python environment with a stable version and public network connectivity (Internet). This tutorial was made using Python 3.9.7.
 
@@ -33,7 +33,7 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=G) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
 ### Step 1: Verify your user roles and password
 
@@ -53,7 +53,7 @@ This first user **avnadmin** comes with the following privileges:
 We rely on official PostgreSQL roles and privileges. You can manage them yourself via CLI or code.
 So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
 
-Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html){.external} to select the right roles for your use case.
+Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html) to select the right roles for your use case.
 
 In our example, we will simply reset the **avnadmin** password.
 
@@ -130,7 +130,7 @@ If you keep wagtail on default settings, a local SQLlite database will be used i
 
 Before creating the database, let's edit the `mysite/mysite/settings/base.py` file and adapt the connection parameters to the database.
 
-The useful parameters, available in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) are:
+The useful parameters, available in the [OVHcloud Control Panel](/links/manager) are:
 
 - The db Host, the db Port
     - Get them from the "General Information tab".
@@ -203,6 +203,6 @@ To clean your PostgreSQL, use the OVHcloud Control Panel to delete your managed 
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

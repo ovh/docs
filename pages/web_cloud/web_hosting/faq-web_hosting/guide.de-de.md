@@ -1,7 +1,7 @@
 ---
 title: "FAQ Webhosting"
 excerpt: "Hier finden Sie Antworten zu den am häufigsten gestellten Fragen zu den OVHcloud Webhostings"
-updated: 2025-04-25
+updated: 2025-11-10
 ---
 
 <style>
@@ -187,8 +187,9 @@ So aktivieren Sie ein SSL-Zertifikat auf Ihrem Webhosting für Ihre Website:
 
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite und in der Randleiste **Konfiguration** auf den Button `...`{.action} rechts neben **SSL-Zertifikat** und dann auf `SSL-Zertifikat bestellen`{.action}.
-4. [Wählen Sie das gewünschte Zertifikat aus der Liste der verfügbaren Zertifikate aus](/pages/web_cloud/web_hosting/ssl_on_webhosting) und fahren Sie fort, bis der Bestellschein abgeschlossen ist.
+3. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
+4. Wählen Sie das gewünschte Zertifikat aus den [verfügbaren Zertifikaten](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+5. Fahren Sie fort, bis die Installation des SSL-Zertifikats abgeschlossen ist (nach vorheriger Validierung des Bestellscheins, wenn Sie eines der Sectigo SSL-Zertifikate auswählen).
 
 > [!success]
 >
@@ -562,22 +563,23 @@ Dieser Fehler kann auch auftreten, wenn eine HTTP-Anfrage auf Ihrer Website zu *
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-Diese Meldung weist darauf hin, dass die Art der HTTP-Anforderung, die Sie auf Ihrer Website ausführen möchten, für einen begrenzten Zeitraum unzulässig ist, in der Regel aus Sicherheitsgründen.
+Die Seite „Your request has been blocked“ kann aus verschiedenen Gründen angezeigt werden (nicht abschließende Liste):
+
+- Die Anfrage wird über einen nicht aktualisierten Browser (Firefox, Chrome, Safari, Edge etc.) durchgeführt.
+- Eine sehr große Zahl von Anfragen wird innerhalb einer äußerst kurzen Frist ausgeführt.
+- Die Anfrage versucht, nicht autorisierte Aktionen auf der Hosting-Infrastruktur durchzuführen, auf der sich Ihr Webhosting befindet.
 
 In diesem Fall sind mehrere Aktionen erforderlich:
 
-- [Überprüfen Sie die Logs](/pages/web_cloud/web_hosting/logs_and_statistics) Ihrer Website, um festzustellen, welche Anfragen zu dieser Blockierung geführt haben.
-- Überprüfen Sie mithilfe von Antiviren- oder Antispyware-Software, dass Ihre Geräte (Computer, Smartphones, etc.) nicht mit Spyware oder Malware infiziert sind.
-- Überprüfen Sie den Quellcode Ihrer Website (FTP-Speicherplatz und Datenbanken).
+- Stellen Sie sicher, dass Ihr Browser auf dem neuesten Stand ist.
+- Notieren Sie die aufgerufene URL (zum Beispiel: `https://www.domain.tld`) sowie alle Informationen auf der Seite „Your request has been blocked“ (`IP address`, `Date` und `Request ID`).
+- Übermitteln Sie diese Informationen an den Support, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
 
 Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 
 > [!success]
 >
-> Lesen Sie auch unsere detaillierten Anleitungen:
->
-> - [Webhosting - Statistiken und Logs einer Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics)
-> - [Use Case - Tipps nach dem Hacken Ihrer Website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
+> Lesen Sie auch unsere detaillierte Anleitung: [Was tun, wenn die Meldung „Your request has been blocked“ angezeigt wird?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 
@@ -585,22 +587,21 @@ Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden S
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-Diese Meldung weist darauf hin, dass die IP-Adresse, die Sie für die Verbindung mit Ihrer Website verwenden, für eine begrenzte Zeit blockiert ist, in der Regel aus Sicherheitsgründen.
+Die Seite „Your IP has been banned“ kann aus verschiedenen Gründen angezeigt werden (nicht abschließende Liste):
+
+- Von derselben IP-Adresse aus werden sehr viele Anfragen innerhalb eines kurzen Zeitrahmens gesendet.
+- Anfragen von der betreffenden IP-Adresse aus sind verdächtig.
 
 In diesem Fall sind mehrere Aktionen erforderlich:
 
-- [Überprüfen Sie die Logs](/pages/web_cloud/web_hosting/logs_and_statistics) Ihrer Website, um festzustellen, welche Anfragen zu dieser Blockierung geführt haben.
-- Stellen Sie mithilfe von Antiviren- oder Antispyware-Software sicher, dass Ihre Geräte (Computer, Smartphones, etc.) nicht mit Spyware oder Malware infiziert sind.
-- Überprüfen Sie den Quellcode Ihrer Website (FTP-Speicherplatz und Datenbanken).
+- Notieren Sie die aufgerufene URL (zum Beispiel: `https://www.domain.tld`) sowie alle Informationen auf der Seite „Your IP has been banned“ (`IP address`, `Date` und `Request ID`).
+- Übermitteln Sie diese Informationen an den Support, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
 
 Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 
 > [!success]
 >
-> Lesen Sie auch unsere detaillierten Anleitungen:
->
-> - [Webhosting - Statistiken und Logs einer Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics)
-> - [Use Case - Tipps nach dem Hacken Ihrer Website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
+> Lesen Sie auch unsere detaillierte Anleitung: [Was tun, wenn die Meldung „Your IP has been banned“ angezeigt wird?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
 
@@ -608,7 +609,7 @@ Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden S
 
 ![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in Ihrem Kundencenter mit [internationaler Notation (IDN)](https://de.wikipedia.org/wiki/Internationalisierter_Domainname){.external} angezeigt wird, funktioniert sie und wird andernorts normal angezeigt. Die Webadresse Ihrer Website wird wie gewünscht angezeigt. Ihre E-Mail-Adressen werden auch bei Ihren Kontakten wie gewünscht angezeigt.
+Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in Ihrem Kundencenter mit [internationaler Notation (IDN)](https://de.wikipedia.org/wiki/Internationalisierter_Domainname) angezeigt wird, funktioniert sie und wird andernorts normal angezeigt. Die Webadresse Ihrer Website wird wie gewünscht angezeigt. Ihre E-Mail-Adressen werden auch bei Ihren Kontakten wie gewünscht angezeigt.
 
 > [!alert]
 >
@@ -619,7 +620,7 @@ Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in I
 
 ///
 
-## Weiterführende Informationen <a name=“go-further“></a>
+## Weiterführende Informationen
 
 [FAQ - Webhosting E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

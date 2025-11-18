@@ -564,7 +564,7 @@ X-Iplb-Instance: 33617
 ## The case of Large Objects
 
 If an object over 5Gb has been dropped, this generates a container such as: `<container_segments>`.<br>
-A large object can be SLO or DLO. You can find more information about this on the [OpenStack documentation](https://docs.openstack.org/swift/latest/overview_large_objects.html){.external} 
+A large object can be SLO or DLO. You can find more information about this on the [OpenStack documentation](https://docs.openstack.org/swift/latest/overview_large_objects.html) 
 
 ### SLO
 

@@ -12,7 +12,7 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou [editor do CMS WordPress](https://wordpress.com/support/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 >
 
 **Descubra como proteger o seu WordPress com um ou vários ficheiros htaccess.**
@@ -24,9 +24,9 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 
 Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto como:
 
-- [Bloco de notas](https://support.microsoft.com/pt-pt/windows/ajuda-no-bloco-de-notas-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} do Windows;
-- [Text Edit](https://support.apple.com/pt-pt/guide/textedit/welcome/mac){.external} em macOS; 
-- [Notepad+](https://notepad-plus-plus.org/){.external}.
+- [Bloco de notas](https://support.microsoft.com/pt-pt/windows/ajuda-no-bloco-de-notas-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c) do Windows;
+- [Text Edit](https://support.apple.com/pt-pt/guide/textedit/welcome/mac) em macOS; 
+- [Notepad+](https://notepad-plus-plus.org/).
 
 > [!primary]
 >

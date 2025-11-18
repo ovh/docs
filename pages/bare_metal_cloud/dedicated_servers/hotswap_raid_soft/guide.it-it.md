@@ -12,10 +12,10 @@ Alcuni server Top Gamma OVH consentono la sostituzione del disco senza interruzi
 
 ## Prerequisiti
 
-- Disporre di un server [mHG, HG o BHG](https://www.ovh.it/server_dedicati/hg/){.external}
+- Disporre di un server [mHG, HG o BHG](https://www.ovh.it/server_dedicati/hg/)
 - Disporre di un RAID Software (con scheda LSI)
 - Avere accesso al server via SSH (Linux) o RDP (Windows)
-- Aver installato l’utility <b>sas2ircu</b> (distribuita da [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external})
+- Aver installato l’utility <b>sas2ircu</b> (distribuita da [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu))
 
 ## Procedura
 
@@ -236,7 +236,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ### Con Windows
 
@@ -288,16 +288,16 @@ Per disattivare la spia lampeggiante del disco, esegui il comando precedente sos
 
 Questa operazione può essere effettuata dall’interfaccia **Gestione disco** del server Windows.
 
-A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}.
+A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
 ## Per saperne di più
 
-[Come configurare il software RAID di un server](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+[Come configurare il software RAID di un server](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
-[Hot Swap - RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard){.external}
+[Hot Swap - RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
-[Gestire il RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external} (in inglese)
+[Gestire il RAID Hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

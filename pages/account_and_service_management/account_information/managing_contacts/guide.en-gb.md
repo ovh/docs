@@ -1,7 +1,7 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2025-04-28
+updated: 2025-08-27
 ---
 
 ## Objective
@@ -10,11 +10,9 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 
 **Find out how to manage contacts for your OVHcloud services.**
 
-> [!warning]
-> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
->
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
->
+> [!primary]
+> OVHcloud offers an [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) system allowing to delegate access to other customer accounts.  
+> IAM policies enable precise access control while keeping tracability of the actions.
 
 ## Definition
 
@@ -30,11 +28,11 @@ The NIC handle is a personal username that you receive via email when you create
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager){.external}
-- Access to the email address linked to any relevant customer account
-- Appropriate rights for the service concerned
-- The new contact’s NIC handle (the contact you want to add)
-- No outstanding payments on billing contacts
+- Access to the [OVHcloud Control Panel](/links/manager).
+- Access to the email address linked to any relevant customer account.
+- Appropriate rights for the service concerned.
+- The new contact’s NIC handle (the contact you want to add).
+- No outstanding payments on billing contacts.
 
 ## Instructions
 
@@ -100,7 +98,7 @@ If one of the contacts has not received this email, the contact email address li
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](/links/manager){.external}.
+If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](/links/manager).
 
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 
@@ -108,7 +106,7 @@ The contact change will take effect a few minutes after both contacts have valid
 
 ### Example: Providing access for a website's technical administration to your webmaster
 
-You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](https://partner.ovhcloud.com/en-gb/directory/) and they are requesting access rights to your OVHcloud services in order to start building your website.
+You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](/links/partner) and they are requesting access rights to your OVHcloud services in order to start building your website.
 
 > [!warning]
 >

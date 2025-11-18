@@ -12,13 +12,13 @@ Os quadros Jumbo, ou *Jumbo Frames*, são quadros Ethernet cuja carga útil é s
 
 ## Requisitos
 
-- Ter um [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
+- Ter um [vRack](/links/network/vrack).
 - Abrir um shell com direitos root
 
 > [!warning]
-> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+> Para mais informações, consulte o nosso [comparativo](/links/bare-metal/eco-compare).
 
 > [!primary]
 >

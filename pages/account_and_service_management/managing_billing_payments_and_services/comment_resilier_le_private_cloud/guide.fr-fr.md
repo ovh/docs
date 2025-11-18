@@ -12,12 +12,12 @@ Si votre offre Private Cloud ne vous convient plus, ou que vous avez commandé u
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
+- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 
 ## En pratique
 
-L'offre Private Cloud est sans engagement. Cependant, comme indiqué dans les [Conditions Particulières du Service](http://www.ovh.com/fr/support/documents_legaux/conditions_particulieres_dedicated_cloud_2014.pdf){.external}, tout mois commencé est dû et payable d’avance.
+L'offre Private Cloud est sans engagement. Cependant, comme indiqué dans les [Conditions Particulières du Service](http://www.ovh.com/fr/support/documents_legaux/conditions_particulieres_dedicated_cloud_2014.pdf), tout mois commencé est dû et payable d’avance.
 
 >[!warning]
 >
@@ -26,7 +26,7 @@ L'offre Private Cloud est sans engagement. Cependant, comme indiqué dans les [C
 
 ### Étape 1 : demander la résiliation depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, accédez à la section `Hosted Private Cloud`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre offre dans la liste (3).
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Hosted Private Cloud`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre offre dans la liste (3).
 
 Dans le tableau « Gestion du service » de l'onglet `Informations Générales`{.action}, cliquez sur le bouton `...`{.action} (4) à droite de la date de renouvellement. Cliquez enfin sur `Supprimer le service`{.action} (5).
 

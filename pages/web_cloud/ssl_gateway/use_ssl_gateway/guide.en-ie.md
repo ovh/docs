@@ -17,7 +17,7 @@ We will now explain how to use your SSL Gateway service
 
 ### Configuring the service
 
-Log in to [your control panel](/links/manager){.external}.
+Log in to [your control panel](/links/manager).
 Then click on the `Sunrise`{.action} section.
 
 ![sunrise button](images/4.PNG){.thumbnail}
@@ -69,7 +69,7 @@ You will then land on the page for managing your solution.
 > <cite>The highest level will offer the best protection, but it may not work on older browsers.</cite>
 >
 
-[For more information on cipher](https://en.wikipedia.org/wiki/Cipher){.external}.
+[For more information on cipher](https://en.wikipedia.org/wiki/Cipher).
 
 ### Configuring the domain
 
@@ -229,7 +229,7 @@ a2enconf remoteip
 service apache2 restart
 ```
 
-You can find more information regarding this Apache feature in the [official documentation](https://httpd.apache.org/docs/current/en/mod/mod_remoteip.html){.external}.
+You can find more information regarding this Apache feature in the [official documentation](https://httpd.apache.org/docs/current/en/mod/mod_remoteip.html).
 
 #### Nginx
 
@@ -244,7 +244,7 @@ set_real_ip_from 213.32.4.0/24;
 real_ip_header X-Forwarded-For;
 ```
 
-You can find more information regarding this Nginx function in the [official documentation](http://nginx.org/en/docs/http/ngx_http_realip_module.html){.external}.
+You can find more information regarding this Nginx function in the [official documentation](http://nginx.org/en/docs/http/ngx_http_realip_module.html).
 
 ## Go further
 

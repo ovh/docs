@@ -1,7 +1,7 @@
 ---
 title: Gestão do serviço Load Balancer através da Área de Cliente
 excerpt: Resumo das funções principais e utilização inicial do serviço Load Balancer através da Área de Cliente
-updated: 2018-01-12
+updated: 2025-07-30
 ---
 
 ## Objetivo
@@ -11,7 +11,7 @@ Este guia tem como objetivo facilitar a primeira utilização do Load Balancer e
 ## Pré-requisitos
 
 - Ter acesso à Área de Cliente
-- Ter contratado um [Load Balancer](https://www.ovh.pt/solucoes/load-balancer/)
+- Ter contratado um [Load Balancer](/links/network/load-balancer)
 
 ## Questões práticas
 
@@ -28,8 +28,8 @@ Nesta página principal serão apresentadas as seguintes informações:
 |Estado|Resumo do Load Balancer com IP, Frontends, Farms ativas e servidores adicionados|
 |Utilização|Resumo da utilização do Load Balancer|
 |Gráficos|Gráficos associados à atividade do serviço em termos de ligações simultâneas ou de pedidos de ligação por minuto|
-|Informações|Detalhes sobre os IPv4 e Additional IP associados, e sobre o número do IPv4 de saída (para ver mais info, clique nos três pontos)|
-|Configuração|Opções de personalização do nome da oferta (visível em cima e na coluna à esquerda), da(s) cipher(s), do datacenter do Load Balancer|
+|Information|Os seus endereços IPv4 e IPv6, os IPs suplementares a eles associados, bem como o número de IPv4 de saída (para mais informações, clique no botão `...`{.action})|
+|Configuração|Aqui, pode personalizar o nome da sua solução (que surgirá no topo da coluna da esquerda). As cifras são personalizáveis, assim como a zona de disponibilidade onde o seu Load Balancer está baseado|
 |Subscrição|Detalhes administrativos do serviço|
 
 Para adicionar `Frontends`{.action} ou `Server Farms`{.action}, clique nos respetivos botões. Será apresentado um menu para auxiliar na configuração daqueles componentes do serviço.
@@ -47,7 +47,7 @@ Detalhes dos Elementos de um Frontend
 |Nome|Opção que permite atribuir um nome ao frontend, para facilitar a sua identificação|
 |Protocolo|Selecione entre HTTP, HTTPS, TCP, SSL TCP (ou TLS) e UDP|
 |Porta|Selecione a porta de escuta|
-|Datacenter|Pode optar pelo seu datacenter ou por todos quando criar o Frontend|
+|Datacenter|Pode escolher entre uma zona de disponibilidade em particular ou todas as zonas de disponibilidade para a criação do Frontend|
 |Farm predefinida|Se tiver várias Farms configuradas, pode predefinir uma para cada Frontend|
 
 A gestão dos Frontends tem opções de configuração avançada. 
@@ -89,6 +89,7 @@ Depois de criada a Server Farm, só falta adicionar os servidores (veja abaixo o
 |Cookie|Adicione um cookie de sessão personalizada|
 |Cadeia de certificação|Adicione uma cadeia de certificação|
 |Peso do balanceamento|Seleção do peso de balanceamento para a repartição da carga|
+|Versão do protocolo PROXY|**Unicamente se já o configurou**, escolha a versão do protocolo PROXY que pretende utilizar neste servidor. </br> Pode encontrar mais informações sobre o protocolo PROXY e sobre a sua utilização com o serviço OVHcloud Load Balancer em [este manual](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Gestão dos Certificados SSL
 Pode adicionar um SSL ao Load Balancer na secção `Certificado SSL`{.action}. Aqui tem duas opções: solicitar um certificado SSL da OVH ou adicionar um certificado externo.
@@ -101,7 +102,7 @@ Para solicitar um certificado SSL, basta aceder à secção `Certificado SSL`{.a
 |Elemento|Função|
 |---|---|
 |Nome|Opção que permite atribuir um nome ao servidor, para facilitar a sua identificação|
-|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV ou Comodo EV (veja detalhes neste endereço: https://www.ovh.pt/ssl/)|
+|Tipo de certificado|Gratuito (Let's Encrypt), Comodo DV ou Comodo EV (Para mais detalhes, [consulte esta página](/links/web/hosting-options-ssl))|
 |Fully Qualified Domain Name (FQDN)|O(s) domínio(s) associados(s) ao serviço|
 
 #### Adicionar um certificado SSL externo
@@ -118,4 +119,4 @@ Se já tem um certificado SSL, este pode ser associado ao serviço:
 
 ## Quer saber mais?
 
-Troque impressões com a nossa comunidade em <https://community.ovh.com>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

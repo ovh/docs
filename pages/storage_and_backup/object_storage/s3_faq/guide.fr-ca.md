@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "FAQ sur la solution Object Storage"
-updated: 2025-06-04
+updated: 2025-08-05
 ---
 
 ## Questions générales
@@ -47,11 +47,7 @@ Les classes Object Storage offrent un large support d'API S3. L'ensemble des API
 
 ### Quels sont les outils compatibles avec Object Storage ?
 
-La majorité des outils du marché compatibles avec le protocole Amazon S3 sont compatibles avec l'Object Storage OVHcloud.
-
-### Object Storage peut-il fonctionner avec mes outils de gestion de back up ?
-
-Oui, Object Storage est largement compatible avec  S3 et peut être intégré avec les outils du marché comme par exemple [Veeam](/pages/storage_and_backup/object_storage/s3_veeam), [Owncloud](/pages/storage_and_backup/object_storage/s3_owncloud), [Nextcloud](/pages/storage_and_backup/object_storage/s3_nextcloud).
+La majorité des outils du marché compatibles avec le protocole Amazon S3 sont compatibles avec l'Object Storage OVHcloud. Consultez le [guide Object Storage - Compatibilité avec les applications tierces](/pages/storage_and_backup/object_storage/s3_ecosystem) pour dévcouvrir une liste non exhaustive des outils et logiciels compatibles pour la sauvegarde, la gestion de vos données ou encore le partage de fichiers.
 
 ## Facturation
 
@@ -96,7 +92,7 @@ Soit le coût du stockage mensuel : 37 376 000 * 0.00001917 + (73 728 000 - 37 3
 
 Nous avons conçu les classes de stockage Object Storage pour qu’elles soient **compatibles avec S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région.
 
-Munissez-vous de vos clés d'accès Object Storage et accédez en ligne de commande aux différentes classes de stockage par commandes AWS-CLI, s3cmd ou autres.
+Munissez-vous de vos clés d'accès Object Storage et accédez en ligne de commande aux différentes classes de stockage par commandes AWS-CLI, [`s3cmd`](https://s3tools.org/s3cmd) ou autres.
 
 La liste des endpoints est disponible dans le guide « [Endpoints et géo-disponibilité de l’Object Storage](/pages/storage_and_backup/object_storage/s3_location) ».
 
@@ -222,8 +218,8 @@ Plus globalement, il existe différentes méthodes vous permettant de maximiser 
 
 Adaptée aux cas d'usage d'IA ou d'analytique, la classe High Performance est construite pour apporter de la performance grâce à son design et l'utilisation de disques SSD NVMe. Elle est adaptée à des cas d'usage nécessitant une grande vitesse de lecture / écriture sur des volumes de données importants. Des tests de performances sont disponibles sur le site Cloud Mercato : 
 
-- [OVHcloud High performance Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovh-high-perf-object-storage-benchmark){.external}
-- [OVHcloud Standard Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovhcloud-standard-object-storage-benchmark){.external}
+- [OVHcloud High performance Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovh-high-perf-object-storage-benchmark)
+- [OVHcloud Standard Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovhcloud-standard-object-storage-benchmark)
 
 ### Quelle est la bande passante disponible pour l'upload et le download ?
 

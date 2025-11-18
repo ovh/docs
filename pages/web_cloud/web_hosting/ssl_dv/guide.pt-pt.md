@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar um certificado SSL Sectigo DV"
 excerpt: "Saiba como ativar um certificado SSL Sectigo DV no seu alojamento Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objetivo
@@ -20,7 +20,7 @@ Os níveis de encriptação SSL são iguais entre os três tipos de certificado.
 
 A principal diferença reside no nível de verificações que será realizado pela Autoridade de Certificação (AC) que emite o certificado SSL e atesta a sua autenticidade.
 
-Para os alojamentos partilhados OVHcloud, a autoridade de certificação que emite os certificados SSL DV é [Sectigo](https://sectigostore.com){.external}.
+Para os alojamentos partilhados OVHcloud, a autoridade de certificação que emite os certificados SSL DV é [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -75,6 +75,18 @@ Se necessário, consulte os nossos manuais para saber como:
 - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Encomendar o certificado SSL Sectigo DV
+
+> [!primary]
+>
+> **Informações sobre a migração para a nova interface de gestão de certificados SSL:**
+>
+> O resto deste guia destina-se aos clientes cujos serviços de alojamento web ainda não migraram para a nova interface de gestão dos certificados SSL.
+> Para detetar se esta migração foi efetuada, aceda ao seu alojamento web na Área de Cliente OVHcloud e verifique a presença do separador `Certificados SSL`.
+> Se estiver presente o separador `Certificados SSL`, o seu serviço já migrou para a nova interface de gestão. Neste caso, consulte diretamente [este manual](/pages/web_cloud/web_hosting/ssl_management) para gerir o seu certificado SSL.
+>
+> Por razões técnicas, nem todos os serviços de alojamento web de todos os nossos clientes podem ser migrados de uma só vez. Esta migração é, por isso, repartida durante algumas semanas e é realizada de forma automática, sem qualquer incidência no funcionamento dos seus serviços de alojamento web, e sem qualquer intervenção ou ação necessária da sua parte.
+>
+> A prazo, todos os serviços de alojamento web funcionarão com a nova interface de gestão dos certificados SSL.
 
 Para encomendar o certificado SSL Sectigo DV, execute as seguintes ações:
 

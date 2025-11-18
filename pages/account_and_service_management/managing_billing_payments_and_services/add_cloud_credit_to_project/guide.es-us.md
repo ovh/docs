@@ -22,7 +22,7 @@ Inicie sesión en su [área de cliente de OVHcloud](/links/manager), acceda a la
 
 > [!warning]
 >
-Tenga en cuenta que los créditos añadidos en esta sección no pueden transferirse ni reembolsarse. No tienen ningún valor monetario y se pierde todo crédito que no se utilice en los 13 meses siguientes a su compra.
+> Tenga en cuenta que los créditos añadidos en esta sección no pueden transferirse ni reembolsarse. No tienen ningún valor monetario y se pierde todo crédito que no se utilice en los 13 meses siguientes a su compra.
 >
 
 ### Añadir crédito
@@ -55,7 +55,7 @@ El saldo del código promocional aparecerá en la lista `Crédito y códigos pro
 
 > [!primary]
 >
-Los períodos de validez de los códigos promocionales suelen ser más limitados, por lo que el saldo del código promocional se utilizará antes que el crédito Public Cloud.
+> Los períodos de validez de los códigos promocionales suelen ser más limitados, por lo que el saldo del código promocional se utilizará antes que el crédito Public Cloud.
 >
 
 ## Más información

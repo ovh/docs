@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Accessing your app with tokens
-excerpt: Discover how to create a scoped token and query your AI Deploy app
-updated: 2023-04-04
+excerpt: Learn how to create scoped tokens to securely access your AI Deploy applications
+updated: 2025-07-28
 ---
 
 > [!primary]
@@ -13,92 +13,137 @@ updated: 2023-04-04
 
 This guide covers the creation of application tokens for AI Deploy.
 
+This is particularly useful when you want to make your app accessible to others without sharing your username and password. Moreover, using tokens facilitates the integration of your app with other services or scripts, such as those using curl, allowing for a more automated and flexible interaction with your AI Deploy application.
+
+In this tutorial, we will create and assign tokens to a basic AI Deploy app, running the [infrastructureascode/hello-world](https://hub.docker.com/r/infrastructureascode/hello-world) Docker image.
+
 ## Requirements
 
 - a **Public cloud** project
 - access to the [OVHcloud Control Panel](/links/manager)
-- a Running AI Deploy app (the deployed app in this guide uses the Docker image [infrastructureascode/hello-world](https://hub.docker.com/r/infrastructureascode/hello-world))
 
 ## Instructions
 
-### Adding labels to an App
+By default, the following two labels are automatically added to each AI Deploy application:
 
-Tokens are scoped based on labels added to your AI Deploy app. To scope a token you need to add a label to your AI Deploy app upon submission.
+- `ovh/id` whose value is the ID of the AI Deploy app
+- `ovh/type` whose value is `app`, the type of AI resource
+
+> [!primary]
+> These labels are prefixed by `ovh/`, meaning these are reserved by the platform. These labels will be automatically overwritten by the platform if you attempt to redefine them during submission. They won't be displayed in the manager UI.
+>
+
+In addition to these default labels, you can **create new ones** to further customize and secure your application access.
+
+### Adding labels to an app
+
+Tokens are scoped based on labels added to your AI Deploy app. To scope a token, you must add a label to your AI Deploy app. This can be done either during the app creation process or after the app is deployed. You can add multiple labels by repeating the following process.
+
+#### Adding label during app creation
+
+To add a label when creating an AI Deploy app, access the `Advanced Configuration`{.action} step in the app creation process. This section allows you to specify a custom Docker command, the mounted volumes, and **the app labels**. 
+
+From this last sub-section, you can add a key-value pair. The key is the label identifier (e.g., `group`), while the value is the corresponding value assigned to this key (e.g., `A`). In this tutorial, we use the example `group=A` as the label of the AI Deploy app:
 
 ![app add label](images/01-app-add-label.png){.thumbnail}
 
-In this instance we add the label `group=A` to the AI Deploy app. A set of defaults labels is added to all AI Deploy apps:
-
-- `ovh/id` whose value is the ID of the AI Deploy app
-- `ovh/type` with value `app`, the type of AI resource
-
-> [!primary]
-> Labels prefixed by `ovh/` are reserved by the platform, those labels are overriden upon submission if any are provided.
-
-All the labels of an AI Deploy app are listed on the AI Deploy app details under **Tags**:
+Once created, all the labels of an AI Deploy app are listed on the app details, under **Labels** field:
 
 ![app dashboard](images/02-app-dashboard.png){.thumbnail}
 
+#### Adding label to an existing app
+
+If your app is already deployed, you can still add or update labels at any time using the Control Panel (UI) or the `ovhai` CLI.
+
+> [!tabs]
+> **Using the Control Panel (UI)**
+>>
+>> Navigate to the **AI Deploy** section where all your apps are listed. **Click the name of your app** to open its details page. Locate the **Labels** section. Enter the key-value pair and click `+`{.action} to add the label to your app.
+>>
+>> ![image](images/03-app-add-label-existing-app.png){.thumbnail}
+>> 
+>> After saving, the added label will be visible in the **Labels** section of the app details. 
+>>
+> **Using ovhai CLI**
+>>
+>> To follow this section, make sure you have installed the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) on your computer or on an instance.
+>>
+>> You can also add labels to an existing app using the `ovhai` CLI. Run the following command:
+>>
+>> ```console
+>> ovhai app set-label <app_id> <name> <value>
+>> ```
+>>
+>> Replace <app_id> with the unique identifier of your app (found in the app details or by running `ovhai app ls`). And replace <name> and <value> with your desired key and value pair. For example:
+>>
+>> ```console
+>> ovhai app set-label a8318623-8357-48b4-bd3b-648c3e343ec9 group A
+>> ```
+>>
+>> This command adds the label `group=A` to the app with ID `a8318623-8357-48b4-bd3b-648c3e343ec9`.
+>> 
+>> You can verify app labels by running `ovhai app get <app_id>`. Labels will be displayed at the top of app details, in the *Labels* field.
+
 ### Generating tokens
 
-From the **AI Deploy** page, you access the tokens management page by clicking the `Tokens`{.action} tab.
+From the **AI Dashboard** page, you can access the tokens management page by clicking on the `Tokens`{.action} tab. From there, you can click on the `+ Create a token`{.action} button to create a new token:
 
-![app list](images/03-app-list.png)
-
-Once on the token management tab, simply click on `New Token`{.action}.
-
-![token list new](images/04-token-list-new-2.png){.thumbnail}
-
-#### Read token
+![token list new](images/04-token-list.png){.thumbnail}
 
 There are two types of roles that can be assigned to a token:
 
-- AI Platform - Read-only
-- AI Platform - Operator
+- **AI Platform - Reader**: allows only querying the app
+- **AI Platform - Operator**: allows querying and full lifecycle management (start/stop/delete)
 
-A Read-only token will only grant you the right to query the deployed app while an Operator token would also allow you to manage the AI Deploy app itself.
+#### Read token
 
-Let us create a token for the AI Deploy apps matching the label `group=A` with read-only access in the GRA cluster.
-To create an AI Deploy app token we need to specify 3 parameters:
-
-- The token scope is specified through label selectors, and a token will be scoped over any app matching the set of label selectors. In this case `group=A`
-- The token role: AI Training - Read-only
-- The region (cluster in which are deployed the AI Deploy apps): GRA.
-
-Fill out the form:
+Let's create a token for the AI Deploy apps matching the label `group=A` with read-only access in the GRA (Gravelines) cluster. To do this, we will need to fill 4 parameters:
 
 ![token generation input read](images/05-token-gen-input-read.png){.thumbnail}
 
-Click `Generate`{.action}. Upon success, you are redirected to the token list with the newly generated token displayed at the top:
+- **Token name**: used for token identification, management only.
+- **Label selector**: determines which apps the token applies to (e.g., `group=A`).
+- **Role**: choose from:
+  - `AI Reader`: read-only
+  - `AI Operator`: read & manage
+- **Region**: e.g., `GRA` (for Gravelines)
+
+After completing the form, click `Generate`{.action} to confirm the token creation. 
+
+> [!warning]
+> You will then receive the value of your new token, which you must **carefully save**, as its value is only displayed once. If you lose the token value, you will need to [regenerate it](#regenerating-a-token).
+
+You will then be redirected to the token list, where the newly generated token will be displayed at the top:
 
 ![token generation result](images/06-token-gen-result-read.png){.thumbnail}
 
-Save the token string for later use.
-
-> [!warning]
-> The token is only displayed once, make sure to save it before leaving the page or you will need to regenerate the token.
-
 This newly generated token provides read access over all resources tagged with the label `group=A` including the ones submitted after the creation of the token.
+
+If you prefer working from the command line, you can generate the same token using the `ovhai` CLI:
+
+```console
+ovhai token create reader-token --role read --label-selector group=A
+```
 
 #### Operator token
 
-An operator token grants read access along with management access for the matching apps. This means that you can manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)) or the [AI Training API](https://gra.ai.cloud.ovh.net/) by providing this token.
-
-This Operator token will be scoped on a specific AI Deploy app and we will use the default `ovh/id` label to do so (since it is reserved, there is only one AI Deploy app that can match this label selector).
-
-- Token scope: `ovh/id=4c4f6253-a059-424a-92da-5e06a12ddffd`
-- The token role: AI Training - Operator
-- The region: GRA.
+An operator token grants read access along with management access for the matching apps. This allows you to manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)) or the [AI API](https://gra.ai.cloud.ovh.net/) by providing this token.
 
 ![token generation input operator](images/07-token-gen-input-op.png){.thumbnail}
 
-Additional information about the use of a token to manage an AI Training resource can be found [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli#use-the-app-token).
+Equivalent CLI command is:
+
+```console
+ovhai token create operator-token --role operator --label-selector group=A
+```
+
+You can also scope a token to a specific app using the `ovh/id` label and the app’s ID as its value. This label is added automatically by default as explained [above](#instructions) and, because it is reserved, it will uniquely match only one app.
 
 ### Using a token to query an AI Deploy app
 
 With the token we generated in the previous step, we will now query the app. For this demonstration, we deployed a simple Hello World app that always responds `Hello, World!`.
 
-You can get the access URL of your app in the details of the AI Deploy app, above the **Tags**.
+You can get the access URL of your app in the details of the AI Deploy app, above the **Labels**.
 
 #### Browser
 
@@ -114,7 +159,7 @@ You now land on the exposed AI Deploy app service:
 
 #### Code integration
 
-You can also directly CURL the AI Deploy app using the token as an `Authorization` header:
+You can also use CURL to directly query the AI Deploy app using the token as an `Authorization` header:
 
 ```bash
 export TOKEN=<your-token>
@@ -137,7 +182,7 @@ From the list of tokens, click on the action menu and select `Regenerate`{.actio
 
 ![token regenerate](images/08-token-list-regen.png){.thumbnail}
 
-Then click on `Regenerate`{.action} to confirm.
+Then click on `Confirm`{.action}:
 
 ![token regenerate confirm](images/09-token-regen-confirm.png){.thumbnail}
 
@@ -146,6 +191,10 @@ Then click on `Regenerate`{.action} to confirm.
 If you simply need to invalidate the token, you can delete it using the same action menu to regenerate a token. This will invalidate the existing token.
 
 ![token delete](images/10-token-list-delete.png)
+
+## Go further
+
+Additional information about the use of a token to manage AI Solutions using `ovhai` CLI can be found [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli).
 
 ## Feedback
 

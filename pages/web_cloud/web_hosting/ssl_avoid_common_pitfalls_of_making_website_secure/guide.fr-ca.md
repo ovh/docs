@@ -19,9 +19,9 @@ Retrouvez, dans ce tutoriel, quelques exemples de situations concernant la sécu
 
 ## Prérequis
 
-- Posséder un [hébergement web OVHcloud](/links/web/hosting){.external}.
-- Avoir enregistré au moins un [nom de domaine](/links/web/domains){.external}.
-- Avoir accès à votre [espace client OVHcloud](/links/manager){.external}, partie « Web cloud ».
+- Posséder un [hébergement web OVHcloud](/links/web/hosting).
+- Avoir enregistré au moins un [nom de domaine](/links/web/domains).
+- Avoir accès à votre [espace client OVHcloud](/links/manager), partie « Web cloud ».
 
 ## En pratique
 
@@ -41,7 +41,7 @@ Dans la plupart des cas, il s'agit de scripts externes, provenant d'autres sites
 
 Comment savoir si mon site est concerné ?
 
-Les outils de débogage fournis par *Mozilla Firefox* et *Google Chrome* peuvent vous indiquer si votre site web contient ou non des éléments bloqués en raison d'un contenu mixte. La documentation disponible sur le [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} explique l'utilisation de ces outils pour repérer les contenus mixtes.
+Les outils de débogage fournis par *Mozilla Firefox* et *Google Chrome* peuvent vous indiquer si votre site web contient ou non des éléments bloqués en raison d'un contenu mixte. La documentation disponible sur le [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) explique l'utilisation de ces outils pour repérer les contenus mixtes.
 
 ### Contenu dupliqué (duplicate content)
 

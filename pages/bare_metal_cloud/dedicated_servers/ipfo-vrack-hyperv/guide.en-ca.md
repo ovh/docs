@@ -1,8 +1,12 @@
 ---
 title: "Setting up a Virtual Machine using Additional IPs and Hyper-V over a vRack"
 excerpt: "How to use Hyper-V with Additional IPs over a vRack"
-updated: 2021-02-25
+updated: 2025-07-22
 ---
+
+> [!primary]
+> This article is about Additional IPv4 configuration over a vRack. You can also configure Additional IPv6 addresses on your vRack using [this guide](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> 
 
 ## Objective
 
@@ -17,9 +21,9 @@ updated: 2021-02-25
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ca/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-ca/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 

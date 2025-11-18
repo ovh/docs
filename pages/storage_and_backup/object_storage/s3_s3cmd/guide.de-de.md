@@ -14,7 +14,7 @@ S3cmd is a free command line tool and client for managing data in storage spaces
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
@@ -127,7 +127,7 @@ Download a file file.txt from a bucket:
 $ s3cmd get s3://BUCKET/OBJECT LOCAL_FILE
 ```
 
-You will find a detailed documentation of the possible actions on the [official S3cmd documentation](https://s3tools.org/usage){.external}.
+You will find a detailed documentation of the possible actions on the [official S3cmd documentation](https://s3tools.org/usage).
 
 ## Go further
 

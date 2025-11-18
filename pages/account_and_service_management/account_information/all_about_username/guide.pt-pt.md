@@ -4,6 +4,11 @@ excerpt: 'Saiba como otimizar a segurança da sua conta OVHcloud, gerir os seus 
 updated: 2025-05-22
 ---
 
+> [!success]
+> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
+> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
+> [Aceda ao inquérito.](https://s.elq.fr/ovhext/DItXnvw)
+
 ## Objetivo
 
 A gestão dos seus serviços e dados efetua-se principalmente através da Área de Cliente OVHcloud.
@@ -15,7 +20,7 @@ A Área de Cliente OVHcloud permite-lhe também gerir os seus dados pessoais e d
 
 ## Requisitos
 
-- Ter criado a [sua conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
+- Ter criado a [sua conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 > [!primary]
@@ -113,11 +118,11 @@ Depois de preencher as informações, clique no botão `Validar`{.action}.
 
 #### Exercer os meus direitos sobre os meus dados pessoais
 
-Em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD), pode solicitar o exercício dos seus direitos através deste [formulário](https://www.ovh.pt/proteger-dados-pessoais/exercer-seus-direitos/){.external}.
+Em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD), pode solicitar o exercício dos seus direitos através deste [formulário](https://www.ovh.pt/proteger-dados-pessoais/exercer-seus-direitos/).
 
 #### Eliminar a minha conta OVHcloud
 
-Pode pedir para eliminar a sua conta OVHcloud e os dados associados, preenchendo [o formulário de exercício dos direitos RGPD](https://www.ovh.pt/proteger-dados-pessoais/exercer-seus-direitos/){.external} e escolhendo "Direito de eliminação".
+Pode pedir para eliminar a sua conta OVHcloud e os dados associados, preenchendo [o formulário de exercício dos direitos RGPD](https://www.ovh.pt/proteger-dados-pessoais/exercer-seus-direitos/) e escolhendo "Direito de eliminação".
 
 > [!warning]
 >

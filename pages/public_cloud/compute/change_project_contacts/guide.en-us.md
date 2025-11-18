@@ -13,7 +13,7 @@ Modifying these contacts enables you to separate the technical management of ser
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Admin and billing contacts in the same OVHcloud subsidiary
 

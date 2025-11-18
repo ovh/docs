@@ -21,7 +21,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 - Posiadanie [hostingu](/links/web/hosting) OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](/links/web/hosting-options-startsql) lub [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/)
+- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](/links/web/hosting-options-startsql) lub [Web Cloud Databases](/links/web/databases)
 
 ## W praktyce
 
@@ -150,7 +150,7 @@ Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w p
 
 ### Przekroczenie pojemności pamięci RAM (tylko Web Cloud Databases)
 
-Poniższy komunikat w części `Web Cloud Databases`{.action} Twojego [Panelu klienta OVHcloud](/links/manager) wskazuje, że Twój serwer [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
+Poniższy komunikat w części `Web Cloud Databases`{.action} Twojego [Panelu klienta OVHcloud](/links/manager) wskazuje, że Twój serwer [Web Cloud Databases](/links/web/databases) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
@@ -158,7 +158,7 @@ W tej sytuacji możesz zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_c
 
 > [!warning]
 >
-> Aby zwiększyć pamięć RAM, nie należy włączać usługi Web Cloud Databases za pomocą hostingu Performance. Jeśli chcesz zwiększyć ilość pamięci RAM bazy danych zawartej w [ofertach wydajności](/links/web/hosting-performance-offer){.external}, musisz ją odłączyć.
+> Aby zwiększyć pamięć RAM, nie należy włączać usługi Web Cloud Databases za pomocą hostingu Performance. Jeśli chcesz zwiększyć ilość pamięci RAM bazy danych zawartej w [ofertach wydajności](/links/web/hosting-performance-offer), musisz ją odłączyć.
 > 
 > Aby odłączyć bazę danych, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij polecenie `Hosting`{.action}, następnie wybierz hosting, na którym aktywowana jest usługa Web Cloud Databases.
 >

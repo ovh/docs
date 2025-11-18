@@ -1,120 +1,108 @@
 ---
-title: Apresentação do Load Balancer OVH
-excerpt: Conheça o Load Balancer OVH
-updated: 2018-01-17
+title: Introduction to the OVHcloud Load Balancer
+excerpt: Discover the OVHcloud Load Balancer solution for distributing and securing your traffic
+updated: 2025-10-29
 ---
 
-## Sumário
+## Objective
 
-O Load Balancer OVH é um repartidor de carga (balanceador de carga) caracterizado pela facilidade de configuração e pela fiabilidade. Configure os seus produtos com o Load Balancer OVH. Nós tratamos do resto!
+The **OVHcloud Load Balancer** is a fully managed service designed to ensure high availability, performance, and scalability for your applications.
+Its main role is to distribute workloads across several servers or applications.
+Simply configure your services behind the Load Balancer — OVHcloud handles redundancy, security, and global traffic distribution.
 
-**Descubra agora o Load Balancer da OVH**
+## Requirements
 
-## Requisitos
+- Access to the [OVHcloud Control Panel](/links/manager)
+- At least one service to balance (Dedicated Server, VPS, Public Cloud instance, etc.)
 
-- Sem requisitos específicos.
+## Instructions
 
-## Descrição
+The Load Balancer leverages **industry-standard open-source technologies** to handle different traffic types:
 
- 
-O novo Load Balancer assenta nas melhores soluções open source: Haproxy para o tráfego TCP e Nginx para o tráfego UDP.
-
- Além disso, a nova solução pode ser usada com diferentes protocolos:
-
-|Tipo|Descrição|Vantagens|Tecnologia|
+| Type | Description | Advantages | Technology |
 |---|---|---|---|
-|HTTP|Qualquer tipo de serviço web HTTP/HTTPS|Otimizado para processamento L7 (aplicações)|Haproxy|
-|TCP|Qualquer serviço de rede que não seja HTTP|Compatível com todas as aplicações TCP|Haproxy|
-|UDP|Qualquer tipo de tráfego UDP|Compatível com todas as aplicações UDP|Nginx|
+| HTTP/HTTPS | All web services and APIs | Optimized for L7 (application layer) processing, URL redirection, headers, ACLs | HAProxy |
+| TCP | Non-HTTP network services | Supports all TCP applications | HAProxy |
+| UDP | All UDP traffic | Supports all UDP applications | Nginx |
 
-Características do serviço:
+### Key Features
 
-- proteção Anti-DDoS OVH;
- - replicação DNS em várias zonas geográficas (Anycast);
- - funções avançadas para HTTP/HTTPS (reencaminhamento, headers, ACL...);
- - compatibilidade com Additional IP;
- - compatibilidade com vRack;
- - redundância: o Load Balancer funciona em instâncias diferentes, alojadas em equipamentos separados, protegidos por sistemas redundantes.
+- **Built-in DDoS protection** across all traffic types
+- **Global Anycast network** for optimal latency and failover
+- **Advanced HTTP/HTTPS support**: redirections, headers, ACLs, etc.
+- **Additional IP and vRack compatibility**: improve availability and performance with advanced networking
+- **High availability**: isolated redundant instances ensure resilience
+- **Scalability**: add or remove servers and farms without downtime
 
-### Principais elementos
+### Architecture Overview
 
-- A nova oferta Load Balancer OVH é composta por três elementos principais:
+The Load Balancer consists of three main components:
 
-![Geral](images/diag_gen.png){.thumbnail}
-
-|Principais elementos|Função|
+| Component | Function |
 |---|---|
-|Frontend|O Frontend permite definir o tipo de protocolo (HTTP/TCP/UDP) do serviço Load Balancer OVH. Este inclui ainda a porta de escuta do serviço|
-|Farm|A Farm recebe o tráfego proveniente do Frontend; esta é a componente associada à repartição da carga|
-|Server|Servidores que recebem o tráfego final e que respondem através da aplicação|
+| **Front-end** | Defines the entry protocol (HTTP/TCP/UDP) and listening port |
+| **Farm** | Distributes traffic from the front-end across servers |
+| **Server** | Handles inbound and outbound application traffic |
 
-Os elementos principais do Load Balancer permitem configurar praticamente qualquer tipo de load balancing.
+![General diagram](images/diag_gen2025.png){.thumbnail}
 
-### Vantagens do Load Balancer OVH
+## Benefits
 
-#### Repartir o tráfego
+### Balance and Scale Seamlessly
 
-A distribuição do tráfego é a função básica de um Load Balancer, mas a solução da OVH faz muito mais do que isso.
+Distribute workloads across multiple servers and scale horizontally without service interruption.
 
-![Distribuir o tráfego](images/distribute_load.png){.thumbnail}
+![Balance the load](images/distribute_load2025.png){.thumbnail}
 
-#### Eliminar os riscos de downtime
+### High Availability and Uptime
 
-O Load Balancer OVH deteta automaticamente a ausência de resposta de um servidor. Nessa altura, redireciona o tráfego do servidor indisponível para outro servidor. Resultado: o problema é resolvido sem qualquer interrupção do serviço.
+Automatic health checks detect unresponsive servers and reroute traffic instantly, minimizing downtime.
 
-![Eliminar downtime](images/eliminate_downtimes.png){.thumbnail}
+![Eliminate downtime](images/eliminate_downtimes2025.png){.thumbnail}
 
-#### Ajustar capacidade da infraestrutura de forma fácil
+### Simplified Maintenance
 
-A solução OVH permite adicionar ou eliminar uma Farm, um Frontend ou um servidor do Load Balancer OVH sem interrupção do serviço.
+Place a farm or server in downtime mode for maintenance without impacting users, then reintegrate it seamlessly.
 
-![Escalar infraestrutura](images/facilitate_maintenance.png){.thumbnail}
+![Make maintenance easier](images/facilitate_maintenance2025.png){.thumbnail}
 
-#### Manutenção mais simples
+### Service Integration
 
-A infraestrutura tem uma tarefa de manutenção agendada? Agora é possível desativar temporariamente uma server farm com toda a facilidade, para que esta deixe de receber tráfego durante o período da manutenção. Quando a intervenção terminar, pode adicionar novamente os servidores.
+Easily combine with other OVHcloud services:
 
-![Manutenção fácil](images/scale_easily.png){.thumbnail}
+- Public Cloud instances
+- VPS
+- Dedicated Servers
+- vRack private networking
 
-#### Combinar vários serviços
+![Combine your services](images/mix_and_match2025.png){.thumbnail}
 
-O Load Balancer permite usar ou combinar diferentes serviços da OVH, como por exemplo:
+### Geographic Distribution (Anycast)
 
-- instâncias Public Cloud com Additional IP;
-- VPS com Additional IP;
-- servidores dedicados com Additional IP;
-- vRack (redes privadas).
+Serve users worldwide with low latency and resilient routing.
 
-![Combinar diferentes serviços](images/mix_and_match.png){.thumbnail}
+![Anycast](images/anycast2025.png){.thumbnail}
 
-#### Anycast
+### Versatile Use Cases
 
-Com o Anycast, pode distribuir o tráfego dos serviços por diferentes zonas geográficas:
+Support multiple services over HTTP(S), TCP, and UDP traffic.
 
-![Anycast](images/anycast.png){.thumbnail}
+#### Email server
 
-#### Repartir qualquer tipo de tráfego
+Balance the load between your email servers.
 
-O Load Balancer OVH pode ser usado para repartir tráfego HTTP, TCP ou UDP. 
+![Mail](images/mail2025.png){.thumbnail}
 
-#### Servidor de e-mail
+#### Databases
 
-Também pode repartir o tráfego entre os servidores de e-mail:
+Balance your databases, and make them redundant.
 
-![Mail](images/mail.png){.thumbnail}
+![Databases](images/database2025.png){.thumbnail}
 
-#### Base de dados
+## Go Further
 
-Equilibre o esforço das base de dados e crie redundâncias:
+- [Find out more about load balancing (Wikipedia)](https://en.wikipedia.org/wiki/Load_balancing)
+- [HAProxy official site](http://www.haproxy.org/#desc)
+- [Nginx documentation](https://nginx.org/en/docs/)
 
-![Bases de Dados](images/database.png){.thumbnail}
-
-## Quer saber mais? Consulte a informação abaixo
-
-[Saber mais sobre o Load Balancer](https://pt.wikipedia.org/wiki/Balanceamento_de_carga){.external}.
-
-[Saber mais sobre Haproxy](http://www.haproxy.org/#desc){.external}.
-
-[Saber mais sobre Nginx](https://pt.wikipedia.org/wiki/Nginx){.external}.
-
-Ou fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

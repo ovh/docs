@@ -7,7 +7,7 @@ updated: 2023-12-29
 
 Le service de [SMS réponse](https://www.ovhcloud.com/fr/sms/marketing/sms-response/) vous permet d'envoyer un SMS auquel le destinataire pourra répondre. Vous pouvez ainsi créer un échange de réponses (programmation d'un rendez-vous médical, jeux, etc.) avec votre destinataire.
 
-Lexpéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation est incluse dans votre offre SMS et la réponse n'est pas surtaxée pour le destinataire.
+L'expéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation est incluse dans votre offre SMS et la réponse n'est pas surtaxée pour le destinataire.
 
 > [!primary]
 > **Important**
@@ -20,7 +20,7 @@ Lexpéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation e
 ## Prérequis
 
 - Disposer d’un compte SMS OVHcloud crédité.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -31,7 +31,7 @@ Lexpéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation e
 Les réponses sont possibles depuis les opérateurs mobiles français (Bouygues Telecom, Free, Orange, SFR et opérateurs virtuels (MNVO) associés).<br>
 Cela signifie que seuls les numéros géolocalisés en France métropolitaine et associés à un abonnement chez un de ces opérateurs utilisent des SMS compatibles et verront leurs réponses traitées.
 
-Les destinataires ne peuvent répondre à votre SMS que lorsque vous utilisez le [numéro virtuel](https://www.ovhcloud.com/fr/sms/virtual-numbers/) ou le numéro court lors de l’envoi. Ce dernier, à 5 chiffres, est attribué aléatoirement et est spécifique à la conversation. Il ne pourra donc pas être conservé.
+Les destinataires ne peuvent répondre à votre SMS que lorsque vous utilisez le [numéro virtuel](/links/telecom/sms-vln) ou le numéro court lors de l’envoi. Ce dernier, à 5 chiffres, est attribué aléatoirement et est spécifique à la conversation. Il ne pourra donc pas être conservé.
 
 Le fonctionnement du service de réponse par SMS est très simple :
 
@@ -48,7 +48,7 @@ La réponse (si vous l'activez) peut être ensuite :
 
 Avant d'envoyer votre SMS réponse, nous vous conseillons de configurer les options de réception des réponses.
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
+Connectez-vous à votre [espace client](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
 
 Dans la barre d'onglets, cliquez sur `Options`{.action} puis sur `Options des réponses`{.action}.
 

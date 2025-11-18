@@ -1,13 +1,13 @@
 ---
-title: Caching/Valkey - Tutorial - Boost your CMS (from the example of WordPress)
+title: Valkey - Tutorial - Boost your CMS (from the example of WordPress)
 keywords: wordpress, redis, dbaas, cms
-excerpt: Boost the performances of your WordPress CMS with a Caching/Valkey service
+excerpt: Boost the performances of your WordPress CMS with a Valkey service
 updated: 2024-06-12
 ---
 
 ## Objective
 
-Do you have a CMS website or blog, perhaps powered by WordPress? Learn how to speed up page load times and SQL queries using a Caching/Valkey service! In this tutorial, we will set up a Caching/Valkey service for your CMS data. All users, even administrators and especially visitors, will directly benefit from a better performance of the website.
+Do you have a CMS website or blog, perhaps powered by WordPress? Learn how to speed up page load times and SQL queries using a Valkey service! In this tutorial, we will set up a Valkey service for your CMS data. All users, even administrators and especially visitors, will directly benefit from a better performance of the website.
 
 > [!warning]
 >
@@ -18,12 +18,12 @@ Do you have a CMS website or blog, perhaps powered by WordPress? Learn how to sp
 
 ### CMS platform
 
-For this tutorial we propose to use the WordPress CMS, running on Linux Ubuntu with MySQL as the main database. To get the object cache we will use a Public Cloud Database for Caching/Valkey and a WordPress plugin for Redis®.
+For this tutorial we propose to use the WordPress CMS, running on Linux Ubuntu with MySQL as the main database. To get the object cache we will use a Public Cloud Database for Valkey and a WordPress plugin for Redis®.
 
 > [!warning]
 >This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/es-es/directory/) and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
+>If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
 >
 > Remember to back up your files prior to making any changes.
 >
@@ -34,8 +34,8 @@ This tutorial requires:
 
 - A running WordPress
 - A WordPress administrator account to install a plugin
-- A [PHP Redis® client](https://redis.io/clients#php){.external} supported by the plugin
-- An OVHcloud Public Cloud database for Caching/Valkey
+- A [PHP Redis® client](https://redis.io/clients#php) supported by the plugin
+- An OVHcloud Public Cloud database for Valkey
 
 ## Instructions
 
@@ -51,16 +51,16 @@ The main software component releases used for the following screenshots and exam
 
 ### Configuring your CMS: WordPress
 
-If you need to install WordPress, please refer to the official guide: [WordPress How To Install](https://wordpress.org/support/article/how-to-install-wordpress/){.external}.
+If you need to install WordPress, please refer to the official guide: [WordPress How To Install](https://wordpress.org/support/article/how-to-install-wordpress/).
 
 Once done, we will set up the WordPress backend correctly.
 For the next steps, let's consider that you have an up and running WordPress system on a LAMP (Linux, Apache, MySQL, PHP) platform.
 
 ### PHP Redis® Client: PhpRedis
 
-As WordPress is based on PHP, we will need a PHP Redis® client. We propose to use one of the main recommended [PHP Redis® clients](https://redis.io/clients#php){.external}: PhpRedis.
+As WordPress is based on PHP, we will need a PHP Redis® client. We propose to use one of the main recommended [PHP Redis® clients](https://redis.io/clients#php): PhpRedis.
 
-As TLS is required to secure the connection to the OVHcloud Public Cloud database for Caching/Valkey, we have to use the v5.3.x release of PhpRedis or above.
+As TLS is required to secure the connection to the OVHcloud Public Cloud database for Valkey, we have to use the v5.3.x release of PhpRedis or above.
 
 Please check that PhpRedis is installed, with a compliant release:
 
@@ -81,19 +81,19 @@ sudo systemctl restart apache2
 
 ### Redis® WordPress plugin
 
-There are multiple Redis® plugins that could be used to integrate to a Caching/Valkey service. You can search them directly in the Plugin menu. For this tutorial we decided to use the most popular one: Redis Object Cache. Click on the Install Now button:
+There are multiple Redis® plugins that could be used to integrate to a Valkey service. You can search them directly in the Plugin menu. For this tutorial we decided to use the most popular one: Redis Object Cache. Click on the Install Now button:
 
 ![Search Redis Plugin](images/Redis_plugin_list.png){.thumbnail}
 
-You can get more information related to this WordPress plugin at the official [WordPress plugin documentation - Redis Object Cache](https://wordpress.org/plugins/redis-cache/){.external}.
+You can get more information related to this WordPress plugin at the official [WordPress plugin documentation - Redis Object Cache](https://wordpress.org/plugins/redis-cache/).
 
-### Configure WordPress to connect to the Caching/Valkey service
+### Configure WordPress to connect to the Valkey service
 
 #### Modify wp-config.php
 
-Before activating the Redis Object Cache plugin, it is required to configure the Caching/Valkey service connection parameters.
-By default, this plugin looks for a Caching/Valkey service hosted in the same server as your WordPress.
-It's not our case scenario here, since the Caching/Valkey service is hosted in OVhcloud Public Cloud Databases.
+Before activating the Redis Object Cache plugin, it is required to configure the Valkey service connection parameters.
+By default, this plugin looks for a Valkey service hosted in the same server as your WordPress.
+It's not our case scenario here, since the Valkey service is hosted in OVhcloud Public Cloud Databases.
 
 We will follow the official plugin wiki to define the remote server: <https://github.com/rhubarbgroup/redis-cache/wiki/Configuration-Options>.
 This has to be done in the WordPress configuration file (**wp-config.php** located in /var/www/wordpress/ in our example) and add the following lines:
@@ -108,11 +108,11 @@ define('WP_CACHE_KEY_SALT', 'myOVHcloudRedis_' );
 ```
 #### Modify the host
 
-The salt key is not mandatory, even more if you have only one application using a Caching/Valkey service, but if you have several WordPress sites, it will be useful to determine **what-pushes-what**.
+The salt key is not mandatory, even more if you have only one application using a Valkey service, but if you have several WordPress sites, it will be useful to determine **what-pushes-what**.
 
 #### Check that authorised IPs are updated
 
-Do not forget to add the WordPress IP address to the authorised IPs list of the Caching/Valkey service.
+Do not forget to add the WordPress IP address to the authorised IPs list of the Valkey service.
 
 ![Add Authorised IP](images/Redis_add_ip_whitelist.png){.thumbnail}
 
@@ -132,16 +132,16 @@ If you run into any problems enabling the Redis Object Cache plugin, start your 
 
 #### Additional parameters
 
-Please find below more documentation on the additional available parameters that you might want to use to optimise your Caching/Valkey service usage:
+Please find below more documentation on the additional available parameters that you might want to use to optimise your Valkey service usage:
 
-- [Redis Object Cache connection parameters](https://github.com/rhubarbgroup/redis-cache/wiki/Connection-Parameters){.external}
-- [Redis Object Cache configuration options](https://github.com/rhubarbgroup/redis-cache/wiki/Configuration-Options){.external}
+- [Redis Object Cache connection parameters](https://github.com/rhubarbgroup/redis-cache/wiki/Connection-Parameters)
+- [Redis Object Cache configuration options](https://github.com/rhubarbgroup/redis-cache/wiki/Configuration-Options)
 
 ### Checking performance boost
 
 #### Validate that cache is populated
 
-If you can use a CLI to query the Caching/Valkey service, you can check that information populated to it after browsing some WordPress pages.
+If you can use a CLI to query the Valkey service, you can check that information populated to it after browsing some WordPress pages.
 
 In our case:
 ```bash
@@ -160,7 +160,7 @@ my_redis-123456-123456.database.cloud.ovh.net:20185> SCAN 0
 ```
 #### Install a query monitoring plugin
 
-If you want to have more information about how the cache has impacted the performance, you can measure the gain in response delay directly with your browser. You can also see more details using an additional WordPress plugin like [Query Monitor](https://wordpress.org/plugins/query-monitor/){.external}.
+If you want to have more information about how the cache has impacted the performance, you can measure the gain in response delay directly with your browser. You can also see more details using an additional WordPress plugin like [Query Monitor](https://wordpress.org/plugins/query-monitor/).
 
 #### Example of performance boost with a basic WordPress site
 
@@ -176,17 +176,17 @@ With the cache, there is a total of 2 database queries taking 0.0043s:
 
 ![Performance measure with cache](images/Perf_with_cache.png){.thumbnail}
 
-#### Two main benefits using a Caching/Valkey service
+#### Two main benefits using a Valkey service
 
-As seen, using a Caching/Valkey service you will see a performance gain for your CMS. It will be even more efficient as soon as your site stores more and larger data. You will also directly benefit from the fact that the MySQL server will be less stressed with the load/concurrent accesses, which will offer the opportunity to handle more and more users.
+As seen, using a Valkey service you will see a performance gain for your CMS. It will be even more efficient as soon as your site stores more and larger data. You will also directly benefit from the fact that the MySQL server will be less stressed with the load/concurrent accesses, which will offer the opportunity to handle more and more users.
 
 ## Go further
 
 - [OVHcloud documentation on managed Public Cloud Databases](/products/public-cloud-databases)
-- [Caching/Valkey capabilities](/pages/public_cloud/public_cloud_databases/redis_01_capabilities)
-- [How to connect to a Caching/Valkey service with CLI](/pages/public_cloud/public_cloud_databases/redis_03_connect_cli)
-- [How to connect to a Caching/Valkey service with PHP](/pages/public_cloud/public_cloud_databases/redis_04_connect_php)
-- [Caching/Valkey Roadmap](https://github.com/orgs/ovh/projects/16/views/5?card_filter_query=label%3Aredis)
+- [Valkey capabilities](/pages/public_cloud/public_cloud_databases/redis_01_capabilities)
+- [How to connect to a Valkey service with CLI](/pages/public_cloud/public_cloud_databases/redis_03_connect_cli)
+- [How to connect to a Valkey service with PHP](/pages/public_cloud/public_cloud_databases/redis_04_connect_php)
+- [Valkey Roadmap](https://github.com/orgs/ovh/projects/16/views/5?card_filter_query=label%3Aredis)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

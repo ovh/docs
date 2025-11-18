@@ -19,7 +19,7 @@ CyberDuck ist eine solche Lösung und ist einfach konfigurierbar. Es sind noch w
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben so weit wie möglich unterstützen. Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben so weit wie möglich unterstützen. Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/).
 >
 
 ## Voraussetzungen
@@ -61,7 +61,7 @@ Klicken Sie dann auf `Connect`{.action}. Sobald Sie eingeloggt sind, haben Sie Z
 
 ## Weiterführende Informationen
 
-[Cyberduck Dokumentation](https://trac.cyberduck.io/wiki/help/en){.external}
+[Cyberduck Dokumentation](https://trac.cyberduck.io/wiki/help/en)
 
 [Erste Schritte mit der Swift API](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 

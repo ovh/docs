@@ -46,7 +46,7 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 >
 > Wszystkie poniższe działania opisane w tym tutorialu będą przeprowadzane z **phpMyAdmin**.
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} jest dostępny we wszystkich współdzielonych bazach danych OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/) jest dostępny we wszystkich współdzielonych bazach danych OVHcloud.
 > Ta aplikacja do zarządzania bazami danych ułatwia wykonywanie czynności ręcznych, które możesz wykonać za pomocą bazy danych.
 >
 > Jeśli Twoja baza danych znajduje się w rozwiązaniu [Web Cloud Databases](/links/web/databases), zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Logowanie do bazy danych](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)", następnie przejdź bezpośrednio do [etap 1.2](#step1.2) niniejszego przewodnika.
@@ -74,7 +74,7 @@ Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij po
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etap 4**
 >>
@@ -126,10 +126,10 @@ W pozostałych przypadkach związanych z CMS-ami zalecamy kontakt z producentem 
 
 Poniżej znajdziesz linki do oficjalnych stron WWW proponowanych przez OVHcloud "**Za jednym kliknięciem**":
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://www.joomla.org){.external}
-- [PrestaShop](https://www.prestashop.com/){.external}
-- [Drupal](https://drupal.org){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://www.joomla.org)
+- [PrestaShop](https://www.prestashop.com/)
+- [Drupal](https://drupal.org)
 
 > [!primary]
 >
@@ -149,7 +149,7 @@ Musisz zmienić bazę danych na większą bazę danych.
 > Aby zwiększyć rozmiar bazy danych, musisz utworzyć nową, większą bazę danych i skopiować zawartość ze starej do nowej. Nie jest możliwe bezpośrednie zwiększenie rozmiaru bazy danych powiązanej z hostingiem.
 >
 
-Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](https://www.ovh.pl/cloud/cloud-databases/), aby wybrać nową usługę baz danych. 
+Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](/links/web/databases), aby wybrać nową usługę baz danych. 
 
 Zalecamy tę ofertę dla dużych baz danych.
 
@@ -249,7 +249,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etap 4**
 >>

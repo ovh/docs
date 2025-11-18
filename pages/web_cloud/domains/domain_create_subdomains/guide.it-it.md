@@ -1,7 +1,7 @@
 ---
 title: "Come creare un sottodominio?"
 excerpt: "Questa guida ti mostra la definizione di un sottodominio e come crearlo in OVHcloud"
-updated: 2025-02-05
+updated: 2025-10-27
 ---
 
 <style>
@@ -173,7 +173,7 @@ Per i servizi non menzionati, consulta la documentazione relativa al servizio in
 
 #### Caso 1: visualizza un sito Web presente sul tuo hosting Web OVHcloud con un sottodominio <a name="link-subdomain-case-1"></a>
 
-Come per i domini e per autorizzare un sottodominio a visualizzare il contenuto di una cartella *di destinazione* presente su un hosting Web, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona la tua offerta in cui si trova il sito Web e poi clicca sulla scheda `Multisito`{.action}.
+Come per i domini e per autorizzare un sottodominio a visualizzare il contenuto di una cartella *di destinazione* presente su un hosting Web, accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona la tua offerta in cui si trova il sito Web e poi clicca sulla scheda `Multisito`{.action}.
 
 È qui che autorizzi l'accesso del sottodominio al tuo hosting Web in cui si trova il tuo sito Web.
 
@@ -181,12 +181,12 @@ Per maggiori informazioni sulla configurazione di un dominio o sottodominio su u
 
 > [!warning]
 >
-> L’aggiunta di un dominio o sottodominio su più siti può richiedere l’utilizzo di un token di conferma. Per un sottodominio, lo stesso token non viene preso in considerazione e deve essere aggiunto non per il sottodominio ma per il nome di dominio. In questo caso, aggiungi il token come record DNS di tipo TXT per il dominio nella zona DNS attiva del tuo dominio.
->
+> L'aggiunta di un nome di dominio o di un sottodominio su uno dei siti web del tuo hosting Web può richiedere l'attivazione di un **token di validazione**.
+> Per un sottodominio, lo stesso token non viene preso in considerazione e deve essere aggiunto non per il sottodominio ma per il nome di dominio. In questo caso, aggiungi il token come record DNS di tipo TXT per il dominio nella zona DNS attiva del tuo dominio.
 
 #### Caso 2 - Crea indirizzi email Exchange con un sottodominio <a name="link-subdomain-case-2"></a>
 
-Per sbloccare la creazione di indirizzi email Exchange personalizzati con un sottodominio, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Microsoft`{.action} nella colonna di sinistra e poi su `Exchange`{.action}. Seleziona la piattaforma Exchange da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
+Per sbloccare la creazione di indirizzi email Exchange personalizzati con un sottodominio, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Microsoft`{.action} nella colonna di sinistra e poi su `Exchange`{.action}. Seleziona la piattaforma Exchange da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
 
 In questo modo è possibile dichiarare il sottodominio sulla piattaforma Exchange.
 
@@ -198,7 +198,7 @@ Per maggiori informazioni sulla configurazione di una piattaforma Exchange, cons
 
 #### Caso 3 - Crea indirizzi Email Pro con un sottodominio <a name="link-subdomain-case-3"></a>
 
-Per sbloccare la creazione di indirizzi Email Pro personalizzati con un sottodominio, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
+Per sbloccare la creazione di indirizzi Email Pro personalizzati con un sottodominio, accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro da utilizzare con il sottodominio. Accedi alla scheda `Domini associati`{.action} e clicca sul pulsante `Aggiungi un dominio`{.action} a destra.
 
 In questo modo è possibile dichiarare il sottodominio sulla piattaforma Email Pro.
 

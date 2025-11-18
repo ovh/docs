@@ -1,7 +1,7 @@
 ---
 title: 'Introdução à oferta MX Plan'
 excerpt: 'Saiba como começar a usar a oferta MX Plan'
-updated: 2025-05-19
+updated: 2025-06-26
 ---
 
 <style>
@@ -20,6 +20,11 @@ details[open]>summary::before {
   max-width:500px !important;
 }
 </style>
+
+> [!success]
+> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
+> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
+> [Aceda ao inquérito.](https://s.elq.fr/ovhext/EsCB5sR)
 
 ## Objetivo
 
@@ -204,8 +209,8 @@ Para o envio dos e-mails, encontre abaixo os parâmetros **SMTP** a utilizar:
 
 - **Nome de utilizador**: Insira o endereço de e-mail **completo**.
 - **Palavra-passe**: Insira a palavra-passe do e-mail.
-- **Servidor Europe (de saída)**: pop.mail.ovh.net **ou** ssl0.ovh.net.
-- **Servidor AMÉRICA/ÁSIA-PACÍFICO (de saída)**: pop.mail.ovh.ca.
+- **Servidor Europe (de saída)**: smtp.mail.ovh.net **ou** ssl0.ovh.net.
+- **Servidor AMÉRICA/ÁSIA-PACÍFICO (de saída)**: smtp.mail.ovh.ca.
 - **Port**: 465.
 - **Tipo de segurança**: SSL/TLS.
 

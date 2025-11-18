@@ -1,25 +1,29 @@
 ---
 title: Setting up Zerto Virtual Replication between two OVHcloud data centres
 excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms
-updated: 2024-10-18
+updated: 2025-08-25
 ---
 
 ## Objective
 
-This guide will present the concepts and steps required to setup Zerto Virtual Replication between two OVHcloud datacenters.
+This guide will present the concepts and steps required to set up Zerto Virtual Replication between two OVHcloud datacenters.
 
-For instructions for cross platforms set up, please our guide on [using Zerto between OVHcloud and a third party plateform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
+For instructions for cross platforms set up, please see our guide on [using Zerto between OVHcloud and a third party platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
 
 **Discover how to set up Zerto Virtual Replication between your Hosted Private Cloud platforms.**
 
 ## Requirements 
 
-- 2 [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) platform environnements on 2 different hosts.
+- 2 [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) platform environments on 2 different hosts.
 - A public IP must be available in each datacenter.
+
+> [!primary]
+>
+> A **Read Write (RW)** vCenter account is required to access and operate the Zerto interface.
 
 ### Zerto Virtual Replication Concepts
 
-Zerto Virtual Replication is a disaster recovery solution for vSphere. It enables replication virtual machines between Private Cloud platforms by capturing and propagating all disk operations to secondary site.
+Zerto Virtual Replication is a disaster recovery solution for vSphere. It enables replication of virtual machines between Private Cloud platforms by capturing and propagating all disk operations to secondary site.
 
 It allows  automation and orchestration of actual failover or failover tests between sites.  
 
@@ -32,17 +36,17 @@ They have a predefined configuration:
 - RAM: 6 GB
 - Storage: 36 GB
 
-All VRA are stored on a specific datastore, provided by OVHcloud.
+All VRAs are stored on a specific datastore, provided by OVHcloud.
 
 #### Sites
 
-During deployement, VRA are deployed on source and destination sites, and then are paired together to start replication.
-Since Zerto does not encrypt the dialog between VRA, OVHcloud automatically deploys a VPN tunnel between the VRA through the L2VPN appliance, to protect in-flight data.
+During deployment, VRAs are deployed on source and destination sites, and then are paired together to start replication.  
+Since Zerto does not encrypt the dialog between VRAs, OVHcloud automatically deploys a VPN tunnel between the VRAs through the L2VPN appliance, to protect in-flight data.
 
 #### Virtual Protection Group (VPG)
 
-Before starting the replication, VMs must be grouped in a logical container called Virtual Protection Group, on which all replication parameters will be defined.
-It allows to apply consistent parameters accross a group of VMs that share the same replication requirements, (typically VMs that belong to the same function or application),
+Before starting the replication, VMs must be grouped in a logical container called Virtual Protection Group, on which all replication parameters will be defined.  
+It allows to apply consistent parameters across a group of VMs that share the same replication requirements, (typically VMs that belong to the same function or application),
  
 VPGs can be prioritised to make the most efficient usage of available bandwidth.
 
@@ -52,7 +56,7 @@ VPGs can be prioritised to make the most efficient usage of available bandwidth.
 
 #### From OVHcloud dashboard
 
-From your OVHcloud Control Panel, go to "Server/Private Cloud". Select your primary site, then go ton the "Disaster Recovery" tab.
+From your OVHcloud Control Panel, go to "Server/Private Cloud". Select your primary site, then go to the "Disaster Recovery" tab.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_01.png){.thumbnail}
 
@@ -67,14 +71,14 @@ Click `Next`{.action}.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_03.png){.thumbnail}
 
-Secondary site selection must be done from available **Private Cloud** in the drop-down menu.
+Secondary site selection must be done from available **Private Cloud** in the drop-down menu.  
 Please note that the list will show only Private Clouds meeting all the following requirements:
 
 - Being located in another geographical area
 - Not already involved in a Zerto replication
 
-Select the **data centre** from the secondary **Private Cloud** in the drop-down menu.
-The, select an **unused**  IP address from the public IP range attached to the secondary **Private Cloud**. It will be used for the secondary VPN endpoint.
+Select the **data centre** from the secondary **Private Cloud** in the drop-down menu.  
+Then, select an **unused** IP address from the public IP range attached to the secondary **Private Cloud**. It will be used for the secondary VPN endpoint.
 
 Click `Next`{.action}.
 
@@ -99,8 +103,14 @@ Once the activation has successfully completed, you will receive an email summar
 >
 >  - URL: https://zerto.pcc-x-x-x-x.ovh.com/ 
 >
->You can authenticate with your administrator accounts the same way as you do for
+>You can authenticate with your administrator accounts the same way you do for
 >vSphere.
+
+> [!warning]
+>
+> When activating Zerto, you may notice a VM named `Z-VRAH` in your inventory.
+> This VM is automatically deployed by OVHcloud to secure communications between your sites.
+> It is **essential for the service to work correctly** and **must not be modified or deleted**.
 
 ###  Zerto Replication Interface
 
@@ -121,7 +131,7 @@ You will find there:
 
 - A status of VPGs health
 - Key indicators for the Zerto platform
-- Network and IO consumptions figures
+- Network and IO consumption figures
 - An alerts and messages log
 
 ### Configure a Virtual Protection Group (VPG)
@@ -161,12 +171,12 @@ Click `NEXT`{.action}.
 
 Next step is the selection of the secondary site:
 
-- **Recovery Site**: select the remote site (the primary site will be tagged as (Local)).
-- **ZORG**: scroll down and select **No Organization**. The other values are present for backwards compatibility but will trigger an error messsage if selected.
+- **Recovery Site**: select the remote site (the primary site will be tagged as (Local)).  
+- **ZORG**: scroll down and select **No Organization**. The other values are present for backwards compatibility but will trigger an error message if selected.
 
 Now you must define the default recovery resources:
 
-- **Hosts**: select a vSphere Resource Pool, a DRS Cluster or a specific host in it (Cluster1 in our example).
+- **Hosts**: select a vSphere Resource Pool, a DRS Cluster or a specific host in it (Cluster1 in our example).  
 - **Datastore**: likewise you can select a specific datastore or datastore cluster in the drop-down list.
 
 You can keep the default values for the other settings. Click `NEXT`{.action}.
@@ -180,9 +190,9 @@ If it is not necessary, you can click `NEXT`{.action}.
 
 Now you need to define the default network to use during test failovers and actual failovers.
 
-- **Failover/Move Network**: choose the default vSphere portgroup for an actual failover.
-- **Failover Test Network**: choose the default vSphere portgroup for a test failover.
-- **Recovery Folder**: if you want to regroup the failover VMs on the secondary site, you can select a folder or just "/" to place the VMs at the root of the vSphere inventory.
+- **Failover/Move Network**: Choose the default vSphere portgroup for an actual failover.
+- **Failover Test Network**: Choose the default vSphere portgroup for a test failover.
+- **Recovery Folder**: If you want to regroup the failover VMs on the secondary site, you can select a folder or just "/" to place the VMs at the root of the vSphere inventory.
 
 > [!primary]
 > **Pre-recovery Script** and  **Post-recovery Script** are locked down, these features are not enabled.
@@ -209,7 +219,7 @@ Long term retention is disabled, click `NEXT`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_11.png){.thumbnail}
 
-The last screen summarize the settings for the new VPG. If everything is OK, click `DONE`{.action}.
+The last screen summarizes the settings for the new VPG. If everything is OK, click `DONE`{.action}.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_13.png){.thumbnail}
 
@@ -221,8 +231,8 @@ After having configured your VPG and once the initial replication has completed,
 
 > [!warning]
 >
-> A failover test has **NO** impact on the production site, you only need to make sure that the VMs that are being failed-over are starting in an isolated network and/or different IPs to avoid network conflicts.
-> All the VMs instantiated during the failover test are fully managed by Zerto. You should not remove or modifiy them; they will be removed automatically at the end of the failover test.
+> A failover test has **NO** impact on the production site, you only need to make sure that the VMs that are being failed-over are starting in an isolated network and/or different IPs to avoid network conflicts.  
+> All the VMs instantiated during the failover test are fully managed by Zerto. You should not remove or modify them; they will be removed automatically at the end of the failover test.  
 > The replication keeps running during the failover tests and is not impacted in any way.
 >
 
@@ -310,7 +320,7 @@ We have a summary of the failover parameters:
 
 - Replication direction
 - Remote site
-- The **checkpoint** to use: what version should use Zerto to restart from. Usually the latest version will minimze the data loss and improve **RPO**.
+- The **checkpoint** to use: what version should use Zerto to restart from. Usually the latest version will minimize the data loss and improve **RPO**.
 - What **commit policy** to use: see further down the page.
 - **VM Shutdown**: what should Zerto do with the VMs on the primary site if they are still running, leave them running, shutdown, forced shutdown.
 - **Reverse Protection**: after the failover, should the replication enabled again to allow a failback or be left as-is.
@@ -345,7 +355,7 @@ If you have selected an **Automatic Policy**, you will receive a warning about i
 Confirm with `START FAILOVER`{.action}.
 
 Failover starts, you can follow the actions from the secondary vCenter.
-Validate the successfull start of VMs on secondary platform.
+Validate the successful start of VMs on secondary platform.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_10.png){.thumbnail}
 
@@ -363,11 +373,15 @@ If you check the VPG, you will see that the replication direction has changed.
 
 ### Prepare and trigger the failback
 
-Depending on failover options, the failback (if needed) may require differents steps.
+Depending on failover options, the failback (if needed) may require different steps.
 
 - If you have selected **Reverse Protection** during the failover, the failback is just a  **Failover Live** (refer to the relevant part of this guide).
 - If you have not enabled **Reverse Protection**, you need to create a new VPG, do a full sync and then do a **Failover Live** (refer to the relevant part of this guide).
 
 ## Go further 
 
-Interactúe con [nuestra comunidad de usuarios](/links/community).
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
+
+Join our [community of users](/links/community).

@@ -16,7 +16,7 @@ La modalità Rescue permette di accedere ai tuoi dati in modo permanente, anche 
 
 ## Prerequisiti
 
-- Un [server dedicato](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/it/vps/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud (Windows escluso)
+- Un [server dedicato](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) o un'istanza [Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud (Windows escluso)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]

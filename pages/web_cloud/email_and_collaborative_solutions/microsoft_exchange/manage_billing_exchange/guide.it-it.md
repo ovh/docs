@@ -1,7 +1,7 @@
 ---
 title: 'Gestire la fatturazione di un account Exchange'
 excerpt: 'Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Obiettivo
@@ -82,9 +82,23 @@ Dalla scheda `Account email`{.action}, clicca su `...`{.action} in corrispondenz
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
+### Disattiva la piattaforma
+
+Dopo aver eliminato gli account email, è necessario eliminare il o i domini associati alla piattaforma Exchange prima di disattivarla. Per farlo, clicca sulla scheda `Domini associati`{.action}. Clicca sul pulsante `...`{.action} sulla riga del nome di dominio da eliminare e poi clicca su `Eliminare questo dominio`{.action}.
+
+![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
+
+Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Disattiva`{.action}.
+
+![billing_exchange](images/billing-exchange-08.png){.thumbnail}
+
+> [!primary]
+>
+> Questa azione comporta la sospensione e l'eliminazione di tutti gli account della piattaforma Exchange alla data di scadenza.
+
 ## Per saperne di più <a name="go-further"></a>
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

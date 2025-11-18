@@ -12,7 +12,7 @@ Funkcja **DRS** (Distributed Ressource Scheduler), dostępna w klastrze **VMware
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+- Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/)
 - Dostęp do [interfejsu vSphere](/pages/bare_metal_cloud/managed_bare_metal/vsphere-interface)
 
 ## W praktyce

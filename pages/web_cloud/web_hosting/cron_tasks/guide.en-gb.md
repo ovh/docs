@@ -150,7 +150,7 @@ A simple test to see if your script will produce an error is to run it in a web 
 
 #### Verifying the usage of absolute paths
 
-Always make sure to use absolute paths to files in your scripts. The "DIR" constant, for example, can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php){.external}).
+Always make sure to use absolute paths to files in your scripts. The "DIR" constant, for example, can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php)).
  
 #### Checking your execution logs
 

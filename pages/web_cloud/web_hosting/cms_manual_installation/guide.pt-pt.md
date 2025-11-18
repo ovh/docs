@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalar manualmente um CMS no meu alojamento"
 excerpt: "Descubra como instalar manualmente um CMS no seu alojamento"
-updated: 2024-03-28
+updated: 2025-10-28
 ---
 
 ## Objetivo
@@ -16,14 +16,14 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 >
 > Para contactar os diferentes editores dos CMS acima mencionados, consulte as ligações às respetivas páginas oficiais:
 >
-> - [WordPress](https://wordpress.com/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
-> - [Pico](https://picocms.org/){.external}
-> - [Grav](https://getgrav.org/){.external}
-> - [Typo3](https://typo3.com/){.external}
-> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+> - [WordPress](https://wordpress.com/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
+> - [Pico](https://picocms.org/)
+> - [Grav](https://getgrav.org/)
+> - [Typo3](https://typo3.com/)
+> - [SPIP](https://www.spip.net/en_rubrique25.html)
 >
 
 > [!success]
@@ -37,7 +37,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 
 - Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](/links/web/domains)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -51,7 +51,7 @@ Para o ajudar a escolher o seu CMS, descubra em baixo uma breve descrição para
 
 Encontre mais informações na nossa página sobre o [módulo WordPress](/links/web/hosting-wordpress)
 
-- Site oficial da [WordPress](https://wordpress.com/){.external}
+- Site oficial da [WordPress](https://wordpress.com/)
 
 #### Joomla!
 
@@ -61,7 +61,7 @@ A comunidade **Joomla!** é de grande dimensão e pode prestar assistência e se
 
 Encontre mais informações na nossa página sobre o [módulo Joomla!](/links/web/hosting-joomla)
 
-- Site oficial de [Joomla!](https://www.joomla.org/){.external}
+- Site oficial de [Joomla!](https://www.joomla.org/)
 
 #### Drupal
 
@@ -69,7 +69,7 @@ Encontre mais informações na nossa página sobre o [módulo Joomla!](/links/we
 
 Encontre mais informações na nossa página sobre o [módulo Drupal](/links/web/hosting-drupal)
 
-- Site oficial de [Drupal](https://www.drupal.org/){.external}
+- Site oficial de [Drupal](https://www.drupal.org/)
 
 #### PrestaShop
 
@@ -77,31 +77,31 @@ CMS criado em 2005 e dedicado à realização de websites de e-commerce. Para al
 
 Encontre mais informações na nossa página sobre o [módulo PrestaShop](/links/web/hosting-prestashop)
 
-- Site oficial de [PrestaShop](https://www.prestashop.com/){.external}
+- Site oficial de [PrestaShop](https://www.prestashop.com/)
 
 #### Pico
 
 **Pico** é um CMS ligeiro baseado em PHP, ideal para criar websites ou blogues. Sem uma base de dados, utiliza ficheiros Markdown para gerir o conteúdo. Suporta extensões para personalizar o seu website.
 
-- Site oficial da [Pico](https://picocms.org/){.external}
+- Site oficial da [Pico](https://picocms.org/)
 
 #### Grav
 
 **Grav** é um CMS moderno e flexível baseado em PHP. Ele é projetado sem banco de dados e utiliza arquivos Markdown para armazenamento e gerenciamento de conteúdo. Grav distingue-se pelo seu sistema de gestão de pacotes que facilita a instalação e atualização de plugins e temas para o seu website.
 
-- Site oficial de [Grav](https://getgrav.org/){.external}
+- Site oficial de [Grav](https://getgrav.org/)
 
 #### Typo3
 
 **Typo3** é um CMS baseado em PHP, concebido para o desenvolvimento de websites de todas as dimensões, das pequenas às grandes empresas. Baseia-se numa base de dados para armazenar o conteúdo. Oferece uma vasta gama de extensões para estender as suas funcionalidades a fim de personalizar o seu website.
 
-- Site oficial da [Typo3](https://typo3.com/){.external}
+- Site oficial da [Typo3](https://typo3.com/)
 
 #### SPIP
 
 **SPIP** é um CMS concebido principalmente para a publicação e gestão de websites editoriais, tais como jornais e revistas online. Baseado em PHP e baseado numa base de dados SQL, facilita a criação de websites enriquecidos com conteúdos textuais, gráficos e / ou multimédia.
 
-- Site oficial de [SPIP](https://www.spip.net/en_rubrica25.html){.external}
+- Site oficial de [SPIP](https://www.spip.net/en_rubrica25.html)
 
 > [!warning]
 >
@@ -114,9 +114,9 @@ Para instalar um CMS na sua oferta de[alojamento web](/links/web/hosting), é ne
 
 #### 1.1 - Verificar a declaração do "dossier raiz"
 
-A "pasta raiz" corresponde ao diretório no qual o seu futuro CMS será instalado no seu alojamento. Recomenda-se que escolha um diretório vazio para evitar conflitos com os seus outros potenciais multi-sites.
+A "pasta raiz" corresponde ao diretório no qual o seu futuro CMS será instalado no seu alojamento. Recomenda-se escolher um diretório vazio para evitar conflitos com os seus outros potenciais sites.
 
-Consulte o nosso manual que descreve [como adicionar um multi-site ao seu alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) para definir a pasta raiz a utilizar com o seu CMS.
+Consulte a nossa documentação que descreve [como adicionar um site ao seu alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) para definir a pasta raiz a utilizar com o seu CMS.
 
 > [!primary]
 >
@@ -191,14 +191,14 @@ Aceda ao site do editor do CMS que escolheu para descarregar os ficheiros de ori
 
 Encontre aqui os links para as páginas de download dos CMS evocadas no presente tutorial:
 
-- [WordPress](https://wordpress.org/download/#download-install){.external}
-- [Joomla!](https://downloads.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/download){.external}
-- [Prestashop](https://www.prestashop.com/en/download){.external}
-- [Pico](https://picocms.org/download/){.external}
-- [Grav](https://getgrav.org/downloads){.external}
-- [Typo3](https://get.typo3.org/#download){.external}
-- [SPIP](https://www.spip.net/en_download){.external}
+- [WordPress](https://wordpress.org/download/#download-install)
+- [Joomla!](https://downloads.joomla.org/)
+- [Drupal](https://www.drupal.org/download)
+- [Prestashop](https://www.prestashop.com/en/download)
+- [Pico](https://picocms.org/download/)
+- [Grav](https://getgrav.org/downloads)
+- [Typo3](https://get.typo3.org/#download)
+- [SPIP](https://www.spip.net/en_download)
 
 > [!primary]
 >
@@ -206,14 +206,14 @@ Encontre aqui os links para as páginas de download dos CMS evocadas no presente
 >
 > Para isso, consulte o link para a página oficial do CMS que deseja instalar:
 >
-> - [WordPress](https://wordpress.org/about/requirements/){.external}
-> - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
-> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
-> - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
-> - [Pico](https://picocms.org/download/){.external}
-> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
-> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
-> - [SPIP](https://www.spip.net/en_article6659.html){.external}
+> - [WordPress](https://wordpress.org/about/requirements/)
+> - [Joomla!](https://downloads.joomla.org/technical-requirements)
+> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements)
+> - [Prestashop](https://www.prestashop.com/en/system-requirements)
+> - [Pico](https://picocms.org/download/)
+> - [Grav](https://learn.getgrav.org/17/basics/requirements)
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html)
+> - [SPIP](https://www.spip.net/en_article6659.html)
 >
 > Configure a versão de PHP no seu alojamento web com a ajuda do nosso manual sobre a [alteração da versão PHP de um alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >

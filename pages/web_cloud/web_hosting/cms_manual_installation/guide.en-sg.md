@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installing a CMS manually on your Web Hosting plan"
 excerpt: "Find out more about some of the compatible CMS for Web Hostings"
-updated: 2024-03-28
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -16,14 +16,14 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 >
 > Find below the links to the respective official pages of the CMS mentioned above:
 >
-> - [WordPress](https://wordpress.com/support/){.external}
-> - [Joomla!](https://www.joomla.org/){.external}
-> - [Drupal](https://www.drupal.org/){.external}
-> - [PrestaShop](https://www.prestashop.com/en/support){.external}
-> - [Pico](https://picocms.org/){.external}
-> - [Grav](https://getgrav.org/){.external}
-> - [Typo3](https://typo3.com/){.external}
-> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+> - [WordPress](https://wordpress.com/support/)
+> - [Joomla!](https://www.joomla.org/)
+> - [Drupal](https://www.drupal.org/)
+> - [PrestaShop](https://www.prestashop.com/en/support)
+> - [Pico](https://picocms.org/)
+> - [Grav](https://getgrav.org/)
+> - [Typo3](https://typo3.com/)
+> - [SPIP](https://www.spip.net/en_rubrique25.html)
 >
 
 > [!success]
@@ -51,7 +51,7 @@ To help you choose your CMS, find below a short description for each of the CMS 
 
 You can find more information on our [WordPress module page](/links/web/hosting-wordpress). 
 
-- [Official WordPress website](https://wordpress.com/){.external}
+- [Official WordPress website](https://wordpress.com/)
 
 #### Joomla!
 
@@ -61,7 +61,7 @@ The **Joomla!** community is very large and can provide assistance and services 
 
 You can find more information on our [Joomla! module page](/links/web/hosting-joomla). 
 
-- [Official site of Joomla!](https://www.joomla.org/){.external}
+- [Official site of Joomla!](https://www.joomla.org/)
 
 #### Drupal
 
@@ -69,7 +69,7 @@ You can find more information on our [Joomla! module page](/links/web/hosting-jo
 
 You can find more information on our [Drupal module page](/links/web/hosting-drupal). 
 
-- [Official Drupal website](https://www.drupal.org/){.external} 
+- [Official Drupal website](https://www.drupal.org/) 
 
 #### PrestaShop
 
@@ -77,31 +77,31 @@ A CMS created in 2005 and dedicated to building e-commerce websites. Apart from 
 
 You can find more information on our [PrestaShop module page](/links/web/hosting-prestashop).
 
-- [PrestaShop official website](https://www.prestashop.com/){.external} 
+- [PrestaShop official website](https://www.prestashop.com/) 
 
 #### Pico
 
 **Pico** is a lightweight PHP-based CMS, perfect for building websites and blogs. It does not require a database but uses Markdown files to manage content. It supports extensions to customise your website.
 
-- Official [Pico](https://picocms.org/){.external} website
+- Official [Pico](https://picocms.org/) website
 
 #### Grav
 
 **Grav** is a modern and flexible CMS based on PHP. It is designed without databases and uses Markdown files for storing and managing content. Grav stands out for its package management system which makes it easy to install and update plugins and themes for your website.
 
-- Official [Grav](https://getgrav.org/){.external} website
+- Official [Grav](https://getgrav.org/) website
 
 #### Typo3
 
 **Typo3** is a PHP-based CMS designed for developing websites of all sizes, from small to large companies. It relies on a database to store the content. It offers a wide range of extensions to extend its features in order to customize your website.
 
-- Official [Typo3](https://typo3.com/){.external} website
+- Official [Typo3](https://typo3.com/) website
 
 #### SPIP
 
 **SPIP** is a CMS designed primarily for publishing and managing editorial websites such as online newspapers or magazines. Based on PHP and based on an SQL database, it facilitates the creation of websites enriched with textual, graphical and/or multimedia content.
 
-- [SPIP](https://www.spip.net/en_section25.html){.external} official website
+- [SPIP](https://www.spip.net/en_section25.html) official website
 
 > [!warning]
 >
@@ -114,9 +114,9 @@ To install a CMS on your [web hosting plan](/links/web/hosting), you will need t
 
 #### 1.1 Check the root folder declaration
 
-The “root folder” refers to the directory your future CMS will be installed in on your hosting plan. We recommend choosing an empty directory to avoid conflicts with your other multisite potentials.
+The "root folder" corresponds to the directory in which your future CMS will be installed in your hosting. It is recommended to choose an empty directory to avoid conflicts with your other potential websites.
 
-Please refer to our documentation, which describes [how to add a multisite on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite), in order to define the root directory to use with your CMS.
+Refer to our documentation which describes [how to create a website on your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) to define the root folder to use with your CMS.
 
 > [!primary]
 >
@@ -191,14 +191,14 @@ Go to the CMS publisher’s website to download the source files.
 
 Below are links to the CMS download pages mentioned in this tutorial:
 
-- [WordPress](https://wordpress.org/download/#download-install){.external}
-- [Joomla!](https://downloads.joomla.org/){.external}
-- [Drupal](https://www.drupal.org/download){.external}
-- [Prestashop](https://www.prestashop.com/en/download){.external}
-- [Pico](https://picocms.org/download/){.external}
-- [Grav](https://getgrav.org/downloads){.external}
-- [Typo3](https://get.typo3.org/#download){.external}
-- [SPIP](https://www.spip.net/en_download){.external}
+- [WordPress](https://wordpress.org/download/#download-install)
+- [Joomla!](https://downloads.joomla.org/)
+- [Drupal](https://www.drupal.org/download)
+- [Prestashop](https://www.prestashop.com/en/download)
+- [Pico](https://picocms.org/download/)
+- [Grav](https://getgrav.org/downloads)
+- [Typo3](https://get.typo3.org/#download)
+- [SPIP](https://www.spip.net/en_download)
 
 > [!primary]
 >
@@ -206,14 +206,14 @@ Below are links to the CMS download pages mentioned in this tutorial:
 >
 > To do this, open the link to the official CMS page that you want to install:
 >
-> - [WordPress](https://wordpress.org/about/requirements/){.external}
-> - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
-> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
-> - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
-> - [Pico](https://picocms.org/download/){.external}
-> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
-> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
-> - [SPIP](https://www.spip.net/en_article6659.html){.external}
+> - [WordPress](https://wordpress.org/about/requirements/)
+> - [Joomla!](https://downloads.joomla.org/technical-requirements)
+> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements)
+> - [Prestashop](https://www.prestashop.com/en/system-requirements)
+> - [Pico](https://picocms.org/download/)
+> - [Grav](https://learn.getgrav.org/17/basics/requirements)
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html)
+> - [SPIP](https://www.spip.net/en_article6659.html)
 >
 > Then configure the PHP version on your web hosting plan by referring to our guide on [Changing a Web Hosting plan’s PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >

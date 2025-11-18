@@ -1,6 +1,6 @@
 ---
 title: 'Webmail: Guia de utilização do Roundcube'
-updated: 2024-03-26
+updated: 2025-11-12
 ---
 
 ## Objetivo
@@ -13,6 +13,23 @@ Com a oferta MX Plan OVHcloud, pode enviar e-mails a partir de um software de te
 
 - Dispor de uma solução de e-mail OVHcloud **MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting), ou encomendada separadamente como solução autónoma.
 - Ter acesso às informações de acesso ao endereço de e-mail MX Plan que pretende consultar. Para mais informações, consulte o nosso guia [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- A sua solução de e-mail OVHcloud **MX Plan** deve utilizar a tecnologia de webmail **Roundcube**. Para a identificar, siga as instruções abaixo.
+
+> [!primary]
+> 
+> **Como identificar a tecnologia utilizada na minha oferta MX Plan?**
+>
+> A tecnologia de e-mail utilizada para a oferta MX Plan é caracterizada pela interface do seu webmail. Para o identificar a partir da Área de Cliente, siga o seguinte caminho:
+>
+> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
+> 1. Aceda à secção `Web Cloud`{.action}.
+> 1. Clique em `MX Plan`{.action}.
+> 1. Selecione o domínio em questão.
+> 1. No separador `Informações gerais`{.action}, selecione por predefinição.
+> 1. Registe a tecnologia utilizada como **Webmail**.
+>
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
+
 
 ## Instruções
 

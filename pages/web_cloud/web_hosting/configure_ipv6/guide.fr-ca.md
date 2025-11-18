@@ -12,7 +12,7 @@ Suite à cela, le protocole **IPv6** a été introduit pour permettre de connect
 
 Les adresses IPv4 étant désormais moins disponibles, il est plus difficile d'ajouter de nouvelles machines sur le réseau Internet avec la norme IPv4. Toutefois, les connexions avec une adresse IPv6 sont utiles uniquement si, par exemple, votre site web est aussi disponible avec ce même protocole. Ainsi, plus il y aura de sites web accessibles en IPv6, plus les différents acteurs présents sur le réseau Internet basculreont leurs appareils/machines sur ce nouveau protocole.
 
-Pour en savoir plus, consultez l'article de [Wikipédia](https://fr.wikipedia.org/wiki/IPv6){.external} sur le protocole IPv6.
+Pour en savoir plus, consultez l'article de [Wikipédia](https://fr.wikipedia.org/wiki/IPv6) sur le protocole IPv6.
 
 Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce protocole est restée jusqu'à récemment une option facultative à la configuration. 
 
@@ -20,9 +20,9 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](/links/web/domains){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'un [nom de domaine](/links/web/domains) dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](/links/web/hosting).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -37,7 +37,7 @@ Si votre site n'est pas configuré pour fonctionner avec une adresse IPv6, vous 
 
 ### 1 - Vérifier la compatibilité IPv6 de votre site web
 
-Pour vérifier si votre site web utilise déjà une adresse IPv6, utilisez le site [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. Il vous indiquera si votre site web répond sur ce nouveau protocole IP. Si ce n'est pas le cas, poursuivez la lecture de notre guide.
+Pour vérifier si votre site web utilise déjà une adresse IPv6, utilisez le site [ipv6-test.com](https://ipv6-test.com/validate.php). Il vous indiquera si votre site web répond sur ce nouveau protocole IP. Si ce n'est pas le cas, poursuivez la lecture de notre guide.
 
 ### 2 - Récupérer l'adresse IPv6 de votre hébergement web
 

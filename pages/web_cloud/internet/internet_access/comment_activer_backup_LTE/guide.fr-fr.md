@@ -1,7 +1,7 @@
 ---
 title: 'Comment activer un lien de secours LTE'
 excerpt: 'Découvrez comment activer un lien de secours LTE'
-updated: 2025-04-28
+updated: 2025-07-21
 ---
 
 ## Objectif
@@ -14,6 +14,11 @@ Un lien de secours LTE permet de sécuriser votre connexion en cas de coupure. S
 
 - Disposer d’un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) et d'un modem Zyxel ou Technicolor TG799vac fourni par OVHcloud.
 - Disposer d'une clé LTE Huawei E3372 ainsi qu'une carte SIM permettant l'accès au réseau mobile de données.
+
+> [!alert]
+>
+> Attention, les clés Brovi E3372-**325** sont nativement incompatibles avec les modems OVHcloud.
+>
 
 ## En pratique
 

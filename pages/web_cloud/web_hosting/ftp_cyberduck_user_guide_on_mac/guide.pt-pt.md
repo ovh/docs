@@ -27,12 +27,12 @@ Para transferir o Cyberduck, aceda a [site oficial](https://cyberduck.io/) da ap
 
 ## Requisitos
 
-- Ter um plano de [alojamento web](/links/web/hosting){.external}.
+- Ter um plano de [alojamento web](/links/web/hosting).
 - Ter transferido e instalado a aplicação Cyberduck no seu computador.
 
 > [!primary]
 >
-> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
+> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php) ou [Cyberduck](https://cyberduck.io/).
 
 ## Instruções
 

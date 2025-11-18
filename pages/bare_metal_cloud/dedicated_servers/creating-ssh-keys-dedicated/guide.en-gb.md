@@ -55,7 +55,7 @@ The following instructions will explain how to create and manage key pairs for r
 
 If you prefer a graphical user interface, you can find many software applications for every type of OS that enable you to connect to remote hosts via the OpenSSH protocol.
 
-For example, [PuTTY](https://putty.org/) is an open-source SSH client software with many useful features. Find out how to use it for connections to OVHcloud servers in our detailed tutorial:
+For example, [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) is an open-source SSH client software with many useful features. Find out how to use it for connections to OVHcloud servers in our detailed tutorial:
 
 - [How to use PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
@@ -250,7 +250,7 @@ You can then connect to this second host by entering:
 ssh vps
 ```
 
-Consult the [corresponding `man` page](https://manpages.org/ssh_config/5) for more information on the `config` file.
+Consult the [corresponding `man` page](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html) for more information on the `config` file.
 
 ///
 
@@ -445,7 +445,7 @@ You can then connect to this second host by entering:
 ssh vps
 ```
 
-Consult the [corresponding `man` page](https://manpages.org/ssh_config/5) for more information on the `config` file.
+Consult the [corresponding `man` page](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html) for more information on the `config` file.
 
 ///
 

@@ -1,202 +1,361 @@
 ---
 title: FAQ dotyczący zarządzania kontem OVHcloud
 excerpt: Najczęściej zadawane pytania dotyczące zarządzania kontem OVHcloud
-updated: 2025-04-28
+updated: 2025-10-30
 ---
+
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
 
 ## Wprowadzenie
 
-Najczęściej zadawane pytania dotyczące zarządzania kontem OVHcloud.
+Znajdź najczęściej zadawane pytania dotyczące zarządzania kontem OVHcloud.
 
-### Jak otworzyć konto OVHcloud?
+## Często zadawane pytania
 
-Otwarcie konta jest darmowe. Dzięki niemu masz łatwy dostęp do swoich danych i możesz zarządzać swoimi usługami. Zapoznaj się z naszym przewodnikiem [Utwórz konto OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+### Tworzenie konta OVHcloud, logowanie i jego zabezpieczenie
+
+/// details | Jak utworzyć konto OVHcloud?
+
+Utworzenie konta jest darmowe. Ten obszar ułatwia dostęp do Twoich informacji i umożliwia zarządzanie Twoimi usługami. Zapoznaj się z naszym przewodnikiem "[Utwórz konto OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)".
 
 > [!success]
-> Po utworzeniu konta pamiętaj, aby go zabezpieczyć, konfigurując weryfikację dwuetapową. Więcej informacji znajdziesz w naszym przewodniku [Zabezpiecz konto OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+> Po utworzeniu konta pamiętaj, aby je zabezpieczyć, skonfigurując podwójną autoryzację. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)".
 
-#### Wskazówki i porady
+///
 
-Nie możesz odnaleźć Twojego kraju? Zmień język strony klikając na odpowiednią flagę w prawym górnym rogu.
+/// details | Jak poprawnie wpisać numer telefonu podczas tworzenia konta?
 
-### Gdzie mogę znaleźć swój identyfikator OVHcloud?
+Musisz wpisać numer telefonu w formacie międzynarodowym.
 
-Swój identyfikator klienta, zwany także NIC-handle, znajdziesz w prawym górnym rogu na ostatniej fakturze. Zbudowany jest w następujący sposób: "aa00000-ovh" (pierwsze litery to zazwyczaj inicjały osoby, która założyła konto). Identyfikator jest również podawany we wszystkich wiadomościach e-mail wysyłanych przez OVHcloud (e-mail z potwierdzeniem utworzenia konta, e-mail z potwierdzeniem lub odnowieniem zamówienia itp.)
+> [!success]
+> Dla numeru “06 12 34 56 78" należy zatem wpisać “+48 612345678". Prefiks “+48" dodawany jest automatycznie po wybraniu Polski jako kraju zamieszkania.
 
-Jeśli nie dysponujesz loginem, kliknij link „Nie pamiętam loginu lub hasła” na stronie [logowania do konta OVHcloud](/links/manager) i wpisz adres e-mail przypisany do Twojego konta.
+///
 
-#### Porady i wskazówki
+/// details | Gdzie znaleźć identyfikator konta OVHcloud?
 
-Po zalogowaniu do swojej strefy klienta, identyfikator znajdziesz w prawym górnym rogu, obok swojego nazwiska.
+Twój identyfikator klienta, czasem nazywany "NIC-handle", znajduje się w prawym górnym rogu Twojej ostatniej faktury. Wygląda to mniej więcej tak: "aa00000-ovh" (pierwsze litery są zazwyczaj inicjałami osoby, która utworzyła konto). Ten identyfikator jest również wskazany we wszystkich wiadomościach e-mail wysyłanych przez OVHcloud (e-mail potwierdzający utworzenie konta, e-maile potwierdzające lub odnawiające zamówienie itp.).
 
-### Co zrobić, jeśli nie mogę zalogować się do mojego konta klienta?
+Jeśli nadal nie możesz odnaleźć swojego identyfikatora, możesz kliknąć link "Nie pamiętasz identyfikatora klienta lub hasła?" znajdujący się na stronie [logowania do konta OVHcloud](/links/manager). Następnie wpisz adres e-mail przypisany do Twojego konta.
 
-Może się zdarzyć z różnych powodów, takich jak zapomnienie hasła, utrata dostępu do konta e-mail lub do telefonu komórkowego służącego do identyfikacji za pomocą SMS, że użytkownik nie jest w stanie zalogować się do Panelu klienta.
-W takiej sytuacji zachęcamy do zapoznania się z poniższą [dokumentacją](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure), z której dowiesz się, jak rozwiązać ten problem.
+> [!success]
+> W dowolnym momencie, gdy jesteś zalogowany do swojego konta, możesz odnaleźć swój identyfikator w prawym górnym rogu, klikając na swoje imię.
 
-### Jak zmienić dane osobowe?
+///
 
-Aby wyświetlić lub zmienić dane, zaloguj się do Panelu klienta za pomocą identyfikatora oraz hasła dostępu. Aby uzyskać dostęp do danych osobowych, klikając w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager) Twoje nazwisko, a następnie wybierając `Dostęp do konta`{.action}.
+/// details | Jak zabezpieczyć moje konto?
 
-W sekcji `Mój profil`{.action} po prawej stronie ekranu (kliknij ponownie nazwę, aby usunąć menu po lewej stronie), kliknij `Edytuj moj profil`{.action}.
+Masz kilka opcji, aby zabezpieczyć swoje konto, takich jak:
 
-#### Wskazówki i porady
+- wybór [skomplikowanego hasła i jego regularne odnawianie](/pages/account_and_service_management/account_information/manage-ovh-password);
+- dodanie [podwójnej autoryzacji](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa);
+- skonfigurowanie [ograniczenia według adresu IP](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction).
 
-Chcesz zmienić adres e-mail przypisany do Twojego konta OVHcloud? Na adres aktualnie widniejący w Panelu klienta, zostanie wysłana wiadomość z prośbą o potwierdzenie. Jeżeli nie masz już dostępu do tego adresu, wystarczy, że odczekasz 24 godziny. Po ich upływie zmiana adresu zostanie automatycznie zarejestrowana.
+Aby uzyskać dostęp do tych opcji, zaloguj się do swojego [konta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie kliknij `Moje konto`{.action}.
 
-### Jak poprawnie wpisać mój numer telefonu w momencie zakładania konta?
+Kliknij kartę `Bezpieczeństwo`{.action}, aby je wyświetlić.
 
-Numer telefonu powinien zostać wpisany w formacie międzynarodowym.
+///
 
-#### Wskazówki i porady
+/// details | Jak aktywować podwójną autoryzację (2FA) na moim koncie OVHcloud?
 
-Dla numeru „06 12 34 56 78” należy zatem wpisać „+48 612345678”. Prefiks „+48” dodawany jest automatycznie po wybraniu Polski jako kraju zamieszkania.
+Możesz aktywować jedną lub więcej metod podwójnej autoryzacji, aby zabezpieczyć i kontrolować dostęp do swojego konta. Aby uzyskać wszystkie szczegóły, zapoznaj się z naszym przewodnikiem "[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)".
 
-### Jakie są konsekwencje wprowadzenia rozporządzenia RODO względem ochrony moich danych osobowych?
+///
 
-Aby lepiej poznać konsekwencje rozporządzenia ogólnego o ochronie danych osobowych (RODO) dla Twojej działalności zawodowej lub względem ochrony Twoich danych osobowych, zapoznaj się z treścią poniższych dokumentów:
+/// details | Co zrobić, jeśli nie mogę się zalogować do mojego konta?
 
-- [OVHcloud i ochrona danych osobowych](https://www.ovhcloud.com/pl/personal-data-protection/);
-- [RODO - Pytania do eksperta OVHcloud](https://www.ovhcloud.com/pl/personal-data-protection/faq/).
+Zapomniałeś hasła? Nie masz już dostępu do swojego adresu e-mail? Skonfigurowałeś podwójną autoryzację, ale Twój telefon jest uszkodzony/utracony/skonfiskowany?
+W każdym z tych przypadków, zapoznaj się z [tą dokumentacją](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure), która pomoże Ci zrozumieć odpowiednie procedury.
 
-### Jak zmienić moje hasło OVHcloud?
+///
 
-Udaj się do strony logowania w Twoim Panelu klienta i wybierz „Nie pamiętam identyfikatora lub hasła”. Wpisz swój identyfikator lub główny adres e-mail przypisany do Twojego konta OVHcloud, a następnie kliknij „Wyślij”. Na adres kontaktowy konta zostanie wysłany e-mail z prośbą o potwierdzenie. Przeczytaj uważnie instrukcje i kliknij umieszczony w e-mailu link.
+/// details | Jak zmienić hasło do mojego konta OVHcloud?
 
-#### Wskazówki i porady
+Zaloguj się do swojego [konta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie kliknij `Moje konto`{.action}.
 
-Jeśli nie masz dostępu do adresu e-mail do kontaktu, prosimy o wypełnienie tej [procedury](https://www.ovh.pl/pomoc/procedury/).
-Jeśli nie pamiętasz Twojego identyfikatora klienta, odnajdziesz go w prawym górnym rogu Twojej ostatniej faktury. Identyfikator składa się z następujących znaków: „aa00000-ovh” (przy czym pierwsze litery są zazwyczaj inicjałami osoby, która założyła konto). Identyfikator znajduje się również w e-mailu potwierdzającym założenie konta oraz w e-mailach potwierdzających złożenie zamówienia lub jego odnowienie.
+Kliknij kartę `Bezpieczeństwo`{.action}, a następnie kliknij przycisk `Zmień`{.action} po lewej stronie od słowa **Hasło**. Możesz następnie zmienić swoje obecne hasło. Wyświetlany jest komunikat bezpieczeństwa, który informuje Cię, że jesteś na punkcie zmiany hasła. Po potwierdzeniu, otrzymasz (na główny adres e-mail podany w koncie) wiadomość e-mail zawierającą procedurę do wykonania. 
 
-### Jak zmienić dane kontaktowe?
+Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzenie i zarządzanie hasłem do konta](/pages/account_and_service_management/account_information/manage-ovh-password)".
 
-Możesz nadać innym kontom klienta OVHcloud uprawnienia do zarządzania Twoimi usługami w zakresie administracyjnym, technicznym i księgowym. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje kontakty`{.action}.
+> [!success]
+> **Nie pamiętasz swojego hasła?**
+>
+> Przejdź na [stronę logowania do swojego konta](/links/manager) i kliknij `Nie pamiętasz identyfikatora klienta lub hasła?`{.action}. Wpisz swój identyfikator lub główny adres e-mail przypisany do Twojego konta OVHcloud, a następnie kliknij `Wyślij`{.action}. Wiadomość e-mail zostanie wysłana na adres e-mail kontaktowy konta, aby potwierdzić żądanie. Dokładnie przeczytaj instrukcje i kliknij link, który zawiera.
+>
+> Jeśli nie masz już dostępu do tego adresu, ale masz dostęp do swojego adresu e-mail rezerwowego, utwórz [bilet wsparcia za pośrednictwem centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), aby zastąpić główny adres e-mail adresem e-mail rezerwowym.
+>
+> Jeśli nie masz dostępu ani do swojego adresu e-mail, ani do swojego konta, ani do adresu e-mail rezerwowego, musisz wykonać [tą procedurę](/links/transversal/procedure-email-change).
+>
+> Jeśli zapomniałeś swojego identyfikatora klienta, możesz go odnaleźć w prawym górnym rogu Twojej ostatniej faktury. Wygląda to mniej więcej tak: "aa00000-ovh" (pierwsze litery są zazwyczaj inicjałami osoby, która utworzyła konto). Ten identyfikator jest również wskazany w e-mailu potwierdzającym utworzenie konta, jak również w e-mailach potwierdzających lub odnawiających zamówienie.
+>
 
-Nadanie uprawnień musi zostać zatwierdzone drogą mailową zarówno przez administratora usługi, jak i przez nowy kontakt.
+///
 
-Przed wprowadzeniem jakiejkolwiek zmiany upewnij się, że wszystkie adresy e-mail podane do kontaktu są prawidłowe. W przeciwnym razie dyspozycja nie będzie mogła zostać zrealizowana.
+/// details | Czy istnieje limit liczby razy, w jakich mogę zmienić hasło do mojego konta OVHcloud (za pomocą opcji "Nie pamiętasz identyfikatora klienta lub hasła?")?
 
-Jeśli chcesz odzyskać domenę, której jesteś właścicielem zarejestrowanym w odpowiednim rejestrze (możesz sprawdzić te informacje na [www.ovh.com/pl/cgi-bin/tools/check_whois.pl](https://www.ovh.com/pl/cgi-bin/tools/check_whois.pl)), ale nie masz dostępu do konta klienta administratora, zalecamy zastosowanie procedury: [www.ovh.pl/cgi-bin/pl/procedure/procedureChangeContacts.cgi](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeContacts.cgi)
+OVHcloud nie nakłada limitu na liczbę zmian hasła, możesz je zmieniać tyle razy, ile chcesz.
 
-#### Wskazówki i porady
+Jednak nasz system wysyła wiadomości e-mail na Twój adres e-mail kontaktowy, a możliwe jest, że Twój dostawca usług e-mail zablokuje pocztę, jeśli złożysz wiele żądań zmiany hasła w ciągu kilku minut.
 
-Pełna instrukcja zarządzania kontaktami dostępna jest tutaj: [/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami](/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami)
+///
 
-### W jaki sposób skonfigurować lub zmienić kontakt księgowy?
+/// details | Nie aktywowałem podwójnej autoryzacji na moim koncie, ale mimo to proszą mnie o kod. Jak to wyłączyć?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje kontakty`{.action}.
+Nawet jeśli podwójna autoryzacja nie jest aktywowana na Twoim koncie, może Cię poprosić o kod weryfikacyjny, aby potwierdzić swoją tożsamość. Ta procedura ma na celu ochronę Twojego konta i danych i nie można jej wyłączyć.
 
-#### Wskazówki i porady
+Kod bezpieczeństwa jest wysyłany przez e-mail **na główny adres**, który podałeś na koncie.
 
-Aby dowiedzieć się więcej o zarządzaniu kontaktami, zapoznaj się z treścią przewodnika: [Zarządzanie kontaktami i usługami](/pages/account_and_service_management/account_information/managing_contacts).
+Jeśli nie możesz odnaleźć tego kodu, sprawdź katalogi "spam" / "niechciana poczta" swojego adresu e-mail.
 
-### Jak mogę zabezpieczyć moje konto?
+> [!success]
+> - Aktywacja podwójnej autoryzacji na Twoim koncie pozwala Ci wybrać urządzenie, które chcesz użyć (telefon, tablet, smartfon, klucz U2F), aby otrzymać kod uwierzytelniający. Więcej informacji w naszym przewodniku "[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)".
+> - Możesz również wdrożyć dodatkowe zabezpieczenie, aby ograniczyć dostęp do Twojego konta OVHcloud do jednego lub kilku adresów IP. Więcej informacji w naszym przewodniku "[Ogranicz dostęp przez IP do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction)".
 
-Aby zabezpieczyć Twoje konto, masz do wyboru kilka rozwiązań, takich jak:
+///
 
-- wybór złożonego hasła
-- jego regularne odnowienie tego hasła
-- weryfikacji dwuetapowej
+/// details | Jak wyłączyć podwójną autoryzację (2FA) na moim koncie OVHcloud?
 
-W przypadku weryfikacji dwuetapowej za pomocą wysyłania kodu w wiadomości SMS lub poprzez ograniczenie za pomocą adresu IP (autoryzacja lub odmowa dostępu do niektórych adresów) możesz dodać reguły bezpieczeństwa w Panelu klienta. Wszystkie te opcje są dostępne w sekcji „Bezpieczeństwo” po kliknięciu na Twoje inicjały w prawym górnym rogu Panelu klienta OVHcloud. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
+Jeśli urządzenie (telefon komórkowy / smartfon / klucz bezpieczeństwa), które używasz do podwójnej autoryzacji, zostało stracone, skradzione lub przestało działać, możesz:
 
-Kliknij `Bezpieczeństwo`{.action}
+- użyć [kodów awaryjnych](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#codes), które aktywne masz zapisane;
+- użyć innego urządzenia podwójnej autoryzacji, jeśli masz aktywowane kilka;
+- [wyłączyć podwójną autoryzację](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation).
 
-Aby uzyskać więcej informacji, obejrzyj [film](https://www.youtube.com/watch?v=odO58c4gJfc&list=PL0DynEzr_sE5MnOfJOpVJN-EhfMDWoqGS&index=24).
+Zapoznaj się z sekcją "[Co zrobić, jeśli jedno z moich urządzeń zostało stracone/skonfiskowane lub przestało działać?](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device)" lub sekcją "[Całkowite wyłączenie podwójnej autoryzacji](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation)" naszego przewodnika dotyczącego podwójnej autoryzacji.
 
-### Jak aktywować uwierzytelnianie dwuetapowe/2FA w OVHcloud?
+///
 
-Po utworzeniu konta klienta OVHcloud zalecamy
-zabezpieczyć Twoje dane osobowe, aktywując dwuetapowe
-uwierzytelnianie. 
+### Zarządzanie informacjami osobowymi
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
+/// details | Jak zmienić moje informacje osobiste?
 
-Kliknij `Bezpieczeństwo`{.action}.
+Aby wyświetlić lub zmienić swoje dane kontaktowe, zaloguj się do swojego [konta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie kliknij `Moje konto`{.action}.
 
-Ponadto, aby aktywować 2FA, dostępnych jest kilka rozwiązań umożliwiających uwierzytelnienie:
+Kliknij następnie `Edytuj mój profil`{.action}, w sekcji `Mój profil`.
 
-- SMS-em, za pomocą kodu bezpieczeństwa
-- Z aplikacji mobilnej kompatybilnej z systemami Android, iPhone i Windows mobile
-- Korzystając z klucza bezpieczeństwa zgodnego z U2F
+> [!success]
+> **Chcesz zmienić adres e-mail swojego konta OVHcloud?**
+>
+> Najpierw zostanie wysłane żądanie potwierdzenia na adres e-mail, który obecnie podałeś w swoim koncie. Jeśli nie możesz już uzyskać dostępu do tego adresu e-mail, potrzebny jest czas oczekiwania 24 godziny. Po tym czasie zmiana zostanie automatycznie wykonana.
+>
 
-[Więcej informacji](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+///
 
-### Jak dezaktywować uwierzytelnianie dwuetapowe/2FA w OVHcloud?
+/// details | Jak uzyskać dostęp do umów i warunków ogólnych usług?
 
-Jeśli chcesz dezaktywować skonfigurowane dwuetapowe uwierzytelnianie, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
+Regulaminy usług OVHcloud można znaleźć bezpośrednio w [Panelu klienta](/links/manager). Po zalogowaniu przejdź do menu `Moje konto`{.action}, a następnie kliknij `Wyświetl regulaminy`{.action}.
 
-Kliknij `Bezpieczeństwo`{.action}.
+Możesz również zapoznać się z umowami na naszej stronie internetowej, za pośrednictwem [tego linku](/links/terms-conditions-contracts).
 
-Będziesz mieć możliwość dezaktywacji poszczególnych zabezpieczających urządzeń peryferyjnych. 
-Jeśli nie masz już dostępu do swojej strefy klienta z powodu utraty urządzenia do dwuetapowego uwierzytelnienia, skontaktuj się z pomocą techniczną OVHcloud, aby doradca mógł ręcznie dezaktywować urządzenie po przedstawieniu dokumentów potwierdzających.
+Ta strona zawiera wszystkie potrzebne informacje dotyczące naszych umów, w tym warunki i zasady naszych usług.
 
-### Co zrobić w sytuacji, gdy moje konto OVHcloud zostało zhakowane?
+///
 
-W przypadku nielegalnego wykorzystania Twojego konta OVHcloud (tożsamość, środek płatności...), należy jak najszybciej złożyć wstępne zgłoszenie o wystąpieniu naruszenia do odpowiednich organów policji.
+/// details | Jakie są skutki RODO dla moich danych osobowych?
 
-Po otrzymaniu zawiadomienia organy policji skontaktują się z Tobą, aby umówić się na spotkanie i dokończyć procedurę. Zaraz po otrzymaniu dokumentu potwierdzającego złożenie przez Ciebie skargi, należy przesłać nam jego kopię. Tym samym będziemy mogli rozpocząć odpowiednie działania wewnętrzne.
+Aby lepiej zrozumieć skutki rozporządzenia o ogólnej ochronie danych (RODO) dla Twojej działalności zawodowej lub danych osobowych, zapraszamy do zapoznania się z tymi zasobami:
 
-Twój identyfikator klienta zostanie zablokowany. Wszelkie usługi wykupione nielegalnie zostaną automatycznie usunięte, a płatności za nie zwrócone.
+- [OVHcloud i ochrona danych osobowych](/links/transversal/personal-data-protection);
+- [RODO: pytania, które zadajesz sobie](/links/transversal/personal-data-protection-faq).
 
-Abyś mogła/mógł ponownie korzystać z Twojego konta klienta, poprosimy Cię ewentualnie o zmianę Twojego adresu e-mail i/lub Twojego hasła po kliknięciu tego linku: [www.ovh.pl/cgi-bin/pl/procedure/procedureChangeEmail.cgi](https://www.ovh.pl/cgi-bin/pl/procedure/procedureChangeEmail.cgi).
+///
 
-Chcąc uniknąć podobnych sytuacji w przyszłości, zabezpiecz swoje konto z poziomu Panelu klienta, dodając np. dwuskładnikowe uwierzytelnienie (kod wysyłany za pomocą SMS-a) oraz ogranicz dostęp do konta do Twojego adresu/adresów IP (akceptacja lub odmowa dostępu do niektórych adresów IP). Wszystkie te opcje można odnaleźć w sekcji „Bezpieczeństwo”. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}. Kliknij `Bezpieczeństwo`{.action}
+/// details | Czy mogę ręcznie zmienić swój identyfikator klienta? Chciałbym innych liter lub cyfr.
 
-### Otrzymałem e-mail, który wygląda na phishing i kradzież tożsamości OVHcloud. Jak zgłosić tę wiadomość do weryfikacji?
+Identyfikator klienta nie może być zmieniony, ponieważ jest powiązany z informacjami podanymi podczas tworzenia Twojego konta OVHcloud. Pierwsze dwie litery odpowiadają zazwyczaj inicjałom nazwiska administratora, a kolejne cyfry są generowane losowo.
 
-Wyjaśnienie, jak rozpoznać i zgłosić atak phising przeprowadzony przy użyciu wiadomości e-mail lub SMS, znajdziesz w [przewodniku](/pages/account_and_service_management/account_information/phishing_care)
+Zapamiętaj, że masz również możliwość [utworzenia nowego konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation). Musisz jednak ręcznie przenieść wszystkie swoje usługi na nowe konto, postępując zgodnie z [procedurą zmiany kontaktów](/pages/account_and_service_management/account_information/managing_contacts).
 
-### W jaki sposób zgłosić nadużycie lub treści niezgodne z prawem wykryte na usługach hostowanych przez OVHcloud?
+///
 
-Nadużycia lub treści niezgodne z prawem należy zgłaszać na przeznaczonej do tego celu platformie OVHcloud [www.ovh.com/abuse/](https://www.ovh.com/abuse/). Wybierz odpowiednią kategorię i uzupełnij wymagane pola.
+/// details | Czy mogę zmienić filię mojego konta OVHcloud?
 
-Tylko logi i dane techniczne mogą zostać przekazane właścicielowi usługi, której dotyczy nadużycie. Wypełniając pola, nie należy zatem podawać żadnych danych osobowych.
+Jeśli utworzyłeś konto OVHcloud w złej filii, możesz utworzyć nowe konto w odpowiedniej filii, używając tych samych danych osobowych.
 
-### Após a declaração de um abuso, o que acontece à minha queixa?
+Jednak musisz przypisać inny adres e-mail kontaktowy, ponieważ nie można mieć dwóch różnych kont OVHcloud z tym samym adresem e-mail kontaktowym.
 
-A sua queixa será tratada o mais rapidamente possível pelo Serviço Jurídico da OVHcloud. A sua queixa será analisada e, em função disso, comunicar-lhe-emos mais pormenores. Após comprovação do comportamento abusivo de um dos nossos clientes, informá-lo-emos e faremos o necessário junto da(s) pessoa(s) em causa para resolver a situação o quanto antes.
+Znajdziesz dodatkowe informacje na temat tworzenia konta OVHcloud w naszym przewodniku "[Utwórz konto OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)".
 
-### Firma OVHcloud przesłała mi wiadomość e-mail informującą o potencjalnym nadużyciu z mojej strony. Co powinienem w takiej sytuacji zrobić?
+Po utworzeniu nowego konta OVHcloud w odpowiedniej filii, możesz postępować zgodnie z instrukcjami [tego przewodnika](/pages/account_and_service_management/account_information/managing_contacts), aby przenieść swoje usługi z jednego konta na drugie.
 
-Jeśli nadużycie zostało nam zgłoszone lub zauważone przez nasze zespoły, otrzymasz wiadomość e-mail wysłaną z adresu o formacie: "ticket+"numer-zgłoszenia"@abuse.ovh.net".
+///
 
-Poprosimy Cię o przeanalizowanie działań uznanych jako nadużycie oraz podjęcie odpowiednich kroków w celu ich zaprzestania i/lub usunięcie wszelkich treści niezgodnych z prawem.
+/// details | Jak usunąć mój konto OVHcloud ?
 
-Aby upewnić się, czy osoby trzecie nie przejęły kontroli nad Twoimi usługami (np. w wyniku włamania), zalecamy, abyś sprawdził, czy Twoje usługi są odpowiednio zabezpieczone:
+Zamknięcie Twojego konta klienta OVHcloud oraz usunięcie Twoich danych osobowych jest możliwe tylko wtedy, gdy:
 
-- [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/pages/account_and_service_management/account_information/all_about_username)
-- [Zmiana hasła do konta](/pages/account_and_service_management/account_information/manage-ovh-password)
-- [Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
-- [Jak zabezpieczyć stronę WWW?](/pages/web_cloud/web_hosting/secure_your_website)
-- [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
-- [Zabezpieczenie serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+1. Nie masz już widocznych usług w sekcji "[Moje usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie, musisz najpierw złożyć wniosek o ich zakończenie i poczekać na ich usunięcie.
+2. Nie masz żadnych faktur do zapłacenia. W przeciwnym razie, musisz je uregulować, klikając przycisk `Rozlicz natychmiast`{.action} w akcjach masowych na stronie "[Moje faktury](https://www.ovh.com/manager/#/dedicated/billing/history)".
+3. Nie masz żadnych aktywnych zamówień. Sprawdź to na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Twój rachunek płatny z góry nie jest dodatni. Sprawdź to na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
 
-### W jaki sposób mogę uniknąć zawieszenia usługi w przypadku wykrycia nadużycia na jednej z moich usług OVHcloud?
+Jeśli wszystkie powyższe warunki są spełnione, możesz złożyć wniosek o usunięcie swojego konta OVHcloud oraz powiązanych danych, wykonując poniższe kroki:
 
-Po przeprowadzeniu niezbędnych działań odpowiedz na wiadomość e-mail wysłaną przez dział Abuse i poinformuj o podjętych krokach.
-Pracownik naszego zespołu odpowie na Twoją wiadomość w najkrótszym możliwym terminie.
+1. Zaloguj się do [centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+1. Wybierz motyw `Zarządzaj swoim kontem OVHcloud`{.action}.
+1. Wpisz `Chcę zamknąć swoje konto OVHcloud`{.action} i wykonaj opisane kroki.
 
-### Wysłałem wiadomość do działu Abuse OVHcloud, ale moja usługa jest nadal zablokowana. Co mogę zrobić?
+///
 
-W [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) możesz zwrócić się do Biura Obsługi Klienta o udzielenie dodatkowych informacji dotyczących przetwarzania Twojego zgłoszenia Abuse. Aby usprawnić obsługę Twojego zapytania, podaj numer zgłoszenia Abuse.
+### Zarządzanie powiadomieniami i logami
 
-### Jak usunąć moje konto OVHcloud?
+/// details | Czy mogę otrzymywać wszystkie powiadomienia z OVHcloud na wielu adresach e-mail?
 
-Zamknięcie konta klienta OVHcloud i usunięcie danych osobowych jest możliwe tylko wtedy, gdy:
+Niestety nie jest możliwe wysyłanie wiadomości e-mail na wiele adresów.
 
-1. Nie masz już widocznych usług w sekcji "[Moje usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie najpierw poproś o ich rozwiązanie i zaczekaj na ich usunięcie.
-2. Nie masz faktur oczekujących na płatność. W przeciwnym razie należy uregulować należność, klikając przycisk `Zapłać teraz`{.action} w akcjach masowych na stronie "[Moje faktury](https://www.ovh.com/manager/#/dedicated/billing/history)".
-3. Nie posiadasz zamówień w trakcie realizacji. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
-4. Twoje konto przedpłacone nie jest dodatnie. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+Z poziomu [Panelu klienta OVHcloud](/links/manager) możesz jednak skonfigurować adres e-mail rezerwowy, który nie będzie używany do wysyłania wszystkich naszych komunikatów (renewal, usunięcia usług itp.).
 
-Jeśli powyższe warunki są spełnione, możesz zażądać usunięcia konta OVHcloud i powiązanych z nim danych, wykonując następujące kroki:
+Taki adres e-mail rezerwowy może być przydatny w przypadku utraty dostępu do głównego adresu e-mail, co uniemożliwiłoby logowanie się do Panelu klienta OVHcloud.
 
-1. Zaloguj się do [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Kliknij przycisk `Utwórz zgłoszenie`{.action}.
-3. Wybierz motyw `Zarządzaj kontem klienta OVHcloud`{.action}.
-4. Prosimy o sprecyzowanie opcji `Chcę zamknąć konto klienta OVHcloud`{.action} i postępowanie zgodnie z instrukcjami zawartymi w tej operacji.
+///
+
+/// details | Otrzymałem od Państwa powiadomienie w innej języku. Jak to poprawić?
+
+Możesz zmienić język naszych automatycznych wiadomości e-mail, wykonując poniższe kroki:
+
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+1. Przejdź następnie do [centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+1. Kliknij `Zaloguj się do centrum pomocy`{.action} i potwierdź logowanie.
+1. Kliknij flagę w prawym górnym rogu centrum pomocy i wybierz kraj/region odpowiadający wybranemu językowi.
+1. Kliknij `Wyloguj się z centrum pomocy`{.action}.
+
+Następnie kolejne automatyczne powiadomienia e-mail zostaną wysłane w wybranym języku.
+
+///
+
+/// details | Czy mogę zobaczyć wszystkie działania wykonane z poziomu Panelu klienta? Czy są logi?
+
+Tak, możesz uzyskać dostęp do logów działań wykonanych na Twoim koncie.
+
+Aby to zrobić, musisz zalogować się do [API OVHcloud](/links/api), korzystając z przewodnika "[Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps)". Po zalogowaniu możesz użyć poniższego wywołania API, aby pobrać identyfikator logu:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/logs/self
+>
+
+W ten sposób otrzymasz listę identyfikatorów logów. Następnie możesz użyć poniższego wywołania API, aby pobrać szczegóły konkretnego logu:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/logs/self/{logId}
+>
+
+Zamień `{logId}` na rzeczywisty identyfikator logu, który chcesz sprawdzić. Dzięki temu uzyskasz dostęp do logu i zobaczysz działania wykonane z poziomu Panelu klienta.
+
+///
+
+### Delegowanie dostępu do usług
+
+/// details | Jak mogę przekazać dostęp do moich usług innym osobom?
+
+Możesz przekazać innym kontom klientów OVHcloud zarządzanie administracyjne, techniczne i fakturą swoich usług z poziomu swojego Panelu klienta. Aby to zrobić, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie `Moje kontakty`{.action}.
+
+Delegacja usług musi zostać potwierdzona e-mailem zarówno przez administratora usługi, jak i nowy kontakt.
+
+Przed każdą zmianą upewnij się, że wszystkie adresy e-mail kontaktowe są poprawne, w przeciwnym razie żądanie nie zostanie zakończone sukcesem.
+
+Jeśli chcesz odzyskać nazwę domeny, której jesteś właścicielem zarejestrowanym u rejestranta (możesz to sprawdzić za pomocą [naszego narzędzia WHOIS online](/links/web/domains-whois)), ale nie masz dostępu do konta administratora, zachęcamy do wykonania [tej procedury](/links/transversal/procedure-contact-change).
+
+> [!success]
+> Pełny przewodnik dotyczący zarządzania kontaktami jest dostępny [tutaj](/pages/account_and_service_management/account_information/managing_contacts).
+
+///
+
+/// details | Jak skonfigurować lub zmienić kontakt do faktury?
+
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij swoje imię w prawym górnym rogu, a następnie `Moje kontakty`{.action}.
+
+> [!success]
+> Jeśli chcesz dowiedzieć się więcej o zarządzaniu kontaktami, zachęcamy do przeczytania szczegółowego przewodnika: "[Zarządzanie kontaktami usług](/pages/account_and_service_management/account_information/managing_contacts)".
+
+///
+
+/// details | Chcę przenieść wszystkie moje usługi na inne konto OVHcloud, jak mogę to zrobić w jednym kroku?
+
+Aby przenieść wszystkie swoje usługi na inne konto OVHcloud, sugerujemy, abyś [skontaktował się bezpośrednio z naszym wsparciem technicznym](https://help.ovhcloud.com/csm?id=csm_get_help). Nasze zespoły będą mogły Ci pomóc w całym procesie i wspierać Cię w masowym przeniesieniu usług na nowe konto.
+
+///
+
+### Zgłaszanie działań nadużywczych/nielegalnych lub włamania
+
+/// details | Co zrobić, jeśli moje konto OVHcloud zostało skompromitowane?
+
+W przypadku nadużycia Twojego konta OVHcloud (identyfikator, metody płatności itp.), zachęcamy do złożenia skargi jak najszybciej w komendurze policji lub gminie.
+
+Gdy skarga będzie w Twoim posiadaniu, musisz jej nam przesłać kopię. Umożliwi to rozpoczęcie naszych wewnętrznych działań.
+
+Skontaktuj się z obsługą OVHcloud telefonicznie:
+
+- Polska: 71 750 02 00
+
+Twój identyfikator klienta zostanie zablokowany, a usługi podpisane nadużywanie zostaną usunięte.
+
+Na koniec, aby odzyskać dostęp do swojego konta klienta, możemy Cię poprosić o zmianę adresu e-mail i/lub hasła za pomocą [tej procedury](/links/transversal/procedure-email-change).
+
+///
+
+/// details | Otrzymałem e-mail, który wydaje się być phishingiem, który nadaje się na OVHcloud, jak zgłosić go do weryfikacji?
+
+Aby zidentyfikować i zgłosić e-mail lub SMS phishingowy, zapoznaj się z naszym [wyłącznie poświęconym przewodnikiem](/pages/account_and_service_management/account_information/phishing_care).
+
+///
+
+/// details | Jak zgłosić nadużycie lub nielegalny zawartość pochodzące z usług hostowanych przez OVHcloud, na które jestem ofiarą?
+
+Znajdź odpowiedzi na pytania dotyczące zgłaszania nadużyć lub nielegalnej zawartości w naszej [FAQ dotyczącej wsparcia OVHcloud](/pages/account_and_service_management/account_information/faq-support).
+
+///
+
+/// details | OVHcloud wysłał mi e-mail mówiący o możliwym nadużyciu ze strony mojej, co powinienem zrobić?
+
+Znajdź odpowiedzi na pytania dotyczące zgłaszania nadużyć lub nielegalnej zawartości w naszej [FAQ dotyczącej wsparcia OVHcloud](/pages/account_and_service_management/account_information/faq-support).
+
+///
 
 ## Sprawdź również
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).

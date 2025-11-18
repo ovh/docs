@@ -151,7 +151,7 @@ Ein einfacher Test, um zu sehen, ob Ihr Skript einen Fehler verursacht, ist, es 
 
 #### Überprüfung der Nutzung absoluter Pfade
 
-Achten Sie immer darauf, absolute Zugriffspfade zu den Dateien Ihrer Skripte zu verwenden. Die Konstante "DIR" kann beispielsweise dazu dienen, den aktuellen Pfad in PHP-Skripten zu erhalten ([PHP-Dokumentation](https://www.php.net/manual/de/language.constants.predefined.php){.external}).
+Achten Sie immer darauf, absolute Zugriffspfade zu den Dateien Ihrer Skripte zu verwenden. Die Konstante "DIR" kann beispielsweise dazu dienen, den aktuellen Pfad in PHP-Skripten zu erhalten ([PHP-Dokumentation](https://www.php.net/manual/de/language.constants.predefined.php)).
  
 #### Überprüfung der Ausführungsprotokolle
 

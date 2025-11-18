@@ -14,8 +14,8 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
@@ -41,7 +41,7 @@ To interact with your MongoDB instance with PHP, your development environment ne
 - MongoDB PHP extension;
 - Strongly recommended : the MongoDB PHP Library.
 
-Please follow the official [MongoDB documentation for PHP drivers](https://docs.mongodb.com/drivers/php/){.external} to get the latest information.
+Please follow the official [MongoDB documentation for PHP drivers](https://docs.mongodb.com/drivers/php/) to get the latest information.
 
 At the end of the documentation page, you will find a **compatibility matrix** between PHP versions, MongoDB extensions and library versions.
 Follow this accordingly.
@@ -163,7 +163,7 @@ Congratulations! Everything is working properly.
 ### PHP frameworks and tools for MongoDB
 
 Coding in PHP from scratch to interact with a MongoDB instance can be fun and very instructive.
-If you are interested, you can also take a look at [MongoDB PHP list for libraries, frameworks and tools](https://docs.mongodb.com/drivers/php-libraries/){.external}.
+If you are interested, you can also take a look at [MongoDB PHP list for libraries, frameworks and tools](https://docs.mongodb.com/drivers/php-libraries/).
 They can really help your work with PHP.
 
 ## Go further
@@ -174,6 +174,6 @@ They can really help your work with PHP.
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

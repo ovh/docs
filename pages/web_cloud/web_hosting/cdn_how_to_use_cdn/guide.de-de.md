@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseiten mit CDN beschleunigen"
 excerpt: "Diese Anleitung erklärt, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern"
-updated: 2025-05-22
+updated: 2025-10-27
 ---
 
 ## Ziel 
@@ -21,7 +21,7 @@ Jeder Server speichert einen Teil Ihrer Webseite im Cache, um die Funktion zu ge
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 
@@ -45,7 +45,7 @@ Sie werden zum Bestellformular weitergeleitet. Sobald die Bestellung bezahlt wur
 
 #### Wenn die CDN Option bereits für Ihr Webhosting aktiviert ist
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `Domain bearbeiten`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `Domain bearbeiten`{.action}.
 
 Haken Sie "CDN aktivieren" an, klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
@@ -53,7 +53,7 @@ Haken Sie "CDN aktivieren" an, klicken Sie auf `Weiter`{.action} und dann auf `B
 
 > [!warning]
 > 
-> Wenn dem Webhosting unter `Multisite`{.action} eine externe Domain hinzugefügt wurde, müssen Sie die IP-Adresse des CDN Ihres Hostings in der DNS-Zone des Domainnamens angeben.
+> Falls Sie eine externe Domain zu einem der Webseiten Ihres Webhostings hinzufügen, müssen Sie die IP-Adresse des CDNs Ihres Webhostings in der DNS-Zone der Domain angeben.
 >
 > Im [Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) finden Sie die spezifische IP-Adresse des CDN Ihres Clusters.
  
@@ -66,15 +66,15 @@ Bezüglich SEO (Suchmaschinenoptimierung) ist die Ladegeschwindigkeit Ihrer Webs
 
 #### Den Shared CDN-Cache leeren
 
-Es ist manchmal nützlich, den CDN-Cache zu leeren, insbesondere, wenn Sie Ihre statischen Dateien ändern. Dies ist zum Beispiel der Fall, wenn Sie eine neue Version Ihrer Webseite erstellt haben. Sie können dann den CDN-Cache für jeden Ihrer Multisite-Einträge leeren.
+Es ist manchmal nützlich, den CDN-Cache zu leeren, insbesondere, wenn Sie Ihre statischen Dateien ändern. Dies ist zum Beispiel der Fall, wenn Sie eine neue Version Ihrer Webseite erstellt haben. Sie können den Cache für jede Ihrer Domains und Subdomains leeren.
 
-Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN leeren`{.action}.
+Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `CDN leeren`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Shared CDN-Optionen konfigurieren
 
-Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN bearbeiten`{.action}.
+Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `CDN bearbeiten`{.action}.
 
 > [!warning]
 > 
@@ -98,7 +98,7 @@ Wenn Sie Ihre Optionen ausgewählt haben, klicken Sie auf `Konfiguration anwende
 
 ##### **Eine Cache-Regel erstellen** <a name="cacherules"></a>
 
-Um eine Cache-Regel zu einem der Elemente Ihrer Seite hinzuzufügen, gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und anschließend auf `CDN konfigurieren`{.action}.
+Um eine Cache-Regel zu einem der Elemente Ihrer Seite hinzuzufügen, gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `CDN konfigurieren`{.action}.
 
 Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 
@@ -126,7 +126,7 @@ Klicken Sie nach der Konfiguration Ihrer Regeln und Optionen auf `Konfiguration 
 
 #### CDN Security Optionen konfigurieren
 
-Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann `CDN bearbeiten`{.action}. 
+Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `CDN bearbeiten`{.action}. 
 
 > [!primary]
 >  Für die unten aufgeführten Optionen ist [CDN Security](/links/web/hosting-options-cdn) oder [CDN Advanced](/links/web/hosting-options-cdn) erforderlich.
@@ -173,7 +173,7 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 #### Konfiguration der CDN Advanced-Optionen
 
-Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann `CDN bearbeiten`{.action}.  
+Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `CDN bearbeiten`{.action}.  
 
 > [!primary]
 >
@@ -196,7 +196,7 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 - **Advanced Purge**: Individualiseren Sie die Leerung, indem Sie die zu löschenden Elemente des Caches auswählen: die gesamte Webseite, ein Ordner, eine URI, eine Dateierweiterung oder einen regulären Ausdruck. 
 
-	Klicken Sie im Tab Multisite auf den Button `...`{.action}. rechts neben dem Multisite-Eintrag und dann auf `Cache leeren`{.action}. 
+	Gehen Sie zum Tab `Multisite`{.action}, klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `Cache leeren`{.action}. 
 
 	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
@@ -221,7 +221,7 @@ Klicken Sie nach der Konfiguration Ihrer Optionen auf `Konfiguration anwenden`{.
 
 ##### **Eine erweiterte Cache-Regel erstellen** <a name="cacherulesadv"></a>
 
-Um eine Cache-Regel zu einem der Elemente Ihrer Website hinzuzufügen, gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und anschließend auf `CDN bearbeiten`{.action}.
+Um eine Cache-Regel zu einem der Elemente Ihrer Website hinzuzufügen, gehen Sie auf den Tab `Multisite`{.action} Ihres Webhostings, klicken Sie auf `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `CDN bearbeiten`{.action}.
 
 Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 
@@ -278,7 +278,7 @@ Sie können auch dann vom CDN-Cache profitieren, wenn Sie kein CMS verwenden. Hi
 
 ### Die CDN-Option für eine Website deaktivieren
 
-Diese Aktion ermöglicht die Deaktivierung des CDN für einen oder mehrere Ihrer Multisite-Einträge, ohne die CDN-Option von Ihrem Webhosting zu entfernen.
+Diese Aktion ermöglicht es, das CDN für eine oder mehrere Ihrer Domains oder Subdomains zu deaktivieren, ohne die CDN-Option aus Ihrem Webhosting zu entfernen.
 
 > [!warning]
 >
@@ -293,7 +293,7 @@ Diese Aktion ermöglicht die Deaktivierung des CDN für einen oder mehrere Ihrer
 > Die Änderung eines Eintrags in der aktiven DNS-Zone eines Domainnamens führt zu einer Propagationsverzögerung von **4** bis **24** Stunden, um voll wirksam zu sein. Bis diese Propagierung abgeschlossen ist, wird möglicherweise eine Seite mit dem Code **520** angezeigt. Dies hängt damit zusammen, dass Teile des DNS-Netzwerks die Anfragen immer noch an die IP-Adresse des CDN weiterleiten, das mit Ihrem Webhosting verbunden ist.
 >
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `Domain bearbeiten`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem betreffenden Domain- oder Subdomain-Namen und dann auf `Domain bearbeiten`{.action}.
 
 Entfernen Sie den Haken bei "CDN aktivieren", klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 

@@ -1,161 +1,180 @@
 ---
 title: "E-mail Pro - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Android"
 excerpt: "Dowiedz się, jak skonfigurować konto E-mail Pro w aplikacji Adroid przy użyciu aplikacji Microsoft Outlook"
-updated: 2025-04-28
+updated: 2025-08-18
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
 
 ## Wprowadzenie
 
-Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji.
+Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji. Aplikacja Outlook firmy Microsoft na urządzenia z systemem Android jest dostępna bezpłatnie w sklepie Google Play.
 
 **Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu z systemem Android przy użyciu aplikacji Microsoft Outlook.**
-
-## Wymagania początkowe
-
-- Wykupienie usługi [E-mail Pro](/links/web/email-pro).
-- Instalacja aplikacji Microsoft Outlook na urządzeniu z systemem Android Możesz pobrać plik z *Google Play Store*.
 
 > [!warning]
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
-> 
+>
 > Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) i/lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
-> 
+
+## Wymagania początkowe
+
+- Wykupienie usługi [E-mail Pro](/links/web/email-pro).
+- Instalacja aplikacji Outlook na urządzeniu przenośnym [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=pl).
+- Dane do logowania do konta e-mail, które chcesz skonfigurować.
 
 ## W praktyce
 
-### Etap 1: pobrać informacje dotyczące konta E-mail Pro <a name="step1"></a>
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Email Pro`{.action}, następnie wybierz platformę E-mail Pro, w której znajduje się adres e-mail, który chcesz skonfigurować.
-
-Na nowej stronie kliknij zakładkę `Konta e-mail`{.action}.
-
-![Outlook-android-emailpro-login](images/ol-android-ep-login.png){.thumbnail}
-
-Pobierz nazwę serwera E-mail Pro, który wyświetla się pod hasłem `Webmail`{.action}. W przedstawionym powyżej przykładzie chodzi o `proX.mail.ovh.net`.
+### Dodaj konto <a name="add-account"></a>
 
 > [!warning]
 >
-> Uzyskaj poprawnie **właściwą nazwę** serwera E-mail Pro, na którym znajduje się adres e-mail, który chcesz skonfigurować. Usługa może się różnić w zależności od starszeństwa usługi E-mail Pro (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.).
-> 
+> W naszych przykładach używamy określenia serwer: pro?.mail.ovh.net. Należy zastąpić "?" cyfrą wskazującą serwer Twojej usługi E-mail Pro.
+>
+> Znajdziesz tę cyfrę w [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, a następnie `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** w zakładce `Informacje ogólne`{.action}.
 
-W zakładce `Konta e-mail`{.action} Twojej platformy *E-mail Pro* wyświetla się tabela wraz z Twoimi adresami E-mail Pro.
+- **Podczas pierwszego uruchomienia aplikacji** : wyświetli się asystent konfiguracji, po czym kliknij `Dodaj konto`{.action}.
 
-Jeśli nie pamiętasz hasła do konta e-mail, które chcesz skonfigurować, możesz je zmienić za pomocą przycisku `...`{.action} znajduje się w tej samej linii po prawej stronie konta e-mail.
+![Outlook Android Email Pro](images/outlook-app-android-add01.png){.thumbnail .w-400 .h-600}
 
-Następnie wybierz polecenie `Zmień`{.action}, wybierz nowe hasło i potwierdź je. Na koniec kliknij przycisk `Dalej`{.action}, a następnie kliknij `Zatwierdź`{.action} w drugim oknie.
+- **Jeśli konto zostało już skonfigurowane**:
+    - Naciśnij karnację " &#9993;" w lewym górnym rogu ekranu.
+    - Następnie naciśnij przycisk `+`{.action} w lewym pionowym pasku.
+    - Kliknij `Dodaj konto`{.action}.
 
-Zmiana hasła zostanie wprowadzona w ciągu około 15 minut.
+![Outlook Android Email Pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
+
+Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
+
+> [!tabs]
+> **Etap 1**
+>>
+>> Wpisz swój adres e-mail i naciśnij przycisk `Kontynuuj`{.action}.
+>>
+>> ![Outlook Android Email Pro](images/outlook-app-android-add-step01.png){.thumbnail .w-400 .h-600}
+>>
+> **Etap 2**
+>>
+>> Wybierz protokół odbierania, **IMAP**(zalecane) lub **POP3**.
+>>
+>> ![Outlook Android Email Pro](images/outlook-app-android-add-step02.png){.thumbnail .w-400 .h-600}
+>>
+>> > [!warning]
+>> >
+>> > Jeśli okno wyboru protokołu nie wyświetla się, kliknij przycisk `?` w prawym górnym rogu ekranu, następnie wybierz `Zmień dostawcę konta`{.action}. Następnie wybierz `IMAP`(zalecane) lub `POP3`.<br>
+>> > ![Outlook Android Email Pro](images/outlook-app-android-add-step021.png){.thumbnail .w-400 .h-600}
+>>
+> **Etap 3 - IMAP**
+>>
+>> W kolejnym oknie zaznacz `Ustawienia zaawansowane`{.action} i uzupełnij następujące informacje:
+>>
+>> - **Adres e-mail**
+>> - **Pełna nazwa** : wprowadź pełny adres e-mail
+>> - **Opis**
+>> - **Serwer poczty przychodzącej IMAP** :<br>- **Nazwa hosta IMAP** : wprowadź pro?.mail.ovh.net (zmień "?" na numer serwera).<br>- **Port** : 993<br>- **Typ bezpieczeństwa** : SSL/TLS<br>- **Nazwa użytkownika IMAP**: Twój pełny adres e-mail<br>- **Hasło IMAP**: Twój pełny adres e-mail
+>> - **Serwer poczty wychodzącej SMTP** :<br>- **Nazwa hosta SMTP** : wprowadź pro?.mail.ovh.net (zmień "?" na numer serwera).<br>- **Port** : 587<br>- **Typ bezpieczeństwa** : STARTTLS<br>- **Nazwa użytkownika SMTP**: Twój pełny adres e-mail<br>- **Hasło SMTP**: Twój adres e-mail
+>>
+>> Aby dokończyć konfigurację, kliknij przycisk " &#10003;".
+>>
+>> ![Outlook Android Email Pro](images/outlook-app-android-add-step03-imap-emailpro.png){.thumbnail .w-400 .h-600}
+>>
+> **Etap 3 - POP3**
+>>
+>> W kolejnym oknie zaznacz `Ustawienia zaawansowane`{.action} i uzupełnij następujące informacje:
+>>
+>> - **Adres e-mail**
+>> - **Pełna nazwa** : Wpisz pełny adres e-mail
+>> - **Opis**
+>> - **Serwer poczty przychodzącej POP3** :<br>- **Nazwa hosta POP3** : wprowadź pro?.mail.ovh.net (zmień "?" na numer serwera).<br>- **Port** : 995<br>- **Typ bezpieczeństwa** : SSL/TLS<br>- **Nazwa użytkownika POP3**: pełny adres e-mail<br>- **Hasło POP3** : adres e-mail
+>> - **Serwer poczty wychodzącej SMTP** :<br>- **Nazwa hosta SMTP** : wprowadź pro?.mail.ovh.net (zmień "?" na numer serwera).<br>- **Port** : 587<br>- **Typ bezpieczeństwa** : STARTTLS<br>- **Nazwa użytkownika SMTP**: Twój pełny adres e-mail<br>- **Hasło SMTP**: Twój adres e-mail
+>>
+>> Aby dokończyć konfigurację, kliknij przycisk " &#10003;".
+>>
+>> ![Outlook Android Email Pro](images/outlook-app-android-add-step03-pop-emailpro.png){.thumbnail .w-400 .h-600}
+>>
 
 > [!warning]
 >
-> Jeśli zmienisz hasło przypisane do Twojego konta e-mail i jest ono już używane przez inne urządzenie (program pocztowy, komputer, tablet, smartfon, ksero, itp.), będziesz musiał zaktualizować hasło do innych urządzeń.
-> Firmy te nie będą już mogły logować się za pomocą aktualnego hasła do konta e-mail.
->
+> Jeśli po wykonaniu powyższych kroków konfiguracji wystąpił błąd wysyłania lub odbierania, zobacz "[Modyfikuj istniejące ustawienia](#modify-settings)".
 
-Po zakończeniu pierwszego etapu będziesz musiał posiadać następujące elementy:
+### Użyj adresu e-mail
 
-- nazwa serwera E-mail Pro (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.);
-- adres e-mail do skonfigurowania;
-- hasło do skonfigurowania konta e-mail.
+Po zakończeniu konfiguracji konto jest gotowe do użytku! Możesz teraz wysyłać i odbierać wiadomości.
 
-### Etap 2: skonfigurować Twoje konto na urządzeniu z systemem Android przy użyciu aplikacji Microsoft Outlook <a name="step2"></a>
+OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Jest ona dostępna pod tym linkiem: [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. Jeśli masz pytania dotyczące korzystania z tej usługi, skorzystaj z naszego przewodnika [Sprawdź konto w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-Uruchom aplikację Microsoft Outlook na Twoim urządzeniu z systemem Android. Jeśli nie zainstalowałeś jeszcze tej aplikacji, pobierz ją z *Google Play Store*.
+### Zmień istniejące ustawienia <a name="modify-settings"></a>
 
-|||
-|---|---|
-|![Outlook-android-emailpro-login](images/Screenshot_Outlook_1.png){.thumbnail}|![Outlook-android-emailpro-login](images/Screenshot_Outlook_3.png){.thumbnail}|
+Aplikacja Outlook nie pozwala na zmianę ustawień serwera dla Twojego konta e-mail.
 
-Po otwarciu kliknij `Dodaj konto`{.action}, wprowadź pełny adres e-mail w polu zatytułowanym `Wpisz adres pocztowy`{.action} i kliknij `Kontynuuj`{.action}.
+Jeśli Twoje konto e-mail zostało już skonfigurowane i chcesz je ponownie skonfigurować, musisz je usunąć i utworzyć ponownie:
 
-Na dole ekranu dostępne są dwie opcje konfiguracji: `IMAP`{.action} i `POP3`{.action}.
+1. Stuknij karnację "&#9993;" w lewym górnym rogu ekranu.
+2. Stuknij ikonę dopasowania "&#9965;" w dolnej części lewej kolumny.
+3. W sekcji "Ogólne" kliknij `Konta`, aby wyświetlić wszystkie adresy e-mail skonfigurowane w aplikacji.
 
-|||
-|---|---|
-| ![Outlook-android-emailpro-login](images/Screenshot_Outlook_4.png){.thumbnail} | ![Outlook-android-emailpro-login](images/Screenshot_Outlook_2.png){.thumbnail} |
+![Outlook Android Email Pro](images/outlook-app-android-delete-account-01.png){.thumbnail .w-400 .h-600}
+
+- Wybierz odpowiednie konto e-mail.
+- Kliknij `Usuń konto`{.action}.
+- Naciśnij przycisk `Usuń`{.action} na pytanie "Czy chcesz usunąć konto?".
+
+![Outlook Android Email Pro](images/outlook-app-android-delete-account-02.png){.thumbnail .w-400 .h-600}
 
 > [!success]
 >
-> Protokół synchronizacji **IMAP** pozwala pobrać "obraz" e-maili znajdujących się na Twoim koncie E-mail Pro, aby je wyświetlić w aplikacji Microsoft Outlook, **bez** usuń e-mail z serwera E-mail Pro, na którym znajduje się Twój adres e-mail. Protokół ten jest bardzo przydatny zwłaszcza, jeśli masz kilka urządzeń skonfigurowanych na Twoim koncie e-mail.
+> Po usunięciu konta e-mail postępuj zgodnie z instrukcjami w części "[Dodaj konto](#add-account)" niniejszego przewodnika.
+
+### Przypomnienie parametrów POP, IMAP i SMTP <a name="popimap-settings"></a>
+
+#### Parametry odbioru IMAP i POP
+
+Jeśli chcesz otrzymywać e-maile, wybierz rodzaj konta. Zalecamy użycie **IMAP**. Możesz jednak wybrać **POP**.
+
+Kliknij kartę odpowiadającą protokołowi odbioru:
+
+> [!tabs]
+> **Konfiguracja IMAP**
+>>
+>> - **Nazwa użytkownika** : Wpisz pełny adres e-mail **Complete**
+>> - **Hasło** : Wprowadź hasło przypisane do konta e-mail
+>> - **Serwer (przychodzący)** : pro?.mail.ovh.net
+>> - **Port** : 993
+>> - **Typ bezpieczeństwa** : SSL/TLS
+>>
+> **Konfiguracja POP**
+>>
+>> - **Nazwa użytkownika** : Wpisz pełny adres e-mail **Complete**
+>> - **Hasło** : Wprowadź hasło przypisane do konta e-mail
+>> - **Serwer (przychodzący)** : pro?.mail.ovh.net
+>> - **Port** : 995
+>> - **Typ bezpieczeństwa** : SSL/TLS
+
+### Parametry wysyłki SMTP
+
+Jeśli chcesz wysyłać wiadomości e-mail, wprowadź ręcznie ustawienia **SMTP** w ustawieniach konta poniżej znajdź parametry, których chcesz użyć:
+
+**Konfiguracja SMTP**
+
+- **Nazwa użytkownika** : Wpisz pełny adres e-mail **complete**
+- **Hasło** : Wprowadź hasło przypisane do konta e-mail
+- **Serwer (przychodzący)** : pro?.mail.ovh.net
+- **Port** : 587
+- **Typ zabezpieczeń** : STARTTLS
+
+> [!primary]
 >
-> Protokół **POP3** pobiera domyślnie e-mail otrzymany na serwerze E-mail Pro, na którym znajduje się Twój adres e-mail, w celu utrzymania go w aplikacji / oprogramowaniu skonfigurowanym z tym kontem. W związku z tym e-mail nie jest już obecny na serwerze E-mail Pro, ale tylko na urządzeniu skonfigurowanym z Twoim kontem e-mail za pomocą protokołu POP.
-> Ten protokół nie jest zalecany, jeśli masz kilka urządzeń skonfigurowanych na Twoim koncie e-mail. E-mail będzie bowiem obecny tylko na jednym z urządzeń skonfigurowanych w **POP3**, a nie na wszystkich urządzeniach skonfigurowanych na Twoim koncie e-mail.
+> **Zmień konfigurację**
 >
-> Jednak pomimo konfiguracji w **POP3**, niektóre programy do obsługi poczty elektronicznej / aplikacje nadal przesyłają kopię e-maila do serwera, na którym znajduje się Twoje konto e-mail. Kopia ta może być przechowywana tymczasowo lub na stałe.
-> Aby dowiedzieć się, czy Twoja aplikacja / oprogramowanie jest jej częścią, skontaktuj się z producentem oprogramowania bezpośrednio.
->
-
-#### Sprawa nr 1: konfiguracja aplikacji Microsoft Outlook na Androida z protokołem IMAP
-
-Wybierz `IMAP`{.action} na dole ekranu.
-
-Na nowej stronie, która się wyświetla Twój adres e-mail jest wstępnie wprowadzany.
-
-Wpisz hasło przypisane do Twojego konta E-mail Pro w formularzu `Hasło`{.action} tuż poniżej miejsca, w którym Twój adres e-mail jest już wcześniej podany.
-
-W dwóch formularzach, które są następujące i całkowicie **opcjonalnie**, możesz wpisać `pełną nazwę`{.action} i `Opis`{.action}.
-
-Aby kontynuować, zaznacz przycisk `ZAAWANSOWANE PARAMETRY`{.action}, aby wyświetlić pozostałą część menu konfiguracji.
-
-Następnie wypełnij różne formularze, używając następujących informacji.
-
-W sekcji **Serwer poczty przychodzącej IMAP**:
-
- - **Nazwa hosta IMAP**: podaj nazwę serwera E-mail Pro, który został wcześniej pobrany w trakcie [etap 1](#step1): (przykłady: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, itp.);
- - **Port**: wpisz numer portu **993**;
- - **Typ bezpieczeństwa**: wybierz z rozwijanej listy zabezpieczeń **SSL/TLS**;
- - **Nazwa użytkownika IMAP**: podaj adres e-mail, który chcesz skonfigurować;
- - **Hasło IMAP**: wprowadź hasło dostępowe do konta e-mail, które chcesz skonfigurować.
-
-W sekcji **Serwer poczty wychodzącej SMTP**:
-
- - **Nazwa hosta SMTP**: podaj nazwę serwera E-mail Pro, który został wcześniej pobrany w trakcie [etap 1](#step1): (przykłady: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, itp.);
- - **Port**: wpisz numer portu **587**;
- - **Typ bezpieczeństwa**: wybierz z rozwijanej listy zabezpieczeń **StartTls**;
- - **Nazwa użytkownika SMTP**: podaj adres e-mail, który chcesz skonfigurować;
- - **Hasło SMTP**: wprowadź hasło dostępowe do konta e-mail, które chcesz skonfigurować.
-
-Następnie sprawdź, czy wszystkie wprowadzone parametry odpowiadają podanym powyżej elementom, a następnie kliknij ikonę w kształcie `V`{.action} w prawym górnym rogu ekranu.
-
-#### Sprawa nr 2: konfiguracja aplikacji Microsoft Outlook na Androida z protokołem "POP3"
-
-Kliknij `POP3`{.action} na dole ekranu. 
-
-Na nowej stronie, która się wyświetla Twój adres e-mail jest wstępnie wprowadzany.
-
-Wpisz hasło przypisane do Twojego konta E-mail Pro w formularzu `Hasło`{.action} tuż poniżej miejsca, w którym Twój adres e-mail jest już wcześniej podany.
-
-W dwóch formularzach, które są następujące i całkowicie **opcjonalnie**, możesz wpisać `pełną nazwę`{.action} i `Opis`{.action}.
-
-Aby kontynuować, zaznacz przycisk `ZAAWANSOWANE PARAMETRY`{.action}, aby wyświetlić pozostałą część menu konfiguracji.
-
-Następnie wypełnij różne formularze, używając następujących informacji.
-
-W sekcji **Serwer poczty przychodzącej POP**:
-
- - **Nazwa hosta POP**: podaj nazwę serwera E-mail Pro, który został wcześniej pobrany w trakcie [etap 1](#step1): (przykłady: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, itp.);
- - **Port**: wpisz numer portu **995**;
- - **Typ bezpieczeństwa**: wybierz z rozwijanej listy zabezpieczeń **SSL/TLS**;
- - **Nazwa użytkownika POP**: podaj adres e-mail, który chcesz skonfigurować;
- - **Hasło POP**: wprowadź hasło dostępowe do konta e-mail, które chcesz skonfigurować.
-
-W sekcji **Serwer poczty wychodzącej SMTP**:
-
- - **Nazwa hosta SMTP**: podaj nazwę serwera E-mail Pro, który został wcześniej pobrany w trakcie [etap 1](#step1): (przykłady: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, itp.);
- - **Port**: wpisz numer portu **587**;
- - **Typ bezpieczeństwa**: wybierz z rozwijanej listy zabezpieczeń **StartTls**;
- - **Nazwa użytkownika SMTP**: podaj adres e-mail, który chcesz skonfigurować;
- - **Hasło SMTP**: wprowadź hasło dostępowe do konta e-mail, które chcesz skonfigurować.
-
-Następnie sprawdź, czy wszystkie wprowadzone parametry odpowiadają podanym powyżej elementom, a następnie kliknij ikonę w kształcie `V`{.action} w prawym górnym rogu ekranu.
-
-### Etap 3: zakończenie konfiguracji aplikacji Microsoft Outlook na urządzeniu Android
-
-Po kliknięciu na ikonę w formie `V`{.action} aplikacja przetestuje parametry i zaloguje się do serwera E-mail Pro, na którym znajduje się adres e-mail.
-Następnie zsynchronizuje ona / pobiera zawartość Twojego konta e-mail, aby wyświetlić ją na Twoim urządzeniu.
-
-Następnie przetestuj wysyłkę i odbiór e-maili z aplikacji Microsoft Outlook, aby zakończyć konfigurację.
+> Jeśli Twój adres e-mail został skonfigurowany jako **IMAP**, a chcesz zmienić tę konfigurację na **POP**, musisz usunąć konto i utworzyć je ponownie jako **POP**. Zapoznaj się z rozdziałem "[Edytuj istniejące ustawienia](#modify-settings)" w tym przewodniku.
 
 ## Przejdź dalej <a name="go-further"></a>
 

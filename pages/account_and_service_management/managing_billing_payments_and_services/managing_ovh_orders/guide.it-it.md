@@ -95,7 +95,7 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 >
 > Inoltre, il diritto di recesso non si applica agli ordini non pagati, in quanto questi vengono automaticamente annullati quando scade il buono d'ordine.
 >
-> Non si applica a determinati servizi (in particolare i [domini](https://www.ovhcloud.com/it/domains/) e i [certificati SSL Sectigo](https://www.ovhcloud.com/it/web-hosting/options/ssl/)). Al momento dell'ordine di questi prodotti, ti è quindi chiesto di rinunciare espressamente al tuo diritto di recesso, conformemente all'articolo L.221-28 del Codice del Consumo francese.
+> Non si applica a determinati servizi (in particolare i [domini](/links/web/domains) e i [certificati SSL Sectigo](/links/web/hosting-options-ssl)). Al momento dell'ordine di questi prodotti, ti è quindi chiesto di rinunciare espressamente al tuo diritto di recesso, conformemente all'articolo L.221-28 del Codice del Consumo francese.
 >
 
 Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di recesso può essere esercitato direttamente dallo [Spazio Cliente OVHcloud](/links/manager):

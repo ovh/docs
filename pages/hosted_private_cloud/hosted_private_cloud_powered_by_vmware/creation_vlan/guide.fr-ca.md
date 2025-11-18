@@ -13,7 +13,7 @@ OVHcloud installe une base de 11 VLANs sur votre vRack.
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour la mise en réseau (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour la mise en réseau (créé dans l'[espace client OVHcloud](/links/manager))
 
 ## En pratique
 
@@ -32,7 +32,7 @@ Puis configurez les paramètres recommandés par OVHcloud :
 - **Liaison de port** : Statique (réservation et assignation du port à une machine virtuelle)
 - **Allocation de port** : Élastique (Permet d'élargir à chaud le nombre de port)
 - **Nombre de ports** : 24
-- **Type de VLAN** : VLAN (les autres sont [PVLAN](https://kb.vmware.com/s/article/1010691){.external} et Trunk)
+- **Type de VLAN** : VLAN (les autres sont [PVLAN](https://kb.vmware.com/s/article/1010691) et Trunk)
 - **ID du VLAN** : 21 (sachant que l'ID peut-être configuré de 1 à 4096)
 - Cochez l'option *Personnaliser la configuration des stratégies par défaut*.
 
@@ -51,7 +51,7 @@ Vous disposez de 3 paramètres de sécurité qui peuvent être activés en fonct
 
 ![paramètres sécurité](images/11network4.png){.thumbnail}
 
-Nous laissons la [Formation du trafic](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} désactivée.
+Nous laissons la [Formation du trafic](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html) désactivée.
 
 ![lissage de traffic](images/12network5.png){.thumbnail}
 

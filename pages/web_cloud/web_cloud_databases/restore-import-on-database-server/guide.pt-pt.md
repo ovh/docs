@@ -19,7 +19,7 @@ No seguimento de um erro numa base de dados, deve estar preparado para restaurar
 
 > [!primary]
 >
-> Tenha em atenção que os serviços [Cloud Databases](https://www.ovh.pt/cloud-databases/) não dão acesso ao host, mas sim às bases de dados alojadas neste último. 
+> Tenha em atenção que os serviços [Cloud Databases](/links/web/databases) não dão acesso ao host, mas sim às bases de dados alojadas neste último. 
 > <br> - Não há um acesso superutilizador «root». 
 > <br> - Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL SQL e Adminer são plenamente compatíveis.
 > 

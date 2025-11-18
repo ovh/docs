@@ -18,6 +18,11 @@ details[open]>summary::before {
 }
 </style>
 
+> [!success]
+> Participate in our survey and help us improve this guide!<br>
+> Feel free to share your thoughts and ideas with us.<br>
+> [Go to the survey.](https://s.elq.fr/ovhext/QBbCw6r)
+
 ## Objective
 
 OVHcloud offers tools to enhance the security of your account and services.
@@ -31,7 +36,7 @@ This guide will help you:
 - [Enable your first two-factor authentication method](#enabling-2fa)
 - [Find out how to log in with two-factor authentication](#login-2fa)
 - [Find out what to do if your phone/tablet/key is lost/stolen/damaged](#lost-device)
-- [Find out how to disable two-factor authentication completely](#desactivation)
+- [Find out how to disable two-factor authentication completely](#disable-2fa)
 
 ## Requirements
 
@@ -136,7 +141,7 @@ Once you have added the first method, you can also **add one or two other method
 
 When you add two-factor authentication for the first time, you will see 10 single-use **backup codes** displayed in the OVHcloud Control Panel.
 
-**Please keep them safe**. We recommend saving them in a password manager, such as [KeePass](https://keepass.info/){.external} or [Bitwarden](https://bitwarden.com/) (both applications are free).
+**Please keep them safe**. We recommend saving them in a password manager, such as [KeePass](https://keepass.info/) or [Bitwarden](https://bitwarden.com/) (both applications are free).
 
 ![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
@@ -152,7 +157,7 @@ You can regenerate or delete backup codes from your Control Panel:
 
 ### Step 3 - Log in to the OVHcloud Control Panel with two-factor authentication <a name="login-2fa"></a>
 
-Go to the [login page for the OVHcloud Control Panel](/links/manager){.external} and enter your ID (or primary email address) and password.
+Go to the [login page for the OVHcloud Control Panel](/links/manager) and enter your ID (or primary email address) and password.
 
 The login screen displays the last two-factor authentication method used or entered. If you would like to use another method, click the `Try another method`{.action} button.
 

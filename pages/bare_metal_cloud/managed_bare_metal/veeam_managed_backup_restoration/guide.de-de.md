@@ -14,7 +14,7 @@ updated: 2021-03-29
 
 ## Voraussetzungen
 
-- Sie können sich in der [OVHcloud API-Konsole](https://api.ovh.com/) einloggen.
+- Sie können sich in der [OVHcloud API-Konsole](/links/api) einloggen.
 - Sie haben [Veeam Managed Backup](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service) für Ihre Hosted Private Cloud aktiviert.
 
 ## In der praktischen Anwendung
@@ -25,7 +25,7 @@ Falls notwendig, lesen Sie zunächst unsere Anleitung zur [OVHcloud API](/pages/
 
 Zuerst müssen Sie die wiederherzustellenden Backups ermitteln.
 
-Loggen Sie sich auf [https://api.ovh.com/](https://api.ovh.com/) ein und verwenden Sie folgenden Aufruf:
+Loggen Sie sich auf [https://api.ovh.com/](/links/api) ein und verwenden Sie folgenden Aufruf:
 
 > [!api]
 >

@@ -12,7 +12,7 @@ Dans certains cas, il peut être utile de supprimer un datastore de votre cluste
 
 ## Prérequis
 
-* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
+* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
 * Accéder à l’interface de gestion vSphere.
 
 ## En pratique

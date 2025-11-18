@@ -11,7 +11,7 @@ updated: 2018-05-30
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie){.external}.
+- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
 - Avoir réceptionné et installé le téléphone Yealing T4X fourni par OVH.
 
 ## En pratique
@@ -76,7 +76,7 @@ Enfin, appuyez sur la touche de fonction `transfert`{.action} (touche en bas à 
 
 #### Configurer la gestion des transferts d'appels depuis l'espace client
 
-Une fois connecté dans l'[espace client OVH](/links/manager){.external}, rendez-vous dans la partie `Télécom`{.action}, puis `VoIP & Fax`{.action}. Sélectionnez ensuite, dans l'onglet `Services`{.action} la ligne téléphonique concernée, puis cliquez sur le téléphone que vous souhaitez paramétrer. Cliquez ensuite sur `Téléphone`{.action} et `Paramètres Plug & Phone personnalisés`{.action}.
+Une fois connecté dans l'[espace client OVH](/links/manager), rendez-vous dans la partie `Télécom`{.action}, puis `VoIP & Fax`{.action}. Sélectionnez ensuite, dans l'onglet `Services`{.action} la ligne téléphonique concernée, puis cliquez sur le téléphone que vous souhaitez paramétrer. Cliquez ensuite sur `Téléphone`{.action} et `Paramètres Plug & Phone personnalisés`{.action}.
 
 ![Espace client Telecom](images/control_panel_telecom.png){.thumbnail}
 

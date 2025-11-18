@@ -10,7 +10,7 @@ This guide provides instructions for using the SAP HANA databases Terraform modu
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - [VMware on OVHcloud solution](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) deployed.
 - Terraform binary (version >= 1.4).
 

@@ -13,7 +13,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Enc
 ## Prérequis
 
 - Avoir souscrit une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
-- Disposer d'un serveur de clé (KMS) externe compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** et dans la [matrice de compatibilité](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
+- Disposer d'un serveur de clé (KMS) externe compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)) 1.1** et dans la [matrice de compatibilité](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc) VMware.
 - Avoir accès à l’interface de gestion vSphere.
 - Posséder des machines virtuelles avec une version Hardware 13 (minimum).
 
@@ -136,7 +136,7 @@ Choisissez les options suivantes :
 
 #### Import du certificat KMS
 
-La plupart des fournisseurs de KMS ont besoin d'un certificat pour [établir une connexion sécurisée](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} avec le vCenter.
+La plupart des fournisseurs de KMS ont besoin d'un certificat pour [établir une connexion sécurisée](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html) avec le vCenter.
 
 Depuis le vCenter où vous avez ajouté le serveur KMS, sélectionnez celui-ci. Dans « Toutes les options », cliquez sur `Établir un lien de confiance avec KMS`{.action}.
 

@@ -1,12 +1,12 @@
 ---
 title: "Korzystanie z Hyper-V z adresów Additional IP w sieci vRack"
 excerpt: "Dowiedz się, jak skonfigurować wirtualną maszynę z Additional IP i Hyper-V w sieci vRack"
-updated: 2021-02-25
+updated: 2025-07-22
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
+> Ten artykuł dotyczy konfiguracji dodatkowych adresów Additional IPv4 w sieci vRack. Możesz również skonfigurować adresy Additional IPv6 w sieci vRack, korzystając z [tego przewodnika](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
 
 ## Wprowadzenie
 
@@ -16,16 +16,16 @@ Postępuj zgodnie z instrukcjami procesu instalacji Hyper-V, połączenia wirtua
 
 ## Wymagania początkowe
 
-- Serwer dedykowany (kompatybilny z [vRack](https://www.ovh.pl/rozwiazania/vrack/)), na którym zainstalowany jest Windows Server.
+- Serwer dedykowany (kompatybilny z [vRack](/links/network/vrack)), na którym zainstalowany jest Windows Server.
 - Obraz ISO systemu operacyjnego, który zostanie zainstalowany na Twojej wirtualnej maszynie (CentOS 7 zostanie użyty jako przykład w tym przewodniku).
 - vRack dostarczony na Twoje konto OVHcloud.
 - Blok IP 4 adresów IP lub więcej.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 > [!warning]
-> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
 >
-> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](/links/bare-metal/eco-compare).
 
 ## W praktyce
 

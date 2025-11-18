@@ -35,7 +35,7 @@ Le fichier test.txt sera supprimé dans une heure.
 ### À une date précise
 
 Tout d'abord, vous devez savoir quelle est la date de suppression au format unix epoch.
-Pour vous aider à trouver la valeur que vous devez utiliser, vous pouvez passer par un [convertisseur](http://www.epochconverter.com/){.external}.
+Pour vous aider à trouver la valeur que vous devez utiliser, vous pouvez passer par un [convertisseur](http://www.epochconverter.com/).
 
 Vous pouvez ensuite saisir cette date dans l'en-tête `X-Delete-At` :
 

@@ -1,6 +1,6 @@
 ---
-title: Caching/Valkey - Connect with Python
-excerpt: Connect to your Public Cloud Databases for Caching/Valkey using the Python programming language
+title: Valkey - Connect with Python
+excerpt: Connect to your Public Cloud Databases for Valkey using the Python programming language
 updated: 2024-06-12
 ---
 
@@ -8,21 +8,21 @@ updated: 2024-06-12
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to connect to a Caching/Valkey service instance with one of the world's most famous programming language: Python.**
+**This guide explains how to connect to a Valkey service instance with one of the world's most famous programming language: Python.**
 
 You can find an example on the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/redis/python/hello-world).
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
-- A Caching/Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- [Configure your Caching/Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 - A working Python environment.
 
 ## Concept
 
-A Caching/Valkey service can be managed through multiple ways.
+A Valkey service can be managed through multiple ways.
 One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect with CLI](/pages/public_cloud/public_cloud_databases/redis_03_connect_cli).
 
 Another way is to interact directly using programming languages, such as Python.
@@ -38,7 +38,7 @@ To interact with your instance using Python, your development environment needs 
 - A compatible version of Python
 - Redis-py
 
-Please follow the official [Redis-py](https://github.com/redis/redis-py#installation){.external} to get the latest information.
+Please follow the official [Redis-py](https://github.com/redis/redis-py#installation) to get the latest information.
 
 Once your Python environment is set up and you begin executing a **python --version** in your command line interface (CLI), you should see information about the version as shown below:
 

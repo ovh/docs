@@ -17,7 +17,7 @@ El Bare Metal de la región 3-AZ responde a las necesidades de los clientes que 
 > A partir de mayo de 2025, el modelo de entrega de los servidores Bare Metal en la región París 3-AZ evoluciona significativamente. Se abandonará el modelo anterior de entrega obligatoria en clusters de 3 servidores (uno en cada zona de disponibilidad).
 >
 > **Cambios clave:**
-
+>
 > - Los clientes podrán elegir libremente el número exacto de servidores que necesitan.
 > - La distribución de los servidores entre las diferentes zonas de disponibilidad (AZ) será totalmente personalizable.
 > - No hay ninguna obligación de despliegue en las tres zonas simultáneamente.

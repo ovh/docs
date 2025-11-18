@@ -1,7 +1,7 @@
 ---
 title: "Aktivieren der Web Application Firewall"
 excerpt: "Aktivieren der Web Application Firewall"
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Ziel 
@@ -26,7 +26,7 @@ Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre 
 ## Voraussetzungen
 
 - Sie haben ein [Webhosting](/links/web/hosting) in Ihrem OVHcloud Account.
-- Sie verfügen über mindestens einen mit dem Hosting verbundenen [Domainnamen](/links/web/domains){.external}.
+- Sie verfügen über mindestens einen mit dem Hosting verbundenen [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 
 ## In der praktischen Anwendung

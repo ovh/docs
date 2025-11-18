@@ -1,7 +1,7 @@
 ---
 title: "Déployer un Load Balancer Public Cloud"
 excerpt: Découvrez comment configurer le Load Balander pour Public Cloud
-updated: 2024-05-30
+updated: 2025-09-17
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Vous trouverez ici les configurations d'un Load Balancer:
 
 ## Prérequis
 
-- Avoir un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Avoir un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Avoir un [réseau privé](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) configuré dans votre projet
 - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) en installant python-swiftclient.
 - [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
@@ -318,8 +318,8 @@ openstack loadbalancer delete [--cascade] [--wait] <load_balancer>
 
 [OpenStack Floating IP](https://docs.openstack.org/ocata/user-guide/cli-manage-ip-addresses.html).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-Rejoignez notre [Discord](https://discord.gg/PwPqWUpN8G) pour discuter avec les membres de l'équipe OVHcloud et d'autre utilisateurs.
+Rejoignez notre [Discord](https://discord.gg/ovhcloud) pour discuter avec les membres de l'équipe OVHcloud et d'autre utilisateurs.

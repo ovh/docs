@@ -1,12 +1,12 @@
 ---
 title: Kafka - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
-updated: 2025-02-19
+excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka
+updated: 2025-08-04
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka offer.
+This page provides the technical capabilities and limitations of the Public Cloud Analytics for Kafka offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
@@ -14,26 +14,24 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ### Supported regions and multi-AZ
 
-The Public Cloud Databases offer is available in the following regions:
+The Public Cloud Analytics offer is available in the following regions:
 
 - `BHS` (Beauharnois, Canada)
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Kafka nodes have to be in the same region. Multi-AZ is currently not supported.
-
 ### Kafka versions
 
-The Public Cloud Databases offer supports the following Kafka versions:
+The Public Cloud Analytics offer supports the following Kafka version:
 
-- Kafka 3.7 (soon depreciated)
 - Kafka 3.8
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
+Please refer to the [Analytics lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
 
 ### Kafka clients
 
@@ -43,27 +41,24 @@ Kafka Connect and Kafka Mirrormaker 2 are available at OVHcloud.
 
 ### Plans
 
-Two plans are available:
+Different plans are available:
 
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes |
-| ------------ | -------------------------- | ---------------- |
-| *Business*   | 3                          | No               |
-| *Enterprise* | 6                          | No               |
+| Plan                  | Number of nodes by default | Additional nodes |
+| --------------------- | -------------------------- | ---------------- |
+| *Business/Production* | 3                          | No               |
+| *Enterprise/Advanced* | 6                          | No               |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
-> [!primary]
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
-
 #### Nodes and replicas
 
-- **Business**: the cluster is delivered with 3 nodes by default.
-- **Enterprise**: the cluster is delivered with 6 nodes by default.
+- **Business/Production**: the cluster is delivered with 3 nodes by default.
+- **Enterprise/Advanced**: the cluster is delivered with 6 nodes by default.
 
 #### License type
 
@@ -72,32 +67,9 @@ More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 ### Hardware resources
 
-Here are the node types you can choose from:
-
-**Business plans**
-
-| Name    | Storage                  | vCore | Memory (GB) |
-| ------- | ------------------------ | ----- | ----------- |
-| db1-4   | From 480 GB to 1.44 TB   | 2     | 4           |
-| db1-7   | From 960 GB to 2.88 TB   | 2     | 7           |
-| db1-15  | From 1.92 TB to 5.76 TB  | 4     | 15          |
-| db1-30  | From 3.84 TB to 11.52 TB | 8     | 30          |
-| db1-60  | From 7.68 TB to 23.04 TB | 16    | 60          |
-
-**Enterprise plans**
-
-| Name    | Storage                   | vCore | Memory (GB) |
-| ------- | ------------------------- | ----- | ----------- |
-| db1-7   | From 1.92 TB to 5.76 TB   | 2     | 7           |
-| db1-15  | From 3.84 TB to 11.52 TB  | 4     | 15          |
-| db1-30  | From 7.68 TB to 23.04 TB  | 8     | 30          |
-| db1-60  | From 15.36 TB to 46.08 TB | 16    | 60          |
-
-Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
-
 #### Flexible storage
 
-You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage) for more information.
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/data_analytics/analytics/analytics_resize_cluster_storage) for more information.
 
 #### Node template upgrade
 
@@ -105,11 +77,11 @@ You can upgrade the node template of your cluster to scale your hardware resourc
 
 #### Disk type
 
-The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/es/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
+The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](/links/public-cloud/regions-pci) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
 
-Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/es/public-cloud/block-storage/) for more information about those performance characteristics.
+Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See the [Block Storage page](/links/public-cloud/block-storage) for more information about those performance characteristics.
 
-Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
+Public Cloud Analytics will select the most efficient disk type for your cluster depending on your cluster parameters.
 
 #### Effective storage
 
@@ -121,7 +93,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 3. You then have the ability to upgrade to a higher service plan with more storage.
 
-See the [Handling «Disk Full» situations documentation](/pages/public_cloud/public_cloud_databases/databases_10_full_disk_handling) for more information.
+See the [Handling «Disk Full» situations documentation](/pages/public_cloud/data_analytics/analytics/analytics_full_disk_handling) for more information.
 
 ### Features
 
@@ -133,14 +105,14 @@ Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
 
-The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
+The analytics service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
 
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Analytics services first.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Analytics service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 - OpenStack subnets routes announcement will not be applied to your services.
 - You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
@@ -151,7 +123,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for Kafka depends on the available total memory on the node.
+The number of simultaneous connections in Public Cloud Analytics for Kafka depends on the available total memory on the node.
 We allow approximately 100 connections per 4 GB of RAM memory, capped to a maximum of 1000 active connections.
 
 So for example on a server with 7 GB memory, you will get approximately 200 connections, and with 15 GB memory you will get 400 connections.
@@ -179,7 +151,7 @@ Logs and metrics are available through the Control Panel and the API. Additional
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
 
-Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
+Please note that if the analytics service is deleted, logs and metrics are also automatically deleted.
 
 #### Users and roles
 
@@ -205,6 +177,6 @@ For each topic you can specify:
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our analytics service!

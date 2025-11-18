@@ -6,7 +6,7 @@ updated: 2020-12-09
 
 ## Wprowadzenie
 
-Utworzenie projektu jest pierwszym etapem wdrażania [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
+Utworzenie projektu jest pierwszym etapem wdrażania [instancji Public Cloud](/links/public-cloud/public-cloud).
 
 **Niniejszy przewodnik wyjaśnia, jak zamówić projekt Public Cloud za pomocą APIv6 OVHcloud.**
 
@@ -18,7 +18,7 @@ Utworzenie projektu jest pierwszym etapem wdrażania [instancji Public Cloud](ht
 
 ## W praktyce
 
-Zaloguj się do [interfejsu API OVHcloud](https://api.ovh.com/) i postępuj zgodnie z poniższymi instrukcjami.
+Zaloguj się do [interfejsu API OVHcloud](/links/api) i postępuj zgodnie z poniższymi instrukcjami.
 
 ### Etap 1: buduj koszyk
 

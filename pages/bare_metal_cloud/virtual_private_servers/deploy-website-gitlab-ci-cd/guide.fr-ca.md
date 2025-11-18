@@ -56,7 +56,7 @@ Vous obtenez deux fichiers :
 - `/home/<user>/.ssh/deploy_key` : clé privée
 - `/home/<user>/.ssh/deploy_key.pub` : clé publique
 
-Consultez la [documentation officielle de GitLab](https://docs.gitlab.com/ee/user/ssh.html){.external} pour plus de détails concernant la génération d'une paire de clés SSH.
+Consultez la [documentation officielle de GitLab](https://docs.gitlab.com/ee/user/ssh.html) pour plus de détails concernant la génération d'une paire de clés SSH.
 
 #### Configurer la clé publique sur le VPS
 
@@ -92,7 +92,7 @@ Après avoir configuré la clé publique sur votre VPS, ajoutez-la à votre comp
 cat /home/<user>/.ssh/deploy_key.pub
 ```
 
-Suivez les étapes de la section « Add an SSH key to your GitLab account » de la [documentation officielle de GitLab](https://docs.gitlab.com/ee/user/ssh.html#add-an-ssh-key-to-your-gitlab-account){.external} pour ajouter votre clé publique à votre compte GitLab.
+Suivez les étapes de la section « Add an SSH key to your GitLab account » de la [documentation officielle de GitLab](https://docs.gitlab.com/ee/user/ssh.html#add-an-ssh-key-to-your-gitlab-account) pour ajouter votre clé publique à votre compte GitLab.
 
 #### Configurer l'accès SSH à GitLab sur le VPS
 
@@ -135,7 +135,7 @@ Copiez le contenu de la clé privée générée sur votre VPS avec :
 cat /home/<user>/.ssh/deploy_key
 ```
 
-Pour ajouter la clé privée SSH comme variable CI/CD, consultez la [documentation officielle de GitLab](https://docs.gitlab.com/ee/ci/jobs/ssh_keys.html){.external}.
+Pour ajouter la clé privée SSH comme variable CI/CD, consultez la [documentation officielle de GitLab](https://docs.gitlab.com/ee/ci/jobs/ssh_keys.html).
 
 ### Configurer GitLab CI/CD pour le déploiement automatique <a name="configure-gitlab-ci-cd"></a>
 

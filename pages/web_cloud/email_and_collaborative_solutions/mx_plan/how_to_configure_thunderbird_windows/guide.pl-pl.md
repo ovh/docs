@@ -1,82 +1,183 @@
 ---
-title: 'MX Plan - Skonfiguruj swoje konto e-mail w programie Thunderbird dla systemu Windows'
-excerpt: 'Informacje dotyczące konfiguracji Twojego konta e-mail w programie Thunderbird znajdują się tutaj.'
-updated: 2024-10-01
+title: 'MX Plan - Skonfigurowanie adresu e-mail w Thunderbird na Windows'
+excerpt: 'Dowiedz się, jak skonfigurować adres e-mail MX Plan w Thunderbird na Windows'
+updated: 2025-09-19
 ---
 
+<style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-400 {
+  max-width:400px !important;
+}
+</style>
 
 ## Wprowadzenie
 
-Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji. Thunderbird to darmowy program pocztowy.
+Konta e-mail MX Plan można skonfigurować w różnych kompatybilnych klientach poczty. Pozwala to na korzystanie z adresu e-mail z wybranego urządzenia. Thunderbird to darmowy i otwarty klient poczty.
 
-**Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programie Thunderbird w systemie Windows.**
+**Dowiedz się, jak skonfigurować adres e-mail MX Plan w Thunderbird na Windows.**
+
+## Wymagania wstępne
+
+- Posiadanie oferty MX Plan. Jest ona dostępna poprzez:
+    - Ofertę [hostingu WWW](/links/web/hosting).
+    - [Darmowy hosting 100M](/links/web/domains-free-hosting) wraz z nazwą domeny (wcześniej aktywowaną).
+    - Oddzielną ofertę MX Plan.
+    - Posiadanie adresu e-mail [Zimbra Starter](/links/web/zimbra).
+- Zainstalowanie oprogramowania Thunderbird na urządzeniu z systemem Windows.
+- Posiadanie danych logowania do adresu e-mail, który chcesz skonfigurować.
+
+/// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
+
+Ten przewodnik pokazuje, jak korzystać z rozwiązań OVHcloud z zewnętrznymi narzędziami oraz jakie modyfikacje są wymagane w konkretnych kontekstach. Możesz musieć dostosować instrukcje zgodnie ze swoim sytuacją.
+
+Jeśli napotkasz trudności w wykonaniu tych czynności, zalecamy kontakt z [specjalistycznym dostawcą usług](/links/partner) i/lub dyskusję z naszą społecznością. OVHcloud nie może udzielać wsparcia technicznego w zakresie korzystania z narzędzi zewnętrznych. Więcej informacji w sekcji [Sprawdź również](#gofurther) tego przewodnika.
+
+///
+
+## W praktyce
+
+### Dodanie konta
+
+- **Podczas pierwszego uruchomienia aplikacji**: pojawia się kreator konfiguracji, który prosi o wpisanie adresu e-mail.
+
+- **Jeśli konto jest już skonfigurowane w aplikacji**:
+
+    1. Kliknij menu `☰`{.action} w górnej pionowej pasku.
+    2. Kliknij `Nowe Konto`{.action}.
+    3. Kliknij `Adres E-mail`{.action}.
+
+![thunderbird](images/configuration-thunderbird-win-01.png){.thumbnail .w-600}
 
 > [!warning]
 >
-> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
-> 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
-> 
+> Należy zanotować wartość odpowiadającą Twojej lokalizacji (**EUROPA** lub **AMERYKA / ASIA-PACIFIK**).
 
-## Wymagania początkowe
+Postępuj zgodnie z krokami konfiguracji, klikając kolejno na **5** poniższych kart:
 
-- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](/links/web/hosting)).
-- Instalacja programu Thunderbird na Twoim urządzeniu z systemem Windows.
-- Dane do logowania do konta e-mail, które chcesz skonfigurować.
- 
-## W praktyce
-
-### Dodaj konto
-
-- **Podczas pierwszego uruchomienia aplikacji**: wyświetli się asystent konfiguracji i poprosi o wpisanie adresu e-mail.
-
-- **Jeśli konto zostało wcześniej skonfigurowane**: kliknij `Plik`{.action} na pasku menu na górze ekranu, a następnie `Nowy`{.action} i wreszcie `Uzyskać nowe konto pocztowe...`{.action}.
-
-| | |
-|---|---|
-|![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|W oknie, które się wyświetla wprowadź 3 następujące informacje: <br>- Pełna nazwa (nazwa wyświetlacza)<br>- Adres e-mail <br>- Hasło.|
-|Następnie kliknij `Konfiguracja ręcznie...`{.action}, aby wprowadzić parametry serwera **PRZYCHODZĄCEGO**: <br>- Protokół **IMAP** <br>- Serwer **ssl0.ovh.net** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Uwierzytelnianie **Zwykłe hasło** <br>- Identyfikator **Twojego kompletnego konta e-mail**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Wpisz parametry serwera **WYCHODZĄCEGO**: <br>- Protokół **SMTP** <br>- Serwer **ssl0.ovh.net** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Uwierzytelnianie **Zwykłe hasło** <br>- Identyfikator **Twojego kompletnego konta e-mail**<br><br>Aby zakończyć konfigurację, kliknij `Zakończ`{.action}|
-
-W przypadku konfiguracji **POP** wartości są następujące:
-
-|Typ serwera|Nazwa serwera|Metoda szyfrowania|Port|
-|---|---|---|---|
-|Serwer poczty przychodzącej|ssl0.ovh.net|SSL/TLS|995|
-|Serwer poczty wychodzącej|ssl0.ovh.net|SSL/TLS|465|
-
-### Użyj konta e-mail
-
-Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
-
-OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) lub [Korzystaj z konta e-mail w interfejsie Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
-
-### Pobierz kopię zapasową Twojego konta e-mail
-
-Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport**" w części "**Thunderbird**" w naszym przewodniku [Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#eksport).
-
-### Zmień istniejące parametry
-
-Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do parametrów konta, aby je zmienić:
-
-- Przejdź do `Narzędzi`{.action} z paska menu na górze ekranu.
-- Kliknij `Ustawienia kont`{.action}.
-
-![Thunderbird](images/thunderbird-win-mxplan04.png){.thumbnail}
-
-- Aby zmienić parametry związane z **otrzymywaniem** wiadomości, w kolumnie po lewej stronie kliknij `Parametry serwera`{.action} pod adresem e-mail.
-
-![Thunderbird](images/thunderbird-win-mxplan05.png){.thumbnail}
-
-- Aby zmienić parametry związane **z wysyłką** e-maili, kliknij `Serwer poczty wychodzącej (SMTP)`{.action} na dole kolumny po lewej stronie.
-- Kliknij odpowiedni adres e-mail na liście, po czym kliknij `Zmień`{.action}.
-
-![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
-
-## Sprawdź również
+> [!tabs]
+> **Krok 1**
+>>
+>> W oknie, które się pojawi, wprowadź następujące 2 informacje:
+>>
+>>  - Pełne imię i nazwisko (nazwa wyświetlana).
+>>  - Adres e-mail do skonfigurowania.
+>>
+>> Kliknij `Kontynuuj`{.action}, aby ukończyć ustawienia.
+>>
+>> ![thunderbird](images/configuration-thunderbird-mxplan-02.png){.thumbnail .w-600}
+>>
+> **Krok 2**
+>>
+>> Gdy Thunderbird wykryje nazwę domeny OVHcloud, proponowana jest automatyczna konfiguracja oferty MX Plan:
+>>
+>>  - Jeśli informacje są poprawne, kliknij `Kontynuuj`{.action} i przejdź do kroku 5.
+>>  - W przeciwnym razie kliknij `ZMIEN KONFIGURACJĘ`{.action}, aby wykonać ręczną konfigurację.
+>>
+>> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-600}
+>>
+> **Krok 3**
+>>
+>> Ustawienia serwera odbioru:
+>>
+>>  - **Protokół**: IMAP
+>>  - **Nazwa hosta EUROPA (wejściowy)**: imap.mail.ovh.net **lub** ssl0.ovh.net
+>>  - **Nazwa hosta AMERYKA/ASIA-PACIFIK (wejściowy)**: imap.mail.ovh.ca
+>>  - **Port**: 993
+>>  - **Bezpieczeństwo połączenia**: SSL/TLS
+>>  - **Metoda uwierzytelniania**: Normalne hasło
+>>  - **Nazwa użytkownika**: Pełny adres e-mail
+>>
+>> ![thunderbird](images/configuration-thunderbird-mxplan-04.png){.thumbnail .w-600}
+>>
+> **Krok 4**
+>>
+>> Ustawienia serwera wysyłki:
+>>
+>>  - **Protokół**: SMTP
+>>  - **Serwer EUROPA (wychodzący)**: smtp.mail.ovh.net **lub** ssl0.ovh.net
+>>  - **Serwer AMERYKA/ASIA-PACIFIK (wychodzący)**: smtp.mail.ovh.ca
+>>  - **Port**: 587
+>>  - **Bezpieczeństwo połączenia**: STARTTLS
+>>  - **Metoda uwierzytelniania**: Normalne hasło
+>>  - **Nazwa użytkownika**: Pełny adres e-mail
+>> 
+>> 1. Kliknij `Testuj`{.action}, aby zweryfikować wprowadzone ustawienia.
+>> 2. Kliknij `Kontynuuj`{.action}, aby potwierdzić te ustawienia.
+>>
+>> ![thunderbird](images/configuration-thunderbird-mxplan-05.png){.thumbnail .w-600}
+>>
+> **Krok 5**
+>>
+>> Wprowadź hasło przypisane do adresu e-mail, a następnie kliknij `Kontynuuj`{.action}, aby ukończyć konfigurację.
+>>
+>> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-600}
+>>
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Thunderbird w systemie Windows, skorzystaj z [Centrum pomocy Mozillia](https://support.mozilla.org/pl/kb/reczna-konfiguracja-konta#thunderbird:win10:tb115)
+> **Konfiguracja POP**
+>
+> Jeśli chcesz skonfigurować POP dla swojego adresu e-mail, zastąp ustawienia **kroku 3** następującymi:
+>
+> Ustawienia serwera odbioru:
+>
+> - **Protokół**: POP3
+> - **Nazwa hosta EUROPA (wejściowy)**: pop.mail.ovh.net **lub** ssl0.ovh.net
+> - **Nazwa hosta AMERYKA/ASIA-PACIFIK (wejściowy)**: pop.mail.ovh.ca
+> - **Port**: 995
+> - **Bezpieczeństwo połączenia**: SSL/TLS
+> - **Metoda uwierzytelniania**: Normalne hasło
+> - **Nazwa użytkownika**: Pełny adres e-mail
+
+### Użycie adresu e-mail
+
+Po skonfigurowaniu adresu e-mail możesz zacząć go używać! Możesz teraz wysyłać i odbierać wiadomości e-mail.
+
+OVHcloud oferuje również aplikację internetową umożliwiającą dostęp do adresu e-mail z przeglądarki. Aby uzyskać dostęp do Webmaila OVHcloud, kliknij [ten link](/links/web/email). Możesz się zalogować przy użyciu danych logowania do adresu e-mail.
+
+### Przywracanie kopii zapasowej adresu e-mail
+
+Jeśli musisz wykonać operację, która może spowodować utratę danych konta e-mail, zalecamy wykonanie kopii zapasowej przed kontem e-mail. Aby to zrobić, skorzystaj z sekcji "**Eksport**" w części "**Thunderbird**" naszego przewodnika "[Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+
+### Modyfikacja istniejących ustawień
+
+Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do ustawień konta, aby je zmienić:
+
+1. Kliknij menu `☰`{.action} w górnej pionowej pasku.
+2. Kliknij `Ustawienia konta`{.action}.
+
+![Thunderbird](images/configuration-thunderbird-win-07.png){.thumbnail .w-600}
+
+- Aby zmodyfikować ustawienia dotyczące **odbioru** wiadomości e-mail, kliknij `Ustawienia serwera`{.action} w lewej kolumnie pod swoim adresem e-mail.
+
+![thunderbird](images/configuration-thunderbird-mxplan-win-08.png){.thumbnail .w-600}
+
+- Aby zmodyfikować ustawienia dotyczące **wysyłki** wiadomości e-mail, kliknij `Serwer wychodzący (SMTP)`{.action} na dole lewej kolumny.
+- Kliknij odpowiedni adres e-mail na liście, a następnie kliknij `Edytuj`{.action}.
+
+![thunderbird](images/configuration-thunderbird-mxplan-win-09.png){.thumbnail .w-600}
+
+## Sprawdź również <a name="go-further"></a>
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfiguracji adresu e-mail w kliencie poczty Thunderbird, odwiedź [centrum pomocy Mozilla](https://support.mozilla.org/products/thunderbird).
+
+[Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -12,8 +12,8 @@ It covers the steps to add a cloud volume, configure optional WORM (Write Once R
 
 ## Requirements
 
-- A NetBackup Primary Server installed and configured. See the following documentation: "[Installing NetBackup Primary Server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020){.external}".
-- A Media Server with deduplication option installed on Red Hat Enterprise or SUSE Linux Enterprise Server. See the following documentation: "[Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external}".
+- A NetBackup Primary Server installed and configured. See the following documentation: "[Installing NetBackup Primary Server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020)".
+- A Media Server with deduplication option installed on Red Hat Enterprise or SUSE Linux Enterprise Server. See the following documentation: "[Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index)".
 - Approximately 1 TB of local disk space available for deduplication metadata management.
 
 ## Instructions

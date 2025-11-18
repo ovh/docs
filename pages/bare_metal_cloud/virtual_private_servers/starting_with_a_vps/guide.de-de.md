@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem VPS
 excerpt: Erfahren Sie hier, wie Sie einen VPS in Ihrem Kundencenter verwalten sowie die ersten Schritte zum Start, inklusive Remote-Verbindungen und Sicherheitsmaßnahmen
-updated: 2024-11-22
+updated: 2025-09-11
 ---
 
 ## Ziel
@@ -14,6 +14,11 @@ Ein Virtual Private Server (VPS) ist ein virtualisierter Dedicated Server, der I
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kundencenter.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+> [!warning]
+> Nicht alle auf dieser Seite erwähnten VPS-Funktionen sind in OVHcloud Local Zones verfügbar.
+>
+> Beachten Sie dazu die Informationen auf unserer [Local Zones Webseite](/links/bare-metal/vps-lz).
 
 ## In der praktischen Anwendung
 
@@ -112,20 +117,22 @@ Klicken Sie auf die Tabs, um Erläuterungen dieses Bereichs anzuzeigen.
 
 #### Backup
 
-Diese Optionen beziehen sich auf zusätzliche VPS-Dienste, die über das Kundencenter bestellt werden können.
+Diese Optionen beziehen sich auf zusätzliche VPS-Dienste für Backups und die Wiederherstellung Ihres Systems.
 
 > [!tabs]
 > Snapshot
 >>
 >> Ein Snapshot eines VPS ist eine instante Sicherung des Serverzustands, mit der sich das System bei einem Problem schnell wiederherstellen lässt. Mit der Option `Snapshot` können Sie einen manuellen Snapshot als singulären Wiederherstellungspunkt erstellen.
 >>
-> Automatisiertes Backup
+> Automatisches Backup
 >>
->> Mit der Option `Automatisches Backup` können Sie regelmäßige Backups Ihres VPS planen  (mit Ausnahme zusätzlicher Disks). Im Vergleich zu manuellen Snapshots erhöht diese Funktion die Datensicherheit, indem mehrere Wiederherstellungspunkte in regelmäßigen Abständen beibehalten werden.
+>> Ein tägliches Backup des Systems (ausgenommen zusätzliche Disks) wird automatisch erstellt und 24 Stunden lang aufbewahrt (nur gültig für Dienste, die seit dem 07.08.25 bestellt wurden). Mit einem Upgrade auf die Option "**Automatisches Backup Premium**" stehen Ihnen die letzten 7 täglichen Backups Ihres VPS zum Mounten und Wiederherstellen zur Verfügung.  
+Im Vergleich zu manuellen Snapshots erhöht diese Funktion die Datensicherheit, indem mehrere Wiederherstellungspunkte in regelmäßigen Abständen erstellt werden.
+>>
 
-Genaue Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden Sie auf der [Produktseite](/links/bare-metal/vps-options) und in den entsprechenden [Anleitungen](/products/bare-metal-cloud-virtual-private-servers-backups).
+Genaue Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden Sie auf der [Produktseite](/links/bare-metal/vps-options) und in den entsprechenden [Anleitungen](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
-#### Abo
+#### Mein Angebot
 
 In diesen Abschnitten finden Sie die wichtigsten Daten zur Abrechnung Ihres Dienstes. Weitere Informationen zu diesem Thema finden Sie in der entsprechenden [Dokumentation](/products/account-and-service-management-managing-billing-payments-and-services).
 
@@ -137,7 +144,7 @@ In diesen Abschnitten finden Sie die wichtigsten Daten zur Abrechnung Ihres Dien
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
 >
 
 <a name="reinstallvps"></a>
@@ -263,6 +270,8 @@ Sofern nicht anders vermerkt, können alle in unserer Dokumentation beschriebene
 Wenn Sie eine **Distribution mit Applikation** (Plesk, cPanel, Docker) ausgewählt haben, gelten die allgemeinen Sicherheitsmaßnahmen möglicherweise nicht uneingeschränkt für Ihr System. Nutzen Sie deshalb unsere Anleitungen [Erste Schritte mit vorinstallierten Anwendungen](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) und [cPanel auf einem VPS installieren](/pages/bare_metal_cloud/virtual_private_servers/cpanel) sowie die offizielle Dokumentation des jeweiligen Herausgebers.
 >
 
+Wenn Sie Ihr Benutzer- oder Root-Passwort verloren haben, lesen Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password), um zu erfahren, wie Sie dieses zurücksetzen.
+
 <a name="winconnect"></a>
 
 #### Windows VPS
@@ -379,5 +388,7 @@ OVHcloud bietet auch die Lösung SSL Gateway zur Automatisierung dieses Prozesse
 [SSH Einführung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [VPS absichern](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[Wiederherstellen des Serverzugriffs bei Passwortverlust](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Treten Sie unserer [User Community](/links/community) bei.

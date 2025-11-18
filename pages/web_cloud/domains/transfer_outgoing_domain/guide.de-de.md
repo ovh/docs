@@ -1,7 +1,7 @@
 ---
 title: "Einen Domainnamen zu einem anderen Registrar transferieren"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren"
-updated: 2024-05-16
+updated: 2025-07-31
 ---
 
 ## Ziel
@@ -103,7 +103,7 @@ Sobald der Transfer-Code abgerufen wurde, reaktivieren Sie den Transfer-Schutz *
 
 ### Schritt 3: Transfer zum neuen Registrar beauftragen
 
-Nach erfolgreicher Durchführung der vorherigen Schritte können Sie den Transferprozess starten, in der Regel indem Sie eine Bestellung bei Ihrem neuen Provider aufgeben. Der Transfer kann dann bis zu 10 Tage dauern. 
+Nach erfolgreicher Durchführung der vorherigen Schritte können Sie den Transferprozess starten, in der Regel indem Sie eine Bestellung bei Ihrem neuen Registrar aufgeben. Der Transfer kann dann bis zu 10 Tage dauern. 
 
 Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 

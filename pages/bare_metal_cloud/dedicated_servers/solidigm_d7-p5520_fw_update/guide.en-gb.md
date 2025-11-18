@@ -1,7 +1,7 @@
 ---
 title: Dedicated Servers - Upgrading your SSD Solidigm D7-P5520 firmware
 excerpt: Learn how to upgrade your SSD Solidigm D7-P5520 firmware for Linux, ESXi and Windows Dedicated Servers
-updated: 2025-06-05
+updated: 2025-06-16
 ---
 
 <style>
@@ -46,14 +46,10 @@ Drive Part Number:
 
 A bare metal server with a Solidigm D7-P5520 PCIe 4.0 NVMe device, from the following ranges:
 
-- HGR SDS Gen1/Gen2
-- HGR HCI Gen1/Gen2
-- HGR-STOR Gen2
-- Scale-a
-- Scale-i
-- Scale Gen1
-- Advance Gen2/Gen3
-- Rise
+- High Grade
+- Scale
+- Advance
+- Rise (Processors: AMD Ryzen R5-5600X ; AMD Ryzen R7-5800X ; AMD Ryzen R7-3700pro ; AMD Epyc Epyc7302 ; Intel Xeon  E5-2689v4) 
 
 ## Instructions
 

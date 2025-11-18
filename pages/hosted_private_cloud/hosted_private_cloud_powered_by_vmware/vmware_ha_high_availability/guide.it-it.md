@@ -15,7 +15,7 @@ La funzione principale di **VMware HA** (High Availability) è quella di riavvia
 ## Prerequisiti
 
 - Avere accesso all’interfaccia vSphere
-- Disporre di un servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
+- Disporre di un servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) attivo
 
 ## Procedura
 

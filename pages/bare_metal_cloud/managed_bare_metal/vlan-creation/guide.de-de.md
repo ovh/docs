@@ -44,7 +44,7 @@ Konfigurieren Sie dann die von OVHcloud empfohlenen Einstellungen:
 - **Port Binding**: Static (Reservierung und Zuweisung des Ports zu einer virtuellen Maschine)
 - **Port allocation**: Elastic (Erlaubt die Erweiterung der Port-Anzahl im laufenden Betrieb)
 - **Number of ports**: 24
-- **VLAN Type**: VLAN (die anderen sind [PVLAN](https://kb.vmware.com/s/article/1010691){.external} und Trunk)
+- **VLAN Type**: VLAN (die anderen sind [PVLAN](https://kb.vmware.com/s/article/1010691) und Trunk)
 - **VLAN ID**: 21 (Die ID kann zwischen 1 und 4096 konfiguriert sein)
 - Setzen Sie einen Haken bei der *Customize default policies configuration*.
 
@@ -63,7 +63,7 @@ Sie haben 3 Sicherheitseinstellungen, die bei Bedarf aktiviert werden können:
 
 ![Sicherheit](images/11network4.png){.thumbnail}
 
-Wir lassen die [Traffic-Shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} deaktiviert.
+Wir lassen die [Traffic-Shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html) deaktiviert.
 
 ![Traffic-Glättung](images/12network5.png){.thumbnail}
 

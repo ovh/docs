@@ -17,7 +17,7 @@ W niniejszym przewodniku dowiesz się, jak zarządzać wolumenami w ramach ofert
 ## Wymagania początkowe
 
 - Posiadanie oferty OVHcloud Enterprise File Storage
-- Dostęp do strony [API OVHcloud](https://api.ovh.com/)
+- Dostęp do strony [API OVHcloud](/links/api)
 
 ## Podstawowe
 
@@ -185,6 +185,6 @@ Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu do usunięcia.
 
 [Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

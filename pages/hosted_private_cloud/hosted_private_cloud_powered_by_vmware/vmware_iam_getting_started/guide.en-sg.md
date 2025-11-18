@@ -23,7 +23,7 @@ updated: 2024-11-05
 > [!primary]
 >
 > You cannot currently benefit from IAM features on Hosted Private Cloud VMware vSphere offers that are PCI-DSS or HDS certified, or on SecNumCloud qualified solutions.
-> The same goes for managed environments with NSX enabled and VMware Cloud Director on OVHcloud. The OVHcloud teams are working on the adaptability of these technologies.
+> The same goes for managed environments with NSX enabled and Public VCF as-a-Service. The OVHcloud teams are working on the adaptability of these technologies.
 >
 
 ### How does IAM and Hosted Private Cloud - VMware on OVHcloud work?

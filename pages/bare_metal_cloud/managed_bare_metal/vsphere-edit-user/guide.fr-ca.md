@@ -13,11 +13,11 @@ Il est possible d'associer un nom, prénom, numéro de téléphone et adresse e-
 ## Prérequis
 
 - Disposer d'une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/).
-- Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à [l'espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et dirigez-vous dans la section `Bare Metal Cloud`. Cliquez sur `Managed Bare Metal` dans la barre de services à gauche puis sélectionnez l'infrastructure concernée.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Bare Metal Cloud`. Cliquez sur `Managed Bare Metal` dans la barre de services à gauche puis sélectionnez l'infrastructure concernée.
 
 ![utilisateur vsphere](images/addMailOnUser01.png){.thumbnail}
 

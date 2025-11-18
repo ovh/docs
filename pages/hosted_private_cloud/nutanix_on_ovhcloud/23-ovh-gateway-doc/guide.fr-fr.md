@@ -113,7 +113,7 @@ Pour redéployer la VM de la passerelle, vous aurez besoin des éléments suivan
 
 ##### **Vérifier l'adresse Additional IP**
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et accédez à la gestion de votre [vRack](https://www.ovhcloud.com/fr/network/vrack/){.external}. Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
+Connectez-vous à l'[espace client OVHcloud](/links/manager) et accédez à la gestion de votre [vRack](/links/network/vrack). Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
 
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 > Les instructions suivantes vont utiliser le bloc IP 198.51.100.0/30 à titre d'exemple.
 >
 
-Dans le cadre d'une utilisation du [vRack](https://www.ovhcloud.com/fr/network/vrack/){.external}, la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
+Dans le cadre d'une utilisation du [vRack](/links/network/vrack), la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
 
 ```console
 198.51.100.0  Reserved: Network address
@@ -263,6 +263,6 @@ Cliquez sur `Next`{.action}, puis sur `Create VM`{.action}.
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

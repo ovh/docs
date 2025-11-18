@@ -69,11 +69,11 @@ Jeśli masz dodatkowe pytania dotyczące Zonemaster, sprawdź sekcję [FAQ](http
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Informacje na temat serwerów DNS](/pages/web_cloud/domains/dns_server_general_information){.external}.
+[Informacje na temat serwerów DNS](/pages/web_cloud/domains/dns_server_general_information).
 
-[Zmiana strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external} .
+[Zmiana strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) .
 
-[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}.
+[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](/pages/web_cloud/domains/dns_dnssec).
 
 Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

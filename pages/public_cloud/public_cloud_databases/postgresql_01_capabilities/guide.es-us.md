@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
-updated: 2025-02-19
+updated: 2025-09-30
 ---
 
 ## Objective
@@ -21,6 +21,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -30,32 +31,33 @@ Database nodes have to be in the same region. Multi-AZ is currently not supporte
 
 The Public Cloud Databases offer supports the following PostgreSQL versions:
 
-- PostgreSQL 13
 - PostgreSQL 14
 - PostgreSQL 15
 - PostgreSQL 16
+- PostgreSQL 17
+- PostgreSQL 18
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
 
 ### PostgreSQL connectors
 
-You can use any of the [PostgreSQL-recommended drivers and extensions](https://www.postgresql.org/download/product-categories/){.external} to access your instance.
+You can use any of the [PostgreSQL-recommended drivers and extensions](https://www.postgresql.org/download/product-categories/) to access your instance.
 
 ### Plans
 
-Three plans are available:
+Different plans are available:
 
 - *Essential*
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Read replicas |
-| ------------ | -------------------------- | ------------- |
-| *Essential*  | 1                          | No            |
-| *Business*   | 2                          | Planned       |
-| *Enterprise* | 3                          | Planned       |
+| Plan                  | Number of nodes by default | Read replicas |
+| --------------------- | -------------------------- | ------------- |
+| *Essential*           | 1                          | No            |
+| *Business/Production* | 2                          | Planned       |
+| *Enterprise/Advanced* | 3                          | Planned       |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
@@ -65,8 +67,8 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
-- **Business**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Business/Production**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
+- **Enterprise/Advanced**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 
 #### License type
 
@@ -87,9 +89,9 @@ You can upgrade the node template of your cluster to scale your hardware resourc
 
 #### Disk type
 
-The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/es/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
+The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](/links/public-cloud/regions-pci) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
 
-Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/es/public-cloud/block-storage/) for more information about those performance characteristics.
+Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See the [Block Storage page](/links/public-cloud/block-storage) for more information about those performance characteristics.
 
 Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
 
@@ -146,9 +148,9 @@ You can further customise your PostgreSQL by using advanced parameters. See the 
 
 *Essential* plan clusters are automatically backed up daily. Backup retention is 2 days.
 
-*Business* plan clusters are automatically backed up daily. Backup retention is 14 days.
+*Business/Production* plan clusters are automatically backed up daily. Backup retention is 14 days.
 
-*Enterprise* plan clusters are automatically backed up daily. Backup retention is 30 days.
+*Enterprise/Advanced* plan clusters are automatically backed up daily. Backup retention is 30 days.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
@@ -170,6 +172,6 @@ The only specific privilege you can set is `replication`.
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

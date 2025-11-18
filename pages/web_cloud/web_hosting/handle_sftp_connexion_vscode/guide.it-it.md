@@ -1,7 +1,7 @@
 ---
 title: "Gestire un hosting Web con Visual Studio Code via SFTP"
 excerpt: "Gestire un sito Internet su un hosting Web con Visual Studio Code grazie ad un'estensione SFTP"
-updated: 2023-11-06
+updated: 2025-10-21
 ---
 
 ## Obiettivo
@@ -26,7 +26,7 @@ Gli hosting Web OVHcloud mettono a disposizione uno spazio di storage per la ges
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o [l’editor dell’IDE Visual Studio Code](https://code.visualstudio.com/){.external}. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o [l’editor dell’IDE Visual Studio Code](https://code.visualstudio.com/). OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 ### Installare l'estensione SFTP per Visual Studio Code
@@ -83,6 +83,8 @@ Il file è presente nella cartella vscode, che si trova nella cartella principal
 ### Configura il file sftp.json
 
 Prima di lavorare sul progetto, scaricalo nella cartella locale creata in precedenza. Per prima cosa, assicurati che il file "sftp.json" sia configurato correttamente. Le informazioni utili sono disponibili nello [Spazio Cliente OVHcloud](/links/manager). Nella sezione `Web Cloud`{.action}, clicca su `Hosting`{.action}. Seleziona l’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}.
+
+![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
 Nel file sftp.json, immettere i valori per le voci seguenti:
 
@@ -155,7 +157,7 @@ Se richiesto, digita la password associata all’utente inserito nel file "sftp.
 
 > [!primary]
 >
-> Ti ricordiamo che la corretta configurazione del file "sftp.json" è fondamentale. Se riscontri un errore prima di scaricare il tuo progetto, è generalmente causato da un difetto di configurazione del file "sftp.json". Per qualsiasi domanda, consulta la sezione [FAQ dell'estensione](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md){.external}.
+> Ti ricordiamo che la corretta configurazione del file "sftp.json" è fondamentale. Se riscontri un errore prima di scaricare il tuo progetto, è generalmente causato da un difetto di configurazione del file "sftp.json". Per qualsiasi domanda, consulta la sezione [FAQ dell'estensione](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md).
 >
 
 ### Effettuare modifiche sui file
@@ -170,7 +172,7 @@ Finora abbiamo menzionato solo i comandi `SFTP: Config` e `SFTP: Download Projec
 
 ![hosting](/pages/assets/screens/other/web-tools/vscode/list_commands.png){.thumbnail}
 
-Consulta la lista dei comandi [qui](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
+Consulta la lista dei comandi [qui](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands).
 
 A questo punto, è possibile accedere e modificare il contenuto dell’hosting Web tramite Visual Studio Code.
 Questa guida è finalizzata a presentare in modo efficace la gestione di un progetto da Visual Studio Code. È adatto per una prima esperienza. Tuttavia, se modifichi diversi file sincronizzati con il tuo hosting Web, non sarà possibile visualizzare la cronologia delle modifiche e ripetere l’operazione.

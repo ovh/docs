@@ -7,17 +7,17 @@ updated: 2021-05-05
 
 Ce document est la politique de réversibilité pour les activités Public Cloud [Compute](/links/public-cloud/compute), [Object Storage](/links/public-cloud/object-storage) et [Block Storage](/links/public-cloud/block-storage).
 
-Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Liste des fonctionnalités
 
 Les fonctionnalités Public Cloud sont divisées en trois catégories :
 
 - Les [fonctionnalités principales](#fonctionnalites-principales) pour lesquelles nous garantissons la capacité de migrer.
-- L'[implémentation OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
-- Les [fonctionnalités spécifiques](#fonctions-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
+- L'[implémentation OVHcloud](#implementation-ovhcloud), dont la migration nécessitera des adaptations à un nouvel environnement.
+- Les [fonctionnalités spécifiques](#fonctionnalites-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
 
-### Fonctionnalités principales <a name="fonctionnalites-principales"></a>
+### Fonctionnalités principales
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -28,13 +28,13 @@ Les fonctionnalités Public Cloud sont divisées en trois catégories :
 |Horizon - Interface Web|Panneau de configuration Web et interface de gestion|N/A|Aucune migration en soi, il s'agit juste d'une interface au-dessus des ressources|N/A|
 |Mistral - Gestion des flux de travail|Décrit et exécute les processus en tant qu'ensemble de tâches et de transitions.|Yaml|Exportez les fichiers de flux de travail et exécutez-les dans le nouvel environnement|N/A|
 
-### Implémentation OVHcloud <a name="ovhcloud-implementation"></a>
+### Implémentation OVHcloud
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
 |Catalogue d'images publiques|Catalogue d'images système classiques, optimisé par OVHcloud|qcow2|Configurez de nouvelles instances à l'aide d'une offre similaire chez un autre fournisseur|N/A|
 
-### Fonctionnalités spécifiques <a name="fonctionnalites-specifiques"></a>
+### Fonctionnalités spécifiques
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|

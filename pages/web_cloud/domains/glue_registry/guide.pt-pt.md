@@ -39,9 +39,9 @@ Consoante as suas necessidades, é possível personalizar o nome dos servidores 
 
 ### 1 - Recuperar os servidores DNS atualmente utilizados pelo seu nome de domínio <a name="step1"></a>
 
-Pode recuperar os servidores DNS atualmente utilizados pelo seu nome de domínio através da ferramenta DNS online [Zonemaster](https://zonemaster.net/en/run-test){.external}.
+Pode recuperar os servidores DNS atualmente utilizados pelo seu nome de domínio através da ferramenta DNS online [Zonemaster](https://zonemaster.net/en/run-test).
 
-Para isso, aceda à ligação [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, introduza o seu nome de domínio sem as *www* (exemplo: *domain.tld*) e escolha o botão `Options`{.action} situado logo abaixo do formulário de introdução do nome de domínio.
+Para isso, aceda à ligação [https://zonemaster.net](https://zonemaster.net/en/run-test), introduza o seu nome de domínio sem as *www* (exemplo: *domain.tld*) e escolha o botão `Options`{.action} situado logo abaixo do formulário de introdução do nome de domínio.
 
 Nas opções disponíveis, clique diretamente no botão `Fetch NS from parent zone`{.action}.
 

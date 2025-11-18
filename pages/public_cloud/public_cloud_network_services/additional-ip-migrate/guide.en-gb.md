@@ -17,7 +17,7 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 
 ## Prerequisites
 
-- At least two [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- At least two [Public Cloud instances](/links/public-cloud/public-cloud) in your OVHcloud account
 - An Additional IP address
 - Access to the [OVHcloud Control Panel](/links/manager)
 
@@ -63,6 +63,6 @@ The Additional IP can be configured on the destination server before or after ca
 
 [Importing an Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-import)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

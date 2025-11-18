@@ -1,7 +1,7 @@
 ---
 title: Installing WordPress on an instance
 excerpt: Find out how to use a Public Cloud instance to host WordPress websites
-updated: 2023-05-17
+updated: 2025-09-23
 ---
 
 ## Objective
@@ -15,12 +15,12 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 > [!warning]
 >This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
+>If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) with Debian or Ubuntu installed
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access (sudo) to your instance via SSH
@@ -127,10 +127,10 @@ Configuring a firewall (*iptables*) will enhance the security of your WordPress 
 debian@instance:~$ sudo apt install ufw
 ```
 
-The relevant profiles are labelled as "WWW" in the application list:
+In the list of available UFW applications, the profiles corresponding to a web server are labeled “WWW” on a Debian instance and “Apache” on an Ubuntu instance. These profiles allow you to open the necessary ports for HTTP and HTTPS traffic in a simple and secure way.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # or grep Apache
   WWW
   WWW Cache
   WWW Full

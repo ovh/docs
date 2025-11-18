@@ -1,6 +1,6 @@
 ---
 title: Sospendi o metti in pausa un’istanza
-updated: 2025-05-26
+updated: 2025-10-30
 ---
 
 ## Obiettivo
@@ -34,7 +34,7 @@ La tabella qui sotto ti permette di differenziare le opzioni disponibili sulle t
 |Termine|Descrizione|Fatturazione|
 |---|---|---|
 |[Sospendere (*shelve*)](#shelve-instance)|Conserva il tuo IP e le risorse e i dati del disco creando uno Snapshot. Tutte le altre risorse vengono liberate.|Viene fatturato solo lo Snapshot.|
-|[Arrestare (*suspend*)](#stop-suspend-instance)|Salvare lo stato della macchina virtuale sul disco, le risorse dedicate all'istanza sono sempre riservate.|Riceverai sempre la stessa tariffa per la tua istanza.|
+|[Spegnere (*suspend*)](#stop-suspend-instance)|Salvare lo stato della macchina virtuale sul disco, le risorse dedicate all'istanza sono sempre riservate.|Riceverai sempre la stessa tariffa per la tua istanza.|
 |[Pausare](#pause-instance)|Salva lo stato della macchina virtuale nella RAM, un'istanza sospesa diventa «bloccata».|Riceverai sempre la stessa tariffa per la tua istanza.|
 
 ### Sommario
@@ -43,12 +43,12 @@ La tabella qui sotto ti permette di differenziare le opzioni disponibili sulle t
     - [Nello Spazio Cliente OVHcloud](#control-panel)
     - [Dall'interfaccia Horizon](#horizon)
     - [Dalle API OpenStack/Nova](#openstack-nova)
--[Riattivare (unshelve) un'istanza](#unshelve-instance)
+- [Riattivare (unshelve) un'istanza](#unshelve-instance)
     - [Nello Spazio Cliente OVHcloud](#control-panel-unshelve)
     - [Dall'interfaccia Horizon](#horizon-unshelve)
     - [Dalle API OpenStack/Nova](#openstack-nova-unshelve)
-- [Arrestare (suspend) un'istanza](#stop-suspend-instance)
-    - [Nello Spazio Cliente OVHcloudl](#stop-control-panel)
+- [Spegnere (suspend) un'istanza](#stop-suspend-instance)
+    - [Nello Spazio Cliente OVHcloud](#stop-control-panel)
     - [Dall'interfaccia Horizon](#stop-horizon)
     - [Dalle API OpenStack/Nova](#stop-openstack-nova)
 - [Mettere in pausa un'istanza](#pause-instance)
@@ -74,21 +74,25 @@ Questa opzione permette di liberare le risorse dedicate all'istanza Public Cloud
 
 Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nella barra di navigazione a sinistra. 
 
-Clicca su `...`{.action} a destra dell'istanza da sospendere, poi clicca su `Sospesa`{.action}.
+Clicca su `⋮`{.action} a destra dell'istanza da sospendere, poi clicca su `Sospendere`{.action}.
 
-![suspend instance](images/suspend_an_instance.png){.thumbnail}
+![suspend instance](images/suspend_instance_2025.png){.thumbnail}
 
-Nella finestra contestuale, annota il messaggio e clicca su `Conferma`{.action}.
+Nella finestra contestuale, annota il messaggio e clicca su `Confermare`{.action}.
 
-![confirm suspension](images/suspend_an_instance_2024.png){.thumbnail}
+![confirm suspension](images/confirm_suspension_2025.png){.thumbnail}
+
+Durante l'operazione viene visualizzato un messaggio:
+
+![](images/suspension_message_2025.png){.thumbnail}
 
 Una volta completata la procedura, l'istanza si presenta come *Sospesa*.
 
-![sospeso](images/instance_suspended.png){.thumbnail}
+![sospeso](images/instance_suspended_2025.png){.thumbnail}
 
 Lo snapshot sarà quindi disponibile nella sezione `Instance Backup`{.action} del menu **Compute** a sinistra dello spazio Public Cloud. Sarà quindi visibile uno snapshot denominato *xxxxx-shelved*:
 
-![snapshot tab](images/shelved_backup.png){.thumbnail}
+![snapshot tab](images/shelved_backup_2025.png){.thumbnail}
 
 <a name="horizon"></a>
 
@@ -154,13 +158,13 @@ Questa opzione ti permette di riattivare l'istanza per poterla utilizzare. Ti ri
 
 Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nella barra di navigazione a sinistra.
 
-Clicca su `...`{.action} a destra dell'istanza e poi clicca su `Riattiva`{.action}.
+Clicca su `⋮`{.action} a destra dell'istanza e poi clicca su `Riattivare`{.action}.
 
-![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
+![reactivate instance](images/reactivate_instance_2025.png){.thumbnail}
 
-Nella finestra contestuale, annota il messaggio e clicca su `Conferma`{.action}.
+Nella finestra contestuale, annota il messaggio e clicca su `Confermare`{.action}.
 
-Una volta terminato il processo, l'istanza apparirà come *Attivo*.
+Una volta terminato il processo, l'istanza apparirà come *Attivata*.
 
 <a name="horizon-unshelve"></a>
 
@@ -188,9 +192,9 @@ Una volta che l'ambiente è pronto, esegui questo comando:
 
 <a name="stop-suspend-instance"></a>
 
-### Arrestare (suspend) un'istanza 
+### Spegnere (suspend) un'istanza 
 
-Questa opzione ti permette di arrestare la tua istanza e salvare lo stato della macchina virtuale sul disco. La memoria sarà anche scritta sul disco.
+Questa opzione ti permette di spegnere la tua istanza e salvare lo stato della macchina virtuale sul disco. La memoria sarà anche scritta sul disco.
 
 <a name="stop-control-panel"></a>
 
@@ -198,15 +202,17 @@ Questa opzione ti permette di arrestare la tua istanza e salvare lo stato della 
 
 Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nella barra di navigazione a sinistra.
 
-Clicca su `...`{.action} a destra dell'istanza da arrestare, poi clicca su `Arresta`{.action}.
+Clicca su `⋮`{.action} a destra dell'istanza da arrestare, poi clicca su `Spegnere`{.action}.
 
-![stop instance](images/stopinstance.png){.thumbnail}
+![stop instance](images/turn_off_instance_2025.png){.thumbnail}
 
-Nella finestra contestuale, annota il messaggio e clicca su `Conferma`{.action}.
+Nella finestra contestuale, annota il messaggio e clicca su `Confermare`{.action}.
+
+![stop instance](images/confirm_turn_off.png){.thumbnail}
 
 Una volta completata la procedura, l'istanza apparirà come *Spento*.
 
-Per **riattivare** l'istanza, effettua gli stessi step indicati in precedenza. Clicca su `...`{.action} a destra dell'istanza e seleziona `Comincia ora`{.action}. In alcuni casi, potrebbe essere necessario riavviare a freddo.
+Per **riattivare** l'istanza, effettua gli stessi step indicati in precedenza. Clicca su `⋮`{.action} a destra dell'istanza e seleziona `Comincia ora`{.action}. In alcuni casi, potrebbe essere necessario riavviare a freddo.
 
 <a name="stop-horizon"></a>
 
@@ -288,6 +294,6 @@ Per **riattivare** l'istanza, esegui questo comando:
 
 ## Per saperne di più
 
-[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
+[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
 
 Contatta la nostra [Community di utenti](/links/community).

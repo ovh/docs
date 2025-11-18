@@ -1,7 +1,7 @@
 ---
 title: Installation von WordPress auf einer Instanz
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz für das Hosting von WordPress-Webseiten verwenden
-updated: 2023-05-17
+updated: 2025-09-23
 ---
 
 ## Ziel
@@ -130,10 +130,10 @@ Die Konfiguration einer Firewall (*iptables*) verbessert die Sicherheit Ihrer Wo
 debian@instance:~$ sudo apt install ufw
 ```
 
-Die relevanten Profile haben in der Liste der Anwendungen den Vermerk "WWW":
+In der Liste der verfügbaren Anwendungen für UFW werden die Profile, die einem Webserver entsprechen, auf einer Debian-Instanz als "WWW" und auf einer Ubuntu-Instanz als "Apache" bezeichnet. Diese Profile ermöglichen es, die notwendigen Ports für den HTTP- und HTTPS-Datenverkehr auf einfache und sichere Weise zu öffnen.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # oder grep Apache
   WWW
   WWW Cache
   WWW Full
@@ -230,9 +230,9 @@ Sobald Sie bestätigt haben, können Sie sich mit den im vorherigen Schritt defi
 
 > [!primary]
 >
-> Um sichere Verbindungen (`https`) herstellen zu können, muss der Webserver über eine Zertifizierungsstelle wie [Let's Encrypt](https://letsencrypt.org/){.external}, die kostenlose Zertifikate anbietet, abgesichert werden. Hierzu muss ein Client-Tool ("Certbot" in diesem Beispiel) installiert und Apache entsprechend konfiguriert werden. Ohne diesen Schritt wird Ihre Website nur Anfragen über `http` akzeptieren können.
+> Um sichere Verbindungen (`https`) herstellen zu können, muss der Webserver über eine Zertifizierungsstelle wie [Let's Encrypt](https://letsencrypt.org/), die kostenlose Zertifikate anbietet, abgesichert werden. Hierzu muss ein Client-Tool ("Certbot" in diesem Beispiel) installiert und Apache entsprechend konfiguriert werden. Ohne diesen Schritt wird Ihre Website nur Anfragen über `http` akzeptieren können.
 >
-> Alternativ dazu bietet Ihnen OVHcloud die Lösung [SSL Gateway](https://www.ovh.de/ssl-gateway/). Weitere Informationen dazu finden Sie in [unseren Anleitungen](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
+> Alternativ dazu bietet Ihnen OVHcloud die Lösung [SSL Gateway](/links/web/ssl-gateway). Weitere Informationen dazu finden Sie in [unseren Anleitungen](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
 ### Schritt 6 (optional): Sichere Verbindungen mit Let's Encrypt aktivieren

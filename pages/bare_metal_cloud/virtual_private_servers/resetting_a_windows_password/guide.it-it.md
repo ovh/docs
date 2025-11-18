@@ -18,7 +18,7 @@ In caso di perdita della password amministratore, è possibile ripristinarla tra
 
 ## Prerequisiti
 
-- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) o di un’[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) OVHcloud
+- Disporre di un [VPS](/links/bare-metal/vps) o di un’[istanza Public Cloud](/links/public-cloud/public-cloud) OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

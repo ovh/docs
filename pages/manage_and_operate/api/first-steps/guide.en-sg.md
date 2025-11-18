@@ -6,14 +6,14 @@ updated: 2025-05-13
 
 ## Objective
 
-The APIs available on [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.external} allow you to purchase, manage, update and configure OVHcloud products without using a graphical interface such as the Control Panel.
+The APIs available on [https://ca.api.ovh.com/](/links/api) allow you to purchase, manage, update and configure OVHcloud products without using a graphical interface such as the Control Panel.
 
 **Learn how to use OVHcloud APIs and how to pair them with your applications.**
 
 ## Requirements
 
 - You have an active OVHcloud account and know its credentials.
-- You are on the [OVHcloud API](https://ca.api.ovh.com/){.external} web page.
+- You are on the [OVHcloud API](/links/api) web page.
 
 ## Instructions
 
@@ -27,7 +27,7 @@ The APIs available on [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.extern
 
 #### Sign in to OVHcloud APIs
 
-On the [OVHcloud API](https://ca.api.ovh.com/) page, click `Explore the OVH API`{.action} to view the list of APIs.
+On the [OVHcloud API](/links/api) page, click `Explore the OVH API`{.action} to view the list of APIs.
 
 To use the APIs on your products, you must sign in to this site using your OVHcloud credentials.
 
@@ -128,7 +128,7 @@ The `PHP` and `Python` tabs contain the elements to be added to your script acco
 
 Any application that wants to communicate with the OVHcloud API must be declared in advance.
 
-To do this, click the following link: [https://ca.api.ovh.com/createToken/](https://ca.api.ovh.com/createToken/){.external}.
+To do this, click the following link: [https://ca.api.ovh.com/createToken/](https://ca.api.ovh.com/createToken/).
 
 Fill in your OVHcloud customer ID, password, and application name. The name will be useful later if you want to allow others to use it.
 

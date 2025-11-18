@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar um certificado SSL Sectigo EV"
 excerpt: "Saiba como encomendar e instalar um certificado SSL Sectigo EV no seu alojamento Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objetivo
@@ -22,7 +22,7 @@ A principal diferença reside no nível de controlos que será realizado pela Au
 
 Os certificados SSL EV são aqueles para os quais os níveis de verificação e de segurança são mais elevados. Geralmente, o certificado SSL EV é utilizado para grandes websites ou websites sensíveis. Este certificado fornecerá o mais alto nível de identificação disponível.
 
-Para os alojamentos partilhados da OVHcloud, a autoridade de certificação que emite os certificados SSL EV é [Sectigo](https://sectigostore.com){.external}.
+Para os alojamentos partilhados da OVHcloud, a autoridade de certificação que emite os certificados SSL EV é [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -38,11 +38,11 @@ Para os alojamentos partilhados da OVHcloud, a autoridade de certificação que 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Encomendar ou dispor de um [alojamento partilhado OVHcloud](/links/web/hosting) no qual nenhum certificado SSL já está instalado.
 - Encomendar ou dispor de um [nome de domínio](/links/web/domains) e dispor dos direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
-- ser uma organização (empresa, agência governamental, ...) registada num registo oficial.
+- ser uma organização (empresa, agência governamental, etc.) registada num registo oficial.
 - Ter a autorização da sua organização para encomendar um certificado SSL Sectigo EV.
 - estar em condições de justificar com exatidão as informações e os dados relativos à sua organização.
 
-Para verificar se é elegível para a subscrição de um certificado SSL Sectigo EV, aceda a [este link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+Para verificar se é elegível para a subscrição de um certificado SSL Sectigo EV, aceda a [este link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-).
   
 ## Instruções
 
@@ -86,6 +86,18 @@ Se precisar de ativar um certificado SSL para vários domínios/subdomínios dec
 > Sim, se aplicável, e se encomendar o certificado SSL Sectigo EV sem verificar os pontos anteriores, deverá efetuar uma correção a posteriori. Deverá eliminar o certificado SSL Sectigo EV que subscreveu anteriormente **sem poder beneficiar de um reembolso**, e depois encomendar um novo certificado. O objetivo é que o novo certificado SSL Sectigo EV englobe o seu domínio `domain.tld` e o seu subdomínio em "www" `www.domain.tld`.
 >
 > Lembrete: se subscrever a um certificado SSL Sectigo EV diretamente para um subdomínio (exemplo: `sub.domain.tld`), não é afetado por esta situação.
+
+> [!primary]
+>
+> **Informações sobre a migração para a nova interface de gestão de certificados SSL:**
+>
+> O restante da parte 1.1 destina-se aos clientes cujos serviços de alojamento web ainda não migraram para a nova interface de gestão dos certificados SSL.
+> Para detetar se esta migração foi efetuada, aceda ao seu alojamento web na Área de Cliente OVHcloud e verifique a presença do separador `Certificados SSL`.
+> Se estiver presente o separador `Certificados SSL`, o seu serviço já migrou para a nova interface de gestão. Neste caso, consulte diretamente [este manual](/pages/web_cloud/web_hosting/ssl_management) para gerir o seu certificado SSL.
+>
+> Por razões técnicas, nem todos os serviços de alojamento web de todos os nossos clientes podem ser migrados de uma só vez. Esta migração é, por isso, repartida durante algumas semanas e é realizada de forma automática, sem qualquer incidência no funcionamento dos seus serviços de alojamento web, e sem qualquer intervenção ou ação necessária da sua parte.
+>
+> A prazo, todos os serviços de alojamento web funcionarão com a nova interface de gestão dos certificados SSL.
 
 Para encomendar o certificado SSL Sectigo EV, execute as seguintes ações:
 
@@ -205,7 +217,7 @@ Depois de realizar as verificações por Sectigo, os seus serviços serão conta
 
 > [!success]
 >
-> Para mais informações sobre as operações descritas na **etapa 2**, consulte a [documentação oficial de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sobre o assumpto.
+> Para mais informações sobre as operações descritas na **etapa 2**, consulte a [documentação oficial de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-) sobre o assumpto.
 >
 
 ### Etapa 3 : instalação do certificado SSL Sectigo EV com o seu domínio e o seu alojamento OVHcloud
@@ -216,9 +228,9 @@ Só precisa de [atualizar o seu website em HTTPS](/pages/web_cloud/web_hosting/s
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Site oficial Sectigo](https://sectigostore.com){.external}
+[Site oficial Sectigo](https://sectigostore.com)
 
-[Descrição das verificações efetuadas pela Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
+[Descrição das verificações efetuadas pela Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-)
 
 [Gerir um certificado SSL no alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

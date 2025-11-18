@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący rozwiązania Zimbra OVHcloud
 excerpt: "Poszukaj odpowiedzi na pytania dotyczące migracji do Zimbry w ofercie MX Plan OVHcloud"
-updated: 2024-11-15
+updated: 2025-11-04
 ---
 
 <style>
@@ -61,13 +61,39 @@ Odwiedź naszą stronę "[Konfiguracja konta e-mail Zimbra w programie pocztowym
 
 ///
 
+/// details | Jak zmienić plan Zimbra?
+
+Twoje potrzeby się zmieniły: chcesz korzystać z większej liczby funkcji na swoim koncie Zimbra, albo przeciwnie, nie potrzebujesz już tylu funkcji. Oferty Zimbra są elastyczne, postępuj zgodnie z poniższymi instrukcjami w zależności od sytuacji:
+
+**Chcesz przejść na wyższy plan?**
+
+1. Zaloguj się do [panelu klienta OVHcloud](/links/manager).
+1. Przejdź do sekcji `Web Cloud`{.action}.
+1. Kliknij `Zimbra Mail`{.action}.
+1. Kliknij zakładkę `Konto e-mail`{.action}.
+1. Po prawej stronie konta e-mail, dla którego chcesz przejść na wyższą ofertę, kliknij `⁝`{.action}.
+1. Kliknij `Zmień ofertę`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+**Czy chcesz przejść na niższy plan?**
+
+Kroki są takie same jak w przypadku przejścia na wyższy plan (opisane powyżej).
+
+> [!warning]
+>
+> Przed przejściem na niższą ofertę upewnij się, że:
+>
+> - W pamięci masowej "Briefcase" nie są przechowywane żadne pliki, jeśli przechodzisz na plan Starter.
+> - Zawartość konta e-mail musi być mniejsza niż 15 GB, jeśli przechodzisz na plan Starter.
+
+///
+
 ### Pytania dotyczące migracji MX Plan na rozwiązanie Zimbra
 
 W ramach rozwoju oferty MX Plan zaplanowana jest migracja z aktualnego rozwiązania korzystającego z Webmail Outlook Web Access (OWA) na rozwiązanie Zimbra i jego interfejs webmail.
 
 Jeśli jesteś zainteresowany migracją, odnajdziesz tutaj najczęściej zadawane pytania na ten temat.
-
-///
 
 /// details | Czym się różni Webmail Outlook Web App (OWA) od Zimbry?
 

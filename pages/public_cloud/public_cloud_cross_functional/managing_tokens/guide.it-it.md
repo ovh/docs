@@ -18,7 +18,7 @@ updated: 2024-12-10
 
 ### Definizioni
 
-- Endpoint: Indirizzo HTTP che punta direttamente su un'API di un servizio. ad esempio [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/){.external} per l'endpoint di autenticazione o [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/){.external} per l'endpoint di gestione delle immagini della zona GRA1.
+- Endpoint: Indirizzo HTTP che punta direttamente su un'API di un servizio. ad esempio [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) per l'endpoint di autenticazione o [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/) per l'endpoint di gestione delle immagini della zona GRA1.
 
 - Token: Carattere unico associato all'autenticazione e ai diritti di accesso. L'utente richiede un token fornendo i propri credenziali (informazioni di login) all'API di autenticazione. e viene generato e fornito con una validità limitata di 24 ore. Un token può essere "scoped" o "unscoped", cioè può essere direttamente collegato a una parte o non essere collegato ad alcun elemento.
 
@@ -35,7 +35,7 @@ Dato che i token hanno una durata di validità definita, essi scadono e devono e
 
 Analogamente, se un token deve essere revocato prima della data di scadenza, è possibile farlo via API.
 
-Per maggiori informazioni, consulta la documentazione di [OpenStack dell'API](https://docs.openstack.org/keystone/train/api_curl_examples.html){.external}.
+Per maggiori informazioni, consulta la documentazione di [OpenStack dell'API](https://docs.openstack.org/keystone/train/api_curl_examples.html).
 
 ### Operazioni manuali
 
@@ -168,7 +168,7 @@ Connection: close
 
 Si raccomanda vivamente di utilizzare le librerie che permettono la gestione trasparente dei token. In questo modo, fornendo semplicemente i credenziali di accesso alla libreria, i token saranno automaticamente generati, utilizzati e rinnovati senza doverne gestire a livello applicativo.
 
-Ci sono molte librerie nei diversi linguaggi. Per maggiori informazioni, consulta [la lista ufficiale](https://wiki.openstack.org/wiki/SDKs){.external}.
+Ci sono molte librerie nei diversi linguaggi. Per maggiori informazioni, consulta [la lista ufficiale](https://wiki.openstack.org/wiki/SDKs).
 
 #### Eliminazione del token
 

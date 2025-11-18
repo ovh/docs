@@ -1,12 +1,15 @@
 ---
 title:  Migrar um Additional IP
 excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou através das API OVHcloud
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Este artigo diz respeito à deslocação de endereços Additional IPv4, que é limitado por [restrições regionais](#limitations).
 >
-> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](/links/network/additional-ip). Isto não afeta as suas funcionalidades.
+> A configuração do Additional IP num vRack (rede privada) contorna estas restrições regionais ao perder a dependência de uma única região, facilitando ao mesmo tempo a interligação numa vasta gama de serviços OVHcloud.
+>
+> Saiba como configurar o Additional IP num vRack com os nossos manuais para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) e [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo
@@ -27,14 +30,14 @@ Os blocos de endereços IP numa região podem ser movidos de um datacenter para 
 
 ## Requisitos
 
-- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external} na Área de Cliente OVHcloud.
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) na Área de Cliente OVHcloud.
 - Dispor de um [endereço Additional IP](/links/network/additional-ip).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]
-> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+> Para mais informações, consulte o nosso [comparativo](/links/bare-metal/eco-compare).
 >
 
 > [!warning]
@@ -80,7 +83,7 @@ Clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
 ### Migrar um IP através das API
 
-Aceda à página web das [API OVHcloud](https://api.ovh.com/).
+Aceda à página web das [API OVHcloud](/links/api).
 
 Numa primeira fase, é preferível verificar se o endereço IP pode ser migrado.
 <br>Para verificar se o IP pode ser migrado para um dos seus servidores dedicados, utilize a seguinte chamada:

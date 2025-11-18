@@ -1,7 +1,7 @@
 ---
 title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-updated: 2022-10-25
+updated: 2025-10-28
 ---
 
 ## Wprowadzenie
@@ -37,7 +37,7 @@ Aby zmienić domenę dostępu do Twojej strony WWW, należy wykonać kilka krok�
 
 ### Etap 1 - zadeklarowanie nowej domeny na hostingu <a name="step1"></a>
 
-Nowa domena zostanie zarejestrowana w dokumentacji OVHcloud dotyczącej dodania strony podpiętej w [opcji MultiSite na hostingu www](/pages/web_cloud/web_hosting/multisites_configure_multisite). Zgłoś również subdomenę `www`, jeśli chcesz, na przykład, że `www.NewDomain.tld` wyświetla również Twoją stronę obok `NewDomain.tld`.
+Zadeklaruj nową domenę korzystając z naszej dokumentacji dotyczącej [dodawania witryny na Twoim serwisie udostępnionym](/pages/web_cloud/web_hosting/multisites_configure_multisite). Zadeklaruj również jej poddomenę w `www`, jeśli chcesz, na przykład, aby `www.NewDomain.tld` również wyświetlała Twoją stronę oprócz `NewDomain.tld`.
 
 Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
@@ -53,20 +53,11 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 > **Certyfikaty SSL**
 >
-> Jeśli domena używana do uzyskania dostępu do Twojej strony WWW dysponuje certyfikatem SSL, zapoznaj się z naszymi przewodnikami, aby wykonać lub sprawdzić działania opisane poniżej tych dwóch linków:
+> Jeśli pierwotna domena używana do uzyskiwania dostępu do Twojej witryny ma certyfikat SSL, zapoznaj się z naszymi 2 przewodnikami:
 > - [Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
->
-> W przypadku certyfikatu SSL *Let's Encrypt* za darmo, wystarczy aktywować opcję `SSL` **od tej pory** dla Twojej nowej domeny w zakładce `MultiSite`{.action} na Twoim hostingu. Następnie kliknij przycisk `Operacje`{.action} nad tabelą wskazującą Twoje pliki multimedialne, a następnie kliknij polecenie `Ponownie wygeneruj certyfikat SSL`{.action}. Regeneracja powinna trwać co najmniej 2 godziny.
->
-> W przypadku płatnych certyfikatów SSL *Sectigo DV* i *Sectigo EV* zaproponowanych przez OVHcloud, certyfikaty te są ważne tylko dla jednej domeny i subdomeny z rozszerzeniem `www`.<br>
-> **Po dotarciu do [etapu 3](#step3) tego przewodnika*** należy usunąć płatny certyfikat SSL, aby zamówić inny certyfikat dla nowej domeny.<br>
-> *Uwaga, usunięcie certyfikatu jest nieodwracalne i nie zostanie wykonany zwrot płatności za czas pozostały do wygaśnięcia starego certyfikatu SSL. Upewnij się, że wszystkie etapy 1 i 2 są wykonane prawidłowo.*
->
-> W przypadku innych certyfikatów SSL *custom*, które sami zainstalowałeś, skontaktuj się z dostawcą certyfikatów SSL, aby dowiedzieć się, jakie możliwości masz w takiej sytuacji.
->
 
-Jeśli wszystkie działania zostały poprawnie zrealizowane, zgłoszenia w wielu lokalizacjach domen muszą być identyczne **chyba że korzystasz z płatnego certyfikatu SSL typu *Sectigo DV*, *Sectigo EV* lub *custom***.
+Jeśli wszystkie czynności zostały poprawnie wykonane, deklaracje Twoich domen powinny być identyczne **chyba że korzystasz z płatnego certyfikatu SSL typu *Sectigo DV*, *Sectigo EV* lub *custom***.
 
 ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
@@ -100,9 +91,9 @@ Większość systemów CMS pozwala bezpośrednio, z poziomu panelu administracyj
 Ponieważ systemy CMS są tworzone przez organizacje zewnętrzne niezarządzane przez OVHcloud, zapoznaj się z linkami do oficjalnej dokumentacji poszczególnych systemów zarządzania treścią proponowanych na hostingu:
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
-- Joomla! : Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [docs.joomla.org](https://docs.joomla.org/){.external} lub [forum.joomla.org](https://forum.joomla.org/){.external}.
-- Drupal: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [drupal.org](https://drupal.org){.external} lub [drupal.fr](https://drupal.fr){.external}.
-- PrestaShop: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, kliknij [tutaj](https://help-center.prestashop.com){.external} i przejdź na oficjalną stronę.
+- Joomla! : Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [docs.joomla.org](https://docs.joomla.org/) lub [forum.joomla.org](https://forum.joomla.org/).
+- Drupal: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [drupal.org](https://drupal.org) lub [drupal.fr](https://drupal.fr).
+- PrestaShop: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, kliknij [tutaj](https://help-center.prestashop.com) i przejdź na oficjalną stronę.
 
 Pamiętaj, że w przypadku tych systemów CMS możesz wprowadzić również zmiany bezpośrednio [w bazie danych](/pages/web_cloud/web_hosting/sql_create_database). W tabeli programu zmień link dostępowy do Twojej strony WWW.
 
@@ -123,14 +114,14 @@ Jeśli korzystałeś z usług dostawcy podczas tworzenia strony, skontaktuj się
 
 ### Etap 3 - usunięcie poprzedniej nazwy domeny <a name="step3"></a>
 
-Aby uniknąć *duplicate-content*, a nowa domena jest w pełni aktywna na Twojej stronie WWW, należy usunąć zgłoszenie w opcji MultiSite ze starego domeny w przewodniku dotyczącym zarządzania [MultiSite na hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Aby uniknąć „*Duplicate-content*” i gdy nowa nazwa domeny jest w pełni operacyjna z Twoją witryną, należy usunąć deklarację starej nazwy domeny na Twojej witrynie, korzystając z przewodnika dotyczącego zarządzania [witrynami na Twoim serwisie udostępnionym](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > Pamiętaj, aby zająć się certyfikatem SSL *Sectigo EV*, *Sectigo DV* lub *Custom* zgodnie z opisem w [krok 1](#step1).
 >
 
-Po usunięciu starej domeny z zakładki MultiSite i jej zarejestrowaniu w OVHcloud, możesz ją przekierować za pomocą [stałego, widocznego przekierowania 301](/pages/web_cloud/domains/redirect_domain_name). Pozwoli to użytkownikom na automatyczne przekierowanie do strony WWW poprzez wyświetlenie nowej domeny na pasku adresu/URL przeglądarki.
+Po odłączeniu starej nazwy domeny od witryny znajdującej się na Twoim serwisie internetowym i jeśli jest ona zarejestrowana u OVHcloud, możesz przekierować tę domenę przy użyciu [trwalego widocznego przekierowania 301](/pages/web_cloud/domains/redirect_domain_name). Dzięki temu Twoi odwiedzający zostaną automatycznie przekierowani na Twoją stronę, widząc nową domenę w pasku adresu/URL swojej przeglądarki.
 
 ## Sprawdź również <a name="go-further"></a>
 

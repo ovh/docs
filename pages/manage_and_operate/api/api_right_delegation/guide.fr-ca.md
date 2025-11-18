@@ -19,7 +19,7 @@ Par exemple, supposons que vous voulez créer un marché dans lequel vous, en ta
 
 La première partie, en tant que développeur d'applications, consiste à enregistrer votre application sur OVHcloud.
 
-Pour ce faire, accédez à l'[API OVHcloud](https://ca.api.ovh.com/createApp/){.external}
+Pour ce faire, accédez à l'[API OVHcloud](https://ca.api.ovh.com/createApp/)
 
 Vous devrez vous connecter et définir un nom et une description de l'application.
 

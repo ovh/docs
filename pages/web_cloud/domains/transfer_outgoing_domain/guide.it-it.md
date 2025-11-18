@@ -1,7 +1,7 @@
 ---
 title: "Trasferire un dominio verso un altro Registrar"
 excerpt: "Questa guida ti mostra come effettuare il trasferimento di un dominio OVHcloud verso un altro provider"
-updated: 2024-05-16
+updated: 2025-07-31
 ---
 
 ## Obiettivo
@@ -25,7 +25,7 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 
 - Disporre di un [dominio](/links/web/domains) registrato in OVHcloud
 - Avere l’autorizzazione per richiedere il trasferimento di un dominio: il proprietario e/o gli amministratori devono essere informati della richiesta di trasferimento
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager)
 - La registrazione del dominio in questione risale ad almeno 60 giorni fa **e** non è stata trasferita o scambiata (ovvero la modifica del proprietario) negli ultimi 60 giorni
 
 > [!primary]
@@ -104,9 +104,9 @@ Una volta recuperato il codice di trasferimento, **non bloccate più il vostro d
 
 ### Step 3: avvia il trasferimento verso il nuovo Registrar
 
-Una volta eseguiti gli step precedenti, puoi avviare il processo di trasferimento, in genere tramite un comando. Il trasferimento può richiedere fino a 10 giorni. 
+Una volta terminati gli step precedenti, avvia il processo di trasferimento, generalmente ordinando il nuovo Registrar. Il trasferimento può richiedere fino a 10 giorni.
 
-Per maggiori informazioni, contatta il tuo nuovo Registrar.
+Per maggiori informazioni, contatta il nuovo Registrar che hai scelto.
 
 > [!warning]
 >

@@ -14,7 +14,7 @@ Esta guía explica cómo redimensionar el sistema de archivos después de la ins
 
 ## Requisitos
 
- * Tener una instancia con FreeBSD 12 en su proyecto de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) o un [VPS](https://www.ovhcloud.com/es-es/vps/) con FreeBSD 12.
+ * Tener una instancia con FreeBSD 12 en su proyecto de [Public Cloud](/links/public-cloud/public-cloud) o un [VPS](/links/bare-metal/vps) con FreeBSD 12.
  * Haber instalado recientemente la instancia/VPS o [haberla redimensionado.](/pages/public_cloud/compute/resize_of_an_instance)
 
 > [!primary]

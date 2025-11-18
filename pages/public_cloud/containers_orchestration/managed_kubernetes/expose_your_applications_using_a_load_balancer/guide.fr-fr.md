@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2025-02-17
+updated: 2025-10-29
 ---
 
 > [!warning]
@@ -27,9 +27,6 @@ To be able to deploy [Public Cloud Load Balancer](/links/public-cloud/load-balan
 
 | Kubernetes versions |
 | ------------------- |
-| 1.26.4-3  >=        |
-| 1.27.12-1 >=        |
-| 1.28.8-1  >=        |
 | 1.29.3-3  >=        |
 | 1.30.2-1  >=        |
 
@@ -70,15 +67,14 @@ If you have an existing/already deployed cluster and if:
 
 When exposing your load balancer publicly (public-to-public or public-to-private):
 
-- If it does not already exist, a single OVHcloud Gateway will be automatically created and billed for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/fr/public-cloud/prices/#10394>.
-- A Public Floating IP will be used: <https://www.ovhcloud.com/fr/public-cloud/prices/#10346>.
-- Each Public Cloud Load Balancer is billed according to its flavor: <https://www.ovhcloud.com/fr/public-cloud/prices/#10420>.
+- If it does not already exist, a single OVHcloud Gateway will be automatically created and billed for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
+- A Public Floating IP will be used: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346>.
+- Each Public Cloud Load Balancer is billed according to its flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>.
 
 > [!primary]
 >
 > Note: Each publicly exposed Load Balancer has its own Public Floating IP. Outgoing traffic doesn't consume OVHcloud Gateway bandwidth. ([except for Public-to-Public mode](#public-to-public-scenario))
 >
-
 
 ## Instructions
 
@@ -109,7 +105,10 @@ metadata:
   namespace: test-lb-ns
   annotations:
     loadbalancer.ovhcloud.com/class: octavia //not required for cluster running kubernetes versions >= 1.31
-    loadbalancer.ovhcloud.com/flavor: small
+
+    # Use `openstack loadbalancer flavor list` to get the full list of available flavors.
+    loadbalancer.ovhcloud.com/flavor: small # Name of a loadbalancer flavor, used in MKS Free ONLY.
+    loadbalancer.openstack.org/flavor-id: xxx # UUID of a loadbalancer flavor, used in MKS Standard ONLY.
 spec:
   ports:
     - name: 80-80
@@ -155,7 +154,11 @@ metadata:
   namespace: test-lb-ns
   annotations:
     loadbalancer.ovhcloud.com/class: "octavia" //not required for cluster running kubernetes versions >= 1.31
-    loadbalancer.ovhcloud.com/flavor: "medium" //optional, default = small
+
+    # Use `openstack loadbalancer flavor list` to get the full list of available flavors.
+    # When not specified, the "small" flavor is used by default.
+    loadbalancer.ovhcloud.com/flavor: medium # Name of a loadbalancer flavor, used in MKS Free ONLY.
+    loadbalancer.openstack.org/flavor-id: yyy # UUID of a loadbalancer flavor, used in MKS Standard ONLY.
   labels:
     app: test-octavia
 spec:
@@ -213,7 +216,11 @@ metadata:
   namespace: test-lb-ns
   annotations:
     loadbalancer.ovhcloud.com/class: "octavia" //not required for cluster running kubernetes versions >= 1.31
-    loadbalancer.ovhcloud.com/flavor: "medium" //optional, default = small
+
+    # Use `openstack loadbalancer flavor list` to get the full list of available flavors.
+    # When not specified, the "small" flavor is used by default.
+    loadbalancer.ovhcloud.com/flavor: medium # Name of a loadbalancer flavor, used in MKS Free ONLY.
+    loadbalancer.openstack.org/flavor-id: yyy # UUID of a loadbalancer flavor, used in MKS Standard ONLY.
   labels:
     app: test-octavia
 spec:
@@ -241,9 +248,16 @@ spec:
 
 Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer for Managed Kubernetes Service (will be deprecated in future versions). If not specified, the default class of the MKS Kubernetes versions you are using will be applied, please refer to the [versions matrix section](#kube-versions).
 
-- `loadbalancer.ovhcloud.com/flavor`
+- `loadbalancer.ovhcloud.com/flavor` (MKS Free only)
 
   Not a standard OpenStack Octavia annotation (specific to OVHcloud). The size used for creating the loadbalancer. Specifications can be found on the [Load Balancer specifications](/links/public-cloud/load-balancer) page. Authorized values => `small`,`medium`,`large`, `xl`. Default is 'small'.
+
+- `loadbalancer.openstack.org/flavor-id` (MKS Standard only)
+
+  The UUID of the flavor used to create the loadbalancer. To get the flavors UUIDs, see the following guides:
+    - [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api);
+    - [Load the OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+    - Run `openstack loadbalancer flavor list` to get the list of flavors and their UUIDs.
 
 - `service.beta.kubernetes.io/openstack-internal-load-balancer`
 
@@ -284,15 +298,15 @@ Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer
 
 - `loadbalancer.openstack.org/timeout-client-data`
 
-  Frontend client inactivity timeout in milliseconds for the load balancer. Default value (ms) = 50000.
+  Frontend client inactivity timeout in milliseconds for the load balancer. Default value (s) = 50.
 
 - `loadbalancer.openstack.org/timeout-member-connect`
 
-  Backend member connection timeout in milliseconds for the load balancer. Default value (ms) = 5000.
+  Backend member connection timeout in milliseconds for the load balancer. Default value (s) = 5.
 
 - `loadbalancer.openstack.org/timeout-member-data`
 
-  Backend member inactivity timeout in milliseconds for the load balancer. Default value (ms) = 50000.
+  Backend member inactivity timeout in milliseconds for the load balancer. Default value (s) = 50.
 
 - `loadbalancer.openstack.org/timeout-tcp-inspect`
 
@@ -320,7 +334,7 @@ Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer
 
 - `loadbalancer.openstack.org/flavor-id`
 
-  The id of the flavor that is used for creating the loadbalancer. Not useful as we provide `loadbalancer.ovhcloud.com/flavor`.
+  The id of the flavor that is used for creating the loadbalancer: only in use for MKS Standard. MKS Free uses `loadbalancer.ovhcloud.com/flavor`.
 
 - `loadbalancer.openstack.org/load-balancer-id`
 
@@ -363,8 +377,8 @@ Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer
 
 #### Resize your LoadBalancer
 
-There is no proper way to "hot-resize" your loadbalancer yet (work in progress). The best alternative to change the flavor of your load balancer is to recreate a new Kubernetes Service that will use the same public IP as an existing one.
-You can find the complete HowTo and examples on our public Github repository: <https://github.com/ovh/public-cloud-examples>
+There is no proper way to "hot-resize" your loadbalancer yet ([work in progress](https://github.com/ovh/public-cloud-roadmap/issues/418)). The best alternative to change the flavor of your load balancer is to recreate a new Kubernetes Service that will use the same public IP as an existing one.
+You can find the complete HowTo and examples on our public Github repository: <https://github.com/ovh/public-cloud-examples/tree/main/containers-orchestration/managed-kubernetes/use-public-cloud-load-balancer>.
 
 - First, make sure that the existing service is using the `loadbalancer.openstack.org/keep-floatingip` annotation. If it's not using it, the public Floating IP will be released (it can be added after the service creation).
 - Get the public IP of your existing service:
@@ -383,8 +397,11 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
   metadata:
     name: my-medium-lb
     annotations:
-      loadbalancer.ovhcloud.com/class: "octavia" //not required for clusters running kubernetes versions >= 1.31
-      loadbalancer.ovhcloud.com/flavor: "medium"
+      loadbalancer.ovhcloud.com/class: "octavia" # not required for clusters running kubernetes versions >= 1.31
+
+      # Use `openstack loadbalancer flavor list` to get the full list of available flavors.
+      loadbalancer.ovhcloud.com/flavor: medium # Name of a loadbalancer flavor, used in MKS Free ONLY.
+      loadbalancer.openstack.org/flavor-id: yyy # UUID of a loadbalancer flavor, used in MKS Standard ONLY.
     labels:
       app: demo-upgrade
   spec:
@@ -575,4 +592,4 @@ Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask question
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

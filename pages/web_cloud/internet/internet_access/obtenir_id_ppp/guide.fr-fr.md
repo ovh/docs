@@ -17,7 +17,7 @@ Les identifiants *Point to Point Protocol over Ethernet* (PPPoE) sont composés 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
 - Disposer d'un équipement (routeur, firewall) compatible PPPoE.
 - Être connecté à l'[espace client OVHcloud](/links/manager).
-- Être connecté aux [API OVHcloud](https://api.ovh.com/).
+- Être connecté aux [API OVHcloud](/links/api).
 - Consulter le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique

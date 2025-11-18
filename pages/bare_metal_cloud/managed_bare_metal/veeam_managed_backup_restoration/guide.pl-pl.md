@@ -14,7 +14,7 @@ updated: 2021-03-29
 
 ## Wymagania początkowe
 
-- Dostęp do [API OVHcloud](https://api.ovh.com/)
+- Dostęp do [API OVHcloud](/links/api)
 - [Veeam Managed Backup włączony](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service) w ramach usługi Managed Bare Metal
 
 ## W praktyce
@@ -25,7 +25,7 @@ Jeśli nie jesteś przyzwyczajony do działania API OVHcloud, zapoznaj się z na
 
 Najpierw należy wybrać odpowiednie kopie zapasowe do przywrócenia.
 
-Zaloguj się na stronie [https://api.ovh.com/](https://api.ovh.com/) i skorzystaj z następującego połączenia:
+Zaloguj się na stronie [https://api.ovh.com/](/links/api) i skorzystaj z następującego połączenia:
 
 > [!api]
 >
@@ -59,7 +59,7 @@ Zapisz się do katalogu (BackupRepository) i przywróć kopie zapasowe na kolejn
 
 Zaproszenie API przywróci ostatnie poprawne punkty przywracania każdej kopii zapasowej zapisanej w katalogu.
 
-Zaloguj się na stronie [https://api.ovh.com/](https://api.ovh.com/) i skorzystaj z następującego połączenia:
+Zaloguj się na stronie [https://api.ovh.com/](/links/api) i skorzystaj z następującego połączenia:
 
 > [!api]
 >

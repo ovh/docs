@@ -1,6 +1,6 @@
 ---
-title: "VMware Cloud Director - Creating a new virtual machine"
-excerpt: "How to create a new Virtual Machine in VCD"
+title: "Public VCF as-a-Service - Creating a new virtual machine"
+excerpt: "How to create a new Virtual Machine in Public VCF as-a-Service"
 updated: 2024-05-23
 ---
 
@@ -13,7 +13,7 @@ This guide details how to create your first virtual machine using two methods:
 
 ## Requirements
 
-- A VMware Cloud Director
+- A Public VCF as-a-Service
 - An ISO of an operating system
 
 ## Instructions
@@ -22,7 +22,7 @@ This guide details how to create your first virtual machine using two methods:
 
 To create your virtual machine, first go to the datacentre where you plan to deploy it. Next, navigate to the `Compute`{.action} > `Virtual Machine`{.action} > `NEW VM`{.action} section.
 
-![dashboard vcd](images/vcd-dashboard-vcd.png){.thumbnail}
+![dashboard Public VCF as-a-Service](images/vcd-dashboard-vcd.png){.thumbnail}
 
 ![dashboard vm](images/vcd-vm-dashboad.png){.thumbnail}
 
@@ -58,7 +58,7 @@ The IP Mode drop-down list provides different IP assignment modes:
 - Manual IP - You must set the IP manually.
 
 > [!warning]
-> **Warning**: This IP mode only allows you to organize your VCD inventory, but you will still need to configure the IP (or DHCP) inside the VM.
+> **Warning**: This IP mode only allows you to organize your Public VCF as-a-Service inventory, but you will still need to configure the IP (or DHCP) inside the VM.
 >
 
 As for the `Storage Policies`{.action} section, you will only find one possibility: the vSAN default storage policy.
@@ -80,6 +80,6 @@ If you have used the **From scratch** method, you just need to turn on your serv
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

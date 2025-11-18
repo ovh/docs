@@ -1,18 +1,18 @@
 ---
-title: "VMware Cloud Director - Configuration réseau après migration de vSphere vers VCD"
-excerpt: "Apprenez à configurer votre réseau après la migration de VMware vSphere vers VMware Cloud Director"
+title: "Public VCF as-a-Service - Configuration réseau après migration de vSphere vers Public VCF as-a-Service"
+excerpt: "Apprenez à configurer votre réseau après la migration de VMware vSphere vers Public VCF as-a-Service"
 updated: 2025-03-04
 ---
 
 ## Objectif
 
-Ce guide explique les étapes nécessaires pour configurer votre environnement après la migration de vos services **VMware vSphere on OVHcloud** vers une offre **VMware Cloud Director on OVHcloud**.
+Ce guide explique les étapes nécessaires pour configurer votre environnement après la migration de vos services **VMware vSphere on OVHcloud** vers une offre **Public VCF as-a-Service**.
 
 Ces ajustements sont essentiels pour assurer le bon fonctionnement de vos machines virtuelles (VMs) et de vos réseaux.
 
 ## Prérequis
 
-- Une offre [VMware Cloud Director on OVHcloud](/links/hosted-private-cloud/vmware-vcd).
+- Une offre [Public VCF as-a-Service](/links/hosted-private-cloud/vmware-vcd).
 - Être administrateur technique de votre solution [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware).
 - Être connecté à [l'espace client OVHcloud](/links/manager)
 
@@ -34,7 +34,7 @@ Pour passer la configuration réseau en DHCP **(recommandé)** :
 
 ![Paramètre Désactivé](images/02-VCD-post-migration.png){.thumbnail}
 
-### Étape 2 : Gérer le problème d’adressage IP dans VCD
+### Étape 2 : Gérer le problème d’adressage IP dans Public VCF as-a-Service
 
 Les réseaux sont précréés avec des CIDR de passerelle temporaires, car les sous-réseaux réels des machines virtuelles ne sont pas connus à l’avance.
 

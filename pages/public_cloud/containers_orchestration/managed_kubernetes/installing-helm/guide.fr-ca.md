@@ -4,11 +4,11 @@ excerpt: 'Find out how to install and use Helm on OVHcloud Managed Kubernetes'
 updated: 2024-03-14
 ---
 
-[Helm](https://docs.helm.sh/){.external} is a package manager for Kubernetes. It works with packages of pre-configured Kubernetes resources, called Helm charts. 
+[Helm](https://docs.helm.sh/) is a package manager for Kubernetes. It works with packages of pre-configured Kubernetes resources, called Helm charts. 
 
 With Helm you can:
 
-- find, deploy and manage software in Kubernetes [using a growing catalog of Helm charts in ArtifactHUB](https://artifacthub.io/){.external}
+- find, deploy and manage software in Kubernetes [using a growing catalog of Helm charts in ArtifactHUB](https://artifacthub.io/)
 - create and share your own Helm charts
 
 ## Before you begin
@@ -197,6 +197,6 @@ release "test-redis" uninstalled
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

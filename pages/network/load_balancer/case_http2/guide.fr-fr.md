@@ -1,7 +1,7 @@
 ---
 title: 'Configurer HTTP/2 sur un service OVHcloud Load Balancer'
 excerpt: 'Configuration de HTTP/2 sur un service OVHcloud Load Balancer'
-updated: 2018-01-15
+updated: 2025-07-04
 ---
 
 ## Objectif
@@ -12,12 +12,19 @@ ALPN (Application-Layer Protocol Negotiation) est une extension TLS qui permet �
 
 **Ce guide a pour but de vous aider à créer un service HTTP/2 avec l'offre Load Balancer OVHcloud. Nous allons ici configurer ce service pour répartir la charge sur plusieurs serveurs répondant en HTTP/2.**
 
+> [!primary]
+>
+> Depuis juin 2025, les frontend HTTP et TLS des services Load Balancer OVHcloud supportent nativement le protocole HTTP/2.
+>
+> Le guide suivant reste cependant applicable pour les frontend TCP.
+>
+
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external} (Pack 2 minimum).
+- Disposer d'un [Load Balancer OVHcloud](/links/network/load-balancer) (Pack 2 minimum).
 - Un frontend TCP créé sur le port 443.
 - Une ferme TCP créée et des serveurs ajoutés.
-- Avoir accès à l'[API OVHcloud](https://api.ovh.com/){.external}.
+- Avoir accès à l'[API OVHcloud](/links/api).
 
 ## En pratique
 

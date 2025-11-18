@@ -12,8 +12,8 @@ I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configura
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Disporre di un piano di [hosting Web](/links/web/hosting) attivo
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -170,7 +170,7 @@ Questa guida ti mostra come [accedere allo spazio di storage FTP del tuo hosting
 > OVHcloud fornisce un servizio di backup automatico dei dati e la messa a disposizione di questi backup. *non contrattuale* ed è presente in aggiunta ai tuoi servizi. Effettivamente, è vostra responsabilità impostare la vostra propria politica di ripristino e determinare i punti di ripristino nel momento che ritenete opportuno.
 >
 
-Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](/links/manager){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in un datacenter situato a Strasburgo (SBG). La politica di conservazione dei backup è di 30 giorni.
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](/links/manager) o tramite le [API OVHcloud](/links/api). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in un datacenter situato a Strasburgo (SBG). La politica di conservazione dei backup è di 30 giorni.
 
 Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export) nella nostra documentazione.
 

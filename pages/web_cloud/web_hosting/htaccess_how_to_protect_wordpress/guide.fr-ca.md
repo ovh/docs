@@ -12,7 +12,7 @@ Ce tutoriel vous explique comment configurer certaines fonctionnalités de votre
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 **Découvrez comment sécuriser votre WordPress avec un ou plusieurs fichiers htaccess.**
@@ -24,9 +24,9 @@ Ce tutoriel vous explique comment configurer certaines fonctionnalités de votre
 
 Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs de texte comme :
 
-- [Bloc-notes](https://support.microsoft.com/fr-ca/windows/aide-de-bloc-notes-windows-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} de Windows ;
-- [TextEdit](https://support.apple.com/fr-ca/guide/textedit/welcome/mac){.external} sur macOS ; 
-- [Notepad++](https://notepad-plus-plus.org/){.external}.
+- [Bloc-notes](https://support.microsoft.com/fr-ca/windows/aide-de-bloc-notes-windows-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c) de Windows ;
+- [TextEdit](https://support.apple.com/fr-ca/guide/textedit/welcome/mac) sur macOS ; 
+- [Notepad++](https://notepad-plus-plus.org/).
 
 > [!primary]
 >

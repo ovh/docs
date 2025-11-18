@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
 excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
-updated: 2025-06-03
+updated: 2025-09-19
 ---
 
 <style>
@@ -30,7 +30,7 @@ Może to być przydatne w następujących przypadkach:
 
 **Dowiedz się, jak utworzyć dodatkowy dysk i skonfigurować go na Twojej instancji.**
 
-## Wymagania początkowe
+## Wymagania początkowe początkowe
 
 - Dostęp do [Panelu client OVHcloud](/links/manager)
 - Posiadanie instancji [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na koncie OVHcloud
@@ -46,7 +46,7 @@ Może to być przydatne w następujących przypadkach:
 
 ### Rodzaje wolumenów
 
-OVHcloud oferuje trzy rodzaje wolumenów Block Storage, z których każdy jest dostosowany do specyficznych potrzeb w zakresie wydajności, pojemności i kosztów. Rozwiązania te pozwalają na przypisanie trwałych wolumenów przestrzeni dyskowej do Twoich instancji i gwarantują wysoki poziom niezawodności i dostępności.
+OVHcloud oferuje trzy rodzaje wolumenów Block Storage, z których każdy jest dostosowany do specyficznych potrzeb w zakresie wydajności, pojemności i kosztów. Rozwiązania te pozwalają na przypisanie trwałych wolumenów przestrzeni dyskowej do Twoich instancji i gwarantują wysoki poziom niezawodności i dostępności. Jeśli ta funkcja jest dostępna, szyfrowanie można włączyć podczas tworzenia woluminu dla wszystkich typów woluminów z wyjątkiem woluminów typu Classic z wieloma atakami w regionach 3AZ.
 
 /// details | **Classic - 500 IOPS gwarantowanych**
 
@@ -56,7 +56,7 @@ Wolumen Classic to niezawodne i ekonomiczne rozwiązanie do przechowywania danyc
 - Małe i średnie przechowywanie baz danych
 - Archiwizacja i kopie zapasowe danych
 
-W 3AZ regions, Classic Volumes are regional services that use distributed erasure coding across multiple Availability Zones. Dzięki tym środkom dane mogą zostać wykorzystane dopiero po wpłynięciu lub wycofaniu się z kolejnego zdarzenia, a ponadto można provided the multi-attached resilient architecture conditions are met. For more information, please refer to our guide "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
+W regionach 3AZ woluminy Classic są usługami regionalnymi, które korzystają z Erasure Coding rozproszonego między kilkoma strefami dostępności. Dzięki temu zyskujesz gwarancję dostępności danych bez wpływu na strefę i bez przerw w jej działaniu, pod warunkiem, że spełnione są wymagania odpornej architektury z możliwością wielokrotnego przyłączenia. Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Prawidłowe użycie i ograniczenia pamięci masowej Classic Multi-Attach w regionach 3AZ](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 
@@ -80,19 +80,24 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 
 ///
 
-![Typy_wolumenow](images/volume-types.png){.thumbnail}
+![volume_types](images/volume-types.png){.thumbnail}
+
+> [!primary]
+>
+> Każdy typ woluminu jest również dostępny w wersji zaszyfrowanej (**LUKS**). Wolumeny te zapewniają poufność danych bez wpływu na wydajność. Są one dostępne w Panelu klienta OVHcloud, jak również z narzędziami przedstawionymi w następnej sekcji, wskazując typ:`<volume_type>-luks`.
+>
 
 ### Przypisz nowy wolumen
 
 > [!tabs]
 > **W Panelu klienta OVHcloud**
->> Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage i Backup**.
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie, pod **Storage & backup**.
 >>
 >> W tej części kliknij przycisk `Utwórz wolumen`{.action}.
 >>
->> ![Wybierz projekt](images/avolume01.png){.thumbnail}
+>> ![wybierz projekt](images/avolume01.png){.thumbnail}
 >>
->> Postępuj zgodnie z kolejnymi instrukcjami, aby wybrać opcje lokalizacji, typu dysku i pojemności dysku. Wpisz nazwę wolumenu i zatwierdź, klikając `Utwórz wolumen`{.action}.
+>> Postępuj zgodnie z kolejnymi instrukcjami, aby wybrać lokalizację, typ dysku, szyfrowanie i pojemność dysku. Wprowadź nazwę wolumenu i zatwierdź, klikając `Utwórz wolumen`{.action}.
 >>
 >> > [!warning]
 >> >
@@ -101,40 +106,63 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
 >>
->> Nowy dysk zostanie wyświetlony w Panelu klienta.
+>> Nowy dysk pojawi się wówczas w panelu klienta.
 >>
->> ![konfiguracja disk](images/avolume03.png){.thumbnail}
+>> ![konfiguruj dysk](images/avolume03.png){.thumbnail}
 >>
->> Po prawej stronie wolumenu kliknij przycisk `...`{.action}, a następnie wybierz `Przypisz do instancji`{.action}.
+>> Po prawej stronie wolumenu kliknij przycisk`...`{.action} i wybierz `Przypisz do instancji`{.action}.
 >>
 >> ![attach disk 01](images/avolume04.png){.thumbnail}
 >>
->> W oknie, które się wyświetli wybierz instancję z listy i kliknij `Zatwierdź`{.action}, aby podłączyć dysk.
+>> W oknie, które się pojawi, wybierz instancję z listy i kliknij na `Potwierdź`{.action}, aby przyłączyć dysk.
 >>
 >> ![attach disk 02](images/avolume05.png){.thumbnail}
 >>
->> Rozpocznie się proces łączenia dysku z Twoją instancją. Operacja może zająć kilka minut.
+>> Rozpocznie się proces przyłączania dysku do instancji. Może to potrwać kilka minut.
 >>
 >> > [!warning]
->> >
->> > Pamiętaj, aby podczas logowania dysk nie opuszczał aktualnej strony w Panelu klienta OVHcloud. Może to zakłócić proces.
+>> > Nie opuszczaj bieżącej strony w Panelu klienta OVHcloud, gdy dysk jest podłączony. Mogłoby to spowodować przerwanie procesu.
 >> >
 >>
 > **Via Terraform**
+>> > [!warning]
+>> >
+>> Należy pamiętać, że typy woluminów "high-speed-gen2" i "luks" mogą nie być dostępne we wszystkich regionach.
+>> >
+>>
+>> Typy woluminów:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> Typy kończące się na -luks są zaszyfrowane (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Utwórz wolumin **-luks** automatycznie generuje dedykowany klucz.
+>> >
+>> > Nie modyfikuj ani nie usuwaj tego klucza, jeśli jest on związany z wolumenem Block Storage. Dzięki temu dane znajdujące się na tym woluminie oraz wszystkie migawki będą definitywnie nieodwracalne.
+>> >
+>>
 >> Aby utworzyć prosty wolumen Block Storage, potrzebujesz 3 elementów:
 >>
->> * Nazwa wolumenu
->> * Region
->> * Rozmiar wolumenu w GB
+>> - Nazwa wolumenu
+>> - Region
+>> - Rozmiar wolumenu w GB
 >>
->> W naszym przykładzie utworzymy block storage w regionie **** o rozmiarze **10 GB**. Dodaj następujące linie w pliku o nazwie *simple_blockstorage.tf*:
+>> W naszym przykładzie utworzymy block storage w regionie **GRA11** o rozmiarze **10 GB**. Dodaj następujące linie w pliku o nazwie *simple_blockstorage.tf*:
 >>
 >> ```python
->> # worzenie wolumenu block storage
+>> # Creation of a block storage volume
 >> resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
->>   name   = "terraform_blockstorage" # Nazwa wolumenu block storage
->>   size   = 10                       # Rozmiar wolumenu
->>   region = "GRA11"                  # Region lub wolumen musi zostać utworzony
+>>   name   = "terraform_blockstorage" # Name of the block storage volume
+>>   size   = 10                       # Volume size
+>>   region = "GRA11"                  # Region where the volume must be created
+>>   volume_type = "volume_type"       # classic, high-speed, high-speed-gen2 or equivalent `-luks`
 >> }
 >> ```
 >>
@@ -147,9 +175,9 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >> Dodaj następujące wiersze poniżej poprzednich:
 >>
 >> ```python
->> # Przypisz wolumen do instancji
+>> # Attach the volume to the instance
 >> resource "openstack_compute_volume_attach_v2" "volume_attach" {
->>   instance_id = "<twoje_instance_id>"
+>>   instance_id = "<your_instance_id>"
 >>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
 >> }
 >> ```
@@ -178,7 +206,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >>       + name              = "terraform_blockstorage"
 >>       + region            = "GRA11"
 >>       + size              = 10
->>       + volume_type       = (known after apply)
+>>       + volume_type       = "high-speed-gen2"
 >>     }
 >>
 >>   # openstack_compute_volume_attach_v2.volume_attach will be created
@@ -207,6 +235,81 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >>
 >> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 >> ```
+>>
+> **W interfejsie Horizon**
+>> Przejdź do sekcji rozwijanej `Volumes`{.action}, kliknij `Volumes`{.action}, a następnie `Create Volume`{.action}.
+>>
+>> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
+>>
+>> Wpisz pole `Volume Name`{.action} i wybierz rodzaj wolumenu, który chcesz wybrać. Następnie kliknij `Create Volume`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Pamiętaj, że jeśli typ woluminu "high-speed-gen2" lub "luks" nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
+>> >
+>>
+>> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
+>>
+>> Aby przypisać wolumen do instancji, w linii wolumenu kliknij strzałka znajdująca się na końcu linii obok `Edit Volume`. Następnie kliknij `Manage Attachments`{.action}
+>>
+>> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
+>>
+>> Wybierz instancję, do której chcesz przypisać wolumen, następnie kliknij `Attach Volume`{.action}.
+>>
+>> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
+>>
+> **Za pośrednictwem CLI OpenStack**
+>> > [!warning]
+>> >
+>> > Pamiętaj, że jeśli typ woluminu "high-speed-gen2" lub "luks" nie pojawia się na liście, oznacza to, że nie jest dostępny w tym regionie.
+>> >
+>>
+>> Typy woluminów:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> Typy kończące się na -luks są zaszyfrowane (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Utwórz wolumin **-luks** automatycznie generuje dedykowany klucz.
+>> >
+>> > Nie modyfikuj ani nie usuwaj tego klucza, jeśli jest on związany z wolumenem Block Storage. Dzięki temu dane znajdujące się na tym woluminie oraz wszystkie migawki będą definitywnie nieodwracalne.
+>> >
+>>
+>> Wyświetl dostępne typy woluminów w regionie:
+>>
+>> ```bash
+>> openstack volume type list
+>> ```
+>>
+>> Utwórz wolumen, określając przynajmniej jego rozmiar (w GB) oraz jego typ spośród wcześniej wymienionych. Możesz również wskazać nazwę wolumenu na końcu zamówienia.
+>>
+>> ```bash
+>> openstack volume create --size 1 --type high-speed-gen2 volumeName # classic, high-speed, high-speed-gen2 or equivalent `-luks`
+>> ```
+>>
+>> Aby przypisać wolumen do instancji dostępnej w regionie, użyj następującego polecenia:
+>>
+>> ```bash
+>> openstack server add volume <server-id|server-name> <volume-id|volume-name>
+>>
+>> +-----------+-------------------------------------+
+>> | Field | Value |
+>> +-----------+-------------------------------------+
+>> | ID | 7d3d670f- ****-****-****-60dd1e6**** |
+>> | Server ID | 74317f97-****-****-80cf2d4**** |
+>> | Volume ID | 7d3d670f-****-****-****-60dd1e6**** |
+>> | Device | /dev/sdb |
+>> | Tag | None |
+>> +-----------+-------------------------------------+
+>> ```
+>>
 
 
 ### Konfiguracja nowego dysku

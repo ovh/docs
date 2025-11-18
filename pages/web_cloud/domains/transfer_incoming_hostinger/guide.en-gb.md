@@ -75,7 +75,7 @@ To transfer a Hostinger domain name, you will need to follow a specific procedur
 
 For domain names registered with Hostinger, you can manage the locked status of your domain name by opening the `Domains`{.action} section and selecting the domain name to transfer.
 
-Follow the steps described in the [Hostinger dedicated documentation](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger){.external}.
+Follow the steps described in the [Hostinger dedicated documentation](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger).
 
 ### Get the EPP or Auth code
 
@@ -89,7 +89,7 @@ To familiarize yourself with changing the owner of a domain name, please read th
 > We invite you to check with Hostinger the appropriate steps to transfer your domain name.
 > 
 
-To get a **EPP** or **Auth** code from Hostinger, follow the steps described in the [Hostinger dedicated documentation](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+To get a **EPP** or **Auth** code from Hostinger, follow the steps described in the [Hostinger dedicated documentation](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger).
 
 ### Initiate domain transfer to OVHcloud
 

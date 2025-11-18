@@ -171,7 +171,7 @@ O livro razão é fornecido exclusivamente pelo serviço de contabilidade do req
 
 No entanto, a OVHcloud dá-lhe acesso ao conjunto das suas faturas através de um ficheiro Excel (.csv).
 
-Para o descarregar, aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, em seguida, clique em `As minhas faturas`{.action}. A seguir, clique no botão `Ações`{.action} e selecione a opção `{.action}Exportar em CSV`{.action}.
+Para o descarregar, aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, em seguida, clique em `As minhas faturas`{.action}. A seguir, clique no botão `Ações`{.action} e selecione a opção `Exportar em CSV`{.action}.
 
 ## Quer saber mais?
  

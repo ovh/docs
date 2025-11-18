@@ -12,7 +12,7 @@ VMware Tools improve the performance of a virtual machine and enable many of its
 
 ## Requirements
 
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
 
 ## Instructions
 

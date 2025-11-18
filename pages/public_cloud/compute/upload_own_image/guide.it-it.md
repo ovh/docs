@@ -29,10 +29,10 @@ Ti consigliamo di utilizzare immagini Cloud compatibili fornite dal distributore
 
 Le immagini Cloud compatibili sono disponibili qui:
 
-- <https://cloud.centos.org/centos/>{.external}
-- <https://cloud.debian.org/images/cloud/>{.external}
-- <https://cloud-images.ubuntu.com/releases/>{.external}
-- <https://alt.fedoraproject.org/cloud/>{.external}
+- <https://cloud.centos.org/centos/>
+- <https://cloud.debian.org/images/cloud/>
+- <https://cloud-images.ubuntu.com/releases/>
+- <https://alt.fedoraproject.org/cloud/>
 
 Altri sistemi operativi offrono anche immagini ISO applicabili anche durante la [creazione di immagini con Packer](https://www.packer.io/docs/builders) come QEMU e VirtualBox.
 

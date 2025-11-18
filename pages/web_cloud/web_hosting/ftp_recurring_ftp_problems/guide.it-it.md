@@ -1,7 +1,7 @@
 ---
 title: "Risolvere gli errori ricorrenti nell'utilizzo di un software FTP"
 excerpt: "Ritrova qui le anomalie più frequenti associate al tuo software FTP"
-updated: 2025-05-23
+updated: 2025-10-20
 ---
 
 ## Obiettivo
@@ -59,11 +59,28 @@ Se non riesci ad autenticarti, modifica la password FTP seguendo le indicazioni 
 
 La mancanza di spazio sul tuo hosting condiviso può causare problemi al tuo sito quando provi a modificarlo o ad aggiornarlo.
 
-Per verificare lo spazio di storage rimasto sul tuo hosting, accedi allo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Web Cloud`{.action} e poi su `Hosting`{.action}. Seleziona l'hosting interessato.
+Per verificare lo spazio di storage rimasto sul tuo hosting, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-La quantità di dati registrata sul tuo server di hosting (database esclusi) compare nella sezione `Informazioni generali`{.action} > `Spazio disco`.
-
-![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nel riquadro **Informazioni generali**, trovi la dicitura **Spazio disco**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> Lo spazio di storage utilizzato compare sotto questa voce.
 
 ### Non riesco a trasferire i miei file verso il server FTP.
 

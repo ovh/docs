@@ -4,7 +4,7 @@ excerpt: 'Requirements and limits to respect'
 updated: 2024-11-12
 ---
 
-## Vrack and Public Cloud projects
+## vRack and Public Cloud projects
 
 For a given Public Cloud project, you can attach only one vRack. If you wish to build private connectivity between 2 (or more) Public Cloud projects, you should attach the same vRack to those Public Cloud projects.
 

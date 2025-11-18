@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Installa un certificato SSL personalizzato"
 excerpt: "Scopri come importare e installare un certificato SSL personalizzato sul tuo hosting Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Obiettivo
@@ -51,7 +51,7 @@ Sostituire `my_private` e `your_file_name` con i nomi di file desiderati.
 
 Una volta avviato l'ordine, il terminale ti chiederà ognuna delle seguenti informazioni (per te, la tua azienda o la tua associazione). Una volta ricevuta la risposta alla domanda, clicca su `INVIO`{.action} sulla tastiera per visualizzare la seguente domanda:
 
-- `Country Name (2 letter code) [AU]`: inserisci in maiuscolo il **Country Code** del tuo paese. Se necessario, visualizza la lista di tutti i **Country Codes** [qui](https://www.iban.com/country-codes){.external}.
+- `Country Name (2 letter code) [AU]`: inserisci in maiuscolo il **Country Code** del tuo paese. Se necessario, visualizza la lista di tutti i **Country Codes** [qui](https://www.iban.com/country-codes).
 - `State or Province Name (full name) [Some-State]`: immettere il nome della propria regione (o Stato, ad esempio, se ci si trova negli Stati Uniti) in maiuscolo.
 - `Locality Name (eg, city) []`: inserire il nome della città in maiuscolo.
 - `Organization Name (eg, company) [Internet Widgits Pty Ltd]`: inserisci il nome della tua organizzazione, società o associazione. **Se sei un privato, non rispondere a questa domanda e clicca direttamente su `INVIO`{.action} sulla tastiera per visualizzare la domanda successiva**.
@@ -148,8 +148,20 @@ Se in questo step inizi direttamente la lettura di questa guida perché disponi 
 
 **Prima di completare l'installazione del certificato SSL sul tuo hosting Web**, verifica che **l'insieme dei domini e/o sottodomini** interessati dal tuo certificato SSL:
 
-- puntino verso l’indirizzo IP del tuo hosting Web;
-- sono dichiarati in multisito sul tuo hosting Web;
+- puntino verso l’indirizzo IP del tuo hosting Web.
+- sono dichiarati in multisito sul tuo hosting Web.
+
+> [!primary]
+>
+> **Informazioni sulla migrazione alla nuova interfaccia di gestione dei certificati SSL:**
+>
+> La continuazione di questa guida è rivolta ai clienti i cui servizi di hosting Web non sono ancora stati migrati verso la nuova interfaccia di gestione dei certificati SSL.
+> Per sapere se la migrazione è stata effettuata, accedi al tuo hosting Web dallo Spazio Cliente OVHcloud e verifica la presenza della scheda `Certificati SSL`.
+> Se la scheda `Certificati SSL` è presente, il servizio è già migrato sulla nuova interfaccia di gestione. In questo caso, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/ssl_management) per gestire il tuo certificato SSL.
+>
+> Per motivi tecnici, non tutti i servizi di hosting Web dei nostri clienti possono essere migrati in una sola volta. Il trasferimento viene quindi effettuato in poche settimane e automaticamente, senza alcuna conseguenza sul funzionamento dei servizi di hosting Web e senza alcun intervento o azione da parte tua.
+>
+> Tutti i servizi di hosting Web funzioneranno col nuovo sistema di gestione dei certificati SSL.
 
 Verificare inoltre quanto segue:
 
@@ -163,7 +175,7 @@ Una volta rispettati tutti questi prerequisiti, puoi iniziare a finalizzare l’
 Per effettuare questa operazione, esegui le operazioni seguenti:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
@@ -204,7 +216,7 @@ L'installazione richiede alcuni minuti.
 Per verificare che l'installazione sia stata completata, eseguire le operazioni seguenti:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
@@ -224,7 +236,7 @@ A questo punto il tuo certificato SSL personalizzato è installato ed è attivo.
 
 [Errori comuni associati alla protezione del sito Web con il certificato SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  

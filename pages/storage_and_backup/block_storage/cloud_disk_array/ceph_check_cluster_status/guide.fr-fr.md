@@ -5,7 +5,7 @@ updated: 2020-12-22
 ---
 
 ## Using web interface
-First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster. You will see two differents parts: **cluster details** and **cluster health**.
+First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html). Under 'Platforms and services' select your Ceph cluster. You will see two differents parts: **cluster details** and **cluster health**.
 
 ### Cluster details
 
@@ -27,7 +27,7 @@ Additional explanations:
 >>
 > **Version**
 >>
->> We currently deliver clusters up to version 9.2.1 ([official Ceph releases](https://docs.ceph.com/en/latest/releases/general/){.external})
+>> We currently deliver clusters up to version 9.2.1 ([official Ceph releases](https://docs.ceph.com/en/latest/releases/general/))
 >>
 >>
 > **Tunable**

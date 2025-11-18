@@ -16,7 +16,7 @@ In alcuni casi, potrebbe essere necessario l'intervento di un amministratore OVH
 
 ## Prerequisiti
 
-- Avere [accesso in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external} (sudo)
+- Avere [accesso in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) (sudo)
 
 ## Procedura
 
@@ -115,6 +115,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Per saperne di più
 
-[Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external}
+[Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

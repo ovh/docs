@@ -35,7 +35,7 @@ Nel nostro esempio, il file test.txt sarà eliminato dopo 1 ora.
 ### In una data specifica
 
 Innanzitutto, è necessario conoscere la data di eliminazione in formato epoch.
-Per trovare più facilmente il valore da inserire, utilizza un [convertitore](http://www.epochconverter.com/){.external}.
+Per trovare più facilmente il valore da inserire, utilizza un [convertitore](http://www.epochconverter.com/).
 
 Una volta eseguita questa operazione, inserisci la data nell'header `X-Delete-At`:
 

@@ -43,11 +43,11 @@ When using a Wix hosting plan with an OVHcloud domain name, you must first prepa
 > Before you continue:
 >
 > - Open a tab in your web browser.
-> - Open [**this page of the Wix documentation**](https://support.wix.com/en/article/connect-a-domain-%C3%A0-wix-par-pointage-5727882){.external}.
+> - Open [**this page of the Wix documentation**](https://support.wix.com/en/article/connect-a-domain-%C3%A0-wix-par-pointage-5727882).
 > - Go to the "**Step 2 section | Update the DNS records in your domain hosting provider’s account**" in the Wix documentation.<br>
 > The following instructions will help you configure your OVHcloud DNS zone more easily.
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 The table lists all of the DNS records for the selected domain name.
 

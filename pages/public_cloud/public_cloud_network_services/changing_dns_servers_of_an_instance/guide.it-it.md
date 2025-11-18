@@ -23,7 +23,7 @@ Di default, il server DNS configurato sulle istanze Public Cloud è quello di OV
 
 ## Prerequisiti
 
-- Disporre di un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel proprio account OVHcloud
+- Disporre di un'[istanza Public Cloud](/links/public-cloud/public-cloud) nel proprio account OVHcloud
 - Avere accesso amministratore all'istanza via SSH o RDP
 - Conoscenze di base in rete e amministrazione
 

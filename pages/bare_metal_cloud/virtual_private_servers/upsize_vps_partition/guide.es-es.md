@@ -1,7 +1,7 @@
 ---
 title: Reparticionar un VPS tras un upgrade de almacenamiento
 excerpt: "Cómo aumentar el espacio en disco útil después de una actualización"
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 ## Objetivo
@@ -52,7 +52,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` está vacía en la fila correspondiente, puede pasar al [paso siguiente](#checkfs).
+Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` está vacía en la fila correspondiente, puede pasar al [paso siguiente](#filesystemcheck).
 
 Sin embargo, si el resultado muestra que existe un punto de montaje para la partición VPS, primero deberá desmontarla.
 
@@ -77,7 +77,7 @@ En este ejemplo de configuración, el comando sería:
 umount /dev/sdb1
 ```
 
-#### Comprobar sistema de archivos <a name="checkfs"></a>
+#### Comprobar sistema de archivos <a name="filesystemcheck"></a>
 
 Antes de continuar, se recomienda comprobar el sistema de archivos (`filesystem check`) para detectar errores en la partición. Utilice el siguiente comando:
 
@@ -97,7 +97,7 @@ Pass 5: Checking group summary information
 
 Si encuentra un error, deberá adoptar las medidas adecuadas en cada caso. Estos son algunos de los errores más frecuentes:
 
-- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
+- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#como-solucionar-los-errores-bad-magic-number-in-superblock) de esta guía.
 
 - **/dev/vdb1 has unsupported feature(s): metadata_csum**, seguido de **e2fsck: Get a newer version of e2fsck!**: Actualice **e2fsck**. Si la última versión no está disponible a través de **apt** o cualquier otro gestor de paquetes, deberá compilarla a partir del código fuente.
 
@@ -163,7 +163,19 @@ First sector (2048-41943039, default 2048): 2048
 Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 41943039
 ```
 
-En la línea «First sector», asegúrese de que el valor por defecto coincide con el que ha anotado anteriormente. Si es diferente, utilice el valor anotado.
+En la línea `First sector`, asegúrese de que el valor por defecto coincide con el que ha anotado anteriormente. Si es diferente, utilice el valor anotado.
+
+Si aparece el siguiente mensaje:
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Introduzca `n` y continúe.
+
+Responder `y` significaría sobrescribir el sistema de archivos ext4 existente en la Partition 1 y aceptar destruir los datos que contiene.
 
 ### Hacer que la partición sea de arranque
 
@@ -278,4 +290,4 @@ Escriba el tamaño deseado y haga clic en `Aceptar`{.action}. El volumen se ampl
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

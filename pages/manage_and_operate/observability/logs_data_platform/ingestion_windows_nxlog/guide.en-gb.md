@@ -5,18 +5,18 @@ updated: 2023-01-16
 
 ## Objective
 
-At OVHcloud, we love Microsoft products too. So it is important for us to provide you a way to send your Windows Logs to Logs Data Platform. All you need is 15 minutes and one software: [NXLog](http://nxlog.co){.external}. NXLog is one of the leaders of the log management tools. Its configuration is fairly simple and can get you started in a few minutes.
+At OVHcloud, we love Microsoft products too. So it is important for us to provide you a way to send your Windows Logs to Logs Data Platform. All you need is 15 minutes and one software: [NXLog](http://nxlog.co). NXLog is one of the leaders of the log management tools. Its configuration is fairly simple and can get you started in a few minutes.
 
 ## Requirements
 
 For this tutorial you will need to have completed the following steps :
 
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ## NXLog
 
-You can find NXLog at its official website [nxlog.co](http://nxlog.co){.external}. Please go to the official website and download the latest version for Windows (2.10.2150 at the time of writing). Be sure to have Administrator rights before proceeding. Once you have it, install it on your system. By default, the program will install itself in **C:\\Program Files\\nxlog\\**. Navigate to this folder to edit the configuration file **nxlog.conf** present in the folder **conf**.
+You can find NXLog at its official website [nxlog.co](http://nxlog.co). Please go to the official website and download the latest version for Windows (2.10.2150 at the time of writing). Be sure to have Administrator rights before proceeding. Once you have it, install it on your system. By default, the program will install itself in **C:\\Program Files\\nxlog\\**. Navigate to this folder to edit the configuration file **nxlog.conf** present in the folder **conf**.
 
 ## Configuration
 
@@ -108,11 +108,11 @@ Jump to Graylog (use the Graylog access button in the Manager) and to the stream
 
 I think that's pretty much it. I know, it didn't even take 10 minutes :-).
 
-If you want to go further, don't hesitate to try the [NXlog documentation](https://docs.nxlog.co/userguide/documentation.html){.external}
+If you want to go further, don't hesitate to try the [NXlog documentation](https://docs.nxlog.co/userguide/documentation.html)
 
 ## Getting Help
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

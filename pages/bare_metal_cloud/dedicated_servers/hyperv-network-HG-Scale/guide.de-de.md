@@ -255,7 +255,7 @@ network:
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account.
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
 - Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
-- Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
+- Sie haben ein [vRack](/links/network/vrack) in Ihrem Kunden-Account eingerichtet.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 #### Erläuterungen

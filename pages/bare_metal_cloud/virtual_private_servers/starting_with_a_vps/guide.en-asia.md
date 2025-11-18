@@ -1,7 +1,7 @@
 ---
 title: How to get started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2024-11-22
+updated: 2025-09-11
 ---
 
 ## Objective
@@ -14,6 +14,11 @@ A **V**irtual **P**rivate **S**erver is a virtualized dedicated server that give
 
 - An active [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
+
+> [!warning]
+> Not all VPS features mentioned on this page are available in OVHcloud Local Zones.
+>
+> Please visit our [Local Zones web page](/links/bare-metal/vps-lz) for more information.
 
 ## Instructions
 
@@ -110,7 +115,7 @@ Click the tabs below to view details for this section.
 
 #### Backup
 
-These options refer to additional VPS services which can be ordered in the Control Panel.
+These options refer to additional VPS services for backups and restoration of your system.
 
 > [!tabs]
 > Snapshot
@@ -119,11 +124,13 @@ These options refer to additional VPS services which can be ordered in the Contr
 >>
 > Automated backup
 >>
->> The `Automated backup` option allows you to schedule regular backups of your VPS (excluding additional disks). Compared to manual snapshots, this feature increases data security by retaining several restore points at regular intervals.
+>> A daily backup of the system (excluding additional disks) is created automatically and retained for 24 hours (only applicable to services ordered from 7 AUG, 2025). By upgrading to the **Automatic Backup Premium** option, you will have the last 7 daily backups of your VPS available to mount and restore.  
+>> Compared to manual snapshots, this feature increases data security by creating several restore points at regular intervals.
+>>
 
-You can find all information on the available backup solutions for your service on the [VPS product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers-backups).
+You can find all information on the available backup solutions for your service on the [VPS product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
-#### Subscription
+#### My offer
 
 These sections show the most important information regarding the billing of your service. Please find all the information about this topic in the [corresponding documentation](/products/account-and-service-management-managing-billing-payments-and-services).
 
@@ -183,7 +190,7 @@ A reboot might become necessary in order to apply updated configurations or to f
 sudo reboot
 ```
 
-However, you can force a reboot at any time in your [OVHcloud Control Panel](/links/manager). In the `Home`{.action} tab, click the `...`{.action} button next to `Boot` in the **Your VPS** section. Select `Reboot my VPS`{.action} and click `Confirm`{.action} in the window that pops up.
+However, you can force a "hard reboot" at any time in your [OVHcloud Control Panel](/links/manager). In the `Home`{.action} tab, click the `...`{.action} button next to `Boot` in the **Your VPS** section. Select `Reboot my VPS`{.action} and click `Confirm`{.action} in the window that pops up.
 
 ![Reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reboot.png){.thumbnail}
 
@@ -255,6 +262,8 @@ Unless stated otherwise, all administrative actions described in our documentati
 >
 Please note that if you have selected a **distribution with application** (Plesk, cPanel, Docker), generic security measures might not apply to your system. We recommend to refer to our documentation regarding the [first steps with preinstalled applications](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) and [how to deploy cPanel on a VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), as well as the official documentation of the respective publisher.
 >
+
+If you have lost your user or root password, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password) to find out how to reset it.
 
 <a name="winconnect"></a>
 
@@ -370,5 +379,7 @@ You can install this SSL certificate manually, directly on the VPS. Please refer
 [Introduction to SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[How to recover server access if your user password is lost](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Join our [community of users](/links/community).

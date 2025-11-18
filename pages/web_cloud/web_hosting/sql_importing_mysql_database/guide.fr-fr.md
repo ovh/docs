@@ -1,7 +1,7 @@
 ---
 title: "Importer une sauvegarde dans la base de données d'un hébergement web"
 excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVHcloud'
-updated: 2023-12-11
+updated: 2025-10-08
 ---
 
 ## Objectif
@@ -12,24 +12,24 @@ Aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de conten
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVHcloud](/links/web/hosting){.external}.
-- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
+- Disposer d'une offre d’[hébergement web OVHcloud](/links/web/hosting).
+- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Être en possession de la sauvegarde que vous souhaitez importer dans votre base de données ou être en mesure de pouvoir la récupérer.
-- Selon la méthode d'importation utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](/links/manager){.external} ou des informations permettant de vous connecter à la base de données.
+- Selon la méthode d'importation utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](/links/manager) ou des informations permettant de vous connecter à la base de données.
 
 ## En pratique
 
 Avant de débuter, vous devez définir la méthode que vous allez utiliser pour importer la sauvegarde dans la base de données concernée. Plusieurs possibilités s’offrent à vous suivant les compétences techniques dont vous disposez sur le sujet.
 
-- **Restaurer en quelques clics votre base de données à une date antérieure** : cette solution permet de restaurer le contenu de vos bases de données grâce aux sauvegardes présentes dans l'outil de sauvegarde d'OVHcloud. Cette solution ne demande pas de compétences techniques particulières et est exécutable depuis l'[espace client OVHcloud](/links/manager){.external}.
+- **Restaurer en quelques clics votre base de données à une date antérieure** : cette solution permet de restaurer le contenu de vos bases de données grâce aux sauvegardes présentes dans l'outil de sauvegarde d'OVHcloud. Cette solution ne demande pas de compétences techniques particulières et est exécutable depuis l'[espace client OVHcloud](/links/manager).
 
-- **Importer en quelques clics votre propre fichier de sauvegarde** : cette solution permet d'importer les données de votre propre fichier de sauvegarde, préalablement en votre possession, dans l'une de vos bases de données. Cette solution se réalise depuis l'[espace client OVHcloud](/links/manager){.external}.
+- **Importer en quelques clics votre propre fichier de sauvegarde** : cette solution permet d'importer les données de votre propre fichier de sauvegarde, préalablement en votre possession, dans l'une de vos bases de données. Cette solution se réalise depuis l'[espace client OVHcloud](/links/manager).
 
 - **Effectuer l'import depuis l'interface web phpMyAdmin** : cette solution nécessite de vous connecter à l'interface phpMyAdmin pour y réaliser la manipulation. Des connaissances sur cette dernière sont donc nécessaires afin de pouvoir l'utiliser et une limite de taille sur le fichier de sauvegarde est imposée.
 
 - **Réaliser l'import en utilisant un script** : cette solution nécessite de créer un script, hébergé sur votre hébergement web OVHcloud, afin de réaliser l'import. Des connaissances spécifiques pour créer ce script sont nécessaires.
 
-- **Réaliser l'import depuis une commande SSH** : cette solution nécessite de se connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](/links/web/hosting){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+- **Réaliser l'import depuis une commande SSH** : cette solution nécessite de se connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](/links/web/hosting) spécifique sont nécessaires pour utiliser ce type d’accès.
 
 Certaines des méthodes ci-dessus ne sont pas inhérentes à une interface OVHcloud. Vous devrez donc, pour ces dernières, accomplir la manipulation selon vos propres connaissances. Quelques informations sont cependant présentes ci-dessous, mais elles ne se substituent pas à l’aide d’un webmaster.
 
@@ -44,7 +44,9 @@ Poursuivez la lecture de cette documentation selon la méthode d'importation sou
 
 ### Restaurer une sauvegarde depuis l'espace client
 
-Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, cliquez sur les trois points à droite de la base de données que vous souhaitez restaurer à une date antérieure, puis sur `Restaurer une sauvegarde`{.action}. Sachez que cette action remplacera le contenu actuel de la base de données par celui de la sauvegarde.
 
@@ -58,7 +60,9 @@ Cliquez sur les trois points à droite de la sauvegarde que vous souhaitez resta
 
 ### Importer votre propre sauvegarde depuis l'espace client
 
-Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, cliquez sur les trois points à droite de la base de données dans laquelle vous souhaitez importer des données, puis sur `Importer un fichier`{.action}.
 
@@ -91,7 +95,9 @@ Une fois votre choix fait, cliquez sur le bouton `Valider`{.action} puis patient
 
 ### Réaliser l'import depuis l'interface web phpMyAdmin
 
-Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Cliquez dans ce dernier sur les trois points à droite de la base de données concernée, puis sur `Accéder à phpMyAdmin`{.action}.
 
@@ -135,7 +141,7 @@ Prenez soin de remplacer les informations génériques présentes dans ce script
 
 #### Étape 2 : télécharger le script et la sauvegarde sur l'espace de stockage
 
-Une fois le script d'import correctement créé, vous devez le télécharger ainsi que le fichier de sauvegarde que vous souhaitez importer sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage){.external} ».
+Une fois le script d'import correctement créé, vous devez le télécharger ainsi que le fichier de sauvegarde que vous souhaitez importer sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage) ».
 
 Afin de pouvoir mener à bien les étapes suivantes, téléchargez le script d'import et le fichier de sauvegarde dans le dossier « www ». **Nous vous invitons à être particulièrement attentif quant au nom du fichier du script d'import.** Assurez-vous de ne pas écraser un fichier déjà existant portant le même nom sur l'espace de stockage lorsque vous allez télécharger le script. Si un message d'avertissement de ce type apparaît, modifiez le nom du script nouvellement créé pour un autre, puis tentez de nouveau de le télécharger.
 

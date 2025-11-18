@@ -20,7 +20,7 @@ As implied in the title, you will need a stream. If you don't know what a stream
 
 On this page you will find the long-term storage toggle. Once enabled, you will be able to choose different options:
 
-- The compression algorithm. We currently support [GZIP](http://www.gzip.org/){.external}, [DEFLATE (AKA zip)](http://www.zlib.net/feldspar.html){.external}, [Zstandard](https://facebook.github.io/zstd/){.external} or [LZMA (used by 7-Zip)](http://www.7-zip.org/7z.html){.external}.
+- The compression algorithm. We currently support [GZIP](http://www.gzip.org/), [DEFLATE (AKA zip)](http://www.zlib.net/feldspar.html), [Zstandard](https://facebook.github.io/zstd/) or [LZMA (used by 7-Zip)](http://www.7-zip.org/7z.html).
 - The retention duration of your archives (from one year to ten years).
 - The content of your archives: GELF, one special field [X-OVH-TO-FREEZE](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention), or both (you will get two separate archives in this case)
 - The activation of the notification for each new archive available.
@@ -54,7 +54,7 @@ On each archive you can use the `Download`{.action} action to directly download 
 
 #### Using the API
 
-If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVHcloud API Console](https://api.ovh.com/){.external}.
+If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com). You can try all these steps with the [OVHcloud API Console](/links/api).
 
 You will need your OVHcloud service name associated with your account. Your service name is the login logs-xxxxx that is displayed in the left of the OVHcloud Manager.
 
@@ -122,11 +122,11 @@ It will take some time (depending on the size of your archive file) for your arc
 #### Using ldp-archive-mirror
 
 To allow you to get a local copy of all your cold stored archives on Logs Data Platform, we have developed an open source tool that will do this passively: **ldp-archive-mirror**
-The installation and configuration procedure is described on the related [github page](https://github.com/ovh/ldp-archive-mirror){.external}
+The installation and configuration procedure is described on the related [github page](https://github.com/ovh/ldp-archive-mirror)
 
 #### Content of the archive
 
-The data you retrieve in the archive is by default in [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. It is ordered by the field timestamp and retains all additional fields that you would have added (with your [Logstash collector](/pages/manage_and_operate/observability/logs_data_platform/ingestion_logstash_dedicated_input) for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
+The data you retrieve in the archive is by default in [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification). It is ordered by the field timestamp and retains all additional fields that you would have added (with your [Logstash collector](/pages/manage_and_operate/observability/logs_data_platform/ingestion_logstash_dedicated_input) for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
 
 ```json
  {"_facility":"gelf-rb","_id":11,"_monitoring":"cb1068c485e738655cfe10df5df3a9a185aa8e301b5c8d0747b3502e8fdcc157","_type":"direct","full_message":"monitoring message (11) at 2017-05-17 09:58:08 +0000","host":"shinken","level":1,"short_message":"monitoring msg (11)","timestamp":1.4950150886486998E9}
@@ -146,5 +146,5 @@ Remember, that you can also use a special field X-OVH-TO-FREEZE on your logs to 
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

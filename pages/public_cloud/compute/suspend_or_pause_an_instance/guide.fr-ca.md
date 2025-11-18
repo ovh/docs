@@ -1,6 +1,6 @@
 ---
 title: Suspendre ou mettre en pause une instance
-updated: 2025-05-26
+updated: 2025-10-30
 ---
 
 ## Objectif
@@ -25,7 +25,7 @@ Dans le cadre de la configuration d’une infrastructure hautement disponible, v
 >
 > Ce guide ne s'applique qu'aux instances avec une **facturation horaire**. Si vos instances sont ont une **facturation mensuelle**, la facturation classique continuera tout de même, quelque soit le statut du service.
 >
-> Ces manipulations entrainent toujours une facturation de l’instance tant que celle-ci n’est pas **supprimée**.
+> Ces manipulations entraînent toujours une **facturation de l’instance** tant que celle-ci n’est pas **supprimée**.
 >
 
 Le tableau ci-dessous vous permet de différencier les options disponibles sur vos instances. Poursuivez la lecture de ce guide en cliquant sur l'option de votre choix. Nous mettons entre parenthèses la terminologie utilisée dans l'interface de Horizon.
@@ -33,7 +33,7 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
 |Option|Description|Facturation|
 |---|---|---|
 |[Suspendre (*shelve*)](#shelve-instance)|Conservez votre IP ainsi que les ressources et les données de votre disque en créant un snapshot, toutes les autres ressources sont libérées.|Seul le snapshot est facturé.|
-|[Arrêter (*suspend*)](#stop-suspend-instance)|Stocke l’état de la VM sur le disque, les ressources dédiées à l’instance sont toujours réservées.|Vous serez toujours facturé au même prix pour votre instance.|
+|[Éteindre (*suspend*)](#stop-suspend-instance)|Stocke l’état de la VM sur le disque, les ressources dédiées à l’instance sont toujours réservées.|Vous serez toujours facturé au même prix pour votre instance.|
 |[Pause](#pause-instance)|Stocke l’état de la VM dans la mémoire RAM, une instance en pause reste « gelée ».|Vous serez toujours facturé au même prix pour votre instance.|
 
 ### Sommaire
@@ -42,12 +42,12 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
     - [Depuis l’espace client OVHcloud](#control-panel)
     - [Depuis l’interface Horizon](#horizon)
     - [Depuis les API Openstack/Nova](#openstack-nova)
--[Réactiver (*unshelve*) une instance](#unshelve-instance)
+- [Réactiver (*unshelve*) une instance](#unshelve-instance)
     - [Depuis l’espace client OVHcloud](#control-panel-unshelve)
     - [Depuis l’interface Horizon](#horizon-unshelve)
     - [Depuis les API Openstack/Nova](#openstack-nova-unshelve)
-- [Arrêter (suspend) une instance](#stop-suspend-instance)
-    - [Depuis l’espace client OVHcloudl](#stop-control-panel)
+- [Éteindre (suspend) une instance](#stop-suspend-instance)
+    - [Depuis l’espace client OVHcloud](#stop-control-panel)
     - [Depuis l’interface Horizon](#stop-horizon)
     - [Depuis les API Openstack/Nova](#stop-openstack-nova)
 - [Mettre en pause une instance](#pause-instance)
@@ -71,21 +71,25 @@ Cette option vous permettra de libérer les ressources dédiées à votre instan
 
 Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Instances`{.action} dans le menu de gauche.
 
-Cliquez sur le bouton `...`{.action} à droite de l’instance que vous souhaitez suspendre puis cliquez sur `Suspendre`{.action}.
+Cliquez sur le bouton `⋮`{.action} à droite de l’instance que vous souhaitez suspendre puis cliquez sur `Suspendre`{.action}.
 
-![suspension instance](images/suspend_an_instance.png){.thumbnail}
+![suspension instance](images/suspend_instance_2025.png){.thumbnail}
 
 Dans la fenêtre qui s’affiche, prenez connaissance des informations données et cliquez sur `Confirmer`{.action}.
 
-![confirmer la suspension](images/suspend_an_instance_2024.png){.thumbnail}
+![confirmer la suspension](images/confirm_suspension_2025.png){.thumbnail}
+
+Un message s'affiche pendant l'opération :
+
+![](images/suspension_message_2025.png){.thumbnail}
 
 Une fois la procédure terminée, votre instance aura le statut « Suspendue ».
 
-![statut suspendu](images/instance_suspended.png){.thumbnail}
+![statut suspendu](images/instance_suspended_2025.png){.thumbnail}
 
-Le snapshot sera ensuite disponible dans la rubrique `Instance Backup`{.action} de la section **Compute** du menu gauche de l'espace Public Cloud. Un snapshot nommé *xxxxx-shelved* est alors visible :
+Pour visualiser le snapshot, cliquez sur `Instance Backup`{.action} sous l'onglet **Compute** dans le menu de gauche. Un snapshot nommé *xxxxx-shelved* sera alors visible :
 
-![onglet snapshot](images/shelved_backup.png){.thumbnail}
+![onglet snapshot](images/shelved_backup_2025.png){.thumbnail}
 
 <a name="horizon"></a>
 
@@ -151,9 +155,9 @@ Cette option vous permettra de réactiver votre instance pour continuer à l’u
 
 Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique`Instances`{.action} dans le menu de gauche.
 
-Cliquez sur les `...`{.action} à droite de l’instance puis cliquez sur `Réactiver`{.action}.
+Cliquez sur les `⋮`{.action} à droite de l’instance puis cliquez sur `Réactiver`{.action}.
 
-![réactiver instance](images/reactivate_instancePanel.png){.thumbnail}
+![réactiver instance](images/reactivate_instance_2025.png){.thumbnail}
 
 Dans la fenêtre qui s’affiche, prenez connaissance des informations et cliquez sur `Confirmer`{.action}.
 
@@ -185,9 +189,9 @@ Une fois votre environnement prêt, saisissez la commande ci-dessous dans la lig
 
 <a name="stop-suspend-instance"></a>
 
-### Arrêter (suspend) une instance
+### Éteindre (suspend) une instance
 
-Cette option vous permettra d'arrêter votre instance. L’état de la VM est stocké sur le disque, tandis que la mémoire est écrite sur le disque.
+Cette option vous permettra d'éteindre votre instance. L’état de la VM est stocké sur le disque, tandis que la mémoire est écrite sur le disque.
 
 <a name="stop-control-panel"></a>
 
@@ -195,15 +199,17 @@ Cette option vous permettra d'arrêter votre instance. L’état de la VM est st
 
 Dans votre espace client OVHcloud, cliquez sur `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur `Instances`{.action} dans le menu de gauche.
 
-Cliquez sur le bouton `...`{.action} à droite de l’instance que vous souhaitez arrêter, puis cliquez sur `Arrêter`{.action}.
+Cliquez sur le bouton `⋮`{.action} à droite de l’instance que vous souhaitez arrêter, puis cliquez sur `Éteindre`{.action}.
 
-![stop instance](images/stopinstance.png){.thumbnail}
+![stop instance](images/turn_off_instance_2025.png){.thumbnail}
 
 Dans la fenêtre qui s’affiche, prenez connaissance des informations et cliquez sur `Confirmer`{.action}.
 
+![stop instance](images/confirm_turn_off.png){.thumbnail}
+
 Une fois le processus terminé, votre instance aura le statut « Éteinte ».
 
-Pour **redémarrer** l’instance, effectuez les même démarches que celles indiquées précédemment. Cliquez sur le bouton `...`{.action} à droite de l’instance et sélectionnez `Démarrer`{.action}. Dans certains cas, il peut être nécessaire de procéder à un redémarrage à froid.
+Pour **redémarrer** l’instance, effectuez les même démarches que celles indiquées précédemment. Cliquez sur le bouton `⋮`{.action} à droite de l’instance et sélectionnez `Démarrer`{.action}. Dans certains cas, il peut être nécessaire de procéder à un redémarrage à froid.
 
 <a name="stop-horizon"></a>
 
@@ -285,6 +291,6 @@ Pour **réactiver** l’instance, saisissez la commande ci-dessous dans la ligne
 
 ## Aller plus loin
 
-[Documentation OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
+[Documentation OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
 
 Échangez avec notre [communauté d’utilisateurs](/links/community).

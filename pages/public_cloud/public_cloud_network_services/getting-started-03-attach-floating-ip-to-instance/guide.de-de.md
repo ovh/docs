@@ -1,12 +1,26 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance (EN)
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2024-03-26
+updated: 2025-07-17
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
-Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com/de/public-cloud/), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
+Floating IPs are public IP addresses for [Public Cloud](/links/public-cloud/public-cloud), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
 
 **This guide explains how to attach Floating IP addresses to your instances.**
 
@@ -14,7 +28,7 @@ Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - Access to the [OVHcloud API](/links/api), the [OVHcloud Control Panel](/links/manager) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
-- The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
+- The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) tool installed on your working environment (optional)
 
 ## Understanding the Floating IP service
 
@@ -92,7 +106,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> Please note that the private network must be linked to a gateway. For more information, consult this guide: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> In the public cloud section, click on `Öffentliche IPs`{.action} in the left-hand menu under **Network**.
+>> In the public cloud section, click on `Public IPs`{.action} in the left-hand menu under **Network**.
 >>
 >> Click on `Floating IPs`{.action}, then on `Add a new IP`{.action}.
 >>
@@ -131,7 +145,7 @@ This feature is currently only available via the [OpenStack API](#detachip).
 
 #### Deleting a Floating IP
 
-In the public cloud section, click on `Öffentliche IPs`{.action} in the left-hand menu under **Network**.
+In the public cloud section, click on `Public IPs`{.action} in the left-hand menu under **Network**.
 
 In the `Floating IP`{.action} tab, click on the `...`{.action} next to the corresponding IP and select `Delete`{.action}.
 
@@ -352,7 +366,7 @@ $ openstack floating ip set --dns-domain <DOMAIN_NAME> <IP_ADDRESS_ID>
 
 #### Detaching a Floating IP <a name="detachip"></a>
 
-You can detach a Floating ip from your VM at anytime.
+You can detach a Floating IP from your VM at anytime.
 
 ```bash
 $ openstack server remove floating ip vm4fip 169.254.10.25
@@ -382,6 +396,66 @@ To delete a Floating IP, you must do it explicitly:
 $ openstack floating ip delete 169.254.10.25
 $ openstack floating ip list
 ```
+
+///
+
+#### Via the Horizon interface
+
+/// details | Unfold this section
+
+The following steps describe how to attach a Floating IP to an existing instance.
+
+> [!primary]
+> Before you proceed, make sure your instance is linked to a private network **only** and that the private network is linked to a Gateway.
+>
+
+> [!tabs]
+>> 
+>> Log into the Horizon interface, and ensure that you are in the correct region. You can verify this on the top left corner.
+>>
+>> ![Region selection](images/region2021.png){.thumbnail}
+>>
+>> In the left-hand menu, click on `Network`{.action} then on `Floating IPs`{.action}.
+>>
+>> ![network](images/network_floating_ip.png){.thumbnail}
+>>
+>> Click on `Associate`{.action} next to the corresponding instance.
+>>
+>> ![associate](images/associate_floating_ip.png){.thumbnail}
+>> 
+>> A pop-up window will appear. Click on the drop-down arrow underneath `Port to be assiociated` and select the "port" or "instance" to attach the Floating IP to.
+>>
+>> ![associate](images/select_port.png){.thumbnail}
+>>
+>> Next, click on `Associate`{.action}.
+>>
+>> Once done, the Floating IP will be associated to the instance.
+>>
+>> ![linked](images/instance_floating_ip.png){.thumbnail}
+>>
+>>
+
+#### Detaching a Floating IP <a name="disassociateip"></a>
+
+You can detach a Floating IP from your instance at anytime.
+
+Once you are connected to the Horizon interface, click on `Network`{.action}, then on `Floating IPs`{.action}.
+
+Click on `Disassociate`{.action} next to the corresponding IP.
+
+![disassociate](images/disassociate_floating_ip.png){.thumbnail}
+
+A pop-up window will appear prompting you to confirm the selection. Click on `Disassociate`{.action}.
+
+![confirm](images/confirm_disassociate_ip.png){.thumbnail}
+
+Once done, the Floating IP will be detached from the instance and returned to the pool of Floating IPs.
+
+#### Deleting a Floating IP
+
+To delete a Floating IP, click on the drop-down arrow next to the corresponding instance, then click on `Release Floating IP`{.action}.
+
+![delete](images/release_floating_ip.png){.thumbnail}
 
 ///
 
@@ -456,7 +530,7 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 
 #### Detaching a Floating IP
 
-This feature is currently only available via the [OpenStack API](#detachip). 
+This feature is available via the [OpenStack API](#detachip) and the [Horizon interface](#disassociateip).
 
 #### Deleting a Floating IP
 

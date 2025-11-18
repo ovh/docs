@@ -27,7 +27,7 @@ Per generare l'identificativo cliente e la password OpenStack, consulta questa [
 
 ### TenantName
 
-Il TenantName corrisponde al nome del tuo progetto Horizon. Per ottenere il TenantName, accedi all'interfaccia web OpenStack: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/){.external}.
+Il TenantName corrisponde al nome del tuo progetto Horizon. Per ottenere il TenantName, accedi all'interfaccia web OpenStack: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/).
 
 Una volta connesso, il TenenteName è visibile in cima alla pagina.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
 excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
-updated: 2025-06-03
+updated: 2025-09-19
 ---
 
 <style>
@@ -46,7 +46,7 @@ Esto puede ser útil en los siguientes casos:
 
 ### Los diferentes tipos de volúmenes
 
-OVHcloud ofrece tres tipos de volúmenes Block Storage, cada uno de ellos adaptado a las necesidades específicas en materia de rendimiento, capacidad y costes. Estas soluciones permiten asociar volúmenes de almacenamiento persistentes a sus instancias, garantizando un alto nivel de fiabilidad y disponibilidad.
+OVHcloud ofrece tres tipos de volúmenes Block Storage, cada uno de ellos adaptado a las necesidades específicas en materia de rendimiento, capacidad y costes. Estas soluciones permiten asociar volúmenes de almacenamiento persistentes a sus instancias, garantizando un alto nivel de fiabilidad y disponibilidad. Si la funcionalidad está disponible, el cifrado se puede habilitar al crear un volumen para todos los tipos de volúmenes excepto los volúmenes Classic Multi-Attach en las regiones 3AZ.
 
 /// details | **Classic - 500 IOPS garantizadas**
 
@@ -56,7 +56,7 @@ El volumen Classic es una solución de almacenamiento fiable y rentable, ideal p
 - Almacenamiento de bases de datos de tamaño pequeño a mediano
 - Backup y archivado de datos
 
-En las regiones 3AZ, los volúmenes Classic son servicios regionales que utilizan un Erasure Coding distribuido entre varias zonas de disponibilidad. Esto garantiza la disponibilidad de los datos sin impacto ni interrupción en caso de fallo de una zona, siempre que se cumplan los requisitos de la arquitectura resiliente con conexión múltiple. Para más información, consulte nuestra guía "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
+En las regiones 3AZ, los volúmenes Classic son servicios regionales que utilizan un Erasure Coding distribuido entre varias zonas de disponibilidad. Esto garantiza la disponibilidad de los datos sin impacto ni interrupción en caso de fallo de una zona, siempre que se cumplan los requisitos de la arquitectura resiliente con conexión múltiple. Para más información, consulte nuestra guía "[Uso correcto y limitaciones del almacenamiento Classic Multi-Attach en las regiones 3AZ](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
 
 ///
 
@@ -72,7 +72,7 @@ El volumen High-Speed está diseñado para aplicaciones que requieren un acceso 
 
 /// details | **High-Speed Gen2 - 30 IOPS/GB y hasta 20.000 IOPS**
 
-La generación 2 de los volúmenes High-Speed está optimizada para las cargas de trabajo más exigentes. Con un rendimiento de 30 IOPS/GB, hasta 20.000 IOPS, este tipo de volumen se recomienda para:
+La generación 2 de los volúmenes High-Speed está optimizada para las cargas de trabajo más exigentes. Con un rendimiento de 30 IOPS/GB, hasta 20.000 IOPS, este tipo de volumen se recomienda para los siguientes usos:
 
 - Big Data y análisis en tiempo real
 - Inteligencia artificial y Machine Learning
@@ -80,29 +80,33 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 
 ///
 
-![tipos_de_volumenes](images/volume-types.png){.thumbnail}
+![volumes_types](images/volume-types.png){.thumbnail}
+
+> [!primary]
+>
+> Cada tipo de volumen también está disponible en versión cifrada (LUKS). Estos volúmenes garantizan la confidencialidad de los datos sin que ello afecte al rendimiento. Están disponibles en el área de cliente de OVHcloud y con las herramientas que se describen en la siguiente sección, especificando el tipo `<volume_type>-luks`.
+>
 
 ### Asociar un nuevo volumen
 
 > [!tabs]
 > **Desde el área de cliente de OVHcloud**
->>
->> Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda bajo **Backup Storage**.
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda, en **Storage & Backup**.
 >>
 >> En esta sección, haga clic en el botón `Crear un volumen`{.action}.
 >>
+>> ![seleccionar proyecto](images/avolume01.png){.thumbnail}
+>>
+>> Siga los pasos de configuración para seleccionar las opciones de ubicación, tipo de disco, cifrado y capacidad de disco. Introduzca un nombre para el volumen y acepte haciendo clic en `Crear el volumen`{.action}.
+>>
 >> > [!warning]
->> >
+>>
 >> > Nota: El volumen debe crearse en la misma región que la instancia a la que desea asociarlo. Si lo crea en otra región, puede eliminarlo y volver a crearlo en la región correcta o puede migrar la región siguiendo [esta guía](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
->> >
 >>
->> ![Seleccionar el proyecto Public Cloud](images/avolume01.png){.thumbnail}
->>
->> Siga los pasos de configuración para seleccionar las opciones de ubicación, tipo de disco y capacidad de disco. Introduzca un nombre para el volumen y haga clic en `Crear el volumen`{.action}.
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
 >>
->> El nuevo disco se mostrará en el área de cliente.
+>> El nuevo disco aparecerá en el área de cliente.
 >>
 >> ![configure disk](images/avolume03.png){.thumbnail}
 >>
@@ -110,32 +114,55 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >>
 >> ![attach disk 01](images/avolume04.png){.thumbnail}
 >>
->> En la nueva ventana, seleccione una instancia de la lista y haga clic en `Confirmar`{.action} para asociar el disco.
+>> En la ventana que aparece, seleccione una instancia de la lista y haga clic en `Confirmar`{.action} para asociar el disco.
 >>
 >> ![attach disk 02](images/avolume05.png){.thumbnail}
 >>
 >> El proceso de asociar el disco a su instancia comenzará. La operación puede tardar unos minutos.
 >>
 >> > [!warning]
->> >
->> > No abandone la página actual del área de cliente de OVHcloud cuando se esté conectando el disco. Esto podría interrumpir el proceso.
->> >
+>> > Recuerde no abandonar la página actual del área de cliente de OVHcloud mientras el disco está conectado. Esto podría interrumpir el proceso.
+>>
 >>
 > **Via Terraform**
+>> > [!warning]
+>>
+>> > Tenga en cuenta que los tipos de volumen "high-speed-gen2" o "luks" pueden no estar disponibles en todas las regiones.
+>>
+>>
+>> Tipos de volúmenes:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> Los tipos que terminan en -luks están cifrados (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > La creación de un volumen **-luks** genera automáticamente una llave dedicada.
+>> >
+>> > No modifique ni elimine esta clave si está asociada a un volumen Block Storage. De este modo, los datos de este volumen y todos sus snapshots serían irrecuperables definitivamente.
+>> >
+>>
 >> Para crear un volumen block storage simple, necesita 3 elementos:
 >>
->> * El nombre del volumen
->> * La región
->> * El tamaño del volumen en GB
+>> - Nombre del volumen
+>> - La región
+>> - El tamaño del volumen en GB
 >>
 >> En nuestro ejemplo, vamos a crear un block storage en la región **GRA11** con un tamaño de **10 GB**. Agregue las siguientes líneas a un archivo denominado *simple_blockstorage.tf*:
 >>
 >> ```python
->> # Creación de un volumen block storage
+>> # Creation of a block storage volume
 >> resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
->>   name   = "terraform_blockstorage" # Nombre del volumen block storage
->>   size   = 10                       # Tamaño del volumen
->>   region = "GRA11"                  # Región o volumen que se va a crear
+>>   name   = "terraform_blockstorage" # Name of the block storage volume
+>>   size   = 10                       # Volume size
+>>   region = "GRA11"                  # Region where the volume must be created
+>>   volume_type = "volume_type"       # classic, high-speed, high-speed-gen2 or equivalent `-luks`
 >> }
 >> ```
 >>
@@ -143,18 +170,18 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >>
 >> > [!warning]
 >> > La instancia y el volumen deben estar en la misma región.
->> >
+>>
 >>
 >> Agregue las siguientes líneas debajo de las anteriores:
 >>
 >> ```python
->> # Asociar el volumen a la instancia
+>> # Attach the volume to the instance
 >> resource "openstack_compute_volume_attach_v2" "volume_attach" {
->>   instance_id = "<su_instance_id>"
+>>   instance_id = "<your_instance_id>"
 >>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
 >> }
 >> ```
->> 
+>>
 >> Puede crear su volumen de tipo block storage y asociarlo a la instancia deseada introduciendo el siguiente comando:
 >>
 >> ```console
@@ -179,7 +206,7 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >>       + name              = "terraform_blockstorage"
 >>       + region            = "GRA11"
 >>       + size              = 10
->>       + volume_type       = (known after apply)
+>>       + volume_type       = "high-speed-gen2"
 >>     }
 >>
 >>   # openstack_compute_volume_attach_v2.volume_attach will be created
@@ -208,6 +235,81 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >>
 >> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 >> ```
+>>
+> **A través de Horizon**
+>> Acceda a la sección desplegable `Volumes`{.action}, haga clic en `Volumes`{.action} y luego en `Create Volume`{.action}.
+>>
+>> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
+>>
+>> Introduzca el campo `Volume Name`{.action} y seleccione el tipo de volumen que desee. A continuación, haga clic en `Create Volume`{.action}.
+>>
+>> > [!warning]
+>>
+>> > Tenga en cuenta que si el tipo de volumen "high-speed-gen2" o "luks" no aparece en la lista, significa que no está disponible en esta región.
+>>
+>>
+>> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
+>>
+>> Para asociar este volumen a una instancia, en la línea de su volumen, haga clic en la flecha situada al final de la línea, junto a `Edit Volume`. Haga clic en `Manage Attachments`{.action}
+>>
+>> ![Asociar un volumen de almacenamiento de bloques a una instancia](images/horizon_manage_attachments.png){.thumbnail}
+>>
+>> Seleccione la instancia a la que quiere asociar el volumen y haga clic en `Attach Volume`{.action}.
+>>
+>> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
+>>
+> **A través de la CLI OpenStack**
+>> > [!warning]
+>>
+>> > Tenga en cuenta que si el tipo de volumen "high-speed-gen2" o "luks" no aparece en la lista, significa que no está disponible en esta región.
+>>
+>>
+>> Tipos de volúmenes:
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> Los tipos que terminan en -luks están cifrados (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > La creación de un volumen **-luks** genera automáticamente una llave dedicada.
+>> >
+>> > No modifique ni elimine esta clave si está asociada a un volumen Block Storage. De este modo, los datos de este volumen y todos sus snapshots serían irrecuperables definitivamente.
+>> >
+>>
+>> Enumere los tipos de volúmenes disponibles en la región:
+>>
+>> ```bash
+>> openstack volume type list
+>> ```
+>>
+>> Cree un volumen especificando al menos su tamaño (en GB) y un tipo de los enumerados anteriormente. También puede introducir un nombre para el volumen al final del pedido.
+>>
+>> ```bash
+>> openstack volume create --size 1 --type high-speed-gen2 volumeName # classic, high-speed, high-speed-gen2 or equivalent `-luks`
+>> ```
+>>
+>> Para asociar un volumen a una instancia disponible en la región, utilice el siguiente comando:
+>>
+>> ```bash
+>> openstack server add volume <server-id|server-name> <volume-id|volume-name>
+>>
+>> +-----------+-------------------------------------+
+>> | Field | Value |
+>> +-----------+-------------------------------------+
+>> | ID | 7d3d670f- ****-****-****-60dd1e6**** |
+>> | Server ID | 74317f97-****-****-80cf2d4**** |
+>> | Volume ID | 7d3d670f-****-****-****-60dd1e6**** |
+>> | Device | /dev/sdb |
+>> | Tag | None |
+>> +-----------+-------------------------------------+
+>> ```
+>>
 
 ### Configuración del nuevo disco
 

@@ -1,7 +1,7 @@
 ---
 title: "Transferring a domain name to another registrar"
 excerpt: "Find out how to move a domain name from OVHcloud to a provider of your choice"
-updated: 2024-05-16
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -101,9 +101,9 @@ Once the transfer code has been retrieved, **do not lock your domain again unles
 
 ### Step 3: Launch the transfer at your new registrar
 
-After completing the previous steps you can initiate the transfer, usually by placing an order. Afterwards, the transfer may take up to 10 days. 
+Once you have completed the previous steps, start the transfer process, usually by placing an order with your new registrar. The transfer may take up to 10 days.
 
-You can contact your provider for more information about this process.
+For more information, contact the new registrar you have chosen.
 
 > [!warning]
 >

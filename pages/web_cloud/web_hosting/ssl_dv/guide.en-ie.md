@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Activate a Sectigo DV SSL certificate"
 excerpt: "Find out how to activate a Sectigo DV SSL certificate on your OVHcloud web hosting plan"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objective
@@ -20,7 +20,7 @@ The SSL encryption levels are identical between these three certificate types.
 
 The main difference lies in the level of checks that will be carried out by the Certification Authority (CA) that issues the SSL certificate and attests to its authenticity.
 
-For OVHcloud web hosting plans, the certification authority delivering DV SSL certificates is [Sectigo](https://sectigostore.com){.external}.
+For OVHcloud web hosting plans, the certification authority delivering DV SSL certificates is [Sectigo](https://sectigostore.com).
 
 > [!warning]
 >
@@ -75,6 +75,18 @@ If you need help with this, please refer to our guides:
 - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
 ### Order the Sectigo DV SSL certificate
+
+> [!primary]
+>
+> **Information on migrating to the new SSL certificate management interface:**
+>
+> The rest of this guide is aimed at customers whose web hosting services have not yet migrated to the new SSL certificate management interface.
+> To check if this migration has been carried out, go to your Web Hosting plan in the OVHcloud Control Panel, and check the `SSL certificates` tab.
+> If the `SSL certificates` tab is present, your service has already migrated to the new management interface. If this is the case, please refer to [this guide](/pages/web_cloud/web_hosting/ssl_management) directly to manage your SSL certificate.
+>
+> For technical reasons, not all of our customers' web hosting services can be migrated at once. This migration process is carried out automatically over a period of a few weeks, with no impact on the operation of your web hosting services, and no intervention or action required on your part.
+>
+> All web hosting services will eventually work with the new SSL certificate management interface.
 
 To order the Sectigo DV SSL certificate, perform the following steps:
 

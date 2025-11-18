@@ -1,12 +1,12 @@
 ---
 title: 'Public Cloud Compute - Passare dalla fatturazione oraria a quella mensile'
 excerpt: 'Scopri come modificare il tipo di fatturazione delle tua istanza Public Cloud'
-updated: 2023-01-23
+updated: 2025-09-05
 ---
 
 ## Obiettivo
 
-Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o mensile. Le istanze 'orarie' sono fatturate in _pay-as-you-go_, in cui l’utente paga a fine mese la somma delle ore consumate. Per le istanze 'mensili', invece, è necessario effettuare il pagamento anticipato per il mese entrante ma ad un prezzo minore (fino al 50% di sconto). Se inizialmente hai scelto la fatturazione oraria, è comunque possibile passare alla fatturazione mensile in qualsiasi momento.
+Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o mensile (ad eccezione delle istanze Public Cloud di terza generazione, che vengono fatturate all’ora di default e non offrono l’opzione mensile durante la creazione dell’istanza). Le istanze 'orarie' sono fatturate in _pay-as-you-go_, in cui l’utente paga a fine mese la somma delle ore consumate. Per le istanze 'mensili', invece, è necessario effettuare il pagamento anticipato per il mese entrante ma ad un prezzo minore (fino al 50% di sconto). Se inizialmente hai scelto la fatturazione oraria, è comunque possibile passare alla fatturazione mensile in qualsiasi momento.
 
 **Questa guida ti mostra come passare da una fatturazione oraria ad una mensile.**
 
@@ -24,13 +24,17 @@ Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o m
 ## Prerequisiti
 
 - Aver creato un’[istanza Public Cloud](/links/public-cloud/public-cloud).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 ### Dallo Spazio Cliente OVHcloud
 
-Nello [Spazio Cliente](/links/manager){.external} seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
+> [!warning]
+> La procedura seguente non funziona per le istanze di terza generazione (esempio: B3-32). Per essere fatturati mensilmente per questo tipo di istanza, è necessario creare un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) per questo modello di istanza.
+>
+
+Nello [Spazio Cliente](/links/manager) seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
@@ -52,7 +56,7 @@ Sostituisci "InstanceID" con l'ID dell'istanza corrispondente. L'identificativo 
 
 ### Dall'API OVHcloud
 
-Accedi alla [interfaccia API OVHcloud](https://eu.api.ovh.com/) in base alla [guida appropriata](/pages/manage_and_operate/api/first-steps) e segui gli step seguenti.
+Accedi alla [interfaccia API OVHcloud](/links/api) in base alla [guida appropriata](/pages/manage_and_operate/api/first-steps) e segui gli step seguenti.
 
 Utilizza questa chiamata:
 
@@ -62,7 +66,7 @@ Utilizza questa chiamata:
 >
 ### Da uno script Terraform
 
-Questo è possibile grazie ai `metadata` [attributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} dalla risorsa [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Questo è possibile grazie ai `metadata` [attributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata) dalla risorsa [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2):
 
 ```terraform
 metadata = {

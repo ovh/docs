@@ -21,7 +21,7 @@ Your Cloud Web hosting plan has a storage space you can use to host your website
 
 ## Requirements
 
-- A [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer){.external}
+- A [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the contact email address linked to your OVHcloud customer account
 
@@ -44,7 +44,7 @@ A link to download the backup is generated, then sent by email to the email addr
 
 #### Step 1 - Generate the recovery link sent by email
 
-To generate the recovery link, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then click on the Cloud Web concerned. 
+To generate the recovery link, log in to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then click on the Cloud Web concerned. 
 
 Select the `FTP - SSH`{.action} tab and click the `Generate a backup`{.action} button on the right.
 

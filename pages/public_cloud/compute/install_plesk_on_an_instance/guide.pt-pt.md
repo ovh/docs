@@ -67,13 +67,13 @@ Para adicionar uma licença Plesk, tenha consigo a chave que lhe foi fornecida p
 
 > [!primary]
 >
-> A OVHcloud não vende licenças Plesk para as soluções de Public Cloud. No entanto, poderá adquirir uma licença através do site [Plesk](https://www.plesk.com/){.external}.
+> A OVHcloud não vende licenças Plesk para as soluções de Public Cloud. No entanto, poderá adquirir uma licença através do site [Plesk](https://www.plesk.com/).
 > 
 
 Pretende alterar a sua licença para substituir uma chave de teste ou para alterar a sua oferta, por exemplo? A partir da interface Plesk, aceda à secção `Tools & Settings`{.action}. Na secção **Plesk**, selecione a opção `License information`{.action}.
 
 ## Quer saber mais?
 
-[Documentação oficial do Plesk.](https://docs.plesk.com/en-US/obsidian/){.external}
+[Documentação oficial do Plesk.](https://docs.plesk.com/en-US/obsidian/)
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -86,13 +86,13 @@ Musisz również:
 > Dopóki blokada jest aktywna, transfer nie jest możliwy.
 >
 
-Aby odblokować domenę w Gandi, postępuj zgodnie z instrukcjami zawartymi w [Dokumentacja dedykowana Gandi](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html){.external}.
+Aby odblokować domenę w Gandi, postępuj zgodnie z instrukcjami zawartymi w [Dokumentacja dedykowana Gandi](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html).
 
 ### Etap 2 - Uzyskanie kodu autoryzacyjnego
 
 Kod autoryzacyjny zabezpiecza nazwę domeny przed nieautoryzowanym transferem realizowanym przez osoby trzecie. Ten kod jest niezbędny, aby zezwolić na transfer domeny do nowego operatora.
 
-Aby uzyskać kod transferu Twojej domeny, wykonaj kroki opisane w [dokumentacji Gandi](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html){.external}.
+Aby uzyskać kod transferu Twojej domeny, wykonaj kroki opisane w [dokumentacji Gandi](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html).
 
 ### Etap 3 - Rozpocznij transfer Twojej domeny do OVHcloud
   

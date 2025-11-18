@@ -19,9 +19,9 @@ Encontre, neste tutorial, alguns exemplos de situações relativas à segurança
 
 ## Requisitos
 
-- Dispor de um [alojamento web OVHcloud](/links/web/hosting){.external}.
-- Ter registado, pelo menos, um [nome de domínio](/links/web/domains){.external}.
-- Ter acesso à sua [Área de Cliente OVHcloud](/links/manager){.external}, parte "Web cloud".
+- Dispor de um [alojamento web OVHcloud](/links/web/hosting).
+- Ter registado, pelo menos, um [nome de domínio](/links/web/domains).
+- Ter acesso à sua [Área de Cliente OVHcloud](/links/manager), parte "Web cloud".
 
 ## Instruções
 
@@ -41,7 +41,7 @@ Na maioria dos casos, são scripts externos, provenientes de outros websites, co
 
 Como saber se o meu site é afetado?
 
-As ferramentas de depuração fornecidas por *Mozilla Firefox* e *Google Chrome* podem indicar se o seu website contém ou não elementos bloqueados devido a um conteúdo misto. A documentação disponível no [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} explica a utilização destas ferramentas para detetar conteúdos mistos.
+As ferramentas de depuração fornecidas por *Mozilla Firefox* e *Google Chrome* podem indicar se o seu website contém ou não elementos bloqueados devido a um conteúdo misto. A documentação disponível no [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) explica a utilização destas ferramentas para detetar conteúdos mistos.
 
 ### Conteúdo duplicado (duplicate content)
 

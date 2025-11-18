@@ -302,7 +302,7 @@ In order to store your Popeye reports on an OVHcloud Object Storage, and general
 
 In order to do that you will create an OpenStack user.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Public Cloud section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the Public Cloud section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Users & Roles`{.action} in the left-hand menu and click on `+ Add user`{.action}.
 

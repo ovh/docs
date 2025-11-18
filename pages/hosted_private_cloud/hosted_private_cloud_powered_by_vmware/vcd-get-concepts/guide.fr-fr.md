@@ -1,18 +1,18 @@
 ---
-title: "VMware Cloud Director - Les concepts fondamentaux de VCD"
-excerpt: "Decouvrez les concepts fondamentaux de VMware Cloud Director"
-updated: 2024-12-19
+title: "Public VCF as-a-Service - Les concepts fondamentaux de Public VCF as-a-Service"
+excerpt: "Decouvrez les concepts fondamentaux de Public VCF as-a-Service"
+updated: 2025-11-04
 ---
 
 ## Objectif
 
-**Ce guide vous détaille les fondamentaux de VMware Cloud Director (VCD) managé par OVHcloud.**
+**Ce guide vous détaille les fondamentaux de Public VCF as-a-Service managé par OVHcloud.**
 
 ## Concept fondamentaux
 
-Dans cette section, nous allons établir les bases essentielles de VMware Cloud Director (VCD).
+Dans cette section, nous allons établir les bases essentielles de Public VCF as-a-Service.
 
-En définissant ces principes de manière claire et concise, nous allons fournir les bases nécessaires pour une utilisation efficace et réussie de VMware Cloud Director. Que ce soit pour les administrateurs cherchant à déployer des infrastructures complexes ou pour les utilisateurs souhaitant accéder aux ressources rapidement. Cette exploration des concepts de base de VCD constitue un point de départ essentiel.
+En définissant ces principes de manière claire et concise, nous allons fournir les bases nécessaires pour une utilisation efficace et réussie de Public VCF as-a-Service. Que ce soit pour les administrateurs cherchant à déployer des infrastructures complexes ou pour les utilisateurs souhaitant accéder aux ressources rapidement. Cette exploration des concepts de base de Public VCF as-a-Service constitue un point de départ essentiel.
 
 ### Organisations
 
@@ -36,7 +36,7 @@ Il est important de noter qu'une organisation peut disposer de plusieurs centres
 
 ### Réseaux de centre de données virtuels d'organisations
 
-Un réseau vDC est encapsulé dans un centre de données (virtuels) spécifique créé avec VMware Cloud Director (VCD), et il est accessible à toutes les vApps de cette organisation. Ce réseau permet aux différentes vApps d'une organisation de communiquer entre elles de manière transparente. Il peut être configuré afin de se connecter à un réseau externe ou maintenu isolé et interne à l'organisation.
+Un réseau vDC est encapsulé dans un centre de données (virtuels) spécifique créé avec Public VCF as-a-Service, et il est accessible à toutes les vApps de cette organisation. Ce réseau permet aux différentes vApps d'une organisation de communiquer entre elles de manière transparente. Il peut être configuré afin de se connecter à un réseau externe ou maintenu isolé et interne à l'organisation.
 
 Seuls les administrateurs système ont le privilège de créer de tels réseaux, mais les administrateurs d'organisation sont en mesure de gérer les configurations des réseaux de centre de données virtuel d'organisation, y compris les services réseau qu'ils offrent.
 
@@ -58,15 +58,14 @@ De plus, les administrateurs d'organisation ont la capacité de copier des élé
 
 <a name="key-features"></a>
 
-### Fonctionnalités de VMware Cloud Director chez OVHcloud
+### Fonctionnalités de Public VCF as-a-Service chez OVHcloud
 
-Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de VMware Cloud Director.
+Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de Public VCF as-a-Service.
 
 |              | Advanced Network & Security | vSAN Storage |
 |:------------:|:---------------------------:|:------------:|
-| VCD Standard |              -              |       -      |
-| VCD Advanced |              ✅             |       -     |
-| VCD Premium  |              ✅             |       ✅      |
+|Public VCF as-a-Service Standard |              -              |       -      |
+|Public VCF as-a-Service Advanced |              ✅             |       -     |
 
 #### Cluster Management
 
@@ -83,65 +82,64 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 ##### Virtual Machine Management
 
-|         Features        	| Standard 	| Advanced 	| Premium 	|                                    Comments                                   	|
-|:-----------------------:	|:--------:	|:--------:	|:-------:	|:-----------------------------------------------------------------------------:	|
-|        Create VM        	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
-| Manage Virtual Machines 	|     ✅    	|     ✅    	|    ✅    	|                  Start, Stop, Suspend, Delete, Copy/clone...                  	|
-|      Affinity Rules     	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
-|   Anti-Affinity Rules   	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
-|    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged software solutions  	                    |
-|    Create VM catalogs   	|     ✅    	|     ✅     |    ✅     	|                     Build your own catalog of VM templates                    	|
+|         Features        	| Standard 	| Advanced 	|                                    Comments                                   	|
+|:-----------------------:	|:--------:	|:--------:	|:-----------------------------------------------------------------------------:	|
+|        Create VM        	|     ✅    	|     ✅    	|                                                                             	|
+| Manage Virtual Machines 	|     ✅    	|     ✅    	|                 Start, Stop, Suspend, Delete, Copy/clone...                  	|
+|      Affinity Rules     	|     ✅    	|     ✅    	|                                                                               |
+|   Anti-Affinity Rules   	|     ✅    	|     ✅    	|                                                                              	|
+|    VMware Marketplace   	|     ✅    	|     ✅     | Allowed to deploy VMs with pre-packaged software solutions  	                    |
+|    Create VM catalogs   	|     ✅    	|     ✅     |                     Build your own catalog of VM templates                    	|
 
 #### Organisation / Virtual Datacenter Management
 
-|               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
-|:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
-|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in a VCD Organisation Manage roles/permissions for Organisation users           	|
-| Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
-| vCPU over-allocation                	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
+|         Features        	| Standard 	| Advanced 	|                                    Comments                                   	|
+|:-----------------------:	|:--------:	|:--------:	|:-----------------------------------------------------------------------------:	|
+|           User Management           	|     ✅    	|    ✅    	|            Manage users in a Public VCF as-a-Service           	|
+| Identity Provider Integration - SSO 	|     ⏳     	|    ⏳      	| In Roadmap (via OVHcloud uIAM service)                                    |
+| vCPU over-allocation                	|     ⏳    	|    ⏳    	| In Roadmap - Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
 #### Networking
 
-| Features                        	 | Standard 	| Advanced 	| Premium 	| Comments                                                                                                                                                                                           	        |
-|-----------------------------------|----------	|----------	|---------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Routing & Switching IPv4        	 |         	| ✅        	| ✅       	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	        |
-| Public IPv4 Range               	 | ✅        	| ✅        	| ✅       	| 	                                                                                                                                                                                                           |
-| Private Network - vRack support   | ✅        	| ✅        	| ✅       	| In Roadmap                                                                                                                                                                                                	 |
-| Routing & Switching IPv6        	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |
-| VPN                             	 |          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	        |
-| Load Balancing                  	 |          	|          	|         	| Not supported with native VCD network capabilities                                                                                                                                                 	        |
-| Advanced Load Balancing         	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |                                                                                          	|
+|         Features        	| Standard 	| Advanced 	|                                    Comments                                   	|
+|:-----------------------:	|:--------:	|:--------:	|:-----------------------------------------------------------------------------:	|
+| Routing & Switching IPv4        	 |  -       	| ✅        	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	        |
+| Public IPv4 Range               	 | ✅        	| ✅        	|  	                                                                                                                                                                                                           |
+| Private Network - vRack support   | ✅        	| ✅        	| In Roadmap                                                                                                                                                                                                	 |
+| Routing & Switching IPv6        	 | -         	| ⏳         	|  in Roadmap                                                                                                                                                                                         	        |
+| VPN                             	 | -         	| ✅        	|  L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	        |
+| Load Balancing                  	 | -        	| -       	| Not supported with native Public VCF as-a-Service network capabilities                                                                                                                                                 	        |
+| Advanced Load Balancing         	 | -        	| ⏳         	| In Roadmap                                                                                                                                                                                         	        |                                                                                          	|
 
 #### Security
 
-|       Features       	| Standard 	| Advanced 	| Premium 	|  Comments  	|
-|:--------------------:	|:--------:	|:--------:	|:-------:	|:----------:	|
-|   Stateful Firewall  	|        	|     ✅    	|    ✅    	|            	|
-| Distributed Firewall 	|        	|     ✅    	|    ✅    	|            	|
-|    Security groups   	|         	|     ✅    	|    ✅    	|            	|
-|       IDS / IPS      	|          	|          	|         	| in Roadmap 	|
-|          WAF         	|          	|          	|         	| in Roadmap 	|
+|       Features       	| Standard 	| Advanced 	| Comments  	|
+|:--------------------:	|:--------:	|:--------:	|:----------:	|
+|   Stateful Firewall  	|  -      	|     ✅    	|           |
+| Distributed Firewall 	|  -      	|     ✅    	|           |
+|    Security groups   	|  -       	|     ✅    	|           |
+|       IDS / IPS      	|  -        	|     ⏳    	| in Roadmap 	|
+|          WAF         	|  -        	|     ⏳     	| in Roadmap 	|
 
 #### Data protection
 
-|           Features           	| Standard 	| Advanced 	| Premium 	|           Comments          	|
-|:----------------------------:	|:--------:	|:--------:	|:-------:	|:---------------------------:	|
-|      Backup as a Service     	|     ✅    	|     ✅    	|    ✅    	| Veeam Managed Backup Option 	|
-|   Virtual Machine Snapshots  	|     ✅    	|     ✅    	|    ✅    	|           1 per VM          	|
-| Protection / Replication VMs 	|          	|          	|         	|          in Roadmap         	|
+|           Features           	| Standard 	| Advanced 	|           Comments          	|
+|:----------------------------:	|:--------:	|:--------:	|:---------------------------:	|
+|      Backup as a Service     	|     ✅    	|     ✅    	|Veeam Managed Backup Option 	|
+|   Virtual Machine Snapshots  	|     ✅    	|     ✅    	|          1 per VM          	|
+| Protection / Replication VMs 	|     ⏳     	|     ⏳    	| in Roadmap         	|
 
 #### Storage
 
-|              Features             	| Standard 	| Advanced 	| Premium 	| Comments 	|
-|:---------------------------------:	|:--------:	|:--------:	|:-------:	|:--------:	|
-|           NFS datastore           	|     ✅    	|     ✅    	|    ✅    	|          	|
-| High performance datastore (vSAN) 	|          	|          	|    ✅    	|          	|
+|              Features             	| Standard 	| Advanced 	| Comments 	|
+|:---------------------------------:	|:--------:	|:--------:	|:--------:	|
+|           NFS datastore           	|     ✅    	|     ✅    	|          	|
 
 #### Monitoring
 
-|     Features    	| Standard 	| Advanced 	| Premium 	|                      Comments                     	|
-|:---------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------:	|
-| Aria operations 	|     ✅    	|     ✅    	|    ✅    	| Resource management Metrics, Dashboard, Reporting 	|
+|     Features    	| Standard 	| Advanced 	|                      Comments                     	|
+|:---------------:	|:--------:	|:--------:	|:-------------------------------------------------:	|
+| Aria operations 	|    ⏳     	|     ⏳  	| In Roadmap - Resource management Metrics, Dashboard, Reporting|
 
 ## Aller plus loin
 

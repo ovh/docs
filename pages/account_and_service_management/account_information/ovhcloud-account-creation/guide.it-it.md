@@ -4,6 +4,11 @@ excerpt: Come creare un account OVHcloud
 updated: 2025-04-28
 ---
 
+> [!success]
+> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
+> Condividi con noi le tue opinioni e idee.<br>
+> [Accedi al sondaggio.](https://s.elq.fr/ovhext/s9Kt5lG)
+
 ## Obiettivo
 
 Per utilizzare i servizi OVHcloud è necessario creare il proprio account.
@@ -57,7 +62,7 @@ Per la maggior parte degli account extraeuropei, viene spesso sostituito dall’
 Questo identificativo cliente ti permette di:
 
 - effettuare ordini online
-- accedere al tuo Spazio Cliente OVH per gestire tutti i tuoi servizi
+- accedere al tuo Spazio Cliente per gestire tutti i tuoi servizi
 - identificarti durante il contatto con il supporto OVHcloud e semplificare la gestione delle tue richieste.
 
 > [!warning]

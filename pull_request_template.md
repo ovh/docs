@@ -39,6 +39,12 @@ Before submitting a Pull Request, please ensure you have:
 
 ## Mandatory information
 
+The translations in this Pull Request have been done using:
+- [ ] OVHcloud integrated translation LLM <!-- If you're interested in this new option, contact the Guides team -->
+- [ ] Systran
+- [ ] Other tool (specify which tool was used)
+- [ ] This Pull Request didn't require any translation.
+
 <!-- Delete the line which doesn't apply: -->
 - This Pull Request can be merged as soon as possible.
 - This Pull Request shouldn't be merged before: YYYY-MM-DD <!-- replace it with a real date -->

@@ -85,7 +85,7 @@ Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
 >> - **Pełna nazwa** : wprowadź pełny adres e-mail
 >> - **Opis**
 >> - **Serwer poczty przychodzącej IMAP** :<br>- **Nazwa hosta IMAP** : wprowadź `pro?.mail.ovh.net` (zastąp dobrze "?" numerem serwera)<br>- **Port IMAP** : 993<br>- **Nazwa użytkownika IMAP**: Twój pełny adres e-mail<br>- **Hasło IMAP** : Twój adres e-mail<br>- **Bezpieczeństwo portu** : SSL
->> - **Serwer poczty przychodzącej SMTP** :<br>- **Nazwa hosta SMTP** : wprowadź `pro?.mail.ovh.net` (zastąp dobrze "?" numerem serwera)<br>- **Port SMTP** : 587<br>- **Nazwa użytkownika SMTP**: Twój pełny adres e-mail<br>- **Hasło SMTP**: Twój adres e-mail<br>- **Bezpieczeństwo portu** : Niepowodzenie polecenia STARTTLS
+>> - **Serwer poczty wychodzącej SMTP** :<br>- **Nazwa hosta SMTP** : wprowadź `pro?.mail.ovh.net` (zastąp dobrze "?" numerem serwera)<br>- **Port SMTP** : 587<br>- **Nazwa użytkownika SMTP**: Twój pełny adres e-mail<br>- **Hasło SMTP**: Twój adres e-mail<br>- **Bezpieczeństwo portu** : Niepowodzenie polecenia STARTTLS
 >>
 >> Aby dokończyć konfigurację, naciśnij przycisk `Połącz`{.action}.
 >>

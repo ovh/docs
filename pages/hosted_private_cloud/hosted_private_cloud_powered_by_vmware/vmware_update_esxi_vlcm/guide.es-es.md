@@ -1,14 +1,18 @@
 ---
 title: Updating hosts using vSphere Lifecycle Management (vLCM)
 excerpt: Learn how to update your ESXi hosts via vSphere Lifecycle Management quickly and securely.
-updated: 2025-04-17
+updated: 2025-08-08
 ---
 
 ## Objective
 
-This guide explains how to update your ESXi hosts using vSphere Lifecycle Management (vLCM), directly from the vSphere interface. vLCM helps you detect required updates and keep your hosts up to date quickly and securely by applying a complete image.
+This guide explains how to update your ESXi hosts using vSphere Lifecycle Management (vLCM), directly from the vSphere interface.
 
-Unlike VMware Update Manager, vLCM provides a full lifecycle approach by including software updates, drivers, firmware, and hardware components.  This gives you a centralised view of your hosts’ status and helps you make informed decisions to maintain performance and security.
+vLCM helps you detect required updates and keep your hosts up to date quickly and securely by applying a complete image.
+
+Unlike VMware Update Manager, vLCM provides a full lifecycle approach by including software updates, drivers, firmware, and hardware components.
+
+This gives you a centralised view of your hosts’ status and helps you make informed decisions to maintain performance and security.
 
 ## Requirements
 
@@ -22,7 +26,15 @@ Unlike VMware Update Manager, vLCM provides a full lifecycle approach by includi
 
 Log in to your vSphere interface, then select the **host cluster** you want to update.
 
-### Step 2: Select a new image
+### Step 2 : Enable Maintenance Mode (Zerto)
+
+If you are using the Zerto option (Disaster Recovery Plan):
+
+You must first switch the hosts in your cluster to Maintenance Mode before starting the update with vLCM:
+
+![Maintenance Mode](images/vlcm_step2.png){.thumbnail}
+
+### Step 3: Select a new image
 
 Go to `Updates`{.action} > `Hosts`{.action} > `Image`{.action} to view the current image.
 
@@ -43,7 +55,7 @@ Click `Save`{.action} to confirm and save the selected image.
 
 Your image is now loaded.
 
-### Step 3: Launch the update
+### Step 4: Launch the update
 
 Click `Remediate All`{.action} to apply the image to all hosts in the cluster.
 
@@ -64,6 +76,8 @@ Click `Start Remediation`{.action} to begin the process.
 The update process is now running. It may take several minutes per host.
 
 ![Final validation](images/vlcm_05.png){.thumbnail}
+
+**Zerto option**: When the update is complete, you can exit Maintenance Mode on the hosts in your cluster.
 
 ## Go further
 

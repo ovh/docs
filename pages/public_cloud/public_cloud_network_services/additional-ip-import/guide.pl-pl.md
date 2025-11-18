@@ -23,9 +23,9 @@ Można zaimportować adres Additional IP powiązany z inną usługą OVHcloud.
 
 ## Wymagania początkowe
 
-- [Projekt Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
+- [Projekt Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
-- [Adres Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
+- [Adres Additional IP](/links/bare-metal/ip)
 
 > [!warning]
 > Ta funkcja nie jest aktualnie dostępna dla instancji Metal.
