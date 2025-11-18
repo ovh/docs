@@ -172,7 +172,7 @@ Para los servicios que no se mencionan, consulte la documentación relativa al s
 
 #### Caso 1: Ver un sitio web en mi alojamiento web de OVHcloud con un subdominio <a name="link-subdomain-case-1"></a>
 
-Al igual que con un nombre de dominio, para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" declarada para un sitio web alojado en un alojamiento web, conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna de la izquierda, seleccione la oferta correspondiente donde se encuentra su sitio web y elija la pestaña `Mis sitios`{.action}.
+Al igual que con un nombre de dominio, para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" declarada para un sitio web alojado en un alojamiento web, conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna de la izquierda, seleccione el alojamiento correspondiente donde se encuentra su sitio web y elija la pestaña `Mis sitios`{.action}.
 
 Aquí es donde autoriza el acceso de su subdominio a su sitio web presente en su alojamiento web.
 

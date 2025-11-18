@@ -173,7 +173,7 @@ Per i servizi non menzionati, consulta la documentazione relativa al servizio in
 
 #### Caso 1: visualizza un sito Web presente sul tuo hosting Web OVHcloud con un sottodominio <a name="link-subdomain-case-1"></a>
 
-Proprio come per un nome di dominio, per autorizzare un sottodominio a visualizzare il contenuto di una directory "target" dichiarata per un sito web presente su un hosting web, accedi all'[Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona l'offerta in cui si trova il tuo sito web e poi clicca sull'etichetta `I miei siti`{.action}.
+Proprio come per un nome di dominio, per autorizzare un sottodominio a visualizzare il contenuto di una directory "target" dichiarata per un sito web presente su un hosting web, accedi all'[Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona l'hosting interessato dove si trova il tuo sito web, quindi scegli la scheda `I miei siti`{.action}.
 
 Da qui potrai autorizzare l'accesso del tuo sottodominio al tuo sito web presente sul tuo hosting web.
 

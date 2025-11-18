@@ -173,7 +173,7 @@ W przypadku usług, które nie zostały wymienione, zapoznaj się z dokumentacj�
 
 #### Przypadek 1: Wyświetl stronę WWW z subdomeną na moim hostingu OVHcloud <a name="link-subdomain-case-1"></a>
 
-Podobnie jak w przypadku nazwy domeny, aby zezwolić subdomenie na wyświetlanie zawartości folderu "docelowego" zadeklarowanego dla strony internetowej w ramach planu hostingowego, należy zalogować się do [panelu klienta OVHcloud](/links/manager) i wybrać opcję `Web Cloud`{.action}. Kliknij `Hosting`{.action} w lewej kolumnie, wybierz odpowiednią ofertę, w której znajduje się Twoja strona internetowa, a następnie wybierz zakładkę `Moje strony`{.action}.
+Podobnie jak w przypadku nazwy domeny, aby zezwolić subdomenie na wyświetlanie zawartości folderu "docelowego" zadeklarowanego dla strony internetowej w ramach planu hostingowego, należy zalogować się do [panelu klienta OVHcloud](/links/manager) i wybrać opcję `Web Cloud`{.action}. Kliknij `Hosting`{.action} w lewej kolumnie, wybierz plan hostingowy, w ramach którego znajduje się Twoja strona internetowa, a następnie wybierz zakładkę `Moje strony`{.action}.
 
 W tym miejscu autoryzujesz swoją subdomenę do dostępu do swojej strony internetowej w ramach planu hostingowego.
 

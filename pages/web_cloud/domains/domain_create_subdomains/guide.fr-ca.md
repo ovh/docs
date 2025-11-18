@@ -168,7 +168,7 @@ Pour les services qui ne seraient pas mentionnés, consultez la documentation re
 
 #### Cas 1 - Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine <a name="link-subdomain-case-1"></a>
 
-Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » déclaré pour un site web présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web puis choisissez l'onglet `Mes sites`{.action}.
+Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » déclaré pour un site web présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'hébergement concerné où se trouve votre site web puis choisissez l'onglet `Mes sites`{.action}.
 
 C'est ici que vous autorisez l'accès de votre sous-domaine à votre site web présent sur votre hébergement web.
 

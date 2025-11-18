@@ -173,7 +173,7 @@ Para serviços que não sejam indicados, consulte a documentação do serviço. 
 
 #### Casos 1: Ver um website presente no meu alojamento web da OVHcloud com um subdomínio <a name="link-subdomain-case-1"></a>
 
-Tal como para um nome de domínio, para autorizar um subdomínio a apresentar o conteúdo de uma pasta "destino" declarada para um site presente num alojamento web, inicie sessão no [Área de cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna à esquerda, selecione a oferta correspondente onde se encontra o seu site e, em seguida, escolha o separador `Meus sites`{.action}.
+Tal como para um nome de domínio, para autorizar um subdomínio a apresentar o conteúdo de uma pasta "destino" declarada para um site presente num alojamento web, inicie sessão no [Área de cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna à esquerda, selecione o alojamento em questão onde se encontra o seu site e, em seguida, escolha o separador `Meus sites`{.action}.
 
 É aqui que autoriza o acesso do seu subdomínio ao seu site presente no seu alojamento web.
 
