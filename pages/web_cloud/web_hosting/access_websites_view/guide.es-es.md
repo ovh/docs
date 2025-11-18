@@ -39,7 +39,7 @@ Le informa si su dominio apunta correctamente al alojamiento web asociado. Para 
 
 Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
-Para obtener más detalles sobre el diagnóstico, consulte nuestro guía "[¿Cómo verificar la asociación « nombre de dominio / sitio web »?](/pages/web_cloud/web_hosting/my_websites_diagnosis)".
+Para obtener más detalles sobre el diagnóstico, consulte nuestro guía "[¿Cómo verificar la asociación "nombre de dominio / sitio web"?](/pages/web_cloud/web_hosting/my_websites_diagnosis)".
 
 #### Carpeta raíz
 

@@ -25,7 +25,7 @@ Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Clo
 
 #### Domain name
 
-Displays the main domain name of the website, as it is configured in the "My sites" tab of your hosting.
+Displays the main domain name of the website, as it is configured in your hosting plan's "My sites" tab.
 
 Clicking this will redirect you to the `My sites`{.action} tab for the web hosting plan concerned.
 

@@ -173,11 +173,11 @@ W przypadku usług, które nie zostały wymienione, zapoznaj się z dokumentacj�
 
 #### Przypadek 1: Wyświetl stronę WWW z subdomeną na moim hostingu OVHcloud <a name="link-subdomain-case-1"></a>
 
-Tak jak w przypadku nazwy domeny, aby zezwolić subdomenie na wyświetlanie zawartości folderu „docelowego” przypisanego do strony internetowej znajdującej się na serwisie webowym, zaloguj się do [panela klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} w lewym pasku, wybierz ofertę, w której znajduje się Twoja strona internetowa, a następnie kliknij kartę `Moje strony`{.action}.
+Podobnie jak w przypadku nazwy domeny, aby zezwolić subdomenie na wyświetlanie zawartości folderu "docelowego" zadeklarowanego dla strony internetowej w ramach planu hostingowego, należy zalogować się do [panelu klienta OVHcloud](/links/manager) i wybrać opcję `Web Cloud`{.action}. Kliknij `Hosting`{.action} w lewej kolumnie, wybierz odpowiednią ofertę, w której znajduje się Twoja strona internetowa, a następnie wybierz zakładkę `Moje strony`{.action}.
 
-To tutaj zezwalasz subdomenie na dostęp do strony internetowej znajdującej się na Twoim serwisie webowym.
+W tym miejscu autoryzujesz swoją subdomenę do dostępu do swojej strony internetowej w ramach planu hostingowego.
 
-Aby uzyskać więcej informacji na temat konfiguracji domeny lub subdomeny na serwisie webowym, zapoznaj się z naszym przewodnikiem „[Jak przypisać nazwę domeny do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”. Niezależnie od tego, czy chodzi o nazwę domeny, czy subdomenę, procedura jest taka sama.
+Aby uzyskać więcej informacji na temat konfiguracji domeny lub subdomeny w ramach planu hostingowego, zapoznaj się z naszym przewodnikiem "[Jak przypisać nazwę domeny do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Procedura jest taka sama zarówno dla nazw domen, jak i subdomen.
 
 > [!warning]
 >

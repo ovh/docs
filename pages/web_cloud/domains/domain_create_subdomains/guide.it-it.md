@@ -173,11 +173,11 @@ Per i servizi non menzionati, consulta la documentazione relativa al servizio in
 
 #### Caso 1: visualizza un sito Web presente sul tuo hosting Web OVHcloud con un sottodominio <a name="link-subdomain-case-1"></a>
 
-Come per un dominio, per autorizzare un sottodominio a visualizzare il contenuto di una directory "target" dichiarata per un sito web presente su un hosting web, accedi all'[Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona l'offerta in cui si trova il tuo sito web e poi clicca sull'etichetta `I miei siti`{.action}.
+Proprio come per un nome di dominio, per autorizzare un sottodominio a visualizzare il contenuto di una directory "target" dichiarata per un sito web presente su un hosting web, accedi all'[Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra, seleziona l'offerta in cui si trova il tuo sito web e poi clicca sull'etichetta `I miei siti`{.action}.
 
-Ecco dove autorizzi l'accesso del tuo sottodominio al tuo sito web sull'hosting web.
+Da qui potrai autorizzare l'accesso del tuo sottodominio al tuo sito web presente sul tuo hosting web.
 
-Per ulteriori informazioni sulla configurazione di un dominio o sottodominio su un hosting web, consulta la nostra guida « [Come associare un nome a dominio a un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Che si tratti di un nome a dominio o di un sottodominio, la procedura è la stessa.
+Per maggiori dettagli sulla configurazione di un dominio o di un sottodominio su un hosting web, consulta la nostra guida "[Come associare un nome a dominio a un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Che si tratti di un nome a dominio o di un sottodominio, la procedura è la stessa.
 
 > [!warning]
 >

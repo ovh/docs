@@ -25,7 +25,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź
 
 #### Domena
 
-Wyświetla główną domenę strony internetowej, tak jak jest ona skonfigurowana na karcie „Moje strony” w Twoim hostingu.
+Wyświetla główną domenę strony internetowej, tak jak jest ona skonfigurowana na karcie "Moje strony" w Twoim hostingu.
 
 Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
@@ -39,7 +39,7 @@ Informuje, czy domena prawidłowo wskazuje na przypisany hosting. Dla każdej na
 
 Kliknięcie tego przycisku spowoduje przekierowanie do zakładki `Moje strony`{.action}danego hostingu.
 
-Aby uzyskać więcej informacji na temat diagnostyki, zapoznaj się z naszym przewodnikiem „[Jak sprawdzić powiązanie „domena / strona internetowa”?](/pages/web_cloud/web_hosting/my_websites_diagnosis)”.
+Aby uzyskać więcej informacji na temat diagnostyki, zapoznaj się z naszym przewodnikiem "[Jak sprawdzić powiązanie "domena / strona internetowa"?](/pages/web_cloud/web_hosting/my_websites_diagnosis)".
 
 #### Katalog główny
 

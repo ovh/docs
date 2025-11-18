@@ -25,7 +25,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cl
 
 #### Domínio
 
-Mostra o nome de domínio principal do site web, tal como está configurado na secção « Meus sites » do seu alojamento.
+Mostra o nome de domínio principal do site web, tal como está configurado na secção "Meus sites" do seu alojamento.
 
 Ao clicar, será redirecionado para o separador `Meus sites`{.action} do alojamento correspondente.
 

@@ -171,11 +171,11 @@ For services that are not mentioned, please refer to the documentation for the s
 
 #### Case 1: Display a website on my OVHcloud web hosting plan with a subdomain <a name="link-subdomain-case-1"></a>
 
-Just like for a domain name, to allow a subdomain to display the content of a declared "target" folder for a website hosted on a web hosting plan, log in to the [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click on `Hosting plans`{.action} in the left-hand column, select the relevant offer where your website is located, and then choose the `My sites`{.action} tab.
+As with a domain name, to authorise a subdomain to display the content of a "target" folder declared for a website on a web hosting plan, log in to the [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click on `Hosting plans`{.action} in the left-hand column, select the relevant offer where your website is located, then select the `My sites`{.action} tab.
 
 This is where you authorise your subdomain to access your website on your web hosting plan.
 
-For more details on configuring a domain or subdomain on a web hosting plan, please refer to our guide « [How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Whether it is a domain name or a subdomain, the procedure is the same.
+For more details on configuring a domain or subdomain on a web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". The procedure is the same for both domain names and subdomains.
 
 > [!warning]
 >

@@ -39,7 +39,7 @@ Informa se il tuo dominio punta correttamente verso l’hosting Web associato. P
 
 Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
-Per ulteriori dettagli sulle diagnosi, consulta la nostra guida "[Come verificare l'associazione 'nome di dominio / sito web'?](/pages/web_cloud/web_hosting/my_websites_diagnosis)".
+Per ulteriori dettagli sulle diagnosi, consulta la nostra guida "[Come verificare l'associazione "nome di dominio / sito web"?](/pages/web_cloud/web_hosting/my_websites_diagnosis)".
 
 #### Cartella di root
 
