@@ -101,7 +101,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 > **Etapa 3**
 >>
->> Na página que se abrir, clique no separador `Os meus sites`{.action}.
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
