@@ -1,7 +1,7 @@
 ---
 title: 'Managed Rancher Service supported versions and lifecycle policy'
 excerpt: 'A complete guide including lifecycle policy, release calendar, and supported versions for OVHcloud Managed Rancher Service'
-updated: 2025-10-09
+updated: 2025-11-14
 ---
 
 ## Objective
@@ -42,7 +42,6 @@ This schedule is subject to change and is provided for informational purposes on
 |-----------------|-----------------------|------------------|--------------------|-----------------|
 | 2.11            | 2025-03-31            | 2025-08-14       | 2026-04            | 2026-06         |
 | 2.10            | 2024-11-19            | 2025-01-30       | 2025-11            | 2026-Q1         |
-| 2.9             | 2024-07-30            | 2025-01-15       | 2025-08-14         | 2025-11         |
 
 **MRS release date:** Estimated date when this Rancher version is available for OVHcloud Managed Rancher Service.
 

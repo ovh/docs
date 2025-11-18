@@ -1,7 +1,7 @@
 ---
 title: "Il mio sito è lento. Cosa fare?" 
 excerpt: "Individua l'origine delle lentezze del tuo sito Web e scopri come risolvere questa situazione"
-updated: 2023-10-26
+updated: 2025-11-17
 ---
 
 ## Obiettivo
@@ -32,7 +32,6 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 > In caso di necessità di un servizio con un tasso di disponibilità SLA superiore al 99%, ti consigliamo di considerare l'utilizzo di un [Server Privato Virtuale (VPS)](/links/bare-metal/vps) o di un [Server Dedicato](/links/bare-metal/bare-metal).
 >
 > Inoltre, le prestazioni dell'infrastruttura di hosting condivisi OVHcloud sono monitorate 24 ore su 24 e 7 giorni su 7, al fine di garantirti un alto tasso di disponibilità e, in caso di comprovata necessità, un rapido ripristino dei tuoi servizi.
->
 
 ## Prerequisiti
 
@@ -46,12 +45,10 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
 > Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non sarà infatti in grado di fornirti assistenza **se l'infrastruttura in cui è presente la tua offerta di hosting condiviso non è interessata**. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
->
 
 > [!success]
 >
 > Ti consigliamo di registrare i risultati della diagnostica in base ai tuoi progressi in questa guida. In effetti, questi risultati si riveleranno molto utili per la risoluzione della sua situazione, qualunque sia la causa della lentezza.
->
 
 ### Comprendere la nozione di Time To First Byte (TTFB)
 
@@ -69,13 +66,13 @@ Infatti, per Content Managment System (CMS) come WordPress, Joomla!, PrestaShop 
 >
 > Una volta inoltrata la richiesta, il file "**index.php**" viene eseguito dal server web del tuo hosting condiviso. 
 >
->Nella sua esecuzione, il file "**index.php**" deve recuperare informazioni tra gli altri file che compongono il tuo sito web e gli elementi presenti nel tuo database. 
+> Nella sua esecuzione, il file "**index.php**" deve recuperare informazioni tra gli altri file che compongono il tuo sito web e gli elementi presenti nel tuo database. 
 >
->Ogni richiesta di informazioni genera una richiesta interna sul tuo servizio di hosting. 
+> Ogni richiesta di informazioni genera una richiesta interna sul tuo servizio di hosting. 
 >
->Il file "**index.php**" aspetta di avere il risultato di tutte le richieste interne richieste **prima** di rinviare il primo byte di dati al tuo browser.
+> Il file "**index.php**" aspetta di avere il risultato di tutte le richieste interne richieste **prima** di rinviare il primo byte di dati al tuo browser.
 >
->Se il tuo file "**index.php**" genera richieste "lente" o farraginose da eseguire, il TTFB sarà elevato e il tuo sito richiederà diversi secondi per essere visualizzato. Le prestazioni della tua offerta di hosting non sono quindi in dubbio.
+> Se il tuo file "**index.php**" genera richieste "lente" o farraginose da eseguire, il TTFB sarà elevato e il tuo sito richiederà diversi secondi per essere visualizzato. Le prestazioni della tua offerta di hosting non sono quindi in dubbio.
 
 Gli strumenti di diagnostica online ti permettono di recuperare il TTFB dal tuo hosting. Tuttavia, la maggior parte di loro funziona come browser e i loro risultati vanno relativizzati.<br>
 Questi strumenti non sono infatti in grado di prendere in carico le richieste interne richieste dal file che hai chiamato tramite il tuo browser, come nell'esempio con il file "**index.php**".
@@ -93,13 +90,7 @@ Tutte le diagnostiche dello step 1 devono essere eseguite **senza eccezione** pe
 
 Per garantire che i tuoi servizi (hosting condiviso **e** database) non siano oggetto di manutenzione o incidente, recupera le informazioni sul cluster e il filer del tuo hosting condiviso, così come le informazioni generali relative al tuo database. In seguito potrai verificare il loro stato su [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}, seleziona il cluster e il file in cui si trova il tuo hosting condiviso, clicca su `Hosting`{.action} e seleziona l'hosting Web corrispondente. Nella scheda `Informazioni generali`{.action}, clicca su `datacenter` del tuo hosting condiviso e `filer` dov'è.
-
-![Recupera Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
-
-Clicca sulla scheda `Multisito`{.action} per recuperare il numero del cluster in cui si trova il tuo hosting condiviso.
-
-![Recuperare cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
+Per conoscere il cluster e il filer in cui si trova il tuo spazio di hosting condiviso, consulta la nostra guida "[Hosting Web - Come conoscere cluster e filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >
@@ -108,7 +99,6 @@ Clicca sulla scheda `Multisito`{.action} per recuperare il numero del cluster in
 > Puoi iscriverti con il tuo indirizzo email alla dichiarazione di incidente o di manutenzione per ricevere una notifica via email sullo stato di avanzamento delle operazioni.
 >
 > Una volta che lo stato dell'incidente o della manutenzione è stato marcato come **risolto**, la stabilizzazione del carico accumulato può richiedere un tempo massimo di **3 ore** dopo la notifica di risoluzione per potersi riassorbire completamente.
->
 
 Se non vengono segnalati incidenti o interventi di manutenzione, prosegui nella diagnostica.
 
@@ -135,7 +125,6 @@ phpinfo();
 > Le operazioni su un file "**.htaccess**" possono avere conseguenze sulla visualizzazione del tuo sito. In caso di difficoltà o dubbi, rivolgiti a un [fornitore specializzato](/links/partner).
 >
 > Se non compare e **solo per gli utenti esperti**, rinomina i tuoi file "**.htaccess**" in "**.htaccess_OLD**" affinché il server non li esegua più durante il test. Rinominali correttamente una volta completata la diagnostica.
->
 
 **Esempio**: se il dominio che permette l'accesso al tuo sito è "domain.tld" e se il file "**phpinfo.php**" è stato inserito alla radice del tuo sito web, quest'ultimo sarà accessibile tramite il seguente URL: `http://domain.tld/phpinfo.php` (o `https://domain.tld/phpinfo.php`).
 
@@ -144,7 +133,6 @@ phpinfo();
 > Se la chiamata del file "**phpinfo.php**" mostra **istantaneamente** una tabella di configurazione, significa che i rallentamenti non provengono dall'hosting condiviso in cui si trova il tuo sito Web. In caso contrario, il file apparirà così lentamente come le altre pagine. 
 >
 > In altre parole, se i ritardi si verificano solo in parte delle pagine o del contenuto del tuo sito Web, significa che l'hosting condiviso **non è la causa dei ritardi*** riscontrati sul tuo sito Web.
->
 
 #### 1.4 - Prova la connettività del tuo database:
 
@@ -159,7 +147,6 @@ Se la connessione è andata a buon fine, accedi all'interfaccia seguente:
 > [!warning]
 >
 > In caso di errore, consulta la nostra guida sugli [errori ricorrenti riscontrati nel database](/pages/web_cloud/web_hosting/diagnosis_database_errors). Per correggere la posizione del tuo database, utilizza la guida qui sotto.
->
 
 #### 1.5 - Interpretazione delle diagnostiche effettuate
 
@@ -188,7 +175,6 @@ A questo punto, sai che i rallentamenti sono generati dalle pagine/script/file c
 > [!warning]
 >
 > In caso di difficoltà nell'esecuzione delle azioni successive, contatta uno dei nostri [specialisti del settore](/links/partner). OVHcloud non fornirà assistenza nello sviluppo e/o nell'ottimizzazione del contenuto del tuo sito Web.
->
 
 Di seguito trovi le azioni da effettuare per identificare la fonte o le fonti dei rallentamenti e ottimizzare il tuo sito Web.
 
@@ -238,21 +224,18 @@ Infatti, meno il numero di richieste sarà elevato, meno saranno richieste le ri
 > cliccando sul tasto `F12` quando sei sul tuo browser Firefox e poi seleziona la scheda `Rete`. Ricarica la tua pagina Web con i tasti `Ctrl + Maj + R` per visualizzare le richieste eseguite per caricare la tua pagina. Identifica gli elementi più lunghi da caricare e ottimizzarli.
 >
 >![Analisi di rete Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
->
 
 Per diminuire il flusso di richieste a ogni caricamento delle tue pagine, puoi anche impostare una Content Delivery Network (CDN). che permetterà di mettere in cache il contenuto statico del tuo sito Web. Il tuo hosting Web sarà meno sollecitato e disporrà di maggiori risorse per gestire le altre richieste che non possono essere salvate in cache.
 
 > [!primary]
 >
 > OVHcloud propone diverse [offerte CDN](/links/web/hosting-options). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
->
 
 #### 2.4 - ottimizza il tuo database
 
 > [!warning]
 >
 > Le azioni eseguite nei database possono avere conseguenze irreversibili se non eseguite in modo corretto e metodico. Se non sei sicuro delle azioni da realizzare, rivolgiti a un [provider specializzato](/links/partner). 
->
 
 Verifica che vengano effettuate richieste in quantità sufficiente verso il tuo database.<br>
 In effetti, questa situazione può provocare una sovrasollecitazione e portare a rallentamenti o addirittura a codici "504 Gateway Timeout".

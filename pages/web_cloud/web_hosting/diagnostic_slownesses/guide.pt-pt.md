@@ -1,7 +1,7 @@
 ---
 title: "O meu site é lento. O que fazer?" 
 excerpt: "Identifique a origem da lentidão do seu website e descubra como resolver esta situação"
-updated: 2023-10-26
+updated: 2025-11-17
 ---
 
 ## Objetivo
@@ -32,7 +32,6 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 > Se precisar de um serviço com uma taxa de disponibilidade SLA superior a 99%, sugerimos que considere a utilização de um [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) ou de um [Servidor Dedicado](/links/bare-metal/bare-metal).
 >
 > Além disso, as performances da infraestrutura de alojamento partilhado OVHcloud são monitorizadas 24 horas por dia e 7 dias por semana. Isto de forma a garantir-lhe uma alta taxa de disponibilidade e, se for caso disso, um restabelecimento rápido dos seus serviços em caso de sobrecarga comprovada.*
->
 
 ## Requisitos
 
@@ -43,15 +42,17 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 
 > [!warning]
 >
+> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
+
+> [!warning]
+>
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
 > Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). De facto, não poderemos fornecer-lhe assistência **a partir do momento em que a infraestrutura em que o seu alojamento partilhado está presente não esteja em causa**. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
->
 
 > [!success]
 >
 > Recomendamos que registe os resultados de diagnóstico à medida que avançamos neste manual. De facto, estes resultados revelar-se-ão muito úteis para a resolução da sua situação, independentemente da origem da lentidão.
->
 
 ### Compreender a noção de Time To First Byte (TTFB)
 
@@ -69,13 +70,13 @@ De facto, para os Content Managment System (CMS) como WordPress, Joomla!, Presta
 >
 > Uma vez que o pedido chega ao ficheiro "**index.php**", este é executado pelo servidor web do seu alojamento partilhado. 
 >
->Na sua execução, o ficheiro "**index.php**" deve recuperar as informações entre os outros ficheiros que compõem o seu website, ou mesmo os elementos presentes na sua base de dados. 
+> Na sua execução, o ficheiro "**index.php**" deve recuperar as informações entre os outros ficheiros que compõem o seu website, ou mesmo os elementos presentes na sua base de dados. 
 >
->Cada um destes pedidos de informações gera um pedido interno sobre o seu serviço de alojamento. 
+> Cada um destes pedidos de informações gera um pedido interno sobre o seu serviço de alojamento. 
 >
->O ficheiro "**index.php**" irá aguardar o resultado de todos os pedidos internos que solicitou **antes** que devolva o primeiro byte de dados ao seu browser.
+> O ficheiro "**index.php**" irá aguardar o resultado de todos os pedidos internos que solicitou **antes** que devolva o primeiro byte de dados ao seu browser.
 >
->Se o seu ficheiro "**index.php**" gera pedidos "lentos" ou pesados de executar, o TTFB será elevado e o seu site levará vários segundos a aparecer. As performances da sua oferta de alojamento não estão em causa.
+> Se o seu ficheiro "**index.php**" gera pedidos "lentos" ou pesados de executar, o TTFB será elevado e o seu site levará vários segundos a aparecer. As performances da sua oferta de alojamento não estão em causa.
 
 Ferramentas de diagnóstico online permitem-lhe recuperar o TTFB do seu alojamento. No entanto, a maior parte deles funcionam como browsers e os seus resultados devem ser relativizados.<br>
 Com efeito, estas ferramentas não estão em condições de ter em conta os pedidos internos solicitados pelo ficheiro que ligou através do seu browser, como no exemplo acima com o ficheiro "**index.php**".
@@ -93,13 +94,7 @@ Todos os diagnósticos da etapa 1 devem ser realizados **sem exceção** para de
 
 Para ter a certeza de que os seus serviços (alojamento partilhado **e** base de dados) não são objeto de manutenção ou incidente, recupere as informações sobre o cluster e file do seu alojamento partilhado, assim como as informações gerais relativas à sua base de dados. De seguida, poderá verificar o seu estado em [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
-
-![Recuperar Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
-
-A seguir, clique no separador `Multisites`{.action} para obter o número do cluster onde está o seu alojamento partilhado.
-
-![Recuperar o cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
+Para conhecer o cluster e o filer onde se encontra o seu alojamento partilhado, consulte o nosso guia "[Alojamento web - Como conhecer o seu cluster e o seu filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >
@@ -108,7 +103,6 @@ A seguir, clique no separador `Multisites`{.action} para obter o número do clus
 > Pode inscrever-se com o seu endereço de e-mail na declaração de incidente ou de manutenção a fim de ser notificado por e-mail do progresso das operações.
 >
 > Uma vez o estado do incidente ou da manutenção assinalado como **resolvido**, a estabilização da carga acumulada pode requerer um prazo máximo de **3 horas** após a notificação de resolução para se recuperar completamente.
->
 
 Se nenhum incidente ou nenhuma manutenção forem declarados, prossiga os seus diagnósticos.
 
@@ -135,7 +129,6 @@ phpinfo();
 > As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](/links/partner) se sentir dificuldades em realizar o seguinte.
 >
 > Se não for apresentada e **unicamente para os utilizadores experientes**, renomeie os seus ficheiros "**.htaccess**" em "**.htaccess_OLD**" para que o servidor não os execute durante o seu teste. Dê-lhes o nome correto quando o diagnóstico for efetuado.
->
 
 **Exemplo** se o domínio que permite o acesso ao seu website for "domain.tld" e o ficheiro "**phpinfo.php**" estiver na raiz do seu website, este será acessível graças ao seguinte URL: `http://domain.tld/phpinfo.php` (ou `https://domain.tld/phpinfo.php`).
 
@@ -144,7 +137,6 @@ phpinfo();
 > Se a chamada do ficheiro "**phpinfo.php**" apresentar **instantaneamente** um quadro de configuração, isto significa que os atrasos não provêm do alojamento partilhado onde se encontra o seu website. Caso contrário, o ficheiro aparecerá tão lentamente como as outras páginas. 
 >
 > Por outras palavras, se a lentidão se verifica apenas numa parte das páginas ou do conteúdo do seu website, isso significa que o alojamento partilhado **não é a causa dos atrasos** encontrados no seu website.
->
 
 #### 1.4 - Teste a conectividade da sua base de dados:
 
@@ -159,7 +151,6 @@ Se a ligação for bem-sucedida, poderá aceder à seguinte interface:
 > [!warning]
 >
 > Se encontrar um erro, consulte o nosso manual sobre os [erros comuns encontrados com uma base de dados](/pages/web_cloud/web_hosting/diagnosis_database_errors). De seguida, altere a sua situação usando o guia acima para tentar novamente aceder à base de dados.
->
 
 #### 1.5 - Interpretação dos diagnósticos efetuados
 
@@ -188,7 +179,6 @@ Neste momento, sabe que as lentidões são geradas pelas páginas/scripts/fichei
 > [!warning]
 >
 > Se encontrar dificuldades para realizar as ações que se seguem, pode contactar um dos nossos [prestadores especializados](/links/partner). A OVHcloud não prestará assistência ao desenvolvimento e/ou otimização do conteúdo do seu website.
->
 
 Encontre aqui as ações a realizar para identificar a(s) fonte(s) da(s) lentidão e otimizar o seu website.
 
@@ -238,21 +228,18 @@ Com efeito, quanto menos o número de pedidos for elevado, menos os recursos atr
 > Para isso, carregue na tecla `F12` quando estiver no seu browser Firefox e selecione o separador `rede`. Carregue a sua página web com os teclados `Ctrl + Maj + R` para que a ferramenta lhe mostrar os pedidos executados para carregar a sua página. Identifique os elementos mais longos a carregar para depois os otimizar.
 >
 >![Análise de rede Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
->
 
 Para diminuir o fluxo de pedidos a cada um dos carregamentos das suas páginas, pode também implementar um Content Delivery Network (CDN). que permitirá colocar em cache o conteúdo estático do seu website. O seu alojamento web será menos solicitado e disporá de mais recursos para tratar o resto dos pedidos que não podem ser colocados em cache.
 
 > [!primary]
 >
 > A OVHcloud oferece várias [ofertas CDN](/links/web/hosting-options). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e consulte o nosso guia sobre [utilização do CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
->
 
 #### 2.4 - otimize a sua base de dados
 
 > [!warning]
 >
 > As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](/links/partner) se não tem a certeza das ações a realizar. 
->
 
 Verifique se um número consequente de pedidos é efetuado para a sua base de dados.<br>
 Com efeito, esta situação pode gerar uma sobrecarga e conduzir a atrasos, ou mesmo a códigos "504 Gateway Timeout".
@@ -284,7 +271,6 @@ Pode encontrar pistas de otimização para o seu site analisando-o em [gtmetrix.
 > [!success]
 >
 > Independentemente da lentidão, quanto mais otimizado for o seu website, mais otimizado será o seu referenciamento natural nos motores de busca.
->
 
 ### Conclusão
 
