@@ -1,7 +1,11 @@
 ---
 title: AI Endpoints - Utiliser les sorties structurées avec LangChain4j
 excerpt: Apprenez à utiliser les sorties structurées avec Java, LangChain4j et OVHcloud AI Endpoints
+<<<<<<< HEAD
+updated: 2025-06-17
+=======
 updated: 2025-08-06
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 ---
 
 > [!primary]
@@ -13,17 +17,30 @@ updated: 2025-08-06
 
 In this tutorial, we will explore how to use **Structured Output** with OVHcloud AI Endpoints.
 
+<<<<<<< HEAD
+To do this, we will use **[LangChain4j](https://github.com/langchain4j/langchain4j)**, Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
+
+Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
+
+![image](images/parrot.webp){.thumbnail}
+=======
 To do this, we will use **[LangChain4j](https://github.com/langchain4j/langchain4j)**, Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that  **LangChain4j** is not officially maintained by the LangChain team, despite the similar name.
 
 Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
 ![image](images/parrot.png){.thumbnail}
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 ## Definition
 
 - **Structured Output**: Structured output allows you to format output data in a way that makes it easier for machines to interpret and process.
+<<<<<<< HEAD
+- **[LangChain4j](https://github.com/langchain4j/langchain4j)**: Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
+- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
+=======
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: a Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
 - **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 ## Requirements
 
@@ -53,10 +70,18 @@ ResponseFormat responseFormat = ResponseFormat.builder()
 ```
 
 In this example, we define a JSON output format with a schema that specifies the name, age, height, and married properties as required.
+<<<<<<< HEAD
+Configure the model to use
+
+This example uses the Mistral AI model hosted on OVHcloud AI Endpoints.
+To configure the model, you need to set up the API key, base URL, and model name as environment variables.
+Fell free to use another model, see AI Endpoints catalog.
+=======
 
 This example uses the Mistral AI model hosted on OVHcloud AI Endpoints. 
 
 To configure the model, you need to set up the API key, base URL, and model name as environment variables. Feel free to use another model, see AI Endpoints catalog.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 You can find your access token, model URL, and model name in the OVHcloud AI Endpoints model dashboard.
 
@@ -196,12 +221,19 @@ To discover how to build complete and powerful applications using AI Endpoints, 
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
+<<<<<<< HEAD
+=======
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 ## Feedback
 
 Please feel free to send us your questions, feedback, and suggestions regarding AI Endpoints and its features:
 
 - In the #ai-endpoints channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud), where you can engage with the community and OVHcloud team members.
 
+<<<<<<< HEAD
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+=======
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7

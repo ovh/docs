@@ -1,7 +1,11 @@
 ---
 title: AI Endpoints - Utiliser les appels de fonctions avec LangChain4J
 excerpt: Apprenez à utiliser les appels de fonctions avec Java, LangChain4j et OVHcloud AI Endpoints
+<<<<<<< HEAD
+updated: 2025-06-24
+=======
 updated:  2025-08-06
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 ---
 
 > [!primary]
@@ -11,6 +15,16 @@ updated:  2025-08-06
 
 ## Objective
 
+<<<<<<< HEAD
+Stable Diffusion is a powerful artificial intelligence model to generate images from text descriptions.
+You can use it, thanks to AI Endpoints, simply by calling the endpoint with a prompt. 
+However, creating a good prompt for Stable Diffusion can be challenging.
+Function Calling enables the AI system to perform more complex and dynamic tasks, and to leverage external knowledge and services to generate more accurate and informative responses. 
+In the context of image generation, function calling can be used to enhance the quality of the prompts by optimizing them thanks to external tool based on a LLM.
+In this tutorial, we will show you how to optimize your prompts using **Function Calling** and OVHcloud AI Endpoints.
+
+To do this, we will use **[LangChain4j](https://github.com/langchain4j/langchain4j)**, Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
+=======
 Stable Diffusion is a powerful artificial intelligence model to generate images from text descriptions. You can use it, thanks to AI Endpoints by simply calling the endpoint with a prompt. However, creating a good prompt for Stable Diffusion can be challenging.
 
 Function Calling enables the AI system to perform more complex and dynamic tasks, and to leverage external knowledge and services to generate more accurate and informative responses. 
@@ -19,6 +33,7 @@ In the context of image generation, function calling can be used to enhance the 
 **In this tutorial, we will show you how to optimize your prompts using **Function Calling** and OVHcloud AI Endpoints.**
 
 To do this, we will use **[LangChain4j](https://github.com/langchain4j/langchain4j)**, a Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that **LangChain4j** is not officially maintained by the LangChain team, despite the similar name.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
@@ -26,8 +41,13 @@ Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** w
 
 ## Definition
 
+<<<<<<< HEAD
+- **Function Calling**: Function calling refers to the ability of a language model or AI system to ask to invoke and execute pre-defined functions or tasks, such as data processing, calculations, or external API calls, in response to user input or prompts.
+- **[LangChain4j](https://github.com/langchain4j/langchain4j)**: Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
+=======
 - **Function Calling**: Function calling refers to the ability of a language model or AI system AI system to request, invoke, and execute predefined functions or tasks such as data processing, calculations, or external API calls in response to user input or prompts.
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: a Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 - **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
 
 ## Requirements
@@ -43,7 +63,10 @@ To create our application we will use LangChain4J to simplify the integration of
 ### Tool creation
 
 To use the function calling mechanism, we need to define a tool.
+<<<<<<< HEAD
+=======
 
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 In our example the goal of the tool is to call Stable Diffusion API to generate an image.
 
 ⚠️ This is not the model itself that calls the tool but the client that invokes the model. ⚠️
@@ -105,7 +128,11 @@ interface ChatBot {
 
 It’s not mandatory to create a such detailed system message, but it helps the model to choose the tool when needed.
 
+<<<<<<< HEAD
+After this we assemble all the pieces together.
+=======
 After this we assemble all the pieces together:
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 ```java
 // Chatbot with tool calling
@@ -145,8 +172,14 @@ void main() throws Exception {
 }
 ```
 
+<<<<<<< HEAD
+ℹ️ We use a loop to be able to ask the model to optimize the image generation parameters based on the previous response. ℹ️
+
+And that it!
+=======
 ℹ️ We use a loop to be able to ask the model to optimize the image generation parameters based on the previous response. ℹ️ And that is it!
 
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 It’s time to test our Stable Diffusion optimizer.
 
 ```sh
@@ -170,11 +203,18 @@ with a warm and inviting atmosphere. If you have any issues or need further assi
 Enter your message: exit
 ```
 
+<<<<<<< HEAD
+ℹ️ As you see, the model translate the prompt 😊
+
+Here is the result of the prompt:
+![A cut red cat generated by Stable Diffusion](images/painter.png)
+=======
 ℹ️ As you can see, the model translated the prompt 😊
 
 Here is the result of the prompt:
 
 ![A cut red cat generated by Stable Diffusion](images/prompt_result.png)
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7
 
 ## Conclusion
 
@@ -196,4 +236,8 @@ Please feel free to send us your questions, feedback, and suggestions regarding 
 
 - In the #ai-endpoints channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud), where you can engage with the community and OVHcloud team members.
 
+<<<<<<< HEAD
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+=======
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+>>>>>>> adbe315c009c5bc773f150eac239ee9da2786ea7

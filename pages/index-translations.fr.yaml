@@ -408,3 +408,55 @@ observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service
 observability-logs-data-platform-security-conformity: Sécurité et conformité
 observability-logs-data-platform-usecases: Cas d'usage
 observability-logs-data-platform-services-logs: OVHcloud Service Logs
+tutorials-domain-names: Noms de domaines
+tutorials-web-hosting: Hébergements Web
+tutorials-wordpress: WordPress
+tutorials-dedicated-servers: Serveurs Dédiés
+tutorials-public-cloud: Public Cloud
+tutorials-compute: Compute
+tutorials-object-storage: Object Storage
+tutorials-public-cloud-databases: Public Cloud Databases
+tutorials-managed-kubernetes: Managed Kubernetes
+tutorials-managed-private-registry: Managed Private Registry
+tutorials-ai-notebooks: AI Notebooks
+tutorials-ai-training: AI Training
+tutorials-ai-deploy: AI Deploy
+db-clouddb: Web Cloud Databases
+db-clouddb-getting-started: Premiers pas
+db-clouddb-configuration: Configuration
+db-clouddb-technical-resources: Ressources techniques
+db-public-cloud-databases: Public Cloud Databases
+db-public-cloud-databases-general-information: Informations générales
+db-public-cloud-databases-general-guides: Guides généraux
+db-public-cloud-databases-mongodb: MongoDB
+db-public-cloud-databases-mongodb-getting-started: MongoDB - Premiers pas
+db-public-cloud-databases-mongodb-guides: MongoDB - Guides d'utilisation
+db-public-cloud-databases-mongodb-advanced-guides: MongoDB - Utilisation avancée
+db-public-cloud-databases-mongodb-tutorials: MongoDB - Tutoriels
+db-public-cloud-databases-mysql: MySQL
+db-public-cloud-databases-mysql-guides: MySQL - Guides
+db-public-cloud-databases-mysql-tutorials: MySQL - Tutoriels
+db-public-cloud-databases-postgresql: PostgreSQL
+db-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
+db-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
+db-public-cloud-databases-valkey: Valkey
+db-public-cloud-databases-valkey-guides: Valkey - Guides
+db-public-cloud-databases-valkey-tutorials: Valkey - Tutoriels
+db-public-cloud-databases-grafana: Dashboards
+db-public-cloud-databases-grafana-guides: Dashboards - Guides
+db-public-cloud-databases-grafana-tutorials: Dashboards - Tutorials
+db-public-cloud-databases-kafka: Kafka
+db-public-cloud-databases-kafka-guides: Kafka - Guides
+db-public-cloud-databases-kafka-connect: Kafka Connect
+db-public-cloud-databases-kafka-connect-guides: Kafka Connect - Guides
+db-public-cloud-databases-kafka-mirrormaker: Kafka MirrorMaker
+db-public-cloud-databases-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
+db-public-cloud-databases-cassandra: Cassandra
+db-public-cloud-databases-cassandra-guides: Cassandra - Guides
+db-public-cloud-databases-opensearch: OpenSearch
+db-public-cloud-databases-opensearch-guides: OpenSearch - Guides
+faq: FAQ
+troubleshooting: Dépannage
+troubleshooting-dedicated-servers: Serveurs Dédiés
+troubleshooting-public-cloud: Public Cloud
+troubleshooting-web-hosting: Hébergements Web
