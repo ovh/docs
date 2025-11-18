@@ -171,7 +171,7 @@ For services that are not mentioned, please refer to the documentation for the s
 
 #### Case 1: Display a website on my OVHcloud web hosting plan with a subdomain <a name="link-subdomain-case-1"></a>
 
-As with a domain name, to authorise a subdomain to display the content of a "target" folder declared for a website on a web hosting plan, log in to the [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click on `Hosting plans`{.action} in the left-hand column, select the relevant offer where your website is located, then select the `My sites`{.action} tab.
+As with a domain name, to authorise a subdomain to display the content of a "target" folder declared for a website on a web hosting plan, log in to the [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click on `Hosting plans`{.action} in the left-hand column, select the plan concerned where your website is located, then select the `My sites`{.action} tab.
 
 This is where you authorise your subdomain to access your website on your web hosting plan.
 
