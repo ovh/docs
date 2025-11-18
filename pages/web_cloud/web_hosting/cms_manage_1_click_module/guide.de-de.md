@@ -1,7 +1,7 @@
 ---
 title: "1-Klick-Module verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten"
-updated: 2024-11-15
+updated: 2025-11-27
 ---
 
 ## Ziel 
@@ -23,10 +23,6 @@ updated: 2024-11-15
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
-
-> [!warning]
->
-> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
 
 ### Login zu Ihrer Seite
 
@@ -79,9 +75,9 @@ Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst sein Datenbank mit Sicherhe
 
 Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [Web Cloud Databases](/links/web/databases) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
 
-Andernfalls gehen Sie zum Tab `Multisite`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`: Dieses Verzeichnis enthält die Dateien, aus denen Ihr 1-Klick-Modul auf dem FTP-Server besteht.
+Andernfalls wechseln Sie zum Tab `Meine Seiten`{.action}. Notieren Sie sich den Namen des `Wurzelverzeichnis`, der in der Zeile der betreffenden Webseite angezeigt wird: Dies ist das Verzeichnis, in dem sich die Dateien befinden, die Ihr 1-Klick-Modul auf dem FTP-Server bilden.
 
-Loggen Sie sich anschließend in den [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Multisite`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
+Loggen Sie sich anschließend in den [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Meine Seiten`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
 - WordPress: **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
 - Joomla!: **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).

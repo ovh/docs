@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo gestionar su módulo en 1 clic?"
 excerpt: "Descubra cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud"
-updated: 2024-11-15
+updated: 2025-11-27
 ---
 
 ## Objetivo
@@ -24,10 +24,6 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
-
-> [!warning]
->
-> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
 
 ### Acceder al sitio web
 
@@ -77,9 +73,9 @@ No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la d
 
 Para eliminar el módulo en 1 clic, es necesario empezar identificando su base de datos de forma **segura**. Para ello, acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en `Web Cloud`{.action}, `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
-En caso contrario, abra la pestaña `Multisitio`{.action}. Anote el nombre de la `Carpeta raíz`: es el directorio en el que se encuentran los archivos que constituyen su módulo en 1 clic en el servidor FTP.
+En caso contrario, vaya a la pestaña `Mis sitios`{.action}. Anote el nombre de la `Carpeta raíz` que aparece en la línea del sitio web correspondiente: se trata del directorio en el que se encuentran los archivos que constituyen su módulo de 1 clic en el servidor FTP.
 
-Conéctese al [espacio FTP del alojamiento](/pages/web_cloud/web_hosting/ftp_connection). Abra la `Carpeta raíz` encontrada anteriormente en la pestaña `Multisitio`{.action} y busque el archivo de configuración de su módulo:
+Conéctese al [espacio FTP del alojamiento](/pages/web_cloud/web_hosting/ftp_connection). Abra la `Carpeta raíz` encontrada anteriormente en la pestaña `Mis sitios`{.action} y busque el archivo de configuración de su módulo:
 
 - Para WordPress : **"wp-config.php"** (el nombre de la base de datos aparece con el texto **"DB_NAME"**).
 - Para Joomla! : **"configuration.php"** (el nombre de la base de datos aparece bajo el término **"public $db"**).

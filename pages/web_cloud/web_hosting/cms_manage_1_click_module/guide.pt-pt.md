@@ -1,7 +1,7 @@
 ---
 title: "Como gerir o seu módulo em 1 clique?"
 excerpt: "Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud"
-updated: 2024-11-15
+updated: 2025-11-27
 ---
 
 ## Objetivo
@@ -24,10 +24,6 @@ Os módulos 1 clique permitem a instalação fácil e rápida de um software on-
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
-
-> [!warning]
->
-> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
 
 ### Aceder ao seu site
 
@@ -79,9 +75,9 @@ Para eliminar o módulo 1 clique, deve começar por identificar a sua base de da
 
 Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [Web Cloud Databases](/links/web/databases), pode considerar que se trata do seu site.
 
-Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da `Pasta raiz`: trata-se do diretório no qual se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
+Caso contrário, dirija-se ao separador `Meus sites`{.action}. Registe o nome da `Pasta raiz` presente na linha do site em questão: trata-se do diretório onde se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
 
-Aceda ao [espaço FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento. Abra a `Pasta raiz` encontrada anteriormente no separador `Multisite`{.action} e procure o ficheiro de configuração do seu módulo:
+Aceda ao [espaço FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento. Abra a `Pasta raiz` encontrada anteriormente no separador `Meus sites`{.action} e procure o ficheiro de configuração do seu módulo:
 
 - Para WordPress : **"wp-config.php"** (o nome da base de dados aparece com a menção **"DB_NAME"**).
 - Para Joomla! : **"configuration.php"** (o nome da base de dados aparece com a menção **"public $db"**).
