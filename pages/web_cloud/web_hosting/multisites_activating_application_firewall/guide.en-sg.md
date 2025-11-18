@@ -100,7 +100,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 > **Step 3**
 >> 
->> On the page that pops up, click on the `My Websites`{.action} tab.
+>> On the page that pops up, click on the `My sites`{.action} tab.
 >> 
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >> 
