@@ -176,7 +176,7 @@ As with a domain name, to authorise a subdomain to display the content of a "tar
 
 This is where you authorise your subdomain to access your website on your web hosting plan.
 
-For more details on configuring a domain or subdomain on a web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". The procedure is the same for both domain names and subdomains.
+For more details on setting up a domain or subdomain on a web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". The procedure is the same for both domain names and subdomains.
 
 > [!warning]
 >
