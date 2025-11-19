@@ -1,7 +1,7 @@
 ---
 title: "Come geolocalizzare un sito Web in un paese specifico?"
 excerpt: "Questa guida ti mostra come individuare un sito Web grazie agli indirizzi IP geolocalizzati disponibili sulle offerte di hosting condiviso OVHcloud"
-updated: 2025-08-22
+updated: 2025-11-27
 ---
 
 ## Obiettivo
@@ -47,17 +47,19 @@ Per utilizzare l'opzione di geolocalizzazione via IP, clicca sulle schede qui so
 >>
 > **Step 3**
 >>
->> Nella nuova pagina clicca sulla scheda `Multisito`{.action}.
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
->> Nella nuova pagina, visualizzi una tabella con i domini associati.
+>> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
 >>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Clicca sul pulsante `...`{.action} a destra del dominio nella tabella. Infine clicca su `Modifica il dominio`{.action}.
+>> Fai quindi clic sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Modifica il dominio`{.action}.
+>>
+>> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Step 5**
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Como geolocalizar um website num país específico?"
 excerpt: "Saiba como localizar o seu website graças aos endereços IP geolocalizados disponíveis nas ofertas de alojamento partilhado OVHcloud"
-updated: 2025-08-22
+updated: 2025-11-27
 ---
 
 ## Objetivo
@@ -47,17 +47,19 @@ Para utilizar a opção de geolocalização por IP, clique nas janelas abaixo pa
 >>
 > **Etapa 3**
 >>
->> Na página que se abrir, clique no separador `Multisite`{.action}.
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
->> Na nova página, é apresentada uma tabela com os nomes de domínio associados.
+>> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
 >>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Clique no botão `...`{.action} situado à direita do seu nome de domínio na tabela. Por fim, clique em `Modificar o domínio`{.action}.
+>> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante e, depois, em `Modificar o domínio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Etapa 5**
 >>

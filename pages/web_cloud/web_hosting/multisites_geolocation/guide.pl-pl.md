@@ -1,7 +1,7 @@
 ---
 title: "Jak geolokalizować stronę WWW w danym kraju?"
 excerpt: "Dowiedz się, jak zlokalizować stronę WWW, korzystając z geolokalizowanych adresów IP dostępnych w ofercie hostingu współdzielonego OVHcloud"
-updated: 2025-08-22
+updated: 2025-11-27
 ---
 
 ## Wprowadzenie
@@ -47,17 +47,19 @@ Aby skorzystać z opcji geolokalizacji IP, kliknij poniższe zakładki, aby wyś
 >>
 > **Etap 3**
 >>
->> Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}.
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
 > **Etap 4**
 >>
->> Na nowej stronie wyświetli się tabela zawierająca przypisane domeny.
+>> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
+>> ![Strona internetowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Kliknij przycisk `...`{.action} po prawej stronie nazwy domeny w tabeli. Następnie kliknij `Zmień domenę`{.action}.
+>> Następnie kliknij przycisk `⁝`{.action} po prawej stronie nazwy domeny lub poddomeny, a następnie kliknij `Zmień domenę`{.action}.
+>>
+>> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Etap 5**
 >>
