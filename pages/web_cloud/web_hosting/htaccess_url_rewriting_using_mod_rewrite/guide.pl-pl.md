@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - przepisz URL dostępu do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"
 excerpt: "Dowiedz się, jak zmienić adres URL dostępu do Twojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"
-updated: 2022-12-22
+updated: 2025-11-27
 ---
 
 ## Wprowadzenie
@@ -30,11 +30,6 @@ Na przykład Apache pobiera zapytania HTTP generowane przez przeglądarki intern
 - Posiadanie [hostingu OVHcloud](/links/web/hosting)
   
 ## W praktyce
-
-> [!warning]
->
-> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
-
 
 > [!warning]
 >
@@ -91,15 +86,15 @@ Ten adres URL może ułatwić pozycjonowanie SEO Twojej strony WWW.
 
 ### Przekieruj zapytania do wybranego katalogu bez wyświetlania wybranego katalogu
 
-Kiedy korzystasz z hostingu OVHcloud, Twoja domena (na przykład **domain.tld**) jest zgłaszana w `MultiSite`, aby wyświetlić zawartość folderu docelowego zwanego również `Katalog główny`. Możesz spersonalizować nazwę `Katalog główny`.
+Gdy korzystasz z udostępnionego hostingu OVHcloud, nazwa domeny (np. **domain.tld**) jest zadeklarowana na stronie internetowej znajdującej się na Twoim koncie hostingu. W ten sposób można wyświetlić zawartość katalogu nazywanego również `Katalog główny`. To właśnie ten katalog zawiera pliki Twojej strony internetowej. Możesz dostosować nazwę tego `Katalog główny` podczas dodawania strony internetowej do hostingu za pomocą Panelu klienta OVHcloud.
 
-Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji strony podpiętej w opcji MultiSite na hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite), jeśli chcesz uzyskać więcej informacji na ten temat.
+Zapoznaj się z naszym przewodnikiem „[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)”, jeśli chcesz uzyskać więcej informacji na ten temat.
 
 Niektórzy użytkownicy nie umieszczają swojej strony internetowej bezpośrednio na podstawie `Katalog główny`. Następnie tworzą podfolder (np.: **MyWebsite**) w `Katalog główny`, aby umieścić na nim swoją stronę internetową.
 
 W takim przypadku URL dostępu do strony będzie wyglądał następująco: **http://domain.tld/MyWebsite**
 
-Jeśli Twoja strona WWW nie jest widoczna bezpośrednio w `Katalog główny` zadeklarowanym w opcji MultiSite i nie chcesz wyświetlać nazwy folderu w adresie URL Twojej strony, edytuj plik ".htaccess" w katalogu zawierającym Twoją stronę WWW. 
+Jeśli pliki Twojej strony internetowej nie znajdują się bezpośrednio w `Katalog główny` zadeklarowanym dla Twojej strony internetowej w Panelu klienta OVHcloud i nie chcesz, aby nazwa katalogu była widoczna w adresie URL strony, edytuj plik „.htaccess” znajdujący się w katalogu głównym folderu zawierającego Twoją stronę internetową.
 
 Umieść w nim następujący kod (zastępując w naszym przykładzie wartości **domain.tld** nazwą domeny i **MyWebsite** nazwą Twojego katalogu):
 

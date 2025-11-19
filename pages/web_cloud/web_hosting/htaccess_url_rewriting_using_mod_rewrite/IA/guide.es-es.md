@@ -1,0 +1,5 @@
+Cuando utilice un alojamiento compartido de OVHcloud, su nombre de dominio (por ejemplo: **domain.tld**) se declara en un sitio web situado en su alojamiento web. Esto permite mostrar el contenido de una carpeta objetivo que también se llama `carpeta raíz`. Es esta carpeta la que contiene los archivos de su sitio web. Puede personalizar el nombre de esta `carpeta raíz` cuando agregue el sitio web a su alojamiento desde su área de cliente de OVHcloud.
+
+Consulte nuestra guía « [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) » si desea obtener más información sobre el tema.
+
+Si los archivos de su sitio web no están directamente en la `carpeta raíz` declarada para su sitio web en su área de cliente de OVHcloud y no desea mostrar el nombre de la carpeta en la URL de su sitio web, edite el archivo « .htaccess » situado en la raíz del directorio que contiene su sitio web.

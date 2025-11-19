@@ -1,0 +1,5 @@
+Quando utiliza um alojamento partilhado OVHcloud, o seu nome de domínio (por exemplo: **domain.tld**) é declarado num site web presente no seu alojamento web. Isto é feito para mostrar o conteúdo de uma pasta-alvo também chamada `Pasta raiz`. É esta pasta que contém os ficheiros do seu site web. Pode personalizar o nome desta `Pasta raiz` no momento em que adiciona o site web ao seu alojamento através da sua área de cliente OVHcloud.
+
+Consulte o nosso guia « [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » se quiser obter mais informações sobre o assunto.
+
+Se os ficheiros do seu site web não estiverem diretamente presentes na `Pasta raiz` declarada para o seu site web na sua área de cliente OVHcloud e não quiser mostrar o nome da pasta na URL do seu site web, edite o ficheiro « .htaccess » localizado na raiz do diretório que contém o seu site web.

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben"
 excerpt: "Diese Anleitung erklärt, wie Sie die Zugriffs-URL mithilfe des mod_rewrite über die .htaccess Datei neu schreiben."
-updated: 2022-12-22
+updated: 2025-11-27
 ---
 
 ## Ziel
@@ -30,10 +30,6 @@ Das Modul "**mod_rewrite**" bietet hierbei endlose Möglichkeiten. Im Folgenden 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
   
 ## In der praktischen Anwendung
-
-> [!warning]
->
-> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
@@ -90,15 +86,15 @@ Dieses Umschreiben der URL kann das SEO-Ranking Ihrer Website fördern.
 
 ### Anfragen an einen bestimmten Ordner umleiten, ohne diesen Ordner anzuzeigen
 
-Wenn Sie ein OVHcloud Webhosting nutzen, wird Ihr Domainname (z.B. **domain.tld**) als `Multisite` deklariert, um den Inhalt eines bestimmten Zielordners anzuzeigen, der auch als Wurzelverzeichnis bzw. `root folder` der Website bezeichnet wird. Sie können den Namen dieses Wurzelverzeichnisses anpassen.
+Wenn Sie ein OVHcloud-Shared-Webhosting nutzen, wird Ihr Domainname (z. B. **domain.tld**) auf einer Website in Ihrem Webhosting angezeigt. Dies dient dazu, den Inhalt eines Zielordners anzuzeigen, der auch als `Wurzelverzeichnis` bezeichnet wird. Dieser Ordner enthält die Dateien Ihrer Website. Sie können den Namen dieses `Wurzelverzeichnis` anpassen, wenn Sie die Website in Ihrem OVHcloud Kundencenter zu Ihrem Hosting hinzufügen.
 
-Lesen Sie unsere Anleitung zur [Einrichtung einer Multisite auf einem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite), wenn Sie weitere Informationen zu diesem Thema wünschen.
+Weitere Informationen dazu finden Sie in unserem Guide „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
 
 Eine Website muss nicht im obersten Wurzelverzeichnis abgelegt werden. Sie können auch einen Unterordner darin erstellen (z. B. **MyWebsite**), und darin die Dateien der Website platzieren.
 
 In diesem Fall hat die URL für den Zugriff auf die Website folgende Form: **http://domain.tld/MyWebsite**.
 
-Wenn sich Ihre Website-Dateien nicht direkt im Wurzelverzeichnis befinden, der für Ihren Domainnamen als Multisite deklariert wurde, und Sie den Namen des Unterordners nicht in der URL Ihrer Website anzeigen möchten, bearbeiten Sie die Datei ".htaccess" im Wurzelverzeichnis der Website. 
+Wenn die Dateien Ihrer Website nicht direkt im `Wurzelverzeichnis` liegen, das für Ihre Website in Ihrem OVHcloud Kundencenter definiert ist, und Sie den Namen des Ordners nicht in der URL Ihrer Website anzeigen möchten, bearbeiten Sie die Datei „.htaccess“, die sich im Stammverzeichnis des Ordners befindet, der Ihre Website enthält.
 
 Platzieren Sie den folgenden Code darin (wobei Sie in unserem Beispiel die Werte **domain.tld** durch Ihren Domainnamen und **MyWebsite** durch den Namen Ihres eigenen Ordners ersetzen):
 

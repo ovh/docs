@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Reescribir la URL de acceso a mi sitio web con el mod_rewrite a través del archivo .htaccess"
 excerpt: "Descubra cómo reescribir la URL de acceso a su sitio web utilizando el mod_rewrite a través del archivo .htaccess"
-updated: 2022-12-22
+updated: 2025-11-27
 ---
 
 ## Objetivo
@@ -30,10 +30,6 @@ El "**mod_rewrite**" ofrece un número infinito de posibilidades. A continuació
 - Disponer de un [hosting OVHcloud](/links/web/hosting)
   
 ## Procedimiento
-
-> [!warning]
->
-> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
 
 > [!warning]
 >
@@ -91,15 +87,15 @@ Esta reescritura de URL puede favorecer el posicionamiento SEO de su sitio web.
 
 ### Redirigir las peticiones a una carpeta en particular sin mostrar la carpeta correspondiente
 
-Cuando se utiliza un alojamiento compartido de OVHcloud, el dominio (por ejemplo **domain.tld**) se declara en `Multisitios` para mostrar el contenido de una carpeta de destino llamada también `carpeta raíz`. Puede personalizar el nombre de la `carpeta raíz`.
+Cuando utilice un alojamiento compartido de OVHcloud, su nombre de dominio (por ejemplo: **domain.tld**) se declara en un sitio web situado en su alojamiento web. Esto permite mostrar el contenido de una carpeta objetivo que también se llama `carpeta raíz`. Es esta carpeta la que contiene los archivos de su sitio web. Puede personalizar el nombre de esta `carpeta raíz` cuando agregue el sitio web a su alojamiento desde su área de cliente de OVHcloud.
 
-Si desea más información sobre el asunto, consulte nuestra guía sobre la [configuración de un multisitio en un alojamiento compartido](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Consulte nuestra guía « [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) » si desea obtener más información sobre el tema.
 
 Algunos usuarios no ubican su sitio web directamente en la base de la `carpeta raíz`. Crean una subcarpeta (por ejemplo: **MyWebsite**) en su `carpeta raíz` para poner su sitio web en ella.
 
 En ese caso, la URL para acceder al sitio tendrá la forma siguiente: **http://domain.tld/MyWebsite**.
 
-Si su sitio web no está directamente en el `carpeta raíz` declarado en multisitios para su nombre de dominio y no desea mostrar el nombre de la carpeta en la URL de su sitio, edite el archivo ".htaccess" situado en la raíz del repertorio que contiene su sitio web. 
+Si los archivos de su sitio web no están directamente en la `carpeta raíz` declarada para su sitio web en su área de cliente de OVHcloud y no desea mostrar el nombre de la carpeta en la URL de su sitio web, edite el archivo « .htaccess » situado en la raíz del directorio que contiene su sitio web.
 
 Introduzca el siguiente código (sustituyendo en nuestro ejemplo los valores **domain.tld** por su nombre de dominio y **MyWebsite** por el nombre de su propia carpeta):
 

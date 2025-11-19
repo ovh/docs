@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess"
 excerpt: "Découvrez comment réécrire l'URL d'accès à votre site grâce au mod_rewrite via le fichier .htaccess"
-updated: 2025-11-20
+updated: 2025-11-27
 ---
 
 ## Objectif
@@ -35,7 +35,7 @@ Le « **mod_rewrite** » offre une infinité de possibilités. Nous allons vous 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Ce tutoriel est mis à votre disposition afin de vous aider au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Ce tutoriel est mis à votre disposition afin de vous aider au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 > Les exemples qui vont suivre sont à mettre en place dans un fichier « .htaccess ». Attention, les règles que vous définissez dans ce fichier ont des conséquences directes sur votre site web. Vérifiez systématiquement les règles que vous ajoutez avant de les appliquer à votre site web.
 >
@@ -94,7 +94,7 @@ Certains utilisateurs ne placent pas leur site web directement à la base du `do
 
 Dans ce cas, l'URL pour accéder au site aura la forme suivante : **http://domain.tld/MyWebsite**.
 
-Si les fichiers de votre site web ne sont pas présents directement dans le `dossier racine` déclaré pour votre site web dans votre espace client OVHcloud et que vous ne souhaitez pas afficher le nom du dossier dans l'URL de votre site web, éditez le fichier « .htaccess » présent à la racine du répertoire contenant votre site web. 
+Si les fichiers de votre site web ne sont pas présents directement dans le `dossier racine` déclaré pour votre site web dans votre espace client OVHcloud et que vous ne souhaitez pas afficher le nom du dossier dans l'URL de votre site web, éditez le fichier « .htaccess » présent à la racine du répertoire contenant votre site web.
 
 Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple les valeurs **domain.tld** par votre nom de domaine et **MyWebsite** par le nom de votre propre dossier):
 

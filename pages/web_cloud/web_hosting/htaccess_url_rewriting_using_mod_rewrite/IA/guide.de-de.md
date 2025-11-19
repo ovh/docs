@@ -1,0 +1,5 @@
+Wenn Sie ein OVHcloud-Shared-Webhosting nutzen, wird Ihr Domainname (z. B. **domain.tld**) auf einer Website in Ihrem Webhosting angezeigt. Dies dient dazu, den Inhalt eines Zielordners anzuzeigen, der auch als `Stammverzeichnis` bezeichnet wird. Dieser Ordner enthält die Dateien Ihrer Website. Sie können den Namen dieses `Stammverzeichnisses` anpassen, wenn Sie die Website in Ihrem OVHcloud Kundencenter zu Ihrem Hosting hinzufügen.
+
+Weitere Informationen dazu finden Sie in unserem Guide „[Mehrere Websites auf einem Hosting teilen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+
+Wenn die Dateien Ihrer Website nicht direkt im `Wurzelverzeichnis` liegen, das für Ihre Website in Ihrem OVHcloud Kundencenter definiert ist, und Sie den Namen des Ordners nicht in der URL Ihrer Website anzeigen möchten, bearbeiten Sie die Datei „.htaccess“, die sich im Stammverzeichnis des Ordners befindet, der Ihre Website enthält.
