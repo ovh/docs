@@ -24,10 +24,6 @@ La opción de geolocalización en su alojamiento puede ser útil para el posicio
   
 ## Procedimiento
 
-> [!warning]
->
-> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
-
 Para los sitios web principalmente consultados en el extranjero y alojados en nuestra infraestructura de hosting OVHcloud, ofrecemos una opción de geolocalización por dirección IP. Permite posicionar mejor los sitios web en el país en el que está situada la dirección IP seleccionada con la opción.
 
 Para utilizar la opción de geolocalización por IP, haga clic en las fichas siguientes para ver cada uno de los **5** etapas.

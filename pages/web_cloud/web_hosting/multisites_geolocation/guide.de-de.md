@@ -24,10 +24,6 @@ Die Geolokalisierungsoption für Ihr Webhosting kann für die Suchmaschinenoptim
 
 ## In der praktischen Anwendung
 
-> [!warning]
->
-> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
-
 Für Webseiten, die hauptsächlich international abgerufen und auf der OVHcloud Shared Hosting Infrastruktur gehostet werden, bieten wir eine Geolokalisierungsoption nach IP-Adresse an. Sie ermöglicht eine bessere Referenzierung der Websites in dem Land, zu dem die ausgewählte IP-Adresse gehört.
 
 Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die folgenden Registerkarten, um die einzelnen **5** Schritte anzuzeigen.
