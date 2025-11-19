@@ -1,5 +1,0 @@
-Quando utilizzi un'offerta di hosting condiviso OVHcloud, il tuo nome dominio (ad esempio: **domain.tld**) è dichiarato su un sito web presente sul tuo hosting. Questo permette di visualizzare il contenuto di una cartella di destinazione detta anche `Cartella di root`. È questa la cartella che contiene i file del tuo sito web. Puoi personalizzare il nome di questa `Cartella di root` al momento dell'aggiunta del sito web sul tuo hosting tramite lo Spazio Cliente OVHcloud.
-
-Consulta la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) » se desideri ulteriori informazioni sull'argomento.
-
-Se i file del tuo sito web non sono direttamente presenti nella `Cartella di root` dichiarata per il tuo sito web sullo Spazio Cliente OVHcloud e non desideri visualizzare il nome della cartella nell'URL del tuo sito web, modifica il file « .htaccess » presente alla radice della directory che contiene il tuo sito web.
