@@ -27,42 +27,42 @@ Tem de alterar a pasta raiz associada ao seu site web e criar um novo site web n
 >
 > Desassociar um nome de domínio ou subdomínio de um site web no seu alojamento web é uma operação sensível. De fato, após esta operação, o seu site web já não será acessível na Internet com o seu nome de domínio e/ou subdomínio.
 
-Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** etapas.
+Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
->> Inicie sessão na sua [área de cliente OVHcloud](/links/manager), depois vá à secção `Web Cloud`{.action}.
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
->> Clique no menu `Alojamentos`{.action}, depois escolha o alojamento web relevante.
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
 >>
->> ![Alojamento Web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
->> Na página que aparece, clique no separador `Os meus sites`{.action}.
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
->> ![Os meus sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Passo 4**
+> **Etapa 4**
 >>
->> No quadro que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para visualizar os nomes de domínio e subdomínios associados.
+>> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Clique depois no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, depois em `Desassociar o domínio`{.action}.
+>> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante e, depois, em `Desassociar o domínio`{.action}.
 >>
->> ![Opções de domínios associados](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Passo 5**
+> **Etapa 5**
 >>
 >> A nova janela que se abre pede-lhe para confirmar a desassociação do nome de domínio ou subdomínio.
 >>
->> ![Os meus sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
+>> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 >>
 >> Consoante a sua escolha, marque ou não a caixa `Configuração automática (recomendada)`{.action}, depois clique em `Validar`{.action} para confirmar a sua escolha.
 >>
@@ -72,7 +72,7 @@ Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** 
 >> >
 >> > Se for esse o caso, encontrará a seguinte janela:
 >> >
->> > ![Os meus sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
+>> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
 >> > Como o aviso indica, terá de [eliminar a sua associação Git](/pages/web_cloud/web_hosting/git_integration_webhosting) primeiro, **antes** de desassociar o seu nome de domínio.
 
@@ -83,8 +83,8 @@ Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** 
 
 ## Quer saber mais?
 
-Para serviços especializados (referência, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
-
-Se desejar beneficiar de uma assistência no uso e configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/support).
-
-Fale com a nossa [comunidade de utilizadores](/links/community).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+ 
+Fale com nossa [comunidade de utilizadores](/links/community).

@@ -27,44 +27,44 @@ Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si
 >
 > Desasociar un nombre de dominio o subdominio de un sitio web presente en su alojamiento web es una operación sensible. De hecho, después de esta operación, su sitio web ya no será accesible en Internet con su nombre de dominio y/o subdominio.
 
-Haga clic en las pestañas de abajo para mostrar sucesivamente cada una de las **5** etapas.
+Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
->> Inicie sesión en su [área de cliente de OVHcloud](/links/manager), y vaya a la parte `Web Cloud`{.action}.
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
->> Haga clic en el menú `Hébergements`{.action}, y elija el alojamiento web correspondiente.
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
->> En la página que se muestra, haga clic en la pestaña `Mes sites`{.action}.
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los nombres de dominio y subdominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del nombre de dominio o subdominio correspondiente, y luego en `Détacher le domaine`{.action}.
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Desvincular el dominio`{.action}.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Paso 5**
+> **Etapa 5**
 >>
 >> La nueva ventana que se abre le pide confirmar el desasociamiento del nombre de dominio o subdominio.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 >>
->> Según su elección, marque o no la casilla `Configuration automatique (recommandée)`{.action}, y haga clic en `Valider`{.action} para confirmar su elección.
+>> Según su elección, marque o no la casilla `Configuración automática (recomendado)`{.action}, y haga clic en `Aceptar`{.action} para confirmar su elección.
 >>
 >> > ![!warning]
 >> >
@@ -83,8 +83,8 @@ Haga clic en las pestañas de abajo para mostrar sucesivamente cada una de las *
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), póngase en contacto con los [socios de OVHcloud](/links/partner).
-
-Si desea beneficiarse de una asistencia en el uso y la configuración de sus soluciones OVHcloud, le proponemos consultar nuestras diferentes [ofertas de soporte](/links/support).
-
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+ 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+ 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
