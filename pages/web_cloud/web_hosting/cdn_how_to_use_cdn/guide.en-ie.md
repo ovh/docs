@@ -61,21 +61,21 @@ Click on the tabs below to view each of the **5** steps.
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->> 
+>>
 >> On the page that pops up, click on the `My sites`{.action} tab.
->> 
+>>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
->> 
+>>
 > **Step 4**
->> 
+>>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
->> 
+>>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
->> 
+>>
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Activate the CDN`{.action}.
->> 
+>>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
->> 
+>>
 > **Step 5**
 >>
 >> In the window that opens, click on `Confirm`{.action} to activate the CDN.
@@ -115,19 +115,19 @@ Click on the tabs below to view each of the **4** steps.
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->> 
+>>
 >> On the page that pops up, click on the `My sites`{.action} tab.
->> 
+>>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
->> 
+>>
 > **Step 4**
->> 
+>>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
->> 
+>>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
->> 
+>>
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Clear CDN`{.action}.
->> 
+>>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 
 #### Configuring Shared CDN options
@@ -148,21 +148,21 @@ Click on the tabs below to view each of the **5** steps.
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->> 
+>>
 >> On the page that pops up, click on the `My sites`{.action} tab.
->> 
+>>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
->> 
+>>
 > **Step 4**
->> 
+>>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
->> 
+>>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
->> 
+>>
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify CDN`{.action}.
->> 
+>>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
->> 
+>>
 > **Step 5**
 >>
 >> > [!warning]
@@ -201,21 +201,21 @@ Click on the tabs below to view each of the **6** steps.
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->> 
+>>
 >> On the page that pops up, click on the `My sites`{.action} tab.
->> 
+>>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
->> 
+>>
 > **Step 4**
->> 
+>>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
->> 
+>>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
->> 
+>>
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify CDN`{.action}.
->> 
+>>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
->> 
+>>
 > **Step 5**
 >>
 >> Under **Cache rule**, click the `Add a rule`{.action} button.
@@ -262,21 +262,21 @@ Click on the tabs below to view each of the **5** steps.
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->> 
+>>
 >> On the page that pops up, click on the `My sites`{.action} tab.
->> 
+>>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
->> 
+>>
 > **Step 4**
->> 
+>>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
->> 
+>>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
->> 
+>>
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify CDN`{.action}.
->> 
+>>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
->> 
+>>
 > **Step 5**
 >>
 >> > [!primary]
@@ -284,7 +284,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> - **Cross-Origin Resource Sharing (CORS)**: In the list, enter the external domain names that will be authorised to access your website’s resources for the purpose of sharing them. 
 >>
->>    Once you have enabled this feature, click `Edit list of external resources`{.action}  to add the domain names that are authorised to share your resources.
+>>    Once you have enabled this feature, click `Edit list of external resources`{.action} to add the domain names that are authorised to share your resources.
 >>
 >>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-cors.png){.thumbnail}
 >>
@@ -295,7 +295,7 @@ Click on the tabs below to view each of the **5** steps.
 >> > When you enable the CORS option without specifying any domain names in the list, all domain names will be allowed to use your website's resources.
 >>
 >> - **HTTPS-Redirect**: Protect all traffic to your website by redirecting it to the HTTPS protocol temporarily or permanently.
->> 
+>>
 >>    Once you have enabled the feature, click the drop-down menu to choose between `Permanent redirection (301)` or `Temporary redirection (302)`.
 >>
 >>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-https-redirect.png){.thumbnail}
@@ -340,21 +340,21 @@ Click on the tabs below to view each of the **5** steps.
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->> 
+>>
 >> On the page that pops up, click on the `My sites`{.action} tab.
->> 
+>>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
->> 
+>>
 > **Step 4**
->> 
+>>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
->> 
+>>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
->> 
+>>
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify CDN`{.action}.
->> 
+>>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
->> 
+>>
 > **Step 5**
 >>
 >> > [!primary]
@@ -365,7 +365,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> - **Prefetch**: Anticipate the next resource being loaded. Preload it automatically in the CDN cache using your website’s *header link*. This mechanism is mainly used to load CSS, JavaScript, images, favicons or web fonts that are required by the website theme. 
 >>
->    In the example below, when the current page is displaying 'Hi', a subquery triggers the preloading of the resource `/cache/style.css`.  
+>>    In the example below, when the current page is displaying 'Hi', a subquery triggers the preloading of the resource `/cache/style.css`.  
 >>
 >>    ```
 >>    <?php
@@ -387,7 +387,7 @@ Click on the tabs below to view each of the **5** steps.
 >>    - *Enabled - Sort Settings*: The resource is cached by sorting its parameters. You will need to sort it before storing the URL in the CDN cache. For example, only one iteration will be kept for 2 URLs with the same settings in a different order.
 >>    - *Enabled - Ignore settings*: The resource is cached without any parameters. The CDN cache will not take into account the parameters entered in the URL, so it will store the URL without the parameters in the cache.
 >>
-- **Prewarm**: Force permanent caching of your critical resources. The CDN automatically anticipates and refreshes the cache, without waiting for a user request. This function applies only to static content, with a TTL greater than 0, and the resource must not exceed 1 GB. A gauge tells you the level of resource consumption in *Prewarm*, depending on your URL list. The total resources called by these URLs must not exceed 1 GB.
+>> - **Prewarm**: Force permanent caching of your critical resources. The CDN automatically anticipates and refreshes the cache, without waiting for a user request. This function applies only to static content, with a TTL greater than 0, and the resource must not exceed 1 GB. A gauge tells you the level of resource consumption in *Prewarm*, depending on your URL list. The total resources called by these URLs must not exceed 1 GB.
 >>
 >>    To define the list of URLs that should be in *Prewarm*, click `Edit URL List`{.action}.
 >>
@@ -419,21 +419,21 @@ Click on the tabs below to view each of the **6** steps.
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->> 
+>>
 >> On the page that pops up, click on the `My sites`{.action} tab.
->> 
+>>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
->> 
+>>
 > **Step 4**
->> 
+>>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
->> 
+>>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
->> 
+>>
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify CDN`{.action}.
->> 
+>>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
->> 
+>>
 > **Step 5** 
 >>
 >> Under **Cache** rules, click the `Add a rule`{.action} button.
@@ -522,19 +522,19 @@ Click on the tabs below to view each of the **5** steps.
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->> 
+>>
 >> On the page that pops up, click on the `My sites`{.action} tab.
->> 
+>>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
->> 
+>>
 > **Step 4**
->> 
+>>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
->> 
+>>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
->> 
+>>
 >> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify domain`{.action}.
->> 
+>>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Step 5**

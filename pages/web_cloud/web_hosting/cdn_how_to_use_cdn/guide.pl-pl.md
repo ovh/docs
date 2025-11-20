@@ -87,7 +87,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >> > W przypadku domeny zewnętrznej dodanej do jednej z witryn na Twoim serwisie, musisz dodać adres IP CDN Twojego serwisu do strefy DNS tej domeny.
 >> >
 >> > Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
- 
+
 **Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?**
 
 Funkcja GeoCache wykorzystuje zasadę działania IP Anycast. Użytkownik nie łączy się z tym samym serwerem z każdej lokalizacji, lecz z najbliższym, co pozwala bardzo skutecznie skrócić czas ładowania plików statycznych. Geolokalizacja adresu IP jest więc zbędna. <br>
@@ -230,7 +230,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> - **Klasyfikacja**: Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
 >>
-Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
+>> Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 >>
 > **Etap 6**
 >>
@@ -438,7 +438,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 >>
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
+>> ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
 >>
 >> - **Nazwa reguły**: Nadaj nazwę swojej regule.
 >> - **Rodzaj zasobów**: Wybierz spośród poniższych opcji:

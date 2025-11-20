@@ -87,7 +87,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >> > Falls Sie eine externe Domain zu einem der Webseiten Ihres Webhostings hinzufügen, müssen Sie die IP-Adresse des CDNs Ihres Webhostings in der DNS-Zone der Domain angeben.
 >> >
 >> > Im [Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) finden Sie die spezifische IP-Adresse des CDN Ihres Clusters.
- 
+
 **Warum kann ich mit der CDN-Option nicht von geolokalisierten IPs profitieren?**    
 
 Das CDN basiert auf dem Prinzip der Anycast-IP. Statische Dateien werden effizienter bereitgestellt, indem nicht derselbe Server je nach Standort angefragt wird. Eine IP-Geolokalisierung ist daher nicht erforderlich.  
@@ -539,7 +539,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 5**
 >>
-Entfernen Sie den Haken bei "CDN aktivieren", klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
+>> Entfernen Sie den Haken bei "CDN aktivieren", klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
 

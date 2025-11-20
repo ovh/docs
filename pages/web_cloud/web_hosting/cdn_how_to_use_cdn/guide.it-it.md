@@ -238,7 +238,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-cache-rules.png){.thumbnail}
 >>
-Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
+>> Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 >>
 >> > [!warning]
 >> >

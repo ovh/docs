@@ -220,7 +220,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
 >>
 >> Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
 >>
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-create-cache-rule.png){.thumbnail}
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-create-cache-rule.png){.thumbnail}
 >>
 >> - **Nombre de la regla** : Asigne un nombre a la regla.
 >>
@@ -290,9 +290,9 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >>    Una vez que haya completado la lista, haga clic en `Confirmar`{.action}.
 >>
-> [!primary]
->
-> Si activa la opción CORS sin especificar ningún dominio en la lista, significa que todos los dominios están autorizados a utilizar los recursos de su sitio web.
+>> > [!primary]
+>> >
+>> > Si activa la opción CORS sin especificar ningún dominio en la lista, significa que todos los dominios están autorizados a utilizar los recursos de su sitio web.
 >>
 >> - **HTTPS-redirect**: Proteja la globalidad del tráfico de su sitio web redirigiéndolo hacia el protocolo HTTPS de forma temporal o permanente.
 >>
@@ -438,7 +438,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
 >>
 >> Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
 >>
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
 >>
 >> - **Nombre de regla**: Asigne un nombre a la regla.
 >> - **Tipo de recurso**: Elija entre las siguientes opciones:
