@@ -25,10 +25,6 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 
 ## Procedimiento
 
-> [!warning]
->
-> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
-
 ### Activar la opción CDN
 
 > [!primary]
@@ -49,17 +45,48 @@ Se le redirigirá a la generación del pedido. Unos minutos después de haber ab
 
 #### Si la opción CDN ya está activada en su alojamiento web
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} a la derecha del dominio o subdominio correspondiente y luego haga clic en `Modificar el dominio`{.action}.
+Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
-Marque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, seguidamente, en `Validar`{.action}.
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
-
-> [!warning]
-> 
-> En el caso de un dominio externo a OVHcloud añadido en uno de los sitios web de su alojamiento web, debe especificar la dirección IP del CDN de su alojamiento en la zona DNS del dominio.
->
-> Consulte la [lista de direcciones IP de los clústeres y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) para saber qué dirección IP corresponde a la CDN de su clúster.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Activar el CDN`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la ventana que se abre, haga clic en `Confirmar`{.action} para activar el CDN.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > En el caso de un dominio externo a OVHcloud añadido en uno de los sitios web de su alojamiento web, debe especificar la dirección IP del CDN de su alojamiento en la zona DNS del dominio.
+>> >
+>> > Consulte la [lista de direcciones IP de los clústeres y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) para saber qué dirección IP corresponde a la CDN de su clúster.
 
 **¿Por qué no puedo disfrutar de la IP geolocalizada con la opción CDN?**
 
@@ -72,183 +99,366 @@ En cuanto al SEO (posicionamiento en los motores de búsqueda), la velocidad de 
 
 A veces es útil vaciar la memoria caché del CDN, especialmente cuando modifica sus archivos estáticos. Por ejemplo, al implementar una nueva versión de su sitio. Puede vaciar la memoria caché para cada uno de sus dominios y subdominios.
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Limpiar la CDN`{.action}.
+Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Purgar el CDN`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 
 #### Configurar las opciones del Shared CDN
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en en `Modificar la CDN`{.action}. 
+Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
-> [!warning]
-> 
-> Algunas opciones están bloqueadas en la solución Basic y requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn)
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
-
-- **Sigue en línea**: Permite mantener en línea los datos de la CDN en caso de avería del servidor.
-
-- **HTTP/2**: Protocolo que permite mejorar el rendimiento de su sitio web en materia de seguridad y latencia.
-
-- **Dev-mode** : permite desactivar la caché durante el desarrollo del sitio web.
-
-- **Brotli** : tipo de compresión que permite optimizar el tamaño de los archivos en caché.
-
-- **Regla de caché**: Cree hasta 5 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. ([seguir el siguiente paso](#cacherules)). 
-
-Una vez que haya seleccionado las opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-option-settings.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el CDN`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> > [!warning]
+>> > 
+>> > Algunas opciones están bloqueadas en la solución Basic y requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn)
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-option-settings.png){.thumbnail}
+>>
+>> - **Sigue en línea**: Permite mantener en línea los datos de la CDN en caso de avería del servidor.
+>>
+>> - **HTTP/2**: Protocolo que permite mejorar el rendimiento de su sitio web en materia de seguridad y latencia.
+>>
+>> - **Dev-mode** : permite desactivar la caché durante el desarrollo del sitio web.
+>>
+>> - **Brotli** : tipo de compresión que permite optimizar el tamaño de los archivos en caché.
+>>
+>> - **Regla de caché**: Cree hasta 5 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. ([seguir el siguiente paso](#cacherules)). 
+>>
+>> Una vez que haya seleccionado las opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
 
 ##### **Crear una regla de almacenamiento en caché** <a name="cacherules"></a>
 
-Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Configurar la CDN`{.action}.
+Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
 
-Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
-
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el CDN`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
+>>
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-create-cache-rule.png){.thumbnail}
-
-- **Nombre de la regla** : Asigne un nombre a la regla.
-
-- **URI** : Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL. En los servicios CDN-Basic y CDN-Security, solo es posible introducir una extensión de archivo. 
-
-- **Duración** : especifique el tiempo de cacheado del recurso seleccionado.
-
-- **Clasificación** : clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
-
-A continuación, haga clic en el botón `Crear la regla`{.action}.
-
-Las reglas aparecen en una lista. Puede modificar una regla haciendo clic en `...`{.action} a la derecha de la regla y, seguidamente, en `Modificar la regla`{.action}. O eliminarla haciendo clic en `Eliminar regla`{.action}.
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-cache-rules.png){.thumbnail}
-
-Una vez que haya configurado las reglas y opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
-
-> [!warning]
->
-> Para disfrutar de un mayor límite de reglas y de más parámetros en la creación de reglas de almacenamiento en caché, puede optar por la opción [CDN Advanced](/links/web/hosting-options-cdn)
+>>
+>> - **Nombre de la regla** : Asigne un nombre a la regla.
+>>
+>> - **URI** : Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL. En los servicios CDN-Basic y CDN-Security, solo es posible introducir una extensión de archivo. 
+>>
+>> - **Duración** : especifique el tiempo de cacheado del recurso seleccionado.
+>>
+>> - **Clasificación** : clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
+>>
+>> A continuación, haga clic en el botón `Crear la regla`{.action}.
+>>
+> **Etapa 6**
+>>
+>> Las reglas aparecen en una lista. Puede modificar una regla haciendo clic en `...`{.action} a la derecha de la regla y, seguidamente, en `Modificar la regla`{.action}. O eliminarla haciendo clic en `Eliminar regla`{.action}.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-cache-rules.png){.thumbnail}
+>>
+>> Una vez que haya configurado las reglas y opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
+>>
+>> > [!warning]
+>> >
+>> > Para disfrutar de un mayor límite de reglas y de más parámetros en la creación de reglas de almacenamiento en caché, puede optar por la opción [CDN Advanced](/links/web/hosting-options-cdn)
 
 #### Configurar las opciones de la CDN Security
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en en `Modificar la CDN`{.action}. 
+Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
-> [!primary]
->
-> Las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn)
-
-- **Cross-Origin Resource Sharing (CORS)** : Indique en la lista los dominios externos que estarán autorizados a acceder a los recursos de su sitio web para compartirlos.
-
-	Una vez activada la función, haga clic en `Editar la lista de recursos externos`{.action} para añadir los dominios autorizados a compartir sus recursos.
-
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-cors.png){.thumbnail}
-
-	Una vez que haya completado la lista, haga clic en `Confirmar`{.action}.
-
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el CDN`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> > [!primary]
+>> > Las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn)
+>>
+>> - **Cross-Origin Resource Sharing (CORS)** : Indique en la lista los dominios externos que estarán autorizados a acceder a los recursos de su sitio web para compartirlos.
+>>
+>>    Una vez activada la función, haga clic en `Editar la lista de recursos externos`{.action} para añadir los dominios autorizados a compartir sus recursos.
+>>
+>>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-cors.png){.thumbnail}
+>>
+>>    Una vez que haya completado la lista, haga clic en `Confirmar`{.action}.
+>>
 > [!primary]
 >
 > Si activa la opción CORS sin especificar ningún dominio en la lista, significa que todos los dominios están autorizados a utilizar los recursos de su sitio web.
-
-- **HTTPS-redirect**: Proteja la globalidad del tráfico de su sitio web redirigiéndolo hacia el protocolo HTTPS de forma temporal o permanente.
-
-	Una vez activada la función, haga clic en el menú desplegable para elegir entre `Redirección permanente (301)` o `Redirección temporal (302)`.
-
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-https-redirect.png){.thumbnail}
-
-- **HTTP Strict Transport Security (HSTS)** : Imponga el acceso a su sitio web únicamente en HTTPS. De este modo, su solución web estará protegida contra los ataques de degradado (o de tipo "ataque por replicación").
-
-	Una vez activada la función, deberá determinar la duración en la que el navegador aplicará la función HSTS en su sitio web. 
-
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-hsts.png){.thumbnail}
-
-> [!primary]
-> 
-> Cuando active la función HSTS en su sitio web, forzará el protocolo HTTPS en su navegador hasta el final del período denominado "edad máxima", incluso después de desactivar la función en su área de cliente. No obstante, cuando la caché se vacie en el navegador que ya haya realizado una visita al sitio web, este último aplicará el nuevo estado de la función HSTS.
-
-- **Mixed content**: Force la carga de todo el contenido de sus páginas web de forma segura, participando así en una experiencia de usuario óptima. Todos los recursos de su sitio web, tanto internos como externos, deben estar disponibles en HTTPS para evitar un error de seguridad del navegador.
-
-- **Firewall de aplicación**: El **W**eb **A**pplication **F**irewall (WAF) protege su sitio web de ataques fraudulentos como la inyección de código, las peticiones ilegítimas o el robo de datos. Cubre los principales fallos conocidos de la red filtrando las peticiones y los paquetes transmitidos (la lista de fallos es administrada por OVHcloud y se actualiza periódicamente para aumentar su protección).
-
-> [!warning]
->
-> Para instalar un [módulo en 1 clic OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules), el WAF debe desactivarse para evitar que se bloquee la instalación del módulo.
-
-> [!primary]
->
-> El WAF está íntegramente administrado por OVHcloud. La lista de fallos se actualiza regularmente.
+>>
+>> - **HTTPS-redirect**: Proteja la globalidad del tráfico de su sitio web redirigiéndolo hacia el protocolo HTTPS de forma temporal o permanente.
+>>
+>>    Una vez activada la función, haga clic en el menú desplegable para elegir entre `Redirección permanente (301)` o `Redirección temporal (302)`.
+>>
+>>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-https-redirect.png){.thumbnail}
+>>
+>> - **HTTP Strict Transport Security (HSTS)** : Imponga el acceso a su sitio web únicamente en HTTPS. De este modo, su solución web estará protegida contra los ataques de degradado (o de tipo "ataque por replicación").
+>>
+>>    Una vez activada la función, deberá determinar la duración en la que el navegador aplicará la función HSTS en su sitio web. 
+>>
+>>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-hsts.png){.thumbnail}
+>>
+>> > [!primary]
+>> > 
+>> > Cuando active la función HSTS en su sitio web, forzará el protocolo HTTPS en su navegador hasta el final del período denominado "edad máxima", incluso después de desactivar la función en su área de cliente. No obstante, cuando la caché se vacie en el navegador que ya haya realizado una visita al sitio web, este último aplicará el nuevo estado de la función HSTS.
+>>
+>> - **Mixed content**: Force la carga de todo el contenido de sus páginas web de forma segura, participando así en una experiencia de usuario óptima. Todos los recursos de su sitio web, tanto internos como externos, deben estar disponibles en HTTPS para evitar un error de seguridad del navegador.
+>>
+>> - **Firewall de aplicación**: El **W**eb **A**pplication **F**irewall (WAF) protege su sitio web de ataques fraudulentos como la inyección de código, las peticiones ilegítimas o el robo de datos. Cubre los principales fallos conocidos de la red filtrando las peticiones y los paquetes transmitidos (la lista de fallos es administrada por OVHcloud y se actualiza periódicamente para aumentar su protección).
+>>
+>> > [!warning]
+>> >
+>> > Para instalar un [módulo en 1 clic OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules), el WAF debe desactivarse para evitar que se bloquee la instalación del módulo.
+>>
+>> > [!primary]
+>> >
+>> > El WAF está íntegramente administrado por OVHcloud. La lista de fallos se actualiza regularmente.
 
 #### Configurar las opciones de la CDN Advanced
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en en `Modificar la CDN`{.action}.
+Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
-> [!primary]
->
-> Las opciones que se presentan a continuación requieren la suscripción a la [CDN Advanced](/links/web/hosting-options-cdn)
-
-- **Header HTTP de geolocalización**: Determine el país del visitante para personalizar la experiencia propuesta. El código de país se añade automáticamente en la cabecera de cada petición para que su servidor original la manipule. Los elementos de identificación en la cabecera se presentan bajo los nombres `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
-
-- **Prefetch** : Adelántese la carga del siguiente recurso. Precargue automáticamente en la caché CDN gracias al *header link* de su sitio web. Este mecanismo se utiliza principalmente para cargar CSS, JavaScript, imágenes, favicons o incluso tipos de letra web que son necesarios para el tema del sitio web. 
-
-	En el ejemplo de abajo, cuando se encuentra en la página actual que muestra "Hi", una subpetición inicia la precarga de la fuente `/cache/style.css` .  
-
-	```
-	<?php
-	header("Link: </cache/style.css>; rel=prefetch");
-	print 'Hi'
-	?>
-	```
-
-- **Móvil redirect**: Redirija automáticamente a los visitantes "Móvil" hacia un sitio web optimizado. A elegir: redirigir sistemáticamente hacia la raíz de otro sitio web, o conservar la URL sustituyendo únicamente el dominio (o el subdominio).
-
-- **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada. 
-
-	En la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Limpiar la CDN`{.action}.
-
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
-
-- **Query String**: Gestión del almacenamiento en caché del contenido, basado en la configuración (también llamada *Query String*) de la consulta URL. En función de su configuración, elija el comportamiento de la caché CDN:
-	- *Desactivado*: El recurso se guarda en caché con los parámetros no ordenados. Esto creará, por ejemplo, 2 iteraciones en la caché de la CDN para 2 URL que tengan los mismos parámetros en un orden diferente.
-	- *Activado - Ordenar los parámetros*: El recurso se guarda en caché ordenando sus parámetros. Antes de almacenar la URL en la caché de la CDN, se ordenará su eliminación. Por ejemplo, sólo se guardará una iteración para 2 URL con los mismos parámetros en un orden diferente.
-	- *Activado - Ignorar configuración*: El recurso se guarda en caché sin ningún parámetro. La caché CDN no tendrá en cuenta los parámetros introducidos en la URL, por lo que almacenará la URL sin los parámetros en la caché.
-
-- **Prewarm**: Force el almacenamiento en caché permanente de sus recursos primordiales. La CDN anticipa y refresca la caché automáticamente, sin esperar a que el usuario le pida que la cambie. Esta función solo se aplica en contenido estático, con un TTL superior a 0, y el recurso no debe exceder de 1GB. Un indicador indica el nivel de consumo de los recursos en *Prewarm*, en función de la lista de URL que utilice. El total de recursos que utilizan estas URL no debe exceder de 1 GB.
-
-	Para definir la lista de URLs que deben estar en *Prewarm*, haga clic en `Editar la lista de URLs`{.action}.
-
-	Utilizando los campos `Protocolo`, `Dominio` y `Ruta del recurso`, escriba uno de los enlaces a un recurso que desee añadir a la función **Prewarm** y haga clic en `Añadir`{.action}.
-
-	Una lista se forma en el marco inferior, con todos los enlaces que haya listado, puede borrar el que desee seleccionándolo y pulsando `Eliminar`{.action}.
-
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-prewarm.png){.thumbnail}
-
-- **Caché rule** : Cree hasta 100 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. Continúe leyendo esta guía en [el siguiente paso](#cacherulesadv) para más información.
-
-Una vez que haya seleccionado las opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el CDN`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> > [!primary]
+>> >
+>> > Las opciones que se presentan a continuación requieren la suscripción a la [CDN Advanced](/links/web/hosting-options-cdn)
+>>
+>> - **Header HTTP de geolocalización**: Determine el país del visitante para personalizar la experiencia propuesta. El código de país se añade automáticamente en la cabecera de cada petición para que su servidor original la manipule. Los elementos de identificación en la cabecera se presentan bajo los nombres `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
+>>
+>> - **Prefetch** : Adelántese la carga del siguiente recurso. Precargue automáticamente en la caché CDN gracias al *header link* de su sitio web. Este mecanismo se utiliza principalmente para cargar CSS, JavaScript, imágenes, favicons o incluso tipos de letra web que son necesarios para el tema del sitio web. 
+>>
+>>    En el ejemplo de abajo, cuando se encuentra en la página actual que muestra "Hi", una subpetición inicia la precarga de la fuente `/cache/style.css` .  
+>>
+>>    ```
+>>    <?php
+>>    header("Link: </cache/style.css>; rel=prefetch");
+>>    print 'Hi'
+>>    ?>
+>>    ```
+>>
+>> - **Móvil redirect**: Redirija automáticamente a los visitantes "Móvil" hacia un sitio web optimizado. A elegir: redirigir sistemáticamente hacia la raíz de otro sitio web, o conservar la URL sustituyendo únicamente el dominio (o el subdominio).
+>>
+>> - **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada. 
+>>
+>>    En la pestaña `Multisitio`{.action}, haga clic en el botón v a la derecha del dominio o subdominio correspondiente y luego en `Purgar el CDN`{.action}.
+>>
+>>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
+>>
+>> - **Query String**: Gestión del almacenamiento en caché del contenido, basado en la configuración (también llamada *Query String*) de la consulta URL. En función de su configuración, elija el comportamiento de la caché CDN:
+>>    - *Desactivado*: El recurso se guarda en caché con los parámetros no ordenados. Esto creará, por ejemplo, 2 iteraciones en la caché de la CDN para 2 URL que tengan los mismos parámetros en un orden diferente.
+>>    - *Activado - Ordenar los parámetros*: El recurso se guarda en caché ordenando sus parámetros. Antes de almacenar la URL en la caché de la CDN, se ordenará su eliminación. Por ejemplo, sólo se guardará una iteración para 2 URL con los mismos parámetros en un orden diferente.
+>>    - *Activado - Ignorar configuración*: El recurso se guarda en caché sin ningún parámetro. La caché CDN no tendrá en cuenta los parámetros introducidos en la URL, por lo que almacenará la URL sin los parámetros en la caché.
+>>
+>> - **Prewarm**: Force el almacenamiento en caché permanente de sus recursos primordiales. La CDN anticipa y refresca la caché automáticamente, sin esperar a que el usuario le pida que la cambie. Esta función solo se aplica en contenido estático, con un TTL superior a 0, y el recurso no debe exceder de 1GB. Un indicador indica el nivel de consumo de los recursos en *Prewarm*, en función de la lista de URL que utilice. El total de recursos que utilizan estas URL no debe exceder de 1 GB.
+>>
+>>    Para definir la lista de URLs que deben estar en *Prewarm*, haga clic en `Editar la lista de URLs`{.action}.
+>>
+>>    Utilizando los campos `Protocolo`, `Dominio` y `Ruta del recurso`, escriba uno de los enlaces a un recurso que desee añadir a la función **Prewarm** y haga clic en `Añadir`{.action}.
+>>
+>>    Una lista se forma en el marco inferior, con todos los enlaces que haya listado, puede borrar el que desee seleccionándolo y pulsando `Eliminar`{.action}.
+>>
+>>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-prewarm.png){.thumbnail}
+>>
+>> - **Caché rule** : Cree hasta 100 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. Continúe leyendo esta guía en [el siguiente sección](#cacherulesadv) para más información.
+>>
+>> Una vez que haya seleccionado las opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
 
 ##### **Crear una regla de almacenamiento en caché avanzada** <a name="cacherulesadv"></a>
 
-Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Configurar la CDN`{.action}.
+Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
 
-Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
-
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el CDN`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
+>>
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
-
-* **Nombre de regla**: Asigne un nombre a la regla.
-* **Tipo de recurso**: Elija entre las siguientes opciones:
-    * **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: CSS.
-    * **Carpeta**: Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
-    * **Expresión regular personalizada**: Se aplica a todos los URI de su sitio web.
-    * **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
-* **Recursos**: defina los atributos en función del tipo de recurso elegido.
-* **Duración**: Indique el tiempo de cacheado del recurso seleccionado.
-* **Clasificación**: Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
-
-A continuación, haga clic en el botón `Crear la regla`{.action}.
-
-Las reglas aparecen en una lista. Puede modificar una regla haciendo clic en `...`{.action} a la derecha de la regla y, seguidamente, en `Modificar la regla`{.action}. Puede eliminarla haciendo clic en `Eliminar la regla`{.action}.
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-cache-rules.png){.thumbnail}
-
-Una vez que haya configurado las reglas y opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
+>>
+>> - **Nombre de regla**: Asigne un nombre a la regla.
+>> - **Tipo de recurso**: Elija entre las siguientes opciones:
+>>    - **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: CSS.
+>>    - **Carpeta**: Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
+>>    - **Expresión regular personalizada**: Se aplica a todos los URI de su sitio web.
+>>    - **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
+>> - **Recursos**: defina los atributos en función del tipo de recurso elegido.
+>> - **Duración**: Indique el tiempo de cacheado del recurso seleccionado.
+>> - **Clasificación**: Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
+>>
+>> A continuación, haga clic en el botón `Crear la regla`{.action}.
+>>
+> **Etapa 6**
+>>
+>> Las reglas aparecen en una lista. Puede modificar una regla haciendo clic en `...`{.action} a la derecha de la regla y, seguidamente, en `Modificar la regla`{.action}. Puede eliminarla haciendo clic en `Eliminar la regla`{.action}.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-cache-rules.png){.thumbnail}
+>>
+>> Una vez que haya configurado las reglas y opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
 
 ### Ver las estadísticas y los logs de la CDN
 
@@ -295,13 +505,43 @@ Esta acción permite desactivar el CDN para uno o varios de sus dominios o subdo
 > - modifique manualmente la dirección IP en la zona DNS activa de su dominio o póngase en contacto con el proveedor de la zona DNS para que la actualice por usted.
 >
 > La modificación de un registro en la zona DNS activa de un dominio conlleva un retraso de propagación de **4** a **24** horas para ser plenamente efectiva. Una página con el código **520** puede aparecer aleatoriamente hasta que se complete la propagación. Este fenómeno se debe a que determinadas partes de la red DNS redirigen aún las peticiones hacia la dirección IP de la CDN asociada a su alojamiento web.
->
 
-Acceda al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Modificar el dominio`{.action}.
+Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
-Desmarque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
-
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el dominio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Desmarque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
+>>
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
 
 ### Eliminar la opción CDN de su alojamiento
 
@@ -316,7 +556,6 @@ Pulse `Validar`{.action} para confirmar la anulación.
 > [!warning]
 >
 > Cuando reciba el mensaje de correo electrónico con el procedimiento de cierre de su CDN, siga las instrucciones para confirmar o cancelar la solicitud. 
->
 
 ### Comprobar que la CDN esté operativa
 
