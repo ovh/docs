@@ -25,10 +25,6 @@ Para funcionar, cada servidor guarda na sua memória cache uma parte do seu webs
 
 ## Instruções
 
-> [!warning]
->
-> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
-
 ### Implementar a opção CDN
 
 > [!primary]
@@ -318,7 +314,6 @@ Clique em `Validar`{.action} para confirmar a eliminação.
 > [!warning]
 >
 > Receberá um e-mail com o procedimento a realizar para o encerramento do CDN, cujas instruções deverá seguir seja para confirmar ou para anular o pedido. 
->
 
 ### Verificar que o CDN se encontra ativo
 

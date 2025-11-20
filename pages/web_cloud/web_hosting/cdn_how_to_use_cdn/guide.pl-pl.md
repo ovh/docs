@@ -25,10 +25,6 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ## W praktyce
 
-> [!warning]
->
-> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
-
 ###  Wdrożenie opcji CDN
 
 > [!primary]
@@ -317,7 +313,6 @@ Kliknij `Zatwierdź`{.action}, aby potwierdzić rezygnację.
 > [!warning]
 >
 > Otrzymasz wiadomość e-mail z procedurą rezygnacji z GeoCache. Należy postępować zgodnie z podanymi instrukcjami, aby potwierdzić lub anulować swój wniosek. 
->
 
 ### Sprawdzenie, czy GeoCache działa
 
