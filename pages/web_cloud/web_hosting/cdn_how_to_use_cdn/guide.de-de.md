@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseiten mit CDN beschleunigen"
 excerpt: "Diese Anleitung erklärt, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern"
-updated: 2025-10-27
+updated: 2025-11-27
 ---
 
 ## Ziel 
