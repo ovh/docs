@@ -90,7 +90,7 @@ This URL rewrite can help SEO your website.
 
 When using an OVHcloud shared hosting plan, your domain name (e.g., **domain.tld**) is declared on a website present on your web hosting. This is to display the content of a target folder also known as the `root folder`. This is the folder that contains the files of your website. You can customise the name of this `root folder` when you add the website to your hosting via the OVHcloud Control Panel.
 
-Refer to our guide « [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) » if you want to find out more about this topic.
+Refer to our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)" if you want to find out more about this topic.
 
 Some users do not place their websites directly in the `root folder`, but inside a subfolder (for example: **MyWebsite**) inside this `root folder`.
 
