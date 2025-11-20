@@ -378,7 +378,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> - **Purga avanzata**: Personalizza lo spurgo scegliendo gli elementi della cache da svuotare: tutto il sito, una cartella, un'URI, un'estensione di file o tramite un'espressione regolare personalizzata. 
 >>
->>    Nella scheda `Multisito`{.action}, clicca sul pulsante `...`{.action} a destra del nome di dominio o sottodominio interessato e quindi su `Svuota la cache della CDN`{.action}.
+>>    Nella scheda `I miei siti`{.action}, clicca sul pulsante `⁝`{.action} a destra del nome di dominio o sottodominio interessato e quindi su `Pulisci il CDN`{.action}.
 >>
 >>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 >>

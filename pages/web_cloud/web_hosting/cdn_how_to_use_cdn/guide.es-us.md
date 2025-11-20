@@ -378,7 +378,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >> - **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada. 
 >>
->>    En la pestaña `Multisitio`{.action}, haga clic en el botón v a la derecha del dominio o subdominio correspondiente y luego en `Purgar el CDN`{.action}.
+>>    En la pestaña `Mis sitios`{.action}{.action}, haga clic en el botón `⁝`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Purgar el CDN`{.action}.
 >>
 >>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 >>
