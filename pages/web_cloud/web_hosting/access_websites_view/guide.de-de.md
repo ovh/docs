@@ -39,7 +39,7 @@ Zeigt an, ob Ihr Domainname korrekt auf das zugehörige Webhosting verweist. Fü
 
 Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
-Für weitere Informationen zum Diagnoseverfahren konsultieren Sie bitte unser Handbuch „[Wie prüfe ich die Zuordnung „Domain / Website“ ?](/pages/web_cloud/web_hosting/my_websites_diagnosis)“.
+Für weitere Informationen zum Diagnoseverfahren konsultieren Sie die Anleitung „[Wie prüfe ich die Zuordnung „Domain / Website“?](/pages/web_cloud/web_hosting/my_websites_diagnosis)“.
 
 #### Wurzelverzeichnis
 

@@ -172,11 +172,11 @@ Nicht aufgeführte Dienste finden Sie in der jeweiligen Service-Dokumentation. S
 
 #### Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen <a name="link-subdomain-case-1"></a>
 
-Ganz wie bei einem Domainnamen, um einem Unterdomain zu erlauben, den Inhalt eines als „Ziel“ deklarierten Verzeichnisses anzuzeigen, das für eine Website auf einem Webhosting bereitgestellt wird, melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und wählen Sie `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} in der linken Spalte, wählen Sie das Produkt aus, in dem sich Ihre Website befindet, und klicken Sie anschließend auf den Tab `Meine Seiten`{.action}.  
+Wie bei einem Domainnamen, um einer Subdomain zu erlauben, den Inhalt eines als „Ziel“ deklarierten Verzeichnisses anzuzeigen, das für eine Website auf einem Webhosting bereitgestellt wird, melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und wählen Sie `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} in der linken Spalte, wählen Sie Ihr Webhosting aus und klicken Sie anschließend auf den Tab `Meine Seiten`{.action}.  
 
-Hier erlauben Sie der Unterdomain den Zugriff auf Ihre Website, die sich auf Ihrem Webhosting befindet.  
+Hier erlauben Sie der Subdomain den Zugriff auf Ihre Website, die sich auf Ihrem Webhosting befindet.  
 
-Für weitere Informationen zur Konfiguration einer Domain oder Unterdomain auf einem Webhosting konsultieren Sie unseren Guide „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)“. Egal ob Domain oder Unterdomain, die Vorgehensweise ist identisch.
+Für weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem Webhosting, konsultieren Sie unsere Anleitung „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)“. Die Vorgehensweise ist identisch.
 
 > [!warning]
 >
