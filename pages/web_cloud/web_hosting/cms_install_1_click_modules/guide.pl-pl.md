@@ -19,7 +19,7 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 - Użycie najnowszej wersji PHP i kompatybilnego środowiska wykonawczego na Twoim hostingu OVHcloud. Sprawdź stan poszczególnych wersji dostępnych na tej [stronie](https://webhosting-infos.hosting.ovh.net/). W razie potrzeby sprawdź [przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting), aby szybko zmienić tę konfigurację.
 - Skonfigurowany plik "[.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" musi znajdować się w katalogu głównym FTP Twojego hostingu.
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
-- Domen (z poddomeną, jeśli to konieczne) używany będzie do Twojej strony internetowej i musi zostać zadeklarowany za pomocą karty [Moje strony](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) na Twojej stronie internetowej.
+- Domen (z poddomeną, jeśli to konieczne) używany będzie do Twojej strony internetowej i musi zostać zadeklarowany za pomocą karty [Moje strony](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) na Twojej hostingu OVHcloud.
 
 ## W praktyce
 
@@ -55,7 +55,7 @@ W oknie, które się wyświetla wybierz odpowiedni CMS, a następnie wybierz dom
 
 ![Wybór modułu](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Jeśli Twój domen nie znajduje się na liście, przejdź do karty `Moje strony`{.action}, aby go dodać. W razie potrzeby zapoznaj się z naszym przewodnikiem „[Jak przypisać nazwę domeny do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.
+Jeśli Twój domen nie znajduje się na liście, przejdź do karty `Moje strony`{.action}, aby go dodać. W razie potrzeby zapoznaj się z naszym przewodnikiem "[Jak przypisać nazwę domeny do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 
 > [!primary]
 >
@@ -149,11 +149,11 @@ Po uzupełnieniu informacji kliknij przycisk `Dalej`{.action}.
 
 Wprowadź następujące informacje dotyczące konfiguracji modułu:
 
-- *nazwa lub e-mail administratora:* identyfikator, którego będziesz używał do logowania się do interfejsu administracyjnego Twojego CMS-a (Back Office).
-- *hasło:* hasło, którego będziesz używał do logowania się do interfejsu administracyjnego Twojego CMS-a.
-- *domena:* domena, z którą chcesz zainstalować CMS-a. Jeśli potrzebujesz pomocy, zapoznaj się z naszym przewodnikiem „[Jak przypisać nazwę domeny do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.
-- *język:* język instalacji CMS.
-- *Ścieżka instalacji:* domena jest wprowadzana automatycznie podczas wyboru domeny. Możesz go uzupełnić, wprowadzając podkatalogi (dla zaawansowanych użytkowników).
+- *nazwa lub e-mail administratora*: identyfikator, którego będziesz używał do logowania się do interfejsu administracyjnego Twojego CMS-a (Back Office).
+- *hasło*: hasło, którego będziesz używał do logowania się do interfejsu administracyjnego Twojego CMS-a.
+- *domena*: domena, z którą chcesz zainstalować CMS-a. Jeśli potrzebujesz pomocy, zapoznaj się z naszym przewodnikiem "[Jak przypisać nazwę domeny do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+- *język*: język instalacji CMS.
+- *Ścieżka instalacji*: domena jest wprowadzana automatycznie podczas wyboru domeny. Możesz go uzupełnić, wprowadzając podkatalogi (dla zaawansowanych użytkowników).
 
 > [!primary]
 >
