@@ -14,10 +14,10 @@ Do you no longer want to use a domain name or subdomain for your website? Do you
 
 ## Requirements
 
-- Have a compatible [OVHcloud web hosting](/links/web/hosting-multisite) plan.
-- Have one or more [domain names](/links/web/domains).
-- Be able to modify the configuration of your domain names from their [DNS zones](/pages/web_cloud/domains/dns_zone_edit).
-- Be logged in to your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
+- A compatible [OVHcloud web hosting plan](/links/web/hosting-multisite)
+- One or more [domain names](/links/web/domains)
+- Access to modify the configuration of the [DNS zones of your domain names](/pages/web_cloud/domains/dns_zone_edit)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
