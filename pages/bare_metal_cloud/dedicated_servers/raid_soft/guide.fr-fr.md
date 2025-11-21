@@ -350,7 +350,7 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> sudo sgdisk -R /dev/sdX /dev/sdX
 >> ```
 >>
->> La commande doit être au format suivant : `sgdisk -R /dev/nouveaudisk /dev/disksain`.
+>> La commande doit être au format suivant : `sgdisk -R /dev/nouveau disque /dev/disque sain`.
 >>
 >> Une fois cette opération effectuée, l'étape suivante consiste à attribuer un GUID aléatoire au nouveau disque afin d'éviter tout conflit avec les GUID d'autres disques :
 >>
@@ -426,7 +426,7 @@ Nous remplaçons l'ancien UUID de la partition swap (**sda4**) par le nouveau da
 [user@server_ip ~]# sudo nano etc/fstab
 ```
 
-Assurez-vous de remplacer l'UUID correct.
+Assurez-vous de remplacer le bon UUID.
 
 Ensuite, rechargez le système avec la commande suivante :
 
@@ -455,7 +455,7 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/sdX /dev/sdX
 >> ```
 >>
->> La commande doit être au format suivant : `sgdisk -R /dev/nouveaudisque /dev/disquesain`
+>> La commande doit être au format suivant : `sgdisk -R /dev/nouveau disque /dev/disque sain`
 >>
 >> Exemple :
 >>
@@ -486,7 +486,7 @@ Une fois le disque remplacé, nous devons copier la table de partition du disque
 >> sudo sfdisk -d /dev/sda | sfdisk /dev/sdb
 >> ```
 >>
->> La commande doit être au format suivant : `sfdisk -d /dev/disquesain | sfdisk /dev/nouveau disque`
+>> La commande doit être au format suivant : `sfdisk -d /dev/disque sain | sfdisk /dev/nouveau disque`
 >>
 
 Nous pouvons maintenant reconstruire la matrice RAID. L'extrait de code suivant montre comment ajouter les nouvelles partitions (sdb2 et sdb4) dans la matrice RAID.
@@ -622,7 +622,7 @@ UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0
 UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
 ```
 
-Assurez-vous de remplacer l'UUID approprié. Dans notre exemple ci-dessus, l'UUID à remplacer est `d6af33cf-fc15-4060-a43c-cb3b5537f58a` par le nouveau `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Assurez-vous de remplacer l'UUID correct.
+Assurez-vous de remplacer l'UUID approprié. Dans notre exemple ci-dessus, l'UUID à remplacer est `d6af33cf-fc15-4060-a43c-cb3b5537f58a` par le nouveau `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Assurez-vous de remplacer le bon UUID.
 
 Ensuite, nous nous assurons que tout est correctement monté :
 

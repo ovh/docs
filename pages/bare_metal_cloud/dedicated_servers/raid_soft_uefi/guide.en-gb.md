@@ -1,6 +1,6 @@
 ---
-title: Managing and rebuilding software RAID on servers using EFI boot mode
-excerpt: Find out how to manage and rebuild software RAID after a disk replacement on your server using EFI boot mode
+title: Managing and rebuilding software RAID on servers using UEFI boot mode
+excerpt: Find out how to manage and rebuild software RAID after a disk replacement on a server using UEFI boot mode
 updated: 2025-11-12
 ---
 
@@ -10,11 +10,11 @@ Redundant Array of Independent Disks (RAID) is a technology that mitigates data 
 
 The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
 
-**This guide explains how to manage and rebuild software RAID after a disk replacement on your server using EFI boot mode**
+**This guide explains how to manage and rebuild software RAID after a disk replacement on a server using UEFI boot mode**
 
-Before we begin, please note that this guide focuses on Dedicated servers that use EFI as the boot mode. This is the case with modern motherboards. If your server uses the legacy boot (BIOS) mode, refer to this guide: [Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
+Before we begin, please note that this guide focuses on Dedicated servers that use UEFI as the boot mode. This is the case with modern motherboards. If your server uses the legacy boot (BIOS) mode, refer to this guide: [Managing and rebuilding software RAID on servers in legacy boot (BIOS) mode](/pages/bare_metal_cloud/dedicated_servers/raid_soft_bios).
 
-To check whether a server runs on legacy BIOS mode or EFI boot mode, run the following command:
+To check whether a server runs on legacy BIOS mode or UEFI boot mode, run the following command:
 
 ```sh
 [user@server_ip ~]# [ -d /sys/firmware/efi ] && echo UEFI || echo BIOS
@@ -164,7 +164,7 @@ nvme0n1     259:1    0 476.9G  0 disk
 └─nvme0n1p5 259:6    0     2M  0 part
 ```
 
-Furthermore, if we run `lsblk -f`, we obtain more information about these partitions, such as their LABELS and UUIDs:
+Furthermore, if we run `lsblk -f`, we obtain more information about these partitions, such as the LABEL and UUID:
 
 ```sh
 [user@server_ip ~]# sudo lsblk -f
@@ -207,7 +207,7 @@ An EFI System Partition is a partition which can contain the boot loaders, boot 
 
 ***Is the EFI System Partition mirrored in RAID?***
 
-No, as of August 2025, when the OS installation is performed by OVHcloud, the ESP is not included in the RAID. When you use our OS templates to install your server with software RAID, several EFI System Partitions are created: one per disk. However, only one EFI partition is mounted at once. All the ESPs created contain the same files.
+No, as of August 2025, when the OS installation is performed by OVHcloud, the ESP is not included in the RAID. When you use our OS templates to install your server with software RAID, several EFI System Partitions are created: one per disk. However, only one EFI partition is mounted at once. All ESPs created at the time of installation contain the same files.
 
 The EFI System Partition is mounted at `/boot/efi` and the disk on which it is mounted is selected by Linux at boot.
 
@@ -239,8 +239,7 @@ From the output above, we see that we have two identical EFI System Partitions (
 
 In general, the contents of this partition do not change much, its content should only change on bootloader (e.g. GRUB) updates.
 
-Still, we recommend running an automatic or manual script to keep all ESPs in sync. This way, if one disk fails, the remaining ESPs will still contain up-to-date files.
-so that if the disk on which this partition is mounted fails, the server will be able to restart on one of the other disks in the RAID.
+However, we recommend running an automatic or manual script to synchronise all ESPs, so that they all contain the same up-to-date files. This way, if the drive on which this partition is mounted fails, the server will be able to restart on the ESP of one of the other drives.
 
 ***What if the primary disk mounted on `boot/efi` fails?***
 
@@ -253,15 +252,15 @@ so that if the disk on which this partition is mounted fails, the server will be
 - The server is able to boot in normal mode and you can proceed with the RAID rebuild.
 - The server is unable to boot in normal mode, the server is rebooted into rescue mode, where you can rebuild the RAID and recreate the EFI partition on the new disk.
 
-**Case study 2** - There have been major system updates (e.g GRUB) to the OS and the ESPs have been synchronised:
+**Case study 2** - There have been major system updates (e.g GRUB) to the OS and the ESPs have been synchronised
 
 - The server is able to boot in normal mode because all the ESPs contain up-to-date information and the RAID rebuild can be carried out in normal mode.
 - The server is unable to boot in normal mode, the server is rebooted into rescue mode, where you can rebuild the RAID and recreate the EFI partition on the new disk.
 
-**Case study 3** - There have been major system updates (e.g GRUB) to the OS and the ESPs partitions have not been synchronised:
+**Case study 3** - There have been major system updates (e.g GRUB) to the OS and the ESPs partitions have not been synchronised
 
 - The server is unable to boot in normal mode, the server is rebooted in rescue mode, where you can rebuild the RAID, recreate the EFI System partition on the new disk and reinstall the bootloader (e.g. GRUB) on it.
-- The server is able to boot in normal mode (this could happen case when an operating system is updated to a newer version but the GRUB version remains unchanged) and you can proceed with the RAID rebuild.
+- The server is able to boot in normal mode (this can occur when an operating system is updated to a newer version, but the version of GRUB remains unchanged) and you can proceed with the RAID rebuild.
 
 Indeed, in some cases, booting from an out-of-date ESP may not work. For instance, a major GRUB update could cause the old GRUB binary present in the ESP to be incompatible with newer GRUB modules installed in the `/boot` partition.
 
@@ -270,7 +269,7 @@ Indeed, in some cases, booting from an out-of-date ESP may not work. For instanc
 > [!primary]
 > Please note that depending on your operating system, the process might be different. Ubuntu for example is able to keep several EFI System Partitions synchronized at every GRUB update. However, it is the only operating system doing so. We recommend that you consult the official documentation of your operating system to understand how to manage ESPs.
 >
-> In the guide, the operating system used is Debian.
+> In this guide, the operating system used is Debian.
 
 We recommend that you synchronise your ESPs regularly or after each major system update. By default, all the EFI System partitions contain the same files after installation. However, if a major system update is involved, synchronising the ESPs is essential to keep the content up-to-date.
 
@@ -513,7 +512,7 @@ Once the disk has been replaced, the next step is to copy the partition table fr
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/nvmeXnX /dev/nvmeXnX
 ```
 
-The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`
+The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`
 
 In our example:
 
@@ -628,13 +627,13 @@ First, we format the partition:
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkfs.vfat /dev/nvme0n1p1
 ```
 
-Next, we label the partition as `EFI_SYSPART` (this naming is specific to OVHcloud)
+Next, we label the partition as `EFI_SYSPART` (this naming is specific to OVHcloud):
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # fatlabel /dev/nvme0n1p1 EFI_SYSPART
 ```
 
-Next, we duplicate the contents of nvme1n1p1 to nvme0n1p1. We start by creating two folders, which we have named 'old' and 'new' in our example:
+Next, we duplicate the contents of nvme1n1p1 to nvme0n1p1. We start by creating two folders, We start by creating two folders, which we name "old" and "new" in our example:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkdir old new
@@ -647,7 +646,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme1n1p1 old
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme0n1p1 new
 ```
 
-Next, we copy the files from the 'old' folder to 'new' one.
+Next, we copy the files from the 'old' folder to 'new' one:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # rsync -axv old/ new/
@@ -665,7 +664,7 @@ sent 6,099,848 bytes  received 165 bytes  12,200,026.00 bytes/sec
 total size is 6,097,843  speedup is 1.00
 ```
 
-Once this is done, we unmount both partitions
+Once this is done, we unmount both partitions:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount /dev/nvme0n1p1
@@ -697,23 +696,29 @@ Next, we use the `chroot` command to access the mount point and make sure the ne
 root@rescue12-customer-eu:/# chroot /mnt
 ```
 
+To view the ESP partitions, we run the command `blkid -t LABEL=EFI_SYSPART`:
+
 ```sh
 root@rescue12-customer-eu:/# blkid -t LABEL=EFI_SYSPART
 /dev/nvme1n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="4629-D183" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="889f241b-49c3-4031-b5c9-60df0746f98f"
 /dev/nvme0n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="521F-300B" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="02bf2b2d-7ada-4461-ba50-07683519f65d"
 ```
 
+The above results show that the new EFI partition has been created correctly and that the LABEL has been applied correctly.
+
 <a name="efiraidgrub"></a>
 
-#### Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)
+#### Rebuilding RAID when EFI partitions are not synchronized after major system updates (GRUB)
 
 /// details | Unfold this section
 
 > [!warning]
-> Please only follow the steps in this section if it applies to your case
+> Please only follow the steps in this section if it applies to your case.
 > 
 
-When EFI system partitions are not synchronised after major system updates that modify/affect the GRUB, and the primary disk on which the partition is mounted is replaced, booting from a secondary disk containing an out-of-date ESP may not work. In this case, in addition to rebuilding the RAID and recreating the EFI system partition in rescue mode, you must also reinstall GRUB on it.
+When EFI system partitions are not synchronised after major system updates that modify/affect the GRUB, and the primary disk on which the partition is mounted is replaced, booting from a secondary disk containing an out-of-date ESP may not work. 
+
+In this case, in addition to rebuilding the RAID and recreating the EFI system partition in rescue mode, you must also reinstall GRUB on it.
 
 So once we have recreated the EFI partition and made sure the system recognises both partitions (previous steps in `chroot`), we create the `/boot/efi` folder in order to mount the new EFI System Partition **nvme0n1p1**:
 
@@ -820,7 +825,7 @@ UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0
 UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
 ```
 
-Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Make sure you replace the coorect UUID.
+Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Make sure you replace the correct UUID.
 
 Next, we verify that everything is properly mounted with the following command:
 
@@ -937,7 +942,7 @@ Next, we label the partition as `EFI_SYSPART` (this naming is specific to OVHclo
 [user@server_ip ~]# sudo fatlabel /dev/nvme0n1p1 EFI_SYSPART
 ```
 
-We copy the contents of the healthy ESP to the new one by synchronising the two partitions using the script below:
+Using the script below, we copy the contents of the healthy EFI System partition to the newly created partition by synchronising both partitions:
 
 ```sh
 #!/bin/bash
@@ -972,11 +977,14 @@ We verify that the new EFI System Partition has been properly created and the sy
 
 Lastly, we activate the [SWAP] partition (if applicable):
 
+
+- We create and add the label:
+
 ```sh
 [user@server_ip ~]# sudo mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
 ```
 
-We retrieve the UUIDs of both swap partitions:
+- We retrieve the UUIDs of both swap partitions:
 
 ```sh
 [user@server_ip ~]# sudo blkid -s /dev/nvme0n1p4
@@ -985,7 +993,7 @@ We retrieve the UUIDs of both swap partitions:
 /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
-We replace the old UUID of the swap partition (**nvme0n1p4)** with the new one in `/etc/fstab`:
+- We replace the old UUID of the swap partition (**nvme0n1p4)** with the new one in `/etc/fstab`:
 
 ```sh
 [user@server_ip ~]# sudo nano /etc/fstab
