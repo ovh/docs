@@ -75,7 +75,7 @@ Para eliminar el módulo en 1 clic, es necesario empezar identificando su base d
 
 Si dispone de una sola base de datos en esta parte del área de cliente y no dispone de soluciones [Web Cloud Databases](/links/web/databases), puede considerar que se trata de la de su sitio web.
 
-En caso contrario, vaya a la pestaña `Mis sitios`{.action}. Anote el nombre de la `Carpeta raíz` que aparece en la línea del sitio web correspondiente: se trata del directorio en el que se encuentran los archivos que constituyen su módulo de 1 clic en el servidor FTP.
+En caso contrario, vaya a la pestaña `Mis sitios`{.action}. Anote el nombre de la `Carpeta raíz` que aparece en la línea del sitio web correspondiente: se trata del directorio en el que se encuentran los archivos que constituyen su módulo en 1 clic en el servidor FTP.
 
 Conéctese al [espacio FTP del alojamiento](/pages/web_cloud/web_hosting/ftp_connection). Abra la `Carpeta raíz` encontrada anteriormente en la pestaña `Mis sitios`{.action} y busque el archivo de configuración de su módulo:
 

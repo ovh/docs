@@ -75,7 +75,7 @@ Per eliminare il tuo modulo in 1 click, è necessario iniziare ad identificarne 
 
 Se disponi di un solo database in questa parte del tuo Spazio Cliente e non disponi di soluzioni [Web Cloud Databases](/links/web/databases), puoi considerare che si tratta di quello del tuo sito.
 
-In caso contrario, andare sull'onglet `I miei siti`{.action}. Notare il nome della `Cartella di root` presente sulla riga del sito web interessato: si tratta della directory in cui si trovano i file che costituiscono il tuo modulo 1 clic sul server FTP.
+In caso contrario, vai alla scheda `I miei siti`{.action}. Annota il nome della `Cartella di root` presente sulla riga del sito web interessato: si tratta della directory in cui si trovano i file che costituiscono il tuo modulo in 1 click sul server FTP.
 
 Accedi allo [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connection). Apri la `Cartella di root` trovata precedentemente nella scheda `I miei siti`{.action} e cerca il file di configurazione del tuo modulo:
 
