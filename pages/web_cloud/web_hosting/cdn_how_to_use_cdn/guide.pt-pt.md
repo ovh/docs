@@ -175,9 +175,9 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 >> - **HTTP/2**: Protocolo que permite um melhor desempenho do seu website em termos de segurança e de latência.
 >>
->> - **Dev-mode**: permite-lhe desativar a cache durante o desenvolvimento do seu site.
+>> - **Dev-mode**: Permite-lhe desativar a cache durante o desenvolvimento do seu site.
 >>
->> - **Brotli**: tipo de compressão que permite otimizar o tamanho dos seus ficheiros em cache.
+>> - **Brotli**: Tipo de compressão que permite otimizar o tamanho dos seus ficheiros em cache.
 >>
 >> - **Regra de cache**: Crie até 5 regras. Elas definem a frequência de atualização de cache para certos recursos precisos no seu site. ([seguir o próximo passo](#cacherules)). 
 >>
@@ -294,7 +294,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >> >
 >> > Quando ativa a opção CORS sem especificar domínios na lista, isso significa que todos os nomes de domínio estão autorizados a utilizar os recursos do seu website.
 >>
->> - **HTTPS-redirect** : Proteja a globalidade do tráfego do seu website reencaminhando-o para o protocolo HTTPS de forma temporária ou permanente.
+>> - **HTTPS-redirect**: Proteja a globalidade do tráfego do seu website reencaminhando-o para o protocolo HTTPS de forma temporária ou permanente.
 >>
 >>    Depois de ativar a função, clique no menu pendente para escolher entre o `Reencaminhamento permanente (301)` ou o `Reencaminhamento temporário (302)`.
 >>
@@ -359,7 +359,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 >> > [!primary]
 >> >
->> >  As opções apresentadas abaixo requerem a subscrição do [CDN Advanced](/links/web/hosting-options-cdn)
+>> >  As opções apresentadas abaixo requerem a subscrição do [CDN Advanced](/links/web/hosting-options-cdn).
 >>
 >> - **Header HTTP de geolocalização**: Determine o país do visitante para personalizar a experiência proposta. O código do país é adicionado automaticamente no header de cada pedido para ser manipulado pelo seu servidor de origem. Os elementos de identificação no header apresentam-se sob as designações `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 >>
@@ -442,11 +442,11 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **6**.
 >>
 >> - **Nome da regra**: Atribua um nome à sua regra.
 >> - **Tipo de recurso**: Escolha entre as opções seguintes:
->>    - **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: CSS.
+>>    - **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar (por exemplo: CSS).
 >>    - **Pasta**: Introduza um caminho válido para uma das pastas presentes no diretório raiz do seu website.
 >>    - **Expressão regular personalizada**: Aplica-se a todas as URI do seu website.
 >>    - **URI**: Indique o subconjunto de recursos do seu website através do seu caminho no URL.
->> - **Recurso**: defina os atributos em função do tipo de recurso escolhido.
+>> - **Recurso**: Defina os atributos em função do tipo de recurso escolhido.
 >> - **Duração**: Indique a duração de implementação de cache do recurso selecionado.
 >> - **Classificação**: Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
 >>

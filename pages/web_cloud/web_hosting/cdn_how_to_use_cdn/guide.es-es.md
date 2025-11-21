@@ -45,7 +45,7 @@ Se le redirigirá a la generación del pedido. Unos minutos después de haber ab
 
 #### Si la opción CDN ya está activada en su alojamiento web
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -99,7 +99,7 @@ En cuanto al SEO (posicionamiento en los motores de búsqueda), la velocidad de 
 
 A veces es útil vaciar la memoria caché del CDN, especialmente cuando modifica sus archivos estáticos. Por ejemplo, al implementar una nueva versión de su sitio. Puede vaciar la memoria caché para cada uno de sus dominios y subdominios.
 
-Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -132,7 +132,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
 #### Configurar las opciones del Shared CDN
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -167,7 +167,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >> > [!warning]
 >> > 
->> > Algunas opciones están bloqueadas en la solución Basic y requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Algunas opciones están bloqueadas en la solución Basic y requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn).
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-option-settings.png){.thumbnail}
 >>
@@ -175,9 +175,9 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >> - **HTTP/2**: Protocolo que permite mejorar el rendimiento de su sitio web en materia de seguridad y latencia.
 >>
->> - **Dev-mode** : permite desactivar la caché durante el desarrollo del sitio web.
+>> - **Dev-mode**: Permite desactivar la caché durante el desarrollo del sitio web.
 >>
->> - **Brotli** : tipo de compresión que permite optimizar el tamaño de los archivos en caché.
+>> - **Brotli**: Tipo de compresión que permite optimizar el tamaño de los archivos en caché.
 >>
 >> - **Regla de caché**: Cree hasta 5 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. ([seguir el siguiente paso](#cacherules)). 
 >>
@@ -185,7 +185,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
 ##### **Crear una regla de almacenamiento en caché** <a name="cacherules"></a>
 
-Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -222,13 +222,13 @@ Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-create-cache-rule.png){.thumbnail}
 >>
->> - **Nombre de la regla** : Asigne un nombre a la regla.
+>> - **Nombre de la regla**: Asigne un nombre a la regla.
 >>
->> - **URI** : Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL. En los servicios CDN-Basic y CDN-Security, solo es posible introducir una extensión de archivo. 
+>> - **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL. En los servicios CDN-Basic y CDN-Security, solo es posible introducir una extensión de archivo. 
 >>
->> - **Duración** : especifique el tiempo de cacheado del recurso seleccionado.
+>> - **Duración**: Especifique el tiempo de cacheado del recurso seleccionado.
 >>
->> - **Clasificación** : clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
+>> - **Clasificación**: Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
 >>
 >> A continuación, haga clic en el botón `Crear la regla`{.action}.
 >>
@@ -242,11 +242,11 @@ Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
 >>
 >> > [!warning]
 >> >
->> > Para disfrutar de un mayor límite de reglas y de más parámetros en la creación de reglas de almacenamiento en caché, puede optar por la opción [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Para disfrutar de un mayor límite de reglas y de más parámetros en la creación de reglas de almacenamiento en caché, puede optar por la opción [CDN Advanced](/links/web/hosting-options-cdn).
 
 #### Configurar las opciones de la CDN Security
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -280,9 +280,9 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 > **Etapa 5**
 >>
 >> > [!primary]
->> > Las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Las opciones que se presentan a continuación requieren la suscripción a la [CDN Security](/links/web/hosting-options-cdn) o a la [CDN Advanced](/links/web/hosting-options-cdn).
 >>
->> - **Cross-Origin Resource Sharing (CORS)** : Indique en la lista los dominios externos que estarán autorizados a acceder a los recursos de su sitio web para compartirlos.
+>> - **Cross-Origin Resource Sharing (CORS)**: Indique en la lista los dominios externos que estarán autorizados a acceder a los recursos de su sitio web para compartirlos.
 >>
 >>    Una vez activada la función, haga clic en `Editar la lista de recursos externos`{.action} para añadir los dominios autorizados a compartir sus recursos.
 >>
@@ -300,7 +300,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-https-redirect.png){.thumbnail}
 >>
->> - **HTTP Strict Transport Security (HSTS)** : Imponga el acceso a su sitio web únicamente en HTTPS. De este modo, su solución web estará protegida contra los ataques de degradado (o de tipo "ataque por replicación").
+>> - **HTTP Strict Transport Security (HSTS)**: Imponga el acceso a su sitio web únicamente en HTTPS. De este modo, su solución web estará protegida contra los ataques de degradado (o de tipo "ataque por replicación").
 >>
 >>    Una vez activada la función, deberá determinar la duración en la que el navegador aplicará la función HSTS en su sitio web. 
 >>
@@ -324,7 +324,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
 #### Configurar las opciones de la CDN Advanced
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -359,11 +359,11 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >> > [!primary]
 >> >
->> > Las opciones que se presentan a continuación requieren la suscripción a la [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Las opciones que se presentan a continuación requieren la suscripción a la [CDN Advanced](/links/web/hosting-options-cdn).
 >>
 >> - **Header HTTP de geolocalización**: Determine el país del visitante para personalizar la experiencia propuesta. El código de país se añade automáticamente en la cabecera de cada petición para que su servidor original la manipule. Los elementos de identificación en la cabecera se presentan bajo los nombres `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 >>
->> - **Prefetch** : Adelántese la carga del siguiente recurso. Precargue automáticamente en la caché CDN gracias al *header link* de su sitio web. Este mecanismo se utiliza principalmente para cargar CSS, JavaScript, imágenes, favicons o incluso tipos de letra web que son necesarios para el tema del sitio web. 
+>> - **Prefetch**: Adelántese la carga del siguiente recurso. Precargue automáticamente en la caché CDN gracias al *header link* de su sitio web. Este mecanismo se utiliza principalmente para cargar CSS, JavaScript, imágenes, favicons o incluso tipos de letra web que son necesarios para el tema del sitio web. 
 >>
 >>    En el ejemplo de abajo, cuando se encuentra en la página actual que muestra "Hi", una subpetición inicia la precarga de la fuente `/cache/style.css` .  
 >>
@@ -397,13 +397,13 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-prewarm.png){.thumbnail}
 >>
->> - **Caché rule** : Cree hasta 100 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. Continúe leyendo esta guía en [el siguiente sección](#cacherulesadv) para más información.
+>> - **Caché rule**: Cree hasta 100 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. Continúe leyendo esta guía en [el siguiente sección](#cacherulesadv) para más información.
 >>
 >> Una vez que haya seleccionado las opciones, haga clic en `Aplicar la configuración`{.action} y seleccione `Aceptar la configuración`{.action} en la siguiente ventana.
 
 ##### **Crear una regla de almacenamiento en caché avanzada** <a name="cacherulesadv"></a>
 
-Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -442,11 +442,11 @@ Haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
 >>
 >> - **Nombre de regla**: Asigne un nombre a la regla.
 >> - **Tipo de recurso**: Elija entre las siguientes opciones:
->>    - **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: CSS.
+>>    - **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto (por ejemplo: CSS).
 >>    - **Carpeta**: Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
 >>    - **Expresión regular personalizada**: Se aplica a todos los URI de su sitio web.
 >>    - **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
->> - **Recursos**: defina los atributos en función del tipo de recurso elegido.
+>> - **Recursos**: Defina los atributos en función del tipo de recurso elegido.
 >> - **Duración**: Indique el tiempo de cacheado del recurso seleccionado.
 >> - **Clasificación**: Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
 >>
@@ -506,7 +506,7 @@ Esta acción permite desactivar el CDN para uno o varios de sus dominios o subdo
 >
 > La modificación de un registro en la zona DNS activa de un dominio conlleva un retraso de propagación de **4** a **24** horas para ser plenamente efectiva. Una página con el código **520** puede aparecer aleatoriamente hasta que se complete la propagación. Este fenómeno se debe a que determinadas partes de la red DNS redirigen aún las peticiones hacia la dirección IP de la CDN asociada a su alojamiento web.
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**

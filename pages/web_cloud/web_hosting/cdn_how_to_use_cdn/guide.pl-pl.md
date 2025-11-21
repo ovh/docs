@@ -45,28 +45,28 @@ Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana 
 
 #### Jeśli opcja CDN jest już włączona na Twoim hostingu
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -76,7 +76,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W otwartej się karcie kliknij przycisk `Zatwierdź`{.action}, aby włączyć CDN.
 >>
@@ -99,28 +99,28 @@ Jeśli chodzi o SEO (pozycjonowanie w wyszukiwarkach), szybkość wyświetlania 
 
 Czasem warto wyczyścić pamięć podręczną CDN, zwłaszcza gdy zmieniasz swoje pliki statyczne. Na przykład podczas wdrażania nowej wersji Twojej witryny. Możesz wyczyścić pamięć podręczną dla każdej z Twoich domen i poddomen.
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **4** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -132,28 +132,28 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
 #### Konfiguracja opcji usługi Shared CDN
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -163,11 +163,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> > [!warning]
 >> > 
->> > Niektóre opcje są zablokowane dla oferty Basic i wymagają zamówienia usługi [CDN security](/links/web/hosting-options-cdn) lub [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Niektóre opcje są zablokowane dla oferty Basic i wymagają zamówienia usługi [CDN security](/links/web/hosting-options-cdn) lub [CDN Advanced](/links/web/hosting-options-cdn).
 >>
 >> ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-option-settings.png){.thumbnail}
 >>
@@ -175,9 +175,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >>
 >> - **HTTP/2**: Protokół umożliwiający zwiększenie wydajności strony www pod względem bezpieczeństwa i czasu odpowiedzi.
 >>
->> - **Dev-mode**: pozwala na wyłączenie cache podczas tworzenia strony.
+>> - **Dev-mode**: Pozwala na wyłączenie cache podczas tworzenia strony.
 >>
->> - **Brotli**: rodzaj kompresji pozwalającej na optymalizację rozmiaru plików w pamięci cache.
+>> - **Brotli**: Rodzaj kompresji pozwalającej na optymalizację rozmiaru plików w pamięci cache.
 >>
 >> - **Zasada cache**: Utwórz do 5 reguł. Określają one częstotliwość odświeżania bufora dla określonych zasobów na Twojej stronie. ([postępuj zgodnie z kolejnymi krokami](#cacherules)). 
 >>
@@ -185,28 +185,28 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 
 ##### **Utwórz regułę cache** <a name="cacherules"></a>
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **6** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -216,7 +216,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 >>
@@ -226,13 +226,13 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> - **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL. W przypadku ofert CDN-Basic i CDN-Security można podać tylko rozszerzenie pliku.
 >>
->> - **Czas**: wskaż czas przechowywania wybranego zasobu w pamięci cache.
+>> - **Czas**: Wskaż czas przechowywania wybranego zasobu w pamięci cache.
 >>
 >> - **Klasyfikacja**: Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
 >>
 >> Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 >>
-> **Etap 6**
+> **Krok 6**
 >>
 >> Reguły znajdują się na liście. Możesz zmienić regułę klikając na `...`{.action} po prawej stronie, a następnie na `Zmień regułę`{.action}; lub usunąć ją, klikając `Usuń regułę`{.action}.
 >>
@@ -246,28 +246,28 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 
 #### Konfiguracja opcji CDN Security
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **6** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -277,10 +277,10 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> > [!primary]
->> > Poniższe opcje wymagają zamówienia na [CDN security](/links/web/hosting-options-cdn) lub [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Poniższe opcje wymagają zamówienia na [CDN security](/links/web/hosting-options-cdn) lub [CDN Advanced](/links/web/hosting-options-cdn).
 >>
 >> - **Cross-Origin Resource Sharing (CORS)**: Wpisz na liście nazwy domen zewnętrznych, które będą mogły uzyskać dostęp do zasobów Twojej strony WWW, aby je udostępnić. 
 >>
@@ -324,28 +324,28 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 
 #### Konfiguracja opcji CDN Advanced
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -355,7 +355,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> > [!primary]
 >> >
@@ -403,28 +403,28 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 
 ##### **Tworzenie reguły zaawansowanego cache** <a name="cacherulesadv"></a>
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **6** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -434,7 +434,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 >>
@@ -442,17 +442,17 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> - **Nazwa reguły**: Nadaj nazwę swojej regule.
 >> - **Rodzaj zasobów**: Wybierz spośród poniższych opcji:
->>    - **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład CSS
+>>    - **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików (na przykład: CSS).
 >>    - **Dokumentacja**: Wprowadź prawidłową ścieżkę dla jednego z katalogów znajdujących się w katalogu głównym Twojej strony WWW.
->>    - **Regularne spersonalizowane**: wyrażenie: Dotyczy ona wszystkich URI Twojej strony WWW.
+>>    - **Regularne spersonalizowane**: Wyrażenie: Dotyczy ona wszystkich URI Twojej strony WWW.
 >>    - **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL.
->> - **Zasoby**: definiuj atrybuty według wybranego typu zasobów.
+>> - **Zasoby**: Definiuj atrybuty według wybranego typu zasobów.
 >> - **Czas trwania**: Wskaż czas przechowywania wybranego zasobu w pamięci cache.
 >> - **Klasyfikacja**: Ustaw kolejność wykonywania reguł (od najniższej do najwyższej).
 >>
 >> Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 >>
-> **Etap 6**
+> **Krok 6**
 >>
 >> Reguły znajdują się na liście. Możesz zmienić regułę klikając `...`{.action} po prawej stronie, po czym kliknij `Zmień regułę`{.action}. Możesz ją usunąć, klikając `Usuń regułę`{.action}.
 >>
@@ -506,28 +506,28 @@ Ta akcja pozwala wyłączyć CDN dla jednej lub kilku Twoich domen lub poddomen,
 >
 > Modyfikacja wpisu w aktywnej strefie DNS domeny wiąże się z opóźnieniem propagacji wynoszącym **4** do **24** godzin, zanim wejdzie on w życie. W tym czasie może pojawić się losowo strona z kodem **520**. Zjawisko to jest związane z faktem, że niektóre części sieci DNS nadal przekierowują zapytania na adres IP usługi CDN powiązanej z Twoim hostingiem.
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -537,7 +537,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 >>

@@ -167,7 +167,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> > [!warning]
 >> > 
->> > Alcune opzioni sono bloccate sull'offerta Basic e richiedono la sottoscrizione della [CDN security](/links/web/hosting-options-cdn) o della [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Alcune opzioni sono bloccate sull'offerta Basic e richiedono la sottoscrizione della [CDN security](/links/web/hosting-options-cdn) o della [CDN Advanced](/links/web/hosting-options-cdn).
 >>
 >> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-option-settings.png){.thumbnail}
 >>
@@ -175,9 +175,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> - **HTTP/2**: Protocollo che permette di migliorare le performance del tuo sito Web in termini di sicurezza e latenza.
 >>
->> - **Dev-mode**: ti permette di disattivare la cache durante lo sviluppo del tuo sito.
+>> - **Dev-mode**: Ti permette di disattivare la cache durante lo sviluppo del tuo sito.
 >>
->> - **Brotli**: tipo di compressione che permette di ottimizzare la dimensione dei tuoi file in cache.
+>> - **Brotli**: Tipo di compressione che permette di ottimizzare la dimensione dei tuoi file in cache.
 >>
 >> - **Regola di cache**: Crea fino a 5 regole. che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. ([segui la fase successiva](#cacherules)). 
 >>
@@ -226,7 +226,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 >>
 >> - **URI**: Indica la sottounità di risorse del tuo sito Web, tramite il percorso che conduce all'URL. Per le offerte CDN-Basic e CDN-Security, è possibile inserire solo un'estensione di file. 
 >>
->> - **Durata**: indica la durata di messa in cache della risorsa scelta.
+>> - **Durata**: Indica la durata di messa in cache della risorsa scelta.
 >>
 >> - **Classificazione**: Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
 >>
@@ -242,7 +242,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 >>
 >> > [!warning]
 >> >
->> > Per usufruire di una quota di regole più elevata e di parametri aggiuntivi sulla creazione di regole di messa in cache, puoi optare per l'opzione [CDN Advanced](/links/web/hosting-options-cdn)
+>> > Per usufruire di una quota di regole più elevata e di parametri aggiuntivi sulla creazione di regole di messa in cache, puoi optare per l'opzione [CDN Advanced](/links/web/hosting-options-cdn).
 
 #### Configura le opzioni della CDN Security
 
@@ -280,7 +280,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 > **Passaggio 5**
 >>
 >> > [!primary]
->> > le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](/links/web/hosting-options-cdn) o della [CDN Advanced](/links/web/hosting-options-cdn)
+>> > le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](/links/web/hosting-options-cdn) o della [CDN Advanced](/links/web/hosting-options-cdn).
 >>
 >> - **Cross-Origin Resource Sharing (CORS)**: Indica, nell'elenco, i domini esterni che saranno autorizzati ad accedere alle risorse del tuo sito web per condividerle. 
 >>
@@ -367,7 +367,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >>    Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hi", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.css`.
 >>
->>    ```	
+>>    ```
 >>    <?php
 >>    header("Link: </cache/style.css>; rel=prefetch");
 >>    print 'Hi'
@@ -397,7 +397,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >>    ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-prewarm.png){.thumbnail}
 >>
->> - **Cache rule**: Crea fino a 100 regole. che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. Prosegui nella lettura di questa guida [nella parte](#cacherulesadv) successiva per maggiori informazioni.
+>> - **Cache rule**: Crea fino a 100 regole. Che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. Prosegui nella lettura di questa guida [nella parte](#cacherulesadv) successiva per maggiori informazioni.
 >>
 >> Dopo aver scelto le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
@@ -442,11 +442,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 >>
 >> - **Regola**: Assegna un nome alla tua regola.
 >> - **Tipo di risorsa**: Scegli tra le seguenti opzioni:
->>    - **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: CSS.
+>>    - **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche (ad esempio: CSS).
 >>    - **Cartella**: Inserisci un percorso valido per una delle cartelle presenti nella directory di root del tuo sito web.
 >>    - **Espressione regolare personalizzata**: E si applica a tutti gli URI del tuo sito Web.
 >>    - **URI**: Indica la sottounità di risorse del tuo sito Web, tramite il percorso che conduce all'URL.
->> - **Risorsa**: definisci gli attributi in funzione del tipo di risorsa scelta.
+>> - **Risorsa**: Definisci gli attributi in funzione del tipo di risorsa scelta.
 >> - **Durata**: Indica la durata di messa in cache della risorsa scelta.
 >> - **Classificazione**: Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
 >>

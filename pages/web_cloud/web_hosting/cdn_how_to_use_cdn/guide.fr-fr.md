@@ -442,7 +442,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 >> - **Nom de règle** : Attribuez un nom à votre règle.
 >> - **Type de ressource** : Choisissez parmi les choix ci-dessous :
->>    - **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : CSS.
+>>    - **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point (par exemple : CSS).
 >>    - **Dossier** : Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
 >>    - **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
 >>    - **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
