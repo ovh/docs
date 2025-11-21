@@ -1,6 +1,6 @@
 ---
-title: "Wie kann ich die Zuordnung „Domain / Website“ prüfen?"
-excerpt: "Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Unterdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist"
+title: "Wie kann ich die Zuordnung von Domainnamen und Websites prüfen?"
+excerpt: "Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Subdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist"
 updated: 2025-11-27
 ---
 
@@ -20,16 +20,16 @@ details[open]>summary::before {
 
 ## Ziel
 
-Sie können mehrere Webseiten auf derselben Webhosting-Angebot nutzen, selbst wenn die Domains nicht bei OVHcloud registriert sind. Zudem können Sie eine oder mehrere Domains oder Unterdomains derselben Website zuordnen.
+Sie können mehrere Webseiten auf derselben Webhosting Angebot nutzen, selbst wenn die Domains nicht bei OVHcloud registriert sind. Zudem können Sie eine oder mehrere Domains oder Subdomains derselben Website zuordnen.
 
-**Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Unterdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist.**
+**Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Subdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist.**
 
 ## Voraussetzungen
 
-- Ein kompatibles [OVHcloud Webhosting-Angebot](/links/web/hosting-multisite) besitzen.
-- Eine oder mehrere [Domains](/links/web/domains) besitzen.
-- Die Konfiguration Ihrer Domains über die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) ändern können.
-- Angemeldet sein in Ihrem [OVHcloud Kundencenter](/links/manager).
+- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting).
+- Sie verfügen über einen oder mehrere [Domainnamen](/links/web/domains).
+- Sie haben die erforderlichen Berechtigungen zur Verwaltung der [DNS-Zonen Ihrer Domainnamen](/pages/web_cloud/domains/dns_zone_edit).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -58,25 +58,25 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 4**
 >>
->> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
+>> In der Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomain anzuzeigen.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
 > **Schritt 5**
 >>
->> Die Domains oder Unterdomains, die mit Ihrer Website verknüpft sind, werden angezeigt. 
+>> Die Domains oder Subdomains, die mit Ihrer Website verknüpft sind, werden angezeigt. 
 >>
 >> ![Domains associated websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab-with-domains-associated-displayed.png){.thumbnail}
 >>
->> Die Spalte `Diagnose` informiert Sie darüber, ob Ihre Domain korrekt auf das zugeordnete Webhosting verweist. Sie ermöglicht es Ihnen, schnell zu prüfen, ob die DNS-Konfiguration Ihrer Domain korrekt mit Ihrem Webhosting durchgeführt wurde. Somit hilft Ihnen diese Spalte, etwaige Probleme mit der Zuordnung zu identifizieren und zu beheben. Für jede Domain sind drei mögliche Diagnose-Ergebnisse möglich :
+>> Die Spalte `Diagnose` informiert Sie darüber, ob Ihre Domain korrekt auf das zugeordnete Webhosting verweist. Sie können unmittelbar sehen, ob die DNS-Konfiguration Ihrer Domain mit Ihrem Webhosting korrekt durchgeführt wurde. Somit hilft Ihnen diese Spalte, etwaige Probleme mit der Zuordnung zu identifizieren und zu beheben. Für jede Domain sind drei mögliche Diagnose-Ergebnisse möglich:
 >>
->> - `A/AAAA` grün.
->> - `A/AAAA` gelb.
->> - `A/AAAA` grau.
+>> - `A/AAAA` grün
+>> - `A/AAAA` gelb
+>> - `A/AAAA` grau
 >>
->> Konsultieren Sie den Abschnitt „[Interpretation der Farben des Diagnose-Tools](#interpretation)“ in diesem Leitfaden, um die Bedeutung dieser drei Farben zu verstehen.
+>> Konsultieren Sie den Abschnitt "[Bedeutung der Farben des Diagnose-Tools](#interpretation)" in dieser Anleitung, um die Bedeutung dieser drei Farben zu verstehen.
 
-### Interpretation der Farben des Diagnose-Tools <a name="interpretation"></a>
+### Bedeutung der Farben des Diagnose-Tools <a name="interpretation"></a>
 
 **Klicken Sie auf das beobachtete Ergebnis unter den drei möglichen Ergebnissen unten, um die Erklärungen anzuzeigen.**
 
@@ -92,13 +92,13 @@ Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass
 
 ![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
 
-Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` gelb ist, bedeutet dies, dass der Eintrag **A** (IPv4) und/oder **AAAA** (IPv6) Ihrer Domain auf eine IP-Adresse verweist, die jedoch nicht die IP-Adresse des Webhostings ist, von dem aus Sie die Spalte `Diagnose` betrachten.
+Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` gelb ist, bedeutet dies, dass der Eintrag **A** (IPv4) und/oder **AAAA** (IPv6) Ihrer Domain auf eine IP-Adresse verweist, die jedoch nicht die IP-Adresse des Webhostings ist, von dem aus Sie die Spalte `Diagnose` einsehen.
 
-Klicken Sie auf das gelbe Symbol `A/AAAA`, um weitere Informationen zu erhalten. Die folgende Nachricht wird angezeigt :
+Klicken Sie auf das gelbe Symbol `A/AAAA`, um weitere Informationen zu erhalten. Die folgende Nachricht wird angezeigt:
 
 ![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-Um Probleme mit der DNS-Zuordnung Ihrer Domain zu beheben und sicherzustellen, dass diese korrekt auf das gewünschte Webhosting verweist, befolgen Sie die Schritte in unserem Leitfaden „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.
+Um Probleme mit der DNS-Zuordnung Ihrer Domain zu beheben und sicherzustellen, dass diese korrekt auf das gewünschte Webhosting verweist, befolgen Sie die Schritte in unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 /// 
 
@@ -108,11 +108,11 @@ Um Probleme mit der DNS-Zuordnung Ihrer Domain zu beheben und sicherzustellen, d
 
 Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grau ist, bedeutet dies, dass die Domain aktuell auf keine IP-Adresse verweist und weder ein Eintrag **A** (IPv4) noch **AAAA** (IPv6) für diese Domain konfiguriert ist.
 
-Klicken Sie auf das graue Symbol `A/AAAA`, um weitere Informationen zu erhalten. Die folgende Nachricht wird angezeigt :
+Klicken Sie auf das graue Symbol `A/AAAA`, um weitere Informationen zu erhalten. Die folgende Nachricht wird angezeigt:
 
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
-Um die Einträge **A** und/oder **AAAA** hinzuzufügen und Ihre Domain korrekt zu konfigurieren, befolgen Sie die Schritte in unserem Leitfaden „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.
+Um die Einträge **A** und/oder **AAAA** hinzuzufügen und Ihre Domain korrekt zu konfigurieren, befolgen Sie die Schritte in unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 

@@ -26,21 +26,21 @@ You can host multiple websites on a single web hosting plan, even if the domain 
 
 ## Requirements
 
-- Have a compatible [OVHcloud web hosting](/links/web/hosting-multisite) plan.
-- Have one or more [domain names](/links/web/domains).
-- Be able to modify the configuration of your domain names from the [DNS zone](/pages/web_cloud/domains/dns_zone_edit).
-- Be logged in to your [OVHcloud Control Panel](/links/manager).
+- A compatible [OVHcloud web hosting plan](/links/web/hosting-multisite)
+- One or more [domain names](/links/web/domains)
+- Access to modify the configuration of the [DNS zones of your domain names](/pages/web_cloud/domains/dns_zone_edit)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Access the diagnostic tool
 
-CClick on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Kundencenter](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -70,15 +70,15 @@ CClick on the tabs below to view each of the **5** steps.
 >>
 >> The `Diagnostic` column informs you whether your domain name is correctly pointing to the associated web hosting. It allows you to quickly verify that the DNS configuration of your domain name is correctly set up with your web hosting. This column helps you identify and resolve any potential pointing issues. For each domain name, three diagnostic results are possible:
 >>
->> - Green `A/AAAA`.
->> - Yellow `A/AAAA`.
->> - Grey `A/AAAA`.
+>> - Green `A/AAAA`
+>> - Yellow `A/AAAA`
+>> - Grey `A/AAAA`
 >>
->> Refer to the  "[Interpretation of the diagnostic tool's colours](#interpretation)" section of this guide to find out what these three colours mean.
+>> Refer to the "[Interpretation of the diagnostic tool's colours](#interpretation)" section of this guide to find out what these colours mean.
 
 ### Interpretation of the diagnostic tool's colours <a name="interpretation"></a>
 
-**Click on the observed result among the three possible results below to display the explanations.**
+**Click on the relevant status indicators below to see their explanations.**
 
 /// details | Green A/AAAA
 
@@ -98,7 +98,7 @@ Click on the yellow `A/AAAA` icon for more information. The following message ap
 
 ![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-To resolve DNS pointing issues with your domain name and ensure it correctly points to the desired web hosting, follow the steps described in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
+To resolve DNS issues with your domain name and ensure it correctly points to the desired web hosting, follow the steps described in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
