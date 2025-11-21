@@ -78,7 +78,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 
 ### Interpretazione dei colori dello strumento di diagnostica <a name="interpretation"></a>
 
-**Clicca sul risultato osservato tra i 3 risultati possibili qui sotto per visualizzare le spiegazioni.**
+**Clicca sugli indicatori di stato pertinenti qui sotto per visualizzarne le spiegazioni.**
 
 /// details | A/AAAA verde
 

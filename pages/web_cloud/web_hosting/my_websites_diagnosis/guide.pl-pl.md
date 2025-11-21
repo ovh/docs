@@ -78,7 +78,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 
 ### Interpretacja kolorów narzędzia diagnostycznego <a name="interpretation"></a>
 
-**Kliknij wynik, który obserwujesz spośród trzech możliwych poniżej, aby wyświetlić wyjaśnienia.**
+**Kliknij odpowiednie wskaźniki statusu poniżej, aby wyświetlić ich objaśnienia.**
 
 /// details | A/AAAA zielony
 

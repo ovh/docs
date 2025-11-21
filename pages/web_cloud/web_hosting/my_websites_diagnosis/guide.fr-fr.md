@@ -78,7 +78,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 
 ### Interprétation des couleurs de l'outil de diagnostic <a name="interpretation"></a>
 
-**Cliquez sur le résultat observé parmi les 3 résultats possibles ci-dessous pour afficher les explications.**
+**Cliquez sur les indicateurs d'état correspondants ci-dessous pour voir leurs explications.**
 
 /// details | A/AAAA vert
 

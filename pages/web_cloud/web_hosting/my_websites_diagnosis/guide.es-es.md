@@ -78,7 +78,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 ### Interpretación de los colores de la herramienta de diagnóstico <a name="interpretation"></a>
 
-**Haga clic en el resultado observado entre los 3 resultados posibles que se muestran a continuación para mostrar las explicaciones.**
+**Haga clic en los indicadores de estado correspondientes a continuación para ver sus explicaciones.**
 
 /// details | A/AAAA verde
 
