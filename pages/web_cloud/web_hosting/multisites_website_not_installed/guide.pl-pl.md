@@ -1,7 +1,7 @@
 ---
 title: Usunięcie błędu "Strona nie została zainstalowana"
 excerpt: Dowiedz się, jak usunąć błąd "Strona nie została zainstalowana"
-updated: 2025-08-25
+updated: 2025-11-27
 ---
 
 > [!success]
@@ -31,18 +31,14 @@ W przeglądarce internetowej może pojawić się komunikat o błędzie "**Niezai
 
 ## W praktyce
 
-> [!warning]
->
-> Niniejszy przewodnik zostanie wkrótce zaktualizowany. W razie jakichkolwiek trudności prosimy zapoznać się z angielską lub francuską wersją niniejszego przewodnika, klikając odpowiednią flagę u góry tej strony.
-
 Strona "**Strona nie została zainstalowana**" wyświetla się z dwóch powodów:
 
-- 1: [Twoja domena lub subdomena nie jest poprawnie zadeklarowana na Twoim hostingu](#check-multisites).
+- 1: [Twój domena lub poddomena nie jest poprawnie zadeklarowana na jednej z witryn internetowych znajdujących się na Twoim hostingu](#check-my-websites).
 - 2: [Twoja domena nie wskazuje na adres IP Twojego hostingu.](#check-dns-domain)
 
 Poniższe kroki pozwolą Ci naprawić błąd `Strona nie została zainstalowana` w obu przypadkach.
 
-### 1 - Sprawdź deklarację Twojej domeny lub subdomeny na hostingu <a name="check-multisites"></a>
+### 1 - Sprawdź deklarację swojej domeny lub poddomeny na swojej stronie internetowej znajdującej się na Twoim hostingu <a name="check-my-websites"></a>
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
@@ -61,21 +57,21 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 >>
 > **Etap 3**
 >>
->> Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}.
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
 > **Etap 4**
 >>
->> Na nowej stronie, która się wyświetli, pojawi się tabela.
+>> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić domeny i poddomeny przypisane do niej.
 >>
->> ![Multisite interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
+>> ![Strona internetowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> |Scenariusze|Działania do podjęcia|
->> |---|---| 
->> |Domena lub subdomena powiązana z Twoją stroną WWW **wyświetla się** w tabeli "MultiSite".|Jeśli właśnie dodałeś domenę lub subdomenę w części `MultiSite`{.action} Twojego hostingu, odczekaj około **dwadzieścia minut**, a następnie odśwież cache przeglądarki internetowej. Jeśli nadal pojawia się komunikat "Strona nie została zainstalowana", przejdź do [część 2](#check-dns-domain).|
->> |Domena lub subdomena powiązana z Twoją stroną WWW **nie wyświetla się** w tabeli "MultiSite".|Dodaj domenę lub subdomenę do sekcji `MultiSite`{.action}, postępując zgodnie z dedykowaną rubryką przewodnika "[Instalacja kilku stron WWW na jednym hostingu - dodaj domenę lub subdomenę](/pages/web_cloud/web_hosting/multisites_configure_multisite)".|
->> |Domena lub subdomena **została usunięta** z tabeli "MultiSite" bez konieczności podejmowania działań przez użytkownika.|Domena lub jej strefa DNS mogą być zarządzane z innego konta. Dodaj domenę lub subdomenę w sekcji `MultiSite`{.action} zgodnie z dedykowaną rubryką przewodnika "[Instalacja kilku stron WWW na jednym hostingu - dodaj domenę zewnętrzną](/pages/web_cloud/web_hosting/multisites_configure_multisite)".|
+>> |Scenariusze|Działania do wykonania|
+>> |---|---|
+>> |Domena lub poddomena przypisana do Twojej strony internetowej **występuje** w tabeli.|Jeśli właśnie dodałeś swoją domenę lub poddomenę do strony internetowej znajdującej się na Twoim hostingu, poczekaj około **dwadzieścia minut**, a następnie odśwież pamięć podręczną przeglądarki internetowej. Jeśli nadal pojawia się komunikat „Strona nie jest zainstalowana”, przejdź do [części 2](#check-dns-domain).|
+>> |Domena lub poddomena przypisana do Twojej strony internetowej **nie występuje** w tabeli.|Dodaj swoją domenę lub poddomenę, korzystając z naszego poradnika „[Jak przypisać domenę do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.|
+>> |Domena lub poddomena **została usunięta** z tabeli bez Twojej interwencji.|Twoja domena lub strefa DNS może być zarządzana z innego konta. Dodaj swoją domenę lub poddomenę, korzystając z naszego poradnika „[Jak przypisać domenę do istniejącej strony internetowej ? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.|
 
 ### 2 - Sprawdź wskazanie adresu IP w aktywnej strefie DNS Twojej domeny <a name="check-dns-domain"></a>
 
@@ -145,7 +141,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> >
 >> > Jeśli Twoja nazwa domeny nie wyświetla się na liście, oznacza to, że Twoja strefa DNS nie jest zarządzana z poziomu Panelu klienta OVHcloud.<br>
 >> > Sprawdź "operatora" oraz serwery DNS, z którymi jest on powiązany, przy użyciu narzędzia [WHOIS](/links/web/domains-whois).<br>
->> > Znajdź i zmodyfikuj strefę DNS zgodnie z instrukcjami w sekcji przewodnika "[Instalacja kilku stron WWW na jednym hostingu - dodaj domenę zewnętrzną](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>> > Znajdź i zmień odpowiednią strefę DNS, korzystając z odpowiedniej sekcji poradnika „[Jak przypisać domenę do istniejącej strony internetowej ? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.
 >>
 > **Etap 3**
 >>
@@ -157,7 +153,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> >
 >> > Jeśli zakładka `Strefa DNS`{.action} Twojej domeny wyświetla się w następujący sposób:<br><br>![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail<br>
 >> >
->> > Oznacza to, że Twoja domena nie jest zarządzana z poziomu Panelu klienta OVHcloud.<br> Ustal "operatora" domeny oraz serwery DNS, z którymi jest ona powiązana za pomocą narzędzia [WHOIS](/links/web/domains-whois).<br> Znajdź i zmodyfikuj odpowiednią strefę DNS, postępując zgodnie z instrukcjami w sekcji przewodniku "[Instalacja kilku stron WWW na jednym hostingu - dodaj domenę zewnętrzną](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>> > Oznacza to, że Twoja domena nie jest zarządzana z Twojego panelu klienta OVHcloud.<br> Określ jej „biuro rejestracji” oraz serwery DNS, do których jest przypisana, korzystając z naszego narzędzia [WHOIS](/links/web/domains-whois).<br> Znajdź i zmień odpowiednią strefę DNS, korzystając z odpowiedniej sekcji poradnika „[Jak przypisać domenę do istniejącej strony internetowej ? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.
 >>
 >> Przejdź do etapu 4, aby wyświetlić różne możliwe scenariusze i działania, które należy podjąć.
 >>
@@ -174,7 +170,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 [Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-[Instalacja kilku stron WWW na hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[Jak przypisać domenę do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 
 [Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 

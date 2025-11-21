@@ -1,7 +1,7 @@
 ---
 title: 'Solucionar el error "Sitio no instalado"'
 excerpt: 'Descubra cómo solucionar el error "Sitio no instalado"'
-updated: 2025-08-25
+updated: 2025-11-27
 ---
 
 > [!success]
@@ -31,18 +31,14 @@ Es posible que aparezca en su navegador de internet la página de error "**Sitio
 
 ## Procedimiento
 
-> [!warning]
->
-> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
-
 La página "**Sitio no instalado**" aparece por dos motivos:
 
-- 1: [Su dominio o subdominio no está correctamente declarado en su alojamiento web](#check-multisites).
+- 1: [Su dominio o subdominio no está declarado correctamente en uno de los sitios web presentes en su alojamiento web](#check-my-websites).
 - 2: [Su dominio no apunta a la dirección IP de su plan de hosting.](#check-dns-domain)
 
 A continuación se explica cómo corregir el error `Sitio no instalado` en ambos casos.
 
-### 1 - Compruebe la declaración de su dominio o subdominio en su alojamiento web <a name="check-multisites"></a>
+### 1 - Comprobar la declaración de su dominio o subdominio en su sitio web presente en su alojamiento web <a name="check-my-websites"></a>
 
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
@@ -61,21 +57,21 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 > **Etapa 3**
 >>
->> En la nueva página, haga clic en la pestaña `Multisitio`{.action}.
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
->> Aparecerá una tabla en la nueva página.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
 >>
->> ![Multisite interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
+>> ![Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> |Escenarios|Acciones a emprender|
+>> |Escenarios|Acciones a realizar|
 >> |---|---|
->> El nombre de dominio o subdominio asociado a su sitio web **aparece** en la tabla «multisitio».|Si acaba de añadir su nombre de dominio o subdominio a la sección `Multisitio`{.action} de su alojamiento web, espere unos **veinte minutos** y actualice la caché de su navegador de internet. Si sigue apareciendo el mensaje «Sitio no instalado», vaya a la [parte 2](#check-dns-domain).|
->> |El nombre de dominio o subdominio asociado a su sitio web **no aparece** en la tabla «multisitio».|Añada su nombre de dominio o subdominio a la sección `Multisitio`{.action} siguiendo la sección dedicada de la guía «[Alojar varios sitios web en un mismo hosting - añadir un dominio o subdominio](/pages/web_cloud/web_hosting/multisites_configure_multisite)».|
->> |El nombre de dominio o subdominio **se ha eliminado** de la tabla «multisitio» sin que usted realice ninguna acción.|Es posible que su dominio o su zona DNS estén administrados desde otra cuenta. Añada su nombre de dominio o subdominio a la sección `Multisitio`{.action} siguiendo la sección dedicada de la guía «[Alojar varios sitios web en un mismo hosting - añadir un dominio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite)».|
+>> |El dominio o subdominio asociado a su sitio web **aparece** en la tabla.|Si acaba de añadir su dominio o subdominio a su sitio web en su alojamiento web, espere aproximadamente **veinte minutos** y luego actualice la caché de su navegador. Si sigue apareciendo el mensaje «Sitio no instalado», pase a la [parte 2](#check-dns-domain).|
+>> |El dominio o subdominio asociado a su sitio web **no aparece** en la tabla.|Añada su dominio o subdominio siguiendo nuestro guía «[¿Cómo asociar un dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)».|
+>> |El dominio o subdominio **ha sido eliminado** de la tabla sin que usted haya realizado ninguna acción.|Es posible que su dominio o su zona DNS esté gestionada desde otra cuenta. Añada su dominio o subdominio siguiendo nuestro guía «[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)».|
 
 ### 2 - Comprobar el direccionamiento IP en la zona DNS activa de su dominio <a name="check-dns-domain"></a>
 
@@ -145,7 +141,7 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **4** eta
 >> >
 >> > Si el dominio no aparece en la lista, la zona DNS no está gestionada desde el área de cliente de OVHcloud.<br>
 >> > Determine su «agente registrador» y los servidores DNS a los que está asociado a través de nuestra herramienta [WHOIS](/links/web/domains-whois).<br>
->> > Descubra y modifique la zona DNS correspondiente en la sección dedicada de la guía «[Alojar varios sitios web en un mismo hosting - añadir un dominio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite)».
+>> > Encuentre y modifique la zona DNS correspondiente siguiendo la sección dedicada del guía «[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)».
 >>
 > **Etapa 3**
 >>
@@ -157,7 +153,7 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **4** eta
 >>
 >> > Si la pestaña `Zona DNS`{.action} del dominio aparece como sigue:<br><br> ![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
 >>
->> > Esto significa que su dominio no está gestionado desde el área de cliente de OVHcloud.<br> Determine su «agente registrador» y los servidores DNS a los que está asociado a través de nuestra herramienta [WHOIS](/links/web/domains-whois).<br> Encuentre y modifique la zona DNS en consecuencia siguiendo la sección dedicada de la guía «[Alojar varios sitios web en un mismo hosting - añadir un dominio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>> > Esto significa que su dominio no está gestionado desde su área de cliente de OVHcloud.<br> Determine su «registro de dominio» así como los servidores DNS a los que está asociado mediante nuestra herramienta [WHOIS](/links/web/domains-whois).<br> Encuentre y modifique la zona DNS correspondiente siguiendo la sección dedicada del guía «[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)».
 >>
 >> Vaya al etapa 4 para ver los posibles escenarios y las acciones que se deben realizar.
 >>
@@ -174,7 +170,7 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **4** eta
 
 [Lista de direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[¿Cómo asociar un dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 
 [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
