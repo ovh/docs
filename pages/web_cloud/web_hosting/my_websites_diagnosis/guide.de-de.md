@@ -26,7 +26,7 @@ Sie können mehrere Webseiten auf derselben Webhosting Angebot nutzen, selbst we
 
 ## Voraussetzungen
 
-- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting-multisite).
 - Sie verfügen über einen oder mehrere [Domainnamen](/links/web/domains).
 - Sie haben die erforderlichen Berechtigungen zur Verwaltung der [DNS-Zonen Ihrer Domainnamen](/pages/web_cloud/domains/dns_zone_edit).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).

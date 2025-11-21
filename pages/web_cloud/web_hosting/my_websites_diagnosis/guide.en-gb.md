@@ -40,7 +40,7 @@ Click on the tabs below to view each of the **5** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Kundencenter](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
