@@ -1,7 +1,7 @@
 ---
 title: ¿Qué hacer en caso de página del "Index of" ?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página "Index of"
-updated: 2025-10-28
+updated: 2025-11-27
 ---
 
 ## Objetivo
@@ -30,17 +30,13 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Procedimiento
 
-> [!warning]
->
-> Esta guía se actualizará próximamente. Si tiene alguna dificultad, consulte la versión en inglés o francés de esta guía haciendo clic en la bandera correspondiente en la parte superior de esta página.
-
 ### Comprender el origen de la página "Index of"
 
-Su nombre de dominio se declara para acceder a un directorio de destino (un "`Carpeta raíz`") en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Para ello, abra la pestaña [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su alojamiento web alojado en el [área de cliente de OVHcloud](/links/manager).
+Su nombre de dominio está declarado para acceder a un directorio objetivo (un « `Carpeta raíz` ») en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Esto se hace a través de la pestaña [Mis sitios](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su alojamiento web, disponible en su [área de cliente de OVHcloud](/links/manager).
 
 La página **Index of** indica que el directorio de destino no contiene un archivo **index.php** o **index.html**. Dicho archivo constituye el "*punto de entrada*" del sitio web. El nombre de este archivo está normalizado.
 
-Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz`, que contiene el archivo **index.php** o **index.html**, desde el apartado `Multisitio`{.action} del alojamiento.
+Para mostrar su sitio web, deberá, desde la pestaña `Mis sitios`{.action} de su alojamiento web, conectar su nombre de dominio al sitio web cuyo `Carpeta raíz` contiene el archivo **index.php** o **index.html**.
 
 > [!primary]
 >
@@ -50,34 +46,15 @@ Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz`, que 
 
 ### Solucionar el caso más común de una página "Index of"
 
-Ha importado los archivos de su sitio **mydomain.ovh** en la carpeta `www` de su alojamiento mediante [FTP](/pages/web_cloud/web_hosting/ftp_connection). Sin embargo, su nombre de dominio no está vinculado a esta carpeta en la columna `Carpeta raíz` de su sitio web.
+Ha importado los archivos de su sitio **mydomain.ovh** en la carpeta `www` de su alojamiento mediante [FTP](/pages/web_cloud/web_hosting/ftp_connection). Sin embargo, el sitio web al que está asociado su nombre de dominio no está conectado a este directorio en la columna `Carpeta raíz`.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Modifique la `Carpeta raíz` haciendo clic en el botón `...`{.action} a la derecha de la tabla y luego en `Modificar el dominio`{.action} :
+El `Carpeta raíz` no es modificable una vez creado el sitio web.
 
-![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+Deberá desvincular su nombre de dominio del sitio web existente desde la pestaña `Mis sitios`{.action} de su alojamiento web. Para ello, consulte nuestro guía « [¿Cómo desvincular un nombre de dominio de un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
-En la nueva ventana:
-
-* Marque la casilla `Editar también el subdominio www.mydomain.ovh`{.action} (1).
-* Indique el directorio que contiene el archivo **index.php** o **index.html** del sitio web como `Carpeta raíz` (2).
-* Haga clic en `Siguiente` (3).
-
-![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
-
-> [!primary]
->
-> Usar el directorio `www` como `Carpeta raíz` no es obligatorio. Puede instalar su sitio web en otra carpeta de su [servidor FTP](/pages/web_cloud/web_hosting/ftp_connection).
->
-
-En la siguiente ventana, haga clic en `Aceptar`{.action}.
-
-![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
-
-En unos minutos (refrescando el navegador), obtendrá el siguiente resultado:
-
-![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
+A continuación, podrá añadir un nuevo sitio web con su nombre de dominio utilizando nuestro guía « [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si su sitio web tiene una configuración con Git, consulte previamente nuestro guía « [Configurar y utilizar Git con un alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **antes** de `Desvincular el dominio`{.action}.
 
 Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacie la caché del navegador si fuera necesario.
 

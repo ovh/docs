@@ -1,7 +1,7 @@
 ---
 title: O que fazer em caso de página "Index of"?
 excerpt: Descubra como repor o seu site online quando exibe uma página "Index of".
-updated: 2025-10-28
+updated: 2025-11-27
 ---
 
 ## Objetivo
@@ -30,17 +30,13 @@ Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
 
 ## Instruções
 
-> [!warning]
->
-> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
-
 ### Compreender a origem da página "Index of"
 
-O seu nome de domínio é declarado para aceder a um diretório alvo (um "`Pasta raiz`") no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Isto no separador [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) do seu alojamento web presente no seu [Área de Cliente OVHcloud](/links/manager).
+O seu domínio está declarado para aceder a um diretório alvo (um « `Pasta raiz` ») no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Isto através do separador [Meus sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) do seu alojamento web, disponível na sua [Área de Cliente OVHcloud](/links/manager).
 
 A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
 
-Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que contém o ficheiro **index.php** ou **index.html**.
+Para visualizar o seu site web, terá, a partir do separador `Meus sites`{.action} do seu alojamento web, de ligar o seu domínio ao site web cujo `Pasta raiz` contenha este ficheiro **index.php** ou **index.html**.
 
 > [!primary]
 >
@@ -50,34 +46,15 @@ Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que 
 
 ### Resolver o caso mais comum de uma página "Index of"
 
-Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento através de [FTP](/pages/web_cloud/web_hosting/ftp_connection). No entanto, o seu nome de domínio não está ligado a esta pasta na coluna `Pasta raiz` do seu site.
+Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento através de [FTP](/pages/web_cloud/web_hosting/ftp_connection). No entanto, o site web ao qual está associado o seu domínio não está ligado a este diretório na coluna `Pasta raiz`.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Altere a `Pasta raiz` clicando no botão `...`{.action} à direita da tabela e depois em `Modificar o domínio`{.action}:
+O `Pasta raiz` não é, atualmente, modificável uma vez que o site web foi criado.
 
-![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+Terá de desligar o seu domínio do site web existente a partir do separador `Meus sites`{.action} do seu alojamento web. Para isso, consulte o nosso guia « [Como desligar um domínio de um site web existente ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
-Na nova janela:
-
-* Selecione a opção `Modificar também o subdomínio www.mydomain.ovh`{.action} (1);
-* Indique o diretório que contém o ficheiro **index.php** ou **index.html** do seu site como `Pasta raiz` (2);
-* Clique em `Seguinte` (3).
-
-![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
-
-> [!primary]
->
-> A utilização do diretório `www` como `Pasta raiz` não é, em caso algum, obrigatória. Pode instalar o seu site noutra pasta do seu [servidor FTP](/pages/web_cloud/web_hosting/ftp_connection).
->
-
-Na janela seguinte, clique em `Validar`{.action}.
-
-![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
-
-Dentro de alguns minutos (refrescando o seu browser), obterá o seguinte resultado:
-
-![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
+Poderá, em seguida, adicionar um novo site web com o seu domínio com a ajuda do nosso guia « [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Se o seu site web dispõe de uma configuração com Git, consulte previamente o nosso guia « [Configurar e utilizar o Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **antes** de `Desassociar o domínio`{.action}.
 
 Por fim, verifique se o seu site está a aparecer corretamente. Caso contrário, reinicie o seu dispositivo e esvazie a cache do seu browser, caso seja necessário.
 

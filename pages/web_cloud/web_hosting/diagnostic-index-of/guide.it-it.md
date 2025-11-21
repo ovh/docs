@@ -1,7 +1,7 @@
 ---
 title: Cosa fare in caso di pagina "Index of"?
 excerpt: Come caricare il tuo sito online, quando visualizza una pagina "Index of"
-updated: 2025-10-28
+updated: 2025-11-27
 ---
 
 ## Obiettivo
@@ -21,8 +21,6 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 >
 > Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 
->
-
 ## Prerequisiti
 
 - Disporre di un [dominio](/links/web/domains)
@@ -31,17 +29,13 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 
 ## Procedura
 
-> [!warning]
->
-> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
-
 ### Comprendere l'origine della pagina "Index of"
 
-Il tuo dominio è stato dichiarato per accedere a una directory di destinazione (una "`Cartella root`") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. accedendo alla scheda [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting Web presente nel tuo [Spazio Cliente OVHcloud](/links/manager).
+Il tuo dominio è dichiarato per accedere a una directory di destinazione (una " `Cartella di root` ") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. Questo tramite l'onghetta [I miei siti](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting web presente nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
 La pagina **Index of** indica che la directory di destinazione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito Web. Il nome del file è normalizzato.
 
-Per visualizzare il tuo sito Web, accedi alla sezione `Multisito`{.action} del tuo hosting e associa il tuo dominio alla `Cartella di root` che contiene questo file **index.php** o **index.html**.
+Per visualizzare il tuo sito web, dovrai quindi, dall'onghetta `I miei siti`{.action} del tuo hosting web, collegare il tuo dominio al sito web il cui `Cartella di root` contiene il file **index.php** o **index.html**.
 
 > [!primary]
 >
@@ -51,34 +45,15 @@ Per visualizzare il tuo sito Web, accedi alla sezione `Multisito`{.action} del t
 
 ### Risolvere il caso più comune di una pagina "Index of"
 
-Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo spazio di storage del tuo hosting Web tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Tuttavia, il tuo nome dominio non è collegato a questa cartella nella colonna `Cartella di root` del tuo sito web.
+Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo spazio di storage del tuo hosting Web tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Tuttavia, il sito web al quale è associato il tuo dominio non è collegato a questa directory nella colonna `Cartella di root`.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Modifica la `Cartella di root` cliccando sul pulsante `...`{.action} a destra della tabella e poi su `Modifica il dominio`{.action}:
+La `Cartella radice` non è, a oggi, modificabile una volta creato il sito web.
 
-![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+Dovrai staccare il tuo dominio dal sito web esistente dall'onghetta `I miei siti`{.action} del tuo hosting web. Per farlo, consulta la nostra guida « [Come staccare un dominio da un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
-Nella finestra che appare:
-
-* Seleziona la casella `Modifica anche il sottodominio www.mydomain.ovh`{.action} (1)
-* Indica la directory contenente il file **index.php** o **index.html** del tuo sito come `Cartella di root` (2);
-* Clicca su `Continua` (3).
-
-![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
-
-> [!primary]
->
-> Utilizzare la directory `www` come `Cartella di root` non è in nessun caso obbligatorio. Puoi installare il tuo sito in un'altra cartella del tuo [server FTP](/pages/web_cloud/web_hosting/ftp_connection).
->
-
-Nella nuova finestra, clicca su `Conferma`{.action}.
-
-![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
-
-In pochi minuti (rinfrescando il browser) otterrai questo risultato:
-
-![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
+Potrai quindi aggiungere un nuovo sito web con il tuo dominio utilizzando la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Se il tuo sito web dispone di una configurazione con Git, consulta preventivamente la nostra guida « [Configurare e utilizzare Git con un hosting Web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **prima** di `Scollega il dominio`{.action}.
 
 e verifica che il tuo sito venga visualizzato correttamente. In caso contrario, riavvia il tuo dispositivo e svuota la cache del tuo browser se necessario.
 
