@@ -25,9 +25,9 @@ Tem de alterar a pasta raiz associada ao seu site web e criar um novo site web n
 
 > [!warning]
 >
-> Desassociar um nome de domínio ou subdomínio de um site web no seu alojamento web é uma operação sensível. De fato, após esta operação, o seu site web já não será acessível na Internet com o seu nome de domínio e/ou subdomínio.
+> Desassociar um nome de domínio ou subdomínio de um site web no seu alojamento web é uma operação sensível. De facto, após esta operação, o seu site web já não será acessível na Internet com o seu nome de domínio e/ou subdomínio.
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -83,8 +83,8 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
- 
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
+
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
- 
-Fale com nossa [comunidade de utilizadores](/links/community).
+
+Fale com a nossa [comunidade de utilizadores](/links/community).

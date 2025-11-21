@@ -27,28 +27,28 @@ Musisz zmienić katalog główny przypisany do swojej strony internetowej i utwo
 >
 > Odłączenie nazwy domeny lub poddomeny od strony internetowej na Twoim hostingu to czynność wrażliwa. W rzeczywistości po tej operacji Twoja strona internetowa nie będzie już dostępna w Internecie za pomocą swojej nazwy domeny i/lub poddomeny.
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -58,7 +58,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> Nowe okno prosi o potwierdzenie odłączenia nazwy domeny lub poddomeny.
 >>
@@ -83,8 +83,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
- 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).

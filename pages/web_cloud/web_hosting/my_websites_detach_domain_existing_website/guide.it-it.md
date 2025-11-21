@@ -1,6 +1,6 @@
 ---
-title: "Come separare un dominio da un sito web esistente"
-excerpt: "Questa guida ti mostra come separare un dominio o un sottodominio da un sito web già esistente sul tuo hosting web"
+title: "Come scollegare un dominio da un sito web esistente"
+excerpt: "Questa guida ti mostra come scollegare un nome di dominio o un sottodominio da un sito web già esistente sul tuo hosting web"
 updated: 2025-11-27
 ---
 
@@ -10,9 +10,9 @@ Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i n
 
 Non desideri più utilizzare un nome di dominio o un sottodominio per il tuo sito web?
 Vuoi associare il tuo nome di dominio o sottodominio a un altro sito web su uno dei tuoi hosting web?
-Devi modificare la directory principale associata al tuo sito web e creare un nuovo sito web sul tuo hosting web per farlo?
+Devi modificare la cartella radice associata al tuo sito web e creare un nuovo sito web sul tuo hosting web per farlo?
 
-**Questa guida ti mostra come separare un nome di dominio o un sottodominio da un sito web già esistente sul tuo hosting web.**
+**Questa guida ti mostra come scollegare un nome di dominio o un sottodominio da un sito web già esistente sul tuo hosting web.**
 
 ## Prerequisiti
 
@@ -25,9 +25,9 @@ Devi modificare la directory principale associata al tuo sito web e creare un nu
 
 > [!warning]
 >
-> Separare un nome di dominio o un sottodominio da un sito web presente sul tuo hosting web è un'operazione delicata. Infatti, dopo questa operazione, il tuo sito web non sarà più accessibile su Internet con il tuo nome di dominio e/o sottodominio.
+> Scollegare un nome di dominio o un sottodominio da un sito web presente sul tuo hosting web è un'operazione delicata. Infatti, dopo questa operazione, il tuo sito web non sarà più accessibile su Internet con il tuo nome di dominio e/o sottodominio.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -38,7 +38,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 2**
 >>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -83,8 +83,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
- 
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
+
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
- 
+
 Contatta la nostra [Community di utenti](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: "Cómo desasociar un dominio de un sitio web existente"
-excerpt: "Descubra cómo desasociar un nombre de dominio o un subdominio de un sitio web ya existente en su alojamiento web"
+title: "Cómo desvincular un dominio de un sitio web existente"
+excerpt: "Descubra cómo desvincular un nombre de dominio o un subdominio de un sitio web ya existente en su alojamiento web"
 updated: 2025-11-27
 ---
 
@@ -12,7 +12,7 @@ Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si
 ¿Quiere asociar su nombre de dominio o subdominio a otro sitio web en uno de sus alojamientos web?
 ¿Tiene que cambiar la carpeta raíz asociada a su sitio web y crear un nuevo sitio web en su alojamiento web para ello?
 
-**Descubra cómo desasociar un nombre de dominio o subdominio de un sitio web ya existente en su alojamiento web.**
+**Descubra cómo desvincular un nombre de dominio o subdominio de un sitio web ya existente en su alojamiento web.**
 
 ## Requisitos
 
@@ -25,9 +25,9 @@ Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si
 
 > [!warning]
 >
-> Desasociar un nombre de dominio o subdominio de un sitio web presente en su alojamiento web es una operación sensible. De hecho, después de esta operación, su sitio web ya no será accesible en Internet con su nombre de dominio y/o subdominio.
+> Desvincular un nombre de dominio o subdominio de un sitio web presente en su alojamiento web es una operación sensible. De hecho, después de esta operación, su sitio web ya no será accesible en Internet con su nombre de dominio y/o subdominio.
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -60,7 +60,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 > **Etapa 5**
 >>
->> La nueva ventana que se abre le pide confirmar el desasociamiento del nombre de dominio o subdominio.
+>> La nueva ventana que se abre le pide que confirme el desvinculación del nombre de dominio o subdominio.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 >>
@@ -74,17 +74,17 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >> >
 >> > ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 >> >
->> > Como indica el mensaje, deberá [eliminar su asociación Git](/pages/web_cloud/web_hosting/git_integration_webhosting) en primer lugar, **antes** de desasociar su nombre de dominio.
+>> > Como indica el mensaje, deberá [eliminar su asociación Git](/pages/web_cloud/web_hosting/git_integration_webhosting) en primer lugar, **antes** de desvincular su nombre de dominio.
 
-### Caso particular: Desasociar un nombre de dominio o subdominio para utilizarlo con otro sitio web
+### Caso particular: Desvincular un nombre de dominio o subdominio para utilizarlo con otro sitio web
 
-- Si desea añadir su nombre de dominio o subdominio a otro sitio web existente en un alojamiento web, consulte [este guía](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
-- Si desea crear un nuevo sitio web en un alojamiento web con su nombre de dominio o subdominio recientemente desasociado, consulte [este guía](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+- Si desea añadir su nombre de dominio o subdominio a otro sitio web existente en un alojamiento web, consulte [esta guía](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
+- Si desea crear un nuevo sitio web en un alojamiento web con su nombre de dominio o subdominio recientemente desvinculado, consulte [esta guía](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
- 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
+
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
- 
+
 Interactúe con nuestra [comunidad de usuarios](/links/community).
