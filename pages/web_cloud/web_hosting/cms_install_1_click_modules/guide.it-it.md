@@ -1,7 +1,7 @@
 ---
 title: "Installare il tuo sito Web con un 'CMS in 1 click'"
 excerpt: "Questa guida ti mostra come creare il tuo sito Web con i nostri 'moduli in 1 click'"
-updated: 2024-10-07
+updated: 2025-11-27
 ---
 
 ## Obiettivo
@@ -19,18 +19,13 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 - Utilizzare una versione recente di PHP e un ambiente di esecuzione compatibile sul tuo hosting Web OVHcloud. Scopri lo stato delle diverse versioni disponibili in questa [pagina](https://webhosting-infos.hosting.ovh.net/). Se necessario, consulta la nostra [guida](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull’argomento per modificare rapidamente questa configurazione.
 - Un file "[.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" configurato deve essere presente nella root FTP del tuo hosting Web.
 - La directory (cartella di root) in cui sarà installato il tuo "modulo in 1 click" deve essere vuota o al momento inesistente.
-- Il dominio (con sottodominio se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato come [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) sul tuo hosting Web OVHcloud.
+- Il dominio (con sottodominio, se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato tramite l' scheda [I miei siti](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) del tuo hosting web.
 
 ## Procedura
-
-> [!warning]
->
-> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
 
 > [!primary]
 >
 > In caso di difficoltà durante l’esecuzione di uno degli step descritti qui sotto, consulta la nostra documentazione specifica sugli [errori più frequenti associati ai "moduli in 1 click"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
->
 
 ### Step 1 - Scegli correttamente il CMS
 
@@ -60,7 +55,7 @@ Nella nuova finestra, scegli il CMS e seleziona il dominio con cui vuoi installa
 
 ![Scelta del modulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Se il tuo dominio non è nella lista, clicca sulla scheda `Multisito`{.action} per aggiungerlo. Consulta la nostra guida [Come condividere un hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite) in caso di necessità.
+Se il tuo dominio non è presente nell'elenco, vai alla scheda `I miei siti`{.action} per aggiungerlo. Consulta la nostra guida « [Come associare un nome a dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) », se necessario.
 
 > [!primary]
 >
@@ -69,7 +64,6 @@ Se il tuo dominio non è nella lista, clicca sulla scheda `Multisito`{.action} p
 > Ti ricordiamo che questa directory deve essere completamente vuota.
 >
 > Se necessario, consulta la nostra guida "[Come condividere il tuo hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)" per modificare la directory di destinazione del tuo dominio.
->
 
 Una volta aggiunto correttamente il dominio, prova di nuovo ad aggiungere un "modulo in 1 click".
 
@@ -93,7 +87,6 @@ Scegli il dominio del tuo CMS, controlla la directory di destinazione che appare
 > La directory di installazione del tuo "modulo in 1 click" deve essere vuota e, affinché l'installazione possa essere effettuata, è necessario disporre di almeno un database disponibile in creazione sul tuo hosting Web OVHcloud.
 >
 > Per un'installazione rapida, non crei il database prima, ma il robot installerà la macchina virtuale.
->
 
 ![Installazione base di un modulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
@@ -102,7 +95,6 @@ Una volta completata l'installazione, riceverai un'email con le informazioni di 
 > [!primary]
 >
 > L’installazione e la ricezione dell’email possono richiedere fino a 15 minuti a partire dal momento in cui hai cliccato sul pulsante `Installa`{.action} nel tuo [Spazio Cliente OVHcloud](/links/manager).
->
 
 #### Installazione avanzata di un "modulo in 1 click"
 
@@ -121,7 +113,6 @@ Inserisci le informazioni di connessione al tuo database.
 > Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta [questa guida](/pages/web_cloud/web_hosting/sql_create_database).
 >
 > Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ![Database per l'installazione avanzata](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
@@ -141,7 +132,6 @@ Per il database sono richieste le seguenti informazioni aggiuntive:
 > - Il nome del server di un database incluso nella tua offerta di hosting Web ha questa forma: `NameOfYourDatabase.mysql.db` 
 >
 > - Il nome del server di un database Web Cloud Database inizia con il tuo identificativo cliente OVHcloud e viene mostrato come segue: `OVHID(without-ovh)-XXX.eu.cloudddb.ovh.net`, dove i **"X"** sono sostituiti dal riferimento del tuo servizio Web Cloud Databases.
->
 
 - *Nome del database*: questo nome è stato definito durante la creazione del database nello[Spazio Cliente OVHcloud](/links/manager).
 
@@ -160,7 +150,7 @@ Per configurare il modulo, inserisci queste informazioni:
 
 - *Nome o email dell'amministratore:* identificativo che utilizzerai per accedere all'interfaccia di gestione del tuo CMS (Back Office).
 *password:* password per accedere all'interfaccia di gestione del tuo CMS.
-- *dominio:* dominio con cui vuoi installare il tuo CMS. Se necessario, consulta la guida su [Come condividere un hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+- *dominio:* dominio con cui vuoi installare il tuo CMS. Se necessario, consulta la guida su « [Come associare un nome a dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
 - *lingua:* lingua in cui sarà installato il CMS.
 - *percorso di installazione:* è inserito automaticamente nella selezione del dominio. completandolo con sottocartelle (per utenti esperti).
 
@@ -174,7 +164,6 @@ Per configurare il modulo, inserisci queste informazioni:
 > Ad esempio, se inserisci nel modulo una sottodirectory *test*, l’URL di accesso al tuo "modulo in 1 click" avrà questo formato: **http://domain.tld/test/**.
 >
 > Se necessario, consulta la nostra guida "[Come condividere il tuo hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)" per modificare la directory di destinazione del tuo dominio.
->
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}:
 
@@ -200,7 +189,6 @@ Una volta completata l'operazione riceverai un'email di conferma della corretta 
 > [!warning]
 >
 > Il supporto OVHcloud non supporta l'utilizzo dei CMS. Le soluzioni sono disponibili solo in installazione **in 1 click**
->
 
 Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttore del CMS installato. Se hai bisogno di aiuto per realizzare il tuo progetto, consulta la documentazione disponibile.
 

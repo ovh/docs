@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2025-11-20
+updated: 2025-11-27
 ---
 
 ## Objectif
