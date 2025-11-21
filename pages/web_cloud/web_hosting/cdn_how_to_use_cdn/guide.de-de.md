@@ -438,7 +438,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **6** Schritte anzuzeigen.
 >>
 >> Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 >>
->>![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
 >>
 >> - **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
 >> - **Ressourcenart**: Wählen Sie aus den folgenden Optionen:
