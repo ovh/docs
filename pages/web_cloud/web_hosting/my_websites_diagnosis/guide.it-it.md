@@ -1,6 +1,6 @@
 ---
-title: "Come verificare l'associazione 'nome di dominio / sito web' ?"
-excerpt: "Utilizza il nostro strumento di diagnostica per verificare che il tuo nome di dominio o sottodominio sia correttamente dichiarato con il tuo sito web sull'ospedamento web"
+title: "Come verificare l'associazione 'nome di dominio / sito web'?"
+excerpt: "Utilizza il nostro strumento diagnostico per verificare che il tuo nome di dominio o sottodominio sia correttamente registrato con il tuo sito web sul tuo hosting web"
 updated: 2025-11-27
 ---
 
@@ -22,20 +22,20 @@ details[open]>summary::before {
 
 Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i nomi di dominio non sono registrati su OVHcloud. Inoltre, puoi associare uno o più nomi di dominio o sottodomini allo stesso sito web.
 
-**Utilizza il nostro strumento di diagnostica per verificare che il tuo nome di dominio o sottodominio sia correttamente dichiarato con il tuo sito web sull'ospedamento web.**
+**Utilizza il nostro strumento diagnostico per verificare che il tuo nome di dominio o sottodominio sia correttamente registrato con il tuo sito web sul tuo hosting web.**
 
 ## Prerequisiti
 
-- Disporre di un'offerta di [ospedamento web OVHcloud](/links/web/hosting-multisite) compatibile.
+- Disporre di un'offerta di [hosting web OVHcloud](/links/web/hosting-multisite) compatibile.
 - Disporre di uno o più [nomi di dominio](/links/web/domains).
 - Poter modificare la configurazione dei tuoi nomi di dominio dalla [zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 - Essere connesso al tuo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
-### Accedere all' strumento di diagnostica
+### Accedere allo strumento di diagnostica
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -68,13 +68,13 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> ![Domains associated websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab-with-domains-associated-displayed.png){.thumbnail}
 >>
->> La colonna `Diagnostica` ti informa se il tuo nome di dominio punta correttamente all'ospedamento web associato. Ti permette di verificare rapidamente che la configurazione DNS del tuo nome di dominio sia correttamente effettuata con il tuo ospedamento web. Così, questa colonna ti aiuta ad identificare e risolvere eventuali problemi di puntamento. Per ogni nome di dominio, tre risultati di diagnostica sono possibili :
+>> La colonna `Diagnostica` ti informa se il tuo nome di dominio punta correttamente all'hosting web associato. Ti permette di verificare rapidamente che la configurazione DNS del tuo nome di dominio sia correttamente effettuata con il tuo hosting web. Così, questa colonna ti aiuta ad identificare e risolvere eventuali problemi di puntamento. Per ogni nome di dominio, tre risultati di diagnostica sono possibili:
 >>
 >> - `A/AAAA` verde.
 >> - `A/AAAA` giallo.
 >> - `A/AAAA` grigio.
 >>
->> Consulta la parte « [Interpretazione dei colori dello strumento di diagnostica](#interpretation) » di questa guida per conoscere il significato di questi 3 colori.
+>> Consulta la parte "[Interpretazione dei colori dello strumento di diagnostica](#interpretation)" di questa guida per conoscere il significato di questi 3 colori.
 
 ### Interpretazione dei colori dello strumento di diagnostica <a name="interpretation"></a>
 
@@ -84,7 +84,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 
 ![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
 
-Quando l'icona `A/AAAA` è verde nella colonna `Diagnostica`, ciò significa che il record **A** (per gli indirizzi IPv4) e/o il record **AAAA** (per gli indirizzi IPv6) del tuo nome di dominio punta correttamente all'indirizzo IP del tuo ospedamento web. La configurazione DNS del tuo nome di dominio è quindi conforme per funzionare con il sito web del tuo ospedamento web.
+Quando l'icona `A/AAAA` è verde nella colonna `Diagnostica`, ciò significa che il record **A** (per gli indirizzi IPv4) e/o il record **AAAA** (per gli indirizzi IPv6) del tuo nome di dominio punta correttamente all'indirizzo IP del tuo hosting web. La configurazione DNS del tuo nome di dominio è quindi conforme per funzionare con il sito web del tuo hosting web.
 
 /// 
 
@@ -92,13 +92,13 @@ Quando l'icona `A/AAAA` è verde nella colonna `Diagnostica`, ciò significa che
 
 ![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
 
-Quando l'icona `A/AAAA` è gialla nella colonna `Diagnostica`, ciò significa che il record **A** (IPv4) e/o **AAAA** (IPv6) del tuo nome di dominio punta verso un indirizzo IP, ma non è quello dell'ospedamento web da cui stai consultando la colonna `Diagnostica`.
+Quando l'icona `A/AAAA` è gialla nella colonna `Diagnostica`, ciò significa che il record **A** (IPv4) e/o **AAAA** (IPv6) del tuo nome di dominio punta verso un indirizzo IP, ma non è quello dell'hosting web da cui stai consultando la colonna `Diagnostica`.
 
-Clicca sull'icona `A/AAAA` gialla per maggiori informazioni. Il seguente messaggio appare :
+Clicca sull'icona `A/AAAA` gialla per maggiori informazioni. Il seguente messaggio appare:
 
 ![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-Per risolvere i problemi di puntamento DNS del tuo nome di dominio e assicurarti che punti correttamente all'ospedamento web desiderato, segui le fasi descritte nella nostra guida « [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+Per risolvere i problemi di puntamento DNS del tuo nome di dominio e assicurarti che punti correttamente all'hosting web desiderato, segui le fasi descritte nella nostra guida "[Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 /// 
 
@@ -108,11 +108,11 @@ Per risolvere i problemi di puntamento DNS del tuo nome di dominio e assicurarti
 
 Quando l'icona `A/AAAA` è grigia nella colonna `Diagnostica`, ciò significa che il nome di dominio non punta attualmente verso alcun indirizzo IP e che nessun record **A** (IPv4) o **AAAA** (IPv6) è configurato per questo nome di dominio.
 
-Clicca sull'icona `A/AAAA` grigia per maggiori informazioni. Il seguente messaggio appare :
+Clicca sull'icona `A/AAAA` grigia per maggiori informazioni. Il seguente messaggio appare:
 
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
-Per aggiungere i record **A** e/o **AAAA** e configurare correttamente il tuo nome di dominio, segui le fasi descritte nella nostra guida « [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+Per aggiungere i record **A** e/o **AAAA** e configurare correttamente il tuo nome di dominio, segui le fasi descritte nella nostra guida "[Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 

@@ -1,5 +1,5 @@
 ---
-title: "Cómo comprobar la asociación « nombre de dominio / sitio web »"
+title: "¿Cómo comprobar la asociación 'nombre de dominio / sitio web'?"
 excerpt: "Utilice nuestra herramienta de diagnóstico para comprobar que su nombre de dominio o subdominio está correctamente declarado con su sitio web en su alojamiento web"
 updated: 2025-11-27
 ---
@@ -35,7 +35,7 @@ Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si
 
 ### Acceder a la herramienta de diagnóstico
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -58,7 +58,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 > **Etapa 4**
 >>
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los nombres de dominio o subdominios asociados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -74,7 +74,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >> - `A/AAAA` amarillo.
 >> - `A/AAAA` gris.
 >>
->> Consulte la sección « [Interpretación de los colores de la herramienta de diagnóstico](#interpretation) » de este guía para conocer el significado de estos 3 colores.
+>> Consulte la sección "[Interpretación de los colores de la herramienta de diagnóstico](#interpretation)" de esta guía para conocer el significado de estos 3 colores.
 
 ### Interpretación de los colores de la herramienta de diagnóstico <a name="interpretation"></a>
 
@@ -98,7 +98,7 @@ Haga clic en el icono `A/AAAA` amarillo para obtener más información. Aparece 
 
 ![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-Para resolver los problemas de apuntado DNS de su nombre de dominio y asegurarse de que apunta correctamente al alojamiento web deseado, siga los pasos descritos en nuestro guía « [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+Para resolver los problemas de apuntado DNS de su nombre de dominio y asegurarse de que apunta correctamente al alojamiento web deseado, siga los pasos descritos en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
@@ -112,7 +112,7 @@ Haga clic en el icono `A/AAAA` gris para obtener más información. Aparece el s
 
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
-Para añadir los registros **A** y/o **AAAA** y configurar correctamente su nombre de dominio, siga los pasos descritos en nuestro guía « [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+Para añadir los registros **A** y/o **AAAA** y configurar correctamente su nombre de dominio, siga los pasos descritos en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 

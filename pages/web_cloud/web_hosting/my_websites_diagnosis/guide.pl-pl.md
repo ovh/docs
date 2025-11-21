@@ -1,6 +1,6 @@
 ---
-title: "Jak sprawdzić przypisanie „nazwy domeny / strony internetowej” ?"
-excerpt: "Użyj naszego narzędzia diagnostycznego, aby upewnić się, że Twoja domena lub poddomena jest poprawnie zadeklarowana z Twoją stroną internetową na Twoim serwisie"
+title: "Jak sprawdzić przypisanie 'nazwy domeny / strony internetowej'?"
+excerpt: "Użyj naszego narzędzia diagnostycznego, aby upewnić się, że Twoja domena lub poddomena jest poprawnie zadeklarowana z Twoją stroną internetową na Twoim hosting"
 updated: 2025-11-27
 ---
 
@@ -22,14 +22,14 @@ details[open]>summary::before {
 
 Możesz hostować wiele stron internetowych w ramach jednej oferty hostingu, nawet jeśli nazwy domen nie są zarejestrowane u OVHcloud. Ponadto możesz przypisać jedną lub więcej nazw domen lub poddomen do tej samej strony internetowej.
 
-**Użyj naszego narzędzia diagnostycznego, aby upewnić się, że Twoja domena lub poddomena jest poprawnie zadeklarowana z Twoją stroną internetową na Twoim serwisie.**
+**Użyj naszego narzędzia diagnostycznego, aby upewnić się, że Twoja domena lub poddomena jest poprawnie zadeklarowana z Twoją stroną internetową na Twoim hosting.**
 
 ## Wymagania początkowe
 
 - Posiadanie oferty [hostingu OVHcloud](/links/web/hosting-multisite) zgodnej z tą funkcją.
 - Posiadanie jednej lub więcej [nazw domen](/links/web/domains).
 - Możliwość zmiany konfiguracji swoich nazw domen z poziomu [strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Zalogowanie się do swojego [panela klienta OVHcloud](/links/manager).
+- Zalogowanie się do swojego [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -74,7 +74,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >> - `A/AAAA` żółty.
 >> - `A/AAAA` szary.
 >>
->> Zobacz sekcję „[Interpretacja kolorów narzędzia diagnostycznego](#interpretation)”, aby dowiedzieć się, co oznaczają te trzy kolory.
+>> Zobacz sekcję "[Interpretacja kolorów narzędzia diagnostycznego](#interpretation)", aby dowiedzieć się, co oznaczają te trzy kolory.
 
 ### Interpretacja kolorów narzędzia diagnostycznego <a name="interpretation"></a>
 
@@ -84,7 +84,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 
 ![A and AAAA green](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
 
-Gdy ikona `A/AAAA` jest zielona w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (dla adresów IPv4) i/lub rekord **AAAA** (dla adresów IPv6) Twojej domeny poprawnie wskazuje na adres IP Twojego hostingu. Konfiguracja DNS Twojej domeny jest więc zgodna z potrzebami działania strony internetowej na Twoim serwisie.
+Gdy ikona `A/AAAA` jest zielona w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (dla adresów IPv4) i/lub rekord **AAAA** (dla adresów IPv6) Twojej domeny poprawnie wskazuje na adres IP Twojego hostingu. Konfiguracja DNS Twojej domeny jest więc zgodna z potrzebami działania strony internetowej na Twoim Hosting.
 
 ///
 
@@ -98,7 +98,7 @@ Kliknij ikonę `A/AAAA` żółtą, aby uzyskać więcej informacji. Wyświetlony
 
 ![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-Aby rozwiązać problemy z wskazywaniem DNS Twojej domeny i upewnić się, że poprawnie wskazuje ona na żądany hosting, postępuj zgodnie z instrukcjami opisanymi w naszym przewodniku „[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)”.
+Aby rozwiązać problemy z wskazywaniem DNS Twojej domeny i upewnić się, że poprawnie wskazuje ona na żądany hosting, postępuj zgodnie z instrukcjami opisanymi w naszym przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
@@ -112,7 +112,7 @@ Kliknij ikonę `A/AAAA` szarą, aby uzyskać więcej informacji. Wyświetlony zo
 
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
-Aby dodać rekordy **A** i/lub **AAAA** i poprawnie skonfigurować swoją domenę, postępuj zgodnie z instrukcjami opisanymi w naszym przewodniku „[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)”.
+Aby dodać rekordy **A** i/lub **AAAA** i poprawnie skonfigurować swoją domenę, postępuj zgodnie z instrukcjami opisanymi w naszym przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 

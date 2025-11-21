@@ -1,5 +1,5 @@
 ---
-title: "Como verificar a associação « nome de domínio / site web » ?"
+title: "Como verificar a associação 'nome de domínio / site web'?"
 excerpt: "Utilize a nossa ferramenta de diagnóstico para verificar que o seu nome de domínio ou subdomínio está bem declarado com o seu site web no seu alojamento web"
 updated: 2025-11-27
 ---
@@ -29,13 +29,13 @@ Pode alojar vários sites web na mesma oferta de alojamento web, mesmo que os no
 - Dispor de uma oferta de [alojamento web OVHcloud](/links/web/hosting-multisite) compatível.
 - Dispor de um ou vários [nomes de domínio](/links/web/domains).
 - Poder modificar a configuração dos seus nomes de domínio a partir da [zona DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Estar ligado à sua [área de cliente OVHcloud](/links/manager).
+- Estar ligado à sua [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Aceder à ferramenta de diagnóstico
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -68,13 +68,13 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 >> ![Domains associated websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab-with-domains-associated-displayed.png){.thumbnail}
 >>
->> A coluna `Diagnóstico` informa-o se o seu nome de domínio aponta corretamente para o alojamento web associado. Permite-lhe verificar rapidamente se a configuração DNS do seu nome de domínio está corretamente feita com o seu alojamento web. Assim, esta coluna ajuda-o a identificar e resolver eventuais problemas de ponteiro. Para cada nome de domínio, três resultados de diagnóstico são possíveis :
+>> A coluna `Diagnóstico` informa-o se o seu nome de domínio aponta corretamente para o alojamento web associado. Permite-lhe verificar rapidamente se a configuração DNS do seu nome de domínio está corretamente feita com o seu alojamento web. Assim, esta coluna ajuda-o a identificar e resolver eventuais problemas de ponteiro. Para cada nome de domínio, três resultados de diagnóstico são possíveis:
 >>
 >> - `A/AAAA` verde.
 >> - `A/AAAA` amarelo.
 >> - `A/AAAA` cinzento.
 >>
->> Consulte a secção « [Interpretação das cores da ferramenta de diagnóstico](#interpretation) » deste guia para conhecer o significado destas 3 cores.
+>> Consulte a secção "[Interpretação das cores da ferramenta de diagnóstico](#interpretation)" deste guia para conhecer o significado destas 3 cores.
 
 ### Interpretação das cores da ferramenta de diagnóstico <a name="interpretation"></a>
 
@@ -94,11 +94,11 @@ Quando o ícone `A/AAAA` é verde na coluna `Diagnóstico`, isso significa que o
 
 Quando o ícone `A/AAAA` é amarelo na coluna `Diagnóstico`, isso significa que o registo **A** (IPv4) e/ou **AAAA** (IPv6) do seu nome de domínio aponta para um endereço IP, mas que não é o do alojamento web a partir do qual está a consultar a coluna `Diagnóstico`.
 
-Clique no ícone `A/AAAA` amarelo para mais informações. A seguinte mensagem aparece :
+Clique no ícone `A/AAAA` amarelo para mais informações. A seguinte mensagem aparece:
 
 ![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-Para resolver os problemas de ponteiro DNS do seu nome de domínio e assegurar-se de que aponta corretamente para o alojamento web desejado, siga as etapas descritas no nosso guia « [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+Para resolver os problemas de ponteiro DNS do seu nome de domínio e assegurar-se de que aponta corretamente para o alojamento web desejado, siga as etapas descritas no nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 /// 
 
@@ -108,11 +108,11 @@ Para resolver os problemas de ponteiro DNS do seu nome de domínio e assegurar-s
 
 Quando o ícone `A/AAAA` é cinzento na coluna `Diagnóstico`, isso significa que o nome de domínio não aponta atualmente para nenhum endereço IP e que nenhum registo **A** (IPv4) ou **AAAA** (IPv6) está configurado para este nome de domínio.
 
-Clique no ícone `A/AAAA` cinzento para mais informações. A seguinte mensagem aparece :
+Clique no ícone `A/AAAA` cinzento para mais informações. A seguinte mensagem aparece:
 
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
-Para adicionar os registos **A** e/ou **AAAA** e configurar corretamente o seu nome de domínio, siga as etapas descritas no nosso guia « [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+Para adicionar os registos **A** e/ou **AAAA** e configurar corretamente o seu nome de domínio, siga as etapas descritas no nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
@@ -124,4 +124,4 @@ Para adicionar os registos **A** e/ou **AAAA** e configurar corretamente o seu n
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).
