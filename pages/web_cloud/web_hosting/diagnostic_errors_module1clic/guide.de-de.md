@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Fehler bei 1-Klick-Modulen beheben"
 excerpt: "Erfahren Sie hier, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können"
-updated: 2024-03-12
+updated: 2025-11-27
 ---
 
 ## Ziel
@@ -17,7 +17,6 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 > 
 > Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further
 ).
->
 
 ## Voraussetzungen
 
@@ -27,25 +26,49 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 
 ## In der praktischen Anwendung
 
-> [!warning]
->
-> Diese Anleitung wird in Kürze aktualisiert. Bei Schwierigkeiten können Sie sich auf die englische oder französische Version dieser Anleitung beziehen, indem Sie auf die entsprechende Flagge oben auf dieser Seite klicken.
-
 > [!primary]
 >
 > Hier finden Sie die häufigsten Fehler. Wenn Sie eine andere Situation als die hier beschriebenen haben, lesen Sie unsere [Webhosting FAQ](/pages/web_cloud/web_hosting/faq-web_hosting).
->
 
 ### Ihr Domainname wird bei der Erstellung des 1 Klick Moduls nicht angeboten
 
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, das installiert werden soll. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}, und führen Sie dann die folgenden Überprüfungen durch:
+Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
-|Szenario|Lösung|
-|---|---|
-|Die Domain oder Subdomain, die mit der Website verknüpft ist, die Sie erstellen möchten, wird in der Tabelle auf der Registerkarte `Multisite`{.action} nicht angezeigt.|Fügen Sie Ihre Domain hinzu, indem Sie [dieser Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite) folgen.|
-|Der Domainname wurde ohne Aktion Ihrerseits aus der Multisite gelöscht.|Wenn Ihre Domain oder deren [DNS Zone](/pages/web_cloud/domains/dns_zone_edit) nicht über Ihren OVHcloud Kunden-Account verwaltet werden, fügen Sie Ihre Domain über den Tab `Multisite`{.action} hinzu, indem Sie [diese Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite) folgen hinzufügen.|
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Führen Sie anschließend die folgenden Prüfungen durch:
+>>
+>> |Szenario|Lösung|
+>> |---|---|
+>> |Der Domain- oder Unterdomain-Name, der mit der Website verbunden ist, die Sie erstellen möchten, wird nicht in der Tabelle im Tab `Meine Seiten`{.action} angezeigt.|Fügen Sie Ihren Domain-Namen gemäß [diesen Anweisungen](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) hinzu.|
+>> |Der Domain-Name wurde vom Webseiten-Hosting getrennt, ohne dass Sie etwas dafür getan haben.|Wenn Ihr Domain-Name oder seine [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) nicht über Ihr OVHcloud-Konto verwaltet wird, fügen Sie Ihren Domain-Namen über den Tab `Meine Seiten`{.action} gemäß [diesem Leitfaden](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) hinzu.|
 
 ### „Beim Laden der Informationen ist ein Fehler aufgetreten (You need at least one free database)“
 
@@ -128,11 +151,42 @@ Nachdem Sie alle notwendigen Backups durchgeführt haben, [löschen Sie Ihr 1-Kl
 
 Nachdem Sie mit der Erstellung Ihres 1-Klick-Moduls begonnen haben, haben Sie eine E-Mail erhalten, die besagt, dass das Installationsverzeichnis Ihres 1-Klick-Moduls nicht leer ist.
 
-Diese Nachricht bedeutet, dass das Ihrem Domainnamen zugeordnete **Wurzelverzeichnis** bereits eine oder mehrere Dateien oder Ordner enthält.
+Diese Nachricht bedeutet, dass der **Wurzelverzeichnis** der Website, an die Ihr Domain-Name gebunden ist, bereits eine oder mehrere Dateien oder Ordner enthält.
 
-Um Ihre Domain mit einem anderen Verzeichnis zu verbinden, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts neben der Zeile für Ihren Domainnamen und dann auf `Domain bearbeiten`{.action}. Geben Sie zum Schluss einen Namen für ein neues **Wurzelverzeichnis** ein (ein leeres Verzeichnis wird automatisch auf Ihrem Webhosting erstellt).
+Um Ihren Domain-Namen an eine andere Website (Wurzelverzeichnis) zu verknüpfen, klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
-![modify_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem gewünschten Domainnamen oder Subdomain und dann auf `Domain abtrennen`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Nachdem der Domain-Name vom Webseiten-Hosting getrennt wurde, folgen Sie unserem Leitfaden „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
 
 Sie können sich auch über das [FTP-Protokoll](/pages/web_cloud/web_hosting/ftp_connection) mit Ihrem Webhosting verbinden und den Inhalt des Ordners löschen, nachdem Sie es lokal gesichert haben oder nachdem Sie den gesamten Inhalt in ein anderes FTP-Verzeichnis verschoben haben.
 

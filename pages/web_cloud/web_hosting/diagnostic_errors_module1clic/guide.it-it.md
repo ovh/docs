@@ -1,7 +1,7 @@
 ---
 title: "Risolvi gli errori più comuni relativi ai CMS/moduli in 1 click"
 excerpt: "Questa guida ti mostra come diagnostica i casi più comuni di errore associati alla creazione di moduli in 1 click"
-updated: 2024-03-12
+updated: 2025-11-27
 ---
 
 ## Obiettivo
@@ -16,7 +16,6 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
 > Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
->
 
 ## Prerequisiti
 
@@ -25,10 +24,6 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 - Aver utilizzato la funzionalità "[Modulo in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" per creare un nuovo sito Web.
 
 ## Procedura
-
-> [!warning]
->
-> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
 
 > [!primary]
 >
@@ -39,12 +34,41 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web interessato dall’installazione. Nella nuova pagina clicca sulla scheda `Multisito`{.action} ed effettua le seguenti verifiche:
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-|Scenario|Soluzione|
-|---|---| 
-|Il dominio o sottodominio associato al sito Web che vuoi creare non compare nella tabella presente nella scheda `Multisito`{.action}.|Aggiungi il tuo dominio seguendo [queste indicazioni](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
-|Il dominio è stato rimosso dal multisito senza alcuna azione da parte tua.|Se il tuo dominio o la sua [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) non sono gestiti dal tuo account OVHcloud, aggiungi il tuo dominio dalla scheda `Multisito`{.action} seguendo [questa guida](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Esegui quindi le seguenti verifiche:
+>>
+>> |Scenario|Soluzione|
+>> |---|---|
+>> |Il dominio o il sottodominio associato al sito web che desideri creare non appare nella tabella presente nell'onghetta `I miei siti`{.action}.|Aggiungi il tuo nome dominio seguendo [queste indicazioni](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+>> |Il nome dominio è stato staccato dal sito web senza che tu abbia effettuato alcuna azione.|Se il tuo nome dominio o la sua [zona DNS](/pages/web_cloud/domains/dns_zone_edit) non vengono gestiti dal tuo account OVHcloud, aggiungi il tuo nome dominio dall'onghetta `I miei siti`{.action} seguendo [questa guida](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
 
 ### "Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)"
 
@@ -127,11 +151,42 @@ Dopo aver effettuato tutti i backup necessari, [elimina il "modulo in 1 click"](
 
 Dopo aver avviato la creazione del "modulo in 1 click", hai ricevuto un’email che ti informa che la directory di installazione del "modulo in 1 click" non è vuota.
 
-Questo messaggio indica che la **Cartella di root** associata al dominio contiene già uno o più file o cartelle.
+Questo messaggio indica che la **Cartella di root** del sito web a cui è associato il tuo nome dominio contiene già uno o più file o cartelle.
 
-Per associare un dominio a un’altra directory, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `Multisito`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Modifica il dominio`{.action}. Infine, inserisci il nome di una nuova **Cartella di root** (verrà creata automaticamente una directory vuota sul tuo hosting Web).
+Per collegare il tuo nome dominio a un altro sito web (cartella radice), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-![modify_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Fai quindi clic sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Scollega il dominio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Dopo aver staccato il nome dominio dal sito web, consulta la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 È inoltre possibile accedere all’hosting Web tramite il protocollo [FTP](/pages/web_cloud/web_hosting/ftp_connection) e quindi eliminare il contenuto della cartella. Dopo averlo salvato localmente o dopo averlo svuotato spostando tutto il suo contenuto in un'altra directory FTP.
 

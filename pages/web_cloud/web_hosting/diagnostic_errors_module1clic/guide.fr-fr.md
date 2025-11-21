@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic"
 excerpt: "Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic"
-updated: 2025-11-20
+updated: 2025-11-27
 ---
 
 ## Objectif
@@ -60,13 +60,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
-
-Effectuez ensuite les vérifications suivantes :
-
-|Scénario|Solution|
-|---|---|
-|Le domaine ou le sous-domaine lié au site web que vous souhaitez créer n'apparaît pas dans le tableau présent dans l'onglet `Mes sites`{.action}.|Ajoutez votre nom de domaine en suivant [ces indications](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
-|Le nom de domaine a été détaché du site web sans action de votre part.|Si votre nom de domaine ou sa [zone DNS](/pages/web_cloud/domains/dns_zone_edit) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre nom de domaine depuis l'onglet `Mes sites`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+>>
+> **Étape 5**
+>>
+>> Effectuez ensuite les vérifications suivantes :
+>>
+>> |Scénario|Solution|
+>> |---|---|
+>> |Le domaine ou le sous-domaine lié au site web que vous souhaitez créer n'apparaît pas dans le tableau présent dans l'onglet `Mes sites`{.action}.|Ajoutez votre nom de domaine en suivant [ces indications](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+>> |Le nom de domaine a été détaché du site web sans action de votre part.|Si votre nom de domaine ou sa [zone DNS](/pages/web_cloud/domains/dns_zone_edit) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre nom de domaine depuis l'onglet `Mes sites`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
 
 ### « Une erreur s'est produite lors du chargement des informations (You need at least one free database) »
 
