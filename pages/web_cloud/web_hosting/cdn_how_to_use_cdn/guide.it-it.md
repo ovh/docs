@@ -45,7 +45,7 @@ Sarai reindirizzato verso una pagina in cui è possibile generare un buono d’o
 
 #### Se l'opzione CDN è già attiva sul tuo hosting Web
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -99,7 +99,7 @@ Per quanto riguarda la SEO (motori di ricerca), la velocità di visualizzazione 
 
 A volte può essere utile svuotare la cache del CDN, in particolare quando modifichi i tuoi file statici. Ad esempio, quando metti in produzione una nuova versione del tuo sito. È possibile svuotare la cache per ciascuno dei tuoi nomi di dominio e sottodomini.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -132,7 +132,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 
 #### Configura le opzioni della CDN Shared
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -185,7 +185,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 
 ##### **Crea una regola di inserimento in cache** <a name="cacherules"></a>
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -246,7 +246,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 
 #### Configura le opzioni della CDN Security
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -324,7 +324,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 
 #### Configura le opzioni della CDN Advanced
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -403,7 +403,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 
 ##### **Crea una regola di memorizzazione in cache avanzata** <a name="cacherulesadv"></a>
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passaggi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -506,7 +506,7 @@ Questa azione permette di disattivare il CDN per uno o più dei tuoi nomi di dom
 >
 > La modifica di un record nella zona DNS attiva di un dominio comporta un tempo di propagazione da **4** a **24** ore per essere pienamente efficace. Una pagina contenente il codice **520** potrebbe apparire casualmente fino al termine della propagazione. Questo fenomeno è legato al fatto che alcune parti della rete DNS reindirizzano ancora le richieste verso l'indirizzo IP della CDN associato al tuo hosting Web.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
 > **Passaggio 1**

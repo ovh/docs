@@ -45,7 +45,7 @@ Será então redirecionado para a página onde será gerada a nota de encomenda.
 
 #### Se a opção CDN já estiver ativa no seu alojamento Web
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -99,7 +99,7 @@ No que diz respeito ao SEO (referenciamento nos motores de pesquisa), a velocida
 
 Pode ser útil esvaziar o cache do CDN, especialmente quando modifica os seus ficheiros estáticos. Por exemplo, quando coloca uma nova versão do seu site em produção. Pode esvaziar o cache para cada um dos seus nomes de domínio e subdomínios.
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+Clique nas janelas abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -132,7 +132,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 
 #### Configurar as opções do Shared CDN
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -185,7 +185,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
 ##### **Criar uma regra de implementação de cache** <a name="cacherules"></a>
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **6**.
+Clique nas janelas abaixo para visualizar cada uma das **6** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -246,7 +246,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **6**.
 
 #### Configurar as opções do CDN Security
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -324,7 +324,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
 #### Configurar as opções do CDN Advanced
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -403,7 +403,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
 ##### **Criar uma regra de cache avançada** <a name="cacherulesadv"></a>
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **6**.
+Clique nas janelas abaixo para visualizar cada uma das **6** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -506,7 +506,7 @@ Esta ação permite desativar o CDN para um ou vários dos seus nomes de domíni
 >
 > A modificação de uma entrada na zona DNS ativa de um domínio provoca um prazo de propagação de **4** a **24** para ficar plenamente efetiva. Quando esta propagação estiver finalizada, pode aparecer aleatoriamente uma página com o código **520**. Este fenómeno está ligado ao facto de que certas partes da rede DNS reencaminham ainda os pedidos para o endereço IP do CDN associado ao seu alojamento web.
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
