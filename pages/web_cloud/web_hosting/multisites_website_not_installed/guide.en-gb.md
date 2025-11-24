@@ -141,7 +141,7 @@ To do this, click on the tabs below to display each of the **4** steps in succes
 >> >
 >> > If your domain name does not appear in the list that appears, it means that its DNS zone is not managed from your OVHcloud Control Panel.<br>
 >> > Determine its registrar and the DNS servers associated with it via our [WHOIS](/links/web/domains-whois) tool.<br>
->> > Retrieve and modify the relevant DNS zone accordingly by following the dedicated section of the guide "[How to associate a domain name with an existing website? - Add an external domain name](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+>> > Identify and modify the relevant DNS zone accordingly by following the dedicated section of the guide "[How to associate a domain name with an existing website? - Add an external domain name](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 > **Step 3**
 >>
@@ -153,7 +153,7 @@ To do this, click on the tabs below to display each of the **4** steps in succes
 >> >
 >> > If the `DNS Zone`{.action} tab of your domain name appears as follows:<br><br>![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
 >> >
->> > This means that your domain name is not managed from your OVHcloud Control Panel.<br> Determine its "registrar" and the DNS servers it is associated with using our [WHOIS](/links/web/domains-whois) tool.<br> Retrieve and modify the relevant DNS zone accordingly by following the dedicated section of the guide "[How to associate a domain name with an existing website? - Add an external domain name](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+>> > This means that your domain name is not managed from your OVHcloud Control Panel.<br> Determine its registrar and the DNS servers it is associated with using our [WHOIS](/links/web/domains-whois) tool.<br> Identify and modify the relevant DNS zone accordingly by following the dedicated section of the guide "[How to associate a domain name with an existing website? - Add an external domain name](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 >> Go to step 4 to view the various possible scenarios and the actions to be taken.
 >>
