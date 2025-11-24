@@ -31,7 +31,7 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
 ### Den Ursprung der "Index of"-Seite verstehen
 
-Ihr Domainname ist so konfiguriert, dass er auf ein Zielverzeichnis (einen „`Wurzelverzeichnis`“) auf dem [FTP](/pages/web_cloud/web_hosting/ftp_connection)-Server Ihres Webhostings zugreifen kann. Dies geschieht über den Tab [Meine Seiten](/pages/web_cloud/web_hosting/multisites_configure_multisite) Ihres Webhostings, der sich in Ihrem [OVHcloud Kundencenter](/links/manager) befindet.
+Ihr Domainname ist so konfiguriert, dass er auf ein Wurzelverzeichnis (`root folder`) auf dem [FTP](/pages/web_cloud/web_hosting/ftp_connection)-Server Ihres Webhostings zugreifen kann. Dies geschieht über den Tab [Meine Seiten](/pages/web_cloud/web_hosting/multisites_configure_multisite) Ihres Webhostings, der sich in Ihrem [OVHcloud Kundencenter](/links/manager) befindet.
 
 Die Seite "**Index of**" ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei repräsentiert die Startseite bzw. den Einstiegspunkt Ihrer Website. Der Name dieser Datei ist standardisiert.
 
@@ -45,15 +45,15 @@ Um Ihre Website anzuzeigen, müssen Sie also von dem Tab `Meine Seiten`{.action}
 
 ### Die häufigste Ursache einer "Index of"-Seite beheben
 
-Sie haben die Dateien Ihrer Website **mydomain.ovh** in das Verzeichnis `www` über [FTP](/pages/web_cloud/web_hosting/ftp_connection) hochgeldaen. Allerdings ist die Website, der Ihr Domainname zugeordnet ist, nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` verknüpft.
+Sie haben die Dateien Ihrer Website **mydomain.ovh** in das Verzeichnis `www` über [FTP](/pages/web_cloud/web_hosting/ftp_connection) übertragen. Allerdings ist die Website, der Ihr Domainname zugeordnet ist, nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` verknüpft.
 
 ![index_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Der `Wurzelverzeichnis` ist aktuell nicht mehr änderbar, nachdem die Website erstellt wurde.
+Das `Wurzelverzeichnis` ist nicht mehr änderbar, nachdem die Website erstellt wurde.
 
-Sie müssen Ihren Domainnamen von der bestehenden Website trennen, indem Sie den Tab `Meine Seiten`{.action} Ihres Webhostings öffnen. Dazu konsultieren Sie bitte unseren Leitfaden „[Wie trenne ich einen Domainnamen von einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)“.
+Sie müssen Ihren Domainnamen von der bestehenden Website trennen, indem Sie den Tab `Meine Seiten`{.action} Ihres Webhostings öffnen. Dazu konsultieren Sie die Anleitung „[Wie trenne ich einen Domainnamen von einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)“.
 
-Anschließend können Sie mithilfe unseres Leitfadens „[Teilen Sie Ihr Webhosting zwischen mehreren Websites auf](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ eine neue Website mit Ihrem Domainnamen hinzufügen. Falls Ihre Website eine Konfiguration mit Git verwendet, konsultieren Sie vorher unseren Leitfaden „[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)“ **vor** dem Klick auf `Domain abtrennen`{.action}.
+Anschließend können Sie mithilfe dera Anleitung „[Teilen Sie Ihr Webhosting zwischen mehreren Websites auf](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ eine neue Website mit Ihrem Domainnamen hinzufügen. Falls Ihre Website eine Konfiguration mit Git verwendet, konsultieren Sie vorher die Anleitung „[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)“ **vor** dem Klick auf `Domain abtrennen`{.action}.
 
 Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
 
