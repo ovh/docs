@@ -22,10 +22,6 @@ Nel panorama digitale di oggi, le società sono sempre più dinamiche e innovati
 
 ## Procedura
 
-> [!warning]
->
-> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
-
 > [!primary]
 >
 > Per l'associazione e la configurazione di Git, è necessario apportare modifiche all'account GitHub. Prima di iniziare la guida, accedi al tuo account GitHub.
@@ -35,25 +31,44 @@ Nel panorama digitale di oggi, le società sono sempre più dinamiche e innovati
 > [!warning]
 >
 > Quando si associa una directory a Git, tutti i domini presenti nella directory verranno associati anche a Git. Ad esempio, se la directory corrispondente al sito Web che stai associando è `www`, tutti i domini associati alla directory `www` saranno associati anche a Git.
->
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) ed effettua le seguenti operazioni:
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-- Accedi alla scheda `Web Cloud`{.action}.
-- Seleziona il tuo hosting nella sezione `Hosting`{.action} a sinistra.
-- Clicca sulla scheda `Multisito`{.action}.
-- Nella tabella che appare, identifica la riga corrispondente alla directory che desideri associare a Git.
-- Clicca sul pulsante `...`{.action} e seleziona `Associare Git`{.action}.
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/link-git.png){.thumbnail}
-
-Viene visualizzato il modulo di associazione Git. È necessario configurare più elementi:
-
-- Chiave SSH
-- Deposito GitHub
-- Diramazione del repository GitHub
-- Chiave SSH (per un repository GitHub privato)
-- Webhook (opzionale)
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Associare Git`{.action}.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Il modulo di associazione Git appare. Devono essere configurati diversi elementi:
+>>
+>> - Repository GitHub
+>> - Branch del repository GitHub
+>> - Chiave SSH (per un repository GitHub privato)
+>> - Webhook (opzionale)
+>>
+>> Continua a leggere questa guida per ottenere le informazioni necessarie per completare i campi richiesti.
 
 #### Definisci il repository GitHub
 
@@ -70,7 +85,6 @@ Definisci un nome per il tuo deposito e inserisci le informazioni richieste.
 > [!warning]
 >
 > Seleziona l’opzione `Add a README file` per fare in modo che GitHub avvii correttamente il tuo repository.
->
 
 Infine clicca su `Create Repository`{.action}.
 
@@ -111,7 +125,6 @@ Per configurare la chiave SSH, consulta lo step "Associare una chiave SSH a GitH
 > [!primary]
 >
 > La generazione di una chiave SSH è uno step cruciale, in quanto stabilisce una connessione sicura e cifrata tra la directory del tuo sito Web e il repository GitHub. Questa chiave garantisce che i trasferimenti di dati e le modifiche del codice avvengano in modo sicuro e autenticato, impedendo gli accessi non autorizzati e garantendo l'integrità del codice.
->
 
 Copia la chiave SSH cliccando sul pulsante a destra.
 
@@ -151,7 +164,7 @@ Per confermare le informazioni del modulo di associazione di Git, clicca su `App
 
 #### Associazione di Git riuscita
 
-Dopo aver convalidato il modulo di associazione di Git, verrai reindirizzato alla scheda Multisito.
+Dopo aver validato il modulo di associazione Git, sei reindirizzato alla pagina dell'etichetta `I miei siti`{.action}.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
 
@@ -161,134 +174,299 @@ Un'intestazione verde indica che Git è in corso di attivazione. Segui l’attiv
 
 Lo stato `In corso`{.action} indica che l’associazione di Git è in corso. Il processo potrebbe richiedere alcuni minuti. Al termine dell’operazione, viene visualizzato lo stato `Attivato`{.action}.
 
-Per monitorare lo stato dell’attivazione di Git, accedi alla scheda `Multisito`{.action}. Nella tabella, identificare le righe corrispondenti alla directory che si desidera associare a Git. Per ciascuna delle linee interessate, nella colonna `Git`{.action}, la voce `In corso`{.action} indica che Git è in corso di attivazione.
+Puoi anche seguire l'evoluzione dell'attivazione di Git dall'etichetta `I miei siti`{.action}. Nella colonna `Git`{.action} del tavolo, la dicitura `In corso`{.action} presente sulla riga del sito web desiderato ti indica che Git è in corso di attivazione.
 
-Quando viene eseguita l’associazione di Git, lo stato `Attivato`{.action} appare nella colonna `Git`{.action} per le linee interessate.
+Quando l'associazione di Git è completata, lo stato `Attivato`{.action} appare nella colonna `Git`{.action} per il sito web desiderato.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/success-git-activation.png){.thumbnail}
 
 #### Errori dell'associazione di Git
 
-Nella tabella della scheda `Multisito`{.action}, identifica le righe corrispondenti alla directory che vuoi associare a Git. Nella colonna `Git`, se compare la dicitura `Errore`, significa che si è verificato almeno uno dei seguenti errori:
+Nel tavolo dell'etichetta `I miei siti`{.action}, identifica le righe corrispondenti al directory del sito web che desideri associare a Git. Nella colonna `Git`, se la dicitura `Errore` appare, ciò significa che almeno uno dei seguenti errori è avvenuto:
 
 - La chiave SSH non è stata registrata nel tuo account GitHub.
 - La directory di installazione non è vuota.
 - L'indirizzo del repository GitHub non esiste o è errato.
 - Il ramo del repository GitHub non esiste o il nome è errato.
 
-Per la causa esatta dell'errore, vedere le informazioni relative all'ultima distribuzione. Nella tabella, identifica la riga corrispondente al dominio di cui vuoi consultare i log dell’ultima distribuzione. A destra della linea, clicca sul pulsante `...`{.action} e poi su `Informazioni dell'ultimo deploy`{.action}.
+Per conoscere la causa esatta dell'errore, consulta le informazioni dell'ultimo deployment. Nel tavolo, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Informazioni dell'ultimo deploy`{.action}.
 
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
+![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 
-Una volta individuato il/i errore/i, associa di nuovo Git. Ripeti l’operazione cliccando sul pulsante `...`{.action} della riga corrispondente e poi su `Associare Git`{.action}.
+Una volta identificato(i) l'(i) errore(i), associa Git nuovamente. Ripeti l'operazione cliccando sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Associare Git`{.action}.
 
 ### Avviare il repository GitHub sull’hosting Web OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella tabella che appare, identifica la riga corrispondente al dominio che vuoi sviluppare con Git. Assicurati che lo stato della colonna Git sia `Attivato`{.action}. Clicca sul pulsante `...`{.action} e poi su `Eseguire il deploy Git`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
-
-Verrà visualizzato un messaggio di conferma e una casella di controllo che indica che, in caso di conflitto durante la distribuzione, è possibile forzare le modifiche remote (del repository GitHub) sul repository locale. Seleziona la casella in base alla tua scelta e clicca su `Confermare`{.action} per confermare l’installazione.
-
-> [!warning]
->
-> Per evitare di perdere le modifiche locali, salvare le modifiche prima di sovrascriverle con le modifiche apportate al ramo remoto.
->
-
-La nuova versione del sito Web è stata implementata correttamente sugli hosting OVHcloud. Se altre persone lavorano sullo stesso progetto e apportano modifiche al repository GitHub, allora puoi [configurare un webhook su GitHub](#configureWebhook) perché le loro modifiche vengano distribuite automaticamente sul tuo hosting Web. Questo ti evita di installare Git manualmente e di mantenere sempre aggiornato il tuo hosting Web.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Eseguire il deploy Git`{.action}.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Un messaggio di conferma appare, insieme a una casella da spuntare che ti indica che in caso di conflitto durante il deployment, puoi forzare le modifiche remote (del repository GitHub) sul tuo repository locale. Spunta o non spuntare la casella a seconda della tua scelta, quindi clicca su `Confermare`{.action} per validare il deployment.
+>>
+>> > [!warning]
+>> >
+>> > Per evitare di perdere le tue modifiche locali, pensa a salvarle prima di sovrascriverle con le modifiche della branch remota.
+>> 
+>> La nuova versione del tuo sito web è stata correttamente deployata sul tuo hosting web OVHcloud. Se altre persone lavorano sullo stesso progetto e apportano modifiche al repository GitHub, puoi [configurare un webhook su GitHub](#configureWebhook) in modo che le loro modifiche siano automaticamente deployate sul tuo hosting web. Questo ti evita di deployare Git manualmente, e il tuo sito web resterà sempre aggiornato.
 
 ### Modificare un dominio
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella nuova finestra, identifica la riga corrispondente al dominio che vuoi modificare. Clicca sul pulsante `...`{.action} e poi su `Modifica il dominio`{.action}. Sono possibili due scenari:
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-#### Il dominio non è l'unico associato alla stessa directory
-
-Viene visualizzata la seguente finestra:
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step1.png){.thumbnail}
-
-Modifica le informazioni e clicca su `Continua`{.action}.
-
-Verrà visualizzata una seconda finestra di conferma con il riepilogo delle modifiche.
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
-
-Clicca su `Confermare`{.action} per confermare le modifiche del dominio.
-
-#### Il dominio è l'unico associato alla directory
-
-Viene visualizzata la seguente finestra:
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-alone-domain-step1.png){.thumbnail}
-
-Come indicato nel messaggio, [eliminare l'associazione Git](#deleteGitAssociation) per prima cosa prima di modificare il dominio.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio o sottodomini associati.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Modifica il dominio`{.action}.
+>>
+>> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>>  Due scenari sono possibili:
+>>
+>> **1 - Uno o più altri nomi di dominio sono associati al sito web**
+>>
+>> La seguente finestra appare:
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step1.png){.thumbnail}
+>>
+>> Modifica le informazioni come necessario e clicca su `Continua`{.action}.
+>>
+>> Una seconda finestra di conferma appare con il riepilogo delle tue modifiche:
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
+>>
+>> Clicca su `Confermare`{.action} per validare le modifiche del tuo nome di dominio.
+>>
+>> **2 - Un solo nome di dominio è associato al sito web**
+>>
+>> La seguente finestra appare:
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-alone-domain-step1.png){.thumbnail}
+>>
+>> Come il messaggio indica, [elimina la tua associazione Git](#deleteGitAssociation) in un primo tempo prima di modificare il tuo nome di dominio.
 
 ### Scollega un dominio
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella tabella che appare, identifica la riga corrispondente al dominio che vuoi scollegare dal tuo hosting Web OVHcloud. Clicca sul pulsante `...`{.action} e poi su `Scollega il dominio`{.action}. Sono possibili due scenari:
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-#### Il dominio non è l'unico associato alla stessa directory
-
-Viene visualizzata la finestra successiva.
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
-
-Clicca su `Confermare`{.action} per confermare lo scollegamento del dominio.
-
-#### Il dominio è l'unico associato alla directory
-
-Viene visualizzata la seguente finestra:
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
-
-Come indicato nel messaggio, [eliminare l'associazione Git](#deleteGitAssociation) in un primo momento, prima di scollegare il dominio.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio o sottodomini associati.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Scollega il dominio`{.action}.
+>>
+>> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>>  Due scenari sono possibili:
+>>
+>> **1 - Uno o più altri nomi di dominio sono associati al sito web**
+>>
+>> La seguente finestra appare.
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
+>>
+>> Clicca su `Confermare`{.action} per validare lo stacco del tuo nome di dominio.
+>>
+>> **2 - Un solo nome di dominio è associato al sito web**
+>>
+>> La seguente finestra appare:
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
+>>
+>> Come il messaggio indica, [elimina la tua associazione Git](#deleteGitAssociation) in un primo tempo prima di staccare il tuo nome di dominio.
 
 ### Configura Git
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella tabella che appare, identifica la riga corrispondente alla directory che vuoi configurare con Git. Clicca sul pulsante `...`{.action} e poi su `Configurare Git`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
-
-Vengono visualizzate le seguenti informazioni:
-
-- Chiave SSH: se non l'hai già fatto, [registra la tua chiave SSH nel tuo account GitHub](#linkSSHKey).
-- Deposito: indirizzo del vostro deposito Git. Questo campo è disattivato perché non è possibile modificare l'indirizzo del repository Git. Per modificare l'URL del repository Git, è necessario [rimuovere l'associazione Git dalla directory](#deleteGitAssociation) e di nuovo [associare la directory a Git](#associateGitRepo).
-- Diramazione: nome della diramazione del deposito GitHub. È possibile modificare questo campo.
-- URL del webhook : per ottimizzare i deploy su Git, [configura il webhook su GitHub](#configureWebhook).
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Configurare Git`{.action}
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Le seguenti informazioni appaiono:
+>>
+>> - Chiave SSH: Se non l'hai già fatto, [registra la tua chiave SSH nel tuo account GitHub](#linkSSHKey).
+>> - Repository: Indirizzo del tuo repository Git. Questo campo è grigio perché non puoi modificare l'indirizzo del repository Git. Per cambiare l'URL del repository Git, devi [eliminare l'associazione Git del tuo directory](#deleteGitAssociation) e poi nuovamente [associare il directory a Git](#associateGitRepo).
+>> - Branch: Nome del branch del repository GitHub. Puoi modificare questo campo se necessario.
+>> - URL webhook: Se desideri ottimizzare i tuoi deployment su Git, [configura il webhook su GitHub](#configureWebhook).
 
 ### Informazioni dell'ultimo deploy
 
 Dopo aver implementato il repository GitHub sul tuo hosting Web, puoi consultare le informazioni relative all’ultimo implementazione, come errori, test o qualsiasi informazione utile.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella tabella che appare, identifica la riga corrispondente al dominio di cui vuoi consultare i log dell’ultima distribuzione. A destra della linea, clicca sul pulsante `...`{.action} e poi su `Informazioni dell'ultimo deploy`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
-
-In questa schermata sono disponibili tutte le informazioni relative all’ultima distribuzione.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Informazioni dell'ultimo deploy`{.action}.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
+>>
+>> Trova su questo schermo tutte le informazioni relative all'ultimo deployment.
 
 ### Elimina l'associazione di Git <a name="deleteGitAssociation"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella tabella che appare, identifica la riga corrispondente alla directory dalla quale vuoi eliminare l’associazione con Git. Clicca sul pulsante `...`{.action} e poi su `Eliminare Git`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-button.png){.thumbnail}
-
-Viene visualizzata la seguente finestra:
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
-
-Il messaggio ti informa che l'eliminazione verrà applicata a tutti i domini associati alla tua directory. Seleziona la casella `Vuoi eliminare il contenuto della directory <your_directory>?`{.action} se vuoi anche eliminare il contenuto (cartelle e file) dalla directory.
-
-1\.	Se si seleziona la casella di controllo, viene visualizzata la seguente finestra:
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
-
-Clicca su `Confermare`{.action} per confermare l’eliminazione dell’associazione Git dalla tua directory e il suo contenuto.
-
-2\.	Se non si seleziona la casella di controllo, viene visualizzata la seguente finestra:
-
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup-confirm.png){.thumbnail}
-
-Clicca su `Confermare`{.action} per confermare l’eliminazione dell’associazione Git dalla directory.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Eliminare Git`{.action}.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> La seguente finestra appare:
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
+>>
+>> Il messaggio ti informa che l'eliminazione si applicherà sull'intero dei nomi di dominio associati al tuo sito web. Spunta la casella `Vuoi eliminare il contenuto della directory <your_directory>?`{.action} se desideri anche eliminare il contenuto (directory e file) della directory.
+>>
+>> 1\. Se spunti la casella, la seguente finestra appare:
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
+>>
+>> Clicca su `Confermare`{.action} per validare la rimozione dell'associazione Git della tua directory e del suo contenuto.
+>>
+>> 2\. Se non spunti la casella, la finestra seguente appare:
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup-confirm.png){.thumbnail}
+>>
+>> Clicca su `Confermare`{.action} per validare la rimozione dell'associazione Git della tua directory.
 
 ### Configura un webhook su GitHub
 
@@ -297,13 +475,37 @@ Clicca su `Confermare`{.action} per confermare l’eliminazione dell’associazi
 > [!primary]
 >
 > Se siete già nel modulo di associazione di Git, copiate l'URL del webhook e andate al passaggio "[Configura il webhook](#configureWebhook)".
->
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella tabella che appare, identifica la riga corrispondente alla directory sulla quale vuoi configurare un webhook. Clicca sul pulsante `...`{.action} e poi su `Configurare Git`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
-
-In fondo al form che viene visualizzato, identifica l’indirizzo del campo `URL del webhook`{.action} e copialo. A questo punto è necessario salvare l’URL e configurare il webhook sul tuo account GitHub.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Configurare Git`{.action}.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> In fondo al modulo che appare, copia l'indirizzo contenuto nel campo `URL del webhook`{.action}. Devi ora registrare l'URL e configurare il webhook sul tuo account GitHub.
 
 #### Configura il webhook <a name="configureWebhook"></a>
 
