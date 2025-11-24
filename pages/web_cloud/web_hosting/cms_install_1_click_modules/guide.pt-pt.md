@@ -56,7 +56,7 @@ Na nova janela, selecione o CMS desejado e selecione o domínio com o qual desej
 
 ![Escolher módulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Se o seu domínio não estiver na lista, aceda ao separador `Meus sites`{.action} para o adicionar. Consulte o nosso guia « [Como associar um nome de domínio a um site web existente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) », se necessário.
+Se o seu domínio não estiver na lista, aceda ao separador `Meus sites`{.action} para o adicionar. Consulte o nosso guia "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)", se necessário.
 
 > [!primary]
 >
@@ -132,7 +132,7 @@ As restantes informações solicitadas para a base de dados são as seguintes:
 >
 > - O nome do servidor de uma base de dados Web Cloud Databases começa pelo seu identificador de cliente OVHcloud e tem a seguinte forma: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` onde os **"X"** devem ser substituídos pela referência do seu serviço Web Cloud Databases.
 
-- *Nome da base de dados* : este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](/links/manager).
+- *Nome da base de dados*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](/links/manager).
 
 - *Porta*: coloque sistematicamente o número **3306** (porta predefinida) para uma base de dados incluída no seu alojamento web. Para uma base presente numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
@@ -149,13 +149,13 @@ Introduza as seguintes informações para a configuração do módulo:
 
 - *nome ou e-mail do administrador:* identificador que irá utilizar para aceder à interface de gestão do seu CMS (Back Office).
 - *palavra-passe:* palavra-passe usada para aceder à interface de gestão do CMS.
-- *domínio:* domínio com o qual deseja instalar o seu CMS. Se necessário, consulte o nosso manual « [Como associar um nome de domínio a um site web existente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+- *domínio:* domínio com o qual deseja instalar o seu CMS. Se necessário, consulte o nosso manual "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 - *Linguagem:* língua na qual o CMS será instalado.
 - *caminho de instalação:* este é automaticamente indicado ao selecionar o domínio. Pode completá-lo introduzindo sub-diretórios (para os utilizadores mais experientes).
 
 > [!primary]
 >
-> Verifique, para o formulário `Caminho da instalação`, se o diretório pré-preenchido é aquele no qual deseja instalar o seu « módulo em 1 clique » com o seu nome de domínio.
+> Verifique, para o formulário `Caminho da instalação`, se o diretório pré-preenchido é aquele no qual deseja instalar o seu "módulo em 1 clique" com o seu nome de domínio.
 >
 > Nota: este diretório deve estar totalmente vazio.
 >

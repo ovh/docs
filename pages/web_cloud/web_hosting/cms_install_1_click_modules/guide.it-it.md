@@ -19,7 +19,7 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 - Utilizzare una versione recente di PHP e un ambiente di esecuzione compatibile sul tuo hosting Web OVHcloud. Scopri lo stato delle diverse versioni disponibili in questa [pagina](https://webhosting-infos.hosting.ovh.net/). Se necessario, consulta la nostra [guida](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull’argomento per modificare rapidamente questa configurazione.
 - Un file "[.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" configurato deve essere presente nella root FTP del tuo hosting Web.
 - La directory (cartella di root) in cui sarà installato il tuo "modulo in 1 click" deve essere vuota o al momento inesistente.
-- Il dominio (con sottodominio, se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato tramite l' scheda [I miei siti](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) del tuo hosting web.
+- Il dominio (con sottodominio, se desiderato) che verrà utilizzato per il tuo sito web deve essere dichiarato tramite nella scheda [I miei siti](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) del tuo hosting web.
 
 ## Procedura
 
@@ -55,7 +55,7 @@ Nella nuova finestra, scegli il CMS e seleziona il dominio con cui vuoi installa
 
 ![Scelta del modulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Se il tuo dominio non è presente nell'elenco, vai alla scheda `I miei siti`{.action} per aggiungerlo. Consulta la nostra guida « [Come associare un nome a dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) », se necessario.
+Se il tuo dominio non è presente nell'elenco, vai alla scheda `I miei siti`{.action} per aggiungerlo. Consulta la nostra guida "[Come associare un nome a dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)", se necessario.
 
 > [!primary]
 >
@@ -150,7 +150,7 @@ Per configurare il modulo, inserisci queste informazioni:
 
 - *Nome o email dell'amministratore:* identificativo che utilizzerai per accedere all'interfaccia di gestione del tuo CMS (Back Office).
 *password:* password per accedere all'interfaccia di gestione del tuo CMS.
-- *dominio:* dominio con cui vuoi installare il tuo CMS. Se necessario, consulta la guida su « [Come associare un nome a dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+- *dominio:* dominio con cui vuoi installare il tuo CMS. Se necessario, consulta la guida su "[Come associare un nome a dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 - *lingua:* lingua in cui sarà installato il CMS.
 - *percorso di installazione:* è inserito automaticamente nella selezione del dominio. completandolo con sottocartelle (per utenti esperti).
 

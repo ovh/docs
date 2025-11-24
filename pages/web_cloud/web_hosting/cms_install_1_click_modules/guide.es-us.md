@@ -55,7 +55,7 @@ Se abrirá una ventana en la que deberá seleccionar el CMS correspondiente y el
 
 ![Elección del módulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Si su dominio no aparece en la lista, vaya al apartado `Mis sitios`{.action} para añadirlo. Consulte nuestro guía « [¿Cómo asociar un nombre de dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) » si es necesario.
+Si su dominio no aparece en la lista, vaya al apartado `Mis sitios`{.action} para añadirlo. Consulte nuestra guía "[¿Cómo asociar un nombre de dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)" si es necesario.
 
 > [!primary]
 >
@@ -96,7 +96,7 @@ Una vez finalizada la instalación, recibirá por correo electrónico los datos 
 
 #### Instalación avanzada de un "módulo en 1 clic"
 
-Para realizar este método de instalación, asegúrese de que la casilla `Instalación en modo avanzado`{.action} esté marcada y haga clic en el botón `Siguiente`{.action} :
+Para realizar este método de instalación, asegúrese de que la casilla `Instalación en modo avanzado`{.action} esté marcada y haga clic en el botón `Siguiente`{.action}:
 
 ![Instalación avanzada de un módulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-1.png){.thumbnail}
 
@@ -117,13 +117,13 @@ Introduzca los datos de conexión a la base de datos.
 Existen diversas posibilidades:
 
 - La base de datos ya está creada en su alojamiento web: seleccione la opción del menú desplegable. `Seleccione la base de datos`{.action} y complete la información solicitada.
-- La base de datos todavía no está creada en su alojamiento web: [cree su base de datos incluida con su alojamiento](/pages/web_cloud/web_hosting/sql_create_database), vuelva al menú desplegable : `Seleccione la base de datos`{.action} y complete la información solicitada.
+- La base de datos todavía no está creada en su alojamiento web: [cree su base de datos incluida con su alojamiento](/pages/web_cloud/web_hosting/sql_create_database), vuelva al menú desplegable: `Seleccione la base de datos`{.action} y complete la información solicitada.
 - La base de datos está [creada en su instancia Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server): en el menú desplegable. `Seleccione la base de datos`{.action} y elija la opción `Base de datos externa al alojamiento web`{.action} e introduzca la información solicitada. El datacenter en el que se alojan el servicio y el alojamiento web es el mismo.
 - La base de datos está creada en otro plan de hosting de OVHcloud: en el menú desplegable. `Seleccione la base de datos`{.action} y elija la opción `Base de datos externa al alojamiento web`{.action} e introduzca la información solicitada. La base de datos y el alojamiento web deben estar alojados en el mismo datacenter.
 
 El resto de los datos solicitados para la base de datos son los siguientes:
 
-- *Dirección del servidor* : introduzca el nombre del servidor de la base de datos, en el mensaje de correo electrónico de instalación o en el área de cliente de OVHcloud. 
+- *Dirección del servidor*: introduzca el nombre del servidor de la base de datos, en el mensaje de correo electrónico de instalación o en el área de cliente de OVHcloud. 
 
 > [!primary]
 > 
@@ -131,14 +131,14 @@ El resto de los datos solicitados para la base de datos son los siguientes:
 >
 > El nombre del servidor de una base de datos Web Cloud Databases comienza por su identificador de cliente de OVHcloud y tiene el siguiente formato: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` donde los **"X"** deben sustituirse por la referencia de su servicio Web Cloud Databases.
 
-- *Nombre de la BD* : este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](/links/manager).
+- *Nombre de la BD*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](/links/manager).
 
-- *Puerto* : sitúe sistemáticamente el número **3306** (puerto por defecto) para una base de datos incluida con su alojamiento web. Para una base de datos de una instancia de Web Cloud Databases, consulte [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+- *Puerto*: sitúe sistemáticamente el número **3306** (puerto por defecto) para una base de datos incluida con su alojamiento web. Para una base de datos de una instancia de Web Cloud Databases, consulte [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
-- *Nombre de usuario* : es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web.
+- *Nombre de usuario*: es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web.
 Para las bases de datos creadas en un plan de hosting Cloud Databases, consulte la información que se indica en [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
-- *Contraseña* : le hemos enviado un mensaje de correo electrónico al crear la base de datos. Es posible que lo haya cambiado.
+- *Contraseña*: le hemos enviado un mensaje de correo electrónico al crear la base de datos. Es posible que lo haya cambiado.
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.
 
@@ -146,11 +146,11 @@ Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.
 
 Introduzca la siguiente información para la configuración del módulo:
 
-- *nombre o correo electrónico del administrador :* Identificador que utilizará para conectarse al panel de administración de su CMS (Back Office).
-- *contraseña :* contraseña que utilizará para conectarse al panel de administración de su CMS.
-- *dominio :* nombre de dominio con el que quiere instalar su CMS. Si lo necesita, consulte nuestra guía « [¿Cómo asociar un nombre de dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
-- *idioma :* Idioma en el que se instalará el CMS.
-- *Ruta de instalación :* Este se indica automáticamente al seleccionar el dominio. Puede completarlo introduciendo subdirectorios (para usuarios expertos).
+- *nombre o correo electrónico del administrador*: Identificador que utilizará para conectarse al panel de administración de su CMS (Back Office).
+- *contraseña*: contraseña que utilizará para conectarse al panel de administración de su CMS.
+- *dominio*: nombre de dominio con el que quiere instalar su CMS. Si lo necesita, consulte nuestra guía "[¿Cómo asociar un nombre de dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+- *idioma*: Idioma en el que se instalará el CMS.
+- *Ruta de instalación*: Este se indica automáticamente al seleccionar el dominio. Puede completarlo introduciendo subdirectorios (para usuarios expertos).
 
 > [!primary]
 >
@@ -163,7 +163,7 @@ Introduzca la siguiente información para la configuración del módulo:
 >
 > Si lo necesita, consulte nuestra guía "[Cómo compartir un alojamiento web con varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite)" para modificar el directorio de destino de su dominio.
 
-Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action} :
+Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}:
 
 > [!warning]
 >
