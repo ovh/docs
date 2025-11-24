@@ -19,7 +19,7 @@ updated: 2025-11-27
 - Ihr OVHcloud Webhosting verwendet eine aktuelle PHP-Version und eine kompatible Ausführungsumgebung. Sie können den Stand der verschiedenen Versionen auf [dieser Seite](https://webhosting-infos.hosting.ovh.net/) überprüfen. Wenn nötig, nutzen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell anpassen zu können.
 - Im FTP-Wurzelverzeichnis Ihres Webhostings muss eine konfigurierte [.ovhconfig Datei](/pages/web_cloud/web_hosting/configure_your_web_hosting) vorhanden sein.
 - Falls ein bereits vorhandenes Verzeichnis zur Installation des 1-Klick-Moduls verwendet werden soll, muss dieses leer sein.
-- Der Domäne (mit Unterdomäne, falls gewünscht), die für Ihre Website verwendet werden soll, muss über den Tab [Meine Seiten](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) Ihres Webhostings hinzugefügt werden.
+- Der Domainname (mit Subdomain, falls gewünscht), der für Ihre Website verwendet werden soll, muss über den Tab [Meine Seiten](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) Ihres Webhostings hinzugefügt werden.
 
 ## In der praktischen Anwendung
 
