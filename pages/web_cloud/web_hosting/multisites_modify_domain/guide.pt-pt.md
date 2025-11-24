@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Alterar um nome de domínio já associado a um alojamento"
 excerpt: "Saiba como alterar as configurações de associação de um domínio/subdomínio já declarado na sua oferta de alojamento web"
-updated: 2025-11-05
+updated: 2025-11-27
 ---
 
 ## Objetivo
@@ -10,8 +10,10 @@ Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de a
 
 > [!primary]
 >
-> Este guia explica unicamente como alterar um domínio ou um subdomínio já declarado num alojamento web da OVHcloud. Se pretender associar um novo domínio/subdomínio ao seu alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+> Este guia explica unicamente como alterar um domínio ou um subdomínio já declarado num alojamento web da OVHcloud.
 >
+> - Para associar um novo nome de domínio ou subdomínio ao seu site web no seu alojamento web, consulte o nosso guia « [Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+> - Para adicionar um novo site web ao seu alojamento web, consulte o nosso guia « [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 **Saiba como alterar as definições de associação de um domínio/subdomínio já registado na sua oferta de alojamento web.**
 
@@ -26,67 +28,59 @@ Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de a
 
 > [!warning]
 >
-> Este guia será atualizado em breve. Em caso de dificuldades, consulte a versão em inglês ou francês deste guia, clicando na bandeira correspondente no topo desta página.
-
-> [!warning]
->
 > A modificação das configurações de associação de um domínio ou de um subdomínio pode, em caso de má manipulação, levar a uma interrupção do acesso aos seus serviços (o seu website). Se não tiver a certeza quanto às alterações a realizar, não hesite em contactar um fornecedor especializado
->
 
-Para alterar as configurações de associação de um domínio ou subdomínio já declarado na sua oferta de alojamento web, execute as seguintes ações:
+Para modificar os parâmetros de associação de um nome de domínio ou subdomínio já declarado na sua oferta de alojamento web, clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-2. Clique no separador `Web Cloud`{.action}.
-3. Na coluna da esquerda, clique no menu `Alojamentos`{.action}.
-4. Selecione o alojamento web em causa.
-5. Na página que se abrir, clique no separador `Multisite`{.action}.
-6. Na tabela que se abrir abaixo do separador e à direita do domínio/subdomínio em questão, clique no botão `...`{.action} e, a seguir em `Modificar o domínio`{.action}.
-
-![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
-
-Aparecerá a seguinte janela:
-
-![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
-
-No resto deste guia, encontrará uma descrição de cada um dos parâmetros disponíveis na janela acima. Depois de ler as diferentes descrições abaixo e depois de fazer as suas modificações, clique no botão `Seguinte`{.action} situado no canto inferior direito da janela e, em seguida, passe para a [etapa 2](#step2).
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante e, depois, em `Modificar o domínio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> A seguinte janela aparece: 
+>>
+>> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
+>>
+>> Na continuação deste guia, encontrará uma descrição de cada um dos parâmetros disponíveis na janela acima. Após a leitura das diferentes descrições presentes na secção « [Descrição dos parâmetros modificáveis](#step1) » e após as suas modificações, clique no botão `Seguinte`{.action} no canto inferior direito da janela, depois passe para a [parte 2](#step2).
 
 ### Etapa 1 - Descrição dos parâmetros alteráveis <a name="step1"></a>
 
 > [!primary]
 >
-> O formulário `Domínio`{.action} não pode ser alterado, pois trata-se de uma alteração dos parâmetros do nome de domínio associado ao alojamento web. Se a ação desejada consiste em associar um novo domínio/subdomínio ao seu alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+> Os campos `Domínio`{.action} e `Pasta raiz`{.action} não são modificáveis, pois trata-se de parâmetros relativos ao site web no seu alojamento web.
 >
-
-#### Modificar a "pasta raiz"
-
-> [!warning]
-> **Caso particular: configuração com Git**
+> - Para associar um novo nome de domínio ou subdomínio a um site web no seu alojamento web, consulte o nosso guia « [Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+> - Para alterar a pasta raiz do seu site web, terá de desligar o seu nome de domínio do site web existente a partir da pestana `Meus sites`{.action}. Para isso:
+>      - Clique no botão `>`{.action} à esquerda do nome do site web relevante para visualizar os nomes de domínio e subdomínios associados.
+>      - Clique depois no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, depois em `Desassociar o domínio`{.action}.
 >
-> Para modificar o `Pasta raiz`{.action} declarado para o seu domínio e se existir uma configuração com Git para o mesmo domínio, deverá eliminar primeiro esta configuração.
->
-> Se houver uma configuração com o Git, uma mensagem aparecerá logo abaixo do formulário:
->
-> ![Modify domain associed with git](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png){.thumbnail}
->
-> Para eliminar a configuração Git de um domínio/subdomínio associado ao seu alojamento, consulte o guia "[Configurar e utilizar o Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)".
->
-
-O formulário `Pasta raiz`{.action} indica o nome da pasta que contém os elementos apresentados com o domínio. Por exemplo, pode ser uma pasta que contém os ficheiros do seu website.
-
-Durante a utilização dos seus serviços, poderá ser necessário alterar a `Pasta raiz`{.action} declarada para o seu domínio. Isto pode ocorrer quando, por exemplo:
-
-- Desenvolveu um novo website numa nova pasta presente no espaço de armazenamento FTP do seu alojamento web.
-- Deseja reencaminhar o seu domínio para uma pasta vazia para depois colocar um novo website.
-- etc.
-
-É neste formulário que deverá substituir o nome da pasta pré-preenchida pelo nome da nova pasta pretendida.
-
-> [!success]
->
-> Se indicar um nome de pasta inexistente no espaço de armazenamento FTP do seu alojamento web, este será automaticamente criado pelos nossos robôs no seu espaço de armazenamento FTP.
->
-
-#### Outras opções disponíveis
+> Poderá depois adicionar um novo site web com o seu nome de domínio com a ajuda do nosso guia « [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Se o seu site web tiver uma configuração com Git, consulte previamente o nosso guia « [Configurar e utilizar Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) », **antes** de `Desassociar o domínio`{.action}.
 
 ##### A opção "Ativar o CDN"
 
@@ -114,7 +108,7 @@ Selecione/desmarque esta opção unicamente se deseja separar os logs do seu nom
 
 Para saber mais sobre esta opção, consulte a nossa [página sobre estatísticas detalhadas](/links/web/hosting-traffic-analysis).
 
-Depois de efetuar as alterações, clique no botão `Seguinte`{.action} no canto inferior direito da janela para passar à [etapa 2](#step2).
+Depois de efetuar as alterações, clique no botão `Seguinte`{.action} no canto inferior direito da janela para passar para a [parte 2](#step2).
 
 ### Etapa 2 - Resumo das alterações <a name="step2"></a>
 
@@ -126,7 +120,7 @@ Se o conjunto dos parâmetros estiver configurado de acordo com os seus desejos,
 
 Dependendo das opções selecionadas, as alterações podem levar de alguns minutos ou algumas horas para serem aplicadas.
 
-Se, para as opções **CDN**, **IP do país** e **logs separados**, as modificações não forem aplicadas após 24 horas, consulte os respetivos manuais (e páginas) indicados para o conjunto das opções descritas no [etapa 1](#step1), a fim de verificar que todas as condições exigidas foram corretamente respeitadas e realizadas.
+Se, para as opções **CDN**, **IP do país** e **logs separados**, as modificações não forem aplicadas após 24 horas, consulte os respetivos manuais (e páginas) indicados para o conjunto das opções descritas na [parte 1](#step1), a fim de verificar que todas as condições exigidas foram corretamente respeitadas e realizadas.
 
 ## Quer saber mais?
 
