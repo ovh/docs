@@ -1,7 +1,7 @@
 ---
 title: "Cas d'usage - Comment changer le domaine d'un site existant"
 excerpt: "Découvrez comment changer le nom de domaine d'un site existant"
-updated: 2025-10-28
+updated: 2025-11-27
 ---
 
 ## Objectif
@@ -16,8 +16,7 @@ Ce tutoriel a pour objectif de vous expliquer les principales étapes à suivre 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
->
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 ## Prérequis
 
@@ -31,13 +30,12 @@ Ce tutoriel a pour objectif de vous expliquer les principales étapes à suivre 
 >
 > Le changement du nom de domaine pour accéder à votre site peut avoir des conséquences sur son référencement. 
 > Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](/links/partner) dans le référencement si nécessaire.
->
 
 Pour changer le nom de domaine d'accès à votre site web, plusieurs étapes sont à réaliser dans un ordre bien précis.
 
 ### Etape 1 - déclarer le nouveau domaine sur votre hébergement mutualisé <a name="step1"></a>
 
-Déclarez votre nouveau nom de domaine à l'aide de notre documentation sur l'[ajout d'un site web sur votre hébergement mutualisé](/pages/web_cloud/web_hosting/multisites_configure_multisite). Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
+Déclarez votre nouveau nom de domaine en suivant notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
 
 Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
@@ -59,7 +57,7 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
 Si l'ensemble des actions ont été correctement réalisées, les déclarations de vos noms de domaine doivent être strictement identiques **sauf si vous utilisez un certificat SSL payant de type *Sectigo DV*, *Sectigo EV* ou *custom***.
 
-![multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -95,13 +93,13 @@ Les CMS étant développés par des organismes tiers non gérés par OVHcloud, v
 - Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, consultez les pages officielles [drupal.org](https://drupal.org) ou [drupal.fr](https://drupal.fr).
 - PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, cliquez [ici](https://help-center.prestashop.com) pour vous rendre sur leur page officielle.
 
-Notez que pour ces CMS, il est également possible d'effectuer ses modifications directement [en base de données](/pages/web_cloud/web_hosting/sql_create_database). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
+Notez que pour ces CMS, il est également possible d'effectuer ses modifications directement [en base de données](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
 
 Pour les autres CMS non proposés en installation automatique par OVHcloud, nous vous invitons également à vous rapprocher de leurs supports respectifs pour effectuer cette réécriture en toute sécurité. 
 
 #### Cas n°2 : votre site web est un site « fait maison »
 
-Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](/pages/web_cloud/web_hosting/sql_create_database) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
+Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
 
 N'oubliez pas de vérifier dans votre fichier `.htaccess` si des réécritures d'URL ne sont pas à mettre à jour avec votre nouveau domaine.
 
@@ -114,7 +112,7 @@ Si vous avez fait appel à un prestataire pour la création de votre site, conta
 
 ### Etape 3 - retirer l'ancien nom de domaine <a name="step3"></a>
 
-Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau nom de domaine est pleinement opérationnel avec votre site web, vous devrez supprimer la déclaration de votre ancien nom de domaine sur votre site web à l'aide du guide sur la gestion des [sites web sur votre hébergement mutualisé](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Pour éviter le « *Duplicate-content* » et lorsque votre nouveau nom de domaine est pleinement opérationnel avec votre site web, vous devrez supprimer la déclaration de votre ancien nom de domaine sur votre site web à l'aide du guide « [Comment détacher un nom de domaine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 > [!warning]
 >

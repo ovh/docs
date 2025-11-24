@@ -1,7 +1,7 @@
 ---
 title: "Casi d’uso - Come cambiare il dominio di un sito esistente"
 excerpt: "Questa guida ti mostra come modificare il dominio di un sito esistente"
-updated: 2025-10-28
+updated: 2025-11-27
 ---
 
 ## Obiettivo
@@ -17,7 +17,6 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
 > Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
->
 
 ## Prerequisiti
 
@@ -29,19 +28,14 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 
 > [!warning]
 >
-> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
-
-> [!warning]
->
 > La modifica del dominio per accedere al tuo sito può avere conseguenze sul suo posizionamento nei motori di ricerca. 
 > Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](/links/partner) nel referenziamento se necessario.
->
 
 Per modificare il dominio di accesso al tuo sito Web, segui diversi step in un ordine preciso.
 
 ### Step 1 - Dichiarare il nuovo dominio sul tuo hosting condiviso <a name="step1"></a>
 
-Dichiarate il vostro nuovo dominio utilizzando la nostra documentazione sull'[aggiunta di un sito web al vostro hosting condiviso](/pages/web_cloud/web_hosting/multisites_configure_multisite). Dovrete inoltre dichiarare il sottodominio in `www` se desiderate, ad esempio, che `www.NewDomain.tld` mostri il vostro sito insieme a `NewDomain.tld`.
+Dichiara il nuovo nome di dominio seguendo la nostra guida « [Come associare un nome di dominio a un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Dovrete inoltre dichiarare il sottodominio in `www` se desiderate, ad esempio, che `www.NewDomain.tld` mostri il vostro sito insieme a `NewDomain.tld`.
 
 Per superare lo Step 1 sono necessarie diverse condizioni:
 
@@ -63,7 +57,7 @@ Per superare lo Step 1 sono necessarie diverse condizioni:
 
 Se tutte le azioni sono state correttamente eseguite, le dichiarazioni dei vostri domini devono essere rigorosamente identiche **a meno che non utilizziate un certificato SSL a pagamento di tipo *Sectigo DV*, *Sectigo EV* o *custom***.
 
-![multisito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -118,7 +112,7 @@ Se hai contattato un provider per creare il tuo sito, contattalo per effettuare 
 
 ### Step 3 - Rimuovi il vecchio dominio <a name="step3"></a>
 
-Per evitare il "duplicate-content" e quando il vostro nuovo nome di dominio è pienamente operativo con il vostro sito web, dovrete eliminare la dichiarazione del vostro vecchio nome di dominio sul vostro sito web utilizzando la guida sulla gestione dei [siti web sul vostro hosting condiviso](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Per evitare il « *Duplicate-content* » e quando il tuo nuovo nome di dominio è pienamente operativo con il tuo sito web, dovrai eliminare la dichiarazione del vecchio nome di dominio sul tuo sito web utilizzando la guida « [Come separare un dominio da un sito web esistente](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 > [!warning]
 >
