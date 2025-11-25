@@ -24,7 +24,7 @@ In der heutigen digitalen Landschaft sind Unternehmen dynamischer und innovative
 
 > [!primary]
 >
-> Für die Zuordnung und Konfiguration von Git müssen Sie Änderungen in Ihrem GitHub-Konto vornehmen. Bevor Sie beginnen, loggen Sie sich in Ihrem GitHub-Konto ein.
+> Für die Zuordnung und Konfiguration von Git müssen Sie Änderungen in Ihrem GitHub-Account vornehmen. Bevor Sie beginnen, loggen Sie sich in Ihrem GitHub-Account ein.
 
 ### Verzeichnis mit Git verknüpfen <a name="associateGitRepo"></a>
 
@@ -68,7 +68,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >> - SSH-Schlüssel (für ein privates GitHub-Repository)
 >> - Webhook (optional)
 >>
->> Lesen Sie weiter in diesem Leitfaden, um die erforderlichen Informationen zu erhalten, um die erforderlichen Felder auszufüllen.
+>> Lesen Sie weiter in dieser Anleitung, um die erforderlichen Informationen zu erhalten, um die erforderlichen Felder auszufüllen.
 
 #### GitHub-Repository definieren
 
@@ -76,7 +76,7 @@ Geben Sie die Adresse Ihres GitHub-Repositorys ein. Wenn Sie noch kein GitHub-Re
 
 So erstellen Sie ein neues Repository:
 
-- Melden Sie sich bei Ihrem GitHub-Konto an.
+- Melden Sie sich bei Ihrem GitHub-Account an.
 - Klicken Sie oben rechts auf Ihr Profilbild und dann auf `Your repositories`{.action}.
 - Klicken Sie auf der rechten Seite des Bildschirms auf `New`{.action}.
 
@@ -99,7 +99,7 @@ Kehren Sie zum Git-Zuordnungsformular zurück und fügen Sie die Adresse Ihres G
 
 Legen Sie nun den Zweig Ihres GitHub-Repositorys fest. Die Standardverzweigung ist `main`. Wenn Sie jedoch eine andere Verzweigung verwenden möchten, erstellen Sie eine auf GitHub, indem Sie die folgenden Schritte ausführen:
 
-- Melden Sie sich bei Ihrem GitHub-Konto an.
+- Melden Sie sich bei Ihrem GitHub-Account an.
 - Klicken Sie oben rechts auf Ihr Profilbild und dann auf `Your repositories`{.action}.
 - Gehen Sie zum betreffenden GitHub-Repository.
 - Klicken Sie auf `Main`{.action} und dann auf `View all branches`{.action}, oder klicken Sie direkt auf den Tab `x branch`{.action}.
@@ -132,7 +132,7 @@ Kopieren Sie Ihren SSH-Schlüssel, indem Sie rechts auf den Button klicken.
 
 Speichern Sie den SSH-Schlüssel in Ihrem GitHub-Account:
 
-- Melden Sie sich bei Ihrem GitHub-Konto an.
+- Melden Sie sich bei Ihrem GitHub-Account an.
 - Klicken Sie oben rechts auf Ihr Profilbild und dann auf `Settings`{.action}.
 - Klicken Sie auf der neuen Seite in der linken Spalte auf `SSH and GPG keys`{.action}.
 - Wählen Sie `New SSH key`{.action} oder `Add SSH key`{.action}.
@@ -143,17 +143,17 @@ Das Formular zum Hinzufügen eines neuen SSH-Schlüssels wird angezeigt:
 - **Type of key**: Übernehmen Sie den Standardwert `authentication key`{.action}
 - **Key**: Fügen Sie Ihren SSH-Schlüssel ein.
 
-Um die Informationen zu bestätigen, klicken Sie auf `Add SSH key`{.action}. Wenn Sie dazu aufgefordert werden, bestätigen Sie den Zugriff auf Ihr Konto in GitHub.
+Um die Informationen zu bestätigen, klicken Sie auf `Add SSH key`{.action}. Wenn Sie dazu aufgefordert werden, bestätigen Sie den Zugriff auf Ihren Account in GitHub.
 
 #### Automatische Bereitstellung konfigurieren
 
-Am unteren Rand des Git-Zuordnungsformulars wird ein Abschnitt `Automatische Bereitstellung konfigurieren`{.action} mit der Webhook-URL angezeigt. Mit der Konfiguration eines Webhooks kann Ihr GitHub-Repository Ihr OVHcloud Webhosting automatisch über Ereignisse im GitHub-Repository benachrichtigen (neue Inbetriebnahme, Änderung des Codes usw.). Diese Funktion ist besonders nützlich, wenn Sie in einer Gruppe an demselben Projekt arbeiten und alle Änderungen am GitHub-Repository auf dem neuesten Stand halten möchten. Weitere Informationen finden Sie unter [Webhook auf GitHub einrichten](#configureWebhook).
+Am unteren Rand des Git-Zuordnungsformulars wird ein Abschnitt `Automatische Bereitstellung konfigurieren`{.action} mit der Webhook-URL angezeigt. Mit der Konfiguration eines Webhooks kann Ihr GitHub-Repository Ihr OVHcloud Webhosting automatisch über Ereignisse im GitHub-Repository benachrichtigen (neue Inbetriebnahme, Änderung des Codes etc.). Diese Funktion ist besonders nützlich, wenn Sie in einer Gruppe an demselben Projekt arbeiten und alle Änderungen am GitHub-Repository auf dem neuesten Stand halten möchten. Weitere Informationen finden Sie unter [Webhook auf GitHub einrichten](#configureWebhook).
 
 #### Git-Zuordnung überprüfen
 
 Bevor Sie das Git-Zuordnungsformular bestätigen, überprüfen Sie:
 
-- Ihr SSH-Schlüssel wurde erfolgreich in Ihrem GitHub-Konto gespeichert.
+- Ihr SSH-Schlüssel wurde erfolgreich in Ihrem GitHub-Account gespeichert.
 - Die Adresse Ihres GitHub-Repositorys ist korrekt. Sie muss im Format `https://github.com/<username>/<repository_name>.git` vorliegen.
 - Der Zweigname des GitHub-Repositorys ist korrekt.
 - Das Installationsverzeichnis ist leer.
@@ -164,7 +164,7 @@ Um die Informationen im Git-Zuordnungsformular zu bestätigen, klicken Sie auf `
 
 #### Git-Assoziierung - Erfolg
 
-Nachdem Sie das Git-Verknüpfungsformular bestätigt haben, werden Sie auf die Registerkarten-Seite `Meine Seiten`{.action} weitergeleitet.
+Nachdem Sie das Git-Verknüpfungsformular bestätigt haben, werden Sie auf den Tab `Meine Seiten`{.action} weitergeleitet.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
 
@@ -174,7 +174,7 @@ Ein grünes Banner zeigt an, dass Git aktiviert wird. Verfolgen Sie die Aktivier
 
 Der Status `Wird ausgeführt`{.action} zeigt an, dass die Git-Zuordnung in Bearbeitung ist. Dieser Vorgang kann einige Minuten dauern. Wenn die Aufgabe abgeschlossen ist, wird der Status `Aktiviert`{.action} angezeigt.
 
-Sie können auch den Fortschritt der Git-Aktivierung über das Register `Meine Seiten`{.action} verfolgen. In der Spalte `Git`{.action} der Tabelle zeigt der Hinweis `Wird ausgeführt`{.action} an, dass Git aktiviert wird.
+Sie können auch den Fortschritt der Git-Aktivierung über den Tab `Meine Seiten`{.action} verfolgen. In der Spalte `Git`{.action} der Tabelle zeigt der Hinweis `Wird ausgeführt`{.action} an, dass Git aktiviert wird.
 
 Wenn die Git-Verknüpfung abgeschlossen ist, wird der Status `Aktiviert`{.action} in der Spalte `Git`{.action} für die betroffene Website angezeigt.
 
@@ -182,9 +182,9 @@ Wenn die Git-Verknüpfung abgeschlossen ist, wird der Status `Aktiviert`{.action
 
 #### Fehler bei der Git-Zuordnung
 
-Im Tabellenbereich des Registers `Meine Seiten`{.action} identifizieren Sie die Zeilen, die dem Verzeichnis der Website entsprechen, die Sie mit Git verknüpfen möchten. In der Spalte `Git` wird der Hinweis `Fehler` angezeigt, was bedeutet, dass mindestens eine der folgenden Fehler aufgetreten ist:
+Im Tabellenbereich des Tabs `Meine Seiten`{.action} identifizieren Sie die Zeilen, die dem Verzeichnis der Website entsprechen, die Sie mit Git verknüpfen möchten. In der Spalte `Git` wird der Hinweis `Fehler` angezeigt, was bedeutet, dass mindestens eine der folgenden Fehler aufgetreten ist:
 
-- Der SSH-Schlüssel wurde nicht in Ihrem GitHub-Konto gespeichert.
+- Der SSH-Schlüssel wurde nicht in Ihrem GitHub-Account gespeichert.
 - Das Installationsverzeichnis ist nicht leer.
 - Die GitHub-Repository-Adresse ist nicht vorhanden oder falsch.
 - Der Zweig des GitHub-Repositorys ist nicht vorhanden, oder der Name ist falsch.
@@ -193,7 +193,7 @@ Um die genaue Ursache des Fehlers zu ermitteln, konsultieren Sie die Information
 
 ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 
-Sobald der/die Fehler identifiziert wurden, verknüpfen Sie Git erneut. Wiederholen Sie den Vorgang, indem Sie auf den Button `⁝`{.action} rechts neben der betroffenen Website klicken und dann auf `Git zuordnen`{.action}.
+Wenn Sie den Fehler identifiziert haben, ordnen Sie Git erneut zu. Wiederholen Sie den Vorgang, indem Sie auf den Button `⁝`{.action} rechts neben der betroffenen Website klicken und dann auf `Git zuordnen`{.action}.
 
 ### Deployment Ihres GitHub-Repositorys auf Ihrem OVHcloud Webhosting
 
@@ -226,13 +226,13 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 5**
 >>
->> Eine Bestätigungsanzeige wird angezeigt, sowie ein Häkchen, das Ihnen anzeigt, dass Sie bei Konflikten während des Deployments die Änderungen des GitHub-Repositorys auf Ihr lokales Repository erzwingen können. Aktivieren Sie das Häkchen oder nicht, je nachdem, und klicken Sie auf `Bestätigen`{.action}, um das Deployment zu bestätigen.
+>> Es wird eine Bestätigungsmeldung angezeigt, dass Sie bei einem Konflikt während der Bereitstellung Remote-Änderungen (aus dem GitHub-Repository) in Ihrem lokalen Repository erzwingen können. Aktivieren oder deaktivieren Sie die Option hierzu, und klicken Sie auf `Bestätigen`{.action}, um die Bereitstellung zu bestätigen.
 >>
 >> > [!warning]
 >> >
 >> > Um Ihre lokalen Änderungen nicht zu verlieren, sollten Sie diese vor dem Überschreiben durch die Änderungen des entfernten Zweigs sichern.
 >>
->> Die neue Version Ihrer Website wurde erfolgreich auf Ihrem OVHcloud Webhosting bereitgestellt. Wenn andere Personen am gleichen Projekt arbeiten und Änderungen an das GitHub-Repository vornehmen, können Sie [einen Webhook auf GitHub konfigurieren](#configureWebhook), damit diese Änderungen automatisch auf Ihrem Webhosting bereitgestellt werden. Dies spart Ihnen das manuelle Deployment von Git und stellt sicher, dass Ihre Website immer auf dem neuesten Stand bleibt.
+>> Die neue Version Ihrer Website wurde erfolgreich auf Ihrem OVHcloud Webhosting bereitgestellt. Wenn andere Personen am gleichen Projekt arbeiten und Änderungen an das GitHub-Repository vornehmen, können Sie [einen Webhook auf GitHub konfigurieren](#configureWebhook), damit diese Änderungen automatisch auf Ihrem Webhosting bereitgestellt werden. So müssen Sie Git nicht manuell bereitstellen, und Ihr Webhosting bleibt immer auf dem neuesten Stand.
 
 ### Domainnamen bearbeiten
 
@@ -271,7 +271,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Es gibt zwei mögliche Szenarien:
 >>
->> **1 - Ein oder mehrere andere Domänennamen sind an die Website angehängt**
+>> **1 - Ein oder mehrere andere Domainnamen sind an die Website angehängt**
 >>
 >> Das folgende Fenster wird angezeigt:
 >>
@@ -283,9 +283,9 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 >>
->> Klicken Sie auf `Bestätigen`{.action}, um die Änderungen an Ihrem Domänennamen zu bestätigen.
+>> Klicken Sie auf `Bestätigen`{.action}, um die Änderungen an Ihrem Domainnamen zu bestätigen.
 >>
->> **2 - Nur ein Domänennamen ist an die Website angehängt**
+>> **2 - Nur ein Domainname ist an die Website angehängt**
 >>
 >> Das folgende Fenster wird angezeigt:
 >>
@@ -293,7 +293,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Wie in der Nachricht erwähnt, [löschen Sie Ihre Git-Assoziation](#deleteGitAssociation), bevor Sie Ihren Domainnamen ändern.
 
-### Trennen eines Domainnamens
+### Abtrennen eines Domainnamens
 
 Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
@@ -330,15 +330,15 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Es gibt zwei mögliche Szenarien:
 >>
->> **1 - Ein oder mehrere andere Domänennamen sind an die Website angehängt**
+>> **1 - Ein oder mehrere andere Domainnamen sind an die Website angehängt**
 >>
 >> Das folgende Fenster wird angezeigt.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 >>
->> Klicken Sie auf `Confirmer`{.action}, um das Trennen Ihres Domänennamens zu bestätigen.
+>> Klicken Sie auf `Bestätigen`{.action}, um das Abtrennen Ihres Domainnamens zu bestätigen.
 >>
->> **2 - Nur ein Domänennamen ist an die Website angehängt**
+>> **2 - Nur ein Domainnamen ist an die Website angehängt**
 >>
 >> Das folgende Fenster wird angezeigt:
 >>
@@ -379,7 +379,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Die folgenden Informationen werden angezeigt:
 >>
->> - SSH-Schlüssel: Falls Sie dies noch nicht getan haben, [registrieren Sie Ihren SSH-Schlüssel in Ihrem GitHub-Konto](#linkSSHKey).
+>> - SSH-Schlüssel: Falls Sie dies noch nicht getan haben, [registrieren Sie Ihren SSH-Schlüssel in Ihrem GitHub-Account](#linkSSHKey).
 >> - Repository: Adresse Ihres Git-Repositorys. Dieses Feld ist grau, da Sie die Adresse des Git-Repositorys nicht ändern können. Um die URL des Git-Repositorys zu ändern, müssen Sie [die Git-Verknüpfung Ihres Verzeichnisses entfernen](#deleteGitAssociation) und anschließend [das Verzeichnis erneut mit Git verknüpfen](#associateGitRepo).
 >> - Zweig: Name des GitHub-Repository-Zweigs. Sie können dieses Feld ggf. ändern.
 >> - Webhook-URL: Falls Sie Ihre Deployments auf Git optimieren möchten, [konfigurieren Sie den Webhook auf GitHub](#configureWebhook).
@@ -452,7 +452,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 >>
->> Die Nachricht informiert Sie, dass die Löschung auf alle Domains angewendet wird, die an Ihre Website angehängt sind. Aktivieren Sie die Option `Möchten Sie den Inhalt des Verzeichnisses <your_directory> leeren?`{.action}, wenn Sie auch den Inhalt (Ordner und Dateien) des Verzeichnisses löschen möchten.
+>> Die Meldung informiert Sie darüber, dass die Löschung auf alle Domains angewendet wird, die an Ihre Website angehängt sind. Aktivieren Sie die Option `Möchten Sie den Inhalt des Verzeichnisses <your_directory> leeren?`{.action}, wenn Sie auch den Inhalt (Ordner und Dateien) des Verzeichnisses löschen möchten.
 >> 
 >> 1\.	Wenn Sie das Feld aktivieren, wird das folgende Fenster angezeigt:
 >> 
@@ -472,7 +472,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
 > [!primary]
 >
-> Wenn Sie sich bereits im Git-Zuordnungsformular befinden, kopieren Sie die Webhook-URL und fahren Sie mit „[Webhook konfigurieren](#configureWebhook)“ fort.
+> Wenn Sie sich bereits im Git-Zuordnungsformular befinden, kopieren Sie die Webhook-URL und fahren Sie mit "[Webhook konfigurieren](#configureWebhook)" fort.
 
 Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
@@ -503,11 +503,11 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >> 
 > **Schritt 5**
 >> 
->> Am unteren Rand des angezeigten Formulars kopieren Sie die Adresse, die sich im Feld `Webhook-URL`{.action} befindet. Sie müssen diese URL jetzt registrieren und den Webhook auf Ihrem GitHub-Konto konfigurieren.
+>> Am unteren Rand des angezeigten Formulars kopieren Sie die Adresse, die sich im Feld `Webhook-URL`{.action} befindet. Sie müssen diese URL registrieren und den Webhook auf Ihrem GitHub-Account konfigurieren.
 
 #### Webhook konfigurieren <a name="configureWebhook"></a>
 
-Melden Sie sich bei Ihrem GitHub-Konto an und greifen Sie auf das Repository zu, in dem Sie den Webhook konfigurieren möchten. Gehen Sie auf den Tab `Settings`{.action} und klicken Sie dann im Seitenmenü der Einstellungen auf `Webhooks`{.action}. Klicken Sie auf `Add webhook`{.action}, um auf das Formular zuzugreifen:
+Melden Sie sich bei Ihrem GitHub-Account an und greifen Sie auf das Repository zu, in dem Sie den Webhook konfigurieren möchten. Gehen Sie auf den Tab `Settings`{.action} und klicken Sie dann im Seitenmenü der Einstellungen auf `Webhooks`{.action}. Klicken Sie auf `Add webhook`{.action}, um auf das Formular zuzugreifen:
 
 - **Payload URL**: Geben Sie die im Git-Zuordnungsformular angegebene URL ein (`Webhook-URL`{.action}).
 - **Content type**: Wählen Sie `application/json`{.action} als Content-Typ für die gesendeten Daten.
@@ -532,7 +532,7 @@ Sobald Ihr Webhook eingerichtet ist, wird der Code Ihrer Website bei jeder Ände
 
 ### Fazit
 
-Sie haben soeben den Code Ihrer Website über Ihr GitHub-Repository mit Git verbunden. Sie können nun die am GitHub-Repository vorgenommenen Änderungen auf Ihrem Webhosting deployen oder sie mithilfe des Webhooks automatisiert deployen, die Logs Ihrer Deployments einsehen und zahlreiche Aktionen durchführen. All dies erfolgt mit nur wenigen Klicks über Ihr Kundencenter.
+Sie haben den Code Ihrer Website über Ihr GitHub-Repository mit Git verbunden. Sie können nun die am GitHub-Repository vorgenommenen Änderungen auf Ihrem Webhosting deployen oder sie mithilfe des Webhooks automatisiert deployen, die Logs Ihrer Deployments einsehen und zahlreiche Aktionen durchführen. All dies erfolgt mit nur wenigen Klicks über Ihr Kundencenter.
 
 ## Weiterführende Informationen
 
