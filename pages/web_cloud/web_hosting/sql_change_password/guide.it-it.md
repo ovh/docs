@@ -1,7 +1,7 @@
 ---
 title: Modificare la password del database di un hosting Web
 excerpt: Scopri come modificare la password di un database creata nell'ambito di un piano di hosting Web
-updated: 2025-10-08
+updated: 2025-11-27
 ---
 
 ## Obiettivo
@@ -34,7 +34,6 @@ Per modificare la password del database del tuo sito sono necessarie quattro azi
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
 > Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
->
 
 ## Prerequisiti
 
@@ -45,17 +44,42 @@ Per modificare la password del database del tuo sito sono necessarie quattro azi
 
 ## Procedura
 
-> [!warning]
->
-> Questa guida sarà aggiornata prossimamente. In caso di difficoltà, consultare la versione inglese o francese della guida, cliccando sulla bandiera corrispondente nella parte superiore di questa pagina.
-
 ### 1: Identifica il file di configurazione del tuo sito <a name="step1"></a>
 
-Nello [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action} e su `Hosting`{.action} e infine sull'hosting interessato. Clicca sulla scheda `Multisito`{.action}. Identifica il nome della `Cartella di root` del tuo sito (la directory in cui si trovano file e cartelle).
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-A questo punto è sufficiente accedere allo spazio contenente i file e le cartelle del sito (*spazio FTP*) consultando questa [guida](/pages/web_cloud/web_hosting/ftp_connection).
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio o sottodomini associati.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Individua il nome della `Cartella di root` del tuo sito web. Si tratta della directory in cui si trovano i file e le sottodirectory.
+>>
+>> ![Cartelle radice](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> Procedi quindi all'accesso allo spazio di archiviazione FTP che contiene i file e le directory del tuo sito consultando [questa guida](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
@@ -185,7 +209,6 @@ Salva questa modifica.
 > [!primary]
 >
 > Questa operazione richiederà alcuni minuti prima di diventare effettiva. Una volta avviata la procedura, controlla lo stato nella scheda `Operazioni in corso`{.action}.
->
 
 Di nuovo, sono possibili due casi: 
 
@@ -234,7 +257,7 @@ Accedi alla sezione `Database`{.action} del tuo Spazio Cliente e clicca sulla sc
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-Per modificare la password del tuo database sul server, clicca sui tre puntini in corrispondenza del `Nome utente`{.action} identificato allo [2](#step2) e seleziona `Modifica la password`{.action}.
+Per modificare la password del tuo database sul server, sul pulsante `...`{.action} a destra del `Nome utente`{.action} identificato allo [2](#step2) e seleziona `Modifica la password`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
