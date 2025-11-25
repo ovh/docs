@@ -34,7 +34,7 @@ Um den Domainnamen für den Zugang zu Ihrer Website zu ändern, müssen mehrere 
 
 ### Schritt 1: Die neue Domain auf Ihrem Webhosting <a name="step1"></a> deklarieren
 
-Erklären Sie Ihren neuen Domainnamen gemäß unserem Guide "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Website ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
+ERegistrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Website ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
 
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
@@ -111,7 +111,7 @@ Wenn Sie einen Dienstleister für die Erstellung Ihrer Website beauftragt haben,
 
 ### Schritt 3: Den alten Domainnamen entfernen <a name="step3"></a>
 
-Um „Duplicate-content“ zu vermeiden und sobald Ihr neuer Domainname vollständig mit Ihrer Website funktioniert, müssen Sie die Erklärung Ihres alten Domainnamens auf Ihrer Website mithilfe des Guides "[Wie kann ich einen Domainnamen von einer bestehenden Website trennen?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)" entfernen.
+Um „Duplicated Content“ zu vermeiden und sobald Ihr neuer Domainname vollständig mit Ihrer Website funktioniert, müssen Sie die Angabe Ihres alten Domainnamens auf Ihrer Website mithilfe der Anleitung "[Wie kann ich einen Domainnamen von einer bestehenden Website trennen?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)" entfernen.
 
 > [!warning]
 >
