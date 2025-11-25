@@ -12,8 +12,8 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 >
 > In dieser Anleitung erfahren Sie, wie Sie einen Domainnamen oder Subdomain ändern, die bereits auf einem OVHcloud Webhosting registriert ist. 
 >
-> - Um einen neuen Domainnamen oder eine Unterdomäne mit Ihrer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie bitte unser Handbuch „[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)“.
-> - Um eine neue Website auf Ihrem Webhosting hinzuzufügen, konsultieren Sie bitte unser Handbuch „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+> - Um einen neuen Domainnamen oder eine Subdomain mit Ihrer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie bitte unsere Anleitung "[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Um eine neue Website auf Ihrem Webhosting hinzuzufügen, konsultieren Sie bitte unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 **Diese Anleitung erklärt, wie Sie die Zuordnungseinstellungen für Domainnamen oder Subdomain ändern, die bereits auf Ihrem Webhosting registriert ist.**
 
@@ -22,7 +22,7 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verwalten einen oder mehrere [Domainnamen](/links/web/domains).
-- Sie verfügen über die erforderlichen Berechtigungen für alle betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung „[Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts)“.
+- Sie verfügen über die erforderlichen Berechtigungen für alle betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung "[Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts)".
 
 ## In der praktischen Anwendung
 
@@ -30,7 +30,7 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 >
 > Die Änderung der Zuordnungseinstellungen einer Domain oder Subdomain kann zu einer Unterbrechung des Zugangs zu Ihren Diensten (Ihrer Website) führen. Wenn Sie sich nicht sicher sind, welche Änderungen notwendig sind, wenden Sie sich an einen spezialisierten Dienstleister.
 
-Um die Zuordnungsparameter einer bereits deklarierten Domain oder Unterdomäne auf Ihrem Webhosting zu ändern, klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
+Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf Ihrem Webhosting zu ändern, klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -67,13 +67,13 @@ Um die Zuordnungsparameter einer bereits deklarierten Domain oder Unterdomäne a
 >>
 >> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
->> In der Fortsetzung dieses Handbuchs finden Sie eine Beschreibung aller verfügbaren Parameter im obenstehenden Fenster. Nachdem Sie die verschiedenen Beschreibungen in der Abschnitt „[Beschreibung der änderbaren Parameter](#step1)“ gelesen haben und Ihre Änderungen vorgenommen wurden, klicken Sie auf den Button `Suivant`{.action} unten rechts im Fenster, und wechseln Sie zur [Teil 2](#step2).
+>> Im weiteren Verlauf dieser Anleitung finden Sie eine Beschreibung aller verfügbaren Parameter im obenstehenden Fenster. Nachdem Sie die verschiedenen Beschreibungen in der Abschnitt "[Beschreibung der änderbaren Parameter](#step1)" gelesen haben und Ihre Änderungen vorgenommen wurden, klicken Sie auf den Button `Weiter`{.action} unten rechts im Fenster, und wechseln Sie zur [Teil 2](#step2).
 
 ### Schritt 1 - Beschreibung der bearbeitbaren Parameter <a name="step1"></a>
 
 > [!primary]
 >
-> Das Formular `Domainname`{.action} kann nicht bearbeitet werden, da es sich um eine Änderung der Einstellungen des dem Webhosting zugeordneten Domainnamens handelt. Wenn die gewünschte Aktion darin besteht, Ihrem Webhosting eine neue Domain/Subdomain zuzuordnen, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+> Das Formular `Domainname`{.action} kann nicht bearbeitet werden, da es sich um eine Änderung der Einstellungen des dem Webhosting zugeordneten Domainnamens handelt. Wenn die gewünschte Aktion darin besteht, Ihrem Webhosting eine neue Domain/Subdomain zuzuordnen, lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 >
 
 #### Wurzelverzeichnis bearbeiten
@@ -82,12 +82,12 @@ Um die Zuordnungsparameter einer bereits deklarierten Domain oder Unterdomäne a
 >
 > Die Felder `Domainname`{.action} und `Wurzelverzeichnis`{.action} sind nicht änderbar, da es sich hierbei um Parameter handelt, die für die Website auf Ihrem Webhosting relevant sind.
 >
-> - Um eine neue Domain oder Unterdomäne mit einer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie bitte unser Handbuch „[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)“.
-> - Um den Stammordner Ihrer Website zu ändern, müssen Sie Ihre Domain von der bestehenden Website trennen, indem Sie im Register `Meine Seiten`{.action} vorgehen. Dazu:
->      - Klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugeordneten Domains und Unterdomänen anzuzeigen.
->      - Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem Namen der Domain oder Unterdomäne und dann auf `Domain abtrennen`{.action}.
+> - Um eine neue Domain oder Subdomains mit einer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie unsere Anleitung "[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Um den Stammordner Ihrer Website zu ändern, müssen Sie Ihre Domain von der bestehenden Website im Tab `Meine Seiten`{.action} trennen.
+>      - Klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugeordneten Domains und Subdomain anzuzeigen.
+>      - Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem Namen der Domain oder Subdomains und dann auf `Domain abtrennen`{.action}.
 >
-> Anschließend können Sie eine neue Website mit Ihrer Domain hinzufügen, indem Sie unser Handbuch „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ konsultieren. Falls Ihre Website eine Konfiguration mit Git besitzt, konsultieren Sie vorher unser Handbuch „[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)“, **vor** Sie `Domain abtrennen`{.action} auswählen.
+> Anschließend können Sie eine neue Website mit Ihrer Domain hinzufügen, indem Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)" konsultieren. Falls Ihre Website eine Konfiguration mit Git besitzt, konsultieren Sie vorher unsere Anleitung "[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)", **bevor** Sie `Domain abtrennen`{.action} auswählen.
 
 ##### Die Option "CDN aktivieren"
 
@@ -95,19 +95,19 @@ Um diese Option nutzen zu können, müssen Sie zuerst ein CDN von OVHcloud abonn
 
 Aktivieren/deaktivieren Sie diese Option, um die CDN-Option für Ihren Domainnamen oder Ihre Subdomain zu aktivieren/deaktivieren.
 
-Weitere Informationen zu den verfügbaren CDN-Optionen/-Angeboten finden Sie in unserer Dokumentation „[Ihre Webseiten mit CDN beschleunigen](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)“.
+Weitere Informationen zu den verfügbaren CDN-Optionen/-Angeboten finden Sie in unserer Dokumentation "[Ihre Webseiten mit CDN beschleunigen](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
 
 ##### Die Option "IP des Landes"
 
 Diese Option wird hauptsächlich für Websites verwendet, deren Nutzer sich in einem anderen Land als das Hosting befinden. Es verbessert die SEO-Bewertung der Website im gewählten Land.
 
-Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation „[Geolokalisierung Ihrer Website in einem bestimmten Land](/pages/web_cloud/web_hosting/multisites_geolocation)“.
+Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation "[Geolokalisierung Ihrer Website in einem bestimmten Land](/pages/web_cloud/web_hosting/multisites_geolocation)".
 
 ##### Die Option "Firewall aktivieren"
 
 Mit dieser Option können Sie eingehende Anfragen filtern, um Ihr Webhosting vor den häufigsten Angriffen zu schützen.
 
-Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation „[Aktivieren der Web Application Firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)“.
+Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation "[Aktivieren der Web Application Firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
 ##### Die Option "Getrennte Logs"
 
