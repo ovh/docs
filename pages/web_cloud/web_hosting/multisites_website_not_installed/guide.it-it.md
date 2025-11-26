@@ -33,12 +33,12 @@ La pagina di errore "**Sito non installato**" può essere visualizzata sul brows
 
 La pagina "**Sito non installato**" viene visualizzata per due motivi:
 
-- 1: [Il tuo dominio o sottodominio non è dichiarato correttamente su uno dei siti web presenti sul tuo spazio web](#check-my-websites).
+- 1: [Il tuo dominio o sottodominio non è dichiarato correttamente su uno dei siti web presenti sul tuo hosting web](#check-my-websites).
 - 2: [Il dominio non punta all'indirizzo IP della tua soluzione di hosting Web](#check-dns-domain)
 
 Gli step successivi ti permetteranno di correggere l’errore `Sito non installato` in entrambi i casi.
 
-### 1 - Verifica la dichiarazione del tuo dominio o sottodominio sul tuo sito web presente sul tuo spazio web <a name="check-my-websites"></a>
+### 1 - Verifica la dichiarazione del tuo dominio o sottodominio sul tuo sito web presente sul tuo hosting web <a name="check-my-websites"></a>
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
@@ -69,9 +69,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> |Scenari|Azioni da intraprendere|
 >> |---|---|
->> |Il dominio o sottodominio associato al tuo sito web **è presente** nel tavolo.|Se hai appena aggiunto il tuo dominio o sottodominio sul tuo sito web presente sul tuo spazio web, attendi circa **venti minuti** e poi aggiorna la cache del tuo browser. Se appare comunque il messaggio "Sito non installato", passa alla [parte 2](#check-dns-domain).|
->> |Il dominio o sottodominio associato al tuo sito web **non è presente** nel tavolo.|Aggiungi il tuo dominio o sottodominio seguendo la guida « [Come associare un dominio a un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».|
->> |Il dominio o sottodominio **è stato rimosso** dal tavolo senza azione da parte tua.|Il tuo dominio o la sua zona DNS potrebbe essere gestita da un altro account. Aggiungi il tuo dominio o sottodominio seguendo la guida « [Come associare un dominio a un sito web esistente ? - Aggiungere un dominio esterno](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».|
+>> |Il dominio o sottodominio associato al tuo sito web **è presente** nel tavolo.|Se hai appena aggiunto il tuo dominio o sottodominio sul tuo sito web presente sul tuo hosting web, attendi circa **venti minuti** e poi aggiorna la cache del tuo browser. Se appare comunque il messaggio "Sito non installato", passa alla [parte 2](#check-dns-domain).|
+>> |Il dominio o sottodominio associato al tuo sito web **non è presente** nel tavolo.|Aggiungi il tuo dominio o sottodominio seguendo la guida "[Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
+>> |Il dominio o sottodominio **è stato rimosso** dal tavolo senza azione da parte tua.|Il tuo dominio o la sua zona DNS potrebbe essere gestita da un altro account. Aggiungi il tuo dominio o sottodominio seguendo la guida "[Come associare un dominio a un sito web esistente? - Aggiungere un dominio esterno](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 
 #### 2 - Verifica il puntamento IP nella zona DNS attiva del tuo dominio <a name="check-dns-domain"></a>
 
@@ -141,7 +141,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** step successiv
 >> >
 >> > Se il dominio non compare nella lista, significa che la zona DNS non è gestita dallo Spazio Cliente OVHcloud.<br>
 >> > Determina il suo "Registrar" e i server DNS ai quali è associato tramite il nostro tool [WHOIS](/links/web/domains-whois).<br>
->> > Trova e modifica la zona DNS corrispondente seguendo la sezione dedicata della guida « [Come associare un dominio a un sito web esistente ? - Aggiungere un dominio esterno](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+>> > Trova e modifica la zona DNS corrispondente seguendo la sezione dedicata della guida "[Come associare un dominio a un sito web esistente? - Aggiungere un dominio esterno](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 > **Passaggio 3**
 >>
@@ -153,7 +153,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** step successiv
 >> >
 >> > Se la scheda `Zona DNS`{.action} del dominio viene visualizzata nel modo seguente:<br><br> ![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
 >> >
->> > Questo significa che il tuo dominio non è gestito dal tuo Spazio Cliente OVHcloud.<br> Determina il suo "ufficio di registrazione" e i server DNS a cui è associato tramite il nostro strumento [WHOIS](/links/web/domains-whois).<br> Trova e modifica la zona DNS corrispondente seguendo la sezione dedicata della guida « [Come associare un dominio a un sito web esistente ? - Aggiungere un dominio esterno](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+>> > Questo significa che il tuo dominio non è gestito dal tuo Spazio Cliente OVHcloud.<br> Determina il suo "ufficio di registrazione" e i server DNS a cui è associato tramite il nostro strumento [WHOIS](/links/web/domains-whois).<br> Trova e modifica la zona DNS corrispondente seguendo la sezione dedicata della guida "[Come associare un dominio a un sito web esistente? - Aggiungere un dominio esterno](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 >> Passare al passaggio 4 per visualizzare i diversi scenari possibili e le azioni da intraprendere.
 >>
@@ -170,7 +170,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** step successiv
 
 [Elenco degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-[Come associare un dominio a un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
+[Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 
 [Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 

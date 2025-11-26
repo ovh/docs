@@ -69,9 +69,9 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> |Escenarios|Acciones a realizar|
 >> |---|---|
->> |El dominio o subdominio asociado a su sitio web **aparece** en la tabla.|Si acaba de añadir su dominio o subdominio a su sitio web en su alojamiento web, espere aproximadamente **veinte minutos** y luego actualice la caché de su navegador. Si sigue apareciendo el mensaje «Sitio no instalado», pase a la [parte 2](#check-dns-domain).|
->> |El dominio o subdominio asociado a su sitio web **no aparece** en la tabla.|Añada su dominio o subdominio siguiendo nuestro guía «[¿Cómo asociar un dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)».|
->> |El dominio o subdominio **ha sido eliminado** de la tabla sin que usted haya realizado ninguna acción.|Es posible que su dominio o su zona DNS esté gestionada desde otra cuenta. Añada su dominio o subdominio siguiendo nuestro guía «[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)».|
+>> |El dominio o subdominio asociado a su sitio web **aparece** en la tabla.|Si acaba de añadir su dominio o subdominio a su sitio web presente en su alojamiento web, espere aproximadamente **veinte minutos** y luego actualice la caché de su navegador. Si sigue apareciendo el mensaje "Sitio no instalado", pase a la [parte 2](#check-dns-domain).|
+>> |El dominio o subdominio asociado a su sitio web **no aparece** en la tabla.|Añada su dominio o subdominio siguiendo nuestra guía "[¿Cómo asociar un dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
+>> |El dominio o subdominio **ha sido eliminado** de la tabla sin que usted haya realizado ninguna acción.|Es posible que su dominio o su zona DNS se gestionen desde otra cuenta. Añada su dominio o subdominio siguiendo nuestra guía "[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 
 ### 2 - Comprobar el direccionamiento IP en la zona DNS activa de su dominio <a name="check-dns-domain"></a>
 
@@ -110,7 +110,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> Copie la dirección IPv4 y siga leyendo esta guía.
 
-Para más información, consulte la dirección IP asociada a su alojamiento web en nuestra guía «[Web hosting - Lista de direcciones IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)».
+Para más información, consulte la dirección IP asociada a su alojamiento web en nuestra guía "[Web hosting - Lista de direcciones IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
 #### 2\.2 Comprobar la dirección IP registrada en la zona DNS activa del dominio
 
@@ -140,8 +140,8 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **4** eta
 >> > [!primary]
 >> >
 >> > Si el dominio no aparece en la lista, la zona DNS no está gestionada desde el área de cliente de OVHcloud.<br>
->> > Determine su «agente registrador» y los servidores DNS a los que está asociado a través de nuestra herramienta [WHOIS](/links/web/domains-whois).<br>
->> > Encuentre y modifique la zona DNS correspondiente siguiendo la sección dedicada del guía «[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)».
+>> > Determine su "agente registrador" y los servidores DNS a los que está asociado a través de nuestra herramienta [WHOIS](/links/web/domains-whois).<br>
+>> > Encuentre y modifique la zona DNS correspondiente siguiendo las instrucciones de la sección dedicada de la guía "[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 > **Etapa 3**
 >>
@@ -153,7 +153,7 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **4** eta
 >>
 >> > Si la pestaña `Zona DNS`{.action} del dominio aparece como sigue:<br><br> ![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
 >>
->> > Esto significa que su dominio no está gestionado desde su área de cliente de OVHcloud.<br> Determine su «registro de dominio» así como los servidores DNS a los que está asociado mediante nuestra herramienta [WHOIS](/links/web/domains-whois).<br> Encuentre y modifique la zona DNS correspondiente siguiendo la sección dedicada del guía «[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)».
+>> > Esto significa que su dominio no está gestionado desde su área de cliente de OVHcloud.<br> Determine su "registro de dominio" así como los servidores DNS a los que está asociado mediante nuestra herramienta [WHOIS](/links/web/domains-whois).<br> Encuentre y modifique la zona DNS correspondiente siguiendo las instrucciones de la sección dedicada de la guía "[¿Cómo asociar un dominio a un sitio web existente? - Añadir un dominio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 >> Vaya al etapa 4 para ver los posibles escenarios y las acciones que se deben realizar.
 >>
@@ -164,7 +164,7 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **4** eta
 >> |En la zona DNS activa, su dominio o subdominio apuntan a la dirección IP de su alojamiento web con un registro de tipo A (para una dirección IPv4) o AAAA (para una dirección IPv6).<br><br>![zoneDNS_IP2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}|Esto indica que la configuración de su dominio es correcta.<br>Espere a la propagación DNS si el cambio es reciente.<br><br> r>Reinicia tus dispositivos (PC, smartphone, box, etc.) y vacía la caché de tu navegador de Internet. Es posible que la antigua configuración del dominio se conserve en caché, lo que podría retrasar la aparición de la actualización.|
 >> |La zona DNS activa no tiene registros de tipo A o AAAA que vinculen el dominio o subdominio a la dirección IP de su alojamiento web.|Agregue el nuevo registro de tipo A o AAAA o corrija el registro existente siguiendo [esta guía](/pages/web_cloud/domains/dns_zone_edit).|
 >> |El registro DNS de tipo A o AAAA existente en la zona DNS para su dominio o subdominio apunta a una dirección IP diferente de la de su alojamiento web.|Agregue el nuevo registro DNS de tipo A o AAAA o corrija el registro existente siguiendo [esta guía](/pages/web_cloud/domains/dns_zone_edit).|
->> |Esta advertencia aparece en la pestaña `Zona DNS`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail|Modifique los servidores DNS de su dominio en consecuencia siguiendo nuestra guía «[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)».|
+>> |Esta advertencia aparece en la pestaña `Zona DNS`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifique los servidores DNS de su dominio en consecuencia siguiendo nuestra guía "[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)".|
 
 ## Más información <a name="go-further"></a>
 

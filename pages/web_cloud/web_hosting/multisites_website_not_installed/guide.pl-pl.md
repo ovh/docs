@@ -27,18 +27,18 @@ W przeglądarce internetowej może pojawić się komunikat o błędzie "**Niezai
 
 - Posiadanie [hostingu](/links/web/hosting)
 - Zarządzanie [strefą DNS](/pages/web_cloud/domains/dns_zone_edit), do której przypisana jest Twoja domena.
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
 Strona "**Strona nie została zainstalowana**" wyświetla się z dwóch powodów:
 
-- 1: [Twój domena lub poddomena nie jest poprawnie zadeklarowana na jednej z witryn internetowych znajdujących się na Twoim hostingu](#check-my-websites).
+- 1: [Twoja nazwa domeny lub subdomeny nie jest poprawnie zadeklarowana na żadnej ze stronie internetowej znajdujących się na Twoim hostingu](#check-my-websites).
 - 2: [Twoja domena nie wskazuje na adres IP Twojego hostingu.](#check-dns-domain)
 
 Poniższe kroki pozwolą Ci naprawić błąd `Strona nie została zainstalowana` w obu przypadkach.
 
-### 1 - Sprawdź deklarację swojej domeny lub poddomeny na swojej stronie internetowej znajdującej się na Twoim hostingu <a name="check-my-websites"></a>
+### 1 - Sprawdź deklarację swojej domeny lub subdomeny na swojej stronie internetowej znajdującej się na Twoim hostingu <a name="check-my-websites"></a>
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
@@ -63,15 +63,15 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 >>
 > **Etap 4**
 >>
->> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić domeny i poddomeny przypisane do niej.
+>> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić powiązane nazwy domen i subdomen.
 >>
 >> ![Strona internetowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
 >> |Scenariusze|Działania do wykonania|
 >> |---|---|
->> |Domena lub poddomena przypisana do Twojej strony internetowej **występuje** w tabeli.|Jeśli właśnie dodałeś swoją domenę lub poddomenę do strony internetowej znajdującej się na Twoim hostingu, poczekaj około **dwadzieścia minut**, a następnie odśwież pamięć podręczną przeglądarki internetowej. Jeśli nadal pojawia się komunikat „Strona nie jest zainstalowana”, przejdź do [części 2](#check-dns-domain).|
->> |Domena lub poddomena przypisana do Twojej strony internetowej **nie występuje** w tabeli.|Dodaj swoją domenę lub poddomenę, korzystając z naszego poradnika „[Jak przypisać domenę do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.|
->> |Domena lub poddomena **została usunięta** z tabeli bez Twojej interwencji.|Twoja domena lub strefa DNS może być zarządzana z innego konta. Dodaj swoją domenę lub poddomenę, korzystając z naszego poradnika „[Jak przypisać domenę do istniejącej strony internetowej ? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.|
+>> |Nazwa domeny lub subdomeny powiązanej z Twoją stroną internetową **pojawi się** w tabeli.|Jeśli właśnie dodałeś swoją domenę lub subdomenę do strony internetowej znajdującej się na Twoim hostingu, poczekaj około **dwadzieścia minut**, a następnie odśwież pamięć podręczną przeglądarki internetowej. Jeśli nadal pojawia się komunikat "Strona nie jest zainstalowana", przejdź do [części 2](#check-dns-domain).|
+>> |Nazwa domeny lub subdomeny powiązanej z Twoją strony internetowej **nie występuje** w tabeli.|Dodaj swoją domenę lub subdomenę, korzystając z naszego poradnika "[Jak przypisać domenę do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
+>> |Nazwa domeny lub subdomeny **została usunięta** z tabeli bez Twojej interwencji.|Twoja domena lub strefa DNS może być zarządzana z innego konta. Dodaj swoją domenę lub subdomenę, korzystając z naszego poradnika "[Jak przypisać domenę do istniejącej strony internetowej? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 
 ### 2 - Sprawdź wskazanie adresu IP w aktywnej strefie DNS Twojej domeny <a name="check-dns-domain"></a>
 
@@ -141,7 +141,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> >
 >> > Jeśli Twoja nazwa domeny nie wyświetla się na liście, oznacza to, że Twoja strefa DNS nie jest zarządzana z poziomu Panelu klienta OVHcloud.<br>
 >> > Sprawdź "operatora" oraz serwery DNS, z którymi jest on powiązany, przy użyciu narzędzia [WHOIS](/links/web/domains-whois).<br>
->> > Znajdź i zmień odpowiednią strefę DNS, korzystając z odpowiedniej sekcji poradnika „[Jak przypisać domenę do istniejącej strony internetowej ? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.
+>> > Znajdź i zmień odpowiednią strefę DNS, korzystając z odpowiedniej sekcji poradnika "[Jak przypisać domenę do istniejącej strony internetowej? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 > **Etap 3**
 >>
@@ -153,7 +153,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >> >
 >> > Jeśli zakładka `Strefa DNS`{.action} Twojej domeny wyświetla się w następujący sposób:<br><br>![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail<br>
 >> >
->> > Oznacza to, że Twoja domena nie jest zarządzana z Twojego panelu klienta OVHcloud.<br> Określ jej „biuro rejestracji” oraz serwery DNS, do których jest przypisana, korzystając z naszego narzędzia [WHOIS](/links/web/domains-whois).<br> Znajdź i zmień odpowiednią strefę DNS, korzystając z odpowiedniej sekcji poradnika „[Jak przypisać domenę do istniejącej strony internetowej ? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)”.
+>> > Oznacza to, że Twoja domena nie jest zarządzana z Twojego Panelu klienta OVHcloud.<br> Określ jej "biuro rejestracji" oraz serwery DNS, do których jest przypisana, korzystając z naszego narzędzia [WHOIS](/links/web/domains-whois).<br> Znajdź i zmień odpowiednią strefę DNS, korzystając z odpowiedniej sekcji poradnika "[Jak przypisać domenę do istniejącej strony internetowej? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 >> Przejdź do etapu 4, aby wyświetlić różne możliwe scenariusze i działania, które należy podjąć.
 >>
@@ -170,7 +170,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 [Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-[Jak przypisać domenę do istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
+[Jak przypisać domenę do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 
 [Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
