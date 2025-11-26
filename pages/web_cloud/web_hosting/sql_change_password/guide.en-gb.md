@@ -75,7 +75,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 > **Step 5**
 >>
->> Identify the name of the `Root folder` of your website. This is the directory where its files and folders are located.
+>> Identify the name of the `root folder` of your website. This is the directory where its files and folders are located.
 >>
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
@@ -86,7 +86,7 @@ Click on the tabs below to view each of the **5** steps.
 > If you would like to change the password on your FTP space, please refer to this [guide](/pages/web_cloud/web_hosting/ftp_change_password).
 >
 
-Open the `Root folder` identified previously.
+Open the `root folder` identified previously.
 
 Locate and open your site's configuration file:
 
