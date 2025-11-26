@@ -1,7 +1,7 @@
 ---
 title: "Comment associer un nom de domaine à un site web existant ?"
 excerpt: "Découvrez comment associer un nom de domaine ou un sous-domaine à un site web déjà existant sur votre hébergement web"
-updated: 2025-10-30
+updated: 2025-11-27
 ---
 
 <style>
@@ -40,6 +40,8 @@ Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web
 
 **Cliquez sur l'un des titres ci-dessous pour afficher les explications.**
 
+<a name="add-domain-ovhcloud"></a>
+
 /// details | Ajouter un nom de domaine géré depuis votre espace client OVHcloud
 
 Cette partie s'applique uniquement si votre nom de domaine et/ou sa zone DNS active se trouvent **dans votre espace client OVHcloud**.
@@ -67,48 +69,66 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Ajouter un domaine ou sous-domaine`{.action}.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Ajouter un domaine`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
 > **Étape 5**
 >>
->> Cochez l'option `Ajouter un domaine enregistré chez OVHcloud`{.action}, puis sélectionnez le nom de domaine concerné dans la liste en dessous.
+>> Cochez l'option `Associer un domaine OVHcloud existant`{.action}, puis cliquez sur `Continuer`{.action}.
+>>
+>> Sélectionnez ensuite le nom de domaine à associer dans le menu déroulant **Nom de domaine - obligatoire** qui apparaît en dessous.
 >>
 >> > [!primary]
->> > Pour ajouter un sous-domaine, vous devez d’abord sélectionner le nom de domaine dans la liste (par exemple : domain.tld). L’étape suivante vous permettra d’indiquer le sous-domaine (par exemple : **sub**.domain.tld).
+>> > Pour ajouter un sous-domaine, sélectionnez d'abord le nom de domaine dans la liste (par exemple : domain.tld). Cochez ensuite la case intitulée `Créer un sous-domaine`{.action}. Un champ de saisie apparaît pour vous permettre de renseigner le sous-domaine (par exemple : **sub**.domain.tld).
+>> >
+>> > **Cas particulier** : Les sous-domaines en `www` (par exemple : **www**.domain.tld) sont automatiquement ajoutés en complément du nom de domaine. Par conséquent, il est inutile de préciser ce sous-domaine spécifique dans le champ de saisie.
 >>
 >> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 >>
->> Cliquez ensuite sur `Suivant`{.action}.
+>> Si vous souhaitez utiliser l'une des **Options avancées** disponibles, activez le bouton `Options avancées`{.action}, puis passez directement à **l'étape 7**. Si non, poursuivez à **l'étape 6**.
 >>
 > **Étape 6**
 >>
->> Vous devez à présent personnaliser l’ajout du nom de domaine ou du sous-domaine. Selon votre offre d'[hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
+>> Vérifiez que l'ensemble des informations saisies précédemment sont correctes, puis cliquez sur `Continuer`{.action} pour finaliser l'ajout de votre nom de domaine ou de votre sous-domaine à votre site web. 
 >>
->> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
+>> Cela peut prendre jusqu'à une heure.
 >>
->> |Information|Description|
->> |---|---|
->> |Domaine|Par défaut, le nom de domaine que vous avez sélectionné est renseigné automatiquement. Vous pouvez y ajouter un sous-domaine (par exemple : **sub**.domain.tld) et créer simultanément le sous-domaine « www » correspondant (par exemple : **www.sub**.domain.tld). En définitive, ce nom de domaine sera l'adresse Internet du site web que vous souhaitez afficher.|
->> |Activer le CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site web, comme les images) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page CDN](/links/web/hosting-options-cdn). En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacentre de Gravelines).|
->> |IP du pays|Permet de bénéficier d'une adresse IP géolocalisée (parmi une liste de pays) pour le nom de domaine sélectionné. Apprenez-en plus grâce à [cette page](/links/web/hosting-options).|
->> |Activer le firewall|Permet d'activer un pare-feu (filtrage et analyse des requêtes) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [cette page](/links/web/hosting-options).|
->> |Logs séparés|Permet d'activer un nouvel espace de logs sur le domaine sélectionné. Vous devrez choisir un nom de domaine dans une liste qui déterminera le nom d'accès à ce nouvel espace. Apprenez-en plus grâce à [cette page](/links/web/hosting-traffic-analysis).|
+>> La configuration DNS se fera automatiquement si la zone DNS active de votre nom de domaine est gérée dans votre espace client OVHcloud. 
 >>
->> Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
+>> Cependant, la modification de la configuration DNS de votre nom de domaine nécessite un temps de propagation pouvant prendre jusqu'à 24 heures pour être pleinement effective.
+>>
+>> Dans le cas contraire, consultez les guides suivants pour configurer manuellement votre zone DNS :
+>> - [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+>> - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >>
 > **Étape 7**
 >>
->> Vérifiez ensuite le récapitulatif qui s'affiche.
+>> > [!primary]
+>> >
+>> > Cette étape est **facultative**. Elle concerne uniquement les clients qui souhaitent activer certaines fonctionnalités disponibles derrière le bouton `Options avancées`{.action}.
+>> >
+>> > **Toutes ces fonctionnalités peuvent être activées ultérieurement une fois le nom de domaine ajouté à votre site web.** Dans ce cas précis, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> >
+>> > Retrouvez ci-après un descriptif de ces options.
+>> >
+>> > Selon votre offre d'[hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 >>
->> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-advanced-options.png){.thumbnail}
 >>
->> En ayant sélectionné un nom de domaine enregistré chez OVHcloud, vous avez la possibilité de modifier automatiquement ou manuellement sa configuration DNS :
->> - **Pour une configuration DNS automatique**, cochez la case `Configuration automatique (recommandée)`{.action} ;
->> - **Pour une configuration DNS manuelle**, décochez la case `Configuration automatique (recommandée)`{.action} puis notez les informations qui s'affichent. Pour réaliser ce paramétrage, aidez-vous de notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+>> |Option|Description|
+>> |---|---|
+>> |IP du pays|Permet de bénéficier d'une adresse IP géolocalisée (parmi une liste de pays) pour le nom de domaine sélectionné. Apprenez-en plus grâce à [cette page](/links/web/hosting-options).|
+>> |Firewall|Permet d'activer un pare-feu (filtrage et analyse des requêtes) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [cette page](/links/web/hosting-options).|
+>> |CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site web, comme les images) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page CDN](/links/web/hosting-options-cdn). En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacentre de Gravelines).|
 >>
->> Pour terminer, cliquez sur `Valider`{.action} pour initier l’ajout du nom de domaine. Cela peut prendre jusqu'à une heure. Cependant, la modification de la configuration DNS de votre nom de domaine nécessite un temps de propagation pouvant prendre jusqu'à 24 heures pour être pleinement effective.
+>> En ayant activé les **Options avancées**, vous avez également la possibilité de modifier automatiquement ou manuellement la configuration DNS de votre nom de domaine :
+>> - **Pour une configuration DNS automatique**, laissez la case `Configuration automatique (recommandée)`{.action} cochée.
+>> - **Pour une configuration DNS manuelle**, cochez la case `Configuration manuelle`{.action}. Pour réaliser ensuite le paramétrage, consultez les guides suivants :
+>> - [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+>> - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+>>
+>> Une fois vos choix réalisés, cliquez sur le bouton `Continuer`{.action} pour finaliser l'ajout de votre nom de domaine ou de votre sous-domaine à votre site web. Cela peut prendre jusqu'à une heure. Cependant, la modification de la configuration DNS de votre nom de domaine nécessite un temps de propagation pouvant prendre jusqu'à 24 heures pour être pleinement effective.
 
 ///
 
@@ -139,37 +159,41 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Ajouter un domaine ou sous-domaine`{.action}.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Ajouter un domaine`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
 > **Étape 5**
 >>
->> Cochez l'option `Ajouter un domaine externe`{.action}, puis cliquez sur `Suivant`{.action}.
+>> Cochez l'option `Associer un domaine externe`{.action}, puis cliquez sur `Continuer`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
 >>
 > **Étape 6**
 >>
->> Vous devez à présent personnaliser l’ajout du nom de domaine ou du sous-domaine. À noter que certaines options comprises dans votre offre d'[hébergement web](/links/web/hosting) ne peuvent pas être activées pendant ce processus. Vous devrez finaliser la manipulation avant de pouvoir les utiliser, en modifiant les paramètres du nom de domaine ou du sous-domaine lorsqu’il sera ajouté.
+>> Saisissez le nom de domaine (par exemple : domain.tld) ou le sous-domaine (par exemple : **sub**.domain.tld) à associer dans le champ **Nom de domaine - obligatoire** qui apparaît en dessous.
+>>
+>> > [!success]
+>> >
+>> > **Cas particulier** : Les sous-domaine en `www` (par exemple : **www**.domain.tld) sont automatiquement ajoutés en complément du nom de domaine. Par conséquent, il est inutile de préciser ce sous-domaine spécifique dans le champ de saisie.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 >>
->> |Information|Description|
->> |---|---|
->> |Domaine|Renseignez le nom de domaine que vous souhaitez utiliser. Ajoutez au besoin un sous-domaine (par exemple : **sub**.domain.tld) et créez simultanément le sous-domaine « www » correspondant (par exemple : **www.sub**.domain.tld). En définitive, celui-ci correspondra à l'adresse Internet du site que vous souhaitez mettre en ligne. Sachez que vous devez être en mesure de modifier la configuration du domaine depuis sa [zone DNS](/pages/web_cloud/domains/dns_zone_edit) afin que l'ajout puisse être finalisé.|
+>> Une fois les informations complétées, cliquez sur le bouton `Continuer`{.action}.
 >>
->> Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
+>> >[!primary]
+>> >
+>> > Contrairement aux noms de domaine directement géré depuis votre espace client OVHcloud, les **Options avancées** ne sont pas directement disponibles lors de l'ajout d'un nom de domaine ou d'un sous-domaine externe à votre site web.
+>> >
+>> > Cependant, **toutes ces fonctionnalités peuvent être activées ultérieurement une fois le nom de domaine ou le sous-domaine externe ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 > **Étape 7**
 >>
->> Vérifiez ensuite le récapitulatif qui s'affiche.
+>> Tout ajout d'un nom de domaine externe à OVHcloud nécessite une validation supplémentaire obligatoire. Cela nous permet de nous assurer que l'ajout du nom de domaine externe est légitime. Un message vous invitera donc à modifier la configuration DNS du nom de domaine.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 >>
->> Tout ajout d'un nom de domaine externe à OVHcloud nécessite une validation supplémentaire obligatoire. Cela nous permet de nous assurer que l'ajout du domaine externe est légitime. Un message vous invitera donc à modifier la configuration DNS du nom de domaine.
->>
->> Notez les éléments qui s’affichent, puis cliquez sur le bouton `Valider`{.action}. Dès lors, le nom de domaine est ajouté de manière temporaire, le temps que vous puissiez modifier sa configuration DNS.
+>> Notez les éléments qui s’affichent, puis cliquez sur le bouton `Continuer`{.action}. Dès lors, le nom de domaine est ajouté de manière temporaire, le temps que vous puissiez modifier sa configuration DNS.
 >>
 >> > [!warning]
 >> >
@@ -178,7 +202,59 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> > Les entrées DNS de type **A** et **TXT** doivent obligatoirement être placées dans la zone DNS active de votre nom de domaine pour qu'il soit ajouté à votre site web. Seules les entrées DNS de type **AAAA** sont optionnelles.
 >> >
 >> > Notez que si vous souhaitez ajouter `sub.domain.tld`, vous devrez créer l'entrée TXT `ovhcontrol.domain.tld` et non l'entrée `ovhcontrol.sub.domain.tld`.
->> > Pour retrouver cette dernière, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) auxquels votre nom de domaine est lié. Vous devrez valider uniquement le nom de domaine, pas tous ses sous-domaines.|
+>> >
+>> > Pour retrouver la zone DNS active de votre nom de domaine, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) auxquels celui-ci est lié. Vous devrez valider à l'aide du champ **TXT** uniquement le nom de domaine, pas tous ses sous-domaines.|
+
+///
+
+/// details | Ajouter un nouveau nom de domaine qui n'a pas encore été enregistré chez OVHcloud ou ailleurs
+
+Cette partie s’applique uniquement si votre nom de domaine n'a pas encore été enregistré chez OVHcloud **ou** auprès d'un autre bureau d'enregistrement. En résumé, il s'agit du cas où votre nom de domaine n'a pas encore été souscrit.
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Ajouter un domaine`{.action}.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Cochez l'option `Commander un nouveau domaine`{.action}, puis cliquez sur `Continuer`{.action}.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
+>>
+> **Étape 6**
+>>
+>> Vous êtes alors redirigé vers notre page commerciale de souscription d'un nom de domaine. Choisissez votre nouveau nom de domaine en fonction des disponibilités du marché. Suivez ensuite les instructions du tunnel de commande jusqu'à la validation du bon de commande.
+>>
+>> Une fois votre commande payée et validée, patientez quelques instants le temps que celle-ci soit traitée.
+>>
+>> > [! primary]
+>> >
+>> > Si, au bout de quelques heures, vous constatez que votre nouveau nom de domaine ne s'est pas associé correctement à votre site web, suivez la partie [Ajouter un nom de domaine géré depuis votre espace client OVHcloud](#add-domain-ovhcloud) de ce guide.
+
+///
 
 ### Offre e-mail incluse avec votre hébergement web
 
