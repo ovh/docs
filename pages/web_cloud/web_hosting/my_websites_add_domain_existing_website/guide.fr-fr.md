@@ -84,9 +84,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> >
 >> > **Cas particulier** : Les sous-domaines en `www` (par exemple : **www**.domain.tld) sont automatiquement ajoutés en complément du nom de domaine. Par conséquent, il est inutile de préciser ce sous-domaine spécifique dans le champ de saisie.
 >>
->> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 >>
->> Si vous souhaitez utiliser l'une des **Options avancées** disponibles, activez le bouton `Options avancées`{.action}, puis passez directement à **l'étape 7**. Si non, poursuivez à **l'étape 6**.
+>> Si vous souhaitez utiliser l'une des **Options avancées** disponibles, activez le bouton `Configuration avancée`{.action}, puis passez directement à **l'étape 7**. Si non, poursuivez à **l'étape 6**.
 >>
 > **Étape 6**
 >>
@@ -106,7 +106,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> > [!primary]
 >> >
->> > Cette étape est **facultative**. Elle concerne uniquement les clients qui souhaitent activer certaines fonctionnalités disponibles derrière le bouton `Options avancées`{.action}.
+>> > Cette étape est **facultative**. Elle concerne uniquement les clients qui souhaitent activer certaines fonctionnalités disponibles derrière le bouton `Configuration avancée`{.action}.
 >> >
 >> > **Toutes ces fonctionnalités peuvent être activées ultérieurement une fois le nom de domaine ajouté à votre site web.** Dans ce cas précis, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >> >
@@ -114,7 +114,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> >
 >> > Selon votre offre d'[hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 >>
->> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-advanced-options.png){.thumbnail}
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-advanced-configurations.png){.thumbnail}
 >>
 >> |Option|Description|
 >> |---|---|
@@ -167,7 +167,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Cochez l'option `Associer un domaine externe`{.action}, puis cliquez sur `Continuer`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
 >>
 > **Étape 6**
 >>
@@ -191,7 +191,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Tout ajout d'un nom de domaine externe à OVHcloud nécessite une validation supplémentaire obligatoire. Cela nous permet de nous assurer que l'ajout du nom de domaine externe est légitime. Un message vous invitera donc à modifier la configuration DNS du nom de domaine.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 >>
 >> Notez les éléments qui s’affichent, puis cliquez sur le bouton `Continuer`{.action}. Dès lors, le nom de domaine est ajouté de manière temporaire, le temps que vous puissiez modifier sa configuration DNS.
 >>
@@ -242,7 +242,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Cochez l'option `Commander un nouveau domaine`{.action}, puis cliquez sur `Continuer`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
 > **Étape 6**
 >>
