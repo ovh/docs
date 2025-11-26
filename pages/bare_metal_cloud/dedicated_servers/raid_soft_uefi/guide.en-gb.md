@@ -1,7 +1,7 @@
 ---
 title: Managing and rebuilding software RAID on servers using UEFI boot mode
 excerpt: Find out how to manage and rebuild software RAID after a disk replacement on a server using UEFI boot mode
-updated: 2025-11-12
+updated: 2025-11-28
 ---
 
 ## Objective
@@ -273,6 +273,10 @@ Indeed, in some cases, booting from an out-of-date ESP may not work. For instanc
 
 We recommend that you synchronise your ESPs regularly or after each major system update. By default, all the EFI System partitions contain the same files after installation. However, if a major system update is involved, synchronising the ESPs is essential to keep the content up-to-date.
 
+<a name="script"></a>
+
+#### Script
+
 Below is a script that you can use to manually synchronise them. You can also run an automated script to synchronise the partitions daily or whenever the service boots up.
 
 Before you execute the script, make sure `rsync` is installed on your system:
@@ -289,6 +293,19 @@ sudo apt install rsync
 sudo yum install rsync
 ```
 
+To execute a script in linux, it is preferable to create an executable file:
+
+- Start by creating a .sh file in the directory of your choice, replacing `script-name` with the name of your choice
+
+```sh
+sudo touch script-name.sh
+```
+
+- Open the file with a text editor and include the following lines
+
+```sh
+sudo nano script-name.sh
+```
 ```sh
 #!/bin/bash
 
@@ -310,6 +327,26 @@ while read -r partition; do
     rsync -ax "/boot/efi/" "${MOUNTPOINT}/"
     umount "${MOUNTPOINT}"
 done < <(blkid -o device -t LABEL=EFI_SYSPART)
+```
+
+Save and exit the file.
+
+- Make the script executable
+
+```sh
+sudo chmod +x script-name.sh
+```
+
+- Run the script
+
+```sh
+sudo ./script-name.sh
+```
+
+- If you are not in the folder
+
+```sh
+./path/to/folder/script-name.sh
 ```
 
 When the script is executed, the contents of the mounted EFI partition will be synchronised with the others. To access the contents, you can mount any of these unmounted EFI partitions on the mount point: `/var/lib/grub/esp`.
@@ -507,10 +544,6 @@ We can now proceed with the disk replacement.
 Once the disk has been replaced, the next step is to copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
 
 **For GPT partitions**
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/nvmeXnX /dev/nvmeXnX
-```
 
 The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`
 
@@ -854,7 +887,7 @@ swapon /dev/nvme1n1p4
 We exit the chroot environment with `exit` and reload the system:
 
 ```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo systemctl daemon-reload
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
 ```
 
 We umount all the disks:
@@ -881,7 +914,7 @@ Once the disk has been replaced, we copy the partition table from the healthy di
 sgdisk -R /dev/nvme0n1 /dev/nvme1n1
 ```
 
-The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`.
+The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`.
 
 Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
 
@@ -942,30 +975,7 @@ Next, we label the partition as `EFI_SYSPART` (this naming is specific to OVHclo
 [user@server_ip ~]# sudo fatlabel /dev/nvme0n1p1 EFI_SYSPART
 ```
 
-Using the script below, we copy the contents of the healthy EFI System partition to the newly created partition by synchronising both partitions:
-
-```sh
-#!/bin/bash
-
-set -euo pipefail
-
-MOUNTPOINT="/var/lib/grub/esp"
-MAIN_PARTITION=$(findmnt -n -o SOURCE /boot/efi)
-
-echo "${MAIN_PARTITION} is the main partition"
-
-mkdir -p "${MOUNTPOINT}"
-
-while read -r partition; do
-    if [[ "${partition}" == "${MAIN_PARTITION}" ]]; then
-        continue
-    fi
-    echo "Working on ${partition}"
-    mount "${partition}" "${MOUNTPOINT}"
-    rsync -ax "/boot/efi/" "${MOUNTPOINT}/"
-    umount "${MOUNTPOINT}"
-done < <(blkid -o device -t LABEL=EFI_SYSPART)
-```
+Once done, you can synchronize both partitions using the script we provided [here](#script).
 
 We verify that the new EFI System Partition has been properly created and the system recongnises it:
 
