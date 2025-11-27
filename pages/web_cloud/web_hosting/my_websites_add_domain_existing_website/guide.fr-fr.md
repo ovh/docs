@@ -136,9 +136,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 
 ///
 
-/// details | Ajouter un nom de domaine externe à OVHcloud
+/// details | Ajouter un nom de domaine externe
 
-Cette partie s’applique uniquement si votre nom de domaine n'est pas enregistré chez OVHcloud **ou** s'il n'est pas enregistré dans **votre** compte OVHcloud. 
+Cette partie s’applique uniquement si votre nom de domaine n’est pas présent dans votre compte OVHcloud.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
@@ -201,7 +201,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> > [!warning]
 >> >
->> > Vous devez **rapidement** effectuer ces modifications pour que votre nom de domaine soit correctement ajouté. Dans le cas contraire, l'ajout de votre nom de domaine sera annulé.
+>> > Vous devez effectuer ces modifications **rapidement** pour que votre nom de domaine soit correctement ajouté. Sans cette action, l'ajout de votre nom de domaine sera annulé.
 >> >
 >> > Les entrées DNS de type **A** et **TXT** doivent obligatoirement être placées dans la zone DNS active de votre nom de domaine pour qu'il soit ajouté à votre site web. Seules les entrées DNS de type **AAAA** sont optionnelles.
 >> >
@@ -211,9 +211,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 
 ///
 
-/// details | Ajouter un nouveau nom de domaine qui n'a pas encore été enregistré chez OVHcloud ou ailleurs
+/// details | Ajouter un nouveau nom de domaine qui n'a pas encore été enregistré
 
-Cette partie s’applique uniquement si votre nom de domaine n'a pas encore été enregistré chez OVHcloud **ou** auprès d'un autre bureau d'enregistrement. En résumé, il s'agit du cas où votre nom de domaine n'a pas encore été souscrit.
+Cette partie s’applique uniquement si votre nom de domaine n’a pas encore été enregistré, que ce soit chez OVHcloud ou auprès d’un autre bureau d’enregistrement. En d’autres termes, elle concerne les noms de domaine qui n’ont pas encore été souscrits.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
