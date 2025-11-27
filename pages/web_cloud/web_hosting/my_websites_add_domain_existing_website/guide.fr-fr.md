@@ -1,7 +1,7 @@
 ---
 title: "Comment associer un nom de domaine à un site web existant ?"
 excerpt: "Découvrez comment associer un nom de domaine ou un sous-domaine à un site web déjà existant sur votre hébergement web"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 <style>
@@ -49,19 +49,19 @@ Cette partie s'applique uniquement si votre nom de domaine et/ou sa zone DNS act
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
-> **Étape 1**
+> **Etape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Étape 2**
+> **Etape 2**
 >>
->> Cliquez sur le menu `Hébergements`{.action} et choisissez l'hébergement web concerné.
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Etape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
@@ -131,7 +131,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>     - [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >>
->> Une fois vos choix réalisés, cliquez sur le bouton `Continuer`{.action} pour finaliser l'ajout de votre nom de domaine ou de votre sous-domaine à votre site web. Cet ajout peut prendre jusqu'à une heure.<br>
+>> Une fois vos choix réalisés, cliquez sur le bouton `Continuer`{.action} pour finaliser l'ajout de votre nom de domaine ou de votre sous-domaine à votre site web. Cet ajout peut prendre jusqu'à une heure.
+>>
 >> Cependant, la modification de la configuration DNS de votre nom de domaine nécessite un délai de propagation pouvant atteindre 24 heures avant d'être pleinement effective.
 
 ///
@@ -143,19 +144,19 @@ Cette partie s’applique uniquement si votre nom de domaine n’est pas présen
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
-> **Étape 1**
+> **Etape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Étape 2**
+> **Etape 2**
 >>
->> Cliquez sur le menu `Hébergements`{.action} et choisissez l'hébergement web concerné.
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Etape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
@@ -185,7 +186,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Une fois les informations complétées, cliquez sur le bouton `Continuer`{.action}.
 >>
->> >[!primary]
+>> > [!primary]
 >> >
 >> > Contrairement aux noms de domaine directement gérés depuis votre espace client OVHcloud, les **options avancées** ne sont pas directement disponibles lors de l'ajout d'un nom de domaine ou d'un sous-domaine externe à votre site web.
 >> >
@@ -215,22 +216,22 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 
 Cette partie s’applique uniquement si votre nom de domaine n’a pas encore été enregistré, que ce soit chez OVHcloud ou auprès d’un autre bureau d’enregistrement. En d’autres termes, elle concerne les noms de domaine qui n’ont pas encore été souscrits.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
 
 > [!tabs]
-> **Étape 1**
+> **Etape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Étape 2**
+> **Etape 2**
 >>
->> Cliquez sur le menu `Hébergements`{.action} et choisissez l'hébergement web concerné.
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Etape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
@@ -273,6 +274,8 @@ N'hésitez pas à consulter [notre guide dédié](/pages/web_cloud/web_hosting/a
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
