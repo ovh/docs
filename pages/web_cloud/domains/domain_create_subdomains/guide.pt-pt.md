@@ -1,7 +1,7 @@
 ---
 title: "Como criar um subdomínio?"
 excerpt: "Saiba a definição de um subdomínio e como criá-lo na OVHcloud"
-updated: 2025-11-20
+updated: 2025-12-02
 ---
 
 <style>

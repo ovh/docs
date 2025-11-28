@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Environment, PHP version, .ovhconfig"
 excerpt: "Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig"
-updated: 2025-11-20
+updated: 2025-12-02
 ---
 
 ## Objective

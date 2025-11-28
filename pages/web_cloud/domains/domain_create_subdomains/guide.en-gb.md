@@ -1,7 +1,7 @@
 ---
 title: "How to create a subdomain"
 excerpt: "Find out how to define a subdomain and how to create one at OVHcloud"
-updated: 2025-11-20
+updated: 2025-12-02
 ---
 
 <style>
@@ -180,7 +180,7 @@ For more details on configuring a domain or subdomain on a web hosting plan, ple
 
 > [!warning]
 >
-> Adding a domain name or subdomain to one of the websites on your web hosting may require setting up a **validation token**.  
+> Adding a domain name or subdomain to one of the websites on your web hosting may require setting up a **validation token**.
 > For a subdomain, the same token is not taken into account and must be added not for the subdomain but for the domain name. In this case, you can add the token as a TXT record for the domain name in your domain name’s active DNS zone.
 
 #### Case 2 - Create Exchange email addresses with a subdomain <a name="link-subdomain-case-2"></a>
