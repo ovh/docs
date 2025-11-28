@@ -150,7 +150,7 @@ Once you have made all the necessary backups, [delete your 1-click module](#dele
 
 After you launched the creation of your 1-click module, you received an email stating that the installation directory for your 1-click module is not empty.
 
-This message means that the **Root folder** of the website to which your domain name is associated already contains one or more files or folders.
+This message means that the **root folder** of the website to which your domain name is associated already contains one or more files or folders.
 
 To link your domain name to another website (root folder), click on the tabs below to view each of the **5** steps.
 
@@ -185,7 +185,7 @@ To link your domain name to another website (root folder), click on the tabs bel
 >> 
 > **Step 5**
 >>
->> Once the domain name has been detached from the website, follow our guide " [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) ".
+>> Once the domain name has been detached from the website, follow our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 You can also log in to your web hosting plan using the [FTP](/pages/web_cloud/web_hosting/ftp_connection) protocol, then delete the folder contents. This is done after you have backed it up locally, or after you have emptied it by moving all of its contents to another FTP directory.
 
