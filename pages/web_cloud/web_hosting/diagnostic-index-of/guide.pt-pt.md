@@ -1,7 +1,7 @@
 ---
 title: O que fazer em caso de página "Index of"?
 excerpt: Descubra como repor o seu site online quando exibe uma página "Index of".
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 ## Objetivo
