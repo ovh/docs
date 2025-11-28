@@ -1,7 +1,7 @@
 ---
 title: 'Solucionar el error "Sitio no instalado"'
 excerpt: 'Descubra cómo solucionar el error "Sitio no instalado"'
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 > [!success]

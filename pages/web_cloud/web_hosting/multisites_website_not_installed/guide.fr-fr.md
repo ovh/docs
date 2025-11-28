@@ -1,7 +1,7 @@
 ---
 title: "Résoudre l'erreur « Site non installé »"
 excerpt: "Découvrez comment identifier et résoudre la page d'erreur « Site non installé »"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 > [!success]

@@ -1,7 +1,7 @@
 ---
 title: 'Resolver o erro “Site não instalado”'
 excerpt: 'Saiba como resolver o erro da página “Site não instalado”'
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 > [!success]

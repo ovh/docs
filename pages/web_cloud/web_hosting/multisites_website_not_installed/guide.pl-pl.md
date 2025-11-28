@@ -1,7 +1,7 @@
 ---
 title: Usunięcie błędu "Strona nie została zainstalowana"
 excerpt: Dowiedz się, jak usunąć błąd "Strona nie została zainstalowana"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 > [!success]
