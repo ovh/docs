@@ -1,7 +1,7 @@
 ---
 title: "Como criar um website - Realizar o seu projeto em 5 etapas"
 excerpt: "Saiba como definir o seu projeto, publicar o seu website e criar endereços de e-mail com a sua solução de alojamento web"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 <style>

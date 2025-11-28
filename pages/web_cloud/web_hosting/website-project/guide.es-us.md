@@ -1,7 +1,7 @@
 ---
 title: "Cómo crear un sitio web - Realizar un proyecto en 5 pasos"
 excerpt: "Esta guía explica cómo configurar un proyecto, publicar un sitio web y crear direcciones de correo electrónico con un plan de hosting"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 <style>

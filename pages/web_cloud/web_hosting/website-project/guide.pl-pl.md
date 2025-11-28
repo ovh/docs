@@ -1,7 +1,7 @@
 ---
 title: "Jak stworzyć stronę WWW - 5 etapów realizacji projektu"
 excerpt: "Dowiedz się, jak zdefiniować projekt, opublikować stronę WWW i utworzyć konta e-mail w ramach hostingu"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 <style>
