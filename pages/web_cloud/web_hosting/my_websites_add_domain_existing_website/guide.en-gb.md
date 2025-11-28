@@ -29,10 +29,10 @@ You can host multiple websites on the same web hosting plan, even if the domain 
 
 ## Requirements
 
-- Have a compatible [OVHcloud web hosting](/links/web/hosting-multisite) plan.
-- Have one or more [domain names](/links/web/domains).
-- Be able to modify the configuration of your domain names from their [DNS zones](/pages/web_cloud/domains/dns_zone_edit).
-- Be logged in to your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
+- A compatible [OVHcloud web hosting plan](/links/web/hosting-multisite)
+- One or more [domain names](/links/web/domains)
+- Access to modify the configuration of the [DNS zones of your domain names](/pages/web_cloud/domains/dns_zone_edit)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -82,7 +82,7 @@ Click on the tabs below to view each of the **7** steps.
 >> > [!primary]
 >> > To add a subdomain, first select the domain name from the list (e.g., domain.tld). Then tick the box labeled `Create a subdomain`{.action}. A field will appear for you to enter the subdomain (e.g., **sub**.domain.tld).
 >> >
->> > **Special case**: Subdomains in `www` (e.g., **www**.domain.tld) are automatically added in addition to the domain name. Therefore, it is unnecessary to specify this particular subdomain in the input field.
+>> > **Special case**: The subdomain `www` (e.g., **www**.domain.tld) is automatically added in addition to the domain name. Therefore, it is unnecessary to specify this particular subdomain in the input field.
 >>
 >> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 >>
@@ -208,7 +208,7 @@ Click on the tabs below to view each of the **7** steps.
 >> >
 >> > Note that if you wish to add `sub.domain.tld`, you will need to create the `ovhcontrol.domain.tld` TXT entry and not the `ovhcontrol.sub.domain.tld` entry.
 >> >
->> > To find the active DNS zone of your domain name, find the [DNS servers](/pages/web_cloud/domains/dns_server_edit) to which it is linked. You will only need to validate the domain name using the **TXT** field, not all its subdomains.|
+>> > To find the active DNS zone of your domain name, find the [DNS servers](/pages/web_cloud/domains/dns_server_edit) to which it is linked. You will only need to validate the domain name using the **TXT** field, not all its subdomains.
 
 ///
 
