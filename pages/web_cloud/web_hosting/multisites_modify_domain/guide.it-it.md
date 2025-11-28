@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Modificare un dominio già associato a un hosting"
 excerpt: "Questa guida ti mostra come modificare le impostazioni di associazione di un dominio/sottodominio già dichiarato sul tuo piano di hosting Web"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 ## Obiettivo

@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to modify a domain name already associated to a hosting plan"
 excerpt: "Find out how to change the association settings for a domainname or subdomain already declared on your web hosting plan"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 ## Objective
@@ -12,8 +12,8 @@ When you use your web hosting plan or update your website, you may need to modif
 >
 > This guide only explains how to modify a domain name or subdomain that has already been declared on an OVHcloud Web Hosting plan.
 >
-> - To associate a new domain name or subdomain with your website on your web hosting, please refer to our guide " [How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ".
-> - To add a new website to your web hosting, please refer to our guide " [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) ".
+> - To associate a new domain name or subdomain with your website on your web hosting, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - To add a new website to your web hosting, please refer to our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 **Find out how to modify the association settings for a domainname or subdomain already declared on your web hosting plan.**
 
@@ -68,7 +68,7 @@ To modify the association settings of a domain name or subdomain already declare
 >>
 >> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
->> In the following part of this guide, you will find a description of each of the available parameters in the window above. After reading the different descriptions in the section " [Description of modifiable parameters](#step1) " and once your changes have been made, click on the `Next`{.action} button located at the bottom right of the window, then go to [Part 2](#step2).
+>> In the following part of this guide, you will find a description of each of the available parameters in the window above. After reading the different descriptions in the section "[Description of modifiable parameters](#step1)" and once your changes have been made, click on the `Next`{.action} button located at the bottom right of the window, then go to [Part 2](#step2).
 
 ### Step 1 - Description of editable parameters <a name="step1"></a>
 
@@ -76,12 +76,12 @@ To modify the association settings of a domain name or subdomain already declare
 >
 > The `Domain name`{.action} and `Root folder`{.action} fields are not modifiable, as they are parameters related to the website on your web hosting plan.
 >
-> - To associate a new domain name or subdomain with a website on your web hosting plan, please refer to our guide " [How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ".
+> - To associate a new domain name or subdomain with a website on your web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 > - To change the root folder of your website, you will need to detach your domain name from the existing website from the `My Websites`{.action} tab. To do this :
 >      - Click on the `>`{.action} button to the left of the name of the website to display the associated domain names and subdomains.
 >      - Then click on the `⁝`{.action} button to the right of the domain name or subdomain you want to modify, and then click on `Detach domain`{.action}.
 >
-> You can then add a new website with your domain name using our guide " [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) ". If your website has a configuration with Git, please refer to our guide " [Configure and use Git with your OVHcloud web hosting](/pages/web_cloud/web_hosting/git_integration_webhosting) " **before** clicking on `Detach domain`{.action}.
+> You can then add a new website with your domain name using our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)". If your website has a configuration with Git, please refer to our guide "[Configure and use Git with your OVHcloud web hosting](/pages/web_cloud/web_hosting/git_integration_webhosting)" **before** clicking on `Detach domain`{.action}.
 
 ##### The "Activate the CDN" option
 

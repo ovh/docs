@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem"
 excerpt: "Dowiedz się, jak zmienić parametry powiązania domeny/subdomeny zadeklarowanej wcześniej w Twojej usłudze hostingu"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 ## Wprowadzenie
