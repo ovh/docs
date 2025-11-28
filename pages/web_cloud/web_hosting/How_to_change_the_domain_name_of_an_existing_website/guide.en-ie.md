@@ -1,7 +1,7 @@
 ---
 title: "Use cases - How to change the domain of an existing website"
 excerpt: "Find out how to change the domain name of an existing website"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 ## Objective
@@ -114,7 +114,7 @@ If you used a service provider to create your website, contact them so that they
 
 ### Step 3: Remove the old domain name <a name="step3"></a>
 
-To avoid "duplicate-content" and once your new domain name is fully operational with your website, you will need to remove the declaration of your old domain name from your website using the guide "[How to detach a domain name from an existing website?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
+To avoid "duplicated content" and once your new domain name is fully operational with your website, you will need to remove the declaration of your old domain name from your website using the guide "[How to detach a domain name from an existing website?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
 
 > [!warning]
 >
