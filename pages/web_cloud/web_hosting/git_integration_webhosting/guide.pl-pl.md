@@ -139,9 +139,9 @@ Zapisz klucz SSH na koncie GitHub:
 
 Zostanie wyświetlony formularz dodawania nowego klucza SSH:
 
-- **Title** : dodaj opis dla Twojego klucza SSH. Na przykład możesz nazwać ten klucz "OVHcloud".
+- **Title**: dodaj opis dla Twojego klucza SSH. Na przykład możesz nazwać ten klucz "OVHcloud".
 - **Type of key**: pozostaw wartość domyślną `authentication key`{.action}
-- **Key** : wklej klucz SSH.
+- **Key**: wklej klucz SSH.
 
 Aby zatwierdzić informacje, kliknij `Add SSH key`{.action}. Jeśli zostanie wyświetlony monit, potwierdź dostęp do konta w GitHub.
 
@@ -220,7 +220,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 >>
 > **Krok 4**
 >>
->> W tabeli, która się pojawi, kliknij przycisk `⁝`{.action} po prawej stronie odpowiedniego strony internetowej, a następnie `Uruchom Git`{.action}.
+>> W tabeli, która się pojawi, kliknij przycisk `⁝`{.action} po prawej stronie odpowiedniego strony internetowej, a następnie `Wdrożyć Git`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
@@ -263,7 +263,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Następnie kliknij przycisk `⁝`{.action} po prawej stronie nazwy domeny lub poddomeny, a następnie kliknij `Zmień domenę`{.action}.
+>> Następnie kliknij przycisk `⁝`{.action} po prawej stronie nazwy domeny lub poddomeny, a następnie kliknij `Edytuj domenę`{.action}.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
@@ -448,7 +448,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 >>
 > **Krok 5**
 >>
->> Komunikat informuje, że usunięcie będzie dotyczyć wszystkich nazw domen przypisanych do Twojej strony internetowej. Zaznacz pole `Czy chcesz wyczyścić zawartość katalogu <your_directory>?`{.action}, jeśli chcesz również usunąć zawartość (katalogi i pliki) katalogu.
+>> Komunikat informuje, że usunięcie będzie dotyczyć wszystkich nazw domen przypisanych do Twojej strony internetowej. Zaznacz pole `Czy chcesz wyczyścić zawartość katalogu <twój_katalog>?`{.action}, jeśli chcesz również usunąć zawartość (katalogi i pliki) katalogu.
 >> 
 >> 1\. Jeśli zaznaczysz pole, pojawia się następujące okno:
 >> 
@@ -506,11 +506,11 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 Zaloguj się na swoje konto GitHub i przejdź do repozytorium, w którym chcesz skonfigurować webhook. Przejdź do zakładki `Settings`{.action}, a następnie w bocznym menu ustawień kliknij `Webhooks`{.action}. Kliknij przycisk `Add webhook`{.action}, aby przejść do formularza:
 
 - **Payload URL**: wprowadź adres URL podany w formularzu powiązania Git (`URL webhooka`{.action}).
-- **Content type** : wybierz `application/json`{.action} jako typ treści dla przesłanych danych.
+- **Content type**: wybierz `application/json`{.action} jako typ treści dla przesłanych danych.
 - **Secret**: klucz jest opcjonalny. GitHub będzie go używać do podpisywania wiadomości wysyłanych przez webhook, zwiększając tym samym bezpieczeństwo.
-- **SSL verification** : jeśli Twoja strona WWW używa protokołu HTTPS, pozostaw tę opcję włączoną, aby zwiększyć bezpieczeństwo.
-- **Which events would you like to trigger this webhook ?** : wybierz zdarzenia, które spowodują wysłanie funkcji webhook. W przypadku wdrożenia automatycznego, `Just the push event`{.action} (Just the push event) jest często wystarczające, ale możesz wybrać `Send me everything`{.action}, aby otrzymywać powiadomienia o wszystkich zdarzeniach.
-- **Active** : upewnij się, że zaznaczone jest pole wyboru pozwalające na aktywację elementu webhook.
+- **SSL verification**: jeśli Twoja strona WWW używa protokołu HTTPS, pozostaw tę opcję włączoną, aby zwiększyć bezpieczeństwo.
+- **Which events would you like to trigger this webhook?**: wybierz zdarzenia, które spowodują wysłanie funkcji webhook. W przypadku wdrożenia automatycznego, `Just the push event`{.action} (Just the push event) jest często wystarczające, ale możesz wybrać `Send me everything`{.action}, aby otrzymywać powiadomienia o wszystkich zdarzeniach.
+- **Active**: upewnij się, że zaznaczone jest pole wyboru pozwalające na aktywację elementu webhook.
 
 Kliknij przycisk `Add webhook`{.action}, aby zarejestrować i aktywować nowy webhook.
 

@@ -140,9 +140,9 @@ Registre la llave SSH en su cuenta de GitHub:
 
 Aparecerá el formulario para añadir una nueva llave SSH:
 
-- **Title** : añada una descripción para su llave SSH. Por ejemplo, puede denominar esta llave "OVHcloud".
+- **Title**: añada una descripción para su llave SSH. Por ejemplo, puede denominar esta llave "OVHcloud".
 - **Type of key**: deje el valor por defecto `authentication key`{.action}
-- **Key** : pegue su llave SSH.
+- **Key**: pegue su llave SSH.
 
 Para validar la información, haga clic en `Add SSH key`{.action}. Si se le solicita, confirme el acceso a su cuenta en GitHub.
 
@@ -188,7 +188,7 @@ En la tabla de la pestaña `Mis sitios`{.action}, identifique las líneas corres
 - La llave SSH no ha sido registrada en su cuenta de GitHub.
 - El directorio de instalación no está vacío.
 - La dirección del repositorio de GitHub no existe o es incorrecta.
-- La bifurcación del repositorio de GitHub no existe o su nombre es incorrecto.
+- La rama del repositorio de GitHub no existe o su nombre es incorrecto.
 
 Para conocer la causa exacta del error, consulte la información del último despliegue. En la tabla, haga clic en el botón `⁝`{.action} situado a la derecha del sitio web correspondiente, y luego en `Información del último despliegue`{.action}.
 
@@ -260,11 +260,11 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 > **Etapa 4**
 >>
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los nombres de dominio y subdominios asociados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el dominio`{.action}.
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del nombre de dominio o subdominio correspondiente, y luego en `Modificar un dominio`{.action}.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
@@ -272,7 +272,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> Dos escenarios son posibles:
 >>
->> **1 - Un ou plusieurs autres noms de domaine sont attachés au site web**
+>> **1 - Uno o varios otros nombres de dominio están asociados al sitio web**
 >>
 >> Aparece la siguiente ventana:
 >>
@@ -286,7 +286,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> Haga clic en `Confirmar`{.action} para validar los cambios de su nombre de dominio.
 >>
->> **2 - Un seul nom de domaine est attaché au site web**
+>> **2 - Un solo nombre de dominio está asociado al sitio web**
 >>
 >> Aparece la siguiente ventana:
 >>
@@ -319,11 +319,11 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 > **Etapa 4**
 >>
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los nombres de dominio y subdominios asociados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Desvincular el dominio`{.action}.
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del nombre de dominio o subdominio correspondiente, y luego en `Desvincular el dominio`{.action}.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
@@ -331,7 +331,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> Dos escenarios son posibles:
 >>
->> **1 - Un ou plusieurs autres noms de domaine sont attachés au site web**
+>> **1 - Uno o varios otros nombres de dominio están asociados al sitio web**
 >>
 >> Aparece la siguiente ventana:
 >>
@@ -339,7 +339,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> Haga clic en `Confirmar`{.action} para validar el desenganche de su nombre de dominio.
 >>
->> **2 - Un seul nom de domaine est attaché au site web**
+>> **2 - Un solo nombre de dominio está asociado al sitio web**
 >>
 >> Aparece la siguiente ventana:
 >>
@@ -380,10 +380,10 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> Aparecen las siguientes informaciones:
 >>
->> - Clé SSH : Si aún no lo ha hecho, [registre su clave SSH en su cuenta GitHub](#linkSSHKey).
->> - Dépôt : Dirección de su repositorio Git. Este campo está gris porque no puede modificar la dirección del repositorio Git. Para cambiar la URL del repositorio Git, debe [eliminar la asociación Git de su directorio](#deleteGitAssociation) y luego [asociar el directorio a Git](#associateGitRepo) de nuevo.
->> - Branche : Nombre de la rama del repositorio GitHub. Puede modificar este campo si es necesario.
->> - URL de webhook : Si desea optimizar sus despliegues en Git, [configure el webhook en GitHub](#configureWebhook).
+>> - Clave SSH: Si aún no lo ha hecho, [registre su clave SSH en su cuenta GitHub](#linkSSHKey).
+>> - Repositorio: Dirección de su repositorio Git. Este campo está gris porque no puede modificar la dirección del repositorio Git. Para cambiar la URL del repositorio Git, debe [eliminar la asociación Git de su directorio](#deleteGitAssociation) y luego [asociar el directorio a Git](#associateGitRepo) de nuevo.
+>> - Rama: Nombre de la rama del repositorio GitHub. Puede modificar este campo si es necesario.
+>> - URL del webhook: Si desea optimizar sus despliegues en Git, [configure el webhook en GitHub](#configureWebhook).
 
 ### Información del último despliegue
 
@@ -453,7 +453,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 >>
->> El mensaje le informa que la eliminación se aplicará a todos los nombres de dominio asociados a su sitio web. Marque la casilla `¿Desea vaciar el contenido del directorio <your_directory>?`{.action} si también desea eliminar el contenido (directorios y archivos) del directorio.
+>> El mensaje le informa que la eliminación se aplicará a todos los nombres de dominio asociados a su sitio web. Marque la casilla `¿Desea vaciar el contenido del directorio <su_directorio>?`{.action} si también desea eliminar el contenido (directorios y archivos) del directorio.
 >>
 >> 1\.	Si marca la casilla, aparece la siguiente ventana:
 >> 
@@ -514,8 +514,8 @@ Inicie sesión en su cuenta de GitHub y vaya al repositorio en el que desea conf
 - **Content type**: elija `application/json`{.action} como tipo de contenido para los datos enviados.
 - **Secret**: el secreto es opcional. GitHub lo usará para firmar los mensajes enviados por el webhook, mejorando así la seguridad.
 - **SSL verification**: si su sitio web es compatible con HTTPS, deje esta opción activada para una mayor seguridad.
-- **Which events would you like to trigger this webhook ?** : seleccione los eventos que activarán el envío del webhook. Para un despliegue automático, `Just the push event`{.action} (Solo el evento push) suele ser suficiente, pero puede elegir `Send me everything`{.action} para recibir notificaciones de todos los eventos.
-- **Active** : Asegúrese de que la casilla de verificación está marcada para activar el webhook.
+- **Which events would you like to trigger this webhook?**: seleccione los eventos que activarán el envío del webhook. Para un despliegue automático, `Just the push event`{.action} (Solo el evento push) suele ser suficiente, pero puede elegir `Send me everything`{.action} para recibir notificaciones de todos los eventos.
+- **Active**: Asegúrese de que la casilla de verificación está marcada para activar el webhook.
 
 Haga clic en `Add webhook`{.action} para guardar y activar su nuevo webhook.
 

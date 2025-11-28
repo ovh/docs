@@ -164,7 +164,7 @@ Pour valider les informations du formulaire d'association de Git, cliquez sur `A
 
 #### Succès de l'association de Git
 
-Après avoir validé le formulaire s'association de Git, vous êtes redirigé sur la page de l'onglet `Mes sites`{.action}.
+Après avoir validé le formulaire d'association de Git, vous êtes redirigé sur la page de l'onglet `Mes sites`{.action}.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
 
@@ -259,7 +259,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -269,7 +269,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 5**
 >>
->>  Deux scénarios sont possibles :
+>> Deux scénarios sont possibles :
 >>
 >> **1 - Un ou plusieurs autres noms de domaine sont attachés au site web**
 >>
@@ -318,7 +318,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine ou sous-domaines associés.
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>

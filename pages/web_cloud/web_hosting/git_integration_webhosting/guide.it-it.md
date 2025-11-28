@@ -55,7 +55,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Associare Git`{.action}.
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Associa Git`{.action}.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
@@ -64,7 +64,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> Il modulo di associazione Git appare. Devono essere configurati diversi elementi:
 >>
 >> - Repository GitHub
->> - Branch del repository GitHub
+>> - Ramo del repository GitHub
 >> - Chiave SSH (per un repository GitHub privato)
 >> - Webhook (opzionale)
 >>
@@ -193,7 +193,7 @@ Per conoscere la causa esatta dell'errore, consulta le informazioni dell'ultimo 
 
 ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 
-Una volta identificato(i) l'(i) errore(i), associa Git nuovamente. Ripeti l'operazione cliccando sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Associare Git`{.action}.
+Una volta identificato(i) l'(i) errore(i), associa Git nuovamente. Ripeti l'operazione cliccando sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Associa Git`{.action}.
 
 ### Avviare il repository GitHub sull’hosting Web OVHcloud
 
@@ -220,7 +220,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Eseguire il deploy Git`{.action}.
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Distribuisci Git`{.action}.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
@@ -259,17 +259,17 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio o sottodomini associati.
+>> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio e sottodomini associati.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Modifica il dominio`{.action}.
+>> Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Modifica un dominio`{.action}.
 >>
 >> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Passaggio 5**
 >>
->>  Due scenari sono possibili:
+>> Due scenari sono possibili:
 >>
 >> **1 - Uno o più altri nomi di dominio sono associati al sito web**
 >>
@@ -277,7 +277,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step1.png){.thumbnail}
 >>
->> Modifica le informazioni come necessario e clicca su `Continua`{.action}.
+>> Modifica le informazioni come necessario e clicca su `Successivo`{.action}.
 >>
 >> Una seconda finestra di conferma appare con il riepilogo delle tue modifiche:
 >>
@@ -318,17 +318,17 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio o sottodomini associati.
+>> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio e sottodomini associati.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Scollega il dominio`{.action}.
+>> Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Stacca un dominio`{.action}.
 >>
 >> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Passaggio 5**
 >>
->>  Due scenari sono possibili:
+>> Due scenari sono possibili:
 >>
 >> **1 - Uno o più altri nomi di dominio sono associati al sito web**
 >>
@@ -371,7 +371,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Configurare Git`{.action}
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Configura Git`{.action}
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
@@ -381,8 +381,8 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> - Chiave SSH: Se non l'hai già fatto, [registra la tua chiave SSH nel tuo account GitHub](#linkSSHKey).
 >> - Repository: Indirizzo del tuo repository Git. Questo campo è grigio perché non puoi modificare l'indirizzo del repository Git. Per cambiare l'URL del repository Git, devi [eliminare l'associazione Git del tuo directory](#deleteGitAssociation) e poi nuovamente [associare il directory a Git](#associateGitRepo).
->> - Branch: Nome del branch del repository GitHub. Puoi modificare questo campo se necessario.
->> - URL webhook: Se desideri ottimizzare i tuoi deployment su Git, [configura il webhook su GitHub](#configureWebhook).
+>> - Branch: Nome del ramo del repository GitHub. Puoi modificare questo campo se necessario.
+>> - URL del webhook: Se desideri ottimizzare i tuoi deployment su Git, [configura il webhook su GitHub](#configureWebhook).
 
 ### Informazioni dell'ultimo deploy
 
@@ -411,7 +411,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Informazioni dell'ultimo deploy`{.action}.
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Informazioni dell'ultimo deployment`{.action}.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
@@ -442,7 +442,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Eliminare Git`{.action}.
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Elimina Git`{.action}.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
@@ -452,11 +452,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 >>
->> Il messaggio ti informa che l'eliminazione si applicherà sull'intero dei nomi di dominio associati al tuo sito web. Spunta la casella `Vuoi eliminare il contenuto della directory <your_directory>?`{.action} se desideri anche eliminare il contenuto (directory e file) della directory.
+>> Il messaggio ti informa che l'eliminazione si applicherà sull'intero dei nomi di dominio associati al tuo sito web. Spunta la casella `Vuoi eliminare il contenuto della directory <la_tua_directory>?`{.action} se desideri anche eliminare il contenuto (directory e file) della directory.
 >>
 >> 1\. Se spunti la casella, la seguente finestra appare:
->>
->> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
 >>
 >> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
 >>
@@ -499,7 +497,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Configurare Git`{.action}.
+>> Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web desiderato, quindi su `Configura Git`{.action}.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>

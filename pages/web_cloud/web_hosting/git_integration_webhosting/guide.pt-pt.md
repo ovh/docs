@@ -141,9 +141,9 @@ Registe a chave SSH na sua conta GitHub:
 
 Aparece o formulário que permite adicionar uma nova chave SSH:
 
-- **Title** : adicione uma descrição para a sua chave SSH. Por exemplo, pode dar um nome a esta chave "OVHcloud".
-- **Type of key** : deixe o valor predefinido `authentication key`{.action}
-- **Key** : cole a sua chave SSH.
+- **Title**: adicione uma descrição para a sua chave SSH. Por exemplo, pode dar um nome a esta chave "OVHcloud".
+- **Type of key**: deixe o valor predefinido `authentication key`{.action}
+- **Key**: cole a sua chave SSH.
 
 Para validar as informações, clique em `Add SSH key`{.action}. Se solicitado, confirme o acesso à sua conta no GitHub.
 
@@ -174,11 +174,11 @@ Um banner verde indica que o Git está sendo ativado. Siga a ativação do Git a
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/ongoing-task-git-activation.png){.thumbnail}
 
-O estado `Em curso`{.action} indica que a associação do Git está em curso. O processo pode demorar alguns minutos. Quando a tarefa estiver concluída, o estado `Ativado`{.action} é apresentado.
+O estado `Em curso`{.action} indica que a associação do Git está em curso. O processo pode demorar alguns minutos. Quando a tarefa estiver concluída, o estado `Ativo`{.action} é apresentado.
 
 Também pode seguir a evolução da ativação do Git na aba `Meus sites`{.action}. Na coluna `Git`{.action} da tabela, a menção `Em curso`{.action} apresentada na linha do site web relevante indica que o Git está em curso de ativação.
 
-Quando a associação do Git é efetuada, o estado `Ativado`{.action} aparece na coluna `Git`{.action} para o site web relevante.
+Quando a associação do Git é efetuada, o estado `Ativo`{.action} aparece na coluna `Git`{.action} para o site web relevante.
 
 ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/success-git-activation.png){.thumbnail}
 
@@ -191,7 +191,7 @@ Na tabela da aba `Meus sites`{.action}, identifique as linhas correspondentes ao
 - O endereço do repositório GitHub não existe ou está errado.
 - O ramo do repositório GitHub não existe ou o seu nome está errado.
 
-Para conhecer a causa exata do erro, consulte as informações do último deployment. Na tabela, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Informações da última implementação`{.action}.
+Para conhecer a causa exata do erro, consulte as informações do último deployment. Na tabela, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Informações sobre a última implantação`{.action}.
 
 ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 
@@ -222,13 +222,13 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Implementar o Git`{.action}.
+>> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Implementar Git`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
 > **Etapa 5**
 >>
->> Uma mensagem de confirmação aparece, bem como uma caixa de verificação que lhe indica que, em caso de conflito durante o deployment, pode forçar as modificações remotas (do repositório GitHub) sobre o seu repositório local. Marque ou não a caixa conforme a sua escolha, em seguida, clique em `Confirmar`{.action} para validar o deployment.
+>> Uma mensagem de confirmação aparece, bem como uma caixa de verificação que lhe indica que, em caso de conflito durante o deployment, pode forçar as modificações remotas (do repositório GitHub) sobre o seu repositório local. Marque ou não a caixa conforme a sua escolha, em seguida, clique em `Validar`{.action} para validar o deployment.
 >>
 >> > [!warning]
 >> >
@@ -261,11 +261,11 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para mostrar os nomes de domínio ou subdomínios associados.
+>> Na tabela que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para mostrar os nomes de domínio e subdomínios associados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, em seguida, em `Modificar o domínio`{.action}.
+>> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, em seguida, em `Modificar um domínio`{.action}.
 >>
 >> ![Opções de domínios associados](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
@@ -285,7 +285,7 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 >>
->> Clique em `Confirmar`{.action} para validar as modificações do seu nome de domínio.
+>> Clique em `Validar`{.action} para validar as modificações do seu nome de domínio.
 >>
 >> **2 - Apenas um nome de domínio está associado ao site web**
 >>
@@ -320,11 +320,11 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para mostrar os nomes de domínio ou subdomínios associados.
+>> Na tabela que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para mostrar os nomes de domínio e subdomínios associados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, em seguida, em `Desassociar o domínio`{.action}.
+>> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, em seguida, em `Destacar um domínio`{.action}.
 >>
 >> ![Opções de domínios associados](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
@@ -338,7 +338,7 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 >>
->> Clique em `Confirmar`{.action} para validar o desanexamento do seu nome de domínio.
+>> Clique em `Validar`{.action} para validar o desanexamento do seu nome de domínio.
 >>
 >> **2 - Apenas um nome de domínio está associado ao site web**
 >>
@@ -373,7 +373,7 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Configurar o Git`{.action}.
+>> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Configurar Git`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
@@ -413,7 +413,7 @@ Clique nas janelas abaixo para visualizar cada uma das **4** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Informações da última implementação`{.action}.
+>> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Informações sobre a última implementação`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
@@ -444,7 +444,7 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Eliminar o Git`{.action}.
+>> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Eliminar Git`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >>
@@ -454,19 +454,19 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 >> ![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 >>
->> A mensagem informa que a eliminação aplica-se a todos os nomes de domínio associados ao seu site web. Marque a caixa `Pretende esvaziar o conteúdo do diretório <your_repository>?`{.action} se quiser também eliminar o conteúdo (pastas e ficheiros) do diretório.
+>> A mensagem informa que a eliminação aplica-se a todos os nomes de domínio associados ao seu site web. Marque a caixa `Pretende esvaziar o conteúdo do diretório <o_seu_repositório>?`{.action} se quiser também eliminar o conteúdo (pastas e ficheiros) do diretório.
 >> 
 >> 1\. Se marcar a caixa, a seguinte janela aparece:
 >> 
 >> ![Meus sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
 >> 
->> Clique em `Confirmar`{.action} para validar a eliminação da associação Git do seu diretório e do seu conteúdo.
+>> Clique em `Validar`{.action} para validar a eliminação da associação Git do seu diretório e do seu conteúdo.
 >> 
 >> 2\. Se não marcar a caixa, a seguinte janela aparece:
 >> 
 >> ![Meus sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup-confirm.png){.thumbnail}
 >> 
->> Clique em `Confirmar`{.action} para validar a eliminação da associação Git do seu diretório.
+>> Clique em `Validar`{.action} para validar a eliminação da associação Git do seu diretório.
 
 ### Configurar um webhook no GitHub
 
@@ -499,7 +499,7 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Configurar o Git`{.action}.
+>> Na tabela que aparece, clique no botão `⁝`{.action} à direita do site web relevante, em seguida, em `Configurar Git`{.action}.
 >> 
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options-git-enabled.png){.thumbnail}
 >> 
@@ -511,12 +511,12 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 Aceda à sua conta GitHub e ao repositório onde pretende configurar o webhook. Aceda ao separador `Settings`{.action} e, no menu lateral dos parâmetros, clique em `Webhooks`{.action}". Clique no botão `Add webhook`{.action} para aceder ao formulário:
 
-- **Payload URL** : introduza o URL fornecido no formulário de associação de Git (`URL do webhook`{.action}).
-- **Content type** : escolha `application/json`{.action} como tipo de conteúdo para os dados enviados.
-- **Secret** : o segredo é facultativo. O GitHub irá utilizá-lo para assinar as mensagens enviadas pelo webhook, reforçando assim a segurança.
-- **SSL verification** : se o seu website suporta o HTTPS, deixe esta opção ativada para uma segurança acrescida.
-- **Which events would you like to trigger this webhook?** : selecione os eventos que irão despoletar o envio do webhook. Para uma implementação automática, `Just the push event`{.action} (apenas o evento push) é frequentemente suficiente, mas pode escolher `Send me everything`{.action} para receber notificações para todos os eventos.
-- **Active** : certifique-se de que a caixa está selecionada para ativar o webhook.
+- **Payload URL**: introduza o URL fornecido no formulário de associação de Git (`URL do webhook`{.action}).
+- **Content type**: escolha `application/json`{.action} como tipo de conteúdo para os dados enviados.
+- **Secret**: o segredo é facultativo. O GitHub irá utilizá-lo para assinar as mensagens enviadas pelo webhook, reforçando assim a segurança.
+- **SSL verification**: se o seu website suporta o HTTPS, deixe esta opção ativada para uma segurança acrescida.
+- **Which events would you like to trigger this webhook?**: selecione os eventos que irão despoletar o envio do webhook. Para uma implementação automática, `Just the push event`{.action} (apenas o evento push) é frequentemente suficiente, mas pode escolher `Send me everything`{.action} para receber notificações para todos os eventos.
+- **Active**: certifique-se de que a caixa está selecionada para ativar o webhook.
 
 Clique em `Add webhook`{.action} para guardar e ativar o seu novo webhook.
 
