@@ -12,8 +12,8 @@ Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de a
 >
 > Este guia explica unicamente como alterar um domínio ou um subdomínio já declarado num alojamento web da OVHcloud.
 >
-> - Para associar um novo nome de domínio ou subdomínio ao seu site web no seu alojamento web, consulte o nosso guia « [Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
-> - Para adicionar um novo site web ao seu alojamento web, consulte o nosso guia « [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+> - Para associar um novo nome de domínio ou subdomínio ao seu site web no seu alojamento web, consulte o nosso guia "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Para adicionar um novo site web ao seu alojamento web, consulte o nosso guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 **Saiba como alterar as definições de associação de um domínio/subdomínio já registado na sua oferta de alojamento web.**
 
@@ -30,7 +30,7 @@ Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de a
 >
 > A modificação das configurações de associação de um domínio ou de um subdomínio pode, em caso de má manipulação, levar a uma interrupção do acesso aos seus serviços (o seu website). Se não tiver a certeza quanto às alterações a realizar, não hesite em contactar um fornecedor especializado
 
-Para modificar os parâmetros de associação de um nome de domínio ou subdomínio já declarado na sua oferta de alojamento web, clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+Para modificar os parâmetros de associação de um nome de domínio ou subdomínio já declarado na sua oferta de alojamento web, clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -53,7 +53,7 @@ Para modificar os parâmetros de associação de um nome de domínio ou subdomí
 >>
 > **Etapa 4**
 >>
->> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
+>> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio e subdomínios associados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -67,20 +67,20 @@ Para modificar os parâmetros de associação de um nome de domínio ou subdomí
 >>
 >> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
->> Na continuação deste guia, encontrará uma descrição de cada um dos parâmetros disponíveis na janela acima. Após a leitura das diferentes descrições presentes na secção « [Descrição dos parâmetros modificáveis](#step1) » e após as suas modificações, clique no botão `Seguinte`{.action} no canto inferior direito da janela, depois passe para a [parte 2](#step2).
+>> Na continuação deste guia, encontrará uma descrição de cada um dos parâmetros disponíveis na janela acima. Após a leitura das diferentes descrições presentes na secção "[Descrição dos parâmetros modificáveis](#step1)" e após as suas modificações, clique no botão `Seguinte`{.action} no canto inferior direito da janela, depois passe para a [parte 2](#step2).
 
-### Etapa 1 - Descrição dos parâmetros alteráveis <a name="step1"></a>
+### 1 - Descrição dos parâmetros alteráveis <a name="step1"></a>
 
 > [!primary]
 >
 > Os campos `Domínio`{.action} e `Pasta raiz`{.action} não são modificáveis, pois trata-se de parâmetros relativos ao site web no seu alojamento web.
 >
-> - Para associar um novo nome de domínio ou subdomínio a um site web no seu alojamento web, consulte o nosso guia « [Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
+> - Para associar um novo nome de domínio ou subdomínio a um site web no seu alojamento web, consulte o nosso guia "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 > - Para alterar a pasta raiz do seu site web, terá de desligar o seu nome de domínio do site web existente a partir da pestana `Meus sites`{.action}. Para isso:
->      - Clique no botão `>`{.action} à esquerda do nome do site web relevante para visualizar os nomes de domínio e subdomínios associados.
->      - Clique depois no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, depois em `Desassociar o domínio`{.action}.
+>     - Clique no botão `>`{.action} à esquerda do nome do site web relevante para visualizar os nomes de domínio e subdomínios associados.
+>     - Clique depois no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, depois em `Desassociar o domínio`{.action}.
 >
-> Poderá depois adicionar um novo site web com o seu nome de domínio com a ajuda do nosso guia « [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Se o seu site web tiver uma configuração com Git, consulte previamente o nosso guia « [Configurar e utilizar Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) », **antes** de `Desassociar o domínio`{.action}.
+> Poderá depois adicionar um novo site web com o seu nome de domínio com a ajuda do nosso guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Se o seu site web tiver uma configuração com Git, consulte previamente o nosso guia "[Configurar e utilizar Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)", **antes** de `Desassociar o domínio`{.action}.
 
 ##### A opção "Ativar o CDN"
 
@@ -108,9 +108,9 @@ Selecione/desmarque esta opção unicamente se deseja separar os logs do seu nom
 
 Para saber mais sobre esta opção, consulte a nossa [página sobre estatísticas detalhadas](/links/web/hosting-traffic-analysis).
 
-Depois de efetuar as alterações, clique no botão `Seguinte`{.action} no canto inferior direito da janela para passar para a [parte 2](#step2).
+Depois de efetuar as alterações, clique no botão `Seguinte`{.action} no canto inferior direito da janela para passar a [parte 2](#step2).
 
-### Etapa 2 - Resumo das alterações <a name="step2"></a>
+### 2 - Resumo das alterações <a name="step2"></a>
 
 Após ter clicado no botão `Seguinte`{.action}, encontrará um resumo dos parâmetros que está prestes a aplicar ao seu domínio:
 

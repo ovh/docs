@@ -69,7 +69,7 @@ Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-dom
 >>
 >> Dans la suite de ce guide, vous trouverez un descriptif de chacun des paramètres disponibles dans la fenêtre ci-dessus. Suite à la lecture des différentes descriptions présentes dans la partie « [Description des paramètres modifiables](#step1) » et une fois vos modifications faites, cliquez sur le bouton `Suivant`{.action} situé en bas à droite de la fenêtre, puis passez à la [partie 2](#step2).
 
-### Étape 1 - Description des paramètres modifiables <a name="step1"></a>
+### 1 - Description des paramètres modifiables <a name="step1"></a>
 
 > [!primary]
 >
@@ -77,8 +77,8 @@ Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-dom
 >
 > - Pour associer un nouveau nom de domaine ou sous-domaine à un site web présent sur votre hébergement web, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
 > - Pour changer le dossier racine de votre site web, vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action}. Pour cela :
->      - Cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
->      - Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Détacher le domaine`{.action}.
+>     - Cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
+>     - Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Détacher le domaine`{.action}.
 >
 > Vous pourrez ensuite ajouter un nouveau site web avec votre nom de domaine à l'aide de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) », **avant** de `Détacher le domaine`{.action}.
 
@@ -104,7 +104,7 @@ Concernant cette option, apprenez-en plus grâce à notre [page sur les statisti
 
 Une fois vos modifications faites, cliquez sur le bouton `Suivant`{.action} situé en bas à droite de la fenêtre afin de passer à la [partie 2](#step2).
 
-### Étape 2 - Résumé des modifications <a name="step2"></a>
+### 2 - Résumé des modifications <a name="step2"></a>
 
 Une fois que vous avez cliqué sur le bouton `Suivant`{.action}, vous retrouvez un résumé des paramètres que vous vous apprêtez à appliquer à votre nom de domaine :
 

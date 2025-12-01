@@ -69,7 +69,7 @@ To modify the association settings of a domain name or subdomain already declare
 >>
 >> In the following part of this guide, you will find a description of each of the available parameters in the window above. After reading the different descriptions in the section "[Description of modifiable parameters](#step1)" and once your changes have been made, click on the `Next`{.action} button located at the bottom right of the window, then go to [Part 2](#step2).
 
-### Step 1 - Description of editable parameters <a name="step1"></a>
+### 1 - Description of editable parameters <a name="step1"></a>
 
 > [!primary]
 >
@@ -77,8 +77,8 @@ To modify the association settings of a domain name or subdomain already declare
 >
 > - To associate a new domain name or subdomain with a website on your web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 > - To change the root folder of your website, you will need to detach your domain name from the existing website from the `My Websites`{.action} tab. To do this :
->      - Click on the `>`{.action} button to the left of the name of the website to display the associated domain names and subdomains.
->      - Then click on the `⁝`{.action} button to the right of the domain name or subdomain you want to modify, and then click on `Detach domain`{.action}.
+>     - Click on the `>`{.action} button to the left of the name of the website to display the associated domain names and subdomains.
+>     - Then click on the `⁝`{.action} button to the right of the domain name or subdomain you want to modify, and then click on `Detach domain`{.action}.
 >
 > You can then add a new website with your domain name using our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)". If your website has a configuration with Git, please refer to our guide "[Configure and use Git with your OVHcloud web hosting](/pages/web_cloud/web_hosting/git_integration_webhosting)" **before** clicking on `Detach domain`{.action}.
 
@@ -110,7 +110,7 @@ Find out more about this option in our [detailed statistics page](/links/web/hos
 
 Once you have made your changes, click the `Next`{.action} button in the bottom right-hand corner of the window to go to [Part 2](#step2).
 
-### Step 2 - Summary of changes <a name="step2"></a>
+### 2 - Summary of changes <a name="step2"></a>
 
 Once you have clicked the `Next`{.action} button, you will see a summary of the settings you are about to apply to your domain name:
 
@@ -120,7 +120,7 @@ If all the settings are configured as you want, click the `Confirm`{.action} but
 
 Depending on the options you have selected, the changes may take between a few minutes and a few hours to be applied.
 
-If modifications of the **CDN**, **Country IP** and **separate logs** options are not taken into account after 24 hours, please refer to the respective resources listed for all of the options described in [Part1](#step1), in order to check that all of the required conditions have been met.
+If modifications of the **CDN**, **Country IP** and **separate logs** options are not taken into account after 24 hours, please refer to the respective resources listed for all of the options described in [Part 1](#step1), in order to check that all of the required conditions have been met.
 
 ## Go further
 

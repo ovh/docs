@@ -69,7 +69,7 @@ Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf 
 >>
 >> Im weiteren Verlauf dieser Anleitung finden Sie eine Beschreibung aller verfügbaren Parameter im obenstehenden Fenster. Nachdem Sie die verschiedenen Beschreibungen in der Abschnitt "[Beschreibung der änderbaren Parameter](#step1)" gelesen haben und Ihre Änderungen vorgenommen wurden, klicken Sie auf den Button `Weiter`{.action} unten rechts im Fenster, und wechseln Sie zur [Teil 2](#step2).
 
-### Schritt 1 - Beschreibung der bearbeitbaren Parameter <a name="step1"></a>
+### 1 - Beschreibung der bearbeitbaren Parameter <a name="step1"></a>
 
 > [!primary]
 >
@@ -84,8 +84,8 @@ Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf 
 >
 > - Um eine neue Domain oder Subdomains mit einer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie unsere Anleitung "[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 > - Um den Stammordner Ihrer Website zu ändern, müssen Sie Ihre Domain von der bestehenden Website im Tab `Meine Seiten`{.action} trennen.
->      - Klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugeordneten Domains und Subdomain anzuzeigen.
->      - Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem Namen der Domain oder Subdomains und dann auf `Domain abtrennen`{.action}.
+>     - Klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugeordneten Domains und Subdomain anzuzeigen.
+>     - Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem Namen der Domain oder Subdomains und dann auf `Domain abtrennen`{.action}.
 >
 > Anschließend können Sie eine neue Website mit Ihrer Domain hinzufügen, indem Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)" konsultieren. Falls Ihre Website eine Konfiguration mit Git besitzt, konsultieren Sie vorher unsere Anleitung "[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)", **bevor** Sie `Domain abtrennen`{.action} auswählen.
 
@@ -117,7 +117,7 @@ Weitere Informationen zu dieser Option finden Sie auf unserer [Seite zu detailli
 
 Nachdem Sie Ihre Änderungen vorgenommen haben, klicken Sie auf den Button `Weiter`{.action} unten rechts im Fenster, um zur [Teil 2](#step2) zu wechseln.
 
-### Schritt 2 - Zusammenfassung der Änderungen <a name="step2"></a>
+### 2 - Zusammenfassung der Änderungen <a name="step2"></a>
 
 Sobald Sie auf den Button `Weiter`{.action} geklickt haben, finden Sie eine Zusammenfassung der Einstellungen, die Sie für Ihren Domainnamen übernehmen möchten:
 

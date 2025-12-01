@@ -12,8 +12,8 @@ Durante l’utilizzo dell’hosting Web o l’aggiornamento del sito Web, potreb
 >
 > Questa guida ti mostra esclusivamente come modificare un dominio o un sottodominio già dichiarato su un hosting Web OVHcloud.
 >
-> - Per associare un nuovo dominio o sottodominio al tuo sito web presente sull'hosting web, consulta la nostra guida « [Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
-> - Per aggiungere un nuovo sito web al tuo hosting web, consulta la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+> - Per associare un nuovo dominio o sottodominio al tuo sito web presente sull'hosting web, consulta la nostra guida "[Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Per aggiungere un nuovo sito web al tuo hosting web, consulta la nostra guida "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 **Questa guida ti mostra come modificare le impostazioni di associazione di un dominio/sottodominio già dichiarato sul tuo piano di hosting Web.**
 
@@ -53,7 +53,7 @@ Per modificare i parametri di associazione di un dominio o sottodominio già dic
 >>
 > **Passaggio 4**
 >>
->> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
+>> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini e sottodomini associati.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -67,20 +67,20 @@ Per modificare i parametri di associazione di un dominio o sottodominio già dic
 >>
 >> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
 >>
->> Nella parte successiva di questa guida, troverai una descrizione di ciascun parametro disponibile nella finestra sopra. Dopo aver letto le diverse descrizioni presenti nella sezione « [Descrizione dei parametri modificabili](#step1) » e aver effettuato le tue modifiche, clicca sul pulsante `Continua`{.action} in basso a destra della finestra, quindi vai alla [parte 2](#step2).
+>> Nella parte successiva di questa guida, troverai una descrizione di ciascun parametro disponibile nella finestra sopra. Dopo aver letto le diverse descrizioni presenti nella sezione "[Descrizione dei parametri modificabili](#step1)" e aver effettuato le tue modifiche, clicca sul pulsante `Continua`{.action} in basso a destra della finestra, quindi vai alla [parte 2](#step2).
 
-### Step 1 - Descrizione delle impostazioni modificabili <a name="step1"></a>
+### 1 - Descrizione delle impostazioni modificabili <a name="step1"></a>
 
 > [!primary]
 >
 > I campi `Dominio`{.action} e `Cartella di root`{.action} non sono modificabili, in quanto si tratta di parametri relativi al sito web presente sull'hosting web.
 >
-> - Per associare un nuovo dominio o sottodominio a un sito web presente sull'hosting web, consulta la nostra guida « [Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
-> - Per modificare la Cartella di root del tuo sito web, dovrai staccare il tuo dominio dal sito web esistente tramite l'etichetta `I miei siti`{.action}. Per farlo :
->      - Clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini e sottodomini associati.
->      - Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Scollega il dominio`{.action}.
+> - Per associare un nuovo dominio o sottodominio a un sito web presente sull'hosting web, consulta la nostra guida "[Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Per modificare la cartella di root del tuo sito web, dovrai staccare il tuo dominio dal sito web esistente tramite l'etichetta `I miei siti`{.action}. Per farlo:
+>     - Clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini e sottodomini associati.
+>     - Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Scollega il dominio`{.action}.
 >
-> Potrai quindi aggiungere un nuovo sito web con il tuo dominio utilizzando la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Se il tuo sito web dispone di una configurazione con Git, consulta preventivamente la nostra guida « [Configurare e utilizzare Git con l'hosting web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) », **prima** di `Scollega il dominio`{.action}.
+> Potrai quindi aggiungere un nuovo sito web con il tuo dominio utilizzando la nostra guida "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Se il tuo sito web dispone di una configurazione con Git, consulta preventivamente la nostra guida "[Configurare e utilizzare Git con l'hosting web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)", **prima** di `Scollega il dominio`{.action}.
 
 ##### L'opzione "Attiva la CDN"
 
@@ -110,7 +110,7 @@ Per maggiori informazioni su questa opzione, accedi alla nostra [pagina sulle st
 
 Una volta effettuate le modifiche, clicca sul pulsante `Avanti`{.action} in basso a destra per passare alla [parte 2](#step2).
 
-### Step 2 - Riepilogo delle modifiche <a name="step2"></a>
+### 2 - Riepilogo delle modifiche <a name="step2"></a>
 
 Una volta cliccato sul pulsante `Seguente`{.action}, visualizzi un riepilogo dei parametri che intendi applicare al dominio:
 
