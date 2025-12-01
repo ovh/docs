@@ -31,7 +31,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 
 ### Zrozumieć pochodzenie strony "Index of"
 
-Twój domena została zadeklarowana, aby uzyskać dostęp do katalogu docelowego („`Katalog główny`”) na serwerze [FTP](/pages/web_cloud/web_hosting/ftp_connection) Twojego hostingu współdzielonego. W tym celu przejdź do karty [Moje strony](/pages/web_cloud/web_hosting/multisites_configure_multisite) w swoim hostingu internetowym, który znajduje się w Twoim [Panelu klienta OVHcloud](/links/manager).
+Twój domena została zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/pages/web_cloud/web_hosting/ftp_connection) Twojego hostingu współdzielonego. W tym celu przejdź do karty [Moje strony](/pages/web_cloud/web_hosting/multisites_configure_multisite) w swoim hostingu internetowym, który znajduje się w Twoim [Panelu klienta OVHcloud](/links/manager).
 
 Strona **Index of** wskazuje, że dany katalog docelowy nie zawiera pliku **index.php** lub **index.html**. Plik ten stanowi "*punkt wejścia*" Twojej strony WWW. Nazwa tego pliku jest znormalizowana.
 
@@ -51,9 +51,9 @@ Zaimportowałeś pliki swojej strony **mydomain.ovh** do katalogu `www` swojego 
 
 `Katalog główny` nie jest obecnie możliwy do zmiany po utworzeniu strony internetowej.
 
-Musisz odłączyć swoją domenę od istniejącej strony internetowej z poziomu karty `Moje strony`{.action} swojego hostingu internetowego. Aby to zrobić, zapoznaj się z naszym przewodnikiem „[Jak odłączyć domenę od istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)”.
+Musisz odłączyć swoją domenę od istniejącej strony internetowej z poziomu karty `Moje strony`{.action} swojego hostingu internetowego. Aby to zrobić, zapoznaj się z naszym przewodnikiem "[Jak odłączyć domenę od istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
 
-Następnie możesz dodać nową stronę internetową z użyciem swojej domeny, korzystając z naszego przewodnika „[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)”. Jeśli Twoja strona internetowa posiada konfigurację z użyciem Git, wcześniej zapoznaj się z naszym przewodnikiem „[Konfiguracja i korzystanie z Git na hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)”, **przed** wykonaniem działania `Odłącz domenę`{.action}.
+Następnie możesz dodać nową stronę internetową z użyciem swojej domeny, korzystając z naszego przewodnika "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Jeśli Twoja strona internetowa posiada konfigurację z użyciem Git, wcześniej zapoznaj się z naszym przewodnikiem "[Konfiguracja i korzystanie z Git na hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)", **przed** wykonaniem działania `Odłącz domenę`{.action}.
 
 Sprawdź, czy Twoja strona wyświetla się poprawnie. W przeciwnym razie zrestartuj urządzenie i w razie potrzeby wyczyść cache przeglądarki.
 

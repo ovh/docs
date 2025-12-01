@@ -31,11 +31,11 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 
 ### Comprendere l'origine della pagina "Index of"
 
-Il tuo dominio è dichiarato per accedere a una directory di destinazione (una " `Cartella di root` ") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. Questo tramite l'onghetta [I miei siti](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting web presente nel tuo [Spazio Cliente OVHcloud](/links/manager).
+Il tuo dominio è dichiarato per accedere a una directory di destinazione (una "`Cartella di root`") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. Questo tramite la scheda [I miei siti](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting web presente nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
-La pagina **Index of** indica che la directory di destinazione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito Web. Il nome del file è normalizzato.
+La pagina **Index of** indica che la directory di destinazione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*"del tuo sito Web. Il nome del file è normalizzato.
 
-Per visualizzare il tuo sito web, dovrai quindi, dall'onghetta `I miei siti`{.action} del tuo hosting web, collegare il tuo dominio al sito web il cui `Cartella di root` contiene il file **index.php** o **index.html**.
+Per visualizzare il tuo sito web, dovrai quindi, dalla scheda `I miei siti`{.action} del tuo hosting web, collegare il tuo dominio al sito web il cui `Cartella di root` contiene il file **index.php** o **index.html**.
 
 > [!primary]
 >
@@ -49,9 +49,9 @@ Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo 
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-La `Cartella radice` non è, a oggi, modificabile una volta creato il sito web.
+La `Cartella di root` non è, a oggi, modificabile una volta creato il sito web.
 
-Dovrai staccare il tuo dominio dal sito web esistente dall'onghetta `I miei siti`{.action} del tuo hosting web. Per farlo, consulta la nostra guida « [Come staccare un dominio da un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
+Dovrai staccare il tuo dominio dal sito web esistente dall'onghetta `I miei siti`{.action} del tuo hosting web. Per farlo, consulta la nostra guida « [Come staccare un dominio da un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 Potrai quindi aggiungere un nuovo sito web con il tuo dominio utilizzando la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Se il tuo sito web dispone di una configurazione con Git, consulta preventivamente la nostra guida « [Configurare e utilizzare Git con un hosting Web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **prima** di `Scollega il dominio`{.action}.
 

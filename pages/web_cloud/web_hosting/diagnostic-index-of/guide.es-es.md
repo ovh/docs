@@ -1,5 +1,5 @@
 ---
-title: ¿Qué hacer en caso de página del "Index of" ?
+title: ¿Qué hacer en caso de página del "Index of"?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página "Index of"
 updated: 2025-12-02
 ---
@@ -32,7 +32,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ### Comprender el origen de la página "Index of"
 
-Su nombre de dominio está declarado para acceder a un directorio objetivo (un « `Carpeta raíz` ») en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Esto se hace a través de la pestaña [Mis sitios](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su alojamiento web, disponible en su [área de cliente de OVHcloud](/links/manager).
+Su nombre de dominio está declarado para acceder a un directorio objetivo (un "`Carpeta raíz`") en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Esto se hace a través de la pestaña [Mis sitios](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su alojamiento web, disponible en su [área de cliente de OVHcloud](/links/manager).
 
 La página **Index of** indica que el directorio de destino no contiene un archivo **index.php** o **index.html**. Dicho archivo constituye el "*punto de entrada*" del sitio web. El nombre de este archivo está normalizado.
 
@@ -52,9 +52,9 @@ Ha importado los archivos de su sitio **mydomain.ovh** en la carpeta `www` de su
 
 El `Carpeta raíz` no es modificable una vez creado el sitio web.
 
-Deberá desvincular su nombre de dominio del sitio web existente desde la pestaña `Mis sitios`{.action} de su alojamiento web. Para ello, consulte nuestro guía « [¿Cómo desvincular un nombre de dominio de un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
+Deberá desvincular su nombre de dominio del sitio web existente desde la pestaña `Mis sitios`{.action} de su alojamiento web. Para ello, consulte nuestra guía "[¿Cómo desvincular un nombre de dominio de un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
 
-A continuación, podrá añadir un nuevo sitio web con su nombre de dominio utilizando nuestro guía « [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si su sitio web tiene una configuración con Git, consulte previamente nuestro guía « [Configurar y utilizar Git con un alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **antes** de `Desvincular el dominio`{.action}.
+A continuación, podrá añadir un nuevo sitio web con su nombre de dominio utilizando nuestra guía "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Si su sitio web tiene una configuración con Git, consulte previamente nuestra guía "[Configurar y utilizar Git con un alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" **antes** de `Desvincular el dominio`{.action}.
 
 Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacie la caché del navegador si fuera necesario.
 
