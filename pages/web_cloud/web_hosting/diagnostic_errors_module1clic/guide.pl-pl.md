@@ -185,7 +185,7 @@ Aby połączyć swoją nazwę domeny ze stroną internetową (katalog główny),
 >>
 > **Krok 5**
 >>
->> Po odłączeniu nazwy domeny od strony internetowej, zapoznaj się z naszym przewodnikiem „[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
+>> Po odłączeniu nazwy domeny od strony internetowej, zapoznaj się z naszym przewodnikiem "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 Możesz również zalogować się do Twojego hostingu za pomocą protokołu [FTP](/pages/web_cloud/web_hosting/ftp_connection), a następnie usunąć zawartość folderu. Operacja ta została wykonana lokalnie lub po usunięciu pliku, poprzez przeniesienie całej jego zawartości do innego katalogu FTP.
 

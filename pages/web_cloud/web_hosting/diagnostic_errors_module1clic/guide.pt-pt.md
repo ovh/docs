@@ -58,13 +58,13 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
+>> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio e subdomínios associados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
 > **Etapa 5**
 >>
->> Efetue, de seguida, as seguintes verificações :
+>> Efetue, de seguida, as seguintes verificações:
 >>
 >> |Cenário|Solução|
 >> |---|---|
@@ -116,7 +116,7 @@ Uma vez concluído, poderá instalar um novo "módulo com 1 clique".
 
 Para eliminar uma base de dados a partir da [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web correspondente.
 
-Na página que se abrir, clique no separador `Bases de dados`{.action}. Na tabela que aparecer, clique no botão `...`{.action} à direita da linha correspondente ao banco de dados que pretende eliminar e, a seguir, em `Eliminar base de dados`{.action} :
+Na página que se abrir, clique no separador `Bases de dados`{.action}. Na tabela que aparecer, clique no botão `...`{.action} à direita da linha correspondente ao banco de dados que pretende eliminar e, a seguir, em `Eliminar base de dados`{.action}:
 
 ![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
 
@@ -177,7 +177,7 @@ Para ligar o seu nome de domínio a outro site (pasta raiz), clique nas janelas 
 >>
 > **Etapa 4**
 >>
->> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
+>> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio e subdomínios associados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -187,7 +187,7 @@ Para ligar o seu nome de domínio a outro site (pasta raiz), clique nas janelas 
 >>
 > **Etapa 5**
 >>
->> Depois de dissociar o nome de domínio do site, siga o nosso guia « [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>> Depois de dissociar o nome de domínio do site, siga o nosso guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 Também pode ligar-se ao seu alojamento web através do protocolo [FTP](/pages/web_cloud/web_hosting/ftp_connection), e eliminar o conteúdo da pasta. Depois de o ter guardado localmente ou depois de o ter esvaziado ao mover todo o seu conteúdo para outro diretório FTP.
 

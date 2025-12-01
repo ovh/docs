@@ -34,7 +34,7 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -57,7 +57,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 > **Etapa 4**
 >>
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -153,7 +153,7 @@ Después de haber iniciado la creación de su "módulo en un clic", ha recibido 
 
 Este mensaje significa que el **Carpeta raíz** del sitio web al que está asociado su nombre de dominio ya contiene uno o varios archivos o directorios.
 
-Para conectar su nombre de dominio a otro sitio web (directorio raíz), haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Para conectar su nombre de dominio a otro sitio web (carpeta raíz), haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -176,7 +176,7 @@ Para conectar su nombre de dominio a otro sitio web (directorio raíz), haga cli
 >>
 > **Etapa 4**
 >>
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -186,7 +186,7 @@ Para conectar su nombre de dominio a otro sitio web (directorio raíz), haga cli
 >>
 > **Etapa 5**
 >>
->> Una vez que el nombre de dominio esté desvinculado del sitio web, consulte nuestro tutorial « [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>> Una vez que el nombre de dominio esté desvinculado del sitio web, consulte nuestro tutorial "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 También puede conectarse a su alojamiento web a través del protocolo [FTP](/pages/web_cloud/web_hosting/ftp_connection) y eliminar el contenido de la carpeta. Después de realizar una copia de seguridad local del archivo o de vaciarlo moviendo todo su contenido a otro directorio FTP.
 

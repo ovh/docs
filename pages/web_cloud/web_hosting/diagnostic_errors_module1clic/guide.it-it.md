@@ -57,7 +57,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
+>> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini e sottodomini associati.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -176,7 +176,7 @@ Per collegare il tuo nome dominio a un altro sito web (cartella radice), clicca 
 >>
 > **Passaggio 4**
 >>
->> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
+>> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini e sottodomini associati.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -186,7 +186,7 @@ Per collegare il tuo nome dominio a un altro sito web (cartella radice), clicca 
 >>
 > **Passaggio 5**
 >>
->> Dopo aver staccato il nome dominio dal sito web, consulta la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>> Dopo aver staccato il nome dominio dal sito web, consulta la nostra guida "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 È inoltre possibile accedere all’hosting Web tramite il protocollo [FTP](/pages/web_cloud/web_hosting/ftp_connection) e quindi eliminare il contenuto della cartella. Dopo averlo salvato localmente o dopo averlo svuotato spostando tutto il suo contenuto in un'altra directory FTP.
 
