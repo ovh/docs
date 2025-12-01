@@ -86,15 +86,15 @@ Esta re-escritura de URL pode favorecer o referenciamento SEO do seu website.
 
 ### Reencaminhar os pedidos para um dossier em particular sem apresentar o dossier em questão
 
-Quando utiliza um alojamento partilhado OVHcloud, o seu nome de domínio (por exemplo: **domain.tld**) é declarado num site web presente no seu alojamento web. Isto é feito para mostrar o conteúdo de uma pasta-alvo também chamada `Pasta raiz`. É esta pasta que contém os ficheiros do seu site web. Pode personalizar o nome desta `Pasta raiz` no momento em que adiciona o site web ao seu alojamento através da sua área de cliente OVHcloud.
+Quando utiliza um alojamento partilhado OVHcloud, o seu nome de domínio (por exemplo: **domain.tld**) é declarado num site web presente no seu alojamento web. Isto é feito para mostrar o conteúdo de uma pasta-alvo também chamada `pasta raiz`. É esta pasta que contém os ficheiros do seu site web. Pode personalizar o nome desta `pasta raiz` no momento em que adiciona o site web ao seu alojamento através da sua área de cliente OVHcloud.
 
-Consulte o nosso guia « [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » se quiser obter mais informações sobre o assunto.
+Consulte o nosso guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" se quiser obter mais informações sobre o assunto.
 
-Alguns utilizadores não colocam os seus websites diretamente na base do `Pasta raiz`. Eles criam uma sub-pasta (por exemplo: **MyWebsite**) no seu `Pasta raiz` para colocar o seu website.
+Alguns utilizadores não colocam os seus websites diretamente na base do `pasta raiz`. Eles criam uma sub-pasta (por exemplo: **MyWebsite**) no seu `pasta raiz` para colocar o seu website.
 
 Neste caso, o URL para aceder ao site terá a seguinte forma: **http://domain.tld/MyWebsite**
 
-Se os ficheiros do seu site web não estiverem diretamente presentes na `Pasta raiz` declarada para o seu site web na sua área de cliente OVHcloud e não quiser mostrar o nome da pasta na URL do seu site web, edite o ficheiro « .htaccess » localizado na raiz do diretório que contém o seu site web.
+Se os ficheiros do seu site web não estiverem diretamente presentes na `pasta raiz` declarada para o seu site web na sua área de cliente OVHcloud e não quiser mostrar o nome da pasta na URL do seu site web, edite o ficheiro ".htaccess" localizado na raiz do diretório que contém o seu site web.
 
 Introduza o seguinte código no seu interior (substituindo no nosso exemplo os valores **domain.tld** pelo seu nome de domínio e **MyWebsite** pelo nome da sua própria pasta):
 

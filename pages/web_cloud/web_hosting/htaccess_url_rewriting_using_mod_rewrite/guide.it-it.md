@@ -87,17 +87,17 @@ Questa riscrittura dell'URL può favorire l'indicizzazione SEO del tuo sito Web.
 
 ### Reindirizzare le richieste verso una cartella specifica senza visualizzare la pratica in questione
 
-Quando utilizzi un'offerta di hosting condiviso OVHcloud, il tuo nome dominio (ad esempio: **domain.tld**) è dichiarato su un sito web presente sul tuo hosting. Questo permette di visualizzare il contenuto di una cartella di destinazione detta anche `Cartella di root`. È questa la cartella che contiene i file del tuo sito web. Puoi personalizzare il nome di questa `Cartella di root` al momento dell'aggiunta del sito web sul tuo hosting tramite lo Spazio Cliente OVHcloud.
+Quando utilizzi un hosting condiviso OVHcloud, il tuo nome dominio (ad esempio: **domain.tld**) è dichiarato su un sito web presente sul tuo hosting. Questo permette di visualizzare il contenuto di una cartella di destinazione detta anche `Cartella di root`. È questa la cartella che contiene i file del tuo sito web. Puoi personalizzare il nome di questa `Cartella di root` al momento dell'aggiunta del sito web sul tuo hosting tramite lo Spazio Cliente OVHcloud.
 
-Consulta la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) » se desideri ulteriori informazioni sull'argomento.
+Consulta la nostra guida "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)" se desideri ulteriori informazioni sull'argomento.
 
 Alcuni utenti non caricano il loro sito direttamente alla base della `Cartella di root` e creano una sottocartella (ad esempio: **MyWebsite**) nella loro `Cartella di root` per creare il tuo sito Web.
 
 In questo caso, l'URL per accedere al sito avrà la forma seguente: **http://domain.tld/MyWebsite**
 
-Se i file del tuo sito web non sono direttamente presenti nella `Cartella di root` dichiarata per il tuo sito web sullo Spazio Cliente OVHcloud e non desideri visualizzare il nome della cartella nell'URL del tuo sito web, modifica il file « .htaccess » presente alla radice della directory che contiene il tuo sito web.
+Se i file del tuo sito web non sono direttamente presenti nella `Cartella di root` dichiarata per il tuo sito web sullo Spazio Cliente OVHcloud e non desideri visualizzare il nome della cartella nell'URL del tuo sito web, modifica il file ".htaccess" presente alla radice della directory che contiene il tuo sito web.
 
-Inserisci il seguente codice all'interno (sostituendo nel nostro esempio i valori **domain.tld** con il tuo dominio e **MyWebsite*** con il nome della tua cartella):
+Inserisci il seguente codice all'interno (sostituendo nel nostro esempio i valori **domain.tld** con il tuo dominio e **MyWebsite** con il nome della tua cartella):
 
 ```bash
 RewriteEngine on

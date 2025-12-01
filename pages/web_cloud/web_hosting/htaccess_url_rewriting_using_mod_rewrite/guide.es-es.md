@@ -88,13 +88,13 @@ Esta reescritura de URL puede favorecer el posicionamiento SEO de su sitio web.
 
 Cuando utilice un alojamiento compartido de OVHcloud, su nombre de dominio (por ejemplo: **domain.tld**) se declara en un sitio web situado en su alojamiento web. Esto permite mostrar el contenido de una carpeta objetivo que también se llama `carpeta raíz`. Es esta carpeta la que contiene los archivos de su sitio web. Puede personalizar el nombre de esta `carpeta raíz` cuando agregue el sitio web a su alojamiento desde su área de cliente de OVHcloud.
 
-Consulte nuestra guía « [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) » si desea obtener más información sobre el tema.
+Consulte nuestra guía "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)" si desea obtener más información sobre el tema.
 
 Algunos usuarios no ubican su sitio web directamente en la base de la `carpeta raíz`. Crean una subcarpeta (por ejemplo: **MyWebsite**) en su `carpeta raíz` para poner su sitio web en ella.
 
 En ese caso, la URL para acceder al sitio tendrá la forma siguiente: **http://domain.tld/MyWebsite**.
 
-Si los archivos de su sitio web no están directamente en la `carpeta raíz` declarada para su sitio web en su área de cliente de OVHcloud y no desea mostrar el nombre de la carpeta en la URL de su sitio web, edite el archivo « .htaccess » situado en la raíz del directorio que contiene su sitio web.
+Si los archivos de su sitio web no están directamente en la `carpeta raíz` declarada para su sitio web en su área de cliente de OVHcloud y no desea mostrar el nombre de la carpeta en la URL de su sitio web, edite el archivo ".htaccess" situado en la raíz del directorio que contiene su sitio web.
 
 Introduzca el siguiente código (sustituyendo en nuestro ejemplo los valores **domain.tld** por su nombre de dominio y **MyWebsite** por el nombre de su propia carpeta):
 
@@ -113,7 +113,7 @@ Los certificados SSL permiten cifrar los intercambios efectuados en HTTP con su 
 
 Si no tiene certificado SSL, consulte nuestra guía sobre la [gestión de un certificado SSL en un alojamiento compartido de OVHcloud](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
-Algunos de sus visitantes pueden olvidar introducir la URL de acceso a su sitio en **https://** : esto representa un riesgo nada desdeñable para los datos intercambiados entre su sitio web y sus navegadores de internet.
+Algunos de sus visitantes pueden olvidar introducir la URL de acceso a su sitio en **https://**: esto representa un riesgo nada desdeñable para los datos intercambiados entre su sitio web y sus navegadores de internet.
 
 Para ello, edite el archivo ".htaccess" situado en la raíz del directorio que contiene el sitio web. Introduzca el siguiente código (sustituyendo en nuestro ejemplo **domain.tld** por su propio dominio):
 

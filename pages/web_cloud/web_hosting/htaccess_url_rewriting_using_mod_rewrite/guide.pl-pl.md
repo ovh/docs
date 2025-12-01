@@ -88,13 +88,13 @@ Ten adres URL może ułatwić pozycjonowanie SEO Twojej strony WWW.
 
 Gdy korzystasz z udostępnionego hostingu OVHcloud, nazwa domeny (np. **domain.tld**) jest zadeklarowana na stronie internetowej znajdującej się na Twoim koncie hostingu. W ten sposób można wyświetlić zawartość katalogu nazywanego również `Katalog główny`. To właśnie ten katalog zawiera pliki Twojej strony internetowej. Możesz dostosować nazwę tego `Katalog główny` podczas dodawania strony internetowej do hostingu za pomocą Panelu klienta OVHcloud.
 
-Zapoznaj się z naszym przewodnikiem „[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)”, jeśli chcesz uzyskać więcej informacji na ten temat.
+Zapoznaj się z naszym przewodnikiem "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)", jeśli chcesz uzyskać więcej informacji na ten temat.
 
 Niektórzy użytkownicy nie umieszczają swojej strony internetowej bezpośrednio na podstawie `Katalog główny`. Następnie tworzą podfolder (np.: **MyWebsite**) w `Katalog główny`, aby umieścić na nim swoją stronę internetową.
 
 W takim przypadku URL dostępu do strony będzie wyglądał następująco: **http://domain.tld/MyWebsite**
 
-Jeśli pliki Twojej strony internetowej nie znajdują się bezpośrednio w `Katalog główny` zadeklarowanym dla Twojej strony internetowej w Panelu klienta OVHcloud i nie chcesz, aby nazwa katalogu była widoczna w adresie URL strony, edytuj plik „.htaccess” znajdujący się w katalogu głównym folderu zawierającego Twoją stronę internetową.
+Jeśli pliki Twojej strony internetowej nie znajdują się bezpośrednio w `Katalog główny` zadeklarowanym dla Twojej strony internetowej w Panelu klienta OVHcloud i nie chcesz, aby nazwa katalogu była widoczna w adresie URL strony, edytuj plik ".htaccess" znajdujący się w katalogu głównym folderu zawierającego Twoją stronę internetową.
 
 Umieść w nim następujący kod (zastępując w naszym przykładzie wartości **domain.tld** nazwą domeny i **MyWebsite** nazwą Twojego katalogu):
 
