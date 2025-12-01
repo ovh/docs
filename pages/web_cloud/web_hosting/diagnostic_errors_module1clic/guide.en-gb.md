@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting common 1-click module errors"
 excerpt: "Find out how to diagnose the most common cases of 1-click module creation errors"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 ## Objective
