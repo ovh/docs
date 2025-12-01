@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Fehler bei 1-Klick-Modulen beheben"
 excerpt: "Erfahren Sie hier, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können"
-updated: 2025-11-27
+updated: 2025-12-02
 ---
 
 ## Ziel
