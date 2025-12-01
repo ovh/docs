@@ -70,7 +70,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 > **Etapa 4**
 >>
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -80,11 +80,11 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
->> A continuación, acceda al espacio de almacenamiento FTP que contiene los archivos y carpetas de su sitio consultando [este guía](/pages/web_cloud/web_hosting/ftp_connection).
+>> A continuación, acceda al espacio de almacenamiento FTP que contiene los archivos y carpetas de su sitio consultando [esta guía](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
-> Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](/pages/web_cloud/web_hosting/ftp_change_password).
+> Si desea cambiar la contraseña de su espacio FTP, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password).
 >
 
 Abra la `Carpeta raíz` anteriormente indicada.

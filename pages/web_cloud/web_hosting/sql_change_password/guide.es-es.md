@@ -69,7 +69,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 > **Etapa 4**
 >>
->> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -79,11 +79,11 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 >>
->> A continuación, acceda al espacio de almacenamiento FTP que contiene los archivos y carpetas de su sitio consultando [este guía](/pages/web_cloud/web_hosting/ftp_connection).
+>> A continuación, acceda al espacio de almacenamiento FTP que contiene los archivos y carpetas de su sitio consultando [esta guía](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
-> Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](/pages/web_cloud/web_hosting/ftp_change_password).
+> Si desea cambiar la contraseña de su espacio FTP, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password).
 >
 
 Abra la `Carpeta raíz` anteriormente indicada.
@@ -115,7 +115,7 @@ Vuelva al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cl
 - Haga clic en la pestaña `Bases de datos`{.action} **a la derecha** de su pantalla.
 - Busque el nombre de la base de datos encontrada anteriormente en la columna `Nombre de la base` de datos.
 
-Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, vaya al [parte 3](#step3).
+Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, pase a la [parte 3](#step3).
 
 En caso contrario, la base de datos del sitio web está asociada a un servicio [Web Cloud Databases](/links/web/databases).
 

@@ -69,7 +69,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 4**
 >>
->> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio o sottodomini associati.
+>> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio e sottodomini associati.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -257,7 +257,7 @@ Accedi alla sezione `Database`{.action} del tuo Spazio Cliente e clicca sulla sc
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-Per modificare la password del tuo database sul server, sul pulsante `...`{.action} a destra del `Nome utente`{.action} identificato allo [2](#step2) e seleziona `Modifica la password`{.action}.
+Per modificare la password del tuo database sul server, clicca sul pulsante `...`{.action} a destra del `Nome utente`{.action} identificato nella [parte 2](#step2) e seleziona `Modifica la password`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 

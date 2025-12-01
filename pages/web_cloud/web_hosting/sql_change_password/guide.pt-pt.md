@@ -69,7 +69,7 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 > **Etapa 4**
 >>
->> Na tabela que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para mostrar os nomes de domínio ou subdomínios associados.
+>> Na tabela que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para mostrar os nomes de domínio e subdomínios associados.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -102,7 +102,7 @@ Existem dois casos possíveis:
 - Caso n°1: a base de dados do seu site faz parte da sua oferta de alojamento;
 - Caso n°2: está incluída numa oferta *Web Cloud Databases*, caso em que deverá encontrar o **nome do servidor** e o **nome de utilizador** da sua base de dados, de forma a identificar a base de dados sem correr o risco de erro.
 
-Para determinar o caso aplicável ao seu website, no ficheiro de configuração identificado na [parte 1](#step1), comece por anotar o nome da sua base de dados:
+Para determinar o caso aplicável ao seu site, no ficheiro de configuração identificado na [parte 1](#step1), comece por anotar o nome da sua base de dados:
 
 - Para WORDPRESS: O nome aparece sob a menção **"DB_NAME"**;
 - Para JOOMLA: o nome aparece na rubrica **"public $db"**;
@@ -115,7 +115,7 @@ De seguida, volte à sua [Área de Cliente OVHcloud](/links/manager) na secção
 - Clique no separador `Bases de dados`{.action} **à direita** do ecrã;
 - Verifique o nome da base de dados encontrada anteriormente na coluna `Nome da base`;
 
-Se localizar o nome da base de dados indicado no ficheiro de configuração nesta parte da Área de Cliente, consulte a [parte 3](#step3).
+Se localizar o nome da base de dados indicado no ficheiro de configuração nesta parte da Área de Cliente, avance para a [parte 3](#step3).
 
 Caso contrário, a base de dados do seu site está associada a uma oferta [Web Cloud Databases](/links/web/databases).
 
