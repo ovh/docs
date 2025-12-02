@@ -1,7 +1,7 @@
 ---
 title: Managing and rebuilding software RAID on servers using UEFI boot mode
 excerpt: Find out how to manage and rebuild software RAID after a disk replacement on a server using UEFI boot mode
-updated: 2025-11-28
+updated: 2025-12-02
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ When you purchase a new server, you may feel the need to perform a series of tes
 - [Simulating a disk failure](#diskfailure)
     - [Removing the failed disk](#diskremove)
 - [Rebuilding the RAID](#raidrebuild)
-    - [Rebuilding the RAID after the main disk is replaced (rescue mode)](#rescumode)
+    - [Rebuilding the RAID after the main disk is replaced (rescue mode)](#rescuemode)
     - [Recreating the EFI System Partition](#recreateesp)
     - [Rebuilding RAID when EFI partitions are not synchronized after major system updates (e.g GRUB)](efiraodgrub)
     - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
@@ -293,7 +293,7 @@ sudo apt install rsync
 sudo yum install rsync
 ```
 
-To execute a script in linux, it is preferable to create an executable file:
+To execute a script in linux, you need an executable file:
 
 - Start by creating a .sh file in the directory of your choice, replacing `script-name` with the name of your choice
 
@@ -306,6 +306,7 @@ sudo touch script-name.sh
 ```sh
 sudo nano script-name.sh
 ```
+
 ```sh
 #!/bin/bash
 

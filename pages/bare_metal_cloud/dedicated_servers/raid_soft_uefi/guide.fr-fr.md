@@ -1,7 +1,7 @@
 ---
 title: "Gestion et reconstruction d'un RAID logiciel sur les serveurs utilisant le mode de démarrage UEFI"
 excerpt: Découvrez comment gérer et reconstruire un RAID logiciel après un remplacement de disque sur un serveur utilisant le mode de démarrage UEFI
-updated: 2025-11-12
+updated: 2025-12-02
 ---
 
 ## Objectif
@@ -44,7 +44,7 @@ Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effec
 - [Simulation d'une panne de disque](#diskfailure)
     - [Suppression du disque défectueux](#diskremove)
 - [Reconstruction du RAID](#raidrebuild)
-    - [Reconstruction du RAID après le remplacement du disque principal (mode de secours)](#rescumode)
+    - [Reconstruction du RAID après le remplacement du disque principal (mode de secours)](#rescuemode)
     - [Re création de la partition système EFI](#recreateesp)
     - [Reconstruction du RAID lorsque les partitions EFI ne sont pas synchronisées après des mises à jour majeures du système (ex. GRUB)](efiraodgrub)
     - [Ajout de l'étiquette à la partition SWAP (si applicable)](#swap-partition)
@@ -273,6 +273,10 @@ En effet, dans certains cas, le démarrage à partir d'une ESP obsolète ne fonc
 
 Nous vous recommandons de synchroniser vos ESP régulièrement ou après chaque mise à jour majeure du système. Par défaut, toutes les partitions système EFI contiennent les mêmes fichiers après l'installation. Cependant, si une mise à jour majeure du système est impliquée, la synchronisation des ESP est essentielle pour garder le contenu à jour.
 
+<a name="script"></a>
+
+#### Script
+
 Voici un script que vous pouvez utiliser pour les synchroniser manuellement. Vous pouvez également exécuter un script automatisé pour synchroniser les partitions quotidiennement ou chaque fois que le service démarre.
 
 Avant d'exécuter le script, assurez-vous que `rsync` est installé sur votre système :
@@ -287,6 +291,20 @@ sudo apt install rsync
 
 ```sh
 sudo yum install rsync
+```
+
+Pour exécuter un script sous Linux, vous avez besoin d'un fichier exécutable :
+
+- Commencez par créer un fichier .sh dans le répertoire de votre choix, en remplaçant `nom-du-script` par le nom de votre choix.
+
+```sh
+sudo touch nom-du-script.sh
+```
+
+- Ouvrez le fichier avec un éditeur de texte et ajoutez les lignes suivantes :
+
+```sh
+sudo nano nom-du-script.sh
 ```
 
 ```sh
@@ -310,6 +328,26 @@ while read -r partition; do
     rsync -ax "/boot/efi/" "${MOUNTPOINT}/"
     umount "${MOUNTPOINT}"
 done < <(blkid -o device -t LABEL=EFI_SYSPART)
+```
+
+Enregistrez et fermez le fichier.
+
+- Rendez le script exécutable
+
+```sh
+sudo chmod +x nom-du-script.sh
+```
+
+- Exécutez le script
+
+```sh
+sudo ./nom-du-script.sh
+```
+
+- Si vous n'êtes pas dans le dossier
+
+```sh
+./chemin/vers/dossier/nom-du-script.sh
 ```
 
 Lorsque le script est exécuté, le contenu de la partition EFI montée sera synchronisé avec les autres. Pour accéder au contenu, vous pouvez monter l'une de ces partitions EFI non montées sur le point de montage : `/var/lib/grub/esp`.
@@ -507,10 +545,6 @@ Nous pouvons maintenant procéder au remplacement du disque.
 Une fois le disque remplacé, l'étape suivante consiste à copier la table de partitions du disque sain (dans cet exemple, nvme1n1) sur le nouveau (nvme0n1).
 
 **Pour les partitions GPT**
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/nvmeXnX /dev/nvmeXnX
-```
 
 La commande doit être dans ce format : `sgdisk -R /dev/nouveau disque /dev/disque sain`
 
@@ -855,7 +889,7 @@ swapon /dev/nvme1n1p4
 Nous sortons de l'environnement chroot avec `exit` et rechargeons le système :
 
 ```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo systemctl daemon-reload
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
 ```
 
 Nous démontons tous les disques :
@@ -943,30 +977,7 @@ Ensuite, nous attribuons l'étiquette `EFI_SYSPART` à la partition. (ce nommage
 [user@server_ip ~]# sudo fatlabel /dev/nvme0n1p1 EFI_SYSPART
 ```
 
-À l'aide du script ci-dessous, nous copions le contenu de la partition EFI System saine vers la partition nouvellement créée en synchronisant les deux partitions :
-
-```sh
-#!/bin/bash
-
-set -euo pipefail
-
-MOUNTPOINT="/var/lib/grub/esp"
-MAIN_PARTITION=$(findmnt -n -o SOURCE /boot/efi)
-
-echo "${MAIN_PARTITION} est la partition principale"
-
-mkdir -p "${MOUNTPOINT}"
-
-while read -r partition; do
-    if [[ "${partition}" == "${MAIN_PARTITION}" ]]; then
-        continue
-    fi
-    echo "Travail sur ${partition}"
-    mount "${partition}" "${MOUNTPOINT}"
-    rsync -ax "/boot/efi/" "${MOUNTPOINT}/"
-    umount "${MOUNTPOINT}"
-done < <(blkid -o device -t LABEL=EFI_SYSPART)
-```
+Une fois cela fait, vous pouvez synchroniser les deux partitions à l'aide du script que nous avons fourni [ici](#script).
 
 Nous vérifions que la nouvelle partition EFI System a été correctement créée et que le système la reconnaît :
 
