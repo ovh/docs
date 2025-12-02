@@ -276,7 +276,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 
 ///
 
-### 3 - Mettre votre site web en ligne <a name="site-online"></a>
+### 2 - Mettre votre site web en ligne <a name="site-online"></a>
 
 Une fois le site web déclaré avec votre nom de domaine sur votre hébergement web, il ne vous reste plus qu’à mettre en ligne le contenu de votre site web. Pour rappel, vous devez réaliser cette manipulation dans le **dossier racine** que vous avez défini lors de l’ajout du site web dans votre espace client OVHcloud.
 
