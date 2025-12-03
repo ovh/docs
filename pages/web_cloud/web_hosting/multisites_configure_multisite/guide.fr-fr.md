@@ -92,11 +92,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> > [!warning]
 >> >
->> > Par défaut, le **dossier racine** de votre site web est généré automatiquement une fois le site web ajouté à votre hébergement web. Ce même **dossier racine** est alors créé en parallèle dans l'espace de stockage de votre hébergement web (accessible via le protocole FTP, SFTP ou SSH en fonction de votre offre d'hébergement web). Si vous souhaitez définir vous-même le nom du **dossier racine**, notamment si vous avez déjà placé le contenu de votre site web dans un dossier spécifique présent dans l'espace de stockage de votre hébergement web, vous devrez le définir en activant le bouton `Configuration avancée`{.action}.
+>> > Par défaut, le **dossier racine** de votre site web est généré automatiquement une fois le site web ajouté à votre hébergement web. Ce même **dossier racine** est alors créé en parallèle dans l'espace de stockage de votre hébergement web (accessible via le protocole FTP, SFTP ou SSH en fonction de votre offre d'hébergement web). Si vous souhaitez définir vous-même le nom du **dossier racine**, notamment si vous avez déjà placé le contenu de votre site web dans un dossier spécifique présent dans l'espace de stockage de votre hébergement web, vous pourrez le définir en activant le bouton `Configuration avancée`{.action}.
 >> >
 >> > **Le nom du dossier racine est uniquement personnalisable lors de l'ajout du site web à votre hébergement web.** Cela signifie qu'un fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
 >>
->> Si vous souhaitez utiliser l'une des **options avancées** disponibles ou personnaliser le nom du dossier racine, activez le bouton `Configuration avancée`{.action} et passez à **l'étape 6**. Sinon, poursuivez directement à **l'étape 7**.
+>> Si vous souhaitez personnaliser le nom du dossier racine ou utiliser l'une des **options avancées** disponibles, activez le bouton `Configuration avancée`{.action} et passez à **l'étape 6**. Sinon, poursuivez directement à **l'étape 7**.
 >>
 > **Étape 6**
 >>
@@ -104,12 +104,12 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> >
 >> > Cette étape est **facultative**. Elle s'adresse uniquement aux clients souhaitant personnaliser le dossier racine et / ou activer certaines fonctionnalités disponibles via le bouton `Configuration avancée`{.action}.
 >> >
->> > **A l'exception de la personnalisation du dossier racine, toutes ces fonctionnalités peuvent être activées ultérieurement, une fois le nom de domaine ajouté à votre site web.** Dans ce cas précis, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **A l'exception de la personnalisation du dossier racine, toutes ces fonctionnalités peuvent être activées ultérieurement une fois le nom de domaine ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
->> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra les fichiers de votre site web, saisissez le nom désiré dans le champ intitulé **dossier racine**.
->> 
->> Selon votre offre d'[hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ci-dessous ne pourront pas être sélectionnés.
+>> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom désiré dans le champ intitulé **dossier racine**.
+>>
 >> Retrouvez ci-dessous un descriptif des autres options.
+>> Selon votre offre d'[hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ci-dessous ne pourront pas être sélectionnés.
 >>
 >> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-advanced-configurations.png){.thumbnail}
 >>
@@ -132,7 +132,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Cet ajout peut prendre jusqu'à une heure.
 >>
->> La configuration DNS se réalisera automatiquement si la zone DNS active de votre nom de domaine est gérée dans votre espace client OVHcloud.
+>> Si vous n'avez pas sélectionné l'option `Configuration manuelle`{.action} dans la section `Configuration avancée`{.action}, la configuration DNS se réalisera automatiquement si la zone DNS active de votre nom de domaine est gérée dans votre espace client OVHcloud.
 >>
 >> Dans le cas contraire, consultez les guides suivants pour configurer manuellement votre zone DNS :
 >>
@@ -146,7 +146,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 
 /// details | Ajouter un site web avec nom de domaine non géré depuis votre espace client OVHcloud
 
-Cette partie s’applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n’est pas présent dans votre compte OVHcloud. Cela peut être un nom de domaine présent dans un autre compte OVHcloud ou chez un autre fournisseur.
+Cette partie s’applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n’est pas présent dans votre compte OVHcloud. Cela peut être un nom de domaine présent dans un autre compte OVHcloud ou enregistré chez un autre fournisseur.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
@@ -199,7 +199,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> >
 >> > **Le nom du dossier racine est uniquement personnalisable lors de l'ajout du site web à votre hébergement web.** Cela signifie qu'un fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
 >>
->> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra les fichiers de votre site web, saisissez le nom désiré dans le champ intitulé **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ vide.
+>> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom désiré dans le champ intitulé **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ vide.
 >>
 >> Une fois les informations complétées, cliquez sur le bouton `Continuer`{.action}.
 >>
@@ -266,7 +266,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Étape 6**
 >>
->> Vous êtes alors redirigé vers notre page commerciale de souscription d'un nom de domaine. Choisissez votre nouveau nom de domaine en fonction des disponibilités du marché. Suivez ensuite les instructions du tunnel de commande jusqu'à la validation du bon de commande.
+>> Vous êtes alors redirigé vers notre page commerciale de souscription d'un nom de domaine. Choisissez votre nouveau nom de domaine en fonction des disponibilités du marché. Suivez ensuite les instructions du tunnel de commande jusqu'à la validation du bon de commande. Ceci sans souscrire en complément à un nouvel hébergement web.
 >>
 >> Une fois votre commande payée et validée, patientez quelques instants, le temps qu'elle soit traitée.
 >>
@@ -286,9 +286,9 @@ A contrario, si vous souhaitez installer manuellement votre site web, munissez-v
 
 > [!primary]
 >
-> Si vous souhaitez ajouter plusieurs sites web, vous devrez répéter les actions décrites dans ce guide.
+> Si vous souhaitez ajouter plusieurs sites web, répétez les actions décrites dans ce guide.
 >
-> Nous vous invitons à être vigilant sur le nombre de sites web que vous partagez sur votre hébergement web. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](/links/web/hosting) indique le nombre de sites web recommandés que vous pouvez accueillir sur votre hébergement web.
+> Nous vous invitons à être vigilant sur le nombre de sites web que vous partagez sur votre hébergement web. Plus ce nombre est élevé, plus les ressources allouées à votre hébergement web sont sollicitées. [La page de nos offres d'hébergement web](/links/web/hosting) indique le nombre de sites web recommandés que vous pouvez accueillir sur votre hébergement web.
 
 ## Aller plus loin
 
