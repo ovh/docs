@@ -25,11 +25,12 @@ L’URL des API Public VCF aaS est disponible dans votre espace client **OVHcldo
 Vous pouvez ensuite la stocker dans des variables pour simplifier les commandes :
 
 ```bash
-apiURL="https://cloud.infra01.example.ovhcloud.com/api/"
+apiURL="https://cloud.infra01.example.ovhcloud.com/api"
 baseURL="${apiURL::-4}"
 ```
 
-- **apiURL** : Remplacer l'URL par l'URL indiqué dans votre espace client **OVHcldoud**.
+**apiURL** : Remplacer l'URL par l'URL indiqué dans votre espace client **OVHcldoud**.
+
 
 ## Autorisation
 
@@ -40,7 +41,7 @@ Pour appeler l'API, vous devez obtenir un **token de session**, valable pour une
 Cette commande liste toutes les versions disponibles et indique lesquelles sont dépréciées :
 
 ```bash
-curl $apiURL"versions"
+curl $apiURL"/versions"
 ```
 
 Définition de la version :
@@ -68,7 +69,7 @@ La commande suivante ouvre une session et extrait automatiquement le token renvo
 TOKEN=$(curl -Is -XPOST \
   -H "Accept: application/*;version=$VER" \
   -H "Authorization: Basic $AUTH" \
-  $baseURL"cloudapi/1.0.0/sessions/" \
+  $baseURL"/cloudapi/1.0.0/sessions/" \
   | grep "x-vmware-vcloud-access-token" | awk '{print $2}')
 ```
 
@@ -85,7 +86,7 @@ Cette requête renvoie toutes les vApps accessibles dans votre organisation.
 curl -XGET \
   -H "Accept: application/*;version=$VER" \
   -H "Authorization: Bearer $TOKEN" \
-  $apiURL"vApps/query"
+  $apiURL"/vApps/query"
 ```
 
 ### Lister les VM
@@ -96,7 +97,7 @@ Cette commande liste les VMs (hors templates) :
 curl -XGET \
   -H "Accept: application/*;version=$VER" \
   -H "Authorization: Bearer $TOKEN" \
-  $apiURL"vms/query?filter=isVAppTemplate==false"
+  $apiURL"/vms/query?filter=isVAppTemplate==false"
 ```
 
 ---
@@ -109,7 +110,7 @@ Cette commande envoie l’action `powerOn` à la VM cible :
 curl -XPOST \
   -H "Accept: application/*;version=$VER" \
   -H "Authorization: Bearer $TOKEN" \
-  $apiURL"vApp/vm-0c443b13-1db8-4723-850e-dc3ecd08b2c1/power/action/powerOn"
+  $apiURL"/vApp/<vm-id>/power/action/powerOn"
 ```
 
 > **Note**  
@@ -126,7 +127,7 @@ curl -XPOST \
   -H "Accept: application/*;version=$VER" \
   -H 'Content-Type: application/vnd.vmware.vcloud.createSnapshotParams+json' \
   -H "Authorization: Bearer $TOKEN" \
-  $apiURL"vApp/vm-0c443b13-1db8-4723-850e-dc3ecd08b2c1/action/createSnapshot" \
+  $apiURL"/vApp/<vm-id>/action/createSnapshot" \
   -d '{
         "name": "MonSnapshot",
         "memory": false,
@@ -147,7 +148,7 @@ Cette commande interroge le statut d'une tâche via son identifiant :
 curl -XGET \
   -H "Accept: application/*;version=$VER" \
   -H "Authorization: Bearer $TOKEN" \
-  $apiURL"task/156c9ea2-1ff8-45be-a920-612195eddac7"
+  $apiURL"/task/<task-id>"
 ```
 
 ---
@@ -160,7 +161,7 @@ Il est recommandé de supprimer votre session une fois les opérations terminée
 curl -i -XDELETE \
   -H "Accept: application/*;version=$VER" \
   -H "Authorization: Bearer $TOKEN" \
-  $baseURL"cloudapi/1.0.0/sessions/current"
+  $baseURL"/cloudapi/1.0.0/sessions/current"
 ```
 
 > **Tip**  
