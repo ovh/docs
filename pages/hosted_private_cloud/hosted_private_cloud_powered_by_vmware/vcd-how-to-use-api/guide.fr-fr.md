@@ -21,15 +21,18 @@ Avant d’utiliser l’API, nous vous recommandons de consulter les guides suiva
 
 ### Récupérer l’URL de l’API
 
-L’URL des API Public VCF aaS est disponible dans votre espace client **OVHcldoud**
-Vous pouvez ensuite la stocker dans des variables pour simplifier les commandes :
+L’URL des API Public VCF aaS est disponible dans votre espace client **OVHcldoud**  
+Vous pouvez retrouver cette information dans **Informations générales** > **URL API** de votre service **Public VCF aaS**  
+![vcd-manager-api-url](images/vcd-manager-api-url.png)
+
+Vous pouvez ensuite la stocker dans une variable pour simplifier les commandes :
 
 ```bash
 apiURL="https://cloud.infra01.example.ovhcloud.com/api"
 baseURL="${apiURL::-4}"
 ```
 
-**apiURL** : Remplacer l'URL par l'URL indiqué dans votre espace client **OVHcldoud**.
+**apiURL** : Remplacer l'URL correspondante à l'URL de votre service.
 
 
 ## Autorisation
