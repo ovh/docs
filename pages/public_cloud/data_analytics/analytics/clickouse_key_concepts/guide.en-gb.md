@@ -1,0 +1,163 @@
+---
+title: Clickhouse - Capabilities and Limitations
+excerpt: Discover the capabilities and limitations of Analytics for Clickhouse
+updated: 2026-01-15
+---
+
+## Objective
+
+This page provides the technical capabilities and limitations of the Analytics for Clickhouse offer.
+
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/18>.
+
+## Capabilities and limitations
+
+### Supported regions and multi-AZ
+
+The Analytics offer is available in the following regions:
+
+- `EU-WEST-PAR` (Paris, France)
+- `EU-SOUTH-MIL` (Milan, France)
+
+Analytics nodes have to be in the same region.
+
+### Clickhouse versions
+
+The Analytics offer supports the following Clickhouse versions:
+
+- Clickhouse 25
+
+Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for Clickhouse version on their official page : <https://clickhouse.com/docs/whats-new/changelog>
+
+### Clickhouse connectors
+
+You can use any of the [Clickhouse-recommended drivers and interfaces](https://clickhouse.com/docs/interfaces/overview) to access your instance.
+
+### Plans
+
+Different plans are available:
+
+- *Production*
+- *Discovery* (Soon)
+
+Here is an overview of the various plans' capabilities:
+
+| Plan                  | Number of nodes by default | Read replicas |
+| --------------------- | -------------------------- | ------------- |
+| *Production*          | 3                          | Planned       |
+| *Discovery*           | Soon                       | Soon          |
+
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
+
+> [!primary]
+>
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
+>
+
+#### Nodes and replicas
+
+- **Production**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+
+#### License type
+
+Clickhouse software is under the Apache License 2.0, a liberal open-source license, similar to BSD or MIT licenses.
+More information on <https://github.com/ClickHouse/ClickHouse/blob/master/LICENSE>.
+
+### Hardware resources
+
+For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#adefinir).
+
+#### Flexible storage
+
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/data_analytics/analytics/analytics_resize_cluster_storage) for more information.
+
+#### Node template upgrade
+
+You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
+
+#### Disk type
+
+The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](/links/public-cloud/regions-pci) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
+
+Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See the [Block Storage page](/links/public-cloud/block-storage) for more information about those performance characteristics.
+
+Analytics will select the most efficient disk type for your cluster depending on your cluster parameters.
+
+#### Effective storage
+
+The disk size listed above is the total disk size of the underlying machine. However, a small part of it goes towards the OS install.
+
+We try hard to avoid "disk full" situations that could be harmful to cluster health. Therefore:
+
+1. When reaching a concerning level of disk usage, a warning email is sent.
+2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
+3. You then have the ability to upgrade to a higher service plan with more storage.
+
+See the [Handling «Disk Full» situations documentation](/pages/public_cloud/data_analytics/analytics/analytics_full_disk_handling) for more information.
+
+### Features
+
+#### Network
+
+Clickhouse clusters are reachable on a customized port available through the Control Panel and the API.
+
+Public as well as private networking (vRack) can be used for all the offers.
+
+Ingress and Egress traffic are included in the service plans and unmetered.
+
+The analytics service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
+
+##### Private network considerations
+
+Here are some considerations to take into account when using private network:
+
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Analytics services first.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Analytci service. The customer is responsible for any other custom network setup.
+- Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
+- OpenStack subnets routes announcement will not be applied to your services.
+- You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
+
+##### Authorised IPs
+
+Once your service is up and running, you will be able to specify CIDR blocks to authorise incoming traffic. Until then, your service will be unreachable.
+
+#### Maximum simultaneous connections
+
+The number of simultaneous connections in Public Cloud Analytcis for Clickhouse depends on the available total memory on the node.
+We allow approximately 100 connections per 4 GB of RAM memory, capped to a maximum of 1000 active connections.
+
+So for example on a server with 7 GB memory, you will get approximately 200 connections and with 15 GB memory you will get 400 connections.
+
+#### Advanced parameters
+
+<!-- Voir si guide créer sinon delete -->
+
+You can further customise your Clickhouse by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/data_analytics/analytics/Clickhouse_advanced_parameters_references) for more information on the supported parameters.  
+
+#### Backups
+
+*Production* plan clusters are automatically backed up daily. Backup retention is 14 days.
+
+See the [Automated Backups guide](/pages/public_cloud/data_analytics/analytics/information_05_automated_backups) for more information.
+
+#### Logs and metrics
+
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Analytics - How to setup logs forwarding](/pages/public_cloud/data_analytics/analytics/analytics_logs_to_customer).
+
+- **Logs retention**: 1000 lines of logs
+- **Metrics retention**: 1 calendar month
+
+Please note that if the analytics instance is deleted, logs and metrics are also automatically deleted.
+
+#### Users and roles
+
+Creation of users is allowed via the Control Panel and API with default admin roles and privileges.
+The only specific privilege you can set is `replication`.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our analytics service!
