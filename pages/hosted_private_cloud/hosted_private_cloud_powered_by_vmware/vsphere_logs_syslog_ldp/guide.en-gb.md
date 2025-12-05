@@ -1,5 +1,5 @@
 ---
-title: "Activating Syslog and LDP subscription for vSphere logs"
+title: "Enable syslog and LDP subscription for vSphere logs"
 excerpt: "Learn how to forward vSphere logs to your own syslog server or subscribe to the OVHcloud Log Data Platform (LDP) service"
 updated: 2025-10-13
 ---
@@ -9,42 +9,42 @@ updated: 2025-10-13
 This guide explains how to activate vSphere log forwarding through two different methods:
 
 - **Syslog Forward**, to export NSX-T logs to your own syslog server.
-- **LDP subscription**, to centralise VMware logs within the OVHcloud Log Data Platform (LDP).
+- **LDP subscription**, to centralise VMware logs within the **OVHcloud Log Data Platform (LDP)**.
 
 It also helps you select the most appropriate solution depending on your Hosted Private Cloud configuration (SNC, PCI-DSS, or standard).
 
 ## Prerequisites
 
-- A [Hosted Private Cloud service](/links/hosted-private-cloud) running vSphere version 6.5 or higher
-- Access to the [OVHcloud API](/links/api)
-- The `syslogForward` security option enabled on your PCC
+- A [Hosted Private Cloud service](/links/hosted-private-cloud) running vSphere version 6.5 or higher.
+- Access to the [OVHcloud API](/links/api).
+- The `syslogForward` security option enabled on your PCC.
 - A valid destination for the logs:
-    - **Customer syslog server**, reachable via your private VLAN (RFC 5424 compliant)
+    - **Customer syslog server**, reachable via your private VLAN (RFC 5424 compliant).
     - **OVHcloud Log Data Platform (LDP)** stream with the same NIC as your PCC
-- Administrative rights to create or modify log forwarding rules
+- Administrative rights to create or modify log forwarding rules.
 
-## Step 1. Compare Syslog and LDP forwarding methods
+## Step 1 - Compare Syslog and LDP forwarding methods
 
 | Method | Logs available | Network | Certification | Cost | Ideal for |
 |:--|:--|:--|:--|:--|:--|
-| **Syslog Forward** | NSX-T logs only | Private VLAN (no public for SNC) | PCI-DSS / SNC compatible | Free | Private, secure log export |
-| **LDP subscription** | ESXi, vCenter, NSX-T (filtered) | Public | Not PCI-DSS / SNC | Paid | Centralised log correlation and observability |
+| **Syslog Forward** | NSX-T logs only | Private VLAN (no public network for SNC) | PCI-DSS / SNC compatible | Free | Private, secure log export |
+| **LDP subscription** | ESXi, vCenter, NSX-T (filtered) | Public network | Not available for PCI-DSS / SNC | Paid | Centralised log correlation and observability |
 
 > [!primary]
 > Syslog Forward is the default method for most Hosted Private Cloud services.
 > The LDP option is recommended for advanced monitoring and observability use cases.
 
-## Step 2. Activate Syslog Forward
+## Step 2 - Activate Syslog Forward
 
 You can enable the Syslog Forward feature directly from the **OVHcloud Control Panel** or through the **OVHcloud API**.
 
 ### Through the OVHcloud Control Panel
 
-1. Go to your `Hosted Private Cloud` service in the **OVHcloud Control Panel**.
+1. Go to your `Hosted Private Cloud` service in your [OVHcloud Control Panel](/links/manager).
 
-2. Select your VMware service, then click the `Logs` tab.
+2. Select your VMware service, then click the `Logs`{.action} tab.
 
-3. Click `Activate log transfer via Syslog`.
+3. Click `Activate log transfer via Syslog`{.action}.
 
 4. Wait for the activation process to complete (this may take up to 20 minutes).
 
@@ -54,7 +54,7 @@ You can enable the Syslog Forward feature directly from the **OVHcloud Control P
 > The `Logs` tab may not yet be visible in your OVHcloud Control Panel.  
 > It becomes available once the Syslog Forward feature is enabled for your PCC service.
 
-### Through the API
+### Through the OVHcloud API
 
 1. Log in to the [OVHcloud API](/links/api).
 
@@ -79,7 +79,7 @@ You can enable the Syslog Forward feature directly from the **OVHcloud Control P
 
 <<Screenshot placeholder – Syslog activation form in vSphere Manager>>
 
-### Example configurations
+### Configuration examples
 
 #### Syslog-ng (TLS)
 
@@ -122,15 +122,15 @@ input(type="imtcp" port="7514" ruleset="syslog_tls")
 
 <<Screenshot placeholder – Example syslog server configuration>>
 
-## Step 3. Activate LDP subscription
+## Step 3 - Activate LDP subscription
 
 If you prefer to consume VMware logs directly through the **Log Data Platform (LDP)**, you can subscribe to an existing LDP stream.
 
-1. Make sure your PCC has the `syslogForward` option enabled.
+1. Make sure that the `syslogForward` option is enabled on your PCC.
 
 2. Your LDP stream must use the same NIC as your PCC and offer equivalent security.
 
-3. Subscription is available for **non-SNC and non-PCI-DSS** clusters only.
+3. Subscription is available for **non-SNC** and **non-PCI-DSS** clusters only.
 
 Logs available through LDP:
 
@@ -152,22 +152,24 @@ Logs available through LDP:
 | `ldpStream` | Name of the target LDP stream |
 | `securityLevel` | Must match your PCC configuration |
 | `filter` | Optional log filters |
-| `activation` | `true` to start forwarding immediately |
+| `activation` | Specify `true` to start forwarding immediately |
 
-## Step 4. Monitoring and troubleshooting
+## Step 4 - Monitoring and troubleshooting
 
 Each log forward is monitored automatically via **Zabbix** using discovery rules.
 
 Monitored checks:
-- Syslog server accessibility (telnet to `ip:port`)
-- SSL certificate thumbprint validity
+
+- Syslog server accessibility (telnet to `<ip>:<port>`).
+- SSL certificate thumbprint validity.
 
 If an issue is detected:
+
 - A **self-healing process** will try to re-establish the connection.
 - If the problem persists, the system triggers an incident for further investigation.
-- Customers receive an automatic email if the issue comes from their configuration.
+- Customers receive an **automatic email** if the issue comes from their configuration.
 
-Example notification:
+Notification example:
 
 > **Subject:** Configuration issue on your log server
 > “We were unable to reach your syslog server or its SSL certificate thumbprint does not match the expected value. Please update it using the following API route.”
@@ -186,9 +188,9 @@ This route removes the existing forwarding configuration and stops log export to
 
 ## Go further
 
-- [Managing granular rights on vSphere objects](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manage_granular_rights)
-- [Monitoring and alerting in Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/monitoring_and_alerts)
-- [OVHcloud Log Data Platform documentation](https://help.ovhcloud.com/csm/fr-vmware-log-forward-ldp?id=kb_article_view&sysparm_article=KB0063705)
+- [Managing granular rights on vSphere objects](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_granular_rights)
+- [Creating an alert on your vSphere client](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_an_alert)
+- [OVHcloud Log Data Platform documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp)
 
 If you need training or technical assistance to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalised analysis of your project from our Professional Services team.
 
