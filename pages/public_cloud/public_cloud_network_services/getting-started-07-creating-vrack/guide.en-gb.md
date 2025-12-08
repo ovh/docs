@@ -173,11 +173,11 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> To continue the configuration of your vRack in the OVHcloud Control Panel, skip to the section [Creating a private network in the OVHcloud Control Panel](./#creating-a-private-network-in-the-ovhcloud-control-panel) of this guide.
 >>
 > Via the OVHcloud APIv6
->> #### Step 1: Activating and managing a vRack
+>> **Step 1: Activating and managing a vRack**
 >>
 >> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)) and follow these steps:
 >>
->> ##### Creating the cart
+>> **Creating the cart**
 >>
 >> > [!api]
 >> >
@@ -190,7 +190,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> > In this case, the order of a vRack alone is free. Remember your cart number (cartId), it will be required for the rest.
 >> >
 >>
->> ##### Retrieving the necessary information for the vRack order
+>> **Retrieving the necessary information for the vRack order**
 >>
 >> > [!api]
 >> >
@@ -202,7 +202,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> >
 >> > *cartId*, *duration*, *planCode*, and *pricingMode*.
 >>
->> ##### Adding the vRack to the cart
+>> **Adding the vRack to the cart**
 >>
 >> > [!api]
 >> >
@@ -227,7 +227,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >>
 >> Once you have validated the order, you will receive an item number ("itemId"). Keep this information, it will be useful if you wish to make changes before the validation of the cart.
 >>
->> ##### Validating the cart
+>> **Validating the cart**
 >>
 >> Once you have put all the items in your cart, you will need to validate it:
 >>
@@ -241,7 +241,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> > This call will validate the cart and create a purchase order ("orderId"). Keep this information, it will be necessary to validate the order.
 >> >
 >>
->> ##### Validating the final order
+>> **Validating the final order**
 >>
 >> To validate the order, you have two possibilities:
 >>
@@ -262,7 +262,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >>
 >> Once the free order has been validated, it may take a few minutes for the vRack to be activated.
 >>
->> #### Step 2: Adding your Public Cloud project to the vRack
+>> **Step 2: Adding your Public Cloud project to the vRack**
 >>
 >> Once the vRack is active, you will need to integrate your Public Cloud project(s) into the vRack.
 >>
@@ -270,7 +270,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >>
 >> In case the project ID is unknown, the calls below allow you to retrieve it.
 >>
->> ##### Identifying the project
+>> **Identifying the project**
 >>
 >> > [!api]
 >> >
@@ -292,7 +292,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> > This call identifies the project via the "description" field.
 >> >
 >>
->> ##### Adding the project to the vRack
+>> **Adding the project to the vRack**
 >>
 >> Once the project ID and the vRack name are known, their association is made through the following call:
 >>
@@ -311,7 +311,7 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 >> > This call initialises the association of the project and the vRack. The task ID must then be retrieved to check the progress.
 >> >
 >>
->> ##### Checking the progress of the task
+>> **Checking the progress of the task**
 >>
 >> You can view the progress of the task with this call:
 >>
@@ -423,9 +423,9 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >>
 >> Once logged in to the [OVHcloud APIv6 interface](/links/api), follow these steps:
 >>
->> #### Retrieving the required information
+>> **Step 1: Retrieving the required information**
 >>
->> ##### **Public Cloud project**
+>> **Public Cloud project**
 >>
 >> > [!api]
 >> >
@@ -447,7 +447,7 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> > This call identifies the project via the "description" field.
 >> >
 >>
->> ##### **vRack**
+>> **vRack**
 >>
 >> > [!api]
 >> >
@@ -459,7 +459,7 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> > In the field "serviceName", specify the ID of your project. Save the vRack ID information in the form "pn-xxxxx".
 >> >
 >>
->> #### Creating the private network
+>> **Step 2: Creating the private network**
 >>
 >> > [!api]
 >> >
@@ -495,7 +495,7 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 >> > For example, VLAN 42: pn-xxxxxx_42
 >> >
 >>
->> #### Creating a subnet
+>> **Step 3: Creating a subnet**
 >>
 >> By default, if you do not add a subnet, the IP range used is:
 >>
@@ -597,24 +597,24 @@ There are two possible scenarios:
 > Via the OVHcloud APIv6
 >> Once logged in to the [OVHcloud APIv6 interface](/links/api), follow these steps:
 >>
->> ##### **Retrieving the required information**
+>> **Step 1: Retrieving the required information**
 >>
->> ###### Retrieving the project ID
+>> **Retrieving the project ID**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project
 >> >
 >>
->> ###### Retrieving the networkID of the public network (Ext-Net)
+>> **Retrieving the networkID of the public network (Ext-Net)**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/public
 >> >
 >>
->> ###### Retrieving the networkID of the private network (vRack interface previously created)
->>
+>> **Retrieving the networkID of the private network (vRack interface previously created)
+>>**
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/private
@@ -625,7 +625,7 @@ There are two possible scenarios:
 >> > The identifier will have the form: "pn-xxxxx_yy" in which yy is the VLAN number.
 >> >
 >>
->> ###### Retrieving the ID of the chosen instance type (flavorId)
+>> **Retrieving the ID of the chosen instance type (flavorId)**
 >>
 >> > [!api]
 >> >
@@ -637,7 +637,7 @@ There are two possible scenarios:
 >> > You can limit the list by specifying the creation region of your instance.
 >> >
 >>
->> ###### Retrieving the ID of the chosen image (imageId)
+>> **Retrieving the ID of the chosen image (imageId)**
 >>
 >> > [!api]
 >> >
@@ -649,7 +649,7 @@ There are two possible scenarios:
 >> > You can limit the list by specifying the creation region of your instance.
 >> >
 >>
->> ###### Retrieving your OpenStack SSH key ID (sshKeyId)
+>> **Retrieving your OpenStack SSH key ID (sshKeyId)**
 >>
 >> > [!api]
 >> >
@@ -663,7 +663,7 @@ There are two possible scenarios:
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/sshkey
 >> >
 >>
->> ##### **Deploying the instance**
+>> ***Deploying the instance**
 >>
 >> Once all the elements necessary for the deployment are gathered, you can use the following call:
 >>
@@ -909,30 +909,30 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >>
 >> **The steps below describe how to manage your instances' network interfaces.**
 >>
->> ##### **Retrieving the required information**
+>> **Step 1: Retrieving the required information**
 >>
->> ###### Retrieving the project ID
+>> **Retrieving the project ID**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project
 >> >
 >>
->> ###### Retrieving the instance ID
+>> **Retrieving the instance ID**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/instance
 >> >
 >>
->> ###### Retrieving the networkID of the public network (Ext-Net)
+>> **Retrieving the networkID of the public network (Ext-Net)**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/public
 >> >
 >>
->> ###### Retrieving the networkID of the private network (vRack interface previously created)
+>> **Retrieving the networkID of the private network (vRack interface previously created)**
 >>
 >> > [!api]
 >> >
@@ -944,7 +944,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> > The identifier will have the form: "pn-xxxxx_yy" in which yy is the VLAN number.
 >> >
 >>
->> ##### **Adding an interface to your instance**
+>> **Step 2: Adding an interface to your instance**
 >>
 >> Once all the elements necessary are gathered, you can use the following call:
 >>
@@ -972,7 +972,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> ><br>It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
 >> >
 >>
->> ##### **Removing an interface from your instance**
+>> **Step 3: Removing an interface from your instance**
 >>
 >> > [!warning]
 >> >
@@ -1146,56 +1146,55 @@ For example, if you have a public interface *eth0*, you will add the interface *
 >> [...]
 >> ```
 >>
->> #### Removing a network interface
->>
->> > [!warning]
->> >
->> > Detaching a network interface is permanent.
->> >
->> > However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.
->> ><br>This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
->> >
->>
->> In order to detach an interface, you will first need to identify the Neutron port that has been created.
->>
->> You can do this by using the following commands:
->>
->> ```bash
->> neutron port-list
->> +--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
->> | id                                   | name | mac_address       | fixed_ips                                                                                         |
->> +--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
->> | 12345678-abcd-ef01-2345-678910abcdef |      | fa:xx:xx:xx:xx:xx | {"subnet_id": "01234567-8901-abscdef12345678910abcd", "ip_address": "192.168.0.x"}                |
->> | 09876543-210a-bcde-f098-76543210abcd |      | fa:yy:yy:yy:yy:yy | {"subnet_id": "65432109-abcd-ef09-8765-43210abcdef1", "ip_address": "2001:41d0:xxx:xxxx::xxxx"}   |
->> |                                      |      |                   | {"subnet_id": "abcdef12-3456-7890-abcd-ef1234567890", "ip_address": "YY.YY.YY.YY"}                |
->> +--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
->> ```
->>
->> or
->>
->> ```bash
->> openstack port list
->> +--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
->> | ID                                   | Name | MAC Address       | Fixed IP Addresses                                                                        |
->> +--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
->> | 12345678-abcd-ef01-2345-678910abcdef |      | fa:xx:xx:xx:xx:xx | ip_address='192.168.0.xx', subnet_id='301234567-8901-abscdef12345678910abcd'              |
->> | 09876543-210a-bcde-f098-76543210abcd |      | fa:yy:yy:yy:yy:yy | ip_address='2001:41d0:xxx:xxxx::xxxx', subnet_id='65432109-abcd-ef09-8765-43210abcdef1'   |
->> |                                      |      |                   | ip_address='YY.YY.YY.YY', subnet_id='abcdef12-3456-7890-abcd-ef1234567890'                |
->> +--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
->> ```
->>
->> Once you have identified the port to remove, you can execute the following command:
->>
->> ```bash
->> nova interface-detach <ID_instance> <port_id>
->> ```
->>
->> Example:
->>
->> ```bash
->> nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-2345-678910abcdef
->> ```
->>
+
+### Removing a network interface
+
+> [!warning]
+>
+> Detaching a network interface is permanent.
+>
+> However, it is important to note that if you detach the "Ext-Net" interface (public IP), this address will be released and put back into circulation. It is not possible to just reassign it.
+><br>This action is only required if you wish to isolate your server in the vRack (private network), or if you wish to remove it from one or more VLANs.
+>
+
+In order to detach an interface, you will first need to identify the Neutron port that has been created.
+You can do this by using the following commands:
+
+```bash
+neutron port-list
++--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
+| id                                   | name | mac_address       | fixed_ips                                                                                         |
++--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
+| 12345678-abcd-ef01-2345-678910abcdef |      | fa:xx:xx:xx:xx:xx | {"subnet_id": "01234567-8901-abscdef12345678910abcd", "ip_address": "192.168.0.x"}                |
+| 09876543-210a-bcde-f098-76543210abcd |      | fa:yy:yy:yy:yy:yy | {"subnet_id": "65432109-abcd-ef09-8765-43210abcdef1", "ip_address": "2001:41d0:xxx:xxxx::xxxx"}   |
+|                                      |      |                   | {"subnet_id": "abcdef12-3456-7890-abcd-ef1234567890", "ip_address": "YY.YY.YY.YY"}                |
++--------------------------------------+------+-------------------+---------------------------------------------------------------------------------------------------+
+```
+
+or
+
+```bash
+openstack port list
++--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
+| ID                                   | Name | MAC Address       | Fixed IP Addresses                                                                        |
++--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
+| 12345678-abcd-ef01-2345-678910abcdef |      | fa:xx:xx:xx:xx:xx | ip_address='192.168.0.xx', subnet_id='301234567-8901-abscdef12345678910abcd'              |
+| 09876543-210a-bcde-f098-76543210abcd |      | fa:yy:yy:yy:yy:yy | ip_address='2001:41d0:xxx:xxxx::xxxx', subnet_id='65432109-abcd-ef09-8765-43210abcdef1'   |
+|                                      |      |                   | ip_address='YY.YY.YY.YY', subnet_id='abcdef12-3456-7890-abcd-ef1234567890'                |
++--------------------------------------+------+-------------------+-------------------------------------------------------------------------------------------+
+```
+
+Once you have identified the port to remove, you can execute the following command:
+
+```bash
+nova interface-detach <ID_instance> <port_id>
+```
+
+Example:
+
+```bash
+nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-2345-678910abcdef
+```
 
 ///
 

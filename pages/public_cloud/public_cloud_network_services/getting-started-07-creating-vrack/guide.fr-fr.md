@@ -179,13 +179,13 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >>
 > Depuis les APIv6 OVHcloud
 >>
->> #### Étape 1 : Activer et gérer un vRack
+>> **Étape 1 : Activer et gérer un vRack**
 >>
 >> Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
 >>
 >> Une fois identifié, suivez les étapes décrites ci-dessous :
 >>
->> ##### Création du panier
+>> **Création du panier**
 >>
 >> > [!api]
 >> >
@@ -199,7 +199,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> > Dans le cas présent, la commande d’un vRack est gratuite. Récupérez le numéro de votre panier (cartId), il sera indispensable pour la suite.
 >> >
 >>
->> ##### Récupération des informations nécessaires à la commande du vRack
+>> **Récupération des informations nécessaires à la commande du vRack**
 >>
 >> > [!api]
 >> >
@@ -213,7 +213,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> > *cartId*, *duration*, *planCode*, et *pricingMode*.
 >> >
 >>
->> ##### Ajout du vRack dans le panier
+>> **Ajout du vRack dans le panier**
 >> 
 >> > [!api]
 >> >
@@ -239,7 +239,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >>
 >> Une fois que vous aurez validé la commande, vous obtiendrez un numéro d'article (« itemId »). Conservez cette information, elle vous sera utile si vous souhaitez apporter des modifications avant la validation du panier.
 >>
->> ##### Validation du panier
+>> **Validation du panier**
 >>
 >> Une fois l'ensemble des articles mis dans votre panier, vous devrez le valider :
 >>
@@ -253,7 +253,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> > Cet appel va valider le panier et vous créer un bon de commande (orderId). Conservez cette information, elle sera nécessaire à la validation de la commande.
 >> >
 >>
->> ##### Validation de la commande finale
+>> **Validation de la commande finale**
 >>
 >> Pour valider la commande, vous avez deux méthodes possibles :
 >>
@@ -274,7 +274,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >>
 >> Une fois le bon de commande gratuit validé, un délai de quelques minutes peut être nécessaire pour que le vRack soit actif.
 >>
->> #### Étape 2 : Ajouter votre projet Public Cloud dans le vRack
+>> **Étape 2 : Ajouter votre projet Public Cloud dans le vRack**
 >>
 >> Une fois le vRack actif, il vous faudra intégrer votre ou vos projets Public Cloud dans le vRack.
 >>
@@ -282,7 +282,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >>
 >> Dans le cas ou l’identifiant du projet Public Cloud n’est pas connu, les appels suivants vous permettront de le connaître.
 >>
->> ##### Identification du projet
+>> **Identification du projet**
 >>
 >> > [!api]
 >> >
@@ -304,7 +304,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> > Cet appel permet d'identifier le projet grâce au champ « description ».
 >> >
 >>
->> ##### Ajout du projet dans le vRack
+>> **Ajout du projet dans le vRack**
 >>
 >> Une fois l’identifiant du projet et le nom du vRack connus, leur association se fait via l'appel suivant :
 >>
@@ -323,7 +323,7 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 >> > Cet appel initialise l’association du projet au vRack, il faut ensuite récupérer l’id de la tâche pour vérifier son avancement.
 >> >
 >>
->> ##### Vérification de l'avancement de la tâche d'ajout
+>> **Vérification de l'avancement de la tâche d'ajout**
 >>
 >> Vous pouvez consulter l'évolution de l'ajout dans le vRack grâce à cet appel :
 >>
@@ -437,9 +437,9 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >>
 >> Une fois connecté à l'[APIv6 OVHcloud](/links/api), exécutez les commandes suivantes dans l'ordre.
 >>
->> #### Récupération des informations nécessaires :
+>> **Étape 1 - Récupération des informations nécessaires :**
 >>
->> ##### **Projet Public Cloud**
+>> **Projet Public Cloud**
 >>
 >> > [!api]
 >> >
@@ -461,7 +461,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >> > Cet appel permet d'identifier le projet grâce au champ « description ».
 >> >
 >>
->> ##### **vRack concerné**
+>> **vRack concerné**
 >>
 >> > [!api]
 >> >
@@ -473,7 +473,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >> > Dans le champ serviceName, indiquez l'identifiant de votre projet. Conservez l'information relative à l'identifiant du vRack sous la forme « pn-xxxxx ».
 >> >
 >>
->> #### Création du réseau privé :
+>> **Étape 2 - Création du réseau privé :**
 >>
 >> > [!api]
 >> >
@@ -509,7 +509,7 @@ Depuis l'espace client OVHcloud, vous pouvez attribuer le VLAN de votre choix et
 >> > Par exemple, pour le vLan 42 : pn-xxxxxx_42
 >> >
 >>
->> #### Création du sous-réseau :
+>> **Étape 3 - Création du sous-réseau :**
 >>
 >> Par défaut, si vous ne n'ajoutez pas de sous réseau, la plage IP utilisée est la suivante :
 >>
@@ -613,23 +613,23 @@ Deux situations peuvent se présenter à vous :
 > Depuis les APIv6 OVHcloud
 >> Une fois connecté à l'[APIv6 OVHcloud](/links/api), exécutez les commandes suivantes dans l'ordre.
 >>
->> ##### **Récupération des informations nécessaires**
+>> **Étape 1 - Récupération des informations nécessaires**
 >>
->> ###### Récupération de l'identifiant du projet :
+>> **Récupération de l'identifiant du projet :**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project
 >> >
 >>
->> ###### Récupération du networkID du réseau public (EXT-NET)
+>> **Récupération du networkID du réseau public (EXT-NET)**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/public
 >> >
 >>
->> ###### Récupération du networkID du réseau privé (interface vRack créée précédemment)
+>> **Récupération du networkID du réseau privé (interface vRack créée précédemment)**
 >>
 >> > [!api]
 >> >
@@ -641,7 +641,7 @@ Deux situations peuvent se présenter à vous :
 >> > L'identifiant alors obtenu a la forme : « pn-xxxxx_yy » où yy est le numéro du vLan.
 >> >
 >>
->> ###### Récupération de l'identifiant du type d'instance choisi (flavorId)
+>> **Récupération de l'identifiant du type d'instance choisi (flavorId)**
 >>
 >> > [!api]
 >> >
@@ -653,7 +653,7 @@ Deux situations peuvent se présenter à vous :
 >> > Vous pouvez limiter la liste en indiquant la zone de création de votre instance
 >> >
 >>
->> ###### Récupération de l'identifiant de l'image choisie (imageId)
+>> **Récupération de l'identifiant de l'image choisie (imageId)**
 >>
 >> > [!api]
 >> >
@@ -665,7 +665,7 @@ Deux situations peuvent se présenter à vous :
 >> > Vous pouvez limiter la liste en indiquant la zone de création de votre instance
 >> >
 >>
->> ###### Récupération de l'identifiant de votre clé SSH OpenStack (sshKeyId)
+>> **Récupération de l'identifiant de votre clé SSH OpenStack (sshKeyId)**
 >>
 >> > [!api]
 >> >
@@ -679,7 +679,7 @@ Deux situations peuvent se présenter à vous :
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/sshkey
 >> >
 >>
->> ##### **Déploiement de l'instance**
+>> **Étape 2 - Déploiement de l'instance**
 >>
 >> Une fois l'ensemble des éléments nécessaires au déploiement rassemblé, vous pouvez utiliser l'appel suivant
 >>
@@ -919,30 +919,30 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 >>
 >> **Les étapes ci-dessous décrivent comment effectuer la gestion des interfaces réseaux de vos instances.**
 >>
->> ##### **Récupération des informations nécessaires**
+>> **Étape 1 - Récupération des informations nécessaires**
 >>
->> ###### Récupération de l'identifiant du projet :
+>> **Récupération de l'identifiant du projet :**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project
 >> >
 >>
->> ###### Récupération de l'identifiant de l'instance :
+>> **Récupération de l'identifiant de l'instance :**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/instance
 >> >
 >>
->> ###### Récupération du networkID du réseau public (EXT-NET) :
+>> **Récupération du networkID du réseau public (EXT-NET) :**
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/public
 >> >
 >>
->> ###### Récupération du networkID du réseau privé (interface vRack créée précédemment) :
+>> **Récupération du networkID du réseau privé (interface vRack créée précédemment) :**
 >>
 >> > [!api]
 >> >
@@ -954,7 +954,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 >> > L'identifiant alors obtenu a la forme : « pn-xxxxx_yy » où yy est le numéro du vLan.
 >> >
 >>
->> ##### **Ajout d'une interface à votre instance**
+>> **Étape 2 - Ajout d'une interface à votre instance**
 >>
 >> Une fois l'ensemble des informations nécessaires récupéré, vous pouvez utiliser l'appel suivant :
 >>
@@ -981,7 +981,7 @@ Ainsi, par exemple, si vous avez une interface publique *eth0*, vous aurez en pl
 >> ><br>À votre charge de l'utiliser en configurant votre interface via le DHCP ou en utilisant vos propres IP au travers d'une configuration en IP statique.
 >> >
 >>
->> ##### **Détacher une interface de votre instance**
+>> **Étape 3 - Détacher une interface de votre instance**
 >>
 >> > [!warning]
 >> >
