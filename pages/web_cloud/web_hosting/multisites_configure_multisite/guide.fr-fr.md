@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites web sur votre offre d'hébergement web"
-updated: 2025-12-02
+updated: 2025-12-10
 ---
 
 <style>
@@ -199,7 +199,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> >
 >> > **Le nom du dossier racine est uniquement personnalisable lors de l'ajout du site web à votre hébergement web.** Cela signifie qu'un fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
 >>
->> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom désiré dans le champ intitulé **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ vide.
+>> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom désiré dans le champ intitulé **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ tel qu'il s'affiche sans rien ajouter à l'intérieur.
 >>
 >> Une fois les informations complétées, cliquez sur le bouton `Continuer`{.action}.
 >>
