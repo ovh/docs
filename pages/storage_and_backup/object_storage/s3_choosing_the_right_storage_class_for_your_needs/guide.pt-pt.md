@@ -1,6 +1,7 @@
 ---
 title: Object Storage - Escolhendo a classe de armazenamento certa para suas necessidades (EN)
-updated: 2025-07-03
+excerpt: Discover the different OVHcloud Object Storage classes and choose the one that best suits your needs
+updated: 2025-11-19
 ---
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
@@ -31,16 +32,72 @@ The Infrequent Access storage class is designed for infrequently accessed data, 
 
 This offer is suitable for the following use cases: long-term storage, backups, disaster recovery.
 
+### Object Storage - Cold Archive class (S3 compatible)
+
+The Cold Archive storage class is an archival storage class. Also existing on its own as [a dedicated product at OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started) (bucket-level granularity), Cold Archive is also available as a class in a general-purpose object storage container. Cold Archive is designed for long-term data storage and data archiving with a very low cost per GiB-hour and per GiB restore fee. Indeed, data in the Cold Archive class is not available in real-time and needs to be restored before being available.
+
+
 ### Comparison Table
 
-| Storage Class | Use Cases | Performance (TTFB) | Supported Regions | Availability SLA | Minimum storage duration | Retrieval fee | Granularity |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **High Performance** | AI & Analytics, Datalake, High power Computing Multimedia / Content Platform | milliseconds | 1-AZ | 1-AZ regions: 99,9% | No | No | Object-level, lifecycle management support |
-| **Standard** | Media/content storage, datalake, website, backup, logs, application metrics | milliseconds | 1-AZ and 3-AZ | 1-AZ regions: 99,9% - 3-AZ regions: 99,99% | No | No | Object-level, lifecycle management support |
-| **Infrequent Access** | Long-term storage, backups, disaster recovery. | milliseconds | 1-AZ and 3-AZ | 1-AZ regions: 99,9% - 3-AZ regions: 99,99% | 30 days | Yes | Object-level, lifecycle management support |
-| **Cold Archive** | Very long-term storage, backups, disaster recovery. | hours | 4 dedicated DCs | 99,9% | 90 days | Yes | Bucket-level, no lifeycle management support yet|
+<table>
+    <tr>
+        <td><strong>Storage Class<strong></td>
+        <td><strong>Use Cases<strong></td>
+        <td><strong>Performance (TTFB)<strong></td>
+        <td><strong>Supported Regions<strong></td>
+        <td><strong>Availability SLA<strong></td>
+        <td><strong>Minimum storage duration<strong></td>
+        <td><strong>Retrieval fee<strong></td>
+        <td><strong>Granularity<strong></td>
+    </tr>
+    <tr>
+        <td><strong>High Performance<strong></td>
+        <td>AI &amp; Analytics, Datalake, High power Computing Multimedia / Content Platform</td>
+        <td>milliseconds</td>
+        <td>1-AZ</td>
+        <td>1-AZ regions: 99,9%</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Object-level, lifecycle management support</td>
+    </tr>
+    <tr>
+        <td><strong>Standard<strong></td>
+        <td>Media/content storage, datalake, website, backup, logs, application metrics</td>
+        <td>milliseconds</td>
+        <td>1-AZ and 3-AZ</td>
+        <td>1-AZ regions: 99,9% - 3-AZ regions: 99,99%</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Object-level, lifecycle management support</td>
+    </tr>
+    <tr>
+        <td><strong>Infrequent Access<strong></td>
+        <td>Long-term storage, backups, disaster recovery</td>
+        <td>milliseconds</td>
+        <td>1-AZ and 3-AZ</td>
+        <td>1-AZ regions: 99,9% - 3-AZ regions: 99,99%</td>
+        <td>30 days</td>
+        <td>Yes</td>
+        <td>Object-level, lifecycle management support</td>
+    </tr>
+    <tr>
+        <td><strong>Cold Archive*<strong></td>
+        <td>Very long-term storage, backups, disaster recovery</td>
+        <td>hours</td>
+        <td>Paris, 3-AZ region</td>
+        <td>99,9%</td>
+        <td>180 days</td>
+        <td>Yes</td>
+        <td>Object-level, lifeycle management support</td>
+    </tr>
+   </table>
 
 More details about available regions [here](/pages/storage_and_backup/object_storage/s3_location).
+
+> [!primary]
+>
+> Before November 2025, Cold Archive only existed with a bucket-level granularity, as [a dedicated product at OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started). The product has been updated to allow object-level granularity and Cold Archive is now considered as a class of Object Storage compatible with [**lifecycle management feature**](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle).
+>
 
 ### Additional details
 
@@ -64,6 +121,11 @@ It refers to the ability to **automatically manage the storage lifecycle of your
 
 More details about lifecycle management [here](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle).
 
+#### Cold Archive (Object-level management) class considerations
+
+When using the Cold Archive class in an Object Storage general-purpose bucket, **archived objects are not available in real-time**. The user is asked to first restore the object through a "restore" request and then, after some time (from minutes up to multiple hours), the object is available to download for a duration set by the user when requesting it and is billed upfront at the Standard class rate. However its class will remain as Cold Archive but will be available for GET requests or other actions. In summary, for each object restored, a one time restoration fee per GiB of data plus the storage cost at the Standard rate of the object are billed.
+
+For official prices, see our page "[Object Storage pricing](https://www.ovhcloud.com/en-gb/public-cloud/prices/#storage)".
 
 ## OpenStack SWIFT Object Storage tiers
 

@@ -42,7 +42,7 @@ Im folgenden Schritt können Sie den Namen Ihrer Maschine sowie deren Speicheror
 
 ![Speicherort der virtuellen Maschine](images/vm03.png){.thumbnail}
 
-Anschließend können Sie den Cluster, den Host, [den Ressourcenpool](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link} oder die [vApp](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link} auswählen, um die VM zu platzieren.
+Anschließend können Sie den Cluster, den Host, [den Ressourcenpool](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html) oder die [vApp](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html) auswählen, um die VM zu platzieren.
 
 Im vorliegenden Beispiel wird die virtuelle Maschine entsprechend den konfigurierten DRS-Regeln deployt und im Wurzelverzeichnis des Clusters platziert.
 

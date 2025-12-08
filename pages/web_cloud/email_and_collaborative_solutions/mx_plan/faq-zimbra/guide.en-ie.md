@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Here you will find the most frequently asked questions about the migration of OVHcloud MX Plan solution to Zimbra
-updated: 2024-11-15
+updated: 2025-11-04
 ---
 
 <style>
@@ -61,13 +61,39 @@ Visit our page “[Configuring your Zimbra email address in an email client](/pa
 
 ///
 
+/// details | How to change my Zimbra plan ?
+
+Your needs are changing: you want to benefit from more features on your Zimbra account, or, conversely, you no longer need it. Zimbra plans are flexible, so follow the instructions below according to your situation:
+
+**Want to upgrade to a higher plan?**
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. Click on `Zimbra Mail`{.action}.
+1. Click on the `Email account`{.action} tab.
+1. To the right of the email account for which you want to switch to a higher offer, click on `⁝`{.action}.
+1. Click on `Change plan`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+**Would you like to downgrade?**
+
+The steps are the same as for upgrading (detailed above).
+
+> [!warning]
+>
+> Before switching to a lower plan, please ensure the following:
+>
+> - No files are stored on your "Briefcase" storage volume if you are switching to the Starter plan.
+> - The content of your email account must be less than 15 GB if you are switching to the Starter plan.
+
+///
+
 ### Questions on MX Plan migration to Zimbra solution
 
 As part of the MX Plan solution upgrade, a migration is planned from the current webmail using Outlook Web App (OWA) to the Zimbra solution's webmail.
 
 If you are affected by this migration, you will find the most frequently asked questions here.
-
-///
 
 /// details | What are the differences between Outlook Web App (OWA) and Zimbra webmail?
 

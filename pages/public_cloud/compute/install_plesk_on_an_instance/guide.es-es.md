@@ -70,7 +70,7 @@ Para añadir su licencia de Plesk, necesitará la clave que le haya proporcionad
 > OVHcloud no comercializa licencias de Plesk para la solución Public Cloud. No obstante, puede adquirir una desde la web de [Plesk](https://www.plesk.com/).
 > 
 
-¿Desea cambiar su licencia, por ejemplo para sustituir una llave de prueba o para cambiar su oferta? Desde el interfaz de Plesk, vaya a `Tools & Settings`{.acción}. En la sección **Plesk**, seleccione `License information`{.acción}.
+¿Desea cambiar su licencia, por ejemplo para sustituir una llave de prueba o para cambiar su oferta? Desde el interfaz de Plesk, vaya a `Tools & Settings`{.action}. En la sección **Plesk**, seleccione `License information`{.action}.
 Para añadir su licencia de Plesk, necesitará 
 
 

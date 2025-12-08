@@ -18,7 +18,7 @@ Dostęp do vCenter jest ograniczony wyłącznie do uprawnionych adresów IP.
 
 Dostęp do vCenter jest domyślnie ograniczony. Należy zatem dodać adresy IP, które będą mogły łączyć się z usługą.
 
-Operacja ta przeprowadzana jest w [Panelu klienta OVHcloud](/links/manager){.external-link}. W sekcji `Hosted Private Cloud`{.action}, kliknij sekcję `VMware`{.action}.
+Operacja ta przeprowadzana jest w [Panelu klienta OVHcloud](/links/manager). W sekcji `Hosted Private Cloud`{.action}, kliknij sekcję `VMware`{.action}.
 
 Wybierz infrastrukturę, przejdź do zakładki `Bezpieczeństwo`{.action}, po czym kliknij `Dodaj nowy zakres adresów IP`{.action}.
 

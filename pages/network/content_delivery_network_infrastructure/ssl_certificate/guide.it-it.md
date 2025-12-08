@@ -12,7 +12,7 @@ updated: 2018-02-22
 
 ## Prerequisiti
 
-- Disporre della soluzione [CDN OVH](https://www.ovh.it/cdn/)
+- Disporre della soluzione [CDN OVH](/links/network/cdn-infrastructure).
 - Avere accesso alla gestione della zona DNS del dominio
 
 ## Procedura

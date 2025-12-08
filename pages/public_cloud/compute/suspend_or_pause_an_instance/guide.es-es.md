@@ -1,6 +1,6 @@
 ---
 title: Suspender o poner en pausa una instancia
-updated: 2025-05-26
+updated: 2025-10-30
 ---
 
 ## Objetivo
@@ -28,12 +28,12 @@ Como parte de la configuración de una infraestructura de alta disponibilidad, p
 > Estas operaciones no interrumpen la facturación de la instancia, que seguirá facturándose mientras no haya sido **terminada**.
 >
 
-En la siguiente tabla podrá diferenciar las opciones disponibles en sus instancias. Continúe leyendo esta guía en el apartado correspondiente a su opción. Ponemos entre paréntesis la terminología utilizada en la interfaz Horizon.
+En la siguiente tabla podrá diferenciar las opciones disponibles en sus instancias. Continúe leyendo esta guía en el apartado correspondiente a su opción. Ponemos entre paréntesis la terminología utilizada en la **interfaz Horizon**.
 
 |Término|Descripción|Facturación|
 |---|---|---|
 |[Suspender (*shelve*)](#shelve-instance)|Conserve su IP, así como los recursos y los datos de su disco creando un snapshot, liberando todos los demás recursos.|Solo se factura el snapshot.|Solo se le facturará por la instantánea (snapshot).|
-|[Detener (*suspend*)](#stop-suspend-instance)|Almacena el estado de la máquina virtual en el disco. Los recursos dedicados a la instancia están siempre reservados.|La instancia se facturará al mismo precio.|
+|[Apagar (*suspend*)](#stop-suspend-instance)|Almacena el estado de la máquina virtual en el disco. Los recursos dedicados a la instancia están siempre reservados.|La instancia se facturará al mismo precio.|
 |[Pausa](#pause-instance)|Almacena el estado de la máquina virtual en la RAM, una instancia en pausa se convierte en bloqueado.|La instancia se facturará al mismo precio.|
 
 ### Contenido
@@ -42,11 +42,11 @@ En la siguiente tabla podrá diferenciar las opciones disponibles en sus instanc
     - [Desde al área de cliente de OVHcloud](#control-panel)
     - [Desde la interfaz Horizon](#horizon)
     - [Utilizando la API de OpenStack/Nova](#openstack-nova)
--[Reactivar (unshelve) una instancia](#unshelve-instance)
+- [Reactivar (unshelve) una instancia](#unshelve-instance)
     - [Desde al área de cliente de OVHcloud](#control-panel-unshelve)
     - [Desde la interfaz Horizon](#horizon-unshelve)
     - [Utilizando la API de OpenStack/Nova](#openstack-nova-unshelve)
-- [Detener (suspend) una instancia](#stop-suspend-instance)
+- [Apagar (suspend) una instancia](#stop-suspend-instance)
     - [Desde al área de cliente de OVHcloud](#stop-control-panel)
     - [Desde la interfaz Horizon](#stop-horizon)
     - [Utilizando la API de OpenStack/Nova](#stop-openstack-nova)
@@ -73,21 +73,25 @@ Esta opción le permitirá liberar los recursos dedicados a su instancia de Publ
 
 Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instancias`{.action} en el menú de la izquierda.
 
-Haga clic en el botón `...`{.action} a la derecha de la instancia que desea suspender, y luego haga clic en `Suspender`{.action}.
+Haga clic en el botón `⋮`{.action} a la derecha de la instancia que desea suspender, y luego haga clic en `Suspender`{.action}.
 
-![suspend instance](images/suspend_an_instance.png){.thumbnail}
+![suspend instance](images/suspend_instance_2025.png){.thumbnail}
 
 En la pantalla que aparece, tome nota del mensaje y haga clic en `Confirmar`{.action}.
 
-![confirm suspension](images/suspend_an_instance_2024.png){.thumbnail}
+![confirm suspension](images/confirm_suspension_2025.png){.thumbnail}
+
+Durante la operación se muestra un mensaje:
+
+![](images/suspension_message_2025.png){.thumbnail}
 
 Una vez finalizado el proceso, su instancia se mostrará como *Suspendida*.
 
-![suspended status](images/instance_suspended.png){.thumbnail}
+![suspended status](images/instance_suspended_2025.png){.thumbnail}
 
 El snapshot estará entonces disponible en la sección `Instance Backup`{.action} del menú **Compute** a la izquierda del espacio Public Cloud. Aparecerá un snapshot llamado *xxxxx-shelved*:
 
-![snapshot tab](images/shelved_backup.png){.thumbnail}
+![snapshot tab](images/shelved_backup_2025.png){.thumbnail}
 
 <a name="horizon"></a>
 
@@ -153,9 +157,9 @@ Esta opción le permite reiniciar su instancia para poder seguir utilizándola. 
 
 Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instancias`{.action} en el menú de la izquierda.
 
-Haga clic en el botón `...`{.action} a la derecha de la instancia, y luego haga clic en `Reactivar`{.action}.
+Haga clic en el botón `⋮`{.action} a la derecha de la instancia, y luego haga clic en `Reactivar`{.action}.
 
-![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
+![reactivate instance](images/reactivate_instance_2025.png){.thumbnail}
 
 En la pantalla que aparece, tome nota del mensaje y haga clic en `Confirmar`{.action}.
 
@@ -187,7 +191,7 @@ Una vez que el entorno esté listo, escriba lo siguiente en la línea de comando
 
 <a name="stop-suspend-instance"></a>
 
-### Detener (suspend) una instancia
+### Apagar (suspend) una instancia
 
 Esta opción le permitirá detener su instancia y almacenar el estado de la máquina virtual en el disco. La memoria también se escribirá en el disco.
 
@@ -197,15 +201,17 @@ Esta opción le permitirá detener su instancia y almacenar el estado de la máq
 
 Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instancias`{.action} en el menú de la izquierda.
 
-Haga clic en el botón `...`{.action} a la derecha de la instancia, y luego haga clic en `Detener`{.action}.
+Haga clic en el botón `⋮`{.action} a la derecha de la instancia, y luego haga clic en `Apagar`{.action}.
 
-![stop instance](images/stopinstance.png){.thumbnail}
+![stop instance](images/turn_off_instance_2025.png){.thumbnail}
 
 En la pantalla que aparece, tome nota del mensaje y haga clic en `Confirmar`{.action}.
 
+![stop instance](images/confirm_turn_off.png){.thumbnail}
+
 Una vez finalizado el proceso, la instancia se mostrará como *Apagada*.
 
-Para **reactivar** la instancia, siga los pasos que se indican más arriba. Haga clic en el botón `...`{.action} a la derecha de la instancia y seleccione `Iniciar`{.action}. En algunos casos, quizá necesite reiniciarse en frío.
+Para **reactivar** la instancia, siga los pasos que se indican más arriba. Haga clic en el botón `⋮`{.action} a la derecha de la instancia y seleccione `Iniciar`{.action}. En algunos casos, quizá necesite reiniciarse en frío.
 
 <a name="stop-horizon"></a>
 

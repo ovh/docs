@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Modèles virtuels
 excerpt: "Découvrez comment utiliser les modèles virtuels d'AI Endpoints"
-updated: 2025-08-18
+updated: 2025-10-13
 ---
 
 > [!primary]
@@ -42,22 +42,27 @@ Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cl
 
 ## Model DSL
 
+> [!warning]
+>
+> As our virtual model feature allows dynamic model switching, the model’s characteristics (including pricing or context size) may change when a newer model is selected to handle your query. If you prefer certain features to remain fixed, you can lock them using the query conditions listed below.
+>
+
 When you request an LLM generation through our unified endpoint, you can provide in the OpenAI-compliant `model` field a model DSL query instead of a hardcoded model name.
 
 These queries are divided into three parts: tag, ranker, and condition:
 
-- **Tag**: A tag can be a model series (llama, mistral, codestral, ...), a publisher (meta-llama, mistralai, ...) or use case tag (code_chat, code_completion, summarization, etc.)
-- **Ranker**: The ranker defines a model's capability compared to other models. We support multiple rankers such as fastest, cheapest, biggest, latest or smallest.
-- **Condition**: The condition allows you to filter models based on strict requirements on some of the model specifications such as context_size, max_tokens and input_cost. These conditions support basic operators (<, >, =).
+- **Tag**: A tag can be a model series (llama, mistral, codestral, ...), a publisher (meta-llama, mistralai, ...) or use case tag (code_chat, code_completion, summarization, etc.). You can find the possible values on [our catalog](https://endpoints.ai.cloud.ovh.net/catalog).
+- **Ranker**: The ranker defines a model's capability compared to other models. We currently support the following rankers: fastest, cheapest, biggest, latest and smallest.
+- **Condition**: The condition allows you to filter models based on strict requirements on some of the model specifications. Currently supported specs are context_size, max_tokens, input_cost, params (number of parameters) and endpoint_publication_date (Date we made the model available on AI Endpoints). These conditions support basic operators (<, >, =).
 
 Below are some example queries and the models they currently resolve to. Please note that the resolved model can change, as we continuously update our catalog with new model releases.
 
 | Model Query | Current Target Model | Usage |
 |-----------|-----------|-----------|
-| code_chat@latest | Qwen3-32B | The most recently released model optimized for code chat tasks |
-| meta-llama@latest | Llama-3.1-8B-Instruct | The latest Meta-released LLaMA model |
-| mistral@latest?context_size > 100000 | Mistral-Small-3.2-24B-Instruct-2506 | The latest Mistral model with a context window greater than 100k tokens |
-| llama@biggest?input_cost<0.5 | Llama-3.1-8B-Instruct | The largest LLaMA model whose input token cost is under €0.50 per 1M tokens |
+| code_chat@latest | **Example:** Qwen3-32B | The most recently released model optimized for code chat tasks |
+| meta-llama@latest | **Example:** Llama-3.1-8B-Instruct | The latest Meta-released LLaMA model |
+| mistral@latest?context_size > 100000 | **Example:** Mistral-Small-3.2-24B-Instruct-2506 | The latest Mistral model with a context window greater than 100k tokens |
+| llama@biggest?input_cost<0.5 | **Example:** Llama-3.1-8B-Instruct | The largest LLaMA model whose input token cost is under €0.50 per 1M tokens |
 
 You can visit our [catalog](https://endpoints.ai.cloud.ovh.net/catalog) to learn more about the different model specifications.
 
@@ -142,4 +147,3 @@ If you need training or technical assistance to implement our solutions, contact
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud).
-

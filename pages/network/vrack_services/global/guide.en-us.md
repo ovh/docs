@@ -1,7 +1,7 @@
 ---
 title: "vRack Services - Exposing a Managed Service on your vRack"
 excerpt: "Discover how to expose your managed service on the vRack using the vRack Services product and the Service Endpoint feature."
-updated: 2024-12-19
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -451,6 +451,10 @@ Output:
 >
 
 ## Constraints and limitations
+
+> [!primary]
+> Please note that creating vRack Services, Subnets, or Service Endpoints on a production vRack **does not cause any service interruption**.
+>
 
 ### vRack Services
 

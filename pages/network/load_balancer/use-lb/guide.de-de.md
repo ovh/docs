@@ -10,8 +10,8 @@ Ziel dieser Anleitung ist es, Sie bei der erstmaligen Verwendung des Loadbalance
 
 ## Voraussetzungen
 
-- Zugang zu Ihrem OVHcloud Kundencenter
-- Bestellung des [Loadbalancers](/links/network/load-balancer)
+- Sie haben einen [OVHcloud Loadbalancer](/links/network/loadbalancer) in Ihrem OVHcloud Kundencenter.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## Beschreibung
 
@@ -62,6 +62,7 @@ Sie haben außerdem Zugriff auf die erweiterten Einstellungen:
 |HTTP-Header|Hier fügen Sie einen HTTP-Header hinzu|
 
 ### Verwaltung der Serverfarmen
+
 Um eine Serverfarm hinzuzufügen, gehen Sie einfach in den Bereich `Serverfarmen`{.action} und klicken dann auf `Eine Serverfarm hinzufügen`{.action}. Ihnen stehen die gleichen wesentlichen Optionen zur Verfügung wie beim Frontend. Die erweiterten Einstellungen sind jedoch anders:
 
 ![Eine Serverfarm hinzufügen](images/advanced_cluster.png){.thumbnail}
@@ -73,6 +74,7 @@ Um eine Serverfarm hinzuzufügen, gehen Sie einfach in den Bereich `Serverfarmen
 |Monitoring-Sonde|Auswahl und Aktivierung der Monitoring-Sonde|
 
 ### Verwaltung der Server
+
 Nachdem Ihre Serverfarm angelegt wurde, müssen Sie ihr nur noch Server zuweisen. Nachfolgend die Details zu den Optionen und den erweiterten Einstellungen:
 
 ![Server hinzufügen](images/add_server.png){.thumbnail}
@@ -92,9 +94,11 @@ Nachdem Ihre Serverfarm angelegt wurde, müssen Sie ihr nur noch Server zuweisen
 |Proxy-Protokollversion|**Nur wenn Sie das Proxy-Protokoll bereits konfiguriert haben**, wählen Sie die Proxy-Protokollversion aus, die Sie auf diesem Server verwenden möchten. </br> Weitere Informationen zum Proxy-Protokoll und dessen Verwendung mit dem Loadbalancer von OVHcloud finden Sie in [dieser Anleitung](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Verwaltung der SSL-Zertifikate
+
 Im Bereich `SSL-Zertifikate`{.action} ist es möglich, den Loadbalancer um eine SSL-Verschlüsselung zu ergänzen. Sie haben zwei Möglichkeiten: Sie können ein SSL-Zertifikat über OVH bestellen oder ein externes Zertifikat hinzufügen.
 
-#### SSL-Zertifikat von OVH
+#### SSL-Zertifikat von OVHcloud
+
 Um ein SSL-Zertifikat zu bestellen, gehen Sie einfach in den Bereich `SSL-Zertifikate`{.action}, klicken dann auf `Ein SSL-Zertifikat bestellen`{.action} und folgen dem Bestellprozess:
 
 ![SSL-Zertifikat bestellen](images/ordering_ssl.png){.thumbnail}
@@ -106,6 +110,7 @@ Um ein SSL-Zertifikat zu bestellen, gehen Sie einfach in den Bereich `SSL-Zertif
 |Fully Qualified Domain Name (FQDN)|Die betroffene(n) Domain(s)|
 
 #### Hinzufügen eines externen SSL-Zertifikats
+
 Wenn Sie bereits über ein eigenes SSL-Zertifikat verfügen, können Sie es direkt hinzufügen:
 
 ![Ein SSL-Zertifikat hinzufügen](images/external_ssl.png){.thumbnail}

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Come iniziare con Object Storage (EN)
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2025-09-15
+updated: 2025-09-30
 ---
 
 <style>
@@ -384,7 +384,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> aws s3 sync s3://<bucket_name> s3://<bucket_name_2> # Synchronising an S3 bucket to another one
 >> ```
 
-**Deleting objects and buckets**
+#### Deleting objects and buckets
 
 > [!primary]
 >
@@ -482,7 +482,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> Click on `Confirm`{.action}.
 >>
 
-**Manage tags**
+#### Manage tags
 
 > [!tabs]
 > Via AWS CLI

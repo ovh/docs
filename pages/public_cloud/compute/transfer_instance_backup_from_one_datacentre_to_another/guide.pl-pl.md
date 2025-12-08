@@ -1,7 +1,7 @@
 ---
 title: "Pobieranie i przesyłanie kopii zapasowej instancji z jednego regionu OpenStack do innego"
 excerpt: "Dowiedz się, jak pobrać i przesłać kopię zapasową instancji z jednego regionu OpenStack do innego, zachowując jednocześnie stan i konfigurację instancji"
-updated: 2024-12-03
+updated: 2025-10-15
 ---
 
 ## Wprowadzenie
@@ -24,23 +24,10 @@ Będziesz również potrzebował [instancji Public Cloud](/links/public-cloud/co
 
 ## W praktyce
 
-### Tworzenie kopii zapasowej
-
-```bash
-$ openstack server list
- 
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID | Name | Status | Networks | Image Name |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-Następnie wprowadź następującą komendę, aby utworzyć kopię zapasową Twojej instancji:
-
-```bash 
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
+> [!primary]
+>
+> Jeśli chcesz utworzyć kopię zapasową za pomocą OpenStack, skorzystaj z tej dedykowanej instrukcji, jak [zrobić kopię zapasową instancji.](/pages/public_cloud/compute/save_an_instance).
+>
 
 ### Pobieranie kopii zapasowej
 
@@ -148,9 +135,9 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 ### Tworzenie instancji z kopii zapasowej
 
-> [!warning]
+> [!primary]
 >
-> Jeśli Twoja instancja jest serwerem Windows, musisz wybrać flavor typu win-xx-xx (na przykład win-b2-15) i dysponować publicznym interfejsem w sieci Ext-Net. W przeciwnym razie uwierzytelnienie w KMS OVHcloud nie będzie możliwe, a Twój serwer pozostanie w [nieaktywna licencja](/pages/public_cloud/compute/activate-windows-license-private-mode). Może to spowodować pewne ograniczenia, w tym brak aktualizacji. Pamiętaj, że nie można zmienić rozmiaru instancji Linux (np. b2-15) na instancję Windows (np. win-b2-15). W tym celu utwórz ponownie nową instancję.
+> Jeśli chcesz ponownie utworzyć swoją instancję z tego backupu, postępuj zgodnie z naszym przewodnikiem "[Używanie kopii zapasowych instancji do tworzenia lub przywracania instancji](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)".
 >
 
 Aby utworzyć instancję na podstawie kopii zapasowej, użyj identyfikatora kopii zapasowej jako obrazu za pomocą polecenia:

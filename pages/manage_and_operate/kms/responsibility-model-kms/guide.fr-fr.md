@@ -1,13 +1,12 @@
 ---
-title: Key Management Service (KMS) - Partage des responsabilités
-excerpt: "RACI entre OVHcloud et le client pour l'utilisation du KMS OHcloud"
-flag: hidden
-updated: 2024-11-25
+title: OKMS - Partage des responsabilités
+excerpt: "RACI entre OVHcloud et le client pour l'utilisation du KMS OHcloud et du Secret Manager"
+updated: 2025-10-21
 ---
 
 ## Objectif
 
-Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour le service KMS. Ce modèle peut aider le client à utiliser au mieux le service.
+Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour le service OKMS. Ce modèle peut aider le client à utiliser au mieux le service.
 
 | Rôles |
 | --- |
@@ -58,7 +57,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer la disponibilité réseau du service |  | RA |
 | Administrer le service |  | RA  |
 | Réaliser les backups du service |  | RA |
-| Administrer les clés stockés dans le KMS | RA |  |
+| Administrer les clés stockées et les secrets dans l'OKMS | RA |  |
 
 ##### **3.1.2. Gestion des accès**
 

@@ -1,7 +1,7 @@
 ---
 title: "Monitorização dos ataques DDoS com o Network Security Dashboard"
 excerpt: "Saiba como navegar no Dashboard de Segurança da Rede"
-updated: 2025-09-08
+updated: 2025-10-31
 ---
 
 ## Objetivo
@@ -78,6 +78,8 @@ Na tabela, estão presentes as seguintes colunas:
 - **IP de destino** - O IP que foi alvo do ataque
 - **Vetores de ataque** - Fornece informações sobre tipos de ataque detetados, tais como ataques UDP ou TCP, etc.
 
+**O período de retenção de dados para os registos do centro de filtragem é de 1 ano.**
+
 > [!warning]
 >
 > Tenha em conta que os endereços IP de origem dos eventos detetados não são apresentados porque são normalmente alvo de spoofing (os ataques DDoS podem apontar para outras fontes que não aquelas de onde realmente provêm) e tal informação seria enganosa ou não seria utilizável.
@@ -88,6 +90,8 @@ No separador **Gráfico de tráfego**, pode ver um gráfico que mostra o tráfeg
 ![ataque-linha-vermelha](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Apresenta tráfego malicioso que foi eliminado (**em vermelho**) e tráfego limpo enviado para o seu endereço IP (**em verde**). Também são apresentadas estatísticas básicas de mitigação, ou seja: o número de ataques detetados para um IP selecionado, o volume de tráfego (ou pacotes) limpo durante os ataques ou o número de vezes que os centros de limpeza efetuaram uma ação para inspecionar o tráfego (número de eventos) num período de tempo selecionado.
+
+**O período de retenção de dados para o gráfico de tráfego é de 2 meses.**
 
 ## FAQ
 
@@ -108,7 +112,7 @@ Estes dados só estão disponíveis para os endereços IP públicos durante os e
 
 ### O gráfico de tráfego para algumas posições nos logs do centro de limpeza não está disponível.
 
-Os dados do gráfico de tráfego só estão disponíveis para as duas últimas semanas, enquanto que as entradas de registo podem ser revistas para o ano passado.
+Os dados do gráfico de tráfego estão disponíveis apenas para os últimos dois meses, enquanto as entradas de registo podem ser revistas durante o último ano.
 
 ### Um ataque ao meu serviço persiste, como posso proteger melhor o meu servidor?
 

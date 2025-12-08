@@ -1,38 +1,28 @@
 ---
 title: Référence Rapide API Load Balancer
 excerpt: Description rapide des différentes fonctions de l’API servant à gérer le Load Balancer
-updated: 2022-04-04
+updated: 2025-09-29
 ---
 
-## Liste des fonctions API
-Cette section décrit brièvement les principales fonctions de l'API pour l'OVH Load Balancer sous /ipLoadbalancing
+Cette section décrit brièvement les principales fonctions de l'API pour l'OVHcloud Load Balancer, sous /ipLoadbalancing.
+
+Pour une référence complète des fonctions de l'API du service OVHcloud Load Balancer, veuillez consulter [ce guide détaillé](/pages/network/load_balancer/use_api_details).
+
+> [!primary]
+>
+> Les frontends, fermes et serveurs sont spécifiques au protocole (HTTP, TCP ou UDP) dans lequel ils sont définies.
+> La compatibilité entre ces composants n'est possible qu'au sein du même protocole.
+> Par exemple, un frontend HTTP ne peut être associé qu'à une ferme HTTP, et ne peut pas être utilisé avec une ferme UDP.
+> 
 
 > [!warning]
 >
-> Attention, pour des raisons de compatibilité le point d'entrée de l'ancien système OVH Load Balancer est toujours présent dans l'API /ip/loadBalancing , à ne pas confondre avec le nouveau /ipLoadbalancing.
-> 
-
-Pour une référence complète aux fonctions de l'API du service OVH Load Balancer, c'est [ici](/pages/network/load_balancer/use_api_details).
-
-> [!primary]
->
-> Les Frontend, Ferme et Serveur sont spécifiques au
-> protocole (parmis HTTP, TCP ou UDP) dans lequel ils sont définis.
-> Bien qu'ils puissent être "combinés" entre eux, ce n'est possible qu'au sein
-> d'un même protocole. Ainsi, il n'est pas possible d'utiliser un Frontend
-> UDP avec une Ferme HTTP. Mais il est possible (en l'absence d'autre
-> limitation) d'utiliser un Frontend HTTP avec une Ferme HTTP.
-> 
+> Chaque catégorie relevant de la gestion des frontends, des fermes et des serveurs se compose de 3 fonctions API, une pour chaque protocole (HTTP, TCP ou UDP).
+> Il est nécessaire de bien exécuter la fonction API qui correspond au protocole du service souhaité.
 
 ## Frontend
 
-> [!primary]
->
-> Comme vous pouvez le constater, chaque catégorie se compose de 3 fonctions API.
-> Il est nécessaire de bien exécuter la fonction API qui correspond au type de service souhaité.
-> 
-
-### Retourne la liste des IDs des frontends existants
+### Retourner la liste des IDs des frontends existants
 
 > [!api]
 >
@@ -41,7 +31,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend
 > 
 
-### Crée un frontend
+### Créer un frontend
 
 > [!api]
 >
@@ -50,7 +40,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/frontend
 > 
 
-### Retourne les paramètres appliqués à un frontend
+### Retourner les paramètres appliqués à un frontend
 
 > [!api]
 >
@@ -59,7 +49,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
-### Édite les paramètres relatifs à un frontend particulier
+### Éditer les paramètres relatifs à un frontend en particulier
 
 > [!api]
 >
@@ -68,7 +58,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
-### Supprime un frontend
+### Supprimer un frontend
 
 > [!api]
 >
@@ -79,13 +69,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 
 ## Ferme de serveurs
 
-> [!primary]
->
-> Tout comme pour le frontend, chaque catégorie se compose de 3 fonctions API.
-> Il est nécessaire de bien exécuter la fonction API qui correspond au type de service souhaité.
-> 
-
-### Retourne la liste des IDs des fermes existantes
+### Retourner la liste des IDs des fermes existantes
 
 > [!api]
 >
@@ -94,7 +78,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm
 > 
 
-### Crée une ferme
+### Créer une ferme
 
 > [!api]
 >
@@ -103,7 +87,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm
 > 
 
-### Retourne les paramètres appliqués à une ferme
+### Retourner les paramètres appliqués à une ferme
 
 > [!api]
 >
@@ -112,7 +96,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 > 
 
-### Édite les paramètres relatifs à une ferme particulière
+### Éditer les paramètres relatifs à une ferme en particulier
 
 > [!api]
 >
@@ -121,7 +105,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 > 
 
-### Supprime une ferme
+### Supprimer une ferme
 
 > [!api]
 >
@@ -132,13 +116,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 
 ## Serveur
 
-> [!primary]
->
-> Tout comme pour les frontend et ferme, chaque catégorie se compose de 3 fonctions API.
-> Il est nécessaire de bien exécuter la fonction API qui correspond au type de service souhaité.
-> 
-
-### Retourne la liste des IDs des serveurs liés à une ferme particulière
+### Retourner la liste des IDs des serveurs liés à une ferme en particulier
 
 > [!api]
 >
@@ -147,7 +125,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 > 
 
-### Crée un serveur pour une ferme particulière
+### Créer un serveur pour une ferme en particulier
 
 > [!api]
 >
@@ -156,7 +134,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 > 
 
-### Retourne les paramètres d'un serveur particulier
+### Retourner les paramètres d'un serveur en particulier
 
 > [!api]
 >
@@ -165,7 +143,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 > 
 
-### Édite les paramètres d'un serveur particulier
+### Éditer les paramètres d'un serveur en particulier
 
 > [!api]
 >
@@ -174,7 +152,7 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 > 
 
-### Supprime un serveur
+### Supprimer un serveur
 
 > [!api]
 >
@@ -185,28 +163,28 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 
 ## Certificats SSL
 
-### Retourne la liste des certificats SSL
+### Retourner la liste des certificats SSL
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl
 > 
 
-### Crée un certificat SSL
+### Créer un certificat SSL
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/ssl
 > 
 
-### Retourne les paramètres d'un certificat SSL en particulier
+### Retourner les paramètres d'un certificat SSL en particulier
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
-### Supprime un certificat SSL
+### Supprimer un certificat SSL
 
 > [!api]
 >
@@ -215,23 +193,27 @@ Pour une référence complète aux fonctions de l'API du service OVH Load Balanc
 
 ## Tâche
 
-### Applique les changements à la configuration du Load Balancer
+### Appliquer les changements à la configuration du Load Balancer
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
-### Retourne la liste des IDs des tâches
+### Retourner la liste des IDs des tâches
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 > 
 
-### Retourne le statut d'une tâche en particulier
+### Retourner le statut d'une tâche en particulier
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 > 
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

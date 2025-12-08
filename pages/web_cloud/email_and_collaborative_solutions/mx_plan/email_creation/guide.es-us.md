@@ -105,7 +105,7 @@ En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.actio
 
 **Ha utilizado todas las direcciones incluidas en su plan?**
 
-- Consulte las preguntas de [nuestras FAQ de correo](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+- Consulte las preguntas de [nuestras FAQ de correo](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - Consulte nuestra solución de correo electrónico [Exchange] (/links/web/emails) para completar su MX Plan con el mismo dominio.
 
 

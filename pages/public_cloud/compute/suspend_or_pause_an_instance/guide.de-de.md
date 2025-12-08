@@ -1,6 +1,6 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-updated: 2025-05-26
+updated: 2025-10-30
 ---
 
 ## Ziel
@@ -25,7 +25,7 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 >
 > Diese Anleitung gilt nur für Instanzen mit **stündlicher Abrechnung**. Wenn Ihre Instanzen über eine **monatliche Abrechnung** verfügen, wird die Abrechnung ungeachtet des Status der Dienstleistung fortgesetzt.
 >
-> Instanzen werden weiterhin abgerechnet, solange sie nicht gelöscht werden.
+> Diese Manipulationen führen immer zu einer **Abrechnung der Instanz**, solange diese nicht **gelöscht** wird.
 >
 
 In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optionen in der Übersicht. Klicken Sie auf die Option Ihrer Wahl, um zum entsprechenden Teil der Anleitung zu gelangen. Wir setzen die in der Horizon-Interface verwendete Terminologie in Klammern.
@@ -33,7 +33,7 @@ In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optione
 |Funktion|Beschreibung|Abrechnung|
 |---|---|---|
 |[Aussetzen (*shelve*)](#shelve-instance)|Speichert die Ressourcen und Daten Ihrer Disk, indem ein Snapshot erstellt wird. Alle anderen Ressourcen werden freigegeben.|Ihnen wird nur der Snapshot berechnet.|
-|[Anhalten (*suspend*)](#stop-suspend-instance)|Speichert den Zustand der VM auf die Disk. Die der Instanz zugewiesenen Ressourcen bleiben reserviert.|An der Abrechnung der Instanz ändert sich nichts.|
+|[Ausschalten (*suspend*)](#stop-suspend-instance)|Speichert den Zustand der VM auf die Disk. Die der Instanz zugewiesenen Ressourcen bleiben reserviert.|An der Abrechnung der Instanz ändert sich nichts.|
 |[Pausieren (*pause*)](#pause-instance)|Speichert den Zustand der VM im RAM. Eine pausierte Instanz wird "eingefroren".|An der Abrechnung der Instanz ändert sich nichts.|
 
 ### Inhaltsübersicht
@@ -42,11 +42,11 @@ In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optione
     - [Im OVHcloud Kundencenter](#control-panel)
     - [Im Horizon-Interface](#horizon)
     - [Verwendung der OpenStack/Nova API](#openstack-nova)
--[Reaktivieren einer Instanz (*unshelve*)](#unshelve-instance)
+- [Reaktivieren einer Instanz (*unshelve*)](#unshelve-instance)
     - [Im OVHcloud Kundencenter](#control-panel-unshelve)
     - [Im Horizon-Interface](#horizon-unshelve)
     - [Verwendung der OpenStack/Nova API](#openstack-nova-unshelve)
-- [Anhalten einer Instanz (*suspend*)](#stop-suspend-instance)
+- [Ausschalten einer Instanz (*suspend*)](#stop-suspend-instance)
     - [Im OVHcloud Kundencenter](#stop-control-panel)
     - [Im Horizon-Interface](#stop-horizon)
     - [Verwendung der OpenStack/Nova API](#stop-openstack-nova)
@@ -72,21 +72,25 @@ Diese Option erlaubt es Ihnen, die dedizierten Ressourcen Ihrer Public Cloud Ins
 
 Loggen Sie sich in Ihr OVHcloud Kundencenter ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action}.
 
-Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Aussetzen`{.action}.
+Klicken Sie in der Instanzenverwaltung auf `⋮`{.action} rechts neben der Instanz und wählen Sie `Aussetzen`{.action}.
 
-![suspend instance](images/suspend_an_instance.png){.thumbnail}
+![suspend instance](images/suspend_instance_2025.png){.thumbnail}
 
 Nehmen Sie die Meldung im Dialogfenster zur Kenntnis und klicken Sie auf `Bestätigen`{.action}.
 
-![confirm suspension](images/suspend_an_instance_2024.png){.thumbnail}
+![confirm suspension](images/confirm_suspension_2025.png){.thumbnail}
+
+Während des Vorgangs wird folgende Meldung angezeigt:
+
+![](images/suspension_message_2025.png){.thumbnail}
 
 Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgesetzt*.
 
-![suspended status](images/instance_suspended.png){.thumbnail}
+![suspended status](images/instance_suspended_2025.png){.thumbnail}
 
 Um den Snapshot zu sehen, klicken Sie im linken Menü auf `Instance Backup`{.action} im Bereich **Compute**. Ein Snapshot mit dem Namen *xxxxx-shelved* wird dann angezeigt.
 
-![snapshot tab](images/shelved_backup.png){.thumbnail}
+![snapshot tab](images/shelved_backup_2025.png){.thumbnail}
 
 <a name="horizon"></a>
 
@@ -152,9 +156,9 @@ Mit dieser Option können Sie Ihre Instanz aus dem ausgesetzten Zustand entferne
 
 Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action}.
 
-Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Reaktivieren`{.action}.
+Klicken Sie in der Instanzenverwaltung auf `⋮`{.action} rechts neben der Instanz und wählen Sie `Reaktivieren`{.action}.
 
-![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
+![reactivate instance](images/reactivate_instance_2025.png){.thumbnail}
 
 Nehmen Sie die Meldung im Dialogfenster zur Kenntnis und klicken Sie auf `Bestätigen`{.action}.
 
@@ -186,9 +190,9 @@ Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
 <a name="stop-suspend-instance"></a>
 
-### Anhalten einer Instanz (*suspend*)
+### Ausschalten einer Instanz (*suspend*)
 
-Mit dieser Option können Sie Ihre Instanz anhalten und den Zustand der virtuellen Maschine auf der Disk sichern. Der Arbeitsspeicher wird ebenfalls auf die Disk geschrieben.
+Mit dieser Option können Sie Ihre Instanz ausschalten und den Zustand der virtuellen Maschine auf der Disk sichern. Der Arbeitsspeicher wird ebenfalls auf die Disk geschrieben.
 
 <a name="stop-control-panel"></a>
 
@@ -196,15 +200,17 @@ Mit dieser Option können Sie Ihre Instanz anhalten und den Zustand der virtuell
 
 Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action}.
 
-Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Anhalten`{.action}.
+Klicken Sie in der Instanzenverwaltung auf `⋮`{.action} rechts neben der Instanz und wählen Sie `Anhalten`{.action}.
 
-![stop instance](images/stopinstance.png){.thumbnail}
+![stop instance](images/turn_off_instance_2025.png){.thumbnail}
 
 Nehmen Sie die Meldung im Dialogfenster zur Kenntnis und klicken Sie auf `Bestätigen`{.action}.
 
+![stop instance](images/confirm_turn_off.png){.thumbnail}
+
 Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgeschaltet*.
 
-Um die Instanz wieder in Betrieb zu nehmen (*unsuspend*), klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Starten`{.action}. In einigen Fällen müssen Sie möglicherweise einen Neustart durchführen.
+Um die Instanz wieder in Betrieb zu nehmen (*unsuspend*), klicken Sie in der Instanzenverwaltung auf `⋮`{.action} rechts neben der Instanz und wählen Sie `Starten`{.action}. In einigen Fällen müssen Sie möglicherweise einen Neustart durchführen.
 
 <a name="stop-horizon"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: How to manage nodes and node pools on an OVHcloud Managed Kubernetes cluster
 excerpt: Learn how to manage nodes and node pools using the OVHcloud Control Panel, the OVHcloud API, and the NodePools Custom Resource Definition (CRD)
-updated: 2025-06-04
+updated: 2025-12-02
 ---
 
 ## Objective
@@ -45,6 +45,10 @@ We will walk you through each method to help you efficiently scale and manage yo
 >> Setting the `antiAffinity` boolean ensures that nodes in that node pool will be created on different hypervisors (baremetal machines) and therefore ensure the best availability for your workload. The maximum number of nodes is set to 5 if this feature is activated on a nodepool (you can of course create multiple node pools with each 5 anti-affinity nodes max).
 >>
 >> Setting the `template` property will allow you to define some specs (annotations, finalizers, labels, taints, schedulability) that will be applied to each node under this node pool.
+>>
+>> If your cluster have been created in a 3AZ Region, you also must specify an AZ with the `availabilityZones` parameter.
+>>
+>> You can enable the creation of Floating IPS with the `attachFloatingIps` parameter. If `enabled` boolean is true, a Floating IP will be attached to each node.
 >>
 >> Finally the boolean `monthlyBilled` ensures that all nodes in a node pool will be spawned in monthly billing mode and therefore benefit from the monthly discount.
 >>
@@ -140,47 +144,67 @@ We will walk you through each method to help you efficiently scale and manage yo
 >>   description: NodePoolSpec defines the desired state of NodePool
 >>   properties:
 >>     antiAffinity:
+>>       description: Represents whether the pool should deploy instances exclusively on different hypervisors.
+>>       nullable: true
 >>       type: boolean
->>       description: If true, all nodes present in the pool will be spawned on different hosts (or hypervisors).
+>>     attachFloatingIPs:
+>>       description: AttachFloatingIPs describe network exposition of all nodes in the pool.
+>>       nullable: true
+>>       properties:
+>>         enabled:
+>>           description: Enabled describe the node network exposition. If True, a FloatingIP will be assigned to each node.
+>>           type: boolean
+>>       type: object
 >>     autoscale:
->>       type: boolean
 >>       description: Represents whether the pool should be autoscaled.
+>>       nullable: true
+>>       type: boolean
 >>     autoscaling:
->>       description:  Represents the autoscaling customization of a node pool.
->>       nullable:     true
+>>       description: Represents the autoscaling customization of a node pool.
+>>       nullable: true
 >>       properties:
 >>         scaleDownUnneededTimeSeconds:
->>           description:  Represents how long a node should be unneeded before it is eligible for scale down.
->>           format:       int32
->>           minimum:      0
->>           nullable:     true
->>           type:         integer
+>>           description: Represents how long a node should be unneeded before it is eligible for scale down.
+>>           format: int32
+>>           minimum: 0
+>>           nullable: true
+>>           type: integer
 >>         scaleDownUnreadyTimeSeconds:
->>           description:  Represents how long an unready node should be unneeded before it is eligible for scale down.
->>           format:       int32
->>           minimum:      0
->>           nullable:     true
->>           type:         integer
+>>           description: Represents how long an unready node should be unneeded before it is eligible for scale down.
+>>           format: int32
+>>           minimum: 0
+>>           nullable: true
+>>           type: integer
 >>         scaleDownUtilizationThreshold:
->>           description:  Represents the ratio of used resources (CPU & RAM) over allocatable resources below which a node is eligible for scale down Kubebuilder does not handle float, this must be a string.
->>           nullable:     true
->>           type:         string
->>       type:             object
+>>           description: Represents the ratio of used resources (CPU & RAM)
+>>             over allocatable resources below which a node is eligible for
+>>             scale down Kubebuilder does not handle float, this must be a
+>>             string.
+>>           nullable: true
+>>           type: string
+>>       type: object
+>>     availabilityZones:
+>>       description: Represents the availability zones of the node pool.
+>>       items:
+>>         type: string
+>>       nullable: true
+>>       type: array
 >>     desiredNodes:
->>       description: Represents number of nodes wanted in the pool.
+>>       description: Represents the number of nodes wanted in the pool.
 >>       format: int32
->>       maximum: 100
+>>       maximum: 999
 >>       minimum: 0
 >>       type: integer
 >>     flavor:
->>       description: Represents the flavor nodes wanted in the pool.
+>>       description: Represents the node flavors wanted in the pool.
 >>       type: string
 >>     maxNodes:
 >>       description: Represents the maximum number of nodes which should be
 >>         present in the pool.
 >>       format: int32
->>       maximum: 100
+>>       maximum: 999
 >>       minimum: 0
+>>       nullable: true
 >>       type: integer
 >>     minNodes:
 >>       description: Represents the minimum number of nodes which should be
@@ -188,14 +212,94 @@ We will walk you through each method to help you efficiently scale and manage yo
 >>       format: int32
 >>       maximum: 100
 >>       minimum: 0
+>>       nullable: true
 >>       type: integer
 >>     monthlyBilled:
+>>       description: Represents the billing type of the pool. False means that the pool is hourly-billed.
+>>       nullable: true
 >>       type: boolean
->>       description: If true, all nodes present in the pool will be billed each month (not hourly).
+>>     template:
+>>       description: Template describes the configuration of the nodes in the pool. On change, it will be applied to existing and future nodes.
+>>       nullable: true
+>>       properties:
+>>         metadata:
+>>           description: Standard object's metadata.
+>>           properties:
+>>             annotations:
+>>               additionalProperties:
+>>                 type: string
+>>               description: 'Annotations is an unstructured key value map
+>>                 stored with a resource that may be set by external tools
+>>                 to store and retrieve arbitrary metadata. They are not queryable
+>>                 and should be preserved when modifying objects. More info:
+>>                 http://kubernetes.io/docs/user-guide/annotations'
+>>               type: object
+>>             finalizers:
+>>               description: Must be empty before the object is deleted from
+>>                 the registry. Each entry is an identifier for the responsible
+>>                 component that will remove the entry from the list. If the
+>>                 deletionTimestamp of the object is non-nil, entries in this
+>>                 list can only be removed.
+>>               items:
+>>                 type: string
+>>               type: array
+>>             labels:
+>>               additionalProperties:
+>>                 type: string
+>>               description: 'Map of string keys and values that can be used
+>>                 to organize and categorize (scope and select) objects. May
+>>                 match selectors of replication controllers and services.
+>>                 More info: http://kubernetes.io/docs/user-guide/labels'
+>>               type: object
+>>           required:
+>>           - annotations
+>>           - finalizers
+>>           - labels
+>>           type: object
+>>         spec:
+>>           description: Specification of the desired behavior of the node.
+>>           properties:
+>>             taints:
+>>               description: If specified, the node's taints.
+>>               items:
+>>                 description: The node this Taint is attached to has the "effect" on any pod that does not tolerate the Taint.
+>>                 properties:
+>>                   effect:
+>>                     description: Required. The effect of the taint on pods
+>>                       that do not tolerate the taint. Valid effects are
+>>                       NoSchedule, PreferNoSchedule and NoExecute.
+>>                     type: string
+>>                   key:
+>>                     description: Required. The taint key to be applied to a node.
+>>                     type: string
+>>                   timeAdded:
+>>                     description: TimeAdded represents the time at which the taint was added. It is only written for NoExecute taints.
+>>                     format: date-time
+>>                     type: string
+>>                   value:
+>>                     description: The taint value corresponding to the taint
+>>                       key.
+>>                     type: string
+>>                 required:
+>>                 - effect
+>>                 - key
+>>                 type: object
+>>               type: array
+>>             unschedulable:
+>>               description: 'Unschedulable controls node schedulability of
+>>                 new pods. By default, node is schedulable. More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration'
+>>               type: boolean
+>>           required:
+>>           - taints
+>>           - unschedulable
+>>           type: object
+>>       required:
+>>       - metadata
+>>       - spec
+>>       type: object
 >>   required:
->>   - desiredNodes
 >>   - flavor
->>   type: object
+>>  type: object
 >> ```
 >>
 >> After creation:
@@ -442,6 +546,10 @@ We will walk you through each method to help you efficiently scale and manage yo
 >> You will need to give it a `flavorName` parameter, with the flavor of the instance you want to create. For this tutorial choose a general purpose node, like the `b2-7` flavor.
 >>
 >> If you want your node pool to have at least one node, set the `desiredNodes` to a value above 0.
+>>
+>> On a 3AZ Region, the `availabilityZones` is also mandatory. 
+>> To get the `availibilityZones` available for a region, you can use the `GET /cloud/project/{serviceName}/capabilities/productAvailability ` API endpoint.
+
 >>
 >> The API will return you the new node pool information.
 >>

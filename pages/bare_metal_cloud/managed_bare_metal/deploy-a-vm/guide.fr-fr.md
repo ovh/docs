@@ -42,7 +42,7 @@ L'étape suivante vous permet de définir le nom de votre machine et de choisir 
 
 ![emplacement de la  machine virtuelle](images/vm03.png){.thumbnail}
 
-Vous pouvez ensuite choisir le cluster, l’hôte, [le pool de ressources](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link}, ou [la vApp](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link} où vous souhaitez la placer.
+Vous pouvez ensuite choisir le cluster, l’hôte, [le pool de ressources](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html), ou [la vApp](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html) où vous souhaitez la placer.
 
 Dans ce cas, la machine virtuelle sera déployée selon les règles DRS configurées, et sera placée à la racine du cluster.
 

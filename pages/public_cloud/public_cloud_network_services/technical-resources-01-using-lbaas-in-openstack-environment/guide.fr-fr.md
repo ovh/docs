@@ -1,7 +1,7 @@
 ---
 title: "Déployer un Load Balancer Public Cloud"
 excerpt: Découvrez comment configurer le Load Balander pour Public Cloud
-updated: 2024-05-30
+updated: 2025-09-17
 ---
 
 ## Objectif

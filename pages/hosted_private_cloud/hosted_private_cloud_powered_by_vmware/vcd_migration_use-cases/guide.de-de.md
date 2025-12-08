@@ -65,12 +65,12 @@ Migrations will be carried out in 4 waves, from november 2024, depending on the 
 
 The planned schedule, which is compatible with these environments during the migration, is as follows:
 
-| **Waves**&nbsp;&nbsp;&nbsp;&nbsp; |             **From**              | **Target<br/>Offers** |  **NSX**   |  **vRack**  | **Microsoft<br/>(SPLA)** | **Summary of migration compatible environments**                                                                                                         |
+| **Waves**&nbsp;&nbsp;&nbsp;&nbsp; |             **From**              | **Target<br/>Offers** |  **Microsoft<br/>(SPLA)**   |  **vRack**  | **NSX** | **Summary of migration compatible environments**                                                                                                         |
 |:---------------------------------:|:----------------------------------:|:---------------------:|:----------:|:-----------:|:-------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|             `Wave 1`              |         **January 2025<br/>February 2025**          |      `Standard`       |     ❌      |      ❌      |          ❌          | - **Without** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)           |
-|             `Wave 2`              | **Mid-May 2025** |      `Standard`       |     ❌      |      ❌      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)              |
-|             `Wave 3`              |         **Mid-June 2025**          |      `Advanced`       |     ❌      |      ❌      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN) |
-|             `Wave 4`              |           **May 2025**           |       `Premium`       |     ✅      |      ✅      |          ✅          | - **With** Microsoft Windows license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **With** High performance storage (vSAN)       |
+|             `Wave 1`              |         **January 2025<br/>February 2025**          |      `Standard`       |     ❌      |      ❌      |          ❌          | - **Without** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX |
+|             `Wave 2`              | **Mid-May 2025** |      `Standard`       |     ✅      |      ❌      |          ❌          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX |
+|             `Wave 3`              |         **December 2025**          |      `Standard`       |     ✅      |      ✅       |          ❌          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/> - **With** vRack<br/> - **Without** NSX |
+|             `Wave 4`              |           **End of<br/>February 2026**           |       `Advanced`       |     ✅      |      ✅      |          ✅          | - **With** Microsoft Windows license (SPLA) provided by OVHcloud<br/>- **With** vRack<br/>- **With** NSX |
 
 During this process, your data will remain unchanged, except for vSAN Storage. Your IP addresses will also remain unchanged.
 

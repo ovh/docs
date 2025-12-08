@@ -1,7 +1,7 @@
 ---
 title: 'Diagnostiquer des dysfonctionnements matériels sur un serveur dédié'
 excerpt: 'Découvrez comment utiliser les outils de diagnostic pour identifier des dysfonctionnements matériels sur votre serveur'
-updated: 2025-09-05
+updated: 2025-10-16
 ---
 
 ## Objectif
@@ -23,7 +23,7 @@ Ce guide vous détaille les tests à réaliser pour diagnostiquer :
 - la connexion du réseau ;
 - la mémoire RAM ;
 - disques et partitions.
- 
+ 
 ### Processeurs
 
 Le test du processeur vérifie le bon fonctionnement du processeur de votre serveur et nécessite environ 30 minutes pour s'exécuter correctement. Si le serveur tombe en panne pendant ce test, cela signifie que le processeur est défectueux.
@@ -31,7 +31,7 @@ Le test du processeur vérifie le bon fonctionnement du processeur de votre serv
 ```bash
 WRKR=$(grep -c "^processor" /proc/cpuinfo)
 stress-ng --metrics-brief --timeout 60s --cpu $WRKR --io $WRKR --aggressive --ignite-cpu --maximize --pathological
-stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
+stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
 ```
 
 ### Connexion au réseau
@@ -75,13 +75,7 @@ Pour vérifier le système de fichiers, exécutez la commande suivante :
 fsck -fy
 ```
 
-Pour un test de lecture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
-```
-
-Pour un test d'écriture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs
+Pour un test de lecture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs
 
 ```bash
 hdparm -t /dev/sd(x)

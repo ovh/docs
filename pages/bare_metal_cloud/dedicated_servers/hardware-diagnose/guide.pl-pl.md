@@ -1,12 +1,8 @@
 ---
 title: "Diagnostyka usterek sprzętowych serwera dedykowanego"
 excerpt: "Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -80,12 +76,6 @@ fsck -fy
 ```
 
 W celu przeprowadzenia testu odczytu wprowadź poniższą komendę. Zamień `sd(x)` na własne wartości.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
-```
-
-Aby wykonać test zapisu, wprowadź poniższą komendę. Zamień `sd(x)` na własne wartości
 
 ```bash
 hdparm -t /dev/sd(x)

@@ -1,20 +1,50 @@
 ---
 title: FAQ sur la gestion du compte OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur la gestion du compte OVHcloud
-updated: 2025-09-12
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
     cursor: pointer;
+    list-style: none;
 }
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
 }
-details[open]>summary::before {
-    content:'\25BC';
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -94,12 +124,13 @@ Retrouvez plus d'informations dans notre guide «[Modifier le mot de passe de vo
 > **Vous ne vous rappelez plus de votre mot de passe ?**
 >
 > Rendez-vous sur la [page de connexion à votre espace client](/links/manager) et cliquez sur `Identifiant ou mot de passe oublié`{.action}. Renseignez votre identifiant ou l’adresse e-mail principale associée à votre compte OVHcloud, puis cliquez sur `Envoyer`{.action}. Un e-mail est alors envoyé à l’adresse e-mail de contact du compte, afin de confirmer la demande. Lisez attentivement les instructions et cliquez sur le lien qu’il contient.
-
-Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
-
-Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](/links/transversal/procedure-email-change).
-
-Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
+>
+> Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
+>
+> Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](/links/transversal/procedure-email-change).
+>
+> Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
+>
 
 ///
 
@@ -223,9 +254,8 @@ La fermeture de votre compte client OVHcloud et la suppression de vos données p
 Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant ces étapes :
 
 1. Connectez-vous au [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Cliquez sur le bouton `Créer un ticket`{.action}.
-3. Sélectionnez le motif `Gérez votre compte client OVHcloud`{.action}.
-4. Précisez `Je veux fermer mon compte client OVHcloud`{.action} et suivez les étapes décrites.
+1. Sélectionnez le motif `Gérez votre compte client OVHcloud`{.action}.
+1. Précisez `Je veux fermer mon compte client OVHcloud`{.action} et suivez les étapes décrites.
 
 ///
 
@@ -287,7 +317,7 @@ La délégation de service devra être validée par e-mail à la fois par l’ad
 
 Avant toute modification, assurez-vous donc que toutes les adresses e-mail de contact sont valides, sans quoi la demande ne pourra aboutir.
 
-Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire enregistré auprès du registre (vous pouvez vérifier ces informations sur [notre outil Whois en ligne](/links/web/domains-whois)), mais que vous n’avez pas accès au compte client administrateur, nous vous invitons à suivre [cette procédure](/links/transversal/procedure-contact-change).
+Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire enregistré auprès du registre (vous pouvez vérifier ces informations sur [notre outil WHOIS en ligne](/links/web/domains-whois)), mais que vous n’avez pas accès au compte client administrateur, nous vous invitons à suivre [cette procédure](/links/transversal/procedure-contact-change).
 
 > [!success]
 > Un guide complet sur la gestion des contacts est disponible [ici](/pages/account_and_service_management/account_information/managing_contacts).

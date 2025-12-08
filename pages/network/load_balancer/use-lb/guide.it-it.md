@@ -10,12 +10,12 @@ Questa guida ti mostra come utilizzare il Load Balancer e presenta le principali
 
 ## Prerequisiti
 
-- Avere accesso allo Spazio Cliente OVH
-- Disporre di un [Load Balancer](/links/network/load-balancer) attivo
+- Disporre di una soluzione [OVHcloud Load balancer](/links/network/load-balancer) disponibile nello Spazio Cliente OVHcloud.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
-### Gestisci il Load Balancer dallo Spazio Cliente OVH
+### Gestisci il Load Balancer dallo Spazio Cliente OVHcloud
 
 Per gestire il Load Balancer accedi alla sezione `Bare Metal Cloud`{.action} dello Spazio Cliente e clicca su `Network`{.action} e `Load Balancer`{.action}. Seleziona il servizio.
 
@@ -74,6 +74,7 @@ Per aggiungere una server farm, seleziona la scheda `Server Farm`{.action} e cli
 |Sonda|Scegli e attiva la sonda|
 
 ### Gestisci i server
+
 Una volta creata la farm, non ti resta che aggiungervi dei server. Di seguito, i dettagli delle opzioni standard e avanzate disponibili:
 
 ![Aggiungi un server](images/add_server.png){.thumbnail}
@@ -97,7 +98,7 @@ Una volta creata la farm, non ti resta che aggiungervi dei server. Di seguito, i
 
 Dalla scheda `Certificati SSL`{.action} è possibile aggiungere un SSL al servizio di Load Balancer. Hai 2 possibilità: ordinare un certificato SSL OVH o aggiungerne uno esterno.
 
-#### Certificato SSL OVH
+#### Certificato SSL OVHcloud
 
 Per ordinare un certificato SSL, seleziona la scheda `Certificati SSL`{.action}, clicca su `Ordina un certificato SSL`{.action} e segui gli step:
 

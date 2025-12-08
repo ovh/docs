@@ -1,7 +1,7 @@
 ---
-title: IAM for Logs Data Platform - Migration and Breaking Changes 
+title: IAM for Logs Data Platform - Migration and Breaking Changes
 excerpt: Important changes to be aware of before the IAM migration
-updated: 2025-07-22
+updated: 2025-10-16
 ---
 
 > [!primary]
@@ -9,7 +9,7 @@ updated: 2025-07-22
 > The content of this documentation should be read to prepare this migration.
 >
 
-## Objective 
+## Objective
 
 This guide explains the breaking changes resulting from the IAM migration and provides guidance on how to take advantage of the new IAM integration.
 
@@ -21,7 +21,7 @@ This guide explains the breaking changes resulting from the IAM migration and pr
 
 ## Instructions
 
-### What is IAM? 
+### What is IAM?
 
 IAM stands for **Identity and Access Management**. It is a system of policies and processes that enable organizations or users to manage digital identities and control access to sensitive resources, such as applications, data, systems, and in the case of Logs Data Platform: logs.
 
@@ -58,7 +58,7 @@ The IAM migration allows us to deprecate some Logs Data Platform features that h
 
 These features are replaced by [access management policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management) and by either [Local Users Personal Access Tokens](/pages/account_and_service_management/account_information/ovhcloud-users-management) or [Service account tokens](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
 
-### Useful Documentation 
+### Useful Documentation
 
 #### IAM Resources
 

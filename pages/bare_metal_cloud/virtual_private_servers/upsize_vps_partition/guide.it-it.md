@@ -1,7 +1,7 @@
 ---
 title: Partizionare un VPS dopo un upgrade di storage
 excerpt: "Come aumentare lo spazio su disco utilizzabile in seguito a un aggiornamento"
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 ## Obiettivo
@@ -166,6 +166,18 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 
 Assicurati che il valore predefinito indicato nella riga `First sector` corrisponda a quello annotato precedentemente (se differente, utilizza quest’ultimo).
 
+Se viene visualizzato il seguente messaggio:
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Digita `n` e continua.
+
+Rispondere `y` significherebbe sovrascrivere il file system ext4 esistente sulla partizione 1 e accettare di distruggere i dati in essa contenuti.
+
 ### Rendi la partizione avviabile (bootable)
 
 Per assicurarti che la partizione sia avviabile, esegui il comando `a`{.action}: 
@@ -279,4 +291,4 @@ Inserisci la dimensione desiderata e clicca su `OK`{.action}. Il volume verrà p
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

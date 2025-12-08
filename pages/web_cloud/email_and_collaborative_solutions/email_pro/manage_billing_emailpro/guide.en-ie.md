@@ -1,7 +1,7 @@
 ---
 title: 'Managing the billing for your Email Pro accounts'
 excerpt: 'Find out how to manage the billing for your Email Pro service'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ In the new window, the table allows you to manage the renewal period for each ac
 >
 > For simplified management, the billing for each Email Pro account is automatically aligned at the beginning of the month. To make this alignment, and move the subscription date if necessary, you will receive an invoice from your Email Pro account on a pro rata basis.
 >
->Example: An order placed on 08 January with a monthly subscription will be billed again on 08 February. The following invoice will cover the period between February 08 and March 1st.
+> **Example**: An order placed on 08 January with a monthly subscription will be billed again on 08 February. The following invoice will cover the period between February 08 and March 1st.
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
@@ -62,7 +62,11 @@ Go to the `Email accounts`{.action} tab of your service, then click on the `...`
 
 ### Cancelling the service
 
-In the `Email accounts`{.action} tab of your service, click the `Actions`{.action} button in the top right-hand corner, then `Cancel`{.action}. 
+Once you have deleted your email accounts, you will need to delete the domain name(s) associated with your Email Pro platform before cancelling it. To do this, go to the `Associated domains`{.action} tab. Click the `...`{.action} button on the line for the domain name you want to delete, then click `Delete this domain`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
+
+In the `Email accounts`{.action} tab of your service, click the `Actions`{.action} button in the top right-hand corner, then `Cancel`{.action}.
 
 ![billing_emailpro](images/billing-emailpro-05.png){.thumbnail}
 

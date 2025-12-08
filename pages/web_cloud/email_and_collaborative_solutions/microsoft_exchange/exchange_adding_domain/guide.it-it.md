@@ -102,7 +102,7 @@ Se la casellina è rossa:
     - Clicca sulla casellina rossa `MX`, `SRV`, `SPF` e `DKIM` per visualizzare le modifiche da apportare. Se il dominio non utilizza la configurazione di OVHcloud (i suoi server DNS), è necessario apportare le modifiche tramite l’interfaccia di gestione del dominio.
     - Per una casellina `CNAME` rossa, consulta la nostra guida che spiega come [creare un record CNAME quando si aggiunge un dominio associato](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![exchange](images/add_domain_exchange_step4\.png){.thumbnail .w-600}
+![exchange](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >

@@ -1,7 +1,7 @@
 ---
 title: Technical capabilities and limitations
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Connect solution'
-updated: 2022-08-25
+updated: 2025-10-03
 ---
 
 ## Objective
@@ -14,14 +14,16 @@ updated: 2022-08-25
 
 - 1000Base-LX/LH for 1Gb
 - 10GBase-LR for 10Gb
+- 100GBase-LR4 for 100Gb
 - Jumbo frame up to 9000 bytes
 - Autonegotiation not supported
 
-### Technical limitationss
+### Technical limitations
 
 #### Layer 2 mode
 
 - The number of client-side MAC addresses is limited to 512 per port
+- The maximum bandwidth is 10Gb per port
 
 #### Layer 3 mode
 

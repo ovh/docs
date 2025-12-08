@@ -1,7 +1,7 @@
 ---
 title: Zmiana rozmiaru partycji serwera VPS po zmianie oferty przestrzeni dyskowej
 excerpt: "Dowiedz się, jak zwiększyć przestrzeń dyskową po aktualizacji"
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 ## Wprowadzenie
@@ -165,9 +165,21 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 
 Musisz upewnić się, że wartość domyślna w wierszu `First sector` jest taka sama, jak wartość zanotowana wcześniej. Jeśli jest inna, należy użyć zanotowanej wartości.
 
-### Ustawianie partycji bootowalnej
+Jeśli pojawi się następujący komunikat:
 
-Teraz należy upewnić się, że partycja jest bootowalna. Możesz to zrobić za pomocą polecenia `a`{.action}.
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Wpisz `n` i kontynuuj.
+
+Odpowiedź `y` oznaczałaby nadpisanie istniejącego systemu plików ext4 na Partition 1 i zgodę na zniszczenie zawartych na niej danych.
+
+### Ustawianie partycji bootowalnej (bootable)
+
+Teraz należy upewnić się, że partycja jest bootowalna (bootable). Możesz to zrobić za pomocą polecenia `a`{.action}.
 
 ```console
 Command (m for help): a
@@ -278,4 +290,4 @@ Wprowadź żądany rozmiar i kliknij `OK`{.action}. Wolumen zostanie wówczas ro
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

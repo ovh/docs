@@ -246,7 +246,7 @@ Para el envío de mensajes de correo, consulte a continuación los parámetros *
 
 **Ha utilizado todas las direcciones incluidas en su plan?**
 
-- Consulte las preguntas de [nuestras FAQ de correo](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+- Consulte las preguntas de [nuestras FAQ de correo](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - Consulte todos nuestros productos de correo electrónico [Zimbra](/links/web/emails-zimbra) o [Exchange](/links/web/emails) para completar su MX Plan con el mismo dominio.
 
 ## Más información <a name="go-further"></a>

@@ -51,7 +51,7 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 
 ## OWA i Zimbra
 
-W tej sekcji udokumentowano usługi MX Plan wykorzystujące technologię webamil **OWA** i **Zimbra**.
+W tej sekcji udokumentowano usługi MX Plan wykorzystujące technologię webmail **OWA** i **Zimbra**.
 
 #### Załóż konto e-mail
 
@@ -246,7 +246,7 @@ Do wysyłki e-maili należy użyć następujących ustawień **SMTP**:
 
 **Czy wszystkie adresy e-mail zawarte w Twojej ofercie zostały wykorzystane?**
 
-- Sprawdź pytania dotyczące usługi [FAQ e-mail](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+- Sprawdź pytania dotyczące usługi [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - Zapoznaj się z wszystkimi ofertami e-mail od OVH [Zimbra](/links/web/emails-zimbra) lub [Exchange](/links/web/email), aby uzupełnić ofertę MX Plan dla tej samej domeny.
 
 ## Sprawdź również <a name="go-further"></a>

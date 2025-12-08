@@ -20,13 +20,13 @@ VMware Tools è un software che migliora le performance di una macchina virtuale
 
 ## Procedura
 
-Il processo di installazione di VMware Tools varia in base al sistema operativo della VM. Per maggiori informazioni sul procedimento da seguire sui diversi sistemi operativi, consulta la [documentazione ufficiale VMware](https://kb.vmware.com/s/article/1014294){.external-link}.
+Il processo di installazione di VMware Tools varia in base al sistema operativo della VM. Per maggiori informazioni sul procedimento da seguire sui diversi sistemi operativi, consulta la [documentazione ufficiale VMware](https://kb.vmware.com/s/article/1014294).
 
 ### Linux
 
 #### Versioni recenti
 
-La maggior parte delle distribuzioni Linux recenti permettono di installare VMware Tools direttamente tramite il loro gestore di pacchetti, [*Open VM Tools*](https://kb.vmware.com/s/article/2073803){.external-link}.
+La maggior parte delle distribuzioni Linux recenti permettono di installare VMware Tools direttamente tramite il loro gestore di pacchetti, [*Open VM Tools*](https://kb.vmware.com/s/article/2073803).
 
 In questo modo viene garantito il regolare aggiornamento sia di MVware Tools che degli altri componenti del sistema operativo della macchina virtuale. 
 

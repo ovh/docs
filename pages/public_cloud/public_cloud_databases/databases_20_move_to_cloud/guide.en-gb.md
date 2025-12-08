@@ -37,7 +37,7 @@ This method requires shutting down your application. Please note that some downt
 
 8. Decommission the previous database instance once it is confirmed that it is no longer in use.
 
-9. Reach out to our [Professional Services team](/links/professional-services*) for assistance with complex network configurations or architecture setup.
+9. Reach out to our [Professional Services team](/links/professional-services) for assistance with complex network configurations or architecture setup.
 
 ### Via Live or hot migration with PostgreSQL
 

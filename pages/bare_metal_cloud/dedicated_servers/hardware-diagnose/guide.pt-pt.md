@@ -1,12 +1,8 @@
 ---
 title: "Diagnosticar avarias materiais num servidor dedicado"
 excerpt: "Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Sumário
 
@@ -79,13 +75,7 @@ Para verificar o sistema de arquivos, execute o comando a seguir:
 fsck -fy
 ```
 
-Para efetuar um teste de leitura, execute o comando abaixo. Substitua `sd(x)` pelos seus próprios valores.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
-```
-
-Para efetuar um teste de escrita, execute o comando abaixo. Substitua `sd(x)` pelos seus próprios valores
+Para efetuar um teste de leitura, execute o comando abaixo. Substitua `sd(x)` pelos seus próprios valores
 
 ```bash
 hdparm -t /dev/sd(x)

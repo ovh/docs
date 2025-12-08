@@ -37,7 +37,7 @@ Lembrete:
 
 No que diz respeito ao **Private Cloud**, a gama SDDC é a única a poder ficar afetada por esta vulnerabilidade.
 
-Explicamos esta falha neste [artigo](https://www.ovh.pt/news/artigos/al516.ovh-l1-terminal-fault-l1tfforeshadow-disclosure){.external-link}.
+Explicamos esta falha neste [artigo](https://www.ovh.pt/news/artigos/al516.ovh-l1-terminal-fault-l1tfforeshadow-disclosure).
 
 ## Processo de mitigação
 
@@ -46,15 +46,15 @@ Explicamos esta falha neste [artigo](https://www.ovh.pt/news/artigos/al516.ovh-l
 > Tenha em conta que as ações descritas abaixo não permitem corrigir a falha, servem apenas para desativar o <i>hyperthreading </i>nos hosts ESXi. No entanto, visto que a falha L1TF necessita do <i>hyperthreading </i>para funcionar, a sua desativação irá proteger a sua infraestrutura da exploração desta vulnerabilidade.
 >
 
-O processo de mitigação está descrito no seguinte artigo da VMware: [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806){.external-link}.
+O processo de mitigação está descrito no seguinte artigo da VMware: [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806).
 
 Este procedimento divide-se em 3 partes.
 
 ### 1 - Atualização
 
-Embora a OVHcloud atualize o vCenter, deverá encarregar-se da atualização dos hosts ESXi. O patch está disponível no [Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager){.external-link}. 
+Embora a OVHcloud atualize o vCenter, deverá encarregar-se da atualização dos hosts ESXi. O patch está disponível no [Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager). 
 
-Poderá consultar a lista de patches para os hosts ESXi neste [documento](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
+Poderá consultar a lista de patches para os hosts ESXi neste [documento](https://www.vmware.com/security/advisories/VMSA-2018-0020.html).
 
 Após a atualização, aparecerá a seguinte mensagem de alerta no resumo do host:
 
@@ -64,7 +64,7 @@ Após a atualização, aparecerá a seguinte mensagem de alerta no resumo do hos
 
 Os hosts ESXi já estão atualizados, mas a correção não foi aplicada.
 
-Antes de o fazer, deve considerar os possíveis problemas que são explicados no [artigo da VMware](https://kb.vmware.com/s/article/55806){.external-link} anteriormente referido, assim como a diminuição do rendimento observada, que é detalhada [neste artigo](https://kb.vmware.com/s/article/55767){.external-link}.
+Antes de o fazer, deve considerar os possíveis problemas que são explicados no [artigo da VMware](https://kb.vmware.com/s/article/55806) anteriormente referido, assim como a diminuição do rendimento observada, que é detalhada [neste artigo](https://kb.vmware.com/s/article/55767).
 
 ### 3 - Ativação
 
@@ -76,11 +76,11 @@ Tem à sua disposição um filtro no canto superior direito.
 
 Esta operação deve ser realizada para cada um dos hosts.
 
-Para obter mais informações, pode consultar a secção “Resolution”, artigo n.º 3, deste [artigo da VMware](https://kb.vmware.com/s/article/55806){.external-link}.
+Para obter mais informações, pode consultar a secção “Resolution”, artigo n.º 3, deste [artigo da VMware](https://kb.vmware.com/s/article/55806).
 
 > [!warning]
 > 
-> Se, tendo em conta a informação referida anteriormente, não pretender desativar o <i>hyperthreading</i>, pode eliminar a mensagem de alerta seguindo os passos indicados [neste artigo](https://kb.vmware.com/s/article/57374){.external-link}.
+> Se, tendo em conta a informação referida anteriormente, não pretender desativar o <i>hyperthreading</i>, pode eliminar a mensagem de alerta seguindo os passos indicados [neste artigo](https://kb.vmware.com/s/article/57374).
 > 
 > ![](images/deleteWarning.png){.thumbnail}
 > A OVHcloud não recomenda esta solução e não se responsabiliza pelas consequências que possam advir.

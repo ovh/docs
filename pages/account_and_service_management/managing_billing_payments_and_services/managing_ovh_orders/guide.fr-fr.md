@@ -82,7 +82,7 @@ La fenêtre ci-dessous apparaît, vous permettant un suivi en quatre étapes.
 
 ### Appliquer le droit de rétractation
 
-L'article 12.1.2 de nos [Conditions Générales de Service](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} précise que « *les clients ayant la qualité de consommateur au sens de l’article liminaire du Code de la consommation, bénéficient d'un droit de rétractation de 14 jours* ».
+L'article 12.1.2 de nos [Conditions Générales de Service](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf) précise que « *les clients ayant la qualité de consommateur au sens de l’article liminaire du Code de la consommation, bénéficient d'un droit de rétractation de 14 jours* ».
 
 Vous trouverez toutes les modalités d'application du droit de rétractation dans la suite de ce même article.
 

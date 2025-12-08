@@ -1,6 +1,6 @@
 ---
 title: Wstrzymanie lub uśpienie instancji
-updated: 2025-05-26
+updated: 2025-10-30
 ---
 
 ## Wprowadzenie
@@ -25,7 +25,7 @@ Częścią konfiguracji infrastruktury o wysokiej dostępności może być konie
 >
 > Niniejszy przewodnik dotyczy tylko instancji z płatnością **godzinową**. Jeśli w Twoich instancjach stosowana jest opłata **miesięczna**, płatność będzie kontynuowana niezależnie od statusu usługi.
 >
-> Po wykonaniu tych działań instancja nadal jest odpłatna.
+> Te czynności zawsze powodują **naliczenie opłaty za instancję**, dopóki nie zostanie ona **usunięta**.
 >
 
 Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Kontynuuj lekturę przewodnika, klikając wybraną opcję. W nawiasach umieszczamy terminologię używaną w interfejsie Horizon.
@@ -33,7 +33,7 @@ Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Ko
 |Nazwa|Opis|Płatności|
 |---|---|---|
 |[Zawieś (*shelve*)](#shelve-instance)|Zachowuje zasoby i dane na dysku przez utworzenie migawki. Wszystkie inne zasoby zostaną zwolnione.|Płatność dotyczy tylko kopii zapasowych snapshot.|
-|[Zatrzymaj (*suspend*)](#stop-suspend-instance)|Przechowuje stan VM na dysku. Zasoby przeznaczone na instancję są nadal zarezerwowane.|W przypadku Twojej instancji opłata jest taka sama.|
+|[Wyłącz (*suspend*)](#stop-suspend-instance)|Przechowuje stan VM na dysku. Zasoby przeznaczone na instancję są nadal zarezerwowane.|W przypadku Twojej instancji opłata jest taka sama.|
 |[Wstrzymaj](#pause-instance)|Przechowuje stan wirtualnej maszyny w pamięci RAM. Wstrzymana instancja zostaje zablokowana.|W przypadku Twojej instancji opłata jest taka sama.|
 
 ### Podsumowanie
@@ -42,12 +42,12 @@ Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Ko
     - [W Panelu klienta OVHcloud](#control-panel)
     - [Z poziomu interfejsu Horizon](#horizon)
     - [Korzystanie z API OpenStack/Nova](#openstack-nova)
--[Ponownie aktywuj (*unshelve*) instancję](#unshelve-instance)
+- [Ponownie aktywuj (*unshelve*) instancję](#unshelve-instance)
     - [W Panelu klienta OVHcloud](#control-panel-unshelve)
     - [Z poziomu interfejsu Horizon](#horizon-unshelve)
     - [Korzystanie z API OpenStack/Nova](#openstack-nova-unshelve)
-- [Zatrzymaj (suspend) instancję](#stop-suspend-instance)
-    - [W Panelu klienta OVHcloudl](#stop-control-panel)
+- [Wyłącz (suspend) instancję](#stop-suspend-instance)
+    - [W Panelu klienta OVHcloud](#stop-control-panel)
     - [Z poziomu interfejsu Horizon](#stop-horizon)
     - [Korzystanie z API OpenStack/Nova](#stop-openstack-nova)
 - [Wstrzymaj instancję](#pause-instance)
@@ -72,21 +72,25 @@ Ta opcja pozwoli Ci zwolnić zasoby dedykowane Twojej instancji Public Cloud, al
 
 W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie.
 
-Kliknij przycisk `...`{.action} po prawej stronie instancji, którą chcesz zawiesić, a następnie `Zawieś`{.action}.
+Kliknij przycisk `⋮`{.action} po prawej stronie instancji, którą chcesz zawiesić, a następnie `Zawieś`{.action}.
 
-![suspend instance](images/suspend_an_instance.png){.thumbnail}
+![suspend instance](images/suspend_instance_2025.png){.thumbnail}
 
 W oknie, które się wyświetla, zapoznaj się z komunikatem i kliknij przycisk `Zatwierdź`{.action}.
 
-![confirm suspension](images/suspend_an_instance_2024.png){.thumbnail}
+![confirm suspension](images/confirm_suspension_2025.png){.thumbnail}
+
+Podczas operacji wyświetla się komunikat:
+
+![](images/suspension_message_2025.png){.thumbnail}
 
 Po ukończeniu procesu Twoja instancja będzie wyświetlana jako *Zawieszona*.
 
-![suspended status](images/instance_suspended.png){.thumbnail}
+![suspended status](images/instance_suspended_2025.png){.thumbnail}
 
 Migawka będzie wówczas dostępna w sekcji `Instance Backup`{.action} w menu **Compute** po lewej stronie przestrzeni Public Cloud. Migawka o nazwie *xxxxx-shelved* będzie wtedy widoczna:
 
-![snapshot tab](images/shelved_backup.png){.thumbnail}
+![snapshot tab](images/shelved_backup_2025.png){.thumbnail}
 
 <a name="horizon"></a>
 
@@ -152,9 +156,9 @@ Ta opcja pozwoli Ci na ponowne utworzenie instancji, abyś mógł z niej nadal k
 
 W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie.
 
-Kliknij przycisk `...`{.action} po prawej stronie instancji, a następnie wybierz opcję `Przywróć`{.action}.
+Kliknij przycisk `⋮`{.action} po prawej stronie instancji, a następnie wybierz opcję `Przywróć`{.action}.
 
-![reactivate instance](images/reactivate_instancePanel.png){.thumbnail}
+![reactivate instance](images/reactivate_instance_2025.png){.thumbnail}
 
 W oknie, które się wyświetla, zapoznaj się z komunikatem i kliknij przycisk `Zatwierdź`{.action}.
 
@@ -186,9 +190,9 @@ Kiedy Twoje środowisko jest gotowe, wpisz w wierszu poleceń:
 
 <a name="stop-suspend-instance"></a>
 
-### Zatrzymaj (suspend) instancję 
+### Wyłącz (suspend) instancję 
 
-Ta opcja pozwoli na zamknięcie instancji i zapisanie stanu VM na dysku, a pamięć zostanie zapisana na dysku.
+Ta opcja pozwala wyłączyć instancję. Stan maszyny wirtualnej jest zapisywany na dysku, a pamięć jest zapisywana na dysku.
 
 <a name="stop-control-panel"></a>
 
@@ -196,15 +200,17 @@ Ta opcja pozwoli na zamknięcie instancji i zapisanie stanu VM na dysku, a pami�
 
 W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie.
 
-Kliknij przycisk `...`{.action} po prawej stronie instancji, którą chcesz zatrzymać, a następnie `Zatrzymaj`{.action}.
+Kliknij przycisk `⋮`{.action} po prawej stronie instancji, którą chcesz zatrzymać, a następnie `Wyłącz`{.action}.
 
-![stop instance](images/stopinstance.png){.thumbnail}
+![stop instance](images/turn_off_instance_2025.png){.thumbnail}
 
 W oknie, które się wyświetla, zapoznaj się z komunikatem i kliknij przycisk `Zatwierdź`{.action}.
 
+![stop instance](images/confirm_turn_off.png){.thumbnail}
+
 Po ukończeniu procesu Twoja instancja będzie wyświetlana jako *Wyłączona*.
 
-Aby **restartować** instancję, wykonaj kroki opisane powyżej. Kliknij przycisk `...`{.action} po prawej stronie instancji i wybierz pozycję `Uruchom`{.action}. W niektórych przypadkach może być konieczne wykonanie restartu sprzętowego.
+Aby **restartować** instancję, wykonaj kroki opisane powyżej. Kliknij przycisk `⋮`{.action} po prawej stronie instancji i wybierz pozycję `Wyślij teraz`{.action}. W niektórych przypadkach może być konieczne wykonanie restartu sprzętowego.
 
 <a name="stop-horizon"></a>
 

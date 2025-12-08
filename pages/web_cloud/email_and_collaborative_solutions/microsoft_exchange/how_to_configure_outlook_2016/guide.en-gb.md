@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Outlook for Windows'
 excerpt: 'Find out how to configure your Exchange account in Outlook for Windows'
-updated: 2024-10-30
+updated: 2025-10-23
 ---
 
 ## Objective
@@ -17,9 +17,9 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- an [OVHcloud Exchange account](/links/web/emails-hosted-exchange)
-- Microsoft Outlook or later installed on your device
-- login credentials for the email account to be configured
+- An [OVHcloud Exchange account](/links/web/emails-hosted-exchange)
+- [Outlook Classic](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) for Windows installed on your device
+- Login credentials for the email account to be configured
 - The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
@@ -27,6 +27,16 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 > Are you using Outlook for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook for Mac.](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
 
 ## Instructions
+
+> [!warning]
+>
+> Before you begin configuring your account, it is important to note that the Outlook application included free with Windows 11 is [incompatible](https://learn.microsoft.com/en-gb/microsoft-365-apps/outlook/get-started/supported-account-types) with OVHcloud Exchange solutions, known as on-premises. You will need to use the classic **Outlook** version.
+>
+> To install Outlook Classic on your Windows computer, download it from the Microsoft page "[Install or reinstall Outlook Classic on a Windows PC](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5)", and install it.
+>
+> Once the installation is complete, to distinguish between the two versions when they are installed, type "Outlook" in the Windows search bar. You can then see the difference as below.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
 ### Adding the account
 

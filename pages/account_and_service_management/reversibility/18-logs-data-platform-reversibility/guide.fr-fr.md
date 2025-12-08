@@ -1,5 +1,5 @@
 ---
-title: "Politique de réversibilité du produit Managed Log Manager"
+title: "Reversibility Policy for the Managed Log Manager product"
 updated: 2025-07-08
 ---
 

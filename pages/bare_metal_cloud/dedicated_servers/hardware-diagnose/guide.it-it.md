@@ -1,12 +1,8 @@
 ---
 title: "Diagnosticare problemi hardware su un server dedicato"
 excerpt: "Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -79,13 +75,7 @@ Per verificare il file system, esegui il comando:
 fsck -fy
 ```
 
-Per effettuare un test di lettura, esegui il comando seguente. Sostituisci `sd(x)` con i tuoi valori.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
-```
-
-Per effettuare un test di scrittura, esegui il comando seguente. Sostituisci `sd(x)` con i tuoi valori
+Per effettuare un test di lettura, esegui il comando seguente. Sostituisci `sd(x)` con i tuoi valori
 
 ```bash
 hdparm -t /dev/sd(x)

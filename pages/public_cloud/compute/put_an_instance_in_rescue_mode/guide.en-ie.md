@@ -41,7 +41,7 @@ Once your instance has been rebooted in rescue mode, an information box will dis
 
 Your temporary **rescue mode password** will only be shown in the VNC console. Click on your instance in the table, then switch to the tab `VNC console`{.action} to retrieve it.
 
-<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Step 2: Accessing your data
 

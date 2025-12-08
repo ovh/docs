@@ -44,7 +44,7 @@ Une fois connecté à l'espace client OVHcloud, cliquez sur l'onglet <code class
 
 - Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/pcc-xxx-xxx-xxx-xxx > Remplacez-le par le nom de votre service VMware on OVHcloud.
 
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_7.png" loading="lazy"></p>
 
 </details>
 
@@ -59,9 +59,9 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 
 <code class="action">VMware</code> > <code class="action">PCC-XXX.XXX.XXX.XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code> puis activez le bouton <code class="action">NSX Interface</code>.
 
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_3.png" loading="lazy"></p>
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_13.png" loading="lazy"></p>
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_1.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_3.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_13.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_1.png" loading="lazy"></p>
 
 </details>
 
@@ -72,7 +72,7 @@ Depuis la page précedente, éditez l'utilisateur avec lequel vous souhaitez acc
 
 Cliquez sur : <code class="action">VMware</code> > <code class="action">PCC-XXX-XXX-XXX-XXX</code> > <code class="action">Utilisateur</code> > <code class="action">Modifier</code>.
 
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_7.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_7.png" loading="lazy"></p>
 
 </details>
 
@@ -95,7 +95,7 @@ Choisissez <code class="action">Lecture seule</code>.
 <br><br>
 Si vous voulez faire des modifications dans l'interface Web NSX-T, des droits supplémentaires seront alors nécessaires, tels que <strong>Opérateur</strong> ou <strong>Administrateur</strong>.
 
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_8.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_8.png" loading="lazy"></p>
 
 </details>
 
@@ -108,10 +108,10 @@ Toujours depuis votre arborescence Hosted Private Cloud, cliquez sur <code class
 <br><br>
 - Lien OVHcloud : https://www.ovh.com/manager/#/dedicated/dedicated_cloud/PCC-XXX-XXX-XXX-XXX > Remplacez PCC-XXX-XXX-XXX-XXX par le nom de votre service PCC.
 
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_9.png" loading="lazy"></p>
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_10.png" loading="lazy"></p>
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_11.png" loading="lazy"></p>
-<p><img alt="NSX screenshot" class="thumbnail" src="/images/nsx_user_rights_12.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_9.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_10.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_11.png" loading="lazy"></p>
+<p><img alt="NSX screenshot" class="thumbnail" src="images/nsx_user_rights_12.png" loading="lazy"></p>
 
 </details>
 

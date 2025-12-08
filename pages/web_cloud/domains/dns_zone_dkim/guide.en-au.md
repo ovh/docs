@@ -1,7 +1,7 @@
 ---
 title: How to improve email security with a DKIM record
-excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email platform
-updated: 2025-04-28
+excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email service
+updated: 2025-11-28
 ---
 
 <style>
@@ -11,9 +11,6 @@ updated: 2025-04-28
 .h-600 {
   max-height:600px !important;
 }
-</style>
-
-<style>
  pre {
      font-size: 14px !important;
  }
@@ -34,7 +31,21 @@ updated: 2025-04-28
  .small {
      font-size: 0.90em !important;
  }
-</style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
+</style>e>
 
 ## Objective
 
@@ -44,11 +55,11 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ## Requirements
 
-- Access to manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager)
-- You need to have signed up to one of these email offers:
-    - OVHcloud MX Plan Email. This is available via a [Web Hosting plan](/links/web/hosting).
-    - An email solution outside of OVHcloud with DKIM.
+- You can manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud.
+- You have access to the [OVHcloud Control Panel](/links/manager).
+- You have signed up to one of these email offers:
+    - OVHcloud MX Plan Email, available with a [web hosting plan](/links/web/hosting)
+    - An email solution outside of OVHcloud with DKIM support
 
 > [!warning]
 >
@@ -68,27 +79,28 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
     - [Why do we need to configure DNS servers?](#dns-and-dkim)
     - [Example of an email sent using DKIM](#example)
     - [What is a DKIM selector?](#selector)
-- [Configuring DKIM automatically for an OVHcloud Exchange or Email Pro solution](#auto-dkim)
-- [Configuring DKIM automatically for an OVHcloud email solution](#auto-dkim)
-- [Configuring DKIM manually for an OVHcloud Email or OVHcloud solution](#internal-dkim)
-    - [Full DKIM configuration](#firststep)
-        - [For Emails (MX Plan)](#confemail)
-    - [The different states of DKIM](#dkim-status)
-    - [Enable or change DKIM selector](#enable-switch)
-    - [Disable and delete DKIM](#disable-delete)
+- [Automatically configure DKIM for an OVHcloud email offer](#auto-dkim)
+- [Configure DKIM via API for an OVHcloud email offer](#internal-dkim)
+    - [API - Full DKIM configuration](#firststep)
+        - [For MX Plan)](#confemail)
+    - [API - The different states of DKIM](#dkim-status)
+    - [API - Activate or change a DKIM selector](#enable-switch)
+    - [API - Disable and delete DKIM](#disable-switch)
 - [Configuring DKIM for an email solution outside of your OVHcloud account](#external-dkim)
     - [DKIM record](#dkim-record)
     - [TXT record](#txt-record)
     - [CNAME record](#cname-record)
 - [Test your DKIM](#test-dkim)
 - [Use cases](#usecases)
+    - [How do I change my DKIM key pair?](#2selectors)
+    - [Why does the DKIM icon appear in red in the Control Panel?](#reddkim)
     - [From the OVHcloud API interface, how do I understand the state of the DKIM that is not working?](#api-error)
 
 ### How does DKIM work? <a name="how-dkim-work"></a>
 
-To fully understand why DKIM can secure your email exchanges, you need to understand how it works. DKIM uses **hashing** and **asymmetric encryption** to create a secure signature. Your domain name’s **email platform** and **DNS zone** will help deliver DKIM information to your recipients.
+To understand why DKIM helps secure your emails , it is necessary to understand how it works. DKIM uses **hashing** and **asymmetric encryption** to create a secure signature. The **email platform** and the **DNS zone** of your domain name will help transmit the DKIM information to your recipients.
 
-#### Hashing <a name="hash"></a>
+/// details | Hashing <a name="hash"></a>
 
 The principle of a **hash function** is to generate a **signature** (also called a fingerprint) from input data. Its purpose is to create a fixed sequence of characters at the output, regardless of the amount of input data.
 
@@ -98,11 +110,13 @@ On the following diagram, you can see that the output will always be 32 characte
 
 The hash function is useful when you want to check the integrity of a message. Different but similar looking input data will produce a completely different hash value with an equal length of characters in output, regardless of the input length.
 
-#### Asymmetric encryption <a name="encrypt"></a>
+///
+
+/// details | Asymmetric encryption <a name="encrypt"></a>
 
 The purpose of **encryption**, as its name suggests, is to encrypt the data it is given. It is **asymmetric** because the encryption key is not the same as the decryption, unlike symmetric encryption, which uses the same key to encrypt and decrypt.
 
-Asymmetric encryption uses a **public key** and a **private key**. The public key is visible and usable by everyone. The private key is only used by the owner and is not visible to all. 
+Asymmetric encryption uses a **public key** and a **private key**. The public key is visible and usable by everyone. The private key is only used by the owner and is not visible to all.
 
 There are two uses for asymmetric encryption:
 
@@ -114,17 +128,23 @@ There are two uses for asymmetric encryption:
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
 
-#### How are hashing and asymmetric encryption used for DKIM? <a name="encrypt-and-hash"></a>
+///
+
+/// details | How are hashing and asymmetric encryption used for DKIM? <a name="encrypt-and-hash"></a>
 
 From the email platform, DKIM will use hashing to create a signature from certain elements of [the email header](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) and email body (email content).
 
 The signature is then encrypted with the private key using asymmetric encryption.
 
-#### Why do we need to configure DNS servers? <a name="dns-and-dkim"></a>
+///
+
+/// details | Why do we need to configure DNS servers? <a name="dns-and-dkim"></a>
 
 In order for a recipient to verify the sender's DKIM signature, they will need the DKIM parameters and especially the public key to decrypt it. A domain name’s [DNS zone](/pages/web_cloud/domains/dns_zone_general_information) is public, which is why a DNS record is added to transmit the public key and DKIM settings to the recipient.
 
-#### What is a DKIM selector? <a name="selector"></a>
+///
+
+/// details | What is a DKIM selector? <a name="selector"></a>
 
 When you enable DKIM, it works with a public/private key pair. You can assign several pairs of keys to your domain name, for example, as part of a rotation. Indeed, when you change the key pair, the old pair must remain active until all emails you sent with the old key fail to pass the DKIM check on the incoming server.
 
@@ -137,7 +157,9 @@ For this rotation principle to work, we're going to use something called **DKIM 
 
 The value of this selector is `s=ovhex123456-selector1`.
 
-#### Example of an email sent using DKIM <a name="example"></a>
+///
+
+/// details | Example of an email sent using DKIM <a name="example"></a>
 
 When you send an email from **contact@mydomain.ovh**, a signature encrypted with a private key is added to the email header.
 
@@ -147,11 +169,15 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ![email](/pages/assets/schemas/emails/dns-dkim-receive.gif){.thumbnail .w-400 .h-600}
 
-### Configuring DKIM automatically for an OVHcloud Exchange or Email Pro solution <a name="auto-dkim"></a>
+///
 
-The automatic configuration of DKIM is accessible for an email solution MX Plan (included with a [Web Cloud hosting plan](/links/web/hosting)).
+### Automatically configure DKIM for an OVHcloud email offer <a name="auto-dkim"></a>
 
-By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
+Automatic DKIM configuration is available for all our email offers.
+
+When you configure your domain name on an OVHcloud email solution, automatic DKIM configuration is proposed and performed by default if you do not disable it.
+
+If DKIM was not enabled when you added a domain name to your email platform, you will need to launch the automatic configuration process via the Control Panel.
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 1. Open the `Web Cloud`{.action} section.
@@ -159,44 +185,50 @@ By default, the DKIM is not activated when you add a domain name to your platfor
 1. Select the domain concerned.
 1. Finally, go to the `General information`{.action} tab.
 
-In the **General informations** box, you can see that the `DKIM` box is red with the **Diagnostic**.
+In the **General informations** box, `DKIM` is displayed in red in the column **Diagnostic**.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
 
-To activate the DKIM, simply click on the red `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
+To enable DKIM, simply click on the red `DKIM` badge and then click on `Validate`{.action} from the activation window that appears.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
-> [!primary]
->
-> **Emails (MX Plan)**
->
-> If your domain name is not managed in the same OVHcloud Control Panel as your email platform, or registered outside of OVHcloud, you will see the window below:
->
-> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
->
-> This prompts you to enter two CNAME values in the domain name’s DNS zone, which enables you to link this domain name to the DKIM selectors of your email service. You will need to enter these values and ensure that they are propagated before clicking `Enable`{.action}.
->
+If your domain name is not managed in the same OVHcloud Control Panel as your email platform or is registered outside OVHcloud, you will see the window below:
 
-The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `General information`{.action} or the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+
+This window asks you to enter two CNAME values in the DNS zone of the domain name, which links this domain name to the DKIM selectors of your email service. You need to enter these values and ensure they are propagated before clicking on `Enable`{.action}.
+
+To activate DKIM, simply click on the red `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
+
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
+
+Automatic DKIM activation takes between 30 minutes and a maximum of 24 hours. To check that your DKIM is working, simply return to the domain management section mentioned in the tabs above and check that the `DKIM` badge is green.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 
-After 24 hours, if your `DKIM` box is red, please refer to the section [“Why does DKIM not work and appear in red in the OVHcloud Control Panel?”](#reddkim) of this guide.
+If after 24 hours your `DKIM` badge is still red, refer to the section "[Why is DKIM not working and appears red in the Control Panel?](#reddkim)" of this guide.
 
-### Configuring DKIM manually for an OVHcloud Email solution <a name="internal-dkim"></a>
+### Configure DKIM via API for an OVHcloud email offer <a name="internal-dkim"></a>
 
-#### Full DKIM configuration <a name="firststep"></a>
+#### API - Full DKIM configuration <a name="firststep"></a>
 
-To configure DKIM, go to the website <https://ca.api.ovh.com/console/>, log in using the `Login`{.action} button in the top right-hand corner, and enter your OVHcloud credentials.
+To configure DKIM, go to the [OVHcloud API page](/links/console) and log in:
 
-> Visit our guide ["First Steps with the OVHcloud APIs"](/pages/manage_and_operate/api/first-steps) if you have never used APIs.
+1. Click on `Authentication`{.action} in the top left.
+1. Then click on `Login with OVHcloud SSO`{.action}.
+1. Enter your OVHcloud credentials.
+1. Click on the `Authorize`{.action} button to authorise API calls from this site.
 
-Go to the API section `/email/domain/`. Type "dkim" in the `Filter` box to display only the endpoints related to the DKIM.
+> [!primary]
+>
+> Refer to our guide "[Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps)" if you have never used APIs before.
+
+Go to the API section `/email/domain/` (MX Plan offer) and enter "dkim" in the `Filter` field to display only the API functions related to DKIM.
 
 ![email](/pages/assets/screens/api/get-email-domain-domain-dkim.png){.thumbnail .w-400 .h-600}
 
-##### **For Emails (MX Plan)** <a name="confemail"></a>
+##### **For MX Plan** <a name="confemail"></a>
 
 Follow the **5 steps** by clicking on each of the 5 tabs below:
 
@@ -378,9 +410,9 @@ Follow the **5 steps** by clicking on each of the 5 tabs below:
 >> > You have now made all the changes required to enable the DKIM. To ensure that it is enabled, check its status by going back to **tab 2. Check the status of the DKIM operation** to check that the value `status:` is `enabled`. If this is the case, your DKIM is now active.
 >>
 
-#### The different states of DKIM <a name="dkim-status"></a>
+#### API - The different states of DKIM <a name="dkim-status"></a>
 
-When performing operations on your email platform's DKIM, use the API call below to check the current DKIM status.
+When performing operations on your E-mail platform's DKIM, use the API call below to check the current DKIM status.
 
 > [!api]
 >
@@ -390,19 +422,50 @@ When performing operations on your email platform's DKIM, use the API call below
 
 Then look at the general `status:` value in the result:
 
-- `disabled`: DKIM is disabled, has not yet been configured or has been disabled by API. <br>
-- `modifying`: DKIM configuration is in progress, it is necessary to wait for the process to complete.<br>
-- `toConfigure`: DKIM configuration is pending domain name DNS settings. You must manually enter the DNS records in the domain name zone. To do this, go to [Step 4 of the “Complete DKIM Configuration” for Emails (MX Plan)](#confemail).<br>
-- `enabled` - The DKIM is configured and functional.<br>
-- `error`: The installation process encountered an error. Please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the domain name concerned.<br>
+- `disabled`: DKIM is disabled, has not yet been configured or has been disabled by API. 
+- `modifying`: DKIM configuration is in progress, it is necessary to wait for the process to complete.
+- `toConfigure`: DKIM configuration is pending domain name DNS settings. You must manually enter the DNS records in the domain name zone. To do this, go to [Step 4 of the “Complete DKIM Configuration” for MX Plan](#confemail).
+- `enabled` - The DKIM is configured and functional.
+- `error`: The installation process encountered an error. Please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the domain name concerned.
 
 At the level of the selectors you also have 3 possible states:
 
 - `set`: The selector is correctly configured and active.
-- `toSet`: The selector is not configured in the DNS zone of the domain name. See [Step 4 in "Configuring the DKIM in full" for Emails (MX Plan)](#confemail).
-- `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for Emails (MX Plan)](#confemail).
+- `toSet`: The selector is not configured in the DNS zone of the domain name. See [Step 4 in "Configuring the DKIM in full" for MX Plan](#confemail).
+- `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for Emails MX Plan](#confemail).
 
-#### Disable and delete DKIM <a name="enable-switch"></a>
+
+#### API - Enable or change the DKIM selector <a name="enable-switch"></a>
+
+> [!warning]
+>
+> The DKIM selector must be in `ready` status before it can be enabled.
+
+To enable DKIM, use the following API call:
+
+> [!api]
+>
+> @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
+
+
+- `domain`: Enter the domain name attached to your email service on which the DKIM must be present. 
+
+*Example result:*
+
+```console
+{
+ "function": "domain/enableDKIM",
+ "id": 123456789,
+ "domain": "guidesteam.ovh",
+ "status": "todo"
+}
+```
+
+> [!primary]
+>
+> During a DKIM selector rotation, you can directly activate the second selector you have created to switch over to it, while keeping the first selector active until all emails delivered with it are properly scanned by their recipient.
+
+#### API - Disable and delete DKIM <a name="disable-switch"></a>
 
 If you want to disable the DKIM without removing the selectors and their key pair, use the following API call:
 
@@ -410,16 +473,16 @@ If you want to disable the DKIM without removing the selectors and their key pai
 >
 > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/disable
 
-- `domain` : enter the domain name attached to your email service on which the DKIM must be present. <br>
+- `domain` : enter the domain name attached to your email service on which the DKIM must be present.
 
 *Example result:*
 
 ```console
 {
-  "domain": "guidesteam.ovh",
-  "id": 174219594,
-  "function": "domain/disableDKIM",
-  "status": "todo"
+ "domain": "guidesteam.ovh",
+ "id": 174219594,
+ "function": "domain/disableDKIM",
+ "status": "todo"
 }
 ```
 
@@ -445,38 +508,38 @@ This record is named DKIM on the interface but it is actually a TXT record in th
 
 *Example:*
 
-``` console
+```console
   selector-name._domainkey.mydomain.ovh.
 ```
 
-- **Version (v=)**: It is used to specify the DKIM version. It is recommended that you use it and its default value is "DKIM1".<br>
+- **Version (v=)**: It is used to specify the DKIM version. It is recommended that you use it and its default value is "DKIM1".
 If specified, this tag must be placed first in the record and must be equal to "DKIM1" (without quotes). Records that begin with a "v=" tag with another value should be ignored.
 
-- **Granularity (g=)**: Allows you to specify the "local" part of an email address, i.e. the part before the "@".<br>
-It allows you to specify the email address or email addresses that are authorised to sign an email message with the selector's DKIM key.<br>
-The default value for "g=" is "\*", which means that all email addresses are allowed to use the DKIM signature key.<br>
+- **Granularity (g=)**: Allows you to specify the "local" part of an email address, i.e. the part before the "@".
+It allows you to specify the email address or email addresses that are authorised to sign an email message with the selector's DKIM key.
+The default value for "g=" is "\*", which means that all email addresses are allowed to use the DKIM signature key.
 By specifying a value for "g=", you can limit the use of the key to a specific local portion of an email address or a range of email addresses by using wildcards (for example: "\*-group").
 
 - **Algorithm (hash) (h=)**: Directive to specify the hash algorithms used to sign email headers. Use this tag to define a list of hash algorithms that will be used to generate a DKIM signature for a given message.
 
-- **Key type (k=)**: Specifies the signature algorithm used to sign outgoing email messages. It allows recipients to know how the message was signed and what method is used to verify its authenticity.<br>
+- **Key type (k=)**: Specifies the signature algorithm used to sign outgoing email messages. It allows recipients to know how the message was signed and what method is used to verify its authenticity.
 Possible values for the tag "k=" include "rsa" for the RSA signature algorithm and "ed25519" for the ed25519 signature algorithm. The choice of algorithm depends on the sender's security policy and the recipient's support.
 
-- **Notes (n=)**: It is used to include notes of interest for administrators who manage the DKIM key system.<br>
+- **Notes (n=)**: It is used to include notes of interest for administrators who manage the DKIM key system.
 These notes may be useful for documentation purposes or to help administrators understand or manage how DKIM works. The notes in "n=" are not interpreted by software and do not affect the operation of DKIM.
 
-- **Public key (base64) (p=)**: It is used to populate DKIM public key data, which is encoded in base64.<br>
+- **Public key (base64) (p=)**: It is used to populate DKIM public key data, which is encoded in base64.
 This tag is mandatory in the DKIM signature, and allows signature recipients to retrieve the public key needed to verify the authenticity of the signed message.
 
 - **Revoke public key**: If a DKIM public key has been revoked (for example, if the private key is compromised), an empty value must be used for the "p=" tag, indicating that this public key is no longer valid. Recipients must then return an error for any DKIM signature that references a revoked key.
 
-- **Type of service (s=)**: The "s=" tag is optional and is not present by default. It allows you to specify the type or types of services to which this DKIM record applies.<br>
-Service types are defined using a colon-separated list of keywords.<br>
-The recipient should ignore this record if the appropriate service type is not listed.<br>
-The "s=" tag is intended to restrict the use of keys for other purposes, in case the use of DKIM is defined for other services in the future.<br>
+- **Type of service (s=)**: The "s=" tag is optional and is not present by default. It allows you to specify the type or types of services to which this DKIM record applies.
+Service types are defined using a colon-separated list of keywords.
+The recipient should ignore this record if the appropriate service type is not listed.
+The "s=" tag is intended to restrict the use of keys for other purposes, in case the use of DKIM is defined for other services in the future.
 The service types currently defined are "email" and "*" (all service types).
 
-- **Test mode (t=y)**: Allows domain name owners to test a DKIM setup without the risk of having messages rejected or marked as spam if DKIM signature verification fails.<br>
+- **Test mode (t=y)**: Allows domain name owners to test a DKIM setup without the risk of having messages rejected or marked as spam if DKIM signature verification fails.
 When the "t=y" flag is used, the recipient should not treat test signed messages differently than unsigned messages. However, the recipient can follow the test result to help the signatories.
 
 - **Sub-domains (t=s)**: Allows the use of the DKIM signature to be restricted to the domain name only (for example: @mydomain.ovh) or allow sending from the domain name and its subdomains (e.g.: @mydomain.ovh, @test.mydomain.ovh, @other.mydomain.ovh, etc.).
@@ -493,13 +556,13 @@ For a complete understanding of the composition of the DKIM record, see the prev
 
 - Subdomain:
 
-``` console
+```console
 selector-name._domainkey.mydomain.ovh.
 ```
 
 - Target:
 
-``` console
+```console
 v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 rev1EKk4L0nxdBpD5O/jPrM4KP0kukeuB6IMpVplkkq52MSDeRcjoO50h0DmwZOr RUkyGjQwOnAh0VhY3fqkuwBYftEX7vWo8C2E1ylzimABkwPpSL62jZ1DheoXcil9 1M35wWBKtlYdXVedKjCQKOEnwTo+0hdNe38rU9NMgq6nbTIMjDntvxoVI+yF3kcx q/VpAY8BIYbcAXkVFvUyfUBABnnKpf0SfblsfcLW0Koy/FRxPDFOvnjNxXeOxMFR UI6K6PaW2WvtbJG2v+gHLY5M4tB0+/FNJU9emZfkPOk3DmRhZ8ENi7+oZa2ivUDj OQIDAQAB
 ```
 
@@ -507,11 +570,11 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 The CNAME record is an alias. This means that the target value points to a URL that will itself provide the DKIM record to the server that will query the CNAME record. This type of CNAME record for setting the DKIM is common when using a Microsoft email server.
 
-This record type is used to enable DKIM on a domain name declared for an OVHcloud Email solution. This way, your email solution provider can manage security and update the DKIM for you.
+This record type is used to enable DKIM on a domain name declared for an OVHcloud solution. This way, your email solution provider can manage security and update the DKIM for you.
 
 ### Test your DKIM <a name="test-dkim"></a>
 
-We recommend sending an email from an account on your Email platform to an email address that verifies the DKIM signature on receipt.
+We recommend sending an email from an account on your email solution to an email address that verifies the DKIM signature on receipt.
 
 Here is what you will find in the header of the received email:
 
@@ -525,21 +588,21 @@ To retrieve the header of an email, please read our guide on [Retrieving email h
 
 ### Use cases <a name="usecases"></a>
 
-#### From the OVHcloud API interface, how do I understand the status of the DKIM that is not working? <a name="api-error"></a>
+#### From the OVHcloud API interface, how do I understand the status when DKIM is not working? <a name="api-error"></a>
 
-If you are using the OVHcloud API to configure your DKIM and it is not functional, please use the section “[The different states of DKIM](#dkim-status)” of this guide to identify the status of your selectors.
+If you are using the OVHcloud API to configure your DKIM and it is not functional, please use the section “[API - The different states of DKIM](#dkim-status)” of this guide to identify the status of your selectors.
 
 Below, you will find the states that may block your DKIM from working, and the appropriate solution for each situation.
 
-- `disabled`: DKIM is disabled, has not yet been configured, or has been disabled by API. <br>
-- `modifying`: The DKIM configuration is in progress, you will need to wait for the process to complete.<br>
-- `toConfigure`: DKIM configuration is pending domain name DNS settings. You must manually enter the DNS records in the domain name zone. To do this, see the step “[Full DKIM configuration](#confemail)” in this guide. <br>
+- `disabled`: DKIM is disabled, has not yet been configured, or has been disabled by API.
+- `modifying`: The DKIM configuration is in progress, you will need to wait for the process to complete.
+- `toConfigure`: DKIM configuration is pending domain name DNS settings. You must manually enter the DNS records in the domain name zone. To do this, see the step “[API - Full DKIM configuration](#confemail)” in this guide.
 - `error`: The installation process encountered an error. Please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help), specifying the domain name concerned.
-
+>>
 At the level of the selectors you also have 2 states relating to an error:
-
-- `toSet`: The selector is not configured in the DNS zone of the domain name. See [Step 4 in "Configuring the DKIM in full" for Emails (MX Plan)](#confemail).
-- `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for Emails (MX Plan)](#confemail).
+>>
+- `toSet`: The selector is not configured in the DNS zone of the domain name. See [Step 4 in "Configuring the DKIM in full" for MX Plan](#confemail).
+- `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for MX Plan](#confemail).
 
 ## Go further
 

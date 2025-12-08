@@ -256,7 +256,7 @@ Above the screen, you can see the amount of file added:
 
 #### **5. Verify Restoration**
 
-1. After completion, navigate to the `Audit Logs`{.action }tab for detailed records of the restore process.
+1. After completion, navigate to the `Audit Logs`{.action}tab for detailed records of the restore process.
 2. Check for errors or warnings and validate that the restored data is functional.
 
 > [!warning]

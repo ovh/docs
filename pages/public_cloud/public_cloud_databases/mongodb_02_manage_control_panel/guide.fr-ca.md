@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Configurez votre instance MongoDB pour accepter les connexions entrantes (EN)
 excerpt: Find out how to configure your MongoDB instance to accept incoming connections
-updated: 2023-12-06
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -30,13 +30,13 @@ Select the `Users`{.action} tab. Verify that you have a user with sufficient rig
 
 We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/) to select the right roles for your use case.
 
-In our example, we will create a user called `foo` with the role `userAdmin` on the `bar` database and the role `readWriteAnyDatabase` on any database as its name implies:
+In our example, we will create a new user called `foo` with the role `userAdmin` on the `bar` database and the role `readWriteAnyDatabase` on any database as its name implies:
 
-![User Creation](images/mongodb_02_manage_control_panel-20230313174020.png){.thumbnail}
+![User Creation](images/mongodb_02_manage_control_panel-add_user.png){.thumbnail}
 
-Once created or updated, note the password then after a few seconds check to verify the user is ready and with the "Enabled" status in the OVHcloud Control Panel.
+After a few seconds the user is ready with the "Enabled" status, you can then reset and note its password.
 
-![User ready](images/mongodb_02_manage_control_panel-20230313174249.png){.thumbnail}
+![User ready](images/mongodb_02_manage_control_panel-reset_password.png){.thumbnail}
 
 #### Step 2: Authorise incoming connections from the MongoDB client
 
@@ -46,7 +46,7 @@ This way we can help prevent intrusive connection attempts.
 
 Click to authorise a new IP. In our case we will enter 109.190.200.59:
 
-![Add an IP](images/mongodb_02_manage_control_panel-20230313175157.png){.thumbnail}
+![Add an IP](images/mongodb_02_manage_control_panel-add_ip.png){.thumbnail}
 
 > [!primary]
 >
@@ -55,14 +55,14 @@ Click to authorise a new IP. In our case we will enter 109.190.200.59:
 
 ### Get your connection information (URI)
 
-Select the `General Information`{.action} tab. In the **Login Information** section, copy the Service URI.
+Select the `Dashboard`{.action} tab. In the **Connection Information** section, copy the Service URI.
 
 You can specify the MongoDB connection string using either:
 
 - *Service -> mongoDB* for the Standard Connection String format **(soon deprecated)**.
 - *Service -> mongodbSrv* for the DNS Seed List Connection String format.
 
-![MongoDB General Information](images/mongodb_02_manage_control_panel-20230313175545.png){.thumbnail}
+![MongoDB General Information](images/mongodb_02_manage_control_panel-copy_uri.png){.thumbnail}
 
 > [!primary]
 >
@@ -86,12 +86,8 @@ You can specify the MongoDB connection string using either:
 > mongodbSrv
 >> It should be similar to this:
 >> ```
->> mongodb+srv://<username>:<password>@mongodb-d5674315-o2626ab53.database.cloud.ovh.net/admin?replicaSet=replicaset
+>> mongodb+srv://<username>:<password>@<hostname>/admin?replicaSet=replicaset&tls=true
 >> ```
-
-Select the `Users`{.action} tab to get the username or reset a user password.
-
-![Users tab](images/mongodb_02_manage_control_panel-20230313175812.png){.thumbnail}
 
 ## Go further
 

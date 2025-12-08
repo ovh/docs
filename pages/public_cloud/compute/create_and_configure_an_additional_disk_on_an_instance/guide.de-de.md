@@ -1,7 +1,7 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
 excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
-updated: 2025-06-27
+updated: 2025-09-19
 ---
 
 <style>
@@ -142,6 +142,13 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >>
 >> Typen, die mit "-luks" enden, sind verschlüsselt (LUKS).
 >>
+>> > [!warning]
+>> >
+>> > Beim Erstellen eines **-luks** Datenträgers wird automatisch ein dedizierter Schlüssel erstellt.
+>> >
+>> > Dieser Schlüssel sollte nicht geändert oder gelöscht werden, wenn er mit einem Block Storage Volume verknüpft ist. Ansonsten können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
+>> >
+>>
 >> Um ein einfaches Block Storage Volume zu erstellen, benötigen Sie 3 Elemente:
 >>
 >> - Name des Volumes
@@ -268,6 +275,13 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> - High-speed-gen2-luks
 >>
 >> Typen, die mit "-luks" enden, sind verschlüsselt (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Beim Erstellen eines **-luks** Datenträgers wird automatisch ein dedizierter Schlüssel erstellt.
+>> >
+>> > Dieser Schlüssel sollte nicht geändert oder gelöscht werden, wenn er mit einem Block Storage Volume verknüpft ist. Ansonsten können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
+>> >
 >>
 >> In der Region verfügbare Volume-Typen auflisten:
 >>

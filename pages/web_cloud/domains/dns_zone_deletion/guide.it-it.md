@@ -1,7 +1,7 @@
 ---
 title: "Come eliminare una zona DNS OVHcloud?"
 excerpt: "Questa guida ti mostra come eliminare una zona DNS per il tuo dominio dallo Spazio Cliente OVHcloud"
-updated: 2025-04-28
+updated: 2025-10-14
 ---
 
 ## Obiettivo
@@ -23,7 +23,6 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 > [!primary]
 >
 > La creazione / modifica / eliminazione di una zona DNS dallo [Spazio Cliente OVHcloud](/links/manager) è totalmente gratuita.
->
 
 **Questa guida ti mostra come eliminare una zona DNS per un dominio dallo Spazio Cliente OVHcloud.**
 
@@ -36,7 +35,6 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 > [!primary]
 >
 > Eliminare una zona DNS non elimina il record del dominio al quale è associato. L’eliminazione di una zona DNS associata non comporta la perdita del dominio.
->
 
 ## Procedura
 
@@ -49,64 +47,36 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 > Effettua un [WHOIS](/links/web/domains-whois) del dominio per sapere se la zona DNS attiva del dominio è quella presente in OVHcloud o meno.
 >
 > Se la zona DNS attiva per il tuo nome di dominio è quella presente in OVHcloud e vuoi sostituirla con una zona DNS ospitata altrove, consulta la nostra guida "[Modificare i server DNS di un nome di dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)" prima di effettuare qualsiasi eliminazione di zona DNS.
->
-
-### 1 - Inizia a eliminare una zona DNS OVHcloud
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>> Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome nell'angolo in alto a destra e poi su `Le mie offerte e servizi`{.action}.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
->> Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
+>> Nella tabella presente sulla pagina visualizzata, clicca sul pulsante `...`{.action} a destra della zona DNS che desideri annullare, quindi su `Disattivare il servizio`{.action}.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Annulla](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
->> Sul lato destro (o sotto la tabella in base alla risoluzione dello schermo), clicca sul pulsante `Elimina la zona DNS`{.action}.
+>> Nella nuova pagina che appare, specifica il motivo della tua richiesta di annullamento e il tuo progetto, quindi clicca su `Conferma`{.action}.
 >>
->> ![delete the DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone.png){.thumbnail}
+>> ![Annulla il servizio](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-delete-your-service.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
->> Nella nuova finestra, consulta i messaggi indicati all’interno.
+>> L'annullamento del tuo servizio avverrà nella **Data di entrata in vigore** indicata nella tabella "Gestione delle mie offerte e servizi". Se non vedi apparire lo stato "Disattivazione programmata", aggiorna la pagina.
 >>
->> ![delete the DNS zone validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone-confirmation.png){.thumbnail}
->>
->> Clicca sul pulsante `Conferma`{.action} per completare la prima fase di eliminazione della zona DNS.
-
-### 2 - Conferma l'eliminazione di una zona DNS OVHcloud
-
-Al termine dello step precedente, all’indirizzo email del contatto "[Administrator](/pages/account_and_service_management/account_information/managing_contacts)" della zona DNS OVHcloud viene inviata un’email per confermare l’eliminazione della zona DNS.
-
-> [!success]
->
-> Se non ricevi l'email, controlla nella posta indesiderata.
->
-
-Questa email contiene due link validi per **72** ore a partire dal momento in cui hai terminato lo Step 1 di questa guida.
-
-Clicca sul **link di conferma** per continuare l’eliminazione della zona DNS OVHcloud o sul **link di annullamento** per interrompere la procedura di eliminazione della zona DNS OVHcloud.
-
-> [!primary]
->
-> Se il reindirizzamento dei collegamenti non funziona, fare un **copia/incolla** del collegamento nella barra degli URL del browser Internet. Se necessario, accedi nuovamente allo [Spazio Cliente OVHcloud](/links/manager).
->
-
-Cliccando sul link di conferma verrai reindirizzato a una nuova pagina OVHcloud in cui sarà richiesto il motivo o i motivi dell’eliminazione della zona DNS.
-
-![cancel the service](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/cancel-my-service.png){.thumbnail}
-
-Una volta completato il modulo e se vuoi davvero eliminare definitivamente la zona DNS OVHcloud, clicca sul pulsante `Conferma`{.action} in fondo alla pagina.
-
-Verrà inviata un’ultima email di conferma all’indirizzo email del contatto "[Amministratore](/pages/account_and_service_management/account_information/managing_contacts)" della zona DNS OVHcloud, per confermare l’eliminazione.
+>> > [!primary]
+>> >
+>> > Se desideri eliminare immediatamente una zona DNS dal tuo [Spazio Cliente OVHcloud](/links/manager), esegui i 4 passi per richiedere l'annullamento alla data di entrata in vigore, quindi contatta il supporto OVHcloud creando un ticket di assistenza dal [centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
+>> > Nella richiesta specifica la zona DNS interessata e dichiara chiaramente il tuo desiderio di eliminarla immediatamente senza attendere la data di entrata in vigore.
 
 ## Per saperne di più
 

@@ -34,7 +34,7 @@ Una vez que haya iniciado sesión, podrá cargar archivos, cerrar sesión, crear
 
 ![Carga](images/plik-upload.png)
 
-Para cargar un archivo, seleccione el botón `Upload Files`{.acción}. Esto abrirá una nueva página. En esta página, tiene muchas opciones sobre cómo hacer que sus cargas estén disponibles.
+Para cargar un archivo, seleccione el botón `Upload Files`{.action}. Esto abrirá una nueva página. En esta página, tiene muchas opciones sobre cómo hacer que sus cargas estén disponibles.
 
 ![Opciones de carga](images/plik-upload-options.png)
 
@@ -59,7 +59,7 @@ Seleccione las opciones que desea utilizar y haga clic en el botón `Add files`{
 > Nota: los archivos están limitados a 10 GB de tamaño.
 >
 
-Después de seleccionar los archivos que desea cargar, seleccione el botón verde `Upload`{.acción} en el lado izquierdo. Esto abrirá una nueva página con sus archivos adjuntos; desde aquí, repasaremos nuestras opciones de descarga.
+Después de seleccionar los archivos que desea cargar, seleccione el botón verde `Upload`{.action} en el lado izquierdo. Esto abrirá una nueva página con sus archivos adjuntos; desde aquí, repasaremos nuestras opciones de descarga.
 
 ### Descargando archivos
 

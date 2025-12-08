@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Private network configuration"
 excerpt: "Find out how to set up a private network for your Enterprise File Storage service from your OVHcloud Control Panel"
-updated: 2024-12-19
+updated: 2025-10-23
 ---
 
 ## Objective
@@ -44,7 +44,12 @@ Click the `Configure Network Parameters`{.action} link to configure your Service
 
 You must have a vRack to activate your vRack services. OVHcloud vRack is a free service. If you don't have one at this stage, you can order one using the `Order`{.action} button in the Control Panel. Otherwise, select your vRack from the drop down menu.
 
-![Sans configuration réseau](images/02-EFS.png){.thumbnail}
+![without configuration réseau](images/02-EFS.png){.thumbnail}
+
+> [!primary]
+> Please note that creating vRack Services, Subnets, or Service Endpoints on a production vRack **does not cause any service interruption**.
+> Therefore, you can safely follow steps 2 and 3 of this guide in a production environment.
+>
 
 ### Step 2 - Selecting or activating a vRack Services
 
@@ -67,6 +72,21 @@ After a few moments, your new Service Endpoint will be configured and available.
 ![Enable vRack Services](images/07-EFS.png){.thumbnail}
 
 You can now follow the guides below to create and manage your volumes, snapshots and ACLs.
+
+### Testing network connectivity from an NFS client to your Service Endpoint
+
+> [!primary]
+> **Prerequisites:**
+>
+> - Your NFS client must have a network interface configured in the same subnet as your vRack Services and must be in the same VLAN as well. The vRack Services subnet is not routable and requires a CIDR 24 subnet (x.x.x.x/24 or x.x.x.x/255.255.255.0).
+> - If this is not possible, you can use a gateway that will translate the address and port to it but you will have to contact [OVHcloud support](https://help.ovhcloud.com/csm?id=csm_get_help), otherwise you will not be able to mount your NFS shares.
+> - The IP address of your Service Endpoint is in a subset of CIDR 27, 28 or 29 of your vRack Services subnet.
+> - The IP address of your Service Endpoint must be unique in your subnet and must be excluded from your DHCP server if you use one.
+> - Example: vRack Services 10.0.0.0/24 subnet - Service Endpoint 10.0.0.16/29 - Your service will therefore be accessible at IP address 10.0.0.16 in subnet 10.0.0.0/24.
+
+- The **arping IP_Endpoint** command must return only one MAC address.
+- The **traceroute -T IP_Endpoint -p 2049** command must not return an error.
+- The **nmap -sV -T4 -p111,635,2049,4045,4046 IP_Endpoint** command must return ports in the OPEN state (essential for the proper functioning of NFSv3).
 
 ## Go further <a name="gofurther"></a>
 

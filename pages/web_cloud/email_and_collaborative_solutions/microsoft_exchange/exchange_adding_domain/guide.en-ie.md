@@ -102,7 +102,7 @@ If the box is red:
     - Click on the red box `MX`, `SRV`, `SPF` and `DKIM` to see the changes you need to make. If this domain name does not use the OVHcloud configuration (its DNS servers), you will need to carry out the modifications from your domain name’s management interface.
     - In case of a red `CNAME` box, please refer to our guide explaining how to [create a CNAME record when adding an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![exchange](images/add_domain_exchange_step4\.png){.thumbnail .w-600}
+![exchange](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >

@@ -1,7 +1,7 @@
 ---
 title: Gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI
 excerpt: Découvrez le fonctionnement des groupes de sécurité sur Public Cloud
-updated: 2023-03-13
+updated: 2025-09-23
 ---
 
 ## Objectif
@@ -52,14 +52,14 @@ openstack port set --enable-port-security <port_ID>
 Vous pouvez ensuite vérifier si le "port security" est activé sur un port en particulier :
 
 ```bash
-openstack port show <port-ID> -f value -c port_security_enabled
+openstack port show <port_ID> -f value -c port_security_enabled
 ```
 
 Le résultat devrait être similaire à ceci :
 
 ```console
 $ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
-False
+True
 ```
 
 #### Pour un nouveau réseau privé :

@@ -102,11 +102,11 @@ O controlo de admissão impõe limites à utilização dos recursos. Não são a
 
 A base do controlo de admissão da HA do vSphere é o número de falhas de hosts que o cluster é autorizado a tolerar e que continua a garantir o fail-over. A capacidade de fail-over dos hosts pode ser definida de três formas distintas:
 
-- [Percentagem de recursos do cluster](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external-link}
+- [Percentagem de recursos do cluster](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html)
 
-- [Estratégia de slot](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external-link}
+- [Estratégia de slot](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html)
 
-- [Hosts de fail-over dedicados](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external-link}
+- [Hosts de fail-over dedicados](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html)
 
 #### Datastore de sinal de pulsação
 
@@ -116,7 +116,7 @@ Quando o host principal de um cluster HA não consegue comunicar com um host sub
 
 O seu cluster pode ser sujeito a vários parâmetros de configuração avançada.
 
-Encontre esses parâmetros [nesta página](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external-link}.
+Encontre esses parâmetros [nesta página](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html).
 
 ### Regra HA
 

@@ -1,7 +1,7 @@
 ---
 title: 'Die Abrechnung für Ihre Exchange Accounts verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnung für OVHcloud Exchange im Kundencenter verwalten'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Ziel
@@ -81,6 +81,20 @@ Gehen Sie auf den Tab `E-Mail-Accounts`{.action}. Klicken Sie dann links auf den
 Gehen Sie auf den Tab `E-Mail-Accounts`{.action}. Klicken Sie auf `...`{.action} rechts des betreffenden Accounts und schließlich auf `Löschen`{.action}. Der Account wird sofort von der Plattform gelöscht; es erfolgt keine Kündigung.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
+
+### Plattform kündigen
+
+Nachdem Sie die E-Mail-Accounts gelöscht haben, müssen Sie die Ihrer Exchange Plattform zugeordneten Domains löschen, bevor Sie diese kündigen können. Gehen Sie hierzu auf den Tab `Assoziierte Domains`{.action}. Klicken Sie auf den Button `...`{.action} in der Zeile des Domainnamens, den Sie löschen möchten, und klicken Sie dann auf `Diese Domain löschen`{.action}.
+
+![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
+
+Klicken Sie im Verwaltungsfenster Ihrer Exchange-Plattform oben rechts auf `Aktionen`{.action} und dann auf `Kündigen`{.action}.
+
+![billing_exchange](images/billing-exchange-08.png){.thumbnail}
+
+> [!primary]
+>
+> Diese Aktion führt zur Aussetzung und anschließenden Löschung sämtlicher Accounts auf der Exchange Plattform am Ablaufdatum.
 
 ## Weiterführende Informationen
 

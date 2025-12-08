@@ -1,12 +1,12 @@
 ---
-title: Key Management Service (KMS) - Shared responsibilities
-excerpt: "Shared responsibilities between OVHcloud and the customer for OVHcloud KMS"
-updated: 2024-11-25
+title: OKMS - Shared responsibilities
+excerpt: "Shared responsibilities between OVHcloud and the customer for OVHcloud KMS and Secret Manager"
+updated: 2025-10-21
 ---
 
 ## Objective
 
-The RACI below details shared responsibilities between OVHcloud and the customer for the OVHcloud KMS service. This shared model can help relieve the customer’s operational burden.
+The RACI below details shared responsibilities between OVHcloud and the customer for the OKMS service. This shared model can help relieve the customer’s operational burden.
 
 | Roles |
 | --- |
@@ -57,7 +57,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Manage network accessibility of the Service |  | RA  |
 | Administrate the service |  | RA  |
 | Manage backups |  | RA |
-| Administrate keys stored on the KMS | RA |  |
+| Administrate keys and secrets stored on the OKMS | RA |  |
 
 ##### **3.1.2. Access management**
 

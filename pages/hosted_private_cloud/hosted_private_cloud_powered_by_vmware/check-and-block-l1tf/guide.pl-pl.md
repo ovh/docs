@@ -37,7 +37,7 @@ Przypomnienie:
 
 Jeśli chodzi o ofertę **Private Cloud**, jedynie pakiety SDDC są zagrożone tą podatnością.
 
-Więcej informacji o tej luce znajdziesz w naszym [artykule na blogu](https://www.ovh.com/fr/blog/ovh-l1-terminal-fault-l1ft-foreshadow-disclosure/){.external-link}.
+Więcej informacji o tej luce znajdziesz w naszym [artykule na blogu](https://www.ovh.com/fr/blog/ovh-l1-terminal-fault-l1ft-foreshadow-disclosure/).
 
 ## Proces mitygacji zagrożenia
 
@@ -48,15 +48,15 @@ Więcej informacji o tej luce znajdziesz w naszym [artykule na blogu](https://ww
 > Operacje umożliwiają jedynie wyłączenie opcji Hyper-Threading na Twoich hostach ESXi. Ponieważ jednak podatność L1TF potrzebuje do działania opcji Hyper-Threading, jej wyłączenie chroni Twoją infrastrukturę przed wykorzystaniem podatności.
 >
 
-Proces neutralizacji jest opisany w bazie wiedzy VMware : [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806){.external-link}.
+Proces neutralizacji jest opisany w bazie wiedzy VMware : [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806).
 
 Procedura dzieli się na trzy różne fazy.
 
 ### Etap 1: aktualizacja
 
-Aktualizacja vCenter jest wykonywana przez OVHcloud, jednak łatkę hostów ESXi instaluje samodzielnie użytkownik. Jest ona dostępna [w menedżerze aktualizacji](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager){.external-link}.
+Aktualizacja vCenter jest wykonywana przez OVHcloud, jednak łatkę hostów ESXi instaluje samodzielnie użytkownik. Jest ona dostępna [w menedżerze aktualizacji](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager).
 
-Listę łatek dla hostów ESXi znajdziesz w [tym dokumencie](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
+Listę łatek dla hostów ESXi znajdziesz w [tym dokumencie](https://www.vmware.com/security/advisories/VMSA-2018-0020.html).
 
 Po aktualizacji hostów w podsumowaniu hosta pojawi się następujący alert:
 
@@ -66,7 +66,7 @@ Po aktualizacji hostów w podsumowaniu hosta pojawi się następujący alert:
 
 W tej fazie hosty ESXi są zaktualizowane, ale poprawka nie jest jeszcze zastosowana.
 
-Ważne, abyś był świadomy, że mogą wystąpić potencjalne problemy wymienione we wspomnianej wyżej [bazie wiedzy](https://kb.vmware.com/s/article/55806){.external-link} oraz spadki wydajności opisane w tej bazie: [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767){.external-link}.
+Ważne, abyś był świadomy, że mogą wystąpić potencjalne problemy wymienione we wspomnianej wyżej [bazie wiedzy](https://kb.vmware.com/s/article/55806) oraz spadki wydajności opisane w tej bazie: [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767).
 
 ### Etap 3: aktywacja
 
@@ -78,11 +78,11 @@ Na górze po prawej stronie okna dostępny jest filtr.
 
 Operację tę należy wykonać na każdym hoście.
 
-Aby dowiedzieć się więcej, możesz przejść do etapu 3 dotyczącego rozwiązania zaprezentowanego w [tej bazie wiedzy VMware](https://kb.vmware.com/s/article/55806){.external-link}.
+Aby dowiedzieć się więcej, możesz przejść do etapu 3 dotyczącego rozwiązania zaprezentowanego w [tej bazie wiedzy VMware](https://kb.vmware.com/s/article/55806).
 
 > [!warning]
 > 
-> Jeśli po przejrzeniu poszczególnych elementów nie chcesz wyłączyć Hyper-threadingu, możesz usunąć wiadomość z alertem, postępując zgodnie z instrukcjami z tej [bazy wiedzy](https://kb.vmware.com/s/article/57374){.external-link}.
+> Jeśli po przejrzeniu poszczególnych elementów nie chcesz wyłączyć Hyper-threadingu, możesz usunąć wiadomość z alertem, postępując zgodnie z instrukcjami z tej [bazy wiedzy](https://kb.vmware.com/s/article/57374).
 > 
 > ![](images/deleteWarning.png){.thumbnail}
 > OVHcloud nie zaleca tego rozwiązania i nie ponosi odpowiedzialności za ryzyko podjęte przez użytkownika.

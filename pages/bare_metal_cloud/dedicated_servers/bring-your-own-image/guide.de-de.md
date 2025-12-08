@@ -34,7 +34,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 There are some technical limitations linked to the use of physical products such as dedicated servers. Here is a non-exhaustive list, to keep in mind during your deployment preparation:
 
 - Boot type: **uefi** or **legacy**
-- Partition type: **MBR** or **GPT**
+- Partition type: **MBR** or **GPT**
 - Image format: **qcow2** or **raw**
 
 > [!warning]
@@ -180,7 +180,7 @@ The following table gives an overview of well known customer errors and how to f
 |image provided has a size of `n` bytes which is larger than `device` of `m` bytes|The image provided has a size that is bigger than the size of the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
 |Can't write `t` on disk|Impossible to write qcow2/raw image on disk.|Modify your image so that the command `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` works.|
 |Could not download, `t` image is too big to download in memory.|Your server doesn't have enough RAM to download the image.|You need to reduce the size of your image.|
-|Could not download image located: `url`|Cannot download image from `imageURL`.|Check that a download with the `curl` command from your server works in rescue mode. If some HTTP specific headers are required, you can precise them with the `httpHeaders` argument.|
+|Could not download image: `<error message>`|Cannot download image from `imageURL`.|Check that a download with the `curl` command from your server works in rescue mode. If some HTTP specific headers are required, you can provide them with the `httpHeaders` argument.|
 |image provided format is not of type raw because no partition table was found. It seems to contain: `x`|A raw image must contain a partition table.|Check that your image contains a partition table.|
 |Bad `checkSumType` for downloaded file, got: `n` while expecting `m`.|Incorrect checksum.|- Please ensure that you have specified the correct checksum.<br />- Check that a download with the `curl` command from your server works in rescue mode.|
 

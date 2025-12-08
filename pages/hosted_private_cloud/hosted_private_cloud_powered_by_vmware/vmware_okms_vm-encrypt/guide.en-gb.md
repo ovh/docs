@@ -511,7 +511,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >>
 >> ![Trust KMS server with or without CSR](images/trust_kms.png){.thumbnail}
 >>
->> We recommend the more secure "With CSR" method by clicking on `New Certificate Signing Request (CSR)`{.action). However, you are free to choose the one that suits you best.
+>> We recommend the more secure "With CSR" method by clicking on `New Certificate Signing Request (CSR)`{.action}. However, you are free to choose the one that suits you best.
 >>
 >> For more information on the advantages and disadvantages of using a CSR, read the [KMS](/pages/manage_and_operate/kms/quick-start) documentation.
 >>

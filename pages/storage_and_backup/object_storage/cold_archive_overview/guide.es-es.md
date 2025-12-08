@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Descripción general (EN)
 excerpt: Discover the service, understand the capabilities and billing
-updated: 2024-08-05
+updated: 2025-11-19
 ---
 
 <style>
@@ -9,6 +9,21 @@ updated: 2024-08-05
     width:100% !important;
 }
 </style>
+
+> [!warning]
+>
+> **This page is only for existing customers of the OVHcloud standalone bucket-granular Cold Archive introduced in 2023.**
+>
+> **You're looking for S3<sup>1</sup>-compatible archiving solutions?**
+>
+> OVHcloud Object Storage now offers individual objects archiving feature rather than archiving the entire container thanks to the addition of the **Cold Archive** class in the Object Storage lifecycle. Indeed, the feature is now directly available in your Object Storage dashboard, from your existing Object Storage containers:
+>
+> - Upload your objects in the Cold Archive class,
+> - or use lifecycle transitions to move data to Cold Archive class.
+>
+> To learn more about this storage class, see our guide "[Choosing the right storage class for your needs](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs)".
+>
+> Moreover, the standalone bucket-granular Cold Archive won't be available from the Control Panel for new customers, with no impact to existing customers. APIs will continue to work and data will of course remain secure and available at any moment: we only modify the way users will access and manage objects.
 
 ## Objective
 
@@ -43,7 +58,7 @@ The service allows you to focus on building and deploying cloud applications whi
 
 ### Concepts
 
-The service is fully managed by OVHcloud and accessible through the S3 **\*** compatible API.
+The service is fully managed by OVHcloud and accessible through the S3-compatible API.
 
 ![Archive](images/restoring.PNG){.thumbnail}
 
@@ -82,7 +97,7 @@ You can track the different steps of your data by the status of your bucket
 | Archive (=bucket) status | Description | Objects permissions | Duration | Data pricing |
 | --- | --- | --- | --- | --- |
 | **`None`** | No Intelligent-Tiering configuration pushed on the bucket yet. | All | unlimited | Standard |
-| **`Archiving`** | Archiving in progress on tapes. | Listing | <48 hrs | Archive |
+| **`Archiving`** | Archiving in progress on tapes. | Listing | N/A | Archive |
 | **`Archived`** | Objects archived on tapes only. | Listing | unlimited | Archive |
 | **`Restoring`** | Restoration in progress from tapes. | Listing | <48 hrs | Archive |
 | **`Restored`** | Objects restored and accessible. | Read-only + Listing | 30 days | Archive |
@@ -166,4 +181,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

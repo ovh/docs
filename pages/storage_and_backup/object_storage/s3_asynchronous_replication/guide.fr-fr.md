@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2025-09-12
+updated: 2025-09-30
 ---
 
 ## Introduction
@@ -505,11 +505,15 @@ Cette fonctionnalité n'est disponible que pour les régions 3-AZ (pour en savoi
 
 Lors de la création d'un nouveau bucket/conteneur dans une région **3-AZ**, un message vous demande si vous souhaitez activer ou non l'option Offsite Replication. Si elle est activée et qu'elle repose sur la fonctionnalité de réplication asynchrone, le versioning sera automatiquement activé également.
 
-![OffsiteReplication](images/01-offsite-replication01.PNG){.thumbnail}
+![OffsiteReplication](images/enabling-offsite-replication.png){.thumbnail}
 
 #### Quelles sont les différences entre la fonctionnalité de réplication asynchrone et l'option Offsite Replication ?
 
 L'option Offsite Replication proposée dans les régions 3-AZ repose sur la fonction de réplication asynchrone. Avec cette option Offsite Replication, OVHcloud se charge de générer automatiquement une configuration de règle de réplication avec des paramètres pré-remplis, là où la fonctionnalité de réplication asynchrone compatible S3 permet à l'utilisateur d'avoir la main sur l'ensemble de la fonction (configuration et déploiement).
+
+#### Où seront stockées les données répliquées puisque la configuration des règles de réplication est gérée par OVHcloud ?
+
+Les données répliquées sont stockées comme toutes les autres données, dans un bucket créé automatiquement par OVHcloud. L'utilisateur peut choisir la région de destination ou laisser OVHcloud sélectionner automatiquement la région la plus adaptée.
 
 #### Que se passe-t-il si le bucket de destination est supprimé ?
 

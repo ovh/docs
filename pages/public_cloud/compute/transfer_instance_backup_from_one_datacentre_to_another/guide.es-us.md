@@ -1,7 +1,7 @@
 ---
 title: Descargar y transferir la copia de seguridad de una instancia de una región de OpenStack a otra
 excerpt: Cómo descargar y transferir una copia de seguridad de una instancia de una región de OpenStack a otra conservando la configuración y el estado de la instancia
-updated: 2024-12-03
+updated: 2025-10-15
 ---
 
 ## Objetivo
@@ -24,23 +24,10 @@ También necesitará una [instancia de Public Cloud](/links/public-cloud/compute
 
 ## Procedimiento
 
-### Crear un backup
-
-```bash
-$ openstack server list
- 
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID | Name | Status | Networks | Image Name |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-A continuación, ejecute el siguiente comando para crear una copia de seguridad de su instancia:
-
-```bash 
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
+> [!primary]
+>
+> Si necesita crear una copia de seguridad con OpenStack, consulte esta guía dedicada sobre cómo [hacer una copia de seguridad de una instancia.](/pages/public_cloud/compute/save_an_instance).
+>
 
 ### Descargar el backup
 
@@ -146,9 +133,9 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 
 ### Crear una instancia a partir del backup
 
-> [!warning]
+> [!primary]
 >
-> Si su instancia es un servidor Windows, deberá seleccionar un *flavor* de tipo win-xx-xx (por ejemplo, win-b2-15) y disponer de una interfaz pública en la red Ext-Net. Sin estas condiciones, no será posible autenticarse en el KMS de OVHcloud, y su servidor permanecerá con una [licencia no activada](/pages/public_cloud/compute/activate-windows-license-private-mode). Esto podría dar lugar a limitaciones, como la ausencia de actualizaciones. Tenga en cuenta que no es posible redimensionar una instancia Linux (por ejemplo, b2-15) en una instancia Windows (como win-b2-15). Para realizar esta transición, es necesario volver a crear una nueva instancia.
+> Si desea recrear su instancia desde esta copia de seguridad, siga nuestra guía "[Usar copias de seguridad de instancias para crear o restaurar una instancia](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)".
 >
 
 Para crear una instancia a partir de su copia de seguridad, utilice el ID de copia de seguridad como imagen con este comando:

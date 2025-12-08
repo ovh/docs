@@ -82,7 +82,7 @@ Folgen Sie den Anleitungsschritten indem Sie nacheinander die Tabs aufrufen:
 >> ![emailpro](images/emailpro-android-02.png){.thumbnail .h-600}
 >>
 > **Schritt 3**
->> Wählen Sie das Protokoll für den E-Mail-Empfang aus. Wählen Sie `Persönlich (IMAP)`{.action aus.}<br><br>Weitere Informationen zu [POP und IMAP](#popimap) finden Sie unten in dieser Anleitung.<br><br>
+>> Wählen Sie das Protokoll für den E-Mail-Empfang aus. Wählen Sie `Persönlich (IMAP)`{.action} aus.<br><br>Weitere Informationen zu [POP und IMAP](#popimap) finden Sie unten in dieser Anleitung.<br><br>
 >> ![emailpro](images/emailpro-android-03.png){.thumbnail .h-600}
 >>
 > **Schritt 4**

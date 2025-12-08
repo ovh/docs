@@ -1,7 +1,7 @@
 ---
 title: Repartitionner un VPS après un upgrade de stockage
 excerpt: "Découvrez comment augmenter l'espace disque utilisable suite à une mise à niveau"
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 ## Objectif
@@ -162,6 +162,18 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 ```
 
 Dans la ligne `First sector`, assurez-vous que la valeur par défaut est la même que celle que vous avez notée précédemment. Si elle diffère, utilisez la valeur que vous avez notée.
+
+Si le message suivant s'affiche :
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Entrez « n » et continuez.
+
+Répondre « y » signifierait écraser le système de fichiers ext4 existant sur la Partition 1 et accepter de détruire les données qu'elle contient.
 
 ### Rendre la partition amorçable (<i>bootable</i>)
 

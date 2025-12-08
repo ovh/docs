@@ -1,7 +1,7 @@
 ---
 title: 'Diagnostiquer des dysfonctionnements matériels sur un serveur dédié'
 excerpt: 'Découvrez comment utiliser les outils de diagnostic pour identifier des dysfonctionnements matériels sur votre serveur'
-updated: 2025-09-05
+updated: 2025-10-16
 ---
 
 ## Objectif
@@ -75,13 +75,7 @@ Pour vérifier le système de fichiers, exécutez la commande suivante :
 fsck -fy
 ```
 
-Pour un test de lecture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
-```
-
-Pour un test d'écriture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs
+Pour un test de lecture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs
 
 ```bash
 hdparm -t /dev/sd(x)

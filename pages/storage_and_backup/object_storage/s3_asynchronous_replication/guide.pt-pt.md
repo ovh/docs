@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets (EN)
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2025-09-12
+updated: 2025-09-30
 ---
 
 ## Introduction
@@ -507,11 +507,15 @@ This feature is only available for primary Object Storage in a 3-AZ region (to k
 
 When creating a new bucket/container in a **3-AZ region**, you will be asked if you want to activave or not the Offsite Replication option. If enabled, and because it relies on the asynchronous replication feature, the versioning will be automatically enabled too.
 
-![OffsiteReplication](images/01-offsite-replication01.PNG){.thumbnail}
+![OffsiteReplication](images/enabling-offsite-replication.png){.thumbnail}
 
 #### What are the differences between the asynchronous replication feature and the Offsite Replication feature available in 3-AZ regions?
 
 The Offsite Replication option offered in 3-AZ regions is based on the asynchronous replication feature. With this Offsite Replication option, OVHcloud automatically generates a replication rule configuration with pre-filled parameters, whereas the S3-compatible asynchronous replication functionality allows the user to take control of the entire function (configuration and deployment).
+
+#### Where will the replicated data be stored, since the replication rule configuration is managed by OVHcloud?
+
+Replicated data is stored like all other data, in a bucket automatically created by OVHcloud. The user can choose the destination region or let OVHcloud automatically select the most suitable region.
 
 #### What if a replica bucket is deleted?
 

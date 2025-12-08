@@ -35,6 +35,9 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 - Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail renseignée dans son profil.
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
 
+> [!warning]
+> Si vous souhaitez effectuer un changement de contacts pour vos services de téléphonie OVHcloud, veuillez suivre [notre guide dédié](/pages/web_cloud/phone_and_fax/voip/effectuer_un_changement_de_contact_pour_les_services_voip).
+
 ## En pratique
 
 > [!primary]

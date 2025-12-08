@@ -81,7 +81,7 @@ Das folgende Fenster wird angezeigt, um den Status anhand von vier Schritten anz
 
 ### Widerrufsrecht ausüben
 
-In Artikel 14.1.1 unserer [Allgemeinen Geschäftsbedingungen](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-de.pdf){.action} heißt es: "*Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.*"
+In Artikel 14.1.1 unserer [Allgemeinen Geschäftsbedingungen](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-de.pdf) heißt es: "*Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.*"
 
 Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren AGB.
 

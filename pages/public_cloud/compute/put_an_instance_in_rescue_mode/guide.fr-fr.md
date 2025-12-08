@@ -43,7 +43,7 @@ Une fois l’instance redémarrée en mode rescue, une boîte d’information af
 
 Votre **mot de passe du mode rescue** temporaire sera uniquement affiché dans la console VNC. Cliquez sur votre instance dans le tableau, puis accédez à l'onglet `Console VNC`{.action} pour le récupérer.
 
-<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Accéder à vos données
 

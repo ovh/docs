@@ -1,14 +1,14 @@
 ---
-title: Suivi de connexion
-excerpt: Configuration du suivi de connexion pour le Load Balancer OVHcloud
-updated: 2022-03-28
+title: 'Suivi des connexions sur l’OVHcloud Load Balancer'
+excerpt: 'Découvrez les méthodes disponibles pour suivre les connexions sur l’OVHcloud Load Balancer.'
+updated: 2025-11-27
 ---
 
 ## Objectif
 
-Le service [Load Balancer OVHcloud](/links/network/load-balancer) offre différents types de suivi de connexion pour vos services.
+Le service [Load Balancer OVHcloud](/links/network/load-balancer) propose plusieurs méthodes pour le **suivi de connexion** (également appelé *persistence de session* ou *stickiness*) vers vos services.
 
-Chaque session du service OVHcloud Load Balancer est maintenue par un système de persistence de connexion. Ce dernier est configuré au niveau de la couche applicative du service OVHcloud Load Balancer, c'est elle qui assure la persistence de la connexion vers le serveur.
+Chaque session du service OVHcloud Load Balancer est maintenue par un système de persistence de connexion. Ce système est configuré au niveau de la **couche applicative** du service OVHcloud Load Balancer afin d'assurer la persistance de la connexion vers le serveur.
 
 **Ce guide présente différentes façons de configurer le suivi de connexion pour le Load Balancer OVHcloud.**
 
@@ -22,50 +22,49 @@ Chaque session du service OVHcloud Load Balancer est maintenue par un système d
 
 ### Les différents types de suivi de connexion
 
-Il existe 2 types principaux de suivi de connexion qui peuvent être configurés avec vos services :
+Deux méthodes principales de suivi de connexion peuvent être configurées pour vos services :
 
-|Suivi de connexion|Détails|
+| Méthode de suivi | Détails |
 |---|---|
-|Cookie|Configure un cookie de session qui sera utilisé pour toujours répartir le trafic d'une même session HTTP vers le même serveur dans la ferme|
-|SourceIp|Un algorithme de hash sera appliqué sur l'adresse IP source de la requête reçue par le service OVHcloud Load Balancer.
+| Cookie | Configure un cookie de session, utilisé pour toujours répartir le trafic d'une même session HTTP vers le même serveur dans la ferme. |
+| SourceIp | Un algorithme de hash est appliqué à l'adresse IP source de la requête reçue par l’OVHcloud Load Balancer. Cela garantit que la même adresse IP client est toujours dirigée vers le même serveur. |
 
-Les éléments suivants auront un impact sur la redirection de trafic :
+Les éléments suivants affecteront la redirection du trafic :
 
-- le poids configuré change ;
-- un serveur de la ferme se réactive ;
-- un serveur de la ferme ne répond plus.
+- le poids configuré change
+- un serveur de la ferme se réactive
+- un serveur de la ferme ne répond plus
 
 > [!warning]
 >
-> Après un rafraichissement de votre configuration, les connexions seront re-balancées, vos sessions HTTP seront donc perdues.
+> Après un rafraichissement de votre configuration, les connexions existantes seront rééquilibrées, vos sessions HTTP seront donc perdues.
 > 
 
-### Modifier le mode de suivi de connexion d'une ferme via l'espace client OVHcloud
+### Modifier le mode de suivi de connexion d’une ferme via l’espace client OVHcloud
 
-Dans l'[espace client OVHcloud](/links/manager) rendez-vous dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
+Pour modifier le suivi de connexion d’une ferme, rendez-vous sur l’onglet `Ferme de serveurs`{.action}, puis cliquez sur le bouton `...`{.action} sur la droite de la ferme voulue et sélectionnez `Modifier`{.action} :
 
-Pour modifier le suivi de connexion d'une ferme, il faut éditer celle-ci en allant dans l'onglet `Ferme de serveurs`{.action} puis cliquez sur le bouton d'édition `...`{.action} à droite  de la ferme voulue et sélectionnez `Modifier`{.action}.
+![Modifier une ferme](images/farm_edit-2022.png){.thumbnail}
 
-![Modification d'une ferme](images/farm_edit-2022.png){.thumbnail}
+Dans la section `Paramètres avancés`{.action}, vous pourrez accéder à la section `Suivi de session`{.action} :
 
-Dans les `Paramètres avancés` vous aurez accès au `Suivi de session`.
+![Modifier le suivi de connexions](images/tracking_session-2022.png){.thumbnail}
 
-![Modification du suivi de connexion](images/tracking_session-2022.png){.thumbnail}
+Une fois que vous avez configuré la ferme, cliquez sur `Ajouter`{.action} ou `Modifier`{.action}, selon que vous configuriez une nouvelle ferme ou modifiiez une ferme existant.
 
-Une fois la ferme configurée, cliquez sur `Ajouter`{.action} ou `Modifier`{.action} selon que vous configuriez une nouvelle ferme, ou une ferme existante.
+N’oubliez pas de déployer la configuration. Il existe deux façons de le faire :
 
-N'oubliez pas de déployer la configuration. Pour ce faire, vous pouvez au choix :
+- dans la section `Statut`{.action} de l’espace client, en cliquant sur le bouton `...`{.action} de votre Load Balancer, puis en sélectionnant `Appliquer la configuration`{.action}
 
-- dans la section `Statut` de l'onglet `Accueil`{.action}, cliquer sur le bouton `...`{.action} de votre Load Balancer puis cliquez sur `Appliquer la configuration`{.action};
 - dans le bandeau de rappel vous précisant que la configuration n'est pas appliquée, cliquer sur `Appliquer la configuration`{.action}.
 
-![Application d'une Configuration d'un Load Balancer](images/apply_configuration-2022.png){.thumbnail}
+![Appliquer une configuration au Load Balancer](images/apply_configuration-2022.png){.thumbnail}
 
-### Modifier le mode de suivi de connexion d'une ferme depuis l'API OVHcloud
+### Modifier le mode de suivi de connexion d’une ferme via l’API
 
-#### Voir le détail d'une ferme
+#### Voir les détails d’une ferme
 
-Cet appel permet de consulter le détail d'une ferme, connaissant son identifiant. Dans cet exemple, nous allons travailler sur une ferme HTTP.
+Cette requête API vous permet de consulter les détails d’une ferme si vous connaissez son ID. Dans cet exemple, nous travaillerons sur une ferme HTTP.
 
 > [!api]
 >
@@ -87,9 +86,9 @@ Cet appel permet de consulter le détail d'une ferme, connaissant son identifian
 |displayName|Nom donné à cette ferme|
 |stickiness|Mode de suivi de connexion actuellement configuré sur la ferme|
 
-#### Modifier le mode de suivi de connexion d'une ferme
+#### Modifier le mode de suivi de connexion d’une ferme
 
-Cet appel permet de modifier la configuration d'une ferme, connaissant son identifiant. Dans cet exemple, nous allons travailler sur une ferme HTTP. Pour modifier le mode de suivi de connexion, le champ BackendHttp.stickiness doit être mis à jour avec un mode de suivi de connexion disponible.
+Cette requête API vous permet de modifier les paramètres d’une ferme si vous connaissez son ID. Dans cet exemple, nous travaillerons sur une ferme HTTP. Pour modifier le mode de suivi de connexion, le champ `BackendHttp.stickiness` doit être mis à jour avec un mode de suivi de connexion disponible :
 
 > [!api]
 >
@@ -102,7 +101,9 @@ Cet appel permet de modifier la configuration d'une ferme, connaissant son ident
 |farmId\*|Identifiant numérique de la ferme|
 |BackendHttp.stickiness|Mode de suivi de connexion souhaité pour cette ferme|
 
-#### Appliquer les modifications:
+#### Appliquer les modifications
+
+Cette requête API est nécessaire pour déployer les modifications de configuration sur le service Load Balancer.
 
 > [!api]
 >

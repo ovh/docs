@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Sauvegardes automatiques (EN)
 excerpt: Discover the automated backup methods for each engine
-updated: 2025-02-19
+updated: 2025-11-27
 ---
 
 ## Objective
@@ -43,15 +43,17 @@ For the other engines, backups are first prepared on-site, then replicated to an
 
 Public Cloud Databases provide a default configuration for remote backups based on the region the service is running in:
 
-| Service location            | Off-site default backup location |
-|-----------------------------|----------------------------------|
-| GRA (Gravelines, France)    | SBG (Strasbourg, France)         |
-| BHS (Beauharnois, Canada)   | SBG (Strasbourg, France)         |
-| DE (Frankfurt, Germany)     | GRA (Gravelines, France)         |
-| SBG (Strasbourg, France)    | GRA (Gravelines, France)         |
-| SGP (Singapore, Singapore)  | BHS (Beauharnois, Canada)        |
-| UK (London, United Kingdom) | GRA (Gravelines, France)         |
-| WAW (Warsaw, Poland)        | GRA (Gravelines, France)         |
+| Service location | Off-site default backup location |
+|---|---|
+| BHS (Beauharnois, Canada) | SBG (Strasbourg, France) |
+| DE (Frankfurt, Germany) | GRA (Gravelines, France) |
+| EU-WEST-PAR (Paris, France) | GRA (Gravelines, France) |
+| EU-SOUTH-MIL (Milan, Italia) | GRA (Gravelines, France) |
+| GRA (Gravelines, France) | SBG (Strasbourg, France) |
+| SBG (Strasbourg, France) | GRA (Gravelines, France) |
+| SGP (Singapore, Singapore) | BHS (Beauharnois, Canada) |
+| UK (London, United Kingdom) | GRA (Gravelines, France) |
+| WAW (Warsaw, Poland) | GRA (Gravelines, France) |
 
 ### Custom settings
 

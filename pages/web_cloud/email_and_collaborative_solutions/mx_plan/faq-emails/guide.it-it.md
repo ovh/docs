@@ -296,7 +296,6 @@ Per modificare il tuo [servizio di posta](/links/web/emails) e usufruire di più
 - [Migrare gli indirizzi email da una piattaforma di posta elettronica OVHcloud a un’altra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrare manualmente l’indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrare account email tramite OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
-- [Migrare un account Gmail verso un account email OVHcloud tramite OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
 
 ///
 

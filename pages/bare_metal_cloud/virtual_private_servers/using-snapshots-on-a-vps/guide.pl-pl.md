@@ -1,7 +1,7 @@
 ---
 title: "Korzystanie z migawek na prywatnym serwerze wirtualnym"
 excerpt: "Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud i korzystać z niej"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Wprowadzenie
@@ -30,7 +30,7 @@ Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Ba
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 
-Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem **Podsumowanie opcji**.  
+Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem **Kopia zapasowa**.  
 Jeśli opcja "Snapshot" jest już w stanie "Włączona", przejdź od razu do etapu 2. Jeśli "Snapshot" nie jest jeszcze aktywny, kliknij na `...`{.action} obok opcji "Snapshot" i wybierz z menu kontekstowego pozycję `Zamówienie`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
@@ -43,7 +43,7 @@ Aby zrezygnować z opcji usługi, kliknij przycisk `...`{.action} obok "Snapshot
 
 ### Krok 2: tworzenie migawki
 
-Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Możesz wpisać opis, który będzie dołączony do kopii zapasowej snapshot. Czas tworzenia snapshota zależy od użytej przestrzeni dyskowej. Po utworzeniu migawki w obszarze “Podsumowanie opcji” pojawi się jej znacznik czasu.
+Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Możesz wpisać opis, który będzie dołączony do kopii zapasowej snapshot. Czas tworzenia snapshota zależy od użytej przestrzeni dyskowej. Po utworzeniu migawki w obszarze “Kopia zapasowa” pojawi się jej znacznik czasu.
 
 ### Krok 3: usuwanie / przywracanie migawki
 
@@ -103,7 +103,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > Aby uniknąć utraty zbyt dużej ilości przestrzeni dyskowej, zalecamy usunięcie kopii zapasowych snapshot bezpośrednio z serwera VPS.
 >
-> Pobrany plik można zaimportować do projektu Public Cloud (QCOW2) jako obraz za pośrednictwem [OpenStack](products/public-cloud-compute-instance-management). (Przykład zastosowania znajduje się w [tym przewodniku](/pages/public_cloud/compute/upload_own_image).)
+> Pobrany plik można zaimportować do projektu Public Cloud (QCOW2) jako obraz za pośrednictwem [OpenStack](/products/public-cloud-compute-instance-management). (Przykład zastosowania znajduje się w [tym przewodniku](/pages/public_cloud/compute/upload_own_image).)
 >
 
 ### Dobre praktyki dotyczące tworzenia migawek

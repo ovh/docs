@@ -12,7 +12,7 @@ You can add an [SSL certificate](/links/web/hosting-options-ssl) to your Content
 
 ## Requirements
 
-- an [OVH CDN solution](https://www.ovh.co.uk/cdn/)
+- an [OVH CDN solution](/links/network/cdn-infrastructure).
 - the permissions needed to manage your domain’s DNS zone
 
 ## Instructions

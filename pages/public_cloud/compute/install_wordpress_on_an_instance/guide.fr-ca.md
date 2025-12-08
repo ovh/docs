@@ -1,7 +1,7 @@
 ---
 title: Installer WordPress sur une instance
 excerpt: Découvrez comment utiliser une instance Public Cloud pour héberger des sites WordPress
-updated: 2023-05-17
+updated: 2025-09-23
 ---
 
 ## Objectif
@@ -126,10 +126,10 @@ La configuration d’un pare-feu (*iptables*) permet d’améliorer la sécurit�
 debian@instance:~$ sudo apt install ufw
 ```
 
-Les profils concernés portent la mention « WWW » dans la liste des applications :
+Dans la liste des applications disponibles pour UFW, les profils correspondant à un serveur web sont nommés « WWW » sur une instance Debian, et « Apache » sur une instance Ubuntu. Ces profils permettent d’ouvrir les ports nécessaires au trafic HTTP et HTTPS de manière simple et sécurisée.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # ou grep Apache
   WWW
   WWW Cache
   WWW Full

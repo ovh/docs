@@ -1,37 +1,26 @@
 ---
 title: "Fonctionnalités principales de l'API Load Balancer"
 excerpt: "Description rapide des différentes fonctions de l’API servant à gérer le Load Balancer"
-updated: 2022-04-04
+updated: 2025-09-29
 ---
 
-## Liste des fonctions API
+Cette section décrit brièvement les principales fonctions de l'API pour l'OVHcloud Load Balancer, sous /ipLoadbalancing.
 
-Cette section décrit brièvement les principales fonctions de l'API pour le Load Balancer OVHcloud, sous /ipLoadbalancing.
+Pour une référence complète des fonctions de l'API du service OVHcloud Load Balancer, veuillez consulter [ce guide détaillé](/pages/network/load_balancer/use_api_details).
+
+> [!primary]
+>
+> Les frontends, fermes et serveurs sont spécifiques au protocole (HTTP, TCP ou UDP) dans lequel ils sont définies.
+> La compatibilité entre ces composants n'est possible qu'au sein du même protocole.
+> Par exemple, un frontend HTTP ne peut être associé qu'à une ferme HTTP, et ne peut pas être utilisé avec une ferme UDP.
+> 
 
 > [!warning]
 >
-> Attention, pour des raisons de compatibilité, le point d'entrée de l'ancien système OVHcloud Load Balancer est toujours présent dans l'API /ip/loadBalancing, à ne pas confondre avec le nouveau /ipLoadbalancing.
-> 
-
-Pour une référence complète des fonctions de l'API du service OVHcloud Load Balancer, [cliquez ici](/pages/network/load_balancer/use_api_details).
-
-> [!primary]
->
-> Les frontend, ferme et serveur sont spécifiques au
-> protocole (parmi HTTP, TCP ou UDP) dans lequel ils sont définis.
-> Bien qu'ils puissent être « combinés » entre eux, ce n'est possible qu'au sein
-> d'un même protocole. Ainsi, il n'est pas possible d'utiliser un frontend
-> UDP avec une ferme HTTP. Mais il est possible (en l'absence d'autres
-> limitations) d'utiliser un frontend HTTP avec une ferme HTTP.
-> 
+> Chaque catégorie relevant de la gestion des frontends, des fermes et des serveurs se compose de 3 fonctions API, une pour chaque protocole (HTTP, TCP ou UDP).
+> Il est nécessaire de bien exécuter la fonction API qui correspond au protocole du service souhaité.
 
 ## Frontend
-
-> [!primary]
->
-> Comme vous pouvez le constater, chaque catégorie se compose de 3 fonctions API.
-> Il est nécessaire de bien exécuter la fonction API qui correspond au type de service souhaité.
-> 
 
 ### Retourner la liste des IDs des frontends existants
 
@@ -80,12 +69,6 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 
 ## Ferme de serveurs
 
-> [!primary]
->
-> Tout comme pour le frontend, chaque catégorie se compose de 3 fonctions API.
-> Il est nécessaire de bien exécuter la fonction API qui correspond au type de service souhaité.
-> 
-
 ### Retourner la liste des IDs des fermes existantes
 
 > [!api]
@@ -132,12 +115,6 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 > 
 
 ## Serveur
-
-> [!primary]
->
-> Tout comme pour les frontend et ferme, chaque catégorie se compose de 3 fonctions API.
-> Il est nécessaire de bien exécuter la fonction API qui correspond au type de service souhaité.
-> 
 
 ### Retourner la liste des IDs des serveurs liés à une ferme en particulier
 

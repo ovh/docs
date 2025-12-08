@@ -1,80 +1,101 @@
 ---
-title: Commander un certificat SSL gratuit
-universe: cloud
+title: "Commande d'un certificat SSL gratuit"
 excerpt: Commander un certificat SSL gratuit pour vos services web derrière un Load Balancer
-updated: 2022-03-29
+updated: 2025-10-24
 ---
 
-## Presentation
-Le service OVH Load Balancer peut être configuré pour prendre en charge la terminaison SSL.
+## Objectif
 
-La terminaison SSL a pour but de déchiffrer le flux chiffré entrant avant de le faire suivre vers le service approprié (Serveur web par exemple).
+Le service OVHcloud Load Balancer peut être configuré pour prendre en charge la terminaison SSL.
 
-La terminaison SSL a un coût pour le service qui le gère. Plutôt que de laisser vos serveurs la faire, il est possible de configurer votre service OVH Load Balancer pour la faire.
+La terminaison SSL a pour but de déchiffrer le flux chiffré entrant avant de le faire suivre vers le service approprié, tel qu'un serveur web.
 
-De plus, tous vos certificats sont ainsi centralisés au même endroit et leur maintenance s'en trouve facilitée.
+Le traitement de la terminaison SSL sur le Load Balancer réduit la charge de calcul sur vos serveurs backend et centralise la gestion des certificats. Cela facilite la maintenance et les mises à jour de sécurité.
 
-## Configurer le frontend pour la terminaison SSL
-La première chose à faire est de configurer votre frontend pour gérer la terminaison SSL.
+**Découvrez comment commander un certificat SSL gratuit depuis votre espace client OVHcloud ou via l'API OVHcloud.**
 
-### Via le Manager
-Dans la section `Frontends` de votre Manager, cliquez sur le bouton `Ajouter un frontend`{.action} pour en créer un nouveau. Une fenêtre d'édition apparait alors, selectionnez le protocole `HTTPS`. Il faudra aussi renseigner le champ `Ferme par défaut` ou `Redirection HTTP` dans les paramètres avancés.
+## Prérequis
 
-![Configuration la terminaison SSL d'un Frontend](images/iplb-add-front-end.png){.thumbnail}
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
-Une fois le frontend créé, il vous sera proposé d'`Appliquer la configuration`{.action} pour appliquer vos changements dans la zone concernée.
+## En pratique
 
-### Via l'API
-Dans l'API, la terminaison SSL est spécifiée par le booléen ssl : (N'oubliez pas de renseigner defaultFarmId ou redirectLocation)
+### Depuis l'espace client OVHcloud
+
+La première étape est de configurer votre frontend pour gérer la terminaison SSL.
+
+Vous pouvez configurer votre terminaison SSL depuis l'[espace client OVHcloud](/links/manager) dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
+
+Après avoir sélectionné le Load Balancer que vous souhaitez modifier, créez un nouveau frontend ou éditez-en un existant.
+
+Dans l'onglet `Frontends`{.action}, cliquez sur le bouton `Ajouter un frontend`{.action} pour en créer un nouveau.<br>
+Une fenêtre d'édition apparait alors, sélectionnez le protocole `HTTPS`. Ensuite, renseignez le champ `Ferme par défaut`. <br>
+Enfin, ouvrez les paramètres avancés et renseignez le champ `Redirection HTTP`.
+
+![Configuration la terminaison SSL d'un Frontend](images/enable_ssl_terminaison.png){.thumbnail}
+
+Une fois le frontend créé, une bannière apparaîtra vous invitant à `Appliquer la configuration`{.action} pour déployer vos changements dans la zone concernée.
+
+#### Commander le certificate SSL gratuit
+
+Dans l'onglet `Certificats SSL`{.action}, cliquez sur le bouton `Commander un certificat SSL`{.action} pour en créer un nouveau. Une fenêtre d'édition apparait alors avec un champ `FQDN` à renseigner.
+
+![Ajouter un certificate SSL gratuit](images/add_freecertificate.png){.thumbnail}
+
+#### Suivi de la commande
+
+Vous pourrez suivre votre commande dans l'onglet `Tâches`{.action}. La tâche correspondant à la commande d'un certificat SSL gratuit est nommée `orderFreeCertificate`.
+
+### Depuis l'API OVHcloud
+
+#### Configurer le frontend pour la terminaison SSL
+
+Dans l'API, la terminaison SSL est spécifiée par le booléen `ssl`. Pour activer la terminaison SSL, réglez ce paramètre sur `true`, puis définissez `defaultFarmId` ou `redirectLocation` avec les valeurs correspondantes.
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 >
 
-Puis appliquer les modifications :
+Appliquez ensuite les modifications :
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
-## Commander le certificate SSL gratuit
+#### Commander le certificat SSL gratuit
 
-### Via le Manager
-Dans la section `Certificats SSL` de votre Manager, cliquez sur le bouton `Commander un certificat SSL`{.action} pour en créer un nouveau. Une fenêtre d'édition apparait alors avec un champ `FQDN` à renseigner.
-
-![Ajouter un certificate SSL gratuit](images/iplb-order-ssl.png){.thumbnail}
-
-### Via l'API
-Dans l'API, la commande se fait comme suit. Pour que la commande se finalise, il faut obligatoirement que le nom de domaine choisi pointe vers votre service OVH Load Balancer.
+Dans l'API, la commande se fait via l'appel suivant :
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/freeCertificate
 >
 
-## Suivi de la commande
+Pour que la commande soit finalisée, il faut obligatoirement que le nom de domaine choisi pointe vers votre service OVHcloud Load Balancer.
 
-### Via le Manager
-Dans la section `Tâches`{.action} de votre Manager, les tâches relatives à la commandes d'un certificat SSL gratuit correspondent au type `orderFreeCertificate`.
+#### Suivi de la commande
 
-### Via l'API
+- Retourner la liste des tâches
 
-#### Retourner la liste des taches
-Vous pouvez spécifier le type d'action orderFreeCertificate pour affiner la recherche.
+Vous pouvez spécifier le type d'action `orderFreeCertificate` pour affiner la recherche.
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >
 
-#### Retourner le statut d'une tache en particulier
+- Retourner le statut d'une tâche en particulier
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 >
 
-## Livraison du certificat SSL gratuit
-Une fois la commande finie, le certificat SSL est automatiquement installé sur votre service OVH Load Balancer.
+Une fois la commande finie, le certificat SSL est automatiquement installé sur votre service OVHcloud Load Balancer.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

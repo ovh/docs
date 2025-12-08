@@ -18,7 +18,7 @@ Il est possible de restreindre l'accès au vCenter en autorisant uniquement cert
 
 Lorsque [la politique d'accès au vCenter est restreinte](/pages/bare_metal_cloud/managed_bare_metal/vcenter-modify-access-policy), il est nécessaire d'ajouter les IPs qui seront autorisées à se connecter au service.
 
-L'opération se réalise dans [l'espace client OVHcloud](/links/manager){.external-link}. Dans la section `Bare Metal Cloud`, cliquez sur la rubrique `Managed Bare Metal`. Sélectionnez l'infrastructure puis rendez-vous dans l'onglet `Sécurité` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
+L'opération se réalise dans [l'espace client OVHcloud](/links/manager). Dans la section `Bare Metal Cloud`, cliquez sur la rubrique `Managed Bare Metal`. Sélectionnez l'infrastructure puis rendez-vous dans l'onglet `Sécurité` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
 
 ![vCenter](images/restrictIP.png){.thumbnail}
 

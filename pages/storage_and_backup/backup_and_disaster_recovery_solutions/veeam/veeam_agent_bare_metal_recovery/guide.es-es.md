@@ -1,7 +1,7 @@
 ---
 title: Bare Metal recovery with Veeam Backup Agent
 excerpt: Learn how to restore your entire system using a recovery ISO and Veeam backups stored at OVHcloud, whether hosted or on-premise
-updated: 2025-04-17
+updated: 2025-09-30
 ---
 
 ## Objective
@@ -17,10 +17,10 @@ This guide is designed for all OVHcloud customers using Veeam backup, whether yo
 
 You can use it if you're running:
 
-- A Windows-based VPS
-- A Public Cloud Compute instance with Windows
+- A Windows-based or Linux-based VPS
+- A Public Cloud Compute instance with Windows or Linux
 - A Bare Metal server using the Veeam Agent
-- A Hosted Private Cloud (PCC) VM running Windows
+- A Hosted Private Cloud (PCC) VM running Windows or Linux
 - A physical or virtual machine on your premises with Windows or Linux
 
 > [!warning]

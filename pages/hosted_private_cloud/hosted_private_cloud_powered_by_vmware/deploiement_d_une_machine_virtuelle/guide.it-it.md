@@ -42,7 +42,7 @@ Lo step successivo consente di definire il nome della propria macchina e sceglie
 
 ![Localizzazione della macchina virtuale](images/vm03.png){.thumbnail}
 
-In seguito è possibile scegliere il cluster, l’host, il [pool di risorse](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link} o la [vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link}di destinazione.
+In seguito è possibile scegliere il cluster, l’host, il [pool di risorse](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html) o la [vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html)di destinazione.
 
 Nel nostro caso, la macchina virtuale sarà implementata secondo le regole DRS configurate e localizzata nella root del cluster.
 

@@ -102,11 +102,11 @@ Die Zugangssteuerung legt Einschränkungen für die Ressourcenverwendung fest. A
 
 Grundlage der Zugangssteuerung von vSphere HA ist die Anzahl der Hostfehler, die das Cluster tolerieren darf, während die Failover-Funktion weiterhin gewährleistet bleibt. Die Failover-Kapazität der Hosts kann auf drei verschiedene Arten definiert werden:
 
-- [Prozentsatz der Clusterressourcen](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external-link}
+- [Prozentsatz der Clusterressourcen](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html)
 
-- [Richtlinie für die Steckplatzgröße](https://docs.vmware.com/de/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external-link}
+- [Richtlinie für die Steckplatzgröße](https://docs.vmware.com/de/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html)
 
-- [dedizierte Failover-Hosts](https://docs.vmware.com/de/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external-link}
+- [dedizierte Failover-Hosts](https://docs.vmware.com/de/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html)
 
 #### Taktsignal-Datenspeicher
 
@@ -116,7 +116,7 @@ Wenn der Master-Host in einem HA-Cluster nicht über das Verwaltungsnetzwerk mit
 
 Sie können mehrere erweiterte Konfigurationseinstellungen in Ihrem Cluster verwenden.
 
-Die Einstellungen finden Sie auf [dieser Seite](https://docs.vmware.com/de/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external-link}.
+Die Einstellungen finden Sie auf [dieser Seite](https://docs.vmware.com/de/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html).
 
 ### HA-Regel
 

@@ -258,7 +258,7 @@ If you want to query this API with Python, this code sample with Python Request 
 
 ```bash
 export AI_APP_TOKEN=token_value
-``````
+```
 
 ``` python
 import requests

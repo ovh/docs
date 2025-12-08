@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer un chatbot de discussion RAG avec LangChain (EN)
 excerpt: Apprenez à construire un chatbot RAG (Retrieval Augmented Generation) en utilisant Python et LangChain
-updated: 2025-07-31
+updated: 2025-10-30
 ---
 
 > [!primary]
@@ -72,7 +72,7 @@ import argparse
 import time
 import os
 
-from langchain import hub
+from langchain_classic import hub
 
 from langchain_mistralai import ChatMistralAI
 

@@ -215,7 +215,7 @@ Then go to the <em>Multiplayer</em> menu and enter the address and port of our g
 
 And you are ready to play!
 
-![Let's frag](images/agones-006.png){.thumnbnail}
+![Let's frag](images/agones-006.png){.thumbnail}
 
 ### And on the server side?
 

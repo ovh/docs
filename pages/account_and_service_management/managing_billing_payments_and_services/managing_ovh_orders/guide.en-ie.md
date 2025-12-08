@@ -82,7 +82,7 @@ The window below will appear, allowing you to follow it in four steps.
 
 ### Apply the right of withdrawal
 
-Article 14.1.2 of our [General Terms of Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-gb.pdf){.action} states that "*Pursuant to the Consumer Contracts Regulations 2013, the Client enjoys the statutory right of cancellation. Client may exercise this right, without having to justify its reasons nor pay any penalties other than any return fees, within a period of fourteen (14) days from the day after the Order.*"
+Article 14.1.2 of our [General Terms of Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-gb.pdf) states that "*Pursuant to the Consumer Contracts Regulations 2013, the Client enjoys the statutory right of cancellation. Client may exercise this right, without having to justify its reasons nor pay any penalties other than any return fees, within a period of fourteen (14) days from the day after the Order.*"
 
 The terms and conditions for the right of withdrawal can be found in the remainder of that article.
 

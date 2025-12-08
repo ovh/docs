@@ -18,7 +18,7 @@ Toutefois, certains outils ou logiciels requièrent SSLv3 pour fonctionner, c'es
 
 Si vous utilisez l'un de ces outils, nous vous recommandons de prévoir leur mise à jour au plus vite afin de supprimer votre dépendance à SSLv3.
 
-Si vous utilisez cette technologie pour vos sauvegardes, notre solution [Veeam Backup](https://www.ovh.com/fr/private-cloud/options/veeam.xml){.external-link}, disponible en option, est intégralement gérée par OVH et respecte tous les standards de sécurité.
+Si vous utilisez cette technologie pour vos sauvegardes, notre solution [Veeam Backup](https://www.ovh.com/fr/private-cloud/options/veeam.xml), disponible en option, est intégralement gérée par OVH et respecte tous les standards de sécurité.
 
 **Ce guide montre comment vérifier l'état du protocole SSLv3 et comment l'utiliser**
 
@@ -26,7 +26,7 @@ Si vous utilisez cette technologie pour vos sauvegardes, notre solution [Veeam B
 
 ### Vérifier l'état du protocole SSLv3
 
-Vous devez tout d'abord vous rendre sur l'API [ovh.com](http://ovh.com){.external-link} : [http://api.ovh.com](http://api.ovh.com/){.external-link} et vous connecter à l'aide de votre identifiant client ([guide sur l'utilisation de l'API](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/connexion_a_l_api_ovh)
+Vous devez tout d'abord vous rendre sur l'API [ovh.com](http://ovh.com) : [http://api.ovh.com](http://api.ovh.com/) et vous connecter à l'aide de votre identifiant client ([guide sur l'utilisation de l'API](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/connexion_a_l_api_ovh)
 
 Dans la section /dedicatedCloud, repérez l'appel `GET /dedicatedCloud/{serviceName}`
 
@@ -42,9 +42,9 @@ Si vous devez impérativement ré-activer SSLv3, voici comment procéder.
 
 **Attention : La réactivation de SSLv3 nécessite au préalable la mise en place des configurations suivantes :**
 
-- [Restreindre l'accès au vCenter aux IPs autorisées](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite){.external-link}
+- [Restreindre l'accès au vCenter aux IPs autorisées](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite)
 
-- [Ajouter explicitement les IPs qui seront autorisées à se connecter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite){.external-link}
+- [Ajouter explicitement les IPs qui seront autorisées à se connecter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite)
 
 Vous devez tout d'abord vous rendre sur l'API ovh.com : <http://api.ovh.com> et vous connecter à l'aide de votre identifiant client ([guide sur l'utilisation de l'API](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/connexion_a_l_api_ovh)
 
@@ -60,7 +60,7 @@ La réponse de l'api vous indiquera "null". Cette réponse est tout à fait norm
 
 Dès lors que vous n'avez plus besoin de SSLv3, afin de garantir la sécurité de votre infrastructure Private Cloud, nous vous recommandons de désactiver cette option en suivant la procédure suivante.
 
-Vous devez tout d'abord vous rendre sur l'API ovh.com : [http://api.ovh.com](http://api.ovh.com/){.external-link} et vous connecter à l'aide de votre identifiant client ([guide sur l'utilisation de l'API](/pages/manage_and_operate/api/first-steps))
+Vous devez tout d'abord vous rendre sur l'API ovh.com : [http://api.ovh.com](http://api.ovh.com/) et vous connecter à l'aide de votre identifiant client ([guide sur l'utilisation de l'API](/pages/manage_and_operate/api/first-steps))
 
 Dans la section /dedicatedCloud, repérez l'appel `PUT /dedicatedCloud/{serviceName}`
 

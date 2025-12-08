@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer un disque supplementaire sur une instance
 excerpt: Découvrez comment attacher un nouveau volume à votre instance Public Cloud
-updated: 2025-06-27
+updated: 2025-09-19
 ---
 
 <style>
@@ -141,6 +141,13 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> Les types se terminant par -luks sont chiffrés (LUKS).
 >>
+>> > [!warning]
+>> >
+>> > La création d’un volume **-luks** génère automatiquement une clé dédiée.
+>> >
+>> > Ne modifiez pas et ne supprimez pas cette clé si elle est liée à un volume Block Storage. Cela rendrait les données de ce volume et tous ses snapshots définitivement irrécupérables.
+>> >
+>>
 >> Pour créer un volume block storage simple, vous avez besoin de 3 éléments :
 >>
 >> - Le nom du volume
@@ -267,6 +274,13 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> - High-speed-gen2-luks
 >>
 >> Les types se terminant par -luks sont chiffrés (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > La création d’un volume **-luks** génère automatiquement une clé dédiée.
+>> >
+>> > Ne modifiez pas et ne supprimez pas cette clé si elle est liée à un volume Block Storage. Cela rendrait les données de ce volume et tous ses snapshots définitivement irrécupérables.
+>> >
 >>
 >> Listez les types de volumes disponibles dans la région :
 >>

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2025-06-05
+updated: 2025-12-02
 ---
 
 <style>
@@ -405,7 +405,29 @@ The following are the currently supported transitions:
 
 ### Minimum object size
 
-OVHcloud Object Storage will prevent any transition to any storage tier for objects smaller than **128KB**.
+OVHcloud Object Storage will prevent any transition to any storage tier for objects smaller than **128KB**. However, you can allow transitions and expirations for smaller objects by using `ObjectSizeGreaterThan` or `ObjectSizeLessThan` parameters to filter with a minimum size or maximum size. In the following example, objects smaller than 128KB are also allowed to transition to Standard class.
+
+```json
+{
+  "Rules": [
+    {
+      "ID": "123456",
+      "Status": "Enabled",
+      "Filter": {
+        "And":{
+            "ObjectSizeGreaterThan": 1
+        }
+      },      
+      "Transitions": [
+        {
+          "Days": 30,
+          "StorageClass": "STANDARD"
+        }
+      ]
+     }
+  ]
+}
+```
 
 ### Minimum transition delay
 
@@ -634,7 +656,7 @@ In this scenario, there are two rules that direct OVHcloud Object Storage to per
 
 ### Using the CLI
 
-As a prerequisite, you must have a bucket containing data on which you want to apply the lifecycle configuration and have the necessary permissions (by default the bucket owner or the **s3:putLifecycleConfiguration** permission given via a user access policy) to do so.
+As a prerequisite, you must have a bucket containing data on which you want to apply the lifecycle configuration and have the necessary permissions (by default the bucket owner or the `s3:putLifecycleConfiguration` permission given via a user access policy) to do so.
 
 /// details | Create a lifecycle configuration file using your favorite editor.
 

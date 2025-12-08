@@ -18,7 +18,7 @@ Der Zugang zum vCenter kann eingeschränkt werden. Dazu wird nur bestimmten IP A
 
 Wenn die [ Regeln für den Zugang zum vCenter Einschränkungen vorsehen](/pages/bare_metal_cloud/managed_bare_metal/vcenter-modify-access-policy), müssen die IPs hinzugefügt werden, die sich mit dem Dienst verbinden dürfen.
 
-Dies erfolgt im [OVHcloud Kundencenter](/links/manager){.external-link}. Klicken Sie im Abschnitt `Bare Metal Cloud` auf die Rubrik `Managed Bare Metal`. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit` und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
+Dies erfolgt im [OVHcloud Kundencenter](/links/manager). Klicken Sie im Abschnitt `Bare Metal Cloud` auf die Rubrik `Managed Bare Metal`. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit` und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
 
 ![vCenter](images/restrictIP.png){.thumbnail}
 

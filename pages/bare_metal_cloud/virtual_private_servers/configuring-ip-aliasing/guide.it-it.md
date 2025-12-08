@@ -1,8 +1,22 @@
 ---
 title: Configurare un indirizzo IP in alias
 excerpt: Come aggiungere indirizzi Additional IP alla tua configurazione VPS
-updated: 2025-09-11
+updated: 2025-11-12
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
@@ -45,426 +59,449 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 |NETWORK_INTERFACE|Nome dell'interfaccia di rete|*eth0*, *ens3*|
 |ID|ID dell'alias IP, che inizia con *0* (in base al numero di indirizzi IP aggiuntivi da configurare)|*0*, *1*|
 
-### Debian 11
+Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcuni sistemi operativi sarà necessario installarlo prima di poterlo utilizzare. In tal caso, verrà richiesto di procedere all'installazione. È ovviamente possibile utilizzare l'editor di testo preferito.
 
-#### Step 1: disattiva la configurazione automatica della rete
-
-Apri il percorso per accedere al file seguente con un editor di testo:
-
-```bash
-sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-```
-
-Inserisci la riga seguente, poi registra e lascia l'editor.
-
-```console
-network: {config: disabled}
-```
-
-La creazione di questo file di configurazione impedisce l'esecuzione automatica delle modifiche apportate alla configurazione della tua rete.
-
-#### Step 2: crea un backup
-
-Per impostazione predefinita, il file di configurazione si trova nel percorso `etc/network/interfaces.d`.
-
-Nel nostro esempio, il nostro file si chiama `50-cloud-init`, quindi facciamo una copia del file `50-cloud-init` utilizzando il seguente comando:
-
-```bash
-sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
-```
-
-In caso di errore, è possibile annullare le modifiche utilizzando i comandi seguenti:
-
-```bash
-sudo rm -f /etc/network/interfaces.d/50-cloud-init
-sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
-```
-
-#### Step 3: modifica il file di configurazione
-
-Verifica il nome dell’interfaccia di rete con questo comando:
-
-```bash
-ip a
-```
-
-Aprire il file di configurazione di rete per modificarlo con il comando seguente:
-
-```bash
-sudo nano /etc/network/interfaces.d/50-cloud-init
-```
-
-Per configurare l'indirizzo Additional IP, aggiungere un'interfaccia virtuale o un alias Ethernet all'interfaccia di rete. Nel nostro esempio, la nostra interfaccia si chiama `eth0`, quindi il nostro primo alias è `eth0:0`. Per ogni indirizzo Additional IP che vuoi configurare.
-
-Non modificare le righe esistenti nel file di configurazione, aggiungi il tuo indirizzo Additional IP al file come segue, sostituendo `NETWORK_INTERFACE`, `ID` e `ADDITIONAL_IP` con i tuoi valori:
-
-```console
-auto NETWORK_INTERFACE:ID
-iface NETWORK_INTERFACE:ID inet static
-address ADDITIONAL_IP
-netmask 255.255.255.255
-```
-
-Se si configura più di un indirizzo Additional IP, il file di configurazione dovrebbe essere simile al seguente:
-
-```console
-auto NETWORK_INTERFACE:ID
-iface NETWORK_INTERFACE:ID inet static
-address ADDITIONAL_IP1
-address ADDITIONAL_IP2
-netmask 255.255.255.255
-```
-
-**Esempio**
-
-```console
-auto eth0:0
-iface eth0:0 inet static
-address 203.0.113.0
-netmask 255.255.255.255
-```
-
-#### Step 4: riavvia l'interfaccia
-
-Applica le modifiche utilizzando il seguente comando:
-
-```bash
-sudo systemctl restart networking
-```
-
-### Debian 12, Ubuntu 20.04 e versioni successive
-
-Il file di configurazione degli indirizzi Additional IP si trova nel file `/etc/netplan/`. In questo esempio, si chiama `50-cloud-init.yaml`.
-
-È consigliabile creare un file di configurazione separato per definire gli indirizzi Additional IP. In questo modo è possibile annullare le modifiche in caso di errore.
-
-#### Step 1: Crea il file di configurazione di rete
-
-Nel nostro esempio, il nostro file si chiama `51-cloud-init.yaml`:
-
-```bash
-sudo touch /etc/netplan/51-cloud-init.yaml
-```
-
-#### Step 2: modifica il file di configurazione
-
-Per verificare il nome della tua interfaccia di rete, esegui questo comando:
-
-```bash
-ip a
-```
-
-Apri il file di configurazione di rete per modificarlo con questo comando:
-
-```bash
-sudo nano /etc/netplan/51-cloud-init.yaml
-```
-
-Non modificare le linee esistenti nel file di configurazione. Aggiungi il tuo indirizzo Additional IP aggiungendo un secondo blocco di configurazione per l'interfaccia pubblica, come nell'esempio seguente:
-
-```yaml
-network:
-   version: 2
-   ethernets:
-       INTERFACE_NAME:
-           dhcp4: true
-           addresses:
-           - ADDITIONAL_IP/32    
-```
-
-Se è necessario configurare più di un indirizzo Additional IP, il file di configurazione dovrebbe essere simile al seguente:
-
-```yaml
-network:
-   version: 2
-   ethernets:
-       INTERFACE_NAME:
-           dhcp4: true
-           addresses:
-           - ADDITIONAL_IP1/32
-           - ADDITIONAL_IP2/32 
-```
-
-> [!warning]
->
-> È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura.
+> [!success]
+> Selezionare la scheda corrispondente al proprio sistema operativo.
 >
 
-**Esempio**
-
-```yaml
-network:
-   version: 2
-   ethernets:
-       eth0:
-           dhcp4: true
-           addresses:
-           - 203.0.113.0/32
-```
-
-Salva e chiudi il file.
-
-#### Step 3: applicare la nuova configurazione di rete
-
-Per testare la tua configurazione utilizza questo comando:
-
-```bash
-sudo netplan try
-```
-
-Se è corretta, applicala utilizzando il seguente comando:
-
-```bash
-sudo netplan apply
-```
-
-Ripeti questa procedura per ogni indirizzo Additional IP.
-
-### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
-
-Il file di configurazione principale si trova nella cartella `/etc/sysconfig/network-scripts/`. In questo esempio, si chiama `ifcfg-eth0`. Prima di apportare modifiche, verificare il nome effettivo del file nella cartella.
-
-Per ogni indirizzo Additional IP da configurare, crea un file di configurazione separato con le seguenti impostazioni: `ifcfg-NETWORK_INTERFACE:ID`. Dove `NETWORK_INTERFACE` rappresenta l’interfaccia fisica e `ID` rappresenta l’interfaccia di rete virtuale o l’alias ethernet che inizia con un valore di 0. Ad esempio, per la nostra interfaccia chiamata `eth0` il primo alias è `eth0:0`, il secondo alias è `eth0:1`, ecc.
-
-#### Step 1: determina l’interfaccia
-
-Verifica il nome dell’interfaccia di rete con questo comando:
-
-```bash
-ip a
-```
-
-#### Step 2: crea il file di configurazione
-
-Creare innanzitutto il file di configurazione. Sostituisci `NETWORK_INTERFACE:ID` con i tuoi valori.
-
-```bash
-sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
-```
-
-
-Successivamente, modifica il file con il contenuto seguente, sostituendo `NETWORK_INTERFACE:ID` e `ADDITIONAL_IP` con i tuoi valori:
-
-```console
-DEVICE=NETWORK_INTERFACE:ID
-BOOTPROTO=static
-IPADDR=ADDITIONAL_IP
-NETMASK=255.255.255.255
-BROADCAST=ADDITIONAL_IP
-ONBOOT=yes
-```
-
-**Esempio**
-
-```console
-DEVICE=NETWORK_INTERFACE:ID
-BOOTPROTO=static
-IPADDR=203.0.113.0
-NETMASK=255.255.255.255
-BROADCAST=203.0.113.0
-ONBOOT=yes
-```
-
-#### Step 3: riavvia l’interfaccia
-
-```bash
-sudo systemctl restart network
-```
-
-#### Per AlmaLinux e Rocky Linux
-
-```bash
-sudo systemctl restart Network Manager
-```
-
-### Fedora 37 e versioni successive
-
-Fedora ora utilizza i file chiave. In precedenza NetworkManager memorizzava i profili di rete in formato ifcfg in questa directory: `/etc/sysconfig/network-scripts/`. Tuttavia, il formato ifcfg è ora obsoleto. Per impostazione predefinita, NetworkManager non crea più nuovi profili in questo formato. Il file di configurazione è ora disponibile in `/etc/NetworkManager/system-connections/`.
-
-#### Step 1: crea un backup
-
-Nel nostro esempio, il nostro file si chiama `cloud-init-eno1.nmconnection`, quindi facciamo una copia del file `cloud-init-eno1.nmconnection` utilizzando il seguente comando:
-
-```bash
-sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
-```
-
-In caso di errore, è possibile annullare le modifiche utilizzando i comandi seguenti:
-
-```bash
-sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
-sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
-```
-
-#### Step 2: modifica il file di configurazione
-
-> [!primary]
-> Ti ricordiamo che il nome del file di rete nel nostro esempio potrebbe essere diverso dal tuo. Adatta i comandi al tuo nome di file.
->
-
-```bash
-sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
-```
-
-Non modificare le righe esistenti nel file di configurazione, aggiungi l’Additional IP al file come segue, sostituendo `ADDITIONAL_IP/32` con i tuoi valori:
-
-```console
-[ipv4]
-method=auto
-may-fail=false
-address1=ADDITIONAL_IP/32
-```
-
-Per configurare due indirizzi Additional IP, la configurazione dovrebbe essere simile alla seguente:
-
-```console
-[ipv4]
-method=auto
-may-fail=false
-address1=ADDITIONAL_IP1/32
-address2=ADDITIONAL_IP2/32
-```
-
-**Esempio**
-
-```console
-[ipv4]
-method=auto
-may-fail=false
-address1=203.0.113.0/32
-```
-
-#### Step 3: riavvia l’interfaccia
-
-Riavvia l’interfaccia:
-
-```bash
-sudo systemctl restart Network Manager
-```
-
-### cPanel
-
-#### Step 1: accedi alla sezione di gestione degli IP del WHM
-
-Dallo Spazio Cliente WHM, clicca su `IP Functions`{.action} e seleziona `Add a New IP Address`{.action} nel menu a sinistra.
-
-![Add new IP](images/cpanel-alma-1.png){.thumbnail}
-
-#### Step 2: aggiungi le informazioni degli Additional IP
-
-Inserisci il tuo indirizzo Additional IP nel campo "New IP or IP range to add" nel formato "xxx.xxx.xxx.xxx".
-
-Seleziona `255.255.255.255` come subnet mask e clicca su `Submit`{.action}.
-
-![enter new IP information](images/cpanel-alma-2.png){.thumbnail}
-
-> [!warning]
->
-> Attenzione: se hai diversi IP da configurare sullo stesso blocco e li aggiungi tutti contemporaneamente, il sistema WHM ti obbligherà a utilizzare la subnet mask `255.255.255.0`. Non è consigliabile utilizzare questa configurazione, è necessario aggiungere ogni IP singolarmente per poter utilizzare la subnet mask appropriata `255.255.255.255`.
->
-
-#### Step 3: verifica la configurazione IP corrente
-
-Nella sezione `IP Functions`{.action}, clicca su `Show or Delete Current IP Addresses`{.action} per verificare che l’indirizzo Additional IP sia stato aggiunto correttamente.
-
-![check configured IP](images/cpanel-alma-3.png){.thumbnail}
-
-### Plesk
-
-#### Step 1: accedere alla gestione IP di Plesk
-
-Nel pannello di configurazione Plesk, seleziona `Tools & Settings`{.action} nella barra laterale sinistra.
-
-![accesso alla gestione degli indirizzi IP](images/pleskip1.png){.thumbnail}
-
-Clicca su `IP Addresses`{.action} con **Tools & Settings**.
-
-#### Step 2: aggiungi le informazioni IP supplementari
-
-In questa sezione, clicca sul pulsante `Add IP Address`{.action}.
-
-![aggiungi informazioni IP](images/Plesk-2024-vps.png){.thumbnail}
-
-Inserisci il tuo indirizzo Additional IP nella forma `xxx.xxx.xxx.xxx/32` nel campo "IP address and subnet mask" e clicca su `OK`{.action}.
-
-![aggiungi informazioni IP](images/Plesk-additional-ip.png){.thumbnail}
-
-#### Step 3: verifica la configurazione IP corrente
-
-Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, accedi alla sezione "IP Addresses".
-
-![configurazione IP attuale](images/plesk-final-configuration.png){.thumbnail}
-
-### Windows Server 2016
-
-#### Step 1: verifica la configurazione di rete
-
-Clicca con il tasto destro sul pulsante `Start Menu`{.action} e apri `Run`{.action}.
-
-Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga di comando.
-
-![compromesso](images/vps_win07.png){.thumbnail}
-
-Per recuperare la configurazione IP corrente, inserisci `ipconfig` nel prompt dei comandi.
-
-```console
-C:\Users\Administrator>ipconfig
-Windows IP Configuration
-Ethernet adapter Ethernet:
-   Connection-specific DNS Suffix  . : openstacklocal
-   Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
-   IPv4 Address. . . . . . . . . . . : 192.0.2.29
-   Subnet Mask . . . . . . . . . . . : 255.255.255.255
-   Default Gateway . . . . . . . . . : 192.0.2.1
-```
-
-#### Step 2: modifica le proprietà IPv4
-
-1. Accedi al menu `Start`{.action}, poi `Control Panel`{.action}, `Network and Internet`{.action}, `Network and Sharing Centre`{.action} e `Change Adapter Settings`{.action} nella barra di sinistra;
-2. clicca con il tasto destro su `Ethernet`{.action};
-3. clicca su `Properties`{.action};
-4. Seleziona `Internet Protocol Version 4 (TCP/IPv4)`{.action} e clicca su `Properties`{.action};
-5. Clicca su `Use the following IP address`{.action} e inserisci l'IP principale del tuo server, la subnet mask e il gateway predefinito ottenuto con il comando `ipconfig`{.action} qui sopra. Nella casella "Preferred DNS Server" digitare "213.186.33.99".
-
-![change the ip configuration](images/configure-main-ip.png){.thumbnail}
-
-> [!warning]
->
-> Attenzione: se le informazioni inserite non sono corrette, il server non sarà più raggiungibile. Sarà necessario effettuare le correzioni tramite il KVM.
->
-
-#### Step 3: aggiungi l'indirizzo Additional IP nelle Impostazioni TCP/IP avanzate
-
-Nella nuova finestra, clicca su `Add...`{.action} sotto "IP addresses". Inserisci il tuo indirizzo Additional IP e la subnet mask (255.255.255.255).
-
-![sezione di configurazione avanzata](images/configure-additional-ip.png){.thumbnail}
-
-Per confermare, clicca su `Add`{.action}.
-
-![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
-
-Fare quindi clic su `OK`{.action} per applicare la configurazione.
-
-![Configurazione del trasferimento IP](images/final-configuration.png){.thumbnail}
-
-Si perderà la connessione al server per alcuni secondi.
-
-#### Step 4: verifica la nuova configurazione di rete
-
-Apri il prompt dei comandi (cmd) e inserisci `ipconfig`. La configurazione deve includere il nuovo indirizzo Additional IP.
-
-```console
-C:\Users\Administrator>ipconfig
-Windows IP Configuration
-Ethernet adapter Ethernet:
-   Connection-specific DNS Suffix  . :
-   Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
-   IPv4 Address. . . . . . . . . . . : 192.0.2.29
-   Subnet Mask . . . . . . . . . . . : 255.255.255.255
-   IPv4 Address. . . . . . . . . . . : 203.0.113.0
-   Subnet Mask . . . . . . . . . . . : 255.255.255.255
-   Default Gateway . . . . . . . . . : 192.0.2.1
-```
+> [!tabs]
+> Debian 11
+>> **Debian 11**
+>>
+>> **Step 1: disattiva la configurazione automatica della rete**
+>>
+>> Apri il percorso per accedere al file seguente con un editor di testo:
+>>
+>> ```bash
+>> sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+>> ```
+>>
+>> Inserisci la riga seguente, poi registra e lascia l'editor.
+>>
+>> ```console
+>> network: {config: disabled}
+>> ```
+>>
+>> La creazione di questo file di configurazione impedisce l'esecuzione automatica delle modifiche apportate alla configurazione della tua rete.
+>>
+>> **Step 2: crea un backup**
+>>
+>> Per impostazione predefinita, il file di configurazione si trova nel percorso `etc/network/interfaces.d`.
+>>
+>> Nel nostro esempio, il nostro file si chiama `50-cloud-init`, quindi facciamo una copia del file `50-cloud-init` utilizzando il seguente comando:
+>>
+>> ```bash
+>> sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+>> ```
+>>
+>> In caso di errore, è possibile annullare le modifiche utilizzando i comandi seguenti:
+>>
+>> ```bash
+>> sudo rm -f /etc/network/interfaces.d/50-cloud-init
+>> sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
+>> ```
+>>
+>> **Step 3: modifica il file di configurazione**
+>>
+>> Verifica il nome dell’interfaccia di rete con questo comando:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> Aprire il file di configurazione di rete per modificarlo con il comando seguente:
+>>
+>> ```bash
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
+>> ```
+>>
+>> Per configurare l'indirizzo Additional IP, aggiungere un'interfaccia virtuale o un alias Ethernet all'interfaccia di rete. Nel nostro esempio, la nostra interfaccia si chiama `eth0`, quindi il nostro primo alias è `eth0:0`. Per ogni indirizzo Additional IP che vuoi configurare.
+>>
+>> Non modificare le righe esistenti nel file di configurazione, aggiungi il tuo indirizzo Additional IP al file come segue, sostituendo `NETWORK_INTERFACE`, `ID` e `ADDITIONAL_IP` con i tuoi valori:
+>>
+>> ```console
+>> auto NETWORK_INTERFACE:ID
+>> iface NETWORK_INTERFACE:ID inet static
+>> address ADDITIONAL_IP
+>> netmask 255.255.255.255
+>> ```
+>>
+>> Se si configura più di un indirizzo Additional IP, il file di configurazione dovrebbe essere simile al seguente:
+>>
+>> ```console
+>> auto NETWORK_INTERFACE:ID
+>> iface NETWORK_INTERFACE:ID inet static
+>> address ADDITIONAL_IP1
+>> address ADDITIONAL_IP2
+>> netmask 255.255.255.255
+>> ```
+>>
+>> /// details | **Esempio**
+>>
+>> ```console
+>> auto eth0:0
+>> iface eth0:0 inet static
+>> address 203.0.113.0
+>> netmask 255.255.255.255
+>> ```
+>> ///
+>>
+>> **Step 4: riavvia l'interfaccia**
+>>
+>> Applica le modifiche utilizzando il seguente comando:
+>>
+>> ```bash
+>> sudo systemctl restart networking
+>> ```
+>>
+> Debian 12, Ubuntu 20.04
+>> **Debian 12, Ubuntu 20.04 e versioni successive**
+>>
+>> Il file di configurazione degli indirizzi Additional IP si trova nel file `/etc/netplan/`. In questo esempio, si chiama `50-cloud-init.yaml`.
+>>
+>> È consigliabile creare un file di configurazione separato per definire gli indirizzi Additional IP. In questo modo è possibile annullare le modifiche in caso di errore.
+>>
+>> Step 1: Crea il file di configurazione di rete
+>>
+>> Nel nostro esempio, il nostro file si chiama `51-cloud-init.yaml`:
+>>
+>> ```bash
+>> sudo touch /etc/netplan/51-cloud-init.yaml
+>> ```
+>>
+>> Step 2: modifica il file di configurazione
+>>
+>> Per verificare il nome della tua interfaccia di rete, esegui questo comando:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> Apri il file di configurazione di rete per modificarlo con questo comando:
+>>
+>> ```bash
+>> sudo nano /etc/netplan/51-cloud-init.yaml
+>> ```
+>>
+>> Non modificare le linee esistenti nel file di configurazione. Aggiungi il tuo indirizzo Additional IP aggiungendo un secondo blocco di configurazione per l'interfaccia pubblica, come nell'esempio seguente:
+>>
+>> ```yaml
+>> network:
+>>    version: 2
+>>    ethernets:
+>>        INTERFACE_NAME:
+>>            dhcp4: true
+>>            addresses:
+>>            - ADDITIONAL_IP1/32    
+>> ```
+>>
+>> Se è necessario configurare più di un indirizzo Additional IP, il file di configurazione dovrebbe essere simile al seguente:
+>>
+>> ```yaml
+>> network:
+>>    version: 2
+>>    ethernets:
+>>        INTERFACE_NAME:
+>>            dhcp4: true
+>>            addresses:
+>>            - ADDITIONAL_IP1/32
+>>            - ADDITIONAL_IP2/32
+>> ```
+>>
+>> > [!warning]
+>> >
+>> > È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura.
+>> >
+>>
+>> /// details | **Esempio**
+>>
+>> ```yaml
+>> network:
+>>    version: 2
+>>    ethernets:
+>>        eth0:
+>>            dhcp4: true
+>>            addresses:
+>>            - 203.0.113.0/32
+>> ```
+>> ///
+>>
+>> Salva e chiudi il file.
+>>
+>> **Step 3: applicare la nuova configurazione di rete**
+>>
+>> Per testare la tua configurazione utilizza questo comando:
+>>
+>> ```bash
+>> sudo netplan try
+>> ```
+>>
+>> Se è corretta, applicala utilizzando il seguente comando:
+>>
+>> ```bash
+>> sudo netplan apply
+>> ```
+>>
+>> Ripeti questa procedura per ogni indirizzo Additional IP.
+>>
+> AlmaLinux / Rocky Linux
+>> **AlmaLinux (8/9), Rocky Linux (8/9)**
+>>
+>> Il file di configurazione principale si trova nella cartella `/etc/sysconfig/network-scripts/`. In questo esempio, si chiama `ifcfg-eth0`. Prima di apportare modifiche, verificare il nome effettivo del file nella cartella.
+>>
+>> Per ogni indirizzo Additional IP da configurare, crea un file di configurazione separato con le seguenti impostazioni: `ifcfg-NETWORK_INTERFACE:ID`. Dove `NETWORK_INTERFACE` rappresenta l’interfaccia fisica e `ID` rappresenta l’interfaccia di rete virtuale o l’alias ethernet che inizia con un valore di 0. Ad esempio, per la nostra interfaccia chiamata `eth0` il primo alias è `eth0:0`, il secondo alias è `eth0:1`, ecc.
+>>
+>> **Step 1: determina l’interfaccia**
+>>
+>> Verifica il nome dell’interfaccia di rete con questo comando:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> **Step 2: crea il file di configurazione**
+>>
+>> Creare innanzitutto il file di configurazione. Sostituisci `NETWORK_INTERFACE:ID` con i tuoi valori.
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+>> ```
+>>
+>> Successivamente, modifica il file con il contenuto seguente, sostituendo `NETWORK_INTERFACE:ID` e `ADDITIONAL_IP` con i tuoi valori:
+>>
+>> ```console
+>> DEVICE=NETWORK_INTERFACE:ID
+>> ONBOOT=yes
+>> BOOTPROTO=none # For CentOS use "static"
+>> IPADDR=ADDITIONAL_IP
+>> NETMASK=255.255.255.255
+>> BROADCAST=ADDITIONAL_IP
+>> ```
+>>
+>> /// details | **Esempio**
+>>
+>> ```console
+>> DEVICE=eth0:0
+>> ONBOOT=yes
+>> BOOTPROTO=none # For CentOS use "static"
+>> IPADDR=203.0.113.0
+>> NETMASK=255.255.255.255
+>> BROADCAST=203.0.113.0
+>> ```
+>> ///
+>>
+>> **Step 3: riavvia l’interfaccia**
+>>
+>> ```bash
+>> sudo systemctl restart network
+>> ```
+>>
+>> Per AlmaLinux e Rocky Linux
+>>
+>> ```bash
+>> sudo systemctl restart Network Manager
+>> ```
+>>
+> Fedora 42
+>> **Fedora 42**
+>>
+>> Fedora ora utilizza i file chiave. In precedenza NetworkManager memorizzava i profili di rete in formato ifcfg in questa directory: `/etc/sysconfig/network-scripts/`. Tuttavia, il formato ifcfg è ora obsoleto. Per impostazione predefinita, NetworkManager non crea più nuovi profili in questo formato. Il file di configurazione è ora disponibile in `/etc/NetworkManager/system-connections/`.
+>>
+>> **Step 1: crea un backup**
+>>
+>> Nel nostro esempio, il nostro file si chiama `cloud-init-eno1.nmconnection`, quindi facciamo una copia del file `cloud-init-eno1.nmconnection` utilizzando il seguente comando:
+>>
+>> ```bash
+>> sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+>> ```
+>>
+>> In caso di errore, è possibile annullare le modifiche utilizzando i comandi seguenti:
+>>
+>> ```bash
+>> sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+>> sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+>> ```
+>>
+>> **Step 2: modifica il file di configurazione**
+>>
+>> > [!primary]
+>> > Ti ricordiamo che il nome del file di rete nel nostro esempio potrebbe essere diverso dal tuo. Adatta i comandi al tuo nome di file.
+>> >
+>>
+>> ```bash
+>> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+>> ```
+>>
+>> Non modificare le righe esistenti nel file di configurazione, aggiungi l’Additional IP al file come segue, sostituendo `ADDITIONAL_IP/32` con i tuoi valori:
+>>
+>> ```console
+>> [ipv4]
+>> method=auto
+>> may-fail=false
+>> address1=ADDITIONAL_IP/32
+>> ```
+>>
+>> Per configurare due indirizzi Additional IP, la configurazione dovrebbe essere simile alla seguente:
+>>
+>> ```console
+>> [ipv4]
+>> method=auto
+>> may-fail=false
+>> address1=ADDITIONAL_IP1/32
+>> address2=ADDITIONAL_IP2/32
+>> ```
+>>
+>> /// details | **Esempio**
+>> 
+>> ```console
+>> [ipv4]
+>> method=auto
+>> may-fail=false
+>> address1=203.0.113.0/32
+>> ```
+>> ///
+>>
+>> **Step 3: riavvia l’interfaccia**
+>>
+>> Riavvia l’interfaccia:
+>>
+>> ```bash
+>> sudo systemctl restart Network Manager
+>> ```
+>>
+> cPanel
+>> **cPanel**
+>>
+>> **Step 1: accedi alla sezione di gestione degli IP del WHM**
+>>
+>> Dallo Spazio Cliente WHM, clicca su `IP Functions`{.action} e seleziona `Add a New IP Address`{.action} nel menu a sinistra.
+>>
+>> ![Add new IP](images/cpanel-alma-1.png){.thumbnail}
+>>
+>> Step 2: aggiungi le informazioni degli Additional IP
+>>
+>> Inserisci il tuo indirizzo Additional IP nel campo "New IP or IP range to add" nel formato "xxx.xxx.xxx.xxx".
+>>
+>> Seleziona `255.255.255.255` come subnet mask e clicca su `Submit`{.action}.
+>>
+>> ![enter new IP information](images/cpanel-alma-2.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Attenzione: se hai diversi IP da configurare sullo stesso blocco e li aggiungi tutti contemporaneamente, il sistema WHM ti obbligherà a utilizzare la subnet mask `255.255.255.0`. Non è consigliabile utilizzare questa configurazione, è necessario aggiungere ogni IP singolarmente per poter utilizzare la subnet mask appropriata `255.255.255.255`.
+>> >
+>>
+>> **Step 3: verifica la configurazione IP corrente**
+>>
+>> Nella sezione `IP Functions`{.action}, clicca su `Show or Delete Current IP Addresses`{.action} per verificare che l’indirizzo Additional IP sia stato aggiunto correttamente.
+>>
+>> ![check configured IP](images/cpanel-alma-3.png){.thumbnail}
+>>
+> Plesk
+>> **Plesk**
+>>
+>> **Step 1: accedere alla gestione IP di Plesk**
+>>
+>> Nel pannello di configurazione Plesk, seleziona `Tools & Settings`{.action} nella barra laterale sinistra.
+>>
+>> ![accesso alla gestione degli indirizzi IP](images/pleskip1.png){.thumbnail}
+>>
+>> Clicca su `IP Addresses`{.action} con **Tools & Settings**.
+>>
+>> **Step 2: aggiungi le informazioni IP supplementari**
+>>
+>> In questa sezione, clicca sul pulsante `Add IP Address`{.action}.
+>>
+>> ![aggiungi informazioni IP](images/Plesk-2024-vps.png){.thumbnail}
+>>
+>> Inserisci il tuo indirizzo Additional IP nella forma `xxx.xxx.xxx.xxx/32` nel campo "IP address and subnet mask" e clicca su `OK`{.action}.
+>>
+>> ![aggiungi informazioni IP](images/Plesk-additional-ip.png){.thumbnail}
+>>
+>> **Step 3: verifica la configurazione IP corrente**
+>>
+>> Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, accedi alla sezione "IP Addresses".
+>>
+>> ![configurazione IP attuale](images/plesk-final-configuration.png){.thumbnail}
+>>
+> Windows Server
+>> **Windows Server**
+>>
+>> **Step 1: verifica la configurazione di rete**
+>>
+>> Clicca con il tasto destro sul pulsante `Start Menu`{.action} e apri `Run`{.action}.
+>>
+>> Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga di comando.
+>>
+>> ![compromesso](images/vps_win07.png){.thumbnail}
+>>
+>> Per recuperare la configurazione IP corrente, inserisci `ipconfig` nel prompt dei comandi.
+>>
+>> ```console
+>> C:\Users\Administrator>ipconfig
+>>
+>> Windows IP Configuration
+>>
+>> Ethernet adapter Ethernet:
+>>
+>>    Connection-specific DNS Suffix  . : openstacklocal
+>>    Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
+>>    IPv4 Address. . . . . . . . . . . : 192.0.2.29
+>>    Subnet Mask . . . . . . . . . . . : 255.255.255.255
+>>    Default Gateway . . . . . . . . . : 192.0.2.1
+>> ```
+>>
+>> **Step 2: modifica le proprietà IPv4**
+>>
+>> 1. Accedi al menu `Start`{.action}, poi `Control Panel`{.action}, `Network and Internet`{.action}, `Network and Sharing Centre`{.action} e `Change Adapter Settings`{.action} nella barra di sinistra;
+>> 2. clicca con il tasto destro su `Ethernet`{.action};
+>> 3. clicca su `Properties`{.action};
+>> 4. Seleziona `Internet Protocol Version 4 (TCP/IPv4)`{.action} e clicca su `Properties`{.action};
+>> 5. Clicca su `Use the following IP address`{.action} e inserisci l'IP principale del tuo server, la subnet mask e il gateway predefinito ottenuto con il comando `ipconfig`{.action} qui sopra. Nella casella "Preferred DNS Server" digitare "213.186.33.99".
+>>
+>> ![change the ip configuration](images/configure-main-ip.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Attenzione: se le informazioni inserite non sono corrette, il server non sarà più raggiungibile. Sarà necessario effettuare le correzioni tramite il KVM.
+>> >
+>>
+>> **Step 3: aggiungi l'indirizzo Additional IP nelle Impostazioni TCP/IP avanzate**
+>>
+>> Nella nuova finestra, clicca su `Add...`{.action} sotto "IP addresses". Inserisci il tuo indirizzo Additional IP e la subnet mask (255.255.255.255).
+>>
+>> ![sezione di configurazione avanzata](images/configure-additional-ip.png){.thumbnail}
+>>
+>> Per confermare, clicca su `Add`{.action}.
+>>
+>> ![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
+>>
+>> Fare quindi clic su `OK`{.action} per applicare la configurazione.
+>>
+>> ![Configurazione del trasferimento IP](images/final-configuration.png){.thumbnail}
+>>
+>> Si perderà la connessione al server per alcuni secondi.
+>>
+>> **Step 4: verifica la nuova configurazione di rete**
+>>
+>> Apri il prompt dei comandi (cmd) e inserisci `ipconfig`. La configurazione deve includere il nuovo indirizzo Additional IP.
+>>
+>> ```console
+>> C:\Users\Administrator>ipconfig
+>>
+>> Windows IP Configuration
+>>
+>> Ethernet adapter Ethernet:
+>>
+>>    Connection-specific DNS Suffix  . :
+>>    Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
+>>    IPv4 Address. . . . . . . . . . . : 192.0.2.29
+>>    Subnet Mask . . . . . . . . . . . : 255.255.255.255
+>>    IPv4 Address. . . . . . . . . . . : 203.0.113.0
+>>    Subnet Mask . . . . . . . . . . . : 255.255.255.255
+>>    Default Gateway . . . . . . . . . : 192.0.2.1
+>> ```
 
 ### Diagnostica
 
@@ -484,4 +521,4 @@ Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

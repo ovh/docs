@@ -1,7 +1,7 @@
 ---
 title: Instalar o WordPress numa instância
 excerpt: Saiba como utilizar uma instância Public Cloud para alojar websites WordPress
-updated: 2023-05-17
+updated: 2025-09-23
 ---
 
 > [!primary]
@@ -135,10 +135,10 @@ A configuração de uma firewall (*iptables*) permite melhorar a segurança da s
 debian@instance:~$ sudo apt install ufw
 ```
 
-Na lista de aplicações, os perfis em causa devem conter a menção "WWW":
+Na lista de aplicações disponíveis para o UFW, os perfis que correspondem a um servidor web são nomeados "WWW" em uma instância Debian e "Apache" em uma instância Ubuntu. Esses perfis permitem abrir as portas necessárias para o tráfego HTTP e HTTPS de forma simples e segura.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # ou grep Apache
   WWW
   WWW Cache
   WWW Full

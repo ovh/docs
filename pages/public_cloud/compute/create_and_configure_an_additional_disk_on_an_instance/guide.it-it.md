@@ -1,7 +1,7 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-updated: 2025-06-27
+updated: 2025-09-19
 ---
 
 <style>
@@ -142,6 +142,13 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 >>
 >> I tipi che terminano con -luks sono crittografati (LUKS).
 >>
+>> > [!warning]
+>> >
+>> > La creazione di un volume **-luks** genera automaticamente una chiave dedicata.
+>> >
+>> > Non modificare o eliminare questa chiave se è associata a un volume Block Storage. Questo renderebbe i dati di questo volume e tutti gli Snapshot definitivamente irrecuperabili.
+>> >
+>>
 >> Per creare un volume block storage semplice, sono necessari 3 elementi:
 >>
 >> - Il nome del volume
@@ -268,6 +275,13 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 >> - High-speed-gen2-luks
 >>
 >> I tipi che terminano con -luks sono crittografati (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > La creazione di un volume **-luks** genera automaticamente una chiave dedicata.
+>> >
+>> > Non modificare o eliminare questa chiave se è associata a un volume Block Storage. Questo renderebbe i dati di questo volume e tutti gli Snapshot definitivamente irrecuperabili.
+>> >
 >>
 >> Elencare i tipi di volumi disponibili nell'area:
 >>

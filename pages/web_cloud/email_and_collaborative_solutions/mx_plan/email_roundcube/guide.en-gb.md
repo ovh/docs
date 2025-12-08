@@ -1,6 +1,6 @@
 ---
 title: Using your email account via the Roundcube webmail interface
-updated: 2024-03-26
+updated: 2025-11-12
 ---
 
 ## Objective
@@ -13,6 +13,22 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 
 - An OVHcloud **MX Plan** email solution, included in our [web hosting plans](/links/web/hosting), included in a [100M free hosting](/links/web/domains-free-hosting) hosting plan, or ordered separately as a standalone solution.
 - Access to the MX Plan email account you would like to use; for more information, please refer to our guide [Getting started with an MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Your OVHcloud email solution **MX Plan** must use the webmail technology **Roundcube**. To identify it, follow the instructions below.
+
+> [!primary]
+> 
+> **How do I identify the technology used on my MX Plan solution?**
+>
+> The email technology used for your MX Plan solution is characterized by its webmail interface. To identify it via the OVHcloud Control Panel, follow this path:
+>
+> 1. Log in to your [OVHcloud Control Panel](/links/manager).
+> 1. Go to the `Web Cloud`{.action} section.
+> 1. Click `MX Plan`{.action}.
+> 1. Select the domain concerned.
+> 1. From the `General Information`{.action} tab, select by default.
+> 1. Note the technology used as **Webmail**.
+>
+> ![MX Plan](images/technology-email.png){.thumbnail .w-500}
 
 ## Instructions
 

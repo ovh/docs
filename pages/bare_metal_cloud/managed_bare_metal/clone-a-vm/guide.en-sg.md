@@ -42,9 +42,9 @@ Set the storage location (disk space) for this VM.
 
 The virtual disk type is on "Thin Provision", which means that a virtual disk will be created but will only use the actual disk space used on the storage, regardless of the disk space previously used on the source VM.
 
-More information about disk types can be found in [this guide](/pages/bare_metal_cloud/managed_bare_metal/choosing-disk-type){.external-link}.
+More information about disk types can be found in [this guide](/pages/bare_metal_cloud/managed_bare_metal/choosing-disk-type).
 
-You will be able to choose, via the `VM Storage Policy` row, the default storage policy if you have datastores, or the [VM encryption](/pages/bare_metal_cloud/managed_bare_metal/vm_encrypt){.external-link} option.
+You will be able to choose, via the `VM Storage Policy` row, the default storage policy if you have datastores, or the [VM encryption](/pages/bare_metal_cloud/managed_bare_metal/vm_encrypt) option.
 
 ![clone a VM](images/clonevm04.png){.thumbnail}
 

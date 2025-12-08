@@ -11,11 +11,13 @@ updated: 2025-04-28
 
 ## Introduction
 
-Want more control over your code assistant? Looking to integrate your own LLM configuration and use models hosted on **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**?
+### What is Continue?
 
-This tutorial shows you how to build your own developer assistant using **[Continue](https://www.continue.dev/)**, an open-source IDE plugin that works with both VSCode and JetBrains IDEs, in combination with OVHcloud.
+**[Continue](https://www.continue.dev/)** is an IDE‑agnostic AI assistant that brings chat, code generation, and autocomplete capabilities directly into your editor. Compatible with VS Code and JetBrains IDEs (e.g., IntelliJ, PyCharm), Continue empowers you to plug in any compatible LLM hosted on **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
 
-Continue lets you plug in your own LLMs, enabling full control over which models you use and how they interact with your code.
+Continue enables you to configure and use your own LLMs, giving you full control over the models you use and how they interact with your code.
+
+This tutorial describes how to configure Continue to connect to AI Endpoints LLMs, allowing these models to integrate with your editor to enhance coding efficiency, accuracy, and productivity.
 
 ## Requirements
 
@@ -26,76 +28,46 @@ Continue lets you plug in your own LLMs, enabling full control over which models
 
 ### Install Continue
 
-Continue is distributed as an IDE plugin and supports:
-
-- Visual Studio Code
-- JetBrains IDEs (e.g. IntelliJ, PyCharm)
-
 Follow the [official Continue installation instructions](https://docs.continue.dev/docs/getting-started/install) for your IDE.
 
 Once installed, Continue will share the same configuration across your IDEs.
 
 ### Configure Continue with AI Endpoints
 
-Continue uses a JSON-based configuration file to manage:
+Continue uses a YAML-based configuration file to manage:
 
 - Chatbot tool models
 - Tab autocomplete models
 
 You can customize this configuration file to connect the plugin to AI Endpoints:
 
-```json
-{
-  "tabAutocompleteModel": {
-    "title": "Qwen2.5-Coder-32B-Instruct",
-    "model": "Qwen2.5-Coder-32B-Instruct",
-    "apiBase": "https://qwen-2-5-coder-32b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1",
-    "provider": "openai",
-    "useLegacyCompletionsEndpoint": true,
-    "apiKey": "<your API key>"
-  },
-  "models": [
-    {
-      "title": "Meta-Llama-3_3-70B-Instruct",
-      "model": "Meta-Llama-3_3-70B-Instruct",
-      "apiBase": "https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1",
-      "provider": "openai",
-      "useLegacyCompletionsEndpoint": false,
-      "apiKey": "<your API key>"
-    },
-    {
-      "title": "Qwen2.5-Coder-32B-Instruct",
-      "model": "Qwen2.5-Coder-32B-Instruct",
-      "apiBase": "https://qwen-2-5-coder-32b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1",
-      "provider": "openai",
-      "useLegacyCompletionsEndpoint": false,
-      "apiKey": "<your API key>"
-    }
-  ] 
-  // ... 
-}
+# Continue configuration for OVHcloud AI Endpoints
+
+```yaml
+name: ide-configuration
+version: 0.0.1
+schema: v1
+models:
+  - name: Meta-Llama-3_3-70B-Instruct
+    provider: openai
+    model: Meta-Llama-3_3-70B-Instruct
+    apiBase: https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+    apiKey: <you AI Endpoint API key> # replace with your API key
+    roles: [chat, edit, apply, summarize]
+  - name: Qwen3-Coder-30B-A3B-Instruct
+    provider: openai
+    model: Qwen3-Coder-30B-A3B-Instruct
+    apiBase: https://qwen-3-coder-30b-a3b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+    apiKey: <you AI Endpoint API key> # replace with your API key
+    roles: [chat, edit, apply, summarize, autocomplete]
 ```
 
-### Tab Completion Configuration
+> [!primary]
+>
+> When you have modified your config file, make sure to reload it before trying to interact with your configured models!
+>
 
-You can define only one model for tab autocomplete. Choose any model from the Code LLM category in AI Endpoints. Here's a quick example:
-
-```json
-{
-  "tabAutocompleteModel": {
-    "title": "Qwen2.5-Coder-32B-Instruct",
-    "model": "Qwen2.5-Coder-32B-Instruct",
-    "apiBase": "https://qwen-2-5-coder-32b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1",
-    "provider": "openai",
-    "useLegacyCompletionsEndpoint": true,
-    "apiKey": "<your API key>"
-  }
-}
-```
-
-### Chatbot Configuration
-
-For the chatbot tool, you can define multiple models. Try out different LLMs and choose the one that best fits your use case. You can switch between them easily in the IDE UI.
+Try out different LLMs from [our catalog](https://endpoints.ai.cloud.ovh.net/catalog) and choose the one that best fits your use case. You can switch between them easily in the IDE UI.
 
 ### Try It Out
 
@@ -105,13 +77,19 @@ Once Continue is configured with your AI Endpoints, you're ready to test both fe
 
 Use the chatbot sidebar to ask for help, generate code, or refactor logic with any of your configured models.
 
-![image](images/chatbot.gif){.thumbnail}
+![Chatbot tool animation](images/chatbot.gif){.thumbnail}
 
 **Tab Completion Tool**
 
 Just start typing in your editor. The autocomplete model will complete code as you go — powered by your custom-configured model from AI Endpoints.
 
-![image](images/tab-completion.gif){.thumbnail}
+![Tab completion animation](images/tab-completion.gif){.thumbnail}
+
+### Troubleshooting
+
+- **Model not loading**: Verify the `apiBase` URL and ensure the `apiKey` variable is correctly set.
+- **Autocomplete not working**: Make sure the model role includes `autocomplete` and that the selected model supports this capability.
+- **Connection errors**: Check network connectivity and confirm your `apiKey` is valid.
 
 ## Conclusion
 

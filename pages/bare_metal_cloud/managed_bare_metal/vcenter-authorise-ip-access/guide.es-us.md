@@ -18,7 +18,7 @@ Es posible limitar el acceso al vCenter autorizando solo la conexión de determi
 
 Cuando [la política de acceso al vCenter está restringida](/pages/bare_metal_cloud/managed_bare_metal/vcenter-modify-access-policy), es necesario añadir las direcciones IP autorizadas a conectarse al servicio.
 
-Esta operación se realiza desde el [área de cliente de OVHcloud](/links/manager){.external-link}. En el menú `Servidores`, acceda a la sección `Managed Bare Metal`. Seleccione la infraestructura y, a continuación, abra la pestaña `Seguridad`. Por último, haga clic en `Añadir un nuevo rango de direcciones IP`{.action}.
+Esta operación se realiza desde el [área de cliente de OVHcloud](/links/manager). En el menú `Servidores`, acceda a la sección `Managed Bare Metal`. Seleccione la infraestructura y, a continuación, abra la pestaña `Seguridad`. Por último, haga clic en `Añadir un nuevo rango de direcciones IP`{.action}.
 
 ![vCenter](images/restrictIP.png){.thumbnail}
 

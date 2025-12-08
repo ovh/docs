@@ -52,7 +52,7 @@ In the menu, click on `Users & Authentication`{.action}.
 
 A list of existing users is displayed. You should have at least a `Default Admin` user.
 
-To create a new user, click on the `Create`{.Action} button.
+To create a new user, click on the `Create`{.action} button.
 
 ![Rancher UI Users](images/rancher-user.png){.thumbnail}
 

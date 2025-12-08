@@ -1,7 +1,7 @@
 ---
 title: Deploying a Public Cloud Load Balancer (EN)
 excerpt: Find out how to configure the Public Cloud Load Balancer
-updated: 2024-05-30
+updated: 2025-09-17
 ---
 
 ## Objective

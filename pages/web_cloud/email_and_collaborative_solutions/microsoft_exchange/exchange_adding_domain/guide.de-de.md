@@ -102,7 +102,7 @@ Wenn Einträge in rot angezeigt werden:
     - Klicken Sie auf `MX`, `SRV`, `SPF` oder `DKIM`, um Details anzuzeigen. Verwendet diese Domain nicht die DNS-Server von OVHcloud, nehmen Sie die Änderungen über das Verwaltungsinterface Ihrer Domain vor.
     - Im Fall eines rot angezeigten `CNAME`, lesen Sie unsere Anleitung zur [Erstellung eines CNAME-Eintrags](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![exchange](images/add_domain_exchange_step4\.png){.thumbnail .w-600}
+![exchange](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >

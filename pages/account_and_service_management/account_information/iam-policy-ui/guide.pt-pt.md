@@ -1,7 +1,7 @@
 ---
 title: Como utilizar as políticas IAM a partir do seu Espaço Cliente
 excerpt: Descubra como dar direitos de acesso específicos aos utilizadores a partir de uma conta OVHcloud
-updated: 2025-08-27
+updated: 2025-10-27
 ---
 
 ## Objetivo
@@ -77,15 +77,15 @@ Clique no botão `Criar uma política`{.action}.
 - **Recursos**: adicione recursos ou grupos de recursos a serem cobertos pela política. Os recursos disponíveis são filtrados por tipo de produto previamente selecionado.
 - **Ações**.
 
-Existem 3 formas de adicionar ações:
+**Existem 4 formas de adicionar ações:**
 
-- Ao ativar a opção `Autorizar todas as ações`{.action}
+##### 1 - Ativar a opção "Autorizar todas as ações"
 
 ![Criar uma política](images/create_a_policy_02.png){.thumbnail}
 
 Ao ativar esta opção, estará a autorizar todas as ações relacionadas com os produtos selecionados. Isto inclui todas as ações existentes, bem como as ações futuras acrescentadas a estas categorias de produtos.
 
-- Selecionando um grupo de permissões geridas
+##### 2 - Selecionar um grupo de permissões geridas
 
 Colocamos à disposição grupos de permissões pré-configuradas e geridas pela OVHcloud.
 Pode selecionar um ou mais grupos selecionando-os na lista disponível.
@@ -96,7 +96,7 @@ Os detalhes do conteúdo dos grupos de permissão administrados estão disponív
 
 É possível utilizar os grupos de ações administradas em complemento de ações unitárias.
 
-- Adicionando manualmente ações
+##### 3 - Adicionar ações manualmente
 
 Se conhece o nome da ação, pode adicioná-la manualmente.
 
@@ -110,7 +110,7 @@ Por exemplo, a adição de `vps:apiovh:ips/*` irá conceder os seguintes direito
 - **vps:apiovh:ips/delete**
 - **vps:apiovh:ips/get**
 
-- Selecionando ações da lista
+##### 4 - Selecionar ações na lista
 
 As ações podem ser selecionadas na lista.
 
@@ -127,7 +127,27 @@ As ações disponíveis dependem do tipo de recursos e pertencem a uma das cinco
 Está disponível um campo de pesquisa para o ajudar a identificar uma ação específica na lista.
 
 > [!primary]
-> As ações relativas aos produtos IP e vRack, bem como as ações ligadas à encomenda e faturação, ainda não se encontram disponíveis no IAM OVHcloud.
+> As ações relacionadas à compra e à faturação não estão disponíveis no IAM da OVHcloud.
+
+#### Condições nas políticas
+
+É possível adicionar condições às políticas IAM.
+
+Uma política com condições é válida quando todas as condições são validadas.
+
+É possível aplicar condições sobre:
+
+- uma etiqueta do recurso;
+- o nome do recurso;
+- o tipo de produto;
+- o endereço IP da solicitação;
+- o dia da semana;
+- a data;
+- a hora.
+
+![Criar uma política](images/conditions.png){.thumbnail}
+
+Uma vez adicionadas, as condições são exibidas com a sintaxe [utilizada na API](/pages/account_and_service_management/account_information/iam-policies-api)
 
 #### Alterar uma política
 

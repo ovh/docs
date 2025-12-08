@@ -1,7 +1,7 @@
 ---
 title: Installa WordPress sulla tua istanza
 excerpt: Scopri come utilizzare un'istanza Public Cloud per ospitare siti WordPress
-updated: 2023-05-17
+updated: 2025-09-23
 ---
 
 > [!primary]
@@ -136,10 +136,10 @@ La configurazione di un firewall (*iptables*) permette di migliorare la sicurezz
 debian@instance:~$ sudo apt install ufw
 ```
 
-I profili in questione recano l'indicazione "WWW" nell'elenco delle applicazioni:
+Nell'elenco delle applicazioni disponibili per UFW, i profili che corrispondono a un server web sono denominati "WWW" su un'istanza Debian e "Apache" su un'istanza Ubuntu. Questi profili consentono di aprire le porte necessarie per il traffico HTTP e HTTPS in modo semplice e sicuro.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # o grep Apache
   WWW
   WWW Cache
   WWW Full

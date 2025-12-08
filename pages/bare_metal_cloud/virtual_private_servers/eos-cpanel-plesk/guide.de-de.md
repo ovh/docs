@@ -1,7 +1,7 @@
 ---
 title: "Plesk und cPanel: End of Support für VPS - Gewährleistung der Kontinuität Ihrer Dienste"
 excerpt: "Erfahren Sie, ab wann die Plesk- und cPanel-Betriebssysteme Ihres OVHcloud VPS nicht mehr unterstützt werden"
-updated: 2025-07-22
+updated: 2025-09-29
 ---
 
 ## Ziel
@@ -20,10 +20,10 @@ Die Herausgeber von **Plesk** und **cPanel** kündigen das Ende der Unterstützu
 
 | Betriebssystem | Produkt      | Ende des Supports  |
 | -------------- | ------------ | ------------------ |
-| Ubuntu 18.04   | Plesk        | **1. Januar 2026** |
-| Debian 10      | Plesk        | **1. Januar 2026** |
-| CentOS 7       | Plesk/cPanel | **1. Januar 2026** |
-| CloudLinux 7   | Plesk/cPanel | **1. Januar 2026** |
+| Ubuntu 18.04   | Plesk        | **1. Januar 2027** |
+| Debian 10      | Plesk        | **1. Januar 2027** |
+| CentOS 7       | Plesk/cPanel | **1. Januar 2027** |
+| CloudLinux 7   | Plesk/cPanel | **1. Januar 2027** |
 
 Weitere Informationen zum Support finden Sie in der offiziellen Dokumentation:
 
@@ -87,7 +87,13 @@ Wenn Sie keinen neuen VPS bereitstellen können, können Sie bestimmte Tools ver
 
 > [!primary]
 >
-> Für diese Tools wird keine Garantie übernommen und sollten nicht ohne vorherige vollständige genutzt werden. Stellen Sie außerdem sicher, dass Ihr VPS über ausreichende Ressourcen verfügt (RAM, CPU, Storage).
+> Für diese Tools wird keine Garantie übernommen und sie sollten nicht ohne vorheriges Erzeugen von Backups genutzt werden. Stellen Sie außerdem sicher, dass Ihr VPS über ausreichende Ressourcen verfügt (RAM, CPU, Storage).
+
+### Best Practices Sicherheit
+
+Unabhängig von Plesk/cPanel ist es wichtig, das Betriebssystem Ihres VPS auf dem neuesten Stand zu halten, um Sicherheitsupdates, Softwarekompatibilität und Herstellersupport zu erhalten. Wenn Ihre Distribution **End-of-Life (EOL)** ist, planen Sie eine **Aktualisierung** oder eine **Migration** auf eine weiterhin unterstützte Version.
+
+Um die Terminierung von End-of-Life und End-of-Support für Images und Betriebssysteme (VPS & Public Cloud) zu erfahren, konsultieren Sie: "[Public Cloud & VPS - Lebenszyklus und End-of-Life-/Support für Images und Distributionen](/pages/public_cloud/compute/image-life-cycle)".
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

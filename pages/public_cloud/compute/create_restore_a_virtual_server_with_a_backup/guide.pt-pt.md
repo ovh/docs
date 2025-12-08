@@ -1,12 +1,8 @@
 ---
 title: 'Criar / Restaurar um servidor virtual a partir de um backup'
 excerpt: 'Saiba como criar ou restaurar o backup de uma instância'
-updated: 2025-04-28
+updated: 2025-11-04
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -20,72 +16,178 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 
 ## Requisitos
 
-- Ter um backup de uma instância Public Cloud. Para isso, consulte [o guia relativo à criação de um backup](/pages/public_cloud/compute/save_an_instance).
+- Ter um backup de uma [instância Public Cloud](/links/public-cloud/instance-backup). Para isso, consulte [o guia relativo à criação de um backup](/pages/public_cloud/compute/save_an_instance).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-### Criar uma instância a partir de um backup
-
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e selecione `Public Cloud`{.action}. Selecione o projeto Public Cloud em causa e depois clique em `Instance backup`{.action} na secção **Compute**.
-
-![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
-
-Clique então nas `...`{.action} do lado direito do backup escolhido e, por fim, em `Criar uma instância`{.action}.
-
-Aparecerá uma versão abreviada da página de criação da instância, na qual poderá modificar determinadas opções.
-
-![public-cloud-instance-backup](images/restorebackup02.png){.thumbnail}
-
-Alguns elementos estão predefinidos:
-
-- **Localização**: a sua instância será criada no mesmo datacenter que o seu backup.
-- **Imagem**: corresponderá ao seu backup.
-- **Modelo**: apenas os que podem acolher a sua imagem estarão disponíveis, em função da sua quota.
-
-![public-cloud-instance-backup](images/restorebackup03.png){.thumbnail}
-
-Defina o nome da nova instância, a chave SSH, o vRack e o período de faturação e clique no botão `Criar a instância`{.action}.
-
-Para mais informações sobre a criação de uma instância, consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps).
-
 > [!primary]
 >
-> Para criar uma instância num datacenter diferente do do backup, será necessário transferir o backup para a zona correspondente. Consulte então o [guia relativo ao backup de uma instância de um datacenter para outro](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
+> Dois tipos de cópias de segurança estão disponíveis:
 >
+> - Local: armazenada na mesma região que a sua instância.
+> - Remota: automaticamente replicada noutra região à sua escolha.
+>
+> As operações de **criação** e de **restauro** de uma instância a partir de um backup remoto são inteiramente suportadas através da API OVHcloud, oferecendo uma maior flexibilidade e uma integração facilitada nos seus processos de automatização.
+>
+> **Nota:** Estas operações ainda não estão disponíveis a partir da área de cliente OVHcloud.
+
+### Criar uma instância a partir de um backup
+
+> [!tabs]
+> Via a área de cliente OVHcloud
+>> Conecte-se a sua [área de cliente OVHcloud](/links/manager), acesse a seção `Public Cloud`{.action} e selecione o projeto Public Cloud desejado.<br>
+>> Clique em seguida em `Instance backup`{.action} na barra de navegação à esquerda sob **Compute**.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
+>>
+>> Clique nos `...`{.action} à direita do backup selecionado e, por fim, em `Criar uma instância`{.action}.
+>>
+>> Uma versão simplificada da página de criação de instância será exibida, permitindo personalizar algumas opções.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup02.png){.thumbnail}
+>>
+>> Alguns elementos são pré-definidos:
+>>
+>> - **Localização**: Sua instância será criada no mesmo datacenter que seu backup.
+>> - **Imagem**: A imagem corresponderá ao seu backup.
+>> - **Modelo**: Apenas os modelos capazes de acomodar sua imagem estarão disponíveis, dependendo do seu quota.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup03.png){.thumbnail}
+>>
+>> Defina o nome da nova instância, a chave SSH, o vRack e o período de faturamento, em seguida clique no botão `Criar a instância`{.action}.
+>>
+>> Para mais informações sobre a criação de uma instância, consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps).
+>>
+>> > [!primary]
+>> >
+>> > Para criar uma instância em um datacenter diferente do backup, será necessário transferi-lo para a zona correspondente. Consulte então o [guia sobre a transferência de backup de instância entre datacenters](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
+>> >
+>>
+> Via a CLI OpenStack
+>>
+>> Para criar uma instância a partir de seu backup, utilize o ID do backup como imagem com este comando:
+>>
+>> ```bash
+>> $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+>> ```
+>>
+> Via Horizon
+>> Na interface Horizon, clique em `Compute`{.action} no menu à esquerda, depois em `Images`{.action}. Procure a imagem desejada e clique no botão `Launch`{.action} à direita da linha da sua imagem.
+>>
+>> ![public-cloud-instance-backup-horizon](images/restorebackuphorizon1.png){.thumbnail}
+>>
+>> Nomeie sua instância no campo dedicado e determine o número de instâncias a criar. Em seguida, clique na aba `Flavor`{.action}.
+>>
+>> ![public-cloud-instance-backup-horizon-2](images/restorebackuphorizon2.png){.thumbnail}
+>>
+>> Escolha o modelo de instância desejado, depois clique na aba `Networks`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Se sua instância for um servidor Windows, você deverá selecionar uma flavor do tipo win-xx-xx (por exemplo, win-b2-15) e possuir uma interface pública na rede Ext-Net. Sem essas condições, a autenticação no KMS OVHcloud não será possível, e seu servidor permanecerá com uma [licença não ativada](/pages/public_cloud/compute/activate-windows-license-private-mode). Isso pode resultar em limitações, incluindo a falta de atualizações. Atenção: não é possível redimensionar uma instância Linux (por exemplo, b2-15) para uma instância Windows (como win-b2-15). Para realizar essa transição, será necessário criar uma nova instância.
+>> >
+>>
+>> ![public-cloud-instance-backup-horizon-3](images/restorebackuphorizon3.png){.thumbnail}
+>>
+>> Escolha a rede que deseja atribuir, depois clique no botão `Launch Instance`{.action}.
+>>
+>> ![public-cloud-instance-backup-horizon-4](images/restorebackuphorizon4.png){.thumbnail}
+>>
+>> Você pode verificar o status da sua nova instância em `Compute`{.action} no menu à esquerda, depois em `Instances`{.action}.
+>>
+>> ![public-cloud-instance-backup-horizon-5](images/restorebackuphorizon5.png){.thumbnail}
+>>
+> Via API OVHcloud <a name="createinstanceviaapi"></a>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance
+>> >
+>>
+>> Preencha as variáveis:
+>>
+>> - **serviceName**: O ID do projeto OVHcloud.
+>> - **regionName**: O nome da região onde a instância será criada.
+>>
+>> Exemplo de corpo da requisição:
+>>
+>> ```json
+>> {
+>>   "billingPeriod": "hourly",
+>>   "bootFrom": {
+>>     "imageId": "5cb8ea68-****-****-****-820be8346***"
+>>   },
+>>   "flavor": {
+>>     "id": "e81b46f8-****-****-****-cad655e65***"
+>>   },
+>>   "name": "newInstance",
+>>   "network": {
+>>     "public": true
+>>   },
+>>   "sshKey": {
+>>     "name": "MySSHKey"
+>>   }
+>> }
+>> ```
+>>
 
 ### Restaurar uma instância a partir de um backup
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e selecione `Public Cloud`{.action}. Selecione o projeto Public Cloud em causa e depois clique em `Instâncias`{.action} no menu à esquerda.
+> [!tabs]
+> Via a área de cliente OVHcloud
+>> Conecte-se a sua [área de cliente OVHcloud](/links/manager), acesse a seção `Public Cloud`{.action} e selecione o projeto Public Cloud desejado.<br>
+>> Clique em seguida em `Instâncias`{.action} na barra de navegação à esquerda sob **Compute**.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
+>>
+>> Clique no botão `...`{.action} à direita da instância que deseja restaurar e clique em `Editar`{.action}.
+>>
+>> A página de edição da instância será exibida. Você poderá modificar:
+>>
+>> - o nome da instância;
+>> - a imagem da instância;
+>> - o modelo da instância;
+>> - o faturamento da instância (apenas do modelo « Hora » para o modelo « Mensal »).
+>>
+>> Faça as modificações necessárias e selecione a aba `Backups`{.action} na seção « Imagem ».
+>>
+>> ![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
+>>
+>> Selecione um backup na lista de backups disponíveis. Clique em `Alterar a imagem`{.action} se estiver certo de querer substituir a imagem atual pelo backup.
+>>
+>> A instância terá o status `Reinstalação` até que o processo seja concluído. Pode ser necessário atualizar a página no navegador para ver o estado atual.
+>>
+>> > [!warning]
+>> >
+>> > Como indicado no quadro amarelo mencionado, nenhuma dados adicionados após a criação deste backup poderá ser recuperado.
+>> >
+>>
+> Via API OVHcloud
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/reinstall
+>> >
+>>
+>> Preencha as variáveis:
+>>
+>> - **serviceName**: O ID do projeto OVHcloud.
+>> - **regionName**: O nome da região onde a instância de origem está localizada.
+>> - **instanceId**: O ID único da instância.
+>>
+>> Exemplo de corpo da requisição:
+>>
+>> ```json
+>> {
+>>   "imageId": "5cb8ea68-****-****-****-820be8346***",
+>>   "imageRegionName": "GRA11"
+>> }
+>> ```
+>>
 
-![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
-
-Clique no botão `...`{.action} à direita da instância que pretende restaurar e clique em `Editar`{.action}.
-
-A página de edição de instância será então apresentada. Nela poderá alterar:
-
-- O nome da instância.
-- A imagem da instância.
-- O modelo da instância.
-- A faturação da instância (apenas do modelo "Horário" para o modelo "Mensal").
-
-Faça as alterações necessárias e selecione o separador `Backups`{.action} na secção "Image".
-
-![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
-
-Selecione um backup na lista de backups disponíveis. Clique em `Modificar a imagem`{.action} se tiver a certeza de que deseja substituir a imagem atual pelo backup.
-
-A instância terá o estado de `Reinstalação` até que o processo esteja terminado. Pode ser necessário atualizar a página no browser para ver o estado atual.
-
-> [!warning]
->
-> Como indicado no quadro amarelo que lhe é então apresentado, os dados adicionados depois da criação deste backup não poderão ser recuperados.
->
-
-## Saiba mais
+## Quer saber mais?
 
 [Criação e ligação a uma primeira instância Public Cloud](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
 
 [Efetuar um backup de uma instância](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
+Fale com a nossa [comunidade de utilizadores](/links/community).

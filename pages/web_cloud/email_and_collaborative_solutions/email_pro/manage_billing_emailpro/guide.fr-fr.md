@@ -1,7 +1,7 @@
 ---
 title: 'Gérer la facturation de vos comptes E-mail Pro'
 excerpt: 'Découvrez comment gérer la facturation de votre service E-mail Pro'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objectif
@@ -45,7 +45,7 @@ Vous pouvez aussi le faire individuellement devant chaque compte.
 >
 > Pour une gestion simplifée, la facturation de chaque compte Email Pro est automatiquement alignée en début de mois. Pour procéder à cet alignement, et donc déplacer la date d'abonnement le cas échéant, vous recevrez une facture de votre compte Email Pro au prorata temporis.
 >
->Exemple: Une commande effectuée le 08 janvier avec un abonnement mensuel entraînera sa prochaine facturation le 08 février. La facture suivante couvrira la période entre le 08 février et le 1er mars.
+> **Exemple** : Une commande effectuée le 08 janvier avec un abonnement mensuel entraînera sa prochaine facturation le 08 février. La facture suivante couvrira la période entre le 08 février et le 1er mars.
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
@@ -62,6 +62,10 @@ Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bo
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Résilier la plateforme
+
+Après avoir supprimé les comptes e-mail, il est nécessaire de supprimer le ou les noms de domaine associés à votre plateforme E-mail Pro avant de la résilier. Pour cela, rendez-vous sur l'onglet `Domaines associés`{.action}. Cliquez sur le bouton `...`{.action} sur la ligne du nom de domaine à supprimer, puis cliquez sur `Supprimer ce domaine`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 Depuis la fenêtre de gestion de votre plateforme E-mail Pro, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Résilier`{.action}.
 

@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le snapshot"
 excerpt: "Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Objectif
@@ -32,7 +32,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous da
 
 ### Étape 1 : souscrire l'option snapshot
 
-Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ».  
+Depuis l'onglet `Accueil`{.action}, descendez jusqu'au cadre « Sauvegarde ».  
 Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Commander`{.action} dans le menu qui s'affiche.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
@@ -45,7 +45,7 @@ Pour résilier l'option, cliquez sur le bouton `...`{.action} à côté de « Sn
 
 ### Étape 2 : prendre un snapshot
 
-Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez tapez une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affiche dans le menu « Résumé des options ».
+Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez renseigner une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affichera le cadre « Sauvegarde ».
 
 ### Étape 3 : supprimer/restaurer un snapshot
 
@@ -105,7 +105,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > Pour éviter de consommer trop d'espace de stockage, nous vous déconseillons de télécharger les snapshots directement sur le VPS.
 >
-> Le fichier téléchargé peut être importé dans un Projet Public Cloud en tant qu'image (QCOW2) via [OpenStack](products/public-cloud-compute-instance-management). (Retrouvez un exemple d'utilisation dans [ce guide](/pages/public_cloud/compute/upload_own_image).)
+> Le fichier téléchargé peut être importé dans un Projet Public Cloud en tant qu'image (QCOW2) via [OpenStack](/products/public-cloud-compute-instance-management). (Retrouvez un exemple d'utilisation dans [ce guide](/pages/public_cloud/compute/upload_own_image).)
 >
 
 ### Bonnes pratiques pour la création d'un snapshot

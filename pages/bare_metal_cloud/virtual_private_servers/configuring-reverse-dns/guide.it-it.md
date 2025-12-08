@@ -1,12 +1,8 @@
 ---
 title: "Come configurare il reverse DNS del tuo server (record PTR)"
 excerpt: Copri come impostare la risoluzione reverse DNS del tuo indirizzo IP dal tuo Spazio Cliente OVHcloud
-updated: 2025-04-28
+updated: 2025-09-18
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -48,7 +44,7 @@ Nella nuova finestra, inserisci il reverse e clicca su `Conferma`{.action}.
 >  - il reverse non può contenere caratteri maiuscoli
 >  - il reverse deve terminare con un `.`
 >
-> Esempio: "MyDomain.ca" nel campo reverse sarebbe **mydomain.ca.**
+> Esempio: "domain.tld" nel campo reverse sarebbe `domain.tld.`.
 >
 
 > [!primary]

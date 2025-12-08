@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Identity and access management
 excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
-updated: 2025-09-08
+updated: 2025-09-25
 ---
 
 ## Objective
@@ -197,20 +197,20 @@ At the moment, user permissions are evaluated as follows:
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
-    "Effect": "Deny",
+    "Effect": "Allow",
     "Action": "s3:*",
     "Resource": [
       "arn:aws:s3:::companybucket",
       "arn:aws:s3:::companybucket/*"
     ],
     "Condition": {
-      "NotIpAddress": {
+      "IpAddress": {
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 } 
 ```
 
@@ -219,11 +219,11 @@ At the moment, user permissions are evaluated as follows:
 > As a consequence of the current authorization process, **implicit** deny is **not** supported by OVHcloud Object Storage if the user is the bucket owner i.e since ACLs are evaluated by default and since the bucket owner has FULL_CONTROL ACL, if the user is the bucket owner and even if there is no explicit allow in the policy file, he will be authorized.
 > 
 
-The following policy to attempt to allow read access to objects only to specific IPs will **not** work under current conditions if attached to the bucket owner i.e even if the bucket owner makes his requests from IPs that are not in the specified range, he will be authorized.
+The following policy to attempt to allow read access to objects only to specific IPs will **not** work under current conditions if attached to the **bucket owner** i.e even if the bucket owner makes his requests from IPs that are **not** in the specified range, he will be **authorized**.
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
     "Effect": "Allow",
     "Action": [
@@ -239,15 +239,15 @@ The following policy to attempt to allow read access to objects only to specific
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 }
 ```
 
-The following policy to attempt to deny read access to objects to specific IPs by blacklisting unauthorized IPs will **not** work under current conditions if attached to the bucket owner because there is no explicit deny and requests from the specified IPs will not match the allow, therefore, we fallback to the ACLs.
+The following policy to attempt to deny read access to objects to specific IPs by blacklisting unauthorized IPs will **not** work under current conditions if attached to the **bucket owner** because there is no explicit deny and requests from the specified IPs will not match the allow, therefore, we fallback to the ACLs.
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
     "Effect": "Allow",
     "Action": [
@@ -263,7 +263,7 @@ The following policy to attempt to deny read access to objects to specific IPs b
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 }
 ```
 

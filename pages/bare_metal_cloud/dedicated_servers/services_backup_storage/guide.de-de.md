@@ -1,7 +1,7 @@
 ---
 title: 'Backup Storage auf einem Dedicated Server verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz aktivieren und auf diesen zugreifen'
-updated: 2025-07-21
+updated: 2025-10-09
 ---
 
 ## Ziel
@@ -345,7 +345,11 @@ System error 1272 has occurred.
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
 
-Dieser Fehler sollte durch Bearbeiten der Windows-Registrierung lösbar sein: Öffnen Sie das Windows-Dienstprogramm *regedit*, und suchen Sie nach dem Eintrag `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Setzen Sie den Wert von `AllowInsecureGuestAuth` auf "1". Weitere Informationen zu diesem Thema finden Sie auf den [Microsoft Support-Seiten](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
+> [!primary]
+>
+> Dieser Fehler sollte durch Bearbeiten der Windows Registry behebbar sein: Öffnen Sie das Windows Dienstprogramm *regedit*, und suchen Sie nach dem Eintrag `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.  
+> Setzen Sie den Wert des Parameters `AllowInsecureGuestAuth` auf "1".  
+> Weitere Informationen zu diesem Thema finden Sie auf den [Microsoft Supportseiten](https://learn.microsoft.com/de-de/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 

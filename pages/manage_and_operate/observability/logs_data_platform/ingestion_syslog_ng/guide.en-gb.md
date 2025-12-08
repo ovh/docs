@@ -107,13 +107,13 @@ log { source(s_src); rewrite(ovh-token); destination(ovhPaaSLogs); };
 >
 > - Copy the **data-gathering tools certificate** from the manager Home page in SSL Configuration section, and paste it in file "/usr/local/share/ca-certificates/ldp.pem"
 > - Ensure the permission on this file is 644
-> 
+>
 > <pre class="highlight language-console"><code class="language-console">$ debian@server:~$ sudo chmod 644 /usr/share/ca-certificates/ldp.pem</code></pre>
-> 
+>
 > - Import this certificate to your system's trusted CA repository
-> 
+>
 > <pre class="highlight language-console"><code class="language-console">$ debian@server:~$ sudo update-ca-certificates</code></pre>
-> 
+>
 
 Let's review this configuration.
 

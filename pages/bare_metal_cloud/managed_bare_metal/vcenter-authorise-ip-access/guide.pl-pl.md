@@ -18,7 +18,7 @@ Możesz ograniczyć dostęp do vCenter, pozwalając na łączenie się z nim tyl
 
 Kiedy polityka dostępu do vCenter jest ograniczona, konieczne jest dodanie adresów IP, które będą mogły łączyć się z usługą.
 
-Operacja ta przeprowadzana jest w [Panelu klienta](/links/manager){.external-link}. W sekcji `Bare Metal Cloud`, kliknij sekcję `Managed Bare Metal`. Wybierz infrastrukturę, przejdź do zakładki `Bezpieczeństwo`, po czym kliknij `Dodaj nowy zakres adresów IP`{.action}.
+Operacja ta przeprowadzana jest w [Panelu klienta](/links/manager). W sekcji `Bare Metal Cloud`, kliknij sekcję `Managed Bare Metal`. Wybierz infrastrukturę, przejdź do zakładki `Bezpieczeństwo`, po czym kliknij `Dodaj nowy zakres adresów IP`{.action}.
 
 ![vCenter](images/restrictIP.png){.thumbnail}
 

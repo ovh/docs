@@ -1,6 +1,6 @@
 ---
 title: Using Grafana with Logs Data Platform
-updated: 2024-11-28
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ updated: 2024-11-28
 This is what you need to know to get you started:
 
 - you are already sending logs on a stream you own [see the quick start tutorial](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
-- Your have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster).
+- you have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster)
 
 After some training you will be able to create this kind of dashboard:
 
@@ -52,7 +52,7 @@ If everything is setup properly, launch your favorite browser, and point it to [
 > To make the magic happen, please ensure to:
 >
 > - Set `https://<your_cluster>.logs.ovh.com:9200` as **URL** value
-> - Set your Logs Data Platform credentials for **Basic auth values**
+> - Set your [Logs Data Platform credentials](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) for **Basic auth values**
 > - Set the **Index name** as the Logs Data Platform alias linked to Grafana
 > - Change default **Time field name** to timestamp
 > - Set the **Version** by clicking `Get Version and Save`{.action}.
@@ -64,7 +64,6 @@ If your configuration is correct, it should display: " _Index Ok. Timefield Ok._
 ![Data source 2](images/datasource_2.png){.thumbnail}
 
 To explore further, you can create a new dashboard and add different styles of visualizations.
-
 If you want to know what you can do with Grafana and OpenSearch, read the [official documentation](https://grafana.com/grafana/plugins/grafana-opensearch-datasource/).
 
 ## Go further

@@ -1,20 +1,50 @@
 ---
 title: OVHcloud account management FAQ
 excerpt: Find the most frequently asked questions about managing your OVHcloud account
-updated: 2025-09-12
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
     cursor: pointer;
+    list-style: none;
 }
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
 }
-details[open]>summary::before {
-    content:'\25BC';
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -24,7 +54,7 @@ Here are the most frequently asked questions about managing your OVHcloud accoun
 
 ## FAQ
 
-### Creating an OVHcloud account, loggin in, and securing it
+### Creating an OVHcloud account, logging in, and securing it
 
 /// details | How do I create an OVHcloud account?
 
@@ -79,12 +109,13 @@ You can find more information in our guide [Changing your account password](/pag
 > **Can't remember your password?**
 >
 > Go to the [login page for your Control Panel](/links/manager) and click `Forgot username or password?`{.action}. Enter your NIC handle or the primary email address associated with your OVHcloud account, then click `Submit`{.action}. An email is then sent to the account’s contact email address, to confirm the request. Please read the instructions carefully and click on the link in it.
-
-If you no longer have access to this address but have access to your alternate email address, create a [help ticket via the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to replace your primary email address with the backup email address.
-
-If you do not have access to your email address, the OVHcloud Control Panel, or a backup email address, you will need to follow [this procedure](links/transversal/procedure-email-change).
-
-If you have forgotten your NIC handle, you can find it in the top right-hand corner of your last bill. It looks like this: "aa00000-ovh" (the first letters are usually the initials of the person who created the account). You will also find this ID in the email confirming that you have created your account, as well as in the emails of orders confirmation or renewal.
+>
+> If you no longer have access to this address but have access to your alternate email address, create a [help ticket via the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to replace your primary email address with the backup email address.
+>
+> If you do not have access to your email address, the OVHcloud Control Panel, or a backup email address, you will need to follow [this procedure](/links/transversal/procedure-email-change).
+>
+> If you have forgotten your NIC handle, you can find it in the top right-hand corner of your last bill. It looks like this: "aa00000-ovh" (the first letters are usually the initials of the person who created the account). You will also find this ID in the email confirming that you have created your account, as well as in the emails of orders confirmation or renewal.
+>
 
 ///
 
@@ -118,7 +149,7 @@ If your device (mobile phone/smartphone/security key) used for two-factor authen
 - use another two-factor authentication device, if you have enabled several;
 - [disable two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation).
 
-Check out the ["What do I do if I lose one of my devices, or if it stops working? "](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device) or the ["Disabling two-factor authentication completely "](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation) sections of our guide on two-factor authentication.
+Check out the "[What do I do if I lose one of my devices, or if it stops working?](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#lost-device)" or the "[Disabling two-factor authentication completely](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#deactivation) sections of our guide on two-factor authentication."
 
 ///
 
@@ -194,9 +225,8 @@ Closing your OVHcloud customer account and deleting your personal data is only p
 If the above conditions are met, you can request to delete your OVHcloud account and the related data by following these steps:
 
 1. Log in to the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
-2. Click the `Create ticket`{.action} button.
-3. Select the reason `Manage your OVHcloud customer account`{.action}.
-4. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
+1. Select the reason `Manage your OVHcloud customer account`{.action}.
+1. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
 
 ///
 
@@ -258,10 +288,10 @@ The service delegation must be validated via email both by the service administr
 
 Before you make any changes, please ensure that all contact email addresses are valid, otherwise the request will not be successful.
 
-If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change)
+If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change).
 
 > [!success]
-> A full contact management guide is available here: [/pages/account_and_service_management/account_information/managing_contacts#access-contact-management](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management)
+> A full contact management guide is available here: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ///
 
