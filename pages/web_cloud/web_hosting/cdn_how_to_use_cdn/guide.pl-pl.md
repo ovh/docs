@@ -1,7 +1,7 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2025-10-27
+updated: 2025-12-10
 ---
 
 ## Wprowadzenie 
@@ -74,13 +74,13 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 >>
 >> Następnie kliknij przycisk `⁝`{.action} po prawej stronie nazwy domeny lub poddomeny, a następnie kliknij `Aktywuj CDN`{.action}.
 >>
->> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options-cdn-disabled.png){.thumbnail}
 >>
 > **Krok 5**
 >>
 >> W otwartej się karcie kliknij przycisk `Zatwierdź`{.action}, aby włączyć CDN.
 >>
->> ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
+>> ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/cdn-activation.png){.thumbnail}
 >>
 >> > [!warning]
 >> >

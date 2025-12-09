@@ -1,7 +1,7 @@
 ---
 title: "Acelerar un sitio web utilizando la CDN"
 excerpt: "Descubra cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN"
-updated: 2025-10-27
+updated: 2025-12-10
 ---
 
 ## Objetivo
@@ -74,13 +74,13 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Activar el CDN`{.action}.
 >>
->> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options-cdn-disabled.png){.thumbnail}
 >>
 > **Etapa 5**
 >>
 >> En la ventana que se abre, haga clic en `Confirmar`{.action} para activar el CDN.
 >>
->> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/cdn-activation.png){.thumbnail}
 >>
 >> > [!warning]
 >> >

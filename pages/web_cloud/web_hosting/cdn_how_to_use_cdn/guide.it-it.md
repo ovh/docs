@@ -1,7 +1,7 @@
 ---
 title: "Aumentare la velocità di un sito Web con la CDN"
 excerpt: "Questa guida ti mostra come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN"
-updated: 2025-10-27
+updated: 2025-12-10
 ---
 
 ## Obiettivo
@@ -74,13 +74,13 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> Fai quindi clic sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Attiva la CDN`{.action}.
 >>
->> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options-cdn-disabled.png){.thumbnail}
 >>
 > **Passaggio 5**
 >>
 >> Nella finestra che si apre, clicca su `Conferma`{.action} per attivare il CDN.
 >>
->> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/cdn-activation.png){.thumbnail}
 >>
 >> > [!warning]
 >> >

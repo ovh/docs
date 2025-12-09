@@ -1,7 +1,7 @@
 ---
 title: "Guia de utilização do acelerador CDN num alojamento web"
 excerpt: "Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN"
-updated: 2025-10-27
+updated: 2025-12-10
 ---
 
 ## Objetivo
@@ -74,13 +74,13 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 >> Em seguida, clique no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante e, depois, em `Ativar o CDN`{.action}.
 >>
->> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options-cdn-disabled.png){.thumbnail}
 >>
 > **Etapa 5**
 >>
 >> Na janela que se abre, clique em `Validar`{.action} para ativar o CDN.
 >>
->> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/cdn-activation.png){.thumbnail}
 >>
 >> > [!warning]
 >> >

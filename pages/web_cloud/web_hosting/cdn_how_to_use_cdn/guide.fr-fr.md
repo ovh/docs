@@ -1,7 +1,7 @@
 ---
 title: "Accélérer mon site web en utilisant le CDN"
 excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement web grâce au CDN"
-updated: 2025-11-20
+updated: 2025-12-10
 ---
 
 ## Objectif
@@ -74,13 +74,13 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Activer le CDN`{.action}.
 >>
->> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options-cdn-disabled.png){.thumbnail}
 >>
 > **Étape 5**
 >>
 >> Dans la fenêtre qui s'ouvre, cliquez sur `Valider`{.action} pour activer le CDN.
 >>
->> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/cdn-activation.png){.thumbnail}
 >>
 >> > [!warning]
 >> > 

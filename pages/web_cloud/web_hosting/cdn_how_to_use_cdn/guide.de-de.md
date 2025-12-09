@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseiten mit CDN beschleunigen"
 excerpt: "Diese Anleitung erklärt, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern"
-updated: 2025-11-27
+updated: 2025-12-10
 ---
 
 ## Ziel 
@@ -74,13 +74,13 @@ Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem gewünschten Domainnamen oder Subdomain und dann auf `CDN Aktivieren`{.action}.
 >>
->> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options-cdn-disabled.png){.thumbnail}
 >>
 > **Schritt 5**
 >>
 >> Klicken Sie in dem geöffneten Fenster auf `Bestätigen`{.action}, um den CDN zu aktivieren.
 >>
->> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
+>> ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/cdn-activation.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
