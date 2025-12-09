@@ -1,6 +1,6 @@
 ---
-title: Clickhouse - How to create a Clickhouse cluster
-excerpt: Learn how to create a Clickhouse cluster
+title: ClickHouse - How to create a ClickHouse cluster
+excerpt: Learn how to create a ClickHouse cluster
 updated: 2026-01-10
 ---
 
@@ -8,7 +8,7 @@ updated: 2026-01-10
 
 ClickHouse is an open-source, columnar analytical database system designed for real-time processing of massive data volumes, providing high performance, scalability, and low latency.
 
-This guide explains how to create a Clickhouse cluster via the OVHcloud Control Panel. 
+This guide explains how to create a ClickHouse cluster via the OVHcloud Control Panel. 
 
 ## Requirements
 
@@ -84,7 +84,7 @@ Click the `API and Terraform equivalent`{.action} button to open the following w
 The informations displayed in this window could help you automate your service creation with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) or the OVHcloud Terraform Provider.
 
 When you are ready click the `Order`{.action} button to create your service.
-In a matter of minutes, your new Clickhouse service will be deployed.
+In a matter of minutes, your new ClickHouse service will be deployed.
 Messages in the OVHcloud Control Panel will inform you when the streaming tool is ready to use.
 
 ## We want your feedback!
