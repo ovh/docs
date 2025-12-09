@@ -1,12 +1,12 @@
 ---
-title: Clickhouse - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Analytics for Clickhouse
+title: ClickHouse - Capabilities and Limitations
+excerpt: Discover the capabilities and limitations of Analytics for ClickHouse
 updated: 2026-01-15
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Analytics for Clickhouse offer.
+This page provides the technical capabilities and limitations of the Analytics for ClickHouse offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/18>.
 
@@ -21,17 +21,17 @@ The Analytics offer is available in the following regions:
 
 Analytics nodes have to be in the same region.
 
-### Clickhouse versions
+### ClickHouse versions
 
-The Analytics offer supports the following Clickhouse versions:
+The Analytics offer supports the following ClickHouse versions:
 
-- Clickhouse 25
+- ClickHouse 25
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for Clickhouse version on their official page : <https://clickhouse.com/docs/whats-new/changelog>
+Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for ClickHouse version on their official page : <https://clickhouse.com/docs/whats-new/changelog>
 
-### Clickhouse connectors
+### ClickHouse connectors
 
-You can use any of the [Clickhouse-recommended drivers and interfaces](https://clickhouse.com/docs/interfaces/overview) to access your instance.
+You can use any of the [ClickHouse-recommended drivers and interfaces](https://clickhouse.com/docs/interfaces/overview) to access your instance.
 
 ### Plans
 
@@ -60,7 +60,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### License type
 
-Clickhouse software is under the Apache License 2.0, a liberal open-source license, similar to BSD or MIT licenses.
+ClickHouse software is under the Apache License 2.0, a liberal open-source license, similar to BSD or MIT licenses.
 More information on <https://github.com/ClickHouse/ClickHouse/blob/master/LICENSE>.
 
 ### Hardware resources
@@ -99,7 +99,7 @@ See the [Handling «Disk Full» situations documentation](/pages/public_cloud/da
 
 #### Network
 
-Clickhouse clusters are reachable on a customized port available through the Control Panel and the API.
+ClickHouse clusters are reachable on a customized port available through the Control Panel and the API.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
@@ -123,7 +123,7 @@ Once your service is up and running, you will be able to specify CIDR blocks to 
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Analytcis for Clickhouse depends on the available total memory on the node.
+The number of simultaneous connections in Public Cloud Analytcis for ClickHouse depends on the available total memory on the node.
 We allow approximately 100 connections per 4 GB of RAM memory, capped to a maximum of 1000 active connections.
 
 So for example on a server with 7 GB memory, you will get approximately 200 connections and with 15 GB memory you will get 400 connections.
@@ -132,7 +132,7 @@ So for example on a server with 7 GB memory, you will get approximately 200 conn
 
 <!-- Voir si guide créer sinon delete -->
 
-You can further customise your Clickhouse by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/data_analytics/analytics/Clickhouse_advanced_parameters_references) for more information on the supported parameters.  
+You can further customise your ClickHouse by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/data_analytics/analytics/Clickhouse_advanced_parameters_references) for more information on the supported parameters.  
 
 #### Backups
 
