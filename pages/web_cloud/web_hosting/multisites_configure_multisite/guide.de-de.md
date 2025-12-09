@@ -1,220 +1,307 @@
 ---
-title: Mehrere Websites auf einem Webhosting einrichten
-excerpt: Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden
-updated: 2024-10-08
+title: 'Webhosting mit mehreren Webseiten teilen'
+excerpt: "Erfahren Sie, wie Sie verschiedene Webseiten auf Ihrem Webhosting-Plan hosten können"
+updated: 2025-12-10
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Ziel
 
-Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch wenn die Domainnamen nicht bei OVHcloud registriert sind.
+Sie können mehrere Webseiten auf einem Webhosting-Plan hosten, selbst wenn die Domänennamen nicht bei OVHcloud registriert sind.
 
-**Diese Anleitung erklärt, wie Sie mehrere Websites über ein Webhosting bereitstellen.**
+Möchten Sie eine neue Website auf Ihrem Webhosting-Plan hinzufügen?
 
-### Inhaltsübersicht
+**Erfahren Sie, wie Sie verschiedene Webseiten auf Ihrem Webhosting-Plan hosten können.**
 
-- 1: [Auf die Multisite-Verwaltung zugreifen](#multisite-menu)
-- 2: [Eine Domain oder Subdomain hinzufügen](#add-domain)
-    - 2.1: [Eine bei OVHcloud registrierte Domain hinzufügen](#add-ovhcloud-domain)
-    - 2.2: [Eine externe Domain hinzufügen](#add-external-domain)
-    - 2.3: [Diagnose Ihrer Domainnamen](#diagnostic-domain)
-- 3: [Ihre Website online stellen](#site-online)
+> [!primary]
+> Wenn Sie bereits eine Website auf Ihrem Webhosting-Plan erstellt haben und diese mit einem neuen Domänennamen oder Subdomain verknüpfen möchten, besuchen Sie direkt [diesen Leitfaden](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
 ## Voraussetzungen
 
-- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting-multisite) in Ihrem Kunden-Account.
-- Sie besitzen eine oder mehrere [Domainnamen](/links/web/domains).
-- Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)) zu ändern.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Ein kompatibler [OVHcloud Webhosting-Plan](/links/web/hosting-multisite) besitzen.
+- Einen oder mehrere [Domänennamen](/links/web/domains) besitzen.
+- Die Konfiguration Ihrer Domänen von der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) aus ändern können.
+- Angemeldet sein bei Ihrem [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
+### 1 - Fügen Sie eine Website zu Ihrem Webhosting-Plan hinzu
+
+**Klicken Sie auf einen der untenstehenden Titel, um die Erklärungen anzuzeigen.**
+
+<a name="add-domain-ovhcloud"></a>
+
+/// details | Fügen Sie eine Website mit einem Domänennamen hinzu, der in Ihrem OVHcloud Kundencenter verwaltet wird
+
+Dieser Abschnitt gilt nur, wenn der Domänennamen (und/oder seine aktive DNS-Zone), mit dem Sie Ihre Website erstellen möchten, **in Ihrem OVHcloud Kundencenter** vorhanden ist.
+
+Klicken Sie auf die nachfolgenden Tabs, um die **7** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Klicken Sie oben links in der Tabelle auf die Schaltfläche `Eine Seite hinzufügen`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Aktivieren Sie die Option `Einen bestehenden OVHcloud-Domain zuordnen`{.action} und klicken Sie auf `Weiter`{.action}.
+>>
+>> Geben Sie im Feld **Seitenname** den Namen ein, den Sie für Ihre Website verwenden möchten. Dieser Name wird nur in der Registerkarte `Meine Seiten`{.action} Ihres Webhosting-Plans angezeigt.
+>>
+>> Wählen Sie anschließend den zu verknüpfenden Domänennamen im Dropdown-Feld **Domainname - erforderlich** aus, das darunter erscheint.
+>>
+>> > [!primary]
+>> > Um eine Subdomain hinzuzufügen, wählen Sie zunächst den Domänennamen aus der Liste (z. B. domain.tld) aus. Aktivieren Sie anschließend das Feld `Subdomain erstellen`{.action}. Ein Eingabefeld wird angezeigt, in das Sie die Subdomain eingeben können (z. B. **sub**.domain.tld).
+>> >
+>> > **Besonderheit**: Subdomains im Format `www` (z. B. **www**.domain.tld) werden automatisch hinzugefügt. Daher ist es nicht notwendig, diese spezielle Subdomain im Eingabefeld zu erwähnen.
+>>
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-step-1.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Standardmäßig wird der **Wurzelverzeichnis** Ihrer Website automatisch erstellt, sobald Sie diese zu Ihrem Webhosting-Plan hinzufügen. Dieser **Wurzelverzeichnis** wird ebenfalls im Speicherbereich Ihres Webhosting-Plans (über FTP, SFTP oder SSH, je nach Angebot) erstellt.
+>> >
+>> > Wenn Sie den Namen des **Wurzelverzeichnis** anpassen möchten, insbesondere wenn der Inhalt Ihrer Website bereits in einem bestimmten Ordner Ihres Speicherbereichs vorhanden ist, können Sie dies tun, indem Sie die Schaltfläche `Erweiterte Konfiguration`{.action} aktivieren.
+>> >
+>> > **Der Name des Wurzelverzeichnisses kann nur zum Zeitpunkt des Hinzufügens der Website zu Ihrem Webhosting-Plan angepasst werden.** Das bedeutet, dass Sie den Namen des Root-Ordners nach der Erstellung und dem Hinzufügen der Website zu Ihrem Webhosting-Plan **nicht mehr ändern können**.
+>>
+>> Wenn Sie den Namen des Root-Ordners anpassen oder eine der **erweiterten Optionen** nutzen möchten, aktivieren Sie die Schaltfläche `Erweiterte Konfiguration`{.action} und wechseln Sie zu **Schritt 6**. Andernfalls können Sie direkt zu **Schritt 7** wechseln.
+>>
+> **Schritt 6**
+>>
+>> > [!primary]
+>> >
+>> > Dieser Schritt ist **optional**. Er richtet sich ausschließlich an Kunden, die den Root-Ordner anpassen oder bestimmte Funktionen über die Schaltfläche `Erweiterte Konfiguration`{.action} aktivieren möchten.
+>> >
+>> > **Mit Ausnahme der Anpassung des Wurzelverzeichnisses können alle diese Funktionen später aktiviert werden, sobald der Domänennamen zu Ihrer Website hinzugefügt wurde.** Dazu können Sie direkt [diesen Leitfaden](/pages/web_cloud/web_hosting/multisites_modify_domain) konsultieren.
+>>
+>> Um den Namen des Root-Ordners anzupassen, der mit Ihrer Website verknüpft und deren Dateien enthalten wird, geben Sie den gewünschten Namen im Feld **Wurzelverzeichnis** ein.
+>>
+>> Untenstehend finden Sie eine Beschreibung der weiteren Optionen. 
+>> Abhängig von Ihrem [Webhosting-Plan](/links/web/hosting) können einige der untenstehenden Optionen nicht ausgewählt werden.
+>>
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-advanced-configurations.png){.thumbnail}
+>>
+>> |Option|Beschreibung|
+>> |---|---|
+>> |IP des Landes|Ermöglicht das Nutzen einer geolokalisierten IP-Adresse (aus einer Liste von Ländern) für den ausgewählten Domänennamen.<br> Weitere Informationen finden Sie auf [dieser Seite](/links/web/hosting-options).|
+>> |Firewall|Ermöglicht die Aktivierung eines Firewalls (Filterung und Analyse von Anfragen) für den ausgewählten Domänennamen.<br> Weitere Informationen finden Sie auf [dieser Seite](/links/web/hosting-options).|
+>> |CDN|Ermöglicht die Aktivierung des CDNs (Caching von statischen Elementen Ihrer Website, wie z. B. Bilder) für den ausgewählten Domänennamen.<br> Weitere Informationen finden Sie auf [dieser Seite](/links/web/hosting-options-CDN).<br> Durch die Aktivierung von SSL und CDN können Sie außerdem vom Protokoll **HTTP/2** profitieren (dieses Protokoll ist standardmäßig in unserem Datacenter in Gravelines aktiviert).|
+>>
+>> Sobald die Schaltfläche `Erweiterte Konfiguration`{.action} aktiviert ist, können Sie auch die DNS-Konfigurationsmethode für Ihren Domänennamen auswählen:
+>>
+>> - **Für eine automatische DNS-Konfiguration** lassen Sie das Feld `Automatische Konfiguration (Empfohlen)`{.action} aktiviert.
+>> - **Für eine manuelle DNS-Konfiguration** aktivieren Sie das Feld `Manuelle Konfiguration`{.action}. Um anschließend die Konfiguration Ihrer DNS-Zone vorzunehmen, konsultieren Sie die folgenden Leitfäden:
+>>     - [Webhosting - Liste der IP-Adressen nach Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+>>     - [DNS-Zone von OVHcloud bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
+>>
+> **Schritt 7**
+>>
+>> Stellen Sie sicher, dass alle zuvor eingegebenen Informationen korrekt sind, und klicken Sie auf `Weiter`{.action}, um den Domänennamen oder die Subdomain zu Ihrer Website hinzuzufügen.
+>>
+>> Dieser Vorgang kann bis zu eine Stunde dauern.
+>>
+>> Wenn Sie die Option `Manuelle Konfiguration`{.action} in der Registerkarte `Erweiterte Konfiguration`{.action} nicht ausgewählt haben, erfolgt die DNS-Konfiguration automatisch, sofern die aktive DNS-Zone Ihres Domänennamens in Ihrem OVHcloud Kundencenter verwaltet wird.
+>>
+>> Andernfalls konsultieren Sie die folgenden Leitfäden, um Ihre DNS-Zone manuell zu konfigurieren:
+>>
+>> - [Webhosting - Liste der IP-Adressen nach Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+>> - [DNS-Zone von OVHcloud bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
+>>
+>> > [!primary]
+>> > Die Änderung der DNS-Konfiguration Ihres Domänennamens benötigt eine Ausbreitungszeit, die bis zu 24 Stunden dauern kann, bevor sie vollständig wirksam ist.
+
+///
+
+/// details | Fügen Sie eine Website mit einem Domänennamen hinzu, der nicht in Ihrem OVHcloud Kundencenter verwaltet wird
+
+Dieser Abschnitt gilt nur, wenn Sie eine Website mit einem Domänennamen hinzufügen möchten, der nicht in Ihrem OVHcloud-Konto vorhanden ist. Dies kann ein Domänennamen sein, der in einem anderen OVHcloud-Konto vorhanden ist oder bei einem anderen Anbieter registriert ist.
+
+Klicken Sie auf die nachfolgenden Tabs, um die **7** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Klicken Sie oben links in der Tabelle auf die Schaltfläche `Eine Seite hinzufügen`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Aktivieren Sie die Option `Einen externen Domain zuordnen`{.action} und klicken Sie auf `Weiter`{.action}.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
+>>
+> **Schritt 6**
+>>
+>> Geben Sie im Feld **Seitenname** den Namen ein, den Sie für Ihre Website verwenden möchten. Dieser Name wird nur in der Registerkarte `Meine Seiten`{.action} Ihres Webhosting-Plans angezeigt.
+>>
+>> Geben Sie anschließend den Domänennamen (z. B. domain.tld) oder die Subdomain (z. B. **sub**.domain.tld) ein, die Sie verknüpfen möchten, in das Feld **Domainname - erforderlich**, das darunter erscheint.
+>>
+>> > [!success]
+>> >
+>> > **Besonderheit**: Subdomains im Format `www` (z. B. **www**.domain.tld) werden automatisch hinzugefügt. Daher ist es nicht notwendig, diese spezielle Subdomain im Eingabefeld zu erwähnen.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-site-external-step-2.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Standardmäßig wird der **Wurzelverzeichnis** Ihrer Website automatisch erstellt, sobald Sie diese zu Ihrem Webhosting-Plan hinzufügen. Dieser **Wurzelverzeichnis** wird ebenfalls im Speicherbereich Ihres Webhosting-Plans (über FTP, SFTP oder SSH, je nach Angebot) erstellt.
+>> >
+>> > **Der Name des Wurzelverzeichnisses kann nur zum Zeitpunkt des Hinzufügens der Website zu Ihrem Webhosting-Plan angepasst werden.** Das bedeutet, dass Sie den Namen des Root-Ordners nach der Erstellung und dem Hinzufügen der Website zu Ihrem Webhosting-Plan **nicht mehr ändern können**.
+>>
+>> Um den Namen des Root-Ordners anzupassen, der mit Ihrer Website verknüpft und deren Dateien enthalten wird, geben Sie den gewünschten Namen im Feld **Wurzelverzeichnis** ein. Wenn Sie dies nicht tun möchten, lassen Sie das Feld unverändert.
+>>
+>> Klicken Sie anschließend auf die Schaltfläche `Weiter`{.action}.
+>>
+> **Schritt 7**
+>>
+>> > [!primary]
+>> >
+>> > Im Gegensatz zu Domänennamen, die direkt in Ihrem OVHcloud Kundencenter verwaltet werden, sind die **erweiterten Optionen** nicht direkt verfügbar, wenn Sie eine Website mit einem Domänennamen oder einer Subdomain hinzufügen, die nicht in Ihrem OVHcloud-Konto verwaltet wird.
+>> >
+>> > Mit Ausnahme des Root-Ordners können **alle diese Funktionen später aktiviert oder geändert werden, sobald der Domänennamen oder die externe Subdomain zu Ihrer Website hinzugefügt wurde.** Dazu können Sie direkt [diesen Leitfaden](/pages/web_cloud/web_hosting/multisites_modify_domain) konsultieren.
+>>
+>> Die Hinzufügung einer Website mit einem Domänennamen, der nicht bei OVHcloud ist, erfordert eine obligatorische zusätzliche Validierung. Dies ermöglicht uns, sicherzustellen, dass die Hinzufügung des externen Domänennamens legitim ist. Sie werden daher aufgefordert, die DNS-Konfiguration des Domänennamens zu ändern.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+>>
+>> Merken Sie sich die angezeigten Elemente und klicken Sie auf die Schaltfläche `Weiter`{.action}. Danach wird der Domänennamen vorübergehend hinzugefügt, bis Sie seine DNS-Konfiguration ändern können.
+>>
+>> > [!warning]
+>> >
+>> > Sie müssen diese Änderungen **sofort vornehmen**, damit Ihr Domänennamen ordnungsgemäß mit Ihrer Website verknüpft wird. Ohne diese Aktion wird die Hinzufügung Ihres Domänennamens storniert und Ihre neu erstellte Website wird nicht zugänglich sein.
+>> >
+>> > Die DNS-Einträge vom Typ **A** und **TXT** müssen zwingend in der aktiven DNS-Zone Ihres Domain-Namens platziert sein, damit dieser mit Ihrer Website verknüpft wird. Nur die DNS-Einträge vom Typ **AAAA** sind optional.
+>> >
+>> > Achten Sie darauf, dass Sie, wenn Sie `sub.domain.tld` verknüpfen möchten, den TXT-Eintrag `ovhcontrol.domain.tld` und nicht den Eintrag `ovhcontrol.sub.domain.tld` erstellen.
+>> >
+>> > Um die aktive DNS-Zone Ihres Domain-Namens zu finden, identifizieren Sie die [DNS-Server](/pages/web_cloud/domains/dns_server_edit), an die diese Domain angeschlossen ist. Sie müssen nur den Domain-Namen mithilfe des Feldes **TXT** bestätigen, nicht jedoch alle Unterdomänen.
+
+///
+
+/// details | Fügen Sie eine Website mit einem neuen Domain-Namen hinzu, der noch nicht registriert wurde
+
+Dieser Abschnitt gilt ausschließlich, wenn Sie eine Website mit einem Domain-Namen hinzufügen möchten, der noch nicht registriert wurde, weder bei OVHcloud noch bei einem anderen Registrar. Mit anderen Worten, es geht um Domain-Namen, die noch nicht abgeschlossen wurden.
+
+Klicken Sie auf die nachfolgenden Tabs, um die **6** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Klicken Sie links oben in der Tabelle auf die Schaltfläche `Eine Seite hinzufügen`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Aktivieren Sie die Option `Eine neue Domain bestellen`{.action} und klicken Sie auf `Weiter`{.action}.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>>
+> **Schritt 6**
+>>
+>> Sie werden dann zu unserer kommerziellen Seite für die Registrierung eines Domain-Namens weitergeleitet. Wählen Sie Ihren neuen Domain-Namen basierend auf der Marktabverfügbarkeit aus. Folgen Sie anschließend den Anweisungen im Bestellprozess bis zur Validierung der Bestellung. Dies geschieht ohne zusätzliche Registrierung eines neuen Webhosting-Plans.
+>>
+>> Nachdem Ihre Bestellung bezahlt und validiert wurde, warten Sie einige Minuten, bis diese verarbeitet wird.
+>>
+>> > [!primary]
+>> >
+>> > Sobald Ihr Domain-Name in Ihrem OVHcloud Kundencenter angezeigt wird, folgen Sie dem Abschnitt "[Fügen Sie eine Website zu Ihrem Webhosting-Plan hinzu](#add-domain-ovhcloud)" dieses Leitfadens, um Ihre Website Ihrem Webhosting hinzuzufügen.
+
+///
+
+### 2 - Ihre Website online stellen <a name="site-online"></a>
+
+Sobald Ihre Website mit Ihrem Domain-Namen auf Ihrem Webhosting registriert ist, können Sie den Inhalt Ihrer Website online stellen. Erinnern Sie sich daran, dass Sie diese Aktion im **Wurzelverzeichnis** durchführen müssen, das Sie bei der Hinzufügung der Website in Ihrem OVHcloud Kundencenter festgelegt haben.
+
+Um Sie bei diesem Vorgang zu unterstützen, stellt OVHcloud die Module WordPress, Joomla!, PrestaShop und Drupal bereit. Diese ermöglichen Ihnen, eine strukturierte Website mit automatischer Installation im zuvor konfigurierten Wurzelverzeichnis bereitzustellen. Weitere Informationen finden Sie in unserer Dokumentation "[Installation Ihrer Website mit 1-Klick-Modulen (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+
+Falls Sie hingegen Ihre Website manuell installieren möchten, laden Sie ihre Dateien herunter und übertragen Sie sie in das entsprechende Wurzelverzeichnis auf dem Speicherbereich Ihres Webhostings. Weitere Informationen finden Sie in unserer Dokumentation "[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
+
 > [!primary]
 >
-> Die meisten Angebote der Reihe [OVHcloud Webhosting](/links/web/hosting) inkludieren eine Option zur Erstellung von E-Mail-Accounts mit Adressen, die Ihren Domainnamen verwenden.
+> Wenn Sie mehrere Websites hinzufügen möchten, wiederholen Sie die in diesem Leitfaden beschriebenen Aktionen.
 >
-> Diese Option kann für **nur einen** Domainnamen aktiviert werden. Während *Multisite* mit mehreren verschiedenen Domainnamen funktioniert, können Sie die E-Mail-Option nur für einen Ihrer Domainnamen aktivieren.
->
-> Weitere Informationen zur Aktivierung dieser Option finden Sie in unserer [Anleitung](/pages/web_cloud/web_hosting/activate-email-hosting).
->
-
-### Schritt 1: Auf die Multisite-Verwaltung zugreifen <a name="multisite-menu"></a>
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action}, wählen Sie den betreffenden Dienst aus und gehen Sie zum Tab `Multisite`{.action}.
-
-Die angezeigte Tabelle listet alle Domains und Subdomains auf, die Ihrer Webhosting-Lösung hinzugefügt wurden. Einige wurden bei der Installation Ihres Hostings automatisch hinzugefügt.
-
-> [!primary]
->
-> Wenn Sie Ihre Website migrieren und Dienstunterbrechungen vermeiden möchten, folgen Sie [Schritt 3: Ihre Website online stellen](#site-online).
->
-
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
-
-### Schritt 2: Eine Domain oder Subdomain hinzufügen <a name="add-domain"></a>
-
-Um eine neue Domain oder Subdomain zu Ihrem Webhosting hinzuzufügen, klicken Sie links auf den Button `Aktionen`{.action}, dann auf `Eine Domain oder Subdomain hinzufügen`{.action} und wählen Sie den Domainnamen im angezeigten Fenster aus.
-
-![Aktionen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/actions-menu.png){.thumbnail}
-
-- **Eine bei OVHcloud registrierte Domain hinzufügen**:
-
-Hier werden nur die Domainnamen bei OVHcloud angezeigt, für die Sie als [technischer Kontakt und/oder Administrator in Ihrem Kundencenter](/pages/account_and_service_management/account_information/managing_contacts) hinterlegt sind. Wählen Sie aus der Liste aus und klicken Sie auf `Weiter`{.action}. Gehen Sie dann zu [Schritt 2.1: Eine bei OVHcloud registrierte Domain hinzufügen](#add-ovhcloud-domain).
-
-- **Eine externe Domain hinzufügen**:
-
-Falls die Domain einem anderen Kunden-Account zugeordnet ist oder außerhalb von OVHcloud (externer Provider) registriert ist, wählen Sie `Eine externe Domain hinzufügen`{.action} und klicken Sie auf `Weiter`{.action}. Gehen Sie dann zu [Schritt 2.2: Externe Domain hinzufügen](#add-external-domain).
-
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
-
-#### Schritt 2.1: Eine bei OVHcloud registrierte Domain hinzufügen <a name="add-ovhcloud-domain"></a>
-
-> [!warning]
-> Dieser Schritt gilt nur, wenn Sie "Eine bei OVHcloud registrierte Domain hinzufügen" ausgewählt haben. Die Domain oder deren DNS-Zone muss sich **in Ihrem Kundencenter** befinden. Für externe Domainnamen gehen Sie zu [Schritt 2.2: eine externe Domain hinzufügen](#add-external-domain).
-
-Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [Webhosting-Angebot](/links/web/hosting) können manche Optionen nicht verfügbar sein.
-
-> [!primary]
-> Um eine Subdomain hinzuzufügen, wählen Sie zuerst die Hauptdomain aus der Liste aus (Beispiel: domain.tld). Im nächsten Schritt können Sie die Subdomain angeben (Beispiel: **blog**.domain.tld).
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
-
-|Information|Beschreibung|
-|---|---|
-|Domains|Die ausgewählte Domain wird in der Standardeinstellung automatisch angezeigt. Sie können dort eine Subdomain hinzufügen (zum Beispiel **blog**.domain.tld) und gleichzeitig die zugehörige www-Subdomain erstellen (zum Beispiel **www.blog**.domain.tld). Diese Domain ist die Internetadresse der Website, die Sie online stellen möchten.|
-|Wurzelverzeichnis|Legen Sie den Ordner auf Ihrem Speicherplatz fest, auf den die Domain verweist. Die Dateien der Website müssen in diesem Ordner liegen. Bei blog.domain.tld zum Beispiel könnte das Wurzelverzeichnis "blog" sein. Sollte das Verzeichnis nicht existieren, wird es automatisch erstellt.|
-|SSL|Mit SSL können Sie für die ausgewählte Domain eine verschlüsselte Verbindung (HTTPS://) einrichten. Weitere Informationen finden Sie auf unserer Seite zu [SSL-Zertifikaten](/links/web/hosting-options-ssl). Wenn Sie SSL und CDN (Content Delivery Network) aktivieren, können Sie auch das **HTTP/2**-Protokoll verwenden (letzteres ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
-|CDN aktivieren|Hier können Sie für die ausgewählte Domain ein CDN aktivieren (Caching statischer Inhalte Ihrer Website, beispielsweise Bilder). Weitere Informationen finden Sie auf unserer Seite zum [Content Delivery Network](/links/web/hosting-options-cdn). Wenn Sie SSL und CDN aktivieren, können Sie auch das **HTTP/2**-Protokoll verwenden (letzteres ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
-|IP des Landes|Bei diesem Punkt können Sie für die ausgewählte Domain eine geolokalisierte IP-Adresse aus einer Länderliste auswählen. Weitere Informationen hierzu finden Sie auf unserer Seite zu [IPs und Geolokalisierung](/links/web/hosting-options).|
-|Firewall aktivieren|Hier können Sie für die ausgewählte Domain eine Firewall (Anfragenanalyse) aktivieren. Weitere Informationen finden Sie auf unserer Seite zu [ModSecurity](/links/web/hosting-options).|
-|Getrennte Logs|Sie können hier für die ausgewählte Domain einen neuen Bereich für separate Logs aktivieren. Wählen Sie aus einer Liste eine Domain aus, die als Zugangsname für den neuen Bereich verwendet wird. Weitere Informationen finden Sie auf [unserer Seite zu detaillierten Statistiken](/links/web/hosting-traffic-analysis).|
-
-> [!warning]
->
-> Sie können die separaten Logs nicht für eine externe Domain aktivieren. Diese Option ist nur für bei OVHcloud registrierte Domains verfügbar.
->
-
-Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigte Zusammenfassung.
-
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
-
-Wenn Sie eine bei OVHcloud registrierte Domain ausgewählt haben, können Sie deren DNS-Konfiguration automatisch oder manuell ändern.
-
-- **Automatische DNS-Konfiguration**: Setzen Sie einen Haken im Feld `Automatische Konfiguration (empfohlen)`{.action}.
-- **Manuelle DNS-Konfiguration**: Entfernen Sie den Haken im Feld `Automatische Konfiguration (empfohlen)`{.action} und notieren Sie die angezeigten Informationen. Wenn Sie diese Einstellung vornehmen möchten, lesen Sie unsere Anleitung ["Bearbeiten der OVHcloud DNS-Zone"](/pages/web_cloud/domains/dns_zone_edit).
-
-Klicken Sie auf `Bestätigen`{.action}, um die Domain hinzuzufügen. Dies kann bis zu einer Stunde dauern. Die Änderung der DNS-Konfiguration Ihrer Domain erfordert zusätzlich eine Propagationszeit von 4 bis 24 Stunden, bis sie voll wirksam ist.
-
-Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website online stellen](#site-online).
-
-#### Schritt 2.2: Eine externe Domain hinzufügen <a name="add-external-domain"></a>
-
- Dieser Schritt gilt nur, wenn Sie "Externe Domain hinzufügen" ausgewählt haben.
- 
- Ihre Domain ist also nicht bei OVHcloud registriert **oder** nicht in **Ihrem** OVHcloud Kunden-Account registriert. 
-
- > Bevor Sie fortfahren, bearbeiten Sie am besten die DNS-Zone der externen Domain, bevor Sie den Multisite-Eintrag hinzufügen.
- >
- > Die Änderung der Konfiguration der externen Domain (die zugehörige DNS-Zone) muss über das Interface des Anbieters vorgenommen werden, der die externe Domain verwaltet. Wenn es sich um OVHcloud handelt, lesen Sie unsere Anleitung ["Bearbeiten der OVHcloud DNS-Zone"](/pages/web_cloud/domains/dns_zone_edit). Nach der Änderung ist eine Propagationszeit von 1 bis 24 Stunden erforderlich, bis sie voll wirksam ist.
->
-> Im Folgenden finden Sie die 2 Elemente, die zur DNS-Konfiguration Ihrer externen Domain geändert werden müssen:
->
-> |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
-> |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.domain.tld`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br><br>Bitte beachten Sie, wenn Sie `blog.domain.tld` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.domain.tld` sein muss, und nicht `ovhcontrol.blog.domain.tld`.<br><br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web_cloud/domains/dns_server_edit) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
->
-> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
->
-> |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
-> |---|---|---|
-> |A und AAAA|Tab `Allgemeine Informationen`{.action}, neben **IPv4** und **IPv6**|Dank diesen beiden Einträgen kann Ihre Domain die Website anzeigen, die Sie auf Ihrem Webhosting online stellen. Weisen Sie Ihre Domain oder Subdomain der IP-Adresse Ihres Hostings zu.|
->
-> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
->
-
- Passen Sie nun die Optionen zum Hinzufügen der Domain an. Einige Optionen Ihres [Webhostings](/links/web/hosting) können nicht direkt beim Hinzufügen der Domain aktiviert werden. Sie können die Optionen erst im Anschluss verwenden, indem Sie die Multisite-Einstellungen ändern, nachdem die Domain hinzugefügt wurde.
-
-|Information|Beschreibung|
-|---|---|
-|Domain|Geben Sie hier die Domain ein, die Sie verwenden möchten. Fügen Sie bei Bedarf eine Subdomain hinzu (**blog**.domain.tld) und erstellen Sie gleichzeitig die zugehörige www-Subdomain (zum Beispiel **www.blog**.domain.tld). Diese Domain entspricht der Internetadresse der Website, die Sie online stellen möchten. Bitte beachten Sie, dass Sie die Rechte für die Änderung der DNS-Konfiguration benötigen, um die Domain hinzuzufügen.|
-|Wurzelverzeichnis| Legen Sie den Ordner auf Ihrem Speicherplatz fest, auf den die Domain verweist. Die Dateien der Website müssen in diesem Ordner liegen. Bei blog.domain.tld zum Beispiel könnte das Wurzelverzeichnis "blog" sein. Sollte das Verzeichnis nicht existieren, wird es automatisch erstellt.|
-|IPv6 aktivieren|Hier können Sie für die angegebene Domain das IPv6-Protokoll aktivieren. Weitere Informationen hierzu finden Sie auf unserer Seite zu [IPs und Geolokalisierung](/links/web/hosting-options).|
-
-Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigte Zusammenfassung.
-
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
-
-Jedes Hinzufügen einer Domain außerhalb von OVHcloud erfordert eine zusätzliche Validierung. So können wir sicherstellen, dass das Hinzufügen der externen Domain legitim ist. In einer Nachricht werden Sie aufgefordert, die DNS-Konfiguration der Domain zu ändern.
-
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
-
-Überprüfen Sie die angezeigten Informationen und klicken Sie dann auf den Button `Bestätigen`{.action}. Die Domain wird nun temporär hinzugefügt, bis Sie die DNS-Konfiguration ändern.
-
-> [!warning]
->
-> Sie müssen diese Änderungen **zeitnah** vornehmen, damit Ihre Domain korrekt hinzugefügt wird. Andernfalls wird das Hinzufügen Ihrer Domain abgebrochen.
->
-> Die DNS-Einträge vom Typ **A** und **TXT** müssen zwingend in der aktiven DNS-Zone Ihres Domainnamens konfiguriert werden, damit er zu Ihrem Webhosting hinzugefügt werden kann. Nur DNS-Einträge vom Typ **AAAA** sind optional.
->
-
-#### Schritt 2.3: Diagnose Ihrer Domainnamen <a name="diagnostic-domain"></a>
-
-In der Tabelle im Tab `Multisite` wird eine Spalte `Diagnose` angezeigt, die Sie darüber informiert, ob Ihr Domainname korrekt auf das zugehörige Webhosting verweist. Damit können Sie schnell überprüfen, ob die DNS-Konfiguration korrekt für das Webhosting durchgeführt wurde und potenzielle DNS-Fehler identifizieren und beheben. Für jeden Domainnamen sind drei Diagnoseergebnisse möglich:
-
-- `A/AAAA` grün
-- `A/AAAA` gelb
-- `A/AAAA` grau
-
-##### A/AAAA grün
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
-
-Wenn `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass der **A**-Eintrag (für IPv4-Adressen) und/oder der **AAAA**-Eintrag (für IPv6-Adressen) Ihres Domainnamens korrekt auf die IP-Adresse Ihres Webhostings verweist. Die DNS-Konfiguration Ihrer Domain ist also für den Betrieb mit Ihrem Webhosting korrekt.
-
-##### A/AAAA gelb
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
-
-Wenn `A/AAAA` in der Spalte `Diagnose` gelb angezeigt wird, bedeutet dies, dass der **A**-Eintrag (IPv4) oder **AAAA**-Eintrag (IPv6) Ihres Domainnamens auf eine IP-Adresse verweist, jedoch nicht auf das Webhosting, von dem aus Sie die Daten der Spalte `Diagnose` abrufen.  
-Klicken Sie auf `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
-Um DNS-Fehler zu beheben und sicherzustellen, dass korrekt auf das gewünschte Webhosting verwiesen wird, folgen Sie den Schritten in unserer Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.
-
-##### A/AAAA grau
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
-
-Wenn `A/AAAA` in der Spalte `Diagnose` grau angezeigt wird, bedeutet dies, dass der Domainname derzeit auf keine IP-Adresse verweist und dass für diesen Domainnamen keine **A**- oder **AAAA**-Einträge konfiguriert sind.  
-Klicken Sie auf `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
-
-Um die **A**- oder **AAAA**-Einträge hinzuzufügen und Ihren Domainnamen korrekt zu konfigurieren, folgen Sie den Schritten in unserer Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.
-
-### Schritt 3: Ihre Website online stellen <a name="site-online"></a>
-
-Sobald die Domain hinzugefügt wurde, muss nur noch die zugehörige Website online gestellt werden. Zur Erinnerung: Nehmen Sie diese Änderung in dem Wurzelverzeichnis vor, das Sie im vorherigen Schritt festgelegt haben.
-
-Um Ihnen dabei zu helfen, können Sie mithilfe der 1-Klick-Module von OVHcloud eine gebrauchsfertige Websitestruktur nutzen. Die Website wird dann automatisch im zuvor konfigurierten Wurzelverzeichnis installiert. Weitere Informationen zu den 1-Klick-Modulen finden Sie in unserer Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules). 
-
-Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehörigen Dateien zusammen und stellen Sie diese im entsprechenden Wurzelverzeichnis auf Ihrem Speicherplatz online. Weitere Informationen zur manuellen Installation Ihrer Website finden Sie in unserer Anleitung [„Eine Website auf Ihrem Webhosting online stellen“](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
-
-> [!primary]
->
-> Wenn Sie mehrere Websites hinzufügen möchten, wiederholen Sie diese Schritte.
->
-> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](/links/web/hosting) gibt an, wie viele empfohlene Websites Sie auf Ihrem Speicherplatz hosten können.
->
+> Wir empfehlen Ihnen, aufmerksam zu sein, wie viele Websites auf Ihrem Webhosting vorhanden sind. Je mehr Websites vorhanden sind, desto mehr Ressourcen Ihres Webhostings werden beansprucht. [Die Seite mit unseren Webhosting-Angeboten](/links/web/hosting) gibt an, wie viele Websites Sie auf Ihrem Webhosting empfohlenweise hosten können.
 
 ## Weiterführende Informationen
 
-[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
+[Installation Ihrer Website mit 1-Klick-Modulen (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Bearbeiten der DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
 [Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie [hier unsere Support-Angebote einsehen](/links/support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Treten Sie unserer [User Community](/links/community) bei.

@@ -266,7 +266,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 >> Cochez l'option `Commander un nouveau domaine`{.action} et cliquez sur `Continuer`{.action}.
 >>
->> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-new-step-1.png){.thumbnail}
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
 >>
 > **Étape 6**
 >>
