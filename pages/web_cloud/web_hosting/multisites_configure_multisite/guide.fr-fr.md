@@ -31,14 +31,14 @@ Vous souhaitez ajouter un nouveau site web sur votre hébergement web ?
 
 ## Prérequis
 
-- Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
 - Disposer d'un ou plusieurs [noms de domaine](/links/web/domains).
-- Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit)).
+- Pouvoir modifier la configuration de vos noms de domaine depuis la [zone DNS](/pages/web_cloud/domains/dns_zone_edit).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-### 1 - Déclarer l'ajout d'un site web sur votre hébergement web présent dans votre espace client OVHcloud
+### 1 - Ajouter un site web sur votre offre d'hébergement web
 
 **Cliquez sur l'un des titres ci-dessous pour afficher les explications.**
 
@@ -46,24 +46,24 @@ Vous souhaitez ajouter un nouveau site web sur votre hébergement web ?
 
 /// details | Ajouter un site web avec nom de domaine géré depuis votre espace client OVHcloud
 
-Cette partie s'applique uniquement si le nom de domaine (et/ou sa zone DNS active) avec lequel vous souhaitez créer votre site web se trouvent **dans votre espace client OVHcloud**.
+Cette partie s'applique uniquement si le nom de domaine (et/ou sa zone DNS active) avec lequel vous souhaitez créer votre site web se trouve **dans votre espace client OVHcloud**.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
@@ -71,7 +71,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Étape 4**
 >>
->> Au dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}
+>> Au-dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -79,12 +79,12 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Cochez l'option `Associer un domaine OVHcloud existant`{.action} et cliquez sur `Continuer`{.action}.
 >>
->> Dans le champ intitulé **Nom du site**, renseignez le nom que vous souhaitez utiliser pour votre site web. Ce nom sera uniquement visible depuis l'onglet `Mes sites`{.action} de votre hébergement web.
+>> Dans le champ **Nom du site**, renseignez le nom que vous souhaitez utiliser pour votre site web. Ce nom sera visible uniquement depuis l'onglet `Mes sites`{.action} de votre hébergement web.
 >>
 >> Sélectionnez ensuite le nom de domaine à associer dans le menu déroulant **Nom de domaine - obligatoire** qui apparaît en dessous.
 >>
 >> > [!primary]
->> > Pour ajouter un sous-domaine, sélectionnez d'abord le nom de domaine dans la liste (par exemple : domain.tld). Cochez ensuite la case intitulée `Créer un sous-domaine`{.action}. Un champ de saisie apparaît pour vous permettre de renseigner le sous-domaine (par exemple : **sub**.domain.tld).
+>> > Pour ajouter un sous-domaine, sélectionnez d'abord le nom de domaine dans la liste (par exemple : domain.tld). Cochez ensuite la case `Créer un sous-domaine`{.action}. Un champ de saisie apparaît pour vous permettre de renseigner le sous-domaine (par exemple : **sub**.domain.tld).
 >> >
 >> > **Cas particulier** : Les sous-domaines en `www` (par exemple : **www**.domain.tld) sont automatiquement ajoutés en complément du nom de domaine. Par conséquent, il est inutile de préciser ce sous-domaine spécifique dans le champ de saisie.
 >>
@@ -92,9 +92,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> > [!warning]
 >> >
->> > Par défaut, le **dossier racine** de votre site web est généré automatiquement une fois le site web ajouté à votre hébergement web. Ce même **dossier racine** est alors créé en parallèle dans l'espace de stockage de votre hébergement web (accessible via le protocole FTP, SFTP ou SSH en fonction de votre offre d'hébergement web). Si vous souhaitez définir vous-même le nom du **dossier racine**, notamment si vous avez déjà placé le contenu de votre site web dans un dossier spécifique présent dans l'espace de stockage de votre hébergement web, vous pourrez le définir en activant le bouton `Configuration avancée`{.action}.
+>> > Par défaut, le **dossier racine** de votre site web est créé automatiquement lors de l’ajout du site web à votre hébergement web. Ce même **dossier racine** est également généré dans l’espace de stockage de votre hébergement web (accessible en FTP, SFTP ou SSH, selon votre offre).
 >> >
->> > **Le nom du dossier racine est uniquement personnalisable lors de l'ajout du site web à votre hébergement web.** Cela signifie qu'un fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
+>> > Si vous souhaitez personnaliser le nom du **dossier racine**, notamment si le contenu de votre site web est déjà présent dans un dossier spécifique de votre espace de stockage, vous pouvez le définir en activant le bouton `Configuration avancée`{.action}.
+>> >
+>> > **Le nom du dossier racine n’est personnalisable qu’au moment de l’ajout du site web à votre hébergement web.** Cela signifie qu'une fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
 >>
 >> Si vous souhaitez personnaliser le nom du dossier racine ou utiliser l'une des **options avancées** disponibles, activez le bouton `Configuration avancée`{.action} et passez à **l'étape 6**. Sinon, poursuivez directement à **l'étape 7**.
 >>
@@ -102,11 +104,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> > [!primary]
 >> >
->> > Cette étape est **facultative**. Elle s'adresse uniquement aux clients souhaitant personnaliser le dossier racine et / ou activer certaines fonctionnalités disponibles via le bouton `Configuration avancée`{.action}.
+>> > Cette étape est **facultative**. Elle s'adresse uniquement aux clients souhaitant personnaliser le dossier racine et/ou activer certaines fonctionnalités disponibles via le bouton `Configuration avancée`{.action}.
 >> >
->> > **A l'exception de la personnalisation du dossier racine, toutes ces fonctionnalités peuvent être activées ultérieurement une fois le nom de domaine ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **À l'exception de la personnalisation du dossier racine, toutes ces fonctionnalités peuvent être activées ultérieurement une fois le nom de domaine ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
->> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom désiré dans le champ intitulé **dossier racine**.
+>> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom souhaité dans le champ **dossier racine**.
 >>
 >> Retrouvez ci-dessous un descriptif des autres options.
 >> Selon votre offre d'[hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ci-dessous ne pourront pas être sélectionnés.
@@ -117,12 +119,12 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> |---|---|
 >> |IP du pays|Permet de bénéficier d'une adresse IP géolocalisée (parmi une liste de pays) pour le nom de domaine sélectionné.<br> Apprenez-en plus grâce à [cette page](/links/web/hosting-options).|
 >> |Firewall|Permet d'activer un pare-feu (filtrage et analyse des requêtes) sur le nom de domaine sélectionné.<br> Apprenez-en plus grâce à [cette page](/links/web/hosting-options).|
->> |CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site web, comme les images) sur le nom de domaine sélectionné.<br> Apprenez-en plus grâce à [notre page CDN](/links/web/hosting-options-cdn).<br> En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP/2** (ce protocole est activé par défaut dans notre datacentre de Gravelines).|
+>> |CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site web, comme les images) sur le nom de domaine sélectionné.<br> Apprenez-en plus grâce à [notre page CDN](/links/web/hosting-options-cdn).<br> En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP/2** (ce protocole est activé par défaut dans notre datacenter de Gravelines).|
 >>
 >> Une fois le bouton `Configuration avancée`{.action} activé, vous pouvez également choisir le mode de configuration DNS de votre nom de domaine :
 >>
 >> - **Pour une configuration DNS automatique**, laissez la case `Configuration automatique (recommandée)`{.action} cochée.
->> - **Pour une configuration DNS manuelle**, cochez la case `Configuration manuelle`{.action}. Pour réaliser ensuite le paramétrage, référez-vous aux guides suivants :
+>> - **Pour une configuration DNS manuelle**, cochez la case `Configuration manuelle`{.action}. Pour réaliser ensuite le paramétrage de votre zone DNS, référez-vous aux guides suivants :
 >>     - [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >>
@@ -146,24 +148,24 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 
 /// details | Ajouter un site web avec nom de domaine non géré depuis votre espace client OVHcloud
 
-Cette partie s’applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n’est pas présent dans votre compte OVHcloud. Cela peut être un nom de domaine présent dans un autre compte OVHcloud ou enregistré chez un autre fournisseur.
+Cette partie s'applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n'est pas présent dans votre compte OVHcloud. Il peut s'agir d'un nom de domaine présent dans un autre compte OVHcloud ou enregistré chez un autre fournisseur.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
@@ -171,7 +173,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Étape 4**
 >>
->> Au dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}
+>> Au-dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -183,7 +185,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Étape 6**
 >>
->> Dans le champ intitulé **Nom du site**, renseignez le nom que vous souhaitez utiliser pour votre site web. Ce nom sera uniquement visible depuis l'onglet `Mes sites`{.action} de votre hébergement web.
+>> Dans le champ **Nom du site**, renseignez le nom que vous souhaitez utiliser pour votre site web. Ce nom sera visible uniquement depuis l'onglet `Mes sites`{.action} de votre hébergement web.
 >>
 >> Saisissez ensuite le nom de domaine (par exemple : domain.tld) ou le sous-domaine (par exemple : **sub**.domain.tld) à associer dans le champ **Nom de domaine - obligatoire** qui apparaît en dessous.
 >>
@@ -195,11 +197,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> > [!warning]
 >> >
->> > Par défaut, le **dossier racine** de votre site web est généré automatiquement une fois le site web ajouté à votre hébergement web. Ce même **dossier racine** est alors créé en parallèle dans l'espace de stockage de votre hébergement web (accessible via le protocole FTP, SFTP ou SSH en fonction de votre offre d'hébergement web).
+>> > Par défaut, le **dossier racine** de votre site web est créé automatiquement lors de l’ajout du site web à votre hébergement web. Ce même **dossier racine** est également généré dans l’espace de stockage de votre hébergement web (accessible en FTP, SFTP ou SSH, selon votre offre).
 >> >
->> > **Le nom du dossier racine est uniquement personnalisable lors de l'ajout du site web à votre hébergement web.** Cela signifie qu'un fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
+>> > **Le nom du dossier racine n’est personnalisable qu’au moment de l’ajout du site web à votre hébergement web.** Cela signifie qu'une fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
 >>
->> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom désiré dans le champ intitulé **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ tel qu'il s'affiche sans rien ajouter à l'intérieur.
+>> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom souhaité dans le champ **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ inchangé.
 >>
 >> Une fois les informations complétées, cliquez sur le bouton `Continuer`{.action}.
 >>
@@ -211,11 +213,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> >
 >> > Cependant et à l'exception du dossier racine, **toutes ces fonctionnalités peuvent être activées ou modifiées ultérieurement une fois le nom de domaine ou le sous-domaine externe ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
->> Tout ajout d'un site web avec un nom de domaine externe à OVHcloud nécessite une validation supplémentaire obligatoire. Cela nous permet de nous assurer que l'ajout du nom de domaine externe est légitime. Un message vous invitera donc à modifier la configuration DNS du nom de domaine.
+>> L'ajout d'un site web avec un nom de domaine externe à OVHcloud nécessite une validation supplémentaire obligatoire. Cela nous permet de nous assurer que l'ajout du nom de domaine externe est légitime. Un message vous invitera donc à modifier la configuration DNS du nom de domaine.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 >>
->> Notez les éléments qui s’affichent, puis cliquez sur le bouton `Continuer`{.action}. Dès lors, le nom de domaine est ajouté de manière temporaire, le temps que vous puissiez modifier sa configuration DNS.
+>> Prenez note des éléments affichés, puis cliquez sur le bouton `Continuer`{.action}. Dès lors, le nom de domaine est ajouté de manière temporaire, le temps que vous puissiez modifier sa configuration DNS.
 >>
 >> > [!warning]
 >> >
@@ -225,28 +227,30 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> >
 >> > Notez que si vous souhaitez associer `sub.domain.tld`, vous devrez créer l'entrée TXT `ovhcontrol.domain.tld` et non l'entrée `ovhcontrol.sub.domain.tld`.
 >> >
->> > Pour retrouver la zone DNS active de votre nom de domaine, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) auxquels celui-ci est lié. Vous devrez valider uniquement le nom de domaine à l'aide du champ **TXT**, pas tous ses sous-domaines.|
+>> > Pour retrouver la zone DNS active de votre nom de domaine, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) auxquels celui-ci est lié. Vous devrez valider uniquement le nom de domaine à l'aide du champ **TXT**, pas tous ses sous-domaines.
+
+///
 
 /// details | Ajouter un site web avec un nouveau nom de domaine qui n'a pas encore été enregistré
 
-Cette partie s’applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n’a pas encore été enregistré, que ce soit chez OVHcloud ou auprès d’un autre bureau d’enregistrement. En d’autres termes, elle concerne les noms de domaine qui n’ont pas encore été souscrits.
+Cette partie s'applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n'a pas encore été enregistré, que ce soit chez OVHcloud ou auprès d'un autre bureau d'enregistrement. En d'autres termes, elle concerne les noms de domaine qui n'ont pas encore été souscrits.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
@@ -254,7 +258,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Étape 4**
 >>
->> Au dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}
+>> Au-dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
@@ -278,25 +282,25 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 
 ### 2 - Mettre votre site web en ligne <a name="site-online"></a>
 
-Une fois le site web déclaré avec votre nom de domaine sur votre hébergement web, il ne vous reste plus qu’à mettre en ligne le contenu de votre site web. Pour rappel, vous devez réaliser cette manipulation dans le **dossier racine** que vous avez défini lors de l’ajout du site web dans votre espace client OVHcloud.
+Une fois le site web déclaré avec votre nom de domaine sur votre hébergement web, vous pouvez mettre en ligne le contenu de votre site web. Pour rappel, vous devez réaliser cette manipulation dans le **dossier racine** que vous avez défini lors de l'ajout du site web dans votre espace client OVHcloud.
 
-Pour vous aider dans cette démarche, sachez qu'OVHcloud propose l'installation de modules (WordPress, Joomla!, PrestaShop et Drupal). Vous pouvez ainsi bénéficier d’une structure de site web prête à l’emploi. Le site web sera alors installé automatiquement dans le dossier racine configuré précédemment. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+Pour vous accompagner dans cette démarche, OVHcloud met à disposition les modules WordPress, Joomla!, PrestaShop et Drupal. Ils permettent de disposer d'une structure de site web prête à l'emploi, installée automatiquement dans le dossier racine configuré précédemment. Pour en savoir plus, consultez notre documentation « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 
-A contrario, si vous souhaitez installer manuellement votre site web, munissez-vous de ses fichiers puis mettez-les en ligne dans le bon dossier racine présent dans l'espace de stockage de votre hébergement web. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Mettre en ligne un site Internet sur son hébergement web »](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
+A contrario, si vous souhaitez installer manuellement votre site web, récupérez ses fichiers et téléversez-les dans le dossier racine approprié sur l'espace de stockage de votre hébergement web. Pour en savoir plus, consultez notre documentation « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ».
 
 > [!primary]
 >
 > Si vous souhaitez ajouter plusieurs sites web, répétez les actions décrites dans ce guide.
 >
-> Nous vous invitons à être vigilant sur le nombre de sites web que vous partagez sur votre hébergement web. Plus ce nombre est élevé, plus les ressources allouées à votre hébergement web sont sollicitées. [La page de nos offres d'hébergement web](/links/web/hosting) indique le nombre de sites web recommandés que vous pouvez accueillir sur votre hébergement web.
+> Nous vous invitons à être vigilant quant au nombre de sites web présents sur votre hébergement web. Plus ce nombre est élevé, plus les ressources allouées à votre hébergement web sont sollicitées. [La page de nos offres d'hébergement web](/links/web/hosting) indique le nombre recommandé de sites web que vous pouvez accueillir sur votre hébergement web.
 
 ## Aller plus loin
 
-[Installer son site avec les modules en 1 clic.](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
+[Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Éditer une zone DNS OVHcloud.](/pages/web_cloud/domains/dns_zone_edit)
+[Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Mettre en ligne un site Internet sur son hébergement web.](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
+[Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
