@@ -1,6 +1,6 @@
 ---
-title: Clickhouse - How to configure your Clickhouse cluster to accept incoming connections
-excerpt: Learn how to configure your Clickhouse cluster to accept incoming connections
+title: ClickHouse - How to configure your ClickHouse cluster to accept incoming connections
+excerpt: Learn how to configure your ClickHouse cluster to accept incoming connections
 updated: 2026-01-10
 ---
 
@@ -8,13 +8,13 @@ updated: 2026-01-10
 
 ClickHouse is an open-source, columnar analytical database system designed for real-time processing of massive data volumes, providing high performance, scalability, and low latency.
 
-This guide explains how to configure your Clickhouse cluster to accept incoming connections via the OVHcloud Control Panel.
+This guide explains how to configure your ClickHouse cluster to accept incoming connections via the OVHcloud Control Panel.
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- A [Clickhouse cluster running](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster) on OVHcloud Public Cloud
+- A [ClickHouse cluster running](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster) on OVHcloud Public Cloud
 
 ## Instructions
 
