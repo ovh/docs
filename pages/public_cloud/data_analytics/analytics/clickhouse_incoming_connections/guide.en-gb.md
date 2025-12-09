@@ -1,7 +1,7 @@
 ---
 title: Clickhouse - How to configure your Clickhouse cluster to accept incoming connections
 excerpt: Learn how to configure your Clickhouse cluster to accept incoming connections
-updated: 2025-08-25
+updated: 2026-01-10
 ---
 
 ## Objective
