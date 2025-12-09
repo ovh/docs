@@ -1,6 +1,6 @@
 ---
-title: Clickhouse - Getting started
-excerpt: Discover Clickhouse on OVHcloud Public Cloud
+title: ClickHouse - Getting started
+excerpt: Discover ClickHouse on OVHcloud Public Cloud
 updated: 2026-01-10
 ---
 
@@ -12,13 +12,9 @@ ClickHouse on OVHcloud is a fully managed, high-performance analytical column-st
 
 Discover how OVHcloud’s Managed ClickHouse® service enables you to deploy and operate fully managed, high-performance analytical clusters in the Public Cloud, complete with distributed storage, column-oriented processing, real-time ingestion, advanced compression, and effortless scalability. Benefit from built-in high availability, seamless integration with OVHcloud networking options, Terraform support for automated provisioning, and competitive pay-as-you-go pricing at: [ClickHouse product page](/links/public-cloud/analytics-clickhouse)
 
-<!-- ne pas oublié le links -->
-
 ### Pricing
 
-Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, streaming and analytics tools—including plans for Kafka at: [Kafka pricing](/links/public-cloud/prices-kafka)
-
-Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, and analytics solutions—including plans for ClickHouse at: [Clickhouse pricing](/links/public-cloud/prices-clickhouse)
+Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, and analytics solutions—including plans for ClickHouse at: [ClickHouse pricing](/links/public-cloud/prices-clickhouse)
 
 ### Capabilities
 
@@ -26,19 +22,19 @@ Discover the technical capabilities and limitations of OVHcloud’s Managed Clic
 
 ### Create a cluster
 
-Explore step-by-step instructions on how to create a managed ClickHouse cluster on OVHcloud Public Cloud via the OVHcloud Control Panel, including datacenter selection, plan choice, instance configuration, storage sizing, and cluster setup options at: [Create a Clickhouse cluster](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster)
+Explore step-by-step instructions on how to create a managed ClickHouse cluster on OVHcloud Public Cloud via the OVHcloud Control Panel, including datacenter selection, plan choice, instance configuration, storage sizing, and cluster setup options at: [Create a ClickHouse cluster](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster)
 
 ### Configure cluster for incoming connections
 
-Explore practical guidance on how to configure your OVHcloud Public Cloud ClickHouse cluster to accept incoming connections, covering access setup via the Control Panel or API and essential network settings at: [Configure Clickhouse cluster connections](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections)
+Explore practical guidance on how to configure your OVHcloud Public Cloud ClickHouse cluster to accept incoming connections, covering access setup via the Control Panel or API and essential network settings at: [Configure ClickHouse cluster connections](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections)
 
 ## Go further
 
-[Clickhouse Official documentation](https://clickhouse.com/docs)
+[ClickHouse Official documentation](https://clickhouse.com/docs)
 
-[Clickhouse clients](https://clickhouse.com/docs/interfaces/third-party/client-libraries)
+[ClickHouse clients](https://clickhouse.com/docs/interfaces/third-party/client-libraries)
 
-Some UI tools for Clickhouse are also available:
+Some UI tools for ClickHouse are also available:
 
 - [Tabix](https://tabix.io/)
 - [Redash](https://redash.io/)
