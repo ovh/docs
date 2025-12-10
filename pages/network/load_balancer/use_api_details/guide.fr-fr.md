@@ -138,8 +138,7 @@ details:not(:has(summary:empty)) {
 .ovh-api + details[open]:has(summary:empty) sup {
   color: #900 !important;
   font-size: 24px !important;
-  vertical-align: middle !important;
-  padding: 18px 0 0 !important;
+  vertical-align: bottom !important;
 }
 /* GET */
 .ovh-api-main:has(.ovh-api-verb-GET) {
