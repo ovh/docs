@@ -1,7 +1,7 @@
 ---
 title: Co zrobić w przypadku strony "Index of"?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę "Index of"
-updated: 2025-12-02
+updated: 2025-12-11
 ---
 
 ## Wprowadzenie 
@@ -45,7 +45,7 @@ Aby wyświetlić swoją stronę internetową, musisz więc, z karty `Moje strony
 
 ### Rozwiąż najczęstszy przypadek na stronie "Index of"
 
-Zaimportowałeś pliki swojej strony **mydomain.ovh** do katalogu `www` swojego hostingu za pomocą [FTP](/pages/web_cloud/web_hosting/ftp_connection). Jednak strona internetowa, do której jest przypisana Twoja domena, nie jest połączona z tym katalogiem w kolumnie `Katalog główny`.
+Zaimportowałeś pliki swojej strony **domain.tld** do katalogu `www` swojego hostingu za pomocą [FTP](/pages/web_cloud/web_hosting/ftp_connection). Jednak strona internetowa, do której jest przypisana Twoja domena, nie jest połączona z tym katalogiem w kolumnie `Katalog główny`.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

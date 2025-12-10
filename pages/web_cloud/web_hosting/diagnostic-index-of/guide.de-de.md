@@ -1,7 +1,7 @@
 ---
 title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
-updated: 2025-12-02
+updated: 2025-12-11
 ---
 
 ## Ziel 
@@ -45,7 +45,7 @@ Um Ihre Website anzuzeigen, müssen Sie also von dem Tab `Meine Seiten`{.action}
 
 ### Die häufigste Ursache einer "Index of"-Seite beheben
 
-Sie haben die Dateien Ihrer Website **mydomain.ovh** in das Verzeichnis `www` über [FTP](/pages/web_cloud/web_hosting/ftp_connection) übertragen. Allerdings ist die Website, der Ihr Domainname zugeordnet ist, nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` verknüpft.
+Sie haben die Dateien Ihrer Website **domain.tld** in das Verzeichnis `www` über [FTP](/pages/web_cloud/web_hosting/ftp_connection) übertragen. Allerdings ist die Website, der Ihr Domainname zugeordnet ist, nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` verknüpft.
 
 ![index_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

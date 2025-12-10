@@ -1,7 +1,7 @@
 ---
 title: Cosa fare in caso di pagina "Index of"?
 excerpt: Come caricare il tuo sito online, quando visualizza una pagina "Index of"
-updated: 2025-12-02
+updated: 2025-12-11
 ---
 
 ## Obiettivo
@@ -45,7 +45,7 @@ Per visualizzare il tuo sito web, dovrai quindi, dalla scheda `I miei siti`{.act
 
 ### Risolvere il caso più comune di una pagina "Index of"
 
-Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo spazio di storage del tuo hosting Web tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Tuttavia, il sito web al quale è associato il tuo dominio non è collegato a questa directory nella colonna `Cartella di root`.
+Hai importato i file del tuo sito **domain.tld** nella cartella `www` del tuo spazio di storage del tuo hosting Web tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Tuttavia, il sito web al quale è associato il tuo dominio non è collegato a questa directory nella colonna `Cartella di root`.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

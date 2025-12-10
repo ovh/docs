@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting an "Index of" page
 excerpt: Find out how to get your website back online if it displays an "Index of" page
-updated: 2025-12-02
+updated: 2025-12-11
 ---
 
 ## Objective
@@ -45,7 +45,7 @@ To display your website, you will therefore need, from the `My sites`{.action} t
 
 ### Resolving the most common cause of an "Index of" page
 
-You have imported the files of your site **mydomain.ovh** into the `www` folder of your hosting. However, the website associated with your domain name is not linked to this folder in the `root folder` column.
+You have imported the files of your site **domain.tld** into the `www` folder of your hosting. However, the website associated with your domain name is not linked to this folder in the `root folder` column.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

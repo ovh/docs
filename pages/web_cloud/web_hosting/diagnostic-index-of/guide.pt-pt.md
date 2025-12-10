@@ -1,7 +1,7 @@
 ---
 title: O que fazer em caso de página "Index of"?
 excerpt: Descubra como repor o seu site online quando exibe uma página "Index of".
-updated: 2025-12-02
+updated: 2025-12-11
 ---
 
 ## Objetivo
@@ -46,7 +46,7 @@ Para visualizar o seu site web, terá, a partir do separador `Meus sites`{.actio
 
 ### Resolver o caso mais comum de uma página "Index of"
 
-Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento através de [FTP](/pages/web_cloud/web_hosting/ftp_connection). No entanto, o site web ao qual está associado o seu nome de domínio não está ligado a este diretório na coluna `Pasta raiz`.
+Importou os ficheiros do seu site **domain.tld** para a pasta `www` do seu alojamento através de [FTP](/pages/web_cloud/web_hosting/ftp_connection). No entanto, o site web ao qual está associado o seu nome de domínio não está ligado a este diretório na coluna `Pasta raiz`.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

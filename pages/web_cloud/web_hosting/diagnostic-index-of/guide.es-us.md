@@ -1,7 +1,7 @@
 ---
 title: ¿Qué hacer en caso de página del "Index of"?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página "Index of"
-updated: 2025-12-02
+updated: 2025-12-11
 ---
 
 ## Objetivo
@@ -46,7 +46,7 @@ Para mostrar su sitio web, deberá, desde la pestaña `Mis sitios`{.action} de s
 
 ### Solucionar el caso más común de una página "Index of"
 
-Ha importado los archivos de su sitio **mydomain.ovh** en la carpeta `www` de su alojamiento mediante [FTP](/pages/web_cloud/web_hosting/ftp_connection). Sin embargo, el sitio web al que está asociado su nombre de dominio no está conectado a este directorio en la columna `Carpeta raíz`.
+Ha importado los archivos de su sitio **domain.tld** en la carpeta `www` de su alojamiento mediante [FTP](/pages/web_cloud/web_hosting/ftp_connection). Sin embargo, el sitio web al que está asociado su nombre de dominio no está conectado a este directorio en la columna `Carpeta raíz`.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
