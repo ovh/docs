@@ -1,7 +1,7 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2025-12-10
+updated: 2025-12-11
 ---
 
 <style>
@@ -48,7 +48,7 @@ Would you like to add a new website to your web hosting?
 
 This section applies only if the domain name (and/or its active DNS zone) with which you want to create your website is **in your OVHcloud Control Panel**.
 
-Click on the tabs below to view each of the **7** steps.
+Click on the tabs below to view each of the **8** steps.
 
 > [!tabs]
 > **Step 1**
@@ -129,6 +129,16 @@ Click on the tabs below to view each of the **7** steps.
 >>
 > **Step 7**
 >>
+>> OVHcloud provides the WordPress, Joomla!, PrestaShop and Drupal modules. They allow you to have a ready-to-use website structure, automatically installed in the root folder configured previously. For more information, please refer to our documentation "[Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+>>
+>> If you want to install a 1-click module, select your preferred module at the bottom of the page, then proceed to the next step.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> Conversely, if you want to manually install your website, retrieve its files and upload them to the appropriate root folder on the storage space of your web hosting. For more information, please refer to our documentation "[Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
+>>
+> **Step 8**
+>>
 >> Check that all the previously entered information is correct, then click on `Continue`{.action} to finalise the addition of your domain name or subdomain to your website.
 >>
 >> This addition can take up to one hour.
@@ -149,7 +159,7 @@ Click on the tabs below to view each of the **7** steps.
 
 This section applies only if you want to add a website with a domain name that is not present in your OVHcloud account. It may be a domain name in another OVHcloud account or registered with another provider.
 
-Click on the tabs below to view each of the **7** steps.
+Click on the tabs below to view each of the **8** steps.
 
 > [!tabs]
 > **Step 1**
@@ -227,6 +237,16 @@ Click on the tabs below to view each of the **7** steps.
 >> > Note that if you wish to associate `sub.domain.tld`, you will need to create the `ovhcontrol.domain.tld` TXT entry and not the `ovhcontrol.sub.domain.tld` entry.
 >> >
 >> > To find the active DNS zone of your domain name, find the [DNS servers](/pages/web_cloud/domains/dns_server_edit) to which it is linked. You will only need to validate the domain name using the **TXT** field, not all its subdomains.
+>>
+> **Step 8**
+>>
+>> OVHcloud provides the WordPress, Joomla!, PrestaShop and Drupal modules. They allow you to have a ready-to-use website structure, automatically installed in the root folder configured previously. For more information, please refer to our documentation "[Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+>>
+>> If you want to install a 1-click module, select your preferred module at the bottom of the page, then click on `Continue`{.action} to finalise the request to add your website to your web hosting.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> Conversely, if you want to manually install your website, retrieve its files and upload them to the appropriate root folder on the storage space of your web hosting. For more information, please refer to our documentation "[Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 
 ///
 
@@ -282,10 +302,6 @@ Click on the tabs below to view each of the **6** steps.
 ### 2 - Put your website online <a name="site-online"></a>
 
 Once the website is declared with your domain name on your web hosting, you can put the content of your website online. As a reminder, you must perform this operation in the **root folder** that you defined when adding the website in your OVHcloud Control Panel.
-
-To help you with this, OVHcloud provides the WordPress, Joomla!, PrestaShop and Drupal modules. They allow you to have a ready-to-use website structure, automatically installed in the previously configured root folder. For more information, please refer to our documentation "[Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
-
-Conversely, if you wish to manually install your website, retrieve its files and upload them to the appropriate root folder on your web hosting storage space. For more information, please refer to our documentation: "[Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 
 > [!primary]
 >

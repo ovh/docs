@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites web sur votre offre d'hébergement web"
-updated: 2025-12-10
+updated: 2025-12-11
 ---
 
 <style>
@@ -48,7 +48,7 @@ Vous souhaitez ajouter un nouveau site web sur votre hébergement web ?
 
 Cette partie s'applique uniquement si le nom de domaine (et/ou sa zone DNS active) avec lequel vous souhaitez créer votre site web se trouve **dans votre espace client OVHcloud**.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -130,6 +130,16 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Étape 7**
 >>
+>> OVHcloud met à disposition les modules WordPress, Joomla!, PrestaShop et Drupal. Ils permettent de disposer d'une structure de site web prête à l'emploi, installée automatiquement dans le dossier racine configuré précédemment. Pour en savoir plus, consultez notre documentation « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
+>>
+>> Si vous souhaitez installer un module en 1 clic, sélectionnez le module de votre choix en bas de page, puis passez à l'étape suivante.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> A contrario, si vous souhaitez installer manuellement votre site web, récupérez ses fichiers et téléversez-les dans le dossier racine approprié sur l'espace de stockage de votre hébergement web. Pour en savoir plus, consultez notre documentation « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ».
+>>
+> **Étape 8**
+>>
 >> Vérifiez que toutes les informations saisies précédemment sont correctes, puis cliquez sur `Continuer`{.action} pour finaliser l'ajout de votre nom de domaine ou de votre sous-domaine à votre site web.
 >>
 >> Cet ajout peut prendre jusqu'à une heure.
@@ -150,7 +160,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 
 Cette partie s'applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n'est pas présent dans votre compte OVHcloud. Il peut s'agir d'un nom de domaine présent dans un autre compte OVHcloud ou enregistré chez un autre fournisseur.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -217,7 +227,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 >>
->> Prenez note des éléments affichés, puis cliquez sur le bouton `Continuer`{.action}. Dès lors, le nom de domaine est ajouté de manière temporaire, le temps que vous puissiez modifier sa configuration DNS.
+>> Prenez note des éléments affichés, puis cliquez sur le bouton `Continuer`{.action}. Dès lors, le nom de domaine sera ajouté de manière temporaire, le temps que vous puissiez modifier sa configuration DNS.
 >>
 >> > [!warning]
 >> >
@@ -228,6 +238,16 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> > Notez que si vous souhaitez associer `sub.domain.tld`, vous devrez créer l'entrée TXT `ovhcontrol.domain.tld` et non l'entrée `ovhcontrol.sub.domain.tld`.
 >> >
 >> > Pour retrouver la zone DNS active de votre nom de domaine, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) auxquels celui-ci est lié. Vous devrez valider uniquement le nom de domaine à l'aide du champ **TXT**, pas tous ses sous-domaines.
+>>
+> **Étape 8**
+>>
+>> OVHcloud met à disposition les modules WordPress, Joomla!, PrestaShop et Drupal. Ils permettent de disposer d'une structure de site web prête à l'emploi, installée automatiquement dans le dossier racine configuré précédemment. Pour en savoir plus, consultez notre documentation « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
+>>
+>> Si vous souhaitez installer un module en 1 clic, sélectionnez le module de votre choix en bas de page, puis cliquez sur `Continuer`{.action} pour finaliser la demande d'ajout de votre site web sur votre hébergement web.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> A contrario, si vous souhaitez installer manuellement votre site web, récupérez ses fichiers et téléversez-les dans le dossier racine approprié sur l'espace de stockage de votre hébergement web. Pour en savoir plus, consultez notre documentation « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ».
 
 ///
 
@@ -283,10 +303,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 ### 2 - Mettre votre site web en ligne <a name="site-online"></a>
 
 Une fois le site web déclaré avec votre nom de domaine sur votre hébergement web, vous pouvez mettre en ligne le contenu de votre site web. Pour rappel, vous devez réaliser cette manipulation dans le **dossier racine** que vous avez défini lors de l'ajout du site web dans votre espace client OVHcloud.
-
-Pour vous accompagner dans cette démarche, OVHcloud met à disposition les modules WordPress, Joomla!, PrestaShop et Drupal. Ils permettent de disposer d'une structure de site web prête à l'emploi, installée automatiquement dans le dossier racine configuré précédemment. Pour en savoir plus, consultez notre documentation « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
-
-A contrario, si vous souhaitez installer manuellement votre site web, récupérez ses fichiers et téléversez-les dans le dossier racine approprié sur l'espace de stockage de votre hébergement web. Pour en savoir plus, consultez notre documentation « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ».
 
 > [!primary]
 >

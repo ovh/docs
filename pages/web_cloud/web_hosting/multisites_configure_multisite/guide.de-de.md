@@ -1,7 +1,7 @@
 ---
 title: 'Webhosting mit mehreren Webseiten teilen'
 excerpt: "Erfahren Sie, wie Sie verschiedene Webseiten auf Ihrem Webhosting-Plan hosten können"
-updated: 2025-12-10
+updated: 2025-12-11
 ---
 
 <style>
@@ -48,7 +48,7 @@ Möchten Sie eine neue Website auf Ihrem Webhosting-Plan hinzufügen?
 
 Dieser Abschnitt gilt nur, wenn der Domänennamen (und/oder seine aktive DNS-Zone), mit dem Sie Ihre Website erstellen möchten, **in Ihrem OVHcloud Kundencenter** vorhanden ist.
 
-Klicken Sie auf die nachfolgenden Tabs, um die **7** Schritte anzuzeigen.
+Klicken Sie auf die nachfolgenden Tabs, um die **8** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -130,6 +130,16 @@ Klicken Sie auf die nachfolgenden Tabs, um die **7** Schritte anzuzeigen.
 >>
 > **Schritt 7**
 >>
+>> OVHcloud stellt die Module WordPress, Joomla!, PrestaShop und Drupal bereit. Sie ermöglichen es, eine sofort einsatzbereite Website-Struktur automatisch im zuvor konfigurierten Root-Ordner zu installieren. Weitere Informationen finden Sie in unserer Dokumentation „[Installation Ihrer Website mit 1-Klick-Modulen (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“.
+>>
+>> Wenn Sie ein 1-Klick-Modul installieren möchten, wählen Sie das gewünschte Modul am unteren Rand der Seite aus und gehen Sie zum nächsten Schritt über.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> Falls Sie Ihre Website stattdessen manuell installieren möchten, laden Sie ihre Dateien herunter und übertragen Sie sie in den entsprechenden Root-Ordner auf dem Speicherplatz Ihres Webhostings. Weitere Informationen finden Sie in unserer Dokumentation „[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)“.
+>>
+> **Schritt 8**
+>>
 >> Stellen Sie sicher, dass alle zuvor eingegebenen Informationen korrekt sind, und klicken Sie auf `Weiter`{.action}, um den Domänennamen oder die Subdomain zu Ihrer Website hinzuzufügen.
 >>
 >> Dieser Vorgang kann bis zu eine Stunde dauern.
@@ -150,7 +160,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **7** Schritte anzuzeigen.
 
 Dieser Abschnitt gilt nur, wenn Sie eine Website mit einem Domänennamen hinzufügen möchten, der nicht in Ihrem OVHcloud-Konto vorhanden ist. Dies kann ein Domänennamen sein, der in einem anderen OVHcloud-Konto vorhanden ist oder bei einem anderen Anbieter registriert ist.
 
-Klicken Sie auf die nachfolgenden Tabs, um die **7** Schritte anzuzeigen.
+Klicken Sie auf die nachfolgenden Tabs, um die **8** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -228,6 +238,16 @@ Klicken Sie auf die nachfolgenden Tabs, um die **7** Schritte anzuzeigen.
 >> > Achten Sie darauf, dass Sie, wenn Sie `sub.domain.tld` verknüpfen möchten, den TXT-Eintrag `ovhcontrol.domain.tld` und nicht den Eintrag `ovhcontrol.sub.domain.tld` erstellen.
 >> >
 >> > Um die aktive DNS-Zone Ihres Domain-Namens zu finden, identifizieren Sie die [DNS-Server](/pages/web_cloud/domains/dns_server_edit), an die diese Domain angeschlossen ist. Sie müssen nur den Domain-Namen mithilfe des Feldes **TXT** bestätigen, nicht jedoch alle Unterdomänen.
+>>
+> **Schritt 8**
+>>
+>> OVHcloud stellt die Module WordPress, Joomla!, PrestaShop und Drupal bereit. Sie ermöglichen es, eine sofort einsatzbereite Website-Struktur automatisch im zuvor konfigurierten Root-Ordner zu installieren. Weitere Informationen finden Sie in unserer Dokumentation „[Installation Ihrer Website mit 1-Klick-Modulen (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“.
+>>
+>> Wenn Sie ein 1-Klick-Modul installieren möchten, wählen Sie das gewünschte Modul am unteren Rand der Seite aus und klicken Sie auf `Weiter`{.action}, um die Anfrage zur Installation Ihrer Website auf Ihrem Webhosting abzuschließen.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> Falls Sie Ihre Website stattdessen manuell installieren möchten, laden Sie ihre Dateien herunter und übertragen Sie sie in den entsprechenden Root-Ordner auf dem Speicherplatz Ihres Webhostings. Weitere Informationen finden Sie in unserer Dokumentation „[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)“.
 
 ///
 
@@ -283,10 +303,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **6** Schritte anzuzeigen.
 ### 2 - Ihre Website online stellen <a name="site-online"></a>
 
 Sobald Ihre Website mit Ihrem Domain-Namen auf Ihrem Webhosting registriert ist, können Sie den Inhalt Ihrer Website online stellen. Erinnern Sie sich daran, dass Sie diese Aktion im **Wurzelverzeichnis** durchführen müssen, das Sie bei der Hinzufügung der Website in Ihrem OVHcloud Kundencenter festgelegt haben.
-
-Um Sie bei diesem Vorgang zu unterstützen, stellt OVHcloud die Module WordPress, Joomla!, PrestaShop und Drupal bereit. Diese ermöglichen Ihnen, eine strukturierte Website mit automatischer Installation im zuvor konfigurierten Wurzelverzeichnis bereitzustellen. Weitere Informationen finden Sie in unserer Dokumentation "[Installation Ihrer Website mit 1-Klick-Modulen (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
-
-Falls Sie hingegen Ihre Website manuell installieren möchten, laden Sie ihre Dateien herunter und übertragen Sie sie in das entsprechende Wurzelverzeichnis auf dem Speicherbereich Ihres Webhostings. Weitere Informationen finden Sie in unserer Dokumentation "[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 
 > [!primary]
 >
