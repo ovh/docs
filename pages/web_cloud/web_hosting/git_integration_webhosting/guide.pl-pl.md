@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja i korzystanie z Git na hostingu OVHcloud"
 excerpt: "Dowiedz się, jak skonfigurować i korzystać z Git na Twoim hostingu w Panelu klienta OVHcloud"
-updated: 2025-11-27
+updated: 2025-12-11
 ---
 
 ## Wprowadzenie
@@ -166,7 +166,7 @@ Aby zatwierdzić informacje zawarte w formularzu powiązania Git, kliknij przyci
 
 Po potwierdzeniu formularza powiązania Git zostaniesz przekierowany na stronę karty `Moje strony`{.action}.
 
-![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/git-activation-ongoing.png){.thumbnail}
 
 Zielony baner informuje, że Git jest aktywowany. Śledź aktywację Git, klikając link `Zadania w trakcie`{.action}.
 
