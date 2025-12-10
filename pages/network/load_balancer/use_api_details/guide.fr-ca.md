@@ -4,18 +4,231 @@ excerpt: "Détails des fonctionnalités de l’API OVHcloud pour l’offre OVHcl
 updated: 2025-09-29
 ---
 
-<link rel="stylesheet" href="/pages/assets/css/apis.css">
 <style>
-div#article-content article details h5 {
-  font-size: 16px !important;
-  font-weight:600;
-  margin:10px 0;
-  text-transform:uppercase;
+:root > * {
+  --md-api-get-color:#3a87ad;
+  --md-api-get-bgcolor:#c9ddf6;
+  --md-api-post-color:#468847;
+  --md-api-post-bgcolor:#d1e7db;
+  --md-api-put-color:#f89406;
+  --md-api-put-bgcolor:#f7dec0;
+  --md-api-delete-color:#b94a48;
+  --md-api-delete-bgcolor:#f4c1bf;
+  --md-details-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>');
+  --md-shadow-z1:0 0.2rem 0.5rem #0000000d,0 0 0.05rem #0000001a;
+  --md-shadow-z2:0 0.2rem 0.5rem #00000040,0 0 0.05rem #00000040;
+  --md-shadow-z3:0 0.2rem 0.5rem #0006,0 0 0.05rem #00000059;
 }
-div#article-content article details sup {
-  color: #900;
-  font-size: 18px;
-  vertical-align: baseline;
+/* HOOK API */
+.ovh-api {
+  position:relative !important;
+  width:calc(100% - 30px) !important;
+  z-index:2 !important;
+}
+.ovh-api > p {
+  display:none !important;
+}
+.ovh-api-main {
+  align-items:center !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  display:flex !important;
+  font-size:initial !important;
+  margin:15px 0 !important;
+  overflow:hidden !important;
+  padding:0 !important;
+  scrollbar-width:thin !important;
+}
+.ovh-api-main:hover {
+  overflow-x:auto !important;
+}
+.ovh-api-main span {
+  font-size:13px !important
+}
+.ovh-api-main a {
+  align-items:center !important;
+  display:inline-flex !important;
+  height:30px !important;
+  text-decoration:none !important;
+}
+.ovh-api-verb {
+  align-items:center !important;
+  border-radius:4px !important;
+  color:#fff !important;
+  display:flex !important;
+  font-weight:700 !important;
+  height:22px !important;
+  justify-content:center !important;
+  letter-spacing:1px !important;
+  line-height:initial !important;
+  margin:0 1ch 0 4px !important;
+  padding:2px 0 0 !important;
+  position:initial !important;
+  text-shadow:none !important;
+  vertical-align:initial !important;
+  width:9ch !important;
+}
+.ovh-api-endpoint {
+  display: inline !important;
+  padding:3px 1ch 0 0 !important;
+  white-space:nowrap !important;
+}
+/* DETAILS */
+details {
+  margin-top:-15px !important;
+  position:relative !important;
+}
+details summary {
+  cursor:pointer !important;
+  height:32px !important;
+  list-style:none !important;
+  outline:none !important;
+  position:absolute !important;
+  right:0 !important;
+  top:-32px !important;
+  width:30px !important;
+}
+details > summary:before {
+  background-color:#222c32 !important;
+  content:'' !important;
+  height:24px !important;
+  left:3px !important;
+  -webkit-mask-image:var(--md-details-icon) !important;
+          mask-image:var(--md-details-icon) !important;
+  -webkit-mask-position:center !important;
+          mask-position:center !important;
+  -webkit-mask-repeat:no-repeat !important;
+          mask-repeat:no-repeat !important;
+  -webkit-mask-size:contain !important;
+          mask-size:contain !important;
+  position:absolute !important;
+  top:3px !important;
+  transition:transform .25s !important;
+  width:24px !important;
+}
+details > summary::-webkit-details-marker {
+  /* Hides marker on Safari */
+  display:none !important;
+}
+details[open] {
+  border-radius:0 0 4px 4px !important;
+  border-top:none !important;
+  margin-top:-47px !important;
+  padding:40px 15px 15px !important;
+}
+details[open] > summary {
+  right:-1px !important;
+  top:-1px !important;
+}
+details[open] > summary:before {
+  transform: rotate(90deg) !important;
+}
+details p {
+  margin:0 0 10px !important;
+}
+details h6 {
+  font-size: 16px !important;
+  font-weight:600 !important;
+  margin:0 0 20px !important;
+  text-transform:uppercase !important;
+}
+details sup {
+  color: #900 !important;
+  font-size: 24px !important;
+  vertical-align: middle !important;
+  padding: 18px 0 0 !important;
+}
+/* GET */
+.ovh-api-main:has(.ovh-api-verb-GET) {
+  border:1px solid var(--md-api-get-color) !important;
+  border-right:0 !important;
+}
+.ovh-api-verb.ovh-api-verb-GET {
+  background-color: var(--md-api-get-color) !important;
+}
+.ovh-api:has(.ovh-api-verb-GET) + details > summary {
+  border:1px solid var(--md-api-get-color) !important;
+  border-left:0 !important;
+}
+.ovh-api:has(.ovh-api-verb-GET) + details > summary:before {
+  background-color:var(--md-api-get-color) !important;
+}
+.ovh-api:has(.ovh-api-verb-GET) + details[open] {
+  border:1px solid var(--md-api-get-color) !important;
+  box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-get-bgcolor) !important;
+}
+.ovh-api:has(.ovh-api-verb-GET):not(:has(+ details)) .ovh-api-main{
+  border-right:1px solid var(--md-api-get-color) !important;
+  width:calc(100% + 29px) !important;
+}
+/* POST */
+.ovh-api-main:has(.ovh-api-verb-POST) {
+  border:1px solid var(--md-api-post-color) !important;
+  border-right:0 !important;
+}
+.ovh-api-verb.ovh-api-verb-POST {
+  background-color: var(--md-api-post-color) !important;
+}
+.ovh-api:has(.ovh-api-verb-POST) + details > summary {
+  border:1px solid var(--md-api-post-color) !important;
+  border-left:0 !important;
+}
+.ovh-api:has(.ovh-api-verb-POST) + details > summary:before {
+  background-color:var(--md-api-post-color) !important;
+}
+.ovh-api:has(.ovh-api-verb-POST) + details[open] {
+  border:1px solid var(--md-api-post-color) !important;
+  box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-post-bgcolor) !important;
+}
+.ovh-api:has(.ovh-api-verb-POST):not(:has(+ details)) .ovh-api-main{
+  border-right:1px solid var(--md-api-post-color) !important;
+  width:calc(100% + 29px) !important;
+}
+/* PUT */
+.ovh-api-main:has(.ovh-api-verb-PUT) {
+  border:1px solid var(--md-api-put-color) !important;
+  border-right:0 !important;
+}
+.ovh-api-verb.ovh-api-verb-PUT {
+  background-color: var(--md-api-put-color) !important;
+}
+.ovh-api:has(.ovh-api-verb-PUT) + details > summary {
+  border:1px solid var(--md-api-put-color) !important;
+  border-left:0 !important;
+}
+.ovh-api:has(.ovh-api-verb-PUT) + details > summary:before {
+  background-color:var(--md-api-put-color) !important;
+}
+.ovh-api:has(.ovh-api-verb-PUT) + details[open] {
+  border:1px solid var(--md-api-put-color) !important;
+  box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-put-bgcolor) !important;
+}
+.ovh-api:has(.ovh-api-verb-PUT):not(:has(+ details)) .ovh-api-main{
+  border-right:1px solid var(--md-api-put-color) !important;
+  width:calc(100% + 29px) !important;
+}
+/* DELETE */
+.ovh-api-main:has(.ovh-api-verb-DELETE) {
+  border:1px solid var(--md-api-delete-color) !important;
+  border-right:0 !important;
+}
+.ovh-api-verb.ovh-api-verb-DELETE {
+  background-color: var(--md-api-delete-color) !important;
+}
+.ovh-api:has(.ovh-api-verb-DELETE) + details > summary {
+  border:1px solid var(--md-api-delete-color) !important;
+  border-left:0 !important;
+}
+.ovh-api:has(.ovh-api-verb-DELETE) + details > summary:before {
+  background-color:var(--md-api-delete-color) !important;
+}
+.ovh-api:has(.ovh-api-verb-DELETE) + details[open] {
+  border:1px solid var(--md-api-delete-color) !important;
+  box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-delete-bgcolor) !important;
+}
+.ovh-api:has(.ovh-api-verb-DELETE):not(:has(+ details)) .ovh-api-main{
+  border-right:1px solid var(--md-api-delete-color) !important;
+  width:calc(100% + 29px) !important;
 }
 </style>
 
@@ -46,7 +259,6 @@ Toutes les fonctions d'API qui sont utilisées dans la section */ipLoadbalancing
 > 
 
 ## Services et zones
-
 ### Load Balancer OVHcloud
 
 #### Lister les services actifs
@@ -65,14 +277,14 @@ Toutes les fonctions d'API qui sont utilisées dans la section */ipLoadbalancing
 
 #### Retourner les détails d'un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -82,14 +294,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Modifier un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -107,14 +319,14 @@ La configuration SSL que vous souhaitez attribuer au service (valeur)
 
 #### Lister les services attachés au Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/allowedServers
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -124,14 +336,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Lister les fermes existantes et leur type
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/definedFarms
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -145,14 +357,14 @@ Permet de filtrer selon le réseau vrack
 
 #### Lister les zones pouvant être attachées à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableServerZones
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -162,14 +374,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Lister les différentes sondes pouvant être utilisées
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -179,14 +391,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Lister les différents types de fermes pouvant être utilisées
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmType
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -196,14 +408,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Lister les différents types de frontends pouvant être utilisés
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFrontendType
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -213,14 +425,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Lister les différents types d'actions de routage pouvant etre utilisés
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteActions
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -230,14 +442,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Lister les différents types de règles de routage pouvant être utilisés
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteRules
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -249,14 +461,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Obtenir les informations du service
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/serviceInfos
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -266,14 +478,14 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 
 #### Modifier les informations du service
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/serviceInfos
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -299,14 +511,14 @@ Renseigne la durée de renouvellement (chaîne de caractères)
 
 #### Lister les zones actives pour un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/zone
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -316,14 +528,14 @@ L'identifiant de votre Load Balancer, ex. : IP-1.2.3.4 (chaîne de caractères)
 
 #### Obtenir les détails d'une zone
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/zone/{name}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -339,14 +551,14 @@ Le nom de la zone demandée
 
 Le service sera supprimé à la date d'expiration.
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/zone/{name}/terminate
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -360,14 +572,14 @@ Le nom de la zone à supprimer
 
 #### Annuler la suppression d'une zone
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/zone/{name}/cancelTermination
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -387,14 +599,14 @@ Accéder aux éléments relatifs au protocole HTTP (frontend, ferme, etc.).
 
 #### Lister les fermes HTTP attachées à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -408,14 +620,14 @@ Le nom de la zone (chaîne de caractères)
 
 #### Ajouter une nouvelle ferme HTTP à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -476,14 +688,14 @@ L'adresse à utiliser par la sonde pour les sondes de type HTTP. Le type est ign
 
 #### Obtenir les détails d'une ferme HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -497,14 +709,14 @@ L'identifiant de votre ferme HTTP (nombre)
 
 #### Modifier les propriétés d'une ferme HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -535,14 +747,14 @@ Le type de persistence de connexion (valeur)
 
 #### Supprimer une ferme HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -558,14 +770,14 @@ L'identifiant de votre ferme HTTP (nombre)
 
 #### Lister les serveurs liés à la ferme HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -591,14 +803,14 @@ Filtrer les valeurs par statut du serveur (valeur)
 
 #### Ajouter un serveur à une ferme HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -639,6 +851,7 @@ Le type de sonde à utiliser (valeur)
 **proxyProtocolVersion**
 
 La version de proxyProtocol à utiliser,
+
 voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (valeur)
 
 **ssl** ^*^
@@ -657,14 +870,14 @@ Si votre serveur est activé ou non (booléen)
 
 #### Obtenir les détails d'un serveur lié à une ferme HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -682,14 +895,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Modifier les propriétés d'un serveur HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -725,6 +938,7 @@ Le type de sonde à utiliser (valeur)
 
 - **proxyProtocolVersion**
 La version de proxyProtocol à utiliser,
+
 voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (valeur)
 
 - **ssl**
@@ -740,14 +954,14 @@ Le poids de votre serveur pour votre ferme (nombre)
 
 #### Supprimer un serveur d'une ferme HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -767,14 +981,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Lister les frontends HTTP attachés à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -796,14 +1010,14 @@ Le nom de votre zone, par exemple: all (chaîne de caractères)
 
 #### Ajouter un frontend HTTP à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -863,14 +1077,14 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 
 ### Obtenir les détails d'un frontend HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -884,14 +1098,14 @@ L'identifiant de votre frontend HTTP (nombre)
 
 #### Modifier les propriétés d'un frontend HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -933,14 +1147,14 @@ Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou
 
 #### Supprimer un frontend HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -958,14 +1172,14 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 
 #### Lister les routes HTTP attachées à un service Load Balancer
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -979,14 +1193,14 @@ L'identifiant d'un frontend HTTP (nombre)
 
 #### Ajouter une nouvelle route HTTP à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/route
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1020,14 +1234,14 @@ La priorité de votre route. (nombre) [0 - 255]
 
 #### Obtenir les détails d'une route HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1041,14 +1255,14 @@ L'identifiant de votre route (nombre)
 
 #### Modifier les propriétés d'une route HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1084,14 +1298,14 @@ La priorité de votre route. (nombre) [0 - 255]
 
 #### Supprimer une route HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1107,14 +1321,14 @@ L'identifiant de votre route (nombre)
 
 #### Lister les règles de routages attachées à une route HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1128,14 +1342,14 @@ L'identifiant de votre route HTTP (nombre)
 
 #### Ajouter les règles de routages attachées à une route HTTP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1169,14 +1383,14 @@ Le nom du sous-champ, si applicable. Peut être un cookie ou un nom d'en-tête, 
 
 #### Obtenir les détails d'une règle de routage
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1194,14 +1408,14 @@ L'identifiant de votre règle de routage HTTP (nombre)
 
 #### Modifier les propriétés d'une règle de routage
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1236,14 +1450,14 @@ Le nom du sous-champ si applicable (chaîne de caractères)
 
 #### Supprimer une règle de routage
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1267,14 +1481,14 @@ Accéder aux éléments relatifs au protocole TCP (frontend, ferme, etc.).
 
 #### Lister les fermes TCP attachées à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1288,14 +1502,14 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 
 #### Ajouter une nouvelle ferme TCP à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1356,14 +1570,14 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 
 #### Obtenir les détails d'une ferme TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1377,14 +1591,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Modifier les propriétés d'une ferme TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1415,14 +1629,14 @@ Le type de persistence de connexion (valeur)
 
 #### Supprimer une ferme TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1438,14 +1652,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Lister les serveurs liés à la ferme TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1471,14 +1685,14 @@ Filtrer les valeurs par statut du serveur (valeur)
 
 #### Ajouter un serveur à une ferme TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1515,6 +1729,7 @@ Le type de sonde à utiliser (valeur)
 **proxyProtocolVersion**
 
 La version de proxyProtocol à utiliser,
+
 voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (valeur)
 
 **ssl** ^*^
@@ -1533,14 +1748,14 @@ Si votre serveur est activé ou non (booléen)
 
 #### Obtenir les détails d'un serveur lié à une ferme TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1558,14 +1773,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Modifier les propriétés d'un serveur TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1598,6 +1813,7 @@ Le type de sonde à utiliser (valeur)
 
 - **proxyProtocolVersion**
 La version de proxyProtocol à utiliser,
+
 voir http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt (Valeur  )
 
 - **ssl**
@@ -1613,14 +1829,14 @@ Le poids de votre serveur pour votre ferme (nombre)
 
 #### Supprimer un serveur d'une ferme TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1640,14 +1856,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Lister les frontends TCP attachés à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1669,14 +1885,14 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 
 #### Ajouter un frontend TCP à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/frontend
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1722,14 +1938,14 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 
 #### Obtenir les détails d'un frontend TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1743,14 +1959,14 @@ L'identifiant de votre frontend TCP (nombre)
 
 #### Modifier les propriétés d'un frontend TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1784,14 +2000,14 @@ Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou
 
 #### Supprimer un frontend TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1809,14 +2025,14 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 
 #### Lister les routes TCP attachées à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1830,14 +2046,14 @@ L'identifiant d'un frontend TCP (nombre)
 
 #### Ajouter une nouvelle route TCP à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1868,14 +2084,14 @@ La priorité de votre route. (nombre) [0 - 255]
 
 #### Obtenir les détails d'une route TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1889,14 +2105,14 @@ L'identifiant de votre route (nombre)
 
 #### Modifier les propriétés d'une route TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1929,14 +2145,14 @@ La priorité de votre route (nombre) [0 - 255]
 
 #### Supprimer une route TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1952,14 +2168,14 @@ L'identifiant de votre route (nombre)
 
 #### Lister les règles de routages attachées à une route TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -1973,14 +2189,14 @@ L'identifiant de votre route TCP (nombre)
 
 #### Ajouter les règles de routages attachées à une route TCP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2014,14 +2230,14 @@ Le nom du sous-champ, si applicable. Peut être un cookie ou un nom d'en-tête, 
 
 #### Obtenir les détails d'une règle de routage
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2039,14 +2255,14 @@ L'identifiant de votre règle de routage HTTP (nombre)
 
 #### Modifier les propriétés d'une règle de routage
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2081,14 +2297,14 @@ Le nom du sous-champ si applicable (chaîne de caractères)
 
 #### Supprimer une règle de routage
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2112,14 +2328,14 @@ Accéder aux éléments relatifs au protocole UDP (frontend, ferme, etc.).
 
 #### Lister les fermes UDP attachées à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2133,14 +2349,14 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 
 #### Ajouter une nouvelle ferme UDP à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2162,14 +2378,14 @@ Le nom de votre zone, par exemple : all (chaîne de caractères)
 
 #### Obtenir les détails d'une ferme UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2183,14 +2399,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Modifier les propriétés d'une ferme UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2212,14 +2428,14 @@ Le port d'écoute de la ferme (nombre, 1..65000)
 
 #### Supprimer une ferme UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2235,14 +2451,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Lister les serveurs liés à la ferme UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2264,14 +2480,14 @@ Filtrer les valeurs par statut du serveur (valeur)
 
 #### Ajouter un serveur à une ferme UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2301,14 +2517,14 @@ Si votre serveur est activé ou non (booléen)
 
 #### Obtenir les détails d'un serveur lié à une ferme UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2326,14 +2542,14 @@ L'identifiant de votre ferme (nombre)
 
 #### Modifier les propriétés d'un serveur UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2362,14 +2578,14 @@ Si votre serveur est activé ou non (booléen)
 
 #### Supprimer un serveur d'une ferme UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2389,14 +2605,14 @@ L'identifiant de votre ferme UDP (nombre)
 
 #### Lister les frontends UDP attachés à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2418,14 +2634,14 @@ Le nom de votre zone, par exemple : all (chaîne de caractères)
 
 #### Ajouter un frontend UDP à un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/frontend
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2459,14 +2675,14 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 
 #### Obtenir les détails d'un frontend UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2480,14 +2696,14 @@ L'identifiant de votre frontend UDP (nombre)
 
 #### Modifier les propriétés d'un frontend UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2512,14 +2728,14 @@ Le nom de votre frontend UDP (chaîne de caractères)
 
 #### Supprimer un frontend UDP
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2537,14 +2753,14 @@ L'identifiant de votre frontend UDP (nombre)
 
 #### Lister les Additional IPs routées sur un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/failover
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2556,14 +2772,14 @@ L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef01234567
 
 #### Obtenir l'état des instances d'un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/instancesState
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2573,14 +2789,14 @@ L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef01234567
 
 #### Lister les IPs de sortie utilisées par OVHcloud pour le NAT
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/natIp
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2590,14 +2806,14 @@ L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef01234567
 
 #### Appliquer les modifications d'un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/refresh
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2609,14 +2825,14 @@ L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef01234567
 
 #### Lister les certificats SSL d'un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2638,14 +2854,14 @@ Type de certificat SSL (valeur)
 
 #### Ajouter un nouvel objet SSL
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/ssl
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2667,14 +2883,14 @@ Ajout de la clé privée (chaîne de caractères)
 
 #### Obtenir les détails d'un objet SSL
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2688,14 +2904,14 @@ L'identifiant de votre certificat SSL (nombre)
 
 #### Supprimer un objet SSL
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/ssl/{id}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2711,14 +2927,14 @@ L'identifiant de votre certificat SSL (nombre)
 
 #### Lister les tâches en cours pour un service Load Balancer OVHcloud
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2732,14 +2948,14 @@ Consultation des tâches disponibles (valeurs)
 
 #### Obtenir les détails d'une tâche
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2755,14 +2971,14 @@ L'identifiant de votre tâche (nombre)
 
 #### Initier un changement de contact
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/changeContact
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2791,14 +3007,14 @@ L'identifiant client OVHcloud à configurer pour le contact technique de ce serv
 
 #### Description des réseaux privés attachés au load balancer
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/network
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2816,14 +3032,14 @@ Permet de filtrer selon le vlan utilisé
 
 #### Ajouter un réseau privé dans le vRack
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/vrack/network
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2853,14 +3069,14 @@ Vlan du réseau privé dans le vRack. 0 si le réseau privé n'est pas dans un v
 
 #### Récupérer un réseau privé
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2874,14 +3090,14 @@ L'identifiant du réseau privé
 
 #### Modifier un réseau privé
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2895,14 +3111,14 @@ L'identifiant du réseau privé
 
 #### Supprimer un réseau privé
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2916,14 +3132,14 @@ L'identifiant du réseau privé
 
 #### Modifier la liste des fermes attachées à un réseau privé
 
-/// details | &nbsp;
-
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}/updateFarmId
 >
 
-<h5>Paramètres:</h5>
+/// details | &nbsp;
+
+<h6>Paramètres :</h6>
 
 **serviceName** ^*^
 
@@ -2942,3 +3158,4 @@ Tableau d'identifiant de fermes que vous souhaitez attacher à ce réseau privé
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
