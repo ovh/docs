@@ -86,7 +86,7 @@ Click on the tabs below to view each of the **8** steps.
 >> > [!primary]
 >> > To add a subdomain, first select the domain name from the list (e.g., domain.tld). Then tick the `Create a subdomain`{.action} box. A text field appears for you to enter the subdomain (e.g., **sub**.domain.tld).
 >> >
->> > **Special case**: Subdomains in `www` (e.g., **www**.domain.tld) are automatically added as a complement to the domain name. Therefore, it is unnecessary to specify this particular subdomain in the text field.
+>> > **Special case**: `www` subdomains (e.g., **www**.domain.tld) are automatically added as a complement to the domain name. Therefore, it is unnecessary to specify this particular subdomain in the text field.
 >>
 >> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-step-1.png){.thumbnail}
 >>
@@ -200,7 +200,7 @@ Click on the tabs below to view each of the **8** steps.
 >>
 >> > [!success]
 >> >
->> > **Special case**: Subdomains in `www` (e.g., **www**.domain.tld) are automatically added as a complement to the domain name. Therefore, it is unnecessary to specify this particular subdomain in the text field.
+>> > **Special case**: `www` subdomains (e.g., **www**.domain.tld) are automatically added as a complement to the domain name. Therefore, it is unnecessary to specify this particular subdomain in the text field.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-site-external-step-2.png){.thumbnail}
 >>
