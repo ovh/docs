@@ -210,7 +210,7 @@ Click on the tabs below to view each of the **8** steps.
 >> >
 >> > **The name of the root folder can only be customised at the time of adding the website to your web hosting.** This means that once your website is created and added to your web hosting, you will no longer be able to **modify it** afterwards.
 >>
->> To customise the name of the root folder that will be associated with your website and will contain its files, enter the desired name in the **Root folder** field. If you do not wish to customise it, leave the field unchanged.
+>> To customise the name of the root folder that will be associated with your website and will contain its files, enter the desired name in the **Root folder** field. If you do not wish to customise it, leave the field empty.
 >>
 >> Once the information is completed, click on the `Continue`{.action} button.
 >>

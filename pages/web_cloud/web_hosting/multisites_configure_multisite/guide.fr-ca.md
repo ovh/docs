@@ -211,7 +211,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >> >
 >> > **Le nom du dossier racine n’est personnalisable qu’au moment de l’ajout du site web à votre hébergement web.** Cela signifie qu'une fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
 >>
->> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom souhaité dans le champ **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ inchangé.
+>> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom souhaité dans le champ **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ vide.
 >>
 >> Une fois les informations complétées, cliquez sur le bouton `Continuer`{.action}.
 >>

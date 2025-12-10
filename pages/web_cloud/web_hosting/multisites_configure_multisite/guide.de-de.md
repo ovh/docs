@@ -211,7 +211,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **8** Schritte anzuzeigen.
 >> >
 >> > **Der Name des Wurzelverzeichnisses kann nur zum Zeitpunkt des Hinzufügens der Website zu Ihrem Hosting-Paket angepasst werden.** Das bedeutet, dass Sie den Namen des Root-Ordners nach der Erstellung und dem Hinzufügen der Website zu Ihrem Hosting-Paket **nicht mehr ändern können**.
 >>
->> Um den Namen des Root-Ordners anzupassen, der mit Ihrer Website verknüpft und deren Dateien enthalten wird, geben Sie den gewünschten Namen im Feld **Wurzelverzeichnis** ein. Wenn Sie dies nicht tun möchten, lassen Sie das Feld unverändert.
+>> Um den Namen des Root-Ordners anzupassen, der mit Ihrer Website verknüpft und deren Dateien enthalten wird, geben Sie den gewünschten Namen im Feld **Wurzelverzeichnis** ein. Wenn Sie dies nicht tun möchten, lassen Sie das Feld leer.
 >>
 >> Klicken Sie anschließend auf die Schaltfläche `Weiter`{.action}.
 >>
