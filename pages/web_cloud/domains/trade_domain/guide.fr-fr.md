@@ -13,7 +13,7 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 >
 > Pour obtenir ce résultat, vous devez [modifier les contacts](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine.
 >
-> Si vous devez réaliser un changement de titulaire ainsi qu'un changement de contact pour le même nom de domaine, il est fortement recommandé d'effectuer **d'abord** le changement de propriétaire afin d'assurer une transition optimale. Cependant, c'est le contact administrateur qui est en mesure de lancer ces opérations. Ces deux changements se font, par conséquent, dans l'espace client du contact administrateur du nom de domaine.
+> Si vous devez réaliser un changement de titulaire ainsi qu'un changement de contact pour le même nom de domaine, il est fortement recommandé d'effectuer **d'abord** le changement de titulaire afin d'assurer une transition optimale. Cependant, c'est le contact administrateur qui est en mesure de lancer ces opérations. Ces deux changements se font, par conséquent, dans l'espace client du contact administrateur du nom de domaine.
 >
 > En effet, les informations relatives au titulaire d'un nom de domaine n'ont qu'une valeur administrative et sont totalement indépendantes des informations pouvant être associées à un identifiant client OVHcloud. Par conséquent, un particulier ou une organisation (société, association, etc.) uniquement déclaré en tant que titulaire d'un nom de domaine n'a donc pas d'accès à l'espace client OVHcloud.
 >
@@ -31,14 +31,14 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 > [!warning]
 >
-> Les instructions suivantes décrivent le moyen le plus courant de modifier le titulaire d'un nom de domaine. Elles sont valides pour la plupart des domaines de niveau supérieur, communément appelés **T**op **L**evel **D**omain (**TLD**). 
+> Les instructions suivantes décrivent le moyen le plus courant de modifier le titulaire d'un nom de domaine. Elles sont valides pour la plupart des noms de domaine de niveau supérieur, communément appelés **T**op **L**evel **D**omain (**TLD**).
 >Les **TLD** désignent la fin de votre nom de domaine, comme par exemple le *.com*, *.net*, *.fr*, etc.
 >
 > Les règles spécifiques des processus concernant les noms de domaine **TLD** sont uniquement définies par l'autorité d'allocation appropriée, c'est-à-dire le **registre**. Un bureau d'enregistrement (ou registrar) tel que OVHcloud doit respecter ces règles et n'a aucune influence sur les décisions d'enregistrement.
 >
 > Il existe principalement deux types de **TLD** : Les **ccTLD** et les **gTLD**. Les **ccTLD** correspondent à des **TLD** relatifs à une région ou un pays (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.). Les **gTLD** correspondant à des **TLD** plus génériques (*.net*, *.com*, *.info*, *.org*, etc.).
 >
-> La procédure exacte pour le changement de titulaire d'un nom de domaine peut donc varier, en particulier pour cetains **ccTLD** (*.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) et pour quelques **TLD** spéciaux (*.am*, *.fm*, etc.). Pour certains d'entre eux, un changement de titulaire est une opération payante. Le changement de titulaire peut également être suspendu pour diverses raisons, par exemple pour un impayé, un abus ou un blocage de la part du registre. 
+> La procédure exacte pour le changement de titulaire d'un nom de domaine peut donc varier, en particulier pour cetains **ccTLD** (*.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) et pour quelques **TLD** spéciaux (*.am*, *.fm*, etc.). Pour certains d'entre eux, un changement de titulaire est une opération payante. Le changement de titulaire peut également être suspendu pour diverses raisons, par exemple pour un impayé, un abus ou un blocage de la part du registre.
 >
 > Nous vous recommandons de consulter les ressources suivantes en cas de doute :
 >
@@ -81,7 +81,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> > [!warning]
 >> >
 >> > Toute modification apportée au prénom, au nom, à l’organisation, au statut légal ou à l’adresse e-mail du titulaire est considérée comme un **changement de titulaire**.
->> > 
+>> >
 >> > Si vous modifiez **uniquement** des coordonnées du titulaire autres que celles mentionnées ci-dessus, faites vos modifications directement, puis cliquez sur `Valider`{.action}. Dans ce cas précis, il ne sera pas nécessaire de lancer une demande de changement de titulaire. Pour cette opération, vous n'avez pas besoin de confirmer les modifications par e-mail.
 >> >
 >> > Le cas échéant et pour initier la demande de changement de titulaire, cliquez sur le lien situé en bas de page et intitulé `Cliquez ici pour continuer`{.action}.
@@ -90,7 +90,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Étape 6**
 >>
->> Un nouvel onglet de votre navigateur s'ouvre avec tous les domaines éligibles au changement de titulaire. Sélectionnez un nom de domaine dans la liste en cochant la case située à gauche. Cette étape peut également être utilisée pour lancer une opération groupée. Ainsi, il est possible d'initier un changement de titulaire pour plusieurs noms de domaine à la fois, par exemple pour changer le titulaire de tous les domaines *.ovh* si leurs titulaires actuels sont identiques.
+>> Un nouvel onglet de votre navigateur s'ouvre avec tous les noms de domaine éligibles au changement de titulaire. Sélectionnez un nom de domaine dans la liste en cochant la case située à gauche. Cette étape peut également être utilisée pour lancer une opération groupée. Ainsi, il est possible d'initier un changement de titulaire pour plusieurs noms de domaine à la fois, par exemple pour changer le titulaire de tous les noms de domaine *.ovh* si leurs titulaires actuels sont identiques.
 >>
 >> ![Change owner domains list](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/available-domains.png){.thumbnail}
 >>
@@ -113,7 +113,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 > [!warning]
 >
 > - La procédure doit-être validée par les deux parties dans les 14 jours qui suivent la demande. **Passé ce délai, la procédure est annulée**.
-> 
+>
 > - Si la modification est refusée par l'une des deux parties, la demande est annulée.
 >
 > - Si l'adresse e-mail du titulaire actuel est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).

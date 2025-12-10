@@ -6,7 +6,7 @@ updated: 2024-06-13
 
 ## Objectif
 
-Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Webflow. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement Webflow.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Webflow. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement Webflow.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement Webflow**
 
@@ -66,7 +66,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si un enregistrement pour le sous-domaine « www » est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
->> Vous devez créer 2 enregistrements de type « A » successivement afin de renseigner les 2 adresses IPv4 relatives à Webflow. 
+>> Vous devez créer 2 enregistrements de type « A » successivement afin de renseigner les 2 adresses IPv4 relatives à Webflow.
 >> Laissez le champ **Sous-domaine** vide et saisissez la première adresse IPv4 de Webflow `75.2.70.75` dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action} et validez votre enregistrement « A ». Répétez l'opération pour la seconde adresse IPv4 `99.83.190.102`, et passez à l'étape 2.
 > **Etape 2**

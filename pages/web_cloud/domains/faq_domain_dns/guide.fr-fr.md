@@ -31,7 +31,7 @@ Suivez ces étapes :
 3. Sur la nouvelle page qui s'affiche, notre interface vous précisera si le nom de domaine choisi est disponible ou non à l'achat. S'il est déjà réservé avec la syntaxe que vous avez saisie, modifiez-le et relancez une nouvelle recherche de disponibilité.
 4. Une fois que vous avez trouvé un nom de domaine disponible, cliquez sur le bouton `Acheter`{.action}, puis sur le bouton `Poursuivre la commande`{.action} dans la colonne de droite.
 5. Sélectionnez les éventuelles options ou services auxquels vous souhaitez souscrire en complément de votre nom de domaine, puis cliquez sur `Suivant`{.action} jusqu'à ce que le tunnel de commande vous invite à vous authentifier ou à créer un compte client OVHcloud.
-6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (propriétaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
+6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (titulaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
 7. Sur la page `Récapitulatif de votre commande` et si nécessaire, vous pourrez modifier la configuration DNS qui s'appliquera à votre nom de domaine en cliquant sur le lien intitulé `Modifier la configuration`{.action}. Dès que vos modifications sont terminées, cliquez sur le bouton `Payer`{.action} pour accéder à la dernière étape de votre commande.
 
 Payez ensuite votre commande pour initier la réservation de votre nom de domaine ainsi que l’installation des services et options auxquels vous avez souscrit en complément.
@@ -54,7 +54,7 @@ Suivez ces étapes :
 3. Sur la nouvelle page qui s'affiche, notre interface vous précisera si le nom de domaine choisi est disponible ou non à l'achat. S'il est déjà réservé avec la syntaxe que vous avez saisie, modifiez-le et relancez une nouvelle recherche de disponibilité.
 4. Une fois que vous avez trouvé un nom de domaine disponible, cliquez sur le bouton `Acheter`{.action}, puis sur le bouton `Poursuivre la commande`{.action} dans la colonne de droite.
 5. Sélectionnez les éventuelles options ou services auxquels vous souhaitez souscrire en complément de votre nom de domaine, puis cliquez sur `Suivant`{.action} jusqu'à ce que le tunnel de commande vous invite à vous authentifier ou à créer un compte client OVHcloud.
-6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (propriétaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
+6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (titulaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
 7. Sur la page `Récapitulatif de votre commande` et si nécessaire, vous pourrez modifier la configuration DNS qui s'appliquera à votre nom de domaine en cliquant sur le lien intitulé `Modifier la configuration`{.action}. Dès que vos modifications sont terminées, cliquez sur le bouton `Payer`{.action} pour accéder à la dernière étape de votre commande.
 
 Payez ensuite votre commande pour initier la réservation de votre nom de domaine ainsi que l’installation des services et options auxquels vous avez souscrit en complément.
@@ -146,7 +146,7 @@ Suivez ces étapes :
 3. Dans le tableau qui apparaît, recherchez la ligne correspondant à votre nom de domaine, cliquez sur le bouton `...`{.action} à droite, puis sur `Résilier mon service`{.action}.
 4. Sur la page qui s'affiche, sélectionnez le mode de résiliation (immédiatement ou à la date d'expiration du service) puis cliquez en bas sur le bouton `Oui, résilier`{.action}.
 
-Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre propriétaire/titulaire.
+Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre titulaire/titulaire.
 
 > [!primary]
 >
@@ -162,7 +162,7 @@ Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compt
 
 Tout d'abord, si vous avez un doute sur la légitimité de l'e-mail reçu, consultez notre guide « [Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
-Conformément à une directive de l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) du 01/09/2014, les bureaux d'enregistrement (par exemple : OVHcloud) sont tenus de vérifier la validité des coordonnées des titulaires/propriétaires de noms de domaine. OVHcloud envoie alors un e-mail aux titulaires/propriétaires du nom de domaine enregistré à l'adresse e-mail de contact déclarée chez OVHcloud.
+Conformément à une directive de l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) du 01/09/2014, les bureaux d'enregistrement (par exemple : OVHcloud) sont tenus de vérifier la validité des coordonnées des titulaires/titulaires de noms de domaine. OVHcloud envoie alors un e-mail aux titulaires/titulaires du nom de domaine enregistré à l'adresse e-mail de contact déclarée chez OVHcloud.
 
 Vous recevrez cet e-mail lorsque vous effectuerez l'une des actions suivantes :
 
@@ -170,16 +170,16 @@ Vous recevrez cet e-mail lorsque vous effectuerez l'une des actions suivantes :
 - Transfert d'un nom de domaine.
 - Modification des coordonnées associées à votre nom de domaine.
 
-Cet e-mail contient un lien permettant de vérifier rapidement vos coordonnées en tant que propriétaire/titulaire légal du nom de domaine.
+Cet e-mail contient un lien permettant de vérifier rapidement vos coordonnées en tant que titulaire/titulaire légal du nom de domaine.
 
 Attention : Cette vérification doit être faite dans un délai de 15 jours. Passé ce délai, le nom de domaine sera suspendu techniquement. Il restera contractuellement à votre nom mais il ne sera plus accessible sur Internet. Un message d'erreur s'affichera pour les visiteurs de votre site web.
 
 Vous pouvez recevoir les e-mails suivants durant les 15 premiers jours :
 
-- **Jour 0** : Immédiatement après avoir commandé le nom de domaine ou modifié ses coordonnées, vous (ou la personne enregistrée en tant que propriétaire/titulaire du nom de domaine) recevrez le premier e-mail avec un lien de vérification.
+- **Jour 0** : Immédiatement après avoir commandé le nom de domaine ou modifié ses coordonnées, vous (ou la personne enregistrée en tant que titulaire/titulaire du nom de domaine) recevrez le premier e-mail avec un lien de vérification.
 - **Jours 4, 9 et 13 (e-mails de relance)** : Si vous n'avez pas encore vérifié le nom de domaine, vous recevrez à nouveau l'e-mail.
 - **Jour 14** : Si vous n'avez toujours pas vérifié le nom de domaine, l'e-mail est envoyé une nouvelle fois. De plus, un e-mail est également envoyé à l'adresse e-mail de l'administrateur/titulaire du nom de domaine pour l'informer que les coordonnées de ce dernier n'ont pas été confirmées.
-- **Jour 15** : Si le propriétaire/titulaire du nom de domaine n'a pas encore répondu, nous envoyons un e-mail l'administrateur du nom de domaine pour l'informer de la situation et de la désactivation du nom de domaine.
+- **Jour 15** : Si le titulaire/titulaire du nom de domaine n'a pas encore répondu, nous envoyons un e-mail l'administrateur du nom de domaine pour l'informer de la situation et de la désactivation du nom de domaine.
 
 Au-delà de ces 15 jours, le système envoie des e-mails supplémentaires (jusqu'à 9 e-mails) avant de supprimer votre nom de domaine. Cette suppression sera effectuée après 60 jours à compter du jour 0.
 
@@ -191,7 +191,7 @@ Au-delà de ces 15 jours, le système envoie des e-mails supplémentaires (jusqu
 
 /// details | Je n'ai pas reçu l'e-mail de validation des informations du titulaire associé à mon nom de domaine et celui-ci est suspendu, que faire ?
 
-Si vous n'avez pas reçu l'e-mail de validation du propriétaire de votre nom de domaine, vérifiez les points ci-dessous :
+Si vous n'avez pas reçu l'e-mail de validation du titulaire de votre nom de domaine, vérifiez les points ci-dessous :
 
 1. L'adresse e-mail déclarée pour le titulaire du nom de domaine est valide et opérationnelle.
 2. L'e-mail de validation ne se trouve pas dans les courriers indésirables.
@@ -208,7 +208,7 @@ Chez OVHcloud, il est tout à fait possible de commander des IDN et de les utili
 
 Une fois souscrits, les IDN apparaissent dans votre [espace client OVHcloud](/links/manager) au format **xn--**.
 
-Même si votre domaine s'affiche en [notation internationalisée (IDN)](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalisé) dans votre [espace client OVHcloud](/links/manager), il fonctionnera et s'affichera de façon tout à fait normale ailleurs. L'adresse de votre site web s'affichera telle que vous l'avez demandée. Vos adresses e-mail s'afficheront également comme vous le souhaitez chez vos correspondants.
+Même si votre nom de domaine s'affiche en [notation internationalisée (IDN)](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalisé) dans votre [espace client OVHcloud](/links/manager), il fonctionnera et s'affichera de façon tout à fait normale ailleurs. L'adresse de votre site web s'affichera telle que vous l'avez demandée. Vos adresses e-mail s'afficheront également comme vous le souhaitez chez vos correspondants.
 
 > [!alert]
 >
@@ -250,27 +250,27 @@ Pour cela, suivez ces étapes :
 
 ## Transfert d'un nom de domaine
 
-/// details | Est-ce que mon nom de domaine est transférable après un changement de propriétaire ?
+/// details | Est-ce que mon nom de domaine est transférable après un changement de titulaire ?
 
-L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) a mis en place des mesures de sécurité pour prévenir les transferts ou les changements de propriétaires non autorisés ou abusifs des noms de domaine.
+L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) a mis en place des mesures de sécurité pour prévenir les transferts ou les changements de titulaires non autorisés ou abusifs des noms de domaine.
 
-L'ICANN a notamment défini un délai incompressible de **60** jours entre chaque opération pouvant survenir sur un nom de domaine (création, changement de propriétaire, transfert).
+L'ICANN a notamment défini un délai incompressible de **60** jours entre chaque opération pouvant survenir sur un nom de domaine (création, changement de titulaire, transfert).
 
 Les règles définies par l'ICANN doivent obligatoirement être respectées par les bureaux d'enregistrement (tel qu'OVHcloud).
 
-Vous n'aurez donc pas d'autre choix que de patienter jusqu'à la fin du délai de 60 jours pour pouvoir transférer votre nom de domaine après avoir changé son propriétaire.
+Vous n'aurez donc pas d'autre choix que de patienter jusqu'à la fin du délai de 60 jours pour pouvoir transférer votre nom de domaine après avoir changé son titulaire.
 
 ///
 
 /// details | Mon nom de domaine est bloqué contre le transfert pendant 60 jours, que faire ?
 
-L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) a mis en place des mesures de sécurité pour prévenir les transferts ou les changements de propriétaires non autorisés ou abusifs des noms de domaine.
+L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) a mis en place des mesures de sécurité pour prévenir les transferts ou les changements de titulaires non autorisés ou abusifs des noms de domaine.
 
-L'ICANN a notamment défini un délai incompressible de **60** jours entre chaque opération pouvant survenir sur un nom de domaine (création, changement de propriétaire, transfert).
+L'ICANN a notamment défini un délai incompressible de **60** jours entre chaque opération pouvant survenir sur un nom de domaine (création, changement de titulaire, transfert).
 
 Les règles définies par l'ICANN doivent obligatoirement être respectées par les bureaux d'enregistrement (tel qu'OVHcloud).
 
-Vous n'aurez donc pas d'autre choix que de patienter jusqu'à la fin du délai de 60 jours pour réaliser une nouvelle opération (changement de propriétaire ou transfert) sur votre nom de domaine.
+Vous n'aurez donc pas d'autre choix que de patienter jusqu'à la fin du délai de 60 jours pour réaliser une nouvelle opération (changement de titulaire ou transfert) sur votre nom de domaine.
 
 ///
 
@@ -355,7 +355,7 @@ Les enregistrements DNS sont utilisés, par exemple pour :
 - Associer un nom de domaine à d'autres ressources en ligne en utilisant un nom de domaine (plus facilement mémorisable) au lieu d'une adresse IP.
 - Valider des configurations d'association ou de sécurité, notamment pour les services e-mail et les hébergements mutualisés.
 
-De nombreux enregistrements DNS existent. Ils ont tous un but spécifique dans la résolution DNS. Chez OVHcloud, ils sont distingués en trois parties : 
+De nombreux enregistrements DNS existent. Ils ont tous un but spécifique dans la résolution DNS. Chez OVHcloud, ils sont distingués en trois parties :
 
 - **Champs de pointage** : `A`, `AAAA`, `NS`, `CNAME` et `DNAME`.
 - **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` et `HTTPS`.
@@ -475,7 +475,7 @@ Leurs principales différences résident dans le type d'adresse IP qu'ils utilis
 
 En d'autres termes, les enregistrements A sont utilisés pour les adresses IPv4, tandis que les enregistrements AAAA sont utilisés pour les adresses IPv6. Les deux types d'enregistrements sont utilisés pour diriger le trafic vers une adresse IP spécifique, mais ils sont utilisés pour différentes versions du protocole Internet.
 
-À noter qu'un domaine peut avoir à la fois des champs A et AAAA, ce qui lui permet d'être accessible sur les réseaux IPv4 et IPv6. C’est ce que l’on appelle le « double empilement », une pratique courante pour les sites web et les services qui souhaitent être accessibles aux utilisateurs sur les réseaux IPv4 et IPv6.
+À noter qu'un nom de domaine peut avoir à la fois des champs A et AAAA, ce qui lui permet d'être accessible sur les réseaux IPv4 et IPv6. C’est ce que l’on appelle le « double empilement », une pratique courante pour les sites web et les services qui souhaitent être accessibles aux utilisateurs sur les réseaux IPv4 et IPv6.
 
 > [!success]
 >
@@ -521,9 +521,9 @@ L'enregistrement DNS de type **S**tart **O**f **A**uthority (**SOA**) fournit un
 Retrouvez ci-après le résultat d'une requête SOA pour le nom de domaine `domain.tld`.
 
 ```bash
-              ;; ANSWER SECTION:                                                                                                     
+              ;; ANSWER SECTION:
 
-domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300   
+domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300
 ```
 
 |Élement dans le résultat|Description|Correspondance dans l'exemple ci-dessus|
@@ -587,9 +587,9 @@ dig domain.tld soa
 Une fois la commande exécutée, vous obtenez un résultat similaire à celui-ci :
 
 ```bash
-              ;; ANSWER SECTION:                                                                                                     
+              ;; ANSWER SECTION:
 
-domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300   
+domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300
 ```
 
 Dans ce résultat, récupérez le **numéro de série** (dans notre exemple : `2025091801`).
@@ -611,7 +611,7 @@ Cas n°1 - Les deux numéros de série correspondent :
 
 Cela signifie que la propagation DNS s'effectue correctement. Vous n'avez rien d'autre à faire.
 
-Cas n°2 - Les deux numéros de série sont différents : 
+Cas n°2 - Les deux numéros de série sont différents :
 
 Cela signifie que soit :
 
@@ -933,7 +933,7 @@ Cas n°1 - Le nom de domaine n'apparaît pas dans la liste :
 
 Cela signifie que le nom de domaine n'est pas géré depuis votre [espace client OVHcloud](/links/manager). Effectuez une requête [WHOIS](/links/web/domains-whois) avec ce dernier pour connaître l'endroit où il est enregistré.
 
-Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le WHOIS du nom de domaine): 
+Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le WHOIS du nom de domaine):
 
 - Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine n'est pas enregistré chez OVHcloud : Vous pourrez réaliser une opération de [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) vers OVHcloud pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).

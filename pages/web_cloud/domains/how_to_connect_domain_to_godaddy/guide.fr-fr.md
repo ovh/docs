@@ -6,7 +6,7 @@ updated: 2024-06-13
 
 ## Objectif
 
-Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement GoDaddy. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement GoDaddy.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement GoDaddy. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement GoDaddy.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement GoDaddy**
 
