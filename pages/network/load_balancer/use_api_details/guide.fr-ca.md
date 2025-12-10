@@ -74,11 +74,14 @@ updated: 2025-09-29
   white-space:nowrap !important;
 }
 /* DETAILS */
-details {
+details:not(:has(summary:empty)) {
+  margin:15px 0 !important;
+}
+.ovh-api + details:has(summary:empty) {
   margin-top:-15px !important;
   position:relative !important;
 }
-details summary {
+.ovh-api + details summary:empty {
   cursor:pointer !important;
   height:32px !important;
   list-style:none !important;
@@ -88,7 +91,7 @@ details summary {
   top:-32px !important;
   width:30px !important;
 }
-details > summary:before {
+.ovh-api + details > summary:empty:before {
   background-color:#222c32 !important;
   content:'' !important;
   height:24px !important;
@@ -106,33 +109,33 @@ details > summary:before {
   transition:transform .25s !important;
   width:24px !important;
 }
-details > summary::-webkit-details-marker {
+.ovh-api + details > summary:empty::-webkit-details-marker {
   /* Hides marker on Safari */
   display:none !important;
 }
-details[open] {
+.ovh-api + details[open]:has(summary:empty) {
   border-radius:0 0 4px 4px !important;
   border-top:none !important;
   margin-top:-47px !important;
   padding:40px 15px 15px !important;
 }
-details[open] > summary {
+.ovh-api + details[open] > summary:empty {
   right:-1px !important;
   top:-1px !important;
 }
-details[open] > summary:before {
+.ovh-api + details[open] > summary:empty:before {
   transform: rotate(90deg) !important;
 }
-details p {
+.ovh-api + details p {
   margin:0 0 10px !important;
 }
-details h6 {
+.ovh-api + details h6 {
   font-size: 16px !important;
   font-weight:600 !important;
   margin:0 0 20px !important;
   text-transform:uppercase !important;
 }
-details sup {
+.ovh-api + details sup {
   color: #900 !important;
   font-size: 24px !important;
   vertical-align: middle !important;
@@ -146,18 +149,18 @@ details sup {
 .ovh-api-verb.ovh-api-verb-GET {
   background-color: var(--md-api-get-color) !important;
 }
-.ovh-api:has(.ovh-api-verb-GET) + details > summary {
+.ovh-api:has(.ovh-api-verb-GET) + details > summary:empty {
   border:1px solid var(--md-api-get-color) !important;
   border-left:0 !important;
 }
-.ovh-api:has(.ovh-api-verb-GET) + details > summary:before {
+.ovh-api:has(.ovh-api-verb-GET) + details > summary:empty:before {
   background-color:var(--md-api-get-color) !important;
 }
-.ovh-api:has(.ovh-api-verb-GET) + details[open] {
+.ovh-api:has(.ovh-api-verb-GET) + details[open]:has(summary:empty) {
   border:1px solid var(--md-api-get-color) !important;
   box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-get-bgcolor) !important;
 }
-.ovh-api:has(.ovh-api-verb-GET):not(:has(+ details)) .ovh-api-main{
+.ovh-api:has(.ovh-api-verb-GET):not(:has(+ details > summary:empty)) .ovh-api-main {
   border-right:1px solid var(--md-api-get-color) !important;
   width:calc(100% + 29px) !important;
 }
@@ -169,18 +172,18 @@ details sup {
 .ovh-api-verb.ovh-api-verb-POST {
   background-color: var(--md-api-post-color) !important;
 }
-.ovh-api:has(.ovh-api-verb-POST) + details > summary {
+.ovh-api:has(.ovh-api-verb-POST) + details > summary:empty {
   border:1px solid var(--md-api-post-color) !important;
   border-left:0 !important;
 }
-.ovh-api:has(.ovh-api-verb-POST) + details > summary:before {
+.ovh-api:has(.ovh-api-verb-POST) + details > summary:empty:before {
   background-color:var(--md-api-post-color) !important;
 }
-.ovh-api:has(.ovh-api-verb-POST) + details[open] {
+.ovh-api:has(.ovh-api-verb-POST) + details[open]:has(summary:empty) {
   border:1px solid var(--md-api-post-color) !important;
   box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-post-bgcolor) !important;
 }
-.ovh-api:has(.ovh-api-verb-POST):not(:has(+ details)) .ovh-api-main{
+.ovh-api:has(.ovh-api-verb-POST):not(:has(+ details > summary:empty)) .ovh-api-main {
   border-right:1px solid var(--md-api-post-color) !important;
   width:calc(100% + 29px) !important;
 }
@@ -192,18 +195,18 @@ details sup {
 .ovh-api-verb.ovh-api-verb-PUT {
   background-color: var(--md-api-put-color) !important;
 }
-.ovh-api:has(.ovh-api-verb-PUT) + details > summary {
+.ovh-api:has(.ovh-api-verb-PUT) + details > summary:empty {
   border:1px solid var(--md-api-put-color) !important;
   border-left:0 !important;
 }
-.ovh-api:has(.ovh-api-verb-PUT) + details > summary:before {
+.ovh-api:has(.ovh-api-verb-PUT) + details > summary:empty:before {
   background-color:var(--md-api-put-color) !important;
 }
-.ovh-api:has(.ovh-api-verb-PUT) + details[open] {
+.ovh-api:has(.ovh-api-verb-PUT) + details[open]:has(summary:empty) {
   border:1px solid var(--md-api-put-color) !important;
   box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-put-bgcolor) !important;
 }
-.ovh-api:has(.ovh-api-verb-PUT):not(:has(+ details)) .ovh-api-main{
+.ovh-api:has(.ovh-api-verb-PUT):not(:has(+ details > summary:empty)) .ovh-api-main {
   border-right:1px solid var(--md-api-put-color) !important;
   width:calc(100% + 29px) !important;
 }
@@ -215,22 +218,24 @@ details sup {
 .ovh-api-verb.ovh-api-verb-DELETE {
   background-color: var(--md-api-delete-color) !important;
 }
-.ovh-api:has(.ovh-api-verb-DELETE) + details > summary {
+.ovh-api:has(.ovh-api-verb-DELETE) + details > summary:empty {
   border:1px solid var(--md-api-delete-color) !important;
   border-left:0 !important;
 }
-.ovh-api:has(.ovh-api-verb-DELETE) + details > summary:before {
+.ovh-api:has(.ovh-api-verb-DELETE) + details > summary:empty:before {
   background-color:var(--md-api-delete-color) !important;
 }
-.ovh-api:has(.ovh-api-verb-DELETE) + details[open] {
+.ovh-api:has(.ovh-api-verb-DELETE) + details[open]:has(summary:empty) {
   border:1px solid var(--md-api-delete-color) !important;
-  box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-delete-bgcolor) !important;
+  box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-put-bgcolor) !important;
 }
-.ovh-api:has(.ovh-api-verb-DELETE):not(:has(+ details)) .ovh-api-main{
+.ovh-api:has(.ovh-api-verb-DELETE):not(:has(+ details > summary:empty)) .ovh-api-main {
   border-right:1px solid var(--md-api-delete-color) !important;
   width:calc(100% + 29px) !important;
 }
 </style>
+
+
 
 ## Objectif
 
@@ -282,7 +287,7 @@ Toutes les fonctions d'API qui sont utilisées dans la section */ipLoadbalancing
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -299,7 +304,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -324,7 +329,7 @@ La configuration SSL que vous souhaitez attribuer au service (valeur)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/allowedServers
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -341,7 +346,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/definedFarms
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -362,7 +367,7 @@ Permet de filtrer selon le réseau vrack
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableServerZones
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -379,7 +384,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -396,7 +401,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmType
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -413,7 +418,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFrontendType
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -430,7 +435,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteActions
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -447,7 +452,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteRules
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -466,7 +471,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/serviceInfos
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -483,7 +488,7 @@ L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/serviceInfos
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -516,7 +521,7 @@ Renseigne la durée de renouvellement (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/zone
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -533,7 +538,7 @@ L'identifiant de votre Load Balancer, ex. : IP-1.2.3.4 (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/zone/{name}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -556,7 +561,7 @@ Le service sera supprimé à la date d'expiration.
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/zone/{name}/terminate
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -577,7 +582,7 @@ Le nom de la zone à supprimer
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/zone/{name}/cancelTermination
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -604,7 +609,7 @@ Accéder aux éléments relatifs au protocole HTTP (frontend, ferme, etc.).
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -625,7 +630,7 @@ Le nom de la zone (chaîne de caractères)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -693,7 +698,7 @@ L'adresse à utiliser par la sonde pour les sondes de type HTTP. Le type est ign
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -714,7 +719,7 @@ L'identifiant de votre ferme HTTP (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -752,7 +757,7 @@ Le type de persistence de connexion (valeur)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -775,7 +780,7 @@ L'identifiant de votre ferme HTTP (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -808,7 +813,7 @@ Filtrer les valeurs par statut du serveur (valeur)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -875,7 +880,7 @@ Si votre serveur est activé ou non (booléen)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -900,7 +905,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -959,7 +964,7 @@ Le poids de votre serveur pour votre ferme (nombre)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -986,7 +991,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1015,7 +1020,7 @@ Le nom de votre zone, par exemple: all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1082,7 +1087,7 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1103,7 +1108,7 @@ L'identifiant de votre frontend HTTP (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1152,7 +1157,7 @@ Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1177,7 +1182,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1198,7 +1203,7 @@ L'identifiant d'un frontend HTTP (nombre)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/route
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1239,7 +1244,7 @@ La priorité de votre route. (nombre) [0 - 255]
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1260,7 +1265,7 @@ L'identifiant de votre route (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1303,7 +1308,7 @@ La priorité de votre route. (nombre) [0 - 255]
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1326,7 +1331,7 @@ L'identifiant de votre route (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1347,7 +1352,7 @@ L'identifiant de votre route HTTP (nombre)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1388,7 +1393,7 @@ Le nom du sous-champ, si applicable. Peut être un cookie ou un nom d'en-tête, 
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1413,7 +1418,7 @@ L'identifiant de votre règle de routage HTTP (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1455,7 +1460,7 @@ Le nom du sous-champ si applicable (chaîne de caractères)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1486,7 +1491,7 @@ Accéder aux éléments relatifs au protocole TCP (frontend, ferme, etc.).
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1507,7 +1512,7 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1575,7 +1580,7 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1596,7 +1601,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1634,7 +1639,7 @@ Le type de persistence de connexion (valeur)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1657,7 +1662,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1690,7 +1695,7 @@ Filtrer les valeurs par statut du serveur (valeur)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1753,7 +1758,7 @@ Si votre serveur est activé ou non (booléen)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1778,7 +1783,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1834,7 +1839,7 @@ Le poids de votre serveur pour votre ferme (nombre)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1861,7 +1866,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1890,7 +1895,7 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/frontend
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1943,7 +1948,7 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -1964,7 +1969,7 @@ L'identifiant de votre frontend TCP (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2005,7 +2010,7 @@ Si les requêtes envoyées à la ferme HTTP doivent être chiffrées avec SSL ou
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2030,7 +2035,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2051,7 +2056,7 @@ L'identifiant d'un frontend TCP (nombre)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2089,7 +2094,7 @@ La priorité de votre route. (nombre) [0 - 255]
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2110,7 +2115,7 @@ L'identifiant de votre route (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2150,7 +2155,7 @@ La priorité de votre route (nombre) [0 - 255]
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2173,7 +2178,7 @@ L'identifiant de votre route (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2194,7 +2199,7 @@ L'identifiant de votre route TCP (nombre)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2235,7 +2240,7 @@ Le nom du sous-champ, si applicable. Peut être un cookie ou un nom d'en-tête, 
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2260,7 +2265,7 @@ L'identifiant de votre règle de routage HTTP (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2302,7 +2307,7 @@ Le nom du sous-champ si applicable (chaîne de caractères)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2333,7 +2338,7 @@ Accéder aux éléments relatifs au protocole UDP (frontend, ferme, etc.).
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2354,7 +2359,7 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2383,7 +2388,7 @@ Le nom de votre zone, par exemple : all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2404,7 +2409,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2433,7 +2438,7 @@ Le port d'écoute de la ferme (nombre, 1..65000)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2456,7 +2461,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2485,7 +2490,7 @@ Filtrer les valeurs par statut du serveur (valeur)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2522,7 +2527,7 @@ Si votre serveur est activé ou non (booléen)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2547,7 +2552,7 @@ L'identifiant de votre ferme (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2583,7 +2588,7 @@ Si votre serveur est activé ou non (booléen)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2610,7 +2615,7 @@ L'identifiant de votre ferme UDP (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2639,7 +2644,7 @@ Le nom de votre zone, par exemple : all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/frontend
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2680,7 +2685,7 @@ Le nom de votre zone, ex: all (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2701,7 +2706,7 @@ L'identifiant de votre frontend UDP (nombre)
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2733,7 +2738,7 @@ Le nom de votre frontend UDP (chaîne de caractères)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2758,7 +2763,7 @@ L'identifiant de votre frontend UDP (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/failover
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2777,7 +2782,7 @@ L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef01234567
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/instancesState
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2794,7 +2799,7 @@ L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef01234567
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/natIp
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2811,7 +2816,7 @@ L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef01234567
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/refresh
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2830,7 +2835,7 @@ L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef01234567
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2859,7 +2864,7 @@ Type de certificat SSL (valeur)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/ssl
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2888,7 +2893,7 @@ Ajout de la clé privée (chaîne de caractères)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2909,7 +2914,7 @@ L'identifiant de votre certificat SSL (nombre)
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/ssl/{id}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2932,7 +2937,7 @@ L'identifiant de votre certificat SSL (nombre)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2953,7 +2958,7 @@ Consultation des tâches disponibles (valeurs)
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -2976,7 +2981,7 @@ L'identifiant de votre tâche (nombre)
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/changeContact
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -3012,7 +3017,7 @@ L'identifiant client OVHcloud à configurer pour le contact technique de ce serv
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/network
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -3037,7 +3042,7 @@ Permet de filtrer selon le vlan utilisé
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/vrack/network
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -3074,7 +3079,7 @@ Vlan du réseau privé dans le vRack. 0 si le réseau privé n'est pas dans un v
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -3095,7 +3100,7 @@ L'identifiant du réseau privé
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -3116,7 +3121,7 @@ L'identifiant du réseau privé
 > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
@@ -3137,7 +3142,7 @@ L'identifiant du réseau privé
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}/updateFarmId
 >
 
-/// details | &nbsp;
+/// details | 
 
 <h6>Paramètres :</h6>
 
