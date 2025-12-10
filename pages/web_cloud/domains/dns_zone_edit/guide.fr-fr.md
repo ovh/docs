@@ -32,14 +32,14 @@ Pour plus d'explications, consultez nos guides « [Tout savoir sur les serveurs 
 
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](/links/manager).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Utiliser la configuration OVHcloud (ses serveurs DNS) pour le nom de domaine concerné. 
+- Utiliser la configuration OVHcloud (ses serveurs DNS) pour le nom de domaine concerné.
 
 > [!warning]
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
-> 
+>
 > - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, rendez-vous dans votre [espace client OVHcloud](/links/manager), dans l'onglet `Serveurs DNS`{.action} du nom de domaine concerné. Si besoin, consultez notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
-> 
+>
 > Dans les deux cas ci-dessus, faites attention en effectuant vos changements de serveurs DNS. En effet, l'ancienne configuration pouvant être appliquée à votre nom de domaine ne sera plus active si vous n'avez pas préalablement reconfiguré et personnalisé la nouvelle zone DNS présente chez OVHcloud.<br>
 > Vous ne pouvez avoir qu'une seule zone DNS active à la fois par nom de domaine.
 >
@@ -50,7 +50,7 @@ Pour plus d'explications, consultez nos guides « [Tout savoir sur les serveurs 
 
 > [!primary]
 >
-> Contrairement au nom de domaine, il n'y a pas de notion de propriétaire pour une zone DNS, mais de gestion des contacts pour une zone DNS OVHcloud. Si vous souhaitez basculer la gestion de votre zone DNS vers un autre compte OVHcloud, suivez notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+> Contrairement au nom de domaine, il n'y a pas de notion de titulaire pour une zone DNS, mais de gestion des contacts pour une zone DNS OVHcloud. Si vous souhaitez basculer la gestion de votre zone DNS vers un autre compte OVHcloud, suivez notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
 Pour accéder à la gestion d'une zone DNS OVHcloud, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **3** étapes.
 
@@ -116,7 +116,7 @@ Pour modifier en mode textuel une zone DNS OVHcloud, cliquez sur les onglets ci-
 >> Sur la droite ou en dessous du tableau, cliquez sur `Modifier en mode textuel`{.action} puis suivez les étapes qui s'affichent.
 >>
 >> > [!warning]
->> > 
+>> >
 >> > Ne modifiez pas, via le bouton `Modifier en mode textuel`{.action}, les enregistrements NS de votre zone DNS au profit de serveurs DNS externes à OVHcloud. En effet, cette zone DNS fonctionne **uniquement** avec des serveurs DNS OVHcloud.
 
 #### Utiliser nos assistants de configuration
@@ -317,7 +317,7 @@ Si vous souhaitez réduire ce délai pour les prochaines éditions de votre zone
 
 [Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_spf)
 
-[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec)
+[Protégez votre nom de domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
 

@@ -80,7 +80,7 @@ Une requête DNS pour *www.domain.tld* retournera soit la cible de l'enregistrem
 
 ///
 
-/// details | Enregistrement CNAME sur un domaine dans sa propre zone DNS
+/// details | Enregistrement CNAME sur un nom de domaine dans sa propre zone DNS
 
 Par convention, **les enregistrements de type CNAME ne peuvent pas être utilisés sur un nom de domaine dans sa propre zone DNS**. En effet, le nom de domaine doit obligatoirement pointer directement vers une adresse IP avec un enregistrement de type [A](/pages/web_cloud/domains/dns_zone_a_record_creation) pour une IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) pour une IPv6.
 
@@ -92,7 +92,7 @@ Vous pourrez cependant créer des enregistrements de type CNAME pour tous les so
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -51,17 +51,17 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 > **Étape 3**
 >>
->> Sur la page qui s'affiche, dans l'encadré **Sécurité**, cliquez sur le bouton `Configurer l'affichage du WHOIS`{.action}.
+>> Sur la page qui s'affiche, dans l'encadré **Configuration**, cliquez sur le bouton `Gérer la protection des données`{.action}.
 >>
->> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
+>> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
 > **Étape 4**
 >>
->> Sur la nouvelle page qui apparaît, vous pourrez choisir d'`Afficher` ou de `Masquer` les informations relatives aux contacts propriétaire, administrateur et technique du nom de domaine, dans la limite des actions autorisées par le registre gestionnaire de l'extension.
+>> Sur la nouvelle page qui apparaît, vous pourrez choisir d'`Afficher` ou de `Masquer` les informations relatives aux contacts titulaire, administrateur et technique du nom de domaine, dans la limite des actions autorisées par le registre gestionnaire de l'extension.
 >>
 >> Pour chacun des 3 contacts, cochez la case `Gérer l'affichage champ par champ`{.action} pour obtenir plus d'options.
 >>
->> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing/configure-listing-in-whois.png){.thumbnail}
+>> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png){.thumbnail}
 >>
 >> Une fois vos choix effectués, cliquez sur le bouton `Enregistrer les modifications`{.action}.
 >>
@@ -70,7 +70,7 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

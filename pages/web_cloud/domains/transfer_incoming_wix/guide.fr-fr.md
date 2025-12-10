@@ -17,14 +17,14 @@ Le transfert d'un nom de domaine Wix nécessite de respecter une démarche spéc
 > Si OVHcloud est déjà le bureau d'enregistrement de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le transfert entrant de domaine n'est pas la procédure appropriée. La procédure de transfert entrant de domaine s’applique **uniquement** aux noms de domaine enregistrés dans un autre bureau d'enregistrement qu'OVHcloud.
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
+> Si vous devez également changer le **titulaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de titulaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
 >
 
 ## Prérequis
 
 - Le nom de domaine est enregistré auprès du bureau d'enregistrement Wix.
 - Le nom de domaine existe depuis plus de 60 jours.
-- Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
+- Le nom de domaine n'a pas été transféré ou n'a pas changé de titulaire au cours des 60 derniers jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
 - Le nom de domaine n'a pas expiré et a une date d'expiration permettant de terminer le processus de transfert dans les temps (recommandé : plus de 60 jours).
 
@@ -33,7 +33,7 @@ Vous devez aussi :
 - Être en mesure de déverrouiller le nom de domaine.
 - Posséder le code de transfert ou être en mesure de le récupérer.
 - Être habilité à demander le transfert du nom de domaine.
-- Avoir prévenu le propriétaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
+- Avoir prévenu le titulaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
 
 > [!warning]
 >

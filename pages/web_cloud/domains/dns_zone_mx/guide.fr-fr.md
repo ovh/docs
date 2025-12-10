@@ -21,13 +21,13 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification des enregistrements MX depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](/links/manager). Une fois positionné sur le domaine concerné, depuis l'onglet `informations générales`{.action}, dans la partie `Serveurs DNS`{.action}, si la mention `Actif` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
+> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](/links/manager). Une fois positionné sur le domaine concerné, depuis l'onglet `informations générales`{.action}, dans la partie `Serveurs DNS`{.action}, si la mention `Standards` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
 >
 > ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
 ## En pratique
 
-### Comprendre le rôle des enregistrements MX 
+### Comprendre le rôle des enregistrements MX
 
 Les enregistrements MX (**M**ail e**X**change) permettent de relier votre nom de domaine aux serveurs e-mail de réception attachés à votre service e-mail. Nous allons nous appuyer sur un exemple.
 
