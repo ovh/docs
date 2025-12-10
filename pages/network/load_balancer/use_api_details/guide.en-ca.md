@@ -75,7 +75,7 @@ updated: 2025-09-29
 }
 /* DETAILS */
 details:not(:has(summary:empty)) {
-  margin:15px 0 !important;
+  margin:10px 0;
 }
 .ovh-api + details:has(summary:empty) {
   margin-top:-15px !important;
@@ -126,16 +126,16 @@ details:not(:has(summary:empty)) {
 .ovh-api + details[open] > summary:empty:before {
   transform: rotate(90deg) !important;
 }
-.ovh-api + details p {
+.ovh-api + details[open]:has(summary:empty) p {
   margin:0 0 10px !important;
 }
-.ovh-api + details h6 {
+.ovh-api + details[open]:has(summary:empty) h6 {
   font-size: 16px !important;
   font-weight:600 !important;
   margin:0 0 20px !important;
   text-transform:uppercase !important;
 }
-.ovh-api + details sup {
+.ovh-api + details[open]:has(summary:empty) sup {
   color: #900 !important;
   font-size: 24px !important;
   vertical-align: middle !important;
