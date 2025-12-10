@@ -226,7 +226,7 @@ details:not(:has(summary:empty)) {
 }
 .ovh-api:has(.ovh-api-verb-DELETE) + details[open]:has(summary:empty) {
   border:1px solid var(--md-api-delete-color) !important;
-  box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-put-bgcolor) !important;
+  box-shadow:var(--md-shadow-z2), inset 0 30px 0 var(--md-api-delete-bgcolor) !important;
 }
 .ovh-api:has(.ovh-api-verb-DELETE):not(:has(+ details > summary:empty)) .ovh-api-main {
   border-right:1px solid var(--md-api-delete-color) !important;
