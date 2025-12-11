@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich die Zuordnung von Domainnamen und Websites prüfen?"
 excerpt: "Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Subdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist"
-updated: 2025-11-27
+updated: 2025-12-11
 ---
 
 <style>
@@ -94,10 +94,6 @@ Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass
 
 Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` gelb ist, bedeutet dies, dass der Eintrag **A** (IPv4) und/oder **AAAA** (IPv6) Ihrer Domain auf eine IP-Adresse verweist, die jedoch nicht die IP-Adresse des Webhostings ist, von dem aus Sie die Spalte `Diagnose` einsehen.
 
-Klicken Sie auf das gelbe Symbol `A/AAAA`, um weitere Informationen zu erhalten. Die folgende Nachricht wird angezeigt:
-
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
 Um Probleme mit der DNS-Zuordnung Ihrer Domain zu beheben und sicherzustellen, dass diese korrekt auf das gewünschte Webhosting verweist, befolgen Sie die Schritte in unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 /// 
@@ -107,10 +103,6 @@ Um Probleme mit der DNS-Zuordnung Ihrer Domain zu beheben und sicherzustellen, d
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
 
 Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grau ist, bedeutet dies, dass die Domain aktuell auf keine IP-Adresse verweist und weder ein Eintrag **A** (IPv4) noch **AAAA** (IPv6) für diese Domain konfiguriert ist.
-
-Klicken Sie auf das graue Symbol `A/AAAA`, um weitere Informationen zu erhalten. Die folgende Nachricht wird angezeigt:
-
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
 Um die Einträge **A** und/oder **AAAA** hinzuzufügen und Ihre Domain korrekt zu konfigurieren, befolgen Sie die Schritte in unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 

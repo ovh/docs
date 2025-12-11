@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo comprobar la asociación 'nombre de dominio / sitio web'?"
 excerpt: "Utilice nuestra herramienta de diagnóstico para comprobar que su nombre de dominio o subdominio está correctamente declarado con su sitio web en su alojamiento web"
-updated: 2025-11-27
+updated: 2025-12-11
 ---
 
 <style>
@@ -94,10 +94,6 @@ Cuando el icono `A/AAAA` es verde en la columna `Diagnóstico`, esto significa q
 
 Cuando el icono `A/AAAA` es amarillo en la columna `Diagnóstico`, esto significa que el registro **A** (IPv4) y/o **AAAA** (IPv6) de su nombre de dominio apunta a una dirección IP, pero no es la del alojamiento web desde el cual está consultando la columna `Diagnóstico`.
 
-Haga clic en el icono `A/AAAA` amarillo para obtener más información. Aparece el siguiente mensaje:
-
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
 Para resolver los problemas de apuntado DNS de su nombre de dominio y asegurarse de que apunta correctamente al alojamiento web deseado, siga los pasos descritos en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
@@ -107,10 +103,6 @@ Para resolver los problemas de apuntado DNS de su nombre de dominio y asegurarse
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
 
 Cuando el icono `A/AAAA` es gris en la columna `Diagnóstico`, esto significa que el nombre de dominio no apunta actualmente a ninguna dirección IP y que no hay ningún registro **A** (IPv4) o **AAAA** (IPv6) configurado para este nombre de dominio.
-
-Haga clic en el icono `A/AAAA` gris para obtener más información. Aparece el siguiente mensaje:
-
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
 Para añadir los registros **A** y/o **AAAA** y configurar correctamente su nombre de dominio, siga los pasos descritos en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 

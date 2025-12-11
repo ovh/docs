@@ -1,7 +1,7 @@
 ---
 title: "How to check the 'domain name / website' association"
 excerpt: "Use our diagnostic tool to verify that your domain name or subdomain is correctly declared with your website on your web hosting"
-updated: 2025-11-27
+updated: 2025-12-11
 ---
 
 <style>
@@ -94,10 +94,6 @@ When the `A/AAAA` icon is green in the `Diagnostic` column, it means that the **
 
 When the `A/AAAA` icon is yellow in the `Diagnostic` column, it means that the **A** record (IPv4) and/or **AAAA** record (IPv6) of your domain name is pointing to an IP address, but it is not the one of the web hosting from which you are viewing the `Diagnostic` column.
 
-Click on the yellow `A/AAAA` icon for more information. The following message appears:
-
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
 To resolve DNS issues with your domain name and ensure it correctly points to the desired web hosting, follow the steps described in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
@@ -107,10 +103,6 @@ To resolve DNS issues with your domain name and ensure it correctly points to th
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
 
 When the `A/AAAA` icon is grey in the `Diagnostic` column, it means that the domain name is not currently pointing to any IP address and no **A** (IPv4) or **AAAA** (IPv6) records are configured for this domain name.
-
-Click on the grey `A/AAAA` icon for more information. The following message appears:
-
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
 To add the **A** and/or **AAAA** records and correctly configure your domain name, follow the steps described in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
 

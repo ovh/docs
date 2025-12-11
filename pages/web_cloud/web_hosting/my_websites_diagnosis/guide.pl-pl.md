@@ -1,7 +1,7 @@
 ---
 title: "Jak sprawdzić przypisanie 'nazwy domeny / strony internetowej'?"
 excerpt: "Użyj naszego narzędzia diagnostycznego, aby upewnić się, że Twoja domena lub poddomena jest poprawnie zadeklarowana z Twoją stroną internetową na Twoim hosting"
-updated: 2025-11-27
+updated: 2025-12-11
 ---
 
 <style>
@@ -94,10 +94,6 @@ Gdy ikona `A/AAAA` jest zielona w kolumnie `Diagnostyka`, oznacza to, że rekord
 
 Gdy ikona `A/AAAA` jest żółta w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (IPv4) i/lub **AAAA** (IPv6) Twojej domeny wskazuje na adres IP, ale nie jest to adres IP hostingu, z którego przeglądasz kolumnę `Diagnostyka`.
 
-Kliknij ikonę `A/AAAA` żółtą, aby uzyskać więcej informacji. Wyświetlony zostanie następujący komunikat:
-
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
 Aby rozwiązać problemy z wskazywaniem DNS Twojej domeny i upewnić się, że poprawnie wskazuje ona na żądany hosting, postępuj zgodnie z instrukcjami opisanymi w naszym przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
@@ -107,10 +103,6 @@ Aby rozwiązać problemy z wskazywaniem DNS Twojej domeny i upewnić się, że p
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
 
 Gdy ikona `A/AAAA` jest szara w kolumnie `Diagnostyka`, oznacza to, że domena nie wskazuje obecnie na żaden adres IP, a żaden rekord **A** (IPv4) ani **AAAA** (IPv6) nie jest skonfigurowany dla tej domeny.
-
-Kliknij ikonę `A/AAAA` szarą, aby uzyskać więcej informacji. Wyświetlony zostanie następujący komunikat:
-
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
 Aby dodać rekordy **A** i/lub **AAAA** i poprawnie skonfigurować swoją domenę, postępuj zgodnie z instrukcjami opisanymi w naszym przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 

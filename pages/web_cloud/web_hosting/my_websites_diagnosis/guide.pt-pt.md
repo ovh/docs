@@ -1,7 +1,7 @@
 ---
 title: "Como verificar a associação 'nome de domínio / site web'?"
 excerpt: "Utilize a nossa ferramenta de diagnóstico para verificar que o seu nome de domínio ou subdomínio está bem declarado com o seu site web no seu alojamento web"
-updated: 2025-11-27
+updated: 2025-12-11
 ---
 
 <style>
@@ -94,10 +94,6 @@ Quando o ícone `A/AAAA` é verde na coluna `Diagnóstico`, isso significa que o
 
 Quando o ícone `A/AAAA` é amarelo na coluna `Diagnóstico`, isso significa que o registo **A** (IPv4) e/ou **AAAA** (IPv6) do seu nome de domínio aponta para um endereço IP, mas que não é o do alojamento web a partir do qual está a consultar a coluna `Diagnóstico`.
 
-Clique no ícone `A/AAAA` amarelo para mais informações. A seguinte mensagem aparece:
-
-![A and AAAA yellow](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
 Para resolver os problemas de ponteiro DNS do seu nome de domínio e assegurar-se de que aponta corretamente para o alojamento web desejado, siga as etapas descritas no nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 /// 
@@ -107,10 +103,6 @@ Para resolver os problemas de ponteiro DNS do seu nome de domínio e assegurar-s
 ![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
 
 Quando o ícone `A/AAAA` é cinzento na coluna `Diagnóstico`, isso significa que o nome de domínio não aponta atualmente para nenhum endereço IP e que nenhum registo **A** (IPv4) ou **AAAA** (IPv6) está configurado para este nome de domínio.
-
-Clique no ícone `A/AAAA` cinzento para mais informações. A seguinte mensagem aparece:
-
-![A and AAAA grey](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
 Para adicionar os registos **A** e/ou **AAAA** e configurar corretamente o seu nome de domínio, siga as etapas descritas no nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
