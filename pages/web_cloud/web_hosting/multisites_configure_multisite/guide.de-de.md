@@ -119,7 +119,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **8** Schritte anzuzeigen.
 >> |---|---|
 >> |IP des Landes|Ermöglicht das Nutzen einer geolokalisierten IP-Adresse (aus einer Liste von Ländern) für den ausgewählten Domainnamen.<br> Weitere Informationen finden Sie auf [dieser Seite](/links/web/hosting-options).|
 >> |Firewall|Ermöglicht die Aktivierung eines Firewalls (Filterung und Analyse von Anfragen) für den ausgewählten Domainnamen.<br>Weitere Informationen finden Sie auf [dieser Seite](/links/web/hosting-options).|
->> |CDN|Ermöglicht die Aktivierung des CDNs (Caching von statischen Elementen Ihrer Website, wie z. B. Bilder) für den ausgewählten Domainnamen.<br>Weitere Informationen finden Sie auf [dieser Seite](/links/web/hosting-options-CDN).<br>Durch die Aktivierung von SSL und CDN können Sie außerdem vom Protokoll **HTTP/2** profitieren (dieses Protokoll ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
+>> |CDN|Ermöglicht die Aktivierung des CDNs (Caching von statischen Elementen Ihrer Website, wie z. B. Bilder) für den ausgewählten Domainnamen.<br>Weitere Informationen finden Sie auf [dieser Seite](/links/web/hosting-options-cdn).<br>Durch die Aktivierung von SSL und CDN können Sie außerdem vom Protokoll **HTTP/2** profitieren (dieses Protokoll ist standardmäßig in unserem Rechenzentrum in Gravelines aktiviert).|
 >>
 >> Sobald die Schaltfläche `Erweiterte Konfiguration`{.action} aktiviert ist, können Sie auch die DNS-Konfigurationsmethode für Ihren Domainnamen auswählen:
 >>

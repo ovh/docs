@@ -27,7 +27,7 @@ Would you like to add a new website to your web hosting?
 **Discover how to host different websites on your web hosting offer.**
 
 > [!primary]
-> If you have already created the website on your web hosting and want to associate it with a new domain name or subdomain, please refer to **this guide directly** [here](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
+> If you have already created the website on your web hosting and want to associate it with a new domain name or subdomain, please refer to [this guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) **directly**.
 
 ## Requirements
 
@@ -116,8 +116,8 @@ Click on the tabs below to view each of the **8** steps.
 >>
 >> |Option|Description|
 >> |---|---|
->> |Country IP|Allows you to benefit from a geolocated IP address (from a list of countries) for the selected domain name.<br> Learn more from [this page](/links/web/hosting-Options).|
->> |Firewall|Allows you to activate a firewall (filtering and analysis of requests) on the selected domain name.<br> Learn more from [this page](/links/web/hosting-Options).|
+>> |Country IP|Allows you to benefit from a geolocated IP address (from a list of countries) for the selected domain name.<br> Learn more from [this page](/links/web/hosting-options).|
+>> |Firewall|Allows you to activate a firewall (filtering and analysis of requests) on the selected domain name.<br> Learn more from [this page](/links/web/hosting-options).|
 >> |CDN|Allows you to activate the CDN (caching of static elements of your website, such as images) on the selected domain name.<br> Learn more from [our CDN page](/links/web/hosting-Options-CDN).<br> By activating SSL and the CDN, you will also benefit from the **HTTP/2** protocol (this protocol is activated by default in our Gravelines datacenter).|
 >>
 >> Once the `Advanced configuration`{.action} button is activated, you can also choose the DNS configuration mode for your domain name:

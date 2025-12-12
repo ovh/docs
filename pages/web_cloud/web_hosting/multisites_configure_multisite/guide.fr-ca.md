@@ -31,7 +31,7 @@ Vous souhaitez ajouter un nouveau site web sur votre hébergement web ?
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
 - Disposer d'un ou plusieurs [noms de domaine](/links/web/domains).
 - Pouvoir modifier la configuration de vos noms de domaine depuis la [zone DNS](/pages/web_cloud/domains/dns_zone_edit).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
@@ -44,7 +44,7 @@ Vous souhaitez ajouter un nouveau site web sur votre hébergement web ?
 
 <a name="add-domain-ovhcloud"></a>
 
-/// details | Ajouter un site web avec nom de domaine géré depuis votre espace client OVHcloud
+/// details | Ajouter un site web avec un nom de domaine géré depuis votre espace client OVHcloud
 
 Cette partie s'applique uniquement si le nom de domaine (et/ou sa zone DNS active) avec lequel vous souhaitez créer votre site web se trouve **dans votre espace client OVHcloud**.
 
@@ -110,8 +110,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >>
 >> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom souhaité dans le champ **dossier racine**.
 >>
->> Retrouvez ci-dessous un descriptif des autres options.
->> Selon votre offre d'[hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ci-dessous ne pourront pas être sélectionnés.
+>> Retrouvez ci-dessous un descriptif des autres options. Selon votre [offre d'hébergement web](/links/web/hosting), certains éléments parmi les choix proposés ci-dessous ne pourront pas être sélectionnés.
 >>
 >> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-advanced-configurations.png){.thumbnail}
 >>
@@ -156,7 +155,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 
 ///
 
-/// details | Ajouter un site web avec nom de domaine non géré depuis votre espace client OVHcloud
+/// details | Ajouter un site web avec un nom de domaine non géré depuis votre espace client OVHcloud
 
 Cette partie s'applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n'est pas présent dans votre compte OVHcloud. Il peut s'agir d'un nom de domaine présent dans un autre compte OVHcloud ou enregistré chez un autre fournisseur.
 
