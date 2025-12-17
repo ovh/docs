@@ -40,9 +40,17 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 > [!warning]
 > **À propos du RAID :**
 >
+> - Le RAID matériel est pris en charge, si votre serveur le supporte, car il est configuré avant le déploiement de l'image sur le disque.
+>
 > - Bring Your Own Image (BYOI) ne prend pas en charge la configuration RAID logicielle au moment de l'installation, mais vous pouvez utiliser le service [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux) pour le faire. Choisissez le type d'installation personnalisée le plus adapté : [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux).
 >
-> - Le RAID matériel est pris en charge, si votre serveur le supporte, car il est configuré avant le déploiement de l'image sur le disque.
+> - Si vous restez sur une BYOI, l'image ne sera déployée que sur le premier disque, les autres disques seront laissés en l'état.\
+>   Cependant certaines cartes mères ne démarrent pas avec des disques non initialisés: si votre serveur ne répond pas au ping après installation, vérifiez le partitionnement des disques inutilisés.\
+>   Par exemple depuis la rescue Debian:\
+>   `parted --list` doit renvoyer pour les disques inutilisés (`/dev/sdb`, `/dev/sdc`, etc.) a minima une table GPT comportant une partition (même non typée, et vide)\
+>   Dans le cas contraire:\
+>   `parted /dev/sdb mkt gpt`\
+>   `parted /dev/sdb mkpart bios_grub 1049k 2097k`
 >
 
 **Méthodes de déploiement :**

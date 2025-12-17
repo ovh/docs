@@ -40,9 +40,17 @@ There are some technical limitations linked to the use of physical products such
 > [!warning]
 > **About RAID:**
 >
+> - Hardware RAID is supported, if your server supports it, because it is configured before the image is deployed on disk.
+>
 > - Bring Your Own Image (BYOI) does not support software RAID configuration at install-time, but you can use the service [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux) for that. Choose the custom image method that fits your needs: [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux).
 >
-> - Hardware RAID is supported, if your server supports it, because it is configured before the image is deployed on disk.
+> - If you stay with BYOI, the image will only get deployed to the first disk, other disks will be left unmodified.\
+>   However some motherboards will not boot with uninitialized disks: if your server does not respond to pings, please verify that your unused disks are minimally partitioned.\
+>   For example, starting your server in rescue mode:\
+>   `parted --list` should return, on unused disks (`/dev/sdb`, `/dev/sdc`, etc.), at least a GPT table containing one partition (even untyped and empty).\
+>   Otherwise:\
+>   `parted /dev/sdb mkt gpt`\
+>   `parted /dev/sdb mkpart bios_grub 1049k 2097k`
 >
 
 **Deployment methods:**
