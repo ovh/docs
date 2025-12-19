@@ -1610,6 +1610,7 @@
             + [Hosting multiple websites on your Web Hosting plan](web_cloud/web_hosting/multisites_configure_multisite)
             + [Configuring and using Git with an OVHcloud web hosting plan](web_cloud/web_hosting/git_integration_webhosting)
             + [Web Hosting - Modifying a domain name already associated to a hosting plan](web_cloud/web_hosting/multisites_modify_domain)
+            + [How to detach a domain name from an existing website](web_cloud/web_hosting/my_websites_detach_domain_existing_website)
             + [Web Hosting - Environment, PHP version, ".ovhconfig"](web_cloud/web_hosting/configure_your_web_hosting)
             + [Configuring IPv6 for your website](web_cloud/web_hosting/configure_ipv6)
             + [Managing Cloud Web runtime software applications](web_cloud/web_hosting/manage-runtime)
