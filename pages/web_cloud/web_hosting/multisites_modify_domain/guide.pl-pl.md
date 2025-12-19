@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem"
 excerpt: "Dowiedz się, jak zmienić parametry powiązania domeny/subdomeny zadeklarowanej wcześniej w Twojej usłudze hostingu"
-updated: 2025-11-05
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie
@@ -10,8 +10,10 @@ W przypadku korzystania z hostingu lub aktualizacji strony WWW może być koniec
 
 > [!primary]
 >
-> Ten przewodnik wyjaśnia tylko, jak zmienić nazwę domeny lub subdomenę, która została już zadeklarowana na hostingu OVHcloud. Jeśli chcesz powiązać nową domenę/subdomenę z Twoim hostingiem, zapoznaj się z naszym przewodnikiem "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+> Ten przewodnik wyjaśnia tylko, jak zmienić nazwę domeny lub subdomenę, która została już zadeklarowana na hostingu OVHcloud.
 >
+> - Aby przypisać nową domenę lub poddomenę do strony internetowej znajdującej się na Twoim hostingu, zapoznaj się z naszym poradnikiem "[Jak przypisać domenę do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Aby dodać nową stronę internetową na Twoim hostingu, zapoznaj się z naszym poradnikiem "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 **Dowiedz się, jak zmienić parametry powiązania domeny/subdomeny zadeklarowanej wcześniej w Twojej usłudze hostingu.**
 
@@ -27,62 +29,58 @@ W przypadku korzystania z hostingu lub aktualizacji strony WWW może być koniec
 > [!warning]
 >
 > Zmiana parametrów przypisania domeny lub subdomeny może, w przypadku błędnej operacji, spowodować przerwę w dostępie do Twoich usług (Twojej strony WWW). W razie wątpliwości co do konieczności modyfikacji skontaktuj się z wyspecjalizowanym dostawcą
->
 
-Aby zmienić parametry powiązania domeny lub subdomeny, która została już zadeklarowana w Twoim hostingu, należy wykonać następujące czynności:
+Aby zmienić ustawienia przypisania już zadeklarowanej domeny lub poddomeny na Twoim ofercie hostingu, kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Hosting`{.action}.
-4. Wybierz odpowiedni hosting.
-5. Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}.
-6. W tabeli, która wyświetla się pod zakładką i po prawej stronie nazwy odpowiedniej domeny/subdomeny, kliknij przycisk `...`{.action}, a następnie `Zmień domenę`{.action}.
+> [!tabs]
+> **Krok 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
+>>
+>> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
+>>
+>> ![Strona internetowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Następnie kliknij przycisk `⁝`{.action} po prawej stronie nazwy domeny lub poddomeny, a następnie kliknij `Zmień domenę`{.action}.
+>>
+>> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Krok 5**
+>>
+>> Zostanie wyświetlone następujące okno:
+>>
+>> ![Zmień domenę](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
+>>
+>> W dalszej części tego przewodnika znajdziesz opis każdego z dostępnych parametrów w powyższym oknie. Po przeczytaniu różnych opisów w etap "[Opis zmienialnych parametrów](#step1)", oraz po wprowadzeniu zmian, kliknij przycisk `Dalej`{.action} w prawym dolnym rogu okna, a następnie przejdź do [część 2](#step2).
 
-![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
-
-Pojawi się następujące okno:
-
-![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
-
-W dalszej części tego przewodnika znajdziesz opis każdego z parametrów dostępnych w powyższym oknie. Po zapoznaniu się z poniższymi opisami i wprowadzeniu zmian kliknij przycisk `Dalej`{.action} na dole po prawej stronie okna, a następnie przejdź do [etap 2](#step2).
-
-### Etap 1 - Opis parametrów możliwych do edycji <a name="step1"></a>
+### 1 - Opis parametrów możliwych do edycji <a name="step1"></a>
 
 > [!primary]
 >
-> Formularz `Nazwa domeny`{.action} nie może zostać zmodyfikowany, ponieważ jest to zmiana w ustawieniach domeny powiązanej z hostingiem. Jeśli chcesz powiązać nową domenę/subdomenę z Twoim hostingiem, zapoznaj się z naszym przewodnikiem "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+> Pola `Nazwa domeny`{.action} i `Katalog główny`{.action} nie są modyfikowalne, ponieważ dotyczą one strony internetowej znajdującej się na Twoim hostingu.
 >
-
-#### Zmień "katalog główny"
-
-> [!warning]
-> **Przykład specjalny: konfiguracja za pomocą Git**
+> - Aby przypisać nową domenę lub poddomenę do strony internetowej znajdującej się na Twoim hostingu, zapoznaj się z naszym poradnikiem "[Jak przypisać domenę do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Aby zmienić katalog główny swojej strony internetowej, musisz odłączyć swoją domenę od istniejącej strony internetowej z karty `Moje strony`{.action}. Aby to zrobić:
+>     - Kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny i poddomeny.
+>     - Następnie kliknij przycisk `⁝`{.action} po prawej stronie nazwy domeny lub poddomeny, a następnie `Odłącz domenę`{.action}.
 >
-> Aby zmodyfikować `Katalog główny`{.action} zadeklarowany dla Twojej domeny i jeśli istnieje konfiguracja z Git dla tej samej domeny, najpierw usuń tę konfigurację.
->
-> Jeśli istnieje konfiguracja z Git, pod formularzem pojawi się komunikat:
->
-> ![Modify domain associed with git](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png){.thumbnail}
->
-> Aby usunąć konfigurację Git domeny/subdomeny powiązanej z Twoim hostingiem, zapoznaj się z naszym przewodnikiem "[Konfiguracja i korzystanie z Git na hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)".
->
-
-Formularz `Katalog główny`{.action} wskazuje nazwę katalogu zawierającego elementy, które wyświetlają się wraz z nazwą domeny. Może to być na przykład folder zawierający pliki Twojej strony WWW.
-
-W trakcie korzystania z usług może być konieczna zmiana `Katalog główny`{.action} zadeklarowanego dla Twojej domeny. Może się to zdarzyć, gdy na przykład:
-
-- Stworzyłeś nową stronę WWW w nowym katalogu dostępnym w przestrzeni dyskowej FTP Twojego hostingu.
-- Chcesz przekierować domenę do pustego katalogu, a następnie umieścić na niej nową stronę WWW.
-- Itp.
-
-W związku z tym w formularzu należy zastąpić wstępnie wypełnioną nazwę folderu nazwą wybranego nowego folderu.
-
-> [!success]
->
-> Jeśli wpiszesz nieistniejącą nazwę katalogu z przestrzeni dyskowej FTP Twojego hostingu, zostanie ona automatycznie utworzona przez nasze roboty w Twojej przestrzeni dyskowej FTP.
->
-
-#### Więcej dostępnych opcji
+> Następnie możesz dodać nową stronę internetową z Twoją domeną, korzystając z naszego poradnika "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Jeśli Twoja strona internetowa ma konfigurację z Git, przed `Odłącz domenę`{.action} zapoznaj się z naszym poradnikiem "[Konfigurowanie i korzystanie z Git z Twoim hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)".
 
 ##### Opcja "Włącz CDN"
 
@@ -110,9 +108,9 @@ Zaznacz/usuń zaznaczenie tej opcji tylko wtedy, gdy chcesz oddzielić logi Twoj
 
 Dowiedz się więcej o tej opcji na naszej [stronie poświęconej szczegółowym statystykom](/links/web/hosting-traffic-analysis).
 
-Po wprowadzeniu zmian kliknij przycisk `Dalej`{.action} na dole po prawej stronie okna, aby przejść do [etap 2](#step2).
+Po wprowadzeniu zmian kliknij przycisk `Dalej`{.action} na dole po prawej stronie okna, aby przejść do [część 2](#step2).
 
-### Etap 2 - Podsumowanie zmian <a name="step2"></a>
+### 2 - Podsumowanie zmian <a name="step2"></a>
 
 Po kliknięciu przycisku `Dalej`{.action} znajdziesz podsumowanie ustawień, które zamierzasz zastosować do Twojej domeny:
 
@@ -122,7 +120,7 @@ Jeśli wszystkie parametry są skonfigurowane zgodnie z Twoimi potrzebami, klikn
 
 W zależności od wybranych opcji wprowadzenie zmian może potrwać od kilku minut do kilku godzin.
 
-Jeśli w przypadku opcji **CDN**, **Geolokalizacja IP** i **Rozdzielone logi** nie zostaną wprowadzone zmiany po 24 godzinach, zapoznaj się z przewodnikami (i stronami) dla wszystkich opcji opisanych w [etap 1](#step1), aby upewnić się, że wszystkie wymagane warunki zostały spełnione.
+Jeśli w przypadku opcji **CDN**, **Geolokalizacja IP** i **Rozdzielone logi** nie zostaną wprowadzone zmiany po 24 godzinach, zapoznaj się z przewodnikami (i stronami) dla wszystkich opcji opisanych w [część 1](#step1), aby upewnić się, że wszystkie wymagane warunki zostały spełnione.
 
 ## Sprawdź również
 

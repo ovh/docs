@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Ändern von mit einem Webhosting verbundenen Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie die Zuordnungseinstellungen von Domainnamen oder Subdomains ändern, die bereits auf Ihrem Webhosting deklariert sind"
-updated: 2025-11-05
+updated: 2025-12-19
 ---
 
 ## Ziel
@@ -10,8 +10,10 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 
 > [!primary]
 >
-> In dieser Anleitung erfahren Sie, wie Sie einen Domainnamen oder Subdomain ändern, die bereits auf einem OVHcloud Webhosting registriert ist. Wenn Sie eine neue Domain/Subdomain mit Ihrem Webhosting verbinden möchten, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+> In dieser Anleitung erfahren Sie, wie Sie einen Domainnamen oder Subdomain ändern, die bereits auf einem OVHcloud Webhosting registriert ist. 
 >
+> - Um einen neuen Domainnamen oder eine Subdomain mit Ihrer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie bitte unsere Anleitung "[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Um eine neue Website auf Ihrem Webhosting hinzuzufügen, konsultieren Sie bitte unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 **Diese Anleitung erklärt, wie Sie die Zuordnungseinstellungen für Domainnamen oder Subdomain ändern, die bereits auf Ihrem Webhosting registriert ist.**
 
@@ -20,69 +22,72 @@ Bei der Verwendung Ihres Webhostings oder zur Aktualisierung Ihrer Website könn
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verwalten einen oder mehrere [Domainnamen](/links/web/domains).
-- Sie verfügen über die erforderlichen Berechtigungen für alle betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung „[Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts)“.
+- Sie verfügen über die erforderlichen Berechtigungen für alle betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung "[Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts)".
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
 > Die Änderung der Zuordnungseinstellungen einer Domain oder Subdomain kann zu einer Unterbrechung des Zugangs zu Ihren Diensten (Ihrer Website) führen. Wenn Sie sich nicht sicher sind, welche Änderungen notwendig sind, wenden Sie sich an einen spezialisierten Dienstleister.
->
 
-So ändern Sie die Zuordnungseinstellungen für Domainnamen oder Subdomain, die bereits auf Ihrem Webhosting-Angebot deklariert ist:
+Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf Ihrem Webhosting zu ändern, klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-2. Klicken Sie auf den Tab `Web Cloud`{.action}.
-3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
-4. Wählen Sie das betreffende Webhosting aus.
-5. Klicken Sie auf den Tab `Multisite`{.action}.
-6. Klicken Sie in der Tabelle rechts neben der betreffenden Domain bzw. Subdomain auf den Button `...`{.action} und dann auf `Domain bearbeiten`{.action}.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem gewünschten Domainnamen oder Subdomain und dann auf `Domain bearbeiten`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Das folgende Fenster wird angezeigt: 
+>>
+>> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
+>>
+>> Im weiteren Verlauf dieser Anleitung finden Sie eine Beschreibung aller verfügbaren Parameter im obenstehenden Fenster. Nachdem Sie die verschiedenen Beschreibungen in der Abschnitt "[Beschreibung der änderbaren Parameter](#step1)" gelesen haben und Ihre Änderungen vorgenommen wurden, klicken Sie auf den Button `Weiter`{.action} unten rechts im Fenster, und wechseln Sie zur [Teil 2](#step2).
 
-![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
-
-Das folgende Fenster wird angezeigt:
-
-![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
-
-Im weiteren Verlauf dieser Anleitung finden Sie eine Beschreibung der im obigen Fenster verfügbaren Einstellungen. Nachdem Sie die unten stehenden Beschreibungen gelesen haben und Ihre Änderungen vorgenommen haben, klicken Sie unten rechts im Fenster auf den Button `Weiter`{.action} und fahren Sie mit [Schritt 2](#step2) fort.
-
-### Schritt 1 - Beschreibung der bearbeitbaren Parameter <a name="step1"></a>
+### 1 - Beschreibung der bearbeitbaren Parameter <a name="step1"></a>
 
 > [!primary]
 >
-> Das Formular `Domainname`{.action} kann nicht bearbeitet werden, da es sich um eine Änderung der Einstellungen des dem Webhosting zugeordneten Domainnamens handelt. Wenn die gewünschte Aktion darin besteht, Ihrem Webhosting eine neue Domain/Subdomain zuzuordnen, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+> Das Formular `Domainname`{.action} kann nicht bearbeitet werden, da es sich um eine Änderung der Einstellungen des dem Webhosting zugeordneten Domainnamens handelt. Wenn die gewünschte Aktion darin besteht, Ihrem Webhosting eine neue Domain/Subdomain zuzuordnen, lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 >
 
 #### Wurzelverzeichnis bearbeiten
 
-> [!warning]
-> **Sonderfall: Konfiguration mit Git**
+> [!primary]
 >
-> Um das `Wurzelverzeichnis`{.action} zu ändern, das für Ihren Domainnamen deklariert wurde wenn eine Konfiguration mit Git für diesen Domainnamen vorhanden ist, müssen Sie diese Konfiguration zuerst löschen.
+> Die Felder `Domainname`{.action} und `Wurzelverzeichnis`{.action} sind nicht änderbar, da es sich hierbei um Parameter handelt, die für die Website auf Ihrem Webhosting relevant sind.
 >
-> Wenn eine Konfiguration mit Git vorhanden ist, wird direkt unter dem Formular eine Meldung angezeigt:
+> - Um eine neue Domain oder Subdomains mit einer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie unsere Anleitung "[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - Um den Stammordner Ihrer Website zu ändern, müssen Sie Ihre Domain von der bestehenden Website im Tab `Meine Seiten`{.action} trennen.
+>     - Klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugeordneten Domains und Subdomain anzuzeigen.
+>     - Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem Namen der Domain oder Subdomains und dann auf `Domain abtrennen`{.action}.
 >
-> ![Modify domain associed with git](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png){.thumbnail}
->
-> Um die Git-Konfiguration einer Ihrem Hosting zugeordneten Domain/Subdomain zu löschen, lesen Sie unsere Anleitung „[Konfiguration und Nutzung von Git mit OVHcloud Webhosting](/pages/web_cloud/web_hosting/git_integration_webhosting)“.
->
-
-Das Formular `Wurzelverzeichnis`{.action} enthält den Namen des Ordners, der die Elemente enthält, die mit Ihrem Domainnamen angezeigt werden. Dies kann z.B. ein Ordner sein, der die Dateien für die Website enthält.
-
-Bei der Nutzung Ihrer Dienste kann es vorkommen, dass Sie das `Wurzelverzeichnis`{.action} ändern müssen, das für Ihren Domainnamen deklariert ist. Dies kann verschiedene Gründe haben:
-
-- Sie haben eine neue Website in einem neuen Ordner im FTP-Speicherbereich Ihres Webhostings erstellt.
-- Sie möchten Ihre Domain in einen leeren Ordner umleiten und dort eine neue Website platzieren.
-- etc.
-
-In diesem Formular müssen Sie also den Namen des vorausgefüllten Ordners durch den Namen des neuen Ordners ersetzen, den Sie erstellen möchten.
-
-> [!success]
->
-> Wenn Sie einen nicht existierenden Ordnernamen im FTP-Speicherbereich Ihres Webhostings eingeben, wird dieser automatisch von unseren Robots in Ihrem FTP-Speicherbereich erstellt.
->
-
-#### Weitere Optionen verfügbar
+> Anschließend können Sie eine neue Website mit Ihrer Domain hinzufügen, indem Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)" konsultieren. Falls Ihre Website eine Konfiguration mit Git besitzt, konsultieren Sie vorher unsere Anleitung "[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)", **bevor** Sie `Domain abtrennen`{.action} auswählen.
 
 ##### Die Option "CDN aktivieren"
 
@@ -90,19 +95,19 @@ Um diese Option nutzen zu können, müssen Sie zuerst ein CDN von OVHcloud abonn
 
 Aktivieren/deaktivieren Sie diese Option, um die CDN-Option für Ihren Domainnamen oder Ihre Subdomain zu aktivieren/deaktivieren.
 
-Weitere Informationen zu den verfügbaren CDN-Optionen/-Angeboten finden Sie in unserer Dokumentation „[Ihre Webseiten mit CDN beschleunigen](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)“.
+Weitere Informationen zu den verfügbaren CDN-Optionen/-Angeboten finden Sie in unserer Dokumentation "[Ihre Webseiten mit CDN beschleunigen](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
 
 ##### Die Option "IP des Landes"
 
 Diese Option wird hauptsächlich für Websites verwendet, deren Nutzer sich in einem anderen Land als das Hosting befinden. Es verbessert die SEO-Bewertung der Website im gewählten Land.
 
-Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation „[Geolokalisierung Ihrer Website in einem bestimmten Land](/pages/web_cloud/web_hosting/multisites_geolocation)“.
+Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation "[Geolokalisierung Ihrer Website in einem bestimmten Land](/pages/web_cloud/web_hosting/multisites_geolocation)".
 
 ##### Die Option "Firewall aktivieren"
 
 Mit dieser Option können Sie eingehende Anfragen filtern, um Ihr Webhosting vor den häufigsten Angriffen zu schützen.
 
-Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation „[Aktivieren der Web Application Firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)“.
+Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation "[Aktivieren der Web Application Firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
 ##### Die Option "Getrennte Logs"
 
@@ -110,9 +115,9 @@ Aktivieren/deaktivieren Sie diese Option nur, wenn Sie die Logs Ihres Domainname
 
 Weitere Informationen zu dieser Option finden Sie auf unserer [Seite zu detaillierten Statistiken](/links/web/hosting-traffic-analysis).
 
-Nachdem Sie Ihre Änderungen vorgenommen haben, klicken Sie unten rechts im Fenster auf den Button `Weiter`{.action}, um mit [Schritt 2](#step2) fortzufahren.
+Nachdem Sie Ihre Änderungen vorgenommen haben, klicken Sie auf den Button `Weiter`{.action} unten rechts im Fenster, um zur [Teil 2](#step2) zu wechseln.
 
-### Schritt 2 - Zusammenfassung der Änderungen <a name="step2"></a>
+### 2 - Zusammenfassung der Änderungen <a name="step2"></a>
 
 Sobald Sie auf den Button `Weiter`{.action} geklickt haben, finden Sie eine Zusammenfassung der Einstellungen, die Sie für Ihren Domainnamen übernehmen möchten:
 
@@ -122,7 +127,7 @@ Wenn alle Einstellungen Ihren Wünschen entsprechen, klicken Sie auf `Bestätige
 
 Abhängig von den ausgewählten Optionen kann es einige Minuten bis zu einigen Stunden dauern, bis die Änderungen wirksam werden.
 
-Wenn die Änderungen für die Optionen **CDN**, **IP des Landes** und **Getrennte Logs** nach 24 Stunden nicht wirksam werden, nutzen Sie die entsprechenden Wissensressourcen für alle Optionen in [Schritt 1](#step1), um sicherzustellen, dass alle Anforderungen erfüllt wurden.
+Wenn die Änderungen für die Optionen **CDN**, **IP des Landes** und **Getrennte Logs** nach 24 Stunden nicht wirksam werden, nutzen Sie die entsprechenden Wissensressourcen für alle Optionen in [Teil 1](#step1), um sicherzustellen, dass alle Anforderungen erfüllt wurden.
 
 ## Weiterführende Informationen
 
