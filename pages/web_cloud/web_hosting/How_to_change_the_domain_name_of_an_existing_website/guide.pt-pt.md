@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Como alterar o domínio de um site existente"
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
-updated: 2025-10-28
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -17,7 +17,6 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
 > Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
->
 
 ## Requisitos
 
@@ -31,13 +30,12 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 >
 > A alteração do nome de domínio para aceder ao seu site pode afetar o seu referenciamento. 
 > Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](/links/partner) no referenciamento, se necessário.
->
 
 Para alterar o domínio de acesso ao seu website, deverá realizar várias etapas por uma ordem precisa.
 
 ### Etapa 1 - declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
 
-Declare o seu novo nome de domínio com a nossa documentação sobre [como adicionar um site web ao seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite). Declare também o seu subdomínio em `www` se quiser, por exemplo, que `www.NewDomain.tld` também mostre o seu site, em adição a `NewDomain.tld`.
+Declare o seu novo nome de domínio seguindo o nosso guia « [Como associar um nome de domínio a um site existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Declare também o seu subdomínio em `www` se quiser, por exemplo, que `www.NewDomain.tld` também mostre o seu site, em adição a `NewDomain.tld`.
 
 Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
@@ -59,7 +57,7 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
 Se todas as ações foram corretamente realizadas, as declarações dos seus nomes de domínio devem ser estritamente idênticas **a menos que utilize um certificado SSL pago do tipo *Sectigo DV*, *Sectigo EV* ou *custom***.
 
-![multi-sites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -114,7 +112,7 @@ Se tiver contactado um fornecedor para a criação do seu site, contacte-o para 
 
 ### Etapa 3 - retirar o antigo nome de domínio <a name="step3"></a>
 
-Para evitar o "*Duplicate-content*" e quando o seu novo nome de domínio estiver plenamente operacional com o seu site web, deverá eliminar a declaração do seu antigo nome de domínio no seu site web com o guia sobre a gestão dos [sites web no seu alojamento partilhado](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Para evitar o « *Duplicate-content* » e quando o seu novo nome de domínio estiver plenamente operacional com o seu site, deverá eliminar a declaração do seu antigo nome de domínio no seu site, utilizando o guia « [Como desassociar um nome de domínio de um site web existente](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
 
 > [!warning]
 >

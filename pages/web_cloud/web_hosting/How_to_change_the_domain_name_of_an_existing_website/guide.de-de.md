@@ -1,7 +1,7 @@
 ---
 title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
-updated: 2025-10-28
+updated: 2025-12-19
 ---
 
 ## Ziel
@@ -16,7 +16,6 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
 > Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
->
 
 ## Voraussetzungen
 
@@ -30,13 +29,12 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 >
 > Die Änderung des Domainnamens, über den auf Ihre Website zugegriffen wird, kann Auswirkungen auf deren SEO haben.  
 > Achten Sie daher genau auf die Änderungen, die Sie vornehmen, und kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](/links/partner) für SEO.
->
 
 Um den Domainnamen für den Zugang zu Ihrer Website zu ändern, müssen mehrere Schritte in einer bestimmten Reihenfolge durchgeführt werden.
 
 ### Schritt 1: Die neue Domain auf Ihrem Webhosting <a name="step1"></a> deklarieren
 
-Registrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation zum [Hinzufügen einer Website auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
+Registrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Website ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
 
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
@@ -58,7 +56,7 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
 Wenn alle Aktionen ordnungsgemäß durchgeführt wurden, sollten die Angaben zu Ihren Domainnamen exakt identisch sein **außer, Sie verwenden ein kostenpflichtiges SSL-Zertifikat des Typs *Sectigo DV*, *Sectigo EV* oder *Custom***.
 
-![Multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -113,7 +111,7 @@ Wenn Sie einen Dienstleister für die Erstellung Ihrer Website beauftragt haben,
 
 ### Schritt 3: Den alten Domainnamen entfernen <a name="step3"></a>
 
-Um „Duplicate-content“ zu vermeiden und sobald Ihr neuer Domainname vollständig mit Ihrer Website funktioniert, müssen Sie die Angabe Ihres alten Domainnamens auf Ihrer Website mithilfe des Leitfadens zur Verwaltung von [Websites auf Ihrem Hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) entfernen.
+Um „Duplicated Content“ zu vermeiden und sobald Ihr neuer Domainname vollständig mit Ihrer Website funktioniert, müssen Sie die Angabe Ihres alten Domainnamens auf Ihrer Website mithilfe der Anleitung "[Wie kann ich einen Domainnamen von einer bestehenden Website trennen?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)" entfernen.
 
 > [!warning]
 >
