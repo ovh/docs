@@ -1,7 +1,7 @@
 ---
 title: 'Partilhar o alojamento entre vários sites'
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
 excerpt: 'Questa guida ti mostra come ospitare diversi siti web sulla tua offerta di hosting web'
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: 'Compartir su alojamiento entre varios sitios web'
 excerpt: 'Descubra cómo alojar diferentes sitios web en su oferta de alojamiento web'
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 <style>
