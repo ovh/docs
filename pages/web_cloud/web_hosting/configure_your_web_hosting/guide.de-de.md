@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Laufzeitumgebung, PHP-Version, .ovhconfig"
 excerpt: "Erfahren Sie hier, wie Sie die Einstellungen von Laufzeitumgebung, PHP-Version, Firewall, Engine, Modus und .ovhconfig ändern"
-updated: 2025-12-02
+updated: 2025-12-19
 ---
 
 ## Ziel

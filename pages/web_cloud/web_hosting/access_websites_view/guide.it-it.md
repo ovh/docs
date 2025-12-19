@@ -1,7 +1,7 @@
 ---
 title: "Visualizzare e gestire tutti i siti Web dallo Spazio Cliente OVHcloud"
 excerpt: "Scopri come consultare e gestire tutti i siti Web dallo Spazio Cliente OVHcloud"
-updated: 2025-12-02
+updated: 2025-12-19
 ---
 
 ## Obiettivo

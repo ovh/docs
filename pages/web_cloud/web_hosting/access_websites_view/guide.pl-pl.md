@@ -1,7 +1,7 @@
 ---
 title: "Wyświetl wszystkie strony WWW w Panelu klienta OVHcloud i zarządzaj nimi"
 excerpt: "Dowiedz się, jak wyświetlać wszystkie Twoje strony WWW i zarządzać nimi w Panelu klienta"
-updated: 2025-12-02
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie
