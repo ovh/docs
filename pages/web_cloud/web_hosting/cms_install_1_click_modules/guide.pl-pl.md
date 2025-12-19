@@ -1,7 +1,7 @@
 ---
 title: "Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)"
 excerpt: "Dowiedz się, jak zainstalować Twoją stronę WWW za pomocą 'modułów za 1 kliknięciem'"
-updated: 2025-11-27
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie 
