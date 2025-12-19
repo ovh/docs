@@ -1,7 +1,7 @@
 ---
 title: "Changing the password for a Web Hosting plan’s database"
 excerpt: Find out how to change the password for a database created as part of a Web Hosting plan
-updated: 2025-10-08
+updated: 2025-12-19
 ---
 
 ## Objective
@@ -46,18 +46,47 @@ Changing your website’s database password involves four parts:
 
 ### 1: Identify your website’s configuration file <a name="step1"></a>
 
-In the [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
+Click on the tabs below to view each of the **5** steps.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-Next, go to the space containing your website’s files and folders (*FTP space*) by following this [guide](/pages/web_cloud/web_hosting/ftp_connection).
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
+> **Step 4**
+>>
+>> In the table that appears, click on the `>`{.action} button to the left of the name of the relevant website to display the associated domain names or subdomains.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Step 5**
+>>
+>> Identify the name of the `root folder` of your website. This is the directory where its files and folders are located.
+>>
+>> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> You can then access the FTP storage space containing the files and folders of your website by referring to [this guide](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
 > If you would like to change the password on your FTP space, please refer to this [guide](/pages/web_cloud/web_hosting/ftp_change_password).
 >
 
-Open the `Root folder` identified previously.
+Open the `root folder` identified previously.
 
 Locate and open your site's configuration file:
 
@@ -68,7 +97,7 @@ Locate and open your site's configuration file:
 
 ### 2: Identify your website’s database <a name="step2"></a>
 
-In the configuration file identified in [step 1](#step1), start by noting down the name of its database:
+In the configuration file identified in [part 1](#step1), start by noting down the name of its database:
 
 - For WORDPRESS: The name appears under "**DB_NAME**".
 - For JOOMLA: The name appears under "**public $db**".
@@ -97,7 +126,7 @@ Choose the new password for your database and save it. It must meet the followin
 - At least one number
 - Only numbers and letters
 
-As described in [step 1](#step1), go back to your Web Hosting plan’s file storage space, then open your website’s configuration file for editing.
+As described in [part 1](#step1), go back to your Web Hosting plan’s file storage space, then open your website’s configuration file for editing.
 
 **Before you make any changes**, save the content of this file locally in a text document, so that you keep a copy if you make any mistakes.
 

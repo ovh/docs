@@ -1,7 +1,7 @@
 ---
 title: Alterar a palavra-passe da base de dados de um alojamento web
 excerpt: Saiba como alterar a palavra-passe de uma base de dados criada num serviço de alojamento web
-updated: 2025-10-08
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -34,7 +34,6 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro par
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
 > Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
->
 
 ## Requisitos
 
@@ -47,11 +46,40 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro par
 
 ### 1: Identificar o ficheiro de configuração do seu site <a name="step1"></a>
 
-Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
+Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-De seguida, aceda ao espaço que contém os ficheiros e as pastas do seu site (*espaço FTP*) consultando este [guia](/pages/web_cloud/web_hosting/ftp_connection).
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na tabela que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para mostrar os nomes de domínio e subdomínios associados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Identifique o nome da `Pasta raiz` do seu site. Trata-se do diretório onde se encontram os seus ficheiros e pastas.
+>>
+>> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> Em seguida, aceda ao espaço de armazenamento FTP que contém os ficheiros e pastas do seu site consultando [este guia](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
@@ -74,7 +102,7 @@ Existem dois casos possíveis:
 - Caso n°1: a base de dados do seu site faz parte da sua oferta de alojamento;
 - Caso n°2: está incluída numa oferta *Web Cloud Databases*, caso em que deverá encontrar o **nome do servidor** e o **nome de utilizador** da sua base de dados, de forma a identificar a base de dados sem correr o risco de erro.
 
-Para determinar o caso aplicável ao seu website, no ficheiro de configuração identificado na [Etapa 1](#step1), comece por anotar o nome da sua base de dados:
+Para determinar o caso aplicável ao seu site, no ficheiro de configuração identificado na [parte 1](#step1), comece por anotar o nome da sua base de dados:
 
 - Para WORDPRESS: O nome aparece sob a menção **"DB_NAME"**;
 - Para JOOMLA: o nome aparece na rubrica **"public $db"**;
@@ -87,7 +115,7 @@ De seguida, volte à sua [Área de Cliente OVHcloud](/links/manager) na secção
 - Clique no separador `Bases de dados`{.action} **à direita** do ecrã;
 - Verifique o nome da base de dados encontrada anteriormente na coluna `Nome da base`;
 
-Se localizar o nome da base de dados indicado no ficheiro de configuração nesta parte da Área de Cliente, consulte o [Etapa 3](#step3).
+Se localizar o nome da base de dados indicado no ficheiro de configuração nesta parte da Área de Cliente, avance para a [parte 3](#step3).
 
 Caso contrário, a base de dados do seu site está associada a uma oferta [Web Cloud Databases](/links/web/databases).
 
@@ -230,11 +258,11 @@ Aceda à secção `Bases de dados`{.action} da Área de Cliente e ao servidor em
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-Para alterar a palavra-passe da base de dados no servidor, clique nos três pontos à direita do `Nome de utilizador`{.action} identificado na [Etapa 2](#step2) e, a seguir, em `Alterar palavra-passe`{.action}.
+Para alterar a palavra-passe da base de dados no servidor, clique nos três pontos à direita do `Nome de utilizador`{.action} identificado na [parte 2](#step2) e, a seguir, em `Alterar palavra-passe`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
-Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Etapa 3](#step3)), confirme que está correta e clique no botão `Validar`{.action}.
+Na nova janela, introduza a nova palavra-passe da base de dados (definida na [parte 3](#step3)), confirme que está correta e clique no botão `Validar`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
 

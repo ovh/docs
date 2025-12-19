@@ -1,7 +1,7 @@
 ---
 title: Cambiar la contraseña de la base de datos de un alojamiento web
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
-updated: 2025-10-08
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -47,15 +47,44 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ### 1: Identificar el archivo de configuración del sitio web <a name="step1"></a>
 
-En el [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-Acceda al espacio que contiene los archivos y carpetas de su sitio web (*espacio FTP*) consultando esta [guía](/pages/web_cloud/web_hosting/ftp_connection).
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Identifique el nombre del `Carpeta raíz` de su sitio web. Se trata del directorio en el que se encuentran sus archivos y carpetas.
+>>
+>> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> A continuación, acceda al espacio de almacenamiento FTP que contiene los archivos y carpetas de su sitio consultando [esta guía](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
-> Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](/pages/web_cloud/web_hosting/ftp_change_password).
+> Si desea cambiar la contraseña de su espacio FTP, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password).
 >
 
 Abra la `Carpeta raíz` anteriormente indicada.
@@ -69,7 +98,7 @@ Busque y abra el archivo de configuración de su sitio web:
 
 ### 2: Identificar la base de datos del sitio web <a name="step2"></a>
 
-En el archivo de configuración indicado en el [Etapa 1](#step1), empiece por anotar el nombre de la base de datos:
+En el archivo de configuración indicado en la [parte 1](#step1), empiece por anotar el nombre de la base de datos:
 
 - Para WORDPRESS: el nombre aparece con la mención **"DB_NAME"**;
 - Para JOOMLA: el nombre aparece en **"public $db"**;
@@ -98,7 +127,7 @@ Seleccione la nueva contraseña de la base de datos y nócelo. Deberá cumplir l
 - Al menos una cifra;
 - Estar compuesto únicamente por números y letras.
 
-Así como en el [Etapa 1](#step1), vuelva al espacio de almacenamiento de archivos de su alojamiento y abra el archivo de configuración del sitio web editando.
+Así como en la [parte 1](#step1), vuelva al espacio de almacenamiento de archivos de su alojamiento y abra el archivo de configuración del sitio web editando.
 
 **Antes de realizar cualquier modificación**, guarde localmente el contenido del archivo en un documento de texto para poder guardar una copia de él en caso de que se produzca algún error.
 

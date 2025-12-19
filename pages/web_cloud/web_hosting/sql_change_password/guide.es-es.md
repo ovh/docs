@@ -1,7 +1,7 @@
 ---
 title: Cambiar la contraseña de la base de datos de un alojamiento web
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
-updated: 2025-10-08
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -34,7 +34,6 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
->
 
 ## Requisitos
 
@@ -47,15 +46,44 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ### 1: Identificar el archivo de configuración del sitio web <a name="step1"></a>
 
-En el [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-Acceda al espacio que contiene los archivos y carpetas de su sitio web (*espacio FTP*) consultando esta [guía](/pages/web_cloud/web_hosting/ftp_connection).
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Identifique el nombre del `Carpeta raíz` de su sitio web. Se trata del directorio en el que se encuentran sus archivos y carpetas.
+>>
+>> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> A continuación, acceda al espacio de almacenamiento FTP que contiene los archivos y carpetas de su sitio consultando [esta guía](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
-> Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](/pages/web_cloud/web_hosting/ftp_change_password).
+> Si desea cambiar la contraseña de su espacio FTP, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password).
 >
 
 Abra la `Carpeta raíz` anteriormente indicada.
@@ -74,7 +102,7 @@ Existen dos posibilidades:
 - Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting;
 - Caso n° 2: está incluida en una solución *Web Cloud Databases*, en cuyo caso deberá encontrar el **nombre del servidor** y el **nombre de usuario** de la base de datos para identificarla sin riesgo de error.
 
-Para determinar qué casos se aplican al sitio web, en el archivo de configuración indicado en el [Etapa 1](#step1), empiece por anotar el nombre de la base de datos:
+Para determinar qué casos se aplican al sitio web, en el archivo de configuración indicado en la [parte 1](#step1), empiece por anotar el nombre de la base de datos:
 
 - Para WORDPRESS: el nombre aparece con la mención **"DB_NAME"**;
 - Para JOOMLA: el nombre aparece en **"public $db"**;
@@ -87,7 +115,7 @@ Vuelva al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cl
 - Haga clic en la pestaña `Bases de datos`{.action} **a la derecha** de su pantalla.
 - Busque el nombre de la base de datos encontrada anteriormente en la columna `Nombre de la base` de datos.
 
-Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, vaya al [Etapa 3](#step3).
+Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, pase a la [parte 3](#step3).
 
 En caso contrario, la base de datos del sitio web está asociada a un servicio [Web Cloud Databases](/links/web/databases).
 
@@ -120,7 +148,7 @@ Seleccione la nueva contraseña de la base de datos y nócelo. Deberá cumplir l
 - Al menos una cifra;
 - Estar compuesto únicamente por números y letras.
 
-Así como en el [Etapa 1](#step1), vuelva al espacio de almacenamiento de archivos de su alojamiento y abra el archivo de configuración del sitio web editando.
+Así como en la [parte 1](#step1), vuelva al espacio de almacenamiento de archivos de su alojamiento y abra el archivo de configuración del sitio web editando.
 
 **Antes de realizar cualquier modificación**, guarde localmente el contenido del archivo en un documento de texto para poder guardar una copia de él en caso de que se produzca algún error.
 
@@ -230,11 +258,11 @@ Acceda a la sección `Bases de datos`{.action} del área de cliente y haga clic 
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-Para cambiar la contraseña de la base de datos en el servidor, haga clic en los tres puntos situados al final de la línea correspondiente al `Nombre de usuario`{.action} que se haya identificado en [el etapa 2](#step2) y seleccione `Cambiar la contraseña`{.action}.
+Para modificar la contraseña de su base de datos en el servidor, haga clic en el botón `...`{.action} a la derecha del `Nombre de usuario`{.action} identificado en la [parte 2](#step2), y luego en `Cambiar la contraseña`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
-Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en [el etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
+Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en la [parte 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
 
