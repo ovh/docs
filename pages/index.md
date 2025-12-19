@@ -1608,6 +1608,7 @@
             + [Web Hosting - How to find your cluster and/or filer](web_cloud/web_hosting/how_to_know_cluster_and_filer)
         + [Configuration](products/web-cloud-hosting-configuration)
             + [Hosting multiple websites on your Web Hosting plan](web_cloud/web_hosting/multisites_configure_multisite)
+            + [How to associate a domain name with an existing website?](web_cloud/web_hosting/my_websites_add_domain_existing_website)
             + [Configuring and using Git with an OVHcloud web hosting plan](web_cloud/web_hosting/git_integration_webhosting)
             + [Web Hosting - Modifying a domain name already associated to a hosting plan](web_cloud/web_hosting/multisites_modify_domain)
             + [How to detach a domain name from an existing website](web_cloud/web_hosting/my_websites_detach_domain_existing_website)
