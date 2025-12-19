@@ -1,7 +1,7 @@
 ---
 title: "Partilhado: ativação da firewall"
 excerpt: "Partilhado: ativação da firewall"
-updated: 2025-11-20
+updated: 2025-12-19
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja zapory systemowej"
 excerpt: "Hosting www: Aktywacja zapory systemowej"
-updated: 2025-11-20
+updated: 2025-12-19
 ---
 
 <style>
