@@ -1,7 +1,7 @@
 ---
 title: "Come geolocalizzare un sito Web in un paese specifico?"
 excerpt: "Questa guida ti mostra come individuare un sito Web grazie agli indirizzi IP geolocalizzati disponibili sulle offerte di hosting condiviso OVHcloud"
-updated: 2025-08-22
+updated: 2025-12-19
 ---
 
 ## Obiettivo
@@ -26,36 +26,38 @@ L'opzione di geolocalizzazione sul tuo hosting può essere utile per l'SEO se il
 
 Per i siti Web consultati principalmente all'estero e ospitati sulla nostra infrastruttura di hosting condivisi OVHcloud, proponiamo un'opzione di geolocalizzazione per indirizzo IP. Permette di indicizzare meglio i siti Web nel Paese in cui si trova l'indirizzo IP scelto con l'opzione.
 
-Per utilizzare l'opzione di geolocalizzazione via IP, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Per utilizzare l'opzione di geolocalizzazione via IP, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
->> Nella nuova pagina clicca sulla scheda `Multisito`{.action}.
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
->> Nella nuova pagina, visualizzi una tabella con i domini associati.
+>> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
 >>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Clicca sul pulsante `...`{.action} a destra del dominio nella tabella. Infine clicca su `Modifica il dominio`{.action}.
+>> Fai quindi clic sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Modifica il dominio`{.action}.
 >>
-> **Step 5**
+>> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Passaggio 5**
 >>
 >> Nella nuova finestra, seleziona `IP del Paese`{.action} e inserisci il menu a tendina.
 >>
