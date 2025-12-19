@@ -1,7 +1,7 @@
 ---
 title: "Alojamentos web - FAQ"
 excerpt: "Encontre as principais questões colocadas sobre os alojamentos web da OVHcloud"
-updated: 2025-11-10
+updated: 2025-12-19
 ---
 
 <style>
@@ -29,7 +29,7 @@ Siga estes passos:
 1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
 2. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
 
-Poderá gerir os seus certificados SSL, a versão PHP aplicada ao seu alojamento web, a opção CDN, os eventuais multi-sites, as bases de dados, etc.
+Poderá gerir certificados SSL, a versão PHP aplicada ao seu alojamento web, a opção CDN, os seus sítios web, as bases de dados, etc.
 
 > [!success]
 >
@@ -164,9 +164,9 @@ Se o seu [alojamento web](/links/web/hosting) é compatível, siga estes passos:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
 2. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
-3. Na página que vai aparecer, clique no separador `Multisite`{.action}.
+3. Na página que vai aparecer, clique no separador `Meus sites`{.action}.
 
-Poderá gerir os nomes de domínio/subdomínios declarados em multi-site no seu alojamento web.
+Poderá gerir os nomes de domínio/subdomínios declarados nos sítios web presentes no seu alojamento web.
 
 > [!success]
 >

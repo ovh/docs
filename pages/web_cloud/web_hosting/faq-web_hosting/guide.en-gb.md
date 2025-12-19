@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting FAQ"
 excerpt: "Find the answers to the most frequently asked questions about OVHcloud web hosting plans"
-updated: 2025-11-10
+updated: 2025-12-19
 ---
 
 <style>
@@ -29,7 +29,7 @@ Follow these steps:
 1. Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 2. Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
 
-You can manage your SSL certificates, the PHP version applied to your web hosting plan, the CDN option, multisites, databases, etc.
+You will be able to manage your SSL certificates, the PHP version applied to your web hosting, the CDN option, your websites, databases, etc.
 
 > [!success]
 >
@@ -164,9 +164,9 @@ If your [web hosting plan is compatible](/links/web/hosting), follow these steps
 
 1. Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 2. Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
-3. On the page that appears, click on the `Multisite`{.action} tab.
+3. On the page that appears, click on the `My sites`{.action} tab.
 
-Here, you can manage the multi-site domain names/sub-domains declared on your Web Hosting plan.
+You will be able to manage the domain names/subdomains declared on your websites hosted on your web hosting.
 
 > [!success]
 >
