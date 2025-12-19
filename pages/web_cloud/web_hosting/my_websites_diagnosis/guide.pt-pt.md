@@ -1,7 +1,7 @@
 ---
 title: "Como verificar a associação 'nome de domínio / site web'?"
 excerpt: "Utilize a nossa ferramenta de diagnóstico para verificar que o seu nome de domínio ou subdomínio está bem declarado com o seu site web no seu alojamento web"
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 <style>

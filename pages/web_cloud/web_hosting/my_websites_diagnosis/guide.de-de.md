@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich die Zuordnung von Domainnamen und Websites prüfen?"
 excerpt: "Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Subdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist"
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 <style>
