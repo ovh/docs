@@ -93,7 +93,7 @@ Algunas versiones de PHP solo funcionan en determinados entornos de ejecución. 
 |---|---|
 |5.4, 5.5, 5.6 y 7.0|Legacy, Stable|
 |7.1, 7.2 y 7.3|Stable|
-|7.4, 8.0, 8.1,8.2 y 8.3|stable64|
+|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 y 8.5|stable64|
 
 > [!primary]
 >
