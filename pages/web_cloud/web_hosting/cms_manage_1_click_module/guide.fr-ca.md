@@ -1,7 +1,7 @@
 ---
 title: "Comment gérer votre module en 1 clic ?"
 excerpt: "Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud"
-updated: 2024-11-15
+updated: 2025-12-19
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -74,9 +74,9 @@ Toutefois, nous vous recommandons vivement d’effectuer l’opération à l’a
 
 Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon **certaine**. Rendez-vous pour cela dans votre [espace client OVHcloud](/links/manager). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action}.
 
-Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
+Dans le cas contraire, rendez-vous dans l'onglet `Mes sites`{.action}. Notez le nom du `Dossier racine` présent sur la ligne du site web concerné : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 
-Connectez-vous ensuite à [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
+Connectez-vous ensuite à [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Mes sites`{.action} et recherchez le fichier de configuration de votre module :
 
 - Pour WordPress : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
 - Pour Joomla! : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).

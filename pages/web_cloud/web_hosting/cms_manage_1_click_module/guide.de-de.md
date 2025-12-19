@@ -1,7 +1,7 @@
 ---
 title: "1-Klick-Module verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten"
-updated: 2024-11-15
+updated: 2025-12-19
 ---
 
 ## Ziel 
@@ -45,7 +45,7 @@ Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr M
 
 Klicken Sie im Bereich `Hosting-Pakete`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) auf den Tab `1-Klick-Module`{.action}. Die Administrator-ID Ihres Moduls wird in der Spalte `Login` angezeigt.
 
-Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](/links/manager) abrufen: Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `E-Mails vom Support`{.action}.
+Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](/links/manager) abrufen: Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `Meine Kommunikation`{.action}.
 
 ### Passwort Ihres Moduls ändern <a name="password-change"></a>
 
@@ -71,13 +71,13 @@ Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr 
 
 #### Schritt 1: Die zu Ihrem Modul gehörige Datenbank identifizieren <a name="step1"></a>
 
-Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst sein Datenbank mit Sicherheit **identifizieren**. Gehen Sie dazu im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
+Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst dessen Datenbank **identifizieren**. Gehen Sie dazu im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
 
-Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [Web Cloud Databases](/links/web/databases) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
+Wenn Sie über nur eine Datenbank in diesem Teil Ihres Kundencenters und keine [Web Cloud Databases](/links/web/databases) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
 
-Andernfalls gehen Sie zum Tab `Multisite`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`: Dieses Verzeichnis enthält die Dateien, aus denen Ihr 1-Klick-Modul auf dem FTP-Server besteht.
+Andernfalls wechseln Sie zum Tab `Meine Seiten`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`, der in der Zeile der betreffenden Webseite angezeigt wird: Dies ist das Verzeichnis, in dem sich die Dateien des 1-Klick-Modul auf dem FTP-Server befinden.
 
-Loggen Sie sich anschließend in den [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Multisite`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
+Loggen Sie sich anschließend in den [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Meine Seiten`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
 - WordPress: **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
 - Joomla!: **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
@@ -104,8 +104,8 @@ Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr M
 >
 > Unsere Anleitungen:
 >
-> - [Mit dem FTP-Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection).
-> - [Tutorial - FileZilla mit Ihrem OVHcloud Hosting nutzen](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
+> - [Mit dem FTP-Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection)
+> - [Tutorial - FileZilla mit Ihrem OVHcloud Hosting nutzen](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 >
 > <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHpsuvyNFtQ?si=4655K8lQQpkE2YNG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 >

@@ -1,7 +1,7 @@
 ---
 title: "Jak zarządzać modułem za 1 kliknięciem?"
 excerpt: "Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panelu klienta OVHcloud"
-updated: 2024-11-15
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie 
@@ -75,9 +75,9 @@ Aby usunąć moduł za pomocą 1 kliknięcia, należy rozpocząć od zidentyfiko
 
 Jeśli w tej części Panelu klienta dysponujesz jedną bazą danych i nie posiadasz rozwiązań [Web Cloud Databases](/links/web/databases) , możesz uznać, że chodzi o Twoją stronę WWW.
 
-W przeciwnym razie przejdź do zakładki `MultiSite`{.action}. Zapisz nazwę katalogu `Katalog główny`: jest to katalog, w którym znajdują się pliki tworzące moduł za pomocą 1 kliknięcia na serwer FTP.
+W przeciwnym razie przejdź do karty `Moje strony`{.action}. Zanotuj nazwę `Katalog główny` widoczną w wierszu odpowiedniego serwisu internetowego: jest to katalog, w którym znajdują się pliki tworzące Twój Moduły za 1 kliknięciem na serwerze FTP.
 
-Zaloguj się do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection). Otwórz `Katalog główny` znajdujący się w zakładce `MultiSite`{.action} i wyszukaj plik konfiguracyjny Twojego modułu:
+Zaloguj się do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection). Otwórz `Katalog główny` znajdujący się w zakładce `Moje strony`{.action} i wyszukaj plik konfiguracyjny Twojego modułu:
 
 - WordPress : **"wp-config.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"DB_NAME"**).
 - Joomla! : **"configuration.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"public $db"**).
