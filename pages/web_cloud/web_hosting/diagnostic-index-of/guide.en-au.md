@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting an "Index of" page
 excerpt: Find out how to get your website back online if it displays an "Index of" page
-updated: 2025-10-28
+updated: 2025-12-19
 ---
 
 ## Objective
@@ -31,48 +31,29 @@ An "**Index of**" page appears in at least one of the following cases:
 
 ### Understanding the origin of the "Index of" page
 
-Your domain name is declared to access a target directory (a `Root Folder`) on the server [FTP](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan. You can do this via the [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) tab in your web hosting plan, in your [OVHcloud Control Panel](/links/manager).
+Your domain name is declared to access a target directory (a `root folder`) on the server [FTP](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan. You can do this via the [My sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) tab in your web hosting plan, in your [OVHcloud Control Panel](/links/manager).
 
 The "**Index of**" page indicates that the target directory does not contain a **index.php** or **index.html** file. A file of this type is the *entry point* for your website. This file name is standardised.
 
-To view your website, you will need to link your domain to the `Root folder` containing this file **index.php** or **index.html** to view it from the `Multisite`{.action} section of your hosting plan.
+To display your website, you will therefore need, from the `My sites`{.action} tab of your web hosting, to link your domain name to the website whose `root folder` contains this **index.php** or **index.html** file.
 
 > [!primary]
 >
-> If you want to temporarily link your domain to a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the list of folders from being displayed on your site by following this [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#prevent-the-content-of-a-directory-from-being-listed). You can also protect access to your folders with a [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+> If you want to temporarily link your domain to a `root folder` that does not contain an **index.php** or **index.html** file, you can prevent the list of folders from being displayed on your site by following this [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#prevent-the-content-of-a-directory-from-being-listed). You can also protect access to your folders with a [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
 > We recommend that you contact a [specialist provider](/links/partner) if you have difficulties setting up this configuration. Indeed, our support teams will not be able to assist you with any changes to the internal programming of your website.
 
 ### Resolving the most common cause of an "Index of" page
 
-You have imported the files of your site **mydomain.ovh** into the `www` folder of your hosting. However, your domain name is not linked to this folder in the `Root folder` column of your website.
+You have imported the files of your site **domain.tld** into the `www` folder of your hosting. However, the website associated with your domain name is not linked to this folder in the `root folder` column.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Modify the `Root folder` by clicking on the `...`{.action} button in the row of the domain name concerned, then `Modify domain`{.action}:
+The `root folder` cannot be modified once the website has been created.
 
-![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+You will need to detach your domain name from the existing website from the `My sites`{.action} tab of your web hosting. To do this, refer to our guide "[How to detach a domain name from an existing website?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
 
-In the window that opens:
-
-- Select the `Also modify the www.mydomain.ovh sub-domain`{.action} (1) box.
-- Specify the directory containing your site's **index.php** or **index.html** file as `Root folder` (2).
-- Click on `Next`{.action} (3).
-
-![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
-
-> [!primary]
->
-> It is not mandatory to use the `www` directory as `Root folder`. You can install your website in another folder on your [FTP server](/pages/web_cloud/web_hosting/ftp_connection).
->
-
-In the next window, click on `Confirm`{.action}.
-
-![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
-
-In a few minutes (remember to refresh your browser), you will see the following result: 
-
-![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
+You can then add a new website with your domain name using our guide "[Sharing your hosting between several websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)". If your website has a configuration with Git, please consult our guide "[Configure and use Git with your OVHcloud web hosting](/pages/web_cloud/web_hosting/git_integration_webhosting)" **before** clicking `Detach domain`{.action}.
 
 Finally, check that your website appears correctly. Otherwise, reboot your device and clear your browser cache if necessary.
 
