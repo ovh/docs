@@ -1,8 +1,22 @@
 ---
 title: "Hosting condiviso: attiva un firewall applicativo"
 excerpt: "Hosting condiviso: attiva un firewall applicativo"
-updated: 2025-08-22
+updated: 2025-12-19
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
@@ -17,12 +31,11 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 - SQL o XSS injection,
 - e tanto altro ancora
 
-**Questa guida ti mostra come attivare il firewall applicativo dallo Spazio Cliente OVHcloud per ottenere una protezione ancora maggiore.**
+**Questa guida ti mostra come attivare il firewall applicativo dal tuo Spazio Cliente OVHcloud, per ottenere una protezione migliorata.**
 
 > [!primary]
 >
 > La modifica delle impostazioni di configurazione del firewall non è disponibile perché l’hosting Web è presente su un’infrastruttura condivisa.
->
 
 ## Prerequisiti
 
@@ -32,41 +45,87 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e poi su quello corrispondente.
+**Fai clic sui titoli qui sotto per visualizzare le spiegazioni.**
 
-### Attiva il firewall applicativo nella configurazione PHP
+/// details | Abilitare il firewall applicativo sull'intero hosting web nella configurazione PHP
 
-Assicurati di trovarti nella scheda `Informazioni generali`{.action}. La `versione PHP globale` attuale è disponibile nella zona **Configurazione**. Clicca sui tre puntini `...`{.action} e seleziona `Modifica la configurazione`{.action}. Nella nuova finestra, seleziona l'elemento `Modifica la configurazione attuale`{.action} e clicca su `Seguente`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
-![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nel riquadro **Configurazione**, troverai l'indicazione **Versione PHP**.
+>>
+>> ![Versione PHP Globale](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
+>>
+>> Fai clic sul pulsante `...`{.action} a destra dell'indicazione **Versione PHP**, quindi su `Modifica la configurazione`{.action}.
+>>
+> **Passaggio 4**
+>>
+>> Nella finestra che si apre, seleziona l'elemento `Modifica la configurazione attuale`{.action} e fai clic sul pulsante `Continua`{.action}.
+>>
+>> ![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
+>>
+>> Nella nuova finestra, assicurati che l'opzione **Firewall a livello applicativo** sia impostata su `Attivato`{.action}. Fai quindi clic sul pulsante `Conferma`{.action}.
 
-Nella nuova finestra, assicurati che l'**Applicazione firewall** sia definita su `Attivato`{.action}. Per confermare la configurazione, clicca sul pulsante `Conferma`{.action}.
+///
 
-### Attiva il firewall applicativo per i domini individuali su un multisito
+/// details | Abilitare il firewall applicativo solo su un dominio o sottodominio specifico
 
-Clicca sulla scheda `Multisito`{.action} della tua offerta di hosting. Clicca sui tre puntini `...`{.action} a destra del dominio interessato e seleziona l'opzione `Modifica il dominio`{.action}.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
-
-Nella finestra di configurazione, spunta la casella `Attiva il firewall`{.action}. È possibile includere anche il sottodominio `www` in questa configurazione selezionando la casella in alto.
-
-Clicca su `Seguente`{.action} e poi su `Conferma`{.action} per modificare i parametri multisito.
-
-![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
-
-### Verifica lo stato dell'operazione di attivazione
-
-![gestione in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
-
-Gli aggiornamenti della configurazione multisito saranno elencati nella scheda `Operazioni in corso`{.action} (lo stato iniziale è "Pianificato"). Il firewall sarà attivo non appena il suo aggiornamento non sarà più incluso nella lista.
-
-### Verifica dei domini per i quali il firewall è attivo
-
-La scheda `Multisito`{.action} del tuo piano di hosting fornisce informazioni sui domini per i quali è attiva l'opzione firewall.
-
-![gerageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
-
-La tabella visualizzata contiene tutti i domini aggiunti alla tua offerta di hosting Web. Nella colonna "Firewall" viene mostrato lo stato di attivazione di ciascun dominio.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
+>>
+>> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Fai quindi clic sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Modifica il dominio`{.action}.
+>>
+>> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Nella finestra di configurazione, seleziona la casella `Attiva il firewall`{.action}. Puoi inoltre includere il sottodominio `www` in questa configurazione selezionando la casella corrispondente in alto (se presente sullo stesso sito web).
+>>
+>> ![Modifica un dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+>>
+>> Fai clic su `Continua`{.action}, quindi su `Conferma`{.action} per salvare le modifiche ai parametri.
+>>
+>> Una volta attivato il firewall per il tuo dominio o sottodominio, l'indicazione **Attivato** apparirà nella colonna **Firewall**.
+>>
+>> Se l'indicazione **Attivato** non dovesse apparire entro pochi minuti sulla riga corrispondente al dominio o sottodominio desiderato, ricarica la pagina.
 
 ## Per saperne di più
 
