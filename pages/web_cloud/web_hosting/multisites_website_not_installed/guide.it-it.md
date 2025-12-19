@@ -1,7 +1,7 @@
 ---
 title: 'Risolvere l’errore "Sito non installato"'
 excerpt: Questa guida ti mostra come identificare e risolvere la pagina di errore "Sito non installato"
-updated: 2025-12-02
+updated: 2025-12-19
 ---
 
 > [!success]
