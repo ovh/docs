@@ -1,7 +1,7 @@
 ---
 title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 ## Ziel
@@ -34,7 +34,7 @@ Um den Domainnamen für den Zugang zu Ihrer Website zu ändern, müssen mehrere 
 
 ### Schritt 1: Die neue Domain auf Ihrem Webhosting <a name="step1"></a> deklarieren
 
-ERegistrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Website ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
+Registrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Website ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
 
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 

@@ -1,7 +1,7 @@
 ---
 title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie

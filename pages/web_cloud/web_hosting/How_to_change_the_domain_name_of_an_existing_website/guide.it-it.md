@@ -1,7 +1,7 @@
 ---
 title: "Casi d’uso - Come cambiare il dominio di un sito esistente"
 excerpt: "Questa guida ti mostra come modificare il dominio di un sito esistente"
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 ## Obiettivo

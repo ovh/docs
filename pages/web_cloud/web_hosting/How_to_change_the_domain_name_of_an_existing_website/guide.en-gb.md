@@ -1,7 +1,7 @@
 ---
 title: "Use cases - How to change the domain of an existing website"
 excerpt: "Find out how to change the domain name of an existing website"
-updated: 2025-12-11
+updated: 2025-12-19
 ---
 
 ## Objective
