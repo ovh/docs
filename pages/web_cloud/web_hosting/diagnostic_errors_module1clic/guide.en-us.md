@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting common 1-click module errors"
 excerpt: "Find out how to diagnose the most common cases of 1-click module creation errors"
-updated: 2024-03-12
+updated: 2025-12-19
 ---
 
 ## Objective
@@ -16,7 +16,6 @@ However, if they are not configured correctly, the 1-click module installation m
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
 > This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
-> 
 
 ## Requirements
 
@@ -29,18 +28,46 @@ However, if they are not configured correctly, the 1-click module installation m
 > [!primary]
 >
 > Here you can find the most common errors. If you encounter a situation different from the ones presented, please refer to our [web hosting FAQ](/pages/web_cloud/web_hosting/faq-web_hosting).
->
 
 ### Your domain name is not offered when you create the 1-click module
 
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
-Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned by the installation. On the page that pops up, click on the `Multisite`{.action} tab, then perform the following checks:
+Click on the tabs below to view each of the **5** steps.
 
-|Scenario|Solution|
-|---|---|
-|The domain or subdomain linked to the website you want to create does not appear in the table in the `Multisite`{.action} tab.|Add your domain as shown [here](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
-|The domain name has been deleted from the multisite without any action on your part.|If your domain or its [DNS zone](/pages/web_cloud/domains/dns_zone_edit) are not managed from your OVHcloud account, add your domain from the `Multisite`{.action} tab by following [this guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
+> **Step 4**
+>> 
+>> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
+>> 
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>> 
+> **Step 5**
+>>
+>> Then perform the following checks:
+>>
+>> |Scenario|Solution|
+>> |---|---|
+>> |The domain or subdomain related to the website you want to create does not appear in the table in the `My sites`{.action} tab.|Add your domain name by following [these instructions](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+>> |The domain name has been detached from the website without your action.|If your domain name or its [DNS zone](/pages/web_cloud/domains/dns_zone_edit) is not managed from your OVHcloud account, add your domain name from the `My sites`{.action} tab by following [this guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
 
 ### "An error has occurred loading the information (You need at least one free database)"
 
@@ -123,11 +150,42 @@ Once you have made all the necessary backups, [delete your 1-click module](#dele
 
 After you launched the creation of your 1-click module, you received an email stating that the installation directory for your 1-click module is not empty.
 
-This message means that the **root folder** associated with your domain name already contains one or more files or folders.
+This message means that the **root folder** of the website to which your domain name is associated already contains one or more files or folders.
 
-To link your domain name to another directory, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned. On the page that opens, click on the `Multisite`{.action} tab. In the table that appears, click the `...`{.action} button to the right of the line corresponding to your domain name, then click `Modify domain`{.action}. Finally, enter the name of a new **root folder** (an empty directory will be created automatically on your Web Hosting plan).
+To link your domain name to another website (root folder), click on the tabs below to view each of the **5** steps.
 
-![modify_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
+> **Step 4**
+>> 
+>> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
+>> 
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>> 
+>> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Detach domain`{.action}.
+>> 
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> 
+> **Step 5**
+>>
+>> Once the domain name has been detached from the website, follow our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 You can also log in to your web hosting plan using the [FTP](/pages/web_cloud/web_hosting/ftp_connection) protocol, then delete the folder contents. This is done after you have backed it up locally, or after you have emptied it by moving all of its contents to another FTP directory.
 

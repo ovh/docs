@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic"
 excerpt: "Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic"
-updated: 2024-03-12
+updated: 2025-12-19
 ---
 
 ## Objectif
@@ -15,7 +15,7 @@ Cependant, si la configuration de ces derniers n'est pas correctement réalisée
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
 ## Prérequis
@@ -29,18 +29,46 @@ Cependant, si la configuration de ces derniers n'est pas correctement réalisée
 > [!primary]
 >
 > Vous trouverez ici les erreurs les plus courantes. Si vous rencontrez une situation différente de celles présentées, consultez notre [FAQ sur les hébergements Web](/pages/web_cloud/web_hosting/faq-web_hosting).
->
 
 ### Votre nom de domaine n'est pas proposé lors de la création du « module en 1 clic »
 
 ![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné par l'installation. Sur la page qui s'affiche, cliquez sur l’onglet `Multisite`{.action}, puis effectuez les vérifications suivantes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
-|Scénario|Solution|
-|---|---|
-|Le domaine ou le sous-domaine lié au site web que vous souhaitez créer n'apparaît pas dans le tableau présent dans l'onglet `Multisite`{.action}.|Ajoutez votre domaine en suivant [ces indications](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
-|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine depuis l'onglet `Multisite`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Effectuez ensuite les vérifications suivantes :
+>>
+>> |Scénario|Solution|
+>> |---|---|
+>> |Le domaine ou le sous-domaine lié au site web que vous souhaitez créer n'apparaît pas dans le tableau présent dans l'onglet `Mes sites`{.action}.|Ajoutez votre nom de domaine en suivant [ces indications](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
+>> |Le nom de domaine a été détaché du site web sans action de votre part.|Si votre nom de domaine ou sa [zone DNS](/pages/web_cloud/domains/dns_zone_edit) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre nom de domaine depuis l'onglet `Mes sites`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).|
 
 ### « Une erreur s'est produite lors du chargement des informations (You need at least one free database) »
 
@@ -123,11 +151,42 @@ Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre « 
 
 Après avoir lancé la création de votre « module en 1 clic », vous avez reçu un e-mail indiquant que le répertoire d'installation de votre « module en 1 clic » n'est pas vide.
 
-Ce message signifie que le **Dossier racine** associé à votre nom de domaine contient déjà un ou plusieurs fichiers ou dossiers.
+Ce message signifie que le **Dossier racine** du site web sur lequel est associé votre nom de domaine contient déjà un ou plusieurs fichiers ou dossiers.
 
-Pour relier votre nom de domaine à un autre répertoire, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement Web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `Multisite`{.action}. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à votre nom de domaine, puis cliquez sur `Modifier le domaine`{.action}. Enfin, indiquez le nom d'un nouveau **Dossier racine** (un répertoire vide sera créé automatiquement sur votre hébergement web).
+Pour relier votre nom de domaine à un autre site web (dossier racine), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
-![modify_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+>> Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Détacher le domaine`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Une fois le nom de domaine dissocié du site web, suivez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 Vous pouvez également vous connecter à votre hébergement web via le protocole [FTP](/pages/web_cloud/web_hosting/ftp_connection), puis supprimer le contenu du dossier. Ceci après l'avoir sauvegardé en local ou après l'avoir vidé en déplaçant tout son contenu dans un autre répertoire FTP.
 
