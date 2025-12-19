@@ -1,7 +1,7 @@
 ---
 title: Modificare la password del database di un hosting Web
 excerpt: Scopri come modificare la password di un database creata nell'ambito di un piano di hosting Web
-updated: 2025-12-02
+updated: 2025-12-19
 ---
 
 ## Obiettivo
