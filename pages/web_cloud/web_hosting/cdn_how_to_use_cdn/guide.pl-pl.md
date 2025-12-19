@@ -1,7 +1,7 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2025-12-10
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie 
