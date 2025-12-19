@@ -1,218 +1,323 @@
 ---
 title: 'Partilhar o alojamento entre vários sites'
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
-updated: 2024-10-08
+updated: 2025-12-19
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
-Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de domínio não estejam registados na OVHcloud.
+Pode hospedar vários websites numa mesma oferta de alojamento web, mesmo que os nomes de domínio não estejam registados na OVHcloud.
 
-**Saiba como alojar diferentes websites no seu alojamento web.**
+Quer adicionar um novo website ao seu alojamento web?
 
-### Índice
+**Saiba como hospedar diferentes websites na sua oferta de alojamento web.**
 
-- 1 : [Aceder à gestão multisite](#multisite-menu)
-- 2 : [Adicionar um domínio ou subdomínio](#add-domain)
-    - 2.1 : [Adicionar um domínio registado na OVHcloud](#add-ovhcloud-domain)
-    - 2.2 : [Adicionar um domínio externo](#add-external-domain)
-    - 2.3 : [Diagnosticar os seus nomes de domínio](#diagnostic-domain)
-- 3 : [Colocar o seu website online](#site-online)
+> [!primary]
+> Se já criou o website em questão no seu alojamento web e pretende associar-lhe um novo nome de domínio ou subdomínio, consulte **directamente** [este guia](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
 ## Requisitos
 
-- Ter um serviço [de alojamento web OVHcloud](/links/web/hosting-multisite) compatível.
+- Ter um [serviço de alojamento web OVHcloud](/links/web/hosting-multisite) compatível.
 - Dispor de um ou vários [domínios](/links/web/domains).
 - Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
+### 1 - Adicionar um website à sua oferta de alojamento web
+
+**Clique num dos títulos abaixo para ver as explicações.**
+
+<a name="add-domain-ovhcloud"></a>
+
+/// details | Adicionar um website com um nome de domínio gerido a partir da sua Área de cliente OVHcloud
+
+Esta secção aplica-se apenas se o nome de domínio (e/ou a sua zona DNS activa) com o qual pretende criar o seu website se encontra **na sua Área de cliente OVHcloud**.
+
+Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Acima e à esquerda da tabela que aparece, clique no botão `Adicionar um site`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Marque a opção `Associar um domínio OVHcloud existente`{.action} e clique em `Continuar`{.action}.
+>>
+>> No campo **Nome do site - obrigatório**, insira o nome que pretende utilizar para o seu website. Este nome será visível apenas no separador `Meus sites`{.action} do seu alojamento web.
+>>
+>> Em seguida, seleccione o nome de domínio a associar no menu suspenso **Nome de domínio - obrigatório** que aparece em baixo.
+>>
+>> > [!primary]
+>> > Para adicionar um subdomínio, seleccione primeiro o nome de domínio na lista (por exemplo: domain.tld). Marque depois a caixa `Criar um subdomínio`{.action}. Aparecerá um campo de introdução para preencher o subdomínio (por exemplo: **sub**.domain.tld).
+>> >
+>> > **Caso particular**: Os subdomínios em `www` (por exemplo: **www**.domain.tld) são automaticamente adicionados em complemento ao nome de domínio. Por isso, não é necessário especificar este subdomínio particular no campo de introdução.
+>>
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-step-1.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Por defeito, a **pasta raiz** do seu website é criada automaticamente ao adicionar o website ao seu alojamento web. Esta mesma **pasta raiz** também é gerada no espaço de armazenamento do seu alojamento web (acessível via FTP, SFTP ou SSH, consoante a sua oferta).
+>> >
+>> > Se pretender personalizar o nome da **pasta raiz**, nomeadamente se o conteúdo do seu website já estiver presente numa pasta específica do seu espaço de armazenamento, pode defini-lo ao activar o botão `Configuração avançada`{.action}.
+>> >
+>> > **O nome da pasta raiz só é personalizável no momento da adição do website ao seu alojamento web.** Isto significa que, uma vez criado e adicionado o website ao seu alojamento web, não será possível, por enquanto, **modificá-lo** posteriormente.
+>>
+>> Se pretender personalizar o nome da pasta raiz ou utilizar uma das **opções avançadas** disponíveis, active o botão `Configuração avançada`{.action} e passe para a **etapa 6**. Caso contrário, continue directamente para a **etapa 7**.
+>>
+> **Etapa 6**
+>>
+>> > [!primary]
+>> >
+>> > Esta etapa é **opcional**. Destina-se apenas aos clientes que pretendem personalizar a pasta raiz e/ou activar algumas funcionalidades disponíveis através do botão `Configuração avançada`{.action}.
+>> >
+>> > **Exceptuando a personalização da pasta raiz, todas estas funcionalidades podem ser activadas posteriormente, uma vez que o nome de domínio foi adicionado ao seu website.** Para isso, consulte directamente [este guia](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>>
+>> Para personalizar o nome da pasta raiz que será associada ao seu website e que conterá os seus ficheiros, insira o nome pretendido no campo **pasta raiz**.
+>>
+>> Abaixo, encontra uma descrição das outras opções. Consoante a sua [oferta de alojamento web](/links/web/hosting), alguns elementos entre as opções apresentadas abaixo não poderão ser seleccionados.
+>>
+>> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-ovh-advanced-configurations.png){.thumbnail}
+>>
+>> |Opção|Descrição|
+>> |---|---|
+>> |IP do país|Permite beneficiar de um endereço IP geolocalizado (escolha entre uma lista de países) para o nome de domínio seleccionado.<br> Saiba mais com [esta página](/links/web/hosting-options).|
+>> |Firewall|Permite activar um firewall (filtragem e análise das requisições) no nome de domínio seleccionado.<br> Saiba mais com [esta página](/links/web/hosting-options).|
+>> |CDN|Permite activar o CDN (cache dos elementos estáticos do seu website, como as imagens) no nome de domínio seleccionado.<br> Saiba mais com [a nossa página CDN](/links/web/hosting-options-cdn).<br> Ao activar o SSL e o CDN, também beneficiará do protocolo **HTTP/2** (este protocolo está activado por defeito no nosso datacenter de Gravelines).|
+>>
+>> Uma vez activado o botão `Configuração avançada`{.action}, pode também escolher o modo de configuração DNS do seu nome de domínio:
+>>
+>> - **Para uma configuração DNS automática**, deixe seleccionada a caixa `Configuração automática (Recomendado)`{.action}.
+>> - **Para uma configuração DNS manual**, marque a caixa `Configuração manual`{.action}. Para efectuar depois a configuração da sua zona DNS, consulte os seguintes guias:
+>>     - [Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+>>     - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+>>
+> **Etapa 7**
+>>
+>> A OVHcloud disponibiliza os módulos WordPress, Joomla!, PrestaShop e Drupal. Estes permitem dispor de uma estrutura de website pronta a utilizar, instalada automaticamente na pasta raiz configurada anteriormente. Para saber mais, consulte a nossa documentação "[Instalar o seu website com um 'módulo 1 clique' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+>>
+>> Se pretender instalar um módulo em 1 clique, seleccione o módulo pretendido em baixo da página, em seguida, passe para a etapa seguinte.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> Ao contrário, se pretender instalar manualmente o seu website, recupere os seus ficheiros e carregue-os na pasta raiz apropriada no espaço de armazenamento do seu alojamento web. Para saber mais, consulte a nossa documentação "[Publicar um site num alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
+>>
+> **Etapa 8**
+>>
+>> Verifique que todas as informações introduzidas anteriormente estão correctas, em seguida, clique em `Continuar`{.action} para finalizar a adição do seu nome de domínio ou subdomínio ao seu website.
+>>
+>> Esta adição pode demorar até uma hora.
+>>
+>> Se não seleccionou a opção `Configuração manual`{.action} na secção `Configuração avançada`{.action}, a configuração DNS será realizada automaticamente se a zona DNS activa do seu nome de domínio for gerida na sua Área de cliente OVHcloud.
+>>
+>> No caso contrário, consulte os seguintes guias para configurar manualmente a sua zona DNS:
+>>
+>> - [Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+>> - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+>>
+>> > [!primary]
+>> > A modificação da configuração DNS do seu nome de domínio exige um período de propagação que pode atingir 24 horas antes de estar plenamente efectiva.
+
+///
+
+/// details | Adicionar um website com nome de domínio não gerido a partir da sua Área de cliente OVHcloud
+
+Esta secção aplica-se apenas se pretender adicionar um website com um nome de domínio que não está presente no seu conta OVHcloud. Pode tratar-se de um nome de domínio presente noutra conta OVHcloud ou registado por outro fornecedor.
+
+Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Acima e à esquerda da tabela que aparece, clique no botão `Adicionar um sítio`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Marque a opção `Associar um domínio externo`{.action} e clique em `Continuar`{.action}.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
+>>
+> **Etapa 6**
+>>
+>> No campo **Nome do site - obrigatório**, insira o nome que pretende utilizar para o seu website. Este nome será visível apenas no separador `Meus sites`{.action} do seu alojamento web.
+>>
+>> Introduza depois o nome de domínio (por exemplo: domain.tld) ou o subdomínio (por exemplo: **sub**.domain.tld) a associar no campo **Nome de domínio - obrigatório** que aparece em baixo.
+>>
+>> > [!success]
+>> >
+>> > **Caso particular**: Os subdomínios em `www` (por exemplo: **www**.domain.tld) são automaticamente adicionados em complemento ao nome de domínio. Por isso, não é necessário especificar este subdomínio particular no campo de introdução.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-site-external-step-2.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Por defeito, a **pasta raiz** do seu website é criada automaticamente ao adicionar o website ao seu alojamento web. Esta mesma **pasta raiz** também é gerada no espaço de armazenamento do seu alojamento web (acessível via FTP, SFTP ou SSH, consoante a sua oferta).
+>> >
+>> > **O nome da pasta raiz só é personalizável no momento da adição do website ao seu alojamento web.** Isto significa que, uma vez criado e adicionado o website ao seu alojamento web, não será possível, por enquanto, **modificá-lo** posteriormente.
+>>
+>> Para personalizar o nome da pasta raiz que será associada ao seu website e que conterá os seus ficheiros, insira o nome pretendido no campo **Pasta raiz**. Se não pretender personalizá-lo, deixe o campo vazio.
+>>
+>> Uma vez preenchidas as informações, clique no botão `Continuar`{.action}.
+>>
+> **Etapa 7**
+>>
+>> > [!primary]
+>> >
+>> > Ao contrário dos nomes de domínio geridos diretamente a partir do seu Área de cliente OVHcloud, as **opções avançadas** não estão diretamente disponíveis ao adicionar um site web com um nome de domínio ou subdomínio não gerido a partir do seu conta OVHcloud.
+>> >
+>> > No entanto, e com exceção da pasta raiz, **todas estas funcionalidades podem ser ativadas ou modificadas posteriormente, uma vez que o nome de domínio ou subdomínio externo tenha sido adicionado ao seu site web.** Para isso, consulte diretamente [este guia](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>>
+>> A adição de um site web com um nome de domínio externo à OVHcloud exige uma validação adicional obrigatória. Isso permite-nos assegurar que a adição do nome de domínio externo é legítima. Um aviso solicitar-lhe-á, por isso, a modificação da configuração DNS do nome de domínio.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+>>
+>> Registe os elementos apresentados, depois clique no botão `Continuar`{.action}. A partir desse momento, o nome de domínio será adicionado temporariamente, enquanto pode modificar a sua configuração DNS.
+>>
+>> > [!warning]
+>> >
+>> > Deve efetuar estas modificações **rapidamente** para que o seu nome de domínio seja corretamente associado ao seu site web. Sem esta ação, a adição do seu nome de domínio será cancelada e o seu site web recentemente criado não será acessível.
+>> >
+>> > As entradas DNS do tipo **A** e **TXT** devem obrigatoriamente ser colocadas na zona DNS ativa do seu nome de domínio para que este seja associado ao seu site web. Apenas as entradas DNS do tipo **AAAA** são opcionais.
+>> >
+>> > Note que se pretender associar `sub.domain.tld`, deverá criar a entrada TXT `ovhcontrol.domain.tld` e não a entrada `ovhcontrol.sub.domain.tld`.
+>> >
+>> > Para encontrar a zona DNS ativa do seu nome de domínio, localize os [servidores DNS](/pages/web_cloud/domains/dns_server_edit) aos quais este está ligado. Deverá validar apenas o nome de domínio com o campo **TXT**, e não todos os seus subdomínios.
+>>
+> **Passo 8**
+>>
+>> A OVHcloud dispõe dos módulos WordPress, Joomla!, PrestaShop e Drupal. Estes permitem dispor de uma estrutura de site web pronta a utilizar, instalada automaticamente na pasta raiz configurada anteriormente. Para saber mais, consulte a nossa documentação "[“Módulos 1 clique: como instalar um CMS para criar um site”](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+>>
+>> Se pretender instalar um módulo em 1 clique, selecione o módulo desejado em baixo da página, depois clique em `Continuar`{.action} para finalizar a solicitação de adição do seu site web ao seu alojamento web.
+>>
+>> ![choose module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-site-choose-1-click-module.png)
+>>
+>> Ao contrário, se pretender instalar manualmente o seu site web, recupere os seus ficheiros e carregue-os na pasta raiz apropriada no espaço de armazenamento do seu alojamento web. Para saber mais, consulte a nossa documentação "[“Publicar um site num alojamento web”](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
+
+///
+
+/// details | Adicionar um site web com um novo nome de domínio que ainda não foi registado
+
+Esta parte aplica-se apenas se pretender adicionar um site web com um nome de domínio que ainda não foi registado, quer seja na OVHcloud ou em outro registo. Em outras palavras, refere-se aos nomes de domínio que ainda não foram subscritos.
+
+Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Acima e à esquerda da tabela que aparece, clique no botão `Adicionar um sítio`{.action}.
+>>
+>> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Marque a opção `Encomendar um novo nome de domínio`{.action} e clique em `Continuar`{.action}.
+>>
+>> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
+>>
+>>
+> **Etapa 6**
+>>
+>> É então redirecionado para a nossa página comercial de subscrição de um nome de domínio. Escolha o seu novo nome de domínio com base nas disponibilidades do mercado. Segue-se depois as instruções do túnel de encomenda até à validação do bono de encomenda. Isto sem subscrever um novo alojamento web em complemento.
+>>
+>> Uma vez que a sua encomenda seja paga e validada, aguarde alguns instantes, enquanto é processada.
+>>
+>> > [!primary]
+>> >
+>> > Uma vez que o seu nome de domínio apareça no seu Área de cliente OVHcloud, siga a parte "[Adicionar um nome de domínio gerido a partir do seu Área de cliente OVHcloud](#add-domain-ovhcloud)" deste guia para adicionar o seu site web ao seu alojamento web.
+
+///
+
+### 2 - Colocar o seu site web online <a name="site-online"></a>
+
+Uma vez que o site web tenha sido declarado com o seu nome de domínio no seu alojamento web, pode colocar online o conteúdo do seu site web. Lembre-se de que deve realizar esta operação na **pasta raiz** que definiu ao adicionar o site web no seu Área de cliente OVHcloud.
+
 > [!primary]
 >
-> A maioria das ofertas de [alojamento web OVHcloud](/links/web/hosting) dispõem de uma opção incluída de criação de endereço(s) de e-mail personalizado(s) com o seu nome de domínio.
-> Esta opção de e-mail pode ser ativada para **apenas um** nome de domínio. Isto significa que se utilizar o *multisite* com vários domínios, só poderá ativar esta opção para um dos seus nomes de domínio.
-> Não hesite em consultar o nosso [guia](/pages/web_cloud/web_hosting/activate-email-hosting) para mais pormenores sobre a ativação desta opção.
+> Se pretender adicionar vários sites web, repita as ações descritas neste guia.
 >
-
-### 1 - Aceder à gestão multisite <a name="multisite-menu"></a>
-
-Em primeiro lugar, aceda à Área de [Cliente OVHcloud](/links/manager) e selecione a `Web Cloud`{.action}. Depois, clique em `Alojamentos`{.action}, selecione o serviço correspondente e clique no separador `Multisite`{.action}.
-
-Aparecerá uma tabela com todos os domínios e subdomínios adicionados à sua solução de alojamento web. Alguns foram criados automaticamente durante a instalação do alojamento.
-
-> [!primary]
->
-> Se migrar o seu website e pretender evitar qualquer interrupção do serviço, siga o [passo 3: colocar o seu website online](#site-online).
->
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
-
-### 2 - Adicionar um domínio ou subdomínio <a name="add-domain"></a>
-
-Para adicionar um novo domínio ou subdomínio ao seu alojamento web, clique no botão `Ações`{.action} situado à esquerda do ecrã e, a seguir, em `Adicionar um domínio ou subdomínio`{.action} e faça a sua escolha na nova janela.
-
-![ações](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/actions-menu.png){.thumbnail}
-
-- **Adicionar um domínio registado na OVHcloud**:
-
-Apenas aparecem aqui os nomes de domínio OVHcloud para os quais tem [contacto técnico e/ou administrador na sua Área de Cliente](/pages/account_and_service_management/account_information/managing_contacts). Escolha um na lista e clique em `Seguinte`{.action}. De seguida, consulte o [passo 2.1: adicionar um domínio registado na OVHcloud](#add-ovhcloud-domain).
-
-- **Adicionar um domínio externo**:
-
-No caso de um nome de domínio externo à sua conta de cliente (outro identificador de cliente) ou externo à OVHcloud (fornecedor de nome de domínio terceiro), selecione `Adicionar um nome de domínio externo`{.action} e clique em `Seguinte`{.action}. De seguida, consulte o passo [“2.2 - Adicionar um domínio externo”](#add-external-domain).
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
-
-#### Etapa 2.1: adicionar um domínio registado na OVHcloud <a name="add-ovhcloud-domain"></a>
-
-> [!warning]
-> Esta etapa só se aplica se tiver selecionado "Adicionar um domínio registado na OVHcloud". O domínio ou a zona DNS devem estar localizados **na Área de Cliente**. Para os nomes de domínio externos, passe ao [passo 2.2: adicionar um domínio externo](#add-external-domain)
-
-Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](/links/web/hosting), alguns elementos propostos não poderão ser selecionados.
-
-> [!primary]
-> Para adicionar um subdomínio, deve primeiro selecionar o domínio principal na lista (exemplo: domain.tld). O passo seguinte permitir-lhe-á indicar o subdomínio (exemplo: **blog**.domain.tld).
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
-
-|Informação|Descrição|
-|---|---|
-|Domínios|Por predefinição, o nome de domínio que selecionou é automaticamente indicado. Pode adicionar um subdomínio (por exemplo, **blog**.domain.tld) e criar simultaneamente o subdomínio "www" correspondente (por exemplo, **www.blog**.domain.tld). No final, este domínio será o endereço web do site que pretende publicar.|
-|Pasta raiz|Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.domain.tld, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
-|SSL|Permite-lhe beneficiar de uma ligação segura (HTTPS://) no nome de domínio selecionado. Saiba mais na nossa [página sobre SSL](/links/web/hosting-options-ssl). Ao ativar o SSL e o CDN (Content Delivery Network), poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
-|Ativar o CDN|Permite ativar o CDN (implementação de cache dos elementos estáticos do seu site, como as imagens) no nome de domínio selecionado. Saiba mais na [nossa página sobre CDN](/links/web/hosting-options-cdn). Ao ativar o SSL e o CDN, poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
-|IP do país|Permite beneficiar de um endereço de IP geolocalizado (a partir de uma lista de países) para o nome de domínio selecionado. Obtenha mais informações na [nossa página sobre IP](/links/web/hosting-options).|
-|Ativar a firewall|Permite ativar uma firewall (análise de pedidos) no nome de domínio selecionado. Saiba mais na [nossa página sobre Mod Security](/links/web/hosting-options).|
-|Logs separados|Permite ativar um novo espaço de logs no domínio selecionado. Terá de escolher um nome de domínio a partir de uma lista que determinará o nome de acesso a esse novo espaço. Saiba mais na [nossa página sobre estatísticas detalhadas](/links/web/hosting-traffic-analysis).|
-
-> [!warning]
->
-> Não poderá ativar os logs separados para um nome de domínio externo. Esta opção só está disponível para os domínios registados na OVHcloud.
->
-
-Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
-
-Ao selecionar um domínio registado na OVHcloud, tem a possibilidade de modificar automaticamente ou manualmente a sua configuração DNS:
-
-- **para uma configuração DNS automática**: selecione a opção `Configuração automática (recomendada)`{.action};
-- **para uma configuração DNS manual**: desselecione a opção `Configuração automática (recomendada)`{.action} e anote as informações apresentadas. Quando efetuar esta configuração, consulte a nossa documentação ["Editar uma zona DNS da OVHcloud"](/pages/web_cloud/domains/dns_zone_edit).
-
-Em seguida, clique em `Validar`{.action} para adicionar o domínio. Esta operação pode demorar até uma hora. No entanto, a propagação das alterações da configuração DNS do seu domínio pode demorar entre 1 a 24 horas.
-
-Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website online](#site-online).
-
-#### Etapa 2.2: adicionar um domínio externo <a name="add-external-domain"></a>
-
- Este passo aplica-se apenas se selecionou a opção "Adicionar um domínio externo".
- 
- O seu domínio não está registado na OVHcloud **ou** não está registado na **sua** conta OVHcloud. 
-
- > Antes de continuar, é preferível alterar a zona DNS do nome de domínio externo antes da adição da entrada multisite.
- >
- > A alteração da configuração do domínio externo (a sua zona DNS) deve ser realizada a partir da interface do prestador que a gere. Se se tratar da OVHcloud, consulte o nosso manual ["Editar uma zona DNS da OVHcloud"](/pages/web_cloud/domains/dns_zone_edit). Depois de efetuar a alteração, é necessário aguardar entre 1 a 24 horas até que esta seja implementada.
->
-> Encontre aqui os 2 elementos a modificar relativos à configuração DNS do seu nome de domínio externo:
->
-> |Campo|Onde posso encontrar a informação?|Ação a realizar|
-> |---|---|---|
-> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.domain.tld) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br><br>É importante notar que se deseja adicionar `blog.domain.tld`, deve criar o registo para o subdomínio `ovhcontrol.domain.tld` e não `ovhcontrol.blog.domain.tld`. <br><br>Para consultar esta última, encontre os [servidores DNS](/pages/web_cloud/domains/dns_server_edit) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
->
-> ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
->
-> |Campo|Onde posso encontrar a informação?|Ação a realizar|
-> |---|---|---|
-> |A e AAAA|Na secção `Informações gerais`{.action} e junto de **IPv4** e **IPv6**|Permite que o seu domínio apresente o site web publicado no seu alojamento web. Associe o seu nome de domínio ou subdomínio ao endereço IP do seu alojamento.|
->
-> ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
->
-
- Aqui, deverá personalizar a adição do domínio. Tenha em atenção que algumas opções incluídas na sua oferta de [alojamento web](/links/web/hosting) não podem ser ativadas durante este processo. Deverá finalizar esta operação antes de as poder utilizar, alterando as definições dos parâmetros do multisite quando este for adicionado.
-
-|Informação|Descrição|
-|---|---|
-|Domínio|Indique o domínio que pretende utilizar. Se necessário, adicione um subdomínio (por exemplo, **blog**.domain.tld) e, ao mesmo tempo, crie o subdomínio "www" correspondente (por exemplo, **www.blog**.domain.tld). No final, este domínio será o endereço web do site que pretende publicar. Para finalizar a adição, certifique-se de que consegue alterar a configuração do domínio (a sua zona DNS).|
-|Pasta raiz| Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.domain.tld, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
-|Ativar o IPv6|Permite ativar o protocolo IPv6 no domínio indicado. Obtenha mais informações na [nossa página sobre IP](/links/web/hosting-options).|
-
-Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
-
-A adição de um domínio externo à OVHcloud requer uma validação suplementar obrigatória. Isto permite-nos assegurar que a adição do domínio externo é legítima. Assim, receberá uma mensagem solicitando a alteração da configuração DNS do domínio.
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
-
-Tenha em atenção os elementos apresentados e clique no botão `Validar`{.action}. A seguir, o domínio é adicionado temporariamente, até que a configuração DNS seja alterada.
-
-> [!warning]
->
-> Para que o seu domínio seja adicionado corretamente, deverá **efetuar rapidamente** estas alterações. Caso contrário, a adição do seu domínio será anulada.
->
-> As entradas DNS de tipo **A** e **TXT** devem obrigatoriamente ser colocadas na zona DNS ativa do seu nome de domínio para que este seja adicionado ao seu alojamento web. Apenas as entradas DNS de tipo **AAAA** são opcionais. 
->
-
-#### Etapa 2.3: diagnosticar os seus nomes de domínio <a name="diagnostic-domain"></a>
-
-Na tabela apresentada no separador `Multisite`, aparecerá uma coluna `Diagnóstico` para informar se o domínio está a apontar corretamente para o alojamento web associado. Desta forma, poderá verificar rapidamente se a configuração DNS do domínio foi efetuada corretamente com o seu alojamento web. Desta forma, esta coluna ajuda a identificar e resolver potenciais problemas de apontamento. Para cada domínio, são possíveis três resultados de diagnóstico:
-
-- `A/AAAA` verde
-- `A/AAAA` amarelo
-- `A/AAAA` cinzento
-
-##### A/AAAA verde
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
-
-Quando o ícone `A/AAAA` é verde na coluna `Diagnóstico`, isto significa que o registo **A** (para os endereços IPv4) e/ou o registo **AAAA** (para os endereços IPv6) do seu domínio aponta corretamente para o endereço IP do seu alojamento web. A configuração DNS do seu domínio está em conformidade para funcionar com o seu alojamento web.
-
-##### A/AAAA amarelo
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
-
-Quando o ícone `A/AAAA` é amarelo na coluna `Diagnóstico`, isto significa que o registo **A** (IPv4) e/ou **AAAA** (IPv6) do seu domínio aponta para um endereço IP, mas que não é aquele do alojamento web a partir do qual consulta a coluna `Diagnóstico`.
-Clique no ícone `A/AAAA` amarelo para mais informações. Aparecerá a seguinte mensagem:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
-Para resolver os problemas de apontamento DNS do seu domínio e garantir que aponta corretamente para o alojamento web desejado, siga os passos descritos no nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
-
-##### A/AAAA cinzento
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
-
-Quando o ícone `A/AAAA` está cinzento na coluna `Diagnóstico`, isto significa que o domínio não está atualmente apontado para nenhum endereço IP e que não está configurado nenhum registo **A** ou **AAAA** para este domínio.
-Clique no ícone `A/AAAA` cinzento para mais informações. Aparecerá a seguinte mensagem:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
-
-Para adicionar os registos **A** ou **AAAA** e configurar corretamente o seu domínio, siga os passos descritos no nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
-
-### Etapa 3: colocar o seu website online <a name="site-online"></a>
-
-Depois de adicionar o nome de domínio, só lhe resta publicar o site que lhe está associado. Lembre-se de que deve realizar esta operação na pasta raiz que definiu na etapa anterior.
-
-Para o ajudar, pode beneficiar de uma estrutura de site pronta a utilizar, graças aos módulos 1 clique da OVHcloud. O site será automaticamente instalado na pasta raiz que configurou anteriormente. Para saber mais, consulte a nossa documentação intitulada: [“Módulos 1 clique: como instalar um CMS para criar um site”](/pages/web_cloud/web_hosting/cms_install_1_click_modules). 
-
-Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recuperar os seus ficheiros e publicá-los na pasta raiz no seu espaço de armazenamento. Pode obter mais informações consultando a nossa documentação intitulada [“Publishing a website on your Web Hosting space”](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) (versão inglesa - Publicar um site web num alojamento web).
-
-> [!primary]
->
-> Se pretender adicionar vários websites, deverá repetir esta etapa.
->
-> Lembre-se de que quanto maior for o número de sites no seu alojamento, maior será a solicitação de recursos atribuídos. [A página das nossas ofertas de alojamento web](/links/web/hosting) indica o número de websites recomendados que pode alojar no seu espaço.
->
+> Recomendamos que tenha cuidado com o número de sites web presentes no seu alojamento web. Quanto maior for este número, mais recursos são solicitados ao seu alojamento web. [A página das nossas ofertas de alojamento web](/links/web/hosting) indica o número recomendado de sites web que pode acolher no seu alojamento web.
 
 ## Quer saber mais?
 
-["Módulos 1 clique: como instalar um CMS para criar um site"](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
+[Módulos 1 clique: como instalar um CMS para criar um site](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-["Editar uma zona DNS da OVHcloud"](/pages/web_cloud/domains/dns_zone_edit)
+[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-["Publicar um site num alojamento web"](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
+[Publicar um site num alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).
