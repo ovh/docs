@@ -1,7 +1,7 @@
 ---
 title: "Setting up your website with a 1-click module (CMS)"
 excerpt: "Find out how to set up your website using our 1-click modules"
-updated: 2024-10-07
+updated: 2025-12-19
 ---
 
 ## Objective
@@ -19,14 +19,13 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 - Your OVHcloud web hosting uses a recent PHP version and a compatible runtime environment. You can check the status of the different versions on [this page](https://webhosting-infos.hosting.ovh.net/). If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting), to change this configuration quickly.
 - A configured [.ovhconfig file](/pages/web_cloud/web_hosting/configure_your_web_hosting) must be present in the FTP root of your web hosting plan.
 - If you want to install the 1-click module in an existing folder, this folder must be empty.
-- The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
+- The domain name (with subdomain if desired) that will be used for your website must be declared via the [My sites](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) tab on your web hosting.
 
 ## Instructions
 
 > [!primary]
 >
 > If you encounter any difficulties by following any of the steps described below, please refer to our specific documentation on [the most common errors related to 1-click modules](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
->
 
 ### Step 1: Decide on a CMS to use
 
@@ -56,7 +55,7 @@ In the window that pops up, choose the CMS you want to use, then select the doma
 
 ![Choose a module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) if required.
+If your domain is not in the list, go to the `My sites`{.action} tab to add it. See our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)" if required.
 
 > [!primary]
 >
@@ -65,7 +64,6 @@ If your domain is not in the list, go to the `Multisite`{.action} tab to add it.
 > As a reminder, this directory must be completely empty.
 >
 > If you need assistance, please refer to our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
->
 
 Once your domain has been correctly added, try adding a 1-click module again.
 
@@ -87,7 +85,6 @@ Choose the domain name for your CMS, verify the target directory that will appea
 > The installation directory for your 1-click module must be empty, and you must have at least one database available to create on your OVHcloud web hosting plan for the installation to be carried out.
 >
 > For a quick installation, do not create the database beforehand because the installation robot will take care of it.
->
 
 ![Basic module installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
@@ -96,7 +93,6 @@ Once the installation is complete, you will receive an email containing the logi
 > [!primary]
 >
 > It may take up to 15 minutes for the module to be installed after you click the `Install`{.action} button in your [OVHcloud Control Panel](/links/manager).
->
 
 #### Advanced installation of a 1-click module
 
@@ -115,7 +111,6 @@ Enter the information required to connect to your database.
 > To retrieve the login details for your database included in your web hosting plan, please refer to [this guide](/pages/web_cloud/web_hosting/sql_create_database).
 >
 > To retrieve the login details for a database created on a Cloud Web Databases instance, please refer to [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ![Database for advanced installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
@@ -135,7 +130,6 @@ The remaining information requested for the database is as follows:
 > - The server name of a database included with your web hosting plan usually has this form: `NameOfYourDatabase.mysql.db`. 
 >
 > - The server name of a Cloud Web Databases database starts with your OVHcloud NIC handle and is in the following form: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where the **"X"** are to be replaced by the reference of your Cloud Databases web service.
->
 
 - *Database name*: this name was defined when the database was created in the [OVHcloud Control Panel](/links/manager).
 
@@ -153,7 +147,7 @@ Enter the following information for the module configuration:
 
 - *Admin name or email address:* The username you will use to log in to your CMS administration interface (back office).
 - *Password:* The password you use to log in to your CMS admin interface.
-- *Domain:* The domain name you would like to install your CMS with. If you need help with this, please refer to our guide on [How to host multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+- *Domain:* The domain name you would like to install your CMS with. If you need help with this, please refer to our guide on "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 - *Language:* The language in which the CMS will be installed.
 - *Installation path:* This is automatically entered when you select your domain name. You can complete it by entering subdirectories (for informed users).
 
@@ -167,14 +161,12 @@ Enter the following information for the module configuration:
 > For example, if you enter the subdirectory *test*, the URL to access the 1-click module will look like this: **http://domain.tld/test/**.
 >
 > If you need assistance, please refer to our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
->
 
 Once you have entered this information, click `Next`{.action}:
 
 > [!warning]
 >
 > The final folder specified in the installation path must be completely empty for the installation to succeed.
->
 
 ![Module configuration for advanced installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
@@ -193,7 +185,6 @@ Once it has finished, you will receive an email confirming that your CMS has bee
 > [!warning]
 >
 > OVHcloud support does not provide assistance for using any CMS. The 1-click installation process is a free, noncontractual service to help install them. 
->
 
 If you need help with your CMS's features, please contact the publisher of the CMS you have installed. You will find documentation to support you in your project.
 

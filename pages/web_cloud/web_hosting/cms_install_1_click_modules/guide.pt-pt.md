@@ -1,7 +1,7 @@
 ---
 title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
 excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
-updated: 2024-10-07
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -19,7 +19,7 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 - Utilizar uma versão recente de PHP e um ambiente de execução compatível no seu alojamento web da OVHcloud. Descubra o estado das diferentes versões disponíveis nesta [página](https://webhosting-infos.hosting.ovh.net/). Caso seja necessário, consulte o nosso [guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) sobre o assumpto, para alterar rapidamente esta configuração.
 - Um ficheiro "[.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" configurado deve estar presente na raiz FTP do seu alojamento web.
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
-- O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web da OVHcloud.
+- O domínio (com subdomínio, se desejar) que será utilizado para o seu site web deve ser declarado através do separador [Meus sites](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) do seu alojamento web.
 
 ## Instruções
 
@@ -56,7 +56,7 @@ Na nova janela, selecione o CMS desejado e selecione o domínio com o qual desej
 
 ![Escolher módulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Se o seu domínio não está na lista, aceda ao separador `Multisite`{.action} para o adicionar. Consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite), se necessário.
+Se o seu domínio não estiver na lista, aceda ao separador `Meus sites`{.action} para o adicionar. Consulte o nosso guia "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)", se necessário.
 
 > [!primary]
 >
@@ -65,7 +65,6 @@ Se o seu domínio não está na lista, aceda ao separador `Multisite`{.action} p
 > Nota: este diretório deve estar totalmente vazio.
 >
 > Se necessário, consulte o nosso guia "[Como partilhar o meu alojamento web entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" para modificar o diretório alvo do seu domínio.
->
 
 Depois de adicionar o domínio corretamente, tente novamente adicionar um "módulo 1 clique".
 
@@ -87,7 +86,6 @@ Escolha o nome de domínio do seu CMS, controle o diretório alvo que aparece au
 > A pasta de instalação do seu "módulo 1 clique" deve estar vazia e deve dispor de, pelo menos, uma base de dados disponível em criação no seu alojamento web da OVHcloud para que a instalação seja efetuada.
 >
 > Para uma instalação rápida, não crie a base de dados antes, o robô de instalação encarregar-se-á disso.
->
 
 ![Instalação rapida](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
@@ -96,7 +94,6 @@ Uma vez terminada a instalação, receberá um e-mail com as informações de li
 > [!primary]
 >
 > A instalação e a receção do e-mail podem levar até 15 minutos a contar do momento em que clicar no botão `Instalar`{.action} na sua [Área de Cliente OVHcloud](/links/manager).
->
 
 #### Instalação avançada
 
@@ -115,7 +112,6 @@ Insira as informações de ligação à sua base de dados.
 > Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/sql_create_database).
 >
 > Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ![Base de dados para instalação avançada](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
@@ -135,9 +131,8 @@ As restantes informações solicitadas para a base de dados são as seguintes:
 > - O nome do servidor de uma base de dados incluída no serviço de alojamento web tem esta forma: `NameOfYourDatabase.mysql.db`. 
 >
 > - O nome do servidor de uma base de dados Web Cloud Databases começa pelo seu identificador de cliente OVHcloud e tem a seguinte forma: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` onde os **"X"** devem ser substituídos pela referência do seu serviço Web Cloud Databases.
->
 
-- *Nome da base de dados* : este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](/links/manager).
+- *Nome da base de dados*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](/links/manager).
 
 - *Porta*: coloque sistematicamente o número **3306** (porta predefinida) para uma base de dados incluída no seu alojamento web. Para uma base presente numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
@@ -154,13 +149,13 @@ Introduza as seguintes informações para a configuração do módulo:
 
 - *nome ou e-mail do administrador:* identificador que irá utilizar para aceder à interface de gestão do seu CMS (Back Office).
 - *palavra-passe:* palavra-passe usada para aceder à interface de gestão do CMS.
-- *domínio:* domínio com o qual deseja instalar o seu CMS. Se necessário, consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+- *domínio:* domínio com o qual deseja instalar o seu CMS. Se necessário, consulte o nosso manual "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 - *Linguagem:* língua na qual o CMS será instalado.
 - *caminho de instalação:* este é automaticamente indicado ao selecionar o domínio. Pode completá-lo introduzindo sub-diretórios (para os utilizadores mais experientes).
 
 > [!primary]
 >
-> Verifique, para o formulário `Caminho da instalação`, se o diretório pré-preenchido é aquele no qual deseja instalar o seu « módulo em 1 clique » com o seu nome de domínio.
+> Verifique, para o formulário `Caminho da instalação`, se o diretório pré-preenchido é aquele no qual deseja instalar o seu "módulo em 1 clique" com o seu nome de domínio.
 >
 > Nota: este diretório deve estar totalmente vazio.
 >
@@ -175,7 +170,6 @@ Depois de preencher estas informações, clique no botão `Seguinte`{.action}:
 > [!warning]
 >
 > O processo final indicado no caminho de instalação indicado deve ser obrigatória e inteiramente vazio para que a instalação chegue a bom porto.
->
 
 ![Configuração do módulo para instalação avançada](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
@@ -194,7 +188,6 @@ Uma vez terminado, receberá um e-mail a confirmar a instalação do CMS. Por fa
 > [!warning]
 >
 > O suporte da OVHcloud não efetua acompanhamento sobre a utilização dos CMS. Propomos-as apenas em instalação **em 1 clique**.
->
 
 Para mais informações, contacte o editor do CMS que instalou. Encontrará junto deste último documentação para o acompanhar no seu projeto.
 
