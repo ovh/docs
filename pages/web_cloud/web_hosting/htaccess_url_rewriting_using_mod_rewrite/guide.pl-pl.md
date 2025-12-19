@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - przepisz URL dostępu do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"
 excerpt: "Dowiedz się, jak zmienić adres URL dostępu do Twojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"
-updated: 2025-12-02
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie
