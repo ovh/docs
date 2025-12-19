@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo crear un subdominio?"
 excerpt: "Descubra cómo crear un subdominio en OVHcloud"
-updated: 2025-10-27
+updated: 2025-12-19
 ---
 
 <style>
@@ -173,11 +173,11 @@ Para los servicios que no se mencionan, consulte la documentación relativa al s
 
 #### Caso 1: Ver un sitio web en mi alojamiento web de OVHcloud con un subdominio <a name="link-subdomain-case-1"></a>
 
-Al igual que para un dominio y para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" presente en un alojamiento web, conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Multisitio`{.action}.
+Al igual que con un nombre de dominio, para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" declarada para un sitio web alojado en un alojamiento web, conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna de la izquierda, seleccione el alojamiento correspondiente donde se encuentra su sitio web y elija la pestaña `Mis sitios`{.action}.
 
-Aquí es donde autoriza el acceso de su subdominio al alojamiento web en el que se encuentra su sitio web.
+Aquí es donde autoriza el acceso de su subdominio a su sitio web presente en su alojamiento web.
 
-Para más información sobre la configuración de un dominio o subdominio en un alojamiento web, consulte nuestra guía "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)". El procedimiento es el mismo para un dominio o subdominio.
+Para obtener más detalles sobre la configuración de un dominio o subdominio en un alojamiento web, consulte nuestro guía "[¿Cómo asociar un nombre de dominio a un sitio web existente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Tanto si se trata de un nombre de dominio como de un subdominio, el procedimiento es el mismo.
 
 > [!warning]
 >

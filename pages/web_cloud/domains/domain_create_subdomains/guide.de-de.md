@@ -1,7 +1,7 @@
 ---
 title: "Erstellung einer Subdomain"
 excerpt: "Erfahren Sie hier, wie Sie eine Subdomain bei OVHcloud erstellen und nutzen"
-updated: 2025-10-27
+updated: 2025-12-19
 ---
 
 <style>
@@ -172,11 +172,11 @@ Nicht aufgeführte Dienste finden Sie in der jeweiligen Service-Dokumentation. S
 
 #### Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen <a name="link-subdomain-case-1"></a>
 
-Um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines "Ziel"-Ordners auf einem Webhosting anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Angebot aus, in dem sich Ihre Website befindet, und klicken Sie dann auf den Tab `Multisite`{.action}.
+Wie bei einem Domainnamen, um einer Subdomain zu erlauben, den Inhalt eines als „Ziel“ deklarierten Verzeichnisses anzuzeigen, das für eine Website auf einem Webhosting bereitgestellt wird, melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und wählen Sie `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} in der linken Spalte, wählen Sie Ihr Webhosting aus und klicken Sie anschließend auf den Tab `Meine Seiten`{.action}.  
 
-Hier autorisieren Sie den Zugriff Ihrer Subdomain auf Ihr Webhosting, auf dem sich Ihre Website befindet.
+Hier erlauben Sie der Subdomain den Zugriff auf Ihre Website, die sich auf Ihrem Webhosting befindet.  
 
-Weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem Webhosting finden Sie in unserer Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“. Egal ob es sich um eine Domain oder eine Subdomain handelt, die Vorgehensweise ist die gleiche.
+Für weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem Webhosting, konsultieren Sie unsere Anleitung „[Wie verbinde ich einen Domainnamen mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)“. Die Vorgehensweise ist identisch.
 
 > [!warning]
 >

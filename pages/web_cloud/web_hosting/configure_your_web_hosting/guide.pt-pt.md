@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
-updated: 2025-12-15
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -93,7 +93,7 @@ Certas versões de PHP só funcionam com certos ambientes de execução. Encontr
 |---|---| 
 |5.4, 5.5, 5.6 e 7.0|Legacy, Stable|
 |7.1, 7.2 e 7.3|Stable|
-|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 e 8.5|stable64|
+|7.4, 8.0, 8.1,8.2 e 8.3|stable64|
 
 > [!primary]
 >
@@ -386,7 +386,7 @@ Depois de" alterado o ficheiro ".ovhconfig, transfira-o para o seu [espaço de a
 
 Se está a utilizar o seu alojamento web para alojar vários sítios web, pode haver diversas razões pelas quais pretende beneficiar de uma versão de PHP diferente para alguns dos seus sítios web.
 
-Crie um ficheiro ".ovhconfig" contendo a versão de PHP desejada para o(s) sítio(s) web em questão. Utilize as manipulações descritas na parte "[3.3 - Modificar o conteúdo do ficheiro ".ovhconfig"](#update-ovhconfig)" deste guia, se necessário. Quando fizer o upload do ficheiro ".ovhconfig" para o seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), faça-o na pasta raiz onde se encontram os ficheiros que compõem o sítio web em questão. Encontre a pasta raiz do seu sítio web a partir do seu [Área de Cliente OVHcloud](/links/manager) no separador `Multisite`{.action} do alojamento em questão.
+Crie um ficheiro ".ovhconfig" contendo a versão de PHP desejada para o(s) sítio(s) web em questão. Utilize as manipulações descritas na parte "[3.3 - Modificar o conteúdo do ficheiro ".ovhconfig"](#update-ovhconfig)" deste guia, se necessário. Quando fizer o upload do ficheiro ".ovhconfig" para o seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), faça-o na pasta raiz onde se encontram os ficheiros que compõem o sítio web em questão. Encontre a pasta raiz do seu sítio web a partir do seu [Área de Cliente OVHcloud](/links/manager) no separador `Meus sites`{.action} do alojamento em questão.
 
 Consulte o nosso guia detalhado sobre como [configurar um sítio web num alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite), se necessário.
 

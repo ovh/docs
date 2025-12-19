@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Environnement, version PHP, « .ovhconfig »"
 excerpt: "Découvrez comment modifier l'environnement d'exécution, la version PHP, le pare-feu applicatif, le moteur, le mode et le « .ovhconfig » d'un hébergement web"
-updated: 2025-12-15
+updated: 2025-12-19
 ---
 
 ## Objectif
@@ -93,7 +93,7 @@ Certaines versions de PHP ne fonctionnent qu'avec certains environnements d'exé
 |---|---|
 |5.4, 5.5, 5.6 et 7.0|Legacy, Stable|
 |7.1, 7.2 et 7.3|Stable|
-|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 et 8.5|stable64|
+|7.4, 8.0, 8.1,8.2 et 8.3|stable64|
 
 > [!primary]
 >
@@ -386,7 +386,7 @@ Une fois le fichier « .ovhconfig » modifié, téléchargez-le sur votre [espac
 
 Si vous utilisez votre hébergement web pour y héberger plusieurs sites web, diverses raisons peuvent vous amener à vouloir bénéficier d'une version de PHP différente pour certains de vos sites web.
 
-Créez un fichier « .ovhconfig » contenant la version de PHP souhaitée pour le ou les sites web concernés. Aidez-vous des manipulations décrites dans la partie « [3.3 - Modifier le contenu du fichier « .ovhconfig »](#update-ovhconfig) » de ce guide si nécessaire. Lorsque vous téléchargerez le fichier « .ovhconfig » sur votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection), faites-le dans le dossier racine où se trouvent les fichiers qui composent le site web concerné. Retrouvez le dossier racine de votre site web depuis votre [espace client OVHcloud](/links/manager) dans l'onglet `Multisite`{.action} de l'hébergement concerné.
+Créez un fichier « .ovhconfig » contenant la version de PHP souhaitée pour le ou les sites web concernés. Aidez-vous des manipulations décrites dans la partie « [3.3 - Modifier le contenu du fichier « .ovhconfig »](#update-ovhconfig) » de ce guide si nécessaire. Lorsque vous téléchargerez le fichier « .ovhconfig » sur votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection), faites-le dans le dossier racine où se trouvent les fichiers qui composent le site web concerné. Retrouvez le dossier racine de votre site web depuis votre [espace client OVHcloud](/links/manager) dans l'onglet `Mes sites`{.action} de l'hébergement concerné.
 
 Consultez notre guide détaillant comment [configurer un site web sur un hébergement web](/pages/web_cloud/web_hosting/multisites_configure_multisite) si besoin.
 

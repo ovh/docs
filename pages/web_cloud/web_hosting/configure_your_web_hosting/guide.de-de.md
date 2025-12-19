@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Laufzeitumgebung, PHP-Version, .ovhconfig"
 excerpt: "Erfahren Sie hier, wie Sie die Einstellungen von Laufzeitumgebung, PHP-Version, Firewall, Engine, Modus und .ovhconfig ändern"
-updated: 2025-12-15
+updated: 2025-12-19
 ---
 
 ## Ziel
@@ -93,7 +93,7 @@ Einige PHP-Versionen funktionieren nur in bestimmten Laufzeitumgebungen. Nachfol
 |---|---|
 |5.4, 5.5, 5.6 und 7.0|Legacy, Stable|
 |7.1, 7.2 und 7.3|Stable|
-|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 und 8.5|Stable64|
+|7.4, 8.0, 8.1, 8.2 und 8.3|Stable64|
 
 > [!primary]
 >
@@ -385,7 +385,7 @@ Nachdem Sie die Datei “.ovhconfig“ bearbeitet haben, laden Sie sie auf Ihren
 
 Wenn Sie Ihr Webhosting nutzen, um mehrere Webseiten darauf zu hosten, können verschiedene Gründe dafür sprechen, dass Sie für einige Ihrer Webseiten eine andere PHP-Version verwenden möchten.
 
-Erstellen Sie eine Datei namens „.ovhconfig“, die die gewünschte PHP-Version für die betreffenden Webseiten enthält. Nutzen Sie ggf. die Anweisungen im Abschnitt „[3.3 - Inhalt der Datei „.ovhconfig“ ändern](#update-ovhconfig)“ in dieser Anleitung. Wenn Sie die Datei „.ovhconfig“ auf Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) hochladen, tun Sie dies im Wurzelverzeichnis, in dem sich die Dateien der betreffenden Webseite befinden. Sie finden das Wurzelverzeichnis Ihrer Webseite in Ihrem [OVHcloud Kundencenter](/links/manager) im Tab `Multisite`{.action} des betreffenden Hostings.
+Erstellen Sie eine Datei namens „.ovhconfig“, die die gewünschte PHP-Version für die betreffenden Webseiten enthält. Nutzen Sie ggf. die Anweisungen im Abschnitt „[3.3 - Inhalt der Datei „.ovhconfig“ ändern](#update-ovhconfig)“ in dieser Anleitung. Wenn Sie die Datei „.ovhconfig“ auf Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) hochladen, tun Sie dies im Wurzelverzeichnis, in dem sich die Dateien der betreffenden Webseite befinden. Sie finden das Wurzelverzeichnis Ihrer Webseite in Ihrem [OVHcloud Kundencenter](/links/manager) im Tab `Meine Seiten`{.action} des betreffenden Hostings.
 
 Wenn Sie weitere Informationen benötigen, konsultieren Sie unsere Anleitung zum [Konfigurieren mehrerer Websites auf einem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 

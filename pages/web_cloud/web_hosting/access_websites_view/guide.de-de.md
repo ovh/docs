@@ -1,7 +1,7 @@
 ---
 title: "Alle Ihre Websites im OVHcloud Kundencenter anzeigen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie alle Ihre Websites über das OVHcloud Kundencenter anzeigen und verwalten"
-updated: 2025-05-27
+updated: 2025-12-19
 ---
 
 ## Ziel
@@ -25,9 +25,9 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen S
 
 #### Domainname
 
-Zeigt den primären Domainnamen der Website an, wie er in der Multisite-Verwaltung Ihres Hostings konfiguriert wurde.
+Zeigt den Hauptdomainnamen der Website an, wie er in dem Tab „Meine Seiten“ Ihres Hostings konfiguriert ist.
 
-Wenn Sie hier klicken, werden Sie auf den Tab `Multisite`{.action} für das betreffende Webhosting weitergeleitet.
+Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
 #### Diagnose
 
@@ -37,15 +37,15 @@ Zeigt an, ob Ihr Domainname korrekt auf das zugehörige Webhosting verweist. Fü
 - `A/AAAA` gelb: Die A- und/oder AAAA-Einträge für Ihren Domainnamen verweisen auf eine IP-Adresse, die sich von der IP-Adresse Ihres Webhostings unterscheidet.
 - `A/AAAA` grau: Es ist kein A- oder AAAA-Eintrag konfiguriert. Ihr Domainname verweist auf keine IP-Adresse.
 
-Wenn Sie hier klicken, werden Sie auf den Tab `Multisite`{.action} für das betreffende Webhosting weitergeleitet.
+Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
-Weitere Informationen zur Diagnose finden Sie im Abschnitt "Diagnose Ihrer Domainnamen" in unserer Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+Für weitere Informationen zum Diagnoseverfahren konsultieren Sie die Anleitung „[Wie prüfe ich die Zuordnung „Domain / Website“?](/pages/web_cloud/web_hosting/my_websites_diagnosis)“.
 
 #### Wurzelverzeichnis
 
 Gibt das Verzeichnis in Ihrem Webhosting an (zum Beispiel: www, app, public_html, etc.), auf das der Domainname verweist.
 
-Wenn Sie hier klicken, werden Sie auf den Tab `Multisite`{.action} für das betreffende Webhosting weitergeleitet.
+Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
 #### Name des Dienstes
 
@@ -74,13 +74,13 @@ Zeigt den Status der Git-Integration auf der Website an:
 - In Bearbeitung: Das Git-Repository wird konfiguriert.
 - Fehler: In der Konfiguration des Git-Repositorys wird ein Fehler erkannt.
 
-Wenn Sie hier klicken, werden Sie auf den Tab `Multisite`{.action} für das betreffende Webhosting weitergeleitet.
+Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
 #### Getrennte Logs
 
 Gibt an, ob separate Logs für einen Domainnamen aktiviert sind.
 
-Wenn Sie hier klicken, werden Sie auf den Tab `Multisite`{.action} für das betreffende Webhosting weitergeleitet.
+Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
 Weitere Informationen finden Sie auf unserer Seite „[Verfolgen und analysieren Sie den Traffic auf Ihren Webseiten](/links/web/hosting-traffic-analysis)“.
 
@@ -97,7 +97,7 @@ Zeigt den Status des CDN (**C**ontent **D**elivery **N**etwork) auf dem Domainna
 - Inaktiv: Das CDN ist deaktiviert.
 - N/A: Nicht anwendbar (Angebot nicht kompatibel).
 
-Wenn Sie hier klicken, werden Sie auf den Tab `Multisite`{.action} für das betreffende Webhosting weitergeleitet.
+Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
 Mit dem CDN können Sie statische Elemente Ihrer Website, wie Bilder, zwischenspeichern. Weitere Informationen finden Sie auf unserer Seite „[Shared CDN](/links/web/hosting-options-cdn)“.
 
@@ -105,7 +105,7 @@ Mit dem CDN können Sie statische Elemente Ihrer Website, wie Bilder, zwischensp
 
 Gibt an, ob SSL für den betreffenden Domainnamen aktiviert ist.
 
-Wenn Sie hier klicken, werden Sie auf den Tab `Multisite`{.action} für das betreffende Webhosting weitergeleitet.
+Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
 Mit einem SSL-Zertifikat ermöglichen Sie eine sichere Verbindung (**https://**) für den ausgewählten Domainnamen. Besuchen Sie unsere Seite „[Effiziente Absicherung Ihrer OVHcloud Website mit einem Premium-SSL-Zertifikat](/links/web/hosting-options-ssl)“ für weitere Informationen.
 
@@ -113,7 +113,7 @@ Mit einem SSL-Zertifikat ermöglichen Sie eine sichere Verbindung (**https://**)
 
 Gibt an, ob die Anwendungsfirewall für den Domainnamen aktiviert ist.
 
-Wenn Sie hier klicken, werden Sie auf den Tab `Multisite`{.action} für das betreffende Webhosting weitergeleitet.
+Wenn Sie hier klicken, werden Sie auf den Tab `Meine Seiten`{.action} für das betreffende Webhosting weitergeleitet.
 
 Weitere Informationen finden Sie auf unserer Seite „[Unverzichtbare Optionen für Ihr Webhosting](/links/web/hosting-options)“.
 
