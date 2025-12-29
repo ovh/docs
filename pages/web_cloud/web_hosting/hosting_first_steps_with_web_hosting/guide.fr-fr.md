@@ -42,7 +42,7 @@ Vous souhaitez créer un site Internet pour votre entreprise ou un blog personne
 
 ## En pratique
 
-### 1 - Associer votre nom de domaine à votre hébergement web <a name="part-1"></a>
+### 1 - Associer votre nom de domaine à un site web sur votre hébergement web <a name="part-1"></a>
 
 > [!success]
 >
@@ -50,13 +50,14 @@ Vous souhaitez créer un site Internet pour votre entreprise ou un blog personne
 
 1. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 2. Sélectionnez l'onglet `Mes sites`{.action} une fois positionné sur l'hébergement web concerné.
-3. Sur la page qui s'affiche, cliquez sur le bouton `Ajouter un site`{.action} situé au dessus du tableau listant les sites web déjà déclarés sur l'hébergement web.
-4. Dans la fenêtre qui s'ouvre, cochez et complétez les éléments demandés jusqu'à leur validation.
+3. Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web créé automatiquement lors de la création de votre hébergement web, puis sur `Ajouter un domaine`{.action}.
+4. Dans la nouvelle page qui s'ouvre, cochez et complétez les éléments demandés jusqu'à leur validation.
 
 /// details | Cliquez ici pour plus d'informations.
 
 Consultez nos guides détaillés :
 
+- [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Hébergement web - Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Hébergement web - Modifier un nom de domaine déjà associé](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
