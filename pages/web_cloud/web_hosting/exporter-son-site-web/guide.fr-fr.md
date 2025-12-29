@@ -71,7 +71,7 @@ Une fois tous les éléments en votre possession, la récupération de vos fichi
 
 Une fois connecté à votre espace de stockage et en fonction de vos sites web hébergés dessus, plusieurs dossiers peuvent apparaître.
 
-Si besoin, identifiez au-préalable le nom du dossier racine dans lequel votre site web est stocké dans votre hébergement web. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Si besoin, identifiez au préalable dans votre hébergement web le nom du dossier racine dans lequel votre site web est stocké. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Etape 1**
