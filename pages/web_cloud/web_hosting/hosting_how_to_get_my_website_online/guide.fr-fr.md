@@ -108,7 +108,7 @@ Une fois tous les éléments en votre possession, la connexion à l'espace de st
 >
 > Si, depuis votre [espace client OVHcloud](/links/manager), vous n'avez pas encore associé votre nom de domaine à un site web présent sur votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
-Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers**. Ceci notamment si vous avez déclaré plusieurs sites web sur votre hébergement web.
+Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers**, notamment si vous avez déclaré plusieurs sites web sur votre hébergement web.
 
 Pour vérifier le dossier dans lequel doit être publié le site web, positionnez-vous sur l'onglet `Mes sites`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le site web souhaité, regardez le `Dossier racine`{.action} qui s'affiche. Publiez alors les fichiers du site web dans ce dernier.
 
