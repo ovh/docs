@@ -1,136 +1,162 @@
 ---
-title: "Comment bien débuter avec votre hébergement web"
-excerpt: "Découvrez comment mettre en ligne un nouveau site Internet via nos options de « Modules en 1 clic », comment créer une nouvelle adresse e-mail personnalisée avec votre nom de domaine, le tout grâce à notre solution d'hébergement web"
+title: "Exporter son site web"
+excerpt: "Découvrez comment exporter votre site web OVHcloud"
 updated: 2025-12-19
 ---
 
-<style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
-    cursor: pointer;
-}
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
-}
-details[open]>summary::before {
-    content:'\25BC';
-}
-</style>
-
-> [!success]
-> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
-> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
-> [Accédez à l'enquête.](https://s.elq.fr/ovhext/lcrZM31)
-
 ## Objectif
 
-Vous souhaitez créer un site Internet pour votre entreprise ou un blog personnel ? Vous avez besoin d'une boutique e-commerce pour vendre vos produits en ligne ? Ce guide dédié aux premiers pas avec l'hébergement web OVHcloud vous indiquera les étapes clés pour le configurer. Vous trouverez également les explications pour créer des adresses e-mail professionnelles associées à votre nom de domaine. Il vous permettra une mise en ligne facile et rapide de votre projet afin de communiquer avec votre audience de manière efficace.
+Ce guide vous présente les étapes pour exporter l’ensemble des éléments de votre site web au format standard, depuis un [hébergement web OVHcloud](/links/web/hosting).
 
-> [!primary]
->
-> - Vous souhaitez migrer un site web existant déjà chez un autre hébergeur ? Consultez directement notre guide dédié : [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
-> - Vous souhaitez uniquement une page d'accueil simple pour votre activité professionnelle ? Consultez notre guide dédié : [Hébergement web - Activer l’hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m).
+**Découvrez comment exporter votre site web OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting) avec au moins une base de données disponible (hors offre d'hébergement gratuite 100M).
-- Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](/links/web/domains) et d'une zone DNS associée chez OVHcloud.
-- Tous les services (Hébergement web, Nom de domaine, zone DNS) doivent être accessibles depuis un seul et même compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-### 1 - Associer votre nom de domaine à un site web sur votre hébergement web <a name="part-1"></a>
+### 1 - Récupération des fichiers de votre espace de stockage FTP
 
-> [!success]
+#### 1.1 Se connecter à l'espace de stockage.
+
+Pour vous connecter à votre espace de stockage, vous devez être en possession des éléments suivants :
+
+- l'utilisateur FTP ou SSH actif.
+- le mot de passe associé à cet utilisateur FTP ou SSH.
+- l’adresse du serveur.
+- le port de connexion au serveur.
+
+Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. 
+
+Si vous n’êtes pas en possession de ces derniers, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
+>>
+>> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>> 
+> **Étape 4**
+>>
+>> Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci.
+>>
+>> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+>>
+>> Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection).
+>>
+>> Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
+
+Une fois tous les éléments en votre possession, la récupération de vos fichiers sur l'espace de stockage peut s'effectuer de deux manières différentes :
+
+- **Utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
+
+- **Utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées ainsi qu'une [offre d'hébergement web OVHcloud](/links/web/hosting) spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
+
+#### 1.2 Télécharger les fichiers depuis votre espace de stockage.
+
+Une fois connecté à votre espace de stockage et en fonction de vos sites web hébergés dessus, plusieurs dossiers peuvent apparaître.
+
+Si besoin, identifiez au préalable dans votre hébergement web le nom du dossier racine dans lequel votre site web est stocké. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Dans le tableau qui apparaît, pour le site web souhaité, regardez le `Dossier racine`{.action} qui s'affiche.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+
+Toujours connecté à votre espace de stockage, il ne vous reste plus qu’à télécharger les fichiers de votre site web en accédant au dossier racine identifié précédemment. 
+
+### 2 - Récupérer la sauvegarde de votre base de données (facultative)
+
+> [!primary]
 >
-> Si vous avez souscrit à votre nom de domaine et à votre hébergement web dans une même commande, ces deux services sont déjà associés. Passez directement à la [Partie 2](#part-2) de ce guide.
+> Cette étape est facultative si votre site web n’utilise pas de base de données.
 
-1. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
-2. Sélectionnez l'onglet `Mes sites`{.action} une fois positionné sur l'hébergement web concerné.
-3. Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web créé automatiquement lors de la création de votre hébergement web, puis sur `Ajouter un domaine`{.action}.
-4. Dans la nouvelle page qui s'ouvre, cochez et complétez les éléments demandés jusqu'à leur validation.
+Pour récupérer une sauvegarde de votre base de données, consultez notre guide :
+[« Récupérer la sauvegarde de la base de données d’un hébergement web »](/pages/web_cloud/web_hosting/sql_database_export).
 
-/// details | Cliquez ici pour plus d'informations.
+Si vous utilisez une base de données **Web Cloud Databases** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
+[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
-Consultez nos guides détaillés :
+### 3 - Récupérer les logs de votre hébergement OVHcloud
 
-- [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
-- [Hébergement web - Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Hébergement web - Modifier un nom de domaine déjà associé](/pages/web_cloud/web_hosting/multisites_modify_domain).
+Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
 
-///
+Cliquez sur `Hébergements`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}.
 
-### 2 - Installer un « module en 1 clic » pour votre site web <a name="part-2"></a>
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 
-Sur ses hébergements web, OVHcloud propose d'installer gratuitement les CMS WordPress, Joomla!, PrestaShop et Drupal grâce à l'option « module en 1 clic ».
+Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
 
-1. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
-2. Sélectionnez l'onglet `Modules en 1 clic`{.action} une fois positionné sur l'hébergement web concerné.
-3. Sur la page qui s'affiche, cliquez sur le bouton `Ajouter un module`{.action}.
-4. Dans la fenêtre qui s'ouvre, sélectionnez le CMS que vous souhaitez installer. Choisissez ensuite le domaine sur lequel installer le module en sélectionnant le nom de domaine souhaité **sans les « www »** devant (exemple : `domain.tld` et non pas `www.domain.tld`), puis cliquez directement sur `Installer`{.action}.
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 
-/// details | Cliquez ici pour plus d'informations.
+Une fenêtre apparait avec les différents types de logs à disposition. Ils sont classés par mois :
 
-Consultez nos guides détaillés :
+| Type  	| Description                                                                                                                                                                                         	|
+|-------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Web   	| Trouvez ici les différents logs de consultation de votre site, ainsi que les différentes actions réalisées à partir de votre site. Cela vous permet par exemple de repérer des tentatives de hacks. 	|
+| FTP   	| les différentes connexions FTP seront enregistrées et conservées dans ces logs.                                                                                                                     	|
+| Error 	| les différentes erreurs générées par votre site.                                                                                                                                                    	|
+| CGI   	| les différents appels aux scripts cgi.bin qui ont été réalisés.                                                                                                                                     	|
+| out   	| les statistiques de votre hébergement sur les différents appels externes réalisés.                                                                                                                  	|
+| ssh   	| ces logs indiquent les différentes connexions réalisées avec le protocole SSH.                                                                                                                      	|
+| cron  	| le résultat de l’exécution de vos tâches planifiées.                                                                                                                                                	|
 
-- [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
-- [Comment gérer votre module en 1 clic ?](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
 
-///
+Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse, ces derniers sont archivés par jour :
 
-### 3 - Activer les adresses e-mail incluses avec votre hébergement web <a name="part-3"></a>
-
-> [!success]
->
-> Si vous avez souscrit votre nom de domaine et votre hébergement web dans une seule et même commande, les adresses e-mail incluses avec l'hébergement web sont déjà associées à votre nom de domaine. Passez directement à la [Partie 4](#part-4) de ce guide.
-
-1. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
-2. Sur la page qui s'affiche et dans l'encadré **Configuration**, cliquez sur le bouton `...`{.action} situé à droite de la mention `Adresses e-mails`{.action}, puis sur `Activer mon offre e-mail`{.action}. Sur la nouvelle page qui apparaît, sélectionnez le nom de domaine concerné dans la section `(1)`, puis poursuivez jusqu'à l'activation des adresses e-mail.
-
-/// details | Cliquez ici pour plus d'informations.
-
-Consultez notre guide détaillé « [Hébergement web - Activer les adresses e-mails incluses](/pages/web_cloud/web_hosting/activate-email-hosting) ».
-
-///
-
-### 4 - Créer une adresse e-mail personnalisée avec votre nom de domaine <a name="part-4"></a>
-
-1. Cliquez sur le menu `E-mails`{.action} (ou sur `MX Plan`{.action} si vous utilisez la nouvelle version de l'espace client OVHcloud), puis choisissez le nom de domaine concerné.
-2. Sur la page qui s'affiche, cliquez sur l'onglet `Emails`{.action}.
-3. Sur la nouvelle page qui apparaît, cliquez sur le bouton `Créer une adresse E-mail`{.action}.
-4. Dans la fenêtre qui s'ouvre, complétez les éléments demandés jusqu'à leur validation.
-
-Répétez cette opération pour chaque adresse e-mail que vous souhaitez créer (dans la limite de votre offre d'hébergement web).
-
-/// details | Cliquez ici pour plus d'informations.
-
-Consultez notre guide détaillé « [Créer une adresse e-mail avec son offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation) ».
-
-///
-
-### 5 - Options complémentaires disponibles avec votre hébergement web <a name="part-5"></a>
-
-Votre hébergement web n'est pas limité à l'installation d'un « module en 1 clic ». Vous pouvez héberger des sites web créés par vos soins ou par un développeur web (blog, CMS, boutique en ligne, etc.). Si vous souhaitez en apprendre davantage sur les possibilités de votre hébergement web, n'hésitez pas à consulter notre guide plus détaillé « [Comment créer un site web - Réaliser votre projet en 5 étapes](/pages/web_cloud/web_hosting/website-project) ».
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
 
 ## Aller plus loin
 
-Retrouvez ci-dessous une sélection de nos guides détaillant les principales fonctionnalités proposées avec nos hébergements web :
+[Se connecter à l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection).
 
-- [Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting).
-- [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
-- [Hébergement web - Environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting).
-- [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics).
-- [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records).
-- [Comment géolocaliser un site web dans un pays spécifique ?](/pages/web_cloud/web_hosting/multisites_geolocation).
-- [Activation du pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall).
-- [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting).
-- [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection).
-- [Créer des tâches automatisées (CRON) sur votre hébergement web](/pages/web_cloud/web_hosting/cron_tasks).
+[Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+[Utiliser FileZilla avec votre hebergement](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
+
+[Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
+
+[Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export).
+
+[Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
