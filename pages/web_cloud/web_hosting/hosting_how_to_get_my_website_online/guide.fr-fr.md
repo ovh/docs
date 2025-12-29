@@ -112,7 +112,7 @@ Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mett
 
 Pour vérifier le dossier dans lequel doit être publié le site web, positionnez-vous sur l'onglet `Mes sites`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le site web souhaité, regardez le `Dossier racine`{.action} qui s'affiche. Publiez alors les fichiers du site web dans ce dernier.
 
-Il se peut que vous trouviez sur votre espace de stockage un fichier s'intitulant « index.html ». Ce dernier peut avoir été créé par OVHcloud lors de l'installation de votre hébergement web pour afficher une page par défaut sur votre site web. Si tel est le cas, n'oubliez pas de le supprimer lors de la mise en ligne de vos fichiers.
+Il se peut que vous trouviez sur votre espace de stockage un fichier intitulé « index.html ». Ce dernier peut avoir été créé par OVHcloud lors de l'installation de votre hébergement web pour afficher une page par défaut sur votre site web. Si tel est le cas, n'oubliez pas de le supprimer lors de la mise en ligne de vos fichiers.
 
 > [!primary]
 >
